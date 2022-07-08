@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -12,12 +13,13 @@ import {
   IconFilledCancel,
   IconFilledStarOutline,
 } from '../../icons';
-import {createTheme, ThemeProvider} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils/style';
 import {AccordionIconProps} from '../types';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {AccordionGroup} from '../accordion-group';
 
-const myCustomAccordionTheme = createTheme({
+const accordionCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-accordion-theme',
   overrides: {
     stylePresets: {
@@ -115,7 +117,7 @@ const myCustomAccordionTheme = createTheme({
       },
     },
   },
-});
+};
 
 const StyledBlock = styled(Block)`
   display: flex;
@@ -123,7 +125,7 @@ const StyledBlock = styled(Block)`
 `;
 
 const content = (
-  <TextBlock>
+  <TextBlock stylePreset="inkContrast">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
     malesuada lacus ex, sit amet blandit leo lobortis eget.
   </TextBlock>
@@ -141,11 +143,6 @@ const CustomIndicator = ({expanded}: AccordionIconProps) =>
 const Spacer = styled.div`
   margin-bottom: 30px;
 `;
-
-export default {
-  title: 'NewsKit Light/accordion',
-  component: () => 'None',
-};
 
 export const StoryAccordion = () => {
   const [expanded, toggleExpanded] = React.useState(false);
@@ -233,136 +230,134 @@ StoryAccordion.storyName = 'accordion';
 
 export const StoryAccordionOverrides = () => (
   <>
-    <ThemeProvider theme={myCustomAccordionTheme}>
-      <StorybookSubHeading>Style Overrides</StorybookSubHeading>
-      <Spacer>
-        <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Header 6
-            </StyledBlock>
-          }
-          label="Hide"
-          expanded
-          overrides={{
-            header: {
-              minWidth: 'sizing090',
-              minHeight: 'sizing090',
-              stylePreset: 'accordionHeaderCustom',
+    <StorybookSubHeading>Style Overrides</StorybookSubHeading>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Header 6
+          </StyledBlock>
+        }
+        label="Hide"
+        expanded
+        overrides={{
+          header: {
+            minWidth: 'sizing090',
+            minHeight: 'sizing090',
+            stylePreset: 'accordionHeaderCustom',
+            typographyPreset: 'utilityButton020',
+            spaceInline: 'space030',
+            paddingBlock: 'spaceInset040',
+            paddingInline: 'spaceInset040',
+            label: {
               typographyPreset: 'utilityButton020',
-              spaceInline: 'space030',
-              paddingBlock: 'spaceInset040',
-              paddingInline: 'spaceInset040',
-              label: {
-                typographyPreset: 'utilityButton020',
-              },
             },
-            panel: {
-              stylePreset: 'accordionPanelCustom',
-            },
-          }}
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-      <StorybookSubHeading>Indicator Icon Prop Overrides</StorybookSubHeading>
-      <Spacer>
-        <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Header 7
-            </StyledBlock>
-          }
-          label="Show"
-          overrides={{
-            header: {
-              indicatorIcon: {
-                props: {
-                  overrides: {
-                    stylePreset: 'inkNegative',
-                    size: 'iconSize010',
-                  },
+          },
+          panel: {
+            stylePreset: 'accordionPanelCustom',
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
+    <StorybookSubHeading>Indicator Icon Prop Overrides</StorybookSubHeading>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Header 7
+          </StyledBlock>
+        }
+        label="Show"
+        overrides={{
+          header: {
+            indicatorIcon: {
+              props: {
+                overrides: {
+                  stylePreset: 'inkNegative',
+                  size: 'iconSize010',
                 },
               },
             },
-          }}
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-      <StorybookSubHeading>Indicator Icon Override</StorybookSubHeading>
-      <Spacer>
-        <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Header 8
-            </StyledBlock>
-          }
-          label="Show"
-          overrides={{
-            header: {
-              indicatorIcon: {
-                stylePreset: 'inkPositive',
-                size: 'iconSize030',
-              },
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
+    <StorybookSubHeading>Indicator Icon Override</StorybookSubHeading>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Header 8
+          </StyledBlock>
+        }
+        label="Show"
+        overrides={{
+          header: {
+            indicatorIcon: {
+              stylePreset: 'inkPositive',
+              size: 'iconSize030',
             },
-          }}
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-      <StorybookSubHeading>
-        Indicator Icon Component Overrides
-      </StorybookSubHeading>
-      <Spacer>
-        <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Header 9
-            </StyledBlock>
-          }
-          label="Hide"
-          expanded
-          overrides={{
-            header: {
-              indicatorIcon: CustomIndicator,
-            },
-          }}
-        >
-          {content}
-        </Accordion>
-        <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Header 10
-            </StyledBlock>
-          }
-          label="Show"
-          overrides={{
-            header: {
-              indicatorIcon: CustomIndicator,
-            },
-          }}
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-    </ThemeProvider>
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
+    <StorybookSubHeading>
+      Indicator Icon Component Overrides
+    </StorybookSubHeading>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Header 9
+          </StyledBlock>
+        }
+        label="Hide"
+        expanded
+        overrides={{
+          header: {
+            indicatorIcon: CustomIndicator,
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Header 10
+          </StyledBlock>
+        }
+        label="Show"
+        overrides={{
+          header: {
+            indicatorIcon: CustomIndicator,
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
   </>
 );
 
@@ -419,94 +414,109 @@ StoryAccordionGroupControlled.storyName = 'accordion-group-controlled';
 
 export const StoryAccordionOutlineOverrides = () => (
   <>
-    <ThemeProvider theme={myCustomAccordionTheme}>
-      <StorybookSubHeading>Accordion Outline Overrides</StorybookSubHeading>
-      <Spacer>
-        <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Custom Color
-            </StyledBlock>
-          }
-          label="Hide"
-          expanded
-          overrides={{
-            header: {
-              stylePreset: 'customOutlineColor',
-            },
-          }}
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-      <Spacer>
-        <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Custom Style
-            </StyledBlock>
-          }
-          label="Hide"
-          expanded
-          overrides={{
-            header: {
-              stylePreset: 'customOutlineStyle',
-            },
-          }}
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-      <Spacer>
-        <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Custom Width
-            </StyledBlock>
-          }
-          label="Hide"
-          expanded
-          overrides={{
-            header: {
-              stylePreset: 'customOutlineWidth',
-            },
-          }}
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-      <Spacer>
-        <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Custom Offset
-            </StyledBlock>
-          }
-          label="Hide"
-          expanded
-          overrides={{
-            header: {
-              stylePreset: 'customOutlineOffset',
-            },
-          }}
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-    </ThemeProvider>
+    <StorybookSubHeading>Accordion Outline Overrides</StorybookSubHeading>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Custom Color
+          </StyledBlock>
+        }
+        label="Hide"
+        expanded
+        overrides={{
+          header: {
+            stylePreset: 'customOutlineColor',
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Custom Style
+          </StyledBlock>
+        }
+        label="Hide"
+        expanded
+        overrides={{
+          header: {
+            stylePreset: 'customOutlineStyle',
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Custom Width
+          </StyledBlock>
+        }
+        label="Hide"
+        expanded
+        overrides={{
+          header: {
+            stylePreset: 'customOutlineWidth',
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Custom Offset
+          </StyledBlock>
+        }
+        label="Hide"
+        expanded
+        overrides={{
+          header: {
+            stylePreset: 'customOutlineOffset',
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
   </>
 );
 
 StoryAccordionOutlineOverrides.storyName = 'accordion-with-outline-overrides';
+
+export default {
+  title: 'NewsKit Light/accordion',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          accordionCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

@@ -56,6 +56,16 @@ const myCustomTheme = createTheme({
           color: 'purple',
         },
       },
+      customFeedback: {
+        base: {
+          backgroundColor: '{{colors.red060}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          opacity: '{{overlays.opacity000}}',
+        },
+        hover: {
+          opacity: '{{overlays.opacity020}}',
+        },
+      },
       customPlaceholderIcon: {
         base: {
           iconColor: '{{colors.inkNonEssential}}',
@@ -384,6 +394,10 @@ export const StorySliderWithCustomStylePreset = () => (
               stylePreset: 'customLabelStylePreset',
               typographyPreset: 'utilityLabel030',
               space: 'space040',
+            },
+            feedback: {
+              size: 'sizing090',
+              stylePreset: 'customFeedback',
             },
           }}
         />

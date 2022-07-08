@@ -1,6 +1,7 @@
 import {Range} from 'react-range';
 import {MQ} from '../utils/style';
 import {LogicalProps} from '../utils/logical-properties';
+import {TransitionToken} from '../theme';
 
 type RenderTrackFunction = Range['props']['renderTrack'];
 type RenderThumbFunction = Range['props']['renderThumb'];
@@ -26,6 +27,11 @@ export interface SliderOverrideProps extends LogicalProps {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
     space?: MQ<string>;
+  };
+  feedback?: {
+    size?: string;
+    stylePreset?: MQ<string>;
+    transitionPreset?: MQ<TransitionToken> | MQ<TransitionToken[]>;
   };
 }
 

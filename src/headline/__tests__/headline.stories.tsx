@@ -1,42 +1,37 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Headline} from '..';
-import {compileTheme, createTheme, ThemeProvider} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-export default {
-  title: 'NewsKit Light/headline',
-  component: () => 'None',
-};
-
-const myCustomTheme = compileTheme(
-  createTheme({
-    name: 'my-custom-theme',
-    overrides: {
-      stylePresets: {
-        tagPrimary: {
-          base: {
-            backgroundColor: '{{colors.transparent}}',
-            borderStyle: 'solid',
-            borderColor: '{{colors.interactiveSecondary030}}',
-            borderWidth: '{{borders.borderWidth010}}',
-            color: '{{colors.inkBase}}',
-            iconColor: '{{colors.inkBase}}',
-            borderRadius: '{{borders.borderRadiusSharp}}',
-          },
+const headlineCustomThemeObject: CreateThemeArgs = {
+  name: 'headline-custom-theme',
+  overrides: {
+    stylePresets: {
+      tagPrimary: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
         },
-        linkInline: {
-          base: {
-            color: '{{colors.interactivePrimary030}}',
-            iconColor: '{{colors.interactivePrimary030}}',
-            textDecoration: 'underline',
-          },
+      },
+      linkInline: {
+        base: {
+          color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
+          textDecoration: 'underline',
         },
       },
     },
-  }),
-);
+  },
+};
 
 export const StoryHeadline = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <Headline>Headline text with no kicker</Headline>
     <br />
     <br />
@@ -93,6 +88,23 @@ export const StoryHeadline = () => (
     >
       For Margin
     </Headline>
-  </ThemeProvider>
+  </>
 );
 StoryHeadline.storyName = 'headline';
+
+export default {
+  title: 'NewsKit Light/headline',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          headlineCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

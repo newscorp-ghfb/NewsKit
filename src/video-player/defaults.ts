@@ -65,7 +65,7 @@ export default {
         md: 'spaceInset050',
       },
       title: {
-        stylePreset: 'inkInverse',
+        stylePreset: 'videoPlayerDockTextTitle',
         typographyPreset: {
           xs: 'utilityHeading010',
           md: 'utilityHeading040',

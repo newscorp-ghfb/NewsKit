@@ -14,7 +14,7 @@ import {
 import {Tag} from '../tag';
 import {LinkInline, LinkStandalone} from '../link';
 import {IconButton} from '../icon-button';
-import {Button} from '../button';
+import {Button, ButtonSize} from '../button';
 import {
   IconFilledAddCircle,
   IconFilledEmail,
@@ -99,6 +99,7 @@ import {calculateTime} from '../audio-player-composable/components/time-display/
 
 import {GridLayout} from '../grid-layout';
 import {SwitchState} from '../switch/types';
+import {Tooltip} from '../tooltip';
 
 export const checkboxStates: [
   string,
@@ -294,7 +295,7 @@ export const scenarios: Array<ComponentData> = [
           </Block>
           <AudioPlayerContainer>
             <AudioPlayer
-              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
               title="The Breakfast Show with Giles Coren"
               captionSrc="captions.vtt"
               ariaLandmark="audio player default"
@@ -325,7 +326,7 @@ export const scenarios: Array<ComponentData> = [
       <>
         <>
           <AudioPlayerComposable
-            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
             ariaLandmark="audio player skip buttons"
           >
             <GridLayout rowGap="20px" areas={fullAudioPlayerAreas}>
@@ -1463,6 +1464,56 @@ export const scenarios: Array<ComponentData> = [
           >
             Here goes a brief line or two describing the toast information.
           </Toast>
+        </Stack>
+      </Stack>
+    ),
+  },
+  {
+    name: 'Tooltip',
+    component: () => (
+      <Stack spaceInline="space110" flow={Flow.HorizontalTop}>
+        <Stack spaceInline="space050">
+          <LabelFlag>With Icon Button Right Placement</LabelFlag>
+          <Tooltip
+            content="Share"
+            asLabel
+            placement="right"
+            trigger={['focus', 'hover']}
+          >
+            <IconButton
+              size={ButtonSize.Small}
+              overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
+            >
+              <IconFilledTwitter />
+            </IconButton>
+          </Tooltip>
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>With Inline Link Bottom Placement</LabelFlag>
+
+          <Tooltip
+            content="Lorem ipsum dolor sit amet"
+            placement="bottom"
+            trigger={['focus', 'hover']}
+          >
+            <LinkInline href="/">Inline link</LinkInline>
+          </Tooltip>
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>With Button Top Placement</LabelFlag>
+
+          <Tooltip
+            content="Lorem ipsum dolor sit amet"
+            placement="top"
+            trigger={['focus', 'hover']}
+          >
+            <Button
+              size={ButtonSize.Small}
+              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+            >
+              Button
+            </Button>
+          </Tooltip>
         </Stack>
       </Stack>
     ),

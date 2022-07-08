@@ -1,11 +1,13 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {AudioPlayer} from '..';
 import {styled} from '../../utils/style';
-import {createTheme, ThemeProvider} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const liveAudioProps = {
   src: 'https://radio.talkradio.co.uk/stream',
@@ -15,7 +17,8 @@ const liveAudioProps = {
 };
 
 const recordedAudioProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src:
+    'https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3',
   title: 'The Breakfast Show with Giles Coren',
   captionSrc: 'captions.vtt',
 };
@@ -31,8 +34,8 @@ const AudioPlayerContainer = styled.div<{dark?: boolean}>`
 // eslint-disable-next-line no-alert
 const alert = (msg: string) => () => window.alert(msg);
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-audio-player-theme',
+const audioPlayerCustomThemeObject: CreateThemeArgs = {
+  name: 'audio-player-custom-theme',
   overrides: {
     stylePresets: {
       customAudioPlayPauseButton: {
@@ -130,12 +133,6 @@ const myCustomTheme = createTheme({
       },
     },
   },
-});
-
-export default {
-  title: 'NewsKit Light/audio-player',
-  component: () => 'None',
-  parameters: {eyes: {waitBeforeCapture: 10000}},
 };
 
 export const StoryAudioPlayer = () => (
@@ -150,88 +147,86 @@ export const StoryAudioPlayer = () => (
     </AudioPlayerContainer>
     <StorybookSubHeading>with overrides</StorybookSubHeading>
     <AudioPlayerContainer dark>
-      <ThemeProvider theme={myCustomTheme}>
-        <AudioPlayer
-          {...recordedAudioProps}
-          popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
-          ariaLandmark="audio player with overrides"
-          overrides={{
-            seekBar: {
-              slider: {
-                track: {
-                  stylePreset: 'customAudioPlayerSeekBarTrack',
-                  size: 'sizing030',
-                },
-                indicator: {
-                  stylePreset: 'customAudioPlayerSeekBarIndicator',
-                },
-                thumb: {
-                  stylePreset: 'customAudioPlayerThumb',
-                  size: 'sizing050',
-                },
-                thumbLabel: {
-                  stylePreset: 'customAudioPlayerLabels',
-                },
-                labels: {
-                  stylePreset: 'customAudioPlayerLabels',
-                  typographyPreset: 'utilityMeta010',
-                },
+      <AudioPlayer
+        {...recordedAudioProps}
+        popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
+        ariaLandmark="audio player with overrides"
+        overrides={{
+          seekBar: {
+            slider: {
+              track: {
+                stylePreset: 'customAudioPlayerSeekBarTrack',
+                size: 'sizing030',
               },
-              buffering: {
-                stylePreset: 'customAudioPlayerSeekBarBuffering',
+              indicator: {
+                stylePreset: 'customAudioPlayerSeekBarIndicator',
+              },
+              thumb: {
+                stylePreset: 'customAudioPlayerThumb',
+                size: 'sizing050',
+              },
+              thumbLabel: {
+                stylePreset: 'customAudioPlayerLabels',
+              },
+              labels: {
+                stylePreset: 'customAudioPlayerLabels',
+                typographyPreset: 'utilityMeta010',
               },
             },
-            controls: {
-              space: 'space040',
-              previousButton: {
-                stylePreset: 'customAudioPlayerPreviousButton',
-              },
-              replayButton: {
-                stylePreset: 'customAudioPlayerReplayButton',
-              },
-              playPauseButton: {
-                stylePreset: 'customAudioPlayPauseButton',
-                loadingIndicator: {
-                  stylePreset: 'customAudioPlayPauseButtonLoading',
-                },
-              },
-              forwardButton: {
-                stylePreset: 'customAudioForwardButton',
-              },
-              nextButton: {
-                stylePreset: 'customAudioNextButton',
-              },
-              popoutButton: {
-                stylePreset: 'customAudioPopoutButton',
+            buffering: {
+              stylePreset: 'customAudioPlayerSeekBarBuffering',
+            },
+          },
+          controls: {
+            space: 'space040',
+            previousButton: {
+              stylePreset: 'customAudioPlayerPreviousButton',
+            },
+            replayButton: {
+              stylePreset: 'customAudioPlayerReplayButton',
+            },
+            playPauseButton: {
+              stylePreset: 'customAudioPlayPauseButton',
+              loadingIndicator: {
+                stylePreset: 'customAudioPlayPauseButtonLoading',
               },
             },
-            volumeControl: {
-              slider: {
-                track: {
-                  stylePreset: 'customAudioPlayerSeekBarTrack',
-                  size: 'sizing010',
-                },
-                indicator: {
-                  stylePreset: 'customAudioPlayerSeekBarIndicator',
-                },
-                thumb: {
-                  stylePreset: 'customAudioPlayerThumb',
-                  size: 'sizing040',
-                },
-                thumbLabel: {
-                  stylePreset: 'customAudioPlayerLabels',
-                },
-                labels: {
-                  stylePreset: 'customAudioPlayerLabels',
-                },
+            forwardButton: {
+              stylePreset: 'customAudioForwardButton',
+            },
+            nextButton: {
+              stylePreset: 'customAudioNextButton',
+            },
+            popoutButton: {
+              stylePreset: 'customAudioPopoutButton',
+            },
+          },
+          volumeControl: {
+            slider: {
+              track: {
+                stylePreset: 'customAudioPlayerSeekBarTrack',
+                size: 'sizing010',
               },
-              button: {
-                stylePreset: 'customVolumeControlButton',
+              indicator: {
+                stylePreset: 'customAudioPlayerSeekBarIndicator',
+              },
+              thumb: {
+                stylePreset: 'customAudioPlayerThumb',
+                size: 'sizing040',
+              },
+              thumbLabel: {
+                stylePreset: 'customAudioPlayerLabels',
+              },
+              labels: {
+                stylePreset: 'customAudioPlayerLabels',
               },
             },
-          }}
-        />
-      </ThemeProvider>
+            button: {
+              stylePreset: 'customVolumeControlButton',
+            },
+          },
+        }}
+      />
     </AudioPlayerContainer>
     <StorybookHeading>Live Audio Player</StorybookHeading>
     <AudioPlayerContainer>
@@ -361,3 +356,21 @@ export const StoryRecordedWithHiddenControls = () => (
 );
 StoryRecordedWithHiddenControls.storyName = 'recorded-with-hidden-controls';
 StoryRecordedWithControls.parameters = {eyes: {waitBeforeCapture: 10000}};
+
+export default {
+  title: 'NewsKit Light/audio-player',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          audioPlayerCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+  parameters: {eyes: {waitBeforeCapture: 10000}},
+};

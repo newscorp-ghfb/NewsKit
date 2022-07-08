@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Flow, Stack} from '../../stack';
 
-import {styled, getColorFromTheme} from '../../utils/style';
+import {styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {Tag} from '../../tag/tag';
 import {StackChild} from '..';
@@ -17,7 +17,6 @@ const Container = styled.div<{
   hasWidth?: boolean;
 }>`
   border: solid 1px red;
-  background-color: ${getColorFromTheme('neutral020')};
   height: ${({hasHeight}) => (hasHeight ? '200px' : 'auto')};
   width: ${({hasWidth}) => (hasWidth ? '400px' : 'auto')};
 `;
