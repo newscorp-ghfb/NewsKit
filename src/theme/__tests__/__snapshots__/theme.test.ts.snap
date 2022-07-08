@@ -95,11 +95,11 @@ Object {
     "interactiveInput030": "{{colors.blue010}}",
     "interactiveInput040": "{{colors.blue060}}",
     "interactiveInput050": "{{colors.blue070}}",
-    "interactiveInverse010": "{{colors.whiteTint010}}",
-    "interactiveInverse020": "{{colors.whiteTint020}}",
-    "interactiveInverse030": "{{colors.white}}",
-    "interactiveInverse040": "{{colors.whiteTint070}}",
-    "interactiveInverse050": "{{colors.whiteTint080}}",
+    "interactiveInverse010": "{{colors.blackTint010}}",
+    "interactiveInverse020": "{{colors.blackTint020}}",
+    "interactiveInverse030": "{{colors.black}}",
+    "interactiveInverse040": "{{colors.blackTint070}}",
+    "interactiveInverse050": "{{colors.blackTint080}}",
     "interactiveNegative010": "{{colors.red090}}",
     "interactiveNegative020": "{{colors.red100}}",
     "interactiveNegative030": "{{colors.red060}}",
@@ -130,11 +130,11 @@ Object {
     "interfaceBackground": "{{colors.neutral090}}",
     "interfaceBrand010": "{{colors.blue060}}",
     "interfaceBrand020": "{{colors.blue020}}",
-    "interfaceInformative010": "{{colors.teal070}}",
-    "interfaceInformative020": "{{colors.teal010}}",
-    "interfaceNegative010": "{{colors.red070}}",
-    "interfaceNegative020": "{{colors.red010}}",
-    "interfaceNeutral010": "{{colors.neutral080}}",
+    "interfaceInformative010": "{{colors.teal050}}",
+    "interfaceInformative020": "{{colors.teal070}}",
+    "interfaceNegative010": "{{colors.red040}}",
+    "interfaceNegative020": "{{colors.red070}}",
+    "interfaceNeutral010": "{{colors.neutral030}}",
     "interfaceNeutral020": "{{colors.neutral010}}",
     "interfaceNotice010": "{{colors.amber030}}",
     "interfaceNotice020": "{{colors.neutral020}}",
@@ -2876,7 +2876,7 @@ Object {
           "md": "space030",
           "xs": "space020",
         },
-        "stylePreset": "inkInverse",
+        "stylePreset": "videoPlayerDockTextTitle",
         "typographyPreset": Object {
           "md": "utilityHeading040",
           "xs": "utilityHeading010",
@@ -2991,6 +2991,11 @@ Object {
     },
     "valid": Object {
       "color": "{{colors.inkSubtle}}",
+    },
+  },
+  "audioPlayerLabels": Object {
+    "base": Object {
+      "color": "{{colors.inkBase}}",
     },
   },
   "audioPlayerSeekBarBuffering": Object {
@@ -5551,6 +5556,7 @@ Object {
   "timeDisplay": Object {
     "base": Object {
       "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkBase}}",
     },
   },
   "titleBar": Object {
@@ -5625,6 +5631,11 @@ Object {
       "backgroundImage": "{{overlays.overlayGradientInverseVertical}}",
     },
   },
+  "videoPlayerDockTextTitle": Object {
+    "base": Object {
+      "color": "{{colors.white}}",
+    },
+  },
   "videoPlayerLoadProgressBar": Object {
     "base": Object {
       "backgroundColor": "{{colors.whiteTint050}}",
@@ -5638,11 +5649,11 @@ Object {
   "videoPlayerPlayButton": Object {
     "base": Object {
       "backgroundColor": "{{colors.transparent}}",
-      "borderColor": "{{colors.inkInverse}}",
+      "borderColor": "{{colors.white}}",
       "borderRadius": "{{borders.borderRadiusCircle}}",
       "borderStyle": "solid",
       "borderWidth": "{{borders.borderWidth020}}",
-      "color": "{{colors.inkInverse}}",
+      "color": "{{colors.white}}",
     },
   },
   "videoPlayerPlayProgressBar": Object {

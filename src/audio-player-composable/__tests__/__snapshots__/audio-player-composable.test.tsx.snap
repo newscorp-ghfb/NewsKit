@@ -1512,6 +1512,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   display: inline-block;
   display: block;
   background-color: transparent;
+  color: #2E2E2E;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -2635,6 +2636,7 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   display: inline-block;
   display: block;
   background-color: transparent;
+  color: #2E2E2E;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -3816,6 +3818,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   display: inline-block;
   display: block;
   background-color: transparent;
+  color: #2E2E2E;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;

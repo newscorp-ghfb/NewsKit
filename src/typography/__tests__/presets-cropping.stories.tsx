@@ -4,6 +4,10 @@ import {TextBlock} from '../../text-block';
 import {Grid, Cell} from '../../grid';
 import {createTheme, ThemeProvider, useTheme} from '../../theme';
 import {Heading1} from '../heading';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 
 export default {
   title: 'NewsKit Light/typography/presets-cropping',
@@ -60,8 +64,8 @@ export const EditorialCropping1 = () => {
     <>
       <Grid>
         <Cell xs={6}>
-          <h1>Presets cropping</h1>
-          <h2>Editorial</h2>
+          <StorybookHeading>Presets cropping</StorybookHeading>
+          <StorybookSubHeading>Editorial</StorybookSubHeading>
           {renderTextBlockWithPreset(editorialDisplayPresetList)}
           <br />
           {renderTextBlockWithPreset(editorialLabelPresetList)}
@@ -106,8 +110,8 @@ export const EditorialCropping2 = () => {
     <>
       <Grid>
         <Cell xs={6}>
-          <h1>Presets cropping</h1>
-          <h2>Editorial</h2>
+          <StorybookHeading>Presets cropping</StorybookHeading>
+          <StorybookSubHeading>Editorial</StorybookSubHeading>
           <br />
           {renderTextBlockWithPreset(editorialSubHeadlinePresetList)}
           <br />
@@ -163,8 +167,8 @@ export const UtilityCropping = () => {
     <>
       <Grid>
         <Cell xs={6}>
-          <h1>Presets cropping</h1>
-          <h2>Utility</h2>
+          <StorybookHeading>Presets cropping</StorybookHeading>
+          <StorybookSubHeading>Utility</StorybookSubHeading>
           {renderTextBlockWithPreset(utilityHeadingPresetList)}
           <br />
           {renderTextBlockWithPreset(utilitySubHeadingPresetList)}
