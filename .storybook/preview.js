@@ -5,9 +5,11 @@ import {withPerformance} from 'storybook-addon-performance';
 import {
   ThemeProvider,
   MediaQueryProvider,
-  newskitLightTheme,
   styled,
+  getColorCssFromTheme
 } from '../src';
+
+import {getThemeObject} from '../src/test/theme-select-object'
 
 const unlimitedScenarios = [
   'grid',
@@ -22,12 +24,30 @@ const unlimitedScenarios = [
   'popover',
 ];
 
+const BackgroundColor = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  ${getColorCssFromTheme('background', 'interfaceBackground')}
+`
+
+const PaddingReset = styled.div`
+  position: relative;
+  padding: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+`
+
 const Container = styled.div`
   max-width: 1024px;
   max-height: 768px;
   overflow: hidden;
 `;
+const Background = ({children}) => <BackgroundColor><PaddingReset>{children}</PaddingReset></BackgroundColor>
 const LimitSizeDecorator = ({children}) => <Container>{children}</Container>;
+const MediaQueryProviderDecorator = ({children}) => <MediaQueryProvider>{children}</MediaQueryProvider>
 const NoDecorator = ({children}) => <>{children}</>;
 
 export const parameters = {
@@ -41,12 +61,31 @@ export const parameters = {
   viewport: {
     viewports: INITIAL_VIEWPORTS,
   },
+  backgrounds: {
+    values: [
+      {
+        name: 'Newskit light',
+        value: '#ffffff',
+      },
+      {
+        name: 'Newskit dark',
+        value: '#2E2E2E',
+      },
+      {
+        name: 'The Sun',
+        value: '#eb1801',
+      },
+      {
+        name: 'The Times',
+        value: '#006699',
+      },
+      {
+        name: 'Virgin',
+        value: '#e10a0a',
+      }
+    ],
+  },
 };
-
-const getThemeFromContext = ({kind}) =>
-  [['', newskitLightTheme]].find(([name, theme]) =>
-    kind.toLowerCase().includes(name) ? theme : false,
-  )[1];
 
 export const decorators = [
   // Add wrapper around stories to limit their size
@@ -70,7 +109,7 @@ export const decorators = [
 
     const Decorator = shouldDisableMQDecorator
       ? NoDecorator
-      : MediaQueryProvider;
+      : MediaQueryProviderDecorator;
 
     return (
       <Decorator>
@@ -80,8 +119,10 @@ export const decorators = [
   },
   (Story, context) => {
     return (
-      <ThemeProvider theme={getThemeFromContext(context)}>
-        <Story />
+      <ThemeProvider theme={getThemeObject(context?.globals?.backgrounds?.value)}>
+        <Background>
+          <Story />
+        </Background>
       </ThemeProvider>
     );
   },

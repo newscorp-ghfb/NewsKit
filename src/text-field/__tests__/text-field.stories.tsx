@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {TextField, TextFieldSize} from '..';
 import {Block} from '../../block';
 import {Button} from '../../button';
@@ -14,11 +15,17 @@ import {Stack} from '../../stack';
 import {
   StorybookHeading,
   StorybookSubHeading,
+  StorybookParah,
 } from '../../test/storybook-comps';
-import {createTheme, ThemeProvider} from '../../theme';
-import {styled, getSizingCssFromTheme} from '../../utils/style';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {
+  styled,
+  getSizingCssFromTheme,
+  getColorCssFromTheme,
+} from '../../utils/style';
 import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const CustomBlock = styled.div`
   margin-right: 12px;
@@ -27,8 +34,8 @@ const Container = styled.div`
   ${getSizingCssFromTheme('margin', 'sizing080')};
 `;
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-text-input-theme',
+const textFieldCustomThemeObject: CreateThemeArgs = {
+  name: 'text-input-custom-theme',
   overrides: {
     stylePresets: {
       inputContainerCustom: {
@@ -123,13 +130,8 @@ const myCustomTheme = createTheme({
       },
     },
   },
-});
-
-export default {
-  title: 'NewsKit Light/text-field',
-  component: () => 'None',
-  disabledRules: ['color-contrast'],
 };
+
 export const TextFieldSizeExamples = () => (
   <>
     <StorybookHeading>Text Field Sizes</StorybookHeading>
@@ -243,37 +245,35 @@ export const TextFieldWithOverrides = () => (
   <>
     <StorybookHeading>Text With Overrides</StorybookHeading>
     <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Label
-          htmlFor="id-7"
-          overrides={{
-            stylePreset: 'labelOverrides',
-          }}
-        >
-          Label
-        </Label>
-        <TextField
-          aria-describedby="id-7-at"
-          id="id-7"
-          placeholder="Placeholder"
-          overrides={{
-            stylePreset: 'inputContainerCustom',
-            typographyPreset: 'utilityBody030',
-            spaceInset: 'spaceInset040',
-            minHeight: 'sizing090',
-            spaceStack: 'space000',
-          }}
-        />
-        <Block spaceStack="space020" />
-        <AssistiveText
-          id="id-7-at"
-          overrides={{
-            stylePreset: 'assistiveTextOverrides',
-          }}
-        >
-          Assistive Text
-        </AssistiveText>
-      </ThemeProvider>
+      <Label
+        htmlFor="id-7"
+        overrides={{
+          stylePreset: 'labelOverrides',
+        }}
+      >
+        Label
+      </Label>
+      <TextField
+        aria-describedby="id-7-at"
+        id="id-7"
+        placeholder="Placeholder"
+        overrides={{
+          stylePreset: 'inputContainerCustom',
+          typographyPreset: 'utilityBody030',
+          spaceInset: 'spaceInset040',
+          minHeight: 'sizing090',
+          spaceStack: 'space000',
+        }}
+      />
+      <Block spaceStack="space020" />
+      <AssistiveText
+        id="id-7-at"
+        overrides={{
+          stylePreset: 'assistiveTextOverrides',
+        }}
+      >
+        Assistive Text
+      </AssistiveText>
     </Container>
   </>
 );
@@ -285,48 +285,46 @@ export const TextFieldLogicalProps = () => (
       Inspect the box for better understanding
     </StorybookSubHeading>
     <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Label htmlFor="id-14" overrides={{stylePreset: 'labelOverrides'}}>
-          Label
-        </Label>
-        <TextField
-          aria-describedby="id-14-at"
-          id="id-14"
-          placeholder="marginInline & marginBlock"
-          overrides={{
-            marginBlock: 'space060',
-            marginInline: 'space080',
-          }}
-        />
-        <Block spaceStack="space080" />
-        <Label htmlFor="id-15" overrides={{stylePreset: 'labelOverrides'}}>
-          Label
-        </Label>
-        <TextField
-          aria-describedby="id-15-at"
-          id="id-15"
-          placeholder="paddingInline & paddingBlock"
-          overrides={{
-            paddingBlock: 'space060',
-            paddingInline: 'space080',
-          }}
-        />
-        <Block spaceStack="space080" />
-        <Label htmlFor="id-16" overrides={{stylePreset: 'labelOverrides'}}>
-          Label
-        </Label>
-        <TextField
-          aria-describedby="id-16-at"
-          id="id-16"
-          placeholder="marginInline & marginBlock & paddingInline & paddingBlock"
-          overrides={{
-            marginBlock: 'space060',
-            marginInline: 'space080',
-            paddingBlock: 'space060',
-            paddingInline: 'space080',
-          }}
-        />
-      </ThemeProvider>
+      <Label htmlFor="id-14" overrides={{stylePreset: 'labelOverrides'}}>
+        Label
+      </Label>
+      <TextField
+        aria-describedby="id-14-at"
+        id="id-14"
+        placeholder="marginInline & marginBlock"
+        overrides={{
+          marginBlock: 'space060',
+          marginInline: 'space080',
+        }}
+      />
+      <Block spaceStack="space080" />
+      <Label htmlFor="id-15" overrides={{stylePreset: 'labelOverrides'}}>
+        Label
+      </Label>
+      <TextField
+        aria-describedby="id-15-at"
+        id="id-15"
+        placeholder="paddingInline & paddingBlock"
+        overrides={{
+          paddingBlock: 'space060',
+          paddingInline: 'space080',
+        }}
+      />
+      <Block spaceStack="space080" />
+      <Label htmlFor="id-16" overrides={{stylePreset: 'labelOverrides'}}>
+        Label
+      </Label>
+      <TextField
+        aria-describedby="id-16-at"
+        id="id-16"
+        placeholder="marginInline & marginBlock & paddingInline & paddingBlock"
+        overrides={{
+          marginBlock: 'space060',
+          marginInline: 'space080',
+          paddingBlock: 'space060',
+          paddingInline: 'space080',
+        }}
+      />
     </Container>
   </>
 );
@@ -392,6 +390,7 @@ export const TextFieldAddOn = () => {
     background: none;
     appearance: none;
     width: 40px;
+    ${getColorCssFromTheme('color', 'inkBase')};
   `;
 
   const DropDown = () => (
@@ -472,7 +471,9 @@ export const TextFieldAddOn = () => {
         </Block>
         <Block spaceStack={blockSpaceStack}>
           <StorybookSubHeading>Text Field with two icons</StorybookSubHeading>
-          <p>Please type inside the text field to see second icons</p>
+          <StorybookParah>
+            Please type inside the text field to see second icons
+          </StorybookParah>
           <Label htmlFor="id-12">Label</Label>
           <TextField
             aria-describedby="id-12-at"
@@ -495,7 +496,7 @@ export const TextFieldAddOn = () => {
         </Block>
         <Block spaceStack={blockSpaceStack}>
           <Label htmlFor="id-13">Label</Label>
-          Label
+
           <TextField
             aria-describedby="id-13-at"
             id="id-13"
@@ -522,114 +523,130 @@ export const TextFieldAddOn = () => {
 export const TextFieldOutlineOverrideExamples = () => (
   <>
     <StorybookHeading>Outline override</StorybookHeading>
-    <ThemeProvider theme={myCustomTheme}>
-      <Container>
-        <Stack
-          flow="horizontal-center"
-          spaceInline="space070"
-          spaceStack="space050"
-          wrap="wrap"
-        >
+    <Container>
+      <Stack
+        flow="horizontal-center"
+        spaceInline="space070"
+        spaceStack="space050"
+        wrap="wrap"
+      >
+        <Block>
           <Block>
-            <Block>
-              <Grid>
-                <Cell xs={12}>
-                  <StorybookSubHeading>Custom Color</StorybookSubHeading>
-                  <Label htmlFor="id-outline-1" size={'small' as TextFieldSize}>
-                    A Label
-                  </Label>
-                  <TextField
-                    aria-describedby="id-outline-1-at"
-                    id="id-outline-1"
-                    size={'small' as TextFieldSize}
-                    overrides={{
-                      stylePreset: 'customOutlineColor',
-                    }}
-                  />
-                  <AssistiveText
-                    id="id-outline-1-at"
-                    size={'small' as TextFieldSize}
-                  >
-                    Assistive Text Goes Here
-                  </AssistiveText>
-                </Cell>
-              </Grid>
-            </Block>
-            <Block>
-              <Grid>
-                <Cell xs={12}>
-                  <StorybookSubHeading>Custom Style</StorybookSubHeading>
-                  <Label htmlFor="id-outline-2" size={'small' as TextFieldSize}>
-                    A Label
-                  </Label>
-                  <TextField
-                    aria-describedby="id-2-at"
-                    id="id-outline-2"
-                    size={'small' as TextFieldSize}
-                    overrides={{
-                      stylePreset: 'customOutlineStyle',
-                    }}
-                  />
-                  <AssistiveText
-                    id="id-outline-2-at"
-                    size={'small' as TextFieldSize}
-                  >
-                    Assistive Text Goes Here
-                  </AssistiveText>
-                </Cell>
-              </Grid>
-            </Block>
-            <Block>
-              <Grid>
-                <Cell xs={12}>
-                  <StorybookSubHeading>Custom Width</StorybookSubHeading>
-                  <Label htmlFor="id-outline-3" size={'small' as TextFieldSize}>
-                    A Label
-                  </Label>
-                  <TextField
-                    aria-describedby="id-outline-3-at"
-                    id="id-outline-3"
-                    size={'small' as TextFieldSize}
-                    overrides={{
-                      stylePreset: 'customOutlineWidth',
-                    }}
-                  />
-                  <AssistiveText
-                    id="id-outline-3-at"
-                    size={'small' as TextFieldSize}
-                  >
-                    Assistive Text Goes Here
-                  </AssistiveText>
-                </Cell>
-              </Grid>
-            </Block>
-            <Block>
-              <Grid>
-                <Cell xs={12}>
-                  <StorybookSubHeading>Custom Offset</StorybookSubHeading>
-                  <Label htmlFor="id-outline-4" size={'small' as TextFieldSize}>
-                    A Label
-                  </Label>
-                  <TextField
-                    aria-describedby="id-outline-4-at"
-                    id="id-outline-4"
-                    size={'small' as TextFieldSize}
-                    overrides={{
-                      stylePreset: 'customOutlineOffset',
-                    }}
-                  />
-                  <AssistiveText
-                    id="id-outline-4-at"
-                    size={'small' as TextFieldSize}
-                  >
-                    Assistive Text Goes Here
-                  </AssistiveText>
-                </Cell>
-              </Grid>
-            </Block>
+            <Grid>
+              <Cell xs={12}>
+                <StorybookSubHeading>Custom Color</StorybookSubHeading>
+                <Label htmlFor="id-outline-1" size={'small' as TextFieldSize}>
+                  A Label
+                </Label>
+                <TextField
+                  aria-describedby="id-outline-1-at"
+                  id="id-outline-1"
+                  size={'small' as TextFieldSize}
+                  overrides={{
+                    stylePreset: 'customOutlineColor',
+                  }}
+                />
+                <AssistiveText
+                  id="id-outline-1-at"
+                  size={'small' as TextFieldSize}
+                >
+                  Assistive Text Goes Here
+                </AssistiveText>
+              </Cell>
+            </Grid>
           </Block>
-        </Stack>
-      </Container>
-    </ThemeProvider>
+          <Block>
+            <Grid>
+              <Cell xs={12}>
+                <StorybookSubHeading>Custom Style</StorybookSubHeading>
+                <Label htmlFor="id-outline-2" size={'small' as TextFieldSize}>
+                  A Label
+                </Label>
+                <TextField
+                  aria-describedby="id-2-at"
+                  id="id-outline-2"
+                  size={'small' as TextFieldSize}
+                  overrides={{
+                    stylePreset: 'customOutlineStyle',
+                  }}
+                />
+                <AssistiveText
+                  id="id-outline-2-at"
+                  size={'small' as TextFieldSize}
+                >
+                  Assistive Text Goes Here
+                </AssistiveText>
+              </Cell>
+            </Grid>
+          </Block>
+          <Block>
+            <Grid>
+              <Cell xs={12}>
+                <StorybookSubHeading>Custom Width</StorybookSubHeading>
+                <Label htmlFor="id-outline-3" size={'small' as TextFieldSize}>
+                  A Label
+                </Label>
+                <TextField
+                  aria-describedby="id-outline-3-at"
+                  id="id-outline-3"
+                  size={'small' as TextFieldSize}
+                  overrides={{
+                    stylePreset: 'customOutlineWidth',
+                  }}
+                />
+                <AssistiveText
+                  id="id-outline-3-at"
+                  size={'small' as TextFieldSize}
+                >
+                  Assistive Text Goes Here
+                </AssistiveText>
+              </Cell>
+            </Grid>
+          </Block>
+          <Block>
+            <Grid>
+              <Cell xs={12}>
+                <StorybookSubHeading>Custom Offset</StorybookSubHeading>
+                <Label htmlFor="id-outline-4" size={'small' as TextFieldSize}>
+                  A Label
+                </Label>
+                <TextField
+                  aria-describedby="id-outline-4-at"
+                  id="id-outline-4"
+                  size={'small' as TextFieldSize}
+                  overrides={{
+                    stylePreset: 'customOutlineOffset',
+                  }}
+                />
+                <AssistiveText
+                  id="id-outline-4-at"
+                  size={'small' as TextFieldSize}
+                >
+                  Assistive Text Goes Here
+                </AssistiveText>
+              </Cell>
+            </Grid>
+          </Block>
+        </Block>
+      </Stack>
+    </Container>
   </>
 );
+
+export default {
+  title: 'NewsKit Light/text-field',
+  component: () => 'None',
+  disabledRules: ['color-contrast'],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          textFieldCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

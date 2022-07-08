@@ -6,6 +6,7 @@ import React from 'react';
 interface StoryType {
   default: {
     title: string;
+    decorators: Array<(Story: StoryType) => JSX.Element>;
   };
 }
 
@@ -55,6 +56,20 @@ export default function showTestcase() {
     const message = `No story found with the name: '${name}.'`;
     console.error(message);
     return <A11yFail message={message} />;
+  }
+
+  // This checks to see if the story has a decorator and if so wraps the Story component in it.
+  // This ensures story specific custom themes are applied to the components in the e2e tests
+  if (story.default.decorators) {
+    return (
+      <>
+        {Object.values(story)
+          .filter(storyComponent => typeof storyComponent === 'function')
+          .map(Story => (
+            <>{story.default.decorators[0](Story)}</>
+          ))}
+      </>
+    );
   }
 
   return (

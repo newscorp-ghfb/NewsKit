@@ -65,6 +65,7 @@ export const sizeOverrides: [string, SwitchOverrides][] = [
       input: {blockSize: '12px', paddingInline: '0px', marginBlock: '10px'},
       thumb: {stylePreset: 'borderedThumb', size: 'sizing060'},
       thumbIcon: IconFilledDragHandle,
+      label: {stylePreset: 'controlLabel'},
     },
   ],
 ];

@@ -1,11 +1,14 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
   StorybookSubHeading,
+  StorybookSpan,
+  StorybookLabel,
 } from '../../test/storybook-comps';
 
 import {RadioButton} from '..';
-import {compileTheme, createTheme, ThemeProvider} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils';
 import {
   Cell,
@@ -18,11 +21,104 @@ import {states, sizes} from './helpers';
 import {RadioGroup} from '../radio-group';
 import {RadioButtonIconProps} from '../types';
 import {Fieldset} from '../../fieldset';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-export default {
-  title: 'NewsKit Light/radio-button',
-  component: () => 'None',
-  disabledRules: [],
+const radioButtonCustomThemeObject: CreateThemeArgs = {
+  name: 'radio-group-theme',
+  overrides: {
+    stylePresets: {
+      customRadioInput: {
+        base: {
+          borderColor: 'red',
+          borderStyle: 'solid',
+          borderWidth: '2px',
+          borderRadius: '50%',
+          backgroundColor: 'orange',
+          iconColor: 'red',
+        },
+        hover: {
+          backgroundColor: 'blue',
+        },
+      },
+      customRadioFeedback: {
+        base: {
+          backgroundColor: 'rgba(0,0,0,0.0)',
+          borderRadius: '50%',
+        },
+        hover: {
+          backgroundColor: 'rgba(0,0,0,0.5)',
+          borderRadius: '50%',
+        },
+      },
+      customIconFilledCancel: {
+        base: {
+          backgroundColor: '{{colors.interfaceInformative010}}',
+          iconColor: '{{colors.inkInverse}}',
+          borderRadius: '50%',
+        },
+      },
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.interactiveInput010}}',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidth020}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          borderStyle: 'solid',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.interactiveInput010}}',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidth020}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          borderStyle: 'solid',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.interactiveInput010}}',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidth020}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          borderStyle: 'solid',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.interactiveInput010}}',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidth020}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          borderStyle: 'solid',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
+    },
+  },
 };
 
 const Container = styled.div`
@@ -103,9 +199,12 @@ export const StoryRadioButtonLabel = () => {
         columnGap="space030"
         alignItems="center"
       >
-        <span>This is radio-button </span> <RadioButton id="custom-label" />
-        {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-        <label htmlFor="custom-label">with custom label</label>
+        <StorybookSpan>This is radio-button </StorybookSpan>
+        <RadioButton id="custom-label" />
+        {}
+        <StorybookLabel htmlFor="custom-label">
+          with custom label
+        </StorybookLabel>
       </GridLayout>
     </Container>
   );
@@ -186,106 +285,6 @@ export const StoryRadioButtonWithGroup = () => {
 };
 StoryRadioButtonWithGroup.storyName = 'radio-group';
 
-const myCustomTheme = compileTheme(
-  createTheme({
-    name: 'radio-group-theme',
-    overrides: {
-      stylePresets: {
-        customRadioInput: {
-          base: {
-            borderColor: 'red',
-            borderStyle: 'solid',
-            borderWidth: '2px',
-            borderRadius: '50%',
-            backgroundColor: 'orange',
-            iconColor: 'red',
-          },
-          hover: {
-            backgroundColor: 'blue',
-          },
-        },
-        customRadioFeedback: {
-          base: {
-            backgroundColor: 'rgba(0,0,0,0.0)',
-            borderRadius: '50%',
-          },
-          hover: {
-            backgroundColor: 'rgba(0,0,0,0.5)',
-            borderRadius: '50%',
-          },
-        },
-        customIconFilledCancel: {
-          base: {
-            backgroundColor: '{{colors.interfaceInformative010}}',
-            iconColor: '{{colors.inkInverse}}',
-            borderRadius: '50%',
-          },
-        },
-        customOutlineColor: {
-          base: {
-            backgroundColor: '{{colors.interactiveInput010}}',
-            borderColor: '{{colors.interactiveInput020}}',
-            borderWidth: '{{borders.borderWidth020}}',
-            borderRadius: '{{borders.borderRadiusCircle}}',
-            borderStyle: 'solid',
-          },
-          'focus-visible': {
-            outlineColor: 'red',
-            outlineStyle: '{{outlines.outlineStyleDefault}}',
-            outlineWidth: '{{outlines.outlineWidthDefault}}',
-            outlineOffset: '{{outlines.outlineOffsetDefault}}',
-          },
-        },
-        customOutlineStyle: {
-          base: {
-            backgroundColor: '{{colors.interactiveInput010}}',
-            borderColor: '{{colors.interactiveInput020}}',
-            borderWidth: '{{borders.borderWidth020}}',
-            borderRadius: '{{borders.borderRadiusCircle}}',
-            borderStyle: 'solid',
-          },
-          'focus-visible': {
-            outlineColor: 'red',
-            outlineStyle: 'dotted',
-            outlineWidth: '{{outlines.outlineWidthDefault}}',
-            outlineOffset: '{{outlines.outlineOffsetDefault}}',
-          },
-        },
-        customOutlineWidth: {
-          base: {
-            backgroundColor: '{{colors.interactiveInput010}}',
-            borderColor: '{{colors.interactiveInput020}}',
-            borderWidth: '{{borders.borderWidth020}}',
-            borderRadius: '{{borders.borderRadiusCircle}}',
-            borderStyle: 'solid',
-          },
-          'focus-visible': {
-            outlineColor: 'red',
-            outlineStyle: 'dotted',
-            outlineWidth: '5px',
-            outlineOffset: '{{outlines.outlineOffsetDefault}}',
-          },
-        },
-        customOutlineOffset: {
-          base: {
-            backgroundColor: '{{colors.interactiveInput010}}',
-            borderColor: '{{colors.interactiveInput020}}',
-            borderWidth: '{{borders.borderWidth020}}',
-            borderRadius: '{{borders.borderRadiusCircle}}',
-            borderStyle: 'solid',
-          },
-          'focus-visible': {
-            outlineColor: 'red',
-            outlineStyle: 'dotted',
-            outlineWidth: '5px',
-            outlineOffset: '5px',
-          },
-        },
-      },
-    },
-  }),
-);
-
 const CustomIcon = ({checked}: RadioButtonIconProps) =>
   checked ? (
     <IconFilledStarOutline overrides={{size: 'iconSize020'}} />
@@ -331,78 +330,52 @@ export const StoryRadioButtonOverrides = () => {
   };
 
   return (
-    <ThemeProvider theme={myCustomTheme}>
-      <Container>
-        <StorybookHeading>RadioButton</StorybookHeading>
-        <StorybookSubHeading>Style overrides</StorybookSubHeading>
-        <Fieldset legend="Select an option">
-          <RadioGroup name="style" defaultValue="1">
-            <GridLayout rowGap="space040" columns="max-content">
-              <RadioButton
-                value="1"
-                label="Option 1"
-                overrides={styleOverrides}
-              />
-              <RadioButton
-                value="2"
-                label="Option 2"
-                overrides={styleOverrides}
-              />
-              <RadioButton
-                value="3"
-                label="Option 3"
-                overrides={styleOverrides}
-              />
-            </GridLayout>
-          </RadioGroup>
-        </Fieldset>
+    <Container>
+      <StorybookHeading>RadioButton</StorybookHeading>
+      <StorybookSubHeading>Style overrides</StorybookSubHeading>
+      <Fieldset legend="Select an option">
+        <RadioGroup name="style" defaultValue="1">
+          <GridLayout rowGap="space040" columns="max-content">
+            <RadioButton
+              value="1"
+              label="Option 1"
+              overrides={styleOverrides}
+            />
+            <RadioButton
+              value="2"
+              label="Option 2"
+              overrides={styleOverrides}
+            />
+            <RadioButton
+              value="3"
+              label="Option 3"
+              overrides={styleOverrides}
+            />
+          </GridLayout>
+        </RadioGroup>
+      </Fieldset>
 
-        <StorybookSubHeading>Icon Prop override</StorybookSubHeading>
-        <Fieldset legend="Select an option">
-          <RadioGroup name="prop" defaultValue="1">
-            <GridLayout rowGap="space040" columns="max-content">
-              <RadioButton
-                value="1"
-                label="Option 1"
-                overrides={propOverrides}
-              />
-              <RadioButton
-                value="2"
-                label="Option 2"
-                overrides={propOverrides}
-              />
-              <RadioButton
-                value="3"
-                label="Option 3"
-                overrides={propOverrides}
-              />
-            </GridLayout>
-          </RadioGroup>
-        </Fieldset>
-        <StorybookSubHeading>Icon Component override</StorybookSubHeading>
-        <Fieldset legend="Select an option">
-          <RadioGroup name="icon" defaultValue="1">
-            <GridLayout rowGap="space040" columns="max-content">
-              <RadioButton
-                value="1"
-                label="Option 1"
-                overrides={iconOverrides}
-              />
-              <RadioButton
-                value="2"
-                label="Option 2"
-                overrides={iconOverrides}
-              />
-              <RadioButton
-                value="3"
-                label="Option 3"
-                overrides={iconOverrides}
-              />
-            </GridLayout>
-          </RadioGroup>
-        </Fieldset>
-      </Container>
-    </ThemeProvider>
+      <StorybookSubHeading>Icon Prop override</StorybookSubHeading>
+      <Fieldset legend="Select an option">
+        <RadioGroup name="prop" defaultValue="1">
+          <GridLayout rowGap="space040" columns="max-content">
+            <RadioButton value="1" label="Option 1" overrides={propOverrides} />
+            <RadioButton value="2" label="Option 2" overrides={propOverrides} />
+            <RadioButton value="3" label="Option 3" overrides={propOverrides} />
+          </GridLayout>
+        </RadioGroup>
+      </Fieldset>
+      <StorybookSubHeading>Icon Component override</StorybookSubHeading>
+      <Fieldset legend="Select an option">
+        <RadioGroup name="icon" defaultValue="1">
+          <GridLayout rowGap="space040" columns="max-content">
+            <RadioButton value="1" label="Option 1" overrides={iconOverrides} />
+            <RadioButton value="2" label="Option 2" overrides={iconOverrides} />
+            <RadioButton value="3" label="Option 3" overrides={iconOverrides} />
+          </GridLayout>
+        </RadioGroup>
+      </Fieldset>
+    </Container>
   );
 };
 StoryRadioButtonOverrides.storyName = 'radio-button-overrides';
@@ -444,7 +417,7 @@ StoryRadioButtonLogicalPropsOverrides.storyName =
   'radio-button-logical-overrides';
 
 export const StoryRadioButtonOutlineOverrides = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <Container>
       <StorybookSubHeading>Radio Button outline override</StorybookSubHeading>
       <Fieldset legend="Custom Color">
@@ -586,7 +559,25 @@ export const StoryRadioButtonOutlineOverrides = () => (
         </RadioGroup>
       </Fieldset>
     </Container>
-  </ThemeProvider>
+  </>
 );
 
 StoryRadioButtonOutlineOverrides.storyName = 'radio-button-outline-overrides';
+
+export default {
+  title: 'NewsKit Light/radio-button',
+  component: () => 'None',
+  disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          radioButtonCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};
