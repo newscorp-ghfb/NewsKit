@@ -15,13 +15,13 @@ export const overlays = {
   overlayGradientFromBottomRight:
     'linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)',
   overlayGradientFromLeft:
-    'linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)',
+    'linear-gradient(270deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)',
   overlayGradientFromRight:
     'linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)',
   overlayGradientFromTop:
     'linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)',
   overlayGradientFromTopLeft:
-    'linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)',
+    'linear-gradient(315deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)',
   overlayGradientFromTopRight:
     'linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)',
 
