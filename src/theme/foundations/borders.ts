@@ -7,10 +7,10 @@ export const borders = {
   borderRadiusSharp: '{{sizing.sizing000}}',
   borderRadiusCircle: '50%',
   borderRadiusPill: '20rem',
-  borderRadiusDefault: '{{sizing.sizing020}}',
   borderRadiusRounded010: '{{sizing.sizing010}}',
   borderRadiusRounded020: '{{sizing.sizing020}}',
   borderRadiusRounded030: '{{sizing.sizing030}}',
   borderRadiusRounded040: '{{sizing.sizing040}}',
   borderRadiusRounded050: '{{sizing.sizing050}}',
+  borderRadiusDefault: '{{borders.borderRadiusRounded020}}',
 };
