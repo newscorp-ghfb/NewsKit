@@ -33,7 +33,7 @@ export const AudioPlayerE2E = () => {
     <div data-testid="audio-player-inline">
       <StorybookSubHeading>Audio player for e2e tests</StorybookSubHeading>
       <AudioPlayerComposable
-        src="/audio_file_1.mp3"
+        src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
         ariaLandmark="audio player e2e tests"
       >
         <GridLayout rowGap="space020" areas={fullAudioPlayerAreas}>
