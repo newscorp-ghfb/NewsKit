@@ -174,7 +174,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   >
     <audio
       data-testid="audio-element"
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src="/audio_file_1.mp3"
     />
     <div
       class="emotion-0"
@@ -506,7 +506,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   >
     <audio
       data-testid="audio-element"
-      src="/audio_file_1.mp3"
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
     />
     <div
       class="emotion-0"
