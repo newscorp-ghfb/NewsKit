@@ -1,22 +1,36 @@
+const defaults = {
+  spaceBetween: 'space030',
+  slider: {
+    track: {
+      stylePreset: 'audioPlayerVolumeControlTrack',
+      size: 'sizing010',
+      length: '130px',
+    },
+    indicator: {
+      stylePreset: 'audioPlayerVolumeControlIndicator',
+    },
+    thumb: {
+      stylePreset: 'audioPlayerVolumeControlThumb',
+      size: 'sizing040',
+    },
+    feedback: {
+      size: 'sizing060',
+    },
+  },
+  button: {
+    stylePreset: 'iconButtonMinimalPrimary',
+  },
+};
+
 export default {
   audioPlayerVolumeControl: {
-    slider: {
-      track: {
-        stylePreset: 'audioPlayerVolumeControlTrack',
-        size: 'sizing010',
-        length: '130px',
-      },
-      indicator: {
-        stylePreset: 'audioPlayerVolumeControlIndicator',
-      },
-      thumb: {
-        stylePreset: 'audioPlayerVolumeControlThumb',
-        size: 'sizing040',
-      },
+    horizontal: {
+      stylePreset: 'audioPlayerVolumeControlHorizontalContainer',
+      ...defaults,
     },
-    button: {
-      stylePreset: 'iconButtonMinimalPrimary',
-      iconSize: 'iconSize020',
+    vertical: {
+      stylePreset: 'audioPlayerVolumeControlVerticalContainer',
+      ...defaults,
     },
   },
 };
