@@ -7,7 +7,7 @@ import {Block} from '../../block';
 import {Image} from '../../image';
 import {createTheme, ThemeProvider} from '../../theme';
 import {getSSRId} from '../../utils';
-import {Button} from '../../button';
+import {Button, ButtonSize} from '../../button';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-scroll-theme',
@@ -342,3 +342,26 @@ export const StoryLogicalProps = () => (
   </MainContainer>
 );
 StoryLogicalProps.storyName = 'logical-props';
+
+export const StoryScrollInsideTheContainer = () => (
+  <MainContainer>
+    <StorybookSubHeading>
+      Scroll elements inside the container using tab key
+    </StorybookSubHeading>
+    <Container width="250px" height="100px">
+      <Scroll scrollBar controls="static" tabIndex={-1}>
+        <Flex>
+          {Array.from({length: 10}, (_, i) => (
+            <Button
+              key={getSSRId()}
+              tabIndex={0}
+              size={ButtonSize.Small}
+            >{`Item ${i + 1}`}</Button>
+          ))}
+        </Flex>
+      </Scroll>
+    </Container>
+  </MainContainer>
+);
+StoryScrollInsideTheContainer.storyName =
+  'scroll-inside-the-container-with-tab-key';
