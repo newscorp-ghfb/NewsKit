@@ -13,6 +13,7 @@ import {
 import {
   ContentSection,
   ContentPrimary,
+  ContentSecondary,
   ContentTertiary,
   ContentColSpan,
 } from '../../../components/content-structure';
@@ -199,7 +200,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
             <Illustration path="patterns/forms/input-components/checkbox/checkbox" />
           </Block>
         </ContentPrimary>
-        <ContentTertiary
+        <ContentSecondary
           headline="Considerations"
           childrenColSpan={ContentColSpan.TEXT}
         >
@@ -240,8 +241,8 @@ const InputComponents = (layoutProps: LayoutProps) => (
               grouped together.
             </>
           </UnorderedList>
-        </ContentTertiary>
-        <ContentTertiary
+        </ContentSecondary>
+        <ContentSecondary
           headline="Checkbox usage example"
           description={
             <UnorderedList
@@ -278,7 +279,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
             <Illustration path="patterns/forms/input-components/select/select" />
           </Block>
         </ContentPrimary>
-        <ContentTertiary
+        <ContentSecondary
           headline="Considerations"
           childrenColSpan={ContentColSpan.TEXT}
         >
@@ -307,8 +308,8 @@ const InputComponents = (layoutProps: LayoutProps) => (
               easier to scan/find.
             </>
           </UnorderedList>
-        </ContentTertiary>
-        <ContentTertiary headline="Select usage example" showSeparator>
+        </ContentSecondary>
+        <ContentSecondary headline="Select usage example" showSeparator>
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
@@ -316,7 +317,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
           >
             <>Country code (If not using text input).</>
           </UnorderedList>
-        </ContentTertiary>
+        </ContentSecondary>
       </ContentSection>
 
       <ContentSection sectionName="combobox">
@@ -330,7 +331,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
             <Illustration path="patterns/forms/input-components/combo-box/combo-box" />
           </Block>
         </ContentPrimary>
-        <ContentTertiary
+        <ContentSecondary
           headline="Considerations"
           childrenColSpan={ContentColSpan.TEXT}
           showSeparator
@@ -362,7 +363,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
               select a CTA to submit.
             </>
           </UnorderedList>
-        </ContentTertiary>
+        </ContentSecondary>
       </ContentSection>
 
       <ContentSection sectionName="newsKit input component links">
