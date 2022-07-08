@@ -1,29 +1,39 @@
-import {GridLayout, GridLayoutItem} from '../../../grid-layout';
-import {getResponsiveSize, styled} from '../../../utils/style';
+import {GridLayout} from '../../../grid-layout';
+import {
+  getResponsiveSize,
+  getStylePreset,
+  styled,
+  getResponsiveSpace,
+} from '../../../utils/style';
+import {AudioPlayerVolumeControlProps} from './types';
 
-export const VolumeSliderContainer = styled.div<{vertical?: boolean}>`
-  ${({vertical}) =>
+export const StyledVolumeSliderContainer = styled.div<
+  Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides'>
+>`
+  ${({layout}) =>
     getResponsiveSize(
-      vertical ? 'height' : 'width',
-      'audioPlayerVolumeControl.slider.track',
-      'slider.track',
+      layout === 'vertical' ? 'height' : 'width',
+      `audioPlayerVolumeControl.${layout}.slider.track`,
+      `slider.track`,
       'length',
     )}
 `;
 
-export const StyledGridLayout = styled(GridLayout)<{vertical?: boolean}>`
-  ${({vertical}) =>
-    vertical &&
+export const StyledGridLayout = styled(GridLayout)<
+  Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides' | 'collapsed'>
+>`
+  ${({layout, collapsed}) =>
+    !collapsed && getStylePreset(`audioPlayerVolumeControl.${layout}`, '')};
+  ${({layout}) =>
+    layout === 'vertical' &&
     `
     position: relative;
   `};
-`;
-
-export const StyledGridLayoutItem = styled(GridLayoutItem)<{
-  vertical?: boolean;
-}>`
-  ${({vertical}) =>
-    vertical &&
-    `position: absolute;
-     bottom: 100%;`};
+  ${({layout}) =>
+    getResponsiveSpace(
+      layout === 'vertical' ? 'rowGap' : 'columnGap',
+      `audioPlayerVolumeControl.${layout}.spaceBetween`,
+      '',
+      'spaceBetween',
+    )};
 `;
