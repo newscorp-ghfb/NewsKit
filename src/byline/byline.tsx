@@ -148,63 +148,57 @@ const ThemelessByline = React.forwardRef<HTMLDivElement, BylineProps>(
     const logicalProps = extractLogicalPropsFromOverrides(overrides);
 
     return (
-      <span ref={ref}>
-        <Stack
-          flow="horizontal-center"
-          inline
-          wrap="wrap"
-          spaceStack={spaceStack}
-          {...logicalProps}
-        >
-          {bylineData.map(
-            (
-              {author, href, title, location, ariaLabel, key}: BylineData,
-              i,
-            ) => {
-              const lastItem = isLastItem(i, bylineData.length);
-              const hasLinkOnly = href && !title && !location;
-              const hasLinkAndAuthorInfo = href && (title || location);
-              const hasNoLink = !href;
-              const authorNameLink = renderLink(
-                {author, href, ariaLabel},
-                {
-                  stylePreset: linkStyles,
-                  typographyPreset: linkTypes,
-                },
-              );
+      <Stack
+        ref={ref}
+        flow="horizontal-center"
+        inline
+        wrap="wrap"
+        spaceStack={spaceStack}
+        {...logicalProps}
+      >
+        {bylineData.map(
+          ({author, href, title, location, ariaLabel, key}: BylineData, i) => {
+            const lastItem = isLastItem(i, bylineData.length);
+            const hasLinkOnly = href && !title && !location;
+            const hasLinkAndAuthorInfo = href && (title || location);
+            const hasNoLink = !href;
+            const authorNameLink = renderLink(
+              {author, href, ariaLabel},
+              {
+                stylePreset: linkStyles,
+                typographyPreset: linkTypes,
+              },
+            );
 
-              return (
-                <React.Fragment key={key}>
-                  {hasLinkOnly && (
-                    <BylineItem lastItem={lastItem}>
-                      {authorNameLink}
-                    </BylineItem>
-                  )}
+            return (
+              <React.Fragment key={key}>
+                {hasLinkOnly && (
+                  <BylineItem lastItem={lastItem}>{authorNameLink}</BylineItem>
+                )}
 
-                  {hasLinkAndAuthorInfo && (
-                    <BylineItem lastItem={lastItem}>
-                      {authorNameLink}
+                {hasLinkAndAuthorInfo && (
+                  <BylineItem lastItem={lastItem}>
+                    {authorNameLink}
 
-                      <StyledTextBlockWithSpace ariaHidden>
-                        {`,${'\u00A0'}`}
-                      </StyledTextBlockWithSpace>
-                      {byLineAuthorInfo(title, location)}
-                    </BylineItem>
-                  )}
+                    <StyledTextBlockWithSpace ariaHidden>
+                      {`,${'\u00A0'}`}
+                    </StyledTextBlockWithSpace>
+                    {byLineAuthorInfo(title, location)}
+                  </BylineItem>
+                )}
 
-                  {hasNoLink && (
-                    <BylineItem lastItem={lastItem}>
-                      {author}
-                      {title && `, ${title}`}
-                      {location && `, ${location}`}
-                    </BylineItem>
-                  )}
-                </React.Fragment>
-              );
-            },
-          )}
-        </Stack>
-      </span>
+                {hasNoLink && (
+                  <BylineItem lastItem={lastItem}>
+                    {author}
+                    {title && `, ${title}`}
+                    {location && `, ${location}`}
+                  </BylineItem>
+                )}
+              </React.Fragment>
+            );
+          },
+        )}
+      </Stack>
     );
   },
 );
