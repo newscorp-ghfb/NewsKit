@@ -4,7 +4,7 @@ export default {
   modalPanel: {
     base: {
       borderRadius: '{{borders.borderRadiusDefault}}',
-      backgroundColor: '{{colors.interfaceBackground}}',
+      backgroundColor: '{{colors.interface010}}',
       boxShadow: '{{shadows.shadow060}}',
     },
   },

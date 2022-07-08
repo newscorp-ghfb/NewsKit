@@ -323,7 +323,7 @@ export const StoryModelessModal = () =>
               {i === 3 && (
                 <Button onClick={open}>Another button to open the modal</Button>
               )}
-              <p key={i}>{scrollContent}</p>
+              <StorybookParah key={i}>{scrollContent}</StorybookParah>
             </>
           ))}
         </Box>
