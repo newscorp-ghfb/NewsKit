@@ -15,6 +15,7 @@
     "lint:fix": "yarn lint --fix",
     "lint": "eslint --report-unused-disable-directives --ext=.js,.ts --cache ."
   },
+  "author": "newskit",
   "dependencies": {
     "chalk": "4.1.2",
     "glob": "^8.0.3",
