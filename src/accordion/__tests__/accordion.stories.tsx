@@ -531,12 +531,29 @@ export const StoryAccordionGroupTransitionOverrides = () => {
       },
     },
     panel: {
-      transitionPreset: {
-        extend: 'maxHeightChange',
-        base: {
-          transitionDuration: '1000ms',
+      transitionPreset: [
+        {
+          extend: 'maxHeightChange',
+          base: {
+            transitionProperty: 'max-height',
+          },
+          enterActive: {
+            transitionDuration: '2000ms',
+          },
+          exitActive: {
+            transitionDuration: '2000ms',
+          },
         },
-      },
+        {
+          extend: 'slideLeft',
+          enterActive: {
+            transitionDuration: '2000ms',
+          },
+          exitActive: {
+            transitionDuration: '2000ms',
+          },
+        },
+      ],
     },
   };
 
@@ -555,7 +572,7 @@ export const StoryAccordionGroupTransitionOverrides = () => {
           {content}
         </Accordion>
       </AccordionGroup>
-      <StorybookSubHeading>Slow transitions</StorybookSubHeading>
+      <StorybookSubHeading>Multiple slow transitions</StorybookSubHeading>
       <AccordionGroup>
         <Accordion header="Header 67" overrides={slowTransitions}>
           {content}

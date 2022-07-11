@@ -184,16 +184,68 @@ exports[`Accordion renders as a h4 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -294,7 +346,7 @@ exports[`Accordion renders as a h4 1`] = `
       </button>
     </h4>
     <div
-      class="emotion-10"
+      class="nk-accordion-enter-done emotion-10"
       style="max-height: 0px;"
     >
       <div
@@ -499,16 +551,68 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -609,7 +713,7 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
       </button>
     </h3>
     <div
-      class="emotion-10"
+      class="nk-accordion-exit-done emotion-10"
       style="max-height: 0px;"
     >
       <div
@@ -814,16 +918,68 @@ exports[`Accordion renders with default props 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -923,7 +1079,7 @@ exports[`Accordion renders with default props 1`] = `
       </button>
     </h3>
     <div
-      class="emotion-10"
+      class="nk-accordion-exit-done emotion-10"
       style="max-height: 0px;"
     >
       <div
@@ -1104,16 +1260,68 @@ exports[`Accordion renders with disabled state 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -1214,7 +1422,7 @@ exports[`Accordion renders with disabled state 1`] = `
       </button>
     </h3>
     <div
-      class="emotion-10"
+      class="nk-accordion-exit-done emotion-10"
       style="max-height: 0px;"
     >
       <div
@@ -1419,16 +1627,68 @@ exports[`Accordion renders with expanded state and icon 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -1529,7 +1789,7 @@ exports[`Accordion renders with expanded state and icon 1`] = `
       </button>
     </h3>
     <div
-      class="emotion-10"
+      class="nk-accordion-enter-done emotion-10"
       style="max-height: 0px;"
     >
       <div
@@ -1734,16 +1994,68 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -1840,7 +2152,7 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
       </button>
     </h3>
     <div
-      class="emotion-10"
+      class="nk-accordion-enter-done emotion-10"
       style="max-height: 0px;"
     >
       <div
@@ -2064,16 +2376,68 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -2174,7 +2538,7 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
       </button>
     </h3>
     <div
-      class="emotion-10"
+      class="nk-accordion-enter-done emotion-10"
       style="max-height: 0px;"
     >
       <div
@@ -2334,16 +2698,68 @@ exports[`Accordion renders with no header 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: max-height;
+  }
+
+  .emotion-7.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-7.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-7.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-7.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-7 {
     transition-property: max-height;
+  }
+
+  .emotion-7.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-7.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-7.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-7.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -2396,7 +2812,7 @@ exports[`Accordion renders with no header 1`] = `
       </button>
     </h3>
     <div
-      class="emotion-7"
+      class="nk-accordion-exit-done emotion-7"
       style="max-height: 0px;"
     >
       <div
@@ -2593,16 +3009,68 @@ exports[`Accordion renders with no label 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-9 {
     transition-property: max-height;
+  }
+
+  .emotion-9.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-9.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-9.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-9.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-9.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-9.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-9 {
     transition-property: max-height;
+  }
+
+  .emotion-9.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-9.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-9.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-9.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-9.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-9.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -2697,7 +3165,7 @@ exports[`Accordion renders with no label 1`] = `
       </button>
     </h3>
     <div
-      class="emotion-9"
+      class="nk-accordion-exit-done emotion-9"
       style="max-height: 0px;"
     >
       <div
@@ -2910,7 +3378,71 @@ exports[`Accordion renders with style overrides 1`] = `
   .emotion-10 {
     transition-property: max-height;
     transition-duration: 500ms;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height,opacity,transform;
+    transition-duration: 200ms,200ms,200ms;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height,opacity,transform;
+    transition-duration: 200ms,200ms,200ms;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -2918,7 +3450,71 @@ exports[`Accordion renders with style overrides 1`] = `
   .emotion-10 {
     transition-property: max-height;
     transition-duration: 0ms;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height,opacity,transform;
+    transition-duration: 0ms;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height,opacity,transform;
+    transition-duration: 0ms;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -3019,7 +3615,7 @@ exports[`Accordion renders with style overrides 1`] = `
       </button>
     </h3>
     <div
-      class="emotion-10"
+      class="nk-accordion-enter-done emotion-10"
       style="max-height: 0px;"
     >
       <div
@@ -3179,16 +3775,68 @@ exports[`Accordion renders without leading icon 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: max-height;
+  }
+
+  .emotion-7.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-7.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-7.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-7.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-7 {
     transition-property: max-height;
+  }
+
+  .emotion-7.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-7.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-7.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-7.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -3243,7 +3891,7 @@ exports[`Accordion renders without leading icon 1`] = `
       </button>
     </h3>
     <div
-      class="emotion-7"
+      class="nk-accordion-exit-done emotion-7"
       style="max-height: 0px;"
     >
       <div
@@ -3448,16 +4096,68 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-10 {
     transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -3557,7 +4257,7 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
       </button>
     </h3>
     <div
-      class="emotion-10"
+      class="nk-accordion-exit-done emotion-10"
       style="max-height: 0px;"
     >
       <div
@@ -3709,16 +4409,68 @@ exports[`AccordionGroup different type of children 1`] = `
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-6 {
     transition-property: max-height;
+  }
+
+  .emotion-6.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-6.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-6.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-6.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-6.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-6.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-6 {
     transition-property: max-height;
+  }
+
+  .emotion-6.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-6.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-6.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-6.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-6.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-6.nk-accordion-exit-done {
+    max-height: 0;
   }
 }
 
@@ -3770,7 +4522,7 @@ exports[`AccordionGroup different type of children 1`] = `
         </button>
       </h3>
       <div
-        class="emotion-6"
+        class="nk-accordion-enter-done emotion-6"
         style="max-height: 0px;"
       >
         <div
@@ -3823,7 +4575,7 @@ exports[`AccordionGroup different type of children 1`] = `
         </button>
       </h3>
       <div
-        class="emotion-6"
+        class="nk-accordion-enter-done emotion-6"
         style="max-height: 0px;"
       >
         <div

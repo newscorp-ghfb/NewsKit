@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react';
+import {CSSTransition} from 'react-transition-group';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {
   StyledAccordionButton,
@@ -16,13 +17,19 @@ import {IconFilledExpandLess, IconFilledExpandMore} from '../icons';
 import {getComponentOverrides} from '../utils/overrides';
 import {TextBlock} from '../text-block';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
+import {getTransitionClassName} from '../utils/get-transition-class-name';
+import {getTransitionDuration} from '../utils';
+import {useTheme} from '../theme';
 
 // Based on https://www.w3schools.com/howto/howto_js_accordion.asp
 const MaxHeightTransitionPanel = ({
   expanded,
   children,
   overrides,
-}: Pick<AccordionProps, 'expanded' | 'children' | 'overrides'>) => {
+  className,
+}: Pick<AccordionProps, 'expanded' | 'children' | 'overrides'> & {
+  className: string;
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (expanded) {
@@ -36,6 +43,7 @@ const MaxHeightTransitionPanel = ({
       ref={ref}
       expanded={expanded}
       overrides={overrides}
+      className={className}
     >
       {children}
     </StyledPanelTransitionContainer>
@@ -94,6 +102,8 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
       () => onChangeProp(!expanded),
     ]);
 
+    const theme = useTheme();
+
     return (
       <div ref={ref}>
         <TextBlock as={headerAs}>
@@ -114,18 +124,34 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
             </StyledIconWrapper>
           </StyledAccordionButton>
         </TextBlock>
-        <MaxHeightTransitionPanel expanded={expanded} overrides={overrides}>
-          <StyledPanel
-            aria-labelledby={ariaLabelledById}
-            id={ariaControlsId}
-            data-testid="accordion-content"
-            role="region"
-            expanded={expanded}
-            overrides={overrides}
-          >
-            {children}
-          </StyledPanel>
-        </MaxHeightTransitionPanel>
+        <CSSTransition
+          in={expanded}
+          timeout={getTransitionDuration(
+            `accordion.panel`,
+            'panel',
+          )({theme, overrides})}
+          classNames="nk-accordion"
+          appear
+        >
+          {(state: string) => (
+            <MaxHeightTransitionPanel
+              className={getTransitionClassName('nk-accordion', state)}
+              expanded={expanded}
+              overrides={overrides}
+            >
+              <StyledPanel
+                aria-labelledby={ariaLabelledById}
+                id={ariaControlsId}
+                data-testid="accordion-content"
+                role="region"
+                expanded={expanded}
+                overrides={overrides}
+              >
+                {children}
+              </StyledPanel>
+            </MaxHeightTransitionPanel>
+          )}
+        </CSSTransition>
       </div>
     );
   },

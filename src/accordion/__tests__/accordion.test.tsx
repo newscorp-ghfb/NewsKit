@@ -185,12 +185,16 @@ describe('Accordion', () => {
           },
           panel: {
             stylePreset: 'accordionPanelCustom',
-            transitionPreset: {
-              extend: 'maxHeightChange',
-              base: {
-                transitionDuration: '{{motions.motionDuration050}}',
+            transitionPreset: [
+              {
+                extend: 'maxHeightChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
               },
-            },
+              'fade',
+              'slideLeft',
+            ],
           },
         },
       },

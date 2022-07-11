@@ -56,7 +56,7 @@ export const StyledPanelTransitionContainer = styled.div<
   // unset max-height here to prevent animation if open on first render
   max-height: ${({expanded}) => (expanded ? 'unset' : '0px')};
   overflow: hidden;
-  ${getTransitionPreset('accordion.panel', 'panel')}
+  ${getTransitionPreset('accordion.panel', 'panel', 'nk-accordion')}
 `;
 
 export const StyledPanel = styled.div<
