@@ -70,6 +70,21 @@ const cardCustomThemeObject: CreateThemeArgs = {
   name: 'card-custom-theme',
   overrides: {
     stylePresets: {
+      cardMedia: {
+        base: {
+          borderWidth: '5px',
+          borderStyle: 'solid',
+          borderColor: 'red',
+          backgroundColor: 'red',
+        },
+        hover: {
+          opacity: '0.1',
+          borderWidth: '15px',
+          borderStyle: 'solid',
+          borderColor: 'blue',
+          backgroundColor: 'red',
+        },
+      },
       cardLabel: labelDefault,
       cardTeaserLead: {
         base: {
@@ -244,42 +259,34 @@ const cardInsetLargeBody = cardBodyBase({inset: true})({cardSize: 'Large'});
 
 const renderCard = () => (
   <>
-    <Visible xs sm>
-      <StorybookSubHeading>Card - small - Without Inset</StorybookSubHeading>
-      <Card
-        media={{
-          src: '/placeholder-3x2.png',
-          alt: 'Card Media',
-        }}
-        actions={cardSmallTags}
-      >
-        {cardSmallBody}
-      </Card>
-    </Visible>
-    <Visible md>
-      <StorybookSubHeading>Card - Medium - Without Inset</StorybookSubHeading>
-      <Card
-        media={{
-          src: '/placeholder-3x2.png',
-          alt: 'Card Media',
-        }}
-        actions={cardMediumTags}
-      >
-        {cardMediumBody}
-      </Card>
-    </Visible>
-    <Visible lg xl>
-      <StorybookSubHeading>Card - Large - Without Inset</StorybookSubHeading>
-      <Card
-        media={{
-          src: '/placeholder-3x2.png',
-          alt: 'Card Media',
-        }}
-        actions={cardLargeTags}
-      >
-        {cardLargeBody}
-      </Card>
-    </Visible>
+    <StorybookSubHeading>Card - small - Without Inset</StorybookSubHeading>
+    <Card
+      href="/to/somewhere/"
+      overrides={{
+        mediaContainer: {
+          stylePreset: 'cardMedia',
+        },
+      }}
+      media={{
+        src: '/placeholder-3x2.png',
+        alt: 'Card Media',
+      }}
+    >
+      content
+    </Card>
+    <Card
+      overrides={{
+        mediaContainer: {
+          stylePreset: 'cardMedia',
+        },
+      }}
+      media={{
+        src: '/placeholder-3x2.png',
+        alt: 'Card Media',
+      }}
+    >
+      dsadasdas
+    </Card>
   </>
 );
 const renderCardInset = () => (
