@@ -28,6 +28,7 @@ export const DrawerContainer = styled.div`
 `;
 
 export const StyledWrapper = styled.div`
+  ${getSpacingCssFromTheme('marginTop', 'space050')};
   ${getSpacingCssFromTheme('marginBottom', 'space100')};
 `;
 
