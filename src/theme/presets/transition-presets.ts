@@ -48,6 +48,28 @@ transitionPresets.maxHeightChange = {
     transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
+  enter: {
+    maxHeight: '0',
+  },
+  enterActive: {
+    maxHeight: 'unset',
+    transitionProperty: 'max-height',
+    transitionDuration: '2000ms',
+  },
+  enterDone: {
+    maxHeight: 'unset',
+  },
+  exit: {
+    maxHeight: 'unset',
+  },
+  exitActive: {
+    maxHeight: '0',
+    transitionProperty: 'max-height',
+    transitionDuration: '2000ms',
+  },
+  exitDone: {
+    maxHeight: '0',
+  },
 };
 
 transitionPresets.fade = {
@@ -60,7 +82,7 @@ transitionPresets.fade = {
   enterActive: {
     opacity: '{{overlays.opacity100}}',
     transitionProperty: 'opacity',
-    transitionDuration: '{{motions.motionDuration020}}',
+    transitionDuration: '2000ms',
   },
   enterDone: {
     opacity: '{{overlays.opacity100}}',
@@ -71,7 +93,7 @@ transitionPresets.fade = {
   exitActive: {
     opacity: '{{overlays.opacity000}}',
     transitionProperty: 'opacity',
-    transitionDuration: '{{motions.motionDuration020}}',
+    transitionDuration: '2000ms',
   },
   exitDone: {
     opacity: '{{overlays.opacity000}}',
@@ -91,7 +113,7 @@ transitionPresets.slideLeft = {
   enterActive: {
     transform: 'translateX(0)',
     transitionProperty: 'transform',
-    transitionDuration: '{{motions.motionDuration020}}',
+    transitionDuration: '2000ms',
     transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
   },
   enterDone: {
@@ -103,7 +125,7 @@ transitionPresets.slideLeft = {
   exitActive: {
     transform: 'translateX(-100%)',
     transitionProperty: 'transform',
-    transitionDuration: '{{motions.motionDuration020}}',
+    transitionDuration: '2000ms',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
   exitDone: {

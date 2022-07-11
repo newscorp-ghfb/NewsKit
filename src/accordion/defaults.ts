@@ -12,7 +12,7 @@ export default {
       },
     },
     panel: {
-      transitionPreset: 'maxHeightChange',
+      transitionPreset: ['maxHeightChange', 'fade', 'slideLeft'],
       stylePreset: 'accordionPanel',
       paddingBlock: 'spaceInset030',
       paddingInline: 'spaceInset030',
