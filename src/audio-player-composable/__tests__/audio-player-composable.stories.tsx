@@ -461,7 +461,12 @@ export const AudioSubComponents = () => (
       src={AUDIO_SRC}
       ariaLandmark="audio player time display"
     >
-      <GridLayout columns="1fr 1fr 1fr" rows="1fr 1fr 1fr 1fr" columnGap="20px">
+      <GridLayout
+        columns="1fr 1fr 1fr 1fr"
+        rows="1fr 1fr 1fr 1fr"
+        rowGap="10px"
+        columnGap="20px"
+      >
         <GridLayoutItem>
           <StorybookSubHeading>currentTime</StorybookSubHeading>
           <AudioPlayerTimeDisplay
@@ -475,29 +480,15 @@ export const AudioSubComponents = () => (
           />
         </GridLayoutItem>
         <GridLayoutItem>
+          <StorybookSubHeading>default</StorybookSubHeading>
+          <AudioPlayerTimeDisplay />
+        </GridLayoutItem>
+        <GridLayoutItem>
           <StorybookSubHeading>live</StorybookSubHeading>
           <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
             <IconFilledGraphicEq />
             Live
           </Flag>
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>default</StorybookSubHeading>
-          <AudioPlayerTimeDisplay />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>Play/Pause</StorybookSubHeading>
-          <AudioPlayerPlayPauseButton
-            onClick={() => {
-              console.log('customer click function');
-            }}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>SkipNext</StorybookSubHeading>
-          <AudioPlayerSkipNextButton
-            onClick={() => console.log('on skip Next track')}
-          />
         </GridLayoutItem>
         <GridLayoutItem>
           <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
@@ -506,13 +497,38 @@ export const AudioSubComponents = () => (
           />
         </GridLayoutItem>
         <GridLayoutItem>
-          <StorybookSubHeading>Forward</StorybookSubHeading>
-          <AudioPlayerForwardButton />
+          <StorybookSubHeading>SkipNext</StorybookSubHeading>
+          <AudioPlayerSkipNextButton
+            onClick={() => console.log('on skip Next track')}
+          />
         </GridLayoutItem>
+
         <GridLayoutItem>
           <StorybookSubHeading>Replay</StorybookSubHeading>
           <AudioPlayerReplayButton />
         </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Forward</StorybookSubHeading>
+          <AudioPlayerForwardButton />
+        </GridLayoutItem>
+
+        <GridLayoutItem>
+          <StorybookSubHeading>Play/Pause</StorybookSubHeading>
+          <AudioPlayerPlayPauseButton
+            onClick={() => console.log('customer click function')}
+          />
+        </GridLayoutItem>
+
+        <GridLayoutItem>
+          <StorybookSubHeading>Playback Speed (popover)</StorybookSubHeading>
+          <AudioPlayerPlaybackSpeedControl />
+        </GridLayoutItem>
+
+        <GridLayoutItem>
+          <StorybookSubHeading>Playback Speed (modal)</StorybookSubHeading>
+          <AudioPlayerPlaybackSpeedControl useModal />
+        </GridLayoutItem>
+
         <GridLayoutItem column="1/-1">
           <StorybookSubHeading>SeekBar</StorybookSubHeading>
           <AudioPlayerSeekBar />
@@ -532,16 +548,6 @@ export const AudioSubComponents = () => (
         <GridLayoutItem>
           <StorybookSubHeading>collapsed Volume Control</StorybookSubHeading>
           <AudioPlayerVolumeControl collapsed />
-        </GridLayoutItem>
-
-        <GridLayoutItem>
-          <StorybookSubHeading>Playback Speed (modal)</StorybookSubHeading>
-          <AudioPlayerPlaybackSpeedControl useModal />
-        </GridLayoutItem>
-
-        <GridLayoutItem>
-          <StorybookSubHeading>Playback Speed (popover)</StorybookSubHeading>
-          <AudioPlayerPlaybackSpeedControl />
         </GridLayoutItem>
       </GridLayout>
     </AudioPlayerComposable>
