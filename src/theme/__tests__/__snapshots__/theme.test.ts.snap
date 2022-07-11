@@ -1300,6 +1300,28 @@ Object {
   "audioPlayerPlayPauseButton": Object {
     "stylePreset": "iconButtonSolidPrimary",
   },
+  "audioPlayerPlaybackSpeedControl": Object {
+    "iconButton": Object {
+      "stylePreset": "iconButtonMinimalPrimary",
+    },
+    "modal": Object {
+      "content": Object {
+        "spaceInset": "spaceInset000",
+      },
+    },
+    "popover": Object {
+      "content": Object {
+        "paddingBlock": "space000",
+        "paddingInline": "space000",
+      },
+      "minWidth": "140px",
+    },
+    "selectionList": Object {
+      "selectionListOption": Object {
+        "paddingInline": "space030",
+      },
+    },
+  },
   "audioPlayerReplayButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },

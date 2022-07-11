@@ -33,6 +33,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   path,
   onDismiss,
   restoreFocusTo,
+  focusElementRef,
   className,
   /* istanbul ignore next */
   fallbackBehaviour = ['flip', 'shift'],
@@ -77,7 +78,13 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   } = useFloating<HTMLElement>({
     placement,
     open,
-    onOpenChange: setOpen,
+    onOpenChange: isOpen => {
+      // Clicking on the target icon button when controlled doesn't call this.
+      if (!isOpen && onDismiss) {
+        onDismiss();
+      }
+      setOpen(isOpen);
+    },
     whileElementsMounted: autoUpdate,
     middleware: [
       ...(!hidePointer && distance ? [offset(distance)] : []),
@@ -107,7 +114,6 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
 
   // We need to handle changes to the value of 'open' in a useEffect because:
   // - We can't access context.refs in onOpenChange
-  // - onOpenChange isn't called in the controlled case
   const isFirstRun = useRef(true);
   useEffect(() => {
     // Don't call onDismiss or update focus on the first render.
@@ -121,7 +127,13 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     if (path === 'popover') {
       if (open) {
         /* istanbul ignore next */
-        panelRef?.current?.focus();
+        if (focusElementRef?.current) {
+          /* istanbul ignore next */
+          focusElementRef.current.focus();
+        } else {
+          /* istanbul ignore next */
+          panelRef?.current?.focus();
+        }
       } else if (restoreFocusTo) {
         restoreFocusTo.focus();
       } else {
@@ -129,11 +141,16 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
         refs.reference?.current?.focus();
       }
     }
-
-    if (!open && onDismiss) {
-      onDismiss();
-    }
-  }, [onDismiss, open, path, refs.reference, restoreFocusTo, panelRef]);
+  }, [
+    open,
+    path,
+    refs.reference,
+    panelRef,
+    focusElementRef,
+    onDismiss,
+    openProp,
+    restoreFocusTo,
+  ]);
 
   if (!content) {
     return children;
@@ -158,6 +175,12 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
             ? defaultRefId
             : undefined,
         ...referenceProps,
+        // Overriding the referenceProps events and with the user's provided (if any) events.
+        onClick: children.props.onClick || referenceProps.onClick,
+        onKeyDown: children.props.onKeyDown || referenceProps.onKeyDown,
+        onKeyUp: children.props.onKeyUp || referenceProps.onKeyUp,
+        onPointerDown:
+          children.props.onPointerDown || referenceProps.onPointerDown,
       })}
       <CSSTransition
         in={open}

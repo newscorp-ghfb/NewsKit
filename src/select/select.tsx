@@ -7,7 +7,7 @@ import {SelectButton} from './select-button';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {shouldRenderInModal} from './utils';
+import {shouldRenderInModal} from '../utils/should-render-in-modal';
 import {withMediaQueryProvider} from '../utils/hooks/use-media-query/context';
 import {useBreakpointKey} from '../utils/hooks/use-media-query';
 import {useVirtualizedList} from './use-virtualized-list';

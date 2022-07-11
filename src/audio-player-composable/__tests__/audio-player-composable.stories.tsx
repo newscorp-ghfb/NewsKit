@@ -11,6 +11,7 @@ import {
   AudioPlayerSkipPreviousButton,
   AudioPlayerVolumeControl,
   MuteButtonIconProps,
+  AudioPlayerPlaybackSpeedControl,
 } from '..';
 import {
   StorybookHeading,
@@ -170,16 +171,16 @@ export default {
 };
 
 const fullAudioPlayerAreasDesktop = `
-  seekBar     seekBar   seekBar   seekBar   seekBar   seekBar   seekBar
-  currentTime none      none      none      none      none      totalTime
-  volume      prev      backward  play      forward   next      link
+  seekBar     seekBar   seekBar   seekBar   seekBar   seekBar      seekBar      seekBar
+  currentTime none      none      none      none      none      none      totalTime
+  volume      prev      backward  play      forward   next      playbackSpeed      link
  `;
 
 const fullAudioPlayerAreasMobile = `
-  seekBar     seekBar   seekBar   seekBar   seekBar   seekBar
-  currentTime none      none      none      link      totalTime  
-  volume      prev      backward  play      forward   next
- `;
+ seekBar     seekBar   seekBar   seekBar   seekBar   seekBar
+ currentTime none      none      playbackSpeed      link      totalTime
+ volume      prev      backward  play      forward   next
+`;
 
 const fullAudioPlayerLiveAreasDesktop = `
   volume      prev   backward   play   forward   next   live   link
@@ -202,7 +203,7 @@ const AudioPlayerFullRecorded = (props: {
       <GridLayout
         columns={{
           xs: 'auto 1fr auto auto auto 1fr',
-          md: '50px 1fr auto auto auto 1fr 100px',
+          md: '50px 1fr auto auto auto 1fr 50px 50px',
         }}
         rowGap="space040"
         columnGap="space040"
@@ -258,6 +259,12 @@ const AudioPlayerFullRecorded = (props: {
                 format={({duration}) => calculateTime(duration)}
               />
             </Areas.TotalTime>
+
+            <Areas.PlaybackSpeed alignSelf="center" justifySelf="end">
+              <Hidden xs sm>
+                <AudioPlayerPlaybackSpeedControl useModal={{md: true}} />
+              </Hidden>
+            </Areas.PlaybackSpeed>
 
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
@@ -377,7 +384,7 @@ const AudioPlayerInlineRecorded = (props: {
   return (
     <AudioPlayerComposable src={AUDIO_SRC} {...props}>
       <GridLayout
-        columns="auto auto 40px 1fr 40px"
+        columns="auto auto 40px 1fr auto auto"
         columnGap="space040"
         alignItems="center"
       >
@@ -402,6 +409,9 @@ const AudioPlayerInlineRecorded = (props: {
           <AudioPlayerTimeDisplay
             format={({duration}) => calculateTime(duration)}
           />
+        </GridLayoutItem>
+        <GridLayoutItem column="6/7" row="4/5">
+          <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}} />
         </GridLayoutItem>
       </GridLayout>
     </AudioPlayerComposable>
@@ -446,19 +456,12 @@ AudioPlayer.storyName = 'audio-player';
 export const AudioSubComponents = () => (
   <StyledPage>
     <StorybookHeading>Audio Player - subcomponents</StorybookHeading>
-    <StorybookSubHeading>TimeDisplay</StorybookSubHeading>
-    <br />
 
     <AudioPlayerComposable
       src={AUDIO_SRC}
       ariaLandmark="audio player time display"
     >
-      <GridLayout
-        columns="1fr 1fr 1fr"
-        rows="1fr 1fr 1fr"
-        rowGap="10px"
-        columnGap="20px"
-      >
+      <GridLayout columns="1fr 1fr 1fr" rows="1fr 1fr 1fr 1fr" columnGap="20px">
         <GridLayoutItem>
           <StorybookSubHeading>currentTime</StorybookSubHeading>
           <AudioPlayerTimeDisplay
@@ -508,12 +511,13 @@ export const AudioSubComponents = () => (
         </GridLayoutItem>
         <GridLayoutItem>
           <StorybookSubHeading>Replay</StorybookSubHeading>
-
           <AudioPlayerReplayButton />
         </GridLayoutItem>
-      </GridLayout>
-      <StorybookSubHeading>SeekBar</StorybookSubHeading> <AudioPlayerSeekBar />
-      <GridLayout columns="1fr 1fr 1fr" rowGap="10px" columnGap="20px">
+        <GridLayoutItem column="1/-1">
+          <StorybookSubHeading>SeekBar</StorybookSubHeading>
+          <AudioPlayerSeekBar />
+        </GridLayoutItem>
+
         <GridLayoutItem>
           <StorybookSubHeading>Volume Control</StorybookSubHeading>
           <AudioPlayerVolumeControl />
@@ -528,6 +532,16 @@ export const AudioSubComponents = () => (
         <GridLayoutItem>
           <StorybookSubHeading>collapsed Volume Control</StorybookSubHeading>
           <AudioPlayerVolumeControl collapsed />
+        </GridLayoutItem>
+
+        <GridLayoutItem>
+          <StorybookSubHeading>Playback Speed (modal)</StorybookSubHeading>
+          <AudioPlayerPlaybackSpeedControl useModal />
+        </GridLayoutItem>
+
+        <GridLayoutItem>
+          <StorybookSubHeading>Playback Speed (popover)</StorybookSubHeading>
+          <AudioPlayerPlaybackSpeedControl />
         </GridLayoutItem>
       </GridLayout>
     </AudioPlayerComposable>
@@ -746,6 +760,17 @@ export const AudioPlayerOverrides = () => {
                     format={({duration}) => calculateTime(duration)}
                   />
                 </Areas.TotalTime>
+                <Areas.PlaybackSpeed alignSelf="center">
+                  <AudioPlayerPlaybackSpeedControl
+                    buttonSize={ButtonSize.Medium}
+                    overrides={{
+                      iconButton: {
+                        stylePreset: 'customButtonStylePreset',
+                      },
+                    }}
+                    useModal={{md: true}}
+                  />
+                </Areas.PlaybackSpeed>
 
                 <Areas.Link alignSelf="center" justifySelf="end">
                   <Hidden xs sm>
