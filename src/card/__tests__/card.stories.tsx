@@ -250,7 +250,6 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
 );
 
 const cardSmallBody = cardBodyBase({inset: false})({cardSize: 'Small'});
-const cardMediumBody = cardBodyBase({inset: false})({cardSize: 'Medium'});
 const cardLargeBody = cardBodyBase({inset: false})({cardSize: 'Large'});
 
 const cardInsetSmallBody = cardBodyBase({inset: true})({cardSize: 'Small'});
