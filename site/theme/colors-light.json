@@ -5,7 +5,7 @@
     "darkBlue080": "#555E74",
     "darkBlue070": "#6E7D8D",
     "darkBlue060": "#808E99",
-    "darkBlue050": "#96A29B",
+    "darkBlue050": "#96A2AB",
     "darkBlue040": "#BBC3C9",
     "darkBlue030": "#E4E4E4",
     "darkBlue020": "#EBEBEB",
@@ -18,7 +18,9 @@
     "inkBrand030": "{{colors.teal050}}",
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "inkWhiteContrast": "{{colors.white}}",
+    "interfaceBackground": "{{colors.white}}",
 
+    "interface010": "{{colors.white}}",
     "interface020": "{{colors.darkBlue010}}",
     "interface030": "{{colors.darkBlue020}}",
     "interface040": "{{colors.darkBlue030}}",

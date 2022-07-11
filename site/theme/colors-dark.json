@@ -17,7 +17,7 @@
     "interface030": "{{colors.darkBlue080}}",
     "interface040": "{{colors.darkBlue070}}",
     "interface050": "{{colors.darkBlue060}}",
-    "interface060": "{{colors.darkBlue010}}",
+    "interface060": "{{colors.darkBlue050}}",
 
     "interfacePositive010": "{{colors.green040}}",
     "interfacePositive020": "{{colors.green070}}",
