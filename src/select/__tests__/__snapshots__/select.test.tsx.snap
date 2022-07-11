@@ -26,6 +26,7 @@ exports[`Select in Modal render Select 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -929,6 +930,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -1663,6 +1665,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -2556,6 +2559,7 @@ exports[`Select renders Select with logical props 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
   margin-inline: 40px;
   padding-block: 20px;
 }
@@ -3165,6 +3169,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -3507,6 +3512,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -3824,6 +3830,7 @@ exports[`Select renders disabled select 1`] = `
   border-radius: 8px;
   color: #C0C0C0;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -4059,6 +4066,7 @@ exports[`Select renders large Select 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -4340,6 +4348,7 @@ exports[`Select renders loading select 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -4600,6 +4609,7 @@ exports[`Select renders medium Select 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -4881,6 +4891,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -5196,6 +5207,7 @@ exports[`Select renders select with a selected option 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -5511,6 +5523,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -5850,6 +5863,7 @@ exports[`Select renders select with non-string options 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -6167,6 +6181,7 @@ exports[`Select renders small Select 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -6448,6 +6463,7 @@ exports[`Select should render custom placeholder 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -6729,6 +6745,7 @@ exports[`Select virtualize long list 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {

@@ -505,6 +505,7 @@ Object {
         "borderRadius": "8px",
         "borderStyle": "solid",
         "borderWidth": "1px",
+        "caretColor": "#2E2E2E",
         "color": "#2E2E2E",
         "iconColor": "#2E2E2E",
         "placeholderColor": "#535353",

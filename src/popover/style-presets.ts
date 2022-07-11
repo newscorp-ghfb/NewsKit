@@ -14,7 +14,7 @@ export default {
   },
   popoverPanel: {
     base: {
-      color: '{{colors.neutral090}}',
+      color: '{{colors.inkBase}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
       backgroundColor: '{{colors.interface010}}',
     },

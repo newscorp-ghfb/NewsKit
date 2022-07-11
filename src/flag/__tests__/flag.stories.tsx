@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Flag, FlagSize} from '..';
-import {styled} from '../../utils/style';
+import {styled, getColorCssFromTheme} from '../../utils/style';
 import {IconFilledEmail} from '../../icons';
 import {Stack} from '../../stack';
 import {
@@ -21,10 +21,7 @@ const StyledDiv = styled.div`
 const Container = styled.div<{hasBlackBackground?: boolean}>`
   margin: 24px;
   ${({hasBlackBackground}) =>
-    hasBlackBackground && {
-      background: 'black',
-      color: 'white',
-    }}
+    hasBlackBackground && getColorCssFromTheme('background', 'inkBase')};
 `;
 
 export default {
@@ -154,7 +151,7 @@ export const StoryInverseFlag = () => (
     <StorybookHeading>Inverse Flag</StorybookHeading>
     <Container hasBlackBackground>
       <Block>
-        <StorybookSubHeading stylePreset="white">
+        <StorybookSubHeading stylePreset="inkInverse">
           with flagSolidInverse style preset
         </StorybookSubHeading>
         <Flag
@@ -165,7 +162,7 @@ export const StoryInverseFlag = () => (
         </Flag>
       </Block>
       <Block>
-        <StorybookSubHeading stylePreset="white">
+        <StorybookSubHeading stylePreset="inkInverse">
           with flagMinimalInverse style preset
         </StorybookSubHeading>
         <Flag
@@ -174,6 +171,8 @@ export const StoryInverseFlag = () => (
         >
           Text
         </Flag>
+        <br />
+        <br />
       </Block>
     </Container>
   </>

@@ -65,6 +65,7 @@ exports[`TextField renders TextField Correctly 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -202,6 +203,7 @@ Object {
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
   margin-inline: 48px;
   margin-block: 32px;
   padding-inline: 8px;
@@ -472,6 +474,7 @@ Object {
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
   margin-inline: 48px;
   margin-block: 32px;
   padding-inline: 8px;
@@ -1053,6 +1056,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -1251,6 +1255,7 @@ exports[`TextField renders disabled text field 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -1519,6 +1524,7 @@ exports[`TextField renders large TextField 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -1655,6 +1661,7 @@ exports[`TextField renders medium TextField 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -1791,6 +1798,7 @@ exports[`TextField renders small TextField 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -1927,6 +1935,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -2194,6 +2203,7 @@ exports[`TextField should render custom placeholder 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {

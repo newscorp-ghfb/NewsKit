@@ -38,7 +38,7 @@ const bannerCustomThemeObject: CreateThemeArgs = {
       bannerActionsCustom: {
         base: {
           color: '{{colors.inkContrast}}',
-          backgroundColor: '{{colors.white}}',
+          backgroundColor: '{{colors.inkInverse}}',
           borderRadius: '{{borders.borderRadiusSharp}}',
         },
         hover: {

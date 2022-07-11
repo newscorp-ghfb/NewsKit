@@ -17,6 +17,7 @@ stylePresets.inputField = {
     textOverflow: 'ellipsis',
     placeholderColor: '{{colors.inkSubtle}}',
     iconColor: '{{colors.inkBase}}',
+    caretColor: '{{colors.inkBase}}',
   },
   focus: {
     outlineColor: '{{outlines.outlineColorDefault}}',

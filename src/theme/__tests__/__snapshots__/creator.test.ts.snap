@@ -438,6 +438,7 @@ Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidthDefault}}",
+        "caretColor": "{{colors.inkBase}}",
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
         "placeholderColor": "{{colors.inkSubtle}}",

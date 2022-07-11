@@ -4097,6 +4097,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-2 svg {
@@ -5557,6 +5558,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-2 svg {
@@ -7024,6 +7026,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -7348,6 +7351,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -8841,6 +8845,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -9065,6 +9070,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-13 svg {
@@ -9468,6 +9474,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
@@ -9792,6 +9799,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  caret-color: #2E2E2E;
 }
 
 .emotion-0 svg {
