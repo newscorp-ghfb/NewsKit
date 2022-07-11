@@ -109,7 +109,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
         />
       </ContentSection>
 
-      <ContentSection sectionName="radio group">
+      <ContentSection sectionName="radio group single selection">
         <ContentPrimary
           id="radio-group"
           toc="Radio Group - Single selection"
@@ -176,7 +176,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
         />
       </ContentSection>
 
-      <ContentSection sectionName="checkbox">
+      <ContentSection sectionName="checkbox multiple selection">
         <ContentPrimary
           id="checkbox"
           toc="Checkbox - Multiple selection"
@@ -257,7 +257,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
         />
       </ContentSection>
 
-      <ContentSection sectionName="select">
+      <ContentSection sectionName="select single or multiple selection">
         <ContentPrimary
           id="select"
           toc="Select - Single or multiple selection"
@@ -320,7 +320,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
         </ContentSecondary>
       </ContentSection>
 
-      <ContentSection sectionName="combobox">
+      <ContentSection sectionName="combo box">
         <ContentPrimary
           id="combo-box"
           toc="Combo box"
