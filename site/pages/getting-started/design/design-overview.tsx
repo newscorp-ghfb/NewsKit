@@ -128,10 +128,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     palettes and colours, typography, shadows and grids.
                     <Block spaceStack="space050" />
                     <Link
-                      href="https://www.figma.com/file/oSjjLxC27fa6Jh6AHM7ja9/NK-NewsKit-Theme?node-id=1%3A393"
+                      href="https://www.figma.com/file/3l0UDvk1l2vsXpbtWlYWoP/%F0%9F%9F%A2-NK-NewsKit-Theme"
                       target="_blank"
                     >
-                      View theme library in Figma
+                      View theme library in Figma (inernal only)
                     </Link>
                   </>
                 ),
@@ -150,7 +150,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       href="https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/NK-Web-Components?node-id=1%3A393"
                       target="_blank"
                     >
-                      View Web components library in Figma
+                      View Web components library in Figma (inernal only)
                     </Link>
                   </>
                 ),
@@ -174,7 +174,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       href="https://www.figma.com/file/jHs7EB68a57xVA3NKmMbgy/NK-Icons?node-id=1%3A12626"
                       target="_blank"
                     >
-                      View Icon library in Figma
+                      View Icon library in Figma (inernal only)
                     </Link>
                   </>
                 ),
@@ -195,7 +195,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       href="https://www.figma.com/file/Q3OTJ4RZWJGTCaWuS8sWsL/NK-Utilities?node-id=0%3A1"
                       target="_blank"
                     >
-                      View Utilities library in Figma
+                      View Utilities library in Figma (inernal only)
                     </Link>
                   </>
                 ),
@@ -243,7 +243,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       href="https://www.figma.com/community/plugin/968555028114672265/NK---Theme-Swapper"
                       target="_blank"
                     >
-                      View Theme Swapper Figma plugin
+                      View Theme Swapper Figma plugin (inernal only)
                     </Link>
                   </>
                 ),
@@ -284,7 +284,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       href="https://www.figma.com/community/plugin/934126878505200119/NK---Theme-Exporter"
                       target="_blank"
                     >
-                      View Theme Exporter Figma plugin
+                      View Theme Exporter Figma plugin (inernal only)
                     </Link>
                   </>
                 ),
@@ -320,7 +320,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       href="https://www.figma.com/file/iH4aqnno7MHwUMUW1QUr4S/%5BProduct%2FBrand-Name%5D-UX-project-template?node-id=0%3A1"
                       target="_blank"
                     >
-                      View the UX project template file in Figma
+                      View the UX project template file in Figma (inernal only)
                     </Link>
                   </>
                 ),
@@ -340,7 +340,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       href="https://www.figma.com/file/BnIKQwut4dqqrfghSlsRV1/%5BProduct%2FBrand-Name%5D-UI-project-template?node-id=0%3A1"
                       target="_blank"
                     >
-                      View the UI project template file in Figma
+                      View the UI project template file in Figma (inernal only)
                     </Link>
                   </>
                 ),
@@ -421,7 +421,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       href="https://www.figma.com/proto/kXCrh9MHKAJ878KE2dQOz8/Handoff-Guides---for-engineers-%26-designers?page-id=1%3A544&node-id=275%3A21221&viewport=350%2C48%2C0.13&scaling=min-zoom&starting-point-node-id=275%3A21221&show-proto-sidebar=1&hide-ui=1"
                       target="_blank"
                     >
-                      View NewsKit Handoff guidance
+                      View NewsKit Handoff guidance (inernal only)
                     </Link>
                   </>
                 ),
