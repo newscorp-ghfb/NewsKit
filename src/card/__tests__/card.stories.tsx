@@ -12,11 +12,13 @@ import {Flag} from '../../flag';
 import {Headline} from '../../headline';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
+import {GridLayout} from '../../grid-layout';
 import {IconFilledImage} from '../../icons';
 import {styled} from '../../utils/style';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {Link} from '../../link';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {Image} from '../../image';
 
 const StyledDiv = styled.div`
   border: 1px red dotted;
@@ -70,7 +72,7 @@ const cardCustomThemeObject: CreateThemeArgs = {
   name: 'card-custom-theme',
   overrides: {
     stylePresets: {
-      cardMedia: {
+      cardMediaDemo: {
         base: {
           borderWidth: '5px',
           borderStyle: 'solid',
@@ -78,11 +80,16 @@ const cardCustomThemeObject: CreateThemeArgs = {
           backgroundColor: 'red',
         },
         hover: {
-          opacity: '0.1',
-          borderWidth: '15px',
-          borderStyle: 'solid',
+          opacity: '0.5',
           borderColor: 'blue',
-          backgroundColor: 'red',
+        },
+      },
+      cardTeaserDemo: {
+        base: {
+          backgroundColor: 'violet',
+        },
+        hover: {
+          backgroundColor: 'gray',
         },
       },
       cardLabel: labelDefault,
@@ -256,38 +263,49 @@ const cardInsetSmallBody = cardBodyBase({inset: true})({cardSize: 'Small'});
 const cardInsetMediumBody = cardBodyBase({inset: true})({cardSize: 'Medium'});
 const cardInsetLargeBody = cardBodyBase({inset: true})({cardSize: 'Large'});
 
-const renderCard = () => (
-  <>
-    <StorybookSubHeading>Card - small - Without Inset</StorybookSubHeading>
-    <Card
-      href="/to/somewhere/"
-      overrides={{
-        mediaContainer: {
-          stylePreset: 'cardMedia',
-        },
-      }}
-      media={{
-        src: '/placeholder-3x2.png',
-        alt: 'Card Media',
-      }}
-    >
-      content
-    </Card>
-    <Card
-      overrides={{
-        mediaContainer: {
-          stylePreset: 'cardMedia',
-        },
-      }}
-      media={{
-        src: '/placeholder-3x2.png',
-        alt: 'Card Media',
-      }}
-    >
-      dsadasdas
-    </Card>
-  </>
-);
+const renderCard = () => {
+  const overrides = {
+    mediaContainer: {
+      stylePreset: 'cardMediaDemo',
+    },
+    teaserContainer: {
+      stylePreset: 'cardTeaserDemo',
+    },
+  };
+
+  const media = {
+    src: '/placeholder-3x2.png',
+    alt: 'Card Media',
+  };
+
+  const content = 'some content here';
+
+  return (
+    <>
+      <StorybookSubHeading>Card - small - Without Inset</StorybookSubHeading>
+      <GridLayout columns="repeat(3, 1fr)" columnGap="50px">
+        <Card href="/to/somewhere/" overrides={overrides} media={media}>
+          {content}
+        </Card>
+        <Card overrides={overrides} media={media}>
+          {content}
+        </Card>
+        <Card
+          href="/link"
+          overrides={overrides}
+          mediaInteractive
+          media={() => (
+            <a href="/link">
+              <Image {...media} />
+            </a>
+          )}
+        >
+          {content}
+        </Card>
+      </GridLayout>
+    </>
+  );
+};
 const renderCardInset = () => (
   <>
     <Visible xs sm>
