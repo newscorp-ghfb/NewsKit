@@ -5619,7 +5619,7 @@ Object {
   },
   "videoPlayerDockText": Object {
     "base": Object {
-      "backgroundImage": "{{overlays.overlayGradientInverseVertical}}",
+      "backgroundImage": "{{overlays.overlayGradientFromTop}}",
     },
   },
   "videoPlayerDockTextTitle": Object {

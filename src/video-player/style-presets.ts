@@ -68,7 +68,7 @@ export default {
   },
   videoPlayerDockText: {
     base: {
-      backgroundImage: '{{overlays.overlayGradientInverseVertical}}',
+      backgroundImage: '{{overlays.overlayGradientFromTop}}',
     },
   },
   videoPlayerDockTextTitle: {
