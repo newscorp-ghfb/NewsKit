@@ -274,7 +274,9 @@ const renderCard = () => {
   };
 
   const media = {
-    src: '/placeholder-3x2.png',
+    // src: '/placeholder-3x2.png',
+    src:
+      'https://www.wsjplus.com/darkroom/934/526/a90557db2960dda33df9f6bd7b2688c5:723597762786cf7666a025dfdbd291f2/600x400-3.jpg',
     alt: 'Card Media',
   };
 
@@ -287,9 +289,11 @@ const renderCard = () => {
         <Card href="/to/somewhere/" overrides={overrides} media={media}>
           {content}
         </Card>
+
         <Card overrides={overrides} media={media}>
           {content}
         </Card>
+
         <Card
           href="/link"
           overrides={overrides}
