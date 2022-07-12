@@ -12,7 +12,7 @@ import {
 import {AccordionIconProps, AccordionProps} from './types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
-import {useReactKeys} from '../utils/hooks';
+import {useReactKeys, useResizeObserver} from '../utils/hooks';
 import {IconFilledExpandLess, IconFilledExpandMore} from '../icons';
 import {getComponentOverrides} from '../utils/overrides';
 import {TextBlock} from '../text-block';
@@ -31,13 +31,14 @@ const MaxHeightTransitionPanel = ({
   className: string;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
+  const [width] = useResizeObserver(ref);
   useEffect(() => {
     if (expanded) {
       ref.current!.style.maxHeight = `${ref.current!.scrollHeight}px`;
     } else {
       ref.current!.style.maxHeight = '0px';
     }
-  }, [expanded]);
+  }, [expanded, width]);
   return (
     <StyledPanelTransitionContainer
       ref={ref}
