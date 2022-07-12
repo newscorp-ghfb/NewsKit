@@ -462,9 +462,9 @@ export const AudioSubComponents = () => (
       ariaLandmark="audio player time display"
     >
       <GridLayout
-        columns="1fr 1fr 1fr 1fr"
+        columns="1fr 1fr 1fr"
         rows="1fr 1fr 1fr 1fr"
-        rowGap="10px"
+        rowGap="16px"
         columnGap="20px"
       >
         <GridLayoutItem>
@@ -480,10 +480,6 @@ export const AudioSubComponents = () => (
           />
         </GridLayoutItem>
         <GridLayoutItem>
-          <StorybookSubHeading>default</StorybookSubHeading>
-          <AudioPlayerTimeDisplay />
-        </GridLayoutItem>
-        <GridLayoutItem>
           <StorybookSubHeading>live</StorybookSubHeading>
           <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
             <IconFilledGraphicEq />
@@ -491,9 +487,13 @@ export const AudioSubComponents = () => (
           </Flag>
         </GridLayoutItem>
         <GridLayoutItem>
-          <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
-          <AudioPlayerSkipPreviousButton
-            onClick={() => console.log('on skip Next track')}
+          <StorybookSubHeading>default</StorybookSubHeading>
+          <AudioPlayerTimeDisplay />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Play/Pause</StorybookSubHeading>
+          <AudioPlayerPlayPauseButton
+            onClick={() => console.log('customer click function')}
           />
         </GridLayoutItem>
         <GridLayoutItem>
@@ -502,52 +502,45 @@ export const AudioSubComponents = () => (
             onClick={() => console.log('on skip Next track')}
           />
         </GridLayoutItem>
-
         <GridLayoutItem>
-          <StorybookSubHeading>Replay</StorybookSubHeading>
-          <AudioPlayerReplayButton />
+          <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
+          <AudioPlayerSkipPreviousButton
+            onClick={() => console.log('on skip Next track')}
+          />
         </GridLayoutItem>
         <GridLayoutItem>
           <StorybookSubHeading>Forward</StorybookSubHeading>
           <AudioPlayerForwardButton />
         </GridLayoutItem>
-
         <GridLayoutItem>
-          <StorybookSubHeading>Play/Pause</StorybookSubHeading>
-          <AudioPlayerPlayPauseButton
-            onClick={() => console.log('customer click function')}
-          />
+          <StorybookSubHeading>Replay</StorybookSubHeading>
+          <AudioPlayerReplayButton />
         </GridLayoutItem>
-
-        <GridLayoutItem>
-          <StorybookSubHeading>Playback Speed (popover)</StorybookSubHeading>
-          <AudioPlayerPlaybackSpeedControl />
-        </GridLayoutItem>
-
         <GridLayoutItem>
           <StorybookSubHeading>Playback Speed (modal)</StorybookSubHeading>
           <AudioPlayerPlaybackSpeedControl useModal />
         </GridLayoutItem>
-
-        <GridLayoutItem column="1/-1">
-          <StorybookSubHeading>SeekBar</StorybookSubHeading>
-          <AudioPlayerSeekBar />
+        <GridLayoutItem>
+          <StorybookSubHeading>Playback Speed (popover)</StorybookSubHeading>
+          <AudioPlayerPlaybackSpeedControl />
         </GridLayoutItem>
-
+        <GridLayoutItem>
+          <StorybookSubHeading>Collapsed Volume Control</StorybookSubHeading>
+          <AudioPlayerVolumeControl collapsed />
+        </GridLayoutItem>
         <GridLayoutItem>
           <StorybookSubHeading>Volume Control</StorybookSubHeading>
           <AudioPlayerVolumeControl />
         </GridLayoutItem>
-
         <GridLayoutItem>
           <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
           <VerticalContainer>
             <AudioPlayerVolumeControl layout="vertical" />
           </VerticalContainer>
         </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>collapsed Volume Control</StorybookSubHeading>
-          <AudioPlayerVolumeControl collapsed />
+        <GridLayoutItem column="1/-1">
+          <StorybookSubHeading>SeekBar</StorybookSubHeading>
+          <AudioPlayerSeekBar />
         </GridLayoutItem>
       </GridLayout>
     </AudioPlayerComposable>
