@@ -30,10 +30,10 @@ const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpee
     const [isOpen, setIsOpen] = useState(false);
 
     const renderInModal = shouldRenderInModal(useModal, useBreakpointKey());
-    const selectionListOptionRef = useRef<HTMLButtonElement>(null);
+    const selectedOptionRef = useRef<HTMLButtonElement>(null);
     const playbackSpeedList = (
       <PlaybackSpeedList
-        selectionListOptionRef={selectionListOptionRef}
+        selectedOptionRef={selectedOptionRef}
         playbackSpeed={playbackSpeed}
         updateSpeed={setSpeed}
         setIsOpen={setIsOpen}
@@ -55,7 +55,7 @@ const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpee
           closePosition="none"
           onDismiss={dimissHandler}
           enableDismiss
-          focusElementRef={selectionListOptionRef}
+          focusElementRef={selectedOptionRef}
           overrides={popoverOverrides(theme, overrides)}
         >
           <IconButton
@@ -69,7 +69,7 @@ const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpee
           </IconButton>
         </Popover>
 
-        {renderInModal && isOpen && (
+        {renderInModal && (
           <Modal
             open={isOpen}
             onDismiss={dimissHandler}

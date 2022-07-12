@@ -116,7 +116,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   // - We can't access context.refs in onOpenChange
   const isFirstRun = useRef(true);
   useEffect(() => {
-    // Don't call onDismiss or update focus on the first render.
+    // Don't update focus on the first render.
     if (isFirstRun.current) {
       isFirstRun.current = false;
       return;
@@ -147,7 +147,6 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     refs.reference,
     panelRef,
     focusElementRef,
-    onDismiss,
     openProp,
     restoreFocusTo,
   ]);

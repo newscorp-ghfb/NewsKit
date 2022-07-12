@@ -437,7 +437,7 @@ describe('Popover', () => {
       fireEvent.click(closeButton);
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
-    test('should call onDismiss on dimiss', () => {
+    test('should call onDismiss on dismiss', () => {
       const onDismiss = jest.fn();
       const Component = () => {
         const [open, setOpen] = React.useState(true);
