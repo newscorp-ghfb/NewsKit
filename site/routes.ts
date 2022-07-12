@@ -189,7 +189,7 @@ export default [
             title: 'Outlines',
             page: true,
             id: '/theme/foundation/outlines',
-            illustration: 'theme/borders/hero',
+            illustration: 'theme/hero-borders-illustration',
             description:
               'Outlines provide visual cues about the focus or active states of elements.',
           },
