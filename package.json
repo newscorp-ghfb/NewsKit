@@ -212,6 +212,7 @@
     "react-hook-form": "^7.5.3",
     "react-hot-toast": "^1.0.2",
     "react-range": "^1.8.12",
+    "react-tinacms-editor": "^0.53.26",
     "react-transition-group": "^4.4.1",
     "react-virtual": "^2.10.4",
     "styled-components": "^5.3.5",

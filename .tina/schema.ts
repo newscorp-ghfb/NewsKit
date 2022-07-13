@@ -1,5 +1,5 @@
 import {defineConfig, defineSchema} from 'tinacms';
-
+import {MarkdownFieldPlugin} from 'react-tinacms-editor';
 const schema = defineSchema({
   config: {
     media: {
@@ -11,16 +11,19 @@ const schema = defineSchema({
   },
   collections: [
     {
-      label: 'Page Content',
-      name: 'page',
-      path: 'site/pages/components',
-      format: 'mdx',
+      label: 'Docs',
+      name: 'docs',
+      path: 'docs',
+      format: 'md',
       fields: [
         {
           name: 'body',
           label: 'Main Content',
-          type: 'rich-text',
+          type: 'string',
           isBody: true,
+          ui: {
+            component: 'markdown',
+          },
         },
       ],
     },
@@ -40,21 +43,7 @@ export const tinaConfig = defineConfig({
   schema,
   cmsCallback: cms => {
     import('tinacms').then(({RouteMappingPlugin}) => {
-      const RouteMapping = new RouteMappingPlugin((collection, document) => {
-        if (['page'].includes(collection.name)) {
-          if (document._sys.filename === 'home') {
-            return '/';
-          }
-        }
-
-        if (['post'].includes(collection.name)) {
-          return `/posts/${document._sys.filename}`;
-        }
-
-        return undefined;
-      });
-
-      cms.plugins.add(RouteMapping);
+      cms.plugins.add(MarkdownFieldPlugin);
     });
     return cms;
   },

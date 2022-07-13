@@ -48,8 +48,8 @@ type Query {
   collections: [Collection!]!
   node(id: String): Node!
   document(collection: String, relativePath: String): DocumentNode!
-  page(relativePath: String): Page!
-  pageConnection(before: String, after: String, first: Float, last: Float, sort: String): PageConnection!
+  docs(relativePath: String): Docs!
+  docsConnection(before: String, after: String, first: Float, last: Float, sort: String): DocsConnection!
 }
 
 type DocumentConnectionEdges {
@@ -75,24 +75,24 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float, sort: String): DocumentConnection!
 }
 
-union DocumentNode = Page
+union DocumentNode = Docs
 
-type Page implements Node & Document {
-  body: JSON
+type Docs implements Node & Document {
+  body: String
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
 }
 
-type PageConnectionEdges {
+type DocsConnectionEdges {
   cursor: String!
-  node: Page
+  node: Docs
 }
 
-type PageConnection implements Connection {
+type DocsConnection implements Connection {
   pageInfo: PageInfo!
   totalCount: Float!
-  edges: [PageConnectionEdges]
+  edges: [DocsConnectionEdges]
 }
 
 type Mutation {
@@ -100,16 +100,16 @@ type Mutation {
   updateDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
   deleteDocument(collection: String, relativePath: String!): DocumentNode!
   createDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
-  updatePage(relativePath: String!, params: PageMutation!): Page!
-  createPage(relativePath: String!, params: PageMutation!): Page!
+  updateDocs(relativePath: String!, params: DocsMutation!): Docs!
+  createDocs(relativePath: String!, params: DocsMutation!): Docs!
 }
 
 input DocumentMutation {
-  page: PageMutation
+  docs: DocsMutation
 }
 
-input PageMutation {
-  body: JSON
+input DocsMutation {
+  body: String
 }
 
 schema {
