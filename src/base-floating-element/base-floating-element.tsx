@@ -148,6 +148,11 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
 
   const baseTransitionClassname = `nk-${path}`;
 
+  const floatingProps = getFloatingProps({
+    ref: floating,
+    id: floatingId,
+  });
+
   return (
     <>
       {React.cloneElement(children, {
@@ -166,14 +171,11 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
         mountOnEnter
         unmountOnExit
         appear
-        nodeRef={floating}
+        nodeRef={floatingProps.ref}
       >
         {state => (
           <StyledFloatingElement
-            {...getFloatingProps({
-              ref: floating,
-              id: floatingId,
-            })}
+            {...floatingProps}
             className={`${className || ''} ${getTransitionClassName(
               baseTransitionClassname,
               state,

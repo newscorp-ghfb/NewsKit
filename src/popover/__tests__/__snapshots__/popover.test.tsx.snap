@@ -969,7 +969,7 @@ exports[`Popover close button should show left-aligned 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="nk-popover-enter-done emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -1305,7 +1305,7 @@ exports[`Popover close button should show right-aligned 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="nk-popover-enter-done emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
