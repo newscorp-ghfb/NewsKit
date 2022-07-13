@@ -9,3 +9,4 @@ site/static
 site/next-env.d.ts
 src/icons/filled/material
 src/icons/outlined/material
+lib/codemod
