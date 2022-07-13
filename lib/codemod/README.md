@@ -24,5 +24,5 @@ Link this package in your global `node_modules` by running:
 
 ```bash
 cd lib/codemod
-npm link
+yarn link
 ```
