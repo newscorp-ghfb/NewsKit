@@ -166,6 +166,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
         mountOnEnter
         unmountOnExit
         appear
+        nodeRef={floating}
       >
         {state => (
           <StyledFloatingElement
