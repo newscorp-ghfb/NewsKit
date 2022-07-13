@@ -439,19 +439,11 @@ describe('Popover', () => {
     });
     test('should call onDismiss on dismiss', () => {
       const onDismiss = jest.fn();
-      const Component = () => {
-        const [open] = React.useState(true);
-        return (
-          <Popover
-            open={open}
-            content="hello"
-            enableDismiss
-            onDismiss={onDismiss}
-          >
-            <div>Controlled Popover</div>
-          </Popover>
-        );
-      };
+      const Component = () => (
+        <Popover open content="hello" enableDismiss onDismiss={onDismiss}>
+          <div>Controlled Popover</div>
+        </Popover>
+      );
 
       renderWithTheme(Component);
       fireEvent.keyDown(document.body, {key: 'Escape'});
