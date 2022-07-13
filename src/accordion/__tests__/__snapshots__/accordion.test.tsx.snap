@@ -347,6 +347,7 @@ exports[`Accordion renders as a h4 1`] = `
     </h4>
     <div
       class="nk-accordion-enter-done emotion-10"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -714,6 +715,7 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
     </h3>
     <div
       class="nk-accordion-exit-done emotion-10"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -1080,6 +1082,7 @@ exports[`Accordion renders with default props 1`] = `
     </h3>
     <div
       class="nk-accordion-exit-done emotion-10"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -1423,6 +1426,7 @@ exports[`Accordion renders with disabled state 1`] = `
     </h3>
     <div
       class="nk-accordion-exit-done emotion-10"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -1790,6 +1794,7 @@ exports[`Accordion renders with expanded state and icon 1`] = `
     </h3>
     <div
       class="nk-accordion-enter-done emotion-10"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -2153,6 +2158,7 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
     </h3>
     <div
       class="nk-accordion-enter-done emotion-10"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -2539,6 +2545,7 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
     </h3>
     <div
       class="nk-accordion-enter-done emotion-10"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -2813,6 +2820,7 @@ exports[`Accordion renders with no header 1`] = `
     </h3>
     <div
       class="nk-accordion-exit-done emotion-7"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -3166,6 +3174,7 @@ exports[`Accordion renders with no label 1`] = `
     </h3>
     <div
       class="nk-accordion-exit-done emotion-9"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -3616,6 +3625,7 @@ exports[`Accordion renders with style overrides 1`] = `
     </h3>
     <div
       class="nk-accordion-enter-done emotion-10"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -3892,6 +3902,7 @@ exports[`Accordion renders without leading icon 1`] = `
     </h3>
     <div
       class="nk-accordion-exit-done emotion-7"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -4258,6 +4269,7 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
     </h3>
     <div
       class="nk-accordion-exit-done emotion-10"
+      data-testid="panel-transition-container"
       style="max-height: 0px;"
     >
       <div
@@ -4523,6 +4535,7 @@ exports[`AccordionGroup different type of children 1`] = `
       </h3>
       <div
         class="nk-accordion-enter-done emotion-6"
+        data-testid="panel-transition-container"
         style="max-height: 0px;"
       >
         <div
@@ -4576,6 +4589,7 @@ exports[`AccordionGroup different type of children 1`] = `
       </h3>
       <div
         class="nk-accordion-enter-done emotion-6"
+        data-testid="panel-transition-container"
         style="max-height: 0px;"
       >
         <div

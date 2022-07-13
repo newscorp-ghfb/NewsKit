@@ -20,6 +20,7 @@ import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {getTransitionClassName} from '../utils/get-transition-class-name';
 import {getTransitionDuration} from '../utils';
 import {useTheme} from '../theme';
+import {getRefScrollHeight} from './utils';
 
 // Based on https://www.w3schools.com/howto/howto_js_accordion.asp
 const MaxHeightTransitionPanel = ({
@@ -34,13 +35,14 @@ const MaxHeightTransitionPanel = ({
   const [width] = useResizeObserver(ref);
   useEffect(() => {
     if (expanded) {
-      ref.current!.style.maxHeight = `${ref.current!.scrollHeight}px`;
+      ref.current!.style.maxHeight = `${getRefScrollHeight(ref.current!)}px`;
     } else {
       ref.current!.style.maxHeight = '0px';
     }
   }, [expanded, width]);
   return (
     <StyledPanelTransitionContainer
+      data-testid="panel-transition-container"
       ref={ref}
       expanded={expanded}
       overrides={overrides}
