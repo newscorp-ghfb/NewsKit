@@ -26,14 +26,24 @@ export const popoverOverrides = (
   ),
 });
 
+export const selectionListOverrides = (
+  theme: Theme,
+  overrides: AudioPlayerPlaybackSpeedControlOverridesProps,
+) => ({
+  ...deepMerge(
+    mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
+    theme.componentDefaults.audioPlayerPlaybackSpeedControl.selectionList,
+    filterOutFalsyProperties(overrides.selectionList),
+  ),
+});
+
 export const selectionListOptionOverrides = (
   theme: Theme,
   overrides: AudioPlayerPlaybackSpeedControlOverridesProps,
 ) => ({
   ...deepMerge(
     mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
-    theme.componentDefaults.audioPlayerPlaybackSpeedControl.selectionList
-      .selectionListOption,
+    theme.componentDefaults.audioPlayerPlaybackSpeedControl.selectionListOption,
     filterOutFalsyProperties(overrides.selectionListOptions),
   ),
 });

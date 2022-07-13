@@ -6,13 +6,14 @@ import {AudioPlayerPlaybackSpeedControlProps} from './types';
 import {IconFilledSlowMotionVideo} from '../../../icons/filled/material/icon-filled-slow-motion-video';
 import {useTheme} from '../../../theme';
 import {useBreakpointKey} from '../../../utils/hooks';
-import {shouldRenderInModal} from '../../../utils/should-render-in-modal';
+import {checkBreakpointProp} from '../../../utils/check-breakpoint-prop';
 import {Modal} from '../../../modal';
 import {useAudioPlayerContext} from '../../context';
 import {PlaybackSpeedList} from './playback-speed-list';
 import {Popover} from '../../../popover';
 import {iconButtonOverrides, popoverOverrides, modalOverrides} from './utils';
 import {ButtonSize} from '../../../button';
+import {withMediaQueryProvider} from '../../../utils/hooks/use-media-query/context';
 
 const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpeedControlProps> = React.memo(
   props => {
@@ -24,15 +25,17 @@ const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpee
       onChange: setSpeed,
       useModal,
       playbackSpeed,
-      buttonSize = ButtonSize.Small,
+      buttonSize = ButtonSize.Medium,
     } = getPlaybackSpeedControlProps!(props);
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const renderInModal = shouldRenderInModal(useModal, useBreakpointKey());
+    const renderInModal = checkBreakpointProp(useModal, useBreakpointKey());
     const selectedOptionRef = useRef<HTMLButtonElement>(null);
+
     const playbackSpeedList = (
       <PlaybackSpeedList
+        isInsideModal={renderInModal}
         selectedOptionRef={selectedOptionRef}
         playbackSpeed={playbackSpeed}
         updateSpeed={setSpeed}
@@ -42,7 +45,7 @@ const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpee
       />
     );
 
-    const dimissHandler = useCallback(() => {
+    const dismissHandler = useCallback(() => {
       setIsOpen(false);
     }, []);
 
@@ -53,7 +56,7 @@ const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpee
           content={playbackSpeedList}
           header={undefined}
           closePosition="none"
-          onDismiss={dimissHandler}
+          onDismiss={dismissHandler}
           enableDismiss
           focusElementRef={selectedOptionRef}
           overrides={popoverOverrides(theme, overrides)}
@@ -72,7 +75,7 @@ const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpee
         {renderInModal && (
           <Modal
             open={isOpen}
-            onDismiss={dimissHandler}
+            onDismiss={dismissHandler}
             overrides={modalOverrides(theme, overrides)}
           >
             {playbackSpeedList}
@@ -83,6 +86,6 @@ const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpee
   },
 );
 
-export const AudioPlayerPlaybackSpeedControl = withOwnTheme(
-  ThemelessAudioPlayerPlaybackSpeedControl,
-)({defaults});
+export const AudioPlayerPlaybackSpeedControl = withMediaQueryProvider(
+  withOwnTheme(ThemelessAudioPlayerPlaybackSpeedControl)({defaults}),
+);

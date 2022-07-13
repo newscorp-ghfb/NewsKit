@@ -269,6 +269,7 @@ const AudioPlayerFullRecorded = (props: {
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
+                  size={ButtonSize.Medium}
                   aria-label="Open popout player"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
                   onClick={() => {

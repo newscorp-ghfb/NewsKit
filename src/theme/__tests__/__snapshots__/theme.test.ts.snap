@@ -1317,9 +1317,10 @@ Object {
       "minWidth": "140px",
     },
     "selectionList": Object {
-      "selectionListOption": Object {
-        "paddingInline": "space030",
-      },
+      "paddingBlock": "space010",
+    },
+    "selectionListOption": Object {
+      "paddingInline": "space030",
     },
   },
   "audioPlayerReplayButton": Object {
@@ -3080,6 +3081,14 @@ Object {
       "borderWidth": "{{borders.borderWidth010}}",
       "boxShadow": "{{shadows.shadow010}}",
       "iconColor": "{{colors.inkNonEssential}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineOffset": "-7px",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary040}}",
@@ -5203,6 +5212,14 @@ Object {
       "borderWidth": "{{borders.borderWidth010}}",
       "boxShadow": "{{shadows.shadow010}}",
       "iconColor": "{{colors.inkNonEssential}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineOffset": "-7px",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary040}}",

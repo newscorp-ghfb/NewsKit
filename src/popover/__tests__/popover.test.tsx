@@ -440,7 +440,7 @@ describe('Popover', () => {
     test('should call onDismiss on dismiss', () => {
       const onDismiss = jest.fn();
       const Component = () => {
-        const [open, setOpen] = React.useState(true);
+        const [open] = React.useState(true);
         return (
           <Popover
             open={open}
@@ -448,7 +448,7 @@ describe('Popover', () => {
             enableDismiss
             onDismiss={onDismiss}
           >
-            <Button onClick={() => setOpen(!open)}>Controlled Popover</Button>
+            <div>Controlled Popover</div>
           </Popover>
         );
       };

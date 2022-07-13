@@ -11,9 +11,10 @@ export default {
       },
     },
     selectionList: {
-      selectionListOption: {
-        paddingInline: 'space030',
-      },
+      paddingBlock: 'space010',
+    },
+    selectionListOption: {
+      paddingInline: 'space030',
     },
     modal: {
       content: {

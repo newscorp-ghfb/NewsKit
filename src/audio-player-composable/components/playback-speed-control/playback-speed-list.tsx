@@ -2,7 +2,7 @@ import React from 'react';
 import {SelectionList, SelectionListOption} from '../../../selection-list';
 import {Theme} from '../../../theme';
 import {AudioPlayerPlaybackSpeedControlOverridesProps} from './types';
-import {selectionListOptionOverrides} from './utils';
+import {selectionListOptionOverrides, selectionListOverrides} from './utils';
 
 type PlaybackSpeedListProps = {
   playbackSpeed: number;
@@ -11,6 +11,7 @@ type PlaybackSpeedListProps = {
   theme: Theme;
   overrides: AudioPlayerPlaybackSpeedControlOverridesProps;
   selectedOptionRef: React.Ref<HTMLButtonElement>;
+  isInsideModal: boolean;
 };
 
 const PLAYBACK_RATE_SCALE = [0.5, 0.8, 1, 1.2, 1.5, 2];
@@ -22,8 +23,12 @@ export const PlaybackSpeedList: React.FC<PlaybackSpeedListProps> = ({
   theme,
   overrides,
   selectedOptionRef,
+  isInsideModal,
 }) => (
-  <SelectionList aria-label="playback speed">
+  <SelectionList
+    overrides={selectionListOverrides(theme, overrides)}
+    aria-label="playback speed"
+  >
     {PLAYBACK_RATE_SCALE.map(speed => (
       <SelectionListOption
         ref={playbackSpeed === speed ? selectedOptionRef : undefined}
@@ -32,7 +37,9 @@ export const PlaybackSpeedList: React.FC<PlaybackSpeedListProps> = ({
         selected={playbackSpeed === speed}
         onClick={() => {
           updateSpeed(speed);
-          setIsOpen(false);
+          if (!isInsideModal) {
+            setIsOpen(false);
+          }
         }}
       >
         {speed}x
