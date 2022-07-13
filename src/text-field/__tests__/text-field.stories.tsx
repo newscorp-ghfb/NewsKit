@@ -15,7 +15,7 @@ import {Stack} from '../../stack';
 import {
   StorybookHeading,
   StorybookSubHeading,
-  StorybookParah,
+  StorybookParagraph,
 } from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {
@@ -471,9 +471,9 @@ export const TextFieldAddOn = () => {
         </Block>
         <Block spaceStack={blockSpaceStack}>
           <StorybookSubHeading>Text Field with two icons</StorybookSubHeading>
-          <StorybookParah>
+          <StorybookParagraph>
             Please type inside the text field to see second icons
-          </StorybookParah>
+          </StorybookParagraph>
           <Label htmlFor="id-12">Label</Label>
           <TextField
             aria-describedby="id-12-at"

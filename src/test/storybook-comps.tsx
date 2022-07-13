@@ -64,7 +64,10 @@ export const StorybookSpan: React.FC<Props> = ({children, stylePreset}) => (
   </TextBlock>
 );
 
-export const StorybookParah: React.FC<Props> = ({children, stylePreset}) => (
+export const StorybookParagraph: React.FC<Props> = ({
+  children,
+  stylePreset,
+}) => (
   <TextBlock
     stylePreset={stylePreset || 'inkContrast'}
     paddingBlockEnd="space020"

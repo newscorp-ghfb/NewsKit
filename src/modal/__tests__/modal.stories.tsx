@@ -4,7 +4,7 @@ import {Modal} from '..';
 import {styled} from '../../utils/style';
 import {
   StorybookHeading,
-  StorybookParah,
+  StorybookParagraph,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {Button} from '../../button';
@@ -27,10 +27,10 @@ const modalContent = (
     spaceInline="space020"
   >
     <H1>You need an account</H1>
-    <StorybookParah>
+    <StorybookParagraph>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudantium, totam rem aperiam. (Double click for more text :) )
-    </StorybookParah>
+    </StorybookParagraph>
     <Button>Register for a free account</Button>
     <P>Already have an account?</P>
     <Link href="/">Sign in here</Link>
@@ -69,7 +69,7 @@ export const StoryDefault = () =>
               {i === 3 && (
                 <Button onClick={open}>Another button to open the modal</Button>
               )}
-              <StorybookParah key={i}>{scrollContent}</StorybookParah>
+              <StorybookParagraph key={i}>{scrollContent}</StorybookParagraph>
             </>
           ))}
         </Box>
@@ -99,7 +99,9 @@ export const StoryOpenOnPageLoad = () =>
     return (
       <>
         <StorybookHeading>Open modal on page load</StorybookHeading>
-        <StorybookParah>Refresh the page to open the modal</StorybookParah>
+        <StorybookParagraph>
+          Refresh the page to open the modal
+        </StorybookParagraph>
         <Modal
           open={isActive}
           onDismiss={close}
@@ -112,11 +114,11 @@ export const StoryOpenOnPageLoad = () =>
             spaceInline="space020"
           >
             <H1>You need an account</H1>
-            <StorybookParah>
+            <StorybookParagraph>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam. (Double
               click for more text :) )
-            </StorybookParah>
+            </StorybookParagraph>
             <Button>Register for a free account</Button>
             <P>Already have an account?</P>
             <Link href="/">Sign in here</Link>
@@ -158,9 +160,9 @@ export const StoryWithCustomAutofocus = () =>
     return (
       <div data-testid="scrollable-modal">
         <StorybookHeading>Modal with custom auto-focus</StorybookHeading>
-        <StorybookParah>
+        <StorybookParagraph>
           Modal with autofocus using data-autofocus attribute
-        </StorybookParah>
+        </StorybookParagraph>
         <Button onClick={open} data-testid="modal-open-button">
           Open modal
         </Button>
@@ -177,11 +179,11 @@ export const StoryWithCustomAutofocus = () =>
             spaceInline="space020"
           >
             <H1>You need an account</H1>
-            <StorybookParah>
+            <StorybookParagraph>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam. (Double
               click for more text :) )
-            </StorybookParah>
+            </StorybookParagraph>
             <Button>Register for a free account</Button>
             <Button data-autofocus>Middle Button with focus</Button>
             <Button>Something else</Button>
@@ -222,11 +224,11 @@ export const StoryWithCustomRestoreFocus = () =>
             spaceInline="space020"
           >
             <H1>You need an account</H1>
-            <StorybookParah>
+            <StorybookParagraph>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam. (Double
               click for more text :) )
-            </StorybookParah>
+            </StorybookParagraph>
             <Button>Register for a free account</Button>
           </Stack>
         </Modal>
@@ -253,7 +255,7 @@ export const StoryWithHiddenOverlay = () =>
               {i === 3 && (
                 <Button onClick={open}>Another button to open the modal</Button>
               )}
-              <StorybookParah key={i}>{scrollContent}</StorybookParah>
+              <StorybookParagraph key={i}>{scrollContent}</StorybookParagraph>
             </>
           ))}
         </Box>
@@ -288,7 +290,7 @@ export const StoryWithDisabledFocusTrap = () =>
               {i === 3 && (
                 <Button onClick={open}>Another button to open the modal</Button>
               )}
-              <StorybookParah key={i}>{scrollContent}</StorybookParah>
+              <StorybookParagraph key={i}>{scrollContent}</StorybookParagraph>
             </>
           ))}
         </Box>
@@ -323,7 +325,7 @@ export const StoryModelessModal = () =>
               {i === 3 && (
                 <Button onClick={open}>Another button to open the modal</Button>
               )}
-              <StorybookParah key={i}>{scrollContent}</StorybookParah>
+              <StorybookParagraph key={i}>{scrollContent}</StorybookParagraph>
             </>
           ))}
         </Box>

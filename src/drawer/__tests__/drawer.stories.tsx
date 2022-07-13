@@ -5,7 +5,7 @@ import {Drawer} from '..';
 import {styled} from '../../utils/style';
 import {
   StorybookHeading,
-  StorybookParah,
+  StorybookParagraph,
   StorybookLabel,
 } from '../../test/storybook-comps';
 import {Button} from '../../button';
@@ -46,7 +46,7 @@ const BoxWithContent = ({open}: {open?: () => void}) => (
           {open && i === 3 && (
             <Button onClick={open}>Another button to open the drawer</Button>
           )}
-          <StorybookParah key={i}>{content}</StorybookParah>
+          <StorybookParagraph key={i}>{content}</StorybookParagraph>
         </>
       ))}
     </Box>
@@ -61,7 +61,7 @@ const onSubmit = async (data: any) => {
 };
 const DrawerContent = () => (
   <>
-    <StorybookParah>
+    <StorybookParagraph>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lorem
       massa, et lacinia ipsum tristique id. Phasellus sed posuere lacus.
       Pellentesque eu odio <Link href="/">Test link 1</Link> sapien. Donec
@@ -73,14 +73,14 @@ const DrawerContent = () => (
       ultricies massa eu sem varius volutpat. Ut vitae purus et enim imperdiet
       finibus. Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
       interdum.
-    </StorybookParah>
+    </StorybookParagraph>
     <TextInput label="First name" />
     <TextInput label="Last name" />
     <TextInput label="Phone number" />
     <div>
       <Link href="/">For more information...</Link>{' '}
     </div>
-    <StorybookParah>
+    <StorybookParagraph>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
       scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
       vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
@@ -89,7 +89,7 @@ const DrawerContent = () => (
       dapibus, enim sed tristique gravida, nisl dolor malesuada lacus, quis
       auctor dui mauris eu odio. Vivamus eu augue et enim varius viverra.
       Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere ipsum.
-    </StorybookParah>
+    </StorybookParagraph>
     <div>
       <Button onClick={onSubmit}>Remind me later</Button>
       <Button>Ok</Button>
@@ -245,7 +245,7 @@ export const StoryInline = () =>
           >
             <DrawerContent />
           </Drawer>
-          <StorybookParah>
+          <StorybookParagraph>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
             lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
             lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
@@ -258,7 +258,7 @@ export const StoryInline = () =>
             sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
             Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
             interdum.
-          </StorybookParah>
+          </StorybookParagraph>
         </DrawerContainer>
 
         <BoxWithContent open={open} />
@@ -365,7 +365,7 @@ export const StoryMenuAndInline = () =>
             >
               {selectedDrawer !== null &&
                 Array.from({length: selectedDrawer + 1}).map(() => (
-                  <StorybookParah>
+                  <StorybookParagraph>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                     aliquet lorem massa, et lacinia ipsum tristique id.
                     Phasellus sed posuere lacus. Pellentesque eu odio{' '}
@@ -379,7 +379,7 @@ export const StoryMenuAndInline = () =>
                     Curabitur ultricies massa eu sem varius volutpat. Ut vitae
                     purus et enim imperdiet finibus. Quisque posuere lacus a
                     nunc tempor accumsan. Aliquam odio nunc, interdum.
-                  </StorybookParah>
+                  </StorybookParagraph>
                 ))}
             </Drawer>
           </HeaderDrawer>
@@ -389,7 +389,7 @@ export const StoryMenuAndInline = () =>
             Toggle Menu fixed: ( current {isFixed.toString()})
           </Button>
         </div>
-        <StorybookParah>
+        <StorybookParagraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
           lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
           lacus. Pellentesque eu odio sapien. Donec finibus pellentesque est
@@ -401,7 +401,7 @@ export const StoryMenuAndInline = () =>
           ultricies massa eu sem varius volutpat. Ut vitae purus et enim
           imperdiet finibus. Quisque posuere lacus a nunc tempor accumsan.
           Aliquam odio nunc, interdum.
-        </StorybookParah>
+        </StorybookParagraph>
 
         <BoxWithContent />
       </>
@@ -445,9 +445,9 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
     return (
       <div>
         <StorybookHeading>Drawer with custom auto-focus</StorybookHeading>
-        <StorybookParah>
+        <StorybookParagraph>
           Drawer with autofocus using data-autofocus attribute
-        </StorybookParah>
+        </StorybookParagraph>
         <Button onClick={open} data-testid="drawer-open-button">
           Open Drawer
         </Button>
@@ -577,9 +577,9 @@ export const StoryModelessWithRestoreFocusAndCustomAutofocus = () =>
     return (
       <div>
         <StorybookHeading>Drawer with custom auto-focus</StorybookHeading>
-        <StorybookParah>
+        <StorybookParagraph>
           Drawer with autofocus using data-autofocus attribute
-        </StorybookParah>
+        </StorybookParagraph>
         <Button onClick={open} data-testid="modeless-drawer-open-button">
           Open Drawer
         </Button>
@@ -814,7 +814,7 @@ export const StoryInlineDrawerLogicalPropsOnPanel = () =>
           >
             <DrawerContent />
           </Drawer>
-          <StorybookParah>
+          <StorybookParagraph>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
             lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
             lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
@@ -827,7 +827,7 @@ export const StoryInlineDrawerLogicalPropsOnPanel = () =>
             sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
             Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
             interdum.
-          </StorybookParah>
+          </StorybookParagraph>
         </DrawerContainer>
       </div>
     );

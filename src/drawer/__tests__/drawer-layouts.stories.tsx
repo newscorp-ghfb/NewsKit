@@ -5,7 +5,7 @@ import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {getColorFromTheme, styled} from '../../utils/style';
 import {
   StorybookHeading,
-  StorybookParah,
+  StorybookParagraph,
   StorybookH3,
   StorybookH4,
 } from '../../test/storybook-comps';
@@ -104,7 +104,7 @@ export const StoryLeftPlacement = () =>
   React.createElement(() => {
     const renderChildren = () => (
       <>
-        <StorybookParah>
+        <StorybookParagraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
           lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
           lacus. Pellentesque eu odio <Link href="/">Test link 1</Link> sapien.
@@ -116,14 +116,14 @@ export const StoryLeftPlacement = () =>
           molestie lectus. Curabitur ultricies massa eu sem varius volutpat. Ut
           vitae purus et enim imperdiet finibus. Quisque posuere lacus a nunc
           tempor accumsan. Aliquam odio nunc, interdum.
-        </StorybookParah>
+        </StorybookParagraph>
         <TextInput label="First name" />
         <TextInput label="Last name" />
         <TextInput label="Phone number" />
         <div>
           <Link href="/">For more information...</Link>{' '}
         </div>
-        <StorybookParah>
+        <StorybookParagraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
           scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
           vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
@@ -133,7 +133,7 @@ export const StoryLeftPlacement = () =>
           lacus, quis auctor dui mauris eu odio. Vivamus eu augue et enim varius
           viverra. Vivamus ut tellus iaculis, ullamcorper ligula sit amet,
           posuere ipsum.
-        </StorybookParah>
+        </StorybookParagraph>
         <div>
           <Button>Remind me later</Button>
           <Button>Ok</Button>
@@ -255,7 +255,7 @@ export const StoryNoHeaderContent = () =>
         overrides={{header: {spaceInset: 'space000'}}}
       >
         <StorybookH3>List title</StorybookH3>
-        <StorybookParah>List description goes here</StorybookParah>
+        <StorybookParagraph>List description goes here</StorybookParagraph>
 
         <StorybookH4>List content</StorybookH4>
         <UnorderedList listItemMarker={IconFilledAddCircleOutline}>
@@ -272,7 +272,7 @@ export const StoryNoClose = () =>
       <StorybookHeading>Default with no close button</StorybookHeading>
       <Drawer header="Header" open onDismiss={() => {}} closePosition="none">
         <StorybookH3>List title</StorybookH3>
-        <StorybookParah>List description goes here</StorybookParah>
+        <StorybookParagraph>List description goes here</StorybookParagraph>
 
         <StorybookH4>List content</StorybookH4>
         <UnorderedList listItemMarker={IconFilledAddCircleOutline}>
@@ -289,7 +289,7 @@ export const StoryNoHeader = () =>
       <StorybookHeading>Default withhout header</StorybookHeading>
       <Drawer open onDismiss={() => {}} closePosition="none">
         <StorybookH3>List title</StorybookH3>
-        <StorybookParah>List description goes here</StorybookParah>
+        <StorybookParagraph>List description goes here</StorybookParagraph>
 
         <StorybookH4>List content</StorybookH4>
         <UnorderedList listItemMarker={IconFilledAddCircleOutline}>

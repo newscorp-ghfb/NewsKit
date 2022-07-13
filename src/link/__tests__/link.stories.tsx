@@ -5,7 +5,7 @@ import {getColorCssFromTheme, styled} from '../../utils/style';
 import {
   StorybookHeading,
   StorybookSubHeading,
-  StorybookParah,
+  StorybookParagraph,
 } from '../../test/storybook-comps';
 import {IconFilledEmail} from '../../icons';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
@@ -129,7 +129,7 @@ const Container = styled.div<{hasBackground?: boolean}>`
     hasBackground && getColorCssFromTheme('background', 'inkBase')};
 `;
 
-const CustomPragraph = styled(StorybookParah)`
+const CustomPragraph = styled(StorybookParagraph)`
  margin 0;
 `;
 
