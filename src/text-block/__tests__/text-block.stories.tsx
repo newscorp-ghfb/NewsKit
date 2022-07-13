@@ -1,14 +1,16 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {TextBlock} from '..';
-import {createTheme, ThemeProvider} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {styled} from '../../utils';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-textblock-theme',
+const textBlockCustomThemeObject: CreateThemeArgs = {
+  name: 'textblock-custom-theme',
   overrides: {
     stylePresets: {
       textblockCustom: {
@@ -29,7 +31,7 @@ const myCustomTheme = createTheme({
       },
     },
   },
-});
+};
 
 const bodyString =
   'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight. Long form and rapid-fire, pragmatic and poetic, comical and critical. Being at the biggest events with the biggest names noticing the smallest details, and sticking up for the little guy.';
@@ -37,15 +39,11 @@ const bodyString =
 const StyledDiv = styled.div`
   border: 1px purple dotted;
 `;
-export default {
-  title: 'NewsKit Light/text-block',
-  component: () => 'None',
-};
 
 export const StoryDefault = () => (
   <>
     <StorybookHeading>TextBlock default</StorybookHeading>
-    <TextBlock>{bodyString}</TextBlock>
+    <TextBlock stylePreset="inkContrast">{bodyString}</TextBlock>
   </>
 );
 StoryDefault.storyName = 'default';
@@ -54,45 +52,65 @@ export const StoryAsDifferentHtmlTag = () => (
   <>
     <StorybookHeading>TextBlock</StorybookHeading>
     <StorybookSubHeading>As h3</StorybookSubHeading>
-    <TextBlock as="h3">{bodyString}</TextBlock>
+    <TextBlock stylePreset="inkContrast" as="h3">
+      {bodyString}
+    </TextBlock>
 
     <StorybookSubHeading>As div</StorybookSubHeading>
-    <TextBlock as="div">{bodyString}</TextBlock>
+    <TextBlock stylePreset="inkContrast" as="div">
+      {bodyString}
+    </TextBlock>
   </>
 );
 StoryAsDifferentHtmlTag.storyName = 'as different html tag';
 
 export const StoryWithOverriddenPresets = () => (
   <>
-    <ThemeProvider theme={myCustomTheme}>
-      <StorybookHeading>TextBlock</StorybookHeading>
-      <StorybookSubHeading>With style-preset override</StorybookSubHeading>
-      <TextBlock stylePreset="textblockCustom">{bodyString}</TextBlock>
-      <StorybookSubHeading>With typography-preset override</StorybookSubHeading>
-      <TextBlock typographyPreset="editorialParagraph010">
-        {bodyString}
-      </TextBlock>
-    </ThemeProvider>
+    <StorybookHeading>TextBlock</StorybookHeading>
+    <StorybookSubHeading>With style-preset override</StorybookSubHeading>
+    <TextBlock stylePreset="textblockCustom">{bodyString}</TextBlock>
+    <StorybookSubHeading>With typography-preset override</StorybookSubHeading>
+    <TextBlock
+      typographyPreset="editorialParagraph010"
+      stylePreset="inkContrast"
+    >
+      {bodyString}
+    </TextBlock>
   </>
 );
 StoryWithOverriddenPresets.storyName = 'with overridden presets';
 
 export const StoryWithLogicalPropsOverrides = () => (
   <>
-    <ThemeProvider theme={myCustomTheme}>
-      <StorybookHeading>TextBlock</StorybookHeading>
-      <StorybookSubHeading>With logical padding overrides</StorybookSubHeading>
-      <TextBlock stylePreset="textblockCustom" paddingBlock="space040">
+    <StorybookHeading>TextBlock</StorybookHeading>
+    <StorybookSubHeading>With logical padding overrides</StorybookSubHeading>
+    <TextBlock stylePreset="inkContrast" paddingBlock="space040">
+      {bodyString}
+    </TextBlock>
+
+    <StorybookSubHeading>With logical margin overrides</StorybookSubHeading>
+    <StyledDiv>
+      <TextBlock marginBlock="space040" stylePreset="inkContrast">
         {bodyString}
       </TextBlock>
-
-      <StorybookSubHeading>With logical margin overrides</StorybookSubHeading>
-      <StyledDiv>
-        <TextBlock marginBlock="space040" stylePreset="textblockCustom">
-          {bodyString}
-        </TextBlock>
-      </StyledDiv>
-    </ThemeProvider>
+    </StyledDiv>
   </>
 );
 StoryWithLogicalPropsOverrides.storyName = 'with-logical-overrides';
+
+export default {
+  title: 'NewsKit Light/text-block',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          textBlockCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

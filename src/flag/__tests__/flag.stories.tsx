@@ -154,7 +154,7 @@ export const StoryInverseFlag = () => (
     <StorybookHeading>Inverse Flag</StorybookHeading>
     <Container hasBlackBackground>
       <Block>
-        <StorybookSubHeading>
+        <StorybookSubHeading stylePreset="white">
           with flagSolidInverse style preset
         </StorybookSubHeading>
         <Flag
@@ -165,7 +165,7 @@ export const StoryInverseFlag = () => (
         </Flag>
       </Block>
       <Block>
-        <StorybookSubHeading>
+        <StorybookSubHeading stylePreset="white">
           with flagMinimalInverse style preset
         </StorybookSubHeading>
         <Flag

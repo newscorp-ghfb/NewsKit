@@ -6,6 +6,7 @@ import {Form, FormInput, FormInputCheckbox, FormRef} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
+  StorybookLabel,
 } from '../../test/storybook-comps';
 import {Button} from '../../button';
 import {TextInput, TextInputSize} from '../../text-input';
@@ -310,8 +311,10 @@ export const StoryFormWithPhoneInput = () => {
               />
             </Block>
             <Block>
-              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-              <label htmlFor="phone-number">Phone number</label>
+              {}
+              <StorybookLabel htmlFor="phone-number">
+                Phone number
+              </StorybookLabel>
               <PhoneInputWithCountry
                 placeholder="Enter phone number"
                 name="phonenumber"

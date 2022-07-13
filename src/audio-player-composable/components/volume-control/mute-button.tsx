@@ -1,14 +1,32 @@
 import React from 'react';
 import {IconButton} from '../../../icon-button';
-import {IconFilledVolumeDown, IconFilledVolumeOff} from '../../../icons';
+import {IconFilledVolumeOff, IconFilledVolumeUp} from '../../../icons';
+import {getComponentOverrides} from '../../../utils/overrides';
 import {useKeyboardShortcutsOnButton} from '../../utils';
-import {MuteButtonProps} from './types';
+import {MuteButtonIconProps, MuteButtonProps} from './types';
 
 const toggleMute = (
   volume: number,
   unMutedVolume: number,
   onChange: (volume: number) => void,
 ) => (volume === 0 ? onChange(unMutedVolume) : onChange(0));
+
+const DefaultIcon = ({volume, overrides}: MuteButtonIconProps) =>
+  volume === 0 ? (
+    <IconFilledVolumeOff
+      overrides={{
+        size: 'iconSize020',
+        ...overrides,
+      }}
+    />
+  ) : (
+    <IconFilledVolumeUp
+      overrides={{
+        size: 'iconSize020',
+        ...overrides,
+      }}
+    />
+  );
 
 export const MuteButton: React.FC<MuteButtonProps> = ({
   volume,
@@ -28,6 +46,14 @@ export const MuteButton: React.FC<MuteButtonProps> = ({
     defaults: 'm',
   });
 
+  const [MuteButtonIcon, muteButtonIconProps] = getComponentOverrides(
+    overrides.muteButtonIcon,
+    DefaultIcon,
+    {
+      volume,
+    },
+  );
+
   return (
     <IconButton
       data-testid="mute-button"
@@ -36,7 +62,7 @@ export const MuteButton: React.FC<MuteButtonProps> = ({
       size={size}
       overrides={overrides}
     >
-      {volume === 0 ? <IconFilledVolumeOff /> : <IconFilledVolumeDown />}
+      <MuteButtonIcon {...(muteButtonIconProps as MuteButtonIconProps)} />
     </IconButton>
   );
 };
