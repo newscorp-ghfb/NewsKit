@@ -302,7 +302,7 @@ const AudioPlayerFullLive = (props: {
       <GridLayout
         columns={{
           xs: 'auto 1fr auto auto auto 1fr',
-          md: '50px 1fr auto auto auto 1fr 42px 42px',
+          md: '50px 1fr auto auto auto 1fr 60px 60px',
         }}
         columnGap="space040"
         areas={{
@@ -356,6 +356,7 @@ const AudioPlayerFullLive = (props: {
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
+                  size={ButtonSize.Medium}
                   aria-label="Open popout player"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
                   onClick={() => {
@@ -775,6 +776,7 @@ export const AudioPlayerOverrides = () => {
                 <Areas.Link alignSelf="center" justifySelf="end">
                   <Hidden xs sm>
                     <IconButton
+                      size={ButtonSize.Medium}
                       aria-label="Open popout player"
                       href="https://www.newskit.co.uk/"
                       overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
@@ -1025,6 +1027,7 @@ export const AudioPlayerKeyboard = () => (
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
+                  size={ButtonSize.Medium}
                   aria-label="Open popout player"
                   href="https://www.newskit.co.uk/"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
