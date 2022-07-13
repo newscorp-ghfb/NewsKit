@@ -18,11 +18,6 @@ export default class MyDocument extends Document {
   render() {
     const isSiteEnvProduction = process.env.SITE_ENV === 'production';
 
-    const isPagePathNotPreviewIllustrationExport =
-      // eslint-disable-next-line no-underscore-dangle
-      this.props.__NEXT_DATA__.props.path !==
-      '/tools/preview-illustration-export/';
-
     const helmet = Helmet.rewind();
     return (
       <Html lang="en">
@@ -41,7 +36,7 @@ export default class MyDocument extends Document {
           </style>
           {helmet.script.toComponent()}
           <HTMLMeta />
-          {isPagePathNotPreviewIllustrationExport && (
+          {isSiteEnvProduction && (
             <Consent
               sourcePointConfigUnified={{
                 accountId: 259,
