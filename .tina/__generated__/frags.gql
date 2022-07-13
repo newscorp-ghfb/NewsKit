@@ -1,0 +1,3 @@
+fragment PageParts on Page {
+  body
+}
