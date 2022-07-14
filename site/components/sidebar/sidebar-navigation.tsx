@@ -50,7 +50,10 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
               <>
                 {indexPage ? undefined : (
                   <>
-                    <MenuTitleLinks active={path.includes(id)} href={id}>
+                    <MenuTitleLinks
+                      active={path.includes(id)}
+                      href={id.substring(1)}
+                    >
                       {title}
                     </MenuTitleLinks>
                   </>
