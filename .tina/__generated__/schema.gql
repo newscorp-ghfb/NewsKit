@@ -48,8 +48,8 @@ type Query {
   collections: [Collection!]!
   node(id: String): Node!
   document(collection: String, relativePath: String): DocumentNode!
-  docs(relativePath: String): Docs!
-  docsConnection(before: String, after: String, first: Float, last: Float, sort: String): DocsConnection!
+  component(relativePath: String): Component!
+  componentConnection(before: String, after: String, first: Float, last: Float, sort: String): ComponentConnection!
 }
 
 type DocumentConnectionEdges {
@@ -75,24 +75,31 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float, sort: String): DocumentConnection!
 }
 
-union DocumentNode = Docs
+union DocumentNode = Component
 
-type Docs implements Node & Document {
-  body: String
+type ComponentPageIntro {
+  type: String
+  name: String
+  coverImage: String
+  introduction: String
+}
+
+type Component implements Node & Document {
+  pageIntro: ComponentPageIntro
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
 }
 
-type DocsConnectionEdges {
+type ComponentConnectionEdges {
   cursor: String!
-  node: Docs
+  node: Component
 }
 
-type DocsConnection implements Connection {
+type ComponentConnection implements Connection {
   pageInfo: PageInfo!
   totalCount: Float!
-  edges: [DocsConnectionEdges]
+  edges: [ComponentConnectionEdges]
 }
 
 type Mutation {
@@ -100,16 +107,23 @@ type Mutation {
   updateDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
   deleteDocument(collection: String, relativePath: String!): DocumentNode!
   createDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
-  updateDocs(relativePath: String!, params: DocsMutation!): Docs!
-  createDocs(relativePath: String!, params: DocsMutation!): Docs!
+  updateComponent(relativePath: String!, params: ComponentMutation!): Component!
+  createComponent(relativePath: String!, params: ComponentMutation!): Component!
 }
 
 input DocumentMutation {
-  docs: DocsMutation
+  component: ComponentMutation
 }
 
-input DocsMutation {
-  body: String
+input ComponentPageIntroMutation {
+  type: String
+  name: String
+  coverImage: String
+  introduction: String
+}
+
+input ComponentMutation {
+  pageIntro: ComponentPageIntroMutation
 }
 
 schema {

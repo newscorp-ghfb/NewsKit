@@ -1,5 +1,5 @@
-query docs($relativePath: String!) {
-  docs(relativePath: $relativePath) {
+query component($relativePath: String!) {
+  component(relativePath: $relativePath) {
     ... on Document {
       _sys {
         filename
@@ -11,12 +11,12 @@ query docs($relativePath: String!) {
       }
       id
     }
-    ...DocsParts
+    ...ComponentParts
   }
 }
 
-query docsConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String) {
-  docsConnection(
+query componentConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String) {
+  componentConnection(
     before: $before
     after: $after
     first: $first
@@ -37,7 +37,7 @@ query docsConnection($before: String, $after: String, $first: Float, $last: Floa
           }
           id
         }
-        ...DocsParts
+        ...ComponentParts
       }
     }
   }

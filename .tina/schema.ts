@@ -1,5 +1,56 @@
 import {defineConfig, defineSchema} from 'tinacms';
 import {MarkdownFieldPlugin} from 'react-tinacms-editor';
+import { TinaFieldInner } from "@tinacms/schema-tools";
+
+export const pageIntroductionField: TinaFieldInner<false> = {
+  type: "object",
+  label: "Page introduction",
+  name: "pageIntro",
+  fields: [
+    {
+      label: "Type",
+      name: "type",
+      type: "string",
+    },
+    {
+      label: "Name",
+      name: "name",
+      type: "string",
+    },
+    {
+      label: "Cover Image",
+      name: "coverImage",
+      type: "image",
+    },
+    {
+      label: "Introduction",
+      name: "introduction",
+      type: "string",
+    },
+  ],
+};
+
+// is Table supported?
+// export const componentAPIField: TinaFieldInner<false> = {
+//   type: "object",
+//   label: "Component API",
+//   name: "componentAPI",
+//   fields: [
+//     {
+//       label: "Title",
+//       name: "title",
+//       type: "string",
+//     },
+//     {
+//       label: "Props",
+//       name: "props",
+//       type: "object",
+//     },
+
+//   ],
+// };
+
+
 const schema = defineSchema({
   config: {
     media: {
@@ -11,24 +62,18 @@ const schema = defineSchema({
   },
   collections: [
     {
-      label: 'Docs',
-      name: 'docs',
-      path: 'docs',
-      format: 'md',
+      label: 'Components',
+      name: 'component',
+      path: 'content/component',
+      format: 'mdx',
       fields: [
-        {
-          name: 'body',
-          label: 'Main Content',
-          type: 'string',
-          isBody: true,
-          ui: {
-            component: 'markdown',
-          },
-        },
+        pageIntroductionField,
       ],
     },
   ],
 });
+
+//API table - nested obj
 
 export default schema;
 

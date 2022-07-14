@@ -73,8 +73,8 @@ export type Query = {
   collections: Array<Collection>;
   node: Node;
   document: DocumentNode;
-  docs: Docs;
-  docsConnection: DocsConnection;
+  component: Component;
+  componentConnection: ComponentConnection;
 };
 
 
@@ -99,12 +99,12 @@ export type QueryDocumentArgs = {
 };
 
 
-export type QueryDocsArgs = {
+export type QueryComponentArgs = {
   relativePath?: InputMaybe<Scalars['String']>;
 };
 
 
-export type QueryDocsConnectionArgs = {
+export type QueryComponentConnectionArgs = {
   before?: InputMaybe<Scalars['String']>;
   after?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Float']>;
@@ -147,27 +147,35 @@ export type CollectionDocumentsArgs = {
   sort?: InputMaybe<Scalars['String']>;
 };
 
-export type DocumentNode = Docs;
+export type DocumentNode = Component;
 
-export type Docs = Node & Document & {
-  __typename?: 'Docs';
-  body?: Maybe<Scalars['String']>;
+export type ComponentPageIntro = {
+  __typename?: 'ComponentPageIntro';
+  type?: Maybe<Scalars['String']>;
+  name?: Maybe<Scalars['String']>;
+  coverImage?: Maybe<Scalars['String']>;
+  introduction?: Maybe<Scalars['String']>;
+};
+
+export type Component = Node & Document & {
+  __typename?: 'Component';
+  pageIntro?: Maybe<ComponentPageIntro>;
   id: Scalars['ID'];
   _sys: SystemInfo;
   _values: Scalars['JSON'];
 };
 
-export type DocsConnectionEdges = {
-  __typename?: 'DocsConnectionEdges';
+export type ComponentConnectionEdges = {
+  __typename?: 'ComponentConnectionEdges';
   cursor: Scalars['String'];
-  node?: Maybe<Docs>;
+  node?: Maybe<Component>;
 };
 
-export type DocsConnection = Connection & {
-  __typename?: 'DocsConnection';
+export type ComponentConnection = Connection & {
+  __typename?: 'ComponentConnection';
   pageInfo: PageInfo;
   totalCount: Scalars['Float'];
-  edges?: Maybe<Array<Maybe<DocsConnectionEdges>>>;
+  edges?: Maybe<Array<Maybe<ComponentConnectionEdges>>>;
 };
 
 export type Mutation = {
@@ -176,8 +184,8 @@ export type Mutation = {
   updateDocument: DocumentNode;
   deleteDocument: DocumentNode;
   createDocument: DocumentNode;
-  updateDocs: Docs;
-  createDocs: Docs;
+  updateComponent: Component;
+  createComponent: Component;
 };
 
 
@@ -208,35 +216,42 @@ export type MutationCreateDocumentArgs = {
 };
 
 
-export type MutationUpdateDocsArgs = {
+export type MutationUpdateComponentArgs = {
   relativePath: Scalars['String'];
-  params: DocsMutation;
+  params: ComponentMutation;
 };
 
 
-export type MutationCreateDocsArgs = {
+export type MutationCreateComponentArgs = {
   relativePath: Scalars['String'];
-  params: DocsMutation;
+  params: ComponentMutation;
 };
 
 export type DocumentMutation = {
-  docs?: InputMaybe<DocsMutation>;
+  component?: InputMaybe<ComponentMutation>;
 };
 
-export type DocsMutation = {
-  body?: InputMaybe<Scalars['String']>;
+export type ComponentPageIntroMutation = {
+  type?: InputMaybe<Scalars['String']>;
+  name?: InputMaybe<Scalars['String']>;
+  coverImage?: InputMaybe<Scalars['String']>;
+  introduction?: InputMaybe<Scalars['String']>;
 };
 
-export type DocsPartsFragment = { __typename?: 'Docs', body?: string | null };
+export type ComponentMutation = {
+  pageIntro?: InputMaybe<ComponentPageIntroMutation>;
+};
 
-export type DocsQueryVariables = Exact<{
+export type ComponentPartsFragment = { __typename?: 'Component', pageIntro?: { __typename: 'ComponentPageIntro', type?: string | null, name?: string | null, coverImage?: string | null, introduction?: string | null } | null };
+
+export type ComponentQueryVariables = Exact<{
   relativePath: Scalars['String'];
 }>;
 
 
-export type DocsQuery = { __typename?: 'Query', docs: { __typename?: 'Docs', id: string, body?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type ComponentQuery = { __typename?: 'Query', component: { __typename?: 'Component', id: string, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, pageIntro?: { __typename: 'ComponentPageIntro', type?: string | null, name?: string | null, coverImage?: string | null, introduction?: string | null } | null } };
 
-export type DocsConnectionQueryVariables = Exact<{
+export type ComponentConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']>;
   after?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Float']>;
@@ -245,16 +260,22 @@ export type DocsConnectionQueryVariables = Exact<{
 }>;
 
 
-export type DocsConnectionQuery = { __typename?: 'Query', docsConnection: { __typename?: 'DocsConnection', totalCount: number, edges?: Array<{ __typename?: 'DocsConnectionEdges', node?: { __typename?: 'Docs', id: string, body?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type ComponentConnectionQuery = { __typename?: 'Query', componentConnection: { __typename?: 'ComponentConnection', totalCount: number, edges?: Array<{ __typename?: 'ComponentConnectionEdges', node?: { __typename?: 'Component', id: string, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, pageIntro?: { __typename: 'ComponentPageIntro', type?: string | null, name?: string | null, coverImage?: string | null, introduction?: string | null } | null } | null } | null> | null } };
 
-export const DocsPartsFragmentDoc = gql`
-    fragment DocsParts on Docs {
-  body
+export const ComponentPartsFragmentDoc = gql`
+    fragment ComponentParts on Component {
+  pageIntro {
+    __typename
+    type
+    name
+    coverImage
+    introduction
+  }
 }
     `;
-export const DocsDocument = gql`
-    query docs($relativePath: String!) {
-  docs(relativePath: $relativePath) {
+export const ComponentDocument = gql`
+    query component($relativePath: String!) {
+  component(relativePath: $relativePath) {
     ... on Document {
       _sys {
         filename
@@ -266,13 +287,13 @@ export const DocsDocument = gql`
       }
       id
     }
-    ...DocsParts
+    ...ComponentParts
   }
 }
-    ${DocsPartsFragmentDoc}`;
-export const DocsConnectionDocument = gql`
-    query docsConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String) {
-  docsConnection(
+    ${ComponentPartsFragmentDoc}`;
+export const ComponentConnectionDocument = gql`
+    query componentConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String) {
+  componentConnection(
     before: $before
     after: $after
     first: $first
@@ -293,20 +314,20 @@ export const DocsConnectionDocument = gql`
           }
           id
         }
-        ...DocsParts
+        ...ComponentParts
       }
     }
   }
 }
-    ${DocsPartsFragmentDoc}`;
+    ${ComponentPartsFragmentDoc}`;
 export type Requester<C= {}> = <R, V>(doc: DocumentNode, vars?: V, options?: C) => Promise<R>
   export function getSdk<C>(requester: Requester<C>) {
     return {
-      docs(variables: DocsQueryVariables, options?: C): Promise<{data: DocsQuery, variables: DocsQueryVariables, query: string}> {
-        return requester<{data: DocsQuery, variables: DocsQueryVariables, query: string}, DocsQueryVariables>(DocsDocument, variables, options);
+      component(variables: ComponentQueryVariables, options?: C): Promise<{data: ComponentQuery, variables: ComponentQueryVariables, query: string}> {
+        return requester<{data: ComponentQuery, variables: ComponentQueryVariables, query: string}, ComponentQueryVariables>(ComponentDocument, variables, options);
       },
-    docsConnection(variables?: DocsConnectionQueryVariables, options?: C): Promise<{data: DocsConnectionQuery, variables: DocsConnectionQueryVariables, query: string}> {
-        return requester<{data: DocsConnectionQuery, variables: DocsConnectionQueryVariables, query: string}, DocsConnectionQueryVariables>(DocsConnectionDocument, variables, options);
+    componentConnection(variables?: ComponentConnectionQueryVariables, options?: C): Promise<{data: ComponentConnectionQuery, variables: ComponentConnectionQueryVariables, query: string}> {
+        return requester<{data: ComponentConnectionQuery, variables: ComponentConnectionQueryVariables, query: string}, ComponentConnectionQueryVariables>(ComponentConnectionDocument, variables, options);
       }
     };
   }
