@@ -29,7 +29,7 @@ const Custom404 = ({path, ...props}: LayoutProps) => (
           headline="Page not found"
           description={
             <>
-              We can&apos;t seem to find what you&apos;re looking for. If you
+              We can&apos;t seem to find what you&apos;re looking for If you
               typed in the website address, please check it and try again.
               <br />
               <br />
