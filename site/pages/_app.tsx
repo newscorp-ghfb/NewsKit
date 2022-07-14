@@ -11,6 +11,7 @@ import {HeadNextSeo} from '../components/head-next-seo/head-next-seo';
 import {PageLoadInstrumentation} from '../components/page-load-instrumentation';
 import {ThemeMode} from '../context';
 import {docsThemeLight, docsThemeDark} from '../theme/doc-theme';
+import TinaProvider from '../../.tina/components/TinaDynamicProvider';
 
 const DARK_MEDIA_QUERY = '(prefers-color-scheme: dark)';
 const STORAGE_KEY_NAME = 'newskit-docs-theme';
@@ -126,7 +127,7 @@ export default class MyApp extends App<Props, State> {
     ];
 
     return (
-      <>
+      <TinaProvider>
         <HeadNextSeo
           description="NewsKit design system - components and guidelines to 
           help increase the speed of creation and innovation in digital teams."
@@ -152,7 +153,7 @@ export default class MyApp extends App<Props, State> {
             </ThemeMode.Provider>
           </ThemeProvider>
         </InstrumentationProvider>
-      </>
+      </TinaProvider>
     );
   }
 }

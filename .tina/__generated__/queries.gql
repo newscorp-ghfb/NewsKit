@@ -1,0 +1,44 @@
+query docs($relativePath: String!) {
+  docs(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...DocsParts
+  }
+}
+
+query docsConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String) {
+  docsConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+  ) {
+    totalCount
+    edges {
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...DocsParts
+      }
+    }
+  }
+}
