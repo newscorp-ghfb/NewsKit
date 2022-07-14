@@ -454,6 +454,7 @@ export const AudioPlayer = () => (
   </StyledPage>
 );
 AudioPlayer.storyName = 'audio-player';
+AudioPlayer.eyes = {waitBeforeCapture: 5000};
 
 export const AudioSubComponents = () => (
   <StyledPage>
