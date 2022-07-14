@@ -609,6 +609,7 @@ export const AudioPlayerWithInitialProps = () => {
 };
 
 AudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
+AudioPlayerWithInitialProps.eyes = {waitBeforeCapture: 5000};
 
 export const AudioPlayerOverrides = () => {
   const breakpointKey = useBreakpointKey();
