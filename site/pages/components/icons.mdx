@@ -6,6 +6,7 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Code} from '../../components/code';
 import {CommonLogicalMarginPropsMDX} from '../../components/component-api/common-logical-props';
+import {InlineMessage, Link} from 'newskit';
 
 import {
   IconFilledFacebook,
@@ -38,6 +39,10 @@ Icons can be used to enhance other elements and content, as well as used inside 
 | IconFilledTwitter      |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledTwitter} />    |
 | IconFilledWhatsApp     |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledWhatsApp} />   |
 | IconFilledFigma        |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledFigma} />      |
+
+<InlineMessage title="Warning" overrides={{stylPreset: 'inlineMessageNegative'}}>
+  From version newskit@6 we don't export emotion icons anymore.<br /> Please read bellow how to to import and use emotions icons in your project.
+</InlineMessage>
 
 ## Props
 
@@ -143,6 +148,23 @@ export const IconFilledFacebook = customToNewsKitIcon(
 );
  `}
 </Code>
+
+## Using Emotion icons
+
+From version `newskit@6.0.0` we do not export emotion-icons anymore. In order to contunie using these icons you will need to import them directly from `emotion-icons` package and covert them to NewsKit icons using `customToNewsKitIcon` utility function. 
+
+You can find the list of available icons in the <Link href="https://emotion-icons.dev/" target="_blank">emotion-icons.dev</Link> page.
+
+<Code>
+  {`
+    import AccountTree from '@emotion-icons/material/AccountTree';
+    const IconFilledAccountTree = customToNewsKitIcon(
+      'IconFilledAccountTree',
+      AccountTree,
+    );
+  `}
+</Code>
+
 
 ## Rationale
 
