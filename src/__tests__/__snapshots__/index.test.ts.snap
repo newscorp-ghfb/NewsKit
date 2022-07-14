@@ -95,6 +95,7 @@ Array [
   "ParagraphDropCap",
   "ParagraphText",
   "PopoutButton",
+  "Popover",
   "RadioButton",
   "RadioGroup",
   "ScreenReaderOnly",
