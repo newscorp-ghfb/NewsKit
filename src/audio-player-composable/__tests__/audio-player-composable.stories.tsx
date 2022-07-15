@@ -454,6 +454,7 @@ export const AudioPlayer = () => (
   </StyledPage>
 );
 AudioPlayer.storyName = 'audio-player';
+AudioPlayer.eyes = {waitBeforeCapture: 5000};
 
 export const AudioSubComponents = () => (
   <StyledPage>
@@ -608,6 +609,7 @@ export const AudioPlayerWithInitialProps = () => {
 };
 
 AudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
+AudioPlayerWithInitialProps.eyes = {waitBeforeCapture: 5000};
 
 export const AudioPlayerOverrides = () => {
   const breakpointKey = useBreakpointKey();
