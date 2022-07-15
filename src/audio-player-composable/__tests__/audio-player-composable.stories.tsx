@@ -11,6 +11,7 @@ import {
   AudioPlayerSkipPreviousButton,
   AudioPlayerVolumeControl,
   MuteButtonIconProps,
+  AudioPlayerPlaybackSpeedControl,
 } from '..';
 import {
   StorybookHeading,
@@ -170,16 +171,16 @@ export default {
 };
 
 const fullAudioPlayerAreasDesktop = `
-  seekBar     seekBar   seekBar   seekBar   seekBar   seekBar   seekBar
-  currentTime none      none      none      none      none      totalTime
-  volume      prev      backward  play      forward   next      link
+  seekBar     seekBar   seekBar   seekBar   seekBar   seekBar      seekBar      seekBar
+  currentTime none      none      none      none      none      none      totalTime
+  volume      prev      backward  play      forward   next      playbackSpeed      link
  `;
 
 const fullAudioPlayerAreasMobile = `
-  seekBar     seekBar   seekBar   seekBar   seekBar   seekBar
-  currentTime none      none      none      link      totalTime  
-  volume      prev      backward  play      forward   next
- `;
+ seekBar     seekBar   seekBar   seekBar   seekBar   seekBar
+ currentTime none      none      playbackSpeed      link      totalTime
+ volume      prev      backward  play      forward   next
+`;
 
 const fullAudioPlayerLiveAreasDesktop = `
   volume      prev   backward   play   forward   next   live   link
@@ -202,7 +203,7 @@ const AudioPlayerFullRecorded = (props: {
       <GridLayout
         columns={{
           xs: 'auto 1fr auto auto auto 1fr',
-          md: '50px 1fr auto auto auto 1fr 100px',
+          md: '50px 1fr auto auto auto 1fr 50px 50px',
         }}
         rowGap="space040"
         columnGap="space040"
@@ -259,9 +260,16 @@ const AudioPlayerFullRecorded = (props: {
               />
             </Areas.TotalTime>
 
+            <Areas.PlaybackSpeed alignSelf="center" justifySelf="end">
+              <Hidden xs sm>
+                <AudioPlayerPlaybackSpeedControl useModal={{md: true}} />
+              </Hidden>
+            </Areas.PlaybackSpeed>
+
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
+                  size={ButtonSize.Medium}
                   aria-label="Open popout player"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
                   onClick={() => {
@@ -294,7 +302,7 @@ const AudioPlayerFullLive = (props: {
       <GridLayout
         columns={{
           xs: 'auto 1fr auto auto auto 1fr',
-          md: '50px 1fr auto auto auto 1fr 42px 42px',
+          md: '50px 1fr auto auto auto 1fr 60px 60px',
         }}
         columnGap="space040"
         areas={{
@@ -348,6 +356,7 @@ const AudioPlayerFullLive = (props: {
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
+                  size={ButtonSize.Medium}
                   aria-label="Open popout player"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
                   onClick={() => {
@@ -377,7 +386,7 @@ const AudioPlayerInlineRecorded = (props: {
   return (
     <AudioPlayerComposable src={AUDIO_SRC} {...props}>
       <GridLayout
-        columns="auto auto 40px 1fr 40px"
+        columns="auto auto 40px 1fr auto auto"
         columnGap="space040"
         alignItems="center"
       >
@@ -402,6 +411,9 @@ const AudioPlayerInlineRecorded = (props: {
           <AudioPlayerTimeDisplay
             format={({duration}) => calculateTime(duration)}
           />
+        </GridLayoutItem>
+        <GridLayoutItem column="6/7" row="4/5">
+          <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}} />
         </GridLayoutItem>
       </GridLayout>
     </AudioPlayerComposable>
@@ -442,12 +454,11 @@ export const AudioPlayer = () => (
   </StyledPage>
 );
 AudioPlayer.storyName = 'audio-player';
+AudioPlayer.eyes = {waitBeforeCapture: 5000};
 
 export const AudioSubComponents = () => (
   <StyledPage>
     <StorybookHeading>Audio Player - subcomponents</StorybookHeading>
-    <StorybookSubHeading>TimeDisplay</StorybookSubHeading>
-    <br />
 
     <AudioPlayerComposable
       src={AUDIO_SRC}
@@ -455,8 +466,8 @@ export const AudioSubComponents = () => (
     >
       <GridLayout
         columns="1fr 1fr 1fr"
-        rows="1fr 1fr 1fr"
-        rowGap="10px"
+        rows="1fr 1fr 1fr 1fr"
+        rowGap="16px"
         columnGap="20px"
       >
         <GridLayoutItem>
@@ -485,9 +496,7 @@ export const AudioSubComponents = () => (
         <GridLayoutItem>
           <StorybookSubHeading>Play/Pause</StorybookSubHeading>
           <AudioPlayerPlayPauseButton
-            onClick={() => {
-              console.log('customer click function');
-            }}
+            onClick={() => console.log('customer click function')}
           />
         </GridLayoutItem>
         <GridLayoutItem>
@@ -508,26 +517,33 @@ export const AudioSubComponents = () => (
         </GridLayoutItem>
         <GridLayoutItem>
           <StorybookSubHeading>Replay</StorybookSubHeading>
-
           <AudioPlayerReplayButton />
         </GridLayoutItem>
-      </GridLayout>
-      <StorybookSubHeading>SeekBar</StorybookSubHeading> <AudioPlayerSeekBar />
-      <GridLayout columns="1fr 1fr 1fr" rowGap="10px" columnGap="20px">
+        <GridLayoutItem>
+          <StorybookSubHeading>Playback Speed (modal)</StorybookSubHeading>
+          <AudioPlayerPlaybackSpeedControl useModal />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Playback Speed (popover)</StorybookSubHeading>
+          <AudioPlayerPlaybackSpeedControl />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Collapsed Volume Control</StorybookSubHeading>
+          <AudioPlayerVolumeControl collapsed />
+        </GridLayoutItem>
         <GridLayoutItem>
           <StorybookSubHeading>Volume Control</StorybookSubHeading>
           <AudioPlayerVolumeControl />
         </GridLayoutItem>
-
         <GridLayoutItem>
           <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
           <VerticalContainer>
             <AudioPlayerVolumeControl layout="vertical" />
           </VerticalContainer>
         </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>collapsed Volume Control</StorybookSubHeading>
-          <AudioPlayerVolumeControl collapsed />
+        <GridLayoutItem column="1/-1">
+          <StorybookSubHeading>SeekBar</StorybookSubHeading>
+          <AudioPlayerSeekBar />
         </GridLayoutItem>
       </GridLayout>
     </AudioPlayerComposable>
@@ -593,6 +609,7 @@ export const AudioPlayerWithInitialProps = () => {
 };
 
 AudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
+AudioPlayerWithInitialProps.eyes = {waitBeforeCapture: 5000};
 
 export const AudioPlayerOverrides = () => {
   const breakpointKey = useBreakpointKey();
@@ -746,10 +763,22 @@ export const AudioPlayerOverrides = () => {
                     format={({duration}) => calculateTime(duration)}
                   />
                 </Areas.TotalTime>
+                <Areas.PlaybackSpeed alignSelf="center">
+                  <AudioPlayerPlaybackSpeedControl
+                    buttonSize={ButtonSize.Medium}
+                    overrides={{
+                      iconButton: {
+                        stylePreset: 'customButtonStylePreset',
+                      },
+                    }}
+                    useModal={{md: true}}
+                  />
+                </Areas.PlaybackSpeed>
 
                 <Areas.Link alignSelf="center" justifySelf="end">
                   <Hidden xs sm>
                     <IconButton
+                      size={ButtonSize.Medium}
                       aria-label="Open popout player"
                       href="https://www.newskit.co.uk/"
                       overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
@@ -1000,6 +1029,7 @@ export const AudioPlayerKeyboard = () => (
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
+                  size={ButtonSize.Medium}
                   aria-label="Open popout player"
                   href="https://www.newskit.co.uk/"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}

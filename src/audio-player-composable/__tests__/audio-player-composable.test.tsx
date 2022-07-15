@@ -7,7 +7,7 @@ import {AudioPlayerComposableProps} from '../types';
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
 import seekBarStylePresets from '../components/seek-bar/style-presets';
-import {Button} from '../../button';
+import {Button, ButtonSize} from '../../button';
 import {
   AudioPlayerComposable,
   AudioPlayerTimeDisplay,
@@ -18,6 +18,7 @@ import {
   AudioPlayerReplayButton,
   AudioPlayerSeekBar,
   AudioPlayerVolumeControl,
+  AudioPlayerPlaybackSpeedControl,
 } from '..';
 
 const version = '0.10.0';
@@ -103,6 +104,40 @@ const AudioPropsAndVolumeControlOverridenShortcuts: AudioPlayerComposableProps =
   children: (
     <>
       <AudioPlayerVolumeControl keyboardShortcuts={{muteToggle: 'y'}} />
+    </>
+  ),
+};
+
+const AudioPropsAndPlaybackSpeedPopover: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  children: (
+    <>
+      <AudioPlayerPlaybackSpeedControl />
+    </>
+  ),
+};
+
+const AudioPropsAndPlaybackSpeedModal: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  children: (
+    <>
+      <AudioPlayerPlaybackSpeedControl useModal />
+    </>
+  ),
+};
+
+const AudioPropsAndPlaybackSpeedWithOverrides: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  children: (
+    <>
+      <AudioPlayerPlaybackSpeedControl
+        buttonSize={ButtonSize.Medium}
+        overrides={{
+          iconButton: {
+            stylePreset: 'customButtonStylePreset',
+          },
+        }}
+      />
     </>
   ),
 };
@@ -802,6 +837,81 @@ describe('Audio Player Composable', () => {
     });
   });
 
+  describe('Playback Speed', () => {
+    // ResizeObserver is not implemented by JSDom but is needed by the lib
+    const mockResizeObserver = jest.fn(() => ({
+      observe: jest.fn(),
+      disconnect: jest.fn(),
+    }));
+
+    beforeAll(() => {
+      // @ts-ignore
+      global.ResizeObserver = mockResizeObserver;
+    });
+
+    afterAll(() => {
+      // @ts-ignore
+      global.ResizeObserver = null;
+    });
+
+    it('should render correctly in popover', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedPopover,
+      );
+
+      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('should render correctly in modal', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedModal,
+      );
+      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('should render correctly with overrides', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedWithOverrides,
+      );
+
+      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('should close modal on X click', () => {
+      const {asFragment, getByTestId, getByLabelText} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedModal,
+      );
+
+      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      fireEvent.click(getByLabelText('close'));
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('should update playback speed', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedPopover,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      expect(audioElement.playbackRate).toEqual(1);
+      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      userEvent.keyboard('[ArrowUp][Enter]');
+      expect(audioElement.playbackRate).toEqual(0.8);
+    });
+  });
+
   describe('VolumeControl', () => {
     it('calls event handler passed from the props', () => {
       const onVolumeChange = jest.fn();
@@ -964,7 +1074,7 @@ describe('Audio Player Composable', () => {
         },
       });
       const recordedVolumeControlOverrides: AudioPlayerComposableProps = {
-        src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+        src: '/audio_file_1.mp3',
         autoPlay: false,
         children: (
           <AudioPlayerVolumeControl
@@ -1008,6 +1118,7 @@ describe('Audio Player Composable', () => {
       expect(asFragment()).toMatchSnapshot();
     });
   });
+
   describe('initialTime prop', () => {
     it('should render correctly with initial time', () => {
       const {getByTestId} = renderWithTheme(
