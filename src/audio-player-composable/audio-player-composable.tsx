@@ -33,6 +33,7 @@ import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
 import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
 import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
 import {AudioPlayerVolumeControlProps} from './components/volume-control/types';
+import {AudioPlayerPlaybackSpeedControlProps} from './components/playback-speed-control';
 
 const defaultKeyboardShortcuts = {
   jumpToStart: ['0', 'Home'],
@@ -61,6 +62,7 @@ export const AudioPlayerComposable = ({
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [volume, setVolume] = useState(0);
+  const [playbackSpeed, setPlaybackSpeed] = useState(1);
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [displayDuration, setDisplayDuration] = useState(0);
@@ -89,6 +91,7 @@ export const AudioPlayerComposable = ({
     onClickForward,
     onClickBackward,
     onChangeVolumeSlider,
+    onPlaybackSpeedChange,
   } = useAudioFunctions({
     autoPlay,
     audioRef,
@@ -104,6 +107,7 @@ export const AudioPlayerComposable = ({
     duration,
     setDuration,
     setVolume,
+    setPlaybackSpeed,
     src,
     live,
   } as AudioFunctionDependencies);
@@ -234,6 +238,21 @@ export const AudioPlayerComposable = ({
     [volume, initialVolume, onChangeVolumeSlider],
   );
 
+  const getPlaybackSpeedControlProps = useCallback(
+    ({
+      overrides,
+      buttonSize,
+      useModal = {},
+    }: AudioPlayerPlaybackSpeedControlProps) => ({
+      overrides: overrides || {},
+      onChange: onPlaybackSpeedChange,
+      buttonSize,
+      useModal,
+      playbackSpeed,
+    }),
+    [onPlaybackSpeedChange, playbackSpeed],
+  );
+
   const getSkipPreviousButtonProps = useCallback(
     ({
       onClick: consumerOnClick,
@@ -285,6 +304,7 @@ export const AudioPlayerComposable = ({
       getForwardButtonProps,
       getReplayButtonProps,
       getVolumeControlProps,
+      getPlaybackSpeedControlProps,
     }),
     [
       getVolumeControlProps,
@@ -296,6 +316,7 @@ export const AudioPlayerComposable = ({
       getSkipNextButtonProps,
       getForwardButtonProps,
       getReplayButtonProps,
+      getPlaybackSpeedControlProps,
     ],
   );
 
