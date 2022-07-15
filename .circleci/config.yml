@@ -604,7 +604,7 @@ jobs:
           name: 'Setup Applitools environment variables'
           <<: *applitools_defaults
       - run:
-          name: Run Applitools Storybook Component Tests
+          name: Run Applitools Storybook Component Tests!
           command: make comps_visual_test
       - run:
           name: Close the Applitools Batch
