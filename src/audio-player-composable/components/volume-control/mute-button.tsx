@@ -13,19 +13,9 @@ const toggleMute = (
 
 const DefaultIcon = ({volume, overrides}: MuteButtonIconProps) =>
   volume === 0 ? (
-    <IconFilledVolumeOff
-      overrides={{
-        size: 'iconSize020',
-        ...overrides,
-      }}
-    />
+    <IconFilledVolumeOff overrides={overrides} />
   ) : (
-    <IconFilledVolumeUp
-      overrides={{
-        size: 'iconSize020',
-        ...overrides,
-      }}
-    />
+    <IconFilledVolumeUp overrides={overrides} />
   );
 
 export const MuteButton: React.FC<MuteButtonProps> = ({

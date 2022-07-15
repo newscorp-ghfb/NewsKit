@@ -10,6 +10,11 @@ import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/type
 import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
 import {AudioPlayerTimeFormatFn} from './components/time-display/types';
 import {ButtonSize} from '../button';
+import {
+  AudioPlayerPlaybackSpeedControlOverridesProps,
+  AudioPlayerPlaybackSpeedControlProps,
+} from './components/playback-speed-control/types';
+import {MQ} from '../utils';
 
 export interface AudioFunctionDependencies {
   autoPlay: boolean;
@@ -28,6 +33,7 @@ export interface AudioFunctionDependencies {
   setCurrentTime: React.Dispatch<React.SetStateAction<number>>;
   setPlayState: React.Dispatch<React.SetStateAction<boolean>>;
   setVolume: React.Dispatch<React.SetStateAction<number>>;
+  setPlaybackSpeed: React.Dispatch<React.SetStateAction<number>>;
   setDuration: React.Dispatch<React.SetStateAction<number>>;
   setDisplayDuration: React.Dispatch<React.SetStateAction<number>>;
   setBuffered: React.Dispatch<React.SetStateAction<TimeRanges | undefined>>;
@@ -71,6 +77,15 @@ export interface AudioPlayerProviderContext {
     volume: number;
     initialVolume: 0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1;
     muteButtonSize?: ButtonSize;
+  };
+  getPlaybackSpeedControlProps: (
+    props: AudioPlayerPlaybackSpeedControlProps,
+  ) => {
+    overrides: AudioPlayerPlaybackSpeedControlOverridesProps;
+    onChange: (value: number) => void;
+    useModal: MQ<boolean>;
+    playbackSpeed: number;
+    buttonSize?: ButtonSize;
   };
   getSkipPreviousButtonProps: (
     props: AudioPlayerSkipPreviousButtonProps,
