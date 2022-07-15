@@ -301,6 +301,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       introduction: (
         <>
           <UnorderedList
+            markerAlign="start"
             listItemMarker={IconFilledCircle}
             overrides={unorderedListOverrides}
           >
