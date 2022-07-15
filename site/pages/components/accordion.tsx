@@ -308,6 +308,204 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
         </>
       ),
     }}
+    componentAPI={{
+      components: [
+        {
+          title: 'Accordion',
+          propsSummary:
+            'The Accordion has a range of props that can be used to define an appropriate experience for different use cases.',
+          overridesSummary:
+            'The Accordion has a range of predefined elements and attributes that can be overridden to define its appearance.',
+          propsRows: [
+            {
+              name: 'children',
+              type: "Exclude<React.ReactNode, 'undefined'>",
+              description: `Displays supplied content in the open Accordion panel.`,
+              required: undefined,
+            },
+            {
+              name: 'expanded',
+              type: 'boolean',
+              default: 'false',
+              description: `Determines if the panel is expanded or collapsed. If true, the panel is open.`,
+              required: undefined,
+            },
+            {
+              name: 'disabled',
+              type: 'boolean',
+              default: 'false',
+              description: `If true, renders the Accordion in a disabled state.`,
+              required: undefined,
+            },
+            {
+              name: 'header',
+              type: "Exclude<React.ReactNode, 'undefined'>",
+              description: `Displays the content of the header.`,
+              required: undefined,
+            },
+            {
+              name: 'headerAs',
+              type: "'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';",
+              default: 'h3',
+              description: `Change the underlying HTML element on the header.`,
+              required: undefined,
+            },
+
+            {
+              name: 'label',
+              type: 'string',
+              description: `Additional label on the accordion.`,
+              required: undefined,
+            },
+            {
+              name: 'ariaControls',
+              type: 'string',
+              description: `HTML aria-controls attribute.`,
+              required: undefined,
+            },
+            {
+              name: 'id',
+              type: 'string',
+              description: `HTML id attribute.`,
+              required: undefined,
+            },
+            {
+              name: 'expanded',
+              type: 'boolean',
+              default: 'false',
+              description: `Determines if the accordion is expanded or collapsed.`,
+              required: undefined,
+            },
+            {
+              name: 'onChange',
+              type: '(expanded: boolean) => void',
+              description: `Emit event when accordion changes its state, expanded/collapsed.`,
+              required: undefined,
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'accordion.header.transitionPreset',
+              type: 'MQ<string>',
+              default: 'backgroundColorChange',
+              description:
+                'If provided, overrides the transitionPreset of the Accordion header.',
+            },
+            {
+              attribute: 'accordion.header.minWidth',
+              type: 'MQ<string>',
+              description:
+                'If provided, this overrides the minWidth property of the Accordion panel.',
+            },
+            {
+              attribute: 'accordion.header.minHeight',
+              type: 'MQ<string>',
+              description:
+                'If provided, this overrides the minHeight property of the Accordion panel.',
+            },
+
+            {
+              attribute: 'accordion.header.stylePreset',
+              type: 'MQ<string>',
+              default: 'accordionHeader',
+              description:
+                'If provided, overrides the stylePreset of the Accordion header.',
+            },
+            {
+              attribute: 'accordion.header.typographyPreset',
+              type: 'MQ<string>',
+              default: 'utilityButton030',
+              description:
+                'If provided, overrides the typographyPreset of the Accordion header.',
+            },
+            {
+              attribute: 'accordion.header.spaceInline',
+              type: 'MQ<string>',
+              default: 'space020',
+              description:
+                'If provided, overrides the inline space of the Accordion header.',
+            },
+            {
+              attribute: 'accordion.header.indicatorIcon',
+              type: 'Override<AccordionIconProps>',
+              description: 'If provided, overrides icon.',
+            },
+            {
+              attribute: 'accordion.header.indicatorIcon.stylePreset',
+              type: 'MQ<string>',
+              default: 'iconDefault',
+              description:
+                'If provided, overrides the stylePreset of the indicator icon.',
+            },
+            {
+              attribute: 'accordion.header.indicatorIcon.size',
+              type: 'MQ<string>',
+              default: 'iconSize020',
+              description:
+                'If provided, overrides the size of the indicator icon.',
+            },
+            {
+              attribute: 'accordion.header.label.typographyPreset',
+              type: 'MQ<string>',
+              default: 'utilityButton030',
+              description:
+                'If provided, overrides the typographyPreset of the indicator label.',
+            },
+
+            {
+              attribute: 'accordion.panel.stylePreset',
+              type: 'MQ<string>',
+              default: 'accordionPanel',
+              description:
+                'If provided, overrides the stylePreset of the Accordion panel.',
+            },
+            {
+              attribute: 'accordion.panel.paddingBlock',
+              type: 'MQ<string>',
+              default: 'spaceInset030',
+            },
+            {
+              attribute: 'accordion.panel.paddingInline',
+              type: 'MQ<string>',
+              default: 'spaceInset030',
+            },
+          ],
+        },
+        {
+          title: 'Accordion Group',
+          summary:
+            'The Accordion Group has a range of props that can be used to define an appropriate experience for different use cases. Use this component to group Accordions together.',
+          propsRows: [
+            {
+              name: 'children',
+              type: "Exclude<React.ReactNode, 'undefined'>",
+              required: true,
+            },
+            {
+              name: 'defaultExpanded',
+              type: "number | number[] | 'all'",
+              description: `Defines the index of the initially expanded Accordion items (uncontrolled).`,
+            },
+            {
+              name: 'expanded',
+              type: "number | number[] | 'all'",
+              description: `Defines the index of the expanded Accordion items, when changing this value AccordionGroup state is updated (controlled).`,
+            },
+            {
+              name: 'expandSingle',
+              type: 'boolean',
+              default: 'false',
+              description: `Determines whether one or multiple items can be expanded at the same time. When true only one single accordion can be expanded.`,
+            },
+            {
+              name: 'onChange',
+              type: '(expanded: number[]) => void',
+              description: `Callback fired when expanded Accordions change.`,
+            },
+          ],
+        },
+      ],
+    }}
     compliance={{
       states: true,
       variations: true,
