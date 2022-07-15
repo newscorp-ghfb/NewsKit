@@ -10,7 +10,7 @@ import {ComponentPageTemplate} from '../../templates/component-page-template';
 const unorderedListOverrides = {
   spaceStack: 'space040',
   content: {
-    typographyPreset: 'editorialParagraph020',
+    typographyPreset: 'editorialParagraph030',
   },
 };
 
@@ -199,6 +199,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
           <br />
           <br />
           <UnorderedList
+            markerAlign="start"
             listItemMarker={IconFilledCircle}
             overrides={unorderedListOverrides}
           >
@@ -299,12 +300,19 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       title: 'SEO Considerations',
       introduction: (
         <>
-          Ensure all text, icons, and images are visible in the Accordion so
-          that information can be crawled and indexed.
-          <br />
-          <br />
-          The Accordion component and its content are rendered to the DOM, but
-          only visible to the user when the panel is open.
+          <UnorderedList
+            listItemMarker={IconFilledCircle}
+            overrides={unorderedListOverrides}
+          >
+            <>
+              Ensure all text, icons, and images are visible in the Accordion so
+              that information can be crawled and indexed.
+            </>
+            <>
+              The Accordion component and its content are rendered to the DOM,
+              but only visible to the user when the panel is open.
+            </>
+          </UnorderedList>
         </>
       ),
     }}
