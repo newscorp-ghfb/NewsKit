@@ -9,6 +9,7 @@ import {
   IconButton,
   IconOutlinedArrowForwardIos,
   useIntersection,
+  IconFilledImage
 } from 'newskit';
 import {Code} from '../code';
 import {ContentPrimary} from '../content-structure';
@@ -43,7 +44,7 @@ const Content = styled(Block)`
 
 const ContentItem = styled.div`
   box-sizing: border-box;
-  min-height: 70vh;
+  //min-height: 70vh;
   overflow: auto;
   padding: 10vh 0;
   scroll-snap-align: start;
@@ -110,9 +111,9 @@ export const Tutorial = ({steps, files}: TutorialProps) => {
           <TutorialStep {...step} onChange={setRangeAndFile} />
         ))}
       </Content>
-      <Tabs selectedIndex={files.findIndex(f => f.name === fileName)}>
+      <Tabs size="small" selectedIndex={files.findIndex(f => f.name === fileName)}>
         {files.map(({name, content}) => (
-          <Tab label={name}>
+          <Tab  label={<><IconFilledImage /> {name}</>}>
             <TabContent>
               <Code ranges={ranges}>{content}</Code>
             </TabContent>

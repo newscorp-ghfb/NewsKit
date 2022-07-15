@@ -188,7 +188,11 @@ const steps: TutorialStepProps[] = [
     ranges: [],
   },
 ];
-const files: TutorialFile[] = [{name: 'card.tsx', content: fileContent}];
+const files: TutorialFile[] = [
+  {name: 'card.tsx', content: fileContent},
+  {name: 'theme.tsx', content: fileContent},
+
+];
 
 const Page: React.FC<{
   toggleTheme: () => void;
