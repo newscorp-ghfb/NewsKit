@@ -851,7 +851,7 @@ jobs:
           name: Push config to flux repo
           command: |
             apk add --update npm
-            if [ << parameters.is_production_deployment >> ];
+            if [ << parameters.is_production_deployment >> = true ];
             then
               export DOCKER_TAG=$(node -p "require('./package.json').version")
             else
