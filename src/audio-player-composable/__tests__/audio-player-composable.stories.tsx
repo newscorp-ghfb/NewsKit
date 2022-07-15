@@ -449,6 +449,7 @@ export const AudioPlayer = () => (
     <StorybookSubHeading>Audio Player - inline recorded</StorybookSubHeading>
     <AudioPlayerInlineRecorded ariaLandmark="audio player inline recorded" />
     <br />
+    <br />
     <StorybookSubHeading>Audio Player - inline live</StorybookSubHeading>
     <AudioPlayerInlineLive ariaLandmark="audio player inline live" />
   </StyledPage>
