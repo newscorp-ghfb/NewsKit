@@ -1,89 +1,56 @@
 import React from 'react';
-import {staticRequest} from 'tinacms';
-import {useTina} from 'tinacms/dist/edit-state';
+import {GetStaticProps} from 'next';
+import matter from 'gray-matter';
+import fs from 'fs';
+import path from 'path';
+import yaml from 'js-yaml';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {LayoutProps} from '../../components/layout';
 
-const query = `query component($relativePath: String!) {
-  component(relativePath: $relativePath) {
-    ... on Document {
-      _sys {
-        filename
-        basename
-        breadcrumbs
-        path
-        relativePath
-        extension
-      }
-      id
-    }
-    pageIntro {
-      __typename
-      type
-      name
-      coverImage
-      introduction
-    }
-  }
-}
-`;
-
 interface ComponentProps {
   layoutProps: LayoutProps;
-  variables: object;
-  data: any;
+  title: string;
+  intro: {
+    type: string;
+    name: string;
+    introduction: string;
+    coverImage: string;
+  };
 }
 
-const BannerComponent = ({layoutProps, ...props}: ComponentProps) => {
-  // data passes though in production mode and data is updated to the sidebar data in edit-mode
-  const data = useTina({
-    query,
-    variables: props.variables,
-    data: props.data,
-  });
-
-  const {type, name, coverImage, introduction} = data.data.component.pageIntro;
-
-  return (
-    <ComponentPageTemplate
-      headTags={{
-        title: name,
-        description: introduction,
-      }}
-      pageIntroduction={{
-        type,
-        name,
-        hero: {
-          illustration: coverImage,
-        },
-        introduction,
-      }}
-      layoutProps={layoutProps}
-      componentDefaultsKey={name}
-    />
-  );
-};
+const BannerComponent = ({layoutProps, title, intro}: ComponentProps) => (
+  <ComponentPageTemplate
+    headTags={{
+      title,
+      description: 'introduction',
+    }}
+    pageIntroduction={{
+      type: intro.type,
+      name: intro.name,
+      hero: {
+        illustration: intro.coverImage,
+      },
+      introduction: intro.introduction,
+    }}
+    layoutProps={layoutProps}
+    componentDefaultsKey={title}
+  />
+);
 export default BannerComponent;
 
-export const getStaticProps = async (ctx: any) => {
-  const variables = {
-    relativePath: 'banner.mdx',
-  };
-  let data = {} as any;
-  try {
-    data = await staticRequest({
-      query,
-      variables,
-    });
-  } catch (error) {
-    console.log(error);
-    // swallow errors related to document creation
-  }
+export const getStaticProps: GetStaticProps = async () => {
+  const source = fs.readFileSync(
+    path.resolve(__dirname, '../../../../content/component.mdx'),
+    'utf8',
+  );
+  const {data} = matter(source, {
+    engines: {yaml: s => yaml.load(s, {schema: yaml.JSON_SCHEMA}) as object},
+  });
 
   return {
     props: {
-      data,
-      variables,
+      title: data.title,
+      intro: data.intro,
     },
   };
 };

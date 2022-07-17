@@ -15,8 +15,8 @@
     "node": ">=16.9.1"
   },
   "scripts": {
-    "dev": "concurrently --names \"src,storybook,graphql,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"tinacms server:start\" \"next site -p 8081\"",
-    "dev:docs": "yarn build:icons:dev && concurrently --names \"src,graphql,docs\" \"yarn build:ts --watch\" \"tinacms server:start\" \"next site -p 8081\"",
+    "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
+    "dev:docs": "yarn build:icons:dev && concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",
     "dev:storybook": "yarn build:icons:dev && start-storybook --ci -p 6006 -s ./fonts,./static",
     "eyes:storybook": "APPLITOOLS_SHOW_LOGS=true eyes-storybook --conf applitools.components.config.js",
     "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
@@ -92,7 +92,6 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/react-hooks": "^3.2.1",
     "@testing-library/user-event": "13.5.0",
-    "@tinacms/cli": "^0.60.28",
     "@types/card-validator": "^4.1.0",
     "@types/date-fns": "^2.6.0",
     "@types/debounce": "^1.2.0",
@@ -101,6 +100,7 @@
     "@types/isomorphic-fetch": "^0.0.35",
     "@types/jest": "^26.0.13",
     "@types/jest-matcher-utils": "^25.1.0",
+    "@types/js-yaml": "^4.0.5",
     "@types/jscodeshift": "^0.6.1",
     "@types/just-extend": "^1.1.0",
     "@types/memoize-one": "^4.1.1",
@@ -143,7 +143,9 @@
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "fast-glob": "^3.2.5",
+    "frontmatter-markdown-loader": "^3.7.0",
     "fs-extra": "^9.0.1",
+    "gray-matter": "^4.0.3",
     "http-server": "^0.12.3",
     "husky": "^2.7.0",
     "ignore": "^5.1.4",
@@ -156,6 +158,7 @@
     "jest-junit": "^11.1.0",
     "jest-matcher-utils": "^27.0.6",
     "jest-matchmedia-mock": "^1.1.0",
+    "js-yaml": "^4.1.0",
     "jscodeshift": "^0.6.4",
     "linkinator": "^2.14.4",
     "lint-staged": "^9.1.0",
@@ -212,11 +215,9 @@
     "react-hook-form": "^7.5.3",
     "react-hot-toast": "^1.0.2",
     "react-range": "^1.8.12",
-    "react-tinacms-editor": "^0.53.26",
     "react-transition-group": "^4.4.1",
     "react-virtual": "^2.10.4",
-    "styled-components": "^5.3.5",
-    "tinacms": "^0.68.13"
+    "styled-components": "^5.3.5"
   },
   "resolutions": {
     "@types/react": "17",

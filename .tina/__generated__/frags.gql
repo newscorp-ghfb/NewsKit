@@ -1,9 +1,0 @@
-fragment ComponentParts on Component {
-  pageIntro {
-    __typename
-    type
-    name
-    coverImage
-    introduction
-  }
-}

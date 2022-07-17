@@ -1,0 +1,36 @@
+backend:
+  name: github
+  branch: main
+media_folder: public/static
+public_folder: public/static
+collections:
+  - name: "pages"
+    label: "Pages"
+    file: 'content/component.mdx'
+    extension: "mdx"
+    format: "frontmatter"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+      - label: "intro"
+        name: "intro" 
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: "string"
+          - label: "Type"
+            name: "type"
+            widget: "string"
+          - label: "Cover Image"
+            name: "coverImage"
+            type: "image"
+          - label: "Introduction"
+            name: "introduction"
+            widget: "text"
+      - label: "Body"
+        name: "body", 
+        widget: "markdown"
