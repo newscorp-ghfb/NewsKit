@@ -4,7 +4,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {IconFilledTwitter, IconFilledMood} from '../../icons';
+import {IconFilledTwitter, IconFilledCircle} from '../../icons';
 import {Link} from '../../link';
 
 const listData = [
@@ -38,14 +38,14 @@ export const StoryUnorderedListWithMarker = () => (
   <>
     <StorybookHeading>Unordered list</StorybookHeading>
     <StorybookSubHeading>with markers</StorybookSubHeading>
-    <UnorderedList listItemMarker={IconFilledMood}>{listData}</UnorderedList>
+    <UnorderedList listItemMarker={IconFilledCircle}>{listData}</UnorderedList>
     <br />
     <StorybookSubHeading>
       with markers and overridden marker iconSize
     </StorybookSubHeading>
     <UnorderedList
       overrides={{marker: {size: 'iconSize020'}}}
-      listItemMarker={IconFilledMood}
+      listItemMarker={IconFilledCircle}
     >
       {listData}
     </UnorderedList>
@@ -68,15 +68,15 @@ export const StoryUnorderedListWithMarkerAlignment = () => {
       <StorybookSubHeading>
         with marker in the center (default)
       </StorybookSubHeading>
-      <UnorderedList listItemMarker={IconFilledMood}>
+      <UnorderedList listItemMarker={IconFilledCircle}>
         {multiLineListData}
       </UnorderedList>
       <StorybookSubHeading>with marker at the start</StorybookSubHeading>
-      <UnorderedList listItemMarker={IconFilledMood} markerAlign="start">
+      <UnorderedList listItemMarker={IconFilledCircle} markerAlign="start">
         {multiLineListData}
       </UnorderedList>
       <StorybookSubHeading>with marker at the end</StorybookSubHeading>
-      <UnorderedList listItemMarker={IconFilledMood} markerAlign="end">
+      <UnorderedList listItemMarker={IconFilledCircle} markerAlign="end">
         {multiLineListData}
       </UnorderedList>
     </>
@@ -96,7 +96,7 @@ export const StoryUnorderedListWithLogicalProps = () => (
         marginBlock: 'space060',
         marginInline: 'space080',
       }}
-      listItemMarker={IconFilledMood}
+      listItemMarker={IconFilledCircle}
     >
       {listData}
     </UnorderedList>

@@ -13,6 +13,7 @@ import {
 } from './styled';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {IconFilledCircle} from '../icons';
 
 const ThemelessUnorderedList: React.FC<UnorderedListProps> = ({
   children,
@@ -66,20 +67,27 @@ const ThemelessUnorderedList: React.FC<UnorderedListProps> = ({
         return (
           <StyledListItem>
             <StyledBlock spaceStack={itemSpaceToken}>
-              {ListItemMarker && (
-                <StyledMarkerBlock
-                  spaceInline={markerSpaceToken}
-                  aria-hidden="true"
-                  markerAlign={markerAlign}
-                >
+              <StyledMarkerBlock
+                spaceInline={markerSpaceToken}
+                aria-hidden="true"
+                markerAlign={markerAlign}
+              >
+                {ListItemMarker ? (
                   <ListItemMarker
                     overrides={{
                       size: markerSizeToken,
                       stylePreset: markerStylePresetToken,
                     }}
                   />
-                </StyledMarkerBlock>
-              )}
+                ) : (
+                  <IconFilledCircle
+                    overrides={{
+                      size: markerSizeToken,
+                      stylePreset: markerStylePresetToken,
+                    }}
+                  />
+                )}
+              </StyledMarkerBlock>
               <TextBlock
                 typographyPreset={contentTypographyPresetToken}
                 stylePreset={contentStylePresetToken}
