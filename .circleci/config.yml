@@ -83,6 +83,7 @@ applitools_defaults: &applitools_defaults
     export APPLITOOLS_DONT_CLOSE_BATCHES=true
     echo "export APPLITOOLS_BATCH_ID=${APPLITOOLS_BATCH_ID}" >> $BASH_ENV
     echo "export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}" >> $BASH_ENV
+    echo "export APPLITOOLS_BATCH_NAME=\"${CIRCLE_BRANCH}:${CIRCLE_SHA1:0:7} (${CIRCLE_PULL_REQUEST}, ${CIRCLE_BUILD_URL})\"" >> $BASH_ENV
 # ========== APPLITOOLS ENVIRONMENT VARIABLES END ==========
 executors:
   # A basic image with just raw Alpine on it that you can run commands on
@@ -294,6 +295,7 @@ commands:
       - run:
           name: Close the Applitools Batch
           command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
+          when: always
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
@@ -609,6 +611,7 @@ jobs:
       - run:
           name: Close the Applitools Batch
           command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
+          when: always
       - slack/notify:
           <<: *slack_notify
 
