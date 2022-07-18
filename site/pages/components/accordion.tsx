@@ -43,7 +43,6 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
     anatomy={{
       introduction:
         'The Accordion contains three required elements and no optional elements.',
-
       rows: [
         {
           name: 'Header',
@@ -246,7 +245,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
             description: 'Moves focus to the next focusable element',
           },
           {
-            command: ['Shift & Tab'],
+            command: ['Shift', 'Tab'],
             description: 'Moves focus to the previous focusable element',
           },
         ],
@@ -256,29 +255,30 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
         tableRows: [
           {
             element: 'button',
-            attribute: [
-              'aria-expanded="true"',
-              'aria-controls=”ID”',
-              'role="region"',
-            ],
-            value: '',
+            attribute: ['aria-expanded="true"'],
+            value: 'boolean',
             description: (
               <>
                 Set to true when the Accordion panel is expanded, otherwise set
                 to false.
-                <br />
-                <br />
-                Points to the ID of the panel which the header controls.
-                <br />
-                <br />
-                Creates a landmark for the current expanded accordion.
               </>
             ),
           },
           {
+            element: 'button',
+            attribute: 'aria-controls=”ID”',
+            description:
+              'Points to the ID of the panel which the header controls.',
+          },
+          {
+            element: 'button',
+            attribute: 'role="region"',
+            description:
+              'Creates a landmark for the current expanded accordion.',
+          },
+          {
             element: 'panel',
             attribute: 'aria-labelledby="IDREF"',
-            value: '',
             description: (
               <>
                 Defines the accessible name for the region element.
