@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
-    "dev:docs": "yarn build:icons:dev && concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",
+    "dev:docs": "yarn build:icons:dev && concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8082\"",
     "dev:storybook": "yarn build:icons:dev && start-storybook --ci -p 6006 -s ./fonts,./static",
     "eyes:storybook": "APPLITOOLS_SHOW_LOGS=true eyes-storybook --conf applitools.components.config.js",
     "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",

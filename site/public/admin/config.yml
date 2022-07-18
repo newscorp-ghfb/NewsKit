@@ -1,35 +1,37 @@
-local_backend: true
 backend:
   name: github
   branch: main
   repo: newscorp-ghfb/newskit/
+local_backend: true
 media_folder: public/static
 public_folder: public/static
 collections:
-  - name: "docs"
-    label: "Docs"
-    folder: 'content/'
+  - name: "pages"
+    label: "Pages"
+    folder: 'content/posts'
     extension: "mdx"
     format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
     fields:
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
       - label: "Title"
         name: "title"
         widget: "string"
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
-      - label: "intro"
-        name: "intro" 
-        fields:
-          - label: "Name"
-            name: "name"
-            widget: "string"
-          - label: "Type"
-            name: "type"
-            widget: "string"
-          - label: "Cover Image"
-            name: "coverImage"
-            type: "image"
-          - label: "Introduction"
-            name: "introduction"
-            widget: "text"
+        format: "YYYY-MM-DD"
+        dateFormat: "YYYY-MM-DD"
+        timeFormat: false
+      - label: "Type"
+        name: "type"
+        widget: "string"
+      - label: "Cover Image"
+        name: "coverImage"
+        type: "image"
+      - label: "Introduction"
+        name: "introduction"
+        widget: "text"
