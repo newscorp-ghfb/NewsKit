@@ -7,7 +7,7 @@ import {SelectButton} from './select-button';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {shouldRenderInModal} from './utils';
+import {checkBreakpointProp} from '../utils/check-breakpoint-prop';
 import {withMediaQueryProvider} from '../utils/hooks/use-media-query/context';
 import {useBreakpointKey} from '../utils/hooks/use-media-query';
 import {useVirtualizedList} from './use-virtualized-list';
@@ -36,7 +36,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     const localInputRef: React.RefObject<HTMLInputElement> = useRef(null);
     const panelRef: React.RefObject<HTMLDivElement> = useRef(null);
 
-    const renderInModal = shouldRenderInModal(useModal, useBreakpointKey());
+    const renderInModal = checkBreakpointProp(useModal, useBreakpointKey());
 
     const [isFocused, setIsFocused] = React.useState(false);
     const onSelectButtonFocus = React.useCallback(

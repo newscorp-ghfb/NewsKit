@@ -87,7 +87,7 @@ Scripts should be named using the following naming convention:
 
 * `serve:docs` -> starts a simple http server to serve the documentation site in public/.
 
-* `serve:storybook` -> serves the storybook as static files
+* `serve:storybook` -> serves the storybook as static files.
 
 ## Utils
 
