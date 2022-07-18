@@ -4,7 +4,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {IconFilledTwitter, IconFilledCircle} from '../../icons';
+import {IconFilledTwitter, IconFilledMood} from '../../icons';
 import {Link} from '../../link';
 
 const listData = [
@@ -37,15 +37,15 @@ StoryUnorderedListDefault.storyName = 'unordered-list-default';
 export const StoryUnorderedListWithMarker = () => (
   <>
     <StorybookHeading>Unordered list</StorybookHeading>
-    <StorybookSubHeading>with markers</StorybookSubHeading>
-    <UnorderedList listItemMarker={IconFilledCircle}>{listData}</UnorderedList>
+    <StorybookSubHeading>with markers overridden marker</StorybookSubHeading>
+    <UnorderedList listItemMarker={IconFilledMood}>{listData}</UnorderedList>
     <br />
     <StorybookSubHeading>
       with markers and overridden marker iconSize
     </StorybookSubHeading>
     <UnorderedList
       overrides={{marker: {size: 'iconSize020'}}}
-      listItemMarker={IconFilledCircle}
+      listItemMarker={IconFilledMood}
     >
       {listData}
     </UnorderedList>
@@ -68,17 +68,11 @@ export const StoryUnorderedListWithMarkerAlignment = () => {
       <StorybookSubHeading>
         with marker in the center (default)
       </StorybookSubHeading>
-      <UnorderedList listItemMarker={IconFilledCircle}>
-        {multiLineListData}
-      </UnorderedList>
+      <UnorderedList>{multiLineListData}</UnorderedList>
       <StorybookSubHeading>with marker at the start</StorybookSubHeading>
-      <UnorderedList listItemMarker={IconFilledCircle} markerAlign="start">
-        {multiLineListData}
-      </UnorderedList>
+      <UnorderedList markerAlign="start">{multiLineListData}</UnorderedList>
       <StorybookSubHeading>with marker at the end</StorybookSubHeading>
-      <UnorderedList listItemMarker={IconFilledCircle} markerAlign="end">
-        {multiLineListData}
-      </UnorderedList>
+      <UnorderedList markerAlign="end">{multiLineListData}</UnorderedList>
     </>
   );
 };
@@ -96,7 +90,6 @@ export const StoryUnorderedListWithLogicalProps = () => (
         marginBlock: 'space060',
         marginInline: 'space080',
       }}
-      listItemMarker={IconFilledCircle}
     >
       {listData}
     </UnorderedList>
