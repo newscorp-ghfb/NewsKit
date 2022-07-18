@@ -517,6 +517,7 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1421,6 +1422,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1439,6 +1441,12 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-5 {
@@ -2144,6 +2152,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;

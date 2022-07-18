@@ -261,6 +261,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -279,6 +280,12 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -800,6 +807,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -818,6 +826,12 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -1341,6 +1355,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1359,6 +1374,12 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -1801,6 +1822,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 .emotion-1 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2313,6 +2335,7 @@ exports[`Drawer renders default 1`] = `
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2331,6 +2354,12 @@ exports[`Drawer renders default 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -3328,6 +3357,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -3346,6 +3376,12 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-5 {
@@ -3891,6 +3927,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -3909,6 +3946,12 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -4421,6 +4464,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -4938,6 +4982,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -4956,6 +5001,12 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -5477,6 +5528,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -5495,6 +5547,12 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -6016,6 +6074,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -6034,6 +6093,12 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -6555,6 +6620,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -6573,6 +6639,12 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -7094,6 +7166,7 @@ exports[`Drawer renders without close button 1`] = `
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -7112,6 +7185,12 @@ exports[`Drawer renders without close button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -7443,6 +7522,7 @@ exports[`Drawer renders without header 1`] = `
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -8194,6 +8274,7 @@ exports[`Drawer renders without overlay 1`] = `
 }
 
 .emotion-1 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -8212,6 +8293,12 @@ exports[`Drawer renders without overlay 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-3 {
@@ -8736,6 +8823,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -9169,6 +9257,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 .emotion-1 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
