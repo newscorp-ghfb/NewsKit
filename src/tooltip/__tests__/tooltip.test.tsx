@@ -17,15 +17,6 @@ describe('Tooltip', () => {
     content: 'hello',
     hidePointer: true,
   };
-  const disabledPropToolTip: TooltipProps = {
-    children: (
-      <button disabled type="submit">
-        Add
-      </button>
-    ),
-    content: 'hello',
-    hidePointer: true,
-  };
 
   // ResizeObserver is not implemented by JSDom but is needed by the lib
   const mockResizeObserver = jest.fn(() => ({
@@ -429,19 +420,6 @@ describe('Tooltip', () => {
       fireEvent.mouseEnter(button);
       expect(button.hasAttribute('aria-labelledby')).toBe(true);
     });
-  });
-  test('should throw a warning if disabled component is not wrapped in a span', async () => {
-    jest.spyOn(console, 'warn').mockImplementation();
-    const {asFragment, getByRole} = renderWithTheme(Tooltip, {
-      ...disabledPropToolTip,
-    });
-    fireEvent.mouseEnter(getByRole('button'));
-    await applyAsyncStyling();
-    // eslint-disable-next-line no-console
-    expect(console.warn).toHaveBeenCalledWith(
-      'When passing a component with disabled prop to Tooltip please remember to wrap it inside span element.',
-    );
-    expect(asFragment()).toMatchSnapshot();
   });
   test('should be controllable', () => {
     const Component = () => {

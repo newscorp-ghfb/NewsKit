@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {AriaAttributes, useEffect} from 'react';
+import {AriaAttributes} from 'react';
 import {
   FloatingContext,
   useDismiss,
@@ -31,18 +31,6 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     ]);
 
   const contentIsString = typeof content === 'string';
-
-  const showSpanWarning = (): void => {
-    if (process.env.NODE_ENV !== 'production' && children.props.disabled) {
-      // eslint-disable-next-line no-console
-      console.warn(
-        `When passing a component with disabled prop to Tooltip please remember to wrap it inside span element.`,
-      );
-    }
-  };
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => showSpanWarning(), []);
 
   const buildContextAriaAttributes: BuildAriaAttributesFn = ({
     floating: {id, open},
