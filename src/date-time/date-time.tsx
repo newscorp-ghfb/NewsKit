@@ -25,59 +25,60 @@ const StyledSuffix = StyledDateText;
 
 const defaultDateFormat = "MMMM d yyyy, h:mmaaaaa'm'";
 
-const ThemelessDateTime: React.FC<DateTimeProps> = ({
-  date,
-  dateFormat = defaultDateFormat,
-  prefix,
-  suffix,
-  overrides = {},
-}) => {
-  const theme = useTheme();
+const ThemelessDateTime = React.forwardRef<HTMLParagraphElement, DateTimeProps>(
+  (
+    {date, dateFormat = defaultDateFormat, prefix, suffix, overrides = {}},
+    ref,
+  ) => {
+    const theme = useTheme();
 
-  const getPresets = (path: string) => ({
-    typographyPreset: getToken(
-      {theme, overrides},
-      `dateTime.${path}`,
-      `${path}`,
-      'typographyPreset',
-    ),
-    stylePreset: getToken(
-      {theme, overrides},
-      `dateTime.${path}`,
-      `${path}`,
-      'stylePreset',
-    ),
-  });
+    const getPresets = (path: string) => ({
+      typographyPreset: getToken(
+        {theme, overrides},
+        `dateTime.${path}`,
+        `${path}`,
+        'typographyPreset',
+      ),
+      stylePreset: getToken(
+        {theme, overrides},
+        `dateTime.${path}`,
+        `${path}`,
+        'stylePreset',
+      ),
+    });
 
-  const prefixPresets = getPresets('prefix');
-  const datePresets = getPresets('');
-  const suffixPresets = getPresets('suffix');
+    const prefixPresets = getPresets('prefix');
+    const datePresets = getPresets('');
+    const suffixPresets = getPresets('suffix');
 
-  const StyledTime = styled.time`
-    ${logicalProps('dateTime')}
-  `;
+    const StyledTime = styled.time`
+      ${logicalProps('dateTime')}
+    `;
 
-  const logicalPropsOverrides = extractLogicalPropsFromOverrides(overrides);
+    const logicalPropsOverrides = extractLogicalPropsFromOverrides(overrides);
 
-  return (
-    <StyledTime {...logicalPropsOverrides}>
-      {prefix && (
-        <StyledPrefix as="span" {...prefixPresets}>
-          {`${prefix} `}
-        </StyledPrefix>
-      )}
-      <StyledDateText as="span" {...datePresets}>
-        {format(new Date(date), dateFormat)}
-        {suffix ? `, ` : ` `}
-      </StyledDateText>
-      {suffix && (
-        <StyledSuffix as="span" {...suffixPresets}>
-          {suffix}
-        </StyledSuffix>
-      )}
-    </StyledTime>
-  );
-};
+    return (
+      <div ref={ref}>
+        <StyledTime {...logicalPropsOverrides}>
+          {prefix && (
+            <StyledPrefix as="span" {...prefixPresets}>
+              {`${prefix} `}
+            </StyledPrefix>
+          )}
+          <StyledDateText as="span" {...datePresets}>
+            {format(new Date(date), dateFormat)}
+            {suffix ? `, ` : ` `}
+          </StyledDateText>
+          {suffix && (
+            <StyledSuffix as="span" {...suffixPresets}>
+              {suffix}
+            </StyledSuffix>
+          )}
+        </StyledTime>
+      </div>
+    );
+  },
+);
 
 export const DateTime = withOwnTheme(ThemelessDateTime)({
   defaults,

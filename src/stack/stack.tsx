@@ -45,6 +45,7 @@ const wrapChild = (
   list: StackProps['list'],
   inline: NonNullable<StackProps['inline']>,
   as?: StackProps['as'],
+  ref?: React.RefObject<HTMLDivElement>,
 ) => (
   child: React.ReactNode & {
     props?: StackChildProps;
@@ -72,10 +73,10 @@ const wrapChild = (
   // eslint-disable-next-line @typescript-eslint/no-use-before-define
   if (hasMatchingDisplayNameWith(child, Stack)) {
     // eslint-disable-next-line @typescript-eslint/no-use-before-define
-    const stack = <Stack inline={inline} as={as} {...child.props} />;
+    const stack = <Stack inline={inline} as={as} {...child.props} ref={ref} />;
 
     return list || hasSpace ? (
-      <ChildContainer {...renderAs} {...childProps}>
+      <ChildContainer {...renderAs} {...childProps} ref={ref}>
         {stack}
       </ChildContainer>
     ) : (
@@ -111,52 +112,58 @@ const wrapChild = (
   );
 };
 
-export const Stack: React.FC<StackProps> = ({
-  spaceStack = DEFAULT_PROPS.spaceStack,
-  spaceInline = DEFAULT_PROPS.spaceInline,
-  flow = DEFAULT_PROPS.flow,
-  wrap = DEFAULT_PROPS.wrap,
-  stackDistribution = DEFAULT_PROPS.stackDistribution,
-  flexGrow = DEFAULT_PROPS.flexGrow,
-  flexShrink = DEFAULT_PROPS.flexShrink,
-  flowReverse = DEFAULT_PROPS.flowReverse,
-  inline = DEFAULT_PROPS.inline,
-  as,
-  list,
-  ariaLabel,
-  children,
-  role,
-  height,
-  ...props
-}) => {
-  const MasterContainer = list
-    ? StyledMasterContainerList
-    : StyledMasterContainer;
+export const Stack = React.forwardRef<HTMLDivElement, StackProps>(
+  (
+    {
+      spaceStack = DEFAULT_PROPS.spaceStack,
+      spaceInline = DEFAULT_PROPS.spaceInline,
+      flow = DEFAULT_PROPS.flow,
+      wrap = DEFAULT_PROPS.wrap,
+      stackDistribution = DEFAULT_PROPS.stackDistribution,
+      flexGrow = DEFAULT_PROPS.flexGrow,
+      flexShrink = DEFAULT_PROPS.flexShrink,
+      flowReverse = DEFAULT_PROPS.flowReverse,
+      inline = DEFAULT_PROPS.inline,
+      as,
+      list,
+      ariaLabel,
+      children,
+      role,
+      height,
+      ...props
+    },
+    ref,
+  ) => {
+    const MasterContainer = list
+      ? StyledMasterContainerList
+      : StyledMasterContainer;
 
-  return (
-    <MasterContainer
-      {...getAsProp(as, list)}
-      spaceStack={spaceStack}
-      spaceInline={spaceInline}
-      flow={flow}
-      $wrap={wrap}
-      flexGrow={flexGrow}
-      flexShrink={flexShrink}
-      flowReverse={flowReverse}
-      stackDistribution={stackDistribution}
-      inline={inline}
-      aria-label={ariaLabel}
-      role={role}
-      $height={height}
-      {...props}
-    >
-      {children &&
-        React.Children.map(
-          children,
-          wrapChild(spaceStack, spaceInline, flow, wrap, list, inline, as),
-        )}
-    </MasterContainer>
-  );
-};
+    return (
+      <MasterContainer
+        ref={ref}
+        {...getAsProp(as, list)}
+        spaceStack={spaceStack}
+        spaceInline={spaceInline}
+        flow={flow}
+        $wrap={wrap}
+        flexGrow={flexGrow}
+        flexShrink={flexShrink}
+        flowReverse={flowReverse}
+        stackDistribution={stackDistribution}
+        inline={inline}
+        aria-label={ariaLabel}
+        role={role}
+        $height={height}
+        {...props}
+      >
+        {children &&
+          React.Children.map(
+            children,
+            wrapChild(spaceStack, spaceInline, flow, wrap, list, inline, as),
+          )}
+      </MasterContainer>
+    );
+  },
+);
 
 Stack.displayName = 'Stack';
