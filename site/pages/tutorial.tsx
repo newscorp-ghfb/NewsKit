@@ -53,8 +53,8 @@ const steps: TutorialStepProps[] = [
     children: (
       <>
         <P>
-          Let's create our first layout. Consider the following UI element as
-          our end goal
+          Let&apos;s create our first layout. Consider the following UI element
+          as as our end goal
         </P>
         --- IMAGE PLACEHOLDER ---
         <P>
@@ -73,7 +73,9 @@ const steps: TutorialStepProps[] = [
     title: 'Using GridLayout and naming areas',
     children: (
       <>
-        <P>Next step, let's import the GridLayout component from newskit</P>
+        <P>
+          Next step, let&apos;s import the GridLayout component from newskit
+        </P>
         <P>
           When describing a layouts we can split our UI element in areas.
           Looking at our design, we could have the following areas:
@@ -85,8 +87,8 @@ const steps: TutorialStepProps[] = [
           create responsive layouts and the position of the areas may change.
         </P>
         <P>
-          Let’s create our first areas, we create a string with tree areas and
-          describe their relation and position. Then pass it to GridLayout
+          Let&apos;s create our first areas, we create a string with tree areas
+          and describe their relation and position. Then pass it to GridLayout
           component.
         </P>
       </>
@@ -182,7 +184,7 @@ const steps: TutorialStepProps[] = [
     title: 'All together',
     children: (
       <>
-        <P>That's all</P>
+        <P>That&apos;s all</P>
       </>
     ),
     ranges: [],
@@ -191,7 +193,6 @@ const steps: TutorialStepProps[] = [
 const files: TutorialFile[] = [
   {name: 'card.tsx', content: fileContent},
   {name: 'theme.tsx', content: fileContent},
-
 ];
 
 const Page: React.FC<{

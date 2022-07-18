@@ -57,16 +57,17 @@ export const Code: React.FC<CodeProps> = ({
 
   useEffect(() => {
     if (ranges.length) {
-      setTimeout(() => {
-        const [firstLine] = [
-          ...document.querySelectorAll('[data-highlighted="true"]'),
-        ];
-        console.log({firstLine});
-        if (firstLine) {
-          console.log('scroll into view');
-          firstLine.scrollIntoView();
-        }
-      }, 200);
+      if (typeof document !== 'undefined') {
+        setTimeout(() => {
+          const [firstLine] = [
+            // @ts-ignore
+            ...document.querySelectorAll('[data-highlighted="true"]'),
+          ];
+          if (firstLine) {
+            firstLine.scrollIntoView();
+          }
+        }, 200);
+      }
     }
   }, [ranges]);
 
@@ -90,9 +91,12 @@ export const Code: React.FC<CodeProps> = ({
           const props = {style: {display: 'block'}};
           if (ranges.length) {
             if (inRange(lineNumber, ranges)) {
+              // @ts-ignore
               props.style.backgroundColor = 'rgb(231 225 225)';
+              // @ts-ignore
               props['data-highlighted'] = 'true';
             } else {
+              // @ts-ignore
               props.style.opacity = '0.2';
             }
           }

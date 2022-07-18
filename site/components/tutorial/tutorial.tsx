@@ -9,7 +9,7 @@ import {
   IconButton,
   IconOutlinedArrowForwardIos,
   useIntersection,
-  IconFilledImage
+  IconFilledImage,
 } from 'newskit';
 import {Code} from '../code';
 import {ContentPrimary} from '../content-structure';
@@ -111,9 +111,18 @@ export const Tutorial = ({steps, files}: TutorialProps) => {
           <TutorialStep {...step} onChange={setRangeAndFile} />
         ))}
       </Content>
-      <Tabs size="small" selectedIndex={files.findIndex(f => f.name === fileName)}>
+      <Tabs
+        size="small"
+        selectedIndex={files.findIndex(f => f.name === fileName)}
+      >
         {files.map(({name, content}) => (
-          <Tab  label={<><IconFilledImage /> {name}</>}>
+          <Tab
+            label={
+              <>
+                <IconFilledImage /> {name}
+              </>
+            }
+          >
             <TabContent>
               <Code ranges={ranges}>{content}</Code>
             </TabContent>
