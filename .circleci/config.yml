@@ -292,10 +292,10 @@ commands:
       - run:
           name: Run Applitools Docs Site Visual Tests
           command: make e2e_visual_test_docs
-      - run:
-          name: Close the Applitools Batch
-          command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
-          when: always
+#      - run:
+#          name: Close the Applitools Batch
+#          command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
+#          when: always
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
