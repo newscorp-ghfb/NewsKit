@@ -1,4 +1,5 @@
 import {StylePreset} from '../../../theme/types';
+import {defaultFocusVisible} from '../../../utils/default-focus-visible';
 
 export default {
   seekBarTrack: {
@@ -35,6 +36,10 @@ export default {
     active: {
       backgroundColor: '{{colors.interactivePrimary050}}',
       iconColor: '{{colors.inkSubtle}}',
+    },
+    'focus-visible': {
+      ...defaultFocusVisible,
+      safariOutlineOffset: '-7px',
     },
   },
 } as Record<string, StylePreset>;
