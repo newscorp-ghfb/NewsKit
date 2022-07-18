@@ -134,11 +134,21 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Code>npm install newskit</Code>
+          <Code>npm install newskit @emotion/react @emotion/styled</Code>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>or</P>
           <br />
-          <Code>yarn add newskit</Code>
+          <Code>yarn add newskit @emotion/react @emotion/styled</Code>
+          <br />
+          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            Please note that newskit is using{' '}
+            <Link href="https://emotion.sh/docs/introduction" target="_blank">
+              emotion
+            </Link>{' '}
+            as styling engine, that is why you also need to install
+            <InlineCode>@emotion/react</InlineCode> and
+            <InlineCode>@emotion/styled</InlineCode>.
+          </P>
         </ContentPrimary>
       </ContentSection>
 
