@@ -22,7 +22,7 @@ const BannerComponent = ({layoutProps, title, intro}: ComponentProps) => (
   <ComponentPageTemplate
     headTags={{
       title,
-      description: 'introduction',
+      description: intro.introduction,
     }}
     pageIntroduction={{
       type: intro.type,

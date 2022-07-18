@@ -1,12 +1,14 @@
+local_backend: true
 backend:
   name: github
   branch: main
+  repo: newscorp-ghfb/newskit/
 media_folder: public/static
 public_folder: public/static
 collections:
-  - name: "pages"
-    label: "Pages"
-    file: 'content/component.mdx'
+  - name: "docs"
+    label: "Docs"
+    folder: 'content/'
     extension: "mdx"
     format: "frontmatter"
     fields:
@@ -31,6 +33,3 @@ collections:
           - label: "Introduction"
             name: "introduction"
             widget: "text"
-      - label: "Body"
-        name: "body", 
-        widget: "markdown"
