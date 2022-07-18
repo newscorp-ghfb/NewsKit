@@ -86,7 +86,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
           volume={volume}
           unMutedVolume={unMutedVolume}
           onChange={onChange}
-          size={muteButtonSize || ButtonSize.Small}
+          size={muteButtonSize || ButtonSize.Medium}
           muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
           overrides={buttonOverrides}
         />
