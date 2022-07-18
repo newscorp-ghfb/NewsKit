@@ -45,7 +45,6 @@ const wrapChild = (
   list: StackProps['list'],
   inline: NonNullable<StackProps['inline']>,
   as?: StackProps['as'],
-  ref?: React.RefObject<HTMLDivElement>,
 ) => (
   child: React.ReactNode & {
     props?: StackChildProps;
@@ -73,10 +72,10 @@ const wrapChild = (
   // eslint-disable-next-line @typescript-eslint/no-use-before-define
   if (hasMatchingDisplayNameWith(child, Stack)) {
     // eslint-disable-next-line @typescript-eslint/no-use-before-define
-    const stack = <Stack inline={inline} as={as} {...child.props} ref={ref} />;
+    const stack = <Stack inline={inline} as={as} {...child.props} />;
 
     return list || hasSpace ? (
-      <ChildContainer {...renderAs} {...childProps} ref={ref}>
+      <ChildContainer {...renderAs} {...childProps}>
         {stack}
       </ChildContainer>
     ) : (
