@@ -5,7 +5,6 @@ import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {InlineCode} from '../../../components/markdown-elements';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
@@ -66,7 +65,6 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
         >
           <UnorderedList
             markerAlign="center"
-            listItemMarker={IconFilledCircle}
             overrides={{
               marker: {
                 spaceInline: 'space020',

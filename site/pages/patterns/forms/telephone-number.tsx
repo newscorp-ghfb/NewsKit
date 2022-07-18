@@ -3,7 +3,6 @@ import {Block, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -90,7 +89,6 @@ const TelephoneNumber = (layoutProps: LayoutProps) => (
               <br />
               <UnorderedList
                 markerAlign="start"
-                listItemMarker={IconFilledCircle}
                 overrides={unorderedListOverrides}
               >
                 <>
@@ -117,11 +115,7 @@ const TelephoneNumber = (layoutProps: LayoutProps) => (
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Be clear as to why we are collecting the user&apos;s telephone
               number.
@@ -156,11 +150,7 @@ const TelephoneNumber = (layoutProps: LayoutProps) => (
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Make the user scroll unnecessarily through the country dropdown.
               Country code drop downs can be fiddly and involve a lot of list

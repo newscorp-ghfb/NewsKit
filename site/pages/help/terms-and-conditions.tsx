@@ -4,7 +4,6 @@ import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {Link} from '../../components/link';
-import {IconFilledCircle} from '../../components/icons';
 import {HeadNextSeo} from '../../components/head-next-seo';
 import {
   ContentSection,
@@ -110,11 +109,7 @@ const Introduction = ({path, ...props}: LayoutProps) => (
             In accessing any part of our Website, you agree not to:
           </P>
           <Block spaceStack="space040" />
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Use our Website in such a way that disrupts, interferes with or
               restricts the use of our Website by other users;
@@ -246,11 +241,7 @@ const Introduction = ({path, ...props}: LayoutProps) => (
           meanings:
         </P>
         <Block spaceStack="space040" />
-        <UnorderedList
-          markerAlign="start"
-          listItemMarker={IconFilledCircle}
-          overrides={unorderedListOverrides}
-        >
+        <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
           <>
             Use our Website in such a way that disrupts, interferes with or
             restricts the use of our Website by other users;

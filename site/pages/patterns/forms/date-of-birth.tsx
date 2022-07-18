@@ -3,7 +3,6 @@ import {Block, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -103,11 +102,7 @@ const DateOfBirth = (layoutProps: LayoutProps) => (
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Default to the numeric keyboard when on mobile. (Use using the
               &apos;type=&quot;number&quot;&apos; attribute).
@@ -134,11 +129,7 @@ const DateOfBirth = (layoutProps: LayoutProps) => (
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>Use a date picker for date of birth.</>
             <>Use a drop down for year of birth.</>
             <>Mix text input and drop downs.</>

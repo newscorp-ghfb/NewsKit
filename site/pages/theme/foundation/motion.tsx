@@ -11,7 +11,6 @@ import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
 import {Table} from '../../../components/table';
 import {MediaList} from '../../../components/media-list';
-import {IconFilledCircle} from '../../../components/icons';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../../components/usage-card';
 import {Link} from '../../../components/link';
@@ -286,7 +285,6 @@ const Motion = (layoutProps: LayoutProps) => (
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
-            listItemMarker={IconFilledCircle}
             markerAlign="start"
             overrides={{spaceStack: 'space040'}}
           >

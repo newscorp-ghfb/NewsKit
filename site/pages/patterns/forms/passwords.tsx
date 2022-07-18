@@ -3,7 +3,6 @@ import {Block, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -72,11 +71,7 @@ const Passwords = (layoutProps: LayoutProps) => (
           }
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>Send them a link or code to trigger a password reset.</>
             <>Avoid password reset questions.</>
             <>Avoid password reminders.</>
@@ -86,11 +81,7 @@ const Passwords = (layoutProps: LayoutProps) => (
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Have too complex password constraints, users may forget their
               password if it’s too complicated.

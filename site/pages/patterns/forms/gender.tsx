@@ -2,7 +2,6 @@ import React from 'react';
 import {UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -68,11 +67,7 @@ const Gender = (layoutProps: LayoutProps) => (
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>Give users the option of ‘I’d prefer not to say’.</>
             <>Display genders in alphabetical order.</>
             <>Display as a radio button list.</>
@@ -84,11 +79,7 @@ const Gender = (layoutProps: LayoutProps) => (
           childrenColSpan={ContentColSpan.TEXT}
           showSeparator
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Assume gender by asking for ‘Title’ - A Dr can be both male or
               female.

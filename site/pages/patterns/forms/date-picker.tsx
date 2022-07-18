@@ -3,7 +3,6 @@ import {UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
@@ -101,11 +100,7 @@ const DatePicker = (layoutProps: LayoutProps) => (
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>Clearly show a selected date via UI.</>
             <>Use an appropriate date picker for relevant timescales.</>
             <>
@@ -124,11 +119,7 @@ const DatePicker = (layoutProps: LayoutProps) => (
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>Use a date picker for date of birth.</>
             <>Use a drop down for selecting the year.</>
           </UnorderedList>
@@ -147,11 +138,7 @@ const DatePicker = (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Show today’s date by highlighting the date in the calendar via UI.
             </>

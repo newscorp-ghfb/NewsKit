@@ -3,7 +3,6 @@ import {Block, TextBlock, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -102,7 +101,6 @@ const Address = (layoutProps: LayoutProps) => (
               </Block>
               <UnorderedList
                 markerAlign="start"
-                listItemMarker={IconFilledCircle}
                 overrides={unorderedListOverrides}
               >
                 <>House number and street name</>
@@ -127,7 +125,6 @@ const Address = (layoutProps: LayoutProps) => (
           <Block spaceStack="space080">
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>Address line 1</>
@@ -158,11 +155,7 @@ const Address = (layoutProps: LayoutProps) => (
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>Give users the option to enter their address manually.</>
             <>
               Once an address is selected from the address look up you should
@@ -186,11 +179,7 @@ const Address = (layoutProps: LayoutProps) => (
         <ContentTertiary
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Display unnecessary address Text Fields that you do not require.
             </>

@@ -2,7 +2,6 @@ import React from 'react';
 import {UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -44,11 +43,7 @@ const Payment = (layoutProps: LayoutProps) => (
           description="Third parties are generally used for payment, this means that they handle the validation of user payment details as well as the security of the payment being made. Common providers are listed below:"
           showSeparator
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Details on{' '}
               <Link
