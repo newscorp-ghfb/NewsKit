@@ -96,12 +96,15 @@ export const toast = (
     duration: toastOptions?.autoHideDuration,
   };
 
-  return hotToast(e => {
-    const onClose = () => hotToast.dismiss(e.id);
+  return hotToast(
+    (((e: {id: string}) => {
+      const onClose = () => hotToast.dismiss(e.id);
 
-    if (typeof component === 'function') {
-      return component({id: e.id, onClose});
-    }
-    return component;
-  }, options);
+      if (typeof component === 'function') {
+        return component({id: e.id, onClose});
+      }
+      return component;
+    }) as unknown) as string,
+    options,
+  );
 };

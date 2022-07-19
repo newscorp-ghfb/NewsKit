@@ -18,6 +18,7 @@ const ScreenReader = styled.span`
 
 export interface Props {
   id?: string;
+  children: React.ReactNode;
 }
 export const ScreenReaderOnly: React.FC<Props> = props => (
   <ScreenReader {...props} />

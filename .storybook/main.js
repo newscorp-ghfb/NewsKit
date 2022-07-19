@@ -4,6 +4,7 @@ const toPath = _path => path.join(process.cwd(), _path);
 
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
+  staticDirs: ['../fonts','../static'],
   addons: [
     '@storybook/addon-links',
     {

@@ -3,6 +3,7 @@ import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
 export interface UnorderedListProps {
+  children: React.ReactNode;
   listItemMarker?: NewsKitIcon;
   markerAlign?: 'start' | 'center' | 'end';
   overrides?: {
