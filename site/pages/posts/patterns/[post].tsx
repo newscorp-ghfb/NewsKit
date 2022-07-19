@@ -101,7 +101,6 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
       type: data.type,
       coverImage: data.coverImage,
       imageAlt: data.title,
-      headerIndex: data.headerIndex,
       introduction: data.introduction,
     },
   };
