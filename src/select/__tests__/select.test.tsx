@@ -9,7 +9,8 @@ import {
 } from '../../test/test-utils';
 import {AssistiveText} from '../../assistive-text';
 import {Label} from '../../label';
-import {createTheme, IconFilledSearch} from '../..';
+import {createTheme} from '../..';
+import {IconFilledSearch} from '../../icons';
 import {countries} from './phone-countries';
 
 const renderSelectButtonWithComponents = () => (

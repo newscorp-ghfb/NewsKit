@@ -7,13 +7,8 @@ import {
 } from '../../test/test-utils';
 import {AssistiveText} from '../../assistive-text';
 import {Label, LabelProps} from '../../label';
-import {
-  createTheme,
-  EventTrigger,
-  IconFilledClose,
-  IconFilledSearch,
-  InstrumentationProvider,
-} from '../..';
+import {createTheme, EventTrigger, InstrumentationProvider} from '../..';
+import {IconFilledClose, IconFilledSearch} from '../../icons';
 
 const renderInvalidLabel = () => <Label state="invalid">AssistiveText</Label>;
 const renderTextFieldWithComponents = () => (

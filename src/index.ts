@@ -23,6 +23,18 @@ export * from './grid';
 export * from './grid-layout';
 export * from './headline';
 export * from './icon-button';
+export type {
+  SvgProps,
+  NewsKitIconProps,
+  NewsKitIcon,
+  IconComponent,
+} from './icons';
+export {
+  Svg,
+  toNewsKitIcon,
+  customToNewsKitIcon,
+  IndeterminateProgressIndicator,
+} from './icons';
 export * from './image';
 export * from './inline-message';
 export * from './instrumentation';
