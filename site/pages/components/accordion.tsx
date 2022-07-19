@@ -26,7 +26,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       type: 'Navigation',
       name: 'Accordion',
       hero: {
-        illustration: 'components/image-illustration',
+        illustration: 'components/accordion/hero',
       },
       introduction:
         'Accordions show and hide related content. Use them to break up long pages into segmented, prioritised sections.',
@@ -64,7 +64,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
           optional: undefined,
         },
       ],
-      media: getIllustrationComponent('components/image-illustration'),
+      media: getIllustrationComponent('components/accordion/anatomy'),
     }}
     options={{
       introduction:
@@ -74,19 +74,23 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
           title: 'Single accordion or accordion group',
           description:
             'The Accordion can be used as a single instance, or in a group of accordions stacked vertically.',
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent(
+            'components/accordion/options/singlegroup',
+          ),
         },
         {
           title: 'Heading level',
           description:
             'The Accordion title is wrapped in a heading tag. The tag is <h3> by default but can be altered to fit the information architecture of the page.',
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent(
+            'components/accordion/options/heading',
+          ),
         },
         {
           title: 'Icon',
           description:
             'The indicator icon is a chevron by default but can be changed to another icon.',
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent('components/accordion/options/icon'),
         },
       ],
     }}
@@ -97,25 +101,27 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
           title: 'Base',
           description:
             'The Accordion has a base state. This is the base style of the Accordion before it has been interacted with by a user.',
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent('components/accordion/states/base'),
         },
         {
           title: 'Focus',
           description:
             'The Accordion has a visual focus state when in focus. The focus state outlines the heading container.',
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent('components/accordion/states/focus'),
         },
         {
           title: 'Hover',
           description:
             'The Accordion has a hover state. The style of the header and the cursor changes to visually communicate that the Accordion is an interactive element.',
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent('components/accordion/states/hover'),
         },
         {
           title: 'Disabled',
           description:
             'The Accordion has a disabled state. The Accordion in a disabled state is not available to the user in that scenario. When the user’s cursor hovers over an Accordion in a disabled state, the cursor shows as not allowed.',
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent(
+            'components/accordion/states/disabled',
+          ),
         },
       ],
     }}
@@ -143,24 +149,32 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               panel is expanded.
             </>
           ),
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent(
+            'components/accordion/behaviours/collapseexpand',
+          ),
         },
         {
           title: 'First expanded on load',
           description: 'The first Accordion in a group is expanded on load.',
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent(
+            'components/accordion/behaviours/firstexpandedonload',
+          ),
         },
         {
           title: 'Expand all',
           description:
             'The Accordion displays all panels in a group expanded on load.',
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent(
+            'components/accordion/behaviours/allexpandedonload',
+          ),
         },
         {
           title: 'Expand single',
           description:
             'Only one single panel can be expanded. When an Accordion panel is expanded, the open panel is collapsed. ',
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent(
+            'components/accordion/behaviours/singleexpanded',
+          ),
         },
       ],
     }}
@@ -171,23 +185,23 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
         {
           description: 'Use an Accordion to provide supporting information.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent('components/accordion/usage/do01'),
         },
         {
           description: 'Conceal important information in an Accordion.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent('components/accordion/usage/dont01'),
         },
         {
           description:
             'Write short, meaningful headings that allow users to understand what is inside the panel. Group together related topics.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent('components/accordion/usage/do02'),
         },
         {
           description: 'Nest accordions within themselves.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/image-illustration'),
+          media: getIllustrationComponent('components/accordion/usage/dont02'),
         },
       ],
     }}

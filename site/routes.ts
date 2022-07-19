@@ -593,7 +593,7 @@ export default [
             id: '/components/accordion',
             description:
               'Accordions show and hide related content. Use them to break up long pages into segmented, prioritised sections.',
-            illustration: 'components/image-illustration',
+            illustration: 'components/accordion/hero',
           },
           {
             title: 'Link',
