@@ -292,6 +292,7 @@ commands:
       - run:
           name: Run Applitools Docs Site Visual Tests
           command: make e2e_visual_test_docs
+      - log_batch_info
       - run:
           name: Close the Applitools Batch
           command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
@@ -302,6 +303,25 @@ commands:
           path: cypress/videos
       - slack/notify:
           <<: *slack_notify
+
+  log_batch_info:
+    description: 'Log the Applitools internal batch id for debugging'
+    steps:
+      - run:
+          name: Log Applitools batch info
+          command: |
+            apt-get install -yq jq
+            POINTER_ID=$APPLITOOLS_BATCH_ID
+            RES=$(curl -s -w "%{HTTP_CODE}" "https://eyesapi.applitools.com/api/Sessions/batches/${POINTER_ID}/bypointerid?apiKey=${APPLITOOLS_API_KEY}")
+            HTTP_CODE=${RES: -3}
+            CONTENT=$(echo ${RES} | head -c-4)
+            echo $HTTP_CODE
+            echo $CONTENT
+            if [[ $HTTP_CODE == '200' ]]
+            then
+              BATCH_ID=$(echo $CONTENT | jq -r '.id')
+              echo "You can view your test results here: https://eyes.applitools.com/app/test-results/${BATCH_ID}"
+            fi
 
 jobs:
   can_i_merge_checker:
@@ -608,6 +628,7 @@ jobs:
       - run:
           name: Run Applitools Storybook Component Tests
           command: make comps_visual_test
+      - log_batch_info
       - run:
           name: Close the Applitools Batch
           command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
