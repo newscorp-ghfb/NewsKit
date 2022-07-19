@@ -310,7 +310,7 @@ commands:
       - run:
           name: Log Applitools batch info
           command: |
-            sudo apt-get install -yq jq
+            apt-get install -yq jq
             POINTER_ID=$APPLITOOLS_BATCH_ID
             URL="https://eyesapi.applitools.com/api/Sessions/batches/${POINTER_ID}/bypointerid?apiKey=${APPLITOOLS_API_KEY}"
             BATCH_ID=$(curl --request GET --header "X-Eyes-Api-Key: $APPLITOOLS_API_KEY" $URL | jq '.id')
