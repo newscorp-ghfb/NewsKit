@@ -312,9 +312,13 @@ commands:
           command: |
             apt-get install -yq jq
             POINTER_ID=$APPLITOOLS_BATCH_ID
-            URL="https://eyesapi.applitools.com/api/Sessions/batches/${POINTER_ID}/bypointerid?apiKey=${APPLITOOLS_API_KEY}"
-            BATCH_ID=$(curl --request GET --header "X-Eyes-Api-Key: $APPLITOOLS_API_KEY" $URL | jq '.id')
-            echo "You can view your test results here: https://eyes.applitools.com/app/test-results/${BATCH_ID}"
+            RES=$(curl "https://eyesapi.applitools.com/api/Sessions/batches/${POINTER_ID}/bypointerid?apiKey=${APPLITOOLS_API_KEY}")
+            echo $RES
+            if [[ $RES != 'Batch not found' ]]
+            then
+              BATCH_ID=$(echo $RES | jq '.id')
+              echo "You can view your test results here: https://eyes.applitools.com/app/test-results/${BATCH_ID}"
+            fi
 
 jobs:
   can_i_merge_checker:
