@@ -312,11 +312,14 @@ commands:
           command: |
             apt-get install -yq jq
             POINTER_ID=$APPLITOOLS_BATCH_ID
-            RES=$(curl "https://eyesapi.applitools.com/api/Sessions/batches/${POINTER_ID}/bypointerid?apiKey=${APPLITOOLS_API_KEY}")
-            echo $RES
-            if [[ $RES != 'Batch not found' ]]
+            RES=$(curl -s -w "%{HTTP_CODE}" "https://eyesapi.applitools.com/api/Sessions/batches/${POINTER_ID}/bypointerid?apiKey=${APPLITOOLS_API_KEY}")
+            HTTP_CODE=${RES: -3}
+            CONTENT=$(echo ${RES} | head -c-4)
+            echo $HTTP_CODE
+            echo $CONTENT
+            if [[ $HTTP_CODE != '404' ]]
             then
-              BATCH_ID=$(echo $RES | jq -r '.id')
+              BATCH_ID=$(echo $CONTENT | jq -r '.id')
               echo "You can view your test results here: https://eyes.applitools.com/app/test-results/${BATCH_ID}"
             fi
 
