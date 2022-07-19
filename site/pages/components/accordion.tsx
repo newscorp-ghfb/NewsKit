@@ -31,7 +31,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       introduction:
         'Accordions show and hide related content. Use them to break up long pages into segmented, prioritised sections.',
     }}
-    componentDefaultsKey="Menu"
+    componentDefaultsKey="Accordion"
     meta={{
       status: MetaStatus.Beta,
       introduced: 'v5.6.0',
