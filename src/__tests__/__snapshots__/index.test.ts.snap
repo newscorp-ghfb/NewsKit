@@ -229,6 +229,7 @@ Array [
   "useClientSide",
   "useFormContext",
   "useInstrumentation",
+  "useIntersection",
   "useMediaQueryObject",
   "useTheme",
   "withDefaultProps",

@@ -661,19 +661,23 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                 >
                   <code>
                     <span
-                      class="linenumber react-syntax-highlighter-line-number"
-                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                      style="display: block;"
                     >
-                      1
-                    </span>
-                    <span>
-                      Example code 
-                    </span>
-                    <span
-                      class="token"
-                      style="color: rgb(5, 113, 125);"
-                    >
-                      1
+                      <span
+                        class="linenumber react-syntax-highlighter-line-number"
+                        style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                      >
+                        1
+                      </span>
+                      <span>
+                        Example code 
+                      </span>
+                      <span
+                        class="token"
+                        style="color: rgb(5, 113, 125);"
+                      >
+                        1
+                      </span>
                     </span>
                   </code>
                 </pre>
@@ -724,19 +728,23 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                 >
                   <code>
                     <span
-                      class="linenumber react-syntax-highlighter-line-number"
-                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                      style="display: block;"
                     >
-                      1
-                    </span>
-                    <span>
-                      Example code 
-                    </span>
-                    <span
-                      class="token"
-                      style="color: rgb(5, 113, 125);"
-                    >
-                      2
+                      <span
+                        class="linenumber react-syntax-highlighter-line-number"
+                        style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                      >
+                        1
+                      </span>
+                      <span>
+                        Example code 
+                      </span>
+                      <span
+                        class="token"
+                        style="color: rgb(5, 113, 125);"
+                      >
+                        2
+                      </span>
                     </span>
                   </code>
                 </pre>
@@ -790,19 +798,23 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                 >
                   <code>
                     <span
-                      class="linenumber react-syntax-highlighter-line-number"
-                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                      style="display: block;"
                     >
-                      1
-                    </span>
-                    <span>
-                      Example code 
-                    </span>
-                    <span
-                      class="token"
-                      style="color: rgb(5, 113, 125);"
-                    >
-                      3
+                      <span
+                        class="linenumber react-syntax-highlighter-line-number"
+                        style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                      >
+                        1
+                      </span>
+                      <span>
+                        Example code 
+                      </span>
+                      <span
+                        class="token"
+                        style="color: rgb(5, 113, 125);"
+                      >
+                        3
+                      </span>
                     </span>
                   </code>
                 </pre>
