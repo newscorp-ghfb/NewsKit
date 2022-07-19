@@ -1,5 +1,5 @@
 import React from 'react';
-import {UnorderedList} from 'newskit';
+import {Block, UnorderedList} from 'newskit';
 import {IconFilledCircle} from '../../components/icons';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
@@ -136,14 +136,20 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               The Accordion has two states:
               <br />
               <br />
-              <UnorderedList
-                listItemMarker={IconFilledCircle}
-                overrides={unorderedListOverrides}
-              >
-                <>collapsed with the panel closed</>
-                <>expanded with the panel open</>
-              </UnorderedList>
-              <br />
+              <Block spaceStack="space050">
+                <UnorderedList
+                  listItemMarker={IconFilledCircle}
+                  overrides={{
+                    spaceStack: 'space040',
+                    content: {
+                      typographyPreset: 'editorialParagraph020',
+                    },
+                  }}
+                >
+                  <>collapsed with the panel closed</>
+                  <>expanded with the panel open</>
+                </UnorderedList>
+              </Block>
               The default state is collapsed. The chevron icon points down when
               the Accordion panel is collapsed and points up when the Accordion
               panel is expanded.
