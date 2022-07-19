@@ -287,18 +287,21 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
           {
             element: 'button',
             attribute: 'aria-controls=”ID”',
+            value: '',
             description:
               'Points to the ID of the panel which the header controls.',
           },
           {
             element: 'button',
             attribute: 'role="region"',
+            value: '',
             description:
               'Creates a landmark for the current expanded accordion.',
           },
           {
             element: 'panel',
             attribute: 'aria-labelledby="IDREF"',
+            value: '',
             description: (
               <>
                 Defines the accessible name for the region element.
@@ -492,11 +495,13 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               attribute: 'accordion.panel.paddingBlock',
               type: 'MQ<string>',
               default: 'spaceInset030',
+              description: '',
             },
             {
               attribute: 'accordion.panel.paddingInline',
               type: 'MQ<string>',
               default: 'spaceInset030',
+              description: '',
             },
           ],
         },
@@ -509,6 +514,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               name: 'children',
               type: "Exclude<React.ReactNode, 'undefined'>",
               required: true,
+              description: '',
             },
             {
               name: 'defaultExpanded',
