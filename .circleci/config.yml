@@ -316,7 +316,7 @@ commands:
             echo $RES
             if [[ $RES != 'Batch not found' ]]
             then
-              BATCH_ID=$(echo $RES | jq '.id')
+              BATCH_ID=$(echo $RES | jq -r '.id')
               echo "You can view your test results here: https://eyes.applitools.com/app/test-results/${BATCH_ID}"
             fi
 
