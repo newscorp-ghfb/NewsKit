@@ -36,7 +36,7 @@ exports[`DateTime renders with fallback formatting 1`] = `
   white-space: normal;
 }
 
-<div>
+<span>
     <time
       class="emotion-0"
     >
@@ -46,7 +46,7 @@ exports[`DateTime renders with fallback formatting 1`] = `
         Mock Date 
       </span>
     </time>
-  </div>
+  </span>
 </DocumentFragment>
 `;
 
@@ -91,7 +91,7 @@ exports[`DateTime renders with logical props overrides 1`] = `
   white-space: normal;
 }
 
-<div>
+<span>
     <time
       class="emotion-0"
     >
@@ -111,7 +111,7 @@ exports[`DateTime renders with logical props overrides 1`] = `
         , The Times
       </span>
     </time>
-  </div>
+  </span>
 </DocumentFragment>
 `;
 
@@ -175,7 +175,7 @@ exports[`DateTime renders with overrides 1`] = `
   white-space: normal;
 }
 
-<div>
+<span>
     <time
       class="emotion-0"
     >
@@ -195,7 +195,7 @@ exports[`DateTime renders with overrides 1`] = `
         , The Times
       </span>
     </time>
-  </div>
+  </span>
 </DocumentFragment>
 `;
 
@@ -235,7 +235,7 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
   white-space: normal;
 }
 
-<div>
+<span>
     <time
       class="emotion-0"
     >
@@ -255,6 +255,6 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
         , The Times
       </span>
     </time>
-  </div>
+  </span>
 </DocumentFragment>
 `;
