@@ -1,6 +1,5 @@
 module.exports = {
   appName: 'DS Components',
-  batchId: process.env.APPLITOOLS_BATCH_ID,
   storybookUrl: 'http://localhost:6006',
   browser: [
     {deviceName: 'iPhone 5/SE'},
