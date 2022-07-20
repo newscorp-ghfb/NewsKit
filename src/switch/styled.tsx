@@ -4,6 +4,7 @@ import {
   getTransitionPreset,
   styled,
 } from '../utils';
+import {logicalProps} from '../utils/logical-properties';
 import {SwitchProps} from './types';
 
 export const StyledSwitchContainer = styled.div<
@@ -77,20 +78,9 @@ export const StyledThumb = styled.div<
       'thumb',
       'size',
     )}
-  ${({size}) =>
-    getResponsiveSize(
-      'paddingInline',
-      `switch.${size}.thumb`,
-      'thumb',
-      'paddingInline',
-    )}
-  ${({size}) =>
-    getResponsiveSize(
-      'paddingBlock',
-      `switch.${size}.thumb`,
-      'thumb',
-      'paddingBlock',
-    )}
+
+  ${({size}) => logicalProps(`switch.${size}.thumb`, 'thumb')}  
+  
   position: absolute;
   aspect-ratio: 1/1;
   ${({size}) => getTransitionPreset(`switch.${size}.thumb`, 'thumb')}
