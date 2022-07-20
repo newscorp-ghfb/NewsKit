@@ -578,11 +578,207 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'accordion.header.transitionPreset',
+              attribute: 'maxWidth',
               type: 'MQ<string>',
-              default: 'backgroundColorChange',
+              description: 'Overrides the maxWidth property of the Popover.',
+            },
+            {
+              attribute: 'minWidth',
+              type: 'MQ<string>',
+              description: 'Overrides the minWidth property of the Popover.',
+            },
+            {
+              attribute: 'zIndex',
+              type: 'number',
+              default: '80',
+              description: 'Overrides the zIndex of the Popover.',
+            },
+            {
+              attribute: 'distance',
+              type: 'MQ<string>',
+              default: 'space050',
               description:
-                'If provided, overrides the transitionPreset of the Accordion header.',
+                'Overrides the distance between the Popover and the item it is attributed to.',
+            },
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              default: 'popover',
+              description: '',
+            },
+            {
+              attribute: 'transitionPreset',
+              type: 'MQ<string>',
+              default: 'fade',
+              description: 'Overrides the transitionPrese of the Popover.',
+            },
+            {
+              attribute: 'panel.stylePreset',
+              type: 'MQ<string>',
+              default: 'popoverPanel',
+              description:
+                'Overrides the stylePreset applied to the Popover panel.',
+            },
+            {
+              attribute: 'header.stylePreset',
+              type: 'MQ<string>',
+              default: 'popoverHeader',
+              description:
+                'Overrides the stylePreset applied to the Popover header.',
+            },
+            {
+              attribute: 'header.typographyPreset',
+              type: 'MQ<string>',
+              default: 'utilityLabel030',
+              description:
+                'Overrides the typographyPreset applied to the Popover header.',
+            },
+            {
+              attribute: 'header.paddingBlock',
+              type: 'MQ<string>',
+              default: 'space040',
+              description: '',
+            },
+            {
+              attribute: 'header.paddingInline',
+              type: 'MQ<string>',
+              default: 'space050',
+              description: '',
+            },
+            {
+              attribute: 'header.paddingBlockStart',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'header.paddingBlockEnd',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'header.paddingInlineStart',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'header.paddingInlineEnd',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'content.stylePreset',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'content.typographyPreset',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'content.paddingBlock',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'content.paddingInline',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'content.paddingBlockStart',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'content.paddingBlockEnd',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'content.paddingInlineStart',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'content.paddingInlineEnd',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'content.paddingInlineStart',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'content.paddingInlineEnd',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'closeButton.stylePreset',
+              type: 'MQ<string>',
+              default: 'iconButtonMinimalSecondary',
+              description:
+                'Overrides the stylePreset applied to the Popover close Icon Button.',
+            },
+            {
+              attribute: 'closeButtonContainer.stylePreset',
+              type: 'MQ<string>',
+              default: 'popoverCloseButtonContainer',
+              description: '',
+            },
+            {
+              attribute: 'closeButtonContainer.paddingBlock',
+              type: 'MQ<string>',
+              default: 'space020',
+              description: '',
+            },
+            {
+              attribute: 'closeButtonContainer.paddingInline',
+              type: 'MQ<string>',
+              default: 'space020',
+              description: '',
+            },
+            {
+              attribute: 'closeButtonContainer.paddingBlockStart',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'closeButtonContainer.paddingBlockEnd',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'closeButtonContainer.paddingInlineStart',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'closeButtonContainer.paddingInlineEnd',
+              type: 'MQ<string>',
+              description: '',
+            },
+            {
+              attribute: 'pointer.size',
+              type: 'MQ<string>',
+              default: 'sizing040',
+              description: 'Overrides the size of the Popover indicator.',
+            },
+            {
+              attribute: 'pointer.stylePreset',
+              type: 'MQ<string>',
+              default: 'popoverPointer',
+              description:
+                'Overrides the stylePreset of the Popover indicator.',
+            },
+            {
+              attribute: 'pointer.edgeOffset',
+              type: 'MQ<string>',
+              default: 'space030',
+              description:
+                'Overrides the edgeOffset of the Popover indicator. The edgeOffset is the padding between the indicator and the edges of the popover container.',
             },
           ],
         },
