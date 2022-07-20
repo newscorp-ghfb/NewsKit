@@ -118,7 +118,6 @@
     "@types/react-virtualized": "^9.21.2",
     "@types/resize-observer-browser": "^0.1.5",
     "@types/smoothscroll-polyfill": "^0.3.1",
-    "@types/tar": "^4.0.2",
     "@types/webpack": "^4.4.34",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
