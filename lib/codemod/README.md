@@ -39,7 +39,6 @@ Imports and transform `newskit` icons to `emotion-icons`;
 
 ```diff
 - import { IconFilledAccountTree } from 'newskit';
-
 + import {AccountTree as AccountTreeFilled} from '@emotion-icons/material/AccountTree';
 + const IconFilledAccountTree = toNewsKitIcon(AccountTreeFilled);
 ```
