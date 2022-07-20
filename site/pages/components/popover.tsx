@@ -333,6 +333,11 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           },
         ],
       },
+      infoNoticeFocus: [
+        'There is no focus trapping available for the Popover.',
+        'Upon focus of the Popover, the first interactive element in the specified order will receive focus ie. if there are interactive elements passed to the header area, then this will be the first focusable element.',
+        'If you want to change the element that gets focus then add a data-autofocus attribute to the HTML element you want to be focused on.',
+      ],
       interaction: {
         title: 'Keyboard Interactions',
         tableRows: [
@@ -389,6 +394,34 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           },
         ],
       },
+      infoNoticeAria: [
+        <>
+          By default, the Popover only describes its child element. The content
+          of the Popover acts as an accessible description and{' '}
+          <InlineCode>aria-describedby</InlineCode> will be added to the
+          Popover&apos;s child elements.
+          <br />
+          <br />
+          Note that if the Popover provides the only visual label, eg an icon
+          button, then you should use Popover to label its child elements.
+          Otherwise, the children would have no accessible name and the Popover
+          would violate{' '}
+          <Link
+            target="_blank"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html"
+          >
+            success criterion 2.5.3 in WCAG 2.1.
+          </Link>
+          <br />
+          <br />
+          You can pass the <InlineCode>asLabel</InlineCode> prop to make the
+          Popover act as a label. In this case,{' '}
+          <InlineCode>role=popover</InlineCode> will be removed, and if Popover
+          content is a string, <InlineCode>aria-label</InlineCode> will be added
+          to child elements. Otherwise, <InlineCode>aria-labelledby</InlineCode>{' '}
+          will be added.
+        </>,
+      ],
     }}
     seo={{
       title: 'SEO Considerations',
