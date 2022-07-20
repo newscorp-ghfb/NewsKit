@@ -10,7 +10,7 @@ import {AudioPlayerSkipNextButtonProps} from './types';
 const defaultKeyboardShortcuts = ['shift + n'];
 
 const ThemelessAudioPlayerSkipNextButton = React.forwardRef<
-  HTMLButtonElement | HTMLAnchorElement,
+  HTMLButtonElement,
   AudioPlayerSkipNextButtonProps
 >(({...props}, ref) => {
   const {getSkipNextButtonProps} = useAudioPlayerContext();

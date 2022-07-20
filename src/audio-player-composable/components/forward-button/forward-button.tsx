@@ -10,7 +10,7 @@ import {AudioPlayerForwardButtonProps} from './types';
 const defaultKeyboardShortcuts = ['l'];
 
 const ThemelessAudioPlayerForwardButton = React.forwardRef<
-  HTMLButtonElement | HTMLAnchorElement,
+  HTMLButtonElement,
   AudioPlayerForwardButtonProps
 >(({...props}, ref) => {
   const {getForwardButtonProps} = useAudioPlayerContext();

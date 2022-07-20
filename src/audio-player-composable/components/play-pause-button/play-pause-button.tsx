@@ -10,7 +10,7 @@ import {AudioPlayerPlayPauseButtonProps} from './types';
 const defaultKeyboardShortcuts = ['k', ' '];
 
 const ThemelessAudioPlayerPlayPauseButton = React.forwardRef<
-  HTMLButtonElement | HTMLAnchorElement,
+  HTMLButtonElement,
   AudioPlayerPlayPauseButtonProps
 >(({...props}, ref) => {
   const {getPlayPauseButtonProps, togglePlay} = useAudioPlayerContext();

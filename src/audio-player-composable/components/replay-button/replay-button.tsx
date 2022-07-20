@@ -10,7 +10,7 @@ import {AudioPlayerReplayButtonProps} from './types';
 const defaultKeyboardShortcuts = ['j'];
 
 const ThemelessAudioPlayerReplayButton = React.forwardRef<
-  HTMLButtonElement | HTMLAnchorElement,
+  HTMLButtonElement,
   AudioPlayerReplayButtonProps
 >(({...props}, ref) => {
   const {getReplayButtonProps} = useAudioPlayerContext();
