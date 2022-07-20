@@ -444,6 +444,150 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         </>
       ),
     }}
+    componentAPI={{
+      components: [
+        {
+          propsSummary:
+            'The Popover has a range of props that can be used to define an appropriate experience for different use cases.',
+          overridesSummary:
+            'The Popover has a range of predefined elements and attributes that can be overridden to define their appearance.',
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactElement & { ref?: React.Ref<unknown>; };',
+              description: 'Popover reference element.',
+              required: true,
+            },
+            {
+              name: 'content',
+              type: 'React.ReactNode',
+              description: 'Default content value.',
+              required: true,
+            },
+            {
+              name: 'open',
+              type: 'boolean',
+              default: 'false',
+              description: 'If true, determines if the Popover is open.',
+              required: undefined,
+            },
+            {
+              name: 'onDismiss',
+              type: 'function',
+              description:
+                'A callback which is invoked on dismissing the Popover through either clicking on the element that opened it, the close Icon Button, area surrounding the Popover on the page, or by pressing the Esc key.',
+              required: undefined,
+            },
+            {
+              name: 'fallbackBehaviours',
+              type: `'flip' | 'shift' | ['flip', 'shift']`,
+              default: `'flip', 'shift'`,
+              description: (
+                <>
+                  Behaviour the Popover should follow for fallback.
+                  <br />
+                  <br />
+                  <Link
+                    href="https://floating-ui.com/docs/react-dom-interactions"
+                    target="_blank"
+                  >
+                    For more information refer to the documentation from
+                    Floating UI.
+                  </Link>
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'boundary',
+              type: `'clippingAncestors' | Element | Array<Element>;`,
+              default: `'clippingAncestors'`,
+              description: (
+                <>
+                  Describes the clipping element(s) that overflow will be
+                  checked relative to.
+                  <br />
+                  <br />
+                  <Link
+                    href="https://floating-ui.com/docs/react-dom-interactions"
+                    target="_blank"
+                  >
+                    For more information refer to the documentation from
+                    Floating UI.
+                  </Link>
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'header',
+              type: 'React.ReactNode',
+              description: 'Defines the content of the Popover header.',
+              required: undefined,
+            },
+            {
+              name: 'closePosition',
+              type: ['left', 'right', 'none'],
+              default: 'right',
+              description: 'Defines the position of the close icon button.',
+              required: undefined,
+            },
+            {
+              name: 'closePosition',
+              type: [
+                'top',
+                'top-start',
+                'top-end',
+                'right',
+                'right-start',
+                'right-end',
+                'bottom',
+                'bottom-start',
+                'bottom-end',
+                'left',
+                'left-start',
+                'left-end',
+              ],
+              default: 'top',
+              description:
+                'Defines the placement of the Popover, with the optional pointer to denote the direction of the context it is attributed.',
+              required: undefined,
+            },
+            {
+              name: 'hidePointer',
+              type: 'boolean',
+              default: 'false',
+              description: 'If provided, hides the pointer.',
+              required: undefined,
+            },
+            {
+              name: 'restoreFocusTo',
+              type: 'HTMLElement',
+              description:
+                'If provided, returns focus to the focused element prior to the Popover opening.',
+              required: undefined,
+            },
+            {
+              name: 'enableDismiss',
+              type: 'boolean',
+              default: 'false',
+              description:
+                'If true, the Popover can be closed by clicking outside of the popover or by pressing the Esc key.',
+              required: undefined,
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'accordion.header.transitionPreset',
+              type: 'MQ<string>',
+              default: 'backgroundColorChange',
+              description:
+                'If provided, overrides the transitionPreset of the Accordion header.',
+            },
+          ],
+        },
+      ],
+    }}
     compliance={{
       states: true,
       variations: true,
