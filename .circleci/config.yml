@@ -632,7 +632,7 @@ jobs:
             echo $APPLITOOLS_DONT_CLOSE_BATCHES
             echo $APPLITOOLS_BATCH_ID
       - run:
-          name: Run Applitools Storybook Component Tests
+          name: Run Applitools Storybook Component Tests!
           command: make comps_visual_test
       - log_batch_info
       - run:
