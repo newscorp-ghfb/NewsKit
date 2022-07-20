@@ -7,5 +7,4 @@ module.exports = {
     {width: 2880, height: 1800, name: 'chrome'},
   ],
   concurrency: 50,
-  showLogs: false, // Set to false to avoid jobs being split into several in Applitools.
 };
