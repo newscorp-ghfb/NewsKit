@@ -9,5 +9,4 @@ module.exports = {
   ],
   concurrency: 50,
   showLogs: false, // Set to false to avoid jobs being split into several in Applitools.
-  // dontCloseBatches: true,
 };
