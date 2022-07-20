@@ -2,16 +2,17 @@ import React from 'react';
 import {
   Block,
   Flow,
-  IconOutlinedArrowForwardIos,
   InlineMessage,
-  IconFilledInfo,
   Stack,
   StackDistribution,
   StructuredListCell,
   StructuredListItem,
   StructuredList,
   TextBlock,
+  toNewsKitIcon,
 } from 'newskit';
+import {ArrowForwardIos as ArrowForwardIosOutlined} from '@emotion-icons/material-outlined/ArrowForwardIos';
+import {Info as InfoFilled} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
 import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
@@ -22,6 +23,9 @@ import {
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
+
+const IconOutlinedArrowForwardIos = toNewsKitIcon(ArrowForwardIosOutlined);
+const IconFilledInfo = toNewsKitIcon(InfoFilled);
 
 const infoIcon = (
   <IconFilledInfo

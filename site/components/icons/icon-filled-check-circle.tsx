@@ -1,5 +1,9 @@
 import React from 'react';
-import {Flag, FlagProps, IconOutlinedCheck} from 'newskit';
+import {Flag, FlagProps, toNewsKitIcon} from 'newskit';
+
+import {Check as CheckOutlined} from '@emotion-icons/material-outlined/Check';
+
+const IconOutlinedCheck = toNewsKitIcon(CheckOutlined);
 
 export const IconFilledCheckCircle: React.FC<{size?: FlagProps['size']}> = ({
   size,

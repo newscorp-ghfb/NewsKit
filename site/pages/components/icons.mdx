@@ -8,14 +8,12 @@ import {Code} from '../../components/code';
 import {CommonLogicalMarginPropsMDX} from '../../components/component-api/common-logical-props';
 import {InlineMessage, Link} from 'newskit';
 
-import {
-  IconFilledFacebook,
-  IconFilledGitHub,
-  IconFilledTwitter,
-  IconFilledWhatsApp,
-  IconFilledYoutube,
-  IconFilledFigma,
-} from 'newskit';
+import {IconFilledFacebook} from '../../components/icons/icon-filled-facebook.tsx';
+import {IconFilledGitHub} from '../../components/icons/icon-filled-github.tsx';
+import {IconFilledTwitter} from '../../components/icons/icon-filled-twitter.tsx';
+import {IconFilledWhatsApp} from '../../components/icons/icon-filled-whatsapp.tsx';
+import {IconFilledYoutube} from '../../components/icons/icon-filled-youtube.tsx';
+import {IconFilledFigma} from '../../components/icons/icon-filled-figma.tsx';
 
 export default Layout;
 
@@ -31,17 +29,21 @@ Icons can be used to enhance other elements and content, as well as used inside 
 
 ### Available Icons
 
-| Name                   |                        Preview
-| ---------------------- | :---------------------------------------------------------------------------: |
-| IconFilledYoutube      |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledYoutube} />    |
-| IconFilledGitHub       |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledGitHub}/>      |
-| IconFilledFacebook     |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledFacebook} />   |
-| IconFilledTwitter      |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledTwitter} />    |
-| IconFilledWhatsApp     |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledWhatsApp} />   |
-| IconFilledFigma        |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledFigma} />      |
+| Name               |                                  Preview                                  |
+| ------------------ | :-----------------------------------------------------------------------: |
+| IconFilledYoutube  | <Icon overrides={{size: 'iconSize050'}} Component={IconFilledYoutube} />  |
+| IconFilledGitHub   |  <Icon overrides={{size: 'iconSize050'}} Component={IconFilledGitHub}/>   |
+| IconFilledFacebook | <Icon overrides={{size: 'iconSize050'}} Component={IconFilledFacebook} /> |
+| IconFilledTwitter  | <Icon overrides={{size: 'iconSize050'}} Component={IconFilledTwitter} />  |
+| IconFilledWhatsApp | <Icon overrides={{size: 'iconSize050'}} Component={IconFilledWhatsApp} /> |
+| IconFilledFigma    |  <Icon overrides={{size: 'iconSize050'}} Component={IconFilledFigma} />   |
 
-<InlineMessage title="Warning" overrides={{stylPreset: 'inlineMessageNegative'}}>
-  From version newskit@6 we don't export emotion icons anymore.<br /> Please read bellow how to to import and use emotions icons in your project.
+<InlineMessage
+  title="Warning"
+  overrides={{stylPreset: 'inlineMessageNegative'}}
+>
+  From version newskit@6 we don't export emotion icons anymore.
+  <br /> Please read bellow how to to import and use emotions icons in your project.
 </InlineMessage>
 
 ## Props
@@ -151,7 +153,7 @@ export const IconFilledFacebook = customToNewsKitIcon(
 
 ## Using Emotion icons
 
-From version `newskit@6.0.0` we do not export emotion-icons anymore. In order to contunie using these icons you will need to import them directly from `emotion-icons` package and covert them to NewsKit icons using `customToNewsKitIcon` utility function. 
+From version `newskit@6.0.0` we do not export emotion-icons anymore. In order to contunie using these icons you will need to import them directly from `emotion-icons` package and covert them to NewsKit icons using `customToNewsKitIcon` utility function.
 
 You can find the list of available icons in the <Link href="https://emotion-icons.dev/" target="_blank">emotion-icons.dev</Link> page.
 
@@ -164,7 +166,6 @@ You can find the list of available icons in the <Link href="https://emotion-icon
     );
   `}
 </Code>
-
 
 ## Rationale
 
