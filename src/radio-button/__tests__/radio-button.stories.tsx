@@ -10,13 +10,8 @@ import {
 import {RadioButton} from '..';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils';
-import {
-  Cell,
-  Grid,
-  GridLayout,
-  IconFilledCancel,
-  IconFilledStarOutline,
-} from '../..';
+import {Cell, Grid, GridLayout} from '../..';
+import {IconFilledCancel, IconFilledStarOutline} from '../../icons';
 import {states, sizes} from './helpers';
 import {RadioGroup} from '../radio-group';
 import {RadioButtonIconProps} from '../types';

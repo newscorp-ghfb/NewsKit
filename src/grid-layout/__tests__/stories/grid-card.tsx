@@ -5,7 +5,8 @@ import {Block} from '../../../block';
 import {styled} from '../../../utils/style';
 import {Button} from '../../../button';
 import {Image} from '../../../image';
-import {Flag, getMediaQueryFromTheme, IconFilledEmail} from '../../..';
+import {Flag, getMediaQueryFromTheme} from '../../..';
+import {IconFilledEmail} from '../../../icons';
 import {GridLayout} from '../../grid-layout';
 
 const StyledAdvancedCard = styled(GridLayout)`

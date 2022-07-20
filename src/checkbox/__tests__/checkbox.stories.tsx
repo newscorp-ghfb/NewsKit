@@ -9,13 +9,8 @@ import {
 import {Checkbox} from '..';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils';
-import {
-  Cell,
-  Grid,
-  GridLayout,
-  IconFilledCancel,
-  IconFilledStarOutline,
-} from '../..';
+import {Cell, Grid, GridLayout} from '../..';
+import {IconFilledCancel, IconFilledStarOutline} from '../../icons';
 import {CheckboxIconProps} from '../types';
 import {states, sizes} from './helpers';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
