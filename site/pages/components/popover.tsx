@@ -1,5 +1,5 @@
 import React from 'react';
-import {InlineMessage, IconFilledInfo, UnorderedList} from 'newskit';
+import {Block, InlineMessage, IconFilledInfo, UnorderedList} from 'newskit';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
@@ -781,6 +781,26 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
                 'Overrides the edgeOffset of the Popover indicator. The edgeOffset is the padding between the indicator and the edges of the popover container.',
             },
           ],
+          propsFooter: (
+            <>
+              <Block spaceStack="space070" />
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="Radio validation"
+                title="Note"
+              >
+                If the Popover is wrapping a functional component, ensure that
+                the functional component accepts a ref using{' '}
+                <Link
+                  href="https://reactjs.org/docs/forwarding-refs.html"
+                  target="_blank"
+                >
+                  forwardRef.
+                </Link>
+              </InlineMessage>
+            </>
+          ),
         },
       ],
     }}
