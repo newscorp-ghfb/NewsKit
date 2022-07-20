@@ -28,7 +28,15 @@ export const StyledGridLayout = styled(GridLayout)<
     layout === 'vertical' &&
     `
     position: relative;
+    
   `};
+  ${({layout}) =>
+    layout !== 'vertical' &&
+    `.slider {
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s linear all;
+}`};
   ${({layout}) =>
     getResponsiveSpace(
       layout === 'vertical' ? 'rowGap' : 'columnGap',
@@ -36,4 +44,16 @@ export const StyledGridLayout = styled(GridLayout)<
       '',
       'spaceBetween',
     )};
+`;
+
+export const TestContainer = styled.div<
+  Pick<AudioPlayerVolumeControlProps, 'layout'>
+>`
+  ${({layout}) =>
+    layout !== 'vertical' &&
+    `&:hover .slider {
+    margin-left: 8px;
+    width: 100px;
+    overflow: visible;
+}`}
 `;
