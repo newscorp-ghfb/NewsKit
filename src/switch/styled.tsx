@@ -78,7 +78,19 @@ export const StyledThumb = styled.div<
       'size',
     )}
   ${({size}) =>
-    getResponsiveSize('padding', `switch.${size}.thumb`, 'thumb', 'spaceInset')}
+    getResponsiveSize(
+      'paddingInline',
+      `switch.${size}.thumb`,
+      'thumb',
+      'paddingInline',
+    )}
+  ${({size}) =>
+    getResponsiveSize(
+      'paddingBlock',
+      `switch.${size}.thumb`,
+      'thumb',
+      'paddingBlock',
+    )}
   position: absolute;
   aspect-ratio: 1/1;
   ${({size}) => getTransitionPreset(`switch.${size}.thumb`, 'thumb')}
