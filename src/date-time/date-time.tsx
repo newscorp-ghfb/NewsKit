@@ -58,7 +58,7 @@ const ThemelessDateTime = React.forwardRef<HTMLParagraphElement, DateTimeProps>(
     const logicalPropsOverrides = extractLogicalPropsFromOverrides(overrides);
 
     return (
-      <div ref={ref}>
+      <span ref={ref}>
         <StyledTime {...logicalPropsOverrides}>
           {prefix && (
             <StyledPrefix as="span" {...prefixPresets}>
@@ -75,7 +75,7 @@ const ThemelessDateTime = React.forwardRef<HTMLParagraphElement, DateTimeProps>(
             </StyledSuffix>
           )}
         </StyledTime>
-      </div>
+      </span>
     );
   },
 );
