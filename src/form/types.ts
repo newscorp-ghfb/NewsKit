@@ -21,8 +21,7 @@ export interface FormProps
   children: React.ReactNode;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onSubmit: SubmitHandler<Record<string, any>>;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  onSubmitInvalid?: SubmitErrorHandler<Record<string, any>>;
+  onSubmitInvalid?: SubmitErrorHandler<Record<string, string>>;
   validationMode?: 'onBlur' | 'onSubmit';
   reValidationMode?: 'onBlur' | 'onSubmit';
   defaultValues?: Record<string, string>;

@@ -41,29 +41,4 @@ export type GridLayoutProps = {
     minHeight?: MQ<string>;
     maxHeight?: MQ<string>;
   } & LogicalProps;
-} & React.HTMLAttributes<HTMLDivElement>;
-
-// export interface GridLayoutProps
-//   extends Omit<React.HTMLAttributes<HTMLDivElement>, 'children'> {
-//   rowGap?: MQ<string>;
-//   columnGap?: MQ<string>;
-//   rows?: MQ<string>;
-//   columns?: MQ<string>;
-//   justifyContent?: MQ<string>;
-//   alignContent?: MQ<string>;
-//   justifyItems?: MQ<string>;
-//   alignItems?: MQ<string>;
-//   areas?: MQ<string>;
-//   inline?: MQ<boolean>;
-//   children?: React.ReactNode | ((areas: AreasMap) => React.ReactNode);
-//   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-//   as?: React.ElementType<any>;
-//   overrides?: {
-//     width?: MQ<string>;
-//     minWidth?: MQ<string>;
-//     maxWidth?: MQ<string>;
-//     height?: MQ<string>;
-//     minHeight?: MQ<string>;
-//     maxHeight?: MQ<string>;
-//   } & LogicalProps;
-// }
+} & Omit<React.HTMLAttributes<HTMLDivElement>, 'children'>;

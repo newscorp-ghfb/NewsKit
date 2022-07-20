@@ -6,7 +6,7 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import {useForm, FormProvider} from 'react-hook-form';
+import {useForm, FormProvider, Control, FieldValues} from 'react-hook-form';
 import {FormProps, FormRef, FieldsHadErrorObject} from './types';
 import {FormValidationContextProvider} from './context';
 import {excludeReactHookFormProps} from './utils';
@@ -89,7 +89,8 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
       getValues: formContext.getValues,
       trigger: formContext.trigger,
       element: formRef.current,
-      control: formContext.control,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      control: formContext.control as Control<FieldValues, any>,
     }),
     [defaultValues, formContext, setAllFieldsHadErrorToFalse],
   );

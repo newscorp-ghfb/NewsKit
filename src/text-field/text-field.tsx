@@ -32,7 +32,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     const [isFocused, setIsFocused] = React.useState(false);
 
     const onInputFocus = React.useCallback(
-      event => {
+      (event: React.FocusEvent<HTMLInputElement, Element>) => {
         setIsFocused(true);
         fireEvent({
           originator: eventOriginator,
@@ -49,7 +49,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     );
 
     const onInputBlur = React.useCallback(
-      event => {
+      (event: React.FocusEvent<HTMLInputElement, Element>) => {
         if (onBlur) {
           onBlur(event);
         }
@@ -59,7 +59,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     );
 
     const onInputChange = React.useCallback(
-      event => {
+      (event: React.ChangeEvent<HTMLInputElement>) => {
         if (onChange) {
           onChange(event);
         }

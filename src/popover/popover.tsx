@@ -87,7 +87,7 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
             </StyledPopoverHeader>
           )}
           <StyledPopoverContent overrides={overrides}>
-            {content}
+            <>{content}</>
           </StyledPopoverContent>
           {closePosition !== 'none' && (
             <StyledPopoverCloseButtonContainer

@@ -58,9 +58,10 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
     ),
   };
 
-  const onSliderChange = useCallback(([newVolume]) => onChange(newVolume), [
-    onChange,
-  ]);
+  const onSliderChange = useCallback(
+    ([newVolume]: number[]) => onChange(newVolume),
+    [onChange],
+  );
 
   // useInitialVolume Sets the initial volume on page load
   useInitialVolume({onChange, initialVolume});

@@ -22,6 +22,7 @@ export type EventHandler = (
 ) => InstrumentationEvent[];
 
 export interface EventInstrumentation {
+  children?: React.ReactNode;
   context: EventContext;
   fireEvent: (event: InstrumentationEvent) => void;
 }

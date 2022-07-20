@@ -19,7 +19,8 @@ export const renderWithImplementation = <T extends {}>(
 ) =>
   renderer(<Component {...(props as T)} />, {
     ...options,
-    wrapper: ({children}) => (
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    wrapper: ({children}: any) => (
       <InstrumentationProvider fireEvent={fireEvent}>
         <ThemeProvider theme={newskitLightTheme}>{children}</ThemeProvider>
       </InstrumentationProvider>
@@ -36,7 +37,8 @@ export const renderWithThemeFactory = (
 ) =>
   renderer(<Component {...(props as T)} />, {
     ...options,
-    wrapper: ({children}) => (
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    wrapper: ({children}: any) => (
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     ),
   });

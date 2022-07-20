@@ -15,8 +15,8 @@ export const StyledFloatingElement = styled.div<
   {
     strategy: Strategy;
     placement: Placement;
-    $x?: number;
-    $y?: number;
+    $x?: number | null;
+    $y?: number | null;
     hidePointer: boolean;
     baseTransitionClassname: string;
   } & Pick<BaseFloatingElementProps, 'overrides' | 'path'>

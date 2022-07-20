@@ -2,6 +2,7 @@
 import {HeightProperty, WidthProperty} from 'csstype';
 
 export interface GetAspectRatioProp {
+  children?: React.ReactNode;
   aspectRatio?: string;
   height?: HeightProperty<string>;
   width?: WidthProperty<string>;

@@ -7,6 +7,7 @@ export type PopoverProps = Omit<
   FloatingElementProps,
   'trigger' | 'overrides'
 > & {
+  children: React.ReactNode;
   closePosition?: 'left' | 'right' | 'none';
   header?: React.ReactNode;
   handleCloseButtonClick?: () => void;

@@ -197,9 +197,9 @@ const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
               invalid={!!errorText}
               valid={valid}
               role={errorText && 'alert'}
-              aria-live={errorText && 'polite'}
+              aria-live={errorText ? 'polite' : undefined}
             >
-              {errorText || assistiveText}
+              <>{errorText || assistiveText}</>
             </StyledAssistiveText>
           )}
         </StyledAssistiveTextContainer>

@@ -57,7 +57,7 @@ export const GridLayout = ({children, ...props}: GridLayoutProps) => {
 
   return (
     <StyledGridLayout {...props} areas={validCSSAreas as MQ<string>}>
-      {isFunctionWithAreas ? children(Areas) : children}
+      <>{isFunctionWithAreas ? children(Areas) : children}</>
     </StyledGridLayout>
   );
 };
