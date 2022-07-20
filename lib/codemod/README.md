@@ -26,3 +26,24 @@ Link this package in your global `node_modules` by running:
 cd lib/codemod
 yarn link
 ```
+
+## Included scripts
+The list includes these transformers
+
+- [`emotion-icons`](#emotion-icons)
+
+
+
+#### `emotion-icons`
+Imports and transform `newskit` icons to `emotion-icons`;
+
+```diff
+- import { IconFilledAccountTree } from 'newskit';
+
++ import {AccountTree as AccountTreeFilled} from '@emotion-icons/material/AccountTree';
++ const IconFilledAccountTree = toNewsKitIcon(AccountTreeFilled);
+```
+
+```sh
+npx @newskit/codemod emotion-icons <path>
+```
