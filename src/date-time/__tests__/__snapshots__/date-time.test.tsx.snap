@@ -36,17 +36,15 @@ exports[`DateTime renders with fallback formatting 1`] = `
   white-space: normal;
 }
 
-<span>
-    <time
-      class="emotion-0"
+<time
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
     >
-      <span
-        class="emotion-1"
-      >
-        Mock Date 
-      </span>
-    </time>
-  </span>
+      Mock Date 
+    </span>
+  </time>
 </DocumentFragment>
 `;
 
@@ -91,27 +89,25 @@ exports[`DateTime renders with logical props overrides 1`] = `
   white-space: normal;
 }
 
-<span>
-    <time
-      class="emotion-0"
+<time
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
     >
-      <span
-        class="emotion-1"
-      >
-        Updated: 
-      </span>
-      <span
-        class="emotion-1"
-      >
-        Mock Date, 
-      </span>
-      <span
-        class="emotion-1"
-      >
-        , The Times
-      </span>
-    </time>
-  </span>
+      Updated: 
+    </span>
+    <span
+      class="emotion-1"
+    >
+      Mock Date, 
+    </span>
+    <span
+      class="emotion-1"
+    >
+      , The Times
+    </span>
+  </time>
 </DocumentFragment>
 `;
 
@@ -175,27 +171,25 @@ exports[`DateTime renders with overrides 1`] = `
   white-space: normal;
 }
 
-<span>
-    <time
-      class="emotion-0"
+<time
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
     >
-      <span
-        class="emotion-1"
-      >
-        Updated: 
-      </span>
-      <span
-        class="emotion-2"
-      >
-        Mock Date, 
-      </span>
-      <span
-        class="emotion-1"
-      >
-        , The Times
-      </span>
-    </time>
-  </span>
+      Updated: 
+    </span>
+    <span
+      class="emotion-2"
+    >
+      Mock Date, 
+    </span>
+    <span
+      class="emotion-1"
+    >
+      , The Times
+    </span>
+  </time>
 </DocumentFragment>
 `;
 
@@ -235,26 +229,24 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
   white-space: normal;
 }
 
-<span>
-    <time
-      class="emotion-0"
+<time
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
     >
-      <span
-        class="emotion-1"
-      >
-        Updated:  
-      </span>
-      <span
-        class="emotion-1"
-      >
-        Mock Date, 
-      </span>
-      <span
-        class="emotion-1"
-      >
-        , The Times
-      </span>
-    </time>
-  </span>
+      Updated:  
+    </span>
+    <span
+      class="emotion-1"
+    >
+      Mock Date, 
+    </span>
+    <span
+      class="emotion-1"
+    >
+      , The Times
+    </span>
+  </time>
 </DocumentFragment>
 `;

@@ -19,6 +19,9 @@ const StyledDateText = styled(TextBlock)`
     white-space: normal;
   }
 `;
+const StyledTime = styled.time`
+  ${logicalProps('dateTime')}
+`;
 
 const StyledPrefix = StyledDateText;
 const StyledSuffix = StyledDateText;
@@ -51,31 +54,25 @@ const ThemelessDateTime = React.forwardRef<HTMLParagraphElement, DateTimeProps>(
     const datePresets = getPresets('');
     const suffixPresets = getPresets('suffix');
 
-    const StyledTime = styled.time`
-      ${logicalProps('dateTime')}
-    `;
-
     const logicalPropsOverrides = extractLogicalPropsFromOverrides(overrides);
 
     return (
-      <span ref={ref}>
-        <StyledTime {...logicalPropsOverrides}>
-          {prefix && (
-            <StyledPrefix as="span" {...prefixPresets}>
-              {`${prefix} `}
-            </StyledPrefix>
-          )}
-          <StyledDateText as="span" {...datePresets}>
-            {format(new Date(date), dateFormat)}
-            {suffix ? `, ` : ` `}
-          </StyledDateText>
-          {suffix && (
-            <StyledSuffix as="span" {...suffixPresets}>
-              {suffix}
-            </StyledSuffix>
-          )}
-        </StyledTime>
-      </span>
+      <StyledTime {...logicalPropsOverrides} ref={ref}>
+        {prefix && (
+          <StyledPrefix as="span" {...prefixPresets}>
+            {`${prefix} `}
+          </StyledPrefix>
+        )}
+        <StyledDateText as="span" {...datePresets}>
+          {format(new Date(date), dateFormat)}
+          {suffix ? `, ` : ` `}
+        </StyledDateText>
+        {suffix && (
+          <StyledSuffix as="span" {...suffixPresets}>
+            {suffix}
+          </StyledSuffix>
+        )}
+      </StyledTime>
     );
   },
 );
