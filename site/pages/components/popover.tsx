@@ -150,7 +150,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="Radio validation"
+                aria-label="Aria principles"
                 title="Note"
               >
                 The close icon button is optional. However, it‘s recommended
@@ -784,7 +784,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="Radio validation"
+                aria-label="ForwardRef"
                 title="Note"
               >
                 If the Popover is wrapping a functional component, ensure that
