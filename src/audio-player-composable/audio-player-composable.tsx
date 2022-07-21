@@ -33,6 +33,7 @@ import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
 import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
 import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
 import {AudioPlayerVolumeControlProps} from './components/volume-control/types';
+import {AudioPlayerPlaybackSpeedControlProps} from './components/playback-speed-control';
 
 const defaultKeyboardShortcuts = {
   jumpToStart: ['0', 'Home'],
@@ -47,6 +48,7 @@ export const AudioPlayerComposable = ({
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
   initialVolume = 0.7,
+  initialTime = 0,
   ...props
 }: AudioPlayerComposableProps) => {
   const currentTimeRef = useRef(0);
@@ -60,6 +62,7 @@ export const AudioPlayerComposable = ({
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [volume, setVolume] = useState(0);
+  const [playbackSpeed, setPlaybackSpeed] = useState(1);
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [displayDuration, setDisplayDuration] = useState(0);
@@ -71,9 +74,15 @@ export const AudioPlayerComposable = ({
   });
 
   useEffect(() => {
+    // On render onTimeUpdate will be fired and initialTime will be set as a value for currentTime state.
+    // I can't set this one to the setCurrentTime state directly as the audioElement time
+    // will still be 0, currentTime will be overridden to 0 and the audio will start from 0
+    if (audioRef && audioRef.current) {
+      audioRef.current.currentTime = initialTime;
+    }
     setCurrentTime(0);
     setDisplayDuration(0);
-  }, [src]);
+  }, [src, initialTime]);
 
   const {
     audioEvents,
@@ -82,6 +91,7 @@ export const AudioPlayerComposable = ({
     onClickForward,
     onClickBackward,
     onChangeVolumeSlider,
+    onPlaybackSpeedChange,
   } = useAudioFunctions({
     autoPlay,
     audioRef,
@@ -97,6 +107,7 @@ export const AudioPlayerComposable = ({
     duration,
     setDuration,
     setVolume,
+    setPlaybackSpeed,
     src,
     live,
   } as AudioFunctionDependencies);
@@ -209,14 +220,14 @@ export const AudioPlayerComposable = ({
 
   const getVolumeControlProps = useCallback(
     ({
-      vertical,
+      layout,
       overrides,
       keyboardShortcuts,
       collapsed,
       muteButtonSize,
     }: AudioPlayerVolumeControlProps) => ({
       keyboardShortcuts,
-      vertical,
+      layout,
       overrides: overrides || {},
       onChange: onChangeVolumeSlider,
       volume,
@@ -224,7 +235,22 @@ export const AudioPlayerComposable = ({
       initialVolume,
       muteButtonSize,
     }),
-    [volume, onChangeVolumeSlider],
+    [volume, initialVolume, onChangeVolumeSlider],
+  );
+
+  const getPlaybackSpeedControlProps = useCallback(
+    ({
+      overrides,
+      buttonSize,
+      useModal = {},
+    }: AudioPlayerPlaybackSpeedControlProps) => ({
+      overrides: overrides || {},
+      onChange: onPlaybackSpeedChange,
+      buttonSize,
+      useModal,
+      playbackSpeed,
+    }),
+    [onPlaybackSpeedChange, playbackSpeed],
   );
 
   const getSkipPreviousButtonProps = useCallback(
@@ -278,6 +304,7 @@ export const AudioPlayerComposable = ({
       getForwardButtonProps,
       getReplayButtonProps,
       getVolumeControlProps,
+      getPlaybackSpeedControlProps,
     }),
     [
       getVolumeControlProps,
@@ -289,6 +316,7 @@ export const AudioPlayerComposable = ({
       getSkipNextButtonProps,
       getForwardButtonProps,
       getReplayButtonProps,
+      getPlaybackSpeedControlProps,
     ],
   );
 

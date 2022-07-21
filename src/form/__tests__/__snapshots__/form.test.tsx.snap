@@ -192,6 +192,21 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-15:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-15:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-15 {
     transition-property: background-color;
@@ -581,6 +596,21 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
 
 .emotion-19:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-19:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-19:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1024,6 +1054,21 @@ exports[`Form renders with error and with submit validation and revalidation mod
 
 .emotion-21:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-21:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-21:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1577,6 +1622,21 @@ exports[`Form renders with error on blur 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-18:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-18:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -2013,6 +2073,21 @@ exports[`Form renders with error on submit 1`] = `
 
 .emotion-21:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-21:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-21:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2564,6 +2639,21 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-18:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-18:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-18:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3383,6 +3473,21 @@ exports[`Form renders with nested inputs 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-15:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-15:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-15 {
     transition-property: background-color;
@@ -3749,6 +3854,21 @@ exports[`Form renders with onBlur validation 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-15:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-15:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-15 {
     transition-property: background-color;
@@ -3984,8 +4104,19 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -3998,7 +4129,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-2:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4012,7 +4143,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4265,8 +4396,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
+  width: 1px;
+  height: 1px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4321,8 +4452,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4459,6 +4590,207 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-25:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:invalid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  border-color: #D20600;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:invalid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:invalid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:invalid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:valid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:valid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:valid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:valid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:invalid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:invalid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:invalid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:invalid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:valid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:valid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:valid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:valid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-25 {
     transition-property: background-color,border-color;
@@ -4479,7 +4811,6 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -4503,8 +4834,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4682,6 +5013,147 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-33:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-33:checked:focus-visible:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-33:checked:focus-visible:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:valid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+.emotion-33:checked:valid:focus-visible:not(:disabled) svg {
+  fill: #148F39;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:valid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:valid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-33:checked:valid:focus-visible:hover:not(:disabled) svg {
+  fill: #0A782A;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:valid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:invalid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #D20600;
+}
+
+.emotion-33:checked:invalid:focus-visible:not(:disabled) svg {
+  fill: #D20600;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:invalid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:invalid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-33:checked:invalid:focus-visible:hover:not(:disabled) svg {
+  fill: #A60100;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:invalid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-33 {
     transition-property: background-color,border-color,fill;
@@ -4800,6 +5272,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         data-testid="select-pizza-topping"
         id="email"
         name="email"
+        required=""
         type="button"
         value=""
       >
@@ -4872,6 +5345,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         >
           <input
             aria-describedby="email-assistive-text"
+            aria-required="true"
             class="emotion-26"
             data-testid="checkbox-input"
             id="email"
@@ -4914,6 +5388,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
+              aria-required="true"
               class="emotion-26"
               data-testid="radio-input"
               id="email"
@@ -4945,6 +5420,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
+              aria-required="true"
               class="emotion-26"
               data-testid="radio-input"
               id="email"
@@ -4976,6 +5452,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
+              aria-required="true"
               class="emotion-26"
               data-testid="radio-input"
               id="email"
@@ -5058,8 +5535,19 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -5072,7 +5560,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-2:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5086,7 +5574,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5339,8 +5827,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
+  width: 1px;
+  height: 1px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5395,8 +5883,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5533,6 +6021,207 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-25:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:invalid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  border-color: #D20600;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:invalid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:invalid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:invalid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:valid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:valid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:valid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:valid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:invalid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:invalid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:invalid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:invalid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:valid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:valid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-25:checked:valid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:checked:valid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-25 {
     transition-property: background-color,border-color;
@@ -5553,7 +6242,6 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -5577,8 +6265,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5756,6 +6444,147 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-33:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-33:checked:focus-visible:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-33:checked:focus-visible:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:valid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+.emotion-33:checked:valid:focus-visible:not(:disabled) svg {
+  fill: #148F39;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:valid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:valid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-33:checked:valid:focus-visible:hover:not(:disabled) svg {
+  fill: #0A782A;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:valid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:invalid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #D20600;
+}
+
+.emotion-33:checked:invalid:focus-visible:not(:disabled) svg {
+  fill: #D20600;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:invalid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-33:checked:invalid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-33:checked:invalid:focus-visible:hover:not(:disabled) svg {
+  fill: #A60100;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-33:checked:invalid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-33 {
     transition-property: background-color,border-color,fill;
@@ -5874,6 +6703,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         data-testid="select-pizza-topping"
         id="email"
         name="email"
+        required=""
         type="button"
         value=""
       >
@@ -5946,6 +6776,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         >
           <input
             aria-describedby="email-assistive-text"
+            aria-required="true"
             class="emotion-26"
             data-testid="checkbox-input"
             id="email"
@@ -5988,6 +6819,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
+              aria-required="true"
               class="emotion-26"
               data-testid="radio-input"
               id="email"
@@ -6019,6 +6851,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
+              aria-required="true"
               class="emotion-26"
               data-testid="radio-input"
               id="email"
@@ -6050,6 +6883,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
+              aria-required="true"
               class="emotion-26"
               data-testid="radio-input"
               id="email"
@@ -6139,8 +6973,19 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -6153,7 +6998,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6167,7 +7012,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6452,8 +7297,19 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -6466,7 +7322,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6480,7 +7336,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6615,6 +7471,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
       data-testid="select-pizza-topping"
       id="email"
       name="email"
+      required=""
       type="button"
     >
       <div
@@ -6760,8 +7617,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
+  width: 1px;
+  height: 1px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -6816,8 +7673,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6954,6 +7811,207 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:invalid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  border-color: #D20600;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:invalid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:invalid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:invalid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:valid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:valid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:valid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:valid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:invalid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:invalid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:invalid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:invalid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:valid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:valid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:valid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:valid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color;
@@ -6974,7 +8032,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -7010,6 +8067,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
       >
         <input
           aria-describedby="email-assistive-text"
+          aria-required="true"
           class="emotion-4"
           data-testid="checkbox-input"
           id="email"
@@ -7125,8 +8183,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
+  width: 1px;
+  height: 1px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -7181,8 +8239,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7360,6 +8418,147 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-3:checked:focus-visible:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus-visible:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:valid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus-visible:not(:disabled) svg {
+  fill: #148F39;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:valid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:valid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:focus-visible:hover:not(:disabled) svg {
+  fill: #0A782A;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:valid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:invalid:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FAFAFA;
+  border-color: #D20600;
+}
+
+.emotion-3:checked:invalid:focus-visible:not(:disabled) svg {
+  fill: #D20600;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:invalid:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:invalid:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus-visible:hover:not(:disabled) svg {
+  fill: #A60100;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:invalid:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color,fill;
@@ -7380,7 +8579,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -7417,6 +8615,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
         >
           <input
             aria-describedby="email-assistive-text"
+            aria-required="true"
             class="emotion-4"
             data-testid="radio-input"
             id="email"
@@ -7448,6 +8647,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
         >
           <input
             aria-describedby="email-assistive-text"
+            aria-required="true"
             class="emotion-4"
             data-testid="radio-input"
             id="email"
@@ -7479,6 +8679,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
         >
           <input
             aria-describedby="email-assistive-text"
+            aria-required="true"
             class="emotion-4"
             data-testid="radio-input"
             id="email"
@@ -7548,15 +8749,26 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   margin-bottom: 8px;
   background-color: #FAFAFA;
   border-style: solid;
-  border-color: #3358CC;
+  border-color: #3768FB;
   border-width: 1px;
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
 }
 
 .emotion-2 svg {
   fill: #2E2E2E;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2 {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-3 {
@@ -7778,7 +8990,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 }
 
 .emotion-13:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -7839,6 +9051,21 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 
 .emotion-20:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-20:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-20:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8161,8 +9388,19 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -8175,7 +9413,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -8189,7 +9427,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -8474,8 +9712,19 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -8488,7 +9737,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -8502,7 +9751,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -8687,6 +9936,21 @@ exports[`FormInput renders with nested inputs 1`] = `
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

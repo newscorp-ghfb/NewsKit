@@ -1,4 +1,5 @@
 import {StylePreset} from '../../../theme/types';
+import {defaultFocusVisible} from '../../../utils/default-focus-visible';
 
 export default {
   audioPlayerVolumeControlIndicator: {
@@ -25,11 +26,26 @@ export default {
       backgroundColor: '{{colors.interactivePrimary050}}',
       iconColor: '{{colors.inkSubtle}}',
     },
+    'focus-visible': {
+      ...defaultFocusVisible,
+      safariOutlineOffset: '-7px',
+    },
   },
   audioPlayerVolumeControlTrack: {
     base: {
       backgroundColor: '{{colors.interface030}}',
       borderRadius: '{{borders.borderRadiusPill}}',
+    },
+  },
+  audioPlayerVolumeControlHorizontalContainer: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+    },
+  },
+  audioPlayerVolumeControlVerticalContainer: {
+    base: {
+      backgroundColor: '{{colors.interface010}}',
+      boxShadow: '{{shadows.shadow050}}',
     },
   },
 } as Record<string, StylePreset>;

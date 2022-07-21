@@ -1,4 +1,59 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
+
+const checked = {
+  backgroundColor: '{{colors.interactiveInput040}}',
+  borderColor: '{{colors.interactiveInput040}}',
+};
+
+const invalid = {
+  borderColor: '{{colors.interactiveNegative040}}',
+};
+
+const checkedInvalid = {
+  backgroundColor: '{{colors.interactiveNegative040}}',
+  borderColor: '{{colors.interactiveNegative040}}',
+};
+
+const valid = {
+  backgroundColor: '{{colors.interactiveInput010}}',
+  borderColor: '{{colors.interactivePositive040}}',
+};
+
+const checkedValid = {
+  backgroundColor: '{{colors.interactivePositive040}}',
+  borderColor: '{{colors.interactivePositive040}}',
+};
+
+const hover = {
+  backgroundColor: '{{colors.interactiveInput030}}',
+  borderColor: '{{colors.interactiveInput050}}',
+};
+
+const checkedHover = {
+  backgroundColor: '{{colors.interactiveInput050}}',
+  borderColor: '{{colors.interactiveInput050}}',
+};
+
+const invalidHover = {
+  backgroundColor: '{{colors.interactiveNegative010}}',
+  borderColor: '{{colors.interactiveNegative050}}',
+};
+
+const checkedInvalidHover = {
+  backgroundColor: '{{colors.interactiveNegative050}}',
+  borderColor: '{{colors.interactiveNegative050}}',
+};
+
+const validHover = {
+  backgroundColor: '{{colors.interactivePositive010}}',
+  borderColor: '{{colors.interactivePositive050}}',
+};
+
+const checkedValidHover = {
+  backgroundColor: '{{colors.interactivePositive050}}',
+  borderColor: '{{colors.interactivePositive050}}',
+};
 
 export default {
   checkboxInput: {
@@ -10,95 +65,29 @@ export default {
       borderStyle: 'solid',
       iconColor: '{{colors.inkInverse}}',
     },
-    hover: {
-      backgroundColor: '{{colors.interactiveInput030}}',
-      borderColor: '{{colors.interactiveInput050}}',
-    },
+    hover,
     focus: {},
-    'focus:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
-      borderColor: '{{colors.interactiveInput050}}',
-    },
-    checked: {
-      backgroundColor: '{{colors.interactiveInput040}}',
-      borderColor: '{{colors.interactiveInput040}}',
-    },
-    'checked:hover': {
-      backgroundColor: '{{colors.interactiveInput050}}',
-      borderColor: '{{colors.interactiveInput050}}',
-    },
-    'checked:focus': {
-      backgroundColor: '{{colors.interactiveInput040}}',
-      borderColor: '{{colors.interactiveInput040}}',
-    },
-    'checked:focus:hover': {
-      backgroundColor: '{{colors.interactiveInput050}}',
-      borderColor: '{{colors.interactiveInput050}}',
-    },
-    invalid: {
-      borderColor: '{{colors.interactiveNegative040}}',
-    },
-    'invalid:hover': {
-      backgroundColor: '{{colors.interactiveNegative010}}',
-      borderColor: '{{colors.interactiveNegative050}}',
-    },
-    'invalid:focus': {
-      borderColor: '{{colors.interactiveNegative040}}',
-    },
-
-    'invalid:focus:hover': {
-      backgroundColor: '{{colors.interactiveNegative010}}',
-      borderColor: '{{colors.interactiveNegative050}}',
-    },
-    'checked:invalid': {
-      backgroundColor: '{{colors.interactiveNegative040}}',
-      borderColor: '{{colors.interactiveNegative040}}',
-    },
-    'checked:invalid:focus': {
-      backgroundColor: '{{colors.interactiveNegative040}}',
-      borderColor: '{{colors.interactiveNegative040}}',
-    },
-    'checked:invalid:hover': {
-      backgroundColor: '{{colors.interactiveNegative050}}',
-      borderColor: '{{colors.interactiveNegative050}}',
-    },
-    'checked:invalid:focus:hover': {
-      backgroundColor: '{{colors.interactiveNegative050}}',
-      borderColor: '{{colors.interactiveNegative050}}',
-    },
-    valid: {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactivePositive040}}',
-    },
-    'valid:hover': {
-      backgroundColor: '{{colors.interactivePositive010}}',
-      borderColor: '{{colors.interactivePositive050}}',
-    },
-    'valid:focus': {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactivePositive040}}',
-    },
-
-    'valid:focus:hover': {
-      backgroundColor: '{{colors.interactivePositive010}}',
-      borderColor: '{{colors.interactivePositive050}}',
-    },
-    'checked:valid': {
-      backgroundColor: '{{colors.interactivePositive040}}',
-      borderColor: '{{colors.interactivePositive040}}',
-    },
-    'checked:valid:focus': {
-      backgroundColor: '{{colors.interactivePositive040}}',
-      borderColor: '{{colors.interactivePositive040}}',
-    },
-    'checked:valid:hover': {
-      backgroundColor: '{{colors.interactivePositive050}}',
-      borderColor: '{{colors.interactivePositive050}}',
-    },
-    'checked:valid:focus:hover': {
-      backgroundColor: '{{colors.interactivePositive050}}',
-      borderColor: '{{colors.interactivePositive050}}',
-    },
+    'focus:hover': hover,
+    checked,
+    'checked:hover': checkedHover,
+    'checked:focus': checked,
+    'checked:focus:hover': checkedHover,
+    invalid,
+    'invalid:hover': invalidHover,
+    'invalid:focus': invalid,
+    'invalid:focus:hover': invalidHover,
+    'checked:invalid': checkedInvalid,
+    'checked:invalid:focus': checkedInvalid,
+    'checked:invalid:hover': checkedInvalidHover,
+    'checked:invalid:focus:hover': checkedInvalidHover,
+    valid,
+    'valid:hover': validHover,
+    'valid:focus': valid,
+    'valid:focus:hover': validHover,
+    'checked:valid': checkedValid,
+    'checked:valid:focus': checkedValid,
+    'checked:valid:hover': checkedValidHover,
+    'checked:valid:focus:hover': checkedValidHover,
     disabled: {
       backgroundColor: '{{colors.transparent}}',
       borderColor: '{{colors.interactiveDisabled010}}',
@@ -107,6 +96,51 @@ export default {
       backgroundColor: '{{colors.interactiveDisabled010}}',
       borderColor: '{{colors.interactiveDisabled010}}',
       iconColor: '{{colors.inkNonEssential}}',
+    },
+    'focus-visible': defaultFocusVisible,
+    'checked:focus-visible': {
+      ...defaultFocusVisible,
+      ...checked,
+    },
+    'invalid:focus-visible': {
+      ...defaultFocusVisible,
+      ...invalid,
+    },
+    'checked:invalid:focus-visible': {
+      ...defaultFocusVisible,
+      ...checkedInvalid,
+    },
+    'valid:focus-visible': {
+      ...defaultFocusVisible,
+      ...valid,
+    },
+    'checked:valid:focus-visible': {
+      ...defaultFocusVisible,
+      ...checkedValid,
+    },
+    'focus-visible:hover': {
+      ...defaultFocusVisible,
+      ...hover,
+    },
+    'checked:focus-visible:hover': {
+      ...defaultFocusVisible,
+      ...checkedHover,
+    },
+    'invalid:focus-visible:hover': {
+      ...defaultFocusVisible,
+      ...invalidHover,
+    },
+    'checked:invalid:focus-visible:hover': {
+      ...defaultFocusVisible,
+      ...checkedInvalidHover,
+    },
+    'valid:focus-visible:hover': {
+      ...defaultFocusVisible,
+      ...validHover,
+    },
+    'checked:valid:focus-visible:hover': {
+      ...defaultFocusVisible,
+      ...checkedValidHover,
     },
   },
 } as Record<string, StylePreset>;

@@ -177,6 +177,21 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-6:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-6:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-6 {
     transition-property: background-color;
@@ -1000,7 +1015,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
           <a
             aria-current="false"
             class="emotion-3"
-            href="/group1/page1"
+            href="group1/page1"
           >
             <div
               class="emotion-4"
@@ -1215,6 +1230,21 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 
 .emotion-6:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-6:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-6:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2008,6 +2038,21 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   fill: #C0C0C0;
 }
 
+.emotion-6:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-6:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-6 {
     transition-property: background-color;
@@ -2752,7 +2797,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
           <a
             aria-current="false"
             class="emotion-3"
-            href="/group1/page1"
+            href="group1/page1"
           >
             <div
               class="emotion-4"

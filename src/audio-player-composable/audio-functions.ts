@@ -21,6 +21,7 @@ export const useAudioFunctions = ({
   setCurrentTime,
   setPlayState,
   setVolume,
+  setPlaybackSpeed,
   setDuration,
   setDisplayDuration,
   setBuffered,
@@ -117,6 +118,17 @@ export const useAudioFunctions = ({
       });
     },
     [ifPlayer, setVolume],
+  );
+
+  const updatePlaybackSpeed = useCallback(
+    (speed: number) => {
+      setPlaybackSpeed(speed);
+
+      ifPlayer(player => {
+        player.playbackRate = speed;
+      });
+    },
+    [ifPlayer, setPlaybackSpeed],
   );
 
   const onClickBackward = useCallback(
@@ -223,6 +235,7 @@ export const useAudioFunctions = ({
   const onTimeUpdate = useCallback(
     ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
       const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
+
       if (currentTimeRef.current !== eventTime) {
         setCurrentTime(eventTime);
 
@@ -255,6 +268,13 @@ export const useAudioFunctions = ({
       updateAudioVolume(value);
     },
     [updateAudioVolume],
+  );
+
+  const onPlaybackSpeedChange = useCallback(
+    (value: number) => {
+      updatePlaybackSpeed(value);
+    },
+    [updatePlaybackSpeed],
   );
 
   const onEnded = useCallback(() => {
@@ -301,5 +321,6 @@ export const useAudioFunctions = ({
     togglePlay,
     onChangeSlider,
     onChangeVolumeSlider,
+    onPlaybackSpeedChange,
   };
 };

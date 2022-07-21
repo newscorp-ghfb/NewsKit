@@ -29,6 +29,11 @@ export const newskitDarkThemeOverrides = {
     interactiveNegative020: '{{colors.red100}}',
     interactivePositive010: '{{colors.green090}}',
     interactivePositive020: '{{colors.green100}}',
+    interactiveInverse010: '{{colors.blackTint010}}',
+    interactiveInverse020: '{{colors.blackTint020}}',
+    interactiveInverse030: '{{colors.black}}',
+    interactiveInverse040: '{{colors.blackTint070}}',
+    interactiveInverse050: '{{colors.blackTint080}}',
     interfaceNotice010: '{{colors.amber030}}',
     interfaceBackground: '{{colors.neutral090}}',
     interface010: '{{colors.neutral090}}',
@@ -54,12 +59,21 @@ export const newskitDarkThemeOverrides = {
     interfaceSkeleton010: '{{colors.neutral090}}',
     interfaceSkeleton020: '{{colors.neutral080}}',
     inverse: '{{colors.black}}',
+    interfaceInformative010: '{{colors.teal050}}',
+    interfaceInformative020: '{{colors.teal070}}',
+    interfaceNegative010: '{{colors.red040}}',
+    interfaceNegative020: '{{colors.red070}}',
+    interactiveFocus010: '{{colors.white}}',
+    interfaceNeutral010: '{{colors.neutral030}}',
   },
   overlays: {
     overlayLightGradient010:
       'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)',
     overlayDarkGradient010:
       'linear-gradient(180deg, rgba(51, 51, 51, 0) 0%, #0A0A0A 100%)',
+  },
+  outline: {
+    safariOutlineStyleDefault: 'solid',
   },
 };
 

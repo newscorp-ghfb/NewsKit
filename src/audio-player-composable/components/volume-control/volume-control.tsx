@@ -10,11 +10,7 @@ import {BreakpointKeys, useTheme} from '../../../theme';
 import stylePresets from './style-presets';
 import {AudioPlayerVolumeControlProps} from './types';
 import {GridLayoutItem} from '../../../grid-layout';
-import {
-  StyledGridLayout,
-  StyledGridLayoutItem,
-  VolumeSliderContainer,
-} from './styled';
+import {StyledGridLayout, StyledVolumeSliderContainer} from './styled';
 import {useReactKeys} from '../../../utils/hooks';
 import {deepMerge} from '../../../utils/deep-merge';
 import {mergeBreakpointObject} from '../../../utils/merge-breakpoint-object';
@@ -26,7 +22,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   const {
     volume,
     onChange,
-    vertical,
+    layout = 'horizontal',
     collapsed = false,
     keyboardShortcuts,
     overrides,
@@ -49,7 +45,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   const buttonOverrides = {
     ...deepMerge(
       mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
-      theme.componentDefaults.audioPlayerVolumeControl.button,
+      theme.componentDefaults.audioPlayerVolumeControl[layout].button,
       filterOutFalsyProperties(overrides.button),
     ),
   };
@@ -57,7 +53,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   const sliderOverrides = {
     ...deepMerge(
       mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
-      theme.componentDefaults.audioPlayerVolumeControl.slider,
+      theme.componentDefaults.audioPlayerVolumeControl[layout].slider,
       filterOutFalsyProperties(overrides.slider),
     ),
   };
@@ -71,33 +67,35 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
 
   const verticalAreas = `slider
                          muteButton`;
-  const gridAreas = vertical ? verticalAreas : `muteButton slider`;
-  const gridColumns = vertical ? '1fr' : 'auto 1fr';
+  const gridAreas = layout === 'vertical' ? verticalAreas : `muteButton slider`;
+  const gridColumns = layout === 'vertical' ? '1fr' : 'auto 1fr';
   const [volumeSliderInstructionId] = useReactKeys(1);
 
   return (
     <StyledGridLayout
       columns={gridColumns}
       areas={gridAreas}
-      justifyItems={vertical ? 'center' : 'start'}
+      justifyItems={layout === 'vertical' ? 'center' : 'start'}
       alignItems="center"
-      vertical={vertical}
+      layout={layout}
+      collapsed={collapsed}
+      overrides={overrides}
     >
       <GridLayoutItem area="muteButton">
         <MuteButton
           volume={volume}
           unMutedVolume={unMutedVolume}
           onChange={onChange}
-          size={muteButtonSize || ButtonSize.Small}
+          size={muteButtonSize || ButtonSize.Medium}
           muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
           overrides={buttonOverrides}
         />
       </GridLayoutItem>
       {!collapsed && (
-        <StyledGridLayoutItem area="slider" vertical={vertical}>
-          <VolumeSliderContainer vertical={vertical}>
+        <GridLayoutItem area="slider">
+          <StyledVolumeSliderContainer layout={layout} overrides={overrides}>
             <Slider
-              vertical={vertical}
+              vertical={layout === 'vertical'}
               min={0}
               max={1}
               step={0.1}
@@ -112,8 +110,8 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
             <ScreenReaderOnly id={volumeSliderInstructionId} aria-hidden="true">
               Use the arrow keys to adjust volume
             </ScreenReaderOnly>
-          </VolumeSliderContainer>
-        </StyledGridLayoutItem>
+          </StyledVolumeSliderContainer>
+        </GridLayoutItem>
       )}
     </StyledGridLayout>
   );

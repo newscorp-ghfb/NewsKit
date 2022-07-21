@@ -1,0 +1,47 @@
+{
+  "name": "@newskit/codemod",
+  "version": "5.7.0",
+  "description": "You can use this CLI tool to run various scripts (codemods) that will help update NewsKit APIs",
+  "keywords": [
+    "react",
+    "newsuk",
+    "newskit"
+  ],
+  "license": "MIT",
+  "main": "src/cli.js",
+  "scripts": {
+    "test": "yarn jest --coverage",
+    "test:ci": "yarn jest --maxWorkers=2 --ci --reporters=default --reporters=jest-junit",
+    "lint:fix": "yarn lint --fix",
+    "lint": "eslint --report-unused-disable-directives --ext=.js,.ts --cache ."
+  },
+  "author": "newskit",
+  "dependencies": {
+    "chalk": "4.1.2",
+    "glob": "^8.0.3",
+    "jscodeshift": "^0.13.1",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-cup": "^2.0.4",
+    "eslint-plugin-header": "^3.1.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.0",
+    "jest-junit": "^11.1.0",
+    "prettier": "2.6.2",
+    "typescript": "^4.3.2"
+  },
+  "engines": {
+    "node": ">=16.9.1"
+  },
+  "bin": {
+    "newskit-codemod": "./src/cli.js"
+  }
+}

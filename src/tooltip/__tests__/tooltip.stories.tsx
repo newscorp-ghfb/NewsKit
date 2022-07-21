@@ -61,6 +61,22 @@ export const StoryTooltip = () => (
         <IconFilledTwitter />
       </IconButton>
     </Tooltip>
+    <StorybookSubHeading>Tooltip with disabled button</StorybookSubHeading>
+    <Tooltip
+      content="Action unavailable"
+      placement="right"
+      trigger={['focus', 'hover']}
+    >
+      <span>
+        <Button
+          size={ButtonSize.Small}
+          disabled
+          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+        >
+          Button
+        </Button>
+      </span>
+    </Tooltip>
     <StorybookSubHeading>Tooltip with button</StorybookSubHeading>
     <Tooltip
       content="Lorem ipsum dolor sit amet"
@@ -422,6 +438,12 @@ export const StoryTooltipOverrides = () => (
             stylePreset: 'tooltipPointerCustom',
             size: 'sizing030',
           },
+          transitionPreset: {
+            extend: 'fade',
+            base: {
+              transitionDelay: '{{motions.motionDuration050}}',
+            },
+          },
         }}
       >
         <Button
@@ -624,16 +646,14 @@ StoryTooltipPlacementsVisualTest.storyName = 'tooltip-placements-visual-test';
 export const StoryTooltipNoPointer = () => (
   <>
     <StorybookSubHeading>Tooltip no pointer</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTheme}>
-      <Tooltip content="Tooltip content" placement="right" hidePointer>
-        <Button
-          size={ButtonSize.Small}
-          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-        >
-          Button
-        </Button>
-      </Tooltip>
-    </ThemeProvider>
+    <Tooltip content="Tooltip content" placement="right" hidePointer>
+      <Button
+        size={ButtonSize.Small}
+        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+      >
+        Button
+      </Button>
+    </Tooltip>
   </>
 );
 StoryTooltipNoPointer.storyName = 'tooltip-no-pointer';

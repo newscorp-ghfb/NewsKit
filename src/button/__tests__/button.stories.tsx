@@ -1,8 +1,9 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Button} from '..';
 import {
-  getColorFromTheme,
   getTypographyPresetFromTheme,
+  getColorCssFromTheme,
   styled,
 } from '../../utils/style';
 import {ButtonOverrides, ButtonSize} from '../types';
@@ -10,8 +11,9 @@ import {IconFilledEmail} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
-import {StorybookSubHeading} from '../../test/storybook-comps';
-import {ThemeProvider, createTheme} from '../../theme';
+import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const Container = styled.div`
   margin: 24px;
@@ -36,7 +38,7 @@ const Block = styled.div`
   }
 `;
 
-const Label = styled.div`
+const Label = styled.div<{hasBackground?: boolean}>`
   height: 20px;
   padding: 8px 12px;
   margin: 12px 0;
@@ -44,6 +46,8 @@ const Label = styled.div`
   align-items: center;
   justify-content: center;
   ${getTypographyPresetFromTheme('utilityLabel020')};
+  ${({hasBackground}) =>
+    getColorCssFromTheme('color', hasBackground ? 'inkInverse' : 'inkBase')};
 `;
 
 const Spacer = styled.div`
@@ -52,16 +56,31 @@ const Spacer = styled.div`
 
 const Background = styled.div<{hasBackground?: boolean}>`
   margin-top: 24px;
-  ${({hasBackground, theme}) =>
-    hasBackground && {
-      background: getColorFromTheme('black')({theme}),
-      color: getColorFromTheme('white')({theme}),
-    }}
+  ${({hasBackground}) =>
+    hasBackground && getColorCssFromTheme('background', 'inkBase')};
 `;
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-text-input-theme',
+const buttonCustomThemeObject: CreateThemeArgs = {
+  name: 'button-custom-theme',
   overrides: {
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '500ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customBorderColourChange: {
+        base: {
+          transitionProperty: 'border-color',
+          transitionDuration: '500ms',
+          transitionDelay: '0ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
     stylePresets: {
       myButton: {
         base: {
@@ -73,9 +92,89 @@ const myCustomTheme = createTheme({
           backgroundColor: 'transparent',
         },
       },
+      testButtonStylePresetWithBorders: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+          borderColor: '{{colors.blue020}}',
+          borderStyle: 'solid',
+          borderWidth: '1px',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber070}}',
+          borderColor: '{{colors.green040}}',
+        },
+        active: {
+          backgroundColor: '{{colors.interactivePrimary050}}',
+        },
+        disabled: {
+          backgroundColor: '{{colors.interactiveDisabled010}}',
+        },
+        loading: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+        },
+      },
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
     },
   },
-});
+};
 
 interface IntentKindStylePreset {
   kind: string;
@@ -100,13 +199,17 @@ const ButtonIntentKindsScenario: React.FC<{
   overrides: ButtonOverrides;
 }> = ({hasBackground = false, name, buttonIntents: buttonKinds, overrides}) => (
   <Background hasBackground={hasBackground}>
-    <StorybookSubHeading>{name}</StorybookSubHeading>
+    <StorybookSubHeading stylePreset={hasBackground ? 'inkInverse' : undefined}>
+      {name}
+    </StorybookSubHeading>
     <Grid>
       <Cell xsHidden sm={3}>
         <Stack>
-          <h3>State</h3>
+          <StorybookH3 stylePreset={hasBackground ? 'inkInverse' : undefined}>
+            State
+          </StorybookH3>
           {states.map(state => (
-            <Label>{state}</Label>
+            <Label hasBackground={hasBackground}>{state}</Label>
           ))}
         </Stack>
       </Cell>
@@ -118,7 +221,11 @@ const ButtonIntentKindsScenario: React.FC<{
               spaceInline="space020"
               stackDistribution={StackDistribution.SpaceEvenly}
             >
-              <h3>{kind}</h3>
+              <StorybookH3
+                stylePreset={hasBackground ? 'inkInverse' : undefined}
+              >
+                {kind}
+              </StorybookH3>
               <Block data-state="Default">
                 <Button overrides={kindOverrides}>Button</Button>
               </Block>
@@ -144,12 +251,6 @@ const ButtonIntentKindsScenario: React.FC<{
     </Grid>
   </Background>
 );
-
-export default {
-  title: 'NewsKit Light/button',
-  component: () => 'None',
-  disabledRules: ['color-contrast'],
-};
 
 export const StoryButtonSize = () => (
   <>
@@ -208,22 +309,20 @@ export const StoryFullAndFixedWidthButton = () => (
     </Container>
     <StorybookSubHeading>Fixed-Width and overflow</StorybookSubHeading>
     <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Border>
-          <Spacer>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{
-                width: 'sizing120',
-                height: 'sizing070',
-                stylePreset: 'myButton',
-              }}
-            >
-              Small fixed-width button and overflow with long long text
-            </Button>
-          </Spacer>
-        </Border>
-      </ThemeProvider>
+      <Border>
+        <Spacer>
+          <Button
+            size={ButtonSize.Small}
+            overrides={{
+              width: 'sizing120',
+              height: 'sizing070',
+              stylePreset: 'myButton',
+            }}
+          >
+            Small fixed-width button and overflow with long long text
+          </Button>
+        </Spacer>
+      </Border>
     </Container>
   </>
 );
@@ -469,55 +568,7 @@ export const StoryButtonLink = () => (
   </>
 );
 StoryButtonLink.storyName = 'button-link';
-const myCustomTransitionPresets = createTheme({
-  name: 'my-custom-transition-presets',
-  overrides: {
-    transitionPresets: {
-      customBackgroundColorChange: {
-        base: {
-          transitionProperty: 'background-color',
-          transitionDuration: '500ms',
-          transitionDelay: '500ms',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
-      },
-      customBorderColourChange: {
-        base: {
-          transitionProperty: 'border-color',
-          transitionDuration: '500ms',
-          transitionDelay: '0ms',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
-      },
-    },
-    stylePresets: {
-      testButtonStylePresetWithBorders: {
-        base: {
-          backgroundColor: '{{colors.interactivePrimary030}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkInverse}}',
-          iconColor: '{{colors.inkInverse}}',
-          borderColor: '{{colors.blue020}}',
-          borderStyle: 'solid',
-          borderWidth: '1px',
-        },
-        hover: {
-          backgroundColor: '{{colors.amber070}}',
-          borderColor: '{{colors.green040}}',
-        },
-        active: {
-          backgroundColor: '{{colors.interactivePrimary050}}',
-        },
-        disabled: {
-          backgroundColor: '{{colors.interactiveDisabled010}}',
-        },
-        loading: {
-          backgroundColor: '{{colors.interactivePrimary020}}',
-        },
-      },
-    },
-  },
-});
+
 const buttonStyles: Array<{
   stylePreset: string;
   buttonKind: string;
@@ -530,106 +581,137 @@ const buttonStyles: Array<{
 export const StoryButtonWithTransitions = () => (
   <>
     <StorybookSubHeading>Button with Transition Presets</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTransitionPresets}>
-      <Container>
-        <StorybookSubHeading>Default Transition Presets</StorybookSubHeading>
-        <Stack
-          flow="horizontal-top"
-          spaceInline="space070"
-          spaceStack="space070"
-        >
-          {buttonStyles.map(buttons => (
-            <Stack spaceInline="space000">
-              <Label>{buttons.buttonKind}</Label>
-              <Button overrides={{stylePreset: buttons.stylePreset}}>
-                Button
-              </Button>
-            </Stack>
-          ))}
-        </Stack>
+    <Container>
+      <StorybookSubHeading>Default Transition Presets</StorybookSubHeading>
+      <Stack flow="horizontal-top" spaceInline="space070" spaceStack="space070">
+        {buttonStyles.map(buttons => (
+          <Stack spaceInline="space000">
+            <Label>{buttons.buttonKind}</Label>
+            <Button overrides={{stylePreset: buttons.stylePreset}}>
+              Button
+            </Button>
+          </Stack>
+        ))}
+      </Stack>
 
-        <StorybookSubHeading>
-          Button with Transition Preset overrides
-        </StorybookSubHeading>
-        <Stack
-          flow="horizontal-top"
-          spaceInline="space070"
-          spaceStack="space070"
-        >
-          {buttonStyles.map(buttons => (
-            <Stack spaceInline="space000">
-              <Label>{buttons.buttonKind}</Label>
-              <Button
-                overrides={{
-                  stylePreset: buttons.stylePreset,
-                  transitionPreset: 'customBackgroundColorChange',
-                }}
-              >
-                Button
-              </Button>
-            </Stack>
-          ))}
-        </Stack>
-        <StorybookSubHeading>
-          Button with two Transition Preset Overrides
-        </StorybookSubHeading>
-        <Button
-          size={ButtonSize.Medium}
-          overrides={{
-            transitionPreset: [
-              'customBorderColourChange',
-              'customBackgroundColorChange',
-            ],
-            stylePreset: 'testButtonStylePresetWithBorders',
-          }}
-        >
-          Button
-        </Button>
+      <StorybookSubHeading>
+        Button with Transition Preset overrides
+      </StorybookSubHeading>
+      <Stack flow="horizontal-top" spaceInline="space070" spaceStack="space070">
+        {buttonStyles.map(buttons => (
+          <Stack spaceInline="space000">
+            <Label>{buttons.buttonKind}</Label>
+            <Button
+              overrides={{
+                stylePreset: buttons.stylePreset,
+                transitionPreset: 'customBackgroundColorChange',
+              }}
+            >
+              Button
+            </Button>
+          </Stack>
+        ))}
+      </Stack>
+      <StorybookSubHeading>
+        Button with two Transition Preset Overrides
+      </StorybookSubHeading>
+      <Button
+        size={ButtonSize.Medium}
+        overrides={{
+          transitionPreset: [
+            'customBorderColourChange',
+            'customBackgroundColorChange',
+          ],
+          stylePreset: 'testButtonStylePresetWithBorders',
+        }}
+      >
+        Button
+      </Button>
 
-        <StorybookSubHeading>
-          Button with overrides using extend on transitionDuration
-        </StorybookSubHeading>
-        <Button
-          size={ButtonSize.Medium}
-          overrides={{
-            stylePreset: 'testButtonStylePresetWithBorders',
-            transitionPreset: {
+      <StorybookSubHeading>
+        Button with overrides using extend on transitionDuration
+      </StorybookSubHeading>
+      <Button
+        size={ButtonSize.Medium}
+        overrides={{
+          stylePreset: 'testButtonStylePresetWithBorders',
+          transitionPreset: {
+            extend: 'backgroundColorChange',
+            base: {
+              transitionDuration: '{{motions.motionDuration050}}',
+            },
+          },
+        }}
+      >
+        Button
+      </Button>
+      <StorybookSubHeading>
+        Button with overrides on two presets using extend
+      </StorybookSubHeading>
+      <Button
+        size={ButtonSize.Medium}
+        overrides={{
+          transitionPreset: [
+            {
               extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration030}}',
+              },
+            },
+            {
+              extend: 'borderColorChange',
               base: {
                 transitionDuration: '{{motions.motionDuration050}}',
               },
             },
-          }}
-        >
-          Button
-        </Button>
-        <StorybookSubHeading>
-          Button with overrides on two presets using extend
-        </StorybookSubHeading>
-        <Button
-          size={ButtonSize.Medium}
-          overrides={{
-            transitionPreset: [
-              {
-                extend: 'backgroundColorChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration030}}',
-                },
-              },
-              {
-                extend: 'borderColorChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration050}}',
-                },
-              },
-            ],
-            stylePreset: 'testButtonStylePresetWithBorders',
-          }}
-        >
-          Button
-        </Button>
-      </Container>
-    </ThemeProvider>
+          ],
+          stylePreset: 'testButtonStylePresetWithBorders',
+        }}
+      >
+        Button
+      </Button>
+    </Container>
   </>
 );
 StoryButtonWithTransitions.storyName = 'button-with-transition';
+
+export const StoryButtonWithOutlineOverride = () => (
+  <>
+    <StorybookSubHeading>Button with custom outline</StorybookSubHeading>
+    <StorybookSubHeading>Custom Color</StorybookSubHeading>
+    <Container>
+      <Button overrides={{stylePreset: 'customOutlineColor'}}>Button</Button>
+    </Container>
+    <StorybookSubHeading>Custom Style</StorybookSubHeading>
+    <Container>
+      <Button overrides={{stylePreset: 'customOutlineStyle'}}>Button</Button>
+    </Container>
+    <StorybookSubHeading>Custom Width</StorybookSubHeading>
+    <Container>
+      <Button overrides={{stylePreset: 'customOutlineWidth'}}>Button</Button>
+    </Container>
+    <StorybookSubHeading>Custom Offset</StorybookSubHeading>
+    <Container>
+      <Button overrides={{stylePreset: 'customOutlineOffset'}}>Button</Button>
+    </Container>
+  </>
+);
+StoryButtonWithOutlineOverride.storyName = 'button-with-outline-overrides';
+
+export default {
+  title: 'NewsKit Light/button',
+  component: () => 'None',
+  disabledRules: ['color-contrast'],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          buttonCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

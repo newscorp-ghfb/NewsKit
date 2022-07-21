@@ -197,6 +197,9 @@ export const isValidColorName = (value: string) =>
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const isValidUnit = (themeKey: string, value: any) => {
+  if (['auto', 'revert', 'unset', 'initial', 'inherit'].includes(value)) {
+    return value;
+  }
   if (
     ['sizing', 'spacePresets', 'borders'].includes(themeKey) &&
     typeof value === 'string'

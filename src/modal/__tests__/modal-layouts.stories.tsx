@@ -1,7 +1,7 @@
 import React from 'react';
 import {Modal} from '..';
 import {createTheme, ThemeProvider} from '../../theme';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {StorybookHeading, StorybookParah} from '../../test/storybook-comps';
 import {LinkStandalone, Link} from '../../link';
 import {Button} from '../../button';
 import {Stack} from '../../stack';
@@ -15,10 +15,10 @@ const modalContent = (
     spaceInline="space020"
   >
     <H1>You need an account</H1>
-    <p contentEditable>
+    <StorybookParah>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudantium, totam rem aperiam. (Double click for more text :) )
-    </p>
+    </StorybookParah>
     <Button>Register for a free account</Button>
     <P>Already have an account?</P>
     <Link href="/">Sign in here</Link>

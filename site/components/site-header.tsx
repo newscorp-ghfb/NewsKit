@@ -118,7 +118,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
         <MenuItem
           data-testid="styled-indicator"
           key={id}
-          href={id}
+          href={id.substring(1)}
           size="small"
           selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
           overrides={{
@@ -164,11 +164,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             {Areas => (
               <>
                 <Areas.Logo justifySelf="start">
-                  <Link
-                    type="standalone"
-                    href="/"
-                    overrides={{stylePreset: 'inkBase'}}
-                  >
+                  <Link type="standalone" href="/">
                     <NewsKitLogo />
                   </Link>
                 </Areas.Logo>

@@ -367,6 +367,21 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-15:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-15:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-15 {
     transition-property: background-color;
@@ -667,6 +682,21 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-40:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-40:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-40 {
     transition-property: background-color;
@@ -965,6 +995,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  color: #2E2E2E;
 }
 
 .emotion-65::before {
@@ -991,7 +1022,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -2020,6 +2051,21 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-32:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-32:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-32 {
     transition-property: background-color;
@@ -2318,6 +2364,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  color: #2E2E2E;
 }
 
 .emotion-57::before {
@@ -2344,7 +2391,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -3055,6 +3102,21 @@ exports[`Audio Player hides volume control as expected 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-15:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-15:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-15 {
     transition-property: background-color;
@@ -3537,6 +3599,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  color: #2E2E2E;
 }
 
 .emotion-48::before {
@@ -3575,7 +3638,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -4348,6 +4411,21 @@ exports[`Audio Player live player renders as expected 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-22:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-22:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-22 {
     transition-property: background-color;
@@ -4626,6 +4704,21 @@ exports[`Audio Player live player renders as expected 1`] = `
 
 .emotion-40:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-40:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-40:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5143,6 +5236,21 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
   fill: #C0C0C0;
 }
 
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -5636,6 +5744,21 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: background-color;
@@ -5778,6 +5901,21 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-16:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-16:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-16 {
     transition-property: background-color;
@@ -5885,6 +6023,21 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 
 .emotion-26:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-26:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-26:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -6067,6 +6220,21 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 
 .emotion-41:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-41:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-41:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -6370,6 +6538,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  color: #2E2E2E;
 }
 
 .emotion-66::before {
@@ -6396,7 +6565,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -7296,6 +7465,21 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-15:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-15:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-15 {
     transition-property: background-color;
@@ -7653,6 +7837,21 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-40:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-40:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-40 {
     transition-property: background-color;
@@ -7951,6 +8150,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  color: #2E2E2E;
 }
 
 .emotion-65::before {
@@ -7977,7 +8177,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -8746,6 +8946,21 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-15:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-15:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-15 {
     transition-property: background-color;
@@ -9103,6 +9318,21 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-40:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-40:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-40 {
     transition-property: background-color;
@@ -9401,6 +9631,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  color: #2E2E2E;
 }
 
 .emotion-65::before {
@@ -9427,7 +9658,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -10198,6 +10429,21 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   fill: #C0C0C0;
 }
 
+.emotion-15:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-15:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-15 {
     transition-property: background-color;
@@ -10555,6 +10801,21 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   fill: #C0C0C0;
 }
 
+.emotion-40:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-40:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-40 {
     transition-property: background-color;
@@ -10853,6 +11114,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  color: #2E2E2E;
 }
 
 .emotion-65::before {
@@ -10879,7 +11141,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -12300,7 +12562,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track

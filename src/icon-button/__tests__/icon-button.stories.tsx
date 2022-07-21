@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {IconButton} from '..';
-import {getColorFromTheme, styled} from '../../utils/style';
-import {StorybookSubHeading} from '../../test/storybook-comps';
+import {styled, getColorCssFromTheme} from '../../utils/style';
+import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
 import {
   Block,
   Cell,
@@ -14,6 +14,71 @@ import {
   ButtonOverrides,
   ButtonSize,
 } from '../..';
+import {ThemeProvider, createTheme} from '../../theme';
+
+const myCustomTheme = createTheme({
+  name: 'my-custom-text-input-theme',
+  overrides: {
+    stylePresets: {
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
+    },
+  },
+});
 
 const Container = styled.div`
   margin: 24px;
@@ -26,22 +91,21 @@ interface IntentKindStylePreset {
   stylePreset: string;
 }
 
-const Label = styled.div`
+const Label = styled.div<{hasBackground?: boolean}>`
   height: 20px;
   padding: 8px 12px;
   margin: 12px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  ${({hasBackground}) =>
+    getColorCssFromTheme('color', hasBackground ? 'inkInverse' : 'inkBase')};
 `;
 
 const Background = styled.div<{hasBackground?: boolean}>`
   margin-top: 24px;
-  ${({hasBackground, theme}) =>
-    hasBackground && {
-      background: getColorFromTheme('black')({theme}),
-      color: getColorFromTheme('white')({theme}),
-    }}
+  ${({hasBackground}) =>
+    hasBackground && getColorCssFromTheme('background', 'inkBase')};
 `;
 
 const IconButtonIntentKindsScenario: React.FC<{
@@ -51,13 +115,17 @@ const IconButtonIntentKindsScenario: React.FC<{
   overrides: ButtonOverrides;
 }> = ({hasBackground = false, name, buttonKinds, overrides}) => (
   <Background hasBackground={hasBackground}>
-    <StorybookSubHeading>{name}</StorybookSubHeading>
+    <StorybookSubHeading stylePreset={hasBackground ? 'inkInverse' : undefined}>
+      {name}
+    </StorybookSubHeading>
     <Grid>
       <Cell xsHidden sm={3}>
         <Stack>
-          <h3>State</h3>
+          <StorybookH3 stylePreset={hasBackground ? 'inkInverse' : undefined}>
+            State
+          </StorybookH3>
           {states.map(state => (
-            <Label>{state}</Label>
+            <Label hasBackground={hasBackground}>{state}</Label>
           ))}
         </Stack>
       </Cell>
@@ -69,7 +137,11 @@ const IconButtonIntentKindsScenario: React.FC<{
               spaceInline="space020"
               stackDistribution={StackDistribution.SpaceEvenly}
             >
-              <h3>{kind}</h3>
+              <StorybookH3
+                stylePreset={hasBackground ? 'inkInverse' : undefined}
+              >
+                {kind}
+              </StorybookH3>
               <Block data-state="Default">
                 <IconButton
                   aria-label="Pause icon"
@@ -275,3 +347,53 @@ export const StoryIconButtonOverrides = () => (
   </>
 );
 StoryIconButtonOverrides.storyName = 'icon-button-overrides';
+
+export const StoryIconButtonWithOutlineOverride = () => (
+  <>
+    <StorybookSubHeading>Icon Button with custom outline</StorybookSubHeading>
+    <ThemeProvider theme={myCustomTheme}>
+      <StorybookSubHeading>Custom Color</StorybookSubHeading>
+      <Container>
+        <IconButton
+          aria-label="Link icon"
+          href="https://www.newskit.co.uk/"
+          overrides={{stylePreset: 'customOutlineColor'}}
+        >
+          <IconFilledLink />
+        </IconButton>
+      </Container>
+      <StorybookSubHeading>Custom Style</StorybookSubHeading>
+      <Container>
+        <IconButton
+          aria-label="Link icon"
+          href="https://www.newskit.co.uk/"
+          overrides={{stylePreset: 'customOutlineStyle'}}
+        >
+          <IconFilledLink />
+        </IconButton>
+      </Container>
+      <StorybookSubHeading>Custom Width</StorybookSubHeading>
+      <Container>
+        <IconButton
+          aria-label="Link icon"
+          href="https://www.newskit.co.uk/"
+          overrides={{stylePreset: 'customOutlineWidth'}}
+        >
+          <IconFilledLink />
+        </IconButton>
+      </Container>
+      <StorybookSubHeading>Custom Offset</StorybookSubHeading>
+      <Container>
+        <IconButton
+          aria-label="Link icon"
+          href="https://www.newskit.co.uk/"
+          overrides={{stylePreset: 'customOutlineOffset'}}
+        >
+          <IconFilledLink />
+        </IconButton>
+      </Container>
+    </ThemeProvider>
+  </>
+);
+StoryIconButtonWithOutlineOverride.storyName =
+  'icon-button-with-outline-overrides';

@@ -34,6 +34,7 @@ export * from './menu';
 export * from './modal';
 export * from './newskit-provider';
 export * from './ordered-list';
+export * from './popover';
 export * from './radio-button';
 export * from './screen-reader-only';
 export * from './scroll';

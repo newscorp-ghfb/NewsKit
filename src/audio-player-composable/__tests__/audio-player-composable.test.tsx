@@ -7,7 +7,7 @@ import {AudioPlayerComposableProps} from '../types';
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
 import seekBarStylePresets from '../components/seek-bar/style-presets';
-import {Button} from '../../button';
+import {Button, ButtonSize} from '../../button';
 import {
   AudioPlayerComposable,
   AudioPlayerTimeDisplay,
@@ -18,6 +18,7 @@ import {
   AudioPlayerReplayButton,
   AudioPlayerSeekBar,
   AudioPlayerVolumeControl,
+  AudioPlayerPlaybackSpeedControl,
 } from '..';
 
 const version = '0.10.0';
@@ -30,7 +31,7 @@ const liveAudioProps: AudioPlayerComposableProps = {
 };
 
 const recordedAudioProps: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   autoPlay: false,
   children: (
     <>
@@ -68,7 +69,7 @@ const recordedAudioProps: AudioPlayerComposableProps = {
 };
 
 const AudioPropsAndVolumeControlWithInitialVolumeCollapsed: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   initialVolume: 0.2,
   children: (
     <>
@@ -77,18 +78,29 @@ const AudioPropsAndVolumeControlWithInitialVolumeCollapsed: AudioPlayerComposabl
   ),
 };
 
+const AudioPropsWithInitialTime: AudioPlayerComposableProps = {
+  initialTime: 50,
+  src: '/audio_file_1.mp3',
+  children: (
+    <>
+      <AudioPlayerTimeDisplay />
+      <AudioPlayerSeekBar />
+    </>
+  ),
+};
+
 const AudioPropsAndVolumeControlVertical: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   initialVolume: 0.2,
   children: (
     <>
-      <AudioPlayerVolumeControl vertical />
+      <AudioPlayerVolumeControl layout="vertical" />
     </>
   ),
 };
 
 const AudioPropsAndVolumeControlOverridenShortcuts: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   children: (
     <>
       <AudioPlayerVolumeControl keyboardShortcuts={{muteToggle: 'y'}} />
@@ -96,8 +108,42 @@ const AudioPropsAndVolumeControlOverridenShortcuts: AudioPlayerComposableProps =
   ),
 };
 
+const AudioPropsAndPlaybackSpeedPopover: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  children: (
+    <>
+      <AudioPlayerPlaybackSpeedControl />
+    </>
+  ),
+};
+
+const AudioPropsAndPlaybackSpeedModal: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  children: (
+    <>
+      <AudioPlayerPlaybackSpeedControl useModal />
+    </>
+  ),
+};
+
+const AudioPropsAndPlaybackSpeedWithOverrides: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  children: (
+    <>
+      <AudioPlayerPlaybackSpeedControl
+        buttonSize={ButtonSize.Medium}
+        overrides={{
+          iconButton: {
+            stylePreset: 'customButtonStylePreset',
+          },
+        }}
+      />
+    </>
+  ),
+};
+
 const recordedAudioPropsAutoplay: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   autoPlay: true,
   children: (
     <>
@@ -135,7 +181,7 @@ const liveTrackingOutputObject = {
 };
 
 const recordedSeekBarOverrides: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   autoPlay: false,
   children: (
     <>
@@ -174,7 +220,7 @@ const recordedSeekBarOverrides: AudioPlayerComposableProps = {
 };
 
 const recordedTimeDisplayOverrides: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   autoPlay: true,
   children: (
     <>
@@ -189,7 +235,7 @@ const recordedTimeDisplayOverrides: AudioPlayerComposableProps = {
 };
 
 const audioPlayerSecondsProps: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   children: (
     <>
       <AudioPlayerForwardButton
@@ -791,6 +837,81 @@ describe('Audio Player Composable', () => {
     });
   });
 
+  describe('Playback Speed', () => {
+    // ResizeObserver is not implemented by JSDom but is needed by the lib
+    const mockResizeObserver = jest.fn(() => ({
+      observe: jest.fn(),
+      disconnect: jest.fn(),
+    }));
+
+    beforeAll(() => {
+      // @ts-ignore
+      global.ResizeObserver = mockResizeObserver;
+    });
+
+    afterAll(() => {
+      // @ts-ignore
+      global.ResizeObserver = null;
+    });
+
+    it('should render correctly in popover', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedPopover,
+      );
+
+      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('should render correctly in modal', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedModal,
+      );
+      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('should render correctly with overrides', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedWithOverrides,
+      );
+
+      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('should close modal on X click', () => {
+      const {asFragment, getByTestId, getByLabelText} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedModal,
+      );
+
+      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      fireEvent.click(getByLabelText('close'));
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('should update playback speed', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedPopover,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      expect(audioElement.playbackRate).toEqual(1);
+      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      userEvent.keyboard('[ArrowUp][Enter]');
+      expect(audioElement.playbackRate).toEqual(0.8);
+    });
+  });
+
   describe('VolumeControl', () => {
     it('calls event handler passed from the props', () => {
       const onVolumeChange = jest.fn();
@@ -900,6 +1021,121 @@ describe('Audio Player Composable', () => {
         AudioPropsAndVolumeControlVertical,
       );
       expect(asFragment()).toMatchSnapshot();
+    });
+    it('should render correctly with overrides', () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-volume-control-theme',
+        overrides: {
+          stylePresets: {
+            customAudioPlayerVolumeControlHorizontalContainer: {
+              base: {
+                backgroundColor: 'grey',
+              },
+            },
+            customTrackStylePreset: {
+              base: {
+                backgroundColor: 'red',
+                borderColor: 'blue',
+                borderWidth: '1px',
+                borderStyle: 'solid',
+              },
+            },
+            customIndicatorStylePreset: {
+              base: {
+                backgroundColor: 'yellow',
+              },
+            },
+            customThumbStylePreset: {
+              base: {
+                backgroundColor: 'green',
+                borderColor: 'black',
+              },
+            },
+            customLabelStylePreset: {
+              base: {
+                borderColor: 'purple',
+                color: 'purple',
+              },
+            },
+            customThumbLabelStylePreset: {
+              base: {
+                borderColor: 'black',
+                color: 'green',
+              },
+            },
+            customFeedback: {
+              base: {
+                backgroundColor: '{{colors.red060}}',
+                borderRadius: '{{borders.borderRadiusCircle}}',
+                opacity: '{{overlays.opacity000}}',
+              },
+            },
+          },
+        },
+      });
+      const recordedVolumeControlOverrides: AudioPlayerComposableProps = {
+        src: '/audio_file_1.mp3',
+        autoPlay: false,
+        children: (
+          <AudioPlayerVolumeControl
+            overrides={{
+              stylePreset: 'customAudioPlayerVolumeControlHorizontalContainer',
+              spaceBetween: 'space050',
+              slider: {
+                track: {
+                  stylePreset: 'customTrackStylePreset',
+                  size: 'sizing020',
+                  length: '100px',
+                },
+                indicator: {
+                  stylePreset: 'customIndicatorStylePreset',
+                },
+                thumb: {
+                  stylePreset: 'customThumbStylePreset',
+                  size: 'sizing040',
+                },
+                labels: {
+                  stylePreset: 'customLabelStylePreset',
+                  space: 'spacing060',
+                },
+                thumbLabel: {
+                  stylePreset: 'customThumbLabelStylePreset',
+                },
+                feedback: {
+                  size: 'sizing070',
+                  stylePreset: 'customFeedback',
+                },
+              },
+            }}
+          />
+        ),
+      };
+      const {asFragment} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedVolumeControlOverrides,
+        myCustomTheme,
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+  });
+
+  describe('initialTime prop', () => {
+    it('should render correctly with initial time', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsWithInitialTime,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const audioTimeLabel = getByTestId(
+        'audio-player-time-display',
+      ) as HTMLParagraphElement;
+
+      const seekBar = getByTestId('audio-slider-track') as HTMLDivElement;
+      fireEvent.timeUpdate(audioElement);
+      expect(audioElement.currentTime).toEqual(50);
+      expect(audioTimeLabel.innerHTML).toEqual('00:50/00:00 ');
+      expect(seekBar.getAttribute('values')).toEqual('50');
     });
   });
 
