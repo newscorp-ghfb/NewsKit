@@ -249,8 +249,15 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/popover/usage/do1'),
         },
         {
-          description:
-            'Avoid using an overlay with a Popover, as they are intended to display non-critical information, and shouldn’t prevent a user from performing other tasks on the screen. In these cases, consider using a Modal instead.',
+          description: (
+            <>
+              Avoid using an overlay with a Popover, as they are intended to
+              display non-critical information, and shouldn’t prevent a user
+              from performing other tasks on the screen. In these cases,
+              consider using a <Link href="/components/modal/">Modal</Link>{' '}
+              instead.
+            </>
+          ),
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/popover/usage/dont1'),
         },
@@ -533,7 +540,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               required: undefined,
             },
             {
-              name: 'closePosition',
+              name: 'placement',
               type: [
                 'top',
                 'top-start',
@@ -692,16 +699,6 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
             },
             {
               attribute: 'content.paddingBlockEnd',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'content.paddingInlineStart',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'content.paddingInlineEnd',
               type: 'MQ<string>',
               description: '',
             },
