@@ -26,8 +26,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   const {
     volume,
     onChange,
-    layout = 'horizontal',
-    collapsed = false,
+    layout = 'horizontalExpanded',
     keyboardShortcuts,
     overrides,
     initialVolume,
@@ -83,7 +82,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
         justifyItems={layout === 'vertical' ? 'center' : 'start'}
         alignItems="center"
         layout={layout}
-        collapsed={collapsed}
+        // collapsed={collapsed}
         overrides={overrides}
       >
         <GridLayoutItem area="muteButton">
@@ -96,35 +95,33 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
             overrides={buttonOverrides}
           />
         </GridLayoutItem>
-        {!collapsed && (
-          <GridLayoutItem area="slider">
-            <StyledVolumeSliderContainer
-              className="slider"
-              layout={layout}
-              overrides={overrides}
-            >
-              <Slider
-                vertical={layout === 'vertical'}
-                min={0}
-                max={1}
-                step={0.1}
-                values={[volume]}
-                onChange={onSliderChange}
-                ariaLabel="Volume Control"
-                ariaValueText={`volume level ${[volume][0] * 10} of 10`}
-                dataTestId="volume-control-slider"
-                ariaDescribedBy={volumeSliderInstructionId}
-                overrides={sliderOverrides}
-              />
-              <ScreenReaderOnly
-                id={volumeSliderInstructionId}
-                aria-hidden="true"
-              >
-                Use the arrow keys to adjust volume
-              </ScreenReaderOnly>
-            </StyledVolumeSliderContainer>
-          </GridLayoutItem>
-        )}
+        {/* if its not collapsed show slider */}
+        {/* {layout === 'horizontal' && ( */}
+        <GridLayoutItem area="slider">
+          <StyledVolumeSliderContainer
+            className="slider"
+            layout={layout}
+            overrides={overrides}
+          >
+            <Slider
+              vertical={layout === 'vertical'}
+              min={0}
+              max={1}
+              step={0.1}
+              values={[volume]}
+              onChange={onSliderChange}
+              ariaLabel="Volume Control"
+              ariaValueText={`volume level ${[volume][0] * 10} of 10`}
+              dataTestId="volume-control-slider"
+              ariaDescribedBy={volumeSliderInstructionId}
+              overrides={sliderOverrides}
+            />
+            <ScreenReaderOnly id={volumeSliderInstructionId} aria-hidden="true">
+              Use the arrow keys to adjust volume
+            </ScreenReaderOnly>
+          </StyledVolumeSliderContainer>
+        </GridLayoutItem>
+        {/* )} */}
       </StyledGridLayout>
     </TestContainer>
   );

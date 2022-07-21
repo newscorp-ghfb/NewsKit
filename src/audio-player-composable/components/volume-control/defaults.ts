@@ -28,6 +28,14 @@ export default {
       stylePreset: 'audioPlayerVolumeControlHorizontalContainer',
       ...defaults,
     },
+    horizontalExpanded: {
+      stylePreset: 'audioPlayerVolumeControlHorizontalContainer',
+      ...defaults,
+    },
+    horizontalCollapsed: {
+      stylePreset: 'audioPlayerVolumeControlHorizontalContainer',
+      ...defaults,
+    },
     vertical: {
       stylePreset: 'audioPlayerVolumeControlVerticalContainer',
       ...defaults,

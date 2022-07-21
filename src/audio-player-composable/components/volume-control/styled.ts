@@ -17,21 +17,26 @@ export const StyledVolumeSliderContainer = styled.div<
       `slider.track`,
       'length',
     )}
+
+  ${({layout}) =>
+    layout === 'horizontalCollapsed' &&
+    ` visibility: hidden;
+    `};
 `;
 
 export const StyledGridLayout = styled(GridLayout)<
   Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides' | 'collapsed'>
 >`
-  ${({layout, collapsed}) =>
-    !collapsed && getStylePreset(`audioPlayerVolumeControl.${layout}`, '')};
+  ${({layout}) => getStylePreset(`audioPlayerVolumeControl.${layout}`, '')};
   ${({layout}) =>
     layout === 'vertical' &&
     `
     position: relative;
     
   `};
+
   ${({layout}) =>
-    layout !== 'vertical' &&
+    layout === 'horizontalExpanded' &&
     `.slider {
   width: 0;
   overflow: hidden;
@@ -50,7 +55,11 @@ export const TestContainer = styled.div<
   Pick<AudioPlayerVolumeControlProps, 'layout'>
 >`
   ${({layout}) =>
-    layout !== 'vertical' &&
+    layout === 'horizontal' &&
+    ` display:inline;
+`};
+  ${({layout}) =>
+    layout === 'horizontalExpanded' &&
     `&:hover .slider {
     margin-left: 8px;
     width: 100px;
