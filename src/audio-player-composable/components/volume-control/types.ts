@@ -27,7 +27,7 @@ export interface AudioPlayerVolumeControlProps {
     | 'horizontal'
     | 'vertical'
     | 'horizontalCollapsed'
-    | 'horizontalExpanded';
+    | 'horizontalExpandable';
   collapsed?: boolean;
   overrides?: AudioPlayerVolumeControlOverridesProps;
   keyboardShortcuts?: {muteToggle: string | string[]};

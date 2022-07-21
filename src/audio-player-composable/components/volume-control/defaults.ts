@@ -28,7 +28,7 @@ export default {
       stylePreset: 'audioPlayerVolumeControlHorizontalContainer',
       ...defaults,
     },
-    horizontalExpanded: {
+    horizontalExpandable: {
       stylePreset: 'audioPlayerVolumeControlHorizontalContainer',
       ...defaults,
     },

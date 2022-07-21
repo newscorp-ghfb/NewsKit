@@ -75,7 +75,7 @@ export interface AudioPlayerProviderContext {
       | 'horizontal'
       | 'vertical'
       | 'horizontalCollapsed'
-      | 'horizontalExpanded';
+      | 'horizontalExpandable';
     collapsed?: boolean;
     onChange: (value: number) => void;
     volume: number;

@@ -17,10 +17,9 @@ export const StyledVolumeSliderContainer = styled.div<
       `slider.track`,
       'length',
     )}
-
   ${({layout}) =>
     layout === 'horizontalCollapsed' &&
-    ` visibility: hidden;
+    `display: none;
     `};
 `;
 
@@ -36,7 +35,7 @@ export const StyledGridLayout = styled(GridLayout)<
   `};
 
   ${({layout}) =>
-    layout === 'horizontalExpanded' &&
+    layout === 'horizontalExpandable' &&
     `.slider {
   width: 0;
   overflow: hidden;
@@ -51,7 +50,7 @@ export const StyledGridLayout = styled(GridLayout)<
     )};
 `;
 
-export const TestContainer = styled.div<
+export const VolumeControlContainer = styled.div<
   Pick<AudioPlayerVolumeControlProps, 'layout'>
 >`
   ${({layout}) =>
@@ -59,7 +58,7 @@ export const TestContainer = styled.div<
     ` display:inline;
 `};
   ${({layout}) =>
-    layout === 'horizontalExpanded' &&
+    layout === 'horizontalExpandable' &&
     `&:hover .slider {
     margin-left: 8px;
     width: 100px;

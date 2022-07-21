@@ -13,7 +13,7 @@ import {GridLayoutItem} from '../../../grid-layout';
 import {
   StyledGridLayout,
   StyledVolumeSliderContainer,
-  TestContainer,
+  VolumeControlContainer,
 } from './styled';
 import {useReactKeys} from '../../../utils/hooks';
 import {deepMerge} from '../../../utils/deep-merge';
@@ -26,7 +26,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   const {
     volume,
     onChange,
-    layout = 'horizontalExpanded',
+    layout = 'horizontalExpandable',
     keyboardShortcuts,
     overrides,
     initialVolume,
@@ -75,14 +75,13 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   const [volumeSliderInstructionId] = useReactKeys(1);
 
   return (
-    <TestContainer layout={layout}>
+    <VolumeControlContainer layout={layout} id="hello">
       <StyledGridLayout
         columns={gridColumns}
         areas={gridAreas}
         justifyItems={layout === 'vertical' ? 'center' : 'start'}
         alignItems="center"
         layout={layout}
-        // collapsed={collapsed}
         overrides={overrides}
       >
         <GridLayoutItem area="muteButton">
@@ -95,8 +94,6 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
             overrides={buttonOverrides}
           />
         </GridLayoutItem>
-        {/* if its not collapsed show slider */}
-        {/* {layout === 'horizontal' && ( */}
         <GridLayoutItem area="slider">
           <StyledVolumeSliderContainer
             className="slider"
@@ -121,9 +118,8 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
             </ScreenReaderOnly>
           </StyledVolumeSliderContainer>
         </GridLayoutItem>
-        {/* )} */}
       </StyledGridLayout>
-    </TestContainer>
+    </VolumeControlContainer>
   );
 };
 
