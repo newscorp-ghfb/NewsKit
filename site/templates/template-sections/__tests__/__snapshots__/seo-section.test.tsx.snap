@@ -103,18 +103,6 @@ exports[`SEOSection renders section as expected 1`] = `
   fill: #0A0A0A;
 }
 
-@media screen and (max-width: 1023px) {
-  .emotion-6 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-6 {
-    margin-bottom: 80px;
-  }
-}
-
 .emotion-7 {
   margin: 0;
   color: #2E2E2E;
