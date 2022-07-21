@@ -7,6 +7,7 @@ import {Rect} from '../../../rect';
 export const Focus: React.FC = () => {
   const filter0 = getSSRId();
   const filter1 = getSSRId();
+  const paint0 = getSSRId();
 
   return (
     <Svg
@@ -85,7 +86,7 @@ export const Focus: React.FC = () => {
       />
       <Path
         d="M281 382.519C281 377.814 284.814 374 289.52 374H408.795C413.501 374 417.315 377.814 417.315 382.519V450.677C417.315 455.382 413.501 459.196 408.795 459.196H289.52C284.814 459.196 281 455.382 281 450.677V382.519Z"
-        fill="url(#paint0_linear_1862_58741)"
+        fill={`url(#${paint0})`}
       />
       <Path
         fillRule="evenodd"
@@ -207,7 +208,7 @@ export const Focus: React.FC = () => {
           />
         </filter>
         <linearGradient
-          id="paint0_linear_1862_58741"
+          id={paint0}
           x1="349.157"
           y1="374"
           x2="349.157"
