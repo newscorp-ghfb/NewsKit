@@ -18,21 +18,6 @@ jest.mock('../../mono', () => ({
   Mono: mockComp('Mono'),
 }));
 
-// jest.mock(
-//   'newskit',
-//   require('../../../../utils/test-utils').mockNewsKitComponents(
-//     'IconFilledAdd',
-//     'IconOutlinedKeyboardArrowDown',
-//     'IconOutlinedKeyboardArrowLeft',
-//     'IconOutlinedKeyboardArrowRight',
-//     'IconOutlinedKeyboardArrowUp',
-//     'IconOutlinedKeyboardBackspace',
-//     'IconOutlinedKeyboardReturn',
-//     'IconOutlinedKeyboardTab',
-//     'IconOutlinedSpaceBar',
-//   ),
-// );
-
 describe('MonoKeyboard', () => {
   describe('with single key', () => {
     it('should render with no icon for unrecognised key', () => {
