@@ -64,13 +64,13 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           name: 'Header',
           description:
             'An area to display content at the top of a panel e.g. a title',
-          component: 'Text block',
+          component: 'Text Block',
           optional: true,
         },
         {
           name: 'Close button',
           description: 'Icon Button for closing the Popover',
-          component: 'Icon button',
+          component: 'Icon Button',
           optional: true,
         },
         {
