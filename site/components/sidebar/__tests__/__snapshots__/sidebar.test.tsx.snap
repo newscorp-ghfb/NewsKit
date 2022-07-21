@@ -691,7 +691,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-602 {
+.emotion-607 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -699,7 +699,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-603 {
+.emotion-608 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -710,55 +710,55 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen {
-  .emotion-604 {
+  .emotion-609 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-604 {
+  .emotion-609 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-604 {
+  .emotion-609 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-604 {
+  .emotion-609 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-604 {
+  .emotion-609 {
     display: block;
   }
 }
 
-.emotion-606 {
+.emotion-611 {
   margin-bottom: 32px;
 }
 
-.emotion-607 {
+.emotion-612 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-608 {
+.emotion-613 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-609 {
+.emotion-614 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-610 {
+.emotion-615 {
   margin: 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
@@ -768,11 +768,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-610 svg {
+.emotion-615 svg {
   fill: #2E2E2E;
 }
 
-.emotion-611 {
+.emotion-616 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -782,7 +782,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-611 {
+  .emotion-616 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -790,19 +790,19 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-611 {
+  .emotion-616 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-611.emotion-611 {
+.emotion-616.emotion-616 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-613 {
+.emotion-618 {
   margin-block: 24px;
 }
 
@@ -3960,11 +3960,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     </div>
                   </ul>
                   <div
-                    class="emotion-602"
+                    class="emotion-607"
                   >
                     <hr
                       aria-hidden="true"
-                      class="emotion-603"
+                      class="emotion-608"
                       data-testid="divider"
                     />
                   </div>
@@ -3972,7 +3972,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </nav>
             </div>
             <div
-              class="emotion-604"
+              class="emotion-609"
             >
               <nav
                 aria-label="menu-sidebar"
@@ -3985,28 +3985,28 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 />
               </nav>
               <div
-                class="emotion-606"
+                class="emotion-611"
               />
             </div>
             <div
-              class="emotion-607"
+              class="emotion-612"
             >
               <a
-                class="emotion-608"
+                class="emotion-613"
                 href="https://github.com/newscorp-ghfb/newskit"
                 tabindex="-1"
               >
                 <div
-                  class="emotion-609"
+                  class="emotion-614"
                 >
                   <p
-                    class="emotion-610"
+                    class="emotion-615"
                   >
                     Github
                   </p>
                   <svg
                     aria-hidden="true"
-                    class="emotion-611 emotion-612"
+                    class="emotion-616 emotion-617"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -4023,7 +4023,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 </div>
               </a>
               <div
-                class="emotion-613"
+                class="emotion-618"
               />
             </div>
           </div>
@@ -4600,7 +4600,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-602 {
+.emotion-607 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -4608,7 +4608,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-603 {
+.emotion-608 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -4618,7 +4618,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 100%;
 }
 
-.emotion-606 {
+.emotion-611 {
   margin-bottom: 32px;
 }
 
@@ -7649,11 +7649,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </div>
             </ul>
             <div
-              class="emotion-602"
+              class="emotion-607"
             >
               <hr
                 aria-hidden="true"
-                class="emotion-603"
+                class="emotion-608"
                 data-testid="divider"
               />
             </div>
@@ -7674,7 +7674,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
           />
         </nav>
         <div
-          class="emotion-606"
+          class="emotion-611"
         />
       </div>
     </div>
@@ -8372,7 +8372,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-602 {
+.emotion-607 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -8380,7 +8380,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-603 {
+.emotion-608 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -8391,55 +8391,55 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen {
-  .emotion-604 {
+  .emotion-609 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-604 {
+  .emotion-609 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-604 {
+  .emotion-609 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-604 {
+  .emotion-609 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-604 {
+  .emotion-609 {
     display: block;
   }
 }
 
-.emotion-606 {
+.emotion-611 {
   margin-bottom: 32px;
 }
 
-.emotion-607 {
+.emotion-612 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-608 {
+.emotion-613 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-609 {
+.emotion-614 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-610 {
+.emotion-615 {
   margin: 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
@@ -8449,11 +8449,11 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-610 svg {
+.emotion-615 svg {
   fill: #2E2E2E;
 }
 
-.emotion-611 {
+.emotion-616 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -8463,7 +8463,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-611 {
+  .emotion-616 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8471,19 +8471,19 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-611 {
+  .emotion-616 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-611.emotion-611 {
+.emotion-616.emotion-616 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-613 {
+.emotion-618 {
   margin-block: 24px;
 }
 
@@ -11532,11 +11532,11 @@ exports[`Sidebar renders correctly when open 1`] = `
                     </div>
                   </ul>
                   <div
-                    class="emotion-602"
+                    class="emotion-607"
                   >
                     <hr
                       aria-hidden="true"
-                      class="emotion-603"
+                      class="emotion-608"
                       data-testid="divider"
                     />
                   </div>
@@ -11544,7 +11544,7 @@ exports[`Sidebar renders correctly when open 1`] = `
               </nav>
             </div>
             <div
-              class="emotion-604"
+              class="emotion-609"
             >
               <nav
                 aria-label="menu-sidebar"
@@ -11557,27 +11557,27 @@ exports[`Sidebar renders correctly when open 1`] = `
                 />
               </nav>
               <div
-                class="emotion-606"
+                class="emotion-611"
               />
             </div>
             <div
-              class="emotion-607"
+              class="emotion-612"
             >
               <a
-                class="emotion-608"
+                class="emotion-613"
                 href="https://github.com/newscorp-ghfb/newskit"
               >
                 <div
-                  class="emotion-609"
+                  class="emotion-614"
                 >
                   <p
-                    class="emotion-610"
+                    class="emotion-615"
                   >
                     Github
                   </p>
                   <svg
                     aria-hidden="true"
-                    class="emotion-611 emotion-612"
+                    class="emotion-616 emotion-617"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -11594,7 +11594,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                 </div>
               </a>
               <div
-                class="emotion-613"
+                class="emotion-618"
               />
             </div>
           </div>
@@ -12171,7 +12171,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-602 {
+.emotion-607 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -12179,7 +12179,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-603 {
+.emotion-608 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -12189,7 +12189,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   width: 100%;
 }
 
-.emotion-606 {
+.emotion-611 {
   margin-bottom: 32px;
 }
 
@@ -15223,11 +15223,11 @@ exports[`Sidebar renders correctly when open 1`] = `
               </div>
             </ul>
             <div
-              class="emotion-602"
+              class="emotion-607"
             >
               <hr
                 aria-hidden="true"
-                class="emotion-603"
+                class="emotion-608"
                 data-testid="divider"
               />
             </div>
@@ -15248,7 +15248,7 @@ exports[`Sidebar renders correctly when open 1`] = `
           />
         </nav>
         <div
-          class="emotion-606"
+          class="emotion-611"
         />
       </div>
     </div>
