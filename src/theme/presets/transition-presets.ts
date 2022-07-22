@@ -102,6 +102,35 @@ transitionPresets.slideLeft = {
     transform: 'translateX(-100%)',
   },
 };
+transitionPresets.widthChange = {
+  // base: {
+  //   transitionProperty: 'width',
+  //   transitionDuration: '{{motions.motionDuration020}}',
+  //   transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+  // },
+  enter: {
+    width: '0',
+  },
+  enterActive: {
+    width: '130px',
+    transitionProperty: 'width',
+    transitionDuration: '{{motions.motionDuration020}}',
+  },
+  enterDone: {
+    width: '130px',
+  },
+  exit: {
+    width: '130px',
+  },
+  exitActive: {
+    width: '0',
+    transitionProperty: 'width',
+    transitionDuration: '{{motions.motionDuration020}}',
+  },
+  exitDone: {
+    width: '0',
+  },
+};
 
 transitionPresets.slideRight = {
   base: {

@@ -1,6 +1,7 @@
 import {ButtonSize} from '../../../button';
 import {NewsKitIconProps} from '../../../icons';
 import {SliderOverrideProps} from '../../../slider';
+import {TransitionToken} from '../../../theme';
 import {MQ} from '../../../utils';
 import {Override} from '../../../utils/overrides';
 
@@ -8,6 +9,7 @@ export type MuteButtonIconProps = NewsKitIconProps &
   Pick<MuteButtonProps, 'volume'>;
 export interface AudioPlayerVolumeControlOverridesProps {
   stylePreset?: MQ<string>;
+  transitionPreset?: TransitionToken | TransitionToken[];
   spaceBetween?: MQ<string>;
   slider?: Omit<SliderOverrideProps, 'track'> & {
     track?: {

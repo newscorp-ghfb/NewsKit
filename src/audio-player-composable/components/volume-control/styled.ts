@@ -6,17 +6,28 @@ import {
   getResponsiveSpace,
 } from '../../../utils/style';
 import {AudioPlayerVolumeControlProps} from './types';
+import {getTransitionPreset} from '../../../utils/style/transition-preset';
 
 export const StyledVolumeSliderContainer = styled.div<
-  Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides'>
+  Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides'> & {open?: boolean}
 >`
-  ${({layout}) =>
+  overflow: hidden;
+  ${getTransitionPreset('audioPlayerVolumeControl', '', 'nk-vc')}
+  ${({layout, open}) =>
     getResponsiveSize(
-      layout === 'vertical' ? 'height' : 'width',
-      `audioPlayerVolumeControl.${layout}.slider.track`,
+      value =>
+        // eslint-disable-next-line no-nested-ternary
+        !open
+          ? {width: 0}
+          : layout === 'vertical'
+          ? {height: value}
+          : {width: value},
+      `audioPlayerVolumeControl.slider.track`,
       `slider.track`,
       'length',
     )}
+
+ 
   ${({layout}) =>
     layout === 'horizontalCollapsed' &&
     `display: none;
@@ -26,7 +37,7 @@ export const StyledVolumeSliderContainer = styled.div<
 export const StyledGridLayout = styled(GridLayout)<
   Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides' | 'collapsed'>
 >`
-  ${({layout}) => getStylePreset(`audioPlayerVolumeControl.${layout}`, '')};
+  ${getStylePreset(`audioPlayerVolumeControl`, '')};
   ${({layout}) =>
     layout === 'vertical' &&
     `
@@ -34,13 +45,6 @@ export const StyledGridLayout = styled(GridLayout)<
     
   `};
 
-  ${({layout}) =>
-    layout === 'horizontalExpandable' &&
-    `.slider {
-  width: 0;
-  overflow: hidden;
-  transition: 0.5s linear all;
-}`};
   ${({layout}) =>
     getResponsiveSpace(
       layout === 'vertical' ? 'rowGap' : 'columnGap',
@@ -57,11 +61,4 @@ export const VolumeControlContainer = styled.div<
     layout === 'horizontal' &&
     ` display:inline;
 `};
-  ${({layout}) =>
-    layout === 'horizontalExpandable' &&
-    `&:hover .slider {
-    margin-left: 8px;
-    width: 100px;
-    overflow: visible;
-}`}
 `;
