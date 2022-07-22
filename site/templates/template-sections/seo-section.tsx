@@ -15,5 +15,6 @@ export const SEOSection: React.FC<SEOSectionProps> = ({
     id="seo"
     toc="SEO"
     introduction={introduction}
+    lastItem
   />
 );
