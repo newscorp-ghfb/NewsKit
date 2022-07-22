@@ -163,7 +163,7 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
       aria-label="playback speed"
       class="emotion-0"
       data-testid="audio-player-playback-speed-control"
-      id="ref-floating-ui-10"
+      id="ref-:ra:"
       type="button"
     >
       <div
@@ -192,11 +192,6 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
       </div>
     </button>
     <div>
-      <div
-        data-focus-guard="true"
-        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-        tabindex="-1"
-      />
       <div
         data-focus-guard="true"
         style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -997,7 +992,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
       class="emotion-0"
       data-aria-hidden="true"
       data-testid="audio-player-playback-speed-control"
-      id="ref-floating-ui-4"
+      id="ref-:r4:"
       type="button"
     >
       <div
@@ -1034,11 +1029,6 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
         data-focus-guard="true"
         style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
         tabindex="0"
-      />
-      <div
-        data-focus-guard="true"
-        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-        tabindex="1"
       />
       <div
         data-focus-lock-disabled="false"
@@ -1664,12 +1654,12 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
       src="/audio_file_1.mp3"
     />
     <button
-      aria-controls="floating-floating-ui-1"
+      aria-controls="floating-:r2:"
       aria-haspopup="dialog"
       aria-label="playback speed"
       class="emotion-0"
       data-testid="audio-player-playback-speed-control"
-      id="ref-floating-ui-0"
+      id="ref-:r1:"
       type="button"
     >
       <div
@@ -1698,9 +1688,9 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
       </div>
     </button>
     <div
-      aria-labelledby="ref-floating-ui-0"
+      aria-labelledby="ref-:r1:"
       class="nk-popover-enter-done emotion-5"
-      id="floating-floating-ui-1"
+      id="floating-:r2:"
       role="dialog"
       tabindex="-1"
     >
@@ -1797,7 +1787,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
       </div>
       <div
         class="emotion-19"
-        id="floating-floating-ui-1-pointer"
+        id="floating-:r2:-pointer"
       />
     </div>
   </section>
@@ -2244,12 +2234,12 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
       src="/audio_file_1.mp3"
     />
     <button
-      aria-controls="floating-floating-ui-8"
+      aria-controls="floating-:r8:"
       aria-haspopup="dialog"
       aria-label="playback speed"
       class="emotion-0"
       data-testid="audio-player-playback-speed-control"
-      id="ref-floating-ui-7"
+      id="ref-:r7:"
       type="button"
     >
       <div
@@ -2278,9 +2268,9 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
       </div>
     </button>
     <div
-      aria-labelledby="ref-floating-ui-7"
+      aria-labelledby="ref-:r7:"
       class="nk-popover-enter-done emotion-5"
-      id="floating-floating-ui-8"
+      id="floating-:r8:"
       role="dialog"
       tabindex="-1"
     >
@@ -2377,7 +2367,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
       </div>
       <div
         class="emotion-19"
-        id="floating-floating-ui-8-pointer"
+        id="floating-:r8:-pointer"
       />
     </div>
   </section>

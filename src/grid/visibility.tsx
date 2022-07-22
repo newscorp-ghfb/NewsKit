@@ -21,7 +21,7 @@ interface InternalProps extends CommonProps {
 }
 
 export interface VisibilityProps extends CommonProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   display?: DisplayProperty;
 }
 

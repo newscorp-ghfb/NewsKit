@@ -46,7 +46,7 @@ declare module 'react-codesandboxer' {
   import {ComponentType, StyleHTMLAttributes, Component} from 'react';
 
   type CodeSandboxerProps = {
-    children: React.ReactNode;
+    children: React.ReactNode | (() => React.ReactNode);
     examplePath: string;
     example: string;
     name: string;

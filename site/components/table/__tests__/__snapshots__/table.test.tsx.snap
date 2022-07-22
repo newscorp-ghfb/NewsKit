@@ -277,9 +277,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
         >
           <td
             class="emotion-5"
-          >
-            column
-          </td>
+          />
           <td
             class="emotion-6"
           >
@@ -319,9 +317,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
         >
           <td
             class="emotion-5"
-          >
-            column
-          </td>
+          />
           <td
             class="emotion-6"
           >
@@ -711,37 +707,14 @@ exports[`Table renders number values automatically if undefined 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 600;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-16 {
+.emotion-14 {
   padding: 16px 16px 16px 0;
   min-width: 100px;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-29 {
+.emotion-25 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
@@ -796,11 +769,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    1
-                  </span>
+                  1
                 </div>
               </div>
             </div>
@@ -818,20 +787,14 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    1
-                  </span>
+                  1
                 </div>
               </div>
             </div>
           </td>
           <td
-            class="emotion-16"
-          >
-            one
-          </td>
+            class="emotion-14"
+          />
         </tr>
         <tr
           class="emotion-5"
@@ -849,11 +812,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    2
-                  </span>
+                  2
                 </div>
               </div>
             </div>
@@ -871,23 +830,17 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    2
-                  </span>
+                  2
                 </div>
               </div>
             </div>
           </td>
           <td
-            class="emotion-16"
-          >
-            two
-          </td>
+            class="emotion-14"
+          />
         </tr>
         <tr
-          class="emotion-29"
+          class="emotion-25"
         >
           <td
             class="emotion-6"
@@ -902,11 +855,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    3
-                  </span>
+                  3
                 </div>
               </div>
             </div>
@@ -924,20 +873,14 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    3
-                  </span>
+                  3
                 </div>
               </div>
             </div>
           </td>
           <td
-            class="emotion-16"
-          >
-            three
-          </td>
+            class="emotion-14"
+          />
         </tr>
       </tbody>
     </table>
@@ -1033,28 +976,20 @@ exports[`Table renders with default styles 1`] = `
         >
           <td
             class="emotion-5"
-          >
-            col
-          </td>
+          />
           <td
             class="emotion-5"
-          >
-            column
-          </td>
+          />
         </tr>
         <tr
           class="emotion-7"
         >
           <td
             class="emotion-5"
-          >
-            col
-          </td>
+          />
           <td
             class="emotion-5"
-          >
-            column
-          </td>
+          />
         </tr>
       </tbody>
     </table>
@@ -1277,9 +1212,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
         >
           <td
             class="emotion-6"
-          >
-            name
-          </td>
+          />
           <td
             class="emotion-7"
           >
@@ -1330,9 +1263,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
         >
           <td
             class="emotion-6"
-          >
-            name
-          </td>
+          />
           <td
             class="emotion-7"
           >
@@ -1599,9 +1530,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
         >
           <td
             class="emotion-6"
-          >
-            name
-          </td>
+          />
           <td
             class="emotion-7"
           >
@@ -1652,9 +1581,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
         >
           <td
             class="emotion-6"
-          >
-            name
-          </td>
+          />
           <td
             class="emotion-7"
           >

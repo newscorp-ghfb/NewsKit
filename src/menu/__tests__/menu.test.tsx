@@ -254,7 +254,7 @@ describe('MenuGroup', () => {
 
     const fragment = renderToFragmentWithTheme(() => (
       <Menu vertical>
-        <MenuGroup title={() => <MenuGroupTitle />}>{menuItems}</MenuGroup>
+        <MenuGroup title={<MenuGroupTitle />}>{menuItems}</MenuGroup>
       </Menu>
     ));
     expect(fragment).toMatchSnapshot();

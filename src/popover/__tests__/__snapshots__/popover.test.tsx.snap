@@ -15,7 +15,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: -24px;
 }
 
@@ -709,6 +709,8 @@ exports[`Popover close button should show left-aligned 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -972,7 +974,7 @@ exports[`Popover close button should show left-aligned 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="nk-popover-enter-done emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -1046,6 +1048,8 @@ exports[`Popover close button should show right-aligned 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1309,7 +1313,7 @@ exports[`Popover close button should show right-aligned 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="nk-popover-enter-done emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -1383,7 +1387,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: -24px;
 }
 
@@ -2110,7 +2114,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: -24px;
 }
 
@@ -2467,7 +2471,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: -24px;
 }
 
@@ -3222,7 +3226,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: -24px;
 }
 
@@ -3610,7 +3614,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: -10px;
 }
 
@@ -3968,7 +3972,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: -16px;
 }
 
@@ -4326,7 +4330,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: 0px;
 }
 
@@ -4684,7 +4688,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: 0px;
 }
 
@@ -5381,7 +5385,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -10px;
   top: -24px;
 }
 
@@ -5739,7 +5743,7 @@ exports[`Popover pointer padding should be applied with token distance override 
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -16px;
   top: -24px;
 }
 
@@ -7502,7 +7506,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: -24px;
 }
 
@@ -7860,7 +7864,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: -24px;
 }
 
@@ -8218,7 +8222,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 0px;
+  left: -12px;
   top: -24px;
 }
 
@@ -8577,7 +8581,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   z-index: 80;
   position: absolute;
   left: 24px;
-  top: 0px;
+  top: -12px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

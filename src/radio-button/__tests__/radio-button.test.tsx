@@ -27,7 +27,7 @@ const setup = (props: RadioGroupProps) => {
 describe('RadioButton', () => {
   test('with no checked', () => {
     const {inputs} = setup({});
-    inputs.forEach(input => {
+    inputs.forEach((input: any) => {
       expect(input).not.toHaveAttribute('checked');
     });
   });

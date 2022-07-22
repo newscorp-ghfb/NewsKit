@@ -11,34 +11,34 @@ export const renderToFragment = (
   options?: RenderOptions,
 ) => renderer(ui, options).asFragment();
 
-export const renderWithImplementation = <T extends {}>(
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const renderWithImplementation: any = <T extends {}>(
   Component: React.ComponentType<T>,
-  props?: T & {children?: React.ReactNode},
+  props?: T,
   fireEvent: (event: InstrumentationEvent) => void = () => {},
   options?: Omit<RenderOptions, 'wrapper'>,
 ) =>
   renderer(<Component {...(props as T)} />, {
     ...options,
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    wrapper: ({children}: any) => (
+    wrapper: ({children}) => (
       <InstrumentationProvider fireEvent={fireEvent}>
         <ThemeProvider theme={newskitLightTheme}>{children}</ThemeProvider>
       </InstrumentationProvider>
     ),
   });
 
-export const renderWithThemeFactory = (
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const renderWithThemeFactory: any = (
   defaultTheme: ThemeProviderProps['theme'],
 ) => <T extends {}>(
   Component: React.ComponentType<T>,
-  props?: T & {children?: React.ReactNode},
+  props?: T,
   theme: ThemeProviderProps['theme'] = defaultTheme,
   options?: Omit<RenderOptions, 'wrapper'>,
 ) =>
   renderer(<Component {...(props as T)} />, {
     ...options,
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    wrapper: ({children}: any) => (
+    wrapper: ({children}) => (
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     ),
   });
@@ -49,7 +49,7 @@ export const renderToFragmentWithThemeFactory = (
   defaultTheme: ThemeProviderProps['theme'],
 ) => <T extends {}>(
   Component: React.ComponentType<T>,
-  props?: T & {children?: React.ReactNode},
+  props?: T,
   theme: ThemeProviderProps['theme'] = defaultTheme,
   options?: RenderOptions,
 ) =>
@@ -64,8 +64,8 @@ export const renderToFragmentWithTheme = renderToFragmentWithThemeFactory(
   newskitLightTheme,
 );
 
-export {render} from '@testing-library/react';
-export {renderHook} from '@testing-library/react-hooks';
+export {render, renderHook} from '@testing-library/react';
+// export {renderHook} from '@testing-library/react-hooks';
 
 // The @floating-ui lib's inset styling is applied asynchronously. To make
 // assertions on the top / left attribute values, we need to flush the queue to

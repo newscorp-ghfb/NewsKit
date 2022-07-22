@@ -5,7 +5,7 @@ import {CommonSection} from './common-section';
 import {ComponentPageCell} from '../../components/layout-cells';
 
 export type BehaviorsSectionProps = MediaListProps &
-  IntroductionText & {title?: string; toc?: string};
+  IntroductionText & {title?: string; toc?: string; children?: React.ReactNode};
 
 export const BehaviorsSection: React.FC<BehaviorsSectionProps> = ({
   introduction,

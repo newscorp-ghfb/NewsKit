@@ -379,9 +379,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
             >
               <td
                 class="emotion-10"
-              >
-                children
-              </td>
+              />
               <td
                 class="emotion-11"
               >
@@ -409,9 +407,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
               />
               <td
                 class="emotion-11"
-              >
-                Description.
-              </td>
+              />
               <td
                 class="emotion-18"
               >
@@ -1304,9 +1300,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
             >
               <td
                 class="emotion-14"
-              >
-                children
-              </td>
+              />
               <td
                 class="emotion-15"
               >
@@ -1334,9 +1328,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
               />
               <td
                 class="emotion-15"
-              >
-                Description
-              </td>
+              />
               <td
                 class="emotion-22"
               >
@@ -1547,9 +1539,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                 >
                   <td
                     class="emotion-14"
-                  >
-                    children
-                  </td>
+                  />
                   <td
                     class="emotion-15"
                   >
@@ -1577,9 +1567,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                   />
                   <td
                     class="emotion-15"
-                  >
-                    Description
-                  </td>
+                  />
                   <td
                     class="emotion-22"
                   >
@@ -1714,9 +1702,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                   />
                   <td
                     class="emotion-15"
-                  >
-                    Description.
-                  </td>
+                  />
                 </tr>
               </tbody>
             </table>

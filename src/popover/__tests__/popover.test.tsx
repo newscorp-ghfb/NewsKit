@@ -55,6 +55,7 @@ describe('Popover', () => {
         placement: 'bottom',
       });
       fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(getByRole('dialog')).toHaveStyle({
         position: 'absolute',
       });
@@ -314,33 +315,36 @@ describe('Popover', () => {
   });
 
   describe('open / close behaviour', () => {
-    test('opens on clicking context element', () => {
+    test('opens on clicking context element', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
       });
       const button = getByRole('button');
       fireEvent.click(button);
+      await applyAsyncStyling();
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('closes on clicking context element', () => {
+    test('closes on clicking context element', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
       });
       const button = getByRole('button');
       fireEvent.click(button);
       fireEvent.click(button);
+      await applyAsyncStyling();
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
-    test('does not close on escape key', () => {
+    test('does not close on escape key', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
       });
       const button = getByRole('button');
       fireEvent.click(button);
       fireEvent.keyDown(document.body, {key: 'Escape'});
+      await applyAsyncStyling();
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('does close on escape key', () => {
+    test('does close on escape key', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         enableDismiss: true,
@@ -348,9 +352,10 @@ describe('Popover', () => {
       const button = getByRole('button');
       fireEvent.click(button);
       fireEvent.keyDown(document.body, {key: 'Escape'});
+      await applyAsyncStyling();
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
-    test('does not close on clicking outside', () => {
+    test('does not close on clicking outside', async () => {
       const Component = () => (
         <>
           <div data-testid="outside" />
@@ -362,9 +367,10 @@ describe('Popover', () => {
       fireEvent.click(button);
       const outside = getByTestId('outside');
       fireEvent.click(outside);
+      await applyAsyncStyling();
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('does close on clicking outside', () => {
+    test('does close on clicking outside', async () => {
       const Component = () => (
         <>
           <div data-testid="outside" />
@@ -376,6 +382,7 @@ describe('Popover', () => {
       fireEvent.click(button);
       const outside = getByTestId('outside');
       userEvent.click(outside);
+      await applyAsyncStyling();
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
   });
@@ -452,12 +459,13 @@ describe('Popover', () => {
   });
 
   describe('pass the correct a11y attributes:', () => {
-    test("floating element has role 'dialog'", () => {
+    test("floating element has role 'dialog'", async () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, defaultProps);
       fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('floating element has default aria-labelledby if no header is passed', () => {
+    test('floating element has default aria-labelledby if no header is passed', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         header: undefined,
@@ -465,10 +473,11 @@ describe('Popover', () => {
       const btn = getByRole('button');
       fireEvent.click(btn);
       const el = queryByRole('dialog');
+      await applyAsyncStyling();
       expect(el).toHaveAttribute('aria-labelledby', `ref-${MOCK_ID}`);
       expect(btn).toHaveAttribute('id', `ref-${MOCK_ID}`);
     });
-    test('floating element has custom aria-labelledby if no header is passed', () => {
+    test('floating element has custom aria-labelledby if no header is passed', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         header: undefined,
@@ -480,9 +489,10 @@ describe('Popover', () => {
       });
       fireEvent.click(getByRole('button'));
       const el = queryByRole('dialog');
+      await applyAsyncStyling();
       expect(el).toHaveAttribute('aria-labelledby', 'customId');
     });
-    test('floating element has aria-describedby if header is passed', () => {
+    test('floating element has aria-describedby if header is passed', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         header: 'header value',
@@ -490,6 +500,7 @@ describe('Popover', () => {
       const btn = getByRole('button');
       fireEvent.click(btn);
       const el = queryByRole('dialog');
+      await applyAsyncStyling();
       expect(el).toHaveAttribute('aria-describedby', `header-${MOCK_ID}`);
     });
     test('context element has aria-haspopup', () => {
@@ -497,10 +508,11 @@ describe('Popover', () => {
       const el = queryByRole('button');
       expect(el).toHaveAttribute('aria-haspopup', 'dialog');
     });
-    test('context element has aria-controls when dialog is open', () => {
+    test('context element has aria-controls when dialog is open', async () => {
       const {getByRole} = renderWithTheme(Popover, defaultProps);
       const btn = getByRole('button');
       fireEvent.click(btn);
+      await applyAsyncStyling();
       expect(btn).toHaveAttribute('aria-controls', `floating-${MOCK_ID}`);
     });
   });
@@ -511,7 +523,7 @@ describe('Popover', () => {
       onDismiss = jest.fn();
     });
 
-    test('calls onDismiss on close', () => {
+    test('calls onDismiss on close', async () => {
       const {getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         onDismiss,
@@ -519,6 +531,7 @@ describe('Popover', () => {
       const button = getByRole('button');
       fireEvent.click(button);
       fireEvent.click(button);
+      await applyAsyncStyling();
       expect(onDismiss).toHaveBeenCalled();
     });
     test('does not call onDismiss on first load if closed', () => {
@@ -543,16 +556,17 @@ describe('Popover', () => {
       const input1 = getByTestId('input1');
       expect(input1).toHaveFocus();
     });
-    test('shifts to panel panel on open', () => {
+    test('shifts to panel on open', async () => {
       const {getByRole, getByTestId} = renderWithTheme(Popover, {
         ...defaultProps,
       });
       const button = getByRole('button');
-      userEvent.click(button);
+      fireEvent.click(button);
       const panel = getByTestId('floating-element-panel');
+      await applyAsyncStyling();
       expect(panel).toHaveFocus();
     });
-    test('shifts through interactive elements within popover', () => {
+    test('shifts through interactive elements within popover', async () => {
       const Component = () => (
         <Popover
           {...defaultProps}
@@ -566,8 +580,9 @@ describe('Popover', () => {
       );
       const {getByRole, getByTestId} = renderWithTheme(Component);
       const button = getByRole('button');
-      userEvent.click(button);
+      fireEvent.click(button);
       const panel = getByTestId('floating-element-panel');
+      await applyAsyncStyling();
       expect(panel).toHaveFocus();
       userEvent.tab();
       const input1 = getByTestId('input1');
@@ -576,7 +591,7 @@ describe('Popover', () => {
       const input2 = getByTestId('input2');
       expect(input2).toHaveFocus();
     });
-    test('shifts to close button then to elements outside popover after elements within popover', () => {
+    test('shifts to close button then to elements outside popover after elements within popover', async () => {
       const Component = () => (
         <>
           <Popover
@@ -592,8 +607,9 @@ describe('Popover', () => {
       );
       const {getByRole, getByTestId} = renderWithTheme(Component);
       const button = getByRole('button');
-      userEvent.click(button);
+      fireEvent.click(button);
       const panel = getByTestId('floating-element-panel');
+      await applyAsyncStyling();
       expect(panel).toHaveFocus();
       userEvent.tab();
       const input1 = getByTestId('input1');
@@ -605,16 +621,17 @@ describe('Popover', () => {
       const input2 = getByTestId('input2');
       expect(input2).toHaveFocus();
     });
-    test('returns to context element on close by default', () => {
+    test('returns to context element on close by default', async () => {
       const {getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
       });
       const button = getByRole('button');
-      userEvent.click(button);
-      userEvent.click(button);
+      fireEvent.click(button);
+      fireEvent.click(button);
+      await applyAsyncStyling();
       expect(button).toHaveFocus();
     });
-    test('returns to custom element on close if restoreFocusTo is provided', () => {
+    test('returns to custom element on close if restoreFocusTo is provided', async () => {
       const Component = () => {
         const [forceRenderState, setForceRenderState] = React.useState(false);
         const restoreFocusRef = useRef(null);
@@ -638,12 +655,13 @@ describe('Popover', () => {
       const {getByTestId, getByRole} = renderWithTheme(Component);
 
       const button = getByRole('button');
-      userEvent.click(button);
+      fireEvent.click(button);
 
       const panel = getByTestId('floating-element-panel');
+      await applyAsyncStyling();
       expect(panel).toHaveFocus();
 
-      userEvent.click(button);
+      fireEvent.click(button);
 
       const restoreFocus = getByTestId('restoreFocus');
       expect(restoreFocus).toHaveFocus();
@@ -651,22 +669,24 @@ describe('Popover', () => {
   });
 
   describe('header', () => {
-    test('should show if passed', () => {
+    test('should show if passed', async () => {
       const {getByRole, queryByTestId} = renderWithTheme(Popover, {
         ...defaultProps,
         header: 'header value',
       });
       fireEvent.click(getByRole('button'));
       const headerText = queryByTestId('header-text');
+      await applyAsyncStyling();
       expect(headerText).toHaveTextContent('header value');
     });
-    test('should not show if not passed', () => {
+    test('should not show if not passed', async () => {
       const {getByRole, queryByTestId} = renderWithTheme(Popover, {
         ...defaultProps,
         header: undefined,
       });
       fireEvent.click(getByRole('button'));
       const headerText = queryByTestId('header-text');
+      await applyAsyncStyling();
       expect(headerText).not.toBeInTheDocument();
     });
     test('applies stylePreset overrides', async () => {
@@ -735,29 +755,32 @@ describe('Popover', () => {
   });
 
   describe('close button', () => {
-    test('should not show if hidden', () => {
+    test('should not show if hidden', async () => {
       const {getByRole, queryByTestId} = renderWithTheme(Popover, {
         ...defaultProps,
         closePosition: 'none',
       });
       fireEvent.click(getByRole('button'));
       const closeBtn = queryByTestId('close-button');
+      await applyAsyncStyling();
       expect(closeBtn).not.toBeInTheDocument();
     });
-    test('should show right-aligned', () => {
+    test('should show right-aligned', async () => {
       const {getByRole, asFragment} = renderWithTheme(Popover, {
         ...defaultProps,
         closePosition: 'right',
       });
       fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should show left-aligned', () => {
+    test('should show left-aligned', async () => {
       const {getByRole, asFragment} = renderWithTheme(Popover, {
         ...defaultProps,
         closePosition: 'left',
       });
       fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('applies stylePreset overrides', async () => {
@@ -818,7 +841,7 @@ describe('Popover', () => {
       await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should close popover and call onDismiss and handleCloseButtonClick when close button clicked', () => {
+    test('should close popover and call onDismiss and handleCloseButtonClick when close button clicked', async () => {
       const onDismiss = jest.fn();
       const handleCloseButtonClick = jest.fn();
       const {getByRole, queryByRole, getByTestId} = renderWithTheme(Popover, {
@@ -830,6 +853,7 @@ describe('Popover', () => {
       expect(queryByRole('dialog')).toBeInTheDocument();
       const closeBtn = getByTestId('close-button');
       fireEvent.click(closeBtn);
+      await applyAsyncStyling();
       expect(queryByRole('dialog')).not.toBeInTheDocument();
       expect(onDismiss).toHaveBeenCalled();
       expect(handleCloseButtonClick).toHaveBeenCalled();

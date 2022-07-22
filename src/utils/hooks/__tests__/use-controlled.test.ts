@@ -1,4 +1,4 @@
-import {act} from 'react-test-renderer';
+import {act} from '@testing-library/react';
 import {renderHook} from '../../../test/test-utils';
 import {useControlled} from '..';
 
