@@ -28,7 +28,7 @@ const StyledSuffix = StyledDateText;
 
 const defaultDateFormat = "MMMM d yyyy, h:mmaaaaa'm'";
 
-const ThemelessDateTime = React.forwardRef<HTMLParagraphElement, DateTimeProps>(
+const ThemelessDateTime = React.forwardRef<HTMLDivElement, DateTimeProps>(
   (
     {date, dateFormat = defaultDateFormat, prefix, suffix, overrides = {}},
     ref,
