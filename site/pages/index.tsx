@@ -353,9 +353,12 @@ const Index = (layoutProps: LayoutProps) => {
                 spaceInline="space030"
                 height="unset"
               >
-                <LinkNext href="/about/introduction" passHref>
+                <LinkNext
+                  href="/getting-started/design/design-overview"
+                  passHref
+                >
                   <Button
-                    href="/about/introduction"
+                    href="/getting-started/design/design-overview"
                     overrides={{width: 'sizing110'}}
                   >
                     Design

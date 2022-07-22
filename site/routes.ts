@@ -189,7 +189,7 @@ export default [
             title: 'Outlines',
             page: true,
             id: '/theme/foundation/outlines',
-            illustration: 'theme/borders/hero',
+            illustration: 'theme/hero-outlines-illustration',
             description:
               'Outlines provide visual cues about the focus or active states of elements.',
           },
@@ -587,6 +587,14 @@ export default [
           'Components that enable users to move between pages or content.',
         id: '/components/navigation',
         subNav: [
+          {
+            title: 'Accordion',
+            page: true,
+            id: '/components/accordion',
+            description:
+              'Accordions show and hide related content. Use them to break up long pages into segmented, prioritised sections.',
+            illustration: 'components/accordion/hero',
+          },
           {
             title: 'Link',
             page: true,

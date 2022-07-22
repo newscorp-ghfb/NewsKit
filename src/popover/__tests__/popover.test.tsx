@@ -437,28 +437,16 @@ describe('Popover', () => {
       fireEvent.click(closeButton);
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
-    test('should call onDismiss on close', () => {
+    test('should call onDismiss on dismiss', () => {
       const onDismiss = jest.fn();
-      const Component = () => {
-        const [open, setOpen] = React.useState(true);
-        return (
-          <>
-            <Popover open={open} content="hello" onDismiss={onDismiss}>
-              <button type="submit">Add</button>
-            </Popover>
-            <Button
-              data-testid="outside-control"
-              onClick={() => setOpen(!open)}
-            >
-              External control
-            </Button>
-          </>
-        );
-      };
+      const Component = () => (
+        <Popover open content="hello" enableDismiss onDismiss={onDismiss}>
+          <div>Controlled Popover</div>
+        </Popover>
+      );
 
-      const {getByTestId} = renderWithTheme(Component);
-      const button = getByTestId('outside-control');
-      fireEvent.click(button);
+      renderWithTheme(Component);
+      fireEvent.keyDown(document.body, {key: 'Escape'});
       expect(onDismiss).toHaveBeenCalled();
     });
   });

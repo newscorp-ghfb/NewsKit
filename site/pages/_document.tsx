@@ -17,6 +17,7 @@ const Base = () => <base href={baseHref} />;
 export default class MyDocument extends Document {
   render() {
     const isSiteEnvProduction = process.env.SITE_ENV === 'production';
+
     const helmet = Helmet.rewind();
     return (
       <Html lang="en">
@@ -35,14 +36,16 @@ export default class MyDocument extends Document {
           </style>
           {helmet.script.toComponent()}
           <HTMLMeta />
-          <Consent
-            sourcePointConfigUnified={{
-              accountId: 259,
-              propertyHref: 'https://newskit.co.uk',
-              gdpr: {},
-            }}
-            reactHelmet={Helmet}
-          />
+          {isSiteEnvProduction && (
+            <Consent
+              sourcePointConfigUnified={{
+                accountId: 259,
+                propertyHref: 'https://newskit.co.uk',
+                gdpr: {},
+              }}
+              reactHelmet={Helmet}
+            />
+          )}
         </Head>
         <body>
           <Global
@@ -234,11 +237,13 @@ export default class MyDocument extends Document {
               }
             `}
           />
-          <Tealium
-            accountId="newsinternational"
-            profileId="thetimes.newskit"
-            env={isSiteEnvProduction ? 'prod' : 'dev'}
-          />
+          {isSiteEnvProduction && (
+            <Tealium
+              accountId="newsinternational"
+              profileId="thetimes.newskit"
+              env={isSiteEnvProduction ? 'prod' : 'dev'}
+            />
+          )}
           <Main />
           <NextScript />
         </body>
