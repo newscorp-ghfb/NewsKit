@@ -552,6 +552,9 @@ export const AudioSubComponents = () => (
   </StyledPage>
 );
 AudioSubComponents.storyName = 'audio-sub-components';
+AudioSubComponents.parameters = {
+  eyes: {waitBeforeCapture: 5000},
+};
 
 export const AudioPlayerWithInitialProps = () => {
   const breakpointKey = useBreakpointKey();
@@ -901,6 +904,9 @@ export const AudioPlayPauseButtonAutoplay = () => (
 );
 
 AudioPlayPauseButtonAutoplay.storyName = 'audio-play-pause-button-autoplay';
+AudioPlayPauseButtonAutoplay.parameters = {
+  eyes: {waitBeforeCapture: 5000},
+};
 
 export const AudioPlayerKeyboard = () => (
   <StyledPage>
@@ -1100,3 +1106,6 @@ export const AudioPlayerKeyboard = () => (
   </StyledPage>
 );
 AudioPlayerKeyboard.storyName = 'audio-keyboard-shortcuts';
+AudioPlayerKeyboard.parameters = {
+  eyes: {waitBeforeCapture: 5000},
+};

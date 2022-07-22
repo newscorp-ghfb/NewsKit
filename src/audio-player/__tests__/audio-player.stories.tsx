@@ -254,6 +254,9 @@ export const StoryAudioPlayerLogicalOverrides = () => (
   </>
 );
 StoryAudioPlayerLogicalOverrides.storyName = 'audio-player-logical-overrides';
+StoryAudioPlayerLogicalOverrides.parameters = {
+  eyes: {waitBeforeCapture: 5000},
+};
 
 export const StoryRecordedAudioPlayerWithOnplay = () => (
   <AudioPlayerContainer>
@@ -308,6 +311,9 @@ export const StoryRecordedWithControls = () => (
   </>
 );
 StoryRecordedWithControls.storyName = 'recorded-with-controls';
+StoryRecordedWithControls.parameters = {
+  eyes: {waitBeforeCapture: 5000},
+};
 
 export const StoryRecordedWithHiddenControls = () => (
   <>
@@ -355,7 +361,7 @@ export const StoryRecordedWithHiddenControls = () => (
   </>
 );
 StoryRecordedWithHiddenControls.storyName = 'recorded-with-hidden-controls';
-StoryRecordedWithControls.parameters = {eyes: {waitBeforeCapture: 10000}};
+StoryRecordedWithHiddenControls.parameters = {eyes: {waitBeforeCapture: 10000}};
 
 export default {
   title: 'NewsKit Light/audio-player',
