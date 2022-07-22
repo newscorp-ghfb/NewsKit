@@ -455,7 +455,7 @@ export const AudioPlayer = () => (
 );
 AudioPlayer.storyName = 'audio-player';
 AudioPlayer.parameters = {
-  eyes: {waitBeforeCapture: 5000},
+  eyes: {waitBeforeCapture: '#finished-loading'},
 };
 
 export const AudioSubComponents = () => (
@@ -553,7 +553,7 @@ export const AudioSubComponents = () => (
 );
 AudioSubComponents.storyName = 'audio-sub-components';
 AudioSubComponents.parameters = {
-  eyes: {waitBeforeCapture: 5000},
+  eyes: {waitBeforeCapture: '#finished-loading'},
 };
 
 export const AudioPlayerWithInitialProps = () => {
@@ -615,7 +615,7 @@ export const AudioPlayerWithInitialProps = () => {
 
 AudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
 AudioPlayerWithInitialProps.parameters = {
-  eyes: {waitBeforeCapture: 5000},
+  eyes: {waitBeforeCapture: '#finished-loading'},
 };
 
 export const AudioPlayerOverrides = () => {
@@ -895,6 +895,9 @@ export const AudioPlayerOverrides = () => {
   );
 };
 AudioPlayerOverrides.storyName = 'audio-player-overrides';
+AudioPlayerOverrides.parameters = {
+  eyes: {waitBeforeCapture: '#finished-loading'},
+};
 
 export const AudioPlayPauseButtonAutoplay = () => (
   <StyledPage>
@@ -905,7 +908,7 @@ export const AudioPlayPauseButtonAutoplay = () => (
 
 AudioPlayPauseButtonAutoplay.storyName = 'audio-play-pause-button-autoplay';
 AudioPlayPauseButtonAutoplay.parameters = {
-  eyes: {waitBeforeCapture: 5000},
+  eyes: {waitBeforeCapture: '#finished-loading'},
 };
 
 export const AudioPlayerKeyboard = () => (
@@ -1107,5 +1110,5 @@ export const AudioPlayerKeyboard = () => (
 );
 AudioPlayerKeyboard.storyName = 'audio-keyboard-shortcuts';
 AudioPlayerKeyboard.parameters = {
-  eyes: {waitBeforeCapture: 5000},
+  eyes: {waitBeforeCapture: '#finished-loading'},
 };

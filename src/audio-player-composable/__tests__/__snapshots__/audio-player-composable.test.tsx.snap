@@ -4325,6 +4325,9 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
         </div>
       </div>
     </button>
+    <div
+      id="finished-loading"
+    />
     <span
       class="emotion-10"
       data-testid="audio-player-time-display"

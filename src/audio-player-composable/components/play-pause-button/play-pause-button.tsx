@@ -45,12 +45,15 @@ const ThemelessAudioPlayerPlayPauseButton: React.FC<AudioPlayerPlayPauseButtonPr
     });
 
     return (
-      <IconButton
-        data-testid="audio-player-play-pause-button"
-        size={ButtonSize.Large}
-        overrides={overrides}
-        {...propsFromContext}
-      />
+      <>
+        <IconButton
+          data-testid="audio-player-play-pause-button"
+          size={ButtonSize.Large}
+          overrides={overrides}
+          {...propsFromContext}
+        />
+        {!propsFromContext.loading && <div id="finished-loading" />}
+      </>
     );
   },
 );

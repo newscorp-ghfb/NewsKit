@@ -255,7 +255,7 @@ export const StoryAudioPlayerLogicalOverrides = () => (
 );
 StoryAudioPlayerLogicalOverrides.storyName = 'audio-player-logical-overrides';
 StoryAudioPlayerLogicalOverrides.parameters = {
-  eyes: {waitBeforeCapture: 5000},
+  eyes: {waitBeforeCapture: '#finished-loading'},
 };
 
 export const StoryRecordedAudioPlayerWithOnplay = () => (
@@ -274,7 +274,7 @@ export const StoryRecordedAudioPlayerWithOnplay = () => (
 StoryRecordedAudioPlayerWithOnplay.storyName =
   'recorded-audio-player-with-onPlay';
 StoryRecordedAudioPlayerWithOnplay.parameters = {
-  eyes: {waitBeforeCapture: 5000},
+  eyes: {waitBeforeCapture: '#finished-loading'},
 };
 
 export const StoryRecordedWithControls = () => (
@@ -312,7 +312,7 @@ export const StoryRecordedWithControls = () => (
 );
 StoryRecordedWithControls.storyName = 'recorded-with-controls';
 StoryRecordedWithControls.parameters = {
-  eyes: {waitBeforeCapture: 5000},
+  eyes: {waitBeforeCapture: '#finished-loading'},
 };
 
 export const StoryRecordedWithHiddenControls = () => (
