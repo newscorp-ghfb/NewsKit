@@ -239,7 +239,14 @@ const AudioPlayerFullRecordedExpandableVolume = (props: {
 
             <Areas.Volume alignSelf="center" justifySelf="start">
               <AudioPlayerVolumeControl
-                collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+                overrides={{
+                  transitionPreset: 'fade',
+                }}
+                layout={
+                  breakpointKey === 'xs'
+                    ? 'horizontalCollapsed'
+                    : 'horizontalExpandable'
+                }
               />
             </Areas.Volume>
 
@@ -331,7 +338,11 @@ const AudioPlayerFullRecorded = (props: {
 
             <Areas.Volume alignSelf="center" justifySelf="start">
               <AudioPlayerVolumeControl
-                collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+                layout={
+                  breakpointKey === 'xs' || breakpointKey === 'sm'
+                    ? 'horizontalCollapsed'
+                    : 'horizontalExpandable'
+                }
               />
             </Areas.Volume>
 
@@ -474,6 +485,7 @@ const AudioPlayerInlineRecorded = (props: {
   src?: string;
 }) => {
   const breakpointKey = useBreakpointKey();
+
   return (
     <AudioPlayerComposable src={AUDIO_SRC} {...props}>
       <GridLayout
@@ -483,8 +495,11 @@ const AudioPlayerInlineRecorded = (props: {
       >
         <GridLayoutItem column="1/2" row="1/5">
           <AudioPlayerVolumeControl
-            collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
-            layout="vertical"
+            layout={
+              breakpointKey === 'xs'
+                ? 'horizontalCollapsed'
+                : 'horizontalExpandable'
+            }
           />
         </GridLayoutItem>
         <GridLayoutItem column="2/3" row="4/5">
@@ -1190,3 +1205,62 @@ export const AudioPlayerKeyboard = () => (
   </StyledPage>
 );
 AudioPlayerKeyboard.storyName = 'audio-keyboard-shortcuts';
+
+export const AudioPlayerVolumeControlLayout = () => (
+  <StyledPage>
+    <StorybookSubHeading>Volume control horizontal</StorybookSubHeading>
+    <AudioPlayerComposable src={AUDIO_SRC}>
+      <GridLayout
+        columns="auto auto 40px 1fr auto auto"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <GridLayoutItem column="1/2" row="1/5">
+          <AudioPlayerVolumeControl layout="horizontal" />
+        </GridLayoutItem>
+      </GridLayout>
+    </AudioPlayerComposable>
+    <StorybookSubHeading>
+      Volume control horizontal-expandable
+    </StorybookSubHeading>
+    <AudioPlayerComposable src={AUDIO_SRC}>
+      <GridLayout
+        columns="auto auto 40px 1fr auto auto"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <GridLayoutItem column="1/2" row="1/5">
+          <AudioPlayerVolumeControl />
+        </GridLayoutItem>
+      </GridLayout>
+    </AudioPlayerComposable>
+    <StorybookSubHeading>
+      Volume control horizontal-collapsed
+    </StorybookSubHeading>
+    <AudioPlayerComposable src={AUDIO_SRC}>
+      <GridLayout
+        columns="auto auto 40px 1fr auto auto"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <GridLayoutItem column="1/2" row="1/5">
+          <AudioPlayerVolumeControl layout="horizontalCollapsed" />
+        </GridLayoutItem>
+      </GridLayout>
+    </AudioPlayerComposable>
+    <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
+    <AudioPlayerComposable src={AUDIO_SRC}>
+      <GridLayout
+        columns="auto auto 40px 1fr auto auto"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <GridLayoutItem column="1/2" row="1/5">
+          <AudioPlayerVolumeControl layout="vertical" />
+        </GridLayoutItem>
+      </GridLayout>
+    </AudioPlayerComposable>
+  </StyledPage>
+);
+
+AudioPlayerVolumeControlLayout.storyName = 'audio-player-volume-control-layout';
