@@ -17,6 +17,13 @@ const infoIcon = (
   />
 );
 
+const unorderedListOverrides = {
+  spaceStack: 'space050',
+  content: {
+    typographyPreset: 'editorialParagraph030',
+  },
+};
+
 const PopoverComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
@@ -138,14 +145,13 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
             <>
               The position of the close icon button in the Popover is set to the
               right as default, with the option to set the position to the left.
+              <br />
+              <br />
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="Aria principles"
                 title="Note"
-                overrides={{
-                  marginBlockStart: 'space050',
-                }}
               >
                 The close icon button is optional. However, it‘s recommended
                 that a close button is used to adhere to{' '}
@@ -287,16 +293,12 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
       introduction: (
         <>
           The Popover has the following accessibility considerations:
+          <br />
+          <br />
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
-            overrides={{
-              spaceStack: 'space050',
-              content: {
-                typographyPreset: 'editorialParagraph030',
-              },
-              marginBlockStart: 'space050',
-            }}
+            overrides={unorderedListOverrides}
           >
             <>
               Popovers must be discoverable and readable with a mouse, other
@@ -435,12 +437,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
-            overrides={{
-              spaceStack: 'space050',
-              content: {
-                typographyPreset: 'editorialParagraph030',
-              },
-            }}
+            overrides={unorderedListOverrides}
           >
             <>
               Ensure all text, icons, and images are visible in the Popover so
