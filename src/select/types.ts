@@ -55,6 +55,8 @@ export interface SelectProps extends CommonInputProps {
   useModal?: MQ<boolean>;
   overrides?: SelectPropsOverrides;
   virtualized?: number;
+  panelId?: string;
+  panelLabel?: string;
 }
 
 export interface SelectOptionProps {

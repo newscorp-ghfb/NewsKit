@@ -29,6 +29,8 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       children,
       useModal = {},
       virtualized = 50,
+      panelId,
+      panelLabel,
       ...restProps
     } = props;
 
@@ -74,12 +76,13 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     }, [defaultSelectedItem, onChange, programmaticallySelectedItem]);
 
     const onInputChange = React.useCallback(
+      /* istanbul ignore next */
       (event: {selectedItem: {props: {value: string}}}) => {
-        // istanbul ignore else
+        /* istanbul ignore next */
         if (localInputRef.current) {
           localInputRef.current.value = event.selectedItem.props.value;
         }
-        // istanbul ignore else
+        /* istanbul ignore next */
         if (onChange && localInputRef.current) {
           onChange({
             type: 'change',
@@ -118,6 +121,8 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       openMenu,
       closeMenu,
     } = useSelect({
+      menuId: panelId,
+      labelId: panelLabel,
       items: children,
       defaultSelectedItem,
       onSelectedItemChange: () => onInputChange,
@@ -126,6 +131,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       stateReducer: (_, actionAndChanges) => {
         const {type, changes} = actionAndChanges;
         // Does not close panel in the case we are rendering panel inside a modal
+        /* istanbul ignore next */
         if (renderInModal && type === useSelect.stateChangeTypes.MenuBlur) {
           return {
             ...changes,

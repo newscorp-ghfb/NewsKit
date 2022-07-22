@@ -213,7 +213,7 @@ describe('Form', () => {
       target: {value: 'test@news.co.uk'},
     });
     const a = inputEmail.closest('div') as HTMLElement;
-    expect(await within(a).getByTestId('tick-icon')).not.toBeNull();
+    expect(within(a).getByTestId('tick-icon')).not.toBeNull();
 
     fireEvent.blur(inputUsername, {
       target: {value: 'test'},
@@ -221,7 +221,7 @@ describe('Form', () => {
     fireEvent.blur(inputUsername);
 
     expect(
-      await within(inputUsername.closest('div') as HTMLElement).getByTestId(
+      within(inputUsername.closest('div') as HTMLElement).getByTestId(
         'tick-icon',
       ),
     ).not.toBeNull();
@@ -397,14 +397,21 @@ describe('Form', () => {
     expect(await findAllByTestId('tick-icon')).not.toBeNull();
 
     act(() => {
-      ref.current!.reset();
+      ref.current!.reset({
+        username: '',
+        email: '',
+      });
     });
 
     expect(queryByTestId('error-icon')).toBeNull();
     expect(queryByTestId('tick-icon')).toBeNull();
 
-    expect(inputEmail.value).toBe('test');
+    expect(inputEmail.value).toBe('');
     expect(inputUsername.value).toBe('');
+
+    act(() => {
+      ref.current!.reset();
+    });
 
     // Assert reset with default values passed
     act(() => {
@@ -487,7 +494,11 @@ describe('FormInput', () => {
       <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
 
       <FormInputLabel>Pizza topping</FormInputLabel>
-      <FormInputSelect data-testid="select-pizza-topping">
+      <FormInputSelect
+        data-testid="select-pizza-topping"
+        panelId="form-select-test-panal-id"
+        panelLabel="form-select-test-panal-label"
+      >
         <SelectOption value="ham">Ham</SelectOption>
         <SelectOption value="pineapple">Pineapple</SelectOption>
       </FormInputSelect>
@@ -576,6 +587,11 @@ describe('FormInput', () => {
       onSubmit: () => {},
       children: (formBodyFormInputInvalid as unknown) as Array<React.ReactElement>,
     };
+  });
+
+  afterEach(() => {
+    (useForm as jest.Mock).mockClear();
+    (useForm as jest.Mock).mockImplementation(actualRHF.useForm);
   });
 
   test('renders FormInput Correctly', () => {
@@ -683,16 +699,25 @@ describe('FormInput', () => {
   });
 
   test('renders with error and with submit validation and revalidation mode ', async () => {
-    const {getByRole, asFragment} = renderWithImplementation(Form, {
-      ...props,
-      reValidationMode: 'onSubmit',
-    });
+    const {getByRole, asFragment, getByTestId} = renderWithImplementation(
+      Form,
+      {
+        ...props,
+        reValidationMode: 'onSubmit',
+      },
+    );
 
-    act(() => {
+    await waitFor(() => {
       fireEvent.submit(getByRole('button'));
     });
 
     await waitFor(() => screen.getAllByText(/required field/i));
+    await waitFor(() =>
+      expect(getByTestId('text-field-email')).toHaveAttribute(
+        'aria-describedby',
+        'mock-nk-1-error-text',
+      ),
+    );
 
     expect(asFragment()).toMatchSnapshot();
   });
