@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo, UnorderedList} from 'newskit';
+import {InlineMessage, IconFilledInfo, UnorderedList} from 'newskit';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
@@ -783,12 +783,14 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           ],
           propsFooter: (
             <>
-              <Block spaceStack="space070" />
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="ForwardRef"
                 title="Note"
+                overrides={{
+                  marginBlockStart: 'space070',
+                }}
               >
                 If the Popover is wrapping a functional component, ensure that
                 the functional component accepts a ref using{' '}
