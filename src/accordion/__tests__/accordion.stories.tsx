@@ -227,6 +227,9 @@ export const StoryAccordion = () => {
   );
 };
 StoryAccordion.storyName = 'accordion';
+StoryAccordion.parameters = {
+  eyes: {layoutBreakpoints: true},
+};
 
 export const StoryAccordionOverrides = () => (
   <>
@@ -362,6 +365,9 @@ export const StoryAccordionOverrides = () => (
 );
 
 StoryAccordionOverrides.storyName = 'accordion-with-overrides';
+StoryAccordionOverrides.parameters = {
+  eyes: {layoutBreakpoints: true},
+};
 
 export const StoryAccordionGroupUnControlled = () => (
   <>
@@ -387,6 +393,9 @@ export const StoryAccordionGroupUnControlled = () => (
   </>
 );
 StoryAccordionGroupUnControlled.storyName = 'accordion-group-uncontrolled';
+StoryAccordionGroupUnControlled.parameters = {
+  eyes: {layoutBreakpoints: true},
+};
 
 export const StoryAccordionGroupControlled = () => {
   const [expanded1, setExpanded1] = React.useState([1]);
@@ -411,6 +420,9 @@ export const StoryAccordionGroupControlled = () => {
   );
 };
 StoryAccordionGroupControlled.storyName = 'accordion-group-controlled';
+StoryAccordionGroupControlled.parameters = {
+  eyes: {layoutBreakpoints: true},
+};
 
 export const StoryAccordionOutlineOverrides = () => (
   <>
@@ -503,6 +515,9 @@ export const StoryAccordionOutlineOverrides = () => (
 );
 
 StoryAccordionOutlineOverrides.storyName = 'accordion-with-outline-overrides';
+StoryAccordionOutlineOverrides.parameters = {
+  eyes: {layoutBreakpoints: true},
+};
 
 export const StoryAccordionGroupTransitionOverrides = () => {
   const noTransitions = {
