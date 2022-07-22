@@ -588,6 +588,14 @@ export default [
         id: '/components/navigation',
         subNav: [
           {
+            title: 'Accordion',
+            page: true,
+            id: '/components/accordion',
+            description:
+              'Accordions show and hide related content. Use them to break up long pages into segmented, prioritised sections.',
+            illustration: 'components/accordion/hero',
+          },
+          {
             title: 'Link',
             page: true,
             id: '/components/link',
