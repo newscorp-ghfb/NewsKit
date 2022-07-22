@@ -15,8 +15,6 @@ import {
   styled,
   TextBlock,
   Visible,
-  Drawer,
-  Modal,
 } from 'newskit';
 import LinkNext from 'next/link';
 import {SectionIntroduction} from '../components/section-introduction';
@@ -255,9 +253,6 @@ const Index = (layoutProps: LayoutProps) => {
     ? HeroImageContainerBanner
     : HeroImageContainerWithoutBanner;
 
-  const [showModal, setShowModal] = React.useState(false);
-  const [showDrawer, setShowDrawer] = React.useState(false);
-
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
       {bannerIsActive && (
@@ -282,18 +277,6 @@ const Index = (layoutProps: LayoutProps) => {
           </Banner>
         </BannerWrapper>
       )}
-
-      <div>
-        <Button onClick={() => setShowModal(true)}>Open modal</Button>
-        <Button onClick={() => setShowDrawer(true)}>Open drawer</Button>
-
-        <Drawer open={showDrawer} onDismiss={() => setShowDrawer(false)}>
-          Drawer content
-        </Drawer>
-        <Modal open={showModal} onDismiss={() => setShowModal(false)}>
-          Drawer
-        </Modal>
-      </div>
 
       <DotsContainer>
         <Header>
