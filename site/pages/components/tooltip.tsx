@@ -1,10 +1,11 @@
 import React from 'react';
-import {InlineMessage, IconFilledInfo} from 'newskit';
+import {InlineMessage, IconFilledInfo, UnorderedList} from 'newskit';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
+import {IconFilledCircle} from '../../components/icons';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
@@ -270,6 +271,131 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           <InlineCode>span</InlineCode> for example.
         </>
       ),
+    }}
+    accessibility={{
+      introduction: (
+        <>
+          The Tooltip has the following accessibility considerations:
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={{
+              spaceStack: 'space050',
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
+              marginBlockStart: 'space050',
+            }}
+          >
+            <>
+              Tooltips must be discoverable and readable with a mouse, other
+              pointer devices, keyboard, screen reader, zoom software, and any
+              other assistive technology.
+            </>
+            <>
+              They should provide relevant information that may be helpful for
+              learning the UI, but is not required to operate it.
+            </>
+            <>
+              When open, Tooltips should not block a user from performing any
+              other task on the screen, this should be tested across all
+              breakpoints.
+            </>
+          </UnorderedList>
+        </>
+      ),
+      focusOrder: {
+        title: 'Focus order',
+      },
+      infoNoticeFocus: [
+        'It is not recommeded to pass links or other interactive elements to a Tooltip, due to the intent of a Tooltip being intended for short, informational messages on hover or focus.',
+      ],
+      interaction: {
+        title: 'Keyboard Interactions',
+        tableRows: [
+          {
+            command: ['Tab'],
+            description: `Toggle the Tooltip when the element that triggers it is focused.`,
+          },
+        ],
+      },
+      aria: {
+        title: 'WAI-ARIA',
+        tableRows: [
+          {
+            element: 'Popover',
+            attribute: 'aria-hidden',
+            value: 'boolean',
+            description: 'If true, hides the Tooltip',
+          },
+        ],
+      },
+      infoNoticeAria: [
+        <>
+          By default, the Tooltip only describes its child element. The content
+          of the Tooltip acts as an accessible description and{' '}
+          <InlineCode>aria-describedby</InlineCode> will be added to the
+          Tooltip&apos;s child elements.
+          <br />
+          <br />
+          Note that if the Tooltip provides the only visual label, eg an icon
+          button, then you should use Tooltip to label its child elements.
+          Otherwise, the children would have no accessible name and the Tooltip
+          would violate{' '}
+          <Link
+            target="_blank"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html"
+          >
+            success criterion 2.5.3 in WCAG 2.1.
+          </Link>
+          <br />
+          <br />
+          You can pass the <InlineCode>asLabel</InlineCode> prop to make the
+          Tooltip act as a label. In this case,{' '}
+          <InlineCode>role=tooltip</InlineCode> will be removed, and if Tooltip
+          content is a string, <InlineCode>aria-label</InlineCode> will be added
+          to child elements. Otherwise, <InlineCode>aria-labelledby</InlineCode>{' '}
+          will be added.
+        </>,
+      ],
+    }}
+    seo={{
+      title: 'SEO Considerations',
+      introduction: (
+        <>
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={{
+              spaceStack: 'space050',
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
+            }}
+          >
+            <>
+              The Tooltip component and its content are rendered to the DOM, but
+              only visible to the user when the Tooltip is open.
+            </>
+          </UnorderedList>
+        </>
+      ),
+    }}
+    compliance={{
+      states: true,
+      variations: true,
+      themes: true,
+      behaviours: true,
+      usage: true,
+      accessibility: true,
+      seo: true,
+      performance: false,
+      design: true,
+      props: true,
+      uiKit: true,
+    }}
+    related={{
+      related: ['Popover', 'Modal'],
     }}
   />
 );
