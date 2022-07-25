@@ -4,25 +4,24 @@ Cypress.Commands.add('mockConsentAndVisit', url => {
   cy.visit(url);
 });
 
+const globalRulesConfig = {
+  'page-has-heading-one': {enabled: false},
+  // we don't need this rule when testing components, its disabled because our Layer component is attached to body and need a region
+  'landmark-one-main': {enabled: false},
+};
+
 Cypress.Commands.add('checkA11yWithDefaultRules', () => {
   cy.checkA11y(null, {
-    rules: {
-      'page-has-heading-one': {enabled: false},
-    },
+    rules: globalRulesConfig,
   });
 });
 
 Cypress.Commands.add('checkA11yWithCustomRule', disabledRules => {
   cy.checkA11y(null, {
-    rules: disabledRules.reduce(
-      (acc, rule) => {
-        acc[rule] = {enabled: false};
-        return acc;
-      },
-      {
-        'page-has-heading-one': {enabled: false},
-      },
-    ),
+    rules: disabledRules.reduce((acc, rule) => {
+      acc[rule] = {enabled: false};
+      return acc;
+    }, globalRulesConfig),
   });
 });
 
