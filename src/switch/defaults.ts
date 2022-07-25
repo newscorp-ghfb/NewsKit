@@ -4,7 +4,8 @@ export default {
       thumb: {
         stylePreset: 'switchThumb',
         size: 'sizing040',
-        spaceInset: 'sizing010',
+        paddingInline: 'space010',
+        paddingBlock: 'space010',
         transitionPreset: ['shiftAbsolute'],
       },
       input: {
@@ -31,7 +32,8 @@ export default {
       thumb: {
         stylePreset: 'switchThumb',
         size: 'sizing050',
-        spaceInset: 'sizing010',
+        paddingInline: 'space010',
+        paddingBlock: 'space010',
         transitionPreset: ['shiftAbsolute'],
       },
       input: {
@@ -58,7 +60,8 @@ export default {
       thumb: {
         stylePreset: 'switchThumb',
         size: 'sizing060',
-        spaceInset: 'sizing010',
+        paddingInline: 'space010',
+        paddingBlock: 'space010',
         transitionPreset: ['shiftAbsolute'],
       },
       input: {
