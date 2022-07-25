@@ -957,6 +957,8 @@ jobs:
             # Temp downgrading React. Needed for avoiding Hydration error with React v18 https://github.com/vercel/next.js/discussions/35773
             yarn add react@17.0.1
             yarn add react-dom@17.0.1
+            yarn add @emotion/react 
+            yarn add @emotion/styled
             yarn add -D cypress@9.1.0;
       - run:
           name: Serve and test app with Cypress
@@ -1464,7 +1466,6 @@ workflows:
           environment: staging
           requires:
             - eks_flux_deploy_staging
-
 
       - eks_flux_deploy:
           name: eks_flux_deploy_dev_to_prod
