@@ -197,7 +197,7 @@ describe('MediaQueryProvider', () => {
     );
 
     // we use render here because we don't want to use the default MediaQueryProvider
-    // that comes with NewskitProvider which a is part of renderWithTheme
+    // that comes with NewsKitProvider which a is part of renderWithTheme
     const {getByText} = render(<ComponentWithProvider />, {
       wrapper: ({children}) => (
         <ThemeProvider theme={newskitLightTheme}>{children}</ThemeProvider>

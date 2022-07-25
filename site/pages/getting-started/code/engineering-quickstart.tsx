@@ -167,7 +167,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
                 react components
               </Link>
               . One thing to bear in mind is that they will need to be
-              descendants of a <InlineCode>NewskitProvider</InlineCode> which
+              descendants of a <InlineCode>NewsKitProvider</InlineCode> which
               provides a single wrapper to configure your application. It adds a{' '}
               <Link href="/theme/theming/using-a-theme/">ThemeProvider</Link>,{' '}
               <Link href="/components/utils/hooks/#usemediaqueryobject">
@@ -184,18 +184,18 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
               The following example shows the &quot;Hello World!&quot; example
               of using a NewsKit{' '}
               <Link href="/components/tag/">Tag component</Link> with the
-              NewskitProvider.
+              NewsKitProvider.
             </>
           }
           showSeparator
         >
           <Code>
-            {`import {NewskitProvider, Tag, TagSize, newskitLightTheme} from 'newskit';
+            {`import {NewsKitProvider, Tag, TagSize, newskitLightTheme} from 'newskit';
 import React from 'react';
 export default class App extends React.Component {
   render() {
     return (
-      <NewskitProvider 
+      <NewsKitProvider 
         theme={newskitLightTheme}
         instrumentation={'instrumentation provider props'}
         layer={'layer organizer props'}
@@ -205,7 +205,7 @@ export default class App extends React.Component {
           size={TagSize.Medium}>
             Tag Content
         </Tag>
-      </NewskitProvider>
+      </NewsKitProvider>
     )
   }
 }`}

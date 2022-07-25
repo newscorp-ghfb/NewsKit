@@ -8,7 +8,7 @@ import {
 } from '@testing-library/react';
 import {newskitLightTheme, ThemeProviderProps, UncompiledTheme} from '../theme';
 import {InstrumentationEvent} from '../instrumentation';
-import {NewskitProvider} from '../newskit-provider';
+import {NewsKitProvider} from '../newskit-provider';
 
 export const renderToFragment = (
   ui: React.ReactElement,
@@ -24,9 +24,9 @@ export const renderWithImplementation = <T extends {}>(
   renderer(<Component {...(props as T)} />, {
     ...options,
     wrapper: ({children}) => (
-      <NewskitProvider theme={newskitLightTheme} instrumentation={{fireEvent}}>
+      <NewsKitProvider theme={newskitLightTheme} instrumentation={{fireEvent}}>
         {children}
-      </NewskitProvider>
+      </NewsKitProvider>
     ),
   });
 
@@ -41,7 +41,7 @@ export const renderWithThemeFactory = (
   renderer(<Component {...(props as T)} />, {
     ...options,
     wrapper: ({children}) => (
-      <NewskitProvider theme={theme}>{children}</NewskitProvider>
+      <NewsKitProvider theme={theme}>{children}</NewsKitProvider>
     ),
   });
 

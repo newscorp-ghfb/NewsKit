@@ -1,12 +1,12 @@
 import React from 'react';
 import {render} from '@testing-library/react';
-import {NewskitProvider} from '..';
+import {NewsKitProvider} from '..';
 import {newskitLightTheme} from '../../theme';
 
-describe('NewskitProvider', () => {
+describe('NewsKitProvider', () => {
   it('renders as default', () => {
     const {asFragment} = render(
-      <NewskitProvider theme={newskitLightTheme}>app</NewskitProvider>,
+      <NewsKitProvider theme={newskitLightTheme}>app</NewsKitProvider>,
     );
     expect(asFragment()).toMatchSnapshot();
   });

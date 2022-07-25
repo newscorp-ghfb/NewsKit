@@ -47,7 +47,7 @@ export const withOwnTheme = <P extends {}>(
     if (process.env.NODE_ENV !== 'production' && objectIsEmpty(theme)) {
       const errorMessage = `${
         BaseComponent.displayName || 'This component'
-      } can be used only inside NewskitProvider.`;
+      } can be used only inside NewsKitProvider.`;
       throw new Error(errorMessage);
     }
 

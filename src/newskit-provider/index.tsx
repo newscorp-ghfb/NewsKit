@@ -1,2 +1,2 @@
-export {NewskitProvider} from './newskit-provider';
-export type {NewskitProviderProps} from './newskit-provider';
+export {NewsKitProvider} from './newskit-provider';
+export type {NewsKitProviderProps} from './newskit-provider';

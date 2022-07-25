@@ -13,9 +13,9 @@ To render NewsKit components you must have a theme available for them to utilise
 
 ## Setting a theme
 
-### NewskitProvider & ThemeProvider components
+### NewsKitProvider & ThemeProvider components
 
-NewskitProvider provides a single wrapper to configure your application which includes ThemeProvider, <Link href="/components/utils/hooks/#usemediaqueryobject">MediaQueryProvider</Link>, <Link href="/getting-started/code/instrumentation/">InstrumentationProvider</Link> and LayerOrganizer.
+NewsKitProvider provides a single wrapper to configure your application which includes ThemeProvider, <Link href="/components/utils/hooks/#usemediaqueryobject">MediaQueryProvider</Link>, <Link href="/getting-started/code/instrumentation/">InstrumentationProvider</Link> and LayerOrganizer.
 
 A ThemeProvider utilises a React Context to provide a theme to all NewsKit components descended under it. You pass your theme (or a NewsKit default) to the `theme` prop. This will typically be an uncompiled theme, but you can pass a pre-compiled theme if you wish.
 
@@ -29,7 +29,7 @@ ThemeProvider's can also be nested - allowing the child to override the parent t
 
 <InlineMessage>
   ThemeProvider can be nested, however, we do NOT recommend nesting
-  NewskitProviders, as it can lead to unexpected behaviour. NewskitProvider
+  NewskitProviders, as it can lead to unexpected behaviour. NewsKitProvider
   should only be used once per application on a very top level.
 </InlineMessage>
 

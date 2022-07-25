@@ -2,7 +2,7 @@ import React from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {withPerformance} from 'storybook-addon-performance';
 
-import {NewskitProvider, styled, getColorCssFromTheme} from '../src';
+import {NewsKitProvider, styled, getColorCssFromTheme} from '../src';
 import {getThemeObject} from '../src/test/theme-select-object';
 
 const unlimitedScenarios = [
@@ -103,13 +103,13 @@ export const decorators = [
   },
   (Story, context) => {
     return (
-      <NewskitProvider
+      <NewsKitProvider
         theme={getThemeObject(context?.globals?.backgrounds?.value)}
       >
         <Background>
           <Story />
         </Background>
-      </NewskitProvider>
+      </NewsKitProvider>
     );
   },
   withPerformance,

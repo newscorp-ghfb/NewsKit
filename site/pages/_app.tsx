@@ -3,7 +3,7 @@ import {
   createEventInstrumentation,
   instrumentationHandlers,
   UncompiledTheme,
-  NewskitProvider,
+  NewsKitProvider,
 } from 'newskit';
 import App, {AppContext} from 'next/app';
 import {HeadNextSeo} from '../components/head-next-seo/head-next-seo';
@@ -135,7 +135,7 @@ export default class MyApp extends App<Props, State> {
           }}
         />
 
-        <NewskitProvider
+        <NewsKitProvider
           theme={theme}
           layer={{zIndex: 1000}}
           instrumentation={createEventInstrumentation(handlers, {
@@ -151,7 +151,7 @@ export default class MyApp extends App<Props, State> {
               themeMode={themeMode}
             />
           </ThemeMode.Provider>
-        </NewskitProvider>
+        </NewsKitProvider>
       </>
     );
   }

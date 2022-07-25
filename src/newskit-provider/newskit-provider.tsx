@@ -7,34 +7,34 @@ import {
   EventInstrumentation,
   InstrumentationProvider,
 } from '../instrumentation';
-import {NewskitInternalContext, useNewskitContext} from './context';
+import {NewsKitInternalContext, useNewsKitContext} from './context';
 
-export type NewskitProviderProps = ThemeProviderProps & {
+export type NewsKitProviderProps = ThemeProviderProps & {
   children: React.ReactNode;
   layer?: LayerOrganizerProps;
   instrumentation?: Partial<EventInstrumentation>;
 };
 
-export const NewskitProvider = ({
+export const NewsKitProvider = ({
   children,
   theme,
   /* istanbul ignore next */
   layer: layerProps = {},
   instrumentation: instrumentationProps = {},
-}: NewskitProviderProps) => {
-  const NKContext = useNewskitContext();
+}: NewsKitProviderProps) => {
+  const NKContext = useNewsKitContext();
   /* istanbul ignore if */
   if (
     process.env.NODE_ENV !== 'production' &&
     Object.keys(NKContext).length > 0
   ) {
     console.warn(
-      'You are using NewskitProvider inside NewskitProvider, this might cause unexpected behavior',
+      'You are using NewsKitProvider inside NewsKitProvider, this might cause unexpected behavior',
     );
   }
 
   return (
-    <NewskitInternalContext.Provider value={{initialized: true}}>
+    <NewsKitInternalContext.Provider value={{initialized: true}}>
       <ThemeProvider theme={theme}>
         <InstrumentationProvider {...instrumentationProps}>
           <MediaQueryProvider>
@@ -42,6 +42,6 @@ export const NewskitProvider = ({
           </MediaQueryProvider>
         </InstrumentationProvider>
       </ThemeProvider>
-    </NewskitInternalContext.Provider>
+    </NewsKitInternalContext.Provider>
   );
 };

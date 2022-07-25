@@ -190,7 +190,7 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
               <br />
               <InlineMessage>
                 {' '}
-                Keep in mind that <InlineCode>NewskitProvider</InlineCode>{' '}
+                Keep in mind that <InlineCode>NewsKitProvider</InlineCode>{' '}
                 already contains{' '}
                 <InlineCode>InstrumentationProvider</InlineCode> so use it only
                 when want to create a new context for part of your application.
@@ -444,9 +444,9 @@ const Rail: React.FC<{
 );
 
 const App = () => (
-  <NewskitProvider theme={newskitLightTheme} instrumentation={instrumentation}>
+  <NewsKitProvider theme={newskitLightTheme} instrumentation={instrumentation}>
     <Rail railName="Some great rail" />
-  </ThemeProvider>
+  </NewsKitProvider>
 );`}
           </Code>
         </ContentSecondary>
@@ -454,7 +454,7 @@ const App = () => (
           description={
             <>
               In this example, we have a root{' '}
-              <InlineCode>NewskitProvider</InlineCode> providing the page URL.
+              <InlineCode>NewsKitProvider</InlineCode> providing the page URL.
               Inside the <InlineCode>Rail</InlineCode> component, we have{' '}
               <InlineCode>InstrumentationProvider</InlineCode>; this provides
               any child events with rail specifics, like the rail name. The{' '}
