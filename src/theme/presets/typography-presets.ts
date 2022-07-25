@@ -337,14 +337,23 @@ typographyPresets.utilityButton030 = {
 
 // Dropcap
 typographyPresets.editorialDropCap010 = {
-  fontSize: '5.625em',
-  lineHeight: 0.85,
+  fontFamily: '{{fonts.fontFamily020.fontFamily}}',
+  fontSize: '{{fonts.fontSize120}}',
+  lineHeight: '{{fonts.fontLineHeight020}}',
+  fontWeight: '{{fonts.fontWeight020}}',
+  letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialDropCap020 = {
-  fontSize: '5.875em',
-  lineHeight: 0.85,
+  fontFamily: '{{fonts.fontFamily020.fontFamily}}',
+  fontSize: '{{fonts.fontSize130}}',
+  lineHeight: '{{fonts.fontLineHeight020}}',
+  fontWeight: '{{fonts.fontWeight020}}',
+  letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialDropCap030 = {
-  fontSize: '6em',
-  lineHeight: 0.85,
+  fontFamily: '{{fonts.fontFamily020.fontFamily}}',
+  fontSize: '{{fonts.fontSize140}}',
+  lineHeight: '{{fonts.fontLineHeight020}}',
+  fontWeight: '{{fonts.fontWeight020}}',
+  letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
