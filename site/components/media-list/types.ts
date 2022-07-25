@@ -1,4 +1,5 @@
 import {GridProps, MQ} from 'newskit';
+import {ReactElement} from 'react';
 import {FeatureCardProps} from '../feature-card';
 import {UsageCardProps} from '../usage-card';
 import {BaseCardProps} from '../base-card';
@@ -17,6 +18,6 @@ export interface MediaListProps {
   spaceStack?: string;
   gridProps?: GridProps;
   horizontalRatio?: string;
-  notice?: string;
+  notice?: string | ReactElement;
 }
 export type MediaItem = BaseCardProps | UsageCardProps | FeatureCardProps;
