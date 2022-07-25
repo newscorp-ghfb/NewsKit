@@ -313,9 +313,8 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       focusOrder: {
         title: 'Focus order',
       },
-      infoNoticeFocus: [
+      infoNoticeFocus:
         'It is not recommeded to pass links or other interactive elements to a Tooltip, due to the intent of a Tooltip being intended for short, informational messages on hover or focus.',
-      ],
       interaction: {
         title: 'Keyboard Interactions',
         tableRows: [
