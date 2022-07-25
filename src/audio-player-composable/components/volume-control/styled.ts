@@ -9,7 +9,9 @@ import {AudioPlayerVolumeControlProps} from './types';
 import {getTransitionPreset} from '../../../utils/style/transition-preset';
 
 export const StyledVolumeSliderContainer = styled.div<
-  Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides'> & {open?: boolean}
+  Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides'> & {
+    open?: boolean;
+  }
 >`
   overflow: hidden;
 
@@ -27,16 +29,19 @@ export const StyledVolumeSliderContainer = styled.div<
       `slider.track`,
       'length',
     )}
-
+    ${({layout}) =>
+    layout === 'horizontal' &&
+    getResponsiveSpace(
+      'width',
+      'audioPlayerVolumeControl.slider.track.length',
+      '',
+      'width',
+    )};
 
   ${({layout}) =>
     layout === 'horizontalCollapsed' &&
     `display: none;
     `};
-  ${({layout}) =>
-    layout === 'horizontal' &&
-    ` display:inline;
-`};
 `;
 
 export const StyledGridLayout = styled(GridLayout)<
@@ -61,9 +66,4 @@ export const StyledGridLayout = styled(GridLayout)<
 
 export const VolumeControlContainer = styled.div<
   Pick<AudioPlayerVolumeControlProps, 'layout'>
->`
-  ${({layout}) =>
-    layout === 'horizontal' &&
-    ` display:inline;
-`};
-`;
+>``;
