@@ -31,31 +31,30 @@ const Kicker = styled.span<HeadlinePropsWithRenderAs>`
   ${getSpacingInlineHorizontal('headline.kicker', 'kicker')};
 `;
 
-const ThemelessHeadline: React.FC<HeadlineProps> = ({
-  children,
-  kickerText,
-  headingAs = 'h1',
-  kickerAs = 'span',
-  overrides = {},
-}) => (
-  <HeadlineContainer overrides={overrides}>
-    {kickerText && (
-      <Kicker
-        className="nk-headline-kicker"
-        as={kickerAs}
+const ThemelessHeadline = React.forwardRef<HTMLElement, HeadlineProps>(
+  (
+    {children, kickerText, headingAs = 'h1', kickerAs = 'span', overrides = {}},
+    ref,
+  ) => (
+    <HeadlineContainer overrides={overrides} ref={ref}>
+      {kickerText && (
+        <Kicker
+          className="nk-headline-kicker"
+          as={kickerAs}
+          overrides={overrides}
+        >
+          {kickerText}{' '}
+        </Kicker>
+      )}
+      <Heading
+        className="nk-headline-heading"
+        as={headingAs}
         overrides={overrides}
       >
-        {kickerText}{' '}
-      </Kicker>
-    )}
-    <Heading
-      className="nk-headline-heading"
-      as={headingAs}
-      overrides={overrides}
-    >
-      {children}
-    </Heading>
-  </HeadlineContainer>
+        {children}
+      </Heading>
+    </HeadlineContainer>
+  ),
 );
 
 export const Headline = withOwnTheme(ThemelessHeadline)({defaults});

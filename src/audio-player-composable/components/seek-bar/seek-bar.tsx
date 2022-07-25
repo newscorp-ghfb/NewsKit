@@ -15,9 +15,10 @@ import {useTheme} from '../../../theme';
 import defaults from './defaults';
 import {formatTrackData, seekBarAriaValueText} from './utils';
 
-const ThemelessSeekBar: React.FC<AudioPlayerSeekBarProps> = ({
-  overrides = {},
-}) => {
+const ThemelessSeekBar = React.forwardRef<
+  HTMLDivElement,
+  AudioPlayerSeekBarProps
+>(({overrides = {}}, ref) => {
   const {slider: seekBarSliderOverrides} = overrides;
 
   const theme = useTheme();
@@ -119,6 +120,7 @@ const ThemelessSeekBar: React.FC<AudioPlayerSeekBarProps> = ({
   return (
     <>
       <Slider
+        ref={ref}
         min={0}
         max={Math.floor(duration) || 1}
         values={[currentTime]}
@@ -141,7 +143,7 @@ const ThemelessSeekBar: React.FC<AudioPlayerSeekBarProps> = ({
       </ScreenReaderOnly>
     </>
   );
-};
+});
 
 export const AudioPlayerSeekBar = withOwnTheme(ThemelessSeekBar)({
   defaults,
