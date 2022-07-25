@@ -21,6 +21,7 @@ const StyledTextBlock = styled.p<TextBlockProps>`
   ${logicalProps()}
 `;
 
-export const TextBlock = React.forwardRef<HTMLParagraphElement, TextBlockProps>(
-  ({...props}, ref) => <StyledTextBlock {...props} ref={ref} />,
-);
+export const TextBlock = React.forwardRef<
+  HTMLParagraphElement & HTMLElement,
+  TextBlockProps
+>(({...props}, ref) => <StyledTextBlock {...props} ref={ref} />);

@@ -14,7 +14,7 @@ const StyledTextBlock = styled(TextBlock)<AudioPlayerTimeDisplayProps>`
 `;
 
 const ThemelessTimeDisplay = React.forwardRef<
-  HTMLParagraphElement,
+  HTMLElement & HTMLParagraphElement,
   AudioPlayerTimeDisplayProps
 >(({overrides = {}, format, ...restProps}, ref) => {
   const {getTimeDisplayProps} = useAudioPlayerContext();
