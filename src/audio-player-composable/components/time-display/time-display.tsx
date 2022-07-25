@@ -13,16 +13,16 @@ const StyledTextBlock = styled(TextBlock)<AudioPlayerTimeDisplayProps>`
   ${getTypographyPreset(`audioPlayerTimeDisplay`, '')};
 `;
 
-const ThemelessTimeDisplay = ({
-  overrides = {},
-  format,
-  ...restProps
-}: AudioPlayerTimeDisplayProps) => {
+const ThemelessTimeDisplay = React.forwardRef<
+  HTMLParagraphElement,
+  AudioPlayerTimeDisplayProps
+>(({overrides = {}, format, ...restProps}, ref) => {
   const {getTimeDisplayProps} = useAudioPlayerContext();
   const {format: defaultFormat, currentTime, duration} = getTimeDisplayProps!();
   const formatFn = typeof format === 'function' ? format : defaultFormat;
   return (
     <StyledTextBlock
+      ref={ref}
       as="span"
       overrides={overrides}
       data-testid="audio-player-time-display"
@@ -31,7 +31,7 @@ const ThemelessTimeDisplay = ({
       {formatFn({currentTime, duration})}
     </StyledTextBlock>
   );
-};
+});
 
 export const AudioPlayerTimeDisplay = withOwnTheme(ThemelessTimeDisplay)({
   defaults,

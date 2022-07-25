@@ -3,7 +3,7 @@ const parser = require('@babel/parser');
 const fs = require('fs');
 const path = require('path');
 
-const ignoreScenarios = ['image-e2e', 'use-media-query'];
+const ignoreScenarios = ['image-e2e', 'use-media-query', 'layer'];
 
 const files = fg.sync('./src/**/**.stories.tsx');
 const testsConfig = files

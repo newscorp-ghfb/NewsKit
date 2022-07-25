@@ -185,7 +185,7 @@ const EngineeringOverview = (layoutProps: LayoutProps) => (
                   <>
                     A collection high quality React{' '}
                     <Link href="/components/overview/">web components</Link>{' '}
-                    built using
+                    built using{' '}
                     <Link
                       href="https://www.typescriptlang.org/"
                       target="_blank"

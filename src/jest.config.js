@@ -19,6 +19,7 @@ module.exports = {
     '/src/test/require-context.ts',
     '/src/icons/filled/',
     '/src/icons/outlined/',
+    '/src/test/test-utils.tsx',
   ],
   coverageDirectory: './coverage',
   coverageThreshold: {

@@ -1,5 +1,11 @@
 import React from 'react';
-import {compileTheme, StylePreset, Theme, ThemeProvider} from '../theme';
+import {
+  compileTheme,
+  StylePreset,
+  Theme,
+  ThemeProvider,
+  useTheme,
+} from '../theme';
 import {deepMerge} from './deep-merge';
 
 export type NewsKitReactComponents<T> = React.FC<T> & {
@@ -20,6 +26,8 @@ const mergeTheme = (
   return newTheme;
 };
 
+const objectIsEmpty = (obj: Object) => Object.keys(obj).length === 0;
+
 export const withOwnTheme = <P extends {}>(
   BaseComponent: React.ComponentType<P> | React.ForwardRefExoticComponent<P>,
 ) => ({
@@ -32,11 +40,23 @@ export const withOwnTheme = <P extends {}>(
   const componentTheme = (globalTheme: Theme): Theme =>
     mergeTheme(globalTheme, defaults, stylePresets);
 
-  const WrappedComponent = React.forwardRef<unknown, P>((props, ref) => (
-    <ThemeProvider theme={componentTheme}>
-      <BaseComponent ref={ref} {...props} />
-    </ThemeProvider>
-  ));
+  const WrappedComponent = React.forwardRef<unknown, P>((props, ref) => {
+    const theme = useTheme();
+
+    /* istanbul ignore if */
+    if (process.env.NODE_ENV !== 'production' && objectIsEmpty(theme)) {
+      const errorMessage = `${
+        BaseComponent.displayName || 'This component'
+      } can be used only inside NewsKitProvider.`;
+      throw new Error(errorMessage);
+    }
+
+    return (
+      <ThemeProvider theme={componentTheme}>
+        <BaseComponent ref={ref} {...props} />
+      </ThemeProvider>
+    );
+  });
 
   const Component = (WrappedComponent as unknown) as NewsKitReactComponents<P>;
 
