@@ -103,33 +103,26 @@ transitionPresets.slideLeft = {
   },
 };
 transitionPresets.widthChange = {
-  // base: {
-  //   transitionProperty: 'width',
-  //   transitionDuration: '{{motions.motionDuration020}}',
-  //   transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-  // },
+  base: {
+    transitionProperty: 'width',
+    transitionDuration: '{{motions.motionDuration020}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+  },
   enter: {
-    width: '0',
+    transitionProperty: 'width',
+    transitionDuration: '{{motions.motionDuration020}}',
   },
   enterActive: {
-    width: '130px',
     transitionProperty: 'width',
     transitionDuration: '{{motions.motionDuration020}}',
   },
-  enterDone: {
-    width: '130px',
-  },
-  exit: {
-    width: '130px',
-  },
+  enterDone: {},
+  exit: {},
   exitActive: {
-    width: '0',
     transitionProperty: 'width',
     transitionDuration: '{{motions.motionDuration020}}',
   },
-  exitDone: {
-    width: '0',
-  },
+  exitDone: {},
 };
 
 transitionPresets.slideRight = {

@@ -12,6 +12,7 @@ export const StyledVolumeSliderContainer = styled.div<
   Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides'> & {open?: boolean}
 >`
   overflow: hidden;
+
   ${getTransitionPreset('audioPlayerVolumeControl', '', 'nk-vc')}
   ${({layout, open}) =>
     getResponsiveSize(
@@ -27,11 +28,15 @@ export const StyledVolumeSliderContainer = styled.div<
       'length',
     )}
 
- 
+
   ${({layout}) =>
     layout === 'horizontalCollapsed' &&
     `display: none;
     `};
+  ${({layout}) =>
+    layout === 'horizontal' &&
+    ` display:inline;
+`};
 `;
 
 export const StyledGridLayout = styled(GridLayout)<
