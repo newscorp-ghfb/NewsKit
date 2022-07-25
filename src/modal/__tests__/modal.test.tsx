@@ -1,14 +1,14 @@
 import {fireEvent, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import React, {useRef, useState} from 'react';
-import {
-  renderToFragmentWithTheme,
-  renderWithTheme,
-} from '../../test/test-utils';
 import {createTheme} from '../../theme';
 import {Modal} from '../modal';
 import {TextBlock} from '../../text-block';
 import {sharedDialogTests} from '../../dialog/base-dialog-tests';
+import {
+  renderToFragmentInBody,
+  renderWithThemeInBody,
+} from '../../test/test-utils';
 
 const modalBody = <TextBlock>Modal body content</TextBlock>;
 
@@ -18,7 +18,7 @@ describe('Modal', () => {
   sharedDialogTests(Modal, modalHeader, modalBody);
 
   test('renders with different closePosition', () => {
-    const fragment = renderToFragmentWithTheme(Modal, {
+    const fragment = renderToFragmentInBody(Modal, {
       open: true,
       onDismiss: () => {},
       header: modalHeader,
@@ -29,7 +29,7 @@ describe('Modal', () => {
   });
 
   test('renders nothing if modal is closed', () => {
-    const {asFragment} = renderWithTheme(Modal, {
+    const {asFragment} = renderWithThemeInBody(Modal, {
       open: false,
       header: modalHeader,
       children: modalBody,
@@ -79,7 +79,7 @@ describe('Modal', () => {
       },
     });
 
-    const fragment = renderToFragmentWithTheme(
+    const fragment = renderToFragmentInBody(
       Modal,
       {
         open: true,
@@ -120,7 +120,7 @@ describe('Modal', () => {
   });
 
   test('renders inline', () => {
-    const {asFragment} = renderWithTheme(Modal, {
+    const {asFragment} = renderWithThemeInBody(Modal, {
       open: true,
       header: modalHeader,
       children: modalBody,
@@ -131,7 +131,7 @@ describe('Modal', () => {
   });
 
   test('renders with logical padding props', () => {
-    const {asFragment} = renderWithTheme(Modal, {
+    const {asFragment} = renderWithThemeInBody(Modal, {
       open: true,
       header: modalHeader,
       children: modalBody,
@@ -148,16 +148,31 @@ describe('Modal', () => {
 });
 
 describe('Modal focus management', () => {
-  test('focus on first interactive element', async () => {
-    const {findByTestId} = renderWithTheme(Modal, {
-      open: true,
-      onDismiss: () => {},
-      children: (
-        <button type="button" data-testid="interactive-element">
-          auto focus button
+  const ModalPage = ({children}: {children: React.ReactNode}) => {
+    const [isOpen, setOpen] = useState(false);
+    return (
+      <>
+        <button
+          type="button"
+          data-testid="toggle"
+          onClick={() => setOpen(!isOpen)}
+        >
+          toggle
         </button>
-      ),
-    });
+        <Modal open={isOpen} onDismiss={() => setOpen(false)}>
+          content with
+          <button type="button" data-testid="interactive-element">
+            button
+          </button>
+          {children}
+        </Modal>
+      </>
+    );
+  };
+
+  test('focus on first interactive element', async () => {
+    const {findByTestId, getByTestId} = renderWithThemeInBody(ModalPage);
+    getByTestId('toggle').click();
 
     await waitFor(async () => {
       const element = await findByTestId('interactive-element');
@@ -166,52 +181,27 @@ describe('Modal focus management', () => {
   });
 
   test('focus on custom element using data-autofocus attr', async () => {
-    const {findByTestId} = renderWithTheme(Modal, {
-      open: true,
-      onDismiss: () => {},
+    const {findByTestId, getByTestId} = renderWithThemeInBody(ModalPage, {
       children: (
-        <>
-          <button type="button">another button</button>
-          <p>text here</p>
-          <button
-            data-autofocus
-            type="button"
-            data-testid="interactive-element"
-          >
-            auto focus button
-          </button>
-        </>
+        <button
+          type="button"
+          data-autofocus
+          data-testid="another-interactive-element"
+        >
+          button
+        </button>
       ),
     });
+    getByTestId('toggle').click();
 
     await waitFor(async () => {
-      const element = await findByTestId('interactive-element');
+      const element = await findByTestId('another-interactive-element');
       expect(element).toHaveFocus();
     });
   });
 
   test('return focus to the last focused element on close', async () => {
-    const ModalPage = () => {
-      const [isOpen, setOpen] = useState(false);
-      return (
-        <>
-          <button
-            type="button"
-            data-testid="toggle"
-            onClick={() => setOpen(!isOpen)}
-          >
-            toggle
-          </button>
-          <Modal open={isOpen} onDismiss={() => setOpen(false)}>
-            content with
-            <button type="button" data-testid="interactive-element">
-              button
-            </button>
-          </Modal>
-        </>
-      );
-    };
-    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+    const {findByTestId, getByTestId, getByLabelText} = renderWithThemeInBody(
       ModalPage,
     );
     let toggleButton = getByTestId('toggle');
@@ -239,7 +229,7 @@ describe('Modal focus management', () => {
   });
 
   test('return focus to restoreFocusTo element on close', async () => {
-    const ModalPage = () => {
+    const ModalPageRestoreFocus = () => {
       const [isOpen, setOpen] = useState(false);
       const restoreFocusRef = useRef(null);
       return (
@@ -272,8 +262,8 @@ describe('Modal focus management', () => {
         </>
       );
     };
-    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
-      ModalPage,
+    const {findByTestId, getByTestId, getByLabelText} = renderWithThemeInBody(
+      ModalPageRestoreFocus,
     );
     const toggleButton = getByTestId('toggle');
     toggleButton.focus();
@@ -302,7 +292,7 @@ describe('Modal focus management', () => {
 
 describe('Modal focus management when focus trap is disabled', () => {
   test('focus on first interactive element', async () => {
-    const {findByTestId} = renderWithTheme(Modal, {
+    const {findByTestId} = renderWithThemeInBody(Modal, {
       open: true,
       onDismiss: () => {},
       disableFocusTrap: true,
@@ -320,7 +310,7 @@ describe('Modal focus management when focus trap is disabled', () => {
   });
 
   test('focus on custom element using data-autofocus attr', async () => {
-    const {findByTestId} = renderWithTheme(Modal, {
+    const {findByTestId} = renderWithThemeInBody(Modal, {
       open: true,
       onDismiss: () => {},
       disableFocusTrap: true,
@@ -370,7 +360,7 @@ describe('Modal focus management when focus trap is disabled', () => {
         </>
       );
     };
-    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+    const {findByTestId, getByTestId, getByLabelText} = renderWithThemeInBody(
       ModalPage,
     );
     let toggleButton = getByTestId('toggle');
@@ -432,7 +422,7 @@ describe('Modal focus management when focus trap is disabled', () => {
         </>
       );
     };
-    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+    const {findByTestId, getByTestId, getByLabelText} = renderWithThemeInBody(
       ModalPage,
     );
     const toggleButton = getByTestId('toggle');

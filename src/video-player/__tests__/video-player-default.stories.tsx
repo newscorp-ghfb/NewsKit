@@ -82,7 +82,7 @@ export const StoryPlaylistsVideoPlayer = () => {
   );
 };
 StoryPlaylistsVideoPlayer.storyName = 'playlist-video-default';
-StoryDefaultVideoPlayer.parameters = {
+StoryPlaylistsVideoPlayer.parameters = {
   eyes: {
     waitBeforeCapture: 5000,
   },
@@ -118,7 +118,7 @@ export const StoryCardWithVideo = () => (
   </>
 );
 StoryCardWithVideo.storyName = 'video-in-card';
-StoryDefaultVideoPlayer.parameters = {
+StoryCardWithVideo.parameters = {
   eyes: {
     waitBeforeCapture: 5000,
   },
