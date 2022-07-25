@@ -1,10 +1,9 @@
 import * as React from 'react';
 import {
-  ThemeProvider,
   createEventInstrumentation,
-  InstrumentationProvider,
   instrumentationHandlers,
   UncompiledTheme,
+  NewsKitProvider,
 } from 'newskit';
 import App, {AppContext} from 'next/app';
 import {HeadNextSeo} from '../components/head-next-seo/head-next-seo';
@@ -135,23 +134,24 @@ export default class MyApp extends App<Props, State> {
             alt: 'NewsKit design system',
           }}
         />
-        <InstrumentationProvider
-          {...createEventInstrumentation(handlers, {
+
+        <NewsKitProvider
+          theme={theme}
+          layer={{zIndex: 1000}}
+          instrumentation={createEventInstrumentation(handlers, {
             ...pageProps,
           })}
         >
-          <ThemeProvider theme={theme}>
-            <ThemeMode.Provider value={themeMode}>
-              <PageLoadInstrumentation />
-              <Component
-                {...pageProps}
-                path={path}
-                toggleTheme={this.toggleTheme}
-                themeMode={themeMode}
-              />
-            </ThemeMode.Provider>
-          </ThemeProvider>
-        </InstrumentationProvider>
+          <ThemeMode.Provider value={themeMode}>
+            <PageLoadInstrumentation />
+            <Component
+              {...pageProps}
+              path={path}
+              toggleTheme={this.toggleTheme}
+              themeMode={themeMode}
+            />
+          </ThemeMode.Provider>
+        </NewsKitProvider>
       </>
     );
   }
