@@ -9,6 +9,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
   image,
   children,
   subHeadingSpaceStack = {xs: 'space060', md: 'space060', lg: 'space070'},
+  lastItem,
 }) => (
   <>
     <ComponentPageCellCompact {...cellProps}>
@@ -65,7 +66,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
         </Block>
       )}
       {children && (
-        <Block spaceStack={subHeadingSpaceStack}>
+        <Block spaceStack={!lastItem ? subHeadingSpaceStack : ''}>
           <TextBlock
             stylePreset="inkBase"
             typographyPreset="editorialSubheadline020"
