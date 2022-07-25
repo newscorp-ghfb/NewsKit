@@ -33,8 +33,10 @@ const StyledDivider = styled.hr<DividerProps>`
   ${logicalProps('divider')}
 `;
 
-const ThemelessDivider: React.FC<DividerProps> = props => (
-  <StyledDivider data-testid="divider" aria-hidden {...props} />
+const ThemelessDivider = React.forwardRef<HTMLHRElement, DividerProps>(
+  ({...props}, ref) => (
+    <StyledDivider ref={ref} data-testid="divider" aria-hidden {...props} />
+  ),
 );
 
 export const Divider = withOwnTheme(ThemelessDivider)({defaults, stylePresets});
