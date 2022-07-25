@@ -6,14 +6,19 @@ import {MQContext} from './context';
 import {BreakpointState} from './types';
 import {getCurrentBreakpointKey, sortBreakpointKeys} from './utils';
 
+const useMediaQueryContext = (): BreakpointState => {
+  const context = React.useContext(MQContext) as BreakpointState;
+  return context;
+};
+
 export function useBreakpointKey() {
-  const breakpointState = React.useContext(MQContext) as BreakpointState;
+  const breakpointState = useMediaQueryContext();
   const currentBreakpoint = getCurrentBreakpointKey(breakpointState);
   return currentBreakpoint;
 }
 
 export function useMediaQueryObject<T>(mqObject: MQ<T>): T | undefined {
-  const breakpointsState = React.useContext(MQContext) as BreakpointState;
+  const breakpointsState = useMediaQueryContext();
   const theme = useTheme();
   const {breakpoints} = theme;
   const breakpointsKeys = Object.keys(breakpoints) as BreakpointKeys[];

@@ -2,13 +2,7 @@ import React from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {withPerformance} from 'storybook-addon-performance';
 
-import {
-  ThemeProvider,
-  MediaQueryProvider,
-  styled,
-  getColorCssFromTheme,
-} from '../src';
-
+import {NewsKitProvider, styled, getColorCssFromTheme} from '../src';
 import {getThemeObject} from '../src/test/theme-select-object';
 
 const unlimitedScenarios = [
@@ -107,32 +101,15 @@ export const decorators = [
       </Decorator>
     );
   },
-  // Disabled MediaQueryProvider for some stories,
-  // this needs to placed before theme Decorator so that the order matters
-  (Story, context) => {
-    const {parameters} = context;
-    const shouldDisableMQDecorator =
-      parameters && parameters.disableMediaQueryDecorator;
-
-    const Decorator = shouldDisableMQDecorator
-      ? NoDecorator
-      : MediaQueryProviderDecorator;
-
-    return (
-      <Decorator>
-        <Story />
-      </Decorator>
-    );
-  },
   (Story, context) => {
     return (
-      <ThemeProvider
+      <NewsKitProvider
         theme={getThemeObject(context?.globals?.backgrounds?.value)}
       >
         <Background>
           <Story />
         </Background>
-      </ThemeProvider>
+      </NewsKitProvider>
     );
   },
   withPerformance,

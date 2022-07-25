@@ -26,7 +26,6 @@ const DrawerContainer = styled.div`
   margin-left: 10vw;
   margin-right: 10vw;
   background: #f1f1f1;
-
   position: relative;
   border: 1px solid red;
   width: 80vw;
@@ -260,7 +259,6 @@ export const StoryInline = () =>
             interdum.
           </StorybookParah>
         </DrawerContainer>
-
         <BoxWithContent open={open} />
       </div>
     );
