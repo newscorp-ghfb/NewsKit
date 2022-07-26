@@ -144,9 +144,6 @@ exports[`Paragraph renders with drop cap 1`] = `
 .emotion-1 {
   float: left;
   color: #0A0A0A;
-  -webkit-margin-end: 0.15em;
-  margin-inline-end: 0.15em;
-  margin-block-start: 4px;
 }
 
 @media screen and (max-width: 767px) {
@@ -257,9 +254,6 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
 .emotion-1 {
   float: left;
   color: #0A0A0A;
-  -webkit-margin-end: 0.15em;
-  margin-inline-end: 0.15em;
-  margin-block-start: 4px;
 }
 
 @media screen and (max-width: 767px) {
@@ -388,10 +382,7 @@ exports[`Paragraph renders with dropCap logical props 1`] = `
 .emotion-1 {
   float: left;
   color: #0A0A0A;
-  -webkit-margin-end: 0.15em;
-  margin-inline-end: 0.15em;
   margin-inline: 8px;
-  margin-block-start: 4px;
   margin-block: 8px;
   padding-inline: 8px;
   padding-block: 8px;

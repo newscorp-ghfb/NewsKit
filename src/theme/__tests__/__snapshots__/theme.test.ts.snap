@@ -2104,8 +2104,6 @@ Object {
   },
   "paragraph": Object {
     "dropCap": Object {
-      "marginBlockStart": "space010",
-      "marginInlineEnd": "0.15em",
       "paddingBlockEnd": Object {
         "lg": "space040",
         "md": "space030",

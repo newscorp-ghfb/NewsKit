@@ -19,8 +19,6 @@ export default {
         md: 'space030',
         lg: 'space040',
       },
-      marginBlockStart: 'space010',
-      marginInlineEnd: '0.15em',
     },
   },
 };
