@@ -11,7 +11,7 @@ import {
   TextBlock,
   toNewsKitIcon,
 } from 'newskit';
-import {ArrowForwardIos as ArrowForwardIosOutlined} from '@emotion-icons/material-outlined/ArrowForwardIos';
+import {ArrowForwardIos as OutlinedArrowForwardIos} from '@emotion-icons/material-outlined/ArrowForwardIos';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
 import {InlineCode} from '../../components/markdown-elements';
@@ -24,7 +24,7 @@ import {
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
 
-const IconOutlinedArrowForwardIos = toNewsKitIcon(ArrowForwardIosOutlined);
+const IconOutlinedArrowForwardIos = toNewsKitIcon(OutlinedArrowForwardIos);
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const infoIcon = (

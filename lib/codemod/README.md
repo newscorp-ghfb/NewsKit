@@ -39,12 +39,12 @@ Imports and transform `newskit` icons to `emotion-icons`;
 
 ```diff
 - import { IconFilledAccountTree } from 'newskit';
-+ import {AccountTree as AccountTreeFilled} from '@emotion-icons/material/AccountTree';
-+ const IconFilledAccountTree = toNewsKitIcon(AccountTreeFilled);
++ import {AccountTree as FilledAccountTree} from '@emotion-icons/material/AccountTree';
++ const IconFilledAccountTree = toNewsKitIcon(FilledAccountTree);
 ```
 
 ```sh
 npx @newskit/codemod emotion-icons <path>
-// for example
+// example
 npx @newskit/codemod emotion-icons 'components/**/*.+(ts|tsx|js|jsx)' 
 ```
