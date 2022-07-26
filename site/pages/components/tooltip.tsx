@@ -63,7 +63,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           description:
             'Used to indicate the direction of context that the Tooltip is attributed to',
           component: ['Div'],
-          optional: undefined,
+          optional: true,
         },
       ],
       media: getIllustrationComponent('components/tooltip/anatomy'),
@@ -330,7 +330,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           {
             element: 'Popover',
             attribute: 'aria-hidden',
-            value: 'boolean',
+            value: 'true',
             description: 'If true, hides the Tooltip',
           },
         ],
@@ -392,7 +392,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           propsSummary:
             'The Tooltip has a range of props that can be used to define an appropriate experience for different use cases.',
           overridesSummary:
-            'The Popover has a range of predefined elements and attributes that can be overridden to define their appearance.',
+            'The Tooltip has a range of predefined elements and attributes that can be overridden to define their appearance.',
           propsRows: [
             {
               name: 'children',

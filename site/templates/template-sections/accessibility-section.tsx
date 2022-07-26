@@ -1,4 +1,4 @@
-import {Grid, Cell, InlineMessage, Block} from 'newskit';
+import {Grid, Cell, InlineMessage, Block, IconFilledInfo} from 'newskit';
 import React from 'react';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
@@ -11,6 +11,14 @@ interface A11ySubSection<RowType> {
   description?: string;
   tableRows?: RowType[];
 }
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
 
 export interface AccessibilityTablesProps {
   focusOrder?: A11ySubSection<{
@@ -67,6 +75,7 @@ const renderInfoNotice = (
               role="region"
               aria-label={`${label} ${index}`}
               title={title}
+              icon={infoIcon}
             >
               {note}
             </InlineMessage>
@@ -77,7 +86,12 @@ const renderInfoNotice = (
   }
   if (notice !== undefined) {
     return (
-      <InlineMessage role="region" aria-label={label} title={title}>
+      <InlineMessage
+        role="region"
+        aria-label={label}
+        title={title}
+        icon={infoIcon}
+      >
         {notice}
       </InlineMessage>
     );
