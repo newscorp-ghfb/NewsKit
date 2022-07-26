@@ -18,14 +18,7 @@ run to see all codemods and flags
 npx @newskit/codemod --help
 ```
 
-## Development
 
-Link this package in your global `node_modules` by running:
-
-```bash
-cd lib/codemod
-yarn link
-```
 
 ## Included scripts
 The list includes these transformers
@@ -47,4 +40,26 @@ Imports and transform `newskit` icons to `emotion-icons`;
 npx @newskit/codemod emotion-icons <path>
 // example
 npx @newskit/codemod emotion-icons 'components/**/*.+(ts|tsx|js|jsx)' 
+```
+
+
+
+## Development
+
+### Setup
+```bash
+yarn install
+```
+
+### Link
+Link this package in your global `node_modules` by running:
+
+```bash
+cd lib/codemod
+yarn link
+```
+
+### Usage
+```bash
+newskit-codemod <codemod> <path>
 ```
