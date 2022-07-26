@@ -268,20 +268,24 @@ describe('Form', () => {
 
   test('clearValidation() removes valid tick properly even if the field had an error', async () => {
     const ref = React.createRef<HTMLFormElement>();
-    const {getByTestId, findByTestId, queryByTestId} = renderWithImplementation(
-      Form,
-      {
-        ...props,
-        ref,
-        validationMode: 'onBlur',
-      },
-    );
+    const {
+      getByTestId,
+      findByTestId,
+      queryByTestId,
+      getByText,
+      queryByText,
+    } = renderWithImplementation(Form, {
+      ...props,
+      ref,
+      validationMode: 'onBlur',
+    });
 
     fireEvent.blur(getByTestId('text-input-email'), {
       target: {value: ''},
     });
 
-    expect(await findByTestId('error-icon')).not.toBeNull();
+    expect(await findByTestId('error-icon')).toBeInTheDocument();
+    expect(getByText('Required field')).toBeInTheDocument();
 
     fireEvent.blur(getByTestId('text-input-email'), {
       target: {value: 'test@news.co.uk'},
@@ -292,78 +296,72 @@ describe('Form', () => {
     });
 
     expect(queryByTestId('error-icon')).toBeNull();
+    expect(queryByText('Required field')).not.toBeInTheDocument();
     expect(queryByTestId('tick-icon')).toBeNull();
   });
 
-  test('clearValidation() removes error state properly even if field was valid', async () => {
+  test('clearValidation() removes error state properly even if field was invalid', async () => {
     const ref = React.createRef<HTMLFormElement>();
     const {
       getByTestId,
-      findAllByTestId,
       getByRole,
-      queryByTestId,
       findByTestId,
-    } = renderWithImplementation(Form, {
+      queryByTestId,
+      getByText,
+      queryByText,
+    } = renderWithTheme(Form, {
       ...props,
       ref,
       validationMode: 'onSubmit',
     });
 
-    const inputEmail = getByTestId('text-input-email') as HTMLInputElement;
-    const inputUsername = getByTestId(
-      'text-input-username',
-    ) as HTMLInputElement;
-
-    fireEvent.change(inputEmail, {
-      target: {value: 'test@news.co.uk'},
-    });
-
-    fireEvent.change(inputUsername, {
-      target: {value: 'test'},
-    });
-
-    expect(inputEmail.value).toBe('test@news.co.uk');
-    expect(inputUsername.value).toBe('test');
-
-    fireEvent.submit(getByRole('button'));
-
-    expect(await findAllByTestId('tick-icon')).not.toBeNull();
-
-    fireEvent.blur(inputEmail, {
+    fireEvent.change(getByTestId('text-input-email'), {
       target: {value: 'newste'},
     });
 
-    expect(await findByTestId('error-icon')).not.toBeNull();
+    fireEvent.change(getByTestId('text-input-username'), {
+      target: {value: 'test'},
+    });
+
+    fireEvent.submit(getByRole('button'));
+
+    expect(await findByTestId('error-icon')).toBeInTheDocument();
+    expect(getByText('Please provide a valid email')).toBeInTheDocument();
 
     act(() => {
       ref.current!.clearValidation();
     });
 
-    expect(queryByTestId('error-icon')).toBeNull();
-    expect(queryByTestId('tick-icon')).toBeNull();
+    expect(queryByText('Please provide a valid email')).not.toBeInTheDocument();
+    expect(queryByTestId('error-icon')).not.toBeInTheDocument();
   });
 
   test('clearValidation()', async () => {
     const ref = React.createRef<HTMLFormElement>();
-    const {getByTestId, findByTestId, queryByTestId} = renderWithImplementation(
-      Form,
-      {
-        ...props,
-        ref,
-        validationMode: 'onBlur',
-      },
-    );
+    const {
+      getByTestId,
+      findByTestId,
+      queryByTestId,
+      getByText,
+      queryByText,
+    } = renderWithImplementation(Form, {
+      ...props,
+      ref,
+      validationMode: 'onBlur',
+    });
 
     fireEvent.blur(getByTestId('text-input-email'), {
       target: {value: ''},
     });
 
-    expect(await findByTestId('error-icon')).not.toBeNull();
+    expect(await findByTestId('error-icon')).toBeInTheDocument();
+    expect(getByText('Required field')).toBeInTheDocument();
     act(() => {
       ref.current!.clearValidation();
     });
 
     expect(queryByTestId('error-icon')).toBeNull();
+    expect(queryByText('Required field')).not.toBeInTheDocument();
     expect(queryByTestId('tick-icon')).toBeNull();
   });
 
