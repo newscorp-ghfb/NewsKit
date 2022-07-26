@@ -7,6 +7,7 @@ import {Stack} from '../../stack';
 import {Block} from '../../block';
 import {Image} from '../../image';
 import {TextFieldSize} from '../../text-field';
+import {Tabs, Tab} from '../../tabs';
 
 import {
   StorybookHeading,
@@ -973,6 +974,65 @@ export const SelectVirtualization = () => {
     </>
   );
 };
+
+export const StorySelectControlled = () => {
+  const [selectedValue, setSelectedValue] = React.useState('');
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedValue(e.target.value);
+  };
+  return (
+    <Container>
+      <Block>
+        <Label htmlFor="controlled">Controlled</Label>
+        <Select
+          aria-describedby="id-controlled-at"
+          id="controlled"
+          size="medium"
+          onChange={handleChange}
+        >
+          {items.map(item => (
+            <SelectOption
+              key={item}
+              value={item}
+              selected={item === selectedValue}
+            >
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <AssistiveText id="id-controlled-at">Assistive text</AssistiveText>
+        <Button onClick={() => setSelectedValue('Fermium')}>
+          Make Fermium selected value
+        </Button>
+      </Block>
+    </Container>
+  );
+};
+StorySelectControlled.storyName = 'Select controlled';
+
+export const StoryZindexTest = () => (
+  <>
+    <StorybookHeading>Z-index</StorybookHeading>
+    <Container>
+      <Select>
+        <SelectOption key="sel 1" value="select 1">
+          select 1
+        </SelectOption>
+        <SelectOption key="sel 2" value="select 2">
+          select 2
+        </SelectOption>
+      </Select>
+      <div style={{height: '30px', background: 'salmon'}}>
+        Div container with text sitting between the Select and Tabs components{' '}
+      </div>
+      <Tabs>
+        <Tab label="Tab 1">option 1</Tab>
+        <Tab label="Tab 2">option 2</Tab>
+      </Tabs>
+    </Container>
+  </>
+);
+StoryZindexTest.storyName = 'Select zIndex test';
 
 export const StoryOutlineOverride = () => (
   <>

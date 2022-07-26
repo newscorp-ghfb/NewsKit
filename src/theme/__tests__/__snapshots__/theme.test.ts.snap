@@ -1712,6 +1712,8 @@ Object {
     },
     "header": Object {
       "spaceInset": "spaceInsetSquish040",
+      "stylePreset": "drawerHeader",
+      "typographyPreset": "utilityLabel030",
     },
     "overlay": Object {
       "transitionPreset": "fade",
@@ -2017,6 +2019,8 @@ Object {
     },
     "header": Object {
       "spaceInset": "spaceInsetSquish040",
+      "stylePreset": "modalHeader",
+      "typographyPreset": "utilityLabel030",
     },
     "overlay": Object {
       "transitionPreset": Object {
@@ -2479,8 +2483,9 @@ Object {
         "typographyPreset": "utilityBody030",
       },
       "thumb": Object {
+        "paddingBlock": "space010",
+        "paddingInline": "space010",
         "size": "sizing060",
-        "spaceInset": "sizing010",
         "stylePreset": "switchThumb",
         "transitionPreset": Array [
           "shiftAbsolute",
@@ -2511,8 +2516,9 @@ Object {
         "typographyPreset": "utilityBody020",
       },
       "thumb": Object {
+        "paddingBlock": "space010",
+        "paddingInline": "space010",
         "size": "sizing050",
-        "spaceInset": "sizing010",
         "stylePreset": "switchThumb",
         "transitionPreset": Array [
           "shiftAbsolute",
@@ -2543,8 +2549,9 @@ Object {
         "typographyPreset": "utilityBody020",
       },
       "thumb": Object {
+        "paddingBlock": "space010",
+        "paddingInline": "space010",
         "size": "sizing040",
-        "spaceInset": "sizing010",
         "stylePreset": "switchThumb",
         "transitionPreset": Array [
           "shiftAbsolute",
@@ -3834,6 +3841,11 @@ Object {
       "borderWidth": "{{borders.borderWidthDefault}}",
     },
   },
+  "drawerHeader": Object {
+    "base": Object {
+      "color": "{{colors.inkBase}}",
+    },
+  },
   "drawerPanel": Object {
     "base": Object {
       "backgroundColor": "{{colors.interface010}}",
@@ -4949,6 +4961,11 @@ Object {
       "borderColor": "{{colors.interactivePrimary030}}",
       "color": "{{colors.inkBrand010}}",
       "iconColor": "{{colors.inkBrand010}}",
+    },
+  },
+  "modalHeader": Object {
+    "base": Object {
+      "color": "{{colors.inkBase}}",
     },
   },
   "modalPanel": Object {
