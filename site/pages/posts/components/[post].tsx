@@ -4,25 +4,48 @@ import matter from 'gray-matter';
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
+import {MetaStatus} from '../../../components/meta';
 import {fetchPostContent} from '../../../utils/cms';
 import {ComponentPageTemplate} from '../../../templates/component-page-template';
-import {LayoutProps} from '../../../components/layout';
 
-interface ComponentProps {
-  layoutProps: LayoutProps;
+interface ComponentPageProps {
+  toggleTheme: () => void;
+  themeMode: string;
   title: string;
   type: string;
   introduction: string;
   coverImage: string;
+  slug: string;
+  featureCard: {
+    title: string;
+    description: string;
+    href: string;
+  };
+  meta: {
+    status: MetaStatus;
+    introduced: string;
+    introducedLink: boolean;
+    codeUrl: string;
+    figmaUrl: string;
+  };
+  related: {
+    introduction: string;
+    related: string[];
+  };
 }
 
-const Post = ({
-  layoutProps,
+const Post: React.FC<ComponentPageProps> = ({
+  toggleTheme,
+  themeMode,
   title,
-  introduction,
   type,
+  introduction,
   coverImage,
-}: ComponentProps) => (
+  slug,
+  featureCard,
+  meta,
+  related,
+}) => (
   <ComponentPageTemplate
     headTags={{
       title,
@@ -32,12 +55,33 @@ const Post = ({
       type,
       name: title,
       hero: {
-        illustration: coverImage,
+        src: coverImage,
+        alt: `${title}-hero`,
       },
       introduction,
     }}
-    layoutProps={layoutProps}
+    layoutProps={{
+      path: `/components/${slug}`,
+      toggleTheme,
+      themeMode,
+    }}
     componentDefaultsKey={title}
+    meta={{
+      status: meta.status,
+      introduced: meta.introduced,
+      introducedLink: meta.introducedLink,
+      codeUrl: meta.codeUrl,
+      figmaUrl: meta.figmaUrl,
+    }}
+    related={{
+      introduction: related.introduction,
+      related: related.related,
+    }}
+    featureCard={{
+      title: featureCard.title,
+      description: featureCard.description,
+      href: featureCard.href,
+    }}
   />
 );
 export default Post;
@@ -68,6 +112,9 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
       type: data.type,
       coverImage: data.coverImage,
       introduction: data.introduction,
+      featureCard: data.featureCard,
+      meta: data.meta,
+      related: data.related,
     },
   };
 };
