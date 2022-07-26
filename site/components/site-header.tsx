@@ -16,8 +16,8 @@ import {
   IconButton,
   toNewsKitIcon,
 } from 'newskit';
-import {Menu as MenuFilled} from '@emotion-icons/material/Menu';
-import {Close as CloseFilled} from '@emotion-icons/material/Close';
+import {Menu as FilledMenu} from '@emotion-icons/material/Menu';
+import {Close as FilledClose} from '@emotion-icons/material/Close';
 
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
@@ -26,8 +26,8 @@ import routes from '../routes';
 import {Link} from './link';
 import {IconFilledGitHub} from './icons/icon-filled-github';
 
-const IconFilledMenu = toNewsKitIcon(MenuFilled);
-const IconFilledClose = toNewsKitIcon(CloseFilled);
+const IconFilledMenu = toNewsKitIcon(FilledMenu);
+const IconFilledClose = toNewsKitIcon(FilledClose);
 
 export const GitHubButton: React.FC<{href?: string}> = () => (
   <Button

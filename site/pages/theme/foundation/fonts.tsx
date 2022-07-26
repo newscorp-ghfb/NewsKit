@@ -1,7 +1,7 @@
 import React from 'react';
 import {InlineMessage, newskitLightTheme, toNewsKitIcon} from 'newskit';
 
-import {Info as InfoFilled} from '@emotion-icons/material/Info';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {
   ContentSection,
   ContentPrimary,
@@ -23,7 +23,7 @@ import {
 import {Table} from '../../../components/table';
 import {getTokenType} from '../../../utils/get-token-type';
 
-const IconFilledInfo = toNewsKitIcon(InfoFilled);
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 interface FontAttributesRow {
   tokenName: string;

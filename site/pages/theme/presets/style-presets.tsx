@@ -1,6 +1,6 @@
 import React from 'react';
 import {InlineMessage, styled, toNewsKitIcon} from 'newskit';
-import {Info as InfoFilled} from '@emotion-icons/material/Info';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Table} from '../../../components/table';
 import {InlineCode} from '../../../components/markdown-elements';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
@@ -16,7 +16,7 @@ import {
   ContentColSpan,
 } from '../../../components/content-structure';
 
-const IconFilledInfo = toNewsKitIcon(InfoFilled);
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const CSS_PROPS = [
   {

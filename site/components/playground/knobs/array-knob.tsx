@@ -10,14 +10,14 @@ import {
   Flow,
   toNewsKitIcon,
 } from 'newskit';
-import {Remove as RemoveFilled} from '@emotion-icons/material/Remove';
-import {Add as AddFilled} from '@emotion-icons/material/Add';
+import {Remove as FilledRemove} from '@emotion-icons/material/Remove';
+import {Add as FilledAdd} from '@emotion-icons/material/Add';
 import {LegacyBlock} from '../../legacy-block';
 import {KnobContainer, StyledTitle} from './common';
 import {InputKnob} from './input-knob';
 
-const IconFilledRemove = toNewsKitIcon(RemoveFilled);
-const IconFilledAdd = toNewsKitIcon(AddFilled);
+const IconFilledRemove = toNewsKitIcon(FilledRemove);
+const IconFilledAdd = toNewsKitIcon(FilledAdd);
 
 type UpdateFunction = (
   index: number,

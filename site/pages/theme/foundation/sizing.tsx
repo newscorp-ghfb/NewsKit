@@ -1,6 +1,6 @@
 import React from 'react';
 import {newskitLightTheme, InlineMessage, toNewsKitIcon} from 'newskit';
-import {Info as InfoFilled} from '@emotion-icons/material/Info';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {MediaList} from '../../../components/media-list';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
@@ -16,7 +16,7 @@ import {
   ContentColSpan,
 } from '../../../components/content-structure';
 
-const IconFilledInfo = toNewsKitIcon(InfoFilled);
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const sizingRows = getTokenType(newskitLightTheme.sizing, 'sizing').map(
   ({tokenName, tokenValue}) => ({

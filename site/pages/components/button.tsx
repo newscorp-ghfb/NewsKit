@@ -1,6 +1,6 @@
 import React from 'react';
 import {Block, InlineMessage, toNewsKitIcon} from 'newskit';
-import {Info as InfoFilled} from '@emotion-icons/material/Info';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
 import {MetaStatus} from '../../components/meta/types';
 import {UsageKind} from '../../components/usage-card';
@@ -10,7 +10,7 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
 
-const IconFilledInfo = toNewsKitIcon(InfoFilled);
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const infoIcon = (
   <IconFilledInfo

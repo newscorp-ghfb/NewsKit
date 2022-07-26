@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link, Toast, ToastProps, Button, styled, toNewsKitIcon} from 'newskit';
-import {Info as InfoFilled} from '@emotion-icons/material/Info';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
@@ -12,7 +12,7 @@ import {
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
 
-const IconFilledInfo = toNewsKitIcon(InfoFilled);
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const playGroundActions = () => (
   <Button size="small" overrides={{stylePreset: 'toastButton'}}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {InlineMessage, newskitLightTheme, toNewsKitIcon} from 'newskit';
-import {Info as InfoFilled} from '@emotion-icons/material/Info';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {TabsWithTable} from '../../../components/tabs-with-table';
 import {getTokenType} from '../../../utils/get-token-type';
 import {Code} from '../../../components/code';
@@ -17,7 +17,7 @@ import {
   ContentColSpan,
 } from '../../../components/content-structure';
 
-const IconFilledInfo = toNewsKitIcon(InfoFilled);
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const commonUses: Record<string, string> = {
   utilityHeading:

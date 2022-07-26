@@ -1,6 +1,6 @@
 import React from 'react';
 import {InlineMessage, UnorderedList, toNewsKitIcon} from 'newskit';
-import {Info as InfoFilled} from '@emotion-icons/material/Info';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
@@ -21,7 +21,7 @@ import {
   StyledDontHeading,
 } from '../../../utils/styled';
 
-const IconFilledInfo = toNewsKitIcon(InfoFilled);
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const infoIcon = (
   <IconFilledInfo
