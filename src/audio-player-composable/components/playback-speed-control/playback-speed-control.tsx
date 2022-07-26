@@ -13,7 +13,6 @@ import {PlaybackSpeedList} from './playback-speed-list';
 import {Popover} from '../../../popover';
 import {iconButtonOverrides, popoverOverrides, modalOverrides} from './utils';
 import {ButtonSize} from '../../../button';
-import {withMediaQueryProvider} from '../../../utils/hooks/use-media-query/context';
 
 const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpeedControlProps> = React.memo(
   props => {
@@ -86,6 +85,6 @@ const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpee
   },
 );
 
-export const AudioPlayerPlaybackSpeedControl = withMediaQueryProvider(
-  withOwnTheme(ThemelessAudioPlayerPlaybackSpeedControl)({defaults}),
-);
+export const AudioPlayerPlaybackSpeedControl = withOwnTheme(
+  ThemelessAudioPlayerPlaybackSpeedControl,
+)({defaults});

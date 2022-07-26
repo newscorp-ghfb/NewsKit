@@ -43,8 +43,6 @@ export const StyledDialogPanel = styled.div<BaseDialogViewOverridesAndPathProps>
   ${({$open}) => ({
     pointerEvents: $open ? undefined : 'none',
   })}
-  ${({path}) =>
-    getResponsiveSpace('zIndex', `${path}.panel`, 'panel', 'zIndex')}
   ${({closePosition}) => createCssGrid({closePosition})}  
   overflow: hidden;
 `;

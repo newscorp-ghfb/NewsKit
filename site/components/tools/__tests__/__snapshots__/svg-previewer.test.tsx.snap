@@ -1255,6 +1255,9 @@ Object {
         </div>
       </div>
     </div>
+    <div
+      class="nk-layer-organizer"
+    />
   </body>,
   "container": .emotion-0 {
   display: -webkit-box;

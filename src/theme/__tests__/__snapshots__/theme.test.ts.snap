@@ -2483,8 +2483,9 @@ Object {
         "typographyPreset": "utilityBody030",
       },
       "thumb": Object {
+        "paddingBlock": "space010",
+        "paddingInline": "space010",
         "size": "sizing060",
-        "spaceInset": "sizing010",
         "stylePreset": "switchThumb",
         "transitionPreset": Array [
           "shiftAbsolute",
@@ -2515,8 +2516,9 @@ Object {
         "typographyPreset": "utilityBody020",
       },
       "thumb": Object {
+        "paddingBlock": "space010",
+        "paddingInline": "space010",
         "size": "sizing050",
-        "spaceInset": "sizing010",
         "stylePreset": "switchThumb",
         "transitionPreset": Array [
           "shiftAbsolute",
@@ -2547,8 +2549,9 @@ Object {
         "typographyPreset": "utilityBody020",
       },
       "thumb": Object {
+        "paddingBlock": "space010",
+        "paddingInline": "space010",
         "size": "sizing040",
-        "spaceInset": "sizing010",
         "stylePreset": "switchThumb",
         "transitionPreset": Array [
           "shiftAbsolute",
