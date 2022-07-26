@@ -32,12 +32,13 @@ Imports and transform `newskit` icons to `emotion-icons`;
 
 ```diff
 - import { IconFilledAccountTree } from 'newskit';
++ import { toNewsKitIcon } from 'newskit';
 + import {AccountTree as FilledAccountTree} from '@emotion-icons/material/AccountTree';
 + const IconFilledAccountTree = toNewsKitIcon(FilledAccountTree);
 ```
 
 ```sh
-npx @newskit/codemod emotion-icons <path>
+npx @newskit/codemod emotion-icons [path]
 // example
 npx @newskit/codemod emotion-icons 'components/**/*.+(ts|tsx|js|jsx)' 
 ```
@@ -60,6 +61,7 @@ yarn link
 ```
 
 ### Usage
+Run the codemod package locally:
 ```bash
-newskit-codemod <codemod> <path>
+newskit-codemod [codemod [path]
 ```
