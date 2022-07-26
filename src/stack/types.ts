@@ -55,7 +55,6 @@ export interface StackProps extends Partial<CommonStackProps>, LogicalProps {
   list?: boolean;
   ariaLabel?: string;
   role?: string;
-  children?: React.ReactNode;
 }
 
 export interface ChildProps
