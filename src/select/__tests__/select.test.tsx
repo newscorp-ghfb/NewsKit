@@ -1,11 +1,13 @@
 import React, {createRef} from 'react';
-import {fireEvent, screen} from '@testing-library/react';
+import {cleanup, fireEvent, screen} from '@testing-library/react';
 import {act} from 'react-dom/test-utils';
 import userEvent from '@testing-library/user-event';
 import {Select, SelectProps, ButtonSelectSize, SelectOption} from '..';
 import {
-  renderToFragmentWithTheme,
+  renderToFragmentInBody,
   renderWithTheme,
+  renderWithThemeInBody,
+  renderToFragmentWithTheme,
 } from '../../test/test-utils';
 import {AssistiveText} from '../../assistive-text';
 import {Label} from '../../label';
@@ -37,10 +39,15 @@ const defaultSelectOptions = [
 ];
 
 describe('Select', () => {
+  beforeEach(() => {
+    cleanup();
+    // Clean up the accesibility message which is added to the body by Downshift
+    const msg = document.getElementById('a11y-status-message');
+    if (msg) msg.remove();
+  });
+
   test('renders Select, AssistiveText and Label', () => {
-    const fragment = renderToFragmentWithTheme(
-      renderSelectButtonWithComponents,
-    );
+    const fragment = renderToFragmentInBody(renderSelectButtonWithComponents);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -50,7 +57,7 @@ describe('Select', () => {
         size: size as ButtonSelectSize,
         children: defaultSelectOptions,
       };
-      const fragment = renderToFragmentWithTheme(Select, props);
+      const fragment = renderToFragmentInBody(Select, props);
       expect(fragment).toMatchSnapshot();
     });
   });
@@ -61,7 +68,7 @@ describe('Select', () => {
       placeholder: 'This is some text',
     };
 
-    const fragment = renderToFragmentWithTheme(Select, props);
+    const fragment = renderToFragmentInBody(Select, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -165,7 +172,7 @@ describe('Select', () => {
       state: 'disabled',
       children: defaultSelectOptions,
     };
-    const fragment = renderToFragmentWithTheme(Select, props);
+    const fragment = renderToFragmentInBody(Select, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -207,7 +214,7 @@ describe('Select', () => {
       loading: true,
       children: defaultSelectOptions,
     };
-    const fragment = renderToFragmentWithTheme(Select, props);
+    const fragment = renderToFragmentInBody(Select, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -222,7 +229,7 @@ describe('Select', () => {
         </SelectOption>,
       ],
     };
-    const fragment = renderToFragmentWithTheme(Select, props);
+    const fragment = renderToFragmentInBody(Select, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -237,7 +244,7 @@ describe('Select', () => {
         </SelectOption>,
       ],
     };
-    const fragment = renderToFragmentWithTheme(Select, props);
+    const fragment = renderToFragmentInBody(Select, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -247,7 +254,7 @@ describe('Select', () => {
       endEnhancer: <IconFilledSearch overrides={{size: 'iconSize020'}} />,
       children: defaultSelectOptions,
     };
-    const fragment = renderToFragmentWithTheme(Select, props);
+    const fragment = renderToFragmentInBody(Select, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -262,7 +269,7 @@ describe('Select', () => {
         </SelectOption>,
       ],
     };
-    const fragment = renderToFragmentWithTheme(Select, props);
+    const fragment = renderToFragmentInBody(Select, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -394,7 +401,7 @@ describe('Select', () => {
       ],
     };
 
-    const fragment = renderToFragmentWithTheme(
+    const fragment = renderToFragmentInBody(
       Select,
       props,
       myCustomTheme,
@@ -414,11 +421,14 @@ describe('Select', () => {
       </SelectOption>
     ));
 
-    const {getByTestId, getAllByRole, asFragment} = renderWithTheme(Select, {
-      children: selectOptions,
-      virtualized: 10,
-      size: 'medium',
-    });
+    const {getByTestId, getAllByRole, asFragment} = renderWithThemeInBody(
+      Select,
+      {
+        children: selectOptions,
+        virtualized: 10,
+        size: 'medium',
+      },
+    );
 
     // open select
     await act(async () => {
@@ -432,6 +442,10 @@ describe('Select', () => {
   });
 
   describe('in Modal', () => {
+    afterEach(() => {
+      cleanup();
+    });
+
     const commonProps: SelectProps = {
       children: [
         <SelectOption key="1" value="option 1">
@@ -445,7 +459,10 @@ describe('Select', () => {
     };
 
     test('render Select', async () => {
-      const {getByTestId, asFragment} = renderWithTheme(Select, commonProps);
+      const {getByTestId, asFragment, unmount} = renderWithThemeInBody(
+        Select,
+        commonProps,
+      );
 
       await act(async () => {
         userEvent.click(getByTestId('select-button'));
@@ -457,6 +474,7 @@ describe('Select', () => {
       expect(dialogElement).toBeInTheDocument();
 
       expect(asFragment()).toMatchSnapshot();
+      unmount();
     });
 
     test('render Select with overrides props', async () => {
@@ -473,13 +491,17 @@ describe('Select', () => {
         },
       };
 
-      const {getByTestId, asFragment} = renderWithTheme(Select, props);
+      const {getByTestId, asFragment, unmount} = renderWithThemeInBody(
+        Select,
+        props,
+      );
 
       await act(async () => {
         userEvent.click(getByTestId('select-button'));
       });
 
       expect(asFragment()).toMatchSnapshot();
+      unmount();
     });
 
     test('render Select with overrides style', async () => {
@@ -495,17 +517,21 @@ describe('Select', () => {
         },
       };
 
-      const {getByTestId, asFragment} = renderWithTheme(Select, props);
+      const {getByTestId, asFragment, unmount} = renderWithThemeInBody(
+        Select,
+        props,
+      );
 
       await act(async () => {
         userEvent.click(getByTestId('select-button'));
       });
 
       expect(asFragment()).toMatchSnapshot();
+      unmount();
     });
 
     test('correct focus order', async () => {
-      const {getByTestId} = renderWithTheme(Select, commonProps);
+      const {getByTestId, unmount} = renderWithTheme(Select, commonProps);
 
       // open select
       await act(async () => {
@@ -522,10 +548,15 @@ describe('Select', () => {
       // next tab should focus on select panel again
       userEvent.tab();
       expect(getByTestId('select-panel')).toHaveFocus();
+
+      unmount();
     });
 
     test('can close modal', async () => {
-      const {getByTestId, queryByTestId} = renderWithTheme(Select, commonProps);
+      const {getByTestId, queryByTestId, unmount} = renderWithTheme(
+        Select,
+        commonProps,
+      );
 
       // open select
       await act(async () => {
@@ -535,6 +566,7 @@ describe('Select', () => {
       // close modal
       userEvent.click(getByTestId('button'));
       expect(queryByTestId('modal')).not.toBeInTheDocument();
+      unmount();
     });
 
     test('do not close modal when click outside the panel', async () => {
@@ -553,7 +585,10 @@ describe('Select', () => {
         },
       };
 
-      const {getByTestId, queryByTestId} = renderWithTheme(Select, props);
+      const {getByTestId, queryByTestId, unmount} = renderWithTheme(
+        Select,
+        props,
+      );
 
       // open select
       await act(async () => {
@@ -565,6 +600,7 @@ describe('Select', () => {
 
       // the modal should not close
       expect(queryByTestId('modal')).toBeInTheDocument();
+      unmount();
     });
   });
 

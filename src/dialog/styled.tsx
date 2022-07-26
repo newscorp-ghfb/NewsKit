@@ -4,6 +4,7 @@ import {
   getStylePreset,
   getResponsiveSpace,
   getSizingCssFromTheme,
+  getTypographyPreset,
   css,
 } from '../utils/style';
 import {BaseDialogViewProps} from './types';
@@ -42,8 +43,6 @@ export const StyledDialogPanel = styled.div<BaseDialogViewOverridesAndPathProps>
   ${({$open}) => ({
     pointerEvents: $open ? undefined : 'none',
   })}
-  ${({path}) =>
-    getResponsiveSpace('zIndex', `${path}.panel`, 'panel', 'zIndex')}
   ${({closePosition}) => createCssGrid({closePosition})}  
   overflow: hidden;
 `;
@@ -78,6 +77,8 @@ export const StyledDialogHeader = styled.div<BaseDialogViewOverridesAndPathProps
   align-items: center;
   ${({path}) =>
     getResponsiveSpace('padding', `${path}.header`, 'header', 'spaceInset')}
+  ${({path}) => getStylePreset(`${path}.header`, 'header')};
+  ${({path}) => getTypographyPreset(`${path}.header`, 'header')};
 `;
 
 export const StyledDialogContent = styled.div<BaseDialogViewOverridesAndPathProps>`

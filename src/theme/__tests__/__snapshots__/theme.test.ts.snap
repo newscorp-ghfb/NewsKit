@@ -1721,6 +1721,8 @@ Object {
     },
     "header": Object {
       "spaceInset": "spaceInsetSquish040",
+      "stylePreset": "drawerHeader",
+      "typographyPreset": "utilityLabel030",
     },
     "overlay": Object {
       "transitionPreset": "fade",
@@ -2026,6 +2028,8 @@ Object {
     },
     "header": Object {
       "spaceInset": "spaceInsetSquish040",
+      "stylePreset": "modalHeader",
+      "typographyPreset": "utilityLabel030",
     },
     "overlay": Object {
       "transitionPreset": Object {
@@ -3855,6 +3859,11 @@ Object {
       "borderWidth": "{{borders.borderWidthDefault}}",
     },
   },
+  "drawerHeader": Object {
+    "base": Object {
+      "color": "{{colors.inkBase}}",
+    },
+  },
   "drawerPanel": Object {
     "base": Object {
       "backgroundColor": "{{colors.interface010}}",
@@ -4970,6 +4979,11 @@ Object {
       "borderColor": "{{colors.interactivePrimary030}}",
       "color": "{{colors.inkBrand010}}",
       "iconColor": "{{colors.inkBrand010}}",
+    },
+  },
+  "modalHeader": Object {
+    "base": Object {
+      "color": "{{colors.inkBase}}",
     },
   },
   "modalPanel": Object {
