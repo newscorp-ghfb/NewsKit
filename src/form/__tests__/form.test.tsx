@@ -362,7 +362,6 @@ describe('Form', () => {
 
     expect(queryByTestId('error-icon')).toBeNull();
     expect(queryByText('Required field')).not.toBeInTheDocument();
-    expect(queryByTestId('tick-icon')).toBeNull();
   });
 
   test('reset() should reset fields value and remove validation', async () => {
