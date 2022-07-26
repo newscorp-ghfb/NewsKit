@@ -45,4 +45,6 @@ Imports and transform `newskit` icons to `emotion-icons`;
 
 ```sh
 npx @newskit/codemod emotion-icons <path>
+// for example
+npx @newskit/codemod emotion-icons 'components/**/*.+(ts|tsx|js|jsx)' 
 ```
