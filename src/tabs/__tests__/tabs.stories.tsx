@@ -211,7 +211,7 @@ const StyledBlock = styled(Block)`
   height: 150px;
 `;
 
-const ScrollBox: React.FC = ({children}) => (
+const ScrollBox: React.FC<{children: React.ReactNode}> = ({children}) => (
   <StyledBlock>
     <Scroll>{children}</Scroll>
   </StyledBlock>

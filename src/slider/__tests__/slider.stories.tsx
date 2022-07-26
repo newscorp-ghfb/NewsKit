@@ -217,7 +217,7 @@ const ContainerWithBorder = styled.div`
 
 type FlexContainerWithBorderType = {
   direction?: 'vertical' | 'horizontal';
-  children: React.ReactNode | Element;
+  children: React.ReactNode;
 };
 
 const FlexContainerWithBorder = styled.div<FlexContainerWithBorderType>`
