@@ -264,7 +264,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'Avoid covering the element that the Popover is attributed to, as it will lose its context.',
+            'Avoid using large chunks of text in Popovers as this may result in cognitive overload for some users.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/popover/usage/dont2'),
         },
@@ -280,6 +280,12 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
             'Avoid rich content. Formatting will not be conveyed to screen reader users eg. bold, italicised text, or icons)',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/popover/usage/dont3'),
+        },
+        {
+          description:
+            'Avoid covering the element that the Popover is attributed to, as it will lose its context.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/popover/usage/dont4'),
         },
       ],
     }}
