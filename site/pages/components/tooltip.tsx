@@ -128,7 +128,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Triggering and closing the Tooltip',
           description:
-            'The Tooltip is triggered by hovering and/or focussing on the UI element to which it is attributed. Removing focus or hover will dismiss the Tooltip',
+            'The Tooltip is triggered by hovering and/or focussing on the UI element to which it is attributed. Removing focus or hover will dismiss the Tooltip.',
           media: getIllustrationComponent(
             'components/tooltip/behaviours/triggering-and-closing',
           ),
@@ -250,12 +250,6 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           description: 'Avoid using a timeout to hide the Tooltip.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/tooltip/usage/dont4'),
-        },
-        {
-          description:
-            'The Tooltip can be applied to the Icon Button in order to provide additional context relating to the intended action or destination for users.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/tooltip/usage/do1'),
         },
         {
           description:
