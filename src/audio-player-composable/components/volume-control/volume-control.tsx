@@ -78,7 +78,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   const [volumeSliderInstructionId] = useReactKeys(1);
   const [open, setOpen] = useState(false);
   console.log(open);
-
+  const [isVisible, setIsVisible] = React.useState(false);
   return (
     <VolumeControlContainer
       onFocus={() => setOpen(true)}
@@ -117,6 +117,8 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
             )({theme, overrides})}
             classNames="nk-vc"
             appear
+            onEnter={() => setIsVisible(true)}
+            onExited={() => setIsVisible(false)}
           >
             {(state: string) => (
               <StyledVolumeSliderContainer
@@ -124,6 +126,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
                 layout={layout}
                 overrides={overrides}
                 open={open}
+                visible={isVisible}
               >
                 <Slider
                   vertical={layout === 'vertical'}

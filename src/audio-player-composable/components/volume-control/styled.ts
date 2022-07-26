@@ -11,11 +11,11 @@ import {getTransitionPreset} from '../../../utils/style/transition-preset';
 export const StyledVolumeSliderContainer = styled.div<
   Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides'> & {
     open?: boolean;
+    visible?: boolean;
   }
 >`
-  overflow: hidden;
-
   ${getTransitionPreset('audioPlayerVolumeControl', '', 'nk-vc')}
+
   ${({layout, open}) =>
     getResponsiveSize(
       value =>
@@ -42,6 +42,8 @@ export const StyledVolumeSliderContainer = styled.div<
     layout === 'horizontalCollapsed' &&
     `display: none;
     `};
+
+  ${({visible}) => (!visible ? 'overflow:hidden;' : '')};
 `;
 
 export const StyledGridLayout = styled(GridLayout)<
@@ -54,7 +56,6 @@ export const StyledGridLayout = styled(GridLayout)<
     position: relative;
     
   `};
-
   ${({layout}) =>
     getResponsiveSpace(
       layout === 'vertical' ? 'rowGap' : 'columnGap',
