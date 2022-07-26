@@ -22,7 +22,6 @@ import {useThemeMode} from '../../helpers/use-theme-mode';
 
 export interface SwatchCardProps {
   color: string;
-  theme?: Theme;
 }
 
 const getTextColor = (theme: Theme, colorToken: string) =>

@@ -60,7 +60,7 @@ const inkColorRows = getTokenType(newskitLightTheme.colors, 'ink').map(
   }),
 );
 
-const H: React.FC = ({children}) => (
+const H: React.FC<{children: React.ReactNode}> = ({children}) => (
   <>
     <Block spaceStack="space090" />
     <Block spaceStack="space040">
