@@ -2,12 +2,7 @@ import * as newskit from '..';
 
 describe('index exports', () => {
   test('all expected functions and components are exported', () => {
-    expect(
-      // Exclude icons as these will change between local and CI builds.
-      Object.keys(newskit)
-        .sort()
-        .filter(exportKey => !exportKey.match(/^Icon(?!Button)/)),
-    ).toMatchSnapshot();
+    expect(Object.keys(newskit).sort()).toMatchSnapshot();
   });
 
   test('no styled components are exported', () => {

@@ -3,26 +3,31 @@ import {
   getMediaQueryFromTheme,
   getTypographyPresetFromTheme,
   styled,
-  IconFilledMenu,
   Visible,
   getColorCssFromTheme,
   getSpacingCssFromTheme,
   getSizingCssFromTheme,
-  IconFilledClose,
   Button,
   ButtonSize,
-  IconFilledGitHub,
   getBorderCssFromTheme,
   MenuItem,
   Menu,
   GridLayout,
   IconButton,
+  toNewsKitIcon,
 } from 'newskit';
+import {Menu as FilledMenu} from '@emotion-icons/material/Menu';
+import {Close as FilledClose} from '@emotion-icons/material/Close';
+
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
 import routes from '../routes';
 import {Link} from './link';
+import {IconFilledGitHub} from './icons/icon-filled-github';
+
+const IconFilledMenu = toNewsKitIcon(FilledMenu);
+const IconFilledClose = toNewsKitIcon(FilledClose);
 
 export const GitHubButton: React.FC<{href?: string}> = () => (
   <Button
