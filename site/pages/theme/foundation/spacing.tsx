@@ -1,5 +1,5 @@
 import React from 'react';
-import {InlineMessage, newskitLightTheme} from 'newskit*';
+import {InlineMessage, newskitLightTheme} from 'newskit';
 import {Table, TableRow} from '../../../components/table';
 import {getTokenType} from '../../../utils/get-token-type';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';

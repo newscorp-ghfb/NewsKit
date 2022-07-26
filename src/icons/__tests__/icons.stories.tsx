@@ -1,23 +1,42 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
+
+import {
+  AccountBalance as OutlinedAccountBalance,
+  AccountTree as OutlinedAccountTree,
+} from '@emotion-icons/material-outlined';
+import {
+  AccountBalance as FilledAccountBalance,
+  AccountTree as FilledAccountTree,
+} from '@emotion-icons/material';
+
 import {createTheme, ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils/style';
 import {Stack} from '../../stack';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-import {
-  IconFilledAccountBalance,
-  IconOutlinedAccountBalance,
-  IconFilledAccountTree,
-  IconOutlinedAccountTree,
-  IconOutlinedClose,
-  Svg,
-  NewsKitIcon,
-} from '..';
+import {IconOutlinedClose, Svg, NewsKitIcon} from '..';
 import * as customIcons from '../filled/custom';
 import {customToNewsKitIcon} from '../custom-to-newskit-icon';
+
+const IconFilledAccountBalance = customToNewsKitIcon(
+  'IconFilledAccountBalance',
+  props => <FilledAccountBalance {...props} />,
+);
+const IconOutlinedAccountBalance = customToNewsKitIcon(
+  'IconOutlinedAccountBalance',
+  props => <OutlinedAccountBalance {...props} />,
+);
+const IconFilledAccountTree = customToNewsKitIcon(
+  'IconFilledAccountTree',
+  props => <FilledAccountTree {...props} />,
+);
+const IconOutlinedAccountTree = customToNewsKitIcon(
+  'IconOutlinedAccountTree',
+  props => <OutlinedAccountTree {...props} />,
+);
 
 const Container = styled.div<{dark?: boolean}>`
   ${({dark}) => dark && 'background: #000;'}
