@@ -710,6 +710,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
