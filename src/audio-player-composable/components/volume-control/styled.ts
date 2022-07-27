@@ -14,22 +14,21 @@ export const StyledVolumeSliderContainer = styled.div<
     visible?: boolean;
   }
 >`
-  ${getTransitionPreset('audioPlayerVolumeControl', '', 'nk-vc')}
+  ${({layout}) =>
+    layout === 'horizontalExpandable' &&
+    getTransitionPreset('audioPlayerVolumeControl', '', 'nk-vc')};
 
-  ${({layout, open}) =>
+  ${({layout, visible}) =>
+    layout === 'horizontalExpandable' && !visible ? 'overflow:hidden;' : ''};
+
+  ${({open, layout}) =>
     getResponsiveSize(
-      value =>
-        // eslint-disable-next-line no-nested-ternary
-        !open
-          ? {width: 0}
-          : layout === 'vertical'
-          ? {height: value}
-          : {width: value},
+      value => (!open || layout === 'vertical' ? {width: 0} : {width: value}),
       `audioPlayerVolumeControl.slider.track`,
       `slider.track`,
       'length',
     )}
-    ${({layout}) =>
+  ${({layout}) =>
     layout === 'horizontal' &&
     getResponsiveSpace(
       'width',
@@ -37,13 +36,19 @@ export const StyledVolumeSliderContainer = styled.div<
       '',
       'width',
     )};
+  ${({layout}) =>
+    layout === 'vertical' &&
+    getResponsiveSpace(
+      'height',
+      'audioPlayerVolumeControl.slider.track.length',
+      '',
+      'height',
+    )};
 
   ${({layout}) =>
     layout === 'horizontalCollapsed' &&
     `display: none;
     `};
-
-  ${({visible}) => (!visible ? 'overflow:hidden;' : '')};
 `;
 
 export const StyledGridLayout = styled(GridLayout)<
