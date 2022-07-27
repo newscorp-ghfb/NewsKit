@@ -14,15 +14,17 @@ import {
   Block,
   Button,
   IconButton,
-  IconFilledAccountBalance,
-  IconFilledAccountTree,
-  IconFilledAddCircleOutline,
   Stack,
   StackDistribution,
   styled,
   ThemeProvider,
   CreateThemeArgs,
 } from '../..';
+import {
+  IconFilledAccountBalance,
+  IconFilledAccountTree,
+  IconFilledAddCircleOutline,
+} from '../../icons';
 import {SelectOption} from '../../select';
 import {TextFieldSize} from '../../text-field';
 import {
