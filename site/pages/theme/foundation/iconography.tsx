@@ -17,61 +17,6 @@ import {
 } from '../../../components/content-structure';
 import {Link} from '../../../components/link';
 
-const featureCardoverrides = {
-  title: {
-    typographyPreset: 'editorialHeadline030',
-  },
-  description: {
-    typographyPreset: 'editorialParagraph020',
-  },
-};
-const {title, description} = featureCardoverrides;
-
-const PRINCIPLE_CARDS = [
-  {
-    media: {
-      src: 'static/theming/foundations/simple.svg',
-      alt: '',
-    },
-    title: 'Simple',
-    description:
-      'The style of icons in the library is paired back and not too elaborate for ease of interpretation, and so they work well at smaller sizes',
-    stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/consistent.svg',
-      alt: '',
-    },
-    title: 'Consistent',
-    description:
-      'Icons should be used consistently across products and platforms for the same function',
-    stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/contextual.svg',
-      alt: '',
-    },
-    title: 'Contextual',
-    description:
-      'Icons are used as visual representations of common actions and commands to provide additional context and enhance usability',
-    stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
-  },
-];
-
 const Iconography = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
@@ -117,21 +62,6 @@ const Iconography = (layoutProps: LayoutProps) => (
           showSeparator
         >
           <Illustration path="theme/iconography/overview" />
-        </ContentPrimary>
-      </ContentSection>
-
-      <ContentSection sectionName="principles">
-        <ContentPrimary
-          id="principles"
-          toc="Principles"
-          headline="Principles"
-          showSeparator
-        >
-          <MediaList
-            layout="3-span"
-            cardType="feature"
-            cards={PRINCIPLE_CARDS}
-          />
         </ContentPrimary>
       </ContentSection>
 
