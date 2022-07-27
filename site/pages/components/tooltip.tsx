@@ -78,7 +78,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Size',
           description:
-            'The size of the Tooltip is dictated by the content passed to the panel, with the ability to set a maxWidth, and minWidth. Height is dictated by the content',
+            'The size of the Tooltip is dictated by the content passed to the panel, with the ability to set a maxWidth, and minWidth. Height is dictated by the content.',
           media: getIllustrationComponent('components/tooltip/options/size'),
         },
         {
