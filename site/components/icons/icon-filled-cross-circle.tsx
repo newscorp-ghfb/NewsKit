@@ -1,5 +1,9 @@
 import React from 'react';
-import {Flag, FlagProps, IconOutlinedClose} from 'newskit';
+import {Flag, FlagProps, toNewsKitIcon} from 'newskit';
+
+import {Close as OutlinedClose} from '@emotion-icons/material-outlined/Close';
+
+const IconOutlinedClose = toNewsKitIcon(OutlinedClose);
 
 export const IconFilledCrossCircle: React.FC<{size?: FlagProps['size']}> = ({
   size,

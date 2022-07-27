@@ -6,16 +6,12 @@ import {
 } from '../../test/storybook-comps';
 import {Switch} from '..';
 import {styled} from '../../utils';
+import {Cell, Fieldset, Grid, ThemeProvider, CreateThemeArgs} from '../..';
 import {
-  Cell,
-  Fieldset,
-  Grid,
   IconFilledCheck,
   IconFilledClose,
   IconFilledDragHandle,
-  ThemeProvider,
-  CreateThemeArgs,
-} from '../..';
+} from '../../icons';
 import {icons, labels, sizeOverrides, sizes, states} from './helpers';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 

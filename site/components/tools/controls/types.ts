@@ -1,4 +1,4 @@
-import {Theme} from 'newskit*';
+import {Theme} from 'newskit';
 import {Dispatch, SetStateAction} from 'react';
 import {ThemeNames} from '../colors-theme-list';
 

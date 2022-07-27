@@ -21,7 +21,8 @@ import {
   FormInputRadioButton,
 } from '../form-input';
 import {composeEventHandlers} from '../../utils/compose-event-handlers';
-import {IconFilledAccountBalance, RadioGroup, TextFieldSize} from '../..';
+import {RadioGroup, TextFieldSize} from '../..';
+import {IconFilledAccountBalance} from '../../icons';
 import {SelectOption} from '../../select';
 
 let actualRHF: any;
