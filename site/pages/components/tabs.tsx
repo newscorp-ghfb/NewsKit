@@ -1028,8 +1028,6 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           },
         ],
       },
-      infoNoticeFocus: 'Scroll controls are not focussable.',
-
       interaction: {
         title: 'Keyboard Interactions',
         tableRows: [

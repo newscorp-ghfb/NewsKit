@@ -40,6 +40,7 @@ const renderIcon = (value?: TableRowValue) => {
 const remapComponents: {[id: string]: string} = {
   'Icon Button': 'Button',
   Icon: 'Icons',
+  'Text Block (input)': 'Text Block',
 };
 
 const renderSingleOrMultiple = (
