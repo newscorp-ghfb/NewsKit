@@ -1,16 +1,13 @@
-import {Grid, Cell, InlineMessage, Block, IconFilledInfo} from 'newskit';
 import React from 'react';
+import {Grid, Cell, InlineMessage, Block, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
 import {ContentText} from '../../components/text-section/content-text';
 import {Table} from '../../components/table';
 import {ComponentPageCell} from '../../components/layout-cells';
 
-interface A11ySubSection<RowType> {
-  title: string;
-  description?: string;
-  tableRows?: RowType[];
-}
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const infoIcon = (
   <IconFilledInfo
@@ -19,6 +16,12 @@ const infoIcon = (
     }}
   />
 );
+
+interface A11ySubSection<RowType> {
+  title: string;
+  description?: string;
+  tableRows?: RowType[];
+}
 
 export interface AccessibilityTablesProps {
   focusOrder?: A11ySubSection<{
