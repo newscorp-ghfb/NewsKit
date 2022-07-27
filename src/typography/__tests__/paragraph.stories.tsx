@@ -57,7 +57,9 @@ export const StoryParagraph = () => (
       <i>Politicians In Search Of An Eye-Catching Race-Related Policy Week</i>.
     </P>
     <br />
-    <StorybookSubHeading>with logical props drop cap</StorybookSubHeading>
+    <StorybookSubHeading>
+      with logical props applied to drop cap (overrides)
+    </StorybookSubHeading>
     <P
       overrides={{
         dropCap: {
