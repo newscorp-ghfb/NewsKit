@@ -77,8 +77,8 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   const gridColumns = layout === 'vertical' ? '1fr' : 'auto 1fr';
   const [volumeSliderInstructionId] = useReactKeys(1);
   const [open, setOpen] = useState(false);
-  console.log(open);
   const [isVisible, setIsVisible] = React.useState(false);
+
   return (
     <VolumeControlContainer
       onFocus={() => setOpen(true)}
