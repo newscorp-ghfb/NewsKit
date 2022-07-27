@@ -313,7 +313,7 @@ export const renderCols = (
       }
 
       default:
-        cellContent = cellValue && <></>;
+        cellContent = cellValue as React.ReactNode;
         break;
     }
 

@@ -872,20 +872,28 @@ exports[`TabsWithTable renders with default data 1`] = `
                     >
                       <td
                         class="emotion-38"
-                      />
+                      >
+                        row1
+                      </td>
                       <td
                         class="emotion-38"
-                      />
+                      >
+                        row1
+                      </td>
                     </tr>
                     <tr
                       class="emotion-40"
                     >
                       <td
                         class="emotion-38"
-                      />
+                      >
+                        row2
+                      </td>
                       <td
                         class="emotion-38"
-                      />
+                      >
+                        row2
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -946,20 +954,28 @@ exports[`TabsWithTable renders with default data 1`] = `
                     >
                       <td
                         class="emotion-38"
-                      />
+                      >
+                        row1
+                      </td>
                       <td
                         class="emotion-38"
-                      />
+                      >
+                        row1
+                      </td>
                     </tr>
                     <tr
                       class="emotion-40"
                     >
                       <td
                         class="emotion-38"
-                      />
+                      >
+                        row2
+                      </td>
                       <td
                         class="emotion-38"
-                      />
+                      >
+                        row2
+                      </td>
                     </tr>
                   </tbody>
                 </table>
