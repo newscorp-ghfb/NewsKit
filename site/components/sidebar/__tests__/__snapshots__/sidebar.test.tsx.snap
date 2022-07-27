@@ -2382,6 +2382,30 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-15"
                           data-testid="buttonLink"
+                          href="/components/popover"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <div
+                              class="emotion-12"
+                            >
+                              <span
+                                class="emotion-18"
+                              >
+                                Popover
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item emotion-14"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-15"
+                          data-testid="buttonLink"
                           href="/components/stack"
                         >
                           <div
@@ -6327,6 +6351,31 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                 aria-current="false"
                                 class="emotion-13"
                                 data-testid="buttonLink"
+                                href="/components/popover"
+                                tabindex="-1"
+                              >
+                                <div
+                                  class="emotion-9"
+                                >
+                                  <div
+                                    class="emotion-10"
+                                  >
+                                    <span
+                                      class="emotion-16"
+                                    >
+                                      Popover
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                            <li
+                              class="nk-menu-item emotion-12"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-13"
+                                data-testid="buttonLink"
                                 href="/components/stack"
                                 tabindex="-1"
                               >
@@ -10064,6 +10113,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                                 class="emotion-18"
                               >
                                 Modal
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item emotion-14"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-15"
+                          data-testid="buttonLink"
+                          href="/components/popover"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <div
+                              class="emotion-12"
+                            >
+                              <span
+                                class="emotion-18"
+                              >
+                                Popover
                               </span>
                             </div>
                           </div>
@@ -13947,6 +14020,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                                       class="emotion-16"
                                     >
                                       Modal
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                            <li
+                              class="nk-menu-item emotion-12"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-13"
+                                data-testid="buttonLink"
+                                href="/components/popover"
+                              >
+                                <div
+                                  class="emotion-9"
+                                >
+                                  <div
+                                    class="emotion-10"
+                                  >
+                                    <span
+                                      class="emotion-16"
+                                    >
+                                      Popover
                                     </span>
                                   </div>
                                 </div>
