@@ -1052,6 +1052,31 @@ describe('Audio Player Composable', () => {
       );
       expect(asFragment()).toMatchSnapshot();
     });
+    it('should hover on volume control', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlWithInitialVolumeDefault,
+      );
+      const muteButton = getByTestId('mute-button');
+
+      fireEvent.mouseOver(muteButton);
+      expect(asFragment()).toMatchSnapshot('with hover');
+
+      fireEvent.mouseLeave(muteButton);
+      expect(asFragment()).toMatchSnapshot('without hover');
+    });
+    it('should on Focus & onBlur on volume control', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlWithInitialVolumeDefault,
+      );
+      const muteButton = getByTestId('mute-button');
+
+      fireEvent.focus(muteButton);
+      expect(asFragment()).toMatchSnapshot('with focus');
+      fireEvent.blur(muteButton);
+      expect(asFragment()).toMatchSnapshot('with blur');
+    });
     it('should render correctly with overrides', () => {
       const myCustomTheme = createTheme({
         name: 'my-custom-volume-control-theme',
