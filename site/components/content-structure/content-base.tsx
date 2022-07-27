@@ -70,7 +70,7 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
 
       {description && (
         <GridLayoutItem column={textColumns}>
-          <TextBlock as="p" {...descriptionOverrides}>
+          <TextBlock as="span" {...descriptionOverrides}>
             {description}
           </TextBlock>
           {children && <Block spaceStack={descriptionSpace} />}

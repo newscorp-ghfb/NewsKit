@@ -139,6 +139,7 @@ const FeatureCardHorizontal = React.forwardRef<
                 <TextBlock
                   stylePreset="inkWhiteSubtle"
                   typographyPreset={descriptionTypographyPreset}
+                  as="span"
                 >
                   {description}
                 </TextBlock>
@@ -201,6 +202,7 @@ const FeatureCardHorizontal = React.forwardRef<
                   <TextBlock
                     stylePreset="inkWhiteSubtle"
                     typographyPreset={descriptionTypographyPreset}
+                    as="span"
                   >
                     <LineTruncation lines="2">{description}</LineTruncation>
                   </TextBlock>
@@ -299,6 +301,7 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
               <TextBlock
                 stylePreset="inkWhiteSubtle"
                 typographyPreset={descriptionTypographyPreset}
+                as="span"
               >
                 {description}
               </TextBlock>

@@ -46,6 +46,7 @@ export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
         <TextBlock
           typographyPreset="editorialParagraph020"
           stylePreset="inkBase"
+          as="span"
         >
           {description}
         </TextBlock>

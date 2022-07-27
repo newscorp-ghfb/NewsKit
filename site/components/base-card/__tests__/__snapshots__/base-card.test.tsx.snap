@@ -78,6 +78,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-6 svg {
@@ -118,11 +119,11 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
             </h3>
           </section>
         </div>
-        <p
+        <span
           class="emotion-6"
         >
           Text
-        </p>
+        </span>
       </div>
     </div>
   </div>
@@ -272,6 +273,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-7 svg {
@@ -317,11 +319,11 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
             </section>
           </a>
         </div>
-        <p
+        <span
           class="emotion-7"
         >
           Text
-        </p>
+        </span>
       </div>
     </div>
   </div>
@@ -419,6 +421,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-6 svg {
@@ -459,11 +462,11 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
             </h3>
           </section>
         </div>
-        <p
+        <span
           class="emotion-6"
         >
           Text
-        </p>
+        </span>
       </div>
     </div>
   </div>
@@ -600,6 +603,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-7 svg {
@@ -645,11 +649,11 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
             </section>
           </a>
         </div>
-        <p
+        <span
           class="emotion-7"
         >
           Text
-        </p>
+        </span>
       </div>
     </div>
   </div>
