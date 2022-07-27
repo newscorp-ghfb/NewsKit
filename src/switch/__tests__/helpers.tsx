@@ -7,7 +7,7 @@ import {
   IconFilledDarkMode,
   IconFilledDragHandle,
   IconFilledLightMode,
-} from '../..';
+} from '../../icons';
 
 export const states: [string, {checked?: boolean; state?: SwitchState}][] = [
   ['base', {}],
