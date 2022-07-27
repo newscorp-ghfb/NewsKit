@@ -490,6 +490,17 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/button/usage/dont2'),
         },
         {
+          description: (
+            <>
+              The <Link href="/components/tooltip/">Tooltip</Link> can be
+              applied to the Icon Button in order to provide additional context
+              relating to the intended action or destination for users.
+            </>
+          ),
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/button/usage/do3'),
+        },
+        {
           description:
             'Avoid placing more than one primary (high emphasis) Button on a screen to help guide the user to the primary action.',
           kind: UsageKind.DONT,
