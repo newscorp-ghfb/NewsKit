@@ -70,6 +70,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
           <TextBlock
             stylePreset="inkBase"
             typographyPreset="editorialSubheadline020"
+            as="span"
           >
             {children}
           </TextBlock>

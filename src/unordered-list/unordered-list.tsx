@@ -83,6 +83,7 @@ const ThemelessUnorderedList: React.FC<UnorderedListProps> = ({
               <TextBlock
                 typographyPreset={contentTypographyPresetToken}
                 stylePreset={contentStylePresetToken}
+                as="span"
               >
                 {node}
               </TextBlock>

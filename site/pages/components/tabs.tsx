@@ -894,11 +894,11 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                   right.
                 </>
               </UnorderedList>
-              <p>
+              <span>
                 NOTE - The default alignment depends on the orientation. When
                 Tabs are vertical it’s <Mono>Start</Mono> and when Tabs are
                 horizontal it’s <Mono>Center</Mono>.
-              </p>
+              </span>
             </> // eslint-disable-next-line @typescript-eslint/no-explicit-any
           ) as any,
 

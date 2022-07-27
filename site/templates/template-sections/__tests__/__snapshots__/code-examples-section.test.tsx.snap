@@ -252,6 +252,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-11 svg {
@@ -603,11 +604,11 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
             <div
               class="emotion-10"
             >
-              <p
+              <span
                 class="emotion-11"
               >
                 Code examples section title introduction
-              </p>
+              </span>
             </div>
           </div>
           <div

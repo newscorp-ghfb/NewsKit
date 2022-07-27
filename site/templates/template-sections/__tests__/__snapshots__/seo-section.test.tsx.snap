@@ -112,6 +112,7 @@ exports[`SEOSection renders section as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-7 svg {
@@ -185,11 +186,11 @@ exports[`SEOSection renders section as expected 1`] = `
           <div
             class="emotion-6"
           >
-            <p
+            <span
               class="emotion-7"
             >
               seo introduction text goes here
-            </p>
+            </span>
           </div>
         </div>
         <div
