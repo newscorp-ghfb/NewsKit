@@ -1,5 +1,6 @@
 import React from 'react';
-import {InlineMessage, IconFilledInfo, UnorderedList} from 'newskit';
+import {InlineMessage, UnorderedList, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
@@ -8,6 +9,8 @@ import {LayoutProps} from '../../components/layout';
 import {IconFilledCircle} from '../../components/icons';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const infoIcon = (
   <IconFilledInfo
