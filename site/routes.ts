@@ -519,6 +519,14 @@ export default [
             illustration: 'components/modal-illustration',
           },
           {
+            title: 'Popover',
+            page: true,
+            id: '/components/popover',
+            description:
+              'A Popover (also known as a Popper) is a layout component that displays non-critical information when a user clicks or taps on a UI element. ',
+            illustration: 'components/popover/hero',
+          },
+          {
             title: 'Stack',
             page: true,
             id: '/components/stack',
@@ -587,6 +595,14 @@ export default [
           'Components that enable users to move between pages or content.',
         id: '/components/navigation',
         subNav: [
+          {
+            title: 'Accordion',
+            page: true,
+            id: '/components/accordion',
+            description:
+              'Accordions show and hide related content. Use them to break up long pages into segmented, prioritised sections.',
+            illustration: 'components/accordion/hero',
+          },
           {
             title: 'Link',
             page: true,

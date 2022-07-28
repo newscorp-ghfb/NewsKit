@@ -13,6 +13,7 @@ export type CommonSectionProps = {
   id: string;
   toc?: string;
   hideSeparator?: boolean;
+  lastItem?: boolean;
   media?: ImageProps | JSX.Element | React.ComponentType;
 };
 
@@ -24,6 +25,7 @@ export const CommonSection: React.FC<CommonSectionProps> = ({
   toc,
   media,
   hideSeparator,
+  lastItem,
 }) => (
   <>
     <Cell xs={12}>
@@ -35,6 +37,7 @@ export const CommonSection: React.FC<CommonSectionProps> = ({
               lg: 'space100',
             }}
             title={title}
+            lastItem={lastItem}
           >
             {introduction}
           </SectionIntroduction>

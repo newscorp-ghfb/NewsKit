@@ -24,7 +24,10 @@ import {ButtonSize} from '../../../button/types';
 import {getTransitionDuration} from '../../../utils';
 import {getTransitionClassName} from '../../../utils/get-transition-class-name';
 
-const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps> = props => {
+const ThemelessAudioPlayerVolumeControl = React.forwardRef<
+  HTMLDivElement,
+  AudioPlayerVolumeControlProps
+>((props, ref) => {
   const {getVolumeControlProps} = useAudioPlayerContext();
   const {
     volume,
@@ -89,8 +92,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
       id="hello"
     >
       <StyledGridLayout
-        id="iam styled grid"
-        // className="nk-slider"
+        ref={ref}
         columns={gridColumns}
         areas={gridAreas}
         justifyItems={layout === 'vertical' ? 'center' : 'start'}
@@ -151,7 +153,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
       </StyledGridLayout>
     </VolumeControlContainer>
   );
-};
+});
 
 export const AudioPlayerVolumeControl = withOwnTheme(
   ThemelessAudioPlayerVolumeControl,

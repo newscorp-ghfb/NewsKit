@@ -23,14 +23,32 @@ export * from './grid';
 export * from './grid-layout';
 export * from './headline';
 export * from './icon-button';
-export * from './icons';
+
+export {
+  /* istanbul ignore next */
+  Svg,
+  /* istanbul ignore next */
+  toNewsKitIcon,
+  /* istanbul ignore next */
+  customToNewsKitIcon,
+  /* istanbul ignore next */
+  IndeterminateProgressIndicator,
+} from './icons';
+export type {
+  SvgProps,
+  NewsKitIconProps,
+  NewsKitIcon,
+  IconComponent,
+} from './icons';
 export * from './image';
 export * from './inline-message';
 export * from './instrumentation';
 export * from './label';
+export * from './layer';
 export * from './link';
 export * from './menu';
 export * from './modal';
+export * from './newskit-provider';
 export * from './ordered-list';
 export * from './popover';
 export * from './radio-button';

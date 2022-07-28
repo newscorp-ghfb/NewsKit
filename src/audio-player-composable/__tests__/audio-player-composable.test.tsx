@@ -2,7 +2,11 @@
 import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import {renderWithImplementation, renderWithTheme} from '../../test/test-utils';
+import {
+  renderWithImplementation,
+  renderWithTheme,
+  renderWithThemeInBody,
+} from '../../test/test-utils';
 import {AudioPlayerComposableProps} from '../types';
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
@@ -872,7 +876,7 @@ describe('Audio Player Composable', () => {
     });
 
     it('should render correctly in popover', () => {
-      const {asFragment, getByTestId} = renderWithTheme(
+      const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedPopover,
       );
@@ -883,7 +887,7 @@ describe('Audio Player Composable', () => {
     });
 
     it('should render correctly in modal', () => {
-      const {asFragment, getByTestId} = renderWithTheme(
+      const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedModal,
       );
@@ -893,7 +897,7 @@ describe('Audio Player Composable', () => {
     });
 
     it('should render correctly with overrides', () => {
-      const {asFragment, getByTestId} = renderWithTheme(
+      const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedWithOverrides,
       );
@@ -904,7 +908,7 @@ describe('Audio Player Composable', () => {
     });
 
     it('should close modal on X click', () => {
-      const {asFragment, getByTestId, getByLabelText} = renderWithTheme(
+      const {asFragment, getByTestId, getByLabelText} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedModal,
       );
@@ -916,7 +920,7 @@ describe('Audio Player Composable', () => {
     });
 
     it('should update playback speed', () => {
-      const {getByTestId} = renderWithTheme(
+      const {getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedPopover,
       );

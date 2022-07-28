@@ -597,7 +597,7 @@ export const AudioPlayer = () => (
   </StyledPage>
 );
 AudioPlayer.storyName = 'audio-player';
-AudioPlayer.eyes = {waitBeforeCapture: 5000};
+AudioPlayer.parameters = {eyes: {waitBeforeCapture: 5000}};
 
 export const AudioSubComponents = () => (
   <StyledPage>
@@ -693,6 +693,7 @@ export const AudioSubComponents = () => (
   </StyledPage>
 );
 AudioSubComponents.storyName = 'audio-sub-components';
+AudioSubComponents.parameters = {eyes: {waitBeforeCapture: 5000}};
 
 export const AudioPlayerWithInitialProps = () => {
   const breakpointKey = useBreakpointKey();
@@ -750,9 +751,8 @@ export const AudioPlayerWithInitialProps = () => {
     </StyledPage>
   );
 };
-
 AudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
-AudioPlayerWithInitialProps.eyes = {waitBeforeCapture: 5000};
+AudioPlayerWithInitialProps.parameters = {eyes: {include: false}};
 
 export const AudioPlayerOverrides = () => {
   const breakpointKey = useBreakpointKey();
@@ -1031,6 +1031,7 @@ export const AudioPlayerOverrides = () => {
   );
 };
 AudioPlayerOverrides.storyName = 'audio-player-overrides';
+AudioPlayerOverrides.parameters = {eyes: {waitBeforeCapture: 5000}};
 
 export const AudioPlayPauseButtonAutoplay = () => (
   <StyledPage>
@@ -1038,8 +1039,8 @@ export const AudioPlayPauseButtonAutoplay = () => (
     <AudioPlayerFullRecorded ariaLandmark="audio player autoplay" autoPlay />
   </StyledPage>
 );
-
 AudioPlayPauseButtonAutoplay.storyName = 'audio-play-pause-button-autoplay';
+AudioPlayPauseButtonAutoplay.parameters = {eyes: {waitBeforeCapture: 5000}};
 
 export const AudioPlayerKeyboard = () => (
   <StyledPage>
@@ -1314,3 +1315,4 @@ export const AudioPlayerVolumeControlLayout = () => (
 );
 
 AudioPlayerVolumeControlLayout.storyName = 'audio-player-volume-control-layout';
+AudioPlayerKeyboard.parameters = {eyes: {waitBeforeCapture: 5000}};

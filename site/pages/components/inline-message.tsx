@@ -3,8 +3,9 @@ import {
   InlineMessageProps,
   styled,
   InlineMessage,
-  IconFilledInfo,
+  toNewsKitIcon,
 } from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -16,6 +17,8 @@ import {
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const PlaygroundContainer = styled.div`
   display: flex;
