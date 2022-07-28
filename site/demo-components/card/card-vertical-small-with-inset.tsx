@@ -9,10 +9,14 @@ import {
   TextBlock,
   Headline,
   Flag,
-  IconFilledImage,
   Stack,
   Tag,
+  toNewsKitIcon,
 } from 'newskit';
+
+import {Image as FilledImage} from '@emotion-icons/material/Image';
+
+const IconFilledImage = toNewsKitIcon(FilledImage);
 
 const myCustomCardTheme = createTheme({
   name: 'my-custom-card-theme',
