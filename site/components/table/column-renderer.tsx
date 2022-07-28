@@ -150,26 +150,26 @@ export const renderCols = (
 
             if (!route) return v;
 
-            return v.includes('(') ? (
-              <>
-                <Link
-                  type="standalone"
-                  overrides={{typographyPreset: 'utilityButton020'}}
-                  href={route.id}
-                >
-                  {v.split('(')[0]}
-                </Link>
-                {` (${v.split('(')[1]}`}
-              </>
-            ) : (
+            const getLink = (value: string) => (
               <Link
                 type="standalone"
                 overrides={{typographyPreset: 'utilityButton020'}}
                 href={route.id}
               >
-                {v}
+                {value}
               </Link>
             );
+
+            if (v.includes('(')) {
+              const strArr = v.split('(');
+              return (
+                <>
+                  {getLink(strArr[0])}
+                  {` (${strArr[1]}`}
+                </>
+              );
+            }
+            return getLink(v);
           }, cellValue as string | string[]);
         break;
       }
