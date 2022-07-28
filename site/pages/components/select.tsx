@@ -895,8 +895,16 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       themes: true,
     }}
     related={{
-      introduction: '',
-      related: ['Form'],
+      related: [
+        'Button',
+        'Checkbox',
+        'Form',
+        'Radio Button',
+        'Share Bar',
+        'Slider',
+        'Text Field',
+        'Text Input',
+      ],
     }}
   />
 );

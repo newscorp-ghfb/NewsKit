@@ -384,8 +384,8 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
       uiKit: true,
     }}
     related={{
-      introduction: 'Components related to inline message',
-      related: ['Toast', 'Modal', 'Drawer'],
+      introduction: 'Components related to inline message.',
+      related: ['Banner', 'Flag', 'Progress Indicator', 'Toast'],
     }}
   />
 );

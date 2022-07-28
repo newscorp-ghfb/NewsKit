@@ -880,8 +880,16 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       themes: true,
     }}
     related={{
-      introduction: '',
-      related: ['Form', 'Checkbox'],
+      related: [
+        'Button',
+        'Checkbox',
+        'Form',
+        'Select',
+        'Share Bar',
+        'Slider',
+        'Text Field',
+        'Text Input',
+      ],
     }}
   />
 );

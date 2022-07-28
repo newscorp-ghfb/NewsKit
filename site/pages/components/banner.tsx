@@ -626,8 +626,8 @@ const BannerComponent = (layoutProps: LayoutProps) => (
       uiKit: true,
     }}
     related={{
-      introduction: 'Componenets related to Banner',
-      related: ['Drawer', 'Toast', 'Modal'],
+      introduction: 'Componenets related to Banner.',
+      related: ['Flag', 'Progress Indicator', 'Toast', 'Inline Message'],
     }}
   />
 );

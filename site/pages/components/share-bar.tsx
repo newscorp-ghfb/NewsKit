@@ -317,8 +317,16 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
       themes: true,
     }}
     related={{
-      introduction: '',
-      related: ['Button', 'Icon Button'],
+      related: [
+        'Button',
+        'Checkbox',
+        'Form',
+        'Radio Button',
+        'Select',
+        'Slider',
+        'Text Field',
+        'Text Input',
+      ],
     }}
   />
 );
