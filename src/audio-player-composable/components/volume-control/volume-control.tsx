@@ -89,7 +89,6 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
       layout={layout}
-      id="hello"
     >
       <StyledGridLayout
         ref={ref}
