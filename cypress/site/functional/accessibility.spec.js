@@ -11,6 +11,7 @@ describe('Page accessibility', () => {
       'baseUrl',
     )}${path}`, () => {
       cy.mockConsentAndVisit(path);
+      cy.wait(1000);
       cy.injectAxe();
       if (path === `/theme/foundation/fonts` || path === `/components/card`) {
         // The typography page is a showcase so we have disabled the heading order rule for this page.
