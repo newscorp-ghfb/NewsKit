@@ -19,11 +19,14 @@ const ReleaseHeader = ({
         {tag_name}
       </LinkStandalone>
     </Block>
-    <Block as="span" marginInlineStart="space020">
-      <TextBlock as="span">
-        {format(new Date(published_at), 'MMM d y')}
-      </TextBlock>
-    </Block>
+    <TextBlock
+      marginInlineStart="space020"
+      as="span"
+      stylePreset="inkSubtle"
+      typographyPreset="utilityBody030"
+    >
+      {format(new Date(published_at), 'MMM d y')}
+    </TextBlock>
     <Block as="span" marginInlineStart="space040">
       <ReleaseBadges change_level={change_level} />
     </Block>
