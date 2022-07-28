@@ -150,7 +150,18 @@ export const renderCols = (
 
             if (!route) return v;
 
-            return (
+            return v.includes('(') ? (
+              <>
+                <Link
+                  type="standalone"
+                  overrides={{typographyPreset: 'utilityButton020'}}
+                  href={route.id}
+                >
+                  {v.split('(')[0]}
+                </Link>
+                {` (${v.split('(')[1]}`}
+              </>
+            ) : (
               <Link
                 type="standalone"
                 overrides={{typographyPreset: 'utilityButton020'}}

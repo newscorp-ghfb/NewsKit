@@ -274,8 +274,20 @@ const BlockComponent = (layoutProps: LayoutProps) => (
       uiKit: true,
     }}
     related={{
-      introduction: 'Componenets related to Block',
-      related: ['Grid', 'Stack', 'Text Block'],
+      introduction: 'Componenets related to Block.',
+      related: [
+        'Aspect Ratio',
+        'Card',
+        'Divider',
+        'Drawer',
+        'Fieldset',
+        'Grid',
+        'Grid Layout',
+        'Modal',
+        'Stack',
+        'Structured List',
+        'Visibility',
+      ],
     }}
   />
 );

@@ -817,8 +817,8 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       uiKit: true,
     }}
     related={{
-      introduction: 'Componenets related to Menu',
-      related: ['Tabs', 'Link', 'Divider'],
+      introduction: 'Componenets related to Menu.',
+      related: ['Link', 'Tabs', 'Scroll'],
     }}
   />
 );
