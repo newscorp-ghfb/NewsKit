@@ -277,6 +277,50 @@ export const stylePresets = {
       whiteSpace: 'nowrap',
     },
   },
+  flagSolidMinor: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+
+      borderColor: '{{colors.neutral020}}',
+      color: '{{colors.inkSubtle}}',
+      backgroundColor: '{{colors.white}}',
+    },
+  },
+  flagSolidPatch: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+
+      borderColor: '{{colors.neutral020}}',
+      color: '{{colors.inkNonEssential}}',
+      backgroundColor: '{{colors.white}}',
+    },
+  },
+  flagSolidMajor: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+
+      borderColor: '{{colors.neutral080}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.neutral020}}',
+    },
+  },
+  flagSolidBreakingChange: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+
+      borderColor: '{{colors.red070}}',
+      color: '{{colors.inkNegative}}',
+      backgroundColor: '{{colors.red010}}',
+    },
+  },
 
   // Divider
 
