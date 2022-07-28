@@ -69,7 +69,6 @@ export const renderToFragmentWithTheme = renderToFragmentWithThemeFactory(
 );
 
 export {render, renderHook} from '@testing-library/react';
-// export {renderHook} from '@testing-library/react-hooks';
 
 export const renderWithThemeInBody = <T extends {}>(
   Component: React.ComponentType<T>,

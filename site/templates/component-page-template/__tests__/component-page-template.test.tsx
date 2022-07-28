@@ -59,6 +59,7 @@ const mandatoryProps: ComponentPageTemplateProps = {
     codeUrl: 'https://github.com/newscorp-ghfb/newskit',
     figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
   },
+  children: <div>Component Page Template content</div>,
 };
 
 describe('Component Page Template', () => {

@@ -12,7 +12,7 @@ import {
 } from 'newskit';
 
 export interface PropProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   name: string;
   type: string;
   enum?: any;

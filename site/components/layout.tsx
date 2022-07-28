@@ -214,7 +214,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
                       <MDXProvider
                         components={this.updatePropsForMarkdownElements()}
                       >
-                        <>{children}</>
+                        {children}
                       </MDXProvider>
                     </WrapperWithPadding>
                   </Cell>

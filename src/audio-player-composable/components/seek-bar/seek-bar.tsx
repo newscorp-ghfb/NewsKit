@@ -40,9 +40,8 @@ const ThemelessSeekBar = React.forwardRef<
       isDragged,
     }: {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      props: any;
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      children: any;
+      props: any; // react-range does not export IRenderTrackParams
+      children: React.ReactNode;
       isDragged: boolean;
     }) => {
       const sliderTrackStylePreset = getToken(

@@ -40,21 +40,21 @@ const mandatoryProps: FoundationPageTemplateProps = {
     hero: {src: 'static/component-hero.svg', alt: 'component-image'},
     introduction: 'Component Introduction',
   },
+  children: <div>Foundation template content</div>,
 };
 
 describe('Foundation Page Template', () => {
   test('renders with mandatory props only', () => {
-    const fragment = renderToFragmentWithTheme(FoundationPageTemplate, {
-      ...mandatoryProps,
-      children: <div>Foundation template content</div>,
-    });
+    const fragment = renderToFragmentWithTheme(
+      FoundationPageTemplate,
+      mandatoryProps,
+    );
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with feature card', () => {
     const fragment = renderToFragmentWithTheme(FoundationPageTemplate, {
       ...mandatoryProps,
-      children: <div>Foundation template content</div>,
       featureCard: {
         title: 'card title',
         description: 'card description',
