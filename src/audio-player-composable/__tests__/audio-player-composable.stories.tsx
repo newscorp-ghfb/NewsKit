@@ -191,105 +191,7 @@ const fullAudioPlayerLiveAreasMobile = `
   none        none      none      none      none      live
   volume      prev      backward  play      forward   next
 `;
-const AudioPlayerFullRecordedExpandableVolume = (props: {
-  ariaLandmark: string;
-  src?: string;
-  autoPlay?: boolean;
-}) => {
-  const breakpointKey = useBreakpointKey();
 
-  return (
-    <AudioPlayerComposable src={AUDIO_SRC} {...props}>
-      <GridLayout
-        columns={{
-          xs: '1fr auto auto auto 1fr',
-          md: '50px 1fr auto auto auto 1fr 50px',
-        }}
-        rowGap="space040"
-        columnGap="space040"
-        areas={{
-          xs: fullAudioPlayerAreasMobile,
-          md: fullAudioPlayerAreasDesktop,
-        }}
-      >
-        {Areas => (
-          <>
-            <Areas.Play alignSelf="center">
-              <AudioPlayerPlayPauseButton />
-            </Areas.Play>
-
-            <Areas.Backward alignSelf="center">
-              <AudioPlayerReplayButton />
-            </Areas.Backward>
-
-            <Areas.Forward alignSelf="center">
-              <AudioPlayerForwardButton />
-            </Areas.Forward>
-
-            <Areas.Prev alignSelf="center" justifySelf="end">
-              <AudioPlayerSkipPreviousButton
-                onClick={() => console.log('on skip Prev track')}
-              />
-            </Areas.Prev>
-
-            <Areas.Next alignSelf="center">
-              <AudioPlayerSkipNextButton
-                onClick={() => console.log('on skip Next track')}
-              />
-            </Areas.Next>
-
-            <Areas.Volume alignSelf="center" justifySelf="start">
-              <AudioPlayerVolumeControl
-                overrides={{
-                  transitionPreset: 'fade',
-                }}
-                layout={
-                  breakpointKey === 'xs'
-                    ? 'horizontalCollapsed'
-                    : 'horizontalExpandable'
-                }
-              />
-            </Areas.Volume>
-
-            <Areas.SeekBar>
-              <AudioPlayerSeekBar />
-            </Areas.SeekBar>
-
-            <Areas.CurrentTime>
-              <AudioPlayerTimeDisplay
-                format={({currentTime}) => calculateTime(currentTime)}
-              />
-            </Areas.CurrentTime>
-
-            <Areas.TotalTime justifySelf="end">
-              <AudioPlayerTimeDisplay
-                format={({duration}) => calculateTime(duration)}
-              />
-            </Areas.TotalTime>
-
-            <Areas.Link alignSelf="center" justifySelf="end">
-              <Hidden xs sm>
-                <IconButton
-                  aria-label="Open popout player"
-                  overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
-                  onClick={() => {
-                    window.open(
-                      'https://www.newskit.co.uk/',
-                      '',
-                      'width=380,height=665',
-                    );
-                  }}
-                >
-                  <IconFilledLaunch />
-                </IconButton>
-              </Hidden>
-            </Areas.Link>
-          </>
-        )}
-      </GridLayout>
-    </AudioPlayerComposable>
-  );
-};
 const AudioPlayerFullRecorded = (props: {
   ariaLandmark: string;
   src?: string;
@@ -342,7 +244,7 @@ const AudioPlayerFullRecorded = (props: {
                 layout={
                   breakpointKey === 'xs' || breakpointKey === 'sm'
                     ? 'horizontalCollapsed'
-                    : 'horizontalExpandable'
+                    : 'horizontal'
                 }
               />
             </Areas.Volume>
@@ -484,53 +386,49 @@ const AudioPlayerFullLive = (props: {
 const AudioPlayerInlineRecorded = (props: {
   ariaLandmark: string;
   src?: string;
-  layout?:
-    | 'horizontal'
-    | 'vertical'
-    | 'horizontalCollapsed'
-    | 'horizontalExpandable';
   overrides?: AudioPlayerVolumeControlOverridesProps;
-}) => (
-  // const breakpointKey = useBreakpointKey();
-
-  <AudioPlayerComposable src={AUDIO_SRC} {...props}>
-    <GridLayout
-      columns="auto auto 40px 1fr auto auto"
-      columnGap="space040"
-      alignItems="center"
-    >
-      <GridLayoutItem column="1/2" row="1/5">
-        <AudioPlayerVolumeControl
-          {...props}
-          // layout={
-          //   breakpointKey === 'xs'
-          //     ? 'horizontalCollapsed'
-          //     : 'horizontalExpandable'
-          // }
-        />
-      </GridLayoutItem>
-      <GridLayoutItem column="2/3" row="4/5">
-        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
-      </GridLayoutItem>
-      <GridLayoutItem column="3/4" row="4/5">
-        <AudioPlayerTimeDisplay
-          format={({currentTime}) => calculateTime(currentTime)}
-        />
-      </GridLayoutItem>
-      <GridLayoutItem column="4/5" row="4/5">
-        <AudioPlayerSeekBar />
-      </GridLayoutItem>
-      <GridLayoutItem column="5/6" row="4/5">
-        <AudioPlayerTimeDisplay
-          format={({duration}) => calculateTime(duration)}
-        />
-      </GridLayoutItem>
-      <GridLayoutItem column="6/7" row="4/5">
-        <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}} />
-      </GridLayoutItem>
-    </GridLayout>
-  </AudioPlayerComposable>
-);
+}) => {
+  const breakpointKey = useBreakpointKey();
+  return (
+    <AudioPlayerComposable src={AUDIO_SRC} {...props}>
+      <GridLayout
+        columns="auto auto 40px 1fr auto auto"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <GridLayoutItem column="1/2" row="1/5">
+          <AudioPlayerVolumeControl
+            {...props}
+            layout={
+              breakpointKey === 'xs'
+                ? 'horizontalCollapsed'
+                : 'horizontalExpandable'
+            }
+          />
+        </GridLayoutItem>
+        <GridLayoutItem column="2/3" row="4/5">
+          <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+        </GridLayoutItem>
+        <GridLayoutItem column="3/4" row="4/5">
+          <AudioPlayerTimeDisplay
+            format={({currentTime}) => calculateTime(currentTime)}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem column="4/5" row="4/5">
+          <AudioPlayerSeekBar />
+        </GridLayoutItem>
+        <GridLayoutItem column="5/6" row="4/5">
+          <AudioPlayerTimeDisplay
+            format={({duration}) => calculateTime(duration)}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem column="6/7" row="4/5">
+          <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}} />
+        </GridLayoutItem>
+      </GridLayout>
+    </AudioPlayerComposable>
+  );
+};
 const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
   <AudioPlayerComposable src={LIVE_AUDIO_SRC} live {...props}>
     <GridLayout
@@ -550,9 +448,6 @@ const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
 
 export const AudioPlayer = () => (
   <StyledPage>
-    <StorybookSubHeading> Audio Player expandable volume</StorybookSubHeading>
-    <AudioPlayerFullRecordedExpandableVolume ariaLandmark="test" />
-    <br />
     <StorybookSubHeading>Audio Player - full recorded</StorybookSubHeading>
     <AudioPlayerFullRecorded ariaLandmark="audio player full recorded" />
     <br />
@@ -561,36 +456,10 @@ export const AudioPlayer = () => (
     <br />
     <br />
     <StorybookSubHeading>
-      Audio Player - inline recorded-collapsed
-    </StorybookSubHeading>
-    <AudioPlayerInlineRecorded
-      ariaLandmark="audio player inline recorded"
-      layout="horizontalCollapsed"
-    />
-    <br />
-    <StorybookSubHeading>
       Audio Player - inline recorded-expanded
     </StorybookSubHeading>
     <AudioPlayerInlineRecorded ariaLandmark="audio player inline recorded" />
     <br />
-    <StorybookSubHeading>
-      Audio Player - inline recorded-horizontal
-    </StorybookSubHeading>
-    <AudioPlayerInlineRecorded
-      ariaLandmark="audio player inline recorded"
-      layout="horizontal"
-    />
-    <br />
-    <StorybookSubHeading>
-      Audio Player - inline recorded-expanded-transition preset override slide
-      left
-    </StorybookSubHeading>
-    <AudioPlayerInlineRecorded
-      ariaLandmark="audio player inline recorded"
-      overrides={{
-        transitionPreset: 'slideLeft',
-      }}
-    />
     <br />
     <StorybookSubHeading>Audio Player - inline live</StorybookSubHeading>
     <AudioPlayerInlineLive ariaLandmark="audio player inline live" />
@@ -1255,6 +1124,7 @@ export const AudioPlayerVolumeControlLayout = () => (
         </GridLayoutItem>
       </GridLayout>
     </AudioPlayerComposable>
+    <br />
     <StorybookSubHeading>
       Volume control horizontal-expandable
     </StorybookSubHeading>
@@ -1269,22 +1139,7 @@ export const AudioPlayerVolumeControlLayout = () => (
         </GridLayoutItem>
       </GridLayout>
     </AudioPlayerComposable>
-    <StorybookSubHeading>
-      Volume control horizontal-expandable-transition preset override-slide left
-    </StorybookSubHeading>
-    <AudioPlayerComposable src={AUDIO_SRC}>
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl
-            overrides={{transitionPreset: 'slideLeft'}}
-          />
-        </GridLayoutItem>
-      </GridLayout>
-    </AudioPlayerComposable>
+    <br />
     <StorybookSubHeading>
       Volume control horizontal-collapsed
     </StorybookSubHeading>
@@ -1299,6 +1154,7 @@ export const AudioPlayerVolumeControlLayout = () => (
         </GridLayoutItem>
       </GridLayout>
     </AudioPlayerComposable>
+    <br />
     <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
     <AudioPlayerComposable src={AUDIO_SRC}>
       <GridLayout
