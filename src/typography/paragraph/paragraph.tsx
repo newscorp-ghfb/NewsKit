@@ -5,7 +5,6 @@ import {
   getTypographyPreset,
   MQ,
   getStylePreset,
-  getResponsiveSpace,
 } from '../../utils/style';
 import defaults from './defaults';
 import {withOwnTheme} from '../../utils/with-own-theme';
@@ -21,8 +20,7 @@ export interface ParagraphProps {
     dropCap?: {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
-      space?: MQ<string>;
-    };
+    } & LogicalProps;
   } & LogicalProps;
 }
 
@@ -30,7 +28,7 @@ const ThemelessParagraphText = styled.p<ParagraphProps>`
   margin: 0;
   ${getStylePreset('paragraph', '')};
   ${getTypographyPreset('paragraph', '')};
-  ${logicalProps()}
+  ${logicalProps('paragraph', '')}
 `;
 export const ParagraphText = withOwnTheme(ThemelessParagraphText)({
   defaults,
@@ -41,11 +39,10 @@ We use this solution instead of css :first-letter since there is Firefox inconsi
 which causes the first letter to has less margin than desired.
 */
 const ThemelessParagraphDropCap = styled.span<ParagraphProps>`
-  margin: 0 0.15em 0 0;
   float: left;
-  ${getResponsiveSpace('marginTop', 'paragraph.dropCap', 'dropCap', 'space')};
   ${getTypographyPreset('paragraph.dropCap', 'dropCap')};
   ${getStylePreset('paragraph.dropCap', 'dropCap')};
+  ${logicalProps('paragraph.dropCap', 'dropCap')}
 `;
 export const ParagraphDropCap = withOwnTheme(ThemelessParagraphDropCap)({
   defaults,

@@ -46,7 +46,7 @@ export const StoryParagraph = () => (
     </P>
     <br />
     <StorybookSubHeading>
-      with drop cap and multiply children
+      with drop cap and multiple children
     </StorybookSubHeading>
     <P dropCap>
       This being <strong>Black History Month</strong>, last week was Politicians
@@ -56,6 +56,29 @@ export const StoryParagraph = () => (
       This being Black History Month, last week was
       <i>Politicians In Search Of An Eye-Catching Race-Related Policy Week</i>.
     </P>
+    <br />
+    <StorybookSubHeading>
+      with logical props applied to drop cap (overrides)
+    </StorybookSubHeading>
+    <P
+      overrides={{
+        dropCap: {
+          marginBlock: 'space030',
+          marginInline: 'space030',
+          paddingBlock: 'space030',
+          paddingInline: 'space030',
+        },
+      }}
+      dropCap
+    >
+      This being Black History Month, last week was Politicians In Search Of An
+      Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy Corbyn
+      had their own announcement, each seemingly benign and right-on, each
+      actually destructive and wrong-headed. This being Black History Month,
+      last week was Politicians In Search Of An Eye-Catching Race-Related Policy
+      Week.
+    </P>
+    <br />
     <br />
     <StorybookSubHeading>with Sup and Sub elements</StorybookSubHeading>
     <P>

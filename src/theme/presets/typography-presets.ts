@@ -337,14 +337,11 @@ typographyPresets.utilityButton030 = {
 
 // Dropcap
 typographyPresets.editorialDropCap010 = {
-  fontSize: '5.625em',
-  lineHeight: 0.85,
+  ...typographyPresets.editorialDisplay010,
 };
 typographyPresets.editorialDropCap020 = {
-  fontSize: '5.875em',
-  lineHeight: 0.85,
+  ...typographyPresets.editorialDisplay020,
 };
 typographyPresets.editorialDropCap030 = {
-  fontSize: '6em',
-  lineHeight: 0.85,
+  ...typographyPresets.editorialDisplay030,
 };
