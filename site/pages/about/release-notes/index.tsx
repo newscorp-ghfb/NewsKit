@@ -18,6 +18,7 @@ import ReleaseHeader from './release-header';
 import ReleaseNotes from './release-notes';
 import {addChangeLevelToReleases, fetchGitHubReleases} from './utils';
 import {ReleasesPageProps} from './types';
+import {FeatureCard} from '../../../components/feature-card';
 
 const PageIntroductionContainer = styled.div`
   ${getSizingCssFromTheme('marginTop', 'sizing100')};
@@ -82,6 +83,17 @@ const ReleaseNotesPage = ({
             </StructuredList>
           </ContentPrimary>
         </ContentSection>
+      </ComponentPageCell>
+      <ComponentPageCell>
+        <FeatureCard
+          title="Need help?"
+          description="Can't find what you're looking for?"
+          href="/about/contact-us"
+          layout="horizontal"
+          stylePrefix="needHelpCard"
+          buttonLabel="Get in touch"
+          buttonHref="/about/contact-us"
+        />
       </ComponentPageCell>
     </Layout>
   );
