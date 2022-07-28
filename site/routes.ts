@@ -510,6 +510,14 @@ export default [
             illustration: 'components/modal-illustration',
           },
           {
+            title: 'Popover',
+            page: true,
+            id: '/components/popover',
+            description:
+              'A Popover (also known as a Popper) is a layout component that displays non-critical information when a user clicks or taps on a UI element. ',
+            illustration: 'components/popover/hero',
+          },
+          {
             title: 'Stack',
             page: true,
             id: '/components/stack',
