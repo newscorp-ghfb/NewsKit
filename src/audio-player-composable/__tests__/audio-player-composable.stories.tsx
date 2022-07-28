@@ -1113,7 +1113,10 @@ AudioPlayerKeyboard.storyName = 'audio-keyboard-shortcuts';
 export const AudioPlayerVolumeControlLayout = () => (
   <StyledPage>
     <StorybookSubHeading>Volume control horizontal</StorybookSubHeading>
-    <AudioPlayerComposable src={AUDIO_SRC}>
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player volume control horizontal"
+    >
       <GridLayout
         columns="auto auto 40px 1fr auto auto"
         columnGap="space040"
@@ -1128,7 +1131,10 @@ export const AudioPlayerVolumeControlLayout = () => (
     <StorybookSubHeading>
       Volume control horizontal-expandable
     </StorybookSubHeading>
-    <AudioPlayerComposable src={AUDIO_SRC}>
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player volume control horizontal expanded"
+    >
       <GridLayout
         columns="auto auto 40px 1fr auto auto"
         columnGap="space040"
@@ -1143,7 +1149,10 @@ export const AudioPlayerVolumeControlLayout = () => (
     <StorybookSubHeading>
       Volume control horizontal-collapsed
     </StorybookSubHeading>
-    <AudioPlayerComposable src={AUDIO_SRC}>
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player volume control horizontal collapsed"
+    >
       <GridLayout
         columns="auto auto 40px 1fr auto auto"
         columnGap="space040"
@@ -1156,7 +1165,10 @@ export const AudioPlayerVolumeControlLayout = () => (
     </AudioPlayerComposable>
     <br />
     <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
-    <AudioPlayerComposable src={AUDIO_SRC}>
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player volume control vertical"
+    >
       <GridLayout
         columns="auto auto 40px 1fr auto auto"
         columnGap="space040"
