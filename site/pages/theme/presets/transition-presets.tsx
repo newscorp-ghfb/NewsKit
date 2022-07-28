@@ -320,6 +320,15 @@ const PRESETS = [
       </>
     ),
   },
+  {
+    example: getImage(
+      'theme/transition-presets/predefined-transition-presets/widthchange',
+    ),
+    token: 'widthChange',
+    description: 'Transition width from the initial state to the final state.',
+    implementation:
+      'Can be applied to components to achieve a width change when interacting eg. applied to the expandable horizontal volume control audio player subcomponent on hover or focus.',
+  },
 ];
 
 const USER_INTERACTION = [
