@@ -18,7 +18,7 @@ import {
 } from '../template-sections';
 
 export interface ComponentPageTemplateProps
-  extends Omit<TemplateProps, 'featureCard'> {
+  extends Omit<TemplateProps, 'featureCard' | 'children'> {
   layoutProps: LayoutProps;
   componentDefaultsKey: string;
   interactiveDemo?: InteractiveDemoSectionProps;
@@ -34,5 +34,6 @@ export interface ComponentPageTemplateProps
   compliance?: ComplianceSectionProps;
   related?: RelatedComponentsSectionProps;
   featureCard?: Partial<OnwardJourneySectionProps>;
+  children?: React.ReactNode;
   commonSection?: CommonSectionProps;
 }
