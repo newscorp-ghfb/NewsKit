@@ -381,6 +381,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 .emotion-17 {
   margin: 0;
   color: #2E2E2E;
+  display: inline-block;
 }
 
 .emotion-17 svg {
@@ -629,11 +630,11 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
             <div
               class="emotion-16"
             >
-              <p
+              <span
                 class="emotion-17"
               >
                 Example description 1
-              </p>
+              </span>
             </div>
             <div
               class="emotion-18"
@@ -692,11 +693,11 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
             <div
               class="emotion-16"
             >
-              <p
+              <span
                 class="emotion-17"
               >
                 Sections description 1
-              </p>
+              </span>
             </div>
             <div
               class="emotion-14"
@@ -758,11 +759,11 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
             <div
               class="emotion-16"
             >
-              <p
+              <span
                 class="emotion-17"
               >
                 Sections description 2
-              </p>
+              </span>
             </div>
             <div
               class="emotion-14"

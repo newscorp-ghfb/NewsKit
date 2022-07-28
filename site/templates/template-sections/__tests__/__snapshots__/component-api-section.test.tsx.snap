@@ -218,6 +218,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 .emotion-12 {
   margin: 0;
   color: #2E2E2E;
+  display: inline-block;
 }
 
 .emotion-12 svg {
@@ -367,11 +368,11 @@ exports[`ComponentAPISection renders section as expected 1`] = `
             <div
               class="emotion-11"
             >
-              <p
+              <span
                 class="emotion-12"
               >
                 Summary for the component variant
-              </p>
+              </span>
             </div>
             <div
               data-comp="NewsKit Tabs"

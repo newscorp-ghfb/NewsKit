@@ -35,6 +35,7 @@ export const ContentText: React.FC<ContentTextProps> = ({
             xs: 'editorialParagraph020',
             xl: 'editorialParagraph030',
           }}
+          as="span"
         >
           {children}
         </TextBlock>
