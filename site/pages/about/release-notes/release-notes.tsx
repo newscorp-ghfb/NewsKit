@@ -36,7 +36,7 @@ const addPRLinks = (body: string) =>
 
 const addProfileLinks = (body: string) =>
   body.replaceAll(
-    RegExp(`@[a-z\\d](?:[a-z\\d]|-(?=[a-z\\d])){0,38}`, 'g'),
+    RegExp(`@[a-zA-Z\\d](?:[a-zA-Z\\d]|-(?=[a-zA-Z\\d])){0,38}`, 'g'),
     (handle: string) => {
       const profileLink = `${GITHUB_URL}/${handle.split('@')[1]}`;
       return `[${handle}](${profileLink})`;
