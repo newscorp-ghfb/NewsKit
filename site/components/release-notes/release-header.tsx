@@ -1,9 +1,9 @@
 import React from 'react';
 import {Block, LinkStandalone, TextBlock} from 'newskit';
 import {format} from 'date-fns';
-import {FullRelease} from '../utils/types';
+import {FullRelease} from '../../utils/release-notes/types';
 import ReleaseBadges from './release-badges';
-import {GITHUB_URL, REPO} from '../utils/constants';
+import {GITHUB_URL, REPO} from '../../utils/release-notes/constants';
 
 const ReleaseHeader = ({
   tag_name,

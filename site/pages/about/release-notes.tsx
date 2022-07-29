@@ -7,18 +7,21 @@ import {
   StructuredListCell,
   StructuredListItem,
 } from 'newskit';
-import {ComponentPageCell} from '../../../components/layout-cells';
-import Layout, {LayoutProps} from '../../../components/layout';
+import {ComponentPageCell} from '../../components/layout-cells';
+import Layout, {LayoutProps} from '../../components/layout';
 import {
   ContentPrimary,
   ContentSection,
-} from '../../../components/content-structure';
-import ReleaseHeader from './components/release-header';
-import ReleaseNotes from './components/release-notes';
-import {addChangeLevelToReleases, fetchGitHubReleases} from './utils/functions';
-import {ReleasesPageProps} from './utils/types';
-import {PageTemplate} from '../../../templates/page-template';
-import {GITHUB_URL, REPO} from './utils/constants';
+} from '../../components/content-structure';
+import ReleaseHeader from '../../components/release-notes/release-header';
+import ReleaseNotes from '../../components/release-notes/release-notes';
+import {
+  addChangeLevelToReleases,
+  fetchGitHubReleases,
+} from '../../utils/release-notes/functions';
+import {ReleasesPageProps} from '../../utils/release-notes/types';
+import {PageTemplate} from '../../templates/page-template';
+import {GITHUB_URL, REPO} from '../../utils/release-notes/constants';
 
 const ReleaseNotesPage = ({
   path,

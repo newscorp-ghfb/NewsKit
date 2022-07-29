@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import {TextBlock} from 'newskit';
-import {FullRelease} from '../utils/types';
-import {GITHUB_URL, JIRA_URL, REPO} from '../utils/constants';
+import {FullRelease} from '../../utils/release-notes/types';
+import {GITHUB_URL, JIRA_URL, REPO} from '../../utils/release-notes/constants';
 
 const removeTriggerRelease = (body: string) =>
   body.replaceAll(

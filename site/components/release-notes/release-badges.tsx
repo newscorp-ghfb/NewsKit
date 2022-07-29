@@ -1,6 +1,6 @@
 import React from 'react';
 import {Block, Flag} from 'newskit';
-import {FullRelease, ReleaseBadge} from '../utils/types';
+import {FullRelease, ReleaseBadge} from '../../utils/release-notes/types';
 
 const releaseBadgePresets: {[key in ReleaseBadge]: string} = {
   patch: 'flagSolidPatch',
