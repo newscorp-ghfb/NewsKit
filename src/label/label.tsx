@@ -6,20 +6,18 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
-const ThemelessLabel = ({
-  size = 'medium' as TextFieldSize,
-  children,
-  state,
-  ...props
-}: LabelProps) => (
-  <StyledLabel
-    aria-disabled={state === 'disabled' ? true : undefined}
-    size={size}
-    state={state}
-    {...props}
-  >
-    {children}
-  </StyledLabel>
+const ThemelessLabel = React.forwardRef<HTMLLabelElement, LabelProps>(
+  ({size = 'medium' as TextFieldSize, children, state, ...props}, ref) => (
+    <StyledLabel
+      ref={ref}
+      aria-disabled={state === 'disabled' ? true : undefined}
+      size={size}
+      state={state}
+      {...props}
+    >
+      {children}
+    </StyledLabel>
+  ),
 );
 
 export const Label = withOwnTheme(ThemelessLabel)({defaults, stylePresets});

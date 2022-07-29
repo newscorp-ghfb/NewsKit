@@ -14,76 +14,78 @@ import {Popover} from '../../../popover';
 import {iconButtonOverrides, popoverOverrides, modalOverrides} from './utils';
 import {ButtonSize} from '../../../button';
 
-const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpeedControlProps> = React.memo(
-  props => {
-    const theme = useTheme();
+const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
+  HTMLHeadingElement,
+  AudioPlayerPlaybackSpeedControlProps
+>((props, ref) => {
+  const theme = useTheme();
 
-    const {getPlaybackSpeedControlProps} = useAudioPlayerContext();
-    const {
-      overrides,
-      onChange: setSpeed,
-      useModal,
-      playbackSpeed,
-      buttonSize = ButtonSize.Medium,
-    } = getPlaybackSpeedControlProps!(props);
+  const {getPlaybackSpeedControlProps} = useAudioPlayerContext();
+  const {
+    overrides,
+    onChange: setSpeed,
+    useModal,
+    playbackSpeed,
+    buttonSize = ButtonSize.Medium,
+  } = getPlaybackSpeedControlProps!(props);
 
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const renderInModal = checkBreakpointProp(useModal, useBreakpointKey());
-    const selectedOptionRef = useRef<HTMLButtonElement>(null);
+  const renderInModal = checkBreakpointProp(useModal, useBreakpointKey());
+  const selectedOptionRef = useRef<HTMLButtonElement>(null);
 
-    const playbackSpeedList = (
-      <PlaybackSpeedList
-        isInsideModal={renderInModal}
-        selectedOptionRef={selectedOptionRef}
-        playbackSpeed={playbackSpeed}
-        updateSpeed={setSpeed}
-        setIsOpen={setIsOpen}
-        overrides={overrides}
-        theme={theme}
-      />
-    );
+  const playbackSpeedList = (
+    <PlaybackSpeedList
+      isInsideModal={renderInModal}
+      selectedOptionRef={selectedOptionRef}
+      playbackSpeed={playbackSpeed}
+      updateSpeed={setSpeed}
+      setIsOpen={setIsOpen}
+      overrides={overrides}
+      theme={theme}
+    />
+  );
 
-    const dismissHandler = useCallback(() => {
-      setIsOpen(false);
-    }, []);
+  const dismissHandler = useCallback(() => {
+    setIsOpen(false);
+  }, []);
 
-    return (
-      <>
-        <Popover
-          open={isOpen && !renderInModal}
-          content={playbackSpeedList}
-          header={undefined}
-          closePosition="none"
-          onDismiss={dismissHandler}
-          enableDismiss
-          focusElementRef={selectedOptionRef}
-          overrides={popoverOverrides(theme, overrides)}
+  return (
+    <>
+      <Popover
+        ref={ref}
+        open={isOpen && !renderInModal}
+        content={playbackSpeedList}
+        header={undefined}
+        closePosition="none"
+        onDismiss={dismissHandler}
+        enableDismiss
+        focusElementRef={selectedOptionRef}
+        overrides={popoverOverrides(theme, overrides)}
+      >
+        <IconButton
+          aria-label="playback speed"
+          data-testid="audio-player-playback-speed-control"
+          overrides={iconButtonOverrides(theme, overrides)}
+          onClick={() => setIsOpen(open => !open)}
+          size={buttonSize}
         >
-          <IconButton
-            aria-label="playback speed"
-            data-testid="audio-player-playback-speed-control"
-            overrides={iconButtonOverrides(theme, overrides)}
-            onClick={() => setIsOpen(open => !open)}
-            size={buttonSize}
-          >
-            <IconFilledSlowMotionVideo />
-          </IconButton>
-        </Popover>
+          <IconFilledSlowMotionVideo />
+        </IconButton>
+      </Popover>
 
-        {renderInModal && (
-          <Modal
-            open={isOpen}
-            onDismiss={dismissHandler}
-            overrides={modalOverrides(theme, overrides)}
-          >
-            {playbackSpeedList}
-          </Modal>
-        )}
-      </>
-    );
-  },
-);
+      {renderInModal && (
+        <Modal
+          open={isOpen}
+          onDismiss={dismissHandler}
+          overrides={modalOverrides(theme, overrides)}
+        >
+          {playbackSpeedList}
+        </Modal>
+      )}
+    </>
+  );
+});
 
 export const AudioPlayerPlaybackSpeedControl = withOwnTheme(
   ThemelessAudioPlayerPlaybackSpeedControl,

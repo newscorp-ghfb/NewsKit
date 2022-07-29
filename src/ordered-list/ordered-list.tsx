@@ -37,17 +37,17 @@ const List = styled.ol<Pick<OrderedListProps, 'overrides'>>`
   ${logicalProps()}
 `;
 
-const ThemelessOrderedList: React.FC<OrderedListProps> = ({
-  children,
-  overrides,
-}) => (
-  <List role="list" overrides={overrides}>
+const ThemelessOrderedList = React.forwardRef<
+  HTMLOListElement,
+  OrderedListProps
+>(({children, overrides}, ref) => (
+  <List ref={ref} role="list" overrides={overrides}>
     {React.Children.map(children, node =>
       isValidNode(node) ? (
         <ListItem overrides={overrides}>{node}</ListItem>
       ) : null,
     )}
   </List>
-);
+));
 
 export const OrderedList = withOwnTheme(ThemelessOrderedList)({defaults});
