@@ -995,4 +995,9 @@ export const stylePresets = {
       backgroundPosition: 'bottom left',
     },
   },
+  gitHubMarkDownText: {
+    base: {
+      color: '{{colors.inkBase}}',
+    },
+  },
 };

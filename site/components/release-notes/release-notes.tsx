@@ -50,7 +50,10 @@ const addTicketLinks = (body: string) =>
   });
 
 const ReleaseNotes = ({body}: Pick<FullRelease, 'body'>) => (
-  <TextBlock typographyPreset="editorialParagraph030">
+  <TextBlock
+    typographyPreset="editorialParagraph030"
+    stylePreset="gitHubMarkDownText"
+  >
     <ReactMarkdown>
       {removeComments(
         addPRLinks(
