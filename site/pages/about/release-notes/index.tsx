@@ -5,6 +5,9 @@ import {
   StructuredListItem,
   StructuredListCell,
   styled,
+  Block,
+  IconFilledGitHub,
+  Button,
 } from 'newskit';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import Layout, {LayoutProps} from '../../../components/layout';
@@ -16,7 +19,12 @@ import {
 } from '../../../components/content-structure';
 import ReleaseHeader from './release-header';
 import ReleaseNotes from './release-notes';
-import {addChangeLevelToReleases, fetchGitHubReleases} from './utils';
+import {
+  addChangeLevelToReleases,
+  fetchGitHubReleases,
+  GITHUB_URL,
+  REPO,
+} from './utils';
 import {ReleasesPageProps} from './types';
 import {FeatureCard} from '../../../components/feature-card';
 
@@ -81,19 +89,32 @@ const ReleaseNotesPage = ({
                 ),
               )}
             </StructuredList>
+            <Block paddingBlockStart="space090">
+              <Button
+                size="small"
+                overrides={{
+                  typographyPreset: 'utilityButton010',
+                  stylePreset: 'buttonOutlinedSecondary',
+                }}
+                href={`${GITHUB_URL}/${REPO}/releases`}
+                target="_blank"
+              >
+                <IconFilledGitHub /> View all previous releases
+              </Button>
+            </Block>
           </ContentPrimary>
         </ContentSection>
-      </ComponentPageCell>
-      <ComponentPageCell>
-        <FeatureCard
-          title="Need help?"
-          description="Can't find what you're looking for?"
-          href="/about/contact-us"
-          layout="horizontal"
-          stylePrefix="needHelpCard"
-          buttonLabel="Get in touch"
-          buttonHref="/about/contact-us"
-        />
+        <Block paddingBlockEnd="space090">
+          <FeatureCard
+            title="Need help?"
+            description="Can't find what you're looking for?"
+            href="/about/contact-us"
+            layout="horizontal"
+            stylePrefix="needHelpCard"
+            buttonLabel="Get in touch"
+            buttonHref="/about/contact-us"
+          />
+        </Block>
       </ComponentPageCell>
     </Layout>
   );
