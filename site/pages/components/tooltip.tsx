@@ -566,27 +566,27 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
             },
             {
               attribute: 'panel.paddingBlockStart',
-              type: '',
-              default: '',
-              description: '',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical block start padding of the container. This space token can also be used on breakpoints',
             },
             {
               attribute: 'panel.paddingBlockEnd',
-              type: '',
-              default: '',
-              description: '',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical block end padding of the container. This space token can also be used on breakpoints.',
             },
             {
               attribute: 'panel.paddingInlineStart',
-              type: '',
-              default: '',
-              description: '',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical inline start padding of the container. This space token can also be used on breakpoints.',
             },
             {
               attribute: 'panel.paddingInlineEnd',
-              type: '',
-              default: '',
-              description: '',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical inline end padding of the container. This space token can also be used on breakpoints.',
             },
             {
               attribute: 'pointer.size',
