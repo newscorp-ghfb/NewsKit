@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import {Block} from 'newskit';
+import {TextBlock} from 'newskit';
 import {FullRelease} from './types';
 import {GITHUB_URL, JIRA_URL, REPO} from './utils';
 
@@ -50,7 +50,7 @@ const addTicketLinks = (body: string) =>
   });
 
 const ReleaseNotes = ({body}: Pick<FullRelease, 'body'>) => (
-  <Block>
+  <TextBlock typographyPreset="editorialParagraph030">
     <ReactMarkdown>
       {removeComments(
         addPRLinks(
@@ -60,7 +60,7 @@ const ReleaseNotes = ({body}: Pick<FullRelease, 'body'>) => (
         ),
       )}
     </ReactMarkdown>
-  </Block>
+  </TextBlock>
 );
 
 export default ReleaseNotes;
