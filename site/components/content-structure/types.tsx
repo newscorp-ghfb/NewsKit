@@ -42,4 +42,6 @@ export type ContentTertiaryProps = Omit<
 export type ContentSectionProps = {
   children: React.ReactNode;
   sectionName?: string;
+  toc?: string;
+  id?: string;
 };
