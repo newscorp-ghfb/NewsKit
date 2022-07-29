@@ -1,0 +1,346 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReleaseHeader renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: inline-block;
+  color: #3358CC;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-1 svg {
+  fill: #3358CC;
+}
+
+.emotion-1:hover:not(:disabled) {
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+.emotion-1:active:not(:disabled) {
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1:active:not(:disabled) svg {
+  fill: #213A82;
+}
+
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-8 {
+  margin: 0;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+  -webkit-margin-start: 8px;
+  margin-inline-start: 8px;
+}
+
+.emotion-8 svg {
+  fill: #535353;
+}
+
+.emotion-8::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-8::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-9 {
+  -webkit-margin-start: 16px;
+  margin-inline-start: 16px;
+}
+
+.emotion-10 {
+  -webkit-margin-end: 8px;
+  margin-inline-end: 8px;
+}
+
+.emotion-11 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+.emotion-11 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-14 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-14::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-14::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<div>
+    <span
+      class="emotion-0"
+    >
+      <a
+        class="emotion-1"
+        href="https://github.com/newscorp-ghfb/newskit/releases/tag/v5.7.0"
+      >
+        <span
+          class="emotion-2"
+        >
+          <span
+            class="emotion-3"
+          >
+            <span
+              class="emotion-4"
+            >
+              v5.7.0
+            </span>
+          </span>
+          <span
+            class="emotion-3"
+          >
+            <svg
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                External link
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+              />
+            </svg>
+          </span>
+        </span>
+      </a>
+    </span>
+    <span
+      class="emotion-8"
+    >
+      Mock Date
+    </span>
+    <span
+      class="emotion-9"
+    >
+      <span
+        class="emotion-10"
+      >
+        <div
+          class="emotion-11"
+          data-testid="flag"
+        >
+          <div
+            class="emotion-12"
+          >
+            <div
+              class="emotion-3"
+            >
+              <span
+                class="emotion-14"
+              >
+                Patch
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </span>
+  </div>
+</DocumentFragment>
+`;

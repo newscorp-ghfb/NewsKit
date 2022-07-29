@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReleaseNotes renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-0::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-0::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+<p
+    class="emotion-0"
+  >
+    
+\\r\\n
+\\r\\n
+## What's Changed\\r\\n
+### New Features 🎉\\r\\n
+* feat([PPDSC-2151](https://nidigitalsolutions.jira.com/browse/PPDSC-2151)): Add Outline Style Presets by [@tbradbury](https://github.com/tbradbury) in [#214](https://github.com/newscorp-ghfb/newskit/pull/214)\\r\\n
+* feat([PPDSC-2121](https://nidigitalsolutions.jira.com/browse/PPDSC-2121)): \`&lt;Popover/&gt;\` header close by [@mstuartf](https://github.com/mstuartf) in [#239](https://github.com/newscorp-ghfb/newskit/pull/239)\\r\\n
+### Bug Fixes 🐛\\r\\n
+* fix([PPDSC-2164](https://nidigitalsolutions.jira.com/browse/PPDSC-2164)): assistive text by [@mstuartf](https://github.com/mstuartf) in [#249](https://github.com/newscorp-ghfb/newskit/pull/249)\\r\\n
+### Other Changes 🧱\\r\\n
+* ci([PPDSC-2292](https://nidigitalsolutions.jira.com/browse/PPDSC-2292)): attempt fix of develoment env by [@jps](https://github.com/jps) in [#285](https://github.com/newscorp-ghfb/newskit/pull/285)\\r\\n
+\\r\\n
+## New Contributors\\r\\n
+* [@agagotowiec](https://github.com/agagotowiec) made their first contribution in [#238](https://github.com/newscorp-ghfb/newskit/pull/238)\\r\\n
+\\r\\n
+**Full Changelog**: [https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...v5.7.0](https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...v5.7.0)
+
+  </p>
+</DocumentFragment>
+`;
