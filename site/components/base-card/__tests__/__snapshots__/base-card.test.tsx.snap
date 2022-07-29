@@ -79,6 +79,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-6 svg {
@@ -274,6 +275,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-7 svg {
@@ -422,6 +424,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-6 svg {
@@ -604,6 +607,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-7 svg {

@@ -148,6 +148,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-5 svg {

@@ -216,6 +216,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-16 svg {
@@ -532,6 +533,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-16 svg {

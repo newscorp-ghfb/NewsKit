@@ -1,4 +1,5 @@
 import {Block} from '../block';
+import {TextBlock} from '../text-block';
 import {logicalProps} from '../utils/logical-properties';
 import {getStylePreset, styled} from '../utils/style';
 import {UnorderedListProps} from './types';
@@ -41,4 +42,8 @@ export const StyledMarkerBlock = styled(Block)<
   img {
     display: block;
   }
+`;
+
+export const StyledTextBlock = styled(TextBlock)`
+  display: block;
 `;

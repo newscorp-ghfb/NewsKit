@@ -5,6 +5,7 @@ import {
   GridLayoutItem,
   MQ,
   TextBlock,
+  styled,
 } from 'newskit';
 import React, {useMemo} from 'react';
 import {ContentBaseProps} from './types';
@@ -13,6 +14,10 @@ export enum ContentColSpan {
   FULL = 12,
   TEXT = 10,
 }
+
+const StyledTextBlock = styled(TextBlock)`
+  display: block;
+`;
 
 const fullGridColumns = `auto / span ${ContentColSpan.FULL}`;
 
@@ -70,9 +75,9 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
 
       {description && (
         <GridLayoutItem column={textColumns}>
-          <TextBlock as="span" {...descriptionOverrides}>
+          <StyledTextBlock as="span" {...descriptionOverrides}>
             {description}
-          </TextBlock>
+          </StyledTextBlock>
           {children && <Block spaceStack={descriptionSpace} />}
         </GridLayoutItem>
       )}

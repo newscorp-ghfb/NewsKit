@@ -10,6 +10,7 @@ exports[`ContentText renders with only the description 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-1 svg {
@@ -233,6 +234,7 @@ exports[`ContentText renders with title and description 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-1 svg {

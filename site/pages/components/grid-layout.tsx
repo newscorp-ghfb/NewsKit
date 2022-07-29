@@ -21,6 +21,10 @@ const StyledBlock = styled(Block)`
   display: block;
 `;
 
+const StyledTextBlock = styled(TextBlock)`
+  display: block;
+`;
+
 const GridLayoutComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
@@ -37,19 +41,19 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
       },
       introduction: (
         <>
-          <TextBlock
+          <StyledTextBlock
             typographyPreset="editorialHeadline040"
             style={{color: 'red'}}
             as="span"
           >
             This component is a beta, this documentation page is still a work in
             progress.
-          </TextBlock>
+          </StyledTextBlock>
           <StyledBlock as="span" spaceStack="space030" />
-          <TextBlock as="span">
+          <StyledTextBlock as="span">
             Used to construct a visual grid for responsive page layout. A Proxy
             for CSS grid.
-          </TextBlock>
+          </StyledTextBlock>
         </>
       ),
     }}

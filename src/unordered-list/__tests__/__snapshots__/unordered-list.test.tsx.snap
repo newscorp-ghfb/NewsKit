@@ -67,6 +67,7 @@ exports[`UnorderedList renders different types of children 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-3 svg {
@@ -420,6 +421,7 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-6 svg {
@@ -648,6 +650,7 @@ exports[`UnorderedList renders with custom list item marker with different size 
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-6 svg {
@@ -810,6 +813,7 @@ exports[`UnorderedList renders with defaults 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-3 svg {
@@ -909,6 +913,7 @@ exports[`UnorderedList renders with defaults when marker is incorrect 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-3 svg {
@@ -1078,6 +1083,7 @@ exports[`UnorderedList renders with logical props 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-6 svg {
@@ -1306,6 +1312,7 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-6 svg {
@@ -1534,6 +1541,7 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-6 svg {

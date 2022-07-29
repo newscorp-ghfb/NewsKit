@@ -125,6 +125,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-7 svg {
@@ -219,6 +220,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-11 svg {

@@ -1,7 +1,11 @@
 import React from 'react';
-import {Block, Headline, TextBlock} from 'newskit';
+import {Block, Headline, TextBlock, styled} from 'newskit';
 import {BaseCardProps} from './types';
 import {StyledCard} from './styled';
+
+const StyledTextBlock = styled(TextBlock)`
+  display: block;
+`;
 
 export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
   ({title, description, children, href, overrides, ...rest}, ref) => {
@@ -43,13 +47,13 @@ export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
             </Headline>
           </Block>
         )}
-        <TextBlock
+        <StyledTextBlock
           typographyPreset="editorialParagraph020"
           stylePreset="inkBase"
           as="span"
         >
           {description}
-        </TextBlock>
+        </StyledTextBlock>
       </StyledCard>
     );
   },

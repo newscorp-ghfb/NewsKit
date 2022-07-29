@@ -1,9 +1,13 @@
 import React from 'react';
-import {Block, Card, TextBlock, Headline, Divider} from 'newskit';
+import {Block, Card, TextBlock, Headline, Divider, styled} from 'newskit';
 import {IconFilledCheckCircle} from '../icons/icon-filled-check-circle';
 import {IconFilledCrossCircle} from '../icons/icon-filled-cross-circle';
 import {KindConfig, UsageCardProps, UsageKind} from './types';
 import {RelativeBlock, AbsoluteBlock} from './styled';
+
+const StyledTextBlock = styled(TextBlock)`
+  display: block;
+`;
 
 const kindMap: Record<string, KindConfig> = {
   do: {
@@ -64,13 +68,13 @@ export const UsageCard: React.FC<UsageCardProps> = ({
           </Headline>
         </Block>
         <Block spaceStack="space040">
-          <TextBlock
+          <StyledTextBlock
             stylePreset="inkBase"
             typographyPreset="editorialParagraph020"
             as="span"
           >
             {description}
-          </TextBlock>
+          </StyledTextBlock>
         </Block>
       </Card>
     </RelativeBlock>

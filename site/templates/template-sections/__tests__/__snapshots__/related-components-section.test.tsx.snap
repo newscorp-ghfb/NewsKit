@@ -125,6 +125,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-7 svg {
@@ -273,6 +274,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-17 svg {

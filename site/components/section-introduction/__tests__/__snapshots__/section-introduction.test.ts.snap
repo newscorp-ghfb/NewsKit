@@ -176,6 +176,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-7 svg {

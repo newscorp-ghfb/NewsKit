@@ -4,6 +4,7 @@ import {
   getMediaQueryFromTheme,
   getStylePresetFromTheme,
   styled,
+  TextBlock,
 } from 'newskit';
 import {Link} from '../link';
 
@@ -47,4 +48,8 @@ export const StyledCardLink = styled(Link)`
   > span > div {
     width: 100%;
   }
+`;
+
+export const StyledTextBlock = styled(TextBlock)`
+  display: block;
 `;

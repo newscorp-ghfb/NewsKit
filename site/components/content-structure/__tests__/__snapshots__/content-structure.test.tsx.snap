@@ -91,6 +91,7 @@ exports[`Content Primary renders with description and children 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-2 svg {
@@ -309,6 +310,7 @@ exports[`Content Primary renders with description only 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-2 svg {
@@ -825,6 +827,7 @@ exports[`Content Primary renders with headline and description 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-5 svg {
@@ -1309,6 +1312,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-5 svg {
@@ -1609,6 +1613,7 @@ exports[`Content Secondary renders with description and children 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-2 svg {
@@ -1827,6 +1832,7 @@ exports[`Content Secondary renders with description only 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-2 svg {
@@ -2341,6 +2347,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-5 svg {
@@ -2821,6 +2828,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-5 svg {
@@ -3139,6 +3147,7 @@ exports[`Content Tertiary renders with description and children 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-2 svg {
@@ -3357,6 +3366,7 @@ exports[`Content Tertiary renders with description only 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-2 svg {
@@ -3871,6 +3881,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-5 svg {
@@ -4351,6 +4362,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
   margin: 0;
   color: #2E2E2E;
   display: inline-block;
+  display: block;
 }
 
 .emotion-5 svg {

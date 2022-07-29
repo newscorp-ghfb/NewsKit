@@ -248,6 +248,7 @@ exports[`Media List renders with custom layout 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-12 svg {
@@ -709,6 +710,7 @@ exports[`Media List renders with default layout 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-12 svg {
@@ -1207,6 +1209,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   margin: 0;
   color: rgba(255,255,255,0.8);
   display: inline-block;
+  display: block;
 }
 
 .emotion-16 svg {
@@ -2170,6 +2173,7 @@ exports[`Media List renders with usage cards 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
+  display: block;
 }
 
 .emotion-20 svg {
