@@ -440,6 +440,14 @@ export default [
             illustration:
               'components/inline-message/inline-message-illustration',
           },
+          {
+            title: 'Tooltip',
+            page: true,
+            id: '/components/tooltip',
+            description:
+              'A Tooltip is a feedback component that displays a short, informational message when a user hovers over or focuses on a UI element. ',
+            illustration: 'components/tooltip/hero',
+          },
         ],
       },
       {
