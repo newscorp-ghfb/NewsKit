@@ -13,16 +13,12 @@ import {
   ContentPrimary,
   ContentSection,
 } from '../../../components/content-structure';
-import ReleaseHeader from './release-header';
-import ReleaseNotes from './release-notes';
-import {
-  addChangeLevelToReleases,
-  fetchGitHubReleases,
-  GITHUB_URL,
-  REPO,
-} from './utils';
-import {ReleasesPageProps} from './types';
+import ReleaseHeader from './components/release-header';
+import ReleaseNotes from './components/release-notes';
+import {addChangeLevelToReleases, fetchGitHubReleases} from './utils/functions';
+import {ReleasesPageProps} from './utils/types';
 import {PageTemplate} from '../../../templates/page-template';
+import {GITHUB_URL, REPO} from './utils/constants';
 
 const ReleaseNotesPage = ({
   path,

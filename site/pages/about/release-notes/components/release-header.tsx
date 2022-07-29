@@ -1,13 +1,10 @@
 import React from 'react';
 import {Block, LinkStandalone, TextBlock} from 'newskit';
 import {format} from 'date-fns';
-import {FullRelease} from './types';
+import {FullRelease} from '../utils/types';
 import ReleaseBadges from './release-badges';
-import {GITHUB_URL, REPO} from './utils';
+import {GITHUB_URL, REPO} from '../utils/constants';
 
-// todo: change_level badge
-// todo: link to version
-// todo: format date
 const ReleaseHeader = ({
   tag_name,
   published_at,

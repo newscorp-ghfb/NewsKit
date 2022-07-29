@@ -1,10 +1,6 @@
 import {diff} from 'semver';
-import {Release, FullRelease} from './types';
-
-export const GITHUB_URL = 'https://github.com';
-export const GITHUB_API_URL = 'https://api.github.com';
-export const REPO = 'newscorp-ghfb/newskit';
-export const JIRA_URL = `https://nidigitalsolutions.jira.com`;
+import {FullRelease, Release} from './types';
+import {GITHUB_API_URL, REPO} from './constants';
 
 export async function fetchGitHubReleases(per_page: number = 10) {
   const res = await fetch(
