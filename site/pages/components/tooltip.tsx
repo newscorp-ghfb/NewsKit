@@ -571,6 +571,12 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
               description: '',
             },
             {
+              attribute: 'panel.paddingBlockEnd',
+              type: '',
+              default: '',
+              description: '',
+            },
+            {
               attribute: 'panel.paddingInlineStart',
               type: '',
               default: '',
