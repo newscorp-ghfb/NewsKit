@@ -14,12 +14,10 @@ import {
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
 
-const ThemelessUnorderedList: React.FC<UnorderedListProps> = ({
-  children,
-  listItemMarker: ListItemMarker,
-  markerAlign,
-  overrides,
-}) => {
+const ThemelessUnorderedList = React.forwardRef<
+  HTMLUListElement,
+  UnorderedListProps
+>(({children, listItemMarker: ListItemMarker, markerAlign, overrides}, ref) => {
   const theme = useTheme();
   const itemSpaceToken = getToken(
     {theme, overrides},
@@ -59,7 +57,7 @@ const ThemelessUnorderedList: React.FC<UnorderedListProps> = ({
   );
 
   return (
-    <StyledUl overrides={overrides} role="list">
+    <StyledUl ref={ref} overrides={overrides} role="list">
       {React.Children.map(children, node => {
         if (!isValidNode(node)) return null;
 
@@ -92,7 +90,7 @@ const ThemelessUnorderedList: React.FC<UnorderedListProps> = ({
       })}
     </StyledUl>
   );
-};
+});
 
 export const UnorderedList = withOwnTheme(ThemelessUnorderedList)({
   defaults,
