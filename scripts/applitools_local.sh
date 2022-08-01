@@ -13,6 +13,25 @@ if [[ "$STATUS" != *"Your branch is up to date with 'origin/${BRANCH_NAME}'."* ]
   exit 1
 fi
 
+# guide the user to only running a subset of tests to keep usage down
+if [[ $1 = "comps" ]]; then
+  CONFIG_FILE="applitools.components.config.js"
+  DOCS_LINK="https://www.npmjs.com/package/@applitools/eyes-storybook"
+else
+  CONFIG_FILE="applitools.config.js"
+  DOCS_LINK="https://www.npmjs.com/package/@applitools/eyes-cypress"
+fi
+
+echo "If you have not added an include prop in ${CONFIG_FILE}, all ${1} tests will run."$'\n'
+echo "See ${DOCS_LINK}"$'\n'
+read -r -p "Proceed? (y/n) " response
+if [[ $response =~ ^(yes|y) ]] || [[ -z $response ]]; then
+  break
+else
+  echo Aborting
+  exit 1
+fi
+
 # ask the user to input their API key
 read -p "Enter your API key (you can find this in the Applitools UI): " apiKey
 
@@ -32,7 +51,3 @@ else
   echo "Running doc site tests..."
   yarn e2e:visual:docs:ci
 fi
-
-# todo: move to scripts
-# todo: update readme (also explain how to run subset)
-# todo: test git logic on new branch (inc that batch detail are set on applitools)
