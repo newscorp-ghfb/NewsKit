@@ -26,7 +26,7 @@ echo "If you have not added an include prop in ${CONFIG_FILE}, all ${1} tests wi
 echo "See ${DOCS_LINK}"$'\n'
 read -r -p "Proceed? (y/n) " response
 if [[ $response =~ ^(yes|y) ]] || [[ -z $response ]]; then
-  break
+  :
 else
   echo Aborting
   exit 1
