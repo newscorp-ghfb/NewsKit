@@ -16,15 +16,14 @@ const StyledText = styled.h2<StandfirstProps>`
   ${({as}) => as && (isInlineElement(as) ? 'display: inline-block' : '')}
 `;
 
-const ThemelessStandfirst: React.FC<StandfirstProps> = ({
-  children,
-  as,
-  overrides = {},
-}) => (
-  <StyledText as={as} overrides={overrides}>
+const ThemelessStandfirst = React.forwardRef<
+  HTMLHeadingElement,
+  StandfirstProps
+>(({children, as, overrides = {}}, ref) => (
+  <StyledText ref={ref} as={as} overrides={overrides}>
     {children}
   </StyledText>
-);
+));
 
 export const Standfirst = withOwnTheme(ThemelessStandfirst)({
   defaults,
