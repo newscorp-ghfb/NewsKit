@@ -326,9 +326,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
     />
     <ComplianceSection usage accessibility seo props />
     <RelatedComponentsSection
-      introduction="Componenets related to Visible, Hidden and ScreenReaderOnly."
       related={[
-        'Aspect Ratio',
         'Block',
         'Card',
         'Divider',
@@ -337,6 +335,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
         'Grid',
         'Grid Layout',
         'Modal',
+        'Popover',
         'Stack',
         'Structured List',
       ]}

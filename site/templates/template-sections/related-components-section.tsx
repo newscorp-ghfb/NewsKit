@@ -26,7 +26,7 @@ export const RelatedComponentsSection: React.FC<RelatedComponentsSectionProps> =
   ...next
 }) => (
   <CommonSection
-    title={next.title || 'Related Components'}
+    title={next.title || 'Related components'}
     toc={next.toc || 'Related'}
     id={next.id || 'related'}
     introduction={introduction}

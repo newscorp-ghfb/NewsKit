@@ -935,9 +935,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         'Form',
         'Radio Button',
         'Select',
-        'Share Bar',
         'Slider',
-        'Text Input',
       ],
     }}
   />

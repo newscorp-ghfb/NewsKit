@@ -325,7 +325,6 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
         'Select',
         'Slider',
         'Text Field',
-        'Text Input',
       ],
     }}
   />

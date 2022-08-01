@@ -553,7 +553,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       uiKit: true,
     }}
     related={{
-      related: ['Link', 'Scroll', 'Menu', 'Tabs'],
+      related: ['Link', 'Menu', 'Scroll', 'Tabs', 'Tags', 'Title Bar'],
     }}
   />
 );

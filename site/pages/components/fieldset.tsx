@@ -284,7 +284,6 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
     }}
     related={{
       related: [
-        'Aspect Ratio',
         'Block',
         'Card',
         'Divider',
@@ -292,6 +291,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
         'Grid',
         'Grid Layout',
         'Modal',
+        'Popover',
         'Stack',
         'Structured List',
         'Visibility',

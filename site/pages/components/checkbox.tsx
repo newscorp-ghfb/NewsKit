@@ -899,10 +899,8 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         'Form',
         'Radio Button',
         'Select',
-        'Share Bar',
         'Slider',
         'Text Field',
-        'Text Input',
       ],
     }}
   />

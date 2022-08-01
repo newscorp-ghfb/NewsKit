@@ -649,7 +649,6 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
     }}
     related={{
       related: [
-        'Aspect Ratio',
         'Block',
         'Card',
         'Divider',
@@ -657,6 +656,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
         'Grid',
         'Grid Layout',
         'Modal',
+        'Popover',
         'Stack',
         'Structured List',
         'Visibility',

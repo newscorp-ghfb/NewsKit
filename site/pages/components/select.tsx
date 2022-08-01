@@ -900,10 +900,8 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         'Checkbox',
         'Form',
         'Radio Button',
-        'Share Bar',
         'Slider',
         'Text Field',
-        'Text Input',
       ],
     }}
   />

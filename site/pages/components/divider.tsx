@@ -185,7 +185,6 @@ const DividerComponent = (layoutProps: LayoutProps) => (
     }}
     related={{
       related: [
-        'Aspect Ratio',
         'Block',
         'Card',
         'Drawer',
@@ -193,6 +192,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         'Grid',
         'Grid Layout',
         'Modal',
+        'Popover',
         'Stack',
         'Structured List',
         'Visibility',

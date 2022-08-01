@@ -59,16 +59,6 @@ const PRINCIPLE_CARDS = [
   },
 ] as MediaItem[];
 
-const whatNextCards = [
-  {
-    media: getIllustrationComponent('guides/design-quickstart/hero'),
-    title: 'Design quickstart guide',
-    description:
-      'A step by step guide to get you up and running using NewsKit.',
-    href: '/getting-started/design/design-quickstart',
-  },
-];
-
 const DesignOverview = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
@@ -317,7 +307,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     journeys, competitor analysis, and more.
                     <Block spaceStack="space050" />
                     <Link
-                      href="https://www.figma.com/file/iH4aqnno7MHwUMUW1QUr4S/%5BProduct%2FBrand-Name%5D-UX-project-template?node-id=0%3A1"
+                      href="https://www.figma.com/file/uMSITiPijbFBVQl09zzVHm/%5BProduct%2FBrand-Name%5D-UX-project-template?node-id=0%3A1"
                       target="_blank"
                     >
                       View the UX project template file in Figma (internal only)
@@ -337,7 +327,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     prototype, handoff, and more.
                     <Block spaceStack="space050" />
                     <Link
-                      href="https://www.figma.com/file/BnIKQwut4dqqrfghSlsRV1/%5BProduct%2FBrand-Name%5D-UI-project-template?node-id=0%3A1"
+                      href="https://www.figma.com/file/BcPZjnYcouOOAdDVrt6H95/%5BProduct%2FBrand-Name%5D-UI-project-template?node-id=0%3A1"
                       target="_blank"
                     >
                       View the UI project template file in Figma (internal only)
@@ -430,21 +420,6 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
               },
             ]}
-          />
-        </ContentPrimary>
-      </ContentSection>
-
-      <ContentSection sectionName="what’s next?">
-        <ContentPrimary
-          id="whatsnext"
-          toc="What’s next?"
-          headline="What’s next?"
-          description="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
-          showSeparator
-        >
-          <MediaList
-            cards={whatNextCards}
-            gridProps={{xsRowGutter: 'space050'}}
           />
         </ContentPrimary>
       </ContentSection>

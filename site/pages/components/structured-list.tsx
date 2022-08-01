@@ -554,7 +554,6 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
     }}
     related={{
       related: [
-        'Aspect Ratio',
         'Block',
         'Card',
         'Divider',
@@ -563,6 +562,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         'Grid',
         'Grid Layout',
         'Modal',
+        'Popover',
         'Stack',
         'Visibility',
       ],

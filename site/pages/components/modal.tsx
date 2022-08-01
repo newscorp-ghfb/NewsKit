@@ -668,7 +668,6 @@ const ModalComponent = (layoutProps: LayoutProps) => (
     }}
     related={{
       related: [
-        'Aspect Ratio',
         'Block',
         'Card',
         'Divider',
@@ -676,6 +675,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
         'Fieldset',
         'Grid',
         'Grid Layout',
+        'Popover',
         'Stack',
         'Structured List',
         'Visibility',

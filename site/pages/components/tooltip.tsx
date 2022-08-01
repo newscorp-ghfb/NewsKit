@@ -647,7 +647,13 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       uiKit: true,
     }}
     related={{
-      related: ['Popover', 'Modal'],
+      related: [
+        'Banner',
+        'Flag',
+        'Progress Indicator',
+        'Toast',
+        'Inline Message',
+      ],
     }}
   />
 );
