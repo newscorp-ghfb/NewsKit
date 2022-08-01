@@ -44,6 +44,9 @@ export APPLITOOLS_API_KEY=$apiKey
 # make sure the batch closes after running
 export APPLITOOLS_DONT_CLOSE_BATCHES=false
 
+# once the tests start, warn the user that force quitting may lead to an unclosed batch
+trap 'echo "Force quitting means that a batch may have been created but not closed. If so, tests in the next run for this commit will be added to the same batch. To prevent this you can close the batch using CURL or delete it in the Applitools UI."' INT
+
 if [[ "$1" == "comps" ]]; then
   echo "Running component tests..."
   yarn test:visual:comps:ci
