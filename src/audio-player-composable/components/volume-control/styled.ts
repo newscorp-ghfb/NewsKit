@@ -64,7 +64,7 @@ export const StyledGridLayout = styled(GridLayout)<
   ${({layout}) =>
     getResponsiveSpace(
       layout === 'vertical' ? 'rowGap' : 'columnGap',
-      `audioPlayerVolumeControl.${layout}.spaceBetween`,
+      `audioPlayerVolumeControl.spaceBetween`,
       '',
       'spaceBetween',
     )};

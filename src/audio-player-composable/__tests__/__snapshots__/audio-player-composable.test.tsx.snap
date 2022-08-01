@@ -2473,6 +2473,8 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
 }
 
 .emotion-2 {
@@ -2966,6 +2968,8 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
 }
 
 .emotion-2 {
@@ -3413,6 +3417,8 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
 }
 
 .emotion-2 {
@@ -3906,6 +3912,8 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
 }
 
 .emotion-2 {
@@ -4399,6 +4407,8 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
 }
 
 .emotion-2 {
@@ -4892,6 +4902,8 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
 }
 
 .emotion-2 {
@@ -5385,6 +5397,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
 }
 
 .emotion-2 {
@@ -6259,6 +6273,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  row-gap: 12px;
 }
 
 .emotion-2 {
@@ -7319,6 +7334,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
 }
 
 .emotion-17 {
@@ -9617,6 +9634,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
 }
 
 .emotion-16 {

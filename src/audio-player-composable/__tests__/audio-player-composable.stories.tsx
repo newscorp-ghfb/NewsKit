@@ -1117,15 +1117,7 @@ export const AudioPlayerVolumeControlLayout = () => (
       src={AUDIO_SRC}
       ariaLandmark="audio player volume control horizontal"
     >
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl layout="horizontal" />
-        </GridLayoutItem>
-      </GridLayout>
+      <AudioPlayerVolumeControl layout="horizontal" />
     </AudioPlayerComposable>
     <br />
     <StorybookSubHeading>
