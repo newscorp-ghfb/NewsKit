@@ -878,16 +878,25 @@ Object {
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap010": Object {
-      "fontSize": "5.625em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize120}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap020": Object {
-      "fontSize": "5.875em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap030": Object {
-      "fontSize": "6em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize140}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline010": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
@@ -2095,7 +2104,16 @@ Object {
   },
   "paragraph": Object {
     "dropCap": Object {
-      "space": "space010",
+      "paddingBlockEnd": Object {
+        "lg": "space040",
+        "md": "space030",
+        "xs": "space020",
+      },
+      "paddingInlineEnd": Object {
+        "lg": "space040",
+        "md": "space030",
+        "xs": "space020",
+      },
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
         "lg": "editorialDropCap030",
