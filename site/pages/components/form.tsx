@@ -107,6 +107,19 @@ const FormComponent = (layoutProps: LayoutProps) => (
       ],
       rows: [],
     }}
+    tutorial={{
+      introduction:
+        'Learn how to use the form component effectively using the tutorial below.',
+      cards: [
+        {
+          title: 'Form tutorial',
+          description:
+            'Tutorial for engineers to build a form using the form sub components.',
+          href: '/components/form/',
+          media: getIllustrationComponent('components/form/tutorials'),
+        },
+      ],
+    }}
   />
 );
 
