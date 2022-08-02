@@ -160,7 +160,7 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-10"
+        id="ref-floating-ui-13"
         type="button"
       >
         <div
@@ -1877,6 +1877,460 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 </DocumentFragment>
 `;
 
+exports[`Audio Player Composable Playback Speed should render correctly with custom trigger 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
+  z-index: 80;
+  min-width: 140px;
+  position: absolute;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+}
+
+.emotion-3 {
+  grid-area: content;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+.emotion-4 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  padding-block: 4px;
+}
+
+.emotion-6 {
+  width: 100%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 48px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  padding-inline: 12px;
+  padding-block: 8px;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-6:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-6:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-6:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-6:selected:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-6:selected:focus:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #3358CC;
+}
+
+.emotion-6:selected:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-6:selected:focus:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-6:selected:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-8 {
+  width: 100%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #E0E7FF;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 48px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  padding-inline: 12px;
+  padding-block: 8px;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-8:focus:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #3358CC;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-9 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3358CC;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-9:selected:hover:not(:disabled) {
+  fill: #3358CC;
+}
+
+.emotion-9:selected:focus:not(:disabled) {
+  fill: #3358CC;
+}
+
+.emotion-9:selected:active:not(:disabled) {
+  fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-9.emotion-9 {
+  width: 24px;
+  height: 24px;
+  fill: #3358CC;
+}
+
+.emotion-9.emotion-9:selected:hover:not(:disabled) {
+  fill: #3358CC;
+}
+
+.emotion-9.emotion-9:selected:focus:not(:disabled) {
+  fill: #3358CC;
+}
+
+.emotion-9.emotion-9:selected:active:not(:disabled) {
+  fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9.emotion-9 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9.emotion-9 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-14 {
+  z-index: -1;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  bottom: calc(-16px / 2);
+}
+
+<div>
+    <section
+      aria-label="Audio Player"
+    >
+      <audio
+        data-testid="audio-element"
+        src="/audio_file_1.mp3"
+      />
+      <button
+        aria-controls="floating-floating-ui-8"
+        aria-haspopup="dialog"
+        data-testid="audio-player-playback-speed-custom-trigger"
+        id="ref-floating-ui-7"
+        type="button"
+      >
+        Trigger
+      </button>
+      <div
+        aria-labelledby="ref-floating-ui-7"
+        class="nk-popover-enter-done emotion-0"
+        id="floating-floating-ui-8"
+        role="dialog"
+        tabindex="-1"
+      >
+        <div
+          class="emotion-1"
+          data-testid="floating-element-panel"
+          tabindex="-1"
+        >
+          <div
+            class="emotion-2"
+          >
+            <div
+              class="emotion-3"
+            >
+              <span
+                class="emotion-4"
+                id="mock-nk-1"
+              >
+                Press down arrow key to navigate to the first item
+              </span>
+              <div
+                aria-describedby="mock-nk-1"
+                aria-label="playback speed"
+                class="emotion-5"
+                role="menu"
+              >
+                <button
+                  aria-checked="false"
+                  class="emotion-6"
+                  role="menuitemradio"
+                  tabindex="-1"
+                >
+                  0.5x
+                </button>
+                <button
+                  aria-checked="false"
+                  class="emotion-6"
+                  role="menuitemradio"
+                  tabindex="-1"
+                >
+                  0.8x
+                </button>
+                <button
+                  aria-checked="true"
+                  class="emotion-8"
+                  role="menuitemradio"
+                  tabindex="0"
+                >
+                  1x
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-9 emotion-10"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-checked="false"
+                  class="emotion-6"
+                  role="menuitemradio"
+                  tabindex="-1"
+                >
+                  1.2x
+                </button>
+                <button
+                  aria-checked="false"
+                  class="emotion-6"
+                  role="menuitemradio"
+                  tabindex="-1"
+                >
+                  1.5x
+                </button>
+                <button
+                  aria-checked="false"
+                  class="emotion-6"
+                  role="menuitemradio"
+                  tabindex="-1"
+                >
+                  2x
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-14"
+          id="floating-floating-ui-8-pointer"
+        />
+      </div>
+    </section>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  />
+</DocumentFragment>
+`;
+
 exports[`Audio Player Composable Playback Speed should render correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -2318,12 +2772,12 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-floating-ui-8"
+        aria-controls="floating-floating-ui-11"
         aria-haspopup="dialog"
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-7"
+        id="ref-floating-ui-10"
         type="button"
       >
         <div
@@ -2352,9 +2806,9 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         </div>
       </button>
       <div
-        aria-labelledby="ref-floating-ui-7"
+        aria-labelledby="ref-floating-ui-10"
         class="nk-popover-enter-done emotion-5"
-        id="floating-floating-ui-8"
+        id="floating-floating-ui-11"
         role="dialog"
         tabindex="-1"
       >
@@ -2451,7 +2905,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         </div>
         <div
           class="emotion-19"
-          id="floating-floating-ui-8-pointer"
+          id="floating-floating-ui-11-pointer"
         />
       </div>
     </section>

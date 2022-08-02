@@ -46,6 +46,7 @@ export interface AudioPlayerProviderContext {
   loading: boolean;
   audioRef: React.RefObject<HTMLAudioElement>;
   audioSectionRef: React.RefObject<HTMLDivElement>;
+  playbackSpeed: number;
   togglePlay: () => void;
 
   // Getter functions

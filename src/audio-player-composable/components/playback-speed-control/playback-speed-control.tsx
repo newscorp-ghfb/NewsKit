@@ -63,15 +63,31 @@ const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
         focusElementRef={selectedOptionRef}
         overrides={popoverOverrides(theme, overrides)}
       >
-        <IconButton
-          aria-label="playback speed"
-          data-testid="audio-player-playback-speed-control"
-          overrides={iconButtonOverrides(theme, overrides)}
-          onClick={() => setIsOpen(open => !open)}
-          size={buttonSize}
-        >
-          <IconFilledSlowMotionVideo />
-        </IconButton>
+        {props.children ? (
+          // If there are children, trigger the open state
+          // on click and pass the original onClick handler
+          React.cloneElement(props.children, {
+            onClick: () => {
+              setIsOpen(open => !open);
+              if (
+                props.children &&
+                typeof props.children.props.onClick === 'function'
+              ) {
+                props.children.props.onClick();
+              }
+            },
+          })
+        ) : (
+          <IconButton
+            aria-label="playback speed"
+            data-testid="audio-player-playback-speed-control"
+            overrides={iconButtonOverrides(theme, overrides)}
+            onClick={() => setIsOpen(open => !open)}
+            size={buttonSize}
+          >
+            <IconFilledSlowMotionVideo />
+          </IconButton>
+        )}
       </Popover>
 
       {renderInModal && (

@@ -294,6 +294,7 @@ export const AudioPlayerComposable = ({
     () => ({
       audioRef,
       audioSectionRef,
+      playbackSpeed,
       togglePlay,
       // Props function getter
       getPlayPauseButtonProps,
@@ -307,7 +308,7 @@ export const AudioPlayerComposable = ({
       getPlaybackSpeedControlProps,
     }),
     [
-      getVolumeControlProps,
+      playbackSpeed,
       togglePlay,
       getPlayPauseButtonProps,
       getTimeDisplayProps,
@@ -316,6 +317,7 @@ export const AudioPlayerComposable = ({
       getSkipNextButtonProps,
       getForwardButtonProps,
       getReplayButtonProps,
+      getVolumeControlProps,
       getPlaybackSpeedControlProps,
     ],
   );
