@@ -1108,8 +1108,8 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.red010}}",
-        "borderColor": "{{colors.red070}}",
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.inkNegative}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -1123,7 +1123,7 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.neutral020}}",
+        "backgroundColor": "{{colors.interfaceNotice020}}",
         "borderColor": "{{colors.neutral080}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
@@ -1134,7 +1134,7 @@ Object {
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -1163,7 +1163,7 @@ Object {
     "flagSolidPatch": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -1222,6 +1222,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -3547,8 +3552,8 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.red010}}",
-        "borderColor": "{{colors.red070}}",
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.inkNegative}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -3562,7 +3567,7 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.neutral020}}",
+        "backgroundColor": "{{colors.interfaceNotice020}}",
         "borderColor": "{{colors.neutral080}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
@@ -3573,7 +3578,7 @@ Object {
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -3602,7 +3607,7 @@ Object {
     "flagSolidPatch": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -3661,6 +3666,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -5989,8 +5999,8 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.red010}}",
-        "borderColor": "{{colors.red070}}",
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.inkNegative}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -6004,7 +6014,7 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.neutral020}}",
+        "backgroundColor": "{{colors.interfaceNotice020}}",
         "borderColor": "{{colors.neutral080}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
@@ -6015,7 +6025,7 @@ Object {
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -6044,7 +6054,7 @@ Object {
     "flagSolidPatch": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -6103,6 +6113,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -8428,8 +8443,8 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.red010}}",
-        "borderColor": "{{colors.red070}}",
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.inkNegative}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -8443,7 +8458,7 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.neutral020}}",
+        "backgroundColor": "{{colors.interfaceNotice020}}",
         "borderColor": "{{colors.neutral080}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
@@ -8454,7 +8469,7 @@ Object {
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -8483,7 +8498,7 @@ Object {
     "flagSolidPatch": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -8542,6 +8557,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -10870,8 +10890,8 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.red010}}",
-        "borderColor": "{{colors.red070}}",
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.inkNegative}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -10885,7 +10905,7 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.neutral020}}",
+        "backgroundColor": "{{colors.interfaceNotice020}}",
         "borderColor": "{{colors.neutral080}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
@@ -10896,7 +10916,7 @@ Object {
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -10925,7 +10945,7 @@ Object {
     "flagSolidPatch": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -10984,6 +11004,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -13309,8 +13334,8 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.red010}}",
-        "borderColor": "{{colors.red070}}",
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.inkNegative}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -13324,7 +13349,7 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.neutral020}}",
+        "backgroundColor": "{{colors.interfaceNotice020}}",
         "borderColor": "{{colors.neutral080}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
@@ -13335,7 +13360,7 @@ Object {
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -13364,7 +13389,7 @@ Object {
     "flagSolidPatch": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -13423,6 +13448,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -15751,8 +15781,8 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.red010}}",
-        "borderColor": "{{colors.red070}}",
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.inkNegative}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -15766,7 +15796,7 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.neutral020}}",
+        "backgroundColor": "{{colors.interfaceNotice020}}",
         "borderColor": "{{colors.neutral080}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
@@ -15777,7 +15807,7 @@ Object {
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -15806,7 +15836,7 @@ Object {
     "flagSolidPatch": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -15865,6 +15895,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -18190,8 +18225,8 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.red010}}",
-        "borderColor": "{{colors.red070}}",
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.inkNegative}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -18205,7 +18240,7 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.neutral020}}",
+        "backgroundColor": "{{colors.interfaceNotice020}}",
         "borderColor": "{{colors.neutral080}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
@@ -18216,7 +18251,7 @@ Object {
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -18245,7 +18280,7 @@ Object {
     "flagSolidPatch": Object {
       "base": Object {
         "backgroundColor": "{{colors.white}}",
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -18304,6 +18339,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {

@@ -283,7 +283,7 @@ export const stylePresets = {
       borderWidth: '{{borders.borderWidth010}}',
       borderStyle: 'solid',
 
-      borderColor: '{{colors.neutral020}}',
+      borderColor: '{{colors.interfaceNeutral020}}',
       color: '{{colors.inkSubtle}}',
       backgroundColor: '{{colors.white}}',
     },
@@ -294,7 +294,7 @@ export const stylePresets = {
       borderWidth: '{{borders.borderWidth010}}',
       borderStyle: 'solid',
 
-      borderColor: '{{colors.neutral020}}',
+      borderColor: '{{colors.interfaceNeutral020}}',
       color: '{{colors.inkNonEssential}}',
       backgroundColor: '{{colors.white}}',
     },
@@ -307,7 +307,7 @@ export const stylePresets = {
 
       borderColor: '{{colors.neutral080}}',
       color: '{{colors.inkContrast}}',
-      backgroundColor: '{{colors.neutral020}}',
+      backgroundColor: '{{colors.interfaceNotice020}}',
     },
   },
   flagSolidBreakingChange: {
@@ -316,9 +316,9 @@ export const stylePresets = {
       borderWidth: '{{borders.borderWidth010}}',
       borderStyle: 'solid',
 
-      borderColor: '{{colors.red070}}',
+      borderColor: '{{colors.inkNegative}}',
       color: '{{colors.inkNegative}}',
-      backgroundColor: '{{colors.red010}}',
+      backgroundColor: '{{colors.interfaceNegative020}}',
     },
   },
 
