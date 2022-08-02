@@ -80,6 +80,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   const gridColumns = layout === 'vertical' ? '1fr' : 'auto 1fr';
   const [volumeSliderInstructionId] = useReactKeys(1);
   const [open, setOpen] = useState(false);
+  // makes sure feedback element is fully visible and not cropped when slider is open
   const [isVisible, setIsVisible] = React.useState(false);
 
   return (
