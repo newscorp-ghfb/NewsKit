@@ -33,12 +33,12 @@ import {
   IconFilledGraphicEq,
   IconFilledStarOutline,
   IconFilledCancel,
+  IconFilledSlowMotionVideo,
 } from '../../icons';
 import {useBreakpointKey} from '../../utils/hooks';
 import {Flag} from '../../flag';
 import {styled} from '../../utils';
 import {Button} from '../../button';
-import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 const StyledPage = styled.div`
   padding-left: 20px;
@@ -148,24 +148,6 @@ const myCustomTheme = createTheme({
         hover: {
           opacity: '{{overlays.opacity020}}',
         },
-      },
-      customAudioPlayerPlaybackSpeedControlTrigger: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidth010}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkBase}}',
-          iconColor: '{{colors.inkBase}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.interactiveInput010}}',
-        },
-        active: {
-          backgroundColor: '{{colors.interactiveInput020}}',
-        },
-        'focus-visible': defaultFocusVisible,
       },
     },
   },
@@ -458,7 +440,10 @@ const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
   </AudioPlayerComposable>
 );
 
-const AudioPlayerPlaybackSpeedTriggerComponent = () => {
+const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
+  withLeadingIcon?: boolean;
+}) => {
+  const {withLeadingIcon = false} = props;
   const {playbackSpeed} = useAudioPlayerContext();
 
   return (
@@ -491,11 +476,12 @@ const AudioPlayerPlaybackSpeedTriggerComponent = () => {
           <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}}>
             <Button
               overrides={{
-                minWidth: 'space040',
-                stylePreset: 'customAudioPlayerPlaybackSpeedControlTrigger',
+                stylePreset: 'buttonOutlinedSecondary',
+                minWidth: '80px',
               }}
-              size={ButtonSize.Medium}
+              size={ButtonSize.Small}
             >
+              {withLeadingIcon ? <IconFilledSlowMotionVideo /> : null}
               <span>{playbackSpeed}x</span>
             </Button>
           </AudioPlayerPlaybackSpeedControl>
@@ -602,13 +588,10 @@ export const AudioSubComponents = () => (
             </StorybookSubHeading>
             <AudioPlayerPlaybackSpeedControl>
               <Button
-                overrides={{
-                  minWidth: 'space040',
-                  stylePreset: 'customAudioPlayerPlaybackSpeedControlTrigger',
-                }}
-                size={ButtonSize.Medium}
+                overrides={{stylePreset: 'buttonOutlinedSecondary'}}
+                size={ButtonSize.Small}
               >
-                Trigger
+                Speed
               </Button>
             </AudioPlayerPlaybackSpeedControl>
           </GridLayoutItem>
@@ -988,14 +971,26 @@ AudioPlayPauseButtonAutoplay.parameters = {eyes: {waitBeforeCapture: 5000}};
 export const AudioPlayerPlaybackSpeedTriggerButton = () => (
   <StyledPage>
     <StorybookHeading>
-      Audio Player - playback speed control trigger override
+      Audio Player - playback speed control trigger overrides
     </StorybookHeading>
     <div style={{marginTop: 300}}>
+      <StorybookSubHeading>
+        playback speed control custom trigger button
+      </StorybookSubHeading>
       <AudioPlayerComposable
         ariaLandmark="audio player custom playback trigger"
         src={AUDIO_SRC}
       >
         <AudioPlayerPlaybackSpeedTriggerComponent />
+      </AudioPlayerComposable>
+      <StorybookSubHeading>
+        playback speed control custom trigger button with a leading icon
+      </StorybookSubHeading>
+      <AudioPlayerComposable
+        ariaLandmark="audio player custom playback trigger"
+        src={AUDIO_SRC}
+      >
+        <AudioPlayerPlaybackSpeedTriggerComponent withLeadingIcon />
       </AudioPlayerComposable>
     </div>
   </StyledPage>
