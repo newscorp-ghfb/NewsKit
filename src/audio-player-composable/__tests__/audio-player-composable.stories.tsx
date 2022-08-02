@@ -991,7 +991,10 @@ export const AudioPlayerPlaybackSpeedTriggerButton = () => (
       Audio Player - playback speed control trigger override
     </StorybookHeading>
     <div style={{marginTop: 300}}>
-      <AudioPlayerComposable src={AUDIO_SRC}>
+      <AudioPlayerComposable
+        ariaLandmark="audio player custom playback trigger"
+        src={AUDIO_SRC}
+      >
         <AudioPlayerPlaybackSpeedTriggerComponent />
       </AudioPlayerComposable>
     </div>
