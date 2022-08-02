@@ -39,6 +39,8 @@ const Container = styled.div`
   max-width: 1024px;
   max-height: 768px;
   overflow: hidden;
+  padding: 16px;
+  box-sizing: border-box;
 `;
 const Background = ({children}) => (
   <BackgroundColor>

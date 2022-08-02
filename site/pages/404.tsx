@@ -1,9 +1,12 @@
 import React from 'react';
-import {Block, Cell, IconFilledKeyboardArrowLeft, Image} from 'newskit';
+import {Block, Cell, Image, toNewsKitIcon} from 'newskit';
+import {KeyboardArrowLeft as FilledKeyboardArrowLeft} from '@emotion-icons/material/KeyboardArrowLeft';
 import {ContentPrimary, ContentSection} from '../components/content-structure';
 import Layout, {LayoutProps} from '../components/layout';
 import {HeadNextSeo} from '../components/head-next-seo';
 import {Link} from '../components/link';
+
+const IconFilledKeyboardArrowLeft = toNewsKitIcon(FilledKeyboardArrowLeft);
 
 const Custom404 = ({path, ...props}: LayoutProps) => (
   <Layout {...props} hideSidebar path={`${path}-new`}>

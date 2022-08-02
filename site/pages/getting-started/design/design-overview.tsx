@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block} from 'newskit*';
+import {Block} from 'newskit';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';

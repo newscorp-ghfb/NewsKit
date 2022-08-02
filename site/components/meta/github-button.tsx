@@ -1,5 +1,7 @@
 import React from 'react';
-import {Button, ButtonSize, IconFilledGitHub} from 'newskit';
+import {Button, ButtonSize} from 'newskit';
+
+import {IconFilledGitHub} from '../icons/icon-filled-github';
 
 export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
   href ? (

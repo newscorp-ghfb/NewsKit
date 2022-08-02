@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, IconFilledGitHub, Block} from 'newskit';
+import {Button, Block} from 'newskit';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
@@ -21,6 +21,7 @@ import {
   ContentSection,
   ContentPrimary,
 } from '../../../components/content-structure';
+import {IconFilledGitHub} from '../../../components/icons/icon-filled-github';
 
 const featureCardoverrides = {
   title: {

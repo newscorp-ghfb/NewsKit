@@ -440,6 +440,14 @@ export default [
             illustration:
               'components/inline-message/inline-message-illustration',
           },
+          {
+            title: 'Tooltip',
+            page: true,
+            id: '/components/tooltip',
+            description:
+              'A Tooltip is a feedback component that displays a short, informational message when a user hovers over or focuses on a UI element. ',
+            illustration: 'components/tooltip/hero',
+          },
         ],
       },
       {
@@ -517,6 +525,14 @@ export default [
             description:
               'A Modal is a layout panel that presents critical information or requests users input without navigating away from the current page.',
             illustration: 'components/modal-illustration',
+          },
+          {
+            title: 'Popover',
+            page: true,
+            id: '/components/popover',
+            description:
+              'A Popover (also known as a Popper) is a layout component that displays non-critical information when a user clicks or taps on a UI element. ',
+            illustration: 'components/popover/hero',
           },
           {
             title: 'Stack',

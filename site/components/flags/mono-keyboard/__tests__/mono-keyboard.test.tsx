@@ -18,21 +18,6 @@ jest.mock('../../mono', () => ({
   Mono: mockComp('Mono'),
 }));
 
-jest.mock(
-  'newskit',
-  require('../../../../utils/test-utils').mockNewsKitComponents(
-    'IconFilledAdd',
-    'IconOutlinedKeyboardArrowDown',
-    'IconOutlinedKeyboardArrowLeft',
-    'IconOutlinedKeyboardArrowRight',
-    'IconOutlinedKeyboardArrowUp',
-    'IconOutlinedKeyboardBackspace',
-    'IconOutlinedKeyboardReturn',
-    'IconOutlinedKeyboardTab',
-    'IconOutlinedSpaceBar',
-  ),
-);
-
 describe('MonoKeyboard', () => {
   describe('with single key', () => {
     it('should render with no icon for unrecognised key', () => {
@@ -51,18 +36,13 @@ describe('MonoKeyboard', () => {
       ['Space', 'IconOutlinedSpaceBar'],
       ['Tab', 'IconOutlinedKeyboardTab'],
       ['Up', 'IconOutlinedKeyboardArrowUp'],
-    ].forEach(([key, icon], i) => {
+    ].forEach(([key, icon]) => {
       it(`should render the ${icon} for the ${key} key`, () => {
         const dom = renderWithTheme(MonoKeyboard, {
           children: key,
         });
 
-        if (i === 0) {
-          // Check one, don't need to snapshot every single one
-          expect(dom.asFragment()).toMatchSnapshot();
-        }
-
-        expect(dom.getByTestId(icon)).toBeDefined();
+        expect(dom.asFragment()).toMatchSnapshot();
       });
     });
   });
