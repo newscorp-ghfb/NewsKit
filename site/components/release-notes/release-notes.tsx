@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import {TextBlock, styled, getSizingCssFromTheme} from 'newskit';
+import {
+  TextBlock,
+  styled,
+  getSizingCssFromTheme,
+  LinkStandalone,
+} from 'newskit';
 import {FullRelease} from '../../utils/release-notes/types';
 import {GITHUB_URL, JIRA_URL, REPO} from '../../utils/release-notes/constants';
 
@@ -65,7 +70,18 @@ const ReleaseNotes = ({body}: Pick<FullRelease, 'body'>) => (
       typographyPreset="editorialParagraph030"
       stylePreset="gitHubMarkDownText"
     >
-      <ReactMarkdown>
+      <ReactMarkdown
+        components={{
+          a: ({href, children}) => (
+            <LinkStandalone
+              overrides={{typographyPreset: 'editorialParagraph030'}}
+              href={href!}
+            >
+              {children}
+            </LinkStandalone>
+          ),
+        }}
+      >
         {modifyContent(
           addPRLinks(
             addProfileLinks(
