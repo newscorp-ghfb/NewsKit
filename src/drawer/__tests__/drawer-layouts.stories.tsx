@@ -14,6 +14,10 @@ import {Button} from '../../button';
 import {Link, LinkStandalone} from '../../link';
 import {TextInput} from '../../text-input';
 import {UnorderedList} from '../../unordered-list';
+import {Label} from '../../label';
+import {Select, SelectOption} from '../../select';
+import {AssistiveText} from '../../assistive-text';
+import {TextFieldSize} from '../../text-field';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const drawerLayoutCustomThemeObject: CreateThemeArgs = {
@@ -73,6 +77,91 @@ const CategoryRow = ({children}: {children: string}) => (
     <IconFilledChevronRight overrides={{size: 'sizing040'}} />
   </StyledCategoryRow>
 );
+
+const items = [
+  'Neptunium',
+  'Plutonium',
+  'Americium',
+  'Curium',
+  'Berkelium',
+  'Californium',
+  'Einsteinium',
+  'Fermium',
+  'Mendelevium',
+  'Nobelium',
+  'Lawrencium',
+  'Rutherfordium',
+  'Dubnium',
+  'Seaborgium',
+  'Bohrium',
+  'Hassium',
+  'Meitnerium',
+  'Darmstadtium',
+  'Roentgenium',
+  'Copernicium',
+  'Nihonium',
+  'Flerovium',
+  'Moscovium',
+  'Livermorium',
+  'Tennessine',
+  'Oganesson',
+];
+
+export const StorySelect = () =>
+  React.createElement(() => (
+    <>
+      <StorybookHeading>Drawer placed on the right</StorybookHeading>
+      <Drawer
+        aria-label="drawer headline"
+        open
+        onDismiss={() => {}}
+        placement="left"
+        header={
+          <>
+            <IconFilledAddCircleOutline overrides={{size: 'iconSize010'}} />
+            <LinkStandalone href="www.test.com">Link button</LinkStandalone>
+          </>
+        }
+      >
+        <div style={{border: '1px solid blue'}}>
+          <Label htmlFor="id-2" size={'medium' as TextFieldSize}>
+            Label
+          </Label>
+          <Select aria-describedby="id-1-at" id="id-1" size="medium">
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <AssistiveText id="id-1-at" size={'medium' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </div>
+        <div style={{border: '1px solid red', margin: '30px 0'}}>
+          {Array.from({length: 16}, (_, i) => (
+            <CategoryRow>{`CATEGORY ${i + 1}`}</CategoryRow>
+          ))}
+        </div>
+        <div style={{border: '1px solid blue'}}>
+          <Label htmlFor="id-2" size={'medium' as TextFieldSize}>
+            Label
+          </Label>
+          <Select aria-describedby="id-2-at" id="id-2" size="medium">
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <AssistiveText id="id-2-at" size={'medium' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </div>
+      </Drawer>
+    </>
+  ));
+StorySelect.storyName = 'with select';
 
 export const StoryRightPlacement = () =>
   React.createElement(() => (

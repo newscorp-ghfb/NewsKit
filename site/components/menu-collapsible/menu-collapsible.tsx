@@ -3,15 +3,18 @@ import {
   Divider,
   GridLayout,
   IconButton,
-  IconOutlinedLaunch,
   Menu,
   MenuGroup,
   MenuItem,
   P,
   TextBlock,
+  toNewsKitIcon,
 } from 'newskit';
+import {Launch as OutlinedLaunch} from '@emotion-icons/material-outlined/Launch';
 import {IconExpandLess, IconExpandMore} from '../icons';
 import {MenuCollapsible, MobileNavigationDivider, StyledAnchor} from './styled';
+
+const IconOutlinedLaunch = toNewsKitIcon(OutlinedLaunch);
 
 export const GitHubLaunch: React.FC = () => (
   <StyledAnchor href="https://github.com/newscorp-ghfb/newskit">

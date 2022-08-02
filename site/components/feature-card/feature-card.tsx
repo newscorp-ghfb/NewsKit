@@ -7,10 +7,11 @@ import {
   Headline,
   TextBlock,
   Button,
-  IconFilledChevronRight,
   ButtonSize,
   useTheme,
+  toNewsKitIcon,
 } from 'newskit';
+import {ChevronRight as FilledChevronRight} from '@emotion-icons/material/ChevronRight';
 import {getToken} from '../../../src/utils/get-token';
 import {
   FeatureCardProps,
@@ -26,6 +27,8 @@ import {
 } from './styled';
 import {LineTruncation} from '../line-truncation';
 import {Link} from '../link';
+
+const IconFilledChevronRight = toNewsKitIcon(FilledChevronRight);
 
 const OptionalLinkWrapper: React.FC<OptionalLinkWrapperProps> = ({
   href,

@@ -1,5 +1,9 @@
 import * as React from 'react';
-import {IconFilledErrorOutline} from 'newskit';
+import {toNewsKitIcon} from 'newskit';
+
+import {ErrorOutline as FilledErrorOutline} from '@emotion-icons/material/ErrorOutline';
+
+const IconFilledErrorOutline = toNewsKitIcon(FilledErrorOutline);
 
 export const hexToRgb = (hex: string): [number, number, number] | null => {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(

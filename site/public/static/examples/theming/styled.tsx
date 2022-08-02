@@ -1,4 +1,4 @@
-import { ThemeProvider, newskitLightTheme, styled } from 'newskit';
+import { NewsKitProvider, newskitLightTheme, styled } from 'newskit';
 
 const MyAppContainer = styled.div`
   max-width: ${({ theme }) => theme.sizing.sizing110};
@@ -6,10 +6,10 @@ const MyAppContainer = styled.div`
 
 render() {
   return (
-    <ThemeProvider theme={newskitLightTheme}>
+    <NewsKitProvider theme={newskitLightTheme}>
       <MyAppContainer>
         <MyApp />
       </MyAppContainer>
-    </ThemeProvider>
+    </NewsKitProvider>
   )
 }

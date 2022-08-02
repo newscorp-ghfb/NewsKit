@@ -75,9 +75,7 @@ Scripts should be named using the following naming convention:
 
 * `postbuild:docs` -> move 404.html to public/.
 
-* `build:icons:dev` -> generates only the icons that are used within newskit.
-
-* `build:icons:ci` -> generates all 2600+ icons.
+* `build:icons` -> generates only the icons that are used within newskit.
 
 * `build:comps` -> builds the components folder ready to be published to NPM.
 

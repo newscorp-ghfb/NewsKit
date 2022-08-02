@@ -60,6 +60,8 @@ export default {
     },
     header: {
       spaceInset: 'spaceInsetSquish040',
+      stylePreset: 'modalHeader',
+      typographyPreset: 'utilityLabel030',
     },
     content: {
       spaceInset: 'spaceInset050',

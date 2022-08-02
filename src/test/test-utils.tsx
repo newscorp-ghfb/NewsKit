@@ -1,10 +1,14 @@
 import React, {ComponentType} from 'react';
-import {act, render as renderer, RenderOptions} from '@testing-library/react';
-import {newskitLightTheme, ThemeProvider, ThemeProviderProps} from '../theme';
+
 import {
-  InstrumentationProvider,
-  InstrumentationEvent,
-} from '../instrumentation';
+  act,
+  render as renderer,
+  RenderOptions,
+  RenderResult,
+} from '@testing-library/react';
+import {newskitLightTheme, ThemeProviderProps, UncompiledTheme} from '../theme';
+import {InstrumentationEvent} from '../instrumentation';
+import {NewsKitProvider} from '../newskit-provider';
 
 export const renderToFragment = (
   ui: React.ReactElement,
@@ -20,9 +24,9 @@ export const renderWithImplementation = <T extends {}>(
   renderer(<Component {...(props as T)} />, {
     ...options,
     wrapper: ({children}) => (
-      <InstrumentationProvider fireEvent={fireEvent}>
-        <ThemeProvider theme={newskitLightTheme}>{children}</ThemeProvider>
-      </InstrumentationProvider>
+      <NewsKitProvider theme={newskitLightTheme} instrumentation={{fireEvent}}>
+        {children}
+      </NewsKitProvider>
     ),
   });
 
@@ -37,7 +41,7 @@ export const renderWithThemeFactory = (
   renderer(<Component {...(props as T)} />, {
     ...options,
     wrapper: ({children}) => (
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <NewsKitProvider theme={theme}>{children}</NewsKitProvider>
     ),
   });
 
@@ -65,6 +69,73 @@ export const renderToFragmentWithTheme = renderToFragmentWithThemeFactory(
 export {render} from '@testing-library/react';
 export {renderHook} from '@testing-library/react-hooks';
 
+export const renderWithThemeInBody = <T extends {}>(
+  Component: React.ComponentType<T>,
+  props?: T & {children?: React.ReactNode},
+  theme?: UncompiledTheme,
+): RenderResult => {
+  const {baseElement, ...rest} = renderWithTheme(Component, props, theme);
+
+  // TODO: asFragment takes the HTML only from the container, NOT the whole body
+  // and the portals are rendered outside the container
+  // that's why we need to use baseElement for snapshots
+  // https://github.com/testing-library/react-testing-library/blob/c8c93f83228a68a270583c139972e79b1812b7d3/src/pure.js
+  const asFragment = () => {
+    const template = document.createElement('template');
+    template.innerHTML = baseElement.innerHTML;
+
+    // downshift adds this element to the body, we don't want to be part of the snapshots
+    const msg = template.content.getElementById('a11y-status-message');
+    if (msg) msg.remove();
+
+    return template.content;
+  };
+
+  return {
+    ...rest,
+    baseElement,
+    asFragment,
+  };
+};
+
+// same as renderWithThemeInBody but without theme
+export const renderInBody = <T extends {}>(
+  Component: React.ComponentType<T>,
+  props?: T & {children?: React.ReactNode},
+): RenderResult => {
+  const {baseElement, ...rest} = renderer(<Component {...(props as T)} />);
+
+  // TODO: asFragment takes the HTML only from the container, NOT the whole body
+  // and the portals are rendered outside the container
+  // that's why we need to use baseElement for snapshots
+  // https://github.com/testing-library/react-testing-library/blob/c8c93f83228a68a270583c139972e79b1812b7d3/src/pure.js
+  const asFragment = () => {
+    const template = document.createElement('template');
+    template.innerHTML = baseElement.innerHTML;
+
+    // downshift adds this element to the body, we don't want to be part of the snapshots
+    const msg = template.content.getElementById('a11y-status-message');
+    if (msg) msg.remove();
+
+    return template.content;
+  };
+
+  return {
+    ...rest,
+    baseElement,
+    asFragment,
+  };
+};
+
+export const renderToFragmentInBody = <T extends {}>(
+  Component: React.ComponentType<T>,
+  props?: T & {children?: React.ReactNode},
+  theme?: UncompiledTheme,
+) => {
+  const {asFragment} = renderWithThemeInBody(Component, props, theme);
+  const fragment = asFragment();
+  return fragment;
+};
 // The @floating-ui lib's inset styling is applied asynchronously. To make
 // assertions on the top / left attribute values, we need to flush the queue to
 // ensure that the element has been positioned before making assertions on

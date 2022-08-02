@@ -17,7 +17,10 @@ import {mergeBreakpointObject} from '../../../utils/merge-breakpoint-object';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {ButtonSize} from '../../../button/types';
 
-const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps> = props => {
+const ThemelessAudioPlayerVolumeControl = React.forwardRef<
+  HTMLDivElement,
+  AudioPlayerVolumeControlProps
+>((props, ref) => {
   const {getVolumeControlProps} = useAudioPlayerContext();
   const {
     volume,
@@ -73,6 +76,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
 
   return (
     <StyledGridLayout
+      ref={ref}
       columns={gridColumns}
       areas={gridAreas}
       justifyItems={layout === 'vertical' ? 'center' : 'start'}
@@ -115,7 +119,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
       )}
     </StyledGridLayout>
   );
-};
+});
 
 export const AudioPlayerVolumeControl = withOwnTheme(
   ThemelessAudioPlayerVolumeControl,

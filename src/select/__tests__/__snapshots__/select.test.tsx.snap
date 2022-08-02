@@ -194,60 +194,63 @@ exports[`Select in Modal render Select 1`] = `
 
 <div
     aria-hidden="true"
-    class="emotion-0"
     data-aria-hidden="true"
   >
-    <span
-      class="emotion-1"
-    />
-    <button
-      aria-expanded="true"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-95-toggle-button"
-      type="button"
-    >
-      <div
-        class="emotion-3"
-      >
-        Select Option
-      </div>
-    </button>
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <div
-        class="emotion-5"
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="true"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-95-toggle-button"
+        type="button"
       >
-        <button
-          aria-hidden="true"
-          class="emotion-6"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-7"
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-6"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-8 emotion-9"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-7"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -258,7 +261,6 @@ exports[`Select in Modal render Select 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -356,13 +358,11 @@ exports[`Select in Modal render Select 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -517,6 +517,7 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -783,122 +784,134 @@ exports[`Select in Modal render Select 1`] = `
   }
 }
 
-<div>
+<div
+    class="nk-layer-organizer"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
       <div
-        class="emotion-1"
+        class="nk-layer"
       >
-        <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
-        >
+        <div>
           <div
-            class="emotion-3"
+            class="emotion-0 nk-overlay-enter-done"
+            data-testid="overlay"
           />
           <div
-            class="emotion-4"
-            data-testid="dialog-content"
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="1"
+          />
+          <div
+            data-focus-lock-disabled="false"
           >
-            <span
-              class="emotion-5"
-              id="mock-nk-1"
-            >
-              Press down arrow key to navigate to the first item
-            </span>
             <div
-              aria-describedby="mock-nk-1"
-              aria-labelledby="downshift-95-label"
-              class="emotion-6"
-              data-testid="select-panel"
-              id="downshift-95-menu"
-              role="listbox"
-              tabindex="-1"
+              class="emotion-1"
             >
               <div
-                aria-selected="false"
-                class="emotion-7"
-                id="downshift-95-item-0"
-                role="option"
-                value="option 1"
+                aria-modal="true"
+                class="nk-modal-enter-done emotion-2"
+                data-testid="modal"
+                role="dialog"
               >
-                <div>
-                  option 1
+                <div
+                  class="emotion-3"
+                />
+                <div
+                  class="emotion-4"
+                  data-testid="dialog-content"
+                >
+                  <span
+                    class="emotion-5"
+                    id="mock-nk-1"
+                  >
+                    Press down arrow key to navigate to the first item
+                  </span>
+                  <div
+                    aria-describedby="mock-nk-1"
+                    aria-labelledby="downshift-95-label"
+                    class="emotion-6"
+                    data-testid="select-panel"
+                    id="downshift-95-menu"
+                    role="listbox"
+                    tabindex="-1"
+                  >
+                    <div
+                      aria-selected="false"
+                      class="emotion-7"
+                      id="downshift-95-item-0"
+                      role="option"
+                      value="option 1"
+                    >
+                      <div>
+                        option 1
+                      </div>
+                    </div>
+                    <div
+                      aria-selected="false"
+                      class="emotion-7"
+                      id="downshift-95-item-1"
+                      role="option"
+                      value="option 2"
+                    >
+                      <div>
+                        option 2
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div
-                aria-selected="false"
-                class="emotion-7"
-                id="downshift-95-item-1"
-                role="option"
-                value="option 2"
-              >
-                <div>
-                  option 2
+                <div
+                  class="emotion-9"
+                >
+                  <button
+                    aria-label="close"
+                    class="emotion-10"
+                    data-testid="button"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-11"
+                    >
+                      <div
+                        class="emotion-12"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="emotion-13 emotion-14"
+                          fill="currentColor"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-9"
-          >
-            <button
-              aria-label="close"
-              class="emotion-10"
-              data-testid="button"
-              type="button"
-            >
-              <div
-                class="emotion-11"
-              >
-                <div
-                  class="emotion-12"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-13 emotion-14"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
-          </div>
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
         </div>
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -1097,61 +1110,64 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 
 <div
     aria-hidden="true"
-    class="emotion-0"
     data-aria-hidden="true"
   >
-    <span
-      class="emotion-1"
-    />
-    <button
-      aria-expanded="true"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-101-toggle-button"
-      type="button"
-      width="100%"
-    >
-      <div
-        class="emotion-3"
-      >
-        Select Option
-      </div>
-    </button>
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <div
-        class="emotion-5"
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="true"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-101-toggle-button"
+        type="button"
+        width="100%"
       >
-        <button
-          aria-hidden="true"
-          class="emotion-6"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-7"
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-6"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-8 emotion-9"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-7"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -1162,7 +1178,6 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -1260,13 +1275,11 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -1421,6 +1434,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1439,6 +1453,12 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-5 {
@@ -1547,92 +1567,104 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   color: #0A0A0A;
 }
 
-<div>
+<div
+    class="nk-layer-organizer"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
       <div
-        class="emotion-1"
+        class="nk-layer"
       >
-        <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
-        >
+        <div>
           <div
-            class="emotion-3"
+            class="emotion-0 nk-overlay-enter-done"
+            data-testid="overlay"
           />
           <div
-            class="emotion-4"
-          >
-            make your selection
-          </div>
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
           <div
-            class="emotion-5"
-            data-testid="dialog-content"
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="1"
+          />
+          <div
+            data-focus-lock-disabled="false"
           >
-            <span
-              class="emotion-6"
-              id="mock-nk-1"
-            >
-              Press down arrow key to navigate to the first item
-            </span>
             <div
-              aria-describedby="mock-nk-1"
-              aria-labelledby="downshift-101-label"
-              class="emotion-7"
-              data-testid="select-panel"
-              id="downshift-101-menu"
-              role="listbox"
-              tabindex="-1"
+              class="emotion-1"
             >
               <div
-                aria-selected="false"
-                class="emotion-8"
-                id="downshift-101-item-0"
-                role="option"
-                value="option 1"
+                aria-modal="true"
+                class="nk-modal-enter-done emotion-2"
+                data-testid="modal"
+                role="dialog"
               >
-                <div>
-                  option 1
+                <div
+                  class="emotion-3"
+                />
+                <div
+                  class="emotion-4"
+                >
+                  make your selection
                 </div>
-              </div>
-              <div
-                aria-selected="false"
-                class="emotion-8"
-                id="downshift-101-item-1"
-                role="option"
-                value="option 2"
-              >
-                <div>
-                  option 2
+                <div
+                  class="emotion-5"
+                  data-testid="dialog-content"
+                >
+                  <span
+                    class="emotion-6"
+                    id="mock-nk-1"
+                  >
+                    Press down arrow key to navigate to the first item
+                  </span>
+                  <div
+                    aria-describedby="mock-nk-1"
+                    aria-labelledby="downshift-101-label"
+                    class="emotion-7"
+                    data-testid="select-panel"
+                    id="downshift-101-menu"
+                    role="listbox"
+                    tabindex="-1"
+                  >
+                    <div
+                      aria-selected="false"
+                      class="emotion-8"
+                      id="downshift-101-item-0"
+                      role="option"
+                      value="option 1"
+                    >
+                      <div>
+                        option 1
+                      </div>
+                    </div>
+                    <div
+                      aria-selected="false"
+                      class="emotion-8"
+                      id="downshift-101-item-1"
+                      role="option"
+                      value="option 2"
+                    >
+                      <div>
+                        option 2
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
         </div>
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -1831,60 +1863,63 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 
 <div
     aria-hidden="true"
-    class="emotion-0"
     data-aria-hidden="true"
   >
-    <span
-      class="emotion-1"
-    />
-    <button
-      aria-expanded="true"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-107-toggle-button"
-      type="button"
-    >
-      <div
-        class="emotion-3"
-      >
-        Select Option
-      </div>
-    </button>
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <div
-        class="emotion-5"
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="true"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-107-toggle-button"
+        type="button"
       >
-        <button
-          aria-hidden="true"
-          class="emotion-6"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-7"
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-6"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-8 emotion-9"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-7"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -1895,7 +1930,6 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -1993,13 +2027,11 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -2144,6 +2176,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2410,122 +2443,134 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   }
 }
 
-<div>
+<div
+    class="nk-layer-organizer"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
       <div
-        class="emotion-1"
+        class="nk-layer"
       >
-        <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
-        >
+        <div>
           <div
-            class="emotion-3"
+            class="emotion-0 nk-overlay-enter-done"
+            data-testid="overlay"
           />
           <div
-            class="emotion-4"
-            data-testid="dialog-content"
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="1"
+          />
+          <div
+            data-focus-lock-disabled="false"
           >
-            <span
-              class="emotion-5"
-              id="mock-nk-1"
-            >
-              Press down arrow key to navigate to the first item
-            </span>
             <div
-              aria-describedby="mock-nk-1"
-              aria-labelledby="downshift-107-label"
-              class="emotion-6"
-              data-testid="select-panel"
-              id="downshift-107-menu"
-              role="listbox"
-              tabindex="-1"
+              class="emotion-1"
             >
               <div
-                aria-selected="false"
-                class="emotion-7"
-                id="downshift-107-item-0"
-                role="option"
-                value="option 1"
+                aria-modal="true"
+                class="nk-modal-enter-done emotion-2"
+                data-testid="modal"
+                role="dialog"
               >
-                <div>
-                  option 1
+                <div
+                  class="emotion-3"
+                />
+                <div
+                  class="emotion-4"
+                  data-testid="dialog-content"
+                >
+                  <span
+                    class="emotion-5"
+                    id="mock-nk-1"
+                  >
+                    Press down arrow key to navigate to the first item
+                  </span>
+                  <div
+                    aria-describedby="mock-nk-1"
+                    aria-labelledby="downshift-107-label"
+                    class="emotion-6"
+                    data-testid="select-panel"
+                    id="downshift-107-menu"
+                    role="listbox"
+                    tabindex="-1"
+                  >
+                    <div
+                      aria-selected="false"
+                      class="emotion-7"
+                      id="downshift-107-item-0"
+                      role="option"
+                      value="option 1"
+                    >
+                      <div>
+                        option 1
+                      </div>
+                    </div>
+                    <div
+                      aria-selected="false"
+                      class="emotion-7"
+                      id="downshift-107-item-1"
+                      role="option"
+                      value="option 2"
+                    >
+                      <div>
+                        option 2
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div
-                aria-selected="false"
-                class="emotion-7"
-                id="downshift-107-item-1"
-                role="option"
-                value="option 2"
-              >
-                <div>
-                  option 2
+                <div
+                  class="emotion-9"
+                >
+                  <button
+                    aria-label="close"
+                    class="emotion-10"
+                    data-testid="button"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-11"
+                    >
+                      <div
+                        class="emotion-12"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="emotion-13 emotion-14"
+                          fill="currentColor"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-9"
-          >
-            <button
-              aria-label="close"
-              class="emotion-10"
-              data-testid="button"
-              type="button"
-            >
-              <div
-                class="emotion-11"
-              >
-                <div
-                  class="emotion-12"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-13 emotion-14"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
-          </div>
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
         </div>
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2815,37 +2860,6 @@ exports[`Select renders Select with logical props 1`] = `
       </div>
     </div>
   </div>
-  .emotion-0 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-block: 30px;
-  padding-inline: 30px;
-  width: 0px;
-  top: 0px;
-  left: 0px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-<div
-    aria-labelledby="downshift-141-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-141-menu"
-    role="listbox"
-    tabindex="-1"
-  />
 </DocumentFragment>
 `;
 
@@ -3006,70 +3020,72 @@ exports[`Select renders Select with overrides 1`] = `
   height: 24px;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
+<div>
+    <div
+      class="emotion-0"
     >
-      option 1
-    </span>
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-85-toggle-button"
-      type="button"
-      value="option 1"
-    >
-      <div
-        class="emotion-3"
+      <span
+        class="emotion-1"
+      >
+        option 1
+      </span>
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-85-toggle-button"
+        type="button"
+        value="option 1"
       >
         <div
-          class="emotion-4"
-          value="option 1"
-        >
-          <span>
-            option 1
-          </span>
-        </div>
-      </div>
-    </button>
-    <div
-      class="emotion-5"
-    >
-      <div
-        class="emotion-6"
-      >
-        <button
-          aria-hidden="true"
-          class="emotion-7"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+          class="emotion-3"
         >
           <div
-            class="emotion-8"
+            class="emotion-4"
+            value="option 1"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-9 emotion-10"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
+            <span>
+              option 1
+            </span>
           </div>
-        </button>
+        </div>
+      </button>
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-7"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
+          >
+            <div
+              class="emotion-8"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-9 emotion-10"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -3095,13 +3111,21 @@ exports[`Select renders Select with overrides 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-85-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-85-menu"
-    role="listbox"
-    tabindex="-1"
-  />
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-85-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-85-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -3136,12 +3160,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   display: block;
 }
 
-<label
-    class="emotion-0"
-  >
-    A label
-  </label>
-  .emotion-0 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3167,11 +3186,11 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   text-overflow: ellipsis;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #2E2E2E;
 }
 
-.emotion-0:focus:not(:disabled) {
+.emotion-1:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3181,46 +3200,46 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-0:focus:not(:disabled) {
+    .emotion-1:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-0:valid:hover:not(:disabled) {
+.emotion-1:valid:hover:not(:disabled) {
   border-color: #23A248;
   background-color: #FAFAFA;
 }
 
-.emotion-0:valid:focus:not(:disabled) {
+.emotion-1:valid:focus:not(:disabled) {
   border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
-.emotion-0:disabled {
+.emotion-1:disabled {
   border-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-0:disabled svg {
+.emotion-1:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-0:invalid:focus:not(:disabled) {
+.emotion-1:invalid:focus:not(:disabled) {
   border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
-.emotion-0:invalid:hover:not(:disabled) {
+.emotion-1:invalid:hover:not(:disabled) {
   border-color: #EF1703;
   background-color: #FAFAFA;
 }
 
-.emotion-1 {
+.emotion-2 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -3232,7 +3251,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   width: 1px;
 }
 
-.emotion-2 {
+.emotion-3 {
   all: unset;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -3252,7 +3271,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   padding: 8px;
 }
 
-.emotion-3 {
+.emotion-4 {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -3265,7 +3284,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-4 {
+.emotion-5 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -3280,7 +3299,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   margin-right: 8px;
 }
 
-.emotion-5 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3290,18 +3309,18 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   cursor: pointer;
 }
 
-.emotion-6 {
+.emotion-7 {
   all: unset;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.emotion-8 {
+.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3311,7 +3330,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3319,73 +3338,141 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-8.emotion-8 {
+.emotion-9.emotion-9 {
   width: 24px;
   height: 24px;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
-    />
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-0-toggle-button"
-      type="button"
+.emotion-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 12px;
+  color: #535353;
+}
+
+.emotion-11:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-12 {
+  margin: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-12:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-12::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-12::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+<div>
+    <label
+      class="emotion-0"
     >
-      <div
-        class="emotion-3"
-      >
-        Select Option
-      </div>
-    </button>
+      A label
+    </label>
     <div
-      class="emotion-4"
+      class="emotion-1"
     >
+      <span
+        class="emotion-2"
+      />
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-3"
+        data-testid="select-button"
+        id="downshift-0-toggle-button"
+        type="button"
+      >
+        <div
+          class="emotion-4"
+        >
+          Select Option
+        </div>
+      </button>
       <div
         class="emotion-5"
       >
-        <button
-          aria-hidden="true"
+        <div
           class="emotion-6"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
         >
-          <div
+          <button
+            aria-hidden="true"
             class="emotion-7"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-8 emotion-9"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-8"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-hidden="true"
+                class="emotion-9 emotion-10"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <p
+        class="emotion-12"
+      >
+        AssistiveText
+      </p>
     </div>
   </div>
   .emotion-0 {
@@ -3410,73 +3497,20 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-0-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-0-menu"
-    role="listbox"
-    tabindex="-1"
-  />
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  min-height: 12px;
-  color: #535353;
-}
-
-.emotion-0:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1 {
-  margin: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  color: #535353;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-<div
-    class="emotion-0"
+    class="nk-layer-organizer"
   >
-    <p
-      class="emotion-1"
+    <div
+      class="nk-layer"
     >
-      AssistiveText
-    </p>
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -3766,35 +3800,6 @@ exports[`Select renders SelectOption with logical props 1`] = `
       </div>
     </div>
   </div>
-  .emotion-0 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 0px;
-  top: 0px;
-  left: 0px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-<div
-    aria-labelledby="downshift-136-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-136-menu"
-    role="listbox"
-    tabindex="-1"
-  />
 </DocumentFragment>
 `;
 
@@ -3941,63 +3946,65 @@ exports[`Select renders disabled select 1`] = `
   height: 24px;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
-    />
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      disabled=""
-      id="downshift-35-toggle-button"
-      type="button"
-    >
-      <div
-        class="emotion-3"
-        disabled=""
-      >
-        Select Option
-      </div>
-    </button>
+<div>
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <div
-        class="emotion-5"
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        disabled=""
+        id="downshift-35-toggle-button"
+        type="button"
       >
-        <button
-          aria-hidden="true"
-          class="emotion-6"
-          data-testid="select-chevron-button"
+        <div
+          class="emotion-3"
           disabled=""
-          tabindex="-1"
-          type="button"
         >
-          <div
-            class="emotion-7"
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-6"
+            data-testid="select-chevron-button"
+            disabled=""
+            tabindex="-1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-8 emotion-9"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-7"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -4023,13 +4030,21 @@ exports[`Select renders disabled select 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-35-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-35-menu"
-    role="listbox"
-    tabindex="-1"
-  />
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-35-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-35-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -4225,60 +4240,62 @@ exports[`Select renders large Select 1`] = `
   height: 24px;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
-    />
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-9-toggle-button"
-      type="button"
-    >
-      <div
-        class="emotion-3"
-      >
-        Select Option
-      </div>
-    </button>
+<div>
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <div
-        class="emotion-5"
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-9-toggle-button"
+        type="button"
       >
-        <button
-          aria-hidden="true"
-          class="emotion-6"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-7"
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-6"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-8 emotion-9"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-7"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -4304,13 +4321,21 @@ exports[`Select renders large Select 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-9-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-9-menu"
-    role="listbox"
-    tabindex="-1"
-  />
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-9-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-9-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -4496,48 +4521,50 @@ exports[`Select renders loading select 1`] = `
   animation: rotate 1s linear infinite;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
-    />
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      disabled=""
-      id="downshift-44-toggle-button"
-      type="button"
-    >
-      <div
-        class="emotion-3"
-      >
-        Select Option
-      </div>
-    </button>
+<div>
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <div
-        class="emotion-5"
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        disabled=""
+        id="downshift-44-toggle-button"
+        type="button"
       >
         <div
-          class="emotion-6"
+          class="emotion-3"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-7"
-            fill="currentColor"
-            viewBox="0 0 64 64"
-            xmlns="http://www.w3.org/2000/svg"
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <div
+            class="emotion-6"
           >
-            <circle
-              cx="50%"
-              cy="50%"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              class="emotion-7"
+              fill="currentColor"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="50%"
+                cy="50%"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -4564,13 +4591,21 @@ exports[`Select renders loading select 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-44-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-44-menu"
-    role="listbox"
-    tabindex="-1"
-  />
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-44-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-44-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -4766,60 +4801,62 @@ exports[`Select renders medium Select 1`] = `
   height: 24px;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
-    />
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-6-toggle-button"
-      type="button"
-    >
-      <div
-        class="emotion-3"
-      >
-        Select Option
-      </div>
-    </button>
+<div>
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <div
-        class="emotion-5"
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-6-toggle-button"
+        type="button"
       >
-        <button
-          aria-hidden="true"
-          class="emotion-6"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-7"
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-6"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-8 emotion-9"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-7"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -4845,13 +4882,21 @@ exports[`Select renders medium Select 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-6-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-6-menu"
-    role="listbox"
-    tabindex="-1"
-  />
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-6-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-6-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -5071,70 +5116,72 @@ exports[`Select renders select with a pre selected option 1`] = `
   height: 24px;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
+<div>
+    <div
+      class="emotion-0"
     >
-      option 1
-    </span>
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-47-toggle-button"
-      type="button"
-      value="option 1"
-    >
-      <div
-        class="emotion-3"
+      <span
+        class="emotion-1"
+      >
+        option 1
+      </span>
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-47-toggle-button"
+        type="button"
+        value="option 1"
       >
         <div
-          class="emotion-4"
-          value="option 1"
-        >
-          <span>
-            option 1
-          </span>
-        </div>
-      </div>
-    </button>
-    <div
-      class="emotion-5"
-    >
-      <div
-        class="emotion-6"
-      >
-        <button
-          aria-hidden="true"
-          class="emotion-7"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+          class="emotion-3"
         >
           <div
-            class="emotion-8"
+            class="emotion-4"
+            value="option 1"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-9 emotion-10"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
+            <span>
+              option 1
+            </span>
           </div>
-        </button>
+        </div>
+      </button>
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-7"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
+          >
+            <div
+              class="emotion-8"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-9 emotion-10"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -5160,13 +5207,21 @@ exports[`Select renders select with a pre selected option 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-47-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-47-menu"
-    role="listbox"
-    tabindex="-1"
-  />
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-47-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-47-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -5386,70 +5441,72 @@ exports[`Select renders select with a selected option 1`] = `
   height: 24px;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
+<div>
+    <div
+      class="emotion-0"
     >
-      option 1
-    </span>
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-50-toggle-button"
-      type="button"
-      value="option 1"
-    >
-      <div
-        class="emotion-3"
+      <span
+        class="emotion-1"
+      >
+        option 1
+      </span>
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-50-toggle-button"
+        type="button"
+        value="option 1"
       >
         <div
-          class="emotion-4"
-          value="option 1"
-        >
-          <span>
-            option 1
-          </span>
-        </div>
-      </div>
-    </button>
-    <div
-      class="emotion-5"
-    >
-      <div
-        class="emotion-6"
-      >
-        <button
-          aria-hidden="true"
-          class="emotion-7"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+          class="emotion-3"
         >
           <div
-            class="emotion-8"
+            class="emotion-4"
+            value="option 1"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-9 emotion-10"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
+            <span>
+              option 1
+            </span>
           </div>
-        </button>
+        </div>
+      </button>
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-7"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
+          >
+            <div
+              class="emotion-8"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-9 emotion-10"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -5475,13 +5532,21 @@ exports[`Select renders select with a selected option 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-50-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-50-menu"
-    role="listbox"
-    tabindex="-1"
-  />
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-50-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-50-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -5696,100 +5761,102 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   margin-right: 8px;
 }
 
-<div
-    class="emotion-0"
-  >
+<div>
     <div
-      class="emotion-1"
-    >
-      <svg
-        aria-hidden="true"
-        class="emotion-2 emotion-3"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-        />
-      </svg>
-    </div>
-    <span
-      class="emotion-4"
-    />
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-5"
-      data-testid="select-button"
-      id="downshift-53-toggle-button"
-      type="button"
+      class="emotion-0"
     >
       <div
-        class="emotion-6"
+        class="emotion-1"
       >
-        Select Option
-      </div>
-    </button>
-    <div
-      class="emotion-7"
-    >
-      <div
-        class="emotion-8"
-      >
-        <button
+        <svg
           aria-hidden="true"
-          class="emotion-9"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+          class="emotion-2 emotion-3"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <div
-            class="emotion-10"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-2 emotion-3"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+          />
+        </svg>
       </div>
-      <div
-        class="emotion-13"
+      <span
+        class="emotion-4"
       />
-      <svg
-        aria-hidden="true"
-        class="emotion-2 emotion-3"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-5"
+        data-testid="select-button"
+        id="downshift-53-toggle-button"
+        type="button"
       >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
+        <div
+          class="emotion-6"
+        >
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-7"
+      >
+        <div
+          class="emotion-8"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-9"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
+          >
+            <div
+              class="emotion-10"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-2 emotion-3"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div
+          class="emotion-13"
         />
-        <path
-          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-        />
-      </svg>
+        <svg
+          aria-hidden="true"
+          class="emotion-2 emotion-3"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+          />
+        </svg>
+      </div>
     </div>
   </div>
   .emotion-0 {
@@ -5814,13 +5881,21 @@ exports[`Select renders select with leading and trailing icon 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-53-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-53-menu"
-    role="listbox"
-    tabindex="-1"
-  />
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-53-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-53-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -6040,72 +6115,74 @@ exports[`Select renders select with non-string options 1`] = `
   height: 24px;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
+<div>
+    <div
+      class="emotion-0"
     >
-      option 2
-    </span>
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-56-toggle-button"
-      type="button"
-      value="option 2"
-    >
-      <div
-        class="emotion-3"
+      <span
+        class="emotion-1"
+      >
+        option 2
+      </span>
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-56-toggle-button"
+        type="button"
+        value="option 2"
       >
         <div
-          class="emotion-4"
-          value="option 2"
+          class="emotion-3"
         >
-          <div>
+          <div
+            class="emotion-4"
+            value="option 2"
+          >
             <div>
-              this is not a string
+              <div>
+                this is not a string
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </button>
-    <div
-      class="emotion-5"
-    >
+      </button>
       <div
-        class="emotion-6"
+        class="emotion-5"
       >
-        <button
-          aria-hidden="true"
-          class="emotion-7"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+        <div
+          class="emotion-6"
         >
-          <div
-            class="emotion-8"
+          <button
+            aria-hidden="true"
+            class="emotion-7"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-9 emotion-10"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-8"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-hidden="true"
+                class="emotion-9 emotion-10"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -6131,13 +6208,21 @@ exports[`Select renders select with non-string options 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-56-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-56-menu"
-    role="listbox"
-    tabindex="-1"
-  />
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-56-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-56-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -6333,60 +6418,62 @@ exports[`Select renders small Select 1`] = `
   height: 24px;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
-    />
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-3-toggle-button"
-      type="button"
-    >
-      <div
-        class="emotion-3"
-      >
-        Select Option
-      </div>
-    </button>
+<div>
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <div
-        class="emotion-5"
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-3-toggle-button"
+        type="button"
       >
-        <button
-          aria-hidden="true"
-          class="emotion-6"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-7"
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-6"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-8 emotion-9"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-7"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -6412,13 +6499,21 @@ exports[`Select renders small Select 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-3-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-3-menu"
-    role="listbox"
-    tabindex="-1"
-  />
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-3-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-3-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -6614,60 +6709,62 @@ exports[`Select should render custom placeholder 1`] = `
   height: 24px;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
-    />
-    <button
-      aria-expanded="false"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-12-toggle-button"
-      type="button"
-    >
-      <div
-        class="emotion-3"
-      >
-        This is some text
-      </div>
-    </button>
+<div>
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <div
-        class="emotion-5"
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-12-toggle-button"
+        type="button"
       >
-        <button
-          aria-hidden="true"
-          class="emotion-6"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-7"
+          This is some text
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-6"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-8 emotion-9"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-7"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -6693,13 +6790,21 @@ exports[`Select should render custom placeholder 1`] = `
 }
 
 <div
-    aria-labelledby="downshift-12-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-12-menu"
-    role="listbox"
-    tabindex="-1"
-  />
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-12-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-12-menu"
+        role="listbox"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -6895,60 +7000,62 @@ exports[`Select virtualize long list 1`] = `
   height: 24px;
 }
 
-<div
-    class="emotion-0"
-  >
-    <span
-      class="emotion-1"
-    />
-    <button
-      aria-expanded="true"
-      aria-haspopup="listbox"
-      class="emotion-2"
-      data-testid="select-button"
-      id="downshift-90-toggle-button"
-      type="button"
-    >
-      <div
-        class="emotion-3"
-      >
-        Select Option
-      </div>
-    </button>
+<div>
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <div
-        class="emotion-5"
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="true"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-90-toggle-button"
+        type="button"
       >
-        <button
-          aria-hidden="true"
-          class="emotion-6"
-          data-testid="select-chevron-button"
-          tabindex="-1"
-          type="button"
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-7"
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-6"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-8 emotion-9"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-7"
             >
-              <path
-                d="M0 0h24v24H0V0z"
-                fill="none"
-              />
-              <path
-                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -6964,13 +7071,7 @@ exports[`Select virtualize long list 1`] = `
   width: 1px;
 }
 
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
+.emotion-1 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -6991,7 +7092,7 @@ exports[`Select virtualize long list 1`] = `
   max-height: 272px;
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7025,122 +7126,136 @@ exports[`Select virtualize long list 1`] = `
   min-height: 48px;
 }
 
-.emotion-1 * {
+.emotion-2 * {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-1:focus:not(:disabled) {
+.emotion-2:focus:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #3358CC;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-1:disabled {
+.emotion-2:disabled {
   color: #C0C0C0;
 }
 
-.emotion-1:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #0A0A0A;
 }
 
-.emotion-1:selected:focus:not(:disabled) {
+.emotion-2:selected:focus:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #3358CC;
 }
 
-.emotion-1:selected:active:not(:disabled) {
+.emotion-2:selected:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-1:selected:focus:active:not(:disabled) {
+.emotion-2:selected:focus:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-1:selected:focus:hover:not(:disabled) {
+.emotion-2:selected:focus:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #0A0A0A;
 }
 
 <div
-    aria-describedby="mock-nk-1"
-    aria-labelledby="downshift-90-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-90-menu"
-    role="listbox"
-    tabindex="-1"
+    class="nk-layer-organizer"
   >
     <div
-      style="height: 0px;"
-    />
-    <div
-      aria-selected="false"
-      class="emotion-1"
-      id="downshift-90-item-120"
-      role="option"
-      style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
-      value="Latvia"
+      class="nk-layer"
     >
-      <div>
-        Latvia
-      </div>
-    </div>
-    <div
-      aria-selected="false"
-      class="emotion-1"
-      id="downshift-90-item-121"
-      role="option"
-      style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
-      value="Lebanon"
-    >
-      <div>
-        Lebanon
-      </div>
-    </div>
-    <div
-      aria-selected="false"
-      class="emotion-1"
-      id="downshift-90-item-122"
-      role="option"
-      style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
-      value="Lesotho"
-    >
-      <div>
-        Lesotho
-      </div>
-    </div>
-    <div
-      aria-selected="false"
-      class="emotion-1"
-      id="downshift-90-item-123"
-      role="option"
-      style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
-      value="Liberia"
-    >
-      <div>
-        Liberia
-      </div>
-    </div>
-    <div
-      aria-selected="false"
-      class="emotion-1"
-      id="downshift-90-item-124"
-      role="option"
-      style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
-      value="Libya"
-    >
-      <div>
-        Libya
+      <span
+        class="emotion-0"
+        id="mock-nk-1"
+      >
+        Press down arrow key to navigate to the first item
+      </span>
+      <div
+        aria-describedby="mock-nk-1"
+        aria-labelledby="downshift-90-label"
+        class="emotion-1"
+        data-testid="select-panel"
+        id="downshift-90-menu"
+        role="listbox"
+        tabindex="-1"
+      >
+        <div
+          style="height: 0px;"
+        />
+        <div
+          aria-selected="false"
+          class="emotion-2"
+          id="downshift-90-item-120"
+          role="option"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
+          value="Latvia"
+        >
+          <div>
+            Latvia
+          </div>
+        </div>
+        <div
+          aria-selected="false"
+          class="emotion-2"
+          id="downshift-90-item-121"
+          role="option"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
+          value="Lebanon"
+        >
+          <div>
+            Lebanon
+          </div>
+        </div>
+        <div
+          aria-selected="false"
+          class="emotion-2"
+          id="downshift-90-item-122"
+          role="option"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
+          value="Lesotho"
+        >
+          <div>
+            Lesotho
+          </div>
+        </div>
+        <div
+          aria-selected="false"
+          class="emotion-2"
+          id="downshift-90-item-123"
+          role="option"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
+          value="Liberia"
+        >
+          <div>
+            Liberia
+          </div>
+        </div>
+        <div
+          aria-selected="false"
+          class="emotion-2"
+          id="downshift-90-item-124"
+          role="option"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
+          value="Libya"
+        >
+          <div>
+            Libya
+          </div>
+        </div>
       </div>
     </div>
   </div>

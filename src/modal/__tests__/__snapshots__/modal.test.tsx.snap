@@ -2,6 +2,10 @@
 
 exports[`Modal renders default 1`] = `
 <DocumentFragment>
+  <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
@@ -9,7 +13,6 @@ exports[`Modal renders default 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -107,13 +110,11 @@ exports[`Modal renders default 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -297,6 +298,7 @@ exports[`Modal renders default 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -315,6 +317,12 @@ exports[`Modal renders default 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-5 {
@@ -483,98 +491,108 @@ exports[`Modal renders default 1`] = `
   }
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
-      <div
-        class="emotion-1"
-      >
+      <div>
         <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-0 nk-overlay-enter-done"
+          data-testid="overlay"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="1"
+        />
+        <div
+          data-focus-lock-disabled="false"
         >
           <div
-            class="emotion-3"
-          />
-          <div
-            class="emotion-4"
+            class="emotion-1"
           >
-            <p
-              class="emotion-5"
-            >
-              Modal header content
-            </p>
-          </div>
-          <div
-            class="emotion-6"
-            data-testid="dialog-content"
-          >
-            <p
-              class="emotion-5"
-            >
-              Modal body content
-            </p>
-          </div>
-          <div
-            class="emotion-8"
-          >
-            <button
-              aria-label="close"
-              class="emotion-9"
-              data-testid="button"
-              type="button"
+            <div
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                class="emotion-10"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
               >
-                <div
-                  class="emotion-11"
+                <p
+                  class="emotion-5"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-12 emotion-13"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </div>
+                  Modal header content
+                </p>
               </div>
-            </button>
+              <div
+                class="emotion-6"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-5"
+                >
+                  Modal body content
+                </p>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-9"
+                  data-testid="button"
+                  type="button"
+                >
+                  <div
+                    class="emotion-10"
+                  >
+                    <div
+                      class="emotion-11"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -588,7 +606,6 @@ exports[`Modal renders inline 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -686,13 +703,11 @@ exports[`Modal renders inline 1`] = `
   bottom: 0;
   left: 0;
   position: absolute;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: absolute;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -876,6 +891,7 @@ exports[`Modal renders inline 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -894,6 +910,12 @@ exports[`Modal renders inline 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-5 {
@@ -1063,103 +1085,114 @@ exports[`Modal renders inline 1`] = `
 }
 
 <div>
-    <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
-    >
+    <div>
       <div
-        class="emotion-1"
+        class="emotion-0 nk-overlay-enter-done"
+        data-testid="overlay"
+      />
+      <div
+        data-focus-guard="true"
+        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+        tabindex="0"
+      />
+      <div
+        data-focus-guard="true"
+        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+        tabindex="1"
+      />
+      <div
+        data-focus-lock-disabled="false"
       >
         <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-1"
         >
           <div
-            class="emotion-3"
-          />
-          <div
-            class="emotion-4"
+            aria-modal="true"
+            class="nk-modal-enter-done emotion-2"
+            data-testid="modal"
+            role="dialog"
           >
-            <p
-              class="emotion-5"
+            <div
+              class="emotion-3"
+            />
+            <div
+              class="emotion-4"
             >
-              Modal header content
-            </p>
-          </div>
-          <div
-            class="emotion-6"
-            data-testid="dialog-content"
-          >
-            <p
-              class="emotion-5"
+              <p
+                class="emotion-5"
+              >
+                Modal header content
+              </p>
+            </div>
+            <div
+              class="emotion-6"
+              data-testid="dialog-content"
             >
-              Modal body content
-            </p>
-          </div>
-          <div
-            class="emotion-8"
-          >
-            <button
-              aria-label="close"
-              class="emotion-9"
-              data-testid="button"
-              type="button"
+              <p
+                class="emotion-5"
+              >
+                Modal body content
+              </p>
+            </div>
+            <div
+              class="emotion-8"
             >
-              <div
-                class="emotion-10"
+              <button
+                aria-label="close"
+                class="emotion-9"
+                data-testid="button"
+                type="button"
               >
                 <div
-                  class="emotion-11"
+                  class="emotion-10"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-12 emotion-13"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="emotion-11"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-12 emotion-13"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                    </svg>
+                  </div>
                 </div>
-              </div>
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       </div>
+      <div
+        data-focus-guard="true"
+        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+        tabindex="0"
+      />
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
+  <div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  />
 </DocumentFragment>
 `;
 
 exports[`Modal renders modal with overrides 1`] = `
 <DocumentFragment>
+  <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
@@ -1167,7 +1200,6 @@ exports[`Modal renders modal with overrides 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: #FFEECF;
 }
@@ -1265,13 +1297,11 @@ exports[`Modal renders modal with overrides 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -1577,128 +1607,147 @@ exports[`Modal renders modal with overrides 1`] = `
   }
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
-      <div
-        class="emotion-1"
-      >
+      <div>
         <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-0 nk-overlay-enter-done"
+          data-testid="overlay"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="1"
+        />
+        <div
+          data-focus-lock-disabled="false"
         >
           <div
-            class="emotion-3"
-          />
-          <div
-            class="emotion-4"
-            data-testid="dialog-content"
+            class="emotion-1"
           >
-            <p
-              class="emotion-5"
-            >
-              Modal body content
-            </p>
-          </div>
-          <div
-            class="emotion-6"
-          >
-            <button
-              aria-label="close"
-              class="emotion-7"
-              data-testid="button"
-              type="button"
+            <div
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                class="emotion-8"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
+                data-testid="dialog-content"
               >
-                <div
-                  class="emotion-9"
+                <p
+                  class="emotion-5"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-10 emotion-11"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </div>
+                  Modal body content
+                </p>
               </div>
-            </button>
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-7"
+                  data-testid="button"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-10 emotion-11"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal renders nothing if modal is closed 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  z-index: 80;
-}
-
-<div>
+  <div />
+  <div
+    class="nk-layer-organizer"
+  >
     <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="-1"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="-1"
-    />
-    <div
-      data-focus-lock-disabled="disabled"
+      class="nk-layer"
     >
-      <div
-        class="emotion-0"
-      />
+      <div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="-1"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="-1"
+        />
+        <div
+          data-focus-lock-disabled="disabled"
+        >
+          <div
+            class="emotion-0"
+          />
+        </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="-1"
+        />
+      </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="-1"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal renders screen reader message when focus trapping disabled 1`] = `
 <DocumentFragment>
+  <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
@@ -1706,7 +1755,6 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -1804,13 +1852,11 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -2007,6 +2053,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
 }
 
 .emotion-4 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2025,6 +2072,12 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-6 {
@@ -2205,116 +2258,130 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   width: 1px;
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="-1"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="-1"
-    />
-    <div
-      data-focus-lock-disabled="disabled"
+      class="nk-layer"
     >
-      <div
-        class="emotion-1"
-      >
+      <div>
         <div
-          aria-modal="false"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-0 nk-overlay-enter-done"
+          data-testid="overlay"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="-1"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="-1"
+        />
+        <div
+          data-focus-lock-disabled="disabled"
         >
           <div
-            class="emotion-3"
-            data-autofocus-inside="true"
+            class="emotion-1"
           >
             <div
-              class="emotion-4"
-            />
-            <div
-              class="emotion-5"
+              aria-modal="false"
+              class="nk-modal-enter-done emotion-2"
+              data-testid="modal"
+              role="dialog"
             >
-              <p
-                class="emotion-6"
-              >
-                Modal header content
-              </p>
-            </div>
-            <div
-              class="emotion-7"
-              data-testid="dialog-content"
-            >
-              <p
-                class="emotion-6"
-              >
-                Modal body content
-              </p>
-            </div>
-            <div
-              class="emotion-9"
-            >
-              <button
-                aria-describedby="mock-nk-1"
-                aria-label="close"
-                class="emotion-10"
-                data-testid="button"
-                type="button"
+              <div
+                class="emotion-3"
+                data-autofocus-inside="true"
               >
                 <div
-                  class="emotion-11"
+                  class="emotion-4"
+                />
+                <div
+                  class="emotion-5"
                 >
-                  <div
-                    class="emotion-12"
+                  <p
+                    class="emotion-6"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-13 emotion-14"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </div>
+                    Modal header content
+                  </p>
                 </div>
-              </button>
+                <div
+                  class="emotion-7"
+                  data-testid="dialog-content"
+                >
+                  <p
+                    class="emotion-6"
+                  >
+                    Modal body content
+                  </p>
+                </div>
+                <div
+                  class="emotion-9"
+                >
+                  <button
+                    aria-describedby="mock-nk-1"
+                    aria-label="close"
+                    class="emotion-10"
+                    data-testid="button"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-11"
+                    >
+                      <div
+                        class="emotion-12"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="emotion-13 emotion-14"
+                          fill="currentColor"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <span
+                  class="emotion-15"
+                  id="mock-nk-1"
+                >
+                  With the next tab you will be leaving the dialog window.
+                </span>
+              </div>
             </div>
-            <span
-              class="emotion-15"
-              id="mock-nk-1"
-            >
-              With the next tab you will be leaving the dialog window.
-            </span>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="-1"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="-1"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
 <DocumentFragment>
+  <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
@@ -2322,7 +2389,6 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -2420,13 +2486,11 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -2610,6 +2674,7 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2628,6 +2693,12 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-5 {
@@ -2792,99 +2863,113 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   }
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
-      <div
-        class="emotion-1"
-      >
+      <div>
         <div
-          aria-labelledby="headerLabel"
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-0 nk-overlay-enter-done"
+          data-testid="overlay"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="1"
+        />
+        <div
+          data-focus-lock-disabled="false"
         >
           <div
-            class="emotion-3"
-          />
-          <div
-            class="emotion-4"
+            class="emotion-1"
           >
             <div
-              id="headerLabel"
-            >
-              Overridden dialog header
-            </div>
-          </div>
-          <div
-            class="emotion-5"
-            data-testid="dialog-content"
-          />
-          <div
-            class="emotion-6"
-          >
-            <button
-              aria-label="close"
-              class="emotion-7"
-              data-testid="button"
-              type="button"
+              aria-labelledby="headerLabel"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                class="emotion-8"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
               >
                 <div
-                  class="emotion-9"
+                  id="headerLabel"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-10 emotion-11"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
+                  Overridden dialog header
                 </div>
               </div>
-            </button>
+              <div
+                class="emotion-5"
+                data-testid="dialog-content"
+              />
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-7"
+                  data-testid="button"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-10 emotion-11"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal renders with aria-describedby attribute 1`] = `
 <DocumentFragment>
+  <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
@@ -2892,7 +2977,6 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -2990,13 +3074,11 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -3180,6 +3262,7 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -3347,101 +3430,115 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   }
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
-      <div
-        class="emotion-1"
-      >
+      <div>
         <div
-          aria-describedby="description purpose"
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-0 nk-overlay-enter-done"
+          data-testid="overlay"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="1"
+        />
+        <div
+          data-focus-lock-disabled="false"
         >
           <div
-            class="emotion-3"
-          />
-          <div
-            class="emotion-4"
-            data-testid="dialog-content"
+            class="emotion-1"
           >
             <div
-              id="description"
-            >
-              Overridden dialog components
-            </div>
-            <div
-              id="purpose"
-            >
-              Showing different styles
-            </div>
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <button
-              aria-label="close"
-              class="emotion-6"
-              data-testid="button"
-              type="button"
+              aria-describedby="description purpose"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                class="emotion-7"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
+                data-testid="dialog-content"
               >
                 <div
-                  class="emotion-8"
+                  id="description"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-9 emotion-10"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
+                  Overridden dialog components
+                </div>
+                <div
+                  id="purpose"
+                >
+                  Showing different styles
                 </div>
               </div>
-            </button>
+              <div
+                class="emotion-5"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-6"
+                  data-testid="button"
+                  type="button"
+                >
+                  <div
+                    class="emotion-7"
+                  >
+                    <div
+                      class="emotion-8"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-9 emotion-10"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal renders with different closePosition 1`] = `
 <DocumentFragment>
+  <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
@@ -3449,7 +3546,6 @@ exports[`Modal renders with different closePosition 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -3547,13 +3643,11 @@ exports[`Modal renders with different closePosition 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'close header' 'content content';
   grid-template-columns: auto 1fr;
@@ -3737,6 +3831,7 @@ exports[`Modal renders with different closePosition 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -3755,6 +3850,12 @@ exports[`Modal renders with different closePosition 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-5 {
@@ -3923,104 +4024,118 @@ exports[`Modal renders with different closePosition 1`] = `
   }
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
-      <div
-        class="emotion-1"
-      >
+      <div>
         <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-0 nk-overlay-enter-done"
+          data-testid="overlay"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="1"
+        />
+        <div
+          data-focus-lock-disabled="false"
         >
           <div
-            class="emotion-3"
-          />
-          <div
-            class="emotion-4"
+            class="emotion-1"
           >
-            <p
-              class="emotion-5"
-            >
-              Modal header content
-            </p>
-          </div>
-          <div
-            class="emotion-6"
-            data-testid="dialog-content"
-          >
-            <p
-              class="emotion-5"
-            >
-              Modal body content
-            </p>
-          </div>
-          <div
-            class="emotion-8"
-          >
-            <button
-              aria-label="close"
-              class="emotion-9"
-              data-testid="button"
-              type="button"
+            <div
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                class="emotion-10"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
               >
-                <div
-                  class="emotion-11"
+                <p
+                  class="emotion-5"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-12 emotion-13"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </div>
+                  Modal header content
+                </p>
               </div>
-            </button>
+              <div
+                class="emotion-6"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-5"
+                >
+                  Modal body content
+                </p>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-9"
+                  data-testid="button"
+                  type="button"
+                >
+                  <div
+                    class="emotion-10"
+                  >
+                    <div
+                      class="emotion-11"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal renders with logical padding props 1`] = `
 <DocumentFragment>
+  <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
@@ -4028,7 +4143,6 @@ exports[`Modal renders with logical padding props 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -4126,13 +4240,11 @@ exports[`Modal renders with logical padding props 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -4318,6 +4430,7 @@ exports[`Modal renders with logical padding props 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -4336,6 +4449,12 @@ exports[`Modal renders with logical padding props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-5 {
@@ -4504,104 +4623,118 @@ exports[`Modal renders with logical padding props 1`] = `
   }
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
-      <div
-        class="emotion-1"
-      >
+      <div>
         <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-0 nk-overlay-enter-done"
+          data-testid="overlay"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="1"
+        />
+        <div
+          data-focus-lock-disabled="false"
         >
           <div
-            class="emotion-3"
-          />
-          <div
-            class="emotion-4"
+            class="emotion-1"
           >
-            <p
-              class="emotion-5"
-            >
-              Modal header content
-            </p>
-          </div>
-          <div
-            class="emotion-6"
-            data-testid="dialog-content"
-          >
-            <p
-              class="emotion-5"
-            >
-              Modal body content
-            </p>
-          </div>
-          <div
-            class="emotion-8"
-          >
-            <button
-              aria-label="close"
-              class="emotion-9"
-              data-testid="button"
-              type="button"
+            <div
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                class="emotion-10"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
               >
-                <div
-                  class="emotion-11"
+                <p
+                  class="emotion-5"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-12 emotion-13"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </div>
+                  Modal header content
+                </p>
               </div>
-            </button>
+              <div
+                class="emotion-6"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-5"
+                >
+                  Modal body content
+                </p>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-9"
+                  data-testid="button"
+                  type="button"
+                >
+                  <div
+                    class="emotion-10"
+                  >
+                    <div
+                      class="emotion-11"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal renders without close button 1`] = `
 <DocumentFragment>
+  <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
@@ -4609,7 +4742,6 @@ exports[`Modal renders without close button 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -4707,13 +4839,11 @@ exports[`Modal renders without close button 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -4897,6 +5027,7 @@ exports[`Modal renders without close button 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -4915,6 +5046,12 @@ exports[`Modal renders without close button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-5 {
@@ -4928,69 +5065,83 @@ exports[`Modal renders without close button 1`] = `
   padding: 24px;
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
-      <div
-        class="emotion-1"
-      >
+      <div>
         <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-0 nk-overlay-enter-done"
+          data-testid="overlay"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="1"
+        />
+        <div
+          data-focus-lock-disabled="false"
         >
           <div
-            class="emotion-3"
-          />
-          <div
-            class="emotion-4"
+            class="emotion-1"
           >
-            <p
-              class="emotion-5"
+            <div
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2"
+              data-testid="modal"
+              role="dialog"
             >
-              Modal header content
-            </p>
-          </div>
-          <div
-            class="emotion-6"
-            data-testid="dialog-content"
-          >
-            <p
-              class="emotion-5"
-            >
-              Modal body content
-            </p>
+              <div
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
+              >
+                <p
+                  class="emotion-5"
+                >
+                  Modal header content
+                </p>
+              </div>
+              <div
+                class="emotion-6"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-5"
+                >
+                  Modal body content
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal renders without header 1`] = `
 <DocumentFragment>
+  <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
@@ -4998,7 +5149,6 @@ exports[`Modal renders without header 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -5096,13 +5246,11 @@ exports[`Modal renders without header 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -5286,6 +5434,7 @@ exports[`Modal renders without header 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -5457,95 +5606,109 @@ exports[`Modal renders without header 1`] = `
   }
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
-      <div
-        class="emotion-1"
-      >
+      <div>
         <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-0 nk-overlay-enter-done"
+          data-testid="overlay"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="1"
+        />
+        <div
+          data-focus-lock-disabled="false"
         >
           <div
-            class="emotion-3"
-          />
-          <div
-            class="emotion-4"
-            data-testid="dialog-content"
+            class="emotion-1"
           >
-            <p
-              class="emotion-5"
-            >
-              Modal body content
-            </p>
-          </div>
-          <div
-            class="emotion-6"
-          >
-            <button
-              aria-label="close"
-              class="emotion-7"
-              data-testid="button"
-              type="button"
+            <div
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                class="emotion-8"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
+                data-testid="dialog-content"
               >
-                <div
-                  class="emotion-9"
+                <p
+                  class="emotion-5"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-10 emotion-11"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </div>
+                  Modal body content
+                </p>
               </div>
-            </button>
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-7"
+                  data-testid="button"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-10 emotion-11"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal renders without header and close 1`] = `
 <DocumentFragment>
+  <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
@@ -5553,7 +5716,6 @@ exports[`Modal renders without header and close 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -5651,13 +5813,11 @@ exports[`Modal renders without header and close 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -5851,57 +6011,71 @@ exports[`Modal renders without header and close 1`] = `
   margin: 0;
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
-      <div
-        class="emotion-1"
-      >
+      <div>
         <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-0 nk-overlay-enter-done"
+          data-testid="overlay"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="1"
+        />
+        <div
+          data-focus-lock-disabled="false"
         >
           <div
-            class="emotion-3"
-            data-testid="dialog-content"
+            class="emotion-1"
           >
-            <p
-              class="emotion-4"
+            <div
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2"
+              data-testid="modal"
+              role="dialog"
             >
-              Modal body content
-            </p>
+              <div
+                class="emotion-3"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-4"
+                >
+                  Modal body content
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal renders without overlay 1`] = `
 <DocumentFragment>
+  <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />
   .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5921,13 +6095,11 @@ exports[`Modal renders without overlay 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-1 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -6111,6 +6283,7 @@ exports[`Modal renders without overlay 1`] = `
 }
 
 .emotion-2 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -6129,6 +6302,12 @@ exports[`Modal renders without overlay 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -6297,107 +6476,120 @@ exports[`Modal renders without overlay 1`] = `
   }
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
-      <div
-        class="emotion-0"
-      >
+      <div>
         <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-1"
-          data-testid="modal"
-          role="dialog"
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="1"
+        />
+        <div
+          data-focus-lock-disabled="false"
         >
           <div
-            class="emotion-2"
-          />
-          <div
-            class="emotion-3"
+            class="emotion-0"
           >
-            <p
-              class="emotion-4"
-            >
-              Modal header content
-            </p>
-          </div>
-          <div
-            class="emotion-5"
-            data-testid="dialog-content"
-          >
-            <p
-              class="emotion-4"
-            >
-              Modal body content
-            </p>
-          </div>
-          <div
-            class="emotion-7"
-          >
-            <button
-              aria-label="close"
-              class="emotion-8"
-              data-testid="button"
-              type="button"
+            <div
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-1"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                class="emotion-9"
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
               >
-                <div
-                  class="emotion-10"
+                <p
+                  class="emotion-4"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </div>
+                  Modal header content
+                </p>
               </div>
-            </button>
+              <div
+                class="emotion-5"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-4"
+                >
+                  Modal body content
+                </p>
+              </div>
+              <div
+                class="emotion-7"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-8"
+                  data-testid="button"
+                  type="button"
+                >
+                  <div
+                    class="emotion-9"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-11 emotion-12"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
 <DocumentFragment>
-  <p
+  <div
     aria-hidden="true"
     data-aria-hidden="true"
-    data-testid="outside-content"
   >
-    other content
-  </p>
+    <p
+      data-testid="outside-content"
+    >
+      other content
+    </p>
+  </div>
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
@@ -6405,7 +6597,6 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
 }
@@ -6503,13 +6694,11 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
-  z-index: 80;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   position: fixed;
-  z-index: 80;
   display: grid;
   grid-template-areas: 'header close' 'content content';
   grid-template-columns: 1fr auto;
@@ -6693,6 +6882,7 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
 }
 
 .emotion-3 {
+  color: #2E2E2E;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -6860,123 +7050,139 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   }
 }
 
-<div>
+<div
+    aria-hidden="true"
+    class="nk-layer-organizer"
+    data-aria-hidden="true"
+  >
     <div
-      class="emotion-0 nk-overlay-enter-done"
-      data-testid="overlay"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="1"
-    />
-    <div
-      data-focus-lock-disabled="false"
+      class="nk-layer"
     >
-      <div
-        class="emotion-1"
-      >
+      <div>
         <div
-          aria-modal="true"
-          class="nk-modal-enter-done emotion-2"
-          data-testid="modal"
-          role="dialog"
+          class="emotion-0 nk-overlay-enter-done"
+          data-testid="overlay"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="1"
+        />
+        <div
+          data-focus-lock-disabled="false"
         >
           <div
-            class="emotion-3"
-          />
-          <div
-            class="emotion-4"
-            data-testid="dialog-content"
+            class="emotion-1"
           >
-            Dialog content
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <button
-              aria-label="close"
-              class="emotion-6"
-              data-testid="button"
-              type="button"
+            <div
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                class="emotion-7"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
+                data-testid="dialog-content"
               >
-                <div
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-9 emotion-10"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </div>
+                Dialog content
               </div>
-            </button>
+              <div
+                class="emotion-5"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-6"
+                  data-testid="button"
+                  type="button"
+                >
+                  <div
+                    class="emotion-7"
+                  >
+                    <div
+                      class="emotion-8"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-9 emotion-10"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="0"
-    />
   </div>
 </DocumentFragment>
 `;
 
 exports[`Modal toggle aria-hidden to content outside dialog 2`] = `
 <DocumentFragment>
-  <p
-    data-testid="outside-content"
-  >
-    other content
-  </p>
-  .emotion-0 {
-  z-index: 80;
-}
-
-<div>
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="-1"
-    />
-    <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="-1"
-    />
-    <div
-      data-focus-lock-disabled="disabled"
+  <div>
+    <p
+      data-testid="outside-content"
     >
-      <div
-        class="emotion-0"
-      />
-    </div>
+      other content
+    </p>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  >
     <div
-      data-focus-guard="true"
-      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-      tabindex="-1"
-    />
+      class="nk-layer"
+    >
+      <div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="-1"
+        />
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="-1"
+        />
+        <div
+          data-focus-lock-disabled="disabled"
+        >
+          <div
+            class="emotion-0"
+          />
+        </div>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="-1"
+        />
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
