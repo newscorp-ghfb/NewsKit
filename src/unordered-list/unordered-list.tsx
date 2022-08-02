@@ -17,7 +17,7 @@ import {IconFilledCircle} from '../icons';
 
 const ThemelessUnorderedList: React.FC<UnorderedListProps> = ({
   children,
-  listItemMarker: ListItemMarker,
+  listItemMarker: ListItemMarker = IconFilledCircle,
   markerAlign,
   overrides,
 }) => {
@@ -72,15 +72,8 @@ const ThemelessUnorderedList: React.FC<UnorderedListProps> = ({
                 aria-hidden="true"
                 markerAlign={markerAlign}
               >
-                {ListItemMarker ? (
+                {ListItemMarker === null ? null : (
                   <ListItemMarker
-                    overrides={{
-                      size: markerSizeToken,
-                      stylePreset: markerStylePresetToken,
-                    }}
-                  />
-                ) : (
-                  <IconFilledCircle
                     overrides={{
                       size: markerSizeToken,
                       stylePreset: markerStylePresetToken,

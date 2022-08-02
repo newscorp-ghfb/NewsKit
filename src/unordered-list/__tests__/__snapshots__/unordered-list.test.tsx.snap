@@ -1129,233 +1129,6 @@ exports[`UnorderedList renders with defaults 1`] = `
 </DocumentFragment>
 `;
 
-exports[`UnorderedList renders with defaults when marker is incorrect 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.emotion-1:last-child+div {
-  margin: 0;
-}
-
-.emotion-2 {
-  margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-3 {
-  margin-right: 8px;
-  color: #2E2E2E;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-3 svg {
-  fill: #2E2E2E;
-}
-
-.emotion-3 svg,
-.emotion-3 img {
-  display: block;
-}
-
-.emotion-4 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  color: #2E2E2E;
-  fill: #2E2E2E;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-4.emotion-4 {
-  width: 8px;
-  height: 8px;
-  color: #2E2E2E;
-  fill: #2E2E2E;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4.emotion-4 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4.emotion-4 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-6 {
-  margin: 0;
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-}
-
-.emotion-6 svg {
-  fill: #2E2E2E;
-}
-
-.emotion-6::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-6::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-<ul
-    class="emotion-0"
-    role="list"
-  >
-    <li
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          aria-hidden="true"
-          class="emotion-3"
-        >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-            />
-          </svg>
-        </div>
-        <p
-          class="emotion-6"
-        >
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </p>
-      </div>
-    </li>
-    <li
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          aria-hidden="true"
-          class="emotion-3"
-        >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-            />
-          </svg>
-        </div>
-        <p
-          class="emotion-6"
-        >
-          second node
-        </p>
-      </div>
-    </li>
-    <li
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          aria-hidden="true"
-          class="emotion-3"
-        >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-            />
-          </svg>
-        </div>
-        <p
-          class="emotion-6"
-        >
-          third node
-        </p>
-      </div>
-    </li>
-  </ul>
-</DocumentFragment>
-`;
-
 exports[`UnorderedList renders with logical props 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -2032,6 +1805,133 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
         </div>
         <p
           class="emotion-6"
+        >
+          third node
+        </p>
+      </div>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`UnorderedList renders with no list item marker 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.emotion-1:last-child+div {
+  margin: 0;
+}
+
+.emotion-2 {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-3 {
+  margin-right: 8px;
+  color: #2E2E2E;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-3 svg,
+.emotion-3 img {
+  display: block;
+}
+
+.emotion-4 {
+  margin: 0;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-4 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+<ul
+    class="emotion-0"
+    role="list"
+  >
+    <li
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          aria-hidden="true"
+          class="emotion-3"
+        />
+        <p
+          class="emotion-4"
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        </p>
+      </div>
+    </li>
+    <li
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          aria-hidden="true"
+          class="emotion-3"
+        />
+        <p
+          class="emotion-4"
+        >
+          second node
+        </p>
+      </div>
+    </li>
+    <li
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          aria-hidden="true"
+          class="emotion-3"
+        />
+        <p
+          class="emotion-4"
         >
           third node
         </p>
