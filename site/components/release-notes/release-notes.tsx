@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import {TextBlock} from 'newskit';
+import {TextBlock, styled, getSizingCssFromTheme} from 'newskit';
 import {FullRelease} from '../../utils/release-notes/types';
 import {GITHUB_URL, JIRA_URL, REPO} from '../../utils/release-notes/constants';
 
@@ -55,21 +55,27 @@ const addTicketLinks = (body: string) =>
     return `[${ticketId}](${ticketLink})`;
   });
 
+const ReleaseNotesContainer = styled.div`
+  ${getSizingCssFromTheme('marginBlockStart', 'sizing060')};
+`;
+
 const ReleaseNotes = ({body}: Pick<FullRelease, 'body'>) => (
-  <TextBlock
-    typographyPreset="editorialParagraph030"
-    stylePreset="gitHubMarkDownText"
-  >
-    <ReactMarkdown>
-      {modifyContent(
-        addPRLinks(
-          addProfileLinks(
-            addTicketLinks(addCompareLinks(removeTriggerRelease(body))),
+  <ReleaseNotesContainer>
+    <TextBlock
+      typographyPreset="editorialParagraph030"
+      stylePreset="gitHubMarkDownText"
+    >
+      <ReactMarkdown>
+        {modifyContent(
+          addPRLinks(
+            addProfileLinks(
+              addTicketLinks(addCompareLinks(removeTriggerRelease(body))),
+            ),
           ),
-        ),
-      )}
-    </ReactMarkdown>
-  </TextBlock>
+        )}
+      </ReactMarkdown>
+    </TextBlock>
+  </ReleaseNotesContainer>
 );
 
 export default ReleaseNotes;
