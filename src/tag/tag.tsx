@@ -15,23 +15,26 @@ const StyledFlag = styled(Flag)`
   ${({size}) => getTransitionPreset(`tag.${size}`, '')};
 `;
 
-const ThemelessTag = ({overrides = {}, disabled, href, ...props}: TagProps) => {
-  const theme = useTheme();
-  const {size = TagSize.Medium} = props;
+const ThemelessTag = React.forwardRef<HTMLDivElement, TagProps>(
+  ({overrides = {}, disabled, href, ...props}, ref) => {
+    const theme = useTheme();
+    const {size = TagSize.Medium} = props;
 
-  return (
-    <StyledFlag
-      data-testid="tag"
-      disabled={disabled}
-      href={disabled ? undefined : href}
-      {...emotionAs(href && !disabled ? 'a' : 'div')}
-      {...props}
-      overrides={{
-        ...theme.componentDefaults.tag[size],
-        ...filterOutFalsyProperties(overrides),
-      }}
-    />
-  );
-};
+    return (
+      <StyledFlag
+        ref={ref}
+        data-testid="tag"
+        disabled={disabled}
+        href={disabled ? undefined : href}
+        {...emotionAs(href && !disabled ? 'a' : 'div')}
+        {...props}
+        overrides={{
+          ...theme.componentDefaults.tag[size],
+          ...filterOutFalsyProperties(overrides),
+        }}
+      />
+    );
+  },
+);
 
 export const Tag = withOwnTheme(ThemelessTag)({defaults, stylePresets});
