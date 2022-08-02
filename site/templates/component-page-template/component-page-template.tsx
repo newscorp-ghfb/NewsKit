@@ -68,8 +68,8 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
     >
       {interactiveDemo && <InteractiveDemoSection {...interactiveDemo} />}
       {anatomy && <AnatomySection {...anatomy} />}
-      {options && <OptionsSection {...options} />}
       {tutorial && <TutorialSection {...tutorial} />}
+      {options && <OptionsSection {...options} />}
       {states && <StatesSection {...states} />}
       {behaviors && <BehaviorsSection {...behaviors} />}
       {codeExamples && <CodeExamplesSection {...codeExamples} />}
