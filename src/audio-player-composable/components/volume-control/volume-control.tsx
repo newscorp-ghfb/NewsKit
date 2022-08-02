@@ -79,8 +79,9 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   const gridAreas = layout === 'vertical' ? verticalAreas : `muteButton slider`;
   const gridColumns = layout === 'vertical' ? '1fr' : 'auto 1fr';
   const [volumeSliderInstructionId] = useReactKeys(1);
+  // opens volume control on hover/focus when layout = horizontalExpandable.
   const [open, setOpen] = useState(false);
-  // makes sure feedback element is fully visible and not cropped when slider is open
+  // makes sure feedback element is fully visible and not cropped when slider is open and user hover/focus on it.
   const [isVisible, setIsVisible] = React.useState(false);
 
   return (
