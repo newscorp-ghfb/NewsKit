@@ -53,6 +53,10 @@ Scripts should be named using the following naming convention:
 
 * `eyes:storybook` -> runs the applitools storybook tests locally. Requires APPLITOOLS_API_KEY to be exported prior to running.
 
+* `test:visual:comps:local` -> sets required env variables and runs the applitools component tests locally.
+
+* `e2e:visual:docs:local` -> sets required env variables and runs the applitools doc site tests locally.
+
 ## Storybook
 
 * `dev:storybook` -> locally starts storybook at port 6006.
