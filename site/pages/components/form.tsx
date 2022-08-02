@@ -1,8 +1,10 @@
 import React from 'react';
-import {InlineMessage, toNewsKitIcon} from 'newskit';
+import {InlineMessage, TextBlock, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
+import {ContentText} from '../../components/text-section/content-text';
 import {MetaStatus} from '../../components/meta/types';
 import {Link} from '../../components/link';
+import {Code} from '../../components/code';
 import {InlineCode} from '../../components/markdown-elements';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
@@ -283,6 +285,121 @@ const FormComponent = (layoutProps: LayoutProps) => (
         </>
       ),
       media: getIllustrationComponent('components/form/form-structure'),
+    }}
+    behaviors={{
+      introduction: (
+        <>
+          The following guidance describes how the FormInput components, and the
+          form behave.
+          <br />
+          <br />
+          <ContentText title="FormInput validation" titleAs="span">
+            FormInput validation rules can be defined for onSubmit or onBlur,
+            for both the initial validation and re-validation using the form.
+            <br />
+            <br />
+            For more information about validation rules, refer to{' '}
+            <Link
+              href="https://react-hook-form.com/get-started/#Applyvalidation"
+              target="_blank"
+            >
+              React Hook Form, apply validation.
+            </Link>
+            <br />
+            <br />
+            Each FormInput component (ie FormInputTextField) needs to be
+            individually wrapped in the form component in order for validation
+            to work eg:
+          </ContentText>
+          <TextBlock typographyPreset="editorialLabel010">
+            <Code>
+              {`<Form onSubmit={onSubmit}>
+  <FormInput
+    name="checkbox"   
+    rules={{
+      required: 'Required field',
+    }}
+  >
+    <FormInputCheckbox value="tc" />
+  </FormInput> 
+  <FormInput
+        name="select"
+        rules={{
+          required: 'Required field',
+        }}
+      >
+    <FormInputSelect>
+      <SelectOption value="Option 1">Option 1</SelectOption>
+      <SelectOption value="Option 2">Option 2</SelectOption>
+    </FormInputSelect>
+  </FormInput>
+  <Button type="submit">Submit</Button>
+</Form>`}
+            </Code>
+          </TextBlock>
+          <br />
+          <br />
+          <ContentText title="Form yup schema" titleAs="span">
+            The form component supports schema validation. To use an external
+            validation library, for example, <InlineCode>Yup</InlineCode>, you
+            can pass <InlineCode>yupResolver(schema)</InlineCode>
+            to the resolver prop. For more information about schema validation
+            with React Hook Form, refer to{' '}
+            <Link
+              href="https://react-hook-form.com/get-started/#SchemaValidation"
+              target="_blank"
+            >
+              React Hook Form, schema validation.
+            </Link>
+          </ContentText>
+          <TextBlock typographyPreset="editorialLabel010">
+            <Code>
+              {`import {yupResolver} from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+
+const schema = yup.object().shape({
+  email: yup.string().email().required(),
+  username: yup.string().required(),
+});
+
+<Form onSubmit={onSubmit} resolver={yupResolver(schema)}>
+  <FormInput name="email">
+    <FormInputLabel>E-mail</FormInputLabel>
+    <FormInputTextField type="email" />
+    <FormInputAssistiveText>Enter your email</FormInputAssistiveText>
+  </FormInput>
+  <FormInput name="username">
+    <FormInputLabel>Username</FormInputLabel>
+    <FormInputTextField />
+    <FormInputAssistiveText>Enter username</FormInputAssistiveText>
+  </FormInput>
+  <Button type="submit">
+    Submit
+  </Button>
+</Form>;
+`}
+            </Code>
+          </TextBlock>
+        </>
+      ),
+      cards: [
+        {
+          title: 'Assistive Text Min-Height',
+          description:
+            'A minimum height can be applied to the assistive text container. This is used to prevent the layout shift in the page when the assistive text shows and hides.',
+          media: getIllustrationComponent(
+            'components/form/behaviours/assistive-text-min-height',
+          ),
+        },
+        {
+          title: 'Assistive Text overflow wrap',
+          description:
+            'When the assistive text is too long for the available horizontal space, it wraps to form another line.',
+          media: getIllustrationComponent(
+            'components/form/behaviours/assistive-text-overflow-wrap',
+          ),
+        },
+      ],
     }}
   />
 );
