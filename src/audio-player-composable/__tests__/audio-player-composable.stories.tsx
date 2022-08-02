@@ -477,7 +477,7 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
             <Button
               overrides={{
                 stylePreset: 'buttonOutlinedSecondary',
-                minWidth: '80px',
+                minWidth: withLeadingIcon ? '80px' : '52px',
               }}
               size={ButtonSize.Small}
             >
@@ -973,7 +973,7 @@ export const AudioPlayerPlaybackSpeedTriggerButton = () => (
     <StorybookHeading>
       Audio Player - playback speed control trigger overrides
     </StorybookHeading>
-    <div style={{marginTop: 300}}>
+    <div style={{marginTop: 280}}>
       <StorybookSubHeading>
         playback speed control custom trigger button
       </StorybookSubHeading>
@@ -983,6 +983,8 @@ export const AudioPlayerPlaybackSpeedTriggerButton = () => (
       >
         <AudioPlayerPlaybackSpeedTriggerComponent />
       </AudioPlayerComposable>
+      <br />
+      <br />
       <StorybookSubHeading>
         playback speed control custom trigger button with a leading icon
       </StorybookSubHeading>
