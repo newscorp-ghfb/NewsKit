@@ -495,6 +495,37 @@ const schema = yup.object().shape({
         },
       ],
     }}
+    accessibility={{
+      introduction: 'The form has the following accessibility considerations:',
+      interaction: {
+        title: 'Keyboard Interactions',
+        tableRows: [
+          {
+            command: ['Enter'],
+            description: `Submits the form`,
+          },
+        ],
+      },
+      aria: {
+        title: 'WAI-ARIA',
+        tableRows: [
+          {
+            element: 'required',
+            attribute: 'aria-required',
+            value: 'true, undefined',
+            description:
+              'This attribute informs the user that a FormInput component is required. When set to true, screen readers notify users of FormInputs that are required.',
+          },
+          {
+            element: 'invalid',
+            attribute: 'aria-invalid',
+            value: "'true', 'false'",
+            description:
+              'This attribute informs the user when there is an error. By default it’s set to false. Values include true, spelling, and grammar. Screen readers will alert users when the FormInput component is set to any value other than false.',
+          },
+        ],
+      },
+    }}
   />
 );
 
