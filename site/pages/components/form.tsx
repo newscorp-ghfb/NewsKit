@@ -175,14 +175,14 @@ const FormComponent = (layoutProps: LayoutProps) => (
               <InlineCode>FormInputAssistiveText</InlineCode> can also display a
               character count to let users know how much text they can enter,
               when there is a limit set on the number of characters on a{' '}
-              <Link href="components/text-field/#component-api">
+              <Link href="/components/text-field/#component-api">
                 text field
               </Link>{' '}
               or text area.
             </>
           ),
           media: getIllustrationComponent(
-            '/components/form/options/assistive-text',
+            'components/form/options/assistive-text',
           ),
         },
         {
@@ -271,6 +271,18 @@ const FormComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/form/options/fieldset'),
         },
       ],
+    }}
+    commonSection={{
+      id: 'formstructure',
+      title: 'Form structure',
+      introduction: (
+        <>
+          The below diagram outlines how FormInput components can be used inside
+          a <Link href="/components/fieldset/">fieldset</Link>, which can then
+          be used to create a full form:
+        </>
+      ),
+      media: getIllustrationComponent('components/form/form-structure'),
     }}
   />
 );
