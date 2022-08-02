@@ -13,8 +13,14 @@ const removeTriggerRelease = (body: string) =>
     (invalidLink: string) => invalidLink.replace('trigger-release@', 'v'),
   );
 
-const removeComments = (body: string) =>
-  body.replace(RegExp(`<!-- .* -->`, 'g'), '');
+const modifyContent = (body: string) =>
+  body
+    // remove the comments at the top of the notes
+    .replace(RegExp(`<!-- .* -->\r\n\r\n`, 'g'), '')
+    // make the new contributors header the same size as the others
+    .replace('## New Contributors', '### New Contributors')
+    // remove the what's changed header
+    .replace("## What's Changed\r\n", '');
 
 const addCompareLinks = (body: string) =>
   body.replaceAll(
@@ -55,7 +61,7 @@ const ReleaseNotes = ({body}: Pick<FullRelease, 'body'>) => (
     stylePreset="gitHubMarkDownText"
   >
     <ReactMarkdown>
-      {removeComments(
+      {modifyContent(
         addPRLinks(
           addProfileLinks(
             addTicketLinks(addCompareLinks(removeTriggerRelease(body))),
