@@ -173,7 +173,7 @@
     "react-codesandboxer": "^3.1.1",
     "react-dom": "17",
     "react-helmet": "^5.2.1",
-    "react-markdown": "^8.0.3",
+    "react-markdown": "^6.0.0",
     "react-phone-number-input": "^3.1.23",
     "react-syntax-highlighter": "^13.0.0",
     "react-test-renderer": "17",

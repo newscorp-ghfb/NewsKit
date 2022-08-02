@@ -1,6 +1,6 @@
 import {diff} from 'semver';
 import {FullRelease, Release} from './types';
-import {GITHUB_API_URL, REPO} from './constants';
+import {GITHUB_API_URL, GITHUB_URL, JIRA_URL, REPO} from './constants';
 
 export async function fetchGitHubReleases(per_page: number = 10) {
   const res = await fetch(
@@ -45,3 +45,49 @@ export const addChangeLevelToReleases: (
     )
     .sort(sortReleases(false));
 };
+
+export const formatGitHubMarkDown = (raw: string) =>
+  raw
+    // some 'compare releases' links are invalid and need to be corrected
+    .replaceAll(
+      RegExp(
+        `${GITHUB_URL}/${REPO}/compare/v\\d*\\.\\d*\\.\\d*...trigger-release@\\d*\\.\\d*\\.\\d*`,
+        'g',
+      ),
+      (invalidLink: string) => invalidLink.replace('trigger-release@', 'v'),
+    )
+    // hyperlink the 'compare releases' links
+    .replaceAll(
+      RegExp(
+        `${GITHUB_URL}/${REPO}/compare/v\\d*\\.\\d*\\.\\d*...v\\d*\\.\\d*\\.\\d*`,
+        'g',
+      ),
+      (link: string) => `[${link}](${link})`,
+    )
+    // hyperlink the JIRA tickets in commit messages
+    .replaceAll(RegExp(`PPDSC-\\d*`, 'g'), (ticketId: string) => {
+      const ticketLink = `${JIRA_URL}/browse/${ticketId}`;
+      return `[${ticketId}](${ticketLink})`;
+    })
+    // hyperlink to GitHub profiles of commit authors
+    .replaceAll(
+      RegExp(`@[a-zA-Z\\d](?:[a-zA-Z\\d]|-(?=[a-zA-Z\\d])){0,38}`, 'g'),
+      (handle: string) => {
+        const profileLink = `${GITHUB_URL}/${handle.split('@')[1]}`;
+        return `[${handle}](${profileLink})`;
+      },
+    )
+    // hyperlink to PRs
+    .replaceAll(
+      RegExp(`${GITHUB_URL}/${REPO}/pull/\\d*`, 'g'),
+      (link: string) => {
+        const PRNumber = link.split('/').slice(-1)[0];
+        return `[#${PRNumber}](${link})`;
+      },
+    )
+    // remove the comments at the top of the notes
+    .replace(RegExp(`<!-- .* -->\r\n\r\n`, 'g'), '')
+    // make the new contributors header the same size as the others
+    .replace('## New Contributors', '### New Contributors')
+    // remove the what's changed header
+    .replace("## What's Changed\r\n", '');

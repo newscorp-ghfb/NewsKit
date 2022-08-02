@@ -3,6 +3,10 @@
 exports[`ReleaseNotes renders correctly 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin-block-start: 32px;
+}
+
+.emotion-1 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 18px;
@@ -12,38 +16,310 @@ exports[`ReleaseNotes renders correctly 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-0::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-0::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-<p
+.emotion-2 {
+  display: inline-block;
+  color: #3358CC;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+.emotion-2:active:not(:disabled) {
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #213A82;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-5 {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-7 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-7.emotion-7 {
+  width: 16px;
+  height: 16px;
+}
+
+<div
     class="emotion-0"
   >
-    
-\\r\\n
-\\r\\n
-## What's Changed\\r\\n
-### New Features 🎉\\r\\n
-* feat([PPDSC-2151](https://nidigitalsolutions.jira.com/browse/PPDSC-2151)): Add Outline Style Presets by [@tbradbury](https://github.com/tbradbury) in [#214](https://github.com/newscorp-ghfb/newskit/pull/214)\\r\\n
-* feat([PPDSC-2121](https://nidigitalsolutions.jira.com/browse/PPDSC-2121)): \`&lt;Popover/&gt;\` header close by [@mstuartf](https://github.com/mstuartf) in [#239](https://github.com/newscorp-ghfb/newskit/pull/239)\\r\\n
-### Bug Fixes 🐛\\r\\n
-* fix([PPDSC-2164](https://nidigitalsolutions.jira.com/browse/PPDSC-2164)): assistive text by [@mstuartf](https://github.com/mstuartf) in [#249](https://github.com/newscorp-ghfb/newskit/pull/249)\\r\\n
-### Other Changes 🧱\\r\\n
-* ci([PPDSC-2292](https://nidigitalsolutions.jira.com/browse/PPDSC-2292)): attempt fix of develoment env by [@jps](https://github.com/jps) in [#285](https://github.com/newscorp-ghfb/newskit/pull/285)\\r\\n
-\\r\\n
-## New Contributors\\r\\n
-* [@agagotowiec](https://github.com/agagotowiec) made their first contribution in [#238](https://github.com/newscorp-ghfb/newskit/pull/238)\\r\\n
-\\r\\n
-**Full Changelog**: [https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...v5.7.0](https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...v5.7.0)
+    <div
+      class="emotion-1"
+    >
+      <h3>
+        New Features 🎉
+      </h3>
+      
 
-  </p>
+      <ul>
+        
+
+        <li>
+          feat(
+          <a
+            class="emotion-2"
+            href="https://nidigitalsolutions.jira.com/browse/PPDSC-2151"
+          >
+            <span
+              class="emotion-3"
+            >
+              <span
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  PPDSC-2151
+                </span>
+              </span>
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  class="emotion-7 emotion-8"
+                  fill="currentColor"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    External link
+                  </title>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+          ): Add Outline Style Presets by 
+          <a
+            class="emotion-2"
+            href="https://github.com/tbradbury"
+          >
+            <span
+              class="emotion-3"
+            >
+              <span
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  @tbradbury
+                </span>
+              </span>
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  class="emotion-7 emotion-8"
+                  fill="currentColor"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    External link
+                  </title>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+           in 
+          <a
+            class="emotion-2"
+            href="https://github.com/newscorp-ghfb/newskit/pull/214"
+          >
+            <span
+              class="emotion-3"
+            >
+              <span
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  #214
+                </span>
+              </span>
+              <span
+                class="emotion-4"
+              >
+                <svg
+                  class="emotion-7 emotion-8"
+                  fill="currentColor"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    External link
+                  </title>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
 </DocumentFragment>
 `;
