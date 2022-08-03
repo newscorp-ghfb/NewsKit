@@ -1,5 +1,5 @@
 import React from 'react';
-import {InlineMessage, TextBlock, toNewsKitIcon} from 'newskit';
+import {InlineMessage, TextBlock, toNewsKitIcon, UnorderedList} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {ContentText} from '../../components/text-section/content-text';
 import {MetaStatus} from '../../components/meta/types';
@@ -8,6 +8,7 @@ import {Code} from '../../components/code';
 import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 import {LayoutProps} from '../../components/layout';
+import {IconFilledCircle} from '../../components/icons';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
@@ -20,6 +21,81 @@ const infoIcon = (
     }}
   />
 );
+
+const commonOverridesRows = () => [
+  {
+    attribute: 'paddingInline',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'paddingInlineStart',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical inline start padding of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'paddingInlineEnd',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical inline end padding of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'paddingBlock',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'paddingBlockStart',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical block start padding of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'paddingBlockEnd',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical block end padding of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'marginInline',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical inline start and end margin of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'marginInlineStart',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical inline start margin of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'marginInlineEnd',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical inline end margin of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'marginBlock',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical block start and end margin of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'marginBlockStart',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical block start margin of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'marginBlockEnd',
+    type: 'MQ<string>',
+    description:
+      'It can take one space token to specify the logical block end margin of the container. This space token can also be used on breakpoints.',
+  },
+];
 
 const FormComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -615,90 +691,48 @@ const schema = yup.object().shape({
               required: undefined,
             },
           ],
-          overridesRows: [
-            {
-              attribute: 'paddingInline',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'paddingInlineStart',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical inline start padding of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'paddingInlineEnd',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical inline end padding of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'paddingBlock',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'paddingBlockStart',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical block start padding of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'paddingBlockEnd',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical block end padding of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'marginInline',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical inline start and end margin of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'marginInlineStart',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical inline start margin of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'marginInlineEnd',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical inline end margin of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'marginBlock',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical block start and end margin of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'marginBlockStart',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical block start margin of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'marginBlockEnd',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical block end margin of the container. This space token can also be used on breakpoints.',
-            },
-          ],
+          overridesRows: [...commonOverridesRows()],
         },
         {
           title: 'FormInput',
           summary: `The FormInput component has a range of props that can be used to define an appropriate experience for different use cases.`,
           propsRows: [
             {
+              name: 'name',
+              type: 'string',
+              description:
+                'If provided, defines name of the input element, used when submitting an HTML form.',
+            },
+            {
+              name: 'size',
+              type: 'string',
+              default: 'medium',
+              description:
+                'If provided, defines the size of the FormInput component.',
+            },
+            {
+              name: 'rules',
+              type: 'Record< string,string | object>',
+              description:
+                'Validation object with the rules required to validate your form.',
+            },
+            {
               name: 'children',
-              type: 'React.ReactElement & { ref?: React.Ref<unknown>; };',
-              description: 'Tooltip reference element.',
-              required: true,
+              type: 'Type JSX.Element  | JSX.Element []',
+              description:
+                'FormInput requires children to be wrapped between them. These children will be part of the FormInput components such a FormInputTextfield,  FormInputRadioButton etc.',
+            },
+            {
+              name: 'id',
+              type: 'string',
+              description:
+                'If provided, the id can be used to reference this element, for example from an aria-describedby attribute.',
+            },
+            {
+              name: 'state',
+              type: 'Type =  ‘disabled’ | ‘valid’ | ‘invalid’',
+              description:
+                'The state prop is optional and can be passed to FormInput to force everything wrapped inside FormInput into a certain state such as ‘disabled’ | ‘valid’ | ‘invalid’. If nothing is provided the state sets itself depending on the FormInput rules and whether the users input is invalid or not.',
             },
           ],
         },
@@ -707,38 +741,242 @@ const schema = yup.object().shape({
           summary: `The FormInputAssistiveText component has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the Form component.`,
           propsRows: [
             {
+              name: 'size',
+              type: ['small', 'medium', 'large'],
+              default: 'medium',
+              description: 'Defines the size of the Assistive Text.',
+            },
+            {
+              name: 'state',
+              type: 'Type = ‘disabled’ | ‘valid’ | ‘invalid’',
+              description:
+                'If provided you can force state onto the Assistive Text',
+            },
+            {
               name: 'children',
-              type: 'React.ReactElement & { ref?: React.Ref<unknown>; };',
-              description: 'Tooltip reference element.',
-              required: true,
+              type: 'React.ReactNode',
+              description:
+                'The Form requires to have at least a Text Field and a submit Button.',
+            },
+            {
+              name: 'startEnhancer',
+              type: 'React.ReactNode',
+              description:
+                'An Icon can be added to the start of the Assistive Text',
+            },
+            {
+              name: 'endEnhancer',
+              type: 'React.ReactNode',
+              description:
+                'An Icon can be added to the end of the Assistive Text',
             },
           ],
           overridesRows: [
             {
-              attribute: 'maxWidth',
+              attribute: 'assistiveText.minHeight',
               type: 'MQ<string>',
-              description: 'Overrides the maxWidth property of the Tooltip.',
+              default: 'space030',
+              description:
+                'If provided, this overrides the minHeight of the FormInputAssistiveText.',
             },
+            {
+              attribute: 'assistiveText.stylePreset',
+              type: 'MQ<string>',
+              default: 'assistiveText',
+              description:
+                'If provided, overrides the stylePreset of the FormInputAssistiveText.',
+            },
+            {
+              attribute: 'assistiveText.typographyPreset',
+              type: 'MQ<string>',
+              default: [
+                'Small = utilityBody010',
+                'Medium = utilityBody020',
+                'Large = utilityBody030',
+              ],
+              description:
+                'If provided, overrides the stylePreset of the FormInputAssistiveText.',
+            },
+            {
+              attribute: 'assistiveText.startEnhancer.iconSize',
+              type: 'MQ<string>',
+              default: [
+                'Small = iconSize010',
+                'Medium = iconSize020',
+                'Large = iconSize020',
+              ],
+              description:
+                'If provided, overrides the size of the start enhancer.',
+            },
+            {
+              attribute: 'assistiveText.startEnhancer.spaceInline',
+              type: 'MQ<string>',
+              default: [
+                'Small = space020',
+                'Medium = space020',
+                'Large = space030',
+              ],
+              description:
+                'If provided, overrides the inline space of the start enhancer.',
+            },
+            {
+              attribute: 'assistiveText.endEnhancer.iconSize',
+              type: 'MQ<string>',
+              default: [
+                'Small = iconSize010',
+                'Medium = iconSize020',
+                'Large = iconSize020',
+              ],
+              description:
+                'If provided, overrides the size of the end enhancer. ',
+            },
+            {
+              attribute: 'assistiveText.endEnhancer.spaceInline',
+              type: 'MQ<string>',
+              default: [
+                'Small = space020',
+                'Medium = space020',
+                'Large = space030',
+              ],
+              description:
+                'If provided, overrides the inline space of the end enhancer.',
+            },
+            ...commonOverridesRows(),
           ],
           propsFooter: (
             <>
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="ForwardRef"
+                aria-label="Assistive Text component"
                 title="Note"
                 overrides={{
                   marginBlockStart: 'space070',
                 }}
               >
-                If the Tooltip is wrapping a functional component, ensure that
-                the functional component accepts a ref using{' '}
-                <Link
-                  href="https://reactjs.org/docs/forwarding-refs.html"
-                  target="_blank"
+                Props and overrides for the Assistive Text component are the
+                same as the FormInputAssistiveText component, as listed above.
+              </InlineMessage>
+            </>
+          ),
+        },
+        {
+          title: 'FormInputLabel',
+          summary:
+            'The FormInputLabel component has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the Form component.',
+          propsRows: [
+            {
+              name: 'size',
+              type: 'string',
+              default: 'medium',
+              description: 'Defines the size of the Assistive Text.',
+            },
+            {
+              name: 'state',
+              type: 'Type = ‘disabled’ | ‘valid’ | ‘invalid’',
+              description: 'If provided you can force state onto the Label',
+            },
+            {
+              name: 'children',
+              type: 'React.ReactNode',
+              description: '',
+              required: true,
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'label.stylePreset',
+              type: 'MQ<string>',
+              default: 'label',
+              description:
+                'If provided, overrides the stylePreset of the FormInputLabel.',
+            },
+            {
+              attribute: 'label.typographyPreset',
+              type: 'MQ<string>',
+              default: [
+                'Small = utilityLabel010',
+                'Medium = utilityLabel020',
+                'Large = utilityLabel030',
+              ],
+              description:
+                'If provided, overrides the typographyPreset of the FormInputLabel.',
+            },
+            {
+              attribute: 'label.spaceInline',
+              type: 'MQ<string>',
+              default: 'space010',
+              description:
+                'If provided, this overrides the inline space of the FormInputLabel.',
+            },
+            {
+              attribute: 'label.spaceStack',
+              type: 'MQ<string>',
+              default: 'space040',
+              description:
+                'If provided, this overrides the stack space applied to the FormInputLabel.',
+            },
+            ...commonOverridesRows(),
+          ],
+          propsFooter: (
+            <>
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="Form Input Label"
+                title="Note"
+                overrides={{
+                  marginBlockStart: 'space070',
+                }}
+              >
+                Props and overrides for the Label component are the same as the
+                FormInputLabel component, as listed above.
+              </InlineMessage>
+              <br />
+              <br />
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="Form Input Label"
+                title="Note"
+                overrides={{
+                  marginBlockStart: 'space070',
+                }}
+              >
+                Please refer to the following FormInput component pages for
+                details of props & overrides:
+                <UnorderedList
+                  markerAlign="start"
+                  listItemMarker={IconFilledCircle}
+                  overrides={{
+                    spaceStack: 'space040',
+                    content: {
+                      typographyPreset: 'editorialParagraph010',
+                    },
+                    marginBlockStart: 'space050',
+                  }}
                 >
-                  forwardRef.
-                </Link>
+                  <>
+                    <Link href="/components/text-field/#component-api">
+                      FormInputTextField
+                    </Link>
+                  </>
+                  <>
+                    <Link href="/components/select/#component-api">
+                      FormInputSelect
+                    </Link>
+                  </>
+                  <>
+                    <Link href="/components/checkbox/#component-api">
+                      FormInputCheckbox
+                    </Link>
+                  </>
+                  <>
+                    <Link href="/components/radio-button/#component-api">
+                      FormInputRadioButton
+                    </Link>
+                  </>
+                </UnorderedList>
               </InlineMessage>
             </>
           ),
