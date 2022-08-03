@@ -75,6 +75,20 @@ cypress_defaults: &cypress_defaults
 
 # ========== APPLITOOLS ENVIRONMENT VARIABLES START ==========
 
+# Common config values for component and doc site tests is set in env variables:
+
+# - showLogs: Whether or not you want to see logs of the Eyes-Storybook plugin.
+# - batchId: This must be set to the current commit sha for the GitHub integration to work.
+# - apiKey: This should be the Team API key (execute only permission).
+# - batchName: This can be any value (add as much info as possible to make it easy to find batches).
+
+# Config specific to each suite is set in the .config.js files.
+
+# IMPORTANT:
+# Make sure the `Automated batch closing` feature of the Applitools / GitHub integration is
+# disabled. This is controlled in the Applitools UI. If this setting is not removed, tests from
+# a single suite will be randomly split into different batches.
+
 applitools_defaults: &applitools_defaults
   command: |
     echo "export APPLITOOLS_SHOW_LOGS=true" >> $BASH_ENV
