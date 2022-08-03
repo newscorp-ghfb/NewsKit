@@ -77,14 +77,13 @@ cypress_defaults: &cypress_defaults
 
 applitools_defaults: &applitools_defaults
   command: |
-    export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
-    export APPLITOOLS_PARENT_BRANCH_NAME=main
-    export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
-    export APPLITOOLS_DONT_CLOSE_BATCHES=true
-    echo "export APPLITOOLS_BATCH_ID=${APPLITOOLS_BATCH_ID}" >> $BASH_ENV
+    echo "export APPLITOOLS_SHOW_LOGS=true" >> $BASH_ENV
+    echo "export APPLITOOLS_BATCH_ID=${CIRCLE_SHA1}" >> $BASH_ENV
     echo "export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}" >> $BASH_ENV
     echo "export APPLITOOLS_BATCH_NAME=\"${CIRCLE_BRANCH}:${CIRCLE_SHA1:0:7} (${CIRCLE_PULL_REQUEST}, ${CIRCLE_BUILD_URL})\"" >> $BASH_ENV
+
 # ========== APPLITOOLS ENVIRONMENT VARIABLES END ==========
+
 executors:
   # A basic image with just raw Alpine on it that you can run commands on
   base:
