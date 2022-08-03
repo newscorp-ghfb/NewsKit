@@ -22,6 +22,16 @@ const infoIcon = (
   />
 );
 
+const CodeBlock: React.FC<{children: string}> = ({children}) => (
+  <TextBlock
+    as="div"
+    stylePreset="inkContrast"
+    typographyPreset="editorialLabel010"
+  >
+    <Code>{children}</Code>
+  </TextBlock>
+);
+
 const commonOverridesRows = () => [
   {
     attribute: 'paddingInline',
@@ -388,9 +398,8 @@ const FormComponent = (layoutProps: LayoutProps) => (
             individually wrapped in the form component in order for validation
             to work eg:
           </ContentText>
-          <TextBlock typographyPreset="editorialLabel010">
-            <Code>
-              {`<Form onSubmit={onSubmit}>
+          <CodeBlock>
+            {`<Form onSubmit={onSubmit}>
   <FormInput
     name="checkbox"   
     rules={{
@@ -412,8 +421,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
   </FormInput>
   <Button type="submit">Submit</Button>
 </Form>`}
-            </Code>
-          </TextBlock>
+          </CodeBlock>
           <br />
           <br />
           <ContentText title="Form yup schema" titleAs="span">
@@ -429,9 +437,8 @@ const FormComponent = (layoutProps: LayoutProps) => (
               React Hook Form, schema validation.
             </Link>
           </ContentText>
-          <TextBlock typographyPreset="editorialLabel010">
-            <Code>
-              {`import {yupResolver} from '@hookform/resolvers/yup';
+          <CodeBlock>
+            {`import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 const schema = yup.object().shape({
@@ -455,8 +462,7 @@ const schema = yup.object().shape({
   </Button>
 </Form>;
 `}
-            </Code>
-          </TextBlock>
+          </CodeBlock>
         </>
       ),
       cards: [
@@ -927,21 +933,17 @@ const schema = yup.object().shape({
                 title="Note"
                 overrides={{
                   marginBlockStart: 'space070',
+                  marginBlockEnd: 'space050',
                 }}
               >
                 Props and overrides for the Label component are the same as the
                 FormInputLabel component, as listed above.
               </InlineMessage>
-              <br />
-              <br />
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="Form Input Label"
                 title="Note"
-                overrides={{
-                  marginBlockStart: 'space070',
-                }}
               >
                 Please refer to the following FormInput component pages for
                 details of props & overrides:
