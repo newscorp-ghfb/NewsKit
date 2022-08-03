@@ -474,16 +474,28 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
         </GridLayoutItem>
         <GridLayoutItem column="6/7" row="4/5">
           <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}}>
-            <Button
-              overrides={{
-                stylePreset: 'buttonOutlinedSecondary',
-                minWidth: withLeadingIcon ? '80px' : '52px',
-              }}
-              size={ButtonSize.Small}
-            >
-              {withLeadingIcon ? <IconFilledSlowMotionVideo /> : null}
-              <span>{playbackSpeed}x</span>
-            </Button>
+            {withLeadingIcon ? (
+              <Button
+                overrides={{
+                  stylePreset: 'buttonMinimalPrimary',
+                  minWidth: '90px',
+                }}
+                size={ButtonSize.Medium}
+              >
+                <IconFilledSlowMotionVideo />
+                <span>{playbackSpeed}x</span>
+              </Button>
+            ) : (
+              <Button
+                overrides={{
+                  stylePreset: 'buttonOutlinedSecondary',
+                  minWidth: '52px',
+                }}
+                size={ButtonSize.Small}
+              >
+                <span>{playbackSpeed}x</span>
+              </Button>
+            )}
           </AudioPlayerPlaybackSpeedControl>
         </GridLayoutItem>
       </GridLayout>
