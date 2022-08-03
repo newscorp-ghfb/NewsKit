@@ -282,10 +282,9 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusPill}}',
       borderWidth: '{{borders.borderWidth010}}',
       borderStyle: 'solid',
-
       borderColor: '{{colors.interfaceNeutral020}}',
-      color: '{{colors.inkSubtle}}',
-      backgroundColor: '{{colors.white}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.interface020}}',
     },
   },
   flagSolidPatch: {
@@ -293,10 +292,9 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusPill}}',
       borderWidth: '{{borders.borderWidth010}}',
       borderStyle: 'solid',
-
       borderColor: '{{colors.interfaceNeutral020}}',
-      color: '{{colors.inkNonEssential}}',
-      backgroundColor: '{{colors.white}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.interface030}}',
     },
   },
   flagSolidMajor: {
@@ -304,10 +302,9 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusPill}}',
       borderWidth: '{{borders.borderWidth010}}',
       borderStyle: 'solid',
-
-      borderColor: '{{colors.neutral080}}',
+      borderColor: '{{colors.interfaceNeutral010}}',
       color: '{{colors.inkContrast}}',
-      backgroundColor: '{{colors.interfaceNotice020}}',
+      backgroundColor: '{{colors.interface010}}',
     },
   },
   flagSolidBreakingChange: {
@@ -315,9 +312,8 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusPill}}',
       borderWidth: '{{borders.borderWidth010}}',
       borderStyle: 'solid',
-
-      borderColor: '{{colors.inkNegative}}',
-      color: '{{colors.inkNegative}}',
+      borderColor: '{{colors.interfaceNegative010}}',
+      color: '{{colors.inkContrast}}',
       backgroundColor: '{{colors.interfaceNegative020}}',
     },
   },

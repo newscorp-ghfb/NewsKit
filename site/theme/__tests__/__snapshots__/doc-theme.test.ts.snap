@@ -1109,11 +1109,11 @@ Object {
     "flagSolidBreakingChange": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.inkNegative}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNegative}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidInformative": Object {
@@ -1123,8 +1123,8 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice020}}",
-        "borderColor": "{{colors.neutral080}}",
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -1133,12 +1133,12 @@ Object {
     },
     "flagSolidMinor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface020}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -1162,12 +1162,12 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface030}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -3565,11 +3565,11 @@ Object {
     "flagSolidBreakingChange": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.inkNegative}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNegative}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidInformative": Object {
@@ -3579,8 +3579,8 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice020}}",
-        "borderColor": "{{colors.neutral080}}",
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -3589,12 +3589,12 @@ Object {
     },
     "flagSolidMinor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface020}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -3618,12 +3618,12 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface030}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -6024,11 +6024,11 @@ Object {
     "flagSolidBreakingChange": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.inkNegative}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNegative}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidInformative": Object {
@@ -6038,8 +6038,8 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice020}}",
-        "borderColor": "{{colors.neutral080}}",
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -6048,12 +6048,12 @@ Object {
     },
     "flagSolidMinor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface020}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -6077,12 +6077,12 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface030}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -8480,11 +8480,11 @@ Object {
     "flagSolidBreakingChange": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.inkNegative}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNegative}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidInformative": Object {
@@ -8494,8 +8494,8 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice020}}",
-        "borderColor": "{{colors.neutral080}}",
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -8504,12 +8504,12 @@ Object {
     },
     "flagSolidMinor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface020}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -8533,12 +8533,12 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface030}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -10939,11 +10939,11 @@ Object {
     "flagSolidBreakingChange": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.inkNegative}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNegative}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidInformative": Object {
@@ -10953,8 +10953,8 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice020}}",
-        "borderColor": "{{colors.neutral080}}",
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -10963,12 +10963,12 @@ Object {
     },
     "flagSolidMinor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface020}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -10992,12 +10992,12 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface030}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -13395,11 +13395,11 @@ Object {
     "flagSolidBreakingChange": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.inkNegative}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNegative}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidInformative": Object {
@@ -13409,8 +13409,8 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice020}}",
-        "borderColor": "{{colors.neutral080}}",
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -13419,12 +13419,12 @@ Object {
     },
     "flagSolidMinor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface020}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -13448,12 +13448,12 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface030}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -15854,11 +15854,11 @@ Object {
     "flagSolidBreakingChange": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.inkNegative}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNegative}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidInformative": Object {
@@ -15868,8 +15868,8 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice020}}",
-        "borderColor": "{{colors.neutral080}}",
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -15878,12 +15878,12 @@ Object {
     },
     "flagSolidMinor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface020}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -15907,12 +15907,12 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface030}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -18310,11 +18310,11 @@ Object {
     "flagSolidBreakingChange": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.inkNegative}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNegative}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidInformative": Object {
@@ -18324,8 +18324,8 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice020}}",
-        "borderColor": "{{colors.neutral080}}",
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -18334,12 +18334,12 @@ Object {
     },
     "flagSolidMinor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface020}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -18363,12 +18363,12 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.white}}",
+        "backgroundColor": "{{colors.interface030}}",
         "borderColor": "{{colors.interfaceNeutral020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
