@@ -1,12 +1,23 @@
 import React from 'react';
-import {InlineMessage, TextBlock, toNewsKitIcon, UnorderedList} from 'newskit';
+import {
+  InlineMessage,
+  TextBlock,
+  toNewsKitIcon,
+  UnorderedList,
+  Block,
+  Form,
+  Button,
+  styled,
+  EmailInput,
+} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
-import {ContentText} from '../../components/text-section/content-text';
-import {MetaStatus} from '../../components/meta/types';
 import {Link} from '../../components/link';
 import {Code} from '../../components/code';
 import {UsageKind} from '../../components/usage-card';
+import {MetaStatus} from '../../components/meta/types';
 import {InlineCode} from '../../components/markdown-elements';
+import {ContentText} from '../../components/text-section/content-text';
+import {LegacyBlock} from '../../components/legacy-block';
 import {LayoutProps} from '../../components/layout';
 import {IconFilledCircle} from '../../components/icons';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
@@ -129,6 +140,69 @@ const FormComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.19.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/form',
+    }}
+    interactiveDemo={{
+      introduction:
+        'This demo allows you to preview the Block component, its variations, and configuration options.',
+      playground: {
+        componentName: 'Form',
+        component: state => {
+          const onSubmit = () => '';
+          const Container = styled.div`
+            width: 300px;
+          `;
+          return (
+            <>
+              <LegacyBlock display="flex">
+                <Container>
+                  <Form onSubmit={onSubmit} {...state}>
+                    <Block>
+                      <EmailInput
+                        label="Email"
+                        name="Email"
+                        placeholder="Placeholder"
+                        {...state}
+                      />
+                      <Block spaceStack="space040" />
+                      <Button type="submit">Submit</Button>
+                    </Block>
+                  </Form>
+                </Container>
+              </LegacyBlock>
+            </>
+          );
+        },
+        knobs: [
+          {
+            name: 'Validation Mode',
+            propName: 'validationMode',
+            options: [
+              {
+                label: 'Default (onSubmit)',
+                value: undefined,
+              },
+              {
+                label: 'onBlur',
+                value: 'onBlur',
+              },
+            ],
+          },
+          {
+            name: 'ReValidation Mode',
+            propName: 'reValidationMode',
+            options: [
+              {
+                label: 'Default (onBlur)',
+                value: undefined,
+              },
+              {
+                label: 'onSubmit',
+                value: 'onSubmit',
+              },
+            ],
+          },
+        ],
+      },
     }}
     anatomy={{
       tabs: [
