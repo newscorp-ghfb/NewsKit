@@ -184,13 +184,19 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       themes: true,
     }}
     related={{
-      introduction: '',
-      related: ['Block', 'Stack'],
-    }}
-    featureCard={{
-      title: 'Need Help?',
-      description: 'Cant find what you are looking for?',
-      href: '/about/contact-us/',
+      related: [
+        'Block',
+        'Card',
+        'Drawer',
+        'Fieldset',
+        'Grid',
+        'Grid Layout',
+        'Modal',
+        'Popover',
+        'Stack',
+        'Structured List',
+        'Visibility',
+      ],
     }}
   />
 );
