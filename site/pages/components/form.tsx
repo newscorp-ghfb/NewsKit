@@ -526,6 +526,225 @@ const schema = yup.object().shape({
         ],
       },
     }}
+    componentAPI={{
+      components: [
+        {
+          title: 'Form',
+          summary:
+            'The Form component has a range of props and overrides that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'children',
+              type: `Exclude<React.ReactNode, 'undefined'>`,
+              description:
+                'The Form requires to have at least a FormInput with a validation object and rules to validate each field. FormInput components should also be provided and wrapped inside FormInput such as FormInputTextfield,  FormInputRadioButton etc.',
+              required: true,
+            },
+            {
+              name: 'onSubmit',
+              type: 'SubmitHandler',
+              description: (
+                <>
+                  Function called when the Form is submitted without validation
+                  errors. The data parameter consists of an object where the
+                  input field names are associated with the input values.
+                  <br />
+                  <br />
+                  <Link
+                    href="https://react-hook-form.com/ts#SubmitHandler"
+                    target="_blank"
+                  >
+                    For more information refer to the React Hook Form’s
+                    documentation.
+                  </Link>
+                  When submitting the Form by clicking on a{' '}
+                  <Link href="/components/button/">Button</Link>, is suggested
+                  to keep the whole logic in the{' '}
+                  <InlineCode>onSubmit</InlineCode> event, rather than split it
+                  in both an <InlineCode>onClick</InlineCode> and{' '}
+                  <InlineCode>onSubmit</InlineCode> event, for avoiding issues
+                  at runtime.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'validationMode',
+              type: 'onSubmit | onValidation',
+              default: 'onSubmit',
+              description: (
+                <>
+                  Allows you to configure when input fields are validated.
+                  Currently <InlineCode>onSubmit</InlineCode> and{' '}
+                  <InlineCode>onBlur</InlineCode> are supported.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'reValidationMode',
+              type: 'onSubmit | onValidation',
+              default: 'onBlur',
+              description: (
+                <>
+                  Allows you to configure when input fields getting revalidated.
+                  Currently <InlineCode>onSubmit</InlineCode> and{' '}
+                  <InlineCode>onBlur</InlineCode> are supported.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'defaultValues',
+              type: 'Record<string,string>',
+              description: (
+                <>
+                  The defaultValue for an input is used as the initial value
+                  when a component is first rendered, before a user interacts
+                  with it. The <InlineCode>defaultValues</InlineCode> object
+                  uses the form element names as keys.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'resolver',
+              type: 'Resolver<Record<string, string>, object>',
+              description:
+                'The resolver will validate your input data against the schema and return with either errors or a valid result.',
+              required: undefined,
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'paddingInline',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'paddingInlineStart',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical inline start padding of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'paddingInlineEnd',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical inline end padding of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'paddingBlock',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'paddingBlockStart',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical block start padding of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'paddingBlockEnd',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical block end padding of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'marginInline',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical inline start and end margin of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'marginInlineStart',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical inline start margin of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'marginInlineEnd',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical inline end margin of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'marginBlock',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical block start and end margin of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'marginBlockStart',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical block start margin of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'marginBlockEnd',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical block end margin of the container. This space token can also be used on breakpoints.',
+            },
+          ],
+        },
+        {
+          title: 'FormInput',
+          summary: `The FormInput component has a range of props that can be used to define an appropriate experience for different use cases.`,
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactElement & { ref?: React.Ref<unknown>; };',
+              description: 'Tooltip reference element.',
+              required: true,
+            },
+          ],
+        },
+        {
+          title: 'FormInputAssistiveText',
+          summary: `The FormInputAssistiveText component has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the Form component.`,
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactElement & { ref?: React.Ref<unknown>; };',
+              description: 'Tooltip reference element.',
+              required: true,
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'maxWidth',
+              type: 'MQ<string>',
+              description: 'Overrides the maxWidth property of the Tooltip.',
+            },
+          ],
+          propsFooter: (
+            <>
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="ForwardRef"
+                title="Note"
+                overrides={{
+                  marginBlockStart: 'space070',
+                }}
+              >
+                If the Tooltip is wrapping a functional component, ensure that
+                the functional component accepts a ref using{' '}
+                <Link
+                  href="https://reactjs.org/docs/forwarding-refs.html"
+                  target="_blank"
+                >
+                  forwardRef.
+                </Link>
+              </InlineMessage>
+            </>
+          ),
+        },
+      ],
+    }}
   />
 );
 
