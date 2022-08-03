@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Block,
   Button,
-  IconFilledGitHub,
   StructuredList,
   StructuredListCell,
   StructuredListItem,
@@ -22,6 +21,7 @@ import {
 import {ReleasesPageProps} from '../../utils/release-notes/types';
 import {PageTemplate} from '../../templates/page-template';
 import {GITHUB_URL, REPO} from '../../utils/release-notes/constants';
+import {IconFilledGitHub} from '../../components/icons/icon-filled-github';
 
 const ReleaseNotesPage = ({
   path,
