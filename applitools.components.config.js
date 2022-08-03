@@ -9,4 +9,7 @@ module.exports = {
   ],
   concurrency: 20,
   viewportSize: {width: 1027, height: 768},
+  batch: {
+    properties: [{name: 'suite', value: 'comps'}],
+  },
 };
