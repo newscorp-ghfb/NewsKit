@@ -7,7 +7,5 @@ module.exports = {
     {width: 2880, height: 1800, name: 'chrome'},
   ],
   concurrency: 50,
-  batch: {
-    properties: [{name: 'suite', value: 'docs'}],
-  },
+  properties: [{name: 'suite', value: 'docs'}],
 };
