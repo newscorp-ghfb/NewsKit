@@ -5,7 +5,7 @@
   </a>
 </p>
 
-# NewsKit!
+# NewsKi
 
 NewsKit is News UK’s design system. It provides interactive building blocks and guidelines for crafting cohesive digital product interfaces and accelerating development. Build better products faster.
 
