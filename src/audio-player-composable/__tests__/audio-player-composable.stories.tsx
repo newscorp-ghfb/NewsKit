@@ -989,7 +989,7 @@ export const AudioPlayerPlaybackSpeedTriggerButton = () => (
         playback speed control custom trigger button with a leading icon
       </StorybookSubHeading>
       <AudioPlayerComposable
-        ariaLandmark="audio player custom playback trigger"
+        ariaLandmark="audio player custom playback trigger with icon"
         src={AUDIO_SRC}
       >
         <AudioPlayerPlaybackSpeedTriggerComponent withLeadingIcon />
