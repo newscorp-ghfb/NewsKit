@@ -5,7 +5,6 @@ import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
 import {getTokenType} from '../../../utils/get-token-type';
 import {Link} from '../../../components/link';
-import {MediaList} from '../../../components/media-list';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
 import {ColorPalettes} from '../../../components/theming-values/colors/colors';
 import {TabsWithTable} from '../../../components/tabs-with-table';
@@ -47,51 +46,6 @@ const themeColorRows = (
   }, [] as TableRow[]);
   return rows;
 };
-
-const featureCardoverrides = {
-  title: {
-    typographyPreset: 'editorialHeadline030',
-  },
-  description: {
-    typographyPreset: 'editorialParagraph020',
-  },
-};
-
-const PRINCIPLE_CARDS = [
-  {
-    media: {
-      src: 'static/theming/foundations/contextual-colours.svg',
-      alt: '',
-    },
-    title: 'Contextual',
-    description:
-      'Colour is applied to a UI element based on it’s context, not just because it’s visually pleasing',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/expressive-colours.svg',
-      alt: '',
-    },
-    title: 'Expressive',
-    description:
-      'Brand colours are added to key moments in the user journey to express brand identity and style',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/inclusive-colours.svg',
-      alt: '',
-    },
-    title: 'Inclusive',
-    description:
-      'Important UI elements like text and icons are legible and meet accessibility contrast standards',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-];
 
 const CUSTOM_ICONS = [
   {
@@ -344,21 +298,6 @@ const Colours = (layoutProps: LayoutProps) => (
           }
           showSeparator
         />
-      </ContentSection>
-
-      <ContentSection sectionName="principles">
-        <ContentPrimary
-          id="principles"
-          toc="Principles"
-          headline="Principles"
-          showSeparator
-        >
-          <MediaList
-            layout="3-span"
-            cardType="feature"
-            cards={PRINCIPLE_CARDS}
-          />
-        </ContentPrimary>
       </ContentSection>
 
       <ContentSection sectionName="palettecolours">
