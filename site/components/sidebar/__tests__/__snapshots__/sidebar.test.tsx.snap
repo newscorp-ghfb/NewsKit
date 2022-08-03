@@ -566,7 +566,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-613 {
+.emotion-608 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -574,7 +574,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-614 {
+.emotion-609 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -584,7 +584,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 100%;
 }
 
-.emotion-617 {
+.emotion-612 {
   margin-bottom: 32px;
 }
 
@@ -894,30 +894,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                 class="emotion-18"
                               >
                                 Overview
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-14"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-15"
-                          data-testid="buttonLink"
-                          href="/getting-started/design/design-quickstart"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <div
-                              class="emotion-12"
-                            >
-                              <span
-                                class="emotion-18"
-                              >
-                                Quickstart
                               </span>
                             </div>
                           </div>
@@ -3643,11 +3619,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 </div>
               </ul>
               <div
-                class="emotion-613"
+                class="emotion-608"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-614"
+                  class="emotion-609"
                   data-testid="divider"
                 />
               </div>
@@ -3668,7 +3644,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
             />
           </nav>
           <div
-            class="emotion-617"
+            class="emotion-612"
           />
         </div>
       </div>
@@ -4362,7 +4338,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-611 {
+.emotion-606 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -4370,7 +4346,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-612 {
+.emotion-607 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -4381,55 +4357,55 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen {
-  .emotion-613 {
+  .emotion-608 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-613 {
+  .emotion-608 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-613 {
+  .emotion-608 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-613 {
+  .emotion-608 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-613 {
+  .emotion-608 {
     display: block;
   }
 }
 
-.emotion-615 {
+.emotion-610 {
   margin-bottom: 32px;
 }
 
-.emotion-616 {
+.emotion-611 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-617 {
+.emotion-612 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-618 {
+.emotion-613 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-619 {
+.emotion-614 {
   margin: 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
@@ -4439,11 +4415,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-619 svg {
+.emotion-614 svg {
   fill: #2E2E2E;
 }
 
-.emotion-620 {
+.emotion-615 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4453,7 +4429,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-620 {
+  .emotion-615 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4461,19 +4437,19 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-620 {
+  .emotion-615 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-620.emotion-620 {
+.emotion-615.emotion-615 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-622 {
+.emotion-617 {
   margin-block: 24px;
 }
 
@@ -4804,31 +4780,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                       class="emotion-16"
                                     >
                                       Overview
-                                    </span>
-                                  </div>
-                                </div>
-                              </a>
-                            </li>
-                            <li
-                              class="nk-menu-item emotion-12"
-                            >
-                              <a
-                                aria-current="false"
-                                class="emotion-13"
-                                data-testid="buttonLink"
-                                href="/getting-started/design/design-quickstart"
-                                tabindex="-1"
-                              >
-                                <div
-                                  class="emotion-9"
-                                >
-                                  <div
-                                    class="emotion-10"
-                                  >
-                                    <span
-                                      class="emotion-16"
-                                    >
-                                      Quickstart
                                     </span>
                                   </div>
                                 </div>
@@ -7654,11 +7605,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
                       </div>
                     </ul>
                     <div
-                      class="emotion-611"
+                      class="emotion-606"
                     >
                       <hr
                         aria-hidden="true"
-                        class="emotion-612"
+                        class="emotion-607"
                         data-testid="divider"
                       />
                     </div>
@@ -7666,7 +7617,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 </nav>
               </div>
               <div
-                class="emotion-613"
+                class="emotion-608"
               >
                 <nav
                   aria-label="menu-sidebar"
@@ -7679,28 +7630,28 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   />
                 </nav>
                 <div
-                  class="emotion-615"
+                  class="emotion-610"
                 />
               </div>
               <div
-                class="emotion-616"
+                class="emotion-611"
               >
                 <a
-                  class="emotion-617"
+                  class="emotion-612"
                   href="https://github.com/newscorp-ghfb/newskit"
                   tabindex="-1"
                 >
                   <div
-                    class="emotion-618"
+                    class="emotion-613"
                   >
                     <p
-                      class="emotion-619"
+                      class="emotion-614"
                     >
                       Github
                     </p>
                     <svg
                       aria-hidden="true"
-                      class="emotion-620 emotion-621"
+                      class="emotion-615 emotion-616"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -7717,7 +7668,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </div>
                 </a>
                 <div
-                  class="emotion-622"
+                  class="emotion-617"
                 />
               </div>
             </div>
@@ -8300,7 +8251,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-613 {
+.emotion-608 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -8308,7 +8259,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-614 {
+.emotion-609 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -8318,7 +8269,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   width: 100%;
 }
 
-.emotion-617 {
+.emotion-612 {
   margin-bottom: 32px;
 }
 
@@ -8632,30 +8583,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                                 class="emotion-18"
                               >
                                 Overview
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-14"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-15"
-                          data-testid="buttonLink"
-                          href="/getting-started/design/design-quickstart"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <div
-                              class="emotion-12"
-                            >
-                              <span
-                                class="emotion-18"
-                              >
-                                Quickstart
                               </span>
                             </div>
                           </div>
@@ -11381,11 +11308,11 @@ exports[`Sidebar renders correctly when open 1`] = `
                 </div>
               </ul>
               <div
-                class="emotion-613"
+                class="emotion-608"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-614"
+                  class="emotion-609"
                   data-testid="divider"
                 />
               </div>
@@ -11406,7 +11333,7 @@ exports[`Sidebar renders correctly when open 1`] = `
             />
           </nav>
           <div
-            class="emotion-617"
+            class="emotion-612"
           />
         </div>
       </div>
@@ -12099,7 +12026,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-611 {
+.emotion-606 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -12107,7 +12034,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-612 {
+.emotion-607 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -12118,55 +12045,55 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen {
-  .emotion-613 {
+  .emotion-608 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-613 {
+  .emotion-608 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-613 {
+  .emotion-608 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-613 {
+  .emotion-608 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-613 {
+  .emotion-608 {
     display: block;
   }
 }
 
-.emotion-615 {
+.emotion-610 {
   margin-bottom: 32px;
 }
 
-.emotion-616 {
+.emotion-611 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-617 {
+.emotion-612 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-618 {
+.emotion-613 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-619 {
+.emotion-614 {
   margin: 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
@@ -12176,11 +12103,11 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-619 svg {
+.emotion-614 svg {
   fill: #2E2E2E;
 }
 
-.emotion-620 {
+.emotion-615 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -12190,7 +12117,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-620 {
+  .emotion-615 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -12198,19 +12125,19 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-620 {
+  .emotion-615 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-620.emotion-620 {
+.emotion-615.emotion-615 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-622 {
+.emotion-617 {
   margin-block: 24px;
 }
 
@@ -12534,30 +12461,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                                       class="emotion-16"
                                     >
                                       Overview
-                                    </span>
-                                  </div>
-                                </div>
-                              </a>
-                            </li>
-                            <li
-                              class="nk-menu-item emotion-12"
-                            >
-                              <a
-                                aria-current="false"
-                                class="emotion-13"
-                                data-testid="buttonLink"
-                                href="/getting-started/design/design-quickstart"
-                              >
-                                <div
-                                  class="emotion-9"
-                                >
-                                  <div
-                                    class="emotion-10"
-                                  >
-                                    <span
-                                      class="emotion-16"
-                                    >
-                                      Quickstart
                                     </span>
                                   </div>
                                 </div>
@@ -15283,11 +15186,11 @@ exports[`Sidebar renders correctly when open 1`] = `
                       </div>
                     </ul>
                     <div
-                      class="emotion-611"
+                      class="emotion-606"
                     >
                       <hr
                         aria-hidden="true"
-                        class="emotion-612"
+                        class="emotion-607"
                         data-testid="divider"
                       />
                     </div>
@@ -15295,7 +15198,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                 </nav>
               </div>
               <div
-                class="emotion-613"
+                class="emotion-608"
               >
                 <nav
                   aria-label="menu-sidebar"
@@ -15308,27 +15211,27 @@ exports[`Sidebar renders correctly when open 1`] = `
                   />
                 </nav>
                 <div
-                  class="emotion-615"
+                  class="emotion-610"
                 />
               </div>
               <div
-                class="emotion-616"
+                class="emotion-611"
               >
                 <a
-                  class="emotion-617"
+                  class="emotion-612"
                   href="https://github.com/newscorp-ghfb/newskit"
                 >
                   <div
-                    class="emotion-618"
+                    class="emotion-613"
                   >
                     <p
-                      class="emotion-619"
+                      class="emotion-614"
                     >
                       Github
                     </p>
                     <svg
                       aria-hidden="true"
-                      class="emotion-620 emotion-621"
+                      class="emotion-615 emotion-616"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -15345,7 +15248,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </div>
                 </a>
                 <div
-                  class="emotion-622"
+                  class="emotion-617"
                 />
               </div>
             </div>

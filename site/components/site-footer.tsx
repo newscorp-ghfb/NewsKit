@@ -75,7 +75,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
               <Link
                 href="https://www.newscareers.co.uk/"
                 target="_blank"
-                external={false}
+                external
                 overrides={linkOverrides}
               >
                 Careers
@@ -85,7 +85,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
               <Link
                 href="https://medium.com/newskit-design-system"
                 target="_blank"
-                external={false}
+                external
                 overrides={linkOverrides}
               >
                 Blog

@@ -999,10 +999,6 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    related={{
-      introduction: '',
-      related: ['Scroll'],
-    }}
     accessibility={{
       introduction: (
         <>
@@ -1028,8 +1024,6 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           },
         ],
       },
-      infoNoticeFocus: 'Scroll controls are not focussable.',
-
       interaction: {
         title: 'Keyboard Interactions',
         tableRows: [
@@ -1073,7 +1067,6 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           },
         ],
       },
-
       aria: {
         title: 'WAI-ARIA',
         tableRows: [
@@ -1133,6 +1126,9 @@ const TabsComponent = (layoutProps: LayoutProps) => (
     seo={{
       title: 'SEO Considerations',
       introduction: 'Ensure icons have Alt Text applied.',
+    }}
+    related={{
+      related: ['Accordion', 'Link', 'Scroll', 'Menu', 'Tags', 'Title Bar'],
     }}
   />
 );
