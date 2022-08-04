@@ -658,8 +658,13 @@ const ToastComponent = (layoutProps: LayoutProps) => (
       uiKit: true,
     }}
     related={{
-      introduction: 'Components related to Toast',
-      related: ['Banner', 'InlineMessage', 'Modal', 'Drawer'],
+      related: [
+        'Banner',
+        'Flag',
+        'Progress Indicator',
+        'Inline Message',
+        'Tooltip',
+      ],
     }}
   />
 );
