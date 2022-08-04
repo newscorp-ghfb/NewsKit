@@ -132,8 +132,15 @@ const FormComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/form/hero',
       },
-      introduction:
-        'The form component allows users to enter and edit information into a UI using form controls; based on React Hook Form.',
+      introduction: (
+        <>
+          The form component allows users to enter and edit information into a
+          UI using form controls; based on{' '}
+          <Link href="https://react-hook-form.com/" target="_blank">
+            React Hook Form.
+          </Link>
+        </>
+      ),
     }}
     componentDefaultsKey="Form"
     meta={{
@@ -241,43 +248,43 @@ const FormComponent = (layoutProps: LayoutProps) => (
               name: 'FormInputLabel',
               description: 'Based on the label component',
               component: 'Label',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'FormInputAssistiveText',
               description: 'Based on the assistive text component',
               component: 'Text Block',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'FormInputTextArea',
               description: 'Based on the text area component',
               component: 'Text Area',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'FormInputTextField',
               description: 'Based on the text field component',
               component: 'Text Field',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'FormInputSelect',
               description: 'Based on the select component',
               component: 'Select',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'FormInputCheckbox',
               description: 'Based on the checkbox component',
               component: 'Checkbox',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'FormInputRadio Button',
               description: 'Based on the radio button component',
               component: 'Radio Button',
-              optional: undefined,
+              optional: true,
             },
           ],
         },
@@ -1003,7 +1010,7 @@ const schema = yup.object().shape({
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="Form Input Label"
+                aria-label="FormInputLabel Props and overrides"
                 title="Note"
                 overrides={{
                   marginBlockStart: 'space070',
@@ -1016,7 +1023,7 @@ const schema = yup.object().shape({
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="Form Input Label"
+                aria-label="FormInput component"
                 title="Note"
               >
                 Please refer to the following FormInput component pages for
