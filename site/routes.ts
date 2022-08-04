@@ -53,15 +53,6 @@ export default [
             illustration: 'guides/design-overview/hero',
             cardTitle: 'Design Overview',
           },
-          {
-            title: 'Quickstart',
-            page: true,
-            id: '/getting-started/design/design-quickstart',
-            description:
-              'A step by step guide to get you up and running using NewsKit.',
-            illustration: 'guides/design-quickstart/hero',
-            cardTitle: 'Design Quickstart Guide',
-          },
         ],
       },
       {
