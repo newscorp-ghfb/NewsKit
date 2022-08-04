@@ -303,7 +303,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Size',
           description:
-            'There are three sizes of Button: small, medium (default), and large.',
+            'There are three sizes of Button: small, medium, and large (default).',
           media: getIllustrationComponent('components/button/options/size'),
         },
         {
