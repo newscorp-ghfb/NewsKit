@@ -1059,6 +1059,16 @@ const schema = yup.object().shape({
         },
       ],
     }}
+    related={{
+      related: [
+        'Button',
+        'Checkbox',
+        'Radio Button',
+        'Select',
+        'Slider',
+        'Text Field',
+      ],
+    }}
   />
 );
 
