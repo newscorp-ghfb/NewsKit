@@ -18,5 +18,18 @@ describe('ExperimentationWeb', () => {
       );
       expect(fragment).toMatchSnapshot();
     });
+
+    test('renders optimizely scripts async', () => {
+      const fragment = renderToFragment(
+        <ExperimentationWeb
+          optimizelyWebConfig={{
+            scriptCdn: 'https://cdn.optimizely.com/js/123456789.js',
+          }}
+          reactHelmet={helmet}
+          async
+        />,
+      );
+      expect(fragment).toMatchSnapshot();
+    });
   });
 });
