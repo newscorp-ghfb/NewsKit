@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useMemo} from 'react';
 import {BreakpointKeys, useTheme} from '../../../theme';
 import {getMediaQueryFromTheme} from '../../responsive-helpers';
 import {NewsKitReactComponents} from '../../with-own-theme';
@@ -31,8 +31,15 @@ export function MediaQueryProvider({children}: {children: React.ReactNode}) {
     {} as MediaQueries,
   );
 
-  const [breakpointState, setBreakpointState] = React.useState(() =>
-    createInitState(mqPerBreakpoint),
+  const INITIAL_STATE = useMemo(() => createInitState(mqPerBreakpoint), [
+    mqPerBreakpoint,
+  ]);
+
+  const [breakpointState, setBreakpointState] = React.useState(
+    () => INITIAL_STATE,
+  );
+  const [internalBreakpointState, setInternalBreakpointState] = React.useState(
+    () => INITIAL_STATE,
   );
 
   React.useEffect(() => {
@@ -46,7 +53,7 @@ export function MediaQueryProvider({children}: {children: React.ReactNode}) {
       Object.entries(mqPerBreakpoint).forEach(([breakpointKey, mqString]) => {
         const mqList = window.matchMedia(mqString);
         const mqHandler = (event: MediaQueryListEvent) => {
-          setBreakpointState(prev => {
+          setInternalBreakpointState(prev => {
             const newState = {
               ...prev,
               [breakpointKey]: event.matches,
@@ -57,10 +64,7 @@ export function MediaQueryProvider({children}: {children: React.ReactNode}) {
 
         addMQEventListener(mqList, mqHandler);
 
-        mqListenersRegistry.push({
-          mqList,
-          mqHandler,
-        });
+        mqListenersRegistry.push({mqList, mqHandler});
       });
     }
 
@@ -71,6 +75,15 @@ export function MediaQueryProvider({children}: {children: React.ReactNode}) {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    if (
+      Object.values(internalBreakpointState).filter(e => e === true).length ===
+      1
+    ) {
+      setBreakpointState(internalBreakpointState);
+    }
+  }, [internalBreakpointState]);
 
   return (
     <MQContext.Provider value={breakpointState}>{children}</MQContext.Provider>
