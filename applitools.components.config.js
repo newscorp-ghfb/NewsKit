@@ -10,4 +10,7 @@ module.exports = {
   concurrency: 20,
   viewportSize: {width: 1027, height: 768},
   properties: [{name: 'suite', value: 'comps'}],
+  // Don't close the batch when the suite finishes so that the doc site tests
+  // that run after will be added to the same batch.
+  dontCloseBatches: true,
 };
