@@ -35,10 +35,10 @@ export const addChangeLevelToReleases: (
           ...next,
           // Compare against the previous release in the array or the oldest
           // release removed above.
-          change_level:
-            next.tag_name === 'v5.4.2' // todo: remove this (only here for design review)
-              ? 'major'
-              : diff((prev[0] || ascending[0]).tag_name, next.tag_name)!, // Only null if the version is the same (never).
+          change_level: diff(
+            (prev[0] || ascending[0]).tag_name,
+            next.tag_name,
+          )!, // Only null if the version is the same (never).
         },
       ],
       [],
