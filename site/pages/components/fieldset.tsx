@@ -283,8 +283,19 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
       themes: true,
     }}
     related={{
-      introduction: '',
-      related: ['Form', 'Checkbox', 'Radio Button'],
+      related: [
+        'Block',
+        'Card',
+        'Divider',
+        'Drawer',
+        'Grid',
+        'Grid Layout',
+        'Modal',
+        'Popover',
+        'Stack',
+        'Structured List',
+        'Visibility',
+      ],
     }}
   />
 );

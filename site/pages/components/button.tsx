@@ -622,8 +622,14 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
       themes: true,
     }}
     related={{
-      introduction: '',
-      related: ['Tag', 'Link', 'Share Bar'],
+      related: [
+        'Checkbox',
+        'Form',
+        'Radio Button',
+        'Select',
+        'Slider',
+        'Text Field',
+      ],
     }}
   />
 );
