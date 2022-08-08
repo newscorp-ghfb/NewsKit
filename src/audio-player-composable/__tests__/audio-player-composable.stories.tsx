@@ -444,7 +444,8 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
   withLeadingIcon?: boolean;
 }) => {
   const {withLeadingIcon = false} = props;
-  const {playbackSpeed} = useAudioPlayerContext();
+  const {getPlaybackSpeedControlProps} = useAudioPlayerContext();
+  const {playbackSpeed} = getPlaybackSpeedControlProps!({});
 
   return (
     <ThemeProvider theme={myCustomTheme}>

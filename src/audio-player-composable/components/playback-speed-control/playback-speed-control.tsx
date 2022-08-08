@@ -50,6 +50,10 @@ const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
     setIsOpen(false);
   }, []);
 
+  const toggleOpen = useCallback(() => {
+    setIsOpen(open => !open);
+  }, []);
+
   return (
     <>
       <Popover
@@ -68,11 +72,9 @@ const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
           // on click and pass the original onClick handler
           React.cloneElement(props.children, {
             onClick: () => {
-              setIsOpen(open => !open);
-              if (
-                props.children &&
-                typeof props.children.props.onClick === 'function'
-              ) {
+              toggleOpen();
+              /* istanbul ignore next */
+              if (props.children?.props?.onClick) {
                 props.children.props.onClick();
               }
             },
@@ -82,7 +84,7 @@ const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
             aria-label="playback speed"
             data-testid="audio-player-playback-speed-control"
             overrides={iconButtonOverrides(theme, overrides)}
-            onClick={() => setIsOpen(open => !open)}
+            onClick={toggleOpen}
             size={buttonSize}
           >
             <IconFilledSlowMotionVideo />
