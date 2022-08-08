@@ -971,8 +971,8 @@ Object {
     },
     "editorialDisplay020": Object {
       "fontFamily": "\\"Bitter\\", serif",
-      "fontSize": "48px",
-      "fontWeight": 500,
+      "fontSize": "64px",
+      "fontWeight": 700,
       "letterSpacing": "0",
       "lineHeight": 1.125,
     },
@@ -992,8 +992,8 @@ Object {
     },
     "editorialDropCap020": Object {
       "fontFamily": "\\"Bitter\\", serif",
-      "fontSize": "48px",
-      "fontWeight": 500,
+      "fontSize": "64px",
+      "fontWeight": 700,
       "letterSpacing": "0",
       "lineHeight": 1.125,
     },
