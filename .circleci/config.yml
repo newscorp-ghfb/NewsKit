@@ -626,6 +626,18 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
+  skip_applitools_check:
+    executor: node-large
+    steps:
+      - run:
+          name: ''
+          command: |
+            curl 
+            --request POST 
+            --header "Content-Type: application/json"
+            --data '{"serverId":"github","commitSha":"$CIRCLE_SHA1"}'
+            "https://eyesapi.applitools.com/api/externals/github/servers/github/commit/$CIRCLE_SHA1/complete?apiKey=$APPLITOOLS_API_KEY"
+
   test_visual_docs:
     <<: *cypress_defaults
     executor: cypress
@@ -1221,6 +1233,10 @@ workflows:
             - approve_publish_npm_pr
       # End jobs for releasing unstable NPM version
 
+      - skip_applitools_check:
+          context: ncu-product-platforms-context
+          requires:
+            - no_visual_changes
       - test_visual_comps:
           context: ncu-product-platforms-context
           requires:
