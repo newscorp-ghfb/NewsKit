@@ -2,6 +2,7 @@ import {
   addChangeLevelToReleases,
   fetchGitHubReleases,
   formatGitHubMarkDown,
+  updateFinalReleaseInfo,
 } from '../functions';
 import {Release} from '../types';
 import Mock = jest.Mock;
@@ -53,7 +54,7 @@ const COMMENT =
 const PROFILE = '@mstuartf';
 const PR_LINK = 'https://github.com/newscorp-ghfb/newskit/pull/239';
 const COMPARE_LINK =
-  'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...trigger-release@5.7.0';
+  'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...v5.7.0';
 const TICKET_ID = 'PPDSC-2121';
 
 const BODY = `${COMMENT}\r\n\r\n## What's Changed\r\n### New Features 🎉\r\n* feat(PPDSC-2151): Add Outline Style Presets by @tbradbury in https://github.com/newscorp-ghfb/newskit/pull/214\r\n* feat(${TICKET_ID}): \`<Popover/>\` header close by ${PROFILE} in ${PR_LINK}\r\n### Bug Fixes 🐛\r\n* fix(PPDSC-2164): assistive text by @mstuartf in https://github.com/newscorp-ghfb/newskit/pull/249\r\n### Other Changes 🧱\r\n* ci(PPDSC-2292): attempt fix of develoment env by @jps in https://github.com/newscorp-ghfb/newskit/pull/285\r\n\r\n## New Contributors\r\n* @agagotowiec made their first contribution in https://github.com/newscorp-ghfb/newskit/pull/238\r\n\r\n**Full Changelog**: ${COMPARE_LINK}`;
@@ -89,10 +90,48 @@ describe('formatGitHubMarkDown', () => {
       `[${PROFILE}](https://github.com/${PROFILE.replace('@', '')})`,
     );
   });
-  it('should correct and hyperlink to compare releases links', () => {
-    const result = formatGitHubMarkDown(BODY);
-    const fixed = COMPARE_LINK.replace('trigger-release@', 'v');
-    expect(result).not.toContain(COMPARE_LINK);
-    expect(result).toContain(`[${fixed}](${fixed})`);
+});
+
+describe('updateFinalReleaseInfo', () => {
+  it('should update temporary release tag_name, name and compare link', () => {
+    const after = updateFinalReleaseInfo({
+      tag_name: 'trigger-release@5.7.0',
+      name: 'Trigger release 5.7.0',
+      body:
+        'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...trigger-release@5.7.0',
+      published_at: '2022-07-18T11:41:49Z',
+    });
+    expect(after.name).toEqual('v5.7.0');
+    expect(after.tag_name).toEqual('v5.7.0');
+    expect(after.body).toEqual(
+      'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...v5.7.0',
+    );
+  });
+  it('should handle typos', () => {
+    const after = updateFinalReleaseInfo({
+      tag_name: 'trigger-rlease@5.7.0',
+      name: 'Triggerrelease 5.7.0',
+      body:
+        'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...trigger-rlease@5.7.0',
+      published_at: '2022-07-18T11:41:49Z',
+    });
+    expect(after.name).toEqual('v5.7.0');
+    expect(after.tag_name).toEqual('v5.7.0');
+    expect(after.body).toEqual(
+      'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...v5.7.0',
+    );
+  });
+  it('should handle already updated releases', () => {
+    const after = updateFinalReleaseInfo({
+      tag_name: 'v5.7.0',
+      name: 'v5.7.0',
+      body: 'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...v5.7.0',
+      published_at: '2022-07-18T11:41:49Z',
+    });
+    expect(after.name).toEqual('v5.7.0');
+    expect(after.tag_name).toEqual('v5.7.0');
+    expect(after.body).toEqual(
+      'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...v5.7.0',
+    );
   });
 });

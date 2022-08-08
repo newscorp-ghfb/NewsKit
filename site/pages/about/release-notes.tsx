@@ -17,6 +17,7 @@ import ReleaseNotes from '../../components/release-notes/release-notes';
 import {
   addChangeLevelToReleases,
   fetchGitHubReleases,
+  updateFinalReleaseInfo,
 } from '../../utils/release-notes/functions';
 import {ReleasesPageProps} from '../../utils/release-notes/types';
 import {PageTemplate} from '../../templates/page-template';
@@ -28,7 +29,9 @@ const ReleaseNotesPage = ({
   releases,
   ...props
 }: LayoutProps & ReleasesPageProps) => {
-  const fullReleases = addChangeLevelToReleases(releases);
+  const fullReleases = addChangeLevelToReleases(
+    releases.map(release => updateFinalReleaseInfo(release)),
+  );
   const [lastRelease, ...previousReleases] = fullReleases;
   return (
     <Layout {...props} path={`${path}-new`}>

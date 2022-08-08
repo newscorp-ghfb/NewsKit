@@ -4,6 +4,7 @@ export interface Release {
   published_at: string;
   tag_name: string;
   body: string;
+  name: string;
 }
 
 export interface FullRelease extends Release {

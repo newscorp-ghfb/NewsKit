@@ -46,16 +46,27 @@ export const addChangeLevelToReleases: (
     .sort(sortReleases(false));
 };
 
+// As part of the release process, the release tag name initially has 'trigger-release@'
+// in it, which is then removed manually when the release is finished. Since the
+// first build after a new release will happen before this is removed, we need to
+// remove it here.
+export const updateFinalReleaseInfo = (release: Release) => {
+  const arr = release.tag_name.match(/\d*\.\d*\.\d*/);
+  const version = `v${arr![0]}`;
+  const [oldCompareLink, stub] = release.body.match(
+    `(${GITHUB_URL}/${REPO}/compare/v\\d*\\.\\d*\\.\\d*...)(.*\\d*\\.\\d*\\.\\d*)`,
+  )!;
+  const newCompareLink = `${stub}${version}`;
+  return {
+    ...release,
+    name: version,
+    tag_name: version,
+    body: release.body.replace(oldCompareLink, newCompareLink),
+  };
+};
+
 export const formatGitHubMarkDown = (raw: string) =>
   raw
-    // some 'compare releases' links are invalid and need to be corrected
-    .replaceAll(
-      RegExp(
-        `${GITHUB_URL}/${REPO}/compare/v\\d*\\.\\d*\\.\\d*...trigger-release@\\d*\\.\\d*\\.\\d*`,
-        'g',
-      ),
-      (invalidLink: string) => invalidLink.replace('trigger-release@', 'v'),
-    )
     // hyperlink the 'compare releases' links
     .replaceAll(
       RegExp(
