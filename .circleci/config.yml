@@ -614,10 +614,10 @@ jobs:
           <<: *slack_notify
 
   skip_applitools_check:
-    executor: node-large
+    executor: node
     steps:
       - run:
-          name: ''
+          name: 'Pass the required GitHub / Applitools check'
           command: |
             curl --request POST --header "Content-Type: application/json" --data "{\"serverId\":\"github\",\"commitSha\":\"$CIRCLE_SHA1\"}" "https://eyesapi.applitools.com/api/externals/github/servers/github/commit/$CIRCLE_SHA1/complete?apiKey=$APPLITOOLS_API_KEY"
 
