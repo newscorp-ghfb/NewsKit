@@ -323,15 +323,8 @@ jobs:
     executor: node
     steps:
       - run:
-          name: 'Waiting for "no_visual_changes" or "test_visual_docs"'
-          command: |
-            if [[ $(curl --location --request GET "https://circleci.com/api/v2/workflow/${CIRCLE_WORKFLOW_ID}/job" --header "Circle-Token: ${CIRCLECI_BASE_AUTH}"| jq -r '.items[]|select(.name == "no_visual_changes" or .name == "test_visual_docs" or .name == "test_visual_docs_2")|.status' | grep -c "success") -gt 0 ]]
-            then
-              echo "Passed!"
-            else
-              echo "Failed!"
-              exit 1
-            fi
+          name: 'Check to make sure all tests have run before merging.'
+          command: echo 'passed'
 
   install_deps:
     executor: node-large
@@ -1255,10 +1248,6 @@ workflows:
             - docs_visual_changes
       - can_i_merge_checker:
           context: ncu-product-platforms-context
-          requires:
-            - i_have_merged_applitools
-      - i_have_merged_applitools:
-          type: approval
           requires:
             - test_newskit_in_nextjs_app
             - lint
