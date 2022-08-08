@@ -33,18 +33,13 @@ const GridBox = styled.div`
 `;
 
 const HeroGridLayoutItem = styled(GridLayoutItem)<{
-  breakpoint: string;
   themeMode: string;
 }>`
   background-size: cover;
-  background-image: ${({breakpoint, themeMode}) => {
-    if (breakpoint === 'xs' || breakpoint === 'sm') {
-      return 'unset';
-    }
-    return themeMode === 'light'
+  background-image: ${({themeMode}) =>
+    themeMode === 'light'
       ? 'url(static/landing/landing-background.svg)'
-      : 'url(static/landing/landing-background-dark.svg)';
-  }};
+      : 'url(static/landing/landing-background-dark.svg)'};
   background-repeat: no-repeat;
   margin-top: -12px;
 `;
@@ -59,11 +54,7 @@ const Hero = () => {
   const isSmallScreen = breakpoint === 'xs' || breakpoint === 'sm';
 
   return (
-    <HeroGridLayoutItem
-      themeMode={themeMode}
-      breakpoint={breakpoint}
-      column={{xs: `1 / span 12`}}
-    >
+    <HeroGridLayoutItem themeMode={themeMode} column={{xs: `1 / span 12`}}>
       <GridLayout
         columns={{xs: 'repeat(12, minmax(0,1fr))'}}
         overrides={{marginBlock: {xs: 'space070', lg: 'space000'}}}
