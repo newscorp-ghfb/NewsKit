@@ -619,11 +619,7 @@ jobs:
       - run:
           name: ''
           command: |
-            curl 
-            --request POST 
-            --header "Content-Type: application/json"
-            --data '{"serverId":"github","commitSha":"$CIRCLE_SHA1"}'
-            "https://eyesapi.applitools.com/api/externals/github/servers/github/commit/$CIRCLE_SHA1/complete?apiKey=$APPLITOOLS_API_KEY"
+            curl --request POST --header "Content-Type: application/json" --data "{\"serverId\":\"github\",\"commitSha\":\"$CIRCLE_SHA1\"}" "https://eyesapi.applitools.com/api/externals/github/servers/github/commit/$CIRCLE_SHA1/complete?apiKey=$APPLITOOLS_API_KEY"
 
   test_visual_docs:
     <<: *cypress_defaults
