@@ -159,9 +159,9 @@ exports[`Paragraph renders with drop cap 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-1 {
     font-family: "Bitter",serif;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 1.125;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0;
   }
 }
@@ -269,9 +269,9 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-1 {
     font-family: "Bitter",serif;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 1.125;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0;
   }
 }
@@ -401,9 +401,9 @@ exports[`Paragraph renders with dropCap logical props 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-1 {
     font-family: "Bitter",serif;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 1.125;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0;
   }
 }

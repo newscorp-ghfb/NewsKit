@@ -843,8 +843,8 @@ Object {
     },
     "editorialDisplay020": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
-      "fontSize": "{{fonts.fontSize150}}",
-      "fontWeight": "{{fonts.fontWeight040}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
@@ -864,8 +864,8 @@ Object {
     },
     "editorialDropCap020": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
-      "fontSize": "{{fonts.fontSize150}}",
-      "fontWeight": "{{fonts.fontWeight040}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },

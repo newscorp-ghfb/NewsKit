@@ -11,9 +11,9 @@ typographyPresets.editorialDisplay010 = {
 };
 typographyPresets.editorialDisplay020 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
-  fontSize: '{{fonts.fontSize150}}',
+  fontSize: '{{fonts.fontSize130}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
-  fontWeight: '{{fonts.fontWeight040}}',
+  fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialDisplay030 = {
