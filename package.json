@@ -12,7 +12,7 @@
   "repository": "",
   "sideEffects": false,
   "engines": {
-    "node": ">=16.9.1"
+    "node": ">=16.10.0"
   },
   "scripts": {
     "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
