@@ -72,16 +72,33 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   ),
 };
 
-const AudioPropsAndVolumeControlWithInitialVolumeCollapsed: AudioPlayerComposableProps = {
+const AudioPropsAndVolumeControlHorizontalCollapsed: AudioPlayerComposableProps = {
   src: '/audio_file_1.mp3',
   initialVolume: 0.2,
   children: (
     <>
-      <AudioPlayerVolumeControl collapsed />
+      <AudioPlayerVolumeControl layout="horizontalCollapsed" />
     </>
   ),
 };
-
+const AudioPropsAndVolumeControlWithInitialVolumeDefault: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  initialVolume: 0.2,
+  children: (
+    <>
+      <AudioPlayerVolumeControl />
+    </>
+  ),
+};
+const AudioPropsAndVolumeControlWithInitialVolumeHorizontal: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  initialVolume: 0.2,
+  children: (
+    <>
+      <AudioPlayerVolumeControl layout="horizontal" />
+    </>
+  ),
+};
 const AudioPropsWithInitialTime: AudioPlayerComposableProps = {
   initialTime: 50,
   src: '/audio_file_1.mp3',
@@ -1034,7 +1051,7 @@ describe('Audio Player Composable', () => {
 
       const {queryByTestId, getByTestId, asFragment} = renderWithTheme(
         AudioPlayerComposable,
-        AudioPropsAndVolumeControlWithInitialVolumeCollapsed,
+        AudioPropsAndVolumeControlHorizontalCollapsed,
       );
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
@@ -1047,13 +1064,51 @@ describe('Audio Player Composable', () => {
       expect(audioElement.volume).toBe(0.2);
       expect(asFragment()).toMatchSnapshot();
     });
-
+    it('renders horizontal expandable by default', () => {
+      const {asFragment} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlWithInitialVolumeDefault,
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    it('renders horizontally with layout prop is horizontal', () => {
+      const {asFragment} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlWithInitialVolumeHorizontal,
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
     it('should render correctly with vertical prop', () => {
       const {asFragment} = renderWithTheme(
         AudioPlayerComposable,
         AudioPropsAndVolumeControlVertical,
       );
       expect(asFragment()).toMatchSnapshot();
+    });
+    it('should hover on volume control', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlWithInitialVolumeDefault,
+      );
+      const muteButton = getByTestId('mute-button');
+
+      fireEvent.mouseOver(muteButton);
+      expect(asFragment()).toMatchSnapshot('with hover');
+
+      fireEvent.mouseLeave(muteButton);
+      expect(asFragment()).toMatchSnapshot('without hover');
+    });
+    it('should on Focus & onBlur on volume control', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlWithInitialVolumeDefault,
+      );
+      const muteButton = getByTestId('mute-button');
+
+      fireEvent.focus(muteButton);
+      expect(asFragment()).toMatchSnapshot('with focus');
+      fireEvent.blur(muteButton);
+      expect(asFragment()).toMatchSnapshot('with blur');
     });
     it('should render correctly with overrides', () => {
       const myCustomTheme = createTheme({
