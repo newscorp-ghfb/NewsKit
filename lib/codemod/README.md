@@ -24,7 +24,6 @@ npx @newskit/codemod --help
 The list includes these transformers
 
 - [`emotion-icons`](#emotion-icons)
-<!-- TODO -->
 - [`remove-redundant-marker-ul`](#remove-redundant-marker-ul)
 - [`update-list-item-marker-ul-value`](#update-list-item-marker-ul-value)
 
@@ -43,6 +42,24 @@ Imports and transform `newskit` icons to `emotion-icons`;
 npx @newskit/codemod emotion-icons [path]
 // example
 npx @newskit/codemod emotion-icons 'components/**/*.+(ts|tsx|js|jsx)' 
+```
+
+#### `remove-redundant-marker-ul`
+
+Unordered List has now a default marker, removes the prop passing the same icon now set as default.
+
+```diff
+-  <UnorderedList listItemMarker={IconFilledCircle}>{listData}</UnorderedList>
++  <UnorderedList >{listData}</UnorderedList>
+```
+
+#### `update-list-item-marker-ul-value`
+
+Unordered List has now a default marker, the script passes `listItemMarker` with a value of `null` to UnorderedList components originally not passing any marker.
+
+```diff
+-   <UnorderedList></UnorderedList>
++    <UnorderedList listItemMarker={null}></UnorderedList>
 ```
 
 
