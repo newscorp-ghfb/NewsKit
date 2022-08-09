@@ -10,8 +10,6 @@ import {
 import React from 'react';
 
 export interface BorderCardProps {
-  // eslint-disable-next-line react/no-unused-prop-types
-  children?: React.ReactNode;
   borderRadiusToken?: string;
   borderWidthToken?: string;
   boxShadowToken?: string;
