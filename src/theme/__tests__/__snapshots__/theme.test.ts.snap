@@ -825,6 +825,28 @@ Object {
         "transform": "translateY(-100%)",
       },
     },
+    "widthChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+      "enter": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterDone": Object {},
+      "exit": Object {},
+      "exitActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "exitDone": Object {},
+    },
   },
   "typographyPresets": Object {
     "editorialCaption010": Object {
@@ -1367,54 +1389,28 @@ Object {
     "typographyPreset": "utilityButton030",
   },
   "audioPlayerVolumeControl": Object {
-    "horizontal": Object {
-      "button": Object {
-        "stylePreset": "iconButtonMinimalPrimary",
-      },
-      "slider": Object {
-        "feedback": Object {
-          "size": "sizing060",
-        },
-        "indicator": Object {
-          "stylePreset": "audioPlayerVolumeControlIndicator",
-        },
-        "thumb": Object {
-          "size": "sizing040",
-          "stylePreset": "audioPlayerVolumeControlThumb",
-        },
-        "track": Object {
-          "length": "130px",
-          "size": "sizing010",
-          "stylePreset": "audioPlayerVolumeControlTrack",
-        },
-      },
-      "spaceBetween": "space030",
-      "stylePreset": "audioPlayerVolumeControlHorizontalContainer",
+    "button": Object {
+      "stylePreset": "iconButtonMinimalPrimary",
     },
-    "vertical": Object {
-      "button": Object {
-        "stylePreset": "iconButtonMinimalPrimary",
+    "slider": Object {
+      "feedback": Object {
+        "size": "sizing060",
       },
-      "slider": Object {
-        "feedback": Object {
-          "size": "sizing060",
-        },
-        "indicator": Object {
-          "stylePreset": "audioPlayerVolumeControlIndicator",
-        },
-        "thumb": Object {
-          "size": "sizing040",
-          "stylePreset": "audioPlayerVolumeControlThumb",
-        },
-        "track": Object {
-          "length": "130px",
-          "size": "sizing010",
-          "stylePreset": "audioPlayerVolumeControlTrack",
-        },
+      "indicator": Object {
+        "stylePreset": "audioPlayerVolumeControlIndicator",
       },
-      "spaceBetween": "space030",
-      "stylePreset": "audioPlayerVolumeControlVerticalContainer",
+      "thumb": Object {
+        "size": "sizing040",
+        "stylePreset": "audioPlayerVolumeControlThumb",
+      },
+      "track": Object {
+        "length": "130px",
+        "size": "sizing010",
+        "stylePreset": "audioPlayerVolumeControlTrack",
+      },
     },
+    "spaceBetween": "space030",
+    "transitionPreset": "widthChange",
   },
   "banner": Object {
     "horizontal": Object {

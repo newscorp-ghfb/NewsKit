@@ -9,7 +9,8 @@ exports[`ExperimentationWeb renders optimizely scripts 1`] = `
       "content": "(function() {\\n            if (window.location === window.parent.location) {\\n              window.optimizely_feature_flag = true;\\n              window[\\"optimizely_cdn\\"] = \\"https://cdn.optimizely.com/js/123456789.js\\";\\n\\n              window['optimizely'] = window['optimizely'] || [];\\n              if (document.cookie.indexOf('nuk-consent-personalisation=1') === -1) {\\n                window['optimizely'].push({\\n                  type: 'disable',\\n                });\\n              }\\n            }\\n          })();"
     },
     {
-      "src": "https://cdn.optimizely.com/js/123456789.js"
+      "src": "https://cdn.optimizely.com/js/123456789.js",
+      "async": false
     }
   ],
   "reactHelmet": "undefined"
@@ -27,7 +28,46 @@ exports[`ExperimentationWeb renders optimizely scripts 2`] = `
       "content": "(function() {\\n            if (window.location === window.parent.location) {\\n              window.optimizely_feature_flag = true;\\n              window[\\"optimizely_cdn\\"] = \\"https://cdn.optimizely.com/js/123456789.js\\";\\n\\n              window['optimizely'] = window['optimizely'] || [];\\n              if (document.cookie.indexOf('nuk-consent-personalisation=1') === -1) {\\n                window['optimizely'].push({\\n                  type: 'disable',\\n                });\\n              }\\n            }\\n          })();"
     },
     {
-      "src": "https://cdn.optimizely.com/js/123456789.js"
+      "src": "https://cdn.optimizely.com/js/123456789.js",
+      "async": false
+    }
+  ],
+  "reactHelmet": "function"
+}
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ExperimentationWeb renders optimizely scripts async 1`] = `
+<DocumentFragment>
+  <div>
+    RenderScripts Component with props:{
+  "scripts": [
+    {
+      "content": "(function() {\\n            if (window.location === window.parent.location) {\\n              window.optimizely_feature_flag = true;\\n              window[\\"optimizely_cdn\\"] = \\"https://cdn.optimizely.com/js/123456789.js\\";\\n\\n              window['optimizely'] = window['optimizely'] || [];\\n              if (document.cookie.indexOf('nuk-consent-personalisation=1') === -1) {\\n                window['optimizely'].push({\\n                  type: 'disable',\\n                });\\n              }\\n            }\\n          })();"
+    },
+    {
+      "src": "https://cdn.optimizely.com/js/123456789.js",
+      "async": true
+    }
+  ],
+  "reactHelmet": "undefined"
+}
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ExperimentationWeb renders optimizely scripts async 2`] = `
+<DocumentFragment>
+  <div>
+    RenderScripts Component with props:{
+  "scripts": [
+    {
+      "content": "(function() {\\n            if (window.location === window.parent.location) {\\n              window.optimizely_feature_flag = true;\\n              window[\\"optimizely_cdn\\"] = \\"https://cdn.optimizely.com/js/123456789.js\\";\\n\\n              window['optimizely'] = window['optimizely'] || [];\\n              if (document.cookie.indexOf('nuk-consent-personalisation=1') === -1) {\\n                window['optimizely'].push({\\n                  type: 'disable',\\n                });\\n              }\\n            }\\n          })();"
+    },
+    {
+      "src": "https://cdn.optimizely.com/js/123456789.js",
+      "async": true
     }
   ],
   "reactHelmet": "function"

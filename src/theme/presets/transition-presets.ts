@@ -102,6 +102,28 @@ transitionPresets.slideLeft = {
     transform: 'translateX(-100%)',
   },
 };
+transitionPresets.widthChange = {
+  base: {
+    transitionProperty: 'width',
+    transitionDuration: '{{motions.motionDuration020}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+  },
+  enter: {
+    transitionProperty: 'width',
+    transitionDuration: '{{motions.motionDuration020}}',
+  },
+  enterActive: {
+    transitionProperty: 'width',
+    transitionDuration: '{{motions.motionDuration020}}',
+  },
+  enterDone: {},
+  exit: {},
+  exitActive: {
+    transitionProperty: 'width',
+    transitionDuration: '{{motions.motionDuration020}}',
+  },
+  exitDone: {},
+};
 
 transitionPresets.slideRight = {
   base: {
