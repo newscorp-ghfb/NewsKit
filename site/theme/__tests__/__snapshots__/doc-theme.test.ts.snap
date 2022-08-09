@@ -1106,9 +1106,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -1128,6 +1158,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -1182,6 +1222,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -3517,9 +3562,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -3539,6 +3614,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -3593,6 +3678,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -5931,9 +6021,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -5953,6 +6073,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -6007,6 +6137,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -8342,9 +8477,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -8364,6 +8529,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -8418,6 +8593,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -10756,9 +10936,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -10778,6 +10988,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -10832,6 +11052,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -13167,9 +13392,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -13189,6 +13444,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -13243,6 +13508,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -15581,9 +15851,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -15603,6 +15903,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -15657,6 +15967,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -17992,9 +18307,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -18014,6 +18359,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -18068,6 +18423,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
