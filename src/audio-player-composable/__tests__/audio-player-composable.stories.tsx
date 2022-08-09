@@ -12,6 +12,7 @@ import {
   AudioPlayerVolumeControl,
   MuteButtonIconProps,
   AudioPlayerPlaybackSpeedControl,
+  AudioPlayerVolumeControlOverridesProps,
 } from '..';
 import {
   StorybookHeading,
@@ -240,7 +241,11 @@ const AudioPlayerFullRecorded = (props: {
 
             <Areas.Volume alignSelf="center" justifySelf="start">
               <AudioPlayerVolumeControl
-                collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+                layout={
+                  breakpointKey === 'xs' || breakpointKey === 'sm'
+                    ? 'horizontalCollapsed'
+                    : 'horizontal'
+                }
               />
             </Areas.Volume>
 
@@ -381,6 +386,7 @@ const AudioPlayerFullLive = (props: {
 const AudioPlayerInlineRecorded = (props: {
   ariaLandmark: string;
   src?: string;
+  overrides?: AudioPlayerVolumeControlOverridesProps;
 }) => {
   const breakpointKey = useBreakpointKey();
   return (
@@ -392,8 +398,12 @@ const AudioPlayerInlineRecorded = (props: {
       >
         <GridLayoutItem column="1/2" row="1/5">
           <AudioPlayerVolumeControl
-            collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
-            layout="vertical"
+            {...props}
+            layout={
+              breakpointKey === 'xs'
+                ? 'horizontalCollapsed'
+                : 'horizontalExpandable'
+            }
           />
         </GridLayoutItem>
         <GridLayoutItem column="2/3" row="4/5">
@@ -419,7 +429,6 @@ const AudioPlayerInlineRecorded = (props: {
     </AudioPlayerComposable>
   );
 };
-
 const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
   <AudioPlayerComposable src={LIVE_AUDIO_SRC} live {...props}>
     <GridLayout
@@ -446,8 +455,11 @@ export const AudioPlayer = () => (
     <AudioPlayerFullLive ariaLandmark="audio player full live" />
     <br />
     <br />
-    <StorybookSubHeading>Audio Player - inline recorded</StorybookSubHeading>
+    <StorybookSubHeading>
+      Audio Player - inline recorded-expanded
+    </StorybookSubHeading>
     <AudioPlayerInlineRecorded ariaLandmark="audio player inline recorded" />
+    <br />
     <br />
     <StorybookSubHeading>Audio Player - inline live</StorybookSubHeading>
     <AudioPlayerInlineLive ariaLandmark="audio player inline live" />
@@ -1097,4 +1109,70 @@ export const AudioPlayerKeyboard = () => (
   </StyledPage>
 );
 AudioPlayerKeyboard.storyName = 'audio-keyboard-shortcuts';
+
+export const AudioPlayerVolumeControlLayout = () => (
+  <StyledPage>
+    <StorybookSubHeading>Volume control horizontal</StorybookSubHeading>
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player volume control horizontal"
+    >
+      <AudioPlayerVolumeControl layout="horizontal" />
+    </AudioPlayerComposable>
+    <br />
+    <StorybookSubHeading>
+      Volume control horizontal-expandable
+    </StorybookSubHeading>
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player volume control horizontal expanded"
+    >
+      <GridLayout
+        columns="auto auto 40px 1fr auto auto"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <GridLayoutItem column="1/2" row="1/5">
+          <AudioPlayerVolumeControl />
+        </GridLayoutItem>
+      </GridLayout>
+    </AudioPlayerComposable>
+    <br />
+    <StorybookSubHeading>
+      Volume control horizontal-collapsed
+    </StorybookSubHeading>
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player volume control horizontal collapsed"
+    >
+      <GridLayout
+        columns="auto auto 40px 1fr auto auto"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <GridLayoutItem column="1/2" row="1/5">
+          <AudioPlayerVolumeControl layout="horizontalCollapsed" />
+        </GridLayoutItem>
+      </GridLayout>
+    </AudioPlayerComposable>
+    <br />
+    <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player volume control vertical"
+    >
+      <GridLayout
+        columns="auto auto 40px 1fr auto auto"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <GridLayoutItem column="1/2" row="1/5">
+          <AudioPlayerVolumeControl layout="vertical" />
+        </GridLayoutItem>
+      </GridLayout>
+    </AudioPlayerComposable>
+  </StyledPage>
+);
+
+AudioPlayerVolumeControlLayout.storyName = 'audio-player-volume-control-layout';
 AudioPlayerKeyboard.parameters = {eyes: {waitBeforeCapture: 5000}};
