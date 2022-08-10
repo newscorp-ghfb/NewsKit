@@ -208,18 +208,14 @@ export const renderCols = (
 
       case 'borderRadius': {
         cellContent = cellValue && (
-          <BorderCard borderRadiusToken={cellValue.toString()}>
-            {cellValue}
-          </BorderCard>
+          <BorderCard borderRadiusToken={cellValue.toString()} />
         );
         break;
       }
 
       case 'borderWidth': {
         cellContent = cellValue && (
-          <BorderCard borderWidthToken={cellValue.toString()}>
-            {cellValue}
-          </BorderCard>
+          <BorderCard borderWidthToken={cellValue.toString()} />
         );
         break;
       }
