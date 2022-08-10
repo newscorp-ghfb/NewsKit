@@ -3,7 +3,7 @@ import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
 export interface UnorderedListProps {
-  listItemMarker?: NewsKitIcon;
+  listItemMarker?: NewsKitIcon | null;
   markerAlign?: 'start' | 'center' | 'end';
   overrides?: {
     spaceStack?: MQ<string>;
