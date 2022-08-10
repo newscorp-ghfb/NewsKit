@@ -22,7 +22,7 @@ import {
 import {StyledTrack} from '../slider/styled';
 import {useTheme, Devices} from '../theme';
 import {getSingleStylePreset} from '../utils/style';
-import {LabelPosition} from '../slider/types';
+import {LabelPosition, RenderTrackFunction} from '../slider/types';
 import {AudioEvents, AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
 import {StackChild} from '../stack-child';
@@ -141,7 +141,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
     audioEvents[eventName](e);
   };
 
-  const renderTrack: SliderProps['renderTrack'] = useCallback(
+  const renderTrack: SliderProps['renderTrack'] = useCallback<RenderTrackFunction>(
     ({props: trackProps, children: trackChildren, isDragged}) => {
       const sliderTrackStylePreset = getToken(
         {theme, overrides},
