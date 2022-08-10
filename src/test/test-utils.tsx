@@ -23,7 +23,7 @@ export const renderWithImplementation = <T extends {}>(
 ) =>
   renderer(<Component {...(props as T)} />, {
     ...options,
-    wrapper: ({children}) => (
+    wrapper: ({children}: {children?: React.ReactNode}) => (
       <NewsKitProvider theme={newskitLightTheme} instrumentation={{fireEvent}}>
         {children}
       </NewsKitProvider>
@@ -40,7 +40,7 @@ export const renderWithThemeFactory = (
 ) =>
   renderer(<Component {...(props as T)} />, {
     ...options,
-    wrapper: ({children}) => (
+    wrapper: ({children}: {children?: React.ReactNode}) => (
       <NewsKitProvider theme={theme}>{children}</NewsKitProvider>
     ),
   });
