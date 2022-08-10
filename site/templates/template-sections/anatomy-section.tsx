@@ -89,26 +89,31 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
         </CommonSection>
       ) : (
         <CommonSection title="Anatomy" id="anatomy" introduction={introduction}>
-          {components ? (
-            components.map(
-              (
-                {title, summary, media: componentMedia, rows: componentrows},
-                index,
-                array,
-              ) => (
-                <ComponentPageCell>
-                  <ContentText title={title}>{summary}</ContentText>
-                  {componentMedia &&
-                    renderAnatomy(componentMedia, componentrows)}
-                  {index < array.length - 1 && <Block spaceStack="space090" />}
-                </ComponentPageCell>
-              ),
-            )
-          ) : (
-            <ComponentPageCell>
-              {media && renderAnatomy(media, rows)}
-            </ComponentPageCell>
-          )}
+          <ComponentPageCell>
+            {components
+              ? components.map(
+                  (
+                    {
+                      title,
+                      summary,
+                      media: componentMedia,
+                      rows: componentrows,
+                    },
+                    index,
+                    array,
+                  ) => (
+                    <>
+                      <ContentText title={title}>{summary}</ContentText>
+                      {componentMedia &&
+                        renderAnatomy(componentMedia, componentrows)}
+                      {index < array.length - 1 && (
+                        <Block spaceStack="space090" />
+                      )}
+                    </>
+                  ),
+                )
+              : media && renderAnatomy(media, rows)}
+          </ComponentPageCell>
         </CommonSection>
       )}
     </>
