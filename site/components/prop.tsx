@@ -18,6 +18,7 @@ export interface PropProps {
   default?: any;
   required?: boolean;
   nested?: boolean;
+  children?: React.ReactNode;
 }
 
 export interface DefaultValueProps {
