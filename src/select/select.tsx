@@ -1,4 +1,10 @@
-import React, {ChangeEvent, useEffect, useRef, useState} from 'react';
+import React, {
+  ChangeEvent,
+  FocusEvent,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
 import {SelectProps, SelectOptionProps} from './types';
@@ -40,7 +46,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
     const [isFocused, setIsFocused] = React.useState(false);
     const onSelectButtonFocus = React.useCallback(
-      event => {
+      (event: FocusEvent<HTMLInputElement>) => {
         setIsFocused(true);
         if (onFocus) {
           onFocus(event);
@@ -74,10 +80,10 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     }, [defaultSelectedItem, onChange, programmaticallySelectedItem]);
 
     const onInputChange = React.useCallback(
-      event => {
+      (event: UseSelectStateChange<React.ReactElement>) => {
         // istanbul ignore else
         if (localInputRef.current) {
-          localInputRef.current.value = event.selectedItem.props.value;
+          localInputRef.current.value = event.selectedItem!.props.value;
         }
         // istanbul ignore else
         if (onChange && localInputRef.current) {

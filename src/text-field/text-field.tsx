@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ChangeEvent, FocusEvent} from 'react';
 import {TextFieldProps, TextFieldSize} from './types';
 import {StyledInput} from './styled';
 import {WithEnhancers} from '../with-enhancers/with-enhancers';
@@ -32,7 +32,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     const [isFocused, setIsFocused] = React.useState(false);
 
     const onInputFocus = React.useCallback(
-      event => {
+      (event: FocusEvent<HTMLInputElement>) => {
         setIsFocused(true);
         fireEvent({
           originator: eventOriginator,
@@ -49,7 +49,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     );
 
     const onInputBlur = React.useCallback(
-      event => {
+      (event: FocusEvent<HTMLInputElement>) => {
         if (onBlur) {
           onBlur(event);
         }
@@ -59,7 +59,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     );
 
     const onInputChange = React.useCallback(
-      event => {
+      (event: ChangeEvent<HTMLInputElement>) => {
         if (onChange) {
           onChange(event);
         }

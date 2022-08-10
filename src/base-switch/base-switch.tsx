@@ -1,4 +1,10 @@
-import React, {useCallback, useLayoutEffect, useRef, useState} from 'react';
+import React, {
+  ChangeEvent,
+  useCallback,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from 'react';
 import composeRefs from '@seznam/compose-react-refs';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {
@@ -60,7 +66,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
     }, [ref, label]);
 
     const onInputChange = useCallback(
-      event => {
+      (event: ChangeEvent<HTMLInputElement>) => {
         setCheckedState(event.target.checked);
       },
       [setCheckedState],

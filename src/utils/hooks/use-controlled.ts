@@ -14,7 +14,7 @@ export function useControlled<T = unknown>({
   const value = isControlled ? controlledValue : valueState;
 
   const setValueIfUncontrolled = React.useCallback(
-    newValue => {
+    (newValue: T) => {
       if (!isControlled) {
         setValue(newValue);
       }
