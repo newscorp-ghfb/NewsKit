@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, toNewsKitIcon, LinkInline} from 'newskit';
+import {Block, InlineMessage, toNewsKitIcon} from 'newskit';
 import {Info as InfoFilled} from '@emotion-icons/material/Info';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
@@ -8,6 +8,7 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {ContentText} from '../../components/text-section/content-text';
 import {InlineCode} from '../../components/markdown-elements';
 import {UsageKind} from '../../components/usage-card';
+import {Link} from '../../components/link';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
 
@@ -262,21 +263,17 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               Selection controls (inputs), such as the FormInput,{' '}
-              <LinkInline href="/components/radio-button/">
-                Radio Button
-              </LinkInline>
-              , and Checkbox, can be grouped together with other selection
-              controls, Labels, and Assistive Text together in a Fieldset. The
-              Fieldset has a caption that gives a title attributed to the
-              elements that appear in the Fieldset, called a Legend.
+              <Link href="/components/radio-button/">Radio Button</Link>, and
+              Checkbox, can be grouped together with other selection controls,
+              Labels, and Assistive Text together in a Fieldset. The Fieldset
+              has a caption that gives a title attributed to the elements that
+              appear in the Fieldset, called a Legend.
               <br />
               <br />
               The Fieldset can also support other selection controls (inputs)
               such as the{' '}
-              <LinkInline href="/components/radio-button/">
-                FormInput
-              </LinkInline>
-              , FormInput Switch, and FormInput TextField.
+              <Link href="/components/radio-button/">FormInput</Link>, FormInput
+              Switch, and FormInput TextField.
               <br />
               <br />
               For more information, please refer to the Fieldset component.
@@ -355,9 +352,9 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               The Checkbox in an invalid state changes style when the Checkbox
               selection doesn’t conform to a specific format eg. attempting to
               proceed without selecting a required Checkbox in a{' '}
-              <LinkInline href="/components/form/">Form</LinkInline>. The Form
-              component is used to apply validation behaviour. The style of the
-              label remains the same.
+              <Link href="/components/form/">Form</Link>. The Form component is
+              used to apply validation behaviour. The style of the label remains
+              the same.
             </>
           ),
           media: getIllustrationComponent('components/checkbox/states/invalid'),
@@ -424,9 +421,9 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             <>
               The Checkbox in an valid state changes style when the Checkbox
               selection conforms to a specific format eg.updating preferences in
-              a <LinkInline href="/components/form/">Form</LinkInline>. The Form
-              component is used to apply validation behaviour.The style of the
-              label remains the same.
+              a <Link href="/components/form/">Form</Link>. The Form component
+              is used to apply validation behaviour.The style of the label
+              remains the same.
             </>
           ),
           media: getIllustrationComponent('components/checkbox/states/valid'),
@@ -591,9 +588,9 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               the Form.
               <br />
               <br />
-              <LinkInline href="/components/form/">
+              <Link href="/components/form/">
                 For more information, please refer to the Form component
-              </LinkInline>
+              </Link>
               .
               <Block spaceStack="space050" />
               <InlineMessage
@@ -658,8 +655,8 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             <>
               Checkboxes should be used to help users select multiple options
               from a list or to check or uncheck a single option. Unlike{' '}
-              <LinkInline href="/components/radio-button/">Radios</LinkInline>,
-              users can select multiple options from a list of Checkboxes.
+              <Link href="/components/radio-button/">Radios</Link>, users can
+              select multiple options from a list of Checkboxes.
             </>
           ),
           kind: UsageKind.DO,
@@ -670,9 +667,9 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             <>
               Avoid using the Checkbox component if users can only choose one
               option from a selection. In this case, use the{' '}
-              <LinkInline href="/components/radio-button/">
+              <Link href="/components/radio-button/">
                 Radio Button component
-              </LinkInline>
+              </Link>
               .
             </>
           ),
@@ -736,12 +733,12 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           <Block spaceStack="space100" />
           <ContentText title="Grouping Checkboxes" titleAs="span">
             It is recommended to{' '}
-            <LinkInline
+            <Link
               target="_blank"
               href="https://www.w3.org/TR/wai-aria-1.2/#group"
             >
               group
-            </LinkInline>{' '}
+            </Link>{' '}
             Checkboxes and other related elements such as Labels and Assistive
             Text together using the Fieldset component, with a title attributed
             to the elements that appear in the Fieldset, called a Legend.
@@ -811,10 +808,8 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           <InlineMessage role="region" aria-label="api introduction">
             There are two components exported from the package, one for use
             within the{' '}
-            <LinkInline href="/components/form/">
-              NewsKit Form component
-            </LinkInline>
-            , and one for use as a controlled component.
+            <Link href="/components/form/">NewsKit Form component</Link>, and
+            one for use as a controlled component.
           </InlineMessage>
         </>
       ),
@@ -826,9 +821,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               The FormInput Checkbox has a range of props that can be used to
               define an appropriate experience for different use cases.Use this
               component within the{' '}
-              <LinkInline href="/components/form/">
-                NewsKit Form component.
-              </LinkInline>
+              <Link href="/components/form/">NewsKit Form component.</Link>
             </>
           ),
           propsRows: commonPropsRows('FormInput'),
@@ -845,7 +838,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
                 <InlineCode>rules</InlineCode> props are set on the form input
                 level. If you want to add validation rules or set the name of
                 this component, please refer to the{' '}
-                <LinkInline href="/components/form/">Form</LinkInline> component
+                <Link href="/components/form/">Form</Link> component
               </InlineMessage>
               <Block spaceStack="space050" />
               <InlineMessage
@@ -872,12 +865,12 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
                 <>
                   If provided, defines name of the input element, used when
                   submitting an{' '}
-                  <LinkInline
+                  <Link
                     target="_blank"
                     href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefname"
                   >
                     HTML form
-                  </LinkInline>
+                  </Link>
                   .
                 </>
               ),
