@@ -23,9 +23,9 @@ and Optimizely script CDN URL.
 
 <CodeFromFile path="examples/experimentation-web.tsx" />
 
-The component should be added at the top-level of the project in the `<head>` tag. The Optimizely script should run before the other scripts to avoid flickering and unexpected DOM changes on the page. 
+The component should be added at the top-level of the project in the `<head>` tag. The Optimizely script should run before the other scripts to avoid flickering and unexpected DOM changes on the page.
 
-It’s important to load the Optimizely script before the utag script, so that the GA `page-view` event can report on the running experiments. 
+It’s important to load the Optimizely script before the utag script, so that the GA `page-view` event can report on the running experiments.
 
 ## Props
 
@@ -50,5 +50,12 @@ It’s important to load the Optimizely script before the utag script, so that t
     </a>{' '}
     you can pass the Helmet component in and the scripts will render
     using that component.
+  </Prop>
+
+  <Prop name="async" type="boolean">
+    If you are looking for better page-load performance, you might consider loading Optimizely as a non-blocking resource (async).
+    However, this sometimes causes page flickering, which in turn can generate sub-optimal user experiences.
+    We strongly recommend to load the Optimizely snippet as non-blocking.
+    By default the component loads Optimizely synchronously.
   </Prop>
 </LegacyBlock>

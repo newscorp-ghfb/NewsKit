@@ -277,6 +277,46 @@ export const stylePresets = {
       whiteSpace: 'nowrap',
     },
   },
+  flagSolidMinor: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interfaceNeutral020}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.interface020}}',
+    },
+  },
+  flagSolidPatch: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interfaceNeutral020}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.interface030}}',
+    },
+  },
+  flagSolidMajor: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interfaceNeutral010}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.interface010}}',
+    },
+  },
+  flagSolidBreakingChange: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interfaceNegative010}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.interfaceNegative020}}',
+    },
+  },
 
   // Divider
 
@@ -952,6 +992,11 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusRounded030}}',
       backgroundSize: 'cover',
       backgroundPosition: 'bottom left',
+    },
+  },
+  gitHubMarkDownText: {
+    base: {
+      color: '{{colors.inkBase}}',
     },
   },
 };

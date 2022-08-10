@@ -664,8 +664,19 @@ const ModalComponent = (layoutProps: LayoutProps) => (
       uiKit: true,
     }}
     related={{
-      introduction: '',
-      related: ['Drawer', 'Menu'],
+      related: [
+        'Block',
+        'Card',
+        'Divider',
+        'Drawer',
+        'Fieldset',
+        'Grid',
+        'Grid Layout',
+        'Popover',
+        'Stack',
+        'Structured List',
+        'Visibility',
+      ],
     }}
   />
 );

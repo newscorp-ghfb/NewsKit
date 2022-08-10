@@ -42,16 +42,26 @@ The image component provides a `<picture>` and an `<img>` element inside it to p
   </Prop>
   <Prop name="sources" type="ImageSource[]">
     This prop utilize underlying Picture element and generates Source elements
-    from the privided array of ImageSource. For detailed inforamtion how it
+    from the provided array of ImageSource. For detailed information how it
     works check out{' '}
     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">
       MDN
     </a>.
-    ImageSource exnteds <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSourceElement">
+    ImageSource extends <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSourceElement">
       Image Source element
     </a>, the only difference is that you can use breakpoint key  <InlineCode>(xs | sm | md | lg | xl)</InlineCode>  as <InlineCode>media</InlineCode> instead
     of passing media query.
   </Prop>
+  <Prop name="loading" type="'lazy' | 'eager'">
+    Specifies how the image will load: eager will load as soon as possible, Lazy will wait till the browser estimates it will be needed. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/loading"> MDN </a> for more information on this property.
+  </Prop>
+  <Prop name="fit" type="ObjectPositionProperty<string>">
+    Specifies how the image will be resized to fit the container. See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"> MDN </a> for more information on this property.
+  </Prop>
+  <Prop name="position" type="ObjectFitProperty">
+    Specifies the position of the image within it's box. See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position"> MDN </a> for more information on this property.
+  </Prop>
+  
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided
     elements.
