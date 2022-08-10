@@ -230,7 +230,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
             {
               name: 'Form input',
               description:
-                'FormInput components require passing in an object of rules to validate the fForm component',
+                'FormInput components require passing in an object of rules to validate the Form component',
               component: 'React component',
               optional: undefined,
             },
@@ -349,7 +349,8 @@ const FormComponent = (layoutProps: LayoutProps) => (
               When wrapped inside the <InlineCode>FormInput</InlineCode> the
               state can be passed down to the{' '}
               <InlineCode>FormInputTextArea</InlineCode> component, depending on
-              if validation is a success or error state. Read more.
+              if validation is a success or error state. Text Area
+              documentation.
             </>
           ),
           media: getIllustrationComponent('components/form/options/text-area'),
