@@ -11,10 +11,10 @@ export const ErrorMessageContainer = styled.div`
 `;
 
 export class ErrorBoundary extends React.Component<
-  unknown,
+  {children?: React.ReactNode},
   {error: Error | false}
 > {
-  constructor(props: unknown) {
+  constructor(props: {children?: React.ReactNode}) {
     super(props);
     this.state = {error: false};
   }
