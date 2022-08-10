@@ -6,6 +6,7 @@ import {
   ToastID,
   ToastProviderProps,
   ToastAsFunction,
+  Renderable,
 } from './types';
 
 import {StyledToastProvider, StyledToastBar} from './styled';
@@ -89,7 +90,7 @@ export const ToastProvider = ({
 };
 
 export const toast = (
-  component: ToastAsFunction | React.ReactNode,
+  component: ToastAsFunction | Renderable,
   toastOptions?: ToastOptions,
 ): ToastID => {
   const options = {
