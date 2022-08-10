@@ -7,4 +7,5 @@ export interface SectionIntroductionProps {
   image?: ImageProps;
   subHeadingSpaceStack?: MQ<string>;
   lastItem?: boolean;
+  children?: React.ReactNode;
 }
