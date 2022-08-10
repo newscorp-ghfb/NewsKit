@@ -97,7 +97,7 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
                       title,
                       summary,
                       media: componentMedia,
-                      rows: componentrows,
+                      rows: componentRows,
                     },
                     index,
                     array,
@@ -105,7 +105,7 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
                     <>
                       <ContentText title={title}>{summary}</ContentText>
                       {componentMedia &&
-                        renderAnatomy(componentMedia, componentrows)}
+                        renderAnatomy(componentMedia, componentRows)}
                       {index < array.length - 1 && (
                         <Block spaceStack="space090" />
                       )}
