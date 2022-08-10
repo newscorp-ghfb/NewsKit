@@ -28,7 +28,11 @@ const DEVELOPING_BUTTON_PROPS = {
 };
 
 export const Hero = ({themeMode}: HeroProps) => (
-  <HeroGridContainer themeMode={themeMode} column={{xs: `1 / span 12`}}>
+  <HeroGridContainer
+    paddingBlock={{xs: 'space020', lg: 'space100'}}
+    themeMode={themeMode}
+    column={{xs: `1 / span 12`}}
+  >
     <GridLayout
       columns={{xs: 'repeat(12, minmax(0,1fr))'}}
       overrides={{marginBlock: {xs: 'space070', lg: 'space000'}}}
