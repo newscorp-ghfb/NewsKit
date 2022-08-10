@@ -6,6 +6,7 @@ import {
   HeightProperty,
   WidthProperty,
 } from 'csstype';
+import React from 'react';
 import {GetAspectRatioProp} from '../utils/get-aspect-ratio';
 
 export interface ContainerProp {
@@ -24,4 +25,6 @@ export interface StyledContainerProps {
  */
 export interface AspectRatioProps
   extends GetAspectRatioProp,
-    Omit<ContainerProp, 'paddingTop'> {}
+    Omit<ContainerProp, 'paddingTop'> {
+  children: React.ReactNode;
+}

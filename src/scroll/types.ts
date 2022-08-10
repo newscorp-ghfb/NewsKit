@@ -1,8 +1,10 @@
+import React from 'react';
 import {ButtonOverrides} from '../button';
 import {MQ} from '../utils/style';
 import {LogicalProps} from '../utils/logical-properties';
 
 export interface ScrollProps extends React.HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode;
   vertical?: boolean;
   controls?: 'hover' | 'static';
   stepDistance?: number;

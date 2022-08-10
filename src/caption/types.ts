@@ -1,8 +1,10 @@
+import React from 'react';
 import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
 // Caption component will be rebuilt in https://nidigitalsolutions.jira.com/browse/PPDSC-2091 to introduce breaking changes on the interface.
 export interface CaptionProps {
+  children: React.ReactNode;
   captionText?: string;
   creditText?: string;
   overrides?: {

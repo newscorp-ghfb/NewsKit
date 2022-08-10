@@ -1,5 +1,9 @@
 import React, {useContext, useCallback} from 'react';
-import {EventInstrumentation, InstrumentationEvent} from './types';
+import {
+  EventInstrumentation,
+  EventInstrumentationProviderProps,
+  InstrumentationEvent,
+} from './types';
 import {mergeContexts} from './event-instrumentation';
 
 const InstrumentationContext = React.createContext<EventInstrumentation>({
@@ -8,7 +12,7 @@ const InstrumentationContext = React.createContext<EventInstrumentation>({
 });
 
 export const InstrumentationProvider: React.FC<
-  Partial<EventInstrumentation>
+  Partial<EventInstrumentationProviderProps>
 > = ({context = {}, fireEvent, children}) => {
   const parent = useContext(InstrumentationContext);
 

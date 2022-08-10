@@ -1,3 +1,5 @@
+import React from 'react';
+
 export type EventContext = object;
 
 export enum EventTrigger {
@@ -24,6 +26,11 @@ export type EventHandler = (
 export interface EventInstrumentation {
   context: EventContext;
   fireEvent: (event: InstrumentationEvent) => void;
+}
+
+export interface EventInstrumentationProviderProps
+  extends EventInstrumentation {
+  children: React.ReactNode;
 }
 
 export interface EventData {

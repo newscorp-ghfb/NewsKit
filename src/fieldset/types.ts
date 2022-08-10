@@ -4,6 +4,7 @@ import {Override} from '../utils/overrides';
 import {MQ} from '../utils/style';
 
 export interface LegendProps {
+  children: React.ReactNode;
   size?: 'small' | 'medium' | 'large';
   overrides?: {
     stylePreset?: MQ<string>;
