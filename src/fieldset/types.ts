@@ -15,7 +15,7 @@ export interface LegendProps {
 
 export interface FieldsetProps
   extends React.FieldsetHTMLAttributes<HTMLFieldSetElement> {
-  legend?: React.ReactNode;
+  legend?: React.ReactNode | (() => React.ReactNode);
   children: React.ReactNode;
   size?: 'small' | 'medium' | 'large';
   overrides?: {
@@ -24,6 +24,6 @@ export interface FieldsetProps
      * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
      */
     spaceInset?: MQ<string>;
-    legend?: Override<Pick<LegendProps, 'size' | 'overrides'>>;
+    legend?: Override<Pick<LegendProps, 'size' | 'overrides' | 'children'>>;
   } & LogicalProps;
 }
