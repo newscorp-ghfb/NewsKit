@@ -3,7 +3,6 @@ import {Block, TextBlock, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -71,7 +70,6 @@ const EmailAddress = (layoutProps: LayoutProps) => (
           <Block spaceStack="space060">
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>Check users have used the correct format.</>
@@ -100,11 +98,7 @@ const EmailAddress = (layoutProps: LayoutProps) => (
               Help users to enter a valid email address by:
             </TextBlock>
           </Block>
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>Checking they have entered the correct format.</>
             <>Allowing users to paste the email address.</>
             <>
@@ -125,11 +119,7 @@ const EmailAddress = (layoutProps: LayoutProps) => (
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Ask for ‘Email address’ twice, it’s an extra action and may lead
               to more errors when filling out the form.

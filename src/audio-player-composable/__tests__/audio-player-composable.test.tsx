@@ -147,6 +147,23 @@ const AudioPropsAndPlaybackSpeedModal: AudioPlayerComposableProps = {
   ),
 };
 
+const AudioPropsAndPlaybackSpeedCustomTrigger: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  children: (
+    <>
+      <AudioPlayerPlaybackSpeedControl>
+        <button
+          onClick={() => null}
+          type="button"
+          data-testid="audio-player-playback-speed-custom-trigger"
+        >
+          Trigger
+        </button>
+      </AudioPlayerPlaybackSpeedControl>
+    </>
+  ),
+};
+
 const AudioPropsAndPlaybackSpeedWithOverrides: AudioPlayerComposableProps = {
   src: '/audio_file_1.mp3',
   children: (
@@ -892,6 +909,18 @@ describe('Audio Player Composable', () => {
         AudioPropsAndPlaybackSpeedModal,
       );
       fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('should render correctly with custom trigger', () => {
+      const {asFragment, getByTestId} = renderWithThemeInBody(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedCustomTrigger,
+      );
+      fireEvent.click(
+        getByTestId('audio-player-playback-speed-custom-trigger'),
+      );
 
       expect(asFragment()).toMatchSnapshot();
     });
