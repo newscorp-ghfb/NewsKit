@@ -17,6 +17,7 @@ export interface AudioPlayerPlaybackSpeedControlOverridesProps {
 }
 
 export interface AudioPlayerPlaybackSpeedControlProps {
+  children?: React.ReactElement;
   useModal?: MQ<boolean>;
   buttonSize?: ButtonSize;
   overrides?: AudioPlayerPlaybackSpeedControlOverridesProps;
