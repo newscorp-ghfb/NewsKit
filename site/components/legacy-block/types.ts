@@ -51,6 +51,7 @@ interface CommonProps {
   right?: Responsive<string>;
   bottom?: Responsive<string>;
   left?: Responsive<string>;
+  children?: React.ReactNode;
 }
 
 export interface StyledBlockProps extends CommonProps {
