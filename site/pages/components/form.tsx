@@ -212,7 +212,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
       },
     }}
     anatomy={{
-      tabs: [
+      components: [
         {
           title: 'Form',
           summary:
