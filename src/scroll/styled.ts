@@ -34,7 +34,7 @@ const getPseudoStyles = (props: ScrollProps & ThemeProp) => {
 };
 
 export const StyledScrollNav = styled.div<
-  Pick<ScrollProps, 'vertical' | 'overrides'> & {
+  Pick<ScrollProps, 'vertical' | 'overrides' | 'children'> & {
     showStartShadow?: boolean;
     showEndShadow?: boolean;
     controlsVariant?: ScrollProps['controls'];
