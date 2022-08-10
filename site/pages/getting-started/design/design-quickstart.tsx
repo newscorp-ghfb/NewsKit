@@ -15,7 +15,6 @@ import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-pa
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {Step} from '../../../components/step';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
-import {IconFilledCircle} from '../../../components/icons';
 import {
   ContentSection,
   ContentPrimary,
@@ -567,7 +566,6 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
         >
           <UnorderedList
             markerAlign="start"
-            listItemMarker={IconFilledCircle}
             overrides={{
               spaceStack: 'space050',
               marker: {

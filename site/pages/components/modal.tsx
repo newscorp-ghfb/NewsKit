@@ -16,7 +16,6 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
-import {IconFilledCircle} from '../../components/icons';
 import {ModalProps} from '../../../src/modal/types';
 import {Mono} from '../../components/flags';
 import {
@@ -184,7 +183,6 @@ const ModalComponent = (layoutProps: LayoutProps) => (
               <Block spaceStack="space050" />
               <UnorderedList
                 markerAlign="start"
-                listItemMarker={IconFilledCircle}
                 overrides={{
                   marker: {
                     spaceInline: 'space030',
@@ -446,7 +444,6 @@ const ModalComponent = (layoutProps: LayoutProps) => (
           <Block spaceStack="space030" />
           <UnorderedList
             markerAlign="start"
-            listItemMarker={IconFilledCircle}
             overrides={{
               marker: {
                 spaceInline: 'space030',

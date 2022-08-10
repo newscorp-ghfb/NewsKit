@@ -3,7 +3,6 @@ import {Block, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -94,7 +93,6 @@ const InputComponents = (layoutProps: LayoutProps) => (
           description={
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>Name</>
@@ -164,7 +162,6 @@ const InputComponents = (layoutProps: LayoutProps) => (
           description={
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>Gender</>
@@ -204,11 +201,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
           headline="Considerations"
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Checkboxes should only be displayed vertically, stacked for
               consistent alignment and positioning across different breakpoints.
@@ -247,7 +240,6 @@ const InputComponents = (layoutProps: LayoutProps) => (
           description={
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>Customer survey</>
@@ -283,11 +275,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
           headline="Considerations"
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Consider if a Select is necessary or if a Text Field can be used.
               Selects can be cumbersome if there are a lot of options for users
@@ -310,11 +298,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
           </UnorderedList>
         </ContentSecondary>
         <ContentSecondary headline="Select usage example" showSeparator>
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>Country code (If not using text input).</>
           </UnorderedList>
         </ContentSecondary>
@@ -336,11 +320,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
           childrenColSpan={ContentColSpan.TEXT}
           showSeparator
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Consider giving the user the option to add their entry manually.
               Sometimes lookup doesn’t give the required answer so manually
