@@ -75,16 +75,29 @@ cypress_defaults: &cypress_defaults
 
 # ========== APPLITOOLS ENVIRONMENT VARIABLES START ==========
 
+# Common config values for component and doc site tests is set in env variables:
+
+# - showLogs: Whether or not you want to see logs of the Eyes-Storybook plugin.
+# - batchId: This must be set to the current commit sha for the GitHub integration to work.
+# - apiKey: This should be the Team API key (execute only permission).
+# - batchName: This can be any value (add as much info as possible to make it easy to find batches).
+
+# Config specific to each suite is set in the .config.js files.
+
+# IMPORTANT:
+# Make sure the `Automated batch closing` feature of the Applitools / GitHub integration is
+# disabled. This is controlled in the Applitools UI. If this setting is not removed, tests from
+# a single suite will be randomly split into different batches.
+
 applitools_defaults: &applitools_defaults
   command: |
-    export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
-    export APPLITOOLS_PARENT_BRANCH_NAME=main
-    export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
-    export APPLITOOLS_DONT_CLOSE_BATCHES=true
-    echo "export APPLITOOLS_BATCH_ID=${APPLITOOLS_BATCH_ID}" >> $BASH_ENV
+    echo "export APPLITOOLS_SHOW_LOGS=true" >> $BASH_ENV
+    echo "export APPLITOOLS_BATCH_ID=${CIRCLE_SHA1}" >> $BASH_ENV
     echo "export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}" >> $BASH_ENV
     echo "export APPLITOOLS_BATCH_NAME=\"${CIRCLE_BRANCH}:${CIRCLE_SHA1:0:7} (${CIRCLE_PULL_REQUEST}, ${CIRCLE_BUILD_URL})\"" >> $BASH_ENV
+
 # ========== APPLITOOLS ENVIRONMENT VARIABLES END ==========
+
 executors:
   # A basic image with just raw Alpine on it that you can run commands on
   base:
@@ -291,11 +304,9 @@ commands:
           <<: *applitools_defaults
       - run:
           name: Run Applitools Docs Site Visual Tests
-          command: make e2e_visual_test_docs
-      - run:
-          name: Close the Applitools Batch
-          command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
-          when: always
+          # Allow the step to pass even if tests fail by appending || true. The Applitools GitHub check is required, so
+          # merging will still be blocked until test failures are resolved. But the test job will not need to be re-run.
+          command: make e2e_visual_test_docs || true
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
@@ -308,15 +319,8 @@ jobs:
     executor: node
     steps:
       - run:
-          name: 'Waiting for "no_visual_changes" or "test_visual_docs"'
-          command: |
-            if [[ $(curl --location --request GET "https://circleci.com/api/v2/workflow/${CIRCLE_WORKFLOW_ID}/job" --header "Circle-Token: ${CIRCLECI_BASE_AUTH}"| jq -r '.items[]|select(.name == "no_visual_changes" or .name == "test_visual_docs" or .name == "test_visual_docs_2")|.status' | grep -c "success") -gt 0 ]]
-            then
-              echo "Passed!"
-            else
-              echo "Failed!"
-              exit 1
-            fi
+          name: 'Check to make sure all tests have run before merging.'
+          command: echo 'passed'
 
   install_deps:
     executor: node-large
@@ -607,13 +611,19 @@ jobs:
           <<: *applitools_defaults
       - run:
           name: Run Applitools Storybook Component Tests
-          command: make comps_visual_test
-      - run:
-          name: Close the Applitools Batch
-          command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
-          when: always
+          # Allow the step to pass even if tests fail by appending || true. The Applitools GitHub check is required, so
+          # merging will still be blocked until test failures are resolved. But the test job will not need to be re-run.
+          command: make comps_visual_test || true
       - slack/notify:
           <<: *slack_notify
+
+  skip_applitools_check:
+    executor: node
+    steps:
+      - run:
+          name: 'Pass the required GitHub / Applitools check'
+          command: |
+            curl --request POST --header "Content-Type: application/json" --data "{\"serverId\":\"github\",\"commitSha\":\"$CIRCLE_SHA1\"}" "https://eyesapi.applitools.com/api/externals/github/servers/github/commit/$CIRCLE_SHA1/complete?apiKey=$APPLITOOLS_API_KEY"
 
   test_visual_docs:
     <<: *cypress_defaults
@@ -1210,6 +1220,10 @@ workflows:
             - approve_publish_npm_pr
       # End jobs for releasing unstable NPM version
 
+      - skip_applitools_check:
+          context: ncu-product-platforms-context
+          requires:
+            - no_visual_changes
       - test_visual_comps:
           context: ncu-product-platforms-context
           requires:
@@ -1228,10 +1242,6 @@ workflows:
             - docs_visual_changes
       - can_i_merge_checker:
           context: ncu-product-platforms-context
-          requires:
-            - i_have_merged_applitools
-      - i_have_merged_applitools:
-          type: approval
           requires:
             - test_newskit_in_nextjs_app
             - lint
