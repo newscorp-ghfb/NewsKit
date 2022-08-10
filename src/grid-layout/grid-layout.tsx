@@ -1,7 +1,12 @@
 import React from 'react';
 import {Block} from '../block';
 import {handleResponsiveProp, MQ, styled} from '../utils/style';
-import {AreasMap, GridLayoutProps, GridLayoutItemProps} from './types';
+import {
+  AreasMap,
+  GridLayoutProps,
+  GridLayoutItemProps,
+  GridLayoutRenderProps,
+} from './types';
 import {StyledGridLayout} from './styled';
 import {areaToValidCSS, capitalize, getAreasList} from './utils';
 
@@ -24,6 +29,13 @@ export const GridLayoutItem = styled(Block)<GridLayoutItemProps>`
   }))}
 `;
 
+function isGridLayoutRenderProps(
+  children: React.ReactNode | GridLayoutRenderProps,
+  areasNames: string[],
+): children is GridLayoutRenderProps {
+  return typeof children === 'function' && !!areasNames.length;
+}
+
 export const GridLayout = React.forwardRef<HTMLDivElement, GridLayoutProps>(
   ({children, ...props}, ref) => {
     const {areas} = props;
@@ -31,8 +43,7 @@ export const GridLayout = React.forwardRef<HTMLDivElement, GridLayoutProps>(
     const areasNames = getAreasList(areas || '');
     const Areas = {} as AreasMap;
 
-    const isFunctionWithAreas =
-      typeof children === 'function' && areasNames.length > 0;
+    const isFunctionWithAreas = isGridLayoutRenderProps(children, areasNames);
 
     if (isFunctionWithAreas) {
       areasNames.forEach(area => {
