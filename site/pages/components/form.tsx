@@ -364,7 +364,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
               <InlineCode>FormInputTextField</InlineCode> component, depending
               on if validation is a success or error state.{' '}
               <Link href="/components/text-field/#component-api">
-                Read more.
+                Text Field documentation.
               </Link>
             </>
           ),
@@ -378,7 +378,9 @@ const FormComponent = (layoutProps: LayoutProps) => (
               state can be passed down to the{' '}
               <InlineCode>FormInputSelect</InlineCode> component, depending on
               if validation is a success or error state.{' '}
-              <Link href="/components/select/#component-api">Read more.</Link>
+              <Link href="/components/select/#component-api">
+                Select documentation.
+              </Link>
             </>
           ),
           media: getIllustrationComponent('components/form/options/select'),
@@ -391,7 +393,9 @@ const FormComponent = (layoutProps: LayoutProps) => (
               state can be passed down to the
               <InlineCode>FormInputCheckbox</InlineCode> component, depending on
               if validation is a success or error state.{' '}
-              <Link href="/components/checkbox/#component-api">Read more.</Link>
+              <Link href="/components/checkbox/#component-api">
+                Checkbox documentation.
+              </Link>
             </>
           ),
           media: getIllustrationComponent('components/form/options/checkbox'),
@@ -406,7 +410,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
               on if validation is a success or error state. Multiple can be
               grouped together using the radioGroup component.{' '}
               <Link href="/components/radio-button/#component-api">
-                Read more.
+                Radio Button documentation.
               </Link>
             </>
           ),
@@ -423,7 +427,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
               controls, labels, and assistive text together in a fieldset. The
               fieldset has a caption that gives a title attributed to the
               elements that appear in the fieldset, called a legend.{' '}
-              <Link href="/components/fieldset/">Read more.</Link>
+              <Link href="/components/fieldset/">Fieldset documentation.</Link>
             </>
           ),
           media: getIllustrationComponent('components/form/options/fieldset'),
