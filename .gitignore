@@ -39,4 +39,4 @@ junit.xml
 /src/icons/filled/material
 /src/icons/outlined/material
 cypress/config/a11y-components.json
-/lib/codemod/.eslintcache
+lib/codemod/.eslintcache
