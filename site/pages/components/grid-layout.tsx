@@ -1,6 +1,7 @@
 import React from 'react';
 import {styled, GridLayout, GridLayoutItem, getColorFromTheme} from 'newskit';
 import {Link} from '../../components/link';
+import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -139,6 +140,71 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
         },
       ],
       media: getIllustrationComponent('components/grid-layout/anatomy'),
+    }}
+    options={{
+      introduction:
+        'The grid layout component has options that can be used to provide an appropriate experience for different use cases.',
+      cards: [
+        {
+          title: 'Row gap & column gap',
+          description:
+            'The row gap and column gap can be set for each breakpoint.',
+          media: getIllustrationComponent(
+            'components/grid-layout/options/row-column-gap',
+          ),
+        },
+        {
+          title: 'Max-width',
+          description:
+            'When the defined maximum width of the grid is reached (default set to auto), the grid will become fixed and the margins grow to fill the screen.',
+          media: getIllustrationComponent(
+            'components/grid-layout/options/max-width',
+          ),
+        },
+        {
+          title: 'Span',
+          description: `Cells can be set to span any number of columns in the grid. If set to ‘full-width’ the cell will span all 12 columns and breakout across the margin of the grid. It will still be confined by the grid's max-width.`,
+          media: getIllustrationComponent(
+            'components/grid-layout/options/span',
+          ),
+        },
+        {
+          title: 'Order',
+          description:
+            'The order that cells appear can be changed at different breakpoints.',
+          media: getIllustrationComponent(
+            'components/grid-layout/options/order',
+          ),
+        },
+        {
+          title: 'Offset',
+          description:
+            'Cells can be set to be offset by a specified number of columns.',
+          media: getIllustrationComponent(
+            'components/grid-layout/options/offset',
+          ),
+        },
+      ],
+    }}
+    usage={{
+      introduction:
+        'The following guidance describes how and when to appropriately use the grid layout component.',
+      cards: [
+        {
+          description:
+            'Whenever possible, make sure page elements are lined up both horizontally and/ or vertically.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/grid-layout/usage/do-01'),
+        },
+        {
+          description:
+            'Avoid aligning everything to the grid. Individual elements within the cells should align with each other rather than with the grid columns.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent(
+            'components/grid-layout/usage/dont-01',
+          ),
+        },
+      ],
     }}
     componentAPI={{
       introduction: `Below are the properties for the Grid Layout component:`,
