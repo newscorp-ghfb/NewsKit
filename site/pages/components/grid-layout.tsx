@@ -1,5 +1,7 @@
 import React from 'react';
-import {styled, Block, TextBlock, GridLayout, GridLayoutItem} from 'newskit';
+import {styled, GridLayout, GridLayoutItem, getColorFromTheme} from 'newskit';
+import {Link} from '../../components/link';
+import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 
@@ -14,15 +16,15 @@ const PlaygroundContainer = styled.div`
 const BigRedBlock = styled.div`
   width: 100px;
   height: 100px;
-  background: red;
+  background: ${getColorFromTheme('illustrationPalette040')};
 `;
 
 const GridLayoutComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'GridLayout',
+      title: 'Grid Layout',
       description:
-        'Used to construct a visual grid for responsive page layout. A Proxy for CSS grid.',
+        'The grid layout component is a flexible, responsive grid that can be used for building both page layouts and components; based on CSS grid.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -33,22 +35,26 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
       },
       introduction: (
         <>
-          <TextBlock
-            typographyPreset="editorialHeadline040"
-            style={{color: 'red'}}
+          The grid layout component is a flexible, responsive grid that can be
+          used for building both page layouts and components; based on{' '}
+          <Link
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+            target="_blank"
           >
-            This component is a beta, this documentation page is still a work in
-            progress.
-          </TextBlock>
-          <Block spaceStack="space030" />
-          <TextBlock>
-            Used to construct a visual grid for responsive page layout. A Proxy
-            for CSS grid.
-          </TextBlock>
+            CSS grid.{' '}
+          </Link>
         </>
       ),
     }}
     componentDefaultsKey="gridLayout"
+    meta={{
+      status: MetaStatus.Beta,
+      introduced: 'v5.1.0',
+      codeUrl:
+        'https://github.com/newscorp-ghfb/newskit/tree/main/src/grid-layout',
+      figmaUrl:
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=9893%3A158142',
+    }}
     interactiveDemo={{
       introduction:
         'This demo allows you to preview the Grid Layout component, its variations, and configuration options.',
