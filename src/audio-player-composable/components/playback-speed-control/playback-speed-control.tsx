@@ -50,6 +50,10 @@ const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
     setIsOpen(false);
   }, []);
 
+  const toggleOpen = useCallback(() => {
+    setIsOpen(open => !open);
+  }, []);
+
   return (
     <>
       <Popover
@@ -63,15 +67,29 @@ const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
         focusElementRef={selectedOptionRef}
         overrides={popoverOverrides(theme, overrides)}
       >
-        <IconButton
-          aria-label="playback speed"
-          data-testid="audio-player-playback-speed-control"
-          overrides={iconButtonOverrides(theme, overrides)}
-          onClick={() => setIsOpen(open => !open)}
-          size={buttonSize}
-        >
-          <IconFilledSlowMotionVideo />
-        </IconButton>
+        {props.children ? (
+          // If there are children, trigger the open state
+          // on click and pass the original onClick handler
+          React.cloneElement(props.children, {
+            onClick: () => {
+              toggleOpen();
+              /* istanbul ignore next */
+              if (props.children?.props?.onClick) {
+                props.children.props.onClick();
+              }
+            },
+          })
+        ) : (
+          <IconButton
+            aria-label="playback speed"
+            data-testid="audio-player-playback-speed-control"
+            overrides={iconButtonOverrides(theme, overrides)}
+            onClick={toggleOpen}
+            size={buttonSize}
+          >
+            <IconFilledSlowMotionVideo />
+          </IconButton>
+        )}
       </Popover>
 
       {renderInModal && (

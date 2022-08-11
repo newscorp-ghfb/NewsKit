@@ -1,6 +1,5 @@
 module.exports = {
   appName: 'DS Components',
-  batchId: process.env.APPLITOOLS_BATCH_ID,
   storybookUrl: 'http://localhost:6006',
   browser: [
     {deviceName: 'iPhone 5/SE'},
@@ -10,5 +9,8 @@ module.exports = {
   ],
   concurrency: 20,
   viewportSize: {width: 1027, height: 768},
+  properties: [{name: 'suite', value: 'comps'}],
+  // Don't close the batch when the suite finishes so that the doc site tests
+  // that run after will be added to the same batch.
   dontCloseBatches: true,
 };

@@ -11,7 +11,6 @@ import {
   ContentTertiary,
   ContentColSpan,
 } from '../../../components/content-structure';
-import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
@@ -138,7 +137,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
           description={
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>
@@ -156,7 +154,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
           description={
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>
@@ -177,7 +174,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
           description={
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>
@@ -241,7 +237,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
           description={
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>
@@ -263,7 +258,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
           description={
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>
@@ -279,7 +273,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
           description={
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>
@@ -301,7 +294,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
           description={
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>
@@ -323,7 +315,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
           description={
             <UnorderedList
               markerAlign="start"
-              listItemMarker={IconFilledCircle}
               overrides={unorderedListOverrides}
             >
               <>
@@ -392,11 +383,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Some users didn’t know that they could interact with the text
               field.
@@ -528,11 +515,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
           headline="Best practice"
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Errors and validation should be displayed ‘On blur’ (once the user
               has tabbed out of the field) not as the user is entering their
