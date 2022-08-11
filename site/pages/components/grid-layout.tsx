@@ -4,6 +4,7 @@ import {Link} from '../../components/link';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
+import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
 const PlaygroundContainer = styled.div`
   display: flex;
@@ -120,6 +121,24 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ] as any,
       },
+    }}
+    anatomy={{
+      introduction: 'The grid layout component contains the following.',
+      rows: [
+        {
+          name: 'Grid layout',
+          description: 'Container for the grid',
+          component: 'GridLayout',
+          optional: undefined,
+        },
+        {
+          name: 'Grid layout item',
+          description: 'Layout item for the grid',
+          component: 'GridLayoutItem',
+          optional: undefined,
+        },
+      ],
+      media: getIllustrationComponent('components/grid-layout/anatomy'),
     }}
     componentAPI={{
       introduction: `Below are the properties for the Grid Layout component:`,
