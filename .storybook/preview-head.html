@@ -275,9 +275,25 @@
     font-stretch: semi-condensed;
     font-display: block;
   }
-  /* TODO the sun bold and medium */
 
-  /* CAN i improve font family (REGULAR, BOLD, ETC?) or must be a specific one? */
+  @font-face {
+    font-family: 'The Sun';
+    src: url('TheSun-Bold.woff2') format('woff2'),
+    url('TheSun-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+  }
+
+  @font-face {
+    font-family: 'The Sun';
+    src: url('TheSun-Medium.woff2') format('woff2'),
+    url('TheSun-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+    font-display: block;
+  }
+
   @font-face {
     font-family: 'Times Modern';
     src: url('TimesModern-Regular.woff2') format('woff2'),
