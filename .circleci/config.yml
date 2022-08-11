@@ -341,6 +341,7 @@ jobs:
           root: ./
           paths:
             - node_modules/*
+            - .storybook/private-fonts
             - src/version-number.json
       - slack/notify:
           <<: *slack_notify
@@ -407,9 +408,6 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run:
-          name: Fetch external fonts
-          command: yarn fetch-external-storybook-fonts
       - run:
           name: Build
           command: make build_storybook
