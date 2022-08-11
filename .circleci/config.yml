@@ -408,6 +408,9 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run:
+          name: Fetch external fonts
+          command: yarn fetch-external-storybook-fonts
+      - run:
           name: Build
           command: make build_storybook
       - persist_to_workspace:
