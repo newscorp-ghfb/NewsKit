@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@adobe/css-tools@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@adobe/css-tools/-/css-tools-4.0.1.tgz#b38b444ad3aa5fedbb15f2f746dcd934226a12dd"
+  integrity sha512-+u76oB43nOHrF4DDWRLWDCtci7f3QJoEBigemIdIeTi1ODqjx6Tad9NCVnPRwewWlKkVab5PlK8DCtPTyX7S8g==
+
 "@applitools/dom-capture@11.1.0":
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/@applitools/dom-capture/-/dom-capture-11.1.0.tgz#b20758f358a1170ff4905b49ee7cf0ea9a661f05"
@@ -3741,7 +3746,7 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@testing-library/dom@^7.22.0", "@testing-library/dom@^7.28.1":
+"@testing-library/dom@^7.22.0":
   version "7.31.2"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.31.2.tgz#df361db38f5212b88555068ab8119f5d841a8c4a"
   integrity sha512-3UqjCpey6HiTZT92vODYLPxTBWlM8ZOOjr3LX5F37/VRipW2M1kX6I/Cm4VXzteZqfGfagg8yXywpcOgQBlNsQ==
@@ -3755,7 +3760,21 @@
     lz-string "^1.4.4"
     pretty-format "^26.6.2"
 
-"@testing-library/jest-dom@^5.11.2", "@testing-library/jest-dom@^5.11.4":
+"@testing-library/dom@^8.5.0":
+  version "8.17.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.17.1.tgz#2d7af4ff6dad8d837630fecd08835aee08320ad7"
+  integrity sha512-KnH2MnJUzmFNPW6RIKfd+zf2Wue8mEKX0M3cpX6aKl5ZXrJM1/c/Pc8c2xDNYQCnJO48Sm5ITbMXgqTr3h4jxQ==
+  dependencies:
+    "@babel/code-frame" "^7.10.4"
+    "@babel/runtime" "^7.12.5"
+    "@types/aria-query" "^4.2.0"
+    aria-query "^5.0.0"
+    chalk "^4.1.0"
+    dom-accessibility-api "^0.5.9"
+    lz-string "^1.4.4"
+    pretty-format "^27.0.2"
+
+"@testing-library/jest-dom@^5.11.2":
   version "5.15.1"
   resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.15.1.tgz#4c49ba4d244f235aec53f0a83498daeb4ee06c33"
   integrity sha512-kmj8opVDRE1E4GXyLlESsQthCXK7An28dFWxhiMwD7ZUI7ZxA6sjdJRxLerD9Jd8cHX4BDc1jzXaaZKqzlUkvg==
@@ -3770,6 +3789,21 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
+"@testing-library/jest-dom@^5.16.5":
+  version "5.16.5"
+  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.16.5.tgz#3912846af19a29b2dbf32a6ae9c31ef52580074e"
+  integrity sha512-N5ixQ2qKpi5OLYfwQmUb/5mSV9LneAcaUfp32pn4yCnpb8r/Yz0pXFPck21dIicKmi+ta5WRAknkZCfA8refMA==
+  dependencies:
+    "@adobe/css-tools" "^4.0.1"
+    "@babel/runtime" "^7.9.2"
+    "@types/testing-library__jest-dom" "^5.9.1"
+    aria-query "^5.0.0"
+    chalk "^3.0.0"
+    css.escape "^1.5.1"
+    dom-accessibility-api "^0.5.6"
+    lodash "^4.17.15"
+    redent "^3.0.0"
+
 "@testing-library/react-hooks@^3.2.1":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@testing-library/react-hooks/-/react-hooks-3.7.0.tgz#6d75c5255ef49bce39b6465bf6b49e2dac84919e"
@@ -3778,20 +3812,19 @@
     "@babel/runtime" "^7.12.5"
     "@types/testing-library__react-hooks" "^3.4.0"
 
-"@testing-library/react@^11.2.6":
-  version "11.2.7"
-  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-11.2.7.tgz#b29e2e95c6765c815786c0bc1d5aed9cb2bf7818"
-  integrity sha512-tzRNp7pzd5QmbtXNG/mhdcl7Awfu/Iz1RaVHY75zTdOkmHCuzMhRL83gWHSgOAcjS3CCbyfwUHMZgRJb4kAfpA==
+"@testing-library/react@^13.3.0":
+  version "13.3.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-13.3.0.tgz#bf298bfbc5589326bbcc8052b211f3bb097a97c5"
+  integrity sha512-DB79aA426+deFgGSjnf5grczDPiL4taK3hFaa+M5q7q20Kcve9eQottOG5kZ74KEr55v0tU2CQormSSDK87zYQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
-    "@testing-library/dom" "^7.28.1"
+    "@testing-library/dom" "^8.5.0"
+    "@types/react-dom" "^18.0.0"
 
-"@testing-library/user-event@13.5.0":
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-13.5.0.tgz#69d77007f1e124d55314a2b73fd204b333b13295"
-  integrity sha512-5Kwtbo3Y/NowpkbRuSepbyMFkZmHgD+vPzYB/RJ4oxt5Gj/avFFBYjhw27cqSVPVw/3a67NK1PbiIr9k4Gwmdg==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
+"@testing-library/user-event@^14.4.3":
+  version "14.4.3"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-14.4.3.tgz#af975e367743fa91989cd666666aec31a8f50591"
+  integrity sha512-kCUc5MEwaEMakkO5x7aoD+DLi02ehmEM2QCGWvNqAS1dV/fAvORWEjnjsEIvml59M7Y5kCkWN6fCCyPOe8OL6Q==
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -4185,7 +4218,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-dom@^18.0.6":
+"@types/react-dom@^18.0.0", "@types/react-dom@^18.0.6":
   version "18.0.6"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.6.tgz#36652900024842b74607a17786b6662dd1e103a1"
   integrity sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==
@@ -5222,6 +5255,11 @@ aria-query@^4.2.2:
   dependencies:
     "@babel/runtime" "^7.10.2"
     "@babel/runtime-corejs3" "^7.10.2"
+
+aria-query@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/aria-query/-/aria-query-5.0.0.tgz#210c21aaf469613ee8c9a62c7f86525e058db52c"
+  integrity sha512-V+SM7AbUwJ+EBnB8+DXs0hPZHO0W6pqBcc0dW90OwtVG02PswOu/teuARoLQjdDOH+t9pJgGnW5/Qmouf3gPJg==
 
 arr-diff@^4.0.0:
   version "4.0.0"
@@ -7992,6 +8030,11 @@ dom-accessibility-api@^0.5.6:
   version "0.5.10"
   resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.10.tgz#caa6d08f60388d0bb4539dd75fe458a9a1d0014c"
   integrity sha512-Xu9mD0UjrJisTmv7lmVSDMagQcU9R5hwAbxsaAE/35XPnPLJobbuREfV/rraiSaEj/UOvgrzQs66zyTWTlyd+g==
+
+dom-accessibility-api@^0.5.9:
+  version "0.5.14"
+  resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.14.tgz#56082f71b1dc7aac69d83c4285eef39c15d93f56"
+  integrity sha512-NMt+m9zFMPZe0JcY9gN224Qvk6qLIdqex29clBvc/y75ZBX9YA9wNK3frsYvu2DI1xcCIwxwnX+TlsJ2DSOADg==
 
 dom-converter@^0.2.0:
   version "0.2.0"
@@ -15147,6 +15190,15 @@ pretty-format@^27.0.0, pretty-format@^27.3.1:
   integrity sha512-DR/c+pvFc52nLimLROYjnXPtolawm+uWDxr4FjuLDLUn+ktWnSN851KoHwHzzqq6rfCOjkzN8FLgDrSub6UDuA==
   dependencies:
     "@jest/types" "^27.2.5"
+    ansi-regex "^5.0.1"
+    ansi-styles "^5.0.0"
+    react-is "^17.0.1"
+
+pretty-format@^27.0.2:
+  version "27.5.1"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.5.1.tgz#2181879fdea51a7a5851fb39d920faa63f01d88e"
+  integrity sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==
+  dependencies:
     ansi-regex "^5.0.1"
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
