@@ -13,4 +13,5 @@ export interface TemplateProps extends IntroductionSectionProps {
     height?: string;
   };
   featureCard?: OnwardJourneySectionProps;
+  children?: React.ReactNode;
 }

@@ -3,7 +3,7 @@ import {GridLayout, GridLayoutItem, styled, TextBlock, Visible} from 'newskit';
 import Layout, {LayoutProps} from '../components/layout';
 import {GridLayoutItemProps} from '../../src/grid-layout/types';
 
-const Placeholder: React.FC = ({children}) => (
+const Placeholder: React.FC<{children: React.ReactNode}> = ({children}) => (
   <TextBlock
     as="span"
     stylePreset="inkContrast"
