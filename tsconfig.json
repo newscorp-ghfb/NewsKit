@@ -8,7 +8,7 @@
     "**/__mocks__/**",
     "**/test/**"
   ],
-  "include": ["src/"],
+  "include": ["src/", ".storybook/fetch-external-fonts.js"],
   "compilerOptions": {
     "rootDir": "src/",
     "outDir": "dist/"
