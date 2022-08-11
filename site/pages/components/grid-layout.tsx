@@ -1,8 +1,15 @@
 import React from 'react';
-import {styled, GridLayout, GridLayoutItem, getColorFromTheme} from 'newskit';
+import {
+  Block,
+  styled,
+  GridLayout,
+  GridLayoutItem,
+  getColorFromTheme,
+} from 'newskit';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
+import {ContentText} from '../../components/text-section/content-text';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
@@ -205,6 +212,20 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
           ),
         },
       ],
+    }}
+    accessibility={{
+      introduction: (
+        <>
+          The grid layout has the following accessibility considerations:
+          <Block spaceStack="space100" />
+          <ContentText title="Ordering">
+            Ordering can be used to render items in a different order to their
+            tab order, this can be useful when building accessible interfaces as
+            it allows the most important items to be focused first, even if they
+            don’t visually appear this way.
+          </ContentText>
+        </>
+      ),
     }}
     componentAPI={{
       introduction: `Below are the properties for the Grid Layout component:`,
