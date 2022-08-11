@@ -1,20 +1,9 @@
 import * as React from 'react';
-import {
-  GridLayoutItem,
-  TextBlock,
-  GridLayout,
-  Flow,
-  Stack,
-  Visible,
-} from 'newskit';
+import {GridLayoutItem, TextBlock, GridLayout, Visible, Button} from 'newskit';
 import LinkNext from 'next/link';
 import HeroGrid from '../../illustrations/landing-page/hero-grid';
 import {HeroProps} from './types';
-import {
-  HeroGridContainer,
-  LargeScreenButton,
-  SmallScreenButton,
-} from './styled';
+import {HeroGridContainer} from './styled';
 
 const DESIGN_BUTTON_PROPS = {
   href: '/getting-started/design/design-overview',
@@ -22,9 +11,7 @@ const DESIGN_BUTTON_PROPS = {
 };
 const DEVELOPING_BUTTON_PROPS = {
   href: '/getting-started/code/engineering-quickstart',
-  overrides: {
-    stylePreset: 'buttonOutlinedPrimary',
-  },
+  overrides: {stylePreset: 'buttonOutlinedPrimary'},
 };
 
 export const Hero = ({themeMode}: HeroProps) => (
@@ -79,36 +66,41 @@ export const Hero = ({themeMode}: HeroProps) => (
         >
           An open source design system built by News UK, for everyone
         </TextBlock>
-        <Stack
-          marginBlockStart="space090"
-          flow={Flow.HorizontalTop}
-          spaceInline="space040"
-          height="unset"
+        <GridLayout
+          columns="1fr 1fr"
+          overrides={{
+            marginBlockStart: 'space090',
+            width: {md: '330px', xs: '250px'},
+          }}
         >
-          <LinkNext href="/getting-started/design/design-overview" passHref>
-            <>
-              <SmallScreenButton {...DESIGN_BUTTON_PROPS}>
-                Designing
-              </SmallScreenButton>
-              <LargeScreenButton {...DESIGN_BUTTON_PROPS}>
-                Start designing
-              </LargeScreenButton>
-            </>
-          </LinkNext>
-          <LinkNext
-            href="/getting-started/code/engineering-quickstart"
-            passHref
-          >
-            <>
-              <SmallScreenButton {...DEVELOPING_BUTTON_PROPS}>
-                Developing
-              </SmallScreenButton>
-              <LargeScreenButton {...DEVELOPING_BUTTON_PROPS}>
-                Start developing
-              </LargeScreenButton>
-            </>
-          </LinkNext>
-        </Stack>
+          <GridLayoutItem>
+            <LinkNext href="/getting-started/design/design-overview" passHref>
+              <>
+                <Visible xs sm>
+                  <Button {...DESIGN_BUTTON_PROPS}>Designing</Button>
+                </Visible>
+                <Visible md lg xl>
+                  <Button {...DESIGN_BUTTON_PROPS}>Start designing</Button>
+                </Visible>
+              </>
+            </LinkNext>
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <LinkNext
+              href="/getting-started/code/engineering-quickstart"
+              passHref
+            >
+              <>
+                <Visible xs sm>
+                  <Button {...DEVELOPING_BUTTON_PROPS}>Developing</Button>
+                </Visible>
+                <Visible md lg xl>
+                  <Button {...DEVELOPING_BUTTON_PROPS}>Start developing</Button>
+                </Visible>
+              </>
+            </LinkNext>
+          </GridLayoutItem>
+        </GridLayout>
       </GridLayoutItem>
       <GridLayoutItem column={{lg: `span 4 / 12`, xl: `span 5 / 12`}}>
         <Visible xl lg>

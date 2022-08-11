@@ -1,4 +1,4 @@
-import {Button, getMediaQueryFromTheme, GridLayoutItem, styled} from 'newskit*';
+import {getMediaQueryFromTheme, GridLayoutItem, styled} from 'newskit*';
 
 export const HeroGridContainer = styled(GridLayoutItem)<{
   themeMode: string;
@@ -22,17 +22,5 @@ export const HeroGridContainer = styled(GridLayoutItem)<{
         ${heroGradientBackground} 60%
       );`;
     }};
-  }
-`;
-
-export const SmallScreenButton = styled(Button)`
-  ${getMediaQueryFromTheme('md')} {
-    display: none;
-  }
-`;
-export const LargeScreenButton = styled(Button)`
-  display: none;
-  ${getMediaQueryFromTheme('md')} {
-    display: block;
   }
 `;
