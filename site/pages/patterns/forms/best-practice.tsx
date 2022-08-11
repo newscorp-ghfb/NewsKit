@@ -139,12 +139,14 @@ const BestPractice = (layoutProps: LayoutProps) => (
               markerAlign="start"
               overrides={unorderedListOverrides}
             >
-              <>
-                <Link href="/components/form/">Forms</Link> should be displayed
-                in a single column layout. This means the user’s focus is on one
-                data input type at a time and there is less cognitive load
-                searching the page for what data to enter.
-              </>
+              {[
+                <>
+                  <Link href="/components/form/">Forms</Link> should be
+                  displayed in a single column layout. This means the user’s
+                  focus is on one data input type at a time and there is less
+                  cognitive load searching the page for what data to enter.
+                </>,
+              ]}
             </UnorderedList>
           }
         />
@@ -156,16 +158,18 @@ const BestPractice = (layoutProps: LayoutProps) => (
               markerAlign="start"
               overrides={unorderedListOverrides}
             >
-              <>
-                Most <Link href="/components/text-field/">Text fields</Link>{' '}
-                should be proportional to the expected user input - no longer
-                than a single line, such as their name or phone number.
-                <br />
-                <br />
-                For example, Text Fields that have a set short number of
-                characters should have a proportional width i.e year of birth or
-                postcode.
-              </>
+              {[
+                <>
+                  Most <Link href="/components/text-field/">Text fields</Link>{' '}
+                  should be proportional to the expected user input - no longer
+                  than a single line, such as their name or phone number.
+                  <br />
+                  <br />
+                  For example, Text Fields that have a set short number of
+                  characters should have a proportional width i.e year of birth
+                  or postcode.
+                </>,
+              ]}
             </UnorderedList>
           }
         />
@@ -176,11 +180,13 @@ const BestPractice = (layoutProps: LayoutProps) => (
               markerAlign="start"
               overrides={unorderedListOverrides}
             >
-              <>
-                You should avoid using the Text Field if you need to let users
-                enter longer answers that might span multiple lines. Consider
-                using an alternative, such as Text Area.
-              </>
+              {[
+                <>
+                  You should avoid using the Text Field if you need to let users
+                  enter longer answers that might span multiple lines. Consider
+                  using an alternative, such as Text Area.
+                </>,
+              ]}
             </UnorderedList>
           }
           showSeparator
@@ -260,10 +266,12 @@ const BestPractice = (layoutProps: LayoutProps) => (
               markerAlign="start"
               overrides={unorderedListOverrides}
             >
-              <>
-                Input label text should not be truncated or wrapped over two or
-                more lines. Keep it short, clear, and fully visible.
-              </>
+              {[
+                <>
+                  Input label text should not be truncated or wrapped over two
+                  or more lines. Keep it short, clear, and fully visible.
+                </>,
+              ]}
             </UnorderedList>
           }
         />

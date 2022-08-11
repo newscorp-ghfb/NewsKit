@@ -242,7 +242,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
               markerAlign="start"
               overrides={unorderedListOverrides}
             >
-              <>Customer survey</>
+              {[<>Customer survey</>]}
             </UnorderedList>
           }
           showSeparator
@@ -299,7 +299,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
         </ContentSecondary>
         <ContentSecondary headline="Select usage example" showSeparator>
           <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
-            <>Country code (If not using text input).</>
+            {[<>Country code (If not using text input).</>]}
           </UnorderedList>
         </ContentSecondary>
       </ContentSection>

@@ -329,7 +329,7 @@ const Colours = (layoutProps: LayoutProps) => (
                 },
               }}
             >
-              {label}
+              {[label]}
             </UnorderedList>
           ))}
         </ContentSecondary>

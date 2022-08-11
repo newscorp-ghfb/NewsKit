@@ -180,9 +180,11 @@ const Address = (layoutProps: LayoutProps) => (
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
         >
           <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
-            <>
-              Display unnecessary address Text Fields that you do not require.
-            </>
+            {[
+              <>
+                Display unnecessary address Text Fields that you do not require.
+              </>,
+            ]}
           </UnorderedList>
         </ContentTertiary>
         <ContentTertiary

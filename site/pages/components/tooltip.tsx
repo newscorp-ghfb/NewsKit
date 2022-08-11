@@ -375,10 +375,12 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
               },
             }}
           >
-            <>
-              The Tooltip component and its content are rendered to the DOM, but
-              only visible to the user when the Tooltip is open.
-            </>
+            {[
+              <>
+                The Tooltip component and its content are rendered to the DOM,
+                but only visible to the user when the Tooltip is open.
+              </>,
+            ]}
           </UnorderedList>
         </>
       ),
