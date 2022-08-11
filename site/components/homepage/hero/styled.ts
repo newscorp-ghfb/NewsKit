@@ -8,7 +8,7 @@ import {
 export const StyledGridLayoutItem = styled(GridLayoutItem)`
   width: 100%;
   margin-inline: auto;
-  max-width: ${({theme}) => `${theme.breakpoints.lg}px`};
+  max-width: 1150px;
   ${getSpacingCssFromTheme('paddingInline', {
     xs: 'space050',
     sm: 'space070',

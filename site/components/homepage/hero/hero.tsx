@@ -21,7 +21,7 @@ export const Hero = ({themeMode}: HeroProps) => (
   >
     <StyledGridLayoutItem>
       <GridLayout
-        columns="repeat(2, 1fr)"
+        columns="1fr 530px"
         overrides={{marginBlock: {xs: 'space070', lg: 'space000'}}}
         alignItems="center"
       >
