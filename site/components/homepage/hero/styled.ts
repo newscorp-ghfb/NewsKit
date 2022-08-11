@@ -1,4 +1,21 @@
-import {getMediaQueryFromTheme, GridLayoutItem, styled} from 'newskit*';
+import {
+  getSpacingCssFromTheme,
+  getMediaQueryFromTheme,
+  GridLayoutItem,
+  styled,
+} from 'newskit*';
+
+export const StyledGridLayoutItem = styled(GridLayoutItem)`
+  width: 100%;
+  margin-inline: auto;
+  max-width: ${({theme}) => `${theme.breakpoints.lg}px`};
+  ${getSpacingCssFromTheme('paddingInline', {
+    xs: 'space050',
+    sm: 'space070',
+    md: 'space100',
+    lg: 'space080',
+  })};
+`;
 
 export const HeroGridContainer = styled(GridLayoutItem)<{
   themeMode: string;
