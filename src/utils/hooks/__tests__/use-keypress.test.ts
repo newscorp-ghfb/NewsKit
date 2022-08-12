@@ -9,39 +9,39 @@ describe('use keypress hook', () => {
     jest.clearAllMocks();
   });
 
-  test('will invoke event callback function on keyup', () => {
+  test('will invoke event callback function on keyup', async () => {
     const callbackMock = jest.fn();
     renderHook(() => useKeypress('a', callbackMock));
 
-    userEvent.keyboard('a');
+    await userEvent.keyboard('a');
 
     expect(callbackMock).toHaveBeenCalled();
   });
 
-  test('will invoke event callback function on multiply keyup', () => {
+  test('will invoke event callback function on multiply keyup', async () => {
     const callbackMock = jest.fn();
     renderHook(() => useKeypress(['a', 'b'], callbackMock));
 
-    userEvent.keyboard('a');
-    userEvent.keyboard('b');
+    await userEvent.keyboard('a');
+    await userEvent.keyboard('b');
 
     expect(callbackMock).toHaveBeenCalledTimes(2);
   });
 
-  test('will not invoke event callback function on keyup if key not recognized', () => {
+  test('will not invoke event callback function on keyup if key not recognized', async () => {
     const callbackMock = jest.fn();
     renderHook(() => useKeypress('Escapppe', callbackMock));
 
-    userEvent.keyboard('{esc}');
+    await userEvent.keyboard('{esc}');
 
     expect(callbackMock).not.toHaveBeenCalled();
   });
 
-  test('will not invoke event callback function on keyup if enabled prop is false', () => {
+  test('will not invoke event callback function on keyup if enabled prop is false', async () => {
     const callbackMock = jest.fn();
     renderHook(() => useKeypress('Escape', callbackMock, {enabled: false}));
 
-    userEvent.keyboard('{esc}');
+    await userEvent.keyboard('{esc}');
 
     expect(callbackMock).not.toHaveBeenCalled();
   });
