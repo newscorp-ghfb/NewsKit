@@ -69,17 +69,6 @@ const fonts = [
       `${fontCdnTheTimes}/TimesModern/TimesModern-Regular-e47b8c277b.ttf`
     ]
   },
-  //TODO FONT FACE FOR THIS?
-  {
-    fontName: "TimesDigitalW04-Regular",
-    fileName: "TimesDigitalW04",
-    fontFamily: "TimesDigitalW04",
-    sources: [
-      `${fontCdnTheTimes}/TimesDigital/TimesDigitalW04-Regular-dca82eac02.woff2`,
-      `${fontCdnTheTimes}/TimesDigital/TimesDigitalW04-Regular-c93f4e13dd.woff`,
-      `${fontCdnTheTimes}/TimesDigital/TimesDigitalW04-Regular-bf4b850ffb.ttf`
-    ]
-  },
   {
     fontName: "TimesDigitalW04-Regular",
     fileName: "TimesDigitalW04-Regular",
