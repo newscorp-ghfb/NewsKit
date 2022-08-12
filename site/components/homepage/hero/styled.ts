@@ -1,26 +1,8 @@
-import {
-  getSpacingCssFromTheme,
-  getMediaQueryFromTheme,
-  GridLayoutItem,
-  styled,
-} from 'newskit*';
+import {getMediaQueryFromTheme, styled, Block} from 'newskit*';
 
-export const StyledGridLayoutItem = styled(GridLayoutItem)`
-  width: 100%;
-  margin-inline: auto;
-  max-width: 1150px;
-  ${getSpacingCssFromTheme('paddingInline', {
-    xs: 'space050',
-    sm: 'space070',
-    md: 'space100',
-    lg: 'space080',
-  })};
-`;
-
-export const HeroGridContainer = styled(GridLayoutItem)<{
+export const HeroContainer = styled(Block)<{
   themeMode: string;
 }>`
-  margin-top: -12px;
   background-size: cover;
   background-repeat: no-repeat;
 

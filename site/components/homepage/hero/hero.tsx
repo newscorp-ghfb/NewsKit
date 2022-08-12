@@ -3,7 +3,7 @@ import {GridLayoutItem, TextBlock, GridLayout, Visible, Button} from 'newskit';
 import LinkNext from 'next/link';
 import HeroGrid from '../../illustrations/landing-page/hero-grid';
 import {HeroProps} from './types';
-import {HeroGridContainer, StyledGridLayoutItem} from './styled';
+import {HeroContainer} from './styled';
 
 const DESIGN_BUTTON_PROPS = {
   href: '/getting-started/design/design-overview',
@@ -14,14 +14,15 @@ const DEVELOPING_BUTTON_PROPS = {
   overrides: {stylePreset: 'buttonOutlinedPrimary'},
 };
 
-export const Hero = ({themeMode}: HeroProps) => (
-  <HeroGridContainer
+export const Hero = ({themeMode, contentContainerOverrides}: HeroProps) => (
+  <HeroContainer
     paddingBlock={{xs: 'space020', lg: 'space100'}}
+    marginBlockStart="-12px"
     themeMode={themeMode}
   >
-    <StyledGridLayoutItem>
+    <GridLayout overrides={contentContainerOverrides}>
       <GridLayout
-        columns="1fr 530px"
+        columns="1fr minmax(min-content, 530px)"
         overrides={{marginBlock: {xs: 'space070', lg: 'space000'}}}
         alignItems="center"
       >
@@ -108,6 +109,6 @@ export const Hero = ({themeMode}: HeroProps) => (
           </Visible>
         </GridLayoutItem>
       </GridLayout>
-    </StyledGridLayoutItem>
-  </HeroGridContainer>
+    </GridLayout>
+  </HeroContainer>
 );
