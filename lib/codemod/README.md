@@ -62,6 +62,30 @@ Unordered List has now a default marker, the script passes `listItemMarker` with
 +    <UnorderedList listItemMarker={null}></UnorderedList>
 ```
 
+#### `update-linkinline`
+
+Updates deprecated Link component to LinkInline 
+
+```diff
+-  import {Link} from 'newskit';
+- <Link href={'www.google.com'}>Click on me</Link>;
+
++    import {LinkInline} from 'newskit';
++  <LinkInline href={'www.google.com'}>Click on me</LinkInline>;
+```
+
+#### `update-linkstandalone`
+
+Updates deprecated Link component to LinkStandalone 
+
+```diff
+-  import {Link} from 'newskit';
+- <Link href={'www.google.com'}>Click on me</Link>;
+
++    import {LinkStandalone} from 'newskit';
++  <LinkStandalone href={'www.google.com'}>Click on me</LinkStandalone>;
+```
+
 
 
 ## Development
