@@ -178,7 +178,7 @@
     "react-markdown": "^6.0.0",
     "react-phone-number-input": "^3.1.23",
     "react-syntax-highlighter": "^13.0.0",
-    "react-test-renderer": "17",
+    "react-test-renderer": "^18.2.0",
     "start-server-and-test": "^1.14.0",
     "storybook-addon-performance": "^0.15.2",
     "tar": "^4.4.8",
