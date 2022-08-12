@@ -1,8 +1,6 @@
 import {getMediaQueryFromTheme, styled, Block} from 'newskit*';
 
-export const HeroContainer = styled(Block)<{
-  themeMode: string;
-}>`
+export const HeroContainer = styled(Block)`
   background-size: cover;
   background-repeat: no-repeat;
 

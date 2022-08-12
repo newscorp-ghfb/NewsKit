@@ -14,11 +14,10 @@ const DEVELOPING_BUTTON_PROPS = {
   overrides: {stylePreset: 'buttonOutlinedPrimary'},
 };
 
-export const Hero = ({themeMode, contentContainerOverrides}: HeroProps) => (
+export const Hero = ({contentContainerOverrides}: HeroProps) => (
   <HeroContainer
     paddingBlock={{xs: 'space020', lg: 'space100'}}
     marginBlockStart="-12px"
-    themeMode={themeMode}
   >
     <GridLayout overrides={contentContainerOverrides}>
       <GridLayout

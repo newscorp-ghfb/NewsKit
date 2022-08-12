@@ -32,51 +32,45 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
-const Index = (layoutProps: LayoutProps) => {
-  const {themeMode} = layoutProps;
-  return (
-    <Layout {...layoutProps} newPage hideSidebar path="/index-new">
-      <GridLayout
-        rowGap={{xs: 'space070', md: 'space100'}}
-        overrides={{marginBlockEnd: 'space080'}}
-      >
-        <Hero
-          themeMode={themeMode}
-          contentContainerOverrides={GRID_SECTION_OVERRIDES}
-        />
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-          <GridBox>
-            <Placeholder>Banner</Placeholder>
-          </GridBox>
-        </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-          <GridBox>
-            <Placeholder>Explore</Placeholder>
-          </GridBox>
-        </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-          <GridBox>
-            <Placeholder>Whats New</Placeholder>
-          </GridBox>
-        </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-          <GridBox>
-            <Placeholder>Contribute</Placeholder>
-          </GridBox>
-        </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-          <GridBox>
-            <Placeholder>Keep in touch</Placeholder>
-          </GridBox>
-        </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-          <GridBox>
-            <Placeholder>Supported brands</Placeholder>
-          </GridBox>
-        </GridLayout>
+const Index = (layoutProps: LayoutProps) => (
+  <Layout {...layoutProps} newPage hideSidebar path="/index-new">
+    <GridLayout
+      rowGap={{xs: 'space070', md: 'space100'}}
+      overrides={{marginBlockEnd: 'space080'}}
+    >
+      <Hero contentContainerOverrides={GRID_SECTION_OVERRIDES} />
+      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+        <GridBox>
+          <Placeholder>Banner</Placeholder>
+        </GridBox>
       </GridLayout>
-    </Layout>
-  );
-};
+      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+        <GridBox>
+          <Placeholder>Explore</Placeholder>
+        </GridBox>
+      </GridLayout>
+      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+        <GridBox>
+          <Placeholder>Whats New</Placeholder>
+        </GridBox>
+      </GridLayout>
+      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+        <GridBox>
+          <Placeholder>Contribute</Placeholder>
+        </GridBox>
+      </GridLayout>
+      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+        <GridBox>
+          <Placeholder>Keep in touch</Placeholder>
+        </GridBox>
+      </GridLayout>
+      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+        <GridBox>
+          <Placeholder>Supported brands</Placeholder>
+        </GridBox>
+      </GridLayout>
+    </GridLayout>
+  </Layout>
+);
 
 export default Index;
