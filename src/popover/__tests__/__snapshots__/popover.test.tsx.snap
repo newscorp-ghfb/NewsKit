@@ -709,6 +709,8 @@ exports[`Popover close button should show left-aligned 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -972,7 +974,7 @@ exports[`Popover close button should show left-aligned 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="nk-popover-enter-done emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -1046,6 +1048,8 @@ exports[`Popover close button should show right-aligned 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1309,7 +1313,7 @@ exports[`Popover close button should show right-aligned 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="nk-popover-enter-done emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"

@@ -1,7 +1,6 @@
 import React, {useEffect, useRef} from 'react';
-import {fireEvent} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import {renderWithTheme, applyAsyncStyling} from '../../test/test-utils';
+import {renderWithTheme} from '../../test/test-utils';
 import {Popover, PopoverProps} from '..';
 import {Button} from '../../button';
 import {createTheme} from '../../theme';
@@ -33,20 +32,19 @@ describe('Popover', () => {
   describe('should render correct styles:', () => {
     test('default', async () => {
       const {getByRole, asFragment} = renderWithTheme(Popover, defaultProps);
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(getByRole('dialog').textContent).toBe('hello');
       expect(getByRole('dialog')).toHaveStyle({
         position: 'absolute',
       });
       expect(asFragment()).toMatchSnapshot();
     });
-    test('not render if content is an empty string', () => {
+    test('not render if content is an empty string', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, {
         children: <button type="submit">Add</button>,
         content: '',
       });
-      fireEvent.click(getByRole('button'));
+      await userEvent.click(getByRole('button'));
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
     test('with different placement', async () => {
@@ -54,7 +52,7 @@ describe('Popover', () => {
         ...defaultProps,
         placement: 'bottom',
       });
-      fireEvent.click(getByRole('button'));
+      await userEvent.click(getByRole('button'));
       expect(getByRole('dialog')).toHaveStyle({
         position: 'absolute',
       });
@@ -102,8 +100,7 @@ describe('Popover', () => {
         },
         myCustomTheme,
       );
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer', async () => {
@@ -111,8 +108,7 @@ describe('Popover', () => {
         ...defaultProps,
         hidePointer: false,
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer stylePreset overrides', async () => {
@@ -141,8 +137,7 @@ describe('Popover', () => {
         },
         myCustomTheme,
       );
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer size overrides', async () => {
@@ -155,8 +150,7 @@ describe('Popover', () => {
           },
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer y coordinate', async () => {
@@ -165,8 +159,7 @@ describe('Popover', () => {
         hidePointer: false,
         placement: 'right',
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
   });
@@ -180,8 +173,7 @@ describe('Popover', () => {
           distance: 'space040',
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('should not be applied with pointer and non-px distance override', async () => {
@@ -193,8 +185,7 @@ describe('Popover', () => {
           distance: '1rem',
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'distance' is a valid token or px value.",
@@ -210,8 +201,7 @@ describe('Popover', () => {
           distance: 'invalid token',
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'distance' is a valid token or px value.",
@@ -226,8 +216,7 @@ describe('Popover', () => {
           distance: 'space040',
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with pointer and px distance override', async () => {
@@ -238,8 +227,7 @@ describe('Popover', () => {
           distance: '10px',
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
   });
@@ -256,8 +244,7 @@ describe('Popover', () => {
           },
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'pointer.edgeOffset' is a valid token or px value.",
@@ -275,8 +262,7 @@ describe('Popover', () => {
           },
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'pointer.edgeOffset' is a valid token or px value.",
@@ -293,8 +279,7 @@ describe('Popover', () => {
           },
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with px distance override', async () => {
@@ -307,50 +292,49 @@ describe('Popover', () => {
           },
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('open / close behaviour', () => {
-    test('opens on clicking context element', () => {
+    test('opens on clicking context element', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
       });
       const button = getByRole('button');
-      fireEvent.click(button);
+      await userEvent.click(button);
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('closes on clicking context element', () => {
+    test('closes on clicking context element', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
       });
       const button = getByRole('button');
-      fireEvent.click(button);
-      fireEvent.click(button);
+      await userEvent.click(button);
+      await userEvent.click(button);
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
-    test('does not close on escape key', () => {
+    test('does not close on escape key', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
       });
       const button = getByRole('button');
-      fireEvent.click(button);
-      fireEvent.keyDown(document.body, {key: 'Escape'});
+      await userEvent.click(button);
+      await userEvent.keyboard('{esc}');
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('does close on escape key', () => {
+    test('does close on escape key', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         enableDismiss: true,
       });
       const button = getByRole('button');
-      fireEvent.click(button);
-      fireEvent.keyDown(document.body, {key: 'Escape'});
+      await userEvent.click(button);
+      await userEvent.keyboard('{Escape}');
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
-    test('does not close on clicking outside', () => {
+    test('does not close on clicking outside', async () => {
       const Component = () => (
         <>
           <div data-testid="outside" />
@@ -359,12 +343,12 @@ describe('Popover', () => {
       );
       const {getByTestId, getByRole, queryByRole} = renderWithTheme(Component);
       const button = getByRole('button');
-      fireEvent.click(button);
+      await userEvent.click(button);
       const outside = getByTestId('outside');
-      fireEvent.click(outside);
+      await userEvent.click(outside);
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('does close on clicking outside', () => {
+    test('does close on clicking outside', async () => {
       const Component = () => (
         <>
           <div data-testid="outside" />
@@ -373,15 +357,15 @@ describe('Popover', () => {
       );
       const {getByTestId, getByRole, queryByRole} = renderWithTheme(Component);
       const button = getByRole('button');
-      fireEvent.click(button);
+      await userEvent.click(button);
       const outside = getByTestId('outside');
-      userEvent.click(outside);
+      await userEvent.click(outside);
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
   });
 
   describe('controlled case', () => {
-    test('should open and close based on state passed', () => {
+    test('should open and close based on state passed', async () => {
       const Component = () => {
         const [open, setOpen] = React.useState(true);
         return (
@@ -403,12 +387,12 @@ describe('Popover', () => {
       const button = getByTestId('outside-control');
 
       expect(queryByRole('dialog')).toBeInTheDocument();
-      fireEvent.click(button);
+      await userEvent.click(button);
       expect(queryByRole('dialog')).not.toBeInTheDocument();
-      fireEvent.click(button);
+      await userEvent.click(button);
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('should be able to use handleCloseButtonClick to update parent state', () => {
+    test('should be able to use handleCloseButtonClick to update parent state', async () => {
       const Component = () => {
         const [open, setOpen] = React.useState(true);
         return (
@@ -434,10 +418,10 @@ describe('Popover', () => {
       const closeButton = getByTestId('close-button');
 
       expect(queryByRole('dialog')).toBeInTheDocument();
-      fireEvent.click(closeButton);
+      await userEvent.click(closeButton);
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
-    test('should call onDismiss on dismiss', () => {
+    test('should call onDismiss on dismiss', async () => {
       const onDismiss = jest.fn();
       const Component = () => (
         <Popover open content="hello" enableDismiss onDismiss={onDismiss}>
@@ -446,29 +430,29 @@ describe('Popover', () => {
       );
 
       renderWithTheme(Component);
-      fireEvent.keyDown(document.body, {key: 'Escape'});
+      await userEvent.keyboard('{Escape}');
       expect(onDismiss).toHaveBeenCalled();
     });
   });
 
   describe('pass the correct a11y attributes:', () => {
-    test("floating element has role 'dialog'", () => {
+    test("floating element has role 'dialog'", async () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, defaultProps);
-      fireEvent.click(getByRole('button'));
+      await userEvent.click(getByRole('button'));
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('floating element has default aria-labelledby if no header is passed', () => {
+    test('floating element has default aria-labelledby if no header is passed', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         header: undefined,
       });
       const btn = getByRole('button');
-      fireEvent.click(btn);
+      await userEvent.click(btn);
       const el = queryByRole('dialog');
       expect(el).toHaveAttribute('aria-labelledby', `ref-${MOCK_ID}`);
       expect(btn).toHaveAttribute('id', `ref-${MOCK_ID}`);
     });
-    test('floating element has custom aria-labelledby if no header is passed', () => {
+    test('floating element has custom aria-labelledby if no header is passed', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         header: undefined,
@@ -478,17 +462,17 @@ describe('Popover', () => {
           </button>
         ),
       });
-      fireEvent.click(getByRole('button'));
+      await userEvent.click(getByRole('button'));
       const el = queryByRole('dialog');
       expect(el).toHaveAttribute('aria-labelledby', 'customId');
     });
-    test('floating element has aria-describedby if header is passed', () => {
+    test('floating element has aria-describedby if header is passed', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         header: 'header value',
       });
       const btn = getByRole('button');
-      fireEvent.click(btn);
+      await userEvent.click(btn);
       const el = queryByRole('dialog');
       expect(el).toHaveAttribute('aria-describedby', `header-${MOCK_ID}`);
     });
@@ -497,10 +481,10 @@ describe('Popover', () => {
       const el = queryByRole('button');
       expect(el).toHaveAttribute('aria-haspopup', 'dialog');
     });
-    test('context element has aria-controls when dialog is open', () => {
+    test('context element has aria-controls when dialog is open', async () => {
       const {getByRole} = renderWithTheme(Popover, defaultProps);
       const btn = getByRole('button');
-      fireEvent.click(btn);
+      await userEvent.click(btn);
       expect(btn).toHaveAttribute('aria-controls', `floating-${MOCK_ID}`);
     });
   });
@@ -511,14 +495,14 @@ describe('Popover', () => {
       onDismiss = jest.fn();
     });
 
-    test('calls onDismiss on close', () => {
+    test('calls onDismiss on close', async () => {
       const {getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         onDismiss,
       });
       const button = getByRole('button');
-      fireEvent.click(button);
-      fireEvent.click(button);
+      await userEvent.click(button);
+      await userEvent.click(button);
       expect(onDismiss).toHaveBeenCalled();
     });
     test('does not call onDismiss on first load if closed', () => {
@@ -543,16 +527,16 @@ describe('Popover', () => {
       const input1 = getByTestId('input1');
       expect(input1).toHaveFocus();
     });
-    test('shifts to panel panel on open', () => {
+    test('shifts to panel panel on open', async () => {
       const {getByRole, getByTestId} = renderWithTheme(Popover, {
         ...defaultProps,
       });
       const button = getByRole('button');
-      userEvent.click(button);
+      await userEvent.click(button);
       const panel = getByTestId('floating-element-panel');
       expect(panel).toHaveFocus();
     });
-    test('shifts through interactive elements within popover', () => {
+    test('shifts through interactive elements within popover', async () => {
       const Component = () => (
         <Popover
           {...defaultProps}
@@ -566,17 +550,17 @@ describe('Popover', () => {
       );
       const {getByRole, getByTestId} = renderWithTheme(Component);
       const button = getByRole('button');
-      userEvent.click(button);
+      await userEvent.click(button);
       const panel = getByTestId('floating-element-panel');
       expect(panel).toHaveFocus();
-      userEvent.tab();
+      await userEvent.tab();
       const input1 = getByTestId('input1');
       expect(input1).toHaveFocus();
-      userEvent.tab();
+      await userEvent.tab();
       const input2 = getByTestId('input2');
       expect(input2).toHaveFocus();
     });
-    test('shifts to close button then to elements outside popover after elements within popover', () => {
+    test('shifts to close button then to elements outside popover after elements within popover', async () => {
       const Component = () => (
         <>
           <Popover
@@ -592,29 +576,29 @@ describe('Popover', () => {
       );
       const {getByRole, getByTestId} = renderWithTheme(Component);
       const button = getByRole('button');
-      userEvent.click(button);
+      await userEvent.click(button);
       const panel = getByTestId('floating-element-panel');
       expect(panel).toHaveFocus();
-      userEvent.tab();
+      await userEvent.tab();
       const input1 = getByTestId('input1');
       expect(input1).toHaveFocus();
-      userEvent.tab();
+      await userEvent.tab();
       const closeBtn = getByTestId('close-button');
       expect(closeBtn).toHaveFocus();
-      userEvent.tab();
+      await userEvent.tab();
       const input2 = getByTestId('input2');
       expect(input2).toHaveFocus();
     });
-    test('returns to context element on close by default', () => {
+    test('returns to context element on close by default', async () => {
       const {getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
       });
       const button = getByRole('button');
-      userEvent.click(button);
-      userEvent.click(button);
+      await userEvent.click(button);
+      await userEvent.click(button);
       expect(button).toHaveFocus();
     });
-    test('returns to custom element on close if restoreFocusTo is provided', () => {
+    test('returns to custom element on close if restoreFocusTo is provided', async () => {
       const Component = () => {
         const [forceRenderState, setForceRenderState] = React.useState(false);
         const restoreFocusRef = useRef(null);
@@ -638,12 +622,12 @@ describe('Popover', () => {
       const {getByTestId, getByRole} = renderWithTheme(Component);
 
       const button = getByRole('button');
-      userEvent.click(button);
+      await userEvent.click(button);
 
       const panel = getByTestId('floating-element-panel');
       expect(panel).toHaveFocus();
 
-      userEvent.click(button);
+      await userEvent.click(button);
 
       const restoreFocus = getByTestId('restoreFocus');
       expect(restoreFocus).toHaveFocus();
@@ -651,21 +635,21 @@ describe('Popover', () => {
   });
 
   describe('header', () => {
-    test('should show if passed', () => {
+    test('should show if passed', async () => {
       const {getByRole, queryByTestId} = renderWithTheme(Popover, {
         ...defaultProps,
         header: 'header value',
       });
-      fireEvent.click(getByRole('button'));
+      await userEvent.click(getByRole('button'));
       const headerText = queryByTestId('header-text');
       expect(headerText).toHaveTextContent('header value');
     });
-    test('should not show if not passed', () => {
+    test('should not show if not passed', async () => {
       const {getByRole, queryByTestId} = renderWithTheme(Popover, {
         ...defaultProps,
         header: undefined,
       });
-      fireEvent.click(getByRole('button'));
+      await userEvent.click(getByRole('button'));
       const headerText = queryByTestId('header-text');
       expect(headerText).not.toBeInTheDocument();
     });
@@ -697,8 +681,7 @@ describe('Popover', () => {
         },
         myCustomTheme,
       );
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('applies logical prop overrides', async () => {
@@ -713,8 +696,7 @@ describe('Popover', () => {
           },
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('applies typography preset overrides', async () => {
@@ -728,36 +710,35 @@ describe('Popover', () => {
           },
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('close button', () => {
-    test('should not show if hidden', () => {
+    test('should not show if hidden', async () => {
       const {getByRole, queryByTestId} = renderWithTheme(Popover, {
         ...defaultProps,
         closePosition: 'none',
       });
-      fireEvent.click(getByRole('button'));
+      await userEvent.click(getByRole('button'));
       const closeBtn = queryByTestId('close-button');
       expect(closeBtn).not.toBeInTheDocument();
     });
-    test('should show right-aligned', () => {
+    test('should show right-aligned', async () => {
       const {getByRole, asFragment} = renderWithTheme(Popover, {
         ...defaultProps,
         closePosition: 'right',
       });
-      fireEvent.click(getByRole('button'));
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should show left-aligned', () => {
+    test('should show left-aligned', async () => {
       const {getByRole, asFragment} = renderWithTheme(Popover, {
         ...defaultProps,
         closePosition: 'left',
       });
-      fireEvent.click(getByRole('button'));
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('applies stylePreset overrides', async () => {
@@ -799,8 +780,7 @@ describe('Popover', () => {
         },
         myCustomTheme,
       );
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('applies logical prop overrides', async () => {
@@ -814,11 +794,10 @@ describe('Popover', () => {
           },
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should close popover and call onDismiss and handleCloseButtonClick when close button clicked', () => {
+    test('should close popover and call onDismiss and handleCloseButtonClick when close button clicked', async () => {
       const onDismiss = jest.fn();
       const handleCloseButtonClick = jest.fn();
       const {getByRole, queryByRole, getByTestId} = renderWithTheme(Popover, {
@@ -826,10 +805,10 @@ describe('Popover', () => {
         onDismiss,
         handleCloseButtonClick,
       });
-      fireEvent.click(getByRole('button'));
+      await userEvent.click(getByRole('button'));
       expect(queryByRole('dialog')).toBeInTheDocument();
       const closeBtn = getByTestId('close-button');
-      fireEvent.click(closeBtn);
+      await userEvent.click(closeBtn);
       expect(queryByRole('dialog')).not.toBeInTheDocument();
       expect(onDismiss).toHaveBeenCalled();
       expect(handleCloseButtonClick).toHaveBeenCalled();
@@ -863,8 +842,7 @@ describe('Popover', () => {
         },
         myCustomTheme,
       );
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('applies logical prop overrides', async () => {
@@ -878,8 +856,7 @@ describe('Popover', () => {
           },
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('applies typography preset overrides', async () => {
@@ -892,8 +869,7 @@ describe('Popover', () => {
           },
         },
       });
-      fireEvent.click(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.click(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
   });

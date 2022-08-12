@@ -1,6 +1,6 @@
 import React from 'react';
-import {fireEvent} from '@testing-library/react';
-import {renderWithTheme, applyAsyncStyling} from '../../test/test-utils';
+import userEvent from '@testing-library/user-event';
+import {renderWithTheme} from '../../test/test-utils';
 import {Tooltip, TooltipProps} from '..';
 import {TriggerType} from '../types';
 import {Button} from '../../button';
@@ -41,8 +41,7 @@ describe('Tooltip', () => {
   describe('should render correct styles:', () => {
     test('default', async () => {
       const {getByRole, asFragment} = renderWithTheme(Tooltip, defaultProps);
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(getByRole('tooltip', {hidden: true}).textContent).toBe('hello');
       expect(getByRole('tooltip', {hidden: true})).toHaveStyle({
         position: 'absolute',
@@ -61,8 +60,7 @@ describe('Tooltip', () => {
         ...defaultProps,
         placement: 'bottom',
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(getByRole('tooltip', {hidden: true})).toHaveStyle({
         position: 'absolute',
       });
@@ -106,8 +104,7 @@ describe('Tooltip', () => {
         },
         myCustomTheme,
       );
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer', async () => {
@@ -115,8 +112,7 @@ describe('Tooltip', () => {
         ...defaultProps,
         hidePointer: false,
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer stylePreset overrides', async () => {
@@ -145,8 +141,7 @@ describe('Tooltip', () => {
         },
         myCustomTheme,
       );
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer size overrides', async () => {
@@ -159,8 +154,7 @@ describe('Tooltip', () => {
           },
         },
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer y coordinate', async () => {
@@ -169,8 +163,7 @@ describe('Tooltip', () => {
         hidePointer: false,
         placement: 'right',
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
   });
@@ -184,8 +177,7 @@ describe('Tooltip', () => {
           distance: 'space040',
         },
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('should not be applied with pointer and non-px distance override', async () => {
@@ -197,8 +189,7 @@ describe('Tooltip', () => {
           distance: '1rem',
         },
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'distance' is a valid token or px value.",
@@ -214,8 +205,7 @@ describe('Tooltip', () => {
           distance: 'invalid token',
         },
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'distance' is a valid token or px value.",
@@ -230,8 +220,7 @@ describe('Tooltip', () => {
           distance: 'space040',
         },
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with pointer and px distance override', async () => {
@@ -242,8 +231,7 @@ describe('Tooltip', () => {
           distance: '10px',
         },
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
   });
@@ -260,8 +248,7 @@ describe('Tooltip', () => {
           },
         },
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'pointer.edgeOffset' is a valid token or px value.",
@@ -279,8 +266,7 @@ describe('Tooltip', () => {
           },
         },
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'pointer.edgeOffset' is a valid token or px value.",
@@ -297,8 +283,7 @@ describe('Tooltip', () => {
           },
         },
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with px distance override', async () => {
@@ -311,103 +296,98 @@ describe('Tooltip', () => {
           },
         },
       });
-      fireEvent.mouseEnter(getByRole('button'));
-      await applyAsyncStyling();
+      await userEvent.hover(getByRole('button'));
       expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('with different triggers:', () => {
-    test('opens on mouseover by default', () => {
+    test('opens on mouseover by default', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
       });
       const button = getByRole('button');
-      fireEvent.mouseEnter(button);
+      await userEvent.hover(button);
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
     });
-    test('closes on mouseleave', () => {
+    test('closes on mouseleave', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
       });
       const button = getByRole('button');
-
-      fireEvent.mouseEnter(button);
-      fireEvent.mouseLeave(button);
+      await userEvent.hover(button);
+      await userEvent.unhover(button);
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
-    test('opens on focus by default', () => {
-      const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
+    test('opens on focus by default', async () => {
+      const {queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
       });
-      const button = getByRole('button');
-      fireEvent.focus(button);
+      await userEvent.tab(); // shift focus to button
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
     });
 
-    test('closes on blur', () => {
-      const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
+    test('closes on blur', async () => {
+      const {queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         trigger: 'focus' as TriggerType,
       });
-      const button = getByRole('button');
-      fireEvent.focus(button);
-      fireEvent.blur(button);
+      await userEvent.tab(); // shift focus to button
+      await userEvent.click(document.body); // move the focus away
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
 
-    test('will not open on focus when focus trigger is not passed', () => {
-      const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
+    test('will not open on focus when focus trigger is not passed', async () => {
+      const {queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         trigger: 'hover',
       });
-      const button = getByRole('button');
-      fireEvent.focus(button);
+      await userEvent.tab(); // shift focus to button
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
 
-    test('dismisses with escape key', () => {
+    test('dismisses with escape key', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Tooltip, defaultProps);
-      fireEvent.mouseEnter(getByRole('button'));
+      await userEvent.hover(getByRole('button'));
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
-      fireEvent.keyDown(document.body, {key: 'Escape'});
+      await userEvent.keyboard('{Escape}');
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
   });
 
   describe('pass the correct a11y attributes:', () => {
-    test('have role tooltip when used as a description', () => {
+    test('have role tooltip when used as a description', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Tooltip, defaultProps);
-      fireEvent.mouseEnter(getByRole('button'));
+      await userEvent.hover(getByRole('button'));
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
     });
-    test('do not have role tooltip when used as a label', () => {
+    test('do not have role tooltip when used as a label', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         asLabel: true,
       });
-      fireEvent.mouseEnter(getByRole('button'));
+      await userEvent.hover(getByRole('button'));
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
-    test('can describe the child when open and remove aria attribute when closed', () => {
+    test('can describe the child when open and remove aria attribute when closed', async () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
       });
       const button = getByRole('button');
-      fireEvent.mouseEnter(button);
+      await userEvent.hover(button);
       expect(button.hasAttribute('aria-describedby')).toBe(true);
-      fireEvent.mouseLeave(button);
+      await userEvent.unhover(button);
       expect(button.hasAttribute('aria-describedby')).toBe(false);
     });
-    test('can describe with exotic content when open and remove aria attribute when closed', () => {
+    test('can describe with exotic content when open and remove aria attribute when closed', async () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         content: <div>the content</div>,
       });
       const button = getByRole('button');
-      fireEvent.mouseEnter(button);
+      await userEvent.hover(button);
       expect(button.hasAttribute('aria-describedby')).toBe(true);
-      fireEvent.mouseLeave(button);
+      await userEvent.unhover(button);
       expect(button.hasAttribute('aria-describedby')).toBe(false);
     });
     test('should label the child when closed', () => {
@@ -418,7 +398,7 @@ describe('Tooltip', () => {
       const button = getByRole('button');
       expect(button.hasAttribute('aria-label')).toBe(true);
     });
-    test('should label the child when open with an exotic content', () => {
+    test('should label the child when open with an exotic content', async () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         content: <div>the content</div>,
@@ -426,7 +406,7 @@ describe('Tooltip', () => {
       });
       const button = getByRole('button');
       expect(button.hasAttribute('aria-labelledby')).toBe(false);
-      fireEvent.mouseEnter(button);
+      await userEvent.hover(button);
       expect(button.hasAttribute('aria-labelledby')).toBe(true);
     });
   });
@@ -439,7 +419,7 @@ describe('Tooltip', () => {
       'When passing a component with disabled prop to Tooltip please remember to use a wrapper element, such as a span.',
     );
   });
-  test('should be controllable', () => {
+  test('should be controllable', async () => {
     const Component = () => {
       const [open, setOpen] = React.useState(false);
       return (
@@ -457,7 +437,7 @@ describe('Tooltip', () => {
     const {getByTestId, queryByRole} = renderWithTheme(Component);
 
     const button = getByTestId('outside-control');
-    fireEvent.click(button);
+    await userEvent.click(button);
     expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
   });
 });
