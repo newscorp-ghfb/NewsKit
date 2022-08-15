@@ -9,8 +9,6 @@ exports[`ContentText renders with only the description 1`] = `
 .emotion-1 {
   margin: 0;
   color: #2E2E2E;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-1 svg {
@@ -66,11 +64,11 @@ exports[`ContentText renders with only the description 1`] = `
 <div
     class="emotion-0"
   >
-    <span
+    <p
       class="emotion-1"
     >
       description
-    </span>
+    </p>
   </div>
 </DocumentFragment>
 `;
@@ -233,8 +231,6 @@ exports[`ContentText renders with title and description 1`] = `
 .emotion-1 {
   margin: 0;
   color: #2E2E2E;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-1 svg {
@@ -290,11 +286,11 @@ exports[`ContentText renders with title and description 1`] = `
 <div
     class="emotion-0"
   >
-    <span
+    <p
       class="emotion-1"
     >
       description
-    </span>
+    </p>
   </div>
 </DocumentFragment>
 `;
