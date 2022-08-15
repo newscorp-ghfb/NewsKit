@@ -2,7 +2,7 @@ import React, {useCallback} from 'react';
 import {getTrackBackground} from 'react-range';
 import {useAudioPlayerContext} from '../../context';
 import {AudioPlayerSeekBarProps} from './types';
-import {Slider, SliderProps} from '../../../slider';
+import {RenderTrackFunction, Slider, SliderProps} from '../../../slider';
 import {ScreenReaderOnly} from '../../../screen-reader-only';
 import {useReactKeys} from '../../../utils/hooks';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
@@ -33,17 +33,8 @@ const ThemelessSeekBar = React.forwardRef<
 
   const [srOnlyForwardRewind] = useReactKeys(1);
 
-  const renderTrack: SliderProps['renderTrack'] = useCallback(
-    ({
-      props: trackProps,
-      children: trackChildren,
-      isDragged,
-    }: {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      props: any; // react-range does not export IRenderTrackParams
-      children: React.ReactNode;
-      isDragged: boolean;
-    }) => {
+  const renderTrack: SliderProps['renderTrack'] = useCallback<RenderTrackFunction>(
+    ({props: trackProps, children: trackChildren, isDragged}) => {
       const sliderTrackStylePreset = getToken(
         {theme, overrides},
         'audioPlayerSeekBar.slider.track',

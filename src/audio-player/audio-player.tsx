@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 import {getTrackBackground} from 'react-range';
 import {ControlPanel, PopoutButton} from './controls';
-import {Slider, SliderProps} from '../slider';
+import {Slider, SliderProps, RenderTrackFunction} from '../slider';
 import {Stack, StackDistribution, Flow} from '../stack';
 import {PlayerGrid, ControlContainer, PlayerContainer} from './styled';
 import {VolumeControl} from '../volume-control';
@@ -141,17 +141,8 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
     audioEvents[eventName](e);
   };
 
-  const renderTrack: SliderProps['renderTrack'] = useCallback(
-    ({
-      props: trackProps,
-      children: trackChildren,
-      isDragged,
-    }: {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      props: any; // react-range does not export IRenderTrackParams
-      children: React.ReactNode;
-      isDragged: boolean;
-    }) => {
+  const renderTrack: SliderProps['renderTrack'] = useCallback<RenderTrackFunction>(
+    ({props: trackProps, children: trackChildren, isDragged}) => {
       const sliderTrackStylePreset = getToken(
         {theme, overrides},
         'audioPlayer.seekBar.slider.track',
