@@ -78,8 +78,6 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-6 svg {
@@ -120,11 +118,11 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
             </h3>
           </section>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           Text
-        </span>
+        </p>
       </div>
     </div>
   </div>
@@ -274,8 +272,6 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-7 svg {
@@ -321,11 +317,11 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
             </section>
           </a>
         </div>
-        <span
+        <p
           class="emotion-7"
         >
           Text
-        </span>
+        </p>
       </div>
     </div>
   </div>
@@ -423,8 +419,6 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-6 svg {
@@ -465,11 +459,11 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
             </h3>
           </section>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           Text
-        </span>
+        </p>
       </div>
     </div>
   </div>
@@ -606,8 +600,6 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-7 svg {
@@ -653,11 +645,11 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
             </section>
           </a>
         </div>
-        <span
+        <p
           class="emotion-7"
         >
           Text
-        </span>
+        </p>
       </div>
     </div>
   </div>
