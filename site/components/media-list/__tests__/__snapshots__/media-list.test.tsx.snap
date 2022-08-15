@@ -2166,8 +2166,6 @@ exports[`Media List renders with usage cards 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-20 svg {
@@ -2378,11 +2376,11 @@ exports[`Media List renders with usage cards 1`] = `
                   <div
                     class="emotion-14"
                   >
-                    <span
+                    <p
                       class="emotion-20"
                     >
                       UsageCard Do
-                    </span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -2461,11 +2459,11 @@ exports[`Media List renders with usage cards 1`] = `
                   <div
                     class="emotion-14"
                   >
-                    <span
+                    <p
                       class="emotion-20"
                     >
                       UsageCard Dont
-                    </span>
+                    </p>
                   </div>
                 </div>
               </div>
