@@ -119,4 +119,4 @@ mkdirp(fontDir).then(() =>
     )
   )
 );
-console.log(`Downloaded and saved private external fonts in ./.storybook 📝`)
+console.log(`Downloaded private external fonts in ./.storybook 📝`)
