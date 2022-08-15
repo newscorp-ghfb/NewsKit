@@ -2916,7 +2916,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 </DocumentFragment>
 `;
 
-exports[`Audio Player Composable VolumeControl renders horizontal expandable by default 1`] = `
+exports[`Audio Player Composable VolumeControl renders horizontal expanded by default 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: grid;
@@ -4021,8 +4021,53 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-8 {
-  width: 0;
   width: 130px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: width;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-8.nk-vc-enter {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+
+  .emotion-8.nk-vc-enter-active {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+
+  .emotion-8.nk-vc-exit-active {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: width;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-8.nk-vc-enter {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
+
+  .emotion-8.nk-vc-enter-active {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
+
+  .emotion-8.nk-vc-exit-active {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
 }
 
 .emotion-9 {
@@ -4248,7 +4293,8 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
         class="emotion-7"
       >
         <div
-          class="nk-vc-exit-done emotion-8"
+          class="nk-vc-enter-done emotion-8"
+          open=""
         >
           <div
             class="emotion-9"
@@ -4466,8 +4512,54 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-8 {
+  overflow: hidden;
   width: 0;
-  width: 130px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: width;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-8.nk-vc-enter {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+
+  .emotion-8.nk-vc-enter-active {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+
+  .emotion-8.nk-vc-exit-active {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: width;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-8.nk-vc-enter {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
+
+  .emotion-8.nk-vc-enter-active {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
+
+  .emotion-8.nk-vc-exit-active {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
 }
 
 .emotion-9 {
@@ -4911,8 +5003,54 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-8 {
+  overflow: hidden;
   width: 0;
-  width: 130px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: width;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-8.nk-vc-enter {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+
+  .emotion-8.nk-vc-enter-active {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+
+  .emotion-8.nk-vc-exit-active {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: width;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-8.nk-vc-enter {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
+
+  .emotion-8.nk-vc-enter-active {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
+
+  .emotion-8.nk-vc-exit-active {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
 }
 
 .emotion-9 {
@@ -5356,8 +5494,53 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-8 {
-  width: 0;
   width: 130px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: width;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-8.nk-vc-enter {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+
+  .emotion-8.nk-vc-enter-active {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+
+  .emotion-8.nk-vc-exit-active {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: width;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-8.nk-vc-enter {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
+
+  .emotion-8.nk-vc-enter-active {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
+
+  .emotion-8.nk-vc-exit-active {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
 }
 
 .emotion-9 {
@@ -5583,7 +5766,8 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
         class="emotion-7"
       >
         <div
-          class="nk-vc-exit-done emotion-8"
+          class="nk-vc-enter-done emotion-8"
+          open=""
         >
           <div
             class="emotion-9"
