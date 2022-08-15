@@ -6,23 +6,23 @@ import {
   RenderOptions,
   RenderResult,
 } from '@testing-library/react';
-import {newskitLightTheme, ThemeProviderProps, UncompiledTheme} from '../theme';
+import {newskitLightTheme, UncompiledTheme} from '../theme';
 import {InstrumentationEvent} from '../instrumentation';
 import {NewsKitProvider} from '../newskit-provider';
+import {RenderToFragmentFactory, RenderWithThemeFactory} from './types';
 
 export const renderToFragment = (
   ui: React.ReactElement,
   options?: RenderOptions,
 ) => renderer(ui, options).asFragment();
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const renderWithImplementation: any = <T extends {}>(
+export const renderWithImplementation: <T extends {}>(
   Component: React.ComponentType<T>,
   props?: T,
-  fireEvent: (event: InstrumentationEvent) => void = () => {},
+  fireEvent?: (event: InstrumentationEvent) => void,
   options?: Omit<RenderOptions, 'wrapper'>,
-) =>
-  renderer(<Component {...(props as T)} />, {
+) => RenderResult = (Component, props, fireEvent = () => {}, options) =>
+  renderer(<Component {...props!} />, {
     ...options,
     wrapper: ({children}) => (
       <NewsKitProvider theme={newskitLightTheme} instrumentation={{fireEvent}}>
@@ -31,16 +31,13 @@ export const renderWithImplementation: any = <T extends {}>(
     ),
   });
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const renderWithThemeFactory: any = (
-  defaultTheme: ThemeProviderProps['theme'],
-) => <T extends {}>(
-  Component: React.ComponentType<T>,
-  props?: T,
-  theme: ThemeProviderProps['theme'] = defaultTheme,
-  options?: Omit<RenderOptions, 'wrapper'>,
+export const renderWithThemeFactory: RenderWithThemeFactory = defaultTheme => (
+  Component,
+  props,
+  theme = defaultTheme,
+  options,
 ) =>
-  renderer(<Component {...(props as T)} />, {
+  renderer(<Component {...props!} />, {
     ...options,
     wrapper: ({children}) => (
       <NewsKitProvider theme={theme}>{children}</NewsKitProvider>
@@ -49,13 +46,11 @@ export const renderWithThemeFactory: any = (
 
 export const renderWithTheme = renderWithThemeFactory(newskitLightTheme);
 
-export const renderToFragmentWithThemeFactory = (
-  defaultTheme: ThemeProviderProps['theme'],
-) => <T extends {}>(
-  Component: React.ComponentType<T>,
-  props?: T,
-  theme: ThemeProviderProps['theme'] = defaultTheme,
-  options?: RenderOptions,
+export const renderToFragmentWithThemeFactory: RenderToFragmentFactory = defaultTheme => (
+  Component,
+  props,
+  theme = defaultTheme,
+  options,
 ) =>
   renderWithTheme(
     Component as ComponentType<{}>,

@@ -8,7 +8,7 @@ import {docsThemeLight} from '../theme/doc-theme';
 
 export const renderWithTheme = renderWithThemeFactory(docsThemeLight);
 
-export const renderToFragmentWithTheme: any = renderToFragmentWithThemeFactory(
+export const renderToFragmentWithTheme = renderToFragmentWithThemeFactory(
   docsThemeLight,
 );
 
