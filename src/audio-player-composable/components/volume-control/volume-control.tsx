@@ -33,7 +33,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   const {
     volume,
     onChange,
-    layout = 'horizontal',
+    layout = 'horizontal-expanded',
     keyboardShortcuts,
     overrides,
     initialVolume,

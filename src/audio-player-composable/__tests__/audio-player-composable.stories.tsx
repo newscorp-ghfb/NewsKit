@@ -619,7 +619,7 @@ export const AudioSubComponents = () => (
                 Speed
               </Button>
             </AudioPlayerPlaybackSpeedControl>
-          </GridLayoutItem>{' '}
+          </GridLayoutItem>
           <GridLayoutItem>
             <StorybookSubHeading>Collapsed Volume Control</StorybookSubHeading>
             <AudioPlayerVolumeControl layout="collapsed" />
