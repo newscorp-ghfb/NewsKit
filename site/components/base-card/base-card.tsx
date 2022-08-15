@@ -4,7 +4,7 @@ import {BaseCardProps} from './types';
 import {StyledCard} from './styled';
 
 export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
-  ({title, description, children, href, overrides, ...rest}, ref) => {
+  ({title, description, href, overrides, ...rest}, ref) => {
     const cardOverrides = href
       ? {
           ...overrides,
