@@ -90,7 +90,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
     featureCard={{
       title: 'Need help?',
       description: 'Can’t find what you’re looking for?',
-      href: '/about/contact-us/',
+      href: 'about/contact-us/',
     }}
   >
     <ComponentPageCell>
