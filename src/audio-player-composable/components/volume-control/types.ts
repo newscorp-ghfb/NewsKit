@@ -1,4 +1,3 @@
-import {ButtonSize} from '../../../button';
 import {NewsKitIconProps} from '../../../icons';
 import {PopoverProps} from '../../../popover';
 import {SliderOverrideProps} from '../../../slider';
@@ -30,13 +29,13 @@ export interface AudioPlayerVolumeControlProps {
   layout?: 'collapsed' | 'vertical' | 'horizontal' | 'horizontal-expanded';
   overrides?: AudioPlayerVolumeControlOverridesProps;
   keyboardShortcuts?: {muteToggle: string | string[]};
-  muteButtonSize?: ButtonSize;
+  muteButtonSize?: 'small' | 'medium' | 'large';
 }
 export interface MuteButtonProps {
   volume: number;
   unMutedVolume: number;
   onChange: (volume: number) => void;
-  size: ButtonSize;
+  size: 'small' | 'medium' | 'large';
   muteKeyboardShortcuts?: string[] | string;
   overrides: {
     stylePreset: MQ<string>;

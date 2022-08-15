@@ -20,7 +20,6 @@ import {useReactKeys} from '../../../utils/hooks';
 import {deepMerge} from '../../../utils/deep-merge';
 import {mergeBreakpointObject} from '../../../utils/merge-breakpoint-object';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
-import {ButtonSize} from '../../../button/types';
 import {getTransitionDuration} from '../../../utils';
 import {getTransitionClassName} from '../../../utils/get-transition-class-name';
 import {Popover} from '../../../popover';
@@ -164,7 +163,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
             volume={volume}
             unMutedVolume={unMutedVolume}
             onChange={onChange}
-            size={muteButtonSize || ButtonSize.Medium}
+            size={muteButtonSize || 'medium'}
             muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
             overrides={buttonOverrides}
           />
