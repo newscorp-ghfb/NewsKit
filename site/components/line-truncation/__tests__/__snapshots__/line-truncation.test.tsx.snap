@@ -19,8 +19,6 @@ exports[`LineTruncation renders with line truncation attribute 1`] = `
 
 <span
     class="emotion-0"
-  >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed eleifend arcu. Etiam vehicula cursus tellus vitae eleifend. Vivamus eget tellus id tellus porttitor ornare pharetra eget ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mollis est ipsum.
-  </span>
+  />
 </DocumentFragment>
 `;
