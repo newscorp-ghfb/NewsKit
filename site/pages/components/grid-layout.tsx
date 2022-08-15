@@ -17,14 +17,6 @@ const BigRedBlock = styled.div`
   background: red;
 `;
 
-const StyledBlock = styled(Block)`
-  display: block;
-`;
-
-const StyledTextBlock = styled(TextBlock)`
-  display: block;
-`;
-
 const GridLayoutComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
@@ -41,19 +33,18 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
       },
       introduction: (
         <>
-          <StyledTextBlock
+          <TextBlock
             typographyPreset="editorialHeadline040"
             style={{color: 'red'}}
-            as="span"
           >
             This component is a beta, this documentation page is still a work in
             progress.
-          </StyledTextBlock>
-          <StyledBlock as="span" spaceStack="space030" />
-          <StyledTextBlock as="span">
+          </TextBlock>
+          <Block spaceStack="space030" />
+          <TextBlock>
             Used to construct a visual grid for responsive page layout. A Proxy
             for CSS grid.
-          </StyledTextBlock>
+          </TextBlock>
         </>
       ),
     }}
