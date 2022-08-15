@@ -124,8 +124,6 @@ exports[`AccessibilitySection renders section as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-7 svg {
@@ -219,8 +217,6 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 .emotion-12 {
   margin: 0;
   color: #2E2E2E;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-12 svg {
@@ -332,11 +328,11 @@ exports[`AccessibilitySection renders section as expected 1`] = `
           <div
             class="emotion-6"
           >
-            <span
+            <p
               class="emotion-7"
             >
               accessibility introduction text goes here
-            </span>
+            </p>
           </div>
         </div>
         <div
@@ -389,11 +385,11 @@ exports[`AccessibilitySection renders section as expected 1`] = `
                 <div
                   class="emotion-8"
                 >
-                  <span
+                  <p
                     class="emotion-12"
                   >
                     focus order description
-                  </span>
+                  </p>
                 </div>
                 <div>
                   Table Component with props:{
@@ -443,11 +439,11 @@ exports[`AccessibilitySection renders section as expected 1`] = `
                 <div
                   class="emotion-8"
                 >
-                  <span
+                  <p
                     class="emotion-12"
                   >
                     interaction description
-                  </span>
+                  </p>
                 </div>
                 <div>
                   Table Component with props:{
@@ -498,11 +494,11 @@ exports[`AccessibilitySection renders section as expected 1`] = `
                 <div
                   class="emotion-8"
                 >
-                  <span
+                  <p
                     class="emotion-12"
                   >
                     aria description
-                  </span>
+                  </p>
                 </div>
                 <div>
                   Table Component with props:{

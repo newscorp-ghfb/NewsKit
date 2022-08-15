@@ -124,8 +124,6 @@ exports[`InteractiveDemoSection renders section as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-7 svg {
@@ -203,11 +201,11 @@ exports[`InteractiveDemoSection renders section as expected 1`] = `
           <div
             class="emotion-6"
           >
-            <span
+            <p
               class="emotion-7"
             >
               interactive demo introduction text goes here
-            </span>
+            </p>
           </div>
         </div>
         <div
