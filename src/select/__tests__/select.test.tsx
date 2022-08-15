@@ -1,6 +1,5 @@
 import React, {createRef} from 'react';
-import {cleanup, fireEvent, screen} from '@testing-library/react';
-import {act} from 'react-dom/test-utils';
+import {cleanup, fireEvent, screen, act} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {Select, SelectProps, ButtonSelectSize, SelectOption} from '..';
 import {

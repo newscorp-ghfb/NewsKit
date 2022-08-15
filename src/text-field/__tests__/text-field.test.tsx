@@ -1,5 +1,5 @@
 import React, {createRef} from 'react';
-import {fireEvent} from '@testing-library/react';
+import {act, fireEvent} from '@testing-library/react';
 import {TextField, TextFieldProps, TextFieldSize} from '..';
 import {
   renderToFragmentWithTheme,
@@ -75,7 +75,7 @@ describe('TextField', () => {
     const fragment = renderToFragmentWithTheme(renderInvalidLabel, props);
     expect(fragment).toMatchSnapshot();
   });
-  test('focus can be triggered with ref', () => {
+  test('focus can be triggered with ref', async () => {
     const inputRef = createRef<HTMLInputElement>();
 
     const props = {
@@ -84,10 +84,11 @@ describe('TextField', () => {
     };
 
     renderWithTheme(TextField, props);
-
-    if (inputRef && inputRef.current) {
-      inputRef.current.focus();
-    }
+    await act(() => {
+      if (inputRef && inputRef.current) {
+        inputRef.current.focus();
+      }
+    });
     expect(inputRef.current).toHaveFocus();
   });
 

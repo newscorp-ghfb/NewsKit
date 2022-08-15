@@ -51,7 +51,7 @@ export const renderToFragmentWithThemeFactory = (
   defaultTheme: ThemeProviderProps['theme'],
 ) => <T extends {}>(
   Component: React.ComponentType<T>,
-  props?: T & {children?: React.ReactNode},
+  props?: T,
   theme: ThemeProviderProps['theme'] = defaultTheme,
   options?: RenderOptions,
 ) =>

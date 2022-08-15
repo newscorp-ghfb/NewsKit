@@ -83,7 +83,7 @@ export const sharedDialogTests = (
     expect(fragment).toMatchSnapshot();
   });
 
-  test('invokes onDismiss callback when Esc key pressed', () => {
+  test('invokes onDismiss callback when Esc key pressed', async () => {
     const mockCallBack = jest.fn();
     renderWithTheme(Dialog, {
       open: true,
@@ -92,7 +92,7 @@ export const sharedDialogTests = (
       children: body,
     });
 
-    userEvent.keyboard('{esc}');
+    await userEvent.keyboard('{Escape}');
 
     expect(mockCallBack).toHaveBeenCalled();
   });

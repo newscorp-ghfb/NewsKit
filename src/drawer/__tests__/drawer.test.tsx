@@ -263,7 +263,7 @@ describe('Drawer focus management', () => {
     );
     let toggleButton = getByTestId('toggle');
     toggleButton.focus();
-    fireEvent.click(toggleButton);
+    await userEvent.click(toggleButton);
     await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
@@ -271,13 +271,13 @@ describe('Drawer focus management', () => {
     });
 
     // move to close button
-    userEvent.tab();
+    await userEvent.tab();
 
     // check if close button is focused
     const closeButton = getByLabelText('close');
     expect(closeButton).toHaveFocus();
 
-    fireEvent.click(closeButton);
+    await userEvent.click(closeButton);
 
     await waitFor(async () => {
       toggleButton = await findByTestId('toggle');
@@ -324,7 +324,7 @@ describe('Drawer focus management', () => {
     );
     const toggleButton = getByTestId('toggle');
     toggleButton.focus();
-    fireEvent.click(toggleButton);
+    await userEvent.click(toggleButton);
     await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
@@ -332,13 +332,13 @@ describe('Drawer focus management', () => {
     });
 
     // move to close button
-    userEvent.tab();
+    await userEvent.tab();
 
     // check if close button is focused
     const closeButton = getByLabelText('close');
     expect(closeButton).toHaveFocus();
 
-    fireEvent.click(closeButton);
+    await userEvent.click(closeButton);
 
     await waitFor(async () => {
       const restoreFocusButton = await findByTestId('restoreFocusTo');
@@ -434,7 +434,7 @@ describe('Drawer focus management when focus trap is disabled', () => {
     );
     let toggleButton = getByTestId('toggle');
     toggleButton.focus();
-    fireEvent.click(toggleButton);
+    await userEvent.click(toggleButton);
     await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
@@ -442,13 +442,13 @@ describe('Drawer focus management when focus trap is disabled', () => {
     });
 
     // move to close button
-    userEvent.tab();
+    await userEvent.tab();
 
     // check if close button is focused
     const closeButton = getByLabelText('close');
     expect(closeButton).toHaveFocus();
 
-    fireEvent.click(closeButton);
+    await userEvent.click(closeButton);
 
     await waitFor(async () => {
       toggleButton = await findByTestId('toggle');
@@ -496,7 +496,7 @@ describe('Drawer focus management when focus trap is disabled', () => {
     );
     const toggleButton = getByTestId('toggle');
     toggleButton.focus();
-    fireEvent.click(toggleButton);
+    await userEvent.click(toggleButton);
     await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
@@ -504,13 +504,13 @@ describe('Drawer focus management when focus trap is disabled', () => {
     });
 
     // move to close button
-    userEvent.tab();
+    await userEvent.tab();
 
     // check if close button is focused
     const closeButton = getByLabelText('close');
     expect(closeButton).toHaveFocus();
 
-    fireEvent.click(closeButton);
+    await userEvent.click(closeButton);
 
     await waitFor(async () => {
       const restoreFocusButton = await findByTestId('restoreFocusTo');

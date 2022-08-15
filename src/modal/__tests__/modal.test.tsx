@@ -172,7 +172,7 @@ describe('Modal focus management', () => {
 
   test('focus on first interactive element', async () => {
     const {findByTestId, getByTestId} = renderWithThemeInBody(ModalPage);
-    getByTestId('toggle').click();
+    await userEvent.click(getByTestId('toggle'));
 
     await waitFor(async () => {
       const element = await findByTestId('interactive-element');
@@ -192,7 +192,7 @@ describe('Modal focus management', () => {
         </button>
       ),
     });
-    getByTestId('toggle').click();
+    await userEvent.click(getByTestId('toggle'));
 
     await waitFor(async () => {
       const element = await findByTestId('another-interactive-element');
@@ -206,7 +206,7 @@ describe('Modal focus management', () => {
     );
     let toggleButton = getByTestId('toggle');
     toggleButton.focus();
-    fireEvent.click(toggleButton);
+    await userEvent.click(toggleButton);
     await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
@@ -214,13 +214,13 @@ describe('Modal focus management', () => {
     });
 
     // move to close button
-    userEvent.tab();
+    await userEvent.tab();
 
     // check if close button is focused
     const closeButton = getByLabelText('close');
     expect(closeButton).toHaveFocus();
 
-    fireEvent.click(closeButton);
+    await userEvent.click(closeButton);
 
     await waitFor(async () => {
       toggleButton = await findByTestId('toggle');
@@ -267,7 +267,7 @@ describe('Modal focus management', () => {
     );
     const toggleButton = getByTestId('toggle');
     toggleButton.focus();
-    fireEvent.click(toggleButton);
+    await userEvent.click(toggleButton);
     await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
@@ -275,13 +275,13 @@ describe('Modal focus management', () => {
     });
 
     // move to close button
-    userEvent.tab();
+    await userEvent.tab();
 
     // check if close button is focused
     const closeButton = getByLabelText('close');
     expect(closeButton).toHaveFocus();
 
-    fireEvent.click(closeButton);
+    await userEvent.click(closeButton);
 
     await waitFor(async () => {
       const restoreFocusButton = await findByTestId('restoreFocusTo');
@@ -365,7 +365,7 @@ describe('Modal focus management when focus trap is disabled', () => {
     );
     let toggleButton = getByTestId('toggle');
     toggleButton.focus();
-    fireEvent.click(toggleButton);
+    await userEvent.click(toggleButton);
     await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
@@ -373,13 +373,13 @@ describe('Modal focus management when focus trap is disabled', () => {
     });
 
     // move to close button
-    userEvent.tab();
+    await userEvent.tab();
 
     // check if close button is focused
     const closeButton = getByLabelText('close');
     expect(closeButton).toHaveFocus();
 
-    fireEvent.click(closeButton);
+    await userEvent.click(closeButton);
 
     await waitFor(async () => {
       toggleButton = await findByTestId('toggle');
@@ -427,7 +427,7 @@ describe('Modal focus management when focus trap is disabled', () => {
     );
     const toggleButton = getByTestId('toggle');
     toggleButton.focus();
-    fireEvent.click(toggleButton);
+    await userEvent.click(toggleButton);
     await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
@@ -435,13 +435,13 @@ describe('Modal focus management when focus trap is disabled', () => {
     });
 
     // move to close button
-    userEvent.tab();
+    await userEvent.tab();
 
     // check if close button is focused
     const closeButton = getByLabelText('close');
     expect(closeButton).toHaveFocus();
 
-    fireEvent.click(closeButton);
+    await userEvent.click(closeButton);
 
     await waitFor(async () => {
       const restoreFocusButton = await findByTestId('restoreFocusTo');
