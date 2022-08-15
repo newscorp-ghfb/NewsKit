@@ -247,7 +247,7 @@ describe('AccordionGroup', () => {
 
     const buttons = getAllByTestId('accordion-control');
 
-    buttons.forEach((btn: any) => {
+    buttons.forEach(btn => {
       expect(btn).toHaveAttribute('aria-expanded', 'false');
     });
   });
@@ -370,7 +370,7 @@ describe('AccordionGroup', () => {
       expanded: 'all',
     });
 
-    getAllByTestId('accordion-control').forEach((btn: any) => {
+    getAllByTestId('accordion-control').forEach(btn => {
       expect(btn).toHaveAttribute('aria-expanded', 'true');
     });
   });
