@@ -77,7 +77,7 @@ const AudioPropsAndVolumeControlHorizontalCollapsed: AudioPlayerComposableProps 
   initialVolume: 0.2,
   children: (
     <>
-      <AudioPlayerVolumeControl layout="horizontalCollapsed" />
+      <AudioPlayerVolumeControl layout="collapsed" />
     </>
   ),
 };
