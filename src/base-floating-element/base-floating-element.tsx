@@ -167,7 +167,7 @@ export const BaseFloatingElement = React.forwardRef<
     // also passed to the content prop (if this is a function) to allow other elements
     // to trigger these handlers (e.g. the Popover's close button triggers the onClick
     // handler).
-    const referenceProps = (getReferenceProps() as unknown) as ReferenceProps;
+    const referenceProps = getReferenceProps() as ReferenceProps;
 
     const baseTransitionClassname = `nk-${path}`;
 

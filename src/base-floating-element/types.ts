@@ -22,7 +22,7 @@ export type BuildAriaAttributesFn = (args: {
   };
 }) => AriaAttributes;
 
-export interface ReferenceProps {
+export interface ReferenceProps extends Record<string, unknown> {
   onClick: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
   onKeyDown: (e: React.KeyboardEvent<HTMLInputElement>) => void;
   onKeyUp: (e: React.KeyboardEvent<HTMLInputElement>) => void;
