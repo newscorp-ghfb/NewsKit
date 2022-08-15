@@ -711,14 +711,37 @@ exports[`Table renders number values automatically if undefined 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-14 {
+.emotion-10 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-10::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-10::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-16 {
   padding: 16px 16px 16px 0;
   min-width: 100px;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-25 {
+.emotion-29 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
@@ -773,7 +796,11 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  1
+                  <span
+                    class="emotion-10"
+                  >
+                    1
+                  </span>
                 </div>
               </div>
             </div>
@@ -791,13 +818,17 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  1
+                  <span
+                    class="emotion-10"
+                  >
+                    1
+                  </span>
                 </div>
               </div>
             </div>
           </td>
           <td
-            class="emotion-14"
+            class="emotion-16"
           >
             one
           </td>
@@ -818,7 +849,11 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  2
+                  <span
+                    class="emotion-10"
+                  >
+                    2
+                  </span>
                 </div>
               </div>
             </div>
@@ -836,19 +871,23 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  2
+                  <span
+                    class="emotion-10"
+                  >
+                    2
+                  </span>
                 </div>
               </div>
             </div>
           </td>
           <td
-            class="emotion-14"
+            class="emotion-16"
           >
             two
           </td>
         </tr>
         <tr
-          class="emotion-25"
+          class="emotion-29"
         >
           <td
             class="emotion-6"
@@ -863,7 +902,11 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  3
+                  <span
+                    class="emotion-10"
+                  >
+                    3
+                  </span>
                 </div>
               </div>
             </div>
@@ -881,13 +924,17 @@ exports[`Table renders number values automatically if undefined 1`] = `
                 <div
                   class="emotion-9"
                 >
-                  3
+                  <span
+                    class="emotion-10"
+                  >
+                    3
+                  </span>
                 </div>
               </div>
             </div>
           </td>
           <td
-            class="emotion-14"
+            class="emotion-16"
           >
             three
           </td>

@@ -109,12 +109,11 @@ export const renderCols = (
       }
 
       case 'number': {
-        const v = typeof cellValue === 'undefined' ? rowIndex + 1 : cellValue;
-        cellContent = (
-          <CircleFlag>
-            <>{v}</>
-          </CircleFlag>
-        );
+        const v =
+          typeof cellValue === 'undefined'
+            ? rowIndex + 1
+            : (cellValue as number);
+        cellContent = <CircleFlag>{v}</CircleFlag>;
         break;
       }
 
