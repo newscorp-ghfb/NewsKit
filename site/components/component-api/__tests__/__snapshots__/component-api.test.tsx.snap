@@ -581,8 +581,6 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 .emotion-5 {
   margin: 0;
   color: #2E2E2E;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-5 svg {
@@ -1259,11 +1257,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
       <div
         class="emotion-4"
       >
-        <span
+        <p
           class="emotion-5"
         >
           Component Props
-        </span>
+        </p>
       </div>
       <div
         class="emotion-6"
@@ -1392,11 +1390,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
       <div
         class="emotion-4"
       >
-        <span
+        <p
           class="emotion-5"
         >
           Component Props
-        </span>
+        </p>
       </div>
       <div
         class="emotion-33"
