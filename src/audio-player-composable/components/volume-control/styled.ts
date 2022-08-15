@@ -15,59 +15,50 @@ export const StyledVolumeSliderContainer = styled.div<
   }
 >`
   ${({layout}) =>
-    layout === 'horizontalExpandable' &&
+    layout === 'horizontal' &&
     getTransitionPreset('audioPlayerVolumeControl', '', 'nk-vc')};
 
   ${({layout, visible}) =>
-    layout === 'horizontalExpandable' && !visible ? 'overflow:hidden;' : ''};
+    layout === 'horizontal' && !visible ? 'overflow:hidden;' : ''};
 
-  ${({open, layout}) =>
+  ${({open}) =>
     getResponsiveSize(
-      value => (!open || layout === 'vertical' ? {width: 0} : {width: value}),
+      value => (!open ? {width: 0} : {width: value}),
       `audioPlayerVolumeControl.slider.track`,
       `slider.track`,
       'length',
     )}
-  ${({layout}) =>
-    layout === 'horizontal' &&
-    getResponsiveSpace(
-      'width',
-      'audioPlayerVolumeControl.slider.track.length',
-      '',
-      'width',
-    )};
-  ${({layout}) =>
-    layout === 'vertical' &&
-    getResponsiveSpace(
-      'height',
-      'audioPlayerVolumeControl.slider.track.length',
-      '',
-      'height',
-    )};
 
   ${({layout}) =>
-    layout === 'horizontalCollapsed' &&
-    `display: none;
-    `};
+    layout === 'horizontalExpanded' &&
+    getResponsiveSpace(
+      'width',
+      'audioPlayerVolumeControl.slider.track.length',
+      '',
+      'width',
+    )};
+`;
+export const StyledVolumeSliderPopupContainer = styled.div<
+  Pick<AudioPlayerVolumeControlProps, 'overrides'>
+>`
+  ${getResponsiveSpace(
+    'height',
+    'audioPlayerVolumeControl.slider.track.length',
+    '',
+    'height',
+  )};
 `;
 
 export const StyledGridLayout = styled(GridLayout)<
-  Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides' | 'collapsed'>
+  Pick<AudioPlayerVolumeControlProps, 'overrides'>
 >`
   ${getStylePreset(`audioPlayerVolumeControl`, '')};
-  ${({layout}) =>
-    layout === 'vertical' &&
-    `
-    position: relative;
-    
-  `};
-  ${({layout}) =>
-    getResponsiveSpace(
-      layout === 'vertical' ? 'rowGap' : 'columnGap',
-      `audioPlayerVolumeControl.spaceBetween`,
-      '',
-      'spaceBetween',
-    )};
+  ${getResponsiveSpace(
+    'columnGap',
+    `audioPlayerVolumeControl.spaceBetween`,
+    '',
+    'spaceBetween',
+  )};
 `;
 
 export const VolumeControlContainer = styled.div<

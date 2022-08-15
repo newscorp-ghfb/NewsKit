@@ -1,5 +1,6 @@
 import {ButtonSize} from '../../../button';
 import {NewsKitIconProps} from '../../../icons';
+import {PopoverProps} from '../../../popover';
 import {SliderOverrideProps} from '../../../slider';
 import {TransitionToken} from '../../../theme';
 import {MQ} from '../../../utils';
@@ -22,15 +23,11 @@ export interface AudioPlayerVolumeControlOverridesProps {
     stylePreset?: MQ<string>;
     muteButtonIcon: Override<MuteButtonIconProps>;
   };
+  popover?: PopoverProps['overrides'];
 }
 
 export interface AudioPlayerVolumeControlProps {
-  layout?:
-    | 'horizontal'
-    | 'vertical'
-    | 'horizontalCollapsed'
-    | 'horizontalExpandable';
-  collapsed?: boolean;
+  layout?: 'collapsed' | 'vertical' | 'horizontal' | 'horizontalExpanded';
   overrides?: AudioPlayerVolumeControlOverridesProps;
   keyboardShortcuts?: {muteToggle: string | string[]};
   muteButtonSize?: ButtonSize;
