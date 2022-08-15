@@ -550,7 +550,7 @@ export const AudioSubComponents = () => (
           rowGap="16px"
           columnGap="20px"
         >
-          {/* <GridLayoutItem>
+          <GridLayoutItem>
             <StorybookSubHeading>currentTime</StorybookSubHeading>
             <AudioPlayerTimeDisplay
               format={({currentTime}) => calculateTime(currentTime)}
@@ -619,29 +619,29 @@ export const AudioSubComponents = () => (
                 Speed
               </Button>
             </AudioPlayerPlaybackSpeedControl>
-          </GridLayoutItem> <GridLayoutItem>
+          </GridLayoutItem>{' '}
+          <GridLayoutItem>
             <StorybookSubHeading>Collapsed Volume Control</StorybookSubHeading>
             <AudioPlayerVolumeControl layout="collapsed" />
-          </GridLayoutItem> 
-          {<GridLayoutItem>
+          </GridLayoutItem>
+          <GridLayoutItem>
             <StorybookSubHeading>Expanded Volume Control</StorybookSubHeading>
-            <AudioPlayerVolumeControl layout="horizontalExpanded" />
+            <AudioPlayerVolumeControl layout="horizontal-expanded" />
           </GridLayoutItem>
           <GridLayoutItem>
             <StorybookSubHeading>Volume Control</StorybookSubHeading>
             <AudioPlayerVolumeControl layout="horizontal" />
           </GridLayoutItem>
-           */}
           <GridLayoutItem>
             <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
             <VerticalContainer>
               <AudioPlayerVolumeControl layout="vertical" />
             </VerticalContainer>
           </GridLayoutItem>
-          {/* <GridLayoutItem column="1/-1">
+          <GridLayoutItem column="1/-1">
             <StorybookSubHeading>SeekBar</StorybookSubHeading>
             <AudioPlayerSeekBar />
-          </GridLayoutItem> */}
+          </GridLayoutItem>
         </GridLayout>
       </AudioPlayerComposable>
     </StyledPage>
@@ -1250,58 +1250,17 @@ export const AudioPlayerVolumeControlLayout = () => (
       ariaLandmark="audio player volume control horizontal"
     >
       <AudioPlayerVolumeControl layout="horizontal" />
-    </AudioPlayerComposable>
-    <br />
-    <StorybookSubHeading>
-      Volume control horizontal-expandable
-    </StorybookSubHeading>
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player volume control horizontal expanded"
-    >
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl />
-        </GridLayoutItem>
-      </GridLayout>
-    </AudioPlayerComposable>
-    <br />
-    <StorybookSubHeading>
-      Volume control horizontal-collapsed
-    </StorybookSubHeading>
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player volume control horizontal collapsed"
-    >
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl layout="collapsed" />
-        </GridLayoutItem>
-      </GridLayout>
-    </AudioPlayerComposable>
-    <br />
-    <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player volume control vertical"
-    >
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl layout="vertical" />
-        </GridLayoutItem>
-      </GridLayout>
+
+      <StorybookSubHeading>
+        Volume control horizontal-expanded
+      </StorybookSubHeading>
+      <AudioPlayerVolumeControl layout="horizontal-expanded" />
+
+      <StorybookSubHeading>Volume control Collapsed</StorybookSubHeading>
+      <AudioPlayerVolumeControl layout="collapsed" />
+
+      <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
+      <AudioPlayerVolumeControl layout="vertical" />
     </AudioPlayerComposable>
   </StyledPage>
 );

@@ -30,7 +30,7 @@ export const StyledVolumeSliderContainer = styled.div<
     )}
 
   ${({layout}) =>
-    layout === 'horizontalExpanded' &&
+    layout === 'horizontal-expanded' &&
     getResponsiveSpace(
       'width',
       'audioPlayerVolumeControl.slider.track.length',

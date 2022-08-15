@@ -3,7 +3,7 @@ import {CSSTransition} from 'react-transition-group';
 import {ScreenReaderOnly} from '../../../screen-reader-only';
 import {Slider} from '../../../slider';
 import {withOwnTheme} from '../../../utils/with-own-theme';
-import {useInitialVolume} from './utils';
+import {getPopoverOverrides, useInitialVolume} from './utils';
 import {useAudioPlayerContext} from '../../context';
 import defaults from './defaults';
 import {MuteButton} from './mute-button';
@@ -99,7 +99,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   );
 
   const useSliderContainer =
-    layout === 'horizontal' || layout === 'horizontalExpanded';
+    layout === 'horizontal' || layout === 'horizontal-expanded';
 
   // used for collapsed and vertical
   const gridSingleAreas = 'muteButton';
@@ -130,6 +130,8 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
     />
   );
 
+  const popoverOverrides = getPopoverOverrides(theme, overrides);
+
   return (
     <StyledGridLayout
       ref={ref}
@@ -156,7 +158,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
           header={undefined}
           closePosition="none"
           disableFocusManagement
-          overrides={overrides?.popover}
+          overrides={popoverOverrides}
         >
           <MuteButton
             volume={volume}
