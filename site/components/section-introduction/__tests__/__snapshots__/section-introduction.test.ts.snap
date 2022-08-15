@@ -175,8 +175,6 @@ exports[`SectionIntroduction renders with all props 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-7 svg {
@@ -222,11 +220,11 @@ exports[`SectionIntroduction renders with all props 1`] = `
     <div
       class="emotion-6"
     >
-      <span
+      <p
         class="emotion-7"
       >
         Section Introduction
-      </span>
+      </p>
     </div>
   </div>
   .emotion-0 {
