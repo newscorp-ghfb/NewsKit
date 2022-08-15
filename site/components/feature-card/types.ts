@@ -18,10 +18,11 @@ export interface FeatureCardProps
   };
 }
 
-export type OptionalLinkWrapperProps = Pick<CardProps, 'href'> & {
-  children?: React.ReactNode;
-};
-export type OptionalButtonLinkWrapperProps = Pick<CardProps, 'href'> & {
-  children?: React.ReactNode;
+export type OptionalLinkWrapperProps = Pick<CardProps, 'href' | 'children'>;
+
+export type OptionalButtonLinkWrapperProps = Pick<
+  CardProps,
+  'href' | 'children'
+> & {
   buttonHref?: string;
 };

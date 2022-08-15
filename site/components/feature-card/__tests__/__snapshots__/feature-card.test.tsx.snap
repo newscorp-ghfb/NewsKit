@@ -223,8 +223,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 
 .emotion-10 {
   margin: 0;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-11 {
@@ -439,11 +437,11 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
           <div
             class="emotion-9"
           >
-            <span
+            <p
               class="emotion-10"
             >
               I am interactive
-            </span>
+            </p>
           </div>
           <div
             class="emotion-11"
@@ -770,8 +768,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 
 .emotion-11 {
   margin: 0;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-12 {
@@ -992,7 +988,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
             <div
               class="emotion-10"
             >
-              <span
+              <p
                 class="emotion-11"
               >
                 <span
@@ -1000,7 +996,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
                 >
                   I am interactive
                 </span>
-              </span>
+              </p>
             </div>
             <a
               class="emotion-13"
@@ -1326,8 +1322,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 .emotion-12 {
   margin: 0;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-13 {
@@ -1662,11 +1656,11 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
               <div
                 class="emotion-11"
               >
-                <span
+                <p
                   class="emotion-12"
                 >
                   I am interactive
-                </span>
+                </p>
               </div>
               <div
                 class="emotion-13"
@@ -1753,7 +1747,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
                 <div
                   class="emotion-11"
                 >
-                  <span
+                  <p
                     class="emotion-12"
                   >
                     <span
@@ -1761,7 +1755,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
                     >
                       I am interactive
                     </span>
-                  </span>
+                  </p>
                 </div>
                 <button
                   class="emotion-14"
@@ -2080,8 +2074,6 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 .emotion-12 {
   margin: 0;
-  display: inline-block;
-  display: block;
 }
 
 @media screen {
@@ -2278,11 +2270,11 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
               <div
                 class="emotion-11"
               >
-                <span
+                <p
                   class="emotion-12"
                 >
                   I am interactive
-                </span>
+                </p>
               </div>
             </div>
           </div>
@@ -2326,7 +2318,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
                 <div
                   class="emotion-11"
                 >
-                  <span
+                  <p
                     class="emotion-12"
                   >
                     <span
@@ -2334,7 +2326,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
                     >
                       I am interactive
                     </span>
-                  </span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -2573,8 +2565,6 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 
 .emotion-11 {
   margin: 0;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-12 {
@@ -2754,11 +2744,11 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
             <div
               class="emotion-10"
             >
-              <span
+              <p
                 class="emotion-11"
               >
                 I am interactive
-              </span>
+              </p>
             </div>
             <div
               class="emotion-12"
@@ -3038,8 +3028,6 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 
 .emotion-11 {
   margin: 0;
-  display: inline-block;
-  display: block;
 }
 
 <a
@@ -3081,11 +3069,11 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
             <div
               class="emotion-10"
             >
-              <span
+              <p
                 class="emotion-11"
               >
                 I am interactive
-              </span>
+              </p>
             </div>
           </div>
         </div>
@@ -3318,8 +3306,6 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 .emotion-10 {
   margin: 0;
-  display: inline-block;
-  display: block;
 }
 
 <div
@@ -3357,11 +3343,11 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
           <div
             class="emotion-9"
           >
-            <span
+            <p
               class="emotion-10"
             >
               I am non-interactive
-            </span>
+            </p>
           </div>
         </div>
       </div>
@@ -3636,8 +3622,6 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 .emotion-11 {
   margin: 0;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-12 {
@@ -3685,7 +3669,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
             <div
               class="emotion-10"
             >
-              <span
+              <p
                 class="emotion-11"
               >
                 <span
@@ -3693,7 +3677,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
                 >
                   I am non-interactive
                 </span>
-              </span>
+              </p>
             </div>
           </div>
         </div>
@@ -3885,8 +3869,6 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 
 .emotion-9 {
   margin: 0;
-  display: inline-block;
-  display: block;
 }
 
 <div
@@ -3921,11 +3903,11 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
         <div
           class="emotion-8"
         >
-          <span
+          <p
             class="emotion-9"
           >
             I am interactive
-          </span>
+          </p>
         </div>
       </div>
     </div>
@@ -4136,8 +4118,6 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-12::before {
@@ -4346,11 +4326,11 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
               <div
                 class="emotion-11"
               >
-                <span
+                <p
                   class="emotion-12"
                 >
                   I am interactive
-                </span>
+                </p>
               </div>
             </div>
           </div>
@@ -4394,7 +4374,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
                 <div
                   class="emotion-11"
                 >
-                  <span
+                  <p
                     class="emotion-12"
                   >
                     <span
@@ -4402,7 +4382,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
                     >
                       I am interactive
                     </span>
-                  </span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -4596,8 +4576,6 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 
 .emotion-9 {
   margin: 0;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-10 {
@@ -4809,11 +4787,11 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
         <div
           class="emotion-8"
         >
-          <span
+          <p
             class="emotion-9"
           >
             I am interactive
-          </span>
+          </p>
         </div>
         <div
           class="emotion-10"
