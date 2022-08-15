@@ -80,6 +80,6 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
     onChange: eventHandlerOnChange,
     state,
     ref: inputRef,
-    error: errorText as string,
+    error: errorText as string | undefined,
   });
 };
