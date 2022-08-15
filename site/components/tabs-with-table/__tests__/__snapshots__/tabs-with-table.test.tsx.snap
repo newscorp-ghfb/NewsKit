@@ -147,8 +147,6 @@ exports[`TabsWithTable renders with default data 1`] = `
 .emotion-5 {
   margin: 0;
   color: #2E2E2E;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-5 svg {
@@ -707,11 +705,11 @@ exports[`TabsWithTable renders with default data 1`] = `
     <div
       class="emotion-1"
     >
-      <span
+      <p
         class="emotion-5"
       >
         Section summary
-      </span>
+      </p>
       <div
         class="emotion-6"
       />
@@ -835,11 +833,11 @@ exports[`TabsWithTable renders with default data 1`] = `
             <div
               class="emotion-1"
             >
-              <span
+              <p
                 class="emotion-5"
               >
                  Tab1 description
-              </span>
+              </p>
               <div
                 class="emotion-6"
               />
@@ -917,11 +915,11 @@ exports[`TabsWithTable renders with default data 1`] = `
             <div
               class="emotion-1"
             >
-              <span
+              <p
                 class="emotion-5"
               >
                  Tab2 description
-              </span>
+              </p>
               <div
                 class="emotion-6"
               />
