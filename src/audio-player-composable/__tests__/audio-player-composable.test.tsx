@@ -72,7 +72,7 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   ),
 };
 
-const AudioPropsAndVolumeControlHorizontalCollapsed: AudioPlayerComposableProps = {
+const AudioPropsAndVolumeControlCollapsed: AudioPlayerComposableProps = {
   src: '/audio_file_1.mp3',
   initialVolume: 0.2,
   children: (
@@ -1051,7 +1051,7 @@ describe('Audio Player Composable', () => {
 
       const {queryByTestId, getByTestId, asFragment} = renderWithTheme(
         AudioPlayerComposable,
-        AudioPropsAndVolumeControlHorizontalCollapsed,
+        AudioPropsAndVolumeControlCollapsed,
       );
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
@@ -1064,7 +1064,7 @@ describe('Audio Player Composable', () => {
       expect(audioElement.volume).toBe(0.2);
       expect(asFragment()).toMatchSnapshot();
     });
-    it('renders horizontal expandable by default', () => {
+    it('renders horizontal expanded by default', () => {
       const {asFragment} = renderWithTheme(
         AudioPlayerComposable,
         AudioPropsAndVolumeControlWithInitialVolumeDefault,
@@ -1088,7 +1088,7 @@ describe('Audio Player Composable', () => {
     it('should hover on volume control', () => {
       const {asFragment, getByTestId} = renderWithTheme(
         AudioPlayerComposable,
-        AudioPropsAndVolumeControlWithInitialVolumeDefault,
+        AudioPropsAndVolumeControlWithInitialVolumeHorizontal,
       );
       const muteButton = getByTestId('mute-button');
 
@@ -1101,7 +1101,7 @@ describe('Audio Player Composable', () => {
     it('should on Focus & onBlur on volume control', () => {
       const {asFragment, getByTestId} = renderWithTheme(
         AudioPlayerComposable,
-        AudioPropsAndVolumeControlWithInitialVolumeDefault,
+        AudioPropsAndVolumeControlWithInitialVolumeHorizontal,
       );
       const muteButton = getByTestId('mute-button');
 
