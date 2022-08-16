@@ -17,7 +17,7 @@ export type AreasMap = {
   [componentName: string]: React.FC<GridLayoutItemProps>;
 };
 
-type GridLayoutRenderProps = (areas: AreasMap) => React.ReactNode;
+export type GridLayoutRenderProps = (areas: AreasMap) => React.ReactNode;
 
 export type GridLayoutProps = {
   rowGap?: MQ<string>;
