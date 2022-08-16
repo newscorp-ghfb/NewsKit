@@ -51,6 +51,13 @@ export const BaseFloatingElement = React.forwardRef<
       defaultValue: false,
     });
 
+    console.log({open});
+
+    const onClose = React.useCallback(() => {
+      console.log('onClose internaly');
+      setOpen(false);
+    }, [setOpen]);
+
     const theme = useTheme();
     const distance = getOverridePxValue(
       path,
@@ -86,6 +93,7 @@ export const BaseFloatingElement = React.forwardRef<
       placement,
       open,
       onOpenChange: isOpen => {
+        console.log('onOpenChange', isOpen);
         // Clicking on the target icon button when controlled doesn't call this.
         if (!isOpen && onDismiss) {
           onDismiss();
@@ -227,7 +235,7 @@ export const BaseFloatingElement = React.forwardRef<
                 ref={panelRef}
               >
                 {typeof content === 'function'
-                  ? content(referenceProps)
+                  ? content({onClose, ...referenceProps})
                   : content}
               </StyledPanel>
               {!hidePointer && (

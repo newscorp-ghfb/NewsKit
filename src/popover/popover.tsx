@@ -41,7 +41,6 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
       header,
       closePosition = 'right',
       overrides = {},
-      handleCloseButtonClick,
       enableDismiss = false,
       ...props
     },
@@ -82,7 +81,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
       <BaseFloatingElement
         ref={ref}
         path="popover"
-        content={({onClick}) => (
+        content={({onClick, onClose}) => (
           <StyledPopoverInnerPanel closePosition={closePosition}>
             {header !== undefined && (
               <StyledPopoverHeader
@@ -104,9 +103,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
                 <IconButton
                   onClick={(e: React.MouseEvent<HTMLElement>) => {
                     onClick(e);
-                    if (handleCloseButtonClick) {
-                      handleCloseButtonClick();
-                    }
+                    onClose();
                   }}
                   data-testid="close-button"
                   aria-label="close"

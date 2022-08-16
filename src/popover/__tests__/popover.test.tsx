@@ -408,13 +408,13 @@ describe('Popover', () => {
       fireEvent.click(button);
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('should be able to use handleCloseButtonClick to update parent state', () => {
+    test('should be able to use onDismiss to update parent state', () => {
       const Component = () => {
         const [open, setOpen] = React.useState(true);
         return (
           <>
             <Popover
-              handleCloseButtonClick={() => setOpen(false)}
+              onDismiss={() => setOpen(false)}
               open={open}
               content="hello"
             >
@@ -818,13 +818,12 @@ describe('Popover', () => {
       await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should close popover and call onDismiss and handleCloseButtonClick when close button clicked', () => {
+    test('should close popover and call onDismiss when close button clicked', () => {
       const onDismiss = jest.fn();
-      const handleCloseButtonClick = jest.fn();
+
       const {getByRole, queryByRole, getByTestId} = renderWithTheme(Popover, {
         ...defaultProps,
         onDismiss,
-        handleCloseButtonClick,
       });
       fireEvent.click(getByRole('button'));
       expect(queryByRole('dialog')).toBeInTheDocument();
@@ -832,7 +831,6 @@ describe('Popover', () => {
       fireEvent.click(closeBtn);
       expect(queryByRole('dialog')).not.toBeInTheDocument();
       expect(onDismiss).toHaveBeenCalled();
-      expect(handleCloseButtonClick).toHaveBeenCalled();
     });
   });
 

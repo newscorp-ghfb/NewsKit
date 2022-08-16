@@ -366,6 +366,44 @@ export const StoryPopoverBehaviours = () => (
 );
 StoryPopoverBehaviours.storyName = 'popover-behaviours';
 
+export const StoryControlledPopover = () => {
+  const [open, setOpen] = useState(false);
+  const onDismiss = React.useCallback(() => {
+    console.log('onDismiss is called');
+    setOpen(false);
+  }, [setOpen]);
+
+  // //
+  // const [open2, setOpen2] = useState(false);
+  // const onDismiss2 = React.useCallback(() => {
+  //   console.log('onDismiss2 is called');
+  //   setOpen2(false);
+  // }, [setOpen2]);
+  return (
+    <div>
+      <Popover
+        header="Popover header"
+        content="Popover content"
+        open={open}
+        onDismiss={onDismiss}
+        enableDismiss
+      >
+        <Button onClick={() => setOpen(!open)}>btn 1</Button>
+      </Popover>
+      {/* <hr />
+      <Popover
+        header="Popover header 2"
+        content="Popover content 2"
+        open={open2}
+        onDismiss={onDismiss2}
+        enableDismiss
+      >
+        <Button onClick={() => setOpen2(true)}>btn 2</Button>
+      </Popover> */}
+    </div>
+  );
+};
+
 export default {
   title: 'NewsKit Light/popover',
   component: () => 'None',

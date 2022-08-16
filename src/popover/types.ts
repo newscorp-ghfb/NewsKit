@@ -9,7 +9,6 @@ export type PopoverProps = Omit<
 > & {
   closePosition?: 'left' | 'right' | 'none';
   header?: React.ReactNode;
-  handleCloseButtonClick?: () => void;
   enableDismiss?: boolean;
   overrides?: FloatingElementProps['overrides'] & {
     header?: {

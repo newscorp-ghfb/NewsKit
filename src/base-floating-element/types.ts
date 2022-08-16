@@ -34,7 +34,9 @@ export interface FloatingElementProps
   trigger?: TriggerType | TriggerType[];
   content:
     | React.ReactNode
-    | ((referenceProps: ReferenceProps) => React.ReactNode);
+    | ((
+        referenceProps: ReferenceProps & {onClose: () => void},
+      ) => React.ReactNode);
   open?: boolean;
   placement?: Placement;
   overrides?: {
