@@ -245,9 +245,9 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
       introduction: `Below are the properties for the Grid Layout component:`,
       components: [
         {
-          title: 'GridLayout',
+          title: 'Grid Layout',
           summary:
-            'Grid Layout has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The grid layout has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
             {
               name: 'rowGap',
@@ -471,9 +471,9 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'GridLayoutItem',
+          title: 'Grid Layout Item',
           summary:
-            'Grid Layout Item has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit GridLayout component.',
+            'The grid layout item has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit GridLayout component.',
           propsRows: [
             {
               name: 'area',
