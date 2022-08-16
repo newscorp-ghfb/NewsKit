@@ -29,8 +29,6 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       children,
       useModal = {},
       virtualized = 50,
-      panelId,
-      panelLabel,
       ...restProps
     } = props;
 
@@ -125,8 +123,6 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       openMenu,
       closeMenu,
     } = useSelect({
-      menuId: panelId,
-      labelId: panelLabel,
       items: children,
       defaultSelectedItem,
       onSelectedItemChange: onInputChange,

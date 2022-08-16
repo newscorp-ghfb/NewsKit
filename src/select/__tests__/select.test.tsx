@@ -1,6 +1,7 @@
 import React, {createRef} from 'react';
 import {cleanup, fireEvent, screen, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import {UseSelectGetItemPropsOptions, UseSelectProps} from 'downshift';
 import {Select, SelectProps, ButtonSelectSize, SelectOption} from '..';
 import {
   renderToFragmentInBody,
@@ -14,14 +15,45 @@ import {createTheme} from '../..';
 import {IconFilledSearch} from '../../icons';
 import {countries} from './phone-countries';
 
-const id = 'select-test-id';
-const panelId = 'panel-test-id';
-const panelLabel = 'panel-test-label';
+// Downshift auto-generates IDs for the select elements, which makes the snapshot
+// tests brittle. Mock out the ID generation functions so the IDs generated are
+// always the same to avoid this, but still import the rest of the module.
+const resetDownshiftIds = (props: {[key: string]: string}) =>
+  Object.entries(props).reduce(
+    (prev, [k, v]) => ({
+      ...prev,
+      [k]:
+        typeof v === 'string' ? v.replace(/downshift-\d*/, 'downshift-0') : v,
+    }),
+    {},
+  );
+const {restModule, useSelect} = jest.requireActual('downshift');
+function useSelectWithMockIds<T>(props: UseSelectProps<T>) {
+  const {
+    getToggleButtonProps,
+    getMenuProps,
+    getItemProps,
+    ...selectProps
+  } = useSelect(props);
+  return {
+    ...selectProps,
+    getToggleButtonProps: () => resetDownshiftIds(getToggleButtonProps()),
+    getMenuProps: () => resetDownshiftIds(getMenuProps()),
+    getItemProps: (options: UseSelectGetItemPropsOptions<T>) =>
+      resetDownshiftIds(getItemProps(options)),
+  };
+}
+useSelectWithMockIds.stateChangeTypes = useSelect.stateChangeTypes;
+
+jest.mock('downshift', () => ({
+  ...restModule,
+  useSelect: useSelectWithMockIds,
+}));
 
 const renderSelectButtonWithComponents = () => (
   <>
     <Label>A label</Label>
-    <Select id={id}>
+    <Select>
       <SelectOption key="1" value="option 1">
         option 1
       </SelectOption>
@@ -58,7 +90,6 @@ describe('Select', () => {
   ['small', 'medium', 'large'].forEach(size => {
     test(`renders ${size} Select`, () => {
       const props: SelectProps = {
-        id,
         size: size as ButtonSelectSize,
         children: defaultSelectOptions,
       };
@@ -69,7 +100,6 @@ describe('Select', () => {
 
   test('should render custom placeholder', () => {
     const props: SelectProps = {
-      id,
       children: defaultSelectOptions,
       placeholder: 'This is some text',
     };
@@ -82,7 +112,6 @@ describe('Select', () => {
     const inputRef = createRef<HTMLInputElement>();
 
     const props = {
-      id,
       ref: inputRef,
       children: defaultSelectOptions,
     };
@@ -100,7 +129,6 @@ describe('Select', () => {
   test('calls onBlur ', async () => {
     const onBlur = jest.fn();
     const props: SelectProps = {
-      id,
       placeholder: 'This is some text',
       onBlur,
       children: defaultSelectOptions,
@@ -122,7 +150,6 @@ describe('Select', () => {
   test('calls onFocus ', async () => {
     const onFocus = jest.fn();
     const props: SelectProps = {
-      id,
       placeholder: 'This is some text',
       onFocus,
       children: defaultSelectOptions,
@@ -140,7 +167,6 @@ describe('Select', () => {
   test('calls onChange', async () => {
     const onChange = jest.fn();
     const props: SelectProps = {
-      id,
       placeholder: 'This is some text',
       onChange,
       children: [
@@ -167,7 +193,6 @@ describe('Select', () => {
   test('does not call onChange', async () => {
     const onChange = jest.fn();
     const props: SelectProps = {
-      id,
       placeholder: 'This is some text',
       onChange,
       children: defaultSelectOptions,
@@ -180,7 +205,6 @@ describe('Select', () => {
 
   test('renders disabled select', () => {
     const props: SelectProps = {
-      id,
       state: 'disabled',
       children: defaultSelectOptions,
     };
@@ -190,7 +214,6 @@ describe('Select', () => {
 
   test(`chevron clicks don't open panel when select is disabled`, async () => {
     const props: SelectProps = {
-      id,
       state: 'disabled',
       children: defaultSelectOptions,
     };
@@ -211,7 +234,6 @@ describe('Select', () => {
 
   test(`button clicks don't open panel when select is disabled`, async () => {
     const props: SelectProps = {
-      id,
       state: 'disabled',
       children: defaultSelectOptions,
     };
@@ -228,7 +250,6 @@ describe('Select', () => {
 
   test('renders loading select', () => {
     const props: SelectProps = {
-      id,
       loading: true,
       children: defaultSelectOptions,
     };
@@ -238,7 +259,6 @@ describe('Select', () => {
 
   test('renders select with a pre selected option', () => {
     const props: SelectProps = {
-      id,
       children: [
         <SelectOption key="1" defaultSelected value="option 1">
           option 1
@@ -254,7 +274,6 @@ describe('Select', () => {
 
   test('renders select with a selected option', () => {
     const props: SelectProps = {
-      id,
       children: [
         <SelectOption key="1" selected value="option 1">
           option 1
@@ -270,7 +289,6 @@ describe('Select', () => {
 
   test('renders select with leading and trailing icon', () => {
     const props: SelectProps = {
-      id,
       startEnhancer: <IconFilledSearch overrides={{size: 'iconSize020'}} />,
       endEnhancer: <IconFilledSearch overrides={{size: 'iconSize020'}} />,
       children: defaultSelectOptions,
@@ -281,7 +299,6 @@ describe('Select', () => {
 
   test('renders select with non-string options', () => {
     const props: SelectProps = {
-      id,
       children: [
         <SelectOption key="1" value="option 1">
           option 1
@@ -297,7 +314,6 @@ describe('Select', () => {
 
   test('renders select with open menu', async () => {
     const props: SelectProps = {
-      id,
       children: defaultSelectOptions,
     };
     const {getByTestId} = renderWithTheme(Select, props);
@@ -312,7 +328,6 @@ describe('Select', () => {
   test('changes focus using keyboard', async () => {
     const onChange = jest.fn();
     const props: SelectProps = {
-      id,
       onChange,
       children: [
         <SelectOption key="1" defaultSelected value="option 1">
@@ -364,7 +379,6 @@ describe('Select', () => {
 
   test('blur on chevron button opens the menu again', async () => {
     const props: SelectProps = {
-      id,
       placeholder: 'This is some text',
       children: defaultSelectOptions,
     };
@@ -404,7 +418,6 @@ describe('Select', () => {
     });
 
     const props: SelectProps = {
-      id,
       overrides: {
         button: {
           stylePreset: 'selectContainerCustom',
@@ -473,9 +486,6 @@ describe('Select', () => {
     });
 
     const commonProps: SelectProps = {
-      id,
-      panelId,
-      panelLabel,
       children: [
         <SelectOption key="1" value="option 1">
           option 1
@@ -508,9 +518,6 @@ describe('Select', () => {
 
     test('render Select with overrides props', async () => {
       const props: SelectProps = {
-        id,
-        panelId,
-        panelLabel,
         ...commonProps,
         overrides: {
           button: {width: '100%'},
@@ -538,9 +545,6 @@ describe('Select', () => {
 
     test('render Select with overrides style', async () => {
       const props: SelectProps = {
-        id,
-        panelId,
-        panelLabel,
         ...commonProps,
         overrides: {
           modal: {
@@ -612,7 +616,6 @@ describe('Select', () => {
 
     test('do not close modal when click outside the panel', async () => {
       const props: SelectProps = {
-        id,
         ...commonProps,
         overrides: {
           modal: {
@@ -649,9 +652,6 @@ describe('Select', () => {
 
   test('renders SelectOption with logical props', async () => {
     const props: SelectProps = {
-      id,
-      panelId,
-      panelLabel,
       children: [
         <SelectOption
           defaultSelected
@@ -679,9 +679,6 @@ describe('Select', () => {
 
   test('renders Select with logical props', async () => {
     const props: SelectProps = {
-      id,
-      panelId,
-      panelLabel,
       overrides: {
         button: {
           marginInline: '40px',
