@@ -46,6 +46,7 @@ module.exports = {
         alias: {
           ...config.resolve.alias,
           '@emotion/styled': toPath('node_modules/@emotion/styled'),
+          '@emotion/styled/base': toPath('node_modules/@emotion/styled/base'),
           '@emotion/provider': toPath('node_modules/@emotion/provider'),
           '@emotion/core': toPath('node_modules/@emotion/react'),
           'emotion-theming': toPath('node_modules/@emotion/react'),
