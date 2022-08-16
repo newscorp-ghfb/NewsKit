@@ -6,6 +6,7 @@ import {
   ToastID,
   ToastProviderProps,
   ToastAsFunction,
+  Renderable,
 } from './types';
 
 import {StyledToastProvider, StyledToastBar} from './styled';
@@ -89,22 +90,19 @@ export const ToastProvider = ({
 };
 
 export const toast = (
-  component: ToastAsFunction | React.ReactNode,
+  component: ToastAsFunction | Renderable,
   toastOptions?: ToastOptions,
 ): ToastID => {
   const options = {
     duration: toastOptions?.autoHideDuration,
   };
 
-  return hotToast(
-    (((e: {id: string}) => {
-      const onClose = () => hotToast.dismiss(e.id);
+  return hotToast(e => {
+    const onClose = () => hotToast.dismiss(e.id);
 
-      if (typeof component === 'function') {
-        return component({id: e.id, onClose});
-      }
-      return component;
-    }) as unknown) as string,
-    options,
-  );
+    if (typeof component === 'function') {
+      return component({id: e.id, onClose});
+    }
+    return component;
+  }, options);
 };
