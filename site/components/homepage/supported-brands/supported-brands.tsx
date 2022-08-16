@@ -44,9 +44,12 @@ export const SupportedBrands = () => (
     <SectionIntroductionGrid title="Supported brands">
       World-class brands trust NewsKit to build their products:
     </SectionIntroductionGrid>
-    <GridLayout columns="repeat(6, 1fr)" justifyItems="center">
+    <GridLayout
+      columns={{xs: 'repeat(3, 1fr)', md: 'repeat(6, 1fr)'}}
+      justifyItems="center"
+    >
       {brandsLogos.map(({icon, url}) => (
-        <GridLayoutItem column={{xs: `span 2`, md: `span 1`}} key={getSSRId()}>
+        <GridLayoutItem key={getSSRId()}>
           <LinkStandalone target="_blank" external={false} href={url}>
             {icon}
           </LinkStandalone>
