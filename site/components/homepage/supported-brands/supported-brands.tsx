@@ -37,13 +37,13 @@ const randomiseBrands = (
   return shuffled.slice(0, count);
 };
 
-const getSixRandomLogos = randomiseBrands(6, SUPPORTED_BRANDS);
+const sixRandomLogos = randomiseBrands(6, SUPPORTED_BRANDS);
 
 export const SupportedBrands = () => {
-  const [brandsLogos, setBrandsLogos] = React.useState(getSixRandomLogos);
+  const [brandsLogos, setBrandsLogos] = React.useState(sixRandomLogos);
 
   React.useEffect(() => {
-    setBrandsLogos(getSixRandomLogos);
+    setBrandsLogos(sixRandomLogos);
   }, []);
 
   return (
