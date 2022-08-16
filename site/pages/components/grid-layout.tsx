@@ -120,7 +120,7 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Grid Layout component, its variations, and configuration options.',
+        'This demo allows you to preview the grid layout component, its variations, and configuration options.',
       playground: {
         componentName: 'GridLayout',
         component: state => (
@@ -700,7 +700,6 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
               icon={infoIcon}
               role="region"
               aria-label="GridLayoutItem"
-              title="Note"
               overrides={{
                 marginBlockStart: 'space070',
               }}
