@@ -5,9 +5,10 @@ import {LogicalPaddingProps} from '../utils/logical-properties';
 
 export type PopoverProps = Omit<
   FloatingElementProps,
-  'trigger' | 'overrides'
+  'trigger' | 'overrides' | 'content'
 > & {
   children: React.ReactNode;
+  content: React.ReactNode;
   closePosition?: 'left' | 'right' | 'none';
   header?: React.ReactNode;
   handleCloseButtonClick?: () => void;

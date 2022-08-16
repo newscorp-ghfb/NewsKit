@@ -94,7 +94,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
               </StyledPopoverHeader>
             )}
             <StyledPopoverContent overrides={overrides}>
-              <>{content}</>
+              {content}
             </StyledPopoverContent>
             {closePosition !== 'none' && (
               <StyledPopoverCloseButtonContainer
