@@ -66,8 +66,6 @@ exports[`UnorderedList renders different types of children 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-3 svg {
@@ -244,11 +242,11 @@ exports[`UnorderedList renders different types of children 1`] = `
       <div
         class="emotion-2"
       >
-        <span
+        <p
           class="emotion-3"
         >
           String node
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -257,11 +255,11 @@ exports[`UnorderedList renders different types of children 1`] = `
       <div
         class="emotion-2"
       >
-        <span
+        <p
           class="emotion-3"
         >
           100
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -270,7 +268,7 @@ exports[`UnorderedList renders different types of children 1`] = `
       <div
         class="emotion-2"
       >
-        <span
+        <p
           class="emotion-3"
         >
           <a
@@ -314,7 +312,7 @@ exports[`UnorderedList renders different types of children 1`] = `
               </span>
             </span>
           </a>
-        </span>
+        </p>
       </div>
     </li>
   </ul>
@@ -420,8 +418,6 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-6 svg {
@@ -471,11 +467,11 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -505,11 +501,11 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           second node
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -539,11 +535,11 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           third node
-        </span>
+        </p>
       </div>
     </li>
   </ul>
@@ -649,8 +645,6 @@ exports[`UnorderedList renders with custom list item marker with different size 
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-6 svg {
@@ -700,11 +694,11 @@ exports[`UnorderedList renders with custom list item marker with different size 
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -734,11 +728,11 @@ exports[`UnorderedList renders with custom list item marker with different size 
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           second node
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -768,11 +762,11 @@ exports[`UnorderedList renders with custom list item marker with different size 
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           third node
-        </span>
+        </p>
       </div>
     </li>
   </ul>
@@ -812,8 +806,6 @@ exports[`UnorderedList renders with defaults 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-3 svg {
@@ -842,11 +834,11 @@ exports[`UnorderedList renders with defaults 1`] = `
       <div
         class="emotion-2"
       >
-        <span
+        <p
           class="emotion-3"
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -855,11 +847,11 @@ exports[`UnorderedList renders with defaults 1`] = `
       <div
         class="emotion-2"
       >
-        <span
+        <p
           class="emotion-3"
         >
           second node
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -868,11 +860,11 @@ exports[`UnorderedList renders with defaults 1`] = `
       <div
         class="emotion-2"
       >
-        <span
+        <p
           class="emotion-3"
         >
           third node
-        </span>
+        </p>
       </div>
     </li>
   </ul>
@@ -912,8 +904,6 @@ exports[`UnorderedList renders with defaults when marker is incorrect 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-3 svg {
@@ -942,11 +932,11 @@ exports[`UnorderedList renders with defaults when marker is incorrect 1`] = `
       <div
         class="emotion-2"
       >
-        <span
+        <p
           class="emotion-3"
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -955,11 +945,11 @@ exports[`UnorderedList renders with defaults when marker is incorrect 1`] = `
       <div
         class="emotion-2"
       >
-        <span
+        <p
           class="emotion-3"
         >
           second node
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -968,11 +958,11 @@ exports[`UnorderedList renders with defaults when marker is incorrect 1`] = `
       <div
         class="emotion-2"
       >
-        <span
+        <p
           class="emotion-3"
         >
           third node
-        </span>
+        </p>
       </div>
     </li>
   </ul>
@@ -1082,8 +1072,6 @@ exports[`UnorderedList renders with logical props 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-6 svg {
@@ -1133,11 +1121,11 @@ exports[`UnorderedList renders with logical props 1`] = `
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -1167,11 +1155,11 @@ exports[`UnorderedList renders with logical props 1`] = `
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           second node
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -1201,11 +1189,11 @@ exports[`UnorderedList renders with logical props 1`] = `
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           third node
-        </span>
+        </p>
       </div>
     </li>
   </ul>
@@ -1311,8 +1299,6 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-6 svg {
@@ -1362,11 +1348,11 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -1396,11 +1382,11 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           second node
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -1430,11 +1416,11 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           third node
-        </span>
+        </p>
       </div>
     </li>
   </ul>
@@ -1540,8 +1526,6 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
 .emotion-6 svg {
@@ -1591,11 +1575,11 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -1625,11 +1609,11 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           second node
-        </span>
+        </p>
       </div>
     </li>
     <li
@@ -1659,11 +1643,11 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
             />
           </svg>
         </div>
-        <span
+        <p
           class="emotion-6"
         >
           third node
-        </span>
+        </p>
       </div>
     </li>
   </ul>

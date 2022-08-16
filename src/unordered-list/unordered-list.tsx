@@ -1,5 +1,6 @@
 import React from 'react';
 import {isValidNode} from '../utils/component';
+import {TextBlock} from '../text-block';
 
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
@@ -9,7 +10,6 @@ import {
   StyledBlock,
   StyledMarkerBlock,
   StyledListItem,
-  StyledTextBlock,
 } from './styled';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
@@ -78,13 +78,12 @@ const ThemelessUnorderedList = React.forwardRef<
                   />
                 </StyledMarkerBlock>
               )}
-              <StyledTextBlock
+              <TextBlock
                 typographyPreset={contentTypographyPresetToken}
                 stylePreset={contentStylePresetToken}
-                as="span"
               >
                 {node}
-              </StyledTextBlock>
+              </TextBlock>
             </StyledBlock>
           </StyledListItem>
         );
