@@ -75,12 +75,16 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       }
     }, [defaultSelectedItem, onChange, programmaticallySelectedItem]);
 
-    const onInputChange = React.useCallback(
+    const onInputChange = React.useCallback<
+      (
+        changes: UseSelectStateChange<React.ReactElement<SelectOptionProps>>,
+      ) => void
+    >(
       /* istanbul ignore next */
-      (event: {selectedItem: {props: {value: string}}}) => {
+      event => {
         /* istanbul ignore next */
         if (localInputRef.current) {
-          localInputRef.current.value = event.selectedItem.props.value;
+          localInputRef.current.value = event.selectedItem!.props.value;
         }
         /* istanbul ignore next */
         if (onChange && localInputRef.current) {
@@ -125,7 +129,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       labelId: panelLabel,
       items: children,
       defaultSelectedItem,
-      onSelectedItemChange: () => onInputChange,
+      onSelectedItemChange: onInputChange,
       itemToString,
       onHighlightedIndexChange,
       stateReducer: (_, actionAndChanges) => {
