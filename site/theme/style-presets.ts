@@ -1,3 +1,5 @@
+import {defaultFocusVisible} from '../../src/utils/default-focus-visible';
+
 export const stylePresets = {
   buttonOutlinedSecondary: {
     base: {
@@ -417,7 +419,7 @@ export const stylePresets = {
     },
   },
 
-  contributeCardContainerInteractive: {
+  contributeOldCardContainerInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
@@ -426,18 +428,18 @@ export const stylePresets = {
       boxShadow: '{{shadows.shadow040}}',
     },
   },
-  contributeCardContainerNonInteractive: {
+  contributeOldCardContainerNonInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
     },
   },
-  contributeCardMedia: {
+  contributeOldCardMedia: {
     base: {
-      backgroundImage: 'url(static/landing/feature-card-contribute.svg)',
+      backgroundImage: 'url(static/landing/feature-card-contribute-old.svg)',
     },
   },
-  contributeCardButton: {
+  contributeOldCardButton: {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
@@ -461,6 +463,42 @@ export const stylePresets = {
     },
     loading: {
       backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
+    },
+  },
+
+  contributeCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand050}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+  contributeCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand050}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+  contributeCardMedia: {
+    base: {
+      backgroundSize: 'cover',
+      backgroundImage: 'url(static/landing/feature-card-contribute.svg)',
+      backgroundPosition: 'center',
+    },
+  },
+  contributeCardButton: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse050}}',
       color: '{{colors.inkBrand020}}',
       iconColor: '{{colors.inkBrand020}}',
     },
@@ -662,6 +700,34 @@ export const stylePresets = {
       backgroundImage: 'url(static/landing/feature-card-whatsnew.svg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center left',
+    },
+  },
+  worlddesignsystemsweekCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand040}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+  worlddesignsystemsweekCardButton: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse050}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
+    },
+  },
+  worlddesignsystemsweekCardMedia: {
+    base: {
+      backgroundImage: 'url(static/landing/feature-card-banner.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
     },
   },
   needHelpCardContainerInteractive: {
@@ -998,5 +1064,16 @@ export const stylePresets = {
     base: {
       color: '{{colors.inkBase}}',
     },
+  },
+  tagKeepInTouch: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.interactiveInput040}}',
+      iconColor: '{{colors.interactiveInput040}}',
+    },
+    active: {
+      borderWidth: '{{borders.borderWidth010}}',
+    },
+    'focus-visible': defaultFocusVisible,
   },
 };

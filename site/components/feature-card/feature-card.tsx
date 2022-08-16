@@ -37,6 +37,7 @@ const OptionalLinkWrapper: React.FC<OptionalLinkWrapperProps> = ({
   if (href) {
     return (
       <StyledCardLink
+        external={false}
         overrides={{
           stylePreset: 'linkNoUnderline',
         }}
@@ -58,6 +59,7 @@ const OptionalButtonLinkWrapper: React.FC<OptionalButtonLinkWrapperProps> = ({
     return (
       <Link
         href={buttonHref}
+        external={false}
         overrides={{
           stylePreset: 'linkNoUnderline',
         }}
@@ -81,6 +83,7 @@ const FeatureCardHorizontal = React.forwardRef<
       stylePrefix,
       buttonLabel,
       buttonHref,
+      buttonLogicalProps,
       overrides,
       ...props
     },
@@ -153,6 +156,7 @@ const FeatureCardHorizontal = React.forwardRef<
                   <Button
                     size={ButtonSize.Small}
                     overrides={{
+                      ...buttonLogicalProps,
                       stylePreset: `${stylePrefix}Button`,
                       typographyPreset: 'utilityButton010',
                     }}
@@ -214,6 +218,7 @@ const FeatureCardHorizontal = React.forwardRef<
                   <Button
                     size={ButtonSize.Small}
                     overrides={{
+                      ...buttonLogicalProps,
                       stylePreset: `${stylePrefix}Button`,
                       typographyPreset: 'utilityButton010',
                     }}
@@ -240,13 +245,14 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
       stylePrefix,
       buttonLabel,
       buttonHref,
+      buttonLogicalProps,
       media,
       overrides,
       ...props
     },
     ref,
   ) => {
-    const indexCards = ['roadmapCard', 'contributeCard', 'patternsCard'];
+    const indexCards = ['roadmapCard', 'contributeOldCard', 'patternsCard'];
     const mediaValue = () => (
       <StyledFeatureCardVerticalMedia stylePreset={`${stylePrefix}Media`} />
     );
@@ -313,6 +319,7 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
                 <Button
                   size={ButtonSize.Small}
                   overrides={{
+                    ...buttonLogicalProps,
                     stylePreset: `${stylePrefix}Button`,
                     typographyPreset: 'utilityButton010',
                   }}

@@ -1,8 +1,14 @@
 import * as React from 'react';
 import {GridLayout, styled, TextBlock} from 'newskit';
 import Layout, {LayoutProps} from '../components/layout';
-import {Hero} from '../components/homepage';
+import {
+  Hero,
+  KeepInTouch,
+  SupportedBrands,
+  Explore,
+} from '../components/homepage';
 import {GridLayoutProps} from '../../src/grid-layout/types';
+import {FeatureCard} from '../components/feature-card';
 
 const Placeholder: React.FC = ({children}) => (
   <TextBlock
@@ -32,6 +38,10 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
+// The World Design Systems Week 2022 banner should hide automatically after the event which is on 19-23 September 2022
+const eventDateEnd = new Date('2022-09-24:00:00:00');
+const showUntilEventDate = new Date() < eventDateEnd;
+
 const Index = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage hideSidebar path="/index-new">
     <GridLayout
@@ -39,15 +49,22 @@ const Index = (layoutProps: LayoutProps) => (
       overrides={{marginBlockEnd: 'space080'}}
     >
       <Hero contentContainerOverrides={GRID_SECTION_OVERRIDES} />
+      {showUntilEventDate && (
+        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+          <FeatureCard
+            title="World Design Systems Week 2022"
+            description="19-23 September 2022"
+            stylePrefix="worlddesignsystemsweekCard"
+            href="https://www.designsystemsweek.com/"
+            layout="horizontal"
+            buttonLabel="Read more"
+            buttonHref="https://www.designsystemsweek.com/"
+            buttonLogicalProps={{paddingInline: 'space000'}}
+          />
+        </GridLayout>
+      )}
       <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Banner</Placeholder>
-        </GridBox>
-      </GridLayout>
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Explore</Placeholder>
-        </GridBox>
+        <Explore />
       </GridLayout>
       <GridLayout overrides={GRID_SECTION_OVERRIDES}>
         <GridBox>
@@ -55,19 +72,22 @@ const Index = (layoutProps: LayoutProps) => (
         </GridBox>
       </GridLayout>
       <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Contribute</Placeholder>
-        </GridBox>
+        <FeatureCard
+          title="Contribute"
+          description="Join the community and help grow NewsKit for everyone."
+          stylePrefix="contributeCard"
+          href="/about/contribute"
+          layout="horizontal"
+          buttonLabel="Start contributing"
+          buttonHref="/about/contribute"
+          buttonLogicalProps={{paddingInline: 'space000'}}
+        />
       </GridLayout>
       <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Keep in touch</Placeholder>
-        </GridBox>
+        <KeepInTouch />
       </GridLayout>
       <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Supported brands</Placeholder>
-        </GridBox>
+        <SupportedBrands />
       </GridLayout>
     </GridLayout>
   </Layout>

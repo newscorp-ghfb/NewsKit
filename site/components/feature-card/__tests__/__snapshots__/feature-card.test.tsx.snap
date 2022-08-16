@@ -2404,57 +2404,32 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 
 .emotion-3 {
   box-sizing: border-box;
-  display: block;
-  position: relative;
-  margin-bottom: 0;
-}
-
-.emotion-3 svg {
-  border-radius: 4px;
 }
 
 .emotion-4 {
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-background-position: right bottom;
-  background-position: right bottom;
-  height: 18vh;
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    height: 200px;
-  }
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-}
-
-.emotion-6 {
   box-sizing: border-box;
   padding: 24px;
 }
 
-.emotion-6 a:not(.nk-card-link) {
+.emotion-4 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-7 {
+  .emotion-5 {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-7 {
+  .emotion-5 {
     margin-bottom: 24px;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-8 {
+  .emotion-6 {
     font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 22.5px;
@@ -2463,13 +2438,13 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-8::before {
+  .emotion-6::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-8::after {
+  .emotion-6::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -2477,7 +2452,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-8 {
+  .emotion-6 {
     font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 22.5px;
@@ -2486,13 +2461,13 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-8::before {
+  .emotion-6::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-8::after {
+  .emotion-6::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -2500,7 +2475,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-8 {
+  .emotion-6 {
     font-family: "Bitter",serif;
     font-size: 22px;
     line-height: 24.75px;
@@ -2509,13 +2484,13 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-8::before {
+  .emotion-6::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-8::after {
+  .emotion-6::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -2523,7 +2498,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-8 {
+  .emotion-6 {
     font-family: "Bitter",serif;
     font-size: 28px;
     line-height: 31.5px;
@@ -2532,46 +2507,46 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-8::before {
+  .emotion-6::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-8::after {
+  .emotion-6::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
   }
 }
 
-.emotion-9 {
+.emotion-7 {
   display: inline;
   font: inherit;
   margin: 0;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-10 {
+  .emotion-8 {
     margin-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-10 {
+  .emotion-8 {
     margin-bottom: 32px;
   }
 }
 
-.emotion-11 {
+.emotion-9 {
   margin: 0;
 }
 
-.emotion-12 {
+.emotion-10 {
   margin-bottom: 8px;
 }
 
-.emotion-13 {
+.emotion-11 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2601,13 +2576,13 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   cursor: pointer;
 }
 
-.emotion-13 svg {
+.emotion-11 svg {
   width: 16px;
   height: 16px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
+  .emotion-11 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2615,14 +2590,14 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
+  .emotion-11 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-14 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2643,7 +2618,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2652,7 +2627,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-16 {
+.emotion-14 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -2663,19 +2638,19 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   display: inline-block;
 }
 
-.emotion-16::before {
+.emotion-14::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-16::after {
+.emotion-14::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-18 {
+.emotion-16 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2685,7 +2660,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-18 {
+  .emotion-16 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2693,14 +2668,14 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-18 {
+  .emotion-16 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-18.emotion-18 {
+.emotion-16.emotion-16 {
   width: 16px;
   height: 16px;
 }
@@ -2720,62 +2695,55 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
         >
           <div
             class="emotion-4"
-          />
-        </div>
-        <div
-          class="emotion-5"
-        >
-          <div
-            class="emotion-6"
           >
             <div
-              class="emotion-7"
+              class="emotion-5"
             >
               <section
-                class="emotion-8"
+                class="emotion-6"
               >
                 <h3
-                  class="nk-headline-heading emotion-9"
+                  class="nk-headline-heading emotion-7"
                 >
                   Interactive Horizontal Card
                 </h3>
               </section>
             </div>
             <div
-              class="emotion-10"
+              class="emotion-8"
             >
               <p
-                class="emotion-11"
+                class="emotion-9"
               >
                 I am interactive
               </p>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-10"
             >
               <button
-                class="emotion-13"
+                class="emotion-11"
                 data-testid="button"
                 type="button"
               >
                 <div
-                  class="emotion-14"
+                  class="emotion-12"
                 >
                   <div
-                    class="emotion-15"
+                    class="emotion-13"
                   >
                     <span
-                      class="emotion-16"
+                      class="emotion-14"
                     >
                       Read more
                     </span>
                   </div>
                   <div
-                    class="emotion-15"
+                    class="emotion-13"
                   >
                     <svg
                       aria-hidden="true"
-                      class="emotion-18 emotion-19"
+                      class="emotion-16 emotion-17"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -2867,57 +2835,32 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 
 .emotion-3 {
   box-sizing: border-box;
-  display: block;
-  position: relative;
-  margin-bottom: 0;
-}
-
-.emotion-3 svg {
-  border-radius: 4px;
 }
 
 .emotion-4 {
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-background-position: right bottom;
-  background-position: right bottom;
-  height: 18vh;
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    height: 200px;
-  }
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-}
-
-.emotion-6 {
   box-sizing: border-box;
   padding: 24px;
 }
 
-.emotion-6 a:not(.nk-card-link) {
+.emotion-4 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-7 {
+  .emotion-5 {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-7 {
+  .emotion-5 {
     margin-bottom: 24px;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-8 {
+  .emotion-6 {
     font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 22.5px;
@@ -2926,13 +2869,13 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-8::before {
+  .emotion-6::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-8::after {
+  .emotion-6::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -2940,7 +2883,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-8 {
+  .emotion-6 {
     font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 22.5px;
@@ -2949,13 +2892,13 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-8::before {
+  .emotion-6::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-8::after {
+  .emotion-6::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -2963,7 +2906,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-8 {
+  .emotion-6 {
     font-family: "Bitter",serif;
     font-size: 22px;
     line-height: 24.75px;
@@ -2972,13 +2915,13 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-8::before {
+  .emotion-6::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-8::after {
+  .emotion-6::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -2986,7 +2929,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-8 {
+  .emotion-6 {
     font-family: "Bitter",serif;
     font-size: 28px;
     line-height: 31.5px;
@@ -2995,38 +2938,38 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-8::before {
+  .emotion-6::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-8::after {
+  .emotion-6::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
   }
 }
 
-.emotion-9 {
+.emotion-7 {
   display: inline;
   font: inherit;
   margin: 0;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-10 {
+  .emotion-8 {
     margin-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-10 {
+  .emotion-8 {
     margin-bottom: 32px;
   }
 }
 
-.emotion-11 {
+.emotion-9 {
   margin: 0;
 }
 
@@ -3045,32 +2988,25 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
         >
           <div
             class="emotion-4"
-          />
-        </div>
-        <div
-          class="emotion-5"
-        >
-          <div
-            class="emotion-6"
           >
             <div
-              class="emotion-7"
+              class="emotion-5"
             >
               <section
-                class="emotion-8"
+                class="emotion-6"
               >
                 <h3
-                  class="nk-headline-heading emotion-9"
+                  class="nk-headline-heading emotion-7"
                 >
                   Interactive Horizontal Card
                 </h3>
               </section>
             </div>
             <div
-              class="emotion-10"
+              class="emotion-8"
             >
               <p
-                class="emotion-11"
+                class="emotion-9"
               >
                 I am interactive
               </p>
@@ -3708,57 +3644,32 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  display: block;
-  position: relative;
-  margin-bottom: 0;
-}
-
-.emotion-1 svg {
-  border-radius: 4px;
 }
 
 .emotion-2 {
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-background-position: right bottom;
-  background-position: right bottom;
-  height: 18vh;
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-2 {
-    height: 200px;
-  }
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-}
-
-.emotion-4 {
   box-sizing: border-box;
   padding: 24px;
 }
 
-.emotion-4 a:not(.nk-card-link) {
+.emotion-2 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-5 {
+  .emotion-3 {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-5 {
+  .emotion-3 {
     margin-bottom: 24px;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-6 {
+  .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 22.5px;
@@ -3767,13 +3678,13 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-6::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-6::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -3781,7 +3692,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-6 {
+  .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 22.5px;
@@ -3790,13 +3701,13 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-6::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-6::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -3804,7 +3715,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-6 {
+  .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 22px;
     line-height: 24.75px;
@@ -3813,13 +3724,13 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-6::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-6::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -3827,7 +3738,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-6 {
+  .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 28px;
     line-height: 31.5px;
@@ -3836,38 +3747,38 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-6::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-6::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: inline;
   font: inherit;
   margin: 0;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-8 {
+  .emotion-6 {
     margin-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-8 {
+  .emotion-6 {
     margin-bottom: 32px;
   }
 }
 
-.emotion-9 {
+.emotion-7 {
   margin: 0;
 }
 
@@ -3879,32 +3790,25 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     >
       <div
         class="emotion-2"
-      />
-    </div>
-    <div
-      class="emotion-3"
-    >
-      <div
-        class="emotion-4"
       >
         <div
-          class="emotion-5"
+          class="emotion-3"
         >
           <section
-            class="emotion-6"
+            class="emotion-4"
           >
             <h3
-              class="nk-headline-heading emotion-7"
+              class="nk-headline-heading emotion-5"
             >
               Interactive Horizontal Card
             </h3>
           </section>
         </div>
         <div
-          class="emotion-8"
+          class="emotion-6"
         >
           <p
-            class="emotion-9"
+            class="emotion-7"
           >
             I am interactive
           </p>
@@ -4415,57 +4319,32 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  display: block;
-  position: relative;
-  margin-bottom: 0;
-}
-
-.emotion-1 svg {
-  border-radius: 4px;
 }
 
 .emotion-2 {
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-background-position: right bottom;
-  background-position: right bottom;
-  height: 18vh;
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-2 {
-    height: 200px;
-  }
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-}
-
-.emotion-4 {
   box-sizing: border-box;
   padding: 24px;
 }
 
-.emotion-4 a:not(.nk-card-link) {
+.emotion-2 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-5 {
+  .emotion-3 {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-5 {
+  .emotion-3 {
     margin-bottom: 24px;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-6 {
+  .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 22.5px;
@@ -4474,13 +4353,13 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-6::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-6::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -4488,7 +4367,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-6 {
+  .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 22.5px;
@@ -4497,13 +4376,13 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-6::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-6::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -4511,7 +4390,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-6 {
+  .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 22px;
     line-height: 24.75px;
@@ -4520,13 +4399,13 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-6::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-6::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
@@ -4534,7 +4413,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-6 {
+  .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 28px;
     line-height: 31.5px;
@@ -4543,51 +4422,51 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-6::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.2055em;
     display: block;
   }
 
-  .emotion-6::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.2275em;
     display: block;
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: inline;
   font: inherit;
   margin: 0;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-8 {
+  .emotion-6 {
     margin-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-8 {
+  .emotion-6 {
     margin-bottom: 32px;
   }
 }
 
-.emotion-9 {
+.emotion-7 {
   margin: 0;
 }
 
-.emotion-10 {
+.emotion-8 {
   margin-bottom: 8px;
 }
 
-.emotion-11 {
+.emotion-9 {
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -4595,14 +4474,14 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4621,7 +4500,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-13 {
+.emotion-11 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4651,13 +4530,13 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   cursor: pointer;
 }
 
-.emotion-13 svg {
+.emotion-11 svg {
   width: 16px;
   height: 16px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
+  .emotion-11 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4665,14 +4544,14 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
+  .emotion-11 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-14 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4693,7 +4572,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4702,7 +4581,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-16 {
+.emotion-14 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -4713,19 +4592,19 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   display: inline-block;
 }
 
-.emotion-16::before {
+.emotion-14::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-16::after {
+.emotion-14::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-18 {
+.emotion-16 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4735,7 +4614,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-18 {
+  .emotion-16 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4743,14 +4622,14 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-18 {
+  .emotion-16 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-18.emotion-18 {
+.emotion-16.emotion-16 {
   width: 16px;
   height: 16px;
 }
@@ -4763,69 +4642,62 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
     >
       <div
         class="emotion-2"
-      />
-    </div>
-    <div
-      class="emotion-3"
-    >
-      <div
-        class="emotion-4"
       >
         <div
-          class="emotion-5"
+          class="emotion-3"
         >
           <section
-            class="emotion-6"
+            class="emotion-4"
           >
             <h3
-              class="nk-headline-heading emotion-7"
+              class="nk-headline-heading emotion-5"
             >
               Interactive Horizontal Card
             </h3>
           </section>
         </div>
         <div
-          class="emotion-8"
+          class="emotion-6"
         >
           <p
-            class="emotion-9"
+            class="emotion-7"
           >
             I am interactive
           </p>
         </div>
         <div
-          class="emotion-10"
+          class="emotion-8"
         >
           <a
-            class="emotion-11"
+            class="emotion-9"
             href="/href"
           >
             <span
-              class="emotion-12"
+              class="emotion-10"
             >
               <button
-                class="emotion-13"
+                class="emotion-11"
                 data-testid="button"
                 type="button"
               >
                 <div
-                  class="emotion-14"
+                  class="emotion-12"
                 >
                   <div
-                    class="emotion-15"
+                    class="emotion-13"
                   >
                     <span
-                      class="emotion-16"
+                      class="emotion-14"
                     >
                       Read more
                     </span>
                   </div>
                   <div
-                    class="emotion-15"
+                    class="emotion-13"
                   >
                     <svg
                       aria-hidden="true"
-                      class="emotion-18 emotion-19"
+                      class="emotion-16 emotion-17"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
