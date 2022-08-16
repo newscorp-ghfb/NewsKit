@@ -806,10 +806,7 @@ export const StoryMenuGroupsVertical = () => (
         <MenuItem href={href}>Group 2-item 4</MenuItem>
       </MenuGroup>
 
-      <MenuGroup
-        title={((() => <MenuGroupTitle />) as unknown) as React.ReactNode}
-        aria-labelledby="custom-menu-title"
-      >
+      <MenuGroup title={<MenuGroupTitle />} aria-labelledby="custom-menu-title">
         <MenuItem href={href}>Group 3-item 1</MenuItem>
         <MenuItem href={href}>Group 3-item 2</MenuItem>
       </MenuGroup>
