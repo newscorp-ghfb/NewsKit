@@ -37,7 +37,7 @@ StoryUnorderedListDefault.storyName = 'unordered-list-default';
 export const StoryUnorderedListWithMarker = () => (
   <>
     <StorybookHeading>Unordered list</StorybookHeading>
-    <StorybookSubHeading>with markers</StorybookSubHeading>
+    <StorybookSubHeading>with markers overridden marker</StorybookSubHeading>
     <UnorderedList listItemMarker={IconFilledMood}>{listData}</UnorderedList>
     <br />
     <StorybookSubHeading>
@@ -68,17 +68,11 @@ export const StoryUnorderedListWithMarkerAlignment = () => {
       <StorybookSubHeading>
         with marker in the center (default)
       </StorybookSubHeading>
-      <UnorderedList listItemMarker={IconFilledMood}>
-        {multiLineListData}
-      </UnorderedList>
+      <UnorderedList>{multiLineListData}</UnorderedList>
       <StorybookSubHeading>with marker at the start</StorybookSubHeading>
-      <UnorderedList listItemMarker={IconFilledMood} markerAlign="start">
-        {multiLineListData}
-      </UnorderedList>
+      <UnorderedList markerAlign="start">{multiLineListData}</UnorderedList>
       <StorybookSubHeading>with marker at the end</StorybookSubHeading>
-      <UnorderedList listItemMarker={IconFilledMood} markerAlign="end">
-        {multiLineListData}
-      </UnorderedList>
+      <UnorderedList markerAlign="end">{multiLineListData}</UnorderedList>
     </>
   );
 };
@@ -96,7 +90,6 @@ export const StoryUnorderedListWithLogicalProps = () => (
         marginBlock: 'space060',
         marginInline: 'space080',
       }}
-      listItemMarker={IconFilledMood}
     >
       {listData}
     </UnorderedList>

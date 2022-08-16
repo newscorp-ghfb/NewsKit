@@ -71,7 +71,11 @@ export interface AudioPlayerProviderContext {
   ) => {
     overrides: AudioPlayerVolumeControlOverridesProps;
     keyboardShortcuts?: {muteToggle: string | string[]};
-    layout?: 'horizontal' | 'vertical';
+    layout?:
+      | 'horizontal'
+      | 'vertical'
+      | 'horizontalCollapsed'
+      | 'horizontalExpandable';
     collapsed?: boolean;
     onChange: (value: number) => void;
     volume: number;

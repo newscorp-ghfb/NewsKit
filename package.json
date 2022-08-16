@@ -17,8 +17,8 @@
   "scripts": {
     "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
     "dev:docs": "yarn build:icons && concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",
-    "dev:storybook": "yarn build:icons && start-storybook --ci -p 6006",
-    "eyes:storybook": "APPLITOOLS_SHOW_LOGS=true eyes-storybook --conf applitools.components.config.js",
+    "dev:storybook": "yarn build:icons && start-storybook --ci -p 6006 -s ./fonts,./static",
+    "eyes:storybook": "eyes-storybook --conf applitools.components.config.js",
     "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
     "lint:code": "scripts/assert-files-and-folders.js && yarn lint:code:base .",
     "lint:code:fix": "yarn lint:code --fix",
@@ -55,7 +55,7 @@
     "e2e:docs": "cypress open --config-file cypress/config/cypress.docs.json",
     "e2e:comps:ci": "start-server-and-test e2e:serve 8080 'TZ=UTC cypress run --config-file cypress/config/cypress.components.json'",
     "e2e:docs:ci": "start-server-and-test serve:docs 8081 'TZ=UTC cypress run --config-file cypress/config/cypress.docs.json'",
-    "e2e:visual:docs:ci": "start-server-and-test serve:docs 8081 'TZ=UTC APPLITOOLS_SHOW_LOGS=true cypress run --config-file cypress/config/cypress.docs.visual.json'",
+    "e2e:visual:docs:ci": "start-server-and-test serve:docs 8081 'TZ=UTC cypress run --config-file cypress/config/cypress.docs.visual.json'",
     "e2e:visual:docs:local": "sh ./scripts/applitools_local.sh docs",
     "e2e:generate:a11ytests": "node scripts/generate-a11y-tests.js",
     "e2e:findbrokenlinks": "linkinator http://localhost:8081 --recurse --skip '^(?!http://localhost:8081)'",
@@ -79,6 +79,8 @@
     "@commitlint/parse": "8.0.0",
     "@commitlint/read": "8.0.0",
     "@emotion/jest": "^11.2.1",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
     "@hookform/resolvers": "^2.5.0",
     "@mapbox/rehype-prism": "^0.3.1",
     "@mdx-js/loader": "^1.5.8",
@@ -118,6 +120,7 @@
     "@types/react-transition-group": "^4.4.1",
     "@types/react-virtualized": "^9.21.2",
     "@types/resize-observer-browser": "^0.1.5",
+    "@types/semver": "^7.3.10",
     "@types/smoothscroll-polyfill": "^0.3.1",
     "@types/webpack": "^4.4.34",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
@@ -170,7 +173,7 @@
     "react-codesandboxer": "^3.1.1",
     "react-dom": "18",
     "react-helmet": "^5.2.1",
-    "react-markdown": "^4.0.3",
+    "react-markdown": "^6.0.0",
     "react-phone-number-input": "^3.1.23",
     "react-syntax-highlighter": "^13.0.0",
     "react-test-renderer": "18",
@@ -185,9 +188,7 @@
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
     "yo": "^3.1.1",
-    "yup": "^0.32.9",
-    "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.1.5"
+    "yup": "^0.32.9"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.11.2",
@@ -212,7 +213,8 @@
     "react-hot-toast": "^1.0.2",
     "react-range": "^1.8.12",
     "react-transition-group": "^4.4.1",
-    "react-virtual": "^2.10.4"
+    "react-virtual": "^2.10.4",
+    "semver": "^7.3.7"
   },
   "resolutions": {
     "@types/react": "18",

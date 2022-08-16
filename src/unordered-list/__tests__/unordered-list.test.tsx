@@ -36,6 +36,17 @@ describe('UnorderedList', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders with no list item marker', () => {
+    const props: UnorderedListProps = {
+      listItemMarker: null,
+    };
+    const fragment = renderToFragmentWithTheme(
+      renderUnorderedListWithItems,
+      props,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders with custom list item marker with different size', () => {
     const props: UnorderedListProps = {
       overrides: {marker: {size: 'iconSize010'}},
@@ -64,17 +75,6 @@ describe('UnorderedList', () => {
     const props: UnorderedListProps = {
       markerAlign: 'end',
       listItemMarker: IconFilledMood,
-    };
-    const fragment = renderToFragmentWithTheme(
-      renderUnorderedListWithItems,
-      props,
-    );
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders with defaults when marker is incorrect', () => {
-    const props = {
-      listItemMarker: '' as any,
     };
     const fragment = renderToFragmentWithTheme(
       renderUnorderedListWithItems,

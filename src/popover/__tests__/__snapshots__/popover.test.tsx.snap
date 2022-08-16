@@ -15,7 +15,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: -24px;
 }
 
@@ -1387,7 +1387,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: -24px;
 }
 
@@ -2114,7 +2114,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: -24px;
 }
 
@@ -2471,7 +2471,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: -24px;
 }
 
@@ -3226,7 +3226,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: -24px;
 }
 
@@ -3614,7 +3614,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: -10px;
 }
 
@@ -3972,7 +3972,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: -16px;
 }
 
@@ -4330,7 +4330,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: 0px;
 }
 
@@ -4688,7 +4688,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: 0px;
 }
 
@@ -5385,7 +5385,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -10px;
+  left: 0px;
   top: -24px;
 }
 
@@ -5743,7 +5743,7 @@ exports[`Popover pointer padding should be applied with token distance override 
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -16px;
+  left: 0px;
   top: -24px;
 }
 
@@ -7506,7 +7506,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: -24px;
 }
 
@@ -7864,7 +7864,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: -24px;
 }
 
@@ -8222,7 +8222,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: -12px;
+  left: 0px;
   top: -24px;
 }
 
@@ -8581,7 +8581,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   z-index: 80;
   position: absolute;
   left: 24px;
-  top: -12px;
+  top: 0px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

@@ -11,7 +11,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
   .emotion-0 {
   z-index: 80;
   position: absolute;
-  left: -8px;
+  left: 0px;
   top: -10px;
 }
 
@@ -148,7 +148,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
   .emotion-0 {
   z-index: 80;
   position: absolute;
-  left: -8px;
+  left: 0px;
   top: -16px;
 }
 
@@ -285,7 +285,7 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
   .emotion-0 {
   z-index: 80;
   position: absolute;
-  left: -8px;
+  left: 0px;
   top: 0px;
 }
 
@@ -422,7 +422,7 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
   .emotion-0 {
   z-index: 80;
   position: absolute;
-  left: -8px;
+  left: 0px;
   top: 0px;
 }
 
@@ -677,7 +677,7 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
   .emotion-0 {
   z-index: 80;
   position: absolute;
-  left: -10px;
+  left: 0px;
   top: -8px;
 }
 
@@ -814,7 +814,7 @@ exports[`Tooltip pointer padding should be applied with token distance override 
   .emotion-0 {
   z-index: 80;
   position: absolute;
-  left: -16px;
+  left: 0px;
   top: -8px;
 }
 
@@ -1463,7 +1463,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
   .emotion-0 {
   z-index: 80;
   position: absolute;
-  left: -8px;
+  left: 0px;
   top: -8px;
 }
 
@@ -1600,7 +1600,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   .emotion-0 {
   z-index: 80;
   position: absolute;
-  left: -8px;
+  left: 0px;
   top: -8px;
 }
 
@@ -1737,7 +1737,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   .emotion-0 {
   z-index: 80;
   position: absolute;
-  left: -8px;
+  left: 0px;
   top: -8px;
 }
 
@@ -1875,7 +1875,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   z-index: 80;
   position: absolute;
   left: 8px;
-  top: -8px;
+  top: 0px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

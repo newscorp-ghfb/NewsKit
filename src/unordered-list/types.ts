@@ -4,7 +4,7 @@ import {MQ} from '../utils/style';
 
 export interface UnorderedListProps {
   children?: React.ReactNode | Array<React.ReactNode>;
-  listItemMarker?: NewsKitIcon;
+  listItemMarker?: NewsKitIcon | null;
   markerAlign?: 'start' | 'center' | 'end';
   overrides?: {
     spaceStack?: MQ<string>;
