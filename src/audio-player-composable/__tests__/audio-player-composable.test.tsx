@@ -27,6 +27,12 @@ import {
 
 const version = '0.10.0';
 
+const MOCK_ID = 'MOCK-ID';
+jest.mock('@floating-ui/react-dom-interactions', () => ({
+  ...jest.requireActual('@floating-ui/react-dom-interactions'),
+  useId: () => MOCK_ID,
+}));
+
 const liveAudioProps: AudioPlayerComposableProps = {
   src: 'https://radio.talkradio.co.uk/stream',
   title: 'The Breakfast Show with Giles Coren',

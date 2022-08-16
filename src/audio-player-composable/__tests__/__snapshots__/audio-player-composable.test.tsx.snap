@@ -160,7 +160,7 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-:ra:"
+        id="ref-MOCK-ID"
         type="button"
       >
         <div
@@ -383,7 +383,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-:r4:"
+        id="ref-MOCK-ID"
         type="button"
       >
         <div
@@ -1723,12 +1723,12 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-:r2:"
+        aria-controls="floating-MOCK-ID"
         aria-haspopup="dialog"
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-:r1:"
+        id="ref-MOCK-ID"
         type="button"
       >
         <div
@@ -1757,9 +1757,9 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         </div>
       </button>
       <div
-        aria-labelledby="ref-:r1:"
+        aria-labelledby="ref-MOCK-ID"
         class="nk-popover-enter-done emotion-5"
-        id="floating-:r2:"
+        id="floating-MOCK-ID"
         role="dialog"
         tabindex="-1"
       >
@@ -1856,7 +1856,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         </div>
         <div
           class="emotion-19"
-          id="floating-:r2:-pointer"
+          id="floating-MOCK-ID-pointer"
         />
       </div>
     </section>
@@ -2308,12 +2308,12 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-:r8:"
+        aria-controls="floating-MOCK-ID"
         aria-haspopup="dialog"
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-:r7:"
+        id="ref-MOCK-ID"
         type="button"
       >
         <div
@@ -2342,9 +2342,9 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         </div>
       </button>
       <div
-        aria-labelledby="ref-:r7:"
+        aria-labelledby="ref-MOCK-ID"
         class="nk-popover-enter-done emotion-5"
-        id="floating-:r8:"
+        id="floating-MOCK-ID"
         role="dialog"
         tabindex="-1"
       >
@@ -2441,7 +2441,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         </div>
         <div
           class="emotion-19"
-          id="floating-:r8:-pointer"
+          id="floating-MOCK-ID-pointer"
         />
       </div>
     </section>
