@@ -6,7 +6,7 @@ import {
   toNewsKitIcon,
   InlineMessage,
   GridLayoutItem,
-  getColorFromTheme,
+  getColorCssFromTheme,
 } from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
@@ -36,11 +36,51 @@ const PlaygroundContainer = styled.div`
   justify-content: center;
 `;
 
-const BigRedBlock = styled.div`
-  width: 100px;
-  height: 100px;
-  background: ${getColorFromTheme('illustrationPalette040')};
+const GridBox = styled.div`
+  min-width: 100%;
+  min-height: 100%;
+  ${getColorCssFromTheme('background', 'inkBrand010')}
 `;
+
+const alignControl = [
+  {
+    label: 'none',
+    value: '',
+    isDefault: true,
+  },
+  {
+    label: 'center',
+    value: 'center',
+  },
+  {
+    label: 'start',
+    value: 'start',
+  },
+  {
+    label: 'end',
+    value: 'end',
+  },
+  {
+    label: 'stretch',
+    value: 'stretch',
+  },
+];
+
+const spaceControl = [
+  ...alignControl,
+  {
+    label: 'space-between',
+    value: 'space-between',
+  },
+  {
+    label: 'space-around',
+    value: 'space-around',
+  },
+  {
+    label: 'space-evenly',
+    value: 'space-evenly',
+  },
+];
 
 const GridLayoutComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -85,29 +125,82 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
         componentName: 'GridLayout',
         component: state => (
           <PlaygroundContainer>
-            <GridLayout {...state} columns="1fr 1fr 1fr">
+            <GridLayout
+              {...state}
+              overrides={{width: '90%', minHeight: '200px'}}
+            >
               <GridLayoutItem>
-                <BigRedBlock />
+                <GridBox />
               </GridLayoutItem>
               <GridLayoutItem>
-                <BigRedBlock />
+                <GridBox />
               </GridLayoutItem>
               <GridLayoutItem>
-                <BigRedBlock />
+                <GridBox />
               </GridLayoutItem>
               <GridLayoutItem>
-                <BigRedBlock />
+                <GridBox />
               </GridLayoutItem>
               <GridLayoutItem>
-                <BigRedBlock />
+                <GridBox />
               </GridLayoutItem>
               <GridLayoutItem>
-                <BigRedBlock />
+                <GridBox />
               </GridLayoutItem>
             </GridLayout>
           </PlaygroundContainer>
         ),
         knobs: [
+          {
+            name: 'columns',
+            propName: 'columns',
+            options: [
+              {
+                label: 'none',
+                value: '',
+                isDefault: true,
+              },
+              {
+                label: 'repeat(4, 1fr)',
+                value: 'repeat(4, 1fr)',
+              },
+              {
+                label: '1fr 2fr 1fr',
+                value: '1fr 2fr 1fr',
+              },
+              {
+                label: '100px 1fr 1fr',
+                value: '100px 1fr 1fr',
+              },
+              {
+                label: 'auto auto auto',
+                value: 'auto auto auto',
+              },
+              {
+                label: '100px 150px 200px',
+                value: '100px 150px 200px',
+              },
+            ],
+          },
+          {
+            name: 'rows',
+            propName: 'rows',
+            options: [
+              {
+                label: 'none',
+                value: '',
+                isDefault: true,
+              },
+              {
+                label: 'repeat(2, 50px)',
+                value: 'repeat(2, 50px)',
+              },
+              {
+                label: '20px 50px 100px',
+                value: '20px 50px 100px',
+              },
+            ],
+          },
           {
             name: 'columnGap',
             propName: 'columnGap',
@@ -139,6 +232,26 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
                 isDefault: true,
               },
             ],
+          },
+          {
+            name: 'justifyContent',
+            propName: 'justifyContent',
+            options: spaceControl,
+          },
+          {
+            name: 'alignContent',
+            propName: 'alignContent',
+            options: spaceControl,
+          },
+          {
+            name: 'alignItems',
+            propName: 'alignItems',
+            options: alignControl,
+          },
+          {
+            name: 'justifyItems',
+            propName: 'justifyItems',
+            options: alignControl,
           },
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ] as any,
