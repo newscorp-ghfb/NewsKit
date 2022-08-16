@@ -232,7 +232,7 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
         <>
           The grid layout has the following accessibility considerations:
           <Block spaceStack="space100" />
-          <ContentText title="Ordering">
+          <ContentText title="Ordering" lastItem>
             Ordering can be used to render items in a different order to their
             tab order, this can be useful when building accessible interfaces as
             it allows the most important items to be focused first, even if they
