@@ -238,69 +238,68 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
             {
               name: 'rowGap',
               type: 'MQ<string>',
-              required: false,
               description: 'If provided with, applies rowGap to the grid.',
+              required: null,
             },
             {
               name: 'columnGap',
               type: 'MQ<string>',
-              required: false,
               description: 'If provided with, applies columnGap to the grid.',
+              required: null,
             },
             {
               name: 'rows',
               type: 'MQ<string>',
-              required: false,
               description:
                 'Defines the line names and track sizing functions of the grid rows.',
+              required: null,
             },
             {
               name: 'columns',
               type: 'MQ<string>',
-              required: false,
               description:
                 'Defines the line names and track sizing functions of the grid columns.',
+              required: null,
             },
             {
               name: 'justifyContent',
               type: 'MQ<string>',
-              required: false,
               description:
                 'If parent container has remaining space, this aligns the grid along the inline axis.',
             },
             {
               name: 'alignContent',
               type: 'MQ<string>',
-              required: false,
               description:
                 'If parent container has remaining space, this aligns the grid along the block axis.',
+              required: null,
             },
             {
               name: 'justifyItems',
               type: 'MQ<string>',
-              required: false,
               description: 'Aligns the grid items along the inline axis.',
+              required: null,
             },
             {
               name: 'alignItems',
               type: 'MQ<string>',
-              required: false,
               description: 'Aligns the grid items along the block axis.',
+              required: null,
             },
             {
               name: 'areas',
               type: 'MQ<string>',
-              required: false,
               description:
                 'Specifies named grid areas, establishing the cells in the grid and assigning them names. It visually represents the layout of the grid.',
+              required: null,
             },
             {
               name: 'inline',
               type: 'MQ<boolean>',
-              required: false,
               default: 'false',
               description:
                 'Specifies whether the grid should be displayed in-line',
+              required: null,
             },
           ],
           overridesRows: [
@@ -355,44 +354,44 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
             {
               name: 'area',
               type: 'string',
-              required: false,
               description:
                 'Assigns a name to an item so that it can be referenced by a template created with the GridLayout areas property.',
+              required: null,
             },
             {
               name: 'order',
               type: 'MQ<number>',
-              required: false,
               description:
                 'Sets the order in which to display items in a grid. Items are sorted by ascending order value and then by their oder of appearance in the DOM.',
+              required: null,
             },
             {
               name: 'justifySelf',
               type: 'MQ<string>',
-              required: false,
               description:
                 'Aligns an item inside its containing block on the inline axis.',
+              required: null,
             },
             {
               name: 'alignSelf',
               type: 'MQ<string>',
-              required: false,
               description:
                 'Aligns an item inside its containing block on the block axis.',
+              required: null,
             },
             {
               name: 'column',
               type: 'MQ<string>',
-              required: false,
               description:
                 'Determines a grid item’s location within the grid by referring to specific grid columns.',
+              required: null,
             },
             {
               name: 'row',
               type: 'MQ<string>',
-              required: false,
               description:
                 'Determines a grid item’s location within the grid by referring to specific rows.',
+              required: null,
             },
           ],
         },
