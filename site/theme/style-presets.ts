@@ -268,6 +268,14 @@ export const stylePresets = {
       whiteSpace: 'nowrap',
     },
   },
+  flagSolidPrimary: {
+    base: {
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkInverse}}',
+      backgroundColor: '{{colors.interface020}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+    },
+  },
   flagBrand: {
     base: {
       color: '{{colors.inkInverse}}',
@@ -997,6 +1005,17 @@ export const stylePresets = {
   gitHubMarkDownText: {
     base: {
       color: '{{colors.inkBase}}',
+    },
+  },
+  searchButton: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkBase}}',
+      iconColor: '{{colors.inkBrand020}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.inkBrand020}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
     },
   },
 };

@@ -25,6 +25,7 @@ import {handleEnterKeyPress} from '../helpers/a11y';
 import routes from '../routes';
 import {Link} from './link';
 import {IconFilledGitHub} from './icons/icon-filled-github';
+import {Search} from './search';
 
 const IconFilledMenu = toNewsKitIcon(FilledMenu);
 const IconFilledClose = toNewsKitIcon(FilledClose);
@@ -78,6 +79,7 @@ interface HeaderProps {
   themeMode: string;
   path: string;
   sidebarOpen?: boolean;
+  searchVisible?: boolean;
 }
 
 type HeaderRef = HTMLElement;
@@ -89,10 +91,20 @@ type NavItemProps = {
 
 const navItems = routes.map(({title, subNav}) => ({title, id: subNav[0].id}));
 const siteheaderAreas = `
-logo menu  github theme 
+logo menu search github theme
  `;
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
-  ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
+  (
+    {
+      handleSidebarClick,
+      toggleTheme,
+      themeMode,
+      path,
+      sidebarOpen,
+      searchVisible,
+    },
+    ref,
+  ) => {
     const renderMobileNavigation = (handleClick: () => void) => (
       <MobileMenu>
         <IconButton
@@ -155,11 +167,12 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             >
               <NewsKitLogo />
             </Link>
+            {searchVisible && <Search />}
           </GridLayout>
         </Visible>
         <Visible lg xl>
           <GridLayout
-            columns={{lg: '276px 1fr auto 80px'}}
+            columns={{lg: '276px 1fr auto auto 80px'}}
             columnGap="20px"
             alignItems="center"
             areas={{
@@ -179,6 +192,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                     {renderNavItems(navItems, path)}
                   </Menu>
                 </Areas.Menu>
+                <Areas.Search>{searchVisible && <Search />}</Areas.Search>
                 <Areas.Github>
                   <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
                 </Areas.Github>
