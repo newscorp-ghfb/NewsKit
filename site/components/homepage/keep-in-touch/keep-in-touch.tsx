@@ -8,9 +8,9 @@ import {
   Tag,
   TextBlock,
 } from 'newskit';
-import {SectionIntroductionGrid} from '../../section-introduction-grid';
 import {IconFilledChevronRight} from '../../../../src/icons';
 import {Github, Storybook, Medium} from '../../illustrations/landing-page';
+import {ContentPrimary} from '../../content-structure';
 
 const keepInTouchContent = [
   {
@@ -34,8 +34,7 @@ const keepInTouchContent = [
 ];
 
 export const KeepInTouch = () => (
-  <>
-    <SectionIntroductionGrid title="Keep in touch" />
+  <ContentPrimary headline="Keep in touch">
     <GridLayout columns={{xs: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)'}}>
       {keepInTouchContent.map(({title, url, description, icon}) => (
         <Card
@@ -70,5 +69,5 @@ export const KeepInTouch = () => (
         </Card>
       ))}
     </GridLayout>
-  </>
+  </ContentPrimary>
 );

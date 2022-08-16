@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {SectionIntroductionGrid} from '../../section-introduction-grid';
 import {MediaList} from '../../media-list';
+import {ContentPrimary} from '../../content-structure';
 
 const cardsContent = [
   {
@@ -36,12 +36,11 @@ const cardsContent = [
 ];
 
 export const Explore = () => (
-  <>
-    <SectionIntroductionGrid title="Explore" />
+  <ContentPrimary headline="Explore">
     <MediaList
       layout="3-span"
       cards={cardsContent}
       gridProps={{xsRowGutter: 'space050'}}
     />
-  </>
+  </ContentPrimary>
 );

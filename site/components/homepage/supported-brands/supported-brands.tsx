@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {GridLayoutItem, GridLayout, getSSRId, LinkStandalone} from 'newskit';
-import {SectionIntroductionGrid} from '../../section-introduction-grid';
+import {ContentPrimary} from '../../content-structure';
 import {
   Sun,
   Barrons,
@@ -37,24 +37,32 @@ const randomiseBrands = (
   return shuffled.slice(0, count);
 };
 
-const brandsLogos = randomiseBrands(6, SUPPORTED_BRANDS);
+const getSixRandomLogos = randomiseBrands(6, SUPPORTED_BRANDS);
 
-export const SupportedBrands = () => (
-  <>
-    <SectionIntroductionGrid title="Supported brands">
-      World-class brands trust NewsKit to build their products:
-    </SectionIntroductionGrid>
-    <GridLayout
-      columns={{xs: 'repeat(3, 1fr)', md: 'repeat(6, 1fr)'}}
-      justifyItems="center"
+export const SupportedBrands = () => {
+  const [brandsLogos, setBrandsLogos] = React.useState(getSixRandomLogos);
+
+  React.useEffect(() => {
+    setBrandsLogos(getSixRandomLogos);
+  }, []);
+
+  return (
+    <ContentPrimary
+      headline="Supported brands"
+      description="World-class brands trust NewsKit to build their products:"
     >
-      {brandsLogos.map(({icon, url}) => (
-        <GridLayoutItem key={getSSRId()}>
-          <LinkStandalone target="_blank" external={false} href={url}>
-            {icon}
-          </LinkStandalone>
-        </GridLayoutItem>
-      ))}
-    </GridLayout>
-  </>
-);
+      <GridLayout
+        columns={{xs: 'repeat(3, 1fr)', md: 'repeat(6, 1fr)'}}
+        justifyItems="center"
+      >
+        {brandsLogos.map(({icon, url}) => (
+          <GridLayoutItem key={getSSRId()}>
+            <LinkStandalone target="_blank" external={false} href={url}>
+              {icon}
+            </LinkStandalone>
+          </GridLayoutItem>
+        ))}
+      </GridLayout>
+    </ContentPrimary>
+  );
+};

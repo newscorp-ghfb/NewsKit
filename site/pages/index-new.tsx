@@ -38,59 +38,61 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
-// The World Design Systems Week 2022 banner should hide automatically after the event which is on 19-23 September 2022
-const eventDateEnd = new Date('2022-09-24:00:00:00');
-const showUntilEventDate = new Date() < eventDateEnd;
+const Index = (layoutProps: LayoutProps) => {
+  // The World Design Systems Week 2022 banner should hide automatically after the event which is on 19-23 September 2022
+  const eventDateEnd = new Date('2022-09-24');
+  const showEventBanner = new Date() < eventDateEnd;
 
-const Index = (layoutProps: LayoutProps) => (
-  <Layout {...layoutProps} newPage hideSidebar path="/index-new">
-    <GridLayout
-      rowGap={{xs: 'space070', md: 'space100'}}
-      overrides={{marginBlockEnd: 'space080'}}
-    >
-      <Hero contentContainerOverrides={GRID_SECTION_OVERRIDES} />
-      {showUntilEventDate && (
+  return (
+    <Layout {...layoutProps} newPage hideSidebar path="/index-new">
+      <GridLayout
+        rowGap={{xs: 'space070', md: 'space100'}}
+        overrides={{marginBlockEnd: 'space080'}}
+      >
+        <Hero contentContainerOverrides={GRID_SECTION_OVERRIDES} />
+        {showEventBanner && (
+          <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+            <FeatureCard
+              title="World Design Systems Week 2022"
+              description="19-23 September 2022"
+              stylePrefix="worlddesignsystemsweekCard"
+              href="https://www.designsystemsweek.com/"
+              layout="horizontal"
+              buttonLabel="Read more"
+              buttonHref="https://www.designsystemsweek.com/"
+              buttonLogicalProps={{paddingInline: 'space000'}}
+            />
+          </GridLayout>
+        )}
+        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+          <Explore />
+        </GridLayout>
+        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+          <GridBox>
+            <Placeholder>Whats New</Placeholder>
+          </GridBox>
+        </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
           <FeatureCard
-            title="World Design Systems Week 2022"
-            description="19-23 September 2022"
-            stylePrefix="worlddesignsystemsweekCard"
-            href="https://www.designsystemsweek.com/"
+            title="Contribute"
+            description="Join the community and help grow NewsKit for everyone."
+            stylePrefix="contributeCard"
+            href="/about/contribute"
             layout="horizontal"
-            buttonLabel="Read more"
-            buttonHref="https://www.designsystemsweek.com/"
+            buttonLabel="Start contributing"
+            buttonHref="/about/contribute"
             buttonLogicalProps={{paddingInline: 'space000'}}
           />
         </GridLayout>
-      )}
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <Explore />
+        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+          <KeepInTouch />
+        </GridLayout>
+        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+          <SupportedBrands />
+        </GridLayout>
       </GridLayout>
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Whats New</Placeholder>
-        </GridBox>
-      </GridLayout>
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <FeatureCard
-          title="Contribute"
-          description="Join the community and help grow NewsKit for everyone."
-          stylePrefix="contributeCard"
-          href="/about/contribute"
-          layout="horizontal"
-          buttonLabel="Start contributing"
-          buttonHref="/about/contribute"
-          buttonLogicalProps={{paddingInline: 'space000'}}
-        />
-      </GridLayout>
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <KeepInTouch />
-      </GridLayout>
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <SupportedBrands />
-      </GridLayout>
-    </GridLayout>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default Index;
