@@ -50,11 +50,11 @@ export interface StyledStackProps extends CommonStackProps {
 }
 
 export interface StackProps extends Partial<CommonStackProps>, LogicalProps {
-  children?: React.ReactNode;
   wrap?: MQ<FlexWrap>;
   list?: boolean;
   ariaLabel?: string;
   role?: string;
+  children?: React.ReactNode;
 }
 
 export interface ChildProps
