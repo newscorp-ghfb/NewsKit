@@ -3,16 +3,30 @@ import {
   Block,
   styled,
   GridLayout,
+  toNewsKitIcon,
+  InlineMessage,
   GridLayoutItem,
   getColorFromTheme,
 } from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
+import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
 import {ContentText} from '../../components/text-section/content-text';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
 
 const PlaygroundContainer = styled.div`
   display: flex;
@@ -238,67 +252,177 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
             {
               name: 'rowGap',
               type: 'MQ<string>',
-              description: 'If provided with, applies rowGap to the grid.',
+              description: (
+                <>
+                  If provided, applies rowGap to the grid, using the{' '}
+                  <InlineCode>row-gap</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'columnGap',
               type: 'MQ<string>',
-              description: 'If provided with, applies columnGap to the grid.',
+              description: (
+                <>
+                  If provided with, applies columnGap to the grid, using the{' '}
+                  <InlineCode>column-gap</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'rows',
               type: 'MQ<string>',
-              description:
-                'Defines the line names and track sizing functions of the grid rows.',
+              description: (
+                <>
+                  Defines the line names and track sizing functions of the grid
+                  rows, using the <InlineCode>grid-template-rows</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'columns',
               type: 'MQ<string>',
-              description:
-                'Defines the line names and track sizing functions of the grid columns.',
+              description: (
+                <>
+                  Defines the line names and track sizing functions of the grid
+                  columns, using the{' '}
+                  <InlineCode>grid-template-columns</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'justifyContent',
               type: 'MQ<string>',
-              description:
-                'If parent container has remaining space, this aligns the grid along the inline axis.',
+              description: (
+                <>
+                  If parent container has remaining space, this aligns the grid
+                  along the inline axis, using the{' '}
+                  <InlineCode>justify-content</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
+              required: null,
             },
             {
               name: 'alignContent',
               type: 'MQ<string>',
-              description:
-                'If parent container has remaining space, this aligns the grid along the block axis.',
+              description: (
+                <>
+                  If parent container has remaining space, this aligns the grid
+                  along the block axis, using the{' '}
+                  <InlineCode>align-content</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'justifyItems',
               type: 'MQ<string>',
-              description: 'Aligns the grid items along the inline axis.',
+              description: (
+                <>
+                  Aligns the grid items along the inline axis, using the{' '}
+                  <InlineCode>justify-items</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'alignItems',
               type: 'MQ<string>',
-              description: 'Aligns the grid items along the block axis.',
+              description: (
+                <>
+                  Aligns the grid items along the block axis, using the{' '}
+                  <InlineCode>align-items</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'areas',
               type: 'MQ<string>',
-              description:
-                'Specifies named grid areas, establishing the cells in the grid and assigning them names. It visually represents the layout of the grid.',
+              description: (
+                <>
+                  Specifies named grid areas, establishing the cells in the grid
+                  and assigning them names. It visually represents the layout of
+                  the grid, using the{' '}
+                  <InlineCode>grid-template-areas</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'inline',
               type: 'MQ<boolean>',
               default: 'false',
-              description:
-                'Specifies whether the grid should be displayed in-line',
+              description: (
+                <>
+                  Specifies whether the grid should be displayed in-line, using
+                  the <InlineCode>display: inline-grid</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
           ],
@@ -354,47 +478,141 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
             {
               name: 'area',
               type: 'string',
-              description:
-                'Assigns a name to an item so that it can be referenced by a template created with the GridLayout areas property.',
+              description: (
+                <>
+                  Assigns a name to an item so that it can be referenced by a
+                  template created with the GridLayout areas property, using the{' '}
+                  <InlineCode>grid-area</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'order',
               type: 'MQ<number>',
-              description:
-                'Sets the order in which to display items in a grid. Items are sorted by ascending order value and then by their oder of appearance in the DOM.',
+              description: (
+                <>
+                  Sets the order in which to display items in a grid. Items are
+                  sorted by ascending order value and then by their oder of
+                  appearance in the DOM, using the{' '}
+                  <InlineCode>order</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/order"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'justifySelf',
               type: 'MQ<string>',
-              description:
-                'Aligns an item inside its containing block on the inline axis.',
+              description: (
+                <>
+                  Aligns an item inside its containing block on the inline axis,
+                  using the <InlineCode>justify-self</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'alignSelf',
               type: 'MQ<string>',
-              description:
-                'Aligns an item inside its containing block on the block axis.',
+              description: (
+                <>
+                  Aligns an item inside its containing block on the block axis,
+                  using the <InlineCode>align-self</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'column',
               type: 'MQ<string>',
-              description:
-                'Determines a grid item’s location within the grid by referring to specific grid columns.',
+              description: (
+                <>
+                  Determines a grid item’s location within the grid by referring
+                  to specific grid columns, using the{' '}
+                  <InlineCode>grid-column</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
             {
               name: 'row',
               type: 'MQ<string>',
-              description:
-                'Determines a grid item’s location within the grid by referring to specific rows.',
+              description: (
+                <>
+                  Determines a grid item’s location within the grid by referring
+                  to specific rows, using the <InlineCode>grid-row</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
               required: null,
             },
           ],
+          propsFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="GridLayoutItem"
+              title="Note"
+              overrides={{
+                marginBlockStart: 'space070',
+              }}
+            >
+              GridLayoutItem is derived from the{' '}
+              <Link href="/components/block/">block</Link> component, so all it
+              allows stylePresets, transitionPresets, and logicalProps.
+            </InlineMessage>
+          ),
         },
+      ],
+    }}
+    related={{
+      related: [
+        'Block',
+        'Card',
+        'Divider',
+        'Drawer',
+        'Fieldset',
+        'Grid',
+        'Modal',
+        'Popover',
+        'Stack',
+        'Structured List',
+        'Visibility',
       ],
     }}
   />
