@@ -43,75 +43,75 @@ const CodeBlock: React.FC<{children: string}> = ({children}) => (
   </TextBlock>
 );
 
-const commonOverridesRows = () => [
+const commonLogicalRows = () => [
   {
-    attribute: 'paddingInline',
+    name: 'paddingInline',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
   },
   {
-    attribute: 'paddingInlineStart',
+    name: 'paddingInlineStart',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical inline start padding of the container. This space token can also be used on breakpoints.',
   },
   {
-    attribute: 'paddingInlineEnd',
+    name: 'paddingInlineEnd',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical inline end padding of the container. This space token can also be used on breakpoints.',
   },
   {
-    attribute: 'paddingBlock',
+    name: 'paddingBlock',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.',
   },
   {
-    attribute: 'paddingBlockStart',
+    name: 'paddingBlockStart',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical block start padding of the container. This space token can also be used on breakpoints.',
   },
   {
-    attribute: 'paddingBlockEnd',
+    name: 'paddingBlockEnd',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical block end padding of the container. This space token can also be used on breakpoints.',
   },
   {
-    attribute: 'marginInline',
+    name: 'marginInline',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical inline start and end margin of the container. This space token can also be used on breakpoints.',
   },
   {
-    attribute: 'marginInlineStart',
+    name: 'marginInlineStart',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical inline start margin of the container. This space token can also be used on breakpoints.',
   },
   {
-    attribute: 'marginInlineEnd',
+    name: 'marginInlineEnd',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical inline end margin of the container. This space token can also be used on breakpoints.',
   },
   {
-    attribute: 'marginBlock',
+    name: 'marginBlock',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical block start and end margin of the container. This space token can also be used on breakpoints.',
   },
   {
-    attribute: 'marginBlockStart',
+    name: 'marginBlockStart',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical block start margin of the container. This space token can also be used on breakpoints.',
   },
   {
-    attribute: 'marginBlockEnd',
+    name: 'marginBlockEnd',
     type: 'MQ<string>',
     description:
       'It can take one space token to specify the logical block end margin of the container. This space token can also be used on breakpoints.',
@@ -725,7 +725,7 @@ const schema = yup.object().shape({
             },
             {
               name: 'validationMode',
-              type: 'onSubmit | onValidation',
+              type: 'onBlur | onSubmit',
               default: 'onSubmit',
               description: (
                 <>
@@ -738,7 +738,7 @@ const schema = yup.object().shape({
             },
             {
               name: 'reValidationMode',
-              type: 'onSubmit | onValidation',
+              type: 'onBlur | onSubmit',
               default: 'onBlur',
               description: (
                 <>
@@ -769,8 +769,8 @@ const schema = yup.object().shape({
                 'The resolver will validate your input data against the schema and return with either errors or a valid result.',
               required: undefined,
             },
+            ...commonLogicalRows(),
           ],
-          overridesRows: [...commonOverridesRows()],
         },
         {
           title: 'FormInput',
@@ -784,7 +784,7 @@ const schema = yup.object().shape({
             },
             {
               name: 'size',
-              type: 'string',
+              type: `'small' | 'medium' | 'large'`,
               default: 'medium',
               description:
                 'If provided, defines the size of the FormInput component.',
@@ -849,6 +849,7 @@ const schema = yup.object().shape({
               description:
                 'An Icon can be added to the end of the Assistive Text',
             },
+            ...commonLogicalRows(),
           ],
           overridesRows: [
             {
@@ -920,7 +921,6 @@ const schema = yup.object().shape({
               description:
                 'If provided, overrides the inline space of the end enhancer.',
             },
-            ...commonOverridesRows(),
           ],
           propsFooter: (
             <>
@@ -946,9 +946,9 @@ const schema = yup.object().shape({
           propsRows: [
             {
               name: 'size',
-              type: 'string',
+              type: `'small' | 'medium' | 'large'`,
               default: 'medium',
-              description: 'Defines the size of the Assistive Text.',
+              description: 'Defines the size of the label.',
             },
             {
               name: 'state',
@@ -961,6 +961,7 @@ const schema = yup.object().shape({
               description: '',
               required: true,
             },
+            ...commonLogicalRows(),
           ],
           overridesRows: [
             {
@@ -995,7 +996,6 @@ const schema = yup.object().shape({
               description:
                 'If provided, this overrides the stack space applied to the FormInputLabel.',
             },
-            ...commonOverridesRows(),
           ],
           propsFooter: (
             <>
