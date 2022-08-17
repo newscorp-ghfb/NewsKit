@@ -881,19 +881,6 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      performance: true,
-      seo: true,
-      props: true,
-      uiKit: false,
-      design: true,
-      themes: true,
-    }}
     related={{
       related: [
         'Button',

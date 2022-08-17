@@ -11,7 +11,6 @@ import {ComponentPageBasicTemplate} from '../../templates/component-page-templat
 import {
   AccessibilitySection,
   CommonSection,
-  ComplianceSection,
   ComponentAPISection,
   RelatedComponentsSection,
   SEOSection,
@@ -324,7 +323,6 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
         },
       ]}
     />
-    <ComplianceSection usage accessibility seo props />
     <RelatedComponentsSection
       related={[
         'Block',

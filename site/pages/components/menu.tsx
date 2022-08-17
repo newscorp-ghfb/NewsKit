@@ -803,19 +803,6 @@ const MenuComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      states: true,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: false,
-      performance: false,
-      design: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
       related: ['Accordion', 'Link', 'Scroll', 'Tabs', 'Tags', 'Title Bar'],
     }}

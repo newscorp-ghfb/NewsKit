@@ -539,19 +539,6 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      props: true,
-      performance: false,
-      design: true,
-      uiKit: false,
-      themes: true,
-    }}
     related={{
       related: [
         'Block',

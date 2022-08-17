@@ -266,13 +266,6 @@ const BlockComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      usage: true,
-      accessibility: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
       related: [
         'Card',

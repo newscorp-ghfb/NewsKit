@@ -644,19 +644,6 @@ const ToastComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      states: true,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: undefined,
-      performance: false,
-      design: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
       related: [
         'Banner',

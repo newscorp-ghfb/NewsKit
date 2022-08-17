@@ -269,19 +269,6 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: undefined,
-      usage: true,
-      accessibility: true,
-      performance: false,
-      seo: true,
-      props: true,
-      uiKit: undefined,
-      design: true,
-      themes: true,
-    }}
     related={{
       related: [
         'Block',
