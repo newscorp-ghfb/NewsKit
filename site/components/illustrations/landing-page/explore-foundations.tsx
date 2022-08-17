@@ -22,102 +22,120 @@ const Foundations: React.FC = () => {
       <Rect width="1344" height="759" fill="illustrationBackground010" />
       <g filter={`url(#${filter0})`}>
         <Path
-          d="M1085.89 329.586C1128.59 317.953 1174.57 350.245 1188.59 401.712C1202.61 453.178 1179.37 504.331 1136.67 515.965L650.782 637.42C608.082 649.054 664.803 599.702 650.782 548.235C636.76 496.768 660.008 445.616 702.707 433.982L1085.89 329.586Z"
-          fill="interfaceBackground"
+          d="M1086.65 331.449C1130.54 319.491 1177.8 352.683 1192.22 405.586C1206.63 458.489 1182.73 511.068 1138.84 523.026L639.404 647.87C595.514 659.828 653.817 609.1 639.404 556.197C624.991 503.294 648.888 450.715 692.779 438.757L1086.65 331.449Z"
+          fill="white"
         />
       </g>
       <Circle
-        cx="1095.71"
-        cy="429.172"
-        r="74.5574"
-        transform="rotate(14.76 1095.71 429.172)"
+        cx="1096.74"
+        cy="433.813"
+        r="76.029"
+        transform="rotate(14.76 1096.74 433.813)"
         fill="#7264EF"
+        stroke="#E4E4E4"
+        stroke-width="1.21631"
       />
       <Circle
-        cx="933.466"
-        cy="469.661"
-        r="74.5574"
-        transform="rotate(14.76 933.466 469.661)"
+        cx="929.974"
+        cy="475.432"
+        r="76.029"
+        transform="rotate(14.76 929.974 475.432)"
         fill="#9B87FC"
+        stroke="#E4E4E4"
+        stroke-width="1.21631"
       />
       <Circle
-        cx="770.791"
-        cy="511.79"
-        r="74.5574"
-        transform="rotate(14.76 770.791 511.79)"
+        cx="762.761"
+        cy="518.735"
+        r="76.029"
+        transform="rotate(14.76 762.761 518.735)"
         fill="#BBAEFF"
+        stroke="#E4E4E4"
+        stroke-width="1.21631"
       />
       <g filter={`url(#${filter1})`}>
         <Path
-          d="M1009.83 216.915C1048.64 194.275 1101.89 213.273 1128.77 259.349C1155.65 305.424 1145.97 361.129 1107.17 383.769L677.88 626.332C639.071 648.972 666.844 590.579 639.965 544.504C613.085 498.428 622.756 442.723 661.564 420.083L1009.83 216.915Z"
-          fill="interfaceBackground"
+          d="M1008.47 215.634C1048.36 192.363 1103.09 211.891 1130.72 259.252C1158.35 306.613 1148.41 363.872 1108.52 387.143L667.258 636.472C627.367 659.744 655.915 599.722 628.286 552.361C600.656 505.001 610.597 447.742 650.488 424.47L1008.47 215.634Z"
+          fill="white"
         />
       </g>
       <Circle
-        cx="1049.47"
-        cy="307.285"
-        r="74.5574"
-        transform="rotate(-0.258284 1049.47 307.285)"
+        cx="1049.21"
+        cy="308.526"
+        r="76.029"
+        transform="rotate(-0.258284 1049.21 308.526)"
         fill="#65BBC4"
+        stroke="#E4E4E4"
+        stroke-width="1.21631"
       />
       <Circle
-        cx="903.26"
-        cy="388.433"
-        r="74.5574"
-        transform="rotate(-0.258284 903.26 388.433)"
+        cx="898.926"
+        cy="391.938"
+        r="76.029"
+        transform="rotate(-0.258284 898.926 391.938)"
         fill="#81D2DA"
+        stroke="#E4E4E4"
+        stroke-width="1.21631"
       />
       <Circle
-        cx="757.06"
-        cy="471.276"
-        r="74.5574"
-        transform="rotate(-0.258284 757.06 471.276)"
+        cx="748.646"
+        cy="477.092"
+        r="76.029"
+        transform="rotate(-0.258284 748.646 477.092)"
         fill="#A8E0E6"
+        stroke="#E4E4E4"
+        stroke-width="1.21631"
       />
       <g filter={`url(#${filter2})`}>
         <Path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M1045.73 146.704C1008.8 108.208 947.663 106.934 909.167 143.859L563.703 475.222C525.207 512.147 523.933 573.288 560.858 611.785C597.783 650.281 658.925 651.555 697.421 614.63L1042.88 283.267C1081.38 246.342 1082.66 185.201 1045.73 146.704ZM627.427 578.564C638.787 575.772 645.733 564.3 642.941 552.94C640.15 541.58 628.677 534.634 617.317 537.426C605.957 540.217 599.011 551.69 601.803 563.05C604.595 574.41 616.067 581.356 627.427 578.564Z"
-          fill="interfaceBackground"
+          d="M1045.37 143.465C1007.41 103.895 944.567 102.586 904.997 140.541L549.897 481.147C510.326 519.102 509.017 581.949 546.972 621.519C584.927 661.09 647.774 662.399 687.345 624.444L1042.45 283.838C1082.02 245.883 1083.32 183.036 1045.37 143.465ZM615.398 587.372C627.075 584.503 634.215 572.71 631.345 561.033C628.476 549.357 616.684 542.217 605.007 545.086C593.33 547.956 586.19 559.748 589.06 571.425C591.929 583.102 603.721 590.242 615.398 587.372Z"
+          fill="white"
         />
       </g>
       <g filter={`url(#${filter3})`}>
         <Path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M696.783 613.963L1042.25 282.601C1080.37 246.029 1081.64 185.472 1045.06 147.344C1008.49 109.216 947.936 107.954 909.807 144.526L564.344 475.888C526.216 512.46 524.954 573.017 561.526 611.145C598.098 649.273 658.654 650.535 696.783 613.963ZM1045.73 146.704C1008.81 108.208 947.664 106.934 909.168 143.859L563.704 475.221C525.208 512.147 523.934 573.288 560.859 611.785C597.784 650.281 658.926 651.555 697.422 614.63L1042.89 283.267C1081.38 246.342 1082.66 185.201 1045.73 146.704Z"
+          d="M686.688 623.758L1041.79 283.152C1080.98 245.56 1082.28 183.314 1044.69 144.122C1007.09 104.931 944.847 103.634 905.655 141.226L550.555 481.832C511.363 519.424 510.066 581.67 547.659 620.862C585.251 660.053 647.497 661.35 686.688 623.758ZM1045.37 143.465C1007.42 103.895 944.568 102.585 904.998 140.541L549.898 481.146C510.327 519.102 509.018 581.949 546.973 621.519C584.928 661.089 647.775 662.399 687.346 624.443L1042.45 283.838C1082.02 245.882 1083.33 183.035 1045.37 143.465Z"
           fill="#E4E4E4"
         />
       </g>
       <Circle
-        cx="977.283"
-        cy="215.238"
-        r="74.5574"
-        transform="rotate(-13.8065 977.283 215.238)"
+        cx="975.013"
+        cy="213.91"
+        r="76.029"
+        transform="rotate(-13.8065 975.013 213.91)"
         fill="#577FFB"
+        stroke="#E4E4E4"
+        stroke-width="1.21631"
       />
       <Circle
-        cx="854.152"
-        cy="328.379"
-        r="74.5574"
-        transform="rotate(-13.8065 854.152 328.379)"
+        cx="848.448"
+        cy="330.208"
+        r="76.029"
+        transform="rotate(-13.8065 848.448 330.208)"
         fill="#87A4FC"
+        stroke="#E4E4E4"
+        stroke-width="1.21631"
       />
       <Circle
-        cx="731.427"
-        cy="443.165"
-        r="74.5574"
-        transform="rotate(-13.8065 731.427 443.165)"
+        cx="722.299"
+        cy="448.197"
+        r="76.029"
+        transform="rotate(-13.8065 722.299 448.197)"
         fill="#AEBFFF"
+        stroke="#E4E4E4"
+        stroke-width="1.21631"
       />
       <defs>
         <filter
           id={filter0}
-          x="615.628"
-          y="317.748"
-          width="595.982"
-          height="349.79"
+          x="603.27"
+          y="319.281"
+          width="612.607"
+          height="359.548"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -128,8 +146,8 @@ const Foundations: React.FC = () => {
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
             result="hardAlpha"
           />
-          <feOffset dy="9.46638" />
-          <feGaussianBlur stdDeviation="9.46638" />
+          <feOffset dy="9.73045" />
+          <feGaussianBlur stdDeviation="9.73045" />
           <feColorMatrix
             type="matrix"
             values="0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0.08 0"
@@ -137,21 +155,21 @@ const Foundations: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2129_688751"
+            result="effect1_dropShadow_2470_754029"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2129_688751"
+            in2="effect1_dropShadow_2470_754029"
             result="shape"
           />
         </filter>
         <filter
           id={filter1}
-          x="605.816"
-          y="197.9"
-          width="557.1"
-          height="461.867"
+          x="593.184"
+          y="196.089"
+          width="572.64"
+          height="474.75"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -162,8 +180,8 @@ const Foundations: React.FC = () => {
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
             result="hardAlpha"
           />
-          <feOffset dy="9.46638" />
-          <feGaussianBlur stdDeviation="9.46638" />
+          <feOffset dy="9.73045" />
+          <feGaussianBlur stdDeviation="9.73045" />
           <feColorMatrix
             type="matrix"
             values="0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0.08 0"
@@ -171,21 +189,21 @@ const Foundations: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2129_688751"
+            result="effect1_dropShadow_2470_754029"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2129_688751"
+            in2="effect1_dropShadow_2470_754029"
             result="shape"
           />
         </filter>
         <filter
           id={filter2}
-          x="515.044"
-          y="107.511"
-          width="576.501"
-          height="562.4"
+          x="499.88"
+          y="103.179"
+          width="592.582"
+          height="578.088"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -196,8 +214,8 @@ const Foundations: React.FC = () => {
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
             result="hardAlpha"
           />
-          <feOffset dy="9.46638" />
-          <feGaussianBlur stdDeviation="9.46638" />
+          <feOffset dy="9.73045" />
+          <feGaussianBlur stdDeviation="9.73045" />
           <feColorMatrix
             type="matrix"
             values="0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0.08 0"
@@ -205,21 +223,21 @@ const Foundations: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2129_688751"
+            result="effect1_dropShadow_2470_754029"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2129_688751"
+            in2="effect1_dropShadow_2470_754029"
             result="shape"
           />
         </filter>
         <filter
           id={filter3}
-          x="515.045"
-          y="107.511"
-          width="576.501"
-          height="562.399"
+          x="499.881"
+          y="103.178"
+          width="592.582"
+          height="578.088"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -230,8 +248,8 @@ const Foundations: React.FC = () => {
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
             result="hardAlpha"
           />
-          <feOffset dy="9.46638" />
-          <feGaussianBlur stdDeviation="9.46638" />
+          <feOffset dy="9.73045" />
+          <feGaussianBlur stdDeviation="9.73045" />
           <feColorMatrix
             type="matrix"
             values="0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0.08 0"
@@ -239,12 +257,12 @@ const Foundations: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2129_688751"
+            result="effect1_dropShadow_2470_754029"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2129_688751"
+            in2="effect1_dropShadow_2470_754029"
             result="shape"
           />
         </filter>
