@@ -352,14 +352,14 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v3-cypress-{{ checksum "yarn.lock" }}
+            - v1-cypress-{{ checksum "yarn.lock" }}
       - attach_workspace:
           at: ~/project
       - run:
           name: install cypress
           command: make install_cypress
       - save_cache:
-          key: v3-cypress-{{ checksum "yarn.lock" }}
+          key: v1-cypress-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache
       - persist_to_workspace:
@@ -969,7 +969,7 @@ jobs:
             yarn add react-dom@17.0.1
             yarn add @emotion/react 
             yarn add @emotion/styled
-            yarn add -D cypress@9.7.0;
+            yarn add -D cypress@9.1.0;
       - run:
           name: Serve and test app with Cypress
           command: |

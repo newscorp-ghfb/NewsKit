@@ -7,7 +7,7 @@ SHORT_GIT_HASH := $(shell echo ${CIRCLE_SHA1} | cut -c -9)
 # CURRENT BRANCH CHECKED OUT
 CURRENT_BRANCH = $(shell git symbolic-ref --short -q HEAD)
 
-# Cleans branch into a url friendly format 
+# Cleans branch into a url friendly format
 BASE_PATH = $(shell node -p "/(^main$$)/.test('${CURRENT_BRANCH}') ? '' : require('./scripts/branch-name-to-url.js').branchNameToUrl('${CURRENT_BRANCH}')")
 
 BASE_URI = ${SITE_BASE_URL}${BASE_PATH}/
@@ -17,7 +17,7 @@ install:
 
 # When changing the version, make sure it matches the one used in the `test_newskit_in_nextjs_app` CircleCI's job.
 install_cypress:
-	yarn add -D cypress@9.7.0;
+	yarn add -D cypress@9.1.0;
 
 build_icons:
 	yarn build:icons
