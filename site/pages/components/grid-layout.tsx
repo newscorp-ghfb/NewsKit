@@ -717,19 +717,7 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: [
-        'Block',
-        'Card',
-        'Divider',
-        'Drawer',
-        'Fieldset',
-        'Grid',
-        'Modal',
-        'Popover',
-        'Stack',
-        'Structured List',
-        'Visibility',
-      ],
+      related: ['Block', 'Grid', 'Stack', 'Visibility'],
     }}
   />
 );
