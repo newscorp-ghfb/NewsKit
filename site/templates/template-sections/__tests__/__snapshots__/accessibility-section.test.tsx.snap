@@ -269,10 +269,6 @@ exports[`AccessibilitySection renders section as expected 1`] = `
   }
 }
 
-.emotion-13 {
-  margin-bottom: 64px;
-}
-
 <div
     data-comp="NewsKit Cell"
     data-props="{
@@ -421,9 +417,6 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 }
                 </div>
               </div>
-              <div
-                class="emotion-13"
-              />
               <div
                 class="emotion-8"
               >
