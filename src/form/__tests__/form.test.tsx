@@ -492,11 +492,7 @@ describe('FormInput', () => {
       <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
 
       <FormInputLabel>Pizza topping</FormInputLabel>
-      <FormInputSelect
-        data-testid="select-pizza-topping"
-        panelId="form-select-test-panal-id"
-        panelLabel="form-select-test-panal-label"
-      >
+      <FormInputSelect data-testid="select-pizza-topping">
         <SelectOption value="ham">Ham</SelectOption>
         <SelectOption value="pineapple">Pineapple</SelectOption>
       </FormInputSelect>
