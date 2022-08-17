@@ -11,10 +11,10 @@ import {InstrumentationEvent} from '../instrumentation';
 import {NewsKitProvider} from '../newskit-provider';
 import {RenderToFragmentFactory, RenderWithThemeFactory} from './types';
 
-export const renderToFragment = (
+export const renderToFragment: (
   ui: React.ReactElement,
   options?: RenderOptions,
-) => renderer(ui, options).asFragment();
+) => DocumentFragment = (ui, options) => renderer(ui, options).asFragment();
 
 export const renderWithImplementation: <T extends {}>(
   Component: React.ComponentType<T>,
