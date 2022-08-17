@@ -849,6 +849,12 @@ const schema = yup.object().shape({
               description:
                 'An Icon can be added to the end of the Assistive Text',
             },
+            {
+              name: 'validationIcon',
+              type: 'MQ<boolean>',
+              description:
+                'If true, adds a validation icon next to the assistive text label.',
+            },
             ...commonLogicalRows(),
           ],
           overridesRows: [
