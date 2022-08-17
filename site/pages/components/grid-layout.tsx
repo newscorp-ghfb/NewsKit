@@ -180,6 +180,10 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
                 label: '100px 150px 200px',
                 value: '100px 150px 200px',
               },
+              {
+                label: '1fr 1fr',
+                value: '1fr 1fr',
+              },
             ],
           },
           {
