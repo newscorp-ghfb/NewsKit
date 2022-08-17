@@ -1406,6 +1406,8 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   z-index: 80;
   min-width: 140px;
   position: absolute;
+  left: 0px;
+  top: -24px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1721,6 +1723,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -1768,7 +1771,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
       </button>
       <div
         aria-labelledby="ref-MOCK-ID"
-        class="nk-popover-enter-done emotion-5"
+        class=" nk-popover-enter-done emotion-5"
         id="floating-MOCK-ID"
         role="dialog"
         tabindex="-1"
@@ -1885,6 +1888,8 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   z-index: 80;
   min-width: 140px;
   position: absolute;
+  left: 0px;
+  top: -24px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2200,6 +2205,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -2222,7 +2228,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
       </button>
       <div
         aria-labelledby="ref-MOCK-ID"
-        class="nk-popover-enter-done emotion-0"
+        class=" nk-popover-enter-done emotion-0"
         id="floating-MOCK-ID"
         role="dialog"
         tabindex="-1"
@@ -2445,6 +2451,8 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   z-index: 80;
   min-width: 140px;
   position: absolute;
+  left: 0px;
+  top: -24px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2760,6 +2768,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -2807,7 +2816,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
       </button>
       <div
         aria-labelledby="ref-MOCK-ID"
-        class="nk-popover-enter-done emotion-5"
+        class=" nk-popover-enter-done emotion-5"
         id="floating-MOCK-ID"
         role="dialog"
         tabindex="-1"

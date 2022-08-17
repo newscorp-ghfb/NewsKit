@@ -899,58 +899,70 @@ describe('Audio Player Composable', () => {
       global.ResizeObserver = null;
     });
 
-    it('should render correctly in popover', () => {
+    it('should render correctly in popover', async () => {
       const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedPopover,
       );
 
-      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      await act(() => {
+        fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      });
 
       expect(asFragment()).toMatchSnapshot();
     });
 
-    it('should render correctly in modal', () => {
+    it('should render correctly in modal', async () => {
       const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedModal,
       );
-      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      await act(() => {
+        fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      });
 
       expect(asFragment()).toMatchSnapshot();
     });
 
-    it('should render correctly with custom trigger', () => {
+    it('should render correctly with custom trigger', async () => {
       const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedCustomTrigger,
       );
-      fireEvent.click(
-        getByTestId('audio-player-playback-speed-custom-trigger'),
-      );
+      await act(() => {
+        fireEvent.click(
+          getByTestId('audio-player-playback-speed-custom-trigger'),
+        );
+      });
 
       expect(asFragment()).toMatchSnapshot();
     });
 
-    it('should render correctly with overrides', () => {
+    it('should render correctly with overrides', async () => {
       const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedWithOverrides,
       );
 
-      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      await act(() => {
+        fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      });
 
       expect(asFragment()).toMatchSnapshot();
     });
 
-    it('should close modal on X click', () => {
+    it('should close modal on X click', async () => {
       const {asFragment, getByTestId, getByLabelText} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedModal,
       );
 
-      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
-      fireEvent.click(getByLabelText('close'));
+      await act(() => {
+        fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      });
+      await act(() => {
+        fireEvent.click(getByLabelText('close'));
+      });
 
       expect(asFragment()).toMatchSnapshot();
     });
@@ -963,7 +975,9 @@ describe('Audio Player Composable', () => {
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
       expect(audioElement.playbackRate).toEqual(1);
-      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      await act(() => {
+        fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      });
       userEvent.keyboard('[ArrowUp][Enter]');
       await waitFor(() => expect(audioElement.playbackRate).toEqual(0.8));
     });
