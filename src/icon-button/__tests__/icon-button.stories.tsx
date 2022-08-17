@@ -8,12 +8,10 @@ import {
   Grid,
   Stack,
   StackDistribution,
-  IconFilledEmail,
-  IconFilledLink,
-  IconFilledPause,
   ButtonOverrides,
   ButtonSize,
 } from '../..';
+import {IconFilledEmail, IconFilledLink, IconFilledPause} from '../../icons';
 import {ThemeProvider, createTheme} from '../../theme';
 
 const myCustomTheme = createTheme({

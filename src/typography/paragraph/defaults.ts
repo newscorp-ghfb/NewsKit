@@ -9,7 +9,16 @@ export default {
         md: 'editorialDropCap020',
         lg: 'editorialDropCap030',
       },
-      space: 'space010',
+      paddingInlineEnd: {
+        xs: 'space020',
+        md: 'space030',
+        lg: 'space040',
+      },
+      paddingBlockEnd: {
+        xs: 'space020',
+        md: 'space030',
+        lg: 'space040',
+      },
     },
   },
 };

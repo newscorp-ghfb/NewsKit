@@ -9,51 +9,53 @@ import {AudioPlayerPlayPauseButtonProps} from './types';
 
 const defaultKeyboardShortcuts = ['k', ' '];
 
-const ThemelessAudioPlayerPlayPauseButton: React.FC<AudioPlayerPlayPauseButtonProps> = React.memo(
-  props => {
-    const {getPlayPauseButtonProps, togglePlay} = useAudioPlayerContext();
+const ThemelessAudioPlayerPlayPauseButton = React.forwardRef<
+  HTMLButtonElement,
+  AudioPlayerPlayPauseButtonProps
+>(({...props}, ref) => {
+  const {getPlayPauseButtonProps, togglePlay} = useAudioPlayerContext();
 
-    const propsFromContext =
-      getPlayPauseButtonProps! && getPlayPauseButtonProps(props);
+  const propsFromContext =
+    getPlayPauseButtonProps! && getPlayPauseButtonProps(props);
 
-    const overrides = useButtonOverrides(props, 'audioPlayerPlayPauseButton');
+  const overrides = useButtonOverrides(props, 'audioPlayerPlayPauseButton');
 
-    const toggleAction = useCallback(
-      ({target, key}: KeyboardEvent) => {
-        const {tagName} = target as HTMLElement;
-        const actionKeys = [' ', 'Enter'];
-        const actionElements = ['BUTTON', 'INPUT', 'A'];
-        const isActionKey = actionKeys.includes(key);
-        const isActionElement = target && actionElements.includes(tagName);
+  const toggleAction = useCallback(
+    ({target, key}: KeyboardEvent) => {
+      const {tagName} = target as HTMLElement;
+      const actionKeys = [' ', 'Enter'];
+      const actionElements = ['BUTTON', 'INPUT', 'A'];
+      const isActionKey = actionKeys.includes(key);
+      const isActionElement = target && actionElements.includes(tagName);
 
-        if (
-          typeof togglePlay === 'function' &&
-          (!isActionKey ||
-            // pressing Space or Enter when the focused element is a Button, A or Input will not trigger the toggle
-            (isActionKey && !isActionElement))
-        ) {
-          togglePlay();
-        }
-      },
-      [togglePlay],
-    );
+      if (
+        typeof togglePlay === 'function' &&
+        (!isActionKey ||
+          // pressing Space or Enter when the focused element is a Button, A or Input will not trigger the toggle
+          (isActionKey && !isActionElement))
+      ) {
+        togglePlay();
+      }
+    },
+    [togglePlay],
+  );
 
-    useKeyboardShortcutsOnButton({
-      props: propsFromContext as AudioPlayerPlayPauseButtonProps,
-      defaults: defaultKeyboardShortcuts,
-      action: toggleAction,
-    });
+  useKeyboardShortcutsOnButton({
+    props: propsFromContext as AudioPlayerPlayPauseButtonProps,
+    defaults: defaultKeyboardShortcuts,
+    action: toggleAction,
+  });
 
-    return (
-      <IconButton
-        data-testid="audio-player-play-pause-button"
-        size={ButtonSize.Large}
-        overrides={overrides}
-        {...propsFromContext}
-      />
-    );
-  },
-);
+  return (
+    <IconButton
+      ref={ref}
+      data-testid="audio-player-play-pause-button"
+      size={ButtonSize.Large}
+      overrides={overrides}
+      {...propsFromContext}
+    />
+  );
+});
 
 export const AudioPlayerPlayPauseButton = withOwnTheme(
   ThemelessAudioPlayerPlayPauseButton,

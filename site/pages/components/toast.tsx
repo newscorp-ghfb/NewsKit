@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link, Toast, ToastProps, IconFilledInfo, Button, styled} from 'newskit';
+import {Link, Toast, ToastProps, Button, styled, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
@@ -10,6 +11,8 @@ import {
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const playGroundActions = () => (
   <Button size="small" overrides={{stylePreset: 'toastButton'}}>
@@ -655,8 +658,13 @@ const ToastComponent = (layoutProps: LayoutProps) => (
       uiKit: true,
     }}
     related={{
-      introduction: 'Components related to Toast',
-      related: ['Banner', 'InlineMessage', 'Modal', 'Drawer'],
+      related: [
+        'Banner',
+        'Flag',
+        'Progress Indicator',
+        'Inline Message',
+        'Tooltip',
+      ],
     }}
   />
 );

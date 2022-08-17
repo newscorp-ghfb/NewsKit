@@ -1,5 +1,7 @@
 import React from 'react';
-import {Button, ButtonSize, IconFilledFigma} from 'newskit';
+import {Button, ButtonSize} from 'newskit';
+
+import {IconFilledFigma} from '../icons/icon-filled-figma';
 
 export const FigmaButton: React.FC<{href?: string}> = ({href}) =>
   href ? (

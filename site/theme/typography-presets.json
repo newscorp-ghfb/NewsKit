@@ -109,5 +109,17 @@
     "fontSize": "{{fonts.fontSize030}}",
     "fontWeight": "{{fonts.fontWeight010}}",
     "lineHeight": "{{fonts.fontLineHeight040}}"
+  },
+  "editorialDropCap010": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}"
+  },
+  "editorialDropCap020": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}"
+  },
+  "editorialDropCap030": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}"
   }
 }

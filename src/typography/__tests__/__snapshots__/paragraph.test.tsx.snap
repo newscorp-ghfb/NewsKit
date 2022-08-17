@@ -142,35 +142,66 @@ exports[`Paragraph renders with drop cap 1`] = `
 }
 
 .emotion-1 {
-  margin: 0 0.15em 0 0;
   float: left;
-  margin-top: 4px;
   color: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-1 {
-    font-size: 5.625em;
-    line-height: 0.85;
+    font-family: "Bitter",serif;
+    font-size: 44px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-1 {
-    font-size: 5.875em;
-    line-height: 0.85;
+    font-family: "Bitter",serif;
+    font-size: 48px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-1 {
-    font-size: 6em;
-    line-height: 0.85;
+    font-family: "Bitter",serif;
+    font-size: 56px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
   }
 }
 
 .emotion-1 svg {
   fill: #0A0A0A;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    -webkit-padding-end: 8px;
+    padding-inline-end: 8px;
+    padding-block-end: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    -webkit-padding-end: 12px;
+    padding-inline-end: 12px;
+    padding-block-end: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 16px;
+  }
 }
 
 <p
@@ -221,35 +252,66 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
 }
 
 .emotion-1 {
-  margin: 0 0.15em 0 0;
   float: left;
-  margin-top: 4px;
   color: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-1 {
-    font-size: 5.625em;
-    line-height: 0.85;
+    font-family: "Bitter",serif;
+    font-size: 44px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-1 {
-    font-size: 5.875em;
-    line-height: 0.85;
+    font-family: "Bitter",serif;
+    font-size: 48px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-1 {
-    font-size: 6em;
-    line-height: 0.85;
+    font-family: "Bitter",serif;
+    font-size: 56px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
   }
 }
 
 .emotion-1 svg {
   fill: #0A0A0A;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    -webkit-padding-end: 8px;
+    padding-inline-end: 8px;
+    padding-block-end: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    -webkit-padding-end: 12px;
+    padding-inline-end: 12px;
+    padding-block-end: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 16px;
+  }
 }
 
 <p
@@ -297,6 +359,120 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
     >
       link
     </a>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Paragraph renders with dropCap logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-1 {
+  float: left;
+  color: #0A0A0A;
+  margin-inline: 8px;
+  margin-block: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    font-family: "Bitter",serif;
+    font-size: 44px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    font-family: "Bitter",serif;
+    font-size: 48px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    font-family: "Bitter",serif;
+    font-size: 56px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+.emotion-1 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    -webkit-padding-end: 8px;
+    padding-inline-end: 8px;
+    padding-block-end: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    -webkit-padding-end: 12px;
+    padding-inline-end: 12px;
+    padding-block-end: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+<p
+    aria-hidden="true"
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      d
+    </span>
+    ropcap with logical props
+  </p>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+  >
+    dropcap with logical props
   </span>
 </DocumentFragment>
 `;

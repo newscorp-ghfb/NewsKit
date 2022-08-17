@@ -1,5 +1,4 @@
 const fse = require('fs-extra');
-const iconsList = require('./icons-full-list');
 const {usedIcons} = require('./used-icons-list.json');
 
 const warning =
@@ -71,24 +70,14 @@ const generateFiles = (
   generateIndexFile(filesData, toSubfolder);
 };
 
-const generateIcons = env => {
-  if (env === 'ci') {
-    generateFiles(iconsList, 'material', 'filled/material', 'IconFilled');
-    generateFiles(
-      iconsList,
-      'material-outlined',
-      'outlined/material',
-      'IconOutlined',
-    );
-  } else {
-    generateFiles(usedIcons, 'material', 'filled/material', 'IconFilled');
-    generateFiles(
-      usedIcons,
-      'material-outlined',
-      'outlined/material',
-      'IconOutlined',
-    );
-  }
+const generateIcons = () => {
+  generateFiles(usedIcons, 'material', 'filled/material', 'IconFilled');
+  generateFiles(
+    usedIcons,
+    'material-outlined',
+    'outlined/material',
+    'IconOutlined',
+  );
 };
 
-generateIcons(process.argv[2] && process.argv[2].replace('--', ''));
+generateIcons();

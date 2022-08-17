@@ -87,7 +87,7 @@ describe('IconButton', () => {
       children: <IconFilledEmail />,
     };
 
-    renderWithTheme(IconButton, props);
+    renderWithTheme(IconButton as any, props);
 
     await act(async () => {
       if (iconButtonRef && iconButtonRef.current) {

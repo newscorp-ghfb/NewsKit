@@ -1,5 +1,6 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo} from 'newskit';
+import {Block, InlineMessage, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
 import {MetaStatus} from '../../components/meta/types';
 import {UsageKind} from '../../components/usage-card';
@@ -8,6 +9,8 @@ import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const infoIcon = (
   <IconFilledInfo
@@ -487,16 +490,27 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/button/usage/dont2'),
         },
         {
-          description:
-            'Avoid placing more than one primary (high emphasis) Button on a screen to help guide the user to the primary action.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/button/usage/dont3'),
+          description: (
+            <>
+              The <Link href="/components/tooltip/">Tooltip</Link> can be
+              applied to the Icon Button in order to provide additional context
+              relating to the intended action or destination for users.
+            </>
+          ),
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/button/usage/do3'),
         },
         {
           description:
             'Avoid stacking Buttons when there is enough space to place side by side.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/button/usage/dont4'),
+        },
+        {
+          description:
+            'Avoid placing more than one primary (high emphasis) Button on a screen to help guide the user to the primary action.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/button/usage/dont3'),
         },
       ],
     }}
@@ -608,8 +622,14 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
       themes: true,
     }}
     related={{
-      introduction: '',
-      related: ['Tag', 'Link', 'Share Bar'],
+      related: [
+        'Checkbox',
+        'Form',
+        'Radio Button',
+        'Select',
+        'Slider',
+        'Text Field',
+      ],
     }}
   />
 );

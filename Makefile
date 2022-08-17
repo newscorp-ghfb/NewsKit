@@ -20,7 +20,7 @@ install_cypress:
 	yarn add -D cypress@9.1.0;
 
 build_icons:
-	yarn build:icons:ci
+	yarn build:icons
 
 build_components:
 	yarn build:comps

@@ -277,6 +277,46 @@ export const stylePresets = {
       whiteSpace: 'nowrap',
     },
   },
+  flagSolidMinor: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interfaceNeutral020}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.interface020}}',
+    },
+  },
+  flagSolidPatch: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interfaceNeutral020}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.interface030}}',
+    },
+  },
+  flagSolidMajor: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interfaceNeutral010}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.interface010}}',
+    },
+  },
+  flagSolidBreakingChange: {
+    base: {
+      borderRadius: '{{borders.borderRadiusPill}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interfaceNegative010}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.interfaceNegative020}}',
+    },
+  },
 
   // Divider
 
@@ -427,15 +467,18 @@ export const stylePresets = {
   },
   linkFooter: {
     base: {
-      color: '{{colors.interactivePrimary040}}',
+      color: '{{colors.interactivePrimary030}}',
+      iconColor: '{{colors.interactivePrimary030}}',
       textDecoration: 'none',
     },
     hover: {
-      color: '{{colors.interactivePrimary030}}',
+      color: '{{colors.interactivePrimary040}}',
+      iconColor: '{{colors.interactivePrimary040}}',
       textDecoration: 'underline',
     },
     active: {
-      color: '{{colors.interactivePrimary020}}',
+      color: '{{colors.interactivePrimary050}}',
+      iconColor: '{{colors.interactivePrimary050}}',
       textDecoration: 'none',
     },
     'focus-visible': {
@@ -949,6 +992,11 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusRounded030}}',
       backgroundSize: 'cover',
       backgroundPosition: 'bottom left',
+    },
+  },
+  gitHubMarkDownText: {
+    base: {
+      color: '{{colors.inkBase}}',
     },
   },
 };

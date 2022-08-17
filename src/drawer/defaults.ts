@@ -31,6 +31,8 @@ export default {
     },
     header: {
       spaceInset: 'spaceInsetSquish040',
+      stylePreset: 'drawerHeader',
+      typographyPreset: 'utilityLabel030',
     },
     content: {
       spaceInset: 'spaceInset050',

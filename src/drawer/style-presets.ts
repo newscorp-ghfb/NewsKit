@@ -8,4 +8,9 @@ export default {
       boxShadow: '{{shadows.shadow060}}',
     },
   },
+  drawerHeader: {
+    base: {
+      color: '{{colors.inkBase}}',
+    },
+  },
 } as Record<string, StylePreset>;

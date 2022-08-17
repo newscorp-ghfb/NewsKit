@@ -37,15 +37,11 @@ export default {
       borderRadius: '{{borders.borderRadiusPill}}',
     },
   },
-  audioPlayerVolumeControlHorizontalContainer: {
+  audioPlayerVolumeControlPopover: {
     base: {
-      backgroundColor: '{{colors.transparent}}',
-    },
-  },
-  audioPlayerVolumeControlVerticalContainer: {
-    base: {
-      backgroundColor: '{{colors.interface010}}',
       boxShadow: '{{shadows.shadow050}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      backgroundColor: '{{colors.interfaceBackground}}',
     },
   },
 } as Record<string, StylePreset>;

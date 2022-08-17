@@ -10,41 +10,37 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
-const ThemelessFieldset: React.FC<FieldsetProps> = ({
-  legend,
-  size = 'medium',
-  children,
-  overrides,
-  ...props
-}) => {
-  const value = React.useContext(FormInputContext);
+const ThemelessFieldset = React.forwardRef<HTMLFieldSetElement, FieldsetProps>(
+  ({legend, size = 'medium', children, overrides, ...props}, ref) => {
+    const value = React.useContext(FormInputContext);
 
-  const formInputContextWithSize = {
-    ...value,
-    size: size as TextFieldSize,
-  };
+    const formInputContextWithSize = {
+      ...value,
+      size: size as TextFieldSize,
+    };
 
-  const [Legend, legendProps] = getComponentOverrides(
-    overrides?.legend,
-    DefaultLegend,
-    {
-      size,
-    },
-  );
+    const [Legend, legendProps] = getComponentOverrides(
+      overrides?.legend,
+      DefaultLegend,
+      {
+        size,
+      },
+    );
 
-  return (
-    <StyledFieldset overrides={overrides} {...props}>
-      {legend && (
-        <Legend {...legendProps}>
-          {typeof legend === 'function' ? legend() : legend}
-        </Legend>
-      )}
-      <FormInputContext.Provider value={formInputContextWithSize}>
-        {children}
-      </FormInputContext.Provider>
-    </StyledFieldset>
-  );
-};
+    return (
+      <StyledFieldset overrides={overrides} {...props} ref={ref}>
+        {legend && (
+          <Legend {...legendProps}>
+            {typeof legend === 'function' ? legend() : legend}
+          </Legend>
+        )}
+        <FormInputContext.Provider value={formInputContextWithSize}>
+          {children}
+        </FormInputContext.Provider>
+      </StyledFieldset>
+    );
+  },
+);
 
 export const Fieldset = withOwnTheme(ThemelessFieldset)({
   defaults,

@@ -2,7 +2,11 @@
 import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import {renderWithImplementation, renderWithTheme} from '../../test/test-utils';
+import {
+  renderWithImplementation,
+  renderWithTheme,
+  renderWithThemeInBody,
+} from '../../test/test-utils';
 import {AudioPlayerComposableProps} from '../types';
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
@@ -68,16 +72,33 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   ),
 };
 
-const AudioPropsAndVolumeControlWithInitialVolumeCollapsed: AudioPlayerComposableProps = {
+const AudioPropsAndVolumeControlCollapsed: AudioPlayerComposableProps = {
   src: '/audio_file_1.mp3',
   initialVolume: 0.2,
   children: (
     <>
-      <AudioPlayerVolumeControl collapsed />
+      <AudioPlayerVolumeControl layout="collapsed" />
     </>
   ),
 };
-
+const AudioPropsAndVolumeControlWithInitialVolumeDefault: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  initialVolume: 0.2,
+  children: (
+    <>
+      <AudioPlayerVolumeControl />
+    </>
+  ),
+};
+const AudioPropsAndVolumeControlWithInitialVolumeHorizontal: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  initialVolume: 0.2,
+  children: (
+    <>
+      <AudioPlayerVolumeControl layout="horizontal" />
+    </>
+  ),
+};
 const AudioPropsWithInitialTime: AudioPlayerComposableProps = {
   initialTime: 50,
   src: '/audio_file_1.mp3',
@@ -122,6 +143,23 @@ const AudioPropsAndPlaybackSpeedModal: AudioPlayerComposableProps = {
   children: (
     <>
       <AudioPlayerPlaybackSpeedControl useModal />
+    </>
+  ),
+};
+
+const AudioPropsAndPlaybackSpeedCustomTrigger: AudioPlayerComposableProps = {
+  src: '/audio_file_1.mp3',
+  children: (
+    <>
+      <AudioPlayerPlaybackSpeedControl>
+        <button
+          onClick={() => null}
+          type="button"
+          data-testid="audio-player-playback-speed-custom-trigger"
+        >
+          Trigger
+        </button>
+      </AudioPlayerPlaybackSpeedControl>
     </>
   ),
 };
@@ -855,7 +893,7 @@ describe('Audio Player Composable', () => {
     });
 
     it('should render correctly in popover', () => {
-      const {asFragment, getByTestId} = renderWithTheme(
+      const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedPopover,
       );
@@ -866,7 +904,7 @@ describe('Audio Player Composable', () => {
     });
 
     it('should render correctly in modal', () => {
-      const {asFragment, getByTestId} = renderWithTheme(
+      const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedModal,
       );
@@ -875,8 +913,20 @@ describe('Audio Player Composable', () => {
       expect(asFragment()).toMatchSnapshot();
     });
 
+    it('should render correctly with custom trigger', () => {
+      const {asFragment, getByTestId} = renderWithThemeInBody(
+        AudioPlayerComposable,
+        AudioPropsAndPlaybackSpeedCustomTrigger,
+      );
+      fireEvent.click(
+        getByTestId('audio-player-playback-speed-custom-trigger'),
+      );
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
     it('should render correctly with overrides', () => {
-      const {asFragment, getByTestId} = renderWithTheme(
+      const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedWithOverrides,
       );
@@ -887,7 +937,7 @@ describe('Audio Player Composable', () => {
     });
 
     it('should close modal on X click', () => {
-      const {asFragment, getByTestId, getByLabelText} = renderWithTheme(
+      const {asFragment, getByTestId, getByLabelText} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedModal,
       );
@@ -899,7 +949,7 @@ describe('Audio Player Composable', () => {
     });
 
     it('should update playback speed', () => {
-      const {getByTestId} = renderWithTheme(
+      const {getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedPopover,
       );
@@ -1001,7 +1051,7 @@ describe('Audio Player Composable', () => {
 
       const {queryByTestId, getByTestId, asFragment} = renderWithTheme(
         AudioPlayerComposable,
-        AudioPropsAndVolumeControlWithInitialVolumeCollapsed,
+        AudioPropsAndVolumeControlCollapsed,
       );
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
@@ -1014,13 +1064,51 @@ describe('Audio Player Composable', () => {
       expect(audioElement.volume).toBe(0.2);
       expect(asFragment()).toMatchSnapshot();
     });
-
+    it('renders horizontal expanded by default', () => {
+      const {asFragment} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlWithInitialVolumeDefault,
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    it('renders horizontally with layout prop is horizontal', () => {
+      const {asFragment} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlWithInitialVolumeHorizontal,
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
     it('should render correctly with vertical prop', () => {
       const {asFragment} = renderWithTheme(
         AudioPlayerComposable,
         AudioPropsAndVolumeControlVertical,
       );
       expect(asFragment()).toMatchSnapshot();
+    });
+    it('should hover on volume control', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlWithInitialVolumeHorizontal,
+      );
+      const muteButton = getByTestId('mute-button');
+
+      fireEvent.mouseOver(muteButton);
+      expect(asFragment()).toMatchSnapshot('with hover');
+
+      fireEvent.mouseLeave(muteButton);
+      expect(asFragment()).toMatchSnapshot('without hover');
+    });
+    it('should on Focus & onBlur on volume control', () => {
+      const {asFragment, getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlWithInitialVolumeHorizontal,
+      );
+      const muteButton = getByTestId('mute-button');
+
+      fireEvent.focus(muteButton);
+      expect(asFragment()).toMatchSnapshot('with focus');
+      fireEvent.blur(muteButton);
+      expect(asFragment()).toMatchSnapshot('with blur');
     });
     it('should render correctly with overrides', () => {
       const myCustomTheme = createTheme({

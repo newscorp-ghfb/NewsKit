@@ -223,7 +223,6 @@ export const AudioPlayerComposable = ({
       layout,
       overrides,
       keyboardShortcuts,
-      collapsed,
       muteButtonSize,
     }: AudioPlayerVolumeControlProps) => ({
       keyboardShortcuts,
@@ -231,7 +230,6 @@ export const AudioPlayerComposable = ({
       overrides: overrides || {},
       onChange: onChangeVolumeSlider,
       volume,
-      collapsed,
       initialVolume,
       muteButtonSize,
     }),
@@ -294,6 +292,7 @@ export const AudioPlayerComposable = ({
     () => ({
       audioRef,
       audioSectionRef,
+      playbackSpeed,
       togglePlay,
       // Props function getter
       getPlayPauseButtonProps,
@@ -307,7 +306,7 @@ export const AudioPlayerComposable = ({
       getPlaybackSpeedControlProps,
     }),
     [
-      getVolumeControlProps,
+      playbackSpeed,
       togglePlay,
       getPlayPauseButtonProps,
       getTimeDisplayProps,
@@ -316,6 +315,7 @@ export const AudioPlayerComposable = ({
       getSkipNextButtonProps,
       getForwardButtonProps,
       getReplayButtonProps,
+      getVolumeControlProps,
       getPlaybackSpeedControlProps,
     ],
   );

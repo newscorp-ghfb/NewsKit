@@ -1,5 +1,6 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo} from 'newskit';
+import {Block, InlineMessage, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -10,6 +11,8 @@ import {UsageKind} from '../../components/usage-card';
 import {Link} from '../../components/link';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const infoIcon = (
   <IconFilledInfo
@@ -877,8 +880,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       themes: true,
     }}
     related={{
-      introduction: '',
-      related: ['Form', 'Checkbox'],
+      related: ['Button', 'Checkbox', 'Form', 'Select', 'Slider', 'Text Field'],
     }}
   />
 );

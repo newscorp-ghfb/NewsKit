@@ -1,5 +1,6 @@
 import React from 'react';
-import {styled, IconFilledInfo, InlineMessage} from 'newskit*';
+import {styled, toNewsKitIcon, InlineMessage} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
 import {InlineCode} from '../../../components/markdown-elements';
@@ -19,6 +20,8 @@ import {
   ContentSecondary,
   ContentColSpan,
 } from '../../../components/content-structure';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const PROPERTIES = [
   {
@@ -316,6 +319,15 @@ const PRESETS = [
         <Link href="/components/radio-button/">Radio Button.</Link>
       </>
     ),
+  },
+  {
+    example: getImage(
+      'theme/transition-presets/predefined-transition-presets/widthchange',
+    ),
+    token: 'widthChange',
+    description: 'Transition width from the initial state to the final state.',
+    implementation:
+      'Can be applied to components to achieve a width change when interacting eg. applied to the expandable horizontal volume control audio player subcomponent on hover or focus.',
   },
 ];
 

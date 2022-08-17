@@ -11,7 +11,6 @@ import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
 import {Table} from '../../../components/table';
 import {MediaList} from '../../../components/media-list';
-import {IconFilledCircle} from '../../../components/icons';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../../components/usage-card';
 import {Link} from '../../../components/link';
@@ -33,49 +32,6 @@ const TOKENS_DESCRIPTION: {[key in string]: string} = {
   motionDuration040: 'Modals, drawers, toasts, banners',
   motionDuration050: 'Nav bars',
 };
-
-const featureCardOverrides = {
-  title: {
-    typographyPreset: 'editorialHeadline030',
-  },
-  description: {
-    typographyPreset: 'editorialParagraph020',
-  },
-};
-
-const PRINCIPLE_CARDS = [
-  {
-    media: {
-      src: 'static/theming/foundations/purposeful.svg',
-      alt: '',
-    },
-    title: 'Purposeful',
-    description:
-      'Motion should help draw attention to important details and emphasise key points in a user journey without creating unnecessary distractions',
-    stylePrefix: 'featureCard',
-    overrides: featureCardOverrides,
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/seamless.svg',
-      alt: '',
-    },
-    title: 'Seamless',
-    description: `Motion should add to a brand's character and the way it expresses itself to users`,
-    stylePrefix: 'featureCard',
-    overrides: featureCardOverrides,
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/instinctive.svg',
-      alt: '',
-    },
-    title: 'Instinctive',
-    description: `Motion should mimic the feel of real-world physics, to give motion a natural and discernible feeling`,
-    stylePrefix: 'featureCard',
-    overrides: featureCardOverrides,
-  },
-];
 
 const DO_AND_DONT = [
   {
@@ -188,21 +144,6 @@ const Motion = (layoutProps: LayoutProps) => (
         </ContentSecondary>
       </ContentSection>
 
-      <ContentSection sectionName="principles">
-        <ContentPrimary
-          id="principles"
-          toc="Principles"
-          headline="Principles"
-          showSeparator
-        >
-          <MediaList
-            layout="3-span"
-            cardType="feature"
-            cards={PRINCIPLE_CARDS}
-          />
-        </ContentPrimary>
-      </ContentSection>
-
       <ContentSection sectionName="duration">
         <ContentPrimary
           toc="Duration"
@@ -286,7 +227,6 @@ const Motion = (layoutProps: LayoutProps) => (
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
-            listItemMarker={IconFilledCircle}
             markerAlign="start"
             overrides={{spaceStack: 'space040'}}
           >
