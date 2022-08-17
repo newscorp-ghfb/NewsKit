@@ -1392,6 +1392,13 @@ Object {
     "button": Object {
       "stylePreset": "iconButtonMinimalPrimary",
     },
+    "popover": Object {
+      "content": Object {
+        "paddingBlock": "space030",
+        "paddingInline": "space030",
+      },
+      "stylePreset": "audioPlayerVolumeControlPopover",
+    },
     "slider": Object {
       "feedback": Object {
         "size": "sizing060",
@@ -3078,15 +3085,17 @@ Object {
       "backgroundColor": "{{colors.interactivePrimary040}}",
     },
   },
-  "audioPlayerVolumeControlHorizontalContainer": Object {
-    "base": Object {
-      "backgroundColor": "{{colors.transparent}}",
-    },
-  },
   "audioPlayerVolumeControlIndicator": Object {
     "base": Object {
       "backgroundColor": "{{colors.interactivePrimary030}}",
       "borderRadius": "{{borders.borderRadiusPill}}",
+    },
+  },
+  "audioPlayerVolumeControlPopover": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interfaceBackground}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "boxShadow": "{{shadows.shadow050}}",
     },
   },
   "audioPlayerVolumeControlThumb": Object {
@@ -3120,12 +3129,6 @@ Object {
     "base": Object {
       "backgroundColor": "{{colors.interface030}}",
       "borderRadius": "{{borders.borderRadiusPill}}",
-    },
-  },
-  "audioPlayerVolumeControlVerticalContainer": Object {
-    "base": Object {
-      "backgroundColor": "{{colors.interface010}}",
-      "boxShadow": "{{shadows.shadow050}}",
     },
   },
   "bannerInformative": Object {
