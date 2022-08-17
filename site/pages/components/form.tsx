@@ -686,7 +686,7 @@ const schema = yup.object().shape({
         {
           title: 'Form',
           summary:
-            'The Form component has a range of props and overrides that can be used to define an appropriate experience for different use cases.',
+            'The Form component has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
             {
               name: 'children',
