@@ -1,5 +1,5 @@
 import React from 'react';
-import {fireEvent} from '@testing-library/react';
+import {fireEvent, act} from '@testing-library/react';
 import {renderWithTheme, applyAsyncStyling} from '../../test/test-utils';
 import {Tooltip, TooltipProps} from '..';
 import {TriggerType} from '../types';
@@ -409,15 +409,19 @@ describe('Tooltip', () => {
       fireEvent.mouseLeave(getByRole('button'));
       expect(button.hasAttribute('aria-describedby')).toBe(false);
     });
-    test('can describe with exotic content when open and remove aria attribute when closed', () => {
+    test('can describe with exotic content when open and remove aria attribute when closed', async () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         content: <div>the content</div>,
       });
       const button = getByRole('button');
-      fireEvent.mouseEnter(button);
+      await act(() => {
+        fireEvent.mouseEnter(button);
+      });
       expect(button.hasAttribute('aria-describedby')).toBe(true);
-      fireEvent.mouseLeave(button);
+      await act(() => {
+        fireEvent.mouseLeave(button);
+      });
       expect(button.hasAttribute('aria-describedby')).toBe(false);
     });
     test('should label the child when closed', () => {
@@ -428,7 +432,7 @@ describe('Tooltip', () => {
       const button = getByRole('button');
       expect(button.hasAttribute('aria-label')).toBe(true);
     });
-    test('should label the child when open with an exotic content', () => {
+    test('should label the child when open with an exotic content', async () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         content: <div>the content</div>,
@@ -436,7 +440,9 @@ describe('Tooltip', () => {
       });
       const button = getByRole('button');
       expect(button.hasAttribute('aria-labelledby')).toBe(false);
-      fireEvent.mouseEnter(button);
+      await act(() => {
+        fireEvent.mouseEnter(button);
+      });
       expect(button.hasAttribute('aria-labelledby')).toBe(true);
     });
   });
@@ -449,7 +455,7 @@ describe('Tooltip', () => {
       'When passing a component with disabled prop to Tooltip please remember to use a wrapper element, such as a span.',
     );
   });
-  test('should be controllable', () => {
+  test('should be controllable', async () => {
     const Component = () => {
       const [open, setOpen] = React.useState(false);
       return (
@@ -467,7 +473,9 @@ describe('Tooltip', () => {
     const {getByTestId, queryByRole} = renderWithTheme(Component);
 
     const button = getByTestId('outside-control');
-    fireEvent.click(button);
+    await act(() => {
+      fireEvent.click(button);
+    });
     expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
   });
 });
