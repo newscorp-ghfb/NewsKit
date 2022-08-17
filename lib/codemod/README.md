@@ -26,6 +26,7 @@ The list includes these transformers
 - [`emotion-icons`](#emotion-icons)
 - [`remove-redundant-marker-ul`](#remove-redundant-marker-ul)
 - [`update-list-item-marker-ul-value`](#update-list-item-marker-ul-value)
+- [`enum-to-union`](#enum-to-union)
 
 
 #### `emotion-icons`
@@ -60,6 +61,14 @@ Unordered List has now a default marker, the script passes `listItemMarker` with
 ```diff
 -   <UnorderedList></UnorderedList>
 +    <UnorderedList listItemMarker={null}></UnorderedList>
+```
+#### `enum-to-union`
+
+Some of NewsKit components support enum as the prop type, the script remove the imports of enum and replace enum type with union type.
+
+```diff
+-   <Button size={ButtonSize.Small}>Button</Button>
++   <Button size="small">Button</Button>
 ```
 
 #### `update-linkinline`
