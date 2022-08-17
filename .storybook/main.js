@@ -28,6 +28,7 @@ module.exports = {
         },
       },
     },
+    './addons/tealium/preset.js',
   ],
   // https://github.com/storybookjs/storybook/issues/13277
   // Remove Emotion aliases once the issue above is resolved
