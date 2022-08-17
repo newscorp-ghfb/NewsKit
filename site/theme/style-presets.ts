@@ -1076,4 +1076,12 @@ export const stylePresets = {
     },
     'focus-visible': defaultFocusVisible,
   },
+  exploreCardHeadline: {
+    base: {
+      color: '{{colors.inkContrast}}',
+    },
+    hover: {
+      textDecoration: 'underline',
+    },
+  },
 };

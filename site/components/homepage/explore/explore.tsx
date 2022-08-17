@@ -1,46 +1,61 @@
 import * as React from 'react';
-import {MediaList} from '../../media-list';
+import {Block, Headline, TextBlock, GridLayout, Card} from 'newskit';
 import {ContentPrimary} from '../../content-structure';
+import {
+  ExploreComponents,
+  ExploreFoundations,
+  ExplorePatterns,
+} from '../../illustrations/landing-page';
 
 const cardsContent = [
   {
-    media: {
-      src: 'static/landing/landing-foundations.svg',
-      alt: '',
-    },
+    media: <ExploreFoundations />,
     title: 'Theme',
     href: '/theme/overview',
     description:
-      'These standardised styles define the look and feel of UI components. e.g. colours, fonts, shadows and sizing.',
+      'These standardised styles define the look and feel of UI components, e.g. colours, fonts, shadows and sizing.',
   },
   {
-    media: {
-      src: 'static/landing/landing-components.svg',
-      alt: '',
-    },
+    media: <ExploreComponents />,
     title: 'Components',
     href: '/components/overview',
     description:
-      'NewsKit’s flexible UI components are built to best practices to ensure usability, performance and accessibility. ',
+      'NewsKit’s flexible UI components are built to best practices to ensure usability, performance and accessibility.',
   },
   {
-    media: {
-      src: 'static/landing/landing-theming.svg',
-      alt: '',
-    },
-    title: 'Theming',
-    href: '/theme/theming/creating-a-theme',
+    media: <ExplorePatterns />,
+    title: 'Patterns',
+    href: '/patterns/overview',
     description:
-      'Creating and applying themes allow you to tailor your experience to your unique brand requirements.',
+      'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
   },
 ];
 
 export const Explore = () => (
   <ContentPrimary headline="Explore">
-    <MediaList
-      layout="3-span"
-      cards={cardsContent}
-      gridProps={{xsRowGutter: 'space050'}}
-    />
+    <GridLayout
+      columns={{xs: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)'}}
+      columnGap="space050"
+    >
+      {cardsContent.map(({media, title, href, description}) => (
+        <Card key={href} href={href} media={() => media}>
+          <Block marginBlockEnd="space040">
+            <Headline
+              overrides={{
+                typographyPreset: 'editorialHeadline020',
+                heading: {stylePreset: 'exploreCardHeadline'},
+              }}
+            >
+              {title}
+            </Headline>
+          </Block>
+          <Block marginBlockEnd="space040">
+            <TextBlock typographyPreset="editorialParagraph020">
+              {description}
+            </TextBlock>
+          </Block>
+        </Card>
+      ))}
+    </GridLayout>
   </ContentPrimary>
 );

@@ -34,8 +34,11 @@ const keepInTouchContent = [
 ];
 
 export const KeepInTouch = () => (
-  <ContentPrimary headline="Keep in touch">
-    <GridLayout columns={{xs: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)'}}>
+  <ContentPrimary hideBottomSpacing headline="Keep in touch">
+    <GridLayout
+      columns={{xs: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)'}}
+      columnGap="space090"
+    >
       {keepInTouchContent.map(({title, url, description, icon}) => (
         <Card
           overrides={{mediaContainer: {spaceInline: 'space000'}}}
