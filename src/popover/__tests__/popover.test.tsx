@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import {fireEvent} from '@testing-library/react';
+import {fireEvent, act} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {renderWithTheme, applyAsyncStyling} from '../../test/test-utils';
 import {Popover, PopoverProps} from '..';
@@ -388,7 +388,7 @@ describe('Popover', () => {
   });
 
   describe('controlled case', () => {
-    test('should open and close based on state passed', () => {
+    test('should open and close based on state passed', async () => {
       const Component = () => {
         const [open, setOpen] = React.useState(true);
         return (
@@ -410,12 +410,16 @@ describe('Popover', () => {
       const button = getByTestId('outside-control');
 
       expect(queryByRole('dialog')).toBeInTheDocument();
-      fireEvent.click(button);
+      await act(() => {
+        fireEvent.click(button);
+      });
       expect(queryByRole('dialog')).not.toBeInTheDocument();
-      fireEvent.click(button);
+      await act(() => {
+        fireEvent.click(button);
+      });
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('should be able to use handleCloseButtonClick to update parent state', () => {
+    test('should be able to use handleCloseButtonClick to update parent state', async () => {
       const Component = () => {
         const [open, setOpen] = React.useState(true);
         return (
@@ -441,10 +445,12 @@ describe('Popover', () => {
       const closeButton = getByTestId('close-button');
 
       expect(queryByRole('dialog')).toBeInTheDocument();
-      fireEvent.click(closeButton);
+      await act(() => {
+        fireEvent.click(closeButton);
+      });
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
-    test('should call onDismiss on dismiss', () => {
+    test('should call onDismiss on dismiss', async () => {
       const onDismiss = jest.fn();
       const Component = () => (
         <Popover open content="hello" enableDismiss onDismiss={onDismiss}>
@@ -453,7 +459,9 @@ describe('Popover', () => {
       );
 
       renderWithTheme(Component);
-      fireEvent.keyDown(document.body, {key: 'Escape'});
+      await act(() => {
+        fireEvent.keyDown(document.body, {key: 'Escape'});
+      });
       expect(onDismiss).toHaveBeenCalled();
     });
   });
