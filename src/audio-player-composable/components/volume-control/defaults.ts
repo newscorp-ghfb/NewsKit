@@ -22,5 +22,12 @@ export default {
     button: {
       stylePreset: 'iconButtonMinimalPrimary',
     },
+    popover: {
+      stylePreset: 'audioPlayerVolumeControlPopover',
+      content: {
+        paddingBlock: 'space030',
+        paddingInline: 'space030',
+      },
+    },
   },
 };
