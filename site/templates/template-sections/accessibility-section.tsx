@@ -123,9 +123,11 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
             <A11yTable columns={['Order', 'Element', 'Role']} {...focusOrder} />
           )}
 
-          <Block spaceStack="space090">
-            {renderInfoNotice(infoNoticeFocus, 'Focus order notice', 'Note')}
-          </Block>
+          {infoNoticeFocus && (
+            <Block spaceStack="space090">
+              {renderInfoNotice(infoNoticeFocus, 'Focus order notice', 'Note')}
+            </Block>
+          )}
 
           {interaction && (
             <A11yTable columns={['Command', 'Description']} {...interaction} />

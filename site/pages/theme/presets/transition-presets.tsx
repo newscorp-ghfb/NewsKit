@@ -40,21 +40,27 @@ const PROPERTIES = [
   },
   {
     tokenName: 'transitionDelay',
-    acceptedValues: <Link href="/theme/motion/#duration">motionDuration</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/motion/#duration">motionDuration</Link>
+    ),
     example: <Mono>motionDuration000</Mono>,
     description:
       'Specifies how many milliseconds delay for the transition effect to start',
   },
   {
     tokenName: 'transitionDuration',
-    acceptedValues: <Link href="/theme/motion/#duration">motionDuration</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/motion/#duration">motionDuration</Link>
+    ),
     example: <Mono>motionDuration020</Mono>,
     description:
       'Specifies how many milliseconds a transition effect takes to complete',
   },
   {
     tokenName: 'transitionTimingFunction',
-    acceptedValues: <Link href="/theme/motion/#timing">motionTiming</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/motion/#timing">motionTiming</Link>
+    ),
     example: <Mono>motionTimingLinear</Mono>,
     description: 'Specifies the speed curve of the transition effect',
   },
