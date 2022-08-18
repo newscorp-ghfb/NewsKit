@@ -270,10 +270,12 @@ export const stylePresets = {
   },
   flagSolidPrimary: {
     base: {
-      color: '{{colors.inkBrand010}}',
-      iconColor: '{{colors.inkInverse}}',
+      color: '{{colors.inkSubtle}}',
       backgroundColor: '{{colors.interface020}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interface010}}',
     },
   },
   flagBrand: {
@@ -1010,12 +1012,23 @@ export const stylePresets = {
   searchButton: {
     base: {
       backgroundColor: '{{colors.transparent}}',
-      color: '{{colors.inkBase}}',
-      iconColor: '{{colors.inkBrand020}}',
       borderStyle: 'solid',
-      borderColor: '{{colors.inkBrand020}}',
+      borderColor: '{{colors.interactiveSecondary040}}',
       borderWidth: '{{borders.borderWidth010}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkBase}}',
+      iconColor: '{{colors.inkBase}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactivePrimary010}}',
+    },
+  },
+  iconButtonOutlinedSecondary: {
+    base: {
+      backgroundColor: '{{colors.interactiveSecondary010}}',
+      color: '{{colors.inkBase}}',
+      iconColor: '{{colors.inkBase}}',
+      borderStyle: 'unset',
     },
   },
 };

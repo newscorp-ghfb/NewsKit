@@ -14,4 +14,5 @@ export * from './icon-filled-edge';
 export * from './icon-filled-timer';
 export * from './icon-filled-expand-less';
 export * from './icon-filled-expand-more';
-export * from './icon-outlined-search';
+export * from './icon-filled-search';
+export * from './icon-filled-github';

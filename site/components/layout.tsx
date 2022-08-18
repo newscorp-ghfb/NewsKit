@@ -60,7 +60,6 @@ interface LayoutState {
   headerHeight: number;
   sectionNavHeight: number;
   debugDropdownVisible: boolean;
-  searchVisible: boolean;
 }
 
 interface Heading {
@@ -89,7 +88,6 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
       headerHeight: 0,
       sectionNavHeight: 0,
       debugDropdownVisible: false,
-      searchVisible: false,
     };
 
     this.headerRef = React.createRef<HTMLElement>();
@@ -113,13 +111,6 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
         }
       });
     }
-    if (typeof window !== 'undefined') {
-      window.addEventListener('keydown', event => {
-        if (event.keyCode === 191) {
-          this.toggleSearch();
-        }
-      });
-    }
   }
 
   toggleSidebar = () => {
@@ -129,12 +120,6 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
   toggleDebugDropdown = () => {
     this.setState(({debugDropdownVisible}) => ({
       debugDropdownVisible: !debugDropdownVisible,
-    }));
-  };
-
-  toggleSearch = () => {
-    this.setState(({searchVisible}) => ({
-      searchVisible: !searchVisible,
     }));
   };
 
@@ -180,7 +165,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
   };
 
   render() {
-    const {sidebarOpen, debugDropdownVisible, searchVisible} = this.state;
+    const {sidebarOpen, debugDropdownVisible} = this.state;
     const {
       hideSidebar,
       path,
@@ -207,7 +192,6 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
             path={path}
             data-test-id="siteHeader"
             sidebarOpen={sidebarOpen}
-            searchVisible={searchVisible}
           />
           <Container hideSidebar={hideSidebar}>
             {/* This is a hack to fix stalling builds from NextJS trying to optimise the page, it won't render anything */}

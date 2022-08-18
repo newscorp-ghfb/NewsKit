@@ -7,7 +7,6 @@ import {
   getColorCssFromTheme,
   getSpacingCssFromTheme,
   getSizingCssFromTheme,
-  Button,
   ButtonSize,
   getBorderCssFromTheme,
   MenuItem,
@@ -24,27 +23,24 @@ import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
 import routes from '../routes';
 import {Link} from './link';
-import {IconFilledGitHub} from './icons/icon-filled-github';
 import {Search} from './search';
+import {IconFilledGitHub} from './icons';
 
 const IconFilledMenu = toNewsKitIcon(FilledMenu);
 const IconFilledClose = toNewsKitIcon(FilledClose);
 
-export const GitHubButton: React.FC<{href?: string}> = () => (
-  <Button
-    size={ButtonSize.Small}
+export const GitHubButton = () => (
+  <IconButton
+    size="medium"
+    aria-label="Github icon"
     overrides={{
-      typographyPreset: 'utilityButton010',
-      stylePreset: 'buttonOutlinedSecondary',
-      minWidth: '130px',
-      height: '30px',
+      stylePreset: 'iconButtonOutlinedSecondary',
     }}
     href="https://github.com/newscorp-ghfb/newskit"
     target="_blank"
   >
     <IconFilledGitHub />
-    View Github
-  </Button>
+  </IconButton>
 );
 
 const Header = styled.header`
@@ -79,7 +75,6 @@ interface HeaderProps {
   themeMode: string;
   path: string;
   sidebarOpen?: boolean;
-  searchVisible?: boolean;
 }
 
 type HeaderRef = HTMLElement;
@@ -94,17 +89,7 @@ const siteheaderAreas = `
 logo menu search github theme
  `;
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
-  (
-    {
-      handleSidebarClick,
-      toggleTheme,
-      themeMode,
-      path,
-      sidebarOpen,
-      searchVisible,
-    },
-    ref,
-  ) => {
+  ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
     const renderMobileNavigation = (handleClick: () => void) => (
       <MobileMenu>
         <IconButton
@@ -167,7 +152,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             >
               <NewsKitLogo />
             </Link>
-            {searchVisible && <Search />}
+            <Search />
           </GridLayout>
         </Visible>
         <Visible lg xl>
@@ -192,9 +177,11 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                     {renderNavItems(navItems, path)}
                   </Menu>
                 </Areas.Menu>
-                <Areas.Search>{searchVisible && <Search />}</Areas.Search>
+                <Areas.Search>
+                  <Search />
+                </Areas.Search>
                 <Areas.Github>
-                  <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
+                  <GitHubButton />
                 </Areas.Github>
                 <Areas.Theme>
                   <ThemeSwitch
