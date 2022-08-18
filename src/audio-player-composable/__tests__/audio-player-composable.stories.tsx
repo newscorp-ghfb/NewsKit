@@ -38,7 +38,7 @@ import {
 import {useBreakpointKey} from '../../utils/hooks';
 import {Flag} from '../../flag';
 import {styled} from '../../utils';
-import {Button} from '../../button';
+import {Button, ButtonSize} from '../../button';
 
 const StyledPage = styled.div`
   padding-left: 20px;
@@ -859,7 +859,7 @@ export const AudioPlayerOverrides = () => {
                 </Areas.TotalTime>
                 <Areas.PlaybackSpeed alignSelf="center">
                   <AudioPlayerPlaybackSpeedControl
-                    buttonSize="medium"
+                    buttonSize={ButtonSize.Medium}
                     overrides={{
                       iconButton: {
                         stylePreset: 'customButtonStylePreset',
