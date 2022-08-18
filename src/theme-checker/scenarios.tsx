@@ -14,7 +14,7 @@ import {
 import {Tag} from '../tag';
 import {LinkInline, LinkStandalone} from '../link';
 import {IconButton} from '../icon-button';
-import {Button, ButtonSize} from '../button';
+import {Button} from '../button';
 import {
   IconFilledAddCircle,
   IconFilledEmail,
@@ -1481,7 +1481,7 @@ export const scenarios: Array<ComponentData> = [
             trigger={['focus', 'hover']}
           >
             <IconButton
-              size={ButtonSize.Small}
+              size="small"
               overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
             >
               <IconFilledTwitter />
@@ -1508,7 +1508,7 @@ export const scenarios: Array<ComponentData> = [
             trigger={['focus', 'hover']}
           >
             <Button
-              size={ButtonSize.Small}
+              size="small"
               overrides={{stylePreset: 'buttonOutlinedPrimary'}}
             >
               Button

@@ -9,7 +9,6 @@ import {
   Stack,
   StackDistribution,
   ButtonOverrides,
-  ButtonSize,
 } from '../..';
 import {IconFilledEmail, IconFilledLink, IconFilledPause} from '../../icons';
 import {ThemeProvider, createTheme} from '../../theme';
@@ -144,7 +143,7 @@ const IconButtonIntentKindsScenario: React.FC<{
                 <IconButton
                   aria-label="Pause icon"
                   overrides={kindOverrides}
-                  size={ButtonSize.Medium}
+                  size="medium"
                 >
                   <IconFilledPause />
                 </IconButton>
@@ -155,7 +154,7 @@ const IconButtonIntentKindsScenario: React.FC<{
                   aria-label="Link icon"
                   autoFocus
                   overrides={kindOverrides}
-                  size={ButtonSize.Medium}
+                  size="medium"
                 >
                   <IconFilledLink />
                 </IconButton>
@@ -166,7 +165,7 @@ const IconButtonIntentKindsScenario: React.FC<{
                   aria-label="Email icon"
                   disabled
                   overrides={kindOverrides}
-                  size={ButtonSize.Medium}
+                  size="medium"
                 >
                   <IconFilledEmail />
                 </IconButton>
@@ -176,7 +175,7 @@ const IconButtonIntentKindsScenario: React.FC<{
                 <IconButton
                   aria-label="Loading indicator"
                   overrides={kindOverrides}
-                  size={ButtonSize.Medium}
+                  size="medium"
                   loading
                 />
               </Block>
@@ -203,13 +202,13 @@ export const StoryIconButtonSizes = () => (
         spaceInline="space070"
         wrap="wrap"
       >
-        <IconButton aria-label="Email icon" size={ButtonSize.Small}>
+        <IconButton aria-label="Email icon" size="small">
           <IconFilledEmail />
         </IconButton>
-        <IconButton aria-label="Email icon" size={ButtonSize.Medium}>
+        <IconButton aria-label="Email icon" size="medium">
           <IconFilledEmail />
         </IconButton>
-        <IconButton aria-label="Email icon" size={ButtonSize.Large}>
+        <IconButton aria-label="Email icon" size="large">
           <IconFilledEmail />
         </IconButton>
       </Stack>

@@ -779,7 +779,7 @@ export const AudioPlayerOverrides = () => {
 
                 <Areas.Volume alignSelf="center" justifySelf="start">
                   <AudioPlayerVolumeControl
-                    muteButtonSize={ButtonSize.Medium}
+                    muteButtonSize="medium"
                     layout={
                       breakpointKey === 'xs' || breakpointKey === 'sm'
                         ? 'collapsed'
@@ -859,7 +859,7 @@ export const AudioPlayerOverrides = () => {
                 </Areas.TotalTime>
                 <Areas.PlaybackSpeed alignSelf="center">
                   <AudioPlayerPlaybackSpeedControl
-                    buttonSize={ButtonSize.Medium}
+                    buttonSize="medium"
                     overrides={{
                       iconButton: {
                         stylePreset: 'customButtonStylePreset',
@@ -932,7 +932,7 @@ export const AudioPlayerOverrides = () => {
           ariaLandmark="audio player mutebutton icon prop overrides"
         >
           <AudioPlayerVolumeControl
-            muteButtonSize={ButtonSize.Medium}
+            muteButtonSize="medium"
             overrides={{
               button: {
                 muteButtonIcon: {
@@ -953,7 +953,7 @@ export const AudioPlayerOverrides = () => {
           ariaLandmark="audio player mutebutton icon overrides"
         >
           <AudioPlayerVolumeControl
-            muteButtonSize={ButtonSize.Medium}
+            muteButtonSize="medium"
             overrides={{
               button: {
                 muteButtonIcon: {

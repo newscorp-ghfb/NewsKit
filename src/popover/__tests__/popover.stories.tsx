@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {CSSProperties, useRef, useState} from 'react';
 import {Placement} from '@floating-ui/react-dom-interactions';
-import {Button, ButtonSize} from '../../button';
+import {Button} from '../../button';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {styled} from '../../utils';
 import {Popover} from '../popover';
@@ -141,7 +141,7 @@ const PopoverWithBtn = (
   >
     <IconButton
       aria-label="info-icon"
-      size={ButtonSize.Small}
+      size="small"
       overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
     >
       <IconFilledInfo />
