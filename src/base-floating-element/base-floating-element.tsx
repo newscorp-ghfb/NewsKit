@@ -42,6 +42,7 @@ export const BaseFloatingElement = React.forwardRef<
       className,
       /* istanbul ignore next */
       fallbackBehaviour = ['flip', 'shift'],
+      disableFocusManagement = false,
       boundary,
     },
     ref,
@@ -58,6 +59,7 @@ export const BaseFloatingElement = React.forwardRef<
       'distance',
       'distance',
     );
+
     const pointerPadding = getOverridePxValue(
       `${path}.pointer`,
       {theme, overrides},
@@ -131,7 +133,7 @@ export const BaseFloatingElement = React.forwardRef<
 
       // We can't use floating-ui's FloatingFocusManager to update the focus state
       // because this does not allow tabbing past the floating element without closing it.
-      if (path === 'popover') {
+      if (path === 'popover' && !disableFocusManagement) {
         if (open) {
           /* istanbul ignore next */
           if (focusElementRef?.current) {
@@ -156,6 +158,7 @@ export const BaseFloatingElement = React.forwardRef<
       focusElementRef,
       openProp,
       restoreFocusTo,
+      disableFocusManagement,
     ]);
 
     if (!content) {

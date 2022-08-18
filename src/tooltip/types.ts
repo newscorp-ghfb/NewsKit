@@ -4,7 +4,7 @@ export type TriggerType = 'hover' | 'focus';
 
 export type TooltipProps = Omit<
   FloatingElementProps,
-  'trigger' | 'onDismiss' | 'restoreFocusTo'
+  'trigger' | 'onDismiss' | 'restoreFocusTo' | 'disableFocusManagement'
 > & {
   trigger?: TriggerType | TriggerType[];
   asLabel?: boolean;
