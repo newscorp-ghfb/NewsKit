@@ -8,7 +8,6 @@ import {
   getSpacingCssFromTheme,
   getSizingCssFromTheme,
   Button,
-  ButtonSize,
   getBorderCssFromTheme,
   MenuItem,
   Menu,
@@ -31,7 +30,7 @@ const IconFilledClose = toNewsKitIcon(FilledClose);
 
 export const GitHubButton: React.FC<{href?: string}> = () => (
   <Button
-    size={ButtonSize.Small}
+    size="small"
     overrides={{
       typographyPreset: 'utilityButton010',
       stylePreset: 'buttonOutlinedSecondary',
@@ -184,7 +183,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                 </Areas.Github>
                 <Areas.Theme>
                   <ThemeSwitch
-                    size={ButtonSize.Medium}
+                    size="medium"
                     toggle={toggleTheme}
                     themeMode={themeMode}
                   />

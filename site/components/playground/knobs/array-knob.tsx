@@ -4,7 +4,6 @@ import {
   getTypographyPresetFromTheme,
   getSizingFromTheme,
   getColorFromTheme,
-  ButtonSize,
   IconButton,
   Stack,
   Flow,
@@ -153,7 +152,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
               {row}
               <ButtonContainer>
                 <IconButton
-                  size={ButtonSize.Small}
+                  size="small"
                   disabled={arr.length < 2}
                   onClick={remove(i)}
                   data-testid={`${TEST_ID_PREFIX}-button-remove`}
@@ -166,7 +165,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
           ) : null;
         })}
         <IconButton
-          size={ButtonSize.Small}
+          size="small"
           onClick={add}
           data-testid={`${TEST_ID_PREFIX}-button-add`}
           aria-label="Add"

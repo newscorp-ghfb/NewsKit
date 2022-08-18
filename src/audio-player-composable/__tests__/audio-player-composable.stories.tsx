@@ -24,7 +24,6 @@ import {calculateTime} from '../components/time-display/utils';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Block} from '../../block';
-import {ButtonSize} from '../../button/types';
 import {Hidden} from '../../grid/visibility';
 import {IconButton} from '../../icon-button';
 import {
@@ -277,7 +276,7 @@ const AudioPlayerFullRecorded = (props: {
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
-                  size={ButtonSize.Medium}
+                  size="medium"
                   aria-label="Open popout player"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
                   onClick={() => {
@@ -368,7 +367,7 @@ const AudioPlayerFullLive = (props: {
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
-                  size={ButtonSize.Medium}
+                  size="medium"
                   aria-label="Open popout player"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
                   onClick={() => {
@@ -407,7 +406,7 @@ const AudioPlayerInlineRecorded = (props: {
           {...props}
           layout={breakpointKey === 'xs' ? 'collapsed' : 'horizontal'}
         />
-        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+        <AudioPlayerPlayPauseButton size="small" />
         <AudioPlayerTimeDisplay
           format={({currentTime}) => calculateTime(currentTime)}
         />
@@ -428,7 +427,7 @@ const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
       alignItems="center"
       justifyContent="flex-start"
     >
-      <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+      <AudioPlayerPlayPauseButton size="small" />
       <AudioPlayerVolumeControl layout="vertical" muteButtonSize="small" />
       <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
         <IconFilledGraphicEq />
@@ -453,7 +452,7 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
         alignItems="center"
       >
         <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+          <AudioPlayerPlayPauseButton size="small" />
         </GridLayoutItem>
         <GridLayoutItem column="2/3" row="4/5">
           <AudioPlayerVolumeControl layout="collapsed" />
@@ -479,7 +478,7 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
                   stylePreset: 'buttonMinimalPrimary',
                   minWidth: '90px',
                 }}
-                size={ButtonSize.Medium}
+                size="medium"
               >
                 <IconFilledSlowMotionVideo />
                 <span>{playbackSpeed}x</span>
@@ -490,7 +489,7 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
                   stylePreset: 'buttonOutlinedSecondary',
                   minWidth: '52px',
                 }}
-                size={ButtonSize.Small}
+                size="small"
               >
                 <span>{playbackSpeed}x</span>
               </Button>
@@ -603,7 +602,7 @@ export const AudioSubComponents = () => (
             <AudioPlayerPlaybackSpeedControl>
               <Button
                 overrides={{stylePreset: 'buttonOutlinedSecondary'}}
-                size={ButtonSize.Small}
+                size="small"
               >
                 Speed
               </Button>
@@ -873,7 +872,7 @@ export const AudioPlayerOverrides = () => {
                 <Areas.Link alignSelf="center" justifySelf="end">
                   <Hidden xs sm>
                     <IconButton
-                      size={ButtonSize.Medium}
+                      size="medium"
                       aria-label="Open popout player"
                       href="https://www.newskit.co.uk/"
                       overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
@@ -973,7 +972,7 @@ export const AudioPlayerOverrides = () => {
           ariaLandmark="audio player mutebutton component overrides"
         >
           <AudioPlayerVolumeControl
-            muteButtonSize={ButtonSize.Medium}
+            muteButtonSize="medium"
             overrides={{
               button: {
                 muteButtonIcon: CustomMuteButtonIcon,
@@ -1163,7 +1162,7 @@ export const AudioPlayerKeyboard = () => (
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
-                  size={ButtonSize.Medium}
+                  size="medium"
                   aria-label="Open popout player"
                   href="https://www.newskit.co.uk/"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
