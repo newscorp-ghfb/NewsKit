@@ -1,5 +1,4 @@
-import {CardProps, MQ} from 'newskit';
-import {LogicalProps} from '../../../src/utils/logical-properties';
+import {ButtonProps, CardProps, MQ} from 'newskit';
 
 export interface FeatureCardProps
   extends Omit<CardProps, 'children' | 'layout' | 'overrides'> {
@@ -9,7 +8,7 @@ export interface FeatureCardProps
   layout?: 'vertical' | 'horizontal';
   buttonHref?: string;
   buttonLabel?: string;
-  buttonLogicalProps?: LogicalProps;
+  buttonOverrides?: ButtonProps['overrides'];
   overrides?: {
     title?: {
       typographyPreset?: MQ<string>;

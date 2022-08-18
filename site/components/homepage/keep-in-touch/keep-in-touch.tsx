@@ -51,11 +51,15 @@ export const KeepInTouch = () => (
                 stylePreset: 'tagKeepInTouch',
               }}
             >
-              <LinkStandalone external={false} href={url}>
+              <LinkStandalone
+                external={false}
+                href={url}
+                overrides={{stylePreset: 'keepInTouchLink'}}
+              >
                 Explore {title}
               </LinkStandalone>
 
-              <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
+              <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
             </Tag>
           )}
         >

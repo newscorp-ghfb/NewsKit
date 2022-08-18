@@ -398,8 +398,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 }
 
 .emotion-19.emotion-19 {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 <div
@@ -754,16 +754,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   margin: 0;
 }
 
-@media screen and (max-width: 1023px) {
-  .emotion-10 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-10 {
-    margin-bottom: 32px;
-  }
+.emotion-10 {
+  margin-bottom: 24px;
 }
 
 .emotion-11 {
@@ -946,8 +938,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 }
 
 .emotion-20.emotion-20 {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 <div
@@ -1458,8 +1450,8 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 }
 
 .emotion-19.emotion-19 {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 @media screen {
@@ -1607,6 +1599,10 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   justify-content: center;
 }
 
+.emotion-31 {
+  margin-bottom: 24px;
+}
+
 .emotion-33 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1745,7 +1741,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
                   </section>
                 </div>
                 <div
-                  class="emotion-11"
+                  class="emotion-31"
                 >
                   <p
                     class="emotion-12"
@@ -2221,6 +2217,10 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
   justify-content: center;
 }
 
+.emotion-23 {
+  margin-bottom: 24px;
+}
+
 .emotion-25 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -2316,7 +2316,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
                   </section>
                 </div>
                 <div
-                  class="emotion-11"
+                  class="emotion-23"
                 >
                   <p
                     class="emotion-12"
@@ -2676,8 +2676,8 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 }
 
 .emotion-16.emotion-16 {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 <a
@@ -3544,16 +3544,8 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   margin: 0;
 }
 
-@media screen and (max-width: 1023px) {
-  .emotion-10 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-10 {
-    margin-bottom: 32px;
-  }
+.emotion-10 {
+  margin-bottom: 24px;
 }
 
 .emotion-11 {
@@ -4181,6 +4173,10 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   justify-content: center;
 }
 
+.emotion-23 {
+  margin-bottom: 24px;
+}
+
 .emotion-25 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -4276,7 +4272,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
                   </section>
                 </div>
                 <div
-                  class="emotion-11"
+                  class="emotion-23"
                 >
                   <p
                     class="emotion-12"
@@ -4630,8 +4626,8 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 }
 
 .emotion-16.emotion-16 {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 <div

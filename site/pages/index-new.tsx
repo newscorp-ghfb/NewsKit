@@ -55,12 +55,19 @@ const Index = (layoutProps: LayoutProps) => {
             <FeatureCard
               title="World Design Systems Week 2022"
               description="19-23 September 2022"
-              stylePrefix="worlddesignsystemsweekCard"
+              stylePrefix="worldDesignSystemsWeekCard"
               href="https://www.designsystemsweek.com/"
               layout="horizontal"
-              buttonLabel="Read more"
+              overrides={{
+                title: {typographyPreset: 'editorialHeadline060'},
+                description: {typographyPreset: 'editorialSubheadline010'},
+              }}
+              buttonLabel="Join the community"
               buttonHref="https://www.designsystemsweek.com/"
-              buttonLogicalProps={{paddingInline: 'space000'}}
+              buttonOverrides={{
+                paddingInline: 'space000',
+                typographyPreset: 'utilityButton020',
+              }}
             />
           </GridLayout>
         )}
@@ -79,9 +86,16 @@ const Index = (layoutProps: LayoutProps) => {
             stylePrefix="contributeCard"
             href="/about/contribute"
             layout="horizontal"
+            overrides={{
+              title: {typographyPreset: 'editorialHeadline060'},
+              description: {typographyPreset: 'editorialSubheadline010'},
+            }}
             buttonLabel="Start contributing"
             buttonHref="/about/contribute"
-            buttonLogicalProps={{paddingInline: 'space000'}}
+            buttonOverrides={{
+              paddingInline: 'space000',
+              typographyPreset: 'utilityButton020',
+            }}
           />
         </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>

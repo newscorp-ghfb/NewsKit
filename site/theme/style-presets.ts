@@ -502,6 +502,9 @@ export const stylePresets = {
       color: '{{colors.inkBrand020}}',
       iconColor: '{{colors.inkBrand020}}',
     },
+    hover: {
+      textDecoration: 'underline',
+    },
   },
   linkFooter: {
     base: {
@@ -702,7 +705,7 @@ export const stylePresets = {
       backgroundPosition: 'center left',
     },
   },
-  worlddesignsystemsweekCardContainerInteractive: {
+  worldDesignSystemsWeekCardContainerInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand040}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
@@ -711,7 +714,7 @@ export const stylePresets = {
       boxShadow: '{{shadows.shadow040}}',
     },
   },
-  worlddesignsystemsweekCardButton: {
+  worldDesignSystemsWeekCardButton: {
     base: {
       backgroundColor: '{{colors.transparent}}',
       color: '{{colors.inkWhiteContrast}}',
@@ -722,8 +725,11 @@ export const stylePresets = {
       color: '{{colors.inkBrand020}}',
       iconColor: '{{colors.inkBrand020}}',
     },
+    hover: {
+      textDecoration: 'underline',
+    },
   },
-  worlddesignsystemsweekCardMedia: {
+  worldDesignSystemsWeekCardMedia: {
     base: {
       backgroundImage: 'url(static/landing/feature-card-banner.svg)',
       backgroundSize: 'cover',
@@ -1075,6 +1081,15 @@ export const stylePresets = {
       borderWidth: '{{borders.borderWidth010}}',
     },
     'focus-visible': defaultFocusVisible,
+  },
+  keepInTouchLink: {
+    base: {
+      color: '{{colors.interactiveInput040}}',
+      textDecoration: 'none',
+    },
+    hover: {
+      textDecoration: 'underline',
+    },
   },
   exploreCardHeadline: {
     base: {
