@@ -480,7 +480,7 @@ export const stylePresets = {
   contributeCardContainerNonInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
-      borderRadius: '{{borders.borderRadiusRounded020}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
     },
   },
   contributeCardMedia: {
@@ -496,11 +496,6 @@ export const stylePresets = {
       color: '{{colors.inkWhiteContrast}}',
       iconColor: '{{colors.inkWhiteContrast}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
-    },
-    active: {
-      backgroundColor: '{{colors.interactiveInverse050}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
     },
     hover: {
       textDecoration: 'underline',
@@ -714,16 +709,17 @@ export const stylePresets = {
       boxShadow: '{{shadows.shadow040}}',
     },
   },
+  worldDesignSystemsWeekCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand040}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+  },
   worldDesignSystemsWeekCardButton: {
     base: {
       backgroundColor: '{{colors.transparent}}',
       color: '{{colors.inkWhiteContrast}}',
       iconColor: '{{colors.inkWhiteContrast}}',
-    },
-    active: {
-      backgroundColor: '{{colors.interactiveInverse050}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
     },
     hover: {
       textDecoration: 'underline',

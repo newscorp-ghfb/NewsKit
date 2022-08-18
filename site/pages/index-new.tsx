@@ -56,7 +56,6 @@ const Index = (layoutProps: LayoutProps) => {
               title="World Design Systems Week 2022"
               description="19-23 September 2022"
               stylePrefix="worldDesignSystemsWeekCard"
-              href="https://www.designsystemsweek.com/"
               layout="horizontal"
               overrides={{
                 title: {typographyPreset: 'editorialHeadline060'},
@@ -84,7 +83,6 @@ const Index = (layoutProps: LayoutProps) => {
             title="Contribute"
             description="Join the community and help grow NewsKit for everyone."
             stylePrefix="contributeCard"
-            href="/about/contribute"
             layout="horizontal"
             overrides={{
               title: {typographyPreset: 'editorialHeadline060'},
