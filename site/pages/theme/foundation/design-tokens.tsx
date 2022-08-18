@@ -36,10 +36,10 @@ const TokenStyle: React.FC<TextElementProps> = () => {
   for (let i = 0; i < tokenData.length; i++) {
     const item = tokenData[i];
     tokens.push(
-      <>
+      <React.Fragment key={item.property + item.series}>
         <TextElement>{item.property}</TextElement>
         <TextElement colorPreset="teal050">{item.series}</TextElement>, <br />
-      </>,
+      </React.Fragment>,
     );
   }
   return <TextElement>{tokens}</TextElement>;

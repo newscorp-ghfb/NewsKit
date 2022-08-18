@@ -1,5 +1,4 @@
 import React from 'react';
-import {Block} from 'newskit';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
@@ -116,10 +115,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     An advanced full-featured theming system containing brand
                     styles that can be used and synced across files, including
                     palettes and colours, typography, shadows and grids.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/file/3l0UDvk1l2vsXpbtWlYWoP/%F0%9F%9F%A2-NK-NewsKit-Theme"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View theme library in Figma (internal only)
                     </Link>
@@ -135,10 +134,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                   <>
                     A collection of high-quality responsive components that can
                     be themed to align to any brand.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/NK-Web-Components?node-id=1%3A393"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View Web components library in Figma (internal only)
                     </Link>
@@ -158,11 +157,11 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     <Link href="https://fonts.google.com/icons" target="_blank">
                       Material Icons
                     </Link>
-                    .
-                    <Block spaceStack="space050" />
+                    .<br />
                     <Link
                       href="https://www.figma.com/file/jHs7EB68a57xVA3NKmMbgy/NK-Icons?node-id=1%3A12626"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View Icon library in Figma (internal only)
                     </Link>
@@ -180,10 +179,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     consistency of design deliverables and to improve workflow,
                     including annotations, cursors, device mockups,
                     accessibility labelling, and more.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/file/Q3OTJ4RZWJGTCaWuS8sWsL/NK-Utilities?node-id=0%3A1"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View Utilities library in Figma (internal only)
                     </Link>
@@ -228,10 +227,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     across UI components and elements. For example, switching
                     between light and dark themes, sub-themes, or different
                     visual fidelities.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/community/plugin/968555028114672265/NK---Theme-Swapper"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View Theme Swapper Figma plugin (internal only)
                     </Link>
@@ -249,10 +248,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     boxes, removing extra leading (space) above and below your
                     text. This ensures consistent and predictable layout
                     designs.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/community/plugin/951930713294228024/Text-Crop"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View Text Crop Figma plugin
                     </Link>
@@ -269,10 +268,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     A Figma plugin that provides functionality to export NewsKit
                     design tokens in JSON format from Figma styles to use with
                     the NewsKit codebase.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/community/plugin/934126878505200119/NK---Theme-Exporter"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View Theme Exporter Figma plugin (internal only)
                     </Link>
@@ -305,10 +304,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     A Figma file that provides a template structure for
                     UX-focused projects. This template includes personas, user
                     journeys, competitor analysis, and more.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/file/uMSITiPijbFBVQl09zzVHm/%5BProduct%2FBrand-Name%5D-UX-project-template?node-id=0%3A1"
                       target="_blank"
+                      verrides={{marginBlockStart: 'space050'}}
                     >
                       View the UX project template file in Figma (internal only)
                     </Link>
@@ -325,10 +324,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     A Figma file that provides a template structure for
                     UI-focused projects. This template includes a playground,
                     prototype, handoff, and more.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/file/BcPZjnYcouOOAdDVrt6H95/%5BProduct%2FBrand-Name%5D-UI-project-template?node-id=0%3A1"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View the UI project template file in Figma (internal only)
                     </Link>
@@ -360,10 +359,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                   <>
                     Guidance for all NewsKit web components. This includes
                     details on the anatomy, variants, usage, and more.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.newskit.co.uk/components/overview/"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View NewsKit Components guidance{' '}
                     </Link>
@@ -380,10 +379,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     Guidance for solving common user problems in a consistent,
                     considered way. For example, best practices for onboarding
                     to a product or feature.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.newskit.co.uk/patterns/overview/"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View NewsKit Patterns guidance
                     </Link>
@@ -406,10 +405,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                   <>
                     Guidance on how to communicate a design to the product team
                     for engineers to build.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/proto/kXCrh9MHKAJ878KE2dQOz8/Handoff-Guides---for-engineers-%26-designers?page-id=1%3A544&node-id=275%3A21221&viewport=350%2C48%2C0.13&scaling=min-zoom&starting-point-node-id=275%3A21221&show-proto-sidebar=1&hide-ui=1"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View NewsKit Handoff guidance (internal only)
                     </Link>

@@ -1,5 +1,10 @@
 import React from 'react';
-import {newskitLightTheme, InlineMessage, toNewsKitIcon} from 'newskit';
+import {
+  newskitLightTheme,
+  InlineMessage,
+  toNewsKitIcon,
+  UnorderedList,
+} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
@@ -66,21 +71,37 @@ const Sizing = (layoutProps: LayoutProps) => (
             <>
               All UI elements align to a 4px square baseline grid. This is to
               provide:
-              <ul>
-                <li>Increased visual consistency</li>
-                <li>Increased efficiency: fewer design choices, less code</li>
-                <li>
-                  Easier communication and reduced back and forth between design
-                  and engineering as the intent is clear and results are more
-                  predictable.
-                </li>
-                <li>Visual rhythm</li>
-              </ul>
             </>
           }
           showSeparator
           childrenColSpan={ContentColSpan.TEXT}
         >
+          <UnorderedList
+            markerAlign="start"
+            overrides={{
+              marginBlockEnd: 'space090',
+              content: {
+                typographyPreset: {
+                  xs: 'editorialParagraph020',
+                  md: 'editorialParagraph030',
+                  lg: 'editorialParagraph030',
+                  xl: 'editorialParagraph030',
+                },
+                stylePreset: 'inkBase',
+              },
+            }}
+          >
+            {[
+              'Increased visual consistency',
+              'Increased efficiency: fewer design choices, less code',
+              `
+              Easier communication and reduced back and forth between design and
+              engineering as the intent is clear and results are more
+              predictable.
+            `,
+              'Visual rhythm',
+            ]}
+          </UnorderedList>
           <InlineMessage icon={infoIcon} aria-label="Distribution">
             Text that is centered within a component e.g. a button, does not
             need to sit on the grid as it is evenly distributed.
@@ -98,23 +119,35 @@ const Sizing = (layoutProps: LayoutProps) => (
               A 4px rule provides a good balance of choice to a designer but,
               crucially, 4 is also divisible and this has some significant
               benefits:
-              <ul>
-                <li>
-                  Most popular screen sizes are divisible by 4, so grid columns
-                  fit the screen perfectly more often than not.
-                </li>
-                <li>
-                  Increasingly, platforms are allowing users to set their
-                  preferred ‘density’ to accommodate specific user needs. This
-                  may be increasing or decreasing font sizes or white space in
-                  and between page elements. A 4px scale allows us to scale
-                  consistently and continue to maintain the grid.
-                </li>
-              </ul>
             </>
           }
           showSeparator
         >
+          <UnorderedList
+            markerAlign="start"
+            overrides={{
+              marginBlockEnd: 'space090',
+              content: {
+                typographyPreset: {
+                  xs: 'editorialParagraph020',
+                  md: 'editorialParagraph030',
+                  lg: 'editorialParagraph030',
+                  xl: 'editorialParagraph030',
+                },
+                stylePreset: 'inkBase',
+              },
+            }}
+          >
+            {[
+              `Most popular screen sizes are divisible by 4, so grid columns fit
+              the screen perfectly more often than not.`,
+              `Increasingly, platforms are allowing users to set their preferred
+              ‘density’ to accommodate specific user needs. This may be
+              increasing or decreasing font sizes or white space in and between
+              page elements. A 4px scale allows us to scale consistently and
+              continue to maintain the grid.`,
+            ]}
+          </UnorderedList>
           <Illustration path="theme/sizing/why-4-px" />
         </ContentPrimary>
       </ContentSection>

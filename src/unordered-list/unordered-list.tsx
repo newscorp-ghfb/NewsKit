@@ -91,6 +91,8 @@ const ThemelessUnorderedList = React.forwardRef<
                 <TextBlock
                   typographyPreset={contentTypographyPresetToken}
                   stylePreset={contentStylePresetToken}
+                  // TODO:  WHY THIS IS P
+                  as="div"
                 >
                   {node}
                 </TextBlock>

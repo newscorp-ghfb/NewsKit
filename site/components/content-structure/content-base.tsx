@@ -57,23 +57,29 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
   return (
     <GridLayout columns={`repeat(${ContentColSpan.FULL}, 1fr)`}>
       {headline && (
-        <GridLayoutItem column={textColumns}>
+        <GridLayoutItem
+          column={textColumns}
+          marginBlockEnd={description || children ? headlineSpace : undefined}
+        >
           <TextBlock
             {...(isPrimary ? tocAttributes : {})}
             {...headlineOverrides}
           >
             {headline}
           </TextBlock>
-          {(description || children) && <Block spaceStack={headlineSpace} />}
+          {/* {(description || children) && <Block spaceStack={headlineSpace} />} */}
         </GridLayoutItem>
       )}
 
       {description && (
-        <GridLayoutItem column={textColumns}>
+        <GridLayoutItem
+          column={textColumns}
+          marginBlockEnd={children ? descriptionSpace : undefined}
+        >
           <TextBlock as="p" {...descriptionOverrides}>
             {description}
           </TextBlock>
-          {children && <Block spaceStack={descriptionSpace} />}
+          {/* {children && <Block spaceStack={descriptionSpace} />} */}
         </GridLayoutItem>
       )}
 

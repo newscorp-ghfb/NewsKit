@@ -1,6 +1,6 @@
 import React from 'react';
 import LinkNext from 'next/link';
-import {LinkStandalone, Link as LinkInline} from 'newskit';
+import {LinkStandalone, LinkInline} from 'newskit';
 import {LinkProps} from './types';
 
 export const Link: React.FC<LinkProps> = ({

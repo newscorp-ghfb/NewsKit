@@ -50,6 +50,12 @@ export default class MyDocument extends Document {
         <body>
           <Global
             styles={css`
+              p div,
+              p p,
+              p ul {
+                border: 3px solid red;
+              }
+
               html {
                 scroll-behavior: smooth;
                 scroll-padding-top: 90px;
