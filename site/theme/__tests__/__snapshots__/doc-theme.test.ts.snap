@@ -967,11 +967,6 @@ Object {
       },
     },
     "contributeCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
@@ -994,7 +989,7 @@ Object {
     "contributeCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "contributeCardMedia": Object {
@@ -1903,11 +1898,6 @@ Object {
       },
     },
     "worldDesignSystemsWeekCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkWhiteContrast}}",
@@ -1924,6 +1914,12 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "worldDesignSystemsWeekCardMedia": Object {
@@ -3548,11 +3544,6 @@ Object {
       },
     },
     "contributeCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
@@ -3575,7 +3566,7 @@ Object {
     "contributeCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "contributeCardMedia": Object {
@@ -4484,11 +4475,6 @@ Object {
       },
     },
     "worldDesignSystemsWeekCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkWhiteContrast}}",
@@ -4505,6 +4491,12 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "worldDesignSystemsWeekCardMedia": Object {
@@ -6132,11 +6124,6 @@ Object {
       },
     },
     "contributeCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
@@ -6159,7 +6146,7 @@ Object {
     "contributeCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "contributeCardMedia": Object {
@@ -7068,11 +7055,6 @@ Object {
       },
     },
     "worldDesignSystemsWeekCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkWhiteContrast}}",
@@ -7089,6 +7071,12 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "worldDesignSystemsWeekCardMedia": Object {
@@ -8713,11 +8701,6 @@ Object {
       },
     },
     "contributeCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
@@ -8740,7 +8723,7 @@ Object {
     "contributeCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "contributeCardMedia": Object {
@@ -9649,11 +9632,6 @@ Object {
       },
     },
     "worldDesignSystemsWeekCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkWhiteContrast}}",
@@ -9670,6 +9648,12 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "worldDesignSystemsWeekCardMedia": Object {
@@ -11297,11 +11281,6 @@ Object {
       },
     },
     "contributeCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
@@ -11324,7 +11303,7 @@ Object {
     "contributeCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "contributeCardMedia": Object {
@@ -12233,11 +12212,6 @@ Object {
       },
     },
     "worldDesignSystemsWeekCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkWhiteContrast}}",
@@ -12254,6 +12228,12 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "worldDesignSystemsWeekCardMedia": Object {
@@ -13878,11 +13858,6 @@ Object {
       },
     },
     "contributeCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
@@ -13905,7 +13880,7 @@ Object {
     "contributeCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "contributeCardMedia": Object {
@@ -14814,11 +14789,6 @@ Object {
       },
     },
     "worldDesignSystemsWeekCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkWhiteContrast}}",
@@ -14835,6 +14805,12 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "worldDesignSystemsWeekCardMedia": Object {
@@ -16462,11 +16438,6 @@ Object {
       },
     },
     "contributeCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
@@ -16489,7 +16460,7 @@ Object {
     "contributeCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "contributeCardMedia": Object {
@@ -17398,11 +17369,6 @@ Object {
       },
     },
     "worldDesignSystemsWeekCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkWhiteContrast}}",
@@ -17419,6 +17385,12 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "worldDesignSystemsWeekCardMedia": Object {
@@ -19043,11 +19015,6 @@ Object {
       },
     },
     "contributeCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
@@ -19070,7 +19037,7 @@ Object {
     "contributeCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "contributeCardMedia": Object {
@@ -19979,11 +19946,6 @@ Object {
       },
     },
     "worldDesignSystemsWeekCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkWhiteContrast}}",
@@ -20000,6 +19962,12 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "worldDesignSystemsWeekCardMedia": Object {
