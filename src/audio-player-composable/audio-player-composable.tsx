@@ -223,7 +223,6 @@ export const AudioPlayerComposable = ({
       layout,
       overrides,
       keyboardShortcuts,
-      collapsed,
       muteButtonSize,
     }: AudioPlayerVolumeControlProps) => ({
       keyboardShortcuts,
@@ -231,7 +230,6 @@ export const AudioPlayerComposable = ({
       overrides: overrides || {},
       onChange: onChangeVolumeSlider,
       volume,
-      collapsed,
       initialVolume,
       muteButtonSize,
     }),
