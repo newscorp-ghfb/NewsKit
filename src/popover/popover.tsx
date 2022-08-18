@@ -43,6 +43,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
       overrides = {},
       handleCloseButtonClick,
       enableDismiss = false,
+      disableFocusManagement = false,
       ...props
     },
     ref,
@@ -124,6 +125,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
         useInteractions={useInteractions}
         role="dialog"
         overrides={overrides}
+        disableFocusManagement={disableFocusManagement}
         {...props}
       >
         {children}
