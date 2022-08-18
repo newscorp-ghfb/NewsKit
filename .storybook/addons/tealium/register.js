@@ -61,12 +61,14 @@ addons.register('storybook/tealium', api => {
   if (process.env.NODE_ENV === 'production') {
     console.log('PROD');
   } else {
-    const accountId = 'newsinternational';
-    const profileId = 'thetimes.newskit';
-    const env = 'dev';
     console.log('DEV');
-    initTealium(accountId, profileId, env);
   }
+
+  const accountId = 'newsinternational';
+  const profileId = 'thetimes.newskit';
+  const env = 'dev';
+
+  initTealium(accountId, profileId, env);
 
   // send initial page view event, since storybook doesn't do it via STORY_CHANGED
   // When the preview boots, the first story is chosen via a selection specifier
