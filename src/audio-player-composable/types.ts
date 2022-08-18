@@ -9,7 +9,6 @@ import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
 import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
 import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
 import {AudioPlayerTimeFormatFn} from './components/time-display/types';
-import {ButtonSize} from '../button';
 import {
   AudioPlayerPlaybackSpeedControlOverridesProps,
   AudioPlayerPlaybackSpeedControlProps,
@@ -84,7 +83,7 @@ export interface AudioPlayerProviderContext {
     onChange: (value: number) => void;
     useModal: MQ<boolean>;
     playbackSpeed: number;
-    buttonSize?: ButtonSize;
+    buttonSize?: 'small' | 'medium' | 'large';
   };
   getSkipPreviousButtonProps: (
     props: AudioPlayerSkipPreviousButtonProps,

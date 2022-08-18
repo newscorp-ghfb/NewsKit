@@ -1,6 +1,6 @@
 import React from 'react';
 import {IconFilledForward10, IconFilledReplay10} from '../../icons';
-import {ButtonSize, ButtonProps} from '../../button';
+import {ButtonProps} from '../../button';
 import {IconButton} from '../../icon-button';
 import {MQ} from '../../utils/style';
 
@@ -14,7 +14,7 @@ export const ForwardButton: React.FC<TrackControlProps> = React.memo(props => (
   <IconButton
     data-testid="audio-player-forward"
     aria-label="Fast forward 10 seconds"
-    size={ButtonSize.Medium}
+    size="medium"
     {...props}
   >
     <IconFilledForward10 />
@@ -25,7 +25,7 @@ export const BackwardButton: React.FC<TrackControlProps> = React.memo(props => (
   <IconButton
     data-testid="audio-player-backward"
     aria-label="Rewind 10 seconds"
-    size={ButtonSize.Medium}
+    size="medium"
     {...props}
   >
     <IconFilledReplay10 />

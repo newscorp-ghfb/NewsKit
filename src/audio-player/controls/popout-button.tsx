@@ -1,6 +1,6 @@
 import React from 'react';
 import {IconFilledLaunch} from '../../icons';
-import {ButtonSize, ButtonProps} from '../../button';
+import {ButtonProps} from '../../button';
 import {IconButton} from '../../icon-button';
 
 export interface PopoutButtonProps {
@@ -15,7 +15,7 @@ export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
   return (
     <IconButton
       {...rest}
-      size={ButtonSize.Medium}
+      size="medium"
       data-testid="audio-player-popout"
       aria-label="Open popout player"
       onClick={
