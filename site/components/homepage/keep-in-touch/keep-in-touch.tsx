@@ -28,7 +28,7 @@ const keepInTouchContent = [
   {
     title: 'Blog',
     url: 'https://medium.com/newskit-design-system',
-    description: 'Hear what our team’s been up to',
+    description: 'Hear what our team’s been up to.',
     icon: () => <Medium />,
   },
 ];
