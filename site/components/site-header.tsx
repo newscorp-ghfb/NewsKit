@@ -14,6 +14,7 @@ import {
   GridLayout,
   IconButton,
   toNewsKitIcon,
+  Button,
 } from 'newskit';
 import {Menu as FilledMenu} from '@emotion-icons/material/Menu';
 import {Close as FilledClose} from '@emotion-icons/material/Close';
@@ -30,17 +31,20 @@ const IconFilledMenu = toNewsKitIcon(FilledMenu);
 const IconFilledClose = toNewsKitIcon(FilledClose);
 
 export const GitHubButton = () => (
-  <IconButton
-    size="medium"
-    aria-label="Github icon"
+  <Button
+    size={ButtonSize.Small}
     overrides={{
-      stylePreset: 'iconButtonOutlinedSecondary',
+      typographyPreset: 'utilityButton010',
+      stylePreset: 'buttonOutlinedSecondary',
+      minWidth: '130px',
+      height: '30px',
     }}
     href="https://github.com/newscorp-ghfb/newskit"
     target="_blank"
   >
     <IconFilledGitHub />
-  </IconButton>
+    View Github
+  </Button>
 );
 
 const Header = styled.header`

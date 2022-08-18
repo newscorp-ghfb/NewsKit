@@ -1009,26 +1009,4 @@ export const stylePresets = {
       color: '{{colors.inkBase}}',
     },
   },
-  searchButton: {
-    base: {
-      backgroundColor: '{{colors.transparent}}',
-      borderStyle: 'solid',
-      borderColor: '{{colors.interactiveSecondary040}}',
-      borderWidth: '{{borders.borderWidth010}}',
-      borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.inkBase}}',
-      iconColor: '{{colors.inkBase}}',
-    },
-    hover: {
-      backgroundColor: '{{colors.interactivePrimary010}}',
-    },
-  },
-  iconButtonOutlinedSecondary: {
-    base: {
-      backgroundColor: '{{colors.interactiveSecondary010}}',
-      color: '{{colors.inkBase}}',
-      iconColor: '{{colors.inkBase}}',
-      borderStyle: 'unset',
-    },
-  },
 };
