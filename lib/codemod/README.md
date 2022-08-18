@@ -73,7 +73,8 @@ Some of NewsKit components support enum as the prop type, the script remove the 
 
 #### `update-linkinline`
 
-Updates deprecated Link component to LinkInline 
+Updates deprecated Link component to LinkInline.
+LinkInline is used within paragraphs or sentences to link to different content on the same page or other pages.
 
 ```diff
 -  import {Link} from 'newskit';
@@ -85,7 +86,8 @@ Updates deprecated Link component to LinkInline
 
 #### `update-linkstandalone`
 
-Updates deprecated Link component to LinkStandalone 
+Updates deprecated Link component to LinkStandalone. 
+LinkStandalone is used outside of body content, for example within navigational components such as menus, headers and footers.
 
 ```diff
 -  import {Link} from 'newskit';
