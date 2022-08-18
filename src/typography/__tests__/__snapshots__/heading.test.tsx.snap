@@ -18,7 +18,7 @@ exports[`Headings renders H1 correctly with logical props 1`] = `
 @media screen and (max-width: 1023px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 28px;
+    font-size: 32px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -28,7 +28,7 @@ exports[`Headings renders H1 correctly with logical props 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -38,7 +38,7 @@ exports[`Headings renders H1 correctly with logical props 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 40px;
+    font-size: 48px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -59,8 +59,8 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -104,8 +104,8 @@ exports[`Headings renders H1 with default styles 1`] = `
 @media screen and (max-width: 1023px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -127,8 +127,8 @@ exports[`Headings renders H1 with default styles 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 36px;
-    line-height: 40.5px;
+    font-size: 40px;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -150,8 +150,8 @@ exports[`Headings renders H1 with default styles 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 48px;
+    line-height: 54px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -196,7 +196,7 @@ exports[`Headings renders H2 correctly with logical props 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -206,7 +206,7 @@ exports[`Headings renders H2 correctly with logical props 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -227,8 +227,8 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -272,8 +272,8 @@ exports[`Headings renders H2 with default styles 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -295,8 +295,8 @@ exports[`Headings renders H2 with default styles 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 28px;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -351,7 +351,7 @@ exports[`Headings renders H3 correctly with logical props 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -372,8 +372,8 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -440,8 +440,8 @@ exports[`Headings renders H3 with default styles 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -517,8 +517,8 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -647,8 +647,8 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -749,8 +749,8 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -835,7 +835,7 @@ exports[`Headings renders Heading1 correctly with logical props 1`] = `
 @media screen and (max-width: 1023px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 28px;
+    font-size: 32px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -845,7 +845,7 @@ exports[`Headings renders Heading1 correctly with logical props 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -855,7 +855,7 @@ exports[`Headings renders Heading1 correctly with logical props 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 40px;
+    font-size: 48px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -876,8 +876,8 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -921,8 +921,8 @@ exports[`Headings renders Heading1 with default styles 1`] = `
 @media screen and (max-width: 1023px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -944,8 +944,8 @@ exports[`Headings renders Heading1 with default styles 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 36px;
-    line-height: 40.5px;
+    font-size: 40px;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -967,8 +967,8 @@ exports[`Headings renders Heading1 with default styles 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 48px;
+    line-height: 54px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1013,7 +1013,7 @@ exports[`Headings renders Heading2 correctly with logical props 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -1023,7 +1023,7 @@ exports[`Headings renders Heading2 correctly with logical props 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -1044,8 +1044,8 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -1089,8 +1089,8 @@ exports[`Headings renders Heading2 with default styles 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1112,8 +1112,8 @@ exports[`Headings renders Heading2 with default styles 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 28px;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1168,7 +1168,7 @@ exports[`Headings renders Heading3 correctly with logical props 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: 0;
@@ -1189,8 +1189,8 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -1257,8 +1257,8 @@ exports[`Headings renders Heading3 with default styles 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1334,8 +1334,8 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -1464,8 +1464,8 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -1566,8 +1566,8 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
   margin: 0;
   color: #FFFFFF;
   font-family: "Bitter",serif;
-  font-size: 28px;
-  line-height: 31.5px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;

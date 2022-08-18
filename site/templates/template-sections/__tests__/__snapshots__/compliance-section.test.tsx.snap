@@ -49,8 +49,8 @@ exports[`ComplianceSection renders section as expected 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-4 {
     font-family: "Poppins",sans-serif;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 28px;
+    line-height: 31.5px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -72,8 +72,8 @@ exports[`ComplianceSection renders section as expected 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-4 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;

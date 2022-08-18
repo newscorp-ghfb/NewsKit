@@ -487,8 +487,8 @@ exports[`Content Primary renders with headline and children 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -510,8 +510,8 @@ exports[`Content Primary renders with headline and children 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -533,8 +533,8 @@ exports[`Content Primary renders with headline and children 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -556,8 +556,8 @@ exports[`Content Primary renders with headline and children 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -706,8 +706,8 @@ exports[`Content Primary renders with headline and description 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -729,8 +729,8 @@ exports[`Content Primary renders with headline and description 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -752,8 +752,8 @@ exports[`Content Primary renders with headline and description 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -775,8 +775,8 @@ exports[`Content Primary renders with headline and description 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1016,8 +1016,8 @@ exports[`Content Primary renders with headline only 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1039,8 +1039,8 @@ exports[`Content Primary renders with headline only 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1062,8 +1062,8 @@ exports[`Content Primary renders with headline only 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1085,8 +1085,8 @@ exports[`Content Primary renders with headline only 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1189,8 +1189,8 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1212,8 +1212,8 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1235,8 +1235,8 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1258,8 +1258,8 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2001,8 +2001,8 @@ exports[`Content Secondary renders with headline and children 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2024,8 +2024,8 @@ exports[`Content Secondary renders with headline and children 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2047,8 +2047,8 @@ exports[`Content Secondary renders with headline and children 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2070,8 +2070,8 @@ exports[`Content Secondary renders with headline and children 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2218,8 +2218,8 @@ exports[`Content Secondary renders with headline and description 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2241,8 +2241,8 @@ exports[`Content Secondary renders with headline and description 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2264,8 +2264,8 @@ exports[`Content Secondary renders with headline and description 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2287,8 +2287,8 @@ exports[`Content Secondary renders with headline and description 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2526,8 +2526,8 @@ exports[`Content Secondary renders with headline only 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2549,8 +2549,8 @@ exports[`Content Secondary renders with headline only 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2572,8 +2572,8 @@ exports[`Content Secondary renders with headline only 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2595,8 +2595,8 @@ exports[`Content Secondary renders with headline only 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2697,8 +2697,8 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2720,8 +2720,8 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2743,8 +2743,8 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2766,8 +2766,8 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;

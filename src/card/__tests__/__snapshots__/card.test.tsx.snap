@@ -1661,8 +1661,8 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-4 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1684,8 +1684,8 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-4 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -5569,8 +5569,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -5592,8 +5592,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 @media screen and (min-width: 1024px) {
   .emotion-5 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -5801,8 +5801,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -5824,8 +5824,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 @media screen and (min-width: 1024px) {
   .emotion-5 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -6043,8 +6043,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -6066,8 +6066,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 @media screen and (min-width: 1024px) {
   .emotion-5 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;

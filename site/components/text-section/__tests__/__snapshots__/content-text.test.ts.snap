@@ -114,8 +114,8 @@ exports[`ContentText renders with only the title 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-1 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -195,8 +195,8 @@ exports[`ContentText renders with title and description 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-1 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;

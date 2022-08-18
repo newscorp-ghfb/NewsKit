@@ -31,8 +31,8 @@ exports[`TabsWithTable renders with default data 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -54,8 +54,8 @@ exports[`TabsWithTable renders with default data 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -77,8 +77,8 @@ exports[`TabsWithTable renders with default data 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -100,8 +100,8 @@ exports[`TabsWithTable renders with default data 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
