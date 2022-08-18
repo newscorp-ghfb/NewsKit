@@ -634,13 +634,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: [
-        'Banner',
-        'Flag',
-        'Progress Indicator',
-        'Toast',
-        'Inline Message',
-      ],
+      related: ['Banner', 'Flag', 'Toast', 'Inline Message'],
     }}
   />
 );

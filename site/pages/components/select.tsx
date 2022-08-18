@@ -882,14 +882,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: [
-        'Button',
-        'Checkbox',
-        'Form',
-        'Radio Button',
-        'Slider',
-        'Text Field',
-      ],
+      related: ['Button', 'Checkbox', 'Form', 'Text Field'],
     }}
   />
 );

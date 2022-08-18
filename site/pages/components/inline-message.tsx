@@ -372,7 +372,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: ['Banner', 'Flag', 'Progress Indicator', 'Toast', 'Tooltip'],
+      related: ['Banner', 'Flag', 'Toast', 'Tooltip'],
     }}
   />
 );

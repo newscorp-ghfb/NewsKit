@@ -323,21 +323,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
         },
       ]}
     />
-    <RelatedComponentsSection
-      related={[
-        'Block',
-        'Card',
-        'Divider',
-        'Drawer',
-        'Fieldset',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Popover',
-        'Stack',
-        'Structured List',
-      ]}
-    />
+    <RelatedComponentsSection related={['Block', 'Grid', 'Stack']} />
   </ComponentPageBasicTemplate>
 );
 

@@ -645,13 +645,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: [
-        'Banner',
-        'Flag',
-        'Progress Indicator',
-        'Inline Message',
-        'Tooltip',
-      ],
+      related: ['Banner', 'Flag', 'Inline Message', 'Tooltip'],
     }}
   />
 );

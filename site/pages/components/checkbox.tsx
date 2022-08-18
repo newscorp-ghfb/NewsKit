@@ -881,14 +881,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: [
-        'Button',
-        'Form',
-        'Radio Button',
-        'Select',
-        'Slider',
-        'Text Field',
-      ],
+      related: ['Button', 'Form', 'Radio Button', 'Select'],
     }}
   />
 );

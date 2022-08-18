@@ -267,19 +267,7 @@ const BlockComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: [
-        'Card',
-        'Divider',
-        'Drawer',
-        'Fieldset',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Popover',
-        'Stack',
-        'Structured List',
-        'Visibility',
-      ],
+      related: ['Card', 'Grid', 'Grid Layout', 'Stack'],
     }}
   />
 );

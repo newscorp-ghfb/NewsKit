@@ -540,19 +540,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: [
-        'Block',
-        'Card',
-        'Divider',
-        'Drawer',
-        'Fieldset',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Popover',
-        'Stack',
-        'Visibility',
-      ],
+      related: ['Block', 'Divider', 'Grid'],
     }}
   />
 );

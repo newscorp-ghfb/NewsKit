@@ -916,14 +916,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: [
-        'Button',
-        'Checkbox',
-        'Form',
-        'Radio Button',
-        'Select',
-        'Slider',
-      ],
+      related: ['Button', 'Text Area', 'Form', 'Select'],
     }}
   />
 );

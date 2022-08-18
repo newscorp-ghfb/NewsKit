@@ -1115,7 +1115,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       introduction: 'Ensure icons have Alt Text applied.',
     }}
     related={{
-      related: ['Accordion', 'Link', 'Scroll', 'Menu', 'Tags', 'Title Bar'],
+      related: ['Accordion', 'Link', 'Menu', 'Tag'],
     }}
   />
 );

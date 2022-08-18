@@ -270,19 +270,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: [
-        'Block',
-        'Card',
-        'Divider',
-        'Drawer',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Popover',
-        'Stack',
-        'Structured List',
-        'Visibility',
-      ],
+      related: ['Stack', 'Structured List', 'Visibility'],
     }}
   />
 );

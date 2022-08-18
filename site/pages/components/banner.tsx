@@ -613,13 +613,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: [
-        'Flag',
-        'Progress Indicator',
-        'Toast',
-        'Inline Message',
-        'Tooltip',
-      ],
+      related: ['Flag', 'Toast', 'Inline Message', 'Tooltip'],
     }}
   />
 );

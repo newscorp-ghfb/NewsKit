@@ -804,7 +804,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: ['Accordion', 'Link', 'Scroll', 'Tabs', 'Tags', 'Title Bar'],
+      related: ['Accordion', 'Link', 'Tabs', 'Tag'],
     }}
   />
 );
