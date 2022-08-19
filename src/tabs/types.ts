@@ -96,7 +96,8 @@ export interface TabsBarProps
   extends Pick<TabsProps, 'overrides' | 'vertical'> {}
 
 export interface CommonTabProps
-  extends Omit<BaseFlagProps<BaseFlagOverrides>, 'loading' | 'children'> {
+  extends Omit<BaseFlagProps<BaseFlagOverrides>, 'loading' | 'children'>,
+    React.HTMLAttributes<HTMLButtonElement> {
   ariaLabel?: string;
   autoFocus?: boolean;
   dataTestId?: string;

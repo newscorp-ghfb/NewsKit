@@ -83,6 +83,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
       indicatorPosition = TabsIndicatorPosition.End,
       align: passedAlign,
       onChange,
+      ...rest
     },
     ref,
   ) => {
@@ -289,6 +290,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
           ariaLabel,
           overrides: tabButtonOverrides,
           label,
+          ...restTabButtonProps
         } = props;
 
         acc.push(
@@ -319,6 +321,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
                   width: '100%',
                   height: vertical ? '100%' : '',
                 }}
+                {...restTabButtonProps}
               >
                 {getChildren(label)}
               </TabButton>
@@ -341,6 +344,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
         vertical={vertical}
         overrides={overrides}
         data-testid="tab-group"
+        {...rest}
       >
         <StyledTabsBar
           overrides={nonLogicalOverrides}
