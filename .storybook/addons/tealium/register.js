@@ -53,7 +53,8 @@ const sendEvent = api => {
 
   if (window && window.utag) {
     console.log('SEND_EVENT', event);
-    //window.utag.view(e);
+    // window.tealiumTrack(event);
+    // window.utag.view(e);
   }
 };
 
