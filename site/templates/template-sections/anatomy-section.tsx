@@ -72,7 +72,7 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
           <ComponentPageCell>
             <Tabs size={TabSize.Medium}>
               {tabs.map(({title, summary, media: tabMedia, rows: tabRows}) => (
-                <Tab label={title} overrides={tabOverrides}>
+                <Tab label={title} overrides={tabOverrides} key={title}>
                   <Block spaceStack="space080">
                     <TextBlock
                       stylePreset="inkBase"
@@ -102,14 +102,14 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
                     index,
                     array,
                   ) => (
-                    <>
+                    <React.Fragment key={title}>
                       <ContentText title={title}>{summary}</ContentText>
                       {componentMedia &&
                         renderAnatomy(componentMedia, componentRows)}
                       {index < array.length - 1 && (
                         <Block spaceStack="space090" />
                       )}
-                    </>
+                    </React.Fragment>
                   ),
                 )
               : media && renderAnatomy(media, rows)}

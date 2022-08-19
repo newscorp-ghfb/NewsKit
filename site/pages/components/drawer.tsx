@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Block,
   Drawer,
   DrawerProps,
   InlineMessage,
@@ -211,17 +210,18 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
           title: 'Close Position',
           description: (
             <>
-              <Block spaceStack="space030">
-                The position of the close button in the Drawer header is set to
-                left as default for left placement, and right for right
-                placement. For top and bottom placement, it is set to the right.
-                Users have the option to set the close button position to either
-                left or right for all four placements.
-              </Block>
+              The position of the close button in the Drawer header is set to
+              left as default for left placement, and right for right placement.
+              For top and bottom placement, it is set to the right. Users have
+              the option to set the close button position to either left or
+              right for all four placements.
               <InlineMessage
                 role="region"
                 aria-label="Close position"
                 title="Note"
+                overrides={{
+                  marginBlockStart: 'space050',
+                }}
               >
                 The header and close button are optional. However it&lsquo;s
                 recommended that a close button is always used to adhere to{' '}

@@ -307,7 +307,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     <Link
                       href="https://www.figma.com/file/uMSITiPijbFBVQl09zzVHm/%5BProduct%2FBrand-Name%5D-UX-project-template?node-id=0%3A1"
                       target="_blank"
-                      verrides={{marginBlockStart: 'space050'}}
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View the UX project template file in Figma (internal only)
                     </Link>

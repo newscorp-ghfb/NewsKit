@@ -31,22 +31,8 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/grid-layout-illustration',
       },
-      introduction: (
-        <>
-          <TextBlock
-            typographyPreset="editorialHeadline040"
-            style={{color: 'red'}}
-          >
-            This component is a beta, this documentation page is still a work in
-            progress.
-          </TextBlock>
-          <Block spaceStack="space030" />
-          <TextBlock>
-            Used to construct a visual grid for responsive page layout. A Proxy
-            for CSS grid.
-          </TextBlock>
-        </>
-      ),
+      introduction:
+        'Used to construct a visual grid for responsive page layout. A Proxy for CSS grid.',
     }}
     componentDefaultsKey="gridLayout"
     interactiveDemo={{

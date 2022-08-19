@@ -1,9 +1,10 @@
 import React from 'react';
-import {Block, Card, TextBlock, Headline, Divider} from 'newskit';
+import {Block, Card, Headline, Divider} from 'newskit';
 import {IconFilledCheckCircle} from '../icons/icon-filled-check-circle';
 import {IconFilledCrossCircle} from '../icons/icon-filled-cross-circle';
 import {KindConfig, UsageCardProps, UsageKind} from './types';
 import {RelativeBlock, AbsoluteBlock} from './styled';
+import {UnpackContent} from '../unpack-content/unpack-content';
 
 const kindMap: Record<string, KindConfig> = {
   do: {
@@ -64,12 +65,14 @@ export const UsageCard: React.FC<UsageCardProps> = ({
           </Headline>
         </Block>
         <Block spaceStack="space040">
-          <TextBlock
-            stylePreset="inkBase"
-            typographyPreset="editorialParagraph020"
+          <UnpackContent
+            textBlockProps={{
+              stylePreset: 'inkBase',
+              typographyPreset: 'editorialParagraph020',
+            }}
           >
             {description}
-          </TextBlock>
+          </UnpackContent>
         </Block>
       </Card>
     </RelativeBlock>

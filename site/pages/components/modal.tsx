@@ -189,26 +189,22 @@ const ModalComponent = (layoutProps: LayoutProps) => (
                   },
                 }}
               >
-                <Block spaceStack="space000">
-                  <P overrides={{typographyPreset: 'editorialParagraph010'}}>
-                    <b>xs/sm</b>
-                    <br />
-                    the Modal is positioned in the centre of the screen, with
-                    any content passed to the Modal panel causing it to grow
-                    from the centre until the max height is reached.
-                  </P>
-                </Block>
-                <Block spaceStack="space030">
-                  <P overrides={{typographyPreset: 'editorialParagraph010'}}>
-                    <b>md/lg/xl</b>
-                    <br />
-                    the Modal is positioned horizontally in the centre of the
-                    screen, with the Modal positioned vertically offset from the
-                    top of the screen, with any content passed to the Modal
-                    panel causing it to grow downwards until the max height is
-                    reached.
-                  </P>
-                </Block>
+                <P overrides={{typographyPreset: 'editorialParagraph010'}}>
+                  <b>xs/sm</b>
+                  <br />
+                  the Modal is positioned in the centre of the screen, with any
+                  content passed to the Modal panel causing it to grow from the
+                  centre until the max height is reached.
+                </P>
+
+                <P overrides={{typographyPreset: 'editorialParagraph010'}}>
+                  <b>md/lg/xl</b>
+                  <br />
+                  the Modal is positioned horizontally in the centre of the
+                  screen, with the Modal positioned vertically offset from the
+                  top of the screen, with any content passed to the Modal panel
+                  causing it to grow downwards until the max height is reached.
+                </P>
               </UnorderedList>
             </>
           ),
@@ -218,15 +214,16 @@ const ModalComponent = (layoutProps: LayoutProps) => (
           title: 'Close position',
           description: (
             <>
-              <Block spaceStack="space030">
-                The position of the close button in the Modal header is set to
-                right as default, with the option to set the position to the
-                left of the header.
-              </Block>
+              The position of the close button in the Modal header is set to
+              right as default, with the option to set the position to the left
+              of the header.
               <InlineMessage
                 role="region"
                 aria-label="Close position"
                 title="Note"
+                overrides={{
+                  marginBlockStart: 'space050',
+                }}
               >
                 The header and close button are optional. However it&lsquo;s
                 recommended that a close button is always used to adhere to{' '}
@@ -441,27 +438,29 @@ const ModalComponent = (layoutProps: LayoutProps) => (
       title: 'SEO Considerations',
       introduction: (
         <>
-          <Block spaceStack="space030" />
           <UnorderedList
             markerAlign="start"
             overrides={{
+              marginBlockStart: 'space030',
               marker: {
                 spaceInline: 'space030',
               },
             }}
           >
-            <Block spaceStack="space030">
-              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                Ensure all text, icons, and images are visible in the Modal so
-                that information can be crawled and indexed.
-              </P>
-            </Block>
-            <Block spaceStack="space030">
-              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                The Modal component and its content are rendered to the DOM, but
-                only visible to the user when the Modal is open.
-              </P>
-            </Block>
+            <P
+              overrides={{
+                typographyPreset: 'editorialParagraph030',
+                marginBlockEnd: 'space030',
+              }}
+            >
+              Ensure all text, icons, and images are visible in the Modal so
+              that information can be crawled and indexed.
+            </P>
+
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              The Modal component and its content are rendered to the DOM, but
+              only visible to the user when the Modal is open.
+            </P>
           </UnorderedList>
         </>
       ),

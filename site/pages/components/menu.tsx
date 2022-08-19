@@ -8,6 +8,7 @@ import {
   InlineMessage,
   MenuGroup,
   MenuDivider,
+  UnorderedList,
 } from 'newskit';
 import {parseEnumValues} from '../../utils/parse-enum-values';
 import {Mono} from '../../components/flags';
@@ -185,12 +186,10 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       cards: [
         {
           title: 'Orientation',
-          description: (
-            <TextBlock>
+          description: `
               A Menu can be displayed horizontally or vertically to effectively
               and appropriately use the space on a screen.
-            </TextBlock>
-          ) as any,
+            `,
           media: getIllustrationComponent(
             'components/menu/menu-options-orientation-illustration',
           ),
@@ -199,13 +198,11 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           title: 'Title',
           description: (
             <>
-              <TextBlock>
-                A title can be displayed in a Menu Item Group above the Menu
-                items. This could be used for categorising Menu items.
-              </TextBlock>
-              <TextBlock>
-                This is only available when a Menu is in a vertical orientation.
-              </TextBlock>
+              A title can be displayed in a Menu Item Group above the Menu
+              items. This could be used for categorising Menu items.
+              <br />
+              <br />
+              This is only available when a Menu is in a vertical orientation.
             </>
           ) as any,
           media: getIllustrationComponent(
@@ -232,19 +229,19 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           title: 'Alignment',
           description: (
             <>
-              <ul>
-                <li>
+              <UnorderedList markerAlign="start">
+                <>
                   <Mono>Center</Mono>: Centers the Menu item label and icons.
-                </li>
-                <li>
+                </>
+                <>
                   <Mono>Start</Mono>: Aligns the Menu item label and icons to
                   the left.
-                </li>
-                <li>
+                </>
+                <>
                   <Mono>End</Mono>: Aligns the Menu item label and icons to the
                   right.
-                </li>
-              </ul>
+                </>
+              </UnorderedList>
               <InlineMessage role="region" aria-label="note" title="Note">
                 Default value depends on the vertical prop: when is True the
                 value is set to MenuItemAlign.Start, and MenuAlign.Center when
@@ -268,25 +265,26 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           title: 'Style',
           description: (
             <>
-              <p>
-                There are three default styles that can be mapped based on their
-                orientation and application.
-              </p>
-              <ul>
-                <li>
+              There are three default styles that can be mapped based on their
+              orientation and application.
+              <UnorderedList
+                markerAlign="start"
+                overrides={{marginBlockStart: 'space030'}}
+              >
+                <>
                   <Mono>menuItemVertical</Mono> this is the default style
                   applied when the menu is in a vertical orientation.
-                </li>
-                <li>
+                </>
+                <>
                   <Mono>menuItemHorizonal</Mono> this is the default style
                   applied when the menu is in a horizontal orientation.
-                </li>
-                <li>
+                </>
+                <>
                   <Mono>menuItemHorizontalInverse</Mono> this is the default
                   style applied when the menu is in a horizontal orientation on
                   contrasting background colour.
-                </li>
-              </ul>
+                </>
+              </UnorderedList>
             </>
           ) as any,
           media: getIllustrationComponent(

@@ -406,20 +406,19 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           title: 'Placeholder text',
           description: (
             <>
-              <Block spaceStack="space030">
-                Placeholder text can be displayed to provide the user with a
-                short hint that describes the content that is expected to be
-                inputted by the user (e.g. a sample value or a short description
-                of the expected format).
-                <br />
-                <br />
-                The short hint is displayed in the input container before the
-                user enters a value.
-              </Block>
+              Placeholder text can be displayed to provide the user with a short
+              hint that describes the content that is expected to be inputted by
+              the user (e.g. a sample value or a short description of the
+              expected format).
+              <br />
+              <br />
+              The short hint is displayed in the input container before the user
+              enters a value.
               <InlineMessage
                 role="region"
                 aria-label="Placeholder accessible"
                 title="Note"
+                overrides={{marginBlockStart: 'space030'}}
               >
                 Placeholder text is not accessible; use assistive text when
                 providing instructions on completing a Select for clarity.
@@ -645,11 +644,11 @@ const SelectComponent = (layoutProps: LayoutProps) => (
                 For more information, please refer to the Form component.
               </Link>
               .
-              <Block spaceStack="space050" />
               <InlineMessage
                 role="region"
                 aria-label="Select validation"
                 title="Note"
+                overrides={{marginBlockStart: 'space050'}}
               >
                 Validation only works if the Select component uses the Form
                 component.
@@ -841,8 +840,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           The Select component is compromised of four key elements, these have a
           range of props that can be used to define an appropriate experience
           for different use cases.
-          <Block spaceStack="space080" />
-          <InlineMessage>
+          <InlineMessage overrides={{marginBlockStart: 'space080'}}>
             There are two components exported from the package, one for use
             within the NewsKit Form component, and one for use as a controlled
             component.
