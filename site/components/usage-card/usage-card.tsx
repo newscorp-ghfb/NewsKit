@@ -4,7 +4,7 @@ import {IconFilledCheckCircle} from '../icons/icon-filled-check-circle';
 import {IconFilledCrossCircle} from '../icons/icon-filled-cross-circle';
 import {KindConfig, UsageCardProps, UsageKind} from './types';
 import {RelativeBlock, AbsoluteBlock} from './styled';
-import {UnpackContent} from '../unpack-content/unpack-content';
+import {UnpackContent} from '../unpack-content';
 
 const kindMap: Record<string, KindConfig> = {
   do: {

@@ -4,20 +4,11 @@ import {TextBlock, TextBlockProps} from 'newskit';
 import {childIsString} from '../../../src/utils/react-children-utilities';
 import {getDisplayName} from '../../../src/utils/component';
 import {useReactKeys} from '../../../src/utils/hooks';
-
-type UnpackContentProps = {
-  children?: React.ReactNode;
-  textBlockProps?: TextBlockProps;
-};
+import {OutputType, UnpackContentProps} from './types';
 
 const defaultTextBlockProps = {
   stylePreset: 'inkBase',
   typographyPreset: 'editorialSubheadline020',
-};
-
-type OutputType = {
-  type: 'text' | 'component';
-  children: React.ReactNode;
 };
 
 const fragmentToOutput = (

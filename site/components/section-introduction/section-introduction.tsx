@@ -2,7 +2,7 @@ import React from 'react';
 import {Cell, Block, TitleBar, Image} from 'newskit';
 import {ComponentPageCellCompact} from '../layout-cells';
 import {SectionIntroductionProps} from './types';
-import {UnpackContent} from '../unpack-content/unpack-content';
+import {UnpackContent} from '../unpack-content';
 
 export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
   title,

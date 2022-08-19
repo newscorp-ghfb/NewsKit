@@ -7,7 +7,7 @@ import {
   TextBlock,
 } from 'newskit';
 import React, {useMemo} from 'react';
-import {UnpackContent} from '../unpack-content/unpack-content';
+import {UnpackContent} from '../unpack-content';
 
 import {ContentBaseProps} from './types';
 

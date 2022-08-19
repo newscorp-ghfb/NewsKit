@@ -1,6 +1,6 @@
 import React from 'react';
 import {Block, Headline} from 'newskit';
-import {UnpackContent} from '../unpack-content/unpack-content';
+import {UnpackContent} from '../unpack-content';
 import {BaseCardProps} from './types';
 import {StyledCard} from './styled';
 
