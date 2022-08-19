@@ -1031,6 +1031,8 @@ const schema = yup.object().shape({
               >
                 Please refer to the following FormInput component pages for
                 details of props & overrides:
+                {/* 
+                TODO: UnorderedList inside Inline Message
                 <UnorderedList
                   markerAlign="start"
                   listItemMarker={IconFilledCircle}
@@ -1062,7 +1064,7 @@ const schema = yup.object().shape({
                       FormInputRadioButton
                     </Link>
                   </>
-                </UnorderedList>
+                </UnorderedList> */}
               </InlineMessage>
             </>
           ),
