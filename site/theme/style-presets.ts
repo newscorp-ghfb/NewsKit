@@ -275,7 +275,7 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusDefault}}',
     },
     hover: {
-      backgroundColor: '{{colors.interface010}}',
+      backgroundColor: '{{colors.interface020}}',
     },
   },
   flagBrand: {

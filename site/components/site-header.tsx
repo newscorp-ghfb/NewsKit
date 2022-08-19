@@ -37,13 +37,13 @@ export const GitHubButton = () => (
       typographyPreset: 'utilityButton010',
       stylePreset: 'buttonOutlinedSecondary',
       minWidth: '130px',
-      height: '30px',
+      height: '40px',
     }}
     href="https://github.com/newscorp-ghfb/newskit"
     target="_blank"
   >
     <IconFilledGitHub />
-    View Github
+    View GitHub
   </Button>
 );
 

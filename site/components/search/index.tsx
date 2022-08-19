@@ -57,7 +57,7 @@ export const Search: React.FC = () => {
             typographyPreset: 'utilityButton010',
             stylePreset: 'buttonOutlinedSecondary',
             minWidth: '130px',
-            height: '30px',
+            height: '40px',
           }}
         >
           <IconFilledSearch />
@@ -100,17 +100,17 @@ export const Search: React.FC = () => {
               '--docsearch-footer-background': 'unset',
               '--docsearch-modal-background': theme.colors.interfaceBackground,
               '--docsearch-hit-color': theme.colors.inkContrast,
-              '--docsearch-hit-active-color': theme.colors.inkBrand010,
+              '--docsearch-hit-active-color': theme.colors.inkContrast,
               '--docsearch-hit-background': theme.colors.interface010,
               '--docsearch-highlight-color': theme.colors.inkBrand010,
               '--docsearch-spacing': '20px',
               '--docsearch-container-background':
                 theme.overlays.overlayTintBase040,
-              '--docsearch-modal-width': '700px',
+              '--docsearch-modal-width': '720px',
               '--docsearch-modal-height': '650px',
-              '--docsearch-modal-shadow': theme.shadows.shadow60,
-              '--docsearch-searchbox-height': '75px',
-              '--docsearch-hit-height': '80px',
+              '--docsearch-modal-shadow': theme.shadows.shadow060,
+              '--docsearch-searchbox-height': '70px',
+              '--docsearch-hit-height': '70px',
               '--docsearch-key-gradient': 'unset',
               '--docsearch-key-shadow': 'unset',
               '--docsearch-footer-height': '55px',
@@ -118,13 +118,13 @@ export const Search: React.FC = () => {
           },
           body: {
             '.DocSearch-SearchBar': {
-              padding: '20px 20px 14px',
+              padding: '15px 25px 15px 15px',
               borderBottom: '1px solid',
-              borderColor: theme.colors.interfaceNotice020,
+              borderColor: theme.colors.interface030,
             },
             '.DocSearch-Form': {
               '& .DocSearch-Input': {
-                paddingLeft: '25px',
+                paddingLeft: '20px',
               },
               '& .DocSearch-Search-Icon': {
                 width: '20px',
@@ -134,13 +134,10 @@ export const Search: React.FC = () => {
             '#docsearch-label': {
               color: theme.colors.inkBrand010,
             },
-            '.DocSearch-Dropdown': {
-              minHeight: 384, // = StartScreen height, to prevent layout shift when first char
-            },
             '.DocSearch-Hit-source': {
               color: theme.colors.inkContrast,
-              margin: '15px -4px',
-              padding: '8px 8px 0',
+              margin: '20px -8px',
+              padding: '15px 8px 0',
               fontFamily: theme.fonts.fontFamily030.fontFamily,
               fontSize: theme.fonts.fontSize030,
               lineHeight: theme.fonts.fontLineHeight020,
@@ -154,14 +151,11 @@ export const Search: React.FC = () => {
               letterSpacing: theme.fonts.fontLetterSpacing030,
               lineHeight: theme.fonts.fontLineHeight040,
             },
-            '.DocSearch-Hit': {
-              color: theme.colors.inkContrast,
-            },
             '.DocSearch-Hit a': {
               backgroundColor: theme.colors.transparent,
-              padding: '2.5px 0px 2.5px 20px',
+              padding: '2.5px 0px 2.5px 30px',
               border: '1px solid transparent',
-              borderBottomColor: theme.colors.interfaceNotice020,
+              borderBottomColor: theme.colors.interface020,
             },
             '.DocSearch-Hit-content-wrapper': {
               paddingLeft: '20px',
@@ -169,22 +163,55 @@ export const Search: React.FC = () => {
             '.DocSearch-Hit[aria-selected="true"] a': {
               borderColor: theme.colors.inkBrand010,
               borderRadius: theme.borders.borderRadiusDefault,
-              backgroundColor: theme.colors.interactiveSecondary010,
-            },
-            '#docsearch-input, .DocSearch-Cancel': {
-              color: theme.colors.inkSubtle,
+              backgroundColor: theme.colors.interactivePrimary010,
             },
             '.DocSearch-Footer': {
-              fontFamily: theme.fonts.fontFamily010.fontFamily,
-              fontSize: theme.fonts.fontSize020,
-              lineHeight: theme.fonts.fontLineHeight040,
-              fontWeight: theme.fonts.fontWeight020,
-              letterSpacing: theme.fonts.fontLetterSpacing030,
               color: theme.colors.inkSubtle,
               borderTop: '1px solid',
-              borderColor: theme.colors.interfaceNotice020,
-              '.DocSearch-Commands': {
+              borderColor: theme.colors.interface030,
+              '&.DocSearch-Label': {
+                fontFamily: theme.fonts.fontFamily010.fontFamily,
+                fontSize: theme.fonts.fontSize010,
+                lineHeight: theme.fonts.fontLineHeight040,
+                fontWeight: theme.fonts.fontWeight010,
+                letterSpacing: theme.fonts.fontLetterSpacing050,
+              },
+              '&.DocSearch-Commands': {
                 display: 'none',
+              },
+            },
+            '.DocSearch-Help': {
+              color: theme.colors.inkContrast,
+              fontFamily: theme.fonts.fontFamily030.fontFamily,
+              fontSize: theme.fonts.fontSize030,
+              lineHeight: theme.fonts.fontLineHeight020,
+              fontWeight: theme.fonts.fontWeight020,
+              letterSpacing: theme.fonts.fontLetterSpacing030,
+            },
+            '.DocSearch-Help a': {
+              color: theme.colors.inkBrand010,
+              '&:visited': {
+                color: theme.colors.interactiveVisited010,
+              },
+            },
+            '.DocSearch-NoResults': {
+              color: theme.colors.inkContrast,
+              fontFamily: theme.fonts.fontFamily030.fontFamily,
+              fontSize: theme.fonts.fontSize030,
+              lineHeight: theme.fonts.fontLineHeight020,
+              fontWeight: theme.fonts.fontWeight020,
+              letterSpacing: theme.fonts.fontLetterSpacing030,
+            },
+            '.DocSearch-NoResults-Prefill-List > ul > li': {
+              listStyle: 'none',
+            },
+            '.DocSearch-Reset': {
+              color: theme.colors.inkContrast,
+              '&:hover': {
+                color: theme.colors.inkBrand010,
+              },
+              '&:active': {
+                color: theme.colors.inkBrand010,
               },
             },
           },
