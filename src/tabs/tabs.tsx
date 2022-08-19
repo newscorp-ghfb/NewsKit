@@ -280,6 +280,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
 
     const tabButtons = tabsOnlyChildren.reduce(
       (acc, {key: k, props}, index, array) => {
+        /* istanbul ignore next */
         const key = k || `tab-${index}`;
         const id = ariaIds[index];
         const selected = index === activeTabIndex;
