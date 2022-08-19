@@ -153,7 +153,7 @@ const theme = createTheme({
       <ContentSection sectionName="overriding component">
         <ContentPrimary
           id="overriding-component"
-          toc="Overriding component"
+          toc="Overriding components"
           headline="Overriding component defaults at the component level"
         />
         <ContentSecondary headline="Example">
