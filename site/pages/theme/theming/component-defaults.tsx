@@ -175,7 +175,6 @@ const theme = createTheme({
           </Code>
           <InlineMessage
             icon={infoIcon}
-            title="Note"
             role="region"
             aria-label="overriding component"
             overrides={{
