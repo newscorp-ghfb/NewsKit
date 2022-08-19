@@ -190,7 +190,7 @@ const theme = createTheme({
             role="region"
             aria-label="variants"
             overrides={{
-              marginBlockStart: 'space070',
+              marginBlockStart: 'space050',
             }}
           >
             The variant (in this case, “medium”) is not included in the

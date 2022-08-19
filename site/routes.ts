@@ -284,7 +284,7 @@ export default [
             id: '/theme/theming/using-a-theme',
           },
           {
-            title: 'Component defaults',
+            title: 'Component overrides & defaults',
             illustration: 'theme/component-defaults/hero',
             description:
               'A preselected option that is applied to a component to define its appearance or behaviour.',
