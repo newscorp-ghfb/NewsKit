@@ -1,12 +1,20 @@
 import React from 'react';
+import {loadCSS} from 'fg-loadcss';
 import {DocSearchModal, useDocSearchKeyboardEvents} from '@docsearch/react';
 import {Global, Layer, Visible, IconButton, Button} from 'newskit';
 import {IconFilledSearch} from '../icons';
 import {Mono} from '../flags';
 
-import '@docsearch/css';
-
 export const Search: React.FC = () => {
+  React.useEffect(() => {
+    const node = loadCSS(
+      'https://cdn.jsdelivr.net/npm/@docsearch/css@3.0.0-alpha.50/dist/style.css',
+    );
+
+    return () => {
+      node.parentNode!.removeChild(node);
+    };
+  }, []);
   const searchButtonRef = React.useRef(null);
   const [isOpen, setIsOpen] = React.useState(false);
   const [initialQuery, setInitialQuery] = React.useState(undefined);
@@ -40,7 +48,10 @@ export const Search: React.FC = () => {
       <Visible xs sm md>
         <IconButton
           aria-label="Search"
-          overrides={{stylePreset: 'iconButtonMinimalSecondary'}}
+          overrides={{
+            stylePreset: 'iconButtonMinimalSecondary',
+            marginBlockEnd: 'sizing010',
+          }}
           size="small"
           ref={searchButtonRef}
           onClick={onOpen}
@@ -91,51 +102,88 @@ export const Search: React.FC = () => {
               '--docsearch-primary-color': theme.colors.inkBrand010,
               '--docsearch-text-color': theme.colors.inkContrast,
               '--docsearch-muted-color': theme.colors.inkSubtle,
-              '--docsearch-searchbox-shadow': 0,
-              '--docsearch-hit-shadow': 0,
-              '--docsearch-footer-shadow': 0,
-              '--docsearch-logo-color': theme.colors.inkNonEssential,
-              '--docsearch-searchbox-focus-background':
-                theme.colors.transparent,
-              '--docsearch-footer-background': 'unset',
-              '--docsearch-modal-background': theme.colors.interfaceBackground,
-              '--docsearch-hit-color': theme.colors.inkContrast,
-              '--docsearch-hit-active-color': theme.colors.inkContrast,
-              '--docsearch-hit-background': theme.colors.interface010,
-              '--docsearch-highlight-color': theme.colors.inkBrand010,
               '--docsearch-spacing': '20px',
+              '--docsearch-highlight-color': theme.colors.inkBrand010,
               '--docsearch-container-background':
                 theme.overlays.overlayTintBase040,
+              '--docsearch-logo-color': theme.colors.inkNonEssential,
+
+              // modal
+              '--docsearch-modal-background': theme.colors.interfaceBackground,
               '--docsearch-modal-width': '720px',
               '--docsearch-modal-height': '650px',
               '--docsearch-modal-shadow': theme.shadows.shadow060,
+
+              // searchbox
+              '--docsearch-searchbox-focus-background':
+                theme.colors.transparent,
               '--docsearch-searchbox-height': '70px',
+              '--docsearch-searchbox-shadow': 0,
+
+              // hit
+              '--docsearch-hit-shadow': 0,
+              '--docsearch-hit-color': theme.colors.inkContrast,
+              '--docsearch-hit-active-color': theme.colors.inkContrast,
+              '--docsearch-hit-background': theme.colors.interface010,
               '--docsearch-hit-height': '70px',
+
+              // key
               '--docsearch-key-gradient': 'unset',
               '--docsearch-key-shadow': 'unset',
+
+              // footer
+              '--docsearch-footer-shadow': 0,
+              '--docsearch-footer-background': 'unset',
               '--docsearch-footer-height': '55px',
             },
           },
           body: {
+            // Modal Searchbox
             '.DocSearch-SearchBar': {
               padding: '15px 25px 15px 15px',
               borderBottom: '1px solid',
               borderColor: theme.colors.interface030,
             },
-            '.DocSearch-Form': {
-              '& .DocSearch-Input': {
-                paddingLeft: '20px',
+            '.DocSearch-Input': {
+              paddingLeft: '20px',
+              fontFamily: theme.fonts.fontFamily010.fontFamily,
+              fontSize: theme.fonts.fontSize030,
+              fontWeight: theme.fonts.fontWeight010,
+              letterSpacing: theme.fonts.fontLetterSpacing030,
+              lineHeight: theme.fonts.fontLineHeight040,
+            },
+            '.DocSearch-Search-Icon': {
+              width: '20px',
+              height: '20px',
+            },
+            '.DocSearch-Reset': {
+              color: 'var(--docsearch-text-color)',
+              '&:hover': {
+                color: 'var(--docsearch-primary-color)',
               },
-              '& .DocSearch-Search-Icon': {
-                width: '20px',
-                height: '20px',
+              '&:active': {
+                color: 'var(--docsearch-muted-color)',
               },
             },
-            '#docsearch-label': {
-              color: theme.colors.inkBrand010,
+            '.DocSearch-Cancel': {
+              fontFamily: theme.fonts.fontFamily010.fontFamily,
+              fontSize: theme.fonts.fontSize030,
+              fontWeight: theme.fonts.fontWeight010,
+              letterSpacing: theme.fonts.fontLetterSpacing030,
+              lineHeight: theme.fonts.fontLineHeight040,
             },
+            // Modal Dropdown
+            '.DocSearch-Label': {
+              color: 'var(--docsearch-logo-color)',
+              fontFamily: theme.fonts.fontFamily030.fontFamily,
+              fontSize: theme.fonts.fontSize010,
+              lineHeight: theme.fonts.fontLineHeight040,
+              fontWeight: theme.fonts.fontWeight010,
+              letterSpacing: theme.fonts.fontLetterSpacing040,
+            },
+            // Hit
             '.DocSearch-Hit-source': {
-              color: theme.colors.inkContrast,
+              color: 'var(--docsearch-text-color)',
               margin: '20px -8px',
               padding: '15px 8px 0',
               fontFamily: theme.fonts.fontFamily030.fontFamily,
@@ -144,75 +192,59 @@ export const Search: React.FC = () => {
               fontWeight: theme.fonts.fontWeight040,
               letterSpacing: theme.fonts.fontLetterSpacing030,
             },
-            '.DocSearch-Hit, #docsearch-input, .DocSearch-Cancel': {
+            '.DocSearch-Hit': {
               fontFamily: theme.fonts.fontFamily010.fontFamily,
               fontSize: theme.fonts.fontSize030,
               fontWeight: theme.fonts.fontWeight010,
               letterSpacing: theme.fonts.fontLetterSpacing030,
               lineHeight: theme.fonts.fontLineHeight040,
-            },
-            '.DocSearch-Hit a': {
-              backgroundColor: theme.colors.transparent,
-              padding: '2.5px 0px 2.5px 30px',
-              border: '1px solid transparent',
-              borderBottomColor: theme.colors.interface020,
+              '& a': {
+                backgroundColor: theme.colors.transparent,
+                padding: '2.5px 0px 2.5px 30px',
+                border: '1px solid transparent',
+                borderBottomColor: theme.colors.interface020,
+              },
             },
             '.DocSearch-Hit-content-wrapper': {
               paddingLeft: '20px',
             },
             '.DocSearch-Hit[aria-selected="true"] a': {
-              borderColor: theme.colors.inkBrand010,
+              borderColor: 'var(--docsearch-primary-color)',
               borderRadius: theme.borders.borderRadiusDefault,
               backgroundColor: theme.colors.interactivePrimary010,
             },
+            // Footer
             '.DocSearch-Footer': {
-              color: theme.colors.inkSubtle,
+              color: 'var(--docsearch-muted-color)',
               borderTop: '1px solid',
               borderColor: theme.colors.interface030,
-              '&.DocSearch-Label': {
-                fontFamily: theme.fonts.fontFamily010.fontFamily,
-                fontSize: theme.fonts.fontSize010,
-                lineHeight: theme.fonts.fontLineHeight040,
-                fontWeight: theme.fonts.fontWeight010,
-                letterSpacing: theme.fonts.fontLetterSpacing050,
-              },
-              '&.DocSearch-Commands': {
-                display: 'none',
-              },
+            },
+            '.DocSearch-Commands': {
+              display: 'none',
+            },
+            // No Results
+            '.DocSearch-NoResults': {
+              fontFamily: theme.fonts.fontFamily030.fontFamily,
+              fontSize: theme.fonts.fontSize030,
+              lineHeight: theme.fonts.fontLineHeight040,
+              fontWeight: theme.fonts.fontWeight020,
+              letterSpacing: theme.fonts.fontLetterSpacing030,
             },
             '.DocSearch-Help': {
-              color: theme.colors.inkContrast,
               fontFamily: theme.fonts.fontFamily030.fontFamily,
-              fontSize: theme.fonts.fontSize030,
-              lineHeight: theme.fonts.fontLineHeight020,
+              fontSize: theme.fonts.fontSize020,
+              lineHeight: theme.fonts.fontLineHeight060,
               fontWeight: theme.fonts.fontWeight020,
-              letterSpacing: theme.fonts.fontLetterSpacing030,
-            },
-            '.DocSearch-Help a': {
-              color: theme.colors.inkBrand010,
-              '&:visited': {
-                color: theme.colors.interactiveVisited010,
+              letterSpacing: theme.fonts.fontLetterSpacing040,
+              '& a': {
+                color: 'var(--docsearch-primary-color)',
+                '&:visited': {
+                  color: theme.colors.interactiveVisited010,
+                },
               },
-            },
-            '.DocSearch-NoResults': {
-              color: theme.colors.inkContrast,
-              fontFamily: theme.fonts.fontFamily030.fontFamily,
-              fontSize: theme.fonts.fontSize030,
-              lineHeight: theme.fonts.fontLineHeight020,
-              fontWeight: theme.fonts.fontWeight020,
-              letterSpacing: theme.fonts.fontLetterSpacing030,
             },
             '.DocSearch-NoResults-Prefill-List > ul > li': {
               listStyle: 'none',
-            },
-            '.DocSearch-Reset': {
-              color: theme.colors.inkContrast,
-              '&:hover': {
-                color: theme.colors.inkBrand010,
-              },
-              '&:active': {
-                color: theme.colors.inkBrand010,
-              },
             },
           },
         })}

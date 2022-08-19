@@ -1182,7 +1182,7 @@ Object {
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interface010}}",
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -3670,7 +3670,7 @@ Object {
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interface010}}",
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -6161,7 +6161,7 @@ Object {
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interface010}}",
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -8649,7 +8649,7 @@ Object {
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interface010}}",
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -11140,7 +11140,7 @@ Object {
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interface010}}",
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -13628,7 +13628,7 @@ Object {
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interface010}}",
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -16119,7 +16119,7 @@ Object {
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interface010}}",
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -18607,7 +18607,7 @@ Object {
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interface010}}",
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
