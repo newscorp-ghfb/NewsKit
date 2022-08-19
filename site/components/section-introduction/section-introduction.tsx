@@ -68,12 +68,6 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
       )}
       {children && (
         <Block spaceStack={!lastItem ? subHeadingSpaceStack : ''}>
-          {/* <TextBlock
-            stylePreset="inkBase"
-            typographyPreset="editorialSubheadline020"
-          >
-            {children}
-          </TextBlock> */}
           <UnpackContent
             textBlockProps={{
               stylePreset: 'inkBase',
