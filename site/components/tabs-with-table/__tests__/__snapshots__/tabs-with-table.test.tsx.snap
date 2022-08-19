@@ -21,11 +21,11 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -146,11 +146,11 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -403,13 +403,13 @@ exports[`TabsWithTable renders with default data 1`] = `
   appearance: none;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #0A0A0A;
-  border-color: #577FFB;
+  color: #09111C;
+  border-color: #3358CC;
 }
 
 .emotion-15 svg {
@@ -418,11 +418,11 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-15:hover:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-15:active:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -526,7 +526,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   appearance: none;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
 }
@@ -537,11 +537,11 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-21:hover:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-21:active:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -561,7 +561,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-25 {
-  background-color: #577FFB;
+  background-color: #3358CC;
   position: absolute;
   z-index: 2;
   bottom: 0px;
@@ -569,7 +569,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-26 {
-  background-color: #E4E4E4;
+  background-color: #DEE2E5;
   display: block;
   position: absolute;
   z-index: 1;
@@ -611,9 +611,9 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-35 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -630,9 +630,9 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-37 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -648,9 +648,9 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-40 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;

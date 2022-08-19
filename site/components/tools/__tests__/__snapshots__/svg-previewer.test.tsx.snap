@@ -48,7 +48,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #577FFB;
+  background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
@@ -66,20 +66,20 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #3358CC;
+  background-color: #254CAC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-2:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -192,7 +192,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #23A248;
+  background-color: #007B22;
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
@@ -210,20 +210,20 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #0A782A;
+  background-color: #004914;
 }
 
 .emotion-8:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -283,7 +283,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #23A248;
+  background-color: #007B22;
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
@@ -300,20 +300,20 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: #0A782A;
+  background-color: #004914;
 }
 
 .emotion-12:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-12:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -362,7 +362,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 .emotion-18 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -371,7 +371,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 <div
@@ -517,12 +517,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
               <path
                 d="M0 0.5H1490V838.5H0V0.5Z"
-                fill="#F4F4F4"
+                fill="#F0F1F3"
               />
               
 
               <rect
-                fill="#65BBC4"
+                fill="#5EB8C0"
                 height="59"
                 transform="matrix(-1 0 0 1 775 139.5)"
                 width="131"
@@ -573,7 +573,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
                 <path
                   d="M382 699.5H1490V838.5H382V699.5Z"
-                  fill="#EBF8F9"
+                  fill="#E6F4F6"
                 />
                 
 
@@ -588,7 +588,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
                 <path
                   d="M382 198.5H1490V227.5H382V198.5Z"
-                  fill="#EBF8F9"
+                  fill="#E6F4F6"
                 />
                 
 
@@ -609,7 +609,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
                 <circle
                   cx="181.872"
                   cy="204.345"
-                  fill="#65BBC4"
+                  fill="#5EB8C0"
                   r="95.9634"
                 />
                 
@@ -625,7 +625,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
                 <circle
                   cx="181.872"
                   cy="140.368"
-                  fill="#EBF8F9"
+                  fill="#E6F4F6"
                   opacity="0.5"
                   r="95.9634"
                 />
@@ -648,7 +648,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
                 <circle
                   cx="181.872"
                   cy="593.963"
-                  fill="#65BBC4"
+                  fill="#5EB8C0"
                   r="95.9634"
                 />
                 
@@ -664,7 +664,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
                 <circle
                   cx="181.872"
                   cy="529.986"
-                  fill="#EBF8F9"
+                  fill="#E6F4F6"
                   opacity="0.5"
                   r="95.9634"
                 />
@@ -687,7 +687,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
                 <circle
                   cx="888.608"
                   cy="627.294"
-                  fill="#65BBC4"
+                  fill="#5EB8C0"
                   r="95.9634"
                 />
                 
@@ -703,7 +703,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
                 <circle
                   cx="888.608"
                   cy="563.317"
-                  fill="#EBF8F9"
+                  fill="#E6F4F6"
                   opacity="0.5"
                   r="95.9634"
                 />
@@ -936,9 +936,9 @@ Object {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
+  background-color: #DEE2E5;
   border-radius: 8px;
-  color: #C0C0C0;
+  color: #C0C7CC;
   margin: 0;
   margin: 50px 20px 30px 20px;
 }
@@ -949,7 +949,7 @@ Object {
 }
 
 .emotion-2 svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1047,9 +1047,9 @@ Object {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
+  background-color: #DEE2E5;
   border-radius: 8px;
-  color: #C0C0C0;
+  color: #C0C7CC;
   margin: 0;
   margin-right: 20px;
 }
@@ -1060,7 +1060,7 @@ Object {
 }
 
 .emotion-8 svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1105,9 +1105,9 @@ Object {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
+  background-color: #DEE2E5;
   border-radius: 8px;
-  color: #C0C0C0;
+  color: #C0C7CC;
   margin: 0;
 }
 
@@ -1117,7 +1117,7 @@ Object {
 }
 
 .emotion-12 svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1305,9 +1305,9 @@ Object {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
+  background-color: #DEE2E5;
   border-radius: 8px;
-  color: #C0C0C0;
+  color: #C0C7CC;
   margin: 0;
   margin: 50px 20px 30px 20px;
 }
@@ -1318,7 +1318,7 @@ Object {
 }
 
 .emotion-2 svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1416,9 +1416,9 @@ Object {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
+  background-color: #DEE2E5;
   border-radius: 8px;
-  color: #C0C0C0;
+  color: #C0C7CC;
   margin: 0;
   margin-right: 20px;
 }
@@ -1429,7 +1429,7 @@ Object {
 }
 
 .emotion-8 svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1474,9 +1474,9 @@ Object {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
+  background-color: #DEE2E5;
   border-radius: 8px;
-  color: #C0C0C0;
+  color: #C0C7CC;
   margin: 0;
 }
 
@@ -1486,7 +1486,7 @@ Object {
 }
 
 .emotion-12 svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1725,7 +1725,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #577FFB;
+  background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
@@ -1743,20 +1743,20 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #3358CC;
+  background-color: #254CAC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-2:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -1869,7 +1869,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #23A248;
+  background-color: #007B22;
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
@@ -1887,20 +1887,20 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #0A782A;
+  background-color: #004914;
 }
 
 .emotion-8:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -1960,7 +1960,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #23A248;
+  background-color: #007B22;
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
@@ -1977,20 +1977,20 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: #0A782A;
+  background-color: #004914;
 }
 
 .emotion-12:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-12:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -2039,7 +2039,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 .emotion-18 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -2048,7 +2048,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 <div
@@ -2194,7 +2194,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
               <path
                 d="M0 0.5H1490V838.5H0V0.5Z"
-                fill="#F4F4F4"
+                fill="#F0F1F3"
               />
               
 
@@ -2250,7 +2250,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
                 <path
                   d="M382 699.5H1490V838.5H382V699.5Z"
-                  fill="#E0E7FF"
+                  fill="#ECF1FF"
                 />
                 
 
@@ -2265,7 +2265,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
                 <path
                   d="M382 198.5H1490V227.5H382V198.5Z"
-                  fill="#E0E7FF"
+                  fill="#ECF1FF"
                 />
                 
 
@@ -2302,7 +2302,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
                 <circle
                   cx="181.872"
                   cy="140.368"
-                  fill="#E0E7FF"
+                  fill="#ECF1FF"
                   opacity="0.5"
                   r="95.9634"
                 />
@@ -2341,7 +2341,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
                 <circle
                   cx="181.872"
                   cy="529.986"
-                  fill="#E0E7FF"
+                  fill="#ECF1FF"
                   opacity="0.5"
                   r="95.9634"
                 />
@@ -2380,7 +2380,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
                 <circle
                   cx="888.608"
                   cy="563.317"
-                  fill="#E0E7FF"
+                  fill="#ECF1FF"
                   opacity="0.5"
                   r="95.9634"
                 />

@@ -96,11 +96,11 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-5 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 1023px) {
@@ -117,7 +117,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 
 .emotion-7 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -127,7 +127,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-7::before {
@@ -148,7 +148,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -203,31 +203,31 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 }
 
 .emotion-14 .nk-headline-kicker {
-  color: #577FFB;
+  color: #3358CC;
 }
 
 .emotion-14:hover:not(:disabled) .nk-headline-kicker {
-  color: #3358CC;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-14:active:not(:disabled) .nk-headline-kicker {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-14:visited:not(:disabled) .nk-headline-kicker {
-  color: #5E44E4;
+  color: #6454E3;
 }
 
 .emotion-14 .nk-headline-heading {
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-14 .nk-headline-heading svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 .emotion-14:before {
@@ -264,7 +264,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 
 .emotion-17 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -274,7 +274,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 }
 
 .emotion-17 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-17::before {
@@ -466,7 +466,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 
 .emotion-1 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;

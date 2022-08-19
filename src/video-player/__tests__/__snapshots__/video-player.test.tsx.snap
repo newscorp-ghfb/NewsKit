@@ -46,7 +46,7 @@ exports[`Video Player renders video player with logical props 1`] = `
 
 .emotion-0 .video-js .vjs-progress-holder {
   width: 100%;
-  background-color: rgba(10,10,10,0.2);
+  background-color: rgba(0,0,0,0.2);
 }
 
 <div
@@ -73,13 +73,13 @@ exports[`Video Player renders video player with overriden play button style 1`] 
   border-style: solid;
   border-width: 1px;
   border-radius: 50%;
-  background-color: #FF9900;
-  color: #FF362E;
+  background-color: #CD6900;
+  color: #FB5959;
 }
 
 .emotion-0 .video-js .vjs-progress-holder {
   width: 100%;
-  background-color: rgba(10,10,10,0.2);
+  background-color: rgba(0,0,0,0.2);
 }
 
 <div

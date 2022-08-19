@@ -44,7 +44,7 @@ const PRINCIPLE_CARDS = [
         NewsKit is fully customisable, with the flexibility to apply a single
         brand, or sub-brands style, with an extensive{' '}
         <Link
-          overrides={{stylePreset: 'inkInverse'}}
+          overrides={{stylePreset: 'inkWhiteContrast'}}
           href="https://www.figma.com/file/oSjjLxC27fa6Jh6AHM7ja9/NK-NewsKit-Theme?node-id=1%3A393"
           target="_blank"
         >

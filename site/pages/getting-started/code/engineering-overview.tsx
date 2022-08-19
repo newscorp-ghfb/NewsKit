@@ -41,7 +41,7 @@ const PRINCIPLE_CARDS = [
       <>
         NewsKit components folllow{' '}
         <Link
-          overrides={{stylePreset: 'inkInverse'}}
+          overrides={{stylePreset: 'inkWhiteContrast'}}
           href="https://www.w3.org/WAI/standards-guidelines/wcag/"
           target="_blank"
         >
@@ -49,7 +49,7 @@ const PRINCIPLE_CARDS = [
         </Link>
         ,{' '}
         <Link
-          overrides={{stylePreset: 'inkInverse'}}
+          overrides={{stylePreset: 'inkWhiteContrast'}}
           href="https://www.w3.org/WAI/standards-guidelines/aria/"
           target="_blank"
         >
@@ -57,7 +57,7 @@ const PRINCIPLE_CARDS = [
         </Link>{' '}
         and
         <Link
-          overrides={{stylePreset: 'inkInverse'}}
+          overrides={{stylePreset: 'inkWhiteContrast'}}
           href="https://www.w3.org/TR/wai-aria-practices/"
           target="_blank"
         >
@@ -79,7 +79,10 @@ const PRINCIPLE_CARDS = [
     description: (
       <>
         NewsKit has an extensive
-        <Link overrides={{stylePreset: 'inkInverse'}} href="/theme/overview/">
+        <Link
+          overrides={{stylePreset: 'inkWhiteContrast'}}
+          href="/theme/overview/"
+        >
           theming system
         </Link>{' '}
         that enables customization of style and layout. Additionally components

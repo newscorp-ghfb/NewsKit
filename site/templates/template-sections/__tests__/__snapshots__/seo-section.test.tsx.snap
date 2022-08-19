@@ -96,16 +96,16 @@ exports[`SEOSection renders section as expected 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-5 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 .emotion-7 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -115,7 +115,7 @@ exports[`SEOSection renders section as expected 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-7::before {
@@ -231,7 +231,7 @@ exports[`SEOSection renders section as expected 1`] = `
 
 .emotion-1 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;

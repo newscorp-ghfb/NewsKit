@@ -78,8 +78,8 @@ export const stylePresets = {
       color: '{{colors.inkSubtle}}', // TODO write color
     },
     hover: {
-      color: '{{colors.interactivePrimary030}}',
-      backgroundColor: '{{colors.interactivePrimary010}}',
+      color: '{{colors.interactivePrimary040}}',
+      backgroundColor: '{{colors.interactivePrimary020}}',
     },
     active: {
       color: '{{colors.interactivePrimary050}}',
@@ -544,8 +544,8 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.interfaceBrand030}}',
-      iconColor: '{{colors.interfaceBrand030}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
@@ -688,8 +688,8 @@ export const stylePresets = {
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
+      color: '{{colors.inkBrand030}}',
+      iconColor: '{{colors.inkBrand030}}',
     },
   },
 
@@ -756,6 +756,8 @@ export const stylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
@@ -806,6 +808,8 @@ export const stylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
@@ -892,7 +896,7 @@ export const stylePresets = {
   },
   sidebar: {
     base: {
-      backgroundColor: '{{colors.interface020}}',
+      backgroundColor: '{{colors.interface010}}',
       borderStyle: 'solid',
       borderColor: '{{colors.interface040}}',
       borderWidth:
@@ -1037,6 +1041,8 @@ export const stylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
@@ -1085,6 +1091,12 @@ export const stylePresets = {
     },
     hover: {
       textDecoration: 'underline',
+    },
+  },
+  homepageCard: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkBase}}',
     },
   },
   exploreCardHeadline: {

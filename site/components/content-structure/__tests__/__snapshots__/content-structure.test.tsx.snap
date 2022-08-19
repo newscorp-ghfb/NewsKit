@@ -89,11 +89,11 @@ exports[`Content Primary renders with description and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -306,11 +306,11 @@ exports[`Content Primary renders with description only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -477,11 +477,11 @@ exports[`Content Primary renders with headline and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -696,11 +696,11 @@ exports[`Content Primary renders with headline and description 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -821,11 +821,11 @@ exports[`Content Primary renders with headline and description 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -1006,11 +1006,11 @@ exports[`Content Primary renders with headline only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -1179,11 +1179,11 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -1304,11 +1304,11 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -1603,11 +1603,11 @@ exports[`Content Secondary renders with description and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -1820,11 +1820,11 @@ exports[`Content Secondary renders with description only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -1991,11 +1991,11 @@ exports[`Content Secondary renders with headline and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -2208,11 +2208,11 @@ exports[`Content Secondary renders with headline and description 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -2333,11 +2333,11 @@ exports[`Content Secondary renders with headline and description 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -2516,11 +2516,11 @@ exports[`Content Secondary renders with headline only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -2687,11 +2687,11 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -2812,11 +2812,11 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 
 .emotion-5 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -3129,11 +3129,11 @@ exports[`Content Tertiary renders with description and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -3346,11 +3346,11 @@ exports[`Content Tertiary renders with description only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -3517,11 +3517,11 @@ exports[`Content Tertiary renders with headline and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -3734,11 +3734,11 @@ exports[`Content Tertiary renders with headline and description 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -3859,11 +3859,11 @@ exports[`Content Tertiary renders with headline and description 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -4042,11 +4042,11 @@ exports[`Content Tertiary renders with headline only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -4213,11 +4213,11 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -4338,11 +4338,11 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {

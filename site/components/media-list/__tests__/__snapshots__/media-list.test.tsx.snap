@@ -91,7 +91,7 @@ exports[`Media List renders with custom layout 1`] = `
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -129,11 +129,11 @@ exports[`Media List renders with custom layout 1`] = `
   height: 0;
   width: 100%;
   border-radius: 8px;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
 }
 
 .emotion-6 svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-7 {
@@ -188,43 +188,43 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-11 .nk-headline-kicker {
-  color: #577FFB;
+  color: #3358CC;
 }
 
 .emotion-11:hover:not(:disabled) .nk-headline-kicker {
-  color: #3358CC;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-11:active:not(:disabled) .nk-headline-kicker {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-11:visited:not(:disabled) .nk-headline-kicker {
-  color: #5E44E4;
+  color: #6454E3;
 }
 
 .emotion-11 .nk-headline-heading {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-11:hover:not(:disabled) .nk-headline-heading {
-  color: #3358CC;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-11:active:not(:disabled) .nk-headline-heading {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-11:visited:not(:disabled) .nk-headline-heading {
-  color: #5E44E4;
+  color: #6454E3;
 }
 
 .emotion-11:before {
@@ -240,7 +240,7 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-12 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -250,7 +250,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-12 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-12::before {
@@ -357,11 +357,11 @@ exports[`Media List renders with custom layout 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-19 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 <div
@@ -551,7 +551,7 @@ exports[`Media List renders with default layout 1`] = `
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -589,11 +589,11 @@ exports[`Media List renders with default layout 1`] = `
   height: 0;
   width: 100%;
   border-radius: 8px;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
 }
 
 .emotion-6 svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-7 {
@@ -648,43 +648,43 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-11 .nk-headline-kicker {
-  color: #577FFB;
+  color: #3358CC;
 }
 
 .emotion-11:hover:not(:disabled) .nk-headline-kicker {
-  color: #3358CC;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-11:active:not(:disabled) .nk-headline-kicker {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-11:visited:not(:disabled) .nk-headline-kicker {
-  color: #5E44E4;
+  color: #6454E3;
 }
 
 .emotion-11 .nk-headline-heading {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-11:hover:not(:disabled) .nk-headline-heading {
-  color: #3358CC;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-11:active:not(:disabled) .nk-headline-heading {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-11:visited:not(:disabled) .nk-headline-heading {
-  color: #5E44E4;
+  color: #6454E3;
 }
 
 .emotion-11:before {
@@ -700,7 +700,7 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-12 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -710,7 +710,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-12 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-12::before {
@@ -782,11 +782,11 @@ exports[`Media List renders with default layout 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-19 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 <div
@@ -1368,7 +1368,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1995,8 +1995,8 @@ exports[`Media List renders with usage cards 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #0A782A;
-  background-color: #E6FAEB;
+  border-color: #007B22;
+  background-color: #E5F4EA;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -2007,7 +2007,7 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 .emotion-7 {
@@ -2044,7 +2044,7 @@ exports[`Media List renders with usage cards 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #0A782A;
+  fill: #007B22;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2068,7 +2068,7 @@ exports[`Media List renders with usage cards 1`] = `
 .emotion-9.emotion-9 {
   width: 24px;
   height: 24px;
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2120,7 +2120,7 @@ exports[`Media List renders with usage cards 1`] = `
 
 .emotion-15 {
   border-style: solid;
-  border-color: #0A782A;
+  border-color: #007B22;
   border-width: 4px;
   border-radius: 4px;
   border-width: 0px;
@@ -2154,16 +2154,16 @@ exports[`Media List renders with usage cards 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A782A;
+  color: #007B22;
 }
 
 .emotion-18 svg {
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 .emotion-20 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -2173,7 +2173,7 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 .emotion-20 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-20::before {
@@ -2215,8 +2215,8 @@ exports[`Media List renders with usage cards 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #D20600;
-  background-color: #FFE6E5;
+  border-color: #D60000;
+  background-color: #FEECEC;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -2227,14 +2227,14 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 .emotion-24 svg {
-  fill: #D20600;
+  fill: #D60000;
 }
 
 .emotion-27 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #D20600;
+  fill: #D60000;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2258,7 +2258,7 @@ exports[`Media List renders with usage cards 1`] = `
 .emotion-27.emotion-27 {
   width: 24px;
   height: 24px;
-  fill: #D20600;
+  fill: #D60000;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2279,7 +2279,7 @@ exports[`Media List renders with usage cards 1`] = `
 
 .emotion-33 {
   border-style: solid;
-  border-color: #D20600;
+  border-color: #D60000;
   border-width: 4px;
   border-radius: 4px;
   border-width: 0px;
@@ -2292,11 +2292,11 @@ exports[`Media List renders with usage cards 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #D20600;
+  color: #D60000;
 }
 
 .emotion-36 svg {
-  fill: #D20600;
+  fill: #D60000;
 }
 
 <div
