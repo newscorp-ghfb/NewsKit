@@ -2,6 +2,7 @@ import React from 'react';
 import {isFragment} from 'react-is';
 import {TextBlock, TextBlockProps} from 'newskit';
 import {childIsString} from '../../../src/utils/react-children-utilities';
+import {getDisplayName} from '../../../src/utils/component';
 import {useReactKeys} from '../../../src/utils/hooks';
 
 type UnpackContentProps = {
@@ -107,5 +108,5 @@ export const UnpackContent = ({
     return null;
   }
 
-  return <>children</>;
+  return <>{children}</>;
 };

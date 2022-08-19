@@ -3,7 +3,6 @@ import {
   InlineMessage,
   TextBlock,
   toNewsKitIcon,
-  UnorderedList,
   Block,
   Form,
   Button,
@@ -19,7 +18,6 @@ import {InlineCode} from '../../components/markdown-elements';
 import {ContentText} from '../../components/text-section/content-text';
 import {LegacyBlock} from '../../components/legacy-block';
 import {LayoutProps} from '../../components/layout';
-import {IconFilledCircle} from '../../components/icons';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
@@ -303,8 +301,6 @@ const FormComponent = (layoutProps: LayoutProps) => (
               component, the state can be passed down to the{' '}
               <InlineCode>FormInputLabel</InlineCode> component if the user
               desires.
-              {/* 
-              TODO: Inline Message
               <InlineMessage
                 icon={infoIcon}
                 role="region"
@@ -316,7 +312,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
               >
                 Labels should remain readable by screen readers by setting the
                 aria-label attribute to the label text&lsquo;s value.
-              </InlineMessage> */}
+              </InlineMessage>
             </>
           ),
           media: getIllustrationComponent('components/form/options/label'),
@@ -455,9 +451,6 @@ const FormComponent = (layoutProps: LayoutProps) => (
           form behave.
           <br />
           <br />
-          {/* 
-          
-          TODO: All blocks
           <ContentText title="FormInput validation" titleAs="span">
             FormInput validation rules can be defined for onSubmit or onBlur,
             for both the initial validation and re-validation using the form.
@@ -540,7 +533,7 @@ const schema = yup.object().shape({
   </Button>
 </Form>;
 `}
-          </CodeBlock> */}
+          </CodeBlock>
         </>
       ),
       cards: [

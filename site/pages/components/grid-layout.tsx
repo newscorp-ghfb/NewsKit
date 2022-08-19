@@ -1,5 +1,5 @@
 import React from 'react';
-import {styled, Block, TextBlock, GridLayout, GridLayoutItem} from 'newskit';
+import {styled, GridLayout, GridLayoutItem} from 'newskit';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 

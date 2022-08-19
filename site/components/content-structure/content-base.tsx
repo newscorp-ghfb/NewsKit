@@ -7,6 +7,8 @@ import {
   TextBlock,
 } from 'newskit';
 import React, {useMemo} from 'react';
+import {UnpackContent} from '../unpack-content/unpack-content';
+
 import {ContentBaseProps} from './types';
 
 export enum ContentColSpan {
@@ -76,10 +78,12 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
           column={textColumns}
           marginBlockEnd={children ? descriptionSpace : undefined}
         >
-          <TextBlock as="p" {...descriptionOverrides}>
+          {/* <TextBlock as="p" {...descriptionOverrides}>
             {description}
-          </TextBlock>
-          {/* {children && <Block spaceStack={descriptionSpace} />} */}
+          </TextBlock> */}
+          <UnpackContent textBlockProps={descriptionOverrides}>
+            {description}
+          </UnpackContent>
         </GridLayoutItem>
       )}
 

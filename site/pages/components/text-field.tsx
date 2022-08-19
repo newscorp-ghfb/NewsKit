@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, LinkInline, toNewsKitIcon} from 'newskit';
+import {InlineMessage, LinkInline, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
