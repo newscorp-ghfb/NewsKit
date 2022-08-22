@@ -1,7 +1,7 @@
 import React from 'react';
+import {Svg} from '../../svg';
 import {Path} from '../../path';
 import {Rect} from '../../rect';
-import {Svg} from '../../svg';
 
 export const Hero: React.FC = () => (
   <Svg
@@ -112,4 +112,5 @@ export const Hero: React.FC = () => (
     />
   </Svg>
 );
+
 export default Hero;

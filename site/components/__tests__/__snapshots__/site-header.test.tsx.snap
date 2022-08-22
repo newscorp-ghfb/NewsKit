@@ -956,7 +956,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -2736,7 +2736,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -4510,7 +4510,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;

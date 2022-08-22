@@ -332,7 +332,7 @@ export default [
             page: true,
             id: '/components/form',
             description:
-              'Forms allow users to enter and edit text content into a UI.',
+              'The form component allows users to enter and edit information into a UI using form controls; based on React Hook Form.',
             illustration: 'components/form/hero',
           },
           {

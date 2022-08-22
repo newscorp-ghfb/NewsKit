@@ -160,7 +160,7 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-13"
+        id="ref-floating-ui-49"
         type="button"
       >
         <div
@@ -388,7 +388,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-4"
+        id="ref-floating-ui-40"
         type="button"
       >
         <div
@@ -1733,12 +1733,12 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-floating-ui-1"
+        aria-controls="floating-floating-ui-38"
         aria-haspopup="dialog"
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-0"
+        id="ref-floating-ui-37"
         type="button"
       >
         <div
@@ -1767,9 +1767,9 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         </div>
       </button>
       <div
-        aria-labelledby="ref-floating-ui-0"
+        aria-labelledby="ref-floating-ui-37"
         class="nk-popover-enter-done emotion-5"
-        id="floating-floating-ui-1"
+        id="floating-floating-ui-38"
         role="dialog"
         tabindex="-1"
       >
@@ -1866,7 +1866,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         </div>
         <div
           class="emotion-19"
-          id="floating-floating-ui-1-pointer"
+          id="floating-floating-ui-38-pointer"
         />
       </div>
     </section>
@@ -2212,18 +2212,18 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-floating-ui-8"
+        aria-controls="floating-floating-ui-44"
         aria-haspopup="dialog"
         data-testid="audio-player-playback-speed-custom-trigger"
-        id="ref-floating-ui-7"
+        id="ref-floating-ui-43"
         type="button"
       >
         Trigger
       </button>
       <div
-        aria-labelledby="ref-floating-ui-7"
+        aria-labelledby="ref-floating-ui-43"
         class="nk-popover-enter-done emotion-0"
-        id="floating-floating-ui-8"
+        id="floating-floating-ui-44"
         role="dialog"
         tabindex="-1"
       >
@@ -2320,7 +2320,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
         </div>
         <div
           class="emotion-14"
-          id="floating-floating-ui-8-pointer"
+          id="floating-floating-ui-44-pointer"
         />
       </div>
     </section>
@@ -2772,12 +2772,12 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-floating-ui-11"
+        aria-controls="floating-floating-ui-47"
         aria-haspopup="dialog"
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-10"
+        id="ref-floating-ui-46"
         type="button"
       >
         <div
@@ -2806,9 +2806,9 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         </div>
       </button>
       <div
-        aria-labelledby="ref-floating-ui-10"
+        aria-labelledby="ref-floating-ui-46"
         class="nk-popover-enter-done emotion-5"
-        id="floating-floating-ui-11"
+        id="floating-floating-ui-47"
         role="dialog"
         tabindex="-1"
       >
@@ -2905,7 +2905,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         </div>
         <div
           class="emotion-19"
-          id="floating-floating-ui-11-pointer"
+          id="floating-floating-ui-47-pointer"
         />
       </div>
     </section>
@@ -2916,9 +2916,9 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 </DocumentFragment>
 `;
 
-exports[`Audio Player Composable VolumeControl renders horizontal expandable by default 1`] = `
+exports[`Audio Player Composable VolumeControl renders horizontal expanded by default 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -2931,11 +2931,11 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
   column-gap: 12px;
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-area: muteButton;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2968,33 +2968,33 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3003,14 +3003,14 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3018,14 +3018,14 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3046,7 +3046,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3055,7 +3055,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
   margin-right: calc(8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3065,7 +3065,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3073,69 +3073,23 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   grid-area: slider;
 }
 
-.emotion-9 {
-  overflow: hidden;
+.emotion-8 {
   width: 0;
+  width: 130px;
 }
 
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
-    transition-property: width;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-
-  .emotion-9.nk-vc-enter {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-
-  .emotion-9.nk-vc-enter-active {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-
-  .emotion-9.nk-vc-exit-active {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
-    transition-property: width;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-
-  .emotion-9.nk-vc-enter {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-
-  .emotion-9.nk-vc-enter-active {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-
-  .emotion-9.nk-vc-exit-active {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-}
-
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3160,7 +3114,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
   position: relative;
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3177,7 +3131,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
   width: 100%;
 }
 
-.emotion-12 {
+.emotion-11 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -3198,27 +3152,27 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
   cursor: pointer;
 }
 
-.emotion-12 svg {
+.emotion-11 svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-11:hover:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-11:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-11:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3227,14 +3181,14 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-11:focus-visible:not(:disabled) {
       outline-offset: -7px;
       outline-style: auto;
     }
   }
 }
 
-.emotion-13 {
+.emotion-12 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3249,40 +3203,40 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
   transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-13:disabled {
+.emotion-12:disabled {
   opacity: 0;
 }
 
-.emotion-13:hover:active:not(:disabled) {
+.emotion-12:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-13:valid:hover:not(:disabled) {
+.emotion-12:valid:hover:not(:disabled) {
   background-color: #148F39;
   opacity: 0.2;
 }
 
-.emotion-13:valid:hover:active:not(:disabled) {
+.emotion-12:valid:hover:active:not(:disabled) {
   background-color: #148F39;
   opacity: 0.4;
 }
 
-.emotion-13:invalid:hover:not(:disabled) {
+.emotion-12:invalid:hover:not(:disabled) {
   background-color: #D20600;
   opacity: 0.2;
 }
 
-.emotion-13:invalid:hover:active:not(:disabled) {
+.emotion-12:invalid:hover:active:not(:disabled) {
   background-color: #D20600;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3290,14 +3244,14 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-14 {
+.emotion-13 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -3322,89 +3276,85 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
       <div
         class="emotion-1"
       >
-        <div
+        <button
+          aria-label="Mute"
           class="emotion-2"
+          data-testid="mute-button"
+          type="button"
         >
-          <button
-            aria-label="Mute"
+          <div
             class="emotion-3"
-            data-testid="mute-button"
-            type="button"
           >
             <div
               class="emotion-4"
             >
-              <div
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-5 emotion-6"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
             </div>
-          </button>
-        </div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="emotion-7"
+      >
         <div
-          class="emotion-8"
+          class="nk-vc-exit-done emotion-8"
         >
           <div
-            class="nk-vc-exit-done emotion-9"
+            class="emotion-9"
+            data-testid="volume-control-slider"
           >
             <div
               class="emotion-10"
-              data-testid="volume-control-slider"
+              data-testid="volume-control-slider-track"
+              style="background: rgb(255, 255, 0);"
+              values="0.2"
             >
               <div
+                aria-describedby="mock-nk-1"
+                aria-label="Volume Control"
+                aria-orientation="horizontal"
+                aria-valuemax="1"
+                aria-valuemin="0"
+                aria-valuenow="0.2"
+                aria-valuetext="volume level 2 of 10"
                 class="emotion-11"
-                data-testid="volume-control-slider-track"
-                style="background: rgb(255, 255, 0);"
+                data-testid="volume-control-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
                 values="0.2"
               >
-                <div
-                  aria-describedby="mock-nk-1"
-                  aria-label="Volume Control"
-                  aria-orientation="horizontal"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.2"
-                  aria-valuetext="volume level 2 of 10"
+                <span
                   class="emotion-12"
-                  data-testid="volume-control-slider-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.2"
-                >
-                  <span
-                    class="emotion-13"
-                    data-testid="volume-control-slider-feedback"
-                  />
-                </div>
+                  data-testid="volume-control-slider-feedback"
+                />
               </div>
             </div>
           </div>
-          <span
-            aria-hidden="true"
-            class="emotion-14"
-            id="mock-nk-1"
-          >
-            Use the arrow keys to adjust volume
-          </span>
         </div>
+        <span
+          aria-hidden="true"
+          class="emotion-13"
+          id="mock-nk-1"
+        >
+          Use the arrow keys to adjust volume
+        </span>
       </div>
     </div>
   </section>
@@ -3413,7 +3363,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expandable by 
 
 exports[`Audio Player Composable VolumeControl renders horizontally with layout prop is horizontal 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -3426,11 +3376,11 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   column-gap: 12px;
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-area: muteButton;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3463,33 +3413,33 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3498,14 +3448,14 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3513,14 +3463,14 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3541,7 +3491,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3550,7 +3500,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   margin-right: calc(8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3560,7 +3510,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3568,23 +3518,69 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   grid-area: slider;
 }
 
-.emotion-9 {
+.emotion-8 {
+  overflow: hidden;
   width: 0;
-  width: 130px;
 }
 
-.emotion-10 {
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: width;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-8.nk-vc-enter {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+
+  .emotion-8.nk-vc-enter-active {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+
+  .emotion-8.nk-vc-exit-active {
+    transition-property: width;
+    transition-duration: 200ms;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: width;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-8.nk-vc-enter {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
+
+  .emotion-8.nk-vc-enter-active {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
+
+  .emotion-8.nk-vc-exit-active {
+    transition-property: width;
+    transition-duration: 0ms;
+  }
+}
+
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3609,7 +3605,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   position: relative;
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3626,7 +3622,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   width: 100%;
 }
 
-.emotion-12 {
+.emotion-11 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -3647,27 +3643,27 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   cursor: pointer;
 }
 
-.emotion-12 svg {
+.emotion-11 svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-11:hover:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-11:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-11:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3676,14 +3672,14 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-11:focus-visible:not(:disabled) {
       outline-offset: -7px;
       outline-style: auto;
     }
   }
 }
 
-.emotion-13 {
+.emotion-12 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3698,40 +3694,40 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-13:disabled {
+.emotion-12:disabled {
   opacity: 0;
 }
 
-.emotion-13:hover:active:not(:disabled) {
+.emotion-12:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-13:valid:hover:not(:disabled) {
+.emotion-12:valid:hover:not(:disabled) {
   background-color: #148F39;
   opacity: 0.2;
 }
 
-.emotion-13:valid:hover:active:not(:disabled) {
+.emotion-12:valid:hover:active:not(:disabled) {
   background-color: #148F39;
   opacity: 0.4;
 }
 
-.emotion-13:invalid:hover:not(:disabled) {
+.emotion-12:invalid:hover:not(:disabled) {
   background-color: #D20600;
   opacity: 0.2;
 }
 
-.emotion-13:invalid:hover:active:not(:disabled) {
+.emotion-12:invalid:hover:active:not(:disabled) {
   background-color: #D20600;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3739,14 +3735,14 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-14 {
+.emotion-13 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -3771,89 +3767,85 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
       <div
         class="emotion-1"
       >
-        <div
+        <button
+          aria-label="Mute"
           class="emotion-2"
+          data-testid="mute-button"
+          type="button"
         >
-          <button
-            aria-label="Mute"
+          <div
             class="emotion-3"
-            data-testid="mute-button"
-            type="button"
           >
             <div
               class="emotion-4"
             >
-              <div
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-5 emotion-6"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
             </div>
-          </button>
-        </div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="emotion-7"
+      >
         <div
-          class="emotion-8"
+          class="nk-vc-exit-done emotion-8"
         >
           <div
-            class="nk-vc-exit-done emotion-9"
+            class="emotion-9"
+            data-testid="volume-control-slider"
           >
             <div
               class="emotion-10"
-              data-testid="volume-control-slider"
+              data-testid="volume-control-slider-track"
+              style="background: rgb(255, 255, 0);"
+              values="0.2"
             >
               <div
+                aria-describedby="mock-nk-1"
+                aria-label="Volume Control"
+                aria-orientation="horizontal"
+                aria-valuemax="1"
+                aria-valuemin="0"
+                aria-valuenow="0.2"
+                aria-valuetext="volume level 2 of 10"
                 class="emotion-11"
-                data-testid="volume-control-slider-track"
-                style="background: rgb(255, 255, 0);"
+                data-testid="volume-control-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
                 values="0.2"
               >
-                <div
-                  aria-describedby="mock-nk-1"
-                  aria-label="Volume Control"
-                  aria-orientation="horizontal"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.2"
-                  aria-valuetext="volume level 2 of 10"
+                <span
                   class="emotion-12"
-                  data-testid="volume-control-slider-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.2"
-                >
-                  <span
-                    class="emotion-13"
-                    data-testid="volume-control-slider-feedback"
-                  />
-                </div>
+                  data-testid="volume-control-slider-feedback"
+                />
               </div>
             </div>
           </div>
-          <span
-            aria-hidden="true"
-            class="emotion-14"
-            id="mock-nk-1"
-          >
-            Use the arrow keys to adjust volume
-          </span>
         </div>
+        <span
+          aria-hidden="true"
+          class="emotion-13"
+          id="mock-nk-1"
+        >
+          Use the arrow keys to adjust volume
+        </span>
       </div>
     </div>
   </section>
@@ -3862,7 +3854,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 
 exports[`Audio Player Composable VolumeControl should hover on volume control: with hover 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -3875,11 +3867,11 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   column-gap: 12px;
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-area: muteButton;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3912,33 +3904,33 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3947,14 +3939,14 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3962,14 +3954,14 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3990,7 +3982,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3999,7 +3991,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   margin-right: calc(8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4009,7 +4001,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4017,68 +4009,68 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   grid-area: slider;
 }
 
-.emotion-9 {
+.emotion-8 {
   width: 130px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: width;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-9.nk-vc-enter {
+  .emotion-8.nk-vc-enter {
     transition-property: width;
     transition-duration: 200ms;
   }
 
-  .emotion-9.nk-vc-enter-active {
+  .emotion-8.nk-vc-enter-active {
     transition-property: width;
     transition-duration: 200ms;
   }
 
-  .emotion-9.nk-vc-exit-active {
+  .emotion-8.nk-vc-exit-active {
     transition-property: width;
     transition-duration: 200ms;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: width;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-9.nk-vc-enter {
+  .emotion-8.nk-vc-enter {
     transition-property: width;
     transition-duration: 0ms;
   }
 
-  .emotion-9.nk-vc-enter-active {
+  .emotion-8.nk-vc-enter-active {
     transition-property: width;
     transition-duration: 0ms;
   }
 
-  .emotion-9.nk-vc-exit-active {
+  .emotion-8.nk-vc-exit-active {
     transition-property: width;
     transition-duration: 0ms;
   }
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4103,7 +4095,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   position: relative;
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4120,7 +4112,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   width: 100%;
 }
 
-.emotion-12 {
+.emotion-11 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -4141,27 +4133,27 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   cursor: pointer;
 }
 
-.emotion-12 svg {
+.emotion-11 svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-11:hover:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-11:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-11:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4170,14 +4162,14 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-11:focus-visible:not(:disabled) {
       outline-offset: -7px;
       outline-style: auto;
     }
   }
 }
 
-.emotion-13 {
+.emotion-12 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4192,40 +4184,40 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-13:disabled {
+.emotion-12:disabled {
   opacity: 0;
 }
 
-.emotion-13:hover:active:not(:disabled) {
+.emotion-12:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-13:valid:hover:not(:disabled) {
+.emotion-12:valid:hover:not(:disabled) {
   background-color: #148F39;
   opacity: 0.2;
 }
 
-.emotion-13:valid:hover:active:not(:disabled) {
+.emotion-12:valid:hover:active:not(:disabled) {
   background-color: #148F39;
   opacity: 0.4;
 }
 
-.emotion-13:invalid:hover:not(:disabled) {
+.emotion-12:invalid:hover:not(:disabled) {
   background-color: #D20600;
   opacity: 0.2;
 }
 
-.emotion-13:invalid:hover:active:not(:disabled) {
+.emotion-12:invalid:hover:active:not(:disabled) {
   background-color: #D20600;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4233,14 +4225,14 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-14 {
+.emotion-13 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -4265,90 +4257,86 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
       <div
         class="emotion-1"
       >
-        <div
+        <button
+          aria-label="Mute"
           class="emotion-2"
+          data-testid="mute-button"
+          type="button"
         >
-          <button
-            aria-label="Mute"
+          <div
             class="emotion-3"
-            data-testid="mute-button"
-            type="button"
           >
             <div
               class="emotion-4"
             >
-              <div
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-5 emotion-6"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
             </div>
-          </button>
-        </div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="emotion-7"
+      >
         <div
-          class="emotion-8"
+          class="nk-vc-enter-done emotion-8"
+          open=""
         >
           <div
-            class="nk-vc-enter-done emotion-9"
-            open=""
+            class="emotion-9"
+            data-testid="volume-control-slider"
           >
             <div
               class="emotion-10"
-              data-testid="volume-control-slider"
+              data-testid="volume-control-slider-track"
+              style="background: rgb(255, 255, 0);"
+              values="0.2"
             >
               <div
+                aria-describedby="mock-nk-1"
+                aria-label="Volume Control"
+                aria-orientation="horizontal"
+                aria-valuemax="1"
+                aria-valuemin="0"
+                aria-valuenow="0.2"
+                aria-valuetext="volume level 2 of 10"
                 class="emotion-11"
-                data-testid="volume-control-slider-track"
-                style="background: rgb(255, 255, 0);"
+                data-testid="volume-control-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
                 values="0.2"
               >
-                <div
-                  aria-describedby="mock-nk-1"
-                  aria-label="Volume Control"
-                  aria-orientation="horizontal"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.2"
-                  aria-valuetext="volume level 2 of 10"
+                <span
                   class="emotion-12"
-                  data-testid="volume-control-slider-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.2"
-                >
-                  <span
-                    class="emotion-13"
-                    data-testid="volume-control-slider-feedback"
-                  />
-                </div>
+                  data-testid="volume-control-slider-feedback"
+                />
               </div>
             </div>
           </div>
-          <span
-            aria-hidden="true"
-            class="emotion-14"
-            id="mock-nk-1"
-          >
-            Use the arrow keys to adjust volume
-          </span>
         </div>
+        <span
+          aria-hidden="true"
+          class="emotion-13"
+          id="mock-nk-1"
+        >
+          Use the arrow keys to adjust volume
+        </span>
       </div>
     </div>
   </section>
@@ -4357,7 +4345,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 
 exports[`Audio Player Composable VolumeControl should hover on volume control: without hover 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -4370,11 +4358,11 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   column-gap: 12px;
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-area: muteButton;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4407,33 +4395,33 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4442,14 +4430,14 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4457,14 +4445,14 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4485,7 +4473,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4494,7 +4482,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   margin-right: calc(8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4504,7 +4492,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4512,69 +4500,69 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   grid-area: slider;
 }
 
-.emotion-9 {
+.emotion-8 {
   overflow: hidden;
   width: 0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: width;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-9.nk-vc-enter {
+  .emotion-8.nk-vc-enter {
     transition-property: width;
     transition-duration: 200ms;
   }
 
-  .emotion-9.nk-vc-enter-active {
+  .emotion-8.nk-vc-enter-active {
     transition-property: width;
     transition-duration: 200ms;
   }
 
-  .emotion-9.nk-vc-exit-active {
+  .emotion-8.nk-vc-exit-active {
     transition-property: width;
     transition-duration: 200ms;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: width;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-9.nk-vc-enter {
+  .emotion-8.nk-vc-enter {
     transition-property: width;
     transition-duration: 0ms;
   }
 
-  .emotion-9.nk-vc-enter-active {
+  .emotion-8.nk-vc-enter-active {
     transition-property: width;
     transition-duration: 0ms;
   }
 
-  .emotion-9.nk-vc-exit-active {
+  .emotion-8.nk-vc-exit-active {
     transition-property: width;
     transition-duration: 0ms;
   }
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4599,7 +4587,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   position: relative;
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4616,7 +4604,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   width: 100%;
 }
 
-.emotion-12 {
+.emotion-11 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -4637,27 +4625,27 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   cursor: pointer;
 }
 
-.emotion-12 svg {
+.emotion-11 svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-11:hover:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-11:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-11:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4666,14 +4654,14 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-11:focus-visible:not(:disabled) {
       outline-offset: -7px;
       outline-style: auto;
     }
   }
 }
 
-.emotion-13 {
+.emotion-12 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4688,40 +4676,40 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-13:disabled {
+.emotion-12:disabled {
   opacity: 0;
 }
 
-.emotion-13:hover:active:not(:disabled) {
+.emotion-12:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-13:valid:hover:not(:disabled) {
+.emotion-12:valid:hover:not(:disabled) {
   background-color: #148F39;
   opacity: 0.2;
 }
 
-.emotion-13:valid:hover:active:not(:disabled) {
+.emotion-12:valid:hover:active:not(:disabled) {
   background-color: #148F39;
   opacity: 0.4;
 }
 
-.emotion-13:invalid:hover:not(:disabled) {
+.emotion-12:invalid:hover:not(:disabled) {
   background-color: #D20600;
   opacity: 0.2;
 }
 
-.emotion-13:invalid:hover:active:not(:disabled) {
+.emotion-12:invalid:hover:active:not(:disabled) {
   background-color: #D20600;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4729,14 +4717,14 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-14 {
+.emotion-13 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -4761,89 +4749,85 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
       <div
         class="emotion-1"
       >
-        <div
+        <button
+          aria-label="Mute"
           class="emotion-2"
+          data-testid="mute-button"
+          type="button"
         >
-          <button
-            aria-label="Mute"
+          <div
             class="emotion-3"
-            data-testid="mute-button"
-            type="button"
           >
             <div
               class="emotion-4"
             >
-              <div
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-5 emotion-6"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
             </div>
-          </button>
-        </div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="emotion-7"
+      >
         <div
-          class="emotion-8"
+          class="nk-vc-exit-done emotion-8"
         >
           <div
-            class="nk-vc-exit-done emotion-9"
+            class="emotion-9"
+            data-testid="volume-control-slider"
           >
             <div
               class="emotion-10"
-              data-testid="volume-control-slider"
+              data-testid="volume-control-slider-track"
+              style="background: rgb(255, 255, 0);"
+              values="0.2"
             >
               <div
+                aria-describedby="mock-nk-1"
+                aria-label="Volume Control"
+                aria-orientation="horizontal"
+                aria-valuemax="1"
+                aria-valuemin="0"
+                aria-valuenow="0.2"
+                aria-valuetext="volume level 2 of 10"
                 class="emotion-11"
-                data-testid="volume-control-slider-track"
-                style="background: rgb(255, 255, 0);"
+                data-testid="volume-control-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
                 values="0.2"
               >
-                <div
-                  aria-describedby="mock-nk-1"
-                  aria-label="Volume Control"
-                  aria-orientation="horizontal"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.2"
-                  aria-valuetext="volume level 2 of 10"
+                <span
                   class="emotion-12"
-                  data-testid="volume-control-slider-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.2"
-                >
-                  <span
-                    class="emotion-13"
-                    data-testid="volume-control-slider-feedback"
-                  />
-                </div>
+                  data-testid="volume-control-slider-feedback"
+                />
               </div>
             </div>
           </div>
-          <span
-            aria-hidden="true"
-            class="emotion-14"
-            id="mock-nk-1"
-          >
-            Use the arrow keys to adjust volume
-          </span>
         </div>
+        <span
+          aria-hidden="true"
+          class="emotion-13"
+          id="mock-nk-1"
+        >
+          Use the arrow keys to adjust volume
+        </span>
       </div>
     </div>
   </section>
@@ -4852,7 +4836,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 
 exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volume control: with blur 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -4865,11 +4849,11 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   column-gap: 12px;
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-area: muteButton;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4902,33 +4886,33 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4937,14 +4921,14 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4952,14 +4936,14 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4980,7 +4964,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4989,7 +4973,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   margin-right: calc(8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4999,7 +4983,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5007,69 +4991,69 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   grid-area: slider;
 }
 
-.emotion-9 {
+.emotion-8 {
   overflow: hidden;
   width: 0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: width;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-9.nk-vc-enter {
+  .emotion-8.nk-vc-enter {
     transition-property: width;
     transition-duration: 200ms;
   }
 
-  .emotion-9.nk-vc-enter-active {
+  .emotion-8.nk-vc-enter-active {
     transition-property: width;
     transition-duration: 200ms;
   }
 
-  .emotion-9.nk-vc-exit-active {
+  .emotion-8.nk-vc-exit-active {
     transition-property: width;
     transition-duration: 200ms;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: width;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-9.nk-vc-enter {
+  .emotion-8.nk-vc-enter {
     transition-property: width;
     transition-duration: 0ms;
   }
 
-  .emotion-9.nk-vc-enter-active {
+  .emotion-8.nk-vc-enter-active {
     transition-property: width;
     transition-duration: 0ms;
   }
 
-  .emotion-9.nk-vc-exit-active {
+  .emotion-8.nk-vc-exit-active {
     transition-property: width;
     transition-duration: 0ms;
   }
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5094,7 +5078,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   position: relative;
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5111,7 +5095,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   width: 100%;
 }
 
-.emotion-12 {
+.emotion-11 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -5132,27 +5116,27 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   cursor: pointer;
 }
 
-.emotion-12 svg {
+.emotion-11 svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-11:hover:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-11:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-11:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -5161,14 +5145,14 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-11:focus-visible:not(:disabled) {
       outline-offset: -7px;
       outline-style: auto;
     }
   }
 }
 
-.emotion-13 {
+.emotion-12 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5183,40 +5167,40 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-13:disabled {
+.emotion-12:disabled {
   opacity: 0;
 }
 
-.emotion-13:hover:active:not(:disabled) {
+.emotion-12:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-13:valid:hover:not(:disabled) {
+.emotion-12:valid:hover:not(:disabled) {
   background-color: #148F39;
   opacity: 0.2;
 }
 
-.emotion-13:valid:hover:active:not(:disabled) {
+.emotion-12:valid:hover:active:not(:disabled) {
   background-color: #148F39;
   opacity: 0.4;
 }
 
-.emotion-13:invalid:hover:not(:disabled) {
+.emotion-12:invalid:hover:not(:disabled) {
   background-color: #D20600;
   opacity: 0.2;
 }
 
-.emotion-13:invalid:hover:active:not(:disabled) {
+.emotion-12:invalid:hover:active:not(:disabled) {
   background-color: #D20600;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5224,14 +5208,14 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-14 {
+.emotion-13 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -5256,89 +5240,85 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
       <div
         class="emotion-1"
       >
-        <div
+        <button
+          aria-label="Mute"
           class="emotion-2"
+          data-testid="mute-button"
+          type="button"
         >
-          <button
-            aria-label="Mute"
+          <div
             class="emotion-3"
-            data-testid="mute-button"
-            type="button"
           >
             <div
               class="emotion-4"
             >
-              <div
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-5 emotion-6"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
             </div>
-          </button>
-        </div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="emotion-7"
+      >
         <div
-          class="emotion-8"
+          class="nk-vc-exit-done emotion-8"
         >
           <div
-            class="nk-vc-exit-done emotion-9"
+            class="emotion-9"
+            data-testid="volume-control-slider"
           >
             <div
               class="emotion-10"
-              data-testid="volume-control-slider"
+              data-testid="volume-control-slider-track"
+              style="background: rgb(255, 255, 0);"
+              values="0.2"
             >
               <div
+                aria-describedby="mock-nk-1"
+                aria-label="Volume Control"
+                aria-orientation="horizontal"
+                aria-valuemax="1"
+                aria-valuemin="0"
+                aria-valuenow="0.2"
+                aria-valuetext="volume level 2 of 10"
                 class="emotion-11"
-                data-testid="volume-control-slider-track"
-                style="background: rgb(255, 255, 0);"
+                data-testid="volume-control-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
                 values="0.2"
               >
-                <div
-                  aria-describedby="mock-nk-1"
-                  aria-label="Volume Control"
-                  aria-orientation="horizontal"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.2"
-                  aria-valuetext="volume level 2 of 10"
+                <span
                   class="emotion-12"
-                  data-testid="volume-control-slider-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.2"
-                >
-                  <span
-                    class="emotion-13"
-                    data-testid="volume-control-slider-feedback"
-                  />
-                </div>
+                  data-testid="volume-control-slider-feedback"
+                />
               </div>
             </div>
           </div>
-          <span
-            aria-hidden="true"
-            class="emotion-14"
-            id="mock-nk-1"
-          >
-            Use the arrow keys to adjust volume
-          </span>
         </div>
+        <span
+          aria-hidden="true"
+          class="emotion-13"
+          id="mock-nk-1"
+        >
+          Use the arrow keys to adjust volume
+        </span>
       </div>
     </div>
   </section>
@@ -5347,7 +5327,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 
 exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volume control: with focus 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -5360,11 +5340,11 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   column-gap: 12px;
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-area: muteButton;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5397,33 +5377,33 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -5432,14 +5412,14 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5447,14 +5427,14 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5475,7 +5455,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5484,7 +5464,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   margin-right: calc(8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -5494,7 +5474,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5502,68 +5482,68 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   grid-area: slider;
 }
 
-.emotion-9 {
+.emotion-8 {
   width: 130px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: width;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-9.nk-vc-enter {
+  .emotion-8.nk-vc-enter {
     transition-property: width;
     transition-duration: 200ms;
   }
 
-  .emotion-9.nk-vc-enter-active {
+  .emotion-8.nk-vc-enter-active {
     transition-property: width;
     transition-duration: 200ms;
   }
 
-  .emotion-9.nk-vc-exit-active {
+  .emotion-8.nk-vc-exit-active {
     transition-property: width;
     transition-duration: 200ms;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: width;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-9.nk-vc-enter {
+  .emotion-8.nk-vc-enter {
     transition-property: width;
     transition-duration: 0ms;
   }
 
-  .emotion-9.nk-vc-enter-active {
+  .emotion-8.nk-vc-enter-active {
     transition-property: width;
     transition-duration: 0ms;
   }
 
-  .emotion-9.nk-vc-exit-active {
+  .emotion-8.nk-vc-exit-active {
     transition-property: width;
     transition-duration: 0ms;
   }
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5588,7 +5568,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   position: relative;
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5605,7 +5585,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   width: 100%;
 }
 
-.emotion-12 {
+.emotion-11 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -5626,27 +5606,27 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   cursor: pointer;
 }
 
-.emotion-12 svg {
+.emotion-11 svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-11:hover:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-11:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-11:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -5655,14 +5635,14 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-11:focus-visible:not(:disabled) {
       outline-offset: -7px;
       outline-style: auto;
     }
   }
 }
 
-.emotion-13 {
+.emotion-12 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5677,40 +5657,40 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-13:disabled {
+.emotion-12:disabled {
   opacity: 0;
 }
 
-.emotion-13:hover:active:not(:disabled) {
+.emotion-12:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-13:valid:hover:not(:disabled) {
+.emotion-12:valid:hover:not(:disabled) {
   background-color: #148F39;
   opacity: 0.2;
 }
 
-.emotion-13:valid:hover:active:not(:disabled) {
+.emotion-12:valid:hover:active:not(:disabled) {
   background-color: #148F39;
   opacity: 0.4;
 }
 
-.emotion-13:invalid:hover:not(:disabled) {
+.emotion-12:invalid:hover:not(:disabled) {
   background-color: #D20600;
   opacity: 0.2;
 }
 
-.emotion-13:invalid:hover:active:not(:disabled) {
+.emotion-12:invalid:hover:active:not(:disabled) {
   background-color: #D20600;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5718,14 +5698,14 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-14 {
+.emotion-13 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -5750,90 +5730,86 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
       <div
         class="emotion-1"
       >
-        <div
+        <button
+          aria-label="Mute"
           class="emotion-2"
+          data-testid="mute-button"
+          type="button"
         >
-          <button
-            aria-label="Mute"
+          <div
             class="emotion-3"
-            data-testid="mute-button"
-            type="button"
           >
             <div
               class="emotion-4"
             >
-              <div
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-5 emotion-6"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
             </div>
-          </button>
-        </div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="emotion-7"
+      >
         <div
-          class="emotion-8"
+          class="nk-vc-enter-done emotion-8"
+          open=""
         >
           <div
-            class="nk-vc-enter-done emotion-9"
-            open=""
+            class="emotion-9"
+            data-testid="volume-control-slider"
           >
             <div
               class="emotion-10"
-              data-testid="volume-control-slider"
+              data-testid="volume-control-slider-track"
+              style="background: rgb(255, 255, 0);"
+              values="0.2"
             >
               <div
+                aria-describedby="mock-nk-1"
+                aria-label="Volume Control"
+                aria-orientation="horizontal"
+                aria-valuemax="1"
+                aria-valuemin="0"
+                aria-valuenow="0.2"
+                aria-valuetext="volume level 2 of 10"
                 class="emotion-11"
-                data-testid="volume-control-slider-track"
-                style="background: rgb(255, 255, 0);"
+                data-testid="volume-control-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
                 values="0.2"
               >
-                <div
-                  aria-describedby="mock-nk-1"
-                  aria-label="Volume Control"
-                  aria-orientation="horizontal"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.2"
-                  aria-valuetext="volume level 2 of 10"
+                <span
                   class="emotion-12"
-                  data-testid="volume-control-slider-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.2"
-                >
-                  <span
-                    class="emotion-13"
-                    data-testid="volume-control-slider-feedback"
-                  />
-                </div>
+                  data-testid="volume-control-slider-feedback"
+                />
               </div>
             </div>
           </div>
-          <span
-            aria-hidden="true"
-            class="emotion-14"
-            id="mock-nk-1"
-          >
-            Use the arrow keys to adjust volume
-          </span>
         </div>
+        <span
+          aria-hidden="true"
+          class="emotion-13"
+          id="mock-nk-1"
+        >
+          Use the arrow keys to adjust volume
+        </span>
       </div>
     </div>
   </section>
@@ -5842,10 +5818,10 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 
 exports[`Audio Player Composable VolumeControl should render correctly with collapsed and initialVolume 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: "muteButton slider";
+  grid-template-columns: 1fr;
+  grid-template-areas: "muteButton";
   justify-items: start;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -5855,11 +5831,11 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   column-gap: 12px;
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-area: muteButton;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5892,33 +5868,33 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -5927,14 +5903,14 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5942,14 +5918,14 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5970,7 +5946,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5979,7 +5955,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   margin-right: calc(8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -5989,7 +5965,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5997,194 +5973,11 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
-}
-
-.emotion-8 {
-  grid-area: slider;
-}
-
-.emotion-9 {
-  width: 0;
-  display: none;
-}
-
-.emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
-
-.emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  box-sizing: border-box;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  background-color: #F4F4F4;
-  border-radius: 20rem;
-  margin: calc(16px/2 - 4px/2) calc(16px/2);
-  height: 4px;
-  width: 100%;
-}
-
-.emotion-12 {
-  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
-  background-color: #3358CC;
-  border-style: solid;
-  border-color: #E0E7FF;
-  border-width: 1px;
-  border-radius: 50%;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-12 svg {
-  fill: #C0C0C0;
-}
-
-.emotion-12:hover:not(:disabled) {
-  background-color: #2B4AAB;
-}
-
-.emotion-12:hover:not(:disabled) svg {
-  fill: #C0C0C0;
-}
-
-.emotion-12:active:not(:disabled) {
-  background-color: #213A82;
-}
-
-.emotion-12:active:not(:disabled) svg {
-  fill: #535353;
-}
-
-.emotion-12:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
-      outline-offset: -7px;
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-13 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #3358CC;
-  border-radius: 50%;
-  opacity: 0;
-  width: 32px;
-  height: 32px;
-  -webkit-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
-  -moz-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
-  -ms-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
-  transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
-}
-
-.emotion-13:hover:not(:disabled) {
-  opacity: 0.2;
-}
-
-.emotion-13:disabled {
-  opacity: 0;
-}
-
-.emotion-13:hover:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.emotion-13:valid:hover:not(:disabled) {
-  background-color: #148F39;
-  opacity: 0.2;
-}
-
-.emotion-13:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
-  opacity: 0.4;
-}
-
-.emotion-13:invalid:hover:not(:disabled) {
-  background-color: #D20600;
-  opacity: 0.2;
-}
-
-.emotion-13:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
-  opacity: 0.4;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
-    transition-property: opacity;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
-    transition-property: opacity;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-14 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
 
 <section
@@ -6200,89 +5993,37 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
       <div
         class="emotion-1"
       >
-        <div
+        <button
+          aria-label="Mute"
           class="emotion-2"
+          data-testid="mute-button"
+          type="button"
         >
-          <button
-            aria-label="Mute"
+          <div
             class="emotion-3"
-            data-testid="mute-button"
-            type="button"
           >
             <div
               class="emotion-4"
             >
-              <div
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-5 emotion-6"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
-        </div>
-        <div
-          class="emotion-8"
-        >
-          <div
-            class="nk-vc-exit-done emotion-9"
-          >
-            <div
-              class="emotion-10"
-              data-testid="volume-control-slider"
-            >
-              <div
-                class="emotion-11"
-                data-testid="volume-control-slider-track"
-                style="background: rgb(255, 255, 0);"
-                values="0.2"
-              >
-                <div
-                  aria-describedby="mock-nk-1"
-                  aria-label="Volume Control"
-                  aria-orientation="horizontal"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.2"
-                  aria-valuetext="volume level 2 of 10"
-                  class="emotion-12"
-                  data-testid="volume-control-slider-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.2"
-                >
-                  <span
-                    class="emotion-13"
-                    data-testid="volume-control-slider-feedback"
-                  />
-                </div>
-              </div>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
             </div>
           </div>
-          <span
-            aria-hidden="true"
-            class="emotion-14"
-            id="mock-nk-1"
-          >
-            Use the arrow keys to adjust volume
-          </span>
-        </div>
+        </button>
       </div>
     </div>
   </section>
@@ -6291,7 +6032,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
 
 exports[`Audio Player Composable VolumeControl should render correctly with overrides 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -6305,11 +6046,11 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   column-gap: 24px;
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-area: muteButton;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6342,33 +6083,33 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -6377,14 +6118,14 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6392,14 +6133,14 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6420,7 +6161,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6429,7 +6170,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   margin-right: calc(8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -6439,7 +6180,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6447,69 +6188,23 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   grid-area: slider;
 }
 
-.emotion-9 {
-  overflow: hidden;
+.emotion-8 {
   width: 0;
+  width: 130px;
 }
 
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
-    transition-property: width;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-
-  .emotion-9.nk-vc-enter {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-
-  .emotion-9.nk-vc-enter-active {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-
-  .emotion-9.nk-vc-exit-active {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
-    transition-property: width;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-
-  .emotion-9.nk-vc-enter {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-
-  .emotion-9.nk-vc-enter-active {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-
-  .emotion-9.nk-vc-exit-active {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-}
-
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6534,7 +6229,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   position: relative;
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6553,7 +6248,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   width: 100%;
 }
 
-.emotion-12 {
+.emotion-11 {
   background-color: green;
   border-color: black;
   height: 16px;
@@ -6570,7 +6265,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   cursor: pointer;
 }
 
-.emotion-13 {
+.emotion-12 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6586,7 +6281,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6594,14 +6289,14 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
+  .emotion-12 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-14 {
+.emotion-13 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -6626,89 +6321,85 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
       <div
         class="emotion-1"
       >
-        <div
+        <button
+          aria-label="Mute"
           class="emotion-2"
+          data-testid="mute-button"
+          type="button"
         >
-          <button
-            aria-label="Mute"
+          <div
             class="emotion-3"
-            data-testid="mute-button"
-            type="button"
           >
             <div
               class="emotion-4"
             >
-              <div
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-5 emotion-6"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
             </div>
-          </button>
-        </div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="emotion-7"
+      >
         <div
-          class="emotion-8"
+          class="nk-vc-exit-done emotion-8"
         >
           <div
-            class="nk-vc-exit-done emotion-9"
+            class="emotion-9"
+            data-testid="volume-control-slider"
           >
             <div
               class="emotion-10"
-              data-testid="volume-control-slider"
+              data-testid="volume-control-slider-track"
+              style="background: rgb(255, 255, 0);"
+              values="0.2"
             >
               <div
+                aria-describedby="mock-nk-1"
+                aria-label="Volume Control"
+                aria-orientation="horizontal"
+                aria-valuemax="1"
+                aria-valuemin="0"
+                aria-valuenow="0.2"
+                aria-valuetext="volume level 2 of 10"
                 class="emotion-11"
-                data-testid="volume-control-slider-track"
-                style="background: rgb(255, 255, 0);"
+                data-testid="volume-control-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
                 values="0.2"
               >
-                <div
-                  aria-describedby="mock-nk-1"
-                  aria-label="Volume Control"
-                  aria-orientation="horizontal"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.2"
-                  aria-valuetext="volume level 2 of 10"
+                <span
                   class="emotion-12"
-                  data-testid="volume-control-slider-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.2"
-                >
-                  <span
-                    class="emotion-13"
-                    data-testid="volume-control-slider-feedback"
-                  />
-                </div>
+                  data-testid="volume-control-slider-feedback"
+                />
               </div>
             </div>
           </div>
-          <span
-            aria-hidden="true"
-            class="emotion-14"
-            id="mock-nk-1"
-          >
-            Use the arrow keys to adjust volume
-          </span>
         </div>
+        <span
+          aria-hidden="true"
+          class="emotion-13"
+          id="mock-nk-1"
+        >
+          Use the arrow keys to adjust volume
+        </span>
       </div>
     </div>
   </section>
@@ -6717,24 +6408,24 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 
 exports[`Audio Player Composable VolumeControl should render correctly with vertical prop 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "slider" "muteButton";
-  justify-items: center;
+  grid-template-areas: "muteButton";
+  justify-items: start;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
-  row-gap: 12px;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-area: muteButton;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6767,33 +6458,33 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -6802,14 +6493,14 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6817,14 +6508,14 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6845,7 +6536,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6854,7 +6545,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   margin-right: calc(8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -6864,7 +6555,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6872,193 +6563,11 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
-}
-
-.emotion-8 {
-  grid-area: slider;
-}
-
-.emotion-9 {
-  width: 0;
-  height: 130px;
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: relative;
-}
-
-.emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  box-sizing: border-box;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  background-color: #F4F4F4;
-  border-radius: 20rem;
-  margin: calc(16px/2) calc(16px/2 - 4px/2);
-  height: 100%;
-  width: 4px;
-}
-
-.emotion-12 {
-  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
-  background-color: #3358CC;
-  border-style: solid;
-  border-color: #E0E7FF;
-  border-width: 1px;
-  border-radius: 50%;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-12 svg {
-  fill: #C0C0C0;
-}
-
-.emotion-12:hover:not(:disabled) {
-  background-color: #2B4AAB;
-}
-
-.emotion-12:hover:not(:disabled) svg {
-  fill: #C0C0C0;
-}
-
-.emotion-12:active:not(:disabled) {
-  background-color: #213A82;
-}
-
-.emotion-12:active:not(:disabled) svg {
-  fill: #535353;
-}
-
-.emotion-12:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
-      outline-offset: -7px;
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-13 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #3358CC;
-  border-radius: 50%;
-  opacity: 0;
-  width: 32px;
-  height: 32px;
-  -webkit-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
-  -moz-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
-  -ms-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
-  transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
-}
-
-.emotion-13:hover:not(:disabled) {
-  opacity: 0.2;
-}
-
-.emotion-13:disabled {
-  opacity: 0;
-}
-
-.emotion-13:hover:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.emotion-13:valid:hover:not(:disabled) {
-  background-color: #148F39;
-  opacity: 0.2;
-}
-
-.emotion-13:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
-  opacity: 0.4;
-}
-
-.emotion-13:invalid:hover:not(:disabled) {
-  background-color: #D20600;
-  opacity: 0.2;
-}
-
-.emotion-13:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
-  opacity: 0.4;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
-    transition-property: opacity;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
-    transition-property: opacity;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-14 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
 
 <section
@@ -7074,89 +6583,37 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
       <div
         class="emotion-1"
       >
-        <div
+        <button
+          aria-label="Mute"
           class="emotion-2"
+          data-testid="mute-button"
+          type="button"
         >
-          <button
-            aria-label="Mute"
+          <div
             class="emotion-3"
-            data-testid="mute-button"
-            type="button"
           >
             <div
               class="emotion-4"
             >
-              <div
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-5 emotion-6"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
-        </div>
-        <div
-          class="emotion-8"
-        >
-          <div
-            class="nk-vc-exit-done emotion-9"
-          >
-            <div
-              class="emotion-10"
-              data-testid="volume-control-slider"
-            >
-              <div
-                class="emotion-11"
-                data-testid="volume-control-slider-track"
-                style="background: rgb(255, 255, 0);"
-                values="0.2"
-              >
-                <div
-                  aria-describedby="mock-nk-1"
-                  aria-label="Volume Control"
-                  aria-orientation="vertical"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.2"
-                  aria-valuetext="volume level 2 of 10"
-                  class="emotion-12"
-                  data-testid="volume-control-slider-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.2"
-                >
-                  <span
-                    class="emotion-13"
-                    data-testid="volume-control-slider-feedback"
-                  />
-                </div>
-              </div>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
             </div>
           </div>
-          <span
-            aria-hidden="true"
-            class="emotion-14"
-            id="mock-nk-1"
-          >
-            Use the arrow keys to adjust volume
-          </span>
-        </div>
+        </button>
       </div>
     </div>
   </section>
@@ -7779,7 +7236,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   display: block;
 }
 
-.emotion-16 {
+.emotion-15 {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -7792,11 +7249,11 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   column-gap: 12px;
 }
 
-.emotion-17 {
+.emotion-16 {
   grid-area: muteButton;
 }
 
-.emotion-18 {
+.emotion-17 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7829,33 +7286,33 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-17 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-17 svg {
   fill: #3358CC;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-17:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-17:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-18:disabled {
+.emotion-17:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-18:disabled svg {
+.emotion-17:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-18:focus-visible:not(:disabled) {
+.emotion-17:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -7864,14 +7321,14 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus-visible:not(:disabled) {
+    .emotion-17:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-18 {
+  .emotion-17 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7879,69 +7336,23 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-18 {
+  .emotion-17 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-23 {
+.emotion-22 {
   grid-area: slider;
 }
 
-.emotion-24 {
-  overflow: hidden;
+.emotion-23 {
   width: 0;
+  width: 130px;
 }
 
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-24 {
-    transition-property: width;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-
-  .emotion-24.nk-vc-enter {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-
-  .emotion-24.nk-vc-enter-active {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-
-  .emotion-24.nk-vc-exit-active {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-24 {
-    transition-property: width;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-
-  .emotion-24.nk-vc-enter {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-
-  .emotion-24.nk-vc-enter-active {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-
-  .emotion-24.nk-vc-exit-active {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-}
-
-.emotion-26 {
+.emotion-25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7958,7 +7369,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   width: 100%;
 }
 
-.emotion-27 {
+.emotion-26 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -7979,27 +7390,27 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   cursor: pointer;
 }
 
-.emotion-27 svg {
+.emotion-26 svg {
   fill: #C0C0C0;
 }
 
-.emotion-27:hover:not(:disabled) {
+.emotion-26:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-27:hover:not(:disabled) svg {
+.emotion-26:hover:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-27:active:not(:disabled) {
+.emotion-26:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-27:active:not(:disabled) svg {
+.emotion-26:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-27:focus-visible:not(:disabled) {
+.emotion-26:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -8008,21 +7419,21 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-27:focus-visible:not(:disabled) {
+    .emotion-26:focus-visible:not(:disabled) {
       outline-offset: -7px;
       outline-style: auto;
     }
   }
 }
 
-.emotion-43 {
+.emotion-42 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-43 {
+  .emotion-42 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8030,7 +7441,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-43 {
+  .emotion-42 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8147,94 +7558,90 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
       <div
         class="emotion-16"
       >
-        <div
+        <button
+          aria-label="Mute"
           class="emotion-17"
-        >
-          <button
-            aria-label="Mute"
-            class="emotion-18"
-            data-testid="mute-button"
-            type="button"
-          >
-            <div
-              class="emotion-6"
-            >
-              <div
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
-        </div>
-        <div
-          class="emotion-23"
+          data-testid="mute-button"
+          type="button"
         >
           <div
-            class="nk-vc-exit-done emotion-24"
+            class="emotion-6"
           >
             <div
-              class="emotion-0"
-              data-testid="volume-control-slider"
+              class="emotion-7"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="emotion-22"
+      >
+        <div
+          class="nk-vc-exit-done emotion-23"
+        >
+          <div
+            class="emotion-0"
+            data-testid="volume-control-slider"
+          >
+            <div
+              class="emotion-25"
+              data-testid="volume-control-slider-track"
+              style="background: rgb(255, 255, 0);"
+              values="0.7"
             >
               <div
+                aria-describedby="mock-nk-1"
+                aria-label="Volume Control"
+                aria-orientation="horizontal"
+                aria-valuemax="1"
+                aria-valuemin="0"
+                aria-valuenow="0.7"
+                aria-valuetext="volume level 7 of 10"
                 class="emotion-26"
-                data-testid="volume-control-slider-track"
-                style="background: rgb(255, 255, 0);"
+                data-testid="volume-control-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
                 values="0.7"
               >
-                <div
-                  aria-describedby="mock-nk-1"
-                  aria-label="Volume Control"
-                  aria-orientation="horizontal"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.7"
-                  aria-valuetext="volume level 7 of 10"
-                  class="emotion-27"
-                  data-testid="volume-control-slider-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.7"
-                >
-                  <span
-                    class="emotion-3"
-                    data-testid="volume-control-slider-feedback"
-                  />
-                </div>
+                <span
+                  class="emotion-3"
+                  data-testid="volume-control-slider-feedback"
+                />
               </div>
             </div>
           </div>
-          <span
-            aria-hidden="true"
-            class="emotion-4"
-            id="mock-nk-1"
-          >
-            Use the arrow keys to adjust volume
-          </span>
         </div>
+        <span
+          aria-hidden="true"
+          class="emotion-4"
+          id="mock-nk-1"
+        >
+          Use the arrow keys to adjust volume
+        </span>
       </div>
     </div>
     <button
       aria-label="next"
-      class="emotion-18"
+      class="emotion-17"
       data-testid="audio-player-skip-next-button"
       type="button"
     >
@@ -8265,7 +7672,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
     </button>
     <button
       aria-label="previous"
-      class="emotion-18"
+      class="emotion-17"
       data-testid="audio-player-skip-previous-button"
       type="button"
     >
@@ -8296,7 +7703,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
     </button>
     <button
       aria-label="Fast forward for 10 seconds"
-      class="emotion-18"
+      class="emotion-17"
       data-testid="audio-player-forward-button"
       type="button"
     >
@@ -8308,7 +7715,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
         >
           <svg
             aria-hidden="true"
-            class="emotion-43"
+            class="emotion-42"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -8324,7 +7731,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
     </button>
     <button
       aria-label="Rewind 10 seconds"
-      class="emotion-18"
+      class="emotion-17"
       data-testid="audio-player-replay-button"
       type="button"
     >
@@ -8336,7 +7743,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
         >
           <svg
             aria-hidden="true"
-            class="emotion-43"
+            class="emotion-42"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -10079,7 +9486,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   display: block;
 }
 
-.emotion-15 {
+.emotion-14 {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -10092,11 +9499,11 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   column-gap: 12px;
 }
 
-.emotion-16 {
+.emotion-15 {
   grid-area: muteButton;
 }
 
-.emotion-17 {
+.emotion-16 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -10129,33 +9536,33 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   cursor: pointer;
 }
 
-.emotion-17 svg {
+.emotion-16 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-17 svg {
+.emotion-16 svg {
   fill: #3358CC;
 }
 
-.emotion-17:hover:not(:disabled) {
+.emotion-16:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-17:active:not(:disabled) {
+.emotion-16:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-17:disabled {
+.emotion-16:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-17:disabled svg {
+.emotion-16:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-17:focus-visible:not(:disabled) {
+.emotion-16:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -10164,14 +9571,14 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-17:focus-visible:not(:disabled) {
+    .emotion-16:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-17 {
+  .emotion-16 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -10179,14 +9586,14 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-17 {
+  .emotion-16 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-19 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -10196,7 +9603,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-20 {
+  .emotion-19 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -10204,69 +9611,23 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-20 {
+  .emotion-19 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-22 {
+.emotion-21 {
   grid-area: slider;
 }
 
-.emotion-23 {
-  overflow: hidden;
+.emotion-22 {
   width: 0;
+  width: 130px;
 }
 
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-23 {
-    transition-property: width;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-
-  .emotion-23.nk-vc-enter {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-
-  .emotion-23.nk-vc-enter-active {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-
-  .emotion-23.nk-vc-exit-active {
-    transition-property: width;
-    transition-duration: 200ms;
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-23 {
-    transition-property: width;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-
-  .emotion-23.nk-vc-enter {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-
-  .emotion-23.nk-vc-enter-active {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-
-  .emotion-23.nk-vc-exit-active {
-    transition-property: width;
-    transition-duration: 0ms;
-  }
-}
-
-.emotion-25 {
+.emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10283,7 +9644,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   width: 100%;
 }
 
-.emotion-26 {
+.emotion-25 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -10304,27 +9665,27 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   cursor: pointer;
 }
 
-.emotion-26 svg {
+.emotion-25 svg {
   fill: #C0C0C0;
 }
 
-.emotion-26:hover:not(:disabled) {
+.emotion-25:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-26:hover:not(:disabled) svg {
+.emotion-25:hover:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-26:active:not(:disabled) {
+.emotion-25:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-26:active:not(:disabled) svg {
+.emotion-25:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-26:focus-visible:not(:disabled) {
+.emotion-25:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -10333,21 +9694,21 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-26:focus-visible:not(:disabled) {
+    .emotion-25:focus-visible:not(:disabled) {
       outline-offset: -7px;
       outline-style: auto;
     }
   }
 }
 
-.emotion-42 {
+.emotion-41 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-42 {
+  .emotion-41 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -10355,7 +9716,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-42 {
+  .emotion-41 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -10470,94 +9831,90 @@ exports[`Audio Player Composable should render with no errors 1`] = `
       <div
         class="emotion-15"
       >
-        <div
+        <button
+          aria-label="Mute"
           class="emotion-16"
-        >
-          <button
-            aria-label="Mute"
-            class="emotion-17"
-            data-testid="mute-button"
-            type="button"
-          >
-            <div
-              class="emotion-6"
-            >
-              <div
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-20 emotion-21"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
-        </div>
-        <div
-          class="emotion-22"
+          data-testid="mute-button"
+          type="button"
         >
           <div
-            class="nk-vc-exit-done emotion-23"
+            class="emotion-6"
           >
             <div
-              class="emotion-0"
-              data-testid="volume-control-slider"
+              class="emotion-7"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-19 emotion-20"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="emotion-21"
+      >
+        <div
+          class="nk-vc-exit-done emotion-22"
+        >
+          <div
+            class="emotion-0"
+            data-testid="volume-control-slider"
+          >
+            <div
+              class="emotion-24"
+              data-testid="volume-control-slider-track"
+              style="background: rgb(255, 255, 0);"
+              values="0.7"
             >
               <div
+                aria-describedby="mock-nk-1"
+                aria-label="Volume Control"
+                aria-orientation="horizontal"
+                aria-valuemax="1"
+                aria-valuemin="0"
+                aria-valuenow="0.7"
+                aria-valuetext="volume level 7 of 10"
                 class="emotion-25"
-                data-testid="volume-control-slider-track"
-                style="background: rgb(255, 255, 0);"
+                data-testid="volume-control-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
                 values="0.7"
               >
-                <div
-                  aria-describedby="mock-nk-1"
-                  aria-label="Volume Control"
-                  aria-orientation="horizontal"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.7"
-                  aria-valuetext="volume level 7 of 10"
-                  class="emotion-26"
-                  data-testid="volume-control-slider-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.7"
-                >
-                  <span
-                    class="emotion-3"
-                    data-testid="volume-control-slider-feedback"
-                  />
-                </div>
+                <span
+                  class="emotion-3"
+                  data-testid="volume-control-slider-feedback"
+                />
               </div>
             </div>
           </div>
-          <span
-            aria-hidden="true"
-            class="emotion-4"
-            id="mock-nk-1"
-          >
-            Use the arrow keys to adjust volume
-          </span>
         </div>
+        <span
+          aria-hidden="true"
+          class="emotion-4"
+          id="mock-nk-1"
+        >
+          Use the arrow keys to adjust volume
+        </span>
       </div>
     </div>
     <button
       aria-label="next"
-      class="emotion-17"
+      class="emotion-16"
       data-testid="audio-player-skip-next-button"
       type="button"
     >
@@ -10569,7 +9926,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="emotion-20 emotion-21"
+            class="emotion-19 emotion-20"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -10588,7 +9945,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
     </button>
     <button
       aria-label="previous"
-      class="emotion-17"
+      class="emotion-16"
       data-testid="audio-player-skip-previous-button"
       type="button"
     >
@@ -10600,7 +9957,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="emotion-20 emotion-21"
+            class="emotion-19 emotion-20"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -10619,7 +9976,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
     </button>
     <button
       aria-label="Fast forward for 10 seconds"
-      class="emotion-17"
+      class="emotion-16"
       data-testid="audio-player-forward-button"
       type="button"
     >
@@ -10631,7 +9988,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="emotion-42"
+            class="emotion-41"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -10647,7 +10004,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
     </button>
     <button
       aria-label="Rewind 10 seconds"
-      class="emotion-17"
+      class="emotion-16"
       data-testid="audio-player-replay-button"
       type="button"
     >
@@ -10659,7 +10016,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="emotion-42"
+            class="emotion-41"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
