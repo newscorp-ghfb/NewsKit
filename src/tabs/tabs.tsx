@@ -6,7 +6,6 @@ import {
   TabsDistribution,
   TabSize,
   TabAlign,
-  TabsIndicatorPosition,
 } from './types';
 import {
   StyledTabsBar,
@@ -79,7 +78,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
       distribution,
       selectedIndex,
       initialSelectedIndex = 0,
-      indicatorPosition = TabsIndicatorPosition.End,
+      indicatorPosition = 'end',
       align: passedAlign,
       onChange,
     },

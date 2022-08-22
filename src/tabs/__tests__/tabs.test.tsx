@@ -7,7 +7,7 @@ import {
 } from '../../test/test-utils';
 import {compileTheme, createTheme, Tab, TabSize} from '../..';
 import {Tabs, TabsDistribution} from '..';
-import {TabAlign, TabsProps, TabsIndicatorPosition} from '../types';
+import {TabAlign, TabsProps} from '../types';
 import {IconFilledEmail} from '../../icons';
 import {KEYBOARD_ARROWS} from '../utils';
 import tabStylePresets from '../style-presets';
@@ -659,7 +659,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders horizontal tabs with the selection indicator before the tabs', () => {
     const fragmentStart = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.Start,
+      indicatorPosition: 'start',
     });
     expect(fragmentStart).toMatchSnapshot();
   });
@@ -667,7 +667,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders vertical tabs with the selection indicator before the tabs', () => {
     const fragmentStart = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.Start,
+      indicatorPosition: 'start',
       vertical: true,
     });
     expect(fragmentStart).toMatchSnapshot();
@@ -676,7 +676,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders horizontal tabs with the selection indicator after the tabs', () => {
     const fragmentEnd = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.End,
+      indicatorPosition: 'end',
     });
     expect(fragmentEnd).toMatchSnapshot();
   });
@@ -684,7 +684,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders vertical tabs with the selection indicator after the tabs', () => {
     const fragmentEnd = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.End,
+      indicatorPosition: 'end',
       vertical: true,
     });
     expect(fragmentEnd).toMatchSnapshot();
@@ -693,7 +693,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders horizontal tabs with no selection indicator displayed', () => {
     const fragmentNone = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.None,
+      indicatorPosition: 'none',
     });
     expect(fragmentNone).toMatchSnapshot();
   });
@@ -701,7 +701,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders vertical tabs with no selection indicator displayed', () => {
     const fragmentNone = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.None,
+      indicatorPosition: 'none',
       vertical: true,
     });
     expect(fragmentNone).toMatchSnapshot();

@@ -6,7 +6,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {Tab, TabAlign, Tabs, TabsDistribution, TabsIndicatorPosition} from '..';
+import {Tab, TabAlign, Tabs, TabsDistribution} from '..';
 import {IconFilledEmail} from '../../icons';
 import {Block} from '../../block';
 import {Button} from '../../button';
@@ -778,7 +778,7 @@ export const StoryTabsHorizontalIndicatorPositionVariants = () => (
       Tabs Horizontal Indicator Position Variants
     </StorybookHeading>
     <StorybookSubHeading>Indicator position Start</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} indicatorPosition={TabsIndicatorPosition.Start}>
+    <Tabs size={TabSize.Medium} indicatorPosition="start">
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -802,7 +802,7 @@ export const StoryTabsHorizontalIndicatorPositionVariants = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Indicator position None</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} indicatorPosition={TabsIndicatorPosition.None}>
+    <Tabs size={TabSize.Medium} indicatorPosition="none">
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -824,11 +824,7 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
       Tabs Vertical Indicator Position Variants
     </StorybookHeading>
     <StorybookSubHeading>Indicator position Start</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Medium}
-      vertical
-      indicatorPosition={TabsIndicatorPosition.Start}
-    >
+    <Tabs size={TabSize.Medium} vertical indicatorPosition="start">
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -852,11 +848,7 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Indicator position None</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Medium}
-      vertical
-      indicatorPosition={TabsIndicatorPosition.None}
-    >
+    <Tabs size={TabSize.Medium} vertical indicatorPosition="none">
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -1251,7 +1243,7 @@ export const StoryTabsWithPresetsOverridesShadows = () => {
               spaceInline: '30px',
             },
           }}
-          indicatorPosition={TabsIndicatorPosition.None}
+          indicatorPosition="none"
         >
           <Tab label="V tab 1" overrides={{stylePreset: 'shadowTab'}}>
             <TabPanel>
