@@ -8,7 +8,7 @@ import {
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {IconFilledAddCircleOutline, IconFilledClose} from '../../icons';
 import {Menu, MenuItem, MenuGroup, MenuDivider} from '..';
-import {MenuItemAlign, MenuItemSize} from '../types';
+import {MenuItemSize} from '../types';
 import {styled, getColorCssFromTheme} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
@@ -355,11 +355,7 @@ export const StoryMenuItemsAlignment = () => {
       <Flex>
         <div>
           <StorybookSubHeading>Left</StorybookSubHeading>
-          <Menu
-            vertical
-            align={MenuItemAlign.Start}
-            aria-label={`Menu ${getSSRId()}`}
-          >
+          <Menu vertical align="start" aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
@@ -370,11 +366,7 @@ export const StoryMenuItemsAlignment = () => {
         </div>
         <div>
           <StorybookSubHeading>Center</StorybookSubHeading>
-          <Menu
-            vertical
-            align={MenuItemAlign.Center}
-            aria-label={`Menu ${getSSRId()}`}
-          >
+          <Menu vertical align="center" aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
@@ -385,11 +377,7 @@ export const StoryMenuItemsAlignment = () => {
         </div>
         <div>
           <StorybookSubHeading>Right</StorybookSubHeading>
-          <Menu
-            vertical
-            align={MenuItemAlign.End}
-            aria-label={`Menu ${getSSRId()}`}
-          >
+          <Menu vertical align="end" aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
@@ -417,7 +405,7 @@ export const StoryMenuItemsHorizontalAlignment = () => {
       <Container>
         <div>
           <StorybookSubHeading>Left</StorybookSubHeading>
-          <Menu align={MenuItemAlign.Start} aria-label={`Menu ${getSSRId()}`}>
+          <Menu align="start" aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
@@ -425,7 +413,7 @@ export const StoryMenuItemsHorizontalAlignment = () => {
         </div>
         <div>
           <StorybookSubHeading>Center</StorybookSubHeading>
-          <Menu align={MenuItemAlign.Center} aria-label={`Menu ${getSSRId()}`}>
+          <Menu align="center" aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
@@ -433,7 +421,7 @@ export const StoryMenuItemsHorizontalAlignment = () => {
         </div>
         <div>
           <StorybookSubHeading>Right</StorybookSubHeading>
-          <Menu align={MenuItemAlign.End} aria-label={`Menu ${getSSRId()}`}>
+          <Menu align="end" aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
             <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
