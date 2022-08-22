@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Block, Headline, TextBlock, GridLayout, Card} from 'newskit';
+import {Headline, TextBlock, GridLayout, Card} from 'newskit';
 import {ContentPrimary} from '../../content-structure';
 import {
   ExploreComponents,
@@ -39,21 +39,21 @@ export const Explore = () => (
     >
       {cardsContent.map(({media, title, href, description}) => (
         <Card key={href} href={href} media={() => media}>
-          <Block marginBlockEnd="space040">
-            <Headline
-              overrides={{
-                typographyPreset: 'editorialHeadline020',
-                heading: {stylePreset: 'exploreCardHeadline'},
-              }}
-            >
-              {title}
-            </Headline>
-          </Block>
-          <Block marginBlockEnd="space040">
-            <TextBlock typographyPreset="editorialParagraph020">
-              {description}
-            </TextBlock>
-          </Block>
+          <Headline
+            overrides={{
+              marginBlockEnd: 'space040',
+              typographyPreset: 'editorialHeadline020',
+              heading: {stylePreset: 'exploreCardHeadline'},
+            }}
+          >
+            {title}
+          </Headline>
+          <TextBlock
+            marginBlockEnd="space040"
+            typographyPreset="editorialParagraph020"
+          >
+            {description}
+          </TextBlock>
         </Card>
       ))}
     </GridLayout>
