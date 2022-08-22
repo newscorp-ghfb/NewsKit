@@ -64,7 +64,10 @@ export const MediaList: React.FC<MediaListProps> = ({
         );
 
         return (
-          <Cell {...cellColumnList} key={reactKeys[index]}>
+          <Cell
+            {...cellColumnList}
+            key={`${cardProps.title}-${cardProps.href}-${reactKeys[index]}`}
+          >
             {cardProps.href && (
               <LinkNext
                 href={cardProps.href}
