@@ -41,8 +41,8 @@ const randomiseBrands = (
 const sixRandomLogos = randomiseBrands(6, SUPPORTED_BRANDS);
 
 export const SupportedBrands = () => {
-  const [brandLogoKey] = useReactKeys(1);
   const [brandsLogos, setBrandsLogos] = React.useState(sixRandomLogos);
+  const keys = useReactKeys(brandsLogos.length);
 
   React.useEffect(() => {
     setBrandsLogos(sixRandomLogos);
@@ -57,8 +57,8 @@ export const SupportedBrands = () => {
         columns={{xs: 'repeat(3, 1fr)', md: 'repeat(6, 1fr)'}}
         justifyItems="center"
       >
-        {brandsLogos.map(({icon, url}) => (
-          <GridLayoutItem key={brandLogoKey}>
+        {brandsLogos.map(({icon, url}, index) => (
+          <GridLayoutItem key={keys[index]}>
             <LinkStandalone target="_blank" external={false} href={url}>
               {icon}
             </LinkStandalone>
