@@ -11,7 +11,6 @@ import {ComponentPageBasicTemplate} from '../../templates/component-page-templat
 import {
   AccessibilitySection,
   CommonSection,
-  ComplianceSection,
   ComponentAPISection,
   RelatedComponentsSection,
   SEOSection,
@@ -324,22 +323,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
         },
       ]}
     />
-    <ComplianceSection usage accessibility seo props />
-    <RelatedComponentsSection
-      related={[
-        'Block',
-        'Card',
-        'Divider',
-        'Drawer',
-        'Fieldset',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Popover',
-        'Stack',
-        'Structured List',
-      ]}
-    />
+    <RelatedComponentsSection related={['Block', 'Grid', 'Stack']} />
   </ComponentPageBasicTemplate>
 );
 
