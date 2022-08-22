@@ -323,6 +323,40 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   color: #162740;
 }
 
+.emotion-14 {
+  margin-bottom: 4px;
+}
+
+@media screen {
+  .emotion-14 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-14 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-14 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-14 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-14 {
+    display: none;
+  }
+}
+
 .emotion-15 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -1272,12 +1306,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
           </span>
         </a>
         <div
-          class="emotion-1"
+          class="emotion-14"
         >
           <button
             aria-label="Search"
             class="emotion-15"
-            data-testid="button"
+            data-testid="search-icon-button"
             type="button"
           >
             <div
@@ -1306,7 +1340,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
         >
           <button
             class="emotion-20"
-            data-testid="button"
+            data-testid="search-button"
             type="button"
           >
             <div
@@ -1572,12 +1606,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
           class="emotion-66"
         >
           <div
-            class="emotion-1"
+            class="emotion-14"
           >
             <button
               aria-label="Search"
               class="emotion-15"
-              data-testid="button"
+              data-testid="search-icon-button"
               type="button"
             >
               <div
@@ -1606,7 +1640,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
           >
             <button
               class="emotion-20"
-              data-testid="button"
+              data-testid="search-button"
               type="button"
             >
               <div
@@ -2069,6 +2103,40 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   color: #162740;
 }
 
+.emotion-14 {
+  margin-bottom: 4px;
+}
+
+@media screen {
+  .emotion-14 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-14 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-14 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-14 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-14 {
+    display: none;
+  }
+}
+
 .emotion-15 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -3018,12 +3086,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
           </span>
         </a>
         <div
-          class="emotion-1"
+          class="emotion-14"
         >
           <button
             aria-label="Search"
             class="emotion-15"
-            data-testid="button"
+            data-testid="search-icon-button"
             type="button"
           >
             <div
@@ -3052,7 +3120,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
         >
           <button
             class="emotion-20"
-            data-testid="button"
+            data-testid="search-button"
             type="button"
           >
             <div
@@ -3318,12 +3386,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
           class="emotion-66"
         >
           <div
-            class="emotion-1"
+            class="emotion-14"
           >
             <button
               aria-label="Search"
               class="emotion-15"
-              data-testid="button"
+              data-testid="search-icon-button"
               type="button"
             >
               <div
@@ -3352,7 +3420,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
           >
             <button
               class="emotion-20"
-              data-testid="button"
+              data-testid="search-button"
               type="button"
             >
               <div
@@ -3813,6 +3881,40 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-13 {
   fill: #162740;
   color: #162740;
+}
+
+.emotion-14 {
+  margin-bottom: 4px;
+}
+
+@media screen {
+  .emotion-14 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-14 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-14 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-14 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-14 {
+    display: none;
+  }
 }
 
 .emotion-15 {
@@ -4649,12 +4751,12 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
           </span>
         </a>
         <div
-          class="emotion-1"
+          class="emotion-14"
         >
           <button
             aria-label="Search"
             class="emotion-15"
-            data-testid="button"
+            data-testid="search-icon-button"
             type="button"
           >
             <div
@@ -4683,7 +4785,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
         >
           <button
             class="emotion-20"
-            data-testid="button"
+            data-testid="search-button"
             type="button"
           >
             <div
@@ -4949,12 +5051,12 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
           class="emotion-66"
         >
           <div
-            class="emotion-1"
+            class="emotion-14"
           >
             <button
               aria-label="Search"
               class="emotion-15"
-              data-testid="button"
+              data-testid="search-icon-button"
               type="button"
             >
               <div
@@ -4983,7 +5085,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
           >
             <button
               class="emotion-20"
-              data-testid="button"
+              data-testid="search-button"
               type="button"
             >
               <div

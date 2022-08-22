@@ -1,20 +1,24 @@
 import React from 'react';
-import {loadCSS} from 'fg-loadcss';
 import {DocSearchModal, useDocSearchKeyboardEvents} from '@docsearch/react';
-import {Global, Layer, Visible, IconButton, Button} from 'newskit';
+import {
+  Global,
+  Visible,
+  IconButton,
+  Button,
+  styled,
+  getSpacingCssFromTheme,
+} from 'newskit';
+import {createPortal} from 'react-dom';
 import {IconFilledSearch} from '../icons';
 import {Mono} from '../flags';
 
-export const Search: React.FC = () => {
-  React.useEffect(() => {
-    const node = loadCSS(
-      'https://cdn.jsdelivr.net/npm/@docsearch/css@3.0.0-alpha.50/dist/style.css',
-    );
+import '@docsearch/css/dist/style.css';
 
-    return () => {
-      node.parentNode!.removeChild(node);
-    };
-  }, []);
+const SearchIconContainer = styled(Visible)`
+  ${getSpacingCssFromTheme('marginBottom', 'space010')};
+`;
+
+export const Search: React.FC = () => {
   const searchButtonRef = React.useRef(null);
   const [isOpen, setIsOpen] = React.useState(false);
   const [initialQuery, setInitialQuery] = React.useState(undefined);
@@ -45,12 +49,12 @@ export const Search: React.FC = () => {
 
   return (
     <>
-      <Visible xs sm md>
+      <SearchIconContainer xs sm md>
         <IconButton
           aria-label="Search"
+          data-testid="search-icon-button"
           overrides={{
             stylePreset: 'iconButtonMinimalSecondary',
-            marginBlockEnd: 'sizing010',
           }}
           size="small"
           ref={searchButtonRef}
@@ -58,12 +62,13 @@ export const Search: React.FC = () => {
         >
           <IconFilledSearch />
         </IconButton>
-      </Visible>
+      </SearchIconContainer>
       <Visible lg xl>
         <Button
           size="small"
           ref={searchButtonRef}
           onClick={onOpen}
+          data-testid="search-button"
           overrides={{
             typographyPreset: 'utilityButton010',
             stylePreset: 'buttonOutlinedSecondary',
@@ -76,8 +81,9 @@ export const Search: React.FC = () => {
           <Mono overrides={{stylePreset: 'flagSolidPrimary'}}>⌘K</Mono>
         </Button>
       </Visible>
-      {isOpen && (
-        <Layer>
+
+      {isOpen &&
+        createPortal(
           <DocSearchModal
             appId="COXG0SA519"
             apiKey="61ea0de79ad0ae0839c9ad502c248267"
@@ -92,9 +98,9 @@ export const Search: React.FC = () => {
             getMissingResultsUrl={({query}) =>
               `https://github.com/newscorp-ghfb/newskit/issues/new?title=${query}`
             }
-          />
-        </Layer>
-      )}
+          />,
+          document.body,
+        )}
       <Global
         styles={theme => ({
           html: {
@@ -224,6 +230,7 @@ export const Search: React.FC = () => {
             },
             // No Results
             '.DocSearch-NoResults': {
+              color: 'var(--docsearch-text-color)',
               fontFamily: theme.fonts.fontFamily030.fontFamily,
               fontSize: theme.fonts.fontSize030,
               lineHeight: theme.fonts.fontLineHeight040,

@@ -1812,6 +1812,11 @@
   resolved "https://registry.npmjs.org/@docsearch/css/-/css-3.2.0.tgz"
   integrity sha512-jnNrO2JVYYhj2pP2FomlHIy6220n6mrLn2t9v2/qc+rM7M/fbIcKMgk9ky4RN+L/maUEmteckzg6/PIYoAAXJg==
 
+"@docsearch/css@^3.0.0":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@docsearch/css/-/css-3.2.1.tgz#c05d7818b0e43b42f9efa2d82a11c36606b37b27"
+  integrity sha512-gaP6TxxwQC+K8D6TRx5WULUWKrcbzECOPA2KCVMuI+6C7dNiGUk5yXXzVhc5sld79XKYLnO9DRTI4mjXDYkh+g==
+
 "@docsearch/react@^3.0.0":
   version "3.2.0"
   resolved "https://registry.npmjs.org/@docsearch/react/-/react-3.2.0.tgz"
@@ -3606,11 +3611,6 @@
   integrity sha512-YJth9qa0V/E6/XPH1Jq4BC8uCMmO8V1fKWn8PCvuZcAhMn7q0ez9LW6naQT04UZzjFfAPhyRMZmI2a2rbMlEFA==
   dependencies:
     "@types/trusted-types" "*"
-
-"@types/fg-loadcss@^3.1.1":
-  version "3.1.1"
-  resolved "https://registry.npmjs.org/@types/fg-loadcss/-/fg-loadcss-3.1.1.tgz"
-  integrity sha512-EtY4ddwpeLqlzd1SlU8I6MGGJmKJ4Czd4cTXmNCn3uPVVIO2HnWplozPyMIAm0H1bMChBX+f94vfH3YJx7rH3w==
 
 "@types/file-saver@^2.0.3":
   version "2.0.4"
@@ -8677,11 +8677,6 @@ fd-slicer@~1.1.0:
   integrity sha1-JcfInLH5B3+IkbvmHY85Dq4lbx4=
   dependencies:
     pend "~1.2.0"
-
-fg-loadcss@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/fg-loadcss/-/fg-loadcss-3.1.0.tgz"
-  integrity sha512-UgtXKza8nBUO6UWW4c+MOprRL4W5WbIkzPJafnw6y6f5jhA3FiSZkWz8eXeAeX+mC4A/qq0ByDLiAk6erNARaQ==
 
 figgy-pudding@^3.5.1:
   version "3.5.2"
