@@ -116,39 +116,55 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
     toc="Accessibility"
     introduction={introduction}
   >
-    <Cell xs={12}>
-      <Grid xsRowGutter="space100" xsMargin="space000">
-        <ComponentPageCell>
-          {focusOrder && (
-            <A11yTable columns={['Order', 'Element', 'Role']} {...focusOrder} />
-          )}
+    {(focusOrder ||
+      infoNoticeFocus ||
+      interaction ||
+      aria ||
+      infoNoticeAria) && (
+      <Cell xs={12}>
+        <Grid xsRowGutter="space100" xsMargin="space000">
+          <ComponentPageCell>
+            {focusOrder && (
+              <A11yTable
+                columns={['Order', 'Element', 'Role']}
+                {...focusOrder}
+              />
+            )}
 
-          {infoNoticeFocus && (
-            <Block spaceStack="space090">
-              {renderInfoNotice(infoNoticeFocus, 'Focus order notice', 'Note')}
-            </Block>
-          )}
+            {infoNoticeFocus && (
+              <Block spaceStack="space090">
+                {renderInfoNotice(
+                  infoNoticeFocus,
+                  'Focus order notice',
+                  'Note',
+                )}
+              </Block>
+            )}
 
-          {interaction && (
-            <A11yTable columns={['Command', 'Description']} {...interaction} />
-          )}
+            {interaction && (
+              <A11yTable
+                columns={['Command', 'Description']}
+                {...interaction}
+              />
+            )}
 
-          {aria && (
-            <A11yTable
-              columns={[
-                'Element',
-                'Attribute',
-                'Value',
-                'Description',
-                'User Supplied',
-              ]}
-              {...aria}
-            />
-          )}
+            {aria && (
+              <A11yTable
+                columns={[
+                  'Element',
+                  'Attribute',
+                  'Value',
+                  'Description',
+                  'User Supplied',
+                ]}
+                {...aria}
+              />
+            )}
 
-          {renderInfoNotice(infoNoticeAria, 'WAI Aria notice', 'Note')}
-        </ComponentPageCell>
-      </Grid>
-    </Cell>
+            {renderInfoNotice(infoNoticeAria, 'WAI Aria notice', 'Note')}
+          </ComponentPageCell>
+        </Grid>
+      </Cell>
+    )}
   </CommonSection>
 );
