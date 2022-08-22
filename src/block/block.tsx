@@ -42,4 +42,6 @@ const StyledDiv = styled.div<BlockProps>`
     transitionPreset && getTransitionPresetFromTheme(transitionPreset)};
 `;
 
-export const Block: React.FC<BlockProps> = props => <StyledDiv {...props} />;
+export const Block = React.forwardRef<HTMLDivElement, BlockProps>(
+  ({...props}, ref) => <StyledDiv {...props} ref={ref} />,
+);

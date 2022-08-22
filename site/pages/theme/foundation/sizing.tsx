@@ -1,6 +1,6 @@
 import React from 'react';
-import {newskitLightTheme, InlineMessage, IconFilledInfo} from 'newskit';
-import {MediaList} from '../../../components/media-list';
+import {newskitLightTheme, InlineMessage, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
 import {Table, TableRow} from '../../../components/table';
@@ -15,6 +15,8 @@ import {
   ContentColSpan,
 } from '../../../components/content-structure';
 
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
+
 const sizingRows = getTokenType(newskitLightTheme.sizing, 'sizing').map(
   ({tokenName, tokenValue}) => ({
     value: tokenValue,
@@ -22,61 +24,6 @@ const sizingRows = getTokenType(newskitLightTheme.sizing, 'sizing').map(
     sizeBox: tokenValue,
   }),
 ) as TableRow[];
-
-const featureCardOverrides = {
-  title: {
-    typographyPreset: 'editorialHeadline030',
-  },
-  description: {
-    typographyPreset: 'editorialParagraph020',
-  },
-};
-const {title, description} = featureCardOverrides;
-
-const PRINCIPLE_CARDS = [
-  {
-    media: {
-      src: 'static/theming/foundations/flow.svg',
-      alt: '',
-    },
-    title: 'Flow',
-    description:
-      'Consider the use of size to create a consistent visual rhythm',
-    stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/proportional.svg',
-      alt: '',
-    },
-    title: 'Proportional',
-    description:
-      'Appropriately size interface elements to give more prominence to the content hierarchy',
-    stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/functional.svg',
-      alt: '',
-    },
-    title: 'Functional',
-    description:
-      'Size elements for minimum touch target areas of interactive items to improve usability',
-    stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
-  },
-];
 
 const infoIcon = (
   <IconFilledInfo
@@ -104,17 +51,6 @@ const Sizing = (layoutProps: LayoutProps) => (
     }}
   >
     <ComponentPageCell>
-      <ContentSection sectionName="principles">
-        <ContentPrimary
-          id="principles"
-          toc="Principles"
-          headline="Principles"
-          showSeparator
-        >
-          <MediaList cardType="feature" cards={PRINCIPLE_CARDS} />
-        </ContentPrimary>
-      </ContentSection>
-
       <ContentSection sectionName="overview">
         <ContentPrimary
           id="overview"

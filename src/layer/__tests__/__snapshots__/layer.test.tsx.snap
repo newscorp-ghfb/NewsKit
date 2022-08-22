@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layer add element to body when there is not LayerOrganizer 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      outside the layer
+    </div>
+  </div>
+  <div
+    class="nk-layer"
+  >
+    inside layer
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer add element to default layer LayerOrganizer 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      outside the layer
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer some-class-1 some-class-2"
+    >
+      inside layer
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer add element to most parent layer organizer 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      outside the layer
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer-organizer"
+    >
+      <div
+        class="nk-layer"
+      >
+        layer
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer add zIndex to layer organizer 1`] = `
+<DocumentFragment>
+  <div />
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer-organizer"
+      style="position: absolute; top: 0px; left: 0px; right: 0px; z-index: 100;"
+    >
+      <div
+        class="nk-layer"
+      >
+        layer
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer append layer 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      parent
+      <div
+        class="nk-layer"
+      >
+        Child layer A
+      </div>
+      <div
+        class="nk-layer"
+      >
+        Child layer B
+      </div>
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  />
+</DocumentFragment>
+`;
+
+exports[`Layer append nested layers 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      parent
+      <div
+        class="nk-layer"
+      >
+        Child layer A
+      </div>
+      <div
+        class="nk-layer"
+      >
+        Child layer B
+      </div>
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer multiple layers at same level 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      outside the layer
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      inside layer 1
+    </div>
+    <div
+      class="nk-layer"
+    >
+      inside layer 2
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer nested layers 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      outside the layer
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div>
+        inside layer lvl 1
+      </div>
+      <div
+        class="nk-layer"
+      >
+        nested layer lvl 2
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -967,6 +967,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -994,7 +1027,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -1003,15 +1036,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -1051,6 +1084,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -1106,9 +1147,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -1128,6 +1199,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -1182,6 +1263,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -1256,13 +1342,25 @@ Object {
         "borderColor": "{{colors.interactivePositive030}}",
       },
     },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
       "focus-visible": Object {
@@ -1273,7 +1371,8 @@ Object {
         "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary030}}",
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
         "textDecoration": "underline",
       },
     },
@@ -1782,6 +1881,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -2044,6 +2175,28 @@ Object {
         "transform": "translateY(-100%)",
       },
     },
+    "widthChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+      "enter": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterDone": Object {},
+      "exit": Object {},
+      "exitActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "exitDone": Object {},
+    },
   },
   "typographyPresets": Object {
     "editorialCaption010": Object {
@@ -2075,16 +2228,25 @@ Object {
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap010": Object {
-      "fontSize": "5.625em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize120}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap020": Object {
-      "fontSize": "5.875em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap030": Object {
-      "fontSize": "6em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize140}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
@@ -2264,7 +2426,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -3366,6 +3528,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -3393,7 +3588,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -3402,15 +3597,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -3450,6 +3645,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -3505,9 +3708,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -3527,6 +3760,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -3581,6 +3824,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -3655,13 +3903,25 @@ Object {
         "borderColor": "{{colors.interactivePositive030}}",
       },
     },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
       "focus-visible": Object {
@@ -3672,7 +3932,8 @@ Object {
         "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary030}}",
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
         "textDecoration": "underline",
       },
     },
@@ -4181,6 +4442,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -4443,6 +4736,28 @@ Object {
         "transform": "translateY(-100%)",
       },
     },
+    "widthChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+      "enter": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterDone": Object {},
+      "exit": Object {},
+      "exitActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "exitDone": Object {},
+    },
   },
   "typographyPresets": Object {
     "editorialCaption010": Object {
@@ -4474,16 +4789,25 @@ Object {
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap010": Object {
-      "fontSize": "5.625em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize120}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap020": Object {
-      "fontSize": "5.875em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap030": Object {
-      "fontSize": "6em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize140}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
@@ -4663,7 +4987,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -5768,6 +6092,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -5795,7 +6152,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -5804,15 +6161,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -5852,6 +6209,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -5907,9 +6272,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -5929,6 +6324,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -5983,6 +6388,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -6057,13 +6467,25 @@ Object {
         "borderColor": "{{colors.interactivePositive030}}",
       },
     },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
       "focus-visible": Object {
@@ -6074,7 +6496,8 @@ Object {
         "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary030}}",
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
         "textDecoration": "underline",
       },
     },
@@ -6583,6 +7006,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -6845,6 +7300,28 @@ Object {
         "transform": "translateY(-100%)",
       },
     },
+    "widthChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+      "enter": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterDone": Object {},
+      "exit": Object {},
+      "exitActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "exitDone": Object {},
+    },
   },
   "typographyPresets": Object {
     "editorialCaption010": Object {
@@ -6876,16 +7353,25 @@ Object {
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap010": Object {
-      "fontSize": "5.625em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize120}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap020": Object {
-      "fontSize": "5.875em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap030": Object {
-      "fontSize": "6em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize140}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
@@ -7065,7 +7551,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -8167,6 +8653,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -8194,7 +8713,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -8203,15 +8722,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -8251,6 +8770,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -8306,9 +8833,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -8328,6 +8885,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -8382,6 +8949,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -8456,13 +9028,25 @@ Object {
         "borderColor": "{{colors.interactivePositive030}}",
       },
     },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
       "focus-visible": Object {
@@ -8473,7 +9057,8 @@ Object {
         "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary030}}",
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
         "textDecoration": "underline",
       },
     },
@@ -8982,6 +9567,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -9244,6 +9861,28 @@ Object {
         "transform": "translateY(-100%)",
       },
     },
+    "widthChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+      "enter": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterDone": Object {},
+      "exit": Object {},
+      "exitActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "exitDone": Object {},
+    },
   },
   "typographyPresets": Object {
     "editorialCaption010": Object {
@@ -9275,16 +9914,25 @@ Object {
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap010": Object {
-      "fontSize": "5.625em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize120}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap020": Object {
-      "fontSize": "5.875em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap030": Object {
-      "fontSize": "6em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize140}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
@@ -9464,7 +10112,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -10569,6 +11217,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -10596,7 +11277,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -10605,15 +11286,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -10653,6 +11334,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -10708,9 +11397,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -10730,6 +11449,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -10784,6 +11513,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -10858,13 +11592,25 @@ Object {
         "borderColor": "{{colors.interactivePositive030}}",
       },
     },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
       "focus-visible": Object {
@@ -10875,7 +11621,8 @@ Object {
         "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary030}}",
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
         "textDecoration": "underline",
       },
     },
@@ -11384,6 +12131,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -11646,6 +12425,28 @@ Object {
         "transform": "translateY(-100%)",
       },
     },
+    "widthChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+      "enter": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterDone": Object {},
+      "exit": Object {},
+      "exitActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "exitDone": Object {},
+    },
   },
   "typographyPresets": Object {
     "editorialCaption010": Object {
@@ -11677,16 +12478,25 @@ Object {
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap010": Object {
-      "fontSize": "5.625em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize120}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap020": Object {
-      "fontSize": "5.875em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap030": Object {
-      "fontSize": "6em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize140}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
@@ -11866,7 +12676,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -12968,6 +13778,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -12995,7 +13838,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -13004,15 +13847,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -13052,6 +13895,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -13107,9 +13958,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -13129,6 +14010,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -13183,6 +14074,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -13257,13 +14153,25 @@ Object {
         "borderColor": "{{colors.interactivePositive030}}",
       },
     },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
       "focus-visible": Object {
@@ -13274,7 +14182,8 @@ Object {
         "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary030}}",
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
         "textDecoration": "underline",
       },
     },
@@ -13783,6 +14692,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -14045,6 +14986,28 @@ Object {
         "transform": "translateY(-100%)",
       },
     },
+    "widthChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+      "enter": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterDone": Object {},
+      "exit": Object {},
+      "exitActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "exitDone": Object {},
+    },
   },
   "typographyPresets": Object {
     "editorialCaption010": Object {
@@ -14076,16 +15039,25 @@ Object {
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap010": Object {
-      "fontSize": "5.625em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize120}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap020": Object {
-      "fontSize": "5.875em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap030": Object {
-      "fontSize": "6em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize140}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
@@ -14265,7 +15237,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -15370,6 +16342,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -15397,7 +16402,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -15406,15 +16411,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -15454,6 +16459,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -15509,9 +16522,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -15531,6 +16574,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -15585,6 +16638,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -15659,13 +16717,25 @@ Object {
         "borderColor": "{{colors.interactivePositive030}}",
       },
     },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
       "focus-visible": Object {
@@ -15676,7 +16746,8 @@ Object {
         "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary030}}",
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
         "textDecoration": "underline",
       },
     },
@@ -16185,6 +17256,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -16447,6 +17550,28 @@ Object {
         "transform": "translateY(-100%)",
       },
     },
+    "widthChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+      "enter": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterDone": Object {},
+      "exit": Object {},
+      "exitActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "exitDone": Object {},
+    },
   },
   "typographyPresets": Object {
     "editorialCaption010": Object {
@@ -16478,16 +17603,25 @@ Object {
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap010": Object {
-      "fontSize": "5.625em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize120}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap020": Object {
-      "fontSize": "5.875em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap030": Object {
-      "fontSize": "6em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize140}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
@@ -16667,7 +17801,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -17769,6 +18903,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -17796,7 +18963,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -17805,15 +18972,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -17853,6 +19020,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -17908,9 +19083,39 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
+    "flagSolidBreakingChange": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagSolidInformative": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidMajor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "flagSolidMinor": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -17930,6 +19135,16 @@ Object {
     "flagSolidNotice": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPatch": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkContrast}}",
       },
     },
     "flagSolidPositive": Object {
@@ -17984,6 +19199,11 @@ Object {
         "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "gitHubMarkDownText": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
       },
     },
     "headerNavItem": Object {
@@ -18058,13 +19278,25 @@ Object {
         "borderColor": "{{colors.interactivePositive030}}",
       },
     },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
       "focus-visible": Object {
@@ -18075,7 +19307,8 @@ Object {
         "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary030}}",
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
         "textDecoration": "underline",
       },
     },
@@ -18584,6 +19817,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -18846,6 +20111,28 @@ Object {
         "transform": "translateY(-100%)",
       },
     },
+    "widthChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+      "enter": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "enterDone": Object {},
+      "exit": Object {},
+      "exitActive": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "width",
+      },
+      "exitDone": Object {},
+    },
   },
   "typographyPresets": Object {
     "editorialCaption010": Object {
@@ -18877,16 +20164,25 @@ Object {
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap010": Object {
-      "fontSize": "5.625em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize120}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap020": Object {
-      "fontSize": "5.875em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap030": Object {
-      "fontSize": "6em",
-      "lineHeight": 0.85,
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize140}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
@@ -19066,7 +20362,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },

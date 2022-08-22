@@ -6,4 +6,5 @@ export interface SectionIntroductionProps {
   cellProps?: CellProps;
   image?: ImageProps;
   subHeadingSpaceStack?: MQ<string>;
+  lastItem?: boolean;
 }

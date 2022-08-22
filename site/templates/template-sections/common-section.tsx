@@ -13,6 +13,7 @@ export type CommonSectionProps = {
   id: string;
   toc?: string;
   hideSeparator?: boolean;
+  lastItem?: boolean;
   media?: ImageProps | JSX.Element | React.ComponentType;
 };
 
@@ -24,17 +25,18 @@ export const CommonSection: React.FC<CommonSectionProps> = ({
   toc,
   media,
   hideSeparator,
+  lastItem,
 }) => (
   <>
     <Cell xs={12}>
       <StyledSection id={id} data-toc-indexed={toc || title}>
         <Grid xsMargin="space000" xsRowGutter="space000">
           <SectionIntroduction
-            subHeadingSpaceStack={{
-              xs: 'space080',
-              lg: 'space100',
-            }}
+            subHeadingSpaceStack={
+              children ? {xs: 'space080', lg: 'space100'} : 'space000'
+            }
             title={title}
+            lastItem={lastItem}
           >
             {introduction}
           </SectionIntroduction>

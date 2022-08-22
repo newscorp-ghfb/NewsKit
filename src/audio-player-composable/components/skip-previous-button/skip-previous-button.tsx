@@ -9,33 +9,32 @@ import {AudioPlayerSkipPreviousButtonProps} from './types';
 
 const defaultKeyboardShortcuts = ['shift + p'];
 
-const ThemelessAudioPlayerSkipPreviousButton: React.FC<AudioPlayerSkipPreviousButtonProps> = React.memo(
-  props => {
-    const {getSkipPreviousButtonProps} = useAudioPlayerContext();
+const ThemelessAudioPlayerSkipPreviousButton = React.forwardRef<
+  HTMLButtonElement,
+  AudioPlayerSkipPreviousButtonProps
+>(({...props}, ref) => {
+  const {getSkipPreviousButtonProps} = useAudioPlayerContext();
 
-    const overrides = useButtonOverrides(
-      props,
-      'audioPlayerSkipPreviousButton',
-    );
+  const overrides = useButtonOverrides(props, 'audioPlayerSkipPreviousButton');
 
-    const propsFromContext =
-      getSkipPreviousButtonProps! && getSkipPreviousButtonProps(props);
+  const propsFromContext =
+    getSkipPreviousButtonProps! && getSkipPreviousButtonProps(props);
 
-    useKeyboardShortcutsOnButton({
-      props: propsFromContext as AudioPlayerSkipPreviousButtonProps,
-      defaults: defaultKeyboardShortcuts,
-    });
+  useKeyboardShortcutsOnButton({
+    props: propsFromContext as AudioPlayerSkipPreviousButtonProps,
+    defaults: defaultKeyboardShortcuts,
+  });
 
-    return (
-      <IconButton
-        data-testid="audio-player-skip-previous-button"
-        size={ButtonSize.Medium}
-        overrides={overrides}
-        {...propsFromContext}
-      />
-    );
-  },
-);
+  return (
+    <IconButton
+      ref={ref}
+      data-testid="audio-player-skip-previous-button"
+      size={ButtonSize.Medium}
+      overrides={overrides}
+      {...propsFromContext}
+    />
+  );
+});
 
 export const AudioPlayerSkipPreviousButton = withOwnTheme(
   ThemelessAudioPlayerSkipPreviousButton,

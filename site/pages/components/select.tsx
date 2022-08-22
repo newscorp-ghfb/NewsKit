@@ -310,7 +310,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       rows: [
         {
           name: 'Input Container',
-          description: 'Interactable input area',
+          description: 'Interactive input area',
           component: ['HTML Input', 'Block'],
           optional: undefined,
         },
@@ -323,9 +323,19 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Input & Placeholder Text',
-          description:
-            'Input text - a value the user has entered into a input. Placeholder text - a short hint that describes the expected value of an input',
-          component: 'Text block',
+          description: (
+            <>
+              Input text - a value the user has entered into an input.
+              <br />
+              <br />
+              Placeholder text - a short hint that describes the expected value
+              of an input
+            </>
+          ),
+          component: [
+            'Text Block (input)',
+            'HTML attribute (placeholder text)',
+          ],
           optional: undefined,
         },
         {
@@ -871,22 +881,8 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      performance: true,
-      seo: true,
-      props: true,
-      uiKit: false,
-      design: true,
-      themes: true,
-    }}
     related={{
-      introduction: '',
-      related: ['Form'],
+      related: ['Button', 'Checkbox', 'Form', 'Text Field'],
     }}
   />
 );

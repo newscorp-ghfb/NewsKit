@@ -635,21 +635,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      introduction: '',
-      related: ['Modal', 'Menu'],
-    }}
-    compliance={{
-      states: true,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      performance: false,
-      design: true,
-      props: true,
-      uiKit: true,
+      related: ['Block', 'Divider', 'Modal', 'Popover'],
     }}
   />
 );

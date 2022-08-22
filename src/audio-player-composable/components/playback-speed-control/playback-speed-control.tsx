@@ -13,79 +13,98 @@ import {PlaybackSpeedList} from './playback-speed-list';
 import {Popover} from '../../../popover';
 import {iconButtonOverrides, popoverOverrides, modalOverrides} from './utils';
 import {ButtonSize} from '../../../button';
-import {withMediaQueryProvider} from '../../../utils/hooks/use-media-query/context';
 
-const ThemelessAudioPlayerPlaybackSpeedControl: React.FC<AudioPlayerPlaybackSpeedControlProps> = React.memo(
-  props => {
-    const theme = useTheme();
+const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
+  HTMLHeadingElement,
+  AudioPlayerPlaybackSpeedControlProps
+>((props, ref) => {
+  const theme = useTheme();
 
-    const {getPlaybackSpeedControlProps} = useAudioPlayerContext();
-    const {
-      overrides,
-      onChange: setSpeed,
-      useModal,
-      playbackSpeed,
-      buttonSize = ButtonSize.Medium,
-    } = getPlaybackSpeedControlProps!(props);
+  const {getPlaybackSpeedControlProps} = useAudioPlayerContext();
+  const {
+    overrides,
+    onChange: setSpeed,
+    useModal,
+    playbackSpeed,
+    buttonSize = ButtonSize.Medium,
+  } = getPlaybackSpeedControlProps!(props);
 
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const renderInModal = checkBreakpointProp(useModal, useBreakpointKey());
-    const selectedOptionRef = useRef<HTMLButtonElement>(null);
+  const renderInModal = checkBreakpointProp(useModal, useBreakpointKey());
+  const selectedOptionRef = useRef<HTMLButtonElement>(null);
 
-    const playbackSpeedList = (
-      <PlaybackSpeedList
-        isInsideModal={renderInModal}
-        selectedOptionRef={selectedOptionRef}
-        playbackSpeed={playbackSpeed}
-        updateSpeed={setSpeed}
-        setIsOpen={setIsOpen}
-        overrides={overrides}
-        theme={theme}
-      />
-    );
+  const playbackSpeedList = (
+    <PlaybackSpeedList
+      isInsideModal={renderInModal}
+      selectedOptionRef={selectedOptionRef}
+      playbackSpeed={playbackSpeed}
+      updateSpeed={setSpeed}
+      setIsOpen={setIsOpen}
+      overrides={overrides}
+      theme={theme}
+    />
+  );
 
-    const dismissHandler = useCallback(() => {
-      setIsOpen(false);
-    }, []);
+  const dismissHandler = useCallback(() => {
+    setIsOpen(false);
+  }, []);
 
-    return (
-      <>
-        <Popover
-          open={isOpen && !renderInModal}
-          content={playbackSpeedList}
-          header={undefined}
-          closePosition="none"
-          onDismiss={dismissHandler}
-          enableDismiss
-          focusElementRef={selectedOptionRef}
-          overrides={popoverOverrides(theme, overrides)}
-        >
+  const toggleOpen = useCallback(() => {
+    setIsOpen(open => !open);
+  }, []);
+
+  return (
+    <>
+      <Popover
+        ref={ref}
+        open={isOpen && !renderInModal}
+        content={playbackSpeedList}
+        header={undefined}
+        closePosition="none"
+        onDismiss={dismissHandler}
+        enableDismiss
+        focusElementRef={selectedOptionRef}
+        overrides={popoverOverrides(theme, overrides)}
+      >
+        {props.children ? (
+          // If there are children, trigger the open state
+          // on click and pass the original onClick handler
+          React.cloneElement(props.children, {
+            onClick: () => {
+              toggleOpen();
+              /* istanbul ignore next */
+              if (props.children?.props?.onClick) {
+                props.children.props.onClick();
+              }
+            },
+          })
+        ) : (
           <IconButton
             aria-label="playback speed"
             data-testid="audio-player-playback-speed-control"
             overrides={iconButtonOverrides(theme, overrides)}
-            onClick={() => setIsOpen(open => !open)}
+            onClick={toggleOpen}
             size={buttonSize}
           >
             <IconFilledSlowMotionVideo />
           </IconButton>
-        </Popover>
-
-        {renderInModal && (
-          <Modal
-            open={isOpen}
-            onDismiss={dismissHandler}
-            overrides={modalOverrides(theme, overrides)}
-          >
-            {playbackSpeedList}
-          </Modal>
         )}
-      </>
-    );
-  },
-);
+      </Popover>
 
-export const AudioPlayerPlaybackSpeedControl = withMediaQueryProvider(
-  withOwnTheme(ThemelessAudioPlayerPlaybackSpeedControl)({defaults}),
-);
+      {renderInModal && (
+        <Modal
+          open={isOpen}
+          onDismiss={dismissHandler}
+          overrides={modalOverrides(theme, overrides)}
+        >
+          {playbackSpeedList}
+        </Modal>
+      )}
+    </>
+  );
+});
+
+export const AudioPlayerPlaybackSpeedControl = withOwnTheme(
+  ThemelessAudioPlayerPlaybackSpeedControl,
+)({defaults});

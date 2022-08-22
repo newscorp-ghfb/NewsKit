@@ -170,27 +170,8 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: false,
-      behaviours: true,
-      usage: true,
-      accessibility: false,
-      seo: false,
-      props: true,
-      performance: false,
-      uiKit: true,
-      design: true,
-      themes: true,
-    }}
     related={{
-      introduction: '',
-      related: ['Block', 'Stack'],
-    }}
-    featureCard={{
-      title: 'Need Help?',
-      description: 'Cant find what you are looking for?',
-      href: '/about/contact-us/',
+      related: ['Block', 'Drawer', 'Modal', 'Structured List'],
     }}
   />
 );

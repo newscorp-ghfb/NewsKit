@@ -1,15 +1,19 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import MatchMediaMock from 'jest-matchmedia-mock';
-import {act} from '@testing-library/react';
+import {act, render} from '@testing-library/react';
 import {renderWithTheme} from '../../../../test/test-utils';
 import {
   useMediaQueryObject,
   MediaQueryProvider,
   useBreakpointKey,
 } from '../index';
-import {MQContext} from '../context';
-import {BreakpointKeys} from '../../../../theme';
+import {MQContext, withMediaQueryProvider} from '../context';
+import {
+  BreakpointKeys,
+  newskitLightTheme,
+  ThemeProvider,
+} from '../../../../theme';
 import {MQ} from '../../../style/types';
 
 const MockMediaQueryProvider = ({
@@ -185,5 +189,22 @@ describe('MediaQueryProvider', () => {
 
     const child1 = getByText('sm');
     expect(child1).toBeDefined();
+  });
+
+  it('adds provider to component via withMediaQueryProvider', () => {
+    const ComponentWithProvider = withMediaQueryProvider(
+      TestComponentUseBreakpointKey,
+    );
+
+    // we use render here because we don't want to use the default MediaQueryProvider
+    // that comes with NewsKitProvider which a is part of renderWithTheme
+    const {getByText} = render(<ComponentWithProvider />, {
+      wrapper: ({children}) => (
+        <ThemeProvider theme={newskitLightTheme}>{children}</ThemeProvider>
+      ),
+    });
+
+    const child = getByText('sm');
+    expect(child).toBeDefined();
   });
 });

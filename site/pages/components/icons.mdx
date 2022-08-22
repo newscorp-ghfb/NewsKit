@@ -6,15 +6,7 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Code} from '../../components/code';
 import {CommonLogicalMarginPropsMDX} from '../../components/component-api/common-logical-props';
-
-import {
-  IconFilledFacebook,
-  IconFilledGitHub,
-  IconFilledTwitter,
-  IconFilledWhatsApp,
-  IconFilledYoutube,
-  IconFilledFigma,
-} from 'newskit';
+import {InlineMessage, Link} from 'newskit';
 
 export default Layout;
 
@@ -22,96 +14,42 @@ export default Layout;
 
 ## Overview
 
-Icons are small SVG shapes, ranging from basic UI shapes to brand logos. NewsKit contains a default set but any of these can be overriden by providing a React component in the icons section of your theme.
+Icons are small SVG shapes, ranging from basic UI shapes to brand logos. NewsKit provides utility functions to create themably icons from SVG files or <Link href="https://emotion-icons.dev/" target="_blank">emotion-icons</Link>.
 
 ### Usage
 
 Icons can be used to enhance other elements and content, as well as used inside links or buttons when space is limited.
 
-### Available Icons
+## Importing Emotion icons
 
-| Name                   |                        Preview
-| ---------------------- | :---------------------------------------------------------------------------: |
-| IconFilledYoutube      |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledYoutube} />    |
-| IconFilledGitHub       |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledGitHub}/>      |
-| IconFilledFacebook     |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledFacebook} />   |
-| IconFilledTwitter      |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledTwitter} />    |
-| IconFilledWhatsApp     |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledWhatsApp} />   |
-| IconFilledFigma        |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledFigma} />      |
+<InlineMessage
+  title="Breaking Change"
+  overrides={{stylPreset: 'inlineMessageNegative'}}
+>
+  From version 6 we do not export emotion icons as part of newskit library.
+</InlineMessage>
 
-## Props
+In order to continue using icons from Emotion, you will need to import them directly from the `emotion-icons` package and convert them to NewsKit icons using the toNewsKitIcon utility function.
 
-Icons must have a size specified, and some also support an optional colour override.
+You can find the list of available icons on the <Link href="https://emotion-icons.dev/" target="_blank">emotion-icons.dev</Link> page.
 
-<LegacyBlock marginTop="sizing040">
-  <Prop name="title" type="string">
-    This optional prop adds title to the svg image in order to make it
-    accessible and visible for screen readers. If your icon is just decorative
-    and not part of the content this prop can be ommited, otherwise it should be
-    passed.
-  </Prop>
-  <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided
-    elements.
-    <Prop name="stylePreset" type="MQ<string>">
-      If provided, this overrides the style preset applied to the svg.
-    </Prop>
-    <Prop name="size" type="MQ<string>">
-      If provided, this overrides the size of the icon.
-    </Prop>
-    <CommonLogicalMarginPropsMDX nested />
-  </Prop>
-</LegacyBlock>
+The following example shows how to convert an emotion icon to a NewsKit icon:
 
-## Playground
+<Code>
+  {`
+    import {toNewsKitIcon} from 'newskit';
+    import {AccountTree} from '@emotion-icons/material/AccountTree';
+    const IconFilledAccountTree = toNewsKitIcon(AccountTree);
+  `}
+</Code>
 
-<Playground
-  componentName={['Facebook', 'Twitter', 'WhatsApp', 'Github']}
-  component={[
-    IconFilledFacebook,
-    IconFilledTwitter,
-    IconFilledWhatsApp,
-    IconFilledGitHub,
-  ]}
-  knobs={[
-    {
-      name: 'Size',
-      propName: 'overrides',
-      options: [
-        {
-          label: 'iconSize020',
-          value: {
-            size: 'iconSize020',
-          },
-        },
-        {
-          label: 'iconSize030',
-          value: {
-            size: 'iconSize030',
-          },
-        },
-        {
-          label: 'iconSize040',
-          value: {
-            size: 'iconSize040',
-          },
-          isDefault: true,
-        },
-        {
-          label: 'iconSize050',
-          value: {
-            size: 'iconSize050',
-          },
-        },
-      ],
-    },
-  ]}
-/>
-
-## Create NewsKit icons
+## Creating NewsKit icons
 
 With the help of the <a href="/components/utils/custom-to-newskit-icon">`customToNewsKitIcon`</a> util function, each SVG icon can be easily turned into a Newskit icon that works well
 with theme tokens and <a href="/components/utils/get-from-theme">`getFromTheme`</a> util functions. The only requirement is to wrap the SVG markup within an `Svg` component and pass props to it.
+
+With the help of the <a href="/components/utils/custom-to-newskit-icon">`customToNewsKitIcon`</a> util function, each SVG icon can be easily turned into a Newskit icon that works well with theme tokens and <a href="/components/utils/get-from-theme">`getFromTheme`</a> functions.
+The only requirement is to wrap the `SVG` markup within an Svg component and pass props to it.
 
 The following example shows how the SVG component should be used:
 
@@ -143,6 +81,30 @@ export const IconFilledFacebook = customToNewsKitIcon(
 );
  `}
 </Code>
+
+## Props
+
+Icons must have a size specified, and some also support an optional colour override.
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="title" type="string">
+    This optional prop adds title to the svg image in order to make it
+    accessible and visible for screen readers. If your icon is just decorative
+    and not part of the content this prop can be ommited, otherwise it should be
+    passed.
+  </Prop>
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided
+    elements.
+    <Prop name="stylePreset" type="MQ<string>">
+      If provided, this overrides the style preset applied to the svg.
+    </Prop>
+    <Prop name="size" type="MQ<string>">
+      If provided, this overrides the size of the icon.
+    </Prop>
+    <CommonLogicalMarginPropsMDX nested />
+  </Prop>
+</LegacyBlock>
 
 ## Rationale
 

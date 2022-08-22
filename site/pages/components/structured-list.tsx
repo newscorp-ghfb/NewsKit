@@ -2,16 +2,17 @@ import React from 'react';
 import {
   Block,
   Flow,
-  IconOutlinedArrowForwardIos,
   InlineMessage,
-  IconFilledInfo,
   Stack,
   StackDistribution,
   StructuredListCell,
   StructuredListItem,
   StructuredList,
   TextBlock,
+  toNewsKitIcon,
 } from 'newskit';
+import {ArrowForwardIos as OutlinedArrowForwardIos} from '@emotion-icons/material-outlined/ArrowForwardIos';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
 import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
@@ -22,6 +23,9 @@ import {
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
+
+const IconOutlinedArrowForwardIos = toNewsKitIcon(OutlinedArrowForwardIos);
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const infoIcon = (
   <IconFilledInfo
@@ -535,22 +539,8 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      props: true,
-      performance: false,
-      design: true,
-      uiKit: false,
-      themes: true,
-    }}
     related={{
-      introduction: '',
-      related: ['Grid', 'Block'],
+      related: ['Block', 'Divider', 'Grid'],
     }}
   />
 );

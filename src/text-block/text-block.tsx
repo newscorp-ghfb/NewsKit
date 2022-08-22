@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   styled,
   getStylePresetFromTheme,
@@ -20,4 +21,6 @@ const StyledTextBlock = styled.p<TextBlockProps>`
   ${logicalProps()}
 `;
 
-export {StyledTextBlock as TextBlock};
+export const TextBlock = React.forwardRef<HTMLParagraphElement, TextBlockProps>(
+  ({...props}, ref) => <StyledTextBlock {...props} ref={ref} />,
+);

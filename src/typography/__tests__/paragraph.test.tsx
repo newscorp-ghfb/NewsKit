@@ -69,6 +69,22 @@ describe('Paragraph', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  test('renders with dropCap logical props', () => {
+    const wrapper = renderToFragmentWithTheme(Paragraph, {
+      children: 'dropcap with logical props',
+      dropCap: true,
+      overrides: {
+        dropCap: {
+          paddingInline: 'space020',
+          paddingBlock: 'space020',
+          marginBlock: 'space020',
+          marginInline: 'space020',
+        },
+      },
+    } as ParagraphProps);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   test('does not render dropCap when first children is not plain text', () => {
     const wrapper = renderToFragmentWithTheme(Paragraph, {
       children: (
