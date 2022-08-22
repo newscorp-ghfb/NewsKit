@@ -6,10 +6,10 @@
     "react",
     "newsuk"
   ],
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "index.js",
   "types": "index.d.ts",
-  "repository": "",
+  "repository": "https://github.com/newscorp-ghfb/newskit.git",
   "sideEffects": false,
   "engines": {
     "node": ">=16.9.1"
