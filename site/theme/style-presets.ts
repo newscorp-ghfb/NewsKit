@@ -1,5 +1,3 @@
-import {defaultFocusVisible} from '../../src/utils/default-focus-visible';
-
 export const stylePresets = {
   buttonOutlinedSecondary: {
     base: {
@@ -1067,20 +1065,10 @@ export const stylePresets = {
       color: '{{colors.inkBase}}',
     },
   },
-  tagKeepInTouch: {
-    base: {
-      backgroundColor: '{{colors.transparent}}',
-      color: '{{colors.interactiveInput040}}',
-      iconColor: '{{colors.interactiveInput040}}',
-    },
-    active: {
-      borderWidth: '{{borders.borderWidth010}}',
-    },
-    'focus-visible': defaultFocusVisible,
-  },
   keepInTouchLink: {
     base: {
       color: '{{colors.interactiveInput040}}',
+      iconColor: '{{colors.interactiveInput040}}',
       textDecoration: 'none',
     },
     hover: {
