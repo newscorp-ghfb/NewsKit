@@ -170,33 +170,8 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: false,
-      behaviours: true,
-      usage: true,
-      accessibility: false,
-      seo: false,
-      props: true,
-      performance: false,
-      uiKit: true,
-      design: true,
-      themes: true,
-    }}
     related={{
-      related: [
-        'Block',
-        'Card',
-        'Drawer',
-        'Fieldset',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Popover',
-        'Stack',
-        'Structured List',
-        'Visibility',
-      ],
+      related: ['Block', 'Drawer', 'Modal', 'Structured List'],
     }}
   />
 );

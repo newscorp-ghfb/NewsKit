@@ -303,29 +303,8 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: false,
-      props: true,
-      performance: false,
-      design: true,
-      uiKit: true,
-      themes: true,
-    }}
     related={{
-      related: [
-        'Button',
-        'Checkbox',
-        'Form',
-        'Radio Button',
-        'Select',
-        'Slider',
-        'Text Field',
-      ],
+      related: ['Button'],
     }}
   />
 );
