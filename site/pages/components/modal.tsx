@@ -184,27 +184,29 @@ const ModalComponent = (layoutProps: LayoutProps) => (
               <UnorderedList
                 markerAlign="start"
                 overrides={{
+                  content: {
+                    typographyPreset: 'editorialParagraph010',
+                  },
                   marker: {
                     spaceInline: 'space030',
                   },
                 }}
               >
-                <P overrides={{typographyPreset: 'editorialParagraph010'}}>
+                <>
                   <b>xs/sm</b>
                   <br />
                   the Modal is positioned in the centre of the screen, with any
                   content passed to the Modal panel causing it to grow from the
                   centre until the max height is reached.
-                </P>
-
-                <P overrides={{typographyPreset: 'editorialParagraph010'}}>
+                </>
+                <>
                   <b>md/lg/xl</b>
                   <br />
                   the Modal is positioned horizontally in the centre of the
                   screen, with the Modal positioned vertically offset from the
                   top of the screen, with any content passed to the Modal panel
                   causing it to grow downwards until the max height is reached.
-                </P>
+                </>
               </UnorderedList>
             </>
           ),
@@ -442,25 +444,24 @@ const ModalComponent = (layoutProps: LayoutProps) => (
             markerAlign="start"
             overrides={{
               marginBlockStart: 'space030',
+              spaceStack: 'space050',
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
               marker: {
                 spaceInline: 'space030',
               },
             }}
           >
-            <P
-              overrides={{
-                typographyPreset: 'editorialParagraph030',
-                marginBlockEnd: 'space030',
-              }}
-            >
+            <>
               Ensure all text, icons, and images are visible in the Modal so
               that information can be crawled and indexed.
-            </P>
+            </>
 
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            <>
               The Modal component and its content are rendered to the DOM, but
               only visible to the user when the Modal is open.
-            </P>
+            </>
           </UnorderedList>
         </>
       ),
