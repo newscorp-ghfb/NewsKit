@@ -22,7 +22,7 @@ interface CommonProps extends TableRow {
   type: string | string[];
   description: string | JSX.Element;
   default?: string | string[];
-  required?: boolean;
+  required?: boolean | null;
 }
 
 export interface PropsRowsProps extends CommonProps {
