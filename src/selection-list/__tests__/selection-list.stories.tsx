@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useState} from 'react';
 import {IconFilledAdd} from '../../icons';
-import {Flow, Stack, StackDistribution} from '../../stack';
+import {Stack} from '../../stack';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -26,10 +26,7 @@ export const StorySelectionList = () => {
   return (
     <>
       <StorybookHeading>Selection List</StorybookHeading>
-      <Stack
-        stackDistribution={StackDistribution.SpaceBetween}
-        flow={Flow.HorizontalTop}
-      >
+      <Stack stackDistribution="space-between" flow="horizontal-top">
         <Container>
           <StorybookSubHeading>
             Selected option (interactive)
@@ -87,10 +84,7 @@ export const StorySelectionListWithOverrides = () => {
   return (
     <div>
       <StorybookHeading>Selection List With Overrides</StorybookHeading>
-      <Stack
-        stackDistribution={StackDistribution.SpaceBetween}
-        flow={Flow.HorizontalTop}
-      >
+      <Stack stackDistribution="space-between" flow="horizontal-top">
         <Container>
           <StorybookSubHeading>Options overrides</StorybookSubHeading>
           <SelectionList>
@@ -160,10 +154,7 @@ StorySelectionListWithOverrides.storyName = 'selection-list-with-overrides';
 export const StorySelectionListWithLogicalProps = () => (
   <>
     <StorybookHeading>Selection List With Logical Props</StorybookHeading>
-    <Stack
-      stackDistribution={StackDistribution.SpaceBetween}
-      flow={Flow.HorizontalTop}
-    >
+    <Stack stackDistribution="space-between" flow="horizontal-top">
       <Container>
         <StorybookSubHeading>Logical Props overrides (all)</StorybookSubHeading>
         <SelectionList

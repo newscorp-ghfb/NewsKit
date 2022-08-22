@@ -9,7 +9,7 @@ import React, {
 import {getTrackBackground} from 'react-range';
 import {ControlPanel, PopoutButton} from './controls';
 import {Slider, SliderProps} from '../slider';
-import {Stack, StackDistribution, Flow} from '../stack';
+import {Stack, StackDistribution} from '../stack';
 import {PlayerGrid, ControlContainer, PlayerContainer} from './styled';
 import {VolumeControl} from '../volume-control';
 import {Cell} from '../grid/cell';
@@ -22,7 +22,6 @@ import {
 import {StyledTrack} from '../slider/styled';
 import {useTheme, Devices} from '../theme';
 import {getSingleStylePreset} from '../utils/style';
-import {LabelPosition} from '../slider/types';
 import {AudioEvents, AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
 import {StackChild} from '../stack-child';
@@ -263,7 +262,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
 
         <Cell xsOrder={2} xs={12}>
           <Stack
-            flow={Flow.HorizontalCenter}
+            flow="horizontal-center"
             stackDistribution={StackDistribution.SpaceBetween}
           >
             <StackChild order={2}>
@@ -316,7 +315,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
                 targetDevices={[Devices.iPadPro, Devices.iPad]}
               >
                 <Stack
-                  flow={Flow.VerticalRight}
+                  flow="vertical-right"
                   stackDistribution={StackDistribution.End}
                 >
                   {popoutHref && (
@@ -350,7 +349,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
               )} of ${seekBarAriaValueText([duration])}`}
               onChange={onChangeSlider}
               renderTrack={renderTrack}
-              labelPosition={LabelPosition.After}
+              labelPosition="after"
               dataTestId="audio-slider"
               ariaDescribedBy={srOnlyForwardRewind}
               overrides={{

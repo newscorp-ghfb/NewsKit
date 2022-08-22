@@ -6,7 +6,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {Grid, Cell, Visible} from '../../grid';
-import {Stack, Flow} from '../../stack';
+import {Stack} from '../../stack';
 import {Tag, TagSize} from '../../tag';
 import {Flag} from '../../flag';
 import {Headline} from '../../headline';
@@ -162,7 +162,7 @@ const VideoElement = ({width = 'auto', height = 'auto'}) => (
 );
 
 const cardTags = (size: TagSize) => ({cardSize}: {cardSize: string}) => () => (
-  <Stack flow={Flow.HorizontalCenter} spaceInline={cardActions}>
+  <Stack flow="horizontal-center" spaceInline={cardActions}>
     <Tag
       size={size}
       href="/"
