@@ -11,6 +11,7 @@ export const Mono: React.FC<MonoProps> = ({overrides, children, ...props}) => (
       ...overrides,
     }}
     size="small"
+    as="span"
   >
     {children}
   </Flag>
