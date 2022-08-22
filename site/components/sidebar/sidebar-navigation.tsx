@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
-import {useRouter} from 'next/router';
 import {Block, Menu, MenuDivider, MenuItem} from 'newskit';
+import {useRouter} from 'next/router';
 import routes from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
 import {MenuMobileCollapsible} from '../menu-collapsible/menu-collapsible';
@@ -49,14 +49,9 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
             {page ? (
               <>
                 {indexPage ? undefined : (
-                  <>
-                    <MenuTitleLinks
-                      active={path.includes(id)}
-                      href={id.substring(1)}
-                    >
-                      {title}
-                    </MenuTitleLinks>
-                  </>
+                  <MenuTitleLinks active={path === id} href={id.substring(1)}>
+                    {title}
+                  </MenuTitleLinks>
                 )}
               </>
             ) : (
@@ -94,20 +89,18 @@ const MenuDesktop = ({path}: {path: string}) => {
     currentRoute && routes.filter(({id}) => id === currentRoute[0]);
 
   return (
-    <>
-      <Menu
-        aria-label="menu-sidebar"
-        vertical
-        size="small"
-        align="start"
-        overrides={{spaceInline: 'space000'}}
-      >
-        {currentSection &&
-          currentSection.map(({subNav, id}) => (
-            <SiteMenuItem menuItemList={subNav} key={id} />
-          ))}
-      </Menu>
-    </>
+    <Menu
+      aria-label="menu-sidebar"
+      vertical
+      size="small"
+      align="start"
+      overrides={{spaceInline: 'space000'}}
+    >
+      {currentSection &&
+        currentSection.map(({subNav, id}) => (
+          <SiteMenuItem menuItemList={subNav} key={id} />
+        ))}
+    </Menu>
   );
 };
 
