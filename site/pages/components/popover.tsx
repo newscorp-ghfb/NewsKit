@@ -815,33 +815,8 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      states: true,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      performance: false,
-      design: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
-      related: [
-        'Block',
-        'Card',
-        'Divider',
-        'Drawer',
-        'Fieldset',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Stack',
-        'Structured List',
-        'Visibility',
-      ],
+      related: ['Block', 'Divider', 'Drawer', 'Modal'],
     }}
   />
 );
