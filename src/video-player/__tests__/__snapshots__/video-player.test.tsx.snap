@@ -49,6 +49,255 @@ exports[`Video Player renders video player with logical props 1`] = `
   background-color: rgba(10,10,10,0.2);
 }
 
+.emotion-0 .video-js .vjs-load-progress {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.emotion-0 .video-js .vjs-load-progress div {
+  background: none;
+}
+
+.emotion-0 .video-js .vjs-play-progress {
+  background-color: #3358CC;
+}
+
+.emotion-0 .video-js .vjs-play-progress .vjs-time-tooltip {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #0A0A0A;
+}
+
+.emotion-0 .video-js .vjs-time-tooltip {
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 8px;
+}
+
+.emotion-0 .video-js .vjs-progress-control .vjs-mouse-display {
+  background-color: #3358CC;
+  width: 2px;
+}
+
+.emotion-0 .video-js .vjs-progress-control .vjs-mouse-display .vjs-time-tooltip {
+  background-color: #0A0A0A;
+  border-style: solid;
+  border-color: #0A0A0A;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-control-bar {
+  background-color: rgba(10,10,10,0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-control-bar {
+    font-family: "DM Sans",sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-control-bar {
+    font-family: "DM Sans",sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-control-bar {
+    max-height: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-control-bar {
+    max-height: 48px;
+  }
+}
+
+.emotion-0 .video-js .vjs-time-control {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-0 .video-js .vjs-time-control svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-current-time {
+  margin-right: 4px;
+}
+
+.emotion-0 .video-js .vjs-time-divider {
+  margin-right: 4px;
+}
+
+.emotion-0 .video-js .vjs-volume-panel-horizontal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 .video-js .vjs-volume-bar {
+  background-color: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-volume-level {
+  background-color: #3358CC;
+}
+
+.emotion-0 .video-js .vjs-control {
+  color: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-control svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-dock-text {
+  background: none;
+  background-image: linear-gradient(0deg, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 100%);
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-dock-text {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-dock-text {
+    padding: 24px;
+  }
+}
+
+.emotion-0 .video-js .vjs-dock-title {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-dock-title {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    line-height: 1.125;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-dock-title {
+    font-family: "Poppins",sans-serif;
+    font-size: 22px;
+    line-height: 1.125;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-dock-title {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-dock-title {
+    margin-bottom: 12px;
+  }
+}
+
+.emotion-0 .video-js .vjs-dock-description {
+  color: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-dock-description svg {
+  fill: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-dock-description {
+    font-family: "DM Sans",sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-dock-description {
+    font-family: "DM Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+
+.emotion-0 .video-js .vjs-next-overlay-banner {
+  background-color: #2E2E2E;
+  padding: 8px 12px;
+}
+
+.emotion-0 .video-js .vjs-next-overlay-countdown {
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.emotion-0 .video-js .vjs-next-overlay-countdown svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-next-overlay-name {
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-next-overlay-name svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-next-overlay .vjs-close-button {
+  padding: 4px;
+}
+
 <div
     class="emotion-0"
   >
@@ -80,6 +329,255 @@ exports[`Video Player renders video player with overriden play button style 1`] 
 .emotion-0 .video-js .vjs-progress-holder {
   width: 100%;
   background-color: rgba(10,10,10,0.2);
+}
+
+.emotion-0 .video-js .vjs-load-progress {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.emotion-0 .video-js .vjs-load-progress div {
+  background: none;
+}
+
+.emotion-0 .video-js .vjs-play-progress {
+  background-color: #3358CC;
+}
+
+.emotion-0 .video-js .vjs-play-progress .vjs-time-tooltip {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #0A0A0A;
+}
+
+.emotion-0 .video-js .vjs-time-tooltip {
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 8px;
+}
+
+.emotion-0 .video-js .vjs-progress-control .vjs-mouse-display {
+  background-color: #3358CC;
+  width: 2px;
+}
+
+.emotion-0 .video-js .vjs-progress-control .vjs-mouse-display .vjs-time-tooltip {
+  background-color: #0A0A0A;
+  border-style: solid;
+  border-color: #0A0A0A;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-control-bar {
+  background-color: rgba(10,10,10,0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-control-bar {
+    font-family: "DM Sans",sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-control-bar {
+    font-family: "DM Sans",sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-control-bar {
+    max-height: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-control-bar {
+    max-height: 48px;
+  }
+}
+
+.emotion-0 .video-js .vjs-time-control {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-0 .video-js .vjs-time-control svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-current-time {
+  margin-right: 4px;
+}
+
+.emotion-0 .video-js .vjs-time-divider {
+  margin-right: 4px;
+}
+
+.emotion-0 .video-js .vjs-volume-panel-horizontal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 .video-js .vjs-volume-bar {
+  background-color: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-volume-level {
+  background-color: #3358CC;
+}
+
+.emotion-0 .video-js .vjs-control {
+  color: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-control svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-dock-text {
+  background: none;
+  background-image: linear-gradient(0deg, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 100%);
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-dock-text {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-dock-text {
+    padding: 24px;
+  }
+}
+
+.emotion-0 .video-js .vjs-dock-title {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-dock-title {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    line-height: 1.125;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-dock-title {
+    font-family: "Poppins",sans-serif;
+    font-size: 22px;
+    line-height: 1.125;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-dock-title {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-dock-title {
+    margin-bottom: 12px;
+  }
+}
+
+.emotion-0 .video-js .vjs-dock-description {
+  color: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-dock-description svg {
+  fill: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 .video-js .vjs-dock-description {
+    font-family: "DM Sans",sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 .video-js .vjs-dock-description {
+    font-family: "DM Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+
+.emotion-0 .video-js .vjs-next-overlay-banner {
+  background-color: #2E2E2E;
+  padding: 8px 12px;
+}
+
+.emotion-0 .video-js .vjs-next-overlay-countdown {
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.emotion-0 .video-js .vjs-next-overlay-countdown svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-next-overlay-name {
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-next-overlay-name svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-next-overlay .vjs-close-button {
+  padding: 4px;
 }
 
 <div
