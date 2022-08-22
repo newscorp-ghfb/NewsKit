@@ -764,10 +764,10 @@ exports[`Meta renders with mandatory props 1`] = `
                 class="emotion-9"
                 data-testid="flag"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
                     <div
@@ -779,8 +779,8 @@ exports[`Meta renders with mandatory props 1`] = `
                         Supported
                       </p>
                     </div>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </div>
             </div>
           </div>
@@ -838,10 +838,10 @@ exports[`Meta renders with mandatory props 1`] = `
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
-              <div
+              <span
                 class="emotion-27"
               >
-                <div
+                <span
                   class="emotion-28"
                 >
                   <svg
@@ -856,8 +856,8 @@ exports[`Meta renders with mandatory props 1`] = `
                       fill-rule="nonzero"
                     />
                   </svg>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-28"
                 >
                   <span
@@ -865,8 +865,8 @@ exports[`Meta renders with mandatory props 1`] = `
                   >
                     View code
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </div>
           <div
@@ -918,10 +918,10 @@ exports[`Meta renders with mandatory props 1`] = `
                   class="emotion-9"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
                       <div
@@ -933,8 +933,8 @@ exports[`Meta renders with mandatory props 1`] = `
                           Supported
                         </p>
                       </div>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1011,10 +1011,10 @@ exports[`Meta renders with mandatory props 1`] = `
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
-                  <div
+                  <span
                     class="emotion-27"
                   >
-                    <div
+                    <span
                       class="emotion-28"
                     >
                       <svg
@@ -1029,8 +1029,8 @@ exports[`Meta renders with mandatory props 1`] = `
                           fill-rule="nonzero"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-28"
                     >
                       <span
@@ -1038,8 +1038,8 @@ exports[`Meta renders with mandatory props 1`] = `
                       >
                         View code
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </div>
               <div
@@ -1842,10 +1842,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 class="emotion-9"
                 data-testid="flag"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
                     <div
@@ -1857,8 +1857,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                         Supported
                       </p>
                     </div>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </div>
             </div>
           </div>
@@ -1916,10 +1916,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
-              <div
+              <span
                 class="emotion-27"
               >
-                <div
+                <span
                   class="emotion-28"
                 >
                   <svg
@@ -1934,8 +1934,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       fill-rule="nonzero"
                     />
                   </svg>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-28"
                 >
                   <span
@@ -1943,8 +1943,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   >
                     View code
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </div>
           <div
@@ -1956,10 +1956,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
-              <div
+              <span
                 class="emotion-27"
               >
-                <div
+                <span
                   class="emotion-28"
                 >
                   <svg
@@ -1990,8 +1990,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       fill="#A259FF"
                     />
                   </svg>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-28"
                 >
                   <span
@@ -1999,8 +1999,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   >
                     View Design
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </div>
         </div>
@@ -2049,10 +2049,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   class="emotion-9"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
                       <div
@@ -2064,8 +2064,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                           Supported
                         </p>
                       </div>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -2142,10 +2142,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
-                  <div
+                  <span
                     class="emotion-27"
                   >
-                    <div
+                    <span
                       class="emotion-28"
                     >
                       <svg
@@ -2160,8 +2160,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                           fill-rule="nonzero"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-28"
                     >
                       <span
@@ -2169,8 +2169,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       >
                         View code
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </div>
               <div
@@ -2182,10 +2182,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
-                  <div
+                  <span
                     class="emotion-27"
                   >
-                    <div
+                    <span
                       class="emotion-28"
                     >
                       <svg
@@ -2216,8 +2216,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                           fill="#A259FF"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-28"
                     >
                       <span
@@ -2225,8 +2225,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       >
                         View Design
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
                 <div
                   class="emotion-39"
@@ -3141,10 +3141,10 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                 class="emotion-9"
                 data-testid="flag"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
                     <div
@@ -3156,8 +3156,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                         Supported
                       </p>
                     </div>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </div>
             </div>
           </div>
@@ -3252,10 +3252,10 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
-              <div
+              <span
                 class="emotion-33"
               >
-                <div
+                <span
                   class="emotion-34"
                 >
                   <svg
@@ -3270,8 +3270,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                       fill-rule="nonzero"
                     />
                   </svg>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-34"
                 >
                   <span
@@ -3279,8 +3279,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                   >
                     View code
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </div>
           <div
@@ -3332,10 +3332,10 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                   class="emotion-9"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
                       <div
@@ -3347,8 +3347,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                           Supported
                         </p>
                       </div>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -3462,10 +3462,10 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
-                  <div
+                  <span
                     class="emotion-33"
                   >
-                    <div
+                    <span
                       class="emotion-34"
                     >
                       <svg
@@ -3480,8 +3480,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                           fill-rule="nonzero"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-34"
                     >
                       <span
@@ -3489,8 +3489,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                       >
                         View code
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </div>
               <div

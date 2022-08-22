@@ -992,10 +992,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
             tabindex="0"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -1014,8 +1014,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
         <a
@@ -1171,10 +1171,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   data-testid="styled-indicator"
                   href="about/introduction"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -1182,8 +1182,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       >
                         About
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -1195,10 +1195,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   data-testid="styled-indicator"
                   href="getting-started/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -1206,8 +1206,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       >
                         Guides
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -1219,10 +1219,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   data-testid="styled-indicator"
                   href="theme/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -1230,8 +1230,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       >
                         Theme
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -1243,10 +1243,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   data-testid="styled-indicator"
                   href="components/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -1254,8 +1254,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       >
                         Components
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -1267,10 +1267,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   data-testid="styled-indicator"
                   href="patterns/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -1278,8 +1278,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       >
                         Patterns
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
             </ul>
@@ -1294,10 +1294,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
             href="https://github.com/newscorp-ghfb/newskit"
             target="_blank"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -1312,8 +1312,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     fill-rule="nonzero"
                   />
                 </svg>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
                 <span
@@ -1321,8 +1321,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                 >
                   View Github
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
         </div>
         <div
@@ -1336,10 +1336,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
             title="Enable Dark Theme"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -1359,8 +1359,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -2361,10 +2361,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
             tabindex="0"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -2383,8 +2383,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
         <a
@@ -2540,10 +2540,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   data-testid="styled-indicator"
                   href="about/introduction"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -2551,8 +2551,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       >
                         About
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -2564,10 +2564,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   data-testid="styled-indicator"
                   href="getting-started/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -2575,8 +2575,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       >
                         Guides
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -2588,10 +2588,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   data-testid="styled-indicator"
                   href="theme/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -2599,8 +2599,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       >
                         Theme
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -2612,10 +2612,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   data-testid="styled-indicator"
                   href="components/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -2623,8 +2623,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       >
                         Components
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -2636,10 +2636,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   data-testid="styled-indicator"
                   href="patterns/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -2647,8 +2647,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       >
                         Patterns
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
             </ul>
@@ -2663,10 +2663,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
             href="https://github.com/newscorp-ghfb/newskit"
             target="_blank"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -2681,8 +2681,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     fill-rule="nonzero"
                   />
                 </svg>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
                 <span
@@ -2690,8 +2690,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                 >
                   View Github
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
         </div>
         <div
@@ -2705,10 +2705,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
             title="Enable Dark Theme"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -2728,8 +2728,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -3615,10 +3615,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
             tabindex="0"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -3637,8 +3637,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
         <a
@@ -3794,10 +3794,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   data-testid="styled-indicator"
                   href="about/introduction"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -3805,8 +3805,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       >
                         About
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -3818,10 +3818,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   data-testid="styled-indicator"
                   href="getting-started/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -3829,8 +3829,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       >
                         Guides
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -3842,10 +3842,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   data-testid="styled-indicator"
                   href="theme/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -3853,8 +3853,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       >
                         Theme
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -3866,10 +3866,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   data-testid="styled-indicator"
                   href="components/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -3877,8 +3877,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       >
                         Components
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -3890,10 +3890,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   data-testid="styled-indicator"
                   href="patterns/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -3901,8 +3901,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       >
                         Patterns
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
             </ul>
@@ -3917,10 +3917,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
             href="https://github.com/newscorp-ghfb/newskit"
             target="_blank"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -3935,8 +3935,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     fill-rule="nonzero"
                   />
                 </svg>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
                 <span
@@ -3944,8 +3944,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                 >
                   View Github
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
         </div>
         <div
@@ -3959,10 +3959,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
             title="Enable Dark Theme"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -3982,8 +3982,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>

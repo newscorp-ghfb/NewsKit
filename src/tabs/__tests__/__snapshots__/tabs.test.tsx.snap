@@ -481,10 +481,10 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -492,8 +492,8 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -514,10 +514,10 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -525,8 +525,8 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -547,10 +547,10 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -558,8 +558,8 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -1079,10 +1079,10 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -1090,8 +1090,8 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -1112,10 +1112,10 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -1123,8 +1123,8 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -1145,10 +1145,10 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -1156,8 +1156,8 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -1677,10 +1677,10 @@ exports[`Tabs clears focus onMouseDown 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -1688,8 +1688,8 @@ exports[`Tabs clears focus onMouseDown 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -1710,10 +1710,10 @@ exports[`Tabs clears focus onMouseDown 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -1721,8 +1721,8 @@ exports[`Tabs clears focus onMouseDown 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -1743,10 +1743,10 @@ exports[`Tabs clears focus onMouseDown 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -1754,8 +1754,8 @@ exports[`Tabs clears focus onMouseDown 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -2273,10 +2273,10 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -2284,8 +2284,8 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
                       >
                         H tab 1
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -2306,10 +2306,10 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -2317,8 +2317,8 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
                       >
                         H tab 2
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -2339,10 +2339,10 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -2350,8 +2350,8 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
                       >
                         H tab 3
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -2882,10 +2882,10 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -2893,8 +2893,8 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
                       >
                         H tab 1
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -2915,10 +2915,10 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -2926,8 +2926,8 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
                       >
                         H tab 2
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -2948,10 +2948,10 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -2959,8 +2959,8 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
                       >
                         H tab 3
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -3480,10 +3480,10 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -3491,8 +3491,8 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
                       >
                         H tab 1
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -3513,10 +3513,10 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -3524,8 +3524,8 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
                       >
                         H tab 2
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -3546,10 +3546,10 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -3557,8 +3557,8 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
                       >
                         H tab 3
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -4091,10 +4091,10 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -4102,8 +4102,8 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
                       >
                         H tab 1
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -4124,10 +4124,10 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -4135,8 +4135,8 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
                       >
                         H tab 2
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -4157,10 +4157,10 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -4168,8 +4168,8 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
                       >
                         H tab 3
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -4689,10 +4689,10 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -4700,8 +4700,8 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
                       >
                         H tab 1
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -4722,10 +4722,10 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -4733,8 +4733,8 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
                       >
                         H tab 2
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -4755,10 +4755,10 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -4766,8 +4766,8 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
                       >
                         H tab 3
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -5300,10 +5300,10 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -5311,8 +5311,8 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
                       >
                         H tab 1
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -5333,10 +5333,10 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -5344,8 +5344,8 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
                       >
                         H tab 2
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -5366,10 +5366,10 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -5377,8 +5377,8 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
                       >
                         H tab 3
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -5846,10 +5846,10 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -5857,8 +5857,8 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
                       >
                         Medium tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -5880,10 +5880,10 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -5891,8 +5891,8 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
                       >
                         Medium tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -5914,10 +5914,10 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -5925,8 +5925,8 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
                       >
                         Medium tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -6446,10 +6446,10 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -6457,8 +6457,8 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -6479,10 +6479,10 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -6490,8 +6490,8 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -6512,10 +6512,10 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -6523,8 +6523,8 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -7057,10 +7057,10 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -7068,8 +7068,8 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -7090,10 +7090,10 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -7101,8 +7101,8 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -7123,10 +7123,10 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -7134,8 +7134,8 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -7655,10 +7655,10 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -7666,8 +7666,8 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -7688,10 +7688,10 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -7699,8 +7699,8 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -7721,10 +7721,10 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -7732,8 +7732,8 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -8266,10 +8266,10 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -8277,8 +8277,8 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -8299,10 +8299,10 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -8310,8 +8310,8 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -8332,10 +8332,10 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -8343,8 +8343,8 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -8864,10 +8864,10 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -8875,8 +8875,8 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -8897,10 +8897,10 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -8908,8 +8908,8 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -8930,10 +8930,10 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -8941,8 +8941,8 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -9475,10 +9475,10 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -9486,8 +9486,8 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -9508,10 +9508,10 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -9519,8 +9519,8 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -9541,10 +9541,10 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -9552,8 +9552,8 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -10073,10 +10073,10 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -10084,8 +10084,8 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -10106,10 +10106,10 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -10117,8 +10117,8 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -10139,10 +10139,10 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -10150,8 +10150,8 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -10671,10 +10671,10 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -10682,8 +10682,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -10704,10 +10704,10 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -10715,8 +10715,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -10737,10 +10737,10 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -10748,8 +10748,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -11282,10 +11282,10 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -11293,8 +11293,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -11315,10 +11315,10 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -11326,8 +11326,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -11348,10 +11348,10 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -11359,8 +11359,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -11913,10 +11913,10 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -11924,8 +11924,8 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -11955,10 +11955,10 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -11966,8 +11966,8 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -11997,10 +11997,10 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -12008,8 +12008,8 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -12554,10 +12554,10 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -12576,8 +12576,8 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -12585,8 +12585,8 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -12594,8 +12594,8 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -12616,10 +12616,10 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -12638,8 +12638,8 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -12647,8 +12647,8 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -12656,8 +12656,8 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -12678,10 +12678,10 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -12700,8 +12700,8 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -12709,8 +12709,8 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -12718,8 +12718,8 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -13239,10 +13239,10 @@ exports[`Tabs renders with default styles 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -13250,8 +13250,8 @@ exports[`Tabs renders with default styles 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -13272,10 +13272,10 @@ exports[`Tabs renders with default styles 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -13283,8 +13283,8 @@ exports[`Tabs renders with default styles 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -13305,10 +13305,10 @@ exports[`Tabs renders with default styles 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -13316,8 +13316,8 @@ exports[`Tabs renders with default styles 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -13858,10 +13858,10 @@ exports[`Tabs renders with default styles and divider 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -13869,8 +13869,8 @@ exports[`Tabs renders with default styles and divider 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -13900,10 +13900,10 @@ exports[`Tabs renders with default styles and divider 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -13911,8 +13911,8 @@ exports[`Tabs renders with default styles and divider 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -13942,10 +13942,10 @@ exports[`Tabs renders with default styles and divider 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -13953,8 +13953,8 @@ exports[`Tabs renders with default styles and divider 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -14499,10 +14499,10 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -14521,8 +14521,8 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -14530,8 +14530,8 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -14539,8 +14539,8 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -14561,10 +14561,10 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -14583,8 +14583,8 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -14592,8 +14592,8 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -14601,8 +14601,8 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -14623,10 +14623,10 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -14645,8 +14645,8 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -14654,8 +14654,8 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -14663,8 +14663,8 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -15209,10 +15209,10 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -15231,8 +15231,8 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -15240,8 +15240,8 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -15249,8 +15249,8 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -15271,10 +15271,10 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -15293,8 +15293,8 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -15302,8 +15302,8 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -15311,8 +15311,8 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -15333,10 +15333,10 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -15355,8 +15355,8 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -15364,8 +15364,8 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -15373,8 +15373,8 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -15919,10 +15919,10 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -15941,8 +15941,8 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -15950,8 +15950,8 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -15959,8 +15959,8 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -15981,10 +15981,10 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -16003,8 +16003,8 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -16012,8 +16012,8 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -16021,8 +16021,8 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -16043,10 +16043,10 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -16065,8 +16065,8 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -16074,8 +16074,8 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -16083,8 +16083,8 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -16629,10 +16629,10 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -16651,8 +16651,8 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -16660,8 +16660,8 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -16669,8 +16669,8 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -16691,10 +16691,10 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -16713,8 +16713,8 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -16722,8 +16722,8 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -16731,8 +16731,8 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -16753,10 +16753,10 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -16775,8 +16775,8 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -16784,8 +16784,8 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -16793,8 +16793,8 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -17316,10 +17316,10 @@ exports[`Tabs renders with icons for tabs 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -17338,8 +17338,8 @@ exports[`Tabs renders with icons for tabs 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -17360,10 +17360,10 @@ exports[`Tabs renders with icons for tabs 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -17382,8 +17382,8 @@ exports[`Tabs renders with icons for tabs 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -17404,10 +17404,10 @@ exports[`Tabs renders with icons for tabs 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -17426,8 +17426,8 @@ exports[`Tabs renders with icons for tabs 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -17985,10 +17985,10 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -18007,8 +18007,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18016,8 +18016,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18025,8 +18025,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -18047,10 +18047,10 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -18069,8 +18069,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18078,8 +18078,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18087,8 +18087,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -18109,10 +18109,10 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -18131,8 +18131,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18140,8 +18140,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18149,8 +18149,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -18708,10 +18708,10 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -18730,8 +18730,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18739,8 +18739,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18748,8 +18748,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -18770,10 +18770,10 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -18792,8 +18792,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18801,8 +18801,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18810,8 +18810,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -18832,10 +18832,10 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -18854,8 +18854,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18863,8 +18863,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -18872,8 +18872,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -19393,10 +19393,10 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -19404,8 +19404,8 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -19426,10 +19426,10 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -19437,8 +19437,8 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -19459,10 +19459,10 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -19470,8 +19470,8 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -20040,10 +20040,10 @@ exports[`Tabs renders with overrides 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -20062,8 +20062,8 @@ exports[`Tabs renders with overrides 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -20071,8 +20071,8 @@ exports[`Tabs renders with overrides 1`] = `
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -20080,8 +20080,8 @@ exports[`Tabs renders with overrides 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -20102,10 +20102,10 @@ exports[`Tabs renders with overrides 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -20124,8 +20124,8 @@ exports[`Tabs renders with overrides 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -20133,8 +20133,8 @@ exports[`Tabs renders with overrides 1`] = `
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -20142,8 +20142,8 @@ exports[`Tabs renders with overrides 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -20164,10 +20164,10 @@ exports[`Tabs renders with overrides 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -20186,8 +20186,8 @@ exports[`Tabs renders with overrides 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -20195,8 +20195,8 @@ exports[`Tabs renders with overrides 1`] = `
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -20204,8 +20204,8 @@ exports[`Tabs renders with overrides 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -20675,10 +20675,10 @@ exports[`Tabs renders with overrides on Tab 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -20686,8 +20686,8 @@ exports[`Tabs renders with overrides on Tab 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -20708,10 +20708,10 @@ exports[`Tabs renders with overrides on Tab 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -20719,8 +20719,8 @@ exports[`Tabs renders with overrides on Tab 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -21292,10 +21292,10 @@ exports[`Tabs renders with overrides vertical 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -21314,8 +21314,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -21323,8 +21323,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -21332,8 +21332,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -21354,10 +21354,10 @@ exports[`Tabs renders with overrides vertical 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -21376,8 +21376,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -21385,8 +21385,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -21394,8 +21394,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -21416,10 +21416,10 @@ exports[`Tabs renders with overrides vertical 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -21438,8 +21438,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -21447,8 +21447,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -21456,8 +21456,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -21977,10 +21977,10 @@ exports[`Tabs renders with second tab initially selected 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -21988,8 +21988,8 @@ exports[`Tabs renders with second tab initially selected 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -22010,10 +22010,10 @@ exports[`Tabs renders with second tab initially selected 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -22021,8 +22021,8 @@ exports[`Tabs renders with second tab initially selected 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -22043,10 +22043,10 @@ exports[`Tabs renders with second tab initially selected 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -22054,8 +22054,8 @@ exports[`Tabs renders with second tab initially selected 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -22575,10 +22575,10 @@ exports[`Tabs renders with selectedIndex 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -22586,8 +22586,8 @@ exports[`Tabs renders with selectedIndex 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -22608,10 +22608,10 @@ exports[`Tabs renders with selectedIndex 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -22619,8 +22619,8 @@ exports[`Tabs renders with selectedIndex 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -22641,10 +22641,10 @@ exports[`Tabs renders with selectedIndex 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -22652,8 +22652,8 @@ exports[`Tabs renders with selectedIndex 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -23173,10 +23173,10 @@ exports[`Tabs renders with sizing 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -23184,8 +23184,8 @@ exports[`Tabs renders with sizing 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -23206,10 +23206,10 @@ exports[`Tabs renders with sizing 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -23217,8 +23217,8 @@ exports[`Tabs renders with sizing 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -23239,10 +23239,10 @@ exports[`Tabs renders with sizing 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -23250,8 +23250,8 @@ exports[`Tabs renders with sizing 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -23771,10 +23771,10 @@ exports[`Tabs sets active on click 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -23782,8 +23782,8 @@ exports[`Tabs sets active on click 1`] = `
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -23804,10 +23804,10 @@ exports[`Tabs sets active on click 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -23815,8 +23815,8 @@ exports[`Tabs sets active on click 1`] = `
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -23837,10 +23837,10 @@ exports[`Tabs sets active on click 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -23848,8 +23848,8 @@ exports[`Tabs sets active on click 1`] = `
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -24369,10 +24369,10 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -24380,8 +24380,8 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -24402,10 +24402,10 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -24413,8 +24413,8 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -24435,10 +24435,10 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -24446,8 +24446,8 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -24967,10 +24967,10 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -24978,8 +24978,8 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -25000,10 +25000,10 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -25011,8 +25011,8 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -25033,10 +25033,10 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -25044,8 +25044,8 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -25565,10 +25565,10 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -25576,8 +25576,8 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
                       >
                         First tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -25598,10 +25598,10 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -25609,8 +25609,8 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
                       >
                         Second tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -25631,10 +25631,10 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -25642,8 +25642,8 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
                       >
                         Third tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -26159,10 +26159,10 @@ exports[`Tabs with custom scroll component 1`] = `
                 tabindex="0"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
                     <svg
@@ -26181,8 +26181,8 @@ exports[`Tabs with custom scroll component 1`] = `
                         d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                       />
                     </svg>
-                  </div>
-                  <div
+                  </span>
+                  <span
                     class="emotion-7"
                   >
                     <span
@@ -26190,8 +26190,8 @@ exports[`Tabs with custom scroll component 1`] = `
                     >
                       First
                     </span>
-                  </div>
-                  <div
+                  </span>
+                  <span
                     class="emotion-7"
                   >
                     <span
@@ -26199,8 +26199,8 @@ exports[`Tabs with custom scroll component 1`] = `
                     >
                        tab
                     </span>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -26221,10 +26221,10 @@ exports[`Tabs with custom scroll component 1`] = `
                 tabindex="-1"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
                     <svg
@@ -26243,8 +26243,8 @@ exports[`Tabs with custom scroll component 1`] = `
                         d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                       />
                     </svg>
-                  </div>
-                  <div
+                  </span>
+                  <span
                     class="emotion-7"
                   >
                     <span
@@ -26252,8 +26252,8 @@ exports[`Tabs with custom scroll component 1`] = `
                     >
                       Second
                     </span>
-                  </div>
-                  <div
+                  </span>
+                  <span
                     class="emotion-7"
                   >
                     <span
@@ -26261,8 +26261,8 @@ exports[`Tabs with custom scroll component 1`] = `
                     >
                        tab
                     </span>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -26283,10 +26283,10 @@ exports[`Tabs with custom scroll component 1`] = `
                 tabindex="-1"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
                     <svg
@@ -26305,8 +26305,8 @@ exports[`Tabs with custom scroll component 1`] = `
                         d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                       />
                     </svg>
-                  </div>
-                  <div
+                  </span>
+                  <span
                     class="emotion-7"
                   >
                     <span
@@ -26314,8 +26314,8 @@ exports[`Tabs with custom scroll component 1`] = `
                     >
                       Third
                     </span>
-                  </div>
-                  <div
+                  </span>
+                  <span
                     class="emotion-7"
                   >
                     <span
@@ -26323,8 +26323,8 @@ exports[`Tabs with custom scroll component 1`] = `
                     >
                        tab
                     </span>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -26877,10 +26877,10 @@ exports[`Tabs with custom scroll props 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -26899,8 +26899,8 @@ exports[`Tabs with custom scroll props 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -26908,8 +26908,8 @@ exports[`Tabs with custom scroll props 1`] = `
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -26917,8 +26917,8 @@ exports[`Tabs with custom scroll props 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -26939,10 +26939,10 @@ exports[`Tabs with custom scroll props 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -26961,8 +26961,8 @@ exports[`Tabs with custom scroll props 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -26970,8 +26970,8 @@ exports[`Tabs with custom scroll props 1`] = `
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -26979,8 +26979,8 @@ exports[`Tabs with custom scroll props 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -27001,10 +27001,10 @@ exports[`Tabs with custom scroll props 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -27023,8 +27023,8 @@ exports[`Tabs with custom scroll props 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -27032,8 +27032,8 @@ exports[`Tabs with custom scroll props 1`] = `
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -27041,8 +27041,8 @@ exports[`Tabs with custom scroll props 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -27585,10 +27585,10 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -27607,8 +27607,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -27616,8 +27616,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -27625,8 +27625,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -27647,10 +27647,10 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -27669,8 +27669,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -27678,8 +27678,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -27687,8 +27687,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -27709,10 +27709,10 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -27731,8 +27731,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -27740,8 +27740,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -27749,8 +27749,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -28295,10 +28295,10 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -28317,8 +28317,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -28326,8 +28326,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -28335,8 +28335,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -28357,10 +28357,10 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -28379,8 +28379,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -28388,8 +28388,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -28397,8 +28397,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -28419,10 +28419,10 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -28441,8 +28441,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -28450,8 +28450,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -28459,8 +28459,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -29005,10 +29005,10 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -29027,8 +29027,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29036,8 +29036,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29045,8 +29045,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -29067,10 +29067,10 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -29089,8 +29089,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29098,8 +29098,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29107,8 +29107,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -29129,10 +29129,10 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -29151,8 +29151,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29160,8 +29160,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29169,8 +29169,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -29726,10 +29726,10 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -29748,8 +29748,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29757,8 +29757,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29766,8 +29766,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -29788,10 +29788,10 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -29810,8 +29810,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29819,8 +29819,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29828,8 +29828,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -29850,10 +29850,10 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -29872,8 +29872,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29881,8 +29881,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -29890,8 +29890,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -30449,10 +30449,10 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -30471,8 +30471,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -30480,8 +30480,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -30489,8 +30489,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -30511,10 +30511,10 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -30533,8 +30533,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -30542,8 +30542,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -30551,8 +30551,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -30573,10 +30573,10 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -30595,8 +30595,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -30604,8 +30604,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -30613,8 +30613,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -31172,10 +31172,10 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -31194,8 +31194,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -31203,8 +31203,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -31212,8 +31212,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -31234,10 +31234,10 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -31256,8 +31256,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -31265,8 +31265,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -31274,8 +31274,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -31296,10 +31296,10 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -31318,8 +31318,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -31327,8 +31327,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -31336,8 +31336,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -31886,10 +31886,10 @@ exports[`with logical props overrides 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -31908,8 +31908,8 @@ exports[`with logical props overrides 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -31917,8 +31917,8 @@ exports[`with logical props overrides 1`] = `
                       >
                         First
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -31926,8 +31926,8 @@ exports[`with logical props overrides 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -31948,10 +31948,10 @@ exports[`with logical props overrides 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -31970,8 +31970,8 @@ exports[`with logical props overrides 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -31979,8 +31979,8 @@ exports[`with logical props overrides 1`] = `
                       >
                         Second
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -31988,8 +31988,8 @@ exports[`with logical props overrides 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -32010,10 +32010,10 @@ exports[`with logical props overrides 1`] = `
                   tabindex="-1"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -32032,8 +32032,8 @@ exports[`with logical props overrides 1`] = `
                           d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -32041,8 +32041,8 @@ exports[`with logical props overrides 1`] = `
                       >
                         Third
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -32050,8 +32050,8 @@ exports[`with logical props overrides 1`] = `
                       >
                          tab
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>

@@ -760,10 +760,10 @@ exports[`TabsWithTable renders with default data 1`] = `
                       tabindex="0"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-14"
                       >
-                        <div
+                        <span
                           class="emotion-15"
                         >
                           <span
@@ -771,8 +771,8 @@ exports[`TabsWithTable renders with default data 1`] = `
                           >
                             Title1
                           </span>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -793,10 +793,10 @@ exports[`TabsWithTable renders with default data 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-14"
                       >
-                        <div
+                        <span
                           class="emotion-15"
                         >
                           <span
@@ -804,8 +804,8 @@ exports[`TabsWithTable renders with default data 1`] = `
                           >
                             Title2
                           </span>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>

@@ -99,10 +99,10 @@ exports[`ReleaseBadges renders major and breaking change badges 1`] = `
       class="emotion-1"
       data-testid="flag"
     >
-      <div
+      <span
         class="emotion-2"
       >
-        <div
+        <span
           class="emotion-3"
         >
           <span
@@ -110,8 +110,8 @@ exports[`ReleaseBadges renders major and breaking change badges 1`] = `
           >
             Major
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </div>
   </span>
   .emotion-0 {
@@ -211,10 +211,10 @@ exports[`ReleaseBadges renders major and breaking change badges 1`] = `
       class="emotion-1"
       data-testid="flag"
     >
-      <div
+      <span
         class="emotion-2"
       >
-        <div
+        <span
           class="emotion-3"
         >
           <span
@@ -222,8 +222,8 @@ exports[`ReleaseBadges renders major and breaking change badges 1`] = `
           >
             Breaking change
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </div>
   </span>
 </DocumentFragment>
@@ -328,10 +328,10 @@ exports[`ReleaseBadges renders minor badge 1`] = `
       class="emotion-1"
       data-testid="flag"
     >
-      <div
+      <span
         class="emotion-2"
       >
-        <div
+        <span
           class="emotion-3"
         >
           <span
@@ -339,8 +339,8 @@ exports[`ReleaseBadges renders minor badge 1`] = `
           >
             Minor
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </div>
   </span>
 </DocumentFragment>
@@ -445,10 +445,10 @@ exports[`ReleaseBadges renders patch badge 1`] = `
       class="emotion-1"
       data-testid="flag"
     >
-      <div
+      <span
         class="emotion-2"
       >
-        <div
+        <span
           class="emotion-3"
         >
           <span
@@ -456,8 +456,8 @@ exports[`ReleaseBadges renders patch badge 1`] = `
           >
             Patch
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </div>
   </span>
 </DocumentFragment>
