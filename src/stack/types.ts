@@ -1,8 +1,17 @@
 import {MQ} from '../utils/style/types';
-import {AlignSelfValues} from '../stack-child';
 import {LogicalProps} from '../utils/logical-properties';
 
 export type FlexWrap = boolean | 'wrap' | 'nowrap' | 'wrap-reverse';
+
+export type FlowTypes =
+  | 'vertical-left'
+  | 'vertical-center'
+  | 'vertical-right'
+  | 'vertical-stretch'
+  | 'horizontal-top'
+  | 'horizontal-center'
+  | 'horizontal-bottom'
+  | 'horizontal-stretch';
 
 export interface CommonStackPropsWithoutMQ {
   spaceStack: string; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
@@ -10,19 +19,8 @@ export interface CommonStackPropsWithoutMQ {
   flexGrow: boolean | number;
   flexShrink: boolean | number;
   flowReverse: boolean;
-  flow:
-    | Flow
-    | 'vertical-left'
-    | 'vertical-center'
-    | 'vertical-right'
-    | 'vertical-stretch'
-    | 'horizontal-top'
-    | 'horizontal-center'
-    | 'horizontal-bottom'
-    | 'horizontal-stretch';
-
+  flow: FlowTypes;
   stackDistribution:
-    | StackDistribution
     | 'flex-start'
     | 'center'
     | 'flex-end'
@@ -71,7 +69,7 @@ export interface StyledChildProps
     'spaceInline' | 'spaceStack' | 'flow' | '$wrap' | 'as'
   > {
   $order?: MQ<number>;
-  $alignSelf?: AlignSelfValues;
+  $alignSelf?: MQ<string>;
   flexGrow?: boolean | number;
 }
 

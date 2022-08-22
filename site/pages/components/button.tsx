@@ -610,28 +610,8 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      performance: undefined,
-      seo: undefined,
-      props: true,
-      uiKit: true,
-      design: true,
-      themes: true,
-    }}
     related={{
-      related: [
-        'Checkbox',
-        'Form',
-        'Radio Button',
-        'Select',
-        'Slider',
-        'Text Field',
-      ],
+      related: ['Checkbox', 'Form', 'Radio Button', 'Select'],
     }}
   />
 );

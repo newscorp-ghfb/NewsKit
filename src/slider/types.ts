@@ -41,7 +41,7 @@ interface CommonProps {
   values: number[];
   overrides?: SliderOverrideProps;
 }
-type LabelPositionTypes = LabelPosition | 'before' | 'after' | 'inline';
+type LabelPositionTypes = 'before' | 'after' | 'inline';
 export interface StyledTrackProps extends CommonProps {
   dragged: boolean;
   labelPosition?: LabelPositionTypes;
@@ -78,10 +78,4 @@ export interface SliderProps extends CommonSliderProps {
 
 export interface StatefulSliderProps extends CommonSliderProps {
   onChange?: (values: number[]) => void;
-}
-
-export enum LabelPosition {
-  Before = 'before',
-  After = 'after',
-  Inline = 'inline',
 }

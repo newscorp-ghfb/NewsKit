@@ -4,7 +4,6 @@ import {
   Block,
   Divider,
   StackChild,
-  AlignSelfValues,
   Flow,
   Hidden,
   Cell,
@@ -29,7 +28,7 @@ export const Meta = ({
         <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
           <Stack flow={Flow.HorizontalTop}>
             <Status status={status} />
-            <StackChild alignSelf={AlignSelfValues.Stretch}>
+            <StackChild alignSelf="stretch">
               <Block
                 spaceInline={{
                   md: 'space060',
@@ -48,7 +47,7 @@ export const Meta = ({
             />
           </Stack>
           <Stack flow="horizontal-center" spaceInline="space040">
-            <StackChild alignSelf={AlignSelfValues.Stretch}>
+            <StackChild alignSelf="stretch">
               <GitHubButton href={codeUrl} />
             </StackChild>
             <FigmaButton href={figmaUrl} />
@@ -60,7 +59,7 @@ export const Meta = ({
 
       <Hidden md lg xl>
         <Stack flow={Flow.VerticalLeft} spaceInline="space050">
-          <StackChild alignSelf={AlignSelfValues.Stretch}>
+          <StackChild alignSelf="stretch">
             <Cell xs={6}>
               <Status status={status} />
             </Cell>
@@ -80,7 +79,7 @@ export const Meta = ({
               </Stack>
             </Cell>
           </StackChild>
-          <StackChild alignSelf={AlignSelfValues.Stretch}>
+          <StackChild alignSelf="stretch">
             <Grid xsMargin="space000">
               <Cell xs={12}>
                 <Divider />

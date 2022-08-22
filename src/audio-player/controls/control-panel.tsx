@@ -3,7 +3,7 @@ import {styled, MQ} from '../../utils/style';
 import {ForwardButton, BackwardButton} from './forward-replay';
 import {PlayerButton} from './play-pause';
 import {SkipPreviousButton, SkipNextButton} from './skip-track';
-import {Stack, StackDistribution, Flow} from '../../stack';
+import {Stack, StackDistribution} from '../../stack';
 import {StackChild} from '../../stack-child';
 import {useTheme} from '../../theme';
 import {getToken} from '../../utils/get-token';
@@ -57,12 +57,12 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
     overrides,
   }) => (
     <Stack
-      flow={Flow.HorizontalCenter}
+      flow="horizontal-center"
       stackDistribution={StackDistribution.Center}
       flexGrow
     >
       <ButtonsContainer
-        flow={Flow.HorizontalCenter}
+        flow="horizontal-center"
         spaceInline={getToken(
           {theme: useTheme(), overrides},
           'audioPlayer.controls',
