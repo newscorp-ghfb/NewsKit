@@ -371,20 +371,8 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      states: undefined,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: undefined,
-      design: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
-      related: ['Banner', 'Flag', 'Progress Indicator', 'Toast', 'Tooltip'],
+      related: ['Banner', 'Flag', 'Toast', 'Tooltip'],
     }}
   />
 );

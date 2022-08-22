@@ -866,21 +866,8 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      performance: false,
-      seo: null,
-      props: true,
-      uiKit: true,
-      design: true,
-      themes: true,
-    }}
     related={{
-      related: ['Button', 'Checkbox', 'Form', 'Select', 'Slider', 'Text Field'],
+      related: ['Button', 'Checkbox', 'Form', 'Select'],
     }}
   />
 );

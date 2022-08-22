@@ -634,33 +634,8 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      states: true,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      performance: false,
-      design: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
-      related: [
-        'Block',
-        'Card',
-        'Divider',
-        'Fieldset',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Popover',
-        'Stack',
-        'Structured List',
-        'Visibility',
-      ],
+      related: ['Block', 'Divider', 'Modal', 'Popover'],
     }}
   />
 );
