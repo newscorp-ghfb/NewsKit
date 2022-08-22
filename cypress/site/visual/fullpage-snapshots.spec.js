@@ -26,18 +26,5 @@ Object.entries(routes).forEach(route => {
       cy.eyesCheckWindow(`${pageName} page`);
       cy.eyesClose();
     });
-    it(`should pass visual regression test on homepage with search`, () => {
-      cy.eyesOpen();
-      cy.mockConsentAndVisit('/index');
-      cy.get('[data-testid="sample-code"]').first().scrollIntoView({
-        easing: 'linear',
-      });
-      cy.get('[data-testid="search-button"]').click({
-        multiple: true,
-        force: true,
-      });
-      cy.eyesCheckWindow('welcome page');
-      cy.eyesClose();
-    });
   });
 });
