@@ -10,7 +10,6 @@ import {Label} from '../../..';
 import {
   StorybookHeading,
   StorybookSubHeading,
-  StorybookSpan,
 } from '../../../test/storybook-comps';
 
 export default {
@@ -20,61 +19,29 @@ export default {
 
 export const ResponsiveExample = () => (
   <>
-    <StorybookHeading>Responsive grid with mixed sizing</StorybookHeading>
+    <StorybookSubHeading>Responsive grid with mixed sizing</StorybookSubHeading>
     <GridLayout
       columns={{md: '1fr 1fr', lg: '1fr sizing120 300px 1fr'}}
       rows={{md: '1fr 1fr', lg: '1fr sizing120 300px 1fr'}}
       rowGap={{xs: 'space010', md: 'space040'}}
       columnGap={{md: 'space030', lg: 'space050'}}
     >
-      <GridBox>
-        <StorybookSpan>1</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>2</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>3</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>4</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>5</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>6</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>7</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>8</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>9</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>10</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>11</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>12</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>13</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>14</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>15</StorybookSpan>
-      </GridBox>
-      <GridBox>
-        <StorybookSpan>16</StorybookSpan>
-      </GridBox>
+      <GridBox>1</GridBox>
+      <GridBox>2</GridBox>
+      <GridBox>3</GridBox>
+      <GridBox>4</GridBox>
+      <GridBox>5</GridBox>
+      <GridBox>6</GridBox>
+      <GridBox>7</GridBox>
+      <GridBox>8</GridBox>
+      <GridBox>9</GridBox>
+      <GridBox>10</GridBox>
+      <GridBox>11</GridBox>
+      <GridBox>12</GridBox>
+      <GridBox>13</GridBox>
+      <GridBox>14</GridBox>
+      <GridBox>15</GridBox>
+      <GridBox>16</GridBox>
     </GridLayout>
     <br />
     <br />
@@ -107,33 +74,29 @@ export const ResponsiveExample = () => (
           "A E"
     `,
       }}
+      columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr 200px'}}
+      rows={{
+        xs: '100px repeat(4, 50px)',
+        md: '100px repeat(2, 50px)',
+        lg: 'repeat(4, 50px)',
+      }}
       rowGap={{xs: 'space010', md: 'space040'}}
       columnGap={{md: 'space030', lg: 'space050'}}
     >
       <GridLayoutItem area="A">
-        <GridBox>
-          <StorybookSpan>A</StorybookSpan>
-        </GridBox>
+        <GridBox style={{minHeight: '100%'}}>A</GridBox>
       </GridLayoutItem>
       <GridLayoutItem area="B">
-        <GridBox>
-          <StorybookSpan>B</StorybookSpan>
-        </GridBox>
+        <GridBox>B</GridBox>
       </GridLayoutItem>
       <GridLayoutItem area="C">
-        <GridBox>
-          <StorybookSpan>C</StorybookSpan>
-        </GridBox>
+        <GridBox>C</GridBox>
       </GridLayoutItem>
       <GridLayoutItem area="D">
-        <GridBox>
-          <StorybookSpan>D</StorybookSpan>
-        </GridBox>
+        <GridBox>D</GridBox>
       </GridLayoutItem>
       <GridLayoutItem area="E">
-        <GridBox>
-          <StorybookSpan>E</StorybookSpan>
-        </GridBox>
+        <GridBox>E</GridBox>
       </GridLayoutItem>
     </GridLayout>
     <br />
@@ -167,35 +130,31 @@ export const ResponsiveExample = () => (
           "A E"  
     `,
       }}
+      columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr 200px'}}
+      rows={{
+        xs: '100px repeat(4, 50px)',
+        md: '100px repeat(2, 50px)',
+        lg: 'repeat(4, 50px)',
+      }}
       rowGap={{xs: 'space010', md: 'space040'}}
       columnGap={{md: 'space030', lg: 'space050'}}
     >
       {Areas => (
         <>
           <Areas.A>
-            <GridBox>
-              <StorybookSpan>A</StorybookSpan>
-            </GridBox>
+            <GridBox style={{minHeight: '100%'}}>A</GridBox>
           </Areas.A>
           <Areas.B>
-            <GridBox>
-              <StorybookSpan>B</StorybookSpan>
-            </GridBox>
+            <GridBox>B</GridBox>
           </Areas.B>
           <Areas.C>
-            <GridBox>
-              <StorybookSpan>C</StorybookSpan>
-            </GridBox>
+            <GridBox>C</GridBox>
           </Areas.C>
           <Areas.D>
-            <GridBox>
-              <StorybookSpan>D</StorybookSpan>
-            </GridBox>
+            <GridBox>D</GridBox>
           </Areas.D>
           <Areas.E>
-            <GridBox>
-              <StorybookSpan>E</StorybookSpan>
-            </GridBox>
+            <GridBox>E</GridBox>
           </Areas.E>
         </>
       )}
@@ -204,16 +163,12 @@ export const ResponsiveExample = () => (
 );
 
 export const MinMaxRepeat = () => {
-  const boxes = Array.from(Array(20)).map((_, i) => (
-    <GridBox>
-      <StorybookSpan>{i} box</StorybookSpan>
-    </GridBox>
-  ));
+  const boxes = Array.from(Array(20)).map((_, i) => <GridBox>{i} box</GridBox>);
   return (
     <>
-      <StorybookHeading>MinMax with repeat</StorybookHeading>
+      <StorybookHeading>Repeat with auto-fill and minmax</StorybookHeading>
       <GridLayout
-        columns="repeat(4, minmax(100px, 200px))"
+        columns="repeat(auto-fill, minmax(200px, 1fr))"
         columnGap="20px"
         rowGap="20px"
       >
@@ -244,29 +199,19 @@ export const ItemOrder = () => {
       <Block spaceStack="space020" />
       <GridLayout columnGap="20px" rowGap="20px" columns="1fr 1fr 1fr 1fr 1fr">
         <GridLayoutItem order={order}>
-          <GridBox style={{border: '2px solid red'}}>
-            <StorybookSpan>Order {order}</StorybookSpan>
-          </GridBox>
+          <GridBox style={{border: '2px solid red'}}>Order {order}</GridBox>
         </GridLayoutItem>
         <GridLayoutItem order={1}>
-          <GridBox>
-            <StorybookSpan>Order 1</StorybookSpan>
-          </GridBox>
+          <GridBox>Order 1</GridBox>
         </GridLayoutItem>
         <GridLayoutItem order={2}>
-          <GridBox>
-            <StorybookSpan>Order 2</StorybookSpan>
-          </GridBox>
+          <GridBox>Order 2</GridBox>
         </GridLayoutItem>
         <GridLayoutItem order={3}>
-          <GridBox>
-            <StorybookSpan>Order 3</StorybookSpan>
-          </GridBox>
+          <GridBox>Order 3</GridBox>
         </GridLayoutItem>
         <GridLayoutItem order={4}>
-          <GridBox>
-            <StorybookSpan>Order 4</StorybookSpan>
-          </GridBox>
+          <GridBox>Order 4</GridBox>
         </GridLayoutItem>
       </GridLayout>
     </>
@@ -356,7 +301,7 @@ export const CardWithGrid = () => (
       teaser="this is the teaser"
     />
     <Block spaceStack="100px" />
-    <hr />
+    <Divider />
     <Block spaceStack="100px" />
     <GridTeaser
       image="/placeholder-3x2.png"
