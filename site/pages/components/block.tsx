@@ -266,27 +266,8 @@ const BlockComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      usage: true,
-      accessibility: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
-      related: [
-        'Card',
-        'Divider',
-        'Drawer',
-        'Fieldset',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Popover',
-        'Stack',
-        'Structured List',
-        'Visibility',
-      ],
+      related: ['Card', 'Grid', 'Grid Layout', 'Stack'],
     }}
   />
 );
