@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {GridLayoutItem, GridLayout, getSSRId, LinkStandalone} from 'newskit';
+import {GridLayoutItem, GridLayout, LinkStandalone} from 'newskit';
 import {ContentPrimary} from '../../content-structure';
 import {
   Sun,
@@ -14,6 +14,7 @@ import {
   WSJ,
   TimesTravel,
 } from '../../illustrations/brands';
+import {useReactKeys} from '../../../../src/utils/hooks';
 
 const SUPPORTED_BRANDS = [
   {icon: <Barrons />, url: 'https://www.barrons.com/'},
@@ -41,6 +42,7 @@ const sixRandomLogos = randomiseBrands(6, SUPPORTED_BRANDS);
 
 export const SupportedBrands = () => {
   const [brandsLogos, setBrandsLogos] = React.useState(sixRandomLogos);
+  const keys = useReactKeys(brandsLogos.length);
 
   React.useEffect(() => {
     setBrandsLogos(sixRandomLogos);
@@ -55,8 +57,8 @@ export const SupportedBrands = () => {
         columns={{xs: 'repeat(3, 1fr)', md: 'repeat(6, 1fr)'}}
         justifyItems="center"
       >
-        {brandsLogos.map(({icon, url}) => (
-          <GridLayoutItem key={getSSRId()}>
+        {brandsLogos.map(({icon, url}, index) => (
+          <GridLayoutItem key={keys[index]}>
             <LinkStandalone target="_blank" external={false} href={url}>
               {icon}
             </LinkStandalone>

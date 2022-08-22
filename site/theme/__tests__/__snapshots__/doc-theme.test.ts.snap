@@ -1361,6 +1361,7 @@ Object {
     "keepInTouchLink": Object {
       "base": Object {
         "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
         "textDecoration": "none",
       },
       "hover": Object {
@@ -1828,23 +1829,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "tagKeepInTouch": Object {
-      "active": Object {
-        "borderWidth": "{{borders.borderWidth010}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "color": "{{colors.interactiveInput040}}",
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-      "focus-visible": Object {
-        "outlineColor": "{{outlines.outlineColorDefault}}",
-        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
-        "outlineStyle": "{{outlines.outlineStyleDefault}}",
-        "outlineWidth": "{{outlines.outlineWidthDefault}}",
-        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "timerFlag": Object {
@@ -3958,6 +3942,7 @@ Object {
     "keepInTouchLink": Object {
       "base": Object {
         "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
         "textDecoration": "none",
       },
       "hover": Object {
@@ -4425,23 +4410,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "tagKeepInTouch": Object {
-      "active": Object {
-        "borderWidth": "{{borders.borderWidth010}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "color": "{{colors.interactiveInput040}}",
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-      "focus-visible": Object {
-        "outlineColor": "{{outlines.outlineColorDefault}}",
-        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
-        "outlineStyle": "{{outlines.outlineStyleDefault}}",
-        "outlineWidth": "{{outlines.outlineWidthDefault}}",
-        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "timerFlag": Object {
@@ -6558,6 +6526,7 @@ Object {
     "keepInTouchLink": Object {
       "base": Object {
         "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
         "textDecoration": "none",
       },
       "hover": Object {
@@ -7025,23 +6994,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "tagKeepInTouch": Object {
-      "active": Object {
-        "borderWidth": "{{borders.borderWidth010}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "color": "{{colors.interactiveInput040}}",
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-      "focus-visible": Object {
-        "outlineColor": "{{outlines.outlineColorDefault}}",
-        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
-        "outlineStyle": "{{outlines.outlineStyleDefault}}",
-        "outlineWidth": "{{outlines.outlineWidthDefault}}",
-        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "timerFlag": Object {
@@ -9155,6 +9107,7 @@ Object {
     "keepInTouchLink": Object {
       "base": Object {
         "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
         "textDecoration": "none",
       },
       "hover": Object {
@@ -9622,23 +9575,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "tagKeepInTouch": Object {
-      "active": Object {
-        "borderWidth": "{{borders.borderWidth010}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "color": "{{colors.interactiveInput040}}",
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-      "focus-visible": Object {
-        "outlineColor": "{{outlines.outlineColorDefault}}",
-        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
-        "outlineStyle": "{{outlines.outlineStyleDefault}}",
-        "outlineWidth": "{{outlines.outlineWidthDefault}}",
-        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "timerFlag": Object {
@@ -11755,6 +11691,7 @@ Object {
     "keepInTouchLink": Object {
       "base": Object {
         "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
         "textDecoration": "none",
       },
       "hover": Object {
@@ -12222,23 +12159,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "tagKeepInTouch": Object {
-      "active": Object {
-        "borderWidth": "{{borders.borderWidth010}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "color": "{{colors.interactiveInput040}}",
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-      "focus-visible": Object {
-        "outlineColor": "{{outlines.outlineColorDefault}}",
-        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
-        "outlineStyle": "{{outlines.outlineStyleDefault}}",
-        "outlineWidth": "{{outlines.outlineWidthDefault}}",
-        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "timerFlag": Object {
@@ -14352,6 +14272,7 @@ Object {
     "keepInTouchLink": Object {
       "base": Object {
         "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
         "textDecoration": "none",
       },
       "hover": Object {
@@ -14819,23 +14740,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "tagKeepInTouch": Object {
-      "active": Object {
-        "borderWidth": "{{borders.borderWidth010}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "color": "{{colors.interactiveInput040}}",
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-      "focus-visible": Object {
-        "outlineColor": "{{outlines.outlineColorDefault}}",
-        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
-        "outlineStyle": "{{outlines.outlineStyleDefault}}",
-        "outlineWidth": "{{outlines.outlineWidthDefault}}",
-        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "timerFlag": Object {
@@ -16952,6 +16856,7 @@ Object {
     "keepInTouchLink": Object {
       "base": Object {
         "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
         "textDecoration": "none",
       },
       "hover": Object {
@@ -17419,23 +17324,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "tagKeepInTouch": Object {
-      "active": Object {
-        "borderWidth": "{{borders.borderWidth010}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "color": "{{colors.interactiveInput040}}",
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-      "focus-visible": Object {
-        "outlineColor": "{{outlines.outlineColorDefault}}",
-        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
-        "outlineStyle": "{{outlines.outlineStyleDefault}}",
-        "outlineWidth": "{{outlines.outlineWidthDefault}}",
-        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "timerFlag": Object {
@@ -19549,6 +19437,7 @@ Object {
     "keepInTouchLink": Object {
       "base": Object {
         "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
         "textDecoration": "none",
       },
       "hover": Object {
@@ -20016,23 +19905,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "tagKeepInTouch": Object {
-      "active": Object {
-        "borderWidth": "{{borders.borderWidth010}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "color": "{{colors.interactiveInput040}}",
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-      "focus-visible": Object {
-        "outlineColor": "{{outlines.outlineColorDefault}}",
-        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
-        "outlineStyle": "{{outlines.outlineStyleDefault}}",
-        "outlineWidth": "{{outlines.outlineWidthDefault}}",
-        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "timerFlag": Object {

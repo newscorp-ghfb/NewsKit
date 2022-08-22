@@ -1,13 +1,5 @@
 import * as React from 'react';
-import {
-  Block,
-  Card,
-  GridLayout,
-  Headline,
-  LinkStandalone,
-  Tag,
-  TextBlock,
-} from 'newskit';
+import {Card, GridLayout, Headline, LinkStandalone, TextBlock} from 'newskit';
 import {IconFilledChevronRight} from '../../../../src/icons';
 import {Github, Storybook, Medium} from '../../illustrations/landing-page';
 import {ContentPrimary} from '../../content-structure';
@@ -48,34 +40,31 @@ export const KeepInTouch = () => (
           key={url}
           media={icon}
           actions={() => (
-            <Tag
-              overrides={{
-                paddingInline: 'space000',
-                stylePreset: 'tagKeepInTouch',
-              }}
+            <LinkStandalone
+              external={false}
+              href={url}
+              target="_blank"
+              overrides={{stylePreset: 'keepInTouchLink'}}
             >
-              <LinkStandalone
-                external={false}
-                href={url}
-                overrides={{stylePreset: 'keepInTouchLink'}}
-              >
-                Explore {title}
-              </LinkStandalone>
-
+              Explore {title}
               <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
-            </Tag>
+            </LinkStandalone>
           )}
         >
-          <Block marginBlockEnd="space040">
-            <Headline overrides={{typographyPreset: 'editorialHeadline020'}}>
-              {title}
-            </Headline>
-          </Block>
-          <Block marginBlockEnd="space040">
-            <TextBlock typographyPreset="editorialParagraph020">
-              {description}
-            </TextBlock>
-          </Block>
+          <Headline
+            overrides={{
+              typographyPreset: 'editorialHeadline020',
+              marginBlockEnd: 'space040',
+            }}
+          >
+            {title}
+          </Headline>
+          <TextBlock
+            typographyPreset="editorialParagraph020"
+            marginBlockEnd="space040"
+          >
+            {description}
+          </TextBlock>
         </Card>
       ))}
     </GridLayout>
