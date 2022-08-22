@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {Tag, TagSize} from '..';
+import {Tag} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -156,13 +156,13 @@ export const StoryTag = () => (
         spaceInline="space020"
         wrap="wrap"
       >
-        <Tag size={TagSize.Small} href="http://example.com">
+        <Tag size="small" href="http://example.com">
           Small
         </Tag>
-        <Tag size={TagSize.Medium} href="http://example.com">
+        <Tag size="medium" href="http://example.com">
           Medium
         </Tag>
-        <Tag size={TagSize.Large} href="http://example.com">
+        <Tag size="large" href="http://example.com">
           Large
         </Tag>
       </Stack>
@@ -187,15 +187,15 @@ export const StoryTag = () => (
         spaceInline="space020"
         wrap="wrap"
       >
-        <Tag size={TagSize.Small} href="http://example.com">
+        <Tag size="small" href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
-        <Tag size={TagSize.Medium} href="http://example.com">
+        <Tag size="medium" href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
-        <Tag size={TagSize.Large} href="http://example.com">
+        <Tag size="large" href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
@@ -217,10 +217,7 @@ export const StoryInverseTag = () => (
         <StorybookSubHeading stylePreset="inkInverse">
           tag with tagPrimaryInverse style preset
         </StorybookSubHeading>
-        <Tag
-          size={TagSize.Large}
-          overrides={{stylePreset: 'tagPrimaryInverse'}}
-        >
+        <Tag size="large" overrides={{stylePreset: 'tagPrimaryInverse'}}>
           Text
         </Tag>
       </Stack>
@@ -241,17 +238,17 @@ export const StoryTagIconSizes = () => (
         spaceStack="space020"
         wrap="wrap"
       >
-        <Tag size={TagSize.Small}>
+        <Tag size="small">
           <IconFilledEmail />
           Text
           <IconFilledEmail overrides={{size: 'iconSize030'}} />
         </Tag>
-        <Tag size={TagSize.Medium}>
+        <Tag size="medium">
           <IconFilledEmail />
           Text
           <IconFilledEmail overrides={{size: 'iconSize040'}} />
         </Tag>
-        <Tag size={TagSize.Large}>
+        <Tag size="large">
           <IconFilledEmail />
           Text
           <IconFilledEmail overrides={{size: 'iconSize050'}} />
@@ -268,17 +265,17 @@ export const StoryTagIconSizes = () => (
         spaceStack="space020"
         wrap="wrap"
       >
-        <Tag size={TagSize.Small} overrides={{iconSize: 'iconSize020'}}>
+        <Tag size="small" overrides={{iconSize: 'iconSize020'}}>
           <IconFilledEmail />
           Text
           <IconFilledEmail overrides={{size: 'iconSize030'}} />
         </Tag>
-        <Tag size={TagSize.Medium} overrides={{iconSize: 'iconSize020'}}>
+        <Tag size="medium" overrides={{iconSize: 'iconSize020'}}>
           <IconFilledEmail />
           Text
           <IconFilledEmail overrides={{size: 'iconSize040'}} />
         </Tag>
-        <Tag size={TagSize.Large} overrides={{iconSize: 'iconSize020'}}>
+        <Tag size="large" overrides={{iconSize: 'iconSize020'}}>
           <IconFilledEmail />
           Text
           <IconFilledEmail overrides={{size: 'iconSize050'}} />

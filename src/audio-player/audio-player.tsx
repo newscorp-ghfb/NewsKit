@@ -22,7 +22,6 @@ import {
 import {StyledTrack} from '../slider/styled';
 import {useTheme, Devices} from '../theme';
 import {getSingleStylePreset} from '../utils/style';
-import {LabelPosition} from '../slider/types';
 import {AudioEvents, AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
 import {StackChild} from '../stack-child';
@@ -350,7 +349,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
               )} of ${seekBarAriaValueText([duration])}`}
               onChange={onChangeSlider}
               renderTrack={renderTrack}
-              labelPosition={LabelPosition.After}
+              labelPosition="after"
               dataTestId="audio-slider"
               ariaDescribedBy={srOnlyForwardRewind}
               overrides={{
