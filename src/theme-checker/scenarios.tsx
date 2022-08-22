@@ -36,7 +36,7 @@ import {TextBlock} from '../text-block';
 import {Headline} from '../headline';
 import {DateTime} from '../date-time';
 import {Divider} from '../divider';
-import {AlignSelfValues, StackChild} from '../stack-child';
+import {StackChild} from '../stack-child';
 import {EmailInput} from '../email-input';
 import {Fieldset} from '../fieldset';
 import {Checkbox} from '../checkbox';
@@ -699,7 +699,7 @@ export const scenarios: Array<ComponentData> = [
           <Container border width="50px">
             <Stack flow="horizontal-center" stackDistribution="center">
               <IconFilledAddCircle overrides={{size: 'iconSize030'}} />
-              <StackChild alignSelf={AlignSelfValues.Stretch}>
+              <StackChild alignSelf="stretch">
                 <Divider vertical />
               </StackChild>
               <IconFilledAddCircle overrides={{size: 'iconSize030'}} />

@@ -4,7 +4,7 @@ import {styled, getColorFromTheme} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
-import {AlignSelfValues, StackChild} from '../../stack-child';
+import {StackChild} from '../../stack-child';
 
 const MainContainer = styled.div`
   margin: 0 auto;
@@ -751,10 +751,7 @@ export const StoryResponsive = () => (
         flexShrink={{xs: 2, sm: 10}}
         height={{md: '50vh'}}
       >
-        <StackChild
-          order={{xs: 10, md: 0}}
-          alignSelf={{sm: AlignSelfValues.FlexEnd}}
-        >
+        <StackChild order={{xs: 10, md: 0}} alignSelf={{sm: 'flex-end'}}>
           <Tag>Nested Item 1</Tag>
         </StackChild>
         <Tag>Nested Item 2</Tag>

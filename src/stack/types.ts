@@ -1,5 +1,4 @@
 import {MQ} from '../utils/style/types';
-import {AlignSelfValues} from '../stack-child';
 import {LogicalProps} from '../utils/logical-properties';
 
 export type FlexWrap = boolean | 'wrap' | 'nowrap' | 'wrap-reverse';
@@ -11,7 +10,6 @@ export interface CommonStackPropsWithoutMQ {
   flexShrink: boolean | number;
   flowReverse: boolean;
   flow:
-    | Flow
     | 'vertical-left'
     | 'vertical-center'
     | 'vertical-right'
@@ -22,7 +20,6 @@ export interface CommonStackPropsWithoutMQ {
     | 'horizontal-stretch';
 
   stackDistribution:
-    | StackDistribution
     | 'flex-start'
     | 'center'
     | 'flex-end'
@@ -71,7 +68,7 @@ export interface StyledChildProps
     'spaceInline' | 'spaceStack' | 'flow' | '$wrap' | 'as'
   > {
   $order?: MQ<number>;
-  $alignSelf?: AlignSelfValues;
+  $alignSelf?: MQ<string>;
   flexGrow?: boolean | number;
 }
 
