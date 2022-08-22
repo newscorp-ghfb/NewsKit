@@ -1,4 +1,4 @@
-import {TextBlockProps} from 'newskit*';
+import {TextBlockProps} from 'newskit';
 
 export type OutputType = {
   type: 'text' | 'component';

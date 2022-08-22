@@ -2664,23 +2664,9 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 600;
   letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
-}
-
-.emotion-26::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-26::after {
-  content: '';
-  margin-top: -0.4em;
   display: block;
 }
 
