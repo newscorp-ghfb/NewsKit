@@ -10,25 +10,25 @@ const Box = styled.div`
   ${getColorCssFromTheme('backgroundColor', 'green030')};
   ${getColorCssFromTheme(color => ({border: `1px solid ${color}`}), 'red030')};
 `;
+const FlowTypes = [
+  'vertical-left',
+  'vertical-center',
+  'vertical-right',
+  'vertical-stretch',
+  'horizontal-top',
+  'horizontal-center',
+  'horizontal-bottom',
+  'horizontal-stretch',
+];
 
-enum FlowEnum {
-  VerticalLeft = 'vertical-left',
-  VerticalCenter = 'vertical-center',
-  VerticalRight = 'vertical-right',
-  VerticalStretch = 'vertical-stretch',
-  HorizontalTop = 'horizontal-top',
-  HorizontalCenter = 'horizontal-center',
-  HorizontalBottom = 'horizontal-bottom',
-  HorizontalStretch = 'horizontal-stretch',
-}
-enum StackDistributionEnum {
-  Start = 'flex-start',
-  End = 'flex-end',
-  Center = 'center',
-  SpaceAround = 'space-around',
-  SpaceBetween = 'space-between',
-  SpaceEvenly = 'space-evenly',
-}
+const StackDistributionTypes = [
+  'flex-start',
+  'flex-end',
+  'center',
+  'space-around',
+  'space-between',
+  'space-evenly',
+];
 
 const children = [<Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>];
 describe('Stack', () => {
@@ -154,8 +154,8 @@ describe('Stack', () => {
     expect(fragmentSpaceInline).toMatchSnapshot();
   });
 
-  Object.values(FlowEnum).forEach(flowKey => {
-    Object.values(StackDistributionEnum).forEach(stackDistributionKey => {
+  FlowTypes.forEach(flowKey => {
+    StackDistributionTypes.forEach(stackDistributionKey => {
       test(`renders where the stack flow is ${flowKey} and the stack distribution is ${stackDistributionKey}`, () => {
         const fragment = renderToFragmentWithTheme(Stack, {
           flow: flowKey as Flow,
@@ -172,7 +172,7 @@ describe('Stack', () => {
     });
   });
 
-  Object.values(FlowEnum).forEach(flowKey => {
+  FlowTypes.forEach(flowKey => {
     ['space000', 'space090', 'space120'].forEach(space => {
       Object.values(['wrap', 'nowrap']).forEach(wrapType => {
         test(`renders where the stack flow is ${flowKey} and the spaceInline & spaceStack is set to ${space}`, () => {
@@ -194,7 +194,7 @@ describe('Stack', () => {
     });
   });
 
-  Object.values(FlowEnum).forEach(flowKey => {
+  FlowTypes.forEach(flowKey => {
     Object.values(['wrap', 'nowrap']).forEach(wrapType => {
       test(`renders where the stack flow is ${flowKey} and only spaceStack is set to space090`, () => {
         const fragment = renderToFragmentWithTheme(Stack, {
@@ -213,7 +213,7 @@ describe('Stack', () => {
     });
   });
 
-  Object.values(FlowEnum).forEach(flowKey => {
+  FlowTypes.forEach(flowKey => {
     Object.values(['wrap', 'nowrap']).forEach(wrapType => {
       test(`renders where the stack flow is ${flowKey} and only spaceInline is set to space090`, () => {
         const fragment = renderToFragmentWithTheme(Stack, {
