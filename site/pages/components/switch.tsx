@@ -1,12 +1,15 @@
 import React from 'react';
 import {InlineMessage, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
+import {Link} from '../../components/link';
+import {UsageKind} from '../../components/usage-card';
+import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {OverridesRowsProps} from '../../components/component-api';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {InlineCode} from '../../components/markdown-elements';
-import {UsageKind} from '../../components/usage-card';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -351,6 +354,274 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/switch/usage/dont-2'),
         },
       ],
+    }}
+    accessibility={{
+      introduction: (
+        <>
+          The switch has the following accessibility considerations: It’s
+          critical that the switch doesn’t change when its state changes
+          (checked / unchecked).
+        </>
+      ),
+      focusOrder: {
+        title: 'Focus order',
+        tableRows: [
+          {
+            order: 1,
+            element: 'Switch input',
+            role: 'Focusses to the switch input',
+          },
+        ],
+      },
+      interaction: {
+        title: 'Keyboard Interactions',
+        tableRows: [
+          {
+            command: ['Tab'],
+            description: 'Moves focus to the switch input',
+          },
+          {
+            command: ['Space'],
+            description: 'Toggle switch between ‘on’ and ‘off’',
+          },
+        ],
+      },
+      aria: {
+        title: 'WAI-ARIA',
+        tableRows: [
+          {
+            element: 'role',
+            attribute: 'ariaRole',
+            value: 'switch',
+            description:
+              'Aria-role attribute used to define the role of the switch.',
+            userSupplied: true,
+          },
+          {
+            element: 'label',
+            attribute: 'ariaLabel',
+            value: 'string',
+            description:
+              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the switch.',
+            userSupplied: true,
+          },
+          {
+            element: 'required',
+            attribute: 'ariaRequired',
+            value: 'object',
+            description:
+              'This attribute informs the user that an element is required. When set to true, screen readers notify users that the element is required.',
+            userSupplied: true,
+          },
+        ],
+      },
+      infoNoticeAria: [
+        <>
+          References:{' '}
+          <Link
+            target="_blank"
+            href="https://www.w3.org/WAI/ARIA/apg/patterns/switch/"
+          >
+            WAI-ARIA Authoring Practices.
+          </Link>
+        </>,
+      ],
+    }}
+    componentAPI={{
+      components: [
+        {
+          title: 'Switch',
+          summary:
+            'The switch has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'size',
+              type: ['small', 'medium', 'large'],
+              default: 'medium',
+              description:
+                'Defines the size of the Switch, including the thumb and track',
+              required: undefined,
+            },
+            {
+              name: 'label',
+              type: 'string',
+              description: 'Defines the Switch Label',
+              required: undefined,
+            },
+            {
+              name: 'labelPosition',
+              type: ['start', 'end'],
+              default: `”end”`,
+              description: 'Defines the position of the Label',
+              required: undefined,
+            },
+            {
+              name: 'labelAttributes',
+              type: 'React.LabelHTMLAttributes<HTMLLabelElement>',
+              description: 'Used to pass HTML attributes to the Label',
+              required: undefined,
+            },
+            {
+              name: 'state',
+              type: 'disabled | undefined',
+              default: 'undefined',
+              description: 'If true, renders the Switch in a disabled state',
+              required: undefined,
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'input.stylePreset',
+              type: 'MQ<string>',
+              default: 'switchTrack',
+              description:
+                'If provided, overrides the stylePreset of the Switch input',
+            },
+            {
+              attribute: 'input.blockSize',
+              type: 'MQ<string>',
+              default: [
+                'Small = sizing050',
+                'Medium = sizing060',
+                'Large = sizing070',
+              ],
+              description:
+                'It can take one space token to specify the logical block start and end size of the container. This space token can also be used on breakpoints',
+            },
+            {
+              attribute: 'input.InlineSize',
+              type: 'MQ<string>',
+              default: ['Small = 44px', 'Medium = 60px', 'Large = 76px'],
+              description:
+                'It can take one space token to specify the logical inline start and end size of the container. This space token can also be used on breakpoints',
+            },
+            {
+              attribute: 'input.paddingInline',
+              type: 'MQ<string>',
+              default: 'space010',
+              description:
+                'It can take one space token to specify the logical inline start and end margin of the container. This space token can also be used on breakpoints',
+            },
+            {
+              attribute: 'input.margin and padding',
+              type: 'MQ<string>',
+              description:
+                'It can take one space token to specify the logical inline start and end margin of the container. This space token can also be used on breakpoints',
+            },
+            {
+              attribute: 'input.spaceInline',
+              type: 'MQ<string>',
+              default: [
+                'Small = space030',
+                'Medium = space030',
+                'Large = space040',
+              ],
+              description:
+                'If provided, this overrides the inline space between the Switch input and Label',
+            },
+            {
+              attribute: 'thumb.size',
+              type: 'MQ<string>',
+              default: [
+                'Small = sizing040',
+                'Medium = sizing050',
+                'Large = sizing060',
+              ],
+              description: 'If provided, this overrides the size of the thumb',
+            },
+            {
+              attribute: 'thumb.paddingInline',
+              type: 'MQ<string>',
+              default: 'space010',
+              description: '',
+            },
+            {
+              attribute: 'thumb.paddingBlock',
+              type: 'MQ<string>',
+              default: 'space010',
+              description: '',
+            },
+            {
+              attribute: 'thumb.transitionPreset',
+              type: 'MQ<string>',
+              default: 'shiftAbsolute',
+              description:
+                'If provided, this overrides the transitionPreset of the thumb',
+            },
+            {
+              attribute: 'trackIcon.stylePreset',
+              type: 'MQ<string>',
+              default: 'switchTrackIcon',
+              description:
+                'If provided, this overrides the stylePreset of the track icon',
+            },
+            {
+              attribute: 'feedback.size',
+              type: 'MQ<string>',
+              default: [
+                'Small = sizing070',
+                'Medium = sizing080',
+                'Large = sizing090',
+              ],
+              description:
+                'If provided, this overrides the size of the feedback element',
+            },
+            {
+              attribute: 'feedback.stylePreset',
+              type: 'MQ<string>',
+              default: 'feedback',
+              description:
+                'If provided, this overrides the stylePreset of the feedback element',
+            },
+            {
+              attribute: 'feedback.transitionPreset',
+              type: 'MQ<string>',
+              default: ['shiftAbsolute', 'opacityChange'],
+              description:
+                'If provided, overrides the transitionPresets of the feedback element',
+            },
+            {
+              attribute: 'label.typographyPreset',
+              type: 'MQ<string>',
+              default: [
+                'Small = utilityBody020',
+                'Medium = utilityBody020',
+                'Large = utilityBody030',
+              ],
+              description:
+                'If provided, this overrides the typographyPreset of the Label',
+            },
+            {
+              attribute: 'label.stylePreset',
+              type: 'MQ<string>',
+              default: 'controlLabel',
+              description:
+                'If provided, this overrides the stylePreset of the Label',
+            },
+            {
+              attribute: 'onIcon',
+              type: 'Override<BaseSwitchIconProps>',
+              description:
+                'If provided, this overrides the ‘on’ icon in the track',
+            },
+            {
+              attribute: 'offIcon',
+              type: 'Override<BaseSwitchIconProps>',
+              description:
+                'If provided, this overrides the ‘off’ icon in the track',
+            },
+            {
+              attribute: 'thumbIcon',
+              type: 'Override<BaseSwitchIconProps>',
+              description: 'If provided, this overrides the thumb icon',
+            },
+            ...(commonLogicalProps() as OverridesRowsProps[]),
+          ],
+        },
+      ],
+    }}
+    related={{
+      related: ['Checkbox', 'Radio Button'],
     }}
   />
 );
