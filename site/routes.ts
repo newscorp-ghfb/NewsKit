@@ -368,6 +368,14 @@ export default [
             illustration: 'components/slider-illustration',
           },
           {
+            title: 'Switch',
+            page: true,
+            id: '/components/switch',
+            description:
+              'Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.',
+            illustration: 'components/switch/hero',
+          },
+          {
             title: 'Text Field',
             page: true,
             id: '/components/text-field',
