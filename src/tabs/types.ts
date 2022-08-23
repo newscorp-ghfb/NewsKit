@@ -6,12 +6,6 @@ import {ScrollProps} from '../scroll';
 import {Override} from '../utils/overrides';
 import {LogicalProps} from '../utils/logical-properties';
 
-export enum TabAlign {
-  Start = 'start',
-  End = 'end',
-  Center = 'center',
-}
-
 export enum TabSize {
   Small = 'small',
   Medium = 'medium',
@@ -29,6 +23,7 @@ export enum TabsIndicatorPosition {
   End = 'end',
   None = 'none',
 }
+export type TabAlign = 'start' | 'end' | 'center';
 type TabSizeType = TabSize | 'small' | 'medium' | 'large';
 export type TabsDistributionType =
   | TabsDistribution
@@ -49,7 +44,7 @@ export interface TabsProps {
   initialSelectedIndex?: number;
   selectedIndex?: number;
   indicatorPosition?: TabsIndicatorPositionType;
-  align?: 'start' | 'end' | 'none';
+  align?: TabAlign;
   onChange?: (selectedIndex: number) => void;
   overrides?: {
     spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between tabs. Should be renamed.
