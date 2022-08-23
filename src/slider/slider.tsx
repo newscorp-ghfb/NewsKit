@@ -1,7 +1,7 @@
 import React from 'react';
 import {Range, Direction} from 'react-range';
 import {SliderProps} from './types';
-import {StackDistribution, Stack, FlowTypes} from '../stack';
+import {Stack, Flow} from '../stack';
 import {
   StackContainer,
   StyledTrack,
@@ -196,8 +196,8 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
         overrides={overrides}
       >
         <Stack
-          flow={labelFlowMap[vertical ? 1 : 0][labelPosition] as FlowTypes}
-          stackDistribution={StackDistribution.SpaceBetween}
+          flow={labelFlowMap[vertical ? 1 : 0][labelPosition] as Flow}
+          stackDistribution="space-between"
           flowReverse={vertical}
           flexGrow
         >
@@ -220,7 +220,7 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
         ref={ref}
         vertical={vertical}
         inline={vertical}
-        flow={flow as FlowTypes}
+        flow={flow as Flow}
         stackDistribution="center"
         flowReverse={flowReverse}
         wrap={!inlineLabels}

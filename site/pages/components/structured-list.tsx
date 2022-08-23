@@ -1,10 +1,8 @@
 import React from 'react';
 import {
   Block,
-  Flow,
   InlineMessage,
   Stack,
-  StackDistribution,
   StructuredListCell,
   StructuredListItem,
   StructuredList,
@@ -101,10 +99,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
                 </TextBlock>
               </StructuredListCell>
               <StructuredListCell>
-                <Stack
-                  stackDistribution={StackDistribution.End}
-                  flow={Flow.HorizontalCenter}
-                >
+                <Stack stackDistribution="flex-end" flow="horizontal-center">
                   <IconOutlinedArrowForwardIos
                     overrides={{size: 'iconSize010'}}
                   />
@@ -129,10 +124,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
                 </TextBlock>
               </StructuredListCell>
               <StructuredListCell>
-                <Stack
-                  stackDistribution={StackDistribution.End}
-                  flow={Flow.HorizontalCenter}
-                >
+                <Stack stackDistribution="flex-end" flow="horizontal-center">
                   <IconOutlinedArrowForwardIos
                     overrides={{size: 'iconSize010'}}
                   />

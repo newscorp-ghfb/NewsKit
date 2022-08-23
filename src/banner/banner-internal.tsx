@@ -11,7 +11,6 @@ import {
   StyledTitleContainer,
 } from './styled';
 import {renderIfReactComponent} from '../utils/component';
-import {StackDistribution} from '../stack';
 import {StackChild} from '../stack-child';
 import {BreakpointKeys, useTheme} from '../theme';
 import {useReactKeys} from '../utils/hooks';
@@ -125,7 +124,7 @@ export const BannerInternal = React.forwardRef<
                       ? 'vertical-center'
                       : 'horizontal-center'
                   }
-                  stackDistribution={StackDistribution.Start}
+                  stackDistribution="flex-start"
                   spaceInline={actionsSpacing}
                   layout={layout}
                 >

@@ -15,7 +15,6 @@ import {
   Button,
   IconButton,
   Stack,
-  StackDistribution,
   styled,
   ThemeProvider,
   CreateThemeArgs,
@@ -393,10 +392,7 @@ export const StoryFormFieldset = () => (
     <StorybookHeading>FormInputs inside Fieldset</StorybookHeading>
 
     <Form onSubmit={onSubmit}>
-      <Stack
-        stackDistribution={StackDistribution.SpaceBetween}
-        flow="horizontal-top"
-      >
+      <Stack stackDistribution="space-between" flow="horizontal-top">
         <Fieldset
           legend="Small Fieldset"
           size="small"

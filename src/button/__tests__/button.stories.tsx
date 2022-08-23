@@ -8,7 +8,7 @@ import {
 } from '../../utils/style';
 import {ButtonOverrides, ButtonSize} from '../types';
 import {IconFilledEmail} from '../../icons';
-import {Stack, StackDistribution} from '../../stack';
+import {Stack} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
@@ -217,10 +217,7 @@ const ButtonIntentKindsScenario: React.FC<{
         const kindOverrides = {...overrides, stylePreset};
         return (
           <Cell xs={4} sm={3}>
-            <Stack
-              spaceInline="space020"
-              stackDistribution={StackDistribution.SpaceEvenly}
-            >
+            <Stack spaceInline="space020" stackDistribution="space-evenly">
               <StorybookH3
                 stylePreset={hasBackground ? 'inkInverse' : undefined}
               >

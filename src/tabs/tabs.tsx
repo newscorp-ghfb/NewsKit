@@ -17,7 +17,6 @@ import {
   StyledDistributionWrapper,
   StyledDividerWrapper,
 } from './styled';
-import {Flow} from '../stack';
 import {TabInternal} from './tab-internal';
 import {useTheme} from '../theme';
 import {useResizeObserver} from '../utils/hooks/use-resize-observer';
@@ -348,7 +347,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
           <ScrollComponent {...scrollProps}>
             <StyledInnerTabGroup
               overrides={nonLogicalOverrides}
-              flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
+              flow={vertical ? 'vertical-left' : 'horizontal-center'}
               inline={!vertical}
               role="tablist"
               aria-orientation={vertical ? 'vertical' : 'horizontal'}

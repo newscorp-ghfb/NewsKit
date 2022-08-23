@@ -2806,7 +2806,7 @@ exports[`Select renders Select with logical props 1`] = `
       aria-haspopup="listbox"
       class="emotion-2"
       data-testid="select-button"
-      id="downshift-141-toggle-button"
+      id="downshift-140-toggle-button"
       type="button"
       value="option 1"
     >

@@ -5,7 +5,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {styled, getSizingFromTheme} from '../../utils/style';
-import {Stack, StackDistribution} from '../../stack';
+import {Stack} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {Block} from '../../block';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
@@ -218,20 +218,14 @@ export const StoryTextInputStates = () => (
     <StorybookHeading>Text Input States</StorybookHeading>
     <Grid>
       <Cell xs={4} sm={4}>
-        <Stack
-          spaceInline="space100"
-          stackDistribution={StackDistribution.Start}
-        >
+        <Stack spaceInline="space100" stackDistribution="flex-start">
           {states.map(state => (
             <Label>{state}</Label>
           ))}
         </Stack>
       </Cell>
       <Cell xs={8} sm={4}>
-        <Stack
-          spaceInline="space070"
-          stackDistribution={StackDistribution.Start}
-        >
+        <Stack spaceInline="space070" stackDistribution="flex-start">
           <CustomBlock data-state="Default">
             <TextInput label="Label" assistiveText="Assistive text" />
           </CustomBlock>

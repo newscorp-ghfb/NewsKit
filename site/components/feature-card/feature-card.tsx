@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Block,
   Visible,
-  StackDistribution,
   Stack,
   Headline,
   TextBlock,
@@ -183,7 +182,7 @@ const FeatureCardHorizontal = React.forwardRef<
               },
             }}
           >
-            <Stack stackDistribution={StackDistribution.Center}>
+            <Stack stackDistribution="center">
               {title && (
                 <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
                   <Headline

@@ -3,7 +3,7 @@ import {styled, MQ} from '../../utils/style';
 import {ForwardButton, BackwardButton} from './forward-replay';
 import {PlayerButton} from './play-pause';
 import {SkipPreviousButton, SkipNextButton} from './skip-track';
-import {Stack, StackDistribution} from '../../stack';
+import {Stack} from '../../stack';
 import {StackChild} from '../../stack-child';
 import {useTheme} from '../../theme';
 import {getToken} from '../../utils/get-token';
@@ -56,11 +56,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
     togglePlay,
     overrides,
   }) => (
-    <Stack
-      flow="horizontal-center"
-      stackDistribution={StackDistribution.Center}
-      flexGrow
-    >
+    <Stack flow="horizontal-center" stackDistribution="center" flexGrow>
       <ButtonsContainer
         flow="horizontal-center"
         spaceInline={getToken(
@@ -69,9 +65,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
           '',
           'space',
         )}
-        stackDistribution={
-          live ? StackDistribution.Center : StackDistribution.Start
-        }
+        stackDistribution={live ? 'center' : 'flex-start'}
       >
         <StackChild order={3}>
           <PlayerButton

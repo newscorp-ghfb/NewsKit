@@ -2,14 +2,7 @@ import * as React from 'react';
 import {IconButton} from '..';
 import {styled, getColorCssFromTheme} from '../../utils/style';
 import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
-import {
-  Block,
-  Cell,
-  Grid,
-  Stack,
-  StackDistribution,
-  ButtonOverrides,
-} from '../..';
+import {Block, Cell, Grid, Stack, ButtonOverrides} from '../..';
 import {IconFilledEmail, IconFilledLink, IconFilledPause} from '../../icons';
 import {ThemeProvider, createTheme} from '../../theme';
 
@@ -130,10 +123,7 @@ const IconButtonIntentKindsScenario: React.FC<{
         const kindOverrides = {...overrides, stylePreset};
         return (
           <Cell xs={4} sm={3}>
-            <Stack
-              spaceInline="space020"
-              stackDistribution={StackDistribution.SpaceEvenly}
-            >
+            <Stack spaceInline="space020" stackDistribution="space-evenly">
               <StorybookH3
                 stylePreset={hasBackground ? 'inkInverse' : undefined}
               >

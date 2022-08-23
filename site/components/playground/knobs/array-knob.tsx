@@ -6,7 +6,6 @@ import {
   getColorFromTheme,
   IconButton,
   Stack,
-  Flow,
   toNewsKitIcon,
 } from 'newskit';
 import {Remove as FilledRemove} from '@emotion-icons/material/Remove';
@@ -144,7 +143,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
           const row = renderRow(label, value, i, arr.length, update);
           return row ? (
             <Stack
-              flow={Flow.HorizontalBottom}
+              flow="horizontal-bottom"
               spaceInline="space020"
               /* eslint-disable-next-line react/no-array-index-key */
               key={label + i}

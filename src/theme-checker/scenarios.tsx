@@ -25,7 +25,7 @@ import {
   IconFilledTwitter,
   IconOutlinedArrowForwardIos,
 } from '../icons';
-import {Flow, Stack, StackDistribution} from '../stack';
+import {Stack} from '../stack';
 import {AssistiveText} from '../assistive-text';
 import {Banner} from '../banner';
 import {getSSRId, MQ} from '../utils';
@@ -204,7 +204,7 @@ const modalContent = (
 );
 
 const arrowIcon = (
-  <Stack stackDistribution={StackDistribution.End} flow={Flow.HorizontalCenter}>
+  <Stack stackDistribution="flex-end" flow="horizontal-center">
     <IconOutlinedArrowForwardIos
       overrides={{
         size: 'iconSize010',
@@ -273,7 +273,7 @@ export const scenarios: Array<ComponentData> = [
       <Stack
         spaceInline="space110"
         spaceStack="space060"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         wrap="wrap"
       >
         {textFieldStates.map(([id, {state}]) => (
@@ -456,13 +456,13 @@ export const scenarios: Array<ComponentData> = [
       <Stack
         spaceInline="space110"
         spaceStack="space060"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         wrap="wrap"
       >
         {buttonPresets.map(preset => (
           <Stack spaceInline="space050" key={`${preset}-button`}>
             <LabelFlag>{preset}</LabelFlag>
-            <Stack flow={Flow.HorizontalTop} spaceInline="space090">
+            <Stack flow="horizontal-top" spaceInline="space090">
               {buttonKinds.map(kind => (
                 <Stack spaceInline="space050" key={`${kind}-button`}>
                   <LabelFlag key="flag" prefix="secondary">
@@ -502,7 +502,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Caption',
     component: () => (
       <Stack
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         spaceInline="space110"
         spaceStack="space060"
         wrap="wrap"
@@ -585,7 +585,7 @@ export const scenarios: Array<ComponentData> = [
       <Stack
         spaceInline="space100"
         spaceStack="space060"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         wrap="wrap"
       >
         {checkboxStates.map(([id, {checked, ...props}]) => (
@@ -608,7 +608,7 @@ export const scenarios: Array<ComponentData> = [
       <Stack
         spaceInline="space100"
         spaceStack="space060"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         wrap="wrap"
       >
         {switchStates.map(([id, {checked, ...props}]) => (
@@ -631,7 +631,7 @@ export const scenarios: Array<ComponentData> = [
       <Stack
         spaceInline="space100"
         spaceStack="space060"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         wrap="wrap"
       >
         {radioButtonStates.map(([id, {checked, ...props}]) => (
@@ -654,7 +654,7 @@ export const scenarios: Array<ComponentData> = [
       <Stack
         spaceInline="space110"
         spaceStack="space060"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         wrap="wrap"
       >
         <Stack spaceInline="space050">
@@ -683,7 +683,7 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Divider',
     component: () => (
-      <Stack spaceInline="space110" flow={Flow.HorizontalTop} wrap="wrap">
+      <Stack spaceInline="space110" flow="horizontal-top" wrap="wrap">
         <Stack spaceInline="space050">
           <LabelFlag>Horizontal</LabelFlag>
           <Container border height="50px" width="">
@@ -714,7 +714,7 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <Stack
         spaceInline="space110"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         spaceStack="space060"
         wrap="wrap"
       >
@@ -778,7 +778,7 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <Stack
         spaceInline="space110"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         spaceStack="space060"
         wrap="wrap"
       >
@@ -814,13 +814,13 @@ export const scenarios: Array<ComponentData> = [
       <Stack
         spaceInline="space110"
         spaceStack="space060"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         wrap="wrap"
       >
         {flagPresets.map(preset => (
           <Stack spaceInline="space050" key={`${preset}-flag`}>
             <LabelFlag>{preset}</LabelFlag>
-            <Stack flow={Flow.HorizontalTop} spaceInline="space090">
+            <Stack flow="horizontal-top" spaceInline="space090">
               {flagKinds.map(kind => (
                 <Stack spaceInline="space050" key={`${kind}-flag`}>
                   <LabelFlag key="label-flag" prefix="secondary">
@@ -940,13 +940,13 @@ export const scenarios: Array<ComponentData> = [
       <Stack
         spaceInline="space110"
         spaceStack="space060"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         wrap="wrap"
       >
         {buttonPresets.map(preset => (
           <Stack spaceInline="space050" key={`${preset}-iconButton`}>
             <LabelFlag>{preset}</LabelFlag>
-            <Stack flow={Flow.HorizontalTop} spaceInline="space090">
+            <Stack flow="horizontal-top" spaceInline="space090">
               {buttonKinds.map(kind => (
                 <Stack spaceInline="space050" key={`${kind}-iconButton`}>
                   <LabelFlag key="label-flag" prefix="secondary">
@@ -1129,7 +1129,7 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Link',
     component: () => (
-      <Stack spaceInline="space110" flow={Flow.HorizontalTop}>
+      <Stack spaceInline="space110" flow="horizontal-top">
         <Stack spaceInline="space050">
           <LabelFlag>Inline</LabelFlag>
           <LinkInline href="/">Inline link</LinkInline>
@@ -1146,7 +1146,7 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <Stack
         spaceInline="space110"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         spaceStack="space060"
         wrap="wrap"
       >
@@ -1178,7 +1178,7 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <Stack
         spaceInline="space110"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         spaceStack="space060"
         wrap="wrap"
       >
@@ -1219,7 +1219,7 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Share Bar',
     component: () => (
-      <Stack spaceInline="space110" flow={Flow.HorizontalTop}>
+      <Stack spaceInline="space110" flow="horizontal-top">
         <Stack spaceInline="space050">
           <LabelFlag>Horizontal</LabelFlag>
           <ShareBar label="Share" role="region">
@@ -1272,7 +1272,7 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <Stack
         spaceInline="space110"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         spaceStack="space060"
         wrap="wrap"
       >
@@ -1313,7 +1313,7 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <Stack
         spaceInline="space110"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         spaceStack="space060"
         wrap="wrap"
       >
@@ -1357,7 +1357,7 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <Stack
         spaceInline="space110"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         spaceStack="space060"
         wrap="wrap"
       >
@@ -1471,7 +1471,7 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Tooltip',
     component: () => (
-      <Stack spaceInline="space110" flow={Flow.HorizontalTop}>
+      <Stack spaceInline="space110" flow="horizontal-top">
         <Stack spaceInline="space050">
           <LabelFlag>With Icon Button Right Placement</LabelFlag>
           <Tooltip
@@ -1521,7 +1521,7 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'UnorderedList',
     component: () => (
-      <Stack spaceInline="space110" flow={Flow.HorizontalTop}>
+      <Stack spaceInline="space110" flow="horizontal-top">
         <Stack spaceInline="space050">
           <LabelFlag>Horizontal</LabelFlag>
           <UnorderedList listItemMarker={IconFilledAddCircle}>
@@ -1544,7 +1544,7 @@ export const scenarios: Array<ComponentData> = [
         return (
           <Stack
             spaceInline="space110"
-            flow={Flow.HorizontalTop}
+            flow="horizontal-top"
             spaceStack="space060"
             wrap="wrap"
           >

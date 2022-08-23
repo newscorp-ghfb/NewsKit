@@ -9,7 +9,7 @@ import React, {
 import {getTrackBackground} from 'react-range';
 import {ControlPanel, PopoutButton} from './controls';
 import {Slider, SliderProps} from '../slider';
-import {Stack, StackDistribution} from '../stack';
+import {Stack} from '../stack';
 import {PlayerGrid, ControlContainer, PlayerContainer} from './styled';
 import {VolumeControl} from '../volume-control';
 import {Cell} from '../grid/cell';
@@ -261,10 +261,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
         {children && <Cell xs={12}>{children}</Cell>}
 
         <Cell xsOrder={2} xs={12}>
-          <Stack
-            flow="horizontal-center"
-            stackDistribution={StackDistribution.SpaceBetween}
-          >
+          <Stack flow="horizontal-center" stackDistribution="space-between">
             <StackChild order={2}>
               <ControlPanel
                 onNextTrack={onNextTrack ? onClickNext : undefined}
@@ -314,10 +311,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
                 md
                 targetDevices={[Devices.iPadPro, Devices.iPad]}
               >
-                <Stack
-                  flow="vertical-right"
-                  stackDistribution={StackDistribution.End}
-                >
+                <Stack flow="vertical-right" stackDistribution="flex-end">
                   {popoutHref && (
                     <PopoutButton
                       onClick={onPopoutClick}

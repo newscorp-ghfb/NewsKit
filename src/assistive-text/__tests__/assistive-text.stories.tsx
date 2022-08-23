@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {AssistiveText} from '..';
 import {styled, getSizingCssFromTheme} from '../../utils/style';
-import {Stack, StackDistribution} from '../../stack';
+import {Stack} from '../../stack';
 import {Block} from '../../block';
 
 import {
@@ -32,10 +32,7 @@ export const AssistiveTextSizes = () => (
   <>
     <StorybookHeading>Assistive Text Sizes</StorybookHeading>
     <Container>
-      <Stack
-        stackDistribution={StackDistribution.SpaceBetween}
-        flow="horizontal-center"
-      >
+      <Stack stackDistribution="space-between" flow="horizontal-center">
         <Block>
           <StorybookSubHeading>Small</StorybookSubHeading>
           <AssistiveText size={'small' as TextFieldSize}>Test</AssistiveText>

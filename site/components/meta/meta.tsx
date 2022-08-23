@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  Stack,
-  Block,
-  Divider,
-  StackChild,
-  Flow,
-  Hidden,
-  Cell,
-  Grid,
-} from 'newskit';
+import {Stack, Block, Divider, StackChild, Hidden, Cell, Grid} from 'newskit';
 import {MetaProps} from './types';
 import {GitHubButton} from './github-button';
 import {FigmaButton} from './figma-button';
@@ -25,8 +16,8 @@ export const Meta = ({
   <>
     <Block spaceStack={{xs: 'space080', md: 'space050'}}>
       <Hidden xs sm>
-        <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
-          <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-center" stackDistribution="space-between">
+          <Stack flow="horizontal-top">
             <Status status={status} />
             <StackChild alignSelf="stretch">
               <Block
@@ -58,17 +49,17 @@ export const Meta = ({
       </Hidden>
 
       <Hidden md lg xl>
-        <Stack flow={Flow.VerticalLeft} spaceInline="space050">
+        <Stack flow="vertical-left" spaceInline="space050">
           <StackChild alignSelf="stretch">
             <Cell xs={6}>
               <Status status={status} />
             </Cell>
             <Cell xs={6}>
-              <Stack flow={Flow.HorizontalTop}>
+              <Stack flow="horizontal-top">
                 <Divider vertical />
                 <Block spaceInline="space060" />
                 <Stack
-                  flow={Flow.VerticalLeft}
+                  flow="vertical-left"
                   spaceInline="space020"
                   stackDistribution="space-evenly"
                 />
