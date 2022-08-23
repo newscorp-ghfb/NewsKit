@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import * as React from 'react';
+import {within, waitFor} from '@testing-library/react';
 import {
   AudioPlayerComposable,
   AudioPlayerForwardButton,
@@ -700,7 +701,17 @@ export const AudioPlayerWithInitialProps = () => {
   );
 };
 AudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
-AudioPlayerWithInitialProps.parameters = {eyes: {include: false}};
+AudioPlayerWithInitialProps.parameters = {
+  eyes: {
+    runBefore: ({rootEl}: {rootEl: HTMLElement}) =>
+      waitFor(async () => {
+        const audioElement = within(rootEl).getByTestId(
+          'audio-element',
+        ) as HTMLAudioElement;
+        expect(audioElement.currentTime).toEqual(50);
+      }),
+  },
+};
 
 export const AudioPlayerOverrides = () => {
   const breakpointKey = useBreakpointKey();
