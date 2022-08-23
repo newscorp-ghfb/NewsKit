@@ -1,5 +1,5 @@
 import React from 'react';
-import {TabInternalProps, TabSize} from './types';
+import {TabInternalProps} from './types';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme/emotion';
 import {StyledTabButton} from './styled';
@@ -14,7 +14,7 @@ export const TabInternal = React.forwardRef<
       /* istanbul ignore next */
       overrides = {},
       /* istanbul ignore next */
-      size = TabSize.Medium,
+      size = 'medium',
       ariaLabel,
       selected,
       id,

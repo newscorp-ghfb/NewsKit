@@ -5,7 +5,6 @@ import {
   Tabs,
   TabsDistribution,
   TabsIndicatorPosition,
-  TabSize,
   TextBlock,
   UnorderedList,
   InlineMessage,
@@ -506,17 +505,17 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             propName: 'size',
             options: [
               {
-                label: 'TabSize.Small',
-                value: TabSize.Small,
+                label: 'small',
+                value: 'small',
               },
               {
-                label: 'TabSize.Medium',
-                value: TabSize.Medium,
+                label: 'medium',
+                value: 'medium',
                 isDefault: true,
               },
               {
-                label: 'TabSize.Large',
-                value: TabSize.Large,
+                label: 'large',
+                value: 'large',
               },
             ],
           },

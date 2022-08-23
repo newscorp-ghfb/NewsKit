@@ -5,7 +5,7 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {compileTheme, createTheme, Tab, TabSize} from '../..';
+import {compileTheme, createTheme, Tab} from '../..';
 import {Tabs, TabsDistribution} from '..';
 import {TabsProps} from '../types';
 import {IconFilledEmail} from '../../icons';
@@ -89,7 +89,7 @@ describe('Tabs', () => {
   test('renders with sizing', () => {
     const props: TabsProps = {
       children: tabsWithLabel,
-      size: TabSize.Large,
+      size: 'large',
     };
     const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
@@ -98,7 +98,7 @@ describe('Tabs', () => {
   test('renders with icons for tabs', () => {
     const props: TabsProps = {
       children: tabsWithIcons,
-      size: TabSize.Large,
+      size: 'large',
     };
     const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
@@ -107,7 +107,7 @@ describe('Tabs', () => {
   test('renders with icons and label for tabs', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Large,
+      size: 'large',
     };
     const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
@@ -126,7 +126,7 @@ describe('Tabs', () => {
   test('renders with overrides', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Large,
+      size: 'large',
       overrides: {
         spaceInline: 'space050',
         tab: {
@@ -142,7 +142,7 @@ describe('Tabs', () => {
   test('renders with overrides vertical', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Large,
+      size: 'large',
       vertical: true,
       overrides: {
         spaceInline: 'space050',
@@ -175,7 +175,7 @@ describe('Tabs', () => {
         </Tab>,
         <Tab label="Second tab">Second tab content</Tab>,
       ],
-      size: TabSize.Large,
+      size: 'large',
       overrides: {
         spaceInline: 'space050',
         tab: {
@@ -338,7 +338,7 @@ describe('Tabs', () => {
   test('renders with fixed tab indicator size', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Medium,
+      size: 'medium',
       overrides: {
         selectionIndicator: {
           indicator: {
@@ -355,7 +355,7 @@ describe('Tabs', () => {
   test('renders with fixed tab indicator size which is larger than default', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Medium,
+      size: 'medium',
       overrides: {
         selectionIndicator: {
           indicator: {
@@ -372,7 +372,7 @@ describe('Tabs', () => {
   test('renders with fixed tab indicator percentage size', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Medium,
+      size: 'medium',
       overrides: {
         selectionIndicator: {
           indicator: {
@@ -389,7 +389,7 @@ describe('Tabs', () => {
   test('renders with custom tab bar track and indicator weight', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Medium,
+      size: 'medium',
       overrides: {
         selectionIndicator: {
           track: {

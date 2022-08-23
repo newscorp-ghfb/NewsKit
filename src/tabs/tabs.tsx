@@ -1,12 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {isFragment} from 'react-is';
-import {
-  TabProps,
-  TabsProps,
-  TabsDistribution,
-  TabSize,
-  TabAlign,
-} from './types';
+import {TabProps, TabsProps, TabsDistribution, TabAlign} from './types';
 import {
   StyledTabsBar,
   StyledInnerTabGroup,
@@ -72,7 +66,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
     {
       children,
       overrides = {},
-      size = TabSize.Medium,
+      size = 'medium',
       divider,
       vertical = false,
       distribution,
