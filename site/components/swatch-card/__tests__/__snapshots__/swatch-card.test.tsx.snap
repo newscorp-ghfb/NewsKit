@@ -7,13 +7,13 @@ exports[`SwatchCard renders with inkBase 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: #3B3B3B;
+  background: #2E3F54;
   height: 80px;
   width: 100px;
   margin-right: 8px;
   border-radius: 8px;
   border: 1px solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
 }
 
 .emotion-1 {
