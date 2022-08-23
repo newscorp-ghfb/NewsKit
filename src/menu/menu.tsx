@@ -1,17 +1,14 @@
 import React from 'react';
 import {MenuContextProvider} from './context';
-import {MenuItemAlign, MenuProps, MenutItemAlignTypes} from './types';
+import {MenuItemAlign, MenuProps} from './types';
 import {StyledMenu} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
-const getAlign = (
-  align: MenutItemAlignTypes | undefined,
-  vertical: boolean,
-) => {
+const getAlign = (align: MenuItemAlign | undefined, vertical: boolean) => {
   if (!align) {
-    return vertical ? MenuItemAlign.Start : MenuItemAlign.Center;
+    return vertical ? 'start' : 'center';
   }
   return align;
 };

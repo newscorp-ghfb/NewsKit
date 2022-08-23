@@ -9,14 +9,12 @@ import {
   MenuGroup,
   MenuDivider,
 } from 'newskit';
-import {parseEnumValues} from '../../utils/parse-enum-values';
 import {Mono} from '../../components/flags';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
-import {MenuItemAlign, MenuItemSize} from '../../../src/menu/types';
 import {Link} from '../../components/link';
 import {
   logicalMarginOverrideProps,
@@ -86,17 +84,17 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             propName: 'size',
             options: [
               {
-                label: 'MenuItemSize.Small',
-                value: MenuItemSize.Small,
+                label: 'small',
+                value: 'small',
               },
               {
-                label: 'MenuItemSize.Medium',
-                value: MenuItemSize.Medium,
+                label: 'medium',
+                value: 'medium',
                 isDefault: true,
               },
               {
-                label: 'MenuItemSize.Large',
-                value: MenuItemSize.Large,
+                label: 'large',
+                value: 'large',
               },
             ],
           },
@@ -111,17 +109,17 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             propName: 'align',
             options: [
               {
-                label: 'MenuItemAlign.Center',
-                value: MenuItemAlign.Center,
+                label: 'center',
+                value: 'center',
                 isDefault: true,
               },
               {
-                label: 'MenuItemAlign.Start',
-                value: MenuItemAlign.Start,
+                label: 'start',
+                value: 'start',
               },
               {
-                label: 'MenuItemAlign.End',
-                value: MenuItemAlign.End,
+                label: 'end',
+                value: 'end',
               },
             ],
           },
@@ -566,8 +564,8 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             },
             {
               name: 'size',
-              type: parseEnumValues(MenuItemSize),
-              default: 'MenuItemSize.medium',
+              type: "'small' | 'medium' |'large'",
+              default: 'medium',
               description: `Defines the size of the Menu.`,
             },
             {
@@ -578,7 +576,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             },
             {
               name: 'align',
-              type: parseEnumValues(MenuItemAlign),
+              type: "'start' | 'end' | 'center'",
               default: 'MenuItemAlign.start',
               description: `Defines the alignment of the Menu items.`,
             },

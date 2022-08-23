@@ -6,15 +6,19 @@ import {
 } from '../../test/test-utils';
 import {IconFilledAddCircleOutline} from '../../icons';
 import {compileTheme, createTheme} from '../..';
-import {MenuItemAlign, MenuItemProps, MenuItemSize} from '../types';
+import {MenuItemProps, MenuItemAlign} from '../types';
+
+enum MenuItemSize {
+  Small = 'small',
+  Medium = 'medium',
+  Large = 'large',
+}
 
 const MenuItemSizeKeys = (Object.keys(MenuItemSize) as unknown) as Array<
   keyof typeof MenuItemSize
 >;
 
-const MenuItemAlignKeys = (Object.keys(MenuItemAlign) as unknown) as Array<
-  keyof typeof MenuItemAlign
->;
+const MenuItemAlignKeys = ['start', 'end', 'center'];
 
 const href = 'http://';
 
@@ -380,7 +384,7 @@ describe('Menu', () => {
         const props = {
           children: menuItems,
           vertical: verticalValue,
-          align: MenuItemAlign[currentAlignment],
+          align: currentAlignment as MenuItemAlign,
         };
 
         const fragment = renderToFragmentWithTheme(Menu, props);

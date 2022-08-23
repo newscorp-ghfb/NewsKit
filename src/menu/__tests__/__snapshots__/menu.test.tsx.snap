@@ -4459,7 +4459,7 @@ exports[`Menu renders with logical prop overrides 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Menu renders with menu items aligned at the Center 1`] = `
+exports[`Menu renders with menu items aligned at the center 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -4764,7 +4764,7 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Menu renders with menu items aligned at the Center 2`] = `
+exports[`Menu renders with menu items aligned at the center 2`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -5065,7 +5065,7 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
 </DocumentFragment>
 `;
 
-exports[`Menu renders with menu items aligned at the End 1`] = `
+exports[`Menu renders with menu items aligned at the end 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -5370,7 +5370,7 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Menu renders with menu items aligned at the End 2`] = `
+exports[`Menu renders with menu items aligned at the end 2`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -5671,7 +5671,7 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
 </DocumentFragment>
 `;
 
-exports[`Menu renders with menu items aligned at the Start 1`] = `
+exports[`Menu renders with menu items aligned at the start 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -5976,7 +5976,7 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Menu renders with menu items aligned at the Start 2`] = `
+exports[`Menu renders with menu items aligned at the start 2`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
