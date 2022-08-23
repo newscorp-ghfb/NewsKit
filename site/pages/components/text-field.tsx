@@ -187,7 +187,7 @@ const formInputPropsFooter = (
       icon={infoIcon}
       role="region"
       aria-label="Engineer check"
-      overrides={{marginBlockStart: 'space050'}}
+      overrides={{marginBlockStart: 'space030'}}
     >
       Engineer to check the validation related props at the time of
       implementation.

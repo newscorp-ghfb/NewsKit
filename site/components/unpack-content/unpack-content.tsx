@@ -56,7 +56,7 @@ const fragmentToOutput = (
 
 /*
 
-UnpackComponent checks its children and wraps text, text-based components and html tags inside a TextBlock.
+UnpackComponent checks its children and wraps text, text-based components and text-based html tags inside a TextBlock.
 Also, sibling texts are wrapped in single TextBlock
 
 The transformation looks like this:

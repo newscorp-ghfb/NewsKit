@@ -224,7 +224,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
                 aria-label="Close position"
                 title="Note"
                 overrides={{
-                  marginBlockStart: 'space050',
+                  marginBlockStart: 'space030',
                 }}
               >
                 The header and close button are optional. However it&lsquo;s
