@@ -82,20 +82,18 @@ export const UnpackContent = ({
   children,
   textBlockProps = defaultTextBlockProps,
 }: UnpackContentProps) => {
-  const [singleChildren] = React.Children.toArray(children);
+  const [firstChild] = React.Children.toArray(children);
 
-  if (typeof singleChildren === 'string') {
+  if (typeof firstChild === 'string') {
     return <TextBlock {...textBlockProps}>{children}</TextBlock>;
   }
 
-  if (singleChildren && isFragment(singleChildren)) {
-    return (
-      <>{fragmentToOutput(singleChildren.props.children, textBlockProps)}</>
-    );
+  if (firstChild && isFragment(firstChild)) {
+    return <>{fragmentToOutput(firstChild.props.children, textBlockProps)}</>;
   }
 
   // There are cases in which children is undefined and nextjs complains, so we return null;
-  if (!singleChildren) {
+  if (!firstChild) {
     return null;
   }
 

@@ -50,11 +50,14 @@ export default class MyDocument extends Document {
         <body>
           <Global
             styles={css`
+              ${!isSiteEnvProduction &&
+              `
               p div,
               p p,
               p ul {
-                border: 3px solid red;
-              }
+                    outline: 7px solid red;
+                    outline-offset: 7px;
+              }`}
 
               html {
                 scroll-behavior: smooth;
