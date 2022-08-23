@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Flow, StackDistribution, Stack} from '..';
+import {Stack} from '..';
 import {styled, getColorFromTheme} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {TextBlock} from '../../text-block';
@@ -52,12 +52,30 @@ const renderChildren = (wrap: 'wrap' | 'nowrap') => {
 
   return children;
 };
+enum FlowEnum {
+  VerticalLeft = 'vertical-left',
+  VerticalCenter = 'vertical-center',
+  VerticalRight = 'vertical-right',
+  VerticalStretch = 'vertical-stretch',
+  HorizontalTop = 'horizontal-top',
+  HorizontalCenter = 'horizontal-center',
+  HorizontalBottom = 'horizontal-bottom',
+  HorizontalStretch = 'horizontal-stretch',
+}
+enum StackDistributionEnum {
+  Start = 'flex-start',
+  End = 'flex-end',
+  Center = 'center',
+  SpaceAround = 'space-around',
+  SpaceBetween = 'space-between',
+  SpaceEvenly = 'space-evenly',
+}
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const stackDistributionSet: any = () => {
   const sets = Object.values(['nowrap', 'wrap']).map(wrapType =>
-    Object.values(Flow).map((flowKey: Flow) =>
-      Object.values(StackDistribution).map(stackDistributionKey => ({
+    Object.values(FlowEnum).map(flowKey =>
+      Object.values(StackDistributionEnum).map(stackDistributionKey => ({
         storyName: `stack distribution set ${stackDistributionKey}, ${flowKey}${
           wrapType === 'wrap' ? ', wrap' : ''
         }`,
@@ -77,7 +95,7 @@ const stackDistributionSet: any = () => {
                   'horizontal-top',
                   'horizontal-center',
                   'horizontal-bottom',
-                ].includes(flowKey)
+                ].includes(flowKey as string)
               }
             >
               <Stack
@@ -143,7 +161,7 @@ export const StoryStackHorizontalUsingSpaceinlineToken = () => (
       Stack horizontal using spaceInline token
     </StorybookHeading>
     <Container>
-      <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+      <Stack spaceInline="space050" flow="horizontal-top">
         <Tag>Example 1</Tag>
         <Tag>Example 2</Tag>
         <Tag>Example 3</Tag>
@@ -184,7 +202,7 @@ export const StoryStackHorizontalUsingSpaceinlineSpacestackTokens = () => (
         spaceInline="space050"
         spaceStack="space050"
         wrap="wrap"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
       >
         <Tag>Example 1</Tag>
         <Tag>Example 2</Tag>
@@ -203,7 +221,7 @@ export const StoryStackHorizontalInline = () => (
   <MainContainer>
     <StorybookHeading>Stack horizontal inline</StorybookHeading>
     <Container hasWidth>
-      <Stack flow={Flow.HorizontalTop} inline>
+      <Stack flow="horizontal-top" inline>
         <Tag>Example 1</Tag>
         <Tag>Example 2</Tag>
         <Tag>Example 3</Tag>
@@ -242,8 +260,8 @@ export const StoryStackVerticalWithCustomHeight = () => (
     </StorybookHeading>
     <Container>
       <Stack
-        flow={Flow.VerticalLeft}
-        stackDistribution={StackDistribution.SpaceBetween}
+        flow="vertical-left"
+        stackDistribution="space-between"
         height="200px"
       >
         <Tag>Nested Item 1</Tag>
@@ -267,7 +285,7 @@ export const StoryStackVerticalWithSiblings = () => (
         <TextBlock>Sibling</TextBlock>
       </Block>
       <Stack
-        flow={Flow.VerticalLeft}
+        flow="vertical-left"
         stackDistribution="space-between"
         height="auto"
       >
@@ -284,7 +302,7 @@ export const StoryStackHorizontalReverse = () => (
   <MainContainer>
     <StorybookHeading>Stack horizontal reverse</StorybookHeading>
     <Container>
-      <Stack flow={Flow.HorizontalTop} flowReverse>
+      <Stack flow="horizontal-top" flowReverse>
         <Tag>Example 1</Tag>
         <Tag>Example 2</Tag>
         <Tag>Example 3</Tag>
@@ -301,7 +319,7 @@ export const StoryStackHorizontalReverseWithSpace = () => (
   <MainContainer>
     <StorybookHeading>Stack horizontal reverse with space</StorybookHeading>
     <Container>
-      <Stack flow={Flow.HorizontalTop} flowReverse spaceInline="space030">
+      <Stack flow="horizontal-top" flowReverse spaceInline="space030">
         <Tag>Example 1</Tag>
         <Tag>Example 2</Tag>
         <Tag>Example 3</Tag>
@@ -319,18 +337,18 @@ export const StoryNestedStacks = () => (
   <MainContainer>
     <StorybookHeading>Nested stacks</StorybookHeading>
     <Container>
-      <Stack flow={Flow.VerticalLeft}>
-        <Stack flow={Flow.HorizontalTop}>
+      <Stack flow="vertical-left">
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
@@ -345,13 +363,13 @@ export const StoryNestedHorizontalStacks = () => (
   <MainContainer>
     <StorybookHeading>Nested horizontal stacks</StorybookHeading>
     <Container>
-      <Stack flow={Flow.HorizontalTop}>
-        <Stack flow={Flow.HorizontalTop}>
+      <Stack flow="horizontal-top">
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
@@ -367,17 +385,17 @@ export const StoryNestedStacksWithSpace = () => (
     <StorybookHeading>Nested stacks with space</StorybookHeading>
     <Container>
       <Stack spaceInline="space030">
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
@@ -392,18 +410,18 @@ export const StoryNestedHorizontalStacksWithSpace = () => (
   <MainContainer>
     <StorybookHeading>Nested horizontal stacks with space</StorybookHeading>
     <Container>
-      <Stack flow={Flow.HorizontalTop} spaceInline="space050">
-        <Stack flow={Flow.HorizontalTop}>
+      <Stack flow="horizontal-top" spaceInline="space050">
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
@@ -419,11 +437,11 @@ export const StoryNestedStacksMixedContent = () => (
   <MainContainer>
     <StorybookHeading>Nested stacks with mixed content</StorybookHeading>
     <Container>
-      <Stack flow={Flow.HorizontalTop} spaceInline="space040">
+      <Stack flow="horizontal-top" spaceInline="space040">
         <Tag>Item 1</Tag>
         <Tag>Item 2</Tag>
         <Tag>Item 3</Tag>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
@@ -438,13 +456,13 @@ export const StoryNestedHorizontalStacksInline = () => (
   <MainContainer>
     <StorybookHeading>Nested horizontal stacks inline</StorybookHeading>
     <Container>
-      <Stack flow={Flow.HorizontalTop} inline>
-        <Stack flow={Flow.HorizontalTop}>
+      <Stack flow="horizontal-top" inline>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
@@ -459,13 +477,13 @@ export const StoryNestedHorizontalStacksAsSpan = () => (
   <MainContainer>
     <StorybookHeading>Nested horizontal stacks as span</StorybookHeading>
     <Container>
-      <Stack flow={Flow.HorizontalTop} as="span">
-        <Stack flow={Flow.HorizontalTop}>
+      <Stack flow="horizontal-top" as="span">
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
@@ -483,13 +501,13 @@ export const StoryNestedHorizontalStacksAsSpanWithSpace = () => (
       Nested horizontal stacks as span with space
     </StorybookHeading>
     <Container>
-      <Stack flow={Flow.HorizontalTop} as="span" spaceInline="space030">
-        <Stack flow={Flow.HorizontalTop} spaceInline="space010">
+      <Stack flow="horizontal-top" as="span" spaceInline="space030">
+        <Stack flow="horizontal-top" spaceInline="space010">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop} spaceInline="space010">
+        <Stack flow="horizontal-top" spaceInline="space010">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
@@ -559,7 +577,7 @@ export const StoryStackHorizontalAsList = () => (
   <MainContainer>
     <StorybookHeading>Stack horizontal as a list</StorybookHeading>
     <Container>
-      <Stack list ariaLabel="Tag list" flow={Flow.HorizontalTop}>
+      <Stack list ariaLabel="Tag list" flow="horizontal-top">
         <Tag>Example 1</Tag>
         <Tag>Example 2</Tag>
         <Tag>Example 3</Tag>
@@ -577,7 +595,7 @@ export const StoryStackHorizontalAsListWithSpace = () => (
         list
         spaceInline="space030"
         ariaLabel="Tag list"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
       >
         <Tag>Example 1</Tag>
         <Tag>Example 2</Tag>
@@ -600,7 +618,7 @@ export const StoryStackHorizontalAsListWithSpaceWrap = () => (
         spaceInline="space030"
         spaceStack="space030"
         ariaLabel="Tag list"
-        flow={Flow.HorizontalTop}
+        flow="horizontal-top"
         wrap="wrap"
       >
         <Tag>Example 1</Tag>
@@ -626,17 +644,17 @@ export const StoryStackAsListWithNestedStackAsChild = () => (
     </StorybookHeading>
     <Container>
       <Stack list>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
@@ -655,17 +673,17 @@ export const StoryStackAsListWithSpaceAndNestedStackAsChild = () => (
     </StorybookHeading>
     <Container>
       <Stack list spaceInline="space030">
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
@@ -682,17 +700,17 @@ export const StoryNestedStacksBothAsList = () => (
     <StorybookHeading>Nested stacks both as list</StorybookHeading>
     <Container>
       <Stack list>
-        <Stack list flow={Flow.HorizontalTop}>
+        <Stack list flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack list flow={Flow.HorizontalTop}>
+        <Stack list flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack list flow={Flow.HorizontalTop}>
+        <Stack list flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
@@ -708,17 +726,17 @@ export const StoryNestedStacksBothAsListWithSpace = () => (
     <StorybookHeading>Nested stacks both as list with space</StorybookHeading>
     <Container>
       <Stack list spaceInline="space030">
-        <Stack list flow={Flow.HorizontalTop}>
+        <Stack list flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack list flow={Flow.HorizontalTop}>
+        <Stack list flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>
         </Stack>
-        <Stack list flow={Flow.HorizontalTop}>
+        <Stack list flow="horizontal-top">
           <Tag>Nested Item 1</Tag>
           <Tag>Nested Item 2</Tag>
           <Tag>Nested Item 3</Tag>

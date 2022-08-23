@@ -7,7 +7,7 @@ import {styled} from '../../utils';
 import {Tooltip} from '../tooltip';
 import {IconFilledTwitter} from '../../icons';
 import {IconButton} from '../../icon-button';
-import {Flow, Stack} from '../../stack';
+import {Stack} from '../../stack';
 import {LinkInline, LinkStandalone} from '../../link';
 
 export default {
@@ -256,7 +256,7 @@ export const StoryTooltipPlacements = () => (
           justifySelf="center"
           alignSelf="center"
         >
-          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+          <Stack spaceInline="space050" flow="horizontal-top">
             <Tooltip content="Tooltip content" placement="top-start">
               <Button
                 size="small"
@@ -298,7 +298,7 @@ export const StoryTooltipPlacements = () => (
           justifySelf="center"
           alignSelf="center"
         >
-          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+          <Stack spaceInline="space050" flow="horizontal-top">
             <Tooltip content="Tooltip content" placement="bottom-start">
               <Button
                 size="small"
@@ -532,7 +532,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
           justifySelf="center"
           alignSelf="center"
         >
-          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+          <Stack spaceInline="space050" flow="horizontal-top">
             <Tooltip content="Tooltip content" placement="top-start" open>
               <Button
                 size="small"
@@ -574,7 +574,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
           justifySelf="center"
           alignSelf="center"
         >
-          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+          <Stack spaceInline="space050" flow="horizontal-top">
             <Tooltip content="Tooltip content" placement="bottom-start" open>
               <Button
                 size="small"
