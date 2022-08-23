@@ -632,7 +632,7 @@ const tabs = [
 
 describe('Tabs distribution', () => {
   const flows = ['horizontal', 'vertical'];
-  const tabsDistributions = Object.values(TabsDistribution) as string[];
+  const tabsDistributions = ['start', 'grow', 'equal'];
 
   flows.forEach(currentFlow => {
     test.each(tabsDistributions)(
