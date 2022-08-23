@@ -5,30 +5,38 @@ import {childIsString} from '../../../src/utils/react-children-utilities';
 import {getDisplayName} from '../../../src/utils/component';
 import {OutputType, UnpackContentProps} from './types';
 
+const allowedComponents = ['Link', 'InlineCode', 'Mono'];
+const allowedHTMLElements = ['br'];
+
 const defaultTextBlockProps = {
   stylePreset: 'inkBase',
   typographyPreset: 'editorialSubheadline020',
 };
+
+const childIsAllowedComponent = (child: React.ReactNode): boolean =>
+  allowedComponents.includes(getDisplayName(child));
+
+const childIsAllowedTag = (child: React.ReactNode): boolean =>
+  child !== null &&
+  typeof child === 'object' &&
+  'type' in child &&
+  allowedHTMLElements.includes(child.type as string);
 
 const fragmentToOutput = (
   fragment: React.ReactNode,
   textBlockProps: TextBlockProps,
 ) => {
   const output: OutputType[] = [];
-  const allowedComponents = ['Link', 'InlineCode', 'Mono'];
-  const allowedHTMLElements = ['br'];
+
   React.Children.forEach(fragment, child => {
     if (
       childIsString(child) ||
-      // @ts-ignore
-      allowedComponents.includes(getDisplayName(child)) ||
-      // @ts-ignore
-      allowedHTMLElements.includes(child && child?.type)
+      childIsAllowedComponent(child) ||
+      childIsAllowedTag(child)
     ) {
       const outputLastIndex = output.length - 1;
       const prevChild = output[outputLastIndex];
       if (prevChild && prevChild.type === 'text') {
-        // @ts-ignore
         output[outputLastIndex].children.push(child);
       } else {
         output.push({type: 'text', children: [child]});
