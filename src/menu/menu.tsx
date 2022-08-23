@@ -1,11 +1,6 @@
 import React from 'react';
 import {MenuContextProvider} from './context';
-import {
-  MenuItemAlign,
-  MenuItemSize,
-  MenuProps,
-  MenutItemAlignTypes,
-} from './types';
+import {MenuItemAlign, MenuProps, MenutItemAlignTypes} from './types';
 import {StyledMenu} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
@@ -27,7 +22,7 @@ const ThemelessMenu = React.forwardRef<HTMLElement, MenuProps>(
       overrides,
       children,
       vertical = false,
-      size = MenuItemSize.Medium,
+      size = 'medium',
       align: passedAlign,
       ...rest
     },
