@@ -12,6 +12,7 @@ import {MenuItemAlign, MenuItemSize} from '../types';
 import {styled, getColorCssFromTheme} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {LinkInline} from '../../link';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
@@ -246,7 +247,9 @@ export const StoryMenuItemsStates = () => (
     <StorybookHeading>Menu items - states</StorybookHeading>
     <StorybookSubHeading>Menu items horizontal</StorybookSubHeading>
     <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>Menu item 1</MenuItem>
+      <MenuItem href="" as="div">
+        <LinkInline href="/">Menu item as div</LinkInline>
+      </MenuItem>
       <MenuItem href={href} selected>
         Menu item 2
       </MenuItem>

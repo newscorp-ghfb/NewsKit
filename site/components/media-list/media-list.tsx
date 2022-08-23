@@ -59,7 +59,8 @@ export const MediaList: React.FC<MediaListProps> = ({
         );
 
         return (
-          <Cell {...cellColumnList}>
+          // eslint-disable-next-line react/no-array-index-key
+          <Cell {...cellColumnList} key={`index-${index}`}>
             {cardProps.href && (
               <LinkNext href={cardProps.href} passHref>
                 {styledCardComponentWithProps}
