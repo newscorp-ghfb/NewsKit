@@ -2886,7 +2886,7 @@ exports[`Tag renders in disabled state 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag renders with Large size 1`] = `
+exports[`Tag renders large Tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -3043,7 +3043,7 @@ exports[`Tag renders with Large size 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag renders with Medium size 1`] = `
+exports[`Tag renders medium Tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -3200,7 +3200,7 @@ exports[`Tag renders with Medium size 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag renders with Small size 1`] = `
+exports[`Tag renders small Tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
