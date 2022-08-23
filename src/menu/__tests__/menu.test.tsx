@@ -17,7 +17,7 @@ enum MenuItemSize {
 const MenuItemSizeKeys = (Object.keys(MenuItemSize) as unknown) as Array<
   keyof typeof MenuItemSize
 >;
-
+const MenuItemSizeArray = ['small', 'medium', 'large'];
 const MenuItemAlignKeys = ['start', 'end', 'center'];
 
 const href = 'http://';
@@ -94,14 +94,14 @@ describe('MenuItem', () => {
     const fragment = renderToFragmentWithTheme(MenuWithItem, props);
     expect(fragment).toMatchSnapshot();
   });
-  test.each(MenuItemSizeKeys)('renders in %s size', currentSize => {
+  test.each(MenuItemSizeArray)('renders in %s size', currentSize => {
     const props = {
       children: menuItemContent,
       href,
     };
     const fragment = renderToFragmentWithTheme(MenuWithItem, {
       ...props,
-      size: MenuItemSize[currentSize],
+      size: currentSize as 'small' | 'medium' | 'large',
     });
     expect(fragment).toMatchSnapshot();
   });

@@ -8005,7 +8005,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 </DocumentFragment>
 `;
 
-exports[`MenuItem renders in Large size 1`] = `
+exports[`MenuItem renders in large size 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -8237,7 +8237,7 @@ exports[`MenuItem renders in Large size 1`] = `
 </DocumentFragment>
 `;
 
-exports[`MenuItem renders in Medium size 1`] = `
+exports[`MenuItem renders in medium size 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -8469,7 +8469,7 @@ exports[`MenuItem renders in Medium size 1`] = `
 </DocumentFragment>
 `;
 
-exports[`MenuItem renders in Small size 1`] = `
+exports[`MenuItem renders in small size 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
