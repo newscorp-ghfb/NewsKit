@@ -5,22 +5,22 @@ import {childIsString} from '../../../src/utils/react-children-utilities';
 import {getDisplayName} from '../../../src/utils/component';
 import {OutputType, UnpackContentProps} from './types';
 
-const allowedComponents = ['Link', 'InlineCode', 'Mono', 'ColoredTextElement'];
-const allowedHTMLElements = ['br', 'b', 'em'];
+const textComponents = ['Link', 'InlineCode', 'Mono', 'ColoredTextElement'];
+const textHTMLElements = ['br', 'b', 'em'];
 
 const defaultTextBlockProps = {
   stylePreset: 'inkBase',
   typographyPreset: 'editorialSubheadline020',
 };
 
-const childIsAllowedComponent = (child: React.ReactNode): boolean =>
-  allowedComponents.includes(getDisplayName(child));
+const childIsTextComponent = (child: React.ReactNode): boolean =>
+  textComponents.includes(getDisplayName(child));
 
-const childIsAllowedTag = (child: React.ReactNode): boolean =>
+const childIsTextTag = (child: React.ReactNode): boolean =>
   child !== null &&
   typeof child === 'object' &&
   'type' in child &&
-  allowedHTMLElements.includes(child.type as string);
+  textHTMLElements.includes(child.type as string);
 
 const fragmentToOutput = (
   fragment: React.ReactNode,
@@ -31,8 +31,8 @@ const fragmentToOutput = (
   React.Children.forEach(fragment, child => {
     if (
       childIsString(child) ||
-      childIsAllowedComponent(child) ||
-      childIsAllowedTag(child)
+      childIsTextComponent(child) ||
+      childIsTextTag(child)
     ) {
       const outputLastIndex = output.length - 1;
       const prevChild = output[outputLastIndex];
