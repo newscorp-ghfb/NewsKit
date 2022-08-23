@@ -1390,8 +1390,8 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 .emotion-23.emotion-23 {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 @media screen {
@@ -1538,6 +1538,10 @@ exports[`Media List renders with feature cardscards 1`] = `
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+}
+
+.emotion-35 {
+  margin-bottom: 24px;
 }
 
 .emotion-37 {
@@ -1708,7 +1712,7 @@ exports[`Media List renders with feature cardscards 1`] = `
                           </section>
                         </div>
                         <div
-                          class="emotion-15"
+                          class="emotion-35"
                         >
                           <p
                             class="emotion-16"

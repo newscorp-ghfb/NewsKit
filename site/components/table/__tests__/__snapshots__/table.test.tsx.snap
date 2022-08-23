@@ -483,7 +483,7 @@ exports[`Table renders links correctly 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -716,7 +716,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
