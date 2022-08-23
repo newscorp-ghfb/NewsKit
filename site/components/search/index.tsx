@@ -54,13 +54,14 @@ export const Search: React.FC = () => {
           aria-label="Search"
           data-testid="search-icon-button"
           overrides={{
-            stylePreset: 'iconButtonMinimalSecondary',
+            stylePreset: 'iconButtonMinimalPrimary',
           }}
-          size="small"
           ref={searchButtonRef}
           onClick={onOpen}
         >
-          <IconFilledSearch />
+          <IconFilledSearch
+            overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
+          />
         </IconButton>
       </SearchIconContainer>
       <Visible lg xl>

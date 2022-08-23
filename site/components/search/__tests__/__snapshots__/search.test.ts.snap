@@ -64,7 +64,7 @@ exports[`Search renders correctly 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #577FFB;
   margin: 0;
   cursor: pointer;
 }
@@ -75,15 +75,15 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #2E2E2E;
+  fill: #577FFB;
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E0E7FF;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #CCCCCC;
+  background-color: #AEBFFF;
 }
 
 .emotion-1:disabled {
@@ -157,7 +157,8 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-4 {
-  fill: #2E2E2E;
+  color: #0A0A0A;
+  fill: #0A0A0A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -172,6 +173,29 @@ exports[`Search renders correctly 1`] = `
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4.emotion-4 {
+  width: 24px;
+  height: 24px;
+  color: #0A0A0A;
+  fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4.emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4.emotion-4 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
