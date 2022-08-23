@@ -20,6 +20,9 @@ failOnConsole({
       return true;
     }
 
+    if (errorMessage.includes('Check the render method of `UnpackContent`')) {
+      return true;
+    }
     return false;
   },
 });

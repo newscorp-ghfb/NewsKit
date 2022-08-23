@@ -3,7 +3,6 @@ import {isFragment} from 'react-is';
 import {TextBlock, TextBlockProps} from 'newskit';
 import {childIsString} from '../../../src/utils/react-children-utilities';
 import {getDisplayName} from '../../../src/utils/component';
-import {useReactKeys} from '../../../src/utils/hooks';
 import {OutputType, UnpackContentProps} from './types';
 
 const defaultTextBlockProps = {
@@ -39,18 +38,11 @@ const fragmentToOutput = (
     }
   });
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const keys = useReactKeys(output.length);
-
-  return output.map((child, index) => {
+  return output.map(child => {
     if (child.type === 'text') {
-      return (
-        <TextBlock key={keys[index]} {...textBlockProps}>
-          {child.children}
-        </TextBlock>
-      );
+      return <TextBlock {...textBlockProps}>{child.children}</TextBlock>;
     }
-    return <React.Fragment key={keys[index]}>{child.children}</React.Fragment>;
+    return child.children;
   });
 };
 
