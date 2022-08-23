@@ -5,8 +5,8 @@ import {childIsString} from '../../../src/utils/react-children-utilities';
 import {getDisplayName} from '../../../src/utils/component';
 import {OutputType, UnpackContentProps} from './types';
 
-const allowedComponents = ['Link', 'InlineCode', 'Mono'];
-const allowedHTMLElements = ['br'];
+const allowedComponents = ['Link', 'InlineCode', 'Mono', 'ColoredTextElement'];
+const allowedHTMLElements = ['br', 'b', 'em'];
 
 const defaultTextBlockProps = {
   stylePreset: 'inkBase',
@@ -56,7 +56,10 @@ const fragmentToOutput = (
 
 /*
 
-Transforms from:
+UnpackComponent checks its children and wraps text, text-based components and html tags inside a TextBlock.
+Also, sibling texts are wrapped in single TextBlock
+
+The transformation looks like this:
 <>
   Text
   <Component />
@@ -64,15 +67,12 @@ Transforms from:
   <br />
   <Link>
 </>
-Into:
+
+Into this:
 <>
   <TextBlock>Text<TextBlock>
   <Component />
-   <TextBlock>
-    Text
-    <br />
-    <Link>
-  <TextBlock>
+  <TextBlock>Text <br /> <Link><TextBlock>
 </>
 
 

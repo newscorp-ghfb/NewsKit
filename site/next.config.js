@@ -8,7 +8,6 @@ const withMDX = require('./mdx');
 
 module.exports = withMDX({
   reactStrictMode: true,
-  strictMode: true,
   eslint: {
     dirs: [
       'components',

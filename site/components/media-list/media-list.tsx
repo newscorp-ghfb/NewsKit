@@ -7,7 +7,6 @@ import {BaseCard, BaseCardProps} from '../base-card';
 import {MediaListProps} from './types';
 import {spanListConfig} from './span-list-config';
 import {FeatureCard, FeatureCardProps} from '../feature-card';
-import {useReactKeys} from '../../../src/utils/hooks';
 
 const CardTypes = {
   usage: UsageCard,
@@ -40,9 +39,6 @@ export const MediaList: React.FC<MediaListProps> = ({
       notHeroCardGroup: spanListConfig[layout],
     };
 
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const reactKeys = useReactKeys(cards.length);
-
     if (cards.length === 0) return null;
 
     cardListToRender.push(
@@ -56,7 +52,6 @@ export const MediaList: React.FC<MediaListProps> = ({
 
         const styledCardComponentWithProps = (
           <StyledCardComponent
-            key={`${reactKeys[index]}card`}
             layout={cardListOrientation}
             overrides={{horizontalRatio} as {}}
             {...cardProps}
@@ -64,16 +59,9 @@ export const MediaList: React.FC<MediaListProps> = ({
         );
 
         return (
-          <Cell
-            {...cellColumnList}
-            key={`${cardProps.title}-${cardProps.href}-${reactKeys[index]}`}
-          >
+          <Cell {...cellColumnList}>
             {cardProps.href && (
-              <LinkNext
-                href={cardProps.href}
-                passHref
-                key={`${reactKeys[index]}link`}
-              >
+              <LinkNext href={cardProps.href} passHref>
                 {styledCardComponentWithProps}
               </LinkNext>
             )}
@@ -105,11 +93,9 @@ export const MediaList: React.FC<MediaListProps> = ({
 
     return (
       <>
-        <Visible key="vertical" {...verticalBreakpoints}>
-          {renderCards('vertical')}
-        </Visible>
+        <Visible {...verticalBreakpoints}>{renderCards('vertical')}</Visible>
 
-        <Visible key="horizontal" {...horizontalBreakpoints}>
+        <Visible {...horizontalBreakpoints}>
           {renderCards('horizontal')}
         </Visible>
       </>

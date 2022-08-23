@@ -69,7 +69,6 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
           >
             {headline}
           </TextBlock>
-          {/* {(description || children) && <Block spaceStack={headlineSpace} />} */}
         </GridLayoutItem>
       )}
 
@@ -78,9 +77,6 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
           column={textColumns}
           marginBlockEnd={children ? descriptionSpace : undefined}
         >
-          {/* <TextBlock as="p" {...descriptionOverrides}>
-            {description}
-          </TextBlock> */}
           <UnpackContent textBlockProps={descriptionOverrides}>
             {description}
           </UnpackContent>

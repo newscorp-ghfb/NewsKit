@@ -8,6 +8,7 @@ import {
   Button,
   styled,
   EmailInput,
+  UnorderedList,
 } from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
@@ -1022,42 +1023,41 @@ const schema = yup.object().shape({
                 aria-label="FormInput component"
                 title="Note"
               >
-                Please refer to the following FormInput component pages for
-                details of props & overrides:
-                {/* 
-                TODO: UnorderedList inside Inline Message
-                <UnorderedList
-                  markerAlign="start"
-                  listItemMarker={IconFilledCircle}
-                  overrides={{
-                    spaceStack: 'space040',
-                    content: {
-                      typographyPreset: 'editorialParagraph010',
-                    },
-                    marginBlockStart: 'space050',
-                  }}
-                >
-                  <>
-                    <Link href="/components/text-field/#component-api">
-                      FormInputTextField
-                    </Link>
-                  </>
-                  <>
-                    <Link href="/components/select/#component-api">
-                      FormInputSelect
-                    </Link>
-                  </>
-                  <>
-                    <Link href="/components/checkbox/#component-api">
-                      FormInputCheckbox
-                    </Link>
-                  </>
-                  <>
-                    <Link href="/components/radio-button/#component-api">
-                      FormInputRadioButton
-                    </Link>
-                  </>
-                </UnorderedList> */}
+                <>
+                  Please refer to the following FormInput component pages for
+                  details of props & overrides:
+                  <UnorderedList
+                    markerAlign="start"
+                    overrides={{
+                      spaceStack: 'space040',
+                      content: {
+                        typographyPreset: 'editorialParagraph010',
+                      },
+                      marginBlockStart: 'space050',
+                    }}
+                  >
+                    <>
+                      <Link href="/components/text-field/#component-api">
+                        FormInputTextField
+                      </Link>
+                    </>
+                    <>
+                      <Link href="/components/select/#component-api">
+                        FormInputSelect
+                      </Link>
+                    </>
+                    <>
+                      <Link href="/components/checkbox/#component-api">
+                        FormInputCheckbox
+                      </Link>
+                    </>
+                    <>
+                      <Link href="/components/radio-button/#component-api">
+                        FormInputRadioButton
+                      </Link>
+                    </>
+                  </UnorderedList>
+                </>
               </InlineMessage>
             </>
           ),

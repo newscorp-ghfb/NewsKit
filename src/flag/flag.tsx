@@ -32,7 +32,6 @@ const BaseFlag = React.forwardRef<
         spaceInline={getToken({theme, overrides}, '', '', 'spaceInline')}
         flow={Flow.HorizontalCenter}
         stackDistribution={StackDistribution.Center}
-        // TODO: reverse that if breaks in applitools
         as="span"
       >
         {React.Children.map(children, child =>
