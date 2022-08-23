@@ -30,7 +30,7 @@ export const FeatureCardsForIndex = () => (
       <FeatureCard
         title="Contribute"
         description="Contributions needed! There are many ways to share your great work and ideas with the community."
-        stylePrefix="contributeCard"
+        stylePrefix="contributeOldCard"
         href="/about/contribute"
         layout="vertical"
         buttonLabel="Read more"
