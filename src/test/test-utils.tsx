@@ -86,7 +86,6 @@ export const renderWithThemeInBody = <T extends {}>(
 
     // downshift adds this element to the body, we don't want to be part of the snapshots
     const msg = template.content.getElementById('a11y-status-message');
-    /* istanbul ignore next */
     if (msg) msg.remove();
 
     return template.content;
@@ -116,7 +115,6 @@ export const renderInBody = <T extends {}>(
 
     // downshift adds this element to the body, we don't want to be part of the snapshots
     const msg = template.content.getElementById('a11y-status-message');
-    /* istanbul ignore next */
     if (msg) msg.remove();
 
     return template.content;
