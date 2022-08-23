@@ -166,7 +166,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             {
               name: 'align',
               type: ' start | end | center',
-              default: 'Tab.Align.Start',
+              default: 'start',
               description: 'Defines the alignment of the Tabs.',
             },
             {
@@ -824,19 +824,19 @@ const TabsComponent = (layoutProps: LayoutProps) => (
               }}
             >
               <>
-                <Mono>Start</Mono>&nbsp; Aligns the Tab items to the left of the
+                <Mono>start</Mono>&nbsp; Aligns the Tab items to the left of the
                 content area for horizontal orientation (default) and to the top
                 for vertical orientation. The width of the Tab Group is defined
                 by the width of its children.
               </>
               <>
-                <Mono>Grow</Mono> Spreads all Tab items across the content area,
+                <Mono>grow</Mono> Spreads all Tab items across the content area,
                 filling the entire available width or height depending on the
                 orientation. The width of each Tab item is defined by it’s
                 content.
               </>
               <>
-                <Mono>Equal</Mono> Spaces each tab across the content area
+                <Mono>equal</Mono> Spaces each tab across the content area
                 equally, regardless of the width or height of its children.
               </>
             </UnorderedList> // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -859,21 +859,21 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                 }}
               >
                 <>
-                  <Mono>Start</Mono>&nbsp;Aligns the Tab item label and icons to
+                  <Mono>start</Mono>&nbsp;Aligns the Tab item label and icons to
                   the left.
                 </>
                 <>
-                  <Mono>Center</Mono> Centers the Tab item label and icons.
+                  <Mono>center</Mono> Centers the Tab item label and icons.
                 </>
                 <>
-                  <Mono>End</Mono> Aligns the Tab item label and icons to the
+                  <Mono>end</Mono> Aligns the Tab item label and icons to the
                   right.
                 </>
               </UnorderedList>
               <p>
                 NOTE - The default alignment depends on the orientation. When
-                Tabs are vertical it’s <Mono>Start</Mono> and when Tabs are
-                horizontal it’s <Mono>Center</Mono>.
+                Tabs are vertical it’s <Mono>start</Mono> and when Tabs are
+                horizontal it’s <Mono>center</Mono>.
               </p>
             </> // eslint-disable-next-line @typescript-eslint/no-explicit-any
           ) as any,
