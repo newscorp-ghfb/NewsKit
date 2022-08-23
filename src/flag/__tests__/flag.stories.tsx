@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Flag, FlagSize} from '..';
+import {Flag} from '..';
 import {styled} from '../../utils/style';
 import {IconFilledEmail} from '../../icons';
 import {Stack} from '../../stack';
@@ -129,15 +129,15 @@ export const StoryFlag = () => (
       spaceInline="space020"
       wrap="wrap"
     >
-      <Flag size={FlagSize.Small}>Small</Flag>
-      <Flag size={FlagSize.Medium}>Medium</Flag>
-      <Flag size={FlagSize.Large}>Large</Flag>
+      <Flag size="small">Small</Flag>
+      <Flag size="medium">Medium</Flag>
+      <Flag size="large">Large</Flag>
     </Stack>
 
     <StorybookSubHeading>with Typography Preset override</StorybookSubHeading>
     <Block>
       <Flag
-        size={FlagSize.Small}
+        size="small"
         overrides={{
           typographyPreset: 'meta020',
         }}
@@ -157,10 +157,7 @@ export const StoryInverseFlag = () => (
         <StorybookSubHeading stylePreset="white">
           with flagSolidInverse style preset
         </StorybookSubHeading>
-        <Flag
-          overrides={{stylePreset: 'flagSolidInverse'}}
-          size={FlagSize.Large}
-        >
+        <Flag overrides={{stylePreset: 'flagSolidInverse'}} size="large">
           Text
         </Flag>
       </Block>
@@ -168,10 +165,7 @@ export const StoryInverseFlag = () => (
         <StorybookSubHeading stylePreset="white">
           with flagMinimalInverse style preset
         </StorybookSubHeading>
-        <Flag
-          overrides={{stylePreset: 'flagMinimalInverse'}}
-          size={FlagSize.Large}
-        >
+        <Flag overrides={{stylePreset: 'flagMinimalInverse'}} size="large">
           Text
         </Flag>
       </Block>
@@ -191,11 +185,11 @@ export const StoryFlagWithIcons = () => (
         spaceStack="space020"
         wrap="wrap"
       >
-        <Flag size={FlagSize.Small}>
+        <Flag size="small">
           <IconFilledEmail />
           Text
         </Flag>
-        <Flag size={FlagSize.Large}>
+        <Flag size="large">
           <IconFilledEmail />
           Text
         </Flag>
@@ -210,11 +204,11 @@ export const StoryFlagWithIcons = () => (
         spaceStack="space020"
         wrap="wrap"
       >
-        <Flag size={FlagSize.Small}>
+        <Flag size="small">
           Text
           <IconFilledEmail />
         </Flag>
-        <Flag size={FlagSize.Large}>
+        <Flag size="large">
           Text
           <IconFilledEmail />
         </Flag>
@@ -229,12 +223,12 @@ export const StoryFlagWithIcons = () => (
         spaceStack="space020"
         wrap="wrap"
       >
-        <Flag size={FlagSize.Small}>
+        <Flag size="small">
           <IconFilledEmail />
           Text
           <IconFilledEmail />
         </Flag>
-        <Flag size={FlagSize.Large}>
+        <Flag size="large">
           <IconFilledEmail />
           Text
           <IconFilledEmail />
@@ -252,12 +246,12 @@ export const StoryFlagWithIcons = () => (
         spaceStack="space020"
         wrap="wrap"
       >
-        <Flag size={FlagSize.Small}>
+        <Flag size="small">
           <IconFilledEmail />
           Text
           <IconFilledEmail overrides={{size: 'iconSize030'}} />
         </Flag>
-        <Flag size={FlagSize.Large}>
+        <Flag size="large">
           <IconFilledEmail />
           Text
           {/* size to be moved in icon overrides as part of PPDSC-1341 */}
@@ -276,12 +270,12 @@ export const StoryFlagWithIcons = () => (
         spaceStack="space020"
         wrap="wrap"
       >
-        <Flag size={FlagSize.Small} overrides={{iconSize: 'iconSize020'}}>
+        <Flag size="small" overrides={{iconSize: 'iconSize020'}}>
           <IconFilledEmail />
           Text
           <IconFilledEmail overrides={{size: 'iconSize030'}} />
         </Flag>
-        <Flag size={FlagSize.Large} overrides={{iconSize: 'iconSize020'}}>
+        <Flag size="large" overrides={{iconSize: 'iconSize020'}}>
           <IconFilledEmail />
           Text
           <IconFilledEmail overrides={{size: 'iconSize040'}} />

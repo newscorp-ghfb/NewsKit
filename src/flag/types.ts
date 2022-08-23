@@ -2,12 +2,7 @@ import {LogicalProps} from '../utils/logical-properties';
 import {TransitionToken} from '../theme/types';
 import {MQ} from '../utils/style';
 
-export enum FlagSize {
-  Small = 'small',
-  Medium = 'medium',
-  Large = 'large',
-}
-
+export type FlagSize = 'small' | 'medium' | 'large';
 export interface BaseFlagOverrides extends LogicalProps {
   typographyPreset?: MQ<string>;
   stylePreset?: MQ<string>;
@@ -30,7 +25,7 @@ export interface BaseFlagProps<TOverrides> {
   disabled?: boolean;
   loading?: boolean;
   overrides?: TOverrides;
-  size?: 'small' | 'medium' | 'large';
+  size?: FlagSize;
   children?: React.ReactNode;
 }
 export interface FlagProps

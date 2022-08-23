@@ -1,6 +1,6 @@
 import React, {PropsWithChildren} from 'react';
 
-import {FlagProps, FlagSize, BaseFlagProps, BaseFlagOverrides} from './types';
+import {FlagProps, BaseFlagProps, BaseFlagOverrides} from './types';
 import {Stack} from '../stack';
 import {StyledBaseFlag} from './styled';
 import {useTheme} from '../theme';
@@ -54,7 +54,7 @@ const ThemelessFlag = React.forwardRef<
   PropsWithChildren<FlagProps>
 >(({overrides = {}, ...props}, ref) => {
   const theme = useTheme();
-  const {size = FlagSize.Medium} = props;
+  const {size = 'medium'} = props;
 
   return (
     <BaseFlag
