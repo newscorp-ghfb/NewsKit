@@ -119,7 +119,7 @@ export const ResponsiveExample = () => (
          "D"
          "E"
          `,
-        md: ` 
+        md: `
           "A A"
           "B C"
           "D E"`,
@@ -127,7 +127,7 @@ export const ResponsiveExample = () => (
           "A B"
           "A C"
           "A D"
-          "A E"  
+          "A E"
     `,
       }}
       columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr 200px'}}
@@ -224,29 +224,29 @@ const BigRedBlock = styled(Block)`
   background: red;
 `;
 
-export const WithOverrides = () => (
-  <>
-    <StorybookHeading>With overrides</StorybookHeading>
-    <StorybookSubHeading>Unconstrained width</StorybookSubHeading>
-    <GridLayout columns="1fr 1fr" columnGap="20px">
-      <GridLayoutItem>
-        <BigRedBlock />
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <BigRedBlock />
-      </GridLayoutItem>
-    </GridLayout>
-    <StorybookSubHeading>Width 500px</StorybookSubHeading>
-    <GridLayout columns="1fr 1fr" columnGap="20px" overrides={{width: '500px'}}>
-      <GridLayoutItem>
-        <BigRedBlock />
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <BigRedBlock />
-      </GridLayoutItem>
-    </GridLayout>
-  </>
-);
+// export const WithOverrides = () => (
+//   <>
+//     <StorybookHeading>With overrides</StorybookHeading>
+//     <StorybookSubHeading>Unconstrained width</StorybookSubHeading>
+//     <GridLayout columns="1fr 1fr" columnGap="20px">
+//       <GridLayoutItem>
+//         <BigRedBlock />
+//       </GridLayoutItem>
+//       <GridLayoutItem>
+//         <BigRedBlock />
+//       </GridLayoutItem>
+//     </GridLayout>
+//     <StorybookSubHeading>Width 500px</StorybookSubHeading>
+//     <GridLayout columns="1fr 1fr" columnGap="20px" overrides={{width: '500px'}}>
+//       <GridLayoutItem>
+//         <BigRedBlock />
+//       </GridLayoutItem>
+//       <GridLayoutItem>
+//         <BigRedBlock />
+//       </GridLayoutItem>
+//     </GridLayout>
+//   </>
+// );
 
 export const WithLogicalPropsOverrides = () => (
   <>
