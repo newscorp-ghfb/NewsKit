@@ -8,7 +8,6 @@ import {
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {IconFilledAddCircleOutline, IconFilledClose} from '../../icons';
 import {Menu, MenuItem, MenuGroup, MenuDivider} from '..';
-import {MenuItemSize} from '../types';
 import {styled, getColorCssFromTheme} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
@@ -277,7 +276,7 @@ export const StoryMenuItemsSizes = () => (
   <>
     <StorybookHeading>Menu items in different sizes</StorybookHeading>
     <StorybookSubHeading>Small menu items</StorybookSubHeading>
-    <Menu size={MenuItemSize.Small} aria-label={`Menu ${getSSRId()}`}>
+    <Menu size="small" aria-label={`Menu ${getSSRId()}`}>
       <MenuItem href={href}>
         <IconFilledAddCircleOutline /> Menu item 1
         <IconFilledAddCircleOutline />
@@ -299,7 +298,7 @@ export const StoryMenuItemsSizes = () => (
     <br />
     <br />
     <StorybookSubHeading>Medium menu items</StorybookSubHeading>
-    <Menu size={MenuItemSize.Medium} aria-label={`Menu ${getSSRId()}`}>
+    <Menu size="medium" aria-label={`Menu ${getSSRId()}`}>
       <MenuItem href={href}>
         <IconFilledAddCircleOutline /> Menu item 1
         <IconFilledAddCircleOutline />
@@ -321,7 +320,7 @@ export const StoryMenuItemsSizes = () => (
     <br />
     <br />
     <StorybookSubHeading>Large menu items</StorybookSubHeading>
-    <Menu size={MenuItemSize.Large} aria-label={`Menu ${getSSRId()}`}>
+    <Menu size="large" aria-label={`Menu ${getSSRId()}`}>
       <MenuItem href={href}>
         <IconFilledAddCircleOutline /> Menu item 1
       </MenuItem>

@@ -1,13 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {isFragment} from 'react-is';
-import {
-  TabProps,
-  TabsProps,
-  TabsDistribution,
-  TabSize,
-  TabAlign,
-  TabsIndicatorPosition,
-} from './types';
+import {TabProps, TabsProps, TabsDistribution, TabAlign} from './types';
 import {
   StyledTabsBar,
   StyledInnerTabGroup,
@@ -56,7 +49,7 @@ const validateSelectedIndex = (index: number, children: unknown[]): number =>
 
 const getAlign = (align: TabAlign | undefined, vertical: boolean) => {
   if (!align) {
-    return vertical ? TabAlign.Start : TabAlign.Center;
+    return vertical ? 'start' : 'center';
   }
   return align;
 };
@@ -72,13 +65,13 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
     {
       children,
       overrides = {},
-      size = TabSize.Medium,
+      size = 'medium',
       divider,
       vertical = false,
       distribution,
       selectedIndex,
       initialSelectedIndex = 0,
-      indicatorPosition = TabsIndicatorPosition.End,
+      indicatorPosition = 'end',
       align: passedAlign,
       onChange,
     },

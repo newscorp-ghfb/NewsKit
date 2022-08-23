@@ -12,7 +12,6 @@ import {
   DistributionWrapperProps,
   TabsBarProps,
   TabInternalProps,
-  TabAlign,
   TabsIndicatorPositionType,
   TabsDistributionType,
 } from './types';
@@ -174,7 +173,7 @@ export const StyledTabButton = styled(Button)<
 
   ${({align}) =>
     align &&
-    align !== TabAlign.Center && {
+    align !== 'center' && {
       justifyContent: tabFlexAlign[align],
       textAlign: tabTextAlign[align] as TextAlignProperty,
     }}

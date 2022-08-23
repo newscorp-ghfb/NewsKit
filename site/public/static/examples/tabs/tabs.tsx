@@ -1,7 +1,7 @@
-import {Tabs, TabSize, TabsDistribution, Tab} from 'newskit';
+import {Tabs, TabsDistribution, Tab} from 'newskit';
 
 <Tabs
-  size={TabSize.Small}
+  size="small"
   distribution={TabsDistribution.LeftStacked}
   divider
   initialSelectedIndex={0}

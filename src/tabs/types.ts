@@ -49,7 +49,7 @@ export interface TabsProps {
   initialSelectedIndex?: number;
   selectedIndex?: number;
   indicatorPosition?: TabsIndicatorPositionType;
-  align?: TabAlign;
+  align?: 'start' | 'end' | 'none';
   onChange?: (selectedIndex: number) => void;
   overrides?: {
     spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between tabs. Should be renamed.

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Tab, Tabs, TabSize} from 'newskit';
+import {Tab, Tabs} from 'newskit';
 import {Table} from '../table';
 import {ComponentTabsWithTableProps} from './types';
 import {ContentSecondary, ContentTertiary} from '../content-structure';
@@ -36,7 +36,7 @@ export const TabsWithTable: React.FC<ComponentTabsWithTableProps> = ({
           showSeparator={showSeparator}
         >
           {tabList.length > 1 && (
-            <Tabs size={TabSize.Medium}>
+            <Tabs size="medium">
               {tabList.map(({label, content}) => (
                 <Tab label={label} overrides={tabOverrides} key={label}>
                   {content}
