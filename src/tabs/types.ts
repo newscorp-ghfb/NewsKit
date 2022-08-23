@@ -6,44 +6,19 @@ import {ScrollProps} from '../scroll';
 import {Override} from '../utils/overrides';
 import {LogicalProps} from '../utils/logical-properties';
 
-export enum TabSize {
-  Small = 'small',
-  Medium = 'medium',
-  Large = 'large',
-}
-
-export enum TabsDistribution {
-  Start = 'start',
-  Grow = 'grow',
-  Equal = 'equal',
-}
-
-export enum TabsIndicatorPosition {
-  Start = 'start',
-  End = 'end',
-  None = 'none',
-}
 export type TabAlign = 'start' | 'end' | 'center';
-type TabSizeType = TabSize | 'small' | 'medium' | 'large';
-export type TabsDistributionType =
-  | TabsDistribution
-  | 'start'
-  | 'grow'
-  | 'equal';
-export type TabsIndicatorPositionType =
-  | TabsIndicatorPosition
-  | 'start'
-  | 'end'
-  | 'none';
+export type TabSize = 'small' | 'medium' | 'large';
+export type TabsDistribution = 'start' | 'grow' | 'equal';
+export type TabsIndicatorPosition = 'start' | 'end' | 'none';
 export interface TabsProps {
-  size?: TabSizeType;
+  size?: TabSize;
   children: React.ReactElement<TabProps>[];
   divider?: boolean;
   vertical?: boolean;
-  distribution?: TabsDistributionType;
+  distribution?: TabsDistribution;
   initialSelectedIndex?: number;
   selectedIndex?: number;
-  indicatorPosition?: TabsIndicatorPositionType;
+  indicatorPosition?: TabsIndicatorPosition;
   align?: TabAlign;
   onChange?: (selectedIndex: number) => void;
   overrides?: {
@@ -79,7 +54,7 @@ export interface TabPanelProps {
 }
 
 export interface DistributionWrapperProps {
-  distribution: TabsDistributionType;
+  distribution: TabsDistribution;
   vertical: boolean;
   last: boolean;
   overrides?: TabsProps['overrides'];

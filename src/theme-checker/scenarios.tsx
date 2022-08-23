@@ -58,7 +58,7 @@ import {Scroll} from '../scroll';
 import {Select, SelectOption} from '../select';
 import {ShareBar} from '../share-bar';
 import {StatefulSlider} from '../slider';
-import {Tab, Tabs, TabsDistribution} from '../tabs';
+import {Tab, Tabs} from '../tabs';
 import {TitleBar} from '../title-bar';
 import {Toast} from '../toast';
 import {UnorderedList} from '../unordered-list';
@@ -1320,7 +1320,7 @@ export const scenarios: Array<ComponentData> = [
         <Stack spaceInline="space050">
           <LabelFlag>Horizontal</LabelFlag>
           <Container>
-            <Tabs divider distribution={TabsDistribution.Equal}>
+            <Tabs divider distribution="equal">
               <Tab label="Tab 1">
                 <P>Lorem ipsum</P>
               </Tab>
@@ -1336,7 +1336,7 @@ export const scenarios: Array<ComponentData> = [
         <Stack spaceInline="space050">
           <LabelFlag>Vertical</LabelFlag>
           <Container height="400px">
-            <Tabs vertical divider distribution={TabsDistribution.Equal}>
+            <Tabs vertical divider distribution="equal">
               <Tab label="Tab 1">
                 <P>Lorem ipsum</P>
               </Tab>

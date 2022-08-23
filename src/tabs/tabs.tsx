@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {isFragment} from 'react-is';
-import {TabProps, TabsProps, TabsDistribution, TabAlign} from './types';
+import {TabProps, TabsProps, TabAlign} from './types';
 import {
   StyledTabsBar,
   StyledInnerTabGroup,
@@ -286,7 +286,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
     const tabs = tabData.reduce((acc, tab, index, array) => {
       acc.push(
         <StyledDistributionWrapper
-          distribution={distribution || TabsDistribution.Start}
+          distribution={distribution || 'start'}
           data-testid="distribution-wrapper"
           vertical={vertical}
           last={array.length === index + 1}

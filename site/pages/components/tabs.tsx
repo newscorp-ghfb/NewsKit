@@ -1,16 +1,6 @@
 import React from 'react';
-import {
-  Tab,
-  TabAlign,
-  Tabs,
-  TabsDistribution,
-  TabsIndicatorPosition,
-  TextBlock,
-  UnorderedList,
-  InlineMessage,
-} from 'newskit';
+import {Tab, Tabs, TextBlock, UnorderedList, InlineMessage} from 'newskit';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {parseEnumValues} from '../../utils/parse-enum-values';
 import {Mono} from '../../components/flags';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
@@ -169,13 +159,13 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             },
             {
               name: 'distribution',
-              type: parseEnumValues(TabsDistribution),
-              default: 'TabsDistribution.start',
+              type: ' start | grow | equal',
+              default: 'start',
               description: 'Defines the distribution of the Tabs.',
             },
             {
               name: 'align',
-              type: parseEnumValues(TabAlign),
+              type: ' start | end | center',
               default: 'Tab.Align.Start',
               description: 'Defines the alignment of the Tabs.',
             },
@@ -486,17 +476,17 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             propName: 'distribution',
             options: [
               {
-                label: 'TabsDistribution.Start',
-                value: TabsDistribution.Start,
+                label: 'start',
+                value: 'start',
                 isDefault: true,
               },
               {
-                label: 'TabsDistribution.Grow',
-                value: TabsDistribution.Grow,
+                label: 'grow',
+                value: 'grow',
               },
               {
-                label: 'TabsDistribution.Equal',
-                value: TabsDistribution.Equal,
+                label: 'equal',
+                value: 'equal',
               },
             ],
           },
@@ -690,17 +680,17 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             propName: 'indicatorPosition',
             options: [
               {
-                label: 'TabsIndicatorPosition.Start',
-                value: TabsIndicatorPosition.Start,
+                label: 'start',
+                value: 'start',
               },
               {
-                label: 'TabsIndicatorPosition.End',
-                value: TabsIndicatorPosition.End,
+                label: 'end',
+                value: 'end',
                 isDefault: true,
               },
               {
-                label: 'TabsIndicatorPosition.None',
-                value: TabsIndicatorPosition.None,
+                label: 'none',
+                value: 'none',
               },
             ],
           },

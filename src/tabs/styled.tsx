@@ -12,8 +12,7 @@ import {
   DistributionWrapperProps,
   TabsBarProps,
   TabInternalProps,
-  TabsIndicatorPositionType,
-  TabsDistributionType,
+  TabsIndicatorPosition,
 } from './types';
 import {Stack} from '../stack';
 import {TextBlock, TextBlockProps} from '../text-block';
@@ -21,22 +20,22 @@ import {Button, ButtonProps} from '../button';
 import {logicalProps} from '../utils/logical-properties';
 
 const getFlexFromTabsDistribution = (
-  distribution: TabsDistributionType,
+  distribution: TabsDistribution,
   vertical: boolean,
 ) => {
   switch (distribution) {
-    case TabsDistribution.Grow:
+    case 'grow':
       return 'flex: 1 0 auto';
-    case TabsDistribution.Equal:
+    case 'equal':
       return `${vertical ? 'height' : 'width'}: 100%`;
-    case TabsDistribution.Start:
+    case 'start':
     default:
       return 'flex: 0 0 auto';
   }
 };
 
 const alignmentPosition = (
-  indicatorPosition?: TabsIndicatorPositionType,
+  indicatorPosition?: TabsIndicatorPosition,
   vertical?: boolean,
 ) => {
   if (indicatorPosition === 'none') {
