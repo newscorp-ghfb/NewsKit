@@ -11,7 +11,7 @@ import {AudioPlayerComposableProps} from '../types';
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
 import seekBarStylePresets from '../components/seek-bar/style-presets';
-import {Button, ButtonSize} from '../../button';
+import {Button} from '../../button';
 import {
   AudioPlayerComposable,
   AudioPlayerTimeDisplay,
@@ -169,7 +169,7 @@ const AudioPropsAndPlaybackSpeedWithOverrides: AudioPlayerComposableProps = {
   children: (
     <>
       <AudioPlayerPlaybackSpeedControl
-        buttonSize={ButtonSize.Medium}
+        buttonSize="medium"
         overrides={{
           iconButton: {
             stylePreset: 'customButtonStylePreset',

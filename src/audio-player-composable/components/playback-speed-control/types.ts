@@ -6,6 +6,7 @@ import {
 } from '../../../selection-list';
 import {MQ} from '../../../utils';
 import {IconButtonProps} from '../../../icon-button/types';
+import {ButtonSize} from '../../../button/types';
 
 export interface AudioPlayerPlaybackSpeedControlOverridesProps {
   popover?: PopoverProps['overrides'];
@@ -18,6 +19,6 @@ export interface AudioPlayerPlaybackSpeedControlOverridesProps {
 export interface AudioPlayerPlaybackSpeedControlProps {
   children?: React.ReactElement;
   useModal?: MQ<boolean>;
-  buttonSize?: 'small' | 'medium' | 'large';
+  buttonSize?: ButtonSize;
   overrides?: AudioPlayerPlaybackSpeedControlOverridesProps;
 }

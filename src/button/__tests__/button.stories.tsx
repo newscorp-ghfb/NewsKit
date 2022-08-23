@@ -185,9 +185,9 @@ const buttonSizes: Array<{
   buttonSize: ButtonSize;
   iconSize: string;
 }> = [
-  {buttonSize: ButtonSize.Small, iconSize: 'iconSize040'},
-  {buttonSize: ButtonSize.Medium, iconSize: 'iconSize050'},
-  {buttonSize: ButtonSize.Large, iconSize: 'iconSize050'},
+  {buttonSize: 'small', iconSize: 'iconSize040'},
+  {buttonSize: 'medium', iconSize: 'iconSize050'},
+  {buttonSize: 'large', iconSize: 'iconSize050'},
 ];
 
 const states = ['Default', 'Focused', 'Disabled', 'Loading'];
