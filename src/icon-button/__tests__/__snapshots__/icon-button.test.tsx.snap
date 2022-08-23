@@ -199,12 +199,12 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 }
 
 .emotion-0:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -272,7 +272,7 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -379,12 +379,12 @@ exports[`IconButton renders Large Icon Button 1`] = `
 }
 
 .emotion-0:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -452,7 +452,7 @@ exports[`IconButton renders Large Icon Button 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -560,12 +560,12 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 }
 
 .emotion-0:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -633,7 +633,7 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -741,12 +741,12 @@ exports[`IconButton renders Small Icon Button 1`] = `
 }
 
 .emotion-0:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -814,7 +814,7 @@ exports[`IconButton renders Small Icon Button 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -922,12 +922,12 @@ exports[`IconButton renders icon button link when href passed 1`] = `
 }
 
 .emotion-0:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -995,7 +995,7 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1107,12 +1107,12 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
 }
 
 .emotion-0:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1180,7 +1180,7 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1293,12 +1293,12 @@ exports[`IconButton renders with different style preset 1`] = `
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1366,7 +1366,7 @@ exports[`IconButton renders with different style preset 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }

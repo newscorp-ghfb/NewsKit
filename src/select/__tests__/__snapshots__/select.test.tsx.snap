@@ -21,15 +21,15 @@ exports[`Select in Modal render Select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -37,7 +37,7 @@ exports[`Select in Modal render Select 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -49,36 +49,36 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -118,7 +118,7 @@ exports[`Select in Modal render Select 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -166,7 +166,7 @@ exports[`Select in Modal render Select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -517,7 +517,7 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-3 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -568,7 +568,7 @@ exports[`Select in Modal render Select 1`] = `
   -webkit-column-gap: 8px;
   column-gap: 8px;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -590,11 +590,11 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-7:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
@@ -603,12 +603,12 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-7:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-7:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-7:selected:focus:not(:disabled) {
@@ -626,7 +626,7 @@ exports[`Select in Modal render Select 1`] = `
 
 .emotion-7:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-9 {
@@ -667,7 +667,7 @@ exports[`Select in Modal render Select 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -678,24 +678,24 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-10:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -763,7 +763,7 @@ exports[`Select in Modal render Select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -937,15 +937,15 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -953,7 +953,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -965,36 +965,36 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -1034,7 +1034,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1082,7 +1082,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1434,7 +1434,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-3 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1453,7 +1453,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -1506,7 +1506,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   -webkit-column-gap: 8px;
   column-gap: 8px;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -1528,11 +1528,11 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-8:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
@@ -1541,12 +1541,12 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-8:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-8:selected:focus:not(:disabled) {
@@ -1564,7 +1564,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 
 .emotion-8:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #111111;
+  color: #09111C;
 }
 
 <div
@@ -1690,15 +1690,15 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -1706,7 +1706,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1718,36 +1718,36 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -1787,7 +1787,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1835,7 +1835,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2176,7 +2176,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-3 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2227,7 +2227,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   -webkit-column-gap: 8px;
   column-gap: 8px;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -2249,11 +2249,11 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-7:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
@@ -2262,12 +2262,12 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-7:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-7:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-7:selected:focus:not(:disabled) {
@@ -2285,7 +2285,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 
 .emotion-7:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-9 {
@@ -2326,7 +2326,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -2337,24 +2337,24 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-10:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -2422,7 +2422,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2596,17 +2596,17 @@ exports[`Select renders Select with logical props 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   margin-inline: 40px;
   padding-block: 20px;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -2614,7 +2614,7 @@ exports[`Select renders Select with logical props 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2626,36 +2626,36 @@ exports[`Select renders Select with logical props 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -2695,7 +2695,7 @@ exports[`Select renders Select with logical props 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -2767,7 +2767,7 @@ exports[`Select renders Select with logical props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2994,7 +2994,7 @@ exports[`Select renders Select with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3104,7 +3104,7 @@ exports[`Select renders Select with overrides 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
@@ -3133,7 +3133,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -3145,7 +3145,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-0::before {
@@ -3179,15 +3179,15 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-1 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-1:focus:not(:disabled) {
@@ -3195,7 +3195,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -3207,36 +3207,36 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-1:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-1:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-2 {
@@ -3276,7 +3276,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -3324,7 +3324,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3365,11 +3365,11 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-11:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-12 {
@@ -3377,7 +3377,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -3387,7 +3387,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-12:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-12::before {
@@ -3490,7 +3490,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
@@ -3536,15 +3536,15 @@ exports[`Select renders SelectOption with logical props 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -3552,7 +3552,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -3564,36 +3564,36 @@ exports[`Select renders SelectOption with logical props 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -3633,7 +3633,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -3707,7 +3707,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3824,15 +3824,15 @@ exports[`Select renders disabled select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #E2E2E2;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #ABABAB;
+  color: #C0C7CC;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-1 {
@@ -3920,7 +3920,7 @@ exports[`Select renders disabled select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4023,7 +4023,7 @@ exports[`Select renders disabled select 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
@@ -4069,15 +4069,15 @@ exports[`Select renders large Select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -4085,7 +4085,7 @@ exports[`Select renders large Select 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4097,36 +4097,36 @@ exports[`Select renders large Select 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -4166,7 +4166,7 @@ exports[`Select renders large Select 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -4214,7 +4214,7 @@ exports[`Select renders large Select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4314,7 +4314,7 @@ exports[`Select renders large Select 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 360px;
@@ -4360,15 +4360,15 @@ exports[`Select renders loading select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -4376,7 +4376,7 @@ exports[`Select renders loading select 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4388,36 +4388,36 @@ exports[`Select renders loading select 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -4457,7 +4457,7 @@ exports[`Select renders loading select 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -4584,7 +4584,7 @@ exports[`Select renders loading select 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
@@ -4630,15 +4630,15 @@ exports[`Select renders medium Select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -4646,7 +4646,7 @@ exports[`Select renders medium Select 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4658,36 +4658,36 @@ exports[`Select renders medium Select 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -4727,7 +4727,7 @@ exports[`Select renders medium Select 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -4775,7 +4775,7 @@ exports[`Select renders medium Select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4875,7 +4875,7 @@ exports[`Select renders medium Select 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
@@ -4921,15 +4921,15 @@ exports[`Select renders select with a pre selected option 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -4937,7 +4937,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4949,36 +4949,36 @@ exports[`Select renders select with a pre selected option 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -5018,7 +5018,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -5090,7 +5090,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5200,7 +5200,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
@@ -5246,15 +5246,15 @@ exports[`Select renders select with a selected option 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -5262,7 +5262,7 @@ exports[`Select renders select with a selected option 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5274,36 +5274,36 @@ exports[`Select renders select with a selected option 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -5343,7 +5343,7 @@ exports[`Select renders select with a selected option 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -5415,7 +5415,7 @@ exports[`Select renders select with a selected option 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5525,7 +5525,7 @@ exports[`Select renders select with a selected option 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
@@ -5571,15 +5571,15 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -5587,7 +5587,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5599,36 +5599,36 @@ exports[`Select renders select with leading and trailing icon 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -5650,7 +5650,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5713,7 +5713,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -5874,7 +5874,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
@@ -5920,15 +5920,15 @@ exports[`Select renders select with non-string options 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -5936,7 +5936,7 @@ exports[`Select renders select with non-string options 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5948,36 +5948,36 @@ exports[`Select renders select with non-string options 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -6017,7 +6017,7 @@ exports[`Select renders select with non-string options 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -6089,7 +6089,7 @@ exports[`Select renders select with non-string options 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6201,7 +6201,7 @@ exports[`Select renders select with non-string options 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
@@ -6247,15 +6247,15 @@ exports[`Select renders small Select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -6263,7 +6263,7 @@ exports[`Select renders small Select 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6275,36 +6275,36 @@ exports[`Select renders small Select 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -6344,7 +6344,7 @@ exports[`Select renders small Select 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -6392,7 +6392,7 @@ exports[`Select renders small Select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6492,7 +6492,7 @@ exports[`Select renders small Select 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 184px;
@@ -6538,15 +6538,15 @@ exports[`Select should render custom placeholder 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -6554,7 +6554,7 @@ exports[`Select should render custom placeholder 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6566,36 +6566,36 @@ exports[`Select should render custom placeholder 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -6635,7 +6635,7 @@ exports[`Select should render custom placeholder 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -6683,7 +6683,7 @@ exports[`Select should render custom placeholder 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6783,7 +6783,7 @@ exports[`Select should render custom placeholder 1`] = `
   top: 0px;
   left: 0px;
   display: none;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
@@ -6829,15 +6829,15 @@ exports[`Select virtualize long list 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #919191;
+  border-color: #85939C;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -6845,7 +6845,7 @@ exports[`Select virtualize long list 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6857,36 +6857,36 @@ exports[`Select virtualize long list 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-1 {
@@ -6926,7 +6926,7 @@ exports[`Select virtualize long list 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -6974,7 +6974,7 @@ exports[`Select virtualize long list 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7086,7 +7086,7 @@ exports[`Select virtualize long list 1`] = `
   top: 0px;
   left: 0px;
   display: block;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
@@ -7111,7 +7111,7 @@ exports[`Select virtualize long list 1`] = `
   -webkit-column-gap: 8px;
   column-gap: 8px;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -7133,11 +7133,11 @@ exports[`Select virtualize long list 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-2:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
@@ -7146,12 +7146,12 @@ exports[`Select virtualize long list 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:selected:focus:not(:disabled) {
@@ -7169,7 +7169,7 @@ exports[`Select virtualize long list 1`] = `
 
 .emotion-2:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #111111;
+  color: #09111C;
 }
 
 <div

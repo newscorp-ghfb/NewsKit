@@ -53,12 +53,12 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 }
 
 .emotion-0:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-0:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -126,7 +126,7 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }

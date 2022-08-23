@@ -114,11 +114,11 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 @media screen {
@@ -202,12 +202,12 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-5:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-5:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -451,11 +451,11 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 @media screen {
@@ -539,12 +539,12 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
 }
 
 .emotion-5:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-5:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -788,11 +788,11 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 @media screen {
@@ -1087,11 +1087,11 @@ exports[`TitleBar renders a title bar with logical props overrides 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <div
@@ -1390,11 +1390,11 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <div
@@ -1681,11 +1681,11 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <div
@@ -1821,11 +1821,11 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <div
@@ -1961,11 +1961,11 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <div
@@ -2101,11 +2101,11 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <div
@@ -2241,11 +2241,11 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <div
@@ -2381,11 +2381,11 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <div
@@ -2521,11 +2521,11 @@ exports[`TitleBar should display correctly with default styles and given title 1
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <div

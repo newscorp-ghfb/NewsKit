@@ -4,7 +4,7 @@ exports[`Divider renders as vertical 1`] = `
 <DocumentFragment>
   .emotion-0 {
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -25,7 +25,7 @@ exports[`Divider renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -45,7 +45,7 @@ exports[`Divider renders with logical prop overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;

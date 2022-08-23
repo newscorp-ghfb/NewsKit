@@ -6,7 +6,7 @@ exports[`Material icons should render icons with no props IconFilledAccountBalan
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -77,7 +77,7 @@ exports[`Material icons should render icons with no props IconFilledAccountTree 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -123,7 +123,7 @@ exports[`Material icons should render icons with no props IconOutlinedAccountBal
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -169,7 +169,7 @@ exports[`Material icons should render icons with no props IconOutlinedAccountTre
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }

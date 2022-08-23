@@ -19,10 +19,10 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -41,33 +41,33 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-2::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-2:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-2:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-3 {
@@ -76,7 +76,7 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
 
 .emotion-4 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -86,7 +86,7 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
 }
 
 .emotion-4:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-4::before {

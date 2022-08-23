@@ -17,11 +17,11 @@ exports[`Assistive Text renders large AssistiveText 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-0:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1 {
@@ -29,7 +29,7 @@ exports[`Assistive Text renders large AssistiveText 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -39,7 +39,7 @@ exports[`Assistive Text renders large AssistiveText 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -83,11 +83,11 @@ exports[`Assistive Text renders medium AssistiveText 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-0:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1 {
@@ -95,7 +95,7 @@ exports[`Assistive Text renders medium AssistiveText 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -105,7 +105,7 @@ exports[`Assistive Text renders medium AssistiveText 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -149,11 +149,11 @@ exports[`Assistive Text renders small AssistiveText 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-0:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1 {
@@ -161,7 +161,7 @@ exports[`Assistive Text renders small AssistiveText 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 12px;
   line-height: 18px;
@@ -171,7 +171,7 @@ exports[`Assistive Text renders small AssistiveText 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -215,7 +215,7 @@ exports[`Assistive Text should render disabled Assistive Text 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1 {
@@ -223,7 +223,7 @@ exports[`Assistive Text should render disabled Assistive Text 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #ABABAB;
+  color: #C0C7CC;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -334,13 +334,13 @@ exports[`Assistive Text should render logical props overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin-block: 30px;
   padding-block: 30px;
 }
 
 .emotion-0:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1 {
@@ -348,7 +348,7 @@ exports[`Assistive Text should render logical props overrides 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -358,7 +358,7 @@ exports[`Assistive Text should render logical props overrides 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -402,11 +402,11 @@ exports[`Assistive Text should render with enhancer 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-0:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1 {
@@ -432,7 +432,7 @@ exports[`Assistive Text should render with enhancer 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -442,7 +442,7 @@ exports[`Assistive Text should render with enhancer 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2::before {

@@ -2746,12 +2746,12 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-10:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -3199,12 +3199,12 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-10:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -3653,12 +3653,12 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 }
 
 .emotion-10:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -4087,12 +4087,12 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 }
 
 .emotion-10:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -5102,12 +5102,12 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-10:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -5255,11 +5255,11 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 
 .emotion-15:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-15:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -5297,7 +5297,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5700,12 +5700,12 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-10:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -5843,12 +5843,12 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-15:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-15:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -6242,11 +6242,11 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 
 .emotion-10:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -6314,7 +6314,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6694,12 +6694,12 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 }
 
 .emotion-10:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -7168,12 +7168,12 @@ exports[`renders grid and cell overrides on banner 1`] = `
 }
 
 .emotion-11:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-11:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -7661,12 +7661,12 @@ exports[`renders grid and cell overrides on banner 1`] = `
 }
 
 .emotion-11:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-11:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-11:focus-visible:not(:disabled) {

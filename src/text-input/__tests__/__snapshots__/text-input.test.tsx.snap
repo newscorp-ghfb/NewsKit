@@ -4,7 +4,7 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -16,7 +16,7 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -48,10 +48,10 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -70,33 +70,33 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-3:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-4 {
@@ -105,7 +105,7 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -115,7 +115,7 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5::before {
@@ -185,10 +185,10 @@ exports[`TextInput renders correctly with label hidden 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -207,33 +207,33 @@ exports[`TextInput renders correctly with label hidden 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-2::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-2:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-2:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-3 {
@@ -242,7 +242,7 @@ exports[`TextInput renders correctly with label hidden 1`] = `
 
 .emotion-4 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -252,7 +252,7 @@ exports[`TextInput renders correctly with label hidden 1`] = `
 }
 
 .emotion-4:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-4::before {
@@ -302,7 +302,7 @@ exports[`TextInput renders correctly without asistive text 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -314,7 +314,7 @@ exports[`TextInput renders correctly without asistive text 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -346,10 +346,10 @@ exports[`TextInput renders correctly without asistive text 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -368,33 +368,33 @@ exports[`TextInput renders correctly without asistive text 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-3:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-4 {
@@ -432,7 +432,7 @@ exports[`TextInput renders disabled text input 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #ABABAB;
+  color: #C0C7CC;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -472,10 +472,10 @@ exports[`TextInput renders disabled text input 1`] = `
   cursor: not-allowed;
   background-color: transparent;
   border-style: solid;
-  border-color: #E2E2E2;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #ABABAB;
+  color: #C0C7CC;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -494,19 +494,19 @@ exports[`TextInput renders disabled text input 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-4 {
@@ -515,7 +515,7 @@ exports[`TextInput renders disabled text input 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #ABABAB;
+  color: #C0C7CC;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -579,7 +579,7 @@ exports[`TextInput renders large text input 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -591,7 +591,7 @@ exports[`TextInput renders large text input 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -623,10 +623,10 @@ exports[`TextInput renders large text input 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 64px;
@@ -645,33 +645,33 @@ exports[`TextInput renders large text input 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-3:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-4 {
@@ -680,7 +680,7 @@ exports[`TextInput renders large text input 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -690,7 +690,7 @@ exports[`TextInput renders large text input 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5::before {
@@ -745,7 +745,7 @@ exports[`TextInput renders readonly text input 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -757,7 +757,7 @@ exports[`TextInput renders readonly text input 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -789,10 +789,10 @@ exports[`TextInput renders readonly text input 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -811,33 +811,33 @@ exports[`TextInput renders readonly text input 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-3:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-4 {
@@ -846,7 +846,7 @@ exports[`TextInput renders readonly text input 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -856,7 +856,7 @@ exports[`TextInput renders readonly text input 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5::before {
@@ -912,7 +912,7 @@ exports[`TextInput renders small text input 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -924,7 +924,7 @@ exports[`TextInput renders small text input 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -956,10 +956,10 @@ exports[`TextInput renders small text input 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 8px;
   min-height: 32px;
@@ -978,33 +978,33 @@ exports[`TextInput renders small text input 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-3:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-4 {
@@ -1013,7 +1013,7 @@ exports[`TextInput renders small text input 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1023,7 +1023,7 @@ exports[`TextInput renders small text input 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5::before {
@@ -1078,7 +1078,7 @@ exports[`TextInput renders text input with leading icon 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1090,7 +1090,7 @@ exports[`TextInput renders text input with leading icon 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -1129,8 +1129,8 @@ exports[`TextInput renders text input with leading icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #6A6A6A;
-  fill: #6A6A6A;
+  color: #5A6A79;
+  fill: #5A6A79;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1154,8 +1154,8 @@ exports[`TextInput renders text input with leading icon 1`] = `
 .emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
-  color: #6A6A6A;
-  fill: #6A6A6A;
+  color: #5A6A79;
+  fill: #5A6A79;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1186,10 +1186,10 @@ exports[`TextInput renders text input with leading icon 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -1212,33 +1212,33 @@ exports[`TextInput renders text input with leading icon 1`] = `
 }
 
 .emotion-6::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-6::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-6:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-6::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-6:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-6:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-7 {
@@ -1247,7 +1247,7 @@ exports[`TextInput renders text input with leading icon 1`] = `
 
 .emotion-8 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1257,7 +1257,7 @@ exports[`TextInput renders text input with leading icon 1`] = `
 }
 
 .emotion-8:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8::before {
@@ -1454,7 +1454,7 @@ exports[`TextInput renders text input with overrides for leading and validation 
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1466,7 +1466,7 @@ exports[`TextInput renders text input with overrides for leading and validation 
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -1505,8 +1505,8 @@ exports[`TextInput renders text input with overrides for leading and validation 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #6A6A6A;
-  fill: #6A6A6A;
+  color: #5A6A79;
+  fill: #5A6A79;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1530,8 +1530,8 @@ exports[`TextInput renders text input with overrides for leading and validation 
 .emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
-  color: #6A6A6A;
-  fill: #6A6A6A;
+  color: #5A6A79;
+  fill: #5A6A79;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1562,10 +1562,10 @@ exports[`TextInput renders text input with overrides for leading and validation 
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -1588,33 +1588,33 @@ exports[`TextInput renders text input with overrides for leading and validation 
 }
 
 .emotion-6::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-6::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-6:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-6::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-6:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-6:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-7 {
@@ -1623,7 +1623,7 @@ exports[`TextInput renders text input with overrides for leading and validation 
 
 .emotion-8 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1633,7 +1633,7 @@ exports[`TextInput renders text input with overrides for leading and validation 
 }
 
 .emotion-8:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8::before {
@@ -1708,7 +1708,7 @@ exports[`TextInput renders with different minHeight 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1720,7 +1720,7 @@ exports[`TextInput renders with different minHeight 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -1752,10 +1752,10 @@ exports[`TextInput renders with different minHeight 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 64px;
@@ -1774,33 +1774,33 @@ exports[`TextInput renders with different minHeight 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-3:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-4 {
@@ -1809,7 +1809,7 @@ exports[`TextInput renders with different minHeight 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1819,7 +1819,7 @@ exports[`TextInput renders with different minHeight 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5::before {
@@ -1878,7 +1878,7 @@ exports[`TextInput renders with fixed width 1`] = `
 
 .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1890,7 +1890,7 @@ exports[`TextInput renders with fixed width 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -1922,10 +1922,10 @@ exports[`TextInput renders with fixed width 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -1944,33 +1944,33 @@ exports[`TextInput renders with fixed width 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-3:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-4 {
@@ -1979,7 +1979,7 @@ exports[`TextInput renders with fixed width 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1989,7 +1989,7 @@ exports[`TextInput renders with fixed width 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5::before {
@@ -2048,7 +2048,7 @@ exports[`TextInput renders with full width 1`] = `
 
 .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -2060,7 +2060,7 @@ exports[`TextInput renders with full width 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -2092,10 +2092,10 @@ exports[`TextInput renders with full width 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -2114,33 +2114,33 @@ exports[`TextInput renders with full width 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-3:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-4 {
@@ -2149,7 +2149,7 @@ exports[`TextInput renders with full width 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2159,7 +2159,7 @@ exports[`TextInput renders with full width 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5::before {
@@ -2214,7 +2214,7 @@ exports[`TextInput should render custom aria-label 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -2226,7 +2226,7 @@ exports[`TextInput should render custom aria-label 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -2258,10 +2258,10 @@ exports[`TextInput should render custom aria-label 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -2280,33 +2280,33 @@ exports[`TextInput should render custom aria-label 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-3:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-4 {
@@ -2315,7 +2315,7 @@ exports[`TextInput should render custom aria-label 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2325,7 +2325,7 @@ exports[`TextInput should render custom aria-label 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5::before {
@@ -2381,7 +2381,7 @@ exports[`TextInput should render custom placeholder 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #111111;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -2393,7 +2393,7 @@ exports[`TextInput should render custom placeholder 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-1::before {
@@ -2425,10 +2425,10 @@ exports[`TextInput should render custom placeholder 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-radius: 8px;
-  color: #3B3B3B;
+  color: #2E3F54;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -2447,33 +2447,33 @@ exports[`TextInput should render custom placeholder 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3::placeholder {
-  color: #6A6A6A;
+  color: #5A6A79;
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
   border-color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-3:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-4 {
@@ -2482,7 +2482,7 @@ exports[`TextInput should render custom placeholder 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2492,7 +2492,7 @@ exports[`TextInput should render custom placeholder 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5::before {

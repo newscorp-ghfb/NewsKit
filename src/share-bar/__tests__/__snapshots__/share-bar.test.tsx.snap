@@ -74,7 +74,7 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
 }
 
 .emotion-4 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -326,7 +326,7 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 }
 
 .emotion-6 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -473,7 +473,7 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
 }
 
 .emotion-3 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -618,7 +618,7 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
 }
 
 .emotion-4 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -747,7 +747,7 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
 }
 
 .emotion-3 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -993,7 +993,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-6 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1070,12 +1070,12 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-12:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-12:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -1273,7 +1273,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin-right: 16px;
 }
 
@@ -1290,7 +1290,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2 {
@@ -1425,7 +1425,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-6 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1502,12 +1502,12 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-12:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-12:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -1852,7 +1852,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-6 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1929,12 +1929,12 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-12:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-12:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -2279,7 +2279,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 .emotion-6 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2356,12 +2356,12 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 .emotion-12:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-12:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -2760,7 +2760,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 .emotion-6 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2837,12 +2837,12 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 .emotion-12:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-12:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -3196,7 +3196,7 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 }
 
 .emotion-6 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3273,12 +3273,12 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 }
 
 .emotion-12:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-12:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -3632,7 +3632,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 .emotion-6 {
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3709,12 +3709,12 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 .emotion-12:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
+  background-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-12:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-12:focus-visible:not(:disabled) {

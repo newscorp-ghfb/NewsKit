@@ -74,7 +74,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -90,42 +90,42 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-3:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-3:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-3:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-3:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-3:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-3:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-3:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -226,7 +226,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
 
 .emotion-8 {
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -461,7 +461,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -477,42 +477,42 @@ exports[`Menu renders horizontally with menu group 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-3:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-3:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-3:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-3:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-3:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-3:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-3:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-3:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -774,7 +774,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -790,42 +790,42 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -1090,7 +1090,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -1106,7 +1106,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1138,11 +1138,11 @@ exports[`Menu renders vertically with menu dividers 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-3:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -1243,7 +1243,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
 
 .emotion-8 {
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1476,7 +1476,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -1492,7 +1492,7 @@ exports[`Menu renders vertically with menu group 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1524,11 +1524,11 @@ exports[`Menu renders vertically with menu group 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-3:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -1793,7 +1793,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -1809,7 +1809,7 @@ exports[`Menu renders vertically with menu items 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -1841,11 +1841,11 @@ exports[`Menu renders vertically with menu items 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -2098,7 +2098,7 @@ exports[`Menu renders with Large size menu items 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -2114,7 +2114,7 @@ exports[`Menu renders with Large size menu items 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -2146,11 +2146,11 @@ exports[`Menu renders with Large size menu items 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -2400,7 +2400,7 @@ exports[`Menu renders with Large size menu items 2`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -2416,42 +2416,42 @@ exports[`Menu renders with Large size menu items 2`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -2704,7 +2704,7 @@ exports[`Menu renders with Medium size menu items 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -2720,7 +2720,7 @@ exports[`Menu renders with Medium size menu items 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -2752,11 +2752,11 @@ exports[`Menu renders with Medium size menu items 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3006,7 +3006,7 @@ exports[`Menu renders with Medium size menu items 2`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -3022,42 +3022,42 @@ exports[`Menu renders with Medium size menu items 2`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3310,7 +3310,7 @@ exports[`Menu renders with Small size menu items 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -3326,7 +3326,7 @@ exports[`Menu renders with Small size menu items 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -3358,11 +3358,11 @@ exports[`Menu renders with Small size menu items 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3612,7 +3612,7 @@ exports[`Menu renders with Small size menu items 2`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -3628,42 +3628,42 @@ exports[`Menu renders with Small size menu items 2`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3913,7 +3913,7 @@ exports[`Menu renders with default props 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -3929,42 +3929,42 @@ exports[`Menu renders with default props 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -4216,7 +4216,7 @@ exports[`Menu renders with logical prop overrides 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -4232,42 +4232,42 @@ exports[`Menu renders with logical prop overrides 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -4520,7 +4520,7 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -4536,7 +4536,7 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -4568,11 +4568,11 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -4822,7 +4822,7 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -4838,42 +4838,42 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -5126,7 +5126,7 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: end;
@@ -5142,7 +5142,7 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -5174,11 +5174,11 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -5428,7 +5428,7 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: end;
@@ -5444,42 +5444,42 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -5732,7 +5732,7 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -5748,7 +5748,7 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -5780,11 +5780,11 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -6034,7 +6034,7 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -6050,42 +6050,42 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -6317,7 +6317,7 @@ exports[`MenuDivider renders horizontally 1`] = `
 
 .emotion-2 {
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -6386,7 +6386,7 @@ exports[`MenuDivider renders vertically with default props 1`] = `
 
 .emotion-2 {
   border-style: solid;
-  border-color: #C6C6C6;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -6550,7 +6550,7 @@ exports[`MenuGroup renders with overrides 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 18px;
   line-height: 20.25px;
@@ -6560,7 +6560,7 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-3::before {
@@ -6610,7 +6610,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -6626,7 +6626,7 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-5:hover:not(:disabled) {
@@ -6658,11 +6658,11 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -6919,7 +6919,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6980,7 +6980,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -6996,7 +6996,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-8:hover:not(:disabled) {
@@ -7028,11 +7028,11 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 .emotion-8:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -7316,7 +7316,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
   line-height: 22.5px;
@@ -7326,7 +7326,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-3::before {
@@ -7376,7 +7376,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -7392,7 +7392,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-5:hover:not(:disabled) {
@@ -7424,11 +7424,11 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -7683,7 +7683,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
   line-height: 22.5px;
@@ -7693,7 +7693,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-3::before {
@@ -7743,7 +7743,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -7759,7 +7759,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-5:hover:not(:disabled) {
@@ -7791,11 +7791,11 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -8063,7 +8063,7 @@ exports[`MenuItem renders in Large size 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -8079,42 +8079,42 @@ exports[`MenuItem renders in Large size 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -8295,7 +8295,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -8311,42 +8311,42 @@ exports[`MenuItem renders in Medium size 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -8527,7 +8527,7 @@ exports[`MenuItem renders in Small size 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -8543,42 +8543,42 @@ exports[`MenuItem renders in Small size 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -8759,7 +8759,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -8775,42 +8775,42 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -8992,14 +8992,14 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
   border-style: solid;
   border-color: #3358CC;
   border-width: 0 0 2px 0;
-  color: #3B3B3B;
+  color: #2E3F54;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -9013,42 +9013,42 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -9083,16 +9083,16 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-3 {
@@ -9129,7 +9129,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9288,7 +9288,7 @@ exports[`MenuItem renders with default props 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -9304,42 +9304,42 @@ exports[`MenuItem renders with default props 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -9520,7 +9520,7 @@ exports[`MenuItem renders with icon 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -9536,42 +9536,42 @@ exports[`MenuItem renders with icon 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
   border-color: #254CAC;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #3B3B3B;
+  color: #2E3F54;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-2:disabled {
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-2:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -9639,7 +9639,7 @@ exports[`MenuItem renders with icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }

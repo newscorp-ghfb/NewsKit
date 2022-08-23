@@ -99,7 +99,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   padding-inline: 30px;
 }
@@ -263,7 +263,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -282,7 +282,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -339,7 +339,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -350,24 +350,24 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
 }
 
 .emotion-8 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -435,7 +435,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -654,7 +654,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -817,7 +817,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -836,7 +836,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -893,7 +893,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -904,24 +904,24 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-8 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -989,7 +989,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1205,7 +1205,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   margin-block: 20px;
   padding-inline: 30px;
@@ -1370,7 +1370,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1389,7 +1389,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -1446,7 +1446,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -1457,24 +1457,24 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-8 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -1542,7 +1542,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1758,7 +1758,7 @@ exports[`Drawer render inline-drawer 1`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -1921,7 +1921,7 @@ exports[`Drawer render inline-drawer 1`] = `
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1940,7 +1940,7 @@ exports[`Drawer render inline-drawer 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -1997,7 +1997,7 @@ exports[`Drawer render inline-drawer 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -2008,24 +2008,24 @@ exports[`Drawer render inline-drawer 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -2093,7 +2093,7 @@ exports[`Drawer render inline-drawer 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2232,7 +2232,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -2395,7 +2395,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 .emotion-1 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2450,7 +2450,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -2461,24 +2461,24 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 .emotion-5 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -2546,7 +2546,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2755,7 +2755,7 @@ exports[`Drawer renders default 1`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -2918,7 +2918,7 @@ exports[`Drawer renders default 1`] = `
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2937,7 +2937,7 @@ exports[`Drawer renders default 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -2994,7 +2994,7 @@ exports[`Drawer renders default 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -3005,24 +3005,24 @@ exports[`Drawer renders default 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -3090,7 +3090,7 @@ exports[`Drawer renders default 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3574,7 +3574,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3788,7 +3788,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -3964,7 +3964,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 }
 
 .emotion-3 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -3983,7 +3983,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -4040,7 +4040,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -4051,24 +4051,24 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 }
 
 .emotion-9 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-9:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-9:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-9:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-9:focus-visible:not(:disabled) {
@@ -4136,7 +4136,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4383,7 +4383,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -4546,7 +4546,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -4565,7 +4565,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -4618,7 +4618,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -4629,24 +4629,24 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-6:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -4714,7 +4714,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4932,7 +4932,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -5095,7 +5095,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -5146,7 +5146,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -5157,24 +5157,24 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -5242,7 +5242,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5462,7 +5462,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -5625,7 +5625,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -5644,7 +5644,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -5701,7 +5701,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -5712,24 +5712,24 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -5797,7 +5797,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6020,7 +6020,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   min-height: 20px;
   width: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -6183,7 +6183,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -6202,7 +6202,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -6259,7 +6259,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -6270,24 +6270,24 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -6355,7 +6355,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6578,7 +6578,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -6741,7 +6741,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -6760,7 +6760,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -6817,7 +6817,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -6828,24 +6828,24 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -6913,7 +6913,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7136,7 +7136,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   min-height: 20px;
   width: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -7299,7 +7299,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -7318,7 +7318,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -7375,7 +7375,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -7386,24 +7386,24 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -7471,7 +7471,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7694,7 +7694,7 @@ exports[`Drawer renders without close button 1`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -7857,7 +7857,7 @@ exports[`Drawer renders without close button 1`] = `
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -7876,7 +7876,7 @@ exports[`Drawer renders without close button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -8062,7 +8062,7 @@ exports[`Drawer renders without header 1`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -8225,7 +8225,7 @@ exports[`Drawer renders without header 1`] = `
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -8280,7 +8280,7 @@ exports[`Drawer renders without header 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -8291,24 +8291,24 @@ exports[`Drawer renders without header 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-6:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -8376,7 +8376,7 @@ exports[`Drawer renders without header 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8590,7 +8590,7 @@ exports[`Drawer renders without header and close 1`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -8839,7 +8839,7 @@ exports[`Drawer renders without overlay 1`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -9002,7 +9002,7 @@ exports[`Drawer renders without overlay 1`] = `
 }
 
 .emotion-1 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -9021,7 +9021,7 @@ exports[`Drawer renders without overlay 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #3B3B3B;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -9078,7 +9078,7 @@ exports[`Drawer renders without overlay 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -9089,24 +9089,24 @@ exports[`Drawer renders without overlay 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-7:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-7:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -9174,7 +9174,7 @@ exports[`Drawer renders without overlay 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9399,7 +9399,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -9562,7 +9562,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 }
 
 .emotion-2 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -9613,7 +9613,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -9624,24 +9624,24 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-5:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -9709,7 +9709,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9844,7 +9844,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   min-width: 20px;
   height: 100%;
   border-radius: 0;
-  background-color: #FFFFFF;
+  background-color: #F0F1F3;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
 }
 
@@ -10007,7 +10007,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 .emotion-1 {
-  color: #3B3B3B;
+  color: #2E3F54;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -10058,7 +10058,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3B3B3B;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -10069,24 +10069,24 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 .emotion-4 svg {
-  fill: #3B3B3B;
+  fill: #2E3F54;
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #F1F1F1;
+  background-color: #F0F1F3;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #DEE2E5;
 }
 
 .emotion-4:disabled {
   background-color: transparent;
-  color: #ABABAB;
+  color: #C0C7CC;
 }
 
 .emotion-4:disabled svg {
-  fill: #ABABAB;
+  fill: #C0C7CC;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -10154,7 +10154,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }

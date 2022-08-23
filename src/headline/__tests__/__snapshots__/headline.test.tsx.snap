@@ -134,11 +134,11 @@ exports[`headline renders correctly with custom props 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <section
@@ -256,11 +256,11 @@ exports[`headline renders correctly with default props, just heading 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-1 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <section
@@ -406,11 +406,11 @@ exports[`headline renders correctly with default props, with heading and kicker 
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <section
@@ -530,11 +530,11 @@ exports[`headline renders correctly with logical prop margin overrides and crop 
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-1 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <section
@@ -597,11 +597,11 @@ exports[`headline renders correctly with logical prop padding overrides and crop
   display: inline;
   font: inherit;
   margin: 0;
-  color: #111111;
+  color: #09111C;
 }
 
 .emotion-1 svg {
-  fill: #111111;
+  fill: #09111C;
 }
 
 <section
