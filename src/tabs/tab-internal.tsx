@@ -1,5 +1,5 @@
 import React from 'react';
-import {TabAlign, TabInternalProps, TabSize} from './types';
+import {TabInternalProps, TabSize} from './types';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme/emotion';
 import {StyledTabButton} from './styled';
@@ -19,7 +19,7 @@ export const TabInternal = React.forwardRef<
       selected,
       id,
       /* istanbul ignore next */
-      align = TabAlign.Center,
+      align = 'center',
       dataTestId = 'tab',
       ...props
     },

@@ -672,17 +672,17 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             propName: 'align',
             options: [
               {
-                label: 'TabAlign.Center',
-                value: TabAlign.Center,
+                label: 'center',
+                value: 'center',
                 isDefault: true,
               },
               {
-                label: 'TabAlign.Start',
-                value: TabAlign.Start,
+                label: 'start',
+                value: 'start',
               },
               {
-                label: 'TabAlign.End',
-                value: TabAlign.End,
+                label: 'end',
+                value: 'end',
               },
             ],
           },

@@ -56,7 +56,7 @@ const validateSelectedIndex = (index: number, children: unknown[]): number =>
 
 const getAlign = (align: TabAlign | undefined, vertical: boolean) => {
   if (!align) {
-    return vertical ? TabAlign.Start : TabAlign.Center;
+    return vertical ? 'start' : 'center';
   }
   return align;
 };

@@ -7,7 +7,7 @@ import {
 } from '../../test/test-utils';
 import {compileTheme, createTheme, Tab, TabSize} from '../..';
 import {Tabs, TabsDistribution} from '..';
-import {TabAlign, TabsProps} from '../types';
+import {TabsProps} from '../types';
 import {IconFilledEmail} from '../../icons';
 import {KEYBOARD_ARROWS} from '../utils';
 import tabStylePresets from '../style-presets';
@@ -560,13 +560,13 @@ describe('Tabs', () => {
 
     const fragmentLeft = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      align: TabAlign.Start,
+      align: 'start',
     });
     expect(fragmentLeft).toMatchSnapshot();
 
     const fragmentRight = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      align: TabAlign.End,
+      align: 'end',
     });
     expect(fragmentRight).toMatchSnapshot();
   });

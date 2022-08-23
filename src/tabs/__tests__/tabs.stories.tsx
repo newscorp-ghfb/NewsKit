@@ -6,7 +6,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {Tab, TabAlign, Tabs, TabsDistribution} from '..';
+import {Tab, Tabs, TabsDistribution} from '..';
 import {IconFilledEmail} from '../../icons';
 import {Block} from '../../block';
 import {Button} from '../../button';
@@ -1301,7 +1301,7 @@ export const StoryTabsWithAlign = () => (
   <>
     <StorybookHeading>Tabs With Align</StorybookHeading>
     <StorybookSubHeading>Tabs Horizontal Align Left</StorybookSubHeading>
-    <Tabs align={TabAlign.Start} distribution={TabsDistribution.Grow}>
+    <Tabs align="start" distribution={TabsDistribution.Grow}>
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -1314,7 +1314,7 @@ export const StoryTabsWithAlign = () => (
     </Tabs>
 
     <StorybookSubHeading>Tabs Horizontal Align Right</StorybookSubHeading>
-    <Tabs align={TabAlign.End} distribution={TabsDistribution.Grow}>
+    <Tabs align="end" distribution={TabsDistribution.Grow}>
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -1327,7 +1327,7 @@ export const StoryTabsWithAlign = () => (
     </Tabs>
 
     <StorybookSubHeading>Tabs Vertical Align Left</StorybookSubHeading>
-    <Tabs align={TabAlign.Start} distribution={TabsDistribution.Grow} vertical>
+    <Tabs align="start" distribution={TabsDistribution.Grow} vertical>
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -1339,7 +1339,7 @@ export const StoryTabsWithAlign = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Tabs Vertical Align Right</StorybookSubHeading>
-    <Tabs align={TabAlign.End} distribution={TabsDistribution.Grow} vertical>
+    <Tabs align="end" distribution={TabsDistribution.Grow} vertical>
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
