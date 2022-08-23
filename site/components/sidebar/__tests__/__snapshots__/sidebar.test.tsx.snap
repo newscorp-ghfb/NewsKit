@@ -1640,7 +1640,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               <span
                                 class="emotion-18"
                               >
-                                Component overrides & defaults
+                                Component defaults
                               </span>
                             </div>
                           </div>
@@ -5558,7 +5558,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                     <span
                                       class="emotion-16"
                                     >
-                                      Component overrides & defaults
+                                      Component defaults
                                     </span>
                                   </div>
                                 </div>
@@ -9334,7 +9334,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               <span
                                 class="emotion-18"
                               >
-                                Component overrides & defaults
+                                Component defaults
                               </span>
                             </div>
                           </div>
@@ -13217,7 +13217,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                                     <span
                                       class="emotion-16"
                                     >
-                                      Component overrides & defaults
+                                      Component defaults
                                     </span>
                                   </div>
                                 </div>
