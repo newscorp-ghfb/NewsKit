@@ -5,15 +5,9 @@ import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../components/code';
 import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
-import {
-  StatefulSlider,
-  styled,
-  Heading1,
-  LabelPosition,
-  UnorderedList,
-} from 'newskit';
+import {StatefulSlider, styled, Heading1, UnorderedList} from 'newskit';
 
-import { IconFilledCircle } from '../../components/icons'
+import {IconFilledCircle} from '../../components/icons';
 
 export default Layout;
 
@@ -80,7 +74,7 @@ NewsKit also exports a StatefulSlider component which has the same props (except
     right of the rail. Typically this would show the user the maximum value of
     the slider. If left undefined, no label is rendered.
   </Prop>
-  <Prop name="labelPosition" type="LabelPosition" default="LabelPosition.Inline">
+  <Prop name="labelPosition" type="string" default="inline">
     Defines where the min/max labels will be placed accodringly to the slider track:
     <br/>
     <br/>
@@ -88,9 +82,9 @@ NewsKit also exports a StatefulSlider component which has the same props (except
       content: {
         typographyPreset: 'editorialParagraph020',
       }
-    }} children={[`LabelPosition.Inline - places the slider between the min/max labels`,
-      `LabelPosition.Before - places the min/max labels before the slider`,
-      `LabelPosition.After - places the labels after the slider element.`]}>
+    }} children={[`'inline' - places the slider between the min/max labels`,
+      `'before' - places the min/max labels before the slider`,
+      `'after' - places the labels after the slider element.`]}>
     </UnorderedList>
     This prop can be applied on both vertical and horizontal slider. For a visual example please check the playground.
   </Prop>
@@ -276,17 +270,17 @@ Refer to the defaults below for the full object structure:
       propName: 'labelPosition',
       options: [
         {
-          label: 'Default (Inline)',
+          label: 'Default (inline)',
           isDefault: true,
-          value: LabelPosition.Inline,
+          value: 'inline',
         },
         {
-          label: 'Before',
-          value: LabelPosition.Before,
+          label: 'before',
+          value: 'before',
         },
         {
-          label: 'After',
-          value: LabelPosition.After,
+          label: 'after',
+          value: 'after',
         },
       ],
     },
