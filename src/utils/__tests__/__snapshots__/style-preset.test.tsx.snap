@@ -4,7 +4,7 @@ exports[`getStylePresetFromTheme renders with active state when prop isActive is
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  border-color: #85939C;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
@@ -55,12 +55,12 @@ exports[`getStylePresetFromTheme renders with checked state when prop isChecked 
 }
 
 .emotion-0:disabled {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -73,14 +73,14 @@ exports[`getStylePresetFromTheme renders with checked:disabled pseudo state when
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
 }
 
 .emotion-0 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -400,7 +400,7 @@ exports[`getStylePresetFromTheme renders with disabled state when prop isDisable
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
@@ -444,7 +444,7 @@ exports[`getStylePresetFromTheme renders with focus-visible state when isFocused
 <DocumentFragment>
   .emotion-0 {
   background-color: transparent;
-  border-color: #85939C;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
@@ -548,7 +548,7 @@ exports[`getStylePresetFromTheme renders with loading state when prop isLoading 
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  border-color: #85939C;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
@@ -568,7 +568,7 @@ exports[`getStylePresetFromTheme renders with selected state when prop isSelecte
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  border-color: #85939C;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
@@ -588,7 +588,7 @@ exports[`getStylePresetFromTheme renders with selected:disabled pseudo state whe
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
@@ -843,12 +843,12 @@ exports[`getStylePresetFromTheme with checked:focus pseudoState 1`] = `
 }
 
 .emotion-0:disabled {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -892,12 +892,12 @@ exports[`getStylePresetFromTheme with checked:hover pseudoState 1`] = `
 }
 
 .emotion-0:disabled {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -928,11 +928,11 @@ exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style pre
 
 .emotion-0:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -1146,8 +1146,8 @@ exports[`getStylePresetFromTheme with isSvg  1`] = `
 
 .emotion-0:disabled {
   background-color: transparent;
-  color: #C0C7CC;
-  fill: #C0C7CC;
+  color: #ABABAB;
+  fill: #ABABAB;
 }
 
 <div
@@ -1196,11 +1196,11 @@ exports[`getStylePresetFromTheme with nestedCssSelector adds the nested element 
 
 .emotion-0:disabled .nested-element-class {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled .nested-element-class svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -1241,7 +1241,7 @@ exports[`getStylePresetFromTheme with selected:focus pseudoState 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #00FF00;
-  border-color: #85939C;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
@@ -1265,7 +1265,7 @@ exports[`getStylePresetFromTheme with selected:hover pseudoState 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #00FF00;
-  border-color: #85939C;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
@@ -1429,11 +1429,11 @@ exports[`getStylePresetFromTheme without background-color styles 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div

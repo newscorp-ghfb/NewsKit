@@ -110,8 +110,8 @@ exports[`Checkbox active state: active off 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -191,7 +191,7 @@ exports[`Checkbox active state: active off 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -222,16 +222,16 @@ exports[`Checkbox active state: active off 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -304,7 +304,7 @@ exports[`Checkbox active state: active off 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -596,8 +596,8 @@ exports[`Checkbox active state: active on 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -677,7 +677,7 @@ exports[`Checkbox active state: active on 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -708,16 +708,16 @@ exports[`Checkbox active state: active on 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -790,7 +790,7 @@ exports[`Checkbox active state: active on 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -1098,7 +1098,7 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
 }
 
 .emotion-5 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1107,7 +1107,7 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <label
@@ -1250,8 +1250,8 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -1331,7 +1331,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -1362,16 +1362,16 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -1444,7 +1444,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -1602,7 +1602,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-5 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1611,7 +1611,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <label
@@ -1727,7 +1727,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -1764,7 +1764,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
 }
 
 .emotion-5 {
-  color: #C0C7CC;
+  color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1886,7 +1886,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -1923,7 +1923,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
 }
 
 .emotion-5 {
-  color: #C0C7CC;
+  color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -2088,7 +2088,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
 }
 
 .emotion-5 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -2097,7 +2097,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
 }
 
 .emotion-5:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <label
@@ -2240,8 +2240,8 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -2321,7 +2321,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -2352,16 +2352,16 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -2434,7 +2434,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -2592,7 +2592,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-5 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -2601,7 +2601,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-5:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <label
@@ -2717,7 +2717,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -2754,7 +2754,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
 }
 
 .emotion-5 {
-  color: #C0C7CC;
+  color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -2876,7 +2876,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -2913,7 +2913,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
 }
 
 .emotion-5 {
-  color: #C0C7CC;
+  color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -3062,8 +3062,8 @@ exports[`Checkbox label attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -3143,7 +3143,7 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -3174,16 +3174,16 @@ exports[`Checkbox label attributes 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -3256,7 +3256,7 @@ exports[`Checkbox label attributes 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -3414,7 +3414,7 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-5 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -3423,7 +3423,7 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <label
@@ -3474,7 +3474,7 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-1 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -3483,7 +3483,7 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-2 {
@@ -3581,8 +3581,8 @@ exports[`Checkbox label position start 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -3662,7 +3662,7 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-4:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -3693,16 +3693,16 @@ exports[`Checkbox label position start 1`] = `
 
 .emotion-4:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-4:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-4:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -3775,7 +3775,7 @@ exports[`Checkbox label position start 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -4072,8 +4072,8 @@ exports[`Checkbox onBlur and onFocus when isFocusVisible return false: with blur
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -4153,7 +4153,7 @@ exports[`Checkbox onBlur and onFocus when isFocusVisible return false: with blur
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -4184,16 +4184,16 @@ exports[`Checkbox onBlur and onFocus when isFocusVisible return false: with blur
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -4266,7 +4266,7 @@ exports[`Checkbox onBlur and onFocus when isFocusVisible return false: with blur
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -4558,8 +4558,8 @@ exports[`Checkbox onBlur and onFocus when isFocusVisible return false: with focu
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -4736,8 +4736,8 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -4817,7 +4817,7 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -4848,16 +4848,16 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -4930,7 +4930,7 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -5222,8 +5222,8 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -5472,12 +5472,12 @@ exports[`Checkbox render with size: large & checked 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5500,7 +5500,7 @@ exports[`Checkbox render with size: large & checked 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5688,8 +5688,8 @@ exports[`Checkbox render with size: large & label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -5769,7 +5769,7 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -5800,16 +5800,16 @@ exports[`Checkbox render with size: large & label 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -5882,7 +5882,7 @@ exports[`Checkbox render with size: large & label 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -6040,7 +6040,7 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-5 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -6049,7 +6049,7 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <label
@@ -6192,8 +6192,8 @@ exports[`Checkbox render with size: large 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -6273,7 +6273,7 @@ exports[`Checkbox render with size: large 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -6304,16 +6304,16 @@ exports[`Checkbox render with size: large 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -6386,7 +6386,7 @@ exports[`Checkbox render with size: large 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -6727,12 +6727,12 @@ exports[`Checkbox render with size: medium & checked 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -6755,7 +6755,7 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6943,8 +6943,8 @@ exports[`Checkbox render with size: medium & label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -7024,7 +7024,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -7055,16 +7055,16 @@ exports[`Checkbox render with size: medium & label 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -7137,7 +7137,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -7295,7 +7295,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-5 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -7304,7 +7304,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <label
@@ -7447,8 +7447,8 @@ exports[`Checkbox render with size: medium 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -7528,7 +7528,7 @@ exports[`Checkbox render with size: medium 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -7559,16 +7559,16 @@ exports[`Checkbox render with size: medium 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -7641,7 +7641,7 @@ exports[`Checkbox render with size: medium 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -7982,12 +7982,12 @@ exports[`Checkbox render with size: small & checked 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8010,7 +8010,7 @@ exports[`Checkbox render with size: small & checked 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8198,8 +8198,8 @@ exports[`Checkbox render with size: small & label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -8279,7 +8279,7 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -8310,16 +8310,16 @@ exports[`Checkbox render with size: small & label 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -8392,7 +8392,7 @@ exports[`Checkbox render with size: small & label 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -8550,7 +8550,7 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-5 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -8559,7 +8559,7 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <label
@@ -8702,8 +8702,8 @@ exports[`Checkbox render with size: small 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -8783,7 +8783,7 @@ exports[`Checkbox render with size: small 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -8814,16 +8814,16 @@ exports[`Checkbox render with size: small 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -8896,7 +8896,7 @@ exports[`Checkbox render with size: small 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -9188,8 +9188,8 @@ exports[`Checkbox render with state: base 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -9269,7 +9269,7 @@ exports[`Checkbox render with state: base 1`] = `
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -9300,16 +9300,16 @@ exports[`Checkbox render with state: base 1`] = `
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -9382,7 +9382,7 @@ exports[`Checkbox render with state: base 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -9724,12 +9724,12 @@ exports[`Checkbox render with state: checked 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -9752,7 +9752,7 @@ exports[`Checkbox render with state: checked 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9913,15 +9913,15 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
 }
 
 .emotion-3 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -9944,7 +9944,7 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -10107,7 +10107,7 @@ exports[`Checkbox render with state: disabled 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -10280,7 +10280,7 @@ exports[`Checkbox render with state: invalid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #A90000;
   border-width: 2px;
   border-radius: 4px;
@@ -10536,7 +10536,7 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -10725,7 +10725,7 @@ exports[`Checkbox render with state: valid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
   border-width: 2px;
   border-radius: 4px;
@@ -10742,7 +10742,7 @@ exports[`Checkbox render with state: valid 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -10751,7 +10751,7 @@ exports[`Checkbox render with state: valid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -10983,7 +10983,7 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -11223,12 +11223,12 @@ exports[`Checkbox with logical props overrides 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -11251,7 +11251,7 @@ exports[`Checkbox with logical props overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -11430,7 +11430,7 @@ exports[`Checkbox with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }

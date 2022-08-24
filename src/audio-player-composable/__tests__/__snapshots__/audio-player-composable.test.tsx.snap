@@ -54,11 +54,11 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
 
 .emotion-0:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -126,7 +126,7 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -279,11 +279,11 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 
 .emotion-0:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -351,7 +351,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -710,7 +710,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 }
 
 .emotion-3 {
-  color: #2E3F54;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -755,7 +755,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -774,11 +774,11 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -787,12 +787,12 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 }
 
 .emotion-7:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-7:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-7:selected:focus:not(:disabled) {
@@ -810,7 +810,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 
 .emotion-7:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-9 {
@@ -828,7 +828,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   -ms-flex-align: center;
   align-items: center;
   background-color: #ECF1FF;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -848,7 +848,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 
 .emotion-9:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-9:focus:not(:disabled) {
@@ -969,7 +969,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -980,24 +980,24 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 }
 
 .emotion-16 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-16:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-16:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-16:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-16:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-16:focus-visible:not(:disabled) {
@@ -1065,7 +1065,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1307,11 +1307,11 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 
 .emotion-0:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1379,7 +1379,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1480,7 +1480,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -1534,7 +1534,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -1553,11 +1553,11 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-11:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -1566,12 +1566,12 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 }
 
 .emotion-11:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-11:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-11:selected:focus:not(:disabled) {
@@ -1589,7 +1589,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 
 .emotion-11:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-13 {
@@ -1607,7 +1607,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   -ms-flex-align: center;
   align-items: center;
   background-color: #ECF1FF;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -1627,7 +1627,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 
 .emotion-13:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -1718,7 +1718,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   bottom: calc(-16px / 2);
@@ -1959,7 +1959,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -2013,7 +2013,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -2032,11 +2032,11 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -2045,12 +2045,12 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 }
 
 .emotion-6:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-6:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-6:selected:focus:not(:disabled) {
@@ -2068,7 +2068,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 
 .emotion-6:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-8 {
@@ -2086,7 +2086,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   -ms-flex-align: center;
   align-items: center;
   background-color: #ECF1FF;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -2106,7 +2106,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 
 .emotion-8:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-8:focus:not(:disabled) {
@@ -2197,7 +2197,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   bottom: calc(-16px / 2);
@@ -2418,7 +2418,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2519,7 +2519,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -2573,7 +2573,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -2592,11 +2592,11 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-11:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -2605,12 +2605,12 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 }
 
 .emotion-11:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-11:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-11:selected:focus:not(:disabled) {
@@ -2628,7 +2628,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 
 .emotion-11:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-13 {
@@ -2646,7 +2646,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   -ms-flex-align: center;
   align-items: center;
   background-color: #ECF1FF;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -2666,7 +2666,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 
 .emotion-13:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -2757,7 +2757,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   bottom: calc(-16px / 2);
@@ -2987,11 +2987,11 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3059,7 +3059,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3124,7 +3124,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -3153,7 +3153,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
 }
 
 .emotion-11 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
@@ -3161,7 +3161,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
@@ -3169,7 +3169,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -3432,11 +3432,11 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3504,7 +3504,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3615,7 +3615,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -3644,7 +3644,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 .emotion-11 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
@@ -3652,7 +3652,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
@@ -3660,7 +3660,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -3923,11 +3923,11 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3995,7 +3995,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4105,7 +4105,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -4134,7 +4134,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-11 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
@@ -4142,7 +4142,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
@@ -4150,7 +4150,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -4414,11 +4414,11 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -4486,7 +4486,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4597,7 +4597,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -4626,7 +4626,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-11 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
@@ -4634,7 +4634,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
@@ -4642,7 +4642,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -4905,11 +4905,11 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -4977,7 +4977,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5088,7 +5088,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -5117,7 +5117,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-11 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
@@ -5125,7 +5125,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
@@ -5133,7 +5133,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -5396,11 +5396,11 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -5468,7 +5468,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5578,7 +5578,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -5607,7 +5607,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-11 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
@@ -5615,7 +5615,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
@@ -5623,7 +5623,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -5887,11 +5887,11 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -5959,7 +5959,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6102,11 +6102,11 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -6174,7 +6174,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6477,11 +6477,11 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -6549,7 +6549,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6829,7 +6829,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   cursor: -webkit-grabbing;
   cursor: grabbing;
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -6859,7 +6859,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -6871,7 +6871,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -7016,12 +7016,12 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-5:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -7089,7 +7089,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7115,7 +7115,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   display: inline-block;
   display: block;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -7174,12 +7174,12 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-11:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-11:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -7305,11 +7305,11 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 
 .emotion-17:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-17:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-17:focus-visible:not(:disabled) {
@@ -7362,7 +7362,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -7391,7 +7391,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-26 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-26:hover:not(:disabled) {
@@ -7399,7 +7399,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-26:hover:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-26:active:not(:disabled) {
@@ -7407,7 +7407,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-26:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-26:focus-visible:not(:disabled) {
@@ -7427,7 +7427,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-42 {
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7785,7 +7785,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-0 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -7797,7 +7797,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -8151,7 +8151,7 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   display: inline-block;
   display: block;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -8443,12 +8443,12 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 }
 
 .emotion-0:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -8516,7 +8516,7 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8750,7 +8750,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   display: flex;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -8779,7 +8779,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -8791,7 +8791,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -9113,7 +9113,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   display: flex;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -9142,7 +9142,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -9154,7 +9154,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -9365,7 +9365,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   display: inline-block;
   display: block;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -9424,12 +9424,12 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-10:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -9555,11 +9555,11 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 
 .emotion-16:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-16:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-16:focus-visible:not(:disabled) {
@@ -9597,7 +9597,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9637,7 +9637,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -9666,7 +9666,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-25 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-25:hover:not(:disabled) {
@@ -9674,7 +9674,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-25:hover:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-25:active:not(:disabled) {
@@ -9682,7 +9682,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-25:active:not(:disabled) svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-25:focus-visible:not(:disabled) {
@@ -9702,7 +9702,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-41 {
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }

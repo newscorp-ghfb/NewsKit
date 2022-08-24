@@ -89,7 +89,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -108,7 +108,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #09111C;
+  background-color: #111111;
   width: 4px;
   height: 4px;
   left: 8px;
@@ -226,7 +226,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -245,7 +245,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #09111C;
+  background-color: #111111;
   width: 4px;
   height: 4px;
   left: 8px;
@@ -363,7 +363,7 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -382,7 +382,7 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #09111C;
+  background-color: #111111;
   width: 4px;
   height: 4px;
   left: 8px;
@@ -500,7 +500,7 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -519,7 +519,7 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #09111C;
+  background-color: #111111;
   width: 4px;
   height: 4px;
   left: 8px;
@@ -637,7 +637,7 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -755,7 +755,7 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -774,7 +774,7 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #09111C;
+  background-color: #111111;
   width: 4px;
   height: 4px;
   left: 10px;
@@ -892,7 +892,7 @@ exports[`Tooltip pointer padding should be applied with token distance override 
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -911,7 +911,7 @@ exports[`Tooltip pointer padding should be applied with token distance override 
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #09111C;
+  background-color: #111111;
   width: 4px;
   height: 4px;
   left: 16px;
@@ -1029,7 +1029,7 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1048,7 +1048,7 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #09111C;
+  background-color: #111111;
   width: 4px;
   height: 4px;
   left: 0px;
@@ -1166,7 +1166,7 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1185,7 +1185,7 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #09111C;
+  background-color: #111111;
   width: 4px;
   height: 4px;
   left: 0px;
@@ -1303,7 +1303,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1423,7 +1423,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
   margin: 0;
   background-color: #D60000;
   border-radius: 0;
-  color: #09111C;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1541,7 +1541,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1560,7 +1560,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #09111C;
+  background-color: #111111;
   width: 4px;
   height: 4px;
   left: 8px;
@@ -1678,7 +1678,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1697,7 +1697,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #09111C;
+  background-color: #111111;
   width: 16px;
   height: 16px;
   left: 8px;
@@ -1815,7 +1815,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1952,7 +1952,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
-  background-color: #09111C;
+  background-color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1971,7 +1971,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #09111C;
+  background-color: #111111;
   width: 4px;
   height: 4px;
   left: calc(-4px / 2);

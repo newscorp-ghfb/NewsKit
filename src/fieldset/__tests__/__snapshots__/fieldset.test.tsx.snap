@@ -15,7 +15,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   margin: 0;
   padding: 0;
   padding: 1px 0;
-  color: #09111C;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -26,7 +26,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -60,15 +60,15 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #85939C;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-2 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-2:focus:not(:disabled) {
@@ -76,7 +76,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -88,36 +88,36 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-3 {
@@ -148,19 +148,19 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-3::placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-4 {
@@ -271,8 +271,8 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -352,7 +352,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-7:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -383,16 +383,16 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 
 .emotion-7:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-7:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-7:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -465,7 +465,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -623,7 +623,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-9 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -632,7 +632,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-9:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <fieldset
@@ -703,7 +703,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   margin: 0;
   padding: 0;
   padding: 1px 0;
-  color: #09111C;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -714,7 +714,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -748,15 +748,15 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #85939C;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-2 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-2:focus:not(:disabled) {
@@ -764,7 +764,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -776,36 +776,36 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-3 {
@@ -836,19 +836,19 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-3::placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-4 {
@@ -959,8 +959,8 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -1040,7 +1040,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-7:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -1071,16 +1071,16 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 
 .emotion-7:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-7:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-7:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -1153,7 +1153,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -1311,7 +1311,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-9 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1320,7 +1320,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-9:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <fieldset
@@ -1391,7 +1391,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   margin: 0;
   padding: 0;
   padding: 1px 0;
-  color: #09111C;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 18px;
@@ -1402,7 +1402,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -1436,15 +1436,15 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #85939C;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-2 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-2:focus:not(:disabled) {
@@ -1452,7 +1452,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1464,36 +1464,36 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:valid:hover:not(:disabled) {
   border-color: #007B22;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
   border-color: #D60000;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-3 {
@@ -1524,19 +1524,19 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-3::placeholder {
-  color: #5A6A79;
+  color: #6A6A6A;
 }
 
 .emotion-4 {
@@ -1647,8 +1647,8 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -1728,7 +1728,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-7:valid:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -1759,16 +1759,16 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 
 .emotion-7:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-7:checked:disabled:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #DEE2E5;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-7:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -1841,7 +1841,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -1999,7 +1999,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-9 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -2008,7 +2008,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-9:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <fieldset
@@ -2079,7 +2079,7 @@ exports[`Fieldset renders large legend 1`] = `
   margin: 0;
   padding: 0;
   padding: 1px 0;
-  color: #09111C;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -2090,7 +2090,7 @@ exports[`Fieldset renders large legend 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -2142,7 +2142,7 @@ exports[`Fieldset renders medium legend 1`] = `
   margin: 0;
   padding: 0;
   padding: 1px 0;
-  color: #09111C;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2153,7 +2153,7 @@ exports[`Fieldset renders medium legend 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -2205,7 +2205,7 @@ exports[`Fieldset renders small legend 1`] = `
   margin: 0;
   padding: 0;
   padding: 1px 0;
-  color: #09111C;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 18px;
@@ -2216,7 +2216,7 @@ exports[`Fieldset renders small legend 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -2295,7 +2295,7 @@ exports[`Fieldset should render with button inside the legend element 1`] = `
   margin: 0;
   padding: 0;
   padding: 1px 0;
-  color: #09111C;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -2305,7 +2305,7 @@ exports[`Fieldset should render with button inside the legend element 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 <fieldset
@@ -2349,7 +2349,7 @@ exports[`Fieldset should render with legend 1`] = `
   margin: 0;
   padding: 0;
   padding: 1px 0;
-  color: #09111C;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2360,7 +2360,7 @@ exports[`Fieldset should render with legend 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -2414,7 +2414,7 @@ exports[`Fieldset should render with logical props overrides 1`] = `
   margin: 0;
   padding: 0;
   padding: 1px 0;
-  color: #09111C;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2425,7 +2425,7 @@ exports[`Fieldset should render with logical props overrides 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-1::before {

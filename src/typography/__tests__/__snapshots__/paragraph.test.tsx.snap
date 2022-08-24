@@ -4,7 +4,7 @@ exports[`Paragraph does not render dropCap when first children is not plain text
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -13,7 +13,7 @@ exports[`Paragraph does not render dropCap when first children is not plain text
 }
 
 .emotion-0 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 <p
@@ -31,7 +31,7 @@ exports[`Paragraph renders Paragraph 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -40,7 +40,7 @@ exports[`Paragraph renders Paragraph 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 <p
@@ -55,7 +55,7 @@ exports[`Paragraph renders Paragraph with logical props 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -68,7 +68,7 @@ exports[`Paragraph renders Paragraph with logical props 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 <p
@@ -107,7 +107,7 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -116,7 +116,7 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
 }
 
 .emotion-0 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 <p
@@ -129,7 +129,7 @@ exports[`Paragraph renders with drop cap 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -138,12 +138,12 @@ exports[`Paragraph renders with drop cap 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-1 {
   float: left;
-  color: #09111C;
+  color: #111111;
 }
 
 @media screen and (max-width: 767px) {
@@ -177,7 +177,7 @@ exports[`Paragraph renders with drop cap 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #09111C;
+  fill: #111111;
 }
 
 @media screen and (max-width: 767px) {
@@ -239,7 +239,7 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -248,12 +248,12 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-1 {
   float: left;
-  color: #09111C;
+  color: #111111;
 }
 
 @media screen and (max-width: 767px) {
@@ -287,7 +287,7 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #09111C;
+  fill: #111111;
 }
 
 @media screen and (max-width: 767px) {
@@ -367,7 +367,7 @@ exports[`Paragraph renders with dropCap logical props 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -376,12 +376,12 @@ exports[`Paragraph renders with dropCap logical props 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-1 {
   float: left;
-  color: #09111C;
+  color: #111111;
   margin-inline: 8px;
   margin-block: 8px;
   padding-inline: 8px;
@@ -419,7 +419,7 @@ exports[`Paragraph renders with dropCap logical props 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #09111C;
+  fill: #111111;
 }
 
 @media screen and (max-width: 767px) {

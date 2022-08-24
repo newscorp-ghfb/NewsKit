@@ -13,7 +13,7 @@ exports[`IconFilledFacebook renders the IconFilledFacebook icon from theme overr
 exports[`IconFilledFacebook renders the IconFilledFacebook icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -37,7 +37,7 @@ exports[`IconFilledFacebook renders the IconFilledFacebook icon with specified s
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -74,7 +74,7 @@ exports[`IconFilledFacebook renders the IconFilledFacebook icon with specified s
 exports[`IconFilledFacebook renders the IconFilledFacebook icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -98,7 +98,7 @@ exports[`IconFilledFacebook renders the IconFilledFacebook icon with title overr
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -148,7 +148,7 @@ exports[`IconFilledFigma renders the IconFilledFigma icon from theme override 1`
 exports[`IconFilledFigma renders the IconFilledFigma icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -172,7 +172,7 @@ exports[`IconFilledFigma renders the IconFilledFigma icon with specified style 1
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -225,7 +225,7 @@ exports[`IconFilledFigma renders the IconFilledFigma icon with specified style 1
 exports[`IconFilledFigma renders the IconFilledFigma icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -249,7 +249,7 @@ exports[`IconFilledFigma renders the IconFilledFigma icon with title override 1`
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -315,7 +315,7 @@ exports[`IconFilledForward5 renders the IconFilledForward5 icon from theme overr
 exports[`IconFilledForward5 renders the IconFilledForward5 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -339,7 +339,7 @@ exports[`IconFilledForward5 renders the IconFilledForward5 icon with specified s
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -377,7 +377,7 @@ exports[`IconFilledForward5 renders the IconFilledForward5 icon with specified s
 exports[`IconFilledForward5 renders the IconFilledForward5 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -401,7 +401,7 @@ exports[`IconFilledForward5 renders the IconFilledForward5 icon with title overr
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -452,7 +452,7 @@ exports[`IconFilledForward10 renders the IconFilledForward10 icon from theme ove
 exports[`IconFilledForward10 renders the IconFilledForward10 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -476,7 +476,7 @@ exports[`IconFilledForward10 renders the IconFilledForward10 icon with specified
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -514,7 +514,7 @@ exports[`IconFilledForward10 renders the IconFilledForward10 icon with specified
 exports[`IconFilledForward10 renders the IconFilledForward10 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -538,7 +538,7 @@ exports[`IconFilledForward10 renders the IconFilledForward10 icon with title ove
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -589,7 +589,7 @@ exports[`IconFilledForward15 renders the IconFilledForward15 icon from theme ove
 exports[`IconFilledForward15 renders the IconFilledForward15 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -613,7 +613,7 @@ exports[`IconFilledForward15 renders the IconFilledForward15 icon with specified
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -651,7 +651,7 @@ exports[`IconFilledForward15 renders the IconFilledForward15 icon with specified
 exports[`IconFilledForward15 renders the IconFilledForward15 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -675,7 +675,7 @@ exports[`IconFilledForward15 renders the IconFilledForward15 icon with title ove
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -726,7 +726,7 @@ exports[`IconFilledForward20 renders the IconFilledForward20 icon from theme ove
 exports[`IconFilledForward20 renders the IconFilledForward20 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -750,7 +750,7 @@ exports[`IconFilledForward20 renders the IconFilledForward20 icon with specified
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -788,7 +788,7 @@ exports[`IconFilledForward20 renders the IconFilledForward20 icon with specified
 exports[`IconFilledForward20 renders the IconFilledForward20 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -812,7 +812,7 @@ exports[`IconFilledForward20 renders the IconFilledForward20 icon with title ove
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -863,7 +863,7 @@ exports[`IconFilledForward25 renders the IconFilledForward25 icon from theme ove
 exports[`IconFilledForward25 renders the IconFilledForward25 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -887,7 +887,7 @@ exports[`IconFilledForward25 renders the IconFilledForward25 icon with specified
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -925,7 +925,7 @@ exports[`IconFilledForward25 renders the IconFilledForward25 icon with specified
 exports[`IconFilledForward25 renders the IconFilledForward25 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -949,7 +949,7 @@ exports[`IconFilledForward25 renders the IconFilledForward25 icon with title ove
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1000,7 +1000,7 @@ exports[`IconFilledForward30 renders the IconFilledForward30 icon from theme ove
 exports[`IconFilledForward30 renders the IconFilledForward30 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1024,7 +1024,7 @@ exports[`IconFilledForward30 renders the IconFilledForward30 icon with specified
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1062,7 +1062,7 @@ exports[`IconFilledForward30 renders the IconFilledForward30 icon with specified
 exports[`IconFilledForward30 renders the IconFilledForward30 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1086,7 +1086,7 @@ exports[`IconFilledForward30 renders the IconFilledForward30 icon with title ove
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1137,7 +1137,7 @@ exports[`IconFilledGitHub renders the IconFilledGitHub icon from theme override 
 exports[`IconFilledGitHub renders the IconFilledGitHub icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1161,7 +1161,7 @@ exports[`IconFilledGitHub renders the IconFilledGitHub icon with specified style
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1198,7 +1198,7 @@ exports[`IconFilledGitHub renders the IconFilledGitHub icon with specified style
 exports[`IconFilledGitHub renders the IconFilledGitHub icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1222,7 +1222,7 @@ exports[`IconFilledGitHub renders the IconFilledGitHub icon with title override 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1272,7 +1272,7 @@ exports[`IconFilledInstagram renders the IconFilledInstagram icon from theme ove
 exports[`IconFilledInstagram renders the IconFilledInstagram icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1296,7 +1296,7 @@ exports[`IconFilledInstagram renders the IconFilledInstagram icon with specified
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1333,7 +1333,7 @@ exports[`IconFilledInstagram renders the IconFilledInstagram icon with specified
 exports[`IconFilledInstagram renders the IconFilledInstagram icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1357,7 +1357,7 @@ exports[`IconFilledInstagram renders the IconFilledInstagram icon with title ove
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1407,7 +1407,7 @@ exports[`IconFilledReddit renders the IconFilledReddit icon from theme override 
 exports[`IconFilledReddit renders the IconFilledReddit icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1431,7 +1431,7 @@ exports[`IconFilledReddit renders the IconFilledReddit icon with specified style
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1468,7 +1468,7 @@ exports[`IconFilledReddit renders the IconFilledReddit icon with specified style
 exports[`IconFilledReddit renders the IconFilledReddit icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1492,7 +1492,7 @@ exports[`IconFilledReddit renders the IconFilledReddit icon with title override 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1542,7 +1542,7 @@ exports[`IconFilledReplay5 renders the IconFilledReplay5 icon from theme overrid
 exports[`IconFilledReplay5 renders the IconFilledReplay5 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1566,7 +1566,7 @@ exports[`IconFilledReplay5 renders the IconFilledReplay5 icon with specified sty
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1604,7 +1604,7 @@ exports[`IconFilledReplay5 renders the IconFilledReplay5 icon with specified sty
 exports[`IconFilledReplay5 renders the IconFilledReplay5 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1628,7 +1628,7 @@ exports[`IconFilledReplay5 renders the IconFilledReplay5 icon with title overrid
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1679,7 +1679,7 @@ exports[`IconFilledReplay10 renders the IconFilledReplay10 icon from theme overr
 exports[`IconFilledReplay10 renders the IconFilledReplay10 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1703,7 +1703,7 @@ exports[`IconFilledReplay10 renders the IconFilledReplay10 icon with specified s
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1741,7 +1741,7 @@ exports[`IconFilledReplay10 renders the IconFilledReplay10 icon with specified s
 exports[`IconFilledReplay10 renders the IconFilledReplay10 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1765,7 +1765,7 @@ exports[`IconFilledReplay10 renders the IconFilledReplay10 icon with title overr
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1816,7 +1816,7 @@ exports[`IconFilledReplay15 renders the IconFilledReplay15 icon from theme overr
 exports[`IconFilledReplay15 renders the IconFilledReplay15 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1840,7 +1840,7 @@ exports[`IconFilledReplay15 renders the IconFilledReplay15 icon with specified s
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1878,7 +1878,7 @@ exports[`IconFilledReplay15 renders the IconFilledReplay15 icon with specified s
 exports[`IconFilledReplay15 renders the IconFilledReplay15 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1902,7 +1902,7 @@ exports[`IconFilledReplay15 renders the IconFilledReplay15 icon with title overr
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1953,7 +1953,7 @@ exports[`IconFilledReplay20 renders the IconFilledReplay20 icon from theme overr
 exports[`IconFilledReplay20 renders the IconFilledReplay20 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1977,7 +1977,7 @@ exports[`IconFilledReplay20 renders the IconFilledReplay20 icon with specified s
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2015,7 +2015,7 @@ exports[`IconFilledReplay20 renders the IconFilledReplay20 icon with specified s
 exports[`IconFilledReplay20 renders the IconFilledReplay20 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2039,7 +2039,7 @@ exports[`IconFilledReplay20 renders the IconFilledReplay20 icon with title overr
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2090,7 +2090,7 @@ exports[`IconFilledReplay25 renders the IconFilledReplay25 icon from theme overr
 exports[`IconFilledReplay25 renders the IconFilledReplay25 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2114,7 +2114,7 @@ exports[`IconFilledReplay25 renders the IconFilledReplay25 icon with specified s
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2152,7 +2152,7 @@ exports[`IconFilledReplay25 renders the IconFilledReplay25 icon with specified s
 exports[`IconFilledReplay25 renders the IconFilledReplay25 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2176,7 +2176,7 @@ exports[`IconFilledReplay25 renders the IconFilledReplay25 icon with title overr
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2227,7 +2227,7 @@ exports[`IconFilledReplay30 renders the IconFilledReplay30 icon from theme overr
 exports[`IconFilledReplay30 renders the IconFilledReplay30 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2251,7 +2251,7 @@ exports[`IconFilledReplay30 renders the IconFilledReplay30 icon with specified s
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2289,7 +2289,7 @@ exports[`IconFilledReplay30 renders the IconFilledReplay30 icon with specified s
 exports[`IconFilledReplay30 renders the IconFilledReplay30 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2313,7 +2313,7 @@ exports[`IconFilledReplay30 renders the IconFilledReplay30 icon with title overr
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2364,7 +2364,7 @@ exports[`IconFilledTwitter renders the IconFilledTwitter icon from theme overrid
 exports[`IconFilledTwitter renders the IconFilledTwitter icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2388,7 +2388,7 @@ exports[`IconFilledTwitter renders the IconFilledTwitter icon with specified sty
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2425,7 +2425,7 @@ exports[`IconFilledTwitter renders the IconFilledTwitter icon with specified sty
 exports[`IconFilledTwitter renders the IconFilledTwitter icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2449,7 +2449,7 @@ exports[`IconFilledTwitter renders the IconFilledTwitter icon with title overrid
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2499,7 +2499,7 @@ exports[`IconFilledWhatsApp renders the IconFilledWhatsApp icon from theme overr
 exports[`IconFilledWhatsApp renders the IconFilledWhatsApp icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2523,7 +2523,7 @@ exports[`IconFilledWhatsApp renders the IconFilledWhatsApp icon with specified s
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2560,7 +2560,7 @@ exports[`IconFilledWhatsApp renders the IconFilledWhatsApp icon with specified s
 exports[`IconFilledWhatsApp renders the IconFilledWhatsApp icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2584,7 +2584,7 @@ exports[`IconFilledWhatsApp renders the IconFilledWhatsApp icon with title overr
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2634,7 +2634,7 @@ exports[`IconFilledYoutube renders the IconFilledYoutube icon from theme overrid
 exports[`IconFilledYoutube renders the IconFilledYoutube icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2658,7 +2658,7 @@ exports[`IconFilledYoutube renders the IconFilledYoutube icon with specified sty
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2695,7 +2695,7 @@ exports[`IconFilledYoutube renders the IconFilledYoutube icon with specified sty
 exports[`IconFilledYoutube renders the IconFilledYoutube icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2719,7 +2719,7 @@ exports[`IconFilledYoutube renders the IconFilledYoutube icon with title overrid
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2769,7 +2769,7 @@ exports[`IconOutlinedForward5 renders the IconOutlinedForward5 icon from theme o
 exports[`IconOutlinedForward5 renders the IconOutlinedForward5 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2793,7 +2793,7 @@ exports[`IconOutlinedForward5 renders the IconOutlinedForward5 icon with specifi
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2831,7 +2831,7 @@ exports[`IconOutlinedForward5 renders the IconOutlinedForward5 icon with specifi
 exports[`IconOutlinedForward5 renders the IconOutlinedForward5 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2855,7 +2855,7 @@ exports[`IconOutlinedForward5 renders the IconOutlinedForward5 icon with title o
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2906,7 +2906,7 @@ exports[`IconOutlinedForward10 renders the IconOutlinedForward10 icon from theme
 exports[`IconOutlinedForward10 renders the IconOutlinedForward10 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2930,7 +2930,7 @@ exports[`IconOutlinedForward10 renders the IconOutlinedForward10 icon with speci
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2968,7 +2968,7 @@ exports[`IconOutlinedForward10 renders the IconOutlinedForward10 icon with speci
 exports[`IconOutlinedForward10 renders the IconOutlinedForward10 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2992,7 +2992,7 @@ exports[`IconOutlinedForward10 renders the IconOutlinedForward10 icon with title
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3043,7 +3043,7 @@ exports[`IconOutlinedForward15 renders the IconOutlinedForward15 icon from theme
 exports[`IconOutlinedForward15 renders the IconOutlinedForward15 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3067,7 +3067,7 @@ exports[`IconOutlinedForward15 renders the IconOutlinedForward15 icon with speci
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3105,7 +3105,7 @@ exports[`IconOutlinedForward15 renders the IconOutlinedForward15 icon with speci
 exports[`IconOutlinedForward15 renders the IconOutlinedForward15 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3129,7 +3129,7 @@ exports[`IconOutlinedForward15 renders the IconOutlinedForward15 icon with title
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3180,7 +3180,7 @@ exports[`IconOutlinedForward20 renders the IconOutlinedForward20 icon from theme
 exports[`IconOutlinedForward20 renders the IconOutlinedForward20 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3204,7 +3204,7 @@ exports[`IconOutlinedForward20 renders the IconOutlinedForward20 icon with speci
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3242,7 +3242,7 @@ exports[`IconOutlinedForward20 renders the IconOutlinedForward20 icon with speci
 exports[`IconOutlinedForward20 renders the IconOutlinedForward20 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3266,7 +3266,7 @@ exports[`IconOutlinedForward20 renders the IconOutlinedForward20 icon with title
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3317,7 +3317,7 @@ exports[`IconOutlinedForward25 renders the IconOutlinedForward25 icon from theme
 exports[`IconOutlinedForward25 renders the IconOutlinedForward25 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3341,7 +3341,7 @@ exports[`IconOutlinedForward25 renders the IconOutlinedForward25 icon with speci
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3379,7 +3379,7 @@ exports[`IconOutlinedForward25 renders the IconOutlinedForward25 icon with speci
 exports[`IconOutlinedForward25 renders the IconOutlinedForward25 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3403,7 +3403,7 @@ exports[`IconOutlinedForward25 renders the IconOutlinedForward25 icon with title
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3454,7 +3454,7 @@ exports[`IconOutlinedForward30 renders the IconOutlinedForward30 icon from theme
 exports[`IconOutlinedForward30 renders the IconOutlinedForward30 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3478,7 +3478,7 @@ exports[`IconOutlinedForward30 renders the IconOutlinedForward30 icon with speci
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3516,7 +3516,7 @@ exports[`IconOutlinedForward30 renders the IconOutlinedForward30 icon with speci
 exports[`IconOutlinedForward30 renders the IconOutlinedForward30 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3540,7 +3540,7 @@ exports[`IconOutlinedForward30 renders the IconOutlinedForward30 icon with title
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3591,7 +3591,7 @@ exports[`IconOutlinedReplay5 renders the IconOutlinedReplay5 icon from theme ove
 exports[`IconOutlinedReplay5 renders the IconOutlinedReplay5 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3615,7 +3615,7 @@ exports[`IconOutlinedReplay5 renders the IconOutlinedReplay5 icon with specified
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3653,7 +3653,7 @@ exports[`IconOutlinedReplay5 renders the IconOutlinedReplay5 icon with specified
 exports[`IconOutlinedReplay5 renders the IconOutlinedReplay5 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3677,7 +3677,7 @@ exports[`IconOutlinedReplay5 renders the IconOutlinedReplay5 icon with title ove
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3728,7 +3728,7 @@ exports[`IconOutlinedReplay10 renders the IconOutlinedReplay10 icon from theme o
 exports[`IconOutlinedReplay10 renders the IconOutlinedReplay10 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3752,7 +3752,7 @@ exports[`IconOutlinedReplay10 renders the IconOutlinedReplay10 icon with specifi
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3790,7 +3790,7 @@ exports[`IconOutlinedReplay10 renders the IconOutlinedReplay10 icon with specifi
 exports[`IconOutlinedReplay10 renders the IconOutlinedReplay10 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3814,7 +3814,7 @@ exports[`IconOutlinedReplay10 renders the IconOutlinedReplay10 icon with title o
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3865,7 +3865,7 @@ exports[`IconOutlinedReplay15 renders the IconOutlinedReplay15 icon from theme o
 exports[`IconOutlinedReplay15 renders the IconOutlinedReplay15 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3889,7 +3889,7 @@ exports[`IconOutlinedReplay15 renders the IconOutlinedReplay15 icon with specifi
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3927,7 +3927,7 @@ exports[`IconOutlinedReplay15 renders the IconOutlinedReplay15 icon with specifi
 exports[`IconOutlinedReplay15 renders the IconOutlinedReplay15 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3951,7 +3951,7 @@ exports[`IconOutlinedReplay15 renders the IconOutlinedReplay15 icon with title o
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4002,7 +4002,7 @@ exports[`IconOutlinedReplay20 renders the IconOutlinedReplay20 icon from theme o
 exports[`IconOutlinedReplay20 renders the IconOutlinedReplay20 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4026,7 +4026,7 @@ exports[`IconOutlinedReplay20 renders the IconOutlinedReplay20 icon with specifi
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4064,7 +4064,7 @@ exports[`IconOutlinedReplay20 renders the IconOutlinedReplay20 icon with specifi
 exports[`IconOutlinedReplay20 renders the IconOutlinedReplay20 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4088,7 +4088,7 @@ exports[`IconOutlinedReplay20 renders the IconOutlinedReplay20 icon with title o
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4139,7 +4139,7 @@ exports[`IconOutlinedReplay25 renders the IconOutlinedReplay25 icon from theme o
 exports[`IconOutlinedReplay25 renders the IconOutlinedReplay25 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4163,7 +4163,7 @@ exports[`IconOutlinedReplay25 renders the IconOutlinedReplay25 icon with specifi
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4201,7 +4201,7 @@ exports[`IconOutlinedReplay25 renders the IconOutlinedReplay25 icon with specifi
 exports[`IconOutlinedReplay25 renders the IconOutlinedReplay25 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4225,7 +4225,7 @@ exports[`IconOutlinedReplay25 renders the IconOutlinedReplay25 icon with title o
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4276,7 +4276,7 @@ exports[`IconOutlinedReplay30 renders the IconOutlinedReplay30 icon from theme o
 exports[`IconOutlinedReplay30 renders the IconOutlinedReplay30 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4300,7 +4300,7 @@ exports[`IconOutlinedReplay30 renders the IconOutlinedReplay30 icon with specifi
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4338,7 +4338,7 @@ exports[`IconOutlinedReplay30 renders the IconOutlinedReplay30 icon with specifi
 exports[`IconOutlinedReplay30 renders the IconOutlinedReplay30 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4362,7 +4362,7 @@ exports[`IconOutlinedReplay30 renders the IconOutlinedReplay30 icon with title o
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4478,7 +4478,7 @@ exports[`IconOutlinedigma renders the IconOutlinedigma icon from theme override 
 exports[`IconOutlinedigma renders the IconOutlinedigma icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4502,7 +4502,7 @@ exports[`IconOutlinedigma renders the IconOutlinedigma icon with specified style
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4555,7 +4555,7 @@ exports[`IconOutlinedigma renders the IconOutlinedigma icon with specified style
 exports[`IconOutlinedigma renders the IconOutlinedigma icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #5A6A79;
+  fill: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4579,7 +4579,7 @@ exports[`IconOutlinedigma renders the IconOutlinedigma icon with title override 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4647,7 +4647,7 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
   .emotion-0 {
   width: 64px;
   height: 64px;
-  stroke: #5A6A79;
+  stroke: #6A6A6A;
 }
 
 .emotion-0 circle {
@@ -4688,7 +4688,7 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
   .emotion-0 {
   width: 64px;
   height: 64px;
-  stroke: #5A6A79;
+  stroke: #6A6A6A;
 }
 
 .emotion-0 circle {
@@ -4730,7 +4730,7 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
 exports[`customToNewsKit renders icon with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }

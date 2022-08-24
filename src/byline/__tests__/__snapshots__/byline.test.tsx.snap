@@ -49,7 +49,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #5A6A79;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -60,7 +60,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -188,7 +188,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 
 .emotion-7 {
   margin-left: 8px;
-  color: #C0C7CC;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -196,7 +196,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -314,7 +314,7 @@ exports[`Byline renders correctly with author's name, author's information and n
 
 .emotion-3 {
   margin: 0;
-  color: #5A6A79;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -325,7 +325,7 @@ exports[`Byline renders correctly with author's name, author's information and n
 }
 
 .emotion-3 svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -342,7 +342,7 @@ exports[`Byline renders correctly with author's name, author's information and n
 
 .emotion-4 {
   margin-left: 8px;
-  color: #C0C7CC;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -350,7 +350,7 @@ exports[`Byline renders correctly with author's name, author's information and n
 }
 
 .emotion-4 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -436,7 +436,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #5A6A79;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -447,7 +447,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -575,7 +575,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
 
 .emotion-8 {
   margin-left: 8px;
-  color: #C0C7CC;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -583,7 +583,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -749,7 +749,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 
 .emotion-3 {
   margin: 0;
-  color: #5A6A79;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -760,7 +760,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 }
 
 .emotion-3 svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -888,7 +888,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 
 .emotion-8 {
   margin-left: 8px;
-  color: #C0C7CC;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -896,7 +896,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 }
 
 .emotion-8 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -1030,7 +1030,7 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #5A6A79;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1041,7 +1041,7 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -1169,7 +1169,7 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
 
 .emotion-8 {
   margin-left: 8px;
-  color: #C0C7CC;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1177,7 +1177,7 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -1309,7 +1309,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #5A6A79;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1320,7 +1320,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -1337,7 +1337,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 
 .emotion-4 {
   margin-left: 8px;
-  color: #C0C7CC;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1345,7 +1345,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 <div
@@ -1441,7 +1441,7 @@ exports[`Byline renders correctly with one author 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #5A6A79;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1452,7 +1452,7 @@ exports[`Byline renders correctly with one author 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #5A6A79;
+  fill: #6A6A6A;
 }
 
 .emotion-2::before {

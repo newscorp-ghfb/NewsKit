@@ -116,7 +116,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
   border-width: 2px;
   border-radius: 50%;
@@ -137,7 +137,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 }
 
 .emotion-4:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -150,7 +150,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -167,7 +167,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 }
 
 .emotion-4:invalid:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #A90000;
 }
 
@@ -176,7 +176,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 }
 
 .emotion-4:valid:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -186,11 +186,11 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 
 .emotion-4:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-4:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -267,7 +267,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 }
 
 .emotion-8 {
-  color: #2E3F54;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -276,7 +276,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 }
 
 .emotion-8:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-12 {
@@ -297,8 +297,8 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F0F1F3;
-  border-color: #85939C;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 50%;
   border-style: solid;
@@ -315,7 +315,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 }
 
 .emotion-12:checked:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -333,7 +333,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 }
 
 .emotion-12:checked:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -365,7 +365,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 }
 
 .emotion-12:checked:invalid:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #A90000;
 }
 
@@ -414,7 +414,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 }
 
 .emotion-12:checked:valid:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -450,16 +450,16 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 
 .emotion-12:disabled {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-12:checked:disabled:not(:disabled) {
   background-color: transparent;
-  border-color: #DEE2E5;
+  border-color: #E2E2E2;
 }
 
 .emotion-12:checked:disabled:not(:disabled) svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -482,7 +482,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -524,7 +524,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #00601A;
 }
 
@@ -566,7 +566,7 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #A90000;
 }
 

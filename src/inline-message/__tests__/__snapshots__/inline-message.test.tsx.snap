@@ -51,7 +51,7 @@ exports[`InlineMessage renders with Title 1`] = `
   font-weight: 700;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #09111C;
+  color: #111111;
   margin-bottom: 12px;
 }
 
@@ -68,7 +68,7 @@ exports[`InlineMessage renders with Title 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #09111C;
+  fill: #111111;
 }
 
 .emotion-4 {
@@ -79,7 +79,7 @@ exports[`InlineMessage renders with Title 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-4::before {
@@ -95,7 +95,7 @@ exports[`InlineMessage renders with Title 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 <div
@@ -175,7 +175,7 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -215,7 +215,7 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
   font-weight: 700;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #09111C;
+  color: #111111;
   margin-bottom: 12px;
 }
 
@@ -232,7 +232,7 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #09111C;
+  fill: #111111;
 }
 
 .emotion-7 {
@@ -243,7 +243,7 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-7::before {
@@ -259,7 +259,7 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 <div
@@ -362,7 +362,7 @@ exports[`InlineMessage renders with default props 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-3::before {
@@ -378,7 +378,7 @@ exports[`InlineMessage renders with default props 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 <div
@@ -455,7 +455,7 @@ exports[`InlineMessage renders with logical prop overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -495,7 +495,7 @@ exports[`InlineMessage renders with logical prop overrides 1`] = `
   font-weight: 700;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #09111C;
+  color: #111111;
   margin-bottom: 12px;
 }
 
@@ -512,7 +512,7 @@ exports[`InlineMessage renders with logical prop overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #09111C;
+  fill: #111111;
 }
 
 .emotion-7 {
@@ -523,7 +523,7 @@ exports[`InlineMessage renders with logical prop overrides 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-7::before {
@@ -539,7 +539,7 @@ exports[`InlineMessage renders with logical prop overrides 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 <div
@@ -639,7 +639,7 @@ exports[`InlineMessage renders with overrides and all props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }

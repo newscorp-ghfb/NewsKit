@@ -39,7 +39,7 @@ exports[`SelectionList render should render SelectionList with a selected option
   -ms-flex-align: center;
   align-items: center;
   background-color: #ECF1FF;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -59,7 +59,7 @@ exports[`SelectionList render should render SelectionList with a selected option
 
 .emotion-1:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-1:focus:not(:disabled) {
@@ -157,7 +157,7 @@ exports[`SelectionList render should render SelectionList with a selected option
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -176,11 +176,11 @@ exports[`SelectionList render should render SelectionList with a selected option
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-4:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -189,12 +189,12 @@ exports[`SelectionList render should render SelectionList with a selected option
 }
 
 .emotion-4:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-4:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-4:selected:focus:not(:disabled) {
@@ -212,7 +212,7 @@ exports[`SelectionList render should render SelectionList with a selected option
 
 .emotion-4:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 <div
@@ -298,7 +298,7 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -317,11 +317,11 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-1:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -330,12 +330,12 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-1:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-1:selected:focus:not(:disabled) {
@@ -353,7 +353,7 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
 
 .emotion-1:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 <div
@@ -425,7 +425,7 @@ exports[`SelectionList render should render SelectionList with non-string option
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -444,11 +444,11 @@ exports[`SelectionList render should render SelectionList with non-string option
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-1:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -457,12 +457,12 @@ exports[`SelectionList render should render SelectionList with non-string option
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-1:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-1:selected:focus:not(:disabled) {
@@ -480,7 +480,7 @@ exports[`SelectionList render should render SelectionList with non-string option
 
 .emotion-1:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-2 {
@@ -498,7 +498,7 @@ exports[`SelectionList render should render SelectionList with non-string option
   -ms-flex-align: center;
   align-items: center;
   background-color: #ECF1FF;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -518,7 +518,7 @@ exports[`SelectionList render should render SelectionList with non-string option
 
 .emotion-2:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-2:focus:not(:disabled) {
@@ -682,7 +682,7 @@ exports[`SelectionList render should render SelectionList with updated icon 1`] 
   -ms-flex-align: center;
   align-items: center;
   background-color: #ECF1FF;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -702,7 +702,7 @@ exports[`SelectionList render should render SelectionList with updated icon 1`] 
 
 .emotion-1:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-1:focus:not(:disabled) {
@@ -718,7 +718,7 @@ exports[`SelectionList render should render SelectionList with updated icon 1`] 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -811,7 +811,7 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
   -ms-flex-align: center;
   align-items: center;
   background-color: #ECF1FF;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -833,7 +833,7 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
 
 .emotion-1:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-1:focus:not(:disabled) {
@@ -931,7 +931,7 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -952,11 +952,11 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-4:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -965,12 +965,12 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
 }
 
 .emotion-4:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-4:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-4:selected:focus:not(:disabled) {
@@ -988,7 +988,7 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
 
 .emotion-4:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 <div
@@ -1070,7 +1070,7 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
   -ms-flex-align: center;
   align-items: center;
   background-color: #ECF1FF;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -1090,7 +1090,7 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
 
 .emotion-1:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-1:focus:not(:disabled) {
@@ -1188,7 +1188,7 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -1207,11 +1207,11 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-4:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -1220,12 +1220,12 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
 }
 
 .emotion-4:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-4:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-4:selected:focus:not(:disabled) {
@@ -1243,7 +1243,7 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
 
 .emotion-4:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 <div
@@ -1325,7 +1325,7 @@ exports[`SelectionList render should render default SelectionList 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E3F54;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -1344,11 +1344,11 @@ exports[`SelectionList render should render default SelectionList 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-1:focus:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -1357,12 +1357,12 @@ exports[`SelectionList render should render default SelectionList 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-1:selected:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-1:selected:focus:not(:disabled) {
@@ -1380,7 +1380,7 @@ exports[`SelectionList render should render default SelectionList 1`] = `
 
 .emotion-1:selected:focus:hover:not(:disabled) {
   background-color: #ECF1FF;
-  color: #09111C;
+  color: #111111;
 }
 
 <div

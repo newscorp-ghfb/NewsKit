@@ -5,8 +5,8 @@ exports[`Card renders MQ layout 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -122,8 +122,8 @@ exports[`Card renders actions section with given component 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -252,9 +252,9 @@ exports[`Card renders actions section with given component 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E3F54;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -264,11 +264,11 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:active:not(:disabled) {
@@ -410,12 +410,12 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-11:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-11:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -553,8 +553,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -683,9 +683,9 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E3F54;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -695,11 +695,11 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:active:not(:disabled) {
@@ -841,12 +841,12 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-11:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-11:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -984,8 +984,8 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1114,9 +1114,9 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E3F54;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -1126,11 +1126,11 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:active:not(:disabled) {
@@ -1272,12 +1272,12 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-11:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-11:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -1415,8 +1415,8 @@ exports[`Card renders card with logical props overrides 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1582,8 +1582,8 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1708,11 +1708,11 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #09111C;
+  color: #111111;
 }
 
 .emotion-5 svg {
-  fill: #09111C;
+  fill: #111111;
 }
 
 <div
@@ -1748,8 +1748,8 @@ exports[`Card renders media section if the media data is provided 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1802,11 +1802,11 @@ exports[`Card renders media section if the media data is provided 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -1925,8 +1925,8 @@ exports[`Card renders media section with a custom component 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1979,11 +1979,11 @@ exports[`Card renders media section with a custom component 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -2102,8 +2102,8 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2156,11 +2156,11 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   height: 0;
   width: 100%;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -2279,8 +2279,8 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2333,11 +2333,11 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -2456,8 +2456,8 @@ exports[`Card renders media section with overrides 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2511,11 +2511,11 @@ exports[`Card renders media section with overrides 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -2634,8 +2634,8 @@ exports[`Card renders with card items 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2688,11 +2688,11 @@ exports[`Card renders with card items 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -2844,9 +2844,9 @@ exports[`Card renders with card items 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E3F54;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -2856,11 +2856,11 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-11:active:not(:disabled) {
@@ -3002,12 +3002,12 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-15:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -3161,8 +3161,8 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3215,11 +3215,11 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -3339,8 +3339,8 @@ exports[`Card renders without card items 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3370,8 +3370,8 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3426,11 +3426,11 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   width: 200px;
   height: 112px;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -3562,8 +3562,8 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3615,11 +3615,11 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   width: 200px;
   height: 112px;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -3748,8 +3748,8 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3804,11 +3804,11 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   width: 200px;
   height: 112px;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -3940,8 +3940,8 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3996,11 +3996,11 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   width: 200px;
   height: 112px;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -4132,8 +4132,8 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4188,11 +4188,11 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   width: 200px;
   height: 112px;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -4324,8 +4324,8 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4380,11 +4380,11 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   width: 200px;
   height: 112px;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -4516,8 +4516,8 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4572,11 +4572,11 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   width: 200px;
   height: 112px;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -4708,8 +4708,8 @@ exports[`Card with href renders correctly with actions 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4761,7 +4761,7 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
@@ -4895,9 +4895,9 @@ exports[`Card with href renders correctly with actions 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E3F54;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -4907,11 +4907,11 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -5053,12 +5053,12 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-12:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-12:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -5201,8 +5201,8 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5256,11 +5256,11 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -5335,7 +5335,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-7 .nk-headline-heading {
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) .nk-headline-heading {
@@ -5441,8 +5441,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5498,13 +5498,13 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #2E3F54;
+  color: #3B3B3B;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
-  color: #09111C;
+  color: #111111;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5616,13 +5616,13 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #2E3F54;
+  color: #3B3B3B;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-6:hover:not(:disabled) {
-  color: #09111C;
+  color: #111111;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5665,8 +5665,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5722,7 +5722,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
@@ -5848,7 +5848,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -5907,8 +5907,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5964,7 +5964,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
@@ -6090,7 +6090,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -6147,8 +6147,8 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6200,7 +6200,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
@@ -6292,8 +6292,8 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6345,7 +6345,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #2E3F54;
+  color: #3B3B3B;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
@@ -6541,8 +6541,8 @@ exports[`CardInset renders with card items 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6572,11 +6572,11 @@ exports[`CardInset renders with card items 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-3 {
@@ -6774,9 +6774,9 @@ exports[`CardInset renders with card items 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E3F54;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -6786,11 +6786,11 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-11:active:not(:disabled) {
@@ -6932,12 +6932,12 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-15:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -7091,8 +7091,8 @@ exports[`CardInset renders without card items 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2E3F54;
-  background-color: #F0F1F3;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;

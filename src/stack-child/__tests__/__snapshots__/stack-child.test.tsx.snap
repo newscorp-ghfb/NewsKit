@@ -60,9 +60,9 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E3F54;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -72,11 +72,11 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -324,9 +324,9 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E3F54;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -336,11 +336,11 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -558,9 +558,9 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E3F54;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -570,11 +570,11 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -820,9 +820,9 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E3F54;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -832,11 +832,11 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:active:not(:disabled) {

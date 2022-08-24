@@ -91,7 +91,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -161,7 +161,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -172,24 +172,24 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -257,7 +257,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -286,7 +286,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -448,7 +448,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -552,7 +552,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -605,7 +605,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -783,7 +783,7 @@ exports[`Popover close button should show left-aligned 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -853,7 +853,7 @@ exports[`Popover close button should show left-aligned 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -864,24 +864,24 @@ exports[`Popover close button should show left-aligned 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -949,7 +949,7 @@ exports[`Popover close button should show left-aligned 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1120,7 +1120,7 @@ exports[`Popover close button should show right-aligned 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -1190,7 +1190,7 @@ exports[`Popover close button should show right-aligned 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -1201,24 +1201,24 @@ exports[`Popover close button should show right-aligned 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -1286,7 +1286,7 @@ exports[`Popover close button should show right-aligned 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1459,7 +1459,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -1529,7 +1529,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -1540,24 +1540,24 @@ exports[`Popover content applies logical prop overrides 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -1625,7 +1625,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1654,7 +1654,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -1816,7 +1816,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -1910,7 +1910,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -1921,24 +1921,24 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -2006,7 +2006,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2186,7 +2186,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -2256,7 +2256,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -2267,24 +2267,24 @@ exports[`Popover content applies typography preset overrides 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -2352,7 +2352,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2381,7 +2381,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -2543,7 +2543,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -2636,7 +2636,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -2647,24 +2647,24 @@ exports[`Popover header applies logical prop overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -2732,7 +2732,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2761,7 +2761,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -2930,7 +2930,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -3023,7 +3023,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -3034,24 +3034,24 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -3119,7 +3119,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3298,7 +3298,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -3391,7 +3391,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -3402,24 +3402,24 @@ exports[`Popover header applies typography preset overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -3487,7 +3487,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3516,7 +3516,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -3686,7 +3686,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -3756,7 +3756,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -3767,24 +3767,24 @@ exports[`Popover offset should be applied with pointer and px distance override 
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -3852,7 +3852,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3881,7 +3881,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -4044,7 +4044,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -4114,7 +4114,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -4125,24 +4125,24 @@ exports[`Popover offset should be applied with pointer and token distance overri
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -4210,7 +4210,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4239,7 +4239,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -4402,7 +4402,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -4472,7 +4472,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -4483,24 +4483,24 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -4568,7 +4568,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4597,7 +4597,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -4760,7 +4760,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -4830,7 +4830,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -4841,24 +4841,24 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -4926,7 +4926,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4955,7 +4955,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -5118,7 +5118,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -5188,7 +5188,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -5199,24 +5199,24 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -5284,7 +5284,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5457,7 +5457,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -5527,7 +5527,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -5538,24 +5538,24 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -5623,7 +5623,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5652,7 +5652,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 10px;
@@ -5815,7 +5815,7 @@ exports[`Popover pointer padding should be applied with token distance override 
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -5885,7 +5885,7 @@ exports[`Popover pointer padding should be applied with token distance override 
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -5896,24 +5896,24 @@ exports[`Popover pointer padding should be applied with token distance override 
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -5981,7 +5981,7 @@ exports[`Popover pointer padding should be applied with token distance override 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6010,7 +6010,7 @@ exports[`Popover pointer padding should be applied with token distance override 
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 16px;
@@ -6173,7 +6173,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -6243,7 +6243,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -6254,24 +6254,24 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -6339,7 +6339,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6368,7 +6368,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 0px;
@@ -6531,7 +6531,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -6601,7 +6601,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -6612,24 +6612,24 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -6697,7 +6697,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6726,7 +6726,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 0px;
@@ -6889,7 +6889,7 @@ exports[`Popover should render correct styles: default 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -6959,7 +6959,7 @@ exports[`Popover should render correct styles: default 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -6970,24 +6970,24 @@ exports[`Popover should render correct styles: default 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -7055,7 +7055,7 @@ exports[`Popover should render correct styles: default 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7232,7 +7232,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   margin: 0;
   background-color: #D60000;
   border-radius: 0;
-  color: #09111C;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -7309,7 +7309,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -7320,24 +7320,24 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -7405,7 +7405,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7578,7 +7578,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -7648,7 +7648,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -7659,24 +7659,24 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -7744,7 +7744,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7773,7 +7773,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -7936,7 +7936,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -8006,7 +8006,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -8017,24 +8017,24 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -8102,7 +8102,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8131,7 +8131,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -8294,7 +8294,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -8364,7 +8364,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -8375,24 +8375,24 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -8460,7 +8460,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8652,7 +8652,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   margin: 0;
   color: #262626;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -8722,7 +8722,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E3F54;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -8733,24 +8733,24 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C7CC;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -8818,7 +8818,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8847,7 +8847,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #F0F1F3;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
   left: calc(-16px / 2);
