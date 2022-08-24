@@ -430,7 +430,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1640,7 +1640,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               <span
                                 class="emotion-18"
                               >
-                                Component overrides & defaults
+                                Component defaults
                               </span>
                             </div>
                           </div>
@@ -4202,7 +4202,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -5558,7 +5558,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                     <span
                                       class="emotion-16"
                                     >
-                                      Component overrides & defaults
+                                      Component defaults
                                     </span>
                                   </div>
                                 </div>
@@ -8120,7 +8120,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -9334,7 +9334,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               <span
                                 class="emotion-18"
                               >
-                                Component overrides & defaults
+                                Component defaults
                               </span>
                             </div>
                           </div>
@@ -11895,7 +11895,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -13217,7 +13217,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                                     <span
                                       class="emotion-16"
                                     >
-                                      Component overrides & defaults
+                                      Component defaults
                                     </span>
                                   </div>
                                 </div>
