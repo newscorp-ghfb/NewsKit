@@ -1216,6 +1216,16 @@ Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
       },
     },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "foundationFeatureCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -3775,6 +3785,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -6341,6 +6361,16 @@ Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
       },
     },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "foundationFeatureCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -8900,6 +8930,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -11466,6 +11506,16 @@ Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
       },
     },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "foundationFeatureCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -14025,6 +14075,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -16591,6 +16651,16 @@ Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
       },
     },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "foundationFeatureCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -19150,6 +19220,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
