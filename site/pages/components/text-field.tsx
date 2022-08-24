@@ -915,28 +915,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      performance: false,
-      seo: true,
-      props: true,
-      uiKit: true,
-      design: true,
-      themes: true,
-    }}
     related={{
-      related: [
-        'Button',
-        'Checkbox',
-        'Form',
-        'Radio Button',
-        'Select',
-        'Slider',
-      ],
+      related: ['Button', 'Text Area', 'Form', 'Select'],
     }}
   />
 );

@@ -22,7 +22,6 @@ export const VideoPlayerWrapper = styled.div<
   .video-js .vjs-progress-holder {
     width: 100%;
     ${getStylePreset('videoPlayer.seekBar', 'seekBar')};
-    )}
   }
 
   // seekbar - loading progress bar
