@@ -20,6 +20,14 @@ test('renders correctly with default props and only caption text', () => {
   expect(fragment).toMatchSnapshot();
 });
 
+test('renders with additional HTML attributes', () => {
+  const fragment = renderToFragmentWithTheme(Caption, {
+    id: 'caption-id',
+  });
+
+  expect(fragment).toMatchSnapshot();
+});
+
 test('renders correctly with overriden props and caption and credit text', () => {
   const fragment = renderToFragmentWithTheme(Caption, {
     children: 'test',
