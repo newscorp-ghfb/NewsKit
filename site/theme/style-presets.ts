@@ -911,7 +911,7 @@ export const stylePresets = {
       backgroundColor: '{{colors.transparent}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
       color: '{{colors.inkInverse}}',
-      iconColor: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkInverse}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse010}}',
@@ -969,35 +969,15 @@ export const stylePresets = {
       safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
-  dividerInverse: {
-    base: {
-      borderColor: '{{colors.whiteTint050}}',
-    },
-  },
-  toastText: {
-    base: {
-      color: '{{colors.white}}',
-    },
-  },
-  toastIcon: {
-    base: {
-      iconColor: '{{colors.white}}',
-    },
-  },
   toastButton: {
     base: {
       backgroundColor: '{{colors.transparent}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.white}}',
+      color: '{{colors.inkInverse}}',
       iconColor: '{{colors.neutral100}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse010}}',
-    },
-  },
-  bannerIcon: {
-    base: {
-      iconColor: '{{colors.white}}',
     },
   },
   stepFlag: {

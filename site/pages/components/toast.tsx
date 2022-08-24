@@ -67,7 +67,6 @@ const ToastComponent = (layoutProps: LayoutProps) => (
                   icon && (
                     <IconFilledInfo
                       overrides={{
-                        stylePreset: 'toastIcon',
                         size: 'iconSize020',
                       }}
                     />
