@@ -263,27 +263,11 @@ Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
         },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-        },
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
-          },
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
           },
         },
       },
@@ -501,14 +485,6 @@ Object {
       "spaceInline": "space060",
     },
     "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "toastText",
-        },
-        "title": Object {
-          "stylePreset": "toastText",
-        },
-      },
       "maxWidth": Object {
         "lg": "38vw",
         "md": "45vw",
@@ -722,11 +698,6 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "bannerIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
     "baseCardInteractive": Object {
       "base": Object {
         "borderColor": "{{colors.interface040}}",
@@ -776,7 +747,7 @@ Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
         "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
         "color": "{{colors.inkNonEssential}}",
@@ -1071,11 +1042,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "dividerInverse": Object {
-      "base": Object {
-        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -1843,21 +1809,11 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.white}}",
+        "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse010}}",
-      },
-    },
-    "toastIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
-    "toastText": Object {
-      "base": Object {
-        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -2847,27 +2803,11 @@ Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
         },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-        },
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
-          },
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
           },
         },
       },
@@ -3085,14 +3025,6 @@ Object {
       "spaceInline": "space060",
     },
     "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "toastText",
-        },
-        "title": Object {
-          "stylePreset": "toastText",
-        },
-      },
       "maxWidth": Object {
         "lg": "38vw",
         "md": "45vw",
@@ -3303,11 +3235,6 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "bannerIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
     "baseCardInteractive": Object {
       "base": Object {
         "borderColor": "{{colors.interface040}}",
@@ -3357,7 +3284,7 @@ Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
         "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
         "color": "{{colors.inkNonEssential}}",
@@ -3652,11 +3579,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "dividerInverse": Object {
-      "base": Object {
-        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -4424,21 +4346,11 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.white}}",
+        "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse010}}",
-      },
-    },
-    "toastIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
-    "toastText": Object {
-      "base": Object {
-        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -5428,27 +5340,11 @@ Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
         },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-        },
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
-          },
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
           },
         },
       },
@@ -5666,14 +5562,6 @@ Object {
       "spaceInline": "space060",
     },
     "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "toastText",
-        },
-        "title": Object {
-          "stylePreset": "toastText",
-        },
-      },
       "maxWidth": Object {
         "lg": "38vw",
         "md": "45vw",
@@ -5887,11 +5775,6 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "bannerIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
     "baseCardInteractive": Object {
       "base": Object {
         "borderColor": "{{colors.interface040}}",
@@ -5941,7 +5824,7 @@ Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
         "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
         "color": "{{colors.inkNonEssential}}",
@@ -6236,11 +6119,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "dividerInverse": Object {
-      "base": Object {
-        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -7008,21 +6886,11 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.white}}",
+        "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse010}}",
-      },
-    },
-    "toastIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
-    "toastText": Object {
-      "base": Object {
-        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -8012,27 +7880,11 @@ Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
         },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-        },
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
-          },
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
           },
         },
       },
@@ -8250,14 +8102,6 @@ Object {
       "spaceInline": "space060",
     },
     "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "toastText",
-        },
-        "title": Object {
-          "stylePreset": "toastText",
-        },
-      },
       "maxWidth": Object {
         "lg": "38vw",
         "md": "45vw",
@@ -8468,11 +8312,6 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "bannerIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
     "baseCardInteractive": Object {
       "base": Object {
         "borderColor": "{{colors.interface040}}",
@@ -8522,7 +8361,7 @@ Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
         "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
         "color": "{{colors.inkNonEssential}}",
@@ -8817,11 +8656,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "dividerInverse": Object {
-      "base": Object {
-        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -9589,21 +9423,11 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.white}}",
+        "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse010}}",
-      },
-    },
-    "toastIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
-    "toastText": Object {
-      "base": Object {
-        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -10593,27 +10417,11 @@ Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
         },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-        },
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
-          },
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
           },
         },
       },
@@ -10831,14 +10639,6 @@ Object {
       "spaceInline": "space060",
     },
     "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "toastText",
-        },
-        "title": Object {
-          "stylePreset": "toastText",
-        },
-      },
       "maxWidth": Object {
         "lg": "38vw",
         "md": "45vw",
@@ -11052,11 +10852,6 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "bannerIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
     "baseCardInteractive": Object {
       "base": Object {
         "borderColor": "{{colors.interface040}}",
@@ -11106,7 +10901,7 @@ Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
         "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
         "color": "{{colors.inkNonEssential}}",
@@ -11401,11 +11196,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "dividerInverse": Object {
-      "base": Object {
-        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -12173,21 +11963,11 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.white}}",
+        "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse010}}",
-      },
-    },
-    "toastIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
-    "toastText": Object {
-      "base": Object {
-        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -13177,27 +12957,11 @@ Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
         },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-        },
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
-          },
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
           },
         },
       },
@@ -13415,14 +13179,6 @@ Object {
       "spaceInline": "space060",
     },
     "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "toastText",
-        },
-        "title": Object {
-          "stylePreset": "toastText",
-        },
-      },
       "maxWidth": Object {
         "lg": "38vw",
         "md": "45vw",
@@ -13633,11 +13389,6 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "bannerIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
     "baseCardInteractive": Object {
       "base": Object {
         "borderColor": "{{colors.interface040}}",
@@ -13687,7 +13438,7 @@ Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
         "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
         "color": "{{colors.inkNonEssential}}",
@@ -13982,11 +13733,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "dividerInverse": Object {
-      "base": Object {
-        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -14754,21 +14500,11 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.white}}",
+        "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse010}}",
-      },
-    },
-    "toastIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
-    "toastText": Object {
-      "base": Object {
-        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -15758,27 +15494,11 @@ Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
         },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-        },
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
-          },
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
           },
         },
       },
@@ -15996,14 +15716,6 @@ Object {
       "spaceInline": "space060",
     },
     "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "toastText",
-        },
-        "title": Object {
-          "stylePreset": "toastText",
-        },
-      },
       "maxWidth": Object {
         "lg": "38vw",
         "md": "45vw",
@@ -16217,11 +15929,6 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "bannerIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
     "baseCardInteractive": Object {
       "base": Object {
         "borderColor": "{{colors.interface040}}",
@@ -16271,7 +15978,7 @@ Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
         "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
         "color": "{{colors.inkNonEssential}}",
@@ -16566,11 +16273,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "dividerInverse": Object {
-      "base": Object {
-        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -17338,21 +17040,11 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.white}}",
+        "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse010}}",
-      },
-    },
-    "toastIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
-    "toastText": Object {
-      "base": Object {
-        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -18342,27 +18034,11 @@ Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
         },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-        },
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
-          },
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkWhiteContrast",
-          },
-          "title": Object {
-            "stylePreset": "inkWhiteContrast",
           },
         },
       },
@@ -18580,14 +18256,6 @@ Object {
       "spaceInline": "space060",
     },
     "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "toastText",
-        },
-        "title": Object {
-          "stylePreset": "toastText",
-        },
-      },
       "maxWidth": Object {
         "lg": "38vw",
         "md": "45vw",
@@ -18798,11 +18466,6 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "bannerIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
     "baseCardInteractive": Object {
       "base": Object {
         "borderColor": "{{colors.interface040}}",
@@ -18852,7 +18515,7 @@ Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
         "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
         "color": "{{colors.inkNonEssential}}",
@@ -19147,11 +18810,6 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "dividerInverse": Object {
-      "base": Object {
-        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -19919,21 +19577,11 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.white}}",
+        "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse010}}",
-      },
-    },
-    "toastIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.white}}",
-      },
-    },
-    "toastText": Object {
-      "base": Object {
-        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {

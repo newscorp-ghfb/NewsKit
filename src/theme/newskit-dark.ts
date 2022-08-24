@@ -15,8 +15,6 @@ export const newskitDarkThemeOverrides = {
     inkSubtle: '{{colors.neutral040}}',
     inkNonEssential: '{{colors.neutral050}}',
     inkInverse: '{{colors.neutral100}}',
-    inkLight010: '{{colors.white}}',
-    inkDark010: '{{colors.neutral100}}',
     inkPositive: '{{colors.green050}}',
     inkNegative: '{{colors.red050}}',
     inkNotice: '{{colors.neutral040}}',
@@ -79,7 +77,6 @@ export const newskitDarkThemeOverrides = {
     interactiveLink030: '{{colors.blue030}}',
     interactiveDisabled010: '{{colors.neutral080}}',
     interactiveVisited010: '{{colors.purple050}}',
-    interactiveFocus010: '{{colors.focus010}}',
   },
   overlays: {
     overlayLightGradient010:
