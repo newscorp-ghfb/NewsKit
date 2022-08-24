@@ -18,6 +18,7 @@ import {
   styled,
   ThemeProvider,
   CreateThemeArgs,
+  TextFieldSize,
 } from '../..';
 import {
   IconFilledAccountBalance,
@@ -25,7 +26,6 @@ import {
   IconFilledAddCircleOutline,
 } from '../../icons';
 import {SelectOption} from '../../select';
-import {TextFieldSize} from '../../text-field';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -85,7 +85,7 @@ export const StoryFormField = () => (
       >
         <FormInputLabel>E-mail</FormInputLabel>
         <FormInputTextField
-          size={'small' as TextFieldSize}
+          size="small"
           startEnhancer={
             <>
               <IconFilledAccountBalance overrides={{size: '20px'}} />
@@ -111,7 +111,7 @@ export const StoryFormField = () => (
       >
         <FormInputLabel>Username</FormInputLabel>
         <FormInputTextField
-          size={'small' as TextFieldSize}
+          size="small"
           startEnhancer={
             <>
               <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
@@ -152,7 +152,7 @@ export const StoryFormField = () => (
         <StorybookSubHeading>Default State</StorybookSubHeading>
         <FormInputLabel>Surname</FormInputLabel>
         <FormInputTextField
-          size={'small' as TextFieldSize}
+          size="small"
           startEnhancer={
             <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
           }
@@ -180,7 +180,7 @@ export const StoryFormField = () => (
         <FormInputLabel>Password</FormInputLabel>
         <FormInputTextField
           state="disabled"
-          size={'small' as TextFieldSize}
+          size="small"
           startEnhancer={
             <IconFilledAccountBalance overrides={{size: '20px'}} />
           }
@@ -751,7 +751,7 @@ export const StoryFormFieldset = () => (
                 },
                 validate: validateUserName,
               }}
-              size={'large' as TextFieldSize}
+              size="large"
             >
               <FormInputLabel
                 overrides={{
@@ -780,13 +780,13 @@ export const StoryFormFieldset = () => (
               rules={{
                 required: 'Required field',
               }}
-              size={'large' as TextFieldSize}
+              size="large"
             >
               <FormInputCheckbox
                 label="I agree to the terms & conditions"
                 value="tc"
                 overrides={{spaceStack: 'space020'}}
-                size={'medium' as TextFieldSize}
+                size="medium"
               />
             </FormInput>
             <FormInput
