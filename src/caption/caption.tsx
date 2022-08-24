@@ -9,7 +9,7 @@ import defaults from './defaults';
 import {extractLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 const ThemelessCaption = React.forwardRef<HTMLDivElement, CaptionProps>(
-  ({overrides, children, creditText}, ref) => {
+  ({overrides, children, creditText, ...rest}, ref) => {
     const theme = useTheme();
     const captionGap =
       creditText && getToken({theme, overrides}, 'caption', '', 'spaceStack');
@@ -51,7 +51,7 @@ const ThemelessCaption = React.forwardRef<HTMLDivElement, CaptionProps>(
     const logicalProps = extractLogicalPropsFromOverrides(overrides);
 
     return (
-      <Block spaceInset={captionInset} ref={ref} {...logicalProps}>
+      <Block spaceInset={captionInset} ref={ref} {...logicalProps} {...rest}>
         <TextBlock
           stylePreset={captionStylePreset}
           typographyPreset={captionTypographyPreset}

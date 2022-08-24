@@ -1,9 +1,18 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Standfirst} from '..';
+import {StandfirstProps} from '../types';
 
 describe('Standfirst', () => {
   test('renders with default styles', () => {
     const fragment = renderToFragmentWithTheme(Standfirst);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with additional HTML attributes', () => {
+    const props: StandfirstProps = {
+      id: 'standfirst-id',
+    };
+    const fragment = renderToFragmentWithTheme(Standfirst, props);
     expect(fragment).toMatchSnapshot();
   });
 
