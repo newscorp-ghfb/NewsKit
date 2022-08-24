@@ -8,15 +8,6 @@ import {IconFilledAddCircleOutline} from '../../icons';
 import {compileTheme, createTheme} from '../..';
 import {MenuItemProps, MenuItemAlign, MenuItemSize} from '../types';
 
-// enum MenuItemSize {
-//   Small = 'small',
-//   Medium = 'medium',
-//   Large = 'large',
-// }
-
-// const MenuItemSizeKeys = (Object.keys(MenuItemSize) as unknown) as Array<
-//   keyof typeof MenuItemSize
-// >;
 const MenuItemSizeArray = ['small', 'medium', 'large'];
 const MenuItemAlignKeys = ['start', 'end', 'center'];
 

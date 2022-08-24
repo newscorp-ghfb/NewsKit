@@ -245,8 +245,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               </ul>
               <InlineMessage role="region" aria-label="note" title="Note">
                 Default value depends on the vertical prop: when is True the
-                value is set to MenuItemAlign.Start, and MenuAlign.Center when
-                is False.
+                value is set to `start`, and `center` when is False.
               </InlineMessage>
             </>
           ) as any,
@@ -577,7 +576,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             {
               name: 'align',
               type: "'start' | 'end' | 'center'",
-              default: 'MenuItemAlign.start',
+              default: 'start',
               description: `Defines the alignment of the Menu items.`,
             },
           ],
