@@ -125,6 +125,31 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
 </DocumentFragment>
 `;
 
+exports[`Paragraph renders with additional HTML attributes 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+<p
+    class="emotion-0"
+    id="paragraph-id"
+  >
+    paragraph component
+  </p>
+</DocumentFragment>
+`;
+
 exports[`Paragraph renders with drop cap 1`] = `
 <DocumentFragment>
   .emotion-0 {

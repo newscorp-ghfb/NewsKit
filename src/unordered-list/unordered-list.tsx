@@ -25,6 +25,7 @@ const ThemelessUnorderedList = React.forwardRef<
       listItemMarker: ListItemMarker = IconFilledCircle,
       markerAlign,
       overrides,
+      ...rest
     },
     ref,
   ) => {
@@ -67,7 +68,7 @@ const ThemelessUnorderedList = React.forwardRef<
     );
 
     return (
-      <StyledUl ref={ref} overrides={overrides} role="list">
+      <StyledUl ref={ref} overrides={overrides} role="list" {...rest}>
         {React.Children.map(children, node => {
           if (!isValidNode(node)) return null;
 

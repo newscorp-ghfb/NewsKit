@@ -2,7 +2,7 @@ import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
 // Caption component will be rebuilt in https://nidigitalsolutions.jira.com/browse/PPDSC-2091 to introduce breaking changes on the interface.
-export interface CaptionProps {
+export interface CaptionProps extends React.HTMLAttributes<HTMLDivElement> {
   captionText?: string;
   creditText?: string;
   overrides?: {
