@@ -58,4 +58,5 @@ module.exports = {
   typescript: {
     reactDocgen: false, // added to negate https://github.com/styleguidist/react-docgen-typescript/issues/356
   },
+  staticDirs: ['../fonts', '../static'],
 };

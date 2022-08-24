@@ -2,7 +2,13 @@ import React from 'react';
 import {addons, types} from '@storybook/addons';
 import {STORY_CHANGED, STORY_SPECIFIED} from '@storybook/core-events';
 import Helmet from 'react-helmet';
-import {Consent, Tealium, ConsentSettingsLink} from '../../../src';
+import {
+  Consent,
+  Tealium,
+  ConsentSettingsLink,
+  newskitLightTheme,
+  NewsKitProvider,
+} from '../../../src';
 
 const sendEvent = api => {
   const {path} = api.getUrlState();
@@ -15,8 +21,9 @@ const sendEvent = api => {
 
   if (window && window.utag) {
     console.log('SEND_EVENT', event);
-    // window.tealiumTrack(event);
-    // window.utag.view(e);
+    console;
+    window.tealiumTrack(event);
+    //window.utag.view(e);
   }
 };
 
@@ -27,24 +34,25 @@ const Tool = () => {
   const isSiteEnvProduction = false;
 
   return (
-    <>
+    <NewsKitProvider theme={newskitLightTheme}>
       <ConsentSettingsLink privacyManagerId="407619" gdpr>
         Privacy policy
       </ConsentSettingsLink>
-      <Consent
+
+      <Tealium
+        accountId="newsinternational"
+        profileId="thetimes.newskit"
+        env={isSiteEnvProduction ? 'prod' : 'dev'}
+      />
+      {/* <Consent
         sourcePointConfigUnified={{
           accountId: 259,
           propertyHref: 'https://storybook.newskit.co.uk',
           gdpr: {},
         }}
         reactHelmet={Helmet}
-      />
-      <Tealium
-        accountId="newsinternational"
-        profileId="thetimes.newskit"
-        env={isSiteEnvProduction ? 'prod' : 'dev'}
-      />
-    </>
+      /> */}
+    </NewsKitProvider>
   );
 };
 
@@ -54,7 +62,6 @@ addons.register(ADDON_ID, api => {
   addons.add(TOOL_ID, {
     type: types.TOOL,
     title: 'Tracking',
-    //match: ({viewMode}) => !!(viewMode && viewMode.match(/^(story|docs)$/)),
     render: Tool,
   });
 
