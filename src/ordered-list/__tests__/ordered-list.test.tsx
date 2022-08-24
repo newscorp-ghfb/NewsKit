@@ -1,6 +1,7 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {createTheme} from '../../theme';
 import {OrderedList} from '../ordered-list';
+import {OrderedListProps} from '../types';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-ordered-list',
@@ -24,6 +25,15 @@ describe('OrderedList', () => {
   test('renders with defaults', () => {
     const props = {
       children: ['first node', 'second node', 'third node'],
+    };
+    const fragment = renderToFragmentWithTheme(OrderedList, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with additional HTML attributes', () => {
+    const props: OrderedListProps = {
+      children: [],
+      id: 'ordered-list-id',
     };
     const fragment = renderToFragmentWithTheme(OrderedList, props);
     expect(fragment).toMatchSnapshot();
