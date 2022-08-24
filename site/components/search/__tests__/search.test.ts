@@ -1,5 +1,5 @@
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
-import {Search} from '..';
+import {Search} from '../search';
 
 describe('Search', () => {
   test('renders correctly', () => {
