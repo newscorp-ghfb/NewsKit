@@ -5,7 +5,7 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../components/code';
 import {CodeFromFile} from '../../components/code';
-import {TextInput, TextInputSize} from 'newskit';
+import {TextInput} from 'newskit';
 
 export default Layout;
 
@@ -19,23 +19,23 @@ The Text Input component consists of a label, input and assistive text.
 
 Text Input allows users to enter text into a UI. They typically appear in forms and dialogs.
 
-
 ## Email Input Component
+
 An Email Input component is also available.
-The EmailInput component is built on top of the TextInput component and it shares the same defaults and props of TextInput. 
-The email input comes with a set of validation rules. The validation only works if the email input component is inside a Form component. 
+The EmailInput component is built on top of the TextInput component and it shares the same defaults and props of TextInput.
+The email input comes with a set of validation rules. The validation only works if the email input component is inside a Form component.
 For more information please see the Form component.
-<LegacyBlock >
+
+<LegacyBlock>
   <CodeFromFile path="examples/email-input/email-input.tsx" />
 </LegacyBlock>
-
 
 ## Props
 
 Text Input has a number of props to facilitate a variety of uses:
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name="size" type="TextInputSize" enum={TextInputSize} default="Medium">
+  <Prop name="size" type="'small' | 'medium' | 'large'" default="Medium">
     Optional size of the Text Input: Small, Medium or Large.
   </Prop>
   <Prop name="label" type="string" required>
@@ -73,7 +73,8 @@ Text Input has a number of props to facilitate a variety of uses:
     component.
   </Prop>
   <Prop name="icon" type="ReactElement<NewsKitIcon>">
-    This prop allows the text input component to take a leading icon, for example, the search icon.
+    This prop allows the text input component to take a leading icon, for
+    example, the search icon.
   </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided
@@ -124,8 +125,8 @@ Text Input has a number of props to facilitate a variety of uses:
         </Prop>
         <Prop name="spaceInset" type="MQ<string>">
           This spacing value overrides the padding value (applied by the
-          spaceInset token) on the right of the input when the validation icon is
-          showing. This avoids any input text rendering behind the icon.
+          spaceInset token) on the right of the input when the validation icon
+          is showing. This avoids any input text rendering behind the icon.
         </Prop>
         <Prop name="iconSize" type="MQ<string>">
           Overrides the iconSize of the validation icon.
