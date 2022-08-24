@@ -177,7 +177,6 @@ exports[`Accordion renders as a h4 1`] = `
 }
 
 .emotion-10 {
-  max-height: unset;
   overflow: hidden;
 }
 
@@ -545,7 +544,6 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
 }
 
 .emotion-10 {
-  max-height: 0px;
   overflow: hidden;
 }
 
@@ -913,7 +911,6 @@ exports[`Accordion renders with default props 1`] = `
 }
 
 .emotion-10 {
-  max-height: 0px;
   overflow: hidden;
 }
 
@@ -1256,7 +1253,6 @@ exports[`Accordion renders with disabled state 1`] = `
 }
 
 .emotion-10 {
-  max-height: 0px;
   overflow: hidden;
 }
 
@@ -1624,7 +1620,6 @@ exports[`Accordion renders with expanded state and icon 1`] = `
 }
 
 .emotion-10 {
-  max-height: unset;
   overflow: hidden;
 }
 
@@ -1992,7 +1987,6 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
 }
 
 .emotion-10 {
-  max-height: unset;
   overflow: hidden;
 }
 
@@ -2375,7 +2369,6 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
 }
 
 .emotion-10 {
-  max-height: unset;
   overflow: hidden;
 }
 
@@ -2698,7 +2691,6 @@ exports[`Accordion renders with no header 1`] = `
 }
 
 .emotion-7 {
-  max-height: 0px;
   overflow: hidden;
 }
 
@@ -3010,7 +3002,6 @@ exports[`Accordion renders with no label 1`] = `
 }
 
 .emotion-9 {
-  max-height: 0px;
   overflow: hidden;
 }
 
@@ -3379,7 +3370,6 @@ exports[`Accordion renders with style overrides 1`] = `
 }
 
 .emotion-10 {
-  max-height: unset;
   overflow: hidden;
 }
 
@@ -3778,7 +3768,6 @@ exports[`Accordion renders without leading icon 1`] = `
 }
 
 .emotion-7 {
-  max-height: 0px;
   overflow: hidden;
 }
 
@@ -4100,7 +4089,6 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
 }
 
 .emotion-10 {
-  max-height: 0px;
   overflow: hidden;
 }
 
@@ -4414,7 +4402,6 @@ exports[`AccordionGroup different type of children 1`] = `
 }
 
 .emotion-6 {
-  max-height: unset;
   overflow: hidden;
 }
 

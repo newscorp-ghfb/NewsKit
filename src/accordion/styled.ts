@@ -53,8 +53,6 @@ export const StyledIconWrapper = styled.div`
 export const StyledPanelTransitionContainer = styled.div<
   Pick<AccordionProps, 'overrides' | 'expanded'>
 >`
-  // unset max-height here to prevent animation if open on first render
-  max-height: ${({expanded}) => (expanded ? 'unset' : '0px')};
   overflow: hidden;
   ${getTransitionPreset('accordion.panel', 'panel', 'nk-accordion')}
 `;

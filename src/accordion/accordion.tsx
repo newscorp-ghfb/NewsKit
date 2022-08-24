@@ -134,7 +134,6 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
             'panel',
           )({theme, overrides})}
           classNames="nk-accordion"
-          appear
         >
           {(state: string) => (
             <MaxHeightTransitionPanel
