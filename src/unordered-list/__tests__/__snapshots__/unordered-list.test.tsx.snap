@@ -474,14 +474,14 @@ exports[`UnorderedList renders with additional HTML attributes 1`] = `
 
 .emotion-3 {
   margin-right: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
 .emotion-3 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-3 svg,
@@ -493,8 +493,8 @@ exports[`UnorderedList renders with additional HTML attributes 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -518,8 +518,8 @@ exports[`UnorderedList renders with additional HTML attributes 1`] = `
 .emotion-4.emotion-4 {
   width: 8px;
   height: 8px;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -540,7 +540,7 @@ exports[`UnorderedList renders with additional HTML attributes 1`] = `
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -550,7 +550,7 @@ exports[`UnorderedList renders with additional HTML attributes 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6::before {

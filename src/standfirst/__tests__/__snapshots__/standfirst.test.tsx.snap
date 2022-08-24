@@ -120,7 +120,7 @@ exports[`Standfirst renders as span html tag 1`] = `
 exports[`Standfirst renders with additional HTML attributes 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 @media screen and (max-width: 1023px) {

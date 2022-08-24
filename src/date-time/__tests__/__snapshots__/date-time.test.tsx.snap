@@ -4,7 +4,7 @@ exports[`DateTime renders with additional HTML attributes 1`] = `
 <DocumentFragment>
   .emotion-1 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -16,7 +16,7 @@ exports[`DateTime renders with additional HTML attributes 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-1::before {

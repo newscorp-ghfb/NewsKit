@@ -12188,7 +12188,7 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -12201,11 +12201,11 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -12214,7 +12214,7 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -12232,12 +12232,12 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -12346,7 +12346,7 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
 }
 
 .emotion-12 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;

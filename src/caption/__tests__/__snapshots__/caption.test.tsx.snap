@@ -514,7 +514,7 @@ exports[`renders with additional HTML attributes 1`] = `
 <DocumentFragment>
   .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -524,7 +524,7 @@ exports[`renders with additional HTML attributes 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-1::before {
