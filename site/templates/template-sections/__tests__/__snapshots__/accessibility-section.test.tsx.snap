@@ -315,7 +315,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
                   <h2
                     class="nk-headline-heading emotion-5"
                   >
-                    Accessibility Considerations
+                    Accessibility considerations
                   </h2>
                 </section>
               </div>
