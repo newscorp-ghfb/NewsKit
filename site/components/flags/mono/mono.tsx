@@ -16,3 +16,5 @@ export const Mono: React.FC<MonoProps> = ({overrides, children, ...props}) => (
     {children}
   </Flag>
 );
+
+Mono.displayName = 'Mono';
