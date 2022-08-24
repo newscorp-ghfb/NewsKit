@@ -163,7 +163,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="Thumb and track"
+                aria-label="Label"
                 overrides={{
                   marginBlockStart: 'space050',
                 }}
@@ -365,7 +365,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
         <>
           The switch has the following accessibility considerations:
           <UnorderedList
-            markerAlign="center"
+            markerAlign="start"
             listItemMarker={IconFilledCircle}
             overrides={{
               content: {
@@ -646,7 +646,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: ['Checkbox', 'Radio Button'],
+      related: ['Checkbox', 'Form', 'Radio Button', 'Select'],
     }}
   />
 );
