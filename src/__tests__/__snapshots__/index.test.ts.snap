@@ -124,7 +124,6 @@ Array [
   "TextBlock",
   "TextField",
   "TextInput",
-  "TextInputSize",
   "ThemeChecker",
   "ThemeProvider",
   "TitleBar",

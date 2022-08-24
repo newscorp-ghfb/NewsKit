@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {TextInput, TextInputSize} from '..';
+import {TextInput} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -85,7 +85,7 @@ export const StoryTextInputSize = () => (
         <Block>
           <StorybookSubHeading>Small</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Small}
+            size="small"
             label="Label"
             assistiveText="Assistive text"
           />
@@ -93,7 +93,7 @@ export const StoryTextInputSize = () => (
         <Block>
           <StorybookSubHeading>Medium</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Medium}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
           />
@@ -101,7 +101,7 @@ export const StoryTextInputSize = () => (
         <Block>
           <StorybookSubHeading>Large</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Large}
+            size="large"
             label="Label"
             assistiveText="Assistive text"
           />
@@ -119,7 +119,7 @@ export const StoryFullWidthTextInput = () => (
       <Border>
         <Spacer>
           <TextInput
-            size={TextInputSize.Small}
+            size="small"
             label="Label"
             assistiveText="Assistive text"
             overrides={{
@@ -129,7 +129,7 @@ export const StoryFullWidthTextInput = () => (
         </Spacer>
         <Spacer>
           <TextInput
-            size={TextInputSize.Medium}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
             overrides={{
@@ -138,7 +138,7 @@ export const StoryFullWidthTextInput = () => (
           />
         </Spacer>
         <TextInput
-          size={TextInputSize.Large}
+          size="large"
           label="Label"
           assistiveText="Assistive text"
           overrides={{
@@ -158,7 +158,7 @@ export const StoryFixedWidthTextInput = () => (
       <Border>
         <Spacer>
           <TextInput
-            size={TextInputSize.Small}
+            size="small"
             label="Label"
             assistiveText="Assistive text"
             overrides={{
@@ -168,7 +168,7 @@ export const StoryFixedWidthTextInput = () => (
         </Spacer>
         <Spacer>
           <TextInput
-            size={TextInputSize.Medium}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
             overrides={{
@@ -177,7 +177,7 @@ export const StoryFixedWidthTextInput = () => (
           />
         </Spacer>
         <TextInput
-          size={TextInputSize.Large}
+          size="large"
           label="Label"
           assistiveText="Assistive text"
           overrides={{
@@ -315,7 +315,7 @@ export const StoryTextInputWithLeadingIcon = () => (
         <Block>
           <StorybookSubHeading>Small</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Small}
+            size="small"
             label="Label"
             assistiveText="Assistive text"
             icon={
@@ -331,7 +331,7 @@ export const StoryTextInputWithLeadingIcon = () => (
         <Block>
           <StorybookSubHeading>Medium</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Medium}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
             icon={
@@ -347,7 +347,7 @@ export const StoryTextInputWithLeadingIcon = () => (
         <Block>
           <StorybookSubHeading>Large</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Large}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
             icon={
@@ -365,7 +365,7 @@ export const StoryTextInputWithLeadingIcon = () => (
             Medium with custom iconOffset and spaceInset
           </StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Medium}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
             icon={
