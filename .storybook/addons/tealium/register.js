@@ -1,46 +1,8 @@
-import {addons} from '@storybook/addons';
+import React from 'react';
+import {addons, types} from '@storybook/addons';
 import {STORY_CHANGED, STORY_SPECIFIED} from '@storybook/core-events';
-
-const initTealium = (accountId, profileId, env) => {
-  const url = `//tags.tiqcdn.com/utag/${accountId}/${profileId}/${env}/utag.js`;
-  console.log(`Loading Tealium from ${url}`);
-
-  (function (a, b, c, d) {
-    a = url;
-    b = document;
-    c = 'script';
-    d = b.createElement(c);
-    d.src = a;
-    d.type = 'text/java' + c;
-    d.async = true;
-    window.utag_queue = [];
-    if (d.addEventListener) {
-      d.addEventListener(
-        'load',
-        function () {
-          for (var i = 0; i < utag_queue.length; i++) {
-            event = utag_queue[i];
-            utag.track(event.event, event.data);
-          }
-        },
-        false,
-      );
-    } else {
-      d.onreadystatechange = function () {
-        if (this.readyState == 'complete' || this.readyState == 'loaded') {
-          this.onreadystatechange = null;
-          for (var i = 0; i < utag_queue.length; i++) {
-            event = utag_queue[i];
-            utag.track(event.event, event.data);
-          }
-        }
-      };
-    }
-
-    a = b.getElementsByTagName(c)[0];
-    a.parentNode.insertBefore(d, a);
-  })();
-};
+import Helmet from 'react-helmet';
+import {Consent, Tealium, ConsentSettingsLink} from '../../../src';
 
 const sendEvent = api => {
   const {path} = api.getUrlState();
@@ -58,18 +20,43 @@ const sendEvent = api => {
   }
 };
 
-addons.register('storybook/tealium', api => {
-  if (process.env.NODE_ENV === 'production') {
-    console.log('PROD');
-  } else {
-    console.log('DEV');
-  }
+const ADDON_ID = 'storybook/tealium';
+const TOOL_ID = `${ADDON_ID}/tool`;
 
-  const accountId = 'newsinternational';
-  const profileId = 'thetimes.newskit';
-  const env = 'dev';
+const Tool = () => {
+  const isSiteEnvProduction = false;
 
-  initTealium(accountId, profileId, env);
+  return (
+    <>
+      <ConsentSettingsLink privacyManagerId="407619" gdpr>
+        Privacy policy
+      </ConsentSettingsLink>
+      <Consent
+        sourcePointConfigUnified={{
+          accountId: 259,
+          propertyHref: 'https://storybook.newskit.co.uk',
+          gdpr: {},
+        }}
+        reactHelmet={Helmet}
+      />
+      <Tealium
+        accountId="newsinternational"
+        profileId="thetimes.newskit"
+        env={isSiteEnvProduction ? 'prod' : 'dev'}
+      />
+    </>
+  );
+};
+
+addons.register(ADDON_ID, api => {
+  // The addon only sets the
+
+  addons.add(TOOL_ID, {
+    type: types.TOOL,
+    title: 'Tracking',
+    //match: ({viewMode}) => !!(viewMode && viewMode.match(/^(story|docs)$/)),
+    render: Tool,
+  });
 
   // send initial page view event, since storybook doesn't do it via STORY_CHANGED
   // When the preview boots, the first story is chosen via a selection specifier
