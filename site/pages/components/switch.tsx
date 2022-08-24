@@ -1,11 +1,12 @@
 import React from 'react';
-import {InlineMessage, toNewsKitIcon} from 'newskit';
+import {InlineMessage, toNewsKitIcon, UnorderedList} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
+import {IconFilledCircle} from '../../components/icons';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -178,8 +179,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     states={{
-      introduction:
-        'The Text Field has the following states. They can be displayed with both placeholder content or user-inputted content:',
+      introduction: 'The switch has the following states:',
       layout: '3-span',
       cards: [
         {
@@ -336,8 +336,13 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/switch/usage/do-1'),
         },
         {
-          description:
-            'Avoid using switches for communicating selection e.g. multiple table rows. In these cases, use a checkbox.',
+          description: (
+            <>
+              Avoid using switches for communicating selection e.g. multiple
+              table rows. In these cases, use a{' '}
+              <Link href="/components/checkbox/">checkbox.</Link>
+            </>
+          ),
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/switch/usage/dont-1'),
         },
@@ -358,9 +363,22 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
     accessibility={{
       introduction: (
         <>
-          The switch has the following accessibility considerations: It’s
-          critical that the switch doesn’t change when its state changes
-          (checked / unchecked).
+          The switch has the following accessibility considerations:
+          <UnorderedList
+            markerAlign="center"
+            listItemMarker={IconFilledCircle}
+            overrides={{
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
+              marginBlockStart: 'space050',
+            }}
+          >
+            <>
+              It’s critical that the switch doesn’t change when its state
+              changes (checked / unchecked).
+            </>
+          </UnorderedList>
         </>
       ),
       focusOrder: {
@@ -451,7 +469,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
             {
               name: 'labelPosition',
               type: ['start', 'end'],
-              default: `”end”`,
+              default: 'end',
               description: 'Defines the position of the Label',
               required: undefined,
             },
@@ -528,6 +546,13 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
                 'Large = sizing060',
               ],
               description: 'If provided, this overrides the size of the thumb',
+            },
+            {
+              attribute: 'thumb.stylePreset',
+              type: 'MQ<string>',
+              default: 'switchThumb',
+              description:
+                'If provided, this overrides the stylePreset of the Switch',
             },
             {
               attribute: 'thumb.paddingInline',
