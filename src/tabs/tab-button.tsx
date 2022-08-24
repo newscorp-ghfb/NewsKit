@@ -1,13 +1,10 @@
 import React from 'react';
-import {TabAlign, TabInternalProps, TabSize} from './types';
+import {TabAlign, TabButtonProps, TabSize} from './types';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme/emotion';
 import {StyledTabButton} from './styled';
 
-export const TabInternal = React.forwardRef<
-  HTMLButtonElement,
-  TabInternalProps
->(
+export const TabButton = React.forwardRef<HTMLButtonElement, TabButtonProps>(
   (
     {
       children,
@@ -64,4 +61,4 @@ export const TabInternal = React.forwardRef<
   },
 );
 
-TabInternal.displayName = 'TabInternal';
+TabButton.displayName = 'TabButton';
