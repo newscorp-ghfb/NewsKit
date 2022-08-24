@@ -10,8 +10,8 @@ exports[`BorderCard renders default card 1`] = `
   width: 80px;
   height: 80px;
   border: solid;
-  border-color: #09111C;
-  background: #F0F1F3;
+  border-color: #111111;
+  background: #F1F1F1;
   border-radius: 8px;
   border-width: 1px;
 }
@@ -32,8 +32,8 @@ exports[`BorderCard renders with different borderRadius token 1`] = `
   width: 80px;
   height: 80px;
   border: solid;
-  border-color: #09111C;
-  background: #F0F1F3;
+  border-color: #111111;
+  background: #F1F1F1;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -54,8 +54,8 @@ exports[`BorderCard renders with different borderWidth token 1`] = `
   width: 80px;
   height: 80px;
   border: solid;
-  border-color: #09111C;
-  background: #F0F1F3;
+  border-color: #111111;
+  background: #F1F1F1;
   border-radius: 8px;
   border-width: 0;
 }
@@ -76,8 +76,8 @@ exports[`BorderCard renders with different boxShadow token 1`] = `
   width: 80px;
   height: 80px;
   border: solid;
-  border-color: #09111C;
-  background: #F0F1F3;
+  border-color: #111111;
+  background: #F1F1F1;
   border-radius: 8px;
   border-width: 0;
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);

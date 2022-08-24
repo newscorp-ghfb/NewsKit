@@ -148,7 +148,7 @@ exports[`ReleaseNotes renders correctly 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }

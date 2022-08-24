@@ -207,11 +207,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #FFFFFF;
-}
-
-.emotion-8 svg {
-  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 1023px) {
@@ -228,11 +223,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 
 .emotion-10 {
   margin: 0;
-  color: rgba(255,255,255,0.8);
-}
-
-.emotion-10 svg {
-  fill: rgba(255,255,255,0.8);
 }
 
 .emotion-11 {
@@ -386,7 +376,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -762,11 +752,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #FFFFFF;
-}
-
-.emotion-9 svg {
-  fill: #FFFFFF;
 }
 
 .emotion-10 {
@@ -775,11 +760,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 
 .emotion-11 {
   margin: 0;
-  color: rgba(255,255,255,0.8);
-}
-
-.emotion-11 svg {
-  fill: rgba(255,255,255,0.8);
 }
 
 .emotion-12 {
@@ -936,7 +916,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1318,11 +1298,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #FFFFFF;
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 1023px) {
@@ -1339,11 +1314,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 .emotion-12 {
   margin: 0;
-  color: rgba(255,255,255,0.8);
-}
-
-.emotion-12 svg {
-  fill: rgba(255,255,255,0.8);
 }
 
 .emotion-13 {
@@ -1458,7 +1428,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2084,11 +2054,6 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #FFFFFF;
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 1023px) {
@@ -2105,11 +2070,6 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 .emotion-12 {
   margin: 0;
-  color: rgba(255,255,255,0.8);
-}
-
-.emotion-12 svg {
-  fill: rgba(255,255,255,0.8);
 }
 
 @media screen {
@@ -2564,11 +2524,6 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #FFFFFF;
-}
-
-.emotion-7 svg {
-  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 1023px) {
@@ -2585,11 +2540,6 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 
 .emotion-9 {
   margin: 0;
-  color: rgba(255,255,255,0.8);
-}
-
-.emotion-9 svg {
-  fill: rgba(255,255,255,0.8);
 }
 
 .emotion-10 {
@@ -2704,7 +2654,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3005,11 +2955,6 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #FFFFFF;
-}
-
-.emotion-7 svg {
-  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 1023px) {
@@ -3026,11 +2971,6 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 
 .emotion-9 {
   margin: 0;
-  color: rgba(255,255,255,0.8);
-}
-
-.emotion-9 svg {
-  fill: rgba(255,255,255,0.8);
 }
 
 <a
@@ -3286,11 +3226,6 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #FFFFFF;
-}
-
-.emotion-8 svg {
-  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 1023px) {
@@ -3307,11 +3242,6 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 .emotion-10 {
   margin: 0;
-  color: rgba(255,255,255,0.8);
-}
-
-.emotion-10 svg {
-  fill: rgba(255,255,255,0.8);
 }
 
 <div
@@ -3612,11 +3542,6 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #FFFFFF;
-}
-
-.emotion-9 svg {
-  fill: #FFFFFF;
 }
 
 .emotion-10 {
@@ -3625,11 +3550,6 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 .emotion-11 {
   margin: 0;
-  color: rgba(255,255,255,0.8);
-}
-
-.emotion-11 svg {
-  fill: rgba(255,255,255,0.8);
 }
 
 .emotion-12 {
@@ -3836,11 +3756,6 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #FFFFFF;
-}
-
-.emotion-5 svg {
-  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 1023px) {
@@ -3857,11 +3772,6 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 
 .emotion-7 {
   margin: 0;
-  color: rgba(255,255,255,0.8);
-}
-
-.emotion-7 svg {
-  fill: rgba(255,255,255,0.8);
 }
 
 <div
@@ -4082,11 +3992,6 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #FFFFFF;
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 1023px) {
@@ -4103,17 +4008,12 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 
 .emotion-12 {
   margin: 0;
-  color: rgba(255,255,255,0.8);
   font-family: "Bitter",serif;
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-}
-
-.emotion-12 svg {
-  fill: rgba(255,255,255,0.8);
 }
 
 .emotion-12::before {
@@ -4535,11 +4435,6 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #FFFFFF;
-}
-
-.emotion-5 svg {
-  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 1023px) {
@@ -4556,11 +4451,6 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 
 .emotion-7 {
   margin: 0;
-  color: rgba(255,255,255,0.8);
-}
-
-.emotion-7 svg {
-  fill: rgba(255,255,255,0.8);
 }
 
 .emotion-8 {
@@ -4714,7 +4604,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
