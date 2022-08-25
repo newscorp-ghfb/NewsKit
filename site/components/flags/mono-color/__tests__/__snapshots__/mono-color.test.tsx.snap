@@ -27,7 +27,7 @@ exports[`MonoColor renders mono token with color 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #535353;
+  background-color: #3B3B3B;
   border-radius: 0;
   color: #FFFFFF;
 }
@@ -75,10 +75,10 @@ exports[`MonoColor renders mono token with color 1`] = `
   display: inline-block;
   height: 12px;
   width: 12px;
-  background: #D20600;
+  background: #D60000;
   border-radius: 50%;
   border: 1px solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
 }
 
 .emotion-5 {

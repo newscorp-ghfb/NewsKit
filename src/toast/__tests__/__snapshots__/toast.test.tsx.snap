@@ -1072,7 +1072,7 @@ exports[`Toast API render toast at top-right position 1`] = `
 exports[`Toast Component renders with actions 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #535353;
+  background-color: #3B3B3B;
   border-radius: 8px;
   padding: 12px;
   box-sizing: border-box;
@@ -1174,7 +1174,7 @@ exports[`Toast Component renders with actions 1`] = `
 
 .emotion-5 {
   border-style: solid;
-  border-color: rgba(255,255,255,0.5);
+  border-color: #FFFFFF;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1232,20 +1232,20 @@ exports[`Toast Component renders with actions 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -1390,7 +1390,7 @@ exports[`Toast Component renders with actions 1`] = `
 exports[`Toast Component renders with content as react element 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #535353;
+  background-color: #3B3B3B;
   border-radius: 8px;
   padding: 12px;
   box-sizing: border-box;
@@ -1516,7 +1516,7 @@ exports[`Toast Component renders with content as react element 1`] = `
 exports[`Toast Component renders with content as string and link 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #535353;
+  background-color: #3B3B3B;
   border-radius: 8px;
   padding: 12px;
   box-sizing: border-box;
@@ -1636,43 +1636,43 @@ exports[`Toast Component renders with content as string and link 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -1755,7 +1755,7 @@ exports[`Toast Component renders with content as string and link 1`] = `
 exports[`Toast Component renders with default props 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #535353;
+  background-color: #3B3B3B;
   border-radius: 8px;
   padding: 12px;
   box-sizing: border-box;
@@ -1873,7 +1873,7 @@ exports[`Toast Component renders with default props 1`] = `
 exports[`Toast Component renders with icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #535353;
+  background-color: #3B3B3B;
   border-radius: 8px;
   padding: 12px;
   box-sizing: border-box;
@@ -1944,7 +1944,7 @@ exports[`Toast Component renders with icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2050,7 +2050,7 @@ exports[`Toast Component renders with icon 1`] = `
 exports[`Toast Component renders with logical props 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #535353;
+  background-color: #3B3B3B;
   border-radius: 8px;
   padding: 12px;
   box-sizing: border-box;
@@ -2241,7 +2241,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2328,7 +2328,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
 
 .emotion-9 {
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -2386,20 +2386,20 @@ exports[`Toast Component renders with overrides and all props 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-11:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-11:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -2570,7 +2570,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
 exports[`Toast Component renders with title 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #535353;
+  background-color: #3B3B3B;
   border-radius: 8px;
   padding: 12px;
   box-sizing: border-box;

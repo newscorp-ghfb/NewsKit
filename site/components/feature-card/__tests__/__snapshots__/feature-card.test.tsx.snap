@@ -160,8 +160,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-7 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -183,8 +183,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-7 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -376,7 +376,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -705,8 +705,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-8 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -728,8 +728,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-8 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -916,7 +916,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1251,8 +1251,8 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-9 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1274,8 +1274,8 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-9 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1428,7 +1428,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2007,8 +2007,8 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-9 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2030,8 +2030,8 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-9 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2477,8 +2477,8 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-6 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2500,8 +2500,8 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-6 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2654,7 +2654,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2908,8 +2908,8 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-6 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2931,8 +2931,8 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-6 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -3179,8 +3179,8 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-7 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -3202,8 +3202,8 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-7 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -3495,8 +3495,8 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-8 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -3518,8 +3518,8 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-8 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -3709,8 +3709,8 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-4 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -3732,8 +3732,8 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-4 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -3969,8 +3969,8 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 
 .emotion-9 {
   font-family: "Bitter",serif;
-  font-size: 24px;
-  line-height: 27px;
+  font-size: 28px;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -4388,8 +4388,8 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-4 {
     font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -4411,8 +4411,8 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-4 {
     font-family: "Bitter",serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -4604,7 +4604,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }

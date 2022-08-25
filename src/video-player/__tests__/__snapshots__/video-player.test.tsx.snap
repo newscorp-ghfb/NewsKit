@@ -46,7 +46,7 @@ exports[`Video Player renders video player with logical props 1`] = `
 
 .emotion-0 .video-js .vjs-progress-holder {
   width: 100%;
-  background-color: rgba(10,10,10,0.2);
+  background-color: rgba(0,0,0,0.2);
 }
 
 .emotion-0 .video-js .vjs-load-progress {
@@ -67,7 +67,7 @@ exports[`Video Player renders video player with logical props 1`] = `
   border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 8px;
-  color: #0A0A0A;
+  color: #111111;
 }
 
 .emotion-0 .video-js .vjs-time-tooltip {
@@ -85,16 +85,16 @@ exports[`Video Player renders video player with logical props 1`] = `
 }
 
 .emotion-0 .video-js .vjs-progress-control .vjs-mouse-display .vjs-time-tooltip {
-  background-color: #0A0A0A;
+  background-color: #111111;
   border-style: solid;
-  border-color: #0A0A0A;
+  border-color: #111111;
   border-width: 1px;
   border-radius: 8px;
   color: #FFFFFF;
 }
 
 .emotion-0 .video-js .vjs-control-bar {
-  background-color: rgba(10,10,10,0.5);
+  background-color: rgba(0,0,0,0.5);
 }
 
 @media screen and (max-width: 767px) {
@@ -263,7 +263,7 @@ exports[`Video Player renders video player with logical props 1`] = `
 }
 
 .emotion-0 .video-js .vjs-next-overlay-banner {
-  background-color: #2E2E2E;
+  background-color: #262626;
   padding: 8px 12px;
 }
 
@@ -322,13 +322,13 @@ exports[`Video Player renders video player with overriden play button style 1`] 
   border-style: solid;
   border-width: 1px;
   border-radius: 50%;
-  background-color: #FF9900;
-  color: #FF362E;
+  background-color: #CD6900;
+  color: #FB5959;
 }
 
 .emotion-0 .video-js .vjs-progress-holder {
   width: 100%;
-  background-color: rgba(10,10,10,0.2);
+  background-color: rgba(0,0,0,0.2);
 }
 
 .emotion-0 .video-js .vjs-load-progress {
@@ -349,7 +349,7 @@ exports[`Video Player renders video player with overriden play button style 1`] 
   border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 8px;
-  color: #0A0A0A;
+  color: #111111;
 }
 
 .emotion-0 .video-js .vjs-time-tooltip {
@@ -367,16 +367,16 @@ exports[`Video Player renders video player with overriden play button style 1`] 
 }
 
 .emotion-0 .video-js .vjs-progress-control .vjs-mouse-display .vjs-time-tooltip {
-  background-color: #0A0A0A;
+  background-color: #111111;
   border-style: solid;
-  border-color: #0A0A0A;
+  border-color: #111111;
   border-width: 1px;
   border-radius: 8px;
   color: #FFFFFF;
 }
 
 .emotion-0 .video-js .vjs-control-bar {
-  background-color: rgba(10,10,10,0.5);
+  background-color: rgba(0,0,0,0.5);
 }
 
 @media screen and (max-width: 767px) {
@@ -545,7 +545,7 @@ exports[`Video Player renders video player with overriden play button style 1`] 
 }
 
 .emotion-0 .video-js .vjs-next-overlay-banner {
-  background-color: #2E2E2E;
+  background-color: #262626;
   padding: 8px 12px;
 }
 
