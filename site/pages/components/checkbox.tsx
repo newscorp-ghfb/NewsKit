@@ -241,11 +241,10 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           title: 'Label',
           description: (
             <>
-              <Block spaceStack="space030">
-                The Checkbox has a label that appears to the right (end) of a
-                Checkbox.
-              </Block>
+              The Checkbox has a label that appears to the right (end) of a
+              Checkbox.
               <InlineMessage
+                overrides={{marginBlockStart: 'space030'}}
                 icon={infoIcon}
                 role="region"
                 aria-label="checkbox label position"
@@ -592,8 +591,8 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
                 For more information, please refer to the Form component
               </Link>
               .
-              <Block spaceStack="space050" />
               <InlineMessage
+                overrides={{marginBlockStart: 'space050'}}
                 icon={infoIcon}
                 role="region"
                 aria-label="formInput checkbox validation"
@@ -731,7 +730,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         <>
           The Checkbox has the following accessibility considerations:
           <Block spaceStack="space100" />
-          <ContentText title="Grouping Checkboxes" titleAs="span">
+          <ContentText title="Grouping Checkboxes">
             It is recommended to{' '}
             <Link
               target="_blank"
@@ -804,8 +803,11 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         <>
           The Checkbox has a range of props that can be used to define an
           appropriate experience for different use cases.
-          <Block spaceStack="space080" />
-          <InlineMessage role="region" aria-label="api introduction">
+          <InlineMessage
+            role="region"
+            aria-label="api introduction"
+            overrides={{marginBlockStart: 'space080'}}
+          >
             There are two components exported from the package, one for use
             within the{' '}
             <Link href="/components/form/">NewsKit Form component</Link>, and

@@ -1175,10 +1175,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
             tabindex="0"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -1197,8 +1197,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
         <a
@@ -1270,10 +1270,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
             data-testid="search-icon-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -1287,8 +1287,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
         <div
@@ -1299,10 +1299,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
             data-testid="search-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -1316,8 +1316,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                   />
                 </svg>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
                 <span
@@ -1325,18 +1325,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                 >
                   Search
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-27"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-28"
                   >
-                    <div
+                    <span
                       class="emotion-29"
                     >
                       <span
@@ -1344,11 +1344,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       >
                         ⌘K
                       </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -1444,10 +1444,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   data-testid="styled-indicator"
                   href="about/introduction"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -1455,8 +1455,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       >
                         About
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -1468,10 +1468,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   data-testid="styled-indicator"
                   href="getting-started/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -1479,8 +1479,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       >
                         Guides
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -1492,10 +1492,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   data-testid="styled-indicator"
                   href="theme/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -1503,8 +1503,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       >
                         Theme
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -1516,10 +1516,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   data-testid="styled-indicator"
                   href="components/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -1527,8 +1527,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       >
                         Components
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -1540,10 +1540,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   data-testid="styled-indicator"
                   href="patterns/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -1551,8 +1551,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       >
                         Patterns
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
             </ul>
@@ -1570,10 +1570,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
               data-testid="search-icon-button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
                   <svg
@@ -1587,8 +1587,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                     />
                   </svg>
-                </div>
-              </div>
+                </span>
+              </span>
             </button>
           </div>
           <div
@@ -1599,10 +1599,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
               data-testid="search-button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
                   <svg
@@ -1616,8 +1616,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                     />
                   </svg>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-6"
                 >
                   <span
@@ -1625,18 +1625,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   >
                     Search
                   </span>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-27"
                     data-testid="flag"
                   >
-                    <div
+                    <span
                       class="emotion-28"
                     >
-                      <div
+                      <span
                         class="emotion-29"
                       >
                         <span
@@ -1644,11 +1644,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                         >
                           ⌘K
                         </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
             </button>
           </div>
         </div>
@@ -1661,10 +1661,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
             href="https://github.com/newscorp-ghfb/newskit"
             target="_blank"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -1679,8 +1679,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     fill-rule="nonzero"
                   />
                 </svg>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
                 <span
@@ -1688,8 +1688,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                 >
                   View GitHub
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
         </div>
         <div
@@ -1703,10 +1703,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
             title="Enable Dark Theme"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -1726,8 +1726,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -2911,10 +2911,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
             tabindex="0"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -2933,8 +2933,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
         <a
@@ -3006,10 +3006,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
             data-testid="search-icon-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -3023,8 +3023,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
         <div
@@ -3035,10 +3035,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
             data-testid="search-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -3052,8 +3052,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                   />
                 </svg>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
                 <span
@@ -3061,18 +3061,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                 >
                   Search
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-27"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-28"
                   >
-                    <div
+                    <span
                       class="emotion-29"
                     >
                       <span
@@ -3080,11 +3080,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       >
                         ⌘K
                       </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -3180,10 +3180,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   data-testid="styled-indicator"
                   href="about/introduction"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -3191,8 +3191,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       >
                         About
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -3204,10 +3204,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   data-testid="styled-indicator"
                   href="getting-started/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -3215,8 +3215,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       >
                         Guides
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -3228,10 +3228,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   data-testid="styled-indicator"
                   href="theme/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -3239,8 +3239,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       >
                         Theme
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -3252,10 +3252,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   data-testid="styled-indicator"
                   href="components/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -3263,8 +3263,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       >
                         Components
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -3276,10 +3276,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   data-testid="styled-indicator"
                   href="patterns/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -3287,8 +3287,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       >
                         Patterns
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
             </ul>
@@ -3306,10 +3306,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
               data-testid="search-icon-button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
                   <svg
@@ -3323,8 +3323,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                     />
                   </svg>
-                </div>
-              </div>
+                </span>
+              </span>
             </button>
           </div>
           <div
@@ -3335,10 +3335,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
               data-testid="search-button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
                   <svg
@@ -3352,8 +3352,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                     />
                   </svg>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-6"
                 >
                   <span
@@ -3361,18 +3361,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   >
                     Search
                   </span>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-27"
                     data-testid="flag"
                   >
-                    <div
+                    <span
                       class="emotion-28"
                     >
-                      <div
+                      <span
                         class="emotion-29"
                       >
                         <span
@@ -3380,11 +3380,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                         >
                           ⌘K
                         </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
             </button>
           </div>
         </div>
@@ -3397,10 +3397,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
             href="https://github.com/newscorp-ghfb/newskit"
             target="_blank"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -3415,8 +3415,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     fill-rule="nonzero"
                   />
                 </svg>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
                 <span
@@ -3424,8 +3424,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                 >
                   View GitHub
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
         </div>
         <div
@@ -3439,10 +3439,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
             title="Enable Dark Theme"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -3462,8 +3462,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -4532,10 +4532,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
             tabindex="0"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -4554,8 +4554,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
         <a
@@ -4627,10 +4627,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
             data-testid="search-icon-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -4644,8 +4644,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
         <div
@@ -4656,10 +4656,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
             data-testid="search-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -4673,8 +4673,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                   />
                 </svg>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
                 <span
@@ -4682,18 +4682,18 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                 >
                   Search
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-27"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-28"
                   >
-                    <div
+                    <span
                       class="emotion-29"
                     >
                       <span
@@ -4701,11 +4701,11 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       >
                         ⌘K
                       </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -4801,10 +4801,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   data-testid="styled-indicator"
                   href="about/introduction"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -4812,8 +4812,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       >
                         About
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -4825,10 +4825,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   data-testid="styled-indicator"
                   href="getting-started/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -4836,8 +4836,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       >
                         Guides
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -4849,10 +4849,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   data-testid="styled-indicator"
                   href="theme/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -4860,8 +4860,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       >
                         Theme
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -4873,10 +4873,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   data-testid="styled-indicator"
                   href="components/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -4884,8 +4884,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       >
                         Components
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
               <li
@@ -4897,10 +4897,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   data-testid="styled-indicator"
                   href="patterns/overview"
                 >
-                  <div
+                  <span
                     class="emotion-5"
                   >
-                    <div
+                    <span
                       class="emotion-6"
                     >
                       <span
@@ -4908,8 +4908,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       >
                         Patterns
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </li>
             </ul>
@@ -4927,10 +4927,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
               data-testid="search-icon-button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
                   <svg
@@ -4944,8 +4944,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                     />
                   </svg>
-                </div>
-              </div>
+                </span>
+              </span>
             </button>
           </div>
           <div
@@ -4956,10 +4956,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
               data-testid="search-button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
                   <svg
@@ -4973,8 +4973,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
                     />
                   </svg>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-6"
                 >
                   <span
@@ -4982,18 +4982,18 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   >
                     Search
                   </span>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-27"
                     data-testid="flag"
                   >
-                    <div
+                    <span
                       class="emotion-28"
                     >
-                      <div
+                      <span
                         class="emotion-29"
                       >
                         <span
@@ -5001,11 +5001,11 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                         >
                           ⌘K
                         </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
             </button>
           </div>
         </div>
@@ -5018,10 +5018,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
             href="https://github.com/newscorp-ghfb/newskit"
             target="_blank"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -5036,8 +5036,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     fill-rule="nonzero"
                   />
                 </svg>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-6"
               >
                 <span
@@ -5045,8 +5045,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                 >
                   View GitHub
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
         </div>
         <div
@@ -5060,10 +5060,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
             title="Enable Dark Theme"
             type="button"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <div
+              <span
                 class="emotion-6"
               >
                 <svg
@@ -5083,8 +5083,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>

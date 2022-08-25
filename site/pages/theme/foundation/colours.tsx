@@ -316,6 +316,7 @@ const Colours = (layoutProps: LayoutProps) => (
         >
           {CUSTOM_ICONS.map(({icon, label}) => (
             <UnorderedList
+              key={label}
               listItemMarker={icon}
               overrides={{
                 content: {

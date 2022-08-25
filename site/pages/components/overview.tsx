@@ -31,7 +31,7 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
     <Grid lgMargin="sizing000" xsRowGutter="sizing000">
       {componentCategories.map(
         ({title, description, subNav}: any, i: number) => (
-          <>
+          <React.Fragment key={title}>
             {i === 0 ? (
               <Cell xs={12}>
                 <SectionIntroduction
@@ -74,7 +74,7 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
                 <Separator />
               </ComponentPageCell>
             )}
-          </>
+          </React.Fragment>
         ),
       )}
     </Grid>

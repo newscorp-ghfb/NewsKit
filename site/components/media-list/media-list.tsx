@@ -39,6 +39,8 @@ export const MediaList: React.FC<MediaListProps> = ({
       notHeroCardGroup: spanListConfig[layout],
     };
 
+    if (cards.length === 0) return null;
+
     cardListToRender.push(
       cards.map((cardProps, index) => {
         let cellColumnList;
@@ -48,7 +50,7 @@ export const MediaList: React.FC<MediaListProps> = ({
           cellColumnList = cardListColumns.notHeroCardGroup;
         }
 
-        const StyledCardComponentWithProps = (
+        const styledCardComponentWithProps = (
           <StyledCardComponent
             layout={cardListOrientation}
             overrides={{horizontalRatio} as {}}
@@ -57,16 +59,14 @@ export const MediaList: React.FC<MediaListProps> = ({
         );
 
         return (
-          <Cell
-            {...cellColumnList}
-            key={`${cardProps.title}-${cardProps.description}`}
-          >
+          // eslint-disable-next-line react/no-array-index-key
+          <Cell {...cellColumnList} key={`index-${index}`}>
             {cardProps.href && (
               <LinkNext href={cardProps.href} passHref>
-                {StyledCardComponentWithProps}
+                {styledCardComponentWithProps}
               </LinkNext>
             )}
-            {!cardProps.href && StyledCardComponentWithProps}
+            {!cardProps.href && styledCardComponentWithProps}
           </Cell>
         );
       }),
