@@ -1857,6 +1857,13 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.teal060}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -4426,6 +4433,13 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.teal060}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -7002,6 +7016,13 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.teal060}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -9571,6 +9592,13 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.teal060}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -12147,6 +12175,13 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.teal060}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -14716,6 +14751,13 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.teal060}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -17292,6 +17334,13 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.teal060}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -19861,6 +19910,13 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.teal060}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {

@@ -1093,4 +1093,11 @@ export const stylePresets = {
       textDecoration: 'underline',
     },
   },
+  whatsNewHomeFlag: {
+    base: {
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkInverse}}',
+      backgroundColor: '{{colors.teal060}}',
+    },
+  },
 };

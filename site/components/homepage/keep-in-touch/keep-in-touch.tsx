@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Card, GridLayout, Headline, LinkStandalone, TextBlock} from 'newskit';
-import {IconFilledChevronRight} from '../../../../src/icons';
+import {IconFilledLaunch} from '../../../../src/icons';
 import {Github, Storybook, Medium} from '../../illustrations/landing-page';
 import {ContentPrimary} from '../../content-structure';
 
@@ -44,7 +44,7 @@ export const KeepInTouch = () => (
               overrides={{stylePreset: 'keepInTouchLink'}}
             >
               Explore {title}
-              <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+              <IconFilledLaunch overrides={{size: 'iconSize010'}} />
             </LinkStandalone>
           )}
         >
