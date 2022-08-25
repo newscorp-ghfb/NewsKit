@@ -565,14 +565,6 @@ export default [
             illustration: 'components/audio-player-illustration',
           },
           {
-            title: 'Audio Player - Old',
-            page: false,
-            id: '/components/audio-player-old',
-            description:
-              'Used to embed sound content in web and app interfaces.',
-            illustration: 'components/audio-player-illustration',
-          },
-          {
             title: 'Icons',
             page: true,
             id: '/components/icons',
