@@ -71,9 +71,9 @@ exports[`Sidebar renders correctly when closed 1`] = `
   z-index: 3;
   padding-top: 16px;
   margin-top: 48px;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 1px 0 0;
   width: 276px;
   margin-top: 80px;
@@ -127,7 +127,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-7 {
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -209,7 +209,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #577FFB;
+  color: #3358CC;
   margin: 0;
   cursor: pointer;
 }
@@ -220,24 +220,24 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-10:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -302,8 +302,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-13 {
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
   vertical-align: unset;
   display: inline-block;
 }
@@ -327,8 +327,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-13.emotion-13 {
   width: 24px;
   height: 24px;
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -384,7 +384,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
@@ -401,12 +401,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-15:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-15:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -481,7 +481,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   margin-block-end: 12px;
@@ -499,12 +499,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-48:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-48:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -545,7 +545,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-54 {
   margin: 0;
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -576,7 +576,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-614 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -3688,9 +3688,9 @@ exports[`Sidebar renders correctly when closed 1`] = `
   max-width: 100%;
   min-width: 100%;
   height: 100%;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 1px 0 0;
   margin-top: 48px;
   height: calc(100vh - 48px);
@@ -3923,7 +3923,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-5 {
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -4005,7 +4005,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #577FFB;
+  color: #3358CC;
   margin: 0;
   cursor: pointer;
 }
@@ -4016,24 +4016,24 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -4098,8 +4098,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-11 {
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4123,8 +4123,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-11.emotion-11 {
   width: 24px;
   height: 24px;
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4180,7 +4180,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
@@ -4197,12 +4197,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-13:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-13:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4277,7 +4277,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   margin-block-end: 12px;
@@ -4295,12 +4295,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-46:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-46:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4341,7 +4341,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-52 {
   margin: 0;
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -4372,7 +4372,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-612 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -4431,7 +4431,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-619 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -4439,15 +4439,15 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-619 svg {
-  fill: #2E2E2E;
+.emotion-614 svg {
+  fill: #2E3F54;
 }
 
 .emotion-620 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7810,9 +7810,9 @@ exports[`Sidebar renders correctly when open 1`] = `
   z-index: 3;
   padding-top: 16px;
   margin-top: 48px;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 1px 0 0;
   width: 276px;
   margin-top: 80px;
@@ -7866,7 +7866,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-7 {
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -7948,7 +7948,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #577FFB;
+  color: #3358CC;
   margin: 0;
   cursor: pointer;
 }
@@ -7959,24 +7959,24 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-10:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #C0C7CC;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -8041,8 +8041,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-13 {
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8066,8 +8066,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-13.emotion-13 {
   width: 24px;
   height: 24px;
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8123,7 +8123,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
@@ -8140,12 +8140,12 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-15:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-15:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8220,7 +8220,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   margin-block-end: 12px;
@@ -8238,12 +8238,12 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-48:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-48:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8284,7 +8284,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-54 {
   margin: 0;
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -8315,7 +8315,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-614 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -11430,9 +11430,9 @@ exports[`Sidebar renders correctly when open 1`] = `
   max-width: 100%;
   min-width: 100%;
   height: 100%;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 1px 0 0;
   margin-top: 48px;
   height: calc(100vh - 48px);
@@ -11665,7 +11665,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-5 {
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -11747,7 +11747,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #577FFB;
+  color: #3358CC;
   margin: 0;
   cursor: pointer;
 }
@@ -11758,24 +11758,24 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #C0C7CC;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -11840,8 +11840,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-11 {
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
   vertical-align: unset;
   display: inline-block;
 }
@@ -11865,8 +11865,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-11.emotion-11 {
   width: 24px;
   height: 24px;
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -11922,7 +11922,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
@@ -11939,12 +11939,12 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-13:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-13:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -12019,7 +12019,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   margin-block-end: 12px;
@@ -12037,12 +12037,12 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-46:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-46:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -12083,7 +12083,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-52 {
   margin: 0;
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -12114,7 +12114,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-612 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -12173,7 +12173,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-619 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -12181,15 +12181,15 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-619 svg {
-  fill: #2E2E2E;
+.emotion-614 svg {
+  fill: #2E3F54;
 }
 
 .emotion-620 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }

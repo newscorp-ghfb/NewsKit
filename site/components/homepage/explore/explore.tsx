@@ -38,7 +38,12 @@ export const Explore = () => (
       columnGap="space050"
     >
       {cardsContent.map(({media, title, href, description}) => (
-        <Card key={href} href={href} media={() => media}>
+        <Card
+          key={href}
+          href={href}
+          media={() => media}
+          overrides={{stylePreset: 'homepageCard'}}
+        >
           <Headline
             overrides={{
               marginBlockEnd: 'space040',

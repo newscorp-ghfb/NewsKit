@@ -123,7 +123,7 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -136,11 +136,11 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -149,7 +149,7 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -167,12 +167,12 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -303,7 +303,7 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -314,11 +314,11 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -327,7 +327,7 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -345,12 +345,12 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -397,7 +397,7 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -738,7 +738,7 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -751,11 +751,11 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -764,7 +764,7 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -782,12 +782,12 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -918,7 +918,7 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -929,11 +929,11 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -942,7 +942,7 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -960,12 +960,12 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -1012,7 +1012,7 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -1336,7 +1336,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -1349,11 +1349,11 @@ exports[`Tabs clears focus onMouseDown 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -1362,7 +1362,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -1380,12 +1380,12 @@ exports[`Tabs clears focus onMouseDown 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -1516,7 +1516,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -1527,11 +1527,11 @@ exports[`Tabs clears focus onMouseDown 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -1540,7 +1540,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -1558,12 +1558,12 @@ exports[`Tabs clears focus onMouseDown 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -1610,7 +1610,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -1932,7 +1932,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -1945,11 +1945,11 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -1958,7 +1958,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -1976,12 +1976,12 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -2112,7 +2112,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -2123,11 +2123,11 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -2136,7 +2136,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -2154,12 +2154,12 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -2206,7 +2206,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -2531,7 +2531,7 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -2549,11 +2549,11 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -2562,7 +2562,7 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -2580,12 +2580,12 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -2716,7 +2716,7 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -2732,11 +2732,11 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -2745,7 +2745,7 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -2763,12 +2763,12 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -2815,7 +2815,7 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -3139,7 +3139,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -3152,11 +3152,11 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -3165,7 +3165,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -3183,12 +3183,12 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -3319,7 +3319,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -3330,11 +3330,11 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -3343,7 +3343,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -3361,12 +3361,12 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -3413,7 +3413,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -3740,7 +3740,7 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -3758,11 +3758,11 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -3771,7 +3771,7 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -3789,12 +3789,12 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -3925,7 +3925,7 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -3941,11 +3941,11 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -3954,7 +3954,7 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -3972,12 +3972,12 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -4024,7 +4024,7 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -4348,7 +4348,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -4361,11 +4361,11 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -4374,7 +4374,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -4392,12 +4392,12 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -4528,7 +4528,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -4539,11 +4539,11 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -4552,7 +4552,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -4570,12 +4570,12 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -4622,7 +4622,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -4949,7 +4949,7 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -4967,11 +4967,11 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -4980,7 +4980,7 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -4998,12 +4998,12 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -5134,7 +5134,7 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -5150,11 +5150,11 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -5163,7 +5163,7 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -5181,12 +5181,12 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -5233,7 +5233,7 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -5557,7 +5557,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -5570,11 +5570,11 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -5583,7 +5583,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -5601,12 +5601,12 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -5736,8 +5736,8 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
   margin: 0;
 }
 
@@ -5747,7 +5747,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5779,7 +5779,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -6105,7 +6105,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -6118,11 +6118,11 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -6131,7 +6131,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -6149,12 +6149,12 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -6285,7 +6285,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -6296,11 +6296,11 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -6309,7 +6309,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -6327,12 +6327,12 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -6379,7 +6379,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -6706,7 +6706,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -6724,11 +6724,11 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -6737,7 +6737,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -6755,12 +6755,12 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -6891,7 +6891,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -6907,11 +6907,11 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -6920,7 +6920,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -6938,12 +6938,12 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -6990,7 +6990,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -7314,7 +7314,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -7327,11 +7327,11 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -7340,7 +7340,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -7358,12 +7358,12 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -7494,7 +7494,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -7505,11 +7505,11 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -7518,7 +7518,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -7536,12 +7536,12 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -7588,7 +7588,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -7915,7 +7915,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -7931,11 +7931,11 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -7944,7 +7944,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -7962,12 +7962,12 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -8089,7 +8089,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -8107,11 +8107,11 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
 }
 
 .emotion-19 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-19:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -8120,7 +8120,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
 }
 
 .emotion-19:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -8138,12 +8138,12 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
 }
 
 .emotion-19:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-19:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-19:focus:not(:disabled) {
@@ -8199,7 +8199,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -8523,7 +8523,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -8534,11 +8534,11 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -8547,7 +8547,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -8565,12 +8565,12 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -8692,7 +8692,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -8705,11 +8705,11 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
 }
 
 .emotion-19 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-19:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -8718,7 +8718,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
 }
 
 .emotion-19:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -8736,12 +8736,12 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
 }
 
 .emotion-19:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-19:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-19:focus:not(:disabled) {
@@ -8797,7 +8797,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -9124,7 +9124,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -9140,11 +9140,11 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -9153,7 +9153,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -9171,12 +9171,12 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -9294,7 +9294,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -9312,11 +9312,11 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -9325,7 +9325,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -9343,12 +9343,12 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -9408,7 +9408,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -9732,7 +9732,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -9743,11 +9743,11 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -9756,7 +9756,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -9774,12 +9774,12 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -9897,7 +9897,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -9910,11 +9910,11 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -9923,7 +9923,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -9941,12 +9941,12 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -10006,7 +10006,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -10330,7 +10330,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -10343,11 +10343,11 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -10356,7 +10356,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -10374,12 +10374,12 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -10510,7 +10510,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -10521,11 +10521,11 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -10534,7 +10534,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -10552,12 +10552,12 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -10604,7 +10604,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -10931,7 +10931,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -10949,11 +10949,11 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -10962,7 +10962,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -10980,12 +10980,12 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -11116,7 +11116,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -11132,11 +11132,11 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -11145,7 +11145,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -11163,12 +11163,12 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -11215,7 +11215,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -11542,7 +11542,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -11560,11 +11560,11 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -11573,7 +11573,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -11591,12 +11591,12 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -11708,7 +11708,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 
 .emotion-12 {
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -11747,7 +11747,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -11763,11 +11763,11 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 }
 
 .emotion-15 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -11776,7 +11776,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -11794,12 +11794,12 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 }
 
 .emotion-15:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus:not(:disabled) {
@@ -11846,7 +11846,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 }
 
 .emotion-28 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -12188,7 +12188,7 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -12201,11 +12201,11 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -12214,7 +12214,7 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -12232,12 +12232,12 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -12346,7 +12346,7 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
 }
 
 .emotion-12 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -12583,7 +12583,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -12596,11 +12596,11 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -12609,7 +12609,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -12627,12 +12627,12 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -12713,7 +12713,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -12788,7 +12788,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -12799,11 +12799,11 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -12812,7 +12812,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -12830,12 +12830,12 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -12882,7 +12882,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -13293,7 +13293,7 @@ exports[`Tabs renders with default styles 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -13306,11 +13306,11 @@ exports[`Tabs renders with default styles 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -13319,7 +13319,7 @@ exports[`Tabs renders with default styles 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -13337,12 +13337,12 @@ exports[`Tabs renders with default styles 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -13473,7 +13473,7 @@ exports[`Tabs renders with default styles 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -13484,11 +13484,11 @@ exports[`Tabs renders with default styles 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -13497,7 +13497,7 @@ exports[`Tabs renders with default styles 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -13515,12 +13515,12 @@ exports[`Tabs renders with default styles 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -13567,7 +13567,7 @@ exports[`Tabs renders with default styles 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -13891,7 +13891,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -13904,11 +13904,11 @@ exports[`Tabs renders with default styles and divider 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -13917,7 +13917,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -13935,12 +13935,12 @@ exports[`Tabs renders with default styles and divider 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -14052,7 +14052,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
 
 .emotion-12 {
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -14092,7 +14092,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -14103,11 +14103,11 @@ exports[`Tabs renders with default styles and divider 1`] = `
 }
 
 .emotion-15 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -14116,7 +14116,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -14134,12 +14134,12 @@ exports[`Tabs renders with default styles and divider 1`] = `
 }
 
 .emotion-15:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus:not(:disabled) {
@@ -14186,7 +14186,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
 }
 
 .emotion-28 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -14528,7 +14528,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -14541,11 +14541,11 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -14554,7 +14554,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -14572,12 +14572,12 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -14658,7 +14658,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -14733,7 +14733,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -14744,11 +14744,11 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -14757,7 +14757,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -14775,12 +14775,12 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -14827,7 +14827,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -15238,7 +15238,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -15251,11 +15251,11 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -15264,7 +15264,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -15282,12 +15282,12 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -15368,7 +15368,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -15443,7 +15443,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -15454,11 +15454,11 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -15467,7 +15467,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -15485,12 +15485,12 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -15537,7 +15537,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -15948,7 +15948,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -15961,11 +15961,11 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -15974,7 +15974,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -15992,12 +15992,12 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -16078,7 +16078,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -16153,7 +16153,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -16164,11 +16164,11 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -16177,7 +16177,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -16195,12 +16195,12 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -16247,7 +16247,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -16658,7 +16658,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -16671,11 +16671,11 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -16684,7 +16684,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -16702,12 +16702,12 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -16788,7 +16788,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -16863,7 +16863,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -16874,11 +16874,11 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -16887,7 +16887,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -16905,12 +16905,12 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -16957,7 +16957,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -17368,7 +17368,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -17381,11 +17381,11 @@ exports[`Tabs renders with icons for tabs 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -17394,7 +17394,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -17412,12 +17412,12 @@ exports[`Tabs renders with icons for tabs 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -17498,7 +17498,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -17550,7 +17550,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -17561,11 +17561,11 @@ exports[`Tabs renders with icons for tabs 1`] = `
 }
 
 .emotion-14 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-14:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -17574,7 +17574,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
 }
 
 .emotion-14:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -17592,12 +17592,12 @@ exports[`Tabs renders with icons for tabs 1`] = `
 }
 
 .emotion-14:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-14:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-14:focus:not(:disabled) {
@@ -17644,7 +17644,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
 }
 
 .emotion-27 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -18004,7 +18004,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -18022,11 +18022,11 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -18035,7 +18035,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -18053,12 +18053,12 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -18139,7 +18139,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -18214,7 +18214,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -18230,11 +18230,11 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -18243,7 +18243,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -18261,12 +18261,12 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -18313,7 +18313,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -18727,7 +18727,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -18745,11 +18745,11 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -18758,7 +18758,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -18776,12 +18776,12 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -18862,7 +18862,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -18937,7 +18937,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: end;
@@ -18953,11 +18953,11 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -18966,7 +18966,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -18984,12 +18984,12 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -19036,7 +19036,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -19447,7 +19447,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -19460,11 +19460,11 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -19473,7 +19473,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -19491,12 +19491,12 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -19627,7 +19627,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -19638,11 +19638,11 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -19651,7 +19651,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -19669,12 +19669,12 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -19721,7 +19721,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -20046,7 +20046,7 @@ exports[`Tabs renders with overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -20059,11 +20059,11 @@ exports[`Tabs renders with overrides 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -20072,7 +20072,7 @@ exports[`Tabs renders with overrides 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -20090,12 +20090,12 @@ exports[`Tabs renders with overrides 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -20176,7 +20176,7 @@ exports[`Tabs renders with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -20251,7 +20251,7 @@ exports[`Tabs renders with overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -20262,11 +20262,11 @@ exports[`Tabs renders with overrides 1`] = `
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -20275,7 +20275,7 @@ exports[`Tabs renders with overrides 1`] = `
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -20293,12 +20293,12 @@ exports[`Tabs renders with overrides 1`] = `
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -20368,7 +20368,7 @@ exports[`Tabs renders with overrides 1`] = `
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -20913,7 +20913,7 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -20924,11 +20924,11 @@ exports[`Tabs renders with overrides on Tab 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -20937,7 +20937,7 @@ exports[`Tabs renders with overrides on Tab 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -20955,12 +20955,12 @@ exports[`Tabs renders with overrides on Tab 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -21003,7 +21003,7 @@ exports[`Tabs renders with overrides on Tab 1`] = `
 }
 
 .emotion-18 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -21287,7 +21287,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -21305,11 +21305,11 @@ exports[`Tabs renders with overrides vertical 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -21318,7 +21318,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -21336,12 +21336,12 @@ exports[`Tabs renders with overrides vertical 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -21422,7 +21422,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -21497,7 +21497,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -21513,11 +21513,11 @@ exports[`Tabs renders with overrides vertical 1`] = `
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -21526,7 +21526,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -21544,12 +21544,12 @@ exports[`Tabs renders with overrides vertical 1`] = `
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -21620,7 +21620,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -22031,7 +22031,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -22042,11 +22042,11 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -22055,7 +22055,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -22073,12 +22073,12 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -22196,7 +22196,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -22209,11 +22209,11 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -22222,7 +22222,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -22240,12 +22240,12 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -22305,7 +22305,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -22629,7 +22629,7 @@ exports[`Tabs renders with selectedIndex 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -22640,11 +22640,11 @@ exports[`Tabs renders with selectedIndex 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -22653,7 +22653,7 @@ exports[`Tabs renders with selectedIndex 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -22671,12 +22671,12 @@ exports[`Tabs renders with selectedIndex 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -22798,7 +22798,7 @@ exports[`Tabs renders with selectedIndex 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -22811,11 +22811,11 @@ exports[`Tabs renders with selectedIndex 1`] = `
 }
 
 .emotion-19 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-19:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -22824,7 +22824,7 @@ exports[`Tabs renders with selectedIndex 1`] = `
 }
 
 .emotion-19:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -22842,12 +22842,12 @@ exports[`Tabs renders with selectedIndex 1`] = `
 }
 
 .emotion-19:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-19:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-19:focus:not(:disabled) {
@@ -22903,7 +22903,7 @@ exports[`Tabs renders with selectedIndex 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -23227,7 +23227,7 @@ exports[`Tabs renders with sizing 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -23240,11 +23240,11 @@ exports[`Tabs renders with sizing 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -23253,7 +23253,7 @@ exports[`Tabs renders with sizing 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -23271,12 +23271,12 @@ exports[`Tabs renders with sizing 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -23407,7 +23407,7 @@ exports[`Tabs renders with sizing 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -23418,11 +23418,11 @@ exports[`Tabs renders with sizing 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -23431,7 +23431,7 @@ exports[`Tabs renders with sizing 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -23449,12 +23449,12 @@ exports[`Tabs renders with sizing 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -23501,7 +23501,7 @@ exports[`Tabs renders with sizing 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -23825,7 +23825,7 @@ exports[`Tabs sets active on click 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -23838,11 +23838,11 @@ exports[`Tabs sets active on click 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -23851,7 +23851,7 @@ exports[`Tabs sets active on click 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -23869,12 +23869,12 @@ exports[`Tabs sets active on click 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -24005,7 +24005,7 @@ exports[`Tabs sets active on click 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -24016,11 +24016,11 @@ exports[`Tabs sets active on click 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -24029,7 +24029,7 @@ exports[`Tabs sets active on click 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -24047,12 +24047,12 @@ exports[`Tabs sets active on click 1`] = `
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -24099,7 +24099,7 @@ exports[`Tabs sets active on click 1`] = `
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -24423,7 +24423,7 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -24436,11 +24436,11 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -24449,7 +24449,7 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -24467,12 +24467,12 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -24603,7 +24603,7 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -24614,11 +24614,11 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -24627,7 +24627,7 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -24645,12 +24645,12 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
 }
 
 .emotion-13:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-13:focus:not(:disabled) {
@@ -24697,7 +24697,7 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -25021,7 +25021,7 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -25032,11 +25032,11 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -25045,7 +25045,7 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -25063,12 +25063,12 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -25190,7 +25190,7 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -25203,11 +25203,11 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
 }
 
 .emotion-19 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-19:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -25216,7 +25216,7 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
 }
 
 .emotion-19:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -25234,12 +25234,12 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
 }
 
 .emotion-19:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-19:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-19:focus:not(:disabled) {
@@ -25295,7 +25295,7 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -25619,7 +25619,7 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -25630,11 +25630,11 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -25643,7 +25643,7 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -25661,12 +25661,12 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -25788,7 +25788,7 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -25801,11 +25801,11 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
 }
 
 .emotion-19 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-19:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -25814,7 +25814,7 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
 }
 
 .emotion-19:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -25832,12 +25832,12 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
 }
 
 .emotion-19:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-19:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-19:focus:not(:disabled) {
@@ -25893,7 +25893,7 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
 }
 
 .emotion-24 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -26192,7 +26192,7 @@ exports[`Tabs with custom scroll component 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -26205,11 +26205,11 @@ exports[`Tabs with custom scroll component 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -26218,7 +26218,7 @@ exports[`Tabs with custom scroll component 1`] = `
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -26236,12 +26236,12 @@ exports[`Tabs with custom scroll component 1`] = `
 }
 
 .emotion-5:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus:not(:disabled) {
@@ -26322,7 +26322,7 @@ exports[`Tabs with custom scroll component 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -26397,7 +26397,7 @@ exports[`Tabs with custom scroll component 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -26408,11 +26408,11 @@ exports[`Tabs with custom scroll component 1`] = `
 }
 
 .emotion-16 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-16:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -26421,7 +26421,7 @@ exports[`Tabs with custom scroll component 1`] = `
 }
 
 .emotion-16:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -26439,12 +26439,12 @@ exports[`Tabs with custom scroll component 1`] = `
 }
 
 .emotion-16:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-16:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-16:focus:not(:disabled) {
@@ -26491,7 +26491,7 @@ exports[`Tabs with custom scroll component 1`] = `
 }
 
 .emotion-37 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -26906,7 +26906,7 @@ exports[`Tabs with custom scroll props 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -26919,11 +26919,11 @@ exports[`Tabs with custom scroll props 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -26932,7 +26932,7 @@ exports[`Tabs with custom scroll props 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -26950,12 +26950,12 @@ exports[`Tabs with custom scroll props 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -27036,7 +27036,7 @@ exports[`Tabs with custom scroll props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -27111,7 +27111,7 @@ exports[`Tabs with custom scroll props 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -27122,11 +27122,11 @@ exports[`Tabs with custom scroll props 1`] = `
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -27135,7 +27135,7 @@ exports[`Tabs with custom scroll props 1`] = `
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -27153,12 +27153,12 @@ exports[`Tabs with custom scroll props 1`] = `
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -27205,7 +27205,7 @@ exports[`Tabs with custom scroll props 1`] = `
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -27616,7 +27616,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -27629,11 +27629,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -27642,7 +27642,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -27660,12 +27660,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -27746,7 +27746,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -27821,7 +27821,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -27832,11 +27832,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -27845,7 +27845,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -27863,12 +27863,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -27914,7 +27914,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -28324,7 +28324,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -28337,11 +28337,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -28350,7 +28350,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -28368,12 +28368,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -28454,7 +28454,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -28529,7 +28529,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -28540,11 +28540,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -28553,7 +28553,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -28571,12 +28571,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -28623,7 +28623,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -29034,7 +29034,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -29047,11 +29047,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -29060,7 +29060,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -29078,12 +29078,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -29164,7 +29164,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -29239,7 +29239,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -29250,11 +29250,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -29263,7 +29263,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -29281,12 +29281,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -29333,7 +29333,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -29747,7 +29747,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -29765,11 +29765,11 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -29778,7 +29778,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -29796,12 +29796,12 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -29882,7 +29882,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -29957,7 +29957,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -29973,11 +29973,11 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -29986,7 +29986,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -30004,12 +30004,12 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -30055,7 +30055,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -30468,7 +30468,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -30486,11 +30486,11 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -30499,7 +30499,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -30517,12 +30517,12 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -30603,7 +30603,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -30678,7 +30678,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -30694,11 +30694,11 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -30707,7 +30707,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -30725,12 +30725,12 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -30777,7 +30777,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -31191,7 +31191,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -31209,11 +31209,11 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -31222,7 +31222,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -31240,12 +31240,12 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -31326,7 +31326,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -31401,7 +31401,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -31417,11 +31417,11 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -31430,7 +31430,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -31448,12 +31448,12 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -31500,7 +31500,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
@@ -31915,7 +31915,7 @@ exports[`with logical props overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
@@ -31928,11 +31928,11 @@ exports[`with logical props overrides 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -31941,7 +31941,7 @@ exports[`with logical props overrides 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -31959,12 +31959,12 @@ exports[`with logical props overrides 1`] = `
 }
 
 .emotion-7:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus:not(:disabled) {
@@ -32045,7 +32045,7 @@ exports[`with logical props overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -32120,7 +32120,7 @@ exports[`with logical props overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -32131,11 +32131,11 @@ exports[`with logical props overrides 1`] = `
 }
 
 .emotion-18 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -32144,7 +32144,7 @@ exports[`with logical props overrides 1`] = `
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -32162,12 +32162,12 @@ exports[`with logical props overrides 1`] = `
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus:not(:disabled) {
@@ -32214,7 +32214,7 @@ exports[`with logical props overrides 1`] = `
 }
 
 .emotion-39 {
-  background-color: #DEDEDE;
+  background-color: #C6C6C6;
   display: block;
   position: absolute;
   z-index: 1;
