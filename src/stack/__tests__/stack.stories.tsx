@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Stack} from '..';
+import {Flow, Stack, StackDistribution} from '..';
 import {styled, getColorFromTheme} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {TextBlock} from '../../text-block';
@@ -52,30 +52,31 @@ const renderChildren = (wrap: 'wrap' | 'nowrap') => {
 
   return children;
 };
-enum FlowEnum {
-  VerticalLeft = 'vertical-left',
-  VerticalCenter = 'vertical-center',
-  VerticalRight = 'vertical-right',
-  VerticalStretch = 'vertical-stretch',
-  HorizontalTop = 'horizontal-top',
-  HorizontalCenter = 'horizontal-center',
-  HorizontalBottom = 'horizontal-bottom',
-  HorizontalStretch = 'horizontal-stretch',
-}
-enum StackDistributionEnum {
-  Start = 'flex-start',
-  End = 'flex-end',
-  Center = 'center',
-  SpaceAround = 'space-around',
-  SpaceBetween = 'space-between',
-  SpaceEvenly = 'space-evenly',
-}
+const FlowTypes = [
+  'vertical-left',
+  'vertical-center',
+  'vertical-right',
+  'vertical-stretch',
+  'horizontal-top',
+  'horizontal-center',
+  'horizontal-bottom',
+  'horizontal-stretch',
+];
+
+const StackDistributionTypes = [
+  'flex-start',
+  'flex-end',
+  'center',
+  'space-around',
+  'space-between',
+  'space-evenly',
+];
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const stackDistributionSet: any = () => {
   const sets = Object.values(['nowrap', 'wrap']).map(wrapType =>
-    Object.values(FlowEnum).map(flowKey =>
-      Object.values(StackDistributionEnum).map(stackDistributionKey => ({
+    FlowTypes.map(flowKey =>
+      StackDistributionTypes.map(stackDistributionKey => ({
         storyName: `stack distribution set ${stackDistributionKey}, ${flowKey}${
           wrapType === 'wrap' ? ', wrap' : ''
         }`,
@@ -99,8 +100,8 @@ const stackDistributionSet: any = () => {
               }
             >
               <Stack
-                flow={flowKey}
-                stackDistribution={stackDistributionKey}
+                flow={flowKey as Flow}
+                stackDistribution={stackDistributionKey as StackDistribution}
                 wrap={wrapType as 'wrap' | 'nowrap'}
               >
                 {renderChildren(wrapType as 'wrap' | 'nowrap')}
