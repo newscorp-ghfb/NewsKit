@@ -561,6 +561,14 @@ export default [
             page: true,
             id: '/components/audio-player',
             description:
+              'The audio player component allows a user to play and control the playback of live and recorded audio content.',
+            illustration: 'components/audio-player-illustration',
+          },
+          {
+            title: 'Audio Player - Old',
+            page: false,
+            id: '/components/audio-player-old',
+            description:
               'Used to embed sound content in web and app interfaces.',
             illustration: 'components/audio-player-illustration',
           },
