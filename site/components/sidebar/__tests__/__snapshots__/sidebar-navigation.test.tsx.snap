@@ -373,7 +373,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -557,10 +557,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -580,8 +580,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                           d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -594,10 +594,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                 data-testid="buttonLink"
                 href="/group1/page1"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <span
@@ -605,8 +605,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     >
                       Group 1 Page 1
                     </span>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </a>
             </li>
           </div>
@@ -631,10 +631,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -655,8 +655,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                           d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -685,10 +685,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page1/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -696,8 +696,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                         >
                           Group 2 Page 1 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -709,10 +709,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page1/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -720,8 +720,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                         >
                           Group 2 Page 1 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -751,10 +751,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page2/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -762,8 +762,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                         >
                           Group 2 Page 2 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -775,10 +775,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page2/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -786,8 +786,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                         >
                           Group 2 Page 2 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -975,7 +975,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1017,10 +1017,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
             class="emotion-3"
             href="group1/page1"
           >
-            <div
+            <span
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
                 <span
@@ -1028,8 +1028,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                 >
                   Group 1 Page 1
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-5"
               >
                 <span
@@ -1037,13 +1037,13 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                 >
                    
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-5"
               >
                 <span />
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
         </li>
       </ul>
@@ -1422,7 +1422,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1533,10 +1533,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -1557,8 +1557,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                           d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -1571,10 +1571,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                 data-testid="buttonLink"
                 href="/group1/page1"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <span
@@ -1582,8 +1582,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     >
                       Group 1 Page 1
                     </span>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </a>
             </li>
           </div>
@@ -1608,10 +1608,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -1632,8 +1632,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                           d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -1662,10 +1662,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page1/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -1673,8 +1673,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                         >
                           Group 2 Page 1 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -1686,10 +1686,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page1/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -1697,8 +1697,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                         >
                           Group 2 Page 1 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -1728,10 +1728,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page2/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -1739,8 +1739,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                         >
                           Group 2 Page 2 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -1752,10 +1752,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page2/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -1763,8 +1763,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                         >
                           Group 2 Page 2 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -2228,7 +2228,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -2339,10 +2339,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -2362,8 +2362,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                           d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -2376,10 +2376,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                 data-testid="buttonLink"
                 href="/group1/page1"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <span
@@ -2387,8 +2387,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     >
                       Group 1 Page 1
                     </span>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </a>
             </li>
           </div>
@@ -2413,10 +2413,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -2437,8 +2437,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                           d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -2467,10 +2467,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     data-testid="buttonLink"
                     href="/group2/page1/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -2478,8 +2478,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                         >
                           Group 2 Page 1 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -2491,10 +2491,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     data-testid="buttonLink"
                     href="/group2/page1/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -2502,8 +2502,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                         >
                           Group 2 Page 1 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -2533,10 +2533,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     data-testid="buttonLink"
                     href="/group2/page2/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -2544,8 +2544,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                         >
                           Group 2 Page 2 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -2557,10 +2557,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     data-testid="buttonLink"
                     href="/group2/page2/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -2568,8 +2568,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                         >
                           Group 2 Page 2 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -2757,7 +2757,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -2799,10 +2799,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
             class="emotion-3"
             href="group1/page1"
           >
-            <div
+            <span
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
                 <span
@@ -2810,8 +2810,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                 >
                   Group 1 Page 1
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-5"
               >
                 <span
@@ -2819,13 +2819,13 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                 >
                    
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-5"
               >
                 <span />
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
         </li>
       </ul>

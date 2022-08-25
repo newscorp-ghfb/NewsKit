@@ -1,27 +1,39 @@
 {
   "fontFamily010": {
     "fontFamily": "Times Modern",
-    "cropConfig": {
-      "top": 0,
-      "bottom": 0
-    },
-    "cropAdjustments": {}
+    "fontMetrics": {
+      "400": {
+        "capHeight": 671,
+        "ascent": 695,
+        "descent": -172,
+        "lineGap": 65,
+        "unitsPerEm": 1000
+      }
+    }
   },
   "fontFamily020": {
     "fontFamily": "Times Digital W04 Regular",
-    "cropConfig": {
-      "top": 0,
-      "bottom": 0
-    },
-    "cropAdjustments": {}
+    "fontMetrics": {
+      "400": {
+        "capHeight": 713,
+        "ascent": 992,
+        "descent": -319,
+        "lineGap": 0,
+        "unitsPerEm": 1000
+      }
+    }
   },
   "fontFamily030": {
     "fontFamily": "GillSansMTStd-Medium",
-    "cropConfig": {
-      "top": 0,
-      "bottom": 0
-    },
-    "cropAdjustments": {}
+    "fontMetrics": {
+      "400": {
+        "capHeight": 682,
+        "ascent": 682,
+        "descent": -318,
+        "lineGap": 200,
+        "unitsPerEm": 1000
+      }
+    }
   },
   "fontWeight010": 400,
   "fontWeight020": 500,

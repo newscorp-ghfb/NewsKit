@@ -320,22 +320,20 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
     seo={{
       title: 'SEO Considerations',
       introduction: (
-        <>
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
-            <>
-              Ensure all text, icons, and images are visible in the Accordion so
-              that information can be crawled and indexed.
-            </>
-            <>
-              The Accordion component and its content are rendered to the DOM,
-              but only visible to the user when the panel is open.
-            </>
-          </UnorderedList>
-        </>
+        <UnorderedList
+          markerAlign="start"
+          listItemMarker={IconFilledCircle}
+          overrides={unorderedListOverrides}
+        >
+          <>
+            Ensure all text, icons, and images are visible in the Accordion so
+            that information can be crawled and indexed.
+          </>
+          <>
+            The Accordion component and its content are rendered to the DOM, but
+            only visible to the user when the panel is open.
+          </>
+        </UnorderedList>
       ),
     }}
     componentAPI={{
@@ -539,21 +537,8 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      states: true,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      performance: false,
-      design: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
-      related: ['Link', 'Menu', 'Scroll', 'Tabs', 'Tags', 'Title Bar'],
+      related: ['Link', 'Menu', 'Tabs', 'Tag'],
     }}
   />
 );

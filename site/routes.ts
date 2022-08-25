@@ -284,10 +284,10 @@ export default [
             id: '/theme/theming/using-a-theme',
           },
           {
-            title: 'Component overrides & defaults',
+            title: 'Component defaults',
             illustration: 'theme/component-defaults/hero',
             description:
-              'Each component in NewsKit has defaults that can be overridden to enhance the experience.',
+              'A preselected option that is applied to a component to define its appearance or behaviour.',
             page: true,
             id: '/theme/theming/component-defaults',
           },
@@ -332,7 +332,7 @@ export default [
             page: true,
             id: '/components/form',
             description:
-              'Forms allow users to enter and edit text content into a UI.',
+              'The form component allows users to enter and edit information into a UI using form controls; based on React Hook Form.',
             illustration: 'components/form/hero',
           },
           {

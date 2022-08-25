@@ -1368,10 +1368,10 @@ exports[`Toast Component renders with actions 1`] = `
         data-testid="button"
         type="button"
       >
-        <div
+        <span
           class="emotion-8"
         >
-          <div
+          <span
             class="emotion-9"
           >
             <span
@@ -1379,8 +1379,8 @@ exports[`Toast Component renders with actions 1`] = `
             >
               undo
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
     </div>
   </div>
@@ -2548,10 +2548,10 @@ exports[`Toast Component renders with overrides and all props 1`] = `
         data-testid="button"
         type="button"
       >
-        <div
+        <span
           class="emotion-12"
         >
-          <div
+          <span
             class="emotion-13"
           >
             <span
@@ -2559,8 +2559,8 @@ exports[`Toast Component renders with overrides and all props 1`] = `
             >
               undo
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
     </div>
   </div>

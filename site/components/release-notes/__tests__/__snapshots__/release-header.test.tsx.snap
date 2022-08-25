@@ -325,10 +325,10 @@ exports[`ReleaseHeader renders correctly 1`] = `
           class="emotion-11"
           data-testid="flag"
         >
-          <div
+          <span
             class="emotion-12"
           >
-            <div
+            <span
               class="emotion-3"
             >
               <span
@@ -336,8 +336,8 @@ exports[`ReleaseHeader renders correctly 1`] = `
               >
                 Patch
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </div>
       </span>
     </span>

@@ -1390,8 +1390,8 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 .emotion-23.emotion-23 {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 @media screen {
@@ -1540,6 +1540,10 @@ exports[`Media List renders with feature cardscards 1`] = `
   justify-content: center;
 }
 
+.emotion-35 {
+  margin-bottom: 24px;
+}
+
 .emotion-37 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1633,10 +1637,10 @@ exports[`Media List renders with feature cardscards 1`] = `
                           data-testid="button"
                           type="button"
                         >
-                          <div
+                          <span
                             class="emotion-19"
                           >
-                            <div
+                            <span
                               class="emotion-20"
                             >
                               <span
@@ -1644,8 +1648,8 @@ exports[`Media List renders with feature cardscards 1`] = `
                               >
                                 needHelpCard
                               </span>
-                            </div>
-                            <div
+                            </span>
+                            <span
                               class="emotion-20"
                             >
                               <svg
@@ -1664,8 +1668,8 @@ exports[`Media List renders with feature cardscards 1`] = `
                                   d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                                 />
                               </svg>
-                            </div>
-                          </div>
+                            </span>
+                          </span>
                         </button>
                       </div>
                     </div>
@@ -1708,7 +1712,7 @@ exports[`Media List renders with feature cardscards 1`] = `
                           </section>
                         </div>
                         <div
-                          class="emotion-15"
+                          class="emotion-35"
                         >
                           <p
                             class="emotion-16"
@@ -1725,10 +1729,10 @@ exports[`Media List renders with feature cardscards 1`] = `
                           data-testid="button"
                           type="button"
                         >
-                          <div
+                          <span
                             class="emotion-19"
                           >
-                            <div
+                            <span
                               class="emotion-20"
                             >
                               <span
@@ -1736,8 +1740,8 @@ exports[`Media List renders with feature cardscards 1`] = `
                               >
                                 needHelpCard
                               </span>
-                            </div>
-                            <div
+                            </span>
+                            <span
                               class="emotion-20"
                             >
                               <svg
@@ -1756,8 +1760,8 @@ exports[`Media List renders with feature cardscards 1`] = `
                                   d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                                 />
                               </svg>
-                            </div>
-                          </div>
+                            </span>
+                          </span>
                         </button>
                       </div>
                     </div>
@@ -1816,10 +1820,10 @@ exports[`Media List renders with feature cardscards 1`] = `
                         data-testid="button"
                         type="button"
                       >
-                        <div
+                        <span
                           class="emotion-19"
                         >
-                          <div
+                          <span
                             class="emotion-20"
                           >
                             <span
@@ -1827,8 +1831,8 @@ exports[`Media List renders with feature cardscards 1`] = `
                             >
                               needHelpCard
                             </span>
-                          </div>
-                          <div
+                          </span>
+                          <span
                             class="emotion-20"
                           >
                             <svg
@@ -1847,8 +1851,8 @@ exports[`Media List renders with feature cardscards 1`] = `
                                 d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                               />
                             </svg>
-                          </div>
-                        </div>
+                          </span>
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -2317,10 +2321,10 @@ exports[`Media List renders with usage cards 1`] = `
                 class="emotion-6"
                 data-testid="flag"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <svg
@@ -2339,8 +2343,8 @@ exports[`Media List renders with usage cards 1`] = `
                         d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </div>
             </div>
             <div
@@ -2400,10 +2404,10 @@ exports[`Media List renders with usage cards 1`] = `
                 class="emotion-24"
                 data-testid="flag"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <svg
@@ -2422,8 +2426,8 @@ exports[`Media List renders with usage cards 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </div>
             </div>
             <div

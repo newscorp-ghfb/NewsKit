@@ -19,8 +19,8 @@ const StyledText = styled.h2<StandfirstProps>`
 const ThemelessStandfirst = React.forwardRef<
   HTMLHeadingElement,
   StandfirstProps
->(({children, as, overrides = {}}, ref) => (
-  <StyledText ref={ref} as={as} overrides={overrides}>
+>(({children, as, overrides = {}, ...rest}, ref) => (
+  <StyledText ref={ref} as={as} overrides={overrides} {...rest}>
     {children}
   </StyledText>
 ));

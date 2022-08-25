@@ -520,10 +520,10 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -542,8 +542,8 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -1067,10 +1067,10 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
               data-testid="button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <svg
@@ -1089,8 +1089,8 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                     />
                   </svg>
-                </div>
-              </div>
+                </span>
+              </span>
             </button>
           </div>
         </div>
@@ -1620,10 +1620,10 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
               data-testid="button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <svg
@@ -1642,8 +1642,8 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                     />
                   </svg>
-                </div>
-              </div>
+                </span>
+              </span>
             </button>
           </div>
         </div>
@@ -2171,10 +2171,10 @@ exports[`Drawer render inline-drawer 1`] = `
               data-testid="button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <svg
@@ -2193,8 +2193,8 @@ exports[`Drawer render inline-drawer 1`] = `
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                     />
                   </svg>
-                </div>
-              </div>
+                </span>
+              </span>
             </button>
           </div>
         </div>
@@ -2617,10 +2617,10 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
                 tabindex="-1"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
                     <svg
@@ -2639,8 +2639,8 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -3175,10 +3175,10 @@ exports[`Drawer renders default 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -3197,8 +3197,8 @@ exports[`Drawer renders default 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -3650,10 +3650,10 @@ exports[`Drawer renders drawer with overrides 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <svg
@@ -3672,8 +3672,8 @@ exports[`Drawer renders drawer with overrides 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -4238,10 +4238,10 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
                       <svg
@@ -4260,8 +4260,8 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
               <span
@@ -4794,10 +4794,10 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <svg
@@ -4816,8 +4816,8 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -5324,10 +5324,10 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
                     <svg
@@ -5346,8 +5346,8 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -5882,10 +5882,10 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -5904,8 +5904,8 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -6440,10 +6440,10 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -6462,8 +6462,8 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -6998,10 +6998,10 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -7020,8 +7020,8 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -7556,10 +7556,10 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -7578,8 +7578,8 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -8452,10 +8452,10 @@ exports[`Drawer renders without header 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <svg
@@ -8474,8 +8474,8 @@ exports[`Drawer renders without header 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -9255,10 +9255,10 @@ exports[`Drawer renders without overlay 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-8"
                 >
-                  <div
+                  <span
                     class="emotion-9"
                   >
                     <svg
@@ -9277,8 +9277,8 @@ exports[`Drawer renders without overlay 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -9781,10 +9781,10 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
                     <svg
@@ -9803,8 +9803,8 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -10221,10 +10221,10 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
                 tabindex="-1"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
                     <svg
@@ -10243,8 +10243,8 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>

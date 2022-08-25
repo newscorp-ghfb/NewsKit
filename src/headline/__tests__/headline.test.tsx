@@ -10,6 +10,15 @@ describe('headline', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders with additional HTML attributes', () => {
+    const fragment = renderToFragmentWithTheme(Headline, {
+      children: 'test',
+      id: 'headline-id',
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders correctly with default props, with heading and kicker', () => {
     const fragment = renderToFragmentWithTheme(Headline, {
       kickerText: 'this is kicker',
