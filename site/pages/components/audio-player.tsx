@@ -294,6 +294,20 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    behaviors={{
+      introduction:
+        'The following guidance describes how the Audio Player behaves.',
+      cards: [
+        {
+          title: 'Buffering',
+          description:
+            'The seek bar indicates audio track duration and buffering, and controls the track position. Also known as an audio ‘scrubber’.',
+          media: getIllustrationComponent(
+            'components/audio-player/behaviours/buffering',
+          ),
+        },
+      ],
+    }}
   />
 );
 
