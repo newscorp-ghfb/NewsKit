@@ -20,7 +20,18 @@ The Stack component is a low-level foundational component used to layout items i
 The Stack has a number of props to facilitate a variety of uses. Custom and required props are detailed below:
 
 <LegacyBlock marginTop="sizing050">
-  <Prop name="flow" type="MQ<Flow>" default="vertical">
+  <Prop
+    name="flow"
+    type="'vertical-left'
+  | 'vertical-center'
+  | 'vertical-right'
+  | 'vertical-stretch'
+  | 'horizontal-top'
+  | 'horizontal-center'
+  | 'horizontal-bottom'
+  | 'horizontal-stretch'"
+    default="vertical"
+  >
     If provided, defines the flow direction of the stack contents.
   </Prop>
   <Prop name="inline" type="MQ<boolean>">
@@ -28,7 +39,12 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
   </Prop>
   <Prop
     name="stackDistribution"
-    type="MQ<StackDistribution>"
+    type="'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'space-around'
+  | 'space-between'
+  | 'space-evenly'>"
     default="'space-around'"
   >
     If provided, defines the type of spacing used to layout the items in the
