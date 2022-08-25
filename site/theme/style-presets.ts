@@ -268,6 +268,16 @@ export const stylePresets = {
       whiteSpace: 'nowrap',
     },
   },
+  flagSolidPrimary: {
+    base: {
+      color: '{{colors.inkSubtle}}',
+      backgroundColor: '{{colors.interface020}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interface020}}',
+    },
+  },
   flagBrand: {
     base: {
       color: '{{colors.inkInverse}}',
