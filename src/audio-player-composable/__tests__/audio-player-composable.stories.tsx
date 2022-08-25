@@ -451,7 +451,7 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
       alignItems="center"
     >
       <GridLayoutItem column="1/2" row="1/5">
-        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+        <AudioPlayerPlayPauseButton size="small" />
       </GridLayoutItem>
       <GridLayoutItem column="2/3" row="4/5">
         <AudioPlayerVolumeControl layout="collapsed" />
@@ -477,7 +477,7 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
                 stylePreset: 'buttonMinimalPrimary',
                 minWidth: '90px',
               }}
-              size={ButtonSize.Medium}
+              size="medium"
             >
               <IconFilledSlowMotionVideo />
               <span>{playbackSpeed}x</span>
@@ -488,7 +488,7 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
                 stylePreset: 'buttonOutlinedSecondary',
                 minWidth: '52px',
               }}
-              size={ButtonSize.Small}
+              size="small"
             >
               <span>{playbackSpeed}x</span>
             </Button>
@@ -599,7 +599,7 @@ export const AudioSubComponents = () => (
           <AudioPlayerPlaybackSpeedControl>
             <Button
               overrides={{stylePreset: 'buttonOutlinedSecondary'}}
-              size={ButtonSize.Small}
+              size="small"
             >
               Speed
             </Button>
