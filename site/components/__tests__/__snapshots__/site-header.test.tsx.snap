@@ -682,7 +682,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-32 {
+    grid-template-columns: auto 1fr auto auto 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .emotion-32 {
     grid-template-columns: 276px 1fr auto auto 80px;
   }
@@ -811,7 +817,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   min-height: 80px;
   width: 100%;
   padding: 12px 16px;
-  margin-inline: 10px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -827,7 +832,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-style: solid;
   margin: 0;
   cursor: pointer;
-  margin-inline: 10px;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -841,15 +845,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   text-align: center;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
   .emotion-42 {
-    padding-inline: 3px;
+    margin-inline: 10px;
+    padding-inline: 16px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-42 {
-    padding-inline: 16px;
+    padding-inline: 3px;
   }
 }
 
@@ -895,15 +900,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
   .emotion-42 {
-    padding-inline: 3px;
+    margin-inline: 10px;
+    padding-inline: 16px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-42 {
-    padding-inline: 16px;
+    padding-inline: 3px;
   }
 }
 
@@ -912,7 +918,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -949,7 +955,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   min-height: 80px;
   width: 100%;
   padding: 12px 16px;
-  margin-inline: 10px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -965,7 +970,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-style: solid;
   margin: 0;
   cursor: pointer;
-  margin-inline: 10px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -973,15 +977,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   text-align: center;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
   .emotion-47 {
-    padding-inline: 3px;
+    margin-inline: 10px;
+    padding-inline: 16px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-47 {
-    padding-inline: 16px;
+    padding-inline: 3px;
   }
 }
 
@@ -1027,15 +1032,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
   .emotion-47 {
-    padding-inline: 3px;
+    margin-inline: 10px;
+    padding-inline: 16px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-47 {
-    padding-inline: 16px;
+    padding-inline: 3px;
   }
 }
 
@@ -2418,7 +2424,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-32 {
+    grid-template-columns: auto 1fr auto auto 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .emotion-32 {
     grid-template-columns: 276px 1fr auto auto 80px;
   }
@@ -2547,7 +2559,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   min-height: 80px;
   width: 100%;
   padding: 12px 16px;
-  margin-inline: 10px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2563,7 +2574,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-style: solid;
   margin: 0;
   cursor: pointer;
-  margin-inline: 10px;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2577,15 +2587,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   text-align: center;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
   .emotion-42 {
-    padding-inline: 3px;
+    margin-inline: 10px;
+    padding-inline: 16px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-42 {
-    padding-inline: 16px;
+    padding-inline: 3px;
   }
 }
 
@@ -2631,15 +2642,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
   .emotion-42 {
-    padding-inline: 3px;
+    margin-inline: 10px;
+    padding-inline: 16px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-42 {
-    padding-inline: 16px;
+    padding-inline: 3px;
   }
 }
 
@@ -2648,7 +2660,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -2685,7 +2697,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   min-height: 80px;
   width: 100%;
   padding: 12px 16px;
-  margin-inline: 10px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2701,7 +2712,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-style: solid;
   margin: 0;
   cursor: pointer;
-  margin-inline: 10px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -2709,15 +2719,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   text-align: center;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
   .emotion-47 {
-    padding-inline: 3px;
+    margin-inline: 10px;
+    padding-inline: 16px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-47 {
-    padding-inline: 16px;
+    padding-inline: 3px;
   }
 }
 
@@ -2763,15 +2774,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
   .emotion-47 {
-    padding-inline: 3px;
+    margin-inline: 10px;
+    padding-inline: 16px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-47 {
-    padding-inline: 16px;
+    padding-inline: 3px;
   }
 }
 
@@ -4154,7 +4166,13 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-32 {
+    grid-template-columns: auto 1fr auto auto 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .emotion-32 {
     grid-template-columns: 276px 1fr auto auto 80px;
   }
@@ -4283,7 +4301,6 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   min-height: 80px;
   width: 100%;
   padding: 12px 16px;
-  margin-inline: 10px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4299,7 +4316,6 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   border-style: solid;
   margin: 0;
   cursor: pointer;
-  margin-inline: 10px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -4307,15 +4323,16 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   text-align: center;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
   .emotion-42 {
-    padding-inline: 3px;
+    margin-inline: 10px;
+    padding-inline: 16px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-42 {
-    padding-inline: 16px;
+    padding-inline: 3px;
   }
 }
 
@@ -4361,15 +4378,16 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
   .emotion-42 {
-    padding-inline: 3px;
+    margin-inline: 10px;
+    padding-inline: 16px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-42 {
-    padding-inline: 16px;
+    padding-inline: 3px;
   }
 }
 
@@ -4378,7 +4396,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
