@@ -1916,10 +1916,10 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           data-testid="buttonLink"
                           href="/components/switch"
                         >
-                          <div
+                          <span
                             class="emotion-11"
                           >
-                            <div
+                            <span
                               class="emotion-12"
                             >
                               <span
@@ -1927,8 +1927,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               >
                                 Switch
                               </span>
-                            </div>
-                          </div>
+                            </span>
+                          </span>
                         </a>
                       </li>
                       <li
@@ -5868,10 +5868,10 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                 href="/components/switch"
                                 tabindex="-1"
                               >
-                                <div
+                                <span
                                   class="emotion-9"
                                 >
-                                  <div
+                                  <span
                                     class="emotion-10"
                                   >
                                     <span
@@ -5879,8 +5879,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                     >
                                       Switch
                                     </span>
-                                  </div>
-                                </div>
+                                  </span>
+                                </span>
                               </a>
                             </li>
                             <li
@@ -9659,10 +9659,10 @@ exports[`Sidebar renders correctly when open 1`] = `
                           data-testid="buttonLink"
                           href="/components/switch"
                         >
-                          <div
+                          <span
                             class="emotion-11"
                           >
-                            <div
+                            <span
                               class="emotion-12"
                             >
                               <span
@@ -9670,8 +9670,8 @@ exports[`Sidebar renders correctly when open 1`] = `
                               >
                                 Switch
                               </span>
-                            </div>
-                          </div>
+                            </span>
+                          </span>
                         </a>
                       </li>
                       <li
@@ -13566,10 +13566,10 @@ exports[`Sidebar renders correctly when open 1`] = `
                                 data-testid="buttonLink"
                                 href="/components/switch"
                               >
-                                <div
+                                <span
                                   class="emotion-9"
                                 >
-                                  <div
+                                  <span
                                     class="emotion-10"
                                   >
                                     <span
@@ -13577,8 +13577,8 @@ exports[`Sidebar renders correctly when open 1`] = `
                                     >
                                       Switch
                                     </span>
-                                  </div>
-                                </div>
+                                  </span>
+                                </span>
                               </a>
                             </li>
                             <li
