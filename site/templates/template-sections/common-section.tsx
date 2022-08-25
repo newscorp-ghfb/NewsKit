@@ -33,7 +33,7 @@ export const CommonSection: React.FC<CommonSectionProps> = ({
         <Grid xsMargin="space000" xsRowGutter="space000">
           <SectionIntroduction
             subHeadingSpaceStack={
-              children ? {xs: 'space080', lg: 'space100'} : 'space000'
+              children || media ? {xs: 'space080', lg: 'space100'} : 'space000'
             }
             title={title}
             lastItem={lastItem}

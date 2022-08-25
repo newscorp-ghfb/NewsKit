@@ -2879,10 +2879,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -2890,8 +2890,8 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
               <div
@@ -2902,10 +2902,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -2913,8 +2913,8 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -3332,10 +3332,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -3343,8 +3343,8 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
               <div
@@ -3355,10 +3355,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -3366,8 +3366,8 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -3786,10 +3786,10 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -3797,8 +3797,8 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -4220,10 +4220,10 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -4231,8 +4231,8 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -5359,10 +5359,10 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -5370,8 +5370,8 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
               <div
@@ -5383,10 +5383,10 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
                   data-testid="banner-close-button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <svg
@@ -5405,8 +5405,8 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -5923,10 +5923,10 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
                   data-testid="banner-close-button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -5934,8 +5934,8 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
                       >
                         Close
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
               <div
@@ -5946,10 +5946,10 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -5957,8 +5957,8 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -6377,10 +6377,10 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
                   data-testid="banner-close-button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <svg
@@ -6399,8 +6399,8 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -6827,10 +6827,10 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
                   data-testid="banner-close-button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -6838,8 +6838,8 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
                       >
                         Close
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -7304,10 +7304,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     data-testid="button"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
-                      <div
+                      <span
                         class="emotion-13"
                       >
                         <span
@@ -7315,8 +7315,8 @@ exports[`renders grid and cell overrides on banner 1`] = `
                         >
                           CTA Button
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
                 <div
@@ -7327,10 +7327,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     data-testid="button"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
-                      <div
+                      <span
                         class="emotion-13"
                       >
                         <span
@@ -7338,8 +7338,8 @@ exports[`renders grid and cell overrides on banner 1`] = `
                         >
                           CTA Button
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -7797,10 +7797,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     data-testid="button"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
-                      <div
+                      <span
                         class="emotion-13"
                       >
                         <span
@@ -7808,8 +7808,8 @@ exports[`renders grid and cell overrides on banner 1`] = `
                         >
                           CTA Button
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
                 <div
@@ -7820,10 +7820,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     data-testid="button"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
-                      <div
+                      <span
                         class="emotion-13"
                       >
                         <span
@@ -7831,8 +7831,8 @@ exports[`renders grid and cell overrides on banner 1`] = `
                         >
                           CTA Button
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
               </div>

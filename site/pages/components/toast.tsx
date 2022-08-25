@@ -1,9 +1,10 @@
 import React from 'react';
-import {Link, Toast, ToastProps, Button, styled, toNewsKitIcon} from 'newskit';
+import {Toast, ToastProps, Button, styled, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
+import {Link} from '../../components/link';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Mono} from '../../components/flags';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';

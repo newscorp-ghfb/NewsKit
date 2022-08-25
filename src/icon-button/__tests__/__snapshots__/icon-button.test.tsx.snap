@@ -122,10 +122,10 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
     data-testid="button"
     type="button"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -140,8 +140,8 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
             cy="50%"
           />
         </svg>
-      </div>
-    </div>
+      </span>
+    </span>
   </button>
 </DocumentFragment>
 `;
@@ -298,10 +298,10 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
     data-testid="button"
     type="button"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -320,8 +320,8 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-    </div>
+      </span>
+    </span>
   </button>
 </DocumentFragment>
 `;
@@ -479,10 +479,10 @@ exports[`IconButton renders Large Icon Button 1`] = `
     data-testid="button"
     type="button"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -501,8 +501,8 @@ exports[`IconButton renders Large Icon Button 1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-    </div>
+      </span>
+    </span>
   </button>
 </DocumentFragment>
 `;
@@ -660,10 +660,10 @@ exports[`IconButton renders Medium Icon Button 1`] = `
     data-testid="button"
     type="button"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -682,8 +682,8 @@ exports[`IconButton renders Medium Icon Button 1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-    </div>
+      </span>
+    </span>
   </button>
 </DocumentFragment>
 `;
@@ -841,10 +841,10 @@ exports[`IconButton renders Small Icon Button 1`] = `
     data-testid="button"
     type="button"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -863,8 +863,8 @@ exports[`IconButton renders Small Icon Button 1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-    </div>
+      </span>
+    </span>
   </button>
 </DocumentFragment>
 `;
@@ -1022,10 +1022,10 @@ exports[`IconButton renders icon button link when href passed 1`] = `
     data-testid="buttonLink"
     href="http://localhost:6006"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -1044,8 +1044,8 @@ exports[`IconButton renders icon button link when href passed 1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-    </div>
+      </span>
+    </span>
   </a>
 </DocumentFragment>
 `;
@@ -1207,10 +1207,10 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
     data-testid="button"
     type="button"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -1229,8 +1229,8 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-    </div>
+      </span>
+    </span>
   </button>
 </DocumentFragment>
 `;
@@ -1393,10 +1393,10 @@ exports[`IconButton renders with different style preset 1`] = `
     data-testid="button"
     type="button"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -1415,8 +1415,8 @@ exports[`IconButton renders with different style preset 1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-    </div>
+      </span>
+    </span>
   </button>
 </DocumentFragment>
 `;

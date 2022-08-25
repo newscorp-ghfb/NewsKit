@@ -318,10 +318,10 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
         data-testid="button"
         type="button"
       >
-        <div
+        <span
           class="emotion-6"
         >
-          <div
+          <span
             class="emotion-7"
           >
             <span
@@ -329,8 +329,8 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
             >
               Default button
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
     </div>
   </div>
@@ -655,10 +655,10 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
         data-testid="button"
         type="button"
       >
-        <div
+        <span
           class="emotion-6"
         >
-          <div
+          <span
             class="emotion-7"
           >
             <span
@@ -666,8 +666,8 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
             >
               Default button
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
     </div>
   </div>

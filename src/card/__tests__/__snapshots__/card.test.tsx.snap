@@ -508,10 +508,10 @@ exports[`Card renders actions section with given component 1`] = `
             class="emotion-7"
             data-testid="tag"
           >
-            <div
+            <span
               class="emotion-8"
             >
-              <div
+              <span
                 class="emotion-9"
               >
                 <span
@@ -519,18 +519,18 @@ exports[`Card renders actions section with given component 1`] = `
                 >
                   Tag
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </div>
           <button
             class="emotion-11"
             data-testid="button"
             type="button"
           >
-            <div
+            <span
               class="emotion-12"
             >
-              <div
+              <span
                 class="emotion-13"
               >
                 <span
@@ -538,8 +538,8 @@ exports[`Card renders actions section with given component 1`] = `
                 >
                   Button
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -939,10 +939,10 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
             class="emotion-7"
             data-testid="tag"
           >
-            <div
+            <span
               class="emotion-8"
             >
-              <div
+              <span
                 class="emotion-9"
               >
                 <span
@@ -950,18 +950,18 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
                 >
                   Tag
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </div>
           <button
             class="emotion-11"
             data-testid="button"
             type="button"
           >
-            <div
+            <span
               class="emotion-12"
             >
-              <div
+              <span
                 class="emotion-13"
               >
                 <span
@@ -969,8 +969,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
                 >
                   Button
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -1370,10 +1370,10 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
             class="emotion-7"
             data-testid="tag"
           >
-            <div
+            <span
               class="emotion-8"
             >
-              <div
+              <span
                 class="emotion-9"
               >
                 <span
@@ -1381,18 +1381,18 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
                 >
                   Tag
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </div>
           <button
             class="emotion-11"
             data-testid="button"
             type="button"
           >
-            <div
+            <span
               class="emotion-12"
             >
-              <div
+              <span
                 class="emotion-13"
               >
                 <span
@@ -1400,8 +1400,8 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
                 >
                   Button
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -3116,10 +3116,10 @@ exports[`Card renders with card items 1`] = `
             class="emotion-11"
             data-testid="tag"
           >
-            <div
+            <span
               class="emotion-12"
             >
-              <div
+              <span
                 class="emotion-13"
               >
                 <span
@@ -3127,18 +3127,18 @@ exports[`Card renders with card items 1`] = `
                 >
                   Tag
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </div>
           <button
             class="emotion-15"
             data-testid="button"
             type="button"
           >
-            <div
+            <span
               class="emotion-16"
             >
-              <div
+              <span
                 class="emotion-17"
               >
                 <span
@@ -3146,8 +3146,8 @@ exports[`Card renders with card items 1`] = `
                 >
                   Button
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -5156,10 +5156,10 @@ exports[`Card with href renders correctly with actions 1`] = `
             class="emotion-8"
             data-testid="tag"
           >
-            <div
+            <span
               class="emotion-9"
             >
-              <div
+              <span
                 class="emotion-10"
               >
                 <span
@@ -5167,18 +5167,18 @@ exports[`Card with href renders correctly with actions 1`] = `
                 >
                   Tag
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </div>
           <button
             class="emotion-12"
             data-testid="button"
             type="button"
           >
-            <div
+            <span
               class="emotion-13"
             >
-              <div
+              <span
                 class="emotion-14"
               >
                 <span
@@ -5186,8 +5186,8 @@ exports[`Card with href renders correctly with actions 1`] = `
                 >
                   Button
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -7046,10 +7046,10 @@ exports[`CardInset renders with card items 1`] = `
             class="emotion-11"
             data-testid="tag"
           >
-            <div
+            <span
               class="emotion-12"
             >
-              <div
+              <span
                 class="emotion-13"
               >
                 <span
@@ -7057,18 +7057,18 @@ exports[`CardInset renders with card items 1`] = `
                 >
                   Tag
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </div>
           <button
             class="emotion-15"
             data-testid="button"
             type="button"
           >
-            <div
+            <span
               class="emotion-16"
             >
-              <div
+              <span
                 class="emotion-17"
               >
                 <span
@@ -7076,8 +7076,8 @@ exports[`CardInset renders with card items 1`] = `
                 >
                   Button
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>

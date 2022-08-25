@@ -458,10 +458,10 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-15"
                   >
-                    <div
+                    <span
                       class="emotion-16"
                     >
                       <span
@@ -469,8 +469,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
                       >
                         Read more
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-16"
                     >
                       <svg
@@ -489,8 +489,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
                           d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </span>
             </a>
@@ -1002,10 +1002,10 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-16"
                   >
-                    <div
+                    <span
                       class="emotion-17"
                     >
                       <span
@@ -1013,8 +1013,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
                       >
                         Read more
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-17"
                     >
                       <svg
@@ -1033,8 +1033,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
                           d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </span>
             </a>
@@ -1666,10 +1666,10 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-15"
                   >
-                    <div
+                    <span
                       class="emotion-16"
                     >
                       <span
@@ -1677,8 +1677,8 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
                       >
                         Read more
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-16"
                     >
                       <svg
@@ -1697,8 +1697,8 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
                           d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -1758,10 +1758,10 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-15"
                   >
-                    <div
+                    <span
                       class="emotion-16"
                     >
                       <span
@@ -1769,8 +1769,8 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
                       >
                         Read more
                       </span>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-16"
                     >
                       <svg
@@ -1789,8 +1789,8 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
                           d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -2726,10 +2726,10 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-12"
                 >
-                  <div
+                  <span
                     class="emotion-13"
                   >
                     <span
@@ -2737,8 +2737,8 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
                     >
                       Read more
                     </span>
-                  </div>
-                  <div
+                  </span>
+                  <span
                     class="emotion-13"
                   >
                     <svg
@@ -2757,8 +2757,8 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
                         d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -4676,10 +4676,10 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-12"
                 >
-                  <div
+                  <span
                     class="emotion-13"
                   >
                     <span
@@ -4687,8 +4687,8 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
                     >
                       Read more
                     </span>
-                  </div>
-                  <div
+                  </span>
+                  <span
                     class="emotion-13"
                   >
                     <svg
@@ -4707,8 +4707,8 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
                         d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </span>
           </a>

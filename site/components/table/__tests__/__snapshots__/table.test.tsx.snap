@@ -287,10 +287,10 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <svg
@@ -309,8 +309,8 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
                       d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
                     />
                   </svg>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
         </tr>
@@ -790,10 +790,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -801,8 +801,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     1
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -812,10 +812,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -823,8 +823,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     1
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -843,10 +843,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -854,8 +854,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     2
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -865,10 +865,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -876,8 +876,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     2
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -896,10 +896,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -907,8 +907,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     3
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -918,10 +918,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -929,8 +929,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     3
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -1283,14 +1283,14 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1298,21 +1298,21 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     type
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1320,9 +1320,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     default
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
         </tr>
         <tr
@@ -1336,14 +1336,14 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1351,21 +1351,21 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     type
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1373,9 +1373,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     default
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
         </tr>
       </tbody>
@@ -1605,14 +1605,14 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1620,21 +1620,21 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     type
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1642,9 +1642,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     default
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
         </tr>
         <tr
@@ -1658,14 +1658,14 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1673,21 +1673,21 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     type
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1695,9 +1695,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     default
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
         </tr>
       </tbody>

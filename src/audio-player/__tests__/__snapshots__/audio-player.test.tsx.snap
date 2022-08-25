@@ -1064,10 +1064,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1082,8 +1082,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -1095,10 +1095,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1114,8 +1114,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -1127,10 +1127,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1146,8 +1146,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -1160,10 +1160,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1182,8 +1182,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -1196,10 +1196,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1218,8 +1218,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -1246,10 +1246,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1268,8 +1268,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -1311,10 +1311,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1333,8 +1333,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -2433,10 +2433,10 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -2451,8 +2451,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -2471,10 +2471,10 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -2493,8 +2493,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -2507,10 +2507,10 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -2529,8 +2529,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -2557,10 +2557,10 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -2579,8 +2579,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -2622,10 +2622,10 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -2644,8 +2644,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -3680,10 +3680,10 @@ exports[`Audio Player hides volume control as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -3698,8 +3698,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -3711,10 +3711,10 @@ exports[`Audio Player hides volume control as expected 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -3730,8 +3730,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -3743,10 +3743,10 @@ exports[`Audio Player hides volume control as expected 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -3762,8 +3762,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -3776,10 +3776,10 @@ exports[`Audio Player hides volume control as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -3798,8 +3798,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -3812,10 +3812,10 @@ exports[`Audio Player hides volume control as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -3834,8 +3834,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -4821,10 +4821,10 @@ exports[`Audio Player live player renders as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -4839,8 +4839,8 @@ exports[`Audio Player live player renders as expected 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -4879,10 +4879,10 @@ exports[`Audio Player live player renders as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -4901,8 +4901,8 @@ exports[`Audio Player live player renders as expected 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -4944,10 +4944,10 @@ exports[`Audio Player live player renders as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -4966,8 +4966,8 @@ exports[`Audio Player live player renders as expected 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -4995,10 +4995,10 @@ exports[`Audio Player live player renders as expected 1`] = `
                     data-testid="audio-player-popout"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
-                      <div
+                      <span
                         class="emotion-12"
                       >
                         <svg
@@ -5017,8 +5017,8 @@ exports[`Audio Player live player renders as expected 1`] = `
                             d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -5153,10 +5153,10 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   data-testid="audio-player-play-button"
   type="button"
 >
-  <div
+  <span
     class="emotion-1"
   >
-    <div
+    <span
       class="emotion-2"
     >
       <svg
@@ -5171,8 +5171,8 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
           cy="50%"
         />
       </svg>
-    </div>
-  </div>
+    </span>
+  </span>
 </button>
 `;
 
@@ -5329,10 +5329,10 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
   data-testid="audio-player-play-button"
   type="button"
 >
-  <div
+  <span
     class="emotion-1"
   >
-    <div
+    <span
       class="emotion-2"
     >
       <svg
@@ -5351,8 +5351,8 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
           d="M8 5v14l11-7z"
         />
       </svg>
-    </div>
-  </div>
+    </span>
+  </span>
 </button>
 `;
 
@@ -5478,10 +5478,10 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   data-testid="audio-player-play-button"
   type="button"
 >
-  <div
+  <span
     class="emotion-1"
   >
-    <div
+    <span
       class="emotion-2"
     >
       <svg
@@ -5496,8 +5496,8 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
           cy="50%"
         />
       </svg>
-    </div>
-  </div>
+    </span>
+  </span>
 </button>
 `;
 
@@ -6605,10 +6605,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6627,8 +6627,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               d="M8 5v14l11-7z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -6640,10 +6640,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6659,8 +6659,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -6672,10 +6672,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6691,8 +6691,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -6704,10 +6704,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       data-testid="audio-player-skip-previous"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6726,8 +6726,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -6739,10 +6739,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       data-testid="audio-player-skip-next"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6761,8 +6761,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -6789,10 +6789,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6811,8 +6811,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -6854,10 +6854,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6876,8 +6876,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -8219,10 +8219,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8237,8 +8237,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -8250,10 +8250,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8269,8 +8269,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -8282,10 +8282,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8301,8 +8301,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -8315,10 +8315,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8337,8 +8337,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -8351,10 +8351,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8373,8 +8373,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -8401,10 +8401,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8423,8 +8423,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -8466,10 +8466,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8488,8 +8488,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -9700,10 +9700,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9718,8 +9718,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -9731,10 +9731,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9750,8 +9750,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -9763,10 +9763,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9782,8 +9782,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -9796,10 +9796,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9818,8 +9818,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -9832,10 +9832,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9854,8 +9854,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -9882,10 +9882,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9904,8 +9904,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -9947,10 +9947,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9969,8 +9969,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -11183,10 +11183,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11201,8 +11201,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -11214,10 +11214,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11233,8 +11233,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -11246,10 +11246,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11265,8 +11265,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -11279,10 +11279,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11301,8 +11301,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -11315,10 +11315,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11337,8 +11337,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -11365,10 +11365,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11387,8 +11387,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -11430,10 +11430,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11452,8 +11452,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -12604,10 +12604,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12622,8 +12622,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -12635,10 +12635,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12654,8 +12654,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -12667,10 +12667,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12686,8 +12686,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -12700,10 +12700,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12722,8 +12722,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -12736,10 +12736,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12758,8 +12758,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -12786,10 +12786,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12808,8 +12808,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -12851,10 +12851,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12873,8 +12873,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>

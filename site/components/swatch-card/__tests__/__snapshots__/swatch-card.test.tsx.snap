@@ -146,10 +146,10 @@ exports[`SwatchCard renders with inkBase 1`] = `
         class="emotion-2"
         data-testid="flag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -157,8 +157,8 @@ exports[`SwatchCard renders with inkBase 1`] = `
             >
               AAA
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </div>
   </div>

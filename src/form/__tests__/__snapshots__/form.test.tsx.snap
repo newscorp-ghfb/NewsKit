@@ -362,10 +362,10 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
     data-testid="submit-button"
     type="submit"
   >
-    <div
+    <span
       class="emotion-16"
     >
-      <div
+      <span
         class="emotion-17"
       >
         <span
@@ -373,8 +373,8 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
         >
           Submit
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </button>
 </form>
 `;
@@ -796,10 +796,10 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-20"
       >
-        <div
+        <span
           class="emotion-21"
         >
           <span
@@ -807,8 +807,8 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -1272,10 +1272,10 @@ exports[`Form renders with error and with submit validation and revalidation mod
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-22"
       >
-        <div
+        <span
           class="emotion-23"
         >
           <span
@@ -1283,8 +1283,8 @@ exports[`Form renders with error and with submit validation and revalidation mod
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -1815,10 +1815,10 @@ exports[`Form renders with error on blur 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-19"
       >
-        <div
+        <span
           class="emotion-20"
         >
           <span
@@ -1826,8 +1826,8 @@ exports[`Form renders with error on blur 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -2291,10 +2291,10 @@ exports[`Form renders with error on submit 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-22"
       >
-        <div
+        <span
           class="emotion-23"
         >
           <span
@@ -2302,8 +2302,8 @@ exports[`Form renders with error on submit 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -2834,10 +2834,10 @@ exports[`Form renders with error with 2 onBlur 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-19"
       >
-        <div
+        <span
           class="emotion-20"
         >
           <span
@@ -2845,8 +2845,8 @@ exports[`Form renders with error with 2 onBlur 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -3643,10 +3643,10 @@ exports[`Form renders with nested inputs 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-16"
       >
-        <div
+        <span
           class="emotion-17"
         >
           <span
@@ -3654,8 +3654,8 @@ exports[`Form renders with nested inputs 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -4024,10 +4024,10 @@ exports[`Form renders with onBlur validation 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-16"
       >
-        <div
+        <span
           class="emotion-17"
         >
           <span
@@ -4035,8 +4035,8 @@ exports[`Form renders with onBlur validation 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -9301,10 +9301,10 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-21"
       >
-        <div
+        <span
           class="emotion-22"
         >
           <span
@@ -9312,8 +9312,8 @@ exports[`FormInput renders with error and with submit validation and revalidatio
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -10027,10 +10027,10 @@ exports[`FormInput renders with nested inputs 1`] = `
     data-testid="submit-button"
     type="submit"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -10038,8 +10038,8 @@ exports[`FormInput renders with nested inputs 1`] = `
         >
           Submit
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </button>
 </DocumentFragment>
 `;

@@ -1225,10 +1225,10 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-3"
             >
               <span
@@ -1236,8 +1236,8 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -1657,10 +1657,10 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-3"
             >
               <span
@@ -1668,8 +1668,8 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -2084,10 +2084,10 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-3"
             >
               <span
@@ -2095,8 +2095,8 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -2511,10 +2511,10 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-3"
             >
               <span
@@ -2522,8 +2522,8 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -3001,10 +3001,10 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-14"
             >
               <span
@@ -3012,8 +3012,8 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -3437,10 +3437,10 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-14"
             >
               <span
@@ -3448,8 +3448,8 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -3873,10 +3873,10 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-14"
             >
               <span
@@ -3884,8 +3884,8 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
