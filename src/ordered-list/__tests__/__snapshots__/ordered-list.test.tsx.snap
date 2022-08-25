@@ -29,7 +29,7 @@ exports[`OrderedList renders with defaults 1`] = `
 .emotion-1 {
   margin-bottom: 16px;
   counter-increment: item-counter;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -39,7 +39,7 @@ exports[`OrderedList renders with defaults 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-1::before {
@@ -56,7 +56,7 @@ exports[`OrderedList renders with defaults 1`] = `
 
 .emotion-1::before {
   content: counter(item-counter) '. ';
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -67,7 +67,7 @@ exports[`OrderedList renders with defaults 1`] = `
 }
 
 .emotion-1::before svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 <ol
@@ -105,7 +105,7 @@ exports[`OrderedList renders with invalid nodes 1`] = `
 .emotion-1 {
   margin-bottom: 16px;
   counter-increment: item-counter;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -115,7 +115,7 @@ exports[`OrderedList renders with invalid nodes 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-1::before {
@@ -132,7 +132,7 @@ exports[`OrderedList renders with invalid nodes 1`] = `
 
 .emotion-1::before {
   content: counter(item-counter) '. ';
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -143,7 +143,7 @@ exports[`OrderedList renders with invalid nodes 1`] = `
 }
 
 .emotion-1::before svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 <ol
@@ -178,7 +178,7 @@ exports[`OrderedList renders with logical props 1`] = `
 .emotion-1 {
   margin-bottom: 16px;
   counter-increment: item-counter;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -188,7 +188,7 @@ exports[`OrderedList renders with logical props 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-1::before {
@@ -205,7 +205,7 @@ exports[`OrderedList renders with logical props 1`] = `
 
 .emotion-1::before {
   content: counter(item-counter) '. ';
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -216,7 +216,7 @@ exports[`OrderedList renders with logical props 1`] = `
 }
 
 .emotion-1::before svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 <ol
@@ -254,7 +254,7 @@ exports[`OrderedList renders with overrides 1`] = `
 .emotion-1 {
   margin-bottom: 4px;
   counter-increment: item-counter;
-  color: #EF1703;
+  color: #D60000;
   font-family: "DM Sans",sans-serif;
   font-size: 18px;
   line-height: 27px;

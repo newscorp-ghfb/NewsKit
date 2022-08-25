@@ -62,16 +62,16 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-5 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -81,7 +81,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-6::before {
@@ -137,7 +137,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -193,31 +193,31 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-4 .nk-headline-kicker {
-  color: #577FFB;
+  color: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-kicker {
-  color: #3358CC;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-kicker {
-  color: #5E44E4;
+  color: #6454E3;
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-4 .nk-headline-heading svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 .emotion-4:before {
@@ -256,16 +256,16 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-6 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 .emotion-7 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -275,7 +275,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-7::before {
@@ -403,16 +403,16 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-5 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -422,7 +422,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-6::before {
@@ -478,7 +478,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -521,31 +521,31 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-4 .nk-headline-kicker {
-  color: #577FFB;
+  color: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-kicker {
-  color: #3358CC;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-kicker {
-  color: #5E44E4;
+  color: #6454E3;
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-4 .nk-headline-heading svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 .emotion-4:before {
@@ -584,16 +584,16 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-6 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 .emotion-7 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -603,7 +603,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-7::before {

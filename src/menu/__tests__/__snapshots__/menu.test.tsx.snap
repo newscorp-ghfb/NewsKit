@@ -58,7 +58,7 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -73,46 +73,46 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   height: 32px;
 }
 
-.emotion-2 svg {
-  fill: #535353;
+.emotion-3 svg {
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
-.emotion-2:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+.emotion-3:hover:not(:disabled) svg {
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
-.emotion-2:active:not(:disabled) svg {
-  fill: #0A0A0A;
+.emotion-3:active:not(:disabled) svg {
+  fill: #111111;
 }
 
-.emotion-2:selected:hover:not(:disabled) {
+.emotion-3:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
-.emotion-2:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+.emotion-3:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
-.emotion-2:disabled svg {
-  fill: #C0C0C0;
+.emotion-3:disabled svg {
+  fill: #ABABAB;
 }
 
-.emotion-2:focus-visible:not(:disabled) {
+.emotion-3:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -194,6 +194,29 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   content: '';
   margin-top: -0.4em;
   display: block;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+}
+
+.nk-menu-group+.emotion-7 {
+  margin-right: 24px;
+}
+
+.nk-menu-item+.emotion-7 {
+  margin-right: 8px;
+}
+
+.emotion-8 {
+  border-style: solid;
+  border-color: #C6C6C6;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-left-width: 1px;
+  display: inline-block;
+  height: 100%;
 }
 
 <nav
@@ -361,8 +384,8 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 2px 0 0;
-  color: #535353;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -377,44 +400,44 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   height: 32px;
 }
 
-.emotion-2 svg {
-  fill: #535353;
+.emotion-3 svg {
+  fill: #6A6A6A;
 }
 
-.emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #3358CC;
+.emotion-3:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
 }
 
-.emotion-2:hover:not(:disabled) svg {
-  fill: #3358CC;
+.emotion-3:hover:not(:disabled) svg {
+  fill: #3B3B3B;
 }
 
-.emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
-  color: #3358CC;
+.emotion-3:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
 }
 
-.emotion-2:active:not(:disabled) svg {
-  fill: #3358CC;
+.emotion-3:active:not(:disabled) svg {
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   background-color: transparent;
   border-color: #3358CC;
-  color: #3358CC;
+  color: #3B3B3B;
 }
 
-.emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
+.emotion-3:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
 }
 
-.emotion-2:disabled {
-  color: #C0C0C0;
+.emotion-3:disabled {
+  color: #ABABAB;
 }
 
-.emotion-2:disabled svg {
-  fill: #C0C0C0;
+.emotion-3:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -664,7 +687,7 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -680,42 +703,42 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0A0A0A;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -935,10 +958,22 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-2 {
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -968,7 +1003,7 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -983,12 +1018,12 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   height: 24px;
 }
 
-.emotion-2 svg {
-  fill: #535353;
+.emotion-3 svg {
+  fill: #6A6A6A;
 }
 
-.emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-3:hover:not(:disabled) {
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -996,8 +1031,8 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   fill: #3358CC;
 }
 
-.emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
+.emotion-3:active:not(:disabled) {
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -1015,12 +1050,12 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   fill: #3358CC;
 }
 
-.emotion-2:disabled {
-  color: #C0C0C0;
+.emotion-3:disabled {
+  color: #ABABAB;
 }
 
-.emotion-2:disabled svg {
-  fill: #C0C0C0;
+.emotion-3:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -1107,6 +1142,28 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   display: block;
 }
 
+.emotion-7 {
+  box-sizing: border-box;
+}
+
+.nk-menu-group+.emotion-7 {
+  margin-bottom: 24px;
+}
+
+.nk-menu-item+.emotion-7 {
+  margin-bottom: 8px;
+}
+
+.emotion-8 {
+  border-style: solid;
+  border-color: #C6C6C6;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
 <nav
     class="emotion-0"
     data-testid="menu-container"
@@ -1116,96 +1173,143 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
       role="list"
     >
       <li
-        class="nk-menu-item emotion-1"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
           >
-            <span
-              class="emotion-4"
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
+            </a>
+          </li>
+          <li
+            aria-hidden="true"
+            class="emotion-7"
+            role="separator"
+          >
+            <hr
+              aria-hidden="true"
+              class="emotion-8"
+              data-testid="divider"
+            />
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <span
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
+              </span>
+            </a>
+          </li>
+          ,
+        </ul>
       </li>
       <li
-        class="nk-menu-item emotion-1"
+        aria-hidden="true"
+        class="emotion-7"
+        role="separator"
       >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
-          >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
-          </span>
-        </a>
+        <hr
+          aria-hidden="true"
+          class="emotion-8"
+          data-testid="divider"
+        />
       </li>
       <li
-        class="nk-menu-item emotion-1"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
           >
-            <span
-              class="emotion-4"
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+            </a>
+          </li>
+          <li
+            aria-hidden="true"
+            class="emotion-7"
+            role="separator"
           >
-            <span
-              class="emotion-4"
+            <hr
+              aria-hidden="true"
+              class="emotion-8"
+              data-testid="divider"
+            />
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
+            </a>
+          </li>
+          ,
+        </ul>
       </li>
     </ul>
   </nav>
@@ -1269,8 +1373,8 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #535353;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -1285,22 +1389,22 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   height: 24px;
 }
 
-.emotion-2 svg {
-  fill: #535353;
+.emotion-3 svg {
+  fill: #6A6A6A;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #2E2E2E;
+.emotion-3:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+.emotion-3:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -1316,15 +1420,15 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   fill: #2E2E2E;
 }
 
-.emotion-2:disabled {
-  color: #C0C0C0;
+.emotion-3:disabled {
+  color: #ABABAB;
 }
 
-.emotion-2:disabled svg {
-  fill: #C0C0C0;
+.emotion-3:disabled svg {
+  fill: #ABABAB;
 }
 
-.emotion-2:focus-visible:not(:disabled) {
+.emotion-3:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -1574,7 +1678,7 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -1590,11 +1694,11 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -1603,7 +1707,7 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -1622,11 +1726,11 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -1875,8 +1979,8 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #535353;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: end;
@@ -1892,12 +1996,12 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
@@ -1905,8 +2009,8 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  background-color: #D5E0FC;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -1923,11 +2027,11 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -2179,8 +2283,8 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 2px 0 0;
-  color: #535353;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: end;
@@ -2196,43 +2300,43 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #3358CC;
+  border-color: #3358CC;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
-  color: #3358CC;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   background-color: transparent;
   border-color: #3358CC;
-  color: #3358CC;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -2481,8 +2585,8 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #535353;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -2498,12 +2602,12 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
@@ -2511,8 +2615,8 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  background-color: #D5E0FC;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -2529,11 +2633,11 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -2785,8 +2889,8 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 2px 0 0;
-  color: #535353;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -2802,43 +2906,43 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #3358CC;
+  border-color: #3358CC;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
-  color: #3358CC;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   background-color: transparent;
   border-color: #3358CC;
-  color: #3358CC;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3087,8 +3191,8 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #535353;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -3104,12 +3208,12 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
@@ -3117,8 +3221,8 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  background-color: #D5E0FC;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -3135,11 +3239,11 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3391,8 +3495,8 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 2px 0 0;
-  color: #535353;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -3408,43 +3512,43 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #3358CC;
+  border-color: #3358CC;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
-  color: #3358CC;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   background-color: transparent;
   border-color: #3358CC;
-  color: #3358CC;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3710,7 +3814,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -3725,46 +3829,46 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   height: 24px;
 }
 
-.emotion-3 svg {
-  fill: #535353;
+.emotion-2 svg {
+  fill: #6A6A6A;
 }
 
 .emotion-3:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
-.emotion-3:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
 }
 
 .emotion-3:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
-.emotion-3:active:not(:disabled) svg {
-  fill: #0A0A0A;
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
-.emotion-3:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
 }
 
 .emotion-3:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
+.emotion-2:disabled svg {
+  fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3880,141 +3984,100 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
       role="list"
     >
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="emotion-7"
-            role="separator"
+            </span>
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <hr
-              aria-hidden="true"
-              class="emotion-8"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
+            </span>
+          </span>
+        </a>
+      </li>
           ,
         </ul>
       </li>
       <li
-        aria-hidden="true"
-        class="emotion-7"
-        role="separator"
+        class="nk-menu-item emotion-1"
       >
-        <hr
-          aria-hidden="true"
-          class="emotion-8"
-          data-testid="divider"
-        />
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
+          >
+            <span
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Menu item
+              </span>
+            </span>
+          </span>
+        </a>
       </li>
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="emotion-7"
-            role="separator"
-          >
-            <hr
-              aria-hidden="true"
-              class="emotion-8"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
-            >
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
-              </span>
-            </a>
-          </li>
+            </span>
+          </span>
+        </a>
+      </li>
           ,
         </ul>
       </li>
@@ -4097,7 +4160,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -4112,46 +4175,46 @@ exports[`Menu renders horizontally with menu group 1`] = `
   height: 24px;
 }
 
-.emotion-3 svg {
-  fill: #535353;
+.emotion-2 svg {
+  fill: #6A6A6A;
 }
 
 .emotion-3:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
-.emotion-3:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
 }
 
 .emotion-3:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
-.emotion-3:active:not(:disabled) svg {
-  fill: #0A0A0A;
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
-.emotion-3:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
 }
 
 .emotion-3:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
+.emotion-2:disabled svg {
+  fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4409,8 +4472,8 @@ exports[`Menu renders horizontally with menu items 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #535353;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -4426,12 +4489,12 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
@@ -4439,8 +4502,8 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  background-color: #D5E0FC;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -4457,11 +4520,11 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -4725,8 +4788,8 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 2px 0 0;
-  color: #535353;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -4741,44 +4804,44 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   height: 24px;
 }
 
-.emotion-3 svg {
-  fill: #535353;
+.emotion-2 svg {
+  fill: #6A6A6A;
 }
 
-.emotion-3:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #3358CC;
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
 }
 
-.emotion-3:hover:not(:disabled) svg {
-  fill: #3358CC;
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
 }
 
-.emotion-3:active:not(:disabled) {
-  background-color: #AEBFFF;
-  color: #3358CC;
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
 }
 
-.emotion-3:active:not(:disabled) svg {
-  fill: #3358CC;
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
 }
 
 .emotion-3:selected:hover:not(:disabled) {
   background-color: transparent;
   border-color: #3358CC;
-  color: #3358CC;
+  color: #3B3B3B;
 }
 
-.emotion-3:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
 }
 
-.emotion-3:disabled {
-  color: #C0C0C0;
+.emotion-2:disabled {
+  color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
+.emotion-2:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -4896,141 +4959,97 @@ exports[`Menu renders vertically with menu dividers 1`] = `
       role="list"
     >
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="emotion-7"
-            role="separator"
-          >
-            <hr
-              aria-hidden="true"
-              class="emotion-8"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
-            >
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
-              </span>
-            </a>
-          </li>
-          ,
-        </ul>
+            </span>
+          </span>
+        </a>
       </li>
       <li
-        aria-hidden="true"
-        class="emotion-7"
-        role="separator"
+        class="nk-menu-item emotion-1"
       >
-        <hr
-          aria-hidden="true"
-          class="emotion-8"
-          data-testid="divider"
-        />
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
+          >
+            <span
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Menu item
+              </span>
+            </span>
+          </span>
+        </a>
       </li>
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="emotion-7"
-            role="separator"
+            </span>
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <hr
-              aria-hidden="true"
-              class="emotion-8"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
+            </span>
+          </span>
+        </a>
+      </li>
           ,
         </ul>
       </li>
@@ -5067,14 +5086,7 @@ exports[`Menu renders vertically with menu group 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  margin-bottom: 24px;
-}
-
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 8px;
 }
 
 .emotion-2 {
@@ -5112,7 +5124,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -5127,12 +5139,12 @@ exports[`Menu renders vertically with menu group 1`] = `
   height: 24px;
 }
 
-.emotion-3 svg {
-  fill: #535353;
+.emotion-2 svg {
+  fill: #6A6A6A;
 }
 
-.emotion-3:hover:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -5140,8 +5152,8 @@ exports[`Menu renders vertically with menu group 1`] = `
   fill: #3358CC;
 }
 
-.emotion-3:active:not(:disabled) {
-  background-color: #AEBFFF;
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -5159,15 +5171,15 @@ exports[`Menu renders vertically with menu group 1`] = `
   fill: #3358CC;
 }
 
-.emotion-3:disabled {
-  color: #C0C0C0;
+.emotion-2:disabled {
+  color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
+.emotion-2:disabled svg {
+  fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -5260,108 +5272,98 @@ exports[`Menu renders vertically with menu group 1`] = `
       role="list"
     >
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
+            </span>
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
+            </span>
+          </span>
+        </a>
+      </li>
         </ul>
       </li>
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
+            </span>
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-        </ul>
+            </span>
+          </span>
+        </a>
       </li>
     </ul>
   </nav>
@@ -5428,8 +5430,8 @@ exports[`Menu renders vertically with menu items 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 2px 0 0;
-  color: #535353;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -5445,43 +5447,43 @@ exports[`Menu renders vertically with menu items 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #3358CC;
+  border-color: #3358CC;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
-  color: #3358CC;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   background-color: transparent;
   border-color: #3358CC;
-  color: #3358CC;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -5730,8 +5732,8 @@ exports[`Menu renders with default props 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #535353;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -5747,12 +5749,12 @@ exports[`Menu renders with default props 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
@@ -5760,8 +5762,8 @@ exports[`Menu renders with default props 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  background-color: #D5E0FC;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -5778,11 +5780,11 @@ exports[`Menu renders with default props 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -6034,7 +6036,7 @@ exports[`Menu renders with logical prop overrides 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -6050,42 +6052,42 @@ exports[`Menu renders with logical prop overrides 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0A0A0A;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -6317,7 +6319,7 @@ exports[`MenuDivider renders horizontally 1`] = `
 
 .emotion-2 {
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -6386,7 +6388,7 @@ exports[`MenuDivider renders vertically with default props 1`] = `
 
 .emotion-2 {
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -6550,7 +6552,7 @@ exports[`MenuGroup renders with overrides 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "Poppins",sans-serif;
   font-size: 18px;
   line-height: 20.25px;
@@ -6560,7 +6562,7 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -6610,7 +6612,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -6626,11 +6628,11 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -6639,7 +6641,7 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -6658,11 +6660,11 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -6919,7 +6921,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6980,7 +6982,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -6996,11 +6998,11 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -7009,7 +7011,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -7028,11 +7030,11 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 .emotion-8:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -7316,7 +7318,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
   line-height: 22.5px;
@@ -7326,7 +7328,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -7376,7 +7378,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -7392,11 +7394,11 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -7405,7 +7407,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -7424,11 +7426,11 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -7683,7 +7685,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
   line-height: 22.5px;
@@ -7693,7 +7695,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -7743,7 +7745,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 2px 0 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
@@ -7759,11 +7761,11 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   color: #3358CC;
 }
 
@@ -7772,7 +7774,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   color: #3358CC;
 }
 
@@ -7791,11 +7793,11 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -8063,7 +8065,7 @@ exports[`MenuItem renders in large size 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -8079,42 +8081,42 @@ exports[`MenuItem renders in large size 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0A0A0A;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -8295,7 +8297,7 @@ exports[`MenuItem renders in medium size 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -8311,42 +8313,42 @@ exports[`MenuItem renders in medium size 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0A0A0A;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -8527,7 +8529,7 @@ exports[`MenuItem renders in small size 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -8543,42 +8545,42 @@ exports[`MenuItem renders in small size 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0A0A0A;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -8759,7 +8761,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -8775,42 +8777,42 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0A0A0A;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -8992,14 +8994,14 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   background-color: transparent;
   border-style: solid;
   border-color: #3358CC;
   border-width: 0 0 2px 0;
-  color: #2E2E2E;
+  color: #3B3B3B;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -9013,42 +9015,42 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0A0A0A;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -9083,16 +9085,16 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-3 {
@@ -9129,7 +9131,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9288,7 +9290,7 @@ exports[`MenuItem renders with default props 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -9304,42 +9306,42 @@ exports[`MenuItem renders with default props 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0A0A0A;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -9520,7 +9522,7 @@ exports[`MenuItem renders with icon 1`] = `
   border-style: solid;
   border-color: transparent;
   border-width: 0 0 2px 0;
-  color: #535353;
+  color: #6A6A6A;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -9536,42 +9538,42 @@ exports[`MenuItem renders with icon 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
+  border-color: #254CAC;
+  color: #111111;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0A0A0A;
+  fill: #111111;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-2:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -9639,7 +9641,7 @@ exports[`MenuItem renders with icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }

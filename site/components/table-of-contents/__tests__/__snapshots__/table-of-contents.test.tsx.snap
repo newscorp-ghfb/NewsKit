@@ -30,15 +30,15 @@ exports[`TableOfContent should render with no errors 1`] = `
 
 .emotion-2 {
   display: inline-block;
-  color: #535353;
+  color: #5A6A79;
   border-style: solid;
-  border-color: #EBEBEB;
+  border-color: #DEE2E5;
   border-width: 2px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #0A0A0A;
+  color: #09111C;
   border-style: solid;
-  border-color: #577FFB;
+  border-color: #3358CC;
   border-width: 2px;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -65,11 +65,11 @@ exports[`TableOfContent should render with no errors 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2:active:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-3 {
@@ -103,9 +103,9 @@ exports[`TableOfContent should render with no errors 1`] = `
 
 .emotion-5 {
   display: inline-block;
-  color: #535353;
+  color: #5A6A79;
   border-style: solid;
-  border-color: #EBEBEB;
+  border-color: #DEE2E5;
   border-width: 2px;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -132,11 +132,11 @@ exports[`TableOfContent should render with no errors 1`] = `
 }
 
 .emotion-5:hover:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-5:active:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 <div
