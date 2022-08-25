@@ -18,7 +18,7 @@ You can switch between these two themes on this documentation site by clicking t
 
 ## createTheme Function
 
-To create a theme you use the `createTheme` function exported from NewsKit. The createTheme function returns an `UncompiledTheme` object which can be passed to the `ThemeProvider` component. When the ThemeProvider is passed an uncompiled theme object, it will compile it automatically. If you wish to pre-compile your theme, you can do this by passing your theme to the `compileTheme` function exported from NewsKit. It is recommended you let the ThemeProvider compile your theme automatically - you should not need to compile your theme yourself. More information on theme compilation is below.
+To create a theme you use the `createTheme` function exported from NewsKit. The createTheme function returns an `UncompiledTheme` object which can be passed to the `NewsKitProvider` or `ThemeProvider` component. When the provider is passed an uncompiled theme object, it will compile it automatically. If you wish to pre-compile your theme, you can do this by passing your theme to the `compileTheme` function exported from NewsKit. It is recommended you let the provider compile your theme automatically - you should not need to compile your theme yourself. More information on theme compilation is below.
 
 `createTheme` takes one argument - an object - with the following properties:
 
@@ -85,10 +85,7 @@ Note that the keywords will be removed from the object as they are interpreted. 
 
 Please note as of NewsKit V5, stylePresets are no longer global, instead they are under each component. You will need to import the component to use the style presets.
 
-<Code>
-  {`import { Button } from "newskit"`}
-</Code>
-
+<Code>{`import { Button } from "newskit"`}</Code>
 
 #### \_\_extends
 
@@ -248,20 +245,24 @@ Changing the default border radius of NewsKit elements, such as buttons, to shar
 
 #### Setting custom font cropping config
 
-For cropping your font you can use the fontMetrics. This approach is precise, easy to implement, takes into account the fontWeight and fontSize of your font. 
-You can find the font metrics by loading your font file in the <a href='https://seek-oss.github.io/capsize/'>Capsize docs</a>. 
+For cropping your font you can use the fontMetrics. This approach is precise, easy to implement, takes into account the fontWeight and fontSize of your font.
+You can find the font metrics by loading your font file in the <a href='https://seek-oss.github.io/capsize/'>Capsize docs</a>.
 
-As outlined in the link, choose your font (point 1). If you are uploading your own font file, as general approach, 
+As outlined in the link, choose your font (point 1). If you are uploading your own font file, as general approach,
 start adjusting the font metrics by clicking on the icon highlighted with the red circle (image below). Adjust it so that H is within the capHeight lines and the font has
 homogeneous space at the top and the bottom of the Em Square(green lines in the image below.)
 
 e.g
-<img height='200px' src="static/capsize-adustement.png" alt="Capsize adjustement suggestions"/>
 
-Once satisfied, find and retrieve the metrics (point 3). 
-Generally, adding the fontMetrics in your theme for a weight of 400 is enough for the majority of our users. However, if in your case you see the need to use more precise metrics for different font weights you can specify them; 
+<img
+  height="200px"
+  src="static/capsize-adustement.png"
+  alt="Capsize adjustement suggestions"
+/>
+
+Once satisfied, find and retrieve the metrics (point 3).
+Generally, adding the fontMetrics in your theme for a weight of 400 is enough for the majority of our users. However, if in your case you see the need to use more precise metrics for different font weights you can specify them;
 400 will be always the fallback.
-
 
 <CodeFromFile path="examples/theming/font-crop-config.tsx" />
 

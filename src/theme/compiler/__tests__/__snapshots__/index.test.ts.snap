@@ -953,6 +953,28 @@ Object {
         "transform": "translateY(-100%)",
       },
     },
+    "widthChange": Object {
+      "base": Object {
+        "transitionDuration": "200ms",
+        "transitionProperty": "width",
+        "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
+      },
+      "enter": Object {
+        "transitionDuration": "200ms",
+        "transitionProperty": "width",
+      },
+      "enterActive": Object {
+        "transitionDuration": "200ms",
+        "transitionProperty": "width",
+      },
+      "enterDone": Object {},
+      "exit": Object {},
+      "exitActive": Object {
+        "transitionDuration": "200ms",
+        "transitionProperty": "width",
+      },
+      "exitDone": Object {},
+    },
   },
   "typographyPresets": Object {
     "editorialCaption010": Object {
@@ -984,16 +1006,25 @@ Object {
       "lineHeight": 1.125,
     },
     "editorialDropCap010": Object {
-      "fontSize": "5.625em",
-      "lineHeight": 0.85,
+      "fontFamily": "\\"Bitter\\", serif",
+      "fontSize": "44px",
+      "fontWeight": 500,
+      "letterSpacing": "0",
+      "lineHeight": 1.125,
     },
     "editorialDropCap020": Object {
-      "fontSize": "5.875em",
-      "lineHeight": 0.85,
+      "fontFamily": "\\"Bitter\\", serif",
+      "fontSize": "48px",
+      "fontWeight": 500,
+      "letterSpacing": "0",
+      "lineHeight": 1.125,
     },
     "editorialDropCap030": Object {
-      "fontSize": "6em",
-      "lineHeight": 0.85,
+      "fontFamily": "\\"Bitter\\", serif",
+      "fontSize": "56px",
+      "fontWeight": 500,
+      "letterSpacing": "0",
+      "lineHeight": 1.125,
     },
     "editorialHeadline010": Object {
       "fontFamily": "\\"Bitter\\", serif",

@@ -7,7 +7,6 @@ import {
 } from '../../../../test/storybook-comps';
 import {MQ} from '../../../style/types';
 import {styled} from '../../../style';
-import {MediaQueryProvider} from '../context';
 
 const StyledDiv = styled.div`
   border: 2px solid black;
@@ -35,25 +34,22 @@ export default {
 
 export const StoryUseMediaQueryHook = () => (
   <>
-    <MediaQueryProvider>
-      <StorybookHeading>useMediaQueryHooks </StorybookHeading>
-      <StorybookSubHeading>useMediaQueryObject</StorybookSubHeading>
-      <ComponentMediaQueryObject
-        mq={{
-          xs: 'xs',
-          sm: 'sm',
-          md: 'md',
-          lg: 'lg',
-          xl: 'xl',
-        }}
-      />
-      <StorybookSubHeading>useBreakpointKey</StorybookSubHeading>
-      <ComponentBreakpoint />
-    </MediaQueryProvider>
+    <StorybookHeading>useMediaQueryHooks </StorybookHeading>
+    <StorybookSubHeading>useMediaQueryObject</StorybookSubHeading>
+    <ComponentMediaQueryObject
+      mq={{
+        xs: 'xs',
+        sm: 'sm',
+        md: 'md',
+        lg: 'lg',
+        xl: 'xl',
+      }}
+    />
+    <StorybookSubHeading>useBreakpointKey</StorybookSubHeading>
+    <ComponentBreakpoint />
   </>
 );
 StoryUseMediaQueryHook.storyName = 'use-media-query-hook';
 StoryUseMediaQueryHook.parameters = {
   eyes: {include: false},
-  disableMediaQueryDecorator: true,
 };

@@ -53,15 +53,6 @@ export default [
             illustration: 'guides/design-overview/hero',
             cardTitle: 'Design Overview',
           },
-          {
-            title: 'Quickstart',
-            page: true,
-            id: '/getting-started/design/design-quickstart',
-            description:
-              'A step by step guide to get you up and running using NewsKit.',
-            illustration: 'guides/design-quickstart/hero',
-            cardTitle: 'Design Quickstart Guide',
-          },
         ],
       },
       {
@@ -293,10 +284,10 @@ export default [
             id: '/theme/theming/using-a-theme',
           },
           {
-            title: 'Component overrides & defaults',
+            title: 'Component defaults',
             illustration: 'theme/component-defaults/hero',
             description:
-              'Each component in NewsKit has defaults that can be overridden to enhance the experience.',
+              'A preselected option that is applied to a component to define its appearance or behaviour.',
             page: true,
             id: '/theme/theming/component-defaults',
           },
@@ -341,7 +332,7 @@ export default [
             page: true,
             id: '/components/form',
             description:
-              'Forms allow users to enter and edit text content into a UI.',
+              'The form component allows users to enter and edit information into a UI using form controls; based on React Hook Form.',
             illustration: 'components/form/hero',
           },
           {
@@ -440,6 +431,14 @@ export default [
             illustration:
               'components/inline-message/inline-message-illustration',
           },
+          {
+            title: 'Tooltip',
+            page: true,
+            id: '/components/tooltip',
+            description:
+              'A Tooltip is a feedback component that displays a short, informational message when a user hovers over or focuses on a UI element. ',
+            illustration: 'components/tooltip/hero',
+          },
         ],
       },
       {
@@ -519,6 +518,14 @@ export default [
             illustration: 'components/modal-illustration',
           },
           {
+            title: 'Popover',
+            page: true,
+            id: '/components/popover',
+            description:
+              'A Popover (also known as a Popper) is a layout component that displays non-critical information when a user clicks or taps on a UI element. ',
+            illustration: 'components/popover/hero',
+          },
+          {
             title: 'Stack',
             page: true,
             id: '/components/stack',
@@ -587,6 +594,14 @@ export default [
           'Components that enable users to move between pages or content.',
         id: '/components/navigation',
         subNav: [
+          {
+            title: 'Accordion',
+            page: true,
+            id: '/components/accordion',
+            description:
+              'Accordions show and hide related content. Use them to break up long pages into segmented, prioritised sections.',
+            illustration: 'components/accordion/hero',
+          },
           {
             title: 'Link',
             page: true,

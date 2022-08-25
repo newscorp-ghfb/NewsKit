@@ -3,7 +3,7 @@ import {CSSTransition} from 'react-transition-group';
 import {useTheme} from '../theme';
 import {getTransitionDuration} from '../utils/get-transition-duration';
 import {useLockBodyScroll} from '../utils/hooks';
-import {styled, getStylePreset, MQ, getResponsiveSpace} from '../utils/style';
+import {styled, getStylePreset, MQ} from '../utils/style';
 import {getTransitionPreset} from '../utils/style/transition-preset';
 import defaults from './defaults';
 import stylePresets from './style-presets';
@@ -26,7 +26,6 @@ const StyledOverlay = styled.div<Pick<OverlayProps, 'overrides'>>`
   right: 0;
   bottom: 0;
   left: 0;
-  ${getResponsiveSpace('zIndex', `overlay`, '', 'zIndex')};
   cursor: pointer;
   ${getStylePreset('overlay', '')};
 

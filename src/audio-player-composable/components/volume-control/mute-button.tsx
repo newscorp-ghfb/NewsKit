@@ -13,56 +13,48 @@ const toggleMute = (
 
 const DefaultIcon = ({volume, overrides}: MuteButtonIconProps) =>
   volume === 0 ? (
-    <IconFilledVolumeOff
-      overrides={{
-        size: 'iconSize020',
-        ...overrides,
-      }}
-    />
+    <IconFilledVolumeOff overrides={overrides} />
   ) : (
-    <IconFilledVolumeUp
-      overrides={{
-        size: 'iconSize020',
-        ...overrides,
-      }}
-    />
+    <IconFilledVolumeUp overrides={overrides} />
   );
 
-export const MuteButton: React.FC<MuteButtonProps> = ({
-  volume,
-  unMutedVolume,
-  onChange,
-  size,
-  muteKeyboardShortcuts,
-  overrides,
-}) => {
-  useKeyboardShortcutsOnButton({
-    props: {
-      keyboardShortcuts: muteKeyboardShortcuts,
-      onClick: () => {
-        toggleMute(volume, unMutedVolume, onChange);
+export const MuteButton = React.forwardRef<
+  HTMLButtonElement | HTMLAnchorElement,
+  MuteButtonProps
+>(
+  (
+    {volume, unMutedVolume, onChange, size, muteKeyboardShortcuts, overrides},
+    ref,
+  ) => {
+    useKeyboardShortcutsOnButton({
+      props: {
+        keyboardShortcuts: muteKeyboardShortcuts,
+        onClick: () => {
+          toggleMute(volume, unMutedVolume, onChange);
+        },
       },
-    },
-    defaults: 'm',
-  });
+      defaults: 'm',
+    });
 
-  const [MuteButtonIcon, muteButtonIconProps] = getComponentOverrides(
-    overrides.muteButtonIcon,
-    DefaultIcon,
-    {
-      volume,
-    },
-  );
+    const [MuteButtonIcon, muteButtonIconProps] = getComponentOverrides(
+      overrides.muteButtonIcon,
+      DefaultIcon,
+      {
+        volume,
+      },
+    );
 
-  return (
-    <IconButton
-      data-testid="mute-button"
-      aria-label={volume === 0 ? 'Unmute' : 'Mute'}
-      onClick={() => toggleMute(volume, unMutedVolume, onChange)}
-      size={size}
-      overrides={overrides}
-    >
-      <MuteButtonIcon {...(muteButtonIconProps as MuteButtonIconProps)} />
-    </IconButton>
-  );
-};
+    return (
+      <IconButton
+        ref={ref}
+        data-testid="mute-button"
+        aria-label={volume === 0 ? 'Unmute' : 'Mute'}
+        onClick={() => toggleMute(volume, unMutedVolume, onChange)}
+        size={size}
+        overrides={overrides}
+      >
+        <MuteButtonIcon {...(muteButtonIconProps as MuteButtonIconProps)} />
+      </IconButton>
+    );
+  },
+);

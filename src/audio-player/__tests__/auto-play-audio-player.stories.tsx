@@ -26,4 +26,4 @@ export const StoryAutoPlayAudioPlayer = () => (
   </AudioPlayerContainer>
 );
 StoryAutoPlayAudioPlayer.storyName = 'auto-play-audio-player';
-StoryAutoPlayAudioPlayer.eyes = {waitBeforeCapture: 5000};
+StoryAutoPlayAudioPlayer.parameters = {eyes: {waitBeforeCapture: 5000}};

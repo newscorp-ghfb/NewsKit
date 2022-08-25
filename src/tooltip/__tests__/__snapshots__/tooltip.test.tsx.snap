@@ -97,6 +97,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -233,6 +234,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -369,6 +371,7 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -505,6 +508,7 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -641,6 +645,7 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 <div
@@ -758,6 +763,7 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -894,6 +900,7 @@ exports[`Tooltip pointer padding should be applied with token distance override 
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -1030,6 +1037,7 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -1166,6 +1174,7 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -1302,6 +1311,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 <div
@@ -1421,6 +1431,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 16px;
+  overflow: hidden;
 }
 
 <div
@@ -1538,6 +1549,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -1674,6 +1686,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -1810,6 +1823,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -1946,6 +1960,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 8px;
+  overflow: hidden;
 }
 
 .emotion-2 {

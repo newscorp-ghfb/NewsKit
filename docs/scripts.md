@@ -53,6 +53,10 @@ Scripts should be named using the following naming convention:
 
 * `eyes:storybook` -> runs the applitools storybook tests locally. Requires APPLITOOLS_API_KEY to be exported prior to running.
 
+* `test:visual:comps:local` -> sets required env variables and runs the applitools component tests locally.
+
+* `e2e:visual:docs:local` -> sets required env variables and runs the applitools doc site tests locally.
+
 ## Storybook
 
 * `dev:storybook` -> locally starts storybook at port 6006.
@@ -75,9 +79,7 @@ Scripts should be named using the following naming convention:
 
 * `postbuild:docs` -> move 404.html to public/.
 
-* `build:icons:dev` -> generates only the icons that are used within newskit.
-
-* `build:icons:ci` -> generates all 2600+ icons.
+* `build:icons` -> generates only the icons that are used within newskit.
 
 * `build:comps` -> builds the components folder ready to be published to NPM.
 
@@ -87,7 +89,7 @@ Scripts should be named using the following naming convention:
 
 * `serve:docs` -> starts a simple http server to serve the documentation site in public/.
 
-* `serve:storybook` -> serves the storybook as static files
+* `serve:storybook` -> serves the storybook as static files.
 
 ## Utils
 

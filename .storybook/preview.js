@@ -2,14 +2,8 @@ import React from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {withPerformance} from 'storybook-addon-performance';
 
-import {
-  ThemeProvider,
-  MediaQueryProvider,
-  styled,
-  getColorCssFromTheme
-} from '../src';
-
-import {getThemeObject} from '../src/test/theme-select-object'
+import {NewsKitProvider, styled, getColorCssFromTheme} from '../src';
+import {getThemeObject} from '../src/test/theme-select-object';
 
 const unlimitedScenarios = [
   'grid',
@@ -22,6 +16,7 @@ const unlimitedScenarios = [
   'grid-layout',
   'theme-checker',
   'popover',
+  'audio-player-composable',
 ];
 
 const BackgroundColor = styled.div`
@@ -31,23 +26,31 @@ const BackgroundColor = styled.div`
   min-height: 100%;
   width: 100%;
   ${getColorCssFromTheme('background', 'interfaceBackground')}
-`
+`;
 
 const PaddingReset = styled.div`
   position: relative;
   padding: 0;
   padding-left: 8px;
   padding-right: 8px;
-`
+`;
 
 const Container = styled.div`
   max-width: 1024px;
   max-height: 768px;
   overflow: hidden;
+  padding: 16px;
+  box-sizing: border-box;
 `;
-const Background = ({children}) => <BackgroundColor><PaddingReset>{children}</PaddingReset></BackgroundColor>
+const Background = ({children}) => (
+  <BackgroundColor>
+    <PaddingReset>{children}</PaddingReset>
+  </BackgroundColor>
+);
 const LimitSizeDecorator = ({children}) => <Container>{children}</Container>;
-const MediaQueryProviderDecorator = ({children}) => <MediaQueryProvider>{children}</MediaQueryProvider>
+const MediaQueryProviderDecorator = ({children}) => (
+  <MediaQueryProvider>{children}</MediaQueryProvider>
+);
 const NoDecorator = ({children}) => <>{children}</>;
 
 export const parameters = {
@@ -82,7 +85,7 @@ export const parameters = {
       {
         name: 'Virgin',
         value: '#e10a0a',
-      }
+      },
     ],
   },
 };
@@ -100,30 +103,15 @@ export const decorators = [
       </Decorator>
     );
   },
-  // Disabled MediaQueryProvider for some stories,
-  // this needs to placed before theme Decorator so that the order matters
-  (Story, context) => {
-    const {parameters} = context;
-    const shouldDisableMQDecorator =
-      parameters && parameters.disableMediaQueryDecorator;
-
-    const Decorator = shouldDisableMQDecorator
-      ? NoDecorator
-      : MediaQueryProviderDecorator;
-
-    return (
-      <Decorator>
-        <Story />
-      </Decorator>
-    );
-  },
   (Story, context) => {
     return (
-      <ThemeProvider theme={getThemeObject(context?.globals?.backgrounds?.value)}>
+      <NewsKitProvider
+        theme={getThemeObject(context?.globals?.backgrounds?.value)}
+      >
         <Background>
           <Story />
         </Background>
-      </ThemeProvider>
+      </NewsKitProvider>
     );
   },
   withPerformance,

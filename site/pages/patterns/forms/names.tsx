@@ -3,7 +3,6 @@ import {Block, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -81,11 +80,7 @@ const Names = (layoutProps: LayoutProps) => (
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>Split out ‘First name and ‘Last name’.</>
             <>
               Fields must be long enough to accommodate the names of your users.
@@ -116,11 +111,7 @@ const Names = (layoutProps: LayoutProps) => (
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
+          <UnorderedList markerAlign="start" overrides={unorderedListOverrides}>
             <>
               Ask for a middle name - it’s additional information that the user
               has to enter, that the business doesn’t need.
@@ -148,7 +139,6 @@ const Names = (layoutProps: LayoutProps) => (
                   <>
                     <UnorderedList
                       markerAlign="start"
-                      listItemMarker={IconFilledCircle}
                       overrides={unorderedListOverrides}
                     >
                       <>Please enter your first name (If empty)</>

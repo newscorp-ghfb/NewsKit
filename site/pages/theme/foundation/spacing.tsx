@@ -1,5 +1,5 @@
 import React from 'react';
-import {InlineMessage, newskitLightTheme} from 'newskit*';
+import {InlineMessage, newskitLightTheme} from 'newskit';
 import {Table, TableRow} from '../../../components/table';
 import {getTokenType} from '../../../utils/get-token-type';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
@@ -173,51 +173,6 @@ const spaceInsetTable = [
   },
 ];
 
-const featureCardOverrides = {
-  title: {
-    typographyPreset: 'editorialHeadline030',
-  },
-  description: {
-    typographyPreset: 'editorialParagraph020',
-  },
-};
-
-const PRINCIPLE_CARDS = [
-  {
-    media: {
-      src: 'static/theming/foundations/relational.svg',
-      alt: '',
-    },
-    title: 'Relational',
-    description:
-      'Use spacing to visually communicate elements that are connected',
-    stylePrefix: 'featureCard',
-    overrides: featureCardOverrides,
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/guided.svg',
-      alt: '',
-    },
-    title: 'Guided',
-    description:
-      'Use appropriate hierarchy to lead the user to the most important information',
-    stylePrefix: 'featureCard',
-    overrides: featureCardOverrides,
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/balanced-spacing.svg',
-      alt: '',
-    },
-    title: 'Balanced',
-    description:
-      'Arrange elements and white space so that no part of the design overpowers the others',
-    stylePrefix: 'featureCard',
-    overrides: featureCardOverrides,
-  },
-];
-
 const Spacing = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
@@ -236,21 +191,6 @@ const Spacing = (layoutProps: LayoutProps) => (
     }}
   >
     <ComponentPageCell>
-      <ContentSection sectionName="principles">
-        <ContentPrimary
-          id="principles"
-          toc="Principles"
-          headline="Principles"
-          showSeparator
-        >
-          <MediaList
-            layout="3-span"
-            cardType="feature"
-            cards={PRINCIPLE_CARDS}
-          />
-        </ContentPrimary>
-      </ContentSection>
-
       <ContentSection sectionName="overview">
         <ContentPrimary
           id="overview"

@@ -1,11 +1,12 @@
 node_modules
 .DS_STORE
-/.eslintcache
+.eslintcache
 build
 *.log
 dist
 stats.html
 storybook-static
+.storybook/private-fonts
 coverage
 /e2e/dist/index.js
 .vscode
@@ -39,3 +40,4 @@ junit.xml
 /src/icons/filled/material
 /src/icons/outlined/material
 cypress/config/a11y-components.json
+lib/codemod/.eslintcache

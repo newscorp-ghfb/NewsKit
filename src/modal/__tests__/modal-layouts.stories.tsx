@@ -6,6 +6,7 @@ import {LinkStandalone, Link} from '../../link';
 import {Button} from '../../button';
 import {Stack} from '../../stack';
 import {H1, P} from '../../typography';
+import {Select, SelectOption} from '../../select';
 
 const modalContent = (
   <Stack
@@ -208,3 +209,62 @@ export const StoryWithOverrides = () =>
     </>
   ));
 StoryWithOverrides.storyName = 'with overrides';
+
+const items = [
+  'Neptunium',
+  'Plutonium',
+  'Americium',
+  'Curium',
+  'Berkelium',
+  'Californium',
+  'Einsteinium',
+  'Fermium',
+  'Mendelevium',
+  'Nobelium',
+  'Lawrencium',
+  'Rutherfordium',
+  'Dubnium',
+  'Seaborgium',
+  'Bohrium',
+  'Hassium',
+  'Meitnerium',
+  'Darmstadtium',
+  'Roentgenium',
+  'Copernicium',
+  'Nihonium',
+  'Flerovium',
+  'Moscovium',
+  'Livermorium',
+  'Tennessine',
+  'Oganesson',
+];
+
+export const StoryWithSelect = () =>
+  React.createElement(() => (
+    <>
+      <StorybookHeading>Default modal</StorybookHeading>
+      <Modal
+        aria-label="Default modal"
+        open
+        onDismiss={() => {}}
+        header={
+          <LinkStandalone href="www.test.com">Link button</LinkStandalone>
+        }
+      >
+        <div>Choose a planet</div>
+        <Select
+          aria-describedby="id-2-at"
+          id="id-2"
+          size="medium"
+          useModal={{xs: true, sm: true}}
+        >
+          {items.map(item => (
+            <SelectOption key={item} value={item}>
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+      </Modal>
+    </>
+  ));
+StoryWithSelect.storyName = 'with select';

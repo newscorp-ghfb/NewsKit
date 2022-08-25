@@ -8,4 +8,9 @@ export default {
       boxShadow: '{{shadows.shadow060}}',
     },
   },
+  modalHeader: {
+    base: {
+      color: '{{colors.inkBase}}',
+    },
+  },
 } as Record<string, StylePreset>;

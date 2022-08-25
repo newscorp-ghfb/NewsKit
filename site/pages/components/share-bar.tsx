@@ -1,13 +1,6 @@
 import React from 'react';
-import {
-  ButtonSize,
-  IconButton,
-  IconFilledFacebook,
-  IconFilledTwitter,
-  IconFilledInstagram,
-  styled,
-  ShareBar,
-} from 'newskit';
+import {ButtonSize, IconButton, styled, ShareBar} from 'newskit';
+
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
@@ -15,6 +8,9 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {OverridesRowsProps} from '../../components/component-api';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {IconFilledFacebook} from '../../components/icons/icon-filled-facebook';
+import {IconFilledInstagram} from '../../components/icons/icon-filled-instagram';
+import {IconFilledTwitter} from '../../components/icons/icon-filled-twitter';
 
 const PlaygroundContainer = styled.div`
   display: flex;
@@ -307,22 +303,8 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: false,
-      props: true,
-      performance: false,
-      design: true,
-      uiKit: true,
-      themes: true,
-    }}
     related={{
-      introduction: '',
-      related: ['Button', 'Icon Button'],
+      related: ['Button'],
     }}
   />
 );

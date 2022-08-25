@@ -1,6 +1,6 @@
 import React from 'react';
-import {InlineMessage, IconFilledInfo, newskitLightTheme} from 'newskit';
-
+import {InlineMessage, newskitLightTheme, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {
   ContentSection,
   ContentPrimary,
@@ -21,6 +21,8 @@ import {
 } from '../../../components/illustrations/illustration-loader';
 import {Table} from '../../../components/table';
 import {getTokenType} from '../../../utils/get-token-type';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 interface FontAttributesRow {
   tokenName: string;
@@ -140,49 +142,6 @@ const featureCardOverrides = {
 };
 const {title, description} = featureCardOverrides;
 
-const PRINCIPLE_CARDS = [
-  {
-    media: {
-      src: 'static/theming/foundations/purposeful-fonts.svg',
-      alt: '',
-    },
-    title: 'Purposeful',
-    description:
-      'The choice of font families are appropriate for their use e.g. decorative or functional, bold or subtle.',
-    stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/legible.svg',
-      alt: '',
-    },
-    title: 'Legible',
-    description: `Font families are legible for screen use across multiple sizes.`,
-    stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
-  },
-  {
-    media: {
-      src: 'static/theming/foundations/balanced.svg',
-      alt: '',
-    },
-    title: 'Balanced',
-    description: `When using multiple font families, ensure they complement each other.`,
-    stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
-  },
-];
-
 const EXAMPLE_CARDS = [
   {
     media: () => <Illustration path="theme/fonts/buttonnocrop" />,
@@ -244,21 +203,6 @@ const Fonts = (layoutProps: LayoutProps) => (
     }}
   >
     <ComponentPageCell>
-      <ContentSection sectionName="principles">
-        <ContentPrimary
-          id="principles"
-          toc="Principles"
-          headline="Principles"
-          showSeparator
-        >
-          <MediaList
-            layout="3-span"
-            cardType="feature"
-            cards={PRINCIPLE_CARDS}
-          />
-        </ContentPrimary>
-      </ContentSection>
-
       <ContentSection sectionName="overview">
         <ContentPrimary
           id="overview"

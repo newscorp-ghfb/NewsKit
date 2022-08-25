@@ -1,5 +1,6 @@
 import React from 'react';
-import {styled, IconFilledInfo, InlineMessage} from 'newskit*';
+import {styled, toNewsKitIcon, InlineMessage} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
 import {InlineCode} from '../../../components/markdown-elements';
@@ -20,6 +21,8 @@ import {
   ContentColSpan,
 } from '../../../components/content-structure';
 
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
+
 const PROPERTIES = [
   {
     tokenName: 'transitionProperty',
@@ -37,21 +40,27 @@ const PROPERTIES = [
   },
   {
     tokenName: 'transitionDelay',
-    acceptedValues: <Link href="/theme/motion/#duration">motionDuration</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/motion/#duration">motionDuration</Link>
+    ),
     example: <Mono>motionDuration000</Mono>,
     description:
       'Specifies how many milliseconds delay for the transition effect to start',
   },
   {
     tokenName: 'transitionDuration',
-    acceptedValues: <Link href="/theme/motion/#duration">motionDuration</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/motion/#duration">motionDuration</Link>
+    ),
     example: <Mono>motionDuration020</Mono>,
     description:
       'Specifies how many milliseconds a transition effect takes to complete',
   },
   {
     tokenName: 'transitionTimingFunction',
-    acceptedValues: <Link href="/theme/motion/#timing">motionTiming</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/motion/#timing">motionTiming</Link>
+    ),
     example: <Mono>motionTimingLinear</Mono>,
     description: 'Specifies the speed curve of the transition effect',
   },
@@ -316,6 +325,15 @@ const PRESETS = [
         <Link href="/components/radio-button/">Radio Button.</Link>
       </>
     ),
+  },
+  {
+    example: getImage(
+      'theme/transition-presets/predefined-transition-presets/widthchange',
+    ),
+    token: 'widthChange',
+    description: 'Transition width from the initial state to the final state.',
+    implementation:
+      'Can be applied to components to achieve a width change when interacting eg. applied to the expandable horizontal volume control audio player subcomponent on hover or focus.',
   },
 ];
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo, LinkInline} from 'newskit';
+import {Block, InlineMessage, LinkInline, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -11,6 +12,8 @@ import {
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const infoIcon = (
   <IconFilledInfo
@@ -229,7 +232,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       rows: [
         {
           name: 'Input Container',
-          description: 'Interactable input area',
+          description: 'Interactive input area',
           component: ['HTML Input', 'Block'],
           optional: undefined,
         },
@@ -249,9 +252,19 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Input & Placeholder Text',
-          description:
-            'Input text - a value the user has entered into a input. Placeholder text - a short hint that describes the expected value of an input',
-          component: 'Text Block',
+          description: (
+            <>
+              Input text - a value the user has entered into an input.
+              <br />
+              <br />
+              Placeholder text - a short hint that describes the expected value
+              of an input
+            </>
+          ),
+          component: [
+            'Text Block (input)',
+            'HTML attribute (placeholder text)',
+          ],
           optional: undefined,
         },
         {
@@ -902,22 +915,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      performance: false,
-      seo: true,
-      props: true,
-      uiKit: true,
-      design: true,
-      themes: true,
-    }}
     related={{
-      introduction: '',
-      related: ['Form'],
+      related: ['Button', 'Text Area', 'Form', 'Select'],
     }}
   />
 );

@@ -9,65 +9,69 @@ import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {StyledBlock, StyledStackContainer} from './styled';
 
-const ThemelessTitleBar: React.FC<TitleBarProps> = props => {
-  const {
-    children,
-    hideActionItemOn = {xs: true},
-    headingAs = 'h3',
-    actionItem: ActionItem,
-    overrides = {},
-  } = props;
+const ThemelessTitleBar = React.forwardRef<HTMLDivElement, TitleBarProps>(
+  (props, ref) => {
+    const {
+      children,
+      hideActionItemOn = {xs: true},
+      headingAs = 'h3',
+      actionItem: ActionItem,
+      overrides = {},
+    } = props;
 
-  const theme = useTheme();
+    const theme = useTheme();
 
-  const hasActions = !!ActionItem;
+    const hasActions = !!ActionItem;
 
-  const addTitleBarHeadingOverrides = () => {
-    const headingOverrides: Omit<HeadlineOverrides, 'kicker'> = {};
-    if (!overrides.heading) {
+    const addTitleBarHeadingOverrides = () => {
+      const headingOverrides: Omit<HeadlineOverrides, 'kicker'> = {};
+      if (!overrides.heading) {
+        return headingOverrides;
+      }
+      if (overrides.heading.typographyPreset) {
+        headingOverrides.typographyPreset = overrides.heading.typographyPreset;
+      }
+      if (overrides.heading.stylePreset) {
+        headingOverrides.heading = {stylePreset: overrides.heading.stylePreset};
+      }
       return headingOverrides;
-    }
-    if (overrides.heading.typographyPreset) {
-      headingOverrides.typographyPreset = overrides.heading.typographyPreset;
-    }
-    if (overrides.heading.stylePreset) {
-      headingOverrides.heading = {stylePreset: overrides.heading.stylePreset};
-    }
-    return headingOverrides;
-  };
+    };
 
-  const headlineOverrides = {
-    typographyPreset: {
-      ...theme.componentDefaults.titleBar.heading.typographyPreset,
-    },
-    heading: {
-      stylePreset: theme.componentDefaults.titleBar.heading.stylePreset,
-    },
+    const headlineOverrides = {
+      typographyPreset: {
+        ...theme.componentDefaults.titleBar.heading.typographyPreset,
+      },
+      heading: {
+        stylePreset: theme.componentDefaults.titleBar.heading.stylePreset,
+      },
 
-    ...addTitleBarHeadingOverrides(),
-  };
+      ...addTitleBarHeadingOverrides(),
+    };
 
-  const blockOverrides = {spaceInline: hasActions ? 'space040' : ''};
+    const blockOverrides = {spaceInline: hasActions ? 'space040' : ''};
 
-  return (
-    <StyledStackContainer
-      overrides={overrides}
-      flow="horizontal-center"
-      stackDistribution="space-between"
-    >
-      <StyledBlock {...blockOverrides}>
-        <Headline headingAs={headingAs} overrides={headlineOverrides}>
-          {children}
-        </Headline>
-      </StyledBlock>
-      {ActionItem && (
-        <Hidden {...hideActionItemOn}>
-          <ActionItem />
-        </Hidden>
-      )}
-    </StyledStackContainer>
-  );
-};
+    return (
+      <StyledStackContainer
+        overrides={overrides}
+        flow="horizontal-center"
+        stackDistribution="space-between"
+        ref={ref}
+      >
+        <StyledBlock {...blockOverrides}>
+          <Headline headingAs={headingAs} overrides={headlineOverrides}>
+            {children}
+          </Headline>
+        </StyledBlock>
+        {ActionItem && (
+          <Hidden {...hideActionItemOn}>
+            <ActionItem />
+          </Hidden>
+        )}
+      </StyledStackContainer>
+    );
+  },
+);
+
 export const TitleBar = withOwnTheme(ThemelessTitleBar)({
   defaults,
   stylePresets,

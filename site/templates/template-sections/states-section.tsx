@@ -1,9 +1,12 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo} from 'newskit';
+import {Block, InlineMessage, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {MediaList, MediaListProps} from '../../components/media-list';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
 import {ComponentPageCell} from '../../components/layout-cells';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 export type StatesSectionProps = MediaListProps & IntroductionText;
 

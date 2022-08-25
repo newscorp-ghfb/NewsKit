@@ -1,10 +1,21 @@
-import {Grid, Cell, InlineMessage, Block} from 'newskit';
 import React from 'react';
+import {Grid, Cell, InlineMessage, Block, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
 import {ContentText} from '../../components/text-section/content-text';
 import {Table} from '../../components/table';
 import {ComponentPageCell} from '../../components/layout-cells';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
 
 interface A11ySubSection<RowType> {
   title: string;
@@ -43,12 +54,12 @@ const A11yTable: React.FC<
     | AccessibilitySectionProps['aria']
   )
 > = ({title, description, columns, tableRows}) => (
-  <ComponentPageCell>
+  <Block spaceStack="space070">
     <ContentText title={title} titleAs="span">
       {description}
     </ContentText>
     {tableRows && <Table columns={columns} rows={tableRows} />}
-  </ComponentPageCell>
+  </Block>
 );
 
 const renderInfoNotice = (
@@ -58,7 +69,7 @@ const renderInfoNotice = (
 ) => {
   if (Array.isArray(notice)) {
     return (
-      <ComponentPageCell>
+      <>
         {notice.map((note, index) => (
           <Block
             spaceStack={index < notice.length - 1 ? 'space030' : 'space000'}
@@ -67,21 +78,25 @@ const renderInfoNotice = (
               role="region"
               aria-label={`${label} ${index}`}
               title={title}
+              icon={infoIcon}
             >
               {note}
             </InlineMessage>
           </Block>
         ))}
-      </ComponentPageCell>
+      </>
     );
   }
   if (notice !== undefined) {
     return (
-      <ComponentPageCell>
-        <InlineMessage role="region" aria-label={label} title={title}>
-          {notice}
-        </InlineMessage>
-      </ComponentPageCell>
+      <InlineMessage
+        role="region"
+        aria-label={label}
+        title={title}
+        icon={infoIcon}
+      >
+        {notice}
+      </InlineMessage>
     );
   }
   return null;
@@ -101,32 +116,55 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
     toc="Accessibility"
     introduction={introduction}
   >
-    <Cell xs={12}>
-      <Grid xsRowGutter="space100" xsMargin="space000">
-        {focusOrder && (
-          <A11yTable columns={['Order', 'Element', 'Role']} {...focusOrder} />
-        )}
+    {(focusOrder ||
+      infoNoticeFocus ||
+      interaction ||
+      aria ||
+      infoNoticeAria) && (
+      <Cell xs={12}>
+        <Grid xsRowGutter="space100" xsMargin="space000">
+          <ComponentPageCell>
+            {focusOrder && (
+              <A11yTable
+                columns={['Order', 'Element', 'Role']}
+                {...focusOrder}
+              />
+            )}
 
-        {renderInfoNotice(infoNoticeFocus, 'Note')}
+            {infoNoticeFocus && (
+              <Block spaceStack="space090">
+                {renderInfoNotice(
+                  infoNoticeFocus,
+                  'Focus order notice',
+                  'Note',
+                )}
+              </Block>
+            )}
 
-        {interaction && (
-          <A11yTable columns={['Command', 'Description']} {...interaction} />
-        )}
-        {aria && (
-          <A11yTable
-            columns={[
-              'Element',
-              'Attribute',
-              'Value',
-              'Description',
-              'User Supplied',
-            ]}
-            {...aria}
-          />
-        )}
+            {interaction && (
+              <A11yTable
+                columns={['Command', 'Description']}
+                {...interaction}
+              />
+            )}
 
-        {renderInfoNotice(infoNoticeAria, 'WAI Aria notice', 'Note')}
-      </Grid>
-    </Cell>
+            {aria && (
+              <A11yTable
+                columns={[
+                  'Element',
+                  'Attribute',
+                  'Value',
+                  'Description',
+                  'User Supplied',
+                ]}
+                {...aria}
+              />
+            )}
+
+            {renderInfoNotice(infoNoticeAria, 'WAI Aria notice', 'Note')}
+          </ComponentPageCell>
+        </Grid>
+      </Cell>
+    )}
   </CommonSection>
 );

@@ -4,6 +4,7 @@ import {ExperimentationWebProps} from './types';
 
 export const ExperimentationWeb: React.FC<ExperimentationWebProps> = ({
   reactHelmet,
+  async = false,
   ...props
 }) => {
   const {optimizelyWebConfig} = props;
@@ -28,6 +29,7 @@ export const ExperimentationWeb: React.FC<ExperimentationWebProps> = ({
         },
         {
           src: optimizelyWebConfig.scriptCdn,
+          async,
         },
       ]}
       reactHelmet={reactHelmet}

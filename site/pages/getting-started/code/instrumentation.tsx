@@ -4,7 +4,6 @@ import {Code} from '../../../components/code';
 import {Link} from '../../../components/link';
 import {InlineCode} from '../../../components/markdown-elements';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {Table} from '../../../components/table';
@@ -139,7 +138,6 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
         >
           <UnorderedList
             markerAlign="start"
-            listItemMarker={IconFilledCircle}
             overrides={{
               spaceStack: 'space050',
               marker: {
@@ -186,6 +184,15 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
               <InlineCode>createEventInstrumentation</InlineCode> function and
               as a result, the object can simply be destructured into the props
               of the provider.
+              <br />
+              <br />
+              <InlineMessage>
+                {' '}
+                Keep in mind that <InlineCode>NewsKitProvider</InlineCode>{' '}
+                already contains{' '}
+                <InlineCode>InstrumentationProvider</InlineCode> so use it only
+                when want to create a new context for part of your application.
+              </InlineMessage>
             </>
           }
         >
@@ -296,7 +303,6 @@ const instrumentation = createEventInstrumentation(handlers, {
         >
           <UnorderedList
             markerAlign="start"
-            listItemMarker={IconFilledCircle}
             overrides={{
               spaceStack: 'space050',
               marker: {
@@ -435,11 +441,9 @@ const Rail: React.FC<{
 );
 
 const App = () => (
-  <ThemeProvider theme={newskitLightTheme}>
-    <InstrumentationProvider {...instrumentation}>
-      <Rail railName="Some great rail" />
-    </InstrumentationProvider>
-  </ThemeProvider>
+  <NewsKitProvider theme={newskitLightTheme} instrumentation={instrumentation}>
+    <Rail railName="Some great rail" />
+  </NewsKitProvider>
 );`}
           </Code>
         </ContentSecondary>
@@ -447,9 +451,8 @@ const App = () => (
           description={
             <>
               In this example, we have a root{' '}
-              <InlineCode>InstrumentationProvider</InlineCode> providing the
-              page URL. Inside the <InlineCode>Rail</InlineCode> component, we
-              have another
+              <InlineCode>NewsKitProvider</InlineCode> providing the page URL.
+              Inside the <InlineCode>Rail</InlineCode> component, we have{' '}
               <InlineCode>InstrumentationProvider</InlineCode>; this provides
               any child events with rail specifics, like the rail name. The{' '}
               <InlineCode>RailItem</InlineCode> then contains a button that

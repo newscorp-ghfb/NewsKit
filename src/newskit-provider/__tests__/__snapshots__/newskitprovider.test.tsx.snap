@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsKitProvider renders as default 1`] = `
+<DocumentFragment>
+  app
+</DocumentFragment>
+`;

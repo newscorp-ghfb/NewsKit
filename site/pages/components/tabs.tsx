@@ -47,19 +47,6 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       codeUrl: 'https://github.com/newscorp-ghfb/newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      props: true,
-      performance: false,
-      design: true,
-      uiKit: true,
-      themes: true,
-    }}
     usage={{
       introduction:
         'The following guidance describes how and when to appropriately use a Tab component.',
@@ -999,10 +986,6 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    related={{
-      introduction: '',
-      related: ['Scroll'],
-    }}
     accessibility={{
       introduction: (
         <>
@@ -1028,8 +1011,6 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           },
         ],
       },
-      infoNoticeFocus: 'Scroll controls are not focussable.',
-
       interaction: {
         title: 'Keyboard Interactions',
         tableRows: [
@@ -1073,7 +1054,6 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           },
         ],
       },
-
       aria: {
         title: 'WAI-ARIA',
         tableRows: [
@@ -1133,6 +1113,9 @@ const TabsComponent = (layoutProps: LayoutProps) => (
     seo={{
       title: 'SEO Considerations',
       introduction: 'Ensure icons have Alt Text applied.',
+    }}
+    related={{
+      related: ['Accordion', 'Link', 'Menu', 'Tag'],
     }}
   />
 );

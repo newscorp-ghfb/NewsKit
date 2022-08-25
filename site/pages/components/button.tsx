@@ -1,13 +1,16 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo} from 'newskit';
+import {InlineMessage, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
-import {MetaStatus} from '../../components/meta/types';
 import {UsageKind} from '../../components/usage-card';
+import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
-import {ComponentPageTemplate} from '../../templates/component-page-template';
-import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
+import {ComponentPageTemplate} from '../../templates/component-page-template';
+import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const infoIcon = (
   <IconFilledInfo
@@ -26,18 +29,18 @@ const commonPropsRows = (type?: string) => [
         The content of the ${type} Button is passed as the child of the
         component.
         {!type && (
-          <>
-            <Block spaceStack="space050" />
-            <InlineMessage
-              icon={infoIcon}
-              role="region"
-              aria-label="Children type"
-              title="Note"
-            >
-              Only if the children type supplied is a string or number it will
-              be rendered inside a Text Block.
-            </InlineMessage>
-          </>
+          <InlineMessage
+            icon={infoIcon}
+            role="region"
+            aria-label="Children type"
+            title="Note"
+            overrides={{
+              marginBlockStart: 'space030',
+            }}
+          >
+            Only if the children type supplied is a string or number it will be
+            rendered inside a Text Block.
+          </InlineMessage>
         )}
       </>
     ),
@@ -199,7 +202,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=1817%3A8822',
     }}
     anatomy={{
-      tabs: [
+      components: [
         {
           title: 'Button',
           summary:
@@ -273,15 +276,16 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Appearance',
           description: (
             <>
-              <Block spaceStack="space030">
-                By default, there are three styles of Button; solid, outlined,
-                and minimal.
-              </Block>
+              By default, there are three styles of Button; solid, outlined, and
+              minimal.
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="Inverse Buttons"
                 title="Note"
+                overrides={{
+                  marginBlockStart: 'space030',
+                }}
               >
                 Inverse Buttons are intended for use on darker backgrounds.
               </InlineMessage>
@@ -421,13 +425,14 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
               <br />
               <br />
               Full width - size responsive to the container it is applied to.
-              <br />
-              <br />
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="Full width Buttons"
                 title="Note"
+                overrides={{
+                  marginBlockStart: 'space050',
+                }}
               >
                 Full width Buttons are intended for use on smaller screen sizes
                 or in other components (such as{' '}
@@ -487,16 +492,27 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/button/usage/dont2'),
         },
         {
-          description:
-            'Avoid placing more than one primary (high emphasis) Button on a screen to help guide the user to the primary action.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/button/usage/dont3'),
+          description: (
+            <>
+              The <Link href="/components/tooltip/">Tooltip</Link> can be
+              applied to the Icon Button in order to provide additional context
+              relating to the intended action or destination for users.
+            </>
+          ),
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/button/usage/do3'),
         },
         {
           description:
             'Avoid stacking Buttons when there is enough space to place side by side.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/button/usage/dont4'),
+        },
+        {
+          description:
+            'Avoid placing more than one primary (high emphasis) Button on a screen to help guide the user to the primary action.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/button/usage/dont3'),
         },
       ],
     }}
@@ -594,22 +610,8 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      performance: undefined,
-      seo: undefined,
-      props: true,
-      uiKit: true,
-      design: true,
-      themes: true,
-    }}
     related={{
-      introduction: '',
-      related: ['Tag', 'Link', 'Share Bar'],
+      related: ['Checkbox', 'Form', 'Radio Button', 'Select'],
     }}
   />
 );

@@ -1,5 +1,6 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo} from 'newskit';
+import {Block, InlineMessage, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {LayoutProps} from '../../components/layout';
@@ -8,6 +9,8 @@ import {MetaStatus} from '../../components/meta/types';
 import {Link} from '../../components/link';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const infoIcon = (
   <IconFilledInfo
@@ -266,22 +269,8 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: undefined,
-      usage: true,
-      accessibility: true,
-      performance: false,
-      seo: true,
-      props: true,
-      uiKit: undefined,
-      design: true,
-      themes: true,
-    }}
     related={{
-      introduction: '',
-      related: ['Form', 'Checkbox', 'Radio Button'],
+      related: ['Stack', 'Structured List', 'Visibility'],
     }}
   />
 );

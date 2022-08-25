@@ -1,10 +1,6 @@
-import {fireEvent, waitFor} from '@testing-library/react';
+import {cleanup, fireEvent, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import React, {useRef, useState} from 'react';
-import {
-  renderToFragmentWithTheme,
-  renderWithTheme,
-} from '../../test/test-utils';
 import {
   createTheme,
   newskitDarkTheme,
@@ -14,6 +10,10 @@ import {
 import {Drawer, DrawerProps} from '..';
 import {TextBlock} from '../../text-block';
 import {sharedDialogTests} from '../../dialog/base-dialog-tests';
+import {
+  renderToFragmentInBody,
+  renderWithThemeInBody,
+} from '../../test/test-utils';
 import {Button} from '../../button';
 
 const drawerBody = <TextBlock>Drawer body content</TextBlock>;
@@ -62,7 +62,7 @@ describe('Drawer', () => {
         </ThemeProvider>
       );
     };
-    const {findByTestId, getByTestId} = renderWithTheme(DrawerPage);
+    const {findByTestId, getByTestId} = renderWithThemeInBody(DrawerPage);
     const openDrawerButton = getByTestId('drawer-open-button');
     fireEvent.click(openDrawerButton);
     await waitFor(async () => {
@@ -77,7 +77,7 @@ describe('Drawer', () => {
   test.each(['right', 'top', 'bottom'])(
     'renders with menu items aligned at the %s',
     placement => {
-      const fragment = renderToFragmentWithTheme(Drawer, {
+      const fragment = renderToFragmentInBody(Drawer, {
         open: true,
         onDismiss: () => {},
         header: drawerHeader,
@@ -89,7 +89,7 @@ describe('Drawer', () => {
   );
 
   test('renders with left placement and right closePosition', () => {
-    const fragment = renderToFragmentWithTheme(Drawer, {
+    const fragment = renderToFragmentInBody(Drawer, {
       open: true,
       onDismiss: () => {},
       header: drawerHeader,
@@ -101,7 +101,7 @@ describe('Drawer', () => {
   });
 
   test('renders closed drawer visually hidden but remains in the DOM tree', () => {
-    const {asFragment, getByTestId} = renderWithTheme(Drawer, {
+    const {asFragment, getByTestId} = renderWithThemeInBody(Drawer, {
       open: false,
       onDismiss: () => {},
       children: drawerBody,
@@ -151,7 +151,7 @@ describe('Drawer', () => {
       },
     });
 
-    const fragment = renderToFragmentWithTheme(
+    const fragment = renderToFragmentInBody(
       Drawer,
       {
         open: true,
@@ -183,19 +183,51 @@ describe('Drawer', () => {
     );
     expect(fragment).toMatchSnapshot();
   });
+
+  test('render inline-drawer', () => {
+    const fragment = renderToFragmentInBody(Drawer, {
+      open: true,
+      inline: true,
+      onDismiss: () => {},
+      header: drawerHeader,
+      children: drawerBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });
 
 describe('Drawer focus management', () => {
-  test('focus on first interactive element', async () => {
-    const {findByTestId} = renderWithTheme(Drawer, {
-      open: true,
-      onDismiss: () => {},
-      children: (
-        <button type="button" data-testid="interactive-element">
-          auto focus button
+  afterEach(() => {
+    cleanup();
+  });
+
+  const DrawerPage = ({children}: {children: React.ReactNode}) => {
+    const [isOpen, setOpen] = useState(false);
+    return (
+      <>
+        <button
+          type="button"
+          data-testid="toggle"
+          onClick={() => setOpen(!isOpen)}
+        >
+          toggle
         </button>
-      ),
-    });
+        <Drawer open={isOpen} onDismiss={() => setOpen(false)}>
+          content with
+          <button type="button" data-testid="interactive-element">
+            button
+          </button>
+          {children}
+        </Drawer>
+      </>
+    );
+  };
+
+  test('focus on first interactive element', async () => {
+    const {findByTestId, getByTestId} = renderWithThemeInBody(DrawerPage);
+    const toggleButton = getByTestId('toggle');
+    toggleButton.focus();
+    fireEvent.click(toggleButton);
 
     await waitFor(async () => {
       const element = await findByTestId('interactive-element');
@@ -204,52 +236,29 @@ describe('Drawer focus management', () => {
   });
 
   test('focus on custom element using data-autofocus attr', async () => {
-    const {findByTestId} = renderWithTheme(Drawer, {
-      open: true,
-      onDismiss: () => {},
+    const {findByTestId, getByTestId} = renderWithThemeInBody(DrawerPage, {
       children: (
-        <>
-          <button type="button">another button</button>
-          <p>text here</p>
-          <button
-            data-autofocus
-            type="button"
-            data-testid="interactive-element"
-          >
-            auto focus button
-          </button>
-        </>
+        <button
+          type="button"
+          data-autofocus
+          data-testid="another-interactive-element"
+        >
+          button
+        </button>
       ),
     });
+    const toggleButton = getByTestId('toggle');
+    toggleButton.focus();
+    fireEvent.click(toggleButton);
 
     await waitFor(async () => {
-      const element = await findByTestId('interactive-element');
+      const element = await findByTestId('another-interactive-element');
       expect(element).toHaveFocus();
     });
   });
 
   test('return focus to the last focused element on close', async () => {
-    const DrawerPage = () => {
-      const [isOpen, setOpen] = useState(false);
-      return (
-        <>
-          <button
-            type="button"
-            data-testid="toggle"
-            onClick={() => setOpen(!isOpen)}
-          >
-            toggle
-          </button>
-          <Drawer open={isOpen} onDismiss={() => setOpen(false)}>
-            content with
-            <button type="button" data-testid="interactive-element">
-              button
-            </button>
-          </Drawer>
-        </>
-      );
-    };
-    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+    const {findByTestId, getByTestId, getByLabelText} = renderWithThemeInBody(
       DrawerPage,
     );
     let toggleButton = getByTestId('toggle');
@@ -277,7 +286,7 @@ describe('Drawer focus management', () => {
   });
 
   test('return focus to restoreFocusTo element on close', async () => {
-    const DrawerPage = () => {
+    const DrawerPageRestoreFocus = () => {
       const [isOpen, setOpen] = useState(false);
       const restoreFocusRef = useRef(null);
       return (
@@ -310,8 +319,8 @@ describe('Drawer focus management', () => {
         </>
       );
     };
-    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
-      DrawerPage,
+    const {findByTestId, getByTestId, getByLabelText} = renderWithThemeInBody(
+      DrawerPageRestoreFocus,
     );
     const toggleButton = getByTestId('toggle');
     toggleButton.focus();
@@ -338,32 +347,7 @@ describe('Drawer focus management', () => {
   });
 
   test("focusable Drawer's children should have tabindex -1 when it is closed", async () => {
-    const DrawerPage = () => {
-      const [isOpen, setOpen] = useState(false);
-
-      return (
-        <>
-          <button
-            type="button"
-            data-testid="toggle"
-            onClick={() => setOpen(!isOpen)}
-          >
-            toggle
-          </button>
-
-          <Drawer open={isOpen} onDismiss={() => setOpen(false)}>
-            content with
-            <button type="button" data-testid="interactive-element">
-              button
-            </button>
-          </Drawer>
-          <button type="button" data-testid="restoreFocusTo">
-            another button
-          </button>
-        </>
-      );
-    };
-    const {getByTestId} = renderWithTheme(DrawerPage);
+    const {getByTestId} = renderWithThemeInBody(DrawerPage);
     const toggleButton = getByTestId('toggle');
 
     expect(getByTestId('interactive-element')).toHaveAttribute(
@@ -377,7 +361,7 @@ describe('Drawer focus management', () => {
 
 describe('Drawer focus management when focus trap is disabled', () => {
   test('focus on first interactive element', async () => {
-    const {findByTestId} = renderWithTheme(Drawer, {
+    const {findByTestId} = renderWithThemeInBody(Drawer, {
       open: true,
       onDismiss: () => {},
       disableFocusTrap: true,
@@ -395,7 +379,7 @@ describe('Drawer focus management when focus trap is disabled', () => {
   });
 
   test('focus on custom element using data-autofocus attr', async () => {
-    const {findByTestId} = renderWithTheme(Drawer, {
+    const {findByTestId} = renderWithThemeInBody(Drawer, {
       open: true,
       onDismiss: () => {},
       disableFocusTrap: true,
@@ -445,7 +429,7 @@ describe('Drawer focus management when focus trap is disabled', () => {
         </>
       );
     };
-    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+    const {findByTestId, getByTestId, getByLabelText} = renderWithThemeInBody(
       DrawerPage,
     );
     let toggleButton = getByTestId('toggle');
@@ -507,7 +491,7 @@ describe('Drawer focus management when focus trap is disabled', () => {
         </>
       );
     };
-    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+    const {findByTestId, getByTestId, getByLabelText} = renderWithThemeInBody(
       DrawerPage,
     );
     const toggleButton = getByTestId('toggle');
@@ -535,7 +519,7 @@ describe('Drawer focus management when focus trap is disabled', () => {
   });
 
   test('render inline-drawer', () => {
-    const fragment = renderToFragmentWithTheme(Drawer, {
+    const fragment = renderToFragmentInBody(Drawer, {
       open: true,
       inline: true,
       onDismiss: () => {},
@@ -546,7 +530,7 @@ describe('Drawer focus management when focus trap is disabled', () => {
   });
 
   test('render inline-drawer with logical props overrides', () => {
-    const fragment = renderToFragmentWithTheme(Drawer, {
+    const fragment = renderToFragmentInBody(Drawer, {
       open: true,
       inline: true,
       onDismiss: () => {},
@@ -563,7 +547,7 @@ describe('Drawer focus management when focus trap is disabled', () => {
   });
 
   test('render drawer with logical padding overrides', () => {
-    const fragment = renderToFragmentWithTheme(Drawer, {
+    const fragment = renderToFragmentInBody(Drawer, {
       open: true,
       onDismiss: () => {},
       header: drawerHeader,

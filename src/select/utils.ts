@@ -5,15 +5,6 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 import {get} from '../utils/get';
 import {hasOwnProperty} from '../utils/has-own-property';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
-import {MQ} from '../utils/style/types';
-
-export const shouldRenderInModal = (
-  prop: MQ<boolean>,
-  currentBreakpoint: string,
-) => {
-  const modalMQKeys = Object.keys(prop).filter(Boolean);
-  return modalMQKeys.includes(currentBreakpoint) || prop === true;
-};
 
 export const getModalOverrides = ({
   theme,

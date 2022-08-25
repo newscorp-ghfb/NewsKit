@@ -92,6 +92,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -448,6 +449,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -782,6 +784,7 @@ exports[`Popover close button should show left-aligned 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -1118,6 +1121,7 @@ exports[`Popover close button should show right-aligned 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -1456,6 +1460,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -1812,6 +1817,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -2181,6 +2187,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -2537,6 +2544,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -2923,6 +2931,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -3290,6 +3299,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -3677,6 +3687,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -4034,6 +4045,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -4391,6 +4403,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -4748,6 +4761,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -5105,6 +5119,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -5443,6 +5458,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -5800,6 +5816,7 @@ exports[`Popover pointer padding should be applied with token distance override 
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -6157,6 +6174,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -6514,6 +6532,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -6871,6 +6890,7 @@ exports[`Popover should render correct styles: default 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -7220,6 +7240,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   letter-spacing: 0;
   padding-inline: 8px;
   padding-block: 16px;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -7558,6 +7579,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -7915,6 +7937,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -8272,6 +8295,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -8629,6 +8653,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   color: #2E2E2E;
   border-radius: 8px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .emotion-2 {

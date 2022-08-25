@@ -33,96 +33,106 @@ const buildContextAriaAttributes: BuildAriaAttributesFn = ({
   'aria-controls': open ? id : undefined,
 });
 
-const ThemelessPopover: React.FC<PopoverProps> = ({
-  children,
-  content,
-  header,
-  closePosition = 'right',
-  overrides = {},
-  handleCloseButtonClick,
-  enableDismiss = false,
-  ...props
-}) => {
-  const theme = useTheme();
-  const closeButtonOverrides: typeof overrides['closeButton'] = {
-    ...deepMerge(
-      mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
-      theme.componentDefaults.popover.closeButton,
-      filterOutFalsyProperties(overrides.closeButton),
-    ),
-  };
-  const headerId = `header-${useId()}`;
+const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
+  (
+    {
+      children,
+      content,
+      header,
+      closePosition = 'right',
+      overrides = {},
+      handleCloseButtonClick,
+      enableDismiss = false,
+      disableFocusManagement = false,
+      ...props
+    },
+    ref,
+  ) => {
+    const theme = useTheme();
+    const closeButtonOverrides: typeof overrides['closeButton'] = {
+      ...deepMerge(
+        mergeBreakpointObject(
+          Object.keys(theme.breakpoints) as BreakpointKeys[],
+        ),
+        theme.componentDefaults.popover.closeButton,
+        filterOutFalsyProperties(overrides.closeButton),
+      ),
+    };
+    const headerId = `header-${useId()}`;
 
-  const buildFloatingElementAriaAttributes: BuildAriaAttributesFn = ({
-    ref: {id},
-  }) => ({
-    'aria-labelledby': header ? undefined : id,
-    'aria-describedby': header ? headerId : undefined,
-  });
+    const buildFloatingElementAriaAttributes: BuildAriaAttributesFn = ({
+      ref: {id},
+    }) => ({
+      'aria-labelledby': header ? undefined : id,
+      'aria-describedby': header ? headerId : undefined,
+    });
 
-  const useInteractions = (context: FloatingContext<HTMLElement>) =>
-    floatingUiUseInteractions([
-      useClick(context),
-      useDismiss(context, {
-        enabled: enableDismiss,
-      }),
-    ]);
+    const useInteractions = (context: FloatingContext<HTMLElement>) =>
+      floatingUiUseInteractions([
+        useClick(context),
+        useDismiss(context, {
+          enabled: enableDismiss,
+        }),
+      ]);
 
-  if (!content) {
-    return children;
-  }
+    if (!content) {
+      return children;
+    }
 
-  return (
-    <BaseFloatingElement
-      path="popover"
-      content={({onClick}) => (
-        <StyledPopoverInnerPanel closePosition={closePosition}>
-          {header !== undefined && (
-            <StyledPopoverHeader
-              id={headerId}
-              data-testid="header-text"
-              overrides={overrides}
-            >
-              {header}
-            </StyledPopoverHeader>
-          )}
-          <StyledPopoverContent overrides={overrides}>
-            {content}
-          </StyledPopoverContent>
-          {closePosition !== 'none' && (
-            <StyledPopoverCloseButtonContainer
-              overrides={overrides}
-              closePosition={closePosition}
-            >
-              <IconButton
-                onClick={(e: React.MouseEvent<HTMLElement>) => {
-                  onClick(e);
-                  if (handleCloseButtonClick) {
-                    handleCloseButtonClick();
-                  }
-                }}
-                data-testid="close-button"
-                aria-label="close"
-                overrides={closeButtonOverrides}
-                size={ButtonSize.Medium}
+    return (
+      <BaseFloatingElement
+        ref={ref}
+        path="popover"
+        content={({onClick}) => (
+          <StyledPopoverInnerPanel closePosition={closePosition}>
+            {header !== undefined && (
+              <StyledPopoverHeader
+                id={headerId}
+                data-testid="header-text"
+                overrides={overrides}
               >
-                <IconFilledClose />
-              </IconButton>
-            </StyledPopoverCloseButtonContainer>
-          )}
-        </StyledPopoverInnerPanel>
-      )}
-      buildRefElAriaAttributes={buildContextAriaAttributes}
-      buildFloatingElAriaAttributes={buildFloatingElementAriaAttributes}
-      useInteractions={useInteractions}
-      role="dialog"
-      overrides={overrides}
-      {...props}
-    >
-      {children}
-    </BaseFloatingElement>
-  );
-};
+                {header}
+              </StyledPopoverHeader>
+            )}
+            <StyledPopoverContent overrides={overrides}>
+              {content}
+            </StyledPopoverContent>
+            {closePosition !== 'none' && (
+              <StyledPopoverCloseButtonContainer
+                overrides={overrides}
+                closePosition={closePosition}
+              >
+                <IconButton
+                  onClick={(e: React.MouseEvent<HTMLElement>) => {
+                    onClick(e);
+                    if (handleCloseButtonClick) {
+                      handleCloseButtonClick();
+                    }
+                  }}
+                  data-testid="close-button"
+                  aria-label="close"
+                  overrides={closeButtonOverrides}
+                  size={ButtonSize.Medium}
+                >
+                  <IconFilledClose />
+                </IconButton>
+              </StyledPopoverCloseButtonContainer>
+            )}
+          </StyledPopoverInnerPanel>
+        )}
+        buildRefElAriaAttributes={buildContextAriaAttributes}
+        buildFloatingElAriaAttributes={buildFloatingElementAriaAttributes}
+        useInteractions={useInteractions}
+        role="dialog"
+        overrides={overrides}
+        disableFocusManagement={disableFocusManagement}
+        {...props}
+      >
+        {children}
+      </BaseFloatingElement>
+    );
+  },
+);
 
 export const Popover = withOwnTheme(ThemelessPopover)({
   defaults,

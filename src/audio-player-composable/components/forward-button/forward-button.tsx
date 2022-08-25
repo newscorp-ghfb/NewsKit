@@ -9,30 +9,32 @@ import {AudioPlayerForwardButtonProps} from './types';
 
 const defaultKeyboardShortcuts = ['l'];
 
-const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerForwardButtonProps> = React.memo(
-  props => {
-    const {getForwardButtonProps} = useAudioPlayerContext();
+const ThemelessAudioPlayerForwardButton = React.forwardRef<
+  HTMLButtonElement,
+  AudioPlayerForwardButtonProps
+>(({...props}, ref) => {
+  const {getForwardButtonProps} = useAudioPlayerContext();
 
-    const overrides = useButtonOverrides(props, 'audioPlayerForwardButton');
+  const overrides = useButtonOverrides(props, 'audioPlayerForwardButton');
 
-    const propsFromContext =
-      getForwardButtonProps! && getForwardButtonProps(props);
+  const propsFromContext =
+    getForwardButtonProps! && getForwardButtonProps(props);
 
-    useKeyboardShortcutsOnButton({
-      props: propsFromContext as AudioPlayerForwardButtonProps,
-      defaults: defaultKeyboardShortcuts,
-    });
+  useKeyboardShortcutsOnButton({
+    props: propsFromContext as AudioPlayerForwardButtonProps,
+    defaults: defaultKeyboardShortcuts,
+  });
 
-    return (
-      <IconButton
-        data-testid="audio-player-forward-button"
-        size={ButtonSize.Medium}
-        overrides={overrides}
-        {...propsFromContext}
-      />
-    );
-  },
-);
+  return (
+    <IconButton
+      ref={ref}
+      data-testid="audio-player-forward-button"
+      size={ButtonSize.Medium}
+      overrides={overrides}
+      {...propsFromContext}
+    />
+  );
+});
 
 export const AudioPlayerForwardButton = withOwnTheme(
   ThemelessAudioPlayerForwardButton,

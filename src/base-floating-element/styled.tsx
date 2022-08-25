@@ -40,6 +40,7 @@ export const StyledPanel = styled(TextBlock)<
   ${({path}) => getStylePreset(`${path}.panel`, 'panel')};
   ${({path}) => getTypographyPreset(`${path}.panel`, 'panel')};
   ${({path}) => logicalProps(`${path}.panel`, 'panel')}
+  overflow: hidden;
 `;
 
 export const StyledPointer = styled.div<

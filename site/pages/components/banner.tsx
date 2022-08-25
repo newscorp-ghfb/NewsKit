@@ -6,11 +6,12 @@ import {
   BannerProps,
   Button,
   ButtonOrButtonLinkProps,
-  IconFilledInfo,
   Link,
   styled,
   TextBlock,
+  toNewsKitIcon,
 } from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
@@ -18,6 +19,8 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 const CTABtn = ({overrides, ...restProps}: ButtonOrButtonLinkProps) => (
   <Button
@@ -609,22 +612,8 @@ const BannerComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      states: true,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      performance: false,
-      design: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
-      introduction: 'Componenets related to Banner',
-      related: ['Drawer', 'Toast', 'Modal'],
+      related: ['Flag', 'Toast', 'Inline Message', 'Tooltip'],
     }}
   />
 );

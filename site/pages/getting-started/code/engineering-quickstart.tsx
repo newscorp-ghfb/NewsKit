@@ -5,7 +5,6 @@ import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {InlineCode} from '../../../components/markdown-elements';
 import {LayoutProps} from '../../../components/layout';
-import {IconFilledCircle} from '../../../components/icons';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
@@ -66,7 +65,6 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
         >
           <UnorderedList
             markerAlign="center"
-            listItemMarker={IconFilledCircle}
             overrides={{
               marker: {
                 spaceInline: 'space020',
@@ -134,11 +132,21 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Code>npm install newskit</Code>
+          <Code>npm install newskit @emotion/react @emotion/styled</Code>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>or</P>
           <br />
-          <Code>yarn add newskit</Code>
+          <Code>yarn add newskit @emotion/react @emotion/styled</Code>
+          <br />
+          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            Please note that newskit is using{' '}
+            <Link href="https://emotion.sh/docs/introduction" target="_blank">
+              emotion
+            </Link>{' '}
+            as styling engine, that is why you also need to install
+            <InlineCode>@emotion/react</InlineCode> and
+            <InlineCode>@emotion/styled</InlineCode>.
+          </P>
         </ContentPrimary>
       </ContentSection>
 
@@ -157,31 +165,47 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
                 react components
               </Link>
               . One thing to bear in mind is that they will need to be
-              descendants of a <InlineCode>ThemeProvider</InlineCode>, this can
-              be thought of as the theme context, this theme will be applied to
-              all of its descendants. The following example shows the
-              &quot;Hello World!&quot; example of using a NewsKit{' '}
-              <Link href="/components/tag/">Tag component</Link> with the{' '}
-              <Link href="/theme/theming/using-a-theme/">Theme Provider</Link>.
+              descendants of a <InlineCode>NewsKitProvider</InlineCode> which
+              provides a single wrapper to configure your application. It adds a{' '}
+              <Link href="/theme/theming/using-a-theme/">ThemeProvider</Link>,{' '}
+              <Link href="/components/utils/hooks/#usemediaqueryobject">
+                MediaQueryProvider
+              </Link>
+              ,{' '}
+              <Link href="/getting-started/code/instrumentation/">
+                InstrumentationProvider
+              </Link>{' '}
+              and a LayerOrganizer to handle theming, media queries,
+              instrumentation and stacking context in the application.
+              <br />
+              <br />
+              The following example shows the &quot;Hello World!&quot; example
+              of using a NewsKit{' '}
+              <Link href="/components/tag/">Tag component</Link> with the
+              NewsKitProvider.
             </>
           }
           showSeparator
         >
           <Code>
-            {`import {ThemeProvider, Tag, TagSize, newskitLightTheme} from 'newskit';
+            {`import {NewsKitProvider, Tag, TagSize, newskitLightTheme} from 'newskit';
 import React from 'react';
 export default class App extends React.Component {
-render() {
-  return (
-    <ThemeProvider theme={newskitLightTheme}>
-      <Tag
-        href="http://example.com"
-        size={TagSize.Medium}>
-          Tag Content
-      </Tag>
-    </ThemeProvider>
-  )
-}
+  render() {
+    return (
+      <NewsKitProvider 
+        theme={newskitLightTheme}
+        instrumentation={'instrumentation provider props'}
+        layer={'layer organizer props'}
+        >
+        <Tag
+          href="http://example.com"
+          size={TagSize.Medium}>
+            Tag Content
+        </Tag>
+      </NewsKitProvider>
+    )
+  }
 }`}
           </Code>
         </ContentPrimary>

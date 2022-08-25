@@ -60,6 +60,8 @@ export interface FloatingElementProps
   boundary?: Boundary;
   hidePointer?: boolean;
   restoreFocusTo?: HTMLElement;
+  focusElementRef?: React.RefObject<HTMLElement>;
+  disableFocusManagement?: boolean;
 }
 
 export interface BaseFloatingElementProps extends FloatingElementProps {

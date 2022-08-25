@@ -179,7 +179,8 @@ exports[`Switch hide feedback 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -485,7 +486,8 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -817,7 +819,8 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -1058,7 +1061,8 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -1296,7 +1300,8 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -1603,7 +1608,8 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -1935,7 +1941,8 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -2176,7 +2183,8 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -2414,7 +2422,8 @@ exports[`Switch hover on label with disabled do not change hover state: without 
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -2743,7 +2752,8 @@ exports[`Switch label attributes 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -3090,7 +3100,8 @@ exports[`Switch label position start 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -3409,7 +3420,8 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -3698,7 +3710,8 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -3991,7 +4004,8 @@ exports[`Switch passes checked prop to custom thumb icon 1`] = `
   width: 24px;
   height: 24px;
   left: calc(100% - 24px);
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -4367,7 +4381,8 @@ exports[`Switch passes checked prop to custom thumb icon 2`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -4703,7 +4718,8 @@ exports[`Switch render with size: large & checked 1`] = `
   width: 32px;
   height: 32px;
   left: calc(100% - 32px);
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -4945,7 +4961,8 @@ exports[`Switch render with size: large & disabled 1`] = `
   width: 32px;
   height: 32px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -5274,7 +5291,8 @@ exports[`Switch render with size: large 1`] = `
   width: 32px;
   height: 32px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -5567,7 +5585,8 @@ exports[`Switch render with size: medium & checked 1`] = `
   width: 24px;
   height: 24px;
   left: calc(100% - 24px);
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -5809,7 +5828,8 @@ exports[`Switch render with size: medium & disabled 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -6138,7 +6158,8 @@ exports[`Switch render with size: medium 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -6431,7 +6452,8 @@ exports[`Switch render with size: small & checked 1`] = `
   width: 16px;
   height: 16px;
   left: calc(100% - 16px);
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -6673,7 +6695,8 @@ exports[`Switch render with size: small & disabled 1`] = `
   width: 16px;
   height: 16px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -7002,7 +7025,8 @@ exports[`Switch render with size: small 1`] = `
   width: 16px;
   height: 16px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -7334,7 +7358,8 @@ exports[`Switch render with state: base 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -7628,7 +7653,8 @@ exports[`Switch render with state: checked 1`] = `
   width: 24px;
   height: 24px;
   left: calc(100% - 24px);
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -7871,7 +7897,8 @@ exports[`Switch render with state: checked-disabled 1`] = `
   width: 24px;
   height: 24px;
   left: calc(100% - 24px);
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -8111,7 +8138,8 @@ exports[`Switch render with state: disabled 1`] = `
   width: 24px;
   height: 24px;
   left: 0;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -8380,7 +8408,8 @@ exports[`Switch with overrides 1`] = `
   width: 95px;
   height: 95px;
   left: calc(100% - 95px);
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
