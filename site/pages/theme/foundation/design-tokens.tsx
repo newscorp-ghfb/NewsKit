@@ -1,5 +1,9 @@
 import React from 'react';
-import {styled, getColorCssFromTheme} from 'newskit';
+import {
+  styled,
+  getColorCssFromTheme,
+  getTypographyPresetFromTheme,
+} from 'newskit';
 import {InlineCode} from '../../../components/markdown-elements';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
@@ -19,7 +23,14 @@ interface TextElementProps {
 const TextElement = styled.span<TextElementProps>`
   ${({colorPreset}) =>
     getColorCssFromTheme('color', colorPreset || 'purple050')}
+
+  ${getTypographyPresetFromTheme({
+    xs: 'editorialParagraph020',
+    md: 'editorialParagraph030',
+  })}
 `;
+
+TextElement.displayName = 'ColoredTextElement';
 
 const tokenData = [
   {property: 'body', series: '010'},
@@ -36,10 +47,10 @@ const TokenStyle: React.FC<TextElementProps> = () => {
   for (let i = 0; i < tokenData.length; i++) {
     const item = tokenData[i];
     tokens.push(
-      <>
+      <React.Fragment key={item.property + item.series}>
         <TextElement>{item.property}</TextElement>
         <TextElement colorPreset="teal050">{item.series}</TextElement>, <br />
-      </>,
+      </React.Fragment>,
     );
   }
   return <TextElement>{tokens}</TextElement>;
@@ -133,11 +144,9 @@ const DesignTokens = (layoutProps: LayoutProps) => (
           }
         />
 
-        <ContentSecondary
-          headline="For example:"
-          description={<TokenStyle />}
-          showSeparator
-        />
+        <ContentSecondary headline="For example:" showSeparator>
+          <TokenStyle />
+        </ContentSecondary>
       </ContentSection>
 
       <ContentSection sectionName="presets">

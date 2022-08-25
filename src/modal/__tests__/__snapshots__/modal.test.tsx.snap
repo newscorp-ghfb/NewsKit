@@ -557,10 +557,10 @@ exports[`Modal renders default 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
                       <svg
@@ -579,8 +579,8 @@ exports[`Modal renders default 1`] = `
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -1143,10 +1143,10 @@ exports[`Modal renders inline 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
                     <svg
@@ -1165,8 +1165,8 @@ exports[`Modal renders inline 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -1664,10 +1664,10 @@ exports[`Modal renders modal with overrides 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -1686,8 +1686,8 @@ exports[`Modal renders modal with overrides 1`] = `
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -2329,10 +2329,10 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
                     data-testid="button"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
-                      <div
+                      <span
                         class="emotion-12"
                       >
                         <svg
@@ -2351,8 +2351,8 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
                             d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
                 <span
@@ -2924,10 +2924,10 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -2946,8 +2946,8 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -3493,10 +3493,10 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -3515,8 +3515,8 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -4090,10 +4090,10 @@ exports[`Modal renders with different closePosition 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
                       <svg
@@ -4112,8 +4112,8 @@ exports[`Modal renders with different closePosition 1`] = `
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -4689,10 +4689,10 @@ exports[`Modal renders with logical padding props 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
                       <svg
@@ -4711,8 +4711,8 @@ exports[`Modal renders with logical padding props 1`] = `
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -5663,10 +5663,10 @@ exports[`Modal renders without header 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <svg
@@ -5685,8 +5685,8 @@ exports[`Modal renders without header 1`] = `
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -6538,10 +6538,10 @@ exports[`Modal renders without overlay 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-9"
                   >
-                    <div
+                    <span
                       class="emotion-10"
                     >
                       <svg
@@ -6560,8 +6560,8 @@ exports[`Modal renders without overlay 1`] = `
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -7103,10 +7103,10 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -7125,8 +7125,8 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
