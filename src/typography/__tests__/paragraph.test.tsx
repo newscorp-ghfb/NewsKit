@@ -18,6 +18,14 @@ describe('Paragraph', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  test('renders with additional HTML attributes', () => {
+    const wrapper = renderToFragmentWithTheme(Paragraph, {
+      children: 'paragraph component',
+      id: 'paragraph-id',
+    });
+    expect(wrapper).toMatchSnapshot();
+  });
+
   test('renders Paragraph with overrides', () => {
     const wrapper = renderToFragmentWithTheme(Paragraph, {
       children: 'paragraph component',

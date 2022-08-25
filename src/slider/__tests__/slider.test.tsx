@@ -58,6 +58,18 @@ describe('slider', () => {
       `);
     });
 
+    it('should pass additional HTML attributes to the Range component', () => {
+      const fragment = renderToFragmentWithTheme(Slider, {
+        values: [20, 80],
+        min: 0,
+        max: 100,
+        onChange: () => {},
+        id: 'slider-id',
+      });
+
+      expect(fragment).toMatchSnapshot();
+    });
+
     it('should allow overriding the renderTrack and renderThumb function', () => {
       const renderTrack: any = () => {};
       const renderThumb: any = () => {};

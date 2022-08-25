@@ -80,6 +80,8 @@
     "@commitlint/load": "8.0.0",
     "@commitlint/parse": "8.0.0",
     "@commitlint/read": "8.0.0",
+    "@docsearch/css": "^3.0.0",
+    "@docsearch/react": "^3.0.0",
     "@emotion/jest": "^11.2.1",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",

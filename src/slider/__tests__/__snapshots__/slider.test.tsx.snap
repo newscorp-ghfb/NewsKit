@@ -2326,6 +2326,45 @@ exports[`slider react-range Range function props renderTrack should render verti
 </DocumentFragment>
 `;
 
+exports[`slider react-range should pass additional HTML attributes to the Range component 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+<div
+    class="emotion-0"
+    data-testid="slider"
+    id="slider-id"
+  >
+    <div>
+      react-range
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`slider react-range should pass logical prop overrides to Stack 1`] = `
 <DocumentFragment>
   .emotion-0 {

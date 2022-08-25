@@ -222,4 +222,14 @@ describe('Byline', () => {
 
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders with additional HTML attributes', () => {
+    const props: BylineProps = {
+      bylineData: [],
+      id: 'byline-id',
+    };
+    const fragment = renderToFragmentWithTheme(Byline, props) as any;
+
+    expect(fragment).toMatchSnapshot();
+  });
 });

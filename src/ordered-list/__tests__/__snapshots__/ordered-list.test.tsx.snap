@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`OrderedList renders with additional HTML attributes 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: item-counter;
+}
+
+<ol
+    class="emotion-0"
+    id="ordered-list-id"
+    role="list"
+  />
+</DocumentFragment>
+`;
+
 exports[`OrderedList renders with defaults 1`] = `
 <DocumentFragment>
   .emotion-0 {
