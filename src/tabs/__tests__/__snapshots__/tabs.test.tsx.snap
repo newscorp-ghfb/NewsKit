@@ -12414,10 +12414,10 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
-                    <div
+                    <span
                       class="emotion-9"
                     >
                       <span
@@ -12425,8 +12425,8 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
                       >
                         label
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
