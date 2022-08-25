@@ -6,7 +6,6 @@ import {
   compileTheme,
   newskitLightTheme,
   newskitDarkTheme,
-  getSSRId,
 } from 'newskit';
 import React from 'react';
 import {Mono, MonoProps} from '../mono';
@@ -36,7 +35,7 @@ export const MonoColor: React.FC<MonoColorProps> = ({color}) => {
       ? compiledNewskitLightTheme
       : compiledNewskitDarkTheme;
   return (
-    <Mono key={getSSRId()}>
+    <Mono key={color + themeMode}>
       <StyledSwatchCardDot backgroundColor={theme.colors[color]} />
       {color}
     </Mono>

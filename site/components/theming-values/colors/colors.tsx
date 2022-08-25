@@ -25,6 +25,7 @@ const ColorSet: React.FC<{
       <Grid {...gridProps} xsColumnGutter="space080">
         {colors.map((color, index, {length}) => (
           <Swatch
+            key={color.name}
             color={color}
             index={index}
             length={length}
@@ -52,12 +53,13 @@ export const ColorPalettes: React.FC = () => {
   );
 
   const palettes = Object.values(paletteObjects);
+  const palletesNames = Object.keys(paletteObjects);
 
   return (
     <ColorPalettesWrapper>
       <Grid xsMargin="space000">
-        {palettes.map(palette => (
-          <Cell xs={12} lg={12} xl={6}>
+        {palettes.map((palette, index) => (
+          <Cell xs={12} lg={12} xl={6} key={palletesNames[index]}>
             <ColorSetWrapper>
               <ColorSet
                 gridProps={{xsMargin: 'sizing000', xsRowGutter: 'sizing000'}}
