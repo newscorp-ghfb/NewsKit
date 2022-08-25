@@ -53,9 +53,7 @@ export interface LayoutProps {
   toggleTheme: () => void;
   themeMode: string;
   hideSidebar?: boolean;
-  children?:
-    | React.ReactNode
-    | ((props: {themeMode: string}) => React.ReactNode);
+  children: React.ReactNode | ((props: {themeMode: string}) => React.ReactNode);
 }
 interface LayoutState {
   sidebarOpen: boolean;

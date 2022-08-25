@@ -119,26 +119,23 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
     );
 
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
-      items.map(({title, id}) => {
-        const route = currentRoute || '/';
-        return (
-          <MenuItem
-            data-testid="styled-indicator"
-            key={id}
-            href={id.substring(1)}
-            size="small"
-            selected={route.split('/')[1].includes(id.split('/')[1])}
-            overrides={{
-              stylePreset: 'linkTopNavigation',
-              minHeight: '80px',
-              marginInline: '10px',
-              paddingInline: {lg: '3px', xl: '16px'},
-            }}
-          >
-            {title}
-          </MenuItem>
-        );
-      });
+      items.map(({title, id}) => (
+        <MenuItem
+          data-testid="styled-indicator"
+          key={id}
+          href={id.substring(1)}
+          size="small"
+          selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
+          overrides={{
+            stylePreset: 'linkTopNavigation',
+            minHeight: '80px',
+            marginInline: '10px',
+            paddingInline: {lg: '3px', xl: '16px'},
+          }}
+        >
+          {title}
+        </MenuItem>
+      ));
 
     return (
       <Header data-testid="header-navigation" ref={ref}>
