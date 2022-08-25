@@ -6,43 +6,13 @@ import {ScrollProps} from '../scroll';
 import {Override} from '../utils/overrides';
 import {LogicalProps} from '../utils/logical-properties';
 
-export enum TabAlign {
-  Start = 'start',
-  End = 'end',
-  Center = 'center',
-}
-
-export enum TabSize {
-  Small = 'small',
-  Medium = 'medium',
-  Large = 'large',
-}
-
-export enum TabsDistribution {
-  Start = 'start',
-  Grow = 'grow',
-  Equal = 'equal',
-}
-
-export enum TabsIndicatorPosition {
-  Start = 'start',
-  End = 'end',
-  None = 'none',
-}
-type TabSizeType = TabSize | 'small' | 'medium' | 'large';
-export type TabsDistributionType =
-  | TabsDistribution
-  | 'start'
-  | 'grow'
-  | 'equal';
-export type TabsIndicatorPositionType =
-  | TabsIndicatorPosition
-  | 'start'
-  | 'end'
-  | 'none';
+export type TabAlign = 'start' | 'end' | 'center';
+export type TabSize = 'small' | 'medium' | 'large';
+export type TabsDistribution = 'start' | 'grow' | 'equal';
+export type TabsIndicatorPosition = 'start' | 'end' | 'none';
 export interface TabsProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
-  size?: TabSizeType;
+  size?: TabSize;
   children: React.ReactElement<TabProps>[];
   divider?: boolean;
   vertical?: boolean;

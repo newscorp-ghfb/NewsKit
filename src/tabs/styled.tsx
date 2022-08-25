@@ -12,9 +12,7 @@ import {
   DistributionWrapperProps,
   TabsBarProps,
   TabButtonProps,
-  TabAlign,
-  TabsIndicatorPositionType,
-  TabsDistributionType,
+  TabsIndicatorPosition,
 } from './types';
 import {Stack} from '../stack';
 import {TextBlock, TextBlockProps} from '../text-block';

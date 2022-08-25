@@ -29,8 +29,8 @@ const BaseFlag = React.forwardRef<
     >
       <Stack
         spaceInline={getToken({theme, overrides}, '', '', 'spaceInline')}
-        flow={Flow.HorizontalCenter}
-        stackDistribution={StackDistribution.Center}
+        flow="horizontal-center"
+        stackDistribution="center"
         as="span"
       >
         {React.Children.map(children, child =>
@@ -53,7 +53,7 @@ const BaseFlag = React.forwardRef<
 const ThemelessFlag = React.forwardRef<HTMLDivElement, FlagProps>(
   ({overrides = {}, ...props}, ref) => {
     const theme = useTheme();
-    const {size = FlagSize.Medium} = props;
+    const {size = 'medium'} = props;
 
     return (
       <BaseFlag

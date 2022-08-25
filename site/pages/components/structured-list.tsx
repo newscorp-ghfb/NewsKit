@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Flow,
   InlineMessage,
   Stack,
   StructuredListCell,

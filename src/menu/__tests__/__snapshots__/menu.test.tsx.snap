@@ -205,143 +205,96 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
       role="list"
     >
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="emotion-7"
-            role="separator"
-          >
-            <hr
-              aria-hidden="true"
-              class="emotion-8"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
-            >
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
-              </span>
-            </a>
-          </li>
-          ,
-        </ul>
+            </span>
+          </span>
+        </a>
       </li>
       <li
-        aria-hidden="true"
-        class="emotion-7"
-        role="separator"
+        class="nk-menu-item emotion-1"
       >
-        <hr
-          aria-hidden="true"
-          class="emotion-8"
-          data-testid="divider"
-        />
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
+          >
+            <span
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Menu item
+              </span>
+            </span>
+          </span>
+        </a>
       </li>
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="emotion-7"
-            role="separator"
+            </span>
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <hr
-              aria-hidden="true"
-              class="emotion-8"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          ,
-        </ul>
+            </span>
+          </span>
+        </a>
       </li>
     </ul>
   </nav>
@@ -557,108 +510,96 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
       role="list"
     >
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
-            >
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
-              </span>
-            </a>
-          </li>
-        </ul>
+            </span>
+          </span>
+        </a>
       </li>
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
+            </span>
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-        </ul>
+            </span>
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
+          >
+            <span
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Menu item
+              </span>
+            </span>
+          </span>
+        </a>
       </li>
     </ul>
   </nav>
@@ -1175,143 +1116,96 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
       role="list"
     >
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="emotion-7"
-            role="separator"
-          >
-            <hr
-              aria-hidden="true"
-              class="emotion-8"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
-            >
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
-              </span>
-            </a>
-          </li>
-          ,
-        </ul>
+            </span>
+          </span>
+        </a>
       </li>
       <li
-        aria-hidden="true"
-        class="emotion-7"
-        role="separator"
+        class="nk-menu-item emotion-1"
       >
-        <hr
-          aria-hidden="true"
-          class="emotion-8"
-          data-testid="divider"
-        />
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
+          >
+            <span
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Menu item
+              </span>
+            </span>
+          </span>
+        </a>
       </li>
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="emotion-7"
-            role="separator"
+            </span>
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <hr
-              aria-hidden="true"
-              class="emotion-8"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          ,
-        </ul>
+            </span>
+          </span>
+        </a>
       </li>
     </ul>
   </nav>
@@ -1523,108 +1417,96 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
       role="list"
     >
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
-            >
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
-              </span>
-            </a>
-          </li>
-        </ul>
+            </span>
+          </span>
+        </a>
       </li>
       <li
-        class="nk-menu-group emotion-1"
+        class="nk-menu-item emotion-1"
       >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
+            </span>
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
           >
-            <a
-              class="emotion-3"
-              data-testid="buttonLink"
-              href="http://"
+            <span
+              class="emotion-4"
             >
               <span
-                class="emotion-4"
+                class="emotion-5"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
-            </a>
-          </li>
-        </ul>
+            </span>
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
+          >
+            <span
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Menu item
+              </span>
+            </span>
+          </span>
+        </a>
       </li>
     </ul>
   </nav>
@@ -3998,116 +3880,143 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
       role="list"
     >
       <li
-        class="nk-menu-item emotion-1"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
           >
-            <span
-              class="emotion-4"
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+            </a>
+          </li>
+          <li
+            aria-hidden="true"
+            class="emotion-7"
+            role="separator"
           >
-            <span
-              class="emotion-4"
+            <hr
+              aria-hidden="true"
+              class="emotion-8"
+              data-testid="divider"
+            />
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
-      </li>
+            </a>
+          </li>
           ,
         </ul>
-=======
-                Menu item
-              </span>
-            </span>
-          </span>
-        </a>
->>>>>>> 9744b641846ae9f054ee75bccba9618d8e32c1fc
       </li>
       <li
-        class="nk-menu-item emotion-1"
+        aria-hidden="true"
+        class="emotion-7"
+        role="separator"
       >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
-          >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
-          </span>
-        </a>
+        <hr
+          aria-hidden="true"
+          class="emotion-8"
+          data-testid="divider"
+        />
       </li>
       <li
-        class="nk-menu-item emotion-1"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
           >
-            <span
-              class="emotion-4"
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
-      </li>
+            </a>
+          </li>
+          <li
+            aria-hidden="true"
+            class="emotion-7"
+            role="separator"
+          >
+            <hr
+              aria-hidden="true"
+              class="emotion-8"
+              data-testid="divider"
+            />
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <span
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
+              </span>
+            </a>
+          </li>
           ,
         </ul>
-=======
-                Menu item
-              </span>
-            </span>
-          </span>
-        </a>
->>>>>>> 9744b641846ae9f054ee75bccba9618d8e32c1fc
       </li>
     </ul>
   </nav>
@@ -4335,96 +4244,108 @@ exports[`Menu renders horizontally with menu group 1`] = `
       role="list"
     >
       <li
-        class="nk-menu-item emotion-1"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
           >
-            <span
-              class="emotion-4"
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <span
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
       </li>
       <li
-        class="nk-menu-item emotion-1"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
           >
-            <span
-              class="emotion-4"
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
           >
-            <span
-              class="emotion-4"
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
-          >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
-          </span>
-        </a>
+            </a>
+          </li>
+        </ul>
       </li>
     </ul>
   </nav>
@@ -4975,106 +4896,143 @@ exports[`Menu renders vertically with menu dividers 1`] = `
       role="list"
     >
       <li
-        class="nk-menu-item emotion-1"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
           >
-            <span
-              class="emotion-4"
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+            </a>
+          </li>
+          <li
+            aria-hidden="true"
+            class="emotion-7"
+            role="separator"
           >
-            <span
-              class="emotion-4"
+            <hr
+              aria-hidden="true"
+              class="emotion-8"
+              data-testid="divider"
+            />
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
-          >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
-          </span>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
-          >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
-          </span>
-        </a>
-      </li>
+            </a>
+          </li>
           ,
         </ul>
-=======
-                Menu item
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-7"
+        role="separator"
+      >
+        <hr
+          aria-hidden="true"
+          class="emotion-8"
+          data-testid="divider"
+        />
+      </li>
+      <li
+        class="nk-menu-group emotion-1"
+      >
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <span
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
->>>>>>> 9744b641846ae9f054ee75bccba9618d8e32c1fc
+            </a>
+          </li>
+          <li
+            aria-hidden="true"
+            class="emotion-7"
+            role="separator"
+          >
+            <hr
+              aria-hidden="true"
+              class="emotion-8"
+              data-testid="divider"
+            />
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <span
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
+              </span>
+            </a>
+          </li>
+          ,
+        </ul>
       </li>
     </ul>
   </nav>
@@ -5109,7 +5067,14 @@ exports[`Menu renders vertically with menu group 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-2 {
@@ -5295,96 +5260,108 @@ exports[`Menu renders vertically with menu group 1`] = `
       role="list"
     >
       <li
-        class="nk-menu-item emotion-1"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
           >
-            <span
-              class="emotion-4"
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <span
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
       </li>
       <li
-        class="nk-menu-item emotion-1"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
           >
-            <span
-              class="emotion-4"
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
           >
-            <span
-              class="emotion-4"
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-4"
               >
-                Menu item
+                <span
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </span>
               </span>
-            </span>
-          </span>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <span
-            class="emotion-3"
-          >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
-          </span>
-        </a>
+            </a>
+          </li>
+        </ul>
       </li>
     </ul>
   </nav>

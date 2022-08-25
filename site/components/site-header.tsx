@@ -7,7 +7,6 @@ import {
   getColorCssFromTheme,
   getSpacingCssFromTheme,
   getSizingCssFromTheme,
-  ButtonSize,
   getBorderCssFromTheme,
   MenuItem,
   Menu,

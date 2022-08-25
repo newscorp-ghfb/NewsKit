@@ -5,7 +5,7 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {compileTheme, createTheme, Tab, TabProps, TabSize} from '../..';
+import {compileTheme, createTheme, Tab, TabProps} from '../..';
 import {Tabs, TabsDistribution} from '..';
 import {TabsProps} from '../types';
 import {IconFilledEmail} from '../../icons';

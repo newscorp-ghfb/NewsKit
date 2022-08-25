@@ -1,5 +1,5 @@
 import React from 'react';
-import {TabAlign, TabButtonProps, TabSize} from './types';
+import {TabButtonProps} from './types';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme/emotion';
 import {StyledTabButton} from './styled';

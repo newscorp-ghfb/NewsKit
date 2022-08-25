@@ -1,14 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {isFragment} from 'react-is';
-import {
-  TabProps,
-  TabsProps,
-  TabsDistribution,
-  TabSize,
-  TabAlign,
-  TabsIndicatorPosition,
-  TabPanelProps,
-} from './types';
+import {TabProps, TabsProps, TabAlign, TabPanelProps} from './types';
 import {
   StyledTabsBar,
   StyledInnerTabGroup,
@@ -18,7 +10,6 @@ import {
   StyledDistributionWrapper,
   StyledDividerWrapper,
 } from './styled';
-import {Flow} from '../stack';
 import {TabButton} from './tab-button';
 import {useTheme} from '../theme';
 import {useResizeObserver} from '../utils/hooks/use-resize-observer';
@@ -296,7 +287,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
 
         acc.push(
           <StyledDistributionWrapper
-            distribution={distribution || TabsDistribution.Start}
+            distribution={distribution || 'start'}
             data-testid="distribution-wrapper"
             vertical={vertical}
             last={array.length === index + 1}
