@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, getSSRId, P} from 'newskit';
+import {Block, getSSRId, TextBlock} from 'newskit';
 import {Link} from '../link';
 import {SwatchCard} from '../swatch-card';
 import {MonoColor} from '../flags/mono-color';
@@ -82,11 +82,21 @@ export const renderCols = (
     switch (cellType) {
       case 'typographyPreset': {
         const paragraph = (
-          <P
-            overrides={{
-              typographyPreset: (cellValue as CellWithOverrides)
-                ?.preset as string,
+          <TextBlock
+            as="div"
+            paddingInlineEnd={{
+              xs: 'space020',
+              md: 'space030',
+              lg: 'space040',
             }}
+            paddingBlockEnd={{
+              xs: 'space020',
+              md: 'space030',
+              lg: 'space040',
+            }}
+            typographyPreset={
+              (cellValue as CellWithOverrides)?.preset as string
+            }
           >
             <div
               style={{
@@ -97,7 +107,7 @@ export const renderCols = (
             >
               The quick brown fox
             </div>
-          </P>
+          </TextBlock>
         );
         cellContent = ((cellValue as CellWithOverrides)?.config
           ?.isItalic as boolean) ? (

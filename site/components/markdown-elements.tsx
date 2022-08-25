@@ -140,6 +140,8 @@ export const InlineCode = styled.code`
   font-family: monospace;
 `;
 
+InlineCode.displayName = 'InlineCode';
+
 const Blockquote = styled.blockquote`
   background-color: ${getColorFromTheme('inkSubtle')};
   border-radius: 3px;

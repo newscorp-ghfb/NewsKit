@@ -415,10 +415,10 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
         data-testid="button"
         type="button"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -426,8 +426,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             >
               SWITCH THEME: 
             </span>
-          </div>
-          <div
+          </span>
+          <span
             class="emotion-4"
           >
             <span
@@ -435,8 +435,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             >
               LIGHT
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
       <select
         style="height: 26px; font-size: 16px;"
@@ -455,10 +455,10 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
         data-testid="single-svg-button"
         type="button"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -466,18 +466,18 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             >
               Download single SVG
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
       <button
         class="emotion-12"
         data-testid="button"
         type="button"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -485,8 +485,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             >
               DOWNLOAD ALL SVGs
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
     </div>
     <div
@@ -1181,10 +1181,10 @@ Object {
             disabled=""
             type="button"
           >
-            <div
+            <span
               class="emotion-3"
             >
-              <div
+              <span
                 class="emotion-4"
               >
                 <span
@@ -1192,8 +1192,8 @@ Object {
                 >
                   SWITCH THEME: 
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-4"
               >
                 <span
@@ -1201,8 +1201,8 @@ Object {
                 >
                   LIGHT
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
           <select
             disabled=""
@@ -1218,10 +1218,10 @@ Object {
             disabled=""
             type="button"
           >
-            <div
+            <span
               class="emotion-3"
             >
-              <div
+              <span
                 class="emotion-4"
               >
                 <span
@@ -1229,8 +1229,8 @@ Object {
                 >
                   Download single SVG
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
           <button
             class="emotion-12"
@@ -1238,10 +1238,10 @@ Object {
             disabled=""
             type="button"
           >
-            <div
+            <span
               class="emotion-3"
             >
-              <div
+              <span
                 class="emotion-4"
               >
                 <span
@@ -1249,8 +1249,8 @@ Object {
                 >
                   DOWNLOAD ALL SVGs
                 </span>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -1549,10 +1549,10 @@ Object {
           disabled=""
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -1560,8 +1560,8 @@ Object {
               >
                 SWITCH THEME: 
               </span>
-            </div>
-            <div
+            </span>
+            <span
               class="emotion-4"
             >
               <span
@@ -1569,8 +1569,8 @@ Object {
               >
                 LIGHT
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
         <select
           disabled=""
@@ -1586,10 +1586,10 @@ Object {
           disabled=""
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -1597,8 +1597,8 @@ Object {
               >
                 Download single SVG
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
         <button
           class="emotion-12"
@@ -1606,10 +1606,10 @@ Object {
           disabled=""
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -1617,8 +1617,8 @@ Object {
               >
                 DOWNLOAD ALL SVGs
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -2092,10 +2092,10 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
         data-testid="button"
         type="button"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -2103,8 +2103,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             >
               SWITCH THEME: 
             </span>
-          </div>
-          <div
+          </span>
+          <span
             class="emotion-4"
           >
             <span
@@ -2112,8 +2112,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             >
               LIGHT
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
       <select
         style="height: 26px; font-size: 16px;"
@@ -2132,10 +2132,10 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
         data-testid="single-svg-button"
         type="button"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -2143,18 +2143,18 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             >
               Download single SVG
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
       <button
         class="emotion-12"
         data-testid="button"
         type="button"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -2162,8 +2162,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             >
               DOWNLOAD ALL SVGs
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
     </div>
     <div
