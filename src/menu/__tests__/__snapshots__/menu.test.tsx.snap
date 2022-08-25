@@ -6916,11 +6916,41 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 .emotion-3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3.emotion-3 {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-7 {
   box-sizing: border-box;
   margin-bottom: 8px;
 }
 
-.emotion-4 {
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6960,52 +6990,52 @@ exports[`MenuGroup renders with title as a component 1`] = `
   text-align: left;
 }
 
-.emotion-4 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-4 svg {
+.emotion-8 svg {
   fill: #535353;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #3358CC;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #AEBFFF;
   color: #3358CC;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-4:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   background-color: transparent;
   border-color: #3358CC;
   color: #3358CC;
 }
 
-.emotion-4:selected:hover:not(:disabled) svg {
+.emotion-8:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-4:disabled {
+.emotion-8:disabled {
   color: #C0C0C0;
 }
 
-.emotion-4:disabled svg {
+.emotion-8:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-4:focus-visible:not(:disabled) {
+.emotion-8:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -7014,14 +7044,14 @@ exports[`MenuGroup renders with title as a component 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-4:focus-visible:not(:disabled) {
+    .emotion-8:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7029,14 +7059,14 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-5 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7057,7 +7087,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-6 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7066,7 +7096,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-7 {
+.emotion-11 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -7077,13 +7107,13 @@ exports[`MenuGroup renders with title as a component 1`] = `
   display: inline-block;
 }
 
-.emotion-7::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-7::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -7102,26 +7132,62 @@ exports[`MenuGroup renders with title as a component 1`] = `
       >
         <div
           class="emotion-2"
-        />
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-3 emotion-4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            />
+          </svg>
+          <span>
+             Menu Group Title Custom Component 
+          </span>
+          <svg
+            aria-hidden="true"
+            class="emotion-3 emotion-4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            />
+          </svg>
+        </div>
         <ul
           aria-labelledby="mock-nk-1"
         >
           <li
-            class="nk-menu-item emotion-3"
+            class="nk-menu-item emotion-7"
           >
             <a
-              class="emotion-4"
+              class="emotion-8"
               data-testid="buttonLink"
               href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-9"
               >
                 <span
-                  class="emotion-6"
+                  class="emotion-10"
                 >
                   <span
-                    class="emotion-7"
+                    class="emotion-11"
                   >
                     Menu item
                   </span>
@@ -7130,21 +7196,21 @@ exports[`MenuGroup renders with title as a component 1`] = `
             </a>
           </li>
           <li
-            class="nk-menu-item emotion-3"
+            class="nk-menu-item emotion-7"
           >
             <a
-              class="emotion-4"
+              class="emotion-8"
               data-testid="buttonLink"
               href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-9"
               >
                 <span
-                  class="emotion-6"
+                  class="emotion-10"
                 >
                   <span
-                    class="emotion-7"
+                    class="emotion-11"
                   >
                     Menu item
                   </span>
@@ -7153,21 +7219,21 @@ exports[`MenuGroup renders with title as a component 1`] = `
             </a>
           </li>
           <li
-            class="nk-menu-item emotion-3"
+            class="nk-menu-item emotion-7"
           >
             <a
-              class="emotion-4"
+              class="emotion-8"
               data-testid="buttonLink"
               href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-9"
               >
                 <span
-                  class="emotion-6"
+                  class="emotion-10"
                 >
                   <span
-                    class="emotion-7"
+                    class="emotion-11"
                   >
                     Menu item
                   </span>
@@ -7176,21 +7242,21 @@ exports[`MenuGroup renders with title as a component 1`] = `
             </a>
           </li>
           <li
-            class="nk-menu-item emotion-3"
+            class="nk-menu-item emotion-7"
           >
             <a
-              class="emotion-4"
+              class="emotion-8"
               data-testid="buttonLink"
               href="http://"
             >
               <span
-                class="emotion-5"
+                class="emotion-9"
               >
                 <span
-                  class="emotion-6"
+                  class="emotion-10"
                 >
                   <span
-                    class="emotion-7"
+                    class="emotion-11"
                   >
                     Menu item
                   </span>
