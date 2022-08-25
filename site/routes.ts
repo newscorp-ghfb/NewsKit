@@ -372,7 +372,7 @@ export default [
             page: true,
             id: '/components/switch',
             description:
-              'Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.',
+              'A switch is a selection control (toggle) that allows users to turn a setting on or off.',
             illustration: 'components/switch/hero',
           },
           {
