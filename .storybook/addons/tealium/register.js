@@ -21,37 +21,40 @@ const sendEvent = api => {
 
   if (window && window.utag) {
     console.log('SEND_EVENT', event);
-    console;
-    window.tealiumTrack(event);
-    //window.utag.view(e);
+    // window.tealiumTrack(event);
+    // window.utag.view(e);
   }
 };
 
 const ADDON_ID = 'storybook/tealium';
 const TOOL_ID = `${ADDON_ID}/tool`;
 
-const Tool = () => {
-  const isSiteEnvProduction = false;
+const isSiteEnvProduction = false;
 
+const CONFIG = {
+  privacyManagerId: '407619',
+  tealium: {
+    accountId: 'newsinternational',
+    profileId: 'thetimes.newskit',
+    env: isSiteEnvProduction ? 'prod' : 'dev',
+  },
+  consent: {
+    accountId: 259,
+    //TODO: change to https://storybook.newskit.co.uk
+    propertyHref: 'https://newskit.co.uk',
+    gdpr: {},
+  },
+};
+
+const Tool = () => {
   return (
     <NewsKitProvider theme={newskitLightTheme}>
-      <ConsentSettingsLink privacyManagerId="407619" gdpr>
+      <ConsentSettingsLink privacyManagerId={CONFIG.privacyManagerId} gdpr>
         Privacy policy
       </ConsentSettingsLink>
 
-      <Tealium
-        accountId="newsinternational"
-        profileId="thetimes.newskit"
-        env={isSiteEnvProduction ? 'prod' : 'dev'}
-      />
-      {/* <Consent
-        sourcePointConfigUnified={{
-          accountId: 259,
-          propertyHref: 'https://storybook.newskit.co.uk',
-          gdpr: {},
-        }}
-        reactHelmet={Helmet}
-      /> */}
+      <Tealium {...CONFIG.tealium} reactHelmet={Helmet} />
+      <Consent sourcePointConfigUnified={CONFIG.consent} reactHelmet={Helmet} />
     </NewsKitProvider>
   );
 };

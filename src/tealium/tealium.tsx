@@ -14,16 +14,13 @@ export const Tealium: React.FC<TealiumProps> = ({
   accountId,
   profileId,
   env,
-}) => {
-  console.log('Tealium');
-  return (
-    <RenderScripts
-      scripts={[
-        {
-          content: `
-            console.log('eho');
-            (function(a,b,c,d){
-              alert(10);
+  reactHelmet,
+}) => (
+  <RenderScripts
+    reactHelmet={reactHelmet}
+    scripts={[
+      {
+        content: `(function(a,b,c,d){
               a='//tags.tiqcdn.com/utag/${accountId}/${profileId}/${env}/utag.js';
               b=document;
               c='script';
@@ -55,11 +52,9 @@ export const Tealium: React.FC<TealiumProps> = ({
                 };
               }
               a = b.getElementsByTagName(c)[0];
-              console.log(a);
               a.parentNode.insertBefore(d, a);
             })();`,
-        },
-      ]}
-    />
-  );
-};
+      },
+    ]}
+  />
+);
