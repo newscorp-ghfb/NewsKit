@@ -2412,7 +2412,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -4959,7 +4959,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -7509,7 +7509,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -10056,7 +10056,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -12606,7 +12606,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -15153,7 +15153,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -17703,7 +17703,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -20250,7 +20250,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
