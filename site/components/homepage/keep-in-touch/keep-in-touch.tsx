@@ -33,7 +33,10 @@ export const KeepInTouch = () => (
     >
       {keepInTouchContent.map(({title, url, description, icon}) => (
         <Card
-          overrides={{mediaContainer: {spaceInline: 'space000'}}}
+          overrides={{
+            mediaContainer: {spaceInline: 'space000'},
+            stylePreset: 'homepageCard',
+          }}
           key={url}
           media={icon}
           actions={() => (
