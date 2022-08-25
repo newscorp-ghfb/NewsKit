@@ -10,7 +10,7 @@ const Box = styled.div`
   ${getColorCssFromTheme('backgroundColor', 'green030')};
   ${getColorCssFromTheme(color => ({border: `1px solid ${color}`}), 'red030')};
 `;
-const FlowTypes = [
+const flowTypes = [
   'vertical-left',
   'vertical-center',
   'vertical-right',
@@ -21,7 +21,7 @@ const FlowTypes = [
   'horizontal-stretch',
 ];
 
-const StackDistributionTypes = [
+const stackDistributionTypes = [
   'flex-start',
   'flex-end',
   'center',
@@ -154,8 +154,8 @@ describe('Stack', () => {
     expect(fragmentSpaceInline).toMatchSnapshot();
   });
 
-  FlowTypes.forEach(flowKey => {
-    StackDistributionTypes.forEach(stackDistributionKey => {
+  flowTypes.forEach(flowKey => {
+    stackDistributionTypes.forEach(stackDistributionKey => {
       test(`renders where the stack flow is ${flowKey} and the stack distribution is ${stackDistributionKey}`, () => {
         const fragment = renderToFragmentWithTheme(Stack, {
           flow: flowKey as Flow,
@@ -172,7 +172,7 @@ describe('Stack', () => {
     });
   });
 
-  FlowTypes.forEach(flowKey => {
+  flowTypes.forEach(flowKey => {
     ['space000', 'space090', 'space120'].forEach(space => {
       Object.values(['wrap', 'nowrap']).forEach(wrapType => {
         test(`renders where the stack flow is ${flowKey} and the spaceInline & spaceStack is set to ${space}`, () => {
@@ -194,7 +194,7 @@ describe('Stack', () => {
     });
   });
 
-  FlowTypes.forEach(flowKey => {
+  flowTypes.forEach(flowKey => {
     Object.values(['wrap', 'nowrap']).forEach(wrapType => {
       test(`renders where the stack flow is ${flowKey} and only spaceStack is set to space090`, () => {
         const fragment = renderToFragmentWithTheme(Stack, {
@@ -213,7 +213,7 @@ describe('Stack', () => {
     });
   });
 
-  FlowTypes.forEach(flowKey => {
+  flowTypes.forEach(flowKey => {
     Object.values(['wrap', 'nowrap']).forEach(wrapType => {
       test(`renders where the stack flow is ${flowKey} and only spaceInline is set to space090`, () => {
         const fragment = renderToFragmentWithTheme(Stack, {
