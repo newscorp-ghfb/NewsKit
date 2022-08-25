@@ -4439,7 +4439,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-614 svg {
+.emotion-619 svg {
   fill: #2E3F54;
 }
 
@@ -12181,7 +12181,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-614 svg {
+.emotion-619 svg {
   fill: #2E3F54;
 }
 
