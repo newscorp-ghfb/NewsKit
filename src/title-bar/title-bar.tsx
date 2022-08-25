@@ -17,6 +17,7 @@ const ThemelessTitleBar = React.forwardRef<HTMLDivElement, TitleBarProps>(
       headingAs = 'h3',
       actionItem: ActionItem,
       overrides = {},
+      ...rest
     } = props;
 
     const theme = useTheme();
@@ -56,6 +57,7 @@ const ThemelessTitleBar = React.forwardRef<HTMLDivElement, TitleBarProps>(
         flow="horizontal-center"
         stackDistribution="space-between"
         ref={ref}
+        {...rest}
       >
         <StyledBlock {...blockOverrides}>
           <Headline headingAs={headingAs} overrides={headlineOverrides}>

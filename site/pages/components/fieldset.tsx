@@ -82,15 +82,16 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
           title: 'Size',
           description: (
             <>
-              <Block spaceStack="space030">
-                There are three sizes of Fieldset Legend; small, medium, and
-                large.
-              </Block>
+              There are three sizes of Fieldset Legend; small, medium, and
+              large.
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="Size"
                 title="Note"
+                overrides={{
+                  marginBlockStart: 'space050',
+                }}
               >
                 The size of the Legend, and any{' '}
                 <Link href="/components/form/">Form</Link> selection controls,
@@ -145,8 +146,14 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
             users with screen readers. Provide details for the function or
             purpose of the form controls within a Fieldset using the legend.
           </ContentText>
-          <Block spaceStack="space100" />
-          <InlineMessage icon={infoIcon} role="region" aria-label="Fieldset">
+          <InlineMessage
+            icon={infoIcon}
+            role="region"
+            aria-label="Fieldset"
+            overrides={{
+              marginBlockStart: 'space100',
+            }}
+          >
             The legend will be repeated to users with screen readers for each
             form control within a Fieldset.
           </InlineMessage>

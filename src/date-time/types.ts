@@ -1,7 +1,7 @@
 import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
-export interface DateTimeProps {
+export interface DateTimeProps extends React.TimeHTMLAttributes<HTMLElement> {
   date: string | number;
   dateFormat?: string;
   prefix?: string;

@@ -25,6 +25,16 @@ describe('UnorderedList', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders with additional HTML attributes', () => {
+    const props: UnorderedListProps = {
+      id: 'unordered-list-id',
+      children: ['ListItem'],
+    };
+
+    const fragment = renderToFragmentWithTheme(UnorderedList, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders with custom list item marker', () => {
     const props: UnorderedListProps = {
       listItemMarker: IconFilledMood,

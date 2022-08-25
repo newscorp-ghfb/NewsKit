@@ -657,3 +657,121 @@ exports[`headline renders correctly with overriden props 1`] = `
   </section>
 </DocumentFragment>
 `;
+
+exports[`headline renders with additional HTML attributes 1`] = `
+<DocumentFragment>
+  @media screen and (max-width: 479px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    margin-bottom: -0.2055em;
+    display: block;
+  }
+
+  .emotion-0::after {
+    content: '';
+    margin-top: -0.2275em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    margin-bottom: -0.2055em;
+    display: block;
+  }
+
+  .emotion-0::after {
+    content: '';
+    margin-top: -0.2275em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 40.5px;
+    font-weight: 500;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    margin-bottom: -0.2055em;
+    display: block;
+  }
+
+  .emotion-0::after {
+    content: '';
+    margin-top: -0.2275em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 500;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    margin-bottom: -0.2055em;
+    display: block;
+  }
+
+  .emotion-0::after {
+    content: '';
+    margin-top: -0.2275em;
+    display: block;
+  }
+}
+
+.emotion-1 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0A0A0A;
+}
+
+.emotion-1 svg {
+  fill: #0A0A0A;
+}
+
+<section
+    class="emotion-0"
+    id="headline-id"
+  >
+    <h1
+      class="nk-headline-heading emotion-1"
+    >
+      test
+    </h1>
+  </section>
+</DocumentFragment>
+`;

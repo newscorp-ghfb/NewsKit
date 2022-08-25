@@ -32,6 +32,7 @@ export interface BaseFlagProps<TOverrides> {
   overrides?: TOverrides;
   size?: 'small' | 'medium' | 'large';
   children?: React.ReactNode;
+  as?: keyof JSX.IntrinsicElements;
 }
 export interface FlagProps
   extends BaseFlagProps<Omit<BaseFlagOverrides, 'transitionPreset'>> {}

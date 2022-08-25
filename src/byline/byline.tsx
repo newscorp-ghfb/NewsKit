@@ -70,7 +70,7 @@ const isLastItem = (currentIndex: number, length: number) =>
   currentIndex === length - 1;
 
 const ThemelessByline = React.forwardRef<HTMLDivElement, BylineProps>(
-  ({bylineData, overrides = {}}, ref) => {
+  ({bylineData, overrides = {}, ...rest}, ref) => {
     const theme = useTheme();
     const spaceStack = getToken({theme, overrides}, 'byline', '', 'spaceStack');
 
@@ -156,6 +156,7 @@ const ThemelessByline = React.forwardRef<HTMLDivElement, BylineProps>(
         wrap="wrap"
         spaceStack={spaceStack}
         {...logicalProps}
+        {...rest}
       >
         {bylineData.map(
           ({author, href, title, location, ariaLabel, key}: BylineData, i) => {

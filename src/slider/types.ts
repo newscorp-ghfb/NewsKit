@@ -53,7 +53,9 @@ export interface ThumbLabelProps extends StyledTrackProps {
 }
 
 // see https://github.com/tajo/react-range#range--props
-interface CommonSliderProps extends CommonProps {
+interface CommonSliderProps
+  extends CommonProps,
+    Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
   min: number;
   max: number;
   onFinalChange?: (values: number[]) => void;
