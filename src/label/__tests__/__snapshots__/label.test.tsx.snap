@@ -4,7 +4,7 @@ exports[`Label renders large label 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -16,7 +16,7 @@ exports[`Label renders large label 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {
@@ -43,7 +43,7 @@ exports[`Label renders medium label 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -55,7 +55,7 @@ exports[`Label renders medium label 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {
@@ -82,7 +82,7 @@ exports[`Label renders small label 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 18px;
@@ -94,7 +94,7 @@ exports[`Label renders small label 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {
@@ -121,7 +121,7 @@ exports[`Label should render disabled Label 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #C0C0C0;
+  color: #ABABAB;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -157,7 +157,7 @@ exports[`Label should render with logical props overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -171,7 +171,7 @@ exports[`Label should render with logical props overrides 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {
