@@ -148,7 +148,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1003,7 +1003,7 @@ Object {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1372,7 +1372,7 @@ Object {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1825,7 +1825,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
