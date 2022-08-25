@@ -213,14 +213,6 @@ export const componentDefaults = {
   },
   banner: {
     horizontal: {
-      content: {
-        title: {
-          stylePreset: 'inkWhiteContrast',
-        },
-        message: {
-          stylePreset: 'inkWhiteContrast',
-        },
-      },
       actions: {
         closeButton: {
           stylePreset: 'buttonMinimalInverseDocs',
@@ -228,14 +220,6 @@ export const componentDefaults = {
       },
     },
     vertical: {
-      content: {
-        title: {
-          stylePreset: 'inkWhiteContrast',
-        },
-        message: {
-          stylePreset: 'inkWhiteContrast',
-        },
-      },
       actions: {
         closeButton: {
           stylePreset: 'buttonOutlinedInverseDocs',
@@ -250,14 +234,6 @@ export const componentDefaults = {
       md: '45vw',
       lg: '38vw',
       xl: '31vw',
-    },
-    content: {
-      title: {
-        stylePreset: 'toastText',
-      },
-      message: {
-        stylePreset: 'toastText',
-      },
     },
   },
 };

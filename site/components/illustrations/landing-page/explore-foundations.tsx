@@ -32,7 +32,7 @@ const Foundations: React.FC = () => {
         r="76.029"
         transform="rotate(14.76 1096.74 433.813)"
         fill="#7264EF"
-        stroke="#E4E4E4"
+        stroke="#DEE2E5"
         stroke-width="1.21631"
       />
       <Circle
@@ -41,7 +41,7 @@ const Foundations: React.FC = () => {
         r="76.029"
         transform="rotate(14.76 929.974 475.432)"
         fill="#9B87FC"
-        stroke="#E4E4E4"
+        stroke="#DEE2E5"
         stroke-width="1.21631"
       />
       <Circle
@@ -50,7 +50,7 @@ const Foundations: React.FC = () => {
         r="76.029"
         transform="rotate(14.76 762.761 518.735)"
         fill="#BBAEFF"
-        stroke="#E4E4E4"
+        stroke="#DEE2E5"
         stroke-width="1.21631"
       />
       <g filter={`url(#${filter1})`}>
@@ -65,7 +65,7 @@ const Foundations: React.FC = () => {
         r="76.029"
         transform="rotate(-0.258284 1049.21 308.526)"
         fill="#65BBC4"
-        stroke="#E4E4E4"
+        stroke="#DEE2E5"
         stroke-width="1.21631"
       />
       <Circle
@@ -74,7 +74,7 @@ const Foundations: React.FC = () => {
         r="76.029"
         transform="rotate(-0.258284 898.926 391.938)"
         fill="#81D2DA"
-        stroke="#E4E4E4"
+        stroke="#DEE2E5"
         stroke-width="1.21631"
       />
       <Circle
@@ -83,14 +83,14 @@ const Foundations: React.FC = () => {
         r="76.029"
         transform="rotate(-0.258284 748.646 477.092)"
         fill="#A8E0E6"
-        stroke="#E4E4E4"
+        stroke="#DEE2E5"
         stroke-width="1.21631"
       />
       <g filter={`url(#${filter2})`}>
         <Path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M1045.37 143.465C1007.41 103.895 944.567 102.586 904.997 140.541L549.897 481.147C510.326 519.102 509.017 581.949 546.972 621.519C584.927 661.09 647.774 662.399 687.345 624.444L1042.45 283.838C1082.02 245.883 1083.32 183.036 1045.37 143.465ZM615.398 587.372C627.075 584.503 634.215 572.71 631.345 561.033C628.476 549.357 616.684 542.217 605.007 545.086C593.33 547.956 586.19 559.748 589.06 571.425C591.929 583.102 603.721 590.242 615.398 587.372Z"
+          d="M1045.37 143.465C1007.41 103.895 944.567 102.586 904.997 140.541L549.896 481.147C510.326 519.102 509.017 581.949 546.972 621.519C584.927 661.09 647.774 662.399 687.345 624.444L1042.44 283.838C1082.02 245.883 1083.32 183.036 1045.37 143.465ZM615.398 587.372C627.075 584.503 634.215 572.71 631.345 561.033C628.476 549.357 616.684 542.217 605.007 545.086C593.33 547.956 586.19 559.748 589.06 571.425C591.929 583.102 603.721 590.242 615.398 587.372Z"
           fill="white"
         />
       </g>
@@ -108,7 +108,7 @@ const Foundations: React.FC = () => {
         r="76.029"
         transform="rotate(-13.8065 975.013 213.91)"
         fill="#577FFB"
-        stroke="#E4E4E4"
+        stroke="#DEE2E5"
         stroke-width="1.21631"
       />
       <Circle
@@ -117,7 +117,7 @@ const Foundations: React.FC = () => {
         r="76.029"
         transform="rotate(-13.8065 848.448 330.208)"
         fill="#87A4FC"
-        stroke="#E4E4E4"
+        stroke="#DEE2E5"
         stroke-width="1.21631"
       />
       <Circle
@@ -126,7 +126,7 @@ const Foundations: React.FC = () => {
         r="76.029"
         transform="rotate(-13.8065 722.299 448.197)"
         fill="#AEBFFF"
-        stroke="#E4E4E4"
+        stroke="#DEE2E5"
         stroke-width="1.21631"
       />
       <defs>
@@ -200,7 +200,7 @@ const Foundations: React.FC = () => {
         </filter>
         <filter
           id={filter2}
-          x="499.88"
+          x="499.879"
           y="103.179"
           width="592.582"
           height="578.088"
@@ -235,7 +235,7 @@ const Foundations: React.FC = () => {
         <filter
           id={filter3}
           x="499.881"
-          y="103.178"
+          y="103.179"
           width="592.582"
           height="578.088"
           filterUnits="userSpaceOnUse"
