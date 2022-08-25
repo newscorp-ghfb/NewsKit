@@ -40,8 +40,8 @@ const List = styled.ol<Pick<OrderedListProps, 'overrides'>>`
 const ThemelessOrderedList = React.forwardRef<
   HTMLOListElement,
   OrderedListProps
->(({children, overrides}, ref) => (
-  <List ref={ref} role="list" overrides={overrides}>
+>(({children, overrides, ...rest}, ref) => (
+  <List ref={ref} role="list" overrides={overrides} {...rest}>
     {React.Children.map(children, node =>
       isValidNode(node) ? (
         <ListItem overrides={overrides}>{node}</ListItem>

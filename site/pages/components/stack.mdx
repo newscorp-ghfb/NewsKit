@@ -9,12 +9,16 @@ import {Stack, Tag, Flow, StackChild} from 'newskit';
 
 export default Layout;
 
-
 # Stack & Stack Child
+
 ## Stack Overview
+
 The Stack component is a low-level foundational component used to layout items in a horizontal or vertical stack, with even spacing between the items. Distribution requires the Stacks parent to have a width and height values set.
+
 ## Stack Props
+
 The Stack has a number of props to facilitate a variety of uses. Custom and required props are detailed below:
+
 <LegacyBlock marginTop="sizing050">
   <Prop
     name="flow"
@@ -85,9 +89,11 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
     rendered as a list. This will allow screen readers to label the content of
     the list.
   </Prop>
-  <CommonLogicalPropsMDX nested={false}/>
+  <CommonLogicalPropsMDX nested={false} />
 </LegacyBlock>
+
 ## Playground
+
 <Playground
   componentName="Stack"
   component={state => (
@@ -223,18 +229,19 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
     },
   ]}
 />
-## StackChild Overview
-The StackChild component is used to introduce custom order for the children of Stack.
-It is required for the component to be used within a `Stack`.
-It's behaviour is derived from the functionality of a child element in a classic `flex` container.
-## StackChild Props
-The Stack has a number of props to facilitate a variety of uses. Custom and required props are detailed below:
+
+## StackChild Overview The StackChild component is used to introduce custom order
+
+for the children of Stack. It is required for the component to be used within a `Stack`.
+It's behaviour is derived from the functionality of a child element in a classic
+`flex` container. ## StackChild Props The Stack has a number of props to facilitate
+a variety of uses. Custom and required props are detailed below:
 
 <LegacyBlock marginTop="sizing050">
   <Prop name="order" type="MQ<number>" required>
     Defines the order of the element within the stack.
   </Prop>
-  <CommonLogicalPropsMDX/>
+  <CommonLogicalPropsMDX />
 </LegacyBlock>
 
 ## Usage

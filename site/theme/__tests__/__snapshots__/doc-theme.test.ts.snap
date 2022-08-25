@@ -967,6 +967,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -994,7 +1027,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -1003,15 +1036,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -1051,6 +1084,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -1173,6 +1214,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -1299,6 +1350,16 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
+      },
+    },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "linkFooter": Object {
@@ -1830,6 +1891,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -2343,7 +2436,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -3445,6 +3538,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -3472,7 +3598,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -3481,15 +3607,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -3529,6 +3655,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -3651,6 +3785,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -3777,6 +3921,16 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
+      },
+    },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "linkFooter": Object {
@@ -4308,6 +4462,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -4821,7 +5007,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -5926,6 +6112,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -5953,7 +6172,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -5962,15 +6181,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -6010,6 +6229,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -6132,6 +6359,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -6258,6 +6495,16 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
+      },
+    },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "linkFooter": Object {
@@ -6789,6 +7036,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -7302,7 +7581,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -8404,6 +8683,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -8431,7 +8743,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -8440,15 +8752,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -8488,6 +8800,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -8610,6 +8930,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -8736,6 +9066,16 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
+      },
+    },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "linkFooter": Object {
@@ -9267,6 +9607,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -9780,7 +10152,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -10885,6 +11257,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -10912,7 +11317,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -10921,15 +11326,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -10969,6 +11374,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -11091,6 +11504,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -11217,6 +11640,16 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
+      },
+    },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "linkFooter": Object {
@@ -11748,6 +12181,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -12261,7 +12726,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -13363,6 +13828,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -13390,7 +13888,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -13399,15 +13897,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -13447,6 +13945,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -13569,6 +14075,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -13695,6 +14211,16 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
+      },
+    },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "linkFooter": Object {
@@ -14226,6 +14752,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -14739,7 +15297,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -15844,6 +16402,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -15871,7 +16462,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -15880,15 +16471,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -15928,6 +16519,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -16050,6 +16649,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -16176,6 +16785,16 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
+      },
+    },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "linkFooter": Object {
@@ -16707,6 +17326,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -17220,7 +17871,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
@@ -18322,6 +18973,39 @@ Object {
       },
     },
     "contributeCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "contributeCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "contributeCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "contributeCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
+    "contributeOldCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
         "color": "{{colors.inkBrand020}}",
@@ -18349,7 +19033,7 @@ Object {
         "iconColor": "{{colors.inkBrand020}}",
       },
     },
-    "contributeCardContainerInteractive": Object {
+    "contributeOldCardContainerInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -18358,15 +19042,15 @@ Object {
         "boxShadow": "{{shadows.shadow040}}",
       },
     },
-    "contributeCardContainerNonInteractive": Object {
+    "contributeOldCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand050}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
-    "contributeCardMedia": Object {
+    "contributeOldCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
       },
     },
     "controlLabel": Object {
@@ -18406,6 +19090,14 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "exploreCardHeadline": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "featureCard": Object {
@@ -18528,6 +19220,16 @@ Object {
     "flagSolidPositive": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -18654,6 +19356,16 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
+      },
+    },
+    "keepInTouchLink": Object {
+      "base": Object {
+        "color": "{{colors.interactiveInput040}}",
+        "iconColor": "{{colors.interactiveInput040}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "linkFooter": Object {
@@ -19185,6 +19897,38 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "worldDesignSystemsWeekCardButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkWhiteContrast}}",
+        "iconColor": "{{colors.inkWhiteContrast}}",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "worldDesignSystemsWeekCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "worldDesignSystemsWeekCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/landing/feature-card-banner.svg)",
+        "backgroundPosition": "center",
+        "backgroundSize": "cover",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -19698,7 +20442,7 @@ Object {
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },

@@ -11,6 +11,14 @@ describe('DateTime', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders with additional HTML attributes', () => {
+    const fragment = renderToFragmentWithTheme(DateTime, {
+      date,
+      id: 'date-time-id',
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders with provided date, format, prefix and suffix', () => {
     const fragment = renderToFragmentWithTheme(DateTime, {
       date,

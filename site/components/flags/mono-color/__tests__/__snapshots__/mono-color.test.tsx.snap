@@ -86,21 +86,21 @@ exports[`MonoColor renders mono token with color 1`] = `
   display: inline-block;
 }
 
-<div
+<span
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <div
           class="emotion-3"
         />
-      </div>
-      <div
+      </span>
+      <span
         class="emotion-2"
       >
         <span
@@ -108,8 +108,8 @@ exports[`MonoColor renders mono token with color 1`] = `
         >
           inkNegative
         </span>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </DocumentFragment>
 `;

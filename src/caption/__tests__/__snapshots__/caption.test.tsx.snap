@@ -509,3 +509,45 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
   </div>
 </DocumentFragment>
 `;
+
+exports[`renders with additional HTML attributes 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-1 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+<div
+    class="emotion-0"
+    id="caption-id"
+  >
+    <p
+      class="emotion-1"
+    >
+      test
+    </p>
+  </div>
+</DocumentFragment>
+`;

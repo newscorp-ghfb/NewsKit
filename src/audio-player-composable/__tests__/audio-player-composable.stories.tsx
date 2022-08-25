@@ -246,7 +246,7 @@ const AudioPlayerFullRecorded = (props: {
               <AudioPlayerVolumeControl
                 layout={
                   breakpointKey === 'xs' || breakpointKey === 'sm'
-                    ? 'horizontalCollapsed'
+                    ? 'collapsed'
                     : 'horizontal'
                 }
               />
@@ -347,7 +347,11 @@ const AudioPlayerFullLive = (props: {
 
             <Areas.Volume alignSelf="center" justifySelf="start">
               <AudioPlayerVolumeControl
-                collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+                layout={
+                  breakpointKey === 'xs' || breakpointKey === 'sm'
+                    ? 'collapsed'
+                    : 'horizontal'
+                }
               />
             </Areas.Volume>
 
@@ -399,35 +403,19 @@ const AudioPlayerInlineRecorded = (props: {
         columnGap="space040"
         alignItems="center"
       >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl
-            {...props}
-            layout={
-              breakpointKey === 'xs'
-                ? 'horizontalCollapsed'
-                : 'horizontalExpandable'
-            }
-          />
-        </GridLayoutItem>
-        <GridLayoutItem column="2/3" row="4/5">
-          <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
-        </GridLayoutItem>
-        <GridLayoutItem column="3/4" row="4/5">
-          <AudioPlayerTimeDisplay
-            format={({currentTime}) => calculateTime(currentTime)}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem column="4/5" row="4/5">
-          <AudioPlayerSeekBar />
-        </GridLayoutItem>
-        <GridLayoutItem column="5/6" row="4/5">
-          <AudioPlayerTimeDisplay
-            format={({duration}) => calculateTime(duration)}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem column="6/7" row="4/5">
-          <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}} />
-        </GridLayoutItem>
+        <AudioPlayerVolumeControl
+          {...props}
+          layout={breakpointKey === 'xs' ? 'collapsed' : 'horizontal'}
+        />
+        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+        <AudioPlayerTimeDisplay
+          format={({currentTime}) => calculateTime(currentTime)}
+        />
+        <AudioPlayerSeekBar />
+        <AudioPlayerTimeDisplay
+          format={({duration}) => calculateTime(duration)}
+        />
+        <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}} />
       </GridLayout>
     </AudioPlayerComposable>
   );
@@ -435,12 +423,13 @@ const AudioPlayerInlineRecorded = (props: {
 const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
   <AudioPlayerComposable src={LIVE_AUDIO_SRC} live {...props}>
     <GridLayout
-      columns="auto auto"
+      columns="auto auto auto"
       columnGap="space040"
       alignItems="center"
       justifyContent="flex-start"
     >
       <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+      <AudioPlayerVolumeControl layout="vertical" muteButtonSize="small" />
       <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
         <IconFilledGraphicEq />
         Live
@@ -467,7 +456,7 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
           <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
         </GridLayoutItem>
         <GridLayoutItem column="2/3" row="4/5">
-          <AudioPlayerVolumeControl collapsed />
+          <AudioPlayerVolumeControl layout="collapsed" />
         </GridLayoutItem>
         <GridLayoutItem column="3/4" row="4/5">
           <AudioPlayerTimeDisplay
@@ -622,11 +611,15 @@ export const AudioSubComponents = () => (
           </GridLayoutItem>
           <GridLayoutItem>
             <StorybookSubHeading>Collapsed Volume Control</StorybookSubHeading>
-            <AudioPlayerVolumeControl collapsed />
+            <AudioPlayerVolumeControl layout="collapsed" />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Expanded Volume Control</StorybookSubHeading>
+            <AudioPlayerVolumeControl layout="horizontal-expanded" />
           </GridLayoutItem>
           <GridLayoutItem>
             <StorybookSubHeading>Volume Control</StorybookSubHeading>
-            <AudioPlayerVolumeControl />
+            <AudioPlayerVolumeControl layout="horizontal" />
           </GridLayoutItem>
           <GridLayoutItem>
             <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
@@ -676,7 +669,11 @@ export const AudioPlayerWithInitialProps = () => {
 
               <Areas.Volume alignSelf="center" justifySelf="start">
                 <AudioPlayerVolumeControl
-                  collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+                  layout={
+                    breakpointKey === 'xs' || breakpointKey === 'sm'
+                      ? 'collapsed'
+                      : 'horizontal'
+                  }
                 />
               </Areas.Volume>
 
@@ -784,7 +781,11 @@ export const AudioPlayerOverrides = () => {
                 <Areas.Volume alignSelf="center" justifySelf="start">
                   <AudioPlayerVolumeControl
                     muteButtonSize={ButtonSize.Medium}
-                    collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+                    layout={
+                      breakpointKey === 'xs' || breakpointKey === 'sm'
+                        ? 'collapsed'
+                        : 'horizontal'
+                    }
                     overrides={{
                       stylePreset:
                         'customAudioPlayerVolumeControlHorizontalContainer',
@@ -894,8 +895,11 @@ export const AudioPlayerOverrides = () => {
         >
           <VerticalContainer>
             <AudioPlayerVolumeControl
-              layout="vertical"
-              collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+              layout={
+                breakpointKey === 'xs' || breakpointKey === 'sm'
+                  ? 'collapsed'
+                  : 'vertical'
+              }
               overrides={{
                 stylePreset: 'customAudioPlayerVolumeControlVerticalContainer',
                 spaceBetween: 'space050',
@@ -1235,58 +1239,17 @@ export const AudioPlayerVolumeControlLayout = () => (
       ariaLandmark="audio player volume control horizontal"
     >
       <AudioPlayerVolumeControl layout="horizontal" />
-    </AudioPlayerComposable>
-    <br />
-    <StorybookSubHeading>
-      Volume control horizontal-expandable
-    </StorybookSubHeading>
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player volume control horizontal expanded"
-    >
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl />
-        </GridLayoutItem>
-      </GridLayout>
-    </AudioPlayerComposable>
-    <br />
-    <StorybookSubHeading>
-      Volume control horizontal-collapsed
-    </StorybookSubHeading>
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player volume control horizontal collapsed"
-    >
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl layout="horizontalCollapsed" />
-        </GridLayoutItem>
-      </GridLayout>
-    </AudioPlayerComposable>
-    <br />
-    <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player volume control vertical"
-    >
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl layout="vertical" />
-        </GridLayoutItem>
-      </GridLayout>
+
+      <StorybookSubHeading>
+        Volume control horizontal-expanded
+      </StorybookSubHeading>
+      <AudioPlayerVolumeControl layout="horizontal-expanded" />
+
+      <StorybookSubHeading>Volume control Collapsed</StorybookSubHeading>
+      <AudioPlayerVolumeControl layout="collapsed" />
+
+      <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
+      <AudioPlayerVolumeControl layout="vertical" />
     </AudioPlayerComposable>
   </StyledPage>
 );

@@ -1,5 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`DateTime renders with additional HTML attributes 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  margin: 0;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+  white-space: pre;
+}
+
+.emotion-1 svg {
+  fill: #535353;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-1:before,
+.emotion-1:after {
+  white-space: normal;
+}
+
+<time
+    class="emotion-0"
+    id="date-time-id"
+  >
+    <span
+      class="emotion-1"
+    >
+      Mock Date 
+    </span>
+  </time>
+</DocumentFragment>
+`;
+
 exports[`DateTime renders with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-1 {

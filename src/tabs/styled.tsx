@@ -11,7 +11,7 @@ import {
   TabsDistribution,
   DistributionWrapperProps,
   TabsBarProps,
-  TabInternalProps,
+  TabButtonProps,
   TabAlign,
   TabsIndicatorPositionType,
   TabsDistributionType,
@@ -167,7 +167,7 @@ const tabTextAlign = {
 };
 
 export const StyledTabButton = styled(Button)<
-  Omit<ButtonProps, 'loading'> & TabInternalProps
+  Omit<ButtonProps, 'loading'> & TabButtonProps
 >`
   ${({selected}) =>
     selected && getStylePreset('tab', '', {isSelected: selected})}

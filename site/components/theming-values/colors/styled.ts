@@ -140,6 +140,6 @@ export const ColorSetWrapper = styled.div`
     border: 1px solid;
     ${getColorCssFromTheme('borderColor', 'interface020')}
   }
-  ${getBorderCssFromTheme('border-radius', 'borderRadiusRounded020')};
+  ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
   padding-top: 24px;
 `;

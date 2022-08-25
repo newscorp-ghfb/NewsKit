@@ -6,10 +6,10 @@
     "react",
     "newsuk"
   ],
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "index.js",
   "types": "index.d.ts",
-  "repository": "",
+  "repository": "https://github.com/newscorp-ghfb/newskit.git",
   "sideEffects": false,
   "engines": {
     "node": ">=16.10.0"
@@ -17,8 +17,9 @@
   "scripts": {
     "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
     "dev:docs": "yarn build:icons && concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",
-    "dev:storybook": "yarn build:icons && start-storybook --ci -p 6006 -s ./fonts,./static",
+    "dev:storybook": "yarn build:icons && start-storybook --ci -p 6006 -s ./fonts,./.storybook/private-fonts,./static",
     "eyes:storybook": "eyes-storybook --conf applitools.components.config.js",
+    "fetch-external-storybook-fonts": "node ./.storybook/fetch-external-fonts.js",
     "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
     "lint:code": "scripts/assert-files-and-folders.js && yarn lint:code:base .",
     "lint:code:fix": "yarn lint:code --fix",
@@ -44,7 +45,7 @@
     "build:sync-version-number": "node ./scripts/sync-version-number.js",
     "build:comps:clean-icons": "sh ./scripts/reduce-file-count.sh",
     "build:comps": "concurrently \"yarn build:ts\" \"yarn build:ts:cjs\" && yarn build:comps:clean-icons && yarn build:copy-files && yarn build:package-json",
-    "build:storybook": "build-storybook -c .storybook -o dist-storybook",
+    "build:storybook": "build-storybook -c .storybook -o dist-storybook -s ./fonts,./static",
     "build:docs": "yarn build:comps:clean-icons && next build site && next export site -o public",
     "postbuild:docs": "node ./scripts/post-build",
     "build:icons": "node ./scripts/generate-icons",
@@ -60,11 +61,12 @@
     "e2e:generate:a11ytests": "node scripts/generate-a11y-tests.js",
     "e2e:findbrokenlinks": "linkinator http://localhost:8081 --recurse --skip '^(?!http://localhost:8081)'",
     "e2e:findbrokenlinks:ci": "start-server-and-test serve:docs 8081 e2e:findbrokenlinks",
+    "postinstall": "yarn fetch-external-storybook-fonts",
     "prepare": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn\")'",
     "serve:docs": "http-server public -p 8081 -c300",
     "serve:storybook": "http-server dist-storybook -p 6006",
     "dependencies:check": "package-change-checker --install-cmd=\"yarn install --pure-lockfile\" HEAD@{1} HEAD",
-    "storybook": "start-storybook -c .storybook -p 6006"
+    "storybook": "start-storybook -c .storybook -p 6006 -s ./fonts,./.storybook/private-fonts,./static"
   },
   "devDependencies": {
     "@applitools/eyes-cypress": "^3.25.6",
@@ -78,6 +80,8 @@
     "@commitlint/load": "8.0.0",
     "@commitlint/parse": "8.0.0",
     "@commitlint/read": "8.0.0",
+    "@docsearch/css": "^3.0.0",
+    "@docsearch/react": "^3.0.0",
     "@emotion/jest": "^11.2.1",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
@@ -144,6 +148,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-config-next": "^12.0.9",
     "fast-glob": "^3.2.5",
     "fs-extra": "^9.0.1",
     "http-server": "^0.12.3",
@@ -204,7 +209,6 @@
     "dequal": "^1.0.0",
     "dompurify": "^2.3.1",
     "downshift": "^6.1.7",
-    "eslint-config-next": "^12.0.9",
     "file-saver": "^2.0.5",
     "jszip": "^3.7.1",
     "next-seo": "^4.28.1",

@@ -95,13 +95,14 @@ const Address = (layoutProps: LayoutProps) => (
           headline="Input fields"
           description={
             <>
-              <Block spaceStack="space050">
-                The Post office recommends four line items when capturing an
-                address which are highlighted below:
-              </Block>
+              The Post office recommends four line items when capturing an
+              address which are highlighted below:
               <UnorderedList
                 markerAlign="start"
-                overrides={unorderedListOverrides}
+                overrides={{
+                  ...unorderedListOverrides,
+                  marginBlockStart: 'space060',
+                }}
               >
                 <>House number and street name</>
                 <>Locality name (If needed)</>
@@ -113,27 +114,24 @@ const Address = (layoutProps: LayoutProps) => (
           }
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <Block spaceStack="space050">
-            <TextBlock
-              typographyPreset="editorialParagraph020"
-              stylePreset="inkBase"
-            >
-              It makes sense to follow this structure when capturing a users
-              address and should be labeled as follows:
-            </TextBlock>
-          </Block>
-          <Block spaceStack="space080">
-            <UnorderedList
-              markerAlign="start"
-              overrides={unorderedListOverrides}
-            >
-              <>Address line 1</>
-              <>Address line 2</>
-              <>Town/City</>
-              <>County (Optional)</>
-              <>Postcode</>
-            </UnorderedList>
-          </Block>
+          <TextBlock
+            typographyPreset="editorialParagraph020"
+            stylePreset="inkBase"
+            marginBlockEnd="space050"
+          >
+            It makes sense to follow this structure when capturing a users
+            address and should be labeled as follows:
+          </TextBlock>
+          <UnorderedList
+            markerAlign="start"
+            overrides={{...unorderedListOverrides, marginBlockEnd: 'space080'}}
+          >
+            <>Address line 1</>
+            <>Address line 2</>
+            <>Town/City</>
+            <>County (Optional)</>
+            <>Postcode</>
+          </UnorderedList>
           <TextBlock
             typographyPreset="editorialParagraph020"
             stylePreset="inkBase"

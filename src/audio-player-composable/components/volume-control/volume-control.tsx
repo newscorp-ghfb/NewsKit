@@ -3,7 +3,7 @@ import {CSSTransition} from 'react-transition-group';
 import {ScreenReaderOnly} from '../../../screen-reader-only';
 import {Slider} from '../../../slider';
 import {withOwnTheme} from '../../../utils/with-own-theme';
-import {useInitialVolume} from './utils';
+import {getPopoverOverrides, useInitialVolume} from './utils';
 import {useAudioPlayerContext} from '../../context';
 import defaults from './defaults';
 import {MuteButton} from './mute-button';
@@ -14,15 +14,15 @@ import {GridLayoutItem} from '../../../grid-layout';
 import {
   StyledGridLayout,
   StyledVolumeSliderContainer,
-  VolumeControlContainer,
+  StyledVolumeSliderPopupContainer,
 } from './styled';
 import {useReactKeys} from '../../../utils/hooks';
 import {deepMerge} from '../../../utils/deep-merge';
 import {mergeBreakpointObject} from '../../../utils/merge-breakpoint-object';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
-import {ButtonSize} from '../../../button/types';
 import {getTransitionDuration} from '../../../utils';
 import {getTransitionClassName} from '../../../utils/get-transition-class-name';
+import {Popover} from '../../../popover';
 
 const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   HTMLDivElement,
@@ -32,7 +32,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   const {
     volume,
     onChange,
-    layout = 'horizontalExpandable',
+    layout = 'horizontal-expanded',
     keyboardShortcuts,
     overrides,
     initialVolume,
@@ -75,43 +75,102 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   // useInitialVolume Sets the initial volume on page load
   useInitialVolume({onChange, initialVolume});
 
-  const verticalAreas = `slider
-                         muteButton`;
-  const gridAreas = layout === 'vertical' ? verticalAreas : `muteButton slider`;
-  const gridColumns = layout === 'vertical' ? '1fr' : 'auto 1fr';
   const [volumeSliderInstructionId] = useReactKeys(1);
   // opens volume control on hover/focus when layout = horizontalExpandable.
   const [open, setOpen] = useState(false);
+  const setOpenHandler = useCallback<(state: boolean) => void>(
+    state => {
+      if (layout === 'horizontal' || layout === 'vertical') {
+        setOpen(state);
+      }
+    },
+    [setOpen, layout],
+  );
+
   // makes sure feedback element is fully visible and not cropped when slider is open and user hover/focus on it.
   const [isVisible, setIsVisible] = React.useState(false);
+  const setIsVisibleHandler = useCallback<(state: boolean) => void>(
+    state => {
+      if (layout === 'horizontal') {
+        setIsVisible(state);
+      }
+    },
+    [setIsVisible, layout],
+  );
+
+  const useSliderContainer =
+    layout === 'horizontal' || layout === 'horizontal-expanded';
+
+  // used for collapsed and vertical
+  const gridSingleAreas = 'muteButton';
+  // used for horizontal and horizontal expanded
+  const gridMultipleAreas = 'muteButton slider';
+  // used for collapsed and vertical
+  const gridColumnsSingle = '1fr';
+  // used for horizontal and horizontal expanded
+  const gridColumnsMultiple = 'auto 1fr';
+  const gridAreas = useSliderContainer ? gridMultipleAreas : gridSingleAreas;
+  const gridColumns = useSliderContainer
+    ? gridColumnsMultiple
+    : gridColumnsSingle;
+
+  const sliderComponent = (
+    <Slider
+      vertical={layout === 'vertical'}
+      min={0}
+      max={1}
+      step={0.1}
+      values={[volume]}
+      onChange={onSliderChange}
+      ariaLabel="Volume Control"
+      ariaValueText={`volume level ${[volume][0] * 10} of 10`}
+      dataTestId="volume-control-slider"
+      ariaDescribedBy={volumeSliderInstructionId}
+      overrides={sliderOverrides}
+    />
+  );
+
+  const popoverOverrides = getPopoverOverrides(theme, overrides);
 
   return (
-    <VolumeControlContainer
-      onFocus={() => setOpen(true)}
-      onBlur={() => setOpen(false)}
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-      layout={layout}
+    <StyledGridLayout
+      ref={ref}
+      onFocus={() => setOpenHandler(true)}
+      onBlur={() => setOpenHandler(false)}
+      onMouseEnter={() => setOpenHandler(true)}
+      onMouseLeave={() => setOpenHandler(false)}
+      columns={gridColumns}
+      areas={gridAreas}
+      justifyItems="start"
+      alignItems="center"
+      overrides={overrides}
     >
-      <StyledGridLayout
-        ref={ref}
-        columns={gridColumns}
-        areas={gridAreas}
-        justifyItems={layout === 'vertical' ? 'center' : 'start'}
-        alignItems="center"
-        layout={layout}
-        overrides={overrides}
-      >
-        <GridLayoutItem area="muteButton">
+      <GridLayoutItem area="muteButton">
+        <Popover
+          hidePointer
+          open={layout === 'vertical' && open}
+          content={
+            <StyledVolumeSliderPopupContainer overrides={overrides}>
+              {sliderComponent}
+            </StyledVolumeSliderPopupContainer>
+          }
+          id="volume-control-slider-popup"
+          header={undefined}
+          closePosition="none"
+          disableFocusManagement
+          overrides={popoverOverrides}
+        >
           <MuteButton
             volume={volume}
             unMutedVolume={unMutedVolume}
             onChange={onChange}
-            size={muteButtonSize || ButtonSize.Medium}
+            size={muteButtonSize || 'medium'}
             muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
             overrides={buttonOverrides}
           />
-        </GridLayoutItem>
+        </Popover>
+      </GridLayoutItem>
+      {useSliderContainer && (
         <GridLayoutItem area="slider">
           <CSSTransition
             in={open}
@@ -121,8 +180,8 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
             )({theme, overrides})}
             classNames="nk-vc"
             appear
-            onEnter={() => setIsVisible(true)}
-            onExited={() => setIsVisible(false)}
+            onEnter={() => setIsVisibleHandler(true)}
+            onExited={() => setIsVisibleHandler(false)}
           >
             {(state: string) => (
               <StyledVolumeSliderContainer
@@ -132,19 +191,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
                 open={open}
                 visible={isVisible}
               >
-                <Slider
-                  vertical={layout === 'vertical'}
-                  min={0}
-                  max={1}
-                  step={0.1}
-                  values={[volume]}
-                  onChange={onSliderChange}
-                  ariaLabel="Volume Control"
-                  ariaValueText={`volume level ${[volume][0] * 10} of 10`}
-                  dataTestId="volume-control-slider"
-                  ariaDescribedBy={volumeSliderInstructionId}
-                  overrides={sliderOverrides}
-                />
+                {sliderComponent}
               </StyledVolumeSliderContainer>
             )}
           </CSSTransition>
@@ -152,8 +199,8 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
             Use the arrow keys to adjust volume
           </ScreenReaderOnly>
         </GridLayoutItem>
-      </StyledGridLayout>
-    </VolumeControlContainer>
+      )}
+    </StyledGridLayout>
   );
 });
 

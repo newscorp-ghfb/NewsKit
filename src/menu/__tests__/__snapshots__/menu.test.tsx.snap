@@ -255,10 +255,10 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -266,8 +266,8 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -289,10 +289,10 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -300,8 +300,8 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           ,
@@ -330,10 +330,10 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -341,8 +341,8 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -364,10 +364,10 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -375,8 +375,8 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           ,
@@ -619,10 +619,10 @@ exports[`Menu renders horizontally with menu group 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -630,8 +630,8 @@ exports[`Menu renders horizontally with menu group 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -642,10 +642,10 @@ exports[`Menu renders horizontally with menu group 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -653,8 +653,8 @@ exports[`Menu renders horizontally with menu group 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
         </ul>
@@ -671,10 +671,10 @@ exports[`Menu renders horizontally with menu group 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -682,8 +682,8 @@ exports[`Menu renders horizontally with menu group 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -694,10 +694,10 @@ exports[`Menu renders horizontally with menu group 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -705,8 +705,8 @@ exports[`Menu renders horizontally with menu group 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
         </ul>
@@ -928,10 +928,10 @@ exports[`Menu renders horizontally with menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -939,8 +939,8 @@ exports[`Menu renders horizontally with menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -951,10 +951,10 @@ exports[`Menu renders horizontally with menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -962,8 +962,8 @@ exports[`Menu renders horizontally with menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -974,10 +974,10 @@ exports[`Menu renders horizontally with menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -985,8 +985,8 @@ exports[`Menu renders horizontally with menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -997,10 +997,10 @@ exports[`Menu renders horizontally with menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -1008,8 +1008,8 @@ exports[`Menu renders horizontally with menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -1271,10 +1271,10 @@ exports[`Menu renders vertically with menu dividers 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -1282,8 +1282,8 @@ exports[`Menu renders vertically with menu dividers 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -1305,10 +1305,10 @@ exports[`Menu renders vertically with menu dividers 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -1316,8 +1316,8 @@ exports[`Menu renders vertically with menu dividers 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           ,
@@ -1346,10 +1346,10 @@ exports[`Menu renders vertically with menu dividers 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -1357,8 +1357,8 @@ exports[`Menu renders vertically with menu dividers 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -1380,10 +1380,10 @@ exports[`Menu renders vertically with menu dividers 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -1391,8 +1391,8 @@ exports[`Menu renders vertically with menu dividers 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           ,
@@ -1635,10 +1635,10 @@ exports[`Menu renders vertically with menu group 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -1646,8 +1646,8 @@ exports[`Menu renders vertically with menu group 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -1658,10 +1658,10 @@ exports[`Menu renders vertically with menu group 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -1669,8 +1669,8 @@ exports[`Menu renders vertically with menu group 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
         </ul>
@@ -1687,10 +1687,10 @@ exports[`Menu renders vertically with menu group 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -1698,8 +1698,8 @@ exports[`Menu renders vertically with menu group 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -1710,10 +1710,10 @@ exports[`Menu renders vertically with menu group 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-4"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
                   <span
@@ -1721,8 +1721,8 @@ exports[`Menu renders vertically with menu group 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
         </ul>
@@ -1948,10 +1948,10 @@ exports[`Menu renders vertically with menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -1959,8 +1959,8 @@ exports[`Menu renders vertically with menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -1971,10 +1971,10 @@ exports[`Menu renders vertically with menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -1982,8 +1982,8 @@ exports[`Menu renders vertically with menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -1994,10 +1994,10 @@ exports[`Menu renders vertically with menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2005,8 +2005,8 @@ exports[`Menu renders vertically with menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -2017,10 +2017,10 @@ exports[`Menu renders vertically with menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2028,8 +2028,8 @@ exports[`Menu renders vertically with menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -2253,10 +2253,10 @@ exports[`Menu renders with Large size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2264,8 +2264,8 @@ exports[`Menu renders with Large size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -2276,10 +2276,10 @@ exports[`Menu renders with Large size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2287,8 +2287,8 @@ exports[`Menu renders with Large size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -2299,10 +2299,10 @@ exports[`Menu renders with Large size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2310,8 +2310,8 @@ exports[`Menu renders with Large size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -2322,10 +2322,10 @@ exports[`Menu renders with Large size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2333,8 +2333,8 @@ exports[`Menu renders with Large size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -2554,10 +2554,10 @@ exports[`Menu renders with Large size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2565,8 +2565,8 @@ exports[`Menu renders with Large size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -2577,10 +2577,10 @@ exports[`Menu renders with Large size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2588,8 +2588,8 @@ exports[`Menu renders with Large size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -2600,10 +2600,10 @@ exports[`Menu renders with Large size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2611,8 +2611,8 @@ exports[`Menu renders with Large size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -2623,10 +2623,10 @@ exports[`Menu renders with Large size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2634,8 +2634,8 @@ exports[`Menu renders with Large size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -2859,10 +2859,10 @@ exports[`Menu renders with Medium size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2870,8 +2870,8 @@ exports[`Menu renders with Medium size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -2882,10 +2882,10 @@ exports[`Menu renders with Medium size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2893,8 +2893,8 @@ exports[`Menu renders with Medium size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -2905,10 +2905,10 @@ exports[`Menu renders with Medium size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2916,8 +2916,8 @@ exports[`Menu renders with Medium size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -2928,10 +2928,10 @@ exports[`Menu renders with Medium size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -2939,8 +2939,8 @@ exports[`Menu renders with Medium size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -3160,10 +3160,10 @@ exports[`Menu renders with Medium size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3171,8 +3171,8 @@ exports[`Menu renders with Medium size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -3183,10 +3183,10 @@ exports[`Menu renders with Medium size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3194,8 +3194,8 @@ exports[`Menu renders with Medium size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -3206,10 +3206,10 @@ exports[`Menu renders with Medium size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3217,8 +3217,8 @@ exports[`Menu renders with Medium size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -3229,10 +3229,10 @@ exports[`Menu renders with Medium size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3240,8 +3240,8 @@ exports[`Menu renders with Medium size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -3465,10 +3465,10 @@ exports[`Menu renders with Small size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3476,8 +3476,8 @@ exports[`Menu renders with Small size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -3488,10 +3488,10 @@ exports[`Menu renders with Small size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3499,8 +3499,8 @@ exports[`Menu renders with Small size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -3511,10 +3511,10 @@ exports[`Menu renders with Small size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3522,8 +3522,8 @@ exports[`Menu renders with Small size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -3534,10 +3534,10 @@ exports[`Menu renders with Small size menu items 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3545,8 +3545,8 @@ exports[`Menu renders with Small size menu items 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -3766,10 +3766,10 @@ exports[`Menu renders with Small size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3777,8 +3777,8 @@ exports[`Menu renders with Small size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -3789,10 +3789,10 @@ exports[`Menu renders with Small size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3800,8 +3800,8 @@ exports[`Menu renders with Small size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -3812,10 +3812,10 @@ exports[`Menu renders with Small size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3823,8 +3823,8 @@ exports[`Menu renders with Small size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -3835,10 +3835,10 @@ exports[`Menu renders with Small size menu items 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -3846,8 +3846,8 @@ exports[`Menu renders with Small size menu items 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -4067,10 +4067,10 @@ exports[`Menu renders with default props 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4078,8 +4078,8 @@ exports[`Menu renders with default props 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -4090,10 +4090,10 @@ exports[`Menu renders with default props 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4101,8 +4101,8 @@ exports[`Menu renders with default props 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -4113,10 +4113,10 @@ exports[`Menu renders with default props 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4124,8 +4124,8 @@ exports[`Menu renders with default props 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -4136,10 +4136,10 @@ exports[`Menu renders with default props 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4147,8 +4147,8 @@ exports[`Menu renders with default props 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -4370,10 +4370,10 @@ exports[`Menu renders with logical prop overrides 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4381,8 +4381,8 @@ exports[`Menu renders with logical prop overrides 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -4393,10 +4393,10 @@ exports[`Menu renders with logical prop overrides 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4404,8 +4404,8 @@ exports[`Menu renders with logical prop overrides 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -4416,10 +4416,10 @@ exports[`Menu renders with logical prop overrides 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4427,8 +4427,8 @@ exports[`Menu renders with logical prop overrides 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -4439,10 +4439,10 @@ exports[`Menu renders with logical prop overrides 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4450,8 +4450,8 @@ exports[`Menu renders with logical prop overrides 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -4675,10 +4675,10 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4686,8 +4686,8 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -4698,10 +4698,10 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4709,8 +4709,8 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -4721,10 +4721,10 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4732,8 +4732,8 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -4744,10 +4744,10 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4755,8 +4755,8 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -4976,10 +4976,10 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -4987,8 +4987,8 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -4999,10 +4999,10 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5010,8 +5010,8 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -5022,10 +5022,10 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5033,8 +5033,8 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -5045,10 +5045,10 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5056,8 +5056,8 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -5281,10 +5281,10 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5292,8 +5292,8 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -5304,10 +5304,10 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5315,8 +5315,8 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -5327,10 +5327,10 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5338,8 +5338,8 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -5350,10 +5350,10 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5361,8 +5361,8 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -5582,10 +5582,10 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5593,8 +5593,8 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -5605,10 +5605,10 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5616,8 +5616,8 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -5628,10 +5628,10 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5639,8 +5639,8 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -5651,10 +5651,10 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5662,8 +5662,8 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -5887,10 +5887,10 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5898,8 +5898,8 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -5910,10 +5910,10 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5921,8 +5921,8 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -5933,10 +5933,10 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5944,8 +5944,8 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -5956,10 +5956,10 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -5967,8 +5967,8 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -6188,10 +6188,10 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -6199,8 +6199,8 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -6211,10 +6211,10 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -6222,8 +6222,8 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -6234,10 +6234,10 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -6245,8 +6245,8 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
       <li
@@ -6257,10 +6257,10 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -6268,8 +6268,8 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -6781,10 +6781,10 @@ exports[`MenuGroup renders with overrides 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -6792,8 +6792,8 @@ exports[`MenuGroup renders with overrides 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -6804,10 +6804,10 @@ exports[`MenuGroup renders with overrides 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -6815,8 +6815,8 @@ exports[`MenuGroup renders with overrides 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -6827,10 +6827,10 @@ exports[`MenuGroup renders with overrides 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -6838,8 +6838,8 @@ exports[`MenuGroup renders with overrides 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -6850,10 +6850,10 @@ exports[`MenuGroup renders with overrides 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -6861,8 +6861,8 @@ exports[`MenuGroup renders with overrides 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
         </ul>
@@ -7114,10 +7114,10 @@ exports[`MenuGroup renders with title as a component 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
                   <span
@@ -7125,8 +7125,8 @@ exports[`MenuGroup renders with title as a component 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -7137,10 +7137,10 @@ exports[`MenuGroup renders with title as a component 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
                   <span
@@ -7148,8 +7148,8 @@ exports[`MenuGroup renders with title as a component 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -7160,10 +7160,10 @@ exports[`MenuGroup renders with title as a component 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
                   <span
@@ -7171,8 +7171,8 @@ exports[`MenuGroup renders with title as a component 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -7183,10 +7183,10 @@ exports[`MenuGroup renders with title as a component 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
                   <span
@@ -7194,8 +7194,8 @@ exports[`MenuGroup renders with title as a component 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
         </ul>
@@ -7481,10 +7481,10 @@ exports[`MenuGroup renders with title when vertical 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -7492,8 +7492,8 @@ exports[`MenuGroup renders with title when vertical 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -7504,10 +7504,10 @@ exports[`MenuGroup renders with title when vertical 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -7515,8 +7515,8 @@ exports[`MenuGroup renders with title when vertical 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -7527,10 +7527,10 @@ exports[`MenuGroup renders with title when vertical 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -7538,8 +7538,8 @@ exports[`MenuGroup renders with title when vertical 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -7550,10 +7550,10 @@ exports[`MenuGroup renders with title when vertical 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -7561,8 +7561,8 @@ exports[`MenuGroup renders with title when vertical 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
         </ul>
@@ -7848,10 +7848,10 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -7859,8 +7859,8 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -7871,10 +7871,10 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -7882,8 +7882,8 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -7894,10 +7894,10 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -7905,8 +7905,8 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
           <li
@@ -7917,10 +7917,10 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
               data-testid="buttonLink"
               href="http://"
             >
-              <div
+              <span
                 class="emotion-6"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
                   <span
@@ -7928,8 +7928,8 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
                   >
                     Menu item
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </li>
         </ul>
@@ -8151,10 +8151,10 @@ exports[`MenuItem renders in Large size 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -8162,8 +8162,8 @@ exports[`MenuItem renders in Large size 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -8383,10 +8383,10 @@ exports[`MenuItem renders in Medium size 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -8394,8 +8394,8 @@ exports[`MenuItem renders in Medium size 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -8615,10 +8615,10 @@ exports[`MenuItem renders in Small size 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -8626,8 +8626,8 @@ exports[`MenuItem renders in Small size 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -8848,10 +8848,10 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
           href="http://"
           target="_blank"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -8859,8 +8859,8 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -9124,10 +9124,10 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <svg
@@ -9146,8 +9146,8 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
                   d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
                 />
               </svg>
-            </div>
-            <div
+            </span>
+            <span
               class="emotion-4"
             >
               <span
@@ -9155,8 +9155,8 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -9376,10 +9376,10 @@ exports[`MenuItem renders with default props 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -9387,8 +9387,8 @@ exports[`MenuItem renders with default props 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -9633,10 +9633,10 @@ exports[`MenuItem renders with icon 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <svg
@@ -9655,8 +9655,8 @@ exports[`MenuItem renders with icon 1`] = `
                   d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
                 />
               </svg>
-            </div>
-            <div
+            </span>
+            <span
               class="emotion-4"
             >
               <span
@@ -9664,8 +9664,8 @@ exports[`MenuItem renders with icon 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>
@@ -9835,10 +9835,10 @@ exports[`MenuItem renders with overrides 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <span
@@ -9846,8 +9846,8 @@ exports[`MenuItem renders with overrides 1`] = `
               >
                 Menu item
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </a>
       </li>
     </ul>

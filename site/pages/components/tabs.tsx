@@ -47,19 +47,6 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       codeUrl: 'https://github.com/newscorp-ghfb/newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      props: true,
-      performance: false,
-      design: true,
-      uiKit: true,
-      themes: true,
-    }}
     usage={{
       introduction:
         'The following guidance describes how and when to appropriately use a Tab component.',
@@ -840,6 +827,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           title: 'Distribution',
           description: (
             <UnorderedList
+              markerAlign="start"
               overrides={{
                 content: {
                   stylePreset: 'inkBase',
@@ -875,7 +863,9 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               <UnorderedList
+                markerAlign="start"
                 overrides={{
+                  marginBlockEnd: 'space050',
                   content: {
                     stylePreset: 'inkBase',
                     typographyPreset: 'editorialParagraph020',
@@ -894,11 +884,9 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                   right.
                 </>
               </UnorderedList>
-              <p>
-                NOTE - The default alignment depends on the orientation. When
-                Tabs are vertical it’s <Mono>Start</Mono> and when Tabs are
-                horizontal it’s <Mono>Center</Mono>.
-              </p>
+              NOTE - The default alignment depends on the orientation. When Tabs
+              are vertical it’s <Mono>Start</Mono> and when Tabs are horizontal
+              it’s <Mono>Center</Mono>.
             </> // eslint-disable-next-line @typescript-eslint/no-explicit-any
           ) as any,
 
@@ -1128,7 +1116,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       introduction: 'Ensure icons have Alt Text applied.',
     }}
     related={{
-      related: ['Accordion', 'Link', 'Scroll', 'Menu', 'Tags', 'Title Bar'],
+      related: ['Accordion', 'Link', 'Menu', 'Tag'],
     }}
   />
 );
