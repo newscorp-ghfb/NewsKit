@@ -816,6 +816,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           title: 'Distribution',
           description: (
             <UnorderedList
+              markerAlign="start"
               overrides={{
                 content: {
                   stylePreset: 'inkBase',
@@ -851,7 +852,9 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               <UnorderedList
+                markerAlign="start"
                 overrides={{
+                  marginBlockEnd: 'space050',
                   content: {
                     stylePreset: 'inkBase',
                     typographyPreset: 'editorialParagraph020',
@@ -870,11 +873,9 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                   right.
                 </>
               </UnorderedList>
-              <p>
-                NOTE - The default alignment depends on the orientation. When
-                Tabs are vertical it’s <Mono>start</Mono> and when Tabs are
-                horizontal it’s <Mono>center</Mono>.
-              </p>
+              NOTE - The default alignment depends on the orientation. When Tabs
+              are vertical it’s <Mono>Start</Mono> and when Tabs are horizontal
+              it’s <Mono>Center</Mono>.
             </> // eslint-disable-next-line @typescript-eslint/no-explicit-any
           ) as any,
 

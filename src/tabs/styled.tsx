@@ -11,8 +11,10 @@ import {
   TabsDistribution,
   DistributionWrapperProps,
   TabsBarProps,
-  TabInternalProps,
-  TabsIndicatorPosition,
+  TabButtonProps,
+  TabAlign,
+  TabsIndicatorPositionType,
+  TabsDistributionType,
 } from './types';
 import {Stack} from '../stack';
 import {TextBlock, TextBlockProps} from '../text-block';
@@ -165,7 +167,7 @@ const tabTextAlign = {
 };
 
 export const StyledTabButton = styled(Button)<
-  Omit<ButtonProps, 'loading'> & TabInternalProps
+  Omit<ButtonProps, 'loading'> & TabButtonProps
 >`
   ${({selected}) =>
     selected && getStylePreset('tab', '', {isSelected: selected})}

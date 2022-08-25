@@ -60,6 +60,7 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
       overrides: allOverrides = {},
       renderTrack,
       renderThumb,
+      ...rest
     },
     ref,
   ) => {
@@ -227,6 +228,7 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
         flexGrow
         data-testid={dataTestId}
         {...logicalProps}
+        {...rest}
       >
         {inlineLabels && minimumLabel}
         {labelPosition === 'before' && labelContainer}

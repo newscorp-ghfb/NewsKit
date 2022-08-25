@@ -64,20 +64,24 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
-            markerAlign="center"
+            markerAlign="start"
             overrides={{
+              spaceStack: 'space060',
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
               marker: {
                 spaceInline: 'space020',
               },
             }}
           >
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            <>
               <Link href="https://nodejs.org/en/download/" target="_blank">
                 Node.js
               </Link>{' '}
               with a minimum of node v14 installed.
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            </>
+            <>
               A project to install NewsKit into. If you need to create a new one
               try{' '}
               <Link
@@ -94,7 +98,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
                 Create React App
               </Link>
               .
-            </P>
+            </>
           </UnorderedList>
         </ContentPrimary>
 

@@ -13,6 +13,15 @@ describe('TitleBar', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('should render with additional HTML attributes', () => {
+    const props: TitleBarProps = {
+      id: 'title-bar-id',
+      children: TITLE,
+    };
+    const fragment = renderToFragmentWithTheme(TitleBar, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('should apply correctly the props and overrides', () => {
     const fragment = renderToFragmentWithTheme(TitleBar, {
       children: TITLE,

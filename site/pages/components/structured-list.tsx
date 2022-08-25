@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Block,
+  Flow,
   InlineMessage,
   Stack,
   StructuredListCell,
@@ -212,14 +212,15 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           title: 'Interactive items',
           description: (
             <>
-              <Block spaceStack="space030">
-                Structured List items can be set to be interactive by supplying
-                a link for an item.
-              </Block>
+              Structured List items can be set to be interactive by supplying a
+              link for an item.
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="checkbox label position"
+                overrides={{
+                  marginBlockStart: 'space050',
+                }}
               >
                 If a HREF is passed to the component then a chevron is rendered
                 in the last cell and the item becomes interactive (to indicate

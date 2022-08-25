@@ -1,6 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import {isFragment} from 'react-is';
-import {TabProps, TabsProps, TabAlign} from './types';
+import {
+  TabProps,
+  TabsProps,
+  TabsDistribution,
+  TabSize,
+  TabAlign,
+  TabsIndicatorPosition,
+  TabPanelProps,
+} from './types';
 import {
   StyledTabsBar,
   StyledInnerTabGroup,
@@ -10,7 +18,8 @@ import {
   StyledDistributionWrapper,
   StyledDividerWrapper,
 } from './styled';
-import {TabInternal} from './tab-internal';
+import {Flow} from '../stack';
+import {TabButton} from './tab-button';
 import {useTheme} from '../theme';
 import {useResizeObserver} from '../utils/hooks/use-resize-observer';
 import {
@@ -74,6 +83,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
       indicatorPosition = 'end',
       align: passedAlign,
       onChange,
+      ...rest
     },
     ref,
   ) => {
@@ -92,11 +102,11 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
     );
 
     // filter out children which are not Tab component
-    const tabsOnlyChildren = React.Children.toArray(
+    const tabsOnlyChildren: React.ReactElement<TabProps>[] = React.Children.toArray(
       children,
-    ).filter((child: React.ReactNode) =>
+    ).filter((child: React.ReactNode): child is React.ReactElement<TabProps> =>
       hasMatchingDisplayNameWith(child, Tab),
-    ) as Array<React.ReactElement>;
+    );
 
     // The index of the active tab - this is what we change on click to trigger a visual tab change
     const [activeTabIndex, setActiveTabIndex] = useState(() =>
@@ -236,33 +246,17 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
     // generate uniq IDs for a11y purposes
     const ariaIds = useReactKeys(tabsOnlyChildren.length);
 
-    const tabPanels = tabsOnlyChildren.map(
-      (child: React.ReactElement<TabProps>, index) => {
-        /* istanbul ignore next */
-        const key = child.key || `panel-${index}`;
-        const tabPanelProps = {
-          key,
-          children: child.props.children,
-          selected: index === activeTabIndex,
-          id: ariaIds[index],
-        };
+    const tabPanels = tabsOnlyChildren.map((child, index) => {
+      /* istanbul ignore next */
+      const key = child.key || `panel-${index}`;
+      const tabPanelProps: TabPanelProps = {
+        children: child.props.children,
+        selected: index === activeTabIndex,
+        id: ariaIds[index],
+      };
 
-        return <TabPanel {...tabPanelProps} />;
-      },
-    );
-
-    const tabData = tabsOnlyChildren.map(
-      (child: React.ReactElement<TabProps>, index) => {
-        /* istanbul ignore next */
-        const key = child.key || `tab-${index}`;
-        return {
-          key,
-          selected: index === activeTabIndex,
-          id: ariaIds[index],
-          ...child.props,
-        };
-      },
-    );
+      return <TabPanel key={key} {...tabPanelProps} />;
+    });
 
     const addStackDivider = (key: React.Key) => (
       <StyledDividerWrapper
@@ -283,47 +277,67 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
       }
       return tab;
     };
-    const tabs = tabData.reduce((acc, tab, index, array) => {
-      acc.push(
-        <StyledDistributionWrapper
-          distribution={distribution || 'start'}
-          data-testid="distribution-wrapper"
-          vertical={vertical}
-          last={array.length === index + 1}
-          key={`${tab.key}-wrapper`}
-          overrides={nonLogicalOverrides}
-        >
-          <ScrollSnapAlignment snapAlign={getScrollAlign(index, array)}>
-            <TabInternal
-              key={tab.key}
-              selected={tab.selected}
-              autoFocus={tab.autoFocus}
-              dataTestId={tab.dataTestId}
-              size={size}
-              onKeyDown={handleKeyDown}
-              onClick={() => changeActiveTab(index)}
-              disabled={tab.disabled}
-              ref={tab.selected ? activeTabRef : undefined}
-              id={tab.id}
-              align={align}
-              ariaLabel={tab.ariaLabel}
-              overrides={{
-                ...tab.overrides,
-                width: '100%',
-                height: vertical ? '100%' : '',
-              }}
-            >
-              {getChildren(tab.label)}
-            </TabInternal>
-          </ScrollSnapAlignment>
-        </StyledDistributionWrapper>,
-      );
 
-      if (divider && index < array.length - 1) {
-        acc.push(addStackDivider(tab.key));
-      }
-      return acc;
-    }, [] as React.ReactElement[]);
+    const tabButtons = tabsOnlyChildren.reduce(
+      (acc, {key: k, props}, index, array) => {
+        /* istanbul ignore next */
+        const key = k || `tab-${index}`;
+        const id = ariaIds[index];
+        const selected = index === activeTabIndex;
+        const {
+          autoFocus,
+          dataTestId,
+          disabled,
+          ariaLabel,
+          overrides: tabButtonOverrides,
+          label,
+          ...restTabButtonProps
+        } = props;
+
+        acc.push(
+          <StyledDistributionWrapper
+            distribution={distribution || TabsDistribution.Start}
+            data-testid="distribution-wrapper"
+            vertical={vertical}
+            last={array.length === index + 1}
+            key={`${key}-wrapper`}
+            overrides={nonLogicalOverrides}
+          >
+            <ScrollSnapAlignment snapAlign={getScrollAlign(index, array)}>
+              <TabButton
+                key={key}
+                selected={selected}
+                autoFocus={autoFocus}
+                dataTestId={dataTestId}
+                size={size}
+                onKeyDown={handleKeyDown}
+                onClick={() => changeActiveTab(index)}
+                disabled={disabled}
+                ref={selected ? activeTabRef : undefined}
+                id={id}
+                align={align}
+                ariaLabel={ariaLabel}
+                overrides={{
+                  ...tabButtonOverrides,
+                  width: '100%',
+                  height: vertical ? '100%' : '',
+                }}
+                {...restTabButtonProps}
+              >
+                {getChildren(label)}
+              </TabButton>
+            </ScrollSnapAlignment>
+          </StyledDistributionWrapper>,
+        );
+
+        if (divider && index < array.length - 1) {
+          acc.push(addStackDivider(key));
+        }
+
+        return acc;
+      },
+      [] as React.ReactElement[],
+    );
 
     return (
       <StyledTabGroup
@@ -331,6 +345,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
         vertical={vertical}
         overrides={overrides}
         data-testid="tab-group"
+        {...rest}
       >
         <StyledTabsBar
           overrides={nonLogicalOverrides}
@@ -345,7 +360,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
               role="tablist"
               aria-orientation={vertical ? 'vertical' : 'horizontal'}
             >
-              {tabs}
+              {tabButtons}
 
               <StyledTabsBarIndicator
                 overrides={nonLogicalOverrides}

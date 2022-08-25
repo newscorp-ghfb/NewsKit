@@ -5,7 +5,7 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {compileTheme, createTheme, Tab} from '../..';
+import {compileTheme, createTheme, Tab, TabProps, TabSize} from '../..';
 import {Tabs, TabsDistribution} from '..';
 import {TabsProps} from '../types';
 import {IconFilledEmail} from '../../icons';
@@ -70,6 +70,22 @@ describe('Tabs', () => {
   test('renders with default styles', () => {
     const props: TabsProps = {
       children: tabsWithLabel,
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with additional HTML attributes', () => {
+    const tabProps: TabProps = {
+      children: 'content',
+      label: 'label',
+      className: 'tab-class-name',
+    };
+
+    const props: TabsProps = {
+      id: 'tabs-id',
+      children: [<Tab {...tabProps} />],
     };
 
     const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
