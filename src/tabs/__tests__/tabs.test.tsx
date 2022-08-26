@@ -1,6 +1,6 @@
 import React from 'react';
 import userEvent from '@testing-library/user-event';
-import {fireEvent} from '@testing-library/react';
+import {fireEvent, act} from '@testing-library/react';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
@@ -274,7 +274,10 @@ describe('Tabs', () => {
     firstTab.focus();
     expect(firstTab).toHaveFocus();
 
-    userEvent.tab();
+    act(() => {
+      userEvent.tab();
+    });
+
     expect(firstTabPanel).toHaveFocus();
 
     expect(asFragment()).toMatchSnapshot();
@@ -292,10 +295,14 @@ describe('Tabs', () => {
     const firstTab = getAllByTestId('tab')[0];
     const firstTabPanel = getAllByTestId('tab-panel')[0];
 
-    firstTabPanel.focus();
+    act(() => {
+      firstTabPanel.focus();
+    });
     expect(firstTabPanel).toHaveFocus();
 
-    firstTab.focus();
+    act(() => {
+      firstTab.focus();
+    });
     expect(firstTab).toHaveFocus();
 
     expect(asFragment()).toMatchSnapshot();
@@ -847,7 +854,9 @@ describe('Tabs keyboard changes focus', () => {
       const body = document.getElementsByTagName('body')[0];
 
       firstTab.focus();
-      userEvent.tab();
+      act(() => {
+        userEvent.tab();
+      });
       expect(firstTabPanel).toHaveFocus();
 
       fireEvent.mouseDown(firstTabPanel);

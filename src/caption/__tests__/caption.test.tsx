@@ -23,6 +23,7 @@ test('renders correctly with default props and only caption text', () => {
 test('renders with additional HTML attributes', () => {
   const fragment = renderToFragmentWithTheme(Caption, {
     id: 'caption-id',
+    children: 'test',
   });
 
   expect(fragment).toMatchSnapshot();

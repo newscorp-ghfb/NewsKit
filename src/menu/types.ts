@@ -18,7 +18,7 @@ export interface MenuProps extends React.AriaAttributes {
 
 export interface MenuGroupProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
-  title?: React.ReactNode;
+  title?: string | (() => React.ReactNode);
   overrides?: {
     spaceInline?: MQ<string>; // -> space between menuGroups
     stylePreset?: MQ<string>;

@@ -35,7 +35,7 @@ export const Layer: React.FC<LayerProps> = ({
     // target: is the element the Layer will be appended to
     // it can be document.body, parent layer-organizer or attache to another element via Ref
     let hostElement = layerOrganizerHost || document.body;
-    if (appendToRef && appendToRef.current && appendToRef.current.appendChild) {
+    if (appendToRef && appendToRef.current) {
       hostElement = appendToRef.current;
     } else if (parentLayer) {
       hostElement = parentLayer;

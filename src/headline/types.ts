@@ -13,6 +13,7 @@ export interface HeadlineOverrides extends LogicalProps {
 }
 
 export interface HeadlineProps extends React.HTMLAttributes<HTMLElement> {
+  children: React.ReactNode;
   kickerText?: string;
   headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   kickerAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
