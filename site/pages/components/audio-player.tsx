@@ -1,11 +1,13 @@
 import React from 'react';
-import {InlineMessage, toNewsKitIcon} from 'newskit';
+import {InlineMessage, toNewsKitIcon, UnorderedList} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
+import {ContentText} from '../../components/text-section/content-text';
+import {IconFilledCircle} from '../../components/icons';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
@@ -418,6 +420,435 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ),
         },
       ],
+    }}
+    accessibility={{
+      introduction: (
+        <>
+          The audio player has the following accessibility considerations:
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={{
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
+              marginBlockStart: 'space050',
+              marginBlockEnd: 'space090',
+            }}
+          >
+            <>
+              For recorded audio content, it is best practice to provide audio
+              transcription in order to cater to accessibility needs. This is
+              generally provided in{' '}
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API"
+                target="_blank"
+              >
+                WebVTT format.
+              </Link>
+            </>
+          </UnorderedList>
+          <ContentText title="Focus order" />
+          <InlineMessage
+            icon={infoIcon}
+            role="region"
+            aria-label="Focus order"
+            overrides={{
+              marginBlockStart: 'space010',
+              marginBlockEnd: 'space090',
+            }}
+          >
+            Focus order depends on how the audio player subcomponents are
+            assembled and ordered in the DOM.
+          </InlineMessage>
+        </>
+      ),
+      interaction: {
+        title: 'Keyboard Interactions',
+        tableRows: [
+          {
+            command: ['Tab'],
+            description: 'Move to next item',
+          },
+          {
+            command: ['Shift', 'Tab'],
+            description: 'Move to previous item',
+          },
+          {
+            command: ['Shift', 'p'],
+            description: 'Previous track',
+          },
+          {
+            command: ['Shift', 'n'],
+            description: 'Next track',
+          },
+          {
+            command: ['0 or Home Key'],
+            description: 'Jump to start of the audio track',
+          },
+          {
+            command: ['End Key'],
+            description:
+              'Jump to the end of the audio track, or go to the next track',
+          },
+          {
+            command: ['Arrow Down'],
+            description:
+              'Decrease volume of the audio track, or move to previous item',
+          },
+          {
+            command: ['Arrow Down or Arrow Left'],
+            description: 'Replay (when seek bar is in focus)',
+          },
+          {
+            command: ['Arrow Up'],
+            description:
+              'Increase volume of the audio track, or move to next item',
+          },
+          {
+            command: ['Arrow Up or Arrow Right'],
+            description: 'Forward (when seek bar is in focus)',
+          },
+          {
+            command: ['Space or Enter'],
+            description: 'Activate buttons (when in focus)',
+          },
+          {
+            command: ['k or spacebar'],
+            description: 'Toggle play/pause',
+          },
+          {
+            command: ['m'],
+            description: 'Toggle mute',
+          },
+        ],
+      },
+      aria: {
+        title: 'WAI-ARIA',
+        tableRows: [
+          {
+            element: 'audioElement',
+            attribute: 'string',
+            value: '',
+            description: (
+              <>
+                Defines the Aria-label of the Audio Player
+                <br />
+                <br />
+                It is recommended that this is enabled for screen readers to be
+                able to explain the audio player purpose
+                <br />
+                <br />
+                If left undefined it is set to &quot;audio-player&quot;
+                <br />
+                <br />
+                ariaLandmark should be unique, so the same value should not
+                appear on the same page more than once
+              </>
+            ),
+            userSupplied: undefined,
+          },
+          {
+            element: 'audioElement',
+            attribute: 'role',
+            value: 'region',
+            description: 'Defines the Aria-role of the Audio Player',
+            userSupplied: undefined,
+          },
+          {
+            element: 'audioPlayer.PlayPauseButton',
+            attribute: 'aria-pressed',
+            value: `“true” | “false”`,
+            description:
+              'Icon Button changes while playing or pausing, set to “true” while mouse is down',
+            userSupplied: undefined,
+          },
+          {
+            element: 'seekBar',
+            attribute: 'role',
+            value: 'slider',
+            description: 'Defines the Aria-role of the seekBar',
+            userSupplied: undefined,
+          },
+          {
+            element: 'seekBar',
+            attribute: 'aria-valueMax',
+            value: (
+              <>
+                This is set to the audio track <br />
+                duration in seconds
+              </>
+            ),
+            description: (
+              <>
+                Defines the max value of the seekBar
+                <br />
+                <br />
+                The step of the track slider is 1 second, the max value is the
+                track duration in seconds. The volume slider has a step of 0.1
+                and a max of 1
+              </>
+            ),
+            userSupplied: undefined,
+          },
+          {
+            element: 'seekBar',
+            attribute: 'aria-valueMin',
+            value: '0',
+            description: 'Defines the min value of the seekBar',
+            userSupplied: undefined,
+          },
+          {
+            element: 'seekBar',
+            attribute: 'aria-valueNow',
+            value: (
+              <>
+                This is set to the current <br />
+                track position in seconds
+              </>
+            ),
+            description: 'Defines the current value of the seekBar',
+            userSupplied: undefined,
+          },
+          {
+            element: 'seekBar',
+            attribute: 'aria-valueText',
+            value: (
+              <>
+                This should be a text <br />
+                explanation of the current <br />
+                track position. Ideally in the <br />
+                example format to the right.
+              </>
+            ),
+            description: (
+              <>
+                Defines the value text of the seekBar
+                <br />
+                <br />
+                Example: “0 Minutes 25 Seconds of 24 Minutes 15 Seconds”
+              </>
+            ),
+            userSupplied: undefined,
+          },
+          {
+            element: 'seekBar',
+            attribute: 'aria-orientation',
+            value: 'horizontal',
+            description: 'Defines the orientation of the seekBar',
+            userSupplied: undefined,
+          },
+
+          {
+            element: 'skipNextButton',
+            attribute: 'aria-label',
+            value: 'next',
+            description: 'Defines the Aria-label of the skip next button',
+            userSupplied: undefined,
+          },
+          {
+            element: 'skipPreviousButton',
+            attribute: 'aria-label',
+            value: 'previous',
+            description: 'Defines the Aria-label of the skip previous button',
+            userSupplied: undefined,
+          },
+          {
+            element: 'forwardButton',
+            attribute: 'aria-label',
+            value: 'seconds',
+            description: (
+              <>
+                Defines the Aria-label of the forward button
+                <br />
+                <br />
+                Forward a number of seconds (10 seconds is the default)
+              </>
+            ),
+            userSupplied: undefined,
+          },
+          {
+            element: 'replayButton',
+            attribute: 'aria-label',
+            value: 'seconds',
+            description: (
+              <>
+                Defines the Aria-label of the replay button
+                <br />
+                <br />
+                Replay a number of seconds (10 seconds is the default)
+              </>
+            ),
+            userSupplied: undefined,
+          },
+          {
+            element: 'volumeControl.muteVolumeIconButton',
+            attribute: 'role',
+            value: 'button',
+            description: 'Defines the Aria-role of the mute volume button',
+            userSupplied: undefined,
+          },
+          {
+            element: 'volumeControl.muteVolumeIconButton',
+            attribute: 'aria-label',
+            value: 'mute volume button',
+            description: 'Defines the Aria-label of the mute volume button',
+            userSupplied: undefined,
+          },
+          {
+            element: 'volumeControl.slider',
+            attribute: 'role',
+            value: 'slider',
+            description: 'Defines the Aria-role of the volume slider',
+            userSupplied: undefined,
+          },
+          {
+            element: 'volumeControl.slider',
+            attribute: 'aria-label',
+            value: 'volume slider',
+            description: 'Defines the Aria-label of the volume slider',
+            userSupplied: undefined,
+          },
+          {
+            element: 'volumeControl.slider',
+            attribute: 'aria-valueMax',
+            value: '10',
+            description: 'Defines the max value of the volume slider',
+            userSupplied: undefined,
+          },
+          {
+            element: 'volumeControl.slider',
+            attribute: 'aria-valueMin',
+            value: '0',
+            description: 'Defines the min value of the volume slider',
+            userSupplied: undefined,
+          },
+          {
+            element: 'volumeControl.slider',
+            attribute: 'aria-valueNow',
+            value: (
+              <>
+                This should be set to the <br />
+                current value, which should <br />
+                be a value between 0 and 10.
+              </>
+            ),
+            description: 'Defines the current value of the volume slider',
+            userSupplied: undefined,
+          },
+          {
+            element: 'volumeControl.slider',
+            attribute: 'aria-valueText',
+            value: (
+              <>
+                A text explanation of the <br />
+                current volume level.
+              </>
+            ),
+            description: (
+              <>
+                Defines the value text of the volume slider
+                <br />
+                Example:
+                <br />
+                0= “Volume Muted”
+                <br />
+                1= “Volume Level 1 of 10”
+                <br />
+                2= “Volume Level 2 of 10”
+                <br />
+                3= “Volume Level 3 of 10”
+                <br />
+                4= “Volume Level 4 of 10”
+                <br />
+                5= “Volume Level 5 of 10”
+                <br />
+                6= “Volume Level 6 of 10”
+                <br />
+                7= “Volume Level 7 of 10”
+                <br />
+                8= “Volume Level 8 of 10”
+                <br />
+                9= “Volume Level 9 of 10”
+                <br />
+                10= “Volume Level Max”
+              </>
+            ),
+            userSupplied: undefined,
+          },
+          {
+            element: 'volumeControl.slider',
+            attribute: 'aria-orientation',
+            value: 'horizontal | vertical',
+            description: 'Defines the orientation of the Volume Control',
+            userSupplied: undefined,
+          },
+          {
+            element: 'volumeControl.slider',
+            attribute: 'aria-label',
+            value: 'mute',
+            description:
+              'Defines the Aria-label of the volume slider when unmuted',
+            userSupplied: undefined,
+          },
+          {
+            element: 'volumeControl.slider',
+            attribute: 'aria-label',
+            value: 'unmute',
+            description:
+              'Defines the Aria-label of the volume slider when muted',
+            userSupplied: undefined,
+          },
+          {
+            element: 'playbackSpeedControl',
+            attribute: 'aria-label',
+            value: 'playback speed',
+            description:
+              'Defines the Aria-label of the playback speed control icon button',
+            userSupplied: undefined,
+          },
+          {
+            element: 'playbackSpeedControl',
+            attribute: 'aria-value',
+            value: (
+              <>
+                0.5x, 0.8x, 1x, 1.2x, 1.5x, <br />
+                2x
+              </>
+            ),
+            description: 'Defines the Aria-value of the playback speed control',
+            userSupplied: undefined,
+          },
+          {
+            element: 'selectionList',
+            attribute: 'role',
+            value: 'menu',
+            description: 'Defines the Aria-role of the selection list',
+            userSupplied: undefined,
+          },
+          {
+            element: 'selectionList',
+            attribute: 'aria-label',
+            value: 'playback speed',
+            description: 'Defines the Aria-label of the selection list',
+            userSupplied: true,
+          },
+          {
+            element: 'selectionListOption',
+            attribute: 'role',
+            value: '',
+            description: 'Defines the Aria-role of the selection list option',
+            userSupplied: undefined,
+          },
+          {
+            element: 'selectionList',
+            attribute: 'aria-checked',
+            value: 'true',
+            description: 'When an option in the selection list is selected',
+            userSupplied: undefined,
+          },
+        ],
+      },
     }}
   />
 );
