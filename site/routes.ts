@@ -368,6 +368,14 @@ export default [
             illustration: 'components/slider-illustration',
           },
           {
+            title: 'Switch',
+            page: true,
+            id: '/components/switch',
+            description:
+              'A switch is a selection control (toggle) that allows users to turn a setting on or off.',
+            illustration: 'components/switch/hero',
+          },
+          {
             title: 'Text Field',
             page: true,
             id: '/components/text-field',
