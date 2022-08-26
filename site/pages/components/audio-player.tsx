@@ -2,6 +2,7 @@ import React from 'react';
 import {InlineMessage, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
+import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
@@ -366,6 +367,54 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ),
           media: getIllustrationComponent(
             'components/audio-player/behaviours/mute-button',
+          ),
+        },
+      ],
+    }}
+    usage={{
+      introduction:
+        'The following guidance describes how and when to appropriately use the audio player component.',
+      cards: [
+        {
+          description: (
+            <>
+              Use a <Link href="/components/flag/">flag</Link> to show users
+              that audio is being live streamed.
+            </>
+          ),
+          kind: UsageKind.DO,
+          media: getIllustrationComponent(
+            'components/audio-player/usage/do-01',
+          ),
+        },
+        {
+          description: (
+            <>
+              For optimal user experience across breakpoints, it is recommended
+              to display the playback speed control options in a{' '}
+              <Link href="/components/popover/">popover</Link> for desktop, and
+              in a <Link href="/components/modal/">modal</Link> for mobile.
+            </>
+          ),
+          kind: UsageKind.DO,
+          media: getIllustrationComponent(
+            'components/audio-player/usage/do-02',
+          ),
+        },
+        {
+          description:
+            'Use the expandable volume control when space in an audio player is limited.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent(
+            'components/audio-player/usage/do-03',
+          ),
+        },
+        {
+          description:
+            'Avoid displaying the volume control on mobile devices as users can use their native device controls to increase or decrease the volume of the audio track.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent(
+            'components/audio-player/usage/dont-01',
           ),
         },
       ],
