@@ -9,7 +9,6 @@ import {
   StyledCloseButtonContainer,
 } from './styled';
 import {IconFilledClose} from '../icons';
-import {ButtonSize} from '../button';
 import {deepMerge} from '../utils/deep-merge';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
@@ -106,7 +105,7 @@ export const BaseDialogView = React.forwardRef<
                 }
                 onClick={handleCloseButtonClick}
                 overrides={closeButtonOverrides}
-                size={ButtonSize.Medium}
+                size="medium"
               >
                 <IconFilledClose />
               </IconButton>

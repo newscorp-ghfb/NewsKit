@@ -5,7 +5,7 @@ import {
   renderWithTheme,
 } from '../../test/test-utils';
 import {IconButton} from '..';
-import {ButtonSize, IconButtonProps} from '../../button';
+import {IconButtonProps} from '../../button';
 import {IconFilledEmail} from '../../icons';
 
 const renderIconButton = (props: IconButtonProps) => (
@@ -21,8 +21,8 @@ describe('IconButton', () => {
   });
 
   test('renders Small Icon Button', () => {
-    const props = {
-      size: ButtonSize.Small,
+    const props: IconButtonProps = {
+      size: 'small',
       'aria-label': 'Test icon button',
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
@@ -31,7 +31,7 @@ describe('IconButton', () => {
 
   test('renders Medium Icon Button', () => {
     const props: IconButtonProps = {
-      size: ButtonSize.Medium,
+      size: 'medium',
       'aria-label': 'Test icon button',
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
@@ -40,7 +40,7 @@ describe('IconButton', () => {
 
   test('renders Large Icon Button', () => {
     const props: IconButtonProps = {
-      size: ButtonSize.Large,
+      size: 'large',
       'aria-label': 'Test icon button',
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
@@ -49,7 +49,7 @@ describe('IconButton', () => {
 
   test('renders Icon Button in loading State', () => {
     const props: IconButtonProps = {
-      size: ButtonSize.Large,
+      size: 'large',
       loading: true,
       'aria-label': 'Test icon button',
     };

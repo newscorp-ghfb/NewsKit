@@ -1,6 +1,6 @@
 import React from 'react';
 import {IconFilledSkipNext, IconFilledSkipPrevious} from '../../icons';
-import {ButtonSize, ButtonOverrides} from '../../button';
+import {ButtonOverrides} from '../../button';
 import {IconVisibilityButton} from './play-pause';
 
 export interface SkipButtonProps {
@@ -14,7 +14,7 @@ export const SkipNextButton: React.FC<SkipButtonProps> = React.memo(props => (
   <IconVisibilityButton
     data-testid="audio-player-skip-next"
     aria-label="Skip next"
-    size={ButtonSize.Medium}
+    size="medium"
     hide
     {...props}
   >
@@ -27,7 +27,7 @@ export const SkipPreviousButton: React.FC<SkipButtonProps> = React.memo(
     <IconVisibilityButton
       data-testid="audio-player-skip-previous"
       aria-label="Skip previous"
-      size={ButtonSize.Medium}
+      size="medium"
       hide
       {...props}
     >

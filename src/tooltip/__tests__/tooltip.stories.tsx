@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Button, ButtonSize} from '../../button';
+import {Button} from '../../button';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
@@ -7,7 +7,7 @@ import {styled} from '../../utils';
 import {Tooltip} from '../tooltip';
 import {IconFilledTwitter} from '../../icons';
 import {IconButton} from '../../icon-button';
-import {Flow, Stack} from '../../stack';
+import {Stack} from '../../stack';
 import {LinkInline, LinkStandalone} from '../../link';
 
 export default {
@@ -55,7 +55,7 @@ export const StoryTooltip = () => (
       trigger={['focus', 'hover']}
     >
       <IconButton
-        size={ButtonSize.Small}
+        size="small"
         overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
       >
         <IconFilledTwitter />
@@ -69,7 +69,7 @@ export const StoryTooltip = () => (
     >
       <span>
         <Button
-          size={ButtonSize.Small}
+          size="small"
           disabled
           overrides={{stylePreset: 'buttonOutlinedPrimary'}}
         >
@@ -83,10 +83,7 @@ export const StoryTooltip = () => (
       placement="right"
       trigger={['focus', 'hover']}
     >
-      <Button
-        size={ButtonSize.Small}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
+      <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button
       </Button>
     </Tooltip>
@@ -110,10 +107,7 @@ export const StoryTooltip = () => (
       When content is empty, no tooltip is displayed
     </StorybookSubHeading>
     <Tooltip content="" placement="right" trigger={['focus', 'hover']}>
-      <Button
-        size={ButtonSize.Small}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
+      <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button
       </Button>
     </Tooltip>
@@ -123,10 +117,7 @@ export const StoryTooltip = () => (
       placement="right"
       trigger={['focus', 'hover']}
     >
-      <Button
-        size={ButtonSize.Small}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
+      <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button
       </Button>
     </Tooltip>
@@ -138,10 +129,7 @@ export const StoryTooltip = () => (
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         trigger={['focus', 'hover']}
       >
-        <Button
-          size={ButtonSize.Small}
-          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-        >
+        <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
           Button
         </Button>
       </Tooltip>
@@ -155,10 +143,7 @@ export const StoryTooltip = () => (
         trigger={['focus', 'hover']}
         overrides={{maxWidth: '100px'}}
       >
-        <Button
-          size={ButtonSize.Small}
-          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-        >
+        <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
           Button
         </Button>
       </Tooltip>
@@ -188,7 +173,7 @@ export const StoryTooltipPlacements = () => (
           <Stack spaceInline="space050">
             <Tooltip content="Tooltip content" placement="left-start">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -200,7 +185,7 @@ export const StoryTooltipPlacements = () => (
 
             <Tooltip content="Tooltip content" placement="left">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -212,7 +197,7 @@ export const StoryTooltipPlacements = () => (
 
             <Tooltip content="Tooltip content" placement="left-end">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -232,7 +217,7 @@ export const StoryTooltipPlacements = () => (
           <Stack spaceInline="space050">
             <Tooltip content="Tooltip content" placement="right-start">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -243,7 +228,7 @@ export const StoryTooltipPlacements = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="right">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -254,7 +239,7 @@ export const StoryTooltipPlacements = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="right-end">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -271,10 +256,10 @@ export const StoryTooltipPlacements = () => (
           justifySelf="center"
           alignSelf="center"
         >
-          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+          <Stack spaceInline="space050" flow="horizontal-top">
             <Tooltip content="Tooltip content" placement="top-start">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -285,7 +270,7 @@ export const StoryTooltipPlacements = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="top">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -296,7 +281,7 @@ export const StoryTooltipPlacements = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="top-end">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -313,10 +298,10 @@ export const StoryTooltipPlacements = () => (
           justifySelf="center"
           alignSelf="center"
         >
-          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+          <Stack spaceInline="space050" flow="horizontal-top">
             <Tooltip content="Tooltip content" placement="bottom-start">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -327,7 +312,7 @@ export const StoryTooltipPlacements = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="bottom">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -338,7 +323,7 @@ export const StoryTooltipPlacements = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="bottom-end">
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -362,10 +347,7 @@ export const StoryTooltipTriggers = () => (
   <>
     <StorybookSubHeading>Triggered by focus only</StorybookSubHeading>
     <Tooltip content="Tooltip content" placement="right" trigger="focus">
-      <Button
-        size={ButtonSize.Small}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
+      <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button
       </Button>
     </Tooltip>
@@ -375,10 +357,7 @@ export const StoryTooltipTriggers = () => (
       placement="right"
       trigger={['focus', 'hover']}
     >
-      <Button
-        size={ButtonSize.Small}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
+      <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button
       </Button>
     </Tooltip>
@@ -395,10 +374,7 @@ export const StoryTooltipControlled = () => {
     <>
       <StorybookSubHeading>Tooltip Controlled</StorybookSubHeading>
       <Tooltip content="Tooltip content" placement="right" open={open}>
-        <Button
-          size={ButtonSize.Small}
-          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-        >
+        <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
           Button
         </Button>
       </Tooltip>
@@ -446,10 +422,7 @@ export const StoryTooltipOverrides = () => (
           },
         }}
       >
-        <Button
-          size={ButtonSize.Small}
-          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-        >
+        <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
           Button
         </Button>
       </Tooltip>
@@ -476,7 +449,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
           <Stack spaceInline="space050">
             <Tooltip content="Tooltip content" placement="left-start" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -488,7 +461,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
 
             <Tooltip content="Tooltip content" placement="left" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -500,7 +473,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
 
             <Tooltip content="Tooltip content" placement="left-end" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -520,7 +493,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
           <Stack spaceInline="space050">
             <Tooltip content="Tooltip content" placement="right-start" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -531,7 +504,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="right" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -542,7 +515,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="right-end" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   height: '50px',
@@ -559,10 +532,10 @@ export const StoryTooltipPlacementsVisualTest = () => (
           justifySelf="center"
           alignSelf="center"
         >
-          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+          <Stack spaceInline="space050" flow="horizontal-top">
             <Tooltip content="Tooltip content" placement="top-start" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -573,7 +546,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="top" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -584,7 +557,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="top-end" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -601,10 +574,10 @@ export const StoryTooltipPlacementsVisualTest = () => (
           justifySelf="center"
           alignSelf="center"
         >
-          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+          <Stack spaceInline="space050" flow="horizontal-top">
             <Tooltip content="Tooltip content" placement="bottom-start" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -615,7 +588,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="bottom" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -626,7 +599,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
             </Tooltip>
             <Tooltip content="Tooltip content" placement="bottom-end" open>
               <Button
-                size={ButtonSize.Small}
+                size="small"
                 overrides={{
                   stylePreset: 'buttonOutlinedPrimary',
                   width: '150px',
@@ -647,10 +620,7 @@ export const StoryTooltipNoPointer = () => (
   <>
     <StorybookSubHeading>Tooltip no pointer</StorybookSubHeading>
     <Tooltip content="Tooltip content" placement="right" hidePointer>
-      <Button
-        size={ButtonSize.Small}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
+      <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button
       </Button>
     </Tooltip>

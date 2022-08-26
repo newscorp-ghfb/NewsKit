@@ -1,5 +1,5 @@
 import React from 'react';
-import {Headline, Stack, Flow, TextBlock} from 'newskit';
+import {Headline, Stack, TextBlock} from 'newskit';
 import {Link} from '../link';
 
 const newskitRepoLink = `https://github.com/newscorp-ghfb/newskit/releases/tag/`;
@@ -9,7 +9,7 @@ export const Introduced: React.FC<{
   introducedLink?: boolean;
 }> = ({introduced, introducedLink}) =>
   introduced ? (
-    <Stack flow={Flow.VerticalLeft} spaceInline="space050">
+    <Stack flow="vertical-left" spaceInline="space050">
       <Headline overrides={{typographyPreset: 'utilityLabel020'}}>
         Introduced
       </Headline>

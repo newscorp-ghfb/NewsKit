@@ -1,12 +1,12 @@
 import React from 'react';
-import {Button, ButtonSize} from 'newskit';
+import {Button} from 'newskit';
 
 import {IconFilledFigma} from '../icons/icon-filled-figma';
 
 export const FigmaButton: React.FC<{href?: string}> = ({href}) =>
   href ? (
     <Button
-      size={ButtonSize.Small}
+      size="small"
       overrides={{
         typographyPreset: 'utilityButton010',
         stylePreset: 'buttonOutlinedSecondary',

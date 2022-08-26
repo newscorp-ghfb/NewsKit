@@ -49,8 +49,8 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-4 {
     font-family: "Poppins",sans-serif;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 28px;
+    line-height: 31.5px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -72,8 +72,8 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-4 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -96,11 +96,11 @@ exports[`ComponentAPISection renders section as expected 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-5 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 1023px) {
@@ -117,7 +117,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 
 .emotion-7 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -127,7 +127,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-7::before {
@@ -156,12 +156,12 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 
 .emotion-10 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
   display: inline-block;
 }
 
 .emotion-10 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 1439px) {
@@ -190,8 +190,8 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-10 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -216,11 +216,11 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 
 .emotion-12 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-12 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 1439px) {
@@ -489,7 +489,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 
 .emotion-1 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;

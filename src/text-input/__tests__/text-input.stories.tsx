@@ -1,11 +1,11 @@
 import * as React from 'react';
-import {TextInput, TextInputSize} from '..';
+import {TextInput} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {styled, getSizingFromTheme} from '../../utils/style';
-import {Stack, StackDistribution} from '../../stack';
+import {Stack} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {Block} from '../../block';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
@@ -85,7 +85,7 @@ export const StoryTextInputSize = () => (
         <Block>
           <StorybookSubHeading>Small</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Small}
+            size="small"
             label="Label"
             assistiveText="Assistive text"
           />
@@ -93,7 +93,7 @@ export const StoryTextInputSize = () => (
         <Block>
           <StorybookSubHeading>Medium</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Medium}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
           />
@@ -101,7 +101,7 @@ export const StoryTextInputSize = () => (
         <Block>
           <StorybookSubHeading>Large</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Large}
+            size="large"
             label="Label"
             assistiveText="Assistive text"
           />
@@ -119,7 +119,7 @@ export const StoryFullWidthTextInput = () => (
       <Border>
         <Spacer>
           <TextInput
-            size={TextInputSize.Small}
+            size="small"
             label="Label"
             assistiveText="Assistive text"
             overrides={{
@@ -129,7 +129,7 @@ export const StoryFullWidthTextInput = () => (
         </Spacer>
         <Spacer>
           <TextInput
-            size={TextInputSize.Medium}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
             overrides={{
@@ -138,7 +138,7 @@ export const StoryFullWidthTextInput = () => (
           />
         </Spacer>
         <TextInput
-          size={TextInputSize.Large}
+          size="large"
           label="Label"
           assistiveText="Assistive text"
           overrides={{
@@ -158,7 +158,7 @@ export const StoryFixedWidthTextInput = () => (
       <Border>
         <Spacer>
           <TextInput
-            size={TextInputSize.Small}
+            size="small"
             label="Label"
             assistiveText="Assistive text"
             overrides={{
@@ -168,7 +168,7 @@ export const StoryFixedWidthTextInput = () => (
         </Spacer>
         <Spacer>
           <TextInput
-            size={TextInputSize.Medium}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
             overrides={{
@@ -177,7 +177,7 @@ export const StoryFixedWidthTextInput = () => (
           />
         </Spacer>
         <TextInput
-          size={TextInputSize.Large}
+          size="large"
           label="Label"
           assistiveText="Assistive text"
           overrides={{
@@ -218,20 +218,14 @@ export const StoryTextInputStates = () => (
     <StorybookHeading>Text Input States</StorybookHeading>
     <Grid>
       <Cell xs={4} sm={4}>
-        <Stack
-          spaceInline="space100"
-          stackDistribution={StackDistribution.Start}
-        >
+        <Stack spaceInline="space100" stackDistribution="flex-start">
           {states.map(state => (
             <Label>{state}</Label>
           ))}
         </Stack>
       </Cell>
       <Cell xs={8} sm={4}>
-        <Stack
-          spaceInline="space070"
-          stackDistribution={StackDistribution.Start}
-        >
+        <Stack spaceInline="space070" stackDistribution="flex-start">
           <CustomBlock data-state="Default">
             <TextInput label="Label" assistiveText="Assistive text" />
           </CustomBlock>
@@ -321,7 +315,7 @@ export const StoryTextInputWithLeadingIcon = () => (
         <Block>
           <StorybookSubHeading>Small</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Small}
+            size="small"
             label="Label"
             assistiveText="Assistive text"
             icon={
@@ -337,7 +331,7 @@ export const StoryTextInputWithLeadingIcon = () => (
         <Block>
           <StorybookSubHeading>Medium</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Medium}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
             icon={
@@ -353,7 +347,7 @@ export const StoryTextInputWithLeadingIcon = () => (
         <Block>
           <StorybookSubHeading>Large</StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Large}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
             icon={
@@ -371,7 +365,7 @@ export const StoryTextInputWithLeadingIcon = () => (
             Medium with custom iconOffset and spaceInset
           </StorybookSubHeading>
           <TextInput
-            size={TextInputSize.Medium}
+            size="medium"
             label="Label"
             assistiveText="Assistive text"
             icon={

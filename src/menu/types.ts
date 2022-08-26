@@ -3,24 +3,14 @@ import {BaseFlagOverrides, BaseFlagProps} from '../flag';
 import {MQ} from '../utils';
 import {LogicalProps} from '../utils/logical-properties';
 
-export enum MenuItemAlign {
-  Start = 'start',
-  End = 'end',
-  Center = 'center',
-}
+export type MenuItemSize = 'small' | 'medium' | 'large';
+export type MenuItemAlign = 'start' | 'end' | 'center';
 
-export enum MenuItemSize {
-  Small = 'small',
-  Medium = 'medium',
-  Large = 'large',
-}
-export type MenutItemAlignTypes = MenuItemAlign | 'start' | 'end' | 'center';
-type MenuSizeType = MenuItemSize | 'small' | 'medium' | 'large';
 export interface MenuProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
   vertical?: boolean;
-  size?: MenuSizeType;
-  align?: MenutItemAlignTypes;
+  size?: MenuItemSize;
+  align?: MenuItemAlign;
   overrides?: {
     spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
   } & LogicalProps;

@@ -6,15 +6,10 @@ import {
 } from '../../test/test-utils';
 import {IconFilledAddCircleOutline} from '../../icons';
 import {compileTheme, createTheme} from '../..';
-import {MenuItemAlign, MenuItemProps, MenuItemSize} from '../types';
+import {MenuItemProps, MenuItemAlign, MenuItemSize} from '../types';
 
-const MenuItemSizeKeys = (Object.keys(MenuItemSize) as unknown) as Array<
-  keyof typeof MenuItemSize
->;
-
-const MenuItemAlignKeys = (Object.keys(MenuItemAlign) as unknown) as Array<
-  keyof typeof MenuItemAlign
->;
+const MenuItemSizeArray = ['small', 'medium', 'large'];
+const MenuItemAlignKeys = ['start', 'end', 'center'];
 
 const href = 'http://';
 
@@ -90,14 +85,14 @@ describe('MenuItem', () => {
     const fragment = renderToFragmentWithTheme(MenuWithItem, props);
     expect(fragment).toMatchSnapshot();
   });
-  test.each(MenuItemSizeKeys)('renders in %s size', currentSize => {
+  test.each(MenuItemSizeArray)('renders in %s size', currentSize => {
     const props = {
       children: menuItemContent,
       href,
     };
     const fragment = renderToFragmentWithTheme(MenuWithItem, {
       ...props,
-      size: MenuItemSize[currentSize],
+      size: currentSize as 'small' | 'medium' | 'large',
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -374,31 +369,59 @@ describe('Menu', () => {
       const fragment = renderToFragmentWithTheme(Menu, props);
       expect(fragment).toMatchSnapshot();
     });
-    test.each(MenuItemAlignKeys)(
-      'renders with menu items aligned at the %s',
-      currentAlignment => {
-        const props = {
-          children: menuItems,
-          vertical: verticalValue,
-          align: MenuItemAlign[currentAlignment],
-        };
-
-        const fragment = renderToFragmentWithTheme(Menu, props);
-        expect(fragment).toMatchSnapshot();
-      },
-    );
-    test.each(MenuItemSizeKeys)(
-      'renders with %s size menu items',
-      currentSize => {
-        const props = {
-          children: menuItems,
-          vertical: verticalValue,
-          size: MenuItemSize[currentSize],
-        };
-
-        const fragment = renderToFragmentWithTheme(Menu, props);
-        expect(fragment).toMatchSnapshot();
-      },
-    );
   });
+});
+
+describe('Menu alignment', () => {
+  test.each(MenuItemAlignKeys)(
+    'renders with menu items aligned at the %s vertical',
+    currentAlignment => {
+      const props = {
+        children: menuItems,
+        vertical: true,
+        align: currentAlignment as MenuItemAlign,
+      };
+
+      const fragment = renderToFragmentWithTheme(Menu, props);
+      expect(fragment).toMatchSnapshot();
+    },
+  );
+  test.each(MenuItemAlignKeys)(
+    'renders with menu items aligned at the %s horizontal',
+    currentAlignment => {
+      const props = {
+        children: menuItems,
+        vertical: false,
+        align: currentAlignment as MenuItemAlign,
+      };
+
+      const fragment = renderToFragmentWithTheme(Menu, props);
+      expect(fragment).toMatchSnapshot();
+    },
+  );
+  test.each(MenuItemSizeArray)(
+    'renders with %s size menu items vertical',
+    currentSize => {
+      const props = {
+        children: menuItems,
+        vertical: true,
+        size: currentSize as MenuItemSize,
+      };
+
+      const fragment = renderToFragmentWithTheme(Menu, props);
+      expect(fragment).toMatchSnapshot();
+    },
+  );
+  test.each(MenuItemSizeArray)(
+    'renders with %s size menu items horizontal',
+    currentSize => {
+      const props = {
+        children: menuItems,
+        size: currentSize as MenuItemSize,
+      };
+
+      const fragment = renderToFragmentWithTheme(Menu, props);
+      expect(fragment).toMatchSnapshot();
+    },
+  );
 });

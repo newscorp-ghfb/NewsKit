@@ -1,6 +1,5 @@
 import React, {useCallback} from 'react';
 import {IconButton} from '../../../icon-button';
-import {ButtonSize} from '../../../button/types';
 import {useAudioPlayerContext} from '../../context';
 import defaults from './defaults';
 import {withOwnTheme} from '../../../utils/with-own-theme';
@@ -50,7 +49,7 @@ const ThemelessAudioPlayerPlayPauseButton = React.forwardRef<
     <IconButton
       ref={ref}
       data-testid="audio-player-play-pause-button"
-      size={ButtonSize.Large}
+      size="large"
       overrides={overrides}
       {...propsFromContext}
     />

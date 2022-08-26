@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Flow, Stack} from '../../stack';
+import {Stack} from '../../stack';
 
 import {styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
@@ -30,7 +30,7 @@ export const StoryStackChildCustomOrder = () => (
   <MainContainer>
     <StorybookHeading>StackChild with custom order</StorybookHeading>
     <Container>
-      <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+      <Stack spaceInline="space050" flow="horizontal-top">
         <StackChild order={3}>
           <Tag>Child 1</Tag>
         </StackChild>
@@ -50,7 +50,7 @@ export const StoryStackChildWithStackList = () => (
   <MainContainer>
     <StorybookHeading>StackChild with stack list</StorybookHeading>
     <Container>
-      <Stack spaceInline="space050" flow={Flow.HorizontalTop} list>
+      <Stack spaceInline="space050" flow="horizontal-top" list>
         <StackChild order={3}>
           <Tag>Child 1</Tag>
         </StackChild>
@@ -70,7 +70,7 @@ export const StoryStackChildWithLogicalProps = () => (
   <MainContainer>
     <StorybookHeading>StackChild with logical props</StorybookHeading>
     <Container>
-      <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+      <Stack spaceInline="space050" flow="horizontal-top">
         <StackChild order={1} paddingInline="30px" paddingBlock="20px">
           <Tag>With padding props</Tag>
         </StackChild>

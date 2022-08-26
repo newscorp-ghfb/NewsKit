@@ -64,7 +64,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 .emotion-3 {
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -146,7 +146,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #577FFB;
+  color: #3358CC;
   margin: 0;
   cursor: pointer;
 }
@@ -157,24 +157,24 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #C0C7CC;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -239,8 +239,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-9 {
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
   vertical-align: unset;
   display: inline-block;
 }
@@ -264,8 +264,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 .emotion-9.emotion-9 {
   width: 24px;
   height: 24px;
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -321,16 +321,16 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border-color: transparent transparent transparent #577FFB;
+  border-color: transparent transparent transparent #3358CC;
   border-width: 4px;
   border-style: solid;
-  color: #577FFB;
+  color: #3358CC;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -344,12 +344,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -373,7 +373,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -413,7 +413,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 .emotion-25 {
   margin: 0;
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -466,7 +466,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
@@ -483,12 +483,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-27:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-27:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -517,7 +517,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 .emotion-50 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -898,7 +898,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-padding-start: 32px;
@@ -916,12 +916,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -975,7 +975,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1119,7 +1119,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 
 .emotion-3 {
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -1201,7 +1201,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #577FFB;
+  color: #3358CC;
   margin: 0;
   cursor: pointer;
 }
@@ -1212,24 +1212,24 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #C0C7CC;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -1294,8 +1294,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-9 {
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1319,8 +1319,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 .emotion-9.emotion-9 {
   width: 24px;
   height: 24px;
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1376,7 +1376,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
@@ -1393,12 +1393,12 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1422,7 +1422,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1462,7 +1462,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 .emotion-25 {
   margin: 0;
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -1493,7 +1493,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 
 .emotion-50 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1925,7 +1925,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 
 .emotion-3 {
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -2007,7 +2007,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #577FFB;
+  color: #3358CC;
   margin: 0;
   cursor: pointer;
 }
@@ -2018,24 +2018,24 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-6 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #C0C7CC;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -2100,8 +2100,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-9 {
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2125,8 +2125,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 .emotion-9.emotion-9 {
   width: 24px;
   height: 24px;
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2182,7 +2182,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
@@ -2199,12 +2199,12 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-11:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2228,7 +2228,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -2268,7 +2268,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 .emotion-25 {
   margin: 0;
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -2299,7 +2299,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 
 .emotion-50 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -2680,7 +2680,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-padding-start: 32px;
@@ -2698,12 +2698,12 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-3:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2757,7 +2757,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;

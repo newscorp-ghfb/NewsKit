@@ -2,11 +2,7 @@ import {ReactElement} from 'react';
 import {NewsKitIcon} from '../icons';
 import {MQ} from '../utils/style';
 
-export enum TextInputSize {
-  Small = 'small',
-  Medium = 'medium',
-  Large = 'large',
-}
+export type TextInputSize = 'small' | 'medium' | 'large';
 
 export interface TextInputProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {

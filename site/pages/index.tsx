@@ -5,7 +5,6 @@ import {
   Button,
   Cell,
   CellProps,
-  Flow,
   getColorCssFromTheme,
   getMediaQueryFromTheme,
   getSizingCssFromTheme,
@@ -349,7 +348,7 @@ const Index = (layoutProps: LayoutProps) => {
                 </TextBlock>
               </Block>
               <Stack
-                flow={Flow.HorizontalTop}
+                flow="horizontal-top"
                 spaceInline="space030"
                 height="unset"
               >
