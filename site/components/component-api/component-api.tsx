@@ -109,7 +109,13 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
             {tabs.length > 1 && (
               <Tabs size={TabSize.Medium}>
                 {tabs.map(({label, tabSummary, content}) => (
-                  <Tab label={label} overrides={tabOverrides} key={label}>
+                  <Tab
+                    label={label}
+                    overrides={tabOverrides}
+                    key={label}
+                    eventContext={{component: title, tabName: label}}
+                    eventOriginator="component api"
+                  >
                     {tabSummary && <ContentText>{tabSummary}</ContentText>}
                     {content}
                   </Tab>

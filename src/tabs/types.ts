@@ -5,6 +5,7 @@ import {DividerOverrides} from '../divider';
 import {ScrollProps} from '../scroll';
 import {Override} from '../utils/overrides';
 import {LogicalProps} from '../utils/logical-properties';
+import {EventData} from '../instrumentation';
 
 export enum TabAlign {
   Start = 'start',
@@ -116,6 +117,6 @@ export interface TabButtonProps extends CommonTabProps {
   align?: TabAlign;
 }
 
-export interface TabProps extends CommonTabProps {
+export interface TabProps extends CommonTabProps, EventData {
   label: React.ReactNode;
 }

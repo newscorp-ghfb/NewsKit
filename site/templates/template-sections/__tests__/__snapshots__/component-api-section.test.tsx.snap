@@ -386,7 +386,12 @@ exports[`ComponentAPISection renders section as expected 1`] = `
   \\"overrides\\": {
     \\"typographyPreset\\": \\"utilityButton020\\",
     \\"stylePreset\\": \\"componentPageTabs\\"
-  }
+  },
+  \\"eventContext\\": {
+    \\"component\\": \\"Component\\",
+    \\"tabName\\": \\"Props\\"
+  },
+  \\"eventOriginator\\": \\"component api\\"
 }"
                 data-testid="Tab"
               >
@@ -425,7 +430,12 @@ exports[`ComponentAPISection renders section as expected 1`] = `
   \\"overrides\\": {
     \\"typographyPreset\\": \\"utilityButton020\\",
     \\"stylePreset\\": \\"componentPageTabs\\"
-  }
+  },
+  \\"eventContext\\": {
+    \\"component\\": \\"Component\\",
+    \\"tabName\\": \\"Overrides\\"
+  },
+  \\"eventOriginator\\": \\"component api\\"
 }"
                 data-testid="Tab"
               >
