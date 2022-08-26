@@ -1,5 +1,5 @@
 import React from 'react';
-import {TagProps, TagSize} from './types';
+import {TagProps} from './types';
 import {Flag} from '../flag';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {as as emotionAs} from '../utils/component';
@@ -18,7 +18,7 @@ const StyledFlag = styled(Flag)`
 const ThemelessTag = React.forwardRef<HTMLDivElement, TagProps>(
   ({overrides = {}, disabled, href, ...props}, ref) => {
     const theme = useTheme();
-    const {size = TagSize.Medium} = props;
+    const {size = 'medium'} = props;
 
     return (
       <StyledFlag

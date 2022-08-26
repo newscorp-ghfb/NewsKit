@@ -1,5 +1,5 @@
 import React from 'react';
-import {TabAlign, TabButtonProps, TabSize} from './types';
+import {TabButtonProps} from './types';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme/emotion';
 import {StyledTabButton} from './styled';
@@ -11,12 +11,12 @@ export const TabButton = React.forwardRef<HTMLButtonElement, TabButtonProps>(
       /* istanbul ignore next */
       overrides = {},
       /* istanbul ignore next */
-      size = TabSize.Medium,
+      size = 'medium',
       ariaLabel,
       selected,
       id,
       /* istanbul ignore next */
-      align = TabAlign.Center,
+      align = 'center',
       dataTestId = 'tab',
       ...props
     },

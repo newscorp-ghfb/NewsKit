@@ -2,7 +2,7 @@
 import {TextAlignProperty} from 'csstype';
 import {Button} from '../button';
 import {getStylePreset, getResponsiveSpace, styled} from '../utils/style';
-import {MenuGroupProps, MenuProps, MenutItemAlignTypes} from './types';
+import {MenuGroupProps, MenuItemAlign, MenuProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
 
 export const StyledMenu = styled.nav<MenuProps>`
@@ -103,7 +103,7 @@ const menuItemTextAlign = {
 };
 
 export const StyledButton = styled(Button)<{
-  align?: MenutItemAlignTypes | undefined;
+  align?: MenuItemAlign | undefined;
   selected?: boolean;
 }>`
   ${({selected}) =>

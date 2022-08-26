@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 import React, {useEffect, useState} from 'react';
 import {Block} from '../block';
-import {Flow, Stack} from '../stack';
+import {Stack} from '../stack';
 import {TextBlock} from '../text-block';
 import {MQ} from '../utils';
 import {toKebabCase} from '../utils/to-kebab-case';
@@ -34,7 +34,7 @@ const StylePresetsLoader = ({
       spaceInline="space100"
       spaceStack="space050"
       wrap="wrap"
-      flow={Flow.HorizontalTop}
+      flow="horizontal-top"
     >
       {stylePresets.map(stylePreset => children({stylePreset}))}
     </Stack>

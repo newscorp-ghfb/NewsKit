@@ -2,7 +2,7 @@ import React from 'react';
 
 import {StatefulSlider} from '..';
 import {styled} from '../../utils/style';
-import {ThumbLabelProps, SliderProps, LabelPosition} from '../types';
+import {ThumbLabelProps, SliderProps} from '../types';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -301,7 +301,7 @@ export const StorySliderWithTextLabels = () => (
         min={100}
         minLabel="100"
         maxLabel="200"
-        labelPosition={LabelPosition.Before}
+        labelPosition="before"
       />
     </ContainerWithBorder>
     <ContainerWithBorder>
@@ -311,7 +311,7 @@ export const StorySliderWithTextLabels = () => (
         min={100}
         minLabel="100"
         maxLabel="200"
-        labelPosition={LabelPosition.After}
+        labelPosition="after"
       />
     </ContainerWithBorder>
   </>
@@ -530,7 +530,7 @@ export const StorySliderWithLabelsBeforeAndAfter = () => (
           maxLabel="100%"
           vertical
           thumbLabel
-          labelPosition={LabelPosition.Before}
+          labelPosition="before"
         />
       </VerticalContainerWithBorder>
       <VerticalContainerWithBorder>
@@ -542,7 +542,7 @@ export const StorySliderWithLabelsBeforeAndAfter = () => (
           maxLabel="100%"
           vertical
           thumbLabel
-          labelPosition={LabelPosition.After}
+          labelPosition="after"
         />
       </VerticalContainerWithBorder>
       <HorizontalContainerWithBorder>
@@ -553,7 +553,7 @@ export const StorySliderWithLabelsBeforeAndAfter = () => (
           minLabel="0%"
           maxLabel="100%"
           thumbLabel
-          labelPosition={LabelPosition.After}
+          labelPosition="after"
         />
       </HorizontalContainerWithBorder>
     </FlexContainer>

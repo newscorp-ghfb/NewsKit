@@ -1,5 +1,4 @@
 import React from 'react';
-import {TextFieldSize} from '../text-field';
 import {StyledAssistiveText} from './styled';
 import {WithEnhancers} from '../with-enhancers/with-enhancers';
 import {AssistiveTextProps} from './types';
@@ -15,7 +14,7 @@ const ThemelessAssistiveText = React.forwardRef<
   (
     {
       overrides,
-      size = 'medium' as TextFieldSize,
+      size = 'medium',
       state,
       children,
       startEnhancer,

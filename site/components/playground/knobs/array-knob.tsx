@@ -4,10 +4,8 @@ import {
   getTypographyPresetFromTheme,
   getSizingFromTheme,
   getColorFromTheme,
-  ButtonSize,
   IconButton,
   Stack,
-  Flow,
   toNewsKitIcon,
 } from 'newskit';
 import {Remove as FilledRemove} from '@emotion-icons/material/Remove';
@@ -145,7 +143,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
           const row = renderRow(label, value, i, arr.length, update);
           return row ? (
             <Stack
-              flow={Flow.HorizontalBottom}
+              flow="horizontal-bottom"
               spaceInline="space020"
               /* eslint-disable-next-line react/no-array-index-key */
               key={label + i}
@@ -153,7 +151,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
               {row}
               <ButtonContainer>
                 <IconButton
-                  size={ButtonSize.Small}
+                  size="small"
                   disabled={arr.length < 2}
                   onClick={remove(i)}
                   data-testid={`${TEST_ID_PREFIX}-button-remove`}
@@ -166,7 +164,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
           ) : null;
         })}
         <IconButton
-          size={ButtonSize.Small}
+          size="small"
           onClick={add}
           data-testid={`${TEST_ID_PREFIX}-button-add`}
           aria-label="Add"

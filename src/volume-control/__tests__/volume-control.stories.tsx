@@ -1,7 +1,6 @@
 import React from 'react';
 import {StatefulVolumeControl} from './stateful-volume-control';
 import {styled} from '../../utils/style';
-import {ButtonSize} from '../../button';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -144,7 +143,7 @@ export const StoryVolumeControlWithOverrides = () => (
             button: {
               stylePreset: 'customButtonStylePreset',
               iconSize: 'iconSize020',
-              size: ButtonSize.Small,
+              size: 'small',
             },
           }}
         />

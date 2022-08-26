@@ -2,12 +2,10 @@ import React from 'react';
 import {
   Block,
   Visible,
-  StackDistribution,
   Stack,
   Headline,
   TextBlock,
   Button,
-  ButtonSize,
   useTheme,
   toNewsKitIcon,
 } from 'newskit';
@@ -154,7 +152,7 @@ const FeatureCardHorizontal = React.forwardRef<
               <Block spaceStack="space020">
                 <OptionalButtonLinkWrapper href={href} buttonHref={buttonHref}>
                   <Button
-                    size={ButtonSize.Small}
+                    size="small"
                     overrides={{
                       stylePreset: `${stylePrefix}Button`,
                       typographyPreset: 'utilityButton010',
@@ -188,7 +186,7 @@ const FeatureCardHorizontal = React.forwardRef<
               },
             }}
           >
-            <Stack stackDistribution={StackDistribution.Center}>
+            <Stack stackDistribution="center">
               {title && (
                 <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
                   <Headline
@@ -216,7 +214,7 @@ const FeatureCardHorizontal = React.forwardRef<
               {buttonLabel && (
                 <OptionalButtonLinkWrapper href={href} buttonHref={buttonHref}>
                   <Button
-                    size={ButtonSize.Small}
+                    size="small"
                     overrides={{
                       stylePreset: `${stylePrefix}Button`,
                       typographyPreset: 'utilityButton010',
@@ -317,7 +315,7 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
             <Block spaceStack="space020">
               <OptionalButtonLinkWrapper href={href} buttonHref={buttonHref}>
                 <Button
-                  size={ButtonSize.Small}
+                  size="small"
                   overrides={{
                     stylePreset: `${stylePrefix}Button`,
                     typographyPreset: 'utilityButton010',

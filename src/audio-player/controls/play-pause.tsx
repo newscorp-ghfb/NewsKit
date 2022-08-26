@@ -1,6 +1,6 @@
 import React from 'react';
 import {IconButton} from '../../icon-button';
-import {ButtonSize, ButtonProps, IconButtonProps} from '../../button/types';
+import {ButtonProps, IconButtonProps} from '../../button/types';
 import {
   IconFilledPlayArrow,
   IconFilledPause,
@@ -43,7 +43,7 @@ export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
         data-testid="audio-player-play-button"
         aria-pressed={ariaPressed}
         aria-label={ariaLabel}
-        size={ButtonSize.Large}
+        size="large"
         {...props}
       >
         {playStateIcon}

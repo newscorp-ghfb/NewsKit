@@ -5,7 +5,6 @@ import {
   Flow,
   FlexWrap,
   StyledChildProps,
-  StackDistribution,
   StyledStackProps,
   DefaultStackProps,
 } from './types';
@@ -16,9 +15,9 @@ import {logicalProps} from '../utils/logical-properties';
 export const DEFAULT_PROPS: DefaultStackProps = {
   spaceStack: 'space000',
   spaceInline: 'space000',
-  flow: Flow.VerticalLeft,
+  flow: 'vertical-left',
   wrap: false,
-  stackDistribution: StackDistribution.Start,
+  stackDistribution: 'flex-start',
   flexGrow: false,
   flexShrink: false,
   flowReverse: false,
@@ -43,17 +42,17 @@ const alignmentDictionary = {
 };
 
 const horizontalFlows = [
-  Flow.HorizontalBottom,
-  Flow.HorizontalCenter,
-  Flow.HorizontalTop,
-  Flow.HorizontalStretch,
+  'horizontal-bottom',
+  'horizontal-center',
+  'horizontal-top',
+  'horizontal-stretch',
 ];
 
 const verticalFlows = [
-  Flow.VerticalLeft,
-  Flow.VerticalCenter,
-  Flow.VerticalRight,
-  Flow.VerticalStretch,
+  'vertical-left',
+  'vertical-center',
+  'vertical-right',
+  'vertical-stretch',
 ];
 
 export const hasSpacing = (theme: Theme, spaceToken: string) =>
@@ -177,8 +176,8 @@ export const StyledMasterContainer = styled.div<StyledStackProps>`
     {stackDistribution: DEFAULT_PROPS.stackDistribution},
     ({stackDistribution}) => ({
       justifyContent:
-        stackDistribution === StackDistribution.SpaceEvenly
-          ? StackDistribution.SpaceAround
+        stackDistribution === 'space-evenly'
+          ? 'space-around'
           : stackDistribution,
     }),
   )}    
@@ -186,7 +185,7 @@ export const StyledMasterContainer = styled.div<StyledStackProps>`
   ${handleResponsiveProp(
     {stackDistribution: DEFAULT_PROPS.stackDistribution},
     ({stackDistribution}) =>
-      stackDistribution === StackDistribution.SpaceEvenly
+      stackDistribution === 'space-evenly'
         ? css`
             &:before,
             &:after {
@@ -258,15 +257,15 @@ export const StyledMasterContainerList = styled(StyledMasterContainer)`
     },
     ({spaceStack, spaceInline, flow}, {theme}) => {
       const isVertical = [
-        Flow.VerticalLeft,
-        Flow.VerticalCenter,
-        Flow.VerticalRight,
+        'vertical-left',
+        'vertical-center',
+        'vertical-right',
       ].includes(flow as Flow);
 
       const isHorizontal = [
-        Flow.HorizontalTop,
-        Flow.HorizontalCenter,
-        Flow.HorizontalBottom,
+        'horizontal-top',
+        'horizontal-center',
+        'horizontal-bottom',
       ].includes(flow as Flow);
 
       const marginReset =

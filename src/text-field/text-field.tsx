@@ -1,5 +1,5 @@
 import React from 'react';
-import {TextFieldProps, TextFieldSize} from './types';
+import {TextFieldProps} from './types';
 import {StyledInput} from './styled';
 import {WithEnhancers} from '../with-enhancers/with-enhancers';
 import {useTheme} from '../theme';
@@ -12,7 +12,7 @@ import {EventTrigger, useInstrumentation} from '../instrumentation';
 const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   (
     {
-      size = 'medium' as TextFieldSize,
+      size = 'medium',
       overrides,
       state,
       startEnhancer,

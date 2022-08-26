@@ -1,4 +1,4 @@
-import {TextFieldSizeType} from '../text-field';
+import {TextFieldSize} from '../text-field';
 import {FormInputState} from '../form/types';
 import {MQ} from '../utils/style';
 import {LogicalProps} from '../utils/logical-properties';
@@ -17,7 +17,7 @@ export interface LabelOverrides extends LogicalProps {
 }
 
 export type LabelProps = React.LabelHTMLAttributes<HTMLLabelElement> & {
-  size?: TextFieldSizeType;
+  size?: TextFieldSize;
   state?: FormInputState;
   children: React.ReactNode;
   overrides?: LabelOverrides;

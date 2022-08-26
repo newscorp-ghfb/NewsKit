@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, Image, ImageProps, Tab, Tabs, TabSize, TextBlock} from 'newskit';
+import {Block, Image, ImageProps, Tab, Tabs, TextBlock} from 'newskit';
 import {renderIfReactComponent} from 'newskit/utils/component';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {ContentText} from '../../components/text-section/content-text';
@@ -70,7 +70,7 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
       {tabs ? (
         <CommonSection title="Anatomy" id="anatomy">
           <ComponentPageCell>
-            <Tabs size={TabSize.Medium}>
+            <Tabs size="medium">
               {tabs.map(({title, summary, media: tabMedia, rows: tabRows}) => (
                 <Tab label={title} overrides={tabOverrides} key={title}>
                   <Block spaceStack="space080">

@@ -10,9 +10,27 @@ const Box = styled.div`
   ${getColorCssFromTheme('backgroundColor', 'green030')};
   ${getColorCssFromTheme(color => ({border: `1px solid ${color}`}), 'red030')};
 `;
+const flowTypes = [
+  'vertical-left',
+  'vertical-center',
+  'vertical-right',
+  'vertical-stretch',
+  'horizontal-top',
+  'horizontal-center',
+  'horizontal-bottom',
+  'horizontal-stretch',
+];
+
+const stackDistributionTypes = [
+  'flex-start',
+  'flex-end',
+  'center',
+  'space-around',
+  'space-between',
+  'space-evenly',
+];
 
 const children = [<Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>];
-
 describe('Stack', () => {
   test(`renders with defaults only`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
@@ -24,7 +42,7 @@ describe('Stack', () => {
 
   test(`renders with valid stack flow`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      flow: Flow.HorizontalBottom,
+      flow: 'horizontal-bottom',
       children,
     });
 
@@ -42,7 +60,7 @@ describe('Stack', () => {
 
   test(`renders with valid stack distribution`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      stackDistribution: StackDistribution.Center,
+      stackDistribution: 'center',
       children,
     });
 
@@ -136,12 +154,12 @@ describe('Stack', () => {
     expect(fragmentSpaceInline).toMatchSnapshot();
   });
 
-  Object.values(Flow).forEach(flowKey => {
-    Object.values(StackDistribution).forEach(stackDistributionKey => {
+  flowTypes.forEach(flowKey => {
+    stackDistributionTypes.forEach(stackDistributionKey => {
       test(`renders where the stack flow is ${flowKey} and the stack distribution is ${stackDistributionKey}`, () => {
         const fragment = renderToFragmentWithTheme(Stack, {
-          flow: flowKey,
-          stackDistribution: stackDistributionKey,
+          flow: flowKey as Flow,
+          stackDistribution: stackDistributionKey as StackDistribution,
           children: [
             <Box>child 1</Box>,
             <Box>child 2</Box>,
@@ -154,12 +172,12 @@ describe('Stack', () => {
     });
   });
 
-  Object.values(Flow).forEach(flowKey => {
+  flowTypes.forEach(flowKey => {
     ['space000', 'space090', 'space120'].forEach(space => {
       Object.values(['wrap', 'nowrap']).forEach(wrapType => {
         test(`renders where the stack flow is ${flowKey} and the spaceInline & spaceStack is set to ${space}`, () => {
           const fragment = renderToFragmentWithTheme(Stack, {
-            flow: flowKey,
+            flow: flowKey as Flow,
             spaceInline: space,
             spaceStack: space,
             wrap: wrapType as 'wrap' | 'nowrap',
@@ -176,11 +194,11 @@ describe('Stack', () => {
     });
   });
 
-  Object.values(Flow).forEach(flowKey => {
+  flowTypes.forEach(flowKey => {
     Object.values(['wrap', 'nowrap']).forEach(wrapType => {
       test(`renders where the stack flow is ${flowKey} and only spaceStack is set to space090`, () => {
         const fragment = renderToFragmentWithTheme(Stack, {
-          flow: flowKey,
+          flow: flowKey as Flow,
           spaceStack: 'space090',
           wrap: wrapType as 'wrap' | 'nowrap',
           children: [
@@ -195,11 +213,11 @@ describe('Stack', () => {
     });
   });
 
-  Object.values(Flow).forEach(flowKey => {
+  flowTypes.forEach(flowKey => {
     Object.values(['wrap', 'nowrap']).forEach(wrapType => {
       test(`renders where the stack flow is ${flowKey} and only spaceInline is set to space090`, () => {
         const fragment = renderToFragmentWithTheme(Stack, {
-          flow: flowKey,
+          flow: flowKey as Flow,
           spaceInline: 'space090',
           wrap: wrapType as 'wrap' | 'nowrap',
           children: [
@@ -275,15 +293,15 @@ describe('Nested stacks', () => {
 
   test(`render in horizontal flow`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      flow: Flow.HorizontalTop,
+      flow: 'horizontal-top',
       children: [
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
         </Stack>,
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
         </Stack>,
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Box>child 7</Box>, <Box>child 8</Box>, <Box>child 9</Box>
         </Stack>,
       ],
@@ -295,15 +313,15 @@ describe('Nested stacks', () => {
   test(`render in horizontal flow with space`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       spaceInline: 'space030',
-      flow: Flow.HorizontalTop,
+      flow: 'horizontal-top',
       children: [
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
         </Stack>,
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
         </Stack>,
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Box>child 7</Box>, <Box>child 8</Box>, <Box>child 9</Box>
         </Stack>,
       ],
@@ -314,7 +332,7 @@ describe('Nested stacks', () => {
 
   test(`render with stackDistribution`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      stackDistribution: StackDistribution.Center,
+      stackDistribution: 'center',
       children: [
         <Stack>
           <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
@@ -333,12 +351,12 @@ describe('Nested stacks', () => {
 
   test(`render mixed content`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      flow: Flow.HorizontalTop,
+      flow: 'horizontal-top',
       children: [
         <Box>child 1</Box>,
         <Box>child 2</Box>,
         <Box>child 3</Box>,
-        <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-top">
           <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
         </Stack>,
       ],
@@ -386,7 +404,7 @@ describe('Stack as list', () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       children,
       list: true,
-      flow: Flow.HorizontalTop,
+      flow: 'horizontal-top',
     });
 
     expect(fragment).toMatchSnapshot();
@@ -397,7 +415,7 @@ describe('Stack as list', () => {
       list: true,
       ariaLabel: 'Tag list',
       spaceInline: 'space020',
-      flow: Flow.HorizontalTop,
+      flow: 'horizontal-top',
       children,
     });
 
@@ -411,7 +429,7 @@ describe('Stack as list', () => {
       spaceInline: 'space020',
       spaceStack: 'space020',
       wrap: 'wrap',
-      flow: Flow.HorizontalTop,
+      flow: 'horizontal-top',
       children,
     });
 
