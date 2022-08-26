@@ -78,7 +78,7 @@ NewsKit components can be used like any typical react components. One thing to b
 The following example shows the "Hello World!" example of using a NewsKit component. More comprehensive usage documentation can be found on our [website](https://www.newskit.co.uk/getting-started/code/engineering-quickstart/).
 
 ```typescript
-import {ThemeProvider, Tag, TagSize, newskitLightTheme} from 'newskit';
+import {ThemeProvider, Tag, newskitLightTheme} from 'newskit';
 import React from 'react';
 
 export default class App extends React.Component {
@@ -88,7 +88,7 @@ export default class App extends React.Component {
       <ThemeProvider theme={newskitLightTheme}>
         <Tag
           href="http://example.com"
-          size={TagSize.Medium}>
+          size="medium">
             Tag Content
         </Tag>
       </ThemeProvider>

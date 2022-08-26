@@ -9,7 +9,7 @@ import {
   StorybookLabel,
 } from '../../test/storybook-comps';
 import {Button} from '../../button';
-import {TextInput, TextInputSize} from '../../text-input';
+import {TextInput} from '../../text-input';
 import {Block} from '../../block';
 import {Stack} from '../../stack';
 import {styled} from '../../utils';
@@ -172,7 +172,7 @@ export const StoryFormSizes = () => (
           <StorybookSubHeading>large text input</StorybookSubHeading>
           <Block spaceStack="space050">
             <TextInput
-              size={TextInputSize.Large}
+              size="large"
               label="Email"
               name="email"
               assistiveText="Your email"
@@ -188,7 +188,7 @@ export const StoryFormSizes = () => (
           </Block>
           <Block spaceStack="space050">
             <TextInput
-              size={TextInputSize.Large}
+              size="large"
               label="Username"
               name="username"
               assistiveText="Your username"
@@ -208,7 +208,7 @@ export const StoryFormSizes = () => (
           <StorybookSubHeading>medium text input</StorybookSubHeading>
           <Block spaceStack="space050">
             <TextInput
-              size={TextInputSize.Medium}
+              size="medium"
               label="Email"
               name="email"
               assistiveText="Your email"
@@ -224,7 +224,7 @@ export const StoryFormSizes = () => (
           </Block>
           <Block spaceStack="space050">
             <TextInput
-              size={TextInputSize.Medium}
+              size="medium"
               label="Username"
               name="username"
               assistiveText="Your username"
@@ -244,7 +244,7 @@ export const StoryFormSizes = () => (
           <StorybookSubHeading>small text input</StorybookSubHeading>
           <Block spaceStack="space050">
             <TextInput
-              size={TextInputSize.Small}
+              size="small"
               label="Email"
               name="email"
               assistiveText="Your email"
@@ -260,7 +260,7 @@ export const StoryFormSizes = () => (
           </Block>
           <Block spaceStack="space050">
             <TextInput
-              size={TextInputSize.Small}
+              size="small"
               label="Username"
               name="username"
               assistiveText="Your username"
@@ -296,7 +296,7 @@ export const StoryFormWithPhoneInput = () => {
           <Form ref={formRef} onSubmit={onSubmit} validationMode="onBlur">
             <Block spaceStack="space050">
               <TextInput
-                size={TextInputSize.Small}
+                size="small"
                 label="Username"
                 name="username"
                 assistiveText="Your username"

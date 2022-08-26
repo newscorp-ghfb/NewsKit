@@ -9,7 +9,7 @@ import React, {
 import {getTrackBackground} from 'react-range';
 import {ControlPanel, PopoutButton} from './controls';
 import {Slider, SliderProps} from '../slider';
-import {Stack, StackDistribution, Flow} from '../stack';
+import {Stack} from '../stack';
 import {PlayerGrid, ControlContainer, PlayerContainer} from './styled';
 import {VolumeControl} from '../volume-control';
 import {Cell} from '../grid/cell';
@@ -22,7 +22,6 @@ import {
 import {StyledTrack} from '../slider/styled';
 import {useTheme, Devices} from '../theme';
 import {getSingleStylePreset} from '../utils/style';
-import {LabelPosition} from '../slider/types';
 import {AudioEvents, AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
 import {StackChild} from '../stack-child';
@@ -262,10 +261,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
         {children && <Cell xs={12}>{children}</Cell>}
 
         <Cell xsOrder={2} xs={12}>
-          <Stack
-            flow={Flow.HorizontalCenter}
-            stackDistribution={StackDistribution.SpaceBetween}
-          >
+          <Stack flow="horizontal-center" stackDistribution="space-between">
             <StackChild order={2}>
               <ControlPanel
                 onNextTrack={onNextTrack ? onClickNext : undefined}
@@ -315,10 +311,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
                 md
                 targetDevices={[Devices.iPadPro, Devices.iPad]}
               >
-                <Stack
-                  flow={Flow.VerticalRight}
-                  stackDistribution={StackDistribution.End}
-                >
+                <Stack flow="vertical-right" stackDistribution="flex-end">
                   {popoutHref && (
                     <PopoutButton
                       onClick={onPopoutClick}
@@ -350,7 +343,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
               )} of ${seekBarAriaValueText([duration])}`}
               onChange={onChangeSlider}
               renderTrack={renderTrack}
-              labelPosition={LabelPosition.After}
+              labelPosition="after"
               dataTestId="audio-slider"
               ariaDescribedBy={srOnlyForwardRewind}
               overrides={{

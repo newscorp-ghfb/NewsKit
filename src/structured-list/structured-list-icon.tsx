@@ -5,7 +5,7 @@ import {
   NewsKitIconProps,
 } from '../icons';
 import {isLinkExternal} from '../link/utils';
-import {Flow, Stack, StackDistribution} from '../stack';
+import {Stack} from '../stack';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 
@@ -29,10 +29,7 @@ export const StructuredListIcon: React.FC<NewsKitIconProps> = ({
   );
 
   return (
-    <Stack
-      stackDistribution={StackDistribution.End}
-      flow={Flow.HorizontalCenter}
-    >
+    <Stack stackDistribution="flex-end" flow="horizontal-center">
       {href && isLinkExternal(href) ? (
         <IconFilledLaunch
           overrides={{

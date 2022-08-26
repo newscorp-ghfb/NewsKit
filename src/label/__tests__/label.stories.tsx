@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {Label} from '..';
 import {styled, getSizingCssFromTheme} from '../../utils/style';
-import {Stack, StackDistribution} from '../../stack';
+import {Stack} from '../../stack';
 import {Block} from '../../block';
 
 import {
@@ -31,10 +31,7 @@ export const LabelSizes = () => (
   <>
     <StorybookHeading>Label Sizes</StorybookHeading>
     <Container>
-      <Stack
-        stackDistribution={StackDistribution.SpaceBetween}
-        flow="horizontal-center"
-      >
+      <Stack stackDistribution="space-between" flow="horizontal-center">
         <Block>
           <StorybookSubHeading>Small</StorybookSubHeading>
           <Label size={'small' as TextFieldSize}>Label</Label>

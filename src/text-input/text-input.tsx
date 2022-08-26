@@ -1,7 +1,7 @@
 import React, {useEffect, useContext} from 'react';
 import {useFormContext} from 'react-hook-form';
 import composeRefs from '@seznam/compose-react-refs';
-import {TextInputProps, TextInputSize} from './types';
+import {TextInputProps} from './types';
 import {useReactKeys} from '../utils/hooks';
 import {FormValidationContext} from '../form/context';
 
@@ -26,7 +26,7 @@ const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   (
     {
       overrides = {},
-      size = TextInputSize.Medium,
+      size = 'medium',
       label,
       disabled,
       icon,

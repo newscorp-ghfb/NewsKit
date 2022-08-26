@@ -1,4 +1,4 @@
-import {ThemeProvider, Tag, TagSize, newskitLightTheme} from 'newskit';
+import {ThemeProvider, Tag, newskitLightTheme} from 'newskit';
 import React from 'react';
 
 export default class ExampleComponent extends React.Component {
@@ -8,7 +8,7 @@ export default class ExampleComponent extends React.Component {
       <ThemeProvider theme={newskitLightTheme}>
         <Tag
           href="http://example.com"
-          size={TagSize.Medium}>
+          size="medium">
             Hello World
         </Tag>
       </ThemeProvider>

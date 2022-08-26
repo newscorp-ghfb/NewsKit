@@ -5,9 +5,9 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {compileTheme, createTheme, Tab, TabProps, TabSize} from '../..';
+import {compileTheme, createTheme, Tab, TabProps} from '../..';
 import {Tabs, TabsDistribution} from '..';
-import {TabAlign, TabsProps, TabsIndicatorPosition} from '../types';
+import {TabsProps} from '../types';
 import {IconFilledEmail} from '../../icons';
 import {KEYBOARD_ARROWS} from '../utils';
 import tabStylePresets from '../style-presets';
@@ -105,7 +105,7 @@ describe('Tabs', () => {
   test('renders with sizing', () => {
     const props: TabsProps = {
       children: tabsWithLabel,
-      size: TabSize.Large,
+      size: 'large',
     };
     const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
@@ -114,7 +114,7 @@ describe('Tabs', () => {
   test('renders with icons for tabs', () => {
     const props: TabsProps = {
       children: tabsWithIcons,
-      size: TabSize.Large,
+      size: 'large',
     };
     const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
@@ -123,7 +123,7 @@ describe('Tabs', () => {
   test('renders with icons and label for tabs', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Large,
+      size: 'large',
     };
     const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
@@ -142,7 +142,7 @@ describe('Tabs', () => {
   test('renders with overrides', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Large,
+      size: 'large',
       overrides: {
         spaceInline: 'space050',
         tab: {
@@ -158,7 +158,7 @@ describe('Tabs', () => {
   test('renders with overrides vertical', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Large,
+      size: 'large',
       vertical: true,
       overrides: {
         spaceInline: 'space050',
@@ -191,7 +191,7 @@ describe('Tabs', () => {
         </Tab>,
         <Tab label="Second tab">Second tab content</Tab>,
       ],
-      size: TabSize.Large,
+      size: 'large',
       overrides: {
         spaceInline: 'space050',
         tab: {
@@ -354,7 +354,7 @@ describe('Tabs', () => {
   test('renders with fixed tab indicator size', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Medium,
+      size: 'medium',
       overrides: {
         selectionIndicator: {
           indicator: {
@@ -371,7 +371,7 @@ describe('Tabs', () => {
   test('renders with fixed tab indicator size which is larger than default', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Medium,
+      size: 'medium',
       overrides: {
         selectionIndicator: {
           indicator: {
@@ -388,7 +388,7 @@ describe('Tabs', () => {
   test('renders with fixed tab indicator percentage size', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Medium,
+      size: 'medium',
       overrides: {
         selectionIndicator: {
           indicator: {
@@ -405,7 +405,7 @@ describe('Tabs', () => {
   test('renders with custom tab bar track and indicator weight', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
-      size: TabSize.Medium,
+      size: 'medium',
       overrides: {
         selectionIndicator: {
           track: {
@@ -576,13 +576,13 @@ describe('Tabs', () => {
 
     const fragmentLeft = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      align: TabAlign.Start,
+      align: 'start',
     });
     expect(fragmentLeft).toMatchSnapshot();
 
     const fragmentRight = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      align: TabAlign.End,
+      align: 'end',
     });
     expect(fragmentRight).toMatchSnapshot();
   });
@@ -648,7 +648,7 @@ const tabs = [
 
 describe('Tabs distribution', () => {
   const flows = ['horizontal', 'vertical'];
-  const tabsDistributions = Object.values(TabsDistribution) as string[];
+  const tabsDistributions = ['start', 'grow', 'equal'];
 
   flows.forEach(currentFlow => {
     test.each(tabsDistributions)(
@@ -675,7 +675,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders horizontal tabs with the selection indicator before the tabs', () => {
     const fragmentStart = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.Start,
+      indicatorPosition: 'start',
     });
     expect(fragmentStart).toMatchSnapshot();
   });
@@ -683,7 +683,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders vertical tabs with the selection indicator before the tabs', () => {
     const fragmentStart = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.Start,
+      indicatorPosition: 'start',
       vertical: true,
     });
     expect(fragmentStart).toMatchSnapshot();
@@ -692,7 +692,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders horizontal tabs with the selection indicator after the tabs', () => {
     const fragmentEnd = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.End,
+      indicatorPosition: 'end',
     });
     expect(fragmentEnd).toMatchSnapshot();
   });
@@ -700,7 +700,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders vertical tabs with the selection indicator after the tabs', () => {
     const fragmentEnd = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.End,
+      indicatorPosition: 'end',
       vertical: true,
     });
     expect(fragmentEnd).toMatchSnapshot();
@@ -709,7 +709,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders horizontal tabs with no selection indicator displayed', () => {
     const fragmentNone = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.None,
+      indicatorPosition: 'none',
     });
     expect(fragmentNone).toMatchSnapshot();
   });
@@ -717,7 +717,7 @@ describe(`tabs indicatorPosition`, () => {
   test('renders vertical tabs with no selection indicator displayed', () => {
     const fragmentNone = renderToFragmentWithTheme(renderTabsDefault, {
       ...props,
-      indicatorPosition: TabsIndicatorPosition.None,
+      indicatorPosition: 'none',
       vertical: true,
     });
     expect(fragmentNone).toMatchSnapshot();

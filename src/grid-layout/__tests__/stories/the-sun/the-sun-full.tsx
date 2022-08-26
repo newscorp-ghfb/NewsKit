@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {TitleBar} from '../../../../title-bar';
 import {Button} from '../../../../button';
-import {AlignSelfValues, StackChild} from '../../../../stack-child';
+import {StackChild} from '../../../../stack-child';
 import {Stack} from '../../../../stack';
 import {Block} from '../../../../block';
 import {Divider} from '../../../../divider';
@@ -36,13 +36,13 @@ const SectionFooter = ({href}: {href: string}) =>
   href ? (
     <Visible xs>
       <Stack flow="vertical-center" spaceInline="space030">
-        <StackChild alignSelf={AlignSelfValues.Stretch}>
+        <StackChild alignSelf="stretch">
           <Divider />
         </StackChild>
 
         <Button href={href}>Read more</Button>
 
-        <StackChild alignSelf={AlignSelfValues.Stretch}>
+        <StackChild alignSelf="stretch">
           <Divider />
         </StackChild>
       </Stack>

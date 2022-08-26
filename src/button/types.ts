@@ -2,11 +2,7 @@ import {EventData} from '../instrumentation/types';
 import {BaseFlagOverrides, BaseFlagProps} from '../flag/types';
 import {MQ} from '../utils/style';
 
-export enum ButtonSize {
-  Small = 'small',
-  Medium = 'medium',
-  Large = 'large',
-}
+export type ButtonSize = 'small' | 'medium' | 'large';
 
 export interface ButtonOverrides extends BaseFlagOverrides {
   loadingIndicator?: {

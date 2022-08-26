@@ -5,7 +5,6 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {TextInputSize} from '../types';
 import {createTheme} from '../../theme';
 import {IconFilledSearch} from '../../icons';
 
@@ -46,7 +45,7 @@ describe('TextInput', () => {
 
   test('renders small text input', () => {
     const props: TextInputProps = {
-      size: TextInputSize.Small,
+      size: 'small',
       label: 'label',
     };
     const fragment = renderToFragmentWithTheme(renderTextInput, props);
@@ -55,7 +54,7 @@ describe('TextInput', () => {
 
   test('renders large text input', () => {
     const props: TextInputProps = {
-      size: TextInputSize.Large,
+      size: 'large',
       label: 'label',
     };
     const fragment = renderToFragmentWithTheme(renderTextInput, props);
