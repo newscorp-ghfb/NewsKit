@@ -1,8 +1,10 @@
-/* eslint-env browser */
 import * as React from 'react';
-import ReactDOM from 'react-dom';
+import {createRoot} from 'react-dom/client';
 import tests from './tests';
 import {newskitLightTheme, compileTheme, NewsKitProvider} from '../src';
+
+const container = document.getElementById('root');
+const root = createRoot(container!);
 
 const app = (
   <NewsKitProvider theme={compileTheme(newskitLightTheme)}>
@@ -10,4 +12,4 @@ const app = (
   </NewsKitProvider>
 );
 
-ReactDOM.render(app, document.getElementById('root'));
+root.render(app);

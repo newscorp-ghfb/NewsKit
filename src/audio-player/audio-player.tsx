@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 import {getTrackBackground} from 'react-range';
 import {ControlPanel, PopoutButton} from './controls';
-import {Slider, SliderProps} from '../slider';
+import {Slider, SliderProps, RenderTrackFunction} from '../slider';
 import {Stack} from '../stack';
 import {PlayerGrid, ControlContainer, PlayerContainer} from './styled';
 import {VolumeControl} from '../volume-control';
@@ -140,7 +140,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
     audioEvents[eventName](e);
   };
 
-  const renderTrack: SliderProps['renderTrack'] = useCallback(
+  const renderTrack: SliderProps['renderTrack'] = useCallback<RenderTrackFunction>(
     ({props: trackProps, children: trackChildren, isDragged}) => {
       const sliderTrackStylePreset = getToken(
         {theme, overrides},
