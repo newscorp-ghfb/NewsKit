@@ -9,12 +9,7 @@ import {
   getResponsiveSize,
   getTransitionPreset,
 } from '../utils/style';
-import {
-  StyledTrackProps,
-  SliderProps,
-  ThumbLabelProps,
-  LabelPosition,
-} from './types';
+import {StyledTrackProps, SliderProps, ThumbLabelProps} from './types';
 import {Stack, StackProps} from '../stack';
 
 import {ThemeProp} from '../utils/style-types';
@@ -64,20 +59,20 @@ export const LabelContainer = styled.div<
 >`
   width: ${ifVertical(undefined, '100%')};
   margin-top: ${({labelPosition, vertical}) =>
-    !vertical && labelPosition === LabelPosition.After
+    !vertical && labelPosition === 'after'
       ? getSpace('slider.labels', 'labels')
       : undefined};
   margin-bottom: ${({labelPosition, vertical}) =>
-    !vertical && labelPosition === LabelPosition.Before
+    !vertical && labelPosition === 'before'
       ? getSpace('slider.labels', 'labels')
       : undefined};
 
   margin-left: ${({labelPosition, vertical}) =>
-    vertical && labelPosition === LabelPosition.After
+    vertical && labelPosition === 'after'
       ? getSpace('slider.labels', 'labels')
       : undefined};
   margin-right: ${({labelPosition, vertical}) =>
-    vertical && labelPosition === LabelPosition.Before
+    vertical && labelPosition === 'before'
       ? getSpace('slider.labels', 'labels')
       : undefined};
 
@@ -95,8 +90,7 @@ export const StyledTrack = styled.div<StyledTrackProps>`
   display: flex;
   cursor: ${getCursor};
   box-sizing: border-box;
-  ${({labelPosition}) =>
-    labelPosition === LabelPosition.Inline && {alignSelf: 'center'}}
+  ${({labelPosition}) => labelPosition === 'inline' && {alignSelf: 'center'}}
 
   ${({disabled}) =>
     getStylePreset('slider.track', 'track', {
@@ -120,7 +114,7 @@ export const StyledTrack = styled.div<StyledTrackProps>`
       return {height: getSize('slider.track', 'track')(rest)};
     }
     /* istanbul ignore else */
-    if (labelPosition === LabelPosition.Inline) {
+    if (labelPosition === 'inline') {
       return {height: '100%'};
     }
     /* istanbul ignore next */
@@ -224,7 +218,7 @@ const getLabelMargin = ({
   labelPosition,
   ...rest
 }: StyledSliderLabelProps & ThemeProp) => {
-  if (labelPosition !== LabelPosition.Inline) {
+  if (labelPosition !== 'inline') {
     return '';
   }
   const marginAmount = getSpace(

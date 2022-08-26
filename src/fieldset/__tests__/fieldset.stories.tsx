@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Fieldset} from '..';
-import {Stack, StackDistribution} from '../../stack';
+import {Stack} from '../../stack';
 import {Block} from '../../block';
 import {Image} from '../../image';
 import {
@@ -39,10 +39,7 @@ FieldsetSimpleExample.storyName = 'fieldset-simple-example';
 export const LegendSizing = () => (
   <>
     <StorybookHeading>Legend sizes</StorybookHeading>
-    <Stack
-      stackDistribution={StackDistribution.SpaceBetween}
-      flow="horizontal-center"
-    >
+    <Stack stackDistribution="space-between" flow="horizontal-center">
       <Block>
         <StorybookSubHeading>Small</StorybookSubHeading>
         <Fieldset legend="Legend" size="small">
@@ -72,10 +69,7 @@ LegendSizing.storyName = 'fieldset-legend-sizing';
 export const LegendVariations = () => (
   <>
     <StorybookHeading>Legend variations</StorybookHeading>
-    <Stack
-      stackDistribution={StackDistribution.SpaceBetween}
-      flow="horizontal-top"
-    >
+    <Stack stackDistribution="space-between" flow="horizontal-top">
       <Block>
         <StorybookSubHeading>with legend as heading</StorybookSubHeading>
         <Fieldset legend={<Heading3>Legend</Heading3>}>

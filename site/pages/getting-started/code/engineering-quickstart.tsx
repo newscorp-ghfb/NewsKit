@@ -192,7 +192,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
           showSeparator
         >
           <Code>
-            {`import {NewsKitProvider, Tag, TagSize, newskitLightTheme} from 'newskit';
+            {`import {NewsKitProvider, Tag, newskitLightTheme} from 'newskit';
 import React from 'react';
 export default class App extends React.Component {
   render() {
@@ -204,7 +204,7 @@ export default class App extends React.Component {
         >
         <Tag
           href="http://example.com"
-          size={TagSize.Medium}>
+          size="medium">
             Tag Content
         </Tag>
       </NewsKitProvider>

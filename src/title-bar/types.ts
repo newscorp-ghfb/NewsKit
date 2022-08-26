@@ -15,6 +15,7 @@ export type TitleBarOverrides = {
 };
 
 export type ContainerProps = {
+  children: React.ReactNode;
   overrides?: TitleBarOverrides;
 };
 

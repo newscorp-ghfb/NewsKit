@@ -1,14 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {isFragment} from 'react-is';
-import {
-  TabProps,
-  TabsProps,
-  TabsDistribution,
-  TabSize,
-  TabAlign,
-  TabsIndicatorPosition,
-  TabPanelProps,
-} from './types';
+import {TabProps, TabsProps, TabAlign, TabPanelProps} from './types';
 import {
   StyledTabsBar,
   StyledInnerTabGroup,
@@ -18,7 +10,6 @@ import {
   StyledDistributionWrapper,
   StyledDividerWrapper,
 } from './styled';
-import {Flow} from '../stack';
 import {TabButton} from './tab-button';
 import {useTheme} from '../theme';
 import {useResizeObserver} from '../utils/hooks/use-resize-observer';
@@ -58,7 +49,7 @@ const validateSelectedIndex = (index: number, children: unknown[]): number =>
 
 const getAlign = (align: TabAlign | undefined, vertical: boolean) => {
   if (!align) {
-    return vertical ? TabAlign.Start : TabAlign.Center;
+    return vertical ? 'start' : 'center';
   }
   return align;
 };
@@ -74,13 +65,13 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
     {
       children,
       overrides = {},
-      size = TabSize.Medium,
+      size = 'medium',
       divider,
       vertical = false,
       distribution,
       selectedIndex,
       initialSelectedIndex = 0,
-      indicatorPosition = TabsIndicatorPosition.End,
+      indicatorPosition = 'end',
       align: passedAlign,
       onChange,
       ...rest
@@ -296,7 +287,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
 
         acc.push(
           <StyledDistributionWrapper
-            distribution={distribution || TabsDistribution.Start}
+            distribution={distribution || 'start'}
             data-testid="distribution-wrapper"
             vertical={vertical}
             last={array.length === index + 1}
@@ -355,7 +346,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
           <ScrollComponent {...scrollProps}>
             <StyledInnerTabGroup
               overrides={nonLogicalOverrides}
-              flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
+              flow={vertical ? 'vertical-left' : 'horizontal-center'}
               inline={!vertical}
               role="tablist"
               aria-orientation={vertical ? 'vertical' : 'horizontal'}

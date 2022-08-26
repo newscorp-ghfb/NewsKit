@@ -22,9 +22,12 @@ export type BuildAriaAttributesFn = (args: {
   };
 }) => AriaAttributes;
 
-type ReferenceProps = ReturnType<
-  ReturnType<typeof useInteractions>['getReferenceProps']
->;
+export interface ReferenceProps extends Record<string, unknown> {
+  onClick: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
+  onKeyDown: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+  onKeyUp: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+  onPointerDown: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
+}
 
 export interface FloatingElementProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title' | 'defaultValue'> {

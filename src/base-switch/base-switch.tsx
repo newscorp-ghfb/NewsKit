@@ -59,7 +59,9 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
       }
     }, [ref, label]);
 
-    const onInputChange = useCallback(
+    const onInputChange = useCallback<
+      React.ChangeEventHandler<HTMLInputElement>
+    >(
       event => {
         setCheckedState(event.target.checked);
       },

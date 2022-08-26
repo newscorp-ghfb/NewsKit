@@ -6,7 +6,6 @@ import {styled} from '../../utils/style';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
 import {Image} from '../../image';
-import {TextFieldSize} from '../../text-field';
 import {Tabs, Tab} from '../../tabs';
 
 import {
@@ -184,7 +183,7 @@ export const StorySelectSize = () => (
       <Stack flow="vertical-left" spaceInline="space040">
         <Block>
           <StorybookSubHeading>Small</StorybookSubHeading>
-          <Label htmlFor="id-1" size={'small' as TextFieldSize}>
+          <Label htmlFor="id-1" size="small">
             Label
           </Label>
           <Select aria-describedby="id-1-at" id="id-1" size="small">
@@ -194,13 +193,13 @@ export const StorySelectSize = () => (
               </SelectOption>
             ))}
           </Select>
-          <AssistiveText id="id-1-at" size={'small' as TextFieldSize}>
+          <AssistiveText id="id-1-at" size="small">
             Assistive Text
           </AssistiveText>
         </Block>
         <Block>
           <StorybookSubHeading>Medium</StorybookSubHeading>
-          <Label htmlFor="id-2" size={'medium' as TextFieldSize}>
+          <Label htmlFor="id-2" size="medium">
             Label
           </Label>
           <Select aria-describedby="id-2-at" id="id-2" size="medium">
@@ -210,13 +209,13 @@ export const StorySelectSize = () => (
               </SelectOption>
             ))}
           </Select>
-          <AssistiveText id="id-2-at" size={'medium' as TextFieldSize}>
+          <AssistiveText id="id-2-at" size="medium">
             Assistive Text
           </AssistiveText>
         </Block>
         <Block>
           <StorybookSubHeading>Large</StorybookSubHeading>
-          <Label htmlFor="id-3" size={'large' as TextFieldSize}>
+          <Label htmlFor="id-3" size="large">
             Label
           </Label>
           <Select aria-describedby="id-3-at" id="id-3" size="large">
@@ -226,7 +225,7 @@ export const StorySelectSize = () => (
               </SelectOption>
             ))}
           </Select>
-          <AssistiveText id="id-3-at" size={'large' as TextFieldSize}>
+          <AssistiveText id="id-3-at" size="large">
             Assistive Text
           </AssistiveText>
         </Block>
@@ -885,7 +884,7 @@ export const StorySelectInModal = () => {
         </Block>
         {selectWithModalVariants.map(({label, props}, indx) => (
           <Block spaceStack="space050">
-            <Label htmlFor={`id-modal-${indx}`} size={'small' as TextFieldSize}>
+            <Label htmlFor={`id-modal-${indx}`} size="small">
               Select with modal ( {label} )
             </Label>
             <Select
@@ -897,10 +896,7 @@ export const StorySelectInModal = () => {
             >
               {selectOptions}
             </Select>
-            <AssistiveText
-              id={`id-modal-${indx}-at`}
-              size={'small' as TextFieldSize}
-            >
+            <AssistiveText id={`id-modal-${indx}-at`} size="small">
               Assistive Text
             </AssistiveText>
           </Block>
@@ -937,7 +933,7 @@ export const SelectVirtualization = () => {
       <Container>
         <StorybookHeading>Select with virtualization</StorybookHeading>
         <Block spaceStack="space050">
-          <Label htmlFor="countries" size={'medium' as TextFieldSize}>
+          <Label htmlFor="countries" size="medium">
             Select your country ( virtualized )
           </Label>
           <Select
@@ -949,12 +945,12 @@ export const SelectVirtualization = () => {
           >
             {selectOptions}
           </Select>
-          <AssistiveText id="countries-at" size={'small' as TextFieldSize}>
+          <AssistiveText id="countries-at" size="small">
             Assistive Text
           </AssistiveText>
         </Block>
         <Block spaceStack="space050">
-          <Label htmlFor="simple-data" size={'medium' as TextFieldSize}>
+          <Label htmlFor="simple-data" size="medium">
             Simple data ( virtualized )
           </Label>
           <Select
@@ -966,7 +962,7 @@ export const SelectVirtualization = () => {
           >
             {selectOptionsSimple}
           </Select>
-          <AssistiveText id="simple-data-at" size={'small' as TextFieldSize}>
+          <AssistiveText id="simple-data-at" size="small">
             Assistive Text
           </AssistiveText>
         </Block>
@@ -1041,7 +1037,7 @@ export const StoryOutlineOverride = () => (
       <Stack flow="vertical-left" spaceInline="space040">
         <Block>
           <StorybookSubHeading>Custom Color</StorybookSubHeading>
-          <Label htmlFor="id-outline-1" size={'small' as TextFieldSize}>
+          <Label htmlFor="id-outline-1" size="small">
             Label
           </Label>
           <Select
@@ -1060,13 +1056,13 @@ export const StoryOutlineOverride = () => (
               </SelectOption>
             ))}
           </Select>
-          <AssistiveText id="id-outline-1-at" size={'small' as TextFieldSize}>
+          <AssistiveText id="id-outline-1-at" size="small">
             Assistive Text
           </AssistiveText>
         </Block>
         <Block>
           <StorybookSubHeading>Custom Style</StorybookSubHeading>
-          <Label htmlFor="id-outline-2" size={'small' as TextFieldSize}>
+          <Label htmlFor="id-outline-2" size="small">
             Label
           </Label>
           <Select
@@ -1085,13 +1081,13 @@ export const StoryOutlineOverride = () => (
               </SelectOption>
             ))}
           </Select>
-          <AssistiveText id="id-outline-2-at" size={'small' as TextFieldSize}>
+          <AssistiveText id="id-outline-2-at" size="small">
             Assistive Text
           </AssistiveText>
         </Block>
         <Block>
           <StorybookSubHeading>Custom Width</StorybookSubHeading>
-          <Label htmlFor="id-outline-3" size={'small' as TextFieldSize}>
+          <Label htmlFor="id-outline-3" size="small">
             Label
           </Label>
           <Select
@@ -1110,13 +1106,13 @@ export const StoryOutlineOverride = () => (
               </SelectOption>
             ))}
           </Select>
-          <AssistiveText id="id-outline-3-at" size={'small' as TextFieldSize}>
+          <AssistiveText id="id-outline-3-at" size="small">
             Assistive Text
           </AssistiveText>
         </Block>
         <Block>
           <StorybookSubHeading>Custom Offset</StorybookSubHeading>
-          <Label htmlFor="id-outline-4" size={'small' as TextFieldSize}>
+          <Label htmlFor="id-outline-4" size="small">
             Label
           </Label>
           <Select
@@ -1135,7 +1131,7 @@ export const StoryOutlineOverride = () => (
               </SelectOption>
             ))}
           </Select>
-          <AssistiveText id="id-outline-4-at" size={'small' as TextFieldSize}>
+          <AssistiveText id="id-outline-4-at" size="small">
             Assistive Text
           </AssistiveText>
         </Block>

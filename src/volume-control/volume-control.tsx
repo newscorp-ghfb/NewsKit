@@ -80,9 +80,10 @@ const ThemelessVolumeControl: React.FC<VolumeControlProps> = ({
     setUnMutedVolume(volume);
   }
   const volumeArr = useMemo(() => [volume], [volume]);
-  const onSliderChange = useCallback(([newVolume]) => onChange(newVolume), [
-    onChange,
-  ]);
+  const onSliderChange = useCallback(
+    ([newVolume]: number[]) => onChange(newVolume),
+    [onChange],
+  );
   const minLabel = useCallback(
     () => (
       <MuteButton

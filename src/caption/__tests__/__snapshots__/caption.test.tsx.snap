@@ -545,7 +545,9 @@ exports[`renders with additional HTML attributes 1`] = `
   >
     <p
       class="emotion-1"
-    />
+    >
+      test
+    </p>
   </div>
 </DocumentFragment>
 `;

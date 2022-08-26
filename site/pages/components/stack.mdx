@@ -22,8 +22,15 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
 <LegacyBlock marginTop="sizing050">
   <Prop
     name="flow"
-    type="MQ<Flow.VerticalLeft | Flow.VerticalCenter | Flow.VerticalRight | Flow.VerticalStretch | Flow.HorizontalTop | Flow.HorizontalCenter | Flow.HorizontalBottom | Flow.HorizontalStretch>"
-    default="Flow.Vertical"
+    type="MQ<'vertical-left'
+  | 'vertical-center'
+  | 'vertical-right'
+  | 'vertical-stretch'
+  | 'horizontal-top'
+  | 'horizontal-center'
+  | 'horizontal-bottom'
+  | 'horizontal-stretch'>"
+    default="vertical-left"
   >
     If provided, defines the flow direction of the stack contents.
   </Prop>
@@ -32,8 +39,13 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
   </Prop>
   <Prop
     name="stackDistribution"
-    type="MQ<StackDistribution>"
-    default="StackDistribution.SpaceAround"
+    type="MQ<flex-start
+  | 'flex-end'
+  | 'center'
+  | 'space-around'
+  | 'space-between'
+  | 'space-evenly'>"
+    default="'space-around'"
   >
     If provided, defines the type of spacing used to layout the items in the
     stack.
@@ -247,7 +259,7 @@ a variety of uses. Custom and required props are detailed below:
 ## Usage
 
 <LegacyBlock marginTop="sizing050">
-  <Stack flow={Flow.HorizontalTop}>
+  <Stack flow="horizontal-top">
     <StackChild order={3}>
       <Tag>Tag 1</Tag>
     </StackChild>

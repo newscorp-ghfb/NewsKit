@@ -1,5 +1,5 @@
 import React, {createRef} from 'react';
-import {fireEvent} from '@testing-library/react';
+import {fireEvent, act} from '@testing-library/react';
 import {TextField, TextFieldProps, TextFieldSize} from '..';
 import {
   renderToFragmentWithTheme,
@@ -85,9 +85,11 @@ describe('TextField', () => {
 
     renderWithTheme(TextField, props);
 
-    if (inputRef && inputRef.current) {
-      inputRef.current.focus();
-    }
+    act(() => {
+      if (inputRef && inputRef.current) {
+        inputRef.current.focus();
+      }
+    });
     expect(inputRef.current).toHaveFocus();
   });
 
