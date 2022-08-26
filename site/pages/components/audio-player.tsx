@@ -2,6 +2,7 @@ import React from 'react';
 import {InlineMessage, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
+import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
@@ -304,6 +305,67 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             'The seek bar indicates audio track duration and buffering, and controls the track position. Also known as an audio ‘scrubber’.',
           media: getIllustrationComponent(
             'components/audio-player/behaviours/buffering',
+          ),
+        },
+        {
+          title: 'Skip previous',
+          description: (
+            <>
+              The skip previous icon button is used to skip to the beginning of
+              the track and if pressed within the first five seconds of a track
+              will skip to the previously played track (if available).
+              <br />
+              <br />
+              If no previous track is available, the icon button will be
+              disabled for the first 5 seconds of playback.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/audio-player/behaviours/skip-previous',
+          ),
+        },
+        {
+          title: 'Skip next',
+          description: (
+            <>
+              The skip next icon button is used to skip to the next track (if
+              available).
+              <br />
+              <br />
+              If there is no next track available, the icon button will be
+              disabled.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/audio-player/behaviours/buffering',
+          ),
+        },
+        {
+          title: 'Play pause - live',
+          description:
+            'When audio is playing the play pause icon button will display a stop icon, and a play icon when no audio is playing. Play will resume from the current point in the live stream.',
+          media: getIllustrationComponent(
+            'components/audio-player/behaviours/play-pause-live',
+          ),
+        },
+        {
+          title: 'Play pause - recorded',
+          description:
+            'When audio is playing the play pause icon button will display a pause icon, and a play icon when no audio is playing. Paused content will resume from the track position.',
+          media: getIllustrationComponent(
+            'components/audio-player/behaviours/play-pause-recorded',
+          ),
+        },
+        {
+          title: 'Mute button',
+          description: (
+            <>
+              The mute icon button mutes/unmutes the audio track on click/tap,
+              or via the <InlineCode>M</InlineCode> keyboard shortcut.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/audio-player/behaviours/mute-button',
           ),
         },
       ],
