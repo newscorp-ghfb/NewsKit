@@ -3,7 +3,7 @@ import * as React from 'react';
 import {ShareBar} from '..';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {IconFilledFacebook, IconFilledTwitter} from '../../icons';
-import {Button, ButtonSize} from '../../button';
+import {Button} from '../../button';
 import {IconButton} from '../../icon-button';
 import {createTheme, ThemeProvider} from '../../theme';
 
@@ -37,7 +37,7 @@ const myCustomTheme = createTheme({
 const ShareOnTwitterBtn = () => (
   <IconButton
     aria-label="Share on Twitter"
-    size={ButtonSize.Large}
+    size="large"
     overrides={{
       stylePreset: 'iconButtonMinimalSecondary',
     }}
@@ -49,7 +49,7 @@ const ShareOnTwitterBtn = () => (
 const ShareOnFacebookBtn = () => (
   <IconButton
     aria-label="Share on Facebook"
-    size={ButtonSize.Large}
+    size="large"
     overrides={{
       stylePreset: 'iconButtonMinimalSecondary',
     }}
@@ -116,7 +116,7 @@ export const StoryHorizontal = () => (
       >
         <IconButton
           aria-label="Share on Twitter"
-          size={ButtonSize.Large}
+          size="large"
           overrides={{
             stylePreset: 'customIconButtonPreset',
           }}
@@ -125,7 +125,7 @@ export const StoryHorizontal = () => (
         </IconButton>
         <IconButton
           aria-label="Share on Facebook"
-          size={ButtonSize.Large}
+          size="large"
           overrides={{
             stylePreset: 'customIconButtonPreset',
           }}

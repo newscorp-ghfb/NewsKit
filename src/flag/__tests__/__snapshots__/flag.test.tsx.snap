@@ -1816,7 +1816,7 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Flag renders with Large size 1`] = `
+exports[`Flag renders large Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -1931,7 +1931,7 @@ exports[`Flag renders with Large size 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Flag renders with Medium size 1`] = `
+exports[`Flag renders medium Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -2046,7 +2046,7 @@ exports[`Flag renders with Medium size 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Flag renders with Small size 1`] = `
+exports[`Flag renders small Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;

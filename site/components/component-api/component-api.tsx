@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, Tab, Tabs, TabSize} from 'newskit';
+import {Block, Tab, Tabs} from 'newskit';
 import {Table} from '../table';
 import {ContentText} from '../text-section/content-text';
 import {ComponentAPIProps} from './types';
@@ -107,7 +107,7 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
               </ContentText>
             )}
             {tabs.length > 1 && (
-              <Tabs size={TabSize.Medium}>
+              <Tabs size="medium">
                 {tabs.map(({label, tabSummary, content}) => (
                   <Tab label={label} overrides={tabOverrides} key={label}>
                     {tabSummary && <ContentText>{tabSummary}</ContentText>}

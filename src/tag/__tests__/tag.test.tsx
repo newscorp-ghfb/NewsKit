@@ -3,12 +3,9 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {Tag, TagSize, TagProps} from '..';
+import {Tag, TagProps} from '..';
 import {IconFilledEmail} from '../../icons';
-
-const tagSizeKeys = (Object.keys(TagSize) as unknown) as Array<
-  keyof typeof TagSize
->;
+import {FlagSize} from '../../flag/types';
 
 const renderTagWithText = (props: TagProps) => <Tag {...props}>Text</Tag>;
 const renderTagWithTextAndIcon = (props: TagProps) => (
@@ -103,12 +100,14 @@ describe('Tag', () => {
     expect(getByTestId('tag')).toHaveAttribute('disabled');
   });
 
-  test.each(tagSizeKeys)('renders with %s size', currentSize => {
-    const props: TagProps = {
-      size: TagSize[currentSize],
-    };
-    const fragment = renderToFragmentWithTheme(renderTagWithText, props);
-    expect(fragment).toMatchSnapshot();
+  ['small', 'medium', 'large'].forEach(size => {
+    test(`renders ${size} Tag`, () => {
+      const props: TagProps = {
+        size: size as FlagSize,
+      };
+      const fragment = renderToFragmentWithTheme(renderTagWithText, props);
+      expect(fragment).toMatchSnapshot();
+    });
   });
 
   test('renders a tag with an icon', () => {
