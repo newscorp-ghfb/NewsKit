@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, toNewsKitIcon} from 'newskit';
+import {InlineMessage, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {MediaList, MediaListProps} from '../../components/media-list';
 import {IntroductionText} from './types';
@@ -28,16 +28,16 @@ export const StatesSection: React.FC<StatesSectionProps> = ({
     <ComponentPageCell>
       <MediaList {...states} layout={layout || '2-span'} />
       {notice && (
-        <>
-          <Block spaceStack="space070" />
-          <InlineMessage
-            icon={infoIcon}
-            role="region"
-            aria-label="states notice"
-          >
-            {notice}
-          </InlineMessage>
-        </>
+        <InlineMessage
+          icon={infoIcon}
+          role="region"
+          aria-label="states notice"
+          overrides={{
+            marginBlockStart: 'space070',
+          }}
+        >
+          {notice}
+        </InlineMessage>
       )}
     </ComponentPageCell>
   </CommonSection>
