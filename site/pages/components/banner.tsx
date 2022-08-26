@@ -79,7 +79,6 @@ const BannerComponent = (layoutProps: LayoutProps) => (
                   icon && (
                     <IconFilledInfo
                       overrides={{
-                        stylePreset: 'bannerIcon',
                         size: 'iconSize020',
                       }}
                     />

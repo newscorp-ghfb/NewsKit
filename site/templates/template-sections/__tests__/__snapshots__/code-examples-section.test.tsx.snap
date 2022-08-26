@@ -177,8 +177,8 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-8 {
     font-family: "Poppins",sans-serif;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 28px;
+    line-height: 31.5px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -200,8 +200,8 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-8 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -224,11 +224,11 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-9 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 1023px) {
@@ -245,7 +245,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-11 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -255,7 +255,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-11::before {
@@ -320,18 +320,18 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-15 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-15 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-15 {
     font-family: "Poppins",sans-serif;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 28px;
+    line-height: 31.5px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -353,8 +353,8 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-15 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -379,11 +379,11 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-17 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-17 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 1439px) {
@@ -446,11 +446,11 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   height: 0;
   width: 100%;
   border-radius: 8px;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
 }
 
 .emotion-19 svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-20 {
@@ -490,9 +490,9 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-23 {
   border: solid 1px;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-radius: 8px;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
 }
 
 @media screen and (max-width: 767px) {
@@ -509,11 +509,11 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-25 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-25 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 1439px) {
@@ -542,8 +542,8 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-25 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -657,12 +657,12 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
               >
                 <pre
                   data-testid="sample-code"
-                  style="color: rgb(83, 83, 83); background: none; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; position: relative; margin: .5em 0.5em 0.5em 0.5em; overflow: auto; padding: 0px; background-color: rgb(244, 244, 244); box-sizing: border-box;"
+                  style="color: rgb(90, 106, 121); background: none; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; position: relative; margin: .5em 0.5em 0.5em 0.5em; overflow: auto; padding: 0px; background-color: rgb(240, 241, 243); box-sizing: border-box;"
                 >
                   <code>
                     <span
                       class="linenumber react-syntax-highlighter-line-number"
-                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 199, 204);"
                     >
                       1
                     </span>
@@ -671,7 +671,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                     </span>
                     <span
                       class="token"
-                      style="color: rgb(5, 113, 125);"
+                      style="color: rgb(1, 117, 130);"
                     >
                       1
                     </span>
@@ -720,12 +720,12 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
               >
                 <pre
                   data-testid="sample-code"
-                  style="color: rgb(83, 83, 83); background: none; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; position: relative; margin: .5em 0.5em 0.5em 0.5em; overflow: auto; padding: 0px; background-color: rgb(244, 244, 244); box-sizing: border-box;"
+                  style="color: rgb(90, 106, 121); background: none; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; position: relative; margin: .5em 0.5em 0.5em 0.5em; overflow: auto; padding: 0px; background-color: rgb(240, 241, 243); box-sizing: border-box;"
                 >
                   <code>
                     <span
                       class="linenumber react-syntax-highlighter-line-number"
-                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 199, 204);"
                     >
                       1
                     </span>
@@ -734,7 +734,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                     </span>
                     <span
                       class="token"
-                      style="color: rgb(5, 113, 125);"
+                      style="color: rgb(1, 117, 130);"
                     >
                       2
                     </span>
@@ -786,12 +786,12 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
               >
                 <pre
                   data-testid="sample-code"
-                  style="color: rgb(83, 83, 83); background: none; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; position: relative; margin: .5em 0.5em 0.5em 0.5em; overflow: auto; padding: 0px; background-color: rgb(244, 244, 244); box-sizing: border-box;"
+                  style="color: rgb(90, 106, 121); background: none; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; position: relative; margin: .5em 0.5em 0.5em 0.5em; overflow: auto; padding: 0px; background-color: rgb(240, 241, 243); box-sizing: border-box;"
                 >
                   <code>
                     <span
                       class="linenumber react-syntax-highlighter-line-number"
-                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 199, 204);"
                     >
                       1
                     </span>
@@ -800,7 +800,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                     </span>
                     <span
                       class="token"
-                      style="color: rgb(5, 113, 125);"
+                      style="color: rgb(1, 117, 130);"
                     >
                       3
                     </span>
@@ -885,7 +885,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-2 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
