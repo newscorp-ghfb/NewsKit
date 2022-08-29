@@ -168,6 +168,68 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
       ],
       rows: [],
     }}
+    layoutExamples={{
+      components: [
+        {
+          title: 'Full player',
+          summary: (
+            <>
+              The following example shows the full audio player layout option
+              that can be assembled using the various available subcomponents.{' '}
+              <Link
+                href="https://storybook.newskit.co.uk/?path=/story/newskit-light-audio-player-composable--audio-player"
+                target="_blank"
+              >
+                View examples in Storybook.
+              </Link>
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/audio-player/layout-examples/full-player',
+          ),
+        },
+        {
+          title: 'Inline player',
+          summary: (
+            <>
+              Use an inline audio player for simple inline playback e.g. within
+              an article.{' '}
+              <Link
+                href="https://storybook.newskit.co.uk/?path=/story/newskit-light-audio-player-composable--audio-player"
+                target="_blank"
+              >
+                View examples in Storybook.
+              </Link>
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/audio-player/layout-examples/inline-player',
+          ),
+        },
+        {
+          title: 'Player in card',
+          summary: (
+            <>
+              The audio player can be used with other components to create more
+              complex modules, such as a{' '}
+              <Link href="/components/card/">card</Link>, to give context to the
+              track or show being played.{' '}
+              <Link
+                href="https://storybook.newskit.co.uk/?path=/story/newskit-light-audio-player-composable--audio-player"
+                target="_blank"
+              >
+                View examples in Storybook.
+              </Link>
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/audio-player/layout-examples/player-in-card',
+          ),
+        },
+      ],
+      notice:
+        'Code examples can be viewed in Storybook via the ‘Story’ tab in the addons panel.',
+    }}
     options={{
       introduction:
         'The audio player has options that can be used to provide an appropriate experience for different use cases.',
