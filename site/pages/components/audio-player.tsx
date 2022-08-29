@@ -949,6 +949,265 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
         ],
       },
     }}
+    componentAPI={{
+      components: [
+        {
+          title: 'Audio player composable',
+          summary:
+            'The audio player composable has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'src',
+              type: 'string',
+              description: 'URL of the audio source to be played',
+              required: true,
+            },
+            {
+              name: 'isLive',
+              type: 'boolean',
+              description:
+                'If true, will display the controls for the live player, and the duration text block is replaced with a live indicator flag.',
+            },
+            {
+              name: 'autoPlay',
+              type: 'boolean',
+              default: 'false',
+              description: (
+                <>
+                  The autoPlay feature is supported in most{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/autoplay"
+                    target="_blank"
+                  >
+                    desktop browsers.
+                  </Link>{' '}
+                  It will not work on mobile browsers however to prevent users
+                  from using up their mobile data allowance.
+                  <br />
+                  <br />
+                  autoPlay on page load is not supported, the user has to
+                  interact with the site for it to work. Eg. navigating inside
+                  an SPA seems to satisfy the browser as there was no page
+                  refresh.
+                </>
+              ),
+            },
+            {
+              name: 'initialVolume',
+              type: 'number',
+              default: '0.7',
+              description:
+                'The volume value, a number between 0 (audio muted) and 1 (max volume). This value must be updated when onChange is called.',
+              required: true,
+            },
+            {
+              name: 'ariaLandmark',
+              type: 'string',
+              default: 'audio-player',
+              description: (
+                <>
+                  The aria-label attribute for the audio player.
+                  <br />
+                  <br />
+                  It is recommended that this is enabled for screen readers to
+                  be able to explain the audio player purpose.
+                  <br />
+                  <br />
+                  If left undefined it is set to &quot;audio-player&quot;.
+                  <br />
+                  <br />
+                  ariaLandmark should be unique, so the same value should not
+                  appear on the same page more than once.
+                </>
+              ),
+            },
+          ],
+          propsFooter: (
+            <>
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="Audio player requires"
+                overrides={{
+                  marginBlockStart: 'space070',
+                }}
+              >
+                The audio player requires a source stream to be passed in as
+                using the <InlineCode>src</InlineCode> prop. This will then be
+                loaded into the internal{' '}
+                <InlineCode>&#60;audio&#62;</InlineCode> element for playback.
+              </InlineMessage>
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="Audio element"
+                overrides={{
+                  marginBlockStart: 'space070',
+                }}
+              >
+                The audio element is non-visual, and as such doesn’t come with
+                predefined elements and attributes that can be overridden to
+                define their appearance.
+              </InlineMessage>
+            </>
+          ),
+        },
+        {
+          title: 'Play Pause Button',
+          summary:
+            'The play pause button has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'onClick',
+              type: 'function',
+              default: 'void',
+              description:
+                'Defines the action that occurs on click of the play pause icon button',
+            },
+            {
+              name: 'loading',
+              type: 'boolean',
+              default: 'true',
+              description:
+                'If true, will cause the play pause icon button to appear in a loading state, with a progress indicator icon displayed in the play pause icon button. This will display until playback starts, or resumes.',
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'audioPlayer.PlayPauseButton.stylePreset',
+              type: 'MQ<string>',
+              default: 'iconButtonSolidPrimary',
+              description:
+                'Overrides the stylePreset of the play pause icon button',
+            },
+          ],
+          propsFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="Icon Button"
+              overrides={{
+                marginBlockStart: 'space070',
+              }}
+            >
+              Please refer to the{' '}
+              <Link href="/components/button/">Icon Button</Link> component for
+              details of the props and other overrides.
+            </InlineMessage>
+          ),
+        },
+        {
+          title: 'Time display',
+          summary:
+            'The time display has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'format',
+              type: 'function',
+              description:
+                'Function that takes duration and current timestamp and return a formatted string so that user can format the time display in different manner',
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'audioPlayerTimeDisplay.typographyPreset',
+              type: 'MQ<string>',
+              default: 'utilityButton030',
+              description: 'Overrides the typographyPreset of the time display',
+            },
+            {
+              attribute: 'audioPlayerTimeDisplay.stylePreset',
+              type: 'MQ<string>',
+              default: 'timeDisplay',
+              description: 'Overrides the stylePreset of the time display',
+            },
+          ],
+        },
+        {
+          title: 'Seek bar',
+          summary:
+            'The seek bar has the following overrides that can be used to define an appropriate experience for different use cases.',
+          overridesRows: [
+            {
+              attribute: 'audioPlayerSeekBar.slider',
+              type: 'sliderSliderOverrideProps',
+              description: (
+                <>
+                  Overrides the styles of the seek bar slider. The slider
+                  overrides structure can be found in the{' '}
+                  <Link href="/components/slider/">
+                    Slider component documentation page.
+                  </Link>
+                  <br />
+                  <br />
+                  If the Audio Player is in live mode, the seek bar slider is
+                  not shown and this override is ignored.
+                </>
+              ),
+            },
+            {
+              attribute: 'audioPlayerSeekBar.slider.track.stylePreset',
+              type: 'MQ<string>',
+              default: 'seekBarTrack',
+              description:
+                'Overrides the stylePreset of the buffering section of the seek bar. If player is in live mode, the seek bar slider is not shown and this override is ignored.',
+            },
+
+            {
+              attribute: 'audioPlayerSeekBar.slider.track.size',
+              type: 'MQ<string>',
+              default: 'sizing020',
+              description: 'Overrides the size of the seek bar slider. ',
+            },
+            {
+              attribute: 'audioPlayerSeekBar.slider.indicator.stylePreset',
+              type: 'MQ<string>',
+              default: 'seekBarIndicator',
+              description: 'Overrides the stylePreset of the seek bar slider. ',
+            },
+            {
+              attribute: 'audioPlayerSeekBar.slider.thumb.stylePreset',
+              type: 'MQ<string>',
+              default: 'seekBarThumb',
+              description:
+                'Overrides the stylePreset of the seek bar slider thumb. ',
+            },
+            {
+              attribute: 'audioPlayerSeekBar.slider.thumb.size',
+              type: 'MQ<string>',
+              default: 'sizing040',
+              description: 'Overrides the size of the seek bar slider thumb. ',
+            },
+            {
+              attribute: 'audioPlayerSeekBar.slider.feedback.size',
+              type: 'MQ<string>',
+              default: 'sizing060',
+              description: 'Overrides the size of the feedback element.',
+            },
+            {
+              attribute: 'audioPlayerSeekBar.buffering.stylePreset',
+              type: 'MQ<string>',
+              default: 'seekBarBuffering',
+              description:
+                'Overrides the styles of the buffering of the seek bar. ',
+            },
+          ],
+          overridesFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="Slider"
+              overrides={{
+                marginBlockStart: 'space070',
+              }}
+            >
+              Please refer to the <Link href="/components/slider/">Slider</Link>{' '}
+              component for details of overrides.
+            </InlineMessage>
+          ),
+        },
+      ],
+    }}
   />
 );
 
