@@ -1,7 +1,8 @@
 import React from 'react';
-import {InlineMessage, toNewsKitIcon, UnorderedList} from 'newskit';
+import {Block, InlineMessage, toNewsKitIcon, UnorderedList} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
+import {Table} from '../../components/table';
 import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
@@ -461,6 +462,42 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             Focus order depends on how the audio player subcomponents are
             assembled and ordered in the DOM.
           </InlineMessage>
+          <ContentText title="Volume control" />
+          <Block spaceStack="space090">
+            <Table
+              columns={['Order', 'Element', 'Role']}
+              rows={[
+                {
+                  order: 1,
+                  element: 'Mute volume icon button',
+                  role:
+                    'Focusses to the mute volume icon button. If not already expanded, expands the volume slider.',
+                },
+                {
+                  order: 2,
+                  element: 'Volume slider',
+                  role: 'Focusses to the volume control container.',
+                },
+              ]}
+            />
+          </Block>
+          <ContentText title="Playback speed control" />
+          <Table
+            columns={['Order', 'Element', 'Role']}
+            rows={[
+              {
+                order: 1,
+                element: 'Playback speed control icon button',
+                role: 'Focusses to the playback speed control icon button.',
+              },
+              {
+                order: 2,
+                element: 'Selection list options',
+                role:
+                  'Focusses to the options in the selection list, when visible.',
+              },
+            ]}
+          />
         </>
       ),
       interaction: {
