@@ -19,7 +19,7 @@ const sendEvent = api => {
     trigger: 'load',
   };
 
-  if (window && window.utag) {
+  if (window && window.tealiumTrack) {
     console.log('SEND_EVENT', event);
     // window.tealiumTrack(event);
     // window.utag.view(e);
@@ -63,8 +63,8 @@ addons.register(ADDON_ID, api => {
   // The addon only sets the
 
   addons.add(TOOL_ID, {
-    type: types.TOOL,
-    title: 'Tracking',
+    type: types.TOOLEXTRA,
+    title: 'Privacy',
     render: Tool,
   });
 
