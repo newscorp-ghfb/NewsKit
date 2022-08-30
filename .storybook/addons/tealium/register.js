@@ -35,7 +35,7 @@ const CONFIG = {
   privacyManagerId: '407619',
   tealium: {
     accountId: 'newsinternational',
-    profileId: 'thetimes.newskit',
+    profileId: 'thetimes.storybook',
     env: isSiteEnvProduction ? 'prod' : 'dev',
   },
   consent: {
