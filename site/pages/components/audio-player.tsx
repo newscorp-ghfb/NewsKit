@@ -1206,6 +1206,373 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             </InlineMessage>
           ),
         },
+        {
+          title: 'Skip next button',
+          summary:
+            'The skip next button has the following overrides that can be used to define an appropriate experience for different use cases.',
+          overridesRows: [
+            {
+              attribute: 'audioPlayerSkipNextButton.stylePreset',
+              type: 'MQ<string>',
+              default: 'iconButtonMinimalPrimary',
+              description: 'Overrides the stylePreset of the skip next button',
+            },
+          ],
+          overridesFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="Icon button"
+              overrides={{
+                marginBlockStart: 'space070',
+              }}
+            >
+              Please refer to the{' '}
+              <Link href="/components/button/">icon button</Link> component for
+              details of the props and other overrides.
+            </InlineMessage>
+          ),
+        },
+        {
+          title: 'Skip previous button',
+          summary:
+            'The skip previous button has the following overrides that can be used to define an appropriate experience for different use cases.',
+          overridesRows: [
+            {
+              attribute: 'audioPlayerSkipPreviousButton.stylePreset',
+              type: 'MQ<string>',
+              default: 'iconButtonMinimalPrimary',
+              description:
+                'Overrides the stylePreset of the skip previous button',
+            },
+          ],
+          overridesFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="Skip previous button"
+              overrides={{
+                marginBlockStart: 'space070',
+              }}
+            >
+              Please refer to the{' '}
+              <Link href="/components/button/">icon button</Link> component for
+              details of the props and other overrides.
+            </InlineMessage>
+          ),
+        },
+        {
+          title: 'Forward Button',
+          summary:
+            'The forward button has the following overrides that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'seconds',
+              type: 'number',
+              default: '10',
+              description:
+                'Forwards the audio track a determined number of seconds',
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'audioPlayerForwardButton.stylePreset',
+              type: 'MQ<string>',
+              default: 'iconButtonMinimalPrimary',
+              description: 'Overrides the stylePreset of the forward button',
+            },
+          ],
+          overridesFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="Forward Button"
+              overrides={{
+                marginBlockStart: 'space070',
+              }}
+            >
+              Please refer to the{' '}
+              <Link href="/components/button/">icon button</Link> component for
+              details of the props and other overrides.
+            </InlineMessage>
+          ),
+        },
+        {
+          title: 'Replay button',
+          summary:
+            'The replay button has the following overrides that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'seconds',
+              type: 'number',
+              default: '10',
+              description:
+                'Replays the audio track a determined number of seconds',
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'audioPlayerReplayButton.stylePreset',
+              type: 'MQ<string>',
+              default: 'iconButtonMinimalPrimary',
+              description: 'Overrides the stylePreset of the replay button',
+            },
+          ],
+          overridesFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="Replay button"
+              overrides={{
+                marginBlockStart: 'space070',
+              }}
+            >
+              Please refer to the{' '}
+              <Link href="/components/button/">icon button</Link> component for
+              details of props and overrides.
+            </InlineMessage>
+          ),
+        },
+        {
+          title: 'Volume control',
+          summary:
+            'The volume control has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'volume',
+              type: 'number',
+              description:
+                'The volume value, a number between 0 and 1. This value must be updated when onChange is called.',
+              required: true,
+            },
+            {
+              name: 'muteButtonSize',
+              type: 'ButtonSize',
+              default: 'small',
+              description: 'Sets the size of the mute button',
+            },
+            {
+              name: 'muteKeyboardShortcut',
+              type: 'keyboardShortcuts?: {muteButton: string | string[]}',
+              default: 'm',
+              description:
+                'Sets the keyboard shortcut for mute/unmute audio (toggle).',
+              required: true,
+            },
+            {
+              name: 'layout',
+              type: `'collapsed' | 'vertical' | 'horizontal' | 'horizontal-expanded'`,
+              default: `'horizontal-expanded'`,
+              description: 'Set the layout option of the volume control.',
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'audioPlayerVolumeControl',
+              type: '',
+              description:
+                'If provided, this overrides the volume control defaults.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.size',
+              type: 'string',
+              default: '100%',
+              description:
+                'If provided, this overrides the size of volume control.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.spaceBetween',
+              type: 'MQ<string>',
+              default: 'space030',
+              description:
+                'If provided, this overrides the space applied between the mute volume icon button, and the volume slider.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.button.stylePreset',
+              type: 'MQ<string>',
+              default: 'iconButtonMinimalPrimary',
+              description: (
+                <>
+                  If provided, this overrides the appearance of the mute volume
+                  icon button.
+                  <br />
+                  <br />
+                  <Link href="/components/button/">
+                    For icon button overrides, please refer to the Icon Button
+                    component.
+                  </Link>
+                </>
+              ),
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.button.iconSize',
+              type: 'string',
+              default: 'iconSize020',
+              description:
+                'If provided, this overrides the icon size for the mute volume icon button.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.button.iconDefault',
+              type: 'MQ<string>',
+              default: 'iconFilledVolumeDown',
+              description: 'If provided, this overrides the mute volume icon.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.button.iconMuted',
+              type: 'MQ<string>',
+              default: 'iconFilledVolumeOff',
+              description:
+                'If provided, this overrides the mute volume icon, when audio is muted.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.button.iconUnmuted',
+              type: 'MQ<string>',
+              default: 'iconFilledVolumeDown',
+              description:
+                'If provided, this overrides the mute volume icon, when audio is set to maximum.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.slider.track.stylePreset',
+              type: 'MQ<string>',
+              default: 'audioPlayerVolumeControlTrack',
+              description: (
+                <>
+                  If provided, this overrides the appearance of the volume
+                  slider track.
+                  <br />
+                  <br />
+                  <Link href="/components/slider/">
+                    For slider overrides, please refer to the Slider component.
+                  </Link>
+                </>
+              ),
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.slider.track.size',
+              type: 'string',
+              default: 'sizing010',
+              description:
+                'If provided, this overrides the size of the volume slider track.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.slider.track.length',
+              type: 'string',
+              default: '130px',
+              description:
+                'If provided, this overrides the length of the volume slider track.',
+            },
+            {
+              attribute:
+                'audioPlayerVolumeControl.slider.indicator.stylePreset',
+              type: 'MQ<string>',
+              default: 'audioPlayerVolumeControlIndicator',
+              description:
+                'If provided, this overrides the appearance of the volume slider indicator.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.slider.thumb.stylePreset',
+              type: 'MQ<string>',
+              default: 'audioPlayerVolumeControlThumb',
+              description:
+                'If provided, this overrides the appearance of the volume slider thumb.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.slider.thumb.track.size',
+              type: 'string',
+              default: 'sizing040',
+              description:
+                'If provided, this overrides the size of the volume slider thumb.',
+            },
+            {
+              attribute:
+                'audioPlayerVolumeControl.slider.thumbLabel.stylePreset',
+              type: 'MQ<string>',
+              default: 'audioPlayerVolumeControlThumbLabel',
+              description:
+                'If provided, this overrides the appearance of the volume slider thumb label.',
+            },
+            {
+              attribute:
+                'audioPlayerVolumeControl.slider.thumbLabel.typographyPreset',
+              type: 'MQ<string>',
+              default: 'audioPlayerVolumeControlThumb',
+              description:
+                'If provided, this overrides the typographyPreset of the volume slider thumb label.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.slider.thumbLabel.space',
+              type: 'MQ<string>',
+              default: '',
+              description:
+                'If provided, this overrides the space of the volume slider thumb label.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.slider.labels.stylePreset',
+              type: 'MQ<string>',
+              default: 'audioPlayerVolumeControlLabels',
+              description:
+                'If provided, this overrides the appearance of the volume slider labels.',
+            },
+            {
+              attribute:
+                'audioPlayerVolumeControl.slider.labels.typographyPreset',
+              type: 'MQ<string>',
+              default: '',
+              description:
+                'If provided, this overrides the typographyPreset of the volume slider labels.',
+            },
+
+            {
+              attribute: 'audioPlayerVolumeControl.slider.labels.space',
+              type: 'MQ<string>',
+              default: '',
+              description:
+                'If provided, this overrides the space of the volume slider labels.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.transitionPreset',
+              type: 'MQ<string>',
+              default: 'widthChange',
+              description:
+                'If provided, this overrides the transitionPreset applied to the slider element of the volume control in a horizontal orientation.',
+            },
+            {
+              attribute: 'audioPlayerVolumeControl.popover.stylePreset',
+              type: 'MQ<string>',
+              default: 'audioPlayerVolumeControlPopover',
+              description:
+                'If provided, this overrides the appearance of the Popover.',
+            },
+            {
+              attribute:
+                'audioPlayerVolumeControl.popover.content.paddingBlock',
+              type: 'MQ<string>',
+              default: 'space030',
+              description: '',
+            },
+            {
+              attribute:
+                'audioPlayerVolumeControl.popover.content.paddingInline',
+              type: 'MQ<string>',
+              default: 'space030',
+              description: '',
+            },
+          ],
+          overridesFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="Volume control"
+              overrides={{
+                marginBlockStart: 'space070',
+              }}
+            >
+              Please refer to the{' '}
+              <Link href="/components/popover/">Popover</Link> component for
+              details of props and overrides.
+            </InlineMessage>
+          ),
+        },
       ],
     }}
   />
