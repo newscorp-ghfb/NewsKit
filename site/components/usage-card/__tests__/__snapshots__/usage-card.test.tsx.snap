@@ -40,8 +40,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #D20600;
-  background-color: #FFE6E5;
+  border-color: #D60000;
+  background-color: #FEECEC;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -52,7 +52,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #D20600;
+  fill: #D60000;
 }
 
 .emotion-3 {
@@ -89,7 +89,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #D20600;
+  fill: #D60000;
   vertical-align: unset;
   display: inline-block;
 }
@@ -113,7 +113,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 .emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
-  fill: #D20600;
+  fill: #D60000;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -165,7 +165,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 
 .emotion-11 {
   border-style: solid;
-  border-color: #D20600;
+  border-color: #D60000;
   border-width: 4px;
   border-radius: 4px;
   border-width: 0px;
@@ -176,8 +176,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 
 .emotion-13 {
   font-family: "Poppins",sans-serif;
-  font-size: 22px;
-  line-height: 24.75px;
+  font-size: 24px;
+  line-height: 27px;
   font-weight: 700;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -199,16 +199,16 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #D20600;
+  color: #D60000;
 }
 
 .emotion-14 svg {
-  fill: #D20600;
+  fill: #D60000;
 }
 
 .emotion-16 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -218,7 +218,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 }
 
 .emotion-16 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-16::before {
@@ -243,10 +243,10 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
         class="emotion-2"
         data-testid="flag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <svg
@@ -265,8 +265,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
                 d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
               />
             </svg>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </div>
     <div
@@ -355,8 +355,8 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #0A782A;
-  background-color: #E6FAEB;
+  border-color: #007B22;
+  background-color: #E5F4EA;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -367,7 +367,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 .emotion-3 {
@@ -404,7 +404,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #0A782A;
+  fill: #007B22;
   vertical-align: unset;
   display: inline-block;
 }
@@ -428,7 +428,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 .emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -480,7 +480,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 
 .emotion-11 {
   border-style: solid;
-  border-color: #0A782A;
+  border-color: #007B22;
   border-width: 4px;
   border-radius: 4px;
   border-width: 0px;
@@ -491,8 +491,8 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 
 .emotion-13 {
   font-family: "Poppins",sans-serif;
-  font-size: 22px;
-  line-height: 24.75px;
+  font-size: 24px;
+  line-height: 27px;
   font-weight: 700;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -514,16 +514,16 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A782A;
+  color: #007B22;
 }
 
 .emotion-14 svg {
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 .emotion-16 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -533,7 +533,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 }
 
 .emotion-16 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-16::before {
@@ -558,10 +558,10 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
         class="emotion-2"
         data-testid="flag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <svg
@@ -580,8 +580,8 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
                 d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
               />
             </svg>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </div>
     <div

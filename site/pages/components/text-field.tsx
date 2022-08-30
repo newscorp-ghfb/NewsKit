@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, LinkInline, toNewsKitIcon} from 'newskit';
+import {InlineMessage, LinkInline, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
@@ -160,8 +160,12 @@ const commonOverridesRows = [
 
 const formInputPropsFooter = (
   <>
-    <Block spaceStack="space050" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="Rules props">
+    <InlineMessage
+      icon={infoIcon}
+      role="region"
+      aria-label="Rules props"
+      overrides={{marginBlockStart: 'space050'}}
+    >
       The <InlineCode>name</InlineCode> & <InlineCode>rules</InlineCode> props
       are set on the form input level. If you want to add validation rules or
       set the name of this component,{' '}
@@ -170,17 +174,21 @@ const formInputPropsFooter = (
       </LinkInline>
       .
     </InlineMessage>
-    <Block spaceStack="space030" />
     <InlineMessage
       icon={infoIcon}
       role="region"
       aria-label="TextField component"
+      overrides={{marginBlockStart: 'space030'}}
     >
       The NewsKit FormInput TextField supports different native HTML attributes,
       eg. defining the input type as password, or email etc.
     </InlineMessage>
-    <Block spaceStack="space030" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="Engineer check">
+    <InlineMessage
+      icon={infoIcon}
+      role="region"
+      aria-label="Engineer check"
+      overrides={{marginBlockStart: 'space030'}}
+    >
       Engineer to check the validation related props at the time of
       implementation.
     </InlineMessage>
@@ -305,21 +313,20 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Placeholder text',
           description: (
             <>
-              <Block spaceStack="space030">
-                Placeholder text can be displayed to provide the user with a
-                short hint that describes the content that is expected to be
-                inputted by the user (e.g. a sample value or a short description
-                of the expected format).
-                <br />
-                <br />
-                The short hint is displayed in the input container before the
-                user enters a value.
-              </Block>
+              Placeholder text can be displayed to provide the user with a short
+              hint that describes the content that is expected to be inputted by
+              the user (e.g. a sample value or a short description of the
+              expected format).
+              <br />
+              <br />
+              The short hint is displayed in the input container before the user
+              enters a value.
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="Placeholder accessible"
                 title="Note"
+                overrides={{marginBlockStart: 'space030'}}
               >
                 Placeholder text is not accessible; use assistive text when
                 providing instructions on completing a Text Field for clarity.
@@ -678,12 +685,12 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               <Link href="/components/form/">
                 For more information, please refer to the Form component.
               </Link>
-              <Block spaceStack="space050" />
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="TextField validation"
                 title="Note"
+                overrides={{marginBlockStart: 'space050'}}
               >
                 Validation only works if the FormInput TextField uses the Form
                 component.
@@ -870,11 +877,11 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         <>
           The Text Field has a range of props that can be used to define an
           appropriate experience for different use cases.
-          <Block spaceStack="space080" />
           <InlineMessage
             icon={infoIcon}
             role="region"
             aria-label="components exported"
+            overrides={{marginBlockStart: 'space080'}}
           >
             There are two components exported from the package, one for use
             within the{' '}

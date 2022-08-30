@@ -60,9 +60,9 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 .emotion-4 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -79,9 +79,9 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 .emotion-5 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -98,9 +98,9 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 .emotion-8 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -117,9 +117,9 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 .emotion-9 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -166,9 +166,9 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
   border-radius: 4px;
-  color: #2E2E2E;
+  color: #2E3F54;
   white-space: nowrap;
 }
 
@@ -178,7 +178,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 .emotion-12 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-13 {
@@ -272,8 +272,8 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #0A782A;
-  background-color: #E6FAEB;
+  border-color: #007B22;
+  background-color: #E5F4EA;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -284,14 +284,14 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 .emotion-19 svg {
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 .emotion-22 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #0A782A;
+  fill: #007B22;
   vertical-align: unset;
   display: inline-block;
 }
@@ -313,7 +313,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 .emotion-22.emotion-22 {
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -385,14 +385,14 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
               <td
                 class="emotion-11"
               >
-                <div
+                <span
                   class="emotion-12"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-13"
                   >
-                    <div
+                    <span
                       class="emotion-14"
                     >
                       <span
@@ -400,9 +400,9 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
                       >
                         string
                       </span>
-                    </div>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </td>
               <td
                 class="emotion-11"
@@ -419,10 +419,10 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
                   class="emotion-19"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-13"
                   >
-                    <div
+                    <span
                       class="emotion-14"
                     >
                       <svg
@@ -441,8 +441,8 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
                           d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </div>
               </td>
             </tr>
@@ -520,12 +520,12 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
   display: inline-block;
 }
 
 .emotion-3 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 1439px) {
@@ -554,8 +554,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-3 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -580,11 +580,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 1439px) {
@@ -645,9 +645,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-8 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -664,9 +664,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-9 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -683,9 +683,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-12 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -702,9 +702,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-13 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -751,9 +751,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
   border-radius: 4px;
-  color: #2E2E2E;
+  color: #2E3F54;
   white-space: nowrap;
 }
 
@@ -763,7 +763,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-16 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-17 {
@@ -857,8 +857,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #0A782A;
-  background-color: #E6FAEB;
+  border-color: #007B22;
+  background-color: #E5F4EA;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -869,14 +869,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-23 svg {
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 .emotion-26 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #0A782A;
+  fill: #007B22;
   vertical-align: unset;
   display: inline-block;
 }
@@ -898,7 +898,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-26.emotion-26 {
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1039,13 +1039,13 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   appearance: none;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #0A0A0A;
-  border-color: #577FFB;
+  color: #09111C;
+  border-color: #3358CC;
 }
 
 .emotion-40 svg {
@@ -1054,11 +1054,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-40:hover:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-40:active:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1112,7 +1112,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1162,7 +1162,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   appearance: none;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
 }
@@ -1173,11 +1173,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-46:hover:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-46:active:not(:disabled) {
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1197,7 +1197,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-50 {
-  background-color: #577FFB;
+  background-color: #3358CC;
   position: absolute;
   z-index: 2;
   bottom: 0px;
@@ -1205,7 +1205,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-51 {
-  background-color: #E4E4E4;
+  background-color: #DEE2E5;
   display: block;
   position: absolute;
   z-index: 1;
@@ -1310,14 +1310,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
               <td
                 class="emotion-15"
               >
-                <div
+                <span
                   class="emotion-16"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-17"
                   >
-                    <div
+                    <span
                       class="emotion-18"
                     >
                       <span
@@ -1325,9 +1325,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                       >
                         string
                       </span>
-                    </div>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </td>
               <td
                 class="emotion-15"
@@ -1344,10 +1344,10 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                   class="emotion-23"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-17"
                   >
-                    <div
+                    <span
                       class="emotion-18"
                     >
                       <svg
@@ -1366,8 +1366,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                           d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </div>
               </td>
             </tr>
@@ -1433,10 +1433,10 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                       tabindex="0"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-41"
                       >
-                        <div
+                        <span
                           class="emotion-42"
                         >
                           <span
@@ -1444,8 +1444,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                           >
                             Props
                           </span>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -1466,10 +1466,10 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-41"
                       >
-                        <div
+                        <span
                           class="emotion-42"
                         >
                           <span
@@ -1477,8 +1477,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                           >
                             Overrides
                           </span>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -1553,14 +1553,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                   <td
                     class="emotion-15"
                   >
-                    <div
+                    <span
                       class="emotion-16"
                       data-testid="flag"
                     >
-                      <div
+                      <span
                         class="emotion-17"
                       >
-                        <div
+                        <span
                           class="emotion-18"
                         >
                           <span
@@ -1568,9 +1568,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                           >
                             string
                           </span>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </td>
                   <td
                     class="emotion-15"
@@ -1587,10 +1587,10 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                       class="emotion-23"
                       data-testid="flag"
                     >
-                      <div
+                      <span
                         class="emotion-17"
                       >
-                        <div
+                        <span
                           class="emotion-18"
                         >
                           <svg
@@ -1609,8 +1609,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                               d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </div>
                   </td>
                 </tr>
@@ -1667,14 +1667,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                     <div
                       class="emotion-84"
                     >
-                      <div
+                      <span
                         class="emotion-16"
                         data-testid="flag"
                       >
-                        <div
+                        <span
                           class="emotion-17"
                         >
-                          <div
+                          <span
                             class="emotion-18"
                           >
                             <span
@@ -1682,22 +1682,22 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                             >
                               spaceInset
                             </span>
-                          </div>
-                        </div>
-                      </div>
+                          </span>
+                        </span>
+                      </span>
                     </div>
                   </td>
                   <td
                     class="emotion-15"
                   >
-                    <div
+                    <span
                       class="emotion-16"
                       data-testid="flag"
                     >
-                      <div
+                      <span
                         class="emotion-17"
                       >
-                        <div
+                        <span
                           class="emotion-18"
                         >
                           <span
@@ -1705,9 +1705,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                           >
                             MQ&lt;string&gt;
                           </span>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </td>
                   <td
                     class="emotion-15"

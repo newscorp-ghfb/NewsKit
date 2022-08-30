@@ -62,11 +62,11 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #577FFB;
+  color: #3358CC;
 }
 
 .emotion-2 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 @media screen and (max-width: 767px) {
@@ -95,8 +95,8 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -129,37 +129,14 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 .emotion-4 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-4 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-4 {
-    font-family: "Poppins",sans-serif;
-    font-size: 32px;
-    line-height: 36px;
-    font-weight: 700;
-    letter-spacing: 0;
-    padding: 0.5px 0px;
-  }
-
-  .emotion-4::before {
-    content: '';
-    margin-bottom: -0.2155em;
-    display: block;
-  }
-
-  .emotion-4::after {
-    content: '';
-    margin-top: -0.2125em;
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-4 {
     font-family: "Poppins",sans-serif;
     font-size: 36px;
@@ -182,11 +159,34 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-4 {
     font-family: "Poppins",sans-serif;
     font-size: 40px;
     line-height: 45px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-4::before {
+    content: '';
+    margin-bottom: -0.2155em;
+    display: block;
+  }
+
+  .emotion-4::after {
+    content: '';
+    margin-top: -0.2125em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    font-family: "Poppins",sans-serif;
+    font-size: 48px;
+    line-height: 54px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -291,11 +291,11 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -434,11 +434,11 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   height: 0;
   width: 100%;
   border-radius: 8px;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
 }
 
 .emotion-2 svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-3 {

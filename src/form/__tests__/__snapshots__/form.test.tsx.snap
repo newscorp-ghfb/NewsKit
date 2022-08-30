@@ -7,7 +7,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 
 .emotion-3 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -19,7 +19,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-3::before {
@@ -51,10 +51,10 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -73,33 +73,33 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 }
 
 .emotion-5::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-6 {
@@ -108,7 +108,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 
 .emotion-7 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -118,7 +118,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 }
 
 .emotion-7:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-7::before {
@@ -176,20 +176,20 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-15:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -362,10 +362,10 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
     data-testid="submit-button"
     type="submit"
   >
-    <div
+    <span
       class="emotion-16"
     >
-      <div
+      <span
         class="emotion-17"
       >
         <span
@@ -373,8 +373,8 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
         >
           Submit
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </button>
 </form>
 `;
@@ -387,7 +387,7 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
 
 .emotion-3 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -399,7 +399,7 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-3::before {
@@ -431,12 +431,12 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #23A248;
+  border-color: #007B22;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
-  caret-color: #0A782A;
+  caret-color: #007B22;
   padding: 12px;
   min-height: 48px;
 }
@@ -458,19 +458,19 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
 }
 
 .emotion-5::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-6 {
@@ -492,7 +492,7 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #0A782A;
+  fill: #007B22;
   vertical-align: unset;
   display: inline-block;
 }
@@ -516,7 +516,7 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
 .emotion-7.emotion-7 {
   width: 24px;
   height: 24px;
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -582,20 +582,20 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
 }
 
 .emotion-19:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-19:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-19:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-19:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-19:focus-visible:not(:disabled) {
@@ -796,10 +796,10 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-20"
       >
-        <div
+        <span
           class="emotion-21"
         >
           <span
@@ -807,8 +807,8 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -822,7 +822,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
 
 .emotion-3 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -834,7 +834,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
 }
 
 .emotion-3:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-3::before {
@@ -866,12 +866,12 @@ exports[`Form renders with error and with submit validation and revalidation mod
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #EF1703;
+  border-color: #D60000;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
-  caret-color: #D20600;
+  caret-color: #D60000;
   padding: 12px;
   min-height: 48px;
 }
@@ -893,19 +893,19 @@ exports[`Form renders with error and with submit validation and revalidation mod
 }
 
 .emotion-5::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-6 {
@@ -927,7 +927,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #D20600;
+  fill: #D60000;
   vertical-align: unset;
   display: inline-block;
 }
@@ -951,7 +951,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
 .emotion-7.emotion-7 {
   width: 24px;
   height: 24px;
-  fill: #D20600;
+  fill: #D60000;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -976,7 +976,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
 
 .emotion-10 {
   margin: 0;
-  color: #D20600;
+  color: #D60000;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1040,20 +1040,20 @@ exports[`Form renders with error and with submit validation and revalidation mod
 }
 
 .emotion-21:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-21:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-21:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-21:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-21:focus-visible:not(:disabled) {
@@ -1272,10 +1272,10 @@ exports[`Form renders with error and with submit validation and revalidation mod
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-22"
       >
-        <div
+        <span
           class="emotion-23"
         >
           <span
@@ -1283,8 +1283,8 @@ exports[`Form renders with error and with submit validation and revalidation mod
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -1298,7 +1298,7 @@ exports[`Form renders with error on blur 1`] = `
 
 .emotion-3 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1310,7 +1310,7 @@ exports[`Form renders with error on blur 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-3::before {
@@ -1342,12 +1342,12 @@ exports[`Form renders with error on blur 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #EF1703;
+  border-color: #D60000;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
-  caret-color: #D20600;
+  caret-color: #D60000;
   padding: 12px;
   min-height: 48px;
 }
@@ -1369,19 +1369,19 @@ exports[`Form renders with error on blur 1`] = `
 }
 
 .emotion-5::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-6 {
@@ -1403,7 +1403,7 @@ exports[`Form renders with error on blur 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #D20600;
+  fill: #D60000;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1427,7 +1427,7 @@ exports[`Form renders with error on blur 1`] = `
 .emotion-7.emotion-7 {
   width: 24px;
   height: 24px;
-  fill: #D20600;
+  fill: #D60000;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1452,7 +1452,7 @@ exports[`Form renders with error on blur 1`] = `
 
 .emotion-10 {
   margin: 0;
-  color: #D20600;
+  color: #D60000;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1485,10 +1485,10 @@ exports[`Form renders with error on blur 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -1507,38 +1507,38 @@ exports[`Form renders with error on blur 1`] = `
 }
 
 .emotion-15::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-15::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-15:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-15::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-15:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-15:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-17 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1548,7 +1548,7 @@ exports[`Form renders with error on blur 1`] = `
 }
 
 .emotion-17:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-17::before {
@@ -1606,20 +1606,20 @@ exports[`Form renders with error on blur 1`] = `
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus-visible:not(:disabled) {
@@ -1815,10 +1815,10 @@ exports[`Form renders with error on blur 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-19"
       >
-        <div
+        <span
           class="emotion-20"
         >
           <span
@@ -1826,8 +1826,8 @@ exports[`Form renders with error on blur 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -1841,7 +1841,7 @@ exports[`Form renders with error on submit 1`] = `
 
 .emotion-3 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1853,7 +1853,7 @@ exports[`Form renders with error on submit 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-3::before {
@@ -1885,12 +1885,12 @@ exports[`Form renders with error on submit 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #EF1703;
+  border-color: #D60000;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
-  caret-color: #D20600;
+  caret-color: #D60000;
   padding: 12px;
   min-height: 48px;
 }
@@ -1912,19 +1912,19 @@ exports[`Form renders with error on submit 1`] = `
 }
 
 .emotion-5::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-6 {
@@ -1946,7 +1946,7 @@ exports[`Form renders with error on submit 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #D20600;
+  fill: #D60000;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1970,7 +1970,7 @@ exports[`Form renders with error on submit 1`] = `
 .emotion-7.emotion-7 {
   width: 24px;
   height: 24px;
-  fill: #D20600;
+  fill: #D60000;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1995,7 +1995,7 @@ exports[`Form renders with error on submit 1`] = `
 
 .emotion-10 {
   margin: 0;
-  color: #D20600;
+  color: #D60000;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2059,20 +2059,20 @@ exports[`Form renders with error on submit 1`] = `
 }
 
 .emotion-21:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-21:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-21:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-21:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-21:focus-visible:not(:disabled) {
@@ -2291,10 +2291,10 @@ exports[`Form renders with error on submit 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-22"
       >
-        <div
+        <span
           class="emotion-23"
         >
           <span
@@ -2302,8 +2302,8 @@ exports[`Form renders with error on submit 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -2317,7 +2317,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-3 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -2329,7 +2329,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-3::before {
@@ -2361,12 +2361,12 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #EF1703;
+  border-color: #D60000;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
-  caret-color: #D20600;
+  caret-color: #D60000;
   padding: 12px;
   min-height: 48px;
 }
@@ -2388,19 +2388,19 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 }
 
 .emotion-5::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-6 {
@@ -2422,7 +2422,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #D20600;
+  fill: #D60000;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2446,7 +2446,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 .emotion-7.emotion-7 {
   width: 24px;
   height: 24px;
-  fill: #D20600;
+  fill: #D60000;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2471,7 +2471,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-10 {
   margin: 0;
-  color: #D20600;
+  color: #D60000;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2504,10 +2504,10 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -2526,38 +2526,38 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 }
 
 .emotion-15::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-15::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-15:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-15::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-15:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-15:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-17 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2567,7 +2567,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 }
 
 .emotion-17:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-17::before {
@@ -2625,20 +2625,20 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 }
 
 .emotion-18:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-18:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-18:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-18:focus-visible:not(:disabled) {
@@ -2834,10 +2834,10 @@ exports[`Form renders with error with 2 onBlur 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-19"
       >
-        <div
+        <span
           class="emotion-20"
         >
           <span
@@ -2845,8 +2845,8 @@ exports[`Form renders with error with 2 onBlur 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -2856,7 +2856,7 @@ exports[`Form renders with inputs 1`] = `
 <DocumentFragment>
   .emotion-2 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -2868,7 +2868,7 @@ exports[`Form renders with inputs 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2::before {
@@ -2900,10 +2900,10 @@ exports[`Form renders with inputs 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -2922,33 +2922,33 @@ exports[`Form renders with inputs 1`] = `
 }
 
 .emotion-4::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-4:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-5 {
@@ -2957,7 +2957,7 @@ exports[`Form renders with inputs 1`] = `
 
 .emotion-6 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2967,7 +2967,7 @@ exports[`Form renders with inputs 1`] = `
 }
 
 .emotion-6:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-6::before {
@@ -3065,7 +3065,7 @@ exports[`Form renders with logical props 1`] = `
 
 .emotion-2 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -3077,7 +3077,7 @@ exports[`Form renders with logical props 1`] = `
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2::before {
@@ -3109,10 +3109,10 @@ exports[`Form renders with logical props 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -3131,33 +3131,33 @@ exports[`Form renders with logical props 1`] = `
 }
 
 .emotion-4::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-4:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-5 {
@@ -3166,7 +3166,7 @@ exports[`Form renders with logical props 1`] = `
 
 .emotion-6 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -3176,7 +3176,7 @@ exports[`Form renders with logical props 1`] = `
 }
 
 .emotion-6:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-6::before {
@@ -3288,7 +3288,7 @@ exports[`Form renders with nested inputs 1`] = `
 
 .emotion-3 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -3300,7 +3300,7 @@ exports[`Form renders with nested inputs 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-3::before {
@@ -3332,10 +3332,10 @@ exports[`Form renders with nested inputs 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -3354,33 +3354,33 @@ exports[`Form renders with nested inputs 1`] = `
 }
 
 .emotion-5::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-6 {
@@ -3389,7 +3389,7 @@ exports[`Form renders with nested inputs 1`] = `
 
 .emotion-7 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -3399,7 +3399,7 @@ exports[`Form renders with nested inputs 1`] = `
 }
 
 .emotion-7:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-7::before {
@@ -3457,20 +3457,20 @@ exports[`Form renders with nested inputs 1`] = `
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-15:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -3643,10 +3643,10 @@ exports[`Form renders with nested inputs 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-16"
       >
-        <div
+        <span
           class="emotion-17"
         >
           <span
@@ -3654,8 +3654,8 @@ exports[`Form renders with nested inputs 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -3669,7 +3669,7 @@ exports[`Form renders with onBlur validation 1`] = `
 
 .emotion-3 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -3681,7 +3681,7 @@ exports[`Form renders with onBlur validation 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-3::before {
@@ -3713,10 +3713,10 @@ exports[`Form renders with onBlur validation 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #DEDEDE;
+  border-color: #C6C6C6;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   padding: 12px;
   min-height: 48px;
@@ -3735,33 +3735,33 @@ exports[`Form renders with onBlur validation 1`] = `
 }
 
 .emotion-5::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-6 {
@@ -3770,7 +3770,7 @@ exports[`Form renders with onBlur validation 1`] = `
 
 .emotion-7 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -3780,7 +3780,7 @@ exports[`Form renders with onBlur validation 1`] = `
 }
 
 .emotion-7:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-7::before {
@@ -3838,20 +3838,20 @@ exports[`Form renders with onBlur validation 1`] = `
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-15:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -4024,10 +4024,10 @@ exports[`Form renders with onBlur validation 1`] = `
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-16"
       >
-        <div
+        <span
           class="emotion-17"
         >
           <span
@@ -4035,8 +4035,8 @@ exports[`Form renders with onBlur validation 1`] = `
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -4046,7 +4046,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -4058,7 +4058,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -4092,15 +4092,15 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:focus:not(:disabled) {
@@ -4108,7 +4108,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4120,36 +4120,36 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-3 {
@@ -4180,19 +4180,19 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-3::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4 {
@@ -4214,7 +4214,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4255,11 +4255,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-7:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8 {
@@ -4267,7 +4267,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -4277,7 +4277,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-8:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8::before {
@@ -4329,7 +4329,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -4413,22 +4413,22 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-24:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-24:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-24:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-24:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -4466,8 +4466,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FAFAFA;
-  border-color: #CCCCCC;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -4478,13 +4478,13 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-25:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-25:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-25:checked:not(:disabled) {
@@ -4493,8 +4493,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-25:checked:hover:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #254CAC;
+  border-color: #254CAC;
 }
 
 .emotion-25:checked:focus:not(:disabled) {
@@ -4503,91 +4503,91 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-25:checked:focus:hover:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #254CAC;
+  border-color: #254CAC;
 }
 
 .emotion-25:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-25:invalid:focus:not(:disabled) {
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 .emotion-25:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-25:checked:invalid:not(:disabled) {
-  background-color: #D20600;
-  border-color: #D20600;
+  background-color: #A90000;
+  border-color: #A90000;
 }
 
 .emotion-25:checked:invalid:focus:not(:disabled) {
-  background-color: #D20600;
-  border-color: #D20600;
+  background-color: #A90000;
+  border-color: #A90000;
 }
 
 .emotion-25:checked:invalid:hover:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #820000;
+  border-color: #820000;
 }
 
 .emotion-25:checked:invalid:focus:hover:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #820000;
+  border-color: #820000;
 }
 
 .emotion-25:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-25:valid:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 .emotion-25:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-25:checked:valid:not(:disabled) {
-  background-color: #148F39;
-  border-color: #148F39;
+  background-color: #00601A;
+  border-color: #00601A;
 }
 
 .emotion-25:checked:valid:focus:not(:disabled) {
-  background-color: #148F39;
-  border-color: #148F39;
+  background-color: #00601A;
+  border-color: #00601A;
 }
 
 .emotion-25:checked:valid:hover:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #004914;
+  border-color: #004914;
 }
 
 .emotion-25:checked:valid:focus:hover:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #004914;
+  border-color: #004914;
 }
 
 .emotion-25:disabled {
   background-color: transparent;
-  border-color: #F4F4F4;
+  border-color: #E2E2E2;
 }
 
 .emotion-25:checked:disabled:not(:disabled) {
-  background-color: #F4F4F4;
-  border-color: #F4F4F4;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-25:checked:disabled:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-25:focus-visible:not(:disabled) {
@@ -4627,7 +4627,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4643,8 +4643,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #D20600;
-  border-color: #D20600;
+  background-color: #A90000;
+  border-color: #A90000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4660,8 +4660,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4677,8 +4677,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #148F39;
-  border-color: #148F39;
+  background-color: #00601A;
+  border-color: #00601A;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4694,8 +4694,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4711,8 +4711,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #254CAC;
+  border-color: #254CAC;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4728,8 +4728,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4745,8 +4745,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #820000;
+  border-color: #820000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4762,8 +4762,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4779,8 +4779,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #004914;
+  border-color: #004914;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4818,7 +4818,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-27 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -4827,7 +4827,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-27:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-33 {
@@ -4848,25 +4848,25 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FAFAFA;
-  border-color: #CCCCCC;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 50%;
   border-style: solid;
 }
 
 .emotion-33:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-33:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-33:checked:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -4875,16 +4875,16 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-33:checked:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-33:checked:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-33:checked:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -4893,124 +4893,124 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-33:checked:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-33:checked:focus:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-33:invalid:focus:not(:disabled) {
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 .emotion-33:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-33:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-33:checked:invalid:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #D20600;
+  background-color: #F1F1F1;
+  border-color: #A90000;
 }
 
 .emotion-33:checked:invalid:not(:disabled) svg {
-  fill: #D20600;
+  fill: #A90000;
 }
 
 .emotion-33:checked:invalid:focus:not(:disabled) {
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 .emotion-33:checked:invalid:focus:not(:disabled) svg {
-  fill: #D20600;
+  fill: #A90000;
 }
 
 .emotion-33:checked:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-33:checked:invalid:hover:not(:disabled) svg {
-  fill: #A60100;
+  fill: #820000;
 }
 
 .emotion-33:checked:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-33:checked:invalid:focus:hover:not(:disabled) svg {
-  fill: #A60100;
+  fill: #820000;
 }
 
 .emotion-33:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #004914;
 }
 
 .emotion-33:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-33:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-33:checked:valid:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 .emotion-33:checked:valid:not(:disabled) svg {
-  fill: #148F39;
+  fill: #00601A;
 }
 
 .emotion-33:checked:valid:focus:not(:disabled) {
-  border-color: #148F39;
+  border-color: #00601A;
 }
 
 .emotion-33:checked:valid:focus:not(:disabled) svg {
-  fill: #148F39;
+  fill: #00601A;
 }
 
 .emotion-33:checked:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-33:checked:valid:hover:not(:disabled) svg {
-  fill: #0A782A;
+  fill: #004914;
 }
 
 .emotion-33:checked:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-33:checked:valid:focus:hover:not(:disabled) svg {
-  fill: #0A782A;
+  fill: #004914;
 }
 
 .emotion-33:disabled {
   background-color: transparent;
-  border-color: #F4F4F4;
+  border-color: #E2E2E2;
 }
 
 .emotion-33:checked:disabled:not(:disabled) {
   background-color: transparent;
-  border-color: #F4F4F4;
+  border-color: #E2E2E2;
 }
 
 .emotion-33:checked:disabled:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-33:focus-visible:not(:disabled) {
@@ -5033,7 +5033,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -5054,12 +5054,12 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-33:checked:focus-visible:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5075,12 +5075,12 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 .emotion-33:checked:valid:focus-visible:not(:disabled) svg {
-  fill: #148F39;
+  fill: #00601A;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5096,12 +5096,12 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-33:checked:valid:focus-visible:hover:not(:disabled) svg {
-  fill: #0A782A;
+  fill: #004914;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5117,12 +5117,12 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
-  border-color: #D20600;
+  background-color: #F1F1F1;
+  border-color: #A90000;
 }
 
 .emotion-33:checked:invalid:focus-visible:not(:disabled) svg {
-  fill: #D20600;
+  fill: #A90000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5138,12 +5138,12 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-33:checked:invalid:focus-visible:hover:not(:disabled) svg {
-  fill: #A60100;
+  fill: #820000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5477,7 +5477,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -5489,7 +5489,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -5523,15 +5523,15 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:focus:not(:disabled) {
@@ -5539,7 +5539,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5551,36 +5551,36 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-3 {
@@ -5611,19 +5611,19 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-3::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4 {
@@ -5645,7 +5645,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5686,11 +5686,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-7:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8 {
@@ -5698,7 +5698,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -5708,7 +5708,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-8:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8::before {
@@ -5760,7 +5760,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -5844,22 +5844,22 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-24:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-24:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-24:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-24:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -5897,8 +5897,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FAFAFA;
-  border-color: #CCCCCC;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -5909,13 +5909,13 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-25:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-25:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-25:checked:not(:disabled) {
@@ -5924,8 +5924,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-25:checked:hover:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #254CAC;
+  border-color: #254CAC;
 }
 
 .emotion-25:checked:focus:not(:disabled) {
@@ -5934,91 +5934,91 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-25:checked:focus:hover:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #254CAC;
+  border-color: #254CAC;
 }
 
 .emotion-25:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-25:invalid:focus:not(:disabled) {
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 .emotion-25:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-25:checked:invalid:not(:disabled) {
-  background-color: #D20600;
-  border-color: #D20600;
+  background-color: #A90000;
+  border-color: #A90000;
 }
 
 .emotion-25:checked:invalid:focus:not(:disabled) {
-  background-color: #D20600;
-  border-color: #D20600;
+  background-color: #A90000;
+  border-color: #A90000;
 }
 
 .emotion-25:checked:invalid:hover:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #820000;
+  border-color: #820000;
 }
 
 .emotion-25:checked:invalid:focus:hover:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #820000;
+  border-color: #820000;
 }
 
 .emotion-25:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-25:valid:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 .emotion-25:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-25:checked:valid:not(:disabled) {
-  background-color: #148F39;
-  border-color: #148F39;
+  background-color: #00601A;
+  border-color: #00601A;
 }
 
 .emotion-25:checked:valid:focus:not(:disabled) {
-  background-color: #148F39;
-  border-color: #148F39;
+  background-color: #00601A;
+  border-color: #00601A;
 }
 
 .emotion-25:checked:valid:hover:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #004914;
+  border-color: #004914;
 }
 
 .emotion-25:checked:valid:focus:hover:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #004914;
+  border-color: #004914;
 }
 
 .emotion-25:disabled {
   background-color: transparent;
-  border-color: #F4F4F4;
+  border-color: #E2E2E2;
 }
 
 .emotion-25:checked:disabled:not(:disabled) {
-  background-color: #F4F4F4;
-  border-color: #F4F4F4;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-25:checked:disabled:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-25:focus-visible:not(:disabled) {
@@ -6058,7 +6058,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6074,8 +6074,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #D20600;
-  border-color: #D20600;
+  background-color: #A90000;
+  border-color: #A90000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6091,8 +6091,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6108,8 +6108,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #148F39;
-  border-color: #148F39;
+  background-color: #00601A;
+  border-color: #00601A;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6125,8 +6125,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6142,8 +6142,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #254CAC;
+  border-color: #254CAC;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6159,8 +6159,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6176,8 +6176,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #820000;
+  border-color: #820000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6193,8 +6193,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6210,8 +6210,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #004914;
+  border-color: #004914;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6249,7 +6249,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-27 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -6258,7 +6258,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-27:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-33 {
@@ -6279,25 +6279,25 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FAFAFA;
-  border-color: #CCCCCC;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 50%;
   border-style: solid;
 }
 
 .emotion-33:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-33:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-33:checked:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -6306,16 +6306,16 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-33:checked:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-33:checked:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-33:checked:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -6324,124 +6324,124 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-33:checked:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-33:checked:focus:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-33:invalid:focus:not(:disabled) {
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 .emotion-33:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-33:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-33:checked:invalid:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #D20600;
+  background-color: #F1F1F1;
+  border-color: #A90000;
 }
 
 .emotion-33:checked:invalid:not(:disabled) svg {
-  fill: #D20600;
+  fill: #A90000;
 }
 
 .emotion-33:checked:invalid:focus:not(:disabled) {
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 .emotion-33:checked:invalid:focus:not(:disabled) svg {
-  fill: #D20600;
+  fill: #A90000;
 }
 
 .emotion-33:checked:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-33:checked:invalid:hover:not(:disabled) svg {
-  fill: #A60100;
+  fill: #820000;
 }
 
 .emotion-33:checked:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-33:checked:invalid:focus:hover:not(:disabled) svg {
-  fill: #A60100;
+  fill: #820000;
 }
 
 .emotion-33:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #004914;
 }
 
 .emotion-33:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-33:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-33:checked:valid:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 .emotion-33:checked:valid:not(:disabled) svg {
-  fill: #148F39;
+  fill: #00601A;
 }
 
 .emotion-33:checked:valid:focus:not(:disabled) {
-  border-color: #148F39;
+  border-color: #00601A;
 }
 
 .emotion-33:checked:valid:focus:not(:disabled) svg {
-  fill: #148F39;
+  fill: #00601A;
 }
 
 .emotion-33:checked:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-33:checked:valid:hover:not(:disabled) svg {
-  fill: #0A782A;
+  fill: #004914;
 }
 
 .emotion-33:checked:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-33:checked:valid:focus:hover:not(:disabled) svg {
-  fill: #0A782A;
+  fill: #004914;
 }
 
 .emotion-33:disabled {
   background-color: transparent;
-  border-color: #F4F4F4;
+  border-color: #E2E2E2;
 }
 
 .emotion-33:checked:disabled:not(:disabled) {
   background-color: transparent;
-  border-color: #F4F4F4;
+  border-color: #E2E2E2;
 }
 
 .emotion-33:checked:disabled:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-33:focus-visible:not(:disabled) {
@@ -6464,7 +6464,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -6485,12 +6485,12 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-33:checked:focus-visible:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6506,12 +6506,12 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 .emotion-33:checked:valid:focus-visible:not(:disabled) svg {
-  fill: #148F39;
+  fill: #00601A;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6527,12 +6527,12 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-33:checked:valid:focus-visible:hover:not(:disabled) svg {
-  fill: #0A782A;
+  fill: #004914;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6548,12 +6548,12 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
-  border-color: #D20600;
+  background-color: #F1F1F1;
+  border-color: #A90000;
 }
 
 .emotion-33:checked:invalid:focus-visible:not(:disabled) svg {
-  fill: #D20600;
+  fill: #A90000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6569,12 +6569,12 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-33:checked:invalid:focus-visible:hover:not(:disabled) svg {
-  fill: #A60100;
+  fill: #820000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6908,7 +6908,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -6920,7 +6920,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {
@@ -6961,15 +6961,15 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -6977,7 +6977,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6989,36 +6989,36 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -7049,19 +7049,19 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-1::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-2 {
@@ -7083,7 +7083,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7183,11 +7183,11 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1 {
@@ -7195,7 +7195,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -7205,7 +7205,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -7232,7 +7232,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   </div>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -7244,7 +7244,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {
@@ -7285,15 +7285,15 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -7301,7 +7301,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7313,36 +7313,36 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -7382,7 +7382,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -7430,7 +7430,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7532,11 +7532,11 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1 {
@@ -7544,7 +7544,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -7554,7 +7554,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -7634,22 +7634,22 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-2:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-2:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-2:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -7687,8 +7687,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FAFAFA;
-  border-color: #CCCCCC;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
@@ -7699,13 +7699,13 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -7714,8 +7714,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:checked:hover:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #254CAC;
+  border-color: #254CAC;
 }
 
 .emotion-3:checked:focus:not(:disabled) {
@@ -7724,91 +7724,91 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #254CAC;
+  border-color: #254CAC;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-3:invalid:focus:not(:disabled) {
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
-  background-color: #D20600;
-  border-color: #D20600;
+  background-color: #A90000;
+  border-color: #A90000;
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #D20600;
-  border-color: #D20600;
+  background-color: #A90000;
+  border-color: #A90000;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #820000;
+  border-color: #820000;
 }
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #820000;
+  border-color: #820000;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
-  background-color: #148F39;
-  border-color: #148F39;
+  background-color: #00601A;
+  border-color: #00601A;
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #148F39;
-  border-color: #148F39;
+  background-color: #00601A;
+  border-color: #00601A;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #004914;
+  border-color: #004914;
 }
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #004914;
+  border-color: #004914;
 }
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #F4F4F4;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
-  background-color: #F4F4F4;
-  border-color: #F4F4F4;
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -7848,7 +7848,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7864,8 +7864,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #D20600;
-  border-color: #D20600;
+  background-color: #A90000;
+  border-color: #A90000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7881,8 +7881,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7898,8 +7898,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #148F39;
-  border-color: #148F39;
+  background-color: #00601A;
+  border-color: #00601A;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7915,8 +7915,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7932,8 +7932,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #254CAC;
+  border-color: #254CAC;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7949,8 +7949,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7966,8 +7966,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #820000;
+  border-color: #820000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7983,8 +7983,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8000,8 +8000,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #004914;
+  border-color: #004914;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8039,7 +8039,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-5 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -8048,7 +8048,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 <label
@@ -8098,11 +8098,11 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1 {
@@ -8110,7 +8110,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -8120,7 +8120,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -8200,22 +8200,22 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-2:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-2:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-2:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -8253,25 +8253,25 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FAFAFA;
-  border-color: #CCCCCC;
+  background-color: #F1F1F1;
+  border-color: #919191;
   border-width: 2px;
   border-radius: 50%;
   border-style: solid;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-3:checked:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -8280,16 +8280,16 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:checked:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-3:checked:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -8298,124 +8298,124 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-3:invalid:focus:not(:disabled) {
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #D20600;
+  background-color: #F1F1F1;
+  border-color: #A90000;
 }
 
 .emotion-3:checked:invalid:not(:disabled) svg {
-  fill: #D20600;
+  fill: #A90000;
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  border-color: #D20600;
+  border-color: #A90000;
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) svg {
-  fill: #D20600;
+  fill: #A90000;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) svg {
-  fill: #A60100;
+  fill: #820000;
 }
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) svg {
-  fill: #A60100;
+  fill: #820000;
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #004914;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 .emotion-3:checked:valid:not(:disabled) svg {
-  fill: #148F39;
+  fill: #00601A;
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  border-color: #148F39;
+  border-color: #00601A;
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) svg {
-  fill: #148F39;
+  fill: #00601A;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) svg {
-  fill: #0A782A;
+  fill: #004914;
 }
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) svg {
-  fill: #0A782A;
+  fill: #004914;
 }
 
 .emotion-3:disabled {
   background-color: transparent;
-  border-color: #F4F4F4;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) {
   background-color: transparent;
-  border-color: #F4F4F4;
+  border-color: #E2E2E2;
 }
 
 .emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-3:focus-visible:not(:disabled) {
@@ -8438,7 +8438,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
@@ -8459,12 +8459,12 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
+  background-color: #ECF1FF;
+  border-color: #254CAC;
 }
 
 .emotion-3:checked:focus-visible:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8480,12 +8480,12 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
-  border-color: #148F39;
+  background-color: #F1F1F1;
+  border-color: #00601A;
 }
 
 .emotion-3:checked:valid:focus-visible:not(:disabled) svg {
-  fill: #148F39;
+  fill: #00601A;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8501,12 +8501,12 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #E6FAEB;
-  border-color: #0A782A;
+  background-color: #E5F4EA;
+  border-color: #004914;
 }
 
 .emotion-3:checked:valid:focus-visible:hover:not(:disabled) svg {
-  fill: #0A782A;
+  fill: #004914;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8522,12 +8522,12 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FAFAFA;
-  border-color: #D20600;
+  background-color: #F1F1F1;
+  border-color: #A90000;
 }
 
 .emotion-3:checked:invalid:focus-visible:not(:disabled) svg {
-  fill: #D20600;
+  fill: #A90000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8543,12 +8543,12 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #FFE6E5;
-  border-color: #A60100;
+  background-color: #FEECEC;
+  border-color: #820000;
 }
 
 .emotion-3:checked:invalid:focus-visible:hover:not(:disabled) svg {
-  fill: #A60100;
+  fill: #820000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8586,7 +8586,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-5 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -8595,7 +8595,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-5:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 <div>
@@ -8703,7 +8703,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -8715,7 +8715,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -8747,12 +8747,12 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   width: 100%;
   min-height: 48px;
   margin-bottom: 8px;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-style: solid;
   border-color: #3768FB;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   outline-color: #3768FB;
   outline-style: solid;
@@ -8760,7 +8760,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8799,19 +8799,19 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 }
 
 .emotion-3::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-3::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-3:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-3::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4 {
@@ -8833,7 +8833,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #D20600;
+  fill: #D60000;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8857,7 +8857,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 .emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
-  fill: #D20600;
+  fill: #D60000;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8884,7 +8884,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8925,7 +8925,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #D20600;
+  color: #D60000;
 }
 
 .emotion-11 {
@@ -8933,7 +8933,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #D20600;
+  color: #D60000;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -8973,25 +8973,25 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #EF1703;
+  border-color: #D60000;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-13 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-13:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-13:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-20 {
@@ -9037,20 +9037,20 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 }
 
 .emotion-20:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-20:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-20:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-20:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-20:focus-visible:not(:disabled) {
@@ -9301,10 +9301,10 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       data-testid="submit-button"
       type="submit"
     >
-      <div
+      <span
         class="emotion-21"
       >
-        <div
+        <span
           class="emotion-22"
         >
           <span
@@ -9312,8 +9312,8 @@ exports[`FormInput renders with error and with submit validation and revalidatio
           >
             Submit
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </form>
 </DocumentFragment>
@@ -9323,7 +9323,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -9335,7 +9335,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {
@@ -9376,15 +9376,15 @@ exports[`FormInput renders with nested inputs 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -9392,7 +9392,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -9404,36 +9404,36 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -9464,19 +9464,19 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-1::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-2 {
@@ -9498,7 +9498,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9598,11 +9598,11 @@ exports[`FormInput renders with nested inputs 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1 {
@@ -9610,7 +9610,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -9620,7 +9620,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -9647,7 +9647,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   </div>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -9659,7 +9659,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {
@@ -9700,15 +9700,15 @@ exports[`FormInput renders with nested inputs 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -9716,7 +9716,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -9728,36 +9728,36 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -9788,19 +9788,19 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-1::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 <div
@@ -9832,11 +9832,11 @@ exports[`FormInput renders with nested inputs 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1 {
@@ -9844,7 +9844,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -9854,7 +9854,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -9922,20 +9922,20 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-0:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -10027,10 +10027,10 @@ exports[`FormInput renders with nested inputs 1`] = `
     data-testid="submit-button"
     type="submit"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -10038,8 +10038,8 @@ exports[`FormInput renders with nested inputs 1`] = `
         >
           Submit
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </button>
 </DocumentFragment>
 `;

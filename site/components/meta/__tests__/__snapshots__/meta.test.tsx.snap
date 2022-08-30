@@ -136,11 +136,11 @@ exports[`Meta renders with mandatory props 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 .emotion-9 {
@@ -169,7 +169,7 @@ exports[`Meta renders with mandatory props 1`] = `
   -ms-appearance: none;
   appearance: none;
   color: #FFFFFF;
-  background-color: #577FFB;
+  background-color: #3358CC;
   border-radius: 8px;
   white-space: nowrap;
 }
@@ -257,7 +257,7 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-16 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -298,7 +298,7 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-23 {
   margin: 0;
-  color: #577FFB;
+  color: #3358CC;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -308,7 +308,7 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-23 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-23::before {
@@ -384,10 +384,10 @@ exports[`Meta renders with mandatory props 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #535353;
+  border-color: #2E3F54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E2E2E;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -398,26 +398,26 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-26 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-26:hover:not(:disabled) {
-  background-color: #F4F4F4;
-  border-color: #2E2E2E;
+  background-color: #F0F1F3;
+  border-color: #15263E;
 }
 
 .emotion-26:active:not(:disabled) {
-  background-color: #CCCCCC;
-  border-color: #0A0A0A;
+  background-color: #DEE2E5;
+  border-color: #09111C;
 }
 
 .emotion-26:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-26:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-26:focus-visible:not(:disabled) {
@@ -482,7 +482,7 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-29 {
-  fill: #2E2E2E;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -541,7 +541,7 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-34 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -764,10 +764,10 @@ exports[`Meta renders with mandatory props 1`] = `
                 class="emotion-9"
                 data-testid="flag"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
                     <div
@@ -779,8 +779,8 @@ exports[`Meta renders with mandatory props 1`] = `
                         Supported
                       </p>
                     </div>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </div>
             </div>
           </div>
@@ -838,10 +838,10 @@ exports[`Meta renders with mandatory props 1`] = `
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
-              <div
+              <span
                 class="emotion-27"
               >
-                <div
+                <span
                   class="emotion-28"
                 >
                   <svg
@@ -856,8 +856,8 @@ exports[`Meta renders with mandatory props 1`] = `
                       fill-rule="nonzero"
                     />
                   </svg>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-28"
                 >
                   <span
@@ -865,8 +865,8 @@ exports[`Meta renders with mandatory props 1`] = `
                   >
                     View code
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </div>
           <div
@@ -918,10 +918,10 @@ exports[`Meta renders with mandatory props 1`] = `
                   class="emotion-9"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
                       <div
@@ -933,8 +933,8 @@ exports[`Meta renders with mandatory props 1`] = `
                           Supported
                         </p>
                       </div>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1011,10 +1011,10 @@ exports[`Meta renders with mandatory props 1`] = `
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
-                  <div
+                  <span
                     class="emotion-27"
                   >
-                    <div
+                    <span
                       class="emotion-28"
                     >
                       <svg
@@ -1029,8 +1029,8 @@ exports[`Meta renders with mandatory props 1`] = `
                           fill-rule="nonzero"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-28"
                     >
                       <span
@@ -1038,8 +1038,8 @@ exports[`Meta renders with mandatory props 1`] = `
                       >
                         View code
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </div>
               <div
@@ -1214,11 +1214,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 .emotion-9 {
@@ -1247,7 +1247,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -ms-appearance: none;
   appearance: none;
   color: #FFFFFF;
-  background-color: #577FFB;
+  background-color: #3358CC;
   border-radius: 8px;
   white-space: nowrap;
 }
@@ -1335,7 +1335,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-16 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1376,7 +1376,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-23 {
   margin: 0;
-  color: #577FFB;
+  color: #3358CC;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1386,7 +1386,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-23 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-23::before {
@@ -1462,10 +1462,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #535353;
+  border-color: #2E3F54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E2E2E;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -1476,26 +1476,26 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-26 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-26:hover:not(:disabled) {
-  background-color: #F4F4F4;
-  border-color: #2E2E2E;
+  background-color: #F0F1F3;
+  border-color: #15263E;
 }
 
 .emotion-26:active:not(:disabled) {
-  background-color: #CCCCCC;
-  border-color: #0A0A0A;
+  background-color: #DEE2E5;
+  border-color: #09111C;
 }
 
 .emotion-26:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-26:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-26:focus-visible:not(:disabled) {
@@ -1560,7 +1560,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-29 {
-  fill: #2E2E2E;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1619,7 +1619,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-40 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1842,10 +1842,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 class="emotion-9"
                 data-testid="flag"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
                     <div
@@ -1857,8 +1857,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                         Supported
                       </p>
                     </div>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </div>
             </div>
           </div>
@@ -1916,10 +1916,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
-              <div
+              <span
                 class="emotion-27"
               >
-                <div
+                <span
                   class="emotion-28"
                 >
                   <svg
@@ -1934,8 +1934,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       fill-rule="nonzero"
                     />
                   </svg>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-28"
                 >
                   <span
@@ -1943,8 +1943,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   >
                     View code
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </div>
           <div
@@ -1956,10 +1956,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
-              <div
+              <span
                 class="emotion-27"
               >
-                <div
+                <span
                   class="emotion-28"
                 >
                   <svg
@@ -1990,8 +1990,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       fill="#A259FF"
                     />
                   </svg>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-28"
                 >
                   <span
@@ -1999,8 +1999,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   >
                     View Design
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </div>
         </div>
@@ -2049,10 +2049,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   class="emotion-9"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
                       <div
@@ -2064,8 +2064,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                           Supported
                         </p>
                       </div>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -2142,10 +2142,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
-                  <div
+                  <span
                     class="emotion-27"
                   >
-                    <div
+                    <span
                       class="emotion-28"
                     >
                       <svg
@@ -2160,8 +2160,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                           fill-rule="nonzero"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-28"
                     >
                       <span
@@ -2169,8 +2169,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       >
                         View code
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </div>
               <div
@@ -2182,10 +2182,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
-                  <div
+                  <span
                     class="emotion-27"
                   >
-                    <div
+                    <span
                       class="emotion-28"
                     >
                       <svg
@@ -2216,8 +2216,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                           fill="#A259FF"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-28"
                     >
                       <span
@@ -2225,8 +2225,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       >
                         View Design
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
                 <div
                   class="emotion-39"
@@ -2397,11 +2397,11 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 .emotion-9 {
@@ -2430,7 +2430,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   -ms-appearance: none;
   appearance: none;
   color: #FFFFFF;
-  background-color: #577FFB;
+  background-color: #3358CC;
   border-radius: 8px;
   white-space: nowrap;
 }
@@ -2518,7 +2518,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 .emotion-16 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -2559,7 +2559,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 .emotion-23 {
   display: inline-block;
-  color: #577FFB;
+  color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2581,47 +2581,47 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-23 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-23:hover:not(:disabled) {
-  color: #3358CC;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-23:hover:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #254CAC;
 }
 
 .emotion-23:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-23:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-23:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-23:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-23:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-23:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-23:focus-visible:not(:disabled) {
@@ -2664,23 +2664,9 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 600;
   letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
-}
-
-.emotion-26::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-26::after {
-  content: '';
-  margin-top: -0.4em;
   display: block;
 }
 
@@ -2688,7 +2674,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2775,10 +2761,10 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #535353;
+  border-color: #2E3F54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E2E2E;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -2789,26 +2775,26 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-32 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-32:hover:not(:disabled) {
-  background-color: #F4F4F4;
-  border-color: #2E2E2E;
+  background-color: #F0F1F3;
+  border-color: #15263E;
 }
 
 .emotion-32:active:not(:disabled) {
-  background-color: #CCCCCC;
-  border-color: #0A0A0A;
+  background-color: #DEE2E5;
+  border-color: #09111C;
 }
 
 .emotion-32:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-32:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-32:focus-visible:not(:disabled) {
@@ -2873,7 +2859,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-35 {
-  fill: #2E2E2E;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2932,7 +2918,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 .emotion-40 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -3155,10 +3141,10 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                 class="emotion-9"
                 data-testid="flag"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
                     <div
@@ -3170,8 +3156,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                         Supported
                       </p>
                     </div>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </div>
             </div>
           </div>
@@ -3266,10 +3252,10 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
-              <div
+              <span
                 class="emotion-33"
               >
-                <div
+                <span
                   class="emotion-34"
                 >
                   <svg
@@ -3284,8 +3270,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                       fill-rule="nonzero"
                     />
                   </svg>
-                </div>
-                <div
+                </span>
+                <span
                   class="emotion-34"
                 >
                   <span
@@ -3293,8 +3279,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                   >
                     View code
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </a>
           </div>
           <div
@@ -3346,10 +3332,10 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                   class="emotion-9"
                   data-testid="flag"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
                       <div
@@ -3361,8 +3347,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                           Supported
                         </p>
                       </div>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -3476,10 +3462,10 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
-                  <div
+                  <span
                     class="emotion-33"
                   >
-                    <div
+                    <span
                       class="emotion-34"
                     >
                       <svg
@@ -3494,8 +3480,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                           fill-rule="nonzero"
                         />
                       </svg>
-                    </div>
-                    <div
+                    </span>
+                    <span
                       class="emotion-34"
                     >
                       <span
@@ -3503,8 +3489,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                       >
                         View code
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </div>
               <div

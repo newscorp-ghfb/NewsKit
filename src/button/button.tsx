@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonOrButtonLinkProps, ButtonSize, isButtonLink} from './types';
+import {ButtonOrButtonLinkProps, isButtonLink} from './types';
 import {StyledFlag} from './styled';
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
@@ -17,7 +17,7 @@ const ThemelessButton = React.forwardRef<
   const theme = useTheme();
   const {fireEvent} = useInstrumentation();
 
-  const {children, overrides = {}, size = ButtonSize.Medium, loading} = props;
+  const {children, overrides = {}, size = 'medium', loading} = props;
 
   const buttonSettings: typeof overrides = {
     ...theme.componentDefaults.button[size],

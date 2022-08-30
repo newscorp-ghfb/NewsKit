@@ -1,8 +1,7 @@
-import React, {PropsWithChildren} from 'react';
+import React from 'react';
 
-import {FlagProps, FlagSize, BaseFlagProps, BaseFlagOverrides} from './types';
+import {FlagProps, BaseFlagProps, BaseFlagOverrides} from './types';
 import {Stack} from '../stack';
-import {Flow, StackDistribution} from '../stack/types';
 import {StyledBaseFlag} from './styled';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
@@ -14,7 +13,7 @@ import {withOwnTheme} from '../utils/with-own-theme';
 
 const BaseFlag = React.forwardRef<
   HTMLDivElement,
-  BaseFlagProps<BaseFlagOverrides> & {as?: keyof JSX.IntrinsicElements}
+  BaseFlagProps<BaseFlagOverrides>
 >(({children, overrides, loading, disabled, as, ...props}, ref) => {
   const theme = useTheme();
 
@@ -30,8 +29,9 @@ const BaseFlag = React.forwardRef<
     >
       <Stack
         spaceInline={getToken({theme, overrides}, '', '', 'spaceInline')}
-        flow={Flow.HorizontalCenter}
-        stackDistribution={StackDistribution.Center}
+        flow="horizontal-center"
+        stackDistribution="center"
+        as="span"
       >
         {React.Children.map(children, child =>
           ['string', 'number'].includes(typeof child) ? (
@@ -50,24 +50,23 @@ const BaseFlag = React.forwardRef<
   );
 });
 
-const ThemelessFlag = React.forwardRef<
-  HTMLDivElement,
-  PropsWithChildren<FlagProps>
->(({overrides = {}, ...props}, ref) => {
-  const theme = useTheme();
-  const {size = FlagSize.Medium} = props;
+const ThemelessFlag = React.forwardRef<HTMLDivElement, FlagProps>(
+  ({overrides = {}, ...props}, ref) => {
+    const theme = useTheme();
+    const {size = 'medium'} = props;
 
-  return (
-    <BaseFlag
-      data-testid="flag"
-      {...props}
-      ref={ref}
-      overrides={{
-        ...theme.componentDefaults.flag[size],
-        ...filterOutFalsyProperties(overrides),
-      }}
-    />
-  );
-});
+    return (
+      <BaseFlag
+        data-testid="flag"
+        {...props}
+        ref={ref}
+        overrides={{
+          ...theme.componentDefaults.flag[size],
+          ...filterOutFalsyProperties(overrides),
+        }}
+      />
+    );
+  },
+);
 
 export const Flag = withOwnTheme(ThemelessFlag)({defaults, stylePresets});

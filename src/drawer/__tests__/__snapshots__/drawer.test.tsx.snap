@@ -14,7 +14,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -263,7 +263,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -282,7 +282,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -339,7 +339,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -350,24 +350,24 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
 }
 
 .emotion-8 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -435,7 +435,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -520,10 +520,10 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -542,8 +542,8 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -569,7 +569,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -817,7 +817,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -836,7 +836,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -893,7 +893,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -904,24 +904,24 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-8 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -989,7 +989,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1067,10 +1067,10 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
               data-testid="button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <svg
@@ -1089,8 +1089,8 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                     />
                   </svg>
-                </div>
-              </div>
+                </span>
+              </span>
             </button>
           </div>
         </div>
@@ -1120,7 +1120,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1370,7 +1370,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1389,7 +1389,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -1446,7 +1446,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -1457,24 +1457,24 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-8 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -1542,7 +1542,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1620,10 +1620,10 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
               data-testid="button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <svg
@@ -1642,8 +1642,8 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                     />
                   </svg>
-                </div>
-              </div>
+                </span>
+              </span>
             </button>
           </div>
         </div>
@@ -1673,7 +1673,7 @@ exports[`Drawer render inline-drawer 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1921,7 +1921,7 @@ exports[`Drawer render inline-drawer 1`] = `
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1940,7 +1940,7 @@ exports[`Drawer render inline-drawer 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -1997,7 +1997,7 @@ exports[`Drawer render inline-drawer 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -2008,24 +2008,24 @@ exports[`Drawer render inline-drawer 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -2093,7 +2093,7 @@ exports[`Drawer render inline-drawer 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2171,10 +2171,10 @@ exports[`Drawer render inline-drawer 1`] = `
               data-testid="button"
               type="button"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <svg
@@ -2193,8 +2193,8 @@ exports[`Drawer render inline-drawer 1`] = `
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                     />
                   </svg>
-                </div>
-              </div>
+                </span>
+              </span>
             </button>
           </div>
         </div>
@@ -2395,7 +2395,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 .emotion-1 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2450,7 +2450,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -2461,24 +2461,24 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -2546,7 +2546,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2617,10 +2617,10 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
                 tabindex="-1"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
                     <svg
@@ -2639,8 +2639,8 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -2670,7 +2670,7 @@ exports[`Drawer renders default 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2918,7 +2918,7 @@ exports[`Drawer renders default 1`] = `
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2937,7 +2937,7 @@ exports[`Drawer renders default 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -2994,7 +2994,7 @@ exports[`Drawer renders default 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -3005,24 +3005,24 @@ exports[`Drawer renders default 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -3090,7 +3090,7 @@ exports[`Drawer renders default 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3175,10 +3175,10 @@ exports[`Drawer renders default 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -3197,8 +3197,8 @@ exports[`Drawer renders default 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -3228,7 +3228,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: #FFEECF;
+  background-color: #FFEDE1;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3313,7 +3313,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
   max-width: 40%;
   min-width: 200px;
   height: 100%;
-  background-color: #E6FAEB;
+  background-color: #E5F4EA;
   box-shadow: 0px 0px 16px 14px rgba(169,183,172,0.9);
 }
 
@@ -3449,7 +3449,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
   background-color: transparent;
   border-style: none none solid none;
   border-width: 1px;
-  border-color: #EF1703;
+  border-color: #D60000;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -3504,7 +3504,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
   appearance: none;
   border-width: 1px;
   border-style: solid;
-  border-color: #81D2DA;
+  border-color: #97D0D6;
   background-color: transparent;
   border-radius: 50%;
   margin: 0;
@@ -3517,11 +3517,11 @@ exports[`Drawer renders drawer with overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #05717D;
+  fill: #005B65;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #41A0AA;
+  background-color: #289FAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3574,7 +3574,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3650,10 +3650,10 @@ exports[`Drawer renders drawer with overrides 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <svg
@@ -3672,8 +3672,8 @@ exports[`Drawer renders drawer with overrides 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -3703,7 +3703,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3964,7 +3964,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 }
 
 .emotion-3 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -3983,7 +3983,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -4040,7 +4040,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -4051,24 +4051,24 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 }
 
 .emotion-9 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-9:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-9:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-9:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-9:focus-visible:not(:disabled) {
@@ -4136,7 +4136,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4238,10 +4238,10 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
                       <svg
@@ -4260,8 +4260,8 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
               <span
@@ -4298,7 +4298,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4546,7 +4546,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -4565,7 +4565,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -4618,7 +4618,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -4629,24 +4629,24 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -4714,7 +4714,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4794,10 +4794,10 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <svg
@@ -4816,8 +4816,8 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -4847,7 +4847,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5095,7 +5095,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -5146,7 +5146,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -5157,24 +5157,24 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -5242,7 +5242,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5324,10 +5324,10 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
                     <svg
@@ -5346,8 +5346,8 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -5377,7 +5377,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5625,7 +5625,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -5644,7 +5644,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -5701,7 +5701,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -5712,24 +5712,24 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -5797,7 +5797,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5882,10 +5882,10 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -5904,8 +5904,8 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -5935,7 +5935,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -6183,7 +6183,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -6202,7 +6202,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -6259,7 +6259,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -6270,24 +6270,24 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -6355,7 +6355,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6440,10 +6440,10 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -6462,8 +6462,8 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -6493,7 +6493,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -6741,7 +6741,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -6760,7 +6760,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -6817,7 +6817,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -6828,24 +6828,24 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -6913,7 +6913,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6998,10 +6998,10 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -7020,8 +7020,8 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -7051,7 +7051,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -7299,7 +7299,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -7318,7 +7318,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -7375,7 +7375,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -7386,24 +7386,24 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -7471,7 +7471,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7556,10 +7556,10 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
                     <svg
@@ -7578,8 +7578,8 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -7609,7 +7609,7 @@ exports[`Drawer renders without close button 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -7857,7 +7857,7 @@ exports[`Drawer renders without close button 1`] = `
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -7876,7 +7876,7 @@ exports[`Drawer renders without close button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -7977,7 +7977,7 @@ exports[`Drawer renders without header 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8225,7 +8225,7 @@ exports[`Drawer renders without header 1`] = `
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -8280,7 +8280,7 @@ exports[`Drawer renders without header 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -8291,24 +8291,24 @@ exports[`Drawer renders without header 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -8376,7 +8376,7 @@ exports[`Drawer renders without header 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8452,10 +8452,10 @@ exports[`Drawer renders without header 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <svg
@@ -8474,8 +8474,8 @@ exports[`Drawer renders without header 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -8505,7 +8505,7 @@ exports[`Drawer renders without header and close 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -9002,7 +9002,7 @@ exports[`Drawer renders without overlay 1`] = `
 }
 
 .emotion-1 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -9021,7 +9021,7 @@ exports[`Drawer renders without overlay 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -9078,7 +9078,7 @@ exports[`Drawer renders without overlay 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -9089,24 +9089,24 @@ exports[`Drawer renders without overlay 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-7:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -9174,7 +9174,7 @@ exports[`Drawer renders without overlay 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9255,10 +9255,10 @@ exports[`Drawer renders without overlay 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-8"
                 >
-                  <div
+                  <span
                     class="emotion-9"
                   >
                     <svg
@@ -9277,8 +9277,8 @@ exports[`Drawer renders without overlay 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -9314,7 +9314,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -9562,7 +9562,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 }
 
 .emotion-2 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -9613,7 +9613,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -9624,24 +9624,24 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -9709,7 +9709,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9781,10 +9781,10 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-6"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
                     <svg
@@ -9803,8 +9803,8 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -10007,7 +10007,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 .emotion-1 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -10058,7 +10058,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -10069,24 +10069,24 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 .emotion-4 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-4:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-4:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -10154,7 +10154,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -10221,10 +10221,10 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
                 tabindex="-1"
                 type="button"
               >
-                <div
+                <span
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
                     <svg
@@ -10243,8 +10243,8 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                       />
                     </svg>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </button>
             </div>
           </div>

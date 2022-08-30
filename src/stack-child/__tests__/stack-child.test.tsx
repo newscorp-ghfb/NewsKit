@@ -3,7 +3,6 @@ import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Stack} from '../../stack';
 import {Tag} from '../../tag/tag';
 import {StackChild} from '..';
-import {AlignSelfValues} from '../types';
 
 describe('StackChild', () => {
   test(`renders null`, () => {
@@ -56,13 +55,13 @@ describe('StackChild', () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       spaceInline: 'space020',
       children: [
-        <StackChild alignSelf={AlignSelfValues.Stretch}>
+        <StackChild alignSelf="stretch">
           <Tag>child 1</Tag>
         </StackChild>,
-        <StackChild alignSelf={AlignSelfValues.Stretch}>
+        <StackChild alignSelf="stretch">
           <Tag>child 2</Tag>
         </StackChild>,
-        <StackChild alignSelf={AlignSelfValues.Stretch}>
+        <StackChild alignSelf="stretch">
           <Tag>child 3</Tag>
         </StackChild>,
       ],

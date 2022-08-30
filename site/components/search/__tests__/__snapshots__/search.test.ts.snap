@@ -64,7 +64,7 @@ exports[`Search renders correctly 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #577FFB;
+  color: #3358CC;
   margin: 0;
   cursor: pointer;
 }
@@ -75,24 +75,24 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-1:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #C0C7CC;
 }
 
 .emotion-1:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -157,8 +157,8 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-4 {
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
   vertical-align: unset;
   display: inline-block;
 }
@@ -182,8 +182,8 @@ exports[`Search renders correctly 1`] = `
 .emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -211,10 +211,10 @@ exports[`Search renders correctly 1`] = `
       data-testid="search-icon-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-2"
       >
-        <div
+        <span
           class="emotion-3"
         >
           <svg
@@ -228,8 +228,8 @@ exports[`Search renders correctly 1`] = `
               d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </div>
   @media screen {
@@ -290,10 +290,10 @@ exports[`Search renders correctly 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #535353;
+  border-color: #2E3F54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E2E2E;
+  color: #2E3F54;
   margin: 0;
   cursor: pointer;
 }
@@ -304,26 +304,26 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #F4F4F4;
-  border-color: #2E2E2E;
+  background-color: #F0F1F3;
+  border-color: #15263E;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #CCCCCC;
-  border-color: #0A0A0A;
+  background-color: #DEE2E5;
+  border-color: #09111C;
 }
 
 .emotion-1:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #DEE2E5;
+  color: #C0C7CC;
 }
 
 .emotion-1:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -388,7 +388,7 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-4 {
-  fill: #2E2E2E;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -457,9 +457,9 @@ exports[`Search renders correctly 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
   border-radius: 8px;
-  color: #535353;
+  color: #5A6A79;
 }
 
 .emotion-8 svg {
@@ -472,7 +472,7 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
 }
 
 .emotion-9 {
@@ -539,10 +539,10 @@ exports[`Search renders correctly 1`] = `
       data-testid="search-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-2"
       >
-        <div
+        <span
           class="emotion-3"
         >
           <svg
@@ -556,8 +556,8 @@ exports[`Search renders correctly 1`] = `
               d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
             />
           </svg>
-        </div>
-        <div
+        </span>
+        <span
           class="emotion-3"
         >
           <span
@@ -565,18 +565,18 @@ exports[`Search renders correctly 1`] = `
           >
             Search
           </span>
-        </div>
-        <div
+        </span>
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-8"
             data-testid="flag"
           >
-            <div
+            <span
               class="emotion-9"
             >
-              <div
+              <span
                 class="emotion-10"
               >
                 <span
@@ -584,11 +584,11 @@ exports[`Search renders correctly 1`] = `
                 >
                   ⌘K
                 </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
     </button>
   </div>
 </DocumentFragment>
