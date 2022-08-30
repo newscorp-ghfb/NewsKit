@@ -8,6 +8,7 @@ export const MuteButton: React.FC = () => {
   const mask0 = getSSRId();
   const clip0 = getSSRId();
   const filter0 = getSSRId();
+  const paint0 = getSSRId();
 
   return (
     <Svg
@@ -126,7 +127,7 @@ export const MuteButton: React.FC = () => {
           />
         </filter>
         <linearGradient
-          id="paint0_linear_1985_65831"
+          id={paint0}
           x1="445.5"
           y1="338"
           x2="445.5"
