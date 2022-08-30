@@ -69,52 +69,52 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
               description:
                 'Displays time information related to the current track. This can be configured to show both current playback time, and duration',
               component: 'Text Block',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'Seek bar',
               description:
                 'Displays duration and buffering. Indicates audio track duration and buffering, and controls the track position',
               component: 'Slider',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'Skip next button',
               description: 'Skips to the next track',
               component: 'Icon Button',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'Skip previous button',
               description: 'Skips to the previous track',
               component: 'Icon Button',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'Forward button',
               description:
                 'Skips the audio track forward a specified number of seconds',
               component: 'Icon Button',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'Replay button',
               description:
                 'Skips the audio track backwards a specified number of seconds',
               component: 'Icon Button',
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'Volume control',
               description: 'Raises, lowers or mutes audio',
               component: ['Icon Button', 'Slider', 'Popover'],
-              optional: undefined,
+              optional: true,
             },
             {
               name: 'Playback speed control',
               description: 'Changes the speed of the audio track',
               component: ['Icon Button', 'Popover', 'Modal'],
-              optional: undefined,
+              optional: true,
             },
           ],
         },
@@ -1085,7 +1085,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             <InlineMessage
               icon={infoIcon}
               role="region"
-              aria-label="Icon Button"
+              aria-label="Play pause button"
               overrides={{
                 marginBlockStart: 'space070',
               }}
