@@ -4158,6 +4158,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -4165,6 +4166,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-3::before {
@@ -5589,6 +5591,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -5596,6 +5599,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-3::before {
@@ -7027,6 +7031,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -7034,6 +7039,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-1::before {
@@ -8777,6 +8783,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -8784,6 +8791,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-3::before {
@@ -9442,6 +9450,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -9449,6 +9458,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-1::before {
@@ -9766,6 +9776,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -9773,6 +9784,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-1::before {

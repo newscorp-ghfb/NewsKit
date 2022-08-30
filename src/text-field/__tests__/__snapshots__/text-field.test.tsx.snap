@@ -126,6 +126,7 @@ exports[`TextField renders TextField Correctly 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -133,6 +134,7 @@ exports[`TextField renders TextField Correctly 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-1::before {
@@ -312,6 +314,7 @@ Object {
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -319,6 +322,7 @@ Object {
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-4::before {
@@ -585,6 +589,7 @@ Object {
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -592,6 +597,7 @@ Object {
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-4::before {
@@ -861,6 +867,7 @@ exports[`TextField renders TextField with overrides 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -868,6 +875,7 @@ exports[`TextField renders TextField with overrides 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 8px;
+  min-height: 64px;
 }
 
 .emotion-4::before {
@@ -1117,6 +1125,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1124,6 +1133,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-1::before {
@@ -1360,6 +1370,7 @@ exports[`TextField renders disabled text field 1`] = `
   cursor: not-allowed;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1367,6 +1378,7 @@ exports[`TextField renders disabled text field 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-4::before {
@@ -1583,6 +1595,7 @@ exports[`TextField renders large TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1590,6 +1603,7 @@ exports[`TextField renders large TextField 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 64px;
 }
 
 .emotion-1::before {
@@ -1719,6 +1733,7 @@ exports[`TextField renders medium TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1726,6 +1741,7 @@ exports[`TextField renders medium TextField 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-1::before {
@@ -1855,6 +1871,7 @@ exports[`TextField renders small TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1862,6 +1879,7 @@ exports[`TextField renders small TextField 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 8px;
+  min-height: 32px;
 }
 
 .emotion-1::before {
@@ -2036,6 +2054,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2043,6 +2062,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-4::before {
@@ -2303,6 +2323,7 @@ exports[`TextField should render custom placeholder 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2310,6 +2331,7 @@ exports[`TextField should render custom placeholder 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  min-height: 48px;
 }
 
 .emotion-4::before {
