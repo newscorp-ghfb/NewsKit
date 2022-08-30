@@ -1361,8 +1361,13 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             },
             {
               name: 'layout',
-              type: `'collapsed' | 'vertical' | 'horizontal' | 'horizontal-expanded'`,
-              default: `'horizontal-expanded'`,
+              type: [
+                'collapsed',
+                'vertical',
+                'horizontal',
+                'horizontal-expanded',
+              ],
+              default: 'horizontal-expanded',
               description: 'Set the layout option of the volume control.',
             },
           ],
