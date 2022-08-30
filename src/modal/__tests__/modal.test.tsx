@@ -172,7 +172,9 @@ describe('Modal focus management', () => {
 
   test('focus on first interactive element', async () => {
     const {findByTestId, getByTestId} = renderWithThemeInBody(ModalPage);
-    getByTestId('toggle').click();
+    const toggleButton = getByTestId('toggle');
+    toggleButton.focus();
+    fireEvent.click(toggleButton);
 
     await waitFor(async () => {
       const element = await findByTestId('interactive-element');
@@ -192,7 +194,9 @@ describe('Modal focus management', () => {
         </button>
       ),
     });
-    getByTestId('toggle').click();
+    const toggleButton = getByTestId('toggle');
+    toggleButton.focus();
+    fireEvent.click(toggleButton);
 
     await waitFor(async () => {
       const element = await findByTestId('another-interactive-element');

@@ -1,15 +1,5 @@
 import React from 'react';
-import {
-  Stack,
-  Block,
-  Divider,
-  StackChild,
-  AlignSelfValues,
-  Flow,
-  Hidden,
-  Cell,
-  Grid,
-} from 'newskit';
+import {Stack, Block, Divider, StackChild, Hidden, Cell, Grid} from 'newskit';
 import {MetaProps} from './types';
 import {GitHubButton} from './github-button';
 import {FigmaButton} from './figma-button';
@@ -26,10 +16,10 @@ export const Meta = ({
   <>
     <Block spaceStack={{xs: 'space080', md: 'space050'}}>
       <Hidden xs sm>
-        <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
-          <Stack flow={Flow.HorizontalTop}>
+        <Stack flow="horizontal-center" stackDistribution="space-between">
+          <Stack flow="horizontal-top">
             <Status status={status} />
-            <StackChild alignSelf={AlignSelfValues.Stretch}>
+            <StackChild alignSelf="stretch">
               <Block
                 spaceInline={{
                   md: 'space060',
@@ -48,7 +38,7 @@ export const Meta = ({
             />
           </Stack>
           <Stack flow="horizontal-center" spaceInline="space040">
-            <StackChild alignSelf={AlignSelfValues.Stretch}>
+            <StackChild alignSelf="stretch">
               <GitHubButton href={codeUrl} />
             </StackChild>
             <FigmaButton href={figmaUrl} />
@@ -59,17 +49,17 @@ export const Meta = ({
       </Hidden>
 
       <Hidden md lg xl>
-        <Stack flow={Flow.VerticalLeft} spaceInline="space050">
-          <StackChild alignSelf={AlignSelfValues.Stretch}>
+        <Stack flow="vertical-left" spaceInline="space050">
+          <StackChild alignSelf="stretch">
             <Cell xs={6}>
               <Status status={status} />
             </Cell>
             <Cell xs={6}>
-              <Stack flow={Flow.HorizontalTop}>
+              <Stack flow="horizontal-top">
                 <Divider vertical />
                 <Block spaceInline="space060" />
                 <Stack
-                  flow={Flow.VerticalLeft}
+                  flow="vertical-left"
                   spaceInline="space020"
                   stackDistribution="space-evenly"
                 />
@@ -80,7 +70,7 @@ export const Meta = ({
               </Stack>
             </Cell>
           </StackChild>
-          <StackChild alignSelf={AlignSelfValues.Stretch}>
+          <StackChild alignSelf="stretch">
             <Grid xsMargin="space000">
               <Cell xs={12}>
                 <Divider />

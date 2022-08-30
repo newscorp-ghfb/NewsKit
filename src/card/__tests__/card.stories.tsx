@@ -6,9 +6,9 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {Grid, Cell, Visible} from '../../grid';
-import {Stack, Flow} from '../../stack';
-import {Tag, TagSize} from '../../tag';
-import {Flag} from '../../flag';
+import {Stack} from '../../stack';
+import {Tag} from '../../tag';
+import {Flag, FlagSize} from '../../flag';
 import {Headline} from '../../headline';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
@@ -161,8 +161,8 @@ const VideoElement = ({width = 'auto', height = 'auto'}) => (
   />
 );
 
-const cardTags = (size: TagSize) => ({cardSize}: {cardSize: string}) => () => (
-  <Stack flow={Flow.HorizontalCenter} spaceInline={cardActions}>
+const cardTags = (size: FlagSize) => ({cardSize}: {cardSize: string}) => () => (
+  <Stack flow="horizontal-center" spaceInline={cardActions}>
     <Tag
       size={size}
       href="/"
@@ -186,9 +186,9 @@ const cardTags = (size: TagSize) => ({cardSize}: {cardSize: string}) => () => (
   </Stack>
 );
 
-const cardSmallTags = cardTags(TagSize.Small)({cardSize: 'Small'});
-const cardMediumTags = cardTags(TagSize.Small)({cardSize: 'Medium'});
-const cardLargeTags = cardTags(TagSize.Medium)({cardSize: 'Large'});
+const cardSmallTags = cardTags('small')({cardSize: 'Small'});
+const cardMediumTags = cardTags('small')({cardSize: 'Medium'});
+const cardLargeTags = cardTags('medium')({cardSize: 'Large'});
 
 const cardBodyBase = ({inset}: {inset: boolean}) => ({
   cardSize,

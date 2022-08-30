@@ -8,17 +8,11 @@ import {EventData} from '../instrumentation';
 import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
-export type TextFieldSizeType = TextFieldSize | 'small' | 'medium' | 'large';
-
-export enum TextFieldSize {
-  Small = 'small',
-  Medium = 'medium',
-  Large = 'large',
-}
+export type TextFieldSize = 'small' | 'medium' | 'large';
 
 export interface FormInputTextFieldProps
   extends Omit<CommonInputProps, 'size'> {
-  size?: TextFieldSizeType; // remove this override when https://nidigitalsolutions.jira.com/browse/PPDSC-1872 is implemented
+  size?: TextFieldSize; // remove this override when https://nidigitalsolutions.jira.com/browse/PPDSC-1872 is implemented
   overrides?: EnhancerOverrides & {
     stylePreset?: MQ<string>;
     /**

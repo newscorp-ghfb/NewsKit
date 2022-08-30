@@ -7,9 +7,7 @@ import {
 import {IconFilledError, IconOutlinedArrowForwardIos} from '../../icons';
 import {
   createTheme,
-  Flow,
   Stack,
-  StackDistribution,
   TextBlock,
   ThemeProvider,
   withDefaultProps,
@@ -43,7 +41,7 @@ const myCustomTheme = createTheme({
 });
 
 const arrowIcon = (
-  <Stack stackDistribution={StackDistribution.End} flow={Flow.HorizontalCenter}>
+  <Stack stackDistribution="flex-end" flow="horizontal-center">
     <IconOutlinedArrowForwardIos
       overrides={{
         size: 'iconSize010',
@@ -392,10 +390,7 @@ export const StoryStructuredListWithOverrides = () => (
             </BodyTextBlock>
           </StructuredListCell>
           <StructuredListCell>
-            <Stack
-              stackDistribution={StackDistribution.End}
-              flow={Flow.HorizontalCenter}
-            >
+            <Stack stackDistribution="flex-end" flow="horizontal-center">
               <IconFilledError
                 overrides={{
                   size: 'iconSize020',

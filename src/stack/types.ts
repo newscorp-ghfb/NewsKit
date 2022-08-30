@@ -1,8 +1,24 @@
 import {MQ} from '../utils/style/types';
-import {AlignSelfValues} from '../stack-child';
 import {LogicalProps} from '../utils/logical-properties';
 
 export type FlexWrap = boolean | 'wrap' | 'nowrap' | 'wrap-reverse';
+
+export type Flow =
+  | 'vertical-left'
+  | 'vertical-center'
+  | 'vertical-right'
+  | 'vertical-stretch'
+  | 'horizontal-top'
+  | 'horizontal-center'
+  | 'horizontal-bottom'
+  | 'horizontal-stretch';
+export type StackDistribution =
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'space-around'
+  | 'space-between'
+  | 'space-evenly';
 
 export interface CommonStackPropsWithoutMQ {
   spaceStack: string; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
@@ -10,26 +26,8 @@ export interface CommonStackPropsWithoutMQ {
   flexGrow: boolean | number;
   flexShrink: boolean | number;
   flowReverse: boolean;
-  flow:
-    | Flow
-    | 'vertical-left'
-    | 'vertical-center'
-    | 'vertical-right'
-    | 'vertical-stretch'
-    | 'horizontal-top'
-    | 'horizontal-center'
-    | 'horizontal-bottom'
-    | 'horizontal-stretch';
-
-  stackDistribution:
-    | StackDistribution
-    | 'flex-start'
-    | 'center'
-    | 'flex-end'
-    | 'space-around'
-    | 'space-between'
-    | 'space-evenly';
-
+  flow: Flow;
+  stackDistribution: StackDistribution;
   inline: boolean;
   height?: string;
 }
@@ -71,26 +69,6 @@ export interface StyledChildProps
     'spaceInline' | 'spaceStack' | 'flow' | '$wrap' | 'as'
   > {
   $order?: MQ<number>;
-  $alignSelf?: AlignSelfValues;
+  $alignSelf?: MQ<string>;
   flexGrow?: boolean | number;
-}
-
-export enum Flow {
-  VerticalLeft = 'vertical-left',
-  VerticalCenter = 'vertical-center',
-  VerticalRight = 'vertical-right',
-  VerticalStretch = 'vertical-stretch',
-  HorizontalTop = 'horizontal-top',
-  HorizontalCenter = 'horizontal-center',
-  HorizontalBottom = 'horizontal-bottom',
-  HorizontalStretch = 'horizontal-stretch',
-}
-
-export enum StackDistribution {
-  Start = 'flex-start',
-  End = 'flex-end',
-  Center = 'center',
-  SpaceAround = 'space-around',
-  SpaceBetween = 'space-between',
-  SpaceEvenly = 'space-evenly',
 }

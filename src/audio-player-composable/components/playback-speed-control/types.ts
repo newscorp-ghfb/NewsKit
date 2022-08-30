@@ -5,8 +5,8 @@ import {
   SelectionListProps,
 } from '../../../selection-list';
 import {MQ} from '../../../utils';
-import {ButtonSize} from '../../../button';
 import {IconButtonProps} from '../../../icon-button/types';
+import {ButtonSize} from '../../../button/types';
 
 export interface AudioPlayerPlaybackSpeedControlOverridesProps {
   popover?: PopoverProps['overrides'];

@@ -1,6 +1,6 @@
 import React from 'react';
 import CodeSandboxer from 'react-codesandboxer';
-import {Button, ButtonSize} from 'newskit';
+import {Button} from 'newskit';
 import {Code} from '../code';
 import {LegacyBlock} from '../legacy-block';
 import {ErrorMessageContainer} from './error-boundary';
@@ -78,7 +78,7 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
         <LegacyBlock alignSelf="flex-end" padding="sizing060">
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a>
-            <Button size={ButtonSize.Medium} data-testid="code-sandbox">
+            <Button size="medium" data-testid="code-sandbox">
               Edit on CodeSandbox
             </Button>
           </a>

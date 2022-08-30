@@ -488,7 +488,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;

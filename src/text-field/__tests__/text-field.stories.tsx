@@ -535,21 +535,18 @@ export const TextFieldOutlineOverrideExamples = () => (
             <Grid>
               <Cell xs={12}>
                 <StorybookSubHeading>Custom Color</StorybookSubHeading>
-                <Label htmlFor="id-outline-1" size={'small' as TextFieldSize}>
+                <Label htmlFor="id-outline-1" size="small">
                   A Label
                 </Label>
                 <TextField
                   aria-describedby="id-outline-1-at"
                   id="id-outline-1"
-                  size={'small' as TextFieldSize}
+                  size="small"
                   overrides={{
                     stylePreset: 'customOutlineColor',
                   }}
                 />
-                <AssistiveText
-                  id="id-outline-1-at"
-                  size={'small' as TextFieldSize}
-                >
+                <AssistiveText id="id-outline-1-at" size="small">
                   Assistive Text Goes Here
                 </AssistiveText>
               </Cell>
@@ -559,21 +556,18 @@ export const TextFieldOutlineOverrideExamples = () => (
             <Grid>
               <Cell xs={12}>
                 <StorybookSubHeading>Custom Style</StorybookSubHeading>
-                <Label htmlFor="id-outline-2" size={'small' as TextFieldSize}>
+                <Label htmlFor="id-outline-2" size="small">
                   A Label
                 </Label>
                 <TextField
                   aria-describedby="id-2-at"
                   id="id-outline-2"
-                  size={'small' as TextFieldSize}
+                  size="small"
                   overrides={{
                     stylePreset: 'customOutlineStyle',
                   }}
                 />
-                <AssistiveText
-                  id="id-outline-2-at"
-                  size={'small' as TextFieldSize}
-                >
+                <AssistiveText id="id-outline-2-at" size="small">
                   Assistive Text Goes Here
                 </AssistiveText>
               </Cell>
@@ -583,21 +577,18 @@ export const TextFieldOutlineOverrideExamples = () => (
             <Grid>
               <Cell xs={12}>
                 <StorybookSubHeading>Custom Width</StorybookSubHeading>
-                <Label htmlFor="id-outline-3" size={'small' as TextFieldSize}>
+                <Label htmlFor="id-outline-3" size="small">
                   A Label
                 </Label>
                 <TextField
                   aria-describedby="id-outline-3-at"
                   id="id-outline-3"
-                  size={'small' as TextFieldSize}
+                  size="small"
                   overrides={{
                     stylePreset: 'customOutlineWidth',
                   }}
                 />
-                <AssistiveText
-                  id="id-outline-3-at"
-                  size={'small' as TextFieldSize}
-                >
+                <AssistiveText id="id-outline-3-at" size="small">
                   Assistive Text Goes Here
                 </AssistiveText>
               </Cell>
@@ -607,21 +598,18 @@ export const TextFieldOutlineOverrideExamples = () => (
             <Grid>
               <Cell xs={12}>
                 <StorybookSubHeading>Custom Offset</StorybookSubHeading>
-                <Label htmlFor="id-outline-4" size={'small' as TextFieldSize}>
+                <Label htmlFor="id-outline-4" size="small">
                   A Label
                 </Label>
                 <TextField
                   aria-describedby="id-outline-4-at"
                   id="id-outline-4"
-                  size={'small' as TextFieldSize}
+                  size="small"
                   overrides={{
                     stylePreset: 'customOutlineOffset',
                   }}
                 />
-                <AssistiveText
-                  id="id-outline-4-at"
-                  size={'small' as TextFieldSize}
-                >
+                <AssistiveText id="id-outline-4-at" size="small">
                   Assistive Text Goes Here
                 </AssistiveText>
               </Cell>

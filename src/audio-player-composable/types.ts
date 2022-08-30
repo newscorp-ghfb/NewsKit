@@ -9,12 +9,12 @@ import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
 import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
 import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
 import {AudioPlayerTimeFormatFn} from './components/time-display/types';
-import {ButtonSize} from '../button';
 import {
   AudioPlayerPlaybackSpeedControlOverridesProps,
   AudioPlayerPlaybackSpeedControlProps,
 } from './components/playback-speed-control/types';
 import {MQ} from '../utils';
+import {ButtonSize} from '../button/types';
 
 export interface AudioFunctionDependencies {
   autoPlay: boolean;
@@ -75,7 +75,7 @@ export interface AudioPlayerProviderContext {
     onChange: (value: number) => void;
     volume: number;
     initialVolume: 0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1;
-    muteButtonSize?: 'small' | 'medium' | 'large';
+    muteButtonSize?: ButtonSize;
   };
   getPlaybackSpeedControlProps: (
     props: AudioPlayerPlaybackSpeedControlProps,

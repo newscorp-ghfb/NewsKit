@@ -7,12 +7,12 @@ import {
   getMinWidth,
 } from '../utils/style';
 import {isValidNode} from '../utils/component';
-import {OrderedListProps} from './types';
+import {OrderedListItemProps, OrderedListProps} from './types';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {logicalProps} from '../utils/logical-properties';
 
-const ListItem = styled.li<OrderedListProps>`
+const ListItem = styled.li<OrderedListItemProps>`
   ${getSpacingInlineVertical('orderedList', '')}
   counter-increment: item-counter;
   ${getStylePreset('orderedList.content', 'content')}

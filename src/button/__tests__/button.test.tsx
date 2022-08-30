@@ -8,7 +8,6 @@ import {
   Button,
   ButtonProps,
   ButtonLinkProps,
-  ButtonSize,
   ButtonOrButtonLinkProps,
 } from '..';
 import {IconFilledEmail} from '../../icons';
@@ -38,7 +37,7 @@ describe('Button', () => {
 
   test('renders Small Button', () => {
     const props: ButtonProps = {
-      size: ButtonSize.Small,
+      size: 'small',
     };
     const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
     expect(fragment).toMatchSnapshot();
@@ -46,7 +45,7 @@ describe('Button', () => {
 
   test('renders Large Button', () => {
     const props: ButtonProps = {
-      size: ButtonSize.Large,
+      size: 'large',
     };
     const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
     expect(fragment).toMatchSnapshot();
@@ -54,7 +53,7 @@ describe('Button', () => {
 
   test('renders full-width Button', () => {
     const props: ButtonProps = {
-      size: ButtonSize.Large,
+      size: 'large',
       overrides: {
         width: '100%',
       },
@@ -65,7 +64,7 @@ describe('Button', () => {
 
   test('renders fixed-width Button', () => {
     const props: ButtonProps = {
-      size: ButtonSize.Large,
+      size: 'large',
       overrides: {
         width: 'sizing120',
       },
@@ -193,7 +192,7 @@ describe('Button', () => {
   describe('Loading Button', () => {
     test('renders Small Button', () => {
       const props: ButtonProps = {
-        size: ButtonSize.Small,
+        size: 'small',
         loading: true,
       };
       const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
@@ -202,7 +201,7 @@ describe('Button', () => {
 
     test('renders Large Button', () => {
       const props: ButtonProps = {
-        size: ButtonSize.Large,
+        size: 'large',
         loading: true,
       };
       const fragment = renderToFragmentWithTheme(renderButtonWithText, props);

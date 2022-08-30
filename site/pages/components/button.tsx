@@ -80,7 +80,7 @@ const commonPropsRows = (type?: string) => [
 const commonOverridesRows = [
   {
     attribute: 'button.size',
-    type: 'buttonSize',
+    type: 'small | medium | large',
     default: 'medium',
     description: `If provided, this overrides the size of the Button.`,
   },

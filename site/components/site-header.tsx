@@ -7,7 +7,6 @@ import {
   getColorCssFromTheme,
   getSpacingCssFromTheme,
   getSizingCssFromTheme,
-  ButtonSize,
   getBorderCssFromTheme,
   MenuItem,
   Menu,
@@ -32,7 +31,7 @@ const IconFilledClose = toNewsKitIcon(FilledClose);
 
 export const GitHubButton = () => (
   <Button
-    size={ButtonSize.Small}
+    size="small"
     overrides={{
       typographyPreset: 'utilityButton010',
       stylePreset: 'buttonOutlinedSecondary',
@@ -130,7 +129,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           overrides={{
             stylePreset: 'linkTopNavigation',
             minHeight: '80px',
-            marginInline: '10px',
+            marginInline: {lg: '0', xl: '10px'},
             paddingInline: {lg: '3px', xl: '16px'},
           }}
         >
@@ -161,7 +160,10 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
         </Visible>
         <Visible lg xl>
           <GridLayout
-            columns={{lg: '276px 1fr auto auto 80px'}}
+            columns={{
+              lg: 'auto 1fr auto auto 80px',
+              xl: '276px 1fr auto auto 80px',
+            }}
             columnGap="20px"
             alignItems="center"
             areas={{
@@ -189,7 +191,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                 </Areas.Github>
                 <Areas.Theme>
                   <ThemeSwitch
-                    size={ButtonSize.Medium}
+                    size="medium"
                     toggle={toggleTheme}
                     themeMode={themeMode}
                   />

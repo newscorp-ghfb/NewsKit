@@ -2,15 +2,7 @@ import * as React from 'react';
 import {IconButton} from '..';
 import {styled, getColorCssFromTheme} from '../../utils/style';
 import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
-import {
-  Block,
-  Cell,
-  Grid,
-  Stack,
-  StackDistribution,
-  ButtonOverrides,
-  ButtonSize,
-} from '../..';
+import {Block, Cell, Grid, Stack, ButtonOverrides} from '../..';
 import {IconFilledEmail, IconFilledLink, IconFilledPause} from '../../icons';
 import {ThemeProvider, createTheme} from '../../theme';
 
@@ -131,10 +123,7 @@ const IconButtonIntentKindsScenario: React.FC<{
         const kindOverrides = {...overrides, stylePreset};
         return (
           <Cell xs={4} sm={3}>
-            <Stack
-              spaceInline="space020"
-              stackDistribution={StackDistribution.SpaceEvenly}
-            >
+            <Stack spaceInline="space020" stackDistribution="space-evenly">
               <StorybookH3
                 stylePreset={hasBackground ? 'inkInverse' : undefined}
               >
@@ -144,7 +133,7 @@ const IconButtonIntentKindsScenario: React.FC<{
                 <IconButton
                   aria-label="Pause icon"
                   overrides={kindOverrides}
-                  size={ButtonSize.Medium}
+                  size="medium"
                 >
                   <IconFilledPause />
                 </IconButton>
@@ -155,7 +144,7 @@ const IconButtonIntentKindsScenario: React.FC<{
                   aria-label="Link icon"
                   autoFocus
                   overrides={kindOverrides}
-                  size={ButtonSize.Medium}
+                  size="medium"
                 >
                   <IconFilledLink />
                 </IconButton>
@@ -166,7 +155,7 @@ const IconButtonIntentKindsScenario: React.FC<{
                   aria-label="Email icon"
                   disabled
                   overrides={kindOverrides}
-                  size={ButtonSize.Medium}
+                  size="medium"
                 >
                   <IconFilledEmail />
                 </IconButton>
@@ -176,7 +165,7 @@ const IconButtonIntentKindsScenario: React.FC<{
                 <IconButton
                   aria-label="Loading indicator"
                   overrides={kindOverrides}
-                  size={ButtonSize.Medium}
+                  size="medium"
                   loading
                 />
               </Block>
@@ -203,13 +192,13 @@ export const StoryIconButtonSizes = () => (
         spaceInline="space070"
         wrap="wrap"
       >
-        <IconButton aria-label="Email icon" size={ButtonSize.Small}>
+        <IconButton aria-label="Email icon" size="small">
           <IconFilledEmail />
         </IconButton>
-        <IconButton aria-label="Email icon" size={ButtonSize.Medium}>
+        <IconButton aria-label="Email icon" size="medium">
           <IconFilledEmail />
         </IconButton>
-        <IconButton aria-label="Email icon" size={ButtonSize.Large}>
+        <IconButton aria-label="Email icon" size="large">
           <IconFilledEmail />
         </IconButton>
       </Stack>

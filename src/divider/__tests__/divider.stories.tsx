@@ -8,7 +8,7 @@ import {
 } from '../../test/storybook-comps';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
-import {StackChild, AlignSelfValues} from '../../stack-child';
+import {StackChild} from '../../stack-child';
 import {IconFilledFacebook, IconFilledWhatsApp} from '../../icons';
 import {getSizingCssFromTheme} from '../../utils/style';
 import {compileTheme, createTheme} from '../../theme';
@@ -117,7 +117,7 @@ export const StoryHorizontal = () => (
         flow="vertical-center"
       >
         <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-        <StackChild alignSelf={AlignSelfValues.Stretch}>
+        <StackChild alignSelf="stretch">
           <Divider />
         </StackChild>
         <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
@@ -154,7 +154,7 @@ export const StoryVertical = () => (
     <BlockWithBorder>
       <Stack flow="horizontal-center" stackDistribution="center">
         <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-        <StackChild alignSelf={AlignSelfValues.Stretch}>
+        <StackChild alignSelf="stretch">
           <Divider vertical />
         </StackChild>
         <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
@@ -169,7 +169,7 @@ export const StoryVertical = () => (
         spaceInline="space030"
       >
         <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-        <StackChild alignSelf={AlignSelfValues.Stretch}>
+        <StackChild alignSelf="stretch">
           <Divider vertical />
         </StackChild>
         <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
