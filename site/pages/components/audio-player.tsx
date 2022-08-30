@@ -1573,6 +1573,169 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             </InlineMessage>
           ),
         },
+        {
+          title: 'Playback Speed Control',
+          summary:
+            'The playback speed control has the following overrides that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'useModal',
+              type: 'MQ<boolean>',
+              default: 'false',
+              description: (
+                <>
+                  Select options appear in a{' '}
+                  <Link href="/components/modal/">Modal</Link> (with overlay).
+                </>
+              ),
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'audioPlayerPlaybackSpeedControl.iconButton.size',
+              type: 'MQ<string>',
+              default: 'small',
+              description:
+                'If provided, this overrides the size of the PlaybackSpeedControl icon button.',
+            },
+            {
+              attribute:
+                'audioPlayerPlaybackSpeedControl.iconButton.stylePreset',
+              type: 'MQ<string>',
+              default: 'iconButtonMinimalPrimary',
+              description:
+                'If provided, this overrides the stylePreset of the PlaybackSpeedControl icon button.',
+            },
+            {
+              attribute: 'audioPlayerPlaybackSpeedControl.iconButton.icon',
+              type: 'MQ<string>',
+              default: 'iconFilledSlowMotionVideo',
+              description:
+                'If provided, this overrides the icon in the PlaybackSpeedControl icon button.',
+            },
+            {
+              attribute: 'audioPlayerPlaybackSpeedControl.iconButton.iconSize',
+              type: 'MQ<string>',
+              default: 'iconSize020',
+              description:
+                'If provided, this overrides the iconSize in the PlaybackSpeedControl icon button.',
+            },
+          ],
+          overridesFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="Playback Speed Control"
+              overrides={{
+                marginBlockStart: 'space070',
+              }}
+            >
+              This component should extend the overrides of the{' '}
+              <Link href="/components/popover/">Popover</Link>,{' '}
+              <Link href="/components/modal/">Modal</Link>, and Selection List
+              components.
+            </InlineMessage>
+          ),
+        },
+        {
+          title: 'SelectionList',
+          summary:
+            'The SelectionList has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactElement<SelectionListOptionProps>[]',
+              default: '',
+              description: 'An array of SelectionListOptions components.',
+              required: true,
+            },
+          ],
+        },
+        {
+          title: 'SelectionListOption',
+          summary:
+            'The SelectionListOption has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactNode',
+              default: '',
+              description: 'Contents of the SelectionListOption',
+              required: true,
+            },
+            {
+              name: 'selected',
+              type: 'boolean',
+              default: 'false',
+              description: 'The selected state of the SelectionListOption',
+            },
+            {
+              name: 'selectedIcon',
+              type: 'React.ReactNode',
+              default: 'IconFilledCheck',
+              description: 'Icon(s) of the SelectionListOption',
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'SelectionListOption.minHeight',
+              type: 'MQ<string>',
+              default: 'sizing080',
+              description:
+                'If provided, this overrides the minHeight of the SelectionListOption.',
+            },
+            {
+              attribute: 'SelectionListOption.typographyPreset',
+              type: 'MQ<string>',
+              default: 'utilityBody020',
+              description:
+                'If provided, this overrides the typographyPreset of the SelectionListOption.',
+            },
+            {
+              attribute: 'SelectionListOption.stylePreset',
+              type: 'MQ<string>',
+              default: 'selectOptionItem',
+              description:
+                'If provided, this overrides the stylePreset of the SelectionListOption.',
+            },
+            {
+              attribute: 'SelectionListOption.spaceInline',
+              type: 'MQ<string>',
+              default: 'space020',
+              description:
+                'If provided, this overrides the space between the icon and text in the SelectionListOption.',
+            },
+            {
+              attribute: 'SelectionListOption.paddingBlock',
+              type: 'MQ<string>',
+              default: 'space020',
+              description:
+                'If provided, this overrides the paddingBlock of the SelectionListOption.',
+            },
+
+            {
+              attribute: 'SelectionListOption.paddingInline',
+              type: 'MQ<string>',
+              default: 'space020',
+              description:
+                'If provided, this overrides the paddingInline of the SelectionListOption.',
+            },
+            {
+              attribute: 'SelectionListOption.icon.stylePreset',
+              type: 'MQ<string>',
+              default: 'selectOptionItemIcon',
+              description:
+                'If provided, this overrides the icon stylePreset in the SelectionListOption.',
+            },
+            {
+              attribute: 'SelectionListOption.icon.iconSize',
+              type: 'MQ<string>',
+              default: 'iconSize020',
+              description:
+                'If provided, this overrides the iconSize in the SelectionListOption.',
+            },
+          ],
+        },
       ],
     }}
   />
