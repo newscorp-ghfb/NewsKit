@@ -2,10 +2,10 @@ import React from 'react';
 import {Block, Image, ImageProps, InlineMessage, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {renderIfReactComponent} from 'newskit/utils/component';
-import {ComponentPageCell} from '../../components/layout-cells';
 import {ContentText} from '../../components/text-section/content-text';
-import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
+import {IntroductionText} from './types';
+import {ComponentPageCell} from '../../components/layout-cells';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -17,7 +17,7 @@ const infoIcon = (
   />
 );
 
-export interface LayoutProps {
+export interface LayoutExamplesProps {
   components: {
     title: string;
     summary: string | JSX.Element;
@@ -26,9 +26,9 @@ export interface LayoutProps {
   notice?: string | React.ReactNode;
 }
 
-export type LayoutExamplesProps = LayoutProps & IntroductionText;
+export type LayoutExamplesSectionProps = LayoutExamplesProps & IntroductionText;
 
-export const LayoutExamplesSection: React.FC<LayoutExamplesProps> = ({
+export const LayoutExamplesSection: React.FC<LayoutExamplesSectionProps> = ({
   introduction,
   components,
   notice,

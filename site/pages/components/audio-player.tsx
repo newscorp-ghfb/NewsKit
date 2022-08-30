@@ -1738,6 +1738,9 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    related={{
+      related: ['Button', 'Slider', 'Modal', 'Popover'],
+    }}
   />
 );
 

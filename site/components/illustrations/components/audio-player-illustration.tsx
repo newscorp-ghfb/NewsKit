@@ -5,7 +5,7 @@ import {Path} from '../path';
 import {Rect} from '../rect';
 import {Circle} from '../circle';
 
-export const Hero: React.FC = () => {
+export const AudioPlayerIllustration: React.FC = () => {
   const mask0 = getSSRId();
   const mask1 = getSSRId();
   const mask2 = getSSRId();
@@ -135,4 +135,4 @@ export const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default AudioPlayerIllustration;

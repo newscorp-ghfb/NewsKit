@@ -1,6 +1,6 @@
 export * from './accessibility-section';
 export * from './anatomy-section';
-export * from './layout-examples';
+export * from './layout-examples-section';
 export * from './behaviors-section';
 export * from './compliance-section';
 export * from './component-api-section';
