@@ -1,9 +1,4 @@
-import {
-  getTypographyPreset,
-  styled,
-  getResponsiveSize,
-  getResponsiveSpace,
-} from '../utils/style';
+import {getTypographyPreset, styled, getResponsiveSpace} from '../utils/style';
 import {FormInputTextFieldProps, TextFieldSize} from './types';
 
 interface StyledTextFieldProps extends FormInputTextFieldProps {
@@ -21,6 +16,8 @@ export const StyledInput = styled.input<
   border: none;
   background: none;
   box-sizing: border-box;
+  align-self: stretch;
+  // border: 1px solid red;
 
   ${({$size}) =>
     getTypographyPreset(`textField.${$size}`, '', {
@@ -33,6 +30,5 @@ export const StyledInput = styled.input<
   ${({$size}) =>
     getResponsiveSpace('padding', `textField.${$size}`, '', 'spaceInset')}
 
-  ${({$size}) =>
-    getResponsiveSize('minHeight', `textField.${$size}`, '', 'minHeight')}
+  resize: none;
 `;

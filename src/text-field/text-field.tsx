@@ -22,6 +22,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       onChange,
       eventContext,
       eventOriginator = 'text field',
+      resize,
       ...restProps
     },
     inputRef,
@@ -91,6 +92,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
           state={state}
           startEnhancer={startEnhancer}
           endEnhancer={endEnhancer}
+          resize={resize}
         >
           <StyledInput
             ref={inputRef}

@@ -30,4 +30,5 @@ export interface WithEnhancersProps {
   state?: FormInputState;
   startEnhancer?: React.ReactNode;
   endEnhancer?: React.ReactNode;
+  resize?: string;
 }

@@ -6,9 +6,9 @@ import {
   getStylePreset,
   getResponsiveSpacingStackHorizontal,
   styled,
+  css,
 } from '../utils/style';
 import {TextFieldSize} from '../text-field/types';
-import {logicalProps} from '../utils/logical-properties';
 
 const getMarginDirection = ({
   marginPosition,
@@ -43,12 +43,36 @@ export const StyledInputContainer = styled.div<
     componentDefaultsPath: string;
     focused?: boolean;
     overrides?: EnhancerOverrides;
+    resize?: string;
   }
 >`
   display: flex;
   justify-content: center;
   box-sizing: border-box;
   align-items: center;
+
+  ${({resize}) =>
+    resize &&
+    css`
+      resize: ${resize};
+      position: relative;
+      overflow: hidden;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 16px;
+        height: 16px;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 0, 0, 0) 0,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0.1) 50%
+        );
+      }
+    `}
 
   ${({componentDefaultsPath}) =>
     getResponsiveSize('width', componentDefaultsPath, '', 'width')}
@@ -71,5 +95,12 @@ export const StyledInputContainer = styled.div<
       isValid: state === 'valid',
     })}
 
-  ${({componentDefaultsPath}) => logicalProps(componentDefaultsPath)};
+   
+  
+  
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  ${() =>
+    // TODO: I don't think we need it here, the padding always applied to the children
+    // logicalProps(componentDefaultsPath);
+    null};
 `;
