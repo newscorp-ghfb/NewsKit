@@ -1060,9 +1060,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -1835,7 +1837,7 @@ Object {
     },
     "whatsNewHomeFlag": Object {
       "base": Object {
-        "backgroundColor": "{{colors.teal060}}",
+        "backgroundColor": "{{colors.inkInformative}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
         "color": "{{colors.inkInverse}}",
       },
@@ -3614,9 +3616,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -4389,7 +4393,7 @@ Object {
     },
     "whatsNewHomeFlag": Object {
       "base": Object {
-        "backgroundColor": "{{colors.teal060}}",
+        "backgroundColor": "{{colors.inkInformative}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
         "color": "{{colors.inkInverse}}",
       },
@@ -6171,9 +6175,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -6946,7 +6952,7 @@ Object {
     },
     "whatsNewHomeFlag": Object {
       "base": Object {
-        "backgroundColor": "{{colors.teal060}}",
+        "backgroundColor": "{{colors.inkInformative}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
         "color": "{{colors.inkInverse}}",
       },
@@ -8725,9 +8731,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -9500,7 +9508,7 @@ Object {
     },
     "whatsNewHomeFlag": Object {
       "base": Object {
-        "backgroundColor": "{{colors.teal060}}",
+        "backgroundColor": "{{colors.inkInformative}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
         "color": "{{colors.inkInverse}}",
       },
@@ -11282,9 +11290,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -12057,7 +12067,7 @@ Object {
     },
     "whatsNewHomeFlag": Object {
       "base": Object {
-        "backgroundColor": "{{colors.teal060}}",
+        "backgroundColor": "{{colors.inkInformative}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
         "color": "{{colors.inkInverse}}",
       },
@@ -13836,9 +13846,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -14611,7 +14623,7 @@ Object {
     },
     "whatsNewHomeFlag": Object {
       "base": Object {
-        "backgroundColor": "{{colors.teal060}}",
+        "backgroundColor": "{{colors.inkInformative}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
         "color": "{{colors.inkInverse}}",
       },
@@ -16393,9 +16405,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -17168,7 +17182,7 @@ Object {
     },
     "whatsNewHomeFlag": Object {
       "base": Object {
-        "backgroundColor": "{{colors.teal060}}",
+        "backgroundColor": "{{colors.inkInformative}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
         "color": "{{colors.inkInverse}}",
       },
@@ -18947,9 +18961,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -19722,7 +19738,7 @@ Object {
     },
     "whatsNewHomeFlag": Object {
       "base": Object {
-        "backgroundColor": "{{colors.teal060}}",
+        "backgroundColor": "{{colors.inkInformative}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
         "color": "{{colors.inkInverse}}",
       },
