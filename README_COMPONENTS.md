@@ -86,7 +86,7 @@ import React from 'react';
 export default class App extends React.Component {
   render() {
     return (
-      <NewsKitProvider 
+      <NewsKitProvider
         theme={newskitLightTheme}
         instrumentation={'instrumentation provider props'}
         layer={'layer organizer props'}
