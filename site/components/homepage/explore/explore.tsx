@@ -32,7 +32,7 @@ const cardsContent = [
 ];
 
 export const Explore = () => (
-  <ContentPrimary headline="Explore">
+  <ContentPrimary hideBottomSpacing headline="Explore">
     <GridLayout
       columns={{xs: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)'}}
       columnGap="space050"
@@ -48,7 +48,7 @@ export const Explore = () => (
             overrides={{
               marginBlockEnd: 'space040',
               typographyPreset: 'editorialHeadline020',
-              heading: {stylePreset: 'exploreCardHeadline'},
+              heading: {stylePreset: 'exploreCardLink'},
             }}
           >
             {title}

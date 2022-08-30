@@ -1077,9 +1077,11 @@ export const stylePresets = {
       color: '{{colors.inkBase}}',
     },
   },
-  exploreCardHeadline: {
+  exploreCardLink: {
     base: {
+      textDecoration: 'none',
       color: '{{colors.inkContrast}}',
+      iconColor: '{{colors.inkContrast}}',
     },
     hover: {
       textDecoration: 'underline',
@@ -1089,7 +1091,7 @@ export const stylePresets = {
     base: {
       borderRadius: '{{borders.borderRadiusRounded020}}',
       color: '{{colors.inkInverse}}',
-      backgroundColor: '{{colors.teal060}}',
+      backgroundColor: '{{colors.inkInformative}}',
     },
   },
 };

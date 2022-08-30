@@ -11,7 +11,7 @@ import {
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {FeatureCard} from '../components/feature-card';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
-import {ReleasesPageProps} from '../utils/release-notes/types';
+import {Release, ReleasesPageProps} from '../utils/release-notes/types';
 import {IconFilledLaunch} from '../../src/icons';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
@@ -99,6 +99,6 @@ export default Index;
 // This function is called at build time and the response is passed to the page
 // component as props.
 export async function getStaticProps() {
-  const releases = await fetchGitHubReleases(2);
+  const releases: Release[] = await fetchGitHubReleases(4);
   return {props: {releases}};
 }

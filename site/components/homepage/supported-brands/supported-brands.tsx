@@ -49,10 +49,7 @@ export const SupportedBrands = () => {
   }, []);
 
   return (
-    <ContentPrimary
-      headline="Supported brands"
-      description="World-class brands trust NewsKit to build their products:"
-    >
+    <ContentPrimary headline="Supported brands">
       <GridLayout
         columns={{xs: 'repeat(3, 1fr)', md: 'repeat(6, 1fr)'}}
         justifyItems="center"
