@@ -136,7 +136,7 @@ export const TextFieldSizeExamples = () => (
   <>
     <StorybookHeading>Text Field Sizes</StorybookHeading>
     <Container>
-      <TextField as="textarea" overrides={{minHeight: '120px'}} />
+      {/* <TextField overrides={{minHeight: '220px'}} as="textarea" /> */}
       <Stack
         flow="horizontal-center"
         spaceInline="space070"

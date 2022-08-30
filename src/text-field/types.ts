@@ -31,6 +31,8 @@ export interface FormInputTextFieldProps
 export interface TextFieldProps extends FormInputTextFieldProps, EventData {
   rules?: FormValidationRules;
   name?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  as?: React.ElementType<any> | undefined;
 }
 
 type FormEntryChildrenProps = {
