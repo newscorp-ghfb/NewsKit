@@ -7,6 +7,7 @@ import {
   Flag,
   LinkStandalone,
   Block,
+  GridLayoutItem,
 } from 'newskit';
 import {ContentPrimary} from '../../content-structure';
 import {IconFilledLaunch} from '../../../../src/icons';
@@ -25,39 +26,50 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
       rowGap="space080"
       columnGap="space050"
     >
-      <ContentPrimary headline="What's new?" hideBottomSpacing>
+      <ContentPrimary headline="Latest releases" hideBottomSpacing>
         <Card
           overrides={{
             stylePreset: 'homepageCard',
-            marginBlockStart: 'space060',
+            marginBlockStart: 'space050',
           }}
           key={latestRelease.tag_name}
           href={latestRelease.html_url}
         >
-          <Flag
-            overrides={{
-              marginBlockEnd: 'space040',
-              stylePreset: 'whatsNewHomeFlag',
-            }}
+          <GridLayout
+            justifyContent="start"
+            alignItems="end"
+            columns="repeat(2, auto)"
+            columnGap="space040"
           >
-            Latest Release
-          </Flag>
-          <Headline
-            overrides={{
-              marginBlockEnd: 'space050',
-              typographyPreset: 'editorialHeadline020',
-              heading: {stylePreset: 'exploreCardLink'},
-            }}
-          >
-            NewsKit {latestRelease.tag_name}
-            <IconFilledLaunch
-              overrides={{
-                marginBlockEnd: '-4px',
-                marginInlineStart: 'space020',
-                size: 'iconSize020',
-              }}
-            />
-          </Headline>
+            <GridLayoutItem>
+              <Flag
+                overrides={{
+                  marginBlockEnd: 'space040',
+                  stylePreset: 'whatsNewHomeFlag',
+                }}
+              >
+                New
+              </Flag>
+            </GridLayoutItem>
+            <GridLayoutItem>
+              <Headline
+                overrides={{
+                  marginBlockEnd: 'space050',
+                  typographyPreset: 'editorialHeadline020',
+                  heading: {stylePreset: 'whatsNewCardLink'},
+                }}
+              >
+                NewsKit {latestRelease.tag_name}
+                <IconFilledLaunch
+                  overrides={{
+                    marginBlockEnd: '-4px',
+                    marginInlineStart: 'space020',
+                    size: 'iconSize020',
+                  }}
+                />
+              </Headline>
+            </GridLayoutItem>
+          </GridLayout>
 
           <TextBlock
             marginBlockEnd="space040"
@@ -68,18 +80,18 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
         </Card>
       </ContentPrimary>
 
-      <ContentPrimary headline="Previous Releases" hideBottomSpacing>
+      <ContentPrimary hideBottomSpacing>
         <Card
           overrides={{
             stylePreset: 'homepageCard',
-            marginBlockStart: 'space060',
+            marginBlockStart: 'space080',
           }}
         >
           {restReleases.map(({html_url, tag_name}) => (
             <Block>
               <LinkStandalone
                 external={false}
-                overrides={{stylePreset: 'exploreCardLink'}}
+                overrides={{stylePreset: 'whatsNewCardLink'}}
                 href={html_url}
                 key={tag_name}
               >
@@ -87,6 +99,7 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
                   overrides={{
                     marginBlockEnd: 'space050',
                     typographyPreset: 'editorialHeadline020',
+                    heading: {stylePreset: 'whatsNewCardLink'},
                   }}
                 >
                   NewsKit {tag_name}

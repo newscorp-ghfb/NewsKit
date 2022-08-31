@@ -1835,6 +1835,16 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "whatsNewHomeFlag": Object {
       "base": Object {
         "backgroundColor": "{{colors.inkInformative}}",
@@ -4389,6 +4399,16 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "whatsNewHomeFlag": Object {
@@ -6950,6 +6970,16 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "whatsNewHomeFlag": Object {
       "base": Object {
         "backgroundColor": "{{colors.inkInformative}}",
@@ -9504,6 +9534,16 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "whatsNewHomeFlag": Object {
@@ -12065,6 +12105,16 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "whatsNewHomeFlag": Object {
       "base": Object {
         "backgroundColor": "{{colors.inkInformative}}",
@@ -14619,6 +14669,16 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "whatsNewHomeFlag": Object {
@@ -17180,6 +17240,16 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
     "whatsNewHomeFlag": Object {
       "base": Object {
         "backgroundColor": "{{colors.inkInformative}}",
@@ -19734,6 +19804,16 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
       },
     },
     "whatsNewHomeFlag": Object {

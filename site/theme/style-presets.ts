@@ -1087,6 +1087,16 @@ export const stylePresets = {
       textDecoration: 'underline',
     },
   },
+  whatsNewCardLink: {
+    base: {
+      textDecoration: 'none',
+      color: '{{colors.interactivePrimary030}}',
+      iconColor: '{{colors.interactivePrimary030}}',
+    },
+    hover: {
+      textDecoration: 'underline',
+    },
+  },
   whatsNewHomeFlag: {
     base: {
       borderRadius: '{{borders.borderRadiusRounded020}}',
