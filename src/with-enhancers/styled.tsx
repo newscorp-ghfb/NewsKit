@@ -9,6 +9,7 @@ import {
   css,
 } from '../utils/style';
 import {TextFieldSize} from '../text-field/types';
+import {logicalProps} from '../utils/logical-properties';
 
 const getMarginDirection = ({
   marginPosition,
@@ -65,6 +66,7 @@ export const StyledInputContainer = styled.div<
         right: 0;
         width: 16px;
         height: 16px;
+        // TODO: proper color
         background: linear-gradient(
           135deg,
           rgba(0, 0, 0, 0) 0,
@@ -84,6 +86,8 @@ export const StyledInputContainer = styled.div<
     getResponsiveSize('maxHeight', componentDefaultsPath, '', 'maxHeight')}
   ${({componentDefaultsPath}) =>
     getResponsiveSize('minHeight', componentDefaultsPath, '', 'minHeight')}
+
+   // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({componentDefaultsPath}) =>
     getResponsiveSpacingStackHorizontal(componentDefaultsPath)}
 
@@ -95,12 +99,5 @@ export const StyledInputContainer = styled.div<
       isValid: state === 'valid',
     })}
 
-   
-  
-  
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  ${() =>
-    // TODO: I don't think we need it here, the padding always applied to the children
-    // logicalProps(componentDefaultsPath);
-    null};
+  ${({componentDefaultsPath}) => logicalProps(componentDefaultsPath)};
 `;

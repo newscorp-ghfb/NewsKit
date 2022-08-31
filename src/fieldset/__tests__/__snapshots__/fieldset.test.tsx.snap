@@ -127,6 +127,10 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   border: none;
   background: none;
   box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  resize: none;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -134,7 +138,6 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  min-height: 64px;
 }
 
 .emotion-3::before {
@@ -817,6 +820,10 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   border: none;
   background: none;
   box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  resize: none;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -824,7 +831,6 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  min-height: 48px;
 }
 
 .emotion-3::before {
@@ -1507,6 +1513,10 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   border: none;
   background: none;
   box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  resize: none;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1514,7 +1524,6 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 8px;
-  min-height: 32px;
 }
 
 .emotion-3::before {

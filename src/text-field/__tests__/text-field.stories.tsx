@@ -136,7 +136,6 @@ export const TextFieldSizeExamples = () => (
   <>
     <StorybookHeading>Text Field Sizes</StorybookHeading>
     <Container>
-      {/* <TextField overrides={{minHeight: '220px'}} as="textarea" /> */}
       <Stack
         flow="horizontal-center"
         spaceInline="space070"
@@ -451,9 +450,10 @@ export const TextFieldAddOn = () => {
             aria-describedby="id-11-at"
             id="id-11"
             type={!showPassword ? 'password' : 'text'}
-            rules={{
-              required: 'Required field',
-            }}
+            // TODO: TextField is dummy componetn and does not have rules
+            // rules={{
+            //   required: 'Required field',
+            // }}
             endEnhancer={
               <IconButton
                 aria-label="toggle password"

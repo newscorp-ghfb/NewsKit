@@ -8,6 +8,10 @@ import defaults from './defaults';
 import {getSingleStylePreset} from '../utils/style/style-preset';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
+import {
+  omitLogicalMarginPropsFromOverrides,
+  omitLogicalPaddingPropsFromOverrides,
+} from '../utils/logical-properties';
 
 const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   (
@@ -83,12 +87,15 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       textFieldStylePreset,
     );
 
+    const enhancersOverrides = omitLogicalPaddingPropsFromOverrides(overrides);
+    const inputOverrides = omitLogicalMarginPropsFromOverrides(overrides);
+
     return (
       <>
         <WithEnhancers
           componentDefaultsPath={`textField.${size}`}
           isFocused={isFocused}
-          overrides={overrides}
+          overrides={enhancersOverrides}
           state={state}
           startEnhancer={startEnhancer}
           endEnhancer={endEnhancer}
@@ -99,7 +106,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
             type="text"
             disabled={state === 'disabled'}
             $size={size}
-            overrides={overrides}
+            overrides={inputOverrides}
             state={state}
             onBlur={onInputBlur}
             onFocus={onInputFocus}
