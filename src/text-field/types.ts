@@ -29,8 +29,6 @@ export interface FormInputTextFieldProps
 }
 
 export interface TextFieldProps extends FormInputTextFieldProps, EventData {
-  // TODO: we should not have rules on field component
-  // rules?: FormValidationRules;
   name?: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   as?: React.ElementType<any> | undefined;

@@ -450,10 +450,6 @@ export const TextFieldAddOn = () => {
             aria-describedby="id-11-at"
             id="id-11"
             type={!showPassword ? 'password' : 'text'}
-            // TODO: TextField is dummy componetn and does not have rules
-            // rules={{
-            //   required: 'Required field',
-            // }}
             endEnhancer={
               <IconButton
                 aria-label="toggle password"

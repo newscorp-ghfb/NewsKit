@@ -17,7 +17,9 @@ export const StyledInput = styled.input<
   border: none;
   background: none;
   box-sizing: border-box;
+  // make the input to take size of his parent
   align-self: stretch;
+  // resizing is done on the parent not on the input/textarea element
   resize: none;
 
   ${({$size}) =>
