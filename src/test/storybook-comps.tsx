@@ -121,7 +121,7 @@ const StyledBlock = styled(Block)`
 
 export const StorybookCase = ({title, children}: StorybookCaseProps) => (
   <GridLayout rowGap="space030">
-    <TextBlock stylePreset="inkBase" typographyPreset="editorialHeadline020">
+    <TextBlock stylePreset="inkBase" typographyPreset="editorialHeadline010">
       {title.charAt(0).toUpperCase() + title.slice(1)}
     </TextBlock>
     <StyledBlock paddingBlock="space050" paddingInline="space050">
