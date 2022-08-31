@@ -21,6 +21,10 @@ import {FormInputState} from '../form/types';
 import {getToken} from '../utils/get-token';
 import {getSingleStylePreset} from '../utils/style/style-preset';
 import {useTheme} from '../theme';
+import {
+  omitLogicalMarginPropsFromOverrides,
+  omitLogicalPaddingPropsFromOverrides,
+} from '../utils/logical-properties';
 
 interface SelectButtonProps {
   size: ButtonSelectSize;
@@ -112,11 +116,14 @@ export const SelectButton = React.forwardRef<
     buttonStylePreset,
   );
 
+  const enhancersOverrides = omitLogicalPaddingPropsFromOverrides(overrides);
+  const inputOverrides = omitLogicalMarginPropsFromOverrides(overrides);
+
   return (
     <WithEnhancers
       componentDefaultsPath={`select.${size}.button`}
       isFocused={isFocused}
-      overrides={overrides}
+      overrides={enhancersOverrides}
       state={state}
       startEnhancer={startEnhancer}
       endEnhancer={
@@ -173,8 +180,8 @@ export const SelectButton = React.forwardRef<
         disabled={state === 'disabled' || loading}
         data-testid="select-button"
         ref={selectButtonRef}
+        overrides={inputOverrides}
         {...restProps}
-        {...overrides}
       >
         <StyledButtonContents
           $size={size}
