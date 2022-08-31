@@ -3,7 +3,7 @@ import {Story as StoryType} from '@storybook/react';
 import {TextFieldSize} from '../../text-field';
 import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {TextArea} from '../textarea';
+import {TextArea} from '../text-area';
 import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
@@ -15,11 +15,16 @@ const textAreaCustomThemeObject: CreateThemeArgs = {
   overrides: {},
 };
 
-const DOCS_URL = '/';
+const DOCS_URL = 'https://newskit.co.uk/components/text-area/';
 
 const sizes: TextFieldSize[] = ['small', 'medium', 'large'];
 const states: FormInputState[] = ['valid', 'invalid', 'disabled'];
-const resizes: TextAreaProps['resize'][] = ['vertical', 'horizontal', 'both'];
+const resizes: TextAreaProps['resize'][] = [
+  'none',
+  'vertical',
+  'horizontal',
+  'both',
+];
 
 export const TextAreaSizes = () => (
   <StorybookPage title="TextArea Sizes" url={DOCS_URL}>
@@ -75,6 +80,7 @@ export const TextAreaWidth = () => (
     </StorybookCase>
   </StorybookPage>
 );
+
 export const TextAreaHeight = () => (
   <StorybookPage title="TextArea Height" url={DOCS_URL}>
     <StorybookCase title="default">
@@ -100,6 +106,21 @@ export const TextAreaResize = () => (
         <AssistiveText>Assistive Text</AssistiveText>
       </StorybookCase>
     ))}
+  </StorybookPage>
+);
+
+export const TextAreaRowsAndCols = () => (
+  <StorybookPage title="TextArea cols and rows" url={DOCS_URL}>
+    <StorybookCase title="cols and rows">
+      <Label>Label</Label>
+      <TextArea
+        placeholder="Placeholder"
+        rows={5}
+        cols={40}
+        overrides={{width: 'unset', minHeight: 'unset'}}
+      />
+      <AssistiveText>Assistive Text</AssistiveText>
+    </StorybookCase>
   </StorybookPage>
 );
 

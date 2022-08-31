@@ -32,7 +32,7 @@ export interface TextFieldProps extends FormInputTextFieldProps, EventData {
   name?: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   as?: React.ElementType<any> | undefined;
-  resize?: 'both' | 'horizontal' | 'vertical';
+  resize?: 'both' | 'horizontal' | 'vertical' | 'none';
 }
 
 type FormEntryChildrenProps = {

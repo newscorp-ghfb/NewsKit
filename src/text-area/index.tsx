@@ -1,2 +1,2 @@
-export * from './textarea';
+export * from './text-area';
 export * from './types';

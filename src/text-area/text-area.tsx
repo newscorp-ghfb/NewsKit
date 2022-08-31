@@ -7,7 +7,7 @@ import {TextField} from '../text-field';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 
 const ThemelessTextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
-  ({size = 'medium', overrides, ...props}, ref) => {
+  ({size = 'medium', overrides, resize = 'vertical', ...props}, ref) => {
     const theme = useTheme();
     const textAreaOverrides: typeof overrides = {
       ...theme.componentDefaults.textArea[size],
@@ -19,6 +19,7 @@ const ThemelessTextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
         as="textarea"
         overrides={textAreaOverrides}
         size={size}
+        resize={resize}
         ref={ref}
         {...props}
       />
