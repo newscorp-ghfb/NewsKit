@@ -21,7 +21,7 @@ const sendEvent = api => {
 
   if (window && window.tealiumTrack) {
     console.log('SEND_EVENT', event);
-    // window.tealiumTrack(event);
+    window.tealiumTrack(event);
     // window.utag.view(e);
   }
 };
