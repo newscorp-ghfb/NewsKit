@@ -8,6 +8,7 @@ import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {FormInputState} from '../../form/types';
+import {TextAreaProps} from '../types';
 
 const textAreaCustomThemeObject: CreateThemeArgs = {
   name: 'text-area-custom-theme',
@@ -18,7 +19,7 @@ const DOCS_URL = '/';
 
 const sizes: TextFieldSize[] = ['small', 'medium', 'large'];
 const states: FormInputState[] = ['valid', 'invalid', 'disabled'];
-const resizes = ['vertical', 'horizontal', 'both'];
+const resizes: TextAreaProps['resize'][] = ['vertical', 'horizontal', 'both'];
 
 export const TextAreaSizes = () => (
   <StorybookPage title="TextArea Sizes" url={DOCS_URL}>
@@ -92,12 +93,6 @@ export const TextAreaHeight = () => (
 
 export const TextAreaResize = () => (
   <StorybookPage title="TextArea resize" url={DOCS_URL}>
-    {/* <StorybookCase title="None">
-      <Label>Label</Label>
-      <TextArea placeholder="Placeholder" />
-      <AssistiveText>Assistive Text</AssistiveText>
-    </StorybookCase> */}
-
     {resizes.map(resize => (
       <StorybookCase title={resize as string}>
         <Label>Label</Label>

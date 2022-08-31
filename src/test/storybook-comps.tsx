@@ -89,15 +89,15 @@ type StorybookPageProps = {
 };
 
 export const StorybookPage = ({title, url, children}: StorybookPageProps) => {
-  if (process.env.STORYBOOK_APPLITOOLS || window.STORYBOOK_APPLITOOLS) {
-    return (
-      <GridLayout rowGap="space020">
-        <div>{title}</div>
+  // if (process.env.STORYBOOK_APPLITOOLS || window.STORYBOOK_APPLITOOLS) {
+  //   return (
+  //     <GridLayout rowGap="space020">
+  //       <div>{title}</div>
 
-        {children}
-      </GridLayout>
-    );
-  }
+  //       {children}
+  //     </GridLayout>
+  //   );
+  // }
   const link = () =>
     url ? <LinkStandalone href={url}>Documentation</LinkStandalone> : null;
   return (
@@ -128,24 +128,22 @@ const StyledBlock = styled(Block)`
   border-radius: 8px;
 `;
 
-export const StorybookCase = ({title, children}: StorybookCaseProps) => {
-  if (process.env.STORYBOOK_APPLITOOLS) {
-    return (
-      <GridLayout rowGap="space010">
-        <div>{title}</div>
-        {children}
-      </GridLayout>
-    );
-  }
+export const StorybookCase = ({title, children}: StorybookCaseProps) => (
+  // if (process.env.STORYBOOK_APPLITOOLS) {
+  //   return (
+  //     <GridLayout rowGap="space010">
+  //       <div>{title}</div>
+  //       {children}
+  //     </GridLayout>
+  //   );
+  // }
 
-  return (
-    <GridLayout rowGap="space030">
-      <TextBlock stylePreset="inkBase" typographyPreset="editorialHeadline010">
-        {title.charAt(0).toUpperCase() + title.slice(1)}
-      </TextBlock>
-      <StyledBlock paddingBlock="space050" paddingInline="space050">
-        {children}
-      </StyledBlock>
-    </GridLayout>
-  );
-};
+  <GridLayout rowGap="space030">
+    <TextBlock stylePreset="inkBase" typographyPreset="editorialHeadline010">
+      {title.charAt(0).toUpperCase() + title.slice(1)}
+    </TextBlock>
+    <StyledBlock paddingBlock="space050" paddingInline="space050">
+      {children}
+    </StyledBlock>
+  </GridLayout>
+);
