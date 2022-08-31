@@ -19,8 +19,6 @@ const ThemelessTextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
         as="textarea"
         overrides={textAreaOverrides}
         size={size}
-        // TODO: find a way to fix this
-        // @ts-ignore
         ref={ref}
         {...props}
       />

@@ -13,7 +13,10 @@ import {
   omitLogicalPaddingPropsFromOverrides,
 } from '../utils/logical-properties';
 
-const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
+const ThemelessTextField = React.forwardRef<
+  HTMLInputElement | HTMLTextAreaElement,
+  TextFieldProps
+>(
   (
     {
       size = 'medium',
@@ -102,7 +105,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
           resize={resize}
         >
           <StyledInput
-            ref={inputRef}
+            ref={inputRef as React.ForwardedRef<HTMLInputElement>}
             type="text"
             disabled={state === 'disabled'}
             $size={size}
