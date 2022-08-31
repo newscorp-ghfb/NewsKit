@@ -25,6 +25,8 @@ const dependenciesNotToBeIncluded = [
   'file-saver',
   'dompurify',
   '@babel/runtime-corejs3',
+  'semver',
+  'next-seo',
 ];
 
 const filterPackageJson = () => {

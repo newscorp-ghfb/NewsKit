@@ -34,7 +34,7 @@ exports[`Banner renders with content as react element 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -299,7 +299,7 @@ exports[`Banner renders with content as react element 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -566,7 +566,7 @@ exports[`Banner renders with content as string and link 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -780,43 +780,43 @@ exports[`Banner renders with content as string and link 1`] = `
 }
 
 .emotion-9:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-9:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-9:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-9:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-9:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-9:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-9:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-9:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-9:focus-visible:not(:disabled) {
@@ -944,7 +944,7 @@ exports[`Banner renders with content as string and link 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -1155,43 +1155,43 @@ exports[`Banner renders with content as string and link 1`] = `
 }
 
 .emotion-9:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-9:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-9:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-9:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-9:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-9:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-9:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-9:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-9:focus-visible:not(:disabled) {
@@ -1324,7 +1324,7 @@ exports[`Banner renders with default props 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -1581,7 +1581,7 @@ exports[`Banner renders with default props 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -1840,7 +1840,7 @@ exports[`Banner renders with icon 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -2174,7 +2174,7 @@ exports[`Banner renders with icon 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -2480,7 +2480,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -2738,20 +2738,20 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-10:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -2879,10 +2879,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -2890,8 +2890,8 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
               <div
@@ -2902,10 +2902,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -2913,8 +2913,8 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -2930,7 +2930,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -3191,20 +3191,20 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-10:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -3332,10 +3332,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -3343,8 +3343,8 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
               <div
@@ -3355,10 +3355,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -3366,8 +3366,8 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -3383,7 +3383,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -3645,20 +3645,20 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-10:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -3786,10 +3786,10 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -3797,8 +3797,8 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -3814,7 +3814,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -4079,20 +4079,20 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-10:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -4220,10 +4220,10 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -4231,8 +4231,8 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -4278,7 +4278,7 @@ exports[`Banner renders with title 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -4569,7 +4569,7 @@ exports[`Banner renders with title 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -4832,7 +4832,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -5094,20 +5094,20 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-10:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -5255,11 +5255,11 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 
 .emotion-15:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -5297,7 +5297,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5359,10 +5359,10 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -5370,8 +5370,8 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
               <div
@@ -5383,10 +5383,10 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
                   data-testid="banner-close-button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <svg
@@ -5405,8 +5405,8 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -5422,7 +5422,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -5700,12 +5700,12 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-10:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -5835,20 +5835,20 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-15:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -5923,10 +5923,10 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
                   data-testid="banner-close-button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -5934,8 +5934,8 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
                       >
                         Close
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
               <div
@@ -5946,10 +5946,10 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -5957,8 +5957,8 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
                       >
                         CTA Button
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -5974,7 +5974,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -6242,11 +6242,11 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 
 .emotion-10:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -6314,7 +6314,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6377,10 +6377,10 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
                   data-testid="banner-close-button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <svg
@@ -6399,8 +6399,8 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -6416,7 +6416,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -6694,12 +6694,12 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 }
 
 .emotion-10:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -6827,10 +6827,10 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
                   data-testid="banner-close-button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-11"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
                       <span
@@ -6838,8 +6838,8 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
                       >
                         Close
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -6885,7 +6885,7 @@ exports[`renders grid and cell overrides on banner 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -7160,20 +7160,20 @@ exports[`renders grid and cell overrides on banner 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-11:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-11:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -7304,10 +7304,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     data-testid="button"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
-                      <div
+                      <span
                         class="emotion-13"
                       >
                         <span
@@ -7315,8 +7315,8 @@ exports[`renders grid and cell overrides on banner 1`] = `
                         >
                           CTA Button
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
                 <div
@@ -7327,10 +7327,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     data-testid="button"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
-                      <div
+                      <span
                         class="emotion-13"
                       >
                         <span
@@ -7338,8 +7338,8 @@ exports[`renders grid and cell overrides on banner 1`] = `
                         >
                           CTA Button
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -7381,7 +7381,7 @@ exports[`renders grid and cell overrides on banner 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
 }
@@ -7653,20 +7653,20 @@ exports[`renders grid and cell overrides on banner 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-11:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-11:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -7797,10 +7797,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     data-testid="button"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
-                      <div
+                      <span
                         class="emotion-13"
                       >
                         <span
@@ -7808,8 +7808,8 @@ exports[`renders grid and cell overrides on banner 1`] = `
                         >
                           CTA Button
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
                 <div
@@ -7820,10 +7820,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     data-testid="button"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-12"
                     >
-                      <div
+                      <span
                         class="emotion-13"
                       >
                         <span
@@ -7831,8 +7831,8 @@ exports[`renders grid and cell overrides on banner 1`] = `
                         >
                           CTA Button
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -7879,7 +7879,7 @@ exports[`renders with logical props overrides 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
   margin-block: 30px;
@@ -8138,7 +8138,7 @@ exports[`renders with logical props overrides 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #05717D;
+  background-color: #017582;
   padding: 20px;
   min-height: 64px;
   margin-block: 30px;

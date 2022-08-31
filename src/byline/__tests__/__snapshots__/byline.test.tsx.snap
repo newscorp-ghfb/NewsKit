@@ -49,7 +49,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -60,7 +60,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -103,43 +103,43 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -188,7 +188,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 
 .emotion-7 {
   margin-left: 8px;
-  color: #C0C0C0;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -196,7 +196,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 <div
@@ -314,7 +314,7 @@ exports[`Byline renders correctly with author's name, author's information and n
 
 .emotion-3 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -325,7 +325,7 @@ exports[`Byline renders correctly with author's name, author's information and n
 }
 
 .emotion-3 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -342,7 +342,7 @@ exports[`Byline renders correctly with author's name, author's information and n
 
 .emotion-4 {
   margin-left: 8px;
-  color: #C0C0C0;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -350,7 +350,7 @@ exports[`Byline renders correctly with author's name, author's information and n
 }
 
 .emotion-4 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 <div
@@ -436,7 +436,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -447,7 +447,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -490,43 +490,43 @@ exports[`Byline renders correctly with authors and links 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -575,7 +575,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
 
 .emotion-8 {
   margin-left: 8px;
-  color: #C0C0C0;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -583,7 +583,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 <div
@@ -749,7 +749,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 
 .emotion-3 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -760,7 +760,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 }
 
 .emotion-3 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -803,43 +803,43 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -888,7 +888,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 
 .emotion-8 {
   margin-left: 8px;
-  color: #C0C0C0;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -896,7 +896,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 }
 
 .emotion-8 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 <div
@@ -1030,7 +1030,7 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1041,7 +1041,7 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -1084,43 +1084,43 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -1169,7 +1169,7 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
 
 .emotion-8 {
   margin-left: 8px;
-  color: #C0C0C0;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1177,7 +1177,7 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 <div
@@ -1309,7 +1309,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1320,7 +1320,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-3::before {
@@ -1337,7 +1337,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 
 .emotion-4 {
   margin-left: 8px;
-  color: #C0C0C0;
+  color: #ABABAB;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1345,7 +1345,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 <div
@@ -1441,7 +1441,7 @@ exports[`Byline renders correctly with one author 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1452,7 +1452,7 @@ exports[`Byline renders correctly with one author 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2::before {
@@ -1690,5 +1690,42 @@ exports[`Byline renders correctly with overrides 1`] = `
       </span>
     </div>
   </div>
+</DocumentFragment>
+`;
+
+exports[`Byline renders with additional HTML attributes 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+<div
+    class="emotion-0"
+    id="byline-id"
+  />
 </DocumentFragment>
 `;

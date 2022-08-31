@@ -8,11 +8,11 @@ exports[`ContentText renders with only the description 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-1 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 1439px) {
@@ -81,11 +81,11 @@ exports[`ContentText renders with only the title 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-1 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 1439px) {
@@ -114,8 +114,8 @@ exports[`ContentText renders with only the title 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-1 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -162,11 +162,11 @@ exports[`ContentText renders with title and description 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-1 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 1439px) {
@@ -195,8 +195,8 @@ exports[`ContentText renders with title and description 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-1 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -230,11 +230,11 @@ exports[`ContentText renders with title and description 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-1 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 1439px) {

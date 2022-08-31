@@ -8,7 +8,7 @@ import {
 } from '../../utils/style';
 import {ButtonOverrides, ButtonSize} from '../types';
 import {IconFilledEmail} from '../../icons';
-import {Stack, StackDistribution} from '../../stack';
+import {Stack} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
@@ -185,9 +185,9 @@ const buttonSizes: Array<{
   buttonSize: ButtonSize;
   iconSize: string;
 }> = [
-  {buttonSize: ButtonSize.Small, iconSize: 'iconSize040'},
-  {buttonSize: ButtonSize.Medium, iconSize: 'iconSize050'},
-  {buttonSize: ButtonSize.Large, iconSize: 'iconSize050'},
+  {buttonSize: 'small', iconSize: 'iconSize040'},
+  {buttonSize: 'medium', iconSize: 'iconSize050'},
+  {buttonSize: 'large', iconSize: 'iconSize050'},
 ];
 
 const states = ['Default', 'Focused', 'Disabled', 'Loading'];
@@ -217,10 +217,7 @@ const ButtonIntentKindsScenario: React.FC<{
         const kindOverrides = {...overrides, stylePreset};
         return (
           <Cell xs={4} sm={3}>
-            <Stack
-              spaceInline="space020"
-              stackDistribution={StackDistribution.SpaceEvenly}
-            >
+            <Stack spaceInline="space020" stackDistribution="space-evenly">
               <StorybookH3
                 stylePreset={hasBackground ? 'inkInverse' : undefined}
               >
@@ -241,7 +238,7 @@ const ButtonIntentKindsScenario: React.FC<{
               </Block>
               <Block data-state="Loading">
                 <Button aria-label="Loading" overrides={kindOverrides} loading>
-                  Button
+                  its kind of long text that can go to multiply lines
                 </Button>
               </Block>
             </Stack>
@@ -262,9 +259,9 @@ export const StoryButtonSize = () => (
         spaceStack="space070"
         wrap="wrap"
       >
-        <Button size={ButtonSize.Small}>Small button</Button>
-        <Button size={ButtonSize.Medium}>Medium button</Button>
-        <Button size={ButtonSize.Large}>Large button</Button>
+        <Button size="small">Small button</Button>
+        <Button size="medium">Medium button</Button>
+        <Button size="large">Large button</Button>
       </Stack>
     </Container>
   </>
@@ -277,16 +274,16 @@ export const StoryFullAndFixedWidthButton = () => (
     <Container>
       <Border>
         <Spacer>
-          <Button size={ButtonSize.Small} overrides={{width: '100%'}}>
+          <Button size="small" overrides={{width: '100%'}}>
             Small full-width button
           </Button>
         </Spacer>
         <Spacer>
-          <Button size={ButtonSize.Medium} overrides={{width: '100%'}}>
+          <Button size="medium" overrides={{width: '100%'}}>
             Medium full-width button
           </Button>
         </Spacer>
-        <Button size={ButtonSize.Large} overrides={{width: '100%'}}>
+        <Button size="large" overrides={{width: '100%'}}>
           Large full-width button
         </Button>
       </Border>
@@ -295,14 +292,14 @@ export const StoryFullAndFixedWidthButton = () => (
     <Container>
       <Border>
         <Spacer>
-          <Button size={ButtonSize.Small}>Small fixed-width button</Button>
+          <Button size="small">Small fixed-width button</Button>
         </Spacer>
         <Spacer>
-          <Button size={ButtonSize.Medium} overrides={{width: 'sizing120'}}>
+          <Button size="medium" overrides={{width: 'sizing120'}}>
             Medium fixed-width button
           </Button>
         </Spacer>
-        <Button size={ButtonSize.Large} overrides={{width: 'sizing120'}}>
+        <Button size="large" overrides={{width: 'sizing120'}}>
           Large fixed-width button
         </Button>
       </Border>
@@ -312,7 +309,7 @@ export const StoryFullAndFixedWidthButton = () => (
       <Border>
         <Spacer>
           <Button
-            size={ButtonSize.Small}
+            size="small"
             overrides={{
               width: 'sizing120',
               height: 'sizing070',
@@ -616,7 +613,7 @@ export const StoryButtonWithTransitions = () => (
         Button with two Transition Preset Overrides
       </StorybookSubHeading>
       <Button
-        size={ButtonSize.Medium}
+        size="medium"
         overrides={{
           transitionPreset: [
             'customBorderColourChange',
@@ -632,7 +629,7 @@ export const StoryButtonWithTransitions = () => (
         Button with overrides using extend on transitionDuration
       </StorybookSubHeading>
       <Button
-        size={ButtonSize.Medium}
+        size="medium"
         overrides={{
           stylePreset: 'testButtonStylePresetWithBorders',
           transitionPreset: {
@@ -649,7 +646,7 @@ export const StoryButtonWithTransitions = () => (
         Button with overrides on two presets using extend
       </StorybookSubHeading>
       <Button
-        size={ButtonSize.Medium}
+        size="medium"
         overrides={{
           transitionPreset: [
             {

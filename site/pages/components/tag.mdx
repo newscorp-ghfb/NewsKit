@@ -4,7 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../components/code';
-import {Tag, TagSize} from 'newskit';
+import {Tag} from 'newskit';
 import {InverseTheme} from '../../components/inverse-theme';
 import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
@@ -32,7 +32,7 @@ Tags have a number of props to facilitate a variety of uses:
     If provided, the Tag will render as an anchor with this prop value as the
     href.
   </Prop>
-  <Prop name="size" type="TagSize" default="Medium">
+  <Prop name="size" type="'small' | 'medium'| 'large'" default="medium">
     Optional size of the Tag: Small, Medium or Large.
   </Prop>
   <Prop name="disabled" type="boolean" default={false}>
@@ -134,17 +134,17 @@ Tags have a number of props to facilitate a variety of uses:
       propName: 'size',
       options: [
         {
-          label: 'Small',
-          value: TagSize.Small,
+          label: 'small',
+          value: 'small',
         },
         {
-          label: 'Default (Medium)',
+          label: 'medium',
           isDefault: true,
-          value: TagSize.Medium,
+          value: 'medium',
         },
         {
-          label: 'Large',
-          value: TagSize.Large,
+          label: 'large',
+          value: 'large',
         },
       ],
     },

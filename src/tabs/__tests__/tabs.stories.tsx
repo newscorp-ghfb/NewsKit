@@ -1,12 +1,12 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
 
-import {TabSize, styled, Scroll, TextBlock, getColorCssFromTheme} from '../..';
+import {styled, Scroll, TextBlock, getColorCssFromTheme} from '../..';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {Tab, TabAlign, Tabs, TabsDistribution, TabsIndicatorPosition} from '..';
+import {Tab, Tabs} from '..';
 import {IconFilledEmail} from '../../icons';
 import {Block} from '../../block';
 import {Button} from '../../button';
@@ -211,7 +211,7 @@ const StyledBlock = styled(Block)`
   height: 150px;
 `;
 
-const ScrollBox: React.FC = ({children}) => (
+const ScrollBox: React.FC<{children: React.ReactNode}> = ({children}) => (
   <StyledBlock>
     <Scroll>{children}</Scroll>
   </StyledBlock>
@@ -248,12 +248,7 @@ export const StoryTabsDistributionStart = () => (
     <StorybookHeading>Tabs Distribution Start</StorybookHeading>
 
     <StorybookSubHeading>Horizontal</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Small}
-      distribution={TabsDistribution.Start}
-      divider
-      initialSelectedIndex={10}
-    >
+    <Tabs size="small" distribution="start" divider initialSelectedIndex={10}>
       <Tab label="H tab 1" key="tab-1">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -266,7 +261,7 @@ export const StoryTabsDistributionStart = () => (
     </Tabs>
     <Spacer />
 
-    <Tabs size={TabSize.Medium} divider>
+    <Tabs size="medium" divider>
       <Tab ariaLabel="tab label" label={titleBetweenIcons}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -281,12 +276,7 @@ export const StoryTabsDistributionStart = () => (
     <Spacer />
 
     <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Small}
-      vertical
-      divider
-      distribution={TabsDistribution.Start}
-    >
+    <Tabs size="small" vertical divider distribution="start">
       <Tab label="V tab 1">
         <LoremIpsum textNumber={1} text={LoremIpsumText2} />
       </Tab>
@@ -317,8 +307,8 @@ export const StoryControlledTabs = () => {
         </Button>
       </Block>
       <Tabs
-        size={TabSize.Small}
-        distribution={TabsDistribution.Start}
+        size="small"
+        distribution="start"
         divider
         selectedIndex={selectedIndex}
         onChange={setSelected}
@@ -343,7 +333,7 @@ export const StoryTabsDistributionGrow = () => (
     <StorybookHeading>Tabs Distribution - Grow</StorybookHeading>
 
     <StorybookSubHeading>Horizontal</StorybookSubHeading>
-    <Tabs size={TabSize.Small} distribution={TabsDistribution.Grow} divider>
+    <Tabs size="small" distribution="grow" divider>
       <Tab label="H tab 1">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -357,12 +347,7 @@ export const StoryTabsDistributionGrow = () => (
     <Spacer />
 
     <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Small}
-      vertical
-      divider
-      distribution={TabsDistribution.Grow}
-    >
+    <Tabs size="small" vertical divider distribution="grow">
       <Tab label="V tab 1">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -382,7 +367,7 @@ export const StoryTabsDistributionEqual = () => (
     <StorybookHeading>Tabs Distribution - Equal</StorybookHeading>
 
     <StorybookSubHeading>Horizontal</StorybookSubHeading>
-    <Tabs size={TabSize.Small} divider distribution={TabsDistribution.Equal}>
+    <Tabs size="small" divider distribution="equal">
       <Tab label="H tab 1">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -396,12 +381,7 @@ export const StoryTabsDistributionEqual = () => (
     <Spacer />
 
     <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Small}
-      vertical
-      divider
-      distribution={TabsDistribution.Equal}
-    >
+    <Tabs size="small" vertical divider distribution="equal">
       <Tab label="V tab 1">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -423,7 +403,7 @@ export const StoryTabsWithScroll = () => (
     </StorybookHeading>
 
     <StorybookSubHeading>Horizontal</StorybookSubHeading>
-    <Tabs size={TabSize.Small} divider distribution={TabsDistribution.Equal}>
+    <Tabs size="small" divider distribution="equal">
       <Tab label="H tab 1">
         <ScrollBox>
           <LoremIpsum textNumber={1} />
@@ -443,12 +423,7 @@ export const StoryTabsWithScroll = () => (
     <Spacer />
 
     <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Small}
-      vertical
-      divider
-      distribution={TabsDistribution.Equal}
-    >
+    <Tabs size="small" vertical divider distribution="equal">
       <Tab label="V tab 1">
         <ScrollBox>
           <LoremIpsum textNumber={1} />
@@ -474,7 +449,7 @@ export const StoryTabsHorizontal = () => (
     <StorybookHeading>Tabs Horizontal</StorybookHeading>
     <StorybookSubHeading>Small</StorybookSubHeading>
 
-    <Tabs size={TabSize.Small}>
+    <Tabs size="small">
       <Tab label="Small tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -488,7 +463,7 @@ export const StoryTabsHorizontal = () => (
 
     <StorybookSubHeading>Medium</StorybookSubHeading>
 
-    <Tabs size={TabSize.Medium}>
+    <Tabs size="medium">
       <Tab label="Medium tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -502,7 +477,7 @@ export const StoryTabsHorizontal = () => (
 
     <StorybookSubHeading>Large</StorybookSubHeading>
 
-    <Tabs size={TabSize.Large}>
+    <Tabs size="large">
       <Tab label="Large tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -521,7 +496,7 @@ export const StoryTabsHorizontalIconLabel = () => (
   <>
     <StorybookHeading>Tabs Horizontal Label / Icon</StorybookHeading>
     <StorybookSubHeading>Label Only</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} divider>
+    <Tabs size="medium" divider>
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -533,7 +508,7 @@ export const StoryTabsHorizontalIconLabel = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Icon Only</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} divider>
+    <Tabs size="medium" divider>
       <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -552,7 +527,7 @@ export const StoryTabsVerticalIconLabel = () => (
   <>
     <StorybookHeading>Tabs Vertical Label / Icon</StorybookHeading>
     <StorybookSubHeading>Label Only</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} divider vertical>
+    <Tabs size="medium" divider vertical>
       <Tab ariaLabel="tab label" label="Medium tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -567,7 +542,7 @@ export const StoryTabsVerticalIconLabel = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Icon Only</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} divider vertical>
+    <Tabs size="medium" divider vertical>
       <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -589,7 +564,7 @@ export const StoryTabsHorizontalIconAndLabel = () => (
   <>
     <StorybookHeading>Tabs Horizontal Icon and Label</StorybookHeading>
     <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
-    <Tabs size={TabSize.Small} divider>
+    <Tabs size="small" divider>
       <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -603,7 +578,7 @@ export const StoryTabsHorizontalIconAndLabel = () => (
     <StorybookSubHeading>
       Leading and Trailing Icon and Label
     </StorybookSubHeading>
-    <Tabs size={TabSize.Medium} divider>
+    <Tabs size="medium" divider>
       <Tab ariaLabel="tab label" label={titleBetweenIcons}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -622,7 +597,7 @@ export const StoryTabsVerticalIconAndLabel = () => (
   <>
     <StorybookHeading>Tabs Vertical Icon and Label</StorybookHeading>
     <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} divider vertical>
+    <Tabs size="medium" divider vertical>
       <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -636,7 +611,7 @@ export const StoryTabsVerticalIconAndLabel = () => (
     <StorybookSubHeading>
       Leading and Trailing Icon and Label
     </StorybookSubHeading>
-    <Tabs size={TabSize.Large} divider vertical>
+    <Tabs size="large" divider vertical>
       <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -655,7 +630,7 @@ export const StoryTabsVertical = () => (
   <>
     <StorybookHeading>Tabs Vertical</StorybookHeading>
     <StorybookSubHeading>Small</StorybookSubHeading>
-    <Tabs size={TabSize.Small} vertical>
+    <Tabs size="small" vertical>
       <Tab label="Small tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -667,7 +642,7 @@ export const StoryTabsVertical = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Medium</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} vertical>
+    <Tabs size="medium" vertical>
       <Tab label="Medium tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -679,7 +654,7 @@ export const StoryTabsVertical = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Large</StorybookSubHeading>
-    <Tabs size={TabSize.Large} vertical>
+    <Tabs size="large" vertical>
       <Tab label="Large tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -698,7 +673,7 @@ export const StoryTabsVerticalVariantsLabelOrIcon = () => (
   <>
     <StorybookHeading>Tabs Vertical Variants (Label or Icon)</StorybookHeading>
     <StorybookSubHeading>Label Only</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} vertical divider>
+    <Tabs size="medium" vertical divider>
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -710,7 +685,7 @@ export const StoryTabsVerticalVariantsLabelOrIcon = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Icon Only</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} vertical divider>
+    <Tabs size="medium" vertical divider>
       <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -730,7 +705,7 @@ export const StoryTabsVerticalVariantsIconPlacement = () => (
   <>
     <StorybookHeading>Tabs Vertical Variants (Icon Placement)</StorybookHeading>
     <StorybookSubHeading>Leading Icon and Label</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} vertical divider>
+    <Tabs size="medium" vertical divider>
       <Tab label={titleAndRightIcon}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -742,7 +717,7 @@ export const StoryTabsVerticalVariantsIconPlacement = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} vertical divider>
+    <Tabs size="medium" vertical divider>
       <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -756,7 +731,7 @@ export const StoryTabsVerticalVariantsIconPlacement = () => (
     <StorybookSubHeading>
       Leading and Trailing Icon and Label
     </StorybookSubHeading>
-    <Tabs size={TabSize.Medium} vertical divider>
+    <Tabs size="medium" vertical divider>
       <Tab ariaLabel="tab label" label={titleBetweenIcons}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -778,7 +753,7 @@ export const StoryTabsHorizontalIndicatorPositionVariants = () => (
       Tabs Horizontal Indicator Position Variants
     </StorybookHeading>
     <StorybookSubHeading>Indicator position Start</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} indicatorPosition={TabsIndicatorPosition.Start}>
+    <Tabs size="medium" indicatorPosition="start">
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -790,7 +765,7 @@ export const StoryTabsHorizontalIndicatorPositionVariants = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Indicator position End (default)</StorybookSubHeading>
-    <Tabs size={TabSize.Medium}>
+    <Tabs size="medium">
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -802,7 +777,7 @@ export const StoryTabsHorizontalIndicatorPositionVariants = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Indicator position None</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} indicatorPosition={TabsIndicatorPosition.None}>
+    <Tabs size="medium" indicatorPosition="none">
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -824,11 +799,7 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
       Tabs Vertical Indicator Position Variants
     </StorybookHeading>
     <StorybookSubHeading>Indicator position Start</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Medium}
-      vertical
-      indicatorPosition={TabsIndicatorPosition.Start}
-    >
+    <Tabs size="medium" vertical indicatorPosition="start">
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -840,7 +811,7 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Indicator position End (default)</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} vertical>
+    <Tabs size="medium" vertical>
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -852,11 +823,7 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Indicator position None</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Medium}
-      vertical
-      indicatorPosition={TabsIndicatorPosition.None}
-    >
+    <Tabs size="medium" vertical indicatorPosition="none">
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -876,7 +843,7 @@ export const StoryTabsContent = () => (
   <>
     <StorybookHeading>Tabs Content</StorybookHeading>
     <StorybookSubHeading>Tab with content</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} divider>
+    <Tabs size="medium" divider>
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -888,7 +855,7 @@ export const StoryTabsContent = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Tab vertical with content</StorybookSubHeading>
-    <Tabs size={TabSize.Medium} vertical divider>
+    <Tabs size="medium" vertical divider>
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -1174,7 +1141,7 @@ export const StoryTabsWithPresetsOverrides = () => (
     <StorybookHeading>Tabs with presets overides</StorybookHeading>
     <StorybookSubHeading>Vertical</StorybookSubHeading>
     <Tabs
-      size={TabSize.Small}
+      size="small"
       overrides={{
         spaceInline: {
           xs: 'space010',
@@ -1199,7 +1166,7 @@ export const StoryTabsWithPresetsOverrides = () => (
       }}
       vertical
       divider
-      distribution={TabsDistribution.Grow}
+      distribution="grow"
     >
       <Tab label="V tab 1">
         <LoremIpsum textNumber={1} />
@@ -1243,7 +1210,7 @@ export const StoryTabsWithPresetsOverridesShadows = () => {
       <StorybookHeading>Tabs with Box Shadow</StorybookHeading>
       <TabsContainer>
         <Tabs
-          size={TabSize.Medium}
+          size="medium"
           overrides={{
             scroll: props => <CustomScroll {...props} />,
             spaceInline: 'space000',
@@ -1251,7 +1218,7 @@ export const StoryTabsWithPresetsOverridesShadows = () => {
               spaceInline: '30px',
             },
           }}
-          indicatorPosition={TabsIndicatorPosition.None}
+          indicatorPosition="none"
         >
           <Tab label="V tab 1" overrides={{stylePreset: 'shadowTab'}}>
             <TabPanel>
@@ -1284,12 +1251,7 @@ export const StoryTabsWithPresetsOverridesOnIndividualTab = () => (
       Tabs with presets overides on individual tab
     </StorybookHeading>
     <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Small}
-      vertical
-      divider
-      distribution={TabsDistribution.Grow}
-    >
+    <Tabs size="small" vertical divider distribution="grow">
       <Tab label="V tab 1" overrides={{stylePreset: 'tabCustomPreset'}}>
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -1309,7 +1271,7 @@ export const StoryTabsWithAlign = () => (
   <>
     <StorybookHeading>Tabs With Align</StorybookHeading>
     <StorybookSubHeading>Tabs Horizontal Align Left</StorybookSubHeading>
-    <Tabs align={TabAlign.Start} distribution={TabsDistribution.Grow}>
+    <Tabs align="start" distribution="grow">
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -1322,7 +1284,7 @@ export const StoryTabsWithAlign = () => (
     </Tabs>
 
     <StorybookSubHeading>Tabs Horizontal Align Right</StorybookSubHeading>
-    <Tabs align={TabAlign.End} distribution={TabsDistribution.Grow}>
+    <Tabs align="end" distribution="grow">
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -1335,7 +1297,7 @@ export const StoryTabsWithAlign = () => (
     </Tabs>
 
     <StorybookSubHeading>Tabs Vertical Align Left</StorybookSubHeading>
-    <Tabs align={TabAlign.Start} distribution={TabsDistribution.Grow} vertical>
+    <Tabs align="start" distribution="grow" vertical>
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -1347,7 +1309,7 @@ export const StoryTabsWithAlign = () => (
       </Tab>
     </Tabs>
     <StorybookSubHeading>Tabs Vertical Align Right</StorybookSubHeading>
-    <Tabs align={TabAlign.End} distribution={TabsDistribution.Grow} vertical>
+    <Tabs align="end" distribution="grow" vertical>
       <Tab label="Tab">
         <LoremIpsum textNumber={1} />
       </Tab>
@@ -1693,12 +1655,7 @@ export const StoryTabsOutlineOverride = () => (
     <StorybookHeading>Tabs Outline Overrides</StorybookHeading>
 
     <StorybookSubHeading>Custom Color</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Small}
-      distribution={TabsDistribution.Start}
-      divider
-      initialSelectedIndex={10}
-    >
+    <Tabs size="small" distribution="start" divider initialSelectedIndex={10}>
       <Tab
         label="H tab 1"
         key="tab-1"
@@ -1716,12 +1673,7 @@ export const StoryTabsOutlineOverride = () => (
     <Spacer />
 
     <StorybookSubHeading>Custom Style</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Small}
-      distribution={TabsDistribution.Start}
-      divider
-      initialSelectedIndex={10}
-    >
+    <Tabs size="small" distribution="start" divider initialSelectedIndex={10}>
       <Tab
         label="H tab 1"
         key="tab-1"
@@ -1739,12 +1691,7 @@ export const StoryTabsOutlineOverride = () => (
     <Spacer />
 
     <StorybookSubHeading>Custom Width</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Small}
-      distribution={TabsDistribution.Start}
-      divider
-      initialSelectedIndex={10}
-    >
+    <Tabs size="small" distribution="start" divider initialSelectedIndex={10}>
       <Tab
         label="H tab 1"
         key="tab-1"
@@ -1762,12 +1709,7 @@ export const StoryTabsOutlineOverride = () => (
     <Spacer />
 
     <StorybookSubHeading>Custom Offset</StorybookSubHeading>
-    <Tabs
-      size={TabSize.Small}
-      distribution={TabsDistribution.Start}
-      divider
-      initialSelectedIndex={10}
-    >
+    <Tabs size="small" distribution="start" divider initialSelectedIndex={10}>
       <Tab
         label="H tab 1"
         key="tab-1"

@@ -1,7 +1,8 @@
 import React from 'react';
-import {Cell, Block, TitleBar, Image, TextBlock} from 'newskit';
+import {Cell, Block, TitleBar, Image} from 'newskit';
 import {ComponentPageCellCompact} from '../layout-cells';
 import {SectionIntroductionProps} from './types';
+import {UnpackContent} from '../unpack-content';
 
 export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
   title,
@@ -67,12 +68,14 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
       )}
       {children && (
         <Block spaceStack={!lastItem ? subHeadingSpaceStack : ''}>
-          <TextBlock
-            stylePreset="inkBase"
-            typographyPreset="editorialSubheadline020"
+          <UnpackContent
+            textBlockProps={{
+              stylePreset: 'inkBase',
+              typographyPreset: 'editorialSubheadline020',
+            }}
           >
             {children}
-          </TextBlock>
+          </UnpackContent>
         </Block>
       )}
     </ComponentPageCellCompact>

@@ -1,5 +1,5 @@
-import React, {PropsWithChildren} from 'react';
-import {FlagProps, FlagSize, BaseFlagProps, BaseFlagOverrides} from './types';
+import React from 'react';
+import {FlagProps, BaseFlagProps, BaseFlagOverrides} from './types';
 import {StyledBaseFlag} from './styled';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
@@ -8,12 +8,17 @@ import {TextBlock} from '../text-block';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {getDisplayName} from '../utils/component';
 
 const BaseFlag = React.forwardRef<
   HTMLDivElement,
-  BaseFlagProps<BaseFlagOverrides> & {as?: keyof JSX.IntrinsicElements}
+  BaseFlagProps<BaseFlagOverrides>
 >(({children, overrides, loading, disabled, as, ...props}, ref) => {
   const theme = useTheme();
+
+  const childrenCount = React.Children.toArray(children).filter(
+    child => getDisplayName(child) !== 'IndeterminateProgressIndicator',
+  );
 
   return (
     <StyledBaseFlag
@@ -29,7 +34,8 @@ const BaseFlag = React.forwardRef<
       alignItems="center"
       justifyItems="center"
       columnGap={getToken({theme, overrides}, '', '', 'spaceInline')}
-      columns={`repeat(${React.Children.count(children)}, auto)`}
+      columns={`repeat(${childrenCount.length}, auto)`}
+      rows="1fr"
       inline
     >
       {React.Children.map(children, child =>
@@ -48,24 +54,23 @@ const BaseFlag = React.forwardRef<
   );
 });
 
-const ThemelessFlag = React.forwardRef<
-  HTMLDivElement,
-  PropsWithChildren<FlagProps>
->(({overrides = {}, ...props}, ref) => {
-  const theme = useTheme();
-  const {size = FlagSize.Medium} = props;
+const ThemelessFlag = React.forwardRef<HTMLDivElement, FlagProps>(
+  ({overrides = {}, ...props}, ref) => {
+    const theme = useTheme();
+    const {size = 'medium'} = props;
 
-  return (
-    <BaseFlag
-      data-testid="flag"
-      {...props}
-      ref={ref}
-      overrides={{
-        ...theme.componentDefaults.flag[size],
-        ...filterOutFalsyProperties(overrides),
-      }}
-    />
-  );
-});
+    return (
+      <BaseFlag
+        data-testid="flag"
+        {...props}
+        ref={ref}
+        overrides={{
+          ...theme.componentDefaults.flag[size],
+          ...filterOutFalsyProperties(overrides),
+        }}
+      />
+    );
+  },
+);
 
 export const Flag = withOwnTheme(ThemelessFlag)({defaults, stylePresets});

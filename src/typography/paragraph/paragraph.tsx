@@ -11,7 +11,8 @@ import {withOwnTheme} from '../../utils/with-own-theme';
 import {ScreenReaderOnly} from '../../screen-reader-only';
 import {logicalProps, LogicalProps} from '../../utils/logical-properties';
 
-export interface ParagraphProps {
+export interface ParagraphProps
+  extends React.HTMLAttributes<HTMLParagraphElement> {
   children: React.ReactNode;
   dropCap?: boolean;
   overrides?: {
@@ -83,6 +84,7 @@ export const Paragraph: React.FC<ParagraphProps> = ({
   children,
   overrides = {},
   dropCap = false,
+  ...rest
 }) => {
   const childrenAsArray = React.Children.toArray(children);
   const firstLetter = getFirstLetter(childrenAsArray);
@@ -90,14 +92,16 @@ export const Paragraph: React.FC<ParagraphProps> = ({
 
   return useDropCap && children ? (
     <>
-      <ParagraphText aria-hidden="true" overrides={overrides}>
+      <ParagraphText aria-hidden="true" overrides={overrides} {...rest}>
         <ParagraphDropCap overrides={overrides}>{firstLetter}</ParagraphDropCap>
         {removeFirstLetter(childrenAsArray)}
       </ParagraphText>
       <ScreenReaderOnly>{children}</ScreenReaderOnly>
     </>
   ) : (
-    <ParagraphText overrides={overrides}>{children}</ParagraphText>
+    <ParagraphText overrides={overrides} {...rest}>
+      {children}
+    </ParagraphText>
   );
 };
 

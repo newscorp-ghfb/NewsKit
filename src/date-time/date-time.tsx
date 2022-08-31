@@ -30,7 +30,14 @@ const defaultDateFormat = "MMMM d yyyy, h:mmaaaaa'm'";
 
 const ThemelessDateTime = React.forwardRef<HTMLTimeElement, DateTimeProps>(
   (
-    {date, dateFormat = defaultDateFormat, prefix, suffix, overrides = {}},
+    {
+      date,
+      dateFormat = defaultDateFormat,
+      prefix,
+      suffix,
+      overrides = {},
+      ...rest
+    },
     ref,
   ) => {
     const theme = useTheme();
@@ -57,7 +64,7 @@ const ThemelessDateTime = React.forwardRef<HTMLTimeElement, DateTimeProps>(
     const logicalPropsOverrides = extractLogicalPropsFromOverrides(overrides);
 
     return (
-      <StyledTime {...logicalPropsOverrides} ref={ref}>
+      <StyledTime {...logicalPropsOverrides} ref={ref} {...rest}>
         {prefix && (
           <StyledPrefix as="span" {...prefixPresets}>
             {`${prefix} `}

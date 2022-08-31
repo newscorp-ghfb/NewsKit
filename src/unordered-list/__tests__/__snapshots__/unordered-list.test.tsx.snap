@@ -59,14 +59,14 @@ exports[`UnorderedList renders different types of children 1`] = `
 
 .emotion-3 {
   margin-right: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
 .emotion-3 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-3 svg,
@@ -78,8 +78,8 @@ exports[`UnorderedList renders different types of children 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -103,8 +103,8 @@ exports[`UnorderedList renders different types of children 1`] = `
 .emotion-4.emotion-4 {
   width: 8px;
   height: 8px;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -125,7 +125,7 @@ exports[`UnorderedList renders different types of children 1`] = `
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -135,7 +135,7 @@ exports[`UnorderedList renders different types of children 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6::before {
@@ -178,43 +178,43 @@ exports[`UnorderedList renders different types of children 1`] = `
 }
 
 .emotion-19:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-19:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-19:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-19:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-19:focus-visible:not(:disabled) {
@@ -272,7 +272,7 @@ exports[`UnorderedList renders different types of children 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -448,6 +448,166 @@ exports[`UnorderedList renders different types of children 1`] = `
 </DocumentFragment>
 `;
 
+exports[`UnorderedList renders with additional HTML attributes 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.emotion-1:last-child+div {
+  margin: 0;
+}
+
+.emotion-2 {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-3 {
+  margin-right: 8px;
+  color: #3B3B3B;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-3 svg,
+.emotion-3 img {
+  display: block;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #3B3B3B;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4.emotion-4 {
+  width: 8px;
+  height: 8px;
+  color: #3B3B3B;
+  fill: #3B3B3B;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4.emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4.emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6 {
+  margin: 0;
+  color: #3B3B3B;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-6 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-6::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-6::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+<ul
+    class="emotion-0"
+    id="unordered-list-id"
+    role="list"
+  >
+    <li
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          aria-hidden="true"
+          class="emotion-3"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+            />
+          </svg>
+        </div>
+        <p
+          class="emotion-6"
+        >
+          ListItem
+        </p>
+      </div>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
 exports[`UnorderedList renders with custom list item marker 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -474,14 +634,14 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
 
 .emotion-3 {
   margin-right: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
 .emotion-3 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-3 svg,
@@ -493,8 +653,8 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -518,8 +678,8 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
 .emotion-4.emotion-4 {
   width: 8px;
   height: 8px;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -540,7 +700,7 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -550,7 +710,7 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6::before {
@@ -701,14 +861,14 @@ exports[`UnorderedList renders with custom list item marker with different size 
 
 .emotion-3 {
   margin-right: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
 .emotion-3 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-3 svg,
@@ -720,8 +880,8 @@ exports[`UnorderedList renders with custom list item marker with different size 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -745,8 +905,8 @@ exports[`UnorderedList renders with custom list item marker with different size 
 .emotion-4.emotion-4 {
   width: 16px;
   height: 16px;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -767,7 +927,7 @@ exports[`UnorderedList renders with custom list item marker with different size 
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -777,7 +937,7 @@ exports[`UnorderedList renders with custom list item marker with different size 
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6::before {
@@ -928,14 +1088,14 @@ exports[`UnorderedList renders with defaults 1`] = `
 
 .emotion-3 {
   margin-right: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
 .emotion-3 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-3 svg,
@@ -947,8 +1107,8 @@ exports[`UnorderedList renders with defaults 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -972,8 +1132,8 @@ exports[`UnorderedList renders with defaults 1`] = `
 .emotion-4.emotion-4 {
   width: 8px;
   height: 8px;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -994,7 +1154,7 @@ exports[`UnorderedList renders with defaults 1`] = `
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1004,7 +1164,7 @@ exports[`UnorderedList renders with defaults 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6::before {
@@ -1159,14 +1319,14 @@ exports[`UnorderedList renders with logical props 1`] = `
 
 .emotion-3 {
   margin-right: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
 .emotion-3 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-3 svg,
@@ -1178,8 +1338,8 @@ exports[`UnorderedList renders with logical props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1203,8 +1363,8 @@ exports[`UnorderedList renders with logical props 1`] = `
 .emotion-4.emotion-4 {
   width: 8px;
   height: 8px;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1225,7 +1385,7 @@ exports[`UnorderedList renders with logical props 1`] = `
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1235,7 +1395,7 @@ exports[`UnorderedList renders with logical props 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6::before {
@@ -1386,14 +1546,14 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
 
 .emotion-3 {
   margin-right: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   -webkit-align-self: end;
   -ms-flex-item-align: end;
   align-self: end;
 }
 
 .emotion-3 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-3 svg,
@@ -1405,8 +1565,8 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1430,8 +1590,8 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
 .emotion-4.emotion-4 {
   width: 8px;
   height: 8px;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1452,7 +1612,7 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1462,7 +1622,7 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6::before {
@@ -1613,14 +1773,14 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
 
 .emotion-3 {
   margin-right: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   -webkit-align-self: start;
   -ms-flex-item-align: start;
   align-self: start;
 }
 
 .emotion-3 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-3 svg,
@@ -1632,8 +1792,8 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1657,8 +1817,8 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
 .emotion-4.emotion-4 {
   width: 8px;
   height: 8px;
-  color: #2E2E2E;
-  fill: #2E2E2E;
+  color: #3B3B3B;
+  fill: #3B3B3B;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1679,7 +1839,7 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1689,7 +1849,7 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6::before {
@@ -1840,14 +2000,14 @@ exports[`UnorderedList renders with no list item marker 1`] = `
 
 .emotion-3 {
   margin-right: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
 .emotion-3 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-3 svg,
@@ -1857,7 +2017,7 @@ exports[`UnorderedList renders with no list item marker 1`] = `
 
 .emotion-4 {
   margin: 0;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1867,7 +2027,7 @@ exports[`UnorderedList renders with no list item marker 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-4::before {

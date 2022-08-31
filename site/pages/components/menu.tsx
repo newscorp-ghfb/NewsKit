@@ -3,20 +3,18 @@ import React from 'react';
 import {
   Menu,
   styled,
-  TextBlock,
   MenuItem,
   InlineMessage,
   MenuGroup,
   MenuDivider,
+  UnorderedList,
 } from 'newskit';
-import {parseEnumValues} from '../../utils/parse-enum-values';
 import {Mono} from '../../components/flags';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
-import {MenuItemAlign, MenuItemSize} from '../../../src/menu/types';
 import {Link} from '../../components/link';
 import {
   logicalMarginOverrideProps,
@@ -86,17 +84,17 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             propName: 'size',
             options: [
               {
-                label: 'MenuItemSize.Small',
-                value: MenuItemSize.Small,
+                label: 'small',
+                value: 'small',
               },
               {
-                label: 'MenuItemSize.Medium',
-                value: MenuItemSize.Medium,
+                label: 'medium',
+                value: 'medium',
                 isDefault: true,
               },
               {
-                label: 'MenuItemSize.Large',
-                value: MenuItemSize.Large,
+                label: 'large',
+                value: 'large',
               },
             ],
           },
@@ -111,17 +109,17 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             propName: 'align',
             options: [
               {
-                label: 'MenuItemAlign.Center',
-                value: MenuItemAlign.Center,
+                label: 'center',
+                value: 'center',
                 isDefault: true,
               },
               {
-                label: 'MenuItemAlign.Start',
-                value: MenuItemAlign.Start,
+                label: 'start',
+                value: 'start',
               },
               {
-                label: 'MenuItemAlign.End',
-                value: MenuItemAlign.End,
+                label: 'end',
+                value: 'end',
               },
             ],
           },
@@ -185,12 +183,10 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       cards: [
         {
           title: 'Orientation',
-          description: (
-            <TextBlock>
+          description: `
               A Menu can be displayed horizontally or vertically to effectively
               and appropriately use the space on a screen.
-            </TextBlock>
-          ) as any,
+            `,
           media: getIllustrationComponent(
             'components/menu/menu-options-orientation-illustration',
           ),
@@ -199,13 +195,11 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           title: 'Title',
           description: (
             <>
-              <TextBlock>
-                A title can be displayed in a Menu Item Group above the Menu
-                items. This could be used for categorising Menu items.
-              </TextBlock>
-              <TextBlock>
-                This is only available when a Menu is in a vertical orientation.
-              </TextBlock>
+              A title can be displayed in a Menu Item Group above the Menu
+              items. This could be used for categorising Menu items.
+              <br />
+              <br />
+              This is only available when a Menu is in a vertical orientation.
             </>
           ) as any,
           media: getIllustrationComponent(
@@ -232,23 +226,22 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           title: 'Alignment',
           description: (
             <>
-              <ul>
-                <li>
+              <UnorderedList markerAlign="start">
+                <>
                   <Mono>Center</Mono>: Centers the Menu item label and icons.
-                </li>
-                <li>
+                </>
+                <>
                   <Mono>Start</Mono>: Aligns the Menu item label and icons to
                   the left.
-                </li>
-                <li>
+                </>
+                <>
                   <Mono>End</Mono>: Aligns the Menu item label and icons to the
                   right.
-                </li>
-              </ul>
+                </>
+              </UnorderedList>
               <InlineMessage role="region" aria-label="note" title="Note">
                 Default value depends on the vertical prop: when is True the
-                value is set to MenuItemAlign.Start, and MenuAlign.Center when
-                is False.
+                value is set to `start`, and `center` when is False.
               </InlineMessage>
             </>
           ) as any,
@@ -268,25 +261,26 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           title: 'Style',
           description: (
             <>
-              <p>
-                There are three default styles that can be mapped based on their
-                orientation and application.
-              </p>
-              <ul>
-                <li>
+              There are three default styles that can be mapped based on their
+              orientation and application.
+              <UnorderedList
+                markerAlign="start"
+                overrides={{marginBlockStart: 'space030'}}
+              >
+                <>
                   <Mono>menuItemVertical</Mono> this is the default style
                   applied when the menu is in a vertical orientation.
-                </li>
-                <li>
+                </>
+                <>
                   <Mono>menuItemHorizonal</Mono> this is the default style
                   applied when the menu is in a horizontal orientation.
-                </li>
-                <li>
+                </>
+                <>
                   <Mono>menuItemHorizontalInverse</Mono> this is the default
                   style applied when the menu is in a horizontal orientation on
                   contrasting background colour.
-                </li>
-              </ul>
+                </>
+              </UnorderedList>
             </>
           ) as any,
           media: getIllustrationComponent(
@@ -566,8 +560,8 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             },
             {
               name: 'size',
-              type: parseEnumValues(MenuItemSize),
-              default: 'MenuItemSize.medium',
+              type: "'small' | 'medium' |'large'",
+              default: 'medium',
               description: `Defines the size of the Menu.`,
             },
             {
@@ -578,8 +572,8 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             },
             {
               name: 'align',
-              type: parseEnumValues(MenuItemAlign),
-              default: 'MenuItemAlign.start',
+              type: "'start' | 'end' | 'center'",
+              default: 'start',
               description: `Defines the alignment of the Menu items.`,
             },
           ],

@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonSize, IconButton, styled, ShareBar} from 'newskit';
+import {IconButton, styled, ShareBar} from 'newskit';
 
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
@@ -53,21 +53,21 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
           <PlaygroundContainer>
             <ShareBar {...state}>
               <IconButton
-                size={ButtonSize.Large}
+                size="large"
                 overrides={{stylePreset: 'iconButtonMinimalSecondary'}}
                 aria-label="Share on Twitter"
               >
                 <IconFilledInstagram />
               </IconButton>
               <IconButton
-                size={ButtonSize.Large}
+                size="large"
                 overrides={{stylePreset: 'iconButtonMinimalSecondary'}}
                 aria-label="Share on Twitter"
               >
                 <IconFilledTwitter />
               </IconButton>
               <IconButton
-                size={ButtonSize.Large}
+                size="large"
                 overrides={{stylePreset: 'iconButtonMinimalSecondary'}}
                 aria-label="Share on Facebook"
               >

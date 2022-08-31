@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, ButtonSize, IconButtonProps} from '../button';
+import {Button, IconButtonProps} from '../button';
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import defaults from './defaults';
@@ -11,7 +11,7 @@ const ThemelessIconButton = React.forwardRef<
   IconButtonProps
 >(({overrides = {}, ...props}, ref) => {
   const theme = useTheme();
-  const {size = ButtonSize.Small} = props;
+  const {size = 'small'} = props;
 
   const iconButtonSettings: typeof overrides = {
     ...theme.componentDefaults.iconButton[size],

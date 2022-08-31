@@ -3,7 +3,7 @@
 exports[`Standfirst renders as h4 html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 @media screen and (max-width: 1023px) {
@@ -61,7 +61,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
 exports[`Standfirst renders as span html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   display: inline-block;
 }
 
@@ -113,6 +113,65 @@ exports[`Standfirst renders as span html tag 1`] = `
 
 <span
     class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Standfirst renders with additional HTML attributes 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: #3B3B3B;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    margin-bottom: -0.2055em;
+    display: block;
+  }
+
+  .emotion-0::after {
+    content: '';
+    margin-top: -0.2275em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 20px;
+    line-height: 22.5px;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    margin-bottom: -0.2055em;
+    display: block;
+  }
+
+  .emotion-0::after {
+    content: '';
+    margin-top: -0.2275em;
+    display: block;
+  }
+}
+
+<h2
+    class="emotion-0"
+    id="standfirst-id"
   />
 </DocumentFragment>
 `;
@@ -178,7 +237,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
 exports[`Standfirst renders with custom typography preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Bitter",serif;
   font-size: 16px;
   line-height: 18px;
@@ -208,7 +267,7 @@ exports[`Standfirst renders with custom typography preset 1`] = `
 exports[`Standfirst renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 @media screen and (max-width: 1023px) {
@@ -266,7 +325,7 @@ exports[`Standfirst renders with default styles 1`] = `
 exports[`Standfirst renders with logical prop overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   padding-inline: 20px;
   padding-block: 10px;
 }

@@ -3,12 +3,12 @@ import {
   InlineMessage,
   TextBlock,
   toNewsKitIcon,
-  UnorderedList,
   Block,
   Form,
   Button,
   styled,
   EmailInput,
+  UnorderedList,
 } from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
@@ -19,7 +19,6 @@ import {InlineCode} from '../../components/markdown-elements';
 import {ContentText} from '../../components/text-section/content-text';
 import {LegacyBlock} from '../../components/legacy-block';
 import {LayoutProps} from '../../components/layout';
-import {IconFilledCircle} from '../../components/icons';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
@@ -437,6 +436,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
     commonSection={{
       id: 'formstructure',
       title: 'Form structure',
+      lastItem: true,
       introduction: (
         <>
           The below diagram outlines how FormInput components can be used inside
@@ -1024,40 +1024,41 @@ const schema = yup.object().shape({
                 aria-label="FormInput component"
                 title="Note"
               >
-                Please refer to the following FormInput component pages for
-                details of props & overrides:
-                <UnorderedList
-                  markerAlign="start"
-                  listItemMarker={IconFilledCircle}
-                  overrides={{
-                    spaceStack: 'space040',
-                    content: {
-                      typographyPreset: 'editorialParagraph010',
-                    },
-                    marginBlockStart: 'space050',
-                  }}
-                >
-                  <>
-                    <Link href="/components/text-field/#component-api">
-                      FormInputTextField
-                    </Link>
-                  </>
-                  <>
-                    <Link href="/components/select/#component-api">
-                      FormInputSelect
-                    </Link>
-                  </>
-                  <>
-                    <Link href="/components/checkbox/#component-api">
-                      FormInputCheckbox
-                    </Link>
-                  </>
-                  <>
-                    <Link href="/components/radio-button/#component-api">
-                      FormInputRadioButton
-                    </Link>
-                  </>
-                </UnorderedList>
+                <>
+                  Please refer to the following FormInput component pages for
+                  details of props & overrides:
+                  <UnorderedList
+                    markerAlign="start"
+                    overrides={{
+                      spaceStack: 'space040',
+                      content: {
+                        typographyPreset: 'editorialParagraph010',
+                      },
+                      marginBlockStart: 'space050',
+                    }}
+                  >
+                    <>
+                      <Link href="/components/text-field/#component-api">
+                        FormInputTextField
+                      </Link>
+                    </>
+                    <>
+                      <Link href="/components/select/#component-api">
+                        FormInputSelect
+                      </Link>
+                    </>
+                    <>
+                      <Link href="/components/checkbox/#component-api">
+                        FormInputCheckbox
+                      </Link>
+                    </>
+                    <>
+                      <Link href="/components/radio-button/#component-api">
+                        FormInputRadioButton
+                      </Link>
+                    </>
+                  </UnorderedList>
+                </>
               </InlineMessage>
             </>
           ),

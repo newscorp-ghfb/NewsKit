@@ -89,7 +89,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -125,7 +125,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 20px;
@@ -161,7 +161,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -172,24 +172,24 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -257,7 +257,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -322,10 +322,10 @@ exports[`Popover close button applies logical prop overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -344,8 +344,8 @@ exports[`Popover close button applies logical prop overrides 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -446,7 +446,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -470,7 +470,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
@@ -505,7 +505,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #A60100;
+  border-color: #820000;
   border-style: solid;
   border-width: 2px;
   padding-inline: 8px;
@@ -539,7 +539,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #A60100;
+  background-color: #820000;
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
@@ -552,7 +552,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -605,7 +605,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -662,10 +662,10 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-7"
             >
-              <div
+              <span
                 class="emotion-8"
               >
                 <svg
@@ -684,8 +684,8 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -709,6 +709,8 @@ exports[`Popover close button should show left-aligned 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -781,7 +783,7 @@ exports[`Popover close button should show left-aligned 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -817,7 +819,7 @@ exports[`Popover close button should show left-aligned 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -853,7 +855,7 @@ exports[`Popover close button should show left-aligned 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -864,24 +866,24 @@ exports[`Popover close button should show left-aligned 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -949,7 +951,7 @@ exports[`Popover close button should show left-aligned 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -972,7 +974,7 @@ exports[`Popover close button should show left-aligned 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="nk-popover-enter-done emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -999,10 +1001,10 @@ exports[`Popover close button should show left-aligned 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -1021,8 +1023,8 @@ exports[`Popover close button should show left-aligned 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -1046,6 +1048,8 @@ exports[`Popover close button should show right-aligned 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1118,7 +1122,7 @@ exports[`Popover close button should show right-aligned 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -1154,7 +1158,7 @@ exports[`Popover close button should show right-aligned 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -1190,7 +1194,7 @@ exports[`Popover close button should show right-aligned 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -1201,24 +1205,24 @@ exports[`Popover close button should show right-aligned 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -1286,7 +1290,7 @@ exports[`Popover close button should show right-aligned 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1309,7 +1313,7 @@ exports[`Popover close button should show right-aligned 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="nk-popover-enter-done emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -1336,10 +1340,10 @@ exports[`Popover close button should show right-aligned 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -1358,8 +1362,8 @@ exports[`Popover close button should show right-aligned 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -1457,7 +1461,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -1493,7 +1497,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -1529,7 +1533,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -1540,24 +1544,24 @@ exports[`Popover content applies logical prop overrides 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -1625,7 +1629,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1690,10 +1694,10 @@ exports[`Popover content applies logical prop overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -1712,8 +1716,8 @@ exports[`Popover content applies logical prop overrides 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -1814,7 +1818,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -1838,7 +1842,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
@@ -1874,7 +1878,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -1910,7 +1914,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -1921,24 +1925,24 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -2006,7 +2010,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2063,10 +2067,10 @@ exports[`Popover content applies stylePreset overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-7"
             >
-              <div
+              <span
                 class="emotion-8"
               >
                 <svg
@@ -2085,8 +2089,8 @@ exports[`Popover content applies stylePreset overrides 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -2184,7 +2188,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -2220,7 +2224,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -2256,7 +2260,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -2267,24 +2271,24 @@ exports[`Popover content applies typography preset overrides 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -2352,7 +2356,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2417,10 +2421,10 @@ exports[`Popover content applies typography preset overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -2439,8 +2443,8 @@ exports[`Popover content applies typography preset overrides 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -2541,7 +2545,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -2565,7 +2569,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
@@ -2600,7 +2604,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -2636,7 +2640,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -2647,24 +2651,24 @@ exports[`Popover header applies logical prop overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -2732,7 +2736,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2804,10 +2808,10 @@ exports[`Popover header applies logical prop overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-7"
             >
-              <div
+              <span
                 class="emotion-8"
               >
                 <svg
@@ -2826,8 +2830,8 @@ exports[`Popover header applies logical prop overrides 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -2928,7 +2932,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -2952,7 +2956,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
@@ -2987,7 +2991,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -3023,7 +3027,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -3034,24 +3038,24 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -3119,7 +3123,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3176,10 +3180,10 @@ exports[`Popover header applies stylePreset overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-7"
             >
-              <div
+              <span
                 class="emotion-8"
               >
                 <svg
@@ -3198,8 +3202,8 @@ exports[`Popover header applies stylePreset overrides 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -3296,7 +3300,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -3320,7 +3324,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
@@ -3355,7 +3359,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -3391,7 +3395,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -3402,24 +3406,24 @@ exports[`Popover header applies typography preset overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -3487,7 +3491,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3559,10 +3563,10 @@ exports[`Popover header applies typography preset overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-7"
             >
-              <div
+              <span
                 class="emotion-8"
               >
                 <svg
@@ -3581,8 +3585,8 @@ exports[`Popover header applies typography preset overrides 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -3684,7 +3688,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -3720,7 +3724,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -3756,7 +3760,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -3767,24 +3771,24 @@ exports[`Popover offset should be applied with pointer and px distance override 
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -3852,7 +3856,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3917,10 +3921,10 @@ exports[`Popover offset should be applied with pointer and px distance override 
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -3939,8 +3943,8 @@ exports[`Popover offset should be applied with pointer and px distance override 
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -4042,7 +4046,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -4078,7 +4082,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -4114,7 +4118,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -4125,24 +4129,24 @@ exports[`Popover offset should be applied with pointer and token distance overri
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -4210,7 +4214,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4275,10 +4279,10 @@ exports[`Popover offset should be applied with pointer and token distance overri
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -4297,8 +4301,8 @@ exports[`Popover offset should be applied with pointer and token distance overri
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -4400,7 +4404,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -4436,7 +4440,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -4472,7 +4476,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -4483,24 +4487,24 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -4568,7 +4572,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4633,10 +4637,10 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -4655,8 +4659,8 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -4758,7 +4762,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -4794,7 +4798,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -4830,7 +4834,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -4841,24 +4845,24 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -4926,7 +4930,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4991,10 +4995,10 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -5013,8 +5017,8 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -5116,7 +5120,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -5152,7 +5156,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -5188,7 +5192,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -5199,24 +5203,24 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -5284,7 +5288,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5334,10 +5338,10 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -5356,8 +5360,8 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -5455,7 +5459,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -5491,7 +5495,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -5527,7 +5531,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -5538,24 +5542,24 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -5623,7 +5627,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5688,10 +5692,10 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -5710,8 +5714,8 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -5813,7 +5817,7 @@ exports[`Popover pointer padding should be applied with token distance override 
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -5849,7 +5853,7 @@ exports[`Popover pointer padding should be applied with token distance override 
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -5885,7 +5889,7 @@ exports[`Popover pointer padding should be applied with token distance override 
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -5896,24 +5900,24 @@ exports[`Popover pointer padding should be applied with token distance override 
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -5981,7 +5985,7 @@ exports[`Popover pointer padding should be applied with token distance override 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6046,10 +6050,10 @@ exports[`Popover pointer padding should be applied with token distance override 
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -6068,8 +6072,8 @@ exports[`Popover pointer padding should be applied with token distance override 
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -6171,7 +6175,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -6207,7 +6211,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -6243,7 +6247,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -6254,24 +6258,24 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -6339,7 +6343,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6404,10 +6408,10 @@ exports[`Popover pointer padding should not be applied with invalid token distan
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -6426,8 +6430,8 @@ exports[`Popover pointer padding should not be applied with invalid token distan
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -6529,7 +6533,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -6565,7 +6569,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -6601,7 +6605,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -6612,24 +6616,24 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -6697,7 +6701,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6762,10 +6766,10 @@ exports[`Popover pointer padding should not be applied with non-px distance over
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -6784,8 +6788,8 @@ exports[`Popover pointer padding should not be applied with non-px distance over
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -6887,7 +6891,7 @@ exports[`Popover should render correct styles: default 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -6923,7 +6927,7 @@ exports[`Popover should render correct styles: default 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -6959,7 +6963,7 @@ exports[`Popover should render correct styles: default 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -6970,24 +6974,24 @@ exports[`Popover should render correct styles: default 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -7055,7 +7059,7 @@ exports[`Popover should render correct styles: default 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7105,10 +7109,10 @@ exports[`Popover should render correct styles: default 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -7127,8 +7131,8 @@ exports[`Popover should render correct styles: default 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -7230,9 +7234,9 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  background-color: #EF1703;
+  background-color: #D60000;
   border-radius: 0;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -7273,7 +7277,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -7309,7 +7313,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -7320,24 +7324,24 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -7405,7 +7409,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7455,10 +7459,10 @@ exports[`Popover should render correct styles: with overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -7477,8 +7481,8 @@ exports[`Popover should render correct styles: with overrides 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -7576,7 +7580,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -7612,7 +7616,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -7648,7 +7652,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -7659,24 +7663,24 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -7744,7 +7748,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7809,10 +7813,10 @@ exports[`Popover should render correct styles: with pointer 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -7831,8 +7835,8 @@ exports[`Popover should render correct styles: with pointer 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -7934,7 +7938,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -7970,7 +7974,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -8006,7 +8010,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -8017,24 +8021,24 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -8102,7 +8106,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8167,10 +8171,10 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -8189,8 +8193,8 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -8292,7 +8296,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -8328,7 +8332,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -8364,7 +8368,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -8375,24 +8379,24 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -8460,7 +8464,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8489,7 +8493,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #A60100;
+  background-color: #820000;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -8525,10 +8529,10 @@ exports[`Popover should render correct styles: with pointer stylePreset override
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -8547,8 +8551,8 @@ exports[`Popover should render correct styles: with pointer stylePreset override
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>
@@ -8650,7 +8654,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -8686,7 +8690,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
   padding-inline: 8px;
@@ -8722,7 +8726,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -8733,24 +8737,24 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -8818,7 +8822,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8883,10 +8887,10 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <div
+            <span
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
                 <svg
@@ -8905,8 +8909,8 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                   />
                 </svg>
-              </div>
-            </div>
+              </span>
+            </span>
           </button>
         </div>
       </div>

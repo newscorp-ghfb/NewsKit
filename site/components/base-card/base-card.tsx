@@ -1,10 +1,11 @@
 import React from 'react';
-import {Block, Headline, TextBlock} from 'newskit';
+import {Block, Headline} from 'newskit';
+import {UnpackContent} from '../unpack-content';
 import {BaseCardProps} from './types';
 import {StyledCard} from './styled';
 
 export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
-  ({title, description, children, href, overrides, ...rest}, ref) => {
+  ({title, description, href, overrides, ...rest}, ref) => {
     const cardOverrides = href
       ? {
           ...overrides,
@@ -43,12 +44,15 @@ export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
             </Headline>
           </Block>
         )}
-        <TextBlock
-          typographyPreset="editorialParagraph020"
-          stylePreset="inkBase"
+
+        <UnpackContent
+          textBlockProps={{
+            stylePreset: 'inkBase',
+            typographyPreset: 'editorialParagraph020',
+          }}
         >
           {description}
-        </TextBlock>
+        </UnpackContent>
       </StyledCard>
     );
   },

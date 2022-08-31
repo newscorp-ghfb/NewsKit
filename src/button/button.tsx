@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonOrButtonLinkProps, ButtonSize, isButtonLink} from './types';
+import {ButtonOrButtonLinkProps, isButtonLink} from './types';
 import {StyledFlag} from './styled';
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
@@ -9,6 +9,7 @@ import {useInstrumentation, EventTrigger} from '../instrumentation';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {GridLayoutItem} from '../grid-layout';
 
 const ThemelessButton = React.forwardRef<
   HTMLButtonElement | HTMLAnchorElement,
@@ -17,7 +18,7 @@ const ThemelessButton = React.forwardRef<
   const theme = useTheme();
   const {fireEvent} = useInstrumentation();
 
-  const {children, overrides = {}, size = ButtonSize.Medium, loading} = props;
+  const {children, overrides = {}, size = 'medium', loading} = props;
 
   const buttonSettings: typeof overrides = {
     ...theme.componentDefaults.button[size],
@@ -85,16 +86,16 @@ const ThemelessButton = React.forwardRef<
   return (
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     <StyledFlag {...getProps(props)} ref={ref as any}>
-      {loading ? (
+      {loading && (
         <IndeterminateProgressIndicator
+          style={{inset: '0', position: 'absolute'}}
           overrides={{
             size: buttonSettings!.iconSize,
             stylePreset: loadingIndicatorStylePreset,
           }}
         />
-      ) : (
-        children
       )}
+      {children}
     </StyledFlag>
   );
 });
