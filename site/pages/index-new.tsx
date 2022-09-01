@@ -39,7 +39,12 @@ const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
       >
         <Hero contentContainerOverrides={GRID_SECTION_OVERRIDES} />
         {showEventBanner && (
-          <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+          <GridLayout
+            overrides={{
+              ...GRID_SECTION_OVERRIDES,
+              marginBlockEnd: {xs: 'space080', md: 'space000'},
+            }}
+          >
             <FeatureCard
               title="World Design Systems Week 2022"
               description="19-23 September 2022"
@@ -65,7 +70,12 @@ const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
           <WhatsNew releases={releases} />
         </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        >
           <FeatureCard
             title="Contribute"
             description="Join the community and help grow NewsKit for everyone."
@@ -83,7 +93,12 @@ const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
             }}
           />
         </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        >
           <KeepInTouch />
         </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>

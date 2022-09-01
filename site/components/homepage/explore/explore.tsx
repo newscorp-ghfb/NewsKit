@@ -42,7 +42,10 @@ export const Explore = () => (
           key={href}
           href={href}
           media={() => media}
-          overrides={{stylePreset: 'homepageCard'}}
+          overrides={{
+            stylePreset: 'homepageCard',
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
         >
           <Headline
             overrides={{
