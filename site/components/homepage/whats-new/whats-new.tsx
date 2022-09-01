@@ -30,7 +30,6 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
         <Card
           overrides={{
             stylePreset: 'homepageCard',
-            marginBlockStart: 'space050',
           }}
           key={latestRelease.tag_name}
           href={latestRelease.html_url}
@@ -81,11 +80,9 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
       </ContentPrimary>
 
       <ContentPrimary hideBottomSpacing>
-        <Card
-          overrides={{
-            stylePreset: 'homepageCard',
-            marginBlockStart: 'space080',
-          }}
+        <Block
+          marginBlockStart={{md: 'space080', lg: 'space100'}}
+          paddingBlockStart={{md: 'space050'}}
         >
           {restReleases.map(({html_url, tag_name}) => (
             <Block>
@@ -105,7 +102,7 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
                   NewsKit {tag_name}
                   <IconFilledLaunch
                     overrides={{
-                      marginBlockEnd: '-7px',
+                      marginBlockEnd: '-6px',
                       marginInlineStart: 'space020',
                       size: 'iconSize020',
                     }}
@@ -114,7 +111,7 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
               </LinkStandalone>
             </Block>
           ))}
-        </Card>
+        </Block>
       </ContentPrimary>
     </GridLayout>
   );
