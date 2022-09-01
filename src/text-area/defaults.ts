@@ -3,6 +3,7 @@ export default {
     small: {
       stylePreset: 'inputField',
       minHeight: 'sizing070',
+      height: 'sizing100',
       width: '100%',
       typographyPreset: 'utilityBody020',
 
@@ -17,6 +18,7 @@ export default {
     medium: {
       stylePreset: 'inputField',
       minHeight: 'sizing080',
+      height: 'sizing110',
       width: '100%',
       typographyPreset: 'utilityBody020',
 
@@ -31,6 +33,7 @@ export default {
     large: {
       stylePreset: 'inputField',
       minHeight: 'sizing090',
+      height: 'sizing110',
       width: '100%',
       typographyPreset: 'utilityBody030',
 

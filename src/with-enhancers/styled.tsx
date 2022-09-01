@@ -55,6 +55,7 @@ export const StyledInputContainer = styled.div<
 
   ${({resize, ...props}) =>
     resize &&
+    resize !== 'none' &&
     css`
       resize: ${resize};
       position: relative;
