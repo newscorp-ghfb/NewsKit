@@ -2669,6 +2669,7 @@ Object {
   },
   "textArea": Object {
     "large": Object {
+      "height": "sizing110",
       "marginBlockEnd": "space020",
       "minHeight": "sizing090",
       "paddingBlock": "space030",
@@ -2678,6 +2679,7 @@ Object {
       "width": "100%",
     },
     "medium": Object {
+      "height": "sizing110",
       "marginBlockEnd": "space020",
       "minHeight": "sizing080",
       "paddingBlock": "space030",
@@ -2687,6 +2689,7 @@ Object {
       "width": "100%",
     },
     "small": Object {
+      "height": "sizing100",
       "marginBlockEnd": "space020",
       "minHeight": "sizing070",
       "paddingBlock": "space020",
