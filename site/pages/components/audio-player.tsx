@@ -227,8 +227,18 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ),
         },
       ],
-      notice:
-        'Code examples can be viewed in Storybook via the ‘Story’ tab in the addons panel.',
+      notice: (
+        <>
+          Code examples can be viewed in{' '}
+          <Link
+            href="https://storybook.newskit.co.uk/?path=/story/newskit-light-audio-player-composable--audio-player"
+            target="_blank"
+          >
+            Storybook
+          </Link>{' '}
+          via the ‘Story’ tab in the addons panel.
+        </>
+      ),
     }}
     options={{
       introduction:
@@ -403,7 +413,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/audio-player/behaviours/buffering',
+            'components/audio-player/behaviours/skip-next',
           ),
         },
         {
