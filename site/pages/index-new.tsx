@@ -67,7 +67,12 @@ const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
           <Explore />
         </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        >
           <WhatsNew releases={releases} />
         </GridLayout>
         <GridLayout
