@@ -1,8 +1,17 @@
 import React from 'react';
+import {styled, Flag, FlagProps} from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+
+const PlaygroundContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+`;
 
 const FlagComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -29,6 +38,105 @@ const FlagComponent = (layoutProps: LayoutProps) => (
         'https://github.com/newscorp-ghfb/ncu-newskit/blob/develop/src/flag/flag.tsx',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=1952%3A2650',
+    }}
+    interactiveDemo={{
+      introduction:
+        'This demo allows you to preview the Flag component, its variations, and configuration options.',
+      playground: {
+        componentName: 'Flag',
+        component: (props: FlagProps) => (
+          <PlaygroundContainer>
+            <Flag {...props} />
+          </PlaygroundContainer>
+        ),
+        knobs: [
+          {
+            name: 'Content',
+            propName: 'children',
+            value: 'Flag Content',
+          },
+          {
+            name: 'Flag Size',
+            propName: 'size',
+            options: [
+              {
+                label: 'Default (Small)',
+                value: 'small',
+                isDefault: true,
+              },
+              {
+                label: 'Medium',
+                value: 'medium',
+              },
+              {
+                label: 'Large',
+                value: 'large',
+              },
+            ],
+          },
+          {
+            name: 'Spacing Preset',
+            propName: 'overrides',
+            options: [
+              {
+                label: 'Default',
+                isDefault: true,
+              },
+              {
+                label: 'spaceInsetSquish000',
+                value: {
+                  spaceInset: 'spaceInsetSquish000',
+                },
+              },
+            ],
+          },
+          {
+            name: 'Style Preset',
+            propName: 'overrides',
+            options: [
+              {
+                label: 'Default',
+                isDefault: true,
+              },
+              {
+                label: 'flagSolid',
+                value: {
+                  stylePreset: 'flagSolid',
+                },
+              },
+              {
+                label: 'flagMinimal',
+                value: {
+                  stylePreset: 'flagMinimal',
+                },
+              },
+            ],
+          },
+          {
+            name: 'Typography Preset',
+            propName: 'overrides',
+            options: [
+              {
+                label: 'Default',
+                isDefault: true,
+              },
+              {
+                label: 'utilityLabel010',
+                value: {
+                  typographyPreset: 'utilityLabel010',
+                },
+              },
+              {
+                label: 'label020',
+                value: {
+                  typographyPreset: 'label020',
+                },
+              },
+            ],
+          },
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ] as any,
+      },
     }}
     anatomy={{
       introduction:
