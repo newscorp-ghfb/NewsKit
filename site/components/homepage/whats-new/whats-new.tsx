@@ -21,16 +21,14 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
   const [latestRelease, ...restReleases] = releases;
 
   return (
-    <GridLayout
-      columns={{xs: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)'}}
-      rowGap="space080"
-      columnGap="space050"
-    >
-      <ContentPrimary headline="Latest releases" hideBottomSpacing>
+    <ContentPrimary headline="Latest releases" hideBottomSpacing>
+      <GridLayout
+        columns={{xs: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)'}}
+        rowGap="space040"
+        columnGap="space100"
+      >
         <Card
-          overrides={{
-            stylePreset: 'homepageCard',
-          }}
+          overrides={{stylePreset: 'homepageCard'}}
           key={latestRelease.tag_name}
           href={latestRelease.html_url}
         >
@@ -77,13 +75,7 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
             This release includes new features, bug fixes and other changes.
           </TextBlock>
         </Card>
-      </ContentPrimary>
-
-      <ContentPrimary hideBottomSpacing>
-        <Block
-          marginBlockStart={{md: 'space080', lg: 'space100'}}
-          paddingBlockStart={{md: 'space050'}}
-        >
+        <Block marginBlockStart="space020">
           {restReleases.map(({html_url, tag_name}) => (
             <Block>
               <LinkStandalone
@@ -112,7 +104,7 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
             </Block>
           ))}
         </Block>
-      </ContentPrimary>
-    </GridLayout>
+      </GridLayout>
+    </ContentPrimary>
   );
 };
