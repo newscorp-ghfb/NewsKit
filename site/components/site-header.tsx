@@ -124,7 +124,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           <MenuItem
             data-testid="styled-indicator"
             key={id}
-            href={id.substring(1)}
+            href={id}
             size="small"
             selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
             overrides={{
