@@ -12,9 +12,13 @@ import {
 
 const sendEvent = api => {
   const {path} = api.getUrlState();
+  const {title, story} = api.getCurrentStoryData();
 
   const event = {
-    context: {url: path},
+    context: {
+      url: path,
+      pageName: `${title.replace('NewsKit Light/', '')} : ${story}`,
+    },
     originator: 'page-load',
     trigger: 'load',
   };
