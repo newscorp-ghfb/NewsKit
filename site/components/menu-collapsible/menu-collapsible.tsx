@@ -58,7 +58,7 @@ export const MenuMobileCollapsible = ({
         list.map(({title, id, subNav, page}) => (
           <React.Fragment key={id}>
             {page ? (
-              <LinkNext href={id}>
+              <LinkNext href={id} passHref>
                 <MenuItem
                   href={id}
                   selected={path.includes(id)}

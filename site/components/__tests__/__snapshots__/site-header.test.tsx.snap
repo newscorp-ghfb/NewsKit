@@ -1448,7 +1448,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   aria-current="page"
                   class="emotion-42"
                   data-testid="styled-indicator"
-                  href="about/introduction"
+                  href="/about/introduction"
                 >
                   <span
                     class="emotion-5"
@@ -1472,7 +1472,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   aria-current="false"
                   class="emotion-47"
                   data-testid="styled-indicator"
-                  href="getting-started/overview"
+                  href="/getting-started/overview"
                 >
                   <span
                     class="emotion-5"
@@ -1496,7 +1496,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   aria-current="false"
                   class="emotion-47"
                   data-testid="styled-indicator"
-                  href="theme/overview"
+                  href="/theme/overview"
                 >
                   <span
                     class="emotion-5"
@@ -1520,7 +1520,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   aria-current="false"
                   class="emotion-47"
                   data-testid="styled-indicator"
-                  href="components/overview"
+                  href="/components/overview"
                 >
                   <span
                     class="emotion-5"
@@ -1544,7 +1544,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   aria-current="false"
                   class="emotion-47"
                   data-testid="styled-indicator"
-                  href="patterns/overview"
+                  href="/patterns/overview"
                 >
                   <span
                     class="emotion-5"
@@ -3190,7 +3190,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   aria-current="page"
                   class="emotion-42"
                   data-testid="styled-indicator"
-                  href="about/introduction"
+                  href="/about/introduction"
                 >
                   <span
                     class="emotion-5"
@@ -3214,7 +3214,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   aria-current="false"
                   class="emotion-47"
                   data-testid="styled-indicator"
-                  href="getting-started/overview"
+                  href="/getting-started/overview"
                 >
                   <span
                     class="emotion-5"
@@ -3238,7 +3238,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   aria-current="false"
                   class="emotion-47"
                   data-testid="styled-indicator"
-                  href="theme/overview"
+                  href="/theme/overview"
                 >
                   <span
                     class="emotion-5"
@@ -3262,7 +3262,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   aria-current="false"
                   class="emotion-47"
                   data-testid="styled-indicator"
-                  href="components/overview"
+                  href="/components/overview"
                 >
                   <span
                     class="emotion-5"
@@ -3286,7 +3286,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   aria-current="false"
                   class="emotion-47"
                   data-testid="styled-indicator"
-                  href="patterns/overview"
+                  href="/patterns/overview"
                 >
                   <span
                     class="emotion-5"
@@ -4817,7 +4817,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   aria-current="false"
                   class="emotion-42"
                   data-testid="styled-indicator"
-                  href="about/introduction"
+                  href="/about/introduction"
                 >
                   <span
                     class="emotion-5"
@@ -4841,7 +4841,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   aria-current="false"
                   class="emotion-42"
                   data-testid="styled-indicator"
-                  href="getting-started/overview"
+                  href="/getting-started/overview"
                 >
                   <span
                     class="emotion-5"
@@ -4865,7 +4865,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   aria-current="false"
                   class="emotion-42"
                   data-testid="styled-indicator"
-                  href="theme/overview"
+                  href="/theme/overview"
                 >
                   <span
                     class="emotion-5"
@@ -4889,7 +4889,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   aria-current="false"
                   class="emotion-42"
                   data-testid="styled-indicator"
-                  href="components/overview"
+                  href="/components/overview"
                 >
                   <span
                     class="emotion-5"
@@ -4913,7 +4913,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   aria-current="false"
                   class="emotion-42"
                   data-testid="styled-indicator"
-                  href="patterns/overview"
+                  href="/patterns/overview"
                 >
                   <span
                     class="emotion-5"

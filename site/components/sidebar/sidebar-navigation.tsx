@@ -23,7 +23,7 @@ const MenuTitleLinks: React.FC<PageLinkProps> = ({
   });
 
   return (
-    <LinkNext href={href}>
+    <LinkNext href={href} passHref>
       <MenuItem
         href={href}
         data-testid={page}
