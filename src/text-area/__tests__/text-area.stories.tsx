@@ -9,6 +9,14 @@ import {AssistiveText} from '../../assistive-text';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {FormInputState} from '../../form/types';
 import {TextAreaProps} from '../types';
+import {
+  Form,
+  FormInput,
+  FormInputAssistiveText,
+  FormInputLabel,
+  FormInputTextArea,
+} from '../../form';
+import {Button} from '../../button';
 
 const textAreaCustomThemeObject: CreateThemeArgs = {
   name: 'text-area-custom-theme',
@@ -120,6 +128,46 @@ export const TextAreaRowsAndCols = () => (
         overrides={{width: 'unset', minHeight: 'unset'}}
       />
       <AssistiveText>Assistive Text</AssistiveText>
+    </StorybookCase>
+  </StorybookPage>
+);
+
+export const TextAreaOverrides = () => (
+  <StorybookPage title="TextArea overrides" url={DOCS_URL}>
+    TODO
+  </StorybookPage>
+);
+
+export const TextAreaLogicalProps = () => (
+  <StorybookPage title="TextArea logical props" url={DOCS_URL}>
+    TODO
+  </StorybookPage>
+);
+
+export const TextAreaOutline = () => (
+  <StorybookPage title="TextArea outline" url={DOCS_URL}>
+    TODO
+  </StorybookPage>
+);
+
+export const TextAreaValidation = () => (
+  <StorybookPage title="TextArea validation" url={DOCS_URL}>
+    <StorybookCase title="Form validation">
+      <Form onSubmit={() => console.log('Form submitted')}>
+        <FormInput
+          name="name"
+          rules={{
+            required: 'Required field',
+          }}
+        >
+          <FormInputLabel>Label</FormInputLabel>
+          <FormInputTextArea />
+          <FormInputAssistiveText>Assistive text</FormInputAssistiveText>
+        </FormInput>
+        <Button type="submit" overrides={{marginBlockStart: 'space040'}}>
+          Submit
+        </Button>
+      </Form>
     </StorybookCase>
   </StorybookPage>
 );
