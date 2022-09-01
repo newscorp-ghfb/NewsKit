@@ -83,6 +83,8 @@ const ThemelessTextField = React.forwardRef<
       'stylePreset',
     );
 
+    console.log({textFieldStylePreset});
+
     const placeholderColor = getSingleStylePreset(
       theme,
       'base',

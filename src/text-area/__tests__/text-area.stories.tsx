@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {TextFieldSize} from '../../text-field';
 import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
-import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {ThemeProvider, CreateThemeArgs, newskitLightTheme} from '../../theme';
 import {TextArea} from '../text-area';
 import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
@@ -17,10 +17,30 @@ import {
   FormInputTextArea,
 } from '../../form';
 import {Button} from '../../button';
+import {deepMerge} from '../../utils';
 
 const textAreaCustomThemeObject: CreateThemeArgs = {
   name: 'text-area-custom-theme',
-  overrides: {},
+  overrides: {
+    stylePresets: {
+      customStyle: deepMerge(newskitLightTheme.stylePresets.inputField, {
+        base: {
+          backgroundColor: 'blue',
+          borderWidth: '8px',
+          borderRadius: '10px',
+          borderColor: 'violet',
+          placeholderColor: 'white',
+        },
+      }),
+      customOutline: deepMerge(newskitLightTheme.stylePresets.inputField, {
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+        },
+      }),
+    },
+  },
 };
 
 const DOCS_URL = 'https://newskit.co.uk/components/text-area/';
@@ -134,19 +154,40 @@ export const TextAreaRowsAndCols = () => (
 
 export const TextAreaOverrides = () => (
   <StorybookPage title="TextArea overrides" url={DOCS_URL}>
-    TODO
-  </StorybookPage>
-);
-
-export const TextAreaLogicalProps = () => (
-  <StorybookPage title="TextArea logical props" url={DOCS_URL}>
-    TODO
-  </StorybookPage>
-);
-
-export const TextAreaOutline = () => (
-  <StorybookPage title="TextArea outline" url={DOCS_URL}>
-    TODO
+    <StorybookCase title="style">
+      <Label>Label</Label>
+      <TextArea
+        placeholder="Placeholder"
+        overrides={{
+          stylePreset: 'customStyle',
+          typographyPreset: 'editorialHeadline010',
+        }}
+      />
+      <AssistiveText>Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="logical props">
+      <Label>Label</Label>
+      <TextArea
+        placeholder="Placeholder"
+        overrides={{
+          paddingBlock: 'space050',
+          paddingInline: 'space080',
+          marginBlockStart: 'space060',
+          marginBlockEnd: 'space050',
+        }}
+      />
+      <AssistiveText>Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="outline">
+      <Label>Label</Label>
+      <TextArea
+        placeholder="Placeholder"
+        overrides={{
+          stylePreset: 'customOutline',
+        }}
+      />
+      <AssistiveText>Assistive Text</AssistiveText>
+    </StorybookCase>
   </StorybookPage>
 );
 
