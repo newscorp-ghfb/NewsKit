@@ -61,7 +61,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Flag component, its variations, and configuration options.',
+        'This demo allows you to preview the flag component, its variations, and configuration options.',
       playground: {
         componentName: 'Flag',
         component: (props: FlagProps) => (
