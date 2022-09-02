@@ -18,11 +18,11 @@ The NewsKit design system provides an npm package that exports a library of reus
 
 ### Accessible
 
-NewsKit components folllow [WCAG guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/), [WAI Aria](https://www.w3.org/WAI/standards-guidelines/aria/) and [Aria-practices](https://www.w3.org/TR/wai-aria-practices/). Components are AA compliant with A11Y features built-in including props to extend their flexibility if required.
+NewsKit components follow [WCAG guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/), [WAI Aria](https://www.w3.org/WAI/standards-guidelines/aria/) and [Aria-practices](https://www.w3.org/TR/wai-aria-practices/). Components are AA compliant with A11Y features built-in including props to extend their flexibility if required.
 
 ### Adaptive
 
-NewsKit has an extensive [theming system](https://newskit.co.uk/theme/overview/) that enables customization of style and layout. Additionally components support a range of properties to customise behaviour.
+NewsKit has an extensive [theming system](https://newskit.co.uk/theme/overview/) that enables customization of style and layout. Additionally components support a range of properties to customise behavior.
 
 ### Productive
 
@@ -65,33 +65,38 @@ To start using NewsKit components in your projects your projects you will need t
 Use your favourite package manager to install NewsKit.
 
 ```bash
-npm install newskit
+npm install newskit @emotion/react @emotion/styled
 ```
 
 ```bash
-yarn add newskit
+yarn add newskit @emotion/react @emotion/styled
 ```
+
+>Please note that newskit is using [emotion](https://emotion.sh/docs/introduction) as styling engine, that is why you also need to `install@emotion/react` and `@emotion/styled`.
 
 ## 🔨 Usage
 
-NewsKit components can be used like any typical react components. One thing to bear in mind is that they will need to be descendants of a `ThemeProvider`, this can be thought of as the theme context, this theme will be applied to all of its descendants.
-The following example shows the "Hello World!" example of using a NewsKit component. More comprehensive usage documentation can be found on our [website](https://www.newskit.co.uk/getting-started/code/engineering-quickstart/).
+NewsKit components can be used like any typical react components. One thing to bear in mind is that they will need to be descendants of a `NewsKitProvider`  which provides a single wrapper to configure your application. It adds a [ThemeProvider](https://www.newskit.co.uk/theme/theming/using-a-theme/), [MediaQueryProvider](https://www.newskit.co.uk/components/utils/hooks/#usemediaqueryobject), [InstrumentationProvider](https://www.newskit.co.uk/getting-started/code/instrumentation/) and a LayerOrganizer to handle theming, media queries, instrumentation and stacking context in the application.
+
+The following example shows the "Hello World!" example of using a NewsKit [Tag](https://www.newskit.co.uk/components/tag/) component with the NewsKitProvider.
 
 ```typescript
-import {ThemeProvider, Tag, newskitLightTheme} from 'newskit';
+import {NewsKitProvider, Tag, newskitLightTheme} from 'newskit';
 import React from 'react';
-
 export default class App extends React.Component {
-
   render() {
     return (
-      <ThemeProvider theme={newskitLightTheme}>
+      <NewsKitProvider
+        theme={newskitLightTheme}
+        instrumentation={'instrumentation provider props'}
+        layer={'layer organizer props'}
+        >
         <Tag
           href="http://example.com"
           size="medium">
             Tag Content
         </Tag>
-      </ThemeProvider>
+      </NewsKitProvider>
     )
   }
 }
@@ -99,7 +104,7 @@ export default class App extends React.Component {
 
 ## 👉 What’s next
 
-* To start engineering with NewsKit, follow the steps in the [quickstart guide](https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2354218083).
+* To start engineering with NewsKit, follow the steps in the [quickstart guide](https://www.newskit.co.uk/getting-started/code/engineering-quickstart/).
 * Have a question? [Contact the NewsKit team via the contact form](https://newskit.co.uk/about/contact-us/).
 
 ## 🐛 Bugs, Issues & Feature requests
