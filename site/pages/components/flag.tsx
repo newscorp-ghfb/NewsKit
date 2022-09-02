@@ -296,7 +296,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
             },
             {
               name: 'size',
-              type: 'small | medium | large',
+              type: ['small', 'medium', 'large'],
               default: 'small',
               description: 'Defines the size of the Flag.',
               required: undefined,
