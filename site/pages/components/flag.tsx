@@ -1,9 +1,29 @@
 import React from 'react';
-import {styled, Flag, FlagProps} from 'newskit';
+import {
+  styled,
+  Flag,
+  FlagProps,
+  UnorderedList,
+  InlineMessage,
+  toNewsKitIcon,
+} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
+import {Link} from '../../components/link';
+import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
 
 const PlaygroundContainer = styled.div`
   display: flex;
@@ -193,6 +213,238 @@ const FlagComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/flag/options/icons'),
         },
       ],
+    }}
+    usage={{
+      introduction:
+        'The following guidance describes how and when to appropriately use the switch component.',
+      cards: [
+        {
+          description:
+            'Use flags to draw attention to a new feature, piece of content, or status change that may be of particular interest to a user.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/flag/usage/do-01'),
+        },
+        {
+          description: (
+            <>
+              Avoid using flags for categorisation other than status. Consider
+              using a <Link href="/components/tag/">tag</Link> instead.
+            </>
+          ),
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/flag/usage/dont-01'),
+        },
+        {
+          description: 'Use flags as a non-interactive status indicator.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/flag/usage/do-02'),
+        },
+      ],
+    }}
+    seo={{
+      title: 'SEO Considerations',
+      introduction: (
+        <UnorderedList
+          markerAlign="start"
+          overrides={{
+            marginBlockStart: 'space030',
+            spaceStack: 'space050',
+            content: {
+              typographyPreset: 'editorialParagraph030',
+            },
+            marker: {
+              spaceInline: 'space030',
+            },
+          }}
+        >
+          <>Ensure icons have alt text applied.</>
+        </UnorderedList>
+      ),
+    }}
+    componentAPI={{
+      components: [
+        {
+          title: 'Flag',
+          summary:
+            'The flag has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactNode',
+              default: 'medium',
+              description: (
+                <>
+                  If provided, the content of the Flag is passed as the child of
+                  the component.
+                  <InlineMessage
+                    icon={infoIcon}
+                    role="region"
+                    aria-label="Thumb and track"
+                    overrides={{
+                      marginBlockStart: 'space050',
+                    }}
+                  >
+                    Only if the children type supplied is a string or number it
+                    will be rendered inside a{' '}
+                    <Link href="/components/text-block/">Text Block.</Link>
+                  </InlineMessage>
+                </>
+              ),
+              required: true,
+            },
+            {
+              name: 'size',
+              type: 'small | medium | large',
+              default: 'small',
+              description: 'Defines the size of the Flag.',
+              required: undefined,
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'flag.spaceInset',
+              type: 'MQ<string>',
+              default: [
+                'sm: spaceInsetSquish010',
+                'md: spaceInsetSquish020',
+                'lg: spaceInsetSquish020',
+              ],
+              description: 'Overrides the spaceInset of the Flag.',
+            },
+            {
+              attribute: 'flag.stylePreset',
+              type: 'MQ<string>',
+              default: 'flagDefault',
+              description: 'Overrides the spaceInset of the Flag.',
+            },
+            {
+              attribute: 'flag.typographyPreset',
+              type: 'MQ<string>',
+              default: [
+                'sm: utilityLabel010',
+                'md: utilityLabel020',
+                'lg: utilityLabel030',
+              ],
+              description: 'Overrides the typographyPreset of the Flag.',
+            },
+            {
+              attribute: 'flag.spaceInline',
+              type: 'MQ<string>',
+              default: 'space010',
+              description: (
+                <>
+                  Overrides the spaceInline of the Flag.
+                  <br />
+                  <br />
+                  Note - If less than two children are passed, this prop is
+                  irrelevant.
+                </>
+              ),
+            },
+            {
+              attribute: 'flag.iconSize',
+              type: 'MQ<string>',
+              default: 'iconSize010',
+              description: (
+                <>
+                  Overrides the iconSize of the Flag.
+                  <br />
+                  <br />
+                  Note - If no icons are present in the Flag&apos;s children
+                  then this prop is irrelevant.
+                </>
+              ),
+            },
+            {
+              attribute: 'flag.width',
+              type: 'MQ<string>',
+              default: '',
+              description: (
+                <>
+                  Overrides the width of the Flag.
+                  <br />
+                  <br />
+                  This can be a sizing token from the theme, or any CSS length
+                  value, e.g. 100% for a full-width element.
+                </>
+              ),
+            },
+            {
+              attribute: 'flag.height',
+              type: 'MQ<string>',
+              default: '',
+              description: (
+                <>
+                  Overrides the height of the Flag.
+                  <br />
+                  <br />
+                  This can be a sizing token from the theme, or any CSS length
+                  value.
+                </>
+              ),
+            },
+            {
+              attribute: 'flag.minHeight',
+              type: 'MQ<string>',
+              default: ['sm: sizing050', 'md: sizing060', 'lg: sizing070'],
+              description: (
+                <>
+                  Overrides the minHeight of the Flag.
+                  <br />
+                  <br />
+                  This can be a sizing token from the theme, or any CSS length
+                  value.
+                </>
+              ),
+            },
+            {
+              attribute: 'flag.maxHeight',
+              type: 'MQ<string>',
+              default: '',
+              description: (
+                <>
+                  Overrides the maxHeight of the Flag.
+                  <br />
+                  <br />
+                  This can be a sizing token from the theme, or any CSS length
+                  value.
+                </>
+              ),
+            },
+            {
+              attribute: 'flag.minWidth',
+              type: 'MQ<string>',
+              default: '',
+              description: (
+                <>
+                  Overrides the minWidth of the Flag.
+                  <br />
+                  <br />
+                  This can be a sizing token from the theme, or any CSS length
+                  value.
+                </>
+              ),
+            },
+            {
+              attribute: 'flag.maxWidth',
+              type: 'MQ<string>',
+              default: '',
+              description: (
+                <>
+                  Overrides the maxWidth of the Flag.
+                  <br />
+                  <br />
+                  This can be a sizing token from the theme, or any CSS length
+                  value.
+                </>
+              ),
+            },
+          ],
+        },
+      ],
+    }}
+    related={{
+      related: ['Tag', 'Toast', 'Banner', 'Inline Message'],
     }}
   />
 );
