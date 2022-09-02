@@ -17,7 +17,7 @@ import {
 } from 'newskit';
 import {Menu as FilledMenu} from '@emotion-icons/material/Menu';
 import {Close as FilledClose} from '@emotion-icons/material/Close';
-
+import LinkNext from 'next/link';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
@@ -120,21 +120,25 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
-        <MenuItem
-          data-testid="styled-indicator"
-          key={id}
-          href={id.substring(1)}
-          size="small"
-          selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
-          overrides={{
-            stylePreset: 'linkTopNavigation',
-            minHeight: '80px',
-            marginInline: {lg: '0', xl: '10px'},
-            paddingInline: {lg: '3px', xl: '16px'},
-          }}
-        >
-          {title}
-        </MenuItem>
+        <React.Fragment key={id}>
+          <LinkNext href={id} passHref>
+            <MenuItem
+              data-testid="styled-indicator"
+              key={id}
+              href={id}
+              size="small"
+              selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
+              overrides={{
+                stylePreset: 'linkTopNavigation',
+                minHeight: '80px',
+                marginInline: {lg: '0', xl: '10px'},
+                paddingInline: {lg: '3px', xl: '16px'},
+              }}
+            >
+              {title}
+            </MenuItem>
+          </LinkNext>
+        </React.Fragment>
       ));
 
     return (
