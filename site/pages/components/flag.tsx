@@ -170,6 +170,30 @@ const FlagComponent = (layoutProps: LayoutProps) => (
       ],
       media: getIllustrationComponent('components/flag/anatomy'),
     }}
+    options={{
+      introduction:
+        'The flag has options that can be used to provide an appropriate experience for different use cases.',
+      cards: [
+        {
+          title: 'Appearance',
+          description:
+            'By default, there are two styles of flag; solid and minimal, with colours set in the theme to communicate status to the user, eg. negative (red for high priority), or positive (green for active).',
+          media: getIllustrationComponent('components/flag/options/appearance'),
+        },
+        {
+          title: 'Size',
+          description:
+            'There are three sizes of flag; small, medium, and large.',
+          media: getIllustrationComponent('components/flag/options/size'),
+        },
+        {
+          title: 'Icons (leading & trailing)',
+          description:
+            'Icons can be displayed in a flag and can be positioned either before (leading) or after (trailing) the label in the flag.',
+          media: getIllustrationComponent('components/flag/options/icons'),
+        },
+      ],
+    }}
   />
 );
 
