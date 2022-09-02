@@ -73,6 +73,7 @@ exports[`TextArea FormInputTextArea render invalid form 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -204,6 +205,7 @@ exports[`TextArea FormInputTextArea render valid form 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -375,6 +377,7 @@ exports[`TextArea render default 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -538,6 +541,7 @@ exports[`TextArea render resize: both 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -701,6 +705,7 @@ exports[`TextArea render resize: horizontal 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -846,6 +851,7 @@ exports[`TextArea render resize: none 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1009,6 +1015,7 @@ exports[`TextArea render resize: vertical 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1172,6 +1179,7 @@ exports[`TextArea render size: large 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1335,6 +1343,7 @@ exports[`TextArea render size: medium 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1498,6 +1507,7 @@ exports[`TextArea render size: small 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1612,6 +1622,7 @@ exports[`TextArea render state: disabled 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1737,6 +1748,7 @@ exports[`TextArea render state: invalid 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1861,6 +1873,7 @@ exports[`TextArea render state: valid 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   resize: none;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;

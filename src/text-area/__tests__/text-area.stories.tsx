@@ -25,11 +25,11 @@ const textAreaCustomThemeObject: CreateThemeArgs = {
     stylePresets: {
       customStyle: deepMerge(newskitLightTheme.stylePresets.inputField, {
         base: {
-          backgroundColor: 'blue',
-          borderWidth: '8px',
-          borderRadius: '10px',
-          borderColor: 'violet',
-          placeholderColor: 'white',
+          borderWidth: '{{borders.borderWidth020}}',
+          borderRadius: '{{borders.borderRadiusRounded030}}',
+          borderColor: '{{colors.teal060}}',
+          placeholderColor: '{{colors.teal060}}',
+          color: '{{colors.teal060}}',
         },
       }),
       customOutline: deepMerge(newskitLightTheme.stylePresets.inputField, {

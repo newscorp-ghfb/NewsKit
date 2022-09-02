@@ -21,6 +21,7 @@ export const StyledInput = styled.input<
   align-self: stretch;
   // resizing is done on the parent not on the input/textarea element
   resize: none;
+  color: inherit;
 
   ${({$size}) =>
     getTypographyPreset(`textField.${$size}`, '', {
