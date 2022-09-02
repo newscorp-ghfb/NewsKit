@@ -411,7 +411,7 @@ export default [
             page: true,
             id: '/components/flag',
             description:
-              'Indicates the status of content e.g. ’new’ or ’updated’.',
+              'A flag is a non-interactive visual indicator used to communicate status.',
             illustration: 'components/flag-illustration',
           },
           {
