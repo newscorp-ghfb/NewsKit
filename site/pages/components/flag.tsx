@@ -363,7 +363,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               default: '',
               description: (
                 <>
-                  Overrides the width of the Flag.
+                  Overrides the width of the flag.
                   <br />
                   <br />
                   This can be a sizing token from the theme, or any CSS length
