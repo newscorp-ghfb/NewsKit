@@ -265,8 +265,10 @@ const FlagComponent = (layoutProps: LayoutProps) => (
       components: [
         {
           title: 'Flag',
-          summary:
+          propsSummary:
             'The flag has a range of props that can be used to define an appropriate experience for different use cases.',
+          overridesSummary:
+            'The Flag has a range of predefined elements and attributes that can be overridden to define its appearance.',
           propsRows: [
             {
               name: 'children',
