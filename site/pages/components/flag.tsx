@@ -405,7 +405,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               default: '',
               description: (
                 <>
-                  Overrides the maxHeight of the Flag.
+                  Overrides the maxHeight of the flag.
                   <br />
                   <br />
                   This can be a sizing token from the theme, or any CSS length
