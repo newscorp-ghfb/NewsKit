@@ -119,15 +119,15 @@ const FlagComponent = (layoutProps: LayoutProps) => (
                 isDefault: true,
               },
               {
-                label: 'flagSolid',
+                label: 'flagSolidPositive',
                 value: {
-                  stylePreset: 'flagSolid',
+                  stylePreset: 'flagSolidPositive',
                 },
               },
               {
-                label: 'flagMinimal',
+                label: 'flagMinimalPositive',
                 value: {
-                  stylePreset: 'flagMinimal',
+                  stylePreset: 'flagMinimalPositive',
                 },
               },
             ],
