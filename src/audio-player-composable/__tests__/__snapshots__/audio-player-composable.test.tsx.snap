@@ -6657,9 +6657,9 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -6670,7 +6670,39 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8069,9 +8101,9 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -8082,7 +8114,39 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-5:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-5:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8282,9 +8346,9 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -8295,7 +8359,39 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8607,9 +8703,9 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -8620,7 +8716,39 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8920,9 +9048,9 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -8933,7 +9061,39 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 }
 
 .emotion-5 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-5:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-5:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -9283,9 +9443,9 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -9296,7 +9456,39 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-5:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-5:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

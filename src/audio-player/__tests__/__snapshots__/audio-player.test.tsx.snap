@@ -210,9 +210,9 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -223,7 +223,39 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-10:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-10:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1634,9 +1666,9 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -1647,7 +1679,39 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-10:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-10:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2945,9 +3009,9 @@ exports[`Audio Player hides volume control as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -2958,7 +3022,39 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-10:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-10:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4135,9 +4231,9 @@ exports[`Audio Player live player renders as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -4148,7 +4244,39 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-10:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-10:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5058,9 +5186,9 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -5071,7 +5199,39 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5383,9 +5543,9 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -5396,7 +5556,39 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -7308,9 +7500,9 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -7321,7 +7513,39 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-10:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-10:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8789,9 +9013,9 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -8802,7 +9026,39 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-10:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-10:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -10272,9 +10528,9 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #D5E0FC;
+  background-color: #3358CC;
   border-radius: 50%;
-  color: #3358CC;
+  color: #FFFFFF;
   margin: 0;
   cursor: progress;
 }
@@ -10285,7 +10541,39 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-10 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-10:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-10:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

@@ -23,7 +23,6 @@ export interface BaseFlagOverrides extends LogicalProps {
 
 export interface BaseFlagProps<TOverrides> {
   disabled?: boolean;
-  loading?: boolean;
   overrides?: TOverrides;
   size?: FlagSize;
   children?: React.ReactNode;
