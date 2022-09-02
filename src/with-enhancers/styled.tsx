@@ -7,7 +7,6 @@ import {
   getResponsiveSpacingStackHorizontal,
   styled,
   css,
-  getColorCssFromTheme,
 } from '../utils/style';
 import {TextFieldSize} from '../text-field/types';
 import {logicalProps} from '../utils/logical-properties';
@@ -53,34 +52,12 @@ export const StyledInputContainer = styled.div<
   box-sizing: border-box;
   align-items: center;
 
-  ${({resize, ...props}) =>
+  ${({resize}) =>
     resize &&
     resize !== 'none' &&
     css`
       resize: ${resize};
-      position: relative;
       overflow: hidden;
-
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 16px;
-        height: 16px;
-        // TODO: proper color
-        ${getColorCssFromTheme(
-          color => ({
-            background: `linear-gradient(
-          135deg,
-          rgba(0, 0, 0, 0) 0,
-          rgba(0, 0, 0, 0) 50%,
-          ${color} 50%
-        )`,
-          }),
-          'interactiveInput010',
-        )(props)}
-      }
     `}
 
   ${({componentDefaultsPath}) =>

@@ -17,7 +17,6 @@ exports[`TextArea FormInputTextArea render invalid form 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: vertical;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 120px;
@@ -31,21 +30,6 @@ exports[`TextArea FormInputTextArea render invalid form 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-1:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-1 svg {
@@ -149,7 +133,6 @@ exports[`TextArea FormInputTextArea render valid form 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: vertical;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 120px;
@@ -163,21 +146,6 @@ exports[`TextArea FormInputTextArea render valid form 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-1:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-1 svg {
@@ -282,7 +250,6 @@ exports[`TextArea render default 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: vertical;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 120px;
@@ -296,21 +263,6 @@ exports[`TextArea render default 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-0:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-0 svg {
@@ -446,7 +398,6 @@ exports[`TextArea render resize: both 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: both;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 120px;
@@ -460,21 +411,6 @@ exports[`TextArea render resize: both 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-0:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-0 svg {
@@ -610,7 +546,6 @@ exports[`TextArea render resize: horizontal 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: horizontal;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 120px;
@@ -624,21 +559,6 @@ exports[`TextArea render resize: horizontal 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-0:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-0 svg {
@@ -920,7 +840,6 @@ exports[`TextArea render resize: vertical 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: vertical;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 120px;
@@ -934,21 +853,6 @@ exports[`TextArea render resize: vertical 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-0:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-0 svg {
@@ -1084,7 +988,6 @@ exports[`TextArea render size: large 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: vertical;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 120px;
@@ -1098,21 +1001,6 @@ exports[`TextArea render size: large 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-0:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-0 svg {
@@ -1248,7 +1136,6 @@ exports[`TextArea render size: medium 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: vertical;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 120px;
@@ -1262,21 +1149,6 @@ exports[`TextArea render size: medium 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-0:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-0 svg {
@@ -1412,7 +1284,6 @@ exports[`TextArea render size: small 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: vertical;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 80px;
@@ -1426,21 +1297,6 @@ exports[`TextArea render size: small 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-0:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-0 svg {
@@ -1576,7 +1432,6 @@ exports[`TextArea render state: disabled 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: vertical;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 120px;
@@ -1590,21 +1445,6 @@ exports[`TextArea render state: disabled 1`] = `
   color: #ABABAB;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-0:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-0 svg {
@@ -1692,7 +1532,6 @@ exports[`TextArea render state: invalid 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: vertical;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 120px;
@@ -1706,21 +1545,6 @@ exports[`TextArea render state: invalid 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-0:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-0 svg {
@@ -1817,7 +1641,6 @@ exports[`TextArea render state: valid 1`] = `
   -ms-flex-align: center;
   align-items: center;
   resize: vertical;
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 120px;
@@ -1831,21 +1654,6 @@ exports[`TextArea render state: valid 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-block-end: 8px;
-}
-
-.emotion-0:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0) 50%,
-            #F1F1F1 50%
-          );
 }
 
 .emotion-0 svg {
