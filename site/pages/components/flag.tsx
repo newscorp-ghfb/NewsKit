@@ -160,7 +160,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The flag contains one required element and two optional elements.',
+        'The flag contains two required elements and one optional element.',
       rows: [
         {
           name: 'Container',
@@ -216,7 +216,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
     }}
     usage={{
       introduction:
-        'The following guidance describes how and when to appropriately use the switch component.',
+        'The following guidance describes how and when to appropriately use a flag component.',
       cards: [
         {
           description:
@@ -268,7 +268,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
           propsSummary:
             'The flag has a range of props that can be used to define an appropriate experience for different use cases.',
           overridesSummary:
-            'The Flag has a range of predefined elements and attributes that can be overridden to define its appearance.',
+            'The flag has a range of predefined elements and attributes that can be overridden to define its appearance.',
           propsRows: [
             {
               name: 'children',
@@ -276,7 +276,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               default: 'medium',
               description: (
                 <>
-                  If provided, the content of the Flag is passed as the child of
+                  If provided, the content of the flag is passed as the child of
                   the component.
                   <InlineMessage
                     icon={infoIcon}
@@ -298,7 +298,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               name: 'size',
               type: ['small', 'medium', 'large'],
               default: 'small',
-              description: 'Defines the size of the Flag.',
+              description: 'Defines the size of the flag.',
               required: undefined,
             },
           ],
@@ -311,13 +311,13 @@ const FlagComponent = (layoutProps: LayoutProps) => (
                 'md: spaceInsetSquish020',
                 'lg: spaceInsetSquish020',
               ],
-              description: 'Overrides the spaceInset of the Flag.',
+              description: 'Overrides the spaceInset of the flag.',
             },
             {
               attribute: 'flag.stylePreset',
               type: 'MQ<string>',
               default: 'flagDefault',
-              description: 'Overrides the spaceInset of the Flag.',
+              description: 'Overrides the spaceInset of the flag.',
             },
             {
               attribute: 'flag.typographyPreset',
@@ -327,7 +327,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
                 'md: utilityLabel020',
                 'lg: utilityLabel030',
               ],
-              description: 'Overrides the typographyPreset of the Flag.',
+              description: 'Overrides the typographyPreset of the flag.',
             },
             {
               attribute: 'flag.spaceInline',
@@ -335,7 +335,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               default: 'space010',
               description: (
                 <>
-                  Overrides the spaceInline of the Flag.
+                  Overrides the spaceInline of the flag.
                   <br />
                   <br />
                   Note - If less than two children are passed, this prop is
@@ -349,10 +349,10 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               default: 'iconSize010',
               description: (
                 <>
-                  Overrides the iconSize of the Flag.
+                  Overrides the iconSize of the flag.
                   <br />
                   <br />
-                  Note - If no icons are present in the Flag&apos;s children
+                  Note - If no icons are present in the flag&apos;s children
                   then this prop is irrelevant.
                 </>
               ),
@@ -377,7 +377,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               default: '',
               description: (
                 <>
-                  Overrides the height of the Flag.
+                  Overrides the height of the flag.
                   <br />
                   <br />
                   This can be a sizing token from the theme, or any CSS length
@@ -391,7 +391,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               default: ['sm: sizing050', 'md: sizing060', 'lg: sizing070'],
               description: (
                 <>
-                  Overrides the minHeight of the Flag.
+                  Overrides the minHeight of the flag.
                   <br />
                   <br />
                   This can be a sizing token from the theme, or any CSS length
@@ -419,7 +419,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               default: '',
               description: (
                 <>
-                  Overrides the minWidth of the Flag.
+                  Overrides the minWidth of the flag.
                   <br />
                   <br />
                   This can be a sizing token from the theme, or any CSS length
@@ -433,7 +433,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               default: '',
               description: (
                 <>
-                  Overrides the maxWidth of the Flag.
+                  Overrides the maxWidth of the flag.
                   <br />
                   <br />
                   This can be a sizing token from the theme, or any CSS length
