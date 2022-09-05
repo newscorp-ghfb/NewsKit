@@ -377,6 +377,9 @@ exports[`Modal renders default 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-9 svg {
@@ -433,6 +436,42 @@ exports[`Modal renders default 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-9 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-9:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-9:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-9:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-9:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -970,6 +1009,9 @@ exports[`Modal renders inline 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-9 svg {
@@ -1026,6 +1068,42 @@ exports[`Modal renders inline 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-9 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-9:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-9:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-9:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-9:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1521,6 +1599,11 @@ exports[`Modal renders modal with overrides 1`] = `
   border-radius: 50%;
   margin: 0;
   cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #97D0D6;
+  background-color: transparent;
+  border-radius: 50%;
 }
 
 .emotion-7 svg {
@@ -1550,6 +1633,14 @@ exports[`Modal renders modal with overrides 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-7 svg {
+  fill: #005B65;
+}
+
+.emotion-7:hover:not(:disabled) {
+  background-color: #289FAB;
 }
 
 .emotion-8 {
@@ -2132,6 +2223,9 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-10 svg {
@@ -2188,6 +2282,42 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-10:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-10:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2749,6 +2879,9 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-7 svg {
@@ -2805,6 +2938,42 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-7 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-7:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-7:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-7:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-7:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -3316,6 +3485,9 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-6 svg {
@@ -3372,6 +3544,42 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-6:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-6:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-6:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-6:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-6:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -3910,6 +4118,9 @@ exports[`Modal renders with different closePosition 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-9 svg {
@@ -3966,6 +4177,42 @@ exports[`Modal renders with different closePosition 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-9 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-9:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-9:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-9:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-9:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -4509,6 +4756,9 @@ exports[`Modal renders with logical padding props 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-9 svg {
@@ -4565,6 +4815,42 @@ exports[`Modal renders with logical padding props 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-9 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-9:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-9:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-9:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-9:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -5492,6 +5778,9 @@ exports[`Modal renders without header 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-7 svg {
@@ -5548,6 +5837,42 @@ exports[`Modal renders without header 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-7 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-7:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-7:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-7:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-7:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -6362,6 +6687,9 @@ exports[`Modal renders without overlay 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-8 svg {
@@ -6418,6 +6746,42 @@ exports[`Modal renders without overlay 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-8 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-8:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-8:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-8:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-8:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -6936,6 +7300,9 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-6 svg {
@@ -6992,6 +7359,42 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-6:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-6:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-6:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-6:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-6:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 

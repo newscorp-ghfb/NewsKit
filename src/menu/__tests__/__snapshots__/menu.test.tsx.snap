@@ -61,6 +61,11 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -140,6 +145,60 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -365,6 +424,11 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -445,6 +509,61 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -667,6 +786,11 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -746,6 +870,60 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -971,6 +1149,11 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -1051,6 +1234,61 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1273,6 +1511,11 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -1352,6 +1595,60 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1577,6 +1874,11 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -1657,6 +1959,61 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1879,6 +2236,11 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
@@ -1958,6 +2320,60 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2183,6 +2599,11 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
@@ -2263,6 +2684,61 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2485,6 +2961,11 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -2564,6 +3045,60 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2789,6 +3324,11 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -2869,6 +3409,61 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -3091,6 +3686,11 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -3170,6 +3770,60 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -3395,6 +4049,11 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -3475,6 +4134,61 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -3713,6 +4427,11 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -3792,6 +4511,60 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-3:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-3:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -4100,6 +4873,11 @@ exports[`Menu renders horizontally with menu group 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -4179,6 +4957,60 @@ exports[`Menu renders horizontally with menu group 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-3:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-3:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -4413,6 +5245,11 @@ exports[`Menu renders horizontally with menu items 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -4492,6 +5329,60 @@ exports[`Menu renders horizontally with menu items 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -4729,6 +5620,11 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -4809,6 +5705,61 @@ exports[`Menu renders vertically with menu dividers 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-3:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -5115,6 +6066,11 @@ exports[`Menu renders vertically with menu group 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -5195,6 +6151,61 @@ exports[`Menu renders vertically with menu group 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-3:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -5432,6 +6443,11 @@ exports[`Menu renders vertically with menu items 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -5512,6 +6528,61 @@ exports[`Menu renders vertically with menu items 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -5734,6 +6805,11 @@ exports[`Menu renders with default props 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -5813,6 +6889,60 @@ exports[`Menu renders with default props 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -6037,6 +7167,11 @@ exports[`Menu renders with logical prop overrides 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -6116,6 +7251,60 @@ exports[`Menu renders with logical prop overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -6613,6 +7802,11 @@ exports[`MenuGroup renders with overrides 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -6693,6 +7887,61 @@ exports[`MenuGroup renders with overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-5 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-5:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-5:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-5:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:disabled {
+  color: #ABABAB;
+}
+
+.emotion-5:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -6983,6 +8232,11 @@ exports[`MenuGroup renders with title as a component 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -7063,6 +8317,61 @@ exports[`MenuGroup renders with title as a component 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-8 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-8:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-8:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-8:disabled {
+  color: #ABABAB;
+}
+
+.emotion-8:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-8:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-8:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -7379,6 +8688,11 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -7459,6 +8773,61 @@ exports[`MenuGroup renders with title when vertical 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-5 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-5:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-5:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-5:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:disabled {
+  color: #ABABAB;
+}
+
+.emotion-5:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -7746,6 +9115,11 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -7826,6 +9200,61 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-5 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-5:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-5:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-5:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:disabled {
+  color: #ABABAB;
+}
+
+.emotion-5:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -8066,6 +9495,11 @@ exports[`MenuItem renders in large size 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -8145,6 +9579,60 @@ exports[`MenuItem renders in large size 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -8298,6 +9786,11 @@ exports[`MenuItem renders in medium size 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -8377,6 +9870,60 @@ exports[`MenuItem renders in medium size 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -8530,6 +10077,11 @@ exports[`MenuItem renders in small size 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -8609,6 +10161,60 @@ exports[`MenuItem renders in small size 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -8762,6 +10368,11 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -8841,6 +10452,60 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -8997,6 +10662,11 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   cursor: pointer;
   background-color: transparent;
   border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  background-color: transparent;
+  border-style: solid;
   border-color: #3358CC;
   border-width: 0 0 2px 0;
   color: #3B3B3B;
@@ -9079,6 +10749,60 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -9291,6 +11015,11 @@ exports[`MenuItem renders with default props 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -9370,6 +11099,60 @@ exports[`MenuItem renders with default props 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -9523,6 +11306,11 @@ exports[`MenuItem renders with icon 1`] = `
   color: #6A6A6A;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -9602,6 +11390,60 @@ exports[`MenuItem renders with icon 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -9800,6 +11642,11 @@ exports[`MenuItem renders with overrides 1`] = `
   color: red;
   margin: 0;
   cursor: pointer;
+  background-color: pink;
+  border-style: solid;
+  border-color: darkpink;
+  border-width: 0px 8px 0px 0px;
+  color: red;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -9830,6 +11677,10 @@ exports[`MenuItem renders with overrides 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-2 svg {
+  fill: grey;
 }
 
 .emotion-3 {

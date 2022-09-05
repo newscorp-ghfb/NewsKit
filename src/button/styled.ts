@@ -1,6 +1,6 @@
 import {Flag} from '../flag';
 import {logicalProps} from '../utils/logical-properties';
-import {styled} from '../utils/style';
+import {styled, getStylePreset} from '../utils/style';
 import {getTransitionPreset} from '../utils/style/transition-preset';
 import {ButtonOrButtonLinkProps} from './types';
 
@@ -19,6 +19,11 @@ export const StyledFlag = styled(Flag)<
     const cursor = $loading ? 'progress' : 'pointer';
     return {cursor};
   }}
+  ${({$loading}) =>
+    getStylePreset('', '', {
+      isLoading: $loading,
+    })}
+
   ${({size}) =>
     logicalProps(
       `button.${size}`,

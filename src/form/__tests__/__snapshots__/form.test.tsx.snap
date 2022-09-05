@@ -164,6 +164,9 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-15 svg {
@@ -220,6 +223,42 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-15 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-15:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-15:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-15:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-15:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-15:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -570,6 +609,9 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-19 svg {
@@ -626,6 +668,42 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-19 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-19:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-19:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-19:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-19:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-19:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-19:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1028,6 +1106,9 @@ exports[`Form renders with error and with submit validation and revalidation mod
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-21 svg {
@@ -1084,6 +1165,42 @@ exports[`Form renders with error and with submit validation and revalidation mod
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-21 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-21:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-21:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-21:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-21:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-21:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-21:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1594,6 +1711,9 @@ exports[`Form renders with error on blur 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-18 svg {
@@ -1650,6 +1770,42 @@ exports[`Form renders with error on blur 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-18 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-18:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-18:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-18:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-18:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-18:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-18:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2047,6 +2203,9 @@ exports[`Form renders with error on submit 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-21 svg {
@@ -2103,6 +2262,42 @@ exports[`Form renders with error on submit 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-21 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-21:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-21:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-21:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-21:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-21:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-21:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2613,6 +2808,9 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-18 svg {
@@ -2669,6 +2867,42 @@ exports[`Form renders with error with 2 onBlur 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-18 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-18:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-18:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-18:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-18:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-18:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-18:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -3445,6 +3679,9 @@ exports[`Form renders with nested inputs 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-15 svg {
@@ -3501,6 +3738,42 @@ exports[`Form renders with nested inputs 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-15 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-15:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-15:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-15:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-15:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-15:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -3826,6 +4099,9 @@ exports[`Form renders with onBlur validation 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-15 svg {
@@ -3882,6 +4158,42 @@ exports[`Form renders with onBlur validation 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-15 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-15:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-15:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-15:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-15:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-15:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -9025,6 +9337,9 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-20 svg {
@@ -9081,6 +9396,42 @@ exports[`FormInput renders with error and with submit validation and revalidatio
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-20 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-20:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-20:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-20:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-20:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-20:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-20:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -9910,6 +10261,9 @@ exports[`FormInput renders with nested inputs 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -9966,6 +10320,42 @@ exports[`FormInput renders with nested inputs 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 

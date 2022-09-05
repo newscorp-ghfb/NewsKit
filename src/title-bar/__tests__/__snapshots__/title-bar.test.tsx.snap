@@ -182,6 +182,9 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-5 svg {
@@ -238,6 +241,42 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-5:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-5:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -519,6 +558,9 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-5 svg {
@@ -575,6 +617,42 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-5:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-5:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 

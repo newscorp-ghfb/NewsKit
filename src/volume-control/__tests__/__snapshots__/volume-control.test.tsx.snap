@@ -80,6 +80,9 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   color: #3358CC;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
 }
 
 .emotion-2 svg {
@@ -136,6 +139,42 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+}
+
+.emotion-2:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -545,6 +584,9 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   color: #3358CC;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
 }
 
 .emotion-2 svg {
@@ -601,6 +643,42 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+}
+
+.emotion-2:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1010,6 +1088,9 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   color: #3358CC;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
 }
 
 .emotion-2 svg {
@@ -1066,6 +1147,42 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+}
+
+.emotion-2:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1474,6 +1591,9 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   color: #3358CC;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
 }
 
 .emotion-2 svg {
@@ -1530,6 +1650,42 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+}
+
+.emotion-2:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1939,6 +2095,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   color: #3358CC;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
 }
 
 .emotion-2 svg {
@@ -1995,6 +2154,42 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+}
+
+.emotion-2:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2404,6 +2599,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   color: #3358CC;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
 }
 
 .emotion-2 svg {
@@ -2460,6 +2658,42 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+}
+
+.emotion-2:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2869,6 +3103,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   color: #3358CC;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
 }
 
 .emotion-2 svg {
@@ -2925,6 +3162,42 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+}
+
+.emotion-2:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -3334,6 +3607,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   color: #3358CC;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
 }
 
 .emotion-2 svg {
@@ -3390,6 +3666,42 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+}
+
+.emotion-2:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -3799,6 +4111,9 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   color: #3358CC;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
 }
 
 .emotion-2 svg {
@@ -3855,6 +4170,42 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+}
+
+.emotion-2:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 

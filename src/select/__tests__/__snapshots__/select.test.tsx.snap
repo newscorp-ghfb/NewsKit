@@ -670,6 +670,9 @@ exports[`Select in Modal render Select 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-10 svg {
@@ -726,6 +729,42 @@ exports[`Select in Modal render Select 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-10:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-10:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2329,6 +2368,9 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3B3B3B;
 }
 
 .emotion-10 svg {
@@ -2385,6 +2427,42 @@ exports[`Select in Modal render Select with overrides style 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #E2E2E2;
+}
+
+.emotion-10:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-10:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 

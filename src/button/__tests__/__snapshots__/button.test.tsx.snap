@@ -33,6 +33,9 @@ exports[`Button Loading Button renders Large Button 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: progress;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
@@ -90,6 +93,10 @@ exports[`Button Loading Button renders Large Button 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-0 svg {
+  fill: #3358CC;
 }
 
 .emotion-1 {
@@ -210,6 +217,9 @@ exports[`Button Loading Button renders Small Button 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: progress;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
@@ -267,6 +277,10 @@ exports[`Button Loading Button renders Small Button 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-0 svg {
+  fill: #3358CC;
 }
 
 .emotion-1 {
@@ -387,6 +401,9 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -443,6 +460,42 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -554,6 +607,9 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -610,6 +666,42 @@ exports[`Button Loading Button renders a button with fixed for width and height 
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -721,6 +813,9 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -777,6 +872,42 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -888,6 +1019,9 @@ exports[`Button Loading Button renders a button with percentage for width and he
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -944,6 +1078,42 @@ exports[`Button Loading Button renders a button with percentage for width and he
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1055,6 +1225,9 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1111,6 +1284,42 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1222,6 +1431,9 @@ exports[`Button Loading Button renders a button with token set for width and hei
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1278,6 +1490,42 @@ exports[`Button Loading Button renders a button with token set for width and hei
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1389,6 +1637,9 @@ exports[`Button renders Large Button 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1445,6 +1696,42 @@ exports[`Button renders Large Button 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1556,6 +1843,9 @@ exports[`Button renders Small Button 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1612,6 +1902,42 @@ exports[`Button renders Small Button 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1723,6 +2049,9 @@ exports[`Button renders button link when href passed 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1779,6 +2108,42 @@ exports[`Button renders button link when href passed 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -1889,6 +2254,9 @@ exports[`Button renders button link with disabled link 1`] = `
   border-radius: 8px;
   color: #ABABAB;
   margin: 0;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1913,6 +2281,42 @@ exports[`Button renders button link with disabled link 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2025,6 +2429,9 @@ exports[`Button renders fixed-width Button 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -2081,6 +2488,42 @@ exports[`Button renders fixed-width Button 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2192,6 +2635,9 @@ exports[`Button renders full-width Button 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -2248,6 +2694,42 @@ exports[`Button renders full-width Button 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2359,6 +2841,9 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -2415,6 +2900,42 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2571,6 +3092,9 @@ exports[`Button renders with different spaceInset preset 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -2627,6 +3151,42 @@ exports[`Button renders with different spaceInset preset 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2741,6 +3301,12 @@ exports[`Button renders with different style preset 1`] = `
   color: #3358CC;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #3358CC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
@@ -2799,6 +3365,44 @@ exports[`Button renders with different style preset 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #3358CC;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  border-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #D5E0FC;
+  border-color: #14328D;
+}
+
+.emotion-0:disabled {
+  border-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -2910,6 +3514,9 @@ exports[`Button renders with different typography preset 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -2966,6 +3573,42 @@ exports[`Button renders with different typography preset 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -3077,6 +3720,9 @@ exports[`Button renders with fallback formatting 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -3133,6 +3779,42 @@ exports[`Button renders with fallback formatting 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
@@ -3246,6 +3928,9 @@ exports[`Button renders with logical props overrides 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
   margin-block: 30px;
   padding-block: 30px;
 }
@@ -3304,6 +3989,42 @@ exports[`Button renders with logical props overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-0:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
   }
 }
 
