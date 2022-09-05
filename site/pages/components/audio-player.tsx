@@ -1358,7 +1358,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             {
               name: 'muteButtonSize',
               type: 'ButtonSize',
-              default: 'small',
+              default: 'medium',
               description: 'Sets the size of the mute button',
             },
             {
@@ -1429,7 +1429,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'audioPlayerVolumeControl.button.iconDefault',
               type: 'MQ<string>',
-              default: 'iconFilledVolumeDown',
+              default: 'iconFilledVolumeUp',
               description: 'If provided, this overrides the mute volume icon.',
             },
             {
@@ -1438,13 +1438,6 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
               default: 'iconFilledVolumeOff',
               description:
                 'If provided, this overrides the mute volume icon, when audio is muted.',
-            },
-            {
-              attribute: 'audioPlayerVolumeControl.button.iconUnmuted',
-              type: 'MQ<string>',
-              default: 'iconFilledVolumeDown',
-              description:
-                'If provided, this overrides the mute volume icon, when audio is set to maximum.',
             },
             {
               attribute: 'audioPlayerVolumeControl.slider.track.stylePreset',
