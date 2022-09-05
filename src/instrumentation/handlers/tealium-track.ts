@@ -8,7 +8,7 @@ const extendedWindow: ExtendedWindow | null =
   typeof window !== 'undefined' ? ((window as Window) as ExtendedWindow) : null;
 
 export function sendEventTrackingToTealium(e: InstrumentationEvent) {
-  if (extendedWindow) {
+  if (extendedWindow && extendedWindow.tealiumTrack) {
     return extendedWindow.tealiumTrack(e);
   }
   return null;
