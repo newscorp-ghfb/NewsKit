@@ -207,7 +207,7 @@ exports[`Select in Modal render Select 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-95-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -835,17 +835,17 @@ exports[`Select in Modal render Select 1`] = `
                   </span>
                   <div
                     aria-describedby="mock-nk-1"
-                    aria-labelledby="downshift-95-label"
+                    aria-labelledby="downshift-0-label"
                     class="emotion-6"
                     data-testid="select-panel"
-                    id="downshift-95-menu"
+                    id="downshift-0-menu"
                     role="listbox"
                     tabindex="-1"
                   >
                     <div
                       aria-selected="false"
                       class="emotion-7"
-                      id="downshift-95-item-0"
+                      id="downshift-0-item-0"
                       role="option"
                       value="option 1"
                     >
@@ -856,7 +856,7 @@ exports[`Select in Modal render Select 1`] = `
                     <div
                       aria-selected="false"
                       class="emotion-7"
-                      id="downshift-95-item-1"
+                      id="downshift-0-item-1"
                       role="option"
                       value="option 2"
                     >
@@ -1123,7 +1123,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-101-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
         width="100%"
       >
@@ -1623,17 +1623,17 @@ exports[`Select in Modal render Select with overrides props 1`] = `
                   </span>
                   <div
                     aria-describedby="mock-nk-1"
-                    aria-labelledby="downshift-101-label"
+                    aria-labelledby="downshift-0-label"
                     class="emotion-7"
                     data-testid="select-panel"
-                    id="downshift-101-menu"
+                    id="downshift-0-menu"
                     role="listbox"
                     tabindex="-1"
                   >
                     <div
                       aria-selected="false"
                       class="emotion-8"
-                      id="downshift-101-item-0"
+                      id="downshift-0-item-0"
                       role="option"
                       value="option 1"
                     >
@@ -1644,7 +1644,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
                     <div
                       aria-selected="false"
                       class="emotion-8"
-                      id="downshift-101-item-1"
+                      id="downshift-0-item-1"
                       role="option"
                       value="option 2"
                     >
@@ -1876,7 +1876,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-107-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -2494,17 +2494,17 @@ exports[`Select in Modal render Select with overrides style 1`] = `
                   </span>
                   <div
                     aria-describedby="mock-nk-1"
-                    aria-labelledby="downshift-107-label"
+                    aria-labelledby="downshift-0-label"
                     class="emotion-6"
                     data-testid="select-panel"
-                    id="downshift-107-menu"
+                    id="downshift-0-menu"
                     role="listbox"
                     tabindex="-1"
                   >
                     <div
                       aria-selected="false"
                       class="emotion-7"
-                      id="downshift-107-item-0"
+                      id="downshift-0-item-0"
                       role="option"
                       value="option 1"
                     >
@@ -2515,7 +2515,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
                     <div
                       aria-selected="false"
                       class="emotion-7"
-                      id="downshift-107-item-1"
+                      id="downshift-0-item-1"
                       role="option"
                       value="option 2"
                     >
@@ -2806,7 +2806,7 @@ exports[`Select renders Select with logical props 1`] = `
       aria-haspopup="listbox"
       class="emotion-2"
       data-testid="select-button"
-      id="downshift-141-toggle-button"
+      id="downshift-0-toggle-button"
       type="button"
       value="option 1"
     >
@@ -3034,7 +3034,7 @@ exports[`Select renders Select with overrides 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-85-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
         value="option 1"
       >
@@ -3117,10 +3117,10 @@ exports[`Select renders Select with overrides 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-85-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-85-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -3746,7 +3746,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
       aria-haspopup="listbox"
       class="emotion-2"
       data-testid="select-button"
-      id="downshift-136-toggle-button"
+      id="downshift-0-toggle-button"
       type="button"
       value="option 1"
     >
@@ -3959,7 +3959,7 @@ exports[`Select renders disabled select 1`] = `
         class="emotion-2"
         data-testid="select-button"
         disabled=""
-        id="downshift-35-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -4036,10 +4036,10 @@ exports[`Select renders disabled select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-35-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-35-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -4252,7 +4252,7 @@ exports[`Select renders large Select 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-9-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -4327,10 +4327,10 @@ exports[`Select renders large Select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-9-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-9-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -4534,7 +4534,7 @@ exports[`Select renders loading select 1`] = `
         class="emotion-2"
         data-testid="select-button"
         disabled=""
-        id="downshift-44-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -4597,10 +4597,10 @@ exports[`Select renders loading select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-44-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-44-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -4813,7 +4813,7 @@ exports[`Select renders medium Select 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-6-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -4888,10 +4888,10 @@ exports[`Select renders medium Select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-6-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-6-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -5130,7 +5130,7 @@ exports[`Select renders select with a pre selected option 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-47-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
         value="option 1"
       >
@@ -5213,10 +5213,10 @@ exports[`Select renders select with a pre selected option 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-47-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-47-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -5455,7 +5455,7 @@ exports[`Select renders select with a selected option 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-50-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
         value="option 1"
       >
@@ -5538,10 +5538,10 @@ exports[`Select renders select with a selected option 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-50-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-50-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -5793,7 +5793,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
         aria-haspopup="listbox"
         class="emotion-5"
         data-testid="select-button"
-        id="downshift-53-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -5887,10 +5887,10 @@ exports[`Select renders select with leading and trailing icon 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-53-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-53-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -6129,7 +6129,7 @@ exports[`Select renders select with non-string options 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-56-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
         value="option 2"
       >
@@ -6214,10 +6214,10 @@ exports[`Select renders select with non-string options 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-56-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-56-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -6430,7 +6430,7 @@ exports[`Select renders small Select 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-3-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -6505,10 +6505,10 @@ exports[`Select renders small Select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-3-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-3-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -6721,7 +6721,7 @@ exports[`Select should render custom placeholder 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-12-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -6796,10 +6796,10 @@ exports[`Select should render custom placeholder 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-12-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-12-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -7012,7 +7012,7 @@ exports[`Select virtualize long list 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-90-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -7186,10 +7186,10 @@ exports[`Select virtualize long list 1`] = `
       </span>
       <div
         aria-describedby="mock-nk-1"
-        aria-labelledby="downshift-90-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-1"
         data-testid="select-panel"
-        id="downshift-90-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       >
@@ -7199,7 +7199,7 @@ exports[`Select virtualize long list 1`] = `
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-90-item-120"
+          id="downshift-0-item-120"
           role="option"
           style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
           value="Latvia"
@@ -7211,7 +7211,7 @@ exports[`Select virtualize long list 1`] = `
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-90-item-121"
+          id="downshift-0-item-121"
           role="option"
           style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
           value="Lebanon"
@@ -7223,7 +7223,7 @@ exports[`Select virtualize long list 1`] = `
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-90-item-122"
+          id="downshift-0-item-122"
           role="option"
           style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
           value="Lesotho"
@@ -7235,7 +7235,7 @@ exports[`Select virtualize long list 1`] = `
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-90-item-123"
+          id="downshift-0-item-123"
           role="option"
           style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
           value="Liberia"
@@ -7247,7 +7247,7 @@ exports[`Select virtualize long list 1`] = `
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-90-item-124"
+          id="downshift-0-item-124"
           role="option"
           style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
           value="Libya"

@@ -3,7 +3,7 @@ import {MQ} from '../utils/style';
 import {LogicalProps} from '../utils/logical-properties';
 import {TransitionToken} from '../theme';
 
-type RenderTrackFunction = Range['props']['renderTrack'];
+export type RenderTrackFunction = Range['props']['renderTrack'];
 type RenderThumbFunction = Range['props']['renderThumb'];
 
 export interface SliderOverrideProps extends LogicalProps {

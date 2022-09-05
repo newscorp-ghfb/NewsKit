@@ -10,7 +10,7 @@ import {
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {FeatureCard} from '../components/feature-card';
 
-const Placeholder: React.FC = ({children}) => (
+const Placeholder: React.FC<{children: React.ReactNode}> = ({children}) => (
   <TextBlock
     as="span"
     stylePreset="inkContrast"

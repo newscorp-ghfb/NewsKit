@@ -4,6 +4,7 @@ import {
 } from './template-sections';
 
 export interface TemplateProps extends IntroductionSectionProps {
+  children: React.ReactNode;
   headTags: {
     title: string;
     description: string;

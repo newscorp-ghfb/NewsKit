@@ -119,7 +119,10 @@ export const renderCols = (
       }
 
       case 'number': {
-        const v = typeof cellValue === 'undefined' ? rowIndex + 1 : cellValue;
+        const v =
+          typeof cellValue === 'undefined'
+            ? rowIndex + 1
+            : (cellValue as number);
         cellContent = <CircleFlag>{v}</CircleFlag>;
         break;
       }
@@ -218,18 +221,14 @@ export const renderCols = (
 
       case 'borderRadius': {
         cellContent = cellValue && (
-          <BorderCard borderRadiusToken={cellValue.toString()}>
-            {cellValue}
-          </BorderCard>
+          <BorderCard borderRadiusToken={cellValue.toString()} />
         );
         break;
       }
 
       case 'borderWidth': {
         cellContent = cellValue && (
-          <BorderCard borderWidthToken={cellValue.toString()}>
-            {cellValue}
-          </BorderCard>
+          <BorderCard borderWidthToken={cellValue.toString()} />
         );
         break;
       }
@@ -331,7 +330,7 @@ export const renderCols = (
       }
 
       default:
-        cellContent = cellValue;
+        cellContent = cellValue as React.ReactNode;
         break;
     }
 

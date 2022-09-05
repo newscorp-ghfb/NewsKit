@@ -21,7 +21,9 @@ const SearchIconContainer = styled(Visible)`
 export const Search: React.FC = () => {
   const searchButtonRef = React.useRef(null);
   const [isOpen, setIsOpen] = React.useState(false);
-  const [initialQuery, setInitialQuery] = React.useState(undefined);
+  const [initialQuery, setInitialQuery] = React.useState<string | undefined>(
+    undefined,
+  );
 
   const onOpen = React.useCallback(() => {
     setIsOpen(true);
@@ -31,7 +33,7 @@ export const Search: React.FC = () => {
     setIsOpen(false);
   }, [setIsOpen]);
 
-  const onInput = React.useCallback(
+  const onInput = React.useCallback<(event: KeyboardEvent) => void>(
     event => {
       setIsOpen(true);
       setInitialQuery(event.key);

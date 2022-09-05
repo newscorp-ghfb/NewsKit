@@ -17,7 +17,7 @@ export type AreasMap = {
   [componentName: string]: React.FC<GridLayoutItemProps>;
 };
 
-type GridLayoutRenderProps = (areas: AreasMap) => React.ReactNode;
+export type GridLayoutRenderProps = (areas: AreasMap) => React.ReactNode;
 
 export type GridLayoutProps = {
   rowGap?: MQ<string>;
@@ -41,4 +41,4 @@ export type GridLayoutProps = {
     minHeight?: MQ<string>;
     maxHeight?: MQ<string>;
   } & LogicalProps;
-} & React.HTMLAttributes<HTMLDivElement>;
+} & Omit<React.HTMLAttributes<HTMLDivElement>, 'children'>;

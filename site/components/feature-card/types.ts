@@ -19,7 +19,11 @@ export interface FeatureCardProps
   };
 }
 
-export type OptionalLinkWrapperProps = Pick<CardProps, 'href'>;
-export type OptionalButtonLinkWrapperProps = Pick<CardProps, 'href'> & {
+export type OptionalLinkWrapperProps = Pick<CardProps, 'href' | 'children'>;
+
+export type OptionalButtonLinkWrapperProps = Pick<
+  CardProps,
+  'href' | 'children'
+> & {
   buttonHref?: string;
 };
