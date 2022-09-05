@@ -145,6 +145,8 @@ const HeroInteractiveElements = ({
           overrides={{
             panel: {paddingInline: 'space070'},
             pointer: {size: 'sizing020', edgeOffset: 'sizing020'},
+            // Setting an unexisting transitionPreset to avoid a resizing jump.
+            transitionPreset: 'none',
           }}
           open
           content="Tooltip"
