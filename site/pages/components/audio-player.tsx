@@ -1635,63 +1635,6 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, this overrides the iconSize in the PlaybackSpeedControl icon button.',
             },
-          ],
-          overridesFooter: (
-            <InlineMessage
-              icon={infoIcon}
-              role="region"
-              aria-label="Playback Speed Control"
-              overrides={{
-                marginBlockStart: 'space070',
-              }}
-            >
-              This component should extend the overrides of the{' '}
-              <Link href="/components/popover/">Popover</Link>,{' '}
-              <Link href="/components/modal/">Modal</Link>, and Selection List
-              components.
-            </InlineMessage>
-          ),
-        },
-        {
-          title: 'SelectionList',
-          summary:
-            'The SelectionList has a range of props that can be used to define an appropriate experience for different use cases.',
-          propsRows: [
-            {
-              name: 'children',
-              type: 'React.ReactElement<SelectionListOptionProps>[]',
-              default: '',
-              description: 'An array of SelectionListOptions components.',
-              required: true,
-            },
-          ],
-        },
-        {
-          title: 'SelectionListOption',
-          summary:
-            'The SelectionListOption has a range of props that can be used to define an appropriate experience for different use cases.',
-          propsRows: [
-            {
-              name: 'children',
-              type: 'React.ReactNode',
-              default: '',
-              description: 'Contents of the SelectionListOption',
-              required: true,
-            },
-            {
-              name: 'selected',
-              type: 'boolean',
-              default: 'false',
-              description: 'The selected state of the SelectionListOption',
-            },
-            {
-              name: 'selectedIcon',
-              type: 'React.ReactNode',
-              default: 'IconFilledCheck',
-              description: 'Icon(s) of the SelectionListOption',
-            },
-          ],
-          overridesRows: [
             {
               attribute: 'SelectionListOption.minHeight',
               type: 'MQ<string>',
@@ -1750,6 +1693,20 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the iconSize in the SelectionListOption.',
             },
           ],
+          propsFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="Playback Speed Control"
+              overrides={{
+                marginBlockStart: 'space070',
+              }}
+            >
+              This component should extend the overrides of the{' '}
+              <Link href="/components/popover/">Popover</Link>,{' '}
+              <Link href="/components/modal/">Modal</Link> components.
+            </InlineMessage>
+          ),
         },
       ],
     }}
