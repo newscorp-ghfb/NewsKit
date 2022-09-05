@@ -6,6 +6,11 @@ module.exports = {
     'prettier',
     'plugin:@next/next/recommended',
   ],
+  settings: {
+    next: {
+      rootDir: 'site/',
+    },
+  },
   parserOptions: {
     project: 'tsconfig.eslint.json',
   },

@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {Block, Menu, MenuDivider, MenuItem} from 'newskit';
+import LinkNext from 'next/link';
 import {useRouter} from 'next/router';
 import routes from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
@@ -22,20 +23,22 @@ const MenuTitleLinks: React.FC<PageLinkProps> = ({
   });
 
   return (
-    <MenuItem
-      href={href}
-      data-testid={page}
-      selected={active}
-      overrides={{
-        stylePreset: 'sideBarNavigation',
-        typographyPreset: 'utilityButton020',
-        minHeight: '40px',
-        paddingInlineStart: 'space060',
-      }}
-      size="small"
-    >
-      {children} <span ref={ref} />
-    </MenuItem>
+    <LinkNext href={href} passHref>
+      <MenuItem
+        href={href}
+        data-testid={page}
+        selected={active}
+        overrides={{
+          stylePreset: 'sideBarNavigation',
+          typographyPreset: 'utilityButton020',
+          minHeight: '40px',
+          paddingInlineStart: 'space060',
+        }}
+        size="small"
+      >
+        {children} <span ref={ref} />
+      </MenuItem>
+    </LinkNext>
   );
 };
 export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
@@ -49,7 +52,7 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
             {page ? (
               <>
                 {indexPage ? undefined : (
-                  <MenuTitleLinks active={path === id} href={id.substring(1)}>
+                  <MenuTitleLinks active={path === id} href={id}>
                     {title}
                   </MenuTitleLinks>
                 )}
