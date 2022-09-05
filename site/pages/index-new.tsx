@@ -42,6 +42,7 @@ const Index = (layoutProps: LayoutProps) => {
   // The World Design Systems Week 2022 banner should hide automatically after the event which is on 19-23 September 2022
   const eventDateEnd = new Date('2022-09-24');
   const showEventBanner = new Date() < eventDateEnd;
+  const {themeMode, toggleTheme} = layoutProps;
 
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
@@ -49,7 +50,11 @@ const Index = (layoutProps: LayoutProps) => {
         rowGap={{xs: 'space070', md: 'space100'}}
         overrides={{marginBlockEnd: 'space080'}}
       >
-        <Hero contentContainerOverrides={GRID_SECTION_OVERRIDES} />
+        <Hero
+          contentContainerOverrides={GRID_SECTION_OVERRIDES}
+          themeMode={themeMode}
+          toggleTheme={toggleTheme}
+        />
         {showEventBanner && (
           <GridLayout overrides={GRID_SECTION_OVERRIDES}>
             <FeatureCard

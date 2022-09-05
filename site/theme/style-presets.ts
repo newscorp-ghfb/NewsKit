@@ -1085,4 +1085,50 @@ export const stylePresets = {
       textDecoration: 'underline',
     },
   },
+  heroInteractiveSliderTrack: {
+    base: {
+      backgroundColor: '{{colors.interface020}}',
+      boxShadow: '{{shadows.shadow040}}',
+      borderRadius: '{{borders.borderRadiusRounded050}}',
+    },
+  },
+  heroInteractiveForm: {
+    base: {
+      backgroundColor: '{{colors.inkInverse}}',
+      boxShadow: '{{shadows.shadow040}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+  heroInteractiveFormInput: {
+    base: {
+      backgroundColor: '{{colors.darkBlue010}}',
+      borderColor: '{{colors.interactiveInput020}}',
+      color: '{{colors.inkSubtle}}',
+      borderRadius: '{{borders.borderRadiusRounded010}}',
+    },
+  },
+  heroInteractiveSelectionList: {
+    base: {
+      backgroundColor: '{{colors.inkInverse}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+      boxShadow: '{{shadows.shadow050}}',
+    },
+  },
+  heroInteractiveSelectButton: {
+    base: {
+      backgroundColor: '{{colors.interactiveInput010}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interactiveInput020}}',
+      borderWidth: '{{borders.borderWidthDefault}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkBase}}',
+    },
+  },
+  heroInteractiveSelectPanel: {
+    base: {
+      backgroundColor: '{{colors.inkInverse}}',
+      borderRadius: '{{borders.borderRadiusRounded010}}',
+      boxShadow: '{{shadows.shadow050}}',
+    },
+  },
 };
