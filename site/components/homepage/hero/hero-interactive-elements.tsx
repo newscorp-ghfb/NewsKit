@@ -38,6 +38,7 @@ const HeroInteractiveElements = ({
             width: '176px',
             stylePreset: 'heroInteractiveSelectButton',
           }}
+          tabIndex={-1}
         >
           <TextBlock
             typographyPreset="utilityBody020"
@@ -72,13 +73,15 @@ const HeroInteractiveElements = ({
           label="Yes"
           size="medium"
           defaultChecked
+          tabIndex={-1}
         />
         <Checkbox
           overrides={{marginBlock: 'space030'}}
           label="No"
           size="medium"
+          tabIndex={-1}
         />
-        <Checkbox label="Maybe" size="medium" />
+        <Checkbox label="Maybe" size="medium" tabIndex={-1} />
       </InteractiveElementContainer>
       <InteractiveElementContainer top={20} left={390} width={110}>
         <Block stylePreset="heroInteractiveSelectionList">
@@ -96,6 +99,7 @@ const HeroInteractiveElements = ({
                 onClick={() => {
                   setSelectionListValue(speed);
                 }}
+                tabIndex={-1}
               >
                 {speed}x
               </SelectionListOption>
@@ -116,6 +120,7 @@ const HeroInteractiveElements = ({
           // that's an exception where we don't want to show
           // any label even though it's required.
           label="ㅤ"
+          tabIndex={-1}
         />
       </InteractiveElementContainer>
       <InteractiveElementContainer top={300} left={55} height={140}>
@@ -132,6 +137,7 @@ const HeroInteractiveElements = ({
           max={50}
           min={0}
           vertical
+          tabIndex={-1}
         />
       </InteractiveElementContainer>
       <InteractiveElementContainer top={382} left={90} zIndex={0}>
@@ -155,6 +161,7 @@ const HeroInteractiveElements = ({
           overrides={{
             paddingInline: 'space070',
           }}
+          tabIndex={-1}
         >
           Button
         </Button>
@@ -175,8 +182,8 @@ const HeroInteractiveElements = ({
             }}
             id="name"
             size="small"
-            disabled
-            value="NewsKit"
+            defaultValue="NewsKit"
+            tabIndex={-1}
           />
           <Label htmlFor="email" size="small">
             Email address
@@ -187,8 +194,8 @@ const HeroInteractiveElements = ({
             }}
             id="email"
             size="small"
-            disabled
-            value="newskit@news.co.uk"
+            defaultValue="newskit@news.co.uk"
+            tabIndex={-1}
           />
         </Block>
       </InteractiveElementContainer>
