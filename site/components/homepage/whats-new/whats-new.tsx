@@ -83,6 +83,7 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
                 overrides={{stylePreset: 'whatsNewCardLink'}}
                 href={html_url}
                 key={tag_name}
+                target="_blank"
               >
                 <Headline
                   overrides={{
