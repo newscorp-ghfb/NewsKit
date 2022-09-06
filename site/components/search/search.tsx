@@ -56,21 +56,21 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
   return (
     <>
       <SearchIconContainer xs sm md>
-        <IconButton
-          aria-label="Search"
-          data-testid="search-icon-button"
-          overrides={{
-            stylePreset: 'iconButtonMinimalPrimary',
-          }}
-          ref={searchButtonRef}
-          onClick={onOpen}
-        >
-          {sidebarOpen ? undefined : (
+        {sidebarOpen ? undefined : (
+          <IconButton
+            aria-label="Search"
+            data-testid="search-icon-button"
+            overrides={{
+              stylePreset: 'iconButtonMinimalPrimary',
+            }}
+            ref={searchButtonRef}
+            onClick={onOpen}
+          >
             <IconFilledSearch
               overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
             />
-          )}
-        </IconButton>
+          </IconButton>
+        )}
       </SearchIconContainer>
       <Visible lg xl>
         <Button
