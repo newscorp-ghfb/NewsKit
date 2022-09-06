@@ -8,7 +8,7 @@ import {
   getStylePreset,
   MQ,
 } from '../utils/style';
-import {Stack, Flow, StackProps} from '../stack';
+import {Stack, StackProps} from '../stack';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import defaults from './defaults';
@@ -75,13 +75,13 @@ const ThemelessShareBar: React.FC<ShareBarProps> = ({
     <StyledShareBarContainer
       role="region"
       inline={vertical}
-      flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
+      flow={vertical ? 'vertical-center' : 'horizontal-center'}
       {...rest}
       {...styledComponentsProps}
     >
       {label && <StyledLabel {...styledComponentsProps}>{label}</StyledLabel>}
       <Stack
-        flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
+        flow={vertical ? 'vertical-center' : 'horizontal-center'}
         spaceInline={getToken(
           {theme, overrides},
           `shareBar.items`,

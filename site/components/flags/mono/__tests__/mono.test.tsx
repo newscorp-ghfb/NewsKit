@@ -16,22 +16,23 @@ describe('Mono', () => {
         children: 'Child Text',
       });
       expect(fragment).toMatchInlineSnapshot(`
-<DocumentFragment>
-  <div
-    data-comp="NewsKit Flag"
-    data-props="{
-  \\"overrides\\": {
-    \\"typographyPreset\\": \\"utilityCode020\\",
-    \\"stylePreset\\": \\"flagSolidNeutral\\"
-  },
-  \\"size\\": \\"small\\"
-}"
-    data-testid="Flag"
-  >
-    Child Text
-  </div>
-</DocumentFragment>
-`);
+        <DocumentFragment>
+          <div
+            data-comp="NewsKit Flag"
+            data-props="{
+          \\"overrides\\": {
+            \\"typographyPreset\\": \\"utilityCode020\\",
+            \\"stylePreset\\": \\"flagSolidNeutral\\"
+          },
+          \\"size\\": \\"small\\",
+          \\"as\\": \\"span\\"
+        }"
+            data-testid="Flag"
+          >
+            Child Text
+          </div>
+        </DocumentFragment>
+      `);
     });
   });
 });

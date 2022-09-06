@@ -32,10 +32,9 @@ export const CommonSection: React.FC<CommonSectionProps> = ({
       <StyledSection id={id} data-toc-indexed={toc || title}>
         <Grid xsMargin="space000" xsRowGutter="space000">
           <SectionIntroduction
-            subHeadingSpaceStack={{
-              xs: 'space080',
-              lg: 'space100',
-            }}
+            subHeadingSpaceStack={
+              children || media ? {xs: 'space080', lg: 'space100'} : 'space000'
+            }
             title={title}
             lastItem={lastItem}
           >

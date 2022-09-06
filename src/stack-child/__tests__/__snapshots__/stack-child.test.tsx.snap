@@ -60,9 +60,9 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #535353;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -72,11 +72,11 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -197,10 +197,10 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
         class="emotion-2"
         data-testid="tag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -208,8 +208,8 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
             >
               child 1
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </div>
     <div
@@ -219,10 +219,10 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
         class="emotion-2"
         data-testid="tag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -230,8 +230,8 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
             >
               child 2
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </div>
     <div
@@ -241,10 +241,10 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
         class="emotion-2"
         data-testid="tag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -252,8 +252,8 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
             >
               child 3
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </div>
   </div>
@@ -324,9 +324,9 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #535353;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -336,11 +336,11 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -455,10 +455,10 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
         class="emotion-2"
         data-testid="tag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -466,8 +466,8 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
             >
               With padding props
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </div>
     <div
@@ -477,10 +477,10 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
         class="emotion-2"
         data-testid="tag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -488,8 +488,8 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
             >
               With margin props
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </div>
   </div>
@@ -558,9 +558,9 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #535353;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -570,11 +570,11 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -695,10 +695,10 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
         class="emotion-2"
         data-testid="tag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -706,8 +706,8 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
             >
               child 1
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </li>
     <li
@@ -717,10 +717,10 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
         class="emotion-2"
         data-testid="tag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -728,8 +728,8 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
             >
               child 2
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </li>
     <li
@@ -739,10 +739,10 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
         class="emotion-2"
         data-testid="tag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -750,8 +750,8 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
             >
               child 3
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </li>
   </ul>
@@ -820,9 +820,9 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #535353;
+  border-color: #3B3B3B;
   border-width: 1px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-radius: 0;
 }
 
@@ -832,11 +832,11 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -937,10 +937,10 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
         class="emotion-2"
         data-testid="tag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -948,8 +948,8 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
             >
               child 1
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </div>
     <div
@@ -959,10 +959,10 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
         class="emotion-2"
         data-testid="tag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -970,8 +970,8 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
             >
               child 2
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </div>
     <div
@@ -981,10 +981,10 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
         class="emotion-2"
         data-testid="tag"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
             <span
@@ -992,8 +992,8 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
             >
               child 3
             </span>
-          </div>
-        </div>
+          </span>
+        </span>
       </div>
     </div>
   </div>

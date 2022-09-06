@@ -1,10 +1,7 @@
 import React from 'react';
 import {
-  Block,
-  Flow,
   InlineMessage,
   Stack,
-  StackDistribution,
   StructuredListCell,
   StructuredListItem,
   StructuredList,
@@ -101,10 +98,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
                 </TextBlock>
               </StructuredListCell>
               <StructuredListCell>
-                <Stack
-                  stackDistribution={StackDistribution.End}
-                  flow={Flow.HorizontalCenter}
-                >
+                <Stack stackDistribution="flex-end" flow="horizontal-center">
                   <IconOutlinedArrowForwardIos
                     overrides={{size: 'iconSize010'}}
                   />
@@ -129,10 +123,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
                 </TextBlock>
               </StructuredListCell>
               <StructuredListCell>
-                <Stack
-                  stackDistribution={StackDistribution.End}
-                  flow={Flow.HorizontalCenter}
-                >
+                <Stack stackDistribution="flex-end" flow="horizontal-center">
                   <IconOutlinedArrowForwardIos
                     overrides={{size: 'iconSize010'}}
                   />
@@ -220,14 +211,15 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           title: 'Interactive items',
           description: (
             <>
-              <Block spaceStack="space030">
-                Structured List items can be set to be interactive by supplying
-                a link for an item.
-              </Block>
+              Structured List items can be set to be interactive by supplying a
+              link for an item.
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="checkbox label position"
+                overrides={{
+                  marginBlockStart: 'space050',
+                }}
               >
                 If a HREF is passed to the component then a chevron is rendered
                 in the last cell and the item becomes interactive (to indicate
@@ -539,33 +531,8 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      props: true,
-      performance: false,
-      design: true,
-      uiKit: false,
-      themes: true,
-    }}
     related={{
-      related: [
-        'Block',
-        'Card',
-        'Divider',
-        'Drawer',
-        'Fieldset',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Popover',
-        'Stack',
-        'Visibility',
-      ],
+      related: ['Block', 'Divider', 'Grid'],
     }}
   />
 );

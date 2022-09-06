@@ -14,9 +14,9 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 
 .emotion-2 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -33,9 +33,9 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 
 .emotion-3 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -52,9 +52,9 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 
 .emotion-4 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -103,8 +103,8 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #0A782A;
-  background-color: #E6FAEB;
+  border-color: #007B22;
+  background-color: #E5F4EA;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -115,7 +115,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 .emotion-7 svg {
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 .emotion-8 {
@@ -152,7 +152,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #0A782A;
+  fill: #007B22;
   vertical-align: unset;
   display: inline-block;
 }
@@ -174,7 +174,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 .emotion-10.emotion-10 {
-  fill: #0A782A;
+  fill: #007B22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -195,9 +195,9 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 
 .emotion-12 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -207,7 +207,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 .emotion-15 {
-  fill: #E4E4E4;
+  fill: #DEE2E5;
   vertical-align: unset;
   display: inline-block;
   margin: 0 6px;
@@ -232,7 +232,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 .emotion-15.emotion-15 {
   width: 12px;
   height: 12px;
-  fill: #E4E4E4;
+  fill: #DEE2E5;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -287,10 +287,10 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <svg
@@ -309,8 +309,8 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
                       d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
                     />
                   </svg>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
         </tr>
@@ -360,9 +360,9 @@ exports[`Table renders links correctly 1`] = `
 
 .emotion-2 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -379,9 +379,9 @@ exports[`Table renders links correctly 1`] = `
 
 .emotion-3 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -399,7 +399,7 @@ exports[`Table renders links correctly 1`] = `
 
 .emotion-5 {
   display: inline-block;
-  color: #577FFB;
+  color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -421,27 +421,27 @@ exports[`Table renders links correctly 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-5:hover:not(:disabled) {
-  color: #3358CC;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-5:hover:not(:disabled) svg {
-  fill: #3358CC;
+  fill: #254CAC;
 }
 
 .emotion-5:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-5:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -504,9 +504,9 @@ exports[`Table renders links correctly 1`] = `
 
 .emotion-8 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -584,9 +584,9 @@ exports[`Table renders number values automatically if undefined 1`] = `
 
 .emotion-2 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -603,9 +603,9 @@ exports[`Table renders number values automatically if undefined 1`] = `
 
 .emotion-4 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -622,9 +622,9 @@ exports[`Table renders number values automatically if undefined 1`] = `
 
 .emotion-5 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -667,7 +667,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   -ms-appearance: none;
   appearance: none;
   color: #FFFFFF;
-  background-color: #577FFB;
+  background-color: #3358CC;
   border-radius: 8px;
   white-space: nowrap;
 }
@@ -743,9 +743,9 @@ exports[`Table renders number values automatically if undefined 1`] = `
 
 .emotion-29 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -790,10 +790,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -801,8 +801,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     1
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -812,10 +812,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -823,8 +823,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     1
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -843,10 +843,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -854,8 +854,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     2
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -865,10 +865,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -876,8 +876,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     2
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -896,10 +896,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -907,8 +907,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     3
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -918,10 +918,10 @@ exports[`Table renders number values automatically if undefined 1`] = `
               class="emotion-7"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-8"
               >
-                <div
+                <span
                   class="emotion-9"
                 >
                   <span
@@ -929,8 +929,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
                   >
                     3
                   </span>
-                </div>
-              </div>
+                </span>
+              </span>
             </div>
           </td>
           <td
@@ -959,9 +959,9 @@ exports[`Table renders with default styles 1`] = `
 
 .emotion-2 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -978,9 +978,9 @@ exports[`Table renders with default styles 1`] = `
 
 .emotion-4 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -996,9 +996,9 @@ exports[`Table renders with default styles 1`] = `
 
 .emotion-7 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1076,9 +1076,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 
 .emotion-2 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1095,9 +1095,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 
 .emotion-3 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1114,9 +1114,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 
 .emotion-5 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1162,9 +1162,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
   border-radius: 4px;
-  color: #2E2E2E;
+  color: #2E3F54;
   white-space: nowrap;
 }
 
@@ -1174,7 +1174,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-8 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-9 {
@@ -1235,9 +1235,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 
 .emotion-17 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1283,14 +1283,14 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1298,21 +1298,21 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     type
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1320,9 +1320,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     default
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
         </tr>
         <tr
@@ -1336,14 +1336,14 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1351,21 +1351,21 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     type
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1373,9 +1373,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     default
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
         </tr>
       </tbody>
@@ -1398,9 +1398,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 
 .emotion-2 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1417,9 +1417,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 
 .emotion-3 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #C0C7CC;
   border-width: 0 0 1px 0;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1436,9 +1436,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 
 .emotion-5 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1484,9 +1484,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F4F4F4;
+  background-color: #F0F1F3;
   border-radius: 4px;
-  color: #2E2E2E;
+  color: #2E3F54;
   white-space: nowrap;
 }
 
@@ -1496,7 +1496,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-8 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 .emotion-9 {
@@ -1557,9 +1557,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 
 .emotion-17 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 0 0 1px 0;
-  color: #2E2E2E;
+  color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1605,14 +1605,14 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1620,21 +1620,21 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     type
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1642,9 +1642,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     default
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
         </tr>
         <tr
@@ -1658,14 +1658,14 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1673,21 +1673,21 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     type
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
               data-testid="flag"
             >
-              <div
+              <span
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
                   <span
@@ -1695,9 +1695,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
                   >
                     default
                   </span>
-                </div>
-              </div>
-            </div>
+                </span>
+              </span>
+            </span>
           </td>
         </tr>
       </tbody>

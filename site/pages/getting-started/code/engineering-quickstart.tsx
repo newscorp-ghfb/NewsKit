@@ -64,20 +64,24 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
-            markerAlign="center"
+            markerAlign="start"
             overrides={{
+              spaceStack: 'space060',
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
               marker: {
                 spaceInline: 'space020',
               },
             }}
           >
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            <>
               <Link href="https://nodejs.org/en/download/" target="_blank">
                 Node.js
               </Link>{' '}
               with a minimum of node v14 installed.
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            </>
+            <>
               A project to install NewsKit into. If you need to create a new one
               try{' '}
               <Link
@@ -94,7 +98,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
                 Create React App
               </Link>
               .
-            </P>
+            </>
           </UnorderedList>
         </ContentPrimary>
 
@@ -188,7 +192,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
           showSeparator
         >
           <Code>
-            {`import {NewsKitProvider, Tag, TagSize, newskitLightTheme} from 'newskit';
+            {`import {NewsKitProvider, Tag, newskitLightTheme} from 'newskit';
 import React from 'react';
 export default class App extends React.Component {
   render() {
@@ -200,7 +204,7 @@ export default class App extends React.Component {
         >
         <Tag
           href="http://example.com"
-          size={TagSize.Medium}>
+          size="medium">
             Tag Content
         </Tag>
       </NewsKitProvider>

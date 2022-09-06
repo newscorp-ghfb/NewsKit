@@ -263,11 +263,10 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Label',
           description: (
             <>
-              <Block spaceStack="space030">
-                The Radio Button has a label that appears to the right (end) of
-                a Radio Button, for context.
-              </Block>
+              The Radio Button has a label that appears to the right (end) of a
+              Radio Button, for context.
               <InlineMessage
+                overrides={{marginBlockStart: 'space030'}}
                 icon={infoIcon}
                 role="region"
                 aria-label="Radio label position"
@@ -621,12 +620,12 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
                 For more information, please refer to the Form component
               </Link>
               .
-              <Block spaceStack="space050" />
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="Radio validation"
                 title="Note"
+                overrides={{marginBlockStart: 'space050'}}
               >
                 Validation only works if the FormInput Radio Button uses the
                 Form component.
@@ -815,9 +814,8 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       introduction: (
         <>
           The Radio Button has a range of props that can be used to define an
-          appropriate experience for different use cases.
-          <Block spaceStack="space080" />
-          <InlineMessage>
+          appropriate experience for different use cases.{' '}
+          <InlineMessage overrides={{marginBlockStart: 'space080'}}>
             There are three components exported from the package; one for use
             within the{' '}
             <Link href="/components/form/">NewsKit Form component</Link>, one
@@ -866,21 +864,8 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      performance: false,
-      seo: null,
-      props: true,
-      uiKit: true,
-      design: true,
-      themes: true,
-    }}
     related={{
-      related: ['Button', 'Checkbox', 'Form', 'Select', 'Slider', 'Text Field'],
+      related: ['Button', 'Checkbox', 'Form', 'Select'],
     }}
   />
 );

@@ -41,7 +41,7 @@ const PRINCIPLE_CARDS = [
       <>
         NewsKit components folllow{' '}
         <Link
-          overrides={{stylePreset: 'inkInverse'}}
+          overrides={{stylePreset: 'inkWhiteContrast'}}
           href="https://www.w3.org/WAI/standards-guidelines/wcag/"
           target="_blank"
         >
@@ -49,7 +49,7 @@ const PRINCIPLE_CARDS = [
         </Link>
         ,{' '}
         <Link
-          overrides={{stylePreset: 'inkInverse'}}
+          overrides={{stylePreset: 'inkWhiteContrast'}}
           href="https://www.w3.org/WAI/standards-guidelines/aria/"
           target="_blank"
         >
@@ -57,7 +57,7 @@ const PRINCIPLE_CARDS = [
         </Link>{' '}
         and
         <Link
-          overrides={{stylePreset: 'inkInverse'}}
+          overrides={{stylePreset: 'inkWhiteContrast'}}
           href="https://www.w3.org/TR/wai-aria-practices/"
           target="_blank"
         >
@@ -79,7 +79,10 @@ const PRINCIPLE_CARDS = [
     description: (
       <>
         NewsKit has an extensive
-        <Link overrides={{stylePreset: 'inkInverse'}} href="/theme/overview/">
+        <Link
+          overrides={{stylePreset: 'inkWhiteContrast'}}
+          href="/theme/overview/"
+        >
           theming system
         </Link>{' '}
         that enables customization of style and layout. Additionally components
@@ -242,10 +245,10 @@ const EngineeringOverview = (layoutProps: LayoutProps) => (
                   <>
                     Guidance on how to find the information needed in designs
                     for engineers to build.
-                    <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/proto/kXCrh9MHKAJ878KE2dQOz8/Handoff-Guides---for-engineers-%26-designers?page-id=74%3A13186&node-id=92%3A1434&viewport=332%2C48%2C0.11&scaling=min-zoom&starting-point-node-id=92%3A1434&hide-ui=1"
                       target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
                     >
                       View NewsKit Handoff guidance
                     </Link>

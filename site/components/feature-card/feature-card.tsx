@@ -2,12 +2,10 @@ import React from 'react';
 import {
   Block,
   Visible,
-  StackDistribution,
   Stack,
   Headline,
   TextBlock,
   Button,
-  ButtonSize,
   useTheme,
   toNewsKitIcon,
 } from 'newskit';
@@ -37,6 +35,7 @@ const OptionalLinkWrapper: React.FC<OptionalLinkWrapperProps> = ({
   if (href) {
     return (
       <StyledCardLink
+        external={false}
         overrides={{
           stylePreset: 'linkNoUnderline',
         }}
@@ -58,6 +57,7 @@ const OptionalButtonLinkWrapper: React.FC<OptionalButtonLinkWrapperProps> = ({
     return (
       <Link
         href={buttonHref}
+        external={false}
         overrides={{
           stylePreset: 'linkNoUnderline',
         }}
@@ -81,6 +81,7 @@ const FeatureCardHorizontal = React.forwardRef<
       stylePrefix,
       buttonLabel,
       buttonHref,
+      buttonOverrides,
       overrides,
       ...props
     },
@@ -151,14 +152,15 @@ const FeatureCardHorizontal = React.forwardRef<
               <Block spaceStack="space020">
                 <OptionalButtonLinkWrapper href={href} buttonHref={buttonHref}>
                   <Button
-                    size={ButtonSize.Small}
+                    size="small"
                     overrides={{
                       stylePreset: `${stylePrefix}Button`,
                       typographyPreset: 'utilityButton010',
+                      ...buttonOverrides,
                     }}
                   >
                     {buttonLabel}
-                    <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
+                    <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
                   </Button>
                 </OptionalButtonLinkWrapper>
               </Block>
@@ -184,7 +186,7 @@ const FeatureCardHorizontal = React.forwardRef<
               },
             }}
           >
-            <Stack stackDistribution={StackDistribution.Center}>
+            <Stack stackDistribution="center">
               {title && (
                 <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
                   <Headline
@@ -200,7 +202,7 @@ const FeatureCardHorizontal = React.forwardRef<
                 </Block>
               )}
               {description && (
-                <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
+                <Block spaceStack="space050">
                   <TextBlock
                     stylePreset="inkWhiteSubtle"
                     typographyPreset={descriptionTypographyPreset}
@@ -212,14 +214,15 @@ const FeatureCardHorizontal = React.forwardRef<
               {buttonLabel && (
                 <OptionalButtonLinkWrapper href={href} buttonHref={buttonHref}>
                   <Button
-                    size={ButtonSize.Small}
+                    size="small"
                     overrides={{
                       stylePreset: `${stylePrefix}Button`,
                       typographyPreset: 'utilityButton010',
+                      ...buttonOverrides,
                     }}
                   >
                     {buttonLabel}
-                    <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
+                    <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
                   </Button>
                 </OptionalButtonLinkWrapper>
               )}
@@ -242,11 +245,12 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
       buttonHref,
       media,
       overrides,
+      buttonOverrides,
       ...props
     },
     ref,
   ) => {
-    const indexCards = ['roadmapCard', 'contributeCard', 'patternsCard'];
+    const indexCards = ['roadmapCard', 'contributeOldCard', 'patternsCard'];
     const mediaValue = () => (
       <StyledFeatureCardVerticalMedia stylePreset={`${stylePrefix}Media`} />
     );
@@ -311,14 +315,15 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
             <Block spaceStack="space020">
               <OptionalButtonLinkWrapper href={href} buttonHref={buttonHref}>
                 <Button
-                  size={ButtonSize.Small}
+                  size="small"
                   overrides={{
                     stylePreset: `${stylePrefix}Button`,
                     typographyPreset: 'utilityButton010',
+                    ...buttonOverrides,
                   }}
                 >
                   {buttonLabel}
-                  <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
+                  <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
                 </Button>
               </OptionalButtonLinkWrapper>
             </Block>

@@ -4,21 +4,21 @@ export const typographyPresets: Record<string, TypographyPreset> = {};
 // Editorial Display
 typographyPresets.editorialDisplay010 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
-  fontSize: '{{fonts.fontSize120}}',
+  fontSize: '{{fonts.fontSize140}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialDisplay020 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
-  fontSize: '{{fonts.fontSize130}}',
+  fontSize: '{{fonts.fontSize150}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialDisplay030 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
-  fontSize: '{{fonts.fontSize140}}',
+  fontSize: '{{fonts.fontSize160}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
@@ -40,42 +40,42 @@ typographyPresets.editorialHeadline020 = {
 };
 typographyPresets.editorialHeadline030 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
-  fontSize: '{{fonts.fontSize060}}',
+  fontSize: '{{fonts.fontSize070}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialHeadline040 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
-  fontSize: '{{fonts.fontSize070}}',
+  fontSize: '{{fonts.fontSize080}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialHeadline050 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
-  fontSize: '{{fonts.fontSize080}}',
+  fontSize: '{{fonts.fontSize090}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialHeadline060 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
-  fontSize: '{{fonts.fontSize090}}',
+  fontSize: '{{fonts.fontSize100}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialHeadline070 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
-  fontSize: '{{fonts.fontSize100}}',
+  fontSize: '{{fonts.fontSize110}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialHeadline080 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
-  fontSize: '{{fonts.fontSize110}}',
+  fontSize: '{{fonts.fontSize130}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',

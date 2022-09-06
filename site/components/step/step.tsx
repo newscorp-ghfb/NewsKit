@@ -1,5 +1,5 @@
 import React from 'react';
-import {Stack, Block, Flow, Flag, FlagSize} from 'newskit';
+import {Stack, Block, Flag} from 'newskit';
 import {Illustration} from '../illustrations/illustration-loader';
 import {IconFilledTimer} from '../icons';
 
@@ -17,12 +17,12 @@ export const Step = ({media, stepText, timerText}: StepProps) => (
       </Block>
     )}
     <Stack
-      flow={Flow.HorizontalCenter}
+      flow="horizontal-center"
       stackDistribution="space-between"
       height="auto"
     >
       <Flag
-        size={FlagSize.Medium}
+        size="medium"
         overrides={{
           stylePreset: 'stepFlag',
           typographyPreset: 'utilityLabel020',
@@ -32,7 +32,7 @@ export const Step = ({media, stepText, timerText}: StepProps) => (
         {stepText}
       </Flag>
       <Flag
-        size={FlagSize.Small}
+        size="small"
         overrides={{
           stylePreset: 'timerFlag',
           typographyPreset: 'utilityLabel020',

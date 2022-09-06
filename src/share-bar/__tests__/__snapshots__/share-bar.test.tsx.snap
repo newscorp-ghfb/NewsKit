@@ -74,7 +74,7 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
 }
 
 .emotion-4 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -252,43 +252,43 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -326,7 +326,7 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 }
 
 .emotion-6 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -473,7 +473,7 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
 }
 
 .emotion-3 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -618,7 +618,7 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
 }
 
 .emotion-4 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -747,7 +747,7 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
 }
 
 .emotion-3 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -919,43 +919,43 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -993,7 +993,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-6 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1062,20 +1062,20 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-12:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-12:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -1225,10 +1225,10 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-3"
             >
               <span
@@ -1236,8 +1236,8 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -1273,7 +1273,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin-right: 16px;
 }
 
@@ -1290,7 +1290,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-2 {
@@ -1351,43 +1351,43 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -1425,7 +1425,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-6 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1494,20 +1494,20 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-12:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-12:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -1657,10 +1657,10 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-3"
             >
               <span
@@ -1668,8 +1668,8 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -1778,43 +1778,43 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -1852,7 +1852,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-6 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1921,20 +1921,20 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-12:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-12:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -2084,10 +2084,10 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-3"
             >
               <span
@@ -2095,8 +2095,8 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -2205,43 +2205,43 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -2279,7 +2279,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 .emotion-6 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2348,20 +2348,20 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-12:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-12:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -2511,10 +2511,10 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-3"
             >
               <span
@@ -2522,8 +2522,8 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -2686,43 +2686,43 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -2760,7 +2760,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 .emotion-6 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2829,20 +2829,20 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-12:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-12:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -3001,10 +3001,10 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-14"
             >
               <span
@@ -3012,8 +3012,8 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -3122,43 +3122,43 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -3196,7 +3196,7 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 }
 
 .emotion-6 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3265,20 +3265,20 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-12:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-12:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -3437,10 +3437,10 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-14"
             >
               <span
@@ -3448,8 +3448,8 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -3558,43 +3558,43 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
+  color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #6454E3;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
@@ -3632,7 +3632,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 .emotion-6 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3701,20 +3701,20 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-12:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-12:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -3873,10 +3873,10 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
           data-testid="button"
           type="button"
         >
-          <div
+          <span
             class="emotion-13"
           >
-            <div
+            <span
               class="emotion-14"
             >
               <span
@@ -3884,8 +3884,8 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
               >
                 more options
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>

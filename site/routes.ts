@@ -284,10 +284,10 @@ export default [
             id: '/theme/theming/using-a-theme',
           },
           {
-            title: 'Component overrides & defaults',
+            title: 'Component defaults',
             illustration: 'theme/component-defaults/hero',
             description:
-              'Each component in NewsKit has defaults that can be overridden to enhance the experience.',
+              'A preselected option that is applied to a component to define its appearance or behaviour.',
             page: true,
             id: '/theme/theming/component-defaults',
           },
@@ -332,7 +332,7 @@ export default [
             page: true,
             id: '/components/form',
             description:
-              'Forms allow users to enter and edit text content into a UI.',
+              'The form component allows users to enter and edit information into a UI using form controls; based on React Hook Form.',
             illustration: 'components/form/hero',
           },
           {
@@ -366,6 +366,14 @@ export default [
             description:
               'Allows users to choose a single value or range between min and max values by sliding a thumb.',
             illustration: 'components/slider-illustration',
+          },
+          {
+            title: 'Switch',
+            page: true,
+            id: '/components/switch',
+            description:
+              'A switch is a selection control (toggle) that allows users to turn a setting on or off.',
+            illustration: 'components/switch/hero',
           },
           {
             title: 'Text Field',
@@ -403,7 +411,7 @@ export default [
             page: true,
             id: '/components/flag',
             description:
-              'Indicates the status of content e.g. ’new’ or ’updated’.',
+              'A flag is a non-interactive visual indicator used to communicate status.',
             illustration: 'components/flag-illustration',
           },
           {
@@ -561,7 +569,7 @@ export default [
             page: true,
             id: '/components/audio-player',
             description:
-              'Used to embed sound content in web and app interfaces.',
+              'The audio player component allows a user to play and control the playback of live and recorded audio content.',
             illustration: 'components/audio-player-illustration',
           },
           {

@@ -3,6 +3,7 @@ import React from 'react';
 
 export interface LineTruncationProps {
   lines: string;
+  children?: React.ReactNode;
 }
 
 const StyledTextBlock = styled.span<LineTruncationProps>`

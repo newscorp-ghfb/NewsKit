@@ -45,20 +45,20 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-0:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -126,7 +126,7 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -160,13 +160,13 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-49"
+        id="ref-MOCK-ID"
         type="button"
       >
-        <div
+        <span
           class="emotion-1"
         >
-          <div
+          <span
             class="emotion-2"
           >
             <svg
@@ -185,8 +185,8 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
                 d="M13.05 9.79L10 7.5v9l3.05-2.29L16 12zm0 0L10 7.5v9l3.05-2.29L16 12zm0 0L10 7.5v9l3.05-2.29L16 12zM11 4.07V2.05c-2.01.2-3.84 1-5.32 2.21L7.1 5.69A7.941 7.941 0 0111 4.07zM5.69 7.1L4.26 5.68A9.949 9.949 0 002.05 11h2.02c.18-1.46.76-2.79 1.62-3.9zM4.07 13H2.05c.2 2.01 1 3.84 2.21 5.32l1.43-1.43A7.868 7.868 0 014.07 13zm1.61 6.74A9.981 9.981 0 0011 21.95v-2.02a7.941 7.941 0 01-3.9-1.62l-1.42 1.43zM22 12c0 5.16-3.92 9.42-8.95 9.95v-2.02C16.97 19.41 20 16.05 20 12s-3.03-7.41-6.95-7.93V2.05C18.08 2.58 22 6.84 22 12z"
               />
             </svg>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
     </section>
   </div>
@@ -270,20 +270,20 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-0:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -351,7 +351,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -388,13 +388,13 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-40"
+        id="ref-MOCK-ID"
         type="button"
       >
-        <div
+        <span
           class="emotion-1"
         >
-          <div
+          <span
             class="emotion-2"
           >
             <svg
@@ -413,8 +413,8 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
                 d="M13.05 9.79L10 7.5v9l3.05-2.29L16 12zm0 0L10 7.5v9l3.05-2.29L16 12zm0 0L10 7.5v9l3.05-2.29L16 12zM11 4.07V2.05c-2.01.2-3.84 1-5.32 2.21L7.1 5.69A7.941 7.941 0 0111 4.07zM5.69 7.1L4.26 5.68A9.949 9.949 0 002.05 11h2.02c.18-1.46.76-2.79 1.62-3.9zM4.07 13H2.05c.2 2.01 1 3.84 2.21 5.32l1.43-1.43A7.868 7.868 0 014.07 13zm1.61 6.74A9.981 9.981 0 0011 21.95v-2.02a7.941 7.941 0 01-3.9-1.62l-1.42 1.43zM22 12c0 5.16-3.92 9.42-8.95 9.95v-2.02C16.97 19.41 20 16.05 20 12s-3.03-7.41-6.95-7.93V2.05C18.08 2.58 22 6.84 22 12z"
               />
             </svg>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
     </section>
   </div>
@@ -426,7 +426,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -710,7 +710,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 }
 
 .emotion-3 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -755,7 +755,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -774,43 +774,43 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-7:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-7:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-7:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-7:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-7:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-7:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-9 {
@@ -827,8 +827,8 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E0E7FF;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -847,17 +847,17 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 }
 
 .emotion-9:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-9:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-10 {
@@ -969,7 +969,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -980,24 +980,24 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 }
 
 .emotion-16 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-16:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-16:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-16:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-16:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-16:focus-visible:not(:disabled) {
@@ -1065,7 +1065,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1213,10 +1213,10 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-17"
                   >
-                    <div
+                    <span
                       class="emotion-18"
                     >
                       <svg
@@ -1235,8 +1235,8 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
                           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -1298,20 +1298,20 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-0:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1379,7 +1379,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1406,6 +1406,8 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   z-index: 80;
   min-width: 140px;
   position: absolute;
+  left: 0px;
+  top: -24px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1478,7 +1480,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -1534,7 +1536,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -1553,43 +1555,43 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-11:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-11:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-11:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-11:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-11:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-11:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-11:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-13 {
@@ -1606,8 +1608,8 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E0E7FF;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -1626,17 +1628,17 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-13:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-14 {
@@ -1721,6 +1723,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -1733,18 +1736,18 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-floating-ui-38"
+        aria-controls="floating-MOCK-ID"
         aria-haspopup="dialog"
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-37"
+        id="ref-MOCK-ID"
         type="button"
       >
-        <div
+        <span
           class="emotion-1"
         >
-          <div
+          <span
             class="emotion-2"
           >
             <svg
@@ -1763,13 +1766,13 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
                 d="M13.05 9.79L10 7.5v9l3.05-2.29L16 12zm0 0L10 7.5v9l3.05-2.29L16 12zm0 0L10 7.5v9l3.05-2.29L16 12zM11 4.07V2.05c-2.01.2-3.84 1-5.32 2.21L7.1 5.69A7.941 7.941 0 0111 4.07zM5.69 7.1L4.26 5.68A9.949 9.949 0 002.05 11h2.02c.18-1.46.76-2.79 1.62-3.9zM4.07 13H2.05c.2 2.01 1 3.84 2.21 5.32l1.43-1.43A7.868 7.868 0 014.07 13zm1.61 6.74A9.981 9.981 0 0011 21.95v-2.02a7.941 7.941 0 01-3.9-1.62l-1.42 1.43zM22 12c0 5.16-3.92 9.42-8.95 9.95v-2.02C16.97 19.41 20 16.05 20 12s-3.03-7.41-6.95-7.93V2.05C18.08 2.58 22 6.84 22 12z"
               />
             </svg>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
       <div
-        aria-labelledby="ref-floating-ui-37"
-        class="nk-popover-enter-done emotion-5"
-        id="floating-floating-ui-38"
+        aria-labelledby="ref-MOCK-ID"
+        class=" nk-popover-enter-done emotion-5"
+        id="floating-MOCK-ID"
         role="dialog"
         tabindex="-1"
       >
@@ -1866,7 +1869,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         </div>
         <div
           class="emotion-19"
-          id="floating-floating-ui-38-pointer"
+          id="floating-MOCK-ID-pointer"
         />
       </div>
     </section>
@@ -1885,6 +1888,8 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   z-index: 80;
   min-width: 140px;
   position: absolute;
+  left: 0px;
+  top: -24px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1957,7 +1962,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 
 .emotion-1 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -2013,7 +2018,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -2032,43 +2037,43 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-6:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-6:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-6:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-6:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-6:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-6:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-6:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-8 {
@@ -2085,8 +2090,8 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E0E7FF;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -2105,17 +2110,17 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-8:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-9 {
@@ -2200,6 +2205,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -2212,18 +2218,18 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-floating-ui-44"
+        aria-controls="floating-MOCK-ID"
         aria-haspopup="dialog"
         data-testid="audio-player-playback-speed-custom-trigger"
-        id="ref-floating-ui-43"
+        id="ref-MOCK-ID"
         type="button"
       >
         Trigger
       </button>
       <div
-        aria-labelledby="ref-floating-ui-43"
-        class="nk-popover-enter-done emotion-0"
-        id="floating-floating-ui-44"
+        aria-labelledby="ref-MOCK-ID"
+        class=" nk-popover-enter-done emotion-0"
+        id="floating-MOCK-ID"
         role="dialog"
         tabindex="-1"
       >
@@ -2320,7 +2326,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
         </div>
         <div
           class="emotion-14"
-          id="floating-floating-ui-44-pointer"
+          id="floating-MOCK-ID-pointer"
         />
       </div>
     </section>
@@ -2418,7 +2424,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2445,6 +2451,8 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   z-index: 80;
   min-width: 140px;
   position: absolute;
+  left: 0px;
+  top: -24px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2517,7 +2525,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 
 .emotion-6 {
   margin: 0;
-  color: #2E2E2E;
+  color: #262626;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -2573,7 +2581,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -2592,43 +2600,43 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-11:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-11:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-11:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-11:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-11:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-11:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-11:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-13 {
@@ -2645,8 +2653,8 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E0E7FF;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -2665,17 +2673,17 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 }
 
 .emotion-13:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-13:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-14 {
@@ -2760,6 +2768,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -2772,18 +2781,18 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-floating-ui-47"
+        aria-controls="floating-MOCK-ID"
         aria-haspopup="dialog"
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-46"
+        id="ref-MOCK-ID"
         type="button"
       >
-        <div
+        <span
           class="emotion-1"
         >
-          <div
+          <span
             class="emotion-2"
           >
             <svg
@@ -2802,13 +2811,13 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
                 d="M13.05 9.79L10 7.5v9l3.05-2.29L16 12zm0 0L10 7.5v9l3.05-2.29L16 12zm0 0L10 7.5v9l3.05-2.29L16 12zM11 4.07V2.05c-2.01.2-3.84 1-5.32 2.21L7.1 5.69A7.941 7.941 0 0111 4.07zM5.69 7.1L4.26 5.68A9.949 9.949 0 002.05 11h2.02c.18-1.46.76-2.79 1.62-3.9zM4.07 13H2.05c.2 2.01 1 3.84 2.21 5.32l1.43-1.43A7.868 7.868 0 014.07 13zm1.61 6.74A9.981 9.981 0 0011 21.95v-2.02a7.941 7.941 0 01-3.9-1.62l-1.42 1.43zM22 12c0 5.16-3.92 9.42-8.95 9.95v-2.02C16.97 19.41 20 16.05 20 12s-3.03-7.41-6.95-7.93V2.05C18.08 2.58 22 6.84 22 12z"
               />
             </svg>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
       <div
-        aria-labelledby="ref-floating-ui-46"
-        class="nk-popover-enter-done emotion-5"
-        id="floating-floating-ui-47"
+        aria-labelledby="ref-MOCK-ID"
+        class=" nk-popover-enter-done emotion-5"
+        id="floating-MOCK-ID"
         role="dialog"
         tabindex="-1"
       >
@@ -2905,7 +2914,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         </div>
         <div
           class="emotion-19"
-          id="floating-floating-ui-47-pointer"
+          id="floating-MOCK-ID-pointer"
         />
       </div>
     </section>
@@ -2978,20 +2987,20 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3059,7 +3068,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3124,7 +3133,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -3135,7 +3144,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #E0E7FF;
+  border-color: #ECF1FF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -3153,23 +3162,23 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
 }
 
 .emotion-11 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -3216,22 +3225,22 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
 }
 
 .emotion-12:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-12:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-12:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-12:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -3282,10 +3291,10 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
           data-testid="mute-button"
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <svg
@@ -3304,8 +3313,8 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
                   d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
       <div
@@ -3423,20 +3432,20 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3504,7 +3513,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3615,7 +3624,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -3626,7 +3635,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #E0E7FF;
+  border-color: #ECF1FF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -3644,23 +3653,23 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 .emotion-11 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -3707,22 +3716,22 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 .emotion-12:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-12:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-12:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-12:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -3773,10 +3782,10 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
           data-testid="mute-button"
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <svg
@@ -3795,8 +3804,8 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
                   d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
       <div
@@ -3914,20 +3923,20 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -3995,7 +4004,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4105,7 +4114,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -4116,7 +4125,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #E0E7FF;
+  border-color: #ECF1FF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -4134,23 +4143,23 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-11 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -4197,22 +4206,22 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-12:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-12:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-12:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-12:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -4263,10 +4272,10 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
           data-testid="mute-button"
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <svg
@@ -4285,8 +4294,8 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
                   d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
       <div
@@ -4405,20 +4414,20 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -4486,7 +4495,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4597,7 +4606,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -4608,7 +4617,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #E0E7FF;
+  border-color: #ECF1FF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -4626,23 +4635,23 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-11 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -4689,22 +4698,22 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-12:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-12:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-12:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-12:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -4755,10 +4764,10 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
           data-testid="mute-button"
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <svg
@@ -4777,8 +4786,8 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
                   d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
       <div
@@ -4896,20 +4905,20 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -4977,7 +4986,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5088,7 +5097,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -5099,7 +5108,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #E0E7FF;
+  border-color: #ECF1FF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -5117,23 +5126,23 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-11 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -5180,22 +5189,22 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-12:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-12:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-12:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-12:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -5246,10 +5255,10 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
           data-testid="mute-button"
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <svg
@@ -5268,8 +5277,8 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
                   d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
       <div
@@ -5387,20 +5396,20 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -5468,7 +5477,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5578,7 +5587,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -5589,7 +5598,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #E0E7FF;
+  border-color: #ECF1FF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -5607,23 +5616,23 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-11 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-11:hover:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-11:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -5670,22 +5679,22 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-12:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-12:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-12:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-12:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -5736,10 +5745,10 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
           data-testid="mute-button"
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <svg
@@ -5758,8 +5767,8 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
                   d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
       <div
@@ -5878,20 +5887,20 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -5959,7 +5968,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5999,10 +6008,10 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
           data-testid="mute-button"
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <svg
@@ -6021,8 +6030,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
                   d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -6093,20 +6102,20 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -6174,7 +6183,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6269,7 +6278,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #EF1703;
+  background-color: #D60000;
   border-radius: 50%;
   opacity: 0;
   width: 40px;
@@ -6327,10 +6336,10 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
           data-testid="mute-button"
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <svg
@@ -6349,8 +6358,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
                   d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
       <div
@@ -6468,20 +6477,20 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -6549,7 +6558,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6589,10 +6598,10 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
           data-testid="mute-button"
           type="button"
         >
-          <div
+          <span
             class="emotion-3"
           >
-            <div
+            <span
               class="emotion-4"
             >
               <svg
@@ -6611,8 +6620,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
                   d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -6648,7 +6657,7 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -6763,10 +6772,10 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
       data-testid="audio-player-play-pause-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-1"
       >
-        <div
+        <span
           class="emotion-2"
         >
           <svg
@@ -6781,8 +6790,8 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
               cy="50%"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
     <span
       class="emotion-4"
@@ -6829,7 +6838,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   cursor: -webkit-grabbing;
   cursor: grabbing;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -6859,19 +6868,19 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-2 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -6918,22 +6927,22 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-3:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-3:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-3:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -7008,20 +7017,20 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-5:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-5:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-5:focus-visible:not(:disabled) {
@@ -7089,7 +7098,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7115,7 +7124,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   display: inline-block;
   display: block;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -7166,20 +7175,20 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-11:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-11:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -7296,20 +7305,20 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-17:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-17:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-17:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-17:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-17:focus-visible:not(:disabled) {
@@ -7362,7 +7371,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -7373,7 +7382,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #E0E7FF;
+  border-color: #ECF1FF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -7391,23 +7400,23 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-26 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-26:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-26:hover:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-26:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-26:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-26:focus-visible:not(:disabled) {
@@ -7427,7 +7436,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-42 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7502,10 +7511,10 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
       data-testid="audio-player-play-pause-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -7524,8 +7533,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
               d="M8 5v14l11-7z"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
     <span
       class="emotion-10"
@@ -7538,10 +7547,10 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
       data-testid="buttonLink"
       href="/"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <span
@@ -7549,8 +7558,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
           >
             read more
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </a>
     <div
       class="emotion-15"
@@ -7564,10 +7573,10 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
           data-testid="mute-button"
           type="button"
         >
-          <div
+          <span
             class="emotion-6"
           >
-            <div
+            <span
               class="emotion-7"
             >
               <svg
@@ -7586,8 +7595,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
                   d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
       <div
@@ -7645,10 +7654,10 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
       data-testid="audio-player-skip-next-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -7667,8 +7676,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
     <button
       aria-label="previous"
@@ -7676,10 +7685,10 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
       data-testid="audio-player-skip-previous-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -7698,8 +7707,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
     <button
       aria-label="Fast forward for 10 seconds"
@@ -7707,10 +7716,10 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
       data-testid="audio-player-forward-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -7726,8 +7735,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
               fill-rule="evenodd"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
     <button
       aria-label="Rewind 10 seconds"
@@ -7735,10 +7744,10 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
       data-testid="audio-player-replay-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -7754,8 +7763,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
               fill-rule="evenodd"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </section>
 </DocumentFragment>
@@ -7785,19 +7794,19 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-0 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -7844,22 +7853,22 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-1:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-1:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-1:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-1:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -7987,22 +7996,22 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
 }
 
 .emotion-3:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-3:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-3:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -8060,7 +8069,7 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -8151,7 +8160,7 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   display: inline-block;
   display: block;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -8215,10 +8224,10 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
       data-testid="audio-player-play-pause-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -8233,8 +8242,8 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
               cy="50%"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
     <span
       class="emotion-9"
@@ -8273,7 +8282,7 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -8368,10 +8377,10 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   data-testid="audio-player-play-pause-button"
   type="button"
 >
-  <div
+  <span
     class="emotion-1"
   >
-    <div
+    <span
       class="emotion-2"
     >
       <svg
@@ -8386,8 +8395,8 @@ exports[`Audio Player Composable should phasing playPause button loading state a
           cy="50%"
         />
       </svg>
-    </div>
-  </div>
+    </span>
+  </span>
 </button>
 `;
 
@@ -8435,20 +8444,20 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-0:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -8516,7 +8525,7 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -8544,10 +8553,10 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   data-testid="audio-player-play-pause-button"
   type="button"
 >
-  <div
+  <span
     class="emotion-1"
   >
-    <div
+    <span
       class="emotion-2"
     >
       <svg
@@ -8566,8 +8575,8 @@ exports[`Audio Player Composable should phasing playPause button loading state a
           d="M8 5v14l11-7z"
         />
       </svg>
-    </div>
-  </div>
+    </span>
+  </span>
 </button>
 `;
 
@@ -8598,7 +8607,7 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -8693,10 +8702,10 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   data-testid="audio-player-play-pause-button"
   type="button"
 >
-  <div
+  <span
     class="emotion-1"
   >
-    <div
+    <span
       class="emotion-2"
     >
       <svg
@@ -8711,8 +8720,8 @@ exports[`Audio Player Composable should phasing playPause button loading state a
           cy="50%"
         />
       </svg>
-    </div>
-  </div>
+    </span>
+  </span>
 </button>
 `;
 
@@ -8750,7 +8759,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   display: flex;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -8779,19 +8788,19 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 }
 
 .emotion-2 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -8838,22 +8847,22 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 }
 
 .emotion-3:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-3:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-3:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -8911,7 +8920,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -9054,10 +9063,10 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
       data-testid="audio-player-play-pause-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -9072,8 +9081,8 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
               cy="50%"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </section>
 </DocumentFragment>
@@ -9113,7 +9122,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   display: flex;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -9142,19 +9151,19 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -9201,22 +9210,22 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-3:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-3:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-3:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -9274,7 +9283,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -9365,7 +9374,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   display: inline-block;
   display: block;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -9416,20 +9425,20 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-10:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -9546,20 +9555,20 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-16:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-16:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-16:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-16:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-16:focus-visible:not(:disabled) {
@@ -9597,7 +9606,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9637,7 +9646,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -9648,7 +9657,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #E0E7FF;
+  border-color: #ECF1FF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -9666,23 +9675,23 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-25 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-25:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-25:hover:not(:disabled) svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-25:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-25:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-25:focus-visible:not(:disabled) {
@@ -9702,7 +9711,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-41 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9779,10 +9788,10 @@ exports[`Audio Player Composable should render with no errors 1`] = `
       data-testid="audio-player-play-pause-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -9797,8 +9806,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
               cy="50%"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
     <span
       class="emotion-9"
@@ -9811,10 +9820,10 @@ exports[`Audio Player Composable should render with no errors 1`] = `
       data-testid="buttonLink"
       href="/"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <span
@@ -9822,8 +9831,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
           >
             read more
           </span>
-        </div>
-      </div>
+        </span>
+      </span>
     </a>
     <div
       class="emotion-14"
@@ -9837,10 +9846,10 @@ exports[`Audio Player Composable should render with no errors 1`] = `
           data-testid="mute-button"
           type="button"
         >
-          <div
+          <span
             class="emotion-6"
           >
-            <div
+            <span
               class="emotion-7"
             >
               <svg
@@ -9859,8 +9868,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
                   d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
       <div
@@ -9918,10 +9927,10 @@ exports[`Audio Player Composable should render with no errors 1`] = `
       data-testid="audio-player-skip-next-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -9940,8 +9949,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
     <button
       aria-label="previous"
@@ -9949,10 +9958,10 @@ exports[`Audio Player Composable should render with no errors 1`] = `
       data-testid="audio-player-skip-previous-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -9971,8 +9980,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
     <button
       aria-label="Fast forward for 10 seconds"
@@ -9980,10 +9989,10 @@ exports[`Audio Player Composable should render with no errors 1`] = `
       data-testid="audio-player-forward-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -9999,8 +10008,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
               fill-rule="evenodd"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
     <button
       aria-label="Rewind 10 seconds"
@@ -10008,10 +10017,10 @@ exports[`Audio Player Composable should render with no errors 1`] = `
       data-testid="audio-player-replay-button"
       type="button"
     >
-      <div
+      <span
         class="emotion-6"
       >
-        <div
+        <span
           class="emotion-7"
         >
           <svg
@@ -10027,8 +10036,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
               fill-rule="evenodd"
             />
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
     </button>
   </section>
 </DocumentFragment>

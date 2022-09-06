@@ -29,7 +29,7 @@ const StyledOutlineCard = styled.div<{
   display: flex;
   ${getSizingCssFromTheme('width', 'sizing100')};
   ${getSizingCssFromTheme('height', 'sizing100')};
-  ${getSizingCssFromTheme('margin-left', 'sizing010')};
+  ${getSizingCssFromTheme('marginLeft', 'sizing010')};
   border: solid;
   ${getColorCssFromTheme('borderColor', 'interface060')};
   ${getColorCssFromTheme('background', 'interface020')};

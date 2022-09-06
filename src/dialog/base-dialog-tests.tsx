@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 // eslint-disable-next-line
-import {fireEvent, RenderResult} from '@testing-library/react';
+import {fireEvent, waitFor} from '@testing-library/react';
 import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import userEvent from '@testing-library/user-event';
@@ -83,7 +83,7 @@ export const sharedDialogTests = (
     expect(fragment).toMatchSnapshot();
   });
 
-  test('invokes onDismiss callback when Esc key pressed', () => {
+  test('invokes onDismiss callback when Esc key pressed', async () => {
     const mockCallBack = jest.fn();
     renderWithTheme(Dialog, {
       open: true,
@@ -92,9 +92,9 @@ export const sharedDialogTests = (
       children: body,
     });
 
-    userEvent.keyboard('{esc}');
+    userEvent.keyboard('{escape}');
 
-    expect(mockCallBack).toHaveBeenCalled();
+    await waitFor(() => expect(mockCallBack).toHaveBeenCalled());
   });
 
   test('invokes onDismiss callback when clicking on the overlay', () => {

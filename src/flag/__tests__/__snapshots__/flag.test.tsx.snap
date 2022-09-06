@@ -98,10 +98,10 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -109,8 +109,8 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -213,10 +213,10 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -224,8 +224,8 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -305,7 +305,7 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -358,10 +358,10 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -380,8 +380,8 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-      <div
+      </span>
+      <span
         class="emotion-2"
       >
         <span
@@ -389,8 +389,8 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -470,7 +470,7 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -523,10 +523,10 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -545,8 +545,8 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-      <div
+      </span>
+      <span
         class="emotion-2"
       >
         <span
@@ -554,8 +554,8 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -658,10 +658,10 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -669,8 +669,8 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
         >
           1
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -774,10 +774,10 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -785,8 +785,8 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -890,10 +890,10 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -901,8 +901,8 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -1005,10 +1005,10 @@ exports[`Flag renders a flag with no paddings 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -1016,8 +1016,8 @@ exports[`Flag renders a flag with no paddings 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -1121,10 +1121,10 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -1132,8 +1132,8 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -1237,10 +1237,10 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -1248,8 +1248,8 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -1353,10 +1353,10 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -1364,8 +1364,8 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -1469,10 +1469,10 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -1480,8 +1480,8 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -1561,7 +1561,7 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1614,10 +1614,10 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -1636,8 +1636,8 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-      <div
+      </span>
+      <span
         class="emotion-2"
       >
         <span
@@ -1645,8 +1645,8 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -1726,7 +1726,7 @@ exports[`Flag renders a solid flag with an icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1779,10 +1779,10 @@ exports[`Flag renders a solid flag with an icon 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <svg
@@ -1801,8 +1801,8 @@ exports[`Flag renders a solid flag with an icon 1`] = `
             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
           />
         </svg>
-      </div>
-      <div
+      </span>
+      <span
         class="emotion-2"
       >
         <span
@@ -1810,13 +1810,13 @@ exports[`Flag renders a solid flag with an icon 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
 
-exports[`Flag renders with Large size 1`] = `
+exports[`Flag renders large Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -1914,10 +1914,10 @@ exports[`Flag renders with Large size 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -1925,13 +1925,13 @@ exports[`Flag renders with Large size 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
 
-exports[`Flag renders with Medium size 1`] = `
+exports[`Flag renders medium Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -2029,10 +2029,10 @@ exports[`Flag renders with Medium size 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -2040,13 +2040,13 @@ exports[`Flag renders with Medium size 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
 
-exports[`Flag renders with Small size 1`] = `
+exports[`Flag renders small Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -2144,10 +2144,10 @@ exports[`Flag renders with Small size 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -2155,8 +2155,8 @@ exports[`Flag renders with Small size 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -2259,10 +2259,10 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -2270,8 +2270,8 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -2374,10 +2374,10 @@ exports[`Flag renders with default styles 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -2385,8 +2385,8 @@ exports[`Flag renders with default styles 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -2491,10 +2491,10 @@ exports[`Flag renders with logical props overrides 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <div
+    <span
       class="emotion-1"
     >
-      <div
+      <span
         class="emotion-2"
       >
         <span
@@ -2502,8 +2502,8 @@ exports[`Flag renders with logical props overrides 1`] = `
         >
           Text
         </span>
-      </div>
-    </div>
+      </span>
+    </span>
   </div>
 </DocumentFragment>
 `;

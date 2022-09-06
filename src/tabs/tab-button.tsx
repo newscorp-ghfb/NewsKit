@@ -1,25 +1,22 @@
 import React from 'react';
-import {TabAlign, TabInternalProps, TabSize} from './types';
+import {TabButtonProps} from './types';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme/emotion';
 import {StyledTabButton} from './styled';
 
-export const TabInternal = React.forwardRef<
-  HTMLButtonElement,
-  TabInternalProps
->(
+export const TabButton = React.forwardRef<HTMLButtonElement, TabButtonProps>(
   (
     {
       children,
       /* istanbul ignore next */
       overrides = {},
       /* istanbul ignore next */
-      size = TabSize.Medium,
+      size = 'medium',
       ariaLabel,
       selected,
       id,
       /* istanbul ignore next */
-      align = TabAlign.Center,
+      align = 'center',
       dataTestId = 'tab',
       ...props
     },
@@ -64,4 +61,4 @@ export const TabInternal = React.forwardRef<
   },
 );
 
-TabInternal.displayName = 'TabInternal';
+TabButton.displayName = 'TabButton';

@@ -210,7 +210,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -351,20 +351,20 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-15:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -399,7 +399,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-18 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -460,7 +460,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #C0C0C0;
+  color: #ABABAB;
   margin: 0;
   opacity: 0;
   pointer-events: none;
@@ -472,7 +472,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-25 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -495,7 +495,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -666,20 +666,20 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-40:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-40:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-40:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-40:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-40:focus-visible:not(:disabled) {
@@ -723,7 +723,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -752,19 +752,19 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-46 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-46:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-46:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-46:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-47 {
@@ -795,22 +795,22 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-47:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-47:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-47:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-47:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -953,7 +953,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   display: flex;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -995,7 +995,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-65::before {
@@ -1064,10 +1064,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1082,8 +1082,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -1095,10 +1095,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1114,8 +1114,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -1127,10 +1127,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1146,8 +1146,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -1160,10 +1160,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1182,8 +1182,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -1196,10 +1196,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1218,8 +1218,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -1246,10 +1246,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1268,8 +1268,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -1311,10 +1311,10 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -1333,8 +1333,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -1634,7 +1634,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -1772,7 +1772,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #C0C0C0;
+  color: #ABABAB;
   margin: 0;
 }
 
@@ -1782,7 +1782,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 }
 
 .emotion-17 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1805,7 +1805,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1854,7 +1854,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #C0C0C0;
+  color: #ABABAB;
   margin: 0;
   opacity: 0;
   pointer-events: none;
@@ -1866,7 +1866,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 }
 
 .emotion-23 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2035,20 +2035,20 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 }
 
 .emotion-32:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-32:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-32:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-32:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-32:focus-visible:not(:disabled) {
@@ -2092,7 +2092,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -2121,19 +2121,19 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 }
 
 .emotion-38 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-38:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-38:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-38:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-39 {
@@ -2164,22 +2164,22 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 }
 
 .emotion-39:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-39:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-39:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-39:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -2322,7 +2322,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   display: flex;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -2364,7 +2364,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-57::before {
@@ -2433,10 +2433,10 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -2451,8 +2451,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -2471,10 +2471,10 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -2493,8 +2493,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -2507,10 +2507,10 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -2529,8 +2529,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -2557,10 +2557,10 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -2579,8 +2579,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -2622,10 +2622,10 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -2644,8 +2644,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -2945,7 +2945,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -3086,20 +3086,20 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-15:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -3134,7 +3134,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-18 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3195,7 +3195,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #C0C0C0;
+  color: #ABABAB;
   margin: 0;
 }
 
@@ -3205,7 +3205,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-25 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3228,7 +3228,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3277,7 +3277,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #C0C0C0;
+  color: #ABABAB;
   margin: 0;
   opacity: 0;
   pointer-events: none;
@@ -3289,7 +3289,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-31 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3457,7 +3457,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   display: flex;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -3486,19 +3486,19 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-44 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-44:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-44:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-44:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-45 {
@@ -3529,22 +3529,22 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-45:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-45:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-45:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-45:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -3599,7 +3599,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-48::before {
@@ -3680,10 +3680,10 @@ exports[`Audio Player hides volume control as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -3698,8 +3698,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -3711,10 +3711,10 @@ exports[`Audio Player hides volume control as expected 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -3730,8 +3730,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -3743,10 +3743,10 @@ exports[`Audio Player hides volume control as expected 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -3762,8 +3762,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -3776,10 +3776,10 @@ exports[`Audio Player hides volume control as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -3798,8 +3798,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -3812,10 +3812,10 @@ exports[`Audio Player hides volume control as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -3834,8 +3834,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -4135,7 +4135,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -4395,20 +4395,20 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-22:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-22:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-22:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-22:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-22:focus-visible:not(:disabled) {
@@ -4446,7 +4446,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4477,7 +4477,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -4506,19 +4506,19 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-28 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-28:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-28:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-28:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-29 {
@@ -4549,22 +4549,22 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-29:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-29:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-29:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-29:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -4690,20 +4690,20 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-40:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-40:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-40:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-40:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-40:focus-visible:not(:disabled) {
@@ -4741,7 +4741,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4821,10 +4821,10 @@ exports[`Audio Player live player renders as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -4839,8 +4839,8 @@ exports[`Audio Player live player renders as expected 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -4879,10 +4879,10 @@ exports[`Audio Player live player renders as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -4901,8 +4901,8 @@ exports[`Audio Player live player renders as expected 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -4944,10 +4944,10 @@ exports[`Audio Player live player renders as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -4966,8 +4966,8 @@ exports[`Audio Player live player renders as expected 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -4995,10 +4995,10 @@ exports[`Audio Player live player renders as expected 1`] = `
                     data-testid="audio-player-popout"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
-                      <div
+                      <span
                         class="emotion-12"
                       >
                         <svg
@@ -5017,8 +5017,8 @@ exports[`Audio Player live player renders as expected 1`] = `
                             d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -5058,7 +5058,7 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -5153,10 +5153,10 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   data-testid="audio-player-play-button"
   type="button"
 >
-  <div
+  <span
     class="emotion-1"
   >
-    <div
+    <span
       class="emotion-2"
     >
       <svg
@@ -5171,8 +5171,8 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
           cy="50%"
         />
       </svg>
-    </div>
-  </div>
+    </span>
+  </span>
 </button>
 `;
 
@@ -5220,20 +5220,20 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-0:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -5301,7 +5301,7 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5329,10 +5329,10 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
   data-testid="audio-player-play-button"
   type="button"
 >
-  <div
+  <span
     class="emotion-1"
   >
-    <div
+    <span
       class="emotion-2"
     >
       <svg
@@ -5351,8 +5351,8 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
           d="M8 5v14l11-7z"
         />
       </svg>
-    </div>
-  </div>
+    </span>
+  </span>
 </button>
 `;
 
@@ -5383,7 +5383,7 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -5478,10 +5478,10 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   data-testid="audio-player-play-button"
   type="button"
 >
-  <div
+  <span
     class="emotion-1"
   >
-    <div
+    <span
       class="emotion-2"
     >
       <svg
@@ -5496,8 +5496,8 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
           cy="50%"
         />
       </svg>
-    </div>
-  </div>
+    </span>
+  </span>
 </button>
 `;
 
@@ -5728,20 +5728,20 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-10:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -5809,7 +5809,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5885,20 +5885,20 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-16:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-16:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-16:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-16:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-16:focus-visible:not(:disabled) {
@@ -5933,7 +5933,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-19 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6009,20 +6009,20 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-26:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-26:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-26:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-26:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-26:focus-visible:not(:disabled) {
@@ -6206,20 +6206,20 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-41:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-41:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-41:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-41:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-41:focus-visible:not(:disabled) {
@@ -6264,7 +6264,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -6294,19 +6294,19 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-47 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-47:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-47:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-47:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-48 {
@@ -6337,22 +6337,22 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-48:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-48:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-48:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-48:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -6496,7 +6496,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   cursor: -webkit-grabbing;
   cursor: grabbing;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -6538,7 +6538,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-66::before {
@@ -6605,10 +6605,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6627,8 +6627,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               d="M8 5v14l11-7z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -6640,10 +6640,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6659,8 +6659,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -6672,10 +6672,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6691,8 +6691,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -6704,10 +6704,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       data-testid="audio-player-skip-previous"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6726,8 +6726,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -6739,10 +6739,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       data-testid="audio-player-skip-next"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6761,8 +6761,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -6789,10 +6789,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6811,8 +6811,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -6854,10 +6854,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -6876,8 +6876,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -6997,19 +6997,19 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 }
 
 .emotion-0 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-1 {
@@ -7040,22 +7040,22 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 }
 
 .emotion-1:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-1:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-1:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-1:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -7308,7 +7308,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -7449,20 +7449,20 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-15:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -7497,7 +7497,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-18 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7558,7 +7558,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #C0C0C0;
+  color: #ABABAB;
   margin: 0;
 }
 
@@ -7568,7 +7568,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-25 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -7591,7 +7591,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7640,7 +7640,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #C0C0C0;
+  color: #ABABAB;
   margin: 0;
   opacity: 0;
   pointer-events: none;
@@ -7652,7 +7652,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-31 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -7821,20 +7821,20 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-40:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-40:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-40:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-40:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-40:focus-visible:not(:disabled) {
@@ -7878,7 +7878,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -7907,19 +7907,19 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-46 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-46:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-46:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-46:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-47 {
@@ -7950,22 +7950,22 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-47:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-47:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-47:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-47:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -8108,7 +8108,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   display: flex;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -8150,7 +8150,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-65::before {
@@ -8219,10 +8219,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8237,8 +8237,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -8250,10 +8250,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8269,8 +8269,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -8282,10 +8282,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8301,8 +8301,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -8315,10 +8315,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8337,8 +8337,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -8351,10 +8351,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8373,8 +8373,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -8401,10 +8401,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8423,8 +8423,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -8466,10 +8466,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -8488,8 +8488,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -8789,7 +8789,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -8930,20 +8930,20 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-15:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -8978,7 +8978,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-18 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9039,7 +9039,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #C0C0C0;
+  color: #ABABAB;
   margin: 0;
 }
 
@@ -9049,7 +9049,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-25 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -9072,7 +9072,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -9121,7 +9121,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #C0C0C0;
+  color: #ABABAB;
   margin: 0;
   opacity: 0;
   pointer-events: none;
@@ -9133,7 +9133,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-31 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -9302,20 +9302,20 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-40:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-40:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-40:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-40:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-40:focus-visible:not(:disabled) {
@@ -9359,7 +9359,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -9388,19 +9388,19 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-46 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-46:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-46:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-46:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-47 {
@@ -9431,22 +9431,22 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-47:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-47:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-47:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-47:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -9589,7 +9589,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   display: flex;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -9631,7 +9631,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-65::before {
@@ -9700,10 +9700,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9718,8 +9718,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -9731,10 +9731,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9750,8 +9750,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -9763,10 +9763,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9782,8 +9782,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -9796,10 +9796,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9818,8 +9818,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -9832,10 +9832,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9854,8 +9854,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -9882,10 +9882,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9904,8 +9904,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -9947,10 +9947,10 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -9969,8 +9969,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -10272,7 +10272,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
@@ -10413,20 +10413,20 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-15:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-15:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-15:focus-visible:not(:disabled) {
@@ -10461,7 +10461,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-18 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -10522,7 +10522,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #C0C0C0;
+  color: #ABABAB;
   margin: 0;
 }
 
@@ -10532,7 +10532,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-25 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -10555,7 +10555,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -10604,7 +10604,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #C0C0C0;
+  color: #ABABAB;
   margin: 0;
   opacity: 0;
   pointer-events: none;
@@ -10616,7 +10616,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-31 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -10785,20 +10785,20 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-40:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-40:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-40:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-40:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-40:focus-visible:not(:disabled) {
@@ -10842,7 +10842,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
   border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -10871,19 +10871,19 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-46 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-46:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #254CAC;
 }
 
 .emotion-46:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #14328D;
 }
 
 .emotion-46:active:not(:disabled) svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-47 {
@@ -10914,22 +10914,22 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-47:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-47:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-47:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-47:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -11072,7 +11072,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   display: flex;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -11114,7 +11114,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #2E2E2E;
+  color: #3B3B3B;
 }
 
 .emotion-65::before {
@@ -11183,10 +11183,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11201,8 +11201,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -11214,10 +11214,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11233,8 +11233,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -11246,10 +11246,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11265,8 +11265,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -11279,10 +11279,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11301,8 +11301,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -11315,10 +11315,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11337,8 +11337,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -11365,10 +11365,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11387,8 +11387,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -11430,10 +11430,10 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -11452,8 +11452,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -11920,7 +11920,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 }
 
 .emotion-18 {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -12012,7 +12012,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -12314,22 +12314,22 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 }
 
 .emotion-47:valid:hover:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.2;
 }
 
 .emotion-47:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
+  background-color: #00601A;
   opacity: 0.4;
 }
 
 .emotion-47:invalid:hover:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.2;
 }
 
 .emotion-47:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
+  background-color: #A90000;
   opacity: 0.4;
 }
 
@@ -12604,10 +12604,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       data-testid="audio-player-play-button"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12622,8 +12622,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               cy="50%"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -12635,10 +12635,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       data-testid="audio-player-backward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12654,8 +12654,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -12667,10 +12667,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       data-testid="audio-player-forward"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12686,8 +12686,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               fill-rule="evenodd"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -12700,10 +12700,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12722,8 +12722,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -12736,10 +12736,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       disabled=""
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12758,8 +12758,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -12786,10 +12786,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12808,8 +12808,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                   <div
@@ -12851,10 +12851,10 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       tabindex="-1"
                       type="button"
                     >
-                      <div
+                      <span
                         class="emotion-11"
                       >
-                        <div
+                        <span
                           class="emotion-12"
                         >
                           <svg
@@ -12873,8 +12873,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                               d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                           </svg>
-                        </div>
-                      </div>
+                        </span>
+                      </span>
                     </button>
                   </div>
                 </div>

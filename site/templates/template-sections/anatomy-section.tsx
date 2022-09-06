@@ -1,7 +1,8 @@
 import React from 'react';
-import {Block, Image, ImageProps, Tab, Tabs, TabSize, TextBlock} from 'newskit';
+import {Block, Image, ImageProps, Tab, Tabs, TextBlock} from 'newskit';
 import {renderIfReactComponent} from 'newskit/utils/component';
 import {ComponentPageCell} from '../../components/layout-cells';
+import {ContentText} from '../../components/text-section/content-text';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
 import {Table} from '../../components/table';
@@ -18,7 +19,15 @@ type AnatomyRowsProps = {
   optional?: boolean;
 };
 
+export interface SingleComponentAnatomyProps {
+  title: string;
+  summary: string | JSX.Element;
+  media?: ImageProps | JSX.Element | React.ComponentType;
+  rows: AnatomyRowsProps[];
+}
+
 export interface AnatomyProps {
+  components?: SingleComponentAnatomyProps[];
   tabs?: {
     title: string;
     summary: string;
@@ -36,6 +45,7 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
   media,
   rows,
   tabs,
+  components,
 }) => {
   const renderAnatomy = (
     tabMedia: ImageProps | JSX.Element | React.ComponentType | undefined,
@@ -60,9 +70,9 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
       {tabs ? (
         <CommonSection title="Anatomy" id="anatomy">
           <ComponentPageCell>
-            <Tabs size={TabSize.Medium}>
-              {tabs.map(({title, summary, rows: tabRows, media: tabMedia}) => (
-                <Tab label={title} overrides={tabOverrides}>
+            <Tabs size="medium">
+              {tabs.map(({title, summary, media: tabMedia, rows: tabRows}) => (
+                <Tab label={title} overrides={tabOverrides} key={title}>
                   <Block spaceStack="space080">
                     <TextBlock
                       stylePreset="inkBase"
@@ -78,17 +88,33 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
           </ComponentPageCell>
         </CommonSection>
       ) : (
-        <>
-          <CommonSection
-            title="Anatomy"
-            id="anatomy"
-            introduction={introduction}
-          >
-            <ComponentPageCell>
-              {media && renderAnatomy(media, rows)}
-            </ComponentPageCell>
-          </CommonSection>
-        </>
+        <CommonSection title="Anatomy" id="anatomy" introduction={introduction}>
+          <ComponentPageCell>
+            {components
+              ? components.map(
+                  (
+                    {
+                      title,
+                      summary,
+                      media: componentMedia,
+                      rows: componentRows,
+                    },
+                    index,
+                    array,
+                  ) => (
+                    <React.Fragment key={title}>
+                      <ContentText title={title}>{summary}</ContentText>
+                      {componentMedia &&
+                        renderAnatomy(componentMedia, componentRows)}
+                      {index < array.length - 1 && (
+                        <Block spaceStack="space090" />
+                      )}
+                    </React.Fragment>
+                  ),
+                )
+              : media && renderAnatomy(media, rows)}
+          </ComponentPageCell>
+        </CommonSection>
       )}
     </>
   );

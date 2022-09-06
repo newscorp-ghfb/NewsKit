@@ -4,7 +4,7 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {SliderProps, LabelPosition} from '../types';
+import {SliderProps} from '../types';
 import {Theme, createTheme, compileTheme} from '../../theme';
 import {StyledThumbValue} from '../styled';
 import {IconOutlinedImage} from '../../icons';
@@ -56,6 +56,18 @@ describe('slider', () => {
           ],
         }
       `);
+    });
+
+    it('should pass additional HTML attributes to the Range component', () => {
+      const fragment = renderToFragmentWithTheme(Slider, {
+        values: [20, 80],
+        min: 0,
+        max: 100,
+        onChange: () => {},
+        id: 'slider-id',
+      });
+
+      expect(fragment).toMatchSnapshot();
     });
 
     it('should allow overriding the renderTrack and renderThumb function', () => {
@@ -563,7 +575,7 @@ describe('slider', () => {
         max: 100,
         vertical: true,
         onChange: () => {},
-        labelPosition: LabelPosition.Before,
+        labelPosition: 'before',
       });
       expect(fragment).toMatchSnapshot();
     });
@@ -575,7 +587,7 @@ describe('slider', () => {
         max: 100,
         vertical: false,
         onChange: () => {},
-        labelPosition: LabelPosition.Before,
+        labelPosition: 'before',
       });
       expect(fragment).toMatchSnapshot();
     });
@@ -587,7 +599,7 @@ describe('slider', () => {
         max: 100,
         vertical: true,
         onChange: () => {},
-        labelPosition: LabelPosition.After,
+        labelPosition: 'after',
       });
       expect(fragment).toMatchSnapshot();
     });

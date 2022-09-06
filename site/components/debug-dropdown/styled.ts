@@ -21,6 +21,6 @@ export const StyledDebugDropdown = styled.div<{left: number | 'unset'}>`
 
   ${getColorCssFromTheme('backgroundColor', 'interfaceBrand030')};
   ${getColorCssFromTheme('color', 'inkInverse')};
-  ${getBorderCssFromTheme('border-radius', 'borderRadiusRounded020')};
+  ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
   ${getShadowCssFromTheme('boxShadow', 'shadow030')};
 `;

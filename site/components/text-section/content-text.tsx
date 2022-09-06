@@ -6,6 +6,7 @@ export const ContentText: React.FC<ContentTextProps> = ({
   title,
   titleAs,
   children,
+  lastItem,
 }) => (
   <>
     {title && (
@@ -28,7 +29,7 @@ export const ContentText: React.FC<ContentTextProps> = ({
       </Block>
     )}
     {children && (
-      <Block spaceStack="space070">
+      <Block spaceStack={!lastItem ? 'space070' : 'space000'}>
         <TextBlock
           stylePreset="inkBase"
           typographyPreset={{

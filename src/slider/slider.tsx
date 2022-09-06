@@ -1,7 +1,7 @@
 import React from 'react';
 import {Range, Direction} from 'react-range';
-import {SliderProps, LabelPosition} from './types';
-import {Flow, StackDistribution, Stack} from '../stack';
+import {SliderProps} from './types';
+import {Stack, Flow} from '../stack';
 import {
   StackContainer,
   StyledTrack,
@@ -25,15 +25,15 @@ import {
 const labelFlowMap = [
   // horizontal
   {
-    [LabelPosition.Before]: Flow.HorizontalBottom,
-    [LabelPosition.After]: Flow.HorizontalTop,
-    [LabelPosition.Inline]: undefined,
+    before: 'horizontal-bottom',
+    after: 'horizontal-top',
+    inline: undefined,
   },
   // vertical
   {
-    [LabelPosition.Before]: Flow.VerticalRight,
-    [LabelPosition.After]: Flow.VerticalLeft,
-    [LabelPosition.Inline]: undefined,
+    before: 'vertical-right',
+    after: 'vertical-left',
+    inline: undefined,
   },
 ];
 const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
@@ -53,13 +53,14 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
       ariaDescribedBy,
       minLabel,
       maxLabel,
-      labelPosition = LabelPosition.Inline,
+      labelPosition = 'inline',
       thumbLabel,
       thumbIcon: ThumbIcon,
       dataTestId = 'slider',
       overrides: allOverrides = {},
       renderTrack,
       renderThumb,
+      ...rest
     },
     ref,
   ) => {
@@ -188,7 +189,7 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
       />
     );
 
-    const inlineLabels = labelPosition === LabelPosition.Inline;
+    const inlineLabels = labelPosition === 'inline';
     const labelContainer = inlineLabels ? undefined : (
       <LabelContainer
         labelPosition={labelPosition}
@@ -196,8 +197,8 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
         overrides={overrides}
       >
         <Stack
-          flow={labelFlowMap[vertical ? 1 : 0][labelPosition]}
-          stackDistribution={StackDistribution.SpaceBetween}
+          flow={labelFlowMap[vertical ? 1 : 0][labelPosition] as Flow}
+          stackDistribution="space-between"
           flowReverse={vertical}
           flexGrow
         >
@@ -207,11 +208,11 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
       </LabelContainer>
     );
 
-    let flow = vertical ? Flow.VerticalCenter : Flow.HorizontalCenter;
+    let flow = vertical ? 'vertical-center' : 'horizontal-center';
     let flowReverse = vertical;
 
-    if (vertical && labelPosition !== LabelPosition.Inline) {
-      flow = Flow.HorizontalStretch;
+    if (vertical && labelPosition !== 'inline') {
+      flow = 'horizontal-stretch';
       flowReverse = false;
     }
 
@@ -220,18 +221,19 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
         ref={ref}
         vertical={vertical}
         inline={vertical}
-        flow={flow}
-        stackDistribution={StackDistribution.Center}
+        flow={flow as Flow}
+        stackDistribution="center"
         flowReverse={flowReverse}
         wrap={!inlineLabels}
         flexGrow
         data-testid={dataTestId}
         {...logicalProps}
+        {...rest}
       >
         {inlineLabels && minimumLabel}
-        {labelPosition === LabelPosition.Before && labelContainer}
+        {labelPosition === 'before' && labelContainer}
         {slider}
-        {labelPosition === LabelPosition.After && labelContainer}
+        {labelPosition === 'after' && labelContainer}
         {inlineLabels && maximumLabel}
       </StackContainer>
     );

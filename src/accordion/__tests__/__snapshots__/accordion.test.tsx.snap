@@ -19,9 +19,9 @@ exports[`Accordion renders as a h4 1`] = `
   width: 100%;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -37,13 +37,13 @@ exports[`Accordion renders as a h4 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   color: #3358CC;
 }
 
 .emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -100,7 +100,7 @@ exports[`Accordion renders as a h4 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
   -webkit-padding-end: 8px;
@@ -150,7 +150,7 @@ exports[`Accordion renders as a h4 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -250,7 +250,7 @@ exports[`Accordion renders as a h4 1`] = `
 
 .emotion-11 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;
@@ -386,9 +386,9 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
   width: 100%;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -404,13 +404,13 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   color: #3358CC;
 }
 
 .emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -467,7 +467,7 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
   -webkit-padding-end: 8px;
@@ -517,7 +517,7 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -617,7 +617,7 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
 
 .emotion-11 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;
@@ -753,9 +753,9 @@ exports[`Accordion renders with default props 1`] = `
   width: 100%;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -771,13 +771,13 @@ exports[`Accordion renders with default props 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   color: #3358CC;
 }
 
 .emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -834,7 +834,7 @@ exports[`Accordion renders with default props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
   -webkit-padding-end: 8px;
@@ -884,7 +884,7 @@ exports[`Accordion renders with default props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -984,7 +984,7 @@ exports[`Accordion renders with default props 1`] = `
 
 .emotion-11 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;
@@ -1118,10 +1118,10 @@ exports[`Accordion renders with disabled state 1`] = `
   align-items: center;
   width: 100%;
   cursor: not-allowed;
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -1176,7 +1176,7 @@ exports[`Accordion renders with disabled state 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
   -webkit-padding-end: 8px;
@@ -1226,7 +1226,7 @@ exports[`Accordion renders with disabled state 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1326,7 +1326,7 @@ exports[`Accordion renders with disabled state 1`] = `
 
 .emotion-11 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;
@@ -1462,9 +1462,9 @@ exports[`Accordion renders with expanded state and icon 1`] = `
   width: 100%;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -1480,13 +1480,13 @@ exports[`Accordion renders with expanded state and icon 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   color: #3358CC;
 }
 
 .emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -1543,7 +1543,7 @@ exports[`Accordion renders with expanded state and icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
   -webkit-padding-end: 8px;
@@ -1593,7 +1593,7 @@ exports[`Accordion renders with expanded state and icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1693,7 +1693,7 @@ exports[`Accordion renders with expanded state and icon 1`] = `
 
 .emotion-11 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;
@@ -1829,9 +1829,9 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
   width: 100%;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -1847,13 +1847,13 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   color: #3358CC;
 }
 
 .emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -1910,7 +1910,7 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
   -webkit-padding-end: 8px;
@@ -1960,7 +1960,7 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2060,7 +2060,7 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
 
 .emotion-11 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;
@@ -2192,9 +2192,9 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
   width: 100%;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -2210,13 +2210,13 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   color: #3358CC;
 }
 
 .emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -2273,7 +2273,7 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
   -webkit-padding-end: 8px;
@@ -2323,8 +2323,8 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #D20600;
-  fill: #D20600;
+  color: #D60000;
+  fill: #D60000;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2348,8 +2348,8 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
 .emotion-8.emotion-8 {
   width: 16px;
   height: 16px;
-  color: #D20600;
-  fill: #D20600;
+  color: #D60000;
+  fill: #D60000;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2442,7 +2442,7 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
 
 .emotion-11 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;
@@ -2578,9 +2578,9 @@ exports[`Accordion renders with no header 1`] = `
   width: 100%;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -2596,13 +2596,13 @@ exports[`Accordion renders with no header 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   color: #3358CC;
 }
 
 .emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -2664,7 +2664,7 @@ exports[`Accordion renders with no header 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2764,7 +2764,7 @@ exports[`Accordion renders with no header 1`] = `
 
 .emotion-8 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;
@@ -2852,9 +2852,9 @@ exports[`Accordion renders with no label 1`] = `
   width: 100%;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -2870,13 +2870,13 @@ exports[`Accordion renders with no label 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   color: #3358CC;
 }
 
 .emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -2933,7 +2933,7 @@ exports[`Accordion renders with no label 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
   -webkit-padding-end: 8px;
@@ -2975,7 +2975,7 @@ exports[`Accordion renders with no label 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3075,7 +3075,7 @@ exports[`Accordion renders with no label 1`] = `
 
 .emotion-10 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;
@@ -3274,7 +3274,7 @@ exports[`Accordion renders with style overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
   -webkit-padding-end: 8px;
@@ -3324,8 +3324,8 @@ exports[`Accordion renders with style overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0A782A;
-  fill: #0A782A;
+  color: #007B22;
+  fill: #007B22;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3349,8 +3349,8 @@ exports[`Accordion renders with style overrides 1`] = `
 .emotion-8.emotion-8 {
   width: 32px;
   height: 32px;
-  color: #0A782A;
-  fill: #0A782A;
+  color: #007B22;
+  fill: #007B22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3655,9 +3655,9 @@ exports[`Accordion renders without leading icon 1`] = `
   width: 100%;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -3673,13 +3673,13 @@ exports[`Accordion renders without leading icon 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   color: #3358CC;
 }
 
 .emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -3741,7 +3741,7 @@ exports[`Accordion renders without leading icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3841,7 +3841,7 @@ exports[`Accordion renders without leading icon 1`] = `
 
 .emotion-8 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;
@@ -3931,9 +3931,9 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
   width: 100%;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -3949,13 +3949,13 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   color: #3358CC;
 }
 
 .emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -4012,7 +4012,7 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
   -webkit-padding-end: 8px;
@@ -4062,7 +4062,7 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4162,7 +4162,7 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
 
 .emotion-11 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;
@@ -4297,9 +4297,9 @@ exports[`AccordionGroup different type of children 1`] = `
   width: 100%;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #2E2E2E;
+  color: #3B3B3B;
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -4315,13 +4315,13 @@ exports[`AccordionGroup different type of children 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   color: #3358CC;
 }
 
 .emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -4375,7 +4375,7 @@ exports[`AccordionGroup different type of children 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4475,7 +4475,7 @@ exports[`AccordionGroup different type of children 1`] = `
 
 .emotion-7 {
   border-style: none none solid none;
-  border-color: #CCCCCC;
+  border-color: #ABABAB;
   border-width: 1px;
   padding-inline: 12px;
   padding-block: 12px;

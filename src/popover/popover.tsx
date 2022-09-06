@@ -13,7 +13,6 @@ import stylePresets from './style-presets';
 import {BaseFloatingElement} from '../base-floating-element/base-floating-element';
 import {BuildAriaAttributesFn} from '../base-floating-element';
 import {IconButton} from '../icon-button';
-import {ButtonSize} from '../button';
 import {IconFilledClose} from '../icons';
 import {
   StyledPopoverCloseButtonContainer,
@@ -112,7 +111,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
                   data-testid="close-button"
                   aria-label="close"
                   overrides={closeButtonOverrides}
-                  size={ButtonSize.Medium}
+                  size="medium"
                 >
                   <IconFilledClose />
                 </IconButton>
