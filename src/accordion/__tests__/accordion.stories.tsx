@@ -144,6 +144,14 @@ const Spacer = styled.div`
   margin-bottom: 30px;
 `;
 
+// max-height (used for the default accordion transition) is incorrectly calculated
+// from scroll height in the Applitools test environment. Unset here as a temporary
+// measure while we wait for a fix from Applitools.
+const scriptHooks = {
+  beforeCaptureScreenshot:
+    'Array.from(document.querySelectorAll(\'.nk-accordion-enter-done\')).forEach(elt => elt.style.maxHeight="unset")',
+};
+
 export const StoryAccordion = () => {
   const [expanded, toggleExpanded] = React.useState(false);
   return (
@@ -227,9 +235,7 @@ export const StoryAccordion = () => {
   );
 };
 StoryAccordion.storyName = 'accordion';
-StoryAccordion.parameters = {
-  eyes: {layoutBreakpoints: true},
-};
+StoryAccordion.parameters = {eyes: {scriptHooks}};
 
 export const StoryAccordionOverrides = () => (
   <>
@@ -365,9 +371,7 @@ export const StoryAccordionOverrides = () => (
 );
 
 StoryAccordionOverrides.storyName = 'accordion-with-overrides';
-StoryAccordionOverrides.parameters = {
-  eyes: {layoutBreakpoints: true},
-};
+StoryAccordionOverrides.parameters = {eyes: {scriptHooks}};
 
 export const StoryAccordionGroupUnControlled = () => (
   <>
@@ -393,9 +397,7 @@ export const StoryAccordionGroupUnControlled = () => (
   </>
 );
 StoryAccordionGroupUnControlled.storyName = 'accordion-group-uncontrolled';
-StoryAccordionGroupUnControlled.parameters = {
-  eyes: {layoutBreakpoints: true},
-};
+StoryAccordionGroupUnControlled.parameters = {eyes: {scriptHooks}};
 
 export const StoryAccordionGroupControlled = () => {
   const [expanded1, setExpanded1] = React.useState([1]);
@@ -420,9 +422,7 @@ export const StoryAccordionGroupControlled = () => {
   );
 };
 StoryAccordionGroupControlled.storyName = 'accordion-group-controlled';
-StoryAccordionGroupControlled.parameters = {
-  eyes: {layoutBreakpoints: true},
-};
+StoryAccordionGroupControlled.parameters = {eyes: {scriptHooks}};
 
 export const StoryAccordionOutlineOverrides = () => (
   <>
@@ -515,9 +515,7 @@ export const StoryAccordionOutlineOverrides = () => (
 );
 
 StoryAccordionOutlineOverrides.storyName = 'accordion-with-outline-overrides';
-StoryAccordionOutlineOverrides.parameters = {
-  eyes: {layoutBreakpoints: true},
-};
+StoryAccordionOutlineOverrides.parameters = {eyes: {scriptHooks}};
 
 export const StoryAccordionGroupTransitionOverrides = () => {
   const noTransitions = {
