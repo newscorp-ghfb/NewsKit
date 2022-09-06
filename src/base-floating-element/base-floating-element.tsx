@@ -31,7 +31,6 @@ export const BaseFloatingElement = React.forwardRef<
       open: openProp,
       overrides,
       hidePointer = false,
-      // jananivar = false,
       role,
       useInteractions,
       buildRefElAriaAttributes,
