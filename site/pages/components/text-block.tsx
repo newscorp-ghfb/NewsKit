@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from '../../components/link';
+import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {InlineCode} from '../../components/markdown-elements';
 import {LayoutProps} from '../../components/layout';
@@ -20,7 +21,8 @@ const TextBlockComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/text-block-illustration',
       },
-      introduction: `Text block provides a simple way to display text. It supports text cropping, style presets, and typography presets.`,
+      introduction:
+        'Text block provides a simple way to display text. It supports text cropping, style presets, and typography presets.',
     }}
     componentDefaultsKey="textblock"
     meta={{
@@ -95,6 +97,101 @@ const TextBlockComponent = (layoutProps: LayoutProps) => (
           ),
         },
       ],
+    }}
+    usage={{
+      introduction:
+        'The following guidance describes how and when to appropriately use the text block.',
+      cards: [
+        {
+          description:
+            'Use the text block for any text content, which can apply typography presets and style presets.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/text-block/usage/do-01'),
+        },
+      ],
+    }}
+    accessibility={{
+      introduction: (
+        <>
+          As this is an HTML element, this component can utilise any aria
+          attribute, such as{' '}
+          <Link
+            href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"
+            target="_blank"
+          >
+            region.
+          </Link>
+          <br />
+          <br />
+          By default, the text block will render as span. When using,
+          consideration should be given as to what semantic level the text
+          should be set at. This is to aid in the navigation of the page for
+          users using assistive technologies. This can be configured with the as
+          property.
+        </>
+      ),
+    }}
+    seo={{
+      title: 'SEO',
+      introduction: (
+        <>
+          Similar to accessibility, text should be set at the correct semantic
+          level (eg{' '}
+          <Link
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+            target="_blank"
+          >
+            &#60;h1&#62; to &#60;h6&#62;
+          </Link>
+          ), to enable crawlers to better index the page.
+        </>
+      ),
+    }}
+    componentAPI={{
+      introduction:
+        'The text block has a range of props that can be used to define an appropriate experience for different use cases.',
+      components: [
+        {
+          propsRows: [
+            {
+              name: 'children',
+              type: 'string',
+              default: '',
+              description: 'Content to be rendered inside the text element.',
+              required: true,
+            },
+            {
+              name: 'as',
+              type: `'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div' | 'span'`,
+              default: `'p'`,
+              description:
+                'Defines the HTML element that the text block is rendered as.',
+            },
+            {
+              name: 'noCrop',
+              type: 'boolean',
+              default: 'false',
+              description:
+                'If true, this disables text cropping functionality on the text block.',
+            },
+            {
+              name: 'stylePreset',
+              type: 'MQ<string>',
+              description:
+                'If provided, this overrides the style preset applied to the text block.',
+            },
+            {
+              name: 'typographyPreset',
+              type: 'MQ<string>',
+              description:
+                'If provided, this overrides the typography preset applied to the text block.',
+            },
+          ],
+        },
+      ],
+    }}
+    related={{
+      related: ['Stack', 'Block'],
     }}
   />
 );
