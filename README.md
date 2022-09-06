@@ -27,7 +27,7 @@ NewsKit is News UK’s design system. It provides interactive building blocks an
 You will need to install the following as pre-requisites to getting started:
 
 * [Node.js](https://nodejs.org/en/download/) We use two versions of node.
-You need to be on version: <b>>=16.9.1</b> to run the application. In your terminal run the command `nvm use` to install the required version.
+You need to be on version: <b>>=16.10.0</b> to run the application. In your terminal run the command `nvm use` to install the required version.
 
 * [Yarn](https://yarnpkg.com/en/docs/install) to install the project dependencies
 * (Windows Only) [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10)

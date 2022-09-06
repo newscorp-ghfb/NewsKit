@@ -160,7 +160,7 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-49"
+        id="ref-MOCK-ID"
         type="button"
       >
         <span
@@ -388,7 +388,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-40"
+        id="ref-MOCK-ID"
         type="button"
       >
         <span
@@ -1406,6 +1406,8 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   z-index: 80;
   min-width: 140px;
   position: absolute;
+  left: 0px;
+  top: -24px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1721,6 +1723,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -1733,12 +1736,12 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-floating-ui-38"
+        aria-controls="floating-MOCK-ID"
         aria-haspopup="dialog"
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-37"
+        id="ref-MOCK-ID"
         type="button"
       >
         <span
@@ -1767,9 +1770,9 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         </span>
       </button>
       <div
-        aria-labelledby="ref-floating-ui-37"
-        class="nk-popover-enter-done emotion-5"
-        id="floating-floating-ui-38"
+        aria-labelledby="ref-MOCK-ID"
+        class=" nk-popover-enter-done emotion-5"
+        id="floating-MOCK-ID"
         role="dialog"
         tabindex="-1"
       >
@@ -1866,7 +1869,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         </div>
         <div
           class="emotion-19"
-          id="floating-floating-ui-38-pointer"
+          id="floating-MOCK-ID-pointer"
         />
       </div>
     </section>
@@ -1885,6 +1888,8 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   z-index: 80;
   min-width: 140px;
   position: absolute;
+  left: 0px;
+  top: -24px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2200,6 +2205,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -2212,18 +2218,18 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-floating-ui-44"
+        aria-controls="floating-MOCK-ID"
         aria-haspopup="dialog"
         data-testid="audio-player-playback-speed-custom-trigger"
-        id="ref-floating-ui-43"
+        id="ref-MOCK-ID"
         type="button"
       >
         Trigger
       </button>
       <div
-        aria-labelledby="ref-floating-ui-43"
-        class="nk-popover-enter-done emotion-0"
-        id="floating-floating-ui-44"
+        aria-labelledby="ref-MOCK-ID"
+        class=" nk-popover-enter-done emotion-0"
+        id="floating-MOCK-ID"
         role="dialog"
         tabindex="-1"
       >
@@ -2320,7 +2326,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
         </div>
         <div
           class="emotion-14"
-          id="floating-floating-ui-44-pointer"
+          id="floating-MOCK-ID-pointer"
         />
       </div>
     </section>
@@ -2445,6 +2451,8 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   z-index: 80;
   min-width: 140px;
   position: absolute;
+  left: 0px;
+  top: -24px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2760,6 +2768,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -2772,12 +2781,12 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         src="/audio_file_1.mp3"
       />
       <button
-        aria-controls="floating-floating-ui-47"
+        aria-controls="floating-MOCK-ID"
         aria-haspopup="dialog"
         aria-label="playback speed"
         class="emotion-0"
         data-testid="audio-player-playback-speed-control"
-        id="ref-floating-ui-46"
+        id="ref-MOCK-ID"
         type="button"
       >
         <span
@@ -2806,9 +2815,9 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         </span>
       </button>
       <div
-        aria-labelledby="ref-floating-ui-46"
-        class="nk-popover-enter-done emotion-5"
-        id="floating-floating-ui-47"
+        aria-labelledby="ref-MOCK-ID"
+        class=" nk-popover-enter-done emotion-5"
+        id="floating-MOCK-ID"
         role="dialog"
         tabindex="-1"
       >
@@ -2905,7 +2914,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         </div>
         <div
           class="emotion-19"
-          id="floating-floating-ui-47-pointer"
+          id="floating-MOCK-ID-pointer"
         />
       </div>
     </section>

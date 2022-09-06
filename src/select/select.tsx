@@ -40,7 +40,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
     const [isFocused, setIsFocused] = React.useState(false);
     const onSelectButtonFocus = React.useCallback(
-      event => {
+      (event: React.FocusEvent<HTMLInputElement, Element>) => {
         setIsFocused(true);
         if (onFocus) {
           onFocus(event);
@@ -73,13 +73,18 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       }
     }, [defaultSelectedItem, onChange, programmaticallySelectedItem]);
 
-    const onInputChange = React.useCallback(
+    const onInputChange = React.useCallback<
+      (
+        changes: UseSelectStateChange<React.ReactElement<SelectOptionProps>>,
+      ) => void
+    >(
+      /* istanbul ignore next */
       event => {
-        // istanbul ignore else
+        /* istanbul ignore next */
         if (localInputRef.current) {
-          localInputRef.current.value = event.selectedItem.props.value;
+          localInputRef.current.value = event.selectedItem!.props.value;
         }
-        // istanbul ignore else
+        /* istanbul ignore next */
         if (onChange && localInputRef.current) {
           onChange({
             type: 'change',
@@ -126,6 +131,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       stateReducer: (_, actionAndChanges) => {
         const {type, changes} = actionAndChanges;
         // Does not close panel in the case we are rendering panel inside a modal
+        /* istanbul ignore next */
         if (renderInModal && type === useSelect.stateChangeTypes.MenuBlur) {
           return {
             ...changes,

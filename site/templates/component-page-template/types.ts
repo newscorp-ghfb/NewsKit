@@ -18,7 +18,7 @@ import {
 } from '../template-sections';
 
 export interface ComponentPageTemplateProps
-  extends Omit<TemplateProps, 'featureCard'> {
+  extends Omit<TemplateProps, 'featureCard' | 'children'> {
   layoutProps: LayoutProps;
   componentDefaultsKey: string;
   interactiveDemo?: InteractiveDemoSectionProps;

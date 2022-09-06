@@ -56,7 +56,7 @@ const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
 
     const hadError = name ? fieldsHadError[name]?.hadError : undefined;
 
-    const errorText = name && errors?.[name]?.message;
+    const errorText = name && (errors?.[name]?.message as string | undefined);
 
     useEffect(() => {
       if (!hadError && errorText && name) {
@@ -197,7 +197,7 @@ const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
               invalid={!!errorText}
               valid={valid}
               role={errorText && 'alert'}
-              aria-live={errorText && 'polite'}
+              aria-live={errorText ? 'polite' : undefined}
             >
               {errorText || assistiveText}
             </StyledAssistiveText>

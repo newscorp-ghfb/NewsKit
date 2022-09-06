@@ -67,9 +67,10 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
     ),
   };
 
-  const onSliderChange = useCallback(([newVolume]) => onChange(newVolume), [
-    onChange,
-  ]);
+  const onSliderChange = useCallback(
+    ([newVolume]: number[]) => onChange(newVolume),
+    [onChange],
+  );
 
   // useInitialVolume Sets the initial volume on page load
   useInitialVolume({onChange, initialVolume});
@@ -77,7 +78,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   const [volumeSliderInstructionId] = useReactKeys(1);
   // opens volume control on hover/focus when layout = horizontalExpandable.
   const [open, setOpen] = useState(false);
-  const setOpenHandler = useCallback(
+  const setOpenHandler = useCallback<(state: boolean) => void>(
     state => {
       if (layout === 'horizontal' || layout === 'vertical') {
         setOpen(state);
@@ -88,7 +89,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
 
   // makes sure feedback element is fully visible and not cropped when slider is open and user hover/focus on it.
   const [isVisible, setIsVisible] = React.useState(false);
-  const setIsVisibleHandler = useCallback(
+  const setIsVisibleHandler = useCallback<(state: boolean) => void>(
     state => {
       if (layout === 'horizontal') {
         setIsVisible(state);
