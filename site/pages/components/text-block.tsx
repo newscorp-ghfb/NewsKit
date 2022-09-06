@@ -1,4 +1,5 @@
 import React from 'react';
+import {TextBlock, TextBlockProps, styled} from 'newskit';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
@@ -6,6 +7,14 @@ import {InlineCode} from '../../components/markdown-elements';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+
+const PlaygroundContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+`;
 
 const TextBlockComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -30,6 +39,80 @@ const TextBlockComponent = (layoutProps: LayoutProps) => (
       introduced: '0.17.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/ncu-newskit/blob/develop/src/text-block/text-block.tsx',
+    }}
+    interactiveDemo={{
+      introduction:
+        'This demo allows you to preview the Text Block, its variations, and configuration options.',
+      playground: {
+        componentName: 'TextBlock',
+        component: (props: TextBlockProps) => (
+          <PlaygroundContainer>
+            <TextBlock {...props} />
+          </PlaygroundContainer>
+        ),
+        knobs: [
+          {
+            name: 'Content',
+            propName: 'children',
+            value: 'TextBlock Content',
+          },
+          {
+            name: 'No Crop',
+            propName: 'noCrop',
+            options: [
+              {
+                label: 'Default (false)',
+                value: undefined,
+                isDefault: true,
+              },
+              {
+                label: 'true',
+                value: true,
+              },
+            ],
+          },
+          {
+            name: 'Render Styled Text as',
+            propName: 'as',
+            options: [
+              {
+                label: 'Default (p)',
+                value: undefined,
+                isDefault: true,
+              },
+              {
+                label: 'h1',
+                value: 'h1',
+              },
+              {
+                label: 'h2',
+                value: 'h2',
+              },
+              {
+                label: 'h3',
+                value: 'h3',
+              },
+              {
+                label: 'h4',
+                value: 'h4',
+              },
+              {
+                label: 'h5',
+                value: 'h5',
+              },
+              {
+                label: 'div',
+                value: 'div',
+              },
+              {
+                label: 'span',
+                value: 'span',
+              },
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            ] as any,
+          },
+        ],
+      },
     }}
     anatomy={{
       introduction: 'The text block contains one element.',
