@@ -389,9 +389,9 @@ exports[`ComponentAPISection renders section as expected 1`] = `
   },
   \\"eventContext\\": {
     \\"component\\": \\"Component\\",
-    \\"tabName\\": \\"Props\\"
+    \\"object\\": \\"Props\\"
   },
-  \\"eventOriginator\\": \\"component api\\"
+  \\"eventOriginator\\": \\"component api tabs\\"
 }"
                 data-testid="Tab"
               >
@@ -433,9 +433,9 @@ exports[`ComponentAPISection renders section as expected 1`] = `
   },
   \\"eventContext\\": {
     \\"component\\": \\"Component\\",
-    \\"tabName\\": \\"Overrides\\"
+    \\"object\\": \\"Overrides\\"
   },
-  \\"eventOriginator\\": \\"component api\\"
+  \\"eventOriginator\\": \\"component api tabs\\"
 }"
                 data-testid="Tab"
               >

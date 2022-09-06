@@ -246,11 +246,13 @@ export default class MyDocument extends Document {
               }
             `}
           />
-          <Tealium
-            accountId="newsinternational"
-            profileId="thetimes.newskit"
-            env="dev"
-          />
+          {isSiteEnvProduction && (
+            <Tealium
+              accountId="newsinternational"
+              profileId="thetimes.newskit"
+              env={isSiteEnvProduction ? 'prod' : 'dev'}
+            />
+          )}
           <Main />
           <NextScript />
         </body>

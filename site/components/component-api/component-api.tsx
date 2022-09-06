@@ -114,8 +114,8 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
                     overrides={tabOverrides}
                     key={label}
                     eventContext={{
-                      componentName: title,
-                      tabName: label,
+                      component: title,
+                      object: label,
                     }}
                     eventOriginator="component api tabs"
                   >
