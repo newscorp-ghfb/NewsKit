@@ -32,7 +32,7 @@ export interface AccessibilityTablesProps {
   aria?: A11ySubSection<{
     element: string;
     attribute: string | string[];
-    value: string | string[];
+    value: string | string[] | JSX.Element;
     description: string | JSX.Element;
     userSupplied?: true;
   }>;
