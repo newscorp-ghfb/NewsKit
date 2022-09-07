@@ -159,7 +159,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             >
               <NewsKitLogo />
             </Link>
-            <Search />
+            <Search sidebarOpen={sidebarOpen} />
           </GridLayout>
         </Visible>
         <Visible lg xl>
