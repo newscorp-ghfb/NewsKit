@@ -1,4 +1,5 @@
-import {DarkMode, LightMode, KeyboardArrowDown} from '@emotion-icons/material';
+import {DarkMode, KeyboardArrowDown, AddCircle} from '@emotion-icons/material';
+import {LightMode} from '@emotion-icons/material-outlined';
 import {
   Block,
   Button,
@@ -10,6 +11,7 @@ import {
   Tooltip,
   toNewsKitIcon,
   TextBlock,
+  IconButton,
 } from 'newskit*';
 import React, {useState} from 'react';
 import {HeroInteractiveContainer, InteractiveElementContainer} from './styled';
@@ -23,6 +25,7 @@ import {
 export const IconFilledDarkMode = toNewsKitIcon(DarkMode);
 export const IconFilledLightMode = toNewsKitIcon(LightMode);
 export const IconFilledKeyboardArrowDown = toNewsKitIcon(KeyboardArrowDown);
+export const IconFilledAddCircle = toNewsKitIcon(AddCircle);
 
 const HeroInteractiveElements = ({
   themeMode,
@@ -44,13 +47,13 @@ const HeroInteractiveElements = ({
             typographyPreset="utilityBody020"
             paddingInlineEnd="space030"
           >
-            Select theme
+            Select option
           </TextBlock>
           <IconFilledKeyboardArrowDown />
         </Button>
         <Block stylePreset="heroInteractiveSelectPanel">
           <SelectionList overrides={{paddingBlock: 'space020'}}>
-            {['Blue', 'Purple', 'Teal'].map(item => (
+            {['News', 'Radio', 'TV'].map(item => (
               <SelectionListOption
                 key={item}
                 overrides={{
@@ -113,8 +116,8 @@ const HeroInteractiveElements = ({
           onChange={toggleTheme}
           size="medium"
           overrides={{
-            onIcon: IconFilledDarkMode,
-            offIcon: IconFilledLightMode,
+            onIcon: IconFilledLightMode,
+            offIcon: IconFilledDarkMode,
           }}
           // Using invisible character here is a bit hacky but
           // that's an exception where we don't want to show
@@ -123,7 +126,7 @@ const HeroInteractiveElements = ({
           tabIndex={-1}
         />
       </InteractiveElementContainer>
-      <InteractiveElementContainer top={300} left={55} height={140}>
+      <InteractiveElementContainer top={345} left={120} width={120}>
         <StatefulSlider
           overrides={{
             feedback: {size: 'sizing060'},
@@ -133,40 +136,42 @@ const HeroInteractiveElements = ({
               stylePreset: 'heroInteractiveSliderTrack',
             },
           }}
-          values={[20]}
+          values={[25]}
           max={50}
           min={0}
-          vertical
           tabIndex={-1}
         />
-      </InteractiveElementContainer>
-      <InteractiveElementContainer top={382} left={90} zIndex={0}>
-        <Tooltip
-          overrides={{
-            panel: {paddingInline: 'space070'},
-            pointer: {size: 'sizing020', edgeOffset: 'sizing020'},
-            // Setting an unexisting transitionPreset to avoid a resizing jump.
-            transitionPreset: 'none',
-          }}
-          open
-          content="Tooltip"
-          asLabel
-          placement="right"
-          trigger={['focus', 'hover']}
-        >
-          <div />
-        </Tooltip>
       </InteractiveElementContainer>
       <InteractiveElementContainer top={430} left={130}>
         <Button
           size="small"
           overrides={{
             paddingInline: 'space070',
+            paddingBlock: 'space040',
           }}
           tabIndex={-1}
         >
           Button
         </Button>
+      </InteractiveElementContainer>
+      <InteractiveElementContainer top={426} left={50}>
+        <Tooltip
+          overrides={{
+            pointer: {size: 'sizing020', edgeOffset: 'sizing020'},
+            distance: 'space030',
+            // Setting an unexisting transitionPreset to avoid a resizing jump.
+            transitionPreset: 'none',
+          }}
+          open
+          content="Tooltip"
+          asLabel
+          placement="top"
+          trigger={['focus', 'hover']}
+        >
+          <IconButton size="medium">
+            <IconFilledAddCircle />
+          </IconButton>
+        </Tooltip>
       </InteractiveElementContainer>
       <InteractiveElementContainer top={290} left={270} width={230}>
         <Block

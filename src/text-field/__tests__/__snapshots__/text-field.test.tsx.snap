@@ -126,6 +126,7 @@ exports[`TextField renders TextField Correctly 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -312,6 +313,7 @@ Object {
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -585,6 +587,7 @@ Object {
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -861,6 +864,7 @@ exports[`TextField renders TextField with overrides 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1117,6 +1121,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1360,6 +1365,7 @@ exports[`TextField renders disabled text field 1`] = `
   cursor: not-allowed;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1583,6 +1589,7 @@ exports[`TextField renders large TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1719,6 +1726,7 @@ exports[`TextField renders medium TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1855,6 +1863,7 @@ exports[`TextField renders small TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2036,6 +2045,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2303,6 +2313,7 @@ exports[`TextField should render custom placeholder 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;

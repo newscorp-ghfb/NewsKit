@@ -1273,10 +1273,12 @@ Object {
     },
     "heroInteractiveFormInput": Object {
       "base": Object {
-        "backgroundColor": "{{colors.darkBlue010}}",
+        "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "heroInteractiveSelectButton": Object {
@@ -1305,7 +1307,7 @@ Object {
     },
     "heroInteractiveSliderTrack": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface020}}",
+        "backgroundColor": "{{colors.inkInverse}}",
         "borderRadius": "{{borders.borderRadiusRounded050}}",
         "boxShadow": "{{shadows.shadow040}}",
       },
@@ -3866,10 +3868,12 @@ Object {
     },
     "heroInteractiveFormInput": Object {
       "base": Object {
-        "backgroundColor": "{{colors.darkBlue010}}",
+        "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "heroInteractiveSelectButton": Object {
@@ -3898,7 +3902,7 @@ Object {
     },
     "heroInteractiveSliderTrack": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface020}}",
+        "backgroundColor": "{{colors.inkInverse}}",
         "borderRadius": "{{borders.borderRadiusRounded050}}",
         "boxShadow": "{{shadows.shadow040}}",
       },
@@ -6462,10 +6466,12 @@ Object {
     },
     "heroInteractiveFormInput": Object {
       "base": Object {
-        "backgroundColor": "{{colors.darkBlue010}}",
+        "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "heroInteractiveSelectButton": Object {
@@ -6494,7 +6500,7 @@ Object {
     },
     "heroInteractiveSliderTrack": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface020}}",
+        "backgroundColor": "{{colors.inkInverse}}",
         "borderRadius": "{{borders.borderRadiusRounded050}}",
         "boxShadow": "{{shadows.shadow040}}",
       },
@@ -9055,10 +9061,12 @@ Object {
     },
     "heroInteractiveFormInput": Object {
       "base": Object {
-        "backgroundColor": "{{colors.darkBlue010}}",
+        "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "heroInteractiveSelectButton": Object {
@@ -9087,7 +9095,7 @@ Object {
     },
     "heroInteractiveSliderTrack": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface020}}",
+        "backgroundColor": "{{colors.inkInverse}}",
         "borderRadius": "{{borders.borderRadiusRounded050}}",
         "boxShadow": "{{shadows.shadow040}}",
       },
@@ -11651,10 +11659,12 @@ Object {
     },
     "heroInteractiveFormInput": Object {
       "base": Object {
-        "backgroundColor": "{{colors.darkBlue010}}",
+        "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "heroInteractiveSelectButton": Object {
@@ -11683,7 +11693,7 @@ Object {
     },
     "heroInteractiveSliderTrack": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface020}}",
+        "backgroundColor": "{{colors.inkInverse}}",
         "borderRadius": "{{borders.borderRadiusRounded050}}",
         "boxShadow": "{{shadows.shadow040}}",
       },
@@ -14244,10 +14254,12 @@ Object {
     },
     "heroInteractiveFormInput": Object {
       "base": Object {
-        "backgroundColor": "{{colors.darkBlue010}}",
+        "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "heroInteractiveSelectButton": Object {
@@ -14276,7 +14288,7 @@ Object {
     },
     "heroInteractiveSliderTrack": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface020}}",
+        "backgroundColor": "{{colors.inkInverse}}",
         "borderRadius": "{{borders.borderRadiusRounded050}}",
         "boxShadow": "{{shadows.shadow040}}",
       },
@@ -16840,10 +16852,12 @@ Object {
     },
     "heroInteractiveFormInput": Object {
       "base": Object {
-        "backgroundColor": "{{colors.darkBlue010}}",
+        "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "heroInteractiveSelectButton": Object {
@@ -16872,7 +16886,7 @@ Object {
     },
     "heroInteractiveSliderTrack": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface020}}",
+        "backgroundColor": "{{colors.inkInverse}}",
         "borderRadius": "{{borders.borderRadiusRounded050}}",
         "boxShadow": "{{shadows.shadow040}}",
       },
@@ -19433,10 +19447,12 @@ Object {
     },
     "heroInteractiveFormInput": Object {
       "base": Object {
-        "backgroundColor": "{{colors.darkBlue010}}",
+        "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "heroInteractiveSelectButton": Object {
@@ -19465,7 +19481,7 @@ Object {
     },
     "heroInteractiveSliderTrack": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface020}}",
+        "backgroundColor": "{{colors.inkInverse}}",
         "borderRadius": "{{borders.borderRadiusRounded050}}",
         "boxShadow": "{{shadows.shadow040}}",
       },

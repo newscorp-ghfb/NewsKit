@@ -4158,6 +4158,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -5589,6 +5590,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -7027,6 +7029,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -8777,6 +8780,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -9442,6 +9446,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -9766,6 +9771,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;

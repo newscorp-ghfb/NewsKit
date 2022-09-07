@@ -15,6 +15,7 @@ export const StyledInput = styled.input<
   cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
   border: none;
   background: none;
+  color: currentColor;
   ${({$size}) =>
     getTypographyPreset(`textField.${$size}`, '', {
       withCrop: true,

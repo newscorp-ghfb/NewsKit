@@ -3,6 +3,7 @@ import {
   Devices,
   Drawer,
   getDeviceQueryFromTheme,
+  getMediaQueryFromTheme,
   getSpacingCssFromTheme,
   getStylePresetFromTheme,
   styled,
@@ -30,6 +31,10 @@ export const DesktopNavigationDivider = styled.div`
 export const StyledDrawer = styled(Drawer)`
   ${getSpacingCssFromTheme('marginTop', '48px')};
   height: calc(100vh - 48px);
+
+  ${getMediaQueryFromTheme('lg')} {
+    display: none;
+  }
 `;
 
 export const StyledSidebarDesktop = styled.div<SidebarWrapperProps>`

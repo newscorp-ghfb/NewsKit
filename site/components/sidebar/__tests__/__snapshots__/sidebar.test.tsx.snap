@@ -3854,6 +3854,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
 .emotion-1 {
   box-sizing: border-box;
   grid-area: content;
@@ -11593,6 +11599,12 @@ exports[`Sidebar renders correctly when open 1`] = `
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    display: none;
   }
 }
 

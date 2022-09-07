@@ -1087,7 +1087,7 @@ export const stylePresets = {
   },
   heroInteractiveSliderTrack: {
     base: {
-      backgroundColor: '{{colors.interface020}}',
+      backgroundColor: '{{colors.inkInverse}}',
       boxShadow: '{{shadows.shadow040}}',
       borderRadius: '{{borders.borderRadiusRounded050}}',
     },
@@ -1101,10 +1101,12 @@ export const stylePresets = {
   },
   heroInteractiveFormInput: {
     base: {
-      backgroundColor: '{{colors.darkBlue010}}',
+      backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactiveInput020}}',
-      color: '{{colors.inkSubtle}}',
-      borderRadius: '{{borders.borderRadiusRounded010}}',
+      borderStyle: 'solid',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkBase}}',
     },
   },
   heroInteractiveSelectionList: {
