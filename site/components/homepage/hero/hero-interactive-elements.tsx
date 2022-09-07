@@ -154,7 +154,7 @@ const HeroInteractiveElements = ({
           Button
         </Button>
       </InteractiveElementContainer>
-      <InteractiveElementContainer top={426} left={50}>
+      <InteractiveElementContainer top={426} left={50} zIndex={0}>
         <Tooltip
           overrides={{
             pointer: {size: 'sizing020', edgeOffset: 'sizing020'},
@@ -167,7 +167,7 @@ const HeroInteractiveElements = ({
           placement="top"
           trigger={['focus', 'hover']}
         >
-          <IconButton size="medium">
+          <IconButton size="medium" tabIndex={-1}>
             <IconFilledAddCircle />
           </IconButton>
         </Tooltip>
