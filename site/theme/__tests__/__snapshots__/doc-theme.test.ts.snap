@@ -1060,9 +1060,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -1831,6 +1833,23 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -3607,9 +3626,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -4378,6 +4399,23 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -6157,9 +6195,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -6928,6 +6968,23 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -8704,9 +8761,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -9475,6 +9534,23 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -11254,9 +11330,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -12025,6 +12103,23 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -13801,9 +13896,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -14572,6 +14669,23 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -16351,9 +16465,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -17122,6 +17238,23 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -18898,9 +19031,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -19669,6 +19804,23 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "whatsnewCardButton": Object {
