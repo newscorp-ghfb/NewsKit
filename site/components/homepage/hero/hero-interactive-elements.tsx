@@ -159,8 +159,7 @@ const HeroInteractiveElements = ({
           overrides={{
             pointer: {size: 'sizing020', edgeOffset: 'sizing020'},
             distance: 'space030',
-            // Setting an unexisting transitionPreset to avoid a resizing jump.
-            transitionPreset: 'none',
+            transitionPreset: 'fade',
           }}
           open
           content="Tooltip"

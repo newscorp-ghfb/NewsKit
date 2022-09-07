@@ -36,7 +36,7 @@ export const InteractiveElementContainer = styled.div<{
   position: absolute;
   top: ${({top}) => `${top}px`};
   left: ${({left}) => `${left}px`};
-  ${({height}) => height !== undefined && `height: ${height}px`}
-  ${({width}) => width !== undefined && `width: ${width}px`}
-  ${({zIndex}) => zIndex !== undefined && `z-index: ${zIndex}`}
+  ${({height}) => height !== undefined && `height: ${height}px`};
+  ${({width}) => width !== undefined && `width: ${width}px`};
+  ${({zIndex}) => zIndex !== undefined && `z-index: ${zIndex}`};
 `;
