@@ -115,8 +115,8 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
               pointer is not used.
               <br />
               <br />
-              If no pointer is visible, then the distance to the reference
-              element is reduced to zero.
+              If no pointer is visible, then the distance can still be set via
+              overrides.
             </>
           ),
           media: getIllustrationComponent(
