@@ -6822,8 +6822,8 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   background-color: #E2E2E2;
   color: #ABABAB;
   margin: 0;
-  background-color: transparent;
-  color: #3B3B3B;
+  background-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-13 svg {
@@ -6852,58 +6852,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
 }
 
 .emotion-13 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-13:hover:not(:disabled) {
-  background-color: #ECF1FF;
-  color: #3358CC;
-}
-
-.emotion-13:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-13:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-13:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-13:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-13:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-13:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-13:disabled svg {
   fill: #ABABAB;
-}
-
-.emotion-13:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-18 {

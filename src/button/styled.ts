@@ -19,9 +19,10 @@ export const StyledFlag = styled(Flag)<
     const cursor = $loading ? 'progress' : 'pointer';
     return {cursor};
   }}
-  ${({$loading}) =>
+  ${({$loading, disabled}) =>
     getStylePreset('', '', {
       isLoading: $loading,
+      isDisabled: disabled,
     })}
 
   ${({size}) =>

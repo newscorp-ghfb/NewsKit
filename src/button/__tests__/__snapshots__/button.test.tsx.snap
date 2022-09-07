@@ -2254,9 +2254,9 @@ exports[`Button renders button link with disabled link 1`] = `
   border-radius: 8px;
   color: #ABABAB;
   margin: 0;
-  background-color: #3358CC;
+  background-color: #E2E2E2;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ABABAB;
 }
 
 .emotion-0 svg {
@@ -2285,39 +2285,7 @@ exports[`Button renders button link with disabled link 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-0:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-0:disabled svg {
   fill: #ABABAB;
-}
-
-.emotion-0:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-0:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-1 {
