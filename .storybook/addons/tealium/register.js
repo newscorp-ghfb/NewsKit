@@ -37,14 +37,14 @@ const sendEvent = api => {
 const ADDON_ID = 'storybook/tealium';
 const TOOL_ID = `${ADDON_ID}/tool`;
 
-const isSiteEnvProduction = false;
+const isProduction = process.env.NODE_ENV === 'production';
 
 const CONFIG = {
   privacyManagerId: '407619',
   tealium: {
     accountId: 'newsinternational',
     profileId: 'thetimes.storybook',
-    env: isSiteEnvProduction ? 'prod' : 'dev',
+    env: isProduction ? 'prod' : 'dev',
   },
   consent: {
     accountId: 259,
