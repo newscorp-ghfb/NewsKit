@@ -8,7 +8,7 @@ import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 
 const ThemelessTextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
-  ({size = 'medium', state, overrides, ...props}, ref) => {
+  ({size = 'medium', resize = 'vertical', state, overrides, ...props}, ref) => {
     const theme = useTheme();
 
     // This is a fix to apply the placeholderColor to input
@@ -30,6 +30,7 @@ const ThemelessTextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
       <StyledTextArea
         $size={size}
         state={state}
+        resize={resize}
         disabled={state === 'disabled'}
         placeholderColor={placeholderColor}
         overrides={overrides}
