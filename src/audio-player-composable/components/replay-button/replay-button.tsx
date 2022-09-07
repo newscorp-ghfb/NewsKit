@@ -1,5 +1,4 @@
 import React from 'react';
-import {ButtonSize} from '../../../button/types';
 import {IconButton} from '../../../icon-button';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import {useAudioPlayerContext} from '../../context';
@@ -28,7 +27,7 @@ const ThemelessAudioPlayerReplayButton = React.forwardRef<
     <IconButton
       ref={ref}
       data-testid="audio-player-replay-button"
-      size={ButtonSize.Medium}
+      size="medium"
       overrides={overrides}
       {...propsFromContext}
     />

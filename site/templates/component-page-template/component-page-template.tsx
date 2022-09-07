@@ -5,6 +5,7 @@ import {PageTemplate} from '../page-template';
 import {
   AccessibilitySection,
   AnatomySection,
+  LayoutExamplesSection,
   BehaviorsSection,
   CodeExamplesSection,
   ComplianceSection,
@@ -33,6 +34,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   layoutProps,
   interactiveDemo,
   anatomy,
+  layoutExamples,
   options,
   states,
   behaviors,
@@ -66,6 +68,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
     >
       {interactiveDemo && <InteractiveDemoSection {...interactiveDemo} />}
       {anatomy && <AnatomySection {...anatomy} />}
+      {layoutExamples && <LayoutExamplesSection {...layoutExamples} />}
       {options && <OptionsSection {...options} />}
       {states && <StatesSection {...states} />}
       {behaviors && <BehaviorsSection {...behaviors} />}

@@ -1,11 +1,7 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {Flag, FlagSize, FlagProps} from '..';
+import {Flag, FlagProps, FlagSize} from '..';
 import {IconFilledEmail} from '../../icons';
-
-const flagSizeKeys = (Object.keys(FlagSize) as unknown) as Array<
-  keyof typeof FlagSize
->;
 
 const renderFlagWithText = (props: FlagProps) => <Flag {...props}>Text</Flag>;
 const renderFlagWithTextAndIcon = (props: FlagProps) => (
@@ -20,15 +16,15 @@ describe('Flag', () => {
     const fragment = renderToFragmentWithTheme(renderFlagWithText);
     expect(fragment).toMatchSnapshot();
   });
-
-  test.each(flagSizeKeys)('renders with %s size', currentSize => {
-    const props: FlagProps = {
-      size: FlagSize[currentSize],
-    };
-    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
-    expect(fragment).toMatchSnapshot();
+  ['small', 'medium', 'large'].forEach(size => {
+    test(`renders ${size} Flag`, () => {
+      const props: FlagProps = {
+        size: size as FlagSize,
+      };
+      const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
+      expect(fragment).toMatchSnapshot();
+    });
   });
-
   test('renders a flag with a custom stylePreset', () => {
     const props: FlagProps = {
       overrides: {

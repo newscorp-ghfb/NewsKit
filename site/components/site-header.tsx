@@ -7,7 +7,6 @@ import {
   getColorCssFromTheme,
   getSpacingCssFromTheme,
   getSizingCssFromTheme,
-  ButtonSize,
   getBorderCssFromTheme,
   MenuItem,
   Menu,
@@ -18,7 +17,7 @@ import {
 } from 'newskit';
 import {Menu as FilledMenu} from '@emotion-icons/material/Menu';
 import {Close as FilledClose} from '@emotion-icons/material/Close';
-
+import LinkNext from 'next/link';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
@@ -32,7 +31,7 @@ const IconFilledClose = toNewsKitIcon(FilledClose);
 
 export const GitHubButton = () => (
   <Button
-    size={ButtonSize.Small}
+    size="small"
     overrides={{
       typographyPreset: 'utilityButton010',
       stylePreset: 'buttonOutlinedSecondary',
@@ -121,21 +120,25 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
-        <MenuItem
-          data-testid="styled-indicator"
-          key={id}
-          href={id.substring(1)}
-          size="small"
-          selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
-          overrides={{
-            stylePreset: 'linkTopNavigation',
-            minHeight: '80px',
-            marginInline: '10px',
-            paddingInline: {lg: '3px', xl: '16px'},
-          }}
-        >
-          {title}
-        </MenuItem>
+        <React.Fragment key={id}>
+          <LinkNext href={id} passHref>
+            <MenuItem
+              data-testid="styled-indicator"
+              key={id}
+              href={id}
+              size="small"
+              selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
+              overrides={{
+                stylePreset: 'linkTopNavigation',
+                minHeight: '80px',
+                marginInline: {lg: '0', xl: '10px'},
+                paddingInline: {lg: '3px', xl: '16px'},
+              }}
+            >
+              {title}
+            </MenuItem>
+          </LinkNext>
+        </React.Fragment>
       ));
 
     return (
@@ -161,7 +164,10 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
         </Visible>
         <Visible lg xl>
           <GridLayout
-            columns={{lg: '276px 1fr auto auto 80px'}}
+            columns={{
+              lg: 'auto 1fr auto auto 80px',
+              xl: '276px 1fr auto auto 80px',
+            }}
             columnGap="20px"
             alignItems="center"
             areas={{
@@ -189,7 +195,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                 </Areas.Github>
                 <Areas.Theme>
                   <ThemeSwitch
-                    size={ButtonSize.Medium}
+                    size="medium"
                     toggle={toggleTheme}
                     themeMode={themeMode}
                   />

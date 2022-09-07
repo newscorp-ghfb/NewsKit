@@ -3,6 +3,7 @@ import {LogicalProps} from '../utils/logical-properties';
 
 export interface StandfirstProps
   extends React.HTMLAttributes<HTMLHeadingElement> {
+  children?: React.ReactNode;
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   overrides?: {
     styledText?: {

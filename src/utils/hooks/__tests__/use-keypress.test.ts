@@ -1,4 +1,4 @@
-import {createEvent, fireEvent} from '@testing-library/react';
+import {createEvent, fireEvent, waitFor} from '@testing-library/react';
 import {RefObject} from 'react';
 import userEvent from '@testing-library/user-event';
 import {renderHook} from '../../../test/test-utils';
@@ -9,23 +9,24 @@ describe('use keypress hook', () => {
     jest.clearAllMocks();
   });
 
-  test('will invoke event callback function on keyup', () => {
+  test('will invoke event callback function on keyup', async () => {
     const callbackMock = jest.fn();
     renderHook(() => useKeypress('a', callbackMock));
 
     userEvent.keyboard('a');
 
-    expect(callbackMock).toHaveBeenCalled();
+    await waitFor(() => expect(callbackMock).toBeCalled());
   });
 
-  test('will invoke event callback function on multiply keyup', () => {
+  test('will invoke event callback function on multiply keyup', async () => {
     const callbackMock = jest.fn();
     renderHook(() => useKeypress(['a', 'b'], callbackMock));
 
     userEvent.keyboard('a');
-    userEvent.keyboard('b');
+    await waitFor(() => expect(callbackMock).toHaveBeenCalledTimes(1));
 
-    expect(callbackMock).toHaveBeenCalledTimes(2);
+    userEvent.keyboard('b');
+    await waitFor(() => expect(callbackMock).toHaveBeenCalledTimes(2));
   });
 
   test('will not invoke event callback function on keyup if key not recognized', () => {

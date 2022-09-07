@@ -1,6 +1,5 @@
 import React from 'react';
 import {IconButton} from '../../../icon-button';
-import {ButtonSize} from '../../../button/types';
 import {useAudioPlayerContext} from '../../context';
 import defaults from './defaults';
 import {withOwnTheme} from '../../../utils/with-own-theme';
@@ -29,7 +28,7 @@ const ThemelessAudioPlayerSkipPreviousButton = React.forwardRef<
     <IconButton
       ref={ref}
       data-testid="audio-player-skip-previous-button"
-      size={ButtonSize.Medium}
+      size="medium"
       overrides={overrides}
       {...propsFromContext}
     />

@@ -3,6 +3,7 @@ import {TemplateProps} from '../types';
 import {
   InteractiveDemoSectionProps,
   AnatomySectionProps,
+  LayoutExamplesSectionProps,
   OptionsSectionProps,
   StatesSectionProps,
   BehaviorsSectionProps,
@@ -18,11 +19,12 @@ import {
 } from '../template-sections';
 
 export interface ComponentPageTemplateProps
-  extends Omit<TemplateProps, 'featureCard'> {
+  extends Omit<TemplateProps, 'featureCard' | 'children'> {
   layoutProps: LayoutProps;
   componentDefaultsKey: string;
   interactiveDemo?: InteractiveDemoSectionProps;
   anatomy?: AnatomySectionProps;
+  layoutExamples?: LayoutExamplesSectionProps;
   options?: OptionsSectionProps;
   states?: StatesSectionProps;
   behaviors?: BehaviorsSectionProps;

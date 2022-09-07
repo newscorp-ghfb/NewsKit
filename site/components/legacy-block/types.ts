@@ -14,6 +14,7 @@ import {
 export type Responsive<T> = T | T[];
 
 interface CommonProps {
+  children?: React.ReactNode;
   as?: React.ElementType;
   backgroundColor?: Responsive<string | ColorProperty>;
   font?: Responsive<string>;

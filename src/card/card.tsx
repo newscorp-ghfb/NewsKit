@@ -9,7 +9,6 @@ import {
   StyledCardContainerActions,
   StyledCardLink,
 } from './styled';
-import {Flow, StackDistribution} from '../stack';
 import {
   renderIfReactComponent,
   hasMatchingDisplayNameWith,
@@ -214,8 +213,8 @@ const ThemelessCard = React.forwardRef<HTMLDivElement, CardProps>(
           )}
           {actions && (
             <StyledCardContainerActions
-              flow={Flow.HorizontalCenter}
-              stackDistribution={StackDistribution.Start}
+              flow="horizontal-center"
+              stackDistribution="flex-start"
               hasHref={hasHref}
               wrap="nowrap"
               overrides={nonLogicalOverrides}

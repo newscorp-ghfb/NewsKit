@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Stack, Flow} from 'newskit';
+import {Stack} from 'newskit';
 import {StyledTableOfContents, StyledContentsNavItem} from './styled';
 import {ContentsNavItemProps} from './types';
 import {contentsObserver} from './contents-observer';
@@ -63,7 +63,7 @@ export const TableOfContents: React.FC = () => {
 
   return (
     <StyledTableOfContents style={{[direction]: size}} id="toc-navigation">
-      <Stack flow={Flow.VerticalLeft}>
+      <Stack flow="vertical-left">
         {contentsInfo &&
           contentsInfo.map((info, index) => (
             <ContentsNavItem key={info.id} itemKey={index} href={`#${info.id}`}>

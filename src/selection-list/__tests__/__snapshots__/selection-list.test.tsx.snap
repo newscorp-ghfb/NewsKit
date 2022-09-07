@@ -38,8 +38,8 @@ exports[`SelectionList render should render SelectionList with a selected option
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E0E7FF;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -58,17 +58,17 @@ exports[`SelectionList render should render SelectionList with a selected option
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-1:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2 {
@@ -157,7 +157,7 @@ exports[`SelectionList render should render SelectionList with a selected option
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -176,43 +176,43 @@ exports[`SelectionList render should render SelectionList with a selected option
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-4:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-4:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-4:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-4:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-4:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-4:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-4:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 <div
@@ -298,7 +298,7 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -317,43 +317,43 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-1:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-1:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-1:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-1:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-1:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 <div
@@ -425,7 +425,7 @@ exports[`SelectionList render should render SelectionList with non-string option
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -444,43 +444,43 @@ exports[`SelectionList render should render SelectionList with non-string option
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-1:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-1:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-1:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-1:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-1:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-2 {
@@ -497,8 +497,8 @@ exports[`SelectionList render should render SelectionList with non-string option
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E0E7FF;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -517,17 +517,17 @@ exports[`SelectionList render should render SelectionList with non-string option
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-3 {
@@ -681,8 +681,8 @@ exports[`SelectionList render should render SelectionList with updated icon 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E0E7FF;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -701,24 +701,24 @@ exports[`SelectionList render should render SelectionList with updated icon 1`] 
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-1:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -810,8 +810,8 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E0E7FF;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -832,17 +832,17 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-1:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2 {
@@ -931,7 +931,7 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -952,43 +952,43 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-4:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-4:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-4:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-4:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-4:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-4:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-4:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 <div
@@ -1069,15 +1069,15 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E0E7FF;
-  color: #2E2E2E;
+  background-color: #ECF1FF;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
   font-family: "Bitter",serif;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.125;
   font-weight: 500;
   letter-spacing: 0;
@@ -1089,17 +1089,17 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-1:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2 {
@@ -1188,14 +1188,14 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
   font-family: "Bitter",serif;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.125;
   font-weight: 500;
   letter-spacing: 0;
@@ -1207,43 +1207,43 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-4:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-4:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-4:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-4:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-4:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-4:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-4:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 <div
@@ -1325,7 +1325,7 @@ exports[`SelectionList render should render default SelectionList 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -1344,43 +1344,43 @@ exports[`SelectionList render should render default SelectionList 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-1:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-1:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-1:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-1:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-1:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 <div

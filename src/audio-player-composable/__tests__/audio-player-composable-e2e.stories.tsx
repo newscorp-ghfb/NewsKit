@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {ButtonSize, Button} from '../../button';
+import {Button} from '../../button';
 import {GridLayout} from '../../grid-layout/grid-layout';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {
@@ -60,7 +60,7 @@ export const AudioPlayerE2E = () => {
               <Areas.Link alignSelf="center" justifySelf="end">
                 <Button
                   href="/"
-                  size={ButtonSize.Small}
+                  size="small"
                   overrides={{stylePreset: 'buttonOutlinedPrimary'}}
                 >
                   read more

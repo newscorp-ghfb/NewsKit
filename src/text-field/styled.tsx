@@ -1,8 +1,8 @@
 import {getTypographyPreset, styled, getResponsiveSpace} from '../utils/style';
-import {FormInputTextFieldProps, TextFieldSizeType} from './types';
+import {FormInputTextFieldProps, TextFieldSize} from './types';
 
 interface StyledTextFieldProps extends FormInputTextFieldProps {
-  $size: TextFieldSizeType;
+  $size: TextFieldSize;
 }
 
 export const StyledInput = styled.input<

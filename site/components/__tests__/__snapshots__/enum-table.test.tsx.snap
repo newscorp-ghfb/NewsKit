@@ -14,16 +14,16 @@ exports[`EnumTable renders enum as expected 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  box-shadow: 0 3px 4px 2px #FFFFFF;
+  background-color: #F0F1F3;
+  box-shadow: 0 3px 4px 2px #F0F1F3;
 }
 
 .emotion-1,
 .emotion-1 td,
 .emotion-1 th {
-  color: #0A0A0A;
+  color: #09111C;
   border-spacing: 0;
-  border: solid 1px #E4E4E4;
+  border: solid 1px #DEE2E5;
 }
 
 .emotion-1 td,
