@@ -17,6 +17,7 @@ const unlimitedScenarios = [
   'theme-checker',
   'popover',
   'audio-player-composable',
+  'text-area',
 ];
 
 const BackgroundColor = styled.div`
