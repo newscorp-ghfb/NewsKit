@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {
-  Headline,
   TextBlock,
   GridLayout,
   Card,
@@ -30,7 +29,7 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
         <Card overrides={{stylePreset: 'homepageCard'}}>
           <GridLayout
             justifyContent="start"
-            alignItems="end"
+            alignItems="center"
             columns="repeat(2, auto)"
             columnGap="space040"
           >
@@ -47,26 +46,21 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
             <GridLayoutItem>
               <LinkStandalone
                 external={false}
-                overrides={{stylePreset: 'whatsNewCardLink'}}
+                overrides={{
+                  stylePreset: 'whatsNewCardLink',
+                  typographyPreset: 'editorialHeadline020',
+                  marginBlockEnd: 'space040',
+                }}
                 href={latestRelease.html_url}
                 target="_blank"
               >
-                <Headline
+                NewsKit {latestRelease.tag_name}
+                <IconFilledLaunch
                   overrides={{
-                    marginBlockEnd: 'space050',
-                    typographyPreset: 'editorialHeadline020',
-                    heading: {stylePreset: 'whatsNewCardLink'},
+                    marginInlineStart: 'space010',
+                    size: 'iconSize020',
                   }}
-                >
-                  NewsKit {latestRelease.tag_name}
-                  <IconFilledLaunch
-                    overrides={{
-                      marginBlockEnd: '-4px',
-                      marginInlineStart: 'space020',
-                      size: 'iconSize020',
-                    }}
-                  />
-                </Headline>
+                />
               </LinkStandalone>
             </GridLayoutItem>
           </GridLayout>
@@ -78,34 +72,29 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
             This release includes new features, bug fixes and other changes.
           </TextBlock>
         </Card>
-        <Block marginBlockStart="space020">
+        <Block marginBlockStart="space010">
           {restReleases.map(({html_url, tag_name}) => (
-            <Block>
+            <div>
               <LinkStandalone
                 external={false}
-                overrides={{stylePreset: 'whatsNewCardLink'}}
+                overrides={{
+                  stylePreset: 'whatsNewCardLink',
+                  typographyPreset: 'editorialHeadline020',
+                  marginBlockEnd: 'space040',
+                }}
                 href={html_url}
                 key={tag_name}
                 target="_blank"
               >
-                <Headline
+                NewsKit {tag_name}
+                <IconFilledLaunch
                   overrides={{
-                    marginBlockEnd: 'space050',
-                    typographyPreset: 'editorialHeadline020',
-                    heading: {stylePreset: 'whatsNewCardLink'},
+                    marginInlineStart: 'space010',
+                    size: 'iconSize020',
                   }}
-                >
-                  NewsKit {tag_name}
-                  <IconFilledLaunch
-                    overrides={{
-                      marginBlockEnd: '-6px',
-                      marginInlineStart: 'space020',
-                      size: 'iconSize020',
-                    }}
-                  />
-                </Headline>
+                />
               </LinkStandalone>
-            </Block>
+            </div>
           ))}
         </Block>
       </GridLayout>
