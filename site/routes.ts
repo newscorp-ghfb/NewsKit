@@ -95,6 +95,15 @@ export default [
             illustration: 'guides/overview/testing',
             cardTitle: 'Testing',
           },
+          {
+            title: 'Grid Layout step-by-step',
+            page: true,
+            id: '/getting-started/code/grid-layout-step-by-step',
+            description:
+              'The grid layout component is a wrapper around CSS grid that maps all CSS grid properties to react props.',
+            illustration: 'guides/grid-layout-guide/hero',
+            cardTitle: 'Grid Layout step-by-step',
+          },
         ],
       },
     ],
