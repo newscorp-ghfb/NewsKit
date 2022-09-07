@@ -411,7 +411,7 @@ export default [
             page: true,
             id: '/components/flag',
             description:
-              'Indicates the status of content e.g. ’new’ or ’updated’.',
+              'A flag is a non-interactive visual indicator used to communicate status.',
             illustration: 'components/flag-illustration',
           },
           {
@@ -569,7 +569,7 @@ export default [
             page: true,
             id: '/components/audio-player',
             description:
-              'Used to embed sound content in web and app interfaces.',
+              'The audio player component allows a user to play and control the playback of live and recorded audio content.',
             illustration: 'components/audio-player-illustration',
           },
           {

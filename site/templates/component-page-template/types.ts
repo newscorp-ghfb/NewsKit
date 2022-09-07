@@ -3,6 +3,7 @@ import {TemplateProps} from '../types';
 import {
   InteractiveDemoSectionProps,
   AnatomySectionProps,
+  LayoutExamplesSectionProps,
   OptionsSectionProps,
   StatesSectionProps,
   BehaviorsSectionProps,
@@ -23,6 +24,7 @@ export interface ComponentPageTemplateProps
   componentDefaultsKey: string;
   interactiveDemo?: InteractiveDemoSectionProps;
   anatomy?: AnatomySectionProps;
+  layoutExamples?: LayoutExamplesSectionProps;
   options?: OptionsSectionProps;
   states?: StatesSectionProps;
   behaviors?: BehaviorsSectionProps;
