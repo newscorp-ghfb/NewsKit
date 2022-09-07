@@ -27,11 +27,7 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
         rowGap="space040"
         columnGap="space100"
       >
-        <Card
-          overrides={{stylePreset: 'homepageCard'}}
-          key={latestRelease.tag_name}
-          href={latestRelease.html_url}
-        >
+        <Card overrides={{stylePreset: 'homepageCard'}}>
           <GridLayout
             justifyContent="start"
             alignItems="end"
@@ -49,22 +45,29 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
               </Flag>
             </GridLayoutItem>
             <GridLayoutItem>
-              <Headline
-                overrides={{
-                  marginBlockEnd: 'space050',
-                  typographyPreset: 'editorialHeadline020',
-                  heading: {stylePreset: 'whatsNewCardLink'},
-                }}
+              <LinkStandalone
+                external={false}
+                overrides={{stylePreset: 'whatsNewCardLink'}}
+                href={latestRelease.html_url}
+                target="_blank"
               >
-                NewsKit {latestRelease.tag_name}
-                <IconFilledLaunch
+                <Headline
                   overrides={{
-                    marginBlockEnd: '-4px',
-                    marginInlineStart: 'space020',
-                    size: 'iconSize020',
+                    marginBlockEnd: 'space050',
+                    typographyPreset: 'editorialHeadline020',
+                    heading: {stylePreset: 'whatsNewCardLink'},
                   }}
-                />
-              </Headline>
+                >
+                  NewsKit {latestRelease.tag_name}
+                  <IconFilledLaunch
+                    overrides={{
+                      marginBlockEnd: '-4px',
+                      marginInlineStart: 'space020',
+                      size: 'iconSize020',
+                    }}
+                  />
+                </Headline>
+              </LinkStandalone>
             </GridLayoutItem>
           </GridLayout>
 
