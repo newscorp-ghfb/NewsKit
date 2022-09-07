@@ -18,7 +18,11 @@ const SearchIconContainer = styled(Visible)`
   ${getSpacingCssFromTheme('marginBottom', 'space010')};
 `;
 
-export const Search: React.FC = () => {
+interface SearchProps {
+  sidebarOpen?: boolean;
+}
+
+export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
   const searchButtonRef = React.useRef(null);
   const [isOpen, setIsOpen] = React.useState(false);
   const [initialQuery, setInitialQuery] = React.useState<string | undefined>(
@@ -52,19 +56,21 @@ export const Search: React.FC = () => {
   return (
     <>
       <SearchIconContainer xs sm md>
-        <IconButton
-          aria-label="Search"
-          data-testid="search-icon-button"
-          overrides={{
-            stylePreset: 'iconButtonMinimalPrimary',
-          }}
-          ref={searchButtonRef}
-          onClick={onOpen}
-        >
-          <IconFilledSearch
-            overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
-          />
-        </IconButton>
+        {sidebarOpen ? undefined : (
+          <IconButton
+            aria-label="Search"
+            data-testid="search-icon-button"
+            overrides={{
+              stylePreset: 'iconButtonMinimalPrimary',
+            }}
+            ref={searchButtonRef}
+            onClick={onOpen}
+          >
+            <IconFilledSearch
+              overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
+            />
+          </IconButton>
+        )}
       </SearchIconContainer>
       <Visible lg xl>
         <Button
