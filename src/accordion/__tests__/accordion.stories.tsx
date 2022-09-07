@@ -144,6 +144,14 @@ const Spacer = styled.div`
   margin-bottom: 30px;
 `;
 
+// max-height (used for the default accordion transition) is incorrectly calculated
+// from scroll height in the Applitools test environment. Unset here as a temporary
+// measure while we wait for a fix from Applitools.
+const scriptHooks = {
+  beforeCaptureScreenshot:
+    'Array.from(document.querySelectorAll(\'.nk-accordion-enter-done\')).forEach(elt => elt.style.maxHeight="unset")',
+};
+
 export const StoryAccordion = () => {
   const [expanded, toggleExpanded] = React.useState(false);
   return (
@@ -227,6 +235,7 @@ export const StoryAccordion = () => {
   );
 };
 StoryAccordion.storyName = 'accordion';
+StoryAccordion.parameters = {eyes: {scriptHooks}};
 
 export const StoryAccordionOverrides = () => (
   <>
@@ -362,6 +371,7 @@ export const StoryAccordionOverrides = () => (
 );
 
 StoryAccordionOverrides.storyName = 'accordion-with-overrides';
+StoryAccordionOverrides.parameters = {eyes: {scriptHooks}};
 
 export const StoryAccordionGroupUnControlled = () => (
   <>
@@ -387,6 +397,7 @@ export const StoryAccordionGroupUnControlled = () => (
   </>
 );
 StoryAccordionGroupUnControlled.storyName = 'accordion-group-uncontrolled';
+StoryAccordionGroupUnControlled.parameters = {eyes: {scriptHooks}};
 
 export const StoryAccordionGroupControlled = () => {
   const [expanded1, setExpanded1] = React.useState([1]);
@@ -411,6 +422,7 @@ export const StoryAccordionGroupControlled = () => {
   );
 };
 StoryAccordionGroupControlled.storyName = 'accordion-group-controlled';
+StoryAccordionGroupControlled.parameters = {eyes: {scriptHooks}};
 
 export const StoryAccordionOutlineOverrides = () => (
   <>
@@ -503,6 +515,89 @@ export const StoryAccordionOutlineOverrides = () => (
 );
 
 StoryAccordionOutlineOverrides.storyName = 'accordion-with-outline-overrides';
+StoryAccordionOutlineOverrides.parameters = {eyes: {scriptHooks}};
+
+export const StoryAccordionGroupTransitionOverrides = () => {
+  const noTransitions = {
+    header: {
+      transitionPreset: [],
+    },
+    panel: {
+      transitionPreset: [],
+    },
+  };
+
+  const slowTransitions = {
+    header: {
+      transitionPreset: {
+        extend: 'backgroundColorChange',
+        base: {
+          transitionDuration: '1000ms',
+        },
+      },
+    },
+    panel: {
+      transitionPreset: [
+        {
+          extend: 'maxHeightChange',
+          base: {
+            transitionProperty: 'max-height',
+          },
+          enterActive: {
+            transitionDuration: '2000ms',
+          },
+          exitActive: {
+            transitionDuration: '2000ms',
+          },
+        },
+        {
+          extend: 'slideLeft',
+          enterActive: {
+            transitionDuration: '2000ms',
+          },
+          exitActive: {
+            transitionDuration: '2000ms',
+          },
+        },
+      ],
+    },
+  };
+
+  return (
+    <>
+      <StorybookHeading>Accordion Group Transition Overrides</StorybookHeading>
+      <StorybookSubHeading>No transitions</StorybookSubHeading>
+      <AccordionGroup>
+        <Accordion header="Header 64" overrides={noTransitions}>
+          {content}
+        </Accordion>
+        <Accordion header="Header 65" overrides={noTransitions}>
+          {content}
+        </Accordion>
+        <Accordion header="Header 66" overrides={noTransitions}>
+          {content}
+        </Accordion>
+      </AccordionGroup>
+      <StorybookSubHeading>Multiple slow transitions</StorybookSubHeading>
+      <AccordionGroup>
+        <Accordion header="Header 67" overrides={slowTransitions}>
+          {content}
+        </Accordion>
+        <Accordion header="Header 68" overrides={slowTransitions}>
+          {content}
+        </Accordion>
+        <Accordion header="Header 69" overrides={slowTransitions}>
+          {content}
+        </Accordion>
+      </AccordionGroup>
+    </>
+  );
+};
+StoryAccordionGroupTransitionOverrides.storyName =
+  'accordion-group-transition-overrides';
+StoryAccordionGroupTransitionOverrides.parameters = {
+  eyes: {include: false},
+};
 
 export default {
   title: 'NewsKit Light/accordion',
