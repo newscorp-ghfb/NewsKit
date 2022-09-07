@@ -32,7 +32,7 @@ const cardsContent = [
 ];
 
 export const Explore = () => (
-  <ContentPrimary headline="Explore">
+  <ContentPrimary hideBottomSpacing headline="Explore">
     <GridLayout
       columns={{xs: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)'}}
       columnGap="space050"
@@ -42,13 +42,16 @@ export const Explore = () => (
           key={href}
           href={href}
           media={() => media}
-          overrides={{stylePreset: 'homepageCard'}}
+          overrides={{
+            stylePreset: 'homepageCard',
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
         >
           <Headline
             overrides={{
               marginBlockEnd: 'space040',
               typographyPreset: 'editorialHeadline020',
-              heading: {stylePreset: 'exploreCardHeadline'},
+              heading: {stylePreset: 'exploreCardLink'},
             }}
           >
             {title}
