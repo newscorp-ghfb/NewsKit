@@ -38,7 +38,7 @@ const TextBlockComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: '0.17.0',
       codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/blob/develop/src/text-block/text-block.tsx',
+        'https://github.com/newscorp-ghfb/newskit/tree/main/src/text-block',
     }}
     interactiveDemo={{
       introduction:
@@ -111,6 +111,34 @@ const TextBlockComponent = (layoutProps: LayoutProps) => (
               // eslint-disable-next-line @typescript-eslint/no-explicit-any
             ] as any,
           },
+          {
+            name: 'With typography-preset override',
+            propName: 'typographyPreset',
+            options: [
+              {
+                label: 'Default',
+                isDefault: true,
+              },
+              {
+                label: 'editorialHeadline010',
+                value: 'editorialHeadline010',
+              },
+            ],
+          },
+          {
+            name: 'With style-preset override',
+            propName: 'stylePreset',
+            options: [
+              {
+                label: 'Default',
+                isDefault: true,
+              },
+              {
+                label: 'inkBrand010',
+                value: 'inkBrand010',
+              },
+            ],
+          },
         ],
       },
     }}
@@ -141,8 +169,10 @@ const TextBlockComponent = (layoutProps: LayoutProps) => (
           title: 'Text crop',
           description: (
             <>
-              Text cropping functionality can be disabled on the text block.{' '}
-              <Link href="/theme/foundation/fonts/#textcrop">Read more.</Link>
+              <Link href="/theme/foundation/fonts/#textcrop">
+                Text crop functionality
+              </Link>{' '}
+              can be disabled on the text block.
             </>
           ),
           media: getIllustrationComponent(
@@ -274,7 +304,7 @@ const TextBlockComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: ['Stack', 'Block'],
+      related: ['Ordered List', 'Unordered List'],
     }}
   />
 );
