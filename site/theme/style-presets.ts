@@ -1077,12 +1077,31 @@ export const stylePresets = {
       color: '{{colors.inkBase}}',
     },
   },
-  exploreCardHeadline: {
+  exploreCardLink: {
     base: {
+      textDecoration: 'none',
       color: '{{colors.inkContrast}}',
+      iconColor: '{{colors.inkContrast}}',
     },
     hover: {
       textDecoration: 'underline',
+    },
+  },
+  whatsNewCardLink: {
+    base: {
+      textDecoration: 'none',
+      color: '{{colors.interactivePrimary030}}',
+      iconColor: '{{colors.interactivePrimary030}}',
+    },
+    hover: {
+      textDecoration: 'underline',
+    },
+  },
+  whatsNewHomeFlag: {
+    base: {
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkInverse}}',
+      backgroundColor: '{{colors.inkInformative}}',
     },
   },
   heroInteractiveSliderTrack: {

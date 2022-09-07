@@ -1,30 +1,18 @@
 import * as React from 'react';
-import {GridLayout, styled, TextBlock} from 'newskit';
+import {GridLayout} from 'newskit';
 import Layout, {LayoutProps} from '../components/layout';
 import {
   Hero,
   KeepInTouch,
   SupportedBrands,
   Explore,
+  WhatsNew,
 } from '../components/homepage';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {FeatureCard} from '../components/feature-card';
-
-const Placeholder: React.FC<{children: React.ReactNode}> = ({children}) => (
-  <TextBlock
-    as="span"
-    stylePreset="inkContrast"
-    typographyPreset="editorialLabel010"
-  >
-    {children}
-  </TextBlock>
-);
-
-// Placeholder box
-const GridBox = styled.div`
-  padding: 10px;
-  border: 1px solid orange;
-`;
+import {fetchGitHubReleases} from '../utils/release-notes/functions';
+import {Release, ReleasesPageProps} from '../utils/release-notes/types';
+import {IconFilledLaunch} from '../../src/icons';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -38,7 +26,7 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
-const Index = (layoutProps: LayoutProps) => {
+const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
   // The World Design Systems Week 2022 banner should hide automatically after the event which is on 19-23 September 2022
   const eventDateEnd = new Date('2022-09-24');
   const showEventBanner = new Date() < eventDateEnd;
@@ -56,7 +44,12 @@ const Index = (layoutProps: LayoutProps) => {
           toggleTheme={toggleTheme}
         />
         {showEventBanner && (
-          <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+          <GridLayout
+            overrides={{
+              ...GRID_SECTION_OVERRIDES,
+              marginBlockEnd: {xs: 'space080', md: 'space000'},
+            }}
+          >
             <FeatureCard
               title="World Design Systems Week 2022"
               description="19-23 September 2022"
@@ -66,6 +59,7 @@ const Index = (layoutProps: LayoutProps) => {
                 title: {typographyPreset: 'editorialHeadline060'},
                 description: {typographyPreset: 'editorialSubheadline010'},
               }}
+              buttonIcon={<IconFilledLaunch />}
               buttonLabel="Join the community"
               buttonHref="https://www.designsystemsweek.com/"
               buttonOverrides={{
@@ -78,12 +72,20 @@ const Index = (layoutProps: LayoutProps) => {
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
           <Explore />
         </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-          <GridBox>
-            <Placeholder>Whats New</Placeholder>
-          </GridBox>
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        >
+          <WhatsNew releases={releases} />
         </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        >
           <FeatureCard
             title="Contribute"
             description="Join the community and help grow NewsKit for everyone."
@@ -101,7 +103,12 @@ const Index = (layoutProps: LayoutProps) => {
             }}
           />
         </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        >
           <KeepInTouch />
         </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
@@ -113,3 +120,10 @@ const Index = (layoutProps: LayoutProps) => {
 };
 
 export default Index;
+
+// This function is called at build time and the response is passed to the page
+// component as props.
+export async function getStaticProps() {
+  const releases: Release[] = await fetchGitHubReleases(4);
+  return {props: {releases}};
+}

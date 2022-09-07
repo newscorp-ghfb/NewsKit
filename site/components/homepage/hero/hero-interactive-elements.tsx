@@ -167,9 +167,11 @@ const HeroInteractiveElements = ({
           placement="top"
           trigger={['focus', 'hover']}
         >
-          <IconButton size="medium" tabIndex={-1}>
-            <IconFilledAddCircle />
-          </IconButton>
+          <div>
+            <IconButton size="medium" tabIndex={-1}>
+              <IconFilledAddCircle />
+            </IconButton>
+          </div>
         </Tooltip>
       </InteractiveElementContainer>
       <InteractiveElementContainer top={290} left={270} width={230}>
