@@ -10,6 +10,7 @@ import {
   TextBlock,
   toNewsKitIcon,
 } from 'newskit';
+import LinkNext from 'next/link';
 import {Launch as OutlinedLaunch} from '@emotion-icons/material-outlined/Launch';
 import {IconExpandLess, IconExpandMore} from '../icons';
 import {MenuCollapsible, MobileNavigationDivider, StyledAnchor} from './styled';
@@ -57,7 +58,7 @@ export const MenuMobileCollapsible = ({
         list.map(({title, id, subNav, page}) => (
           <React.Fragment key={id}>
             {page ? (
-              <>
+              <LinkNext href={id} passHref>
                 <MenuItem
                   href={id}
                   selected={path.includes(id)}
@@ -78,7 +79,7 @@ export const MenuMobileCollapsible = ({
                 >
                   {title}
                 </MenuItem>
-              </>
+              </LinkNext>
             ) : (
               <>
                 <MenuGroup

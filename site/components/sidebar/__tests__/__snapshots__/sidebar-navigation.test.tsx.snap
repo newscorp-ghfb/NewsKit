@@ -1015,7 +1015,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
           <a
             aria-current="false"
             class="emotion-3"
-            href="group1/page1"
+            href="/group1/page1"
           >
             <span
               class="emotion-4"
@@ -2797,7 +2797,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
           <a
             aria-current="false"
             class="emotion-3"
-            href="group1/page1"
+            href="/group1/page1"
           >
             <span
               class="emotion-4"
