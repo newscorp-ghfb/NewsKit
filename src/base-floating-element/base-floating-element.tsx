@@ -96,8 +96,7 @@ export const BaseFloatingElement = React.forwardRef<
       },
       whileElementsMounted: autoUpdate,
       middleware: [
-        ...(!hidePointer && distance ? [offset(distance)] : []),
-        ...(hidePointer && distance ? [offset(distance)] : []),
+        ...(distance ? [offset(distance)] : []),
         ...(fallbackBehaviour.includes('flip')
           ? [flip({boundary})]
           : /* istanbul ignore next */ []),
