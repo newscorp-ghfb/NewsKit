@@ -1,6 +1,6 @@
 import React from 'react';
-import {FlagProps} from '../flag';
+import {BaseFlagOverrides, BaseFlagProps} from '../flag';
 
 export interface TagProps
-  extends FlagProps,
+  extends Omit<BaseFlagProps<BaseFlagOverrides>, 'loading'>,
     React.AnchorHTMLAttributes<HTMLAnchorElement> {}
