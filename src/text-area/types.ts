@@ -9,7 +9,7 @@ export interface TextAreaProps
   size?: 'small' | 'medium' | 'large';
   state?: FormInputState;
   resize?: 'none' | 'vertical' | 'horizontal' | 'both';
-  overrides: {
+  overrides?: {
     width?: MQ<string>;
     height?: MQ<string>;
     maxWidth?: MQ<string>;
