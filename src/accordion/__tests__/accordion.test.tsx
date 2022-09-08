@@ -1,4 +1,4 @@
-import {fireEvent} from '@testing-library/react';
+import {act, fireEvent} from '@testing-library/react';
 import React from 'react';
 import {Block} from '../../block';
 import {
@@ -16,6 +16,14 @@ import {styled} from '../../utils';
 import {Accordion} from '../accordion';
 import {AccordionGroup} from '../accordion-group';
 import {AccordionIconProps} from '../types';
+import {getRefScrollHeight} from '../utils';
+
+jest.mock('../utils');
+const mockGetRefScrollHeight = (values: number[]) => {
+  const fn = jest.fn();
+  values.forEach(val => fn.mockReturnValueOnce(val));
+  (getRefScrollHeight as any).mockImplementation(fn);
+};
 
 const StyledBlock = styled(Block)`
   display: flex;
@@ -23,6 +31,10 @@ const StyledBlock = styled(Block)`
 `;
 
 describe('Accordion', () => {
+  beforeEach(() => {
+    mockGetRefScrollHeight([0]);
+  });
+
   const defaultProps = {
     children: (
       <TextBlock>
@@ -40,6 +52,64 @@ describe('Accordion', () => {
     ),
     label: 'Label',
   };
+
+  describe('maxHeight', () => {
+    // Mock ResizeObserver to allow manual triggering of resize events in tests.
+    interface Event {
+      contentRect?: {
+        width: number;
+      };
+    }
+
+    let callback: (e: Event[]) => void;
+    const observe = jest.fn();
+    const disconnect = jest.fn();
+    const mockResizeObserver = jest.fn(cb => ({
+      observe: () => {
+        callback = cb;
+        observe();
+      },
+      disconnect,
+    }));
+
+    const triggerResizeEvent = (width: number) => {
+      callback([{contentRect: {width}}]);
+    };
+
+    beforeAll(() => {
+      // @ts-ignore
+      global.ResizeObserver = mockResizeObserver;
+      // @ts-ignore
+      global.ResizeObserverEntry = jest.fn();
+      // @ts-ignore
+      global.requestAnimationFrame = jest.fn(fn => fn());
+    });
+
+    test('set to element scrollHeight', () => {
+      mockGetRefScrollHeight([123]);
+      const {getByTestId} = renderWithTheme(Accordion, {
+        ...defaultProps,
+        expanded: true,
+      });
+      const container = getByTestId('panel-transition-container');
+      expect(container.style.maxHeight).toEqual(`123px`);
+      jest.restoreAllMocks();
+    });
+
+    test('updates on window resize', () => {
+      mockGetRefScrollHeight([123, 456]);
+      const {getByTestId} = renderWithTheme(Accordion, {
+        ...defaultProps,
+        expanded: true,
+      });
+      const container = getByTestId('panel-transition-container');
+      expect(container.style.maxHeight).toEqual('123px');
+      act(() => triggerResizeEvent(50));
+      expect(container.style.maxHeight).toEqual('456px');
+      jest.restoreAllMocks();
+    });
+  });
+
   test('renders with default props', () => {
     const fragment = renderToFragmentWithTheme(Accordion, defaultProps);
     expect(fragment).toMatchSnapshot();
@@ -162,6 +232,12 @@ describe('Accordion', () => {
         expanded: true,
         overrides: {
           header: {
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
             minWidth: 'sizing050',
             minHeight: 'sizing060',
             stylePreset: 'accordionHeaderCustom',
@@ -179,6 +255,16 @@ describe('Accordion', () => {
           },
           panel: {
             stylePreset: 'accordionPanelCustom',
+            transitionPreset: [
+              {
+                extend: 'maxHeightChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
+              },
+              'fade',
+              'slideLeft',
+            ],
           },
         },
       },
@@ -235,6 +321,10 @@ describe('Accordion', () => {
 });
 
 describe('AccordionGroup', () => {
+  beforeEach(() => {
+    mockGetRefScrollHeight([0, 0]);
+  });
+
   const defaultGroupProps = {
     children: [
       <Accordion header="Accordion 1">Content 1</Accordion>,

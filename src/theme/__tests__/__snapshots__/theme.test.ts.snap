@@ -661,6 +661,33 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
+      },
+    },
     "moveUp": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -1215,12 +1242,14 @@ Object {
       "paddingInline": "spaceInset030",
       "spaceInline": "space020",
       "stylePreset": "accordionHeader",
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton030",
     },
     "panel": Object {
       "paddingBlock": "spaceInset030",
       "paddingInline": "spaceInset030",
       "stylePreset": "accordionPanel",
+      "transitionPreset": "maxHeightChange",
     },
   },
   "assistiveText": Object {
