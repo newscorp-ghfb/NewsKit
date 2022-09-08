@@ -5,6 +5,8 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {InlineCode} from '../../components/markdown-elements';
 import {LayoutProps} from '../../components/layout';
+import {PropsRowsProps} from '../../components/component-api';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
@@ -299,6 +301,7 @@ const TextBlockComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, this overrides the typography preset applied to the text block.',
             },
+            ...(commonLogicalProps('propsRow') as PropsRowsProps[]),
           ],
         },
       ],
