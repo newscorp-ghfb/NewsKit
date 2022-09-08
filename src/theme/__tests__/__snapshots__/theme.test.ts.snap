@@ -2667,38 +2667,6 @@ Object {
       "typographyPreset": "utilityButton010",
     },
   },
-  "textArea": Object {
-    "large": Object {
-      "height": "sizing110",
-      "marginBlockEnd": "space020",
-      "minHeight": "sizing090",
-      "paddingBlock": "space030",
-      "paddingInline": "space030",
-      "stylePreset": "inputField",
-      "typographyPreset": "utilityBody030",
-      "width": "100%",
-    },
-    "medium": Object {
-      "height": "sizing110",
-      "marginBlockEnd": "space020",
-      "minHeight": "sizing080",
-      "paddingBlock": "space030",
-      "paddingInline": "space030",
-      "stylePreset": "inputField",
-      "typographyPreset": "utilityBody020",
-      "width": "100%",
-    },
-    "small": Object {
-      "height": "sizing100",
-      "marginBlockEnd": "space020",
-      "minHeight": "sizing070",
-      "paddingBlock": "space020",
-      "paddingInline": "space020",
-      "stylePreset": "inputField",
-      "typographyPreset": "utilityBody020",
-      "width": "100%",
-    },
-  },
   "textField": Object {
     "large": Object {
       "endEnhancer": Object {

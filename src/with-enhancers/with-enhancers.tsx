@@ -45,7 +45,6 @@ export const WithEnhancers = React.forwardRef<
       overrides={overrides}
       state={state}
       focused={isFocused}
-      resize={resize}
     >
       {startEnhancer && (
         <Enhancer
