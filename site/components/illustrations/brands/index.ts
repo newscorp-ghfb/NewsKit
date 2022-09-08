@@ -9,6 +9,7 @@ import Times from './times';
 import TimesTravel from './times-travel';
 import Virgin from './virgin';
 import WSJ from './wsj';
+import Factiva from './factiva';
 
 export {
   Barrons,
@@ -22,4 +23,5 @@ export {
   TimesTravel,
   Virgin,
   WSJ,
+  Factiva,
 };

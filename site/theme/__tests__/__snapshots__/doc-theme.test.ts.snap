@@ -1060,9 +1060,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -1833,6 +1835,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -1987,6 +2006,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -3607,9 +3653,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -4380,6 +4428,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -4534,6 +4599,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -6157,9 +6249,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -6930,6 +7024,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -7084,6 +7195,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -8704,9 +8842,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -9477,6 +9617,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -9631,6 +9788,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -11254,9 +11438,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -12027,6 +12213,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -12181,6 +12384,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -13801,9 +14031,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -14574,6 +14806,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -14728,6 +14977,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -16351,9 +16627,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -17124,6 +17402,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -17278,6 +17573,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -18898,9 +19220,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -19671,6 +19995,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -19825,6 +20166,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
