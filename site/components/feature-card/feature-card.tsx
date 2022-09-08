@@ -79,6 +79,7 @@ const FeatureCardHorizontal = React.forwardRef<
       description,
       href,
       stylePrefix,
+      buttonIcon,
       buttonLabel,
       buttonHref,
       buttonOverrides,
@@ -160,7 +161,11 @@ const FeatureCardHorizontal = React.forwardRef<
                     }}
                   >
                     {buttonLabel}
-                    <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+                    {buttonIcon || (
+                      <IconFilledChevronRight
+                        overrides={{size: 'iconSize020'}}
+                      />
+                    )}
                   </Button>
                 </OptionalButtonLinkWrapper>
               </Block>
@@ -222,7 +227,11 @@ const FeatureCardHorizontal = React.forwardRef<
                     }}
                   >
                     {buttonLabel}
-                    <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+                    {buttonIcon || (
+                      <IconFilledChevronRight
+                        overrides={{size: 'iconSize020'}}
+                      />
+                    )}
                   </Button>
                 </OptionalButtonLinkWrapper>
               )}
@@ -241,6 +250,7 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
       description,
       href,
       stylePrefix,
+      buttonIcon,
       buttonLabel,
       buttonHref,
       media,
@@ -323,7 +333,9 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
                   }}
                 >
                   {buttonLabel}
-                  <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+                  {buttonIcon || (
+                    <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+                  )}
                 </Button>
               </OptionalButtonLinkWrapper>
             </Block>

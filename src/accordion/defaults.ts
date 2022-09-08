@@ -1,6 +1,7 @@
 export default {
   accordion: {
     header: {
+      transitionPreset: 'backgroundColorChange',
       stylePreset: 'accordionHeader',
       typographyPreset: 'utilityButton030',
       spaceInline: 'space020',
@@ -11,6 +12,7 @@ export default {
       },
     },
     panel: {
+      transitionPreset: 'maxHeightChange',
       stylePreset: 'accordionPanel',
       paddingBlock: 'spaceInset030',
       paddingInline: 'spaceInset030',

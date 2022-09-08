@@ -60,6 +60,22 @@ exports[`Accordion renders as a h4 1`] = `
   }
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -161,7 +177,78 @@ exports[`Accordion renders as a h4 1`] = `
 }
 
 .emotion-10 {
-  display: block;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -258,17 +345,23 @@ exports[`Accordion renders as a h4 1`] = `
       </button>
     </h4>
     <div
-      aria-labelledby="mock-nk-1-control"
-      class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      class="nk-accordion-enter-done emotion-10"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -331,6 +424,22 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -435,7 +544,78 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
 }
 
 .emotion-10 {
-  display: none;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -532,17 +712,23 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
-      class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      class="nk-accordion-exit-done emotion-10"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -605,6 +791,22 @@ exports[`Accordion renders with default props 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -709,7 +911,78 @@ exports[`Accordion renders with default props 1`] = `
 }
 
 .emotion-10 {
-  display: none;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -805,17 +1078,23 @@ exports[`Accordion renders with default props 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
-      class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      class="nk-accordion-exit-done emotion-10"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -855,6 +1134,22 @@ exports[`Accordion renders with disabled state 1`] = `
 
 .emotion-1>:not(:last-of-type) {
   margin-right: 8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-2 {
@@ -958,7 +1253,78 @@ exports[`Accordion renders with disabled state 1`] = `
 }
 
 .emotion-10 {
-  display: none;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -1055,17 +1421,23 @@ exports[`Accordion renders with disabled state 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
-      class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      class="nk-accordion-exit-done emotion-10"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -1128,6 +1500,22 @@ exports[`Accordion renders with expanded state and icon 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1232,7 +1620,78 @@ exports[`Accordion renders with expanded state and icon 1`] = `
 }
 
 .emotion-10 {
-  display: block;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -1329,17 +1788,23 @@ exports[`Accordion renders with expanded state and icon 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
-      class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      class="nk-accordion-enter-done emotion-10"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -1402,6 +1867,22 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1506,7 +1987,78 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
 }
 
 .emotion-10 {
-  display: block;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -1599,17 +2151,23 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
-      class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      class="nk-accordion-enter-done emotion-10"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -1672,6 +2230,22 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1795,7 +2369,78 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
 }
 
 .emotion-10 {
-  display: block;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -1892,17 +2537,23 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
-      class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      class="nk-accordion-enter-done emotion-10"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -1968,6 +2619,22 @@ exports[`Accordion renders with no header 1`] = `
   }
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -2024,7 +2691,78 @@ exports[`Accordion renders with no header 1`] = `
 }
 
 .emotion-7 {
-  display: none;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: max-height;
+  }
+
+  .emotion-7.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-7.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-7.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-7.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: max-height;
+  }
+
+  .emotion-7.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-7.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-7.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-7.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-8 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -2073,17 +2811,23 @@ exports[`Accordion renders with no header 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
-      class="emotion-7"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      class="nk-accordion-exit-done emotion-7"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-8"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -2146,6 +2890,22 @@ exports[`Accordion renders with no label 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2242,7 +3002,78 @@ exports[`Accordion renders with no label 1`] = `
 }
 
 .emotion-9 {
-  display: none;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: max-height;
+  }
+
+  .emotion-9.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-9.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-9.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-9.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-9.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-9.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: max-height;
+  }
+
+  .emotion-9.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-9.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-9.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-9.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-9.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-9.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-10 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -2333,17 +3164,23 @@ exports[`Accordion renders with no label 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
-      class="emotion-9"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      class="nk-accordion-exit-done emotion-9"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-10"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -2395,6 +3232,22 @@ exports[`Accordion renders with style overrides 1`] = `
 .emotion-1:disabled {
   background-color: interface010;
   color: black;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-2 {
@@ -2517,7 +3370,154 @@ exports[`Accordion renders with style overrides 1`] = `
 }
 
 .emotion-10 {
-  display: block;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 500ms;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height,opacity,transform;
+    transition-duration: 200ms,200ms,200ms;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height,opacity,transform;
+    transition-duration: 200ms,200ms,200ms;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height,opacity,transform;
+    transition-duration: 0ms;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height,opacity,transform;
+    transition-duration: 0ms;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.emotion-11 {
   border-style: none none dotted none;
   border-color: #fb8500;
   border-width: 4px;
@@ -2614,17 +3614,23 @@ exports[`Accordion renders with style overrides 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
-      class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      class="nk-accordion-enter-done emotion-10"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -2690,6 +3696,22 @@ exports[`Accordion renders without leading icon 1`] = `
   }
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -2746,7 +3768,78 @@ exports[`Accordion renders without leading icon 1`] = `
 }
 
 .emotion-7 {
-  display: none;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: max-height;
+  }
+
+  .emotion-7.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-7.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-7.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-7.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: max-height;
+  }
+
+  .emotion-7.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-7.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-7.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-7.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-7.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-8 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -2797,17 +3890,23 @@ exports[`Accordion renders without leading icon 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
-      class="emotion-7"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      class="nk-accordion-exit-done emotion-7"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-8"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -2870,6 +3969,22 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2974,7 +4089,78 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
 }
 
 .emotion-10 {
-  display: none;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+  }
+
+  .emotion-10.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-10.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-10.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-10.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -3070,17 +4256,23 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="nk-custom-id"
-      class="emotion-10"
-      data-testid="accordion-content"
-      id="nk-custom-ariaControl"
-      role="region"
+      class="nk-accordion-exit-done emotion-10"
+      data-testid="panel-transition-container"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="nk-custom-id"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="nk-custom-ariaControl"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -3146,6 +4338,22 @@ exports[`AccordionGroup different type of children 1`] = `
   }
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -3194,7 +4402,78 @@ exports[`AccordionGroup different type of children 1`] = `
 }
 
 .emotion-6 {
-  display: block;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: max-height;
+  }
+
+  .emotion-6.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-6.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-6.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-6.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-6.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 200ms;
+  }
+
+  .emotion-6.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: max-height;
+  }
+
+  .emotion-6.nk-accordion-enter {
+    max-height: 0;
+  }
+
+  .emotion-6.nk-accordion-enter-active {
+    max-height: unset;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-6.nk-accordion-enter-done {
+    max-height: unset;
+  }
+
+  .emotion-6.nk-accordion-exit {
+    max-height: unset;
+  }
+
+  .emotion-6.nk-accordion-exit-active {
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0ms;
+  }
+
+  .emotion-6.nk-accordion-exit-done {
+    max-height: 0;
+  }
+}
+
+.emotion-7 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -3242,13 +4521,19 @@ exports[`AccordionGroup different type of children 1`] = `
         </button>
       </h3>
       <div
-        aria-labelledby="mock-nk-1-control"
-        class="emotion-6"
-        data-testid="accordion-content"
-        id="mock-nk-1-content"
-        role="region"
+        class="nk-accordion-enter-done emotion-6"
+        data-testid="panel-transition-container"
+        style="max-height: 0px;"
       >
-        Content 1
+        <div
+          aria-labelledby="mock-nk-1-control"
+          class="emotion-7"
+          data-testid="accordion-content"
+          id="mock-nk-1-content"
+          role="region"
+        >
+          Content 1
+        </div>
       </div>
     </div>
     <div>
@@ -3290,13 +4575,19 @@ exports[`AccordionGroup different type of children 1`] = `
         </button>
       </h3>
       <div
-        aria-labelledby="mock-nk-1-control"
-        class="emotion-6"
-        data-testid="accordion-content"
-        id="mock-nk-1-content"
-        role="region"
+        class="nk-accordion-enter-done emotion-6"
+        data-testid="panel-transition-container"
+        style="max-height: 0px;"
       >
-        Content 2
+        <div
+          aria-labelledby="mock-nk-1-control"
+          class="emotion-7"
+          data-testid="accordion-content"
+          id="mock-nk-1-content"
+          role="region"
+        >
+          Content 2
+        </div>
       </div>
     </div>
     <hr />

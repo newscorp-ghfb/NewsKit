@@ -5,6 +5,7 @@ export interface Release {
   tag_name: string;
   body: string;
   name: string;
+  html_url: string;
 }
 
 export interface FullRelease extends Release {
