@@ -10,6 +10,7 @@ import {BaseFlagProps, BaseFlagOverrides} from './types';
 
 export const StyledBaseFlag = styled('div')<
   BaseFlagProps<BaseFlagOverrides> & {
+    $loading?: BaseFlagProps<BaseFlagOverrides>['loading'];
     $disabled?: BaseFlagProps<BaseFlagOverrides>['disabled'];
   }
 >`
@@ -54,8 +55,9 @@ export const StyledBaseFlag = styled('div')<
   appearance: none;
   // End of button related styles
 
-  ${({$disabled}) =>
+  ${({$disabled, $loading}) =>
     getStylePreset('', '', {
       isDisabled: $disabled,
+      isLoading: $loading,
     })}
 `;

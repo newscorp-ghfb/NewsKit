@@ -164,9 +164,6 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -223,42 +220,6 @@ exports[`Popover close button applies logical prop overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -583,9 +544,6 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #820000;
-  border-radius: 50%;
-  color: #FFFFFF;
 }
 
 .emotion-6 svg {
@@ -611,10 +569,6 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
-}
-
-.emotion-6 svg {
-  fill: #3B3B3B;
 }
 
 .emotion-7 {
@@ -904,9 +858,6 @@ exports[`Popover close button should show left-aligned 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -963,42 +914,6 @@ exports[`Popover close button should show left-aligned 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -1282,9 +1197,6 @@ exports[`Popover close button should show right-aligned 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -1341,42 +1253,6 @@ exports[`Popover close button should show right-aligned 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -1660,9 +1536,6 @@ exports[`Popover content applies logical prop overrides 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -1719,42 +1592,6 @@ exports[`Popover content applies logical prop overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -2080,9 +1917,6 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-6 svg {
@@ -2139,42 +1973,6 @@ exports[`Popover content applies stylePreset overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-6 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-6:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-6:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-6:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-6:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-6:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -2465,9 +2263,6 @@ exports[`Popover content applies typography preset overrides 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -2524,42 +2319,6 @@ exports[`Popover content applies typography preset overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -2884,9 +2643,6 @@ exports[`Popover header applies logical prop overrides 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-6 svg {
@@ -2943,42 +2699,6 @@ exports[`Popover header applies logical prop overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-6 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-6:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-6:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-6:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-6:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-6:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -3310,9 +3030,6 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-6 svg {
@@ -3369,42 +3086,6 @@ exports[`Popover header applies stylePreset overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-6 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-6:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-6:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-6:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-6:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-6:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -3717,9 +3398,6 @@ exports[`Popover header applies typography preset overrides 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-6 svg {
@@ -3776,42 +3454,6 @@ exports[`Popover header applies typography preset overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-6 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-6:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-6:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-6:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-6:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-6:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -4121,9 +3763,6 @@ exports[`Popover offset should be applied with pointer and px distance override 
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -4180,42 +3819,6 @@ exports[`Popover offset should be applied with pointer and px distance override 
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -4518,9 +4121,6 @@ exports[`Popover offset should be applied with pointer and token distance overri
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -4577,42 +4177,6 @@ exports[`Popover offset should be applied with pointer and token distance overri
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -4915,9 +4479,6 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -4974,42 +4535,6 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -5312,9 +4837,6 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -5371,42 +4893,6 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -5709,9 +5195,6 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -5768,42 +5251,6 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -6087,9 +5534,6 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -6146,42 +5590,6 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -6484,9 +5892,6 @@ exports[`Popover pointer padding should be applied with token distance override 
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -6543,42 +5948,6 @@ exports[`Popover pointer padding should be applied with token distance override 
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -6881,9 +6250,6 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -6940,42 +6306,6 @@ exports[`Popover pointer padding should not be applied with invalid token distan
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -7278,9 +6608,6 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -7337,42 +6664,6 @@ exports[`Popover pointer padding should not be applied with non-px distance over
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -7675,9 +6966,6 @@ exports[`Popover should render correct styles: default 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -7734,42 +7022,6 @@ exports[`Popover should render correct styles: default 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -8064,9 +7316,6 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -8123,42 +7372,6 @@ exports[`Popover should render correct styles: with overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -8442,9 +7655,6 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -8501,42 +7711,6 @@ exports[`Popover should render correct styles: with pointer 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -8839,9 +8013,6 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -8898,42 +8069,6 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -9236,9 +8371,6 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -9295,42 +8427,6 @@ exports[`Popover should render correct styles: with pointer stylePreset override
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -9633,9 +8729,6 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   color: #3B3B3B;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
 }
 
 .emotion-5 svg {
@@ -9692,42 +8785,6 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-5:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-5:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 

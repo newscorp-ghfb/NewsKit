@@ -390,9 +390,6 @@ exports[`Card renders actions section with given component 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-11 svg {
@@ -449,42 +446,6 @@ exports[`Card renders actions section with given component 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-11 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-11:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-11:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-11:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-11:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -860,9 +821,6 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-11 svg {
@@ -919,42 +877,6 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-11 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-11:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-11:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-11:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-11:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -1330,9 +1252,6 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-11 svg {
@@ -1389,42 +1308,6 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-11 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-11:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-11:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-11:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-11:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -3099,9 +2982,6 @@ exports[`Card renders with card items 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-15 svg {
@@ -3158,42 +3038,6 @@ exports[`Card renders with card items 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-15 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-15:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-15:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-15:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-15:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-15:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -5189,9 +5033,6 @@ exports[`Card with href renders correctly with actions 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-12 svg {
@@ -5248,42 +5089,6 @@ exports[`Card with href renders correctly with actions 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-12 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-12:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-12:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-12:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-12:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-12:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -7107,9 +6912,6 @@ exports[`CardInset renders with card items 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-15 svg {
@@ -7166,42 +6968,6 @@ exports[`CardInset renders with card items 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-15 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-15:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-15:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-15:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-15:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-15:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 

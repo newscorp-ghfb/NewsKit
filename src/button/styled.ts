@@ -1,29 +1,20 @@
 import {Flag} from '../flag';
 import {logicalProps} from '../utils/logical-properties';
-import {styled, getStylePreset} from '../utils/style';
+import {styled} from '../utils/style';
 import {getTransitionPreset} from '../utils/style/transition-preset';
 import {ButtonOrButtonLinkProps} from './types';
 
-export const StyledFlag = styled(Flag)<
-  Omit<ButtonOrButtonLinkProps, 'size' | 'loading'> & {
-    $loading?: ButtonOrButtonLinkProps['loading'];
-  }
->`
+export const StyledFlag = styled(Flag)<Omit<ButtonOrButtonLinkProps, 'size'>>`
   margin: 0; //reset for safari
 
   ${({size}) => getTransitionPreset(`button.${size}`, '')}
-  ${({$loading, disabled}) => {
+  ${({loading, disabled}) => {
     if (disabled) {
       return null;
     }
-    const cursor = $loading ? 'progress' : 'pointer';
+    const cursor = loading ? 'progress' : 'pointer';
     return {cursor};
   }}
-  ${({$loading, disabled}) =>
-    getStylePreset('', '', {
-      isLoading: $loading,
-      isDisabled: disabled,
-    })}
 
   ${({size}) =>
     logicalProps(

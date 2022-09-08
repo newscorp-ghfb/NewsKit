@@ -2726,9 +2726,6 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-10 svg {
@@ -2785,42 +2782,6 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-10:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-10:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-10:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-10:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -3218,9 +3179,6 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-10 svg {
@@ -3277,42 +3235,6 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-10:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-10:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-10:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-10:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -3711,9 +3633,6 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-10 svg {
@@ -3770,42 +3689,6 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-10:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-10:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-10:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-10:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -4184,9 +4067,6 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-10 svg {
@@ -4243,42 +4123,6 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-10:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-10:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-10:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-10:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -5238,9 +5082,6 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-10 svg {
@@ -5297,42 +5138,6 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-10:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-10:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-10:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-10:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -5429,9 +5234,6 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #FFFFFF;
 }
 
 .emotion-15 svg {
@@ -5488,42 +5290,6 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-15 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-15:hover:not(:disabled) {
-  background-color: rgba(255,255,255,0.1);
-}
-
-.emotion-15:active:not(:disabled) {
-  background-color: rgba(255,255,255,0.2);
-}
-
-.emotion-15:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-15:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-15:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -5912,12 +5678,6 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #FFFFFF;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-10 svg {
@@ -5976,44 +5736,6 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-10:hover:not(:disabled) {
-  background-color: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.7);
-}
-
-.emotion-10:active:not(:disabled) {
-  background-color: rgba(255,255,255,0.2);
-  border-color: rgba(255,255,255,0.8);
-}
-
-.emotion-10:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-10:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -6101,9 +5823,6 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-15 svg {
@@ -6160,42 +5879,6 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-15 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-15:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-15:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-15:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-15:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-15:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -6538,9 +6221,6 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #FFFFFF;
 }
 
 .emotion-10 svg {
@@ -6597,42 +6277,6 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-10:hover:not(:disabled) {
-  background-color: rgba(255,255,255,0.1);
-}
-
-.emotion-10:active:not(:disabled) {
-  background-color: rgba(255,255,255,0.2);
-}
-
-.emotion-10:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-10:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -7028,12 +6672,6 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #FFFFFF;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-10 svg {
@@ -7092,44 +6730,6 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-10:hover:not(:disabled) {
-  background-color: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.7);
-}
-
-.emotion-10:active:not(:disabled) {
-  background-color: rgba(255,255,255,0.2);
-  border-color: rgba(255,255,255,0.8);
-}
-
-.emotion-10:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-10:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -7548,9 +7148,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-11 svg {
@@ -7607,42 +7204,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-11 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-11:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-11:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-11:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-11:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -8080,9 +7641,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-11 svg {
@@ -8139,42 +7697,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-11 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-11:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-11:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-11:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-11:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 

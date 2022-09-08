@@ -1220,9 +1220,6 @@ exports[`Toast Component renders with actions 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-7 svg {
@@ -1279,42 +1276,6 @@ exports[`Toast Component renders with actions 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-7 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-7:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 
@@ -2413,9 +2374,6 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   color: #FFFFFF;
   margin: 0;
   cursor: pointer;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
 }
 
 .emotion-11 svg {
@@ -2472,42 +2430,6 @@ exports[`Toast Component renders with overrides and all props 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-11 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-11:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-11:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-11:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-11:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
   }
 }
 

@@ -14,12 +14,13 @@ import {withOwnTheme} from '../utils/with-own-theme';
 const BaseFlag = React.forwardRef<
   HTMLDivElement,
   BaseFlagProps<BaseFlagOverrides>
->(({children, overrides, disabled, as, ...props}, ref) => {
+>(({children, overrides, loading, disabled, as, ...props}, ref) => {
   const theme = useTheme();
 
   return (
     <StyledBaseFlag
       {...props}
+      $loading={loading}
       $disabled={disabled} // Used to avoid passing disabled HTML attribute to an anchor link
       disabled={as !== 'a' && disabled}
       overrides={overrides}

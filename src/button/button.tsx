@@ -35,8 +35,6 @@ const ThemelessButton = React.forwardRef<
       disabled,
       eventContext,
       eventOriginator,
-      // eslint-disable-next-line @typescript-eslint/no-shadow
-      loading,
       ...rest
     } = linkOrButtonProps as ButtonOrButtonLinkProps;
 
@@ -54,7 +52,6 @@ const ThemelessButton = React.forwardRef<
             'data-testid': 'buttonLink',
             ...emotionAs('a'),
             ...rest,
-            $loading: loading,
             disabled,
             ...(disabled && disabledLinkProps),
           }
@@ -63,7 +60,6 @@ const ThemelessButton = React.forwardRef<
             'data-testid': 'button',
             ...emotionAs('button'),
             ...rest,
-            $loading: loading,
             disabled,
             ...(loading && {
               'aria-busy': 'true',
