@@ -70,7 +70,7 @@ const HeroInteractiveElements = ({
           </SelectionList>
         </Block>
       </InteractiveElementContainer>
-      <InteractiveElementContainer top={55} left={270}>
+      <InteractiveElementContainer top={55} left={250}>
         <Checkbox
           overrides={{marginBlock: 'space030'}}
           label="Design"
