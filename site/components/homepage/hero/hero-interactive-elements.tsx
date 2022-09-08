@@ -73,18 +73,19 @@ const HeroInteractiveElements = ({
       <InteractiveElementContainer top={55} left={270}>
         <Checkbox
           overrides={{marginBlock: 'space030'}}
-          label="Yes"
+          label="Design"
           size="medium"
           defaultChecked
           tabIndex={-1}
         />
         <Checkbox
           overrides={{marginBlock: 'space030'}}
-          label="No"
+          label="Code"
           size="medium"
+          defaultChecked
           tabIndex={-1}
         />
-        <Checkbox label="Maybe" size="medium" tabIndex={-1} />
+        <Checkbox label="Guidance" size="medium" defaultChecked tabIndex={-1} />
       </InteractiveElementContainer>
       <InteractiveElementContainer top={20} left={390} width={110}>
         <Block stylePreset="heroInteractiveSelectionList">
