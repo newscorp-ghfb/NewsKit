@@ -826,6 +826,33 @@ Object {
         "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
       },
     },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "200ms",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "200ms",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
+      },
+    },
     "moveUp": Object {
       "appear": Object {},
       "appearActive": Object {},

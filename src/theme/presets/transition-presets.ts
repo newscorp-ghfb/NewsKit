@@ -42,6 +42,34 @@ transitionPresets.opacityChange = {
   },
 };
 
+transitionPresets.maxHeightChange = {
+  base: {
+    transitionProperty: 'max-height',
+  },
+  enter: {
+    maxHeight: '0',
+  },
+  enterActive: {
+    maxHeight: 'unset',
+    transitionProperty: 'max-height',
+    transitionDuration: '{{motions.motionDuration020}}',
+  },
+  enterDone: {
+    maxHeight: 'unset',
+  },
+  exit: {
+    maxHeight: 'unset',
+  },
+  exitActive: {
+    maxHeight: '0',
+    transitionProperty: 'max-height',
+    transitionDuration: '{{motions.motionDuration020}}',
+  },
+  exitDone: {
+    maxHeight: '0',
+  },
+};
+
 transitionPresets.fade = {
   base: {
     opacity: '{{overlays.opacity000}}',

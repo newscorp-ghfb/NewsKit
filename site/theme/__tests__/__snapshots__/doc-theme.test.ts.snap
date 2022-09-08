@@ -2056,6 +2056,33 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
+      },
+    },
     "moveUp": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -4668,6 +4695,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -7287,6 +7341,33 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
+      },
+    },
     "moveUp": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -9899,6 +9980,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -12518,6 +12626,33 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
+      },
+    },
     "moveUp": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -15130,6 +15265,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -17749,6 +17911,33 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
+      },
+    },
     "moveUp": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -20361,6 +20550,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
