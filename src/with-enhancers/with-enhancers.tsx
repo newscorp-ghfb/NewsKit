@@ -36,7 +36,6 @@ export const WithEnhancers = React.forwardRef<
       children,
       marginPosition = 'outside',
       alignSelf,
-      resize,
     },
     ref,
   ) => (

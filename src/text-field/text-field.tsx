@@ -13,10 +13,7 @@ import {
   omitLogicalPaddingPropsFromOverrides,
 } from '../utils/logical-properties';
 
-const ThemelessTextField = React.forwardRef<
-  HTMLInputElement | HTMLTextAreaElement,
-  TextFieldProps
->(
+const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   (
     {
       size = 'medium',
@@ -29,7 +26,6 @@ const ThemelessTextField = React.forwardRef<
       onChange,
       eventContext,
       eventOriginator = 'text field',
-      resize,
       ...restProps
     },
     inputRef,
@@ -83,8 +79,6 @@ const ThemelessTextField = React.forwardRef<
       'stylePreset',
     );
 
-    console.log({textFieldStylePreset});
-
     const placeholderColor = getSingleStylePreset(
       theme,
       'base',
@@ -104,10 +98,9 @@ const ThemelessTextField = React.forwardRef<
           state={state}
           startEnhancer={startEnhancer}
           endEnhancer={endEnhancer}
-          resize={resize}
         >
           <StyledInput
-            ref={inputRef as React.ForwardedRef<HTMLInputElement>}
+            ref={inputRef}
             type="text"
             disabled={state === 'disabled'}
             $size={size}

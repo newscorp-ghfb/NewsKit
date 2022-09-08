@@ -6,7 +6,6 @@ import {
   getStylePreset,
   getResponsiveSpacingStackHorizontal,
   styled,
-  css,
 } from '../utils/style';
 import {TextFieldSize} from '../text-field/types';
 import {logicalProps} from '../utils/logical-properties';
@@ -44,21 +43,12 @@ export const StyledInputContainer = styled.div<
     componentDefaultsPath: string;
     focused?: boolean;
     overrides?: EnhancerOverrides;
-    resize?: string;
   }
 >`
   display: flex;
   justify-content: center;
   box-sizing: border-box;
   align-items: center;
-
-  ${({resize}) =>
-    resize &&
-    resize !== 'none' &&
-    css`
-      resize: ${resize};
-      overflow: hidden;
-    `}
 
   ${({componentDefaultsPath}) =>
     getResponsiveSize('width', componentDefaultsPath, '', 'width')}

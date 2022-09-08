@@ -23,7 +23,6 @@ import {withOwnTheme} from '../utils/with-own-theme';
 import textFieldDefaults from '../text-field/defaults';
 import assistiveTextDefaults from '../assistive-text/defaults';
 import {RadioButton} from '../radio-button';
-import {TextArea, TextAreaProps} from '../text-area';
 
 const useFormFieldContext = () => useContext(FormInputContext);
 
@@ -305,39 +304,6 @@ export const FormInputRadioButton = React.forwardRef<
       id={id}
       aria-describedby={assistiveTextId}
       aria-required={isRequired || undefined}
-      {...props}
-    />
-  );
-});
-
-export const FormInputTextArea = React.forwardRef<
-  HTMLTextAreaElement,
-  TextAreaProps
->(({children, onChange, onBlur, ...props}, elementRef) => {
-  const {
-    size,
-    name,
-    state,
-    onChange: onChangeContext,
-    onBlur: onBlurContext,
-    ref,
-    id,
-    assistiveTextId,
-    isRequired,
-  } = useFormFieldContext();
-
-  return (
-    <TextArea
-      aria-required={isRequired || undefined}
-      aria-invalid={state === 'invalid' ? 'true' : 'false'}
-      name={name}
-      state={state}
-      size={size}
-      onChange={composeEventHandlers([onChange, onChangeContext])}
-      onBlur={composeEventHandlers([onBlur, onBlurContext])}
-      ref={composeRefs(elementRef, ref as React.Ref<HTMLTextAreaElement>)}
-      id={id}
-      aria-describedby={assistiveTextId}
       {...props}
     />
   );
