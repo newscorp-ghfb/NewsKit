@@ -3,7 +3,7 @@ import {getSSRId} from 'newskit';
 import {Svg} from '../svg';
 import {Path} from '../path';
 
-export const Medium: React.FC = () => {
+const Medium: React.FC = () => {
   const mask0 = getSSRId();
 
   return (

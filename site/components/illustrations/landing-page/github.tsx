@@ -4,7 +4,7 @@ import {Svg} from '../svg';
 import {Path} from '../path';
 import {Rect} from '../rect';
 
-export const Github: React.FC = () => {
+const Github: React.FC = () => {
   const mask0 = getSSRId();
   const clip0 = getSSRId();
 

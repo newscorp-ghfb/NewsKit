@@ -4,7 +4,7 @@ import {Svg} from '../svg';
 import {Path} from '../path';
 import {Rect} from '../rect';
 
-export const Storybook: React.FC = () => {
+const Storybook: React.FC = () => {
   const mask0 = getSSRId();
   const mask1 = getSSRId();
   const clip0 = getSSRId();
