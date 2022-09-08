@@ -30,4 +30,7 @@ export interface BaseFlagProps<TOverrides> {
   as?: keyof JSX.IntrinsicElements;
 }
 export interface FlagProps
-  extends BaseFlagProps<Omit<BaseFlagOverrides, 'transitionPreset'>> {}
+  extends Omit<
+    BaseFlagProps<Omit<BaseFlagOverrides, 'transitionPreset'>>,
+    'loading'
+  > {}
