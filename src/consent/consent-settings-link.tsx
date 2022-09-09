@@ -52,6 +52,7 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
     href="#"
     role="button"
     onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+      event.preventDefault();
       try {
         if (gdpr) {
           // eslint-disable-next-line no-underscore-dangle

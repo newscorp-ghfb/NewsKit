@@ -6,6 +6,7 @@ export interface FeatureCardProps
   description?: string;
   stylePrefix?: string;
   layout?: 'vertical' | 'horizontal';
+  buttonIcon?: React.ReactNode;
   buttonHref?: string;
   buttonLabel?: string;
   buttonOverrides?: ButtonProps['overrides'];

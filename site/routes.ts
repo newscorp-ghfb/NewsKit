@@ -725,7 +725,7 @@ export default [
             page: true,
             id: '/components/text-block',
             description:
-              'A paragraph, which can be used to summarize any text content.',
+              'Text block provides a simple way to display text. It supports text cropping, style presets, and typography presets.',
             illustration: 'components/text-block-illustration',
           },
           {
