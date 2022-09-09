@@ -920,6 +920,14 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "componentsUtilitiesStructuredList": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+      },
+    },
     "contactUs": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand010}}",
@@ -3511,6 +3519,14 @@ Object {
       "selected": Object {
         "borderColor": "{{colors.interactivePrimary030}}",
         "color": "{{colors.inkContrast}}",
+      },
+    },
+    "componentsUtilitiesStructuredList": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "contactUs": Object {
@@ -6109,6 +6125,14 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "componentsUtilitiesStructuredList": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+      },
+    },
     "contactUs": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand010}}",
@@ -8700,6 +8724,14 @@ Object {
       "selected": Object {
         "borderColor": "{{colors.interactivePrimary030}}",
         "color": "{{colors.inkContrast}}",
+      },
+    },
+    "componentsUtilitiesStructuredList": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "contactUs": Object {
@@ -11298,6 +11330,14 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "componentsUtilitiesStructuredList": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+      },
+    },
     "contactUs": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand010}}",
@@ -13889,6 +13929,14 @@ Object {
       "selected": Object {
         "borderColor": "{{colors.interactivePrimary030}}",
         "color": "{{colors.inkContrast}}",
+      },
+    },
+    "componentsUtilitiesStructuredList": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "contactUs": Object {
@@ -16487,6 +16535,14 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "componentsUtilitiesStructuredList": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+      },
+    },
     "contactUs": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand010}}",
@@ -19078,6 +19134,14 @@ Object {
       "selected": Object {
         "borderColor": "{{colors.interactivePrimary030}}",
         "color": "{{colors.inkContrast}}",
+      },
+    },
+    "componentsUtilitiesStructuredList": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "contactUs": Object {

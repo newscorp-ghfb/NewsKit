@@ -1104,4 +1104,12 @@ export const stylePresets = {
       backgroundColor: '{{colors.inkInformative}}',
     },
   },
+  componentsUtilitiesStructuredList: {
+    base: {
+      borderStyle: 'solid',
+      borderColor: '{{colors.interface040}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
 };

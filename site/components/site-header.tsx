@@ -21,7 +21,7 @@ import LinkNext from 'next/link';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
-import routes from '../routes';
+import {routes} from '../routes';
 import {Link} from './link';
 import {Search} from './search';
 import {IconFilledGitHub} from './icons';
