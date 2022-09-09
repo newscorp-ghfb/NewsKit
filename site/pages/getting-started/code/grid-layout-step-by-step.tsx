@@ -11,7 +11,6 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-  ContentTertiary,
   ContentColSpan,
 } from '../../../components/content-structure';
 
@@ -43,7 +42,10 @@ const GridLayoutStepByStep = (layoutProps: LayoutProps) => (
           description="Out of the box, all react props support media query objects as values so that you can easily create responsive layouts."
           childrenColSpan={ContentColSpan.TEXT}
         />
-        <ContentTertiary headline="Key benefits:" showSeparator>
+      </ContentSection>
+
+      <ContentSection sectionName="key benefits">
+        <ContentPrimary headline="Key benefits:" showSeparator>
           <UnorderedList
             markerAlign="center"
             overrides={{
@@ -60,7 +62,7 @@ const GridLayoutStepByStep = (layoutProps: LayoutProps) => (
             <>Allows usage for sizing and spacing tokens</>
             <>Allows composition when using naming areas</>
           </UnorderedList>
-        </ContentTertiary>
+        </ContentPrimary>
       </ContentSection>
 
       <ContentSection sectionName="first layout">
