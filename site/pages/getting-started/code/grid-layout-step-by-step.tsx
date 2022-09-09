@@ -152,11 +152,11 @@ export const Card = () => <p>Nothing here yet</p>;
           <Code>
             {`// src/components/card.tsx
 
-const mobileAreas = 
+const mobileAreas = \`
   image
   content
   action
-;
+\`;
 
 export Card = () => (
 	<GridLayout areas={mobileAreas}>Nothing yet</GridLayout>
@@ -182,10 +182,10 @@ export Card = () => (
 	{
 		(Areas) => (
 			<> // <- notice the React.Fragment wrapper
-				<Areas.Image>Image</Areas.Image>
-				<Areas.Content>Content</Areas.Content>
-				<Areas.Action>Action</Areas.Action>
-			</>
+          <Areas.Image>Image</Areas.Image>
+          <Areas.Content>Content</Areas.Content>
+          <Areas.Action>Action</Areas.Action>
+        </>
 		)
 	}
 	</GridLayout>
@@ -214,17 +214,17 @@ export Card = ({imageUrl, headline, short, url}) => (
 	{
 		(Areas) => (
 			<>
-				<Areas.Image>
-					<Image src={imageUrl} />
-				</Areas.Image>
-				<Areas.Content>
-					<Headline>{headline}</Headline>
-					<TextBlock>{short}</TextBlock>
-				</Areas.Content>
-				<Areas.Action>
-					<Button url={url}>read more</Button>
-				</Areas.Action>
-			</>
+          <Areas.Image>
+            <Image src={imageUrl} />
+          </Areas.Image>
+          <Areas.Content>
+            <Headline>{headline}</Headline>
+            <TextBlock>{short}</TextBlock>
+          </Areas.Content>
+          <Areas.Action>
+            <Button url={url}>read more</Button>
+          </Areas.Action>
+		</>
 		)
 	}
 	</GridLayout>
@@ -263,8 +263,8 @@ export Card = ({imageUrl, headline, short, url}) => (
 		(Areas) => (
 			/* Same as above... */
 		)
-	}
-	</GridLayout>
+ }
+</GridLayout>
 );
 `}
           </Code>
@@ -311,16 +311,16 @@ export Card = ({imageUrl, headline, short, url}) => (
           <Code>
             {`// src/components/card.tsx
 
-const mobileAreas = '
+const mobileAreas = \`
   image
   content
   action
-';
+\`;
 
-const desktopAreas = '
+const desktopAreas = \`
 	image content
 	image action
-';
+\`;
 
 export const Card = ({imageUrl, headline, short, url}) => (
 	<GridLayout 
@@ -353,16 +353,16 @@ export const Card = ({imageUrl, headline, short, url}) => (
 import React from 'react';
 import { Image, Headline, TextBlock, Button, GridLayout } from 'newskit';
 
-const mobileAreas = '
+const mobileAreas = \`
   image
   content
   action
-';
+\`;
 
-const desktopAreas = '
+const desktopAreas = \`
 	image content
 	image action
-';
+\`;
 
 export const Card = ({imageUrl, headline, short, url}) => (
   <GridLayout
