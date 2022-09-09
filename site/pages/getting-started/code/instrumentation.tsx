@@ -203,6 +203,7 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
 const handlers = [
   instrumentationHandlers.createConsoleHandler(),
   instrumentationHandlers.createTealiumHandler(),
+  instrumentationHandlers.createTealiumTrackHandler(),
 ];
 
 const contextObject = {
