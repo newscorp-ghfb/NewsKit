@@ -203,6 +203,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       components: [
         {
+          title: 'Fieldset',
           propsSummary:
             'The Fieldset has a range of props that can be used to define an appropriate experience for different use cases.',
           overridesSummary:

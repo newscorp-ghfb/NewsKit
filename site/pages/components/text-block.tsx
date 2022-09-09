@@ -267,6 +267,7 @@ const TextBlockComponent = (layoutProps: LayoutProps) => (
         'The text block has a range of props that can be used to define an appropriate experience for different use cases.',
       components: [
         {
+          title: 'TextBlock',
           propsRows: [
             {
               name: 'children',
