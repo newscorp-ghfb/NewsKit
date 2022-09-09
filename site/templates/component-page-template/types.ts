@@ -9,6 +9,7 @@ import {
   BehaviorsSectionProps,
   CodeExamplesSectionProps,
   UsageSectionProps,
+  TutorialsSectionProps,
   AccessibilitySectionProps,
   SEOSectionProps,
   ComponentAPISectionProps,
@@ -30,6 +31,7 @@ export interface ComponentPageTemplateProps
   behaviors?: BehaviorsSectionProps;
   codeExamples?: CodeExamplesSectionProps;
   usage?: UsageSectionProps;
+  tutorials?: TutorialsSectionProps;
   accessibility?: AccessibilitySectionProps;
   seo?: SEOSectionProps;
   componentAPI?: ComponentAPISectionProps;
