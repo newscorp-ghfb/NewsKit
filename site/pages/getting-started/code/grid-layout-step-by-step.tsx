@@ -15,7 +15,7 @@ import {
   ContentColSpan,
 } from '../../../components/content-structure';
 
-const GridLayoutGuide = (layoutProps: LayoutProps) => (
+const GridLayoutStepByStep = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
       title: 'Grid Layout step-by-step',
@@ -77,7 +77,7 @@ const GridLayoutGuide = (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Illustration path="guides/grid-layout-guide/steps/step-01" />
+          <Illustration path="guides/grid-layout-guide/steps/first-layout" />
         </ContentPrimary>
         <ContentSecondary
           description="Following best practices, we’re going to start with a mobile design and gradually move upward to larger screens."
@@ -130,7 +130,7 @@ export const Card = () => <p>Nothing here yet</p>;
           </Code>
         </ContentPrimary>
         <ContentSecondary description="When describing layouts we can split our UI element into areas. Looking at our design, we could have the following areas:">
-          <Illustration path="guides/grid-layout-guide/steps/step-02" />
+          <Illustration path="guides/grid-layout-guide/steps/grid-layout" />
         </ContentSecondary>
         <ContentSecondary
           description={
@@ -305,8 +305,9 @@ export Card = ({imageUrl, headline, short, url}) => (
           }
           showSeparator
         >
-          <Illustration path="guides/grid-layout-guide/steps/step-03" />
-          <Block spaceStack="space070" />
+          <Block spaceStack="space070">
+            <Illustration path="guides/grid-layout-guide/steps/responsive-props" />
+          </Block>
           <Code>
             {`// src/components/card.tsx
 
@@ -392,4 +393,4 @@ export const Card = ({imageUrl, headline, short, url}) => (
   </GuidePageTemplate>
 );
 
-export default GridLayoutGuide;
+export default GridLayoutStepByStep;

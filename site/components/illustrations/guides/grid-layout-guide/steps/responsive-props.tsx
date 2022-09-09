@@ -4,7 +4,7 @@ import {Svg} from '../../../svg';
 import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
-export const Step03: React.FC = () => {
+export const ResponsiveProps: React.FC = () => {
   const filter0 = getSSRId();
 
   return (
@@ -114,4 +114,4 @@ export const Step03: React.FC = () => {
   );
 };
 
-export default Step03;
+export default ResponsiveProps;

@@ -4,7 +4,7 @@ import {Svg} from '../../../svg';
 import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
-export const Step02: React.FC = () => {
+export const GridLayout: React.FC = () => {
   const filter0 = getSSRId();
 
   return (
@@ -217,4 +217,4 @@ export const Step02: React.FC = () => {
   );
 };
 
-export default Step02;
+export default GridLayout;
