@@ -624,6 +624,19 @@ export const StoryTooltipNoPointer = () => (
         Button
       </Button>
     </Tooltip>
+    <StorybookSubHeading>
+      Tooltip no pointer with customize distance
+    </StorybookSubHeading>
+    <Tooltip
+      content="Tooltip content"
+      placement="right"
+      hidePointer
+      overrides={{distance: 'space050'}}
+    >
+      <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+        Button
+      </Button>
+    </Tooltip>
   </>
 );
 StoryTooltipNoPointer.storyName = 'tooltip-no-pointer';
