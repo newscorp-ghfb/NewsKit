@@ -231,10 +231,32 @@ export const StoryPopoverDefault = () => (
         </StorybookSubHeading>
         <BoundedPopover header={undefined} closePosition="none" enableDismiss />
       </div>
-      <div>
-        <StorybookSubHeading>Popover - no pointer</StorybookSubHeading>
-        <BoundedPopover hidePointer />
-      </div>
+      <GridLayout columns={{xs: 'repeat(3, minmax(0, 2fr))'}}>
+        <div>
+          <StorybookSubHeading>
+            Popover - no pointer (default)
+          </StorybookSubHeading>
+          <BoundedPopover hidePointer />
+        </div>
+        <div>
+          <StorybookSubHeading>
+            Popover - no pointer distance (increased)
+          </StorybookSubHeading>
+          <BoundedPopover
+            hidePointer
+            overrides={{distance: 'space080', maxWidth: '300px'}}
+          />
+        </div>
+        <div>
+          <StorybookSubHeading>
+            Popover - no pointer distance (zero)
+          </StorybookSubHeading>
+          <BoundedPopover
+            hidePointer
+            overrides={{distance: 'space0', maxWidth: '300px'}}
+          />
+        </div>
+      </GridLayout>
       <div>
         <StorybookSubHeading>
           Popover - header title overflow

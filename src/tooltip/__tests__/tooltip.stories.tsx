@@ -618,20 +618,33 @@ StoryTooltipPlacementsVisualTest.storyName = 'tooltip-placements-visual-test';
 
 export const StoryTooltipNoPointer = () => (
   <>
-    <StorybookSubHeading>Tooltip no pointer</StorybookSubHeading>
+    <StorybookSubHeading>Tooltip - no pointer (default)</StorybookSubHeading>
     <Tooltip content="Tooltip content" placement="right" hidePointer>
       <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button
       </Button>
     </Tooltip>
     <StorybookSubHeading>
-      Tooltip no pointer with customize distance
+      Tooltip - no pointer distance (increased)
     </StorybookSubHeading>
     <Tooltip
       content="Tooltip content"
       placement="right"
       hidePointer
-      overrides={{distance: 'space050'}}
+      overrides={{distance: 'space080'}}
+    >
+      <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+        Button
+      </Button>
+    </Tooltip>
+    <StorybookSubHeading>
+      Tooltip - no pointer distance (zero)
+    </StorybookSubHeading>
+    <Tooltip
+      content="Tooltip content"
+      placement="right"
+      hidePointer
+      overrides={{distance: 'space0'}}
     >
       <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button
