@@ -426,7 +426,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
         'The Drawer has a range of props that can be used to define an appropriate experience for different use cases.',
       components: [
         {
-          title: 'Props',
+          title: 'Drawer',
           summary: `The Drawer has a range of props that can be used to define an appropriate experience for different use cases.`,
           propsRows: [
             {
