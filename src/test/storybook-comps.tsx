@@ -85,7 +85,14 @@ type StorybookPageProps = {
 };
 
 export const StorybookPage = ({children}: StorybookPageProps) => (
-  <GridLayout rowGap="space060">{children}</GridLayout>
+  <GridLayout
+    rowGap="space080"
+    columnGap="space080"
+    columns="repeat(auto-fill, minmax(300px, 1fr))"
+    alignItems="start"
+  >
+    {children}
+  </GridLayout>
 );
 
 type StorybookCaseProps = {
@@ -94,12 +101,10 @@ type StorybookCaseProps = {
 };
 
 export const StorybookCase = ({title, children}: StorybookCaseProps) => (
-  <GridLayout rowGap="space030">
-    <TextBlock stylePreset="inkBase" typographyPreset="editorialHeadline010">
+  <GridLayout rowGap="space040">
+    <TextBlock stylePreset="inkBase" typographyPreset="editorialBody010">
       {title.charAt(0).toUpperCase() + title.slice(1)}
     </TextBlock>
-    <Block paddingBlock="space050" paddingInline="space050">
-      {children}
-    </Block>
+    <Block>{children}</Block>
   </GridLayout>
 );
