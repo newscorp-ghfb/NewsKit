@@ -32,7 +32,7 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
       <PageIntroduction
         type="About"
         name="Contact us"
-        introduction="Have a question about our design system? The NewsKit team is here to help you. "
+        introduction="Have a question about our design system? The NewsKit team is here to help."
         hero={{illustration: 'about/contact-us-hero-illustration'}}
       />
     </PageIntroductionContainer>
@@ -40,10 +40,10 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
     <ComponentPageCell>
       <ContentSection sectionName="slack channel">
         <ContentPrimary
-          headline="Slack Channel"
+          headline="Slack channel"
           description={
             <>
-              The NewsKit team maintains{' '}
+              The NewsKit team maintains the{' '}
               <Link href="https://newsuktechnology.slack.com/archives/CTFGLAK9C">
                 #newskit
               </Link>{' '}
@@ -64,7 +64,7 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
           headline="Contact NewsKit Design System"
           description={
             <>
-              For any enquiries related to to Newskit, please send an email to:{' '}
+              For enquiries related to NewsKit, please email{' '}
               <Link href="mailto:newskit@news.co.uk">newskit@news.co.uk</Link>.
               Our team will respond as quickly as possible.
             </>
@@ -73,10 +73,10 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
       </ContentSection>
       <ContentSection sectionName="contact newsUK">
         <ContentPrimary
-          headline="Contact NewsUK"
+          headline="Contact News UK"
           description={
             <>
-              For any other enquiries related to NewsUK{' '}
+              For enquiries related to News UK{' '}
               <Link href="https://www.news.co.uk/contact-us/" target="_blank">
                 click here.
               </Link>
