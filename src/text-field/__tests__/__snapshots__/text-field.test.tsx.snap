@@ -97,8 +97,19 @@ exports[`TextField renders TextField Correctly 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -111,8 +122,19 @@ exports[`TextField renders TextField Correctly 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
@@ -238,8 +260,19 @@ Object {
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -252,8 +285,19 @@ Object {
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
@@ -511,8 +555,19 @@ Object {
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -525,8 +580,19 @@ Object {
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
@@ -1088,8 +1154,19 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -1102,8 +1179,19 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
@@ -1286,8 +1374,19 @@ exports[`TextField renders disabled text field 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -1300,8 +1399,19 @@ exports[`TextField renders disabled text field 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
@@ -1554,8 +1664,19 @@ exports[`TextField renders large TextField 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -1568,8 +1689,19 @@ exports[`TextField renders large TextField 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
@@ -1690,8 +1822,19 @@ exports[`TextField renders medium TextField 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -1704,8 +1847,19 @@ exports[`TextField renders medium TextField 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
@@ -1826,8 +1980,19 @@ exports[`TextField renders small TextField 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -1840,8 +2005,19 @@ exports[`TextField renders small TextField 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
@@ -1962,8 +2138,19 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -1976,8 +2163,19 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
@@ -2229,8 +2427,19 @@ exports[`TextField should render custom placeholder 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -2243,8 +2452,19 @@ exports[`TextField should render custom placeholder 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
