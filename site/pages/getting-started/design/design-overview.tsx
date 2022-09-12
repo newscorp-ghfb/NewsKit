@@ -28,9 +28,9 @@ const PRINCIPLE_CARDS = [
     media: () => (
       <Illustration path="guides/design-overview/design-made-easy" />
     ),
-    title: 'Design made easy',
+    title: 'Ease of use',
     description:
-      'NewsKit makes it simple to design experiences that are not only aesthetically pleasing, but that are fully responsive, promote accessibility and align to the components in code. NewsKit allows designers to free up time to concentrate on the important stuff - like the end user experience!',
+      'NewsKit makes it simple to design beautiful, responsive, accessible experiences that align to the components in code - so you can concentrate on your users.',
     stylePrefix: 'featureCard',
     overrides: featureCardOverrides,
   },
@@ -41,8 +41,7 @@ const PRINCIPLE_CARDS = [
     title: 'Complete flexibility',
     description: (
       <>
-        NewsKit is fully customisable, with the flexibility to apply a single
-        brand, or sub-brands style, with an extensive{' '}
+        NewsKit is fully customisable, with a powerful{' '}
         <Link
           overrides={{stylePreset: 'inkInverse'}}
           href="https://www.figma.com/file/oSjjLxC27fa6Jh6AHM7ja9/NK-NewsKit-Theme?node-id=1%3A393"
@@ -50,8 +49,8 @@ const PRINCIPLE_CARDS = [
         >
           theming system
         </Link>
-        . Additionally the Figma components have a range of variants and layer
-        options to allow for further cutomisation.
+        that gives you the flexibility to apply a single brand or sub-brand, and
+        Figma components that have variants and layer options.
       </>
     ),
     stylePrefix: 'featureCard',
@@ -64,7 +63,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Design overview | Newskit design system',
       description:
-        'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
+        'NewsKit has everything you need to build scalable digital products, including Figma component libraries, theme libraries, plugins and guidance.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -73,7 +72,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'guides/design-overview/hero',
       },
-      introduction: `NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.`,
+      introduction: `NewsKit has everything you need to build scalable digital products, including Figma component libraries, theme libraries, plugins and guidance.`,
     }}
     featureCard={{
       title: 'Need help?',
@@ -86,8 +85,8 @@ const DesignOverview = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="why"
           toc="Why?"
-          headline="Why use NewsKit for design?"
-          description="Systems thinking is at the core of digital product design. NewsKit improves design consistency and developer efficiency across teams with considered, reusable solutions, and shared best practices. The result is more robust products and more time for innovation."
+          headline="Why design products with NewsKit?"
+          description="NewsKit improves consistency and efficiency across teams with considered, reusable solutions and shared best practices - creating more robust and innovative products."
           showSeparator
         >
           <MediaList
@@ -102,7 +101,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
           id="whats-included"
           toc="What’s included?"
           headline="What’s included?"
-          description="NewsKit provides shared Figma libraries to assist the product design process, these include:"
+          description="NewsKit provides shared Figma libraries to help your product design process, including:"
           showSeparator
         >
           <MediaList
@@ -113,15 +112,15 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 title: 'Theme library',
                 description: (
                   <>
-                    An advanced full-featured theming system containing brand
-                    styles that can be used and synced across files, including
-                    palettes and colours, typography, shadows and grids.
+                    A powerful theming system containing brand styles that you
+                    can use and sync across files, including palettes and
+                    colours, typography, shadows and grids.
                     <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/file/3l0UDvk1l2vsXpbtWlYWoP/%F0%9F%9F%A2-NK-NewsKit-Theme"
                       target="_blank"
                     >
-                      View theme library in Figma (internal only)
+                      View theme library (internal only)
                     </Link>
                   </>
                 ),
@@ -133,14 +132,14 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 title: 'Web components library',
                 description: (
                   <>
-                    A collection of high-quality responsive components that can
-                    be themed to align to any brand.
+                    A collection of responsive components that you can theme to
+                    your brand.
                     <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/NK-Web-Components?node-id=1%3A393"
                       target="_blank"
                     >
-                      View Web components library in Figma (internal only)
+                      View web components library (internal only)
                     </Link>
                   </>
                 ),
@@ -152,19 +151,18 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 title: 'Icon library',
                 description: (
                   <>
-                    An extensive set of categorised icons that contain both
-                    filled and outlined styles, which can be customised or added
-                    to as required. The icon libraries in the design system use{' '}
+                    A set of{' '}
                     <Link href="https://fonts.google.com/icons" target="_blank">
-                      Material Icons
+                      Material icons
                     </Link>
-                    .
+                    containing both filled and outlined styles, that you can
+                    customise or add to as required.
                     <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/file/jHs7EB68a57xVA3NKmMbgy/NK-Icons?node-id=1%3A12626"
                       target="_blank"
                     >
-                      View Icon library in Figma (internal only)
+                      View icon library (internal only)
                     </Link>
                   </>
                 ),
@@ -176,16 +174,15 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 title: 'Utilities library',
                 description: (
                   <>
-                    A host of utility components to aid in the speed and
-                    consistency of design deliverables and to improve workflow,
-                    including annotations, cursors, device mockups,
-                    accessibility labelling, and more.
+                    A host of utility components to improve your workflow and
+                    make delivery fast and consistent. Includes annotations,
+                    cursors, device mockups and accessibility labels.
                     <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/file/Q3OTJ4RZWJGTCaWuS8sWsL/NK-Utilities?node-id=0%3A1"
                       target="_blank"
                     >
-                      View Utilities library in Figma (internal only)
+                      View utilities library (internal only)
                     </Link>
                   </>
                 ),
@@ -202,7 +199,8 @@ const DesignOverview = (layoutProps: LayoutProps) => (
           id="architecture"
           toc="Architecture"
           headline="NewsKit Figma library architecture"
-          description="Below is an example of how it is recommended to link Figma libraries to get the best out of the NewsKit Design System. This ensures that whenever the NewsKit Design System is updated, designs utilising this can automatically receive updates and enables contributing to the NewsKit Design System."
+          description="Receive updates, contribute to the community and get the best out of NewsKit
+          by linking your Figma libraries like this:"
           showSeparator
         >
           <Illustration path="guides/design-overview/example-architecture" />
@@ -213,7 +211,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
           id="plugins"
           toc="Plugins"
           headline="Custom Figma plugins"
-          description="NewsKit provides custom Figma plugins to improve the design process workflow, these include:"
+          description="We've developed a range of custom Figma plugins to help improve your workflow, including:"
           showSeparator
         >
           <MediaList
@@ -221,19 +219,18 @@ const DesignOverview = (layoutProps: LayoutProps) => (
             cardsLayout="horizontal"
             cards={[
               {
-                title: 'Theme Swapper plugin',
+                title: 'Theme swapper plugin',
                 description: (
                   <>
-                    A Figma plugin that provides functionality to change themes
-                    across UI components and elements. For example, switching
-                    between light and dark themes, sub-themes, or different
-                    visual fidelities.
+                    Change themes across UI components and elements (e.g.
+                    switching between light and dark themes, sub-themes or
+                    different visual fidelities).
                     <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/community/plugin/968555028114672265/NK---Theme-Swapper"
                       target="_blank"
                     >
-                      View Theme Swapper Figma plugin (internal only)
+                      View theme swapper plugin (internal only)
                     </Link>
                   </>
                 ),
@@ -242,19 +239,16 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
               },
               {
-                title: 'Text Crop plugin',
+                title: 'Text crop plugin',
                 description: (
                   <>
-                    A Figma plugin that removes the whitespace around text
-                    boxes, removing extra leading (space) above and below your
-                    text. This ensures consistent and predictable layout
-                    designs.
+                    Remove unwanted whitespace around text boxes.
                     <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/community/plugin/951930713294228024/Text-Crop"
                       target="_blank"
                     >
-                      View Text Crop Figma plugin
+                      View text crop plugin
                     </Link>
                   </>
                 ),
@@ -263,18 +257,17 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
               },
               {
-                title: 'Theme Exporter plugin',
+                title: 'Theme exporter plugin',
                 description: (
                   <>
-                    A Figma plugin that provides functionality to export NewsKit
-                    design tokens in JSON format from Figma styles to use with
-                    the NewsKit codebase.
+                    Export NewsKit design tokens in JSON format from Figma
+                    styles to use with the NewsKit codebase.
                     <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/community/plugin/934126878505200119/NK---Theme-Exporter"
                       target="_blank"
                     >
-                      View Theme Exporter Figma plugin (internal only)
+                      View theme exporter plugin (internal only)
                     </Link>
                   </>
                 ),
@@ -291,7 +284,8 @@ const DesignOverview = (layoutProps: LayoutProps) => (
           id="templates"
           toc="Templates"
           headline="Project template files"
-          description="NewsKit provides template Figma files to kickstart design processes, helping to develop a consistent workflow, these include:"
+          description="Kickstart your design process, and develop a consistent workflow, with NewsKit's 
+          template Figma files:"
           showSeparator
         >
           <MediaList
@@ -302,15 +296,14 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 title: 'UX project template file',
                 description: (
                   <>
-                    A Figma file that provides a template structure for
-                    UX-focused projects. This template includes personas, user
-                    journeys, competitor analysis, and more.
+                    A template structure for UX-focussed projects. Includes
+                    personas, user journeys and competitor analysis.
                     <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/file/uMSITiPijbFBVQl09zzVHm/%5BProduct%2FBrand-Name%5D-UX-project-template?node-id=0%3A1"
                       target="_blank"
                     >
-                      View the UX project template file in Figma (internal only)
+                      View UX project template file (internal only)
                     </Link>
                   </>
                 ),
@@ -322,15 +315,14 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 title: 'UI project template file',
                 description: (
                   <>
-                    A Figma file that provides a template structure for
-                    UI-focused projects. This template includes a playground,
-                    prototype, handoff, and more.
+                    A template structure for UI-focussed projects. Includes a
+                    playground, prototype and handoff.
                     <Block spaceStack="space050" />
                     <Link
                       href="https://www.figma.com/file/BcPZjnYcouOOAdDVrt6H95/%5BProduct%2FBrand-Name%5D-UI-project-template?node-id=0%3A1"
                       target="_blank"
                     >
-                      View the UI project template file in Figma (internal only)
+                      View UI project template file (internal only)
                     </Link>
                   </>
                 ),
@@ -347,7 +339,8 @@ const DesignOverview = (layoutProps: LayoutProps) => (
           id="guidance"
           toc="Guidance"
           headline="Guidance"
-          description="NewsKit provides comprehensive documentation and guidelines covering a variety of areas for a better understanding of how to get the best out of the NewsKit design system, these include:"
+          description="Get the best out of NewsKit with comprehensive, easy-to-follow documentation 
+          and guidelines, including:"
           showSeparator
         >
           <MediaList
@@ -355,17 +348,17 @@ const DesignOverview = (layoutProps: LayoutProps) => (
             cardsLayout="horizontal"
             cards={[
               {
-                title: 'NewsKit Components guidance',
+                title: 'Components guidance',
                 description: (
                   <>
-                    Guidance for all NewsKit web components. This includes
-                    details on the anatomy, variants, usage, and more.
+                    Guidance for all web components. Includes details on
+                    anatomy, variants and usage.
                     <Block spaceStack="space050" />
                     <Link
                       href="https://www.newskit.co.uk/components/overview/"
                       target="_blank"
                     >
-                      View NewsKit Components guidance{' '}
+                      View components guidance{' '}
                     </Link>
                   </>
                 ),
@@ -374,18 +367,17 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
               },
               {
-                title: 'NewsKit Patterns guidance',
+                title: 'Patterns guidance',
                 description: (
                   <>
-                    Guidance for solving common user problems in a consistent,
-                    considered way. For example, best practices for onboarding
-                    to a product or feature.
+                    Guidance for solving common problems (e.g. onboarding users
+                    to a product or feature).
                     <Block spaceStack="space050" />
                     <Link
                       href="https://www.newskit.co.uk/patterns/overview/"
                       target="_blank"
                     >
-                      View NewsKit Patterns guidance
+                      View patterns guidance
                     </Link>
                   </>
                 ),
@@ -394,14 +386,14 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
               },
               {
-                title: 'NewsKit Accessibility guidance',
+                title: 'Accessibility guidance',
                 description: 'Guidance for designing inclusive experiences.',
                 media: getIllustrationComponent(
                   'guides/design-overview/accessibility-guidance',
                 ),
               },
               {
-                title: 'NewsKit Handoff guidance',
+                title: 'Handoff guidance',
                 description: (
                   <>
                     Guidance on how to communicate a design to the product team
@@ -411,7 +403,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       href="https://www.figma.com/proto/kXCrh9MHKAJ878KE2dQOz8/Handoff-Guides---for-engineers-%26-designers?page-id=1%3A544&node-id=275%3A21221&viewport=350%2C48%2C0.13&scaling=min-zoom&starting-point-node-id=275%3A21221&show-proto-sidebar=1&hide-ui=1"
                       target="_blank"
                     >
-                      View NewsKit Handoff guidance (internal only)
+                      View handoff guidance (internal only)
                     </Link>
                   </>
                 ),
