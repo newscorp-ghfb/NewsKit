@@ -1,7 +1,15 @@
 import React from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {withPerformance} from 'storybook-addon-performance';
-
+import {
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  ArgsTable,
+  Stories,
+  PRIMARY_STORY,
+} from '@storybook/addon-docs';
 import {NewsKitProvider, styled, getColorCssFromTheme} from '../src';
 import {getThemeObject} from '../src/test/theme-select-object';
 
@@ -49,9 +57,7 @@ const Background = ({children}) => (
   </BackgroundColor>
 );
 const LimitSizeDecorator = ({children}) => <Container>{children}</Container>;
-const MediaQueryProviderDecorator = ({children}) => (
-  <MediaQueryProvider>{children}</MediaQueryProvider>
-);
+
 const NoDecorator = ({children}) => <>{children}</>;
 
 export const parameters = {
@@ -88,6 +94,17 @@ export const parameters = {
         value: '#e10a0a',
       },
     ],
+  },
+  docs: {
+    page: () => (
+      <>
+        <Title />
+        <Subtitle />
+        <Description />
+        <ArgsTable story={PRIMARY_STORY} />
+        <Stories includePrimary />
+      </>
+    ),
   },
 };
 

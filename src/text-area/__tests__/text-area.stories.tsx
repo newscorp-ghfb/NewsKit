@@ -43,8 +43,6 @@ const textAreaCustomThemeObject: CreateThemeArgs = {
   },
 };
 
-const DOCS_URL = 'https://newskit.co.uk/components/text-area/';
-
 const sizes: TextFieldSize[] = ['small', 'medium', 'large'];
 const states: FormInputState[] = ['valid', 'invalid', 'disabled'];
 const resizes: TextAreaProps['resize'][] = [
@@ -55,7 +53,7 @@ const resizes: TextAreaProps['resize'][] = [
 ];
 
 export const TextAreaSizes = () => (
-  <StorybookPage title="TextArea Sizes" url={DOCS_URL}>
+  <StorybookPage>
     {sizes.map(size => (
       <StorybookCase title={size}>
         <Label size={size}>Label</Label>
@@ -67,7 +65,7 @@ export const TextAreaSizes = () => (
 );
 
 export const TextAreaStates = () => (
-  <StorybookPage title="TextArea States" url={DOCS_URL}>
+  <StorybookPage>
     <StorybookCase title="Base">
       <Label>Label</Label>
       <TextArea placeholder="Placeholder" />
@@ -94,7 +92,7 @@ export const TextAreaStates = () => (
 );
 
 export const TextAreaWidth = () => (
-  <StorybookPage title="TextArea Width" url={DOCS_URL}>
+  <StorybookPage>
     <StorybookCase title="default (100%)">
       <Label>Label</Label>
       <TextArea placeholder="Placeholder" />
@@ -110,7 +108,7 @@ export const TextAreaWidth = () => (
 );
 
 export const TextAreaHeight = () => (
-  <StorybookPage title="TextArea Height" url={DOCS_URL}>
+  <StorybookPage>
     <StorybookCase title="default">
       <Label>Label</Label>
       <TextArea placeholder="Placeholder" />
@@ -126,7 +124,7 @@ export const TextAreaHeight = () => (
 );
 
 export const TextAreaResize = () => (
-  <StorybookPage title="TextArea resize" url={DOCS_URL}>
+  <StorybookPage>
     {resizes.map(resize => (
       <StorybookCase title={resize as string}>
         <Label>Label</Label>
@@ -138,7 +136,7 @@ export const TextAreaResize = () => (
 );
 
 export const TextAreaRowsAndCols = () => (
-  <StorybookPage title="TextArea cols and rows" url={DOCS_URL}>
+  <StorybookPage>
     <StorybookCase title="cols and rows">
       <Label>Label</Label>
       <TextArea
@@ -153,7 +151,7 @@ export const TextAreaRowsAndCols = () => (
 );
 
 export const TextAreaOverrides = () => (
-  <StorybookPage title="TextArea overrides" url={DOCS_URL}>
+  <StorybookPage>
     <StorybookCase title="style">
       <Label>Label</Label>
       <TextArea
@@ -192,7 +190,7 @@ export const TextAreaOverrides = () => (
 );
 
 export const TextAreaValidation = () => (
-  <StorybookPage title="TextArea validation" url={DOCS_URL}>
+  <StorybookPage>
     <StorybookCase title="Form validation">
       <Form onSubmit={() => console.log('Form submitted')}>
         <FormInput
@@ -215,7 +213,7 @@ export const TextAreaValidation = () => (
 
 export default {
   title: 'NewsKit Light/text-area',
-  component: () => 'None',
+  component: TextArea,
   disabledRules: ['color-contrast'],
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

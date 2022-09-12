@@ -4,7 +4,6 @@ const toPath = _path => path.join(process.cwd(), _path);
 
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
-  // todo: https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#deprecated---static-dir-cli-flag
   addons: [
     '@storybook/addon-links',
     {
