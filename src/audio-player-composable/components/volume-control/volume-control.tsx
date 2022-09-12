@@ -132,7 +132,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   );
 
   const mYVerticalTestComponent = (
-    <StyledBlock overrides={overrides}>
+    <StyledBlock overrides={overrides} id="hello">
       <MuteButton
         volume={volume}
         unMutedVolume={unMutedVolume}
@@ -184,7 +184,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
           disableFocusManagement
           overrides={popoverOverrides}
         >
-          {layout === 'vertical'
+          {layout === 'vertical' && open
             ? mYVerticalTestComponent
             : mYHorizontalTestComponent}
         </Popover>
