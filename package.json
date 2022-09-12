@@ -90,6 +90,7 @@
     "@mdx-js/loader": "^1.5.8",
     "@mdx-js/react": "^1.5.8",
     "@next/mdx": "^9.3.5",
+    "@storybook/addon-docs": "^6.5.10",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-links": "^6.5.9",

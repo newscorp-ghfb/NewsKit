@@ -29,6 +29,15 @@ module.exports = {
         },
       },
     },
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        configureJSX: true,
+        babelOptions: {},
+        sourceLoaderOptions: null,
+        transcludeMarkdown: true,
+      },
+    },
   ],
   // https://github.com/storybookjs/storybook/issues/13277
   // Remove Emotion aliases once the issue above is resolved
