@@ -466,6 +466,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       components: [
         {
+          title: 'Popover',
           propsSummary:
             'The Popover has a range of props that can be used to define an appropriate experience for different use cases.',
           overridesSummary:

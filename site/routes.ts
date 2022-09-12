@@ -569,7 +569,7 @@ export default [
             page: true,
             id: '/components/audio-player',
             description:
-              'Used to embed sound content in web and app interfaces.',
+              'The audio player component allows a user to play and control the playback of live and recorded audio content.',
             illustration: 'components/audio-player-illustration',
           },
           {
@@ -716,7 +716,7 @@ export default [
             page: true,
             id: '/components/text-block',
             description:
-              'A paragraph, which can be used to summarize any text content.',
+              'Text block provides a simple way to display text. It supports text cropping, style presets, and typography presets.',
             illustration: 'components/text-block-illustration',
           },
           {

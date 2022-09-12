@@ -1125,7 +1125,6 @@ exports[`Select in Modal render Select with overrides props 1`] = `
         data-testid="select-button"
         id="downshift-0-toggle-button"
         type="button"
-        width="100%"
       >
         <div
           class="emotion-3"
@@ -2602,7 +2601,6 @@ exports[`Select renders Select with logical props 1`] = `
   color: #3B3B3B;
   text-overflow: ellipsis;
   margin-inline: 40px;
-  padding-block: 20px;
 }
 
 .emotion-0 svg {
@@ -2688,6 +2686,7 @@ exports[`Select renders Select with logical props 1`] = `
   overflow: hidden;
   cursor: pointer;
   padding: 8px;
+  padding-block: 20px;
 }
 
 .emotion-3 {
