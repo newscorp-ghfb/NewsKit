@@ -469,6 +469,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       components: [
         {
+          title: 'Modal',
           propsSummary:
             'The Modal has a range of props that can be used to define an appropriate experience for different use cases.',
           overridesSummary:

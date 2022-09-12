@@ -5,7 +5,7 @@ export interface ComponentAPIProps {
 }
 
 export interface SingleComponentAPIProps {
-  title?: string;
+  title: string; // title needs to be manadatory and unique for event tracking purposes
   summary?: string | JSX.Element;
   propsSummary?: string;
   argsSummary?: string;
