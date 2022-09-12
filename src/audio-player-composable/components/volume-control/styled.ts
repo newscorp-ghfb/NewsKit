@@ -61,6 +61,17 @@ export const StyledGridLayout = styled(GridLayout)<
   )};
 `;
 
+export const StyledBlock = styled.div<
+  Pick<AudioPlayerVolumeControlProps, 'overrides'>
+>`
+  ${getResponsiveSpace(
+    'paddingBlock',
+    `audioPlayerVolumeControl.distance`,
+    '',
+    'distance',
+  )};
+`;
+
 export const VolumeControlContainer = styled.div<
   Pick<AudioPlayerVolumeControlProps, 'layout'>
 >``;

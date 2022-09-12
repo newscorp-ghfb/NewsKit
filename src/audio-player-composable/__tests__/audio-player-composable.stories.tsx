@@ -1253,7 +1253,12 @@ export const AudioPlayerVolumeControlLayout = () => (
       <AudioPlayerVolumeControl layout="collapsed" />
 
       <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
-      <AudioPlayerVolumeControl layout="vertical" />
+      <AudioPlayerVolumeControl
+        layout="vertical"
+        // overrides={{
+        //   distance: 'space000',
+        // }}
+      />
     </AudioPlayerComposable>
   </StyledPage>
 );

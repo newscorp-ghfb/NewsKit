@@ -12,6 +12,7 @@ export interface AudioPlayerVolumeControlOverridesProps {
   stylePreset?: MQ<string>;
   transitionPreset?: TransitionToken | TransitionToken[];
   spaceBetween?: MQ<string>;
+  distance?: string;
   slider?: Omit<SliderOverrideProps, 'track'> & {
     track?: {
       stylePreset?: MQ<string>;

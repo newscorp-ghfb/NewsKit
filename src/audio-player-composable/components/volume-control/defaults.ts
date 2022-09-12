@@ -1,7 +1,7 @@
 export default {
   audioPlayerVolumeControl: {
     transitionPreset: 'widthChange',
-    spaceBetween: 'space030',
+    distance: 'space050',
     slider: {
       track: {
         stylePreset: 'audioPlayerVolumeControlTrack',

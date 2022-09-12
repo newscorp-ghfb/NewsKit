@@ -12,6 +12,7 @@ import stylePresets from './style-presets';
 import {AudioPlayerVolumeControlProps} from './types';
 import {GridLayoutItem} from '../../../grid-layout';
 import {
+  StyledBlock,
   StyledGridLayout,
   StyledVolumeSliderContainer,
   StyledVolumeSliderPopupContainer,
@@ -130,6 +131,29 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
     />
   );
 
+  const mYVerticalTestComponent = (
+    <StyledBlock overrides={overrides}>
+      <MuteButton
+        volume={volume}
+        unMutedVolume={unMutedVolume}
+        onChange={onChange}
+        size={muteButtonSize || 'medium'}
+        muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
+        overrides={buttonOverrides}
+      />
+    </StyledBlock>
+  );
+  const mYHorizontalTestComponent = (
+    <MuteButton
+      volume={volume}
+      unMutedVolume={unMutedVolume}
+      onChange={onChange}
+      size={muteButtonSize || 'medium'}
+      muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
+      overrides={buttonOverrides}
+    />
+  );
+
   const popoverOverrides = getPopoverOverrides(theme, overrides);
 
   return (
@@ -160,14 +184,9 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
           disableFocusManagement
           overrides={popoverOverrides}
         >
-          <MuteButton
-            volume={volume}
-            unMutedVolume={unMutedVolume}
-            onChange={onChange}
-            size={muteButtonSize || 'medium'}
-            muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
-            overrides={buttonOverrides}
-          />
+          {layout === 'vertical'
+            ? mYVerticalTestComponent
+            : mYHorizontalTestComponent}
         </Popover>
       </GridLayoutItem>
       {useSliderContainer && (
