@@ -114,6 +114,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     A powerful theming system containing brand styles that you
                     can use and sync across files, including palettes and
                     colours, typography, shadows and grids.
+                    <br />
                     <Link
                       href="https://www.figma.com/file/3l0UDvk1l2vsXpbtWlYWoP/%F0%9F%9F%A2-NK-NewsKit-Theme"
                       target="_blank"
@@ -156,6 +157,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     </Link>
                     containing both filled and outlined styles, that you can
                     customise or add to as required.
+                    <br />
                     <Link
                       href="https://www.figma.com/file/jHs7EB68a57xVA3NKmMbgy/NK-Icons?node-id=1%3A12626"
                       target="_blank"
@@ -176,6 +178,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     A host of utility components to improve your workflow and
                     make delivery fast and consistent. Includes annotations,
                     cursors, device mockups and accessibility labels.
+                    <br />
                     <Link
                       href="https://www.figma.com/file/Q3OTJ4RZWJGTCaWuS8sWsL/NK-Utilities?node-id=0%3A1"
                       target="_blank"
@@ -242,6 +245,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     Remove unwanted whitespace around text boxes.
+                    <br />
                     <Link
                       href="https://www.figma.com/community/plugin/951930713294228024/Text-Crop"
                       target="_blank"
@@ -261,6 +265,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                   <>
                     Export NewsKit design tokens in JSON format from Figma
                     styles to use with the NewsKit codebase.
+                    <br />
                     <Link
                       href="https://www.figma.com/community/plugin/934126878505200119/NK---Theme-Exporter"
                       target="_blank"
@@ -297,6 +302,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                   <>
                     A template structure for UX-focussed projects. Includes
                     personas, user journeys and competitor analysis.
+                    <br />
                     <Link
                       href="https://www.figma.com/file/uMSITiPijbFBVQl09zzVHm/%5BProduct%2FBrand-Name%5D-UX-project-template?node-id=0%3A1"
                       target="_blank"
@@ -316,6 +322,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                   <>
                     A template structure for UI-focussed projects. Includes a
                     playground, prototype and handoff.
+                    <br />
                     <Link
                       href="https://www.figma.com/file/BcPZjnYcouOOAdDVrt6H95/%5BProduct%2FBrand-Name%5D-UI-project-template?node-id=0%3A1"
                       target="_blank"
@@ -352,6 +359,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                   <>
                     Guidance for all web components. Includes details on
                     anatomy, variants and usage.
+                    <br />
                     <Link
                       href="https://www.newskit.co.uk/components/overview/"
                       target="_blank"
@@ -371,6 +379,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                   <>
                     Guidance for solving common problems (e.g. onboarding users
                     to a product or feature).
+                    <br />
                     <Link
                       href="https://www.newskit.co.uk/patterns/overview/"
                       target="_blank"
@@ -397,6 +406,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                   <>
                     Guidance on how to communicate a design to the product team
                     for engineers to build.
+                    <br />
                     <Link
                       href="https://www.figma.com/proto/kXCrh9MHKAJ878KE2dQOz8/Handoff-Guides---for-engineers-%26-designers?page-id=1%3A544&node-id=275%3A21221&viewport=350%2C48%2C0.13&scaling=min-zoom&starting-point-node-id=275%3A21221&show-proto-sidebar=1&hide-ui=1"
                       target="_blank"
