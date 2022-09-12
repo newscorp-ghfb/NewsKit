@@ -8,6 +8,7 @@ import {
 const handlers = [
   instrumentationHandlers.createConsoleHandler(),
   instrumentationHandlers.createTealiumHandler(),
+  instrumentationHandlers.createTealiumTrackHandler(),
 ];
 
 const contextObject = {
