@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {newskitLightTheme, InlineMessage, P, UnorderedList} from 'newskit';
+import {newskitLightTheme, InlineMessage, UnorderedList} from 'newskit';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
 import {
   ContentSection,
@@ -228,19 +228,23 @@ const Motion = (layoutProps: LayoutProps) => (
         >
           <UnorderedList
             markerAlign="start"
-            overrides={{spaceStack: 'space040'}}
+            overrides={{
+              spaceStack: 'space040',
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
+            }}
           >
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            <>
               If motion plays an extensive role in your product’s experience,
               offer an option to reduce motion to improve usability for people
               who could be adversely affected by motion on screens.
-            </P>
-
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            </>
+            <>
               Always consider the needs of people who are sensitive to motion.
               Consider avoiding large, abrupt movements, or moving multiple
               objects at the same time in different directions.
-            </P>
+            </>
           </UnorderedList>
         </ContentPrimary>
 

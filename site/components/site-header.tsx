@@ -7,42 +7,42 @@ import {
   getColorCssFromTheme,
   getSpacingCssFromTheme,
   getSizingCssFromTheme,
-  Button,
-  ButtonSize,
   getBorderCssFromTheme,
   MenuItem,
   Menu,
   GridLayout,
   IconButton,
   toNewsKitIcon,
+  Button,
 } from 'newskit';
 import {Menu as FilledMenu} from '@emotion-icons/material/Menu';
 import {Close as FilledClose} from '@emotion-icons/material/Close';
-
+import LinkNext from 'next/link';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
 import routes from '../routes';
 import {Link} from './link';
-import {IconFilledGitHub} from './icons/icon-filled-github';
+import {Search} from './search';
+import {IconFilledGitHub} from './icons';
 
 const IconFilledMenu = toNewsKitIcon(FilledMenu);
 const IconFilledClose = toNewsKitIcon(FilledClose);
 
-export const GitHubButton: React.FC<{href?: string}> = () => (
+export const GitHubButton = () => (
   <Button
-    size={ButtonSize.Small}
+    size="small"
     overrides={{
       typographyPreset: 'utilityButton010',
       stylePreset: 'buttonOutlinedSecondary',
       minWidth: '130px',
-      height: '30px',
+      height: '40px',
     }}
     href="https://github.com/newscorp-ghfb/newskit"
     target="_blank"
   >
     <IconFilledGitHub />
-    View Github
+    View GitHub
   </Button>
 );
 
@@ -89,7 +89,7 @@ type NavItemProps = {
 
 const navItems = routes.map(({title, subNav}) => ({title, id: subNav[0].id}));
 const siteheaderAreas = `
-logo menu  github theme 
+logo menu search github theme
  `;
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
@@ -120,21 +120,25 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
-        <MenuItem
-          data-testid="styled-indicator"
-          key={id}
-          href={id.substring(1)}
-          size="small"
-          selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
-          overrides={{
-            stylePreset: 'linkTopNavigation',
-            minHeight: '80px',
-            marginInline: '10px',
-            paddingInline: {lg: '3px', xl: '16px'},
-          }}
-        >
-          {title}
-        </MenuItem>
+        <React.Fragment key={id}>
+          <LinkNext href={id} passHref>
+            <MenuItem
+              data-testid="styled-indicator"
+              key={id}
+              href={id}
+              size="small"
+              selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
+              overrides={{
+                stylePreset: 'linkTopNavigation',
+                minHeight: '80px',
+                marginInline: {lg: '0', xl: '10px'},
+                paddingInline: {lg: '3px', xl: '16px'},
+              }}
+            >
+              {title}
+            </MenuItem>
+          </LinkNext>
+        </React.Fragment>
       ));
 
     return (
@@ -155,11 +159,15 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             >
               <NewsKitLogo />
             </Link>
+            <Search sidebarOpen={sidebarOpen} />
           </GridLayout>
         </Visible>
         <Visible lg xl>
           <GridLayout
-            columns={{lg: '276px 1fr auto 80px'}}
+            columns={{
+              lg: 'auto 1fr auto auto 80px',
+              xl: '276px 1fr auto auto 80px',
+            }}
             columnGap="20px"
             alignItems="center"
             areas={{
@@ -179,12 +187,15 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                     {renderNavItems(navItems, path)}
                   </Menu>
                 </Areas.Menu>
+                <Areas.Search>
+                  <Search />
+                </Areas.Search>
                 <Areas.Github>
-                  <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
+                  <GitHubButton />
                 </Areas.Github>
                 <Areas.Theme>
                   <ThemeSwitch
-                    size={ButtonSize.Medium}
+                    size="medium"
                     toggle={toggleTheme}
                     themeMode={themeMode}
                   />

@@ -1,5 +1,7 @@
 node_modules
 build
 lcov-report
-src/transforms/__tests__/**/expected.js
-src/transforms/__tests__/**/actual.js
+
+src/transforms/__tests__/**/actual*.js
+src/transforms/__tests__/**/expected*.js
+

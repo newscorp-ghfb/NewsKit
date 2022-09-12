@@ -1,5 +1,5 @@
 import React from 'react';
-import {fireEvent} from '@testing-library/react';
+import {fireEvent, act} from '@testing-library/react';
 import {renderWithTheme, applyAsyncStyling} from '../../test/test-utils';
 import {Tooltip, TooltipProps} from '..';
 import {TriggerType} from '../types';
@@ -318,15 +318,16 @@ describe('Tooltip', () => {
   });
 
   describe('with different triggers:', () => {
-    test('opens on mouseover by default', () => {
+    test('opens on mouseover by default', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
       });
       const button = getByRole('button');
       fireEvent.mouseEnter(button);
+      await applyAsyncStyling();
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
     });
-    test('closes on mouseleave', () => {
+    test('closes on mouseleave', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
       });
@@ -334,18 +335,20 @@ describe('Tooltip', () => {
 
       fireEvent.mouseEnter(button);
       fireEvent.mouseLeave(button);
+      await applyAsyncStyling();
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
-    test('opens on focus by default', () => {
+    test('opens on focus by default', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
       });
       const button = getByRole('button');
       fireEvent.focus(button);
+      await applyAsyncStyling();
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
     });
 
-    test('closes on blur', () => {
+    test('closes on blur', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         trigger: 'focus' as TriggerType,
@@ -353,22 +356,25 @@ describe('Tooltip', () => {
       const button = getByRole('button');
       fireEvent.focus(button);
       fireEvent.blur(button);
+      await applyAsyncStyling();
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
 
-    test('will not open on focus when focus trigger is not passed', () => {
+    test('will not open on focus when focus trigger is not passed', async () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         trigger: 'hover',
       });
       const button = getByRole('button');
       fireEvent.focus(button);
+      await applyAsyncStyling();
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
 
-    test('dismisses with escape key', () => {
+    test('dismisses with escape key', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Tooltip, defaultProps);
       fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
       fireEvent.keyDown(document.body, {key: 'Escape'});
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
@@ -376,38 +382,46 @@ describe('Tooltip', () => {
   });
 
   describe('pass the correct a11y attributes:', () => {
-    test('have role tooltip when used as a description', () => {
+    test('have role tooltip when used as a description', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Tooltip, defaultProps);
       fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
     });
-    test('do not have role tooltip when used as a label', () => {
+    test('do not have role tooltip when used as a label', async () => {
       const {queryByRole, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         asLabel: true,
       });
       fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
-    test('can describe the child when open and remove aria attribute when closed', () => {
+    test('can describe the child when open and remove aria attribute when closed', async () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
       });
       const button = getByRole('button');
+      expect(button.hasAttribute('aria-describedby')).toBe(false);
       fireEvent.mouseEnter(button);
+      await applyAsyncStyling();
       expect(button.hasAttribute('aria-describedby')).toBe(true);
-      fireEvent.mouseLeave(button);
+      fireEvent.mouseLeave(getByRole('button'));
       expect(button.hasAttribute('aria-describedby')).toBe(false);
     });
-    test('can describe with exotic content when open and remove aria attribute when closed', () => {
+    test('can describe with exotic content when open and remove aria attribute when closed', async () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         content: <div>the content</div>,
       });
       const button = getByRole('button');
-      fireEvent.mouseEnter(button);
+      await act(() => {
+        fireEvent.mouseEnter(button);
+      });
       expect(button.hasAttribute('aria-describedby')).toBe(true);
-      fireEvent.mouseLeave(button);
+      await act(() => {
+        fireEvent.mouseLeave(button);
+      });
       expect(button.hasAttribute('aria-describedby')).toBe(false);
     });
     test('should label the child when closed', () => {
@@ -418,7 +432,7 @@ describe('Tooltip', () => {
       const button = getByRole('button');
       expect(button.hasAttribute('aria-label')).toBe(true);
     });
-    test('should label the child when open with an exotic content', () => {
+    test('should label the child when open with an exotic content', async () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         content: <div>the content</div>,
@@ -426,7 +440,9 @@ describe('Tooltip', () => {
       });
       const button = getByRole('button');
       expect(button.hasAttribute('aria-labelledby')).toBe(false);
-      fireEvent.mouseEnter(button);
+      await act(() => {
+        fireEvent.mouseEnter(button);
+      });
       expect(button.hasAttribute('aria-labelledby')).toBe(true);
     });
   });
@@ -439,7 +455,7 @@ describe('Tooltip', () => {
       'When passing a component with disabled prop to Tooltip please remember to use a wrapper element, such as a span.',
     );
   });
-  test('should be controllable', () => {
+  test('should be controllable', async () => {
     const Component = () => {
       const [open, setOpen] = React.useState(false);
       return (
@@ -457,7 +473,9 @@ describe('Tooltip', () => {
     const {getByTestId, queryByRole} = renderWithTheme(Component);
 
     const button = getByTestId('outside-control');
-    fireEvent.click(button);
+    await act(() => {
+      fireEvent.click(button);
+    });
     expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
   });
 });

@@ -1,24 +1,18 @@
 import * as React from 'react';
-import {GridLayout, styled, TextBlock} from 'newskit';
+import {GridLayout} from 'newskit';
 import Layout, {LayoutProps} from '../components/layout';
-import {Hero} from '../components/homepage';
+import {
+  Hero,
+  KeepInTouch,
+  SupportedBrands,
+  Explore,
+  WhatsNew,
+} from '../components/homepage';
 import {GridLayoutProps} from '../../src/grid-layout/types';
-
-const Placeholder: React.FC = ({children}) => (
-  <TextBlock
-    as="span"
-    stylePreset="inkContrast"
-    typographyPreset="editorialLabel010"
-  >
-    {children}
-  </TextBlock>
-);
-
-// Placeholder box
-const GridBox = styled.div`
-  padding: 10px;
-  border: 1px solid orange;
-`;
+import {FeatureCard} from '../components/feature-card';
+import {fetchGitHubReleases} from '../utils/release-notes/functions';
+import {Release, ReleasesPageProps} from '../utils/release-notes/types';
+import {IconFilledLaunch} from '../../src/icons';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -32,45 +26,99 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
-const Index = (layoutProps: LayoutProps) => (
-  <Layout {...layoutProps} newPage hideSidebar path="/index-new">
-    <GridLayout
-      rowGap={{xs: 'space070', md: 'space100'}}
-      overrides={{marginBlockEnd: 'space080'}}
-    >
-      <Hero contentContainerOverrides={GRID_SECTION_OVERRIDES} />
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Banner</Placeholder>
-        </GridBox>
+const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
+  // The World Design Systems Week 2022 banner should hide automatically after the event which is on 19-23 September 2022
+  const eventDateEnd = new Date('2022-09-24');
+  const showEventBanner = new Date() < eventDateEnd;
+
+  return (
+    <Layout {...layoutProps} newPage hideSidebar path="/index-new">
+      <GridLayout
+        rowGap={{xs: 'space070', md: 'space100'}}
+        overrides={{marginBlockEnd: 'space080'}}
+      >
+        <Hero contentContainerOverrides={GRID_SECTION_OVERRIDES} />
+        {showEventBanner && (
+          <GridLayout
+            overrides={{
+              ...GRID_SECTION_OVERRIDES,
+              marginBlockEnd: {xs: 'space080', md: 'space000'},
+            }}
+          >
+            <FeatureCard
+              title="World Design Systems Week 2022"
+              description="19-23 September 2022"
+              stylePrefix="worldDesignSystemsWeekCard"
+              layout="horizontal"
+              overrides={{
+                title: {typographyPreset: 'editorialHeadline060'},
+                description: {typographyPreset: 'editorialSubheadline010'},
+              }}
+              buttonIcon={<IconFilledLaunch />}
+              buttonLabel="Join the community"
+              buttonHref="https://www.designsystemsweek.com/"
+              buttonOverrides={{
+                paddingInline: 'space000',
+                typographyPreset: 'utilityButton020',
+              }}
+            />
+          </GridLayout>
+        )}
+        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+          <Explore />
+        </GridLayout>
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        >
+          <WhatsNew releases={releases} />
+        </GridLayout>
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        >
+          <FeatureCard
+            title="Contribute"
+            description="Join the community and help grow NewsKit for everyone."
+            stylePrefix="contributeCard"
+            layout="horizontal"
+            overrides={{
+              title: {typographyPreset: 'editorialHeadline060'},
+              description: {typographyPreset: 'editorialSubheadline010'},
+            }}
+            buttonLabel="Start contributing"
+            buttonHref="/about/contribute"
+            buttonOverrides={{
+              paddingInline: 'space000',
+              typographyPreset: 'utilityButton020',
+            }}
+          />
+        </GridLayout>
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        >
+          <KeepInTouch />
+        </GridLayout>
+        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
+          <SupportedBrands />
+        </GridLayout>
       </GridLayout>
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Explore</Placeholder>
-        </GridBox>
-      </GridLayout>
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Whats New</Placeholder>
-        </GridBox>
-      </GridLayout>
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Contribute</Placeholder>
-        </GridBox>
-      </GridLayout>
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Keep in touch</Placeholder>
-        </GridBox>
-      </GridLayout>
-      <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-        <GridBox>
-          <Placeholder>Supported brands</Placeholder>
-        </GridBox>
-      </GridLayout>
-    </GridLayout>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default Index;
+
+// This function is called at build time and the response is passed to the page
+// component as props.
+export async function getStaticProps() {
+  const releases: Release[] = await fetchGitHubReleases(4);
+  return {props: {releases}};
+}

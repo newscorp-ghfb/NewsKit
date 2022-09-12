@@ -12,7 +12,6 @@ import {useAudioPlayerContext} from '../../context';
 import {PlaybackSpeedList} from './playback-speed-list';
 import {Popover} from '../../../popover';
 import {iconButtonOverrides, popoverOverrides, modalOverrides} from './utils';
-import {ButtonSize} from '../../../button';
 
 const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
   HTMLHeadingElement,
@@ -26,7 +25,7 @@ const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
     onChange: setSpeed,
     useModal,
     playbackSpeed,
-    buttonSize = ButtonSize.Medium,
+    buttonSize = 'medium',
   } = getPlaybackSpeedControlProps!(props);
 
   const [isOpen, setIsOpen] = useState(false);

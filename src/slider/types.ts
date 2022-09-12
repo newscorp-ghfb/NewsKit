@@ -3,7 +3,7 @@ import {MQ} from '../utils/style';
 import {LogicalProps} from '../utils/logical-properties';
 import {TransitionToken} from '../theme';
 
-type RenderTrackFunction = Range['props']['renderTrack'];
+export type RenderTrackFunction = Range['props']['renderTrack'];
 type RenderThumbFunction = Range['props']['renderThumb'];
 
 export interface SliderOverrideProps extends LogicalProps {
@@ -41,7 +41,7 @@ interface CommonProps {
   values: number[];
   overrides?: SliderOverrideProps;
 }
-type LabelPositionTypes = LabelPosition | 'before' | 'after' | 'inline';
+type LabelPositionTypes = 'before' | 'after' | 'inline';
 export interface StyledTrackProps extends CommonProps {
   dragged: boolean;
   labelPosition?: LabelPositionTypes;
@@ -53,7 +53,9 @@ export interface ThumbLabelProps extends StyledTrackProps {
 }
 
 // see https://github.com/tajo/react-range#range--props
-interface CommonSliderProps extends CommonProps {
+interface CommonSliderProps
+  extends CommonProps,
+    Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
   min: number;
   max: number;
   onFinalChange?: (values: number[]) => void;
@@ -78,10 +80,4 @@ export interface SliderProps extends CommonSliderProps {
 
 export interface StatefulSliderProps extends CommonSliderProps {
   onChange?: (values: number[]) => void;
-}
-
-export enum LabelPosition {
-  Before = 'before',
-  After = 'after',
-  Inline = 'inline',
 }

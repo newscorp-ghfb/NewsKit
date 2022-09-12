@@ -11,7 +11,6 @@ import {ComponentPageBasicTemplate} from '../../templates/component-page-templat
 import {
   AccessibilitySection,
   CommonSection,
-  ComplianceSection,
   ComponentAPISection,
   RelatedComponentsSection,
   SEOSection,
@@ -179,7 +178,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
       introduction="'Visible', 'Hidden' and 'ScreenReaderOnly' have a range of props that can be used to define an appropriate experience for different use cases."
       components={[
         {
-          title: 'Visible Component Props',
+          title: 'Visible',
           summary:
             '‘Visible’ has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
@@ -239,7 +238,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'Hidden Component Props',
+          title: 'Hidden',
           summary:
             '‘Hidden’ has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
@@ -299,7 +298,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'ScreenReaderOnly Component Props',
+          title: 'ScreenReaderOnly',
           summary:
             '‘ScreenReaderOnly’ has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
@@ -324,22 +323,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
         },
       ]}
     />
-    <ComplianceSection usage accessibility seo props />
-    <RelatedComponentsSection
-      related={[
-        'Block',
-        'Card',
-        'Divider',
-        'Drawer',
-        'Fieldset',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Popover',
-        'Stack',
-        'Structured List',
-      ]}
-    />
+    <RelatedComponentsSection related={['Block', 'Grid', 'Stack']} />
   </ComponentPageBasicTemplate>
 );
 

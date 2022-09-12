@@ -1,4 +1,4 @@
-import {CardProps, MQ} from 'newskit';
+import {ButtonProps, CardProps, MQ} from 'newskit';
 
 export interface FeatureCardProps
   extends Omit<CardProps, 'children' | 'layout' | 'overrides'> {
@@ -6,8 +6,10 @@ export interface FeatureCardProps
   description?: string;
   stylePrefix?: string;
   layout?: 'vertical' | 'horizontal';
+  buttonIcon?: React.ReactNode;
   buttonHref?: string;
   buttonLabel?: string;
+  buttonOverrides?: ButtonProps['overrides'];
   overrides?: {
     title?: {
       typographyPreset?: MQ<string>;
@@ -18,7 +20,11 @@ export interface FeatureCardProps
   };
 }
 
-export type OptionalLinkWrapperProps = Pick<CardProps, 'href'>;
-export type OptionalButtonLinkWrapperProps = Pick<CardProps, 'href'> & {
+export type OptionalLinkWrapperProps = Pick<CardProps, 'href' | 'children'>;
+
+export type OptionalButtonLinkWrapperProps = Pick<
+  CardProps,
+  'href' | 'children'
+> & {
   buttonHref?: string;
 };

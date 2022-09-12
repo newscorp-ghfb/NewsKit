@@ -24,7 +24,6 @@ import {calculateTime} from '../components/time-display/utils';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Block} from '../../block';
-import {ButtonSize} from '../../button/types';
 import {Hidden} from '../../grid/visibility';
 import {IconButton} from '../../icon-button';
 import {
@@ -246,7 +245,7 @@ const AudioPlayerFullRecorded = (props: {
               <AudioPlayerVolumeControl
                 layout={
                   breakpointKey === 'xs' || breakpointKey === 'sm'
-                    ? 'horizontalCollapsed'
+                    ? 'collapsed'
                     : 'horizontal'
                 }
               />
@@ -277,7 +276,7 @@ const AudioPlayerFullRecorded = (props: {
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
-                  size={ButtonSize.Medium}
+                  size="medium"
                   aria-label="Open popout player"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
                   onClick={() => {
@@ -347,7 +346,11 @@ const AudioPlayerFullLive = (props: {
 
             <Areas.Volume alignSelf="center" justifySelf="start">
               <AudioPlayerVolumeControl
-                collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+                layout={
+                  breakpointKey === 'xs' || breakpointKey === 'sm'
+                    ? 'collapsed'
+                    : 'horizontal'
+                }
               />
             </Areas.Volume>
 
@@ -364,7 +367,7 @@ const AudioPlayerFullLive = (props: {
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
-                  size={ButtonSize.Medium}
+                  size="medium"
                   aria-label="Open popout player"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
                   onClick={() => {
@@ -399,35 +402,19 @@ const AudioPlayerInlineRecorded = (props: {
         columnGap="space040"
         alignItems="center"
       >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl
-            {...props}
-            layout={
-              breakpointKey === 'xs'
-                ? 'horizontalCollapsed'
-                : 'horizontalExpandable'
-            }
-          />
-        </GridLayoutItem>
-        <GridLayoutItem column="2/3" row="4/5">
-          <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
-        </GridLayoutItem>
-        <GridLayoutItem column="3/4" row="4/5">
-          <AudioPlayerTimeDisplay
-            format={({currentTime}) => calculateTime(currentTime)}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem column="4/5" row="4/5">
-          <AudioPlayerSeekBar />
-        </GridLayoutItem>
-        <GridLayoutItem column="5/6" row="4/5">
-          <AudioPlayerTimeDisplay
-            format={({duration}) => calculateTime(duration)}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem column="6/7" row="4/5">
-          <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}} />
-        </GridLayoutItem>
+        <AudioPlayerVolumeControl
+          {...props}
+          layout={breakpointKey === 'xs' ? 'collapsed' : 'horizontal'}
+        />
+        <AudioPlayerPlayPauseButton size="small" />
+        <AudioPlayerTimeDisplay
+          format={({currentTime}) => calculateTime(currentTime)}
+        />
+        <AudioPlayerSeekBar />
+        <AudioPlayerTimeDisplay
+          format={({duration}) => calculateTime(duration)}
+        />
+        <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}} />
       </GridLayout>
     </AudioPlayerComposable>
   );
@@ -435,12 +422,13 @@ const AudioPlayerInlineRecorded = (props: {
 const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
   <AudioPlayerComposable src={LIVE_AUDIO_SRC} live {...props}>
     <GridLayout
-      columns="auto auto"
+      columns="auto auto auto"
       columnGap="space040"
       alignItems="center"
       justifyContent="flex-start"
     >
-      <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+      <AudioPlayerPlayPauseButton size="small" />
+      <AudioPlayerVolumeControl layout="vertical" muteButtonSize="small" />
       <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
         <IconFilledGraphicEq />
         Live
@@ -457,59 +445,57 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
   const {playbackSpeed} = getPlaybackSpeedControlProps!({});
 
   return (
-    <ThemeProvider theme={myCustomTheme}>
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
-        </GridLayoutItem>
-        <GridLayoutItem column="2/3" row="4/5">
-          <AudioPlayerVolumeControl collapsed />
-        </GridLayoutItem>
-        <GridLayoutItem column="3/4" row="4/5">
-          <AudioPlayerTimeDisplay
-            format={({currentTime}) => calculateTime(currentTime)}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem column="4/5" row="4/5">
-          <AudioPlayerSeekBar />
-        </GridLayoutItem>
-        <GridLayoutItem column="5/6" row="4/5">
-          <AudioPlayerTimeDisplay
-            format={({duration}) => calculateTime(duration)}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem column="6/7" row="4/5">
-          <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}}>
-            {withLeadingIcon ? (
-              <Button
-                overrides={{
-                  stylePreset: 'buttonMinimalPrimary',
-                  minWidth: '90px',
-                }}
-                size={ButtonSize.Medium}
-              >
-                <IconFilledSlowMotionVideo />
-                <span>{playbackSpeed}x</span>
-              </Button>
-            ) : (
-              <Button
-                overrides={{
-                  stylePreset: 'buttonOutlinedSecondary',
-                  minWidth: '52px',
-                }}
-                size={ButtonSize.Small}
-              >
-                <span>{playbackSpeed}x</span>
-              </Button>
-            )}
-          </AudioPlayerPlaybackSpeedControl>
-        </GridLayoutItem>
-      </GridLayout>
-    </ThemeProvider>
+    <GridLayout
+      columns="auto auto 40px 1fr auto auto"
+      columnGap="space040"
+      alignItems="center"
+    >
+      <GridLayoutItem column="1/2" row="1/5">
+        <AudioPlayerPlayPauseButton size="small" />
+      </GridLayoutItem>
+      <GridLayoutItem column="2/3" row="4/5">
+        <AudioPlayerVolumeControl layout="collapsed" />
+      </GridLayoutItem>
+      <GridLayoutItem column="3/4" row="4/5">
+        <AudioPlayerTimeDisplay
+          format={({currentTime}) => calculateTime(currentTime)}
+        />
+      </GridLayoutItem>
+      <GridLayoutItem column="4/5" row="4/5">
+        <AudioPlayerSeekBar />
+      </GridLayoutItem>
+      <GridLayoutItem column="5/6" row="4/5">
+        <AudioPlayerTimeDisplay
+          format={({duration}) => calculateTime(duration)}
+        />
+      </GridLayoutItem>
+      <GridLayoutItem column="6/7" row="4/5">
+        <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}}>
+          {withLeadingIcon ? (
+            <Button
+              overrides={{
+                stylePreset: 'buttonMinimalPrimary',
+                minWidth: '90px',
+              }}
+              size="medium"
+            >
+              <IconFilledSlowMotionVideo />
+              <span>{playbackSpeed}x</span>
+            </Button>
+          ) : (
+            <Button
+              overrides={{
+                stylePreset: 'buttonOutlinedSecondary',
+                minWidth: '52px',
+              }}
+              size="small"
+            >
+              <span>{playbackSpeed}x</span>
+            </Button>
+          )}
+        </AudioPlayerPlaybackSpeedControl>
+      </GridLayoutItem>
+    </GridLayout>
   );
 };
 
@@ -536,112 +522,114 @@ AudioPlayer.storyName = 'audio-player';
 AudioPlayer.parameters = {eyes: {waitBeforeCapture: 5000}};
 
 export const AudioSubComponents = () => (
-  <ThemeProvider theme={myCustomTheme}>
-    <StyledPage>
-      <StorybookHeading>Audio Player - subcomponents</StorybookHeading>
+  <StyledPage>
+    <StorybookHeading>Audio Player - subcomponents</StorybookHeading>
 
-      <AudioPlayerComposable
-        src={AUDIO_SRC}
-        ariaLandmark="audio player time display"
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player time display"
+    >
+      <GridLayout
+        columns="1fr 1fr 1fr"
+        rows="1fr 1fr 1fr 1fr"
+        rowGap="16px"
+        columnGap="20px"
       >
-        <GridLayout
-          columns="1fr 1fr 1fr"
-          rows="1fr 1fr 1fr 1fr"
-          rowGap="16px"
-          columnGap="20px"
-        >
-          <GridLayoutItem>
-            <StorybookSubHeading>currentTime</StorybookSubHeading>
-            <AudioPlayerTimeDisplay
-              format={({currentTime}) => calculateTime(currentTime)}
-            />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>duration</StorybookSubHeading>
-            <AudioPlayerTimeDisplay
-              format={({duration}) => calculateTime(duration)}
-            />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>live</StorybookSubHeading>
-            <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
-              <IconFilledGraphicEq />
-              Live
-            </Flag>
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>default</StorybookSubHeading>
-            <AudioPlayerTimeDisplay />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>Play/Pause</StorybookSubHeading>
-            <AudioPlayerPlayPauseButton
-              onClick={() => console.log('customer click function')}
-            />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>SkipNext</StorybookSubHeading>
-            <AudioPlayerSkipNextButton
-              onClick={() => console.log('on skip Next track')}
-            />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
-            <AudioPlayerSkipPreviousButton
-              onClick={() => console.log('on skip Next track')}
-            />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>Forward</StorybookSubHeading>
-            <AudioPlayerForwardButton />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>Replay</StorybookSubHeading>
-            <AudioPlayerReplayButton />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>Playback Speed (modal)</StorybookSubHeading>
-            <AudioPlayerPlaybackSpeedControl useModal />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>Playback Speed (popover)</StorybookSubHeading>
-            <AudioPlayerPlaybackSpeedControl />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>
-              Playback Speed (custom trigger)
-            </StorybookSubHeading>
-            <AudioPlayerPlaybackSpeedControl>
-              <Button
-                overrides={{stylePreset: 'buttonOutlinedSecondary'}}
-                size={ButtonSize.Small}
-              >
-                Speed
-              </Button>
-            </AudioPlayerPlaybackSpeedControl>
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>Collapsed Volume Control</StorybookSubHeading>
-            <AudioPlayerVolumeControl collapsed />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>Volume Control</StorybookSubHeading>
-            <AudioPlayerVolumeControl />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
-            <VerticalContainer>
-              <AudioPlayerVolumeControl layout="vertical" />
-            </VerticalContainer>
-          </GridLayoutItem>
-          <GridLayoutItem column="1/-1">
-            <StorybookSubHeading>SeekBar</StorybookSubHeading>
-            <AudioPlayerSeekBar />
-          </GridLayoutItem>
-        </GridLayout>
-      </AudioPlayerComposable>
-    </StyledPage>
-  </ThemeProvider>
+        <GridLayoutItem>
+          <StorybookSubHeading>currentTime</StorybookSubHeading>
+          <AudioPlayerTimeDisplay
+            format={({currentTime}) => calculateTime(currentTime)}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>duration</StorybookSubHeading>
+          <AudioPlayerTimeDisplay
+            format={({duration}) => calculateTime(duration)}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>live</StorybookSubHeading>
+          <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
+            <IconFilledGraphicEq />
+            Live
+          </Flag>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>default</StorybookSubHeading>
+          <AudioPlayerTimeDisplay />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Play/Pause</StorybookSubHeading>
+          <AudioPlayerPlayPauseButton
+            onClick={() => console.log('customer click function')}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>SkipNext</StorybookSubHeading>
+          <AudioPlayerSkipNextButton
+            onClick={() => console.log('on skip Next track')}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
+          <AudioPlayerSkipPreviousButton
+            onClick={() => console.log('on skip Next track')}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Forward</StorybookSubHeading>
+          <AudioPlayerForwardButton />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Replay</StorybookSubHeading>
+          <AudioPlayerReplayButton />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Playback Speed (modal)</StorybookSubHeading>
+          <AudioPlayerPlaybackSpeedControl useModal />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Playback Speed (popover)</StorybookSubHeading>
+          <AudioPlayerPlaybackSpeedControl />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>
+            Playback Speed (custom trigger)
+          </StorybookSubHeading>
+          <AudioPlayerPlaybackSpeedControl>
+            <Button
+              overrides={{stylePreset: 'buttonOutlinedSecondary'}}
+              size="small"
+            >
+              Speed
+            </Button>
+          </AudioPlayerPlaybackSpeedControl>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Collapsed Volume Control</StorybookSubHeading>
+          <AudioPlayerVolumeControl layout="collapsed" />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Expanded Volume Control</StorybookSubHeading>
+          <AudioPlayerVolumeControl layout="horizontal-expanded" />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Volume Control</StorybookSubHeading>
+          <AudioPlayerVolumeControl layout="horizontal" />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
+          <VerticalContainer>
+            <AudioPlayerVolumeControl layout="vertical" />
+          </VerticalContainer>
+        </GridLayoutItem>
+        <GridLayoutItem column="1/-1">
+          <StorybookSubHeading>SeekBar</StorybookSubHeading>
+          <AudioPlayerSeekBar />
+        </GridLayoutItem>
+      </GridLayout>
+    </AudioPlayerComposable>
+  </StyledPage>
 );
 AudioSubComponents.storyName = 'audio-sub-components';
 AudioSubComponents.parameters = {eyes: {waitBeforeCapture: 5000}};
@@ -676,7 +664,11 @@ export const AudioPlayerWithInitialProps = () => {
 
               <Areas.Volume alignSelf="center" justifySelf="start">
                 <AudioPlayerVolumeControl
-                  collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+                  layout={
+                    breakpointKey === 'xs' || breakpointKey === 'sm'
+                      ? 'collapsed'
+                      : 'horizontal'
+                  }
                 />
               </Areas.Volume>
 
@@ -708,9 +700,10 @@ AudioPlayerWithInitialProps.parameters = {eyes: {include: false}};
 export const AudioPlayerOverrides = () => {
   const breakpointKey = useBreakpointKey();
   return (
-    <ThemeProvider theme={myCustomTheme}>
-      <StyledPage>
-        <StorybookSubHeading>Audio player with overrides</StorybookSubHeading>
+    <StyledPage>
+      <StorybookSubHeading>Audio player with overrides</StorybookSubHeading>
+
+      <ThemeProvider theme={myCustomTheme}>
         <AudioPlayerComposable
           src={AUDIO_SRC}
           ariaLandmark="audio player overrides"
@@ -783,8 +776,12 @@ export const AudioPlayerOverrides = () => {
 
                 <Areas.Volume alignSelf="center" justifySelf="start">
                   <AudioPlayerVolumeControl
-                    muteButtonSize={ButtonSize.Medium}
-                    collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+                    muteButtonSize="medium"
+                    layout={
+                      breakpointKey === 'xs' || breakpointKey === 'sm'
+                        ? 'collapsed'
+                        : 'horizontal'
+                    }
                     overrides={{
                       stylePreset:
                         'customAudioPlayerVolumeControlHorizontalContainer',
@@ -859,7 +856,7 @@ export const AudioPlayerOverrides = () => {
                 </Areas.TotalTime>
                 <Areas.PlaybackSpeed alignSelf="center">
                   <AudioPlayerPlaybackSpeedControl
-                    buttonSize={ButtonSize.Medium}
+                    buttonSize="medium"
                     overrides={{
                       iconButton: {
                         stylePreset: 'customButtonStylePreset',
@@ -872,7 +869,7 @@ export const AudioPlayerOverrides = () => {
                 <Areas.Link alignSelf="center" justifySelf="end">
                   <Hidden xs sm>
                     <IconButton
-                      size={ButtonSize.Medium}
+                      size="medium"
                       aria-label="Open popout player"
                       href="https://www.newskit.co.uk/"
                       overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
@@ -885,17 +882,23 @@ export const AudioPlayerOverrides = () => {
             )}
           </GridLayout>
         </AudioPlayerComposable>
-        <StorybookSubHeading>
-          Vertical volume control with overrides
-        </StorybookSubHeading>
+      </ThemeProvider>
+      <StorybookSubHeading>
+        Vertical volume control with overrides
+      </StorybookSubHeading>
+
+      <ThemeProvider theme={myCustomTheme}>
         <AudioPlayerComposable
           src={AUDIO_SRC}
           ariaLandmark="audio player vertical volume control overrides"
         >
           <VerticalContainer>
             <AudioPlayerVolumeControl
-              layout="vertical"
-              collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+              layout={
+                breakpointKey === 'xs' || breakpointKey === 'sm'
+                  ? 'collapsed'
+                  : 'vertical'
+              }
               overrides={{
                 stylePreset: 'customAudioPlayerVolumeControlVerticalContainer',
                 spaceBetween: 'space050',
@@ -921,15 +924,16 @@ export const AudioPlayerOverrides = () => {
             />
           </VerticalContainer>
         </AudioPlayerComposable>
-        <StorybookSubHeading>
-          MuteButton Icon Prop Overrides
-        </StorybookSubHeading>
+      </ThemeProvider>
+      <StorybookSubHeading>MuteButton Icon Prop Overrides</StorybookSubHeading>
+
+      <ThemeProvider theme={myCustomTheme}>
         <AudioPlayerComposable
           src={AUDIO_SRC}
           ariaLandmark="audio player mutebutton icon prop overrides"
         >
           <AudioPlayerVolumeControl
-            muteButtonSize={ButtonSize.Medium}
+            muteButtonSize="medium"
             overrides={{
               button: {
                 muteButtonIcon: {
@@ -944,13 +948,15 @@ export const AudioPlayerOverrides = () => {
             }}
           />
         </AudioPlayerComposable>
-        <StorybookSubHeading>MuteButton Icon Overrides</StorybookSubHeading>
+      </ThemeProvider>
+      <StorybookSubHeading>MuteButton Icon Overrides</StorybookSubHeading>
+      <ThemeProvider theme={myCustomTheme}>
         <AudioPlayerComposable
           src={AUDIO_SRC}
           ariaLandmark="audio player mutebutton icon overrides"
         >
           <AudioPlayerVolumeControl
-            muteButtonSize={ButtonSize.Medium}
+            muteButtonSize="medium"
             overrides={{
               button: {
                 muteButtonIcon: {
@@ -961,15 +967,17 @@ export const AudioPlayerOverrides = () => {
             }}
           />
         </AudioPlayerComposable>
-        <StorybookSubHeading>
-          MuteButton Icon Component Overrides
-        </StorybookSubHeading>
+      </ThemeProvider>
+      <StorybookSubHeading>
+        MuteButton Icon Component Overrides
+      </StorybookSubHeading>
+      <ThemeProvider theme={myCustomTheme}>
         <AudioPlayerComposable
           src={AUDIO_SRC}
           ariaLandmark="audio player mutebutton component overrides"
         >
           <AudioPlayerVolumeControl
-            muteButtonSize={ButtonSize.Medium}
+            muteButtonSize="medium"
             overrides={{
               button: {
                 muteButtonIcon: CustomMuteButtonIcon,
@@ -977,8 +985,8 @@ export const AudioPlayerOverrides = () => {
             }}
           />
         </AudioPlayerComposable>
-      </StyledPage>
-    </ThemeProvider>
+      </ThemeProvider>
+    </StyledPage>
   );
 };
 AudioPlayerOverrides.storyName = 'audio-player-overrides';
@@ -1159,7 +1167,7 @@ export const AudioPlayerKeyboard = () => (
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
-                  size={ButtonSize.Medium}
+                  size="medium"
                   aria-label="Open popout player"
                   href="https://www.newskit.co.uk/"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
@@ -1235,58 +1243,17 @@ export const AudioPlayerVolumeControlLayout = () => (
       ariaLandmark="audio player volume control horizontal"
     >
       <AudioPlayerVolumeControl layout="horizontal" />
-    </AudioPlayerComposable>
-    <br />
-    <StorybookSubHeading>
-      Volume control horizontal-expandable
-    </StorybookSubHeading>
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player volume control horizontal expanded"
-    >
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl />
-        </GridLayoutItem>
-      </GridLayout>
-    </AudioPlayerComposable>
-    <br />
-    <StorybookSubHeading>
-      Volume control horizontal-collapsed
-    </StorybookSubHeading>
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player volume control horizontal collapsed"
-    >
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl layout="horizontalCollapsed" />
-        </GridLayoutItem>
-      </GridLayout>
-    </AudioPlayerComposable>
-    <br />
-    <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player volume control vertical"
-    >
-      <GridLayout
-        columns="auto auto 40px 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <GridLayoutItem column="1/2" row="1/5">
-          <AudioPlayerVolumeControl layout="vertical" />
-        </GridLayoutItem>
-      </GridLayout>
+
+      <StorybookSubHeading>
+        Volume control horizontal-expanded
+      </StorybookSubHeading>
+      <AudioPlayerVolumeControl layout="horizontal-expanded" />
+
+      <StorybookSubHeading>Volume control Collapsed</StorybookSubHeading>
+      <AudioPlayerVolumeControl layout="collapsed" />
+
+      <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
+      <AudioPlayerVolumeControl layout="vertical" />
     </AudioPlayerComposable>
   </StyledPage>
 );

@@ -32,7 +32,7 @@ export interface AccessibilityTablesProps {
   aria?: A11ySubSection<{
     element: string;
     attribute: string | string[];
-    value: string | string[];
+    value: string | string[] | JSX.Element;
     description: string | JSX.Element;
     userSupplied?: true;
   }>;
@@ -65,7 +65,6 @@ const A11yTable: React.FC<
 const renderInfoNotice = (
   notice: React.ReactNode | React.ReactNode[],
   label: string,
-  title?: string,
 ) => {
   if (Array.isArray(notice)) {
     return (
@@ -77,7 +76,6 @@ const renderInfoNotice = (
             <InlineMessage
               role="region"
               aria-label={`${label} ${index}`}
-              title={title}
               icon={infoIcon}
             >
               {note}
@@ -89,12 +87,7 @@ const renderInfoNotice = (
   }
   if (notice !== undefined) {
     return (
-      <InlineMessage
-        role="region"
-        aria-label={label}
-        title={title}
-        icon={infoIcon}
-      >
+      <InlineMessage role="region" aria-label={label} icon={infoIcon}>
         {notice}
       </InlineMessage>
     );
@@ -111,42 +104,56 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
   infoNoticeAria,
 }) => (
   <CommonSection
-    title="Accessibility Considerations"
+    title="Accessibility considerations"
     id="accessibility"
     toc="Accessibility"
     introduction={introduction}
   >
-    <Cell xs={12}>
-      <Grid xsRowGutter="space100" xsMargin="space000">
-        <ComponentPageCell>
-          {focusOrder && (
-            <A11yTable columns={['Order', 'Element', 'Role']} {...focusOrder} />
-          )}
+    {(focusOrder ||
+      infoNoticeFocus ||
+      interaction ||
+      aria ||
+      infoNoticeAria) && (
+      <Cell xs={12}>
+        <Grid xsRowGutter="space100" xsMargin="space000">
+          <ComponentPageCell>
+            {focusOrder && (
+              <A11yTable
+                columns={['Order', 'Element', 'Role']}
+                {...focusOrder}
+              />
+            )}
 
-          <Block spaceStack="space090">
-            {renderInfoNotice(infoNoticeFocus, 'Focus order notice', 'Note')}
-          </Block>
+            {infoNoticeFocus && (
+              <Block spaceStack="space090">
+                {renderInfoNotice(infoNoticeFocus, 'Focus order notice')}
+              </Block>
+            )}
 
-          {interaction && (
-            <A11yTable columns={['Command', 'Description']} {...interaction} />
-          )}
+            {interaction && (
+              <A11yTable
+                columns={['Command', 'Description']}
+                {...interaction}
+              />
+            )}
 
-          {aria && (
-            <A11yTable
-              columns={[
-                'Element',
-                'Attribute',
-                'Value',
-                'Description',
-                'User Supplied',
-              ]}
-              {...aria}
-            />
-          )}
+            {aria && (
+              <A11yTable
+                columns={[
+                  'Element',
+                  'Attribute',
+                  'Value',
+                  'Description',
+                  'User Supplied',
+                ]}
+                {...aria}
+              />
+            )}
 
-          {renderInfoNotice(infoNoticeAria, 'WAI Aria notice', 'Note')}
-        </ComponentPageCell>
-      </Grid>
-    </Cell>
+            {renderInfoNotice(infoNoticeAria, 'WAI Aria notice')}
+          </ComponentPageCell>
+        </Grid>
+      </Cell>
+    )}
   </CommonSection>
 );

@@ -33,10 +33,17 @@ const Kicker = styled.span<HeadlinePropsWithRenderAs>`
 
 const ThemelessHeadline = React.forwardRef<HTMLElement, HeadlineProps>(
   (
-    {children, kickerText, headingAs = 'h1', kickerAs = 'span', overrides = {}},
+    {
+      children,
+      kickerText,
+      headingAs = 'h1',
+      kickerAs = 'span',
+      overrides = {},
+      ...rest
+    },
     ref,
   ) => (
-    <HeadlineContainer overrides={overrides} ref={ref}>
+    <HeadlineContainer overrides={overrides} ref={ref} {...rest}>
       {kickerText && (
         <Kicker
           className="nk-headline-kicker"

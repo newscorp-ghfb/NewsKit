@@ -26,6 +26,7 @@ The list includes these transformers
 - [`emotion-icons`](#emotion-icons)
 - [`remove-redundant-marker-ul`](#remove-redundant-marker-ul)
 - [`update-list-item-marker-ul-value`](#update-list-item-marker-ul-value)
+- [`enum-to-union`](#enum-to-union)
 
 
 #### `emotion-icons`
@@ -60,6 +61,40 @@ Unordered List has now a default marker, the script passes `listItemMarker` with
 ```diff
 -   <UnorderedList></UnorderedList>
 +    <UnorderedList listItemMarker={null}></UnorderedList>
+```
+#### `enum-to-union`
+
+Some of NewsKit components support enum as the prop type, the script remove the imports of enum and replace enum type with union type.
+
+```diff
+-   <Button size={ButtonSize.Small}>Button</Button>
++   <Button size="small">Button</Button>
+```
+
+#### `update-linkinline`
+
+Updates deprecated Link component to LinkInline.
+LinkInline is used within paragraphs or sentences to link to different content on the same page or other pages.
+
+```diff
+-  import {Link} from 'newskit';
+- <Link href={'www.google.com'}>Click on me</Link>;
+
++    import {LinkInline} from 'newskit';
++  <LinkInline href={'www.google.com'}>Click on me</LinkInline>;
+```
+
+#### `update-linkstandalone`
+
+Updates deprecated Link component to LinkStandalone. 
+LinkStandalone is used outside of body content, for example within navigational components such as menus, headers and footers.
+
+```diff
+-  import {Link} from 'newskit';
+- <Link href={'www.google.com'}>Click on me</Link>;
+
++    import {LinkStandalone} from 'newskit';
++  <LinkStandalone href={'www.google.com'}>Click on me</LinkStandalone>;
 ```
 
 

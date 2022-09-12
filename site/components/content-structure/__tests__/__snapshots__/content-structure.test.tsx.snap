@@ -75,6 +75,30 @@ exports[`Content Primary renders with description and children 1`] = `
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 48px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -89,11 +113,11 @@ exports[`Content Primary renders with description and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -188,66 +212,42 @@ exports[`Content Primary renders with description and children 1`] = `
   }
 }
 
-@media screen and (max-width: 767px) {
-  .emotion-3 {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-3 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-3 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin-bottom: 48px;
-  }
-}
-
 @media screen and (max-width: 1023px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
-.emotion-5 {
+.emotion-4 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
@@ -263,22 +263,19 @@ exports[`Content Primary renders with description and children 1`] = `
       >
         Content Primary description
       </p>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-4"
+      class="emotion-3"
     >
       <div>
         Content Primary custom react component
       </div>
     </div>
     <div
-      class="emotion-5"
+      class="emotion-4"
     >
       <div
-        class="emotion-6"
+        class="emotion-5"
       />
     </div>
   </div>
@@ -306,11 +303,11 @@ exports[`Content Primary renders with description only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -463,6 +460,30 @@ exports[`Content Primary renders with headline and children 1`] = `
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -477,18 +498,18 @@ exports[`Content Primary renders with headline and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -510,8 +531,8 @@ exports[`Content Primary renders with headline and children 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -533,8 +554,8 @@ exports[`Content Primary renders with headline and children 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -556,8 +577,8 @@ exports[`Content Primary renders with headline and children 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -573,69 +594,45 @@ exports[`Content Primary renders with headline and children 1`] = `
     content: '';
     margin-top: -0.2125em;
     display: block;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .emotion-3 {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin-bottom: 24px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
-.emotion-5 {
+.emotion-4 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
@@ -653,22 +650,19 @@ exports[`Content Primary renders with headline and children 1`] = `
       >
         Content Primary headline
       </h2>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-4"
+      class="emotion-3"
     >
       <div>
         Content Primary custom react component
       </div>
     </div>
     <div
-      class="emotion-5"
+      class="emotion-4"
     >
       <div
-        class="emotion-6"
+        class="emotion-5"
       />
     </div>
   </div>
@@ -682,6 +676,30 @@ exports[`Content Primary renders with headline and description 1`] = `
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -696,18 +714,18 @@ exports[`Content Primary renders with headline and description 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -729,8 +747,8 @@ exports[`Content Primary renders with headline and description 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -752,8 +770,8 @@ exports[`Content Primary renders with headline and description 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -775,8 +793,8 @@ exports[`Content Primary renders with headline and description 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -795,41 +813,29 @@ exports[`Content Primary renders with headline and description 1`] = `
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .emotion-3 {
-    margin-bottom: 20px;
+    grid-column: auto/span 12;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    grid-column: auto/span 10;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-.emotion-5 {
+.emotion-4 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
-.emotion-5 svg {
-  fill: #2E2E2E;
+.emotion-4 svg {
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -838,13 +844,13 @@ exports[`Content Primary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -852,7 +858,7 @@ exports[`Content Primary renders with headline and description 1`] = `
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -861,13 +867,13 @@ exports[`Content Primary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -875,7 +881,7 @@ exports[`Content Primary renders with headline and description 1`] = `
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -884,13 +890,13 @@ exports[`Content Primary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -898,7 +904,7 @@ exports[`Content Primary renders with headline and description 1`] = `
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -907,43 +913,43 @@ exports[`Content Primary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
   }
 }
 
-.emotion-6 {
+.emotion-5 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 80px;
   }
 }
@@ -961,24 +967,21 @@ exports[`Content Primary renders with headline and description 1`] = `
       >
         Content Primary headline
       </h2>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-1"
+      class="emotion-3"
     >
       <p
-        class="emotion-5"
+        class="emotion-4"
       >
         Content Primary description
       </p>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       />
     </div>
   </div>
@@ -1006,18 +1009,18 @@ exports[`Content Primary renders with headline only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1039,8 +1042,8 @@ exports[`Content Primary renders with headline only 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1062,8 +1065,8 @@ exports[`Content Primary renders with headline only 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1085,8 +1088,8 @@ exports[`Content Primary renders with headline only 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1165,6 +1168,30 @@ exports[`Content Primary renders with headline, description and content 1`] = `
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -1179,18 +1206,18 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1212,8 +1239,8 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1235,8 +1262,8 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1258,8 +1285,8 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -1280,39 +1307,51 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-3 {
-    margin-bottom: 20px;
+    margin-block-end: 40px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    margin-block-end: 48px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    margin-block-end: 48px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    margin-block-end: 48px;
   }
 }
 
-.emotion-5 {
+@media screen and (max-width: 1023px) {
+  .emotion-3 {
+    grid-column: auto/span 12;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    grid-column: auto/span 10;
+  }
+}
+
+.emotion-4 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
-.emotion-5 svg {
-  fill: #2E2E2E;
+.emotion-4 svg {
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -1321,13 +1360,13 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -1335,7 +1374,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -1344,13 +1383,13 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -1358,7 +1397,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -1367,13 +1406,13 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -1381,7 +1420,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -1390,79 +1429,55 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .emotion-6 {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-6 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-6 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-6 {
-    margin-bottom: 48px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-7 {
+  .emotion-5 {
     grid-column: auto/span 12;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-7 {
+  .emotion-5 {
     grid-column: auto/span 12;
   }
 }
 
-.emotion-8 {
+.emotion-6 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 80px;
   }
 }
@@ -1480,34 +1495,28 @@ exports[`Content Primary renders with headline, description and content 1`] = `
       >
         Content Primary headline
       </h2>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-1"
+      class="emotion-3"
     >
       <p
-        class="emotion-5"
+        class="emotion-4"
       >
         Content Primary description
       </p>
-      <div
-        class="emotion-6"
-      />
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
     >
       <div>
         Content Primary custom react component
       </div>
     </div>
     <div
-      class="emotion-8"
+      class="emotion-6"
     >
       <div
-        class="emotion-9"
+        class="emotion-7"
       />
     </div>
   </div>
@@ -1589,6 +1598,30 @@ exports[`Content Secondary renders with description and children 1`] = `
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 48px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -1603,11 +1636,11 @@ exports[`Content Secondary renders with description and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -1702,66 +1735,42 @@ exports[`Content Secondary renders with description and children 1`] = `
   }
 }
 
-@media screen and (max-width: 767px) {
-  .emotion-3 {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-3 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-3 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin-bottom: 48px;
-  }
-}
-
 @media screen and (max-width: 1023px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
-.emotion-5 {
+.emotion-4 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
@@ -1777,22 +1786,19 @@ exports[`Content Secondary renders with description and children 1`] = `
       >
         Content Secondary description
       </p>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-4"
+      class="emotion-3"
     >
       <div>
         Content Secondary custom react component
       </div>
     </div>
     <div
-      class="emotion-5"
+      class="emotion-4"
     >
       <div
-        class="emotion-6"
+        class="emotion-5"
       />
     </div>
   </div>
@@ -1820,11 +1826,11 @@ exports[`Content Secondary renders with description only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -1977,6 +1983,30 @@ exports[`Content Secondary renders with headline and children 1`] = `
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -1991,18 +2021,18 @@ exports[`Content Secondary renders with headline and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2024,8 +2054,8 @@ exports[`Content Secondary renders with headline and children 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2047,8 +2077,8 @@ exports[`Content Secondary renders with headline and children 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2070,8 +2100,8 @@ exports[`Content Secondary renders with headline and children 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2087,69 +2117,45 @@ exports[`Content Secondary renders with headline and children 1`] = `
     content: '';
     margin-top: -0.2125em;
     display: block;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .emotion-3 {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin-bottom: 24px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
-.emotion-5 {
+.emotion-4 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
@@ -2165,22 +2171,19 @@ exports[`Content Secondary renders with headline and children 1`] = `
       >
         Content Secondary headline
       </h3>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-4"
+      class="emotion-3"
     >
       <div>
         Content Primary custom react component
       </div>
     </div>
     <div
-      class="emotion-5"
+      class="emotion-4"
     >
       <div
-        class="emotion-6"
+        class="emotion-5"
       />
     </div>
   </div>
@@ -2194,6 +2197,30 @@ exports[`Content Secondary renders with headline and description 1`] = `
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -2208,18 +2235,18 @@ exports[`Content Secondary renders with headline and description 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2241,8 +2268,8 @@ exports[`Content Secondary renders with headline and description 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2264,8 +2291,8 @@ exports[`Content Secondary renders with headline and description 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2287,8 +2314,8 @@ exports[`Content Secondary renders with headline and description 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2307,41 +2334,29 @@ exports[`Content Secondary renders with headline and description 1`] = `
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .emotion-3 {
-    margin-bottom: 20px;
+    grid-column: auto/span 12;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    grid-column: auto/span 10;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-.emotion-5 {
+.emotion-4 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
-.emotion-5 svg {
-  fill: #2E2E2E;
+.emotion-4 svg {
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -2350,13 +2365,13 @@ exports[`Content Secondary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -2364,7 +2379,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -2373,13 +2388,13 @@ exports[`Content Secondary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -2387,7 +2402,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -2396,13 +2411,13 @@ exports[`Content Secondary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -2410,7 +2425,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -2419,43 +2434,43 @@ exports[`Content Secondary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
   }
 }
 
-.emotion-6 {
+.emotion-5 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 80px;
   }
 }
@@ -2471,24 +2486,21 @@ exports[`Content Secondary renders with headline and description 1`] = `
       >
         Content Secondary headline
       </h3>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-1"
+      class="emotion-3"
     >
       <p
-        class="emotion-5"
+        class="emotion-4"
       >
         Content Secondary description
       </p>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       />
     </div>
   </div>
@@ -2516,18 +2528,18 @@ exports[`Content Secondary renders with headline only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2549,8 +2561,8 @@ exports[`Content Secondary renders with headline only 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2572,8 +2584,8 @@ exports[`Content Secondary renders with headline only 1`] = `
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2595,8 +2607,8 @@ exports[`Content Secondary renders with headline only 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2673,6 +2685,30 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -2687,18 +2723,18 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2720,8 +2756,8 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2743,8 +2779,8 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2766,8 +2802,8 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
     font-family: "Poppins",sans-serif;
-    font-size: 22px;
-    line-height: 24.75px;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 0.5px 0px;
@@ -2788,39 +2824,51 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 
 @media screen and (max-width: 767px) {
   .emotion-3 {
-    margin-bottom: 20px;
+    margin-block-end: 40px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    margin-block-end: 48px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    margin-block-end: 48px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    margin-block-end: 48px;
   }
 }
 
-.emotion-5 {
+@media screen and (max-width: 1023px) {
+  .emotion-3 {
+    grid-column: auto/span 12;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    grid-column: auto/span 10;
+  }
+}
+
+.emotion-4 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
-.emotion-5 svg {
-  fill: #2E2E2E;
+.emotion-4 svg {
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -2829,13 +2877,13 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -2843,7 +2891,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -2852,13 +2900,13 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -2866,7 +2914,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -2875,13 +2923,13 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -2889,7 +2937,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -2898,79 +2946,55 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .emotion-6 {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-6 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-6 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-6 {
-    margin-bottom: 48px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-7 {
+  .emotion-5 {
     grid-column: auto/span 12;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-7 {
+  .emotion-5 {
     grid-column: auto/span 12;
   }
 }
 
-.emotion-8 {
+.emotion-6 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 80px;
   }
 }
@@ -2986,34 +3010,28 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
       >
         Content Secondary headline
       </h3>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-1"
+      class="emotion-3"
     >
       <p
-        class="emotion-5"
+        class="emotion-4"
       >
         Content Secondary description
       </p>
-      <div
-        class="emotion-6"
-      />
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
     >
       <div>
         Content Secondary custom react component
       </div>
     </div>
     <div
-      class="emotion-8"
+      class="emotion-6"
     >
       <div
-        class="emotion-9"
+        class="emotion-7"
       />
     </div>
   </div>
@@ -3115,6 +3133,30 @@ exports[`Content Tertiary renders with description and children 1`] = `
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 48px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -3129,11 +3171,11 @@ exports[`Content Tertiary renders with description and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -3228,66 +3270,42 @@ exports[`Content Tertiary renders with description and children 1`] = `
   }
 }
 
-@media screen and (max-width: 767px) {
-  .emotion-3 {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-3 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-3 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin-bottom: 48px;
-  }
-}
-
 @media screen and (max-width: 1023px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
-.emotion-5 {
+.emotion-4 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
@@ -3303,22 +3321,19 @@ exports[`Content Tertiary renders with description and children 1`] = `
       >
         Content Tertiary description
       </p>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-4"
+      class="emotion-3"
     >
       <div>
         Content Tertiary custom react component
       </div>
     </div>
     <div
-      class="emotion-5"
+      class="emotion-4"
     >
       <div
-        class="emotion-6"
+        class="emotion-5"
       />
     </div>
   </div>
@@ -3346,11 +3361,11 @@ exports[`Content Tertiary renders with description only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
@@ -3503,6 +3518,30 @@ exports[`Content Tertiary renders with headline and children 1`] = `
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -3517,11 +3556,11 @@ exports[`Content Tertiary renders with headline and children 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -3613,69 +3652,45 @@ exports[`Content Tertiary renders with headline and children 1`] = `
     content: '';
     margin-top: -0.2125em;
     display: block;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .emotion-3 {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin-bottom: 24px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-4 {
+  .emotion-3 {
     grid-column: auto/span 12;
   }
 }
 
-.emotion-5 {
+.emotion-4 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-6 {
+  .emotion-5 {
     margin-bottom: 80px;
   }
 }
@@ -3691,22 +3706,19 @@ exports[`Content Tertiary renders with headline and children 1`] = `
       >
         Content Tertiary headline
       </h4>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-4"
+      class="emotion-3"
     >
       <div>
         Content Primary custom react component
       </div>
     </div>
     <div
-      class="emotion-5"
+      class="emotion-4"
     >
       <div
-        class="emotion-6"
+        class="emotion-5"
       />
     </div>
   </div>
@@ -3720,6 +3732,30 @@ exports[`Content Tertiary renders with headline and description 1`] = `
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -3734,11 +3770,11 @@ exports[`Content Tertiary renders with headline and description 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -3833,41 +3869,29 @@ exports[`Content Tertiary renders with headline and description 1`] = `
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .emotion-3 {
-    margin-bottom: 20px;
+    grid-column: auto/span 12;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    grid-column: auto/span 10;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin-bottom: 24px;
-  }
-}
-
-.emotion-5 {
+.emotion-4 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
-.emotion-5 svg {
-  fill: #2E2E2E;
+.emotion-4 svg {
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -3876,13 +3900,13 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -3890,7 +3914,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -3899,13 +3923,13 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -3913,7 +3937,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -3922,13 +3946,13 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -3936,7 +3960,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -3945,43 +3969,43 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
   }
 }
 
-.emotion-6 {
+.emotion-5 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-7 {
+  .emotion-6 {
     margin-bottom: 80px;
   }
 }
@@ -3997,24 +4021,21 @@ exports[`Content Tertiary renders with headline and description 1`] = `
       >
         Content Tertiary headline
       </h4>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-1"
+      class="emotion-3"
     >
       <p
-        class="emotion-5"
+        class="emotion-4"
       >
         Content Tertiary description
       </p>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       />
     </div>
   </div>
@@ -4042,11 +4063,11 @@ exports[`Content Tertiary renders with headline only 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -4199,6 +4220,30 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin-block-end: 24px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-1 {
     grid-column: auto/span 12;
@@ -4213,11 +4258,11 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #0A0A0A;
+  color: #09111C;
 }
 
 .emotion-2 svg {
-  fill: #0A0A0A;
+  fill: #09111C;
 }
 
 @media screen and (max-width: 767px) {
@@ -4314,39 +4359,51 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-3 {
-    margin-bottom: 20px;
+    margin-block-end: 40px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    margin-block-end: 48px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    margin-block-end: 48px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin-bottom: 24px;
+    margin-block-end: 48px;
   }
 }
 
-.emotion-5 {
+@media screen and (max-width: 1023px) {
+  .emotion-3 {
+    grid-column: auto/span 12;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    grid-column: auto/span 10;
+  }
+}
+
+.emotion-4 {
   margin: 0;
-  color: #2E2E2E;
+  color: #2E3F54;
 }
 
-.emotion-5 svg {
-  fill: #2E2E2E;
+.emotion-4 svg {
+  fill: #2E3F54;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -4355,13 +4412,13 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -4369,7 +4426,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -4378,13 +4435,13 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -4392,7 +4449,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -4401,13 +4458,13 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
@@ -4415,7 +4472,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-5 {
+  .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -4424,79 +4481,55 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-5::before {
+  .emotion-4::before {
     content: '';
     margin-bottom: -0.391em;
     display: block;
   }
 
-  .emotion-5::after {
+  .emotion-4::after {
     content: '';
     margin-top: -0.409em;
     display: block;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .emotion-6 {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-6 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-6 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-6 {
-    margin-bottom: 48px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-7 {
+  .emotion-5 {
     grid-column: auto/span 12;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-7 {
+  .emotion-5 {
     grid-column: auto/span 12;
   }
 }
 
-.emotion-8 {
+.emotion-6 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-9 {
+  .emotion-7 {
     margin-bottom: 80px;
   }
 }
@@ -4512,34 +4545,28 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
       >
         Content Tertiary headline
       </h4>
-      <div
-        class="emotion-3"
-      />
     </div>
     <div
-      class="emotion-1"
+      class="emotion-3"
     >
       <p
-        class="emotion-5"
+        class="emotion-4"
       >
         Content Tertiary description
       </p>
-      <div
-        class="emotion-6"
-      />
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
     >
       <div>
         Content Tertiary custom react component
       </div>
     </div>
     <div
-      class="emotion-8"
+      class="emotion-6"
     >
       <div
-        class="emotion-9"
+        class="emotion-7"
       />
     </div>
   </div>

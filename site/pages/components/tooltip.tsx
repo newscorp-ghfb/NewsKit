@@ -386,6 +386,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       components: [
         {
+          title: 'Tooltip',
           propsSummary:
             'The Tooltip has a range of props that can be used to define an appropriate experience for different use cases.',
           overridesSummary:
@@ -633,27 +634,8 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      states: true,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      performance: false,
-      design: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
-      related: [
-        'Banner',
-        'Flag',
-        'Progress Indicator',
-        'Toast',
-        'Inline Message',
-      ],
+      related: ['Banner', 'Flag', 'Toast', 'Inline Message'],
     }}
   />
 );

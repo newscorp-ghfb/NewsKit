@@ -11,10 +11,8 @@ import {
   TabsDistribution,
   DistributionWrapperProps,
   TabsBarProps,
-  TabInternalProps,
-  TabAlign,
-  TabsIndicatorPositionType,
-  TabsDistributionType,
+  TabButtonProps,
+  TabsIndicatorPosition,
 } from './types';
 import {Stack} from '../stack';
 import {TextBlock, TextBlockProps} from '../text-block';
@@ -22,22 +20,22 @@ import {Button, ButtonProps} from '../button';
 import {logicalProps} from '../utils/logical-properties';
 
 const getFlexFromTabsDistribution = (
-  distribution: TabsDistributionType,
+  distribution: TabsDistribution,
   vertical: boolean,
 ) => {
   switch (distribution) {
-    case TabsDistribution.Grow:
+    case 'grow':
       return 'flex: 1 0 auto';
-    case TabsDistribution.Equal:
+    case 'equal':
       return `${vertical ? 'height' : 'width'}: 100%`;
-    case TabsDistribution.Start:
+    case 'start':
     default:
       return 'flex: 0 0 auto';
   }
 };
 
 const alignmentPosition = (
-  indicatorPosition?: TabsIndicatorPositionType,
+  indicatorPosition?: TabsIndicatorPosition,
   vertical?: boolean,
 ) => {
   if (indicatorPosition === 'none') {
@@ -167,14 +165,14 @@ const tabTextAlign = {
 };
 
 export const StyledTabButton = styled(Button)<
-  Omit<ButtonProps, 'loading'> & TabInternalProps
+  Omit<ButtonProps, 'loading'> & TabButtonProps
 >`
   ${({selected}) =>
     selected && getStylePreset('tab', '', {isSelected: selected})}
 
   ${({align}) =>
     align &&
-    align !== TabAlign.Center && {
+    align !== 'center' && {
       justifyContent: tabFlexAlign[align],
       textAlign: tabTextAlign[align] as TextAlignProperty,
     }}

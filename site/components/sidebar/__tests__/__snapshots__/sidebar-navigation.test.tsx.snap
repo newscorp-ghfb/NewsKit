@@ -64,7 +64,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 .emotion-3 {
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -146,7 +146,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #577FFB;
+  color: #3358CC;
   margin: 0;
   cursor: pointer;
 }
@@ -157,24 +157,24 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #C0C7CC;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -239,8 +239,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-9 {
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
   vertical-align: unset;
   display: inline-block;
 }
@@ -264,8 +264,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 .emotion-9.emotion-9 {
   width: 24px;
   height: 24px;
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -321,16 +321,16 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border-color: transparent transparent transparent #577FFB;
+  border-color: transparent transparent transparent #3358CC;
   border-width: 4px;
   border-style: solid;
-  color: #577FFB;
+  color: #3358CC;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -344,12 +344,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -413,7 +413,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 .emotion-25 {
   margin: 0;
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -466,7 +466,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
@@ -483,12 +483,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-27:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-27:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -517,7 +517,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 .emotion-50 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -557,10 +557,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -580,8 +580,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                           d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -594,10 +594,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                 data-testid="buttonLink"
                 href="/group1/page1"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <span
@@ -605,8 +605,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     >
                       Group 1 Page 1
                     </span>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </a>
             </li>
           </div>
@@ -631,10 +631,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -655,8 +655,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                           d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -685,10 +685,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page1/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -696,8 +696,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                         >
                           Group 2 Page 1 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -709,10 +709,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page1/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -720,8 +720,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                         >
                           Group 2 Page 1 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -751,10 +751,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page2/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -762,8 +762,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                         >
                           Group 2 Page 2 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -775,10 +775,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page2/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -786,8 +786,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                         >
                           Group 2 Page 2 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -898,7 +898,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-padding-start: 32px;
@@ -916,12 +916,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1015,12 +1015,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
           <a
             aria-current="false"
             class="emotion-3"
-            href="group1/page1"
+            href="/group1/page1"
           >
-            <div
+            <span
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
                 <span
@@ -1028,8 +1028,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                 >
                   Group 1 Page 1
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-5"
               >
                 <span
@@ -1037,13 +1037,13 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                 >
                    
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-5"
               >
                 <span />
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
         </li>
       </ul>
@@ -1119,7 +1119,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 
 .emotion-3 {
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -1201,7 +1201,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #577FFB;
+  color: #3358CC;
   margin: 0;
   cursor: pointer;
 }
@@ -1212,24 +1212,24 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #C0C7CC;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -1294,8 +1294,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-9 {
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1319,8 +1319,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 .emotion-9.emotion-9 {
   width: 24px;
   height: 24px;
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1376,7 +1376,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
@@ -1393,12 +1393,12 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1462,7 +1462,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 .emotion-25 {
   margin: 0;
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -1493,7 +1493,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 
 .emotion-50 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1533,10 +1533,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -1557,8 +1557,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                           d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -1571,10 +1571,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                 data-testid="buttonLink"
                 href="/group1/page1"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <span
@@ -1582,8 +1582,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     >
                       Group 1 Page 1
                     </span>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </a>
             </li>
           </div>
@@ -1608,10 +1608,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -1632,8 +1632,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                           d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -1662,10 +1662,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page1/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -1673,8 +1673,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                         >
                           Group 2 Page 1 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -1686,10 +1686,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page1/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -1697,8 +1697,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                         >
                           Group 2 Page 1 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -1728,10 +1728,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page2/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -1739,8 +1739,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                         >
                           Group 2 Page 2 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -1752,10 +1752,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     data-testid="buttonLink"
                     href="/group2/page2/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -1763,8 +1763,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                         >
                           Group 2 Page 2 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -1925,7 +1925,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 
 .emotion-3 {
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -2007,7 +2007,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #577FFB;
+  color: #3358CC;
   margin: 0;
   cursor: pointer;
 }
@@ -2018,24 +2018,24 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-6 svg {
-  fill: #577FFB;
+  fill: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #D5E0FC;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #C0C7CC;
 }
 
 .emotion-6:disabled svg {
-  fill: #C0C0C0;
+  fill: #C0C7CC;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -2100,8 +2100,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-9 {
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2125,8 +2125,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 .emotion-9.emotion-9 {
   width: 24px;
   height: 24px;
-  color: #0A0A0A;
-  fill: #0A0A0A;
+  color: #09111C;
+  fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2182,7 +2182,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   padding-inline: 64px;
@@ -2199,12 +2199,12 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-11:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2268,7 +2268,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 .emotion-25 {
   margin: 0;
   background-color: transparent;
-  color: #0A0A0A;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -2299,7 +2299,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 
 .emotion-50 {
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #DEE2E5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -2339,10 +2339,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -2362,8 +2362,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                           d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -2376,10 +2376,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                 data-testid="buttonLink"
                 href="/group1/page1"
               >
-                <div
+                <span
                   class="emotion-7"
                 >
-                  <div
+                  <span
                     class="emotion-8"
                   >
                     <span
@@ -2387,8 +2387,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     >
                       Group 1 Page 1
                     </span>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </a>
             </li>
           </div>
@@ -2413,10 +2413,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                   data-testid="button"
                   type="button"
                 >
-                  <div
+                  <span
                     class="emotion-7"
                   >
-                    <div
+                    <span
                       class="emotion-8"
                     >
                       <svg
@@ -2437,8 +2437,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                           d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
                         />
                       </svg>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </div>
             </h3>
@@ -2467,10 +2467,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     data-testid="buttonLink"
                     href="/group2/page1/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -2478,8 +2478,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                         >
                           Group 2 Page 1 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -2491,10 +2491,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     data-testid="buttonLink"
                     href="/group2/page1/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -2502,8 +2502,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                         >
                           Group 2 Page 1 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -2533,10 +2533,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     data-testid="buttonLink"
                     href="/group2/page2/a"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -2544,8 +2544,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                         >
                           Group 2 Page 2 a
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
                 <li
@@ -2557,10 +2557,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     data-testid="buttonLink"
                     href="/group2/page2/b"
                   >
-                    <div
+                    <span
                       class="emotion-7"
                     >
-                      <div
+                      <span
                         class="emotion-8"
                       >
                         <span
@@ -2568,8 +2568,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                         >
                           Group 2 Page 2 b
                         </span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -2680,7 +2680,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #535353;
+  color: #5A6A79;
   margin: 0;
   cursor: pointer;
   -webkit-padding-start: 32px;
@@ -2698,12 +2698,12 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-3:hover:not(:disabled) {
-  color: #577FFB;
-  background-color: #E0E7FF;
+  color: #254CAC;
+  background-color: #D5E0FC;
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2797,12 +2797,12 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
           <a
             aria-current="false"
             class="emotion-3"
-            href="group1/page1"
+            href="/group1/page1"
           >
-            <div
+            <span
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
                 <span
@@ -2810,8 +2810,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                 >
                   Group 1 Page 1
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-5"
               >
                 <span
@@ -2819,13 +2819,13 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                 >
                    
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 class="emotion-5"
               >
                 <span />
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
         </li>
       </ul>

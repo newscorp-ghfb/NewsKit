@@ -1,9 +1,10 @@
 import React from 'react';
-import {Link, Toast, ToastProps, Button, styled, toNewsKitIcon} from 'newskit';
+import {Toast, ToastProps, Button, styled, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
+import {Link} from '../../components/link';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Mono} from '../../components/flags';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
@@ -67,7 +68,6 @@ const ToastComponent = (layoutProps: LayoutProps) => (
                   icon && (
                     <IconFilledInfo
                       overrides={{
-                        stylePreset: 'toastIcon',
                         size: 'iconSize020',
                       }}
                     />
@@ -644,27 +644,8 @@ const ToastComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      states: true,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: undefined,
-      performance: false,
-      design: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
-      related: [
-        'Banner',
-        'Flag',
-        'Progress Indicator',
-        'Inline Message',
-        'Tooltip',
-      ],
+      related: ['Banner', 'Flag', 'Inline Message', 'Tooltip'],
     }}
   />
 );

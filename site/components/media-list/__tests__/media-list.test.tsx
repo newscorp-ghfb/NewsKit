@@ -17,10 +17,12 @@ const staticCard = {
 };
 
 const UsageCardDo = {
+  title: 'Do',
   description: 'UsageCard Do',
 };
 
 const UsageCardDont = {
+  title: 'Dont',
   description: 'UsageCard Dont',
   kind: 'dont',
 };

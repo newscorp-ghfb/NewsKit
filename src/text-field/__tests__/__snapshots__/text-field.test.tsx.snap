@@ -4,7 +4,7 @@ exports[`TextField renders Label 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -16,7 +16,7 @@ exports[`TextField renders Label 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {
@@ -60,15 +60,15 @@ exports[`TextField renders TextField Correctly 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -76,7 +76,7 @@ exports[`TextField renders TextField Correctly 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -88,36 +88,36 @@ exports[`TextField renders TextField Correctly 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -126,6 +126,11 @@ exports[`TextField renders TextField Correctly 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -148,19 +153,19 @@ exports[`TextField renders TextField Correctly 1`] = `
 }
 
 .emotion-1::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 <div
@@ -197,19 +202,17 @@ Object {
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   margin-inline: 48px;
   margin-block: 32px;
-  padding-inline: 8px;
-  padding-block: 16px;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -217,7 +220,7 @@ Object {
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -229,36 +232,36 @@ Object {
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -280,7 +283,7 @@ Object {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -312,6 +315,11 @@ Object {
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -319,6 +327,8 @@ Object {
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  padding-inline: 8px;
+  padding-block: 16px;
 }
 
 .emotion-4::before {
@@ -334,19 +344,19 @@ Object {
 }
 
 .emotion-4::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5 {
@@ -368,7 +378,7 @@ Object {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -470,19 +480,17 @@ Object {
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   margin-inline: 48px;
   margin-block: 32px;
-  padding-inline: 8px;
-  padding-block: 16px;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -490,7 +498,7 @@ Object {
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -502,36 +510,36 @@ Object {
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -553,7 +561,7 @@ Object {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -585,6 +593,11 @@ Object {
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -592,6 +605,8 @@ Object {
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  padding-inline: 8px;
+  padding-block: 16px;
 }
 
 .emotion-4::before {
@@ -607,19 +622,19 @@ Object {
 }
 
 .emotion-4::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5 {
@@ -641,7 +656,7 @@ Object {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -829,7 +844,7 @@ exports[`TextField renders TextField with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -861,6 +876,11 @@ exports[`TextField renders TextField with overrides 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -917,7 +937,7 @@ exports[`TextField renders TextField with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1000,7 +1020,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1012,7 +1032,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {
@@ -1051,15 +1071,15 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -1067,7 +1087,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1079,36 +1099,36 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -1117,6 +1137,11 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1139,19 +1164,19 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
 }
 
 .emotion-1::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 <div
@@ -1179,11 +1204,11 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1 {
@@ -1191,7 +1216,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1201,7 +1226,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-1::before {
@@ -1249,15 +1274,15 @@ exports[`TextField renders disabled text field 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -1265,7 +1290,7 @@ exports[`TextField renders disabled text field 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1277,36 +1302,36 @@ exports[`TextField renders disabled text field 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -1328,7 +1353,7 @@ exports[`TextField renders disabled text field 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1360,6 +1385,11 @@ exports[`TextField renders disabled text field 1`] = `
   cursor: not-allowed;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1382,19 +1412,19 @@ exports[`TextField renders disabled text field 1`] = `
 }
 
 .emotion-4::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5 {
@@ -1416,7 +1446,7 @@ exports[`TextField renders disabled text field 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1517,15 +1547,15 @@ exports[`TextField renders large TextField 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -1533,7 +1563,7 @@ exports[`TextField renders large TextField 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1545,36 +1575,36 @@ exports[`TextField renders large TextField 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -1583,6 +1613,11 @@ exports[`TextField renders large TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1605,19 +1640,19 @@ exports[`TextField renders large TextField 1`] = `
 }
 
 .emotion-1::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 <div
@@ -1653,15 +1688,15 @@ exports[`TextField renders medium TextField 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -1669,7 +1704,7 @@ exports[`TextField renders medium TextField 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1681,36 +1716,36 @@ exports[`TextField renders medium TextField 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -1719,6 +1754,11 @@ exports[`TextField renders medium TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1741,19 +1781,19 @@ exports[`TextField renders medium TextField 1`] = `
 }
 
 .emotion-1::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 <div
@@ -1789,15 +1829,15 @@ exports[`TextField renders small TextField 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -1805,7 +1845,7 @@ exports[`TextField renders small TextField 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1817,36 +1857,36 @@ exports[`TextField renders small TextField 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -1855,6 +1895,11 @@ exports[`TextField renders small TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1877,19 +1922,19 @@ exports[`TextField renders small TextField 1`] = `
 }
 
 .emotion-1::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-1::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 <div
@@ -1925,15 +1970,15 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -1941,7 +1986,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1953,36 +1998,36 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -2004,7 +2049,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2036,6 +2081,11 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2058,19 +2108,19 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
 }
 
 .emotion-4::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5 {
@@ -2092,7 +2142,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2192,15 +2242,15 @@ exports[`TextField should render custom placeholder 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -2208,7 +2258,7 @@ exports[`TextField should render custom placeholder 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2220,36 +2270,36 @@ exports[`TextField should render custom placeholder 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -2271,7 +2321,7 @@ exports[`TextField should render custom placeholder 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2303,6 +2353,11 @@ exports[`TextField should render custom placeholder 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2325,19 +2380,19 @@ exports[`TextField should render custom placeholder 1`] = `
 }
 
 .emotion-4::-webkit-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::-moz-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4:-ms-input-placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-4::placeholder {
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-5 {
@@ -2359,7 +2414,7 @@ exports[`TextField should render custom placeholder 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2442,7 +2497,7 @@ exports[`TextField should render invalid label 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2454,7 +2509,7 @@ exports[`TextField should render invalid label 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {

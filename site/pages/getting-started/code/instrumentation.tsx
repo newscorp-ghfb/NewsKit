@@ -184,18 +184,14 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
               <InlineCode>createEventInstrumentation</InlineCode> function and
               as a result, the object can simply be destructured into the props
               of the provider.
-              <br />
-              <br />
-              <InlineMessage>
-                {' '}
-                Keep in mind that <InlineCode>NewsKitProvider</InlineCode>{' '}
-                already contains{' '}
-                <InlineCode>InstrumentationProvider</InlineCode> so use it only
-                when want to create a new context for part of your application.
-              </InlineMessage>
             </>
           }
         >
+          <InlineMessage overrides={{marginBlockEnd: 'space080'}}>
+            Keep in mind that <InlineCode>NewsKitProvider</InlineCode> already
+            contains <InlineCode>InstrumentationProvider</InlineCode> so use it
+            only when want to create a new context for part of your application.
+          </InlineMessage>
           <Code>
             {`import {
   instrumentationHandlers,
@@ -207,6 +203,7 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
 const handlers = [
   instrumentationHandlers.createConsoleHandler(),
   instrumentationHandlers.createTealiumHandler(),
+  instrumentationHandlers.createTealiumTrackHandler(),
 ];
 
 const contextObject = {

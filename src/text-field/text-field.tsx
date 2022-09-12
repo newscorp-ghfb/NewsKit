@@ -1,5 +1,5 @@
 import React from 'react';
-import {TextFieldProps, TextFieldSize} from './types';
+import {TextFieldProps} from './types';
 import {StyledInput} from './styled';
 import {WithEnhancers} from '../with-enhancers/with-enhancers';
 import {useTheme} from '../theme';
@@ -8,11 +8,15 @@ import defaults from './defaults';
 import {getSingleStylePreset} from '../utils/style/style-preset';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
+import {
+  omitLogicalMarginPropsFromOverrides,
+  omitLogicalPaddingPropsFromOverrides,
+} from '../utils/logical-properties';
 
 const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   (
     {
-      size = 'medium' as TextFieldSize,
+      size = 'medium',
       overrides,
       state,
       startEnhancer,
@@ -32,7 +36,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     const [isFocused, setIsFocused] = React.useState(false);
 
     const onInputFocus = React.useCallback(
-      event => {
+      (event: React.FocusEvent<HTMLInputElement, Element>) => {
         setIsFocused(true);
         fireEvent({
           originator: eventOriginator,
@@ -49,7 +53,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     );
 
     const onInputBlur = React.useCallback(
-      event => {
+      (event: React.FocusEvent<HTMLInputElement, Element>) => {
         if (onBlur) {
           onBlur(event);
         }
@@ -59,7 +63,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     );
 
     const onInputChange = React.useCallback(
-      event => {
+      (event: React.ChangeEvent<HTMLInputElement>) => {
         if (onChange) {
           onChange(event);
         }
@@ -82,12 +86,15 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       textFieldStylePreset,
     );
 
+    const enhancersOverrides = omitLogicalPaddingPropsFromOverrides(overrides);
+    const inputOverrides = omitLogicalMarginPropsFromOverrides(overrides);
+
     return (
       <>
         <WithEnhancers
           componentDefaultsPath={`textField.${size}`}
           isFocused={isFocused}
-          overrides={overrides}
+          overrides={enhancersOverrides}
           state={state}
           startEnhancer={startEnhancer}
           endEnhancer={endEnhancer}
@@ -97,7 +104,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
             type="text"
             disabled={state === 'disabled'}
             $size={size}
-            overrides={overrides}
+            overrides={inputOverrides}
             state={state}
             onBlur={onInputBlur}
             onFocus={onInputFocus}

@@ -22,8 +22,8 @@ import {isComponent} from './utils';
 const PlaygroundContainer = styled.div`
   display: flex;
   flex-direction: column;
-  box-shadow: 0 3px 4px 2px ${getColorFromTheme('interface010')};
-  background-color: ${getColorFromTheme('interface010')};
+  box-shadow: 0 3px 4px 2px ${getColorFromTheme('interfaceBackground')};
+  background-color: ${getColorFromTheme('interfaceBackground')};
 `;
 
 const isMultiChoiceKnobConfig = (
@@ -178,7 +178,7 @@ export const Playground: React.FC<
         data-testid="playground-element"
         {...commonBlockProps}
         minHeight="280px"
-        backgroundColor="interface010"
+        backgroundColor="interfaceBackground"
         padding="sizing070"
       >
         <ErrorBoundary key={errorBoundaryKey}>

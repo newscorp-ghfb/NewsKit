@@ -1,6 +1,10 @@
 const {pathsToModuleNameMapper} = require('ts-jest/utils');
 const {compilerOptions} = require('./tsconfig.jest.json');
 
+const paths = pathsToModuleNameMapper(compilerOptions.paths, {
+  prefix: '<rootDir>/',
+});
+
 module.exports = {
   name: 'site',
   displayName: 'Site',
@@ -15,9 +19,10 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
-    prefix: '<rootDir>/',
-  }),
+  moduleNameMapper: {
+    '.+\\.(css|styl|less|sass|scss)$': '<rootDir>/jest-config/style-mock',
+    ...paths,
+  },
   globals: {
     'ts-jest': {
       diagnostics: true,

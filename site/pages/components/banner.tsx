@@ -6,9 +6,7 @@ import {
   BannerProps,
   Button,
   ButtonOrButtonLinkProps,
-  Link,
   styled,
-  TextBlock,
   toNewsKitIcon,
 } from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
@@ -19,6 +17,7 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
+import {Link} from '../../components/link';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -80,7 +79,6 @@ const BannerComponent = (layoutProps: LayoutProps) => (
                   icon && (
                     <IconFilledInfo
                       overrides={{
-                        stylePreset: 'bannerIcon',
                         size: 'iconSize020',
                       }}
                     />
@@ -221,15 +219,12 @@ const BannerComponent = (layoutProps: LayoutProps) => (
           title: 'Orientation',
           description: (
             <>
-              <TextBlock>
-                A Banner can be displayed horizontally or vertically to
-                effectively and appropriately use the space available on a
-                screen.
-              </TextBlock>
-              <TextBlock>
-                When vertical the content is stacked and the width of the
-                buttons are full-width.
-              </TextBlock>
+              A Banner can be displayed horizontally or vertically to
+              effectively and appropriately use the space available on a screen.
+              <br />
+              <br />
+              When vertical the content is stacked and the width of the buttons
+              are full-width.
             </>
           ) as any,
           media: getIllustrationComponent(
@@ -372,11 +367,8 @@ const BannerComponent = (layoutProps: LayoutProps) => (
     accessibility={{
       introduction: (
         <>
-          A Banner implements the latest{' '}
-          <Link href="TODO:find the link">
-            WAI-ARIA A Banner specifications.
-          </Link>
-          .
+          A Banner implements the latest {/* TODO: find a link */}
+          <Link href="/">WAI-ARIA A Banner specifications.</Link>.
         </>
       ),
       focusOrder: {
@@ -487,15 +479,13 @@ const BannerComponent = (layoutProps: LayoutProps) => (
               type: 'string',
               description: (
                 <>
-                  <TextBlock>
-                    If provided, overrides the close Button label for the
-                    vertical orientation of the Banner.
-                  </TextBlock>
-                  <TextBlock>
-                    NOTE - For horizontal orientation the Banner always displays
-                    a close Icon Button and uses this prop as aria-label for the
-                    icon-button.
-                  </TextBlock>
+                  If provided, overrides the close Button label for the vertical
+                  orientation of the Banner.
+                  <br />
+                  <br />
+                  NOTE - For horizontal orientation the Banner always displays a
+                  close Icon Button and uses this prop as aria-label for the
+                  icon-button.
                 </>
               ) as any,
             },
@@ -612,27 +602,8 @@ const BannerComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      states: true,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      performance: false,
-      design: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
-      related: [
-        'Flag',
-        'Progress Indicator',
-        'Toast',
-        'Inline Message',
-        'Tooltip',
-      ],
+      related: ['Flag', 'Toast', 'Inline Message', 'Tooltip'],
     }}
   />
 );

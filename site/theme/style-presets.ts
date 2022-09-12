@@ -76,8 +76,8 @@ export const stylePresets = {
       color: '{{colors.inkSubtle}}', // TODO write color
     },
     hover: {
-      color: '{{colors.interactivePrimary030}}',
-      backgroundColor: '{{colors.interactivePrimary010}}',
+      color: '{{colors.interactivePrimary040}}',
+      backgroundColor: '{{colors.interactivePrimary020}}',
     },
     active: {
       color: '{{colors.interactivePrimary050}}',
@@ -268,6 +268,16 @@ export const stylePresets = {
       whiteSpace: 'nowrap',
     },
   },
+  flagSolidPrimary: {
+    base: {
+      color: '{{colors.inkSubtle}}',
+      backgroundColor: '{{colors.interface020}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interface020}}',
+    },
+  },
   flagBrand: {
     base: {
       color: '{{colors.inkInverse}}',
@@ -417,7 +427,7 @@ export const stylePresets = {
     },
   },
 
-  contributeCardContainerInteractive: {
+  contributeOldCardContainerInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
@@ -426,18 +436,18 @@ export const stylePresets = {
       boxShadow: '{{shadows.shadow040}}',
     },
   },
-  contributeCardContainerNonInteractive: {
+  contributeOldCardContainerNonInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
     },
   },
-  contributeCardMedia: {
+  contributeOldCardMedia: {
     base: {
-      backgroundImage: 'url(static/landing/feature-card-contribute.svg)',
+      backgroundImage: 'url(static/landing/feature-card-contribute-old.svg)',
     },
   },
-  contributeCardButton: {
+  contributeOldCardButton: {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
@@ -463,6 +473,40 @@ export const stylePresets = {
       backgroundColor: '{{colors.interactiveInverse020}}',
       color: '{{colors.inkBrand020}}',
       iconColor: '{{colors.inkBrand020}}',
+    },
+  },
+
+  contributeCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand050}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+  contributeCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand050}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+  },
+  contributeCardMedia: {
+    base: {
+      backgroundSize: 'cover',
+      backgroundImage: 'url(static/landing/feature-card-contribute.svg)',
+      backgroundPosition: 'center',
+    },
+  },
+  contributeCardButton: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+    },
+    hover: {
+      textDecoration: 'underline',
     },
   },
   linkFooter: {
@@ -508,8 +552,8 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.interfaceBrand030}}',
-      iconColor: '{{colors.interfaceBrand030}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
@@ -652,8 +696,8 @@ export const stylePresets = {
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
+      color: '{{colors.inkBrand030}}',
+      iconColor: '{{colors.inkBrand030}}',
     },
   },
 
@@ -662,6 +706,38 @@ export const stylePresets = {
       backgroundImage: 'url(static/landing/feature-card-whatsnew.svg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center left',
+    },
+  },
+  worldDesignSystemsWeekCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand040}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+  worldDesignSystemsWeekCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand040}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+  },
+  worldDesignSystemsWeekCardButton: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
+    },
+    hover: {
+      textDecoration: 'underline',
+    },
+  },
+  worldDesignSystemsWeekCardMedia: {
+    base: {
+      backgroundImage: 'url(static/landing/feature-card-banner.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
     },
   },
   needHelpCardContainerInteractive: {
@@ -688,6 +764,8 @@ export const stylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
@@ -738,6 +816,8 @@ export const stylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
@@ -824,7 +904,7 @@ export const stylePresets = {
   },
   sidebar: {
     base: {
-      backgroundColor: '{{colors.interface020}}',
+      backgroundColor: '{{colors.interface010}}',
       borderStyle: 'solid',
       borderColor: '{{colors.interface040}}',
       borderWidth:
@@ -841,7 +921,7 @@ export const stylePresets = {
       backgroundColor: '{{colors.transparent}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
       color: '{{colors.inkInverse}}',
-      iconColor: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkInverse}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse010}}',
@@ -899,35 +979,15 @@ export const stylePresets = {
       safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
-  dividerInverse: {
-    base: {
-      borderColor: '{{colors.whiteTint050}}',
-    },
-  },
-  toastText: {
-    base: {
-      color: '{{colors.white}}',
-    },
-  },
-  toastIcon: {
-    base: {
-      iconColor: '{{colors.white}}',
-    },
-  },
   toastButton: {
     base: {
       backgroundColor: '{{colors.transparent}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.white}}',
+      color: '{{colors.inkInverse}}',
       iconColor: '{{colors.neutral100}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse010}}',
-    },
-  },
-  bannerIcon: {
-    base: {
-      iconColor: '{{colors.white}}',
     },
   },
   stepFlag: {
@@ -969,6 +1029,8 @@ export const stylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
@@ -997,6 +1059,49 @@ export const stylePresets = {
   gitHubMarkDownText: {
     base: {
       color: '{{colors.inkBase}}',
+    },
+  },
+  keepInTouchLink: {
+    base: {
+      color: '{{colors.interactiveInput040}}',
+      iconColor: '{{colors.interactiveInput040}}',
+      textDecoration: 'none',
+    },
+    hover: {
+      textDecoration: 'underline',
+    },
+  },
+  homepageCard: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkBase}}',
+    },
+  },
+  exploreCardLink: {
+    base: {
+      textDecoration: 'none',
+      color: '{{colors.inkContrast}}',
+      iconColor: '{{colors.inkContrast}}',
+    },
+    hover: {
+      textDecoration: 'underline',
+    },
+  },
+  whatsNewCardLink: {
+    base: {
+      textDecoration: 'none',
+      color: '{{colors.interactivePrimary030}}',
+      iconColor: '{{colors.interactivePrimary030}}',
+    },
+    hover: {
+      textDecoration: 'underline',
+    },
+  },
+  whatsNewHomeFlag: {
+    base: {
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkInverse}}',
+      backgroundColor: '{{colors.inkInformative}}',
     },
   },
 };

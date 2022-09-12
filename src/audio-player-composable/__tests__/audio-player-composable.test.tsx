@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import React from 'react';
-import {fireEvent, act} from '@testing-library/react';
+import {fireEvent, act, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {
   renderWithImplementation,
@@ -11,7 +11,7 @@ import {AudioPlayerComposableProps} from '../types';
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
 import seekBarStylePresets from '../components/seek-bar/style-presets';
-import {Button, ButtonSize} from '../../button';
+import {Button} from '../../button';
 import {
   AudioPlayerComposable,
   AudioPlayerTimeDisplay,
@@ -26,6 +26,12 @@ import {
 } from '..';
 
 const version = '0.10.0';
+
+const MOCK_ID = 'MOCK-ID';
+jest.mock('@floating-ui/react-dom-interactions', () => ({
+  ...jest.requireActual('@floating-ui/react-dom-interactions'),
+  useId: () => MOCK_ID,
+}));
 
 const liveAudioProps: AudioPlayerComposableProps = {
   src: 'https://radio.talkradio.co.uk/stream',
@@ -72,12 +78,12 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   ),
 };
 
-const AudioPropsAndVolumeControlHorizontalCollapsed: AudioPlayerComposableProps = {
+const AudioPropsAndVolumeControlCollapsed: AudioPlayerComposableProps = {
   src: '/audio_file_1.mp3',
   initialVolume: 0.2,
   children: (
     <>
-      <AudioPlayerVolumeControl layout="horizontalCollapsed" />
+      <AudioPlayerVolumeControl layout="collapsed" />
     </>
   ),
 };
@@ -169,7 +175,7 @@ const AudioPropsAndPlaybackSpeedWithOverrides: AudioPlayerComposableProps = {
   children: (
     <>
       <AudioPlayerPlaybackSpeedControl
-        buttonSize={ButtonSize.Medium}
+        buttonSize="medium"
         overrides={{
           iconButton: {
             stylePreset: 'customButtonStylePreset',
@@ -769,7 +775,7 @@ describe('Audio Player Composable', () => {
   });
 
   describe('Keyboard shortcuts', () => {
-    it('should play and pause on press K key', () => {
+    it('should play and pause on press K key', async () => {
       const {getByTestId} = renderWithTheme(
         AudioPlayerComposable,
         recordedAudioProps,
@@ -780,9 +786,9 @@ describe('Audio Player Composable', () => {
       playPauseButton.focus();
       fireEvent.canPlay(audioElement);
       userEvent.keyboard('k');
-      expect(audioElement.paused).toBe(false);
+      await waitFor(() => expect(audioElement.paused).toBe(false));
       userEvent.keyboard('k');
-      expect(audioElement.paused).toBe(true);
+      await waitFor(() => expect(audioElement.paused).toBe(true));
     });
 
     it('should NOT play on space key when focus on an active element', () => {
@@ -799,7 +805,7 @@ describe('Audio Player Composable', () => {
       expect(audioElement.paused).toBe(true);
     });
 
-    it('should change current time via Home and End key', () => {
+    it('should change current time via Home and End key', async () => {
       const {getByTestId} = renderWithTheme(
         AudioPlayerComposable,
         recordedAudioProps,
@@ -820,13 +826,13 @@ describe('Audio Player Composable', () => {
 
       // move to end
       userEvent.keyboard('{End}');
-      expect(audioElement.currentTime).toBe(100);
+      await waitFor(() => expect(audioElement.currentTime).toBe(100));
 
       userEvent.keyboard('{Home}');
-      expect(audioElement.currentTime).toBe(0);
+      await waitFor(() => expect(audioElement.currentTime).toBe(0));
     });
 
-    it('should forward and replay 10 sec when press j / l', () => {
+    it('should forward and replay 10 sec when press j / l', async () => {
       const {getByTestId} = renderWithTheme(
         AudioPlayerComposable,
         recordedAudioProps,
@@ -842,15 +848,16 @@ describe('Audio Player Composable', () => {
       });
 
       userEvent.keyboard('l');
-      userEvent.keyboard('l');
+      await waitFor(() => expect(audioElement.currentTime).toEqual(10));
 
-      expect(audioElement.currentTime).toEqual(20);
+      userEvent.keyboard('l');
+      await waitFor(() => expect(audioElement.currentTime).toEqual(20));
 
       userEvent.keyboard('j');
-      expect(audioElement.currentTime).toEqual(10);
+      await waitFor(() => expect(audioElement.currentTime).toEqual(10));
     });
 
-    it('should move to prev/next track on shift + p / shift + n', () => {
+    it('should move to prev/next track on shift + p / shift + n', async () => {
       const mockOnPrevClick = jest.fn();
       const mockOnNextClick = jest.fn();
       const {getByTestId} = renderWithTheme(AudioPlayerComposable, {
@@ -868,10 +875,10 @@ describe('Audio Player Composable', () => {
       const button = getByTestId('skip');
       button.focus();
 
-      userEvent.keyboard('{shift}{p}');
-      userEvent.keyboard('{Shift}{n}');
-      expect(mockOnPrevClick).toHaveBeenCalled();
-      expect(mockOnNextClick).toHaveBeenCalled();
+      userEvent.keyboard('{Shift>}p{/Shift}');
+      await waitFor(() => expect(mockOnPrevClick).toHaveBeenCalled());
+      userEvent.keyboard('{Shift>}n{/Shift}');
+      await waitFor(() => expect(mockOnNextClick).toHaveBeenCalled());
     });
   });
 
@@ -892,63 +899,75 @@ describe('Audio Player Composable', () => {
       global.ResizeObserver = null;
     });
 
-    it('should render correctly in popover', () => {
+    it('should render correctly in popover', async () => {
       const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedPopover,
       );
 
-      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      await act(() => {
+        fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      });
 
       expect(asFragment()).toMatchSnapshot();
     });
 
-    it('should render correctly in modal', () => {
+    it('should render correctly in modal', async () => {
       const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedModal,
       );
-      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      await act(() => {
+        fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      });
 
       expect(asFragment()).toMatchSnapshot();
     });
 
-    it('should render correctly with custom trigger', () => {
+    it('should render correctly with custom trigger', async () => {
       const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedCustomTrigger,
       );
-      fireEvent.click(
-        getByTestId('audio-player-playback-speed-custom-trigger'),
-      );
+      await act(() => {
+        fireEvent.click(
+          getByTestId('audio-player-playback-speed-custom-trigger'),
+        );
+      });
 
       expect(asFragment()).toMatchSnapshot();
     });
 
-    it('should render correctly with overrides', () => {
+    it('should render correctly with overrides', async () => {
       const {asFragment, getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedWithOverrides,
       );
 
-      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      await act(() => {
+        fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      });
 
       expect(asFragment()).toMatchSnapshot();
     });
 
-    it('should close modal on X click', () => {
+    it('should close modal on X click', async () => {
       const {asFragment, getByTestId, getByLabelText} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedModal,
       );
 
-      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
-      fireEvent.click(getByLabelText('close'));
+      await act(() => {
+        fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      });
+      await act(() => {
+        fireEvent.click(getByLabelText('close'));
+      });
 
       expect(asFragment()).toMatchSnapshot();
     });
 
-    it('should update playback speed', () => {
+    it('should update playback speed', async () => {
       const {getByTestId} = renderWithThemeInBody(
         AudioPlayerComposable,
         AudioPropsAndPlaybackSpeedPopover,
@@ -956,9 +975,11 @@ describe('Audio Player Composable', () => {
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
       expect(audioElement.playbackRate).toEqual(1);
-      fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      await act(() => {
+        fireEvent.click(getByTestId('audio-player-playback-speed-control'));
+      });
       userEvent.keyboard('[ArrowUp][Enter]');
-      expect(audioElement.playbackRate).toEqual(0.8);
+      await waitFor(() => expect(audioElement.playbackRate).toEqual(0.8));
     });
   });
 
@@ -985,7 +1006,7 @@ describe('Audio Player Composable', () => {
       );
     });
 
-    it('should have mute unmute functionality', () => {
+    it('should have mute unmute functionality', async () => {
       // Clearing localStorage so not using any cashed initial volume
       localStorage.clear();
 
@@ -995,30 +1016,32 @@ describe('Audio Player Composable', () => {
       );
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
-      const muteButton = getByTestId('mute-button');
-      muteButton.focus();
+      await act(() => {
+        const muteButton = getByTestId('mute-button');
+        muteButton.focus();
+      });
 
       // Should default to 0.7
-      expect(audioElement.volume).toEqual(0.7);
+      await waitFor(() => expect(audioElement.volume).toEqual(0.7));
       // Mute with button click
       fireEvent.click(getByTestId('mute-button'));
-      expect(audioElement.volume).toEqual(0);
+      await waitFor(() => expect(audioElement.volume).toEqual(0));
       // unMute
       fireEvent.click(getByTestId('mute-button'));
-      expect(audioElement.volume).toEqual(0.7);
+      await waitFor(() => expect(audioElement.volume).toEqual(0.7));
 
       userEvent.keyboard('m');
-      expect(audioElement.volume).toEqual(0);
+      await waitFor(() => expect(audioElement.volume).toEqual(0));
 
       // Increase volume 0.1
       fireEvent.keyDown(getByTestId('volume-control-slider-thumb'), {
         key: 'ArrowRight',
         code: 39,
       });
-      expect(audioElement.volume).toEqual(0.1);
+      await waitFor(() => expect(audioElement.volume).toEqual(0.1));
     });
 
-    it('unmute keyshortcut should be overriden', () => {
+    it('unmute keyshortcut should be overriden', async () => {
       // Clearing localStorage so not using any cashed initial volume
       localStorage.clear();
 
@@ -1028,20 +1051,22 @@ describe('Audio Player Composable', () => {
       );
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
-      const muteButton = getByTestId('mute-button');
-      muteButton.focus();
+      await act(() => {
+        const muteButton = getByTestId('mute-button');
+        muteButton.focus();
+      });
 
       // Should default to 0.7
-      expect(audioElement.volume).toEqual(0.7);
+      await waitFor(() => expect(audioElement.volume).toEqual(0.7));
       userEvent.keyboard('y');
-      expect(audioElement.volume).toEqual(0);
+      await waitFor(() => expect(audioElement.volume).toEqual(0));
 
       // Increase volume 0.1
       fireEvent.keyDown(getByTestId('volume-control-slider-thumb'), {
         key: 'ArrowRight',
         code: 39,
       });
-      expect(audioElement.volume).toEqual(0.1);
+      await waitFor(() => expect(audioElement.volume).toEqual(0.1));
     });
 
     it('should render correctly with collapsed and initialVolume', () => {
@@ -1051,7 +1076,7 @@ describe('Audio Player Composable', () => {
 
       const {queryByTestId, getByTestId, asFragment} = renderWithTheme(
         AudioPlayerComposable,
-        AudioPropsAndVolumeControlHorizontalCollapsed,
+        AudioPropsAndVolumeControlCollapsed,
       );
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
@@ -1064,7 +1089,7 @@ describe('Audio Player Composable', () => {
       expect(audioElement.volume).toBe(0.2);
       expect(asFragment()).toMatchSnapshot();
     });
-    it('renders horizontal expandable by default', () => {
+    it('renders horizontal expanded by default', () => {
       const {asFragment} = renderWithTheme(
         AudioPlayerComposable,
         AudioPropsAndVolumeControlWithInitialVolumeDefault,
@@ -1088,7 +1113,7 @@ describe('Audio Player Composable', () => {
     it('should hover on volume control', () => {
       const {asFragment, getByTestId} = renderWithTheme(
         AudioPlayerComposable,
-        AudioPropsAndVolumeControlWithInitialVolumeDefault,
+        AudioPropsAndVolumeControlWithInitialVolumeHorizontal,
       );
       const muteButton = getByTestId('mute-button');
 
@@ -1101,7 +1126,7 @@ describe('Audio Player Composable', () => {
     it('should on Focus & onBlur on volume control', () => {
       const {asFragment, getByTestId} = renderWithTheme(
         AudioPlayerComposable,
-        AudioPropsAndVolumeControlWithInitialVolumeDefault,
+        AudioPropsAndVolumeControlWithInitialVolumeHorizontal,
       );
       const muteButton = getByTestId('mute-button');
 

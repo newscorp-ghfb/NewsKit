@@ -1,8 +1,9 @@
 import {getTypographyPreset, styled, getResponsiveSpace} from '../utils/style';
-import {FormInputTextFieldProps, TextFieldSizeType} from './types';
+import {FormInputTextFieldProps, TextFieldSize} from './types';
+import {logicalPaddingProps} from '../utils/logical-properties';
 
 interface StyledTextFieldProps extends FormInputTextFieldProps {
-  $size: TextFieldSizeType;
+  $size: TextFieldSize;
 }
 
 export const StyledInput = styled.input<
@@ -15,6 +16,11 @@ export const StyledInput = styled.input<
   cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
   border: none;
   background: none;
+  box-sizing: border-box;
+  // make the input to take size of his parent
+  align-self: stretch;
+  color: inherit;
+
   ${({$size}) =>
     getTypographyPreset(`textField.${$size}`, '', {
       withCrop: true,
@@ -25,4 +31,6 @@ export const StyledInput = styled.input<
   // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({$size}) =>
     getResponsiveSpace('padding', `textField.${$size}`, '', 'spaceInset')}
+
+  ${({$size}) => logicalPaddingProps(`textField.${$size}`)};
 `;

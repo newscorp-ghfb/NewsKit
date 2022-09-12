@@ -9,7 +9,7 @@ export interface BylineData {
   ariaLabel?: string;
   key?: string | number;
 }
-export interface BylineProps {
+export interface BylineProps extends React.HTMLAttributes<HTMLDivElement> {
   bylineData: BylineData[];
   overrides?: {
     stylePreset?: MQ<string>;

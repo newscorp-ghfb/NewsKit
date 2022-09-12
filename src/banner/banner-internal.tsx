@@ -11,8 +11,7 @@ import {
   StyledTitleContainer,
 } from './styled';
 import {renderIfReactComponent} from '../utils/component';
-import {Flow, StackDistribution} from '../stack';
-import {AlignSelfValues, StackChild} from '../stack-child';
+import {StackChild} from '../stack-child';
 import {BreakpointKeys, useTheme} from '../theme';
 import {useReactKeys} from '../utils/hooks';
 import {Button, ButtonProps} from '../button';
@@ -76,9 +75,7 @@ export const BannerInternal = React.forwardRef<
           <Cell xs={12} {...overrides?.cell?.props}>
             <StyledMaxWidthContainer
               flow={
-                layout === 'vertical'
-                  ? Flow.VerticalCenter
-                  : Flow.HorizontalCenter
+                layout === 'vertical' ? 'vertical-center' : 'horizontal-center'
               }
               stackDistribution="flex-start"
               wrap="nowrap"
@@ -86,7 +83,7 @@ export const BannerInternal = React.forwardRef<
               overrides={nonLogicalOverrides}
             >
               <StyledIconContentContainer
-                flow={Flow.HorizontalTop}
+                flow="horizontal-top"
                 stackDistribution="flex-start"
                 wrap="nowrap"
                 layout={layout}
@@ -124,18 +121,15 @@ export const BannerInternal = React.forwardRef<
                 <StyledActionsContainer
                   flow={
                     layout === 'vertical'
-                      ? Flow.VerticalCenter
-                      : Flow.HorizontalCenter
+                      ? 'vertical-center'
+                      : 'horizontal-center'
                   }
-                  stackDistribution={StackDistribution.Start}
+                  stackDistribution="flex-start"
                   spaceInline={actionsSpacing}
                   layout={layout}
                 >
                   {onClose && layout === 'vertical' && (
-                    <StackChild
-                      key="banner-close-button"
-                      alignSelf={AlignSelfValues.Stretch}
-                    >
+                    <StackChild key="banner-close-button" alignSelf="stretch">
                       <Button
                         overrides={{
                           ...closeButtonStyles,
@@ -153,11 +147,7 @@ export const BannerInternal = React.forwardRef<
                     actions.map((action, idx) => (
                       <StackChild
                         key={actionKeys[idx]}
-                        alignSelf={
-                          layout === 'vertical'
-                            ? AlignSelfValues.Stretch
-                            : AlignSelfValues.Auto
-                        }
+                        alignSelf={layout === 'vertical' ? 'stretch' : 'auto'}
                       >
                         {renderIfReactComponent(action)}
                       </StackChild>

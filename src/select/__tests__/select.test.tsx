@@ -1,7 +1,7 @@
 import React, {createRef} from 'react';
-import {cleanup, fireEvent, screen} from '@testing-library/react';
-import {act} from 'react-dom/test-utils';
+import {cleanup, fireEvent, screen, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import {UseSelectGetItemPropsOptions, UseSelectProps} from 'downshift';
 import {Select, SelectProps, ButtonSelectSize, SelectOption} from '..';
 import {
   renderToFragmentInBody,
@@ -14,6 +14,41 @@ import {Label} from '../../label';
 import {createTheme} from '../..';
 import {IconFilledSearch} from '../../icons';
 import {countries} from './phone-countries';
+
+// Downshift auto-generates IDs for the select elements, which makes the snapshot
+// tests brittle. Mock out the ID generation functions so the IDs generated are
+// always the same to avoid this, but still import the rest of the module.
+const resetDownshiftIds = (props: {[key: string]: string}) =>
+  Object.entries(props).reduce(
+    (prev, [k, v]) => ({
+      ...prev,
+      [k]:
+        typeof v === 'string' ? v.replace(/downshift-\d*/, 'downshift-0') : v,
+    }),
+    {},
+  );
+const {restModule, useSelect} = jest.requireActual('downshift');
+function useSelectWithMockIds<T>(props: UseSelectProps<T>) {
+  const {
+    getToggleButtonProps,
+    getMenuProps,
+    getItemProps,
+    ...selectProps
+  } = useSelect(props);
+  return {
+    ...selectProps,
+    getToggleButtonProps: () => resetDownshiftIds(getToggleButtonProps()),
+    getMenuProps: () => resetDownshiftIds(getMenuProps()),
+    getItemProps: (options: UseSelectGetItemPropsOptions<T>) =>
+      resetDownshiftIds(getItemProps(options)),
+  };
+}
+useSelectWithMockIds.stateChangeTypes = useSelect.stateChangeTypes;
+
+jest.mock('downshift', () => ({
+  ...restModule,
+  useSelect: useSelectWithMockIds,
+}));
 
 const renderSelectButtonWithComponents = () => (
   <>
@@ -83,7 +118,7 @@ describe('Select', () => {
 
     renderWithTheme(Select, props);
 
-    await act(async () => {
+    await waitFor(() => {
       if (inputRef && inputRef.current) {
         inputRef.current.focus();
       }
@@ -101,11 +136,11 @@ describe('Select', () => {
 
     const {getByTestId} = renderWithTheme(Select, props);
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.click(getByTestId('select-button'));
     });
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.blur(getByTestId('select-button'));
     });
 
@@ -122,7 +157,7 @@ describe('Select', () => {
 
     const {getByTestId} = renderWithTheme(Select, props);
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.focus(getByTestId('select-button'));
     });
 
@@ -146,7 +181,7 @@ describe('Select', () => {
 
     const {getByTestId} = renderWithTheme(Select, props);
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.change(getByTestId('select-button'), {
         target: {value: 'test'},
       });
@@ -185,8 +220,11 @@ describe('Select', () => {
 
     const {getByTestId} = renderWithTheme(Select, props);
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.mouseDown(getByTestId('select-chevron-button'));
+    });
+
+    await waitFor(() => {
       fireEvent.mouseUp(getByTestId('select-chevron-button'));
     });
 
@@ -202,7 +240,7 @@ describe('Select', () => {
 
     const {getByTestId} = renderWithTheme(Select, props);
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.click(getByTestId('select-button'));
     });
 
@@ -280,7 +318,7 @@ describe('Select', () => {
     };
     const {getByTestId} = renderWithTheme(Select, props);
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.click(getByTestId('select-button'));
     });
     const menuElement = getByTestId('select-panel') as any;
@@ -308,14 +346,14 @@ describe('Select', () => {
     };
     const {getByTestId} = renderWithTheme(Select, props);
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.click(getByTestId('select-button'));
     });
 
     const menuElement = getByTestId('select-panel') as any;
     expect(menuElement).toHaveFocus();
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.keyDown(getByTestId('select-panel'), {
         code: 'ArrowDown',
         key: 'ArrowDown',
@@ -323,14 +361,14 @@ describe('Select', () => {
       });
     });
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.keyDown(getByTestId('select-panel'), {
         code: 'ArrowDown',
         key: 'ArrowDown',
         keyCode: 40,
       });
     });
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.keyDown(getByTestId('select-panel'), {
         key: 'Enter',
         code: 13,
@@ -347,17 +385,17 @@ describe('Select', () => {
 
     const {getByTestId} = renderWithTheme(Select, props);
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.click(getByTestId('select-button'));
     });
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.click(getByTestId('select-button'));
     });
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.mouseDown(getByTestId('select-chevron-button'));
     });
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.mouseUp(getByTestId('select-chevron-button'));
     });
 
@@ -408,7 +446,7 @@ describe('Select', () => {
       myCustomTheme,
     ) as any;
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.click(screen.getByTestId('select-button'));
     });
 
@@ -432,8 +470,8 @@ describe('Select', () => {
     );
 
     // open select
-    await act(async () => {
-      userEvent.click(getByTestId('select-button'));
+    await waitFor(() => {
+      fireEvent.click(getByTestId('select-button'));
     });
 
     // the amount of rendered options should be less than original list
@@ -465,8 +503,8 @@ describe('Select', () => {
         commonProps,
       );
 
-      await act(async () => {
-        userEvent.click(getByTestId('select-button'));
+      await waitFor(() => {
+        fireEvent.click(getByTestId('select-button'));
       });
       const menuElement = getByTestId('select-panel') as any;
       expect(menuElement).toHaveFocus();
@@ -497,8 +535,8 @@ describe('Select', () => {
         props,
       );
 
-      await act(async () => {
-        userEvent.click(getByTestId('select-button'));
+      await waitFor(() => {
+        fireEvent.click(getByTestId('select-button'));
       });
 
       expect(asFragment()).toMatchSnapshot();
@@ -523,8 +561,8 @@ describe('Select', () => {
         props,
       );
 
-      await act(async () => {
-        userEvent.click(getByTestId('select-button'));
+      await waitFor(() => {
+        fireEvent.click(getByTestId('select-button'));
       });
 
       expect(asFragment()).toMatchSnapshot();
@@ -535,19 +573,23 @@ describe('Select', () => {
       const {getByTestId, unmount} = renderWithTheme(Select, commonProps);
 
       // open select
-      await act(async () => {
-        userEvent.click(getByTestId('select-button'));
+      await waitFor(() => {
+        fireEvent.click(getByTestId('select-button'));
       });
 
       // check if the select panel is focused
       expect(getByTestId('select-panel')).toHaveFocus();
 
       // next tab should focus on close button
-      userEvent.tab();
+      await waitFor(() => {
+        userEvent.tab();
+      });
       expect(getByTestId('button')).toHaveFocus();
 
       // next tab should focus on select panel again
-      userEvent.tab();
+      await waitFor(() => {
+        userEvent.tab();
+      });
       expect(getByTestId('select-panel')).toHaveFocus();
 
       unmount();
@@ -560,12 +602,14 @@ describe('Select', () => {
       );
 
       // open select
-      await act(async () => {
-        userEvent.click(getByTestId('select-button'));
+      await waitFor(() => {
+        fireEvent.click(getByTestId('select-button'));
       });
 
       // close modal
-      userEvent.click(getByTestId('button'));
+      await waitFor(() => {
+        fireEvent.click(getByTestId('button'));
+      });
       expect(queryByTestId('modal')).not.toBeInTheDocument();
       unmount();
     });
@@ -592,12 +636,13 @@ describe('Select', () => {
       );
 
       // open select
-      await act(async () => {
-        userEvent.click(getByTestId('select-button'));
+      await waitFor(() => {
+        fireEvent.click(getByTestId('select-button'));
       });
-
       // click outside select panel
-      userEvent.click(getByTestId('header'));
+      await waitFor(() => {
+        fireEvent.click(getByTestId('header'));
+      });
 
       // the modal should not close
       expect(queryByTestId('modal')).toBeInTheDocument();
@@ -625,7 +670,7 @@ describe('Select', () => {
 
     const fragment = renderToFragmentWithTheme(Select, props) as any;
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.click(screen.getByTestId('select-button'));
     });
 
@@ -661,7 +706,7 @@ describe('Select', () => {
 
     const fragment = renderToFragmentWithTheme(Select, props) as any;
 
-    await act(async () => {
+    await waitFor(() => {
       fireEvent.click(screen.getByTestId('select-button'));
     });
 

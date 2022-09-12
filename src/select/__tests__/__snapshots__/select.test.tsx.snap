@@ -21,15 +21,15 @@ exports[`Select in Modal render Select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -37,7 +37,7 @@ exports[`Select in Modal render Select 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -49,36 +49,36 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -118,7 +118,7 @@ exports[`Select in Modal render Select 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -166,7 +166,7 @@ exports[`Select in Modal render Select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -207,7 +207,7 @@ exports[`Select in Modal render Select 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-95-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -262,7 +262,7 @@ exports[`Select in Modal render Select 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -517,7 +517,7 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-3 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -568,7 +568,7 @@ exports[`Select in Modal render Select 1`] = `
   -webkit-column-gap: 8px;
   column-gap: 8px;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -590,43 +590,43 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-7:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-7:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-7:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-7:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-7:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-7:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-9 {
@@ -667,7 +667,7 @@ exports[`Select in Modal render Select 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -678,24 +678,24 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-10:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -763,7 +763,7 @@ exports[`Select in Modal render Select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -835,17 +835,17 @@ exports[`Select in Modal render Select 1`] = `
                   </span>
                   <div
                     aria-describedby="mock-nk-1"
-                    aria-labelledby="downshift-95-label"
+                    aria-labelledby="downshift-0-label"
                     class="emotion-6"
                     data-testid="select-panel"
-                    id="downshift-95-menu"
+                    id="downshift-0-menu"
                     role="listbox"
                     tabindex="-1"
                   >
                     <div
                       aria-selected="false"
                       class="emotion-7"
-                      id="downshift-95-item-0"
+                      id="downshift-0-item-0"
                       role="option"
                       value="option 1"
                     >
@@ -856,7 +856,7 @@ exports[`Select in Modal render Select 1`] = `
                     <div
                       aria-selected="false"
                       class="emotion-7"
-                      id="downshift-95-item-1"
+                      id="downshift-0-item-1"
                       role="option"
                       value="option 2"
                     >
@@ -875,10 +875,10 @@ exports[`Select in Modal render Select 1`] = `
                     data-testid="button"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
-                      <div
+                      <span
                         class="emotion-12"
                       >
                         <svg
@@ -897,8 +897,8 @@ exports[`Select in Modal render Select 1`] = `
                             d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -937,15 +937,15 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -953,7 +953,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -965,36 +965,36 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -1034,7 +1034,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1082,7 +1082,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1123,9 +1123,8 @@ exports[`Select in Modal render Select with overrides props 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-101-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
-        width="100%"
       >
         <div
           class="emotion-3"
@@ -1179,7 +1178,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1434,7 +1433,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-3 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1453,7 +1452,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 16px 24px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -1506,7 +1505,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   -webkit-column-gap: 8px;
   column-gap: 8px;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -1528,43 +1527,43 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-8:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-8:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-8:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-8:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-8:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-8:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 <div
@@ -1623,17 +1622,17 @@ exports[`Select in Modal render Select with overrides props 1`] = `
                   </span>
                   <div
                     aria-describedby="mock-nk-1"
-                    aria-labelledby="downshift-101-label"
+                    aria-labelledby="downshift-0-label"
                     class="emotion-7"
                     data-testid="select-panel"
-                    id="downshift-101-menu"
+                    id="downshift-0-menu"
                     role="listbox"
                     tabindex="-1"
                   >
                     <div
                       aria-selected="false"
                       class="emotion-8"
-                      id="downshift-101-item-0"
+                      id="downshift-0-item-0"
                       role="option"
                       value="option 1"
                     >
@@ -1644,7 +1643,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
                     <div
                       aria-selected="false"
                       class="emotion-8"
-                      id="downshift-101-item-1"
+                      id="downshift-0-item-1"
                       role="option"
                       value="option 2"
                     >
@@ -1690,15 +1689,15 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -1706,7 +1705,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1718,36 +1717,36 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -1787,7 +1786,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -1835,7 +1834,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1876,7 +1875,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-107-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -1931,7 +1930,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2176,7 +2175,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-3 {
-  color: #2E2E2E;
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2227,7 +2226,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   -webkit-column-gap: 8px;
   column-gap: 8px;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -2249,43 +2248,43 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-7:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-7:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-7:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-7:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-7:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-7:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-9 {
@@ -2326,7 +2325,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2E2E2E;
+  color: #3B3B3B;
   margin: 0;
   cursor: pointer;
 }
@@ -2337,24 +2336,24 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #F4F4F4;
+  background-color: #E2E2E2;
 }
 
 .emotion-10:disabled {
   background-color: transparent;
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
@@ -2422,7 +2421,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2494,17 +2493,17 @@ exports[`Select in Modal render Select with overrides style 1`] = `
                   </span>
                   <div
                     aria-describedby="mock-nk-1"
-                    aria-labelledby="downshift-107-label"
+                    aria-labelledby="downshift-0-label"
                     class="emotion-6"
                     data-testid="select-panel"
-                    id="downshift-107-menu"
+                    id="downshift-0-menu"
                     role="listbox"
                     tabindex="-1"
                   >
                     <div
                       aria-selected="false"
                       class="emotion-7"
-                      id="downshift-107-item-0"
+                      id="downshift-0-item-0"
                       role="option"
                       value="option 1"
                     >
@@ -2515,7 +2514,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
                     <div
                       aria-selected="false"
                       class="emotion-7"
-                      id="downshift-107-item-1"
+                      id="downshift-0-item-1"
                       role="option"
                       value="option 2"
                     >
@@ -2534,10 +2533,10 @@ exports[`Select in Modal render Select with overrides style 1`] = `
                     data-testid="button"
                     type="button"
                   >
-                    <div
+                    <span
                       class="emotion-11"
                     >
-                      <div
+                      <span
                         class="emotion-12"
                       >
                         <svg
@@ -2556,8 +2555,8 @@ exports[`Select in Modal render Select with overrides style 1`] = `
                             d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -2596,17 +2595,16 @@ exports[`Select renders Select with logical props 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   margin-inline: 40px;
-  padding-block: 20px;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -2614,7 +2612,7 @@ exports[`Select renders Select with logical props 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2626,36 +2624,36 @@ exports[`Select renders Select with logical props 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -2688,6 +2686,7 @@ exports[`Select renders Select with logical props 1`] = `
   overflow: hidden;
   cursor: pointer;
   padding: 8px;
+  padding-block: 20px;
 }
 
 .emotion-3 {
@@ -2695,7 +2694,7 @@ exports[`Select renders Select with logical props 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -2767,7 +2766,7 @@ exports[`Select renders Select with logical props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2806,7 +2805,7 @@ exports[`Select renders Select with logical props 1`] = `
       aria-haspopup="listbox"
       class="emotion-2"
       data-testid="select-button"
-      id="downshift-141-toggle-button"
+      id="downshift-0-toggle-button"
       type="button"
       value="option 1"
     >
@@ -2994,7 +2993,7 @@ exports[`Select renders Select with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3034,7 +3033,7 @@ exports[`Select renders Select with overrides 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-85-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
         value="option 1"
       >
@@ -3117,10 +3116,10 @@ exports[`Select renders Select with overrides 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-85-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-85-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -3133,7 +3132,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: block;
-  color: #0A0A0A;
+  color: #111111;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -3145,7 +3144,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-0::before {
@@ -3179,15 +3178,15 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-1 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-1:focus:not(:disabled) {
@@ -3195,7 +3194,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -3207,36 +3206,36 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-1:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-1:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-1:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-1:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-1:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-1:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-2 {
@@ -3276,7 +3275,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -3324,7 +3323,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3365,11 +3364,11 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 12px;
-  color: #535353;
+  color: #6A6A6A;
 }
 
 .emotion-11:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-12 {
@@ -3377,7 +3376,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -3387,7 +3386,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-12:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-12::before {
@@ -3536,15 +3535,15 @@ exports[`Select renders SelectOption with logical props 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -3552,7 +3551,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -3564,36 +3563,36 @@ exports[`Select renders SelectOption with logical props 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -3633,7 +3632,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -3707,7 +3706,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3746,7 +3745,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
       aria-haspopup="listbox"
       class="emotion-2"
       data-testid="select-button"
-      id="downshift-136-toggle-button"
+      id="downshift-0-toggle-button"
       type="button"
       value="option 1"
     >
@@ -3824,15 +3823,15 @@ exports[`Select renders disabled select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #F4F4F4;
+  border-color: #E2E2E2;
   border-width: 1px;
   border-radius: 8px;
-  color: #C0C0C0;
+  color: #ABABAB;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-1 {
@@ -3920,7 +3919,7 @@ exports[`Select renders disabled select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3959,7 +3958,7 @@ exports[`Select renders disabled select 1`] = `
         class="emotion-2"
         data-testid="select-button"
         disabled=""
-        id="downshift-35-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -4036,10 +4035,10 @@ exports[`Select renders disabled select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-35-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-35-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -4069,15 +4068,15 @@ exports[`Select renders large Select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -4085,7 +4084,7 @@ exports[`Select renders large Select 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4097,36 +4096,36 @@ exports[`Select renders large Select 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -4166,7 +4165,7 @@ exports[`Select renders large Select 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -4214,7 +4213,7 @@ exports[`Select renders large Select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4252,7 +4251,7 @@ exports[`Select renders large Select 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-9-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -4327,10 +4326,10 @@ exports[`Select renders large Select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-9-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-9-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -4360,15 +4359,15 @@ exports[`Select renders loading select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -4376,7 +4375,7 @@ exports[`Select renders loading select 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4388,36 +4387,36 @@ exports[`Select renders loading select 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -4457,7 +4456,7 @@ exports[`Select renders loading select 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -4534,7 +4533,7 @@ exports[`Select renders loading select 1`] = `
         class="emotion-2"
         data-testid="select-button"
         disabled=""
-        id="downshift-44-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -4597,10 +4596,10 @@ exports[`Select renders loading select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-44-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-44-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -4630,15 +4629,15 @@ exports[`Select renders medium Select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -4646,7 +4645,7 @@ exports[`Select renders medium Select 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4658,36 +4657,36 @@ exports[`Select renders medium Select 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -4727,7 +4726,7 @@ exports[`Select renders medium Select 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -4775,7 +4774,7 @@ exports[`Select renders medium Select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4813,7 +4812,7 @@ exports[`Select renders medium Select 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-6-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -4888,10 +4887,10 @@ exports[`Select renders medium Select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-6-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-6-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -4921,15 +4920,15 @@ exports[`Select renders select with a pre selected option 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -4937,7 +4936,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4949,36 +4948,36 @@ exports[`Select renders select with a pre selected option 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -5018,7 +5017,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -5090,7 +5089,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5130,7 +5129,7 @@ exports[`Select renders select with a pre selected option 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-47-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
         value="option 1"
       >
@@ -5213,10 +5212,10 @@ exports[`Select renders select with a pre selected option 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-47-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-47-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -5246,15 +5245,15 @@ exports[`Select renders select with a selected option 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -5262,7 +5261,7 @@ exports[`Select renders select with a selected option 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5274,36 +5273,36 @@ exports[`Select renders select with a selected option 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -5343,7 +5342,7 @@ exports[`Select renders select with a selected option 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -5415,7 +5414,7 @@ exports[`Select renders select with a selected option 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5455,7 +5454,7 @@ exports[`Select renders select with a selected option 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-50-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
         value="option 1"
       >
@@ -5538,10 +5537,10 @@ exports[`Select renders select with a selected option 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-50-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-50-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -5571,15 +5570,15 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -5587,7 +5586,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5599,36 +5598,36 @@ exports[`Select renders select with leading and trailing icon 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -5650,7 +5649,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5713,7 +5712,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -5793,7 +5792,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
         aria-haspopup="listbox"
         class="emotion-5"
         data-testid="select-button"
-        id="downshift-53-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -5887,10 +5886,10 @@ exports[`Select renders select with leading and trailing icon 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-53-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-53-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -5920,15 +5919,15 @@ exports[`Select renders select with non-string options 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -5936,7 +5935,7 @@ exports[`Select renders select with non-string options 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5948,36 +5947,36 @@ exports[`Select renders select with non-string options 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -6017,7 +6016,7 @@ exports[`Select renders select with non-string options 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #2E2E2E;
+  color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -6089,7 +6088,7 @@ exports[`Select renders select with non-string options 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6129,7 +6128,7 @@ exports[`Select renders select with non-string options 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-56-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
         value="option 2"
       >
@@ -6214,10 +6213,10 @@ exports[`Select renders select with non-string options 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-56-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-56-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -6247,15 +6246,15 @@ exports[`Select renders small Select 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -6263,7 +6262,7 @@ exports[`Select renders small Select 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6275,36 +6274,36 @@ exports[`Select renders small Select 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -6344,7 +6343,7 @@ exports[`Select renders small Select 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -6392,7 +6391,7 @@ exports[`Select renders small Select 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6430,7 +6429,7 @@ exports[`Select renders small Select 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-3-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -6505,10 +6504,10 @@ exports[`Select renders small Select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-3-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-3-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -6538,15 +6537,15 @@ exports[`Select should render custom placeholder 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -6554,7 +6553,7 @@ exports[`Select should render custom placeholder 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6566,36 +6565,36 @@ exports[`Select should render custom placeholder 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -6635,7 +6634,7 @@ exports[`Select should render custom placeholder 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -6683,7 +6682,7 @@ exports[`Select should render custom placeholder 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6721,7 +6720,7 @@ exports[`Select should render custom placeholder 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-12-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -6796,10 +6795,10 @@ exports[`Select should render custom placeholder 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-12-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
-        id="downshift-12-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       />
@@ -6829,15 +6828,15 @@ exports[`Select virtualize long list 1`] = `
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #919191;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #3B3B3B;
 }
 
 .emotion-0:focus:not(:disabled) {
@@ -6845,7 +6844,7 @@ exports[`Select virtualize long list 1`] = `
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6857,36 +6856,36 @@ exports[`Select virtualize long list 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
+  border-color: #007B22;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:valid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
+  border-color: #E2E2E2;
+  color: #ABABAB;
 }
 
 .emotion-0:disabled svg {
-  fill: #C0C0C0;
+  fill: #ABABAB;
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
   border-color: #3768FB;
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
+  border-color: #D60000;
+  background-color: #F1F1F1;
 }
 
 .emotion-1 {
@@ -6926,7 +6925,7 @@ exports[`Select virtualize long list 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -6974,7 +6973,7 @@ exports[`Select virtualize long list 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7012,7 +7011,7 @@ exports[`Select virtualize long list 1`] = `
         aria-haspopup="listbox"
         class="emotion-2"
         data-testid="select-button"
-        id="downshift-90-toggle-button"
+        id="downshift-0-toggle-button"
         type="button"
       >
         <div
@@ -7111,7 +7110,7 @@ exports[`Select virtualize long list 1`] = `
   -webkit-column-gap: 8px;
   column-gap: 8px;
   background-color: transparent;
-  color: #2E2E2E;
+  color: #3B3B3B;
   text-overflow: ellipsis;
   border-radius: 0;
   border-style: solid;
@@ -7133,43 +7132,43 @@ exports[`Select virtualize long list 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:focus:not(:disabled) {
-  background-color: #FAFAFA;
+  background-color: #F1F1F1;
   border-color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:disabled {
-  color: #C0C0C0;
+  color: #ABABAB;
 }
 
 .emotion-2:selected:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 .emotion-2:selected:focus:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
   border-color: #3358CC;
 }
 
 .emotion-2:selected:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:selected:focus:active:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #ECF1FF;
 }
 
 .emotion-2:selected:focus:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #0A0A0A;
+  background-color: #ECF1FF;
+  color: #111111;
 }
 
 <div
@@ -7186,10 +7185,10 @@ exports[`Select virtualize long list 1`] = `
       </span>
       <div
         aria-describedby="mock-nk-1"
-        aria-labelledby="downshift-90-label"
+        aria-labelledby="downshift-0-label"
         class="emotion-1"
         data-testid="select-panel"
-        id="downshift-90-menu"
+        id="downshift-0-menu"
         role="listbox"
         tabindex="-1"
       >
@@ -7199,7 +7198,7 @@ exports[`Select virtualize long list 1`] = `
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-90-item-120"
+          id="downshift-0-item-120"
           role="option"
           style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
           value="Latvia"
@@ -7211,7 +7210,7 @@ exports[`Select virtualize long list 1`] = `
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-90-item-121"
+          id="downshift-0-item-121"
           role="option"
           style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
           value="Lebanon"
@@ -7223,7 +7222,7 @@ exports[`Select virtualize long list 1`] = `
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-90-item-122"
+          id="downshift-0-item-122"
           role="option"
           style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
           value="Lesotho"
@@ -7235,7 +7234,7 @@ exports[`Select virtualize long list 1`] = `
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-90-item-123"
+          id="downshift-0-item-123"
           role="option"
           style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
           value="Liberia"
@@ -7247,7 +7246,7 @@ exports[`Select virtualize long list 1`] = `
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-90-item-124"
+          id="downshift-0-item-124"
           role="option"
           style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
           value="Libya"

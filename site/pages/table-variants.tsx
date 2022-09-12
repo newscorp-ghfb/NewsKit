@@ -1,6 +1,5 @@
-import {Block, Cell, Grid, H3, TabSize, Link, newskitLightTheme} from 'newskit';
+import {Block, Cell, Grid, H3, Link, newskitLightTheme} from 'newskit';
 import React from 'react';
-import {parseEnumValues} from '../utils/parse-enum-values';
 import Layout from '../components/layout';
 import {Table} from '../components/table';
 import {Mono} from '../components/flags';
@@ -60,7 +59,7 @@ const inkColorRows = getTokenType(newskitLightTheme.colors, 'ink').map(
   }),
 );
 
-const H: React.FC = ({children}) => (
+const H: React.FC<{children: React.ReactNode}> = ({children}) => (
   <>
     <Block spaceStack="space090" />
     <Block spaceStack="space040">
@@ -362,7 +361,7 @@ const Page: React.FC<{
             },
             {
               name: 'size',
-              type: parseEnumValues(TabSize),
+              type: 'small | medium | large',
               description:
                 'If provided, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             },

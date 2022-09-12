@@ -22,10 +22,12 @@ export type ToastProviderProps = {
 
 export type ToastOptions = Pick<ToastProviderProps, 'autoHideDuration'>;
 
+export type Renderable = JSX.Element | string | number | null;
+
 export type ToastAsFunction = (props: {
   onClose: Function;
   id: ToastID;
-}) => React.ReactNode;
+}) => Renderable;
 
 export interface ToastOverrides extends LogicalProps {
   stylePreset?: MQ<string>;

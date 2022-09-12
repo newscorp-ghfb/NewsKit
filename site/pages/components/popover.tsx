@@ -466,6 +466,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       components: [
         {
+          title: 'Popover',
           propsSummary:
             'The Popover has a range of props that can be used to define an appropriate experience for different use cases.',
           overridesSummary:
@@ -815,33 +816,8 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    compliance={{
-      states: true,
-      variations: true,
-      themes: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      performance: false,
-      design: true,
-      props: true,
-      uiKit: true,
-    }}
     related={{
-      related: [
-        'Block',
-        'Card',
-        'Divider',
-        'Drawer',
-        'Fieldset',
-        'Grid',
-        'Grid Layout',
-        'Modal',
-        'Stack',
-        'Structured List',
-        'Visibility',
-      ],
+      related: ['Block', 'Divider', 'Drawer', 'Modal'],
     }}
   />
 );

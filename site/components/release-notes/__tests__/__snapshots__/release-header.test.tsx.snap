@@ -30,23 +30,23 @@ exports[`ReleaseHeader renders correctly 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  color: #2B4AAB;
+  color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #2B4AAB;
+  fill: #254CAC;
 }
 
 .emotion-1:active:not(:disabled) {
-  color: #213A82;
+  color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #213A82;
+  fill: #14328D;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -122,7 +122,7 @@ exports[`ReleaseHeader renders correctly 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
 }
@@ -150,7 +150,7 @@ exports[`ReleaseHeader renders correctly 1`] = `
 
 .emotion-8 {
   margin: 0;
-  color: #535353;
+  color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -163,7 +163,7 @@ exports[`ReleaseHeader renders correctly 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #535353;
+  fill: #6A6A6A;
 }
 
 .emotion-8::before {
@@ -325,10 +325,10 @@ exports[`ReleaseHeader renders correctly 1`] = `
           class="emotion-11"
           data-testid="flag"
         >
-          <div
+          <span
             class="emotion-12"
           >
-            <div
+            <span
               class="emotion-3"
             >
               <span
@@ -336,8 +336,8 @@ exports[`ReleaseHeader renders correctly 1`] = `
               >
                 Patch
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </div>
       </span>
     </span>

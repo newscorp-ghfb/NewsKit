@@ -1,17 +1,6 @@
 import React from 'react';
-import {
-  Tab,
-  TabAlign,
-  Tabs,
-  TabsDistribution,
-  TabsIndicatorPosition,
-  TabSize,
-  TextBlock,
-  UnorderedList,
-  InlineMessage,
-} from 'newskit';
+import {Tab, Tabs, TextBlock, UnorderedList, InlineMessage} from 'newskit';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {parseEnumValues} from '../../utils/parse-enum-values';
 import {Mono} from '../../components/flags';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
@@ -46,19 +35,6 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       introduced: 'v0.20.1',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
-    }}
-    compliance={{
-      variations: true,
-      states: true,
-      behaviours: true,
-      usage: true,
-      accessibility: true,
-      seo: true,
-      props: true,
-      performance: false,
-      design: true,
-      uiKit: true,
-      themes: true,
     }}
     usage={{
       introduction:
@@ -183,14 +159,14 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             },
             {
               name: 'distribution',
-              type: parseEnumValues(TabsDistribution),
-              default: 'TabsDistribution.start',
+              type: ' start | grow | equal',
+              default: 'start',
               description: 'Defines the distribution of the Tabs.',
             },
             {
               name: 'align',
-              type: parseEnumValues(TabAlign),
-              default: 'Tab.Align.Start',
+              type: ' start | end | center',
+              default: 'start',
               description: 'Defines the alignment of the Tabs.',
             },
             {
@@ -500,17 +476,17 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             propName: 'distribution',
             options: [
               {
-                label: 'TabsDistribution.Start',
-                value: TabsDistribution.Start,
+                label: 'start',
+                value: 'start',
                 isDefault: true,
               },
               {
-                label: 'TabsDistribution.Grow',
-                value: TabsDistribution.Grow,
+                label: 'grow',
+                value: 'grow',
               },
               {
-                label: 'TabsDistribution.Equal',
-                value: TabsDistribution.Equal,
+                label: 'equal',
+                value: 'equal',
               },
             ],
           },
@@ -519,17 +495,17 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             propName: 'size',
             options: [
               {
-                label: 'TabSize.Small',
-                value: TabSize.Small,
+                label: 'small',
+                value: 'small',
               },
               {
-                label: 'TabSize.Medium',
-                value: TabSize.Medium,
+                label: 'medium',
+                value: 'medium',
                 isDefault: true,
               },
               {
-                label: 'TabSize.Large',
-                value: TabSize.Large,
+                label: 'large',
+                value: 'large',
               },
             ],
           },
@@ -685,17 +661,17 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             propName: 'align',
             options: [
               {
-                label: 'TabAlign.Center',
-                value: TabAlign.Center,
+                label: 'center',
+                value: 'center',
                 isDefault: true,
               },
               {
-                label: 'TabAlign.Start',
-                value: TabAlign.Start,
+                label: 'start',
+                value: 'start',
               },
               {
-                label: 'TabAlign.End',
-                value: TabAlign.End,
+                label: 'end',
+                value: 'end',
               },
             ],
           },
@@ -704,17 +680,17 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             propName: 'indicatorPosition',
             options: [
               {
-                label: 'TabsIndicatorPosition.Start',
-                value: TabsIndicatorPosition.Start,
+                label: 'start',
+                value: 'start',
               },
               {
-                label: 'TabsIndicatorPosition.End',
-                value: TabsIndicatorPosition.End,
+                label: 'end',
+                value: 'end',
                 isDefault: true,
               },
               {
-                label: 'TabsIndicatorPosition.None',
-                value: TabsIndicatorPosition.None,
+                label: 'none',
+                value: 'none',
               },
             ],
           },
@@ -840,6 +816,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           title: 'Distribution',
           description: (
             <UnorderedList
+              markerAlign="start"
               overrides={{
                 content: {
                   stylePreset: 'inkBase',
@@ -848,19 +825,19 @@ const TabsComponent = (layoutProps: LayoutProps) => (
               }}
             >
               <>
-                <Mono>Start</Mono>&nbsp; Aligns the Tab items to the left of the
+                <Mono>start</Mono>&nbsp; Aligns the Tab items to the left of the
                 content area for horizontal orientation (default) and to the top
                 for vertical orientation. The width of the Tab Group is defined
                 by the width of its children.
               </>
               <>
-                <Mono>Grow</Mono> Spreads all Tab items across the content area,
+                <Mono>grow</Mono> Spreads all Tab items across the content area,
                 filling the entire available width or height depending on the
                 orientation. The width of each Tab item is defined by it’s
                 content.
               </>
               <>
-                <Mono>Equal</Mono> Spaces each tab across the content area
+                <Mono>equal</Mono> Spaces each tab across the content area
                 equally, regardless of the width or height of its children.
               </>
             </UnorderedList> // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -875,7 +852,9 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               <UnorderedList
+                markerAlign="start"
                 overrides={{
+                  marginBlockEnd: 'space050',
                   content: {
                     stylePreset: 'inkBase',
                     typographyPreset: 'editorialParagraph020',
@@ -883,22 +862,20 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                 }}
               >
                 <>
-                  <Mono>Start</Mono>&nbsp;Aligns the Tab item label and icons to
+                  <Mono>start</Mono>&nbsp;Aligns the Tab item label and icons to
                   the left.
                 </>
                 <>
-                  <Mono>Center</Mono> Centers the Tab item label and icons.
+                  <Mono>center</Mono> Centers the Tab item label and icons.
                 </>
                 <>
-                  <Mono>End</Mono> Aligns the Tab item label and icons to the
+                  <Mono>end</Mono> Aligns the Tab item label and icons to the
                   right.
                 </>
               </UnorderedList>
-              <p>
-                NOTE - The default alignment depends on the orientation. When
-                Tabs are vertical it’s <Mono>Start</Mono> and when Tabs are
-                horizontal it’s <Mono>Center</Mono>.
-              </p>
+              NOTE - The default alignment depends on the orientation. When Tabs
+              are vertical it’s <Mono>Start</Mono> and when Tabs are horizontal
+              it’s <Mono>Center</Mono>.
             </> // eslint-disable-next-line @typescript-eslint/no-explicit-any
           ) as any,
 
@@ -1128,7 +1105,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       introduction: 'Ensure icons have Alt Text applied.',
     }}
     related={{
-      related: ['Accordion', 'Link', 'Scroll', 'Menu', 'Tags', 'Title Bar'],
+      related: ['Accordion', 'Link', 'Menu', 'Tag'],
     }}
   />
 );
