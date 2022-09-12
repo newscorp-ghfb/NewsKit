@@ -80,7 +80,7 @@ export const TextAreaStates = () => (
       <StorybookCase title={state as string}>
         <Label>Label</Label>
         <TextArea placeholder="Placeholder" state={state} />
-        <AssistiveText>Assistive Text</AssistiveText>
+        <AssistiveText state={state}>Assistive Text</AssistiveText>
       </StorybookCase>
     ))}
     <StorybookCase title="read only">
@@ -215,6 +215,14 @@ export default {
   title: 'NewsKit Light/text-area',
   component: TextArea,
   disabledRules: ['color-contrast'],
+  parameters: {
+    nkDocs: {
+      title: 'Text Area',
+      url: 'https://newskit.co.uk/components/text-area',
+      description:
+        'Text areas allow users to enter and edit multi-line text. They typically appear in forms.',
+    },
+  },
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider

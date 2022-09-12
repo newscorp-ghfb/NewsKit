@@ -1,17 +1,16 @@
 import React from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {withPerformance} from 'storybook-addon-performance';
+import {Stories, DocsContext} from '@storybook/addon-docs';
 import {
-  Title,
-  Subtitle,
-  Description,
-  Primary,
-  ArgsTable,
-  Stories,
-  PRIMARY_STORY,
-} from '@storybook/addon-docs';
-import {NewsKitProvider, styled, getColorCssFromTheme} from '../src';
+  NewsKitProvider,
+  styled,
+  getColorCssFromTheme,
+  newskitLightTheme,
+  ThemeProvider,
+} from '../src';
 import {getThemeObject} from '../src/test/theme-select-object';
+import {StoryDocsHeader} from '../src/test/storybook-comps';
 
 const unlimitedScenarios = [
   'grid',
@@ -96,15 +95,16 @@ export const parameters = {
     ],
   },
   docs: {
-    page: () => (
-      <>
-        <Title />
-        <Subtitle />
-        <Description />
-        <ArgsTable story={PRIMARY_STORY} />
-        <Stories includePrimary />
-      </>
-    ),
+    // We create a custom Docs page, using of our components for the header
+    page: () => {
+      const docsContext = React.useContext(DocsContext);
+      return (
+        <ThemeProvider theme={newskitLightTheme}>
+          <StoryDocsHeader context={docsContext} />
+          <Stories includePrimary />
+        </ThemeProvider>
+      );
+    },
   },
 };
 

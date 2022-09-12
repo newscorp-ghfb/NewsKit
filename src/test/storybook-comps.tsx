@@ -3,6 +3,9 @@ import {GridLayout} from '../grid-layout';
 import {TextBlock} from '../text-block';
 import {Block} from '../block';
 import {MQ, styled, getColorCssFromTheme} from '../utils/style';
+import {get} from '../utils/get';
+import {LinkStandalone} from '../link';
+import {TitleBar} from '../title-bar';
 
 interface Props {
   children: React.ReactNode;
@@ -108,3 +111,27 @@ export const StorybookCase = ({title, children}: StorybookCaseProps) => (
     <Block>{children}</Block>
   </GridLayout>
 );
+
+export const StoryDocsHeader = ({context}: {context: Object}) => {
+  const autoTitle = get(context, 'title').replace('NewsKit Light/', '');
+  const title = get(context, 'parameters.nkDocs.title') || autoTitle;
+  const description = get(context, 'parameters.nkDocs.description');
+  const url = get(context, 'parameters.nkDocs.url');
+  const link = () =>
+    url ? <LinkStandalone href={url}>Documentation</LinkStandalone> : null;
+
+  return (
+    <GridLayout rowGap="space040" overrides={{marginBlockEnd: 'space060'}}>
+      <TitleBar
+        actionItem={link}
+        overrides={{
+          spaceInset: 'space000',
+          heading: {typographyPreset: 'editorialHeadline050'},
+        }}
+      >
+        {title}
+      </TitleBar>
+      {description && <TextBlock>{description}</TextBlock>}
+    </GridLayout>
+  );
+};
