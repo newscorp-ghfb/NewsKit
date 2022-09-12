@@ -644,7 +644,7 @@ export const StoryTooltipNoPointer = () => (
       content="Tooltip content"
       placement="right"
       hidePointer
-      overrides={{distance: 'space0'}}
+      overrides={{distance: 'space000'}}
     >
       <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button
