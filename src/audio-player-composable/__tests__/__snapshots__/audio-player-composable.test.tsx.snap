@@ -6435,6 +6435,10 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 }
 
 .emotion-2 {
+  padding-block: 12px;
+}
+
+.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6467,33 +6471,33 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   cursor: pointer;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #3358CC;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #ECF1FF;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   background-color: #D5E0FC;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background-color: transparent;
   color: #ABABAB;
 }
 
-.emotion-2:disabled svg {
+.emotion-3:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-2:focus-visible:not(:disabled) {
+.emotion-3:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -6502,14 +6506,14 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-2:focus-visible:not(:disabled) {
+    .emotion-3:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-2 {
+  .emotion-3 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6517,14 +6521,14 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-2 {
+  .emotion-3 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6545,7 +6549,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   margin-right: calc(-8px/2);
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6554,7 +6558,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   margin-right: calc(8px/2);
 }
 
-.emotion-5 {
+.emotion-6 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -6564,7 +6568,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6572,7 +6576,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6592,37 +6596,43 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
       <div
         class="emotion-1"
       >
-        <button
-          aria-label="Mute"
+        <div
+          aria-haspopup="dialog"
           class="emotion-2"
-          data-testid="mute-button"
-          type="button"
+          id="ref-MOCK-ID"
         >
-          <span
+          <button
+            aria-label="Mute"
             class="emotion-3"
+            data-testid="mute-button"
+            type="button"
           >
             <span
               class="emotion-4"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-5 emotion-6"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="emotion-5"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  class="emotion-6 emotion-7"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                  />
+                </svg>
+              </span>
             </span>
-          </span>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </section>

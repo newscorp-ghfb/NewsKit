@@ -996,7 +996,7 @@ export const AudioPlayerOverrides = () => {
         <AudioPlayerVolumeControl
           layout="vertical"
           overrides={{
-            distance: 'space080',
+            spaceBetween: 'space080',
           }}
         />
       </AudioPlayerComposable>

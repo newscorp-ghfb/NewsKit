@@ -66,9 +66,9 @@ export const StyledBlock = styled.div<
 >`
   ${getResponsiveSpace(
     'paddingBlock',
-    `audioPlayerVolumeControl.distance`,
+    `audioPlayerVolumeControl.spaceBetween`,
     '',
-    'distance',
+    'spaceBetween',
   )};
 `;
 

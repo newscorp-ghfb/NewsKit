@@ -1396,7 +1396,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the size of volume control.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.distance',
+              attribute: 'audioPlayerVolumeControl.spaceBetween',
               type: 'MQ<string>',
               default: 'space030',
               description:
