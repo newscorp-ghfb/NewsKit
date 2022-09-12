@@ -847,8 +847,8 @@ exports[`TextArea render size: large 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-0 svg {
