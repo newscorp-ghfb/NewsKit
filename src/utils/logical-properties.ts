@@ -136,13 +136,16 @@ export const logicalMarginProps = (
 ) => (props: ThemeProp): CSSObject =>
   logicalMargins(props, defaultsPath, overridesPath);
 
-const logicalPropsArray = [
+const logicalMarginPropsArray = [
   'marginInlineStart',
   'marginInlineEnd',
   'marginInline',
   'marginBlockStart',
   'marginBlockEnd',
   'marginBlock',
+];
+
+const logicalPaddingPropsArray = [
   'paddingInlineStart',
   'paddingInlineEnd',
   'paddingInline',
@@ -151,8 +154,21 @@ const logicalPropsArray = [
   'paddingBlock',
 ];
 
+const logicalPropsArray = [
+  ...logicalPaddingPropsArray,
+  ...logicalMarginPropsArray,
+];
+
 export const omitLogicalPropsFromOverrides = (overrides: object | undefined) =>
   rejectObject(overrides || {}, logicalPropsArray as keyof object);
+
+export const omitLogicalMarginPropsFromOverrides = (
+  overrides: object | undefined,
+) => rejectObject(overrides || {}, logicalMarginPropsArray as keyof object);
+
+export const omitLogicalPaddingPropsFromOverrides = (
+  overrides: object | undefined,
+) => rejectObject(overrides || {}, logicalPaddingPropsArray as keyof object);
 
 export const extractLogicalPropsFromOverrides = (
   overrides: object | undefined,
