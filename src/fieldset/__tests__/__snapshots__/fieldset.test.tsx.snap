@@ -126,6 +126,10 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
@@ -815,6 +819,10 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -1504,6 +1512,10 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;

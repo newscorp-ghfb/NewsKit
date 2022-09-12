@@ -4158,6 +4158,10 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -5590,6 +5594,10 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -7029,6 +7037,10 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -8780,6 +8792,10 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -9446,6 +9462,10 @@ exports[`FormInput renders with nested inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -9771,6 +9791,10 @@ exports[`FormInput renders with nested inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;

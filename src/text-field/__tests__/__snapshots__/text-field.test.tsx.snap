@@ -126,6 +126,10 @@ exports[`TextField renders TextField Correctly 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -205,8 +209,6 @@ Object {
   text-overflow: ellipsis;
   margin-inline: 48px;
   margin-block: 32px;
-  padding-inline: 8px;
-  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -313,6 +315,10 @@ Object {
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -321,6 +327,8 @@ Object {
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  padding-inline: 8px;
+  padding-block: 16px;
 }
 
 .emotion-4::before {
@@ -479,8 +487,6 @@ Object {
   text-overflow: ellipsis;
   margin-inline: 48px;
   margin-block: 32px;
-  padding-inline: 8px;
-  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -587,6 +593,10 @@ Object {
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -595,6 +605,8 @@ Object {
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
+  padding-inline: 8px;
+  padding-block: 16px;
 }
 
 .emotion-4::before {
@@ -864,6 +876,10 @@ exports[`TextField renders TextField with overrides 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
@@ -1121,6 +1137,10 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -1365,6 +1385,10 @@ exports[`TextField renders disabled text field 1`] = `
   cursor: not-allowed;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -1589,6 +1613,10 @@ exports[`TextField renders large TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
@@ -1726,6 +1754,10 @@ exports[`TextField renders medium TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -1863,6 +1895,10 @@ exports[`TextField renders small TextField 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -2045,6 +2081,10 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -2313,6 +2353,10 @@ exports[`TextField should render custom placeholder 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
