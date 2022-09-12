@@ -4,19 +4,25 @@ import {
   ContentPrimary,
   ContentSection,
 } from '../../components/content-structure';
-import {HeaderImage} from '../../components/illustrations/theme/header-image';
 import Layout, {LayoutProps} from '../../components/layout';
 import {MediaItem, MediaList} from '../../components/media-list';
 import {HeaderIndex} from '../../components/header-index';
 import {ComponentPageCell} from '../../components/layout-cells';
 import routes from '../../routes';
-import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {
+  getIllustrationComponent,
+  Illustration,
+} from '../../components/illustrations/illustration-loader';
 import {Item} from '../../components/sidebar/types';
 import {HeadNextSeo} from '../../components/head-next-seo';
 import {
   foundationsThemeLight,
   foundationsThemeDark,
 } from '../../theme/doc-theme';
+
+const HeaderImage = () => (
+  <Illustration path="theme/header-image" viewBox="0 0 1572 997" />
+);
 
 const themeRouteList: Item[] =
   routes.filter(route => route.title === 'Theme')[0].subNav || [];

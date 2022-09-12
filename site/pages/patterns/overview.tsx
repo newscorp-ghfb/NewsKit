@@ -2,14 +2,16 @@ import React from 'react';
 import {Grid, ThemeProvider} from 'newskit';
 import routes from '../../routes';
 import Layout, {LayoutProps} from '../../components/layout';
-import {Hero} from '../../components/illustrations/patterns/hero';
 import {Item} from '../../components/sidebar/types';
 import {HeadNextSeo} from '../../components/head-next-seo';
 import {HeaderIndex} from '../../components/header-index/index';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {patternsThemeDark, patternsThemeLight} from '../../theme/doc-theme';
 import {MediaItem, MediaList} from '../../components/media-list';
-import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {
+  getIllustrationComponent,
+  Illustration,
+} from '../../components/illustrations/illustration-loader';
 import {
   ContentPrimary,
   ContentSection,
@@ -36,6 +38,10 @@ const getPatternsCardList = (routeList: Item[]) =>
 
 const patternsIndexRouteListCards = getPatternsCardList(patternsFormRouteList);
 
+const HeaderImage = () => (
+  <Illustration path="patterns/hero" viewBox="0 0 1572 997" />
+);
+
 const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     {({themeMode}) => (
@@ -50,10 +56,11 @@ const Overview = (layoutProps: LayoutProps) => (
             alt: 'Overview',
           }}
         />
-        <HeaderIndex title="Patterns" media={Hero}>
+        <HeaderIndex title="Patterns" media={HeaderImage}>
           Design patterns provide a framework for solving a particular user
           problem in a consistent, considered way.
         </HeaderIndex>
+
         <Grid lgMargin="sizing000" xsRowGutter="sizing000">
           <ComponentPageCell>
             <ContentSection sectionName="forms">

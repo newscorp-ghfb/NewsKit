@@ -2,12 +2,15 @@ import React from 'react';
 import {pathToID} from './utils';
 import {CSSVarsProvider} from '../css-vars-provider';
 
-export const getIllustrationComponent = (path: string) => {
+export const getIllustrationComponent = (
+  path: string,
+  props?: React.SVGProps<SVGSVGElement>,
+) => {
   const id = pathToID(path);
 
   const Component = () => (
     <CSSVarsProvider>
-      <svg viewBox="0 0 1490 838">
+      <svg viewBox="0 0 1490 838" {...props}>
         <use xlinkHref={`/static/illustrations/${path}.svg#${id}`} />
       </svg>
     </CSSVarsProvider>
@@ -16,7 +19,11 @@ export const getIllustrationComponent = (path: string) => {
   return Component;
 };
 
-export const Illustration: React.FC<{path: string}> = ({path}) => {
-  const Component = getIllustrationComponent(path);
+type IllustrationProps = {
+  path: string;
+} & React.SVGProps<SVGSVGElement>;
+
+export const Illustration: React.FC<IllustrationProps> = ({path, ...props}) => {
+  const Component = getIllustrationComponent(path, props);
   return <Component />;
 };

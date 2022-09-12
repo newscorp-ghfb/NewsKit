@@ -3,14 +3,20 @@ import React from 'react';
 import {Block, Cell, Grid} from 'newskit';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {Separator} from '../../components/separator';
-import {HeaderImage} from '../../components/illustrations/components/header-image';
-import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {
+  getIllustrationComponent,
+  Illustration,
+} from '../../components/illustrations/illustration-loader';
 import Layout, {LayoutProps} from '../../components/layout';
 import {SectionIntroduction} from '../../components/section-introduction';
 import {MediaList} from '../../components/media-list';
 import {HeaderIndex} from '../../components/header-index';
 import routes from '../../routes';
 import {HeadNextSeo} from '../../components/head-next-seo';
+
+const HeaderImage = () => (
+  <Illustration path="components/header-image" viewBox="0 0 1572 997" />
+);
 
 const componentCategories: any =
   routes.find(r => r.title === 'Components')?.subNav?.slice(1) || [];
