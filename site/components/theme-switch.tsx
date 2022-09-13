@@ -21,8 +21,8 @@ export const ThemeSwitch: React.FC<
       eventOriginator="theme-switch-button"
       data-testid="theme-switch-button"
       onClick={toggle}
-      title={`${isDark ? 'Disable' : 'Enable'} Dark Theme`}
-      aria-label={`${isDark ? 'Disable' : 'Enable'} Dark Theme`}
+      title={`Enable ${isDark ? 'light' : 'dark'} mode`}
+      aria-label={`Enable ${isDark ? 'light' : 'dark'} mode`}
       aria-pressed={isDark ? 'true' : 'false'}
       overrides={{
         stylePreset: 'buttonLightDarkToggle',
