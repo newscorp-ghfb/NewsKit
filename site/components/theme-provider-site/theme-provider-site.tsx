@@ -1,5 +1,11 @@
 import * as React from 'react';
-import {styled, css, ThemeBase} from 'newskit';
+import {
+  styled,
+  css,
+  ThemeBase,
+  ThemeProvider,
+  ThemeProviderProps,
+} from 'newskit';
 
 const StyledCSSTheme = styled.div`
   ${({theme}) => {
@@ -41,6 +47,8 @@ const StyledCSSTheme = styled.div`
   }}
 `;
 
-export const CSSVarsProvider = ({children}: {children: React.ReactNode}) => (
-  <StyledCSSTheme>{children}</StyledCSSTheme>
+export const ThemeProviderSite = ({children, ...rest}: ThemeProviderProps) => (
+  <ThemeProvider {...rest}>
+    <StyledCSSTheme>{children}</StyledCSSTheme>
+  </ThemeProvider>
 );

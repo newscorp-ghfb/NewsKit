@@ -10,7 +10,7 @@ import {HeadNextSeo} from '../components/head-next-seo/head-next-seo';
 import {PageLoadInstrumentation} from '../components/page-load-instrumentation';
 import {ThemeMode} from '../context';
 import {docsThemeLight, docsThemeDark} from '../theme/doc-theme';
-import {CSSVarsProvider} from '../components/css-vars-provider';
+import {ThemeProviderSite} from '../components/theme-provider-site';
 
 const DARK_MEDIA_QUERY = '(prefers-color-scheme: dark)';
 const STORAGE_KEY_NAME = 'newskit-docs-theme';
@@ -145,14 +145,14 @@ export default class MyApp extends App<Props, State> {
         >
           <ThemeMode.Provider value={themeMode}>
             <PageLoadInstrumentation />
-            <CSSVarsProvider>
+            <ThemeProviderSite theme={theme}>
               <Component
                 {...pageProps}
                 path={path}
                 toggleTheme={this.toggleTheme}
                 themeMode={themeMode}
               />
-            </CSSVarsProvider>
+            </ThemeProviderSite>
           </ThemeMode.Provider>
         </NewsKitProvider>
       </>

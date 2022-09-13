@@ -1,6 +1,5 @@
 import React from 'react';
 import {pathToID} from './utils';
-import {CSSVarsProvider} from '../css-vars-provider';
 
 export const getIllustrationComponent = (
   path: string,
@@ -9,11 +8,9 @@ export const getIllustrationComponent = (
   const id = pathToID(path);
 
   const Component = () => (
-    <CSSVarsProvider>
-      <svg viewBox="0 0 1490 838" {...props}>
-        <use xlinkHref={`/static/illustrations/${path}.svg#${id}`} />
-      </svg>
-    </CSSVarsProvider>
+    <svg viewBox="0 0 1490 838" {...props}>
+      <use href={`/static/illustrations/${path}.svg#${id}`} />
+    </svg>
   );
 
   return Component;
