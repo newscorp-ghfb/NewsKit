@@ -29,7 +29,6 @@ export interface FormInputTextFieldProps
 }
 
 export interface TextFieldProps extends FormInputTextFieldProps, EventData {
-  rules?: FormValidationRules;
   name?: string;
 }
 
