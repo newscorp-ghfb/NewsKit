@@ -148,7 +148,7 @@ export const StoryAudioPlayer = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(3);
   return (
     <>
-      {allPlayersCanPlay && <div id="allPlayersCanPlay" />}
+      {allPlayersCanPlay && <div id="storyAudioPlayerReady" />}
       <StorybookHeading>Audio Player</StorybookHeading>
       <StorybookSubHeading>default</StorybookSubHeading>
       <AudioPlayerContainer>
@@ -256,7 +256,7 @@ export const StoryAudioPlayer = () => {
 StoryAudioPlayer.storyName = 'audio-player';
 StoryAudioPlayer.parameters = {
   eyes: {
-    waitBeforeCapture: '#allPlayersCanPlay',
+    waitBeforeCapture: '#storyAudioPlayerReady',
   },
 };
 
@@ -264,7 +264,7 @@ export const StoryAudioPlayerLogicalOverrides = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
   return (
     <>
-      {allPlayersCanPlay && <div id="allPlayersCanPlay" />}
+      {allPlayersCanPlay && <div id="storyAudioPlayerLogicalOverridesReady" />}
       <StorybookSubHeading>with overrides</StorybookSubHeading>
       <AudioPlayerContainer>
         <AudioPlayer
@@ -285,7 +285,7 @@ export const StoryAudioPlayerLogicalOverrides = () => {
 StoryAudioPlayerLogicalOverrides.storyName = 'audio-player-logical-overrides';
 StoryAudioPlayerLogicalOverrides.parameters = {
   eyes: {
-    waitBeforeCapture: '#allPlayersCanPlay',
+    waitBeforeCapture: '#storyAudioPlayerLogicalOverridesReady',
   },
 };
 
@@ -310,27 +310,11 @@ StoryAudioPlayerLoadingState.parameters = {
   },
 };
 
-export const StoryAudioPlayerWithAutoPlay = () => (
-  <AudioPlayerContainer>
-    <AudioPlayer
-      src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3"
-      autoPlay
-      preload="auto"
-      disableNextTrack
-      disablePreviousTrack
-      ariaLandmark="audio player with autoPlay"
-    />
-  </AudioPlayerContainer>
-);
-StoryAudioPlayerWithAutoPlay.storyName = 'audio-player-with-autoPlay';
-// No visual test is required for autoPlay behaviour.
-StoryAudioPlayerWithAutoPlay.parameters = {eyes: {include: false}};
-
 export const StoryAudioPlayerWithControls = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(3);
   return (
     <>
-      {allPlayersCanPlay && <div id="allPlayersCanPlay" />}
+      {allPlayersCanPlay && <div id="storyAudioPlayerWithControlsReady" />}
       <StorybookHeading>Audio Player</StorybookHeading>
       <StorybookSubHeading>with popout link</StorybookSubHeading>
       <AudioPlayerContainer>
@@ -369,7 +353,7 @@ export const StoryAudioPlayerWithControls = () => {
 StoryAudioPlayerWithControls.storyName = 'audio-player-with-controls';
 StoryAudioPlayerWithControls.parameters = {
   eyes: {
-    waitBeforeCapture: '#allPlayersCanPlay',
+    waitBeforeCapture: '#storyAudioPlayerWithControlsReady',
   },
 };
 
@@ -377,7 +361,9 @@ export const StoryAudioPlayerWithHiddenControls = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(4);
   return (
     <>
-      {allPlayersCanPlay && <div id="allPlayersCanPlay" />}
+      {allPlayersCanPlay && (
+        <div id="storyAudioPlayerWithHiddenControlsReady" />
+      )}
       <StorybookHeading>Audio Player</StorybookHeading>
       <StorybookSubHeading>with hidden volume controls</StorybookSubHeading>
       <AudioPlayerContainer>
@@ -431,7 +417,7 @@ StoryAudioPlayerWithHiddenControls.storyName =
   'audio-player-with-hidden-controls';
 StoryAudioPlayerWithHiddenControls.parameters = {
   eyes: {
-    waitBeforeCapture: '#allPlayersCanPlay',
+    waitBeforeCapture: '#storyAudioPlayerWithHiddenControlsReady',
   },
 };
 

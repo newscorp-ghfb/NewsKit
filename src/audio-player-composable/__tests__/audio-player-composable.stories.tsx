@@ -504,7 +504,7 @@ export const StoryAudioPlayer = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(4);
   return (
     <StyledPage>
-      {allPlayersCanPlay && <div id="allPlayersCanPlay" />}
+      {allPlayersCanPlay && <div id="storyAudioPlayerReady" />}
       <StorybookSubHeading>Audio Player - full recorded</StorybookSubHeading>
       <AudioPlayerFullRecorded
         ariaLandmark="audio player full recorded"
@@ -538,7 +538,7 @@ export const StoryAudioPlayer = () => {
 StoryAudioPlayer.storyName = 'audio-player';
 StoryAudioPlayer.parameters = {
   eyes: {
-    waitBeforeCapture: '#allPlayersCanPlay',
+    waitBeforeCapture: '#storyAudioPlayerReady',
   },
 };
 
@@ -546,7 +546,7 @@ export const StoryAudioSubComponents = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
   return (
     <StyledPage>
-      {allPlayersCanPlay && <div id="allPlayersCanPlay" />}
+      {allPlayersCanPlay && <div id="storyAudioSubComponentsReady" />}
       <StorybookHeading>Audio Player - subcomponents</StorybookHeading>
 
       <AudioPlayerComposable
@@ -659,7 +659,7 @@ export const StoryAudioSubComponents = () => {
 };
 StoryAudioSubComponents.storyName = 'audio-player-sub-components';
 StoryAudioSubComponents.parameters = {
-  eyes: {waitBeforeCapture: '#allPlayersCanPlay'},
+  eyes: {waitBeforeCapture: '#storyAudioSubComponentsReady'},
 };
 
 export const StoryAudioPlayerWithInitialProps = () => {
@@ -667,7 +667,7 @@ export const StoryAudioPlayerWithInitialProps = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
   return (
     <StyledPage>
-      {allPlayersCanPlay && <div id="allPlayersCanPlay" />}
+      {allPlayersCanPlay && <div id="storyAudioPlayerWithInitialPropsReady" />}
       <StorybookHeading>Audio Player - initial prop</StorybookHeading>
       <AudioPlayerComposable
         src={AUDIO_SRC}
@@ -727,14 +727,14 @@ export const StoryAudioPlayerWithInitialProps = () => {
 };
 StoryAudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
 StoryAudioPlayerWithInitialProps.parameters = {
-  eyes: {waitBeforeCapture: '#allPlayersCanPlay'},
+  eyes: {waitBeforeCapture: '#storyAudioPlayerWithInitialPropsReady'},
 };
 export const StoryAudioPlayerOverrides = () => {
   const breakpointKey = useBreakpointKey();
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(5);
   return (
     <StyledPage>
-      {allPlayersCanPlay && <div id="allPlayersCanPlay" />}
+      {allPlayersCanPlay && <div id="storyAudioPlayerOverridesReady" />}
       <StorybookSubHeading>Audio player with overrides</StorybookSubHeading>
 
       <ThemeProvider theme={myCustomTheme}>
@@ -1031,7 +1031,7 @@ export const StoryAudioPlayerOverrides = () => {
 };
 StoryAudioPlayerOverrides.storyName = 'audio-player-overrides';
 StoryAudioPlayerOverrides.parameters = {
-  eyes: {waitBeforeCapture: '#allPlayersCanPlay'},
+  eyes: {waitBeforeCapture: '#storyAudioPlayerOverridesReady'},
 };
 
 export const StoryAudioPlayerAutoplay = () => (
@@ -1047,7 +1047,9 @@ export const StoryAudioPlayerPlaybackSpeedTriggerButton = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(2);
   return (
     <StyledPage>
-      {allPlayersCanPlay && <div id="allPlayersCanPlay" />}
+      {allPlayersCanPlay && (
+        <div id="storyAudioPlayerPlaybackSpeedTriggerButtonReady" />
+      )}
       <StorybookHeading>
         Audio Player - playback speed control trigger overrides
       </StorybookHeading>
@@ -1082,7 +1084,7 @@ StoryAudioPlayerPlaybackSpeedTriggerButton.storyName =
   'audio-player-playback-speed-trigger-button';
 StoryAudioPlayerPlaybackSpeedTriggerButton.parameters = {
   eyes: {
-    waitBeforeCapture: '#allPlayersCanPlay',
+    waitBeforeCapture: '#storyAudioPlayerPlaybackSpeedTriggerButtonReady',
   },
 };
 
@@ -1290,7 +1292,9 @@ export const StoryAudioPlayerVolumeControlLayout = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
   return (
     <StyledPage>
-      {allPlayersCanPlay && <div id="allPlayersCanPlay" />}
+      {allPlayersCanPlay && (
+        <div id="storyAudioPlayerVolumeControlLayoutReady" />
+      )}
       <StorybookSubHeading>Volume control horizontal</StorybookSubHeading>
       <AudioPlayerComposable
         src={AUDIO_SRC}
@@ -1317,7 +1321,7 @@ export const StoryAudioPlayerVolumeControlLayout = () => {
 StoryAudioPlayerVolumeControlLayout.storyName =
   'audio-player-volume-control-layout';
 StoryAudioPlayerVolumeControlLayout.parameters = {
-  eyes: {waitBeforeCapture: '#allPlayersCanPlay'},
+  eyes: {waitBeforeCapture: '#storyAudioPlayerVolumeControlLayoutReady'},
 };
 
 export const StoryAudioPlayerLoadingState = () => (
