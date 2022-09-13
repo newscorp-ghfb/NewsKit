@@ -30,6 +30,7 @@ export const KeepInTouch = () => (
     <GridLayout
       columns={{xs: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)'}}
       columnGap="space090"
+      overrides={{marginBlockEnd: 'space080'}}
     >
       {keepInTouchContent.map(({title, url, description, icon}) => (
         <Card
