@@ -49,16 +49,76 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 .emotion-2 {
-  overflow-x: auto;
+  margin-bottom: 40px;
 }
 
 .emotion-3 {
+  margin: 0;
+  color: #09111C;
+  display: inline-block;
+}
+
+.emotion-3 svg {
+  fill: #09111C;
+}
+
+@media screen and (max-width: 1439px) {
+  .emotion-3 {
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    line-height: 22.5px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-3::before {
+    content: '';
+    margin-bottom: -0.2155em;
+    display: block;
+  }
+
+  .emotion-3::after {
+    content: '';
+    margin-top: -0.2125em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    font-family: "Poppins",sans-serif;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-3::before {
+    content: '';
+    margin-bottom: -0.2155em;
+    display: block;
+  }
+
+  .emotion-3::after {
+    content: '';
+    margin-top: -0.2125em;
+    display: block;
+  }
+}
+
+.emotion-4 {
+  overflow-x: auto;
+}
+
+.emotion-5 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-6 {
   border-style: solid;
   border-color: #C0C7CC;
   border-width: 0 0 1px 0;
@@ -77,7 +137,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   padding-bottom: 16px;
 }
 
-.emotion-5 {
+.emotion-7 {
   border-style: solid;
   border-color: #C0C7CC;
   border-width: 0 0 1px 0;
@@ -96,7 +156,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   padding-bottom: 16px;
 }
 
-.emotion-8 {
+.emotion-10 {
   border-style: solid;
   border-color: #C0C7CC;
   border-width: 0 0 1px 0;
@@ -115,7 +175,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   padding-bottom: 16px;
 }
 
-.emotion-9 {
+.emotion-11 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 0 0 1px 0;
@@ -128,20 +188,20 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   border-width: 0;
 }
 
-.emotion-10 {
+.emotion-12 {
   padding: 16px 16px 16px 0;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-11 {
+.emotion-13 {
   padding: 16px 16px 16px 0;
   min-width: 100px;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -172,16 +232,16 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   white-space: nowrap;
 }
 
-.emotion-12 svg {
+.emotion-14 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-12 svg {
+.emotion-14 svg {
   fill: #2E3F54;
 }
 
-.emotion-13 {
+.emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -202,7 +262,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-14 {
+.emotion-16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -211,7 +271,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-15 {
+.emotion-17 {
   margin: 0;
   font-family: 'DM Mono',courier;
   font-size: 14px;
@@ -221,7 +281,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   display: inline-block;
 }
 
-.emotion-15::before {
+.emotion-17::before {
   content: '';
   display: block;
   height: 0;
@@ -229,7 +289,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   margin-bottom: -0.4267857142857143em;
 }
 
-.emotion-15::after {
+.emotion-17::after {
   content: '';
   display: block;
   height: 0;
@@ -237,7 +297,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   margin-top: -0.3642857142857143em;
 }
 
-.emotion-18 {
+.emotion-20 {
   padding: 16px 16px 16px 0;
   max-width: 100px;
   text-align: left;
@@ -245,7 +305,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   overflow: hidden;
 }
 
-.emotion-19 {
+.emotion-21 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -278,16 +338,16 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   border-width: 1px;
 }
 
-.emotion-19 svg {
+.emotion-21 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-19 svg {
+.emotion-21 svg {
   fill: #007B22;
 }
 
-.emotion-22 {
+.emotion-24 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -297,7 +357,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-22 {
+  .emotion-24 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -305,19 +365,19 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-22 {
+  .emotion-24 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-22.emotion-22 {
+.emotion-24.emotion-24 {
   fill: #007B22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-22.emotion-22 {
+  .emotion-24.emotion-24 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -325,7 +385,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-22.emotion-22 {
+  .emotion-24.emotion-24 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -341,33 +401,42 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
       <div
         class="emotion-2"
       >
-        <table
+        <span
           class="emotion-3"
+        >
+          component
+        </span>
+      </div>
+      <div
+        class="emotion-4"
+      >
+        <table
+          class="emotion-5"
         >
           <thead>
             <tr>
               <th
-                class="emotion-4"
+                class="emotion-6"
               >
                 Name
               </th>
               <th
-                class="emotion-5"
+                class="emotion-7"
               >
                 Type
               </th>
               <th
-                class="emotion-5"
+                class="emotion-7"
               >
                 Default
               </th>
               <th
-                class="emotion-5"
+                class="emotion-7"
               >
                 Description
               </th>
               <th
-                class="emotion-8"
+                class="emotion-10"
               >
                 Required
               </th>
@@ -375,28 +444,28 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
           </thead>
           <tbody>
             <tr
-              class="emotion-9"
+              class="emotion-11"
             >
               <td
-                class="emotion-10"
+                class="emotion-12"
               >
                 children
               </td>
               <td
-                class="emotion-11"
+                class="emotion-13"
               >
                 <span
-                  class="emotion-12"
+                  class="emotion-14"
                   data-testid="flag"
                 >
                   <span
-                    class="emotion-13"
+                    class="emotion-15"
                   >
                     <span
-                      class="emotion-14"
+                      class="emotion-16"
                     >
                       <span
-                        class="emotion-15"
+                        class="emotion-17"
                       >
                         string
                       </span>
@@ -405,29 +474,29 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
                 </span>
               </td>
               <td
-                class="emotion-11"
+                class="emotion-13"
               />
               <td
-                class="emotion-11"
+                class="emotion-13"
               >
                 Description.
               </td>
               <td
-                class="emotion-18"
+                class="emotion-20"
               >
                 <div
-                  class="emotion-19"
+                  class="emotion-21"
                   data-testid="flag"
                 >
                   <span
-                    class="emotion-13"
+                    class="emotion-15"
                   >
                     <span
-                      class="emotion-14"
+                      class="emotion-16"
                     >
                       <svg
                         aria-hidden="true"
-                        class="emotion-22 emotion-23"
+                        class="emotion-24 emotion-25"
                         fill="currentColor"
                         focusable="false"
                         viewBox="0 0 24 24"
