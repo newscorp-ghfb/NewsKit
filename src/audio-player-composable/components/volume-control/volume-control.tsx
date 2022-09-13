@@ -12,7 +12,6 @@ import stylePresets from './style-presets';
 import {AudioPlayerVolumeControlProps} from './types';
 import {GridLayoutItem} from '../../../grid-layout';
 import {
-  StyledBlock,
   StyledGridLayout,
   StyledVolumeSliderContainer,
   StyledVolumeSliderPopupContainer,
@@ -132,16 +131,14 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   );
 
   const verticalMuteButton = (
-    <StyledBlock overrides={overrides}>
-      <MuteButton
-        volume={volume}
-        unMutedVolume={unMutedVolume}
-        onChange={onChange}
-        size={muteButtonSize || 'medium'}
-        muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
-        overrides={buttonOverrides}
-      />
-    </StyledBlock>
+    <MuteButton
+      volume={volume}
+      unMutedVolume={unMutedVolume}
+      onChange={onChange}
+      size={muteButtonSize || 'medium'}
+      muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
+      overrides={buttonOverrides}
+    />
   );
   const horizontalMuteButton = (
     <MuteButton

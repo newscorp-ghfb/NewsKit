@@ -1434,6 +1434,7 @@ Object {
         "paddingBlock": "space030",
         "paddingInline": "space030",
       },
+      "distance": "space030",
       "stylePreset": "audioPlayerVolumeControlPopover",
     },
     "slider": Object {

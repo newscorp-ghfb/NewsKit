@@ -996,7 +996,7 @@ export const AudioPlayerOverrides = () => {
         <AudioPlayerVolumeControl
           layout="vertical"
           overrides={{
-            spaceBetween: 'space080',
+            popover: {distance: 'space080'},
           }}
         />
       </AudioPlayerComposable>
@@ -1265,8 +1265,9 @@ export const AudioPlayerVolumeControlLayout = () => (
 
       <StorybookSubHeading>Volume control Collapsed</StorybookSubHeading>
       <AudioPlayerVolumeControl layout="collapsed" />
-
-      <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
+      <StorybookSubHeading>
+        Volume control vertical-default space030
+      </StorybookSubHeading>
       <AudioPlayerVolumeControl layout="vertical" />
     </AudioPlayerComposable>
   </StyledPage>
