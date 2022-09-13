@@ -1,6 +1,6 @@
 import React from 'react';
 import {TagProps} from './types';
-import {Flag} from '../flag';
+import {BaseFlag} from '../flag/flag';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {as as emotionAs} from '../utils/component';
 import {useTheme} from '../theme';
@@ -10,7 +10,7 @@ import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {getTransitionPreset} from '../utils/style/transition-preset';
 
-const StyledFlag = styled(Flag)`
+const StyledFlag = styled(BaseFlag)`
   ${({href, disabled}: TagProps) => href && !disabled && {cursor: 'pointer'}}
   ${({size}) => getTransitionPreset(`tag.${size}`, '')};
 `;
