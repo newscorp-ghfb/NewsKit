@@ -5,7 +5,7 @@ import {ComponentType, useEffect, useState} from 'react';
 import {AudioPlayerComposableProps} from '../audio-player-composable/types';
 import {AudioPlayerProps} from '../audio-player';
 
-const isVisualTest = process.env.APPLITOOLS_BATCH_ID !== undefined;
+const isVisualTest = process.env.STORYBOOK_IS_VISUAL_TEST === 'true';
 
 type Props = AudioPlayerProps | AudioPlayerComposableProps;
 type Component =
@@ -26,7 +26,7 @@ export const useAllPlayersCanPlayCheck = (nbPlayers: number) => {
   const [nbLoaded, setNbLoaded] = useState<number>(0);
   const onCanPlay = () => setNbLoaded(latest => latest + 1);
   return {
-    allPlayersCanPlay: nbLoaded >= nbPlayers,
+    allPlayersCanPlay: nbLoaded >= nbPlayers || !isVisualTest,
     onCanPlay,
   };
 };

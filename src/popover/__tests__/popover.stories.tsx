@@ -13,7 +13,7 @@ import {PopoverProps} from '../types';
 import {LinkStandalone} from '../../link';
 
 // Open all Popovers by default when running in Applitools.
-const isApplitoolsTest = process.env.APPLITOOLS_BATCH_ID !== undefined;
+const isApplitoolsTest = process.env.STORYBOOK_IS_VISUAL_TEST === 'true';
 
 const getPlacementStyling = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
