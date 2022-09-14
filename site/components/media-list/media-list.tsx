@@ -32,6 +32,9 @@ export const MediaList: React.FC<MediaListProps> = ({
       >,
     )`
       height: 100%;
+      svg {
+        display: block;
+      }
     `;
 
     const cardListColumns = {
