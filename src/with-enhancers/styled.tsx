@@ -60,6 +60,8 @@ export const StyledInputContainer = styled.div<
     getResponsiveSize('maxHeight', componentDefaultsPath, '', 'maxHeight')}
   ${({componentDefaultsPath}) =>
     getResponsiveSize('minHeight', componentDefaultsPath, '', 'minHeight')}
+
+   // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({componentDefaultsPath}) =>
     getResponsiveSpacingStackHorizontal(componentDefaultsPath)}
 

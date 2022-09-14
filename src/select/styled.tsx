@@ -1,4 +1,4 @@
-import {logicalProps} from '../utils/logical-properties';
+import {logicalPaddingProps, logicalProps} from '../utils/logical-properties';
 import {Theme} from '../theme';
 
 import {
@@ -10,7 +10,11 @@ import {
   getResponsiveSize,
   getSpacingCssFromTheme,
 } from '../utils/style';
-import {ButtonSelectSize, SelectPanelOverrides} from './types';
+import {
+  ButtonSelectSize,
+  SelectButtonOverrides,
+  SelectPanelOverrides,
+} from './types';
 
 const generateCursor = (disabled?: boolean, $loading?: boolean) => {
   if ($loading) {
@@ -47,6 +51,7 @@ export const StyledButtonIcons = styled('div', {
 export const StyledSelectButton = styled.button<{
   $size: ButtonSelectSize;
   $loading?: boolean;
+  overrides?: SelectButtonOverrides;
 }>`
   all: unset;
   flex-grow: 1;
@@ -73,6 +78,8 @@ export const StyledSelectButton = styled.button<{
 
   ${({$size}) =>
     getResponsiveSize(`minWidth`, `select.${$size}.button`, '', 'minWidth')}
+
+  ${({$size}) => logicalPaddingProps(`select.${$size}.button`)};
 `;
 
 export const StyledButtonContents = styled.div<{

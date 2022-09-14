@@ -144,6 +144,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       components: [
         {
+          title: 'Divider',
           propsSummary:
             'The Divider has a prop that can be used to define an appropriate experience for different use cases.',
           overridesSummary:
