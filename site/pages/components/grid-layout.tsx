@@ -354,7 +354,6 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
             'Step-by-step guide for engineers to build a layout using the grid layout component.',
           media: getIllustrationComponent('guides/grid-layout-guide/hero'),
           href: '/getting-started/code/grid-layout-step-by-step/',
-          mediaContainerFlex: true,
         },
         {
           title: 'How to build a Section using Grid Layouts',
@@ -365,7 +364,6 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
           ),
           href:
             'https://www.figma.com/file/p2pmKPxzLsSMwWmHFhgPa0/01---NewsKit-Web---Guides---Grid-Layout',
-          mediaContainerFlex: true,
         },
       ],
     }}

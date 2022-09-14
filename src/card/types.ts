@@ -39,7 +39,6 @@ export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   layout?: MQ<CardLayout>;
   media?: ImageProps | React.ComponentType;
   mediaInteractive?: boolean;
-  mediaContainerFlex?: boolean;
   children: Exclude<React.ReactNode, 'undefined'>;
   actions?: React.ComponentType;
   overrides?: CardOverridesProps;

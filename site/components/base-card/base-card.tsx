@@ -5,7 +5,7 @@ import {BaseCardProps} from './types';
 import {StyledCard} from './styled';
 
 export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
-  ({title, description, href, mediaContainerFlex, overrides, ...rest}, ref) => {
+  ({title, description, href, overrides, ...rest}, ref) => {
     const cardOverrides = href
       ? {
           ...overrides,
@@ -15,7 +15,6 @@ export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
           },
           mediaContainer: {
             spaceInline: 'space000',
-            stylePreset: mediaContainerFlex ? 'cardMediaContainerFlex' : '',
           },
         }
       : {
