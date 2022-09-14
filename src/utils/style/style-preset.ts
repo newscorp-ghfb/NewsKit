@@ -272,5 +272,6 @@ export const getSingleStylePreset = (
 ) => {
   const preset =
     (customToken && stylePresets[customToken]) || stylePresets[defaultToken];
+  if (!preset) return '';
   return (preset[state] || {})[cssProp] || '';
 };
