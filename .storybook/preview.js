@@ -1,9 +1,16 @@
 import React from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {withPerformance} from 'storybook-addon-performance';
-
-import {NewsKitProvider, styled, getColorCssFromTheme} from '../src';
+import {Stories, DocsContext} from '@storybook/addon-docs';
+import {
+  NewsKitProvider,
+  styled,
+  getColorCssFromTheme,
+  newskitLightTheme,
+  ThemeProvider,
+} from '../src';
 import {getThemeObject} from '../src/test/theme-select-object';
+import {StoryDocsHeader} from '../src/test/storybook-comps';
 
 const unlimitedScenarios = [
   'grid',
@@ -17,6 +24,7 @@ const unlimitedScenarios = [
   'theme-checker',
   'popover',
   'audio-player-composable',
+  'text-area',
 ];
 
 const BackgroundColor = styled.div`
@@ -48,9 +56,7 @@ const Background = ({children}) => (
   </BackgroundColor>
 );
 const LimitSizeDecorator = ({children}) => <Container>{children}</Container>;
-const MediaQueryProviderDecorator = ({children}) => (
-  <MediaQueryProvider>{children}</MediaQueryProvider>
-);
+
 const NoDecorator = ({children}) => <>{children}</>;
 
 export const parameters = {
@@ -87,6 +93,18 @@ export const parameters = {
         value: '#e10a0a',
       },
     ],
+  },
+  docs: {
+    // We create a custom Docs page, using of our components for the header
+    page: () => {
+      const docsContext = React.useContext(DocsContext);
+      return (
+        <ThemeProvider theme={newskitLightTheme}>
+          <StoryDocsHeader context={docsContext} />
+          <Stories includePrimary />
+        </ThemeProvider>
+      );
+    },
   },
 };
 
