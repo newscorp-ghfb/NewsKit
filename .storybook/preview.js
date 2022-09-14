@@ -106,6 +106,18 @@ export const parameters = {
       );
     },
   },
+  // TODO_PERCY_POC
+  percy: {
+    // include a few problematic tests (each will 8x - 4x browsers and 2x resolutions)
+    include: [
+      // complicated use of waits
+      'audio-player-composable: audio-player-with-initial-props',
+      // doesn't work on Applitools
+      'accordion: accordion-group-controlled',
+      // flaky on Applitools
+      'tabs: tabs-outline-overrides',
+    ].map(name => `^NewsKit Light/${name}$`),
+  },
 };
 
 export const decorators = [

@@ -728,6 +728,8 @@ export const StoryAudioPlayerWithInitialProps = () => {
 StoryAudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
 StoryAudioPlayerWithInitialProps.parameters = {
   eyes: {waitBeforeCapture: '#storyAudioPlayerWithInitialPropsReady'},
+  // TODO_PERCY_POC
+  percy: {waitForSelector: '#storyAudioPlayerWithInitialPropsReady'},
 };
 export const StoryAudioPlayerOverrides = () => {
   const breakpointKey = useBreakpointKey();
