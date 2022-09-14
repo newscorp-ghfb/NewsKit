@@ -560,7 +560,7 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -16px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1226,7 +1226,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1346,7 +1346,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
   min-width: 50px;
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

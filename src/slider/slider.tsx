@@ -60,6 +60,7 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
       overrides: allOverrides = {},
       renderTrack,
       renderThumb,
+      tabIndex,
       ...rest
     },
     ref,
@@ -128,6 +129,7 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
           dragged={isDragged}
           data-testid={`${dataTestId}-thumb`}
           overrides={overrides}
+          tabIndex={tabIndex || p.tabIndex}
         >
           <StyledThumbFeedback
             disabled={disabled}
