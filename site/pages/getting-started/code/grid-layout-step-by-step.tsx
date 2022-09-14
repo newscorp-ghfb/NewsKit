@@ -19,7 +19,7 @@ const GridLayoutStepByStep = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Grid Layout step-by-step',
       description:
-        'The grid layout component is a wrapper around CSS grid that maps all CSS grid properties to react props. ',
+        'The grid layout component is a wrapper around CSS grid that maps all CSS grid properties to React props. ',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -28,7 +28,7 @@ const GridLayoutStepByStep = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'guides/grid-layout-guide/hero',
       },
-      introduction: `The grid layout component is a wrapper around CSS grid that maps all CSS grid properties to react props. `,
+      introduction: `The grid layout component is a wrapper around CSS grid that maps all CSS grid properties to React props. `,
     }}
     featureCard={{
       title: 'Need help?',
@@ -39,7 +39,7 @@ const GridLayoutStepByStep = (layoutProps: LayoutProps) => (
     <ComponentPageCell>
       <ContentSection sectionName="guide">
         <ContentSecondary
-          description="Out of the box, all react props support media query objects as values so that you can easily create responsive layouts."
+          description="Out of the box, all React props support media query objects as values so that you can easily create responsive layouts."
           childrenColSpan={ContentColSpan.TEXT}
         />
       </ContentSection>
@@ -244,7 +244,7 @@ export Card = ({imageUrl, headline, short, url}) => (
           description={
             <>
               The areas prop describes the position of the areas inside the
-              grid. when we want to specify things like dimension and spacing
+              grid. When we want to specify things like dimension and spacing
               between areas we need to add <InlineCode>columns</InlineCode>,{' '}
               <InlineCode>rows</InlineCode>, <InlineCode>columnGap</InlineCode>,
               and <InlineCode>rowGap</InlineCode>. In the following example, we

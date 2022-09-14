@@ -400,6 +400,15 @@ export const stylePresets = {
     },
   },
 
+  cardMediaContainerFlex: {
+    base: {
+      svg: {
+        borderRadius: '{{borders.borderRadiusSharp}}',
+        display: 'flex',
+      },
+    },
+  },
+
   cardContainerNonInteractive030: {
     base: {
       backgroundColor: '{{colors.blue080}}',
