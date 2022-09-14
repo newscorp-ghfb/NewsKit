@@ -19,7 +19,7 @@ export const StyledInput = styled.input<
   box-sizing: border-box;
   // make the input to take size of his parent
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
 
   ${({$size}) =>
     getTypographyPreset(`textField.${$size}`, '', {

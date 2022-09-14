@@ -152,7 +152,7 @@ exports[`TextField renders TextField Correctly 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -363,7 +363,7 @@ Object {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -663,7 +663,7 @@ Object {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -946,7 +946,7 @@ exports[`TextField renders TextField with overrides 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1229,7 +1229,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1499,7 +1499,7 @@ exports[`TextField renders disabled text field 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1749,7 +1749,7 @@ exports[`TextField renders large TextField 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1912,7 +1912,7 @@ exports[`TextField renders medium TextField 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2075,7 +2075,7 @@ exports[`TextField renders small TextField 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2283,7 +2283,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2577,7 +2577,7 @@ exports[`TextField should render custom placeholder 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  color: inherit;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;

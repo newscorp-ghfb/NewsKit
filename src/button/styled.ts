@@ -1,13 +1,15 @@
-import {Flag} from '../flag';
+import {BaseFlag} from '../flag/flag';
 import {logicalProps} from '../utils/logical-properties';
 import {styled} from '../utils/style';
 import {getTransitionPreset} from '../utils/style/transition-preset';
 import {ButtonOrButtonLinkProps} from './types';
 
-export const StyledFlag = styled(Flag)<Omit<ButtonOrButtonLinkProps, 'size'>>`
+export const StyledFlag = styled(BaseFlag)<
+  Omit<ButtonOrButtonLinkProps, 'size'>
+>`
   margin: 0; //reset for safari
 
-  ${({size}) => getTransitionPreset(`button.${size}`, '')};
+  ${({size}) => getTransitionPreset(`button.${size}`, '')}
   ${({loading, disabled}) => {
     if (disabled) {
       return null;
@@ -15,6 +17,7 @@ export const StyledFlag = styled(Flag)<Omit<ButtonOrButtonLinkProps, 'size'>>`
     const cursor = loading ? 'progress' : 'pointer';
     return {cursor};
   }}
+
   ${({size}) =>
     logicalProps(
       `button.${size}`,

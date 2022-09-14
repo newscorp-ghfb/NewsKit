@@ -4,6 +4,7 @@ import LinkNext from 'next/link';
 import HeroGrid from '../../illustrations/landing-page/hero-grid';
 import {HeroProps} from './types';
 import {HeroContainer} from './styled';
+import HeroInteractiveElements from './hero-interactive-elements';
 
 const DESIGN_BUTTON_PROPS = {
   href: '/getting-started/design/design-overview',
@@ -14,7 +15,11 @@ const DEVELOPING_BUTTON_PROPS = {
   overrides: {stylePreset: 'buttonOutlinedPrimary'},
 };
 
-export const Hero = ({contentContainerOverrides}: HeroProps) => (
+export const Hero = ({
+  themeMode,
+  toggleTheme,
+  contentContainerOverrides,
+}: HeroProps) => (
   <HeroContainer
     paddingBlock={{xs: 'space020', lg: 'space100'}}
     marginBlockStart="-12px"
@@ -104,6 +109,10 @@ export const Hero = ({contentContainerOverrides}: HeroProps) => (
         </GridLayoutItem>
         <GridLayoutItem>
           <Visible xl lg>
+            <HeroInteractiveElements
+              themeMode={themeMode}
+              toggleTheme={toggleTheme}
+            />
             <HeroGrid />
           </Visible>
         </GridLayoutItem>
