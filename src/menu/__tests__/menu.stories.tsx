@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
@@ -6,11 +6,21 @@ import {
   StorybookSpan,
 } from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {IconFilledAddCircleOutline, IconFilledClose} from '../../icons';
+import {
+  IconFilledAddCircleOutline,
+  IconFilledClose,
+  IconFilledExpandLess,
+  IconFilledExpandMore,
+} from '../../icons';
 import {Menu, MenuItem, MenuGroup, MenuDivider} from '..';
 import {styled, getColorCssFromTheme} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {Divider} from '../../divider';
+import {P} from '../../typography';
+import {TextBlock} from '../../text-block';
+import {GridLayout} from '../../grid-layout';
+import {IconButton} from '../../icon-button';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
@@ -1295,6 +1305,320 @@ export const StoryMenuItemsOutlineOverrides = () => (
   </>
 );
 StoryMenuItemsOutlineOverrides.storyName = 'menu items outline overrides';
+
+export const StoryMenuTwoAndThreeTierNavigation = () => {
+  const Container = styled.div`
+    border: 1px solid;
+    ${getColorCssFromTheme('border-color', 'inkContrast')};
+  `;
+  const FirstLevelMenuContainer = styled.div`
+    border-bottom: 1px solid;
+    ${getColorCssFromTheme('border-color', 'inkContrast')};
+  `;
+  return (
+    <>
+      <StorybookHeading>Menu - 2 tier navigation</StorybookHeading>
+      <Container>
+        <FirstLevelMenuContainer>
+          <Menu aria-label={`Menu 1 ${getSSRId()}`}>
+            <MenuGroup>
+              <MenuItem href={href}>News</MenuItem>
+              <MenuDivider />
+              <MenuItem selected href={href}>
+                Sport
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>TV</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Showbiz</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Fabulous</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Money</MenuItem>
+              <MenuDivider />
+            </MenuGroup>
+          </Menu>
+        </FirstLevelMenuContainer>
+        <Menu
+          overrides={{marginBlock: 'space030'}}
+          aria-label={`Menu 2 ${getSSRId()}`}
+        >
+          <MenuGroup>
+            <MenuItem href={href}>Health News</MenuItem>
+            <MenuDivider overrides={{spaceInline: 'space080'}} />
+            <MenuItem href={href}>Wellbeing</MenuItem>
+            <MenuItem selected href={href}>
+              Puzzles
+            </MenuItem>
+            <MenuItem href={href}>Section 4</MenuItem>
+            <MenuItem href={href}>Section 5</MenuItem>
+          </MenuGroup>
+        </Menu>
+      </Container>
+      <StorybookHeading>Menu - 3 tier navigation</StorybookHeading>
+      <Container>
+        <FirstLevelMenuContainer>
+          <Menu aria-label={`Menu 1 ${getSSRId()}`}>
+            <MenuGroup>
+              <MenuItem href={href}>News</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Sport</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>TV</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Showbiz</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Fabulous</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Money</MenuItem>
+              <MenuDivider />
+              <MenuItem selected href={href}>
+                More
+              </MenuItem>
+              <MenuDivider />
+            </MenuGroup>
+          </Menu>
+        </FirstLevelMenuContainer>
+        <P
+          overrides={{
+            paddingBlockStart: 'space030',
+            paddingInline: 'space040',
+            paddingBlockEnd: 'space020',
+          }}
+        >
+          MORE SECTIONS
+        </P>
+        <Divider overrides={{marginBlockEnd: 'space020'}} />
+        <Menu
+          overrides={{marginBlockStart: 'space030'}}
+          aria-label={`Menu 2 ${getSSRId()}`}
+        >
+          <MenuGroup>
+            <MenuItem href={href}>Health News</MenuItem>
+            <MenuItem href={href}>Wellbeing</MenuItem>
+            <MenuItem selected href={href}>
+              Puzzles
+            </MenuItem>
+            <MenuItem href={href}>Section 3</MenuItem>
+            <MenuItem href={href}>Section 4</MenuItem>
+          </MenuGroup>
+        </Menu>
+        <P
+          overrides={{
+            paddingBlockStart: 'space030',
+            paddingInline: 'space040',
+            paddingBlockEnd: 'space020',
+          }}
+        >
+          MORE FROM THE SUN
+        </P>
+        <Divider overrides={{marginBlockEnd: 'space020'}} />
+        <Menu
+          overrides={{marginBlock: 'space030'}}
+          aria-label={`Menu 3 ${getSSRId()}`}
+        >
+          <MenuGroup>
+            <MenuItem href={href}>Dream Team</MenuItem>
+            <MenuItem selected href={href}>
+              Sun Bingo
+            </MenuItem>
+            <MenuItem href={href}>Sun Gifts</MenuItem>
+            <MenuItem href={href}>Sun Savers</MenuItem>
+            <MenuItem href={href}>Sun Jobs</MenuItem>
+          </MenuGroup>
+        </Menu>
+      </Container>
+    </>
+  );
+};
+StoryMenuTwoAndThreeTierNavigation.storyName = 'menu - 2 and 3 tier navigation';
+
+export const StoryMenuMobileNavigation = () => {
+  const Container = styled.div`
+    border: 1px solid;
+    ${getColorCssFromTheme('border-color', 'inkContrast')};
+    max-width: 300px;
+    min-height: 500px;
+  `;
+
+  const menuGroupOverrides = {
+    title: {
+      typographyPreset: 'utilityHeading010',
+      spaceInline: 'space030',
+      spaceInset: 'space080',
+    },
+  };
+  const menuItemOverrides = {
+    typographyPreset: 'utilityButton020',
+    paddingInline: 'space090',
+    marginBlockEnd: 'space030',
+  };
+
+  const [openPanelId, setOpenPanelId] = useState<number>(1);
+
+  return (
+    <>
+      <StorybookHeading>Mobile Accordion Menu</StorybookHeading>
+      <Container>
+        <Menu
+          vertical
+          size="small"
+          align="start"
+          overrides={{spaceInline: 'space000'}}
+        >
+          <TextBlock
+            as="h3"
+            marginInline="space060"
+            marginBlock="space030"
+            stylePreset="inkContrast"
+            typographyPreset="utilityHeading020"
+            onClick={() =>
+              openPanelId === 0 ? setOpenPanelId(-1) : setOpenPanelId(0)
+            }
+          >
+            <GridLayout columns="1fr auto" columnGap="20px">
+              <TextBlock paddingBlockStart="space010">Section 1</TextBlock>
+              {openPanelId === 0 ? (
+                <IconButton
+                  aria-label="Show sub-menu for Section 1"
+                  aria-expanded
+                  overrides={{
+                    stylePreset: 'iconButtonMinimalPrimary',
+                  }}
+                >
+                  <IconFilledExpandLess
+                    overrides={{
+                      size: 'iconSize020',
+                      stylePreset: 'inkContrast',
+                    }}
+                  />
+                </IconButton>
+              ) : (
+                <IconButton
+                  aria-label="Hide sub-menu for Section 1"
+                  aria-expanded={openPanelId === 0 ? 'true' : 'false'}
+                  overrides={{
+                    stylePreset: 'iconButtonMinimalPrimary',
+                  }}
+                >
+                  <IconFilledExpandMore
+                    overrides={{
+                      size: 'iconSize020',
+                      stylePreset: 'inkContrast',
+                    }}
+                  />
+                </IconButton>
+              )}
+            </GridLayout>
+          </TextBlock>
+          {openPanelId === 0 && (
+            <>
+              <MenuGroup title="Menu Group 1" overrides={menuGroupOverrides}>
+                {['Menu Item 1.1', 'Menu Item 1.2'].map(item => (
+                  <MenuItem
+                    key={item}
+                    href={href}
+                    overrides={menuItemOverrides}
+                    size="small"
+                  >
+                    {item}
+                  </MenuItem>
+                ))}
+              </MenuGroup>
+              <MenuGroup title="Menu Group 2" overrides={menuGroupOverrides}>
+                {['Menu Item 2.1', 'Menu Item 2.2'].map(item => (
+                  <MenuItem
+                    key={item}
+                    href={href}
+                    overrides={menuItemOverrides}
+                    size="small"
+                  >
+                    {item}
+                  </MenuItem>
+                ))}
+              </MenuGroup>
+            </>
+          )}
+
+          <TextBlock
+            as="h3"
+            marginInline="space060"
+            marginBlock="space030"
+            stylePreset="inkContrast"
+            typographyPreset="utilityHeading020"
+            onClick={() =>
+              openPanelId === 1 ? setOpenPanelId(-1) : setOpenPanelId(1)
+            }
+          >
+            <GridLayout columns="1fr auto" columnGap="20px">
+              <TextBlock paddingBlockStart="space010">Section 2</TextBlock>
+              {openPanelId === 1 ? (
+                <IconButton
+                  aria-label="Show sub-menu for Section 2"
+                  aria-expanded
+                  overrides={{
+                    stylePreset: 'iconButtonMinimalPrimary',
+                  }}
+                >
+                  <IconFilledExpandLess
+                    overrides={{
+                      size: 'iconSize020',
+                      stylePreset: 'inkContrast',
+                    }}
+                  />
+                </IconButton>
+              ) : (
+                <IconButton
+                  aria-label="Hide sub-menu for Section 1"
+                  aria-expanded={openPanelId === 1 ? 'true' : 'false'}
+                  overrides={{
+                    stylePreset: 'iconButtonMinimalPrimary',
+                  }}
+                >
+                  <IconFilledExpandMore
+                    overrides={{
+                      size: 'iconSize020',
+                      stylePreset: 'inkContrast',
+                    }}
+                  />
+                </IconButton>
+              )}
+            </GridLayout>
+          </TextBlock>
+          {openPanelId === 1 && (
+            <>
+              <MenuGroup title="Menu Group 1" overrides={menuGroupOverrides}>
+                {['Menu Item 1.1'].map(item => (
+                  <MenuItem
+                    key={item}
+                    href={href}
+                    overrides={menuItemOverrides}
+                    size="small"
+                  >
+                    {item}
+                  </MenuItem>
+                ))}
+              </MenuGroup>
+              <MenuGroup title="Menu Group 2" overrides={menuGroupOverrides}>
+                {['Menu Item 2.1', 'Menu Item 2.2'].map(item => (
+                  <MenuItem
+                    key={item}
+                    href={href}
+                    overrides={menuItemOverrides}
+                    size="small"
+                  >
+                    {item}
+                  </MenuItem>
+                ))}
+              </MenuGroup>
+            </>
+          )}
+        </Menu>
+      </Container>
+    </>
+  );
+};
+StoryMenuMobileNavigation.storyName = 'menu - mobile navigation';
 
 export default {
   title: 'NewsKit Light/menu',
