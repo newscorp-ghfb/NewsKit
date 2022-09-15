@@ -1,128 +1,110 @@
 import React from 'react';
-// import ReactDOMServer from 'react-dom/server';
-// import {ThemeProvider} from 'newskit';
+import ReactDOMServer from 'react-dom/server';
+import {ThemeProvider} from 'newskit';
 import Layout, {LayoutProps} from '../../components/layout';
-// import {pathToID} from '../../components/illustrations/utils';
-// import {docsThemeLight} from '../../theme/doc-theme';
+import {pathToID} from '../../components/illustrations/utils';
+import {docsThemeLight} from '../../theme/doc-theme';
 
-// const RUN = false;
+const RUN = true;
 
-// if (!process.browser && RUN) {
-//   // const files = globby('**/*.tsx', {cwd: '../../components/illustrations/'});
-//   // console.log({files});
+if (!process.browser && RUN) {
+  // @ts-ignore
+  const getComponent = imprt => {
+    if (imprt.default) return imprt.default;
 
-//   // import Component from '../../components/illustrations/components/checkbox/hero';
+    const exports = Object.values(imprt);
+    return exports[0];
+  };
 
-//   // // render to string as ReactDOM.renderToString
+  (async () => {
+    const g = await import('globby');
+    const fs = require('fs');
+    const path = require('path');
 
-//   // const html = ReactDOMServer.renderToStaticMarkup(
-//   //   <ThemeProvider theme={newskitLightTheme}>
-//   //     <Component />
-//   //   </ThemeProvider>,
-//   // );
+    const processDir = process.cwd();
 
-//   // console.log(html);
+    const ignoreList = [
+      'circle',
+      'ellipse',
+      'illustration-loader',
+      'path',
+      'rect',
+      'svg',
+    ];
 
-//   // @ts-ignore
-//   const getComponent = imprt => {
-//     if (imprt.default) return imprt.default;
+    const paths = await g.globby(
+      path.join(processDir, 'site/components/illustrations/**/*.tsx'),
+      // __dirname + '../../components/illustrations/**/*.tsx',
+      {},
+    );
 
-//     const exports = Object.values(imprt);
-//     return exports[0];
-//   };
+    const imprtPaths = paths
 
-//   (async () => {
-//     const g = await import('globby');
-//     const fs = require('fs');
-//     const path = require('path');
+      .slice(0, 1500)
+      .map((path: string) =>
+        path
+          .replace(`${processDir}/site/components/illustrations/`, '')
+          .replace('.tsx', ''),
+      )
+      .filter((path: string) => !ignoreList.includes(path));
 
-//     const processDir = process.cwd();
+    const components = imprtPaths.map(
+      path => import(`../../components/illustrations/${path}`),
+    );
 
-//     const ignoreList = [
-//       'circle',
-//       'ellipse',
-//       'illustration-loader',
-//       'path',
-//       'rect',
-//       'svg',
-//     ];
+    const importedComponents = await Promise.all(components);
+    const svgComponents = importedComponents.map((imprt, indx) => {
+      const Component = getComponent(imprt);
 
-//     const paths = await g.globby(
-//       path.join(processDir, 'site/components/illustrations/**/*.tsx'),
-//       // __dirname + '../../components/illustrations/**/*.tsx',
-//       {},
-//     );
+      if (!Component) {
+        console.log(`no default for:${imprtPaths[indx]}`);
+      }
 
-//     const imprtPaths = paths
+      const id = pathToID(imprtPaths[indx]);
+      // render to string
+      const svg = ReactDOMServer.renderToStaticMarkup(
+        <ThemeProvider theme={docsThemeLight}>
+          <Component />
+        </ThemeProvider>,
+      );
 
-//       .slice(0, 1500)
-//       .map((path: string) =>
-//         path
-//           .replace(`${processDir}/site/components/illustrations/`, '')
-//           .replace('.tsx', ''),
-//       )
-//       .filter((path: string) => !ignoreList.includes(path));
+      // add id and style
+      const styledSVG = svg.replace(
+        '<svg ',
+        `<svg id="${id}" style="width: 100%; height: 100%" `,
+      );
 
-//     console.log({short: imprtPaths});
-//     const components = imprtPaths.map(
-//       path => import(`../../components/illustrations/${path}`),
-//     );
+      return styledSVG;
+    });
 
-//     const importedComponents = await Promise.all(components);
-//     const svgComponents = importedComponents.map((imprt, indx) => {
-//       const Component = getComponent(imprt);
+    function ensureDirectoryExistence(filePath: string) {
+      const dirname = path.dirname(filePath);
+      if (fs.existsSync(dirname)) {
+        return true;
+      }
+      ensureDirectoryExistence(dirname);
+      fs.mkdirSync(dirname);
+    }
 
-//       if (!Component) {
-//         console.log(`no default for:${imprtPaths[indx]}`);
-//       }
+    let maskCounter = 0;
 
-//       const id = pathToID(imprtPaths[indx]);
-//       // render to string
-//       const svg = ReactDOMServer.renderToStaticMarkup(
-//         <ThemeProvider theme={docsThemeLight}>
-//           <Component />
-//         </ThemeProvider>,
-//       );
+    svgComponents.forEach((svgContent, indx) => {
+      const filePath = `${imprtPaths[indx]}.svg`;
+      const fullPath = `${processDir}/site/public/static/illustrations/${filePath}`;
+      console.log(fullPath);
+      ensureDirectoryExistence(fullPath);
 
-//       // add id and style
-//       const styledSVG = svg.replace(
-//         '<svg ',
-//         `<svg id="${id}" style="width: 100%; height: 100%" `,
-//       );
+      const hasMask = svgContent.includes('<mask');
+      if (hasMask) {
+        console.log(filePath, ' includes mask ');
+        maskCounter++;
+      }
+      // fs.writeFileSync(fullPath, svgContent, {flag: 'w'});
+    });
 
-//       return styledSVG;
-//     });
-
-//     function ensureDirectoryExistence(filePath: string) {
-//       const dirname = path.dirname(filePath);
-//       if (fs.existsSync(dirname)) {
-//         return true;
-//       }
-//       ensureDirectoryExistence(dirname);
-//       fs.mkdirSync(dirname);
-//     }
-
-//     svgComponents.forEach((svgContent, indx) => {
-//       const filePath = `${imprtPaths[indx]}.svg`;
-//       const fullPath = `${processDir}/site/public/static/illustrations/${filePath}`;
-//       console.log(fullPath);
-//       ensureDirectoryExistence(fullPath);
-
-//       fs.writeFileSync(fullPath, svgContent, {flag: 'w'});
-//     });
-//   })();
-// }
-
-// grap all files from folder
-
-// read a single file
-// import Component from '../components/illustrations/components/checkbox/hero';
-
-// replace fill colors
-
-// add reference id="name-of-file"
-
-// save file as svg
+    console.log('Total files with mask', maskCounter);
+  })();
+}
 
 const PreviewIllustrationExport = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage hideSidebar>
