@@ -130,27 +130,6 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
     />
   );
 
-  const verticalMuteButton = (
-    <MuteButton
-      volume={volume}
-      unMutedVolume={unMutedVolume}
-      onChange={onChange}
-      size={muteButtonSize || 'medium'}
-      muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
-      overrides={buttonOverrides}
-    />
-  );
-  const horizontalMuteButton = (
-    <MuteButton
-      volume={volume}
-      unMutedVolume={unMutedVolume}
-      onChange={onChange}
-      size={muteButtonSize || 'medium'}
-      muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
-      overrides={buttonOverrides}
-    />
-  );
-
   const popoverOverrides = getPopoverOverrides(theme, overrides);
 
   return (
@@ -159,7 +138,10 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
       onFocus={() => setOpenHandler(true)}
       onBlur={() => setOpenHandler(false)}
       onMouseEnter={() => setOpenHandler(true)}
-      onMouseLeave={() => setOpenHandler(false)}
+      // onMouseLeave={() => setOpenHandler(false)}
+      onMouseLeave={
+        layout === 'horizontal' ? () => setOpenHandler(false) : undefined
+      }
       columns={gridColumns}
       areas={gridAreas}
       justifyItems="start"
@@ -171,17 +153,29 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
           hidePointer
           open={layout === 'vertical' && open}
           content={
-            <StyledVolumeSliderPopupContainer overrides={overrides}>
+            <StyledVolumeSliderPopupContainer
+              overrides={overrides}
+              onMouseLeave={() => setOpenHandler(false)}
+            >
               {sliderComponent}
             </StyledVolumeSliderPopupContainer>
           }
           id="volume-control-slider-popup"
           header={undefined}
           closePosition="none"
+          // trigger={['focus', 'hover']}
           disableFocusManagement
           overrides={popoverOverrides}
+          enableDismiss
         >
-          {layout === 'vertical' ? verticalMuteButton : horizontalMuteButton}
+          <MuteButton
+            volume={volume}
+            unMutedVolume={unMutedVolume}
+            onChange={onChange}
+            size={muteButtonSize || 'medium'}
+            muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
+            overrides={buttonOverrides}
+          />
         </Popover>
       </GridLayoutItem>
       {useSliderContainer && (
