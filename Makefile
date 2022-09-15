@@ -64,6 +64,9 @@ e2e_test_docs:
 e2e_visual_test_docs:
 	yarn e2e:visual:docs:ci;
 
+e2e_visual_test_docs_percy:
+	yarn e2e:visual:docs:ci:percy;
+
 publish_npm_dev:
 	cd dist; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable;
 

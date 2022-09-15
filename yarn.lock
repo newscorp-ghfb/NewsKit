@@ -2848,6 +2848,13 @@
     rimraf "^3.0.2"
     ws "^8.0.0"
 
+"@percy/cypress@^1.10.2":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@percy/cypress/-/cypress-3.1.2.tgz#a087d3c59a6b155eab5fdb4c237526b9cfacbc22"
+  integrity sha512-JXrGDZbqwkzQd2h5T5D7PvqoucNaiMh4ChPp8cLQiEtRuLHta9nf1lEuXH+jnatGL2j+3jJFIHJ0L7XrgVnvQA==
+  dependencies:
+    "@percy/sdk-utils" "^1.3.1"
+
 "@percy/dom@1.10.2":
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/@percy/dom/-/dom-1.10.2.tgz#3d589018165201f97396599c2ad86592c71fe87f"
@@ -2862,6 +2869,11 @@
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/@percy/logger/-/logger-1.10.2.tgz#06474daa41ccb15332eedbbc86c18aac81d9e761"
   integrity sha512-Sg67QklLHM7oTv80RH2PovV4Ps0mjiRrLYzxbsAvDopn73alPvy5uWHtJAHnJc3EYCiBde43L1jOSsGCsOv0Tg==
+
+"@percy/sdk-utils@^1.3.1":
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/@percy/sdk-utils/-/sdk-utils-1.10.2.tgz#dc2e225aebc322c5fc04995ead15cfda4f0af6cb"
+  integrity sha512-z/pD7J0bTUeBWF0XsrzPl3D8KrbZEiUUkn2Qg4+p0YIDIEHAp1m5biaBe7235Nt2OuppMlQoNP6/68nyNp2m6g==
 
 "@percy/storybook@^4.3.3":
   version "4.3.3"
