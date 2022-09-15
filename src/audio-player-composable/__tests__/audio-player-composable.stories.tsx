@@ -998,20 +998,28 @@ export const AudioPlayerOverrides = () => {
           />
         </AudioPlayerComposable>
       </ThemeProvider>
-      <StorybookSubHeading>
-        Volume control vertical with distance between button and slider
-      </StorybookSubHeading>
-      <AudioPlayerComposable
-        src={AUDIO_SRC}
-        ariaLandmark="audio player distance between iconbutton and slider"
-      >
-        <AudioPlayerVolumeControl
-          layout="vertical"
-          overrides={{
-            popover: {distance: 'space070'},
-          }}
-        />
-      </AudioPlayerComposable>
+      <ThemeProvider theme={volumeTheme}>
+        <StorybookSubHeading>
+          Volume control vertical with distance between button and slider
+        </StorybookSubHeading>
+        <AudioPlayerComposable
+          src={AUDIO_SRC}
+          ariaLandmark="audio player distance between iconbutton and slider"
+        >
+          <AudioPlayerVolumeControl
+            layout="vertical"
+            overrides={{
+              popover: {
+                distance: 'space050',
+                pointer: {
+                  size: 'sizing080',
+                  stylePreset: 'customPointerStylePreset',
+                },
+              },
+            }}
+          />
+        </AudioPlayerComposable>
+      </ThemeProvider>
     </StyledPage>
   );
 };
