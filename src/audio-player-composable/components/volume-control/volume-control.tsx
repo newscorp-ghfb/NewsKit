@@ -138,10 +138,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
       onFocus={() => setOpenHandler(true)}
       onBlur={() => setOpenHandler(false)}
       onMouseEnter={() => setOpenHandler(true)}
-      // onMouseLeave={() => setOpenHandler(false)}
-      onMouseLeave={
-        layout === 'horizontal' ? () => setOpenHandler(false) : undefined
-      }
+      onMouseLeave={() => setOpenHandler(false)}
       columns={gridColumns}
       areas={gridAreas}
       justifyItems="start"
@@ -153,10 +150,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
           hidePointer
           open={layout === 'vertical' && open}
           content={
-            <StyledVolumeSliderPopupContainer
-              overrides={overrides}
-              onMouseLeave={() => setOpenHandler(false)}
-            >
+            <StyledVolumeSliderPopupContainer overrides={overrides}>
               {sliderComponent}
             </StyledVolumeSliderPopupContainer>
           }
