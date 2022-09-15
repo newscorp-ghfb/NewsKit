@@ -152,6 +152,18 @@ const myCustomTheme = createTheme({
     },
   },
 });
+const volumeTheme = createTheme({
+  name: 'my-custom-volume-theme',
+  overrides: {
+    stylePresets: {
+      customPointerStylePreset: {
+        base: {
+          backgroundColor: 'transparent',
+        },
+      },
+    },
+  },
+});
 
 const VerticalContainer = styled.div`
   display: inline-flex;
@@ -996,7 +1008,7 @@ export const AudioPlayerOverrides = () => {
         <AudioPlayerVolumeControl
           layout="vertical"
           overrides={{
-            popover: {distance: 'space080'},
+            popover: {distance: 'space070'},
           }}
         />
       </AudioPlayerComposable>
@@ -1251,25 +1263,41 @@ AudioPlayerKeyboard.storyName = 'audio-keyboard-shortcuts';
 
 export const AudioPlayerVolumeControlLayout = () => (
   <StyledPage>
-    <StorybookSubHeading>Volume control horizontal</StorybookSubHeading>
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player volume control horizontal"
-    >
-      <AudioPlayerVolumeControl layout="horizontal" />
+    <ThemeProvider theme={volumeTheme}>
+      <StorybookSubHeading>Volume control horizontal</StorybookSubHeading>
 
-      <StorybookSubHeading>
-        Volume control horizontal-expanded
-      </StorybookSubHeading>
-      <AudioPlayerVolumeControl layout="horizontal-expanded" />
+      <AudioPlayerComposable
+        src={AUDIO_SRC}
+        ariaLandmark="audio player volume control horizontal"
+      >
+        <AudioPlayerVolumeControl layout="horizontal" />
 
-      <StorybookSubHeading>Volume control Collapsed</StorybookSubHeading>
-      <AudioPlayerVolumeControl layout="collapsed" />
-      <StorybookSubHeading>
-        Volume control vertical-default space030
-      </StorybookSubHeading>
-      <AudioPlayerVolumeControl layout="vertical" />
-    </AudioPlayerComposable>
+        <StorybookSubHeading>
+          Volume control horizontal-expanded
+        </StorybookSubHeading>
+        <AudioPlayerVolumeControl layout="horizontal-expanded" />
+
+        <StorybookSubHeading>Volume control Collapsed</StorybookSubHeading>
+        <AudioPlayerVolumeControl layout="collapsed" />
+        <StorybookSubHeading>
+          Volume control vertical-default space030-with hover in between button
+          and popover
+        </StorybookSubHeading>
+
+        <AudioPlayerVolumeControl
+          layout="vertical"
+          overrides={{
+            popover: {
+              distance: 'space050',
+              pointer: {
+                size: 'sizing080',
+                stylePreset: 'customPointerStylePreset',
+              },
+            },
+          }}
+        />
+      </AudioPlayerComposable>
+    </ThemeProvider>
   </StyledPage>
 );
 
