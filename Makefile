@@ -49,6 +49,9 @@ check_broken_links_docs:
 comps_visual_test:
 	yarn test:visual:comps:ci
 
+comps_visual_test_percy:
+	yarn test:visual:comps:ci:percy
+
 e2e_test_comps:
 	yarn e2e:comps:ci;
 
