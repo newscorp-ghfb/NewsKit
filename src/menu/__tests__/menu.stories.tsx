@@ -1309,11 +1309,11 @@ StoryMenuItemsOutlineOverrides.storyName = 'menu items outline overrides';
 export const StoryMenuTwoAndThreeTierNavigation = () => {
   const Container = styled.div`
     border: 1px solid;
-    ${getColorCssFromTheme('border-color', 'inkContrast')};
+    ${getColorCssFromTheme('borderColor', 'inkContrast')};
   `;
   const FirstLevelMenuContainer = styled.div`
     border-bottom: 1px solid;
-    ${getColorCssFromTheme('border-color', 'inkContrast')};
+    ${getColorCssFromTheme('borderColor', 'inkContrast')};
   `;
   return (
     <>
@@ -1436,7 +1436,7 @@ StoryMenuTwoAndThreeTierNavigation.storyName = 'menu - 2 and 3 tier navigation';
 export const StoryMenuMobileNavigation = () => {
   const Container = styled.div`
     border: 1px solid;
-    ${getColorCssFromTheme('border-color', 'inkContrast')};
+    ${getColorCssFromTheme('borderColor', 'inkContrast')};
     max-width: 300px;
     min-height: 500px;
   `;
