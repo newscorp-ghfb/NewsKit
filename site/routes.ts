@@ -78,6 +78,15 @@ export default [
             cardTitle: 'Engineering Quickstart Guide',
           },
           {
+            title: 'Form step-by-step',
+            page: true,
+            id: '/getting-started/code/form-step-by-step',
+            description:
+              'Step-by-step guide for engineers to build a form using the form subcomponents.',
+            illustration: 'guides/form-guide/hero',
+            cardTitle: 'Form step-by-step',
+          },
+          {
             title: 'Instrumentation setup',
             page: true,
             id: '/getting-started/code/instrumentation',
