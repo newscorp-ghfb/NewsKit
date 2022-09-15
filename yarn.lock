@@ -2848,7 +2848,7 @@
     rimraf "^3.0.2"
     ws "^8.0.0"
 
-"@percy/cypress@^1.10.2":
+"@percy/cypress@^3.1.2":
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@percy/cypress/-/cypress-3.1.2.tgz#a087d3c59a6b155eab5fdb4c237526b9cfacbc22"
   integrity sha512-JXrGDZbqwkzQd2h5T5D7PvqoucNaiMh4ChPp8cLQiEtRuLHta9nf1lEuXH+jnatGL2j+3jJFIHJ0L7XrgVnvQA==
