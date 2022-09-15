@@ -1304,7 +1304,7 @@ workflows:
           requires:
             - build_docs_pr_with_no_base_url
             - install_cypress
-            - docs_visual_changes_percy
+            - docs_visual_changes
       - can_i_merge_checker:
           context: ncu-product-platforms-context
           requires:
