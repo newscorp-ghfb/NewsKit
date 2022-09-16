@@ -440,7 +440,18 @@ const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
       justifyContent="flex-start"
     >
       <AudioPlayerPlayPauseButton size="small" />
-      <AudioPlayerVolumeControl layout="vertical" muteButtonSize="small" />
+      <AudioPlayerVolumeControl
+        layout="vertical"
+        overrides={{
+          popover: {
+            pointer: {
+              size: 'sizing080',
+              stylePreset: 'customPointerStylePreset',
+            },
+          },
+        }}
+        muteButtonSize="small"
+      />
       <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
         <IconFilledGraphicEq />
         Live
@@ -632,7 +643,18 @@ export const AudioSubComponents = () => (
         <GridLayoutItem>
           <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
           <VerticalContainer>
-            <AudioPlayerVolumeControl layout="vertical" />
+            <AudioPlayerVolumeControl
+              layout="vertical"
+              overrides={{
+                popover: {
+                  distance: 'space050',
+                  pointer: {
+                    size: 'sizing080',
+                    stylePreset: 'customPointerStylePreset',
+                  },
+                },
+              }}
+            />
           </VerticalContainer>
         </GridLayoutItem>
         <GridLayoutItem column="1/-1">
