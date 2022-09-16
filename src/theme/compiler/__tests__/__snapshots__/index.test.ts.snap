@@ -562,7 +562,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "#F1F1F1",
-        "borderColor": "#3768FB",
+        "borderColor": "transparent",
+        "outlineColor": "#3768FB",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "safariOutlineStyle": "auto",
       },
       "invalid:hover": Object {
         "backgroundColor": "#F1F1F1",
@@ -576,7 +580,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "#F1F1F1",
-        "borderColor": "#3768FB",
+        "borderColor": "transparent",
+        "outlineColor": "#3768FB",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "safariOutlineStyle": "auto",
       },
       "valid:hover": Object {
         "backgroundColor": "#F1F1F1",
