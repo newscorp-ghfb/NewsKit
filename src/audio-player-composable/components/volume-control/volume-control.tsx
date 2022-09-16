@@ -132,7 +132,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   );
   const popoverOverrides = getPopoverOverrides(theme, overrides);
 
-  const TheContent = (
+  const popoverContent = (
     <StyledVolumeSliderPopupContainer overrides={overrides}>
       {sliderComponent}
     </StyledVolumeSliderPopupContainer>
@@ -146,7 +146,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
       id: 'volume-control-slider-popup',
       open: layout === 'vertical' && open,
       hidePointer: false,
-      content: TheContent,
+      content: popoverContent,
       overrides: popoverOverrides,
       header: undefined,
       closePosition: 'none',
