@@ -199,6 +199,21 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       }
     }, [isOpen, selectRef]);
 
+    useEffect(() => {
+      if (isOpen && panelRef.current) {
+        console.log('callback is here', panelRef);
+        const callback = () => {
+          console.log(panelRef.current);
+          panelRef.current?.scrollIntoView();
+          panelRef.current?.focus();
+        };
+        // requestAnimationFrame(callback);
+        setTimeout(callback, 16);
+      }
+    }, [isOpen, panelRef]);
+
+    console.log('render');
+
     return (
       <>
         <SelectButton
