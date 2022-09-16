@@ -39,7 +39,11 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
   >
     <ComponentPageCell>
       <ContentSection sectionName="key benefits">
-        <ContentPrimary headline="Key benefits:" showSeparator>
+        <ContentPrimary
+          headline="Key benefits:"
+          childrenColSpan={ContentColSpan.TEXT}
+          showSeparator
+        >
           <UnorderedList
             markerAlign="center"
             overrides={{
@@ -119,8 +123,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
             </>
           }
           childrenColSpan={ContentColSpan.TEXT}
-        />
-        <ContentSecondary>
+        >
           <Illustration path="guides/form-guide/steps/step-02" />
         </ContentSecondary>
         <ContentSecondary
@@ -137,7 +140,8 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               <InlineCode>&#60;FormInputLabel/&#62;</InlineCode> is an optional
               component that can be placed wherever needed. In the instance
               above we place it above the input field. You can also style the
-              label to inherit the same state colour as the text field and
+              label to inherit the same state colour as the{' '}
+              <Link href="/components/text-field/">text field</Link> and
               assistive text.
               <br />
               <br />
@@ -170,6 +174,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               <InlineCode>valid | invalid | disabled</InlineCode>.
             </>
           }
+          childrenColSpan={ContentColSpan.TEXT}
           showSeparator
         />
       </ContentSection>
@@ -221,7 +226,8 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               <br />
               Inside <InlineCode>&#60;FormInputSelect/&#62;</InlineCode> you can
               add in <InlineCode>&#60;SelectOption/&#62;</InlineCode>, which
-              comes from the select component.
+              comes from the <Link href="/components/select/">select</Link>{' '}
+              component.
             </>
           }
         >
@@ -259,7 +265,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               But now, we are using{' '}
               <InlineCode>&#60;FormInputCheckbox /&#62;</InlineCode>, which
               comes with prop label. This is for the text that is placed next to
-              the checkbox component.
+              the <Link href="/components/checkbox/">checkbox</Link> component.
             </>
           }
         >
@@ -302,15 +308,17 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               But now, we are using{' '}
               <InlineCode>&#60;FormRadioButtutton /&#62;</InlineCode>. This
               component should be wrapped inside a{' '}
-              <InlineCode>&#60;Fieldset&#62;</InlineCode> . We use the fieldset
+              <InlineCode>&#60;Fieldset&#62;</InlineCode> . We use the{' '}
+              <Link href="/components/fieldset/">fieldset</Link>
               component to group related form inputs.
               <br />
               <br />
               We are also using <InlineCode>&#60;RadioGroup /&#62;</InlineCode>.
-              A radio group is defined by giving each of the radio buttons in
-              the group the same name. Once a radio group is established,
-              selecting any radio button in that group automatically deselects
-              any currently-selected radio button in the same group.
+              A <Link href="/components/radio-button/">radio group</Link> is
+              defined by giving each of the radio buttons in the group the same
+              name. Once a radio group is established, selecting any radio
+              button in that group automatically deselects any
+              currently-selected radio button in the same group.
             </>
           }
           showSeparator
@@ -350,9 +358,10 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           headline="Combined form"
           description={
             <>
-              Below is an example of the form with different inputs within a
-              fieldset which is used when grouping together related form
-              components.
+              Below is an example of the{' '}
+              <Link href="/components/form/">form</Link> with different inputs
+              within a<Link href="/components/fieldset/">fieldset</Link> which
+              is used when grouping together related form components.
               <br />
               <br />
               This form is made up of{' '}
