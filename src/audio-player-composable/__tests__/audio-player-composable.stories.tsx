@@ -443,14 +443,14 @@ const AudioPlayerInlineLive = (props: Partial<AudioPlayerComposableProps>) => (
       <AudioPlayerPlayPauseButton size="small" />
       <AudioPlayerVolumeControl
         layout="vertical"
-        // overrides={{
-        //   popover: {
-        //     pointer: {
-        //       size: 'sizing080',
-        //       stylePreset: 'customPointerStylePreset',
-        //     },
-        //   },
-        // }}
+        overrides={{
+          popover: {
+            pointer: {
+              size: 'sizing080',
+              stylePreset: 'customPointerStylePreset',
+            },
+          },
+        }}
         muteButtonSize="small"
       />
       <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
@@ -668,7 +668,18 @@ export const StoryAudioSubComponents = () => {
           <GridLayoutItem>
             <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
             <VerticalContainer>
-              <AudioPlayerVolumeControl layout="vertical" />
+              <AudioPlayerVolumeControl
+                layout="vertical"
+                overrides={{
+                  popover: {
+                    distance: 'space050',
+                    pointer: {
+                      size: 'sizing080',
+                      stylePreset: 'customPointerStylePreset',
+                    },
+                  },
+                }}
+              />
             </VerticalContainer>
           </GridLayoutItem>
           <GridLayoutItem column="1/-1">
@@ -1358,6 +1369,22 @@ export const StoryAudioPlayerVolumeControlLayout = () => {
 
         <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
         <AudioPlayerVolumeControl layout="vertical" />
+        <StorybookSubHeading>
+          Volume control vertical-no pointer and hover in between button and
+          popover
+        </StorybookSubHeading>
+        <AudioPlayerVolumeControl
+          layout="vertical"
+          overrides={{
+            popover: {
+              distance: 'space050',
+              pointer: {
+                size: 'sizing080',
+                stylePreset: 'customPointerStylePreset',
+              },
+            },
+          }}
+        />
       </AudioPlayerComposable>
     </StyledPage>
   );
