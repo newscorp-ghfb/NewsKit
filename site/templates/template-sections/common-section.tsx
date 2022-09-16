@@ -8,7 +8,7 @@ import {ComponentPageCell} from '../../components/layout-cells';
 
 export type CommonSectionProps = {
   children?: React.ReactNode;
-  title: string;
+  title?: string;
   introduction?: React.ReactNode;
   id: string;
   toc?: string;

@@ -16,6 +16,7 @@ import {
   RelatedComponentsSectionProps,
   OnwardJourneySectionProps,
   CommonSectionProps,
+  MdxContentSectionProps,
 } from '../template-sections';
 
 export interface ComponentPageTemplateProps
@@ -36,6 +37,6 @@ export interface ComponentPageTemplateProps
   compliance?: ComplianceSectionProps;
   related?: RelatedComponentsSectionProps;
   featureCard?: Partial<OnwardJourneySectionProps>;
-  children?: React.ReactNode;
+  mdxContent?: MdxContentSectionProps;
   commonSection?: CommonSectionProps;
 }

@@ -18,6 +18,7 @@ import {
   UsageSection,
   OnwardJourneySectionProps,
   CommonSection,
+  MdxContentSection,
 } from '../template-sections';
 import {ComponentPageTemplateProps} from './types';
 
@@ -48,38 +49,42 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   featureCard,
   headTags,
   commonSection,
+  mdxContent,
   ...rest
 }: ComponentPageTemplateProps) => (
-  <Layout {...layoutProps} newPage>
-    <PageTemplate
-      {...rest}
-      headTags={{
-        imageUrl: 'social/components.png',
-        alt: 'components',
-        title: headTags.title,
-        description: headTags.description,
-      }}
-      featureCard={
-        {
-          ...defaultFeatureCard,
-          ...featureCard,
-        } as OnwardJourneySectionProps
-      }
-    >
-      {interactiveDemo && <InteractiveDemoSection {...interactiveDemo} />}
-      {anatomy && <AnatomySection {...anatomy} />}
-      {layoutExamples && <LayoutExamplesSection {...layoutExamples} />}
-      {options && <OptionsSection {...options} />}
-      {states && <StatesSection {...states} />}
-      {behaviors && <BehaviorsSection {...behaviors} />}
-      {codeExamples && <CodeExamplesSection {...codeExamples} />}
-      {usage && <UsageSection {...usage} />}
-      {commonSection && <CommonSection {...commonSection} />}
-      {accessibility && <AccessibilitySection {...accessibility} />}
-      {seo && <SEOSection {...seo} />}
-      {componentAPI && <ComponentAPISection {...componentAPI} />}
-      {compliance && <ComplianceSection {...compliance} />}
-      {related && <RelatedComponentsSection {...related} />}
-    </PageTemplate>
-  </Layout>
+  <>
+    <Layout {...layoutProps} newPage>
+      <PageTemplate
+        {...rest}
+        headTags={{
+          imageUrl: 'social/components.png',
+          alt: 'components',
+          title: headTags.title,
+          description: headTags.description,
+        }}
+        featureCard={
+          {
+            ...defaultFeatureCard,
+            ...featureCard,
+          } as OnwardJourneySectionProps
+        }
+      >
+        {interactiveDemo && <InteractiveDemoSection {...interactiveDemo} />}
+        {anatomy && <AnatomySection {...anatomy} />}
+        {layoutExamples && <LayoutExamplesSection {...layoutExamples} />}
+        {options && <OptionsSection {...options} />}
+        {states && <StatesSection {...states} />}
+        {behaviors && <BehaviorsSection {...behaviors} />}
+        {codeExamples && <CodeExamplesSection {...codeExamples} />}
+        {usage && <UsageSection {...usage} />}
+        {commonSection && <CommonSection {...commonSection} />}
+        {accessibility && <AccessibilitySection {...accessibility} />}
+        {seo && <SEOSection {...seo} />}
+        {componentAPI && <ComponentAPISection {...componentAPI} />}
+        {mdxContent && <MdxContentSection {...mdxContent} />}
+        {compliance && <ComplianceSection {...compliance} />}
+        {related && <RelatedComponentsSection {...related} />}
+      </PageTemplate>
+    </Layout>
+  </>
 );

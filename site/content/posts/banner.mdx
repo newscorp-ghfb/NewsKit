@@ -1,0 +1,33 @@
+---
+slug: banner
+title: Banner
+type: Component
+coverImage: static/banner-illustration.svg
+introduction: A Banner communicates essential information without blocking an experience. They are positioned at the top of the screen, so they are noticeable. They require user action to disappear.
+related:
+  introduction: Componenets related to Banner
+  related:
+    - Drawer
+    - Toast
+    - Modal
+featureCard:
+  title: Need help?
+  description: Cant find what you are looking for?
+  href: /about/contact-us/
+meta:
+  status: MetaStatus.Beta
+  introduced: v3.0
+  codeUrl: https://github.com/newscorp-ghfb/newskit
+  figmaUrl: https://github.com/newscorp-ghfb/newskit
+  introducedLink: true
+---
+import {InlineMessage} from 'newskit';
+
+<InlineMessage
+  title="Breaking Change"
+  overrides={{stylPreset: 'inlineMessageNegative'}}
+>
+  From version 6 we do not export emotion icons as part of newskit library.
+</InlineMessage>
+
+<Mono>End</Mono>: Aligns the Menu item label and icons to the right.
