@@ -321,12 +321,12 @@ commands:
       - attach_workspace:
           at: ~/project
       - run:
+          name: Set percy/newskit-docsite token
+          command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
+      - run:
           name: Run Percy Docs Site Visual Tests
           # Allow this to fail (|| true) for the POC
           command: make e2e_visual_test_docs_percy || true
-      - run:
-          name: Set percy/newskit-docsite token
-          command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
