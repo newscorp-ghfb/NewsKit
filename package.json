@@ -142,7 +142,7 @@
     "concurrently": "^4.1.1",
     "copy-webpack-plugin": "^5.1.1",
     "csstype": "2",
-    "cypress": "^9.1.0",
+    "cypress": "^9.1.1",
     "cypress-axe": "^0.14.0",
     "eslint": "^8.3.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
