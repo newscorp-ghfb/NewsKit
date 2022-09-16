@@ -442,14 +442,14 @@ const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
       <AudioPlayerPlayPauseButton size="small" />
       <AudioPlayerVolumeControl
         layout="vertical"
-        overrides={{
-          popover: {
-            pointer: {
-              size: 'sizing080',
-              stylePreset: 'customPointerStylePreset',
-            },
-          },
-        }}
+        // overrides={{
+        //   popover: {
+        //     pointer: {
+        //       size: 'sizing080',
+        //       stylePreset: 'customPointerStylePreset',
+        //     },
+        //   },
+        // }}
         muteButtonSize="small"
       />
       <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
@@ -1309,9 +1309,12 @@ export const AudioPlayerVolumeControlLayout = () => (
 
         <StorybookSubHeading>Volume control Collapsed</StorybookSubHeading>
         <AudioPlayerVolumeControl layout="collapsed" />
+        <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
+
+        <AudioPlayerVolumeControl layout="vertical" />
         <StorybookSubHeading>
-          Volume control vertical-default space030-with hover in between button
-          and popover
+          Volume control vertical-no pointer and hover in between button and
+          popover
         </StorybookSubHeading>
 
         <AudioPlayerVolumeControl
