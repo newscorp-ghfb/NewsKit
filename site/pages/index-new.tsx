@@ -27,9 +27,6 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
 };
 
 const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
-  // The World Design Systems Week 2022 banner should hide automatically after the event which is on 19-23 September 2022
-  const eventDateEnd = new Date('2022-09-24');
-  const showEventBanner = new Date() < eventDateEnd;
   const {themeMode, toggleTheme} = layoutProps;
 
   return (
@@ -43,32 +40,30 @@ const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
           themeMode={themeMode}
           toggleTheme={toggleTheme}
         />
-        {showEventBanner && (
-          <GridLayout
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        >
+          <FeatureCard
+            title="Latest blog"
+            description="How an audio player component tells the story of NewsKit Design System's changing strategy"
+            stylePrefix="worldDesignSystemsWeekCard"
+            layout="horizontal"
             overrides={{
-              ...GRID_SECTION_OVERRIDES,
-              marginBlockEnd: {xs: 'space080', md: 'space000'},
+              title: {typographyPreset: 'editorialHeadline060'},
+              description: {typographyPreset: 'editorialSubheadline010'},
             }}
-          >
-            <FeatureCard
-              title="World Design Systems Week 2022"
-              description="19-23 September 2022"
-              stylePrefix="worldDesignSystemsWeekCard"
-              layout="horizontal"
-              overrides={{
-                title: {typographyPreset: 'editorialHeadline060'},
-                description: {typographyPreset: 'editorialSubheadline010'},
-              }}
-              buttonIcon={<IconFilledLaunch />}
-              buttonLabel="Join the community"
-              buttonHref="https://www.designsystemsweek.com/"
-              buttonOverrides={{
-                paddingInline: 'space000',
-                typographyPreset: 'utilityButton020',
-              }}
-            />
-          </GridLayout>
-        )}
+            buttonIcon={<IconFilledLaunch />}
+            buttonLabel="Read on Medium"
+            buttonHref="https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67"
+            buttonOverrides={{
+              paddingInline: 'space000',
+              typographyPreset: 'utilityButton020',
+            }}
+          />
+        </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
           <Explore />
         </GridLayout>
