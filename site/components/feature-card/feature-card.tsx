@@ -260,10 +260,6 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
     },
     ref,
   ) => {
-    const indexCards = ['roadmapCard', 'contributeOldCard', 'patternsCard'];
-    const mediaValue = () => (
-      <StyledFeatureCardVerticalMedia stylePreset={`${stylePrefix}Media`} />
-    );
     const theme = useTheme();
     const titleTypographyPreset = getToken(
       {theme, overrides},
@@ -281,9 +277,7 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
       <OptionalLinkWrapper href={href}>
         <StyledCardVerticalInset
           {...props}
-          media={
-            indexCards.includes(stylePrefix as string) ? mediaValue : media
-          }
+          media={media}
           ref={ref}
           overrides={{
             stylePreset: `${stylePrefix}Container${
