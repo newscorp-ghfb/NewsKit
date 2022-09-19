@@ -82,26 +82,31 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
             <Illustration path="guides/form-guide/steps/step-01" />
           </Block>
         </ContentPrimary>
-        <ContentSecondary description="With the example above, the component structure is:">
-          <Code>
-            {`<Form onSubmit={onSubmit}>
-      <FormInput
-          name="email-valid"
-          rules={{
-          required: 'Required field',
-          pattern: {
-              value: /^(([^<>()\\[\\]\\.,;:\\s@\\"]+(\\.[^<>()\\[\\]\\.,;:\\s@\\"]+)*)|(\\".+\\"))@(([^<>()[\\]\\.,;:\\s@\\"]+\\.)+[^<>()[\\]\\.,;:\\s@\\"]{2,})$/i,
-              message: 'Please provide a valid email address',
-          },
-          }}
-      >
-          <FormInputLabel>Email address</FormInputLabel>
-          <FormInputTextField />
-          <FormInputAssistiveText>Eg. yourname@gmail.com</FormInputAssistiveText>
-      </FormInput>
-      <Button type="submit">Submit</Button>
-  </Form>`}
-          </Code>
+        <ContentSecondary
+          description="With the example above, the component structure is:"
+          hideBottomSpacing
+        >
+          <Block spaceStack="space080">
+            <Code>
+              {`<Form onSubmit={onSubmit}>
+  <FormInput
+      name="email-valid"
+      rules={{
+      required: 'Required field',
+      pattern: {
+          value: /^(([^<>()\\[\\]\\.,;:\\s@\\"]+(\\.[^<>()\\[\\]\\.,;:\\s@\\"]+)*)|(\\".+\\"))@(([^<>()[\\]\\.,;:\\s@\\"]+\\.)+[^<>()[\\]\\.,;:\\s@\\"]{2,})$/i,
+          message: 'Please provide a valid email address',
+      },
+      }}
+  >
+      <FormInputLabel>Email address</FormInputLabel>
+      <FormInputTextField />
+      <FormInputAssistiveText>Eg. yourname@gmail.com</FormInputAssistiveText>
+  </FormInput>
+  <Button type="submit">Submit</Button>
+</Form>`}
+            </Code>
+          </Block>
         </ContentSecondary>
         <ContentSecondary
           description={
@@ -123,8 +128,11 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
             </>
           }
           childrenColSpan={ContentColSpan.TEXT}
+          hideBottomSpacing
         >
-          <Illustration path="guides/form-guide/steps/step-02" />
+          <Block spaceStack="space080">
+            <Illustration path="guides/form-guide/steps/step-02" />
+          </Block>
         </ContentSecondary>
         <ContentSecondary
           description={
@@ -231,8 +239,9 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Illustration path="guides/form-guide/steps/step-03" />
-          <Block spaceStack="space080" />
+          <Block spaceStack="space080">
+            <Illustration path="guides/form-guide/steps/step-03" />
+          </Block>
           <Code>
             {`<Form onSubmit={onSubmit}>
     <FormInput name="subscription-package">
@@ -269,10 +278,12 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Illustration path="guides/form-guide/steps/step-04" />
-          <Block spaceStack="space080" />
-          <Code>
-            {`<Form onSubmit={onSubmit}>
+          <Block spaceStack="space080">
+            <Illustration path="guides/form-guide/steps/step-04" />
+          </Block>
+          <Block spaceStack="space080">
+            <Code>
+              {`<Form onSubmit={onSubmit}>
     <Fieldset legend="Terms and conditions">
         <FormInput
             name="terms"
@@ -286,8 +297,8 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
     </Fieldset>  
     <Button type="submit">Submit</Button>
 </Form>`}
-          </Code>
-          <Block spaceStack="space080" />
+            </Code>
+          </Block>
           <Illustration path="guides/form-guide/steps/step-05" />
         </ContentSecondary>
         <ContentSecondary
@@ -323,10 +334,12 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Illustration path="guides/form-guide/steps/step-06" />
-          <Block spaceStack="space080" />
-          <Code>
-            {`<Form onSubmit={onSubmit}>
+          <Block spaceStack="space080">
+            <Illustration path="guides/form-guide/steps/step-06" />
+          </Block>
+          <Block spaceStack="space080">
+            <Code>
+              {`<Form onSubmit={onSubmit}>
     <Fieldset legend="Pick one interest">
       <RadioGroup>
         {['Reading', 'Hiking', 'Cooking'].map(value => (
@@ -345,8 +358,8 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
     </Fieldset>
     <Button type="submit">Submit</Button>
  </Form>`}
-          </Code>
-          <Block spaceStack="space080" />
+            </Code>
+          </Block>
           <Illustration path="guides/form-guide/steps/step-07" />
         </ContentSecondary>
       </ContentSection>
@@ -370,11 +383,14 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               <InlineCode>&#60;FormInputCheckbox/&#62;</InlineCode>.
             </>
           }
+          hideBottomSpacing
         >
-          <Illustration path="guides/form-guide/steps/step-08" />
-          <Block spaceStack="space080" />
-          <Code>
-            {`<Form onSubmit={onSubmit}>
+          <Block spaceStack="space080">
+            <Illustration path="guides/form-guide/steps/step-08" />
+          </Block>
+          <Block spaceStack="space080">
+            <Code>
+              {`<Form onSubmit={onSubmit}>
     <FormInput
       name="email-valid"
       rules={{
@@ -426,7 +442,8 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
 
     <Button type="submit">Submit</Button>
   </Form>`}
-          </Code>
+            </Code>
+          </Block>
         </ContentPrimary>
         <ContentSecondary
           description={
@@ -440,8 +457,11 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               input field has the correct data.
             </>
           }
+          hideBottomSpacing
         >
-          <Illustration path="guides/form-guide/steps/step-09" />
+          <Block spaceStack="space080">
+            <Illustration path="guides/form-guide/steps/step-09" />
+          </Block>
         </ContentSecondary>
         <ContentSecondary
           description="Now that everything has been entered correctly you can see that every component is valid and the user can proceed."
