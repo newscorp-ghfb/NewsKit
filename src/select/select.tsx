@@ -199,20 +199,25 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       }
     }, [isOpen, selectRef]);
 
+    // Chrome does not focus the panel until its in view port,
+    // that's why we need to use scrollIntoView and focus after that.
+    // This does not seems to be a problem in FF and Safari
+    // This part can be removed if Chrome fixes that in the future.
     useEffect(() => {
-      if (isOpen && panelRef.current) {
-        console.log('callback is here', panelRef);
+      /* istanbul ignore next */
+      if (
+        isOpen &&
+        panelRef.current &&
+        'scrollIntoView' in panelRef.current &&
+        'focus' in panelRef.current
+      ) {
         const callback = () => {
-          console.log(panelRef.current);
           panelRef.current?.scrollIntoView();
           panelRef.current?.focus();
         };
-        // requestAnimationFrame(callback);
-        setTimeout(callback, 16);
+        setTimeout(callback, 0);
       }
     }, [isOpen, panelRef]);
-
-    console.log('render');
 
     return (
       <>
