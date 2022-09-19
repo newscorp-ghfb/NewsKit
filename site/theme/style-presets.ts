@@ -427,55 +427,6 @@ export const stylePresets = {
     },
   },
 
-  contributeOldCardContainerInteractive: {
-    base: {
-      backgroundColor: '{{colors.interfaceBrand050}}',
-      borderRadius: '{{borders.borderRadiusRounded030}}',
-    },
-    hover: {
-      boxShadow: '{{shadows.shadow040}}',
-    },
-  },
-  contributeOldCardContainerNonInteractive: {
-    base: {
-      backgroundColor: '{{colors.interfaceBrand050}}',
-      borderRadius: '{{borders.borderRadiusRounded020}}',
-    },
-  },
-  contributeOldCardMedia: {
-    base: {
-      backgroundImage: 'url(static/landing/feature-card-contribute-old.svg)',
-    },
-  },
-  contributeOldCardButton: {
-    base: {
-      backgroundColor: '{{colors.interactiveInverse030}}',
-      borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
-    },
-    hover: {
-      backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkWhiteContrast}}',
-      iconColor: '{{colors.inkWhiteContrast}}',
-    },
-    active: {
-      backgroundColor: '{{colors.interactiveInverse050}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
-    },
-    disabled: {
-      backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
-    },
-    loading: {
-      backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
-    },
-  },
-
   contributeCardContainerInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
