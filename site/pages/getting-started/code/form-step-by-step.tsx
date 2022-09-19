@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, UnorderedList} from 'newskit';
+import {getSizingCssFromTheme, styled, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {Code} from '../../../components/code';
 import {InlineCode} from '../../../components/markdown-elements';
@@ -14,6 +14,10 @@ import {
   ContentSecondary,
   ContentColSpan,
 } from '../../../components/content-structure';
+
+const ContainerSpace = styled.div`
+  ${getSizingCssFromTheme('marginBottom', 'sizing080')}
+`;
 
 const FormStepByStep = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
@@ -78,15 +82,15 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           description="Let’s start off with a basic form layout."
           hideBottomSpacing
         >
-          <Block spaceStack="space080">
+          <ContainerSpace>
             <Illustration path="guides/form-guide/steps/step-01" />
-          </Block>
+          </ContainerSpace>
         </ContentPrimary>
         <ContentSecondary
           description="With the example above, the component structure is:"
           hideBottomSpacing
         >
-          <Block spaceStack="space080">
+          <ContainerSpace>
             <Code>
               {`<Form onSubmit={onSubmit}>
   <FormInput
@@ -106,7 +110,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
   <Button type="submit">Submit</Button>
 </Form>`}
             </Code>
-          </Block>
+          </ContainerSpace>
         </ContentSecondary>
         <ContentSecondary
           description={
@@ -130,9 +134,9 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           childrenColSpan={ContentColSpan.TEXT}
           hideBottomSpacing
         >
-          <Block spaceStack="space080">
+          <ContainerSpace>
             <Illustration path="guides/form-guide/steps/step-02" />
-          </Block>
+          </ContainerSpace>
         </ContentSecondary>
         <ContentSecondary
           description={
@@ -239,9 +243,9 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Block spaceStack="space080">
+          <ContainerSpace>
             <Illustration path="guides/form-guide/steps/step-03" />
-          </Block>
+          </ContainerSpace>
           <Code>
             {`<Form onSubmit={onSubmit}>
     <FormInput name="subscription-package">
@@ -278,10 +282,10 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Block spaceStack="space080">
+          <ContainerSpace>
             <Illustration path="guides/form-guide/steps/step-04" />
-          </Block>
-          <Block spaceStack="space080">
+          </ContainerSpace>
+          <ContainerSpace>
             <Code>
               {`<Form onSubmit={onSubmit}>
     <Fieldset legend="Terms and conditions">
@@ -298,7 +302,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
     <Button type="submit">Submit</Button>
 </Form>`}
             </Code>
-          </Block>
+          </ContainerSpace>
           <Illustration path="guides/form-guide/steps/step-05" />
         </ContentSecondary>
         <ContentSecondary
@@ -334,10 +338,10 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Block spaceStack="space080">
+          <ContainerSpace>
             <Illustration path="guides/form-guide/steps/step-06" />
-          </Block>
-          <Block spaceStack="space080">
+          </ContainerSpace>
+          <ContainerSpace>
             <Code>
               {`<Form onSubmit={onSubmit}>
     <Fieldset legend="Pick one interest">
@@ -359,7 +363,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
     <Button type="submit">Submit</Button>
  </Form>`}
             </Code>
-          </Block>
+          </ContainerSpace>
           <Illustration path="guides/form-guide/steps/step-07" />
         </ContentSecondary>
       </ContentSection>
@@ -385,10 +389,10 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           }
           hideBottomSpacing
         >
-          <Block spaceStack="space080">
+          <ContainerSpace>
             <Illustration path="guides/form-guide/steps/step-08" />
-          </Block>
-          <Block spaceStack="space080">
+          </ContainerSpace>
+          <ContainerSpace>
             <Code>
               {`<Form onSubmit={onSubmit}>
     <FormInput
@@ -443,7 +447,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
     <Button type="submit">Submit</Button>
   </Form>`}
             </Code>
-          </Block>
+          </ContainerSpace>
         </ContentPrimary>
         <ContentSecondary
           description={
@@ -459,9 +463,9 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           }
           hideBottomSpacing
         >
-          <Block spaceStack="space080">
+          <ContainerSpace>
             <Illustration path="guides/form-guide/steps/step-09" />
-          </Block>
+          </ContainerSpace>
         </ContentSecondary>
         <ContentSecondary
           description="Now that everything has been entered correctly you can see that every component is valid and the user can proceed."
