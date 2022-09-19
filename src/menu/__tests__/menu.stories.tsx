@@ -13,7 +13,11 @@ import {
   IconFilledExpandMore,
 } from '../../icons';
 import {Menu, MenuItem, MenuGroup, MenuDivider} from '..';
-import {styled, getColorCssFromTheme} from '../../utils';
+import {
+  styled,
+  getColorCssFromTheme,
+  getSpacingCssFromTheme,
+} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {Divider} from '../../divider';
@@ -21,6 +25,7 @@ import {P} from '../../typography';
 import {TextBlock} from '../../text-block';
 import {GridLayout} from '../../grid-layout';
 import {IconButton} from '../../icon-button';
+import {Block} from '../../block';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
@@ -206,6 +211,57 @@ const menuCustomThemeObject: CreateThemeArgs = {
           outlineStyle: 'dotted',
           outlineWidth: '5px',
           outlineOffset: '5px',
+        },
+      },
+      mobileMenuMenuItem: {
+        base: {
+          textDecoration: 'none',
+          borderColor: '{{colors.transparent}}',
+          borderWidth: '4px',
+          borderStyle: 'solid',
+          color: '{{colors.inkSubtle}}',
+        },
+        hover: {
+          color: '{{colors.interactivePrimary040}}',
+          backgroundColor: '{{colors.interactivePrimary020}}',
+        },
+        active: {
+          color: '{{colors.interactivePrimary050}}',
+        },
+        selected: {
+          borderColor:
+            '{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ',
+          color: '{{colors.interactivePrimary030}}',
+          textDecoration: 'none',
+        },
+      },
+      firstTierMenuItem: {
+        base: {
+          textDecoration: 'none',
+          borderColor: '{{colors.transparent}}',
+          borderWidth: '4px',
+          borderStyle: 'solid',
+          color: '{{colors.inkInverse}}',
+        },
+        selected: {
+          borderColor:
+            '{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary010}} {{colors.transparent}} ',
+        },
+      },
+      secondTierMenuItem: {
+        base: {
+          textDecoration: 'none',
+          borderColor: '{{colors.transparent}}',
+          borderWidth: '4px',
+          borderStyle: 'solid',
+          color: '{{colors.inkSubtle}}',
+        },
+        hover: {
+          color: '{{colors.inkBase}}',
+        },
+        selected: {
+          borderColor:
+            '{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}} ',
         },
       },
     },
@@ -1307,127 +1363,189 @@ export const StoryMenuItemsOutlineOverrides = () => (
 StoryMenuItemsOutlineOverrides.storyName = 'menu items outline overrides';
 
 export const StoryMenuTwoAndThreeTierNavigation = () => {
-  const Container = styled.div`
-    border: 1px solid;
-    ${getColorCssFromTheme('borderColor', 'inkContrast')};
-  `;
   const FirstLevelMenuContainer = styled.div`
-    border-bottom: 1px solid;
-    ${getColorCssFromTheme('borderColor', 'inkContrast')};
+    ${getSpacingCssFromTheme('paddingInline', 'space050')}
+    ${getColorCssFromTheme('backgroundColor', 'interfaceBrand010')};
   `;
+  const SecondLevelMenuContainer = styled.div`
+    border-bottom: 1px solid;
+    ${getSpacingCssFromTheme('paddingInline', 'space050')}
+    ${getColorCssFromTheme('borderColor', 'interface040')};
+  `;
+
   return (
     <>
-      <StorybookHeading>Menu - 2 tier navigation</StorybookHeading>
-      <Container>
-        <FirstLevelMenuContainer>
-          <Menu aria-label={`Menu 1 ${getSSRId()}`}>
-            <MenuGroup>
-              <MenuItem href={href}>News</MenuItem>
-              <MenuDivider />
-              <MenuItem selected href={href}>
-                Sport
+      <StorybookHeading>Menu - desktop 2-tier navigation</StorybookHeading>
+
+      <FirstLevelMenuContainer>
+        <Menu aria-label={`Menu 1 ${getSSRId()}`}>
+          <MenuGroup>
+            {['Menu item 1', 'Menu item 2', 'Menu item 3'].map(menuItem => (
+              <MenuItem
+                key={menuItem}
+                overrides={{
+                  stylePreset: 'firstTierMenuItem',
+                  minHeight: 'sizing100',
+                }}
+                selected={menuItem === 'Menu item 2'}
+                href={href}
+              >
+                {menuItem}
               </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href}>TV</MenuItem>
-              <MenuDivider />
-              <MenuItem href={href}>Showbiz</MenuItem>
-              <MenuDivider />
-              <MenuItem href={href}>Fabulous</MenuItem>
-              <MenuDivider />
-              <MenuItem href={href}>Money</MenuItem>
-              <MenuDivider />
-            </MenuGroup>
-          </Menu>
-        </FirstLevelMenuContainer>
-        <Menu
-          overrides={{marginBlock: 'space030'}}
-          aria-label={`Menu 2 ${getSSRId()}`}
-        >
-          <MenuGroup>
-            <MenuItem href={href}>Health News</MenuItem>
-            <MenuDivider overrides={{spaceInline: 'space080'}} />
-            <MenuItem href={href}>Wellbeing</MenuItem>
-            <MenuItem selected href={href}>
-              Puzzles
-            </MenuItem>
-            <MenuItem href={href}>Section 4</MenuItem>
-            <MenuItem href={href}>Section 5</MenuItem>
+            ))}
           </MenuGroup>
         </Menu>
-      </Container>
-      <StorybookHeading>Menu - 3 tier navigation</StorybookHeading>
-      <Container>
-        <FirstLevelMenuContainer>
-          <Menu aria-label={`Menu 1 ${getSSRId()}`}>
-            <MenuGroup>
-              <MenuItem href={href}>News</MenuItem>
-              <MenuDivider />
-              <MenuItem href={href}>Sport</MenuItem>
-              <MenuDivider />
-              <MenuItem href={href}>TV</MenuItem>
-              <MenuDivider />
-              <MenuItem href={href}>Showbiz</MenuItem>
-              <MenuDivider />
-              <MenuItem href={href}>Fabulous</MenuItem>
-              <MenuDivider />
-              <MenuItem href={href}>Money</MenuItem>
-              <MenuDivider />
-              <MenuItem selected href={href}>
-                More
+      </FirstLevelMenuContainer>
+      <SecondLevelMenuContainer>
+        <Menu aria-label={`Menu 2 ${getSSRId()}`}>
+          <MenuGroup>
+            {[
+              'Menu item 2.1',
+              'Menu item 2.2',
+              'Menu item 2.3',
+              'Menu item 2.4',
+              'Menu item 2.5',
+            ].map(menuItem => (
+              <MenuItem
+                key={menuItem}
+                overrides={{
+                  stylePreset: 'secondTierMenuItem',
+                  minHeight: 'sizing100',
+                }}
+                selected={menuItem === 'Menu item 2.4'}
+                href={href}
+              >
+                {menuItem}
               </MenuItem>
-              <MenuDivider />
-            </MenuGroup>
-          </Menu>
-        </FirstLevelMenuContainer>
-        <P
-          overrides={{
-            paddingBlockStart: 'space030',
-            paddingInline: 'space040',
-            paddingBlockEnd: 'space020',
-          }}
-        >
-          MORE SECTIONS
-        </P>
-        <Divider overrides={{marginBlockEnd: 'space020'}} />
-        <Menu
-          overrides={{marginBlockStart: 'space030'}}
-          aria-label={`Menu 2 ${getSSRId()}`}
-        >
-          <MenuGroup>
-            <MenuItem href={href}>Health News</MenuItem>
-            <MenuItem href={href}>Wellbeing</MenuItem>
-            <MenuItem selected href={href}>
-              Puzzles
-            </MenuItem>
-            <MenuItem href={href}>Section 3</MenuItem>
-            <MenuItem href={href}>Section 4</MenuItem>
+            ))}
           </MenuGroup>
         </Menu>
-        <P
-          overrides={{
-            paddingBlockStart: 'space030',
-            paddingInline: 'space040',
-            paddingBlockEnd: 'space020',
-          }}
-        >
-          MORE FROM THE SUN
-        </P>
-        <Divider overrides={{marginBlockEnd: 'space020'}} />
-        <Menu
-          overrides={{marginBlock: 'space030'}}
-          aria-label={`Menu 3 ${getSSRId()}`}
-        >
+      </SecondLevelMenuContainer>
+
+      <br />
+      <br />
+      <StorybookHeading>Menu - desktop 3-tier navigation</StorybookHeading>
+      <FirstLevelMenuContainer>
+        <Menu aria-label={`Menu 1 ${getSSRId()}`}>
           <MenuGroup>
-            <MenuItem href={href}>Dream Team</MenuItem>
-            <MenuItem selected href={href}>
-              Sun Bingo
+            <MenuItem
+              overrides={{
+                stylePreset: 'firstTierMenuItem',
+                minHeight: 'sizing100',
+              }}
+              href={href}
+            >
+              Menu item 1
             </MenuItem>
-            <MenuItem href={href}>Sun Gifts</MenuItem>
-            <MenuItem href={href}>Sun Savers</MenuItem>
-            <MenuItem href={href}>Sun Jobs</MenuItem>
+            <MenuItem
+              overrides={{
+                stylePreset: 'firstTierMenuItem',
+                minHeight: 'sizing100',
+              }}
+              href={href}
+            >
+              Menu item 2
+            </MenuItem>
+            <MenuItem
+              overrides={{
+                stylePreset: 'firstTierMenuItem',
+                minHeight: 'sizing100',
+              }}
+              href={href}
+            >
+              Menu item 3
+            </MenuItem>
+            <MenuItem
+              overrides={{
+                stylePreset: 'firstTierMenuItem',
+                minHeight: 'sizing100',
+              }}
+              selected
+              href={href}
+            >
+              More
+              <IconFilledExpandLess
+                overrides={{size: 'iconSize010', stylePreset: 'inkInverse'}}
+              />
+            </MenuItem>
           </MenuGroup>
         </Menu>
-      </Container>
+      </FirstLevelMenuContainer>
+
+      <SecondLevelMenuContainer>
+        <Block paddingInline="space040">
+          <P
+            overrides={{
+              marginBlock: 'space020',
+              paddingBlock: 'space040',
+              typographyPreset: 'utilityHeading020',
+            }}
+          >
+            Section 4
+          </P>
+          <Divider />
+        </Block>
+        <Menu aria-label={`Menu 2 ${getSSRId()}`}>
+          <MenuGroup>
+            {[
+              'Menu item 4.1',
+              'Menu item 4.2',
+              'Menu item 4.3',
+              'Menu item 4.4',
+              'Menu item 4.5',
+            ].map(menuItem => (
+              <MenuItem
+                key={menuItem}
+                overrides={{
+                  stylePreset: 'secondTierMenuItem',
+                  minHeight: 'sizing100',
+                }}
+                selected={menuItem === 'Menu item 4.4'}
+                href={href}
+              >
+                {menuItem}
+              </MenuItem>
+            ))}
+          </MenuGroup>
+        </Menu>
+      </SecondLevelMenuContainer>
+      <SecondLevelMenuContainer>
+        <Block paddingInline="space040">
+          <P
+            overrides={{
+              marginBlock: 'space020',
+              paddingBlock: 'space040',
+              typographyPreset: 'utilityHeading020',
+            }}
+          >
+            Section 5
+          </P>
+          <Divider />
+        </Block>
+        <Menu aria-label={`Menu 3 ${getSSRId()}`}>
+          <MenuGroup>
+            {[
+              'Menu item 5.1',
+              'Menu item 5.2',
+              'Menu item 5.3',
+              'Menu item 5.4',
+              'Menu item 5.5',
+            ].map(menuItem => (
+              <MenuItem
+                key={menuItem}
+                overrides={{
+                  stylePreset: 'secondTierMenuItem',
+                  minHeight: 'sizing100',
+                }}
+                selected={menuItem === 'Menu item 5.4'}
+                href={href}
+              >
+                {menuItem}
+              </MenuItem>
+            ))}
+          </MenuGroup>
+        </Menu>
+      </SecondLevelMenuContainer>
     </>
   );
 };
@@ -1435,23 +1553,15 @@ StoryMenuTwoAndThreeTierNavigation.storyName = 'menu - 2 and 3 tier navigation';
 
 export const StoryMenuMobileNavigation = () => {
   const Container = styled.div`
-    border: 1px solid;
-    ${getColorCssFromTheme('borderColor', 'inkContrast')};
+    ${getColorCssFromTheme('backgroundColor', 'interface030')};
     max-width: 300px;
     min-height: 500px;
   `;
 
-  const menuGroupOverrides = {
-    title: {
-      typographyPreset: 'utilityHeading010',
-      spaceInline: 'space030',
-      spaceInset: 'space080',
-    },
-  };
   const menuItemOverrides = {
     typographyPreset: 'utilityButton020',
-    paddingInline: 'space090',
-    marginBlockEnd: 'space030',
+    paddingInlineStart: 'space070',
+    stylePreset: 'mobileMenuMenuItem',
   };
 
   const [openPanelId, setOpenPanelId] = useState<number>(1);
@@ -1513,30 +1623,22 @@ export const StoryMenuMobileNavigation = () => {
           </TextBlock>
           {openPanelId === 0 && (
             <>
-              <MenuGroup title="Menu Group 1" overrides={menuGroupOverrides}>
-                {['Menu Item 1.1', 'Menu Item 1.2'].map(item => (
-                  <MenuItem
-                    key={item}
-                    href={href}
-                    overrides={menuItemOverrides}
-                    size="small"
-                  >
-                    {item}
-                  </MenuItem>
-                ))}
-              </MenuGroup>
-              <MenuGroup title="Menu Group 2" overrides={menuGroupOverrides}>
-                {['Menu Item 2.1', 'Menu Item 2.2'].map(item => (
-                  <MenuItem
-                    key={item}
-                    href={href}
-                    overrides={menuItemOverrides}
-                    size="small"
-                  >
-                    {item}
-                  </MenuItem>
-                ))}
-              </MenuGroup>
+              {[
+                'Menu item 1.1',
+                'Menu item 1.2',
+                'Menu item 1.3',
+                'Menu item 1.4',
+                'Menu item 1.5',
+              ].map(item => (
+                <MenuItem
+                  key={item}
+                  href={href}
+                  overrides={menuItemOverrides}
+                  size="small"
+                >
+                  {item}
+                </MenuItem>
+              ))}
             </>
           )}
 
@@ -1587,30 +1689,23 @@ export const StoryMenuMobileNavigation = () => {
           </TextBlock>
           {openPanelId === 1 && (
             <>
-              <MenuGroup title="Menu Group 1" overrides={menuGroupOverrides}>
-                {['Menu Item 1.1'].map(item => (
-                  <MenuItem
-                    key={item}
-                    href={href}
-                    overrides={menuItemOverrides}
-                    size="small"
-                  >
-                    {item}
-                  </MenuItem>
-                ))}
-              </MenuGroup>
-              <MenuGroup title="Menu Group 2" overrides={menuGroupOverrides}>
-                {['Menu Item 2.1', 'Menu Item 2.2'].map(item => (
-                  <MenuItem
-                    key={item}
-                    href={href}
-                    overrides={menuItemOverrides}
-                    size="small"
-                  >
-                    {item}
-                  </MenuItem>
-                ))}
-              </MenuGroup>
+              {[
+                'Menu item 2.1',
+                'Menu item 2.2',
+                'Menu item 2.3',
+                'Menu item 2.4',
+                'Menu item 2.5',
+              ].map(item => (
+                <MenuItem
+                  key={item}
+                  href={href}
+                  selected={item === 'Menu item 2.1'}
+                  overrides={menuItemOverrides}
+                  size="small"
+                >
+                  {item}
+                </MenuItem>
+              ))}
             </>
           )}
         </Menu>
