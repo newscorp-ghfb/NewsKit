@@ -1,4 +1,4 @@
-import {styled, Flag} from 'newskit';
+import {styled, Flag, Visible} from 'newskit';
 import React from 'react';
 import NextLink, {LinkProps as NextLinkProps} from 'next/link';
 import {DocSearchHitExtended, DocSearchHitProps} from './types';
@@ -44,16 +44,18 @@ export const DocSearchHit = (props: DocSearchHitProps) => {
     }
 
     return (
-      <Flag
-        size="small"
-        overrides={{
-          marginInlineEnd: 'space050',
-          stylePreset: 'searchTag',
-          typographyPreset: 'utilityLabel010',
-        }}
-      >
-        {text}
-      </Flag>
+      <Visible md lg xl>
+        <Flag
+          size="small"
+          overrides={{
+            marginInlineEnd: 'space050',
+            stylePreset: 'searchTag',
+            typographyPreset: 'utilityLabel010',
+          }}
+        >
+          {text}
+        </Flag>
+      </Visible>
     );
   }
 
