@@ -183,6 +183,7 @@
     "react-phone-number-input": "^3.1.23",
     "react-syntax-highlighter": "^13.0.0",
     "react-test-renderer": "18",
+    "shelljs": "^0.8.5",
     "start-server-and-test": "^1.14.0",
     "storybook-addon-performance": "^0.16.1",
     "tar": "^4.4.8",
