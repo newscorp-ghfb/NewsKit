@@ -178,7 +178,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
       introduction="'Visible', 'Hidden' and 'ScreenReaderOnly' have a range of props that can be used to define an appropriate experience for different use cases."
       components={[
         {
-          title: 'Visible Component Props',
+          title: 'Visible',
           summary:
             '‘Visible’ has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
@@ -238,7 +238,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'Hidden Component Props',
+          title: 'Hidden',
           summary:
             '‘Hidden’ has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
@@ -298,7 +298,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'ScreenReaderOnly Component Props',
+          title: 'ScreenReaderOnly',
           summary:
             '‘ScreenReaderOnly’ has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [

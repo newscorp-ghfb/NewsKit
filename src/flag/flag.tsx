@@ -11,7 +11,7 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
-const BaseFlag = React.forwardRef<
+export const BaseFlag = React.forwardRef<
   HTMLDivElement,
   BaseFlagProps<BaseFlagOverrides>
 >(({children, overrides, loading, disabled, as, ...props}, ref) => {
@@ -59,6 +59,7 @@ const ThemelessFlag = React.forwardRef<HTMLDivElement, FlagProps>(
       <BaseFlag
         data-testid="flag"
         {...props}
+        loading={false}
         ref={ref}
         overrides={{
           ...theme.componentDefaults.flag[size],

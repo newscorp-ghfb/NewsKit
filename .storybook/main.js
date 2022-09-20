@@ -4,7 +4,6 @@ const toPath = _path => path.join(process.cwd(), _path);
 
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
-  // todo: https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#deprecated---static-dir-cli-flag
   addons: [
     '@storybook/addon-links',
     {
@@ -30,6 +29,15 @@ module.exports = {
       },
     },
     './addons/tealium/preset.js',
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        configureJSX: true,
+        babelOptions: {},
+        sourceLoaderOptions: null,
+        transcludeMarkdown: true,
+      },
+    },
   ],
   // https://github.com/storybookjs/storybook/issues/13277
   // Remove Emotion aliases once the issue above is resolved

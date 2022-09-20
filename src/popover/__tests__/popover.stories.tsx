@@ -13,7 +13,7 @@ import {PopoverProps} from '../types';
 import {LinkStandalone} from '../../link';
 
 // Open all Popovers by default when running in Applitools.
-const isApplitoolsTest = process.env.APPLITOOLS_BATCH_ID !== undefined;
+const isApplitoolsTest = process.env.STORYBOOK_IS_VISUAL_TEST === 'true';
 
 const getPlacementStyling = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
@@ -231,10 +231,32 @@ export const StoryPopoverDefault = () => (
         </StorybookSubHeading>
         <BoundedPopover header={undefined} closePosition="none" enableDismiss />
       </div>
-      <div>
-        <StorybookSubHeading>Popover - no pointer</StorybookSubHeading>
-        <BoundedPopover hidePointer />
-      </div>
+      <GridLayout columns={{xs: 'repeat(3, minmax(0, 2fr))'}}>
+        <div>
+          <StorybookSubHeading>
+            Popover - no pointer (default)
+          </StorybookSubHeading>
+          <BoundedPopover hidePointer />
+        </div>
+        <div>
+          <StorybookSubHeading>
+            Popover - no pointer distance (increased)
+          </StorybookSubHeading>
+          <BoundedPopover
+            hidePointer
+            overrides={{distance: 'space080', maxWidth: '300px'}}
+          />
+        </div>
+        <div>
+          <StorybookSubHeading>
+            Popover - no pointer distance (zero)
+          </StorybookSubHeading>
+          <BoundedPopover
+            hidePointer
+            overrides={{distance: 'space000', maxWidth: '300px'}}
+          />
+        </div>
+      </GridLayout>
       <div>
         <StorybookSubHeading>
           Popover - header title overflow

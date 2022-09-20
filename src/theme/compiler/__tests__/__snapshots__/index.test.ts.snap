@@ -562,7 +562,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "#F1F1F1",
-        "borderColor": "#3768FB",
+        "borderColor": "transparent",
+        "outlineColor": "#3768FB",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "safariOutlineStyle": "auto",
       },
       "invalid:hover": Object {
         "backgroundColor": "#F1F1F1",
@@ -576,7 +580,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "#F1F1F1",
-        "borderColor": "#3768FB",
+        "borderColor": "transparent",
+        "outlineColor": "#3768FB",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "safariOutlineStyle": "auto",
       },
       "valid:hover": Object {
         "backgroundColor": "#F1F1F1",
@@ -824,6 +832,33 @@ Object {
         "transitionDuration": "200ms",
         "transitionProperty": "fill",
         "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "200ms",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "200ms",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {

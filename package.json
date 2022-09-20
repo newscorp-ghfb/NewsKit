@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -34,7 +34,7 @@
     "test:unit:ci": "yarn test:unit:run --maxWorkers=2 --ci --reporters=default --reporters=jest-junit",
     "test:unit:comps": "yarn test:unit:run:local --projects=src",
     "test:unit:site": "yarn test:unit:run:local --projects=site",
-    "test:visual:comps:ci": "start-server-and-test dev:storybook 6006 eyes:storybook",
+    "test:visual:comps:ci": "STORYBOOK_IS_VISUAL_TEST=true start-server-and-test dev:storybook 6006 eyes:storybook",
     "test:visual:comps:local": "sh ./scripts/applitools_local.sh comps",
     "prepublish": "yarn build:sync-version-number",
     "build:clean": "rm -rf dist && rm -rf dist-storybook && rm -rf public",
@@ -91,6 +91,7 @@
     "@mdx-js/react": "^1.5.8",
     "@next/mdx": "^9.3.5",
     "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-docs": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-links": "^6.5.9",
     "@storybook/addon-storysource": "^6.5.9",

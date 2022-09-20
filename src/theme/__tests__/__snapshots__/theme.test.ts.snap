@@ -488,7 +488,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -502,7 +506,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -659,6 +667,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -1215,12 +1250,14 @@ Object {
       "paddingInline": "spaceInset030",
       "spaceInline": "space020",
       "stylePreset": "accordionHeader",
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton030",
     },
     "panel": Object {
       "paddingBlock": "spaceInset030",
       "paddingInline": "spaceInset030",
       "stylePreset": "accordionPanel",
+      "transitionPreset": "maxHeightChange",
     },
   },
   "assistiveText": Object {
@@ -2665,6 +2702,38 @@ Object {
       "stylePreset": "tagPrimary",
       "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton010",
+    },
+  },
+  "textArea": Object {
+    "large": Object {
+      "height": "sizing110",
+      "marginBlockEnd": "space020",
+      "minHeight": "sizing090",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
+      "stylePreset": "inputField",
+      "typographyPreset": "utilityBody030",
+      "width": "100%",
+    },
+    "medium": Object {
+      "height": "sizing110",
+      "marginBlockEnd": "space020",
+      "minHeight": "sizing080",
+      "paddingBlock": "space030",
+      "paddingInline": "space030",
+      "stylePreset": "inputField",
+      "typographyPreset": "utilityBody020",
+      "width": "100%",
+    },
+    "small": Object {
+      "height": "sizing100",
+      "marginBlockEnd": "space020",
+      "minHeight": "sizing070",
+      "paddingBlock": "space020",
+      "paddingInline": "space020",
+      "stylePreset": "inputField",
+      "typographyPreset": "utilityBody020",
+      "width": "100%",
     },
   },
   "textField": Object {
@@ -4712,7 +4781,11 @@ Object {
     },
     "invalid:focus": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
-      "borderColor": "{{outlines.outlineColorDefault}}",
+      "borderColor": "{{colors.transparent}}",
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "invalid:hover": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
@@ -4726,7 +4799,11 @@ Object {
     },
     "valid:focus": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
-      "borderColor": "{{outlines.outlineColorDefault}}",
+      "borderColor": "{{colors.transparent}}",
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "valid:hover": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",

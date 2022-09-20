@@ -978,54 +978,6 @@ Object {
         "backgroundSize": "cover",
       },
     },
-    "contributeOldCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveInverse030}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkWhiteContrast}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-    },
-    "contributeOldCardContainerInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-      },
-      "hover": Object {
-        "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "contributeOldCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "contributeOldCardMedia": Object {
-      "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
-      },
-    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -1060,9 +1012,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -1264,6 +1218,54 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "heroInteractiveForm": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "heroInteractiveFormInput": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectPanel": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSelectionList": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSliderTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
     "homepageCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -1313,7 +1315,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -1327,7 +1333,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -1833,6 +1843,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -1987,6 +2014,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -3525,54 +3579,6 @@ Object {
         "backgroundSize": "cover",
       },
     },
-    "contributeOldCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveInverse030}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkWhiteContrast}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-    },
-    "contributeOldCardContainerInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-      },
-      "hover": Object {
-        "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "contributeOldCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "contributeOldCardMedia": Object {
-      "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
-      },
-    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -3607,9 +3613,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -3811,6 +3819,54 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "heroInteractiveForm": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "heroInteractiveFormInput": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectPanel": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSelectionList": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSliderTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
     "homepageCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -3860,7 +3916,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -3874,7 +3934,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -4380,6 +4444,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -4534,6 +4615,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -6075,54 +6183,6 @@ Object {
         "backgroundSize": "cover",
       },
     },
-    "contributeOldCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveInverse030}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkWhiteContrast}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-    },
-    "contributeOldCardContainerInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-      },
-      "hover": Object {
-        "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "contributeOldCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "contributeOldCardMedia": Object {
-      "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
-      },
-    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -6157,9 +6217,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -6361,6 +6423,54 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "heroInteractiveForm": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "heroInteractiveFormInput": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectPanel": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSelectionList": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSliderTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
     "homepageCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -6410,7 +6520,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -6424,7 +6538,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -6930,6 +7048,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -7084,6 +7219,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -8622,54 +8784,6 @@ Object {
         "backgroundSize": "cover",
       },
     },
-    "contributeOldCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveInverse030}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkWhiteContrast}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-    },
-    "contributeOldCardContainerInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-      },
-      "hover": Object {
-        "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "contributeOldCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "contributeOldCardMedia": Object {
-      "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
-      },
-    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -8704,9 +8818,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -8908,6 +9024,54 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "heroInteractiveForm": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "heroInteractiveFormInput": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectPanel": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSelectionList": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSliderTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
     "homepageCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -8957,7 +9121,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -8971,7 +9139,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -9477,6 +9649,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -9631,6 +9820,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -11172,54 +11388,6 @@ Object {
         "backgroundSize": "cover",
       },
     },
-    "contributeOldCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveInverse030}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkWhiteContrast}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-    },
-    "contributeOldCardContainerInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-      },
-      "hover": Object {
-        "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "contributeOldCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "contributeOldCardMedia": Object {
-      "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
-      },
-    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -11254,9 +11422,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -11458,6 +11628,54 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "heroInteractiveForm": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "heroInteractiveFormInput": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectPanel": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSelectionList": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSliderTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
     "homepageCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -11507,7 +11725,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -11521,7 +11743,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -12027,6 +12253,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -12181,6 +12424,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -13719,54 +13989,6 @@ Object {
         "backgroundSize": "cover",
       },
     },
-    "contributeOldCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveInverse030}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkWhiteContrast}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-    },
-    "contributeOldCardContainerInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-      },
-      "hover": Object {
-        "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "contributeOldCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "contributeOldCardMedia": Object {
-      "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
-      },
-    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -13801,9 +14023,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -14005,6 +14229,54 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "heroInteractiveForm": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "heroInteractiveFormInput": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectPanel": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSelectionList": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSliderTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
     "homepageCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -14054,7 +14326,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -14068,7 +14344,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -14574,6 +14854,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -14728,6 +15025,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -16269,54 +16593,6 @@ Object {
         "backgroundSize": "cover",
       },
     },
-    "contributeOldCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveInverse030}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkWhiteContrast}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-    },
-    "contributeOldCardContainerInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-      },
-      "hover": Object {
-        "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "contributeOldCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "contributeOldCardMedia": Object {
-      "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
-      },
-    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -16351,9 +16627,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -16555,6 +16833,54 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "heroInteractiveForm": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "heroInteractiveFormInput": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectPanel": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSelectionList": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSliderTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
     "homepageCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -16604,7 +16930,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -16618,7 +16948,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -17124,6 +17458,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -17278,6 +17629,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
@@ -18816,54 +19194,6 @@ Object {
         "backgroundSize": "cover",
       },
     },
-    "contributeOldCardButton": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveInverse030}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkWhiteContrast}}",
-        "iconColor": "{{colors.inkWhiteContrast}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-    },
-    "contributeOldCardContainerInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-      },
-      "hover": Object {
-        "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "contributeOldCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand050}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "contributeOldCardMedia": Object {
-      "base": Object {
-        "backgroundImage": "url(static/landing/feature-card-contribute-old.svg)",
-      },
-    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -18898,9 +19228,11 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "exploreCardHeadline": Object {
+    "exploreCardLink": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textDecoration": "none",
       },
       "hover": Object {
         "textDecoration": "underline",
@@ -19102,6 +19434,54 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "heroInteractiveForm": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "heroInteractiveFormInput": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectButton": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "heroInteractiveSelectPanel": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSelectionList": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "boxShadow": "{{shadows.shadow050}}",
+      },
+    },
+    "heroInteractiveSliderTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
     "homepageCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -19151,7 +19531,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -19165,7 +19549,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -19671,6 +20059,23 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "whatsNewCardLink": Object {
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "textDecoration": "underline",
+      },
+    },
+    "whatsNewHomeFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInformative}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+    },
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -19825,6 +20230,33 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionProperty": "max-height",
+      },
+      "enter": Object {
+        "maxHeight": "0",
+      },
+      "enterActive": Object {
+        "maxHeight": "unset",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "enterDone": Object {
+        "maxHeight": "unset",
+      },
+      "exit": Object {
+        "maxHeight": "unset",
+      },
+      "exitActive": Object {
+        "maxHeight": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+      },
+      "exitDone": Object {
+        "maxHeight": "0",
       },
     },
     "moveUp": Object {
