@@ -28,7 +28,6 @@ export const addPathname = (item: DocSearchHit): DocSearchHitExtended => {
 
   const canonicalAs = parseUrl.pathname + parseUrl.hash;
   const canonicalPathname = canonicalAs
-    .replace(/^\/api/, '/api-docs')
     .replace(/#(.*)$/, '')
     .replace(/\/$/, '');
 
