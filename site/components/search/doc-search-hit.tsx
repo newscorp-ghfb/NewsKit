@@ -44,7 +44,14 @@ export const DocSearchHit = (props: DocSearchHitProps) => {
     }
 
     return (
-      <Flag size="small" overrides={{marginInlineEnd: 'space050'}}>
+      <Flag
+        size="small"
+        overrides={{
+          marginInlineEnd: 'space050',
+          stylePreset: 'searchTag',
+          typographyPreset: 'utilityLabel010',
+        }}
+      >
         {text}
       </Flag>
     );
