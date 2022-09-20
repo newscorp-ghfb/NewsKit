@@ -5,6 +5,7 @@ import {GITHUB_API_URL, GITHUB_URL, JIRA_URL, REPO} from './constants';
 export async function fetchGitHubReleases(per_page: number = 10) {
   const res = await fetch(
     `${GITHUB_API_URL}/repos/${REPO}/releases?per_page=${per_page}`,
+    {headers: {Authorization: `Bearer ${process.env.GITHUB_TOKEN}`}},
   );
   const data = await res.json();
   return data;
