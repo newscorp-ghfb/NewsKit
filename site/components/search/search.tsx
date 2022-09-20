@@ -14,7 +14,7 @@ import {DocSearchHit} from '@docsearch/react/dist/esm/types';
 import {IconFilledSearch} from '../icons';
 import {Mono} from '../flags';
 import {SearchProps} from './types';
-import {ignoreFilter, mapPathname} from './utils';
+import {addPathname, ignoreFilter} from './utils';
 import {DocSearchHit as DocSearchHitComponent} from './doc-search-hit';
 
 import '@docsearch/css/dist/style.css';
@@ -110,7 +110,7 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
             }
             hitComponent={DocSearchHitComponent}
             transformItems={(items: DocSearchHit[]) =>
-              items.filter(ignoreFilter).map(mapPathname) as DocSearchHit[]
+              items.filter(ignoreFilter).map(addPathname) as DocSearchHit[]
             }
           />,
           document.body,

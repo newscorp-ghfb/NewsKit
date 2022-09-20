@@ -1,4 +1,5 @@
 import {DocSearchHit} from '@docsearch/react/dist/esm/types';
+import {DocSearchHitExtended} from './types';
 
 export const ignoreFilter = (item: DocSearchHit): boolean => {
   // this includes components overview from results
@@ -21,7 +22,7 @@ export const ignoreFilter = (item: DocSearchHit): boolean => {
   return true;
 };
 
-export const mapPathname = (item: DocSearchHit): DocSearchHitExtended => {
+export const addPathname = (item: DocSearchHit): DocSearchHitExtended => {
   const parseUrl = document.createElement('a');
   parseUrl.href = item.url;
 
