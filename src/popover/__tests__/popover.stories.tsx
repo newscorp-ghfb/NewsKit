@@ -143,6 +143,7 @@ const PopoverWithBtn = (
       aria-label="info-icon"
       size="small"
       overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
+      aria-haspopup="true"
     >
       <IconFilledInfo />
     </IconButton>
@@ -314,7 +315,6 @@ export const StoryPopoverDefault = () => (
           <StorybookSubHeading>Popover - distance (zero)</StorybookSubHeading>
           <BoundedPopover
             overrides={{distance: 'space030', maxWidth: '300px'}}
-            role="menu"
           />
         </div>
       </GridLayout>
