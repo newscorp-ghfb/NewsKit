@@ -167,6 +167,10 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
 }
 
+.emotion-9 svg {
+  display: block;
+}
+
 .emotion-10 {
   box-sizing: border-box;
   display: block;
