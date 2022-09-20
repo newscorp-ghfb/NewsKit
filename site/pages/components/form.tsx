@@ -650,6 +650,19 @@ const schema = yup.object().shape({
         },
       ],
     }}
+    tutorials={{
+      introduction:
+        'Learn how to use the form component effectively using the tutorial below.',
+      cards: [
+        {
+          title: 'Form tutorial',
+          description:
+            'Tutorial for engineers to build a form using the form sub components.',
+          media: getIllustrationComponent('guides/form-guide/hero'),
+          href: '/getting-started/code/form-step-by-step/',
+        },
+      ],
+    }}
     accessibility={{
       introduction: 'The form has the following accessibility considerations:',
       interaction: {
