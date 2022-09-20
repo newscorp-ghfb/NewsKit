@@ -436,7 +436,6 @@ const FormComponent = (layoutProps: LayoutProps) => (
     commonSection={{
       id: 'formstructure',
       title: 'Form structure',
-      lastItem: true,
       introduction: (
         <>
           The below diagram outlines how FormInput components can be used inside

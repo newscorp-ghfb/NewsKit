@@ -127,7 +127,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               <InlineCode>&#60;FormInput/&#62;</InlineCode> in order for the
               rules to work, and for the validation to be passed down to the
               other components such as the{' '}
-              <InlineCode>&#60;FormInputTextField/&#62;</InlineCode> and the
+              <InlineCode>&#60;FormInputTextField/&#62;</InlineCode> and the{' '}
               <InlineCode>&#60;FormInputAssistiveText/&#62;</InlineCode>.
             </>
           }
@@ -167,7 +167,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               optional component. If placed inside{' '}
               <InlineCode>&#60;FormInput/&#62;</InlineCode>, the validation will
               be passed down to it so it changes colour accordingly. If you
-              provided a message in
+              provided a message in{' '}
               <InlineCode>&#60;FormInput/&#62;</InlineCode> it will be displayed
               here for the user (as seen in the image above).
             </>
@@ -199,7 +199,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           description={
             <>
               Above, we showed you <InlineCode>&#60;FormInput/&#62;</InlineCode>{' '}
-              with a<InlineCode>&#60;FormInputTextField/&#62;</InlineCode>.
+              with a <InlineCode>&#60;FormInputTextField/&#62;</InlineCode>.
               <br />
               <br />
               We also have <InlineCode>
@@ -225,13 +225,13 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               <br />
               Again, <InlineCode>&#60;FormInput/&#62;</InlineCode> has
               components wrapped inside it, and you can set rules. The same
-              optional <InlineCode>&#60;FormInputLabel/&#62;</InlineCode>, and
-              <InlineCode>&#60;FormInputAssistiveText /&#62;</InlineCode> can be
+              optional <InlineCode>&#60;FormInputLabel/&#62;</InlineCode>, and{' '}
+              <InlineCode>&#60;FormInputAssistiveText/&#62;</InlineCode> can be
               added in as well.
               <br />
               <br />
               Here, we are using{' '}
-              <InlineCode>&#60;FormInputSelect /&#62;</InlineCode>, which comes
+              <InlineCode>&#60;FormInputSelect/&#62;</InlineCode>, which comes
               with an optional <InlineCode>startEnhancer</InlineCode> and{' '}
               <InlineCode>endEnhancer</InlineCode>.
               <br />
@@ -261,7 +261,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           </Code>
         </ContentSecondary>
         <ContentSecondary
-          headline="FormInputCheckBox component"
+          headline="FormInputCheckbox component"
           description={
             <>
               This has the same structure as the basic form example with an
@@ -270,15 +270,15 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               <br />
               Again, <InlineCode>&#60;FormInput /&#62;</InlineCode> has
               components wrapped inside it, and you can set rules. The same
-              optional <InlineCode>&#60;FormInputLabel/&#62;</InlineCode> and
-              <InlineCode>&#60;FormInputAssistiveText /&#62;</InlineCode> can be
+              optional <InlineCode>&#60;FormInputLabel/&#62;</InlineCode> and{' '}
+              <InlineCode>&#60;FormInputAssistiveText/&#62;</InlineCode> can be
               added in as well.
               <br />
               <br />
               But now, we are using{' '}
-              <InlineCode>&#60;FormInputCheckbox /&#62;</InlineCode>, which
-              comes with prop label. This is for the text that is placed next to
-              the <Link href="/components/checkbox/">checkbox</Link> component.
+              <InlineCode>&#60;FormInputCheckbox/&#62;</InlineCode>, which comes
+              with prop label. This is for the text that is placed next to the{' '}
+              <Link href="/components/checkbox/">checkbox</Link> component.
             </>
           }
         >
@@ -313,22 +313,22 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
               input field.
               <br />
               <br />
-              Again, <InlineCode>&#60;FormInput /&#62;</InlineCode> has
+              Again, <InlineCode>&#60;FormInput/&#62;</InlineCode> has
               components wrapped inside it, and you can set rules. The same
-              optional <InlineCode>&#60;FormInputLabel /&#62;</InlineCode> and
-              <InlineCode>&#60;FormInputAssistiveText /&#62;</InlineCode> can be
+              optional <InlineCode>&#60;FormInputLabel/&#62;</InlineCode> and{' '}
+              <InlineCode>&#60;FormInputAssistiveText/&#62;</InlineCode> can be
               added in as well.
               <br />
               <br />
               But now, we are using{' '}
-              <InlineCode>&#60;FormRadioButtutton /&#62;</InlineCode>. This
+              <InlineCode>&#60;FormRadioButtutton/&#62;</InlineCode>. This
               component should be wrapped inside a{' '}
-              <InlineCode>&#60;Fieldset&#62;</InlineCode> . We use the{' '}
-              <Link href="/components/fieldset/">fieldset</Link>
-              component to group related form inputs.
+              <InlineCode>&#60;Fieldset&#62;</InlineCode>. We use the{' '}
+              <Link href="/components/fieldset/">fieldset</Link> component to
+              group related form inputs.
               <br />
               <br />
-              We are also using <InlineCode>&#60;RadioGroup /&#62;</InlineCode>.
+              We are also using <InlineCode>&#60;RadioGroup/&#62;</InlineCode>.
               A <Link href="/components/radio-button/">radio group</Link> is
               defined by giving each of the radio buttons in the group the same
               name. Once a radio group is established, selecting any radio
@@ -377,12 +377,12 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
             <>
               Below is an example of the{' '}
               <Link href="/components/form/">form</Link> with different inputs
-              within a<Link href="/components/fieldset/">fieldset</Link> which
+              within a <Link href="/components/fieldset/">fieldset</Link> which
               is used when grouping together related form components.
               <br />
               <br />
               This form is made up of{' '}
-              <InlineCode>&#60;FormInputTextField/&#62;</InlineCode>,
+              <InlineCode>&#60;FormInputTextField/&#62;</InlineCode>,{' '}
               <InlineCode>&#60;FormInputRadioButton/&#62;</InlineCode>, and{' '}
               <InlineCode>&#60;FormInputCheckbox/&#62;</InlineCode>.
             </>
