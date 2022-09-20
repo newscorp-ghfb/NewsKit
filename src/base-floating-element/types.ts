@@ -40,6 +40,7 @@ export interface FloatingElementProps
     | ((referenceProps: ReferenceProps) => React.ReactNode);
   open?: boolean;
   placement?: Placement;
+  role?: AriaRole;
   overrides?: {
     zIndex?: number;
     maxWidth?: MQ<string>;

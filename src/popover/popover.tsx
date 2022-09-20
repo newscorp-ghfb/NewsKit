@@ -40,6 +40,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
       header,
       closePosition = 'right',
       overrides = {},
+      popoverrole = 'menu',
       handleCloseButtonClick,
       enableDismiss = false,
       disableFocusManagement = false,
@@ -122,7 +123,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
         buildRefElAriaAttributes={buildContextAriaAttributes}
         buildFloatingElAriaAttributes={buildFloatingElementAriaAttributes}
         useInteractions={useInteractions}
-        role="dialog"
+        role={popoverrole}
         overrides={overrides}
         disableFocusManagement={disableFocusManagement}
         {...props}

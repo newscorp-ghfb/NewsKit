@@ -314,6 +314,7 @@ export const StoryPopoverDefault = () => (
           <StorybookSubHeading>Popover - distance (zero)</StorybookSubHeading>
           <BoundedPopover
             overrides={{distance: 'space030', maxWidth: '300px'}}
+            role="menu"
           />
         </div>
       </GridLayout>
