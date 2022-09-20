@@ -1537,7 +1537,6 @@ export const StoryMenuTwoAndThreeTierNavigation = () => {
                   stylePreset: 'secondTierMenuItem',
                   minHeight: 'sizing100',
                 }}
-                selected={menuItem === 'Menu item 5.4'}
                 href={href}
               >
                 {menuItem}
