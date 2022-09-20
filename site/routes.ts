@@ -76,7 +76,7 @@ export default [
               'Guides on how to get started building a web application with NewsKit.',
             illustration: 'guides/engineering-quickstart/hero',
             cardTitle: 'Engineering Quickstart Guide',
-          },         
+          },
           {
             title: 'Grid Layout step-by-step',
             page: true,
@@ -86,7 +86,7 @@ export default [
             illustration: 'guides/grid-layout-guide/hero',
             cardTitle: 'Grid Layout step-by-step',
           },
-           {
+          {
             title: 'Form step-by-step',
             page: true,
             id: '/getting-started/code/form-step-by-step',
