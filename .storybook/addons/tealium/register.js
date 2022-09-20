@@ -18,10 +18,16 @@ const sendEvent = api => {
     const {title, story} = storyData;
     pageName = `${title.replace('NewsKit Light/', '')} : ${story}`;
   }
+
+  if (!pageName) return;
+
+  const [component, object] = pageName.split(':').map(s => s.trim());
+
   const event = {
     context: {
       url: path,
-      pageName,
+      component,
+      object,
     },
     originator: 'page-load',
     trigger: 'load',
