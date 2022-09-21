@@ -70,6 +70,7 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
 
     return {
       ...typographyPreset,
+      /* istanbul ignore next */
       ...(cropProps || {}),
     };
   };
