@@ -48,6 +48,8 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
     },
     ref,
   ) => {
+    console.log(role);
+    console.log(props);
     const theme = useTheme();
     const closeButtonOverrides: typeof overrides['closeButton'] = {
       ...deepMerge(
