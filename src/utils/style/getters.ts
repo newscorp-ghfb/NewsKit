@@ -36,14 +36,14 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
 
     if (!fontFamilyObject) return typographyPreset;
 
-    let cropProps;
+    let cropProps = {} as CSSObject;
     if (Object.getOwnPropertyDescriptor(fontFamilyObject, 'cropConfig')) {
       cropProps = legacyGetFontProps(
         fontSize,
         lineHeight,
         fontFamily,
         props.theme.fonts,
-      );
+      ) as CSSObject;
     } else if (
       Object.getOwnPropertyDescriptor(fontFamilyObject, 'fontMetrics')
     ) {
@@ -64,14 +64,13 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
         fontMetrics,
       };
 
-      cropProps = textCrop(cropData);
+      cropProps = textCrop(cropData) as CSSObject;
     }
     //  **
 
     return {
       ...typographyPreset,
-      /* istanbul ignore next */
-      ...(cropProps || {}),
+      ...cropProps,
     };
   };
 
