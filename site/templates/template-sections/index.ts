@@ -14,3 +14,4 @@ export * from './seo-section';
 export * from './states-section';
 export * from './usage-section';
 export * from './code-examples-section';
+export * from './tutorials-section';
