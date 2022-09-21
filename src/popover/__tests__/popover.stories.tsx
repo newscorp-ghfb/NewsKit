@@ -143,7 +143,6 @@ const PopoverWithBtn = (
       aria-label="info-icon"
       size="small"
       overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-      aria-haspopup="true"
     >
       <IconFilledInfo />
     </IconButton>

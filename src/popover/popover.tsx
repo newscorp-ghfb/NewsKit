@@ -27,8 +27,9 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 
 const buildContextAriaAttributes: BuildAriaAttributesFn = ({
   floating: {id, open},
+  ariaPopup,
 }) => ({
-  // 'aria-haspopup': 'dialog',
+  'aria-haspopup': ariaPopup || 'dialog',
   'aria-controls': open ? id : undefined,
 });
 
@@ -40,7 +41,6 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
       header,
       closePosition = 'right',
       overrides = {},
-      role,
       handleCloseButtonClick,
       enableDismiss = false,
       disableFocusManagement = false,
@@ -48,8 +48,6 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
     },
     ref,
   ) => {
-    console.log(role);
-    console.log(props);
     const theme = useTheme();
     const closeButtonOverrides: typeof overrides['closeButton'] = {
       ...deepMerge(
@@ -125,7 +123,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
         buildRefElAriaAttributes={buildContextAriaAttributes}
         buildFloatingElAriaAttributes={buildFloatingElementAriaAttributes}
         useInteractions={useInteractions}
-        role={role}
+        role="dialog"
         overrides={overrides}
         disableFocusManagement={disableFocusManagement}
         {...props}

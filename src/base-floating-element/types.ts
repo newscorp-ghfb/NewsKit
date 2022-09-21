@@ -20,6 +20,16 @@ export type BuildAriaAttributesFn = (args: {
   ref: {
     id: string;
   };
+  ariaPopup:
+    | boolean
+    | 'false'
+    | 'true'
+    | 'menu'
+    | 'listbox'
+    | 'tree'
+    | 'grid'
+    | 'dialog'
+    | undefined;
 }) => AriaAttributes;
 
 export interface ReferenceProps extends Record<string, unknown> {
@@ -76,4 +86,14 @@ export interface BaseFloatingElementProps extends FloatingElementProps {
   buildRefElAriaAttributes: BuildAriaAttributesFn;
   buildFloatingElAriaAttributes: BuildAriaAttributesFn;
   path: 'tooltip' | 'popover';
+  ariaPopup?:
+    | boolean
+    | 'false'
+    | 'true'
+    | 'menu'
+    | 'listbox'
+    | 'tree'
+    | 'grid'
+    | 'dialog'
+    | undefined;
 }
