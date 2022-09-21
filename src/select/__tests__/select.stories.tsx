@@ -1141,20 +1141,6 @@ export const StoryOutlineOverride = () => (
 );
 StoryOutlineOverride.storyName = 'Select Outline override';
 
-export const DemoStory = () => (
-  <>
-    <div style={{height: '600px', border: '1px solid red'}} />
-    <Select>
-      {items.map(item => (
-        <SelectOption key={item} value={item}>
-          {item}
-        </SelectOption>
-      ))}
-    </Select>
-    <div style={{height: '600px', border: '1px solid red'}} />
-  </>
-);
-
 export default {
   title: 'NewsKit Light/select',
   component: () => 'None',
