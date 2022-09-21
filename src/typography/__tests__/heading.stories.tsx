@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {createTheme, ThemeProvider} from '../../theme';
+import {createTheme, newskitLightTheme, ThemeProvider} from '../../theme';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -253,3 +253,65 @@ export const StoryHeadingLogicalProps = () => {
   );
 };
 StoryHeadingLogicalProps.storyName = 'heading-logical-props';
+
+export const StoryHeadingNoCropTheme = () => {
+  const overrides = {
+    fonts: {
+      fontSize010: '0.75rem',
+      fontSize020: '0.875rem',
+      fontSize030: '1rem',
+      fontSize040: '1.125rem',
+      fontSize050: '1.25rem',
+      fontSize060: '1.375rem',
+      fontSize070: '1.5rem',
+      fontSize080: '1.75rem',
+      fontSize090: '2rem',
+      fontSize100: '2.25rem',
+      fontSize110: '2.5rem',
+      fontSize120: '2.75rem',
+      fontSize130: '3rem',
+      fontSize140: '3.5rem',
+      fontSize150: '4rem',
+      fontSize160: '5rem',
+      fontFamily010: {
+        fontFamily: '"DM Sans", sans-serif',
+        fontMetrics: undefined,
+      },
+      fontFamily020: {
+        fontFamily: '"Bitter", serif',
+        fontMetrics: undefined,
+      },
+      fontFamily030: {
+        fontFamily: '"Poppins", sans-serif',
+        fontMetrics: undefined,
+      },
+    },
+  };
+
+  const theme = createTheme({
+    baseTheme: newskitLightTheme,
+    name: 'blog-light',
+    overrides,
+  });
+
+  console.log({theme});
+
+  return (
+    <ThemeProvider theme={theme}>
+      <StorybookHeading>Heading - No Crop Theme</StorybookHeading>
+      <br />
+      <H1>Default H1 - {title}</H1>
+      <br />
+      <H2>Default H2 - {title}</H2>
+      <br />
+      <H3>Default H3 - {title}</H3>
+      <br />
+      <H4>Default H4 - {title}</H4>
+      <br />
+      <H5>Default H5 - {title}</H5>
+      <br />
+      <H6>Default H6 - {title}</H6>
+    </ThemeProvider>
+  );
+};
+StoryHeadingNoCropTheme.storyName = 'no-crop-theme';

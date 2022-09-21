@@ -45,7 +45,8 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
         props.theme.fonts,
       ) as CSSObject;
     } else if (
-      Object.getOwnPropertyDescriptor(fontFamilyObject, 'fontMetrics')
+      Object.getOwnPropertyDescriptor(fontFamilyObject, 'fontMetrics') &&
+      fontFamilyObject.fontMetrics
     ) {
       const themeFontsProperties = Object.entries(props.theme.fonts);
 
