@@ -44,7 +44,9 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
         fontFamily,
         props.theme.fonts,
       );
-    } else {
+    } else if (
+      Object.getOwnPropertyDescriptor(fontFamilyObject, 'fontMetrics')
+    ) {
       const themeFontsProperties = Object.entries(props.theme.fonts);
 
       const weightTokenArray = themeFontsProperties.find(element =>
@@ -68,7 +70,7 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
 
     return {
       ...typographyPreset,
-      ...cropProps,
+      ...(cropProps || {}),
     };
   };
 
