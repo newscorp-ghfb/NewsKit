@@ -30,6 +30,7 @@ export type BuildAriaAttributesFn = (args: {
   ref: {
     id: string;
   };
+  ariaHasPopup: AriaHasPopupType;
 }) => AriaAttributes;
 
 export interface ReferenceProps extends Record<string, unknown> {
