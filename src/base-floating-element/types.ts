@@ -30,7 +30,6 @@ export type BuildAriaAttributesFn = (args: {
   ref: {
     id: string;
   };
-  ariaHasPopup: AriaHasPopupType;
 }) => AriaAttributes;
 
 export interface ReferenceProps extends Record<string, unknown> {
@@ -80,11 +79,11 @@ export interface FloatingElementProps
 
 export interface BaseFloatingElementProps extends FloatingElementProps {
   role?: AriaRole;
+  ariaHasPopup?: AriaHasPopupType;
   useInteractions: (
     context: FloatingContext<HTMLElement>,
   ) => ReturnType<typeof useInteractions>;
   buildRefElAriaAttributes: BuildAriaAttributesFn;
   buildFloatingElAriaAttributes: BuildAriaAttributesFn;
   path: 'tooltip' | 'popover';
-  ariaHasPopup?: AriaHasPopupType;
 }
