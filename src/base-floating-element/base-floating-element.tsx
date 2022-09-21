@@ -118,7 +118,6 @@ export const BaseFloatingElement = React.forwardRef<
     };
     const refElAriaAttributes = buildRefElAriaAttributes(ariaArgs);
     const floatingElAriaAttributes = buildFloatingElAriaAttributes(ariaArgs);
-
     const contentIsString = typeof content === 'string';
     const {getReferenceProps, getFloatingProps} = useInteractions(context);
 
