@@ -240,7 +240,6 @@ export const BaseFloatingElement = React.forwardRef<
                   id={`${floatingId}-pointer`}
                   ref={pointerRef}
                   placement={statefulPlacement}
-                  role={role}
                   $x={pointerX}
                   $y={pointerY}
                   overrides={overrides}

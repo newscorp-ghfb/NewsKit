@@ -10,7 +10,6 @@ export type PopoverProps = Omit<
   children: React.ReactNode;
   content: React.ReactNode;
   closePosition?: 'left' | 'right' | 'none';
-  // popoverrole?: AriaRole;
   header?: React.ReactNode;
   handleCloseButtonClick?: () => void;
   enableDismiss?: boolean;
