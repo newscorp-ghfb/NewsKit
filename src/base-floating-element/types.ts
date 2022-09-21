@@ -20,7 +20,7 @@ export type BuildAriaAttributesFn = (args: {
   ref: {
     id: string;
   };
-  ariaPopup:
+  ariaHasPopup:
     | boolean
     | 'false'
     | 'true'
@@ -86,7 +86,7 @@ export interface BaseFloatingElementProps extends FloatingElementProps {
   buildRefElAriaAttributes: BuildAriaAttributesFn;
   buildFloatingElAriaAttributes: BuildAriaAttributesFn;
   path: 'tooltip' | 'popover';
-  ariaPopup?:
+  ariaHasPopup?:
     | boolean
     | 'false'
     | 'true'

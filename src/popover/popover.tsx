@@ -27,9 +27,9 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 
 const buildContextAriaAttributes: BuildAriaAttributesFn = ({
   floating: {id, open},
-  ariaPopup,
+  ariaHasPopup,
 }) => ({
-  'aria-haspopup': ariaPopup || 'dialog',
+  'aria-haspopup': ariaHasPopup || 'dialog',
   'aria-controls': open ? id : undefined,
 });
 
