@@ -11,7 +11,7 @@ const omletScript = async () => {
     },
   };
 
-  // const makeFolder = () => {
+  // const makeFoldlser = () => {
   //   fs.promises.mkdir('/omlet', error => {
   //     console.log(error);
   //   });
