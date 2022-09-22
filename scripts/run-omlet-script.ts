@@ -2,65 +2,57 @@ const shell = require('shelljs');
 const fs = require('fs-extra');
 const path = require('path');
 
+const projectsToAnalyse = {
+  factiva: {
+    'git-url': 'https://github.com/newscorp-ghfb/factiva-design-system',
+    'input-flag-path': 'src/components/**/{index, styled}.{jsx,js,ts,tsx}',
+    'ignore-flag-path': 'src/components/**/*.{stories,test}.{jsx,js,ts,tsx}',
+  },
+};
+
+const gitClonePromisified = (project, projectFolderName) =>
+  new Promise((resolve, reject) => {
+    shell.exec(
+      `git clone ${projectsToAnalyse[project]['git-url']} omlet/${projectFolderName}`,
+      {},
+      (code, value, error) => {
+        if (error) {
+          return reject(error);
+        }
+        return resolve(value);
+      },
+    );
+  });
+
 const omletScript = async () => {
-  const projectsToAnalyse = {
-    factiva: {
-      'git-url': 'https://github.com/newscorp-ghfb/factiva-design-system',
-      'input-flag-path': 'src/components/**/{index, styled}.{jsx,js,ts,tsx}',
-      'ignore-flag-path': 'src/components/**/*.{stories,test}.{jsx,js,ts,tsx}',
-    },
-  };
-
-  // const makeFolder = () => {
-  //   fs.promises.mkdir('/omlet', error => {
-  //     console.log(error);
-  //   });
-  // };
-
+  // Creating Omlet folder
   await fs.promises
     .mkdir(path.join(process.cwd(), 'omlet'), {recursive: true})
     .then(console.log('Omlet folder created ✅'));
 
-  /* istanbul ignore next */
-  // throw err;
-
-  // await fs.promises.mkdir(path.join(__dirname, 'omlet'), 'hello');
-  // text.split('.')[text.split('.').length -1]
-
+  // Looping into "projectsToAnalyse"
   Object.keys(projectsToAnalyse).forEach(async project => {
-    const gitUrlArray = projectsToAnalyse[project]['git-url'].split('/');
-    const projectFolderName = gitUrlArray[gitUrlArray.length - 1];
+    const gitUrlSplit = projectsToAnalyse[project]['git-url'].split('/');
+    const projectFolderName = gitUrlSplit[gitUrlSplit.length - 1];
+
+    // Removing old project folder, so we can pull an updated one
     await fs
       .remove(path.join(process.cwd(), `omlet/${projectFolderName}`))
-      .then(console.log(`old ${projectFolderName} has been deleted ✅`));
+      .then(console.log(`Old ${projectFolderName} has been deleted ✅`));
+    //
 
-    console.log(`git clone ${projectsToAnalyse[project]['git-url']}`);
-
-    // shell.exec(
-    //   `git clone ${projectsToAnalyse[project]['git-url']} omlet/${projectFolderName}`,
-    // );
+    // Git Cloning the repo
     try {
-      await new Promise((resolve, reject) =>
-        shell.exec(
-          `git clone ${projectsToAnalyse[project]['git-url']} omlet/${projectFolderName}`,
-          {},
-          (code, value, error) => {
-            if (error) {
-              return reject(error);
-            }
-            return resolve(value);
-          },
-        ),
-      );
+      await gitClonePromisified(project, projectFolderName);
     } catch (error) {
       console.error(error);
     }
 
+    // Running Omlet analyze
     shell.exec(
-      `npx omlet analyze -i 'omlet/${projectFolderName}${projectsToAnalyse[project]['input-flag-path']}' `,
+      `npx omlet analyze -i 'omlet/${projectFolderName}/${projectsToAnalyse[project]['input-flag-path']}' `,
     );
   });
 };
-omletScript();
 
-// run omlet script
+omletScript();

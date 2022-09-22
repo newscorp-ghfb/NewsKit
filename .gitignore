@@ -4,6 +4,7 @@ node_modules
 build
 *.log
 dist
+omlet/
 stats.html
 storybook-static
 .storybook/private-fonts
