@@ -66,6 +66,8 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
         (weightToken && fontFamilyObject.fontMetrics![weightToken!]) ||
         fontFamilyObject.fontMetrics!.fontWeight010;
 
+      if (!fontMetrics) return typographyPreset;
+
       const cropData = {
         fontSize,
         lineHeight,

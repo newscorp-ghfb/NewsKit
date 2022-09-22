@@ -14,6 +14,7 @@ import * as presets from './presets';
 
 import {get} from '../utils/get';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
+import {FontConfig} from './foundations/fonts';
 
 export interface CreateThemeArgs {
   name?: string;
@@ -43,6 +44,34 @@ const deepDuplicationChecker = (
   recurse(overrides);
 };
 
+const isFontConfig = (x: string | FontConfig): x is FontConfig =>
+  (x as FontConfig).fontFamily !== undefined;
+
+// Font family info should not be merged. E.g.:
+// - Base theme: { ...fontFamily010: {fontFamily: "Font A", fontMetrics: {...fontAMetrics} }
+// - Overrides: { ...fontFamily010: {fontFamily: "Font B"} }
+// In this example, we should remove fontFamily010 from the base theme, otherwise
+// the merged object will be invalid:
+// - { ...fontFamily010: {fontFamily: "Font B", fontMetrics: {...fontAMetrics} }
+// This function removes font families from a theme if they are defined in an
+// overrides object (which can be another theme). It should be called before merging
+// the theme with the overrides.
+const removeFontFamilies = <T extends ThemeBase>(
+  theme: T,
+  overrideFonts: T['fonts'],
+): T => ({
+  ...theme,
+  fonts: theme.fonts
+    ? Object.entries(theme.fonts).reduce<T['fonts']>(
+        (prev, [k, v]) => ({
+          ...prev,
+          ...(isFontConfig(v) && overrideFonts[k] ? {} : {[k]: v}),
+        }),
+        {},
+      )
+    : undefined,
+});
+
 export const createTheme = ({
   name = 'unnamed-newskit-theme',
   baseTheme,
@@ -57,12 +86,16 @@ export const createTheme = ({
     );
   }
 
-  const newskitLight: ThemeBase = {
-    ...foundations,
-    ...presets,
-    componentDefaults: {},
-    icons: {},
-  };
+  // Don't take font family info from NKLight if defined in the base theme.
+  const newskitLight = removeFontFamilies<ThemeBase>(
+    {
+      ...foundations,
+      ...presets,
+      componentDefaults: {},
+      icons: {},
+    },
+    baseTheme?.fonts || {},
+  );
 
   if (checkOverrides) {
     deepDuplicationChecker(warningLogger, baseTheme || newskitLight, overrides);
@@ -77,7 +110,10 @@ export const createTheme = ({
   return deepMerge(
     mergeBreakpointObject(Object.keys(breakpointsKeys) as BreakpointKeys[]),
     newskitLight,
-    baseTheme,
+    // Don't take font family info from the base theme if defined in overrides.
+    baseTheme
+      ? removeFontFamilies<UncompiledTheme>(baseTheme, overrides?.fonts || {})
+      : baseTheme,
     overrides,
     {name, themeVersion: 1},
   );
