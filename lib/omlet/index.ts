@@ -10,17 +10,10 @@ const projectsToAnalyse = {
   },
 };
 
-<<<<<<< HEAD:lib/omlet/index.ts
-  // const makeFoldlser = () => {
-  //   fs.promises.mkdir('/omlet', error => {
-  //     console.log(error);
-  //   });
-  // };
-=======
 const gitClonePromisified = (project, projectFolderName) =>
   new Promise((resolve, reject) => {
     shell.exec(
-      `git clone ${projectsToAnalyse[project]['git-url']} omlet/${projectFolderName}`,
+      `git clone ${projectsToAnalyse[project]['git-url']} repos/${projectFolderName}`,
       {},
       (code, value, error) => {
         if (error) {
@@ -30,13 +23,12 @@ const gitClonePromisified = (project, projectFolderName) =>
       },
     );
   });
->>>>>>> 307cdc80a6decc26bb3a5c7d20981c91f506090c:scripts/run-omlet-script.ts
 
 const omletScript = async () => {
-  // Creating Omlet folder
+  // Creating repos folder
   await fs.promises
-    .mkdir(path.join(process.cwd(), 'omlet'), {recursive: true})
-    .then(console.log('Omlet folder created ✅'));
+    .mkdir(path.join(process.cwd(), 'repos'), {recursive: true})
+    .then(console.log('Repos folder created ✅'));
 
   // Looping into "projectsToAnalyse"
   Object.keys(projectsToAnalyse).forEach(async project => {
@@ -45,7 +37,7 @@ const omletScript = async () => {
 
     // Removing old project folder, so we can pull an updated one
     await fs
-      .remove(path.join(process.cwd(), `omlet/${projectFolderName}`))
+      .remove(path.join(process.cwd(), `repos/${projectFolderName}`))
       .then(console.log(`Old ${projectFolderName} has been deleted ✅`));
     //
 
@@ -58,7 +50,7 @@ const omletScript = async () => {
 
     // Running Omlet analyze
     shell.exec(
-      `npx omlet analyze -i 'omlet/${projectFolderName}/${projectsToAnalyse[project]['input-flag-path']}' `,
+      `npx omlet analyze -i 'repos/${projectFolderName}/${projectsToAnalyse[project]['input-flag-path']}' `,
     );
   });
 };
