@@ -112,7 +112,11 @@ export const createTheme = ({
     newskitLight,
     // Don't take font family info from the base theme if defined in overrides.
     baseTheme
-      ? removeFontFamilies<UncompiledTheme>(baseTheme, overrides?.fonts || {})
+      ? removeFontFamilies<UncompiledTheme>(
+          baseTheme,
+          /* istanbul ignore next */
+          overrides?.fonts || {},
+        )
       : baseTheme,
     overrides,
     {name, themeVersion: 1},
