@@ -15,7 +15,7 @@ import SiteHeader from './site-header';
 import SiteFooter from './site-footer';
 import Sidebar from './sidebar';
 import SectionNavigation from './section-navigation';
-import markdownElements from './markdown-elements';
+import {MarkdownElements} from './markdown-elements';
 import {Playground} from './playground';
 import {DebugDropdown} from './debug-dropdown';
 import {ThemeModeContext} from '../helpers/use-theme-mode';
@@ -153,9 +153,9 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
   updatePropsForMarkdownElements = () => {
     const {headerHeight, sectionNavHeight} = this.state;
 
-    const H2 = markdownElements.h2;
+    const H2 = MarkdownElements.h2;
     const updatedComponents = {
-      ...markdownElements,
+      ...MarkdownElements,
       h2: ({children}: Heading) => (
         <H2 offset={sectionNavHeight + headerHeight}>{children}</H2>
       ),

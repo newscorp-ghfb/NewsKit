@@ -1,9 +1,21 @@
-const editor = ({overrides, title, icon, role, text}) =>
+import {InlineMessageProps} from 'newskit';
+
+interface InlineMessageEditorProps extends InlineMessageProps {
+  text: string;
+}
+
+const editor = ({
+  overrides,
+  title,
+  icon,
+  role,
+  text,
+}: InlineMessageEditorProps) =>
   `<InlineMessage overrides="${overrides}" title="${title}" icon="${icon}" role="${role}">
     ${text}
   </InlineMessage>`;
 
-export default {
+const InlineMessageEditor = {
   // Internal id of the component
   id: 'inlineMessage',
   // Visible label
@@ -32,7 +44,7 @@ export default {
   // Pattern to identify a block as being an instance of this component
   pattern: /<InlineMessage overrides="([^\\"]+)" title="([^\\"]+)" icon="([^\\"]+)" role="${role}">(.*?)<\/InlineMessage>/s,
   // Function to extract data elements from the regexp match
-  fromBlock(match) {
+  fromBlock(match: string[]) {
     return {
       overrides: match[1],
       title: match[2],
@@ -42,12 +54,14 @@ export default {
     };
   },
   // Function to create a text block from an instance of this component
-  toBlock(props) {
+  toBlock(props: InlineMessageEditorProps) {
     return editor(props);
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
-  toPreview(props) {
+  toPreview(props: InlineMessageEditorProps) {
     return editor(props);
   },
 };
+
+export default InlineMessageEditor;

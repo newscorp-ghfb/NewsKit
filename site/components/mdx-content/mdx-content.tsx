@@ -1,7 +1,7 @@
 import React from 'react';
 import {getMDXComponent} from 'mdx-bundler/client';
 import {InlineMessage} from 'newskit';
-import MarkdownElements from '../markdown-elements';
+import {MarkdownElements} from '../markdown-elements';
 import {Mono} from '../flags';
 
 export interface MdxContentProps {
