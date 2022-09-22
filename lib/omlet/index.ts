@@ -15,7 +15,7 @@ const gitClonePromisified = (project, projectFolderName) =>
     shell.exec(
       `git clone ${projectsToAnalyse[project]['git-url']} repos/${projectFolderName}`,
       {},
-      (code, value, error) => {
+      (value, error) => {
         if (error) {
           return reject(error);
         }
@@ -48,7 +48,7 @@ const omletScript = async () => {
       console.error(error);
     }
 
-    // Running Omlet analyze
+    // Running Omlet analyse
     shell.exec(
       `npx omlet analyze -i 'repos/${projectFolderName}/${projectsToAnalyse[project]['input-flag-path']}' `,
     );
