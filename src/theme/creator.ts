@@ -14,7 +14,7 @@ import * as presets from './presets';
 
 import {get} from '../utils/get';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
-import {FontConfig} from './foundations/fonts';
+import {FontConfig, FontThemeValue} from './foundations/fonts';
 
 export interface CreateThemeArgs {
   name?: string;
@@ -44,8 +44,10 @@ const deepDuplicationChecker = (
   recurse(overrides);
 };
 
-const isFontConfig = (x: string | FontConfig): x is FontConfig =>
-  (x as FontConfig).fontFamily !== undefined;
+const isFontFamily = (
+  fontThemeValue: FontThemeValue,
+): fontThemeValue is FontConfig =>
+  (fontThemeValue as FontConfig).fontFamily !== undefined;
 
 // Font family info should not be merged. E.g.:
 // - Base theme: { ...fontFamily010: {fontFamily: "Font A", fontMetrics: {...fontAMetrics} }
@@ -63,9 +65,11 @@ const removeFontFamilies = <T extends ThemeBase>(
   ...theme,
   fonts: theme.fonts
     ? Object.entries(theme.fonts).reduce<T['fonts']>(
-        (prev, [k, v]) => ({
+        (prev, [fontThemeToken, fontThemeValue]) => ({
           ...prev,
-          ...(isFontConfig(v) && overrideFonts[k] ? {} : {[k]: v}),
+          ...(isFontFamily(fontThemeValue) && overrideFonts[fontThemeToken]
+            ? {}
+            : {[fontThemeToken]: fontThemeValue}),
         }),
         {},
       )

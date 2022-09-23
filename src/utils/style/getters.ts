@@ -27,7 +27,7 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
     // the required cropping CSS.
 
     // Steps:
-    // 1. Lookup the fontFamilyObject in the theme for the typographyPreset fontFamily.
+    // 1. Lookup the fontFamilyObject in the theme for the typographyPreset's fontFamily.
     // 2. Lookup the token for the fontWeight specified in the typographyPreset.
     // 3. Lookup the fontMetrics in the fontFamilyObject for the fontWeight token.
     // 4. Use the fontMetrics to calculate the cropping CSS.
@@ -66,7 +66,11 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
         (weightToken && fontFamilyObject.fontMetrics![weightToken!]) ||
         fontFamilyObject.fontMetrics!.fontWeight010;
 
-      if (!fontMetrics) return typographyPreset;
+      if (!fontMetrics) {
+        // eslint-disable-next-line no-console
+        console.warn(`No default fontMetrics found for '${fontFamily}'.`);
+        return typographyPreset;
+      }
 
       const cropData = {
         fontSize,

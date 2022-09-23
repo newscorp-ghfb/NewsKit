@@ -301,6 +301,7 @@ describe('TypographyPreset', () => {
   });
 
   test('returns typographyPreset without text crop CSS when fontMetrics do not exist for fontFamily/fontWeight or for default fontWeight', () => {
+    jest.spyOn(console, 'warn').mockImplementation();
     const typographyPreset = getTypographyPresetFromTheme(
       'editorialParagraph030',
       undefined,
@@ -330,5 +331,9 @@ describe('TypographyPreset', () => {
       fontWeight: 500,
       fontSize: 12,
     });
+    // eslint-disable-next-line no-console
+    expect(console.warn).toHaveBeenCalledWith(
+      "No default fontMetrics found for 'Font Family Name'.",
+    );
   });
 });
