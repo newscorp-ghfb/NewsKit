@@ -1,4 +1,12 @@
 import React from 'react';
+import {
+  DocsStoryProps,
+  DocsContextProps,
+  Description,
+  Anchor,
+  Canvas,
+  Story,
+} from '@storybook/addon-docs';
 import {GridLayout} from '../grid-layout';
 import {TextBlock} from '../text-block';
 import {Block} from '../block';
@@ -6,6 +14,13 @@ import {MQ, styled, getColorCssFromTheme} from '../utils/style';
 import {get} from '../utils/get';
 import {LinkStandalone} from '../link';
 import {TitleBar} from '../title-bar';
+import {Divider} from '../divider';
+
+interface StoriesProps {
+  title?: JSX.Element | string;
+  includePrimary?: boolean;
+  context: DocsContextProps;
+}
 
 interface Props {
   children: React.ReactNode;
@@ -105,14 +120,14 @@ type StorybookCaseProps = {
 
 export const StorybookCase = ({title, children}: StorybookCaseProps) => (
   <GridLayout rowGap="space040">
-    <TextBlock stylePreset="inkBase" typographyPreset="editorialBody010">
+    <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
       {title.charAt(0).toUpperCase() + title.slice(1)}
     </TextBlock>
     <Block>{children}</Block>
   </GridLayout>
 );
 
-export const StoryDocsHeader = ({context}: {context: Object}) => {
+export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
   const autoTitle = get(context, 'title').replace('NewsKit Light/', '');
   const title = get(context, 'parameters.nkDocs.title') || autoTitle;
   const description = get(context, 'parameters.nkDocs.description');
@@ -123,15 +138,98 @@ export const StoryDocsHeader = ({context}: {context: Object}) => {
   return (
     <GridLayout rowGap="space040" overrides={{marginBlockEnd: 'space060'}}>
       <TitleBar
+        headingAs="h1"
         actionItem={link}
         overrides={{
           spaceInset: 'space000',
-          heading: {typographyPreset: 'editorialHeadline050'},
+          heading: {
+            typographyPreset: 'utilitySubheading050',
+            stylePreset: 'inkBase',
+          },
         }}
       >
         {title}
       </TitleBar>
-      {description && <TextBlock>{description}</TextBlock>}
+      {description && (
+        <TextBlock
+          marginBlockStart="space020"
+          typographyPreset="utilityBody030"
+          stylePreset="inkBase"
+        >
+          {description}
+        </TextBlock>
+      )}
+      <Divider />
     </GridLayout>
+  );
+};
+
+export const DocsStory = ({
+  id,
+  name,
+  expanded = true,
+  withToolbar = false,
+  parameters = {},
+}: DocsStoryProps) => {
+  let description;
+  const {docs} = parameters;
+  if (expanded && docs) {
+    description = docs.description?.story;
+    if (!description) {
+      description = docs.storyDescription;
+    }
+  }
+
+  const subheading = expanded && name;
+
+  return (
+    // Have to ignore because the library typings are missing `children` prop.
+    // @ts-ignore
+    <Anchor storyId={id!}>
+      {subheading && (
+        <TextBlock
+          typographyPreset="utilitySubheading020"
+          stylePreset="inkBase"
+          as="h2"
+        >
+          {subheading}
+        </TextBlock>
+      )}
+      {description && <Description markdown={description} />}
+      {/* Have to ignore because the library typings are missing `children` prop. */}
+      {/* @ts-ignore */}
+      <Canvas withToolbar={withToolbar}>
+        <Story id={id} parameters={parameters} />
+      </Canvas>
+    </Anchor>
+  );
+};
+
+export const Stories = ({
+  context,
+  title,
+  includePrimary = false,
+}: StoriesProps) => {
+  const {componentStories} = context;
+  let stories: DocsStoryProps[] = componentStories().filter(
+    story => !story.parameters?.docs?.disable,
+  );
+  if (!includePrimary) stories = stories.slice(1);
+  if (!stories || stories.length === 0) return null;
+
+  return (
+    <>
+      <TextBlock
+        typographyPreset="utilitySubheading020"
+        marginBlockEnd="space050"
+        stylePreset="inkBase"
+        as="h2"
+      >
+        {title}
+      </TextBlock>
+      {stories.map(
+        story => story && <DocsStory key={story.id} {...story} expanded />,
+      )}
+    </>
   );
 };

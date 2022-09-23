@@ -14,7 +14,6 @@ module.exports = {
         actions: false,
       },
     },
-    'storybook-addon-performance/register',
     {
       name: '@storybook/addon-storysource',
       options: {
@@ -28,6 +27,7 @@ module.exports = {
         },
       },
     },
+    'storybook-addon-performance/register',
     {
       name: '@storybook/addon-docs',
       options: {
@@ -37,6 +37,7 @@ module.exports = {
         transcludeMarkdown: true,
       },
     },
+    '@storybook/addon-a11y',
   ],
   // https://github.com/storybookjs/storybook/issues/13277
   // Remove Emotion aliases once the issue above is resolved
@@ -55,6 +56,7 @@ module.exports = {
         alias: {
           ...config.resolve.alias,
           '@emotion/styled': toPath('node_modules/@emotion/styled'),
+          '@emotion/styled/base': toPath('node_modules/@emotion/styled/base'),
           '@emotion/provider': toPath('node_modules/@emotion/provider'),
           '@emotion/core': toPath('node_modules/@emotion/react'),
           'emotion-theming': toPath('node_modules/@emotion/react'),

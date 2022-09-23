@@ -1,7 +1,7 @@
 import React from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {withPerformance} from 'storybook-addon-performance';
-import {Stories, DocsContext} from '@storybook/addon-docs';
+import {DocsContext} from '@storybook/addon-docs';
 import {
   NewsKitProvider,
   styled,
@@ -10,9 +10,10 @@ import {
   ThemeProvider,
 } from '../src';
 import {getThemeObject} from '../src/test/theme-select-object';
-import {StoryDocsHeader} from '../src/test/storybook-comps';
+import {StoryDocsHeader, Stories} from '../src/test/storybook-comps';
 
 const unlimitedScenarios = [
+  'welcome',
   'grid',
   'stack',
   'card',
@@ -70,6 +71,11 @@ export const parameters = {
   viewport: {
     viewports: INITIAL_VIEWPORTS,
   },
+  options: {
+    storySort: {
+      order: ['Welcome', '*'],
+    },
+  },
   backgrounds: {
     values: [
       {
@@ -101,7 +107,7 @@ export const parameters = {
       return (
         <ThemeProvider theme={newskitLightTheme}>
           <StoryDocsHeader context={docsContext} />
-          <Stories includePrimary />
+          <Stories context={docsContext} includePrimary />
         </ThemeProvider>
       );
     },
@@ -112,9 +118,10 @@ export const decorators = [
   // Add wrapper around stories to limit their size
   (Story, context) => {
     const kind = context.kind.split('/')[1];
-    const Decorator = unlimitedScenarios.includes(kind)
-      ? NoDecorator
-      : LimitSizeDecorator;
+    const Decorator =
+      unlimitedScenarios.includes(kind) || context.componentId === 'welcome'
+        ? NoDecorator
+        : LimitSizeDecorator;
     return (
       <Decorator>
         <Story />
