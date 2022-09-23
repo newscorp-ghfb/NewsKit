@@ -23,7 +23,7 @@ export interface AudioPlayerVolumeControlOverridesProps {
     stylePreset?: MQ<string>;
     muteButtonIcon: Override<MuteButtonIconProps>;
   };
-  popover?: PopoverProps['overrides'];
+  popover?: Override<PopoverProps>;
 }
 
 export interface AudioPlayerVolumeControlProps {
