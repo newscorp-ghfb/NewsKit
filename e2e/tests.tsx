@@ -49,7 +49,7 @@ export default function showTestcase() {
   }
 
   const story = stories.find(
-    s => s.default.title.replace('NewsKit Light/', '') === name,
+    s => s.default.title.replace('Components/', '') === name,
   );
 
   if (!story) {

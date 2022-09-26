@@ -129,7 +129,7 @@ export const StorybookCase = ({title, children}: StorybookCaseProps) => (
 );
 
 export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
-  const autoTitle = get(context, 'title').replace('NewsKit Light/', '');
+  const autoTitle = get(context, 'title').replace('Components/', '');
   const title = get(context, 'parameters.nkDocs.title') || autoTitle;
   const description = get(context, 'parameters.nkDocs.description');
   const url = get(context, 'parameters.nkDocs.url');
