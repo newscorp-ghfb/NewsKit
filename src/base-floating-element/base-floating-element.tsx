@@ -114,7 +114,6 @@ export const BaseFloatingElement = React.forwardRef<
     const ariaArgs = {
       floating: {id: floatingId, open},
       ref: {id: children.props.id || defaultRefId},
-      ariaHasPopup: children.props['aria-haspopup'],
     };
     const refElAriaAttributes = buildRefElAriaAttributes(ariaArgs);
     const floatingElAriaAttributes = buildFloatingElAriaAttributes(ariaArgs);

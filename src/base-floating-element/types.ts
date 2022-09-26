@@ -10,16 +10,16 @@ import {LogicalPaddingProps} from '../utils/logical-properties';
 import {TransitionToken} from '../theme';
 
 export type TriggerType = 'click' | 'hover' | 'focus';
-export type AriaHasPopupType =
-  | boolean
-  | 'false'
-  | 'true'
-  | 'menu'
-  | 'listbox'
-  | 'tree'
-  | 'grid'
-  | 'dialog'
-  | undefined;
+// export type AriaHasPopupType =
+//   | boolean
+//   | 'false'
+//   | 'true'
+//   | 'menu'
+//   | 'listbox'
+//   | 'tree'
+//   | 'grid'
+//   | 'dialog'
+//   | undefined;
 export type FallbackBehaviourType = 'flip' | 'shift';
 
 export type BuildAriaAttributesFn = (args: {
@@ -30,7 +30,7 @@ export type BuildAriaAttributesFn = (args: {
   ref: {
     id: string;
   };
-  ariaHasPopup: AriaHasPopupType;
+  // ariaHasPopup: AriaHasPopupType;
 }) => AriaAttributes;
 
 export interface ReferenceProps extends Record<string, unknown> {
@@ -80,7 +80,7 @@ export interface FloatingElementProps
 
 export interface BaseFloatingElementProps extends FloatingElementProps {
   role?: AriaRole;
-  ariaHasPopup?: AriaHasPopupType;
+  // ariaHasPopup?: AriaHasPopupType;
   useInteractions: (
     context: FloatingContext<HTMLElement>,
   ) => ReturnType<typeof useInteractions>;

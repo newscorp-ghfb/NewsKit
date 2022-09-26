@@ -25,14 +25,6 @@ import {deepMerge} from '../utils';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 
-const buildContextAriaAttributes: BuildAriaAttributesFn = ({
-  floating: {id, open},
-  ariaHasPopup,
-}) => ({
-  'aria-haspopup': ariaHasPopup || 'dialog',
-  'aria-controls': open ? id : undefined,
-});
-
 const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
   (
     {
@@ -48,6 +40,12 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
     },
     ref,
   ) => {
+    const buildContextAriaAttributes: BuildAriaAttributesFn = ({
+      floating: {id, open},
+    }) => ({
+      'aria-haspopup': children.props['aria-haspopup'] || 'dialog',
+      'aria-controls': open ? id : undefined,
+    });
     const theme = useTheme();
     const closeButtonOverrides: typeof overrides['closeButton'] = {
       ...deepMerge(
@@ -59,14 +57,12 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
       ),
     };
     const headerId = `header-${useId()}`;
-
     const buildFloatingElementAriaAttributes: BuildAriaAttributesFn = ({
       ref: {id},
     }) => ({
       'aria-labelledby': header ? undefined : id,
       'aria-describedby': header ? headerId : undefined,
     });
-
     const useInteractions = (context: FloatingContext<HTMLElement>) =>
       floatingUiUseInteractions([
         useClick(context),
