@@ -214,7 +214,7 @@ export const StoryBlockLogical = () => (
 StoryBlockLogical.storyName = 'block-logical';
 
 export default {
-  title: 'NewsKit Light/block',
+  title: 'Components/block',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

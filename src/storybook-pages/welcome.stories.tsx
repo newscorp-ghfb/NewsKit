@@ -4,6 +4,14 @@ import {newskitLightTheme, ThemeProvider} from '../theme';
 import {Welcome as WelcomeComponent} from './welcome';
 
 export const Welcome = () => <WelcomeComponent />;
+Welcome.parameters = {
+  viewMode: 'story',
+  previewTabs: {
+    'storybook/docs/panel': {
+      hidden: true,
+    },
+  },
+};
 
 export default {
   title: 'Welcome',

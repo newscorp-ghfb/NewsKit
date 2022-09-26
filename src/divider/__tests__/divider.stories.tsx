@@ -72,7 +72,7 @@ const myCustomTheme = compileTheme(
 );
 
 export default {
-  title: 'NewsKit Light/divider',
+  title: 'Components/divider',
   component: () => 'None',
 };
 

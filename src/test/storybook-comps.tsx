@@ -31,7 +31,7 @@ export const StorybookHeading: React.FC<Props> = ({children, stylePreset}) => (
   <TextBlock
     as="h1"
     stylePreset={stylePreset || 'inkContrast'}
-    typographyPreset="editorialHeadline050"
+    typographyPreset="utilitySubheading020"
     paddingBlock="space030"
   >
     {children}
@@ -45,7 +45,7 @@ export const StorybookSubHeading: React.FC<Props> = ({
   <TextBlock
     as="h2"
     stylePreset={stylePreset || 'inkContrast'}
-    typographyPreset="editorialHeadline040"
+    typographyPreset="utilityBody030"
     paddingBlock="space030"
   >
     {children}
@@ -56,7 +56,7 @@ export const StorybookH3: React.FC<Props> = ({children, stylePreset}) => (
   <TextBlock
     as="h3"
     stylePreset={stylePreset || 'inkContrast'}
-    typographyPreset="editorialHeadline020"
+    typographyPreset="utilityBody030"
     paddingBlock="space020"
   >
     {children}
@@ -67,7 +67,7 @@ export const StorybookH4: React.FC<Props> = ({children, stylePreset}) => (
   <TextBlock
     as="h3"
     stylePreset={stylePreset || 'inkContrast'}
-    typographyPreset="editorialHeadline010"
+    typographyPreset="utilityBody030"
     paddingBlock="space020"
   >
     {children}
@@ -108,6 +108,7 @@ export const StorybookPage = ({children}: StorybookPageProps) => (
     columnGap="space080"
     columns="repeat(auto-fill, minmax(300px, 1fr))"
     alignItems="start"
+    overrides={{marginBlock: 'space050', marginInline: 'space030'}}
   >
     {children}
   </GridLayout>

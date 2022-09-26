@@ -13,7 +13,6 @@ import {getThemeObject} from '../src/test/theme-select-object';
 import {StoryDocsHeader, Stories} from '../src/test/storybook-comps';
 
 const unlimitedScenarios = [
-  'welcome',
   'grid',
   'stack',
   'card',
@@ -22,7 +21,6 @@ const unlimitedScenarios = [
   'image',
   'image-e2e',
   'grid-layout',
-  'theme-checker',
   'popover',
   'audio-player-composable',
   'text-area',
@@ -112,14 +110,18 @@ export const parameters = {
       );
     },
   },
+  viewMode: 'docs',
 };
 
 export const decorators = [
   // Add wrapper around stories to limit their size
   (Story, context) => {
     const kind = context.kind.split('/')[1];
+    console.log(context.componentId);
     const Decorator =
-      unlimitedScenarios.includes(kind) || context.componentId === 'welcome'
+      unlimitedScenarios.includes(kind) ||
+      context.componentId === 'welcome' ||
+      context.componentId === 'theme-checker'
         ? NoDecorator
         : LimitSizeDecorator;
     return (

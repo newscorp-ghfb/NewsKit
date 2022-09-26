@@ -560,7 +560,7 @@ export const StoryBannerWithLogicalOverrides = () => (
 StoryBannerWithLogicalOverrides.storyName = 'banner-with-logical-overrides';
 
 export default {
-  title: 'NewsKit Light/banner',
+  title: 'Components/banner',
   component: () => 'None',
   disabledRules: [],
   decorators: [

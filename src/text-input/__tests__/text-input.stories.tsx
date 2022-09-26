@@ -67,7 +67,7 @@ const myCustomTheme = createTheme({
 const states = ['Default', 'Focus', 'Disabled', 'Read-Only'];
 
 export default {
-  title: 'NewsKit Light/text-input',
+  title: 'Components/text-input',
   component: () => 'None',
   disabledRules: ['color-contrast'],
 };
