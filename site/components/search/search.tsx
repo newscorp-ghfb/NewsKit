@@ -225,6 +225,10 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
                 borderBottomColor: theme.colors.interface020,
               },
             },
+            '.DocSearch-Hit-Container': {
+              flex: '1',
+              minWidth: '0',
+            },
             '.DocSearch-Hit-content-wrapper': {
               paddingLeft: '20px',
             },

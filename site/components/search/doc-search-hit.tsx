@@ -4,8 +4,7 @@ import NextLink, {LinkProps as NextLinkProps} from 'next/link';
 import {DocSearchHitExtended, DocSearchHitProps} from './types';
 
 const StyledLink = styled.a`
-  display: grid !important; // to override display: block provided by docsearch
-  grid-template-columns: 1fr auto;
+  display: flex !important;
   align-items: center;
 `;
 
