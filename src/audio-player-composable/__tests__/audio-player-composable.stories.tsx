@@ -157,6 +157,18 @@ const myCustomTheme = createTheme({
     },
   },
 });
+const volumeTheme = createTheme({
+  name: 'my-custom-volume-theme',
+  overrides: {
+    stylePresets: {
+      customPointerStylePreset: {
+        base: {
+          backgroundColor: 'transparent',
+        },
+      },
+    },
+  },
+});
 
 const VerticalContainer = styled.div`
   display: inline-flex;
@@ -429,7 +441,18 @@ const AudioPlayerInlineLive = (props: Partial<AudioPlayerComposableProps>) => (
       justifyContent="flex-start"
     >
       <AudioPlayerPlayPauseButton size="small" />
-      <AudioPlayerVolumeControl layout="vertical" muteButtonSize="small" />
+      <AudioPlayerVolumeControl
+        layout="vertical"
+        overrides={{
+          popover: {
+            pointer: {
+              size: 'sizing080',
+              stylePreset: 'customPointerStylePreset',
+            },
+          },
+        }}
+        muteButtonSize="small"
+      />
       <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
         <IconFilledGraphicEq />
         Live
@@ -645,7 +668,18 @@ export const StoryAudioSubComponents = () => {
           <GridLayoutItem>
             <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
             <VerticalContainer>
-              <AudioPlayerVolumeControl layout="vertical" />
+              <AudioPlayerVolumeControl
+                layout="vertical"
+                overrides={{
+                  popover: {
+                    distance: 'space050',
+                    pointer: {
+                      size: 'sizing080',
+                      stylePreset: 'customPointerStylePreset',
+                    },
+                  },
+                }}
+              />
             </VerticalContainer>
           </GridLayoutItem>
           <GridLayoutItem column="1/-1">
@@ -1026,6 +1060,28 @@ export const StoryAudioPlayerOverrides = () => {
           />
         </AudioPlayerComposable>
       </ThemeProvider>
+      <ThemeProvider theme={volumeTheme}>
+        <StorybookSubHeading>
+          Volume control vertical with distance between button and slider
+        </StorybookSubHeading>
+        <AudioPlayerComposable
+          src={AUDIO_SRC}
+          ariaLandmark="audio player distance between iconbutton and slider"
+        >
+          <AudioPlayerVolumeControl
+            layout="vertical"
+            overrides={{
+              popover: {
+                distance: 'space050',
+                pointer: {
+                  size: 'sizing080',
+                  stylePreset: 'customPointerStylePreset',
+                },
+              },
+            }}
+          />
+        </AudioPlayerComposable>
+      </ThemeProvider>
     </StyledPage>
   );
 };
@@ -1313,6 +1369,22 @@ export const StoryAudioPlayerVolumeControlLayout = () => {
 
         <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
         <AudioPlayerVolumeControl layout="vertical" />
+        <StorybookSubHeading>
+          Volume control vertical-no pointer and hover in between button and
+          popover
+        </StorybookSubHeading>
+        <AudioPlayerVolumeControl
+          layout="vertical"
+          overrides={{
+            popover: {
+              distance: 'space050',
+              pointer: {
+                size: 'sizing080',
+                stylePreset: 'customPointerStylePreset',
+              },
+            },
+          }}
+        />
       </AudioPlayerComposable>
     </StyledPage>
   );
