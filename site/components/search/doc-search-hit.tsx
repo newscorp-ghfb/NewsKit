@@ -19,45 +19,45 @@ const Link = ({
   </NextLink>
 );
 
+function displayTag(pathname: string) {
+  let text = '';
+  if (pathname.startsWith('/components/')) {
+    text = 'component';
+  }
+  if (pathname.startsWith('/theme/')) {
+    text = 'theme';
+  }
+  if (pathname.startsWith('/patterns/')) {
+    text = 'pattern';
+  }
+  if (pathname.startsWith('/about/')) {
+    text = 'about';
+  }
+  if (pathname.startsWith('/getting-started/')) {
+    text = 'guide';
+  }
+
+  return (
+    <Visible md lg xl>
+      <Flag
+        size="small"
+        overrides={{
+          marginInlineEnd: 'space050',
+          stylePreset: 'searchTag',
+          typographyPreset: 'utilityLabel010',
+        }}
+      >
+        {text}
+      </Flag>
+    </Visible>
+  );
+}
+
 export const DocSearchHit = (props: DocSearchHitProps) => {
   const {children, hit} = props as {
     hit: DocSearchHitExtended;
     children: React.ReactNode;
   };
-
-  function displayTag(pathname: string) {
-    let text = '';
-    if (pathname.startsWith('/components/')) {
-      text = 'component';
-    }
-    if (pathname.startsWith('/theme/')) {
-      text = 'theme';
-    }
-    if (pathname.startsWith('/patterns/')) {
-      text = 'pattern';
-    }
-    if (pathname.startsWith('/about/')) {
-      text = 'about';
-    }
-    if (pathname.startsWith('/getting-started/')) {
-      text = 'guide';
-    }
-
-    return (
-      <Visible md lg xl>
-        <Flag
-          size="small"
-          overrides={{
-            marginInlineEnd: 'space050',
-            stylePreset: 'searchTag',
-            typographyPreset: 'utilityLabel010',
-          }}
-        >
-          {text}
-        </Flag>
-      </Visible>
-    );
-  }
 
   if (hit.pathname) {
     return (
