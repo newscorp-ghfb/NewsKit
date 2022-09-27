@@ -1,5 +1,5 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {createTheme} from '../../theme';
+import {createTheme, Theme} from '../../theme';
 import {getTypographyPresetFromTheme, styled, MQ} from '../style';
 
 interface TestTextProp {
@@ -197,5 +197,143 @@ describe('TypographyPreset', () => {
       myCustomTheme,
     );
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('returns typographyPreset with text crop CSS when fontMetrics exist for fontFamily/fontWeight', () => {
+    const typographyPreset = getTypographyPresetFromTheme(
+      'editorialParagraph030',
+      undefined,
+      {withCrop: true},
+    )({
+      theme: ({
+        fonts: {
+          fontWeight020: 500,
+          fontFamily010: {
+            fontFamily: 'Font Family Name',
+            fontMetrics: {
+              fontWeight020: {
+                capHeight: 697,
+                ascent: 1050,
+                descent: -350,
+                lineGap: 100,
+                unitsPerEm: 1000,
+              },
+            },
+          },
+        },
+        typographyPresets: {
+          editorialParagraph030: {
+            fontFamily: 'Font Family Name',
+            fontWeight: 500,
+            fontSize: 12,
+          },
+        },
+      } as unknown) as Theme,
+    });
+    expect(typographyPreset).toEqual({
+      fontFamily: 'Font Family Name',
+      fontWeight: 500,
+      fontSize: '12px',
+      lineHeight: 'normal',
+      '::before': {
+        content: "''",
+        marginBottom: '-0.403em',
+        display: 'block',
+      },
+      '::after': {
+        content: "''",
+        marginTop: '-0.4em',
+        display: 'block',
+      },
+      padding: '0.5px 0px',
+    });
+  });
+
+  test('returns typographyPreset with default text crop CSS when fontMetrics do not exist for fontFamily/fontWeight', () => {
+    const typographyPreset = getTypographyPresetFromTheme(
+      'editorialParagraph030',
+      undefined,
+      {withCrop: true},
+    )({
+      theme: ({
+        fonts: {
+          fontWeight020: 500,
+          fontFamily010: {
+            fontFamily: 'Font Family Name',
+            fontMetrics: {
+              // not defined for fontWeight020
+              fontWeight010: {
+                capHeight: 692,
+                ascent: 935,
+                descent: -265,
+                lineGap: 0,
+                unitsPerEm: 1000,
+              },
+            },
+          },
+        },
+        typographyPresets: {
+          editorialParagraph030: {
+            fontFamily: 'Font Family Name',
+            fontWeight: 500,
+            fontSize: 12,
+          },
+        },
+      } as unknown) as Theme,
+    });
+    expect(typographyPreset).toEqual({
+      fontFamily: 'Font Family Name',
+      fontWeight: 500,
+      fontSize: '12px',
+      lineHeight: 'normal',
+      '::before': {
+        content: "''",
+        marginBottom: '-0.243em',
+        display: 'block',
+      },
+      '::after': {
+        content: "''",
+        marginTop: '-0.265em',
+        display: 'block',
+      },
+      padding: '0.5px 0px',
+    });
+  });
+
+  test('returns typographyPreset without text crop CSS when fontMetrics do not exist for fontFamily/fontWeight or for default fontWeight', () => {
+    jest.spyOn(console, 'warn').mockImplementation();
+    const typographyPreset = getTypographyPresetFromTheme(
+      'editorialParagraph030',
+      undefined,
+      {withCrop: true},
+    )({
+      theme: ({
+        fonts: {
+          fontWeight020: 500,
+          fontFamily010: {
+            fontFamily: 'Font Family Name',
+            fontMetrics: {
+              // default fontWeight010 not defined
+            },
+          },
+        },
+        typographyPresets: {
+          editorialParagraph030: {
+            fontFamily: 'Font Family Name',
+            fontWeight: 500,
+            fontSize: 12,
+          },
+        },
+      } as unknown) as Theme,
+    });
+    expect(typographyPreset).toEqual({
+      fontFamily: 'Font Family Name',
+      fontWeight: 500,
+      fontSize: 12,
+    });
+    // eslint-disable-next-line no-console
+    expect(console.warn).toHaveBeenCalledWith(
+      "No default fontMetrics found for 'Font Family Name'.",
+    );
   });
 });
