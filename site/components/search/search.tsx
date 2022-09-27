@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import ReactDOMServer from 'react-dom/server';
 import {DocSearchModal, useDocSearchKeyboardEvents} from '@docsearch/react';
 import {
   Global,
@@ -7,12 +8,15 @@ import {
   Button,
   styled,
   getSpacingCssFromTheme,
+  ThemeProvider,
+  useTheme,
 } from 'newskit';
 import {createPortal} from 'react-dom';
 import {IconFilledSearch} from '../icons';
 import {Mono} from '../flags';
 
 import '@docsearch/css/dist/style.css';
+import {NewStartScreen} from './new-start-screen';
 
 const SearchIconContainer = styled(Visible)`
   ${getSpacingCssFromTheme('marginBottom', 'space010')};
@@ -44,6 +48,22 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
     },
     [setIsOpen, setInitialQuery],
   );
+
+  const themeForStartScreen = useTheme();
+  useEffect(() => {
+    const dropDown = document.querySelector('.DocSearch-Dropdown');
+    const isExisting = document.querySelector('.DocSearch-NewStartScreen');
+    if (dropDown && !isExisting) {
+      dropDown.insertAdjacentHTML(
+        'beforeend',
+        ReactDOMServer.renderToStaticMarkup(
+          <ThemeProvider theme={themeForStartScreen}>
+            <NewStartScreen />
+          </ThemeProvider>,
+        ),
+      );
+    }
+  }, [isOpen, themeForStartScreen]);
 
   useDocSearchKeyboardEvents({
     isOpen,
@@ -126,7 +146,7 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
               // modal
               '--docsearch-modal-background': theme.colors.interfaceBackground,
               '--docsearch-modal-width': '720px',
-              '--docsearch-modal-height': '650px',
+              '--docsearch-modal-height': '850px',
               '--docsearch-modal-shadow': theme.shadows.shadow060,
 
               // searchbox
