@@ -1,5 +1,5 @@
 import React from 'react';
-import {InlineMessage, toNewsKitIcon, styled} from 'newskit';
+import {InlineMessage, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
@@ -9,10 +9,6 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {
-  logicalMarginOverrideProps,
-  logicalPaddingOverrideProps,
-} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -116,9 +112,29 @@ const commonOverridesRows = [
     ],
     description: 'If provided, this overrides the input & placeholder text.',
   },
-  ...logicalMarginOverrideProps,
-  ...logicalPaddingOverrideProps,
+  {
+    attribute: 'marginBlockEnd',
+    type: 'MQ<string>',
+    default: ['small = space020', 'medium = space020', 'large = space020'],
+    description:
+      'It can take one space token to specify the logical block end margin of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'paddingInline',
+    type: 'MQ<string>',
+    default: ['small = space020', 'medium = space030', 'large = space040'],
+    description:
+      'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
+  },
+  {
+    attribute: 'paddingBlock',
+    type: 'MQ<string>',
+    default: ['small = space020', 'medium = space030', 'large = space040'],
+    description:
+      'It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.',
+  },
 ];
+
 const TextAreaComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
@@ -150,16 +166,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the Text Area component, its variations, and configuration options.',
       playground: {
         componentName: 'TextArea',
-        component: state => {
-          const Container = styled.div`
-            width: 300px;
-          `;
-          return (
-            <Container>
-              <TextArea placeholder="Placeholder" {...state} />
-            </Container>
-          );
-        },
+        component: state => <TextArea placeholder="Placeholder" {...state} />,
         knobs: [
           {
             name: 'Size',
@@ -213,7 +220,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
             options: [
               {
                 label: 'Default (None)',
-                value: 'none',
+                value: undefined,
                 isDefault: true,
               },
               {
@@ -236,13 +243,34 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
             options: [
               {
                 label: 'Default',
-                isDefault: true,
+                value: undefined,
               },
               {
-                label: 'CustomStyle',
+                label: 'Custom Style',
                 value: {
                   stylePreset: 'customStyle',
                   typographyPreset: 'editorialHeadline010',
+                  width: undefined,
+                  minHeight: undefined,
+                },
+              },
+              {
+                label: 'Fixed width',
+                value: {
+                  width: '300px',
+                  stylePreset: undefined,
+                  typographyPreset: undefined,
+                  minHeight: undefined,
+                },
+                isDefault: true,
+              },
+              {
+                label: 'Fixed height',
+                value: {
+                  minHeight: '200px',
+                  stylePreset: undefined,
+                  typographyPreset: undefined,
+                  width: undefined,
                 },
               },
             ],
@@ -258,7 +286,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
       rows: [
         {
           name: 'Input container',
-          description: 'Interactive input area',
+          description: 'Interactive input area.',
           component: 'HTML Textarea element',
           optional: undefined,
         },
@@ -279,13 +307,13 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Caret',
           description:
-            'Thin vertical line that blinks to indicate where input will be inserted',
+            'Thin vertical line that blinks to indicate where input will be inserted.',
           optional: undefined,
         },
         {
           name: 'Resize handle',
           description:
-            'Indicator that appears in the bottom right corner of the input container',
+            'Indicator that appears in the bottom right corner of the input container.',
           optional: true,
         },
       ],
@@ -427,8 +455,11 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
               <br />
               The fieldset can also support other selection controls (inputs)
               such as the{' '}
-              <Link href="/components/text-field/">formInput textField</Link>,
-              and <Link href="/components/checkbox/">formInput checkbox.</Link>
+              <Link href="/components/radio-button/">
+                formInput RadioButton
+              </Link>
+              , and{' '}
+              <Link href="/components/checkbox/">formInput checkbox.</Link>
             </>
           ),
           media: getIllustrationComponent(
@@ -480,7 +511,8 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
               user types a valid entry in the input or on submit.
               <br />
               <br />
-              The form component is used to define this validation behaviour.
+              The <Link href="/components/form/">form</Link> component is used
+              to define this validation behaviour.
             </>
           ),
           media: getIllustrationComponent('components/text-area/states/valid'),
@@ -514,7 +546,8 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
               user types a valid entry in the input or on submit.
               <br />
               <br />
-              The form component is used to define this validation behaviour.
+              The <Link href="/components/form/">form</Link> component is used
+              to define this validation behaviour.
             </>
           ),
           media: getIllustrationComponent(
