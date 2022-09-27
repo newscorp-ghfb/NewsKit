@@ -996,6 +996,30 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-15"
                           data-testid="buttonLink"
+                          href="/getting-started/code/form-step-by-step"
+                        >
+                          <span
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-12"
+                            >
+                              <span
+                                class="emotion-18"
+                              >
+                                Form step-by-step
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item emotion-14"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-15"
+                          data-testid="buttonLink"
                           href="/getting-started/code/instrumentation"
                         >
                           <span
@@ -4968,6 +4992,31 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                 aria-current="false"
                                 class="emotion-13"
                                 data-testid="buttonLink"
+                                href="/getting-started/code/form-step-by-step"
+                                tabindex="-1"
+                              >
+                                <span
+                                  class="emotion-9"
+                                >
+                                  <span
+                                    class="emotion-10"
+                                  >
+                                    <span
+                                      class="emotion-16"
+                                    >
+                                      Form step-by-step
+                                    </span>
+                                  </span>
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="nk-menu-item emotion-12"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-13"
+                                data-testid="buttonLink"
                                 href="/getting-started/code/instrumentation"
                                 tabindex="-1"
                               >
@@ -8831,6 +8880,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                                 class="emotion-18"
                               >
                                 Grid Layout step-by-step
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item emotion-14"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-15"
+                          data-testid="buttonLink"
+                          href="/getting-started/code/form-step-by-step"
+                        >
+                          <span
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-12"
+                            >
+                              <span
+                                class="emotion-18"
+                              >
+                                Form step-by-step
                               </span>
                             </span>
                           </span>
@@ -12792,6 +12865,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                                       class="emotion-16"
                                     >
                                       Grid Layout step-by-step
+                                    </span>
+                                  </span>
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="nk-menu-item emotion-12"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-13"
+                                data-testid="buttonLink"
+                                href="/getting-started/code/form-step-by-step"
+                              >
+                                <span
+                                  class="emotion-9"
+                                >
+                                  <span
+                                    class="emotion-10"
+                                  >
+                                    <span
+                                      class="emotion-16"
+                                    >
+                                      Form step-by-step
                                     </span>
                                   </span>
                                 </span>
