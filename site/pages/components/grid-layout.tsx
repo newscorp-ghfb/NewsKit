@@ -363,7 +363,7 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
             'components/grid-layout/tutorials/designers',
           ),
           href:
-            'https://www.figma.com/file/p2pmKPxzLsSMwWmHFhgPa0/01---NewsKit-Web---Guides---Grid-Layout',
+            'https://www.figma.com/file/DkQzpgAZSze5ghznccAI7l/Grid-Layout-Guide',
         },
       ],
     }}

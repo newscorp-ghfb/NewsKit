@@ -566,7 +566,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-618 {
+.emotion-623 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -574,7 +574,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-619 {
+.emotion-624 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -584,7 +584,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 100%;
 }
 
-.emotion-622 {
+.emotion-627 {
   margin-bottom: 32px;
 }
 
@@ -984,6 +984,30 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                 class="emotion-18"
                               >
                                 Grid Layout step-by-step
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item emotion-14"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-15"
+                          data-testid="buttonLink"
+                          href="/getting-started/code/form-step-by-step"
+                        >
+                          <span
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-12"
+                            >
+                              <span
+                                class="emotion-18"
+                              >
+                                Form step-by-step
                               </span>
                             </span>
                           </span>
@@ -3667,11 +3691,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 </div>
               </ul>
               <div
-                class="emotion-618"
+                class="emotion-623"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-619"
+                  class="emotion-624"
                   data-testid="divider"
                 />
               </div>
@@ -3692,7 +3716,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
             />
           </nav>
           <div
-            class="emotion-622"
+            class="emotion-627"
           />
         </div>
       </div>
@@ -4392,7 +4416,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-616 {
+.emotion-621 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -4400,7 +4424,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-617 {
+.emotion-622 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -4411,55 +4435,55 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen {
-  .emotion-618 {
+  .emotion-623 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-618 {
+  .emotion-623 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-618 {
+  .emotion-623 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-618 {
+  .emotion-623 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-618 {
+  .emotion-623 {
     display: block;
   }
 }
 
-.emotion-620 {
+.emotion-625 {
   margin-bottom: 32px;
 }
 
-.emotion-621 {
+.emotion-626 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-622 {
+.emotion-627 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-623 {
+.emotion-628 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-624 {
+.emotion-629 {
   margin: 0;
   color: #2E3F54;
   font-family: "Poppins",sans-serif;
@@ -4469,11 +4493,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-624 svg {
+.emotion-629 svg {
   fill: #2E3F54;
 }
 
-.emotion-625 {
+.emotion-630 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4483,7 +4507,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-625 {
+  .emotion-630 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4491,19 +4515,19 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-625 {
+  .emotion-630 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-625.emotion-625 {
+.emotion-630.emotion-630 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-627 {
+.emotion-632 {
   margin-block: 24px;
 }
 
@@ -4932,6 +4956,31 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                       class="emotion-16"
                                     >
                                       Grid Layout step-by-step
+                                    </span>
+                                  </span>
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="nk-menu-item emotion-12"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-13"
+                                data-testid="buttonLink"
+                                href="/getting-started/code/form-step-by-step"
+                                tabindex="-1"
+                              >
+                                <span
+                                  class="emotion-9"
+                                >
+                                  <span
+                                    class="emotion-10"
+                                  >
+                                    <span
+                                      class="emotion-16"
+                                    >
+                                      Form step-by-step
                                     </span>
                                   </span>
                                 </span>
@@ -7714,11 +7763,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
                       </div>
                     </ul>
                     <div
-                      class="emotion-616"
+                      class="emotion-621"
                     >
                       <hr
                         aria-hidden="true"
-                        class="emotion-617"
+                        class="emotion-622"
                         data-testid="divider"
                       />
                     </div>
@@ -7726,7 +7775,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 </nav>
               </div>
               <div
-                class="emotion-618"
+                class="emotion-623"
               >
                 <nav
                   aria-label="menu-sidebar"
@@ -7739,28 +7788,28 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   />
                 </nav>
                 <div
-                  class="emotion-620"
+                  class="emotion-625"
                 />
               </div>
               <div
-                class="emotion-621"
+                class="emotion-626"
               >
                 <a
-                  class="emotion-622"
+                  class="emotion-627"
                   href="https://github.com/newscorp-ghfb/newskit"
                   tabindex="-1"
                 >
                   <div
-                    class="emotion-623"
+                    class="emotion-628"
                   >
                     <p
-                      class="emotion-624"
+                      class="emotion-629"
                     >
                       Github
                     </p>
                     <svg
                       aria-hidden="true"
-                      class="emotion-625 emotion-626"
+                      class="emotion-630 emotion-631"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -7777,7 +7826,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </div>
                 </a>
                 <div
-                  class="emotion-627"
+                  class="emotion-632"
                 />
               </div>
             </div>
@@ -8360,7 +8409,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-618 {
+.emotion-623 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -8368,7 +8417,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-619 {
+.emotion-624 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -8378,7 +8427,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   width: 100%;
 }
 
-.emotion-622 {
+.emotion-627 {
   margin-bottom: 32px;
 }
 
@@ -8782,6 +8831,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                                 class="emotion-18"
                               >
                                 Grid Layout step-by-step
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item emotion-14"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-15"
+                          data-testid="buttonLink"
+                          href="/getting-started/code/form-step-by-step"
+                        >
+                          <span
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-12"
+                            >
+                              <span
+                                class="emotion-18"
+                              >
+                                Form step-by-step
                               </span>
                             </span>
                           </span>
@@ -11465,11 +11538,11 @@ exports[`Sidebar renders correctly when open 1`] = `
                 </div>
               </ul>
               <div
-                class="emotion-618"
+                class="emotion-623"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-619"
+                  class="emotion-624"
                   data-testid="divider"
                 />
               </div>
@@ -11490,7 +11563,7 @@ exports[`Sidebar renders correctly when open 1`] = `
             />
           </nav>
           <div
-            class="emotion-622"
+            class="emotion-627"
           />
         </div>
       </div>
@@ -12189,7 +12262,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-616 {
+.emotion-621 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -12197,7 +12270,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-617 {
+.emotion-622 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -12208,55 +12281,55 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen {
-  .emotion-618 {
+  .emotion-623 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-618 {
+  .emotion-623 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-618 {
+  .emotion-623 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-618 {
+  .emotion-623 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-618 {
+  .emotion-623 {
     display: block;
   }
 }
 
-.emotion-620 {
+.emotion-625 {
   margin-bottom: 32px;
 }
 
-.emotion-621 {
+.emotion-626 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-622 {
+.emotion-627 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-623 {
+.emotion-628 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-624 {
+.emotion-629 {
   margin: 0;
   color: #2E3F54;
   font-family: "Poppins",sans-serif;
@@ -12266,11 +12339,11 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-624 svg {
+.emotion-629 svg {
   fill: #2E3F54;
 }
 
-.emotion-625 {
+.emotion-630 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -12280,7 +12353,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-625 {
+  .emotion-630 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -12288,19 +12361,19 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-625 {
+  .emotion-630 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-625.emotion-625 {
+.emotion-630.emotion-630 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-627 {
+.emotion-632 {
   margin-block: 24px;
 }
 
@@ -12719,6 +12792,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                                       class="emotion-16"
                                     >
                                       Grid Layout step-by-step
+                                    </span>
+                                  </span>
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="nk-menu-item emotion-12"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-13"
+                                data-testid="buttonLink"
+                                href="/getting-started/code/form-step-by-step"
+                              >
+                                <span
+                                  class="emotion-9"
+                                >
+                                  <span
+                                    class="emotion-10"
+                                  >
+                                    <span
+                                      class="emotion-16"
+                                    >
+                                      Form step-by-step
                                     </span>
                                   </span>
                                 </span>
@@ -15402,11 +15499,11 @@ exports[`Sidebar renders correctly when open 1`] = `
                       </div>
                     </ul>
                     <div
-                      class="emotion-616"
+                      class="emotion-621"
                     >
                       <hr
                         aria-hidden="true"
-                        class="emotion-617"
+                        class="emotion-622"
                         data-testid="divider"
                       />
                     </div>
@@ -15414,7 +15511,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                 </nav>
               </div>
               <div
-                class="emotion-618"
+                class="emotion-623"
               >
                 <nav
                   aria-label="menu-sidebar"
@@ -15427,27 +15524,27 @@ exports[`Sidebar renders correctly when open 1`] = `
                   />
                 </nav>
                 <div
-                  class="emotion-620"
+                  class="emotion-625"
                 />
               </div>
               <div
-                class="emotion-621"
+                class="emotion-626"
               >
                 <a
-                  class="emotion-622"
+                  class="emotion-627"
                   href="https://github.com/newscorp-ghfb/newskit"
                 >
                   <div
-                    class="emotion-623"
+                    class="emotion-628"
                   >
                     <p
-                      class="emotion-624"
+                      class="emotion-629"
                     >
                       Github
                     </p>
                     <svg
                       aria-hidden="true"
-                      class="emotion-625 emotion-626"
+                      class="emotion-630 emotion-631"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -15464,7 +15561,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </div>
                 </a>
                 <div
-                  class="emotion-627"
+                  class="emotion-632"
                 />
               </div>
             </div>
