@@ -219,8 +219,8 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
             propName: 'resize',
             options: [
               {
-                label: 'Default (None)',
-                value: undefined,
+                label: 'None',
+                value: 'none',
                 isDefault: true,
               },
               {
