@@ -22,7 +22,8 @@ import {mergeBreakpointObject} from '../../../utils/merge-breakpoint-object';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {getTransitionDuration} from '../../../utils';
 import {getTransitionClassName} from '../../../utils/get-transition-class-name';
-import {Popover} from '../../../popover';
+import {Popover, PopoverProps} from '../../../popover';
+import {getComponentOverrides} from '../../../utils/overrides';
 
 const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   HTMLDivElement,
@@ -129,8 +130,29 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
       overrides={sliderOverrides}
     />
   );
-
   const popoverOverrides = getPopoverOverrides(theme, overrides);
+
+  const popoverContent = (
+    <StyledVolumeSliderPopupContainer overrides={overrides}>
+      {sliderComponent}
+    </StyledVolumeSliderPopupContainer>
+  );
+  const DefaultPopover = Popover;
+  const [PopoverComponent, popoverProps] = getComponentOverrides(
+    /* istanbul ignore next  */
+    overrides?.popover,
+    DefaultPopover,
+    {
+      id: 'volume-control-slider-popup',
+      open: layout === 'vertical' && open,
+      hidePointer: false,
+      content: popoverContent,
+      overrides: popoverOverrides,
+      header: undefined,
+      closePosition: 'none',
+      disableFocusManagement: true,
+    },
+  );
 
   return (
     <StyledGridLayout
@@ -146,20 +168,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
       overrides={overrides}
     >
       <GridLayoutItem area="muteButton">
-        <Popover
-          hidePointer
-          open={layout === 'vertical' && open}
-          content={
-            <StyledVolumeSliderPopupContainer overrides={overrides}>
-              {sliderComponent}
-            </StyledVolumeSliderPopupContainer>
-          }
-          id="volume-control-slider-popup"
-          header={undefined}
-          closePosition="none"
-          disableFocusManagement
-          overrides={popoverOverrides}
-        >
+        <PopoverComponent {...(popoverProps as PopoverProps)}>
           <MuteButton
             volume={volume}
             unMutedVolume={unMutedVolume}
@@ -168,7 +177,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
             muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
             overrides={buttonOverrides}
           />
-        </Popover>
+        </PopoverComponent>
       </GridLayoutItem>
       {useSliderContainer && (
         <GridLayoutItem area="slider">
