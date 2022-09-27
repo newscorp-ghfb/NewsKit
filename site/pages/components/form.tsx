@@ -436,7 +436,6 @@ const FormComponent = (layoutProps: LayoutProps) => (
     commonSection={{
       id: 'formstructure',
       title: 'Form structure',
-      lastItem: true,
       introduction: (
         <>
           The below diagram outlines how FormInput components can be used inside
@@ -647,6 +646,19 @@ const schema = yup.object().shape({
             "FormInput components don't need to be direct children of the form component and can be nested inside other elements.",
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-9'),
+        },
+      ],
+    }}
+    tutorials={{
+      introduction:
+        'Learn how to use the form component effectively using the tutorial below.',
+      cards: [
+        {
+          title: 'Form tutorial',
+          description:
+            'Tutorial for engineers to build a form using the form sub components.',
+          media: getIllustrationComponent('guides/form-guide/hero'),
+          href: '/getting-started/code/form-step-by-step/',
         },
       ],
     }}

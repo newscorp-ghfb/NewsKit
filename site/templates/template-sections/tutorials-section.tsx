@@ -10,7 +10,7 @@ export const TutorialsSection: React.FC<TutorialsSectionProps> = ({
   introduction,
   ...options
 }) => (
-  <CommonSection title="Tutorials" id="tutorials" introduction={introduction}>
+  <CommonSection title="Tutorial" id="tutorial" introduction={introduction}>
     <ComponentPageCell>
       <MediaList
         {...options}
