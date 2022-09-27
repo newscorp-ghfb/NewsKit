@@ -34,9 +34,9 @@ const sendEvent = api => {
   };
 
   if (window && window.tealiumTrack) {
-    console.log('SEND_EVENT', event);
+    // Un-comment when want to see the data
+    // console.log('SEND_EVENT', event);
     window.tealiumTrack(event);
-    // window.utag.view(e);
   }
 };
 
@@ -54,7 +54,6 @@ const CONFIG = {
   },
   consent: {
     accountId: 259,
-    //TODO: change to https://storybook.newskit.co.uk
     propertyHref: 'https://newskit.co.uk',
     gdpr: {},
   },
@@ -74,8 +73,6 @@ const Tool = () => {
 };
 
 addons.register(ADDON_ID, api => {
-  // The addon only sets the
-
   addons.add(TOOL_ID, {
     type: types.TOOLEXTRA,
     title: 'Privacy',
@@ -85,13 +82,11 @@ addons.register(ADDON_ID, api => {
   // send initial page view event, since storybook doesn't do it via STORY_CHANGED
   // When the preview boots, the first story is chosen via a selection specifier
   api.on(STORY_SPECIFIED, () => {
-    console.log('STORY_SPECIFIED');
     sendEvent(api);
   });
 
   // send event every time user navigates to a new story
   api.on(STORY_CHANGED, () => {
-    console.log('STORY_CHANGED');
     sendEvent(api);
   });
 });
