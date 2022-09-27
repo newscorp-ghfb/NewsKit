@@ -245,8 +245,10 @@ Changing the default border radius of NewsKit elements, such as buttons, to shar
 
 #### Setting custom font cropping config
 
-For cropping your font you can use the fontMetrics. This approach is precise, easy to implement, takes into account the fontWeight and fontSize of your font.
-You can find the font metrics by loading your font file in the <a href='https://seek-oss.github.io/capsize/'>Capsize docs</a>.
+For cropping your font you can use Font Metrics, which are the measurements of characters in a particular font. This
+approach is precise, easy to implement, and takes into account the fontWeight and fontSize of your font.
+
+You can calculate font metrics for a font by loading a font file into the <a href='https://seek-oss.github.io/capsize/'>Capsize docs</a>.
 
 As outlined in the link, choose your font (point 1). If you are uploading your own font file, as general approach,
 start adjusting the font metrics by clicking on the icon highlighted with the red circle (image below). Adjust it so that H is within the capHeight lines and the font has
@@ -261,6 +263,27 @@ e.g
 />
 
 Once satisfied, find and retrieve the metrics (point 3).
+
+Font Metrics should be added to the font family objects in your theme under the relevant font weight token. E.g.:
+
+<Code>
+    {JSON.stringify({
+        fontWeight010: 400,
+        fontFamily010: {
+        fontFamily: '"DM Sans", sans-serif',
+        fontMetrics: {
+          fontWeight010: {
+            capHeight: 700,
+            ascent: 992,
+            descent: -310,
+            lineGap: 0,
+            unitsPerEm: 1000,
+          },
+        },
+      }
+    }, null, 2)}
+</Code>
+
 Generally, adding the fontMetrics in your theme for a weight of 400 is enough for the majority of our users. However, if in your case you see the need to use more precise metrics for different font weights you can specify them;
 400 will be always the fallback.
 
