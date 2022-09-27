@@ -163,7 +163,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Text Area component, its variations, and configuration options.',
+        'This demo allows you to preview the text area component, its variations, and configuration options.',
       playground: {
         componentName: 'TextArea',
         component: state => <TextArea placeholder="Placeholder" {...state} />,
@@ -688,7 +688,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               Avoid using text areas if you need to let users enter shorter
-              answers no longer than a single line.In this case, you should use
+              answers no longer than a single line. In this case, you should use
               the{' '}
               <Link href="/components/text-field/">text field component.</Link>
             </>
@@ -819,8 +819,8 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
                 In React, a &lt;textarea&gt; uses a{' '}
                 <InlineCode>value</InlineCode> attribute. This way a form using
                 a &lt;textarea&gt; can be written very similarly to a form that
-                uses a single-line inputhe &lt;textarea&gt; does not support the{' '}
-                <InlineCode>value</InlineCode> attribute.
+                uses a single-line input. The &lt;textarea&gt; does not support
+                the <InlineCode>value</InlineCode> attribute.
               </InlineMessage>
               <InlineMessage
                 icon={infoIcon}
@@ -828,14 +828,14 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
                 aria-label="Addition to the props"
                 overrides={{marginBlockStart: 'space030'}}
               >
-                In addition to the props that come with the Text Area component,{' '}
+                In addition to the props that come with the text area component,{' '}
                 <Link
                   href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#attributes"
                   target="_blank"
                 >
-                  native Text Area attributes
+                  native text area attributes
                 </Link>{' '}
-                are also supported by passing them down to the Text Area
+                are also supported by passing them down to the text area
                 component.
               </InlineMessage>
               <InlineMessage
@@ -860,7 +860,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
               >
                 Native attributes <InlineCode>rows</InlineCode> &{' '}
                 <InlineCode>cols</InlineCode> can be used by passing unset width
-                and height down to the Text Area component.
+                and height down to the text area component.
               </InlineMessage>
             </>
           ),
