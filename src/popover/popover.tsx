@@ -57,12 +57,14 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
       ),
     };
     const headerId = `header-${useId()}`;
+
     const buildFloatingElementAriaAttributes: BuildAriaAttributesFn = ({
       ref: {id},
     }) => ({
       'aria-labelledby': header ? undefined : id,
       'aria-describedby': header ? headerId : undefined,
     });
+
     const useInteractions = (context: FloatingContext<HTMLElement>) =>
       floatingUiUseInteractions([
         useClick(context),
