@@ -7,6 +7,7 @@ import {
 import {H6, H5, H4, H3, H2, H1} from '..';
 import {TextBlock} from '../../text-block';
 import {Grid, Cell} from '../../grid';
+import {styled} from '../../utils/style';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-heading-theme',
@@ -254,6 +255,30 @@ export const StoryHeadingLogicalProps = () => {
 };
 StoryHeadingLogicalProps.storyName = 'heading-logical-props';
 
+const FontIconElement = styled(TextBlock)`
+  &:before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+`;
+
+const FontIcon = ({
+  name,
+  typographyPreset = 'icon040',
+}: {
+  name: string;
+  typographyPreset?: string;
+}) => (
+  <FontIconElement
+    className={`fa fa-${name}`}
+    typographyPreset={typographyPreset}
+    as="span"
+  />
+);
+
 export const StoryHeadingNoCropTheme = () => {
   const overrides = {
     fonts: {
@@ -285,19 +310,44 @@ export const StoryHeadingNoCropTheme = () => {
         fontFamily: '"Poppins", sans-serif',
         fontMetrics: undefined,
       },
+      fontFamilyIcon: {
+        fontFamily: '"Font Awesome 5 Free"',
+        fontMetrics: undefined,
+      },
+    },
+    typographyPresets: {
+      icon010: {
+        fontFamily: '{{fonts.fontFamilyIcon.fontFamily}}',
+        fontSize: '{{fonts.fontSize010}}',
+      },
+      icon020: {
+        fontFamily: '{{fonts.fontFamilyIcon.fontFamily}}',
+        fontSize: '{{fonts.fontSize020}}',
+      },
+      icon030: {
+        fontFamily: '{{fonts.fontFamilyIcon.fontFamily}}',
+        fontSize: '{{fonts.fontSize030}}',
+      },
+      icon040: {
+        fontFamily: '{{fonts.fontFamilyIcon.fontFamily}}',
+        fontSize: '{{fonts.fontSize040}}',
+      },
     },
   };
 
   const theme = createTheme({
     baseTheme: newskitLightTheme,
-    name: 'blog-light',
+    name: 'my-light',
     overrides,
   });
 
-  console.log({theme});
-
   return (
     <ThemeProvider theme={theme}>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+      />
+
       <StorybookHeading>Heading - No Crop Theme</StorybookHeading>
       <br />
       <H1>Default H1 - {title}</H1>
@@ -311,6 +361,16 @@ export const StoryHeadingNoCropTheme = () => {
       <H5>Default H5 - {title}</H5>
       <br />
       <H6>Default H6 - {title}</H6>
+
+      <hr />
+
+      <FontIcon name="user" />
+      <FontIcon name="image" />
+      <hr />
+      <FontIcon name="balance-scale" typographyPreset="icon040" />
+      <FontIcon name="balance-scale" typographyPreset="icon030" />
+      <FontIcon name="balance-scale" typographyPreset="icon020" />
+      <FontIcon name="balance-scale" typographyPreset="icon010" />
     </ThemeProvider>
   );
 };
