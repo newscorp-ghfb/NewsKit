@@ -46,24 +46,22 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
 
     if (!fontFamilyObject) return typographyPreset;
 
-    let cropProps = {} as CSSObject;
+    let cropProps;
     if (Object.getOwnPropertyDescriptor(fontFamilyObject, 'cropConfig')) {
       cropProps = legacyGetFontProps(
         fontSize,
         lineHeight,
         fontFamily,
         props.theme.fonts,
-      ) as CSSObject;
-    } else if (
-      Object.getOwnPropertyDescriptor(fontFamilyObject, 'fontMetrics') &&
-      fontFamilyObject.fontMetrics
-    ) {
+      );
+    } else {
       const themeFontsProperties = Object.entries(props.theme.fonts);
 
       const weightTokenArray = themeFontsProperties.find(element =>
         element.includes(fontWeight),
       );
       const weightToken = weightTokenArray && weightTokenArray[0];
+      console.log({weightToken});
 
       const fontMetrics =
         (weightToken && fontFamilyObject.fontMetrics![weightToken!]) ||
@@ -81,7 +79,7 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
         fontMetrics,
       };
 
-      cropProps = textCrop(cropData) as CSSObject;
+      cropProps = textCrop(cropData);
     }
     //  **
 

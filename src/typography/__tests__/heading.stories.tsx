@@ -256,13 +256,13 @@ export const StoryHeadingLogicalProps = () => {
 StoryHeadingLogicalProps.storyName = 'heading-logical-props';
 
 const FontIconElement = styled(TextBlock)`
-  &:before {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  }
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
 `;
 
 const FontIcon = ({
@@ -273,7 +273,7 @@ const FontIcon = ({
   typographyPreset?: string;
 }) => (
   <FontIconElement
-    className={`fa fa-${name}`}
+    className={`fa-${name}`}
     typographyPreset={typographyPreset}
     as="span"
   />
@@ -300,19 +300,19 @@ export const StoryHeadingNoCropTheme = () => {
       fontSize160: '5rem',
       fontFamily010: {
         fontFamily: '"DM Sans", sans-serif',
-        fontMetrics: undefined,
+        fontMetrics: {},
       },
       fontFamily020: {
         fontFamily: '"Bitter", serif',
-        fontMetrics: undefined,
+        fontMetrics: {},
       },
       fontFamily030: {
         fontFamily: '"Poppins", sans-serif',
-        fontMetrics: undefined,
+        fontMetrics: {},
       },
       fontFamilyIcon: {
         fontFamily: '"Font Awesome 5 Free"',
-        fontMetrics: undefined,
+        fontMetrics: {},
       },
     },
     typographyPresets: {
@@ -367,10 +367,10 @@ export const StoryHeadingNoCropTheme = () => {
       <FontIcon name="user" />
       <FontIcon name="image" />
       <hr />
-      <FontIcon name="balance-scale" typographyPreset="icon040" />
-      <FontIcon name="balance-scale" typographyPreset="icon030" />
-      <FontIcon name="balance-scale" typographyPreset="icon020" />
-      <FontIcon name="balance-scale" typographyPreset="icon010" />
+      <FontIcon name="user" typographyPreset="icon040" />
+      <FontIcon name="user" typographyPreset="icon030" />
+      <FontIcon name="user" typographyPreset="icon020" />
+      <FontIcon name="user" typographyPreset="icon010" />
     </ThemeProvider>
   );
 };
