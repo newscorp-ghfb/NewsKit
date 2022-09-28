@@ -1,5 +1,4 @@
 import React from 'react';
-import {getSSRId} from 'newskit';
 import {Svg} from '../svg';
 import {Path} from '../path';
 import {Rect} from '../rect';

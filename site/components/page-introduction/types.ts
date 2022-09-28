@@ -7,7 +7,7 @@ export interface PageIntroductionProps {
   hero?:
     | {
         illustration: string;
-        illustrationProps: object;
+        illustrationProps?: object;
       }
     | ImageProps;
   showSeparator?: boolean;

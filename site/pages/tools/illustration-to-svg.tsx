@@ -1,3 +1,7 @@
+/* eslint-disable no-plusplus */
+/* eslint-disable consistent-return */
+/* eslint-disable @typescript-eslint/no-shadow */
+/* eslint-disable global-require */
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import {ThemeProvider} from 'newskit';
