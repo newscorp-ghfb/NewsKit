@@ -80,6 +80,8 @@ export const fonts = {
 
 export type Fonts = typeof fonts;
 
+export type FontThemeValue = typeof fonts[keyof typeof fonts];
+
 export interface FontConfig {
   fontFamily: string;
   fontMetrics?: {

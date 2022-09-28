@@ -2,7 +2,7 @@
   "fontFamily010": {
     "fontFamily": "Times Modern",
     "fontMetrics": {
-      "400": {
+      "fontWeight010": {
         "capHeight": 671,
         "ascent": 695,
         "descent": -172,
@@ -14,7 +14,7 @@
   "fontFamily020": {
     "fontFamily": "Times Digital W04 Regular",
     "fontMetrics": {
-      "400": {
+      "fontWeight010": {
         "capHeight": 713,
         "ascent": 992,
         "descent": -319,
@@ -26,7 +26,7 @@
   "fontFamily030": {
     "fontFamily": "GillSansMTStd-Medium",
     "fontMetrics": {
-      "400": {
+      "fontWeight010": {
         "capHeight": 682,
         "ascent": 682,
         "descent": -318,
