@@ -1653,6 +1653,15 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "searchTag": Object {
+      "base": Object {
+        "borderColor": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+    },
     "selectOptionItem": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInput030}}",
@@ -4252,6 +4261,15 @@ Object {
     "roadmapCardMedia": Object {
       "base": Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
+      },
+    },
+    "searchTag": Object {
+      "base": Object {
+        "borderColor": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkSubtle}}",
       },
     },
     "selectOptionItem": Object {
@@ -6858,6 +6876,15 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "searchTag": Object {
+      "base": Object {
+        "borderColor": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+    },
     "selectOptionItem": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInput030}}",
@@ -9457,6 +9484,15 @@ Object {
     "roadmapCardMedia": Object {
       "base": Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
+      },
+    },
+    "searchTag": Object {
+      "base": Object {
+        "borderColor": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkSubtle}}",
       },
     },
     "selectOptionItem": Object {
@@ -12063,6 +12099,15 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "searchTag": Object {
+      "base": Object {
+        "borderColor": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+    },
     "selectOptionItem": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInput030}}",
@@ -14662,6 +14707,15 @@ Object {
     "roadmapCardMedia": Object {
       "base": Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
+      },
+    },
+    "searchTag": Object {
+      "base": Object {
+        "borderColor": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkSubtle}}",
       },
     },
     "selectOptionItem": Object {
@@ -17268,6 +17322,15 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "searchTag": Object {
+      "base": Object {
+        "borderColor": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkSubtle}}",
+      },
+    },
     "selectOptionItem": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInput030}}",
@@ -19867,6 +19930,15 @@ Object {
     "roadmapCardMedia": Object {
       "base": Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
+      },
+    },
+    "searchTag": Object {
+      "base": Object {
+        "borderColor": "{{colors.inkSubtle}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkSubtle}}",
       },
     },
     "selectOptionItem": Object {
