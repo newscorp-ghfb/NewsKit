@@ -5,7 +5,7 @@ import Layout, {LayoutProps} from '../../components/layout';
 import {pathToID} from '../../components/illustrations/utils';
 import {docsThemeLight} from '../../theme/doc-theme';
 
-const RUN = true;
+const RUN = false;
 
 if (!process.browser && RUN) {
   // @ts-ignore
@@ -99,7 +99,7 @@ if (!process.browser && RUN) {
         console.log(filePath, ' includes mask ');
         maskCounter++;
       }
-      // fs.writeFileSync(fullPath, svgContent, {flag: 'w'});
+      fs.writeFileSync(fullPath, svgContent, {flag: 'w'});
     });
 
     console.log('Total files with mask', maskCounter);

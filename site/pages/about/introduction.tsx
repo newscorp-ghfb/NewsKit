@@ -102,6 +102,11 @@ const Introduction = (
         introduction="NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. NewsKit is built on modular design principles and backed by best practice guidance for design and development."
         hero={{
           illustration: 'about/introduction-hero-stepping-stones-illustration',
+          illustrationProps: {
+            // width: '1344',
+            // height: '759',
+            viewBox: '0 0 1344 759',
+          },
         }}
       />
     </PageIntroductionContainer>
