@@ -4,7 +4,12 @@ import {Divider} from '../divider';
 import {LinkStandalone} from '../link';
 import {Block} from '../block';
 import {Image} from '../image';
-import {getBorderCssFromTheme, styled} from '../utils';
+import {
+  getBorderCssFromTheme,
+  getColorCssFromTheme,
+  getSpacingCssFromTheme,
+  styled,
+} from '../utils';
 
 const links = [
   {label: 'NewsKit website', url: 'https://newskit.co.uk/'},
@@ -37,8 +42,21 @@ const WelcomeDescription = styled(P)`
   max-width: 300px;
 `;
 
+const WelcomeContainer = styled(Block)`
+  /* Welcome screen is not themeable so it's only in newskit light mode. */
+  /* Doing this to stretch the internals of the Welcome screen from side to side to avoid cases where the dark theme is selected and there are dark borders around it. */
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  ${getColorCssFromTheme('backgroundColor', 'white')};
+  ${getSpacingCssFromTheme('paddingInline', 'space050')}
+  ${getSpacingCssFromTheme('paddingBlock', 'space050')}
+  margin-top: 0;
+  margin-left: -8px;
+`;
+
 export const Welcome = () => (
-  <Block marginBlockStart="space050" marginInline="space040">
+  <WelcomeContainer marginBlockStart="space050" marginInline="space040">
     <WelcomeBanner
       marginBlockEnd="space100"
       paddingInline="space080"
@@ -86,5 +104,5 @@ export const Welcome = () => (
         alt="npm version badge"
       />
     </LinkStandalone>
-  </Block>
+  </WelcomeContainer>
 );

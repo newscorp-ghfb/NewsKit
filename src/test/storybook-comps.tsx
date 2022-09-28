@@ -108,7 +108,7 @@ export const StorybookPage = ({children}: StorybookPageProps) => (
     columnGap="space080"
     columns="repeat(auto-fill, minmax(300px, 1fr))"
     alignItems="start"
-    overrides={{marginBlock: 'space050', marginInline: 'space030'}}
+    overrides={{paddingBlock: 'space050', paddingInline: 'space030'}}
   >
     {children}
   </GridLayout>
@@ -165,6 +165,12 @@ export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
   );
 };
 
+const StyledCanvas = styled(Canvas)`
+  & > div > div {
+    padding: 0;
+  }
+`;
+
 export const DocsStory = ({
   id,
   name,
@@ -199,9 +205,9 @@ export const DocsStory = ({
       {description && <Description markdown={description} />}
       {/* Have to ignore because the library typings are missing `children` prop. */}
       {/* @ts-ignore */}
-      <Canvas withToolbar={withToolbar}>
+      <StyledCanvas withToolbar={withToolbar}>
         <Story id={id} parameters={parameters} />
-      </Canvas>
+      </StyledCanvas>
     </Anchor>
   );
 };

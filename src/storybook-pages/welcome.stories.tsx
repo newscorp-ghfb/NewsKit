@@ -6,6 +6,7 @@ import {Welcome as WelcomeComponent} from './welcome';
 export const Welcome = () => <WelcomeComponent />;
 Welcome.parameters = {
   viewMode: 'story',
+  backgrounds: {disable: true},
   previewTabs: {
     'storybook/docs/panel': {
       hidden: true,
