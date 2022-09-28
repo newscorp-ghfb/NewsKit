@@ -290,564 +290,568 @@ exports[`NewStartScreen renders correctly 1`] = `
 }
 
 <div
-    class="emotion-0"
+    class="DocSearch-NewStartScreen"
   >
     <div
-      class="DocSearch-NewStartScreen emotion-1"
+      class="emotion-0"
     >
       <div
-        class="emotion-2"
+        class="emotion-1"
       >
-        <p
-          class="emotion-3"
-        >
-          Getting started
-        </p>
         <div
-          class="emotion-4"
+          class="emotion-2"
         >
-          <div
-            class="emotion-5"
+          <p
+            class="emotion-3"
           >
-            <a
-              class="emotion-6"
-              href="/getting-started/design/design-overview/"
+            Getting started
+          </p>
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/getting-started/design/design-overview/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    Design overview
+                    <span
+                      class="emotion-9"
+                    >
+                      Design overview
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <a
-              class="emotion-6"
-              href="/getting-started/code/engineering-overview/"
+              </a>
+            </div>
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/getting-started/code/engineering-overview/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    Engineering overview
+                    <span
+                      class="emotion-9"
+                    >
+                      Engineering overview
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <a
-              class="emotion-6"
-              href="/getting-started/code/instrumentation/"
+              </a>
+            </div>
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/getting-started/code/instrumentation/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    Instrumentation setup
+                    <span
+                      class="emotion-9"
+                    >
+                      Instrumentation setup
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="emotion-2"
-      >
-        <p
-          class="emotion-3"
-        >
-          Popular searches
-        </p>
         <div
-          class="emotion-4"
+          class="emotion-2"
         >
-          <div
-            class="emotion-5"
+          <p
+            class="emotion-3"
           >
-            <a
-              class="emotion-6"
-              href="/components/overview/"
+            Popular searches
+          </p>
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/components/overview/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    Components
+                    <span
+                      class="emotion-9"
+                    >
+                      Components
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <a
-              class="emotion-6"
-              href="/theme/overview/"
+              </a>
+            </div>
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/theme/overview/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    Theme
+                    <span
+                      class="emotion-9"
+                    >
+                      Theme
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <a
-              class="emotion-6"
-              href="/components/button/"
+              </a>
+            </div>
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/components/button/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    Button
+                    <span
+                      class="emotion-9"
+                    >
+                      Button
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="emotion-2"
-      >
-        <p
-          class="emotion-3"
-        >
-          Presets
-        </p>
         <div
-          class="emotion-4"
+          class="emotion-2"
         >
-          <div
-            class="emotion-5"
+          <p
+            class="emotion-3"
           >
-            <a
-              class="emotion-6"
-              href="/theme/presets/style-presets/"
+            Presets
+          </p>
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/theme/presets/style-presets/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    Style presets
+                    <span
+                      class="emotion-9"
+                    >
+                      Style presets
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <a
-              class="emotion-6"
-              href="/theme/presets/transition-presets/"
+              </a>
+            </div>
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/theme/presets/transition-presets/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    Transition presets
+                    <span
+                      class="emotion-9"
+                    >
+                      Transition presets
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <a
-              class="emotion-6"
-              href="/theme/presets/typography-presets/"
+              </a>
+            </div>
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/theme/presets/typography-presets/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    Typography presets
+                    <span
+                      class="emotion-9"
+                    >
+                      Typography presets
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="emotion-2"
-      >
-        <p
-          class="emotion-3"
-        >
-          System
-        </p>
         <div
-          class="emotion-4"
+          class="emotion-2"
         >
-          <div
-            class="emotion-5"
+          <p
+            class="emotion-3"
           >
-            <a
-              class="emotion-6"
-              href="/about/introduction/"
+            System
+          </p>
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/about/introduction/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    About
+                    <span
+                      class="emotion-9"
+                    >
+                      About
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <a
-              class="emotion-6"
-              href="/about/release-notes/"
+              </a>
+            </div>
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/about/release-notes/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    Release notes
+                    <span
+                      class="emotion-9"
+                    >
+                      Release notes
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <a
-              class="emotion-6"
-              href="/theme/theming/component-defaults/"
+              </a>
+            </div>
+            <div
+              class="emotion-5"
             >
-              <span
-                class="emotion-7"
+              <a
+                class="emotion-6"
+                href="/theme/theming/component-defaults/"
               >
                 <span
-                  class="emotion-8"
+                  class="emotion-7"
                 >
                   <span
-                    class="emotion-9"
+                    class="emotion-8"
                   >
-                    Component defaults
+                    <span
+                      class="emotion-9"
+                    >
+                      Component defaults
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
                   </span>
                 </span>
-                <span
-                  class="emotion-8"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
