@@ -73,41 +73,42 @@ const startScreenOptions = [
 ];
 
 export const NewStartScreen = () => (
-  <Grid
-    className="DocSearch-NewStartScreen"
-    xsMargin="space030"
-    smMargin="space030"
-    mdMargin="space030"
-    lgMargin="space030"
-    xlMargin="space030"
-  >
-    {startScreenOptions.map(({category, items}) => (
-      <Cell key={category.name} xs={6}>
-        <TextBlock
-          marginBlockStart="space010"
-          marginBlockEnd="space050"
-          stylePreset="inkContrast"
-          typographyPreset="utilityHeading010"
-        >
-          {category.name}
-        </TextBlock>
-        <Stack
-          spaceInline="space045"
-          marginBlockStart="space010"
-          marginBlockEnd="space080"
-        >
-          {items.map(({name, href}) => (
-            <LinkStandalone
-              key={name}
-              href={href}
-              overrides={{typographyPreset: 'utilityButton020'}}
-            >
-              {name}
-              <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
-            </LinkStandalone>
-          ))}
-        </Stack>
-      </Cell>
-    ))}
-  </Grid>
+  <div className="DocSearch-NewStartScreen">
+    <Grid
+      xsMargin="space030"
+      smMargin="space030"
+      mdMargin="space030"
+      lgMargin="space030"
+      xlMargin="space030"
+    >
+      {startScreenOptions.map(({category, items}) => (
+        <Cell key={category.name} xs={6}>
+          <TextBlock
+            marginBlockStart="space010"
+            marginBlockEnd="space050"
+            stylePreset="inkContrast"
+            typographyPreset="utilityHeading010"
+          >
+            {category.name}
+          </TextBlock>
+          <Stack
+            spaceInline="space045"
+            marginBlockStart="space010"
+            marginBlockEnd="space080"
+          >
+            {items.map(({name, href}) => (
+              <LinkStandalone
+                key={name}
+                href={href}
+                overrides={{typographyPreset: 'utilityButton020'}}
+              >
+                {name}
+                <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
+              </LinkStandalone>
+            ))}
+          </Stack>
+        </Cell>
+      ))}
+    </Grid>
+  </div>
 );

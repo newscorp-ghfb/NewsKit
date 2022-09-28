@@ -50,18 +50,43 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
   );
 
   const themeForStartScreen = useTheme();
+  // eslint-disable-next-line consistent-return
   useEffect(() => {
-    const dropDown = document.querySelector('.DocSearch-Dropdown');
-    const isExisting = document.querySelector('.DocSearch-NewStartScreen');
-    if (dropDown && !isExisting) {
-      dropDown.insertAdjacentHTML(
-        'beforeend',
-        ReactDOMServer.renderToStaticMarkup(
-          <ThemeProvider theme={themeForStartScreen}>
-            <NewStartScreen />
-          </ThemeProvider>,
-        ),
-      );
+    const addStartScreen = () => {
+      const dropDown = document.querySelector('.DocSearch-Dropdown');
+      const isExisting = document.querySelector('.DocSearch-NewStartScreen');
+      if (dropDown && !isExisting) {
+        dropDown.insertAdjacentHTML(
+          'beforeend',
+          ReactDOMServer.renderToStaticMarkup(
+            <ThemeProvider theme={themeForStartScreen}>
+              <NewStartScreen />
+            </ThemeProvider>,
+          ),
+        );
+      }
+    };
+    if (isOpen) {
+      const modal = document.querySelector('.DocSearch-Container');
+      const searchInput = document.querySelector('.DocSearch-Input');
+      if (modal) {
+        addStartScreen();
+      }
+      if (searchInput) {
+        const handleInput: EventListener = event => {
+          const newStartScreen = document.querySelector<HTMLDivElement>(
+            '.DocSearch-NewStartScreen',
+          );
+          if (newStartScreen) {
+            const {value} = event.target as HTMLInputElement;
+            newStartScreen.style.display = value !== '' ? 'none' : 'flex';
+          }
+        };
+        searchInput.addEventListener('input', handleInput);
+        return () => {
+          searchInput.removeEventListener('input', handleInput);
+        };
+      }
     }
   }, [isOpen, themeForStartScreen]);
 
@@ -281,6 +306,19 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
             },
             '.DocSearch-NoResults-Prefill-List > ul > li': {
               listStyle: 'none',
+            },
+            // Make sure the NewStartScreen is always underneath the recent
+            // searches container (without this the order flips as elements are
+            // removed and re-added to the DOM by DocSearch).
+            '.DocSearch-Dropdown': {
+              display: 'flex',
+              flexDirection: 'column',
+            },
+            '.DocSearch-Dropdown-Container': {
+              order: 1,
+            },
+            '.DocSearch-NewStartScreen': {
+              order: 2,
             },
           },
         })}
