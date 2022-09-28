@@ -1,4 +1,5 @@
-import {createTheme} from '..';
+import {createTheme, UncompiledTheme} from '..';
+import {FontConfig} from '../foundations/fonts';
 
 describe('themeing functions', () => {
   describe('createTheme', () => {
@@ -47,6 +48,48 @@ describe('themeing functions', () => {
         lg: 1024,
         xl: 1440,
       });
+    });
+
+    test('should not merge font family objects', () => {
+      const fontFamilyToken = 'fontFamily010';
+      const baseFontFamily: FontConfig = {
+        fontFamily: 'Base Font Family',
+        fontMetrics: {
+          fontWeight010: {
+            capHeight: 1,
+            ascent: 1,
+            descent: -1,
+            lineGap: 1,
+            unitsPerEm: 1,
+          },
+        },
+      };
+      const overrideFontFamily: FontConfig = {
+        fontFamily: 'Override Font Family',
+        fontMetrics: {
+          fontWeight020: {
+            capHeight: 2,
+            ascent: 2,
+            descent: -2,
+            lineGap: 2,
+            unitsPerEm: 2,
+          },
+        },
+      };
+      expect(
+        createTheme({
+          baseTheme: ({
+            fonts: {
+              [fontFamilyToken]: baseFontFamily,
+            },
+          } as unknown) as UncompiledTheme,
+          overrides: {
+            fonts: {
+              [fontFamilyToken]: overrideFontFamily,
+            },
+          },
+        }),
+      ).toHaveProperty(`fonts.${fontFamilyToken}`, overrideFontFamily);
     });
 
     describe('checkOverrides option', () => {
