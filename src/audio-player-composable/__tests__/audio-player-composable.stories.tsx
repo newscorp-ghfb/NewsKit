@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import * as React from 'react';
 import {
-  AudioPlayerComposable,
+  AudioPlayerComposable as OriginalAudioPlayerComposable,
   AudioPlayerForwardButton,
   AudioPlayerPlayPauseButton,
   AudioPlayerReplayButton,
@@ -12,7 +12,6 @@ import {
   AudioPlayerVolumeControl,
   MuteButtonIconProps,
   AudioPlayerPlaybackSpeedControl,
-  AudioPlayerVolumeControlOverridesProps,
   useAudioPlayerContext,
 } from '..';
 import {
@@ -39,6 +38,12 @@ import {useBreakpointKey} from '../../utils/hooks';
 import {Flag} from '../../flag';
 import {styled} from '../../utils';
 import {Button} from '../../button';
+import {AudioPlayerComposableProps} from '../types';
+import {
+  DISABLE_ANIMATIONS_SCRIPT,
+  useAllPlayersCanPlayCheck,
+  VisualTestAudioPlayer,
+} from '../../utils/audio-tests';
 
 const StyledPage = styled.div`
   padding-left: 20px;
@@ -152,6 +157,18 @@ const myCustomTheme = createTheme({
     },
   },
 });
+const volumeTheme = createTheme({
+  name: 'my-custom-volume-theme',
+  overrides: {
+    stylePresets: {
+      customPointerStylePreset: {
+        base: {
+          backgroundColor: 'transparent',
+        },
+      },
+    },
+  },
+});
 
 const VerticalContainer = styled.div`
   display: inline-flex;
@@ -194,15 +211,17 @@ const fullAudioPlayerLiveAreasMobile = `
   volume      prev      backward  play      forward   next
 `;
 
-const AudioPlayerFullRecorded = (props: {
-  ariaLandmark: string;
-  src?: string;
-  autoPlay?: boolean;
-}) => {
-  const breakpointKey = useBreakpointKey();
+const AudioPlayerComposable = (props: AudioPlayerComposableProps) => (
+  <VisualTestAudioPlayer comp={OriginalAudioPlayerComposable} props={props} />
+);
 
+const AudioPlayerFullRecorded = ({
+  src,
+  ...rest
+}: Partial<AudioPlayerComposableProps>) => {
+  const breakpointKey = useBreakpointKey();
   return (
-    <AudioPlayerComposable src={AUDIO_SRC} {...props}>
+    <AudioPlayerComposable src={src !== undefined ? src : AUDIO_SRC} {...rest}>
       <GridLayout
         columns={{
           xs: 'auto 1fr auto auto auto 1fr',
@@ -298,11 +317,7 @@ const AudioPlayerFullRecorded = (props: {
   );
 };
 
-const AudioPlayerFullLive = (props: {
-  ariaLandmark: string;
-  src?: string;
-  autoPlay?: boolean;
-}) => {
+const AudioPlayerFullLive = (props: Partial<AudioPlayerComposableProps>) => {
   const breakpointKey = useBreakpointKey();
   return (
     <AudioPlayerComposable src={LIVE_AUDIO_SRC} live {...props}>
@@ -389,11 +404,9 @@ const AudioPlayerFullLive = (props: {
   );
 };
 
-const AudioPlayerInlineRecorded = (props: {
-  ariaLandmark: string;
-  src?: string;
-  overrides?: AudioPlayerVolumeControlOverridesProps;
-}) => {
+const AudioPlayerInlineRecorded = (
+  props: Partial<AudioPlayerComposableProps>,
+) => {
   const breakpointKey = useBreakpointKey();
   return (
     <AudioPlayerComposable src={AUDIO_SRC} {...props}>
@@ -403,7 +416,6 @@ const AudioPlayerInlineRecorded = (props: {
         alignItems="center"
       >
         <AudioPlayerVolumeControl
-          {...props}
           layout={breakpointKey === 'xs' ? 'collapsed' : 'horizontal'}
         />
         <AudioPlayerPlayPauseButton size="small" />
@@ -419,7 +431,8 @@ const AudioPlayerInlineRecorded = (props: {
     </AudioPlayerComposable>
   );
 };
-const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
+
+const AudioPlayerInlineLive = (props: Partial<AudioPlayerComposableProps>) => (
   <AudioPlayerComposable src={LIVE_AUDIO_SRC} live {...props}>
     <GridLayout
       columns="auto auto auto"
@@ -428,7 +441,18 @@ const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
       justifyContent="flex-start"
     >
       <AudioPlayerPlayPauseButton size="small" />
-      <AudioPlayerVolumeControl layout="vertical" muteButtonSize="small" />
+      <AudioPlayerVolumeControl
+        layout="vertical"
+        overrides={{
+          popover: {
+            pointer: {
+              size: 'sizing080',
+              stylePreset: 'customPointerStylePreset',
+            },
+          },
+        }}
+        muteButtonSize="small"
+      />
       <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
         <IconFilledGraphicEq />
         Live
@@ -499,150 +523,191 @@ const AudioPlayerPlaybackSpeedTriggerComponent = (props: {
   );
 };
 
-export const AudioPlayer = () => (
-  <StyledPage>
-    <StorybookSubHeading>Audio Player - full recorded</StorybookSubHeading>
-    <AudioPlayerFullRecorded ariaLandmark="audio player full recorded" />
-    <br />
-    <StorybookSubHeading>Audio Player - full live</StorybookSubHeading>
-    <AudioPlayerFullLive ariaLandmark="audio player full live" />
-    <br />
-    <br />
-    <StorybookSubHeading>
-      Audio Player - inline recorded-expanded
-    </StorybookSubHeading>
-    <AudioPlayerInlineRecorded ariaLandmark="audio player inline recorded" />
-    <br />
-    <br />
-    <StorybookSubHeading>Audio Player - inline live</StorybookSubHeading>
-    <AudioPlayerInlineLive ariaLandmark="audio player inline live" />
-  </StyledPage>
-);
-AudioPlayer.storyName = 'audio-player';
-AudioPlayer.parameters = {eyes: {waitBeforeCapture: 5000}};
-
-export const AudioSubComponents = () => (
-  <StyledPage>
-    <StorybookHeading>Audio Player - subcomponents</StorybookHeading>
-
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player time display"
-    >
-      <GridLayout
-        columns="1fr 1fr 1fr"
-        rows="1fr 1fr 1fr 1fr"
-        rowGap="16px"
-        columnGap="20px"
-      >
-        <GridLayoutItem>
-          <StorybookSubHeading>currentTime</StorybookSubHeading>
-          <AudioPlayerTimeDisplay
-            format={({currentTime}) => calculateTime(currentTime)}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>duration</StorybookSubHeading>
-          <AudioPlayerTimeDisplay
-            format={({duration}) => calculateTime(duration)}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>live</StorybookSubHeading>
-          <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
-            <IconFilledGraphicEq />
-            Live
-          </Flag>
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>default</StorybookSubHeading>
-          <AudioPlayerTimeDisplay />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>Play/Pause</StorybookSubHeading>
-          <AudioPlayerPlayPauseButton
-            onClick={() => console.log('customer click function')}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>SkipNext</StorybookSubHeading>
-          <AudioPlayerSkipNextButton
-            onClick={() => console.log('on skip Next track')}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
-          <AudioPlayerSkipPreviousButton
-            onClick={() => console.log('on skip Next track')}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>Forward</StorybookSubHeading>
-          <AudioPlayerForwardButton />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>Replay</StorybookSubHeading>
-          <AudioPlayerReplayButton />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>Playback Speed (modal)</StorybookSubHeading>
-          <AudioPlayerPlaybackSpeedControl useModal />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>Playback Speed (popover)</StorybookSubHeading>
-          <AudioPlayerPlaybackSpeedControl />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>
-            Playback Speed (custom trigger)
-          </StorybookSubHeading>
-          <AudioPlayerPlaybackSpeedControl>
-            <Button
-              overrides={{stylePreset: 'buttonOutlinedSecondary'}}
-              size="small"
-            >
-              Speed
-            </Button>
-          </AudioPlayerPlaybackSpeedControl>
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>Collapsed Volume Control</StorybookSubHeading>
-          <AudioPlayerVolumeControl layout="collapsed" />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>Expanded Volume Control</StorybookSubHeading>
-          <AudioPlayerVolumeControl layout="horizontal-expanded" />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>Volume Control</StorybookSubHeading>
-          <AudioPlayerVolumeControl layout="horizontal" />
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
-          <VerticalContainer>
-            <AudioPlayerVolumeControl layout="vertical" />
-          </VerticalContainer>
-        </GridLayoutItem>
-        <GridLayoutItem column="1/-1">
-          <StorybookSubHeading>SeekBar</StorybookSubHeading>
-          <AudioPlayerSeekBar />
-        </GridLayoutItem>
-      </GridLayout>
-    </AudioPlayerComposable>
-  </StyledPage>
-);
-AudioSubComponents.storyName = 'audio-sub-components';
-AudioSubComponents.parameters = {eyes: {waitBeforeCapture: 5000}};
-
-export const AudioPlayerWithInitialProps = () => {
-  const breakpointKey = useBreakpointKey();
+export const StoryAudioPlayer = () => {
+  const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(4);
   return (
     <StyledPage>
+      {allPlayersCanPlay && <div id="storyAudioPlayerReady" />}
+      <StorybookSubHeading>Audio Player - full recorded</StorybookSubHeading>
+      <AudioPlayerFullRecorded
+        ariaLandmark="audio player full recorded"
+        onCanPlay={onCanPlay}
+      />
+      <br />
+      <StorybookSubHeading>Audio Player - full live</StorybookSubHeading>
+      <AudioPlayerFullLive
+        ariaLandmark="audio player full live"
+        onCanPlay={onCanPlay}
+      />
+      <br />
+      <br />
+      <StorybookSubHeading>
+        Audio Player - inline recorded-expanded
+      </StorybookSubHeading>
+      <AudioPlayerInlineRecorded
+        ariaLandmark="audio player inline recorded"
+        onCanPlay={onCanPlay}
+      />
+      <br />
+      <br />
+      <StorybookSubHeading>Audio Player - inline live</StorybookSubHeading>
+      <AudioPlayerInlineLive
+        ariaLandmark="audio player inline live"
+        onCanPlay={onCanPlay}
+      />
+    </StyledPage>
+  );
+};
+StoryAudioPlayer.storyName = 'audio-player';
+StoryAudioPlayer.parameters = {
+  eyes: {
+    waitBeforeCapture: '#storyAudioPlayerReady',
+  },
+};
+
+export const StoryAudioSubComponents = () => {
+  const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
+  return (
+    <StyledPage>
+      {allPlayersCanPlay && <div id="storyAudioSubComponentsReady" />}
+      <StorybookHeading>Audio Player - subcomponents</StorybookHeading>
+
+      <AudioPlayerComposable
+        src={AUDIO_SRC}
+        ariaLandmark="audio player time display"
+        onCanPlay={onCanPlay}
+      >
+        <GridLayout
+          columns="1fr 1fr 1fr"
+          rows="1fr 1fr 1fr 1fr"
+          rowGap="16px"
+          columnGap="20px"
+        >
+          <GridLayoutItem>
+            <StorybookSubHeading>currentTime</StorybookSubHeading>
+            <AudioPlayerTimeDisplay
+              format={({currentTime}) => calculateTime(currentTime)}
+            />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>duration</StorybookSubHeading>
+            <AudioPlayerTimeDisplay
+              format={({duration}) => calculateTime(duration)}
+            />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>live</StorybookSubHeading>
+            <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
+              <IconFilledGraphicEq />
+              Live
+            </Flag>
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>default</StorybookSubHeading>
+            <AudioPlayerTimeDisplay />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Play/Pause</StorybookSubHeading>
+            <AudioPlayerPlayPauseButton
+              onClick={() => console.log('customer click function')}
+            />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>SkipNext</StorybookSubHeading>
+            <AudioPlayerSkipNextButton
+              onClick={() => console.log('on skip Next track')}
+            />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
+            <AudioPlayerSkipPreviousButton
+              onClick={() => console.log('on skip Next track')}
+            />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Forward</StorybookSubHeading>
+            <AudioPlayerForwardButton />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Replay</StorybookSubHeading>
+            <AudioPlayerReplayButton />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Playback Speed (modal)</StorybookSubHeading>
+            <AudioPlayerPlaybackSpeedControl useModal />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Playback Speed (popover)</StorybookSubHeading>
+            <AudioPlayerPlaybackSpeedControl />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>
+              Playback Speed (custom trigger)
+            </StorybookSubHeading>
+            <AudioPlayerPlaybackSpeedControl>
+              <Button
+                overrides={{stylePreset: 'buttonOutlinedSecondary'}}
+                size="small"
+              >
+                Speed
+              </Button>
+            </AudioPlayerPlaybackSpeedControl>
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Collapsed Volume Control</StorybookSubHeading>
+            <AudioPlayerVolumeControl layout="collapsed" />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Expanded Volume Control</StorybookSubHeading>
+            <AudioPlayerVolumeControl layout="horizontal-expanded" />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Volume Control</StorybookSubHeading>
+            <AudioPlayerVolumeControl layout="horizontal" />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
+            <VerticalContainer>
+              <AudioPlayerVolumeControl
+                layout="vertical"
+                overrides={{
+                  popover: {
+                    distance: 'space050',
+                    pointer: {
+                      size: 'sizing080',
+                      stylePreset: 'customPointerStylePreset',
+                    },
+                  },
+                }}
+              />
+            </VerticalContainer>
+          </GridLayoutItem>
+          <GridLayoutItem column="1/-1">
+            <StorybookSubHeading>SeekBar</StorybookSubHeading>
+            <AudioPlayerSeekBar />
+          </GridLayoutItem>
+        </GridLayout>
+      </AudioPlayerComposable>
+    </StyledPage>
+  );
+};
+StoryAudioSubComponents.storyName = 'audio-player-sub-components';
+StoryAudioSubComponents.parameters = {
+  eyes: {waitBeforeCapture: '#storyAudioSubComponentsReady'},
+};
+
+export const StoryAudioPlayerWithInitialProps = () => {
+  const breakpointKey = useBreakpointKey();
+  const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
+  return (
+    <StyledPage>
+      {allPlayersCanPlay && <div id="storyAudioPlayerWithInitialPropsReady" />}
       <StorybookHeading>Audio Player - initial prop</StorybookHeading>
       <AudioPlayerComposable
         src={AUDIO_SRC}
         initialTime={50}
         initialVolume={0.2}
+        onCanPlay={onCanPlay}
       >
         <GridLayout
           columns={{
@@ -694,19 +759,24 @@ export const AudioPlayerWithInitialProps = () => {
     </StyledPage>
   );
 };
-AudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
-AudioPlayerWithInitialProps.parameters = {eyes: {include: false}};
-
-export const AudioPlayerOverrides = () => {
+StoryAudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
+StoryAudioPlayerWithInitialProps.parameters = {
+  eyes: {waitBeforeCapture: '#storyAudioPlayerWithInitialPropsReady'},
+};
+export const StoryAudioPlayerOverrides = () => {
   const breakpointKey = useBreakpointKey();
+  const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(5);
   return (
     <StyledPage>
+      {allPlayersCanPlay && <div id="storyAudioPlayerOverridesReady" />}
       <StorybookSubHeading>Audio player with overrides</StorybookSubHeading>
 
       <ThemeProvider theme={myCustomTheme}>
         <AudioPlayerComposable
           src={AUDIO_SRC}
           ariaLandmark="audio player overrides"
+          id="apc-overrides"
+          onCanPlay={onCanPlay}
         >
           <GridLayout
             columns={{
@@ -891,6 +961,7 @@ export const AudioPlayerOverrides = () => {
         <AudioPlayerComposable
           src={AUDIO_SRC}
           ariaLandmark="audio player vertical volume control overrides"
+          onCanPlay={onCanPlay}
         >
           <VerticalContainer>
             <AudioPlayerVolumeControl
@@ -931,6 +1002,7 @@ export const AudioPlayerOverrides = () => {
         <AudioPlayerComposable
           src={AUDIO_SRC}
           ariaLandmark="audio player mutebutton icon prop overrides"
+          onCanPlay={onCanPlay}
         >
           <AudioPlayerVolumeControl
             muteButtonSize="medium"
@@ -954,6 +1026,7 @@ export const AudioPlayerOverrides = () => {
         <AudioPlayerComposable
           src={AUDIO_SRC}
           ariaLandmark="audio player mutebutton icon overrides"
+          onCanPlay={onCanPlay}
         >
           <AudioPlayerVolumeControl
             muteButtonSize="medium"
@@ -975,6 +1048,7 @@ export const AudioPlayerOverrides = () => {
         <AudioPlayerComposable
           src={AUDIO_SRC}
           ariaLandmark="audio player mutebutton component overrides"
+          onCanPlay={onCanPlay}
         >
           <AudioPlayerVolumeControl
             muteButtonSize="medium"
@@ -986,57 +1060,91 @@ export const AudioPlayerOverrides = () => {
           />
         </AudioPlayerComposable>
       </ThemeProvider>
+      <ThemeProvider theme={volumeTheme}>
+        <StorybookSubHeading>
+          Volume control vertical with distance between button and slider
+        </StorybookSubHeading>
+        <AudioPlayerComposable
+          src={AUDIO_SRC}
+          ariaLandmark="audio player distance between iconbutton and slider"
+        >
+          <AudioPlayerVolumeControl
+            layout="vertical"
+            overrides={{
+              popover: {
+                distance: 'space050',
+                pointer: {
+                  size: 'sizing080',
+                  stylePreset: 'customPointerStylePreset',
+                },
+              },
+            }}
+          />
+        </AudioPlayerComposable>
+      </ThemeProvider>
     </StyledPage>
   );
 };
-AudioPlayerOverrides.storyName = 'audio-player-overrides';
-AudioPlayerOverrides.parameters = {eyes: {waitBeforeCapture: 5000}};
+StoryAudioPlayerOverrides.storyName = 'audio-player-overrides';
+StoryAudioPlayerOverrides.parameters = {
+  eyes: {waitBeforeCapture: '#storyAudioPlayerOverridesReady'},
+};
 
-export const AudioPlayPauseButtonAutoplay = () => (
+export const StoryAudioPlayerAutoplay = () => (
   <StyledPage>
     <StorybookSubHeading>Autoplay</StorybookSubHeading>
     <AudioPlayerFullRecorded ariaLandmark="audio player autoplay" autoPlay />
   </StyledPage>
 );
-AudioPlayPauseButtonAutoplay.storyName = 'audio-play-pause-button-autoplay';
-AudioPlayPauseButtonAutoplay.parameters = {eyes: {waitBeforeCapture: 5000}};
+StoryAudioPlayerAutoplay.storyName = 'audio-player-play-autoplay';
+StoryAudioPlayerAutoplay.parameters = {eyes: {include: false}};
 
-export const AudioPlayerPlaybackSpeedTriggerButton = () => (
-  <StyledPage>
-    <StorybookHeading>
-      Audio Player - playback speed control trigger overrides
-    </StorybookHeading>
-    <div style={{marginTop: 280}}>
-      <StorybookSubHeading>
-        playback speed control custom trigger button
-      </StorybookSubHeading>
-      <AudioPlayerComposable
-        ariaLandmark="audio player custom playback trigger"
-        src={AUDIO_SRC}
-      >
-        <AudioPlayerPlaybackSpeedTriggerComponent />
-      </AudioPlayerComposable>
-      <br />
-      <br />
-      <StorybookSubHeading>
-        playback speed control custom trigger button with a leading icon
-      </StorybookSubHeading>
-      <AudioPlayerComposable
-        ariaLandmark="audio player custom playback trigger with icon"
-        src={AUDIO_SRC}
-      >
-        <AudioPlayerPlaybackSpeedTriggerComponent withLeadingIcon />
-      </AudioPlayerComposable>
-    </div>
-  </StyledPage>
-);
-AudioPlayerPlaybackSpeedTriggerButton.storyName =
+export const StoryAudioPlayerPlaybackSpeedTriggerButton = () => {
+  const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(2);
+  return (
+    <StyledPage>
+      {allPlayersCanPlay && (
+        <div id="storyAudioPlayerPlaybackSpeedTriggerButtonReady" />
+      )}
+      <StorybookHeading>
+        Audio Player - playback speed control trigger overrides
+      </StorybookHeading>
+      <div style={{marginTop: 280}}>
+        <StorybookSubHeading>
+          playback speed control custom trigger button
+        </StorybookSubHeading>
+        <AudioPlayerComposable
+          ariaLandmark="audio player custom playback trigger"
+          src={AUDIO_SRC}
+          onCanPlay={onCanPlay}
+        >
+          <AudioPlayerPlaybackSpeedTriggerComponent />
+        </AudioPlayerComposable>
+        <br />
+        <br />
+        <StorybookSubHeading>
+          playback speed control custom trigger button with a leading icon
+        </StorybookSubHeading>
+        <AudioPlayerComposable
+          ariaLandmark="audio player custom playback trigger with icon"
+          src={AUDIO_SRC}
+          onCanPlay={onCanPlay}
+        >
+          <AudioPlayerPlaybackSpeedTriggerComponent withLeadingIcon />
+        </AudioPlayerComposable>
+      </div>
+    </StyledPage>
+  );
+};
+StoryAudioPlayerPlaybackSpeedTriggerButton.storyName =
   'audio-player-playback-speed-trigger-button';
-AudioPlayerPlaybackSpeedTriggerButton.parameters = {
-  eyes: {waitBeforeCapture: 5000},
+StoryAudioPlayerPlaybackSpeedTriggerButton.parameters = {
+  eyes: {
+    waitBeforeCapture: '#storyAudioPlayerPlaybackSpeedTriggerButtonReady',
+  },
 };
 
-export const AudioPlayerKeyboard = () => (
+export const StoryAudioPlayerKeyboard = () => (
   <StyledPage>
     <StorybookSubHeading>Audio Player Keyboard shortcuts</StorybookSubHeading>
     <AudioPlayerFullRecorded ariaLandmark="audio player keyboard" />
@@ -1233,30 +1341,73 @@ export const AudioPlayerKeyboard = () => (
     </GridLayout>
   </StyledPage>
 );
-AudioPlayerKeyboard.storyName = 'audio-keyboard-shortcuts';
+StoryAudioPlayerKeyboard.storyName = 'audio-player-keyboard-shortcuts';
+StoryAudioPlayerKeyboard.parameters = {eyes: {include: false}};
 
-export const AudioPlayerVolumeControlLayout = () => (
+export const StoryAudioPlayerVolumeControlLayout = () => {
+  const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
+  return (
+    <StyledPage>
+      {allPlayersCanPlay && (
+        <div id="storyAudioPlayerVolumeControlLayoutReady" />
+      )}
+      <StorybookSubHeading>Volume control horizontal</StorybookSubHeading>
+      <AudioPlayerComposable
+        src={AUDIO_SRC}
+        ariaLandmark="audio player volume control horizontal"
+        onCanPlay={onCanPlay}
+      >
+        <AudioPlayerVolumeControl layout="horizontal" />
+
+        <StorybookSubHeading>
+          Volume control horizontal-expanded
+        </StorybookSubHeading>
+        <AudioPlayerVolumeControl layout="horizontal-expanded" />
+
+        <StorybookSubHeading>Volume control Collapsed</StorybookSubHeading>
+        <AudioPlayerVolumeControl layout="collapsed" />
+
+        <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
+        <AudioPlayerVolumeControl layout="vertical" />
+        <StorybookSubHeading>
+          Volume control vertical-no pointer and hover in between button and
+          popover
+        </StorybookSubHeading>
+        <AudioPlayerVolumeControl
+          layout="vertical"
+          overrides={{
+            popover: {
+              distance: 'space050',
+              pointer: {
+                size: 'sizing080',
+                stylePreset: 'customPointerStylePreset',
+              },
+            },
+          }}
+        />
+      </AudioPlayerComposable>
+    </StyledPage>
+  );
+};
+
+StoryAudioPlayerVolumeControlLayout.storyName =
+  'audio-player-volume-control-layout';
+StoryAudioPlayerVolumeControlLayout.parameters = {
+  eyes: {waitBeforeCapture: '#storyAudioPlayerVolumeControlLayoutReady'},
+};
+
+export const StoryAudioPlayerLoadingState = () => (
   <StyledPage>
-    <StorybookSubHeading>Volume control horizontal</StorybookSubHeading>
-    <AudioPlayerComposable
-      src={AUDIO_SRC}
-      ariaLandmark="audio player volume control horizontal"
-    >
-      <AudioPlayerVolumeControl layout="horizontal" />
-
-      <StorybookSubHeading>
-        Volume control horizontal-expanded
-      </StorybookSubHeading>
-      <AudioPlayerVolumeControl layout="horizontal-expanded" />
-
-      <StorybookSubHeading>Volume control Collapsed</StorybookSubHeading>
-      <AudioPlayerVolumeControl layout="collapsed" />
-
-      <StorybookSubHeading>Volume control vertical</StorybookSubHeading>
-      <AudioPlayerVolumeControl layout="vertical" />
-    </AudioPlayerComposable>
+    <StorybookSubHeading>Loading state</StorybookSubHeading>
+    <AudioPlayerFullRecorded ariaLandmark="audio player loading state" src="" />
   </StyledPage>
 );
 
-AudioPlayerVolumeControlLayout.storyName = 'audio-player-volume-control-layout';
-AudioPlayerKeyboard.parameters = {eyes: {waitBeforeCapture: 5000}};
+StoryAudioPlayerLoadingState.storyName = 'audio-player-loading-state';
+StoryAudioPlayerLoadingState.parameters = {
+  eyes: {
+    scriptHooks: {
+      beforeCaptureScreenshot: DISABLE_ANIMATIONS_SCRIPT,
+    },
+  },
+};

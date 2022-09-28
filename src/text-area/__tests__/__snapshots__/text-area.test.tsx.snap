@@ -37,8 +37,19 @@ exports[`TextArea FormInputTextArea render invalid form 1`] = `
 }
 
 .emotion-1:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-1::before {
@@ -120,8 +131,19 @@ exports[`TextArea FormInputTextArea render valid form 1`] = `
 }
 
 .emotion-1:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-1::before {
@@ -219,8 +241,19 @@ exports[`TextArea render default 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -233,8 +266,19 @@ exports[`TextArea render default 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0::before {
@@ -324,8 +368,19 @@ exports[`TextArea render resize: both 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -338,8 +393,19 @@ exports[`TextArea render resize: both 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0::before {
@@ -429,8 +495,19 @@ exports[`TextArea render resize: horizontal 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -443,8 +520,19 @@ exports[`TextArea render resize: horizontal 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0::before {
@@ -534,8 +622,19 @@ exports[`TextArea render resize: none 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -548,8 +647,19 @@ exports[`TextArea render resize: none 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0::before {
@@ -639,8 +749,19 @@ exports[`TextArea render resize: vertical 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -653,8 +774,19 @@ exports[`TextArea render resize: vertical 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0::before {
@@ -715,8 +847,8 @@ exports[`TextArea render size: large 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -744,8 +876,19 @@ exports[`TextArea render size: large 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -758,8 +901,19 @@ exports[`TextArea render size: large 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0::before {
@@ -849,8 +1003,19 @@ exports[`TextArea render size: medium 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -863,8 +1028,19 @@ exports[`TextArea render size: medium 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0::before {
@@ -954,8 +1130,19 @@ exports[`TextArea render size: small 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:disabled {
@@ -968,8 +1155,19 @@ exports[`TextArea render size: small 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0::before {
@@ -1111,8 +1309,19 @@ exports[`TextArea render state: invalid 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0::before {
@@ -1187,8 +1396,19 @@ exports[`TextArea render state: valid 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0::before {

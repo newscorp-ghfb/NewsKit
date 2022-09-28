@@ -12,6 +12,7 @@ import {
   ComponentAPISection,
   InteractiveDemoSection,
   OptionsSection,
+  TutorialsSection,
   RelatedComponentsSection,
   SEOSection,
   StatesSection,
@@ -40,6 +41,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   behaviors,
   codeExamples,
   usage,
+  tutorials,
   accessibility,
   seo,
   componentAPI,
@@ -74,6 +76,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
       {behaviors && <BehaviorsSection {...behaviors} />}
       {codeExamples && <CodeExamplesSection {...codeExamples} />}
       {usage && <UsageSection {...usage} />}
+      {tutorials && <TutorialsSection {...tutorials} />}
       {commonSection && <CommonSection {...commonSection} />}
       {accessibility && <AccessibilitySection {...accessibility} />}
       {seo && <SEOSection {...seo} />}

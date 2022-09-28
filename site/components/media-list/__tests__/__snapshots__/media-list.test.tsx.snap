@@ -110,6 +110,10 @@ exports[`Media List renders with custom layout 1`] = `
   box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
 }
 
+.emotion-4 svg {
+  display: block;
+}
+
 .emotion-5 {
   box-sizing: border-box;
   display: block;
@@ -316,6 +320,10 @@ exports[`Media List renders with custom layout 1`] = `
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   height: 100%;
+}
+
+.emotion-14 svg {
+  display: block;
 }
 
 .emotion-16 {
@@ -570,6 +578,10 @@ exports[`Media List renders with default layout 1`] = `
   box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
 }
 
+.emotion-4 svg {
+  display: block;
+}
+
 .emotion-5 {
   box-sizing: border-box;
   display: block;
@@ -741,6 +753,10 @@ exports[`Media List renders with default layout 1`] = `
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   height: 100%;
+}
+
+.emotion-14 svg {
+  display: block;
 }
 
 .emotion-16 {
@@ -1079,6 +1095,10 @@ exports[`Media List renders with feature cardscards 1`] = `
   .emotion-7 {
     min-height: 304px;
   }
+}
+
+.emotion-7 svg {
+  display: block;
 }
 
 .emotion-8 {
@@ -1453,6 +1473,10 @@ exports[`Media List renders with feature cardscards 1`] = `
   }
 }
 
+.emotion-26 svg {
+  display: block;
+}
+
 .emotion-27 {
   box-sizing: border-box;
   display: block;
@@ -1567,6 +1591,10 @@ exports[`Media List renders with feature cardscards 1`] = `
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   height: 100%;
   height: 100%;
+}
+
+.emotion-48 svg {
+  display: block;
 }
 
 <div

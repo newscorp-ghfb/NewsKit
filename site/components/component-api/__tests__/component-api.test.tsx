@@ -7,6 +7,7 @@ describe('ComponentAPI', () => {
     const props: ComponentAPIProps = {
       components: [
         {
+          title: 'component',
           propsRows: [
             {
               name: 'children',

@@ -427,55 +427,6 @@ export const stylePresets = {
     },
   },
 
-  contributeOldCardContainerInteractive: {
-    base: {
-      backgroundColor: '{{colors.interfaceBrand050}}',
-      borderRadius: '{{borders.borderRadiusRounded030}}',
-    },
-    hover: {
-      boxShadow: '{{shadows.shadow040}}',
-    },
-  },
-  contributeOldCardContainerNonInteractive: {
-    base: {
-      backgroundColor: '{{colors.interfaceBrand050}}',
-      borderRadius: '{{borders.borderRadiusRounded020}}',
-    },
-  },
-  contributeOldCardMedia: {
-    base: {
-      backgroundImage: 'url(static/landing/feature-card-contribute-old.svg)',
-    },
-  },
-  contributeOldCardButton: {
-    base: {
-      backgroundColor: '{{colors.interactiveInverse030}}',
-      borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
-    },
-    hover: {
-      backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkWhiteContrast}}',
-      iconColor: '{{colors.inkWhiteContrast}}',
-    },
-    active: {
-      backgroundColor: '{{colors.interactiveInverse050}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
-    },
-    disabled: {
-      backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
-    },
-    loading: {
-      backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkBrand020}}',
-      iconColor: '{{colors.inkBrand020}}',
-    },
-  },
-
   contributeCardContainerInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
@@ -1102,6 +1053,54 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusRounded020}}',
       color: '{{colors.inkInverse}}',
       backgroundColor: '{{colors.inkInformative}}',
+    },
+  },
+  heroInteractiveSliderTrack: {
+    base: {
+      backgroundColor: '{{colors.inkInverse}}',
+      boxShadow: '{{shadows.shadow040}}',
+      borderRadius: '{{borders.borderRadiusRounded050}}',
+    },
+  },
+  heroInteractiveForm: {
+    base: {
+      backgroundColor: '{{colors.inkInverse}}',
+      boxShadow: '{{shadows.shadow040}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+  heroInteractiveFormInput: {
+    base: {
+      backgroundColor: '{{colors.interactiveInput010}}',
+      borderColor: '{{colors.interactiveInput020}}',
+      borderStyle: 'solid',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkBase}}',
+    },
+  },
+  heroInteractiveSelectionList: {
+    base: {
+      backgroundColor: '{{colors.inkInverse}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+      boxShadow: '{{shadows.shadow050}}',
+    },
+  },
+  heroInteractiveSelectButton: {
+    base: {
+      backgroundColor: '{{colors.interactiveInput010}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interactiveInput020}}',
+      borderWidth: '{{borders.borderWidthDefault}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkBase}}',
+    },
+  },
+  heroInteractiveSelectPanel: {
+    base: {
+      backgroundColor: '{{colors.inkInverse}}',
+      borderRadius: '{{borders.borderRadiusRounded010}}',
+      boxShadow: '{{shadows.shadow050}}',
     },
   },
 };

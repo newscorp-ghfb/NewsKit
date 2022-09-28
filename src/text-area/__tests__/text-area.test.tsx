@@ -1,8 +1,13 @@
 import React from 'react';
+import {fireEvent} from '@testing-library/react';
 import {TextAreaProps, TextArea} from '..';
-import {renderToFragmentWithTheme} from '../../test/test-utils';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
 import {FormInput, FormInputTextArea} from '../../form/form-input';
 import {Form} from '../../form';
+import {EventTrigger, InstrumentationProvider} from '../../instrumentation';
 
 describe('TextArea', () => {
   test('render default', () => {
@@ -44,6 +49,34 @@ describe('TextArea', () => {
       const fragment = renderToFragmentWithTheme(TextArea, props);
       expect(fragment).toMatchSnapshot();
     });
+  });
+
+  test('fires focus event onFocus with custom originator', async () => {
+    const mockFireEvent = jest.fn();
+    const customFocusEvent = jest.fn();
+
+    const props: TextAreaProps = {
+      eventContext: {event: 'other event data'},
+      eventOriginator: 'custom-originator',
+      onFocus: customFocusEvent,
+    };
+
+    const textArea = await renderWithTheme((() => (
+      <InstrumentationProvider fireEvent={mockFireEvent}>
+        <TextArea {...props} data-testid="text-area" />
+      </InstrumentationProvider>
+    )) as React.FC).findByTestId('text-area');
+
+    fireEvent.focus(textArea);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'custom-originator',
+      trigger: EventTrigger.Focus,
+      context: {
+        event: 'other event data',
+      },
+    });
+    expect(customFocusEvent).toHaveBeenCalled();
   });
 
   describe('FormInputTextArea', () => {

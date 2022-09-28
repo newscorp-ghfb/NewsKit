@@ -488,7 +488,11 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -502,7 +506,11 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outlines.outlineColorDefault}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -1434,6 +1442,7 @@ Object {
         "paddingBlock": "space030",
         "paddingInline": "space030",
       },
+      "distance": "space030",
       "stylePreset": "audioPlayerVolumeControlPopover",
     },
     "slider": Object {
@@ -2701,8 +2710,8 @@ Object {
       "height": "sizing110",
       "marginBlockEnd": "space020",
       "minHeight": "sizing090",
-      "paddingBlock": "space030",
-      "paddingInline": "space030",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "stylePreset": "inputField",
       "typographyPreset": "utilityBody030",
       "width": "100%",
@@ -4773,7 +4782,11 @@ Object {
     },
     "invalid:focus": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
-      "borderColor": "{{outlines.outlineColorDefault}}",
+      "borderColor": "{{colors.transparent}}",
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "invalid:hover": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
@@ -4787,7 +4800,11 @@ Object {
     },
     "valid:focus": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
-      "borderColor": "{{outlines.outlineColorDefault}}",
+      "borderColor": "{{colors.transparent}}",
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "valid:hover": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",

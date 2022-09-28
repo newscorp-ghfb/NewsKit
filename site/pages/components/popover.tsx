@@ -127,8 +127,8 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               which is measured from the tip of the pointer.
               <br />
               <br />
-              If no pointer is visible, then the distance to the reference
-              element is reduced to zero.
+              If no pointer is visible, then the distance can still be set via
+              overrides.
             </>
           ),
           media: getIllustrationComponent(
@@ -466,6 +466,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       components: [
         {
+          title: 'Popover',
           propsSummary:
             'The Popover has a range of props that can be used to define an appropriate experience for different use cases.',
           overridesSummary:

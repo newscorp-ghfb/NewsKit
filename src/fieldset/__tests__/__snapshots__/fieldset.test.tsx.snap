@@ -97,8 +97,19 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-2:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:disabled {
@@ -111,8 +122,19 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
@@ -126,6 +148,11 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -785,8 +812,19 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-2:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:disabled {
@@ -799,8 +837,19 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
@@ -814,6 +863,11 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1473,8 +1527,19 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-2:valid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:disabled {
@@ -1487,8 +1552,19 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
@@ -1502,6 +1578,11 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: currentColor;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;

@@ -78,6 +78,24 @@ export default [
             cardTitle: 'Engineering Quickstart Guide',
           },
           {
+            title: 'Grid Layout step-by-step',
+            page: true,
+            id: '/getting-started/code/grid-layout-step-by-step',
+            description:
+              'The grid layout component is a wrapper around CSS grid that maps all CSS grid properties to react props.',
+            illustration: 'guides/grid-layout-guide/hero',
+            cardTitle: 'Grid Layout step-by-step',
+          },
+          {
+            title: 'Form step-by-step',
+            page: true,
+            id: '/getting-started/code/form-step-by-step',
+            description:
+              'Step-by-step guide for engineers to build a form using the form subcomponents.',
+            illustration: 'guides/form-guide/hero',
+            cardTitle: 'Form step-by-step',
+          },
+          {
             title: 'Instrumentation setup',
             page: true,
             id: '/getting-started/code/instrumentation',
@@ -716,7 +734,7 @@ export default [
             page: true,
             id: '/components/text-block',
             description:
-              'A paragraph, which can be used to summarize any text content.',
+              'Text block provides a simple way to display text. It supports text cropping, style presets, and typography presets.',
             illustration: 'components/text-block-illustration',
           },
           {

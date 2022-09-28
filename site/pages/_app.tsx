@@ -123,6 +123,7 @@ export default class MyApp extends App<Props, State> {
     const handlers = [
       instrumentationHandlers.createConsoleHandler(),
       instrumentationHandlers.createTealiumHandler(),
+      instrumentationHandlers.createTealiumTrackHandler(),
     ];
 
     return (
