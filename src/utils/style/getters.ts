@@ -22,6 +22,16 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
 ) => (props: Props) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const applyCrop = (typographyPreset: any) => {
+    // This function finds the fontMetrics defined in the theme for the fontFamily/fontWeight
+    // combination specified in the typographyPreset, and uses them to calculate
+    // the required cropping CSS.
+
+    // Steps:
+    // 1. Lookup the fontFamilyObject in the theme for the typographyPreset's fontFamily.
+    // 2. Lookup the token for the fontWeight specified in the typographyPreset.
+    // 3. Lookup the fontMetrics in the fontFamilyObject for the fontWeight token.
+    // 4. Use the fontMetrics to calculate the cropping CSS.
+
     const {fontSize, lineHeight, fontFamily, fontWeight} = typographyPreset;
 
     //* * Following code to be removed once only Font Metrics will be supported by newsKit
@@ -58,6 +68,12 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
       const fontMetrics =
         (weightToken && fontFamilyObject.fontMetrics![weightToken!]) ||
         fontFamilyObject.fontMetrics!.fontWeight010;
+
+      if (!fontMetrics) {
+        // eslint-disable-next-line no-console
+        console.warn(`No default fontMetrics found for '${fontFamily}'.`);
+        return typographyPreset;
+      }
 
       const cropData = {
         fontSize,

@@ -511,8 +511,27 @@ describe('Popover', () => {
       await applyAsyncStyling();
       expect(el).toHaveAttribute('aria-describedby', `header-${MOCK_ID}`);
     });
-    test('context element has aria-haspopup', () => {
-      const {queryByRole} = renderWithTheme(Popover, defaultProps);
+    test('context element has aria-haspopup as menu', () => {
+      const {queryByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        children: (
+          <button id="customId" aria-haspopup="menu" type="submit">
+            Add
+          </button>
+        ),
+      });
+      const el = queryByRole('button');
+      expect(el).toHaveAttribute('aria-haspopup', 'menu');
+    });
+    test('aria-haspopup should have default value when aria-haspopup is not passed', () => {
+      const {queryByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        children: (
+          <button id="customId" type="submit">
+            Add
+          </button>
+        ),
+      });
       const el = queryByRole('button');
       expect(el).toHaveAttribute('aria-haspopup', 'dialog');
     });
