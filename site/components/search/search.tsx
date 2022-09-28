@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import ReactDOMServer from 'react-dom/server';
 import {DocSearchModal, useDocSearchKeyboardEvents} from '@docsearch/react';
+
 import {
   Global,
   Visible,
@@ -12,8 +13,12 @@ import {
   useTheme,
 } from 'newskit';
 import {createPortal} from 'react-dom';
+import {DocSearchHit} from '@docsearch/react/dist/esm/types';
 import {IconFilledSearch} from '../icons';
 import {Mono} from '../flags';
+import {SearchProps} from './types';
+import {addPathname, ignoreFilter} from './utils';
+import {DocSearchHit as DocSearchHitComponent} from './doc-search-hit';
 
 import '@docsearch/css/dist/style.css';
 import {NewStartScreen} from './new-start-screen';
@@ -21,10 +26,6 @@ import {NewStartScreen} from './new-start-screen';
 const SearchIconContainer = styled(Visible)`
   ${getSpacingCssFromTheme('marginBottom', 'space010')};
 `;
-
-interface SearchProps {
-  sidebarOpen?: boolean;
-}
 
 export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
   const searchButtonRef = React.useRef(null);
@@ -152,6 +153,10 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
             getMissingResultsUrl={({query}) =>
               `https://github.com/newscorp-ghfb/newskit/issues/new?title=${query}`
             }
+            hitComponent={DocSearchHitComponent}
+            transformItems={(items: DocSearchHit[]) =>
+              items.filter(ignoreFilter).map(addPathname) as DocSearchHit[]
+            }
           />,
           document.body,
         )}
@@ -264,6 +269,10 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
                 border: '1px solid transparent',
                 borderBottomColor: theme.colors.interface020,
               },
+            },
+            '.DocSearch-Hit-Container': {
+              flex: '1',
+              minWidth: '0',
             },
             '.DocSearch-Hit-content-wrapper': {
               paddingLeft: '20px',
