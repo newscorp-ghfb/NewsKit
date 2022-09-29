@@ -35,7 +35,7 @@ const commonPropsRows = [
   },
   {
     name: 'resize',
-    type: `resize?: 'none' | 'vertical' | 'horizontal' | 'both';`,
+    type: ['none', 'vertical', 'horizontal', 'both'],
     default: 'vertical',
     description: (
       <>
@@ -446,7 +446,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
           title: 'Handling multiple text areas',
           description: (
             <>
-              Selection controls (inputs), such as the formInput textArea, can
+              Selection controls (inputs), such as the FormInput TextArea, can
               be grouped together with other selection controls, labels, and
               assistive text together in a fieldset. The fieldset has a caption
               that gives a title attributed to the elements that appear in the
@@ -658,7 +658,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
                 aria-label="Validation"
                 overrides={{marginBlockStart: 'space050'}}
               >
-                Validation only works if the formInput textArea uses the form
+                Validation only works if the FormInput TextArea uses the form
                 component.
               </InlineMessage>
             </>
@@ -798,10 +798,10 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
       ),
       components: [
         {
-          title: 'formInput textArea',
+          title: 'FormInput TextArea',
           summary: (
             <>
-              The formInput textArea has a range of props that can be used to
+              The FormInput TextArea has a range of props that can be used to
               define an appropriate experience for different use cases. Use this
               component within the{' '}
               <Link href="/components/form/">NewsKit form component.</Link>
