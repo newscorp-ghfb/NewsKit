@@ -408,6 +408,14 @@ export default [
             description: 'Lets users enter and edit text.',
             illustration: 'components/text-input-illustration',
           },
+          {
+            title: 'Text Area',
+            page: true,
+            id: '/components/text-area',
+            description:
+              'Text areas allow users to enter and edit multi-line text. They typically appear in forms.',
+            illustration: 'components/text-area-illustration',
+          },
         ],
       },
       {
