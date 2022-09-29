@@ -9,7 +9,7 @@ import Layout, {LayoutProps} from '../../components/layout';
 import {pathToID} from '../../components/illustrations/utils';
 import {docsThemeLight} from '../../theme/doc-theme';
 
-const RUN = false;
+const RUN = true;
 
 if (!process.browser && RUN) {
   // @ts-ignore
@@ -91,22 +91,25 @@ if (!process.browser && RUN) {
     }
 
     let maskCounter = 0;
+    const listOfPaths: string[] = [];
 
     svgComponents.forEach((svgContent, indx) => {
       const filePath = `${imprtPaths[indx]}.svg`;
       const fullPath = `${processDir}/site/public/static/illustrations/${filePath}`;
-      console.log(fullPath);
       ensureDirectoryExistence(fullPath);
 
       const hasMask = svgContent.includes('<mask');
       if (hasMask) {
         console.log(filePath, ' includes mask ');
         maskCounter++;
+        listOfPaths.push(imprtPaths[indx]);
       }
       fs.writeFileSync(fullPath, svgContent, {flag: 'w'});
     });
 
     console.log('Total files with mask', maskCounter);
+    // console.log(listOfPaths);
+    // fs.writeFileSync('./list.txt', listOfPaths.join('\n'), {flag: 'w'});
   })();
 }
 
