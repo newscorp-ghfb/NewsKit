@@ -2,12 +2,15 @@ import React from 'react';
 import {addons, types} from '@storybook/addons';
 import {STORY_CHANGED, STORY_SPECIFIED} from '@storybook/core-events';
 import Helmet from 'react-helmet';
+import {IconButton, Icons} from '@storybook/components';
+
 import {
   Consent,
   Tealium,
   ConsentSettingsLink,
   newskitLightTheme,
   NewsKitProvider,
+  Tooltip,
 } from '../../../src';
 
 const sendEvent = api => {
@@ -60,15 +63,41 @@ const CONFIG = {
 };
 
 const Tool = () => {
-  return (
-    <NewsKitProvider theme={newskitLightTheme}>
-      <ConsentSettingsLink privacyManagerId={CONFIG.privacyManagerId} gdpr>
-        Privacy policy
-      </ConsentSettingsLink>
+  const handleOnClick = React.useCallback(() => {
+    const link = document.querySelector('.privacy-policy-link');
+    if (link) {
+      link.click();
+    }
+  });
 
-      <Tealium {...CONFIG.tealium} reactHelmet={Helmet} />
-      <Consent sourcePointConfigUnified={CONFIG.consent} reactHelmet={Helmet} />
-    </NewsKitProvider>
+  return (
+    <>
+      <NewsKitProvider theme={newskitLightTheme}>
+        <ConsentSettingsLink
+          privacyManagerId={CONFIG.privacyManagerId}
+          gdpr
+          className="privacy-policy-link"
+        >
+          {''}
+        </ConsentSettingsLink>
+        <Tealium {...CONFIG.tealium} reactHelmet={Helmet} />
+        <Consent
+          sourcePointConfigUnified={CONFIG.consent}
+          reactHelmet={Helmet}
+        />
+        <Tooltip content="Privacy Manager" asLabel placement="left">
+          <span>
+            <IconButton
+              key={TOOL_ID}
+              title="Show Privacy Manager"
+              onClick={handleOnClick}
+            >
+              <Icons icon="shield" />
+            </IconButton>
+          </span>
+        </Tooltip>
+      </NewsKitProvider>
+    </>
   );
 };
 
