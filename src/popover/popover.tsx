@@ -25,13 +25,6 @@ import {deepMerge} from '../utils';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 
-const buildContextAriaAttributes: BuildAriaAttributesFn = ({
-  floating: {id, open},
-}) => ({
-  'aria-haspopup': 'dialog',
-  'aria-controls': open ? id : undefined,
-});
-
 const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
   (
     {
@@ -47,6 +40,12 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
     },
     ref,
   ) => {
+    const buildContextAriaAttributes: BuildAriaAttributesFn = ({
+      floating: {id, open},
+    }) => ({
+      'aria-haspopup': children.props['aria-haspopup'] || 'dialog',
+      'aria-controls': open ? id : undefined,
+    });
     const theme = useTheme();
     const closeButtonOverrides: typeof overrides['closeButton'] = {
       ...deepMerge(
