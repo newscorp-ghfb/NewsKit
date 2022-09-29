@@ -33,7 +33,7 @@ const Address = (layoutProps: LayoutProps) => (
   <PatternPageTemplate
     headTags={{
       title: 'Address',
-      description: `Use this type of data entry when there are clear business requirements to collect a user's address. Ask for a user’s physical address for delivery or as part of a billing service.`,
+      description: `Use this type of data entry when there are clear business requirements to collect a user's address. Xin is here.`,
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
