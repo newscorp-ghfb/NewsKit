@@ -5881,5 +5881,13 @@ Object {
       "borderRadius": "{{borders.borderRadiusPill}}",
     },
   },
+  "welcomeBanner": Object {
+    "base": Object {
+      "backgroundImage": "url(./welcome-banner.svg)",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "cover",
+      "borderRadius": "{{borders.borderRadiusRounded020}}",
+    },
+  },
 }
 `;
