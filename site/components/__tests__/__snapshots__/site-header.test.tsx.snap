@@ -1364,6 +1364,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
     >
       <div
         class="emotion-32"
+        data-testid="nav-container"
       >
         <div
           class="emotion-33"
@@ -3106,6 +3107,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
     >
       <div
         class="emotion-32"
+        data-testid="nav-container"
       >
         <div
           class="emotion-33"
@@ -4733,6 +4735,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
     >
       <div
         class="emotion-32"
+        data-testid="nav-container"
       >
         <div
           class="emotion-33"
