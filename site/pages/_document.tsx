@@ -251,6 +251,7 @@ export default class MyDocument extends Document {
               accountId="newsinternational"
               profileId="thetimes.newskit"
               env={isSiteEnvProduction ? 'prod' : 'dev'}
+              reactHelmet={Helmet}
             />
           )}
           <Main />
