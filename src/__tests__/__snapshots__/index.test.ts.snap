@@ -46,6 +46,7 @@ Array [
   "FormController",
   "FormInput",
   "FormInputAssistiveText",
+  "FormInputCharacterCount",
   "FormInputCheckbox",
   "FormInputLabel",
   "FormInputRadioButton",

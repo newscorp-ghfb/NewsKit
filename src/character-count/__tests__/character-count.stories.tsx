@@ -5,10 +5,7 @@ import {getSizingCssFromTheme, styled} from '../../utils/style';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
 
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
+import {StorybookHeading} from '../../test/storybook-comps';
 import {
   Form,
   FormInput,
@@ -19,6 +16,7 @@ import {
 import {Button} from '../../button';
 import {TextArea} from '../../text-area';
 import {useRefWithReRender} from '../../utils/use-ref-with-rerender';
+import {Label} from '../../label';
 
 const Container = styled.div`
   ${getSizingCssFromTheme('margin', {
@@ -45,9 +43,9 @@ export const CharacterCountSizes = () => {
         <Stack stackDistribution="space-between" flow="horizontal-center">
           {Object.entries(refs).map(([size, ref]) => (
             <Block>
-              <StorybookSubHeading>
+              <Label>
                 {`${size.slice(0, 1).toUpperCase()}${size.substring(1)}`}
-              </StorybookSubHeading>
+              </Label>
               <TextArea
                 defaultValue={`${size} text`}
                 ref={ref}
@@ -75,12 +73,12 @@ export const CharacterCountConfig = () => {
       <Container>
         <Stack stackDistribution="space-between" flow="horizontal-center">
           <Block>
-            <StorybookSubHeading>Max length</StorybookSubHeading>
+            <Label>Max length</Label>
             <TextArea ref={maxLengthRef} maxLength={200} />
             <CharacterCount inputRef={maxLengthRef} />
           </Block>
           <Block>
-            <StorybookSubHeading>Min length</StorybookSubHeading>
+            <Label>Min length</Label>
             <TextArea ref={minLengthRef} minLength={20} />
             <CharacterCount inputRef={minLengthRef} />
           </Block>
