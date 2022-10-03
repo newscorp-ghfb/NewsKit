@@ -1,10 +1,20 @@
 import React from 'react';
-import {InlineMessage, toNewsKitIcon, UnorderedList} from 'newskit';
+import {
+  InlineMessage,
+  toNewsKitIcon,
+  UnorderedList,
+  Scroll,
+  ScrollProps,
+  ScrollSnapAlignment,
+  styled,
+} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
+import {Box} from '../../demo-components/scroll/scroll-snap';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
+import {LegacyBlock} from '../../components/legacy-block';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
@@ -43,6 +53,149 @@ const ScrollComponent = (layoutProps: LayoutProps) => (
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/scroll',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2141%3A40757',
+    }}
+    interactiveDemo={{
+      introduction:
+        'This demo allows you to preview the Scroll component, its variations, and configuration options.',
+      playground: {
+        componentName: 'Scroll',
+        component: (state: ScrollProps) => {
+          const Flex = styled.div`
+            display: flex;
+            align-items: center;
+            height: 100%;
+          `;
+          const ContentWrapper = state.snapAlign
+            ? ScrollSnapAlignment
+            : React.Fragment;
+          return (
+            <LegacyBlock width="300px" height="200px">
+              {!state.vertical && (
+                <Scroll {...state}>
+                  <Flex>
+                    {Array.from({length: 10}, (_, i) => (
+                      <ContentWrapper>
+                        <Box>{`Item ${i + 1}`}</Box>
+                      </ContentWrapper>
+                    ))}
+                  </Flex>
+                </Scroll>
+              )}
+              {state.vertical && (
+                <Scroll {...state}>
+                  <ContentWrapper>
+                    <p style={{width: '400px'}}>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Impedit ipsa, molestiae officia ipsum facere blanditiis
+                      iste obcaecati esse, quidem placeat tenetur dicta
+                      distinctio inventore quasi sit sint explicabo quia
+                      maiores. Doloremque sit doloribus incidunt aperiam
+                      recusandae magnam nostrum labore eveniet, perferendis a,
+                      quibusdam, quos earum! Numquam quaerat recusandae commodi
+                      laudantium modi inventore voluptates officiis nesciunt
+                      eius, quis velit voluptatum, quos natus, adipisci nisi!
+                      Laborum eos incidunt maiores eaque obcaecati, itaque
+                      perferendis! Consectetur magnam pariatur amet, enim
+                      recusandae at laborum? Corrupti libero non, in eligendi
+                      ipsum odio fugiat excepturi, architecto nam pariatur
+                      reiciendis adipisci laudantium maiores. Earum quis magnam
+                      consequatur maxime veniam itaque quae eveniet quasi harum
+                      neque, expedita totam tempore aspernatur nostrum maiores
+                      repudiandae suscipit velit quaerat illo! Temporibus
+                      pariatur, enim mollitia animi odio tempore illum
+                      asperiores est soluta. Itaque obcaecati eum molestias
+                      expedita neque. Atque eum sint esse optio in dolore cum
+                      officia iusto inventore ullam nobis culpa ipsum nostrum
+                      aspernatur perferendis recusandae, maiores consectetur
+                      mollitia provident! Placeat voluptatem a natus quod sequi
+                      asperiores nam! Cupiditate illo voluptatum cumque
+                      laudantium quo assumenda ut repudiandae perferendis.
+                      Molestias, beatae sunt deleniti quasi nobis, provident
+                      sequi iste quod corporis incidunt repellat architecto ab
+                      voluptates saepe dolor velit, perspiciatis adipisci
+                      veritatis debitis laboriosam?
+                    </p>
+                  </ContentWrapper>
+                </Scroll>
+              )}
+            </LegacyBlock>
+          );
+        },
+        knobs: [
+          {
+            name: 'Vertical',
+            propName: 'vertical',
+            value: false,
+          },
+          {
+            name: 'ScrollBar',
+            propName: 'scrollBar',
+            value: false,
+          },
+          {
+            name: 'Scroll With Controls',
+            propName: 'controls',
+            options: [
+              {
+                label: 'no controls',
+                value: undefined,
+                isDefault: true,
+              },
+              {
+                label: 'hover',
+                value: 'hover',
+              },
+              {
+                label: 'static',
+                value: 'static',
+              },
+            ],
+          },
+          {
+            name: 'Scroll Step',
+            propName: 'stepDistance',
+            options: [
+              {
+                label: 'default',
+                value: undefined,
+                isDefault: true,
+              },
+              {
+                label: '100',
+                value: 100,
+              },
+              {
+                label: '50',
+                value: 50,
+              },
+            ],
+          },
+          {
+            name: 'Scroll Snap',
+            propName: 'snapAlign',
+            options: [
+              {
+                label: 'no snap',
+                value: undefined,
+                isDefault: true,
+              },
+              {
+                label: 'start',
+                value: 'start',
+              },
+              {
+                label: 'center',
+                value: 'center',
+              },
+              {
+                label: 'end',
+                value: 'end',
+              },
+            ],
+          },
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ] as any,
+      },
     }}
     anatomy={{
       introduction:
@@ -143,8 +296,8 @@ const ScrollComponent = (layoutProps: LayoutProps) => (
                 role="region"
                 aria-label="Scroll snap alignment"
               >
-                ScrollSnapAlignment` can be used inside to a scroll component to
-                individually set where the component should align.
+                `ScrollSnapAlignment` can be used inside to a scroll component
+                to individually set where the component should align.
               </InlineMessage>
             </>
           ),
@@ -234,7 +387,7 @@ const ScrollComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-orientation',
             value: `“horizontal” or “vertical”`,
             description: 'Describes the orientation of the scroll.',
-            userSupplied: true,
+            userSupplied: undefined,
           },
         ],
       },
@@ -246,12 +399,6 @@ const ScrollComponent = (layoutProps: LayoutProps) => (
           summary:
             'The scroll component has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
-            {
-              name: 'vertical',
-              type: 'boolean',
-              default: 'false',
-              description: 'If true, changes the orientation to vertical.',
-            },
             {
               name: 'vertical',
               type: 'boolean',
