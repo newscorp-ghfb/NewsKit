@@ -43,10 +43,11 @@ export const CharacterCountSizes = () => {
         <Stack stackDistribution="space-between" flow="horizontal-center">
           {Object.entries(refs).map(([size, ref]) => (
             <Block>
-              <Label>
+              <Label htmlFor={`${size}-label`}>
                 {`${size.slice(0, 1).toUpperCase()}${size.substring(1)}`}
               </Label>
               <TextArea
+                id={`${size}-label`}
                 defaultValue={`${size} text`}
                 ref={ref}
                 maxLength={200}
@@ -73,13 +74,13 @@ export const CharacterCountConfig = () => {
       <Container>
         <Stack stackDistribution="space-between" flow="horizontal-center">
           <Block>
-            <Label>Max length</Label>
-            <TextArea ref={maxLengthRef} maxLength={200} />
+            <Label htmlFor="maxLength">Max length</Label>
+            <TextArea id="maxLength" ref={maxLengthRef} maxLength={200} />
             <CharacterCount inputRef={maxLengthRef} />
           </Block>
           <Block>
-            <Label>Min length</Label>
-            <TextArea ref={minLengthRef} minLength={20} />
+            <Label htmlFor="minLength">Min length</Label>
+            <TextArea id="minLength" ref={minLengthRef} minLength={20} />
             <CharacterCount inputRef={minLengthRef} />
           </Block>
         </Stack>
