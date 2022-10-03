@@ -28,6 +28,7 @@ module.exports = {
       },
     },
     'storybook-addon-performance/register',
+    './addons/tealium/preset.js',
     {
       name: '@storybook/addon-docs',
       options: {
@@ -68,4 +69,5 @@ module.exports = {
   typescript: {
     reactDocgen: false, // added to negate https://github.com/styleguidist/react-docgen-typescript/issues/356
   },
+  staticDirs: ['../fonts', '../static', 'private-fonts'],
 };
