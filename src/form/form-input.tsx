@@ -24,6 +24,7 @@ import textFieldDefaults from '../text-field/defaults';
 import assistiveTextDefaults from '../assistive-text/defaults';
 import {RadioButton} from '../radio-button';
 import {TextArea, TextAreaProps} from '../text-area';
+import {CharacterCountProps, CharacterCount} from '../character-count';
 
 const useFormFieldContext = () => useContext(FormInputContext);
 
@@ -61,7 +62,7 @@ const ThemelessFormInput = ({
 
   return (
     <FormEntry name={name} rules={rules}>
-      {({ref, state: stateContext, onChange, onBlur, error}) => {
+      {({ref, state: stateContext, onChange, onBlur, error, refObject}) => {
         const state = stateProp || stateContext;
         const labelId = `${currentID}-label`;
 
@@ -83,6 +84,7 @@ const ThemelessFormInput = ({
           labelId,
           statusIcon,
           isRequired,
+          refObject,
         };
 
         return (
@@ -342,3 +344,10 @@ export const FormInputTextArea = React.forwardRef<
     />
   );
 });
+
+export const FormInputCharacterCount = (
+  props: Omit<CharacterCountProps, 'inputRef'>,
+) => {
+  const {refObject} = useFormFieldContext();
+  return <CharacterCount inputRef={refObject} {...props} />;
+};
