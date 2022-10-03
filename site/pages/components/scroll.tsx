@@ -56,7 +56,7 @@ const ScrollComponent = (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Scroll component, its variations, and configuration options.',
+        'This demo allows you to preview the scroll component, its variations, and configuration options.',
       playground: {
         componentName: 'Scroll',
         component: (state: ScrollProps) => {
