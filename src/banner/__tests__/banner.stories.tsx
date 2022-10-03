@@ -453,7 +453,7 @@ export const StoryBannerWithGridAlignment = () => (
     <Grid>
       <Cell xs={8} xsOffset={2}>
         <TextBlock stylePreset="inkContrast">
-          Content above the banner
+          Content below the banner
         </TextBlock>
       </Cell>
     </Grid>
