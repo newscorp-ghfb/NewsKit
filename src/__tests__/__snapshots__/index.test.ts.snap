@@ -229,6 +229,7 @@ Array [
   "useTheme",
   "withDefaultProps",
   "withInstrumentation",
+  "withOwnTheme",
   "withTheme",
 ]
 `;
