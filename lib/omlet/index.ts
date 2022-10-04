@@ -33,7 +33,7 @@ const projectsToAnalyse = {
   },
 };
 
-const gitClonePromisified = project =>
+const gitClone = project =>
   new Promise((resolve, reject) => {
     shell.exec(
       `git clone ${projectsToAnalyse[project]['git-url']} repos/${project}`,
@@ -65,7 +65,7 @@ const omletScript = async () => {
 
     // Git Cloning the repo
     try {
-      await gitClonePromisified(project);
+      await gitClone(project);
     } catch (error) {
       console.error(error);
     }
