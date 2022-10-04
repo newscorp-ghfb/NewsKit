@@ -43,7 +43,7 @@ const ThemelessCharacterCount = React.forwardRef<
         minLength === 1 ? '' : 's'
       }.`;
     }
-    if (minLength) {
+    if (minLength && currentLength < minLength) {
       const diff = minLength - currentLength;
       return `Please enter ${diff} character${diff === 1 ? '' : 's'}.`;
     }

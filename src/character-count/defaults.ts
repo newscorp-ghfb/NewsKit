@@ -1,1 +1,7 @@
-export default {};
+export default {
+  characterCount: {
+    small: {},
+    medium: {},
+    large: {},
+  },
+};

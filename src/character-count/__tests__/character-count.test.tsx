@@ -15,12 +15,17 @@ const InputWithCharacterCount = ({
   return children(ref);
 };
 
+const generateString = (length: number): string =>
+  Array.from(Array(length).keys())
+    .map(() => '*')
+    .join('');
+
 describe('CharacterCount', () => {
   const MAX_LENGTH = 100;
   const MIN_LENGTH = 20;
   const MSG = 'some text';
 
-  test('displays no message if no max or min specified', async () => {
+  test('displays no message if no max or min specified', () => {
     const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {
       children: ref => (
         <>
@@ -31,6 +36,33 @@ describe('CharacterCount', () => {
     });
     const characterCount = getByTestId('character-count');
     expect(characterCount.textContent).toEqual(``);
+  });
+
+  test('message updates if both min and max specified', async () => {
+    const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {
+      children: ref => (
+        <>
+          <TextArea
+            minLength={MIN_LENGTH}
+            maxLength={MAX_LENGTH}
+            ref={ref}
+            data-testid="text-area"
+          />
+          <CharacterCount inputRef={ref} data-testid="character-count" />
+        </>
+      ),
+    });
+    const characterCount = getByTestId('character-count');
+    expect(characterCount.textContent).toEqual(
+      `Please enter a minimum of ${MIN_LENGTH} characters.`,
+    );
+    const textArea = getByTestId('text-area');
+    await act(async () => {
+      await userEvent.type(textArea, generateString(MIN_LENGTH));
+    });
+    expect(characterCount.textContent).toEqual(
+      `You have ${MAX_LENGTH - MIN_LENGTH} characters remaining.`,
+    );
   });
 
   describe('with maxLength', () => {
@@ -112,12 +144,7 @@ describe('CharacterCount', () => {
       const characterCount = getByTestId('character-count');
       const textArea = getByTestId('text-area');
       await act(async () => {
-        await userEvent.type(
-          textArea,
-          Array.from(Array(MAX_LENGTH - 1).keys())
-            .map(() => '*')
-            .join(''),
-        );
+        await userEvent.type(textArea, generateString(MAX_LENGTH - 1));
       });
       expect(characterCount.textContent).toEqual(
         `You have 1 character remaining.`,
@@ -202,6 +229,27 @@ describe('CharacterCount', () => {
       );
     });
 
+    test('does not show when minimum is met', async () => {
+      const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {
+        children: ref => (
+          <>
+            <TextArea
+              ref={ref}
+              data-testid="text-area"
+              minLength={MIN_LENGTH}
+            />
+            <CharacterCount inputRef={ref} data-testid="character-count" />
+          </>
+        ),
+      });
+      const characterCount = getByTestId('character-count');
+      const textArea = getByTestId('text-area');
+      await act(async () => {
+        await userEvent.type(textArea, generateString(MIN_LENGTH));
+      });
+      expect(characterCount.textContent).toEqual('');
+    });
+
     test('uses singular when only one more character is required', async () => {
       const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {
         children: ref => (
@@ -218,12 +266,7 @@ describe('CharacterCount', () => {
       const characterCount = getByTestId('character-count');
       const textArea = getByTestId('text-area');
       await act(async () => {
-        await userEvent.type(
-          textArea,
-          Array.from(Array(MIN_LENGTH - 1).keys())
-            .map(() => '*')
-            .join(''),
-        );
+        await userEvent.type(textArea, generateString(MIN_LENGTH - 1));
       });
       expect(characterCount.textContent).toEqual(`Please enter 1 character.`);
     });
