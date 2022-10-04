@@ -59,15 +59,12 @@ const startScreenOptions = [
   },
   {
     category: {
-      name: 'System',
+      name: 'Foundations',
     },
     items: [
-      {name: 'About', href: '/about/introduction/'},
-      {name: 'Release notes', href: '/about/release-notes/'},
-      {
-        name: 'Component defaults',
-        href: '/theme/theming/component-defaults/',
-      },
+      {name: 'Design tokens', href: '/theme/foundation/design-tokens/'},
+      {name: 'Colours', href: '/theme/foundation/colours/'},
+      {name: 'Fonts', href: '/theme/foundation/fonts/'},
     ],
   },
 ];
@@ -100,7 +97,7 @@ export const NewStartScreen = () => (
               <LinkStandalone
                 key={name}
                 href={href}
-                overrides={{typographyPreset: 'utilityButton020'}}
+                overrides={{typographyPreset: 'utilityLink020'}}
               >
                 {name}
                 <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
