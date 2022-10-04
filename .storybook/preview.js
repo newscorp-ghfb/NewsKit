@@ -35,24 +35,19 @@ const BackgroundColor = styled.div`
   ${getColorCssFromTheme('background', 'interfaceBackground')}
 `;
 
-const PaddingReset = styled.div`
-  position: relative;
-  padding: 0;
-  padding-left: 8px;
-  padding-right: 8px;
+const StoryWrapper = styled.div`
+  padding: 16px;
+  box-sizing: border-box;
 `;
 
 const Container = styled.div`
   max-width: 1024px;
   max-height: 768px;
   overflow: hidden;
-  padding: 16px;
-  box-sizing: border-box;
 `;
+
 const Background = ({children}) => (
-  <BackgroundColor>
-    <PaddingReset>{children}</PaddingReset>
-  </BackgroundColor>
+  <BackgroundColor>{children}</BackgroundColor>
 );
 const LimitSizeDecorator = ({children}) => <Container>{children}</Container>;
 
@@ -125,7 +120,9 @@ export const decorators = [
         : LimitSizeDecorator;
     return (
       <Decorator>
-        <Story />
+        <StoryWrapper>
+          <Story />
+        </StoryWrapper>
       </Decorator>
     );
   },
