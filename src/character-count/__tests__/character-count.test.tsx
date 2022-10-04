@@ -65,6 +65,32 @@ describe('CharacterCount', () => {
     );
   });
 
+  test('accepts custom format function', () => {
+    const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {
+      children: ref => (
+        <>
+          <TextArea
+            minLength={MIN_LENGTH}
+            maxLength={MAX_LENGTH}
+            ref={ref}
+            data-testid="text-area"
+          />
+          <CharacterCount
+            inputRef={ref}
+            data-testid="character-count"
+            format={({currentLength, maxLength, minLength}) =>
+              `This input has current length ${currentLength}, min ${minLength} and max ${maxLength}`
+            }
+          />
+        </>
+      ),
+    });
+    const characterCount = getByTestId('character-count');
+    expect(characterCount.textContent).toEqual(
+      `This input has current length 0, min ${MIN_LENGTH} and max ${MAX_LENGTH}`,
+    );
+  });
+
   describe('with maxLength', () => {
     test('displays starting number of characters remaining', async () => {
       const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {

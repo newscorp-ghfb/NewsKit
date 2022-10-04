@@ -1,14 +1,31 @@
 import React, {useEffect, useState} from 'react';
 import {StyledCharacterCount} from './styled';
-import {CharacterCountProps, ValidInputElement} from './types';
+import {CharacterCountProps, Format, ValidInputElement} from './types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
+const defaultFormat: Format = ({currentLength, minLength, maxLength}) => {
+  if (minLength && !currentLength) {
+    return `Please enter a minimum of ${minLength} character${
+      minLength === 1 ? '' : 's'
+    }.`;
+  }
+  if (minLength && currentLength < minLength) {
+    const diff = minLength - currentLength;
+    return `Please enter ${diff} character${diff === 1 ? '' : 's'}.`;
+  }
+  if (maxLength) {
+    const diff = maxLength - currentLength;
+    return `You have ${diff} character${diff === 1 ? '' : 's'} remaining.`;
+  }
+  return '';
+};
+
 const ThemelessCharacterCount = React.forwardRef<
   HTMLParagraphElement,
   CharacterCountProps
->(({inputRef, ...rest}, ref) => {
+>(({inputRef, format: customFormat, ...rest}, ref) => {
   const [currentLength, setCurrentLength] = useState<number>(0);
   const [maxLength, setMaxLength] = useState<number | undefined>(undefined);
   const [minLength, setMinLength] = useState<number | undefined>(undefined);
@@ -37,26 +54,15 @@ const ThemelessCharacterCount = React.forwardRef<
     return null;
   }
 
-  const renderMessage = () => {
-    if (minLength && !currentLength) {
-      return `Please enter a minimum of ${minLength} character${
-        minLength === 1 ? '' : 's'
-      }.`;
-    }
-    if (minLength && currentLength < minLength) {
-      const diff = minLength - currentLength;
-      return `Please enter ${diff} character${diff === 1 ? '' : 's'}.`;
-    }
-    if (maxLength) {
-      const diff = maxLength - currentLength;
-      return `You have ${diff} character${diff === 1 ? '' : 's'} remaining.`;
-    }
-    return '';
-  };
+  const format: Format = customFormat || defaultFormat;
 
   return (
     <StyledCharacterCount {...rest} ref={ref}>
-      {renderMessage()}
+      {format({
+        currentLength,
+        minLength,
+        maxLength,
+      })}
     </StyledCharacterCount>
   );
 });
