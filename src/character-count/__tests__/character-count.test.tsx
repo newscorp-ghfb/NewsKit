@@ -21,16 +21,40 @@ describe('CharacterCount', () => {
   const MSG = 'some text';
 
   test('displays no message if no max or min specified', () => {
-    const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {
+    const {getByTestId, asFragment} = renderWithImplementation(
+      InputWithCharacterCount,
+      {
+        children: ref => (
+          <>
+            <TextArea ref={ref} data-testid="text-area" />
+            <CharacterCount inputRef={ref} data-testid="character-count" />
+          </>
+        ),
+      },
+    );
+    const characterCount = getByTestId('character-count');
+    expect(characterCount.textContent).toEqual(``);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('applies overrides', () => {
+    const {asFragment} = renderWithImplementation(InputWithCharacterCount, {
       children: ref => (
         <>
-          <TextArea ref={ref} data-testid="text-area" />
-          <CharacterCount inputRef={ref} data-testid="character-count" />
+          <TextArea ref={ref} data-testid="text-area" minLength={MIN_LENGTH} />
+          <CharacterCount
+            inputRef={ref}
+            data-testid="character-count"
+            overrides={{
+              marginBlock: 'space040',
+              paddingInline: 'space060',
+              minHeight: '80px',
+            }}
+          />
         </>
       ),
     });
-    const characterCount = getByTestId('character-count');
-    expect(characterCount.textContent).toEqual(``);
+    expect(asFragment()).toMatchSnapshot();
   });
 
   test('message updates if both min and max specified', async () => {
@@ -88,22 +112,26 @@ describe('CharacterCount', () => {
 
   describe('with maxLength', () => {
     test('displays starting number of characters remaining', async () => {
-      const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {
-        children: ref => (
-          <>
-            <TextArea
-              ref={ref}
-              data-testid="text-area"
-              maxLength={MAX_LENGTH}
-            />
-            <CharacterCount inputRef={ref} data-testid="character-count" />
-          </>
-        ),
-      });
+      const {getByTestId, asFragment} = renderWithImplementation(
+        InputWithCharacterCount,
+        {
+          children: ref => (
+            <>
+              <TextArea
+                ref={ref}
+                data-testid="text-area"
+                maxLength={MAX_LENGTH}
+              />
+              <CharacterCount inputRef={ref} data-testid="character-count" />
+            </>
+          ),
+        },
+      );
       const characterCount = getByTestId('character-count');
       expect(characterCount.textContent).toEqual(
         `You have ${MAX_LENGTH} characters remaining`,
       );
+      expect(asFragment()).toMatchSnapshot();
     });
 
     test('displays starting number of characters remaining with default value', async () => {
@@ -175,22 +203,26 @@ describe('CharacterCount', () => {
 
   describe('with minLength', () => {
     test('displays starting number of characters required', async () => {
-      const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {
-        children: ref => (
-          <>
-            <TextArea
-              ref={ref}
-              data-testid="text-area"
-              minLength={MIN_LENGTH}
-            />
-            <CharacterCount inputRef={ref} data-testid="character-count" />
-          </>
-        ),
-      });
+      const {getByTestId, asFragment} = renderWithImplementation(
+        InputWithCharacterCount,
+        {
+          children: ref => (
+            <>
+              <TextArea
+                ref={ref}
+                data-testid="text-area"
+                minLength={MIN_LENGTH}
+              />
+              <CharacterCount inputRef={ref} data-testid="character-count" />
+            </>
+          ),
+        },
+      );
       const characterCount = getByTestId('character-count');
       expect(characterCount.textContent).toEqual(
         `Please enter a minimum of ${MIN_LENGTH} characters`,
       );
+      expect(asFragment()).toMatchSnapshot();
     });
     test('displays singular when only one character required', async () => {
       const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {
