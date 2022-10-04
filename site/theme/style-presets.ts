@@ -1103,4 +1103,13 @@ export const stylePresets = {
       boxShadow: '{{shadows.shadow050}}',
     },
   },
+  searchTag: {
+    base: {
+      color: '{{colors.inkSubtle}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderColor: '{{colors.inkSubtle}}',
+      borderStyle: 'solid',
+      borderRadius: '{{borders.borderRadiusRounded010}}',
+    },
+  },
 };

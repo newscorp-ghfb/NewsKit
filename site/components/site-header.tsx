@@ -164,6 +164,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
         </Visible>
         <Visible lg xl>
           <GridLayout
+            data-testid="nav-container"
             columns={{
               lg: 'auto 1fr auto auto 80px',
               xl: '276px 1fr auto auto 80px',
