@@ -4,19 +4,20 @@ import {CharacterCount, CharacterCountProps} from '..';
 import {getSizingCssFromTheme, styled} from '../../utils/style';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
-
-import {StorybookHeading} from '../../test/storybook-comps';
 import {
   Form,
   FormInput,
   FormInputCharacterCount,
   FormInputLabel,
   FormInputTextArea,
+  FormInputTextField,
 } from '../../form';
 import {Button} from '../../button';
 import {TextArea} from '../../text-area';
 import {useRefWithReRender} from '../../utils/use-ref-with-rerender';
 import {Label} from '../../label';
+import {TextField, TextFieldSize} from '../../text-field';
+import {FormInputState} from '../../form/types';
 
 const Container = styled.div`
   ${getSizingCssFromTheme('margin', {
@@ -25,8 +26,16 @@ const Container = styled.div`
   })};
 `;
 
+const Page = ({children}: {children: React.ReactNode}) => (
+  <Container>
+    <Stack stackDistribution="space-between" flow="horizontal-center">
+      {children}
+    </Stack>
+  </Container>
+);
+
 export default {
-  title: 'NewsKit Light/character-count',
+  title: 'Components/Character count',
   component: () => 'None',
 };
 
@@ -37,79 +46,213 @@ export const CharacterCountSizes = () => {
     large: useRefWithReRender<HTMLTextAreaElement>(null),
   };
   return (
-    <>
-      <StorybookHeading>Character Count</StorybookHeading>
-      <Container>
-        <Stack stackDistribution="space-between" flow="horizontal-center">
-          {Object.entries(refs).map(([size, ref]) => (
-            <Block>
-              <Label htmlFor={`${size}-label`}>
-                {`${size.slice(0, 1).toUpperCase()}${size.substring(1)}`}
-              </Label>
-              <TextArea
-                id={`${size}-label`}
-                defaultValue={`${size} text`}
-                ref={ref}
-                maxLength={200}
-              />
-              <CharacterCount
-                size={size as CharacterCountProps['size']}
-                inputRef={ref}
-              />
-            </Block>
-          ))}
-        </Stack>
-      </Container>
-    </>
+    <Page>
+      {Object.entries(refs).map(([size, ref]) => (
+        <Block>
+          <Label htmlFor={`textArea-${size}`} size={size as TextFieldSize}>
+            {`${size.slice(0, 1).toUpperCase()}${size.substring(1)}`}
+          </Label>
+          <TextArea
+            placeholder="Placeholder"
+            id={`textArea-${size}`}
+            ref={ref}
+            maxLength={200}
+          />
+          <CharacterCount
+            size={size as CharacterCountProps['size']}
+            inputRef={ref}
+          />
+        </Block>
+      ))}
+    </Page>
   );
 };
-CharacterCountSizes.storyName = 'character-count-size';
+CharacterCountSizes.storyName = 'Size';
 
-export const CharacterCountConfig = () => {
-  const maxLengthRef = useRefWithReRender<HTMLTextAreaElement>(null);
-  const minLengthRef = useRefWithReRender<HTMLTextAreaElement>(null);
+export const CharacterCountStates = () => {
+  const refs = {
+    valid: useRefWithReRender<HTMLTextAreaElement>(null),
+    invalid: useRefWithReRender<HTMLTextAreaElement>(null),
+    disabled: useRefWithReRender<HTMLTextAreaElement>(null),
+  };
   return (
-    <>
-      <StorybookHeading>Character Count</StorybookHeading>
-      <Container>
-        <Stack stackDistribution="space-between" flow="horizontal-center">
-          <Block>
-            <Label htmlFor="maxLength">Max length</Label>
-            <TextArea id="maxLength" ref={maxLengthRef} maxLength={200} />
-            <CharacterCount inputRef={maxLengthRef} />
-          </Block>
-          <Block>
-            <Label htmlFor="minLength">Min length</Label>
-            <TextArea id="minLength" ref={minLengthRef} minLength={20} />
-            <CharacterCount inputRef={minLengthRef} />
-          </Block>
-        </Stack>
-      </Container>
-    </>
+    <Page>
+      {Object.entries(refs).map(([state, ref]) => (
+        <Block>
+          <Label htmlFor={`textArea-${state}`}>
+            {`${state.slice(0, 1).toUpperCase()}${state.substring(1)}`}
+          </Label>
+          <TextArea
+            placeholder="Placeholder"
+            id={`textArea-${state}`}
+            ref={ref}
+            maxLength={200}
+            state={state as FormInputState}
+          />
+          <CharacterCount inputRef={ref} />
+        </Block>
+      ))}
+    </Page>
   );
 };
-CharacterCountConfig.storyName = 'character-count-config';
+CharacterCountStates.storyName = 'States';
 
-export const StoryFormFieldCharacterCount = () => (
-  <>
-    <StorybookHeading>
-      FormInput with character count, label and before and after icon
-    </StorybookHeading>
-    <Form onSubmit={() => {}}>
-      <FormInput
-        name="name"
-        rules={{
-          required: 'Required field',
-        }}
-      >
-        <FormInputLabel>Label</FormInputLabel>
-        <FormInputTextArea maxLength={200} />
-        <FormInputCharacterCount />
-      </FormInput>
-      <Button type="submit" overrides={{marginBlockStart: 'space040'}}>
-        Submit
-      </Button>
-    </Form>
-  </>
+export const CharacterCountMaxLength = () => {
+  const textArea = useRefWithReRender<HTMLTextAreaElement>(null);
+  const textField = useRefWithReRender<HTMLInputElement>(null);
+  return (
+    <Page>
+      <Block>
+        <Label htmlFor="textAreaMax">Text area</Label>
+        <TextArea
+          placeholder="Placeholder"
+          id="textAreaMax"
+          ref={textArea}
+          maxLength={200}
+        />
+        <CharacterCount inputRef={textArea} />
+      </Block>
+      <Block>
+        <Label htmlFor="textFieldMax">Text field</Label>
+        <TextField
+          placeholder="Placeholder"
+          id="textFieldMax"
+          ref={textField}
+          maxLength={20}
+        />
+        <CharacterCount inputRef={textField} />
+      </Block>
+    </Page>
+  );
+};
+CharacterCountMaxLength.storyName = 'Max length';
+
+export const CharacterCountMinLength = () => {
+  const textArea = useRefWithReRender<HTMLTextAreaElement>(null);
+  const textField = useRefWithReRender<HTMLInputElement>(null);
+  return (
+    <Page>
+      <Block>
+        <Label htmlFor="textAreaMin">Text area</Label>
+        <TextArea
+          placeholder="Placeholder"
+          id="textAreaMin"
+          ref={textArea}
+          minLength={30}
+        />
+        <CharacterCount inputRef={textArea} />
+      </Block>
+      <Block>
+        <Label htmlFor="textFieldMin">Text field</Label>
+        <TextField
+          placeholder="Placeholder"
+          id="textFieldMin"
+          ref={textField}
+          minLength={10}
+        />
+        <CharacterCount inputRef={textField} />
+      </Block>
+    </Page>
+  );
+};
+CharacterCountMinLength.storyName = 'Min length';
+
+export const CharacterCountMinAndMaxLength = () => {
+  const textArea = useRefWithReRender<HTMLTextAreaElement>(null);
+  const textField = useRefWithReRender<HTMLInputElement>(null);
+  return (
+    <Page>
+      <Block>
+        <Label htmlFor="textAreaMinMax">Text area</Label>
+        <TextArea
+          placeholder="Placeholder"
+          id="textAreaMinMax"
+          ref={textArea}
+          minLength={30}
+          maxLength={200}
+        />
+        <CharacterCount inputRef={textArea} />
+      </Block>
+      <Block>
+        <Label htmlFor="textFieldMinMax">Text field</Label>
+        <TextField
+          placeholder="Placeholder"
+          id="textFieldMinMax"
+          ref={textField}
+          minLength={10}
+          maxLength={20}
+        />
+        <CharacterCount inputRef={textField} />
+      </Block>
+    </Page>
+  );
+};
+CharacterCountMinAndMaxLength.storyName = 'Min and max length';
+
+export const CharacterCountForm = () => (
+  <Form onSubmit={() => {}}>
+    <Stack>
+      <Block>
+        <FormInput name="textArea">
+          <FormInputLabel>Label</FormInputLabel>
+          <FormInputTextArea minLength={30} />
+          <FormInputCharacterCount />
+        </FormInput>
+      </Block>
+      <Block marginBlockStart="space040">
+        <FormInput name="textField">
+          <FormInputLabel>Label</FormInputLabel>
+          <FormInputTextField minLength={10} />
+          <FormInputCharacterCount />
+        </FormInput>
+      </Block>
+      <Block>
+        <Button type="submit" overrides={{marginBlockStart: 'space040'}}>
+          Submit
+        </Button>
+      </Block>
+    </Stack>
+  </Form>
 );
-StoryFormFieldCharacterCount.storyName = 'character-count-form-input';
+CharacterCountForm.storyName = 'Form with submit validation';
+
+export const CharacterCountOverrides = () => {
+  const styleRef = useRefWithReRender<HTMLTextAreaElement>(null);
+  const logicalPropsRef = useRefWithReRender<HTMLTextAreaElement>(null);
+  const minHeightRef = useRefWithReRender<HTMLTextAreaElement>(null);
+  return (
+    <Page>
+      <Block>
+        <Label htmlFor="style">Style</Label>
+        <TextArea
+          placeholder="Placeholder"
+          id="style"
+          ref={styleRef}
+          maxLength={200}
+        />
+        <CharacterCount inputRef={styleRef} />
+      </Block>
+      <Block>
+        <Label htmlFor="logicalProps">Logical props</Label>
+        <TextArea
+          placeholder="Placeholder"
+          id="logicalProps"
+          ref={logicalPropsRef}
+          maxLength={20}
+        />
+        <CharacterCount inputRef={logicalPropsRef} />
+      </Block>
+      <Block>
+        <Label htmlFor="minHeight">Min height</Label>
+        <TextArea
+          placeholder="Placeholder"
+          id="minHeight"
+          ref={minHeightRef}
+          maxLength={200}
+        />
+        <CharacterCount inputRef={minHeightRef} />
+      </Block>
+    </Page>
+  );
+};
+CharacterCountOverrides.storyName = 'Overrides';
