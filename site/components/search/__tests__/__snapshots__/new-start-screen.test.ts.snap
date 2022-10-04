@@ -240,7 +240,7 @@ exports[`NewStartScreen renders correctly 1`] = `
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -721,7 +721,7 @@ exports[`NewStartScreen renders correctly 1`] = `
           <p
             class="emotion-3"
           >
-            System
+            Foundations
           </p>
           <div
             class="emotion-4"
@@ -731,7 +731,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/about/introduction/"
+                href="/theme/foundation/design-tokens/"
               >
                 <span
                   class="emotion-7"
@@ -742,7 +742,7 @@ exports[`NewStartScreen renders correctly 1`] = `
                     <span
                       class="emotion-9"
                     >
-                      About
+                      Design tokens
                     </span>
                   </span>
                   <span
@@ -773,7 +773,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/about/release-notes/"
+                href="/theme/foundation/colours/"
               >
                 <span
                   class="emotion-7"
@@ -784,7 +784,7 @@ exports[`NewStartScreen renders correctly 1`] = `
                     <span
                       class="emotion-9"
                     >
-                      Release notes
+                      Colours
                     </span>
                   </span>
                   <span
@@ -815,7 +815,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/theming/component-defaults/"
+                href="/theme/foundation/fonts/"
               >
                 <span
                   class="emotion-7"
@@ -826,7 +826,7 @@ exports[`NewStartScreen renders correctly 1`] = `
                     <span
                       class="emotion-9"
                     >
-                      Component defaults
+                      Fonts
                     </span>
                   </span>
                   <span
