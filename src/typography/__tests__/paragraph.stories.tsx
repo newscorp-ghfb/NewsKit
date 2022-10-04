@@ -165,7 +165,7 @@ export const StoryParagraphWithLogicalProps = () => {
 StoryParagraphWithLogicalProps.storyName = 'paragraph-with-logical-props';
 
 export default {
-  title: 'NewsKit Light/typography/paragraph',
+  title: 'Components/typography/paragraph',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

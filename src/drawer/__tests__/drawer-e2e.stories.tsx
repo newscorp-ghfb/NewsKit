@@ -45,7 +45,7 @@ const DrawerContent = () => (
 );
 
 export default {
-  title: 'NewsKit Light/drawer-e2e',
+  title: 'Components/drawer-e2e',
   component: () => 'None',
 };
 

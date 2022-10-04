@@ -7,7 +7,7 @@ const ImageContainer = styled.div`
 `;
 
 export default {
-  title: 'NewsKit Light/image-e2e',
+  title: 'Components/image-e2e',
   component: () => 'None',
 };
 

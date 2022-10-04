@@ -15,7 +15,7 @@ const Content = styled.div`
 `;
 
 export default {
-  title: 'NewsKit Light/grid',
+  title: 'Components/grid',
   component: () => 'None',
 };
 

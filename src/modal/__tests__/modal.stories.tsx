@@ -48,7 +48,7 @@ const useActiveState = (initial = false): [boolean, () => void, () => void] => {
 };
 
 export default {
-  title: 'NewsKit Light/modal',
+  title: 'Components/modal',
   component: () => 'None',
   disabledRules: ['tabindex'], // Because of scenario 'open on page load'
 };

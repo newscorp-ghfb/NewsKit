@@ -1,15 +1,13 @@
 import * as React from 'react';
-import {ThemeChecker} from '../theme-checker';
+import {ThemeChecker as ThemeCheckerComponent} from '../theme-checker';
 
 export default {
-  title: 'NewsKit Light/theme-checker',
+  title: 'Theme Checker',
   component: () => 'None',
   disabledRules: ['color-contrast', 'heading-order'],
 };
 
-export const ThemeCheckerStory = () => <ThemeChecker />;
-
-ThemeCheckerStory.storyName = 'theme-checker';
-ThemeCheckerStory.parameters = {
+export const ThemeChecker = () => <ThemeCheckerComponent />;
+ThemeChecker.parameters = {
   eyes: {include: false},
 };

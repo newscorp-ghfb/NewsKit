@@ -173,7 +173,7 @@ export const StoryLogicalProps = () => (
 StoryLogicalProps.storyName = 'inline-message-logical-props';
 
 export default {
-  title: 'NewsKit Light/inline-message',
+  title: 'Components/inline-message',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

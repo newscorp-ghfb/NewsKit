@@ -1297,7 +1297,7 @@ export const StoryMenuItemsOutlineOverrides = () => (
 StoryMenuItemsOutlineOverrides.storyName = 'menu items outline overrides';
 
 export default {
-  title: 'NewsKit Light/menu',
+  title: 'Components/menu',
   component: () => 'None',
   disabledRules: [],
   decorators: [
