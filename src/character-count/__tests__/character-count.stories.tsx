@@ -3,7 +3,6 @@ import * as React from 'react';
 import {CharacterCount, CharacterCountProps} from '..';
 import {getSizingCssFromTheme, styled} from '../../utils/style';
 import {Stack} from '../../stack';
-import {Block} from '../../block';
 import {
   Form,
   FormInput,
@@ -25,6 +24,11 @@ const Container = styled.div`
     xs: 'sizing000',
     md: 'sizing100',
   })};
+`;
+
+const Block = styled.div`
+  width: 100%;
+  max-width: 300px;
 `;
 
 const Page = ({children}: {children: React.ReactNode}) => (
@@ -202,6 +206,10 @@ export const CharacterCountForm = () => (
               value: 30,
               message: 'message is required for state to update',
             },
+            maxLength: {
+              value: 100,
+              message: 'message is required for state to update',
+            },
           }}
           name="textArea"
         >
@@ -210,12 +218,16 @@ export const CharacterCountForm = () => (
           <FormInputCharacterCount />
         </FormInput>
       </Block>
-      <Block marginBlockStart="space040">
+      <Block>
         <FormInput
           rules={{
             required: 'Required field',
             minLength: {
               value: 10,
+              message: 'message is required for state to update',
+            },
+            maxLength: {
+              value: 25,
               message: 'message is required for state to update',
             },
           }}
@@ -276,6 +288,7 @@ export const CharacterCountOverrides = () => {
             id="logicalProps"
             ref={logicalPropsRef}
             maxLength={20}
+            overrides={{width: '200px'}}
           />
           <CharacterCount
             inputRef={logicalPropsRef}
