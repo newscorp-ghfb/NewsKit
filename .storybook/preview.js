@@ -117,7 +117,6 @@ export const decorators = [
   // Add wrapper around stories to limit their size
   (Story, context) => {
     const kind = context.kind.split('/')[1];
-    console.log(context.componentId);
     const Decorator =
       unlimitedScenarios.includes(kind) ||
       context.componentId === 'welcome' ||
