@@ -6,4 +6,5 @@ export * from './responsive-helpers';
 export * from './style-types';
 export * from './style';
 export * from './with-default-props';
+export * from './with-own-theme';
 export * from './get-transition-duration';
