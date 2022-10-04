@@ -29,7 +29,7 @@ const bodyString =
   'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight.';
 
 export default {
-  title: 'NewsKit Light/standfirst',
+  title: 'Components/standfirst',
   component: () => 'None',
 };
 

@@ -11,7 +11,7 @@ import {Stack} from '../../stack';
 import {LinkInline, LinkStandalone} from '../../link';
 
 export default {
-  title: 'NewsKit Light/tooltip',
+  title: 'Components/tooltip',
   component: () => 'None',
 };
 

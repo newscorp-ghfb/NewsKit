@@ -178,7 +178,7 @@ const IconButtonIntentKindsScenario: React.FC<{
 );
 
 export default {
-  title: 'NewsKit Light/icon-button',
+  title: 'Components/icon-button',
   component: () => 'None',
 };
 

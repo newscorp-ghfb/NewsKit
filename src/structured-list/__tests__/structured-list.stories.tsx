@@ -106,7 +106,7 @@ const listItemWithOneCell = (
 );
 
 export default {
-  title: 'NewsKit Light/structured-list',
+  title: 'Components/structured-list',
   component: () => 'None',
   disabledRules: [],
 };

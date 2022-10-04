@@ -13,7 +13,7 @@ import {
 } from '../../../test/storybook-comps';
 
 export default {
-  title: 'NewsKit Light/grid-layout',
+  title: 'Components/grid-layout',
   component: () => 'None',
 };
 
@@ -119,7 +119,7 @@ export const ResponsiveExample = () => (
          "D"
          "E"
          `,
-        md: ` 
+        md: `
           "A A"
           "B C"
           "D E"`,
@@ -127,7 +127,7 @@ export const ResponsiveExample = () => (
           "A B"
           "A C"
           "A D"
-          "A E"  
+          "A E"
     `,
       }}
       columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr 200px'}}

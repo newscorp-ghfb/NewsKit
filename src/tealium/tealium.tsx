@@ -14,8 +14,10 @@ export const Tealium: React.FC<TealiumProps> = ({
   accountId,
   profileId,
   env,
+  reactHelmet,
 }) => (
   <RenderScripts
+    reactHelmet={reactHelmet}
     scripts={[
       {
         content: `(function(a,b,c,d){
