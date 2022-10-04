@@ -9,15 +9,15 @@ const defaultFormat: Format = ({currentLength, minLength, maxLength}) => {
   if (minLength && !currentLength) {
     return `Please enter a minimum of ${minLength} character${
       minLength === 1 ? '' : 's'
-    }.`;
+    }`;
   }
   if (minLength && currentLength < minLength) {
     const diff = minLength - currentLength;
-    return `Please enter ${diff} character${diff === 1 ? '' : 's'}.`;
+    return `Please enter ${diff} character${diff === 1 ? '' : 's'}`;
   }
   if (maxLength) {
     const diff = maxLength - currentLength;
-    return `You have ${diff} character${diff === 1 ? '' : 's'} remaining.`;
+    return `You have ${diff} character${diff === 1 ? '' : 's'} remaining`;
   }
   return '';
 };

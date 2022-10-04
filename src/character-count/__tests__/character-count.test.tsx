@@ -54,14 +54,14 @@ describe('CharacterCount', () => {
     });
     const characterCount = getByTestId('character-count');
     expect(characterCount.textContent).toEqual(
-      `Please enter a minimum of ${MIN_LENGTH} characters.`,
+      `Please enter a minimum of ${MIN_LENGTH} characters`,
     );
     const textArea = getByTestId('text-area');
     await act(async () => {
       await userEvent.type(textArea, generateString(MIN_LENGTH));
     });
     expect(characterCount.textContent).toEqual(
-      `You have ${MAX_LENGTH - MIN_LENGTH} characters remaining.`,
+      `You have ${MAX_LENGTH - MIN_LENGTH} characters remaining`,
     );
   });
 
@@ -107,7 +107,7 @@ describe('CharacterCount', () => {
       });
       const characterCount = getByTestId('character-count');
       expect(characterCount.textContent).toEqual(
-        `You have ${MAX_LENGTH} characters remaining.`,
+        `You have ${MAX_LENGTH} characters remaining`,
       );
     });
 
@@ -127,7 +127,7 @@ describe('CharacterCount', () => {
       });
       const characterCount = getByTestId('character-count');
       expect(characterCount.textContent).toEqual(
-        `You have ${MAX_LENGTH - MSG.length} characters remaining.`,
+        `You have ${MAX_LENGTH - MSG.length} characters remaining`,
       );
     });
 
@@ -150,7 +150,7 @@ describe('CharacterCount', () => {
         await userEvent.type(textArea, MSG);
       });
       expect(characterCount.textContent).toEqual(
-        `You have ${MAX_LENGTH - MSG.length} characters remaining.`,
+        `You have ${MAX_LENGTH - MSG.length} characters remaining`,
       );
     });
 
@@ -173,7 +173,7 @@ describe('CharacterCount', () => {
         await userEvent.type(textArea, generateString(MAX_LENGTH - 1));
       });
       expect(characterCount.textContent).toEqual(
-        `You have 1 character remaining.`,
+        `You have 1 character remaining`,
       );
     });
   });
@@ -194,7 +194,7 @@ describe('CharacterCount', () => {
       });
       const characterCount = getByTestId('character-count');
       expect(characterCount.textContent).toEqual(
-        `Please enter a minimum of ${MIN_LENGTH} characters.`,
+        `Please enter a minimum of ${MIN_LENGTH} characters`,
       );
     });
     test('displays singular when only one character required', async () => {
@@ -208,7 +208,7 @@ describe('CharacterCount', () => {
       });
       const characterCount = getByTestId('character-count');
       expect(characterCount.textContent).toEqual(
-        `Please enter a minimum of 1 character.`,
+        `Please enter a minimum of 1 character`,
       );
     });
 
@@ -228,7 +228,7 @@ describe('CharacterCount', () => {
       });
       const characterCount = getByTestId('character-count');
       expect(characterCount.textContent).toEqual(
-        `Please enter ${MIN_LENGTH - MSG.length} characters.`,
+        `Please enter ${MIN_LENGTH - MSG.length} characters`,
       );
     });
 
@@ -251,7 +251,7 @@ describe('CharacterCount', () => {
         await userEvent.type(textArea, MSG);
       });
       expect(characterCount.textContent).toEqual(
-        `Please enter ${MIN_LENGTH - MSG.length} characters.`,
+        `Please enter ${MIN_LENGTH - MSG.length} characters`,
       );
     });
 
@@ -294,7 +294,7 @@ describe('CharacterCount', () => {
       await act(async () => {
         await userEvent.type(textArea, generateString(MIN_LENGTH - 1));
       });
-      expect(characterCount.textContent).toEqual(`Please enter 1 character.`);
+      expect(characterCount.textContent).toEqual(`Please enter 1 character`);
     });
   });
 });
