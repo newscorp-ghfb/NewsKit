@@ -6,7 +6,7 @@ import {getSSRId} from '../../utils/get-ssr-id';
 const srOnly = getSSRId();
 
 export default {
-  title: 'Components/screen-reader-only',
+  title: 'Utilities/screen-reader-only',
   component: () => 'None',
 };
 

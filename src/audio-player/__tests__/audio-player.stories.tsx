@@ -422,7 +422,7 @@ StoryAudioPlayerWithHiddenControls.parameters = {
 };
 
 export default {
-  title: 'Components/audio-player',
+  title: 'Deprecated/audio-player',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

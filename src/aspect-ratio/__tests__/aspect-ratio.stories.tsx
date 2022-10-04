@@ -16,7 +16,7 @@ const ChildContainer = styled.div`
 `;
 
 export default {
-  title: 'Components/aspect-ratio',
+  title: 'Deprecated/aspect-ratio',
   component: () => 'None',
 };
 
