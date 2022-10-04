@@ -36,7 +36,7 @@ const projectsToAnalyse = {
 const gitClone = project =>
   new Promise((resolve, reject) => {
     shell.exec(
-      `git clone ${projectsToAnalyse[project]['git-url']} repos/${project}`,
+      `git clone --depth 1 ${projectsToAnalyse[project]['git-url']} repos/${project}`,
       {},
       (value, error) => {
         if (error) {
