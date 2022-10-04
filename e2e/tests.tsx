@@ -54,7 +54,7 @@ export default function showTestcase(theme: string | null) {
   }
 
   const story = stories.find(
-    s => s.default.title.replace('NewsKit Light/', '') === name,
+    s => s.default.title.replace('Components/', '') === name,
   );
 
   if (!story) {

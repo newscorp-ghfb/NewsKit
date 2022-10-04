@@ -469,7 +469,7 @@ export const StoryDrawerLogicalPropsOverrides = () =>
 StoryDrawerLogicalPropsOverrides.storyName = 'drawer-logical-props-overrides';
 
 export default {
-  title: 'NewsKit Light/drawer-layouts-only',
+  title: 'Components/drawer-layouts-only',
   component: () => 'None',
   disabledRules: ['tabindex'],
   decorators: [

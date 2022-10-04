@@ -1730,7 +1730,7 @@ export const StoryTabsOutlineOverride = () => (
 StoryTabsOutlineOverride.storyName = 'tabs-outline-overrides';
 
 export default {
-  title: 'NewsKit Light/tabs',
+  title: 'Components/tabs',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

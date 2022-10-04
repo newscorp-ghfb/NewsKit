@@ -294,7 +294,7 @@ export const StoryIconsLogicalProps = () => (
 StoryIconsLogicalProps.storyName = 'icons-logical-props';
 
 export default {
-  title: 'NewsKit Light/icons',
+  title: 'Components/icons',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

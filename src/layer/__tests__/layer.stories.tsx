@@ -4,7 +4,7 @@ import {StorybookHeading} from '../../test/storybook-comps';
 import {getColorCssFromTheme, styled} from '../../utils/style';
 
 export default {
-  title: 'NewsKit Light/layer',
+  title: 'Components/layer',
   component: () => 'None',
   // this story is only for testing purposes so we can ignore all rules
   disabledRules: [

@@ -809,7 +809,7 @@ export const StoryFormFieldset = () => (
 StoryFormFieldset.storyName = 'form-input-fieldset';
 
 export default {
-  title: 'NewsKit Light/form-input',
+  title: 'Components/form-input',
   component: () => 'None',
   disabledRules: [],
   decorators: [

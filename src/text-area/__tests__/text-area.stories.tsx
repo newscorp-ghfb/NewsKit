@@ -212,7 +212,7 @@ export const TextAreaValidation = () => (
 );
 
 export default {
-  title: 'NewsKit Light/text-area',
+  title: 'Components/text-area',
   component: TextArea,
   disabledRules: ['color-contrast'],
   parameters: {
