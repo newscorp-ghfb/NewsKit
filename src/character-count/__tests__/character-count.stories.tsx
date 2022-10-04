@@ -195,16 +195,34 @@ export const CharacterCountForm = () => (
   <Form onSubmit={() => {}}>
     <Stack>
       <Block>
-        <FormInput name="textArea">
+        <FormInput
+          rules={{
+            required: 'Required field',
+            minLength: {
+              value: 30,
+              message: 'message is required for state to update',
+            },
+          }}
+          name="textArea"
+        >
           <FormInputLabel>Label</FormInputLabel>
-          <FormInputTextArea minLength={30} />
+          <FormInputTextArea />
           <FormInputCharacterCount />
         </FormInput>
       </Block>
       <Block marginBlockStart="space040">
-        <FormInput name="textField">
+        <FormInput
+          rules={{
+            required: 'Required field',
+            minLength: {
+              value: 10,
+              message: 'message is required for state to update',
+            },
+          }}
+          name="textField"
+        >
           <FormInputLabel>Label</FormInputLabel>
-          <FormInputTextField minLength={10} />
+          <FormInputTextField />
           <FormInputCharacterCount />
         </FormInput>
       </Block>

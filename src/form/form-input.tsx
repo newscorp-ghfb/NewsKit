@@ -1,5 +1,11 @@
 import React, {useContext, useEffect, useState} from 'react';
 import composeRefs from '@seznam/compose-react-refs';
+import {
+  RegisterOptions,
+  ValidationRule,
+  ValidationValue,
+  ValidationValueMessage,
+} from 'react-hook-form/dist/types/validator';
 import {Label, LabelProps} from '../label';
 import {TextField} from '../text-field/text-field';
 import {AssistiveText, AssistiveTextProps} from '../assistive-text';
@@ -85,6 +91,7 @@ const ThemelessFormInput = ({
           statusIcon,
           isRequired,
           refObject,
+          rules,
         };
 
         return (
@@ -345,9 +352,44 @@ export const FormInputTextArea = React.forwardRef<
   );
 });
 
+function isValidationValueMessage<T extends ValidationValue>(
+  valueOrObj: ValidationValueMessage<T> | T,
+): valueOrObj is ValidationValueMessage<T> {
+  return (valueOrObj as ValidationValueMessage<T>).value !== undefined;
+}
+
+function asNumber(value: number | string): number {
+  if (typeof value === 'string') {
+    return parseInt(value, 10);
+  }
+  return value;
+}
+
+const getValueFromRule = (
+  value?: ValidationRule<number | string>,
+): number | undefined => {
+  if (!!value && isValidationValueMessage(value)) {
+    return asNumber(value.value);
+  }
+  if (value) {
+    return asNumber(value);
+  }
+  return undefined;
+};
+
 export const FormInputCharacterCount = (
-  props: Omit<CharacterCountProps, 'inputRef'>,
+  props: Omit<CharacterCountProps, 'inputRef' | 'minLength' | 'maxLength'>,
 ) => {
-  const {refObject} = useFormFieldContext();
-  return <CharacterCount inputRef={refObject} {...props} />;
+  const {refObject, state, size, rules} = useFormFieldContext();
+  const {minLength, maxLength} = (rules || {}) as RegisterOptions;
+  return (
+    <CharacterCount
+      state={state}
+      size={size}
+      inputRef={refObject}
+      minLength={getValueFromRule(minLength)}
+      maxLength={getValueFromRule(maxLength)}
+      {...props}
+    />
+  );
 };

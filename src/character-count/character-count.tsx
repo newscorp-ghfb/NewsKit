@@ -33,13 +33,19 @@ const ThemelessCharacterCount = React.forwardRef<
       state = 'valid',
       size = 'medium',
       overrides,
+      minLength: minLengthDefault,
+      maxLength: maxLengthDefault,
       ...rest
     },
     ref,
   ) => {
     const [currentLength, setCurrentLength] = useState<number>(0);
-    const [maxLength, setMaxLength] = useState<number | undefined>(undefined);
-    const [minLength, setMinLength] = useState<number | undefined>(undefined);
+    const [maxLength, setMaxLength] = useState<number | undefined>(
+      maxLengthDefault,
+    );
+    const [minLength, setMinLength] = useState<number | undefined>(
+      minLengthDefault,
+    );
 
     const onInput: EventListener = (event: Event) => {
       const target = event.target as ValidInputElement;

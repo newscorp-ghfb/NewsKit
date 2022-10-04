@@ -4,6 +4,7 @@ import {useForm} from 'react-hook-form';
 import userEvent from '@testing-library/user-event';
 import {Form, FormInputCharacterCount, FormRef} from '..';
 import {
+  generateString,
   renderToFragmentWithTheme,
   renderWithImplementation,
   renderWithTheme,
@@ -789,7 +790,7 @@ describe('FormInput', () => {
     });
   });
 
-  describe('FormInputCharacterCount', () => {
+  describe.only('FormInputCharacterCount', () => {
     const MAX_LENGTH = 100;
     const MIN_LENGTH = 20;
     const MSG = 'some text';
@@ -807,52 +808,77 @@ describe('FormInput', () => {
       expect(characterCount.textContent).toEqual(``);
     });
 
+    test('message updates if both min and max specified', async () => {
+      const {getByTestId} = renderWithImplementation(FormInput, {
+        rules: {
+          minLength: {value: MIN_LENGTH, message: 'MSG'},
+          maxLength: {value: MAX_LENGTH, message: 'MSG'},
+        },
+        children: (
+          <>
+            <FormInputTextField data-testid="text-area" />
+            <FormInputCharacterCount data-testid="character-count" />
+          </>
+        ),
+      });
+      const characterCount = getByTestId('character-count');
+      expect(characterCount.textContent).toEqual(
+        `Please enter a minimum of ${MIN_LENGTH} characters`,
+      );
+      const textArea = getByTestId('text-area');
+      await act(async () => {
+        await userEvent.type(textArea, generateString(MIN_LENGTH));
+      });
+      expect(characterCount.textContent).toEqual(
+        `You have ${MAX_LENGTH - MIN_LENGTH} characters remaining`,
+      );
+    });
+
     describe('with maxLength', () => {
       test('displays starting number of characters remaining', async () => {
         const {getByTestId} = renderWithImplementation(FormInput, {
+          rules: {
+            maxLength: {value: MAX_LENGTH, message: 'MSG'},
+          },
           children: (
             <>
-              <FormInputTextField
-                data-testid="text-area"
-                maxLength={MAX_LENGTH}
-              />
+              <FormInputTextField data-testid="text-area" />
               <FormInputCharacterCount data-testid="character-count" />
             </>
           ),
         });
         const characterCount = getByTestId('character-count');
         expect(characterCount.textContent).toEqual(
-          `You have ${MAX_LENGTH} characters remaining.`,
+          `You have ${MAX_LENGTH} characters remaining`,
         );
       });
 
       test('displays starting number of characters remaining with default value', async () => {
         const {getByTestId} = renderWithImplementation(FormInput, {
+          rules: {
+            maxLength: {value: MAX_LENGTH, message: 'MSG'},
+          },
           children: (
             <>
-              <FormInputTextField
-                defaultValue={MSG}
-                data-testid="text-area"
-                maxLength={MAX_LENGTH}
-              />
+              <FormInputTextField defaultValue={MSG} data-testid="text-area" />
               <FormInputCharacterCount data-testid="character-count" />
             </>
           ),
         });
         const characterCount = getByTestId('character-count');
         expect(characterCount.textContent).toEqual(
-          `You have ${MAX_LENGTH - MSG.length} characters remaining.`,
+          `You have ${MAX_LENGTH - MSG.length} characters remaining`,
         );
       });
 
       test('updates number of characters remaining', async () => {
         const {getByTestId} = renderWithImplementation(FormInput, {
+          rules: {
+            maxLength: {value: MAX_LENGTH, message: 'MSG'},
+          },
           children: (
             <>
-              <FormInputTextField
-                data-testid="text-area"
-                maxLength={MAX_LENGTH}
-              />
+              <FormInputTextField data-testid="text-area" />
               <FormInputCharacterCount data-testid="character-count" />
             </>
           ),
@@ -863,18 +889,18 @@ describe('FormInput', () => {
           await userEvent.type(textArea, MSG);
         });
         expect(characterCount.textContent).toEqual(
-          `You have ${MAX_LENGTH - MSG.length} characters remaining.`,
+          `You have ${MAX_LENGTH - MSG.length} characters remaining`,
         );
       });
 
       test('uses singular when only one character remains', async () => {
         const {getByTestId} = renderWithImplementation(FormInput, {
+          rules: {
+            maxLength: {value: MAX_LENGTH, message: 'MSG'},
+          },
           children: (
             <>
-              <FormInputTextField
-                data-testid="text-area"
-                maxLength={MAX_LENGTH}
-              />
+              <FormInputTextField data-testid="text-area" />
               <FormInputCharacterCount data-testid="character-count" />
             </>
           ),
@@ -882,15 +908,10 @@ describe('FormInput', () => {
         const characterCount = getByTestId('character-count');
         const textArea = getByTestId('text-area');
         await act(async () => {
-          await userEvent.type(
-            textArea,
-            Array.from(Array(MAX_LENGTH - 1).keys())
-              .map(() => '*')
-              .join(''),
-          );
+          await userEvent.type(textArea, generateString(MAX_LENGTH - 1));
         });
         expect(characterCount.textContent).toEqual(
-          `You have 1 character remaining.`,
+          `You have 1 character remaining`,
         );
       });
     });
@@ -898,63 +919,65 @@ describe('FormInput', () => {
     describe('with minLength', () => {
       test('displays starting number of characters required', async () => {
         const {getByTestId} = renderWithImplementation(FormInput, {
+          rules: {
+            minLength: {value: MIN_LENGTH, message: 'MSG'},
+          },
           children: (
             <>
-              <FormInputTextField
-                data-testid="text-area"
-                minLength={MIN_LENGTH}
-              />
+              <FormInputTextField data-testid="text-area" />
               <FormInputCharacterCount data-testid="character-count" />
             </>
           ),
         });
         const characterCount = getByTestId('character-count');
         expect(characterCount.textContent).toEqual(
-          `Please enter a minimum of ${MIN_LENGTH} characters.`,
+          `Please enter a minimum of ${MIN_LENGTH} characters`,
         );
       });
       test('displays singular when only one character required', async () => {
         const {getByTestId} = renderWithImplementation(FormInput, {
+          rules: {
+            minLength: {value: 1, message: 'MSG'},
+          },
           children: (
             <>
-              <FormInputTextField data-testid="text-area" minLength={1} />
+              <FormInputTextField data-testid="text-area" />
               <FormInputCharacterCount data-testid="character-count" />
             </>
           ),
         });
         const characterCount = getByTestId('character-count');
         expect(characterCount.textContent).toEqual(
-          `Please enter a minimum of 1 character.`,
+          `Please enter a minimum of 1 character`,
         );
       });
 
       test('displays starting number of characters required with default value', async () => {
         const {getByTestId} = renderWithImplementation(FormInput, {
+          rules: {
+            minLength: {value: MIN_LENGTH, message: 'MSG'},
+          },
           children: (
             <>
-              <FormInputTextField
-                defaultValue={MSG}
-                data-testid="text-area"
-                minLength={MIN_LENGTH}
-              />
+              <FormInputTextField defaultValue={MSG} data-testid="text-area" />
               <FormInputCharacterCount data-testid="character-count" />
             </>
           ),
         });
         const characterCount = getByTestId('character-count');
         expect(characterCount.textContent).toEqual(
-          `Please enter ${MIN_LENGTH - MSG.length} characters.`,
+          `Please enter ${MIN_LENGTH - MSG.length} characters`,
         );
       });
 
       test('updates number of characters remaining', async () => {
         const {getByTestId} = renderWithImplementation(FormInput, {
+          rules: {
+            minLength: {value: MIN_LENGTH, message: 'MSG'},
+          },
           children: (
             <>
-              <FormInputTextField
-                data-testid="text-area"
-                minLength={MIN_LENGTH}
-              />
+              <FormInputTextField data-testid="text-area" />
               <FormInputCharacterCount data-testid="character-count" />
             </>
           ),
@@ -965,18 +988,18 @@ describe('FormInput', () => {
           await userEvent.type(textArea, MSG);
         });
         expect(characterCount.textContent).toEqual(
-          `Please enter ${MIN_LENGTH - MSG.length} characters.`,
+          `Please enter ${MIN_LENGTH - MSG.length} characters`,
         );
       });
 
       test('uses singular when only one more character is required', async () => {
         const {getByTestId} = renderWithImplementation(FormInput, {
+          rules: {
+            minLength: {value: MIN_LENGTH, message: 'MSG'},
+          },
           children: (
             <>
-              <FormInputTextField
-                data-testid="text-area"
-                minLength={MIN_LENGTH}
-              />
+              <FormInputTextField data-testid="text-area" />
               <FormInputCharacterCount data-testid="character-count" />
             </>
           ),
@@ -984,14 +1007,9 @@ describe('FormInput', () => {
         const characterCount = getByTestId('character-count');
         const textArea = getByTestId('text-area');
         await act(async () => {
-          await userEvent.type(
-            textArea,
-            Array.from(Array(MIN_LENGTH - 1).keys())
-              .map(() => '*')
-              .join(''),
-          );
+          await userEvent.type(textArea, generateString(MIN_LENGTH - 1));
         });
-        expect(characterCount.textContent).toEqual(`Please enter 1 character.`);
+        expect(characterCount.textContent).toEqual(`Please enter 1 character`);
       });
     });
   });

@@ -2,7 +2,7 @@ import React, {ReactElement, RefObject} from 'react';
 import {act} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {CharacterCount} from '..';
-import {renderWithImplementation} from '../../test/test-utils';
+import {generateString, renderWithImplementation} from '../../test/test-utils';
 import {useRefWithReRender} from '../../utils/use-ref-with-rerender';
 import {TextArea} from '../../text-area';
 
@@ -14,11 +14,6 @@ const InputWithCharacterCount = ({
   const ref = useRefWithReRender<HTMLTextAreaElement>(null);
   return children(ref);
 };
-
-const generateString = (length: number): string =>
-  Array.from(Array(length).keys())
-    .map(() => '*')
-    .join('');
 
 describe('CharacterCount', () => {
   const MAX_LENGTH = 100;
