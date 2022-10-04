@@ -25,47 +25,65 @@ const defaultFormat: Format = ({currentLength, minLength, maxLength}) => {
 const ThemelessCharacterCount = React.forwardRef<
   HTMLParagraphElement,
   CharacterCountProps
->(({inputRef, format: customFormat, ...rest}, ref) => {
-  const [currentLength, setCurrentLength] = useState<number>(0);
-  const [maxLength, setMaxLength] = useState<number | undefined>(undefined);
-  const [minLength, setMinLength] = useState<number | undefined>(undefined);
+>(
+  (
+    {
+      inputRef,
+      format: customFormat,
+      state = 'valid',
+      size = 'medium',
+      overrides,
+      ...rest
+    },
+    ref,
+  ) => {
+    const [currentLength, setCurrentLength] = useState<number>(0);
+    const [maxLength, setMaxLength] = useState<number | undefined>(undefined);
+    const [minLength, setMinLength] = useState<number | undefined>(undefined);
 
-  const onInput: EventListener = (event: Event) => {
-    const target = event.target as ValidInputElement;
-    setCurrentLength(target.value.length);
-  };
+    const onInput: EventListener = (event: Event) => {
+      const target = event.target as ValidInputElement;
+      setCurrentLength(target.value.length);
+    };
 
-  useEffect(() => {
-    if (inputRef && inputRef.current) {
-      inputRef.current.addEventListener('input', onInput);
-      setCurrentLength(inputRef.current.value.length);
-      // this check ignores the browser default max length of 524,288
-      if (inputRef.current.getAttribute('maxLength')) {
-        setMaxLength(inputRef.current.maxLength);
+    useEffect(() => {
+      if (inputRef && inputRef.current) {
+        inputRef.current.addEventListener('input', onInput);
+        setCurrentLength(inputRef.current.value.length);
+        // this check ignores the browser default max length of 524,288
+        if (inputRef.current.getAttribute('maxLength')) {
+          setMaxLength(inputRef.current.maxLength);
+        }
+        // this check ignores the browser default min length of 0
+        if (inputRef.current.getAttribute('minLength')) {
+          setMinLength(inputRef.current.minLength);
+        }
       }
-      // this check ignores the browser default min length of 0
-      if (inputRef.current.getAttribute('minLength')) {
-        setMinLength(inputRef.current.minLength);
-      }
+    }, [inputRef]);
+
+    if (!inputRef || !inputRef.current) {
+      return null;
     }
-  }, [inputRef]);
 
-  if (!inputRef || !inputRef.current) {
-    return null;
-  }
+    const format: Format = customFormat || defaultFormat;
 
-  const format: Format = customFormat || defaultFormat;
-
-  return (
-    <StyledCharacterCount {...rest} ref={ref}>
-      {format({
-        currentLength,
-        minLength,
-        maxLength,
-      })}
-    </StyledCharacterCount>
-  );
-});
+    return (
+      <StyledCharacterCount
+        ref={ref}
+        size={size}
+        state={state}
+        overrides={overrides}
+        {...rest}
+      >
+        {format({
+          currentLength,
+          minLength,
+          maxLength,
+        })}
+      </StyledCharacterCount>
+    );
+  },
+);
 
 export const CharacterCount = withOwnTheme(ThemelessCharacterCount)({
   defaults,

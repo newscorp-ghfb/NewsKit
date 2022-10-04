@@ -1,7 +1,7 @@
 import {StylePreset} from '../theme';
 
 export default {
-  assistiveText: {
+  characterCount: {
     base: {
       color: '{{colors.inkSubtle}}',
     },

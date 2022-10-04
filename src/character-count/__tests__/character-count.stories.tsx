@@ -13,11 +13,12 @@ import {
   FormInputTextField,
 } from '../../form';
 import {Button} from '../../button';
-import {TextArea} from '../../text-area';
+import {TextArea, TextAreaProps} from '../../text-area';
 import {useRefWithReRender} from '../../utils/use-ref-with-rerender';
 import {Label} from '../../label';
 import {TextField, TextFieldSize} from '../../text-field';
 import {FormInputState} from '../../form/types';
+import {createTheme, ThemeProvider} from '../../theme';
 
 const Container = styled.div`
   ${getSizingCssFromTheme('margin', {
@@ -28,7 +29,7 @@ const Container = styled.div`
 
 const Page = ({children}: {children: React.ReactNode}) => (
   <Container>
-    <Stack stackDistribution="space-between" flow="horizontal-center">
+    <Stack stackDistribution="space-between" flow="horizontal-top">
       {children}
     </Stack>
   </Container>
@@ -53,6 +54,7 @@ export const CharacterCountSizes = () => {
             {`${size.slice(0, 1).toUpperCase()}${size.substring(1)}`}
           </Label>
           <TextArea
+            size={size as TextAreaProps['size']}
             placeholder="Placeholder"
             id={`textArea-${size}`}
             ref={ref}
@@ -86,10 +88,10 @@ export const CharacterCountStates = () => {
             placeholder="Placeholder"
             id={`textArea-${state}`}
             ref={ref}
-            maxLength={200}
+            minLength={30}
             state={state as FormInputState}
           />
-          <CharacterCount inputRef={ref} />
+          <CharacterCount state={state as FormInputState} inputRef={ref} />
         </Block>
       ))}
     </Page>
@@ -216,43 +218,67 @@ export const CharacterCountForm = () => (
 );
 CharacterCountForm.storyName = 'Form with submit validation';
 
+const myCustomTheme = createTheme({
+  name: 'my-custom-theme',
+  overrides: {
+    stylePresets: {
+      characterCountCustom: {
+        base: {
+          color: '{{colors.amber060}}',
+        },
+      },
+    },
+  },
+});
+
 export const CharacterCountOverrides = () => {
   const styleRef = useRefWithReRender<HTMLTextAreaElement>(null);
   const logicalPropsRef = useRefWithReRender<HTMLTextAreaElement>(null);
   const minHeightRef = useRefWithReRender<HTMLTextAreaElement>(null);
   return (
-    <Page>
-      <Block>
-        <Label htmlFor="style">Style</Label>
-        <TextArea
-          placeholder="Placeholder"
-          id="style"
-          ref={styleRef}
-          maxLength={200}
-        />
-        <CharacterCount inputRef={styleRef} />
-      </Block>
-      <Block>
-        <Label htmlFor="logicalProps">Logical props</Label>
-        <TextArea
-          placeholder="Placeholder"
-          id="logicalProps"
-          ref={logicalPropsRef}
-          maxLength={20}
-        />
-        <CharacterCount inputRef={logicalPropsRef} />
-      </Block>
-      <Block>
-        <Label htmlFor="minHeight">Min height</Label>
-        <TextArea
-          placeholder="Placeholder"
-          id="minHeight"
-          ref={minHeightRef}
-          maxLength={200}
-        />
-        <CharacterCount inputRef={minHeightRef} />
-      </Block>
-    </Page>
+    <ThemeProvider theme={myCustomTheme}>
+      <Page>
+        <Block>
+          <Label htmlFor="style">Style</Label>
+          <TextArea
+            placeholder="Placeholder"
+            id="style"
+            ref={styleRef}
+            maxLength={200}
+          />
+          <CharacterCount
+            inputRef={styleRef}
+            overrides={{stylePreset: 'characterCountCustom'}}
+          />
+        </Block>
+        <Block>
+          <Label htmlFor="logicalProps">Logical props</Label>
+          <TextArea
+            placeholder="Placeholder"
+            id="logicalProps"
+            ref={logicalPropsRef}
+            maxLength={20}
+          />
+          <CharacterCount
+            inputRef={logicalPropsRef}
+            overrides={{marginBlock: 'space040', paddingInline: 'space060'}}
+          />
+        </Block>
+        <Block>
+          <Label htmlFor="minHeight">Min height</Label>
+          <TextArea
+            placeholder="Placeholder"
+            id="minHeight"
+            ref={minHeightRef}
+            maxLength={200}
+          />
+          <CharacterCount
+            inputRef={minHeightRef}
+            overrides={{minHeight: '80px'}}
+          />
+        </Block>
+      </Page>
+    </ThemeProvider>
   );
 };
 CharacterCountOverrides.storyName = 'Overrides';
