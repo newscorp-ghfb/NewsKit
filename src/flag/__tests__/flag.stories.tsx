@@ -84,16 +84,16 @@ export const StoryInverse = () => (
         paddingInline: 'space050',
       }}
     >
-      <StorybookCase title="Solid">
+      <StorybookCase inverse title="Solid">
         <Flag overrides={{stylePreset: 'flagSolidInverse'}}>Flag</Flag>
       </StorybookCase>
-      <StorybookCase title="Minimal">
+      <StorybookCase inverse title="Minimal">
         <Flag overrides={{stylePreset: 'flagMinimalInverse'}}>Flag</Flag>
       </StorybookCase>
     </StorybookPage>
   </InverseContainer>
 );
-StoryInverse.storyName = 'Inverse';
+StoryInverse.storyName = 'Inverse flag';
 
 export const StoryVariations = () => (
   <StorybookPage columns={threeFlagCols}>
@@ -109,7 +109,7 @@ export const StoryVariations = () => (
         <IconFilledAddCircle />
       </Flag>
     </StorybookCase>
-    <StorybookCase title="Leading & trailing">
+    <StorybookCase title="Leading and trailing">
       <Flag>
         <IconFilledAddCircle />
         Flag

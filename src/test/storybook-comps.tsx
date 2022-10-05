@@ -117,13 +117,21 @@ export const StorybookPage = ({children, ...rest}: GridLayoutProps) => (
 
 type StorybookCaseProps = {
   title?: string;
+  inverse?: boolean;
   children?: React.ReactNode;
 };
 
-export const StorybookCase = ({title, children}: StorybookCaseProps) => (
+export const StorybookCase = ({
+  title,
+  inverse,
+  children,
+}: StorybookCaseProps) => (
   <GridLayout rowGap="space045">
     {title && (
-      <TextBlock typographyPreset="utilityBody020" stylePreset="inkSubtle">
+      <TextBlock
+        typographyPreset="utilityBody020"
+        stylePreset={inverse ? 'inkInverse' : 'inkBase'}
+      >
         {title.charAt(0).toUpperCase() + title.slice(1)}
       </TextBlock>
     )}
