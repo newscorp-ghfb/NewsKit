@@ -186,7 +186,7 @@ const CustomMuteButtonIcon = ({volume}: MuteButtonIconProps) =>
   );
 
 export default {
-  title: 'NewsKit Light/audio-player-composable',
+  title: 'Components/audio-player-composable',
   component: () => 'None',
 };
 

@@ -12,7 +12,7 @@ const Container = styled.span<{color: string}>`
 `;
 
 export default {
-  title: 'NewsKit Light/visibility',
+  title: 'Components/visibility',
   component: () => 'None',
 };
 

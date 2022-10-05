@@ -90,7 +90,7 @@ const tags = [
 ].map(item => <Tag key={getSSRId()}>{item}</Tag>);
 
 export default {
-  title: 'NewsKit Light/scroll',
+  title: 'Components/scroll',
   component: () => 'None',
 };
 

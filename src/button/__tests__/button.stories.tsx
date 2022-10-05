@@ -696,7 +696,7 @@ export const StoryButtonWithOutlineOverride = () => (
 StoryButtonWithOutlineOverride.storyName = 'button-with-outline-overrides';
 
 export default {
-  title: 'NewsKit Light/button',
+  title: 'Components/button',
   component: () => 'None',
   disabledRules: ['color-contrast'],
   decorators: [

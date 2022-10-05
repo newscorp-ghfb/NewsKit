@@ -23,7 +23,7 @@ const StyledDiv = styled.div`
 `;
 
 export default {
-  title: 'NewsKit Light/assistive-text',
+  title: 'Components/assistive-text',
   component: () => 'None',
 };
 
