@@ -79,7 +79,7 @@ const VerticalContainer = styled.div`
 `;
 
 export default {
-  title: 'Deprecated/volume-control',
+  title: 'Deprecated/Volume Control',
   component: () => 'None',
 };
 
