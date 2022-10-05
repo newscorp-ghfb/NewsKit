@@ -44,9 +44,10 @@ const WelcomeContainer = styled(Block)`
 
 export const ThemelessWelcome = () => (
   <WelcomeContainer
-    paddingInline="space040"
-    paddingBlock="space030"
-    marginInlineStart="-8px"
+    paddingInline="space050"
+    paddingBlock="space050"
+    marginInline="-16px"
+    marginBlock="-16px"
   >
     <Block
       stylePreset="welcomeBanner"
