@@ -17,6 +17,7 @@ const MarginOverridesWrapper = styled.div`
   ${getColorCssFromTheme('borderColor', 'red060')}
 `;
 
+const autoFlagCols = `repeat(auto-fill, minmax(150px, max-content))`;
 const twoFlagCols = `repeat(2, minmax(150px, max-content))`;
 const threeFlagCols = `repeat(3, minmax(150px, max-content))`;
 
@@ -59,7 +60,7 @@ export const StoryIntents = () => (
 StoryIntents.storyName = 'Intents';
 
 export const StorySize = () => (
-  <StorybookPage columns={threeFlagCols}>
+  <StorybookPage columns={autoFlagCols}>
     <StorybookCase title="Small">
       <Flag size="small">Flag</Flag>
     </StorybookCase>
@@ -76,7 +77,7 @@ StorySize.storyName = 'Size';
 export const StoryInverse = () => (
   <InverseContainer>
     <StorybookPage
-      columns={threeFlagCols}
+      columns={autoFlagCols}
       overrides={{
         paddingBlock: 'space070',
         marginInline: 'space020',
@@ -139,7 +140,7 @@ export const StoryVariations = () => (
 StoryVariations.storyName = 'Variations';
 
 export const StoryLogicalProps = () => (
-  <StorybookPage columns={twoFlagCols}>
+  <StorybookPage columns={autoFlagCols}>
     <StorybookCase title="Logical padding overrides">
       <Flag overrides={{paddingBlock: 'space060', paddingInline: 'space060'}}>
         Flag
