@@ -36,16 +36,14 @@ export default class MyDocument extends Document {
           </style>
           {helmet.script.toComponent()}
           <HTMLMeta />
-          {isSiteEnvProduction && (
-            <Consent
-              sourcePointConfigUnified={{
-                accountId: 259,
-                propertyHref: 'https://newskit.co.uk',
-                gdpr: {},
-              }}
-              reactHelmet={Helmet}
-            />
-          )}
+          <Consent
+            sourcePointConfigUnified={{
+              accountId: 259,
+              propertyHref: 'https://newskit.co.uk',
+              gdpr: {},
+            }}
+            reactHelmet={Helmet}
+          />
         </Head>
         <body>
           <Global
