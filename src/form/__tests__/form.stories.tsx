@@ -41,7 +41,7 @@ const StyledDiv = styled.div`
 `;
 
 export default {
-  title: 'NewsKit Light/form',
+  title: 'Components/form',
   component: () => 'None',
 };
 

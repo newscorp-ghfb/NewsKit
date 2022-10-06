@@ -6,7 +6,12 @@ import React from 'react';
 interface StoryType {
   default: {
     title: string;
-    decorators: Array<(Story: StoryType) => JSX.Element>;
+    decorators: Array<
+      (
+        Story: StoryType,
+        context: {globals: {backgrounds: {value: string}}},
+      ) => JSX.Element
+    >;
   };
 }
 
@@ -37,7 +42,7 @@ interface A11yFailProps {
 
 const A11yFail = ({message}: A11yFailProps) => <div role={message} />;
 
-export default function showTestcase() {
+export default function showTestcase(theme: string | null) {
   // needs polyfill for IE
   const urlParams = new URLSearchParams(window.location.search);
   const name = urlParams.get('name');
@@ -49,7 +54,7 @@ export default function showTestcase() {
   }
 
   const story = stories.find(
-    s => s.default.title.replace('NewsKit Light/', '') === name,
+    s => s.default.title.replace('Components/', '') === name,
   );
 
   if (!story) {
@@ -66,7 +71,15 @@ export default function showTestcase() {
         {Object.values(story)
           .filter(storyComponent => typeof storyComponent === 'function')
           .map(Story => (
-            <>{story.default.decorators[0](Story)}</>
+            <>
+              {story.default.decorators[0](Story, {
+                globals: {
+                  backgrounds: {
+                    value: theme === 'dark' ? '#2E2E2E' : '#FFFFFF',
+                  },
+                },
+              })}
+            </>
           ))}
       </>
     );

@@ -35,7 +35,7 @@ const StyledDiv = styled.div`
 `;
 
 export default {
-  title: 'NewsKit Light/byline',
+  title: 'Components/byline',
   component: () => 'None',
 };
 

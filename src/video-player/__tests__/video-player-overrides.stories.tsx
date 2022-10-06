@@ -96,7 +96,7 @@ const myCustomTheme = compileTheme(
 );
 
 export default {
-  title: 'NewsKit Light/video-player/overrides',
+  title: 'Components/video-player/overrides',
   component: () => 'None',
   disabledRules: [
     'landmark-unique',
