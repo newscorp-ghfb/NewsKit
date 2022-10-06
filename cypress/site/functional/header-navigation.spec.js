@@ -5,16 +5,13 @@ const sidebarTestID = '[data-testid="sidebar"]';
 const indicatorID = '[data-testid="styled-indicator"]';
 
 describe('Documentation Site - header-navigation component', () => {
-  before(() => {
-    cy.mockConsentAndVisit('/');
-  });
-
   describe('Desktop view', () => {
     it('should contain logo', () => {
+      cy.mockConsentAndVisit('/');
       cy.get('[data-testid="logo-container"]').should('exist');
     });
     it('should highlight active section', () => {
-      cy.visit('/about/introduction');
+      cy.mockConsentAndVisit('/about/introduction');
       cy.get(indicatorID).should('have.attr', 'aria-current');
     });
   });
