@@ -1189,7 +1189,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_docs_pr_with_no_base_url
-            - install_cypress 
+            - install_cypress
       - no_visual_changes:
           type: approval
           requires:
