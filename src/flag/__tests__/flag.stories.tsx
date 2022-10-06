@@ -2,8 +2,8 @@ import * as React from 'react';
 import {Flag} from '..';
 import {getColorCssFromTheme, styled} from '../../utils/style';
 import {IconFilledAddCircle} from '../../icons';
-import {GridLayoutItem} from '../../grid-layout';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
+import {useBreakpointKey} from '../../utils/hooks';
 
 const InverseContainer = styled.div`
   margin: -16px;
@@ -18,8 +18,14 @@ const MarginOverridesWrapper = styled.div`
 `;
 
 const autoFlagCols = `repeat(auto-fill, minmax(150px, max-content))`;
-const twoFlagCols = `repeat(2, minmax(150px, max-content))`;
-const threeFlagCols = `repeat(3, minmax(150px, max-content))`;
+const twoFlagCols = {
+  xs: 'repeat(1, minmax(150px, max-content))',
+  sm: 'repeat(2, minmax(150px, max-content))',
+};
+const threeFlagCols = {
+  xs: 'repeat(1, minmax(150px, max-content))',
+  sm: 'repeat(3, minmax(150px, max-content))',
+};
 
 const presets = [
   'Primary',
@@ -39,24 +45,35 @@ export const StoryDefault = () => (
 );
 StoryDefault.storyName = 'Default';
 
-export const StoryIntents = () => (
-  <StorybookPage columns={twoFlagCols}>
-    {presets.map((presetSuffix, index) => (
-      <React.Fragment key={presetSuffix}>
-        <StorybookCase title={index === 0 ? 'Solid' : undefined}>
-          <Flag overrides={{stylePreset: `flagSolid${presetSuffix}`}}>
-            {presetSuffix}
-          </Flag>
-        </StorybookCase>
-        <StorybookCase title={index === 0 ? 'Minimal' : undefined}>
-          <Flag overrides={{stylePreset: `flagMinimal${presetSuffix}`}}>
-            {presetSuffix}
-          </Flag>
-        </StorybookCase>
-      </React.Fragment>
-    ))}
-  </StorybookPage>
-);
+export const StoryIntents = () => {
+  const bp = useBreakpointKey();
+  return (
+    <StorybookPage
+      columns={twoFlagCols}
+      rowGap={{xs: 'space050', sm: 'space080'}}
+    >
+      {bp === 'xs' && <StorybookCase title="Solid and minimal" />}
+      {presets.map((presetSuffix, index) => (
+        <React.Fragment key={presetSuffix}>
+          <StorybookCase
+            title={index === 0 && bp !== 'xs' ? 'Solid' : undefined}
+          >
+            <Flag overrides={{stylePreset: `flagSolid${presetSuffix}`}}>
+              {presetSuffix}
+            </Flag>
+          </StorybookCase>
+          <StorybookCase
+            title={index === 0 && bp !== 'xs' ? 'Minimal' : undefined}
+          >
+            <Flag overrides={{stylePreset: `flagMinimal${presetSuffix}`}}>
+              {presetSuffix}
+            </Flag>
+          </StorybookCase>
+        </React.Fragment>
+      ))}
+    </StorybookPage>
+  );
+};
 StoryIntents.storyName = 'Intents';
 
 export const StorySize = () => (
@@ -116,25 +133,25 @@ export const StoryVariations = () => (
         <IconFilledAddCircle />
       </Flag>
     </StorybookCase>
-    <GridLayoutItem>
+    <StorybookCase title="Leading minimal">
       <Flag overrides={{stylePreset: 'flagMinimalPrimary'}}>
         <IconFilledAddCircle />
         Flag
       </Flag>
-    </GridLayoutItem>
-    <GridLayoutItem>
+    </StorybookCase>
+    <StorybookCase title="Trailing minimal">
       <Flag overrides={{stylePreset: 'flagMinimalPrimary'}}>
         Flag
         <IconFilledAddCircle />
       </Flag>
-    </GridLayoutItem>
-    <GridLayoutItem>
+    </StorybookCase>
+    <StorybookCase title="Leading and trailing minimal">
       <Flag overrides={{stylePreset: 'flagMinimalPrimary'}}>
         <IconFilledAddCircle />
         Flag
         <IconFilledAddCircle />
       </Flag>
-    </GridLayoutItem>
+    </StorybookCase>
   </StorybookPage>
 );
 StoryVariations.storyName = 'Variations';

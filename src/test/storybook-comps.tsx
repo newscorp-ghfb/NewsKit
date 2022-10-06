@@ -103,11 +103,14 @@ export const StorybookPage = ({children, ...rest}: GridLayoutProps) => (
   <GridLayout
     rowGap="space080"
     columnGap="space080"
-    columns="repeat(auto-fill, minmax(300px, 1fr))"
+    columns={{
+      xs: 'repeat(auto-fill, 1fr)',
+      sm: 'repeat(auto-fill, minmax(300px, 1fr))',
+    }}
     alignItems="start"
     overrides={{
-      marginBlock: 'space050',
-      marginInline: 'space040',
+      marginBlock: {xs: 'space030', sm: 'space050'},
+      marginInline: {xs: 'space020', sm: 'space040'},
     }}
     {...rest}
   >
