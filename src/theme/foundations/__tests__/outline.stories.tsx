@@ -142,7 +142,7 @@ const myCustomTheme = compileTheme(
 );
 
 export default {
-  title: 'NewsKit Light/outline',
+  title: 'Components/outline',
   component: () => 'None',
 };
 

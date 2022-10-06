@@ -344,6 +344,29 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    tutorials={{
+      introduction:
+        'Learn how to use the grid layout component effectively using the tutorials below.',
+      cards: [
+        {
+          title: 'Grid Layout tutorial',
+          description:
+            'Step-by-step guide for engineers to build a layout using the grid layout component.',
+          media: getIllustrationComponent('guides/grid-layout-guide/hero'),
+          href: '/getting-started/code/grid-layout-step-by-step/',
+        },
+        {
+          title: 'How to build a Section using Grid Layouts',
+          description:
+            'Guide in Figma for designers to use the grid layout component (internal only).',
+          media: getIllustrationComponent(
+            'components/grid-layout/tutorials/designers',
+          ),
+          href:
+            'https://www.figma.com/file/DkQzpgAZSze5ghznccAI7l/Grid-Layout-Guide',
+        },
+      ],
+    }}
     accessibility={{
       introduction: (
         <>

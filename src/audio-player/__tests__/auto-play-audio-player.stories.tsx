@@ -10,7 +10,7 @@ const AudioPlayerContainer = styled.div`
 `;
 
 export default {
-  title: 'NewsKit Light/auto-play-audio-player',
+  title: 'Components/auto-play-audio-player',
   component: () => 'None',
 };
 
@@ -26,4 +26,4 @@ export const StoryAutoPlayAudioPlayer = () => (
   </AudioPlayerContainer>
 );
 StoryAutoPlayAudioPlayer.storyName = 'auto-play-audio-player';
-StoryAutoPlayAudioPlayer.parameters = {eyes: {waitBeforeCapture: 5000}};
+StoryAutoPlayAudioPlayer.parameters = {eyes: {include: false}};

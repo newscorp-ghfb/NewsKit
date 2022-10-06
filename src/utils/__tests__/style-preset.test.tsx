@@ -5,8 +5,9 @@ import {
   getStylePresetFromTheme,
   GetStylePresetFromThemeOptions,
   getPresetStyles,
+  getSingleStylePreset,
 } from '../style';
-import {createTheme} from '../../theme';
+import {compileTheme, createTheme} from '../../theme';
 import {deepMerge} from '../deep-merge';
 
 const TestSurface = styled.div<GetStylePresetFromThemeOptions>`
@@ -906,5 +907,26 @@ describe('getPresetStyles', () => {
       {filterStyles: ['backgroundColor']},
     );
     expect(result).toEqual({backgroundColor: 'red'});
+  });
+});
+
+describe('getSingleStylePreset', () => {
+  test('return empty when stylePreset does not exist', () => {
+    const result = getSingleStylePreset(
+      compileTheme(themeIconButtonMinimalPrimary),
+      'base',
+      'placeholderColor',
+      'nonExistinOne',
+    );
+    expect(result).toEqual('');
+  });
+  test('return correct state from stylePreset', () => {
+    const result = getSingleStylePreset(
+      compileTheme(themeIconButtonMinimalPrimary),
+      'hover',
+      'backgroundColor',
+      'iconButtonMinimalPrimary',
+    );
+    expect(result).toEqual('#ECF1FF');
   });
 });

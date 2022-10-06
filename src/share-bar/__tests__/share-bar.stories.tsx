@@ -59,7 +59,7 @@ const ShareOnFacebookBtn = () => (
 );
 
 export default {
-  title: 'NewsKit Light/share-bar',
+  title: 'Components/share-bar',
   component: () => 'None',
 };
 

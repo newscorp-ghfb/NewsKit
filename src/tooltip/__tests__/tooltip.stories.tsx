@@ -11,7 +11,7 @@ import {Stack} from '../../stack';
 import {LinkInline, LinkStandalone} from '../../link';
 
 export default {
-  title: 'NewsKit Light/tooltip',
+  title: 'Components/tooltip',
   component: () => 'None',
 };
 
@@ -618,8 +618,34 @@ StoryTooltipPlacementsVisualTest.storyName = 'tooltip-placements-visual-test';
 
 export const StoryTooltipNoPointer = () => (
   <>
-    <StorybookSubHeading>Tooltip no pointer</StorybookSubHeading>
+    <StorybookSubHeading>Tooltip - no pointer (default)</StorybookSubHeading>
     <Tooltip content="Tooltip content" placement="right" hidePointer>
+      <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+        Button
+      </Button>
+    </Tooltip>
+    <StorybookSubHeading>
+      Tooltip - no pointer distance (increased)
+    </StorybookSubHeading>
+    <Tooltip
+      content="Tooltip content"
+      placement="right"
+      hidePointer
+      overrides={{distance: 'space080'}}
+    >
+      <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+        Button
+      </Button>
+    </Tooltip>
+    <StorybookSubHeading>
+      Tooltip - no pointer distance (zero)
+    </StorybookSubHeading>
+    <Tooltip
+      content="Tooltip content"
+      placement="right"
+      hidePointer
+      overrides={{distance: 'space000'}}
+    >
       <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button
       </Button>

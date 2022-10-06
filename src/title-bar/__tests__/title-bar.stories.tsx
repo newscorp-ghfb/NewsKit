@@ -40,7 +40,7 @@ const HeadlineContainer = styled.span`
 `;
 
 export default {
-  title: 'NewsKit Light/title-bar',
+  title: 'Components/title-bar',
   component: () => 'None',
   disabledRules: ['heading-order'],
 };

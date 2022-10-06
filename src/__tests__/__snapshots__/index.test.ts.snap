@@ -50,6 +50,7 @@ Array [
   "FormInputLabel",
   "FormInputRadioButton",
   "FormInputSelect",
+  "FormInputTextArea",
   "FormInputTextField",
   "Global",
   "Grid",
@@ -228,6 +229,7 @@ Array [
   "useTheme",
   "withDefaultProps",
   "withInstrumentation",
+  "withOwnTheme",
   "withTheme",
 ]
 `;

@@ -1,9 +1,16 @@
 import React from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {withPerformance} from 'storybook-addon-performance';
-
-import {NewsKitProvider, styled, getColorCssFromTheme} from '../src';
+import {DocsContext} from '@storybook/addon-docs';
+import {
+  NewsKitProvider,
+  styled,
+  getColorCssFromTheme,
+  newskitLightTheme,
+  ThemeProvider,
+} from '../src';
 import {getThemeObject} from '../src/test/theme-select-object';
+import {StoryDocsHeader, Stories} from '../src/test/storybook-comps';
 
 const unlimitedScenarios = [
   'grid',
@@ -14,9 +21,9 @@ const unlimitedScenarios = [
   'image',
   'image-e2e',
   'grid-layout',
-  'theme-checker',
   'popover',
   'audio-player-composable',
+  'text-area',
 ];
 
 const BackgroundColor = styled.div`
@@ -48,9 +55,7 @@ const Background = ({children}) => (
   </BackgroundColor>
 );
 const LimitSizeDecorator = ({children}) => <Container>{children}</Container>;
-const MediaQueryProviderDecorator = ({children}) => (
-  <MediaQueryProvider>{children}</MediaQueryProvider>
-);
+
 const NoDecorator = ({children}) => <>{children}</>;
 
 export const parameters = {
@@ -63,6 +68,11 @@ export const parameters = {
   },
   viewport: {
     viewports: INITIAL_VIEWPORTS,
+  },
+  options: {
+    storySort: {
+      order: ['Welcome', '*'],
+    },
   },
   backgrounds: {
     values: [
@@ -88,15 +98,31 @@ export const parameters = {
       },
     ],
   },
+  docs: {
+    // We create a custom Docs page, using of our components for the header
+    page: () => {
+      const docsContext = React.useContext(DocsContext);
+      return (
+        <ThemeProvider theme={newskitLightTheme}>
+          <StoryDocsHeader context={docsContext} />
+          <Stories context={docsContext} includePrimary />
+        </ThemeProvider>
+      );
+    },
+  },
+  viewMode: 'docs',
 };
 
 export const decorators = [
   // Add wrapper around stories to limit their size
   (Story, context) => {
     const kind = context.kind.split('/')[1];
-    const Decorator = unlimitedScenarios.includes(kind)
-      ? NoDecorator
-      : LimitSizeDecorator;
+    const Decorator =
+      unlimitedScenarios.includes(kind) ||
+      context.componentId === 'welcome' ||
+      context.componentId === 'theme-checker'
+        ? NoDecorator
+        : LimitSizeDecorator;
     return (
       <Decorator>
         <Story />

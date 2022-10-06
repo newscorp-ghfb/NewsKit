@@ -1,0 +1,861 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewStartScreen renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-1 {
+    margin: -16px 4px 0 4px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-1 {
+    margin: -16px 4px 0 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-1 {
+    margin: -16px 4px 0 4px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    margin: -24px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    margin: -24px 0px 0 0px;
+  }
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-2 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-3 {
+  margin: 0;
+  color: #09111C;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-block-start: 4px;
+  margin-block-end: 24px;
+}
+
+.emotion-3 svg {
+  fill: #09111C;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-20px/2);
+  margin-bottom: calc(-20px/2);
+  margin-block-start: 4px;
+  margin-block-end: 48px;
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(20px/2);
+  margin-bottom: calc(20px/2);
+}
+
+.emotion-6 {
+  display: inline-block;
+  color: #3358CC;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6 svg {
+  fill: #3358CC;
+}
+
+.emotion-6:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-6:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:active:not(:disabled) svg {
+  fill: #14328D;
+}
+
+.emotion-6:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-6:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-9 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-11 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E3F54;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11.emotion-11 {
+  width: 16px;
+  height: 16px;
+}
+
+<div
+    class="DocSearch-NewStartScreen"
+  >
+    <div
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <p
+            class="emotion-3"
+          >
+            Getting started
+          </p>
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/getting-started/design/design-overview/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Design overview
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/getting-started/code/engineering-overview/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Engineering overview
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/getting-started/code/instrumentation/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Instrumentation setup
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-2"
+        >
+          <p
+            class="emotion-3"
+          >
+            Popular searches
+          </p>
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/components/overview/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Components
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/theme/overview/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Theme
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/components/button/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Button
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-2"
+        >
+          <p
+            class="emotion-3"
+          >
+            Presets
+          </p>
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/theme/presets/style-presets/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Style presets
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/theme/presets/transition-presets/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Transition presets
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/theme/presets/typography-presets/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Typography presets
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-2"
+        >
+          <p
+            class="emotion-3"
+          >
+            Foundations
+          </p>
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/theme/foundation/design-tokens/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Design tokens
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/theme/foundation/colours/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Colours
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="emotion-6"
+                href="/theme/foundation/fonts/"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      Fonts
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

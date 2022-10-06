@@ -78,6 +78,24 @@ export const routes = [
             cardTitle: 'Engineering Quickstart Guide',
           },
           {
+            title: 'Grid Layout step-by-step',
+            page: true,
+            id: '/getting-started/code/grid-layout-step-by-step',
+            description:
+              'The grid layout component is a wrapper around CSS grid that maps all CSS grid properties to react props.',
+            illustration: 'guides/grid-layout-guide/hero',
+            cardTitle: 'Grid Layout step-by-step',
+          },
+          {
+            title: 'Form step-by-step',
+            page: true,
+            id: '/getting-started/code/form-step-by-step',
+            description:
+              'Step-by-step guide for engineers to build a form using the form subcomponents.',
+            illustration: 'guides/form-guide/hero',
+            cardTitle: 'Form step-by-step',
+          },
+          {
             title: 'Instrumentation setup',
             page: true,
             id: '/getting-started/code/instrumentation',
@@ -389,6 +407,14 @@ export const routes = [
             id: '/components/text-input',
             description: 'Lets users enter and edit text.',
             illustration: 'components/text-input-illustration',
+          },
+          {
+            title: 'Text Area',
+            page: true,
+            id: '/components/text-area',
+            description:
+              'Text areas allow users to enter and edit multi-line text. They typically appear in forms.',
+            illustration: 'components/text-area-illustration',
           },
         ],
       },

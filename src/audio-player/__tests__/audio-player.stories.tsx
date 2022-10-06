@@ -1,6 +1,6 @@
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {AudioPlayer} from '..';
+import {AudioPlayer as OriginalAudioPlayer, AudioPlayerProps} from '..';
 import {styled} from '../../utils/style';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {
@@ -8,6 +8,15 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {
+  DISABLE_ANIMATIONS_SCRIPT,
+  useAllPlayersCanPlayCheck,
+  VisualTestAudioPlayer,
+} from '../../utils/audio-tests';
+
+const AudioPlayer = (props: AudioPlayerProps) => (
+  <VisualTestAudioPlayer comp={OriginalAudioPlayer} props={props} />
+);
 
 const liveAudioProps = {
   src: 'https://radio.talkradio.co.uk/stream',
@@ -135,230 +144,285 @@ const audioPlayerCustomThemeObject: CreateThemeArgs = {
   },
 };
 
-export const StoryAudioPlayer = () => (
-  <>
-    <StorybookHeading>Recored Audio Player</StorybookHeading>
-    <StorybookSubHeading>default</StorybookSubHeading>
-    <AudioPlayerContainer>
-      <AudioPlayer
-        {...recordedAudioProps}
-        ariaLandmark="audio player default"
-      />
-    </AudioPlayerContainer>
-    <StorybookSubHeading>with overrides</StorybookSubHeading>
-    <AudioPlayerContainer dark>
-      <AudioPlayer
-        {...recordedAudioProps}
-        popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
-        ariaLandmark="audio player with overrides"
-        overrides={{
-          seekBar: {
-            slider: {
-              track: {
-                stylePreset: 'customAudioPlayerSeekBarTrack',
-                size: 'sizing030',
+export const StoryAudioPlayer = () => {
+  const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(3);
+  return (
+    <>
+      {allPlayersCanPlay && <div id="storyAudioPlayerReady" />}
+      <StorybookHeading>Audio Player</StorybookHeading>
+      <StorybookSubHeading>default</StorybookSubHeading>
+      <AudioPlayerContainer>
+        <AudioPlayer
+          onCanPlay={onCanPlay}
+          {...recordedAudioProps}
+          ariaLandmark="audio player default"
+        />
+      </AudioPlayerContainer>
+      <StorybookSubHeading>with overrides</StorybookSubHeading>
+      <AudioPlayerContainer dark>
+        <AudioPlayer
+          onCanPlay={onCanPlay}
+          {...recordedAudioProps}
+          popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
+          ariaLandmark="audio player with overrides"
+          overrides={{
+            seekBar: {
+              slider: {
+                track: {
+                  stylePreset: 'customAudioPlayerSeekBarTrack',
+                  size: 'sizing030',
+                },
+                indicator: {
+                  stylePreset: 'customAudioPlayerSeekBarIndicator',
+                },
+                thumb: {
+                  stylePreset: 'customAudioPlayerThumb',
+                  size: 'sizing050',
+                },
+                thumbLabel: {
+                  stylePreset: 'customAudioPlayerLabels',
+                },
+                labels: {
+                  stylePreset: 'customAudioPlayerLabels',
+                  typographyPreset: 'utilityMeta010',
+                },
               },
-              indicator: {
-                stylePreset: 'customAudioPlayerSeekBarIndicator',
-              },
-              thumb: {
-                stylePreset: 'customAudioPlayerThumb',
-                size: 'sizing050',
-              },
-              thumbLabel: {
-                stylePreset: 'customAudioPlayerLabels',
-              },
-              labels: {
-                stylePreset: 'customAudioPlayerLabels',
-                typographyPreset: 'utilityMeta010',
-              },
-            },
-            buffering: {
-              stylePreset: 'customAudioPlayerSeekBarBuffering',
-            },
-          },
-          controls: {
-            space: 'space040',
-            previousButton: {
-              stylePreset: 'customAudioPlayerPreviousButton',
-            },
-            replayButton: {
-              stylePreset: 'customAudioPlayerReplayButton',
-            },
-            playPauseButton: {
-              stylePreset: 'customAudioPlayPauseButton',
-              loadingIndicator: {
-                stylePreset: 'customAudioPlayPauseButtonLoading',
+              buffering: {
+                stylePreset: 'customAudioPlayerSeekBarBuffering',
               },
             },
-            forwardButton: {
-              stylePreset: 'customAudioForwardButton',
-            },
-            nextButton: {
-              stylePreset: 'customAudioNextButton',
-            },
-            popoutButton: {
-              stylePreset: 'customAudioPopoutButton',
-            },
-          },
-          volumeControl: {
-            slider: {
-              track: {
-                stylePreset: 'customAudioPlayerSeekBarTrack',
-                size: 'sizing010',
+            controls: {
+              space: 'space040',
+              previousButton: {
+                stylePreset: 'customAudioPlayerPreviousButton',
               },
-              indicator: {
-                stylePreset: 'customAudioPlayerSeekBarIndicator',
+              replayButton: {
+                stylePreset: 'customAudioPlayerReplayButton',
               },
-              thumb: {
-                stylePreset: 'customAudioPlayerThumb',
-                size: 'sizing040',
+              playPauseButton: {
+                stylePreset: 'customAudioPlayPauseButton',
+                loadingIndicator: {
+                  stylePreset: 'customAudioPlayPauseButtonLoading',
+                },
               },
-              thumbLabel: {
-                stylePreset: 'customAudioPlayerLabels',
+              forwardButton: {
+                stylePreset: 'customAudioForwardButton',
               },
-              labels: {
-                stylePreset: 'customAudioPlayerLabels',
+              nextButton: {
+                stylePreset: 'customAudioNextButton',
+              },
+              popoutButton: {
+                stylePreset: 'customAudioPopoutButton',
               },
             },
-            button: {
-              stylePreset: 'customVolumeControlButton',
+            volumeControl: {
+              slider: {
+                track: {
+                  stylePreset: 'customAudioPlayerSeekBarTrack',
+                  size: 'sizing010',
+                },
+                indicator: {
+                  stylePreset: 'customAudioPlayerSeekBarIndicator',
+                },
+                thumb: {
+                  stylePreset: 'customAudioPlayerThumb',
+                  size: 'sizing040',
+                },
+                thumbLabel: {
+                  stylePreset: 'customAudioPlayerLabels',
+                },
+                labels: {
+                  stylePreset: 'customAudioPlayerLabels',
+                },
+              },
+              button: {
+                stylePreset: 'customVolumeControlButton',
+              },
             },
-          },
-        }}
-      />
-    </AudioPlayerContainer>
-    <StorybookHeading>Live Audio Player</StorybookHeading>
-    <AudioPlayerContainer>
-      <AudioPlayer {...liveAudioProps} ariaLandmark="audio player live" />
-    </AudioPlayerContainer>
-  </>
-);
+          }}
+        />
+      </AudioPlayerContainer>
+      <StorybookHeading>Live Audio Player</StorybookHeading>
+      <AudioPlayerContainer>
+        <AudioPlayer
+          onCanPlay={onCanPlay}
+          {...liveAudioProps}
+          ariaLandmark="audio player live"
+        />
+      </AudioPlayerContainer>
+    </>
+  );
+};
 StoryAudioPlayer.storyName = 'audio-player';
-StoryAudioPlayer.parameters = {eyes: {waitBeforeCapture: 10000}};
-
-export const StoryAudioPlayerLogicalOverrides = () => (
-  <>
-    <StorybookSubHeading>with overrides</StorybookSubHeading>
-    <AudioPlayerContainer>
-      <AudioPlayer
-        {...recordedAudioProps}
-        popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
-        ariaLandmark="audio player with logical overrides"
-        overrides={{
-          marginBlock: 'space050',
-          paddingBlock: 'space050',
-        }}
-      />
-    </AudioPlayerContainer>
-  </>
-);
-StoryAudioPlayerLogicalOverrides.storyName = 'audio-player-logical-overrides';
-
-export const StoryRecordedAudioPlayerWithOnplay = () => (
-  <AudioPlayerContainer>
-    <AudioPlayer
-      src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3"
-      autoPlay
-      preload="auto"
-      disableNextTrack
-      disablePreviousTrack
-      ariaLandmark="audio player with onPlay"
-      onPlay={() => {}}
-    />
-  </AudioPlayerContainer>
-);
-StoryRecordedAudioPlayerWithOnplay.storyName =
-  'recorded-audio-player-with-onPlay';
-StoryRecordedAudioPlayerWithOnplay.parameters = {
-  eyes: {waitBeforeCapture: 5000},
+StoryAudioPlayer.parameters = {
+  eyes: {
+    waitBeforeCapture: '#storyAudioPlayerReady',
+  },
 };
 
-export const StoryRecordedWithControls = () => (
-  <>
-    <StorybookHeading>Recored Audio Player</StorybookHeading>
-    <StorybookSubHeading>with popout link</StorybookSubHeading>
-    <AudioPlayerContainer>
-      <AudioPlayer
-        {...recordedAudioProps}
-        ariaLandmark="audio player with popout link"
-        popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
-      />
-    </AudioPlayerContainer>
-    <StorybookSubHeading>with controls</StorybookSubHeading>
-    <AudioPlayerContainer>
-      <AudioPlayer
-        {...recordedAudioProps}
-        onNextTrack={alert('Next track clicked!')}
-        onPreviousTrack={alert('Previous track clicked!')}
-        ariaLandmark="audio player with controls"
-      />
-    </AudioPlayerContainer>
-    <StorybookSubHeading>with disabled controls</StorybookSubHeading>
-    <AudioPlayerContainer>
-      <AudioPlayer
-        {...recordedAudioProps}
-        onNextTrack={() => {}}
-        onPreviousTrack={() => {}}
-        disableNextTrack
-        disablePreviousTrack
-        ariaLandmark="audio player with disabled controls"
-      />
-    </AudioPlayerContainer>
-  </>
-);
-StoryRecordedWithControls.storyName = 'recorded-with-controls';
+export const StoryAudioPlayerLogicalOverrides = () => {
+  const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
+  return (
+    <>
+      {allPlayersCanPlay && <div id="storyAudioPlayerLogicalOverridesReady" />}
+      <StorybookSubHeading>with overrides</StorybookSubHeading>
+      <AudioPlayerContainer>
+        <AudioPlayer
+          id="ap-logical-props"
+          {...recordedAudioProps}
+          popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
+          ariaLandmark="audio player with logical overrides"
+          overrides={{
+            marginBlock: 'space050',
+            paddingBlock: 'space050',
+          }}
+          onCanPlay={onCanPlay}
+        />
+      </AudioPlayerContainer>
+    </>
+  );
+};
+StoryAudioPlayerLogicalOverrides.storyName = 'audio-player-logical-overrides';
+StoryAudioPlayerLogicalOverrides.parameters = {
+  eyes: {
+    waitBeforeCapture: '#storyAudioPlayerLogicalOverridesReady',
+  },
+};
 
-export const StoryRecordedWithHiddenControls = () => (
+export const StoryAudioPlayerLoadingState = () => (
   <>
-    <StorybookHeading>Recored Audio Player</StorybookHeading>
-    <StorybookSubHeading>with hidden volumne controls</StorybookSubHeading>
+    <StorybookSubHeading>Loading state</StorybookSubHeading>
     <AudioPlayerContainer>
       <AudioPlayer
         {...recordedAudioProps}
-        onNextTrack={alert('Next track clicked!')}
-        onPreviousTrack={alert('Previous track clicked!')}
-        ariaLandmark="audio player with hidden volumne controls"
-        hideVolumeControl
-      />
-    </AudioPlayerContainer>
-    <StorybookSubHeading>with hidden previous track button</StorybookSubHeading>
-    <AudioPlayerContainer>
-      <AudioPlayer
-        {...recordedAudioProps}
-        hidePreviousTrack
-        ariaLandmark="audio player with hidden previous track"
-        popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
-      />
-    </AudioPlayerContainer>
-    <StorybookSubHeading>with hidden seek buttons</StorybookSubHeading>
-    <AudioPlayerContainer>
-      <AudioPlayer
-        {...recordedAudioProps}
-        onNextTrack={() => {}}
-        onPreviousTrack={() => {}}
-        disableNextTrack
-        disablePreviousTrack
-        hideSeekButtons
-        ariaLandmark="audio player with hidden seek buttons"
-      />
-    </AudioPlayerContainer>
-    <StorybookSubHeading>with hide all controls</StorybookSubHeading>
-    <AudioPlayerContainer>
-      <AudioPlayer
-        {...recordedAudioProps}
-        hidePreviousTrack
-        hideSeekButtons
-        ariaLandmark="audio player with all hidden"
+        src=""
+        ariaLandmark="audio player in loading state"
       />
     </AudioPlayerContainer>
   </>
 );
-StoryRecordedWithHiddenControls.storyName = 'recorded-with-hidden-controls';
-StoryRecordedWithControls.parameters = {eyes: {waitBeforeCapture: 10000}};
+StoryAudioPlayerLoadingState.storyName = 'audio-player-loading-state';
+StoryAudioPlayerLoadingState.parameters = {
+  eyes: {
+    scriptHooks: {
+      beforeCaptureScreenshot: DISABLE_ANIMATIONS_SCRIPT,
+    },
+  },
+};
+
+export const StoryAudioPlayerWithControls = () => {
+  const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(3);
+  return (
+    <>
+      {allPlayersCanPlay && <div id="storyAudioPlayerWithControlsReady" />}
+      <StorybookHeading>Audio Player</StorybookHeading>
+      <StorybookSubHeading>with popout link</StorybookSubHeading>
+      <AudioPlayerContainer>
+        <AudioPlayer
+          {...recordedAudioProps}
+          ariaLandmark="audio player with popout link"
+          popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
+          onCanPlay={onCanPlay}
+        />
+      </AudioPlayerContainer>
+      <StorybookSubHeading>with controls</StorybookSubHeading>
+      <AudioPlayerContainer>
+        <AudioPlayer
+          {...recordedAudioProps}
+          onNextTrack={alert('Next track clicked!')}
+          onPreviousTrack={alert('Previous track clicked!')}
+          ariaLandmark="audio player with controls"
+          onCanPlay={onCanPlay}
+        />
+      </AudioPlayerContainer>
+      <StorybookSubHeading>with disabled controls</StorybookSubHeading>
+      <AudioPlayerContainer>
+        <AudioPlayer
+          {...recordedAudioProps}
+          onNextTrack={() => {}}
+          onPreviousTrack={() => {}}
+          disableNextTrack
+          disablePreviousTrack
+          ariaLandmark="audio player with disabled controls"
+          onCanPlay={onCanPlay}
+        />
+      </AudioPlayerContainer>
+    </>
+  );
+};
+StoryAudioPlayerWithControls.storyName = 'audio-player-with-controls';
+StoryAudioPlayerWithControls.parameters = {
+  eyes: {
+    waitBeforeCapture: '#storyAudioPlayerWithControlsReady',
+  },
+};
+
+export const StoryAudioPlayerWithHiddenControls = () => {
+  const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(4);
+  return (
+    <>
+      {allPlayersCanPlay && (
+        <div id="storyAudioPlayerWithHiddenControlsReady" />
+      )}
+      <StorybookHeading>Audio Player</StorybookHeading>
+      <StorybookSubHeading>with hidden volume controls</StorybookSubHeading>
+      <AudioPlayerContainer>
+        <AudioPlayer
+          {...recordedAudioProps}
+          onNextTrack={alert('Next track clicked!')}
+          onPreviousTrack={alert('Previous track clicked!')}
+          ariaLandmark="audio player with hidden volumne controls"
+          hideVolumeControl
+          onCanPlay={onCanPlay}
+        />
+      </AudioPlayerContainer>
+      <StorybookSubHeading>
+        with hidden previous track button
+      </StorybookSubHeading>
+      <AudioPlayerContainer>
+        <AudioPlayer
+          {...recordedAudioProps}
+          hidePreviousTrack
+          ariaLandmark="audio player with hidden previous track"
+          onCanPlay={onCanPlay}
+        />
+      </AudioPlayerContainer>
+      <StorybookSubHeading>with hidden seek buttons</StorybookSubHeading>
+      <AudioPlayerContainer>
+        <AudioPlayer
+          {...recordedAudioProps}
+          onNextTrack={() => {}}
+          onPreviousTrack={() => {}}
+          disableNextTrack
+          disablePreviousTrack
+          hideSeekButtons
+          ariaLandmark="audio player with hidden seek buttons"
+          onCanPlay={onCanPlay}
+        />
+      </AudioPlayerContainer>
+      <StorybookSubHeading>with hide all controls</StorybookSubHeading>
+      <AudioPlayerContainer>
+        <AudioPlayer
+          {...recordedAudioProps}
+          hidePreviousTrack
+          hideSeekButtons
+          ariaLandmark="audio player with all hidden"
+          onCanPlay={onCanPlay}
+        />
+      </AudioPlayerContainer>
+    </>
+  );
+};
+StoryAudioPlayerWithHiddenControls.storyName =
+  'audio-player-with-hidden-controls';
+StoryAudioPlayerWithHiddenControls.parameters = {
+  eyes: {
+    waitBeforeCapture: '#storyAudioPlayerWithHiddenControlsReady',
+  },
+};
 
 export default {
-  title: 'NewsKit Light/audio-player',
+  title: 'Components/audio-player',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
@@ -372,5 +436,4 @@ export default {
       </ThemeProvider>
     ),
   ],
-  parameters: {eyes: {waitBeforeCapture: 10000}},
 };
