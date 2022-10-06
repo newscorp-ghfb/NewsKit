@@ -1185,11 +1185,6 @@ workflows:
           requires:
             - build_docs_pr_with_no_base_url
       - test_e2e_docs:
-          name: test_e2e_docs_pr
-          context: ncu-product-platforms-context
-          requires:
-            - build_docs_pr_with_no_base_url
-            - install_cypress
           name: test_e2e_docs_prod
           context: ncu-newskit-site-prod
           requires:
