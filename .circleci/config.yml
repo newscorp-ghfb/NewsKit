@@ -1212,7 +1212,7 @@ workflows:
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-            - test_e2e_docs_pr
+            - test_e2e_docs_prod
       - publish_npm:
           name: publish_npm_pr
           context: ncu-product-platforms-context
