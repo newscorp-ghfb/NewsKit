@@ -24,7 +24,6 @@ describe('Documentation Site - header-navigation component', () => {
 
     it('should contain burger menu when on mobile', () => {
       cy.mockConsentAndVisit('/about/introduction');
-      cy.acceptCookieBanner();
       cy.get(sidebarTestID).should('exist').and('not.be.visible');
       cy.get(hamburgerIconTestID).first().click();
       cy.get(sidebarTestID).should('be.visible');
