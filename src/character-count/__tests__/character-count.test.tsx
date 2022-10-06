@@ -37,6 +37,33 @@ describe('CharacterCount', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test('displays state passed', async () => {
+    const {getByTestId, asFragment} = renderWithImplementation(
+      InputWithCharacterCount,
+      {
+        children: ref => (
+          <>
+            <TextArea
+              ref={ref}
+              data-testid="text-area"
+              maxLength={MAX_LENGTH}
+            />
+            <CharacterCount
+              inputRef={ref}
+              data-testid="character-count"
+              state="invalid"
+            />
+          </>
+        ),
+      },
+    );
+    const characterCount = getByTestId('character-count');
+    expect(characterCount.textContent).toEqual(
+      `You have ${MAX_LENGTH} characters remaining`,
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   test('applies overrides', () => {
     const {asFragment} = renderWithImplementation(InputWithCharacterCount, {
       children: ref => (

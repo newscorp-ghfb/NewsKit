@@ -328,6 +328,166 @@ exports[`CharacterCount displays no message if no max or min specified 1`] = `
 </DocumentFragment>
 `;
 
+exports[`CharacterCount displays state passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  cursor: default;
+  resize: vertical;
+  width: 100%;
+  height: 120px;
+  min-height: 48px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #919191;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #3B3B3B;
+  text-overflow: ellipsis;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-block-end: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
+}
+
+.emotion-0 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-0:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:disabled {
+  border-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-0::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #6A6A6A;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #6A6A6A;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #6A6A6A;
+}
+
+.emotion-0::placeholder {
+  color: #6A6A6A;
+}
+
+<textarea
+    class="emotion-0"
+    data-testid="text-area"
+    maxlength="100"
+  />
+  .emotion-0 {
+  margin: 0;
+  color: #D60000;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  min-height: 12px;
+  margin-block-end: 8px;
+  padding-inline: 8px;
+}
+
+.emotion-0::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-0::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+<p
+    class="emotion-0"
+    data-testid="character-count"
+  >
+    You have 100 characters remaining
+  </p>
+</DocumentFragment>
+`;
+
 exports[`CharacterCount with maxLength displays starting number of characters remaining 1`] = `
 <DocumentFragment>
   .emotion-0 {

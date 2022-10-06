@@ -790,7 +790,7 @@ describe('FormInput', () => {
     });
   });
 
-  describe.only('FormInputCharacterCount', () => {
+  describe('FormInputCharacterCount', () => {
     const MAX_LENGTH = 100;
     const MIN_LENGTH = 20;
     const MSG = 'some text';
@@ -813,6 +813,58 @@ describe('FormInput', () => {
         rules: {
           minLength: {value: MIN_LENGTH, message: 'MSG'},
           maxLength: {value: MAX_LENGTH, message: 'MSG'},
+        },
+        children: (
+          <>
+            <FormInputTextField data-testid="text-area" />
+            <FormInputCharacterCount data-testid="character-count" />
+          </>
+        ),
+      });
+      const characterCount = getByTestId('character-count');
+      expect(characterCount.textContent).toEqual(
+        `Please enter a minimum of ${MIN_LENGTH} characters`,
+      );
+      const textArea = getByTestId('text-area');
+      await act(async () => {
+        await userEvent.type(textArea, generateString(MIN_LENGTH));
+      });
+      expect(characterCount.textContent).toEqual(
+        `You have ${MAX_LENGTH - MIN_LENGTH} characters remaining`,
+      );
+    });
+
+    test('handles string length args', async () => {
+      const {getByTestId} = renderWithImplementation(FormInput, {
+        rules: {
+          minLength: {value: `${MIN_LENGTH}`, message: 'MSG'},
+          maxLength: {value: `${MAX_LENGTH}`, message: 'MSG'},
+        },
+        children: (
+          <>
+            <FormInputTextField data-testid="text-area" />
+            <FormInputCharacterCount data-testid="character-count" />
+          </>
+        ),
+      });
+      const characterCount = getByTestId('character-count');
+      expect(characterCount.textContent).toEqual(
+        `Please enter a minimum of ${MIN_LENGTH} characters`,
+      );
+      const textArea = getByTestId('text-area');
+      await act(async () => {
+        await userEvent.type(textArea, generateString(MIN_LENGTH));
+      });
+      expect(characterCount.textContent).toEqual(
+        `You have ${MAX_LENGTH - MIN_LENGTH} characters remaining`,
+      );
+    });
+
+    test('handles no message config', async () => {
+      const {getByTestId} = renderWithImplementation(FormInput, {
+        rules: {
+          minLength: MIN_LENGTH as any,
+          maxLength: MAX_LENGTH as any,
         },
         children: (
           <>
