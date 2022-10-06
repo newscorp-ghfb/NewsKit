@@ -253,3 +253,40 @@ export const StoryHeadingLogicalProps = () => {
   );
 };
 StoryHeadingLogicalProps.storyName = 'heading-logical-props';
+
+export const StoryHeadingContainerQuery = () => (
+  <div style={{containerType: 'inline-size'}}>
+    <StorybookHeading>Heading - Media Query</StorybookHeading>
+
+    <H3
+      overrides={{
+        marginBlock: {
+          xs: 'space030',
+          md: 'space050',
+        },
+        typographyPreset: {
+          xs: 'editorialParagraph010',
+          md: 'editorialParagraph020',
+        },
+      }}
+    >
+      CSS Containment Module Level 3
+    </H3>
+    <StorybookHeading>Heading - Container Query</StorybookHeading>
+    <H3
+      overrides={{
+        marginBlock: {
+          '100px': 'space030',
+          '800px': 'space050',
+        },
+        typographyPreset: {
+          '100px': 'editorialParagraph010',
+          '800px': 'editorialParagraph020',
+        },
+      }}
+    >
+      CSS Containment Module Level 3
+    </H3>
+  </div>
+);
+StoryHeadingContainerQuery.storyName = 'heading-container-query';

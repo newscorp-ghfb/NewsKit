@@ -1,6 +1,10 @@
 import {Theme, BreakpointKeys} from '../../theme';
-import {isResponsive, getMediaQueryFromTheme} from '../responsive-helpers';
-import {filterObject} from '../filter-object';
+import {
+  isResponsive,
+  getMediaQueryFromTheme,
+  getContainerQuery,
+} from '../responsive-helpers';
+import {filterObject, rejectObject} from '../filter-object';
 import {getToken} from '../get-token';
 import {ThemeProp} from '../style-types';
 import {MQ} from './types';
@@ -76,7 +80,7 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
       ([a], [b]) =>
         mq.indexOf(a as BreakpointKeys) - mq.indexOf(b as BreakpointKeys),
     ) as any; // eslint-disable-line @typescript-eslint/no-explicit-any
-    const cssObject = presetKeys
+    const cssMediaQueryObject = presetKeys
       .filter(
         // Exclude invalid breakpoints and theme section keys
         ([breakpointKey, presetKey]) =>
@@ -114,7 +118,34 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
         return acc;
       }, {} as Record<string, unknown>);
 
-    return Object.entries(cssObject);
+    // get container queries
+    const containerKeys: [string, ThemeToken][] = Object.entries(
+      rejectObject(propKeys, mq),
+    ) as any; // eslint-disable-line @typescript-eslint/no-explicit-any
+
+    const cssContainerQueryObject = containerKeys.reduce(
+      (acc, [minWidth, presetKey]) => {
+        let preset = '' as Record<ThemeToken, unknown>[ThemeToken];
+        const MQtokens =
+          typeof presetKey === 'string' && (presetKey as string).split(' ');
+        if (themeKey === 'spacePresets' && isMQTokenArray(MQtokens)) {
+          preset = mapTokensArray(MQtokens);
+        } else {
+          preset =
+            section[presetKey] ||
+            (canHaveNonThemeValue &&
+              isValidUnit(themeKey, presetKey) &&
+              presetKey);
+        }
+
+        const mediaQuery = getContainerQuery(minWidth);
+        acc[mediaQuery] = preset;
+        return acc;
+      },
+      {} as Record<string, unknown>,
+    );
+
+    return Object.entries({...cssMediaQueryObject, ...cssContainerQueryObject});
   }
 
   const noMQtokens =

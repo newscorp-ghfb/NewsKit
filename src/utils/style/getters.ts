@@ -355,7 +355,7 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
     ? commonMQKeys
     : ['xs', ...commonMQKeys];
 
-  const cssObject = usedMQKeys.reduce((acc, mqKey, index) => {
+  const cssMediaQueryObject = usedMQKeys.reduce((acc, mqKey, index) => {
     const fromMqKey = mqKey;
     const toMqKey = usedMQKeys[index + 1] ? usedMQKeys[index + 1] : undefined;
 
@@ -380,5 +380,7 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
     return acc;
   }, {} as Record<string, unknown>) as CSSObject;
 
-  return cssObject;
+  const cssContentQueryObject = {};
+
+  return {...cssMediaQueryObject, ...cssContentQueryObject};
 };
