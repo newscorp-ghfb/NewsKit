@@ -1185,8 +1185,8 @@ workflows:
           requires:
             - build_docs_pr_with_no_base_url
       - test_e2e_docs:
-          name: test_e2e_docs_prod
-          context: ncu-newskit-site-prod
+          name: test_e2e_docs_pr
+          context: ncu-product-platforms-context
           requires:
             - build_docs_pr_with_no_base_url
             - install_cypress 
@@ -1212,7 +1212,7 @@ workflows:
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-            - test_e2e_docs_prod
+            - test_e2e_docs_pr
       - publish_npm:
           name: publish_npm_pr
           context: ncu-product-platforms-context
@@ -1249,7 +1249,7 @@ workflows:
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-            - test_e2e_docs_prod
+            - test_e2e_docs_pr
             - test_broken_links_docs_pr
       - init_aws:
           context: ncu-product-platforms-context
