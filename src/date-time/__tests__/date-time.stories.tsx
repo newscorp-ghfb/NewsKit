@@ -7,7 +7,7 @@ import {
 import {styled} from '../../utils';
 
 export default {
-  title: 'NewsKit Light/date-time',
+  title: 'Components/date-time',
   component: () => 'None',
 };
 

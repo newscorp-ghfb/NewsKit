@@ -13,7 +13,7 @@ const StyledDiv = styled.div`
 `;
 
 export default {
-  title: 'NewsKit Light/caption',
+  title: 'Components/caption',
   component: () => 'None',
 };
 

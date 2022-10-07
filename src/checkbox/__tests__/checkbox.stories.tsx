@@ -390,7 +390,7 @@ export const StoryCheckboxOutlineOverride = () => (
 StoryCheckboxOutlineOverride.storyName = 'checkbox-outline-override';
 
 export default {
-  title: 'NewsKit Light/checkbox',
+  title: 'Components/checkbox',
   component: () => 'None',
   disabledRules: [],
   decorators: [

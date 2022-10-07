@@ -16,7 +16,7 @@ const ContainerWithHeight = styled.div`
 `;
 
 export default {
-  title: 'NewsKit Light/image',
+  title: 'Components/image',
   component: () => 'None',
 };
 

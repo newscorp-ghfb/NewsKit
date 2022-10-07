@@ -22,7 +22,7 @@ const onSubmit = async () => {
 };
 
 export default {
-  title: 'NewsKit Light/email-input',
+  title: 'Components/email-input',
   component: () => 'None',
 };
 

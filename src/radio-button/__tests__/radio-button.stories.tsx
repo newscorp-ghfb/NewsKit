@@ -560,7 +560,7 @@ export const StoryRadioButtonOutlineOverrides = () => (
 StoryRadioButtonOutlineOverrides.storyName = 'radio-button-outline-overrides';
 
 export default {
-  title: 'NewsKit Light/radio-button',
+  title: 'Components/radio-button',
   component: () => 'None',
   disabledRules: [],
   decorators: [

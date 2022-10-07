@@ -322,7 +322,7 @@ export const StorySwitchOutlineOverrides = () => (
 StorySwitchOutlineOverrides.storyName = 'switch-outline-overrides';
 
 export default {
-  title: 'NewsKit Light/switch',
+  title: 'Components/switch',
   component: () => 'None',
   disabledRules: [],
   decorators: [

@@ -72,7 +72,7 @@ export const StoryOrderedListLogicalProps = () => (
 StoryOrderedListLogicalProps.storyName = 'ordered-list-logical-props';
 
 export default {
-  title: 'NewsKit Light/ordered-list',
+  title: 'Components/ordered-list',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

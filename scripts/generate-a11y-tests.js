@@ -32,7 +32,7 @@ const testsConfig = files
       const [titleObj] = getDefaultExport.declaration.properties.filter(
         node => node.key.name === 'title',
       );
-      const title = titleObj.value.value.replace('NewsKit Light/', '');
+      const title = titleObj.value.value.replace('Components/', '');
 
       const [disabledRulesObj] = getDefaultExport.declaration.properties.filter(
         node => node.key.name === 'disabledRules',

@@ -79,7 +79,7 @@ const VerticalContainer = styled.div`
 `;
 
 export default {
-  title: 'NewsKit Light/volume-control',
+  title: 'Components/volume-control',
   component: () => 'None',
 };
 

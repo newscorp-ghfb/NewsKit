@@ -10,6 +10,7 @@ import {
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {Visible} from '../../grid/visibility';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {TextBlock} from '../../text-block';
 
 const Square = styled(Block)`
   box-sizing: border-box;
@@ -47,7 +48,7 @@ const blockCustomThemeObject: CreateThemeArgs = {
       },
       transitionBlock: {
         base: {
-          backgroundColor: '{{colors.purple020}}',
+          backgroundColor: '{{colors.purple060}}',
         },
         hover: {
           backgroundColor: '{{colors.amber070}}',
@@ -99,10 +100,10 @@ export const StoryBlock = () => (
         spaceInset="spaceInset030"
         stylePreset="customBlock"
       >
-        <span>
+        <TextBlock>
           Block with margin spaceStack030, padding spaceInset030, style
           customBlock
-        </span>
+        </TextBlock>
       </Block>
     </Block>
     <StyledHr />
@@ -158,7 +159,9 @@ export const StoryBlock = () => (
         stylePreset="transitionBlock"
         transitionPreset="customBackgroundColorChange"
       >
-        <StorybookSpan>Block with transition</StorybookSpan>
+        <StorybookSpan stylePreset="inkLight010">
+          Block with transition
+        </StorybookSpan>
       </Block>
     </Block>
   </>
@@ -214,7 +217,7 @@ export const StoryBlockLogical = () => (
 StoryBlockLogical.storyName = 'block-logical';
 
 export default {
-  title: 'NewsKit Light/block',
+  title: 'Components/block',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

@@ -24,7 +24,7 @@ const myCustomTheme = createTheme({
 const title = 'We tell the stories that matter.';
 
 export default {
-  title: 'NewsKit Light/typography/heading',
+  title: 'Components/typography/heading',
   component: () => 'None',
 };
 
