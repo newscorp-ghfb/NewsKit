@@ -7,6 +7,7 @@ describe('ReleaseHeader', () => {
       change_level: 'patch',
       tag_name: 'v5.7.0',
       published_at: '2022-07-18T11:41:49Z',
+      created_at: '2022-07-18T11:41:49Z',
     });
     expect(asFragment()).toMatchSnapshot();
   });

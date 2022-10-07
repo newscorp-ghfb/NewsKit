@@ -23,6 +23,7 @@ describe('fetchGitHubReleases', () => {
     const data = await fetchGitHubReleases(13);
     expect(fetchMock).toHaveBeenCalledWith(
       'https://api.github.com/repos/newscorp-ghfb/newskit/releases?per_page=13',
+      undefined,
     );
     expect(data).toEqual(MOCK_DATA);
   });
@@ -97,9 +98,11 @@ describe('updateFinalReleaseInfo', () => {
     const after = updateFinalReleaseInfo({
       tag_name: 'trigger-release@5.7.0',
       name: 'Trigger release 5.7.0',
+
       body:
         'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...trigger-release@5.7.0',
       published_at: '2022-07-18T11:41:49Z',
+      created_at: '2022-07-18T11:41:49Z',
       html_url: 'https://github.com/newscorp-ghfb/newskit/releases/tag/v5.7.0',
     });
     expect(after.name).toEqual('v5.7.0');
@@ -115,6 +118,7 @@ describe('updateFinalReleaseInfo', () => {
       body:
         'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...trigger-rlease@5.7.0',
       published_at: '2022-07-18T11:41:49Z',
+      created_at: '2022-07-18T11:41:49Z',
       html_url: 'https://github.com/newscorp-ghfb/newskit/releases/tag/v5.7.0',
     });
     expect(after.name).toEqual('v5.7.0');
@@ -129,6 +133,7 @@ describe('updateFinalReleaseInfo', () => {
       name: 'v5.7.0',
       body: 'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...v5.7.0',
       published_at: '2022-07-18T11:41:49Z',
+      created_at: '2022-07-18T11:41:49Z',
       html_url: 'https://github.com/newscorp-ghfb/newskit/releases/tag/v5.7.0',
     });
     expect(after.name).toEqual('v5.7.0');

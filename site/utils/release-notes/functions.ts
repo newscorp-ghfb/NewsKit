@@ -3,17 +3,16 @@ import {FullRelease, Release} from './types';
 import {GITHUB_API_URL, GITHUB_URL, JIRA_URL, REPO} from './constants';
 
 export async function fetchGitHubReleases(per_page: number = 10) {
-  // TODO: real token
-  const ACCESS_TOKEN = '';
+  const ACCESS_TOKEN = process.env.GITHUB_TOKEN;
   const res = await fetch(
     `${GITHUB_API_URL}/repos/${REPO}/releases?per_page=${per_page}`,
-    {
-      headers: ACCESS_TOKEN
-        ? {
+    ACCESS_TOKEN
+      ? {
+          headers: {
             Authorization: `Bearer ${ACCESS_TOKEN}`,
-          }
-        : undefined,
-    },
+          },
+        }
+      : undefined,
   );
   const data = await res.json();
   return data;
