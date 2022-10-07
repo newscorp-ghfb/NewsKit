@@ -13,9 +13,9 @@ describe('useMediaQuery hooks', () => {
 
   it('useMediaQuery', () => {
     cy.viewport(480, 480);
-    cy.get('[data-testid="use-media-query"]').contains('smaller than 1280px');
+    cy.get('[data-testid="use-media-query"]').contains('sm: yes');
     cy.viewport(1600, 1600);
-    cy.get('[data-testid="use-media-query"]').contains('larger than 1280px');
+    cy.get('[data-testid="use-media-query"]').contains('xl: yes');
   });
   it('useMediaQueryObject', () => {
     viewPorts.forEach(({vp, value}) => {

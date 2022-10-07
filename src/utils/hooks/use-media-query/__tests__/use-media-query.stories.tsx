@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary */
 import * as React from 'react';
 import {useMediaQueryObject, useBreakpointKey, useMediaQuery} from '../index';
 
@@ -18,46 +17,24 @@ const StyledDiv = styled.div`
   background: orange;
 `;
 const ComponentMediaQuery = () => {
-  const isSmallDevice = useMediaQuery('only screen and (max-width : 767px)');
-  const isMediumDevice = useMediaQuery(
-    'only screen and (min-width : 768px) and (max-width : 1023px)',
+  const small = useMediaQuery('screen and (max-width : 767px)');
+  const medium = useMediaQuery(
+    'screen and (min-width : 768px) and (max-width : 1023px)',
   );
-  const isLargeDevice = useMediaQuery(
-    'only screen and (min-width : 1024px) and (max-width : 1439px)',
+  const large = useMediaQuery(
+    'screen and (min-width : 1024px) and (max-width : 1439px)',
   );
-  const isExtraLargeDevice = useMediaQuery(
-    'only screen and (min-width : 1440px)',
-  );
+  const extraLarge = useMediaQuery('screen and (min-width : 1440px)');
 
   return (
-    <div>
+    <div data-testid="use-media-query">
       Resize your browser windows to see changes.
       <br />
       <br />
-      <StyledDiv>
-        Small device (max-width : 767px): {}
-        {isSmallDevice === undefined ? 'unknown' : isSmallDevice ? 'yes' : 'no'}
-      </StyledDiv>
-      <StyledDiv>
-        Medium device (max-width : 1023px): {}
-        {isMediumDevice === undefined
-          ? 'unknown'
-          : isMediumDevice
-          ? 'yes'
-          : 'no'}
-      </StyledDiv>
-      <StyledDiv>
-        Large device (max-width : 1439px): {}
-        {isLargeDevice === undefined ? 'unknown' : isLargeDevice ? 'yes' : 'no'}
-      </StyledDiv>
-      <StyledDiv>
-        Extra large device (min-width : 1440px): {}
-        {isExtraLargeDevice === undefined
-          ? 'unknown'
-          : isExtraLargeDevice
-          ? 'yes'
-          : 'no'}
-      </StyledDiv>
+      <StyledDiv>sm: {small ? 'yes' : 'no'}</StyledDiv>
+      <StyledDiv>md: {medium ? 'yes' : 'no'}</StyledDiv>
+      <StyledDiv>lg: {large ? 'yes' : 'no'}</StyledDiv>
+      <StyledDiv>xl: {extraLarge ? 'yes' : 'no'}</StyledDiv>
     </div>
   );
 };
