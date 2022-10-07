@@ -11,5 +11,8 @@ export default {
     invalid: {
       color: '{{colors.inkNegative}}',
     },
+    valid: {
+      color: '{{colors.inkSubtle}}',
+    },
   },
 } as Record<string, StylePreset>;
