@@ -25,6 +25,7 @@ const unlimitedScenarios = [
   'popover',
   'audio-player-composable',
   'text-area',
+  'use-intersection-hook',
 ];
 
 const BackgroundColor = styled.div`

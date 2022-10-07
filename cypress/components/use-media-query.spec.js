@@ -11,10 +11,16 @@ describe('useMediaQuery hooks', () => {
     cy.wait(50);
   });
 
+  it('useMediaQuery', () => {
+    cy.viewport(480, 480);
+    cy.get('[data-testid="use-media-query"]').contains('smaller than 1280px');
+    cy.viewport(1600, 1600);
+    cy.get('[data-testid="use-media-query"]').contains('larger than 1280px');
+  });
   it('useMediaQueryObject', () => {
     viewPorts.forEach(({vp, value}) => {
       cy.viewport(vp, 480);
-      cy.get('[data-testid="use-media-query-hook"]').contains(value);
+      cy.get('[data-testid="use-media-query-object"]').contains(value);
     });
   });
   it('useBreakpoint', () => {

@@ -75,7 +75,6 @@ export * from './toast';
 export * from './tooltip';
 export * from './typography';
 export * from './unordered-list';
-export * from './utils/hooks/use-media-query';
 export * from './utils';
 export * from './video-player';
 export * from './volume-control';

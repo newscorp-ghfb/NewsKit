@@ -223,12 +223,18 @@ Array [
   "useAudioPlayerContext",
   "useBreakpointKey",
   "useClientSide",
+  "useControlled",
   "useFormContext",
   "useInstrumentation",
+  "useIntersection",
+  "useKeypress",
+  "useMediaQuery",
   "useMediaQueryObject",
+  "useResizeObserver",
   "useTheme",
   "withDefaultProps",
   "withInstrumentation",
+  "withOwnTheme",
   "withTheme",
 ]
 `;

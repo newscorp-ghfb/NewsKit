@@ -1,5 +1,5 @@
 import Layout from '../../../components/layout';
-import {Code} from '../../../components/code';
+import {Code, CodeFromFile} from '../../../components/code';
 import {LegacyBlock} from '../../../components/legacy-block';
 import Prop from '../../../components/prop';
 
@@ -8,8 +8,6 @@ export default Layout;
 # Hooks
 
 ## useMediaQueryObject
-
-### Overview
 
 `useMediaQueryObject` hook handles scenarios in which you want to render component based on media query breakpoints.
 This hooks also responds to the window resizing and returns the appropriate value for the new window size.
@@ -51,8 +49,6 @@ const dividerStylePreset = useMediaQueryObject(stylePresets);
 
 ## useBreakpointKey
 
-### Overview
-
 `useBreakpointKey` has a similar utility as `useMediaQueryObject`, it's intended usage is where you want to know the currently active breakpoint key `xs | sm | md | lg | xl`.
 
 ### Example
@@ -71,3 +67,65 @@ const dividerStylePreset = useMediaQueryObject(stylePresets);
 // the <Card will render verticaly on XS and SM screens and Horizontaly on the rest of breakpoints`}
 
 </Code>
+
+## useMediaQuery
+
+`useMediaQuery` is a custom hook used to help detect whether a single media query matches.
+
+Learn more about the API and background (https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia)
+
+### Example
+
+<Code>
+  {`import {useMediaQuery} from 'newskit';
+const reduceMotion = useMediaQuery('(prefers-reduced-motion: reduce)');
+// return true when reduce motion is detected`}
+</Code>
+
+## useControlled
+
+`useControlled` is a custom hook used to allow any component handle controlled and uncontrolled modes, and provide control over its internal state.
+Most NewsKit components use the useControlled for seamlessly managing both controlled or uncontrolled state scenarios.
+
+With useControlled, you can pass an initial state (using defaultValue) implying the component is uncontrolled,
+or you can pass a controlled value (using controlledValue) implying the component is controlled.
+
+### Example
+
+<CodeFromFile path="examples/hooks/use-controlled.tsx" tabIndex={0} />
+
+## useIntersection
+
+`useIntersection` is a custom hook that detects visibility of a component on the viewport using the IntersectionObserver API (https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) natively present in the browser.
+
+It is currently being used in the lazy-loading of our image component.
+
+It takes optionally `rootMargin` and `disabled` arguments and returns the full IntersectionObserver's entry object.
+
+### Example
+
+<CodeFromFile path="examples/hooks/use-intersection.tsx" tabIndex={0} />
+
+## useResizeObserver
+
+`useResizeObserver` is a custom hook that utilizes the resizeObserver API (https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver) to return the measurement of an element's size.
+
+It takes a ref and returns the width and the height from the observed element.
+
+It also takes an optional callback which allows you to access the full DOMRect object if required.
+
+### Example
+
+<CodeFromFile path="examples/hooks/use-resize-observer.tsx" tabIndex={0} />
+
+## useKeypress
+
+`useKeypress` is a custom hook that detects when the user is pressing one single key or multiple keys.
+
+It takes a key or an array of keys, a call back function and some optional arguments like `enabled`, `eventType`, `target` and `preventDefault`;
+
+This hook is currently being used in the audio player, modal & drawer.
+
+### Example
+
+<CodeFromFile path="examples/hooks/use-keypress.tsx" tabIndex={0} />
