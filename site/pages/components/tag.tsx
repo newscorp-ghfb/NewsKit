@@ -8,6 +8,7 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {UsageKind} from '../../components/usage-card';
 import {LayoutProps} from '../../components/layout';
 import {IconFilledCircle} from '../../components/icons';
+import {Tag} from '../../../src/tag';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -30,7 +31,6 @@ const commonPropsRows = [
           icon={infoIcon}
           role="region"
           aria-label="Children type"
-          title="Note"
           overrides={{
             marginBlockStart: 'space030',
           }}
@@ -41,12 +41,6 @@ const commonPropsRows = [
       </>
     ),
     required: true,
-  },
-  {
-    name: 'size',
-    type: ['small', 'medium', 'large'],
-    default: 'medium',
-    description: 'Defines the size of the undefined tag.',
   },
   {
     name: 'size',
@@ -272,18 +266,114 @@ const TagComponent = (layoutProps: LayoutProps) => (
       type: 'Navigation',
       name: 'Tag',
       hero: {
-        illustration: 'components/tag/hero',
+        illustration: 'components/tag-illustration',
       },
       introduction:
         'Tags are used to classify content, typically using keywords.',
     }}
     componentDefaultsKey="Tag"
     meta={{
-      status: MetaStatus.Beta,
-      introduced: 'v5.6.0',
+      status: MetaStatus.Supported,
+      introduced: 'v0.2.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/tag',
       figmaUrl:
         'https://www.figma.com/file/gSE5dyWCmhI7ZBo1KcD6GG/02---NK-Web---Tag?node-id=1%3A6',
+    }}
+    interactiveDemo={{
+      introduction:
+        'This demo allows you to preview the tag component, its variations, and configuration options.',
+      playground: {
+        componentName: 'Tag',
+        component: state => <Tag placeholder="Placeholder" {...state} />,
+        knobs: [
+          {
+            name: 'Content',
+            propName: 'children',
+            value: 'Tag Content',
+          },
+          {
+            name: 'Link',
+            propName: 'href',
+            value: 'https://www.newskit.co.uk/',
+          },
+          {
+            name: 'Disabled',
+            propName: 'disabled',
+            type: 'boolean',
+            value: false,
+          },
+          {
+            name: 'Tag Size',
+            propName: 'size',
+            options: [
+              {
+                label: 'small',
+                value: 'small',
+              },
+              {
+                label: 'medium',
+                isDefault: true,
+                value: 'medium',
+              },
+              {
+                label: 'large',
+                value: 'large',
+              },
+            ],
+          },
+          {
+            name: 'Style Preset',
+            propName: 'overrides',
+            options: [
+              {
+                label: 'Default',
+                value: {
+                  stylePreset: undefined,
+                },
+                isDefault: true,
+              },
+              {
+                label: 'tagPrimary',
+                value: {
+                  stylePreset: 'tagPrimary',
+                },
+              },
+            ],
+          },
+          {
+            name: 'Typography Preset',
+            propName: 'overrides',
+            options: [
+              {
+                label: 'Default',
+                value: {
+                  typographyPreset: undefined,
+                },
+                isDefault: true,
+              },
+              {
+                label: 'utilityLabel010',
+                value: {
+                  typographyPreset: 'utilityLabel010',
+                },
+              },
+              {
+                label: 'label020',
+                value: {
+                  typographyPreset: 'label020',
+                },
+              },
+              {
+                label: 'label030',
+                value: {
+                  typographyPreset: 'label030',
+                },
+              },
+            ],
+          },
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ] as any,
+      },
     }}
     anatomy={{
       introduction:
