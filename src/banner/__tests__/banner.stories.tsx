@@ -17,7 +17,7 @@ import {
 import {Button, ButtonOrButtonLinkProps} from '../../button';
 import {LinkInline} from '../../link';
 import {Cell, Grid, Visible} from '../../grid';
-import {GridLayout, GridLayoutItem} from '../..';
+import {GridLayout, GridLayoutItem, TextBlock} from '../..';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const bannerCustomThemeObject: CreateThemeArgs = {
@@ -408,7 +408,11 @@ export const StoryBannerWithGridAlignment = () => (
   <>
     <StorybookSubHeading>Align to Grid component</StorybookSubHeading>
     <Grid>
-      <Cell xs="full-width">Content above the banner</Cell>
+      <Cell xs="full-width">
+        <TextBlock stylePreset="inkContrast">
+          Content above the banner
+        </TextBlock>
+      </Cell>
     </Grid>
     <Banner
       title="Banner title"
@@ -420,14 +424,20 @@ export const StoryBannerWithGridAlignment = () => (
       Lorem ipsum dolor sit amet, consectetur adipiscing eli
     </Banner>
     <Grid>
-      <Cell xs="full-width">Content below the banner</Cell>
+      <Cell xs="full-width">
+        <TextBlock stylePreset="inkContrast">
+          Content below the banner
+        </TextBlock>
+      </Cell>
     </Grid>
     <StorybookSubHeading>
       align to grid with offset & with spaceInset overrides
     </StorybookSubHeading>
     <Grid>
       <Cell xs={8} xsOffset={2}>
-        Content above the banner
+        <TextBlock stylePreset="inkContrast">
+          Content above the banner
+        </TextBlock>
       </Cell>
     </Grid>
     <Banner
@@ -442,7 +452,9 @@ export const StoryBannerWithGridAlignment = () => (
     </Banner>
     <Grid>
       <Cell xs={8} xsOffset={2}>
-        Content bellow the banner
+        <TextBlock stylePreset="inkContrast">
+          Content below the banner
+        </TextBlock>
       </Cell>
     </Grid>
   </>
@@ -454,7 +466,11 @@ export const StoryBannerWithGridLayoutAlignment = () => (
   <>
     <StorybookSubHeading>Align to GridLayout component</StorybookSubHeading>
     <GridLayout>
-      <GridLayoutItem>Content above the banner</GridLayoutItem>
+      <GridLayoutItem>
+        <TextBlock stylePreset="inkContrast">
+          Content above the banner
+        </TextBlock>
+      </GridLayoutItem>
     </GridLayout>
     <Banner
       title="Banner align to GridLayout component"
@@ -466,14 +482,20 @@ export const StoryBannerWithGridLayoutAlignment = () => (
       Lorem ipsum dolor sit amet, consectetur adipiscing eli
     </Banner>
     <GridLayout>
-      <GridLayoutItem>Content below the banner</GridLayoutItem>
+      <GridLayoutItem>
+        <TextBlock stylePreset="inkContrast">
+          Content below the banner
+        </TextBlock>
+      </GridLayoutItem>
     </GridLayout>
     <StorybookSubHeading>
       align to grid with offset & with spaceInset overrides
     </StorybookSubHeading>
     <GridLayout columns="repeat(12, 1fr)" columnGap="space040">
       <GridLayoutItem column="3 / span 8">
-        Content above the banner
+        <TextBlock stylePreset="inkContrast">
+          Content above the banner
+        </TextBlock>
       </GridLayoutItem>
     </GridLayout>
     <Banner
@@ -489,7 +511,9 @@ export const StoryBannerWithGridLayoutAlignment = () => (
     </Banner>
     <GridLayout columns="repeat(12, 1fr)" columnGap="space040">
       <GridLayoutItem column="3 / span 8">
-        Content bellow the banner
+        <TextBlock stylePreset="inkContrast">
+          Content below the banner
+        </TextBlock>
       </GridLayoutItem>
     </GridLayout>
   </>
@@ -560,7 +584,7 @@ export const StoryBannerWithLogicalOverrides = () => (
 StoryBannerWithLogicalOverrides.storyName = 'banner-with-logical-overrides';
 
 export default {
-  title: 'NewsKit Light/banner',
+  title: 'Components/banner',
   component: () => 'None',
   disabledRules: [],
   decorators: [

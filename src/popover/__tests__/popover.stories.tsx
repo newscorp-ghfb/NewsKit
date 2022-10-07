@@ -389,6 +389,6 @@ export const StoryPopoverBehaviours = () => (
 StoryPopoverBehaviours.storyName = 'popover-behaviours';
 
 export default {
-  title: 'NewsKit Light/popover',
+  title: 'Components/popover',
   component: () => 'None',
 };

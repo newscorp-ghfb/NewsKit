@@ -51,7 +51,7 @@ const ComponentBreakpoint = () => {
 };
 
 export default {
-  title: 'NewsKit Light/use-media-query-hook',
+  title: 'Components/use-media-query-hook',
   component: () => 'None',
 };
 
