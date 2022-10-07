@@ -1,11 +1,12 @@
 import {ReleaseType} from 'semver';
 
 export interface Release {
-  published_at: string;
+  published_at: string | null;
   tag_name: string;
   body: string;
   name: string;
   html_url: string;
+  created_at: string;
 }
 
 export interface FullRelease extends Release {
