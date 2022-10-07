@@ -1,5 +1,5 @@
 import React from 'react';
-import {InlineMessage, toNewsKitIcon, UnorderedList} from 'newskit';
+import {InlineMessage, toNewsKitIcon, UnorderedList, Tag} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {unorderedListOverrides} from '../patterns/forms/address';
@@ -8,7 +8,6 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {UsageKind} from '../../components/usage-card';
 import {LayoutProps} from '../../components/layout';
 import {IconFilledCircle} from '../../components/icons';
-import {Tag} from '../../../src/tag';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -271,7 +270,7 @@ const TagComponent = (layoutProps: LayoutProps) => (
       introduction:
         'Tags are used to classify content, typically using keywords.',
     }}
-    componentDefaultsKey="Tag"
+    componentDefaultsKey="tag"
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v0.2.0',
@@ -284,7 +283,7 @@ const TagComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the tag component, its variations, and configuration options.',
       playground: {
         componentName: 'Tag',
-        component: state => <Tag placeholder="Placeholder" {...state} />,
+        component: state => <Tag {...state} />,
         knobs: [
           {
             name: 'Content',
@@ -312,8 +311,8 @@ const TagComponent = (layoutProps: LayoutProps) => (
               },
               {
                 label: 'medium',
-                isDefault: true,
                 value: 'medium',
+                isDefault: true,
               },
               {
                 label: 'large',
@@ -322,51 +321,26 @@ const TagComponent = (layoutProps: LayoutProps) => (
             ],
           },
           {
-            name: 'Style Preset',
+            name: 'Overrides',
             propName: 'overrides',
             options: [
               {
                 label: 'Default',
-                value: {
-                  stylePreset: undefined,
-                },
+                value: undefined,
                 isDefault: true,
               },
               {
-                label: 'tagPrimary',
+                label: 'Style Preset',
                 value: {
-                  stylePreset: 'tagPrimary',
-                },
-              },
-            ],
-          },
-          {
-            name: 'Typography Preset',
-            propName: 'overrides',
-            options: [
-              {
-                label: 'Default',
-                value: {
+                  stylePreset: 'tagCustom',
                   typographyPreset: undefined,
                 },
-                isDefault: true,
               },
               {
-                label: 'utilityLabel010',
+                label: 'Typography Preset',
                 value: {
+                  stylePreset: undefined,
                   typographyPreset: 'utilityLabel010',
-                },
-              },
-              {
-                label: 'label020',
-                value: {
-                  typographyPreset: 'label020',
-                },
-              },
-              {
-                label: 'label030',
-                value: {
-                  typographyPreset: 'label030',
                 },
               },
             ],
