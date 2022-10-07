@@ -6,6 +6,7 @@ const SEARCH_BTN_ICON = '[data-testid="search-icon-button"]';
 describe('Documentation Site - search component', () => {
   beforeEach(() => {
     cy.mockConsentAndVisit('/');
+    cy.acceptCookieBanner();
   });
 
   describe('Desktop view', () => {
