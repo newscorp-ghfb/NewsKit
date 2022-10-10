@@ -5,6 +5,7 @@ const playgroundElement = '[data-testid="playground-element"]';
 describe('Documentation Site - playground', () => {
   before(() => {
     cy.mockConsentAndVisit('/components/tag');
+    cy.acceptCookieBanner();
   });
 
   it('Tag playground should update the content', () => {
@@ -22,6 +23,7 @@ describe('Documentation Site - playground', () => {
 describe('Documentation Site - playground - Unordered List', () => {
   before(() => {
     cy.mockConsentAndVisit('/components/unordered-list');
+    cy.acceptCookieBanner();
   });
 
   const ulArrayKnob = '[data-testid="array-knob-list-data"]';
@@ -47,6 +49,7 @@ describe('Documentation Site - playground - Unordered List', () => {
 describe('Documentation Site - playground', () => {
   before(() => {
     cy.mockConsentAndVisit('/components/flag');
+    cy.acceptCookieBanner();
   });
 
   it('Flag playground should update the content', () => {

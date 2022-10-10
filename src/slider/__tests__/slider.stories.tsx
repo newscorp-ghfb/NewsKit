@@ -248,7 +248,7 @@ const CustomThumbLabel: React.FC<ThumbLabelProps> = ({children, ...props}) => (
 );
 
 export default {
-  title: 'NewsKit Light/slider',
+  title: 'Components/slider',
   component: () => 'None',
 };
 

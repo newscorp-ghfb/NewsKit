@@ -123,7 +123,7 @@ type StoryStackType = {
 const stackSets = stackDistributionSet().flat(2) as StoryStackType[];
 
 export default {
-  title: 'NewsKit Light/stack',
+  title: 'Components/stack',
   component: Stack,
 };
 

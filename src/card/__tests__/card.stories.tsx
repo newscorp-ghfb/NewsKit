@@ -1690,7 +1690,7 @@ StoryCardSlices.storyName = 'card-slices';
 StoryCardSlices.parameters = {eyes: {include: false}};
 
 export default {
-  title: 'NewsKit Light/card',
+  title: 'Components/card',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

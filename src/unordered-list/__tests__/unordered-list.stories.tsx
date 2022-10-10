@@ -22,7 +22,7 @@ const listData = [
 ];
 
 export default {
-  title: 'NewsKit Light/unordered-list',
+  title: 'Components/unordered-list',
   component: () => 'None',
 };
 

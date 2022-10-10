@@ -422,7 +422,7 @@ StoryAudioPlayerWithHiddenControls.parameters = {
 };
 
 export default {
-  title: 'NewsKit Light/audio-player',
+  title: 'Deprecated/Audio Player',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

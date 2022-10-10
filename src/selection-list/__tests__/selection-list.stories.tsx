@@ -10,7 +10,7 @@ import {styled} from '../../utils';
 import {SelectionList, SelectionListOption} from '../index';
 
 export default {
-  title: 'NewsKit Light/selection-list',
+  title: 'Components/selection-list',
   component: () => 'None',
 };
 
