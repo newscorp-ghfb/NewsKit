@@ -142,10 +142,6 @@ exports[`CharacterCount applies overrides 1`] = `
   padding-inline: 32px;
 }
 
-.emotion-0:disabled {
-  color: #ABABAB;
-}
-
 .emotion-0::before {
   content: '';
   margin-bottom: -0.391em;
@@ -303,10 +299,6 @@ exports[`CharacterCount displays no message if no max or min specified 1`] = `
   min-height: 12px;
   margin-block-end: 8px;
   padding-inline: 8px;
-}
-
-.emotion-0:disabled {
-  color: #ABABAB;
 }
 
 .emotion-0::before {
@@ -627,10 +619,6 @@ exports[`CharacterCount with maxLength displays starting number of characters re
   padding-inline: 8px;
 }
 
-.emotion-0:disabled {
-  color: #ABABAB;
-}
-
 .emotion-0::before {
   content: '';
   margin-bottom: -0.391em;
@@ -789,10 +777,6 @@ exports[`CharacterCount with minLength displays starting number of characters re
   min-height: 12px;
   margin-block-end: 8px;
   padding-inline: 8px;
-}
-
-.emotion-0:disabled {
-  color: #ABABAB;
 }
 
 .emotion-0::before {
