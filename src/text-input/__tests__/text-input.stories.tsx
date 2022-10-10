@@ -67,7 +67,7 @@ const myCustomTheme = createTheme({
 const states = ['Default', 'Focus', 'Disabled', 'Read-Only'];
 
 export default {
-  title: 'Components/text-input',
+  title: 'Deprecated/Text Input',
   component: () => 'None',
   disabledRules: ['color-contrast'],
 };
