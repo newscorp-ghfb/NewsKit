@@ -41,9 +41,10 @@ export const addChangeLevelToReleases: (
         ...prev,
         {
           ...next,
+          // when the release is draft publish date is null
+          published_at: next.published_at || next.created_at,
           // Compare against the previous release in the array or the oldest
           // release removed above.
-          published_at: next.published_at || next.created_at,
           change_level: diff(
             (prev[0] || ascending[0]).tag_name,
             next.tag_name,
