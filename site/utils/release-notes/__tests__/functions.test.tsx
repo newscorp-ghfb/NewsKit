@@ -11,19 +11,29 @@ const MOCK_DATA = [{id: ''}];
 
 describe('fetchGitHubReleases', () => {
   let fetchMock: Mock;
+  const {env} = process;
 
   beforeEach(() => {
     fetchMock = jest.fn().mockResolvedValue({
       json: jest.fn().mockResolvedValue(MOCK_DATA),
     });
     (global as any).fetch = fetchMock;
+
+    jest.resetModules();
+    process.env = {...env, GITHUB_TOKEN: 'mock'};
+  });
+
+  afterEach(() => {
+    process.env = env;
   });
 
   it('should fetch release data from GitHub', async () => {
     const data = await fetchGitHubReleases(13);
-    expect(fetchMock).toHaveBeenCalledWith(
+    expect(
+      fetchMock,
+    ).toHaveBeenCalledWith(
       'https://api.github.com/repos/newscorp-ghfb/newskit/releases?per_page=13',
-      undefined,
+      {headers: {Authorization: 'Bearer mock'}},
     );
     expect(data).toEqual(MOCK_DATA);
   });
