@@ -43,6 +43,7 @@ export const addChangeLevelToReleases: (
           ...next,
           // Compare against the previous release in the array or the oldest
           // release removed above.
+          published_at: next.published_at || next.created_at,
           change_level: diff(
             (prev[0] || ascending[0]).tag_name,
             next.tag_name,
@@ -75,7 +76,6 @@ export const updateFinalReleaseInfo = (release: Release) => {
     ...release,
     name: version,
     tag_name: version,
-    published_at: release.published_at || release.created_at,
     body,
   };
 };

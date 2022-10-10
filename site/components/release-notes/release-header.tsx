@@ -8,12 +8,8 @@ import {GITHUB_URL, REPO} from '../../utils/release-notes/constants';
 const ReleaseHeader = ({
   tag_name,
   published_at,
-  created_at,
   change_level,
-}: Pick<
-  FullRelease,
-  'tag_name' | 'published_at' | 'change_level' | 'created_at'
->) => (
+}: Pick<FullRelease, 'tag_name' | 'published_at' | 'change_level'>) => (
   <div>
     <Block as="span">
       <LinkStandalone href={`${GITHUB_URL}/${REPO}/releases/tag/${tag_name}`}>
@@ -26,7 +22,7 @@ const ReleaseHeader = ({
       stylePreset="inkSubtle"
       typographyPreset="utilityBody030"
     >
-      {format(new Date(published_at || created_at), 'MMM d y')}
+      {format(new Date(published_at), 'MMM d y')}
     </TextBlock>
     <Block as="span" marginInlineStart="space040">
       <ReleaseBadges change_level={change_level} />

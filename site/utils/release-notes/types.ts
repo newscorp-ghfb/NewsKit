@@ -11,6 +11,7 @@ export interface Release {
 
 export interface FullRelease extends Release {
   change_level: ReleaseType;
+  published_at: string;
 }
 
 export interface ReleasesPageProps {
