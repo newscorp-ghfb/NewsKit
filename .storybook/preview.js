@@ -66,7 +66,7 @@ export const parameters = {
   },
   options: {
     storySort: {
-      order: ['Welcome', '*'],
+      order: ['Welcome', 'Components', 'Utilities', 'Deprecated', '*'],
     },
   },
   backgrounds: {
