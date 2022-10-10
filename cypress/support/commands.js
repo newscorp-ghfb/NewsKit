@@ -1,6 +1,25 @@
 Cypress.Commands.add('mockConsentAndVisit', url => {
   cy.setCookie('nukt_sp_consent', 'JABCDEFGHI');
-  cy.setCookie('consentUUID', 'b2cba40d-174a-4d06-9798-9a210c3a0c4f_12');
+  cy.setCookie('consentUUID', '421e3aef-4f3c-4d41-a425-fb9b5f745896_12');
+  cy.setCookie('_sp_sampled_user', JSON.stringify(false));
+  cy.wrap([
+    '_sp_local_state',
+    '_sp_user_consent_5623',
+    '_sp_non_keyed_local_state',
+  ]).each(key => {
+    cy.fixture(`consent/local-storage/${key}.json`).then(value => {
+      localStorage.setItem(key, JSON.stringify(value));
+    });
+  });
+  cy.intercept('https://cdn.privacy-mgmt.com/wrapper/v2/meta-data*', {
+    fixture: 'consent/stubs/meta.json',
+  }).as('consentMeta');
+  cy.intercept('https://cdn.privacy-mgmt.com/mms/v2/get_site_data*', {
+    fixture: 'consent/stubs/site-data.json',
+  }).as('consentSiteData');
+  cy.intercept('https://cdn.privacy-mgmt.com/wrapper/v2/pv-data*', {
+    fixture: 'consent/stubs/pv-data.json',
+  }).as('consentSiteData');
   cy.visit(url);
 });
 

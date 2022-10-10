@@ -7,7 +7,7 @@ describe('useMediaQuery hooks', () => {
     {vp: 1600, value: 'xl'},
   ];
   beforeEach(() => {
-    cy.visit('?name=use-media-query');
+    cy.visit('?name=usemediaquery');
     cy.wait(50);
   });
 
