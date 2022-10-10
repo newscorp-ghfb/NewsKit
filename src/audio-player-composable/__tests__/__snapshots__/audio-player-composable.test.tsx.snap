@@ -9088,6 +9088,962 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 </DocumentFragment>
 `;
 
+exports[`Audio Player Composable should render with native audio attributes 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #F1F1F1;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 8px/2) calc(16px/2);
+  height: 8px;
+  width: 100%;
+}
+
+.emotion-2 {
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  background-color: #3358CC;
+  border-color: #FFFFFF;
+  height: 16px;
+  width: 16px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-2 svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-offset: -7px;
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -moz-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -ms-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+}
+
+.emotion-3:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-3:disabled {
+  opacity: 0;
+}
+
+.emotion-3:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #00601A;
+  opacity: 0.2;
+}
+
+.emotion-3:valid:hover:active:not(:disabled) {
+  background-color: #00601A;
+  opacity: 0.4;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #A90000;
+  opacity: 0.2;
+}
+
+.emotion-3:invalid:hover:active:not(:disabled) {
+  background-color: #A90000;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #D5E0FC;
+  border-radius: 50%;
+  color: #3358CC;
+  margin: 0;
+  cursor: progress;
+}
+
+.emotion-5 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-5 svg {
+  fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-8 {
+  width: 32px;
+  height: 32px;
+  stroke: #3358CC;
+}
+
+.emotion-8 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
+  will-change: transform;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+.emotion-9 {
+  margin: 0;
+  display: inline-block;
+  display: block;
+  background-color: transparent;
+  color: #3B3B3B;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
+  margin: 0;
+  cursor: pointer;
+}
+
+.emotion-10 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-10 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-10:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-10:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-13 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-13::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-13::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-14 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "muteButton slider";
+  justify-items: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
+}
+
+.emotion-15 {
+  grid-area: muteButton;
+}
+
+.emotion-16 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
+  margin: 0;
+  cursor: pointer;
+}
+
+.emotion-16 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-16 svg {
+  fill: #3358CC;
+}
+
+.emotion-16:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-16:active:not(:disabled) {
+  background-color: #D5E0FC;
+}
+
+.emotion-16:disabled {
+  background-color: transparent;
+  color: #ABABAB;
+}
+
+.emotion-16:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-16:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-16:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-16 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-16 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-19 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-19 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-19 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-21 {
+  grid-area: slider;
+}
+
+.emotion-22 {
+  width: 0;
+  width: 130px;
+}
+
+.emotion-24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background-color: #E2E2E2;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 4px/2) calc(16px/2);
+  height: 4px;
+  width: 100%;
+}
+
+.emotion-25 {
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: #3358CC;
+  border-style: solid;
+  border-color: #ECF1FF;
+  border-width: 1px;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-25 svg {
+  fill: #ABABAB;
+}
+
+.emotion-25:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-25:hover:not(:disabled) svg {
+  fill: #ABABAB;
+}
+
+.emotion-25:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-25:active:not(:disabled) svg {
+  fill: #6A6A6A;
+}
+
+.emotion-25:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:focus-visible:not(:disabled) {
+      outline-offset: -7px;
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-41 {
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-41 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-41 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<section
+    aria-label="Audio Player"
+  >
+    <audio
+      data-testid="audio-element"
+      id="epic-music"
+      src="/audio_file_1.mp3"
+    />
+    <div
+      class="emotion-0"
+      data-testid="audio-slider"
+    >
+      <div
+        class="emotion-1"
+        data-testid="audio-slider-track"
+        style="background: rgb(255, 255, 0);"
+        values="0"
+      >
+        <div
+          aria-describedby="mock-nk-1"
+          aria-label="seek bar"
+          aria-orientation="horizontal"
+          aria-valuemax="1"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          aria-valuetext="Playback time: 0 seconds of 0 seconds"
+          class="emotion-2"
+          data-testid="audio-slider-thumb"
+          draggable="false"
+          role="slider"
+          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+          tabindex="0"
+          values="0"
+        >
+          <span
+            class="emotion-3"
+            data-testid="audio-slider-feedback"
+          />
+        </div>
+      </div>
+    </div>
+    <span
+      aria-hidden="true"
+      class="emotion-4"
+      id="mock-nk-1"
+    >
+      Use the arrow keys to fast forward or rewind
+    </span>
+    <button
+      aria-busy="true"
+      aria-label="Play"
+      aria-live="polite"
+      aria-pressed="false"
+      class="emotion-5"
+      data-testid="audio-player-play-pause-button"
+      type="button"
+    >
+      <span
+        class="emotion-6"
+      >
+        <span
+          class="emotion-7"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-8"
+            fill="currentColor"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50%"
+              cy="50%"
+            />
+          </svg>
+        </span>
+      </span>
+    </button>
+    <span
+      class="emotion-9"
+      data-testid="audio-player-time-display"
+    >
+      00:00/00:00 
+    </span>
+    <a
+      class="emotion-10"
+      data-testid="buttonLink"
+      href="/"
+    >
+      <span
+        class="emotion-6"
+      >
+        <span
+          class="emotion-7"
+        >
+          <span
+            class="emotion-13"
+          >
+            read more
+          </span>
+        </span>
+      </span>
+    </a>
+    <div
+      class="emotion-14"
+    >
+      <div
+        class="emotion-15"
+      >
+        <button
+          aria-label="Mute"
+          class="emotion-16"
+          data-testid="mute-button"
+          type="button"
+        >
+          <span
+            class="emotion-6"
+          >
+            <span
+              class="emotion-7"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-19 emotion-20"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                />
+              </svg>
+            </span>
+          </span>
+        </button>
+      </div>
+      <div
+        class="emotion-21"
+      >
+        <div
+          class="nk-vc-exit-done emotion-22"
+        >
+          <div
+            class="emotion-0"
+            data-testid="volume-control-slider"
+          >
+            <div
+              class="emotion-24"
+              data-testid="volume-control-slider-track"
+              style="background: rgb(255, 255, 0);"
+              values="0.7"
+            >
+              <div
+                aria-describedby="mock-nk-1"
+                aria-label="Volume Control"
+                aria-orientation="horizontal"
+                aria-valuemax="1"
+                aria-valuemin="0"
+                aria-valuenow="0.7"
+                aria-valuetext="volume level 7 of 10"
+                class="emotion-25"
+                data-testid="volume-control-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
+                values="0.7"
+              >
+                <span
+                  class="emotion-3"
+                  data-testid="volume-control-slider-feedback"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <span
+          aria-hidden="true"
+          class="emotion-4"
+          id="mock-nk-1"
+        >
+          Use the arrow keys to adjust volume
+        </span>
+      </div>
+    </div>
+    <button
+      aria-label="next"
+      class="emotion-16"
+      data-testid="audio-player-skip-next-button"
+      type="button"
+    >
+      <span
+        class="emotion-6"
+      >
+        <span
+          class="emotion-7"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-19 emotion-20"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+            />
+          </svg>
+        </span>
+      </span>
+    </button>
+    <button
+      aria-label="previous"
+      class="emotion-16"
+      data-testid="audio-player-skip-previous-button"
+      type="button"
+    >
+      <span
+        class="emotion-6"
+      >
+        <span
+          class="emotion-7"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-19 emotion-20"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+            />
+          </svg>
+        </span>
+      </span>
+    </button>
+    <button
+      aria-label="Fast forward for 10 seconds"
+      class="emotion-16"
+      data-testid="audio-player-forward-button"
+      type="button"
+    >
+      <span
+        class="emotion-6"
+      >
+        <span
+          class="emotion-7"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-41"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M18.7719 10.7169C18.9316 10.2146 19 9.57534 19 8.84475V7.15525C19 6.42466 18.9088 5.80822 18.7491 5.2831C18.5895 4.75799 18.3615 4.3242 18.0651 3.98174C17.7687 3.63927 17.4267 3.38813 17.0162 3.22831C16.6058 3.06849 16.1726 3 15.671 3C15.1693 3 14.7133 3.06849 14.3257 3.22831C13.9381 3.38813 13.5732 3.63927 13.2996 3.98174C13.026 4.3242 12.798 4.78082 12.6384 5.2831C12.4788 5.78539 12.4104 6.42466 12.4104 7.15525V8.84475C12.4104 9.57534 12.5016 10.1918 12.6612 10.7169C12.8208 11.242 13.0488 11.6758 13.3452 12.0183C13.6416 12.3607 13.9837 12.6119 14.3941 12.7717C14.8045 12.9315 15.2377 13 15.7394 13C16.241 13 16.697 12.9315 17.0846 12.7717C17.4723 12.6119 17.8371 12.3607 18.1107 12.0183C18.3843 11.6758 18.6123 11.2192 18.7719 10.7169ZM7.30293 12.8626H9.24104V3.11373H9.03583L5 4.55209V6.12743L7.30293 5.41967V12.8626ZM17.062 6.88113C17.062 6.44734 17.0392 6.08204 16.9708 5.78524C16.9024 5.48844 16.8112 5.26013 16.6972 5.07748C16.5832 4.89483 16.4464 4.75784 16.264 4.68935C16.0815 4.62086 15.8991 4.5752 15.6939 4.5752C15.4887 4.5752 15.2835 4.62086 15.1239 4.68935C14.9643 4.75784 14.8047 4.89483 14.6907 5.07748C14.5767 5.26013 14.4855 5.48844 14.4171 5.78524C14.3486 6.08204 14.3258 6.44734 14.3258 6.88113V9.09574C14.3258 9.52953 14.3486 9.89483 14.4171 10.1916C14.4855 10.4884 14.5767 10.7396 14.6907 10.9222C14.8047 11.1049 14.9415 11.2419 15.1239 11.3104C15.3063 11.3788 15.4887 11.4245 15.6939 11.4245C15.8991 11.4245 16.1043 11.3788 16.264 11.3104C16.4236 11.2419 16.5832 11.1049 16.6972 10.9222C16.8112 10.7396 16.9024 10.4884 16.948 10.1916C16.9936 9.89483 17.0392 9.52953 17.0392 9.09574V6.88113H17.062ZM12.6287 21L17.0002 18L12.6287 15V21ZM8.00007 21L12.3715 18L8.00007 15V21Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </span>
+      </span>
+    </button>
+    <button
+      aria-label="Rewind 10 seconds"
+      class="emotion-16"
+      data-testid="audio-player-replay-button"
+      type="button"
+    >
+      <span
+        class="emotion-6"
+      >
+        <span
+          class="emotion-7"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-41"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M18.7719 10.7169C18.9316 10.2146 19 9.57534 19 8.84475V7.15525C19 6.42466 18.9088 5.80822 18.7491 5.2831C18.5895 4.75799 18.3615 4.3242 18.0651 3.98174C17.7687 3.63927 17.4267 3.38813 17.0162 3.22831C16.6058 3.06849 16.1726 3 15.671 3C15.1693 3 14.7133 3.06849 14.3257 3.22831C13.9381 3.38813 13.5732 3.63927 13.2996 3.98174C13.026 4.3242 12.798 4.78082 12.6384 5.2831C12.4788 5.78539 12.4104 6.42466 12.4104 7.15525V8.84475C12.4104 9.57534 12.5016 10.1918 12.6612 10.7169C12.8208 11.242 13.0488 11.6758 13.3452 12.0183C13.6416 12.3607 13.9837 12.6119 14.3941 12.7717C14.8045 12.9315 15.2377 13 15.7394 13C16.241 13 16.697 12.9315 17.0846 12.7717C17.4723 12.6119 17.8371 12.3607 18.1107 12.0183C18.3843 11.6758 18.6123 11.2192 18.7719 10.7169ZM7.30293 12.8626H9.24104V3.11373H9.03583L5 4.55209V6.12743L7.30293 5.41967V12.8626ZM17.062 6.88113C17.062 6.44734 17.0392 6.08204 16.9708 5.78524C16.9024 5.48844 16.8112 5.26013 16.6972 5.07748C16.5832 4.89483 16.4464 4.75784 16.264 4.68935C16.0815 4.62086 15.8991 4.5752 15.6939 4.5752C15.4887 4.5752 15.2835 4.62086 15.1239 4.68935C14.9643 4.75784 14.8047 4.89483 14.6907 5.07748C14.5767 5.26013 14.4855 5.48844 14.4171 5.78524C14.3486 6.08204 14.3258 6.44734 14.3258 6.88113V9.09574C14.3258 9.52953 14.3486 9.89483 14.4171 10.1916C14.4855 10.4884 14.5767 10.7396 14.6907 10.9222C14.8047 11.1049 14.9415 11.2419 15.1239 11.3104C15.3063 11.3788 15.4887 11.4245 15.6939 11.4245C15.8991 11.4245 16.1043 11.3788 16.264 11.3104C16.4236 11.2419 16.5832 11.1049 16.6972 10.9222C16.8112 10.7396 16.9024 10.4884 16.948 10.1916C16.9936 9.89483 17.0392 9.52953 17.0392 9.09574V6.88113H17.062ZM16.0001 21L11.6287 18L16.0001 15V21ZM11.3714 21L7 18L11.3714 15V21Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </span>
+      </span>
+    </button>
+  </section>
+</DocumentFragment>
+`;
+
 exports[`Audio Player Composable should render with no errors 1`] = `
 <DocumentFragment>
   .emotion-0 {

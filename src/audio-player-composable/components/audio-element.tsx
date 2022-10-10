@@ -15,6 +15,7 @@ export const AudioElement: React.FC<AudioElementProps> = ({
   onVolumeChange,
   onTimeUpdate,
   onProgress,
+  ...props
 }) => (
   <audio
     ref={audioRef}
@@ -30,5 +31,6 @@ export const AudioElement: React.FC<AudioElementProps> = ({
     onProgress={onProgress}
     onVolumeChange={onVolumeChange}
     data-testid="audio-element"
+    {...props}
   />
 );
