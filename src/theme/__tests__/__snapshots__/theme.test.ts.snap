@@ -3736,6 +3736,9 @@ Object {
     "invalid": Object {
       "color": "{{colors.inkNegative}}",
     },
+    "valid": Object {
+      "color": "{{colors.inkSubtle}}",
+    },
   },
   "checkboxInput": Object {
     "base": Object {
