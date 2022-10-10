@@ -54,7 +54,10 @@ export default function showTestcase(theme: string | null) {
   }
 
   const story = stories.find(
-    s => s.default.title.replace('Components/', '') === name,
+    s =>
+      s.default.title
+        .replace(/Components\/|Deprecated\/|Utilities\//, '')
+        .toLowerCase() === name,
   );
 
   if (!story) {

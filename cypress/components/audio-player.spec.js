@@ -1,6 +1,6 @@
 describe('audio player', () => {
   beforeEach(() => {
-    cy.visit('?name=audio-player');
+    cy.visit('?name=audio player');
     cy.get('[data-testid="volume-control-track"]').as('volumeTrack');
   });
 
