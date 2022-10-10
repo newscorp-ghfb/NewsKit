@@ -9,45 +9,48 @@ const StyledDiv = styled.div`
   ${getColorCssFromTheme('color', 'inkBase')};
 `;
 
-const Component = ({
-  value: valueProp,
-  defaultValue,
-  onClick,
-}: {
-  value?: number;
-  defaultValue?: number;
-  onClick?: () => void;
-}) => {
-  const [value, setValue] = useControlled({
+export const StoryUseControlled = () => {
+  const Component = ({
+    value: valueProp,
     defaultValue,
-    controlledValue: valueProp,
-  });
+    onClick,
+  }: {
+    value?: number;
+    defaultValue?: number;
+    onClick?: () => void;
+  }) => {
+    const [value, setValue] = useControlled({
+      defaultValue,
+      controlledValue: valueProp,
+    });
 
-  const handleOnClick = () => {
-    setValue(value! + 1);
+    const handleOnClick = () => {
+      setValue(value! + 1);
 
-    if (onClick) {
-      onClick();
-    }
+      if (onClick) {
+        onClick();
+      }
+    };
+
+    return (
+      <>
+        <Button onClick={handleOnClick}>+</Button>
+        <StyledDiv>{value}</StyledDiv>
+      </>
+    );
   };
 
-  return (
-    <>
-      <Button onClick={handleOnClick}>+</Button>
-      <StyledDiv>{value}</StyledDiv>
-    </>
-  );
-};
-
-export const StoryUseControlled = () => {
-  const [value, setValue] = React.useState(0);
+  const [externalValue, setExternalValue] = React.useState(0);
 
   return (
     <>
       <StorybookSubHeading>Uncontrolled state</StorybookSubHeading>
       <Component defaultValue={40} />
       <StorybookSubHeading>Controlled state</StorybookSubHeading>
-      <Component value={value} onClick={() => setValue(value + 1)} />
+      <Component
+        value={externalValue}
+        onClick={() => setExternalValue(externalValue + 1)}
+      />
     </>
   );
 };

@@ -35,7 +35,7 @@ export default {
       title: 'useBreakpointKey',
       url: 'https://newskit.co.uk/components/utils/hooks/',
       description:
-        'useBreakpointKey is a custom hook that returns the active breakpoint key `xs | sm | md | lg | xl',
+        'useBreakpointKey is a custom hook that returns the active breakpoint key: xs | sm | md | lg | xl',
     },
   },
 };
