@@ -24,7 +24,7 @@ exports[`Tealium renders scripts for dev environment 2`] = `
       "content": "(function(a,b,c,d){\\n              a='//tags.tiqcdn.com/utag/the-account-id/the-profile-id/the-env-id/utag.js';\\n              b=document;\\n              c='script';\\n              d=b.createElement(c);\\n              d.src=a;\\n              d.type='text/java'+c;\\n              d.async=true;\\n              window.utag_queue = []\\n              if (d.addEventListener) {\\n                d.addEventListener(\\n                  'load',\\n                  function () {\\n                    for (var i = 0; i &lt; utag_queue.length; i++) {\\n                      event = utag_queue[i];\\n                      utag.track(event.event, event.data);\\n                    }\\n                  },\\n                  false\\n                );\\n              } else {\\n                d.onreadystatechange = function () {\\n                  if (this.readyState == 'complete' || this.readyState == 'loaded') {\\n                    this.onreadystatechange = null;\\n                    for (var i = 0; i &lt; utag_queue.length; i++) {\\n                      event = utag_queue[i];\\n                      utag.track(event.event, event.data);\\n                    }\\n                  }\\n                };\\n              }\\n              a = b.getElementsByTagName(c)[0];\\n              a.parentNode.insertBefore(d, a);\\n            })();"
     }
   ],
-  "reactHelmet": "undefined"
+  "reactHelmet": "function"
 }
   </div>
 </DocumentFragment>

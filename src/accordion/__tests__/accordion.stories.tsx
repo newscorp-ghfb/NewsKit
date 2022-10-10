@@ -600,7 +600,7 @@ StoryAccordionGroupTransitionOverrides.parameters = {
 };
 
 export default {
-  title: 'NewsKit Light/accordion',
+  title: 'Components/accordion',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

@@ -99,7 +99,7 @@ export const StoryWithLogicalPropsOverrides = () => (
 StoryWithLogicalPropsOverrides.storyName = 'with-logical-overrides';
 
 export default {
-  title: 'NewsKit Light/text-block',
+  title: 'Components/text-block',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

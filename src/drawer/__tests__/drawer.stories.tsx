@@ -835,7 +835,7 @@ StoryInlineDrawerLogicalPropsOnPanel.storyName =
 StoryInlineDrawerLogicalPropsOnPanel.parameters = {eyes: {include: false}};
 
 export default {
-  title: 'NewsKit Light/drawer',
+  title: 'Components/drawer',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

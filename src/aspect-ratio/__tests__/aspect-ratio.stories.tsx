@@ -16,7 +16,7 @@ const ChildContainer = styled.div`
 `;
 
 export default {
-  title: 'NewsKit Light/aspect-ratio',
+  title: 'Deprecated/Aspect Ratio',
   component: () => 'None',
 };
 

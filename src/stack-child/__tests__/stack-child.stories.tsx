@@ -22,7 +22,7 @@ const Container = styled.div<{
 `;
 
 export default {
-  title: 'NewsKit Light/stack-child',
+  title: 'Components/stack-child',
   component: () => 'None',
 };
 

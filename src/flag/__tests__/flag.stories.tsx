@@ -28,7 +28,7 @@ const Container = styled.div<{hasBlackBackground?: boolean}>`
 `;
 
 export default {
-  title: 'NewsKit Light/flag',
+  title: 'Components/flag',
   component: () => 'None',
 };
 

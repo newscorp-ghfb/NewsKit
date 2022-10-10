@@ -619,7 +619,7 @@ export const TextFieldOutlineOverrideExamples = () => (
 );
 
 export default {
-  title: 'NewsKit Light/text-field',
+  title: 'Components/text-field',
   component: () => 'None',
   disabledRules: ['color-contrast'],
   decorators: [

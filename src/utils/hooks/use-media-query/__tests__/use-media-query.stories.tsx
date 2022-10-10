@@ -1,10 +1,6 @@
 import * as React from 'react';
 import {useMediaQueryObject, useBreakpointKey} from '../index';
-
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../../../test/storybook-comps';
+import {StorybookHeading} from '../../../../test/storybook-comps';
 import {MQ} from '../../../style/types';
 import {styled} from '../../../style';
 
@@ -16,40 +12,44 @@ const StyledDiv = styled.div`
   background: orange;
 `;
 
-const ComponentMediaQueryObject = ({mq}: {mq: MQ<string>}) => {
-  const bp = useMediaQueryObject(mq);
-  return <StyledDiv data-testid="use-media-query-hook">{bp}</StyledDiv>;
-};
-
-const ComponentBreakpoint = () => {
-  const bp = useBreakpointKey();
-
-  return <StyledDiv data-testid="use-breakpoint">{bp || 'unknown'}</StyledDiv>;
-};
-
 export default {
-  title: 'NewsKit Light/use-media-query-hook',
+  title: 'Utilities/Hooks',
   component: () => 'None',
 };
 
-export const StoryUseMediaQueryHook = () => (
-  <>
-    <StorybookHeading>useMediaQueryHooks </StorybookHeading>
-    <StorybookSubHeading>useMediaQueryObject</StorybookSubHeading>
-    <ComponentMediaQueryObject
-      mq={{
-        xs: 'xs',
-        sm: 'sm',
-        md: 'md',
-        lg: 'lg',
-        xl: 'xl',
-      }}
-    />
-    <StorybookSubHeading>useBreakpointKey</StorybookSubHeading>
-    <ComponentBreakpoint />
-  </>
-);
-StoryUseMediaQueryHook.storyName = 'use-media-query-hook';
-StoryUseMediaQueryHook.parameters = {
+export const StoryUseMediaQueryObject = () => {
+  const mediaQueryObject: MQ<string> = {
+    xs: 'xs',
+    sm: 'sm',
+    md: 'md',
+    lg: 'lg',
+    xl: 'xl',
+  };
+  const bp = useMediaQueryObject(mediaQueryObject);
+
+  return (
+    <>
+      <StorybookHeading>useMediaQueryObject</StorybookHeading>
+      <StyledDiv data-testid="use-media-query-object">{bp}</StyledDiv>
+    </>
+  );
+};
+StoryUseMediaQueryObject.storyName = 'useMediaQueryObject';
+StoryUseMediaQueryObject.parameters = {
+  eyes: {include: false},
+};
+
+export const StoryUseBreakpointKey = () => {
+  const bp = useBreakpointKey();
+
+  return (
+    <>
+      <StorybookHeading>useBreakpointKey</StorybookHeading>
+      <StyledDiv data-testid="use-breakpoint-key">{bp || 'unknown'}</StyledDiv>
+    </>
+  );
+};
+StoryUseBreakpointKey.storyName = 'useBreakpointKey';
+StoryUseBreakpointKey.parameters = {
   eyes: {include: false},
 };
