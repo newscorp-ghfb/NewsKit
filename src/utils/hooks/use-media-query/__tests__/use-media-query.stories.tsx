@@ -1,10 +1,7 @@
 import * as React from 'react';
 import {useMediaQueryObject, useBreakpointKey, useMediaQuery} from '../index';
 
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../../../test/storybook-comps';
+import {StorybookHeading} from '../../../../test/storybook-comps';
 import {MQ} from '../../../style/types';
 import {getColorCssFromTheme, styled} from '../../../style';
 
@@ -16,7 +13,13 @@ const StyledDiv = styled.div`
   text-align: center;
   background: orange;
 `;
-const ComponentMediaQuery = () => {
+
+export default {
+  title: 'Utilities/useMediaQuery',
+  component: () => 'None',
+};
+
+export const StoryUseMediaQuery = () => {
   const small = useMediaQuery('screen and (max-width : 767px)');
   const medium = useMediaQuery(
     'screen and (min-width : 768px) and (max-width : 1023px)',
@@ -27,54 +30,58 @@ const ComponentMediaQuery = () => {
   const extraLarge = useMediaQuery('screen and (min-width : 1440px)');
 
   return (
-    <div data-testid="use-media-query">
-      Resize your browser windows to see changes.
-      <br />
-      <br />
-      <StyledDiv>sm: {small ? 'yes' : 'no'}</StyledDiv>
-      <StyledDiv>md: {medium ? 'yes' : 'no'}</StyledDiv>
-      <StyledDiv>lg: {large ? 'yes' : 'no'}</StyledDiv>
-      <StyledDiv>xl: {extraLarge ? 'yes' : 'no'}</StyledDiv>
-    </div>
+    <>
+      <StorybookHeading>useMediaQuery</StorybookHeading>
+      <div data-testid="use-media-query">
+        Resize your browser windows to see changes.
+        <br />
+        <br />
+        <StyledDiv>sm: {small ? 'yes' : 'no'}</StyledDiv>
+        <StyledDiv>md: {medium ? 'yes' : 'no'}</StyledDiv>
+        <StyledDiv>lg: {large ? 'yes' : 'no'}</StyledDiv>
+        <StyledDiv>xl: {extraLarge ? 'yes' : 'no'}</StyledDiv>
+      </div>
+    </>
   );
 };
-
-const ComponentMediaQueryObject = ({mq}: {mq: MQ<string>}) => {
-  const bp = useMediaQueryObject(mq);
-  return <StyledDiv data-testid="use-media-query-object">{bp}</StyledDiv>;
+StoryUseMediaQuery.storyName = 'useMediaQuery';
+StoryUseMediaQuery.parameters = {
+  eyes: {include: false},
 };
 
-const ComponentBreakpoint = () => {
+export const StoryUseMediaQueryObject = () => {
+  const mediaQueryObject: MQ<string> = {
+    xs: 'xs',
+    sm: 'sm',
+    md: 'md',
+    lg: 'lg',
+    xl: 'xl',
+  };
+  const bp = useMediaQueryObject(mediaQueryObject);
+
+  return (
+    <>
+      <StorybookHeading>useMediaQueryObject</StorybookHeading>
+      <StyledDiv data-testid="use-media-query-object">{bp}</StyledDiv>
+    </>
+  );
+};
+StoryUseMediaQueryObject.storyName = 'useMediaQueryObject';
+StoryUseMediaQueryObject.parameters = {
+  eyes: {include: false},
+};
+
+export const StoryUseBreakpointKey = () => {
   const bp = useBreakpointKey();
 
-  return <StyledDiv data-testid="use-breakpoint">{bp || 'unknown'}</StyledDiv>;
+  return (
+    <>
+      <StorybookHeading>useBreakpointKey</StorybookHeading>
+      <StyledDiv data-testid="use-breakpoint-key">{bp || 'unknown'}</StyledDiv>
+    </>
+  );
 };
-
-export default {
-  title: 'Components/use-media-query-hook',
-  component: () => 'None',
-};
-
-export const StoryUseMediaQueryHook = () => (
-  <>
-    <StorybookHeading>useMediaQueryHooks </StorybookHeading>
-    <StorybookSubHeading>useMediaQuery</StorybookSubHeading>
-    <ComponentMediaQuery />
-    <StorybookSubHeading>useMediaQueryObject</StorybookSubHeading>
-    <ComponentMediaQueryObject
-      mq={{
-        xs: 'xs',
-        sm: 'sm',
-        md: 'md',
-        lg: 'lg',
-        xl: 'xl',
-      }}
-    />
-    <StorybookSubHeading>useBreakpointKey</StorybookSubHeading>
-    <ComponentBreakpoint />
-  </>
-);
-StoryUseMediaQueryHook.storyName = 'use-media-query-hook';
-StoryUseMediaQueryHook.parameters = {
+StoryUseBreakpointKey.storyName = 'useBreakpointKey';
+StoryUseBreakpointKey.parameters = {
   eyes: {include: false},
 };

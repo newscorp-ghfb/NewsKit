@@ -40,7 +40,7 @@ const Component = ({
 };
 
 export default {
-  title: 'NewsKit Light/use-controlled-hook',
+  title: 'Utilities/useControlled',
   component: () => 'None',
 };
 
@@ -56,7 +56,7 @@ export const StoryUseControlled = () => {
     </>
   );
 };
-StoryUseControlled.storyName = 'use-controlled-hook';
+StoryUseControlled.storyName = 'useControlled';
 StoryUseControlled.parameters = {
   eyes: {include: false},
 };

@@ -5,7 +5,7 @@ import {StorybookSubHeading} from '../../../test/storybook-comps';
 import {getColorCssFromTheme, styled} from '../../style';
 
 export default {
-  title: 'NewsKit Light/use-intersection-hook',
+  title: 'Utilities/useIntersection',
   component: () => 'None',
 };
 
@@ -40,7 +40,7 @@ export const StoryUseIntersection = () => (
     </>
   </>
 );
-StoryUseIntersection.storyName = 'use-intersection-hook';
+StoryUseIntersection.storyName = 'useIntersection';
 StoryUseIntersection.parameters = {
   eyes: {include: false},
 };

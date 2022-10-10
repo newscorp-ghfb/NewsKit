@@ -14,7 +14,7 @@ const StyledDiv = styled.div`
 `;
 
 export default {
-  title: 'NewsKit Light/use-resize-observer-hook',
+  title: 'Utilities/useResizeObserver',
   component: () => 'None',
 };
 
@@ -37,7 +37,7 @@ export const StoryUseResizeObserver = () => {
     </>
   );
 };
-StoryUseResizeObserver.storyName = 'use-resize-observer-hook';
+StoryUseResizeObserver.storyName = 'useResizeObserver';
 StoryUseResizeObserver.parameters = {
   eyes: {include: false},
 };

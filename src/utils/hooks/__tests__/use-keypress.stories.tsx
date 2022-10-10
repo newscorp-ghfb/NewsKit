@@ -6,7 +6,7 @@ import {TextBlock} from '../../../text-block';
 import {styled} from '../../style';
 
 export default {
-  title: 'NewsKit Light/use-keypress-hook',
+  title: 'Utilities/useKeypress',
   component: () => 'None',
 };
 
@@ -50,7 +50,7 @@ export const StoryUseKeyPress = () => {
     </>
   );
 };
-StoryUseKeyPress.storyName = 'use-keypress-hook';
+StoryUseKeyPress.storyName = 'useKeypress';
 StoryUseKeyPress.parameters = {
   eyes: {include: false},
 };

@@ -24,7 +24,7 @@ const unlimitedScenarios = [
   'popover',
   'audio-player-composable',
   'text-area',
-  'use-intersection-hook',
+  'useIntersection',
 ];
 
 const BackgroundColor = styled.div`
@@ -72,7 +72,7 @@ export const parameters = {
   },
   options: {
     storySort: {
-      order: ['Welcome', '*'],
+      order: ['Welcome', 'Components', 'Utilities', 'Deprecated', '*'],
     },
   },
   backgrounds: {
