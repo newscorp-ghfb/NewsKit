@@ -29,6 +29,7 @@ Array [
   "Card",
   "CardInset",
   "Cell",
+  "CharacterCount",
   "Checkbox",
   "Consent",
   "ConsentSettingsLink",
