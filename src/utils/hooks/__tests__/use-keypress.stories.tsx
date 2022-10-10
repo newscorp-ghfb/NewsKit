@@ -5,11 +5,6 @@ import {StorybookSubHeading} from '../../../test/storybook-comps';
 import {TextBlock} from '../../../text-block';
 import {styled} from '../../style';
 
-export default {
-  title: 'Utilities/useKeypress',
-  component: () => 'None',
-};
-
 const StyledDiv = styled.div`
   display: inline-block;
   margin: 15px;
@@ -53,4 +48,17 @@ export const StoryUseKeyPress = () => {
 StoryUseKeyPress.storyName = 'useKeypress';
 StoryUseKeyPress.parameters = {
   eyes: {include: false},
+};
+
+export default {
+  title: 'Utilities/useKeypress',
+  component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'useKeypress',
+      url: 'https://newskit.co.uk/components/utils/hooks/',
+      description:
+        'useKeypress is a custom hook that detects when the user is pressing one single key or multiple keys.',
+    },
+  },
 };

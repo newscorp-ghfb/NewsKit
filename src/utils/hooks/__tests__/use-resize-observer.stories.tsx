@@ -13,11 +13,6 @@ const StyledDiv = styled.div`
   overflow: auto;
 `;
 
-export default {
-  title: 'Utilities/useResizeObserver',
-  component: () => 'None',
-};
-
 export const StoryUseResizeObserver = () => {
   const [, setDimensions] = React.useState({top: 0, left: 0});
   const ref = React.useRef<HTMLDivElement>(null);
@@ -40,4 +35,16 @@ export const StoryUseResizeObserver = () => {
 StoryUseResizeObserver.storyName = 'useResizeObserver';
 StoryUseResizeObserver.parameters = {
   eyes: {include: false},
+};
+
+export default {
+  title: 'Utilities/useResizeObserver',
+  component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'useResizeObserver',
+      url: 'https://newskit.co.uk/components/utils/hooks/',
+      description: `useResizeObserver is a custom hook that utilizes the resizeObserver API to return an element's size.`,
+    },
+  },
 };

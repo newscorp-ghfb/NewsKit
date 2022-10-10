@@ -1,8 +1,7 @@
 import * as React from 'react';
-import {useMediaQueryObject, useBreakpointKey, useMediaQuery} from '../index';
+import {useMediaQuery} from '../index';
 
 import {StorybookHeading} from '../../../../test/storybook-comps';
-import {MQ} from '../../../style/types';
 import {getColorCssFromTheme, styled} from '../../../style';
 
 const StyledDiv = styled.div`
@@ -13,11 +12,6 @@ const StyledDiv = styled.div`
   text-align: center;
   background: orange;
 `;
-
-export default {
-  title: 'Utilities/useMediaQuery',
-  component: () => 'None',
-};
 
 export const StoryUseMediaQuery = () => {
   const small = useMediaQuery('screen and (max-width : 767px)');
@@ -49,39 +43,15 @@ StoryUseMediaQuery.parameters = {
   eyes: {include: false},
 };
 
-export const StoryUseMediaQueryObject = () => {
-  const mediaQueryObject: MQ<string> = {
-    xs: 'xs',
-    sm: 'sm',
-    md: 'md',
-    lg: 'lg',
-    xl: 'xl',
-  };
-  const bp = useMediaQueryObject(mediaQueryObject);
-
-  return (
-    <>
-      <StorybookHeading>useMediaQueryObject</StorybookHeading>
-      <StyledDiv data-testid="use-media-query-object">{bp}</StyledDiv>
-    </>
-  );
-};
-StoryUseMediaQueryObject.storyName = 'useMediaQueryObject';
-StoryUseMediaQueryObject.parameters = {
-  eyes: {include: false},
-};
-
-export const StoryUseBreakpointKey = () => {
-  const bp = useBreakpointKey();
-
-  return (
-    <>
-      <StorybookHeading>useBreakpointKey</StorybookHeading>
-      <StyledDiv data-testid="use-breakpoint-key">{bp || 'unknown'}</StyledDiv>
-    </>
-  );
-};
-StoryUseBreakpointKey.storyName = 'useBreakpointKey';
-StoryUseBreakpointKey.parameters = {
-  eyes: {include: false},
+export default {
+  title: 'Utilities/useMediaQuery',
+  component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'useMediaQuery',
+      url: 'https://newskit.co.uk/components/utils/hooks/',
+      description:
+        'useMediaQuery is a custom hook used to help detect whether a single media query matches',
+    },
+  },
 };
