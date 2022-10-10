@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import {StyledCharacterCount} from './styled';
 import {CharacterCountProps, Format, ValidInputElement} from './types';
 import defaults from './defaults';
@@ -47,25 +47,32 @@ const ThemelessCharacterCount = React.forwardRef<
       minLengthDefault,
     );
 
-    const onInput: EventListener = (event: Event) => {
+    const onInput = useCallback<EventListener>(event => {
       const target = event.target as ValidInputElement;
       setCurrentLength(target.value.length);
-    };
+    }, []);
 
     useEffect(() => {
+      let inputEl: ValidInputElement;
       if (inputRef && inputRef.current) {
-        inputRef.current.addEventListener('input', onInput);
+        inputEl = inputRef.current;
+        inputEl.addEventListener('input', onInput);
         setCurrentLength(inputRef.current.value.length);
         // this check ignores the browser default max length of 524,288
-        if (inputRef.current.getAttribute('maxLength')) {
+        if (inputEl.getAttribute('maxLength')) {
           setMaxLength(inputRef.current.maxLength);
         }
         // this check ignores the browser default min length of 0
         if (inputRef.current.getAttribute('minLength')) {
-          setMinLength(inputRef.current.minLength);
+          setMinLength(inputEl.minLength);
         }
       }
-    }, [inputRef]);
+      return () => {
+        if (inputEl) {
+          inputEl.removeEventListener('input', onInput);
+        }
+      };
+    }, [inputRef, onInput]);
 
     if (!inputRef || !inputRef.current) {
       return null;

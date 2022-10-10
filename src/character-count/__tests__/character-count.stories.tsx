@@ -248,7 +248,7 @@ export const CharacterCountForm = () => (
           <FormInputCharacterCount />
         </FormInput>
       </StorybookCase>
-      <StorybookCase title="button">
+      <StorybookCase title="">
         <Button type="submit" overrides={{marginBlockStart: 'space040'}}>
           Submit
         </Button>
