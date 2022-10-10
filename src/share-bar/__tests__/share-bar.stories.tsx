@@ -59,7 +59,7 @@ const ShareOnFacebookBtn = () => (
 );
 
 export default {
-  title: 'Components/share-bar',
+  title: 'Deprecated/Share bar',
   component: () => 'None',
 };
 
