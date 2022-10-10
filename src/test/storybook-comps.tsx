@@ -15,6 +15,7 @@ import {get} from '../utils/get';
 import {LinkStandalone} from '../link';
 import {TitleBar} from '../title-bar';
 import {Divider} from '../divider';
+import {GridLayoutProps} from '../grid-layout/types';
 
 interface StoriesProps {
   title?: JSX.Element | string;
@@ -98,32 +99,45 @@ export const StorybookLabel = styled.label`
   ${getColorCssFromTheme('color', 'inkBase')}
 `;
 
-type StorybookPageProps = {
-  children?: React.ReactNode;
-};
-
-export const StorybookPage = ({children}: StorybookPageProps) => (
+export const StorybookPage = ({children, ...rest}: GridLayoutProps) => (
   <GridLayout
     rowGap="space080"
     columnGap="space080"
-    columns="repeat(auto-fill, minmax(300px, 1fr))"
+    columns={{
+      xs: 'repeat(auto-fill, 1fr)',
+      sm: 'repeat(auto-fill, minmax(300px, 1fr))',
+    }}
     alignItems="start"
-    overrides={{paddingBlock: 'space050', paddingInline: 'space030'}}
+    overrides={{
+      marginBlock: {xs: 'space030', sm: 'space050'},
+      marginInline: {xs: 'space020', sm: 'space040'},
+    }}
+    {...rest}
   >
     {children}
   </GridLayout>
 );
 
 type StorybookCaseProps = {
-  title: string;
+  title?: string;
+  inverse?: boolean;
   children?: React.ReactNode;
 };
 
-export const StorybookCase = ({title, children}: StorybookCaseProps) => (
-  <GridLayout rowGap="space040">
-    <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
-      {title.charAt(0).toUpperCase() + title.slice(1)}
-    </TextBlock>
+export const StorybookCase = ({
+  title,
+  inverse,
+  children,
+}: StorybookCaseProps) => (
+  <GridLayout rowGap="space045">
+    {title && (
+      <TextBlock
+        typographyPreset="utilityBody020"
+        stylePreset={inverse ? 'inkInverse' : 'inkBase'}
+      >
+        {title.charAt(0).toUpperCase() + title.slice(1)}
+      </TextBlock>
+    )}
     <Block>{children}</Block>
   </GridLayout>
 );
@@ -134,7 +148,11 @@ export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
   const description = get(context, 'parameters.nkDocs.description');
   const url = get(context, 'parameters.nkDocs.url');
   const link = () =>
-    url ? <LinkStandalone href={url}>Documentation</LinkStandalone> : null;
+    url ? (
+      <LinkStandalone href={url} target="_blank">
+        Documentation
+      </LinkStandalone>
+    ) : null;
 
   return (
     <GridLayout rowGap="space040" overrides={{marginBlockEnd: 'space060'}}>
