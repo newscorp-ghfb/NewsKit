@@ -64,6 +64,7 @@ const ReleaseNotesPage = ({
             <ContentPrimary headline="Latest release" showSeparator>
               <ReleaseHeader
                 published_at={lastRelease.published_at}
+                created_at={lastRelease.created_at}
                 tag_name={lastRelease.tag_name}
                 change_level={lastRelease.change_level}
               />
@@ -74,11 +75,18 @@ const ReleaseNotesPage = ({
             <ContentPrimary headline="Previous releases" showSeparator>
               <StructuredList divider>
                 {previousReleases.map(
-                  ({body, tag_name, published_at, change_level}) => (
+                  ({
+                    body,
+                    tag_name,
+                    published_at,
+                    created_at,
+                    change_level,
+                  }) => (
                     <StructuredListItem key={tag_name}>
                       <StructuredListCell>
                         <ReleaseHeader
                           published_at={published_at}
+                          created_at={created_at}
                           change_level={change_level}
                           tag_name={tag_name}
                         />
