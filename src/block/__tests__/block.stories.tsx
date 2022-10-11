@@ -1,65 +1,55 @@
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {Block} from '..';
-import {styled} from '../../utils/style';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-  StorybookSpan,
-} from '../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {Visible} from '../../grid/visibility';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {TextBlock} from '../../text-block';
-
-const Square = styled(Block)`
-  box-sizing: border-box;
-  width: 100px;
-  height: 100px;
-`;
 
 // The style presets are added for easier visualization of the spacings around the Block component
 const blockCustomThemeObject: CreateThemeArgs = {
   name: 'block-custom-theme',
   overrides: {
     stylePresets: {
-      blockOuter: {
+      blockDefault: {
         base: {
           backgroundColor: 'transparent',
           borderWidth: '{{borders.borderWidth010}}',
           borderStyle: 'solid',
-          borderColor: '{{colors.blue060}}',
+          borderColor: '{{colors.interfaceBrand010}}',
         },
       },
-      blockInner: {
+      blockWrapper: {
         base: {
           backgroundColor: 'transparent',
           borderWidth: '{{borders.borderWidth010}}',
-          borderStyle: 'solid',
+          borderStyle: 'dashed',
           borderColor: '{{colors.red060}}',
         },
       },
-      customBlock: {
+      blockTransition: {
         base: {
-          backgroundColor: '{{colors.interfaceInformative010}}',
-          color: '{{colors.inkInverse}}',
-          iconColor: '{{colors.inkInverse}}',
-        },
-      },
-      transitionBlock: {
-        base: {
-          backgroundColor: '{{colors.purple060}}',
+          color: '{{colors.inkBase}}',
+          backgroundColor: 'transparent',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interfaceBrand010}}',
         },
         hover: {
-          backgroundColor: '{{colors.amber070}}',
+          backgroundColor: '{{colors.interactivePrimary010}}',
+          color: '{{colors.inkBase}}',
         },
       },
-      logicalBlock: {
+      textTransition: {
         base: {
-          backgroundColor: '{{colors.green040}}',
-          borderWidth: '{{borders.borderWidth020}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.blue060}}',
+          color: 'currentColor',
+        },
+      },
+      blockOverrides: {
+        base: {
+          backgroundColor: '{{colors.interfaceInformative020}}',
+          color: '{{colors.inkBrand010}}',
         },
       },
     },
@@ -68,7 +58,7 @@ const blockCustomThemeObject: CreateThemeArgs = {
         base: {
           transitionProperty: 'background-color',
           transitionDuration: '500ms',
-          transitionDelay: '500ms',
+          transitionDelay: '200ms',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
       },
@@ -76,149 +66,118 @@ const blockCustomThemeObject: CreateThemeArgs = {
   },
 };
 
-const StyledHr = styled.hr`
-  border: 1px solid dashed;
-`;
+const blockGridCols = '1fr';
 
-export const StoryBlock = () => (
-  <>
-    <StorybookHeading>Block</StorybookHeading>
-    <StyledHr />
-    <Block stylePreset="blockOuter">
-      <Block stylePreset="blockInner">
-        <StorybookSpan>Block default without padding or margin</StorybookSpan>
-      </Block>
+const Text = ({children, stylePreset = 'inkBase'}) => (
+  <TextBlock stylePreset={stylePreset} typographyPreset="editorialParagraph010">
+    {children}
+  </TextBlock>
+);
+
+export const StoryDefault = () => (
+  <StorybookPage columns={blockGridCols}>
+    <Block stylePreset="blockDefault">
+      <Text>Default block</Text>
     </Block>
-    <StyledHr />
-    <Block as="span">
-      <StorybookSpan> Block as span </StorybookSpan>
-    </Block>
-    <StyledHr />
-    <Block stylePreset="blockOuter">
+  </StorybookPage>
+);
+StoryDefault.storyName = 'Default';
+
+export const StoryBreakpoint = () => (
+  <StorybookPage columns={blockGridCols}>
+    <Block stylePreset="blockWrapper">
       <Block
-        spaceStack="space030"
-        spaceInset="spaceInset030"
-        stylePreset="customBlock"
-      >
-        <TextBlock>
-          Block with margin spaceStack030, padding spaceInset030, style
-          customBlock
-        </TextBlock>
-      </Block>
-    </Block>
-    <StyledHr />
-    <Block stylePreset="blockOuter">
-      <Block
-        stylePreset="blockInner"
-        spaceStack={{
+        stylePreset="blockDefault"
+        marginBlockEnd={{
           xs: 'space010',
           sm: 'space020',
           md: 'space030',
           lg: 'space040',
+          xl: 'space050',
         }}
       >
         <Visible xs>
-          <StorybookSpan>
-            Block with margin spaceStack010 at xs breakpoint
-          </StorybookSpan>
+          <Text>Block with marginBlockEnd space010 at xs breakpoint</Text>
         </Visible>
         <Visible sm>
-          <StorybookSpan>
-            Block with margin spaceStack020 at sm breakpoint
-          </StorybookSpan>
+          <Text>Block with marginBlockEnd space020 at sm breakpoint</Text>
         </Visible>
         <Visible md>
-          <StorybookSpan>
-            Block with margin spaceStack030 at md breakpoint
-          </StorybookSpan>
+          <Text>Block with marginBlockEnd space030 at md breakpoint</Text>
         </Visible>
         <Visible lg>
-          <StorybookSpan>
-            Block with margin spaceStack040 at lg breakpoint
-          </StorybookSpan>
+          <Text>Block with marginBlockEnd space040 at lg breakpoint</Text>
         </Visible>
         <Visible xl>
-          <StorybookSpan>
-            Block with margin spaceStack050 at xl breakpoint
-          </StorybookSpan>
+          <Text>Block with marginBlockEnd space050 at xl breakpoint</Text>
         </Visible>
       </Block>
     </Block>
-    <StyledHr />
-    <Block stylePreset="blockOuter">
-      <Block spaceInline="space030" stylePreset="blockInner">
-        <StorybookSpan>Block with margin spaceInline030</StorybookSpan>
-      </Block>
-    </Block>
-    <StyledHr />
-    <Block stylePreset="blockOuter">
-      <StorybookSubHeading>Block with transition</StorybookSubHeading>
-      <Block
-        spaceStack="space030"
-        spaceInset="spaceInset030"
-        stylePreset="transitionBlock"
-        transitionPreset="customBackgroundColorChange"
-      >
-        <StorybookSpan stylePreset="inkLight010">
-          Block with transition
-        </StorybookSpan>
-      </Block>
-    </Block>
-  </>
+  </StorybookPage>
 );
-StoryBlock.storyName = 'block';
+StoryBreakpoint.storyName = 'Breakpoint';
 
-export const StoryBlockLogical = () => (
-  <>
-    <StorybookHeading>
-      Inspect the box for better understanding
-    </StorybookHeading>
-    <StorybookSubHeading>paddingInline & paddingBlock</StorybookSubHeading>
-    <Square
-      stylePreset="logicalBlock"
-      paddingInline="space020"
-      paddingBlock="space040"
+export const StoryTransitions = () => (
+  <StorybookPage columns={blockGridCols}>
+    <Block
+      marginBlockEnd="space030"
+      paddingInline="space030"
+      paddingBlock="space030"
+      stylePreset="blockTransition"
+      transitionPreset="customBackgroundColorChange"
     >
-      A
-    </Square>
-    <StorybookSubHeading>marginInline & marginBlock</StorybookSubHeading>
-    <Square
-      stylePreset="logicalBlock"
-      marginInline="space020"
-      marginBlock="space040"
-    >
-      B
-    </Square>
-    <StorybookSubHeading>
-      marginInline & marginBlock & paddingInline & paddingBlock
-    </StorybookSubHeading>
-    <Square
-      stylePreset="logicalBlock"
-      paddingInline="space020"
-      paddingBlock="space040"
-      marginInline="space020"
-      marginBlock="space040"
-    >
-      C
-    </Square>
-    <StorybookSubHeading>
-      marginInline & marginBlock & spaceInline
-    </StorybookSubHeading>
-    <Square
-      stylePreset="logicalBlock"
-      marginInline="space020"
-      marginBlock="space040"
-      spaceInline="space050"
-    >
-      D
-    </Square>
-  </>
+      <Text stylePreset="textTransition">
+        Block with backgroundColorChange transition preset applied
+      </Text>
+    </Block>
+  </StorybookPage>
 );
-StoryBlockLogical.storyName = 'block-logical';
+StoryTransitions.storyName = 'Transitions';
+
+export const StoryOverrides = () => (
+  <StorybookPage columns={blockGridCols}>
+    <StorybookCase title="Style">
+      <Block stylePreset="blockWrapper">
+        <Block
+          marginBlock="space030"
+          paddingInline="space040"
+          paddingBlock="space040"
+          stylePreset="blockOverrides"
+        >
+          <Text>
+            Block with marginBlock space030, paddingInline and paddingBlock
+            space040, style blockOverrides
+          </Text>
+        </Block>
+      </Block>
+    </StorybookCase>
+    <StorybookCase title="Logical props">
+      <Block stylePreset="blockWrapper">
+        <Block
+          marginBlock="space030"
+          paddingInline="space040"
+          paddingBlock="space070"
+          stylePreset="blockDefault"
+        >
+          <Text>Block with logical props applied</Text>
+        </Block>
+      </Block>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryOverrides.storyName = 'Overrides';
 
 export default {
-  title: 'Components/block',
-  component: () => 'None',
+  title: 'Components/Block',
+  component: Block,
+  parameters: {
+    nkDocs: {
+      title: 'Block',
+      url: 'https://newskit.co.uk/components/block',
+      description:
+        'The block is a simple container component that style and space can be applied to. This is the equivalent to a frame in Figma.',
+    },
+  },
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
