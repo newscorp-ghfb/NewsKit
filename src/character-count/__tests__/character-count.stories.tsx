@@ -284,6 +284,7 @@ export const CharacterCountOverrides = () => {
   const styleRef = useRefWithReRender<HTMLTextAreaElement>(null);
   const logicalPropsRef = useRefWithReRender<HTMLTextAreaElement>(null);
   const minHeightRef = useRefWithReRender<HTMLTextAreaElement>(null);
+  const formatRef = useRefWithReRender<HTMLTextAreaElement>(null);
   return (
     <ThemeProvider theme={myCustomTheme}>
       <StorybookPage>
@@ -325,6 +326,21 @@ export const CharacterCountOverrides = () => {
           <CharacterCount
             inputRef={minHeightRef}
             overrides={{minHeight: '80px'}}
+          />
+        </StorybookCase>
+        <StorybookCase title="Custom format">
+          <Label htmlFor="format">Label</Label>
+          <TextArea
+            placeholder="Placeholder"
+            id="format"
+            ref={formatRef}
+            minLength={20}
+          />
+          <CharacterCount
+            inputRef={formatRef}
+            format={({minLength, currentLength}) =>
+              `You need to input at least ${minLength} characters but so far you've only entered ${currentLength}!`
+            }
           />
         </StorybookCase>
       </StorybookPage>
