@@ -47,10 +47,13 @@ const ThemelessCharacterCount = React.forwardRef<
       minLengthDefault,
     );
 
-    const onInput = useCallback<EventListener>(event => {
-      const target = event.target as ValidInputElement;
-      setCurrentLength(target.value.length);
-    }, []);
+    const onInput = useCallback<EventListener>(
+      event => {
+        const target = event.target as ValidInputElement;
+        setCurrentLength(target.value.length);
+      },
+      [setCurrentLength],
+    );
 
     useEffect(() => {
       let inputEl: ValidInputElement;
