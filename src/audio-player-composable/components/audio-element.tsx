@@ -20,6 +20,7 @@ export const AudioElement: React.FC<AudioElementProps> = ({
   <audio
     ref={audioRef}
     autoPlay={autoPlay}
+    data-testid="audio-element"
     src={src}
     onCanPlay={onCanPlay}
     onWaiting={onWaiting}
@@ -30,7 +31,6 @@ export const AudioElement: React.FC<AudioElementProps> = ({
     onTimeUpdate={onTimeUpdate}
     onProgress={onProgress}
     onVolumeChange={onVolumeChange}
-    data-testid="audio-element"
     {...props}
   />
 );

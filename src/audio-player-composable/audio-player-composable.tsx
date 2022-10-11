@@ -354,6 +354,7 @@ export const AudioPlayerComposable = ({
           audioRef={audioRef}
           src={src}
           autoPlay={autoPlay}
+          {...props}
           onCanPlay={eventHandler(AudioEvents.CanPlay)}
           onWaiting={eventHandler(AudioEvents.Waiting)}
           onPlay={eventHandler(AudioEvents.Play)}
@@ -363,7 +364,6 @@ export const AudioPlayerComposable = ({
           onTimeUpdate={eventHandler(AudioEvents.TimeUpdate)}
           onProgress={eventHandler(AudioEvents.Progress)}
           onVolumeChange={eventHandler(AudioEvents.VolumeChange)}
-          {...props}
         />
         {children}
       </AudioPlayerProvider>
