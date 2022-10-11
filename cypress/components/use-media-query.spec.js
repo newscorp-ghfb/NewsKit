@@ -7,20 +7,20 @@ describe('useMediaQuery hooks', () => {
     {vp: 1600, value: 'xl'},
   ];
   beforeEach(() => {
-    cy.visit('?name=use-media-query-hook');
+    cy.visit('?name=hooks');
     cy.wait(50);
   });
 
   it('useMediaQueryObject', () => {
     viewPorts.forEach(({vp, value}) => {
       cy.viewport(vp, 480);
-      cy.get('[data-testid="use-media-query-hook"]').contains(value);
+      cy.get('[data-testid="use-media-query-object"]').contains(value);
     });
   });
   it('useBreakpoint', () => {
     viewPorts.forEach(({vp, value}) => {
       cy.viewport(vp, 480);
-      cy.get('[data-testid="use-breakpoint"]').contains(value);
+      cy.get('[data-testid="use-breakpoint-key"]').contains(value);
     });
   });
 });

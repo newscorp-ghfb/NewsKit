@@ -656,7 +656,7 @@ export const routes = [
             page: true,
             id: '/components/scroll',
             description:
-              'Enables a user to scroll a number of interface elements.',
+              'The scroll component adds scroll behaviour to overflowed content.',
             illustration: 'components/scroll-illustration',
           },
           {

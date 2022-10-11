@@ -46,7 +46,8 @@ export const ThemelessWelcome = () => (
   <WelcomeContainer
     paddingInline="space050"
     paddingBlock="space050"
-    marginInlineStart="-8px"
+    marginInline="-16px"
+    marginBlock="-16px"
   >
     <Block
       stylePreset="welcomeBanner"
