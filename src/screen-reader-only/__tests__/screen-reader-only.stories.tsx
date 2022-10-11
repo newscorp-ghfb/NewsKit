@@ -6,7 +6,7 @@ import {getSSRId} from '../../utils/get-ssr-id';
 const srOnly = getSSRId();
 
 export default {
-  title: 'Components/screen-reader-only',
+  title: 'Utilities/Screen Reader Only',
   component: () => 'None',
 };
 
@@ -21,5 +21,5 @@ export const StoryScreenReaderOnly = () => (
     </ScreenReaderOnly>
   </>
 );
-StoryScreenReaderOnly.storyName = 'screen-reader-only';
+StoryScreenReaderOnly.storyName = 'Default';
 StoryScreenReaderOnly.parameters = {eyes: {include: false}};
