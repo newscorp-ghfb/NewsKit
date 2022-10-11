@@ -6,6 +6,7 @@ import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {Visible} from '../../grid/visibility';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {TextBlock} from '../../text-block';
+import {MQ} from '../../utils';
 
 // The style presets are added for easier visualization of the spacings around the Block component
 const blockCustomThemeObject: CreateThemeArgs = {
@@ -68,7 +69,13 @@ const blockCustomThemeObject: CreateThemeArgs = {
 
 const blockGridCols = '1fr';
 
-const Text = ({children, stylePreset = 'inkBase'}) => (
+const Text = ({
+  children,
+  stylePreset = 'inkBase',
+}: {
+  children: React.ReactNode;
+  stylePreset?: MQ<string>;
+}) => (
   <TextBlock stylePreset={stylePreset} typographyPreset="editorialParagraph010">
     {children}
   </TextBlock>
