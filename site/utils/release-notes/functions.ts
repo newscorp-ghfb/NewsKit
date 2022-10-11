@@ -3,8 +3,16 @@ import {FullRelease, Release} from './types';
 import {GITHUB_API_URL, GITHUB_URL, JIRA_URL, REPO} from './constants';
 
 export async function fetchGitHubReleases(per_page: number = 10) {
+  const ACCESS_TOKEN = process.env.GITHUB_TOKEN;
   const res = await fetch(
     `${GITHUB_API_URL}/repos/${REPO}/releases?per_page=${per_page}`,
+    ACCESS_TOKEN
+      ? {
+          headers: {
+            Authorization: `Bearer ${ACCESS_TOKEN}`,
+          },
+        }
+      : undefined,
   );
   const data = await res.json();
   return data;
@@ -33,6 +41,8 @@ export const addChangeLevelToReleases: (
         ...prev,
         {
           ...next,
+          // when the release is draft publish date is null
+          published_at: next.published_at || next.created_at,
           // Compare against the previous release in the array or the oldest
           // release removed above.
           change_level: diff(
@@ -53,15 +63,21 @@ export const addChangeLevelToReleases: (
 export const updateFinalReleaseInfo = (release: Release) => {
   const arr = release.tag_name.match(/\d*\.\d*\.\d*/);
   const version = `v${arr![0]}`;
-  const [oldCompareLink, stub] = release.body.match(
+  const match = release.body.match(
     `(${GITHUB_URL}/${REPO}/compare/v\\d*\\.\\d*\\.\\d*...)(.*\\d*\\.\\d*\\.\\d*)`,
   )!;
-  const newCompareLink = `${stub}${version}`;
+
+  let body = '';
+  if (match) {
+    const [oldCompareLink, stub] = match;
+    const newCompareLink = `${stub}${version}`;
+    body = release.body.replace(oldCompareLink, newCompareLink);
+  }
   return {
     ...release,
     name: version,
     tag_name: version,
-    body: release.body.replace(oldCompareLink, newCompareLink),
+    body,
   };
 };
 
