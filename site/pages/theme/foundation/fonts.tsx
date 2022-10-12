@@ -620,6 +620,7 @@ const Fonts = (layoutProps: LayoutProps) => (
               selected text-block or all text-block components on the page.
               Learn more about{' '}
               <Link href="/components/text-block/">Text-crop</Link> Figma
+              plugin.
             </>
           }
         />
