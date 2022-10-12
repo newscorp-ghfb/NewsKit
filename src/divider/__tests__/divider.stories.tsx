@@ -60,11 +60,6 @@ const myCustomTheme = compileTheme(
   }),
 );
 
-export default {
-  title: 'Components/divider',
-  component: () => 'None',
-};
-
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase>
@@ -162,16 +157,16 @@ StoryResponsive.storyName = 'Breakpoint';
 
 export const StoryLogicalPropsOverrides = () => (
   <>
-    <StorybookPage>
+    <StorybookPage columns={dividerCols}>
       <StorybookCase title="Logical props- paddingBlock overrides">
         <BlockForDivider />
         <Divider overrides={{paddingBlock: 'space030'}} />
         <BlockForDivider />
       </StorybookCase>
       <StorybookCase title="Logical props- paddingInline overrides">
-        <BlockForDivider />
+        <BlockForDivider paddingInline="space030" />
         <Divider overrides={{paddingInline: 'space030'}} />
-        <BlockForDivider />
+        <BlockForDivider paddingInline="space030" />
       </StorybookCase>
       <StorybookCase title="Logical props- marginBlock overrides">
         <BlockForDivider />
@@ -181,7 +176,7 @@ export const StoryLogicalPropsOverrides = () => (
       <StorybookCase title="Logical props- marginInline overrides">
         <BlockForDivider marginInline="space030" />
         <Divider overrides={{marginInline: 'space030'}} />
-        <BlockForDivider />
+        <BlockForDivider marginInline="space030" />
       </StorybookCase>
       <StorybookCase title="Styling">
         <ThemeProvider theme={myCustomTheme}>
@@ -194,3 +189,16 @@ export const StoryLogicalPropsOverrides = () => (
   </>
 );
 StoryLogicalPropsOverrides.storyName = 'Overrides';
+
+export default {
+  title: 'Components/Divider',
+  component: 'Divider',
+  parameters: {
+    nkDocs: {
+      title: 'Divider',
+      url: 'https://newskit.co.uk/components/divider',
+      description:
+        'A divider is used to provide visual separation of different content. Dividers can be applied vertically or horizontally.',
+    },
+  },
+};
