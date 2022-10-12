@@ -1,19 +1,26 @@
 import * as React from 'react';
 import {Block, Visible} from 'newskit';
 import {SidebarNav} from './sidebar-navigation';
-import {GitHubLaunch} from '../menu-collapsible/menu-collapsible';
+import {
+  DarkModeToggle,
+  GitHubLaunch,
+} from '../menu-collapsible/menu-collapsible';
 import {StyledSidebarDesktop, StyledDrawer} from './styled';
 
 interface SidebarProps {
   sidebarOpen: boolean;
   handleSidebarClick: () => void;
   hideSidebar?: boolean;
+  themeMode: string;
+  toggleTheme: () => void;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({
   sidebarOpen,
   handleSidebarClick,
   hideSidebar,
+  themeMode,
+  toggleTheme,
 }) => (
   <>
     <Visible xs sm md>
@@ -39,6 +46,10 @@ const Sidebar: React.FC<SidebarProps> = ({
         <SidebarNav />
         <Block marginInline="space060" marginBlock="space050">
           <GitHubLaunch />
+          <Block marginBlock="space050" />
+        </Block>
+        <Block marginInline="space060" marginBlock="space050">
+          <DarkModeToggle themeMode={themeMode} toggleTheme={toggleTheme} />
           <Block marginBlock="space050" />
         </Block>
       </StyledDrawer>

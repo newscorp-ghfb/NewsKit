@@ -183,6 +183,8 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
             sidebarOpen={sidebarOpen}
             handleSidebarClick={this.toggleSidebar}
             hideSidebar={hideSidebar}
+            themeMode={themeMode}
+            toggleTheme={toggleTheme}
           />
           <SiteHeader
             handleSidebarClick={this.toggleSidebar}
