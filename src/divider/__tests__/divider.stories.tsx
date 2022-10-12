@@ -25,7 +25,6 @@ const BlockForDivider = styled(Block)<Pick<DividerProps, 'vertical'>>`
   ${getSizingCssFromTheme('height', 'sizing080')};
   ${getColorCssFromTheme('backgroundColor', 'blue010')};
   ${getColorCssFromTheme('color', 'blue010')};
-  // add 300px width?
   width: 100%;
 `;
 
