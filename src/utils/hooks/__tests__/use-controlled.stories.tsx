@@ -34,9 +34,15 @@ export const StoryUseControlled = () => {
       }
     };
 
+    const title = valueProp ? 'controlled' : 'uncontrolled';
+
     return (
       <Stack flow="horizontal-center" spaceInline="space030">
-        <IconButton size="medium" onClick={handleOnClick}>
+        <IconButton
+          size="medium"
+          onClick={handleOnClick}
+          aria-label={`Add for ${title}`}
+        >
           <IconFilledAddCircle />
         </IconButton>
         <StyledDiv>{value}</StyledDiv>

@@ -37,7 +37,7 @@ const useKeyPressCustomTheme: CreateThemeArgs = {
     },
   },
 };
-const Key = ({children}) => (
+const Key = ({children}: {children: string}) => (
   <Flag
     overrides={{
       typographyPreset: 'utilityLabel010',
