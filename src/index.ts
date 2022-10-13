@@ -65,6 +65,7 @@ export * from './switch';
 export * from './tabs';
 export * from './tag';
 export * from './tealium';
+export * from './text-area';
 export * from './text-block';
 export * from './text-input';
 export * from './text-field';
