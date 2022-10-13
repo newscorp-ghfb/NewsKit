@@ -2,15 +2,29 @@ import * as React from 'react';
 import {useMediaQuery} from '../index';
 
 import {StorybookHeading} from '../../../../test/storybook-comps';
-import {getColorCssFromTheme, styled} from '../../../style';
+import {
+  getColorCssFromTheme,
+  getTypographyPresetFromTheme,
+  styled,
+} from '../../../style';
+import {InlineMessage} from '../../../../inline-message';
+import {IconFilledInfo} from '../../../../icons';
 
-const StyledDiv = styled.div`
-  border: 2px solid;
-  ${getColorCssFromTheme('borderColor', 'black')};
-  ${getColorCssFromTheme('color', 'inkBase')};
-  font-weight: bold;
+interface WrapperProps {
+  active: boolean;
+}
+
+const StyledDiv = styled.div<WrapperProps>`
+  ${({active}) =>
+    active
+      ? getColorCssFromTheme('backgroundColor', 'green010')
+      : getColorCssFromTheme('backgroundColor', 'red010')}
+  ${getTypographyPresetFromTheme('utilityLabel030')}
   text-align: center;
-  background: orange;
+  height: 64px;
+  line-height: 64px;
+  color: #3b3b3b;
+  margin-bottom: 24px;
 `;
 
 export const StoryUseMediaQuery = () => {
@@ -26,14 +40,25 @@ export const StoryUseMediaQuery = () => {
   return (
     <>
       <StorybookHeading>useMediaQuery</StorybookHeading>
+      <InlineMessage
+        icon={
+          <IconFilledInfo
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        overrides={{marginBlockEnd: 'space050'}}
+      >
+        Resize the browser window to return the active media query.
+      </InlineMessage>
       <div data-testid="use-media-query">
-        Resize your browser windows to see changes.
-        <br />
-        <br />
-        <StyledDiv>sm: {small ? 'yes' : 'no'}</StyledDiv>
-        <StyledDiv>md: {medium ? 'yes' : 'no'}</StyledDiv>
-        <StyledDiv>lg: {large ? 'yes' : 'no'}</StyledDiv>
-        <StyledDiv>xl: {extraLarge ? 'yes' : 'no'}</StyledDiv>
+        <StyledDiv active={small}>sm: {small ? 'yes' : 'no'}</StyledDiv>
+        <StyledDiv active={medium}>md: {medium ? 'yes' : 'no'}</StyledDiv>
+        <StyledDiv active={large}>lg: {large ? 'yes' : 'no'}</StyledDiv>
+        <StyledDiv active={extraLarge}>
+          xl: {extraLarge ? 'yes' : 'no'}
+        </StyledDiv>
       </div>
     </>
   );

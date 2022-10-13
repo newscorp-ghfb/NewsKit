@@ -1,9 +1,11 @@
 import * as React from 'react';
+import {IconFilledAddCircle} from '../../../icons';
 import {useControlled} from '../index';
 
-import {StorybookSubHeading} from '../../../test/storybook-comps';
-import {Button} from '../../../button';
 import {getColorCssFromTheme, styled} from '../../style';
+import {IconButton} from '../../../icon-button';
+import {Stack} from '../../../stack';
+import {StorybookSubHeading} from '../../../test/storybook-comps';
 
 const StyledDiv = styled.div`
   ${getColorCssFromTheme('color', 'inkBase')};
@@ -33,25 +35,31 @@ export const StoryUseControlled = () => {
     };
 
     return (
-      <>
-        <Button onClick={handleOnClick}>+</Button>
+      <Stack flow="horizontal-center" spaceInline="space030">
+        <IconButton size="medium" onClick={handleOnClick}>
+          <IconFilledAddCircle />
+        </IconButton>
         <StyledDiv>{value}</StyledDiv>
-      </>
+      </Stack>
     );
   };
 
   const [externalValue, setExternalValue] = React.useState(0);
 
   return (
-    <>
-      <StorybookSubHeading>Uncontrolled state</StorybookSubHeading>
-      <Component defaultValue={40} />
-      <StorybookSubHeading>Controlled state</StorybookSubHeading>
-      <Component
-        value={externalValue}
-        onClick={() => setExternalValue(externalValue + 1)}
-      />
-    </>
+    <Stack flow="horizontal-top" spaceInline="space120">
+      <Stack spaceStack="space045">
+        <StorybookSubHeading>Uncontrolled state</StorybookSubHeading>
+        <Component defaultValue={40} />
+      </Stack>
+      <Stack spaceStack="space045">
+        <StorybookSubHeading>Controlled state</StorybookSubHeading>
+        <Component
+          value={externalValue}
+          onClick={() => setExternalValue(externalValue + 1)}
+        />
+      </Stack>
+    </Stack>
   );
 };
 StoryUseControlled.storyName = 'useControlled';

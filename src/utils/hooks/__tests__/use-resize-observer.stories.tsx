@@ -2,12 +2,16 @@ import * as React from 'react';
 import {useResizeObserver} from '../index';
 
 import {StorybookSubHeading} from '../../../test/storybook-comps';
-import {getColorCssFromTheme, styled} from '../../style';
+import {getBorderCssFromTheme, getColorCssFromTheme, styled} from '../../style';
+import {InlineMessage} from '../../../inline-message';
+import {IconFilledInfo} from '../../../icons';
+import {TextBlock} from '../../../text-block';
 
 const StyledDiv = styled.div`
   padding: 10px;
   ${getColorCssFromTheme('color', 'inkBase')};
-  ${getColorCssFromTheme('borderColor', 'black')};
+  ${getColorCssFromTheme('borderColor', 'inkBrand020')};
+  ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
   border: 1px solid;
   resize: both;
   overflow: auto;
@@ -26,8 +30,21 @@ export const StoryUseResizeObserver = () => {
   return (
     <>
       <StorybookSubHeading>useResizeObserver</StorybookSubHeading>
+      <InlineMessage
+        icon={
+          <IconFilledInfo
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        overrides={{marginBlockEnd: 'space050'}}
+      >
+        Resize the input to return the element’s size.
+      </InlineMessage>
       <StyledDiv ref={ref}>
-        {width} x {height}
+        <TextBlock>Width: {width}px</TextBlock>
+        <TextBlock>Height: {height}px</TextBlock>
       </StyledDiv>
     </>
   );

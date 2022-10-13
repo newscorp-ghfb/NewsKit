@@ -1,32 +1,44 @@
 import * as React from 'react';
 import {useIntersection} from '../index';
-
-import {StorybookSubHeading} from '../../../test/storybook-comps';
+import {InlineMessage} from '../../../inline-message';
 import {getColorCssFromTheme, styled} from '../../style';
+import {IconFilledInfo} from '../../../icons';
+import {StorybookSubHeading} from '../../../test/storybook-comps';
 
 const StyledDiv = styled.div`
   min-height: 60vh;
   width: 100%;
   display: flex;
   border: 1px dashed;
-  ${getColorCssFromTheme('borderColor', 'inkBase')};
+  padding: 12px;
+  ${getColorCssFromTheme('borderColor', 'inkNegative')};
   ${getColorCssFromTheme('color', 'inkBase')};
 `;
 
 export const StoryUseIntersection = () => {
   const Section = ({title}: {title: string}) => {
-    const [ref, isIntersected] = useIntersection({rootMargin: '120px'});
-
-    const isVisible = isIntersected;
-
+    const [ref, isVisible] = useIntersection({rootMargin: '120px'});
     console.log(`Render Section ${title}`, {isVisible});
 
     return <StyledDiv ref={ref}>{title}</StyledDiv>;
   };
   return (
     <>
-      <StorybookSubHeading>useInteraction</StorybookSubHeading>
-      <StorybookSubHeading>Check console.log</StorybookSubHeading>
+      <StorybookSubHeading>useIntersection</StorybookSubHeading>
+      <InlineMessage
+        icon={
+          <IconFilledInfo
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        overrides={{
+          marginBlockEnd: 'space050',
+        }}
+      >
+        In order to view how useIntersection works, please check out console
+      </InlineMessage>
       <>
         {Array.from({length: 5}).map((_, index) => (
           // eslint-disable-next-line react/no-array-index-key

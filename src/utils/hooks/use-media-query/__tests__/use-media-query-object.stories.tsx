@@ -3,15 +3,21 @@ import {useMediaQueryObject} from '../index';
 
 import {StorybookHeading} from '../../../../test/storybook-comps';
 import {MQ} from '../../../style/types';
-import {getColorCssFromTheme, styled} from '../../../style';
+import {
+  getColorCssFromTheme,
+  getTypographyPresetFromTheme,
+  styled,
+} from '../../../style';
+import {IconFilledInfo} from '../../../../icons';
+import {InlineMessage} from '../../../../inline-message';
 
 const StyledDiv = styled.div`
-  border: 2px solid;
-  ${getColorCssFromTheme('borderColor', 'black')};
-  ${getColorCssFromTheme('color', 'inkBase')};
-  font-weight: bold;
+  ${getColorCssFromTheme('backgroundColor', 'red010')};
+  ${getTypographyPresetFromTheme('utilityLabel030')}
   text-align: center;
-  background: orange;
+  height: 64px;
+  line-height: 64px;
+  color: #3b3b3b;
 `;
 
 export const StoryUseMediaQueryObject = () => {
@@ -27,6 +33,18 @@ export const StoryUseMediaQueryObject = () => {
   return (
     <>
       <StorybookHeading>useMediaQueryObject</StorybookHeading>
+      <InlineMessage
+        icon={
+          <IconFilledInfo
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        overrides={{marginBlockEnd: 'space050'}}
+      >
+        Resize the browser window to return the active media query object.
+      </InlineMessage>
       <StyledDiv data-testid="use-media-query-object">{bp}</StyledDiv>
     </>
   );

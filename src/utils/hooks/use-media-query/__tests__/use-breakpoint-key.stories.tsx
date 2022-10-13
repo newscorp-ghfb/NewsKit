@@ -2,15 +2,21 @@ import * as React from 'react';
 import {useBreakpointKey} from '../index';
 
 import {StorybookHeading} from '../../../../test/storybook-comps';
-import {getColorCssFromTheme, styled} from '../../../style';
+import {
+  getColorCssFromTheme,
+  getTypographyPresetFromTheme,
+  styled,
+} from '../../../style';
+import {IconFilledInfo} from '../../../../icons';
+import {InlineMessage} from '../../../../inline-message';
 
 const StyledDiv = styled.div`
-  border: 2px solid;
-  ${getColorCssFromTheme('borderColor', 'black')};
-  ${getColorCssFromTheme('color', 'inkBase')};
-  font-weight: bold;
+  ${getColorCssFromTheme('backgroundColor', 'red010')};
+  ${getTypographyPresetFromTheme('utilityLabel030')}
+  color: #3b3b3b;
   text-align: center;
-  background: orange;
+  height: 64px;
+  line-height: 64px;
 `;
 
 export const StoryUseBreakpointKey = () => {
@@ -19,6 +25,18 @@ export const StoryUseBreakpointKey = () => {
   return (
     <>
       <StorybookHeading>useBreakpointKey</StorybookHeading>
+      <InlineMessage
+        icon={
+          <IconFilledInfo
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        overrides={{marginBlockEnd: 'space050'}}
+      >
+        Resize the browser window to return the active breakpoint key.
+      </InlineMessage>
       <StyledDiv data-testid="use-breakpoint-key">{bp || 'unknown'}</StyledDiv>
     </>
   );
