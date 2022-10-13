@@ -42,6 +42,11 @@ const dividerCols = {
   sm: 'repeat(2, minmax(150px, max-content))',
   md: 'auto',
 };
+const verticalCols = {
+  xs: 'repeat(1, minmax(150px, max-content))',
+  sm: 'repeat(2, minmax(150px, max-content))',
+  md: '1fr 1fr',
+};
 
 const myCustomTheme = compileTheme(
   createTheme({
@@ -72,7 +77,10 @@ StoryDefault.storyName = 'Default';
 export const StoryHorizontal = () => (
   <>
     <StorybookPage columns={dividerCols}>
-      <StorybookCase title="Horizontal divider in vertical block">
+      <StorybookCase title="Default">
+        <Divider />
+      </StorybookCase>
+      <StorybookCase title="In vertical block">
         <BlockForDivider />
         <Block paddingBlock="space010" />
         <Divider />
@@ -80,14 +88,14 @@ export const StoryHorizontal = () => (
         <BlockForDivider />
       </StorybookCase>
 
-      <StorybookCase title="Horizontal in vertical stack without spacing">
+      <StorybookCase title="In vertical stack without spacing">
         <Stack stackDistribution="center" flow="vertical-center">
           <BlockForDivider />
           <Divider />
           <BlockForDivider />
         </Stack>
       </StorybookCase>
-      <StorybookCase title="Horizontal in vertical stack with spacing">
+      <StorybookCase title="In vertical stack with spacing">
         <StackForHorizontalDivider
           stackDistribution="center"
           flow="vertical-center"
@@ -108,15 +116,20 @@ StoryHorizontal.storyName = 'Horizontal';
 
 export const StoryVertical = () => (
   <>
-    <StorybookPage columns={dividerCols}>
-      <StorybookCase title="Vertical divider in horizontal block">
+    <StorybookPage columns={verticalCols}>
+      <StorybookCase title="Default">
+        <Box transparent>
+          <Divider vertical />
+        </Box>
+      </StorybookCase>
+      <StorybookCase title="In horizontal block">
         <Box marginRight />
         <ContainerInline spaceInline="space020">
           <Divider vertical />
         </ContainerInline>
         <Box />
       </StorybookCase>
-      <StorybookCase title="Vertical divider in horizontal Stack without spacing">
+      <StorybookCase title="In horizontal Stack without spacing">
         <Stack flow="horizontal-center" stackDistribution="flex-start">
           <Box />
           <Divider vertical />
@@ -124,7 +137,7 @@ export const StoryVertical = () => (
         </Stack>
       </StorybookCase>
 
-      <StorybookCase title="Vertical divider in horizontal Stack with spacing">
+      <StorybookCase title="In horizontal Stack with spacing">
         <Stack
           flow="horizontal-center"
           stackDistribution="flex-start"
@@ -158,24 +171,18 @@ StoryResponsive.storyName = 'Breakpoint';
 export const StoryLogicalPropsOverrides = () => (
   <>
     <StorybookPage columns={dividerCols}>
-      <StorybookCase title="Logical props- paddingBlock overrides">
-        <BlockForDivider />
-        <Divider overrides={{paddingBlock: 'space030'}} />
-        <BlockForDivider />
-      </StorybookCase>
-      <StorybookCase title="Logical props- paddingInline overrides">
+      <StorybookCase title="Padding overrides">
         <BlockForDivider paddingInline="space030" />
-        <Divider overrides={{paddingInline: 'space030'}} />
+        <Divider
+          overrides={{paddingBlock: 'space030', paddingInline: 'space030'}}
+        />
         <BlockForDivider paddingInline="space030" />
       </StorybookCase>
-      <StorybookCase title="Logical props- marginBlock overrides">
-        <BlockForDivider />
-        <Divider overrides={{marginBlock: 'space030'}} />
-        <BlockForDivider />
-      </StorybookCase>
-      <StorybookCase title="Logical props- marginInline overrides">
+      <StorybookCase title="Margin overrides">
         <BlockForDivider marginInline="space030" />
-        <Divider overrides={{marginInline: 'space030'}} />
+        <Divider
+          overrides={{marginBlock: 'space030', marginInline: 'space030'}}
+        />
         <BlockForDivider marginInline="space030" />
       </StorybookCase>
       <StorybookCase title="Styling">
