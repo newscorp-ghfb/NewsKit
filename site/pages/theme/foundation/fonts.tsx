@@ -1,5 +1,10 @@
 import React from 'react';
-import {InlineMessage, newskitLightTheme, toNewsKitIcon} from 'newskit';
+import {
+  InlineMessage,
+  newskitLightTheme,
+  toNewsKitIcon,
+  UnorderedList,
+} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {
   ContentSection,
@@ -21,6 +26,7 @@ import {
 } from '../../../components/illustrations/illustration-loader';
 import {Table} from '../../../components/table';
 import {getTokenType} from '../../../utils/get-token-type';
+import {IconFilledCircle} from '../../../../src/icons';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -513,7 +519,45 @@ const Fonts = (layoutProps: LayoutProps) => (
               <Link href="https://seek-oss.github.io/capsize/" target="_blank">
                 Capsize
               </Link>{' '}
-              following the 3 easy steps.
+              following the easy steps outlined on their website.
+              <br />
+              <br />
+              <br />
+              <UnorderedList
+                markerAlign="start"
+                listItemMarker={IconFilledCircle}
+                overrides={{
+                  spaceStack: 'space060',
+                  paddingInline: 'space030',
+                  content: {
+                    typographyPreset: 'editorialParagraph030',
+                  },
+                }}
+              >
+                <>
+                  Choose your font from Google Fonts, system, url or upload your
+                  own unique font.
+                </>
+                <>
+                  Edit and adjust the crop positions so that the letter H is
+                  defining the cap height measurement. This is set by default
+                  when you add your font, but you can fine tune this further if
+                  needed.
+                </>
+                <>
+                  Find the section where the crop data is displayed and then
+                  copy this into your theme file for the font family you are
+                  defining the text cropping data for.
+                </>
+              </UnorderedList>
+              <br />
+              When generating the font metrics for text cropping, we recommend
+              that you only need to generate these for the 400 weight of your
+              chosen font as this caters for most scenarios and weights. However
+              you can provide different cropping data for other weights if you
+              wanted these to be different, but the cropping data for the 400
+              weight would always be used as a fallback if no additional data is
+              provided.
             </>
           }
         >
@@ -576,6 +620,7 @@ const Fonts = (layoutProps: LayoutProps) => (
               selected text-block or all text-block components on the page.
               Learn more about{' '}
               <Link href="/components/text-block/">Text-crop</Link> Figma
+              plugin.
             </>
           }
         />
