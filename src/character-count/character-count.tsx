@@ -77,10 +77,6 @@ const ThemelessCharacterCount = React.forwardRef<
       };
     }, [inputRef, onInput]);
 
-    if (!inputRef || !inputRef.current) {
-      return null;
-    }
-
     const format: Format = customFormat || defaultFormat;
 
     return (

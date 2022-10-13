@@ -12,7 +12,7 @@ export type Format = (val: {
 
 export interface CharacterCountProps
   extends Omit<React.HTMLAttributes<HTMLParagraphElement>, 'children'> {
-  inputRef?: React.RefObject<ValidInputElement>;
+  inputRef: React.RefObject<ValidInputElement>;
   size?: 'small' | 'medium' | 'large';
   state?: FormInputState;
   format?: Format;

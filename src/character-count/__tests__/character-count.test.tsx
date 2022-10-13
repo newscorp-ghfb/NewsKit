@@ -1,9 +1,8 @@
-import React, {ReactElement, RefObject} from 'react';
+import React, {ReactElement, RefObject, useRef} from 'react';
 import {act} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {CharacterCount} from '..';
 import {generateString, renderWithImplementation} from '../../test/test-utils';
-import {useRefWithReRender} from '../../utils/use-ref-with-rerender';
 import {TextArea} from '../../text-area';
 
 const InputWithCharacterCount = ({
@@ -11,7 +10,7 @@ const InputWithCharacterCount = ({
 }: {
   children: (ref: RefObject<any>) => ReactElement;
 }) => {
-  const ref = useRefWithReRender<HTMLTextAreaElement>(null);
+  const ref = useRef<HTMLTextAreaElement>(null);
   return children(ref);
 };
 

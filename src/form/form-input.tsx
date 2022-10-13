@@ -386,7 +386,7 @@ export const FormInputCharacterCount = (
     <CharacterCount
       state={state}
       size={size}
-      inputRef={refObject}
+      inputRef={refObject!}
       minLength={getValueFromRule(minLength)}
       maxLength={getValueFromRule(maxLength)}
       {...props}

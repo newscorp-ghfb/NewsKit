@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {useRef} from 'react';
 
 import {CharacterCount, CharacterCountProps} from '..';
 import {
@@ -11,7 +12,6 @@ import {
 } from '../../form';
 import {Button} from '../../button';
 import {TextArea, TextAreaProps} from '../../text-area';
-import {useRefWithReRender} from '../../utils/use-ref-with-rerender';
 import {Label} from '../../label';
 import {TextField, TextFieldSize} from '../../text-field';
 import {FormInputState} from '../../form/types';
@@ -31,7 +31,7 @@ export default {
 };
 
 export const CharacterCountDefault = () => {
-  const ref = useRefWithReRender<HTMLTextAreaElement>(null);
+  const ref = useRef<HTMLTextAreaElement>(null);
   return (
     <StorybookPage>
       <StorybookCase title="default">
@@ -51,9 +51,9 @@ CharacterCountDefault.storyName = 'Default';
 
 export const CharacterCountSizes = () => {
   const refs = {
-    small: useRefWithReRender<HTMLTextAreaElement>(null),
-    medium: useRefWithReRender<HTMLTextAreaElement>(null),
-    large: useRefWithReRender<HTMLTextAreaElement>(null),
+    small: useRef<HTMLTextAreaElement>(null),
+    medium: useRef<HTMLTextAreaElement>(null),
+    large: useRef<HTMLTextAreaElement>(null),
   };
   return (
     <StorybookPage>
@@ -85,9 +85,9 @@ CharacterCountSizes.storyName = 'Size';
 
 export const CharacterCountStates = () => {
   const refs = {
-    valid: useRefWithReRender<HTMLTextAreaElement>(null),
-    invalid: useRefWithReRender<HTMLTextAreaElement>(null),
-    disabled: useRefWithReRender<HTMLTextAreaElement>(null),
+    valid: useRef<HTMLTextAreaElement>(null),
+    invalid: useRef<HTMLTextAreaElement>(null),
+    disabled: useRef<HTMLTextAreaElement>(null),
   };
   return (
     <StorybookPage>
@@ -113,8 +113,8 @@ export const CharacterCountStates = () => {
 CharacterCountStates.storyName = 'States';
 
 export const CharacterCountMaxLength = () => {
-  const textArea = useRefWithReRender<HTMLTextAreaElement>(null);
-  const textField = useRefWithReRender<HTMLInputElement>(null);
+  const textArea = useRef<HTMLTextAreaElement>(null);
+  const textField = useRef<HTMLInputElement>(null);
   return (
     <StorybookPage>
       <StorybookCase title="Text area">
@@ -143,8 +143,8 @@ export const CharacterCountMaxLength = () => {
 CharacterCountMaxLength.storyName = 'Max length';
 
 export const CharacterCountMinLength = () => {
-  const textArea = useRefWithReRender<HTMLTextAreaElement>(null);
-  const textField = useRefWithReRender<HTMLInputElement>(null);
+  const textArea = useRef<HTMLTextAreaElement>(null);
+  const textField = useRef<HTMLInputElement>(null);
   return (
     <StorybookPage>
       <StorybookCase title="Text area">
@@ -173,8 +173,8 @@ export const CharacterCountMinLength = () => {
 CharacterCountMinLength.storyName = 'Min length';
 
 export const CharacterCountMinAndMaxLength = () => {
-  const textArea = useRefWithReRender<HTMLTextAreaElement>(null);
-  const textField = useRefWithReRender<HTMLInputElement>(null);
+  const textArea = useRef<HTMLTextAreaElement>(null);
+  const textField = useRef<HTMLInputElement>(null);
   return (
     <StorybookPage>
       <StorybookCase title="Text area">
@@ -281,10 +281,10 @@ const myCustomTheme = createTheme({
 });
 
 export const CharacterCountOverrides = () => {
-  const styleRef = useRefWithReRender<HTMLTextAreaElement>(null);
-  const logicalPropsRef = useRefWithReRender<HTMLTextAreaElement>(null);
-  const minHeightRef = useRefWithReRender<HTMLTextAreaElement>(null);
-  const formatRef = useRefWithReRender<HTMLTextAreaElement>(null);
+  const styleRef = useRef<HTMLTextAreaElement>(null);
+  const logicalPropsRef = useRef<HTMLTextAreaElement>(null);
+  const minHeightRef = useRef<HTMLTextAreaElement>(null);
+  const formatRef = useRef<HTMLTextAreaElement>(null);
   return (
     <ThemeProvider theme={myCustomTheme}>
       <StorybookPage>
