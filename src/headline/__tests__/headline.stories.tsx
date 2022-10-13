@@ -93,7 +93,7 @@ export const StoryHeadline = () => (
 StoryHeadline.storyName = 'headline';
 
 export default {
-  title: 'NewsKit Light/headline',
+  title: 'Components/headline',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

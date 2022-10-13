@@ -1,0 +1,29 @@
+{
+  "gdpr": {
+    "authId": null,
+    "uuid": "421e3aef-4f3c-4d41-a425-fb9b5f745896_12",
+    "getMessageAlways": false,
+    "applies": false,
+
+    "euconsent": "CPgX9oAPgX9oAAGABCENCjCsAAAAAAAAAAwIAAAAAAAA.YAAAAAAAAAAA",
+    "addtlConsent": "1~",
+    "dateCreated": "2022-10-05T11:49:24.241Z",
+    "consentStatus": {
+      "rejectedAny": false,
+      "rejectedLI": false,
+      "consentedAll": true,
+      "granularStatus": {
+        "vendorConsent": "ALL",
+        "vendorLegInt": "EMPTY_VL",
+        "purposeConsent": "ALL",
+        "purposeLegInt": "EMPTY_VL",
+        "previousOptInAll": false,
+        "defaultConsent": false
+      },
+      "hasConsentData": true,
+      "consentedToAny": true
+    },
+    "vendorListId": "5ff72d5fa22863a7f72b9b95"
+  },
+  "version": 1
+}

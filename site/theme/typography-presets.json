@@ -121,5 +121,26 @@
   "editorialDropCap030": {
     "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
     "fontWeight": "{{fonts.fontWeight040}}"
+  },
+  "utilityLink010": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontSize": "{{fonts.fontSize010}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}"
+  },
+  "utilityLink020": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontSize": "{{fonts.fontSize020}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}"
+  },
+  "utilityLink030": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontSize": "{{fonts.fontSize030}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}"
   }
 }

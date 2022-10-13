@@ -13,7 +13,7 @@ import {TextBlock} from '../../text-block';
 import {LinkStandalone} from '../../link';
 
 export default {
-  title: 'NewsKit Light/video-player/default',
+  title: 'Components/video-player/default',
   component: () => 'None',
   disabledRules: [
     'landmark-unique',

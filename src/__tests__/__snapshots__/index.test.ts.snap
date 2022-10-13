@@ -122,6 +122,7 @@ Array [
   "Tabs",
   "Tag",
   "Tealium",
+  "TextArea",
   "TextBlock",
   "TextField",
   "TextInput",
@@ -229,6 +230,7 @@ Array [
   "useTheme",
   "withDefaultProps",
   "withInstrumentation",
+  "withOwnTheme",
   "withTheme",
 ]
 `;

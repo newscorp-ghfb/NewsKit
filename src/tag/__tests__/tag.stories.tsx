@@ -452,7 +452,7 @@ export const StoryTagWithOutlineOverride = () => (
 StoryTagWithOutlineOverride.storyName = 'tag with outline overrides';
 
 export default {
-  title: 'NewsKit Light/tag',
+  title: 'Components/tag',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

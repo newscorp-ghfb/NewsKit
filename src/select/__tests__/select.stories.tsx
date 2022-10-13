@@ -1142,7 +1142,7 @@ export const StoryOutlineOverride = () => (
 StoryOutlineOverride.storyName = 'Select Outline override';
 
 export default {
-  title: 'NewsKit Light/select',
+  title: 'Components/select',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

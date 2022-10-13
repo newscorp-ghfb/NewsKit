@@ -16,7 +16,7 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 
 export default {
-  title: 'NewsKit Light/fieldset',
+  title: 'Components/fieldset',
   component: () => 'None',
   disabledRules: ['heading-order'],
 };

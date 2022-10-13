@@ -455,7 +455,7 @@ StoryToastApi.parameters = {
 };
 
 export default {
-  title: 'NewsKit Light/toast',
+  title: 'Components/toast',
   component: () => 'None',
   disabledRules: [],
   decorators: [

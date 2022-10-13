@@ -16,13 +16,13 @@ import {
 import {calculateTime} from '../components/time-display/utils';
 
 export default {
-  title: 'NewsKit Light/audio-player-composable-e2e',
+  title: 'Components/audio-player-composable-e2e',
   component: () => 'None',
 };
 
 const fullAudioPlayerAreas = `
-  seekBar seekBar seekBar 
-  currentTime none totalTime  
+  seekBar seekBar seekBar
+  currentTime none totalTime
   volume controls link
  `;
 

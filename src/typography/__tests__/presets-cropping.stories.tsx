@@ -10,7 +10,7 @@ import {
 } from '../../test/storybook-comps';
 
 export default {
-  title: 'NewsKit Light/typography/presets-cropping',
+  title: 'Components/typography/presets-cropping',
   component: () => 'None',
 };
 

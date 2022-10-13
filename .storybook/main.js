@@ -14,7 +14,6 @@ module.exports = {
         actions: false,
       },
     },
-    'storybook-addon-performance/register',
     {
       name: '@storybook/addon-storysource',
       options: {
@@ -28,6 +27,8 @@ module.exports = {
         },
       },
     },
+    'storybook-addon-performance/register',
+    './addons/tealium/preset.js',
     {
       name: '@storybook/addon-docs',
       options: {
@@ -37,6 +38,7 @@ module.exports = {
         transcludeMarkdown: true,
       },
     },
+    '@storybook/addon-a11y',
   ],
   // https://github.com/storybookjs/storybook/issues/13277
   // Remove Emotion aliases once the issue above is resolved
@@ -66,4 +68,5 @@ module.exports = {
   typescript: {
     reactDocgen: false, // added to negate https://github.com/styleguidist/react-docgen-typescript/issues/356
   },
+  staticDirs: ['../fonts', '../static', 'private-fonts'],
 };
