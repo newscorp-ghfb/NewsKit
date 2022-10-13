@@ -1,7 +1,5 @@
 import * as React from 'react';
 import {useMediaQueryObject} from '../index';
-
-import {StorybookHeading} from '../../../../test/storybook-comps';
 import {MQ} from '../../../style/types';
 import {
   getColorCssFromTheme,
@@ -32,7 +30,6 @@ export const StoryUseMediaQueryObject = () => {
 
   return (
     <>
-      <StorybookHeading>useMediaQueryObject</StorybookHeading>
       <InlineMessage
         icon={
           <IconFilledInfo
@@ -56,10 +53,10 @@ StoryUseMediaQueryObject.parameters = {
 
 export default {
   title: 'Utilities/useMediaQueryObject',
-  component: () => 'None',
+  component: () => 'useMediaQueryObject',
   parameters: {
     nkDocs: {
-      title: 'useMediaQueryObject',
+      title: 'Hooks',
       url: 'https://newskit.co.uk/components/utils/hooks/',
       description:
         'useMediaQueryObject hook handles scenarios in which you want to render component based on media query breakpoints.',

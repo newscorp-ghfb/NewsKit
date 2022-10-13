@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {useResizeObserver} from '../index';
 
-import {StorybookSubHeading} from '../../../test/storybook-comps';
 import {getBorderCssFromTheme, getColorCssFromTheme, styled} from '../../style';
 import {InlineMessage} from '../../../inline-message';
 import {IconFilledInfo} from '../../../icons';
@@ -12,6 +11,7 @@ const StyledDiv = styled.div`
   ${getColorCssFromTheme('color', 'inkBase')};
   ${getColorCssFromTheme('borderColor', 'inkBrand020')};
   ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
+  width: 250px;
   border: 1px solid;
   resize: both;
   overflow: auto;
@@ -29,7 +29,6 @@ export const StoryUseResizeObserver = () => {
   const [width, height] = useResizeObserver(ref, optionalCallback);
   return (
     <>
-      <StorybookSubHeading>useResizeObserver</StorybookSubHeading>
       <InlineMessage
         icon={
           <IconFilledInfo
@@ -43,8 +42,12 @@ export const StoryUseResizeObserver = () => {
         Resize the input to return the element’s size.
       </InlineMessage>
       <StyledDiv ref={ref}>
-        <TextBlock>Width: {width}px</TextBlock>
-        <TextBlock>Height: {height}px</TextBlock>
+        <TextBlock typographyPreset="utilityBody030" marginBlockEnd="space030">
+          Width: {width}px
+        </TextBlock>
+        <TextBlock typographyPreset="utilityBody030">
+          Height: {height}px
+        </TextBlock>
       </StyledDiv>
     </>
   );
@@ -56,10 +59,10 @@ StoryUseResizeObserver.parameters = {
 
 export default {
   title: 'Utilities/useResizeObserver',
-  component: () => 'None',
+  component: () => 'useResizeObserver',
   parameters: {
     nkDocs: {
-      title: 'useResizeObserver',
+      title: 'Hooks',
       url: 'https://newskit.co.uk/components/utils/hooks/',
       description: `useResizeObserver is a custom hook that utilizes the resizeObserver API to return an element's size.`,
     },

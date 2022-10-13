@@ -1,9 +1,13 @@
 import * as React from 'react';
 import {useIntersection} from '../index';
 import {InlineMessage} from '../../../inline-message';
-import {getColorCssFromTheme, styled} from '../../style';
+import {
+  getColorCssFromTheme,
+  getTypographyPresetFromTheme,
+  styled,
+} from '../../style';
 import {IconFilledInfo} from '../../../icons';
-import {StorybookSubHeading} from '../../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../../test/storybook-comps';
 
 const StyledDiv = styled.div`
   min-height: 60vh;
@@ -13,6 +17,7 @@ const StyledDiv = styled.div`
   padding: 12px;
   ${getColorCssFromTheme('borderColor', 'inkNegative')};
   ${getColorCssFromTheme('color', 'inkBase')};
+  ${getTypographyPresetFromTheme('utilityLabel020')};
 `;
 
 export const StoryUseIntersection = () => {
@@ -24,7 +29,6 @@ export const StoryUseIntersection = () => {
   };
   return (
     <>
-      <StorybookSubHeading>useIntersection</StorybookSubHeading>
       <InlineMessage
         icon={
           <IconFilledInfo
@@ -39,12 +43,14 @@ export const StoryUseIntersection = () => {
       >
         In order to view how useIntersection works, please check out console
       </InlineMessage>
-      <>
-        {Array.from({length: 5}).map((_, index) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <Section key={index + 1} title={`${index + 1}`} />
-        ))}
-      </>
+      <StorybookPage>
+        <StorybookCase>
+          {Array.from({length: 5}).map((_, index) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <Section key={index + 1} title={`${index + 1}`} />
+          ))}
+        </StorybookCase>
+      </StorybookPage>
     </>
   );
 };
@@ -55,13 +61,13 @@ StoryUseIntersection.parameters = {
 
 export default {
   title: 'Utilities/useIntersection',
-  component: () => 'None',
+  component: useIntersection,
   parameters: {
     nkDocs: {
-      title: 'useIntersection',
+      title: 'Hooks',
       url: 'https://newskit.co.uk/components/utils/hooks/',
       description:
-        'useIntersection is a custom hook that detects visibility of a component on the viewport using the IntersectionObserver API natively present in the browser',
+        'useIntersection is a custom hook that detects visibility of a component on the viewport using the IntersectionObserver API natively present in the browser.',
     },
   },
 };

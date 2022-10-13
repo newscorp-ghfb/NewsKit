@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {useBreakpointKey} from '../index';
 
-import {StorybookHeading} from '../../../../test/storybook-comps';
 import {
   getColorCssFromTheme,
   getTypographyPresetFromTheme,
@@ -24,7 +23,6 @@ export const StoryUseBreakpointKey = () => {
 
   return (
     <>
-      <StorybookHeading>useBreakpointKey</StorybookHeading>
       <InlineMessage
         icon={
           <IconFilledInfo
@@ -47,10 +45,10 @@ StoryUseBreakpointKey.parameters = {
 };
 export default {
   title: 'Utilities/useBreakpointKey',
-  component: () => 'None',
+  component: () => 'useBreakpointKey',
   parameters: {
     nkDocs: {
-      title: 'useBreakpointKey',
+      title: 'Hooks',
       url: 'https://newskit.co.uk/components/utils/hooks/',
       description:
         'useBreakpointKey is a custom hook that returns the active breakpoint key: xs | sm | md | lg | xl',

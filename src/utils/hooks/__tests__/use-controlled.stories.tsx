@@ -1,15 +1,15 @@
 import * as React from 'react';
 import {IconFilledAddCircle} from '../../../icons';
 import {useControlled} from '../index';
-
-import {getColorCssFromTheme, styled} from '../../style';
 import {IconButton} from '../../../icon-button';
 import {Stack} from '../../../stack';
-import {StorybookSubHeading} from '../../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../../test/storybook-comps';
+import {TextBlock} from '../../../text-block';
 
-const StyledDiv = styled.div`
-  ${getColorCssFromTheme('color', 'inkBase')};
-`;
+const twoFlagCols = {
+  xs: 'repeat(1, minmax(150px, max-content))',
+  sm: 'repeat(2, minmax(150px, max-content))',
+};
 
 export const StoryUseControlled = () => {
   const Component = ({
@@ -45,7 +45,9 @@ export const StoryUseControlled = () => {
         >
           <IconFilledAddCircle />
         </IconButton>
-        <StyledDiv>{value}</StyledDiv>
+        <TextBlock typographyPreset="utilityBody020" stylePreset="inkBase">
+          {value}
+        </TextBlock>
       </Stack>
     );
   };
@@ -53,19 +55,20 @@ export const StoryUseControlled = () => {
   const [externalValue, setExternalValue] = React.useState(0);
 
   return (
-    <Stack flow="horizontal-top" spaceInline="space120">
-      <Stack spaceStack="space045">
-        <StorybookSubHeading>Uncontrolled state</StorybookSubHeading>
+    <StorybookPage
+      columns={twoFlagCols}
+      rowGap={{xs: 'space050', sm: 'space080'}}
+    >
+      <StorybookCase>
         <Component defaultValue={40} />
-      </Stack>
-      <Stack spaceStack="space045">
-        <StorybookSubHeading>Controlled state</StorybookSubHeading>
+      </StorybookCase>
+      <StorybookCase>
         <Component
           value={externalValue}
           onClick={() => setExternalValue(externalValue + 1)}
         />
-      </Stack>
-    </Stack>
+      </StorybookCase>
+    </StorybookPage>
   );
 };
 StoryUseControlled.storyName = 'useControlled';
@@ -78,7 +81,7 @@ export default {
   component: () => 'None',
   parameters: {
     nkDocs: {
-      title: 'useControlled',
+      title: 'Hooks',
       url: 'https://newskit.co.uk/components/utils/hooks/',
       description:
         'useControlled is a custom hook used to allow any component handle controlled and uncontrolled modes, and provide control over its internal state.',

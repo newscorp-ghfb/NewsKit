@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {useMediaQuery} from '../index';
 
-import {StorybookHeading} from '../../../../test/storybook-comps';
 import {
   getColorCssFromTheme,
   getTypographyPresetFromTheme,
@@ -39,7 +38,6 @@ export const StoryUseMediaQuery = () => {
 
   return (
     <>
-      <StorybookHeading>useMediaQuery</StorybookHeading>
       <InlineMessage
         icon={
           <IconFilledInfo
@@ -70,10 +68,10 @@ StoryUseMediaQuery.parameters = {
 
 export default {
   title: 'Utilities/useMediaQuery',
-  component: () => 'None',
+  component: () => 'useMediaQuery',
   parameters: {
     nkDocs: {
-      title: 'useMediaQuery',
+      title: 'Hooks',
       url: 'https://newskit.co.uk/components/utils/hooks/',
       description:
         'useMediaQuery is a custom hook used to help detect whether a single media query matches',
