@@ -12,7 +12,7 @@ import {toKebabCase} from '../utils/to-kabab-case';
 import {useTabIndexWhenScroll} from './hooks';
 
 interface CodeProps extends HTMLAttributes<HTMLDivElement> {
-  children: string;
+  children: React.ReactNode;
   language?: string;
 }
 

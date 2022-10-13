@@ -8,6 +8,8 @@ import {
 } from 'newskit';
 import {FullRelease} from '../../utils/release-notes/types';
 import {formatGitHubMarkDown} from '../../utils/release-notes/functions';
+import {Code} from '../code';
+import {InlineCode} from '../markdown-elements';
 
 const ReleaseNotesContainer = styled.div`
   ${getSizingCssFromTheme('marginBlockStart', 'sizing060')};
@@ -30,6 +32,12 @@ const ReleaseNotes = ({body}: Pick<FullRelease, 'body'>) => (
               {children}
             </LinkStandalone>
           ),
+          code: ({children, inline}) => {
+            if (inline) {
+              return <InlineCode>{children}</InlineCode>;
+            }
+            return <Code>{children}</Code>;
+          },
         }}
       >
         {formatGitHubMarkDown(body)}

@@ -101,6 +101,12 @@ describe('formatGitHubMarkDown', () => {
       `[${PROFILE}](https://github.com/${PROFILE.replace('@', '')})`,
     );
   });
+  it('should not update package names inside backticks', () => {
+    const result = formatGitHubMarkDown(
+      '`npm install newskit@6.0.0 @emotion/react`',
+    );
+    expect(result).toEqual('`npm install newskit@6.0.0 @emotion/react`');
+  });
 });
 
 describe('updateFinalReleaseInfo', () => {
