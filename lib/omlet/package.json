@@ -1,0 +1,15 @@
+{
+  "name": "omlet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "analyse": "node index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@omlet/cli": "^1.0.0-alpha.2",
+    "shelljs": "^0.8.5"
+  }
+}
