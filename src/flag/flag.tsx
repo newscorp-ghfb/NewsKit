@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {FlagProps, BaseFlagProps, BaseFlagOverrides} from './types';
-import {Stack} from '../stack';
+
 import {StyledBaseFlag} from './styled';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
@@ -26,26 +26,26 @@ export const BaseFlag = React.forwardRef<
       overrides={overrides}
       ref={ref}
       as={as}
+      justifyContent="center"
+      alignContent="center"
+      alignItems="center"
+      justifyItems="center"
+      columnGap={getToken({theme, overrides}, '', '', 'spaceInline')}
+      columns={`repeat(${React.Children.count(children)}, auto)`}
+      inline
     >
-      <Stack
-        spaceInline={getToken({theme, overrides}, '', '', 'spaceInline')}
-        flow="horizontal-center"
-        stackDistribution="center"
-        as="span"
-      >
-        {React.Children.map(children, child =>
-          ['string', 'number'].includes(typeof child) ? (
-            <TextBlock
-              as="span"
-              typographyPreset={overrides && overrides.typographyPreset}
-            >
-              {child}
-            </TextBlock>
-          ) : (
-            child
-          ),
-        )}
-      </Stack>
+      {React.Children.map(children, child =>
+        ['string', 'number'].includes(typeof child) ? (
+          <TextBlock
+            as="span"
+            typographyPreset={overrides && overrides.typographyPreset}
+          >
+            {child}
+          </TextBlock>
+        ) : (
+          child
+        ),
+      )}
     </StyledBaseFlag>
   );
 });

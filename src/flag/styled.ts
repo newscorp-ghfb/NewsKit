@@ -1,3 +1,4 @@
+import {GridLayout} from '../grid-layout';
 import {logicalProps} from '../utils/logical-properties';
 import {
   styled,
@@ -8,16 +9,13 @@ import {
 
 import {BaseFlagProps, BaseFlagOverrides} from './types';
 
-export const StyledBaseFlag = styled('div')<
+export const StyledBaseFlag = styled(GridLayout)<
   Omit<BaseFlagProps<BaseFlagOverrides>, 'loading'> & {
     $loading?: BaseFlagProps<BaseFlagOverrides>['loading'];
     $disabled?: BaseFlagProps<BaseFlagOverrides>['disabled'];
   }
 >`
   box-sizing: border-box;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
 
   ${props =>
