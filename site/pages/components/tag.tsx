@@ -450,7 +450,7 @@ const TagComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/tag/behaviours/fixedandfullwidth',
+            'components/tag/behaviours/fixed-and-full-width',
           ),
         },
       ],
@@ -463,31 +463,31 @@ const TagComponent = (layoutProps: LayoutProps) => (
           description:
             'When adding an action next to a group of tags (e.g. ‘Clear all’), reveal the action only when there is more than one tag displayed.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/tag/usage/do01'),
+          media: getIllustrationComponent('components/tag/usage/do-01'),
         },
         {
           description:
             'Avoid using full-width tags in wide containers. They are generally appropriate for small devices or contained components.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/tag/usage/dont01'),
+          media: getIllustrationComponent('components/tag/usage/dont-01'),
         },
         {
           description:
             'Tags should always have a direct relationship to the content they represent.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/tag/usage/do02'),
+          media: getIllustrationComponent('components/tag/usage/do-02'),
         },
         {
           description:
             'Avoid having multiple words for tag labels. They should be short and clear.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/tag/usage/dont02'),
+          media: getIllustrationComponent('components/tag/usage/dont-02'),
         },
         {
           description:
             'When tags are to be placed inline, they should maintain at least an 8px gap between the two (or more) tags to allow for sufficient clearance around each tag.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/tag/usage/do03'),
+          media: getIllustrationComponent('components/tag/usage/do-03'),
         },
       ],
     }}
