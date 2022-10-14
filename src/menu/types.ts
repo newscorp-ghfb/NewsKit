@@ -8,7 +8,7 @@ import {Override} from '../utils/overrides';
 export type MenuItemSize = 'small' | 'medium' | 'large';
 export type MenuItemAlign = 'start' | 'end' | 'center';
 
-export interface MenuProps extends React.AriaAttributes {
+export interface MenuProps extends React.HTMLAttributes<HTMLElement> {
   children: Exclude<React.ReactNode, 'undefined'>;
   vertical?: boolean;
   size?: MenuItemSize;
@@ -44,7 +44,11 @@ export interface MenuItemProps
 }
 
 export type MenuSubIconProps = NewsKitIconProps & {expanded: boolean};
-export interface MenuSubProps extends MenuItemProps {
+
+export type MenuSubProps = Omit<
+  MenuItemProps,
+  'title' | 'overrides' | 'href'
+> & {
   title?: React.ReactNode;
   onChange?: (event: boolean) => void;
   expanded?: boolean;
@@ -52,7 +56,7 @@ export interface MenuSubProps extends MenuItemProps {
   overrides?: {
     indicatorIcon?: Override<MenuSubIconProps>;
   } & MenuItemProps['overrides'];
-}
+};
 
 export interface MenuDividerProps {
   overrides?: DividerOverrides & {

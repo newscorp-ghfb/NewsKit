@@ -12,7 +12,7 @@ import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {IconFilledExpandLess, IconFilledExpandMore} from '../icons';
 import {getComponentOverrides} from '../utils/overrides';
 
-const StyledUl = styled.ul<{expanded?: boolean; vertical: boolean}>`
+const StyledUl = styled.ul<{expanded?: boolean; vertical?: boolean}>`
   display: ${({expanded}) => (expanded ? 'flex' : 'none')} !important;
   flex-direction: ${({vertical}) => (vertical ? 'column' : 'row')};
   border: 1px solid red;
@@ -57,7 +57,6 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
       onChange,
       onMouseEnter,
       onMouseLeave,
-      href,
       ...rest
     },
     ref,
@@ -128,6 +127,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
           aria-current={selected && 'page'}
           onClick={composeEventHandlers([handleClick, onClick])}
           aria-expanded={isExpanded}
+          href=""
         >
           {title}
 

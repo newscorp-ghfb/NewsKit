@@ -289,6 +289,13 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-10>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-11 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -865,6 +872,13 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-2>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -1342,6 +1356,13 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 .emotion-10 {
   box-sizing: border-box;
   margin-bottom: 0;
+}
+
+.emotion-10>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-11 {
@@ -2150,6 +2171,13 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   margin-bottom: 0;
 }
 
+.emotion-10>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-11 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -2645,6 +2673,13 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 0;
+}
+
+.emotion-2>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-3 {

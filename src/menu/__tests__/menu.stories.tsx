@@ -1346,18 +1346,18 @@ export const StoryMenuMultiple = () => (
       <MenuItem href={href}>Item 1</MenuItem>
       <MenuItem href={href}>Item 2</MenuItem>
       <MenuItem href={href}>Item 3</MenuItem>
-      <MenuSub href="/" title="Sub 1">
+      <MenuSub title="Sub 1">
         <MenuItem href={href}>Item G1 1</MenuItem>
         <MenuItem href={href}>Item G1 2</MenuItem>
         <MenuItem href={href}>Item G1 3</MenuItem>
 
-        <MenuSub href="/" title="Sub 1.1">
+        <MenuSub title="Sub 1.1">
           <MenuItem href={href}>Item G1.1 1</MenuItem>
           <MenuItem href={href}>Item G1.1 2</MenuItem>
           <MenuItem href={href}>Item G1.1 3</MenuItem>
         </MenuSub>
       </MenuSub>
-      <MenuSub href="/" title="Sub 2">
+      <MenuSub title="Sub 2">
         <MenuItem href={href}>Item G2 1</MenuItem>
         <MenuItem href={href}>Item G2 2</MenuItem>
         <MenuItem href={href}>Item G2 3</MenuItem>
@@ -1369,19 +1369,19 @@ export const StoryMenuMultiple = () => (
       <MenuItem href={href}>Item 2</MenuItem>
       <MenuItem href={href}>Item 3</MenuItem>
 
-      <MenuSub href="/" title="Sub 1">
+      <MenuSub title="Sub 1">
         <MenuItem href={href}>Item G1 1</MenuItem>
         <MenuItem href={href}>Item G1 2</MenuItem>
         <MenuItem href={href}>Item G1 3</MenuItem>
 
-        <MenuSub href="/" title="Sub 1.1">
+        <MenuSub title="Sub 1.1">
           <MenuItem href={href}>Item G1.1 1</MenuItem>
           <MenuItem href={href}>Item G1.1 2</MenuItem>
           <MenuItem href={href}>Item G1.1 3</MenuItem>
         </MenuSub>
       </MenuSub>
 
-      <MenuSub href="/" title="Sub 2">
+      <MenuSub title="Sub 2">
         <MenuItem href={href}>Item G2 1</MenuItem>
         <MenuItem href={href}>Item G2 2</MenuItem>
         <MenuItem href={href}>Item G2 3</MenuItem>
@@ -1403,12 +1403,8 @@ type MenuElement = {
 
 const createMenu = (items: MenuElement[]) =>
   items.map(({title, items: subItems}) => {
-    if (items) {
-      return (
-        <MenuSub href="/" title={title}>
-          {createMenu(subItems)}
-        </MenuSub>
-      );
+    if (subItems) {
+      return <MenuSub title={title}>{createMenu(subItems)}</MenuSub>;
     }
 
     return <MenuItem href="/">{title}</MenuItem>;
@@ -1416,7 +1412,7 @@ const createMenu = (items: MenuElement[]) =>
 
 const createMoreMenu = (items: MenuElement[]) =>
   items.map(({title, items: subItems}) => {
-    if (items) {
+    if (subItems) {
       return <MenuGroup title={title}>{createMoreMenu(subItems)}</MenuGroup>;
     }
 
@@ -1437,7 +1433,9 @@ const items: MenuElement[] = [
   },
 ];
 
-const MenuMore = ({children}) => <MenuSub title="More">{children}</MenuSub>;
+const MenuMore = ({children}: {children: React.ReactNode}) => (
+  <MenuSub title="More">{children}</MenuSub>
+);
 
 export const StoryMenuMultipleAuto = () => {
   // mouse-over or click
@@ -1485,7 +1483,7 @@ export const StoryMenuMultiplePopOver = () => {
         <MenuItem href={href}>Item 2</MenuItem>
         <MenuItem href={href}>Item 3</MenuItem>
         <Popover content={popOverContent} closePosition="none">
-          <MenuItem>Item 4</MenuItem>
+          <MenuItem href="/">Item 4</MenuItem>
         </Popover>
       </Menu>
     </>
