@@ -51,7 +51,7 @@ const commonPropsRows = [
     name: 'disabled',
     type: 'boolean',
     default: 'false',
-    description: 'If true, renders the undefined tag in a disabled state.',
+    description: 'If true, renders the tag in a disabled state.',
   },
   {
     name: 'eventOriginator',
