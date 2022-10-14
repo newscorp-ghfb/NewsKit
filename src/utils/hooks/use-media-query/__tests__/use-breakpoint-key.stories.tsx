@@ -8,6 +8,7 @@ import {
 } from '../../../style';
 import {IconFilledInfo} from '../../../../icons';
 import {InlineMessage} from '../../../../inline-message';
+import {StorybookPage} from '../../../../test/storybook-comps';
 
 const StyledDiv = styled.div`
   ${getColorCssFromTheme('backgroundColor', 'red010')};
@@ -22,7 +23,10 @@ export const StoryUseBreakpointKey = () => {
   const bp = useBreakpointKey();
 
   return (
-    <>
+    <StorybookPage
+      columns={{xs: '1fr'}}
+      rowGap={{xs: 'space050', sm: 'space080'}}
+    >
       <InlineMessage
         icon={
           <IconFilledInfo
@@ -36,7 +40,7 @@ export const StoryUseBreakpointKey = () => {
         Resize the browser window to return the active breakpoint key.
       </InlineMessage>
       <StyledDiv data-testid="use-breakpoint-key">{bp || 'unknown'}</StyledDiv>
-    </>
+    </StorybookPage>
   );
 };
 StoryUseBreakpointKey.storyName = 'useBreakpointKey';
@@ -45,7 +49,7 @@ StoryUseBreakpointKey.parameters = {
 };
 export default {
   title: 'Utilities/useBreakpointKey',
-  component: () => 'useBreakpointKey',
+  component: useBreakpointKey,
   parameters: {
     nkDocs: {
       title: 'Hooks',

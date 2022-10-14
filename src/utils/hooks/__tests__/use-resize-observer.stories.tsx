@@ -5,6 +5,7 @@ import {getBorderCssFromTheme, getColorCssFromTheme, styled} from '../../style';
 import {InlineMessage} from '../../../inline-message';
 import {IconFilledInfo} from '../../../icons';
 import {TextBlock} from '../../../text-block';
+import {StorybookPage} from '../../../test/storybook-comps';
 
 const StyledDiv = styled.div`
   padding: 10px;
@@ -28,7 +29,10 @@ export const StoryUseResizeObserver = () => {
   // Access the width and the height returned from the observed element.
   const [width, height] = useResizeObserver(ref, optionalCallback);
   return (
-    <>
+    <StorybookPage
+      columns={{xs: '1fr'}}
+      rowGap={{xs: 'space050', sm: 'space080'}}
+    >
       <InlineMessage
         icon={
           <IconFilledInfo
@@ -49,7 +53,7 @@ export const StoryUseResizeObserver = () => {
           Height: {height}px
         </TextBlock>
       </StyledDiv>
-    </>
+    </StorybookPage>
   );
 };
 StoryUseResizeObserver.storyName = 'useResizeObserver';
@@ -59,7 +63,7 @@ StoryUseResizeObserver.parameters = {
 
 export default {
   title: 'Utilities/useResizeObserver',
-  component: () => 'useResizeObserver',
+  component: useResizeObserver,
   parameters: {
     nkDocs: {
       title: 'Hooks',

@@ -8,6 +8,7 @@ import {
 } from '../../../style';
 import {IconFilledInfo} from '../../../../icons';
 import {InlineMessage} from '../../../../inline-message';
+import {StorybookPage} from '../../../../test/storybook-comps';
 
 const StyledDiv = styled.div`
   ${getColorCssFromTheme('backgroundColor', 'red010')};
@@ -29,7 +30,10 @@ export const StoryUseMediaQueryObject = () => {
   const bp = useMediaQueryObject(mediaQueryObject);
 
   return (
-    <>
+    <StorybookPage
+      columns={{xs: '1fr'}}
+      rowGap={{xs: 'space050', sm: 'space080'}}
+    >
       <InlineMessage
         icon={
           <IconFilledInfo
@@ -43,7 +47,7 @@ export const StoryUseMediaQueryObject = () => {
         Resize the browser window to return the active media query object.
       </InlineMessage>
       <StyledDiv data-testid="use-media-query-object">{bp}</StyledDiv>
-    </>
+    </StorybookPage>
   );
 };
 StoryUseMediaQueryObject.storyName = 'useMediaQueryObject';
@@ -53,7 +57,7 @@ StoryUseMediaQueryObject.parameters = {
 
 export default {
   title: 'Utilities/useMediaQueryObject',
-  component: () => 'useMediaQueryObject',
+  component: useMediaQueryObject,
   parameters: {
     nkDocs: {
       title: 'Hooks',

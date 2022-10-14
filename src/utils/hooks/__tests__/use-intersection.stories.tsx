@@ -29,21 +29,24 @@ export const StoryUseIntersection = () => {
   };
   return (
     <>
-      <InlineMessage
-        icon={
-          <IconFilledInfo
-            overrides={{
-              size: 'iconSize020',
-            }}
-          />
-        }
-        overrides={{
-          marginBlockEnd: 'space050',
-        }}
+      <StorybookPage
+        columns={{xs: '1fr'}}
+        rowGap={{xs: 'space050', sm: 'space080'}}
       >
-        In order to view how useIntersection works, please check out console
-      </InlineMessage>
-      <StorybookPage>
+        <InlineMessage
+          icon={
+            <IconFilledInfo
+              overrides={{
+                size: 'iconSize020',
+              }}
+            />
+          }
+          overrides={{
+            marginBlockEnd: 'space050',
+          }}
+        >
+          In order to view how useIntersection works, please check out console
+        </InlineMessage>
         <StorybookCase>
           {Array.from({length: 5}).map((_, index) => (
             // eslint-disable-next-line react/no-array-index-key

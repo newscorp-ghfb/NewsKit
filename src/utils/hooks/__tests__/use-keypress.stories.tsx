@@ -124,7 +124,7 @@ StoryUseKeyPress.parameters = {
 
 export default {
   title: 'Utilities/useKeypress',
-  component: () => 'None',
+  component: useKeypress,
   parameters: {
     nkDocs: {
       title: 'Hooks',

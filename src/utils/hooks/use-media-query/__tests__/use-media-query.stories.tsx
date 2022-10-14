@@ -8,6 +8,7 @@ import {
 } from '../../../style';
 import {InlineMessage} from '../../../../inline-message';
 import {IconFilledInfo} from '../../../../icons';
+import {StorybookCase, StorybookPage} from '../../../../test/storybook-comps';
 
 interface WrapperProps {
   active: boolean;
@@ -37,7 +38,10 @@ export const StoryUseMediaQuery = () => {
   const extraLarge = useMediaQuery('screen and (min-width : 1440px)');
 
   return (
-    <>
+    <StorybookPage
+      columns={{xs: '1fr'}}
+      rowGap={{xs: 'space050', sm: 'space080'}}
+    >
       <InlineMessage
         icon={
           <IconFilledInfo
@@ -50,15 +54,15 @@ export const StoryUseMediaQuery = () => {
       >
         Resize the browser window to return the active media query.
       </InlineMessage>
-      <div data-testid="use-media-query">
+      <StorybookCase data-testid="use-media-query">
         <StyledDiv active={small}>sm: {small ? 'yes' : 'no'}</StyledDiv>
         <StyledDiv active={medium}>md: {medium ? 'yes' : 'no'}</StyledDiv>
         <StyledDiv active={large}>lg: {large ? 'yes' : 'no'}</StyledDiv>
         <StyledDiv active={extraLarge}>
           xl: {extraLarge ? 'yes' : 'no'}
         </StyledDiv>
-      </div>
-    </>
+      </StorybookCase>
+    </StorybookPage>
   );
 };
 StoryUseMediaQuery.storyName = 'useMediaQuery';
@@ -68,7 +72,7 @@ StoryUseMediaQuery.parameters = {
 
 export default {
   title: 'Utilities/useMediaQuery',
-  component: () => 'useMediaQuery',
+  component: useMediaQuery,
   parameters: {
     nkDocs: {
       title: 'Hooks',

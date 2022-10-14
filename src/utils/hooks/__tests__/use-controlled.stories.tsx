@@ -6,7 +6,7 @@ import {Stack} from '../../../stack';
 import {StorybookCase, StorybookPage} from '../../../test/storybook-comps';
 import {TextBlock} from '../../../text-block';
 
-const twoFlagCols = {
+const twoCols = {
   xs: 'repeat(1, minmax(150px, max-content))',
   sm: 'repeat(2, minmax(150px, max-content))',
 };
@@ -55,10 +55,7 @@ export const StoryUseControlled = () => {
   const [externalValue, setExternalValue] = React.useState(0);
 
   return (
-    <StorybookPage
-      columns={twoFlagCols}
-      rowGap={{xs: 'space050', sm: 'space080'}}
-    >
+    <StorybookPage columns={twoCols} rowGap={{xs: 'space050', sm: 'space080'}}>
       <StorybookCase>
         <Component defaultValue={40} />
       </StorybookCase>
@@ -78,7 +75,7 @@ StoryUseControlled.parameters = {
 
 export default {
   title: 'Utilities/useControlled',
-  component: () => 'None',
+  component: useControlled,
   parameters: {
     nkDocs: {
       title: 'Hooks',

@@ -20,7 +20,7 @@ StoryScreenReaderOnly.parameters = {eyes: {include: false}};
 
 export default {
   title: 'Utilities/screenReaderOnly',
-  component: () => 'screenReaderOnly',
+  component: ScreenReaderOnly,
   parameters: {
     nkDocs: {
       title: 'Screen reader',
