@@ -54,13 +54,15 @@ export const StoryUseMediaQuery = () => {
       >
         Resize the browser window to return the active media query.
       </InlineMessage>
-      <StorybookCase data-testid="use-media-query">
-        <StyledDiv active={small}>sm: {small ? 'yes' : 'no'}</StyledDiv>
-        <StyledDiv active={medium}>md: {medium ? 'yes' : 'no'}</StyledDiv>
-        <StyledDiv active={large}>lg: {large ? 'yes' : 'no'}</StyledDiv>
-        <StyledDiv active={extraLarge}>
-          xl: {extraLarge ? 'yes' : 'no'}
-        </StyledDiv>
+      <StorybookCase>
+        <div data-testid="use-media-query">
+          <StyledDiv active={small}>sm: {small ? 'yes' : 'no'}</StyledDiv>
+          <StyledDiv active={medium}>md: {medium ? 'yes' : 'no'}</StyledDiv>
+          <StyledDiv active={large}>lg: {large ? 'yes' : 'no'}</StyledDiv>
+          <StyledDiv active={extraLarge}>
+            xl: {extraLarge ? 'yes' : 'no'}
+          </StyledDiv>
+        </div>
       </StorybookCase>
     </StorybookPage>
   );
