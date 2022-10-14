@@ -31,21 +31,9 @@ export const DarkModeToggle: React.FC<{
   themeMode: string;
   toggleTheme: () => void;
 }> = ({themeMode, toggleTheme}) => (
-  <GridLayout columns="1fr 40px">
+  <GridLayout columns="1fr 60px">
     <P overrides={{typographyPreset: 'utilityLabel030'}}>Dark theme</P>
-    <Switch
-      checked={themeMode === 'dark'}
-      onChange={toggleTheme}
-      label=" "
-      overrides={{
-        input: {
-          blockSize: 'sizing040',
-          paddingInline: 'sizing000',
-          inlineSize: 'sizing070',
-        },
-        thumb: {size: 'sizing050'},
-      }}
-    />
+    <Switch checked={themeMode === 'dark'} onChange={toggleTheme} label=" " />
   </GridLayout>
 );
 
