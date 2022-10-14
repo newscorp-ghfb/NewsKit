@@ -38,13 +38,9 @@ const StackForHorizontalDivider = styled(Stack)`
 `;
 
 const dividerCols = {
-  xs: 'repeat(1, minmax(150px, max-content))',
-  sm: 'repeat(2, minmax(150px, max-content))',
   md: 'auto',
 };
 const verticalCols = {
-  xs: 'repeat(1, minmax(150px, max-content))',
-  sm: 'repeat(2, minmax(150px, max-content))',
   md: '1fr 1fr',
 };
 
