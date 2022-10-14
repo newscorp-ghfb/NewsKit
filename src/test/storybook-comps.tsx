@@ -172,6 +172,7 @@ export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
       {description && (
         <TextBlock
           marginBlockStart="space020"
+          marginInlineEnd="35%"
           typographyPreset="utilityBody030"
           stylePreset="inkBase"
         >
