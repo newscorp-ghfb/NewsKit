@@ -4550,7 +4550,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-639 {
   display: grid;
-  grid-template-columns: 1fr 40px;
+  grid-template-columns: 1fr 60px;
 }
 
 .emotion-641 {
@@ -4574,8 +4574,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  block-size: 16px;
-  inline-size: 40px;
+  block-size: 32px;
+  inline-size: 60px;
   margin-right: 12px;
 }
 
@@ -4586,7 +4586,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-643 {
   position: absolute;
   top: 50%;
-  left: calc((24px / 2) + 0px);
+  left: calc((24px / 2) + 4px);
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
@@ -4662,6 +4662,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   align-items: center;
   background-color: #85939C;
   border-radius: 20rem;
+  padding-inline: 4px;
 }
 
 .emotion-644:checked:not(:disabled) {
@@ -4752,7 +4753,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 100%;
   width: 100%;
   max-width: 24px;
-  max-height: 16px;
+  max-height: 32px;
 }
 
 .emotion-647 {
@@ -4779,7 +4780,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 100%;
   width: 100%;
   max-width: 24px;
-  max-height: 16px;
+  max-height: 32px;
 }
 
 .emotion-648 {
@@ -12787,7 +12788,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-639 {
   display: grid;
-  grid-template-columns: 1fr 40px;
+  grid-template-columns: 1fr 60px;
 }
 
 .emotion-641 {
@@ -12811,8 +12812,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  block-size: 16px;
-  inline-size: 40px;
+  block-size: 32px;
+  inline-size: 60px;
   margin-right: 12px;
 }
 
@@ -12823,7 +12824,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-643 {
   position: absolute;
   top: 50%;
-  left: calc((24px / 2) + 0px);
+  left: calc((24px / 2) + 4px);
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
@@ -12899,6 +12900,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   align-items: center;
   background-color: #85939C;
   border-radius: 20rem;
+  padding-inline: 4px;
 }
 
 .emotion-644:checked:not(:disabled) {
@@ -12989,7 +12991,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 100%;
   width: 100%;
   max-width: 24px;
-  max-height: 16px;
+  max-height: 32px;
 }
 
 .emotion-647 {
@@ -13016,7 +13018,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 100%;
   width: 100%;
   max-width: 24px;
-  max-height: 16px;
+  max-height: 32px;
 }
 
 .emotion-648 {
