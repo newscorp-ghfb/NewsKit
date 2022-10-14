@@ -9,6 +9,7 @@ export * from './button';
 export * from './byline';
 export * from './caption';
 export * from './card';
+export * from './character-count';
 export * from './checkbox';
 export * from './consent';
 export * from './date-time';
