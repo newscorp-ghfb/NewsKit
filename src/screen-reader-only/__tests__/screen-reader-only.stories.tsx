@@ -15,18 +15,18 @@ export const StoryScreenReaderOnly = () => (
     </ScreenReaderOnly>
   </>
 );
-StoryScreenReaderOnly.storyName = 'screenReaderOnly';
+StoryScreenReaderOnly.storyName = 'ScreenReaderOnly';
 StoryScreenReaderOnly.parameters = {eyes: {include: false}};
 
 export default {
-  title: 'Utilities/screenReaderOnly',
+  title: 'Utilities/ScreenReaderOnly',
   component: ScreenReaderOnly,
   parameters: {
     nkDocs: {
       title: 'Screen reader',
       url: 'https://newskit.co.uk/components/visibility/',
       description:
-        'screenReaderOnly wraps an element making sure that it is not visible to the user, but still readable by a screen reader.',
+        'ScreenReaderOnly wraps an element making sure that it is not visible to the user, but still readable by a screen reader.',
     },
   },
 };
