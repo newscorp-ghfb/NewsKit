@@ -45,7 +45,7 @@ const commonPropsRows = [
     name: 'size',
     type: ['small', 'medium', 'large'],
     default: 'medium',
-    description: 'Defines the size of the undefined tag.',
+    description: 'Defines the size of the tag.',
   },
   {
     name: 'disabled',
@@ -62,8 +62,7 @@ const commonPropsRows = [
   {
     name: 'href',
     type: 'string',
-    description:
-      'If provided, the undefined tag component turns into an anchor element.',
+    description: 'If provided, the tag component turns into an anchor element.',
   },
 ];
 
