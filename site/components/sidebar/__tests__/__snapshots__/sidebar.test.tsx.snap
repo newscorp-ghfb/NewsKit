@@ -4550,7 +4550,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-639 {
   display: grid;
-  grid-template-columns: 1fr 60px;
+  grid-template-columns: 1fr 44px;
 }
 
 .emotion-641 {
@@ -4574,8 +4574,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  block-size: 32px;
-  inline-size: 60px;
+  block-size: 24px;
+  inline-size: 44px;
   margin-right: 12px;
 }
 
@@ -4586,16 +4586,16 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-643 {
   position: absolute;
   top: 50%;
-  left: calc((24px / 2) + 4px);
+  left: calc((16px / 2) + 4px);
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
   width: 1px;
   height: 1px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -moz-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -ms-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
 .emotion-643:disabled {
@@ -4752,8 +4752,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-646 svg {
   height: 100%;
   width: 100%;
-  max-width: 24px;
-  max-height: 32px;
+  max-width: 16px;
+  max-height: 24px;
 }
 
 .emotion-647 {
@@ -4779,15 +4779,15 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-647 svg {
   height: 100%;
   width: 100%;
-  max-width: 24px;
-  max-height: 32px;
+  max-width: 16px;
+  max-height: 24px;
 }
 
 .emotion-648 {
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   left: 0;
   padding-inline: 4px;
   padding-block: 4px;
@@ -12788,7 +12788,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-639 {
   display: grid;
-  grid-template-columns: 1fr 60px;
+  grid-template-columns: 1fr 44px;
 }
 
 .emotion-641 {
@@ -12812,8 +12812,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  block-size: 32px;
-  inline-size: 60px;
+  block-size: 24px;
+  inline-size: 44px;
   margin-right: 12px;
 }
 
@@ -12824,16 +12824,16 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-643 {
   position: absolute;
   top: 50%;
-  left: calc((24px / 2) + 4px);
+  left: calc((16px / 2) + 4px);
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
   width: 1px;
   height: 1px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -moz-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -ms-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
 .emotion-643:disabled {
@@ -12990,8 +12990,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-646 svg {
   height: 100%;
   width: 100%;
-  max-width: 24px;
-  max-height: 32px;
+  max-width: 16px;
+  max-height: 24px;
 }
 
 .emotion-647 {
@@ -13017,15 +13017,15 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-647 svg {
   height: 100%;
   width: 100%;
-  max-width: 24px;
-  max-height: 32px;
+  max-width: 16px;
+  max-height: 24px;
 }
 
 .emotion-648 {
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   left: 0;
   padding-inline: 4px;
   padding-block: 4px;
