@@ -98,7 +98,10 @@ export const formatGitHubMarkDown = (raw: string) =>
     })
     // hyperlink to GitHub profiles of commit authors
     .replaceAll(
-      RegExp(`@[a-zA-Z\\d](?:[a-zA-Z\\d]|-(?=[a-zA-Z\\d])){0,38}`, 'g'),
+      RegExp(
+        `@[a-zA-Z\\d](?:[a-zA-Z\\d]|-(?=[a-zA-Z\\d])){0,38}(?=(?:[^\`]*\`[^\`]*\`)*[^\`]*$)`,
+        'g',
+      ),
       (handle: string) => {
         const profileLink = `${GITHUB_URL}/${handle.split('@')[1]}`;
         return `[${handle}](${profileLink})`;
