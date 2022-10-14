@@ -6,7 +6,7 @@ import {ComponentPageCell} from '../../components/layout-cells';
 import {CommonSection} from './common-section';
 
 export interface InteractiveDemoSectionProps {
-  introduction: string;
+  introduction?: string | React.ReactElement;
   playground: PlaygroundProps;
 }
 
