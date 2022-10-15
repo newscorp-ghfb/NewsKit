@@ -1,5 +1,10 @@
 import React, {useEffect} from 'react';
-import {newskitLightTheme, InlineMessage, UnorderedList} from 'newskit';
+import {
+  newskitLightTheme,
+  InlineMessage,
+  UnorderedList,
+  useMediaQuery,
+} from 'newskit';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
 import {
   ContentSection,
@@ -15,8 +20,6 @@ import {getIllustrationComponent} from '../../../components/illustrations/illust
 import {UsageKind} from '../../../components/usage-card';
 import {Link} from '../../../components/link';
 import {getTokenType} from '../../../utils/get-token-type';
-
-import useMediaQuery from '../../../helpers/use-media-query';
 
 const TOKENS_DESCRIPTION: {[key in string]: string} = {
   motionTimingLinear: 'Has the same even speed from start to end.',
