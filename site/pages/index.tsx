@@ -13,6 +13,7 @@ import Layout, {LayoutProps} from '../components/layout';
 import {IconFilledLaunch} from '../../src/icons';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
+import {getSheet} from '../utils/blog-posts';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -26,8 +27,25 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
-const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
+export interface Content {
+  title: string;
+  description: string;
+  linkText: string | null;
+  href: string | null;
+}
+
+export interface LatestBlogProps {
+  content: Content[];
+}
+
+const Index = ({
+  releases,
+  content,
+  ...layoutProps
+}: LayoutProps & ReleasesPageProps & LatestBlogProps) => {
   const {themeMode, toggleTheme} = layoutProps;
+
+  console.log(content);
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
       <GridLayout
@@ -119,5 +137,7 @@ export default Index;
 // component as props.
 export async function getStaticProps() {
   const releases: Release[] = await fetchGitHubReleases(4);
-  return {props: {releases}};
+
+  const content = await getSheet();
+  return {props: {releases, content}};
 }

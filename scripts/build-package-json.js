@@ -27,6 +27,8 @@ const dependenciesNotToBeIncluded = [
   '@babel/runtime-corejs3',
   'semver',
   'next-seo',
+  'googleapis',
+  'marked',
 ];
 
 const filterPackageJson = () => {
