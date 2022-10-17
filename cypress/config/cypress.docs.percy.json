@@ -1,4 +1,4 @@
 {
-  "baseUrl": "http://localhost:8081",
+  "baseUrl": null,
   "integrationFolder": "cypress/site/percy"
 }
