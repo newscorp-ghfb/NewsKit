@@ -21,22 +21,24 @@ export const StyledGridLayout = styled(GridLayout)<
   ${props =>
     getResponsiveSize(
       minHeight =>
-        props.overrides && props.overrides.height ? '' : {minHeight},
+        props.overrides && props.overrides.height
+          ? {minHeight: 'auto'}
+          : {minHeight},
       '',
       '',
       'minHeight',
     )(props)};
   ${props =>
     getResponsiveSize(
-      minWidth => (props.overrides && props.overrides.width ? '' : {minWidth}),
+      minWidth =>
+        props.overrides && props.overrides.width
+          ? {minWidth: 'auto'}
+          : {minWidth},
       '',
       '',
       'minWidth',
     )(props)};
-  ${getResponsiveSize('width', '', '', 'width')};
-  ${getResponsiveSize('height', '', '', 'height')};
-  ${getResponsiveSize('maxWidth', '', '', 'maxWidth')};
-  ${getResponsiveSize('maxHeight', '', '', 'maxHeight')};
+
   ${getResponsiveSpace('padding', '', '', 'spaceInset')};
   ${({size}) => logicalProps(`flag.${size}`)};
 
