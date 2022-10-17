@@ -1,5 +1,7 @@
-import {GridLayout} from 'newskit';
+import {GridLayout, TextBlock} from 'newskit';
 import * as React from 'react';
+import ReactMarkdown from 'react-markdown';
+import {Link} from '../components/link';
 import {Release, ReleasesPageProps} from '../utils/release-notes/types';
 import {
   Explore,
@@ -13,6 +15,7 @@ import Layout, {LayoutProps} from '../components/layout';
 import {IconFilledLaunch} from '../../src/icons';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
+import {getSheet} from '../utils/google-sheet';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -26,8 +29,24 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
-const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
+export interface Content {
+  title: string;
+  description: string;
+  linkText: string;
+  href: string;
+}
+
+export interface LatestBlogProps {
+  content: Content[];
+}
+
+const Index = ({
+  releases,
+  content,
+  ...layoutProps
+}: LayoutProps & ReleasesPageProps & LatestBlogProps) => {
   const {themeMode, toggleTheme} = layoutProps;
+
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
       <GridLayout
@@ -45,23 +64,51 @@ const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
             marginBlockEnd: {xs: 'space080', md: 'space000'},
           }}
         >
-          <FeatureCard
-            title="Latest blog"
-            description="How an audio player component tells the story of NewsKit Design System's changing strategy"
-            stylePrefix="worldDesignSystemsWeekCard"
-            layout="horizontal"
-            overrides={{
-              title: {typographyPreset: 'editorialHeadline060'},
-              description: {typographyPreset: 'editorialSubheadline010'},
-            }}
-            buttonIcon={<IconFilledLaunch />}
-            buttonLabel="Read on Medium"
-            buttonHref="https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67"
-            buttonOverrides={{
-              paddingInline: 'space000',
-              typographyPreset: 'utilityButton020',
-            }}
-          />
+          {content
+            .slice(0, content.length - 1)
+            .map(({title, description, linkText, href}) => (
+              <FeatureCard
+                title={title}
+                description={description}
+                stylePrefix="worldDesignSystemsWeekCard"
+                layout="horizontal"
+                overrides={{
+                  title: {typographyPreset: 'editorialHeadline060'},
+                  description: {typographyPreset: 'editorialSubheadline010'},
+                }}
+                buttonIcon={<IconFilledLaunch />}
+                buttonLabel={linkText}
+                buttonHref={href}
+                buttonOverrides={{
+                  paddingInline: 'space000',
+                  typographyPreset: 'utilityButton020',
+                }}
+              />
+            ))}
+          {content.slice(content.length - 1).map(({title, description}) => (
+            <TextBlock
+              as="div"
+              typographyPreset="editorialParagraph030"
+              stylePreset="gitHubMarkDownText"
+              marginBlockStart="space050"
+            >
+              {title}
+              <ReactMarkdown
+                components={{
+                  a: ({href, children}) => (
+                    <Link
+                      overrides={{typographyPreset: 'editorialParagraph030'}}
+                      href={href!}
+                    >
+                      {children}
+                    </Link>
+                  ),
+                }}
+              >
+                {description}
+              </ReactMarkdown>
+            </TextBlock>
+          ))}
         </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
           <Explore />
@@ -119,5 +166,7 @@ export default Index;
 // component as props.
 export async function getStaticProps() {
   const releases: Release[] = await fetchGitHubReleases(4);
-  return {props: {releases}};
+
+  const content = await getSheet();
+  return {props: {releases, content}};
 }
