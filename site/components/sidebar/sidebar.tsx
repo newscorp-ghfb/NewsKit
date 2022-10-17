@@ -23,7 +23,6 @@ const Sidebar: React.FC<SidebarProps> = ({
   toggleTheme,
 }) => {
   const bp = useBreakpointKey();
-  const shouldHide = bp === 'lg' || bp === 'xl';
 
   return (
     <>
@@ -31,12 +30,15 @@ const Sidebar: React.FC<SidebarProps> = ({
         <Drawer
           data-testid="sidebar"
           aria-label="drawer menu on the left"
-          open={sidebarOpen}
+          // We are auto closing the <Drawer/> if the breakpoint is larger
+          // than "md" because we can't rely fully on the <Visible/> component
+          // because of the nature of how the <Layer/> component within the
+          // <Drawer/> works.
+          open={sidebarOpen && bp !== 'lg' && bp !== 'xl'}
           onDismiss={handleSidebarClick}
           placement="left"
           closePosition="none"
           hideOverlay
-          inline={shouldHide}
           overrides={{
             content: {
               spaceInset: 'spaceInset000',

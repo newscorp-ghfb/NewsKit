@@ -4544,16 +4544,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 24px;
 }
 
-.emotion-637 {
-  margin-block: 24px;
-}
-
-.emotion-639 {
+.emotion-638 {
   display: grid;
   grid-template-columns: 1fr 44px;
 }
 
-.emotion-641 {
+.emotion-640 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4565,7 +4561,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   cursor: pointer;
 }
 
-.emotion-642 {
+.emotion-641 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -4579,11 +4575,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-right: 12px;
 }
 
-.emotion-642 * {
+.emotion-641 * {
   box-sizing: border-box;
 }
 
-.emotion-643 {
+.emotion-642 {
   position: absolute;
   top: 50%;
   left: calc((16px / 2) + 4px);
@@ -4598,36 +4594,36 @@ exports[`Sidebar renders correctly when closed 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-643:disabled {
+.emotion-642:disabled {
   opacity: 0;
 }
 
-.emotion-643:hover:active:not(:disabled) {
+.emotion-642:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-643:valid:hover:not(:disabled) {
+.emotion-642:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-643:valid:hover:active:not(:disabled) {
+.emotion-642:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-643:invalid:hover:not(:disabled) {
+.emotion-642:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-643:invalid:hover:active:not(:disabled) {
+.emotion-642:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-643 {
+  .emotion-642 {
     transition-property: inset,opacity;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
@@ -4635,14 +4631,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-643 {
+  .emotion-642 {
     transition-property: inset,opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-644 {
+.emotion-643 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4665,15 +4661,15 @@ exports[`Sidebar renders correctly when closed 1`] = `
   padding-inline: 4px;
 }
 
-.emotion-644:checked:not(:disabled) {
+.emotion-643:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
-.emotion-644:disabled {
+.emotion-643:disabled {
   background-color: #DEE2E5;
 }
 
-.emotion-644:focus-visible:not(:disabled) {
+.emotion-643:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4682,29 +4678,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-644:focus-visible:not(:disabled) {
+    .emotion-643:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-644:checked:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-  background-color: #3358CC;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-644:checked:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-644:checked:focus-visible:hover:not(:disabled) {
+.emotion-643:checked:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4714,13 +4694,29 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-644:checked:focus-visible:hover:not(:disabled) {
+    .emotion-643:checked:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-645 {
+.emotion-643:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-643:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-644 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -4729,7 +4725,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   place-items: center;
 }
 
-.emotion-646 {
+.emotion-645 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4739,6 +4735,33 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: start;
   justify-content: start;
+}
+
+.emotion-645 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-645:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-645 svg {
+  height: 100%;
+  width: 100%;
+  max-width: 16px;
+  max-height: 24px;
+}
+
+.emotion-646 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: end;
+  justify-content: end;
 }
 
 .emotion-646 svg {
@@ -4757,33 +4780,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-647 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
-}
-
-.emotion-647 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-647:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-647 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 16px;
-  max-height: 24px;
-}
-
-.emotion-648 {
   background-color: #FFFFFF;
   border-radius: 50%;
   width: 16px;
@@ -4797,12 +4793,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   place-items: center;
 }
 
-.emotion-648 svg {
+.emotion-647 svg {
   fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-648 {
+  .emotion-647 {
     transition-property: inset;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
@@ -4810,14 +4806,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-648 {
+  .emotion-647 {
     transition-property: inset;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 }
 
-.emotion-649 {
+.emotion-648 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4827,7 +4823,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   cursor: inherit;
 }
 
-.emotion-650 {
+.emotion-649 {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -4836,7 +4832,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-650:disabled {
+.emotion-649:disabled {
   color: #C0C7CC;
 }
 
@@ -8159,15 +8155,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     </svg>
                   </div>
                 </a>
-                <div
-                  class="emotion-637"
-                />
               </div>
               <div
                 class="emotion-631"
               >
                 <div
-                  class="emotion-639"
+                  class="emotion-638"
                 >
                   <p
                     class="emotion-634"
@@ -8175,34 +8168,34 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     Dark theme
                   </p>
                   <label
-                    class="emotion-641"
+                    class="emotion-640"
                   >
                     <div
-                      class="emotion-642"
+                      class="emotion-641"
                       role="presentation"
                     >
                       <div
-                        class="emotion-643"
+                        class="emotion-642"
                         data-testid="checkbox-feedback"
                       />
                       <div
-                        class="emotion-644"
+                        class="emotion-643"
                       >
                         <div
-                          class="emotion-645"
+                          class="emotion-644"
                         >
+                          <div
+                            class="emotion-645"
+                          />
                           <div
                             class="emotion-646"
                           />
                           <div
                             class="emotion-647"
                           />
-                          <div
-                            class="emotion-648"
-                          />
                         </div>
                         <input
-                          class="emotion-649"
+                          class="emotion-648"
                           data-testid="checkbox-input"
                           role="switch"
                           tabindex="-1"
@@ -8211,15 +8204,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
                       </div>
                     </div>
                     <span
-                      class="emotion-650"
+                      class="emotion-649"
                     >
                        
                     </span>
                   </label>
                 </div>
-                <div
-                  class="emotion-637"
-                />
               </div>
             </div>
           </div>
@@ -12782,16 +12772,12 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 24px;
 }
 
-.emotion-637 {
-  margin-block: 24px;
-}
-
-.emotion-639 {
+.emotion-638 {
   display: grid;
   grid-template-columns: 1fr 44px;
 }
 
-.emotion-641 {
+.emotion-640 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12803,7 +12789,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   cursor: pointer;
 }
 
-.emotion-642 {
+.emotion-641 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -12817,11 +12803,11 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-right: 12px;
 }
 
-.emotion-642 * {
+.emotion-641 * {
   box-sizing: border-box;
 }
 
-.emotion-643 {
+.emotion-642 {
   position: absolute;
   top: 50%;
   left: calc((16px / 2) + 4px);
@@ -12836,36 +12822,36 @@ exports[`Sidebar renders correctly when open 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-643:disabled {
+.emotion-642:disabled {
   opacity: 0;
 }
 
-.emotion-643:hover:active:not(:disabled) {
+.emotion-642:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-643:valid:hover:not(:disabled) {
+.emotion-642:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-643:valid:hover:active:not(:disabled) {
+.emotion-642:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-643:invalid:hover:not(:disabled) {
+.emotion-642:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-643:invalid:hover:active:not(:disabled) {
+.emotion-642:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-643 {
+  .emotion-642 {
     transition-property: inset,opacity;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
@@ -12873,14 +12859,14 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-643 {
+  .emotion-642 {
     transition-property: inset,opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-644 {
+.emotion-643 {
   position: absolute;
   top: 0;
   left: 0;
@@ -12903,15 +12889,15 @@ exports[`Sidebar renders correctly when open 1`] = `
   padding-inline: 4px;
 }
 
-.emotion-644:checked:not(:disabled) {
+.emotion-643:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
-.emotion-644:disabled {
+.emotion-643:disabled {
   background-color: #DEE2E5;
 }
 
-.emotion-644:focus-visible:not(:disabled) {
+.emotion-643:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -12920,29 +12906,13 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-644:focus-visible:not(:disabled) {
+    .emotion-643:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-644:checked:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-  background-color: #3358CC;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-644:checked:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-644:checked:focus-visible:hover:not(:disabled) {
+.emotion-643:checked:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -12952,13 +12922,29 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-644:checked:focus-visible:hover:not(:disabled) {
+    .emotion-643:checked:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-645 {
+.emotion-643:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-643:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-644 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -12967,7 +12953,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   place-items: center;
 }
 
-.emotion-646 {
+.emotion-645 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12977,6 +12963,33 @@ exports[`Sidebar renders correctly when open 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: start;
   justify-content: start;
+}
+
+.emotion-645 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-645:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-645 svg {
+  height: 100%;
+  width: 100%;
+  max-width: 16px;
+  max-height: 24px;
+}
+
+.emotion-646 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: end;
+  justify-content: end;
 }
 
 .emotion-646 svg {
@@ -12995,33 +13008,6 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-647 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
-}
-
-.emotion-647 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-647:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-647 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 16px;
-  max-height: 24px;
-}
-
-.emotion-648 {
   background-color: #FFFFFF;
   border-radius: 50%;
   width: 16px;
@@ -13035,12 +13021,12 @@ exports[`Sidebar renders correctly when open 1`] = `
   place-items: center;
 }
 
-.emotion-648 svg {
+.emotion-647 svg {
   fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-648 {
+  .emotion-647 {
     transition-property: inset;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
@@ -13048,14 +13034,14 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-648 {
+  .emotion-647 {
     transition-property: inset;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 }
 
-.emotion-649 {
+.emotion-648 {
   position: absolute;
   top: 0;
   left: 0;
@@ -13065,7 +13051,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   cursor: inherit;
 }
 
-.emotion-650 {
+.emotion-649 {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -13074,7 +13060,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-650:disabled {
+.emotion-649:disabled {
   color: #C0C7CC;
 }
 
@@ -16285,15 +16271,12 @@ exports[`Sidebar renders correctly when open 1`] = `
                     </svg>
                   </div>
                 </a>
-                <div
-                  class="emotion-637"
-                />
               </div>
               <div
                 class="emotion-631"
               >
                 <div
-                  class="emotion-639"
+                  class="emotion-638"
                 >
                   <p
                     class="emotion-634"
@@ -16301,34 +16284,34 @@ exports[`Sidebar renders correctly when open 1`] = `
                     Dark theme
                   </p>
                   <label
-                    class="emotion-641"
+                    class="emotion-640"
                   >
                     <div
-                      class="emotion-642"
+                      class="emotion-641"
                       role="presentation"
                     >
                       <div
-                        class="emotion-643"
+                        class="emotion-642"
                         data-testid="checkbox-feedback"
                       />
                       <div
-                        class="emotion-644"
+                        class="emotion-643"
                       >
                         <div
-                          class="emotion-645"
+                          class="emotion-644"
                         >
+                          <div
+                            class="emotion-645"
+                          />
                           <div
                             class="emotion-646"
                           />
                           <div
                             class="emotion-647"
                           />
-                          <div
-                            class="emotion-648"
-                          />
                         </div>
                         <input
-                          class="emotion-649"
+                          class="emotion-648"
                           data-testid="checkbox-input"
                           role="switch"
                           type="checkbox"
@@ -16336,15 +16319,12 @@ exports[`Sidebar renders correctly when open 1`] = `
                       </div>
                     </div>
                     <span
-                      class="emotion-650"
+                      class="emotion-649"
                     >
                        
                     </span>
                   </label>
                 </div>
-                <div
-                  class="emotion-637"
-                />
               </div>
             </div>
           </div>
