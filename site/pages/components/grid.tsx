@@ -289,19 +289,19 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
           description:
             'Align your content. Whenever possible, make sure page elements are lined up both horizontally and/or vertically.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/grid-cell/usage/do01'),
+          media: getIllustrationComponent('components/grid-cell/usage/do-01'),
         },
         {
           description:
             'Avoid aligning everything to the grid. Individual elements within the cells should align with each other rather than with the grid columns.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/grid-cell/usage/dont01'),
+          media: getIllustrationComponent('components/grid-cell/usage/dont-01'),
         },
         {
           description:
             'Avoid making gutters too wide. They should be balanced against the column width to ensure page elements relate to each other.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/grid-cell/usage/dont02'),
+          media: getIllustrationComponent('components/grid-cell/usage/dont-02'),
         },
       ],
     }}
