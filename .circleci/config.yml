@@ -681,7 +681,7 @@ jobs:
 
   skip_percy_docsite_check:
     <<: *cypress_defaults
-    executor: node
+    executor: cypress
     steps:
       - checkout
       - attach_workspace:
