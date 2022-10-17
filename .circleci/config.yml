@@ -665,6 +665,9 @@ jobs:
   skip_percy_comps_check:
     executor: node
     steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
       - run:
           name: Set percy/newskit-comps token
           command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
@@ -675,6 +678,9 @@ jobs:
   skip_percy_docsite_check:
     executor: node
     steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
       - run:
           name: Set percy/newskit-docsite token
           command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
