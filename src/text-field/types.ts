@@ -1,4 +1,5 @@
 import React from 'react';
+import {UseFormRegisterReturn} from 'react-hook-form/dist/types/form';
 import {
   EnhancerOverrides,
   CommonInputProps,
@@ -36,7 +37,8 @@ type FormEntryChildrenProps = {
   onBlur: (event: React.FocusEvent<HTMLInputElement>) => void;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   state?: FormInputState;
-  ref: React.Ref<HTMLInputElement>;
+  ref: UseFormRegisterReturn['ref'];
+  refObject: React.RefObject<HTMLInputElement>;
   error?: string;
 };
 
