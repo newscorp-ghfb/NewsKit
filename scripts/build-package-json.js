@@ -28,7 +28,6 @@ const dependenciesNotToBeIncluded = [
   'semver',
   'next-seo',
   'googleapis',
-  'marked',
 ];
 
 const filterPackageJson = () => {
