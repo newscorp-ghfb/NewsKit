@@ -314,7 +314,7 @@ commands:
       - slack/notify:
           <<: *slack_notify
 
-  run_test_visual_changes_percy:
+  run_test_visual_docs_percy:
     description: 'Run the Percy tests for docs visual changes'
     steps:
       - checkout
@@ -669,6 +669,10 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run:
+          name: Install Headless Chrome dependencies
+          command: >
+            sudo apt-get update && sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libgbm-dev libappindicator1 libnss3 lsb-release xdg-utils wget
+      - run:
           name: Set percy/newskit-comps token
           command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
       - run:
@@ -701,16 +705,14 @@ jobs:
       - run_test_visual_changes
 
   test_visual_docs_percy:
-    <<: *cypress_defaults
     executor: cypress
     steps:
-      - run_test_visual_changes_percy
+      - run_test_visual_docs_percy
 
   test_visual_docs_percy_2:
-    <<: *cypress_defaults
     executor: cypress
     steps:
-      - run_test_visual_changes_percy
+      - run_test_visual_docs_percy
 
   test_e2e_comps:
     <<: *cypress_defaults
