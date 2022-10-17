@@ -1097,7 +1097,10 @@ export const StoryAudioPlayerAutoplay = () => (
   </StyledPage>
 );
 StoryAudioPlayerAutoplay.storyName = 'audio-player-play-autoplay';
-StoryAudioPlayerAutoplay.parameters = {eyes: {include: false}};
+StoryAudioPlayerAutoplay.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryAudioPlayerPlaybackSpeedTriggerButton = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(2);
@@ -1342,7 +1345,10 @@ export const StoryAudioPlayerKeyboard = () => (
   </StyledPage>
 );
 StoryAudioPlayerKeyboard.storyName = 'audio-player-keyboard-shortcuts';
-StoryAudioPlayerKeyboard.parameters = {eyes: {include: false}};
+StoryAudioPlayerKeyboard.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryAudioPlayerVolumeControlLayout = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);

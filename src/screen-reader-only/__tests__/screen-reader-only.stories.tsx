@@ -22,4 +22,7 @@ export const StoryScreenReaderOnly = () => (
   </>
 );
 StoryScreenReaderOnly.storyName = 'Default';
-StoryScreenReaderOnly.parameters = {eyes: {include: false}};
+StoryScreenReaderOnly.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};

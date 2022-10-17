@@ -49,6 +49,12 @@ check_broken_links_docs:
 comps_visual_test:
 	yarn test:visual:comps:ci
 
+comps_visual_test_percy:
+	yarn test:visual:comps:ci:percy
+
+skip_comps_visual_test_percy:
+	yarn test:visual:comps:ci:percy:skip
+
 e2e_test_comps:
 	yarn e2e:comps:ci;
 
@@ -60,6 +66,12 @@ e2e_test_docs:
 
 e2e_visual_test_docs:
 	yarn e2e:visual:docs:ci;
+
+e2e_visual_test_docs_percy:
+	yarn e2e:visual:docs:ci:percy;
+
+skip_e2e_visual_test_docs_percy:
+	yarn e2e:visual:docs:ci:percy:skip;
 
 publish_npm_dev:
 	cd dist; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable;

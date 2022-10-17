@@ -37,6 +37,7 @@ export const StoryUseMediaQueryObject = () => {
 StoryUseMediaQueryObject.storyName = 'useMediaQueryObject';
 StoryUseMediaQueryObject.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };
 
 export const StoryUseBreakpointKey = () => {
@@ -52,4 +53,5 @@ export const StoryUseBreakpointKey = () => {
 StoryUseBreakpointKey.storyName = 'useBreakpointKey';
 StoryUseBreakpointKey.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };
