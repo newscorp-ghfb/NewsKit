@@ -51,11 +51,9 @@ const Sidebar: React.FC<SidebarProps> = ({
           <SidebarNav />
           <Block marginInline="space060" marginBlock="space050">
             <GitHubLaunch />
-            <Block marginBlock="space050" />
           </Block>
           <Block marginInline="space060" marginBlock="space050">
             <DarkModeToggle themeMode={themeMode} toggleTheme={toggleTheme} />
-            <Block marginBlock="space050" />
           </Block>
         </Drawer>
       </Visible>
