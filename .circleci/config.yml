@@ -680,6 +680,7 @@ jobs:
           command: yarn test:visual:comps:ci:percy:skip
 
   skip_percy_docsite_check:
+    <<: *cypress_defaults
     executor: node
     steps:
       - checkout
@@ -705,11 +706,13 @@ jobs:
       - run_test_visual_changes
 
   test_visual_docs_percy:
+    <<: *cypress_defaults
     executor: cypress
     steps:
       - run_test_visual_docs_percy
 
   test_visual_docs_percy_2:
+    <<: *cypress_defaults
     executor: cypress
     steps:
       - run_test_visual_docs_percy
