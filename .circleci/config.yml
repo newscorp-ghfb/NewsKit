@@ -1273,14 +1273,17 @@ workflows:
           type: approval
           requires:
             - build_storybook
+            - install_cypress
       - docs_and_comps_visual_changes:
           type: approval
           requires:
             - build_storybook
+            - install_cypress
       - docs_visual_changes:
           type: approval
           requires:
             - build_storybook
+            - install_cypress
 
       # Jobs for realising unstable NPM version
       - approve_publish_npm_pr:
