@@ -22,7 +22,7 @@ const infoIcon = (
 const commonPropsRows = [
   {
     name: 'children',
-    type: ['string'],
+    type: ['React.ReactNode'],
     description: (
       <>
         The content of the tag is passed as the child of the component.
@@ -54,12 +54,6 @@ const commonPropsRows = [
     description: 'If true, renders the tag in a disabled state.',
   },
   {
-    name: 'eventOriginator',
-    type: 'string',
-    default: 'tag',
-    description: 'Allows users to add event originator custom name.',
-  },
-  {
     name: 'href',
     type: 'string',
     description: 'If provided, the tag component turns into an anchor element.',
@@ -67,12 +61,6 @@ const commonPropsRows = [
 ];
 
 const commonOverridesRows = [
-  {
-    attribute: 'tag.size',
-    type: 'tagSize',
-    default: 'medium',
-    description: 'If provided, overrides the size of the tag.',
-  },
   {
     attribute: 'width',
     type: 'MQ<string>',
@@ -84,18 +72,6 @@ const commonOverridesRows = [
     type: 'MQ<string>',
     description:
       'If provided, sets a fixed height to the tag. This can be a sizing token from the theme, or any CSS length value.',
-  },
-  {
-    attribute: 'minHeight',
-    type: 'MQ<string>',
-    description: (
-      <>
-        Overrides the minHeight of the tag.
-        <br />
-        <br />
-        This can be a sizing token from the theme, or any CSS length value.
-      </>
-    ),
   },
   {
     attribute: 'maxHeight',
@@ -112,7 +88,6 @@ const commonOverridesRows = [
   {
     attribute: 'minWidth',
     type: 'MQ<string>',
-    default: ['small = sizing090', 'medium = sizing100', 'large = sizing110'],
     description:
       'If provided, sets a minimum width to the tag. This can be a sizing token from the theme, or any CSS length value.',
   },
@@ -124,13 +99,13 @@ const commonOverridesRows = [
       'If provided, sets a minimum width to the tag. This can be a sizing token from the theme, or any CSS length value.',
   },
   {
-    attribute: 'tag.stylePreset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: 'tagPrimary',
     description: 'If provided, overrides the stylePreset of the tag.',
   },
   {
-    attribute: 'tag.typographyPreset',
+    attribute: 'typographyPreset',
     type: 'MQ<string>',
     default: [
       'small = utilityButton010',
@@ -140,13 +115,13 @@ const commonOverridesRows = [
     description: 'If provided, overrides the typographyPreset of the tag.',
   },
   {
-    attribute: 'tag.transitionPreset',
+    attribute: 'transitionPreset',
     type: 'MQ<string>',
-    default: ['backgroundColorChange', 'borderColorChange'],
+    default: ['backgroundColorChange'],
     description: 'If provided, overrides the transitionPreset of the tag.',
   },
   {
-    attribute: 'tag.spaceInset',
+    attribute: 'spaceInset',
     type: 'MQ<string>',
     default: [
       'small = spaceInsetSquish010',
@@ -157,16 +132,16 @@ const commonOverridesRows = [
       "If provided, overrides the padding of the tag. Otherwise, use spaceInsetSquish010 or spaceInsetSquish020, depending on the 'size' prop.",
   },
   {
-    attribute: 'tag.spaceInline',
+    attribute: 'spaceInline',
     type: 'MQ<string>',
-    default: ['small = space010', 'medium = space010', 'large = space020'],
+    default: ['small = space010', 'medium = space010', 'large = space010'],
     description:
       'If provided, overrides the space between multiple children in the underlying stack.',
   },
   {
-    attribute: 'tag.icon.size',
+    attribute: 'icon.size',
     type: 'MQ<string>',
-    default: ['small = space010', 'medium = space010', 'large = space020'],
+    default: ['iconSize010', 'iconSize010', 'iconSize020'],
     description: (
       <>
         If provided, overrides the size of any icons applied to the tag.
@@ -331,7 +306,7 @@ const TagComponent = (layoutProps: LayoutProps) => (
               {
                 label: 'Style Preset',
                 value: {
-                  stylePreset: 'tagCustom',
+                  stylePreset: 'tagPrimaryInverse',
                   typographyPreset: undefined,
                 },
               },
