@@ -77,19 +77,26 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 .emotion-7 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 24px;
+  height: 24px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 24px;
@@ -119,36 +126,6 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 .emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-10 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -158,7 +135,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-10 {
+  .emotion-8 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -166,19 +143,19 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-10 {
+  .emotion-8 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10.emotion-10 {
+.emotion-8.emotion-8 {
   fill: #007B22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-10.emotion-10 {
+  .emotion-8.emotion-8 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -186,14 +163,14 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-10.emotion-10 {
+  .emotion-8.emotion-8 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 0 0 1px 0;
@@ -206,7 +183,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border-width: 0;
 }
 
-.emotion-15 {
+.emotion-13 {
   fill: #DEE2E5;
   vertical-align: unset;
   display: inline-block;
@@ -214,7 +191,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-15 {
+  .emotion-13 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -222,21 +199,21 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-15 {
+  .emotion-13 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-15.emotion-15 {
+.emotion-13.emotion-13 {
   width: 12px;
   height: 12px;
   fill: #DEE2E5;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-15.emotion-15 {
+  .emotion-13.emotion-13 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -244,7 +221,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-15.emotion-15 {
+  .emotion-13.emotion-13 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -287,35 +264,27 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
               class="emotion-7"
               data-testid="flag"
             >
-              <span
-                class="emotion-8"
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <span
-                  class="emotion-9"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-10 emotion-11"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0V0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
-                    />
-                  </svg>
-                </span>
-              </span>
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                />
+              </svg>
             </div>
           </td>
         </tr>
         <tr
-          class="emotion-12"
+          class="emotion-10"
         >
           <td
             class="emotion-5"
@@ -327,7 +296,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
           >
             <svg
               aria-hidden="true"
-              class="emotion-15"
+              class="emotion-13"
               fill="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -641,19 +610,26 @@ exports[`Table renders number values automatically if undefined 1`] = `
 }
 
 .emotion-7 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 24px;
+  height: 24px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 24px;
@@ -682,36 +658,6 @@ exports[`Table renders number values automatically if undefined 1`] = `
 }
 
 .emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-10 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -722,26 +668,26 @@ exports[`Table renders number values automatically if undefined 1`] = `
   display: inline-block;
 }
 
-.emotion-10::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-16 {
+.emotion-12 {
   padding: 16px 16px 16px 0;
   min-width: 100px;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-29 {
+.emotion-21 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 0 0 1px 0;
@@ -793,15 +739,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
               <span
                 class="emotion-8"
               >
-                <span
-                  class="emotion-9"
-                >
-                  <span
-                    class="emotion-10"
-                  >
-                    1
-                  </span>
-                </span>
+                1
               </span>
             </div>
           </td>
@@ -815,20 +753,12 @@ exports[`Table renders number values automatically if undefined 1`] = `
               <span
                 class="emotion-8"
               >
-                <span
-                  class="emotion-9"
-                >
-                  <span
-                    class="emotion-10"
-                  >
-                    1
-                  </span>
-                </span>
+                1
               </span>
             </div>
           </td>
           <td
-            class="emotion-16"
+            class="emotion-12"
           >
             one
           </td>
@@ -846,15 +776,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
               <span
                 class="emotion-8"
               >
-                <span
-                  class="emotion-9"
-                >
-                  <span
-                    class="emotion-10"
-                  >
-                    2
-                  </span>
-                </span>
+                2
               </span>
             </div>
           </td>
@@ -868,26 +790,18 @@ exports[`Table renders number values automatically if undefined 1`] = `
               <span
                 class="emotion-8"
               >
-                <span
-                  class="emotion-9"
-                >
-                  <span
-                    class="emotion-10"
-                  >
-                    2
-                  </span>
-                </span>
+                2
               </span>
             </div>
           </td>
           <td
-            class="emotion-16"
+            class="emotion-12"
           >
             two
           </td>
         </tr>
         <tr
-          class="emotion-29"
+          class="emotion-21"
         >
           <td
             class="emotion-6"
@@ -899,15 +813,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
               <span
                 class="emotion-8"
               >
-                <span
-                  class="emotion-9"
-                >
-                  <span
-                    class="emotion-10"
-                  >
-                    3
-                  </span>
-                </span>
+                3
               </span>
             </div>
           </td>
@@ -921,20 +827,12 @@ exports[`Table renders number values automatically if undefined 1`] = `
               <span
                 class="emotion-8"
               >
-                <span
-                  class="emotion-9"
-                >
-                  <span
-                    class="emotion-10"
-                  >
-                    3
-                  </span>
-                </span>
+                3
               </span>
             </div>
           </td>
           <td
-            class="emotion-16"
+            class="emotion-12"
           >
             three
           </td>
@@ -1138,19 +1036,24 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 24px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
@@ -1178,36 +1081,6 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-11 {
   margin: 0;
   font-family: 'DM Mono',courier;
   font-size: 14px;
@@ -1217,7 +1090,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   display: inline-block;
 }
 
-.emotion-11::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -1225,7 +1098,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   margin-bottom: -0.4267857142857143em;
 }
 
-.emotion-11::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -1233,7 +1106,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   margin-top: -0.3642857142857143em;
 }
 
-.emotion-17 {
+.emotion-13 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 0 0 1px 0;
@@ -1290,15 +1163,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    type
-                  </span>
-                </span>
+                type
               </span>
             </span>
           </td>
@@ -1312,21 +1177,13 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    default
-                  </span>
-                </span>
+                default
               </span>
             </span>
           </td>
         </tr>
         <tr
-          class="emotion-17"
+          class="emotion-13"
         >
           <td
             class="emotion-6"
@@ -1343,15 +1200,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    type
-                  </span>
-                </span>
+                type
               </span>
             </span>
           </td>
@@ -1365,15 +1214,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    default
-                  </span>
-                </span>
+                default
               </span>
             </span>
           </td>
@@ -1460,19 +1301,24 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 24px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
@@ -1500,36 +1346,6 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-11 {
   margin: 0;
   font-family: 'DM Mono',courier;
   font-size: 14px;
@@ -1539,7 +1355,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   display: inline-block;
 }
 
-.emotion-11::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -1547,7 +1363,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   margin-bottom: -0.4267857142857143em;
 }
 
-.emotion-11::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -1555,7 +1371,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   margin-top: -0.3642857142857143em;
 }
 
-.emotion-17 {
+.emotion-13 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 0 0 1px 0;
@@ -1612,15 +1428,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    type
-                  </span>
-                </span>
+                type
               </span>
             </span>
           </td>
@@ -1634,21 +1442,13 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    default
-                  </span>
-                </span>
+                default
               </span>
             </span>
           </td>
         </tr>
         <tr
-          class="emotion-17"
+          class="emotion-13"
         >
           <td
             class="emotion-6"
@@ -1665,15 +1465,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    type
-                  </span>
-                </span>
+                type
               </span>
             </span>
           </td>
@@ -1687,15 +1479,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    default
-                  </span>
-                </span>
+                default
               </span>
             </span>
           </td>

@@ -2,7 +2,7 @@ import React from 'react';
 
 import {FlagProps, BaseFlagProps, BaseFlagOverrides} from './types';
 
-import {StyledBaseFlag} from './styled';
+import {StyledGridLayout} from './styled';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {filterOutFalsyProperties} from '../utils/filter-object';
@@ -18,7 +18,7 @@ export const BaseFlag = React.forwardRef<
   const theme = useTheme();
 
   return (
-    <StyledBaseFlag
+    <StyledGridLayout
       {...props}
       $loading={loading}
       $disabled={disabled} // Used to avoid passing disabled HTML attribute to an anchor link
@@ -31,7 +31,7 @@ export const BaseFlag = React.forwardRef<
       alignItems="center"
       justifyItems="center"
       columnGap={getToken({theme, overrides}, '', '', 'spaceInline')}
-      columns={`repeat(${React.Children.count(children)}, auto)`}
+      columns={`repeat(${React.Children.toArray(children).length}, auto)`}
       inline
     >
       {React.Children.map(children, child =>
@@ -46,7 +46,7 @@ export const BaseFlag = React.forwardRef<
           child
         ),
       )}
-    </StyledBaseFlag>
+    </StyledGridLayout>
   );
 });
 

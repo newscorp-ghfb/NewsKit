@@ -388,19 +388,26 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-13 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
@@ -417,6 +424,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   background-color: transparent;
   color: #5A6A79;
   margin: 0;
+  position: relative;
   cursor: pointer;
   border-radius: borderRadiusSharp;
   background-color: transparent;
@@ -454,36 +462,6 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-16 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -494,36 +472,43 @@ exports[`TabsWithTable renders with default data 1`] = `
   display: inline-block;
 }
 
-.emotion-16::before {
+.emotion-14::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-16::after {
+.emotion-14::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-18 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-19 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-17 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
@@ -540,24 +525,25 @@ exports[`TabsWithTable renders with default data 1`] = `
   background-color: transparent;
   color: #5A6A79;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
-.emotion-19 svg {
+.emotion-17 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-19:hover:not(:disabled) {
+.emotion-17:hover:not(:disabled) {
   color: #2E3F54;
 }
 
-.emotion-19:active:not(:disabled) {
+.emotion-17:active:not(:disabled) {
   color: #2E3F54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-19 {
+  .emotion-17 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -565,14 +551,14 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-19 {
+  .emotion-17 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-23 {
+.emotion-19 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -580,7 +566,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   left: 0px;
 }
 
-.emotion-24 {
+.emotion-20 {
   background-color: #DEE2E5;
   display: block;
   position: absolute;
@@ -591,12 +577,12 @@ exports[`TabsWithTable renders with default data 1`] = `
   left: 0px;
 }
 
-.emotion-25 {
+.emotion-21 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-25:focus:not(:disabled) {
+.emotion-21:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -605,23 +591,23 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus:not(:disabled) {
+    .emotion-21:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-30 {
+.emotion-26 {
   overflow-x: auto;
 }
 
-.emotion-31 {
+.emotion-27 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-32 {
+.emotion-28 {
   border-style: solid;
   border-color: #C0C7CC;
   border-width: 0 0 1px 0;
@@ -640,7 +626,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   padding-bottom: 16px;
 }
 
-.emotion-34 {
+.emotion-30 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 0 0 1px 0;
@@ -652,13 +638,13 @@ exports[`TabsWithTable renders with default data 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-35 {
+.emotion-31 {
   padding: 16px 16px 16px 0;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-37 {
+.emotion-33 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 0 0 1px 0;
@@ -671,30 +657,30 @@ exports[`TabsWithTable renders with default data 1`] = `
   border-width: 0;
 }
 
-.emotion-55 {
+.emotion-51 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-56 {
+  .emotion-52 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-56 {
+  .emotion-52 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-56 {
+  .emotion-52 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-56 {
+  .emotion-52 {
     margin-bottom: 80px;
   }
 }
@@ -763,15 +749,7 @@ exports[`TabsWithTable renders with default data 1`] = `
                       <span
                         class="emotion-14"
                       >
-                        <span
-                          class="emotion-15"
-                        >
-                          <span
-                            class="emotion-16"
-                          >
-                            Title1
-                          </span>
-                        </span>
+                        Title1
                       </span>
                     </button>
                   </div>
@@ -781,12 +759,12 @@ exports[`TabsWithTable renders with default data 1`] = `
                   data-testid="distribution-wrapper"
                 >
                   <div
-                    class="emotion-18"
+                    class="emotion-16"
                   >
                     <button
                       aria-controls="mock-nk-1"
                       aria-selected="false"
-                      class="emotion-19"
+                      class="emotion-17"
                       data-testid="tab"
                       id="mock-nk-1"
                       role="tab"
@@ -796,22 +774,14 @@ exports[`TabsWithTable renders with default data 1`] = `
                       <span
                         class="emotion-14"
                       >
-                        <span
-                          class="emotion-15"
-                        >
-                          <span
-                            class="emotion-16"
-                          >
-                            Title2
-                          </span>
-                        </span>
+                        Title2
                       </span>
                     </button>
                   </div>
                 </div>
                 <div
                   aria-hidden="true"
-                  class="emotion-23"
+                  class="emotion-19"
                   data-testid="tab-bar-indicator"
                   role="presentation"
                   style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -820,7 +790,7 @@ exports[`TabsWithTable renders with default data 1`] = `
             </div>
           </div>
           <div
-            class="emotion-24"
+            class="emotion-20"
             data-testid="tab-bar-track"
             role="presentation"
           />
@@ -828,7 +798,7 @@ exports[`TabsWithTable renders with default data 1`] = `
         <div
           aria-hidden="false"
           aria-labelledby="mock-nk-1"
-          class="emotion-25"
+          class="emotion-21"
           data-testid="tab-panel"
           role="tabpanel"
           tabindex="0"
@@ -849,20 +819,20 @@ exports[`TabsWithTable renders with default data 1`] = `
               class="emotion-5"
             >
               <div
-                class="emotion-30"
+                class="emotion-26"
               >
                 <table
-                  class="emotion-31"
+                  class="emotion-27"
                 >
                   <thead>
                     <tr>
                       <th
-                        class="emotion-32"
+                        class="emotion-28"
                       >
                         Header1
                       </th>
                       <th
-                        class="emotion-32"
+                        class="emotion-28"
                       >
                         Header2
                       </th>
@@ -870,29 +840,29 @@ exports[`TabsWithTable renders with default data 1`] = `
                   </thead>
                   <tbody>
                     <tr
-                      class="emotion-34"
+                      class="emotion-30"
                     >
                       <td
-                        class="emotion-35"
+                        class="emotion-31"
                       >
                         row1
                       </td>
                       <td
-                        class="emotion-35"
+                        class="emotion-31"
                       >
                         row1
                       </td>
                     </tr>
                     <tr
-                      class="emotion-37"
+                      class="emotion-33"
                     >
                       <td
-                        class="emotion-35"
+                        class="emotion-31"
                       >
                         row2
                       </td>
                       <td
-                        class="emotion-35"
+                        class="emotion-31"
                       >
                         row2
                       </td>
@@ -906,7 +876,7 @@ exports[`TabsWithTable renders with default data 1`] = `
         <div
           aria-hidden="true"
           aria-labelledby="mock-nk-1"
-          class="emotion-25"
+          class="emotion-21"
           data-testid="tab-panel"
           hidden=""
           role="tabpanel"
@@ -928,20 +898,20 @@ exports[`TabsWithTable renders with default data 1`] = `
               class="emotion-5"
             >
               <div
-                class="emotion-30"
+                class="emotion-26"
               >
                 <table
-                  class="emotion-31"
+                  class="emotion-27"
                 >
                   <thead>
                     <tr>
                       <th
-                        class="emotion-32"
+                        class="emotion-28"
                       >
                         Header1
                       </th>
                       <th
-                        class="emotion-32"
+                        class="emotion-28"
                       >
                         Header2
                       </th>
@@ -949,29 +919,29 @@ exports[`TabsWithTable renders with default data 1`] = `
                   </thead>
                   <tbody>
                     <tr
-                      class="emotion-34"
+                      class="emotion-30"
                     >
                       <td
-                        class="emotion-35"
+                        class="emotion-31"
                       >
                         row1
                       </td>
                       <td
-                        class="emotion-35"
+                        class="emotion-31"
                       >
                         row1
                       </td>
                     </tr>
                     <tr
-                      class="emotion-37"
+                      class="emotion-33"
                     >
                       <td
-                        class="emotion-35"
+                        class="emotion-31"
                       >
                         row2
                       </td>
                       <td
-                        class="emotion-35"
+                        class="emotion-31"
                       >
                         row2
                       </td>
@@ -985,10 +955,10 @@ exports[`TabsWithTable renders with default data 1`] = `
       </div>
     </div>
     <div
-      class="emotion-55"
+      class="emotion-51"
     >
       <div
-        class="emotion-56"
+        class="emotion-52"
       />
     </div>
   </div>

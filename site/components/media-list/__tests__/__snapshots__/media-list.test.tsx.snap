@@ -1281,19 +1281,25 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 .emotion-18 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 64px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
@@ -1307,6 +1313,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -1332,36 +1339,6 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 .emotion-19 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-20 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-21 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -1372,19 +1349,19 @@ exports[`Media List renders with feature cardscards 1`] = `
   display: inline-block;
 }
 
-.emotion-21::before {
+.emotion-19::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-21::after {
+.emotion-19::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-23 {
+.emotion-20 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1394,7 +1371,7 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-23 {
+  .emotion-20 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1402,49 +1379,49 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-23 {
+  .emotion-20 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-23.emotion-23 {
+.emotion-20.emotion-20 {
   width: 24px;
   height: 24px;
 }
 
 @media screen {
-  .emotion-25 {
+  .emotion-22 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-25 {
+  .emotion-22 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-25 {
+  .emotion-22 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-25 {
+  .emotion-22 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-25 {
+  .emotion-22 {
     display: block;
   }
 }
 
-.emotion-26 {
+.emotion-23 {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -1462,22 +1439,22 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-26 {
+  .emotion-23 {
     min-height: 248px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-26 {
+  .emotion-23 {
     min-height: 304px;
   }
 }
 
-.emotion-26 svg {
+.emotion-23 svg {
   display: block;
 }
 
-.emotion-27 {
+.emotion-24 {
   box-sizing: border-box;
   display: block;
   position: relative;
@@ -1487,15 +1464,15 @@ exports[`Media List renders with feature cardscards 1`] = `
   margin-left: 0;
 }
 
-.emotion-27 svg {
+.emotion-24 svg {
   border-radius: 4px;
 }
 
-.emotion-28 {
+.emotion-25 {
   height: 100%;
 }
 
-.emotion-29 {
+.emotion-26 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1509,7 +1486,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   flex: 1;
 }
 
-.emotion-30 {
+.emotion-27 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1517,35 +1494,35 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-30 {
+  .emotion-27 {
     padding: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-30 {
+  .emotion-27 {
     padding: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-30 {
+  .emotion-27 {
     padding: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-30 {
+  .emotion-27 {
     padding: 32px;
   }
 }
 
-.emotion-30 a:not(.nk-card-link) {
+.emotion-27 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-31 {
+.emotion-28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1564,18 +1541,18 @@ exports[`Media List renders with feature cardscards 1`] = `
   justify-content: center;
 }
 
-.emotion-35 {
+.emotion-32 {
   margin-bottom: 24px;
 }
 
-.emotion-37 {
+.emotion-34 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.emotion-48 {
+.emotion-42 {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -1593,7 +1570,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   height: 100%;
 }
 
-.emotion-48 svg {
+.emotion-42 svg {
   display: block;
 }
 
@@ -1668,36 +1645,24 @@ exports[`Media List renders with feature cardscards 1`] = `
                           <span
                             class="emotion-19"
                           >
-                            <span
-                              class="emotion-20"
-                            >
-                              <span
-                                class="emotion-21"
-                              >
-                                needHelpCard
-                              </span>
-                            </span>
-                            <span
-                              class="emotion-20"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="emotion-23 emotion-24"
-                                fill="currentColor"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                />
-                                <path
-                                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                                />
-                              </svg>
-                            </span>
+                            needHelpCard
                           </span>
+                          <svg
+                            aria-hidden="true"
+                            class="emotion-20 emotion-21"
+                            fill="currentColor"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                            <path
+                              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </div>
@@ -1705,26 +1670,26 @@ exports[`Media List renders with feature cardscards 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-25"
+                class="emotion-22"
               >
                 <div
-                  class="emotion-26"
+                  class="emotion-23"
                 >
                   <div
-                    class="emotion-27"
+                    class="emotion-24"
                   >
                     <div
-                      class="emotion-28"
+                      class="emotion-25"
                     />
                   </div>
                   <div
-                    class="emotion-29"
+                    class="emotion-26"
                   >
                     <div
-                      class="emotion-30"
+                      class="emotion-27"
                     >
                       <div
-                        class="emotion-31"
+                        class="emotion-28"
                       >
                         <div
                           class="emotion-12"
@@ -1740,13 +1705,13 @@ exports[`Media List renders with feature cardscards 1`] = `
                           </section>
                         </div>
                         <div
-                          class="emotion-35"
+                          class="emotion-32"
                         >
                           <p
                             class="emotion-16"
                           >
                             <span
-                              class="emotion-37"
+                              class="emotion-34"
                             >
                               This is a feature card.
                             </span>
@@ -1760,36 +1725,24 @@ exports[`Media List renders with feature cardscards 1`] = `
                           <span
                             class="emotion-19"
                           >
-                            <span
-                              class="emotion-20"
-                            >
-                              <span
-                                class="emotion-21"
-                              >
-                                needHelpCard
-                              </span>
-                            </span>
-                            <span
-                              class="emotion-20"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="emotion-23 emotion-24"
-                                fill="currentColor"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                />
-                                <path
-                                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                                />
-                              </svg>
-                            </span>
+                            needHelpCard
                           </span>
+                          <svg
+                            aria-hidden="true"
+                            class="emotion-20 emotion-21"
+                            fill="currentColor"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                            <path
+                              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </div>
@@ -1810,7 +1763,7 @@ exports[`Media List renders with feature cardscards 1`] = `
               class="emotion-5"
             >
               <div
-                class="emotion-48"
+                class="emotion-42"
               >
                 <div
                   class="emotion-10"
@@ -1851,36 +1804,24 @@ exports[`Media List renders with feature cardscards 1`] = `
                         <span
                           class="emotion-19"
                         >
-                          <span
-                            class="emotion-20"
-                          >
-                            <span
-                              class="emotion-21"
-                            >
-                              needHelpCard
-                            </span>
-                          </span>
-                          <span
-                            class="emotion-20"
-                          >
-                            <svg
-                              aria-hidden="true"
-                              class="emotion-23 emotion-24"
-                              fill="currentColor"
-                              focusable="false"
-                              viewBox="0 0 24 24"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M0 0h24v24H0z"
-                                fill="none"
-                              />
-                              <path
-                                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                              />
-                            </svg>
-                          </span>
+                          needHelpCard
                         </span>
+                        <svg
+                          aria-hidden="true"
+                          class="emotion-20 emotion-21"
+                          fill="currentColor"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                          />
+                        </svg>
                       </button>
                     </div>
                   </div>
@@ -1997,19 +1938,26 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -2039,36 +1987,6 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2078,7 +1996,7 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2086,21 +2004,21 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-9.emotion-9 {
+.emotion-7.emotion-7 {
   width: 24px;
   height: 24px;
   fill: #007B22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9.emotion-9 {
+  .emotion-7.emotion-7 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2108,14 +2026,14 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9.emotion-9 {
+  .emotion-7.emotion-7 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-11 {
+.emotion-9 {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -2128,25 +2046,25 @@ exports[`Media List renders with usage cards 1`] = `
   flex-direction: column;
 }
 
-.emotion-12 {
+.emotion-10 {
   box-sizing: border-box;
 }
 
-.emotion-13 {
+.emotion-11 {
   box-sizing: border-box;
   padding: 0;
 }
 
-.emotion-13 a:not(.nk-card-link) {
+.emotion-11 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin-bottom: 16px;
 }
 
-.emotion-15 {
+.emotion-13 {
   border-style: solid;
   border-color: #007B22;
   border-width: 4px;
@@ -2157,7 +2075,7 @@ exports[`Media List renders with usage cards 1`] = `
   width: 100%;
 }
 
-.emotion-17 {
+.emotion-15 {
   font-family: "Poppins",sans-serif;
   font-size: 24px;
   line-height: 27px;
@@ -2166,30 +2084,30 @@ exports[`Media List renders with usage cards 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-17::before {
+.emotion-15::before {
   content: '';
   margin-bottom: -0.2155em;
   display: block;
 }
 
-.emotion-17::after {
+.emotion-15::after {
   content: '';
   margin-top: -0.2125em;
   display: block;
 }
 
-.emotion-18 {
+.emotion-16 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #007B22;
 }
 
-.emotion-18 svg {
+.emotion-16 svg {
   fill: #007B22;
 }
 
-.emotion-20 {
+.emotion-18 {
   margin: 0;
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
@@ -2200,36 +2118,43 @@ exports[`Media List renders with usage cards 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-20 svg {
+.emotion-18 svg {
   fill: #2E3F54;
 }
 
-.emotion-20::before {
+.emotion-18::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-20::after {
+.emotion-18::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-24 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-22 {
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -2249,16 +2174,16 @@ exports[`Media List renders with usage cards 1`] = `
   border-width: 1px;
 }
 
-.emotion-24 svg {
+.emotion-22 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-24 svg {
+.emotion-22 svg {
   fill: #D60000;
 }
 
-.emotion-27 {
+.emotion-23 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2268,7 +2193,7 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-27 {
+  .emotion-23 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2276,21 +2201,21 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-27 {
+  .emotion-23 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-27.emotion-27 {
+.emotion-23.emotion-23 {
   width: 24px;
   height: 24px;
   fill: #D60000;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-27.emotion-27 {
+  .emotion-23.emotion-23 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2298,14 +2223,14 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-27.emotion-27 {
+  .emotion-23.emotion-23 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-33 {
+.emotion-29 {
   border-style: solid;
   border-color: #D60000;
   border-width: 4px;
@@ -2316,14 +2241,14 @@ exports[`Media List renders with usage cards 1`] = `
   width: 100%;
 }
 
-.emotion-36 {
+.emotion-32 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #D60000;
 }
 
-.emotion-36 svg {
+.emotion-32 svg {
   fill: #D60000;
 }
 
@@ -2349,67 +2274,59 @@ exports[`Media List renders with usage cards 1`] = `
                 class="emotion-6"
                 data-testid="flag"
               >
-                <span
-                  class="emotion-7"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-7 emotion-8"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-8"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-9 emotion-10"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0V0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0V0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                  />
+                </svg>
               </div>
             </div>
             <div
-              class="emotion-11"
+              class="emotion-9"
             >
               <div
-                class="emotion-12"
+                class="emotion-10"
               >
                 <div
-                  class="emotion-13"
+                  class="emotion-11"
                 >
                   <div
-                    class="emotion-14"
+                    class="emotion-12"
                   >
                     <hr
                       aria-hidden="true"
-                      class="emotion-15"
+                      class="emotion-13"
                       data-testid="divider"
                     />
                     <div
-                      class="emotion-14"
+                      class="emotion-12"
                     />
                     <section
-                      class="emotion-17"
+                      class="emotion-15"
                     >
                       <h1
-                        class="nk-headline-heading emotion-18"
+                        class="nk-headline-heading emotion-16"
                       >
                         Do
                       </h1>
                     </section>
                   </div>
                   <div
-                    class="emotion-14"
+                    class="emotion-12"
                   >
                     <p
-                      class="emotion-20"
+                      class="emotion-18"
                     >
                       UsageCard Do
                     </p>
@@ -2429,70 +2346,62 @@ exports[`Media List renders with usage cards 1`] = `
               class="emotion-5"
             >
               <div
-                class="emotion-24"
+                class="emotion-22"
                 data-testid="flag"
               >
-                <span
-                  class="emotion-7"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-23 emotion-8"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-8"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-27 emotion-10"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0V0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0V0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                  />
+                </svg>
               </div>
             </div>
             <div
-              class="emotion-11"
+              class="emotion-9"
             >
               <div
-                class="emotion-12"
+                class="emotion-10"
               >
                 <div
-                  class="emotion-13"
+                  class="emotion-11"
                 >
                   <div
-                    class="emotion-14"
+                    class="emotion-12"
                   >
                     <hr
                       aria-hidden="true"
-                      class="emotion-33"
+                      class="emotion-29"
                       data-testid="divider"
                     />
                     <div
-                      class="emotion-14"
+                      class="emotion-12"
                     />
                     <section
-                      class="emotion-17"
+                      class="emotion-15"
                     >
                       <h1
-                        class="nk-headline-heading emotion-36"
+                        class="nk-headline-heading emotion-32"
                       >
                         Don’t
                       </h1>
                     </section>
                   </div>
                   <div
-                    class="emotion-14"
+                    class="emotion-12"
                   >
                     <p
-                      class="emotion-20"
+                      class="emotion-18"
                     >
                       UsageCard Dont
                     </p>

@@ -34,19 +34,24 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
@@ -115,36 +120,6 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -155,19 +130,19 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-6 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -177,7 +152,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   order: 3;
 }
 
-.emotion-11 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -200,20 +175,12 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              child 1
-            </span>
-          </span>
+          child 1
         </span>
       </div>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-4"
     >
       <div
         class="emotion-2"
@@ -222,20 +189,12 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              child 2
-            </span>
-          </span>
+          child 2
         </span>
       </div>
     </div>
     <div
-      class="emotion-11"
+      class="emotion-7"
     >
       <div
         class="emotion-2"
@@ -244,15 +203,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              child 3
-            </span>
-          </span>
+          child 3
         </span>
       </div>
     </div>
@@ -298,19 +249,24 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
@@ -379,36 +335,6 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -419,19 +345,19 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-6 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -458,20 +384,12 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              With padding props
-            </span>
-          </span>
+          With padding props
         </span>
       </div>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-4"
     >
       <div
         class="emotion-2"
@@ -480,15 +398,7 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              With margin props
-            </span>
-          </span>
+          With margin props
         </span>
       </div>
     </div>
@@ -532,19 +442,24 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
@@ -613,36 +528,6 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -653,19 +538,19 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-6 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -675,7 +560,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   order: 3;
 }
 
-.emotion-11 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -698,20 +583,12 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              child 1
-            </span>
-          </span>
+          child 1
         </span>
       </div>
     </li>
     <li
-      class="emotion-6"
+      class="emotion-4"
     >
       <div
         class="emotion-2"
@@ -720,20 +597,12 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              child 2
-            </span>
-          </span>
+          child 2
         </span>
       </div>
     </li>
     <li
-      class="emotion-11"
+      class="emotion-7"
     >
       <div
         class="emotion-2"
@@ -742,15 +611,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              child 3
-            </span>
-          </span>
+          child 3
         </span>
       </div>
     </li>
@@ -794,19 +655,24 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
@@ -875,36 +741,6 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -915,13 +751,13 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -940,15 +776,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              child 1
-            </span>
-          </span>
+          child 1
         </span>
       </div>
     </div>
@@ -962,15 +790,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              child 2
-            </span>
-          </span>
+          child 2
         </span>
       </div>
     </div>
@@ -984,15 +804,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              child 3
-            </span>
-          </span>
+          child 3
         </span>
       </div>
     </div>

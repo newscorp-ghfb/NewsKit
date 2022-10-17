@@ -50,19 +50,27 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -79,6 +87,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -140,36 +149,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -179,7 +158,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -187,14 +166,14 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -211,7 +190,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   width: 100%;
 }
 
-.emotion-8 {
+.emotion-6 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -232,27 +211,27 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #ABABAB;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-6:hover:not(:disabled) svg {
   fill: #ABABAB;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-6:active:not(:disabled) svg {
   fill: #6A6A6A;
 }
 
-.emotion-9 {
+.emotion-7 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -267,40 +246,40 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-9:disabled {
+.emotion-7:disabled {
   opacity: 0;
 }
 
-.emotion-9:hover:active:not(:disabled) {
+.emotion-7:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-9:valid:hover:not(:disabled) {
+.emotion-7:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-9:valid:hover:active:not(:disabled) {
+.emotion-7:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-9:invalid:hover:not(:disabled) {
+.emotion-7:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-9:invalid:hover:active:not(:disabled) {
+.emotion-7:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -308,14 +287,14 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -325,13 +304,13 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   margin-left: 12px;
 }
 
-.emotion-10::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -352,34 +331,26 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M16.5 12A4.5 4.5 0 0014 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M16.5 12A4.5 4.5 0 0014 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
+          />
+        </svg>
       </button>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
       data-testid="volume-control-track"
       values="0"
     >
@@ -391,7 +362,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
         aria-valuemin="0"
         aria-valuenow="0"
         aria-valuetext="volume level 0 of 10"
-        class="emotion-8"
+        class="emotion-6"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -400,13 +371,13 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
         values="0"
       >
         <span
-          class="emotion-9"
+          class="emotion-7"
           data-testid="volume-control-feedback"
         />
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       data-testid="max-label"
     >
       <button
@@ -416,30 +387,22 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+          />
+        </svg>
       </button>
     </div>
   </div>
@@ -515,19 +478,27 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -544,6 +515,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -605,36 +577,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -644,7 +586,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -652,14 +594,14 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -676,7 +618,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   width: 100%;
 }
 
-.emotion-8 {
+.emotion-6 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -697,27 +639,27 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #ABABAB;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-6:hover:not(:disabled) svg {
   fill: #ABABAB;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-6:active:not(:disabled) svg {
   fill: #6A6A6A;
 }
 
-.emotion-9 {
+.emotion-7 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -732,40 +674,40 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-9:disabled {
+.emotion-7:disabled {
   opacity: 0;
 }
 
-.emotion-9:hover:active:not(:disabled) {
+.emotion-7:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-9:valid:hover:not(:disabled) {
+.emotion-7:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-9:valid:hover:active:not(:disabled) {
+.emotion-7:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-9:invalid:hover:not(:disabled) {
+.emotion-7:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-9:invalid:hover:active:not(:disabled) {
+.emotion-7:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -773,14 +715,14 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -790,13 +732,13 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   margin-left: 12px;
 }
 
-.emotion-10::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -817,34 +759,26 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+          />
+        </svg>
       </button>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
       data-testid="volume-control-track"
       values="0.8"
     >
@@ -856,7 +790,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
         aria-valuemin="0"
         aria-valuenow="0.8"
         aria-valuetext="volume level 8 of 10"
-        class="emotion-8"
+        class="emotion-6"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -865,13 +799,13 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
         values="0.8"
       >
         <span
-          class="emotion-9"
+          class="emotion-7"
           data-testid="volume-control-feedback"
         />
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       data-testid="max-label"
     >
       <button
@@ -881,30 +815,22 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+          />
+        </svg>
       </button>
     </div>
   </div>
@@ -980,19 +906,27 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -1009,6 +943,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -1070,36 +1005,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1109,7 +1014,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1117,14 +1022,14 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1141,7 +1046,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   width: 100%;
 }
 
-.emotion-8 {
+.emotion-6 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -1162,27 +1067,27 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #ABABAB;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-6:hover:not(:disabled) svg {
   fill: #ABABAB;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-6:active:not(:disabled) svg {
   fill: #6A6A6A;
 }
 
-.emotion-9 {
+.emotion-7 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1197,40 +1102,40 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-9:disabled {
+.emotion-7:disabled {
   opacity: 0;
 }
 
-.emotion-9:hover:active:not(:disabled) {
+.emotion-7:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-9:valid:hover:not(:disabled) {
+.emotion-7:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-9:valid:hover:active:not(:disabled) {
+.emotion-7:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-9:invalid:hover:not(:disabled) {
+.emotion-7:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-9:invalid:hover:active:not(:disabled) {
+.emotion-7:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1238,14 +1143,14 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1255,13 +1160,13 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   margin-left: 12px;
 }
 
-.emotion-10::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1282,34 +1187,26 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+          />
+        </svg>
       </button>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
       data-testid="volume-control-track"
       values="1"
     >
@@ -1321,7 +1218,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
         aria-valuemin="0"
         aria-valuenow="1"
         aria-valuetext="volume level 10 of 10"
-        class="emotion-8"
+        class="emotion-6"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -1330,13 +1227,13 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
         values="1"
       >
         <span
-          class="emotion-9"
+          class="emotion-7"
           data-testid="volume-control-feedback"
         />
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       data-testid="max-label"
     >
       <button
@@ -1346,30 +1243,22 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+          />
+        </svg>
       </button>
     </div>
   </div>
@@ -1444,19 +1333,27 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -1473,6 +1370,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -1534,36 +1432,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1573,7 +1441,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1581,14 +1449,14 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1605,7 +1473,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   width: 12px;
 }
 
-.emotion-8 {
+.emotion-6 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -1626,27 +1494,27 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #ABABAB;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-6:hover:not(:disabled) svg {
   fill: #ABABAB;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-6:active:not(:disabled) svg {
   fill: #6A6A6A;
 }
 
-.emotion-9 {
+.emotion-7 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1661,40 +1529,40 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-9:disabled {
+.emotion-7:disabled {
   opacity: 0;
 }
 
-.emotion-9:hover:active:not(:disabled) {
+.emotion-7:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-9:valid:hover:not(:disabled) {
+.emotion-7:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-9:valid:hover:active:not(:disabled) {
+.emotion-7:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-9:invalid:hover:not(:disabled) {
+.emotion-7:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-9:invalid:hover:active:not(:disabled) {
+.emotion-7:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1702,14 +1570,14 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1719,13 +1587,13 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   margin-bottom: 12px;
 }
 
-.emotion-10::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1746,34 +1614,26 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+          />
+        </svg>
       </button>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
       data-testid="volume-control-track"
       values="1"
     >
@@ -1785,7 +1645,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
         aria-valuemin="0"
         aria-valuenow="1"
         aria-valuetext="volume level 10 of 10"
-        class="emotion-8"
+        class="emotion-6"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -1794,13 +1654,13 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
         values="1"
       >
         <span
-          class="emotion-9"
+          class="emotion-7"
           data-testid="volume-control-feedback"
         />
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       data-testid="max-label"
     >
       <button
@@ -1810,30 +1670,22 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+          />
+        </svg>
       </button>
     </div>
   </div>
@@ -1909,19 +1761,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -1938,6 +1798,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -1999,36 +1860,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2038,7 +1869,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2046,14 +1877,14 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2070,7 +1901,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   width: 100%;
 }
 
-.emotion-8 {
+.emotion-6 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -2091,27 +1922,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #ABABAB;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-6:hover:not(:disabled) svg {
   fill: #ABABAB;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-6:active:not(:disabled) svg {
   fill: #6A6A6A;
 }
 
-.emotion-9 {
+.emotion-7 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2126,40 +1957,40 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-9:disabled {
+.emotion-7:disabled {
   opacity: 0;
 }
 
-.emotion-9:hover:active:not(:disabled) {
+.emotion-7:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-9:valid:hover:not(:disabled) {
+.emotion-7:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-9:valid:hover:active:not(:disabled) {
+.emotion-7:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-9:invalid:hover:not(:disabled) {
+.emotion-7:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-9:invalid:hover:active:not(:disabled) {
+.emotion-7:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2167,14 +1998,14 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2184,13 +2015,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-left: 12px;
 }
 
-.emotion-10::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2211,34 +2042,26 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M16.5 12A4.5 4.5 0 0014 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M16.5 12A4.5 4.5 0 0014 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
+          />
+        </svg>
       </button>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
       data-testid="volume-control-track"
       values="0"
     >
@@ -2250,7 +2073,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         aria-valuemin="0"
         aria-valuenow="0"
         aria-valuetext="volume level 0 of 10"
-        class="emotion-8"
+        class="emotion-6"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -2259,13 +2082,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         values="0"
       >
         <span
-          class="emotion-9"
+          class="emotion-7"
           data-testid="volume-control-feedback"
         />
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       data-testid="max-label"
     >
       <button
@@ -2275,30 +2098,22 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+          />
+        </svg>
       </button>
     </div>
   </div>
@@ -2374,19 +2189,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -2403,6 +2226,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -2464,36 +2288,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2503,7 +2297,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2511,14 +2305,14 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2535,7 +2329,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   width: 100%;
 }
 
-.emotion-8 {
+.emotion-6 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -2556,27 +2350,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #ABABAB;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-6:hover:not(:disabled) svg {
   fill: #ABABAB;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-6:active:not(:disabled) svg {
   fill: #6A6A6A;
 }
 
-.emotion-9 {
+.emotion-7 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2591,40 +2385,40 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-9:disabled {
+.emotion-7:disabled {
   opacity: 0;
 }
 
-.emotion-9:hover:active:not(:disabled) {
+.emotion-7:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-9:valid:hover:not(:disabled) {
+.emotion-7:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-9:valid:hover:active:not(:disabled) {
+.emotion-7:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-9:invalid:hover:not(:disabled) {
+.emotion-7:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-9:invalid:hover:active:not(:disabled) {
+.emotion-7:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2632,14 +2426,14 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2649,13 +2443,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-left: 12px;
 }
 
-.emotion-10::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2676,34 +2470,26 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+          />
+        </svg>
       </button>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
       data-testid="volume-control-track"
       values="0.7"
     >
@@ -2715,7 +2501,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         aria-valuemin="0"
         aria-valuenow="0.7"
         aria-valuetext="volume level 7 of 10"
-        class="emotion-8"
+        class="emotion-6"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -2724,13 +2510,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         values="0.7"
       >
         <span
-          class="emotion-9"
+          class="emotion-7"
           data-testid="volume-control-feedback"
         />
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       data-testid="max-label"
     >
       <button
@@ -2740,30 +2526,22 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+          />
+        </svg>
       </button>
     </div>
   </div>
@@ -2839,19 +2617,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -2868,6 +2654,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -2929,36 +2716,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2968,7 +2725,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2976,14 +2733,14 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3000,7 +2757,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   width: 100%;
 }
 
-.emotion-8 {
+.emotion-6 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -3021,27 +2778,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #ABABAB;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-6:hover:not(:disabled) svg {
   fill: #ABABAB;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-6:active:not(:disabled) svg {
   fill: #6A6A6A;
 }
 
-.emotion-9 {
+.emotion-7 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3056,40 +2813,40 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-9:disabled {
+.emotion-7:disabled {
   opacity: 0;
 }
 
-.emotion-9:hover:active:not(:disabled) {
+.emotion-7:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-9:valid:hover:not(:disabled) {
+.emotion-7:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-9:valid:hover:active:not(:disabled) {
+.emotion-7:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-9:invalid:hover:not(:disabled) {
+.emotion-7:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-9:invalid:hover:active:not(:disabled) {
+.emotion-7:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3097,14 +2854,14 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -3114,13 +2871,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-left: 12px;
 }
 
-.emotion-10::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3141,34 +2898,26 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M16.5 12A4.5 4.5 0 0014 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M16.5 12A4.5 4.5 0 0014 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
+          />
+        </svg>
       </button>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
       data-testid="volume-control-track"
       values="0"
     >
@@ -3180,7 +2929,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         aria-valuemin="0"
         aria-valuenow="0"
         aria-valuetext="volume level 0 of 10"
-        class="emotion-8"
+        class="emotion-6"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -3189,13 +2938,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         values="0"
       >
         <span
-          class="emotion-9"
+          class="emotion-7"
           data-testid="volume-control-feedback"
         />
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       data-testid="max-label"
     >
       <button
@@ -3205,30 +2954,22 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+          />
+        </svg>
       </button>
     </div>
   </div>
@@ -3304,19 +3045,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -3333,6 +3082,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -3394,36 +3144,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3433,7 +3153,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3441,14 +3161,14 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3465,7 +3185,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   width: 100%;
 }
 
-.emotion-8 {
+.emotion-6 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -3486,27 +3206,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #ABABAB;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-6:hover:not(:disabled) svg {
   fill: #ABABAB;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-6:active:not(:disabled) svg {
   fill: #6A6A6A;
 }
 
-.emotion-9 {
+.emotion-7 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3521,40 +3241,40 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-9:disabled {
+.emotion-7:disabled {
   opacity: 0;
 }
 
-.emotion-9:hover:active:not(:disabled) {
+.emotion-7:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-9:valid:hover:not(:disabled) {
+.emotion-7:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-9:valid:hover:active:not(:disabled) {
+.emotion-7:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-9:invalid:hover:not(:disabled) {
+.emotion-7:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-9:invalid:hover:active:not(:disabled) {
+.emotion-7:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3562,14 +3282,14 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -3579,13 +3299,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-left: 12px;
 }
 
-.emotion-10::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3606,34 +3326,26 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+          />
+        </svg>
       </button>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
       data-testid="volume-control-track"
       values="0.7"
     >
@@ -3645,7 +3357,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         aria-valuemin="0"
         aria-valuenow="0.7"
         aria-valuetext="volume level 7 of 10"
-        class="emotion-8"
+        class="emotion-6"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -3654,13 +3366,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         values="0.7"
       >
         <span
-          class="emotion-9"
+          class="emotion-7"
           data-testid="volume-control-feedback"
         />
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       data-testid="max-label"
     >
       <button
@@ -3670,30 +3382,22 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+          />
+        </svg>
       </button>
     </div>
   </div>
@@ -3769,19 +3473,27 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -3798,6 +3510,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -3859,36 +3572,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3898,7 +3581,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3906,14 +3589,14 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3930,7 +3613,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   width: 100%;
 }
 
-.emotion-8 {
+.emotion-6 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -3951,27 +3634,27 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #ABABAB;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-6:hover:not(:disabled) svg {
   fill: #ABABAB;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-6:active:not(:disabled) svg {
   fill: #6A6A6A;
 }
 
-.emotion-9 {
+.emotion-7 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3986,40 +3669,40 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-9:disabled {
+.emotion-7:disabled {
   opacity: 0;
 }
 
-.emotion-9:hover:active:not(:disabled) {
+.emotion-7:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-9:valid:hover:not(:disabled) {
+.emotion-7:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-9:valid:hover:active:not(:disabled) {
+.emotion-7:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-9:invalid:hover:not(:disabled) {
+.emotion-7:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-9:invalid:hover:active:not(:disabled) {
+.emotion-7:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4027,14 +3710,14 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -4044,13 +3727,13 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   margin-left: 12px;
 }
 
-.emotion-10::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -4071,34 +3754,26 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+          />
+        </svg>
       </button>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-5"
       data-testid="volume-control-track"
       values="1"
     >
@@ -4110,7 +3785,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
         aria-valuemin="0"
         aria-valuenow="1"
         aria-valuetext="volume level 10 of 10"
-        class="emotion-8"
+        class="emotion-6"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -4119,13 +3794,13 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
         values="1"
       >
         <span
-          class="emotion-9"
+          class="emotion-7"
           data-testid="volume-control-feedback"
         />
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       data-testid="max-label"
     >
       <button
@@ -4135,30 +3810,22 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
         tabindex="-1"
         type="button"
       >
-        <span
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-              />
-            </svg>
-          </span>
-        </span>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+          />
+        </svg>
       </button>
     </div>
   </div>

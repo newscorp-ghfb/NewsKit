@@ -189,19 +189,24 @@ exports[`ReleaseHeader renders correctly 1`] = `
 }
 
 .emotion-11 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
@@ -221,27 +226,6 @@ exports[`ReleaseHeader renders correctly 1`] = `
 }
 
 .emotion-12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-14 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -252,13 +236,13 @@ exports[`ReleaseHeader renders correctly 1`] = `
   display: inline-block;
 }
 
-.emotion-14::before {
+.emotion-12::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-14::after {
+.emotion-12::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -328,15 +312,7 @@ exports[`ReleaseHeader renders correctly 1`] = `
           <span
             class="emotion-12"
           >
-            <span
-              class="emotion-3"
-            >
-              <span
-                class="emotion-14"
-              >
-                Patch
-              </span>
-            </span>
+            Patch
           </span>
         </div>
       </span>

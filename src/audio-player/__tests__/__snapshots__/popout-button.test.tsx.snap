@@ -3,19 +3,27 @@
 exports[`PopoutButton renders correctly with default props 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -32,6 +40,7 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -93,36 +102,6 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -132,7 +111,7 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -140,14 +119,14 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3.emotion-3 {
+.emotion-1.emotion-1 {
   width: 24px;
   height: 24px;
 }
@@ -158,30 +137,22 @@ exports[`PopoutButton renders correctly with default props 1`] = `
     data-testid="audio-player-popout"
     type="button"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-          />
-        </svg>
-      </span>
-    </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+      />
+    </svg>
   </button>
 </DocumentFragment>
 `;

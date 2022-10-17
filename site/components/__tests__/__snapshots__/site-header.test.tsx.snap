@@ -79,19 +79,27 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -108,6 +116,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -169,36 +178,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-7 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -209,7 +188,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -217,14 +196,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7.emotion-7 {
+.emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
   color: #09111C;
@@ -232,7 +211,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7.emotion-7 {
+  .emotion-5.emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -240,20 +219,20 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7.emotion-7 {
+  .emotion-5.emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-9 {
+.emotion-7 {
   display: inline-block;
   color: #2E3F54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -261,18 +240,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-9 svg {
+.emotion-7 svg {
   fill: #2E3F54;
 }
 
-.emotion-10 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -291,73 +270,73 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   justify-content: flex-start;
 }
 
-.emotion-11 {
+.emotion-9 {
   overflow: hidden;
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-11 {
+  .emotion-9 {
     margin-left: 24px;
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   display: inline-block;
   height: 48px;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-12 {
+  .emotion-10 {
     width: 125px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-12 {
+  .emotion-10 {
     width: 183px;
   }
 }
 
-.emotion-13 {
+.emotion-11 {
   fill: #09111C;
   color: #09111C;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin-bottom: 4px;
 }
 
 @media screen {
-  .emotion-14 {
+  .emotion-12 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-14 {
+  .emotion-12 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-14 {
+  .emotion-12 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-14 {
+  .emotion-12 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-14 {
+  .emotion-12 {
     display: none;
   }
 }
 
-.emotion-18 {
+.emotion-14 {
   color: #09111C;
   fill: #09111C;
   vertical-align: unset;
@@ -365,7 +344,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-18 {
+  .emotion-14 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -373,14 +352,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-18 {
+  .emotion-14 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-18.emotion-18 {
+.emotion-14.emotion-14 {
   width: 24px;
   height: 24px;
   color: #09111C;
@@ -388,7 +367,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-18.emotion-18 {
+  .emotion-14.emotion-14 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -396,7 +375,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-18.emotion-18 {
+  .emotion-14.emotion-14 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -404,49 +383,56 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen {
-  .emotion-19 {
+  .emotion-15 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-19 {
+  .emotion-15 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-19 {
+  .emotion-15 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-19 {
+  .emotion-15 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-19 {
+  .emotion-15 {
     display: block;
   }
 }
 
-.emotion-20 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-16 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(3, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 130px;
+  height: 40px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-width: 130px;
@@ -466,38 +452,39 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-radius: 24px;
   color: #2E3F54;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
-.emotion-20 svg {
+.emotion-16 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-20 svg {
+.emotion-16 svg {
   fill: #2E3F54;
 }
 
-.emotion-20:hover:not(:disabled) {
+.emotion-16:hover:not(:disabled) {
   background-color: #F0F1F3;
   border-color: #15263E;
 }
 
-.emotion-20:active:not(:disabled) {
+.emotion-16:active:not(:disabled) {
   background-color: #DEE2E5;
   border-color: #09111C;
 }
 
-.emotion-20:disabled {
+.emotion-16:disabled {
   border-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-20:disabled svg {
+.emotion-16:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-20:focus-visible:not(:disabled) {
+.emotion-16:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -506,14 +493,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-20:focus-visible:not(:disabled) {
+    .emotion-16:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-20 {
+  .emotion-16 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -521,21 +508,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-20 {
+  .emotion-16 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-23 {
+.emotion-17 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-23 {
+  .emotion-17 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -543,14 +530,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-23 {
+  .emotion-17 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-25 {
+.emotion-18 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -561,32 +548,37 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: inline-block;
 }
 
-.emotion-25::before {
+.emotion-18::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-25::after {
+.emotion-18::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-27 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-19 {
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 24px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
@@ -603,50 +595,20 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   color: #5A6A79;
 }
 
-.emotion-27 svg {
+.emotion-19 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-27 svg {
+.emotion-19 svg {
   fill: #FFFFFF;
 }
 
-.emotion-27:hover:not(:disabled) {
+.emotion-19:hover:not(:disabled) {
   background-color: #F0F1F3;
 }
 
-.emotion-28 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-29 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-30 {
+.emotion-20 {
   margin: 0;
   font-family: 'DM Mono',courier;
   font-size: 14px;
@@ -656,7 +618,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: inline-block;
 }
 
-.emotion-30::before {
+.emotion-20::before {
   content: '';
   display: block;
   height: 0;
@@ -664,7 +626,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-bottom: -0.4267857142857143em;
 }
 
-.emotion-30::after {
+.emotion-20::after {
   content: '';
   display: block;
   height: 0;
@@ -672,7 +634,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-top: -0.3642857142857143em;
 }
 
-.emotion-32 {
+.emotion-22 {
   display: grid;
   -webkit-column-gap: 20px;
   column-gap: 20px;
@@ -683,29 +645,29 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-32 {
+  .emotion-22 {
     grid-template-columns: auto 1fr auto auto 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-32 {
+  .emotion-22 {
     grid-template-columns: 276px 1fr auto auto 80px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-32 {
+  .emotion-22 {
     grid-template-areas: "logo menu search github theme";
   }
 }
 
-.emotion-33 {
+.emotion-23 {
   grid-area: logo;
   justify-self: start;
 }
 
-.emotion-34 {
+.emotion-24 {
   display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: none;
@@ -713,7 +675,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-34 {
+  .emotion-24 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -721,38 +683,38 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-34 {
+  .emotion-24 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-34 svg {
+.emotion-24 svg {
   fill: #3358CC;
 }
 
-.emotion-34:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-34:hover:not(:disabled) svg {
+.emotion-24:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-34:active:not(:disabled) {
+.emotion-24:active:not(:disabled) {
   color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-34:active:not(:disabled) svg {
+.emotion-24:active:not(:disabled) svg {
   fill: #14328D;
 }
 
-.emotion-34:focus-visible:not(:disabled) {
+.emotion-24:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -761,23 +723,23 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-34:focus-visible:not(:disabled) {
+    .emotion-24:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-39 {
+.emotion-29 {
   grid-area: menu;
   justify-self: start;
 }
 
-.emotion-40 {
+.emotion-30 {
   box-sizing: border-box;
   width: 100%;
 }
 
-.emotion-40>ul {
+.emotion-30>ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
@@ -789,29 +751,36 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   width: 100%;
 }
 
-.emotion-40 li:last-of-type {
+.emotion-30 li:last-of-type {
   margin-right: 0;
 }
 
-.emotion-41 {
+.emotion-31 {
   box-sizing: border-box;
   margin-right: 8px;
 }
 
-.emotion-42 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-32 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
+  min-width: 80px;
+  min-height: 80px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 80px;
@@ -831,6 +800,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-width: 4px;
   border-style: solid;
   margin: 0;
+  position: relative;
   cursor: pointer;
   color: #3358CC;
   -webkit-text-decoration: none;
@@ -846,30 +816,43 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-42 {
+  .emotion-32 {
     margin-inline: 10px;
     padding-inline: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-42 {
+  .emotion-32 {
     padding-inline: 3px;
   }
 }
 
-.emotion-42 svg {
+@media screen and (min-width: 1440px) {
+  .emotion-32 {
+    margin-inline: 10px;
+    padding-inline: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-32 {
+    padding-inline: 3px;
+  }
+}
+
+.emotion-32 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-42:hover:not(:disabled) {
+.emotion-32:hover:not(:disabled) {
   color: #5A6A79;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-42:focus-visible:not(:disabled) {
+.emotion-32:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -878,14 +861,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-42:focus-visible:not(:disabled) {
+    .emotion-32:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-42 {
+  .emotion-32 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -893,7 +876,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-42 {
+  .emotion-32 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -901,19 +884,19 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-42 {
+  .emotion-32 {
     margin-inline: 10px;
     padding-inline: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-42 {
+  .emotion-32 {
     padding-inline: 3px;
   }
 }
 
-.emotion-45 {
+.emotion-33 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -924,32 +907,39 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: inline-block;
 }
 
-.emotion-45::before {
+.emotion-33::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-45::after {
+.emotion-33::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-47 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-35 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
+  min-width: 80px;
+  min-height: 80px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 80px;
@@ -969,6 +959,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-width: 4px;
   border-style: solid;
   margin: 0;
+  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -978,30 +969,43 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-47 {
+  .emotion-35 {
     margin-inline: 10px;
     padding-inline: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-47 {
+  .emotion-35 {
     padding-inline: 3px;
   }
 }
 
-.emotion-47 svg {
+@media screen and (min-width: 1440px) {
+  .emotion-35 {
+    margin-inline: 10px;
+    padding-inline: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-35 {
+    padding-inline: 3px;
+  }
+}
+
+.emotion-35 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-47:hover:not(:disabled) {
+.emotion-35:hover:not(:disabled) {
   color: #5A6A79;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-47:focus-visible:not(:disabled) {
+.emotion-35:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -1010,14 +1014,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-47:focus-visible:not(:disabled) {
+    .emotion-35:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-47 {
+  .emotion-35 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1025,7 +1029,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-47 {
+  .emotion-35 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1033,44 +1037,155 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-47 {
+  .emotion-35 {
     margin-inline: 10px;
     padding-inline: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-47 {
+  .emotion-35 {
     padding-inline: 3px;
   }
 }
 
-.emotion-66 {
+.emotion-46 {
   grid-area: search;
 }
 
-.emotion-84 {
+.emotion-56 {
   grid-area: github;
 }
 
-.emotion-91 {
-  grid-area: theme;
-}
-
-.emotion-92 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-57 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 130px;
+  height: 40px;
+  min-height: 32px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-width: 130px;
+  height: 40px;
+  padding: 8px 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #2E3F54;
+  border-width: 1px;
+  border-radius: 24px;
+  color: #2E3F54;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.emotion-57 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-57 svg {
+  fill: #2E3F54;
+}
+
+.emotion-57:hover:not(:disabled) {
+  background-color: #F0F1F3;
+  border-color: #15263E;
+}
+
+.emotion-57:active:not(:disabled) {
+  background-color: #DEE2E5;
+  border-color: #09111C;
+}
+
+.emotion-57:disabled {
+  border-color: #DEE2E5;
+  color: #C0C7CC;
+}
+
+.emotion-57:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-57:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-57:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-57 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-57 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-60 {
+  grid-area: theme;
+}
+
+.emotion-61 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -1086,23 +1201,24 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   background-color: #F0F1F3;
   border-radius: 50%;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
-.emotion-92 svg {
+.emotion-61 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-92:hover:not(:disabled) {
+.emotion-61:hover:not(:disabled) {
   background-color: #DEE2E5;
 }
 
-.emotion-92:active:not(:disabled) {
+.emotion-61:active:not(:disabled) {
   background-color: #DEE2E5;
 }
 
-.emotion-92:focus-visible:not(:disabled) {
+.emotion-61:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -1111,14 +1227,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-92:focus-visible:not(:disabled) {
+    .emotion-61:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-92 {
+  .emotion-61 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1126,21 +1242,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-92 {
+  .emotion-61 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-95 {
+.emotion-62 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-95 {
+  .emotion-62 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1148,14 +1264,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-95 {
+  .emotion-62 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-95.emotion-95 {
+.emotion-62.emotion-62 {
   width: 16px;
   height: 16px;
 }
@@ -1181,44 +1297,36 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
             tabindex="0"
             type="button"
           >
-            <span
-              class="emotion-5"
+            <svg
+              aria-hidden="true"
+              class="emotion-5 emotion-6"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-7 emotion-8"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
           </button>
         </div>
         <a
-          class="emotion-9"
+          class="emotion-7"
           href="/"
         >
           <span
-            class="emotion-10"
+            class="emotion-8"
           >
             <div
-              class="emotion-11"
+              class="emotion-9"
             >
               <svg
-                class="emotion-12"
+                class="emotion-10"
                 viewBox="0 0 1587 347"
               >
                 <title>
@@ -1234,7 +1342,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     transform="translate(-5.000000, 47.000000)"
                   >
                     <g
-                      class="emotion-13"
+                      class="emotion-11"
                       transform="translate(508.073657, 26.125170)"
                     >
                       <path
@@ -1268,7 +1376,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
           </span>
         </a>
         <div
-          class="emotion-14"
+          class="emotion-12"
         >
           <button
             aria-label="Search"
@@ -1276,83 +1384,51 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
             data-testid="search-icon-button"
             type="button"
           >
-            <span
-              class="emotion-5"
+            <svg
+              aria-hidden="true"
+              class="emotion-14"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-18"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+              />
+            </svg>
           </button>
         </div>
         <div
-          class="emotion-19"
+          class="emotion-15"
         >
           <button
-            class="emotion-20"
+            class="emotion-16"
             data-testid="search-button"
             type="button"
           >
+            <svg
+              aria-hidden="true"
+              class="emotion-17"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+              />
+            </svg>
             <span
-              class="emotion-5"
+              class="emotion-18"
+            >
+              Search
+            </span>
+            <span
+              class="emotion-19"
+              data-testid="flag"
             >
               <span
-                class="emotion-6"
+                class="emotion-20"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-23"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                  />
-                </svg>
-              </span>
-              <span
-                class="emotion-6"
-              >
-                <span
-                  class="emotion-25"
-                >
-                  Search
-                </span>
-              </span>
-              <span
-                class="emotion-6"
-              >
-                <span
-                  class="emotion-27"
-                  data-testid="flag"
-                >
-                  <span
-                    class="emotion-28"
-                  >
-                    <span
-                      class="emotion-29"
-                    >
-                      <span
-                        class="emotion-30"
-                      >
-                        ⌘K
-                      </span>
-                    </span>
-                  </span>
-                </span>
+                ⌘K
               </span>
             </span>
           </button>
@@ -1360,27 +1436,27 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
       </div>
     </div>
     <div
-      class="emotion-19"
+      class="emotion-15"
     >
       <div
-        class="emotion-32"
+        class="emotion-22"
         data-testid="nav-container"
       >
         <div
-          class="emotion-33"
+          class="emotion-23"
         >
           <a
-            class="emotion-34"
+            class="emotion-24"
             href="/"
           >
             <span
-              class="emotion-10"
+              class="emotion-8"
             >
               <div
-                class="emotion-11"
+                class="emotion-9"
               >
                 <svg
-                  class="emotion-12"
+                  class="emotion-10"
                   viewBox="0 0 1587 347"
                 >
                   <title>
@@ -1396,7 +1472,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       transform="translate(-5.000000, 47.000000)"
                     >
                       <g
-                        class="emotion-13"
+                        class="emotion-11"
                         transform="translate(508.073657, 26.125170)"
                       >
                         <path
@@ -1431,11 +1507,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
           </a>
         </div>
         <div
-          class="emotion-39"
+          class="emotion-29"
         >
           <nav
             aria-label="main-navigation"
-            class="emotion-40"
+            class="emotion-30"
             data-testid="menu-container"
             role="navigation"
           >
@@ -1443,122 +1519,82 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
               role="list"
             >
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="page"
-                  class="emotion-42"
+                  class="emotion-32"
                   data-testid="styled-indicator"
                   href="/about/introduction"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        About
-                      </span>
-                    </span>
+                    About
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-47"
+                  class="emotion-35"
                   data-testid="styled-indicator"
                   href="/getting-started/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Guides
-                      </span>
-                    </span>
+                    Guides
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-47"
+                  class="emotion-35"
                   data-testid="styled-indicator"
                   href="/theme/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Theme
-                      </span>
-                    </span>
+                    Theme
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-47"
+                  class="emotion-35"
                   data-testid="styled-indicator"
                   href="/components/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Components
-                      </span>
-                    </span>
+                    Components
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-47"
+                  class="emotion-35"
                   data-testid="styled-indicator"
                   href="/patterns/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Patterns
-                      </span>
-                    </span>
+                    Patterns
                   </span>
                 </a>
               </li>
@@ -1566,10 +1602,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
           </nav>
         </div>
         <div
-          class="emotion-66"
+          class="emotion-46"
         >
           <div
-            class="emotion-14"
+            class="emotion-12"
           >
             <button
               aria-label="Search"
@@ -1577,164 +1613,112 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
               data-testid="search-icon-button"
               type="button"
             >
-              <span
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-14"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <span
-                  class="emotion-6"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-18"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                    />
-                  </svg>
-                </span>
-              </span>
+                <path
+                  d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+                />
+              </svg>
             </button>
           </div>
           <div
-            class="emotion-19"
+            class="emotion-15"
           >
             <button
-              class="emotion-20"
+              class="emotion-16"
               data-testid="search-button"
               type="button"
             >
+              <svg
+                aria-hidden="true"
+                class="emotion-17"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+                />
+              </svg>
               <span
-                class="emotion-5"
+                class="emotion-18"
+              >
+                Search
+              </span>
+              <span
+                class="emotion-19"
+                data-testid="flag"
               >
                 <span
-                  class="emotion-6"
+                  class="emotion-20"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-23"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="emotion-6"
-                >
-                  <span
-                    class="emotion-25"
-                  >
-                    Search
-                  </span>
-                </span>
-                <span
-                  class="emotion-6"
-                >
-                  <span
-                    class="emotion-27"
-                    data-testid="flag"
-                  >
-                    <span
-                      class="emotion-28"
-                    >
-                      <span
-                        class="emotion-29"
-                      >
-                        <span
-                          class="emotion-30"
-                        >
-                          ⌘K
-                        </span>
-                      </span>
-                    </span>
-                  </span>
+                  ⌘K
                 </span>
               </span>
             </button>
           </div>
         </div>
         <div
-          class="emotion-84"
+          class="emotion-56"
         >
           <a
-            class="emotion-20"
+            class="emotion-57"
             data-testid="buttonLink"
             href="https://github.com/newscorp-ghfb/newskit"
             target="_blank"
           >
-            <span
-              class="emotion-5"
+            <svg
+              aria-hidden="true"
+              class="emotion-17"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-23"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                    fill-rule="nonzero"
-                  />
-                </svg>
-              </span>
-              <span
-                class="emotion-6"
-              >
-                <span
-                  class="emotion-25"
-                >
-                  View GitHub
-                </span>
-              </span>
+              <path
+                d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <span
+              class="emotion-18"
+            >
+              View GitHub
             </span>
           </a>
         </div>
         <div
-          class="emotion-91"
+          class="emotion-60"
         >
           <button
             aria-label="Enable dark mode"
             aria-pressed="false"
-            class="emotion-92"
+            class="emotion-61"
             data-testid="theme-switch-button"
             title="Enable dark mode"
             type="button"
           >
-            <span
-              class="emotion-5"
+            <svg
+              class="emotion-62"
+              fill="currentColor"
+              role="img"
+              viewBox="0 0 17 17"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  class="emotion-95"
-                  fill="currentColor"
-                  role="img"
-                  viewBox="0 0 17 17"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Dark icon
-                  </title>
-                  <path
-                    clip-rule="evenodd"
-                    d="M12.7349 0C12.9152 0 13.0614 0.146193 13.0614 0.326531C13.0614 1.76923 14.2309 2.93878 15.6736 2.93878C15.854 2.93878 16.0002 3.08497 16.0002 3.26531V3.59184C16.0002 3.77217 15.854 3.91837 15.6736 3.91837C14.2309 3.91837 13.0614 5.08791 13.0614 6.53061C13.0614 6.71095 12.9152 6.85714 12.7349 6.85714H12.4083C12.228 6.85714 12.0818 6.71095 12.0818 6.53061C12.0818 5.08791 10.9123 3.91837 9.46956 3.91837C9.28922 3.91837 9.14303 3.77217 9.14303 3.59184V3.26531C9.14303 3.08497 9.28922 2.93878 9.46956 2.93878C10.9123 2.93878 12.0818 1.76923 12.0818 0.326531C12.0818 0.146193 12.228 0 12.4083 0H12.7349ZM14.8384 9.78689C15.2381 9.50799 15.8414 9.80867 15.7022 10.2758C14.7157 13.5862 11.6485 16 8.01747 16C3.58955 16 0 12.4105 0 7.98253C0 4.35151 2.41376 1.28426 5.72424 0.29782C6.19133 0.158637 6.49201 0.761872 6.21311 1.16157C5.51277 2.16524 5.10203 3.38598 5.10203 4.70265C5.10203 8.12423 7.87577 10.898 11.2973 10.898C12.614 10.898 13.8348 10.4872 14.8384 9.78689Z"
-                    fill="#577FFB"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </span>
-            </span>
+              <title>
+                Dark icon
+              </title>
+              <path
+                clip-rule="evenodd"
+                d="M12.7349 0C12.9152 0 13.0614 0.146193 13.0614 0.326531C13.0614 1.76923 14.2309 2.93878 15.6736 2.93878C15.854 2.93878 16.0002 3.08497 16.0002 3.26531V3.59184C16.0002 3.77217 15.854 3.91837 15.6736 3.91837C14.2309 3.91837 13.0614 5.08791 13.0614 6.53061C13.0614 6.71095 12.9152 6.85714 12.7349 6.85714H12.4083C12.228 6.85714 12.0818 6.71095 12.0818 6.53061C12.0818 5.08791 10.9123 3.91837 9.46956 3.91837C9.28922 3.91837 9.14303 3.77217 9.14303 3.59184V3.26531C9.14303 3.08497 9.28922 2.93878 9.46956 2.93878C10.9123 2.93878 12.0818 1.76923 12.0818 0.326531C12.0818 0.146193 12.228 0 12.4083 0H12.7349ZM14.8384 9.78689C15.2381 9.50799 15.8414 9.80867 15.7022 10.2758C14.7157 13.5862 11.6485 16 8.01747 16C3.58955 16 0 12.4105 0 7.98253C0 4.35151 2.41376 1.28426 5.72424 0.29782C6.19133 0.158637 6.49201 0.761872 6.21311 1.16157C5.51277 2.16524 5.10203 3.38598 5.10203 4.70265C5.10203 8.12423 7.87577 10.898 11.2973 10.898C12.614 10.898 13.8348 10.4872 14.8384 9.78689Z"
+                fill="#577FFB"
+                fill-rule="evenodd"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -1822,19 +1806,27 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -1851,6 +1843,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -1912,36 +1905,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-7 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1952,7 +1915,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1960,14 +1923,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7.emotion-7 {
+.emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
   color: #09111C;
@@ -1975,7 +1938,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7.emotion-7 {
+  .emotion-5.emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1983,20 +1946,20 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7.emotion-7 {
+  .emotion-5.emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-9 {
+.emotion-7 {
   display: inline-block;
   color: #2E3F54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -2004,18 +1967,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-9 svg {
+.emotion-7 svg {
   fill: #2E3F54;
 }
 
-.emotion-10 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2034,73 +1997,73 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   justify-content: flex-start;
 }
 
-.emotion-11 {
+.emotion-9 {
   overflow: hidden;
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-11 {
+  .emotion-9 {
     margin-left: 24px;
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   display: inline-block;
   height: 48px;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-12 {
+  .emotion-10 {
     width: 125px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-12 {
+  .emotion-10 {
     width: 183px;
   }
 }
 
-.emotion-13 {
+.emotion-11 {
   fill: #09111C;
   color: #09111C;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin-bottom: 4px;
 }
 
 @media screen {
-  .emotion-14 {
+  .emotion-12 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-14 {
+  .emotion-12 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-14 {
+  .emotion-12 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-14 {
+  .emotion-12 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-14 {
+  .emotion-12 {
     display: none;
   }
 }
 
-.emotion-18 {
+.emotion-14 {
   color: #09111C;
   fill: #09111C;
   vertical-align: unset;
@@ -2108,7 +2071,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-18 {
+  .emotion-14 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2116,14 +2079,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-18 {
+  .emotion-14 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-18.emotion-18 {
+.emotion-14.emotion-14 {
   width: 24px;
   height: 24px;
   color: #09111C;
@@ -2131,7 +2094,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-18.emotion-18 {
+  .emotion-14.emotion-14 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2139,7 +2102,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-18.emotion-18 {
+  .emotion-14.emotion-14 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2147,49 +2110,56 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen {
-  .emotion-19 {
+  .emotion-15 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-19 {
+  .emotion-15 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-19 {
+  .emotion-15 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-19 {
+  .emotion-15 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-19 {
+  .emotion-15 {
     display: block;
   }
 }
 
-.emotion-20 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-16 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(3, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 130px;
+  height: 40px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-width: 130px;
@@ -2209,38 +2179,39 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-radius: 24px;
   color: #2E3F54;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
-.emotion-20 svg {
+.emotion-16 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-20 svg {
+.emotion-16 svg {
   fill: #2E3F54;
 }
 
-.emotion-20:hover:not(:disabled) {
+.emotion-16:hover:not(:disabled) {
   background-color: #F0F1F3;
   border-color: #15263E;
 }
 
-.emotion-20:active:not(:disabled) {
+.emotion-16:active:not(:disabled) {
   background-color: #DEE2E5;
   border-color: #09111C;
 }
 
-.emotion-20:disabled {
+.emotion-16:disabled {
   border-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-20:disabled svg {
+.emotion-16:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-20:focus-visible:not(:disabled) {
+.emotion-16:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2249,14 +2220,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-20:focus-visible:not(:disabled) {
+    .emotion-16:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-20 {
+  .emotion-16 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2264,21 +2235,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-20 {
+  .emotion-16 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-23 {
+.emotion-17 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-23 {
+  .emotion-17 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2286,14 +2257,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-23 {
+  .emotion-17 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-25 {
+.emotion-18 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -2304,32 +2275,37 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: inline-block;
 }
 
-.emotion-25::before {
+.emotion-18::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-25::after {
+.emotion-18::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-27 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-19 {
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 24px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
@@ -2346,50 +2322,20 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   color: #5A6A79;
 }
 
-.emotion-27 svg {
+.emotion-19 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-27 svg {
+.emotion-19 svg {
   fill: #FFFFFF;
 }
 
-.emotion-27:hover:not(:disabled) {
+.emotion-19:hover:not(:disabled) {
   background-color: #F0F1F3;
 }
 
-.emotion-28 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-29 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-30 {
+.emotion-20 {
   margin: 0;
   font-family: 'DM Mono',courier;
   font-size: 14px;
@@ -2399,7 +2345,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: inline-block;
 }
 
-.emotion-30::before {
+.emotion-20::before {
   content: '';
   display: block;
   height: 0;
@@ -2407,7 +2353,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-bottom: -0.4267857142857143em;
 }
 
-.emotion-30::after {
+.emotion-20::after {
   content: '';
   display: block;
   height: 0;
@@ -2415,7 +2361,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-top: -0.3642857142857143em;
 }
 
-.emotion-32 {
+.emotion-22 {
   display: grid;
   -webkit-column-gap: 20px;
   column-gap: 20px;
@@ -2426,29 +2372,29 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-32 {
+  .emotion-22 {
     grid-template-columns: auto 1fr auto auto 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-32 {
+  .emotion-22 {
     grid-template-columns: 276px 1fr auto auto 80px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-32 {
+  .emotion-22 {
     grid-template-areas: "logo menu search github theme";
   }
 }
 
-.emotion-33 {
+.emotion-23 {
   grid-area: logo;
   justify-self: start;
 }
 
-.emotion-34 {
+.emotion-24 {
   display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: none;
@@ -2456,7 +2402,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-34 {
+  .emotion-24 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -2464,38 +2410,38 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-34 {
+  .emotion-24 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-34 svg {
+.emotion-24 svg {
   fill: #3358CC;
 }
 
-.emotion-34:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-34:hover:not(:disabled) svg {
+.emotion-24:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-34:active:not(:disabled) {
+.emotion-24:active:not(:disabled) {
   color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-34:active:not(:disabled) svg {
+.emotion-24:active:not(:disabled) svg {
   fill: #14328D;
 }
 
-.emotion-34:focus-visible:not(:disabled) {
+.emotion-24:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2504,23 +2450,23 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-34:focus-visible:not(:disabled) {
+    .emotion-24:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-39 {
+.emotion-29 {
   grid-area: menu;
   justify-self: start;
 }
 
-.emotion-40 {
+.emotion-30 {
   box-sizing: border-box;
   width: 100%;
 }
 
-.emotion-40>ul {
+.emotion-30>ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
@@ -2532,29 +2478,36 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   width: 100%;
 }
 
-.emotion-40 li:last-of-type {
+.emotion-30 li:last-of-type {
   margin-right: 0;
 }
 
-.emotion-41 {
+.emotion-31 {
   box-sizing: border-box;
   margin-right: 8px;
 }
 
-.emotion-42 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-32 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
+  min-width: 80px;
+  min-height: 80px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 80px;
@@ -2574,6 +2527,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-width: 4px;
   border-style: solid;
   margin: 0;
+  position: relative;
   cursor: pointer;
   color: #3358CC;
   -webkit-text-decoration: none;
@@ -2589,30 +2543,43 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-42 {
+  .emotion-32 {
     margin-inline: 10px;
     padding-inline: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-42 {
+  .emotion-32 {
     padding-inline: 3px;
   }
 }
 
-.emotion-42 svg {
+@media screen and (min-width: 1440px) {
+  .emotion-32 {
+    margin-inline: 10px;
+    padding-inline: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-32 {
+    padding-inline: 3px;
+  }
+}
+
+.emotion-32 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-42:hover:not(:disabled) {
+.emotion-32:hover:not(:disabled) {
   color: #5A6A79;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-42:focus-visible:not(:disabled) {
+.emotion-32:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2621,14 +2588,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-42:focus-visible:not(:disabled) {
+    .emotion-32:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-42 {
+  .emotion-32 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2636,7 +2603,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-42 {
+  .emotion-32 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2644,19 +2611,19 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-42 {
+  .emotion-32 {
     margin-inline: 10px;
     padding-inline: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-42 {
+  .emotion-32 {
     padding-inline: 3px;
   }
 }
 
-.emotion-45 {
+.emotion-33 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2667,32 +2634,39 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: inline-block;
 }
 
-.emotion-45::before {
+.emotion-33::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-45::after {
+.emotion-33::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-47 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-35 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
+  min-width: 80px;
+  min-height: 80px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 80px;
@@ -2712,6 +2686,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-width: 4px;
   border-style: solid;
   margin: 0;
+  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -2721,30 +2696,43 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-47 {
+  .emotion-35 {
     margin-inline: 10px;
     padding-inline: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-47 {
+  .emotion-35 {
     padding-inline: 3px;
   }
 }
 
-.emotion-47 svg {
+@media screen and (min-width: 1440px) {
+  .emotion-35 {
+    margin-inline: 10px;
+    padding-inline: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-35 {
+    padding-inline: 3px;
+  }
+}
+
+.emotion-35 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-47:hover:not(:disabled) {
+.emotion-35:hover:not(:disabled) {
   color: #5A6A79;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-47:focus-visible:not(:disabled) {
+.emotion-35:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2753,14 +2741,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-47:focus-visible:not(:disabled) {
+    .emotion-35:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-47 {
+  .emotion-35 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2768,7 +2756,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-47 {
+  .emotion-35 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2776,44 +2764,155 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-47 {
+  .emotion-35 {
     margin-inline: 10px;
     padding-inline: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-47 {
+  .emotion-35 {
     padding-inline: 3px;
   }
 }
 
-.emotion-66 {
+.emotion-46 {
   grid-area: search;
 }
 
-.emotion-84 {
+.emotion-56 {
   grid-area: github;
 }
 
-.emotion-91 {
-  grid-area: theme;
-}
-
-.emotion-92 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-57 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 130px;
+  height: 40px;
+  min-height: 32px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-width: 130px;
+  height: 40px;
+  padding: 8px 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #2E3F54;
+  border-width: 1px;
+  border-radius: 24px;
+  color: #2E3F54;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.emotion-57 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-57 svg {
+  fill: #2E3F54;
+}
+
+.emotion-57:hover:not(:disabled) {
+  background-color: #F0F1F3;
+  border-color: #15263E;
+}
+
+.emotion-57:active:not(:disabled) {
+  background-color: #DEE2E5;
+  border-color: #09111C;
+}
+
+.emotion-57:disabled {
+  border-color: #DEE2E5;
+  color: #C0C7CC;
+}
+
+.emotion-57:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-57:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-57:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-57 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-57 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-60 {
+  grid-area: theme;
+}
+
+.emotion-61 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -2829,23 +2928,24 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   background-color: #F0F1F3;
   border-radius: 50%;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
-.emotion-92 svg {
+.emotion-61 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-92:hover:not(:disabled) {
+.emotion-61:hover:not(:disabled) {
   background-color: #DEE2E5;
 }
 
-.emotion-92:active:not(:disabled) {
+.emotion-61:active:not(:disabled) {
   background-color: #DEE2E5;
 }
 
-.emotion-92:focus-visible:not(:disabled) {
+.emotion-61:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2854,14 +2954,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-92:focus-visible:not(:disabled) {
+    .emotion-61:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-92 {
+  .emotion-61 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2869,21 +2969,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-92 {
+  .emotion-61 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-95 {
+.emotion-62 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-95 {
+  .emotion-62 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2891,14 +2991,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-95 {
+  .emotion-62 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-95.emotion-95 {
+.emotion-62.emotion-62 {
   width: 16px;
   height: 16px;
 }
@@ -2924,44 +3024,36 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
             tabindex="0"
             type="button"
           >
-            <span
-              class="emotion-5"
+            <svg
+              aria-hidden="true"
+              class="emotion-5 emotion-6"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-7 emotion-8"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
           </button>
         </div>
         <a
-          class="emotion-9"
+          class="emotion-7"
           href="/"
         >
           <span
-            class="emotion-10"
+            class="emotion-8"
           >
             <div
-              class="emotion-11"
+              class="emotion-9"
             >
               <svg
-                class="emotion-12"
+                class="emotion-10"
                 viewBox="0 0 1587 347"
               >
                 <title>
@@ -2977,7 +3069,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     transform="translate(-5.000000, 47.000000)"
                   >
                     <g
-                      class="emotion-13"
+                      class="emotion-11"
                       transform="translate(508.073657, 26.125170)"
                     >
                       <path
@@ -3011,7 +3103,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
           </span>
         </a>
         <div
-          class="emotion-14"
+          class="emotion-12"
         >
           <button
             aria-label="Search"
@@ -3019,83 +3111,51 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
             data-testid="search-icon-button"
             type="button"
           >
-            <span
-              class="emotion-5"
+            <svg
+              aria-hidden="true"
+              class="emotion-14"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-18"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+              />
+            </svg>
           </button>
         </div>
         <div
-          class="emotion-19"
+          class="emotion-15"
         >
           <button
-            class="emotion-20"
+            class="emotion-16"
             data-testid="search-button"
             type="button"
           >
+            <svg
+              aria-hidden="true"
+              class="emotion-17"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+              />
+            </svg>
             <span
-              class="emotion-5"
+              class="emotion-18"
+            >
+              Search
+            </span>
+            <span
+              class="emotion-19"
+              data-testid="flag"
             >
               <span
-                class="emotion-6"
+                class="emotion-20"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-23"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                  />
-                </svg>
-              </span>
-              <span
-                class="emotion-6"
-              >
-                <span
-                  class="emotion-25"
-                >
-                  Search
-                </span>
-              </span>
-              <span
-                class="emotion-6"
-              >
-                <span
-                  class="emotion-27"
-                  data-testid="flag"
-                >
-                  <span
-                    class="emotion-28"
-                  >
-                    <span
-                      class="emotion-29"
-                    >
-                      <span
-                        class="emotion-30"
-                      >
-                        ⌘K
-                      </span>
-                    </span>
-                  </span>
-                </span>
+                ⌘K
               </span>
             </span>
           </button>
@@ -3103,27 +3163,27 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
       </div>
     </div>
     <div
-      class="emotion-19"
+      class="emotion-15"
     >
       <div
-        class="emotion-32"
+        class="emotion-22"
         data-testid="nav-container"
       >
         <div
-          class="emotion-33"
+          class="emotion-23"
         >
           <a
-            class="emotion-34"
+            class="emotion-24"
             href="/"
           >
             <span
-              class="emotion-10"
+              class="emotion-8"
             >
               <div
-                class="emotion-11"
+                class="emotion-9"
               >
                 <svg
-                  class="emotion-12"
+                  class="emotion-10"
                   viewBox="0 0 1587 347"
                 >
                   <title>
@@ -3139,7 +3199,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       transform="translate(-5.000000, 47.000000)"
                     >
                       <g
-                        class="emotion-13"
+                        class="emotion-11"
                         transform="translate(508.073657, 26.125170)"
                       >
                         <path
@@ -3174,11 +3234,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
           </a>
         </div>
         <div
-          class="emotion-39"
+          class="emotion-29"
         >
           <nav
             aria-label="main-navigation"
-            class="emotion-40"
+            class="emotion-30"
             data-testid="menu-container"
             role="navigation"
           >
@@ -3186,122 +3246,82 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
               role="list"
             >
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="page"
-                  class="emotion-42"
+                  class="emotion-32"
                   data-testid="styled-indicator"
                   href="/about/introduction"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        About
-                      </span>
-                    </span>
+                    About
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-47"
+                  class="emotion-35"
                   data-testid="styled-indicator"
                   href="/getting-started/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Guides
-                      </span>
-                    </span>
+                    Guides
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-47"
+                  class="emotion-35"
                   data-testid="styled-indicator"
                   href="/theme/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Theme
-                      </span>
-                    </span>
+                    Theme
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-47"
+                  class="emotion-35"
                   data-testid="styled-indicator"
                   href="/components/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Components
-                      </span>
-                    </span>
+                    Components
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-47"
+                  class="emotion-35"
                   data-testid="styled-indicator"
                   href="/patterns/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Patterns
-                      </span>
-                    </span>
+                    Patterns
                   </span>
                 </a>
               </li>
@@ -3309,10 +3329,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
           </nav>
         </div>
         <div
-          class="emotion-66"
+          class="emotion-46"
         >
           <div
-            class="emotion-14"
+            class="emotion-12"
           >
             <button
               aria-label="Search"
@@ -3320,164 +3340,112 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
               data-testid="search-icon-button"
               type="button"
             >
-              <span
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-14"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <span
-                  class="emotion-6"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-18"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                    />
-                  </svg>
-                </span>
-              </span>
+                <path
+                  d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+                />
+              </svg>
             </button>
           </div>
           <div
-            class="emotion-19"
+            class="emotion-15"
           >
             <button
-              class="emotion-20"
+              class="emotion-16"
               data-testid="search-button"
               type="button"
             >
+              <svg
+                aria-hidden="true"
+                class="emotion-17"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+                />
+              </svg>
               <span
-                class="emotion-5"
+                class="emotion-18"
+              >
+                Search
+              </span>
+              <span
+                class="emotion-19"
+                data-testid="flag"
               >
                 <span
-                  class="emotion-6"
+                  class="emotion-20"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-23"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="emotion-6"
-                >
-                  <span
-                    class="emotion-25"
-                  >
-                    Search
-                  </span>
-                </span>
-                <span
-                  class="emotion-6"
-                >
-                  <span
-                    class="emotion-27"
-                    data-testid="flag"
-                  >
-                    <span
-                      class="emotion-28"
-                    >
-                      <span
-                        class="emotion-29"
-                      >
-                        <span
-                          class="emotion-30"
-                        >
-                          ⌘K
-                        </span>
-                      </span>
-                    </span>
-                  </span>
+                  ⌘K
                 </span>
               </span>
             </button>
           </div>
         </div>
         <div
-          class="emotion-84"
+          class="emotion-56"
         >
           <a
-            class="emotion-20"
+            class="emotion-57"
             data-testid="buttonLink"
             href="https://github.com/newscorp-ghfb/newskit"
             target="_blank"
           >
-            <span
-              class="emotion-5"
+            <svg
+              aria-hidden="true"
+              class="emotion-17"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-23"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                    fill-rule="nonzero"
-                  />
-                </svg>
-              </span>
-              <span
-                class="emotion-6"
-              >
-                <span
-                  class="emotion-25"
-                >
-                  View GitHub
-                </span>
-              </span>
+              <path
+                d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <span
+              class="emotion-18"
+            >
+              View GitHub
             </span>
           </a>
         </div>
         <div
-          class="emotion-91"
+          class="emotion-60"
         >
           <button
             aria-label="Enable dark mode"
             aria-pressed="false"
-            class="emotion-92"
+            class="emotion-61"
             data-testid="theme-switch-button"
             title="Enable dark mode"
             type="button"
           >
-            <span
-              class="emotion-5"
+            <svg
+              class="emotion-62"
+              fill="currentColor"
+              role="img"
+              viewBox="0 0 17 17"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  class="emotion-95"
-                  fill="currentColor"
-                  role="img"
-                  viewBox="0 0 17 17"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Dark icon
-                  </title>
-                  <path
-                    clip-rule="evenodd"
-                    d="M12.7349 0C12.9152 0 13.0614 0.146193 13.0614 0.326531C13.0614 1.76923 14.2309 2.93878 15.6736 2.93878C15.854 2.93878 16.0002 3.08497 16.0002 3.26531V3.59184C16.0002 3.77217 15.854 3.91837 15.6736 3.91837C14.2309 3.91837 13.0614 5.08791 13.0614 6.53061C13.0614 6.71095 12.9152 6.85714 12.7349 6.85714H12.4083C12.228 6.85714 12.0818 6.71095 12.0818 6.53061C12.0818 5.08791 10.9123 3.91837 9.46956 3.91837C9.28922 3.91837 9.14303 3.77217 9.14303 3.59184V3.26531C9.14303 3.08497 9.28922 2.93878 9.46956 2.93878C10.9123 2.93878 12.0818 1.76923 12.0818 0.326531C12.0818 0.146193 12.228 0 12.4083 0H12.7349ZM14.8384 9.78689C15.2381 9.50799 15.8414 9.80867 15.7022 10.2758C14.7157 13.5862 11.6485 16 8.01747 16C3.58955 16 0 12.4105 0 7.98253C0 4.35151 2.41376 1.28426 5.72424 0.29782C6.19133 0.158637 6.49201 0.761872 6.21311 1.16157C5.51277 2.16524 5.10203 3.38598 5.10203 4.70265C5.10203 8.12423 7.87577 10.898 11.2973 10.898C12.614 10.898 13.8348 10.4872 14.8384 9.78689Z"
-                    fill="#577FFB"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </span>
-            </span>
+              <title>
+                Dark icon
+              </title>
+              <path
+                clip-rule="evenodd"
+                d="M12.7349 0C12.9152 0 13.0614 0.146193 13.0614 0.326531C13.0614 1.76923 14.2309 2.93878 15.6736 2.93878C15.854 2.93878 16.0002 3.08497 16.0002 3.26531V3.59184C16.0002 3.77217 15.854 3.91837 15.6736 3.91837C14.2309 3.91837 13.0614 5.08791 13.0614 6.53061C13.0614 6.71095 12.9152 6.85714 12.7349 6.85714H12.4083C12.228 6.85714 12.0818 6.71095 12.0818 6.53061C12.0818 5.08791 10.9123 3.91837 9.46956 3.91837C9.28922 3.91837 9.14303 3.77217 9.14303 3.59184V3.26531C9.14303 3.08497 9.28922 2.93878 9.46956 2.93878C10.9123 2.93878 12.0818 1.76923 12.0818 0.326531C12.0818 0.146193 12.228 0 12.4083 0H12.7349ZM14.8384 9.78689C15.2381 9.50799 15.8414 9.80867 15.7022 10.2758C14.7157 13.5862 11.6485 16 8.01747 16C3.58955 16 0 12.4105 0 7.98253C0 4.35151 2.41376 1.28426 5.72424 0.29782C6.19133 0.158637 6.49201 0.761872 6.21311 1.16157C5.51277 2.16524 5.10203 3.38598 5.10203 4.70265C5.10203 8.12423 7.87577 10.898 11.2973 10.898C12.614 10.898 13.8348 10.4872 14.8384 9.78689Z"
+                fill="#577FFB"
+                fill-rule="evenodd"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -3565,19 +3533,27 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -3594,6 +3570,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -3655,36 +3632,6 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-7 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3695,7 +3642,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3703,14 +3650,14 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7.emotion-7 {
+.emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
   color: #09111C;
@@ -3718,7 +3665,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7.emotion-7 {
+  .emotion-5.emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3726,20 +3673,20 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7.emotion-7 {
+  .emotion-5.emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-9 {
+.emotion-7 {
   display: inline-block;
   color: #2E3F54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -3747,18 +3694,18 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-9 svg {
+.emotion-7 svg {
   fill: #2E3F54;
 }
 
-.emotion-10 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3777,73 +3724,73 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-11 {
+.emotion-9 {
   overflow: hidden;
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-11 {
+  .emotion-9 {
     margin-left: 24px;
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   display: inline-block;
   height: 48px;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-12 {
+  .emotion-10 {
     width: 125px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-12 {
+  .emotion-10 {
     width: 183px;
   }
 }
 
-.emotion-13 {
+.emotion-11 {
   fill: #09111C;
   color: #09111C;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin-bottom: 4px;
 }
 
 @media screen {
-  .emotion-14 {
+  .emotion-12 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-14 {
+  .emotion-12 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-14 {
+  .emotion-12 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-14 {
+  .emotion-12 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-14 {
+  .emotion-12 {
     display: none;
   }
 }
 
-.emotion-18 {
+.emotion-14 {
   color: #09111C;
   fill: #09111C;
   vertical-align: unset;
@@ -3851,7 +3798,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-18 {
+  .emotion-14 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3859,14 +3806,14 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-18 {
+  .emotion-14 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-18.emotion-18 {
+.emotion-14.emotion-14 {
   width: 24px;
   height: 24px;
   color: #09111C;
@@ -3874,7 +3821,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-18.emotion-18 {
+  .emotion-14.emotion-14 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3882,7 +3829,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-18.emotion-18 {
+  .emotion-14.emotion-14 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3890,49 +3837,56 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen {
-  .emotion-19 {
+  .emotion-15 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-19 {
+  .emotion-15 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-19 {
+  .emotion-15 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-19 {
+  .emotion-15 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-19 {
+  .emotion-15 {
     display: block;
   }
 }
 
-.emotion-20 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-16 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(3, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 130px;
+  height: 40px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-width: 130px;
@@ -3952,38 +3906,39 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   border-radius: 24px;
   color: #2E3F54;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
-.emotion-20 svg {
+.emotion-16 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-20 svg {
+.emotion-16 svg {
   fill: #2E3F54;
 }
 
-.emotion-20:hover:not(:disabled) {
+.emotion-16:hover:not(:disabled) {
   background-color: #F0F1F3;
   border-color: #15263E;
 }
 
-.emotion-20:active:not(:disabled) {
+.emotion-16:active:not(:disabled) {
   background-color: #DEE2E5;
   border-color: #09111C;
 }
 
-.emotion-20:disabled {
+.emotion-16:disabled {
   border-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-20:disabled svg {
+.emotion-16:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-20:focus-visible:not(:disabled) {
+.emotion-16:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3992,14 +3947,14 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-20:focus-visible:not(:disabled) {
+    .emotion-16:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-20 {
+  .emotion-16 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4007,21 +3962,21 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-20 {
+  .emotion-16 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-23 {
+.emotion-17 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-23 {
+  .emotion-17 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4029,14 +3984,14 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-23 {
+  .emotion-17 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-25 {
+.emotion-18 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -4047,32 +4002,37 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: inline-block;
 }
 
-.emotion-25::before {
+.emotion-18::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-25::after {
+.emotion-18::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-27 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-19 {
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 24px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
@@ -4089,50 +4049,20 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   color: #5A6A79;
 }
 
-.emotion-27 svg {
+.emotion-19 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-27 svg {
+.emotion-19 svg {
   fill: #FFFFFF;
 }
 
-.emotion-27:hover:not(:disabled) {
+.emotion-19:hover:not(:disabled) {
   background-color: #F0F1F3;
 }
 
-.emotion-28 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-29 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-30 {
+.emotion-20 {
   margin: 0;
   font-family: 'DM Mono',courier;
   font-size: 14px;
@@ -4142,7 +4072,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: inline-block;
 }
 
-.emotion-30::before {
+.emotion-20::before {
   content: '';
   display: block;
   height: 0;
@@ -4150,7 +4080,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin-bottom: -0.4267857142857143em;
 }
 
-.emotion-30::after {
+.emotion-20::after {
   content: '';
   display: block;
   height: 0;
@@ -4158,7 +4088,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin-top: -0.3642857142857143em;
 }
 
-.emotion-32 {
+.emotion-22 {
   display: grid;
   -webkit-column-gap: 20px;
   column-gap: 20px;
@@ -4169,29 +4099,29 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-32 {
+  .emotion-22 {
     grid-template-columns: auto 1fr auto auto 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-32 {
+  .emotion-22 {
     grid-template-columns: 276px 1fr auto auto 80px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-32 {
+  .emotion-22 {
     grid-template-areas: "logo menu search github theme";
   }
 }
 
-.emotion-33 {
+.emotion-23 {
   grid-area: logo;
   justify-self: start;
 }
 
-.emotion-34 {
+.emotion-24 {
   display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: none;
@@ -4199,7 +4129,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-34 {
+  .emotion-24 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -4207,38 +4137,38 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-34 {
+  .emotion-24 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-34 svg {
+.emotion-24 svg {
   fill: #3358CC;
 }
 
-.emotion-34:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-34:hover:not(:disabled) svg {
+.emotion-24:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-34:active:not(:disabled) {
+.emotion-24:active:not(:disabled) {
   color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-34:active:not(:disabled) svg {
+.emotion-24:active:not(:disabled) svg {
   fill: #14328D;
 }
 
-.emotion-34:focus-visible:not(:disabled) {
+.emotion-24:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4247,23 +4177,23 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-34:focus-visible:not(:disabled) {
+    .emotion-24:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-39 {
+.emotion-29 {
   grid-area: menu;
   justify-self: start;
 }
 
-.emotion-40 {
+.emotion-30 {
   box-sizing: border-box;
   width: 100%;
 }
 
-.emotion-40>ul {
+.emotion-30>ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
@@ -4275,29 +4205,36 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   width: 100%;
 }
 
-.emotion-40 li:last-of-type {
+.emotion-30 li:last-of-type {
   margin-right: 0;
 }
 
-.emotion-41 {
+.emotion-31 {
   box-sizing: border-box;
   margin-right: 8px;
 }
 
-.emotion-42 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-32 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
+  min-width: 80px;
+  min-height: 80px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 80px;
@@ -4317,6 +4254,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   border-width: 4px;
   border-style: solid;
   margin: 0;
+  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -4326,30 +4264,43 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-42 {
+  .emotion-32 {
     margin-inline: 10px;
     padding-inline: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-42 {
+  .emotion-32 {
     padding-inline: 3px;
   }
 }
 
-.emotion-42 svg {
+@media screen and (min-width: 1440px) {
+  .emotion-32 {
+    margin-inline: 10px;
+    padding-inline: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-32 {
+    padding-inline: 3px;
+  }
+}
+
+.emotion-32 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-42:hover:not(:disabled) {
+.emotion-32:hover:not(:disabled) {
   color: #5A6A79;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-42:focus-visible:not(:disabled) {
+.emotion-32:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4358,14 +4309,14 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-42:focus-visible:not(:disabled) {
+    .emotion-32:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-42 {
+  .emotion-32 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4373,7 +4324,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-42 {
+  .emotion-32 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4381,19 +4332,19 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-42 {
+  .emotion-32 {
     margin-inline: 10px;
     padding-inline: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-42 {
+  .emotion-32 {
     padding-inline: 3px;
   }
 }
 
-.emotion-45 {
+.emotion-33 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -4404,44 +4355,155 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: inline-block;
 }
 
-.emotion-45::before {
+.emotion-33::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-45::after {
+.emotion-33::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-66 {
+.emotion-46 {
   grid-area: search;
 }
 
-.emotion-84 {
+.emotion-56 {
   grid-area: github;
 }
 
-.emotion-91 {
-  grid-area: theme;
-}
-
-.emotion-92 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-57 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 130px;
+  height: 40px;
+  min-height: 32px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-width: 130px;
+  height: 40px;
+  padding: 8px 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #2E3F54;
+  border-width: 1px;
+  border-radius: 24px;
+  color: #2E3F54;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.emotion-57 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-57 svg {
+  fill: #2E3F54;
+}
+
+.emotion-57:hover:not(:disabled) {
+  background-color: #F0F1F3;
+  border-color: #15263E;
+}
+
+.emotion-57:active:not(:disabled) {
+  background-color: #DEE2E5;
+  border-color: #09111C;
+}
+
+.emotion-57:disabled {
+  border-color: #DEE2E5;
+  color: #C0C7CC;
+}
+
+.emotion-57:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-57:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-57:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-57 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-57 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-60 {
+  grid-area: theme;
+}
+
+.emotion-61 {
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -4457,23 +4519,24 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   background-color: #F0F1F3;
   border-radius: 50%;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
-.emotion-92 svg {
+.emotion-61 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-92:hover:not(:disabled) {
+.emotion-61:hover:not(:disabled) {
   background-color: #DEE2E5;
 }
 
-.emotion-92:active:not(:disabled) {
+.emotion-61:active:not(:disabled) {
   background-color: #DEE2E5;
 }
 
-.emotion-92:focus-visible:not(:disabled) {
+.emotion-61:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4482,14 +4545,14 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-92:focus-visible:not(:disabled) {
+    .emotion-61:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-92 {
+  .emotion-61 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4497,21 +4560,21 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-92 {
+  .emotion-61 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-95 {
+.emotion-62 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-95 {
+  .emotion-62 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4519,14 +4582,14 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-95 {
+  .emotion-62 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-95.emotion-95 {
+.emotion-62.emotion-62 {
   width: 16px;
   height: 16px;
 }
@@ -4552,44 +4615,36 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
             tabindex="0"
             type="button"
           >
-            <span
-              class="emotion-5"
+            <svg
+              aria-hidden="true"
+              class="emotion-5 emotion-6"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-7 emotion-8"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
           </button>
         </div>
         <a
-          class="emotion-9"
+          class="emotion-7"
           href="/"
         >
           <span
-            class="emotion-10"
+            class="emotion-8"
           >
             <div
-              class="emotion-11"
+              class="emotion-9"
             >
               <svg
-                class="emotion-12"
+                class="emotion-10"
                 viewBox="0 0 1587 347"
               >
                 <title>
@@ -4605,7 +4660,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     transform="translate(-5.000000, 47.000000)"
                   >
                     <g
-                      class="emotion-13"
+                      class="emotion-11"
                       transform="translate(508.073657, 26.125170)"
                     >
                       <path
@@ -4639,7 +4694,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
           </span>
         </a>
         <div
-          class="emotion-14"
+          class="emotion-12"
         >
           <button
             aria-label="Search"
@@ -4647,83 +4702,51 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
             data-testid="search-icon-button"
             type="button"
           >
-            <span
-              class="emotion-5"
+            <svg
+              aria-hidden="true"
+              class="emotion-14"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-18"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+              />
+            </svg>
           </button>
         </div>
         <div
-          class="emotion-19"
+          class="emotion-15"
         >
           <button
-            class="emotion-20"
+            class="emotion-16"
             data-testid="search-button"
             type="button"
           >
+            <svg
+              aria-hidden="true"
+              class="emotion-17"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+              />
+            </svg>
             <span
-              class="emotion-5"
+              class="emotion-18"
+            >
+              Search
+            </span>
+            <span
+              class="emotion-19"
+              data-testid="flag"
             >
               <span
-                class="emotion-6"
+                class="emotion-20"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-23"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                  />
-                </svg>
-              </span>
-              <span
-                class="emotion-6"
-              >
-                <span
-                  class="emotion-25"
-                >
-                  Search
-                </span>
-              </span>
-              <span
-                class="emotion-6"
-              >
-                <span
-                  class="emotion-27"
-                  data-testid="flag"
-                >
-                  <span
-                    class="emotion-28"
-                  >
-                    <span
-                      class="emotion-29"
-                    >
-                      <span
-                        class="emotion-30"
-                      >
-                        ⌘K
-                      </span>
-                    </span>
-                  </span>
-                </span>
+                ⌘K
               </span>
             </span>
           </button>
@@ -4731,27 +4754,27 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
       </div>
     </div>
     <div
-      class="emotion-19"
+      class="emotion-15"
     >
       <div
-        class="emotion-32"
+        class="emotion-22"
         data-testid="nav-container"
       >
         <div
-          class="emotion-33"
+          class="emotion-23"
         >
           <a
-            class="emotion-34"
+            class="emotion-24"
             href="/"
           >
             <span
-              class="emotion-10"
+              class="emotion-8"
             >
               <div
-                class="emotion-11"
+                class="emotion-9"
               >
                 <svg
-                  class="emotion-12"
+                  class="emotion-10"
                   viewBox="0 0 1587 347"
                 >
                   <title>
@@ -4767,7 +4790,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       transform="translate(-5.000000, 47.000000)"
                     >
                       <g
-                        class="emotion-13"
+                        class="emotion-11"
                         transform="translate(508.073657, 26.125170)"
                       >
                         <path
@@ -4802,11 +4825,11 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
           </a>
         </div>
         <div
-          class="emotion-39"
+          class="emotion-29"
         >
           <nav
             aria-label="main-navigation"
-            class="emotion-40"
+            class="emotion-30"
             data-testid="menu-container"
             role="navigation"
           >
@@ -4814,122 +4837,82 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
               role="list"
             >
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-42"
+                  class="emotion-32"
                   data-testid="styled-indicator"
                   href="/about/introduction"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        About
-                      </span>
-                    </span>
+                    About
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-42"
+                  class="emotion-32"
                   data-testid="styled-indicator"
                   href="/getting-started/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Guides
-                      </span>
-                    </span>
+                    Guides
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-42"
+                  class="emotion-32"
                   data-testid="styled-indicator"
                   href="/theme/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Theme
-                      </span>
-                    </span>
+                    Theme
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-42"
+                  class="emotion-32"
                   data-testid="styled-indicator"
                   href="/components/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Components
-                      </span>
-                    </span>
+                    Components
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item emotion-41"
+                class="nk-menu-item emotion-31"
               >
                 <a
                   aria-current="false"
-                  class="emotion-42"
+                  class="emotion-32"
                   data-testid="styled-indicator"
                   href="/patterns/overview"
                 >
                   <span
-                    class="emotion-5"
+                    class="emotion-33"
                   >
-                    <span
-                      class="emotion-6"
-                    >
-                      <span
-                        class="emotion-45"
-                      >
-                        Patterns
-                      </span>
-                    </span>
+                    Patterns
                   </span>
                 </a>
               </li>
@@ -4937,10 +4920,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
           </nav>
         </div>
         <div
-          class="emotion-66"
+          class="emotion-46"
         >
           <div
-            class="emotion-14"
+            class="emotion-12"
           >
             <button
               aria-label="Search"
@@ -4948,164 +4931,112 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
               data-testid="search-icon-button"
               type="button"
             >
-              <span
-                class="emotion-5"
+              <svg
+                aria-hidden="true"
+                class="emotion-14"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <span
-                  class="emotion-6"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-18"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                    />
-                  </svg>
-                </span>
-              </span>
+                <path
+                  d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+                />
+              </svg>
             </button>
           </div>
           <div
-            class="emotion-19"
+            class="emotion-15"
           >
             <button
-              class="emotion-20"
+              class="emotion-16"
               data-testid="search-button"
               type="button"
             >
+              <svg
+                aria-hidden="true"
+                class="emotion-17"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+                />
+              </svg>
               <span
-                class="emotion-5"
+                class="emotion-18"
+              >
+                Search
+              </span>
+              <span
+                class="emotion-19"
+                data-testid="flag"
               >
                 <span
-                  class="emotion-6"
+                  class="emotion-20"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-23"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="emotion-6"
-                >
-                  <span
-                    class="emotion-25"
-                  >
-                    Search
-                  </span>
-                </span>
-                <span
-                  class="emotion-6"
-                >
-                  <span
-                    class="emotion-27"
-                    data-testid="flag"
-                  >
-                    <span
-                      class="emotion-28"
-                    >
-                      <span
-                        class="emotion-29"
-                      >
-                        <span
-                          class="emotion-30"
-                        >
-                          ⌘K
-                        </span>
-                      </span>
-                    </span>
-                  </span>
+                  ⌘K
                 </span>
               </span>
             </button>
           </div>
         </div>
         <div
-          class="emotion-84"
+          class="emotion-56"
         >
           <a
-            class="emotion-20"
+            class="emotion-57"
             data-testid="buttonLink"
             href="https://github.com/newscorp-ghfb/newskit"
             target="_blank"
           >
-            <span
-              class="emotion-5"
+            <svg
+              aria-hidden="true"
+              class="emotion-17"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-23"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                    fill-rule="nonzero"
-                  />
-                </svg>
-              </span>
-              <span
-                class="emotion-6"
-              >
-                <span
-                  class="emotion-25"
-                >
-                  View GitHub
-                </span>
-              </span>
+              <path
+                d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <span
+              class="emotion-18"
+            >
+              View GitHub
             </span>
           </a>
         </div>
         <div
-          class="emotion-91"
+          class="emotion-60"
         >
           <button
             aria-label="Enable dark mode"
             aria-pressed="false"
-            class="emotion-92"
+            class="emotion-61"
             data-testid="theme-switch-button"
             title="Enable dark mode"
             type="button"
           >
-            <span
-              class="emotion-5"
+            <svg
+              class="emotion-62"
+              fill="currentColor"
+              role="img"
+              viewBox="0 0 17 17"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-6"
-              >
-                <svg
-                  class="emotion-95"
-                  fill="currentColor"
-                  role="img"
-                  viewBox="0 0 17 17"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Dark icon
-                  </title>
-                  <path
-                    clip-rule="evenodd"
-                    d="M12.7349 0C12.9152 0 13.0614 0.146193 13.0614 0.326531C13.0614 1.76923 14.2309 2.93878 15.6736 2.93878C15.854 2.93878 16.0002 3.08497 16.0002 3.26531V3.59184C16.0002 3.77217 15.854 3.91837 15.6736 3.91837C14.2309 3.91837 13.0614 5.08791 13.0614 6.53061C13.0614 6.71095 12.9152 6.85714 12.7349 6.85714H12.4083C12.228 6.85714 12.0818 6.71095 12.0818 6.53061C12.0818 5.08791 10.9123 3.91837 9.46956 3.91837C9.28922 3.91837 9.14303 3.77217 9.14303 3.59184V3.26531C9.14303 3.08497 9.28922 2.93878 9.46956 2.93878C10.9123 2.93878 12.0818 1.76923 12.0818 0.326531C12.0818 0.146193 12.228 0 12.4083 0H12.7349ZM14.8384 9.78689C15.2381 9.50799 15.8414 9.80867 15.7022 10.2758C14.7157 13.5862 11.6485 16 8.01747 16C3.58955 16 0 12.4105 0 7.98253C0 4.35151 2.41376 1.28426 5.72424 0.29782C6.19133 0.158637 6.49201 0.761872 6.21311 1.16157C5.51277 2.16524 5.10203 3.38598 5.10203 4.70265C5.10203 8.12423 7.87577 10.898 11.2973 10.898C12.614 10.898 13.8348 10.4872 14.8384 9.78689Z"
-                    fill="#577FFB"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </span>
-            </span>
+              <title>
+                Dark icon
+              </title>
+              <path
+                clip-rule="evenodd"
+                d="M12.7349 0C12.9152 0 13.0614 0.146193 13.0614 0.326531C13.0614 1.76923 14.2309 2.93878 15.6736 2.93878C15.854 2.93878 16.0002 3.08497 16.0002 3.26531V3.59184C16.0002 3.77217 15.854 3.91837 15.6736 3.91837C14.2309 3.91837 13.0614 5.08791 13.0614 6.53061C13.0614 6.71095 12.9152 6.85714 12.7349 6.85714H12.4083C12.228 6.85714 12.0818 6.71095 12.0818 6.53061C12.0818 5.08791 10.9123 3.91837 9.46956 3.91837C9.28922 3.91837 9.14303 3.77217 9.14303 3.59184V3.26531C9.14303 3.08497 9.28922 2.93878 9.46956 2.93878C10.9123 2.93878 12.0818 1.76923 12.0818 0.326531C12.0818 0.146193 12.228 0 12.4083 0H12.7349ZM14.8384 9.78689C15.2381 9.50799 15.8414 9.80867 15.7022 10.2758C14.7157 13.5862 11.6485 16 8.01747 16C3.58955 16 0 12.4105 0 7.98253C0 4.35151 2.41376 1.28426 5.72424 0.29782C6.19133 0.158637 6.49201 0.761872 6.21311 1.16157C5.51277 2.16524 5.10203 3.38598 5.10203 4.70265C5.10203 8.12423 7.87577 10.898 11.2973 10.898C12.614 10.898 13.8348 10.4872 14.8384 9.78689Z"
+                fill="#577FFB"
+                fill-rule="evenodd"
+              />
+            </svg>
           </button>
         </div>
       </div>

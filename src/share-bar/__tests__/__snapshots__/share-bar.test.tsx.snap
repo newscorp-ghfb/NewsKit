@@ -1020,19 +1020,25 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-12 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
@@ -1049,6 +1055,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -1110,27 +1117,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-15 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1141,13 +1127,13 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   display: inline-block;
 }
 
-.emotion-15::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-15::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1228,15 +1214,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
           <span
             class="emotion-13"
           >
-            <span
-              class="emotion-3"
-            >
-              <span
-                class="emotion-15"
-              >
-                more options
-              </span>
-            </span>
+            more options
           </span>
         </button>
       </div>
@@ -1452,19 +1430,25 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-12 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
@@ -1481,6 +1465,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -1542,27 +1527,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-15 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1573,13 +1537,13 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   display: inline-block;
 }
 
-.emotion-15::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-15::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1660,15 +1624,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
           <span
             class="emotion-13"
           >
-            <span
-              class="emotion-3"
-            >
-              <span
-                class="emotion-15"
-              >
-                more options
-              </span>
-            </span>
+            more options
           </span>
         </button>
       </div>
@@ -1879,19 +1835,25 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-12 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
@@ -1908,6 +1870,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -1969,27 +1932,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-15 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2000,13 +1942,13 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   display: inline-block;
 }
 
-.emotion-15::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-15::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2087,15 +2029,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
           <span
             class="emotion-13"
           >
-            <span
-              class="emotion-3"
-            >
-              <span
-                class="emotion-15"
-              >
-                more options
-              </span>
-            </span>
+            more options
           </span>
         </button>
       </div>
@@ -2306,19 +2240,25 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 .emotion-12 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
@@ -2335,6 +2275,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -2396,27 +2337,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 .emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-15 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2427,13 +2347,13 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   display: inline-block;
 }
 
-.emotion-15::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-15::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2514,15 +2434,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
           <span
             class="emotion-13"
           >
-            <span
-              class="emotion-3"
-            >
-              <span
-                class="emotion-15"
-              >
-                more options
-              </span>
-            </span>
+            more options
           </span>
         </button>
       </div>
@@ -2787,19 +2699,25 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 .emotion-12 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
@@ -2816,6 +2734,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -2877,36 +2796,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 .emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-14 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-15 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2917,13 +2806,13 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   display: inline-block;
 }
 
-.emotion-15::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-15::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3004,15 +2893,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
           <span
             class="emotion-13"
           >
-            <span
-              class="emotion-14"
-            >
-              <span
-                class="emotion-15"
-              >
-                more options
-              </span>
-            </span>
+            more options
           </span>
         </button>
       </div>
@@ -3223,19 +3104,25 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 }
 
 .emotion-12 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
@@ -3252,6 +3139,7 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -3313,36 +3201,6 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 }
 
 .emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-14 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-15 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3353,13 +3211,13 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   display: inline-block;
 }
 
-.emotion-15::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-15::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3440,15 +3298,7 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
           <span
             class="emotion-13"
           >
-            <span
-              class="emotion-14"
-            >
-              <span
-                class="emotion-15"
-              >
-                more options
-              </span>
-            </span>
+            more options
           </span>
         </button>
       </div>
@@ -3659,19 +3509,25 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 .emotion-12 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
@@ -3688,6 +3544,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -3749,36 +3606,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 .emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-14 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-15 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3789,13 +3616,13 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   display: inline-block;
 }
 
-.emotion-15::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-15::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3876,15 +3703,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
           <span
             class="emotion-13"
           >
-            <span
-              class="emotion-14"
-            >
-              <span
-                class="emotion-15"
-              >
-                more options
-              </span>
-            </span>
+            more options
           </span>
         </button>
       </div>

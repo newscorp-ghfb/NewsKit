@@ -1929,6 +1929,7 @@ Object {
       "loadingIndicator": Object {
         "stylePreset": "indeterminateProgressIndicatorPrimary",
       },
+      "minWidth": "sizing090",
       "spaceInset": "spaceInset040",
       "stylePreset": "iconButtonSolidPrimary",
       "width": "sizing090",
@@ -1938,6 +1939,7 @@ Object {
       "loadingIndicator": Object {
         "stylePreset": "indeterminateProgressIndicatorPrimary",
       },
+      "minWidth": "sizing080",
       "spaceInset": "spaceInset030",
       "stylePreset": "iconButtonSolidPrimary",
       "width": "sizing080",
@@ -1947,6 +1949,7 @@ Object {
       "loadingIndicator": Object {
         "stylePreset": "indeterminateProgressIndicatorPrimary",
       },
+      "minWidth": "sizing060",
       "spaceInset": "spaceInset020",
       "stylePreset": "iconButtonSolidPrimary",
       "width": "sizing060",

@@ -9,7 +9,7 @@ import {
 
 import {BaseFlagProps, BaseFlagOverrides} from './types';
 
-export const StyledBaseFlag = styled(GridLayout)<
+export const StyledGridLayout = styled(GridLayout)<
   Omit<BaseFlagProps<BaseFlagOverrides>, 'loading'> & {
     $loading?: BaseFlagProps<BaseFlagOverrides>['loading'];
     $disabled?: BaseFlagProps<BaseFlagOverrides>['disabled'];

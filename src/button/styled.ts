@@ -8,7 +8,7 @@ export const StyledFlag = styled(BaseFlag)<
   Omit<ButtonOrButtonLinkProps, 'size'>
 >`
   margin: 0; //reset for safari
-
+  position: relative;
   ${({size}) => getTransitionPreset(`button.${size}`, '')}
   ${({loading, disabled}) => {
     if (disabled) {
@@ -17,8 +17,7 @@ export const StyledFlag = styled(BaseFlag)<
     const cursor = loading ? 'progress' : 'pointer';
     return {cursor};
   }}
-
-  ${({size}) =>
+      ${({size}) =>
     logicalProps(
       `button.${size}`,
     )}; // needs to be used in here as well, even though Flag uses it itself

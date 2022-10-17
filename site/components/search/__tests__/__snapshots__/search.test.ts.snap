@@ -37,19 +37,27 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-1 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -66,6 +74,7 @@ exports[`Search renders correctly 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -127,36 +136,6 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-4 {
   color: #09111C;
   fill: #09111C;
   vertical-align: unset;
@@ -164,7 +143,7 @@ exports[`Search renders correctly 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -172,14 +151,14 @@ exports[`Search renders correctly 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4.emotion-4 {
+.emotion-2.emotion-2 {
   width: 24px;
   height: 24px;
   color: #09111C;
@@ -187,7 +166,7 @@ exports[`Search renders correctly 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4.emotion-4 {
+  .emotion-2.emotion-2 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -195,7 +174,7 @@ exports[`Search renders correctly 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4.emotion-4 {
+  .emotion-2.emotion-2 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -211,25 +190,17 @@ exports[`Search renders correctly 1`] = `
       data-testid="search-icon-button"
       type="button"
     >
-      <span
+      <svg
+        aria-hidden="true"
         class="emotion-2"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <span
-          class="emotion-3"
-        >
-          <svg
-            aria-hidden="true"
-            class="emotion-4"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-            />
-          </svg>
-        </span>
-      </span>
+        <path
+          d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+        />
+      </svg>
     </button>
   </div>
   @media screen {
@@ -263,19 +234,26 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-1 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(3, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 130px;
+  height: 40px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-width: 130px;
@@ -295,6 +273,7 @@ exports[`Search renders correctly 1`] = `
   border-radius: 24px;
   color: #2E3F54;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -358,43 +337,13 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-4 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -402,14 +351,14 @@ exports[`Search renders correctly 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-6 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -420,32 +369,37 @@ exports[`Search renders correctly 1`] = `
   display: inline-block;
 }
 
-.emotion-6::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-4 {
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 24px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
@@ -462,50 +416,20 @@ exports[`Search renders correctly 1`] = `
   color: #5A6A79;
 }
 
-.emotion-8 svg {
+.emotion-4 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-8 svg {
+.emotion-4 svg {
   fill: #FFFFFF;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #F0F1F3;
 }
 
-.emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-11 {
+.emotion-5 {
   margin: 0;
   font-family: 'DM Mono',courier;
   font-size: 14px;
@@ -515,7 +439,7 @@ exports[`Search renders correctly 1`] = `
   display: inline-block;
 }
 
-.emotion-11::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -523,7 +447,7 @@ exports[`Search renders correctly 1`] = `
   margin-bottom: -0.4267857142857143em;
 }
 
-.emotion-11::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -539,54 +463,30 @@ exports[`Search renders correctly 1`] = `
       data-testid="search-button"
       type="button"
     >
-      <span
+      <svg
+        aria-hidden="true"
         class="emotion-2"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+        />
+      </svg>
+      <span
+        class="emotion-3"
+      >
+        Search
+      </span>
+      <span
+        class="emotion-4"
+        data-testid="flag"
       >
         <span
-          class="emotion-3"
+          class="emotion-5"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-            />
-          </svg>
-        </span>
-        <span
-          class="emotion-3"
-        >
-          <span
-            class="emotion-6"
-          >
-            Search
-          </span>
-        </span>
-        <span
-          class="emotion-3"
-        >
-          <span
-            class="emotion-8"
-            data-testid="flag"
-          >
-            <span
-              class="emotion-9"
-            >
-              <span
-                class="emotion-10"
-              >
-                <span
-                  class="emotion-11"
-                >
-                  ⌘K
-                </span>
-              </span>
-            </span>
-          </span>
+          ⌘K
         </span>
       </span>
     </button>

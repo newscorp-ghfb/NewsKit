@@ -312,19 +312,27 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
 }
 
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -341,6 +349,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -402,36 +411,6 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -441,7 +420,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -449,7 +428,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -520,30 +499,22 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-9"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-11 emotion-12"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -866,19 +837,27 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -895,6 +874,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -956,36 +936,6 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -995,7 +945,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1003,7 +953,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1067,30 +1017,22 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
               data-testid="button"
               type="button"
             >
-              <span
-                class="emotion-9"
+              <svg
+                aria-hidden="true"
+                class="emotion-9 emotion-10"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </span>
-              </span>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
             </button>
           </div>
         </div>
@@ -1419,19 +1361,27 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -1448,6 +1398,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -1509,36 +1460,6 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1548,7 +1469,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1556,7 +1477,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1620,30 +1541,22 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
               data-testid="button"
               type="button"
             >
-              <span
-                class="emotion-9"
+              <svg
+                aria-hidden="true"
+                class="emotion-9 emotion-10"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </span>
-              </span>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
             </button>
           </div>
         </div>
@@ -1970,19 +1883,27 @@ exports[`Drawer render inline-drawer 1`] = `
 }
 
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -1999,6 +1920,7 @@ exports[`Drawer render inline-drawer 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -2060,36 +1982,6 @@ exports[`Drawer render inline-drawer 1`] = `
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2099,7 +1991,7 @@ exports[`Drawer render inline-drawer 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2107,7 +1999,7 @@ exports[`Drawer render inline-drawer 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2171,30 +2063,22 @@ exports[`Drawer render inline-drawer 1`] = `
               data-testid="button"
               type="button"
             >
-              <span
-                class="emotion-9"
+              <svg
+                aria-hidden="true"
+                class="emotion-9 emotion-10"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </span>
-              </span>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
             </button>
           </div>
         </div>
@@ -2423,19 +2307,27 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -2452,6 +2344,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -2513,36 +2406,6 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2552,7 +2415,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2560,7 +2423,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2617,30 +2480,22 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
                 tabindex="-1"
                 type="button"
               >
-                <span
-                  class="emotion-6"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-6 emotion-7"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-7"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-8 emotion-9"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -2967,19 +2822,27 @@ exports[`Drawer renders default 1`] = `
 }
 
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -2996,6 +2859,7 @@ exports[`Drawer renders default 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -3057,36 +2921,6 @@ exports[`Drawer renders default 1`] = `
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3096,7 +2930,7 @@ exports[`Drawer renders default 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3104,7 +2938,7 @@ exports[`Drawer renders default 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3175,30 +3009,22 @@ exports[`Drawer renders default 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-9"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-11 emotion-12"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -3477,19 +3303,27 @@ exports[`Drawer renders drawer with overrides 1`] = `
 }
 
 .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -3508,6 +3342,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -3541,36 +3376,6 @@ exports[`Drawer renders drawer with overrides 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3580,7 +3385,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3588,7 +3393,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3650,30 +3455,22 @@ exports[`Drawer renders drawer with overrides 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-7"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-7 emotion-8"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-8"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-9 emotion-10"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -4013,19 +3810,27 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 }
 
 .emotion-9 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -4042,6 +3847,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -4103,36 +3909,6 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 }
 
 .emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-11 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-12 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4142,7 +3918,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-10 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4150,14 +3926,14 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-10 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-14 {
+.emotion-12 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -4238,34 +4014,26 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
                   data-testid="button"
                   type="button"
                 >
-                  <span
-                    class="emotion-10"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-10 emotion-11"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <span
-                      class="emotion-11"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-12 emotion-13"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                        />
-                      </svg>
-                    </span>
-                  </span>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
                 </button>
               </div>
               <span
-                class="emotion-14"
+                class="emotion-12"
                 id="mock-nk-1"
               >
                 With the next tab you will be leaving the dialog window.
@@ -4591,19 +4359,27 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -4620,6 +4396,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -4681,36 +4458,6 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4720,7 +4467,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4728,7 +4475,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4794,30 +4541,22 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-7"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-7 emotion-8"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-8"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-9 emotion-10"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -5119,19 +4858,27 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -5148,6 +4895,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -5209,36 +4957,6 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -5248,7 +4966,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5256,7 +4974,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5324,30 +5042,22 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-6"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-6 emotion-7"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-7"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-8 emotion-9"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -5674,19 +5384,27 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 }
 
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -5703,6 +5421,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -5764,36 +5483,6 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -5803,7 +5492,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5811,7 +5500,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5882,30 +5571,22 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-9"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-11 emotion-12"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -6232,19 +5913,27 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 }
 
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -6261,6 +5950,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -6322,36 +6012,6 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -6361,7 +6021,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6369,7 +6029,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6440,30 +6100,22 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-9"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-11 emotion-12"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -6790,19 +6442,27 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 }
 
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -6819,6 +6479,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -6880,36 +6541,6 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -6919,7 +6550,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6927,7 +6558,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6998,30 +6629,22 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-9"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-11 emotion-12"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -7348,19 +6971,27 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 }
 
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -7377,6 +7008,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -7438,36 +7070,6 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -7477,7 +7079,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7485,7 +7087,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-9 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7556,30 +7158,22 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-9"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-10"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-11 emotion-12"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -8253,19 +7847,27 @@ exports[`Drawer renders without header 1`] = `
 }
 
 .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -8282,6 +7884,7 @@ exports[`Drawer renders without header 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -8343,36 +7946,6 @@ exports[`Drawer renders without header 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -8382,7 +7955,7 @@ exports[`Drawer renders without header 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8390,7 +7963,7 @@ exports[`Drawer renders without header 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8452,30 +8025,22 @@ exports[`Drawer renders without header 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-7"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-7 emotion-8"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-8"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-9 emotion-10"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -9051,19 +8616,27 @@ exports[`Drawer renders without overlay 1`] = `
 }
 
 .emotion-7 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -9080,6 +8653,7 @@ exports[`Drawer renders without overlay 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -9141,36 +8715,6 @@ exports[`Drawer renders without overlay 1`] = `
 }
 
 .emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-10 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -9180,7 +8724,7 @@ exports[`Drawer renders without overlay 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-10 {
+  .emotion-8 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9188,7 +8732,7 @@ exports[`Drawer renders without overlay 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-10 {
+  .emotion-8 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9255,30 +8799,22 @@ exports[`Drawer renders without overlay 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-8"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-8 emotion-9"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-9"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-10 emotion-11"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -9586,19 +9122,27 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -9615,6 +9159,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -9676,36 +9221,6 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -9715,7 +9230,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9723,7 +9238,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9781,30 +9296,22 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
                 data-testid="button"
                 type="button"
               >
-                <span
-                  class="emotion-6"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-6 emotion-7"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-7"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-8 emotion-9"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -10031,19 +9538,27 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -10060,6 +9575,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -10121,36 +9637,6 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 .emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-7 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -10160,7 +9646,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -10168,7 +9654,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -10221,30 +9707,22 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
                 tabindex="-1"
                 type="button"
               >
-                <span
-                  class="emotion-5"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-5 emotion-6"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="emotion-6"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-7 emotion-8"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </span>
-                </span>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </button>
             </div>
           </div>

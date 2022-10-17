@@ -3,19 +3,27 @@
 exports[`IconButton renders Icon Button in loading State 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
+  min-height: 64px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 64px;
@@ -32,6 +40,7 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: progress;
 }
 
@@ -61,42 +70,12 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   width: 32px;
   height: 32px;
   stroke: #3358CC;
 }
 
-.emotion-3 circle {
+.emotion-1 circle {
   r: calc(50% - 2px);
   fill: transparent;
   stroke-width: 2px;
@@ -122,26 +101,18 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
     data-testid="button"
     type="button"
   >
-    <span
+    <svg
+      aria-hidden="true"
       class="emotion-1"
+      fill="currentColor"
+      viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3"
-          fill="currentColor"
-          viewBox="0 0 64 64"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="50%"
-            cy="50%"
-          />
-        </svg>
-      </span>
-    </span>
+      <circle
+        cx="50%"
+        cy="50%"
+      />
+    </svg>
   </button>
 </DocumentFragment>
 `;
@@ -149,19 +120,27 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
 exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -178,6 +157,7 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -239,36 +219,6 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -278,7 +228,7 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -286,7 +236,7 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -298,30 +248,22 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
     data-testid="button"
     type="button"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
-    </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
   </button>
 </DocumentFragment>
 `;
@@ -329,19 +271,27 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 exports[`IconButton renders Large Icon Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
+  min-height: 64px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 64px;
@@ -358,6 +308,7 @@ exports[`IconButton renders Large Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -419,36 +370,6 @@ exports[`IconButton renders Large Icon Button 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -458,7 +379,7 @@ exports[`IconButton renders Large Icon Button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -466,7 +387,7 @@ exports[`IconButton renders Large Icon Button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -479,30 +400,22 @@ exports[`IconButton renders Large Icon Button 1`] = `
     data-testid="button"
     type="button"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
-    </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
   </button>
 </DocumentFragment>
 `;
@@ -510,19 +423,27 @@ exports[`IconButton renders Large Icon Button 1`] = `
 exports[`IconButton renders Medium Icon Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 48px;
@@ -539,6 +460,7 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -600,36 +522,6 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -639,7 +531,7 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -647,7 +539,7 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -660,30 +552,22 @@ exports[`IconButton renders Medium Icon Button 1`] = `
     data-testid="button"
     type="button"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
-    </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
   </button>
 </DocumentFragment>
 `;
@@ -691,19 +575,27 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 exports[`IconButton renders Small Icon Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -720,6 +612,7 @@ exports[`IconButton renders Small Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -781,36 +674,6 @@ exports[`IconButton renders Small Icon Button 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -820,7 +683,7 @@ exports[`IconButton renders Small Icon Button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -828,7 +691,7 @@ exports[`IconButton renders Small Icon Button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -841,30 +704,22 @@ exports[`IconButton renders Small Icon Button 1`] = `
     data-testid="button"
     type="button"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
-    </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
   </button>
 </DocumentFragment>
 `;
@@ -872,19 +727,27 @@ exports[`IconButton renders Small Icon Button 1`] = `
 exports[`IconButton renders icon button link when href passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -901,6 +764,7 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -962,36 +826,6 @@ exports[`IconButton renders icon button link when href passed 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1001,7 +835,7 @@ exports[`IconButton renders icon button link when href passed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1009,7 +843,7 @@ exports[`IconButton renders icon button link when href passed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1022,30 +856,22 @@ exports[`IconButton renders icon button link when href passed 1`] = `
     data-testid="buttonLink"
     href="http://localhost:6006"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
-    </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
   </a>
 </DocumentFragment>
 `;
@@ -1053,19 +879,29 @@ exports[`IconButton renders icon button link when href passed 1`] = `
 exports[`IconButton renders icon button with logical prop overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  margin-block: 30px;
+  padding-inline: 20px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -1084,6 +920,7 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
   cursor: pointer;
   margin-block: 30px;
   padding-inline: 20px;
@@ -1147,36 +984,6 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1186,7 +993,7 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1194,7 +1001,7 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1207,30 +1014,22 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
     data-testid="button"
     type="button"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
-    </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
   </button>
 </DocumentFragment>
 `;
@@ -1238,19 +1037,27 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
 exports[`IconButton renders with different style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 32px;
@@ -1270,6 +1077,7 @@ exports[`IconButton renders with different style preset 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
+  position: relative;
   cursor: pointer;
 }
 
@@ -1333,36 +1141,6 @@ exports[`IconButton renders with different style preset 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1372,7 +1150,7 @@ exports[`IconButton renders with different style preset 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1380,7 +1158,7 @@ exports[`IconButton renders with different style preset 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1393,30 +1171,22 @@ exports[`IconButton renders with different style preset 1`] = `
     data-testid="button"
     type="button"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
-    </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
   </button>
 </DocumentFragment>
 `;
