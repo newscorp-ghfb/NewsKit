@@ -7,7 +7,7 @@ import {CommonSection} from './common-section';
 
 export interface InteractiveDemoSectionProps {
   introduction?: string | React.ReactElement;
-  playground: PlaygroundProps;
+  playground?: PlaygroundProps;
 }
 
 export const InteractiveDemoSection: React.FC<InteractiveDemoSectionProps> = ({
@@ -19,10 +19,12 @@ export const InteractiveDemoSection: React.FC<InteractiveDemoSectionProps> = ({
     id="interactive-demo"
     introduction={introduction}
   >
-    <ComponentPageCell>
-      <Block spaceStack="space050">
-        <Playground {...playground} />
-      </Block>
-    </ComponentPageCell>
+    {playground && (
+      <ComponentPageCell>
+        <Block spaceStack="space050">
+          <Playground {...playground} />
+        </Block>
+      </ComponentPageCell>
+    )}
   </CommonSection>
 );

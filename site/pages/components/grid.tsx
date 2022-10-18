@@ -127,14 +127,17 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
       figmaUrl:
         'https://www.figma.com/file/3l0UDvk1l2vsXpbtWlYWoP/%F0%9F%9F%A2-NK-NewsKit-Theme?node-id=4208%3A5779',
     }}
-    // interactiveDemo={{
-    //   introduction: (
-    //    <>
-    //   <Link href='https://newskit-grid-demo.vercel.app/'>This demo</Link>  allows you to preview the grid, the variations, and configuration options.
-    //    </>
-    //   ),
-    //  }
-    // }
+    interactiveDemo={{
+      introduction: (
+        <>
+          <Link href="https://newskit-grid-demo.vercel.app/" target="_blank">
+            This demo
+          </Link>{' '}
+          allows you to preview the grid, the variations, and configuration
+          options.
+        </>
+      ),
+    }}
     anatomy={{
       introduction:
         'The grid contains no required elements and five optional elements.',
