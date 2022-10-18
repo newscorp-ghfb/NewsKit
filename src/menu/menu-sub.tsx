@@ -115,6 +115,8 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
           onMouseLeave,
         ])}
       >
+        {/*
+        @ts-ignore */}
         <StyledButton
           {...buttonProps}
           align={align}
@@ -127,7 +129,6 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
           aria-current={selected && 'page'}
           onClick={composeEventHandlers([handleClick, onClick])}
           aria-expanded={isExpanded}
-          href=""
         >
           {title}
 
