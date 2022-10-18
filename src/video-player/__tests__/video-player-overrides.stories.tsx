@@ -121,8 +121,12 @@ export const StoryVideoPlayerPlayButtonOverrides = () => (
 );
 StoryVideoPlayerPlayButtonOverrides.storyName = 'play-button-overrides';
 StoryVideoPlayerPlayButtonOverrides.parameters = {
+  // todo: remove arbitrary wait
   eyes: {
     waitBeforeCapture: 5000,
+  },
+  percy: {
+    waitForTimeout: 5000,
   },
 };
 
@@ -251,8 +255,12 @@ export const StoryVideoPlayerDockTextOverrides = () => (
 );
 StoryVideoPlayerDockTextOverrides.storyName = 'doc-text-overrides';
 StoryVideoPlayerPlayButtonOverrides.parameters = {
+  // todo: remove arbitrary wait
   eyes: {
     waitBeforeCapture: 5000,
+  },
+  percy: {
+    waitForTimeout: 5000,
   },
 };
 
