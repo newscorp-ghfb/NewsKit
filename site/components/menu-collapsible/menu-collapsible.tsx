@@ -3,10 +3,12 @@ import {
   Divider,
   GridLayout,
   IconButton,
+  Label,
   Menu,
   MenuGroup,
   MenuItem,
   P,
+  Switch,
   TextBlock,
   toNewsKitIcon,
 } from 'newskit';
@@ -24,6 +26,31 @@ export const GitHubLaunch: React.FC = () => (
       <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
     </GridLayout>
   </StyledAnchor>
+);
+
+export const DarkModeToggle: React.FC<{
+  themeMode: string;
+  toggleTheme: () => void;
+}> = ({themeMode, toggleTheme}) => (
+  <GridLayout columns="1fr 44px">
+    <Label
+      overrides={{
+        typographyPreset: 'utilityLabel030',
+        stylePreset: 'inkBase',
+        paddingBlockStart: 'space020',
+      }}
+      htmlFor="dark-theme-switch"
+    >
+      Dark theme
+    </Label>
+    <Switch
+      id="dark-theme-switch"
+      checked={themeMode === 'dark'}
+      onChange={toggleTheme}
+      size="small"
+      label=" "
+    />
+  </GridLayout>
 );
 
 type NavProps = {
