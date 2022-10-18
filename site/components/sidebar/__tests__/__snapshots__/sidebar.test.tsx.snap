@@ -4549,6 +4549,36 @@ exports[`Sidebar renders correctly when closed 1`] = `
   grid-template-columns: 1fr 44px;
 }
 
+.emotion-639 {
+  display: block;
+  color: #2E3F54;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+  padding-block-start: 8px;
+}
+
+.emotion-639 svg {
+  fill: #2E3F54;
+}
+
+.emotion-639::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-639::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
 .emotion-640 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4834,18 +4864,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-649:disabled {
   color: #C0C7CC;
-}
-
-.emotion-650 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
 
 <div
@@ -8174,11 +8192,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 <div
                   class="emotion-638"
                 >
-                  <p
-                    class="emotion-634"
+                  <label
+                    class="emotion-639"
+                    for="dark-theme-switch"
                   >
                     Dark theme
-                  </p>
+                  </label>
                   <label
                     class="emotion-640"
                   >
@@ -8207,9 +8226,9 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           />
                         </div>
                         <input
-                          aria-describedby="dark-theme-switch"
                           class="emotion-648"
                           data-testid="checkbox-input"
+                          id="dark-theme-switch"
                           role="switch"
                           tabindex="-1"
                           type="checkbox"
@@ -8222,12 +8241,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                        
                     </span>
                   </label>
-                  <span
-                    class="emotion-650"
-                    id="dark-theme-switch"
-                  >
-                    Dark theme
-                  </span>
                 </div>
               </div>
             </div>
@@ -12796,6 +12809,36 @@ exports[`Sidebar renders correctly when open 1`] = `
   grid-template-columns: 1fr 44px;
 }
 
+.emotion-639 {
+  display: block;
+  color: #2E3F54;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+  padding-block-start: 8px;
+}
+
+.emotion-639 svg {
+  fill: #2E3F54;
+}
+
+.emotion-639::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-639::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
 .emotion-640 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -13081,18 +13124,6 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-649:disabled {
   color: #C0C7CC;
-}
-
-.emotion-650 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
 
 <div
@@ -16309,11 +16340,12 @@ exports[`Sidebar renders correctly when open 1`] = `
                 <div
                   class="emotion-638"
                 >
-                  <p
-                    class="emotion-634"
+                  <label
+                    class="emotion-639"
+                    for="dark-theme-switch"
                   >
                     Dark theme
-                  </p>
+                  </label>
                   <label
                     class="emotion-640"
                   >
@@ -16342,9 +16374,9 @@ exports[`Sidebar renders correctly when open 1`] = `
                           />
                         </div>
                         <input
-                          aria-describedby="dark-theme-switch"
                           class="emotion-648"
                           data-testid="checkbox-input"
+                          id="dark-theme-switch"
                           role="switch"
                           type="checkbox"
                         />
@@ -16356,12 +16388,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                        
                     </span>
                   </label>
-                  <span
-                    class="emotion-650"
-                    id="dark-theme-switch"
-                  >
-                    Dark theme
-                  </span>
                 </div>
               </div>
             </div>

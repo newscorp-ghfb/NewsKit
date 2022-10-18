@@ -3,11 +3,11 @@ import {
   Divider,
   GridLayout,
   IconButton,
+  Label,
   Menu,
   MenuGroup,
   MenuItem,
   P,
-  ScreenReaderOnly,
   Switch,
   TextBlock,
   toNewsKitIcon,
@@ -33,15 +33,23 @@ export const DarkModeToggle: React.FC<{
   toggleTheme: () => void;
 }> = ({themeMode, toggleTheme}) => (
   <GridLayout columns="1fr 44px">
-    <P overrides={{typographyPreset: 'utilityLabel030'}}>Dark theme</P>
+    <Label
+      overrides={{
+        typographyPreset: 'utilityLabel030',
+        stylePreset: 'inkBase',
+        paddingBlockStart: 'space020',
+      }}
+      htmlFor="dark-theme-switch"
+    >
+      Dark theme
+    </Label>
     <Switch
-      aria-describedby="dark-theme-switch"
+      id="dark-theme-switch"
       checked={themeMode === 'dark'}
       onChange={toggleTheme}
       size="small"
       label=" "
     />
-    <ScreenReaderOnly id="dark-theme-switch">Dark theme</ScreenReaderOnly>
   </GridLayout>
 );
 
