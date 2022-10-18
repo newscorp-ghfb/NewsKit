@@ -212,7 +212,7 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              title: 'Max width (Grid)',
+              title: 'Max width',
               description:
                 'The maximum width of the grid can be set. This can be set via the theme or overridden at the component level.',
 
