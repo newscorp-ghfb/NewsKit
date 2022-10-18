@@ -175,7 +175,7 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Grid options',
           introduction:
-            'The Grid has the following options to provide an appropriate experience for different scenarios.',
+            'The grid has the following options to provide an appropriate experience for different scenarios.',
           cards: [
             {
               title: 'Breakpoints',
@@ -225,7 +225,7 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Cell options',
           introduction:
-            'The Cell has the following options to provide an appropriate experience for different scenarios.',
+            'Cells have the following options to provide an appropriate experience for different scenarios.',
           cards: [
             {
               title: 'Span',
@@ -357,7 +357,7 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Cell',
-          summary: `TThe cell has a range of props that can be used to define an appropriate experience for different use cases.`,
+          summary: `The cell has a range of props that can be used to define an appropriate experience for different use cases.`,
           propsRows: [
             {
               name: 'Root',
