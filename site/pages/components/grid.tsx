@@ -295,7 +295,7 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
                 target="_blank"
               >
                 nested inside of a parent grid
-              </Link>
+              </Link>{' '}
               by adding it to a cell of that grid.
             </>
           ),
@@ -341,8 +341,8 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
               href="https://www.newskit.co.uk/components/visibility/"
               target="_blank"
             >
-              visible and hidden{' '}
-            </Link>
+              visible and hidden
+            </Link>{' '}
             at different breakpoints. When used `hidden` excludes content from
             focus order when the screen size matches the applied breakpoint.
           </ContentText>
