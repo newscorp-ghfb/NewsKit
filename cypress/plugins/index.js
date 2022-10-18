@@ -1,3 +1,3 @@
 module.exports = () => {};
 
-require('@applitools/eyes-cypress')(module);
+// require('@applitools/eyes-cypress')(module);

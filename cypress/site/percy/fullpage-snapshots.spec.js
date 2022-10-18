@@ -10,13 +10,11 @@ const routes = {
   tabs: '/components/tabs/',
 };
 
-if (!Cypress.env('SKIP_PERCY_CHECK')) {
-  Object.entries(routes).forEach(([pageName, path]) => {
-    describe(`${pageName} page`, () => {
-      it(`should pass visual regression test on ${pageName}`, () => {
-        cy.mockConsentAndVisit(path);
-        cy.percySnapshot();
-      });
+Object.entries(routes).forEach(([pageName, path]) => {
+  describe(`${pageName} page`, () => {
+    it(`should pass visual regression test on ${pageName}`, () => {
+      cy.mockConsentAndVisit(path);
+      cy.percySnapshot();
     });
   });
-}
+});

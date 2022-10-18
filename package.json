@@ -62,7 +62,7 @@
     "e2e:docs:ci": "start-server-and-test serve:docs 8081 'TZ=UTC cypress run --config-file cypress/config/cypress.docs.json'",
     "e2e:visual:docs:ci": "start-server-and-test serve:docs 8081 'TZ=UTC cypress run --config-file cypress/config/cypress.docs.visual.json'",
     "e2e:visual:docs:ci:percy": "start-server-and-test serve:docs 8081 'TZ=UTC percy exec -- cypress run --config-file cypress/config/cypress.docs.percy.json'",
-    "e2e:visual:docs:ci:percy:skip": "CYPRESS_SKIP_PERCY_CHECK=true percy exec -- cypress run --config-file cypress/config/cypress.docs.percy.json",
+    "e2e:visual:docs:ci:percy:skip": "percy exec -- cypress run --config-file cypress/config/cypress.docs.percy.skip.json",
     "e2e:visual:docs:local": "sh ./scripts/applitools_local.sh docs",
     "e2e:visual:docs:local:percy": "sh ./scripts/percy_local.sh docsite",
     "e2e:generate:a11ytests": "node scripts/generate-a11y-tests.js",
