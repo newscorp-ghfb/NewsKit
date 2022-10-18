@@ -147,26 +147,31 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
           name: 'Column',
           description:
             'The NewsKit grid has 12 columns. The width of the columns depends on the size of the grid.',
+          optional: true,
         },
         {
           name: 'Column gutter',
           description:
             'The space between columns are called gutters. These are fixed sizes but vary at different breakpoints.',
+          optional: true,
         },
         {
           name: 'Container margin',
           description:
             'The container margins are on the outside edges of the grid, providing space between the edge of the screen and the grid.',
+          optional: true,
         },
         {
           name: 'Cell',
           description:
             'Cells are used to contain the content. They can span any number of columns, resize with the grid and change at different breakpoints.',
+          optional: true,
         },
         {
           name: 'Row gutter',
           description:
             'The spacing between each cell row (i.e. top and bottom when cells are wrapped) is called the row gutters. These can vary at different breakpoints.',
+          optional: true,
         },
       ],
     }}
@@ -284,11 +289,14 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
           title: 'Nested grids',
           description: (
             <>
-              A grid can be nested inside of a parent grid by adding it to a
-              cell of that grid.{' '}
-              <Link href="https://github.com/lhaggar/newskit-grid-demo/blob/master/pages/nesting.js">
-                See example.
+              A grid can be{' '}
+              <Link
+                href="https://github.com/lhaggar/newskit-grid-demo/blob/master/pages/nesting.js"
+                target="_blank"
+              >
+                nested inside of a parent grid
               </Link>
+              by adding it to a cell of that grid.
             </>
           ),
           media: getIllustrationComponent(
@@ -328,12 +336,15 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
           The grid has the following accessibility considerations:
           <Block spaceStack="space100" />
           <ContentText title="Visibility of content">
-            Content passed to cells can be set as visible and hidden at
-            different breakpoints. When used `hidden` excludes content from
-            focus order when the screen size matches the applied breakpoint.{' '}
-            <Link href="https://www.newskit.co.uk/components/visibility/">
-              Read more.
+            Content passed to cells can be set as{' '}
+            <Link
+              href="https://www.newskit.co.uk/components/visibility/"
+              target="_blank"
+            >
+              visible and hidden{' '}
             </Link>
+            at different breakpoints. When used `hidden` excludes content from
+            focus order when the screen size matches the applied breakpoint.
           </ContentText>
         </>
       ),
