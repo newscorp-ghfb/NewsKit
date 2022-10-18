@@ -171,88 +171,102 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     options={{
-      introduction:
-        'The grid has the following options to provide an appropriate experience for different scenarios.',
-      cards: [
+      components: [
         {
-          title: 'Breakpoints (Grid)',
-          description: (
-            <>
-              There are 5 breakpoints. The breakpoint ranges can be set via the{' '}
-              <Link href="https://newskit.co.uk/theme/foundation/breakpoints/#usage">
-                theme breakpoint values.
-              </Link>
-            </>
-          ),
+          title: 'Grid options',
+          introduction:
+            'The Grid has the following options to provide an appropriate experience for different scenarios.',
+          cards: [
+            {
+              title: 'Breakpoints',
+              description: (
+                <>
+                  There are 5 breakpoints. The breakpoint ranges can be set via
+                  the{' '}
+                  <Link href="https://newskit.co.uk/theme/foundation/breakpoints/#usage">
+                    theme breakpoint values.
+                  </Link>
+                </>
+              ),
 
-          media: getIllustrationComponent(
-            'components/grid-cell/gridoptions/breakpoints',
-          ),
+              media: getIllustrationComponent(
+                'components/grid-cell/gridoptions/breakpoints',
+              ),
+            },
+            {
+              title: 'Gutter width',
+              description:
+                'The gutter width can be set for each breakpoint. These can be set via the theme or overridden at the component level.',
+
+              media: getIllustrationComponent(
+                'components/grid-cell/gridoptions/gutter-width',
+              ),
+            },
+            {
+              title: 'Margin width',
+              description:
+                'The margin width can be set for each breakpoint. These can be set via the theme or overridden at the component level.',
+
+              media: getIllustrationComponent(
+                'components/grid-cell/gridoptions/margin-width',
+              ),
+            },
+            {
+              title: 'Max width (Grid)',
+              description:
+                'The maximum width of the grid can be set. This can be set via the theme or overridden at the component level.',
+
+              media: getIllustrationComponent(
+                'components/grid-cell/gridoptions/max-width',
+              ),
+            },
+          ],
         },
         {
-          title: 'Gutter width (Grid)',
-          description:
-            'The gutter width can be set for each breakpoint. These can be set via the theme or overridden at the component level.',
+          title: 'Cell options',
+          introduction:
+            'The Cell has the following options to provide an appropriate experience for different scenarios.',
+          cards: [
+            {
+              title: 'Span',
+              description:
+                'Cells can be set to span any number of columns in the grid. If set to ‘full-width’ the cell will span all 12 columns and breakout across the margin of the grid. It will still be confined by the grids max-width.',
 
-          media: getIllustrationComponent(
-            'components/grid-cell/gridoptions/gutter-width',
-          ),
-        },
-        {
-          title: 'Margin width (Grid)',
-          description:
-            'The margin width can be set for each breakpoint. These can be set via the theme or overridden at the component level.',
+              media: getIllustrationComponent(
+                'components/grid-cell/celloptions/span',
+              ),
+            },
+            {
+              title: 'Order',
+              description:
+                'The order that cells appear can be changed at different breakpoints.',
 
-          media: getIllustrationComponent(
-            'components/grid-cell/gridoptions/margin-width',
-          ),
-        },
-        {
-          title: 'Max width (Grid)',
-          description:
-            'The maximum width of the grid can be set. This can be set via the theme or overridden at the component level.',
+              media: getIllustrationComponent(
+                'components/grid-cell/celloptions/order',
+              ),
+            },
+            {
+              title: 'Visibility',
+              description:
+                'Cells can be set to be hidden at different breakpoints.',
 
-          media: getIllustrationComponent(
-            'components/grid-cell/gridoptions/max-width',
-          ),
-        },
-        {
-          title: 'Span (Cell)',
-          description:
-            'Cells can be set to span any number of columns in the grid. If set to ‘full-width’ the cell will span all 12 columns and breakout across the margin of the grid. It will still be confined by the grids max-width.',
+              media: getIllustrationComponent(
+                'components/grid-cell/celloptions/visibility',
+              ),
+            },
+            {
+              title: 'Offset',
+              description:
+                'Cells can be set to be offset by a specified number of columns.',
 
-          media: getIllustrationComponent(
-            'components/grid-cell/celloptions/span',
-          ),
-        },
-        {
-          title: 'Order (Cell)',
-          description:
-            'The order that cells appear can be changed at different breakpoints.',
-
-          media: getIllustrationComponent(
-            'components/grid-cell/celloptions/order',
-          ),
-        },
-        {
-          title: 'Visibility (Cell)',
-          description:
-            'Cells can be set to be hidden at different breakpoints.',
-
-          media: getIllustrationComponent(
-            'components/grid-cell/celloptions/visibility',
-          ),
-        },
-        {
-          title: 'Offset (Cell)',
-          description:
-            'Cells can be set to be offset by a specified number of columns.',
-
-          media: getIllustrationComponent(
-            'components/grid-cell/celloptions/offset',
-          ),
+              media: getIllustrationComponent(
+                'components/grid-cell/celloptions/offset',
+              ),
+            },
+          ],
         },
       ],
+      cards: [],
     }}
     behaviors={{
       title: 'Grid behaviours',
