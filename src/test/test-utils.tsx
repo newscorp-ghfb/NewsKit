@@ -139,3 +139,8 @@ export const renderToFragmentInBody = <T extends {}>(
 export const applyAsyncStyling = async () => {
   await act(async () => {});
 };
+
+export const generateString = (length: number): string =>
+  Array.from(Array(length).keys())
+    .map(() => '*')
+    .join('');

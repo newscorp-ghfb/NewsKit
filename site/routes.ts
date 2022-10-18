@@ -672,7 +672,7 @@ export default [
             page: true,
             id: '/components/tag',
             description:
-              'Used as a way of classifying content, typically using keywords. When clicked it will take a user to content of the same category.',
+              'Tags are used to classify content, typically using keywords.',
             illustration: 'components/tag-illustration',
           },
           {

@@ -11,18 +11,29 @@ const MOCK_DATA = [{id: ''}];
 
 describe('fetchGitHubReleases', () => {
   let fetchMock: Mock;
+  const {env} = process;
 
   beforeEach(() => {
     fetchMock = jest.fn().mockResolvedValue({
       json: jest.fn().mockResolvedValue(MOCK_DATA),
     });
     (global as any).fetch = fetchMock;
+
+    jest.resetModules();
+    process.env = {...env, GITHUB_TOKEN: 'mock'};
+  });
+
+  afterEach(() => {
+    process.env = env;
   });
 
   it('should fetch release data from GitHub', async () => {
     const data = await fetchGitHubReleases(13);
-    expect(fetchMock).toHaveBeenCalledWith(
+    expect(
+      fetchMock,
+    ).toHaveBeenCalledWith(
       'https://api.github.com/repos/newscorp-ghfb/newskit/releases?per_page=13',
+      {headers: {Authorization: 'Bearer mock'}},
     );
     expect(data).toEqual(MOCK_DATA);
   });
@@ -90,6 +101,12 @@ describe('formatGitHubMarkDown', () => {
       `[${PROFILE}](https://github.com/${PROFILE.replace('@', '')})`,
     );
   });
+  it('should not update package names inside backticks', () => {
+    const result = formatGitHubMarkDown(
+      '`npm install newskit@6.0.0 @emotion/react`',
+    );
+    expect(result).toEqual('`npm install newskit@6.0.0 @emotion/react`');
+  });
 });
 
 describe('updateFinalReleaseInfo', () => {
@@ -97,9 +114,11 @@ describe('updateFinalReleaseInfo', () => {
     const after = updateFinalReleaseInfo({
       tag_name: 'trigger-release@5.7.0',
       name: 'Trigger release 5.7.0',
+
       body:
         'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...trigger-release@5.7.0',
       published_at: '2022-07-18T11:41:49Z',
+      created_at: '2022-07-18T11:41:49Z',
       html_url: 'https://github.com/newscorp-ghfb/newskit/releases/tag/v5.7.0',
     });
     expect(after.name).toEqual('v5.7.0');
@@ -115,6 +134,7 @@ describe('updateFinalReleaseInfo', () => {
       body:
         'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...trigger-rlease@5.7.0',
       published_at: '2022-07-18T11:41:49Z',
+      created_at: '2022-07-18T11:41:49Z',
       html_url: 'https://github.com/newscorp-ghfb/newskit/releases/tag/v5.7.0',
     });
     expect(after.name).toEqual('v5.7.0');
@@ -129,6 +149,7 @@ describe('updateFinalReleaseInfo', () => {
       name: 'v5.7.0',
       body: 'https://github.com/newscorp-ghfb/newskit/compare/v5.6.0...v5.7.0',
       published_at: '2022-07-18T11:41:49Z',
+      created_at: '2022-07-18T11:41:49Z',
       html_url: 'https://github.com/newscorp-ghfb/newskit/releases/tag/v5.7.0',
     });
     expect(after.name).toEqual('v5.7.0');
