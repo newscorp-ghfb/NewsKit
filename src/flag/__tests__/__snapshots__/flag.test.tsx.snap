@@ -611,8 +611,7 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100px;
-  height: 100px;
+  min-height: auto;
   padding: 8px 12px;
   cursor: default;
   overflow: hidden;
@@ -862,8 +861,7 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
   padding: 8px 12px;
   cursor: default;
   overflow: hidden;
@@ -1031,8 +1029,7 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 160px;
-  height: 160px;
+  min-height: auto;
   padding: 8px 12px;
   cursor: default;
   overflow: hidden;

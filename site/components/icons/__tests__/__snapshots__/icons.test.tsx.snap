@@ -194,8 +194,7 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 32px;
-  height: 32px;
+  min-height: auto;
   padding: 0;
   cursor: default;
   overflow: hidden;
@@ -403,8 +402,7 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 32px;
-  height: 32px;
+  min-height: auto;
   padding: 0;
   cursor: default;
   overflow: hidden;

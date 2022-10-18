@@ -120,7 +120,7 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -278,7 +278,7 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -697,7 +697,7 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -855,7 +855,7 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -1257,7 +1257,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -1415,7 +1415,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -1815,7 +1815,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -1973,7 +1973,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -2376,8 +2376,8 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -2540,8 +2540,8 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -2948,7 +2948,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -3106,7 +3106,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -3511,8 +3511,8 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -3675,8 +3675,8 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -4083,7 +4083,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -4241,7 +4241,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -4646,8 +4646,8 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -4810,8 +4810,8 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -5218,7 +5218,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -5376,7 +5376,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: not-allowed;
   overflow: hidden;
@@ -5728,7 +5728,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -5886,7 +5886,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -6291,8 +6291,8 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -6455,8 +6455,8 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -6863,7 +6863,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -7021,7 +7021,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -7426,8 +7426,8 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -7579,8 +7579,8 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -7998,7 +7998,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -8145,7 +8145,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -8561,8 +8561,8 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -8710,8 +8710,8 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -9133,7 +9133,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -9276,7 +9276,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -9693,7 +9693,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -9851,7 +9851,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -10256,8 +10256,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -10420,8 +10420,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -10831,8 +10831,8 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -11015,8 +11015,8 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -11441,7 +11441,7 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -11806,7 +11806,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -11989,7 +11989,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -12454,7 +12454,7 @@ exports[`Tabs renders with default styles 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -12612,7 +12612,7 @@ exports[`Tabs renders with default styles 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -13014,7 +13014,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -13193,7 +13193,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -13613,7 +13613,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -13796,7 +13796,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -14261,7 +14261,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -14444,7 +14444,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -14909,7 +14909,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -15092,7 +15092,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -15557,7 +15557,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -15740,7 +15740,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -16205,7 +16205,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -16365,7 +16365,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -16803,8 +16803,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -16992,8 +16992,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -17466,8 +17466,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -17655,8 +17655,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -18126,7 +18126,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -18284,7 +18284,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -18687,7 +18687,7 @@ exports[`Tabs renders with overrides 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -18870,7 +18870,7 @@ exports[`Tabs renders with overrides 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -19359,7 +19359,7 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -19470,7 +19470,7 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -19836,8 +19836,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -20025,8 +20025,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -20520,7 +20520,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -20663,7 +20663,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -21080,7 +21080,7 @@ exports[`Tabs renders with selectedIndex 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -21227,7 +21227,7 @@ exports[`Tabs renders with selectedIndex 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -21640,7 +21640,7 @@ exports[`Tabs renders with sizing 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -21798,7 +21798,7 @@ exports[`Tabs renders with sizing 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -22200,7 +22200,7 @@ exports[`Tabs sets active on click 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -22358,7 +22358,7 @@ exports[`Tabs sets active on click 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -22760,7 +22760,7 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -22918,7 +22918,7 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -23320,7 +23320,7 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -23467,7 +23467,7 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -23880,7 +23880,7 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -24027,7 +24027,7 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -24415,7 +24415,7 @@ exports[`Tabs with custom scroll component 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -24598,7 +24598,7 @@ exports[`Tabs with custom scroll component 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -25067,7 +25067,7 @@ exports[`Tabs with custom scroll props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -25250,7 +25250,7 @@ exports[`Tabs with custom scroll props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -25715,7 +25715,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -25898,7 +25898,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -26361,7 +26361,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -26544,7 +26544,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -27009,7 +27009,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -27192,7 +27192,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -27660,8 +27660,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -27849,8 +27849,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -28321,8 +28321,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -28510,8 +28510,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -28984,8 +28984,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -29173,8 +29173,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -29648,7 +29648,7 @@ exports[`with logical props overrides 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -29831,7 +29831,7 @@ exports[`with logical props overrides 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;

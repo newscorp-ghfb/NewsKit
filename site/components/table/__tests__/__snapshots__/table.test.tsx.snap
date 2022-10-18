@@ -99,8 +99,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 24px;
-  height: 24px;
+  min-height: auto;
   padding: 0;
   cursor: default;
   overflow: hidden;
@@ -632,8 +631,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 24px;
-  height: 24px;
+  min-height: auto;
   padding: 0;
   cursor: default;
   overflow: hidden;

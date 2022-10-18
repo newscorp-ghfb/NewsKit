@@ -52,7 +52,7 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -302,7 +302,7 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -550,7 +550,7 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -800,7 +800,7 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -1048,7 +1048,7 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -1298,7 +1298,7 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -1546,7 +1546,7 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -1796,7 +1796,7 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -2044,7 +2044,7 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -2294,7 +2294,7 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -2542,7 +2542,7 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -2792,7 +2792,7 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -3056,7 +3056,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -3389,7 +3389,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -3648,7 +3648,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -3910,7 +3910,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -4242,7 +4242,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -4505,7 +4505,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -4753,7 +4753,7 @@ exports[`Menu renders with default props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -5002,7 +5002,7 @@ exports[`Menu renders with logical prop overrides 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -5524,7 +5524,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -5840,7 +5840,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -6182,7 +6182,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -6495,7 +6495,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -6761,7 +6761,7 @@ exports[`MenuItem renders in large size 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -6963,7 +6963,7 @@ exports[`MenuItem renders in medium size 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -7165,7 +7165,7 @@ exports[`MenuItem renders in small size 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -7367,7 +7367,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -7570,7 +7570,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -7832,7 +7832,7 @@ exports[`MenuItem renders with default props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -8034,7 +8034,7 @@ exports[`MenuItem renders with icon 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -8277,7 +8277,7 @@ exports[`MenuItem renders with overrides 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 11px;
-  width: 100%;
+  min-width: auto;
   padding: 12px;
   cursor: default;
   overflow: hidden;

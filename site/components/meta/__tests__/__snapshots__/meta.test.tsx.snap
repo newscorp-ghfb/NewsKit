@@ -355,7 +355,7 @@ exports[`Meta renders with mandatory props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 44px;
-  width: 100%;
+  min-width: auto;
   padding: 8px 12px;
   cursor: default;
   overflow: hidden;
@@ -1346,7 +1346,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 44px;
-  width: 100%;
+  min-width: auto;
   padding: 8px 12px;
   cursor: default;
   overflow: hidden;
@@ -2543,7 +2543,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 44px;
-  width: 100%;
+  min-width: auto;
   padding: 8px 12px;
   cursor: default;
   overflow: hidden;

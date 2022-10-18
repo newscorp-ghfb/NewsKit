@@ -390,8 +390,8 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100px;
-  height: 100px;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -664,8 +664,8 @@ exports[`Button Loading Button renders a button with percentage for width and he
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -938,8 +938,8 @@ exports[`Button Loading Button renders a button with token set for width and hei
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 160px;
-  height: 160px;
+  min-height: auto;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -1588,7 +1588,7 @@ exports[`Button renders fixed-width Button 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 160px;
+  min-width: auto;
   padding: 16px 24px;
   cursor: default;
   overflow: hidden;
@@ -1725,7 +1725,7 @@ exports[`Button renders full-width Button 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
+  min-width: auto;
   padding: 16px 24px;
   cursor: default;
   overflow: hidden;

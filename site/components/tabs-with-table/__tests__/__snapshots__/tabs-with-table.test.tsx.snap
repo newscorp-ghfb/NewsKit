@@ -411,7 +411,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
@@ -512,7 +512,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
+  min-width: auto;
   padding: 12px 16px;
   cursor: default;
   overflow: hidden;
