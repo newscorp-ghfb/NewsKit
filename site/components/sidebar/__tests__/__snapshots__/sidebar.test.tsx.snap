@@ -4836,6 +4836,18 @@ exports[`Sidebar renders correctly when closed 1`] = `
   color: #C0C7CC;
 }
 
+.emotion-650 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 <div
     class="nk-layer-organizer"
   >
@@ -8195,6 +8207,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           />
                         </div>
                         <input
+                          aria-describedby="dark-theme-switch"
                           class="emotion-648"
                           data-testid="checkbox-input"
                           role="switch"
@@ -8209,6 +8222,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
                        
                     </span>
                   </label>
+                  <span
+                    class="emotion-650"
+                    id="dark-theme-switch"
+                  >
+                    Dark theme
+                  </span>
                 </div>
               </div>
             </div>
@@ -13064,6 +13083,18 @@ exports[`Sidebar renders correctly when open 1`] = `
   color: #C0C7CC;
 }
 
+.emotion-650 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 <div
     aria-hidden="true"
     class="nk-layer-organizer"
@@ -16311,6 +16342,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           />
                         </div>
                         <input
+                          aria-describedby="dark-theme-switch"
                           class="emotion-648"
                           data-testid="checkbox-input"
                           role="switch"
@@ -16324,6 +16356,12 @@ exports[`Sidebar renders correctly when open 1`] = `
                        
                     </span>
                   </label>
+                  <span
+                    class="emotion-650"
+                    id="dark-theme-switch"
+                  >
+                    Dark theme
+                  </span>
                 </div>
               </div>
             </div>
