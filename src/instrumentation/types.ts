@@ -9,6 +9,7 @@ export enum EventTrigger {
   End = 'end',
   Pulse = 'pulse',
   Focus = 'focus',
+  Change = 'change', // TODO: can we have change?
 }
 
 export interface InstrumentationEvent {

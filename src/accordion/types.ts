@@ -4,6 +4,7 @@ import {MQ} from '../utils';
 import {LogicalPaddingProps} from '../utils/logical-properties';
 import {Override} from '../utils/overrides';
 import {TransitionToken} from '../theme';
+import {EventData} from '../instrumentation';
 
 export type AccordionIconProps = NewsKitIconProps &
   Pick<AccordionProps, 'expanded'>;
@@ -31,7 +32,7 @@ export type AccordionPropsOverrides = {
   panel?: AccordionPanelOverrides;
 };
 
-export interface AccordionProps {
+export interface AccordionProps extends EventData {
   children?: Exclude<React.ReactNode, 'undefined'>;
   disabled?: boolean;
   header?: Exclude<React.ReactNode, 'undefined'>;
