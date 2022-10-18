@@ -1,18 +1,22 @@
 import React from 'react';
 import CodeSandboxer from 'react-codesandboxer';
 import {Button} from 'newskit';
+// import {peerDependencies} from '../../../package.json';
 import {Code} from '../code';
 import {LegacyBlock} from '../legacy-block';
 import {ErrorMessageContainer} from './error-boundary';
+
+// console.log(peerDependencies['@emotion/react'], 'hello i am version');
 
 // TODO: reinstate proper version when stable.
 const newskitVersion = 'unstable'; // packageJson.version;
 
 const index = `
 import React from "react";
+import { createRoot } from 'react-dom/client';
 import ReactDOM from "react-dom";
 
-import { ThemeProvider, newskitLightTheme } from "newskit";
+import { NewsKitProvider, newskitLightTheme } from "newskit";
 
 import Example from "./example";
 
@@ -20,12 +24,13 @@ function App() {
   return <Example />;
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <ThemeProvider theme={newskitLightTheme}>
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
+  <NewsKitProvider theme={newskitLightTheme}>
     <App />
-  </ThemeProvider>,
-  rootElement
+  </ NewsKitProvider>,
+  container
 );
 `;
 
@@ -68,8 +73,10 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
       name={componentName}
       dependencies={{
         newskit: newskitVersion,
-        react: '16.8.6',
-        'react-dom': '16.8.6',
+        react: '18',
+        'react-dom': '18',
+        '@emotion/react': '11.9.3',
+        '@emotion/styled': '11.9.3',
       }}
       providedFiles={{'index.js': {content: index}}}
       template="create-react-app"
