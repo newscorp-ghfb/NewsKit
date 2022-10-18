@@ -1,5 +1,11 @@
 import React, {useContext, useEffect, useState} from 'react';
 import composeRefs from '@seznam/compose-react-refs';
+import {
+  RegisterOptions,
+  ValidationRule,
+  ValidationValue,
+  ValidationValueMessage,
+} from 'react-hook-form/dist/types/validator';
 import {Label, LabelProps} from '../label';
 import {TextField} from '../text-field/text-field';
 import {AssistiveText, AssistiveTextProps} from '../assistive-text';
@@ -24,6 +30,7 @@ import textFieldDefaults from '../text-field/defaults';
 import assistiveTextDefaults from '../assistive-text/defaults';
 import {RadioButton} from '../radio-button';
 import {TextArea, TextAreaProps} from '../text-area';
+import {CharacterCountProps, CharacterCount} from '../character-count';
 
 const useFormFieldContext = () => useContext(FormInputContext);
 
@@ -61,7 +68,7 @@ const ThemelessFormInput = ({
 
   return (
     <FormEntry name={name} rules={rules}>
-      {({ref, state: stateContext, onChange, onBlur, error}) => {
+      {({ref, state: stateContext, onChange, onBlur, error, refObject}) => {
         const state = stateProp || stateContext;
         const labelId = `${currentID}-label`;
 
@@ -83,6 +90,8 @@ const ThemelessFormInput = ({
           labelId,
           statusIcon,
           isRequired,
+          refObject,
+          rules,
         };
 
         return (
@@ -342,3 +351,45 @@ export const FormInputTextArea = React.forwardRef<
     />
   );
 });
+
+function isValidationValueMessage<T extends ValidationValue>(
+  valueOrObj: ValidationValueMessage<T> | T,
+): valueOrObj is ValidationValueMessage<T> {
+  return (valueOrObj as ValidationValueMessage<T>).value !== undefined;
+}
+
+function asNumber(value: number | string): number {
+  if (typeof value === 'string') {
+    return parseInt(value, 10);
+  }
+  return value;
+}
+
+const getValueFromRule = (
+  value?: ValidationRule<number | string>,
+): number | undefined => {
+  if (!!value && isValidationValueMessage(value)) {
+    return asNumber(value.value);
+  }
+  if (value) {
+    return asNumber(value);
+  }
+  return undefined;
+};
+
+export const FormInputCharacterCount = (
+  props: Omit<CharacterCountProps, 'inputRef' | 'minLength' | 'maxLength'>,
+) => {
+  const {refObject, state, size, rules} = useFormFieldContext();
+  const {minLength, maxLength} = (rules || {}) as RegisterOptions;
+  return (
+    <CharacterCount
+      state={state}
+      size={size}
+      inputRef={refObject!}
+      minLength={getValueFromRule(minLength)}
+      maxLength={getValueFromRule(maxLength)}
+      {...props}
+    />
+  );
+};
