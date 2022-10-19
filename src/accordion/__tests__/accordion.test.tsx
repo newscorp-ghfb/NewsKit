@@ -6,6 +6,7 @@ import {
   IconFilledCancel,
   IconFilledStarOutline,
 } from '../../icons';
+import {EventTrigger, InstrumentationProvider} from '../../instrumentation';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
@@ -317,6 +318,33 @@ describe('Accordion', () => {
     });
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('fire tracking event', async () => {
+    const mockFireEvent = jest.fn();
+    const eventContext = {
+      event: 'other event data',
+    };
+    const props = {
+      eventOriginator: 'accordion-item',
+      eventContext,
+      ...defaultProps,
+    };
+    const headerButton = await renderWithTheme((() => (
+      <InstrumentationProvider fireEvent={mockFireEvent}>
+        <Accordion {...props} />
+      </InstrumentationProvider>
+    )) as React.FC).getByTestId('accordion-control');
+
+    fireEvent.click(headerButton);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'accordion-item',
+      trigger: EventTrigger.Click,
+      context: {
+        event: 'other event data',
+      },
+    });
   });
 });
 
