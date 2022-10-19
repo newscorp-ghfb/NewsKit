@@ -183,12 +183,12 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
     const {fireEvent} = useInstrumentation();
     const onFinalChange = composeEventHandlers([
       onFinalChangeProp,
-      ([value]: number[]) =>
+      (eventValues: number[]) =>
         fireEvent({
           originator: eventOriginator,
           trigger: EventTrigger.Change,
           context: {
-            value,
+            values: eventValues,
             ...eventContext,
           },
         }),
