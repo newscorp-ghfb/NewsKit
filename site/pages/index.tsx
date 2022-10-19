@@ -1,6 +1,7 @@
 import {GridLayout, TextBlock} from 'newskit';
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
+import {HomepageContentProps} from '../utils/google-sheet/types';
 import {Link} from '../components/link';
 import {Release, ReleasesPageProps} from '../utils/release-notes/types';
 import {
@@ -29,23 +30,32 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
-export interface Content {
-  title: string;
-  description: string;
-  linkText: string;
-  href: string;
-}
-
-export interface LatestBlogProps {
-  content: Content[];
-}
+const defaultContent = {
+  LatestBlogTitle: 'Latest Blog',
+  latestBlogDescription:
+    "How an audio player component tells the story of NewsKit Design System's changing strategy",
+  LatestBlogDescription: 'Read on Medium',
+  latestBlogLink:
+    'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
+  andMoreTitle: 'And More:',
+  andMoreLink:
+    'Support for [environment variables](https://nextjs.org/docs/basic-features/environment-variables "Environment variables"), [preview mode](https://nextjs.org/docs/advanced-features/preview-mode "Preview mode"), [custom head tags](https://nextjs.org/docs/api-reference/next/head "Custom head tags"), [automatic polyfills](https://nextjs.org/docs/basic-features/supported-browsers-features#polyfills "Automatic polyfills") and more.',
+};
 
 const Index = ({
   releases,
   content,
   ...layoutProps
-}: LayoutProps & ReleasesPageProps & LatestBlogProps) => {
+}: LayoutProps & ReleasesPageProps & HomepageContentProps) => {
   const {themeMode, toggleTheme} = layoutProps;
+  const {
+    LatestBlogTitle,
+    LatestBlogDescription,
+    LatestBlogLinkText,
+    LatestBlogLink,
+    AndMoreTitle,
+    AndMoreLink,
+  } = content;
 
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
@@ -64,51 +74,45 @@ const Index = ({
             marginBlockEnd: {xs: 'space080', md: 'space000'},
           }}
         >
-          {content
-            .slice(0, content.length - 1)
-            .map(({title, description, linkText, href}) => (
-              <FeatureCard
-                title={title}
-                description={description}
-                stylePrefix="worldDesignSystemsWeekCard"
-                layout="horizontal"
-                overrides={{
-                  title: {typographyPreset: 'editorialHeadline060'},
-                  description: {typographyPreset: 'editorialSubheadline010'},
-                }}
-                buttonIcon={<IconFilledLaunch />}
-                buttonLabel={linkText}
-                buttonHref={href}
-                buttonOverrides={{
-                  paddingInline: 'space000',
-                  typographyPreset: 'utilityButton020',
-                }}
-              />
-            ))}
-          {content.slice(content.length - 1).map(({title, description}) => (
-            <TextBlock
-              as="div"
-              typographyPreset="editorialParagraph030"
-              stylePreset="gitHubMarkDownText"
-              marginBlockStart="space050"
+          <FeatureCard
+            title={LatestBlogTitle}
+            description={LatestBlogDescription}
+            stylePrefix="worldDesignSystemsWeekCard"
+            layout="horizontal"
+            overrides={{
+              title: {typographyPreset: 'editorialHeadline060'},
+              description: {typographyPreset: 'editorialSubheadline010'},
+            }}
+            buttonIcon={<IconFilledLaunch />}
+            buttonLabel={LatestBlogLinkText}
+            buttonHref={LatestBlogLink}
+            buttonOverrides={{
+              paddingInline: 'space000',
+              typographyPreset: 'utilityButton020',
+            }}
+          />
+          <TextBlock
+            as="div"
+            typographyPreset="editorialParagraph030"
+            stylePreset="gitHubMarkDownText"
+            marginBlockStart="space050"
+          >
+            {AndMoreTitle}
+            <ReactMarkdown
+              components={{
+                a: ({href, children}) => (
+                  <Link
+                    overrides={{typographyPreset: 'editorialParagraph030'}}
+                    href={href!}
+                  >
+                    {children}
+                  </Link>
+                ),
+              }}
             >
-              {title}
-              <ReactMarkdown
-                components={{
-                  a: ({href, children}) => (
-                    <Link
-                      overrides={{typographyPreset: 'editorialParagraph030'}}
-                      href={href!}
-                    >
-                      {children}
-                    </Link>
-                  ),
-                }}
-              >
-                {description}
-              </ReactMarkdown>
-            </TextBlock>
-          ))}
+              {AndMoreLink}
+            </ReactMarkdown>
+          </TextBlock>
         </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
           <Explore />
@@ -166,7 +170,13 @@ export default Index;
 // component as props.
 export async function getStaticProps() {
   const releases: Release[] = await fetchGitHubReleases(4);
+  const data = await getSheet();
 
-  const content = await getSheet();
+  let content;
+  if (data === undefined || data === null || data.length === 0) {
+    content = defaultContent;
+  } else {
+    content = Object.fromEntries(data);
+  }
   return {props: {releases, content}};
 }

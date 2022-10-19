@@ -23,17 +23,7 @@ export async function getSheet() {
       spreadsheetId: process.env.SPREADSHEET_ID,
       range: RANGE,
     });
-
-    const rows = response.data.values;
-
-    if (rows && rows.length) {
-      return rows.map(row => ({
-        title: row[0],
-        description: row[1],
-        linkText: row[2] || null,
-        href: row[3] || null,
-      }));
-    }
+    return response.data.values;
   } catch (err) {
     console.log(err);
   }
