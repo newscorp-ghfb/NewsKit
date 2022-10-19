@@ -275,7 +275,7 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
     }}
     behaviors={{
       title: 'Grid behaviours',
-      introduction: 'The following guidance describes how the grid behaves',
+      introduction: 'The following guidance describes how the grid behaves.',
       cards: [
         {
           title: 'Max-width',
@@ -343,8 +343,9 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
             >
               visible and hidden
             </Link>{' '}
-            at different breakpoints. When used `hidden` excludes content from
-            focus order when the screen size matches the applied breakpoint.
+            at different breakpoints. When used &apos;hidden&apos; excludes
+            content from focus order when the screen size matches the applied
+            breakpoint.
           </ContentText>
         </>
       ),
