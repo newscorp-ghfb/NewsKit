@@ -56,7 +56,9 @@ export const useAudioFunctions = ({
           ),
           media_segment: getMediaSegment(duration, currentTimeRef.current),
           media_offset: formatTrackTime(currentTimeRef.current),
+          /* istanbul ignore next */
           media_volume: audioRef.current?.volume,
+          /* istanbul ignore next */
           media_playback_rate: audioRef.current?.playbackRate,
         };
   }, [live, duration, currentTimeRef, audioRef]);
