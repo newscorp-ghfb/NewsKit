@@ -50,7 +50,7 @@ declare module 'react-codesandboxer' {
     examplePath: string;
     example: string;
     name: string;
-    dependencies: Record<string, unknown>;
+    dependencies: any;
     providedFiles: Record<string, unknown>;
     template: string;
   };
