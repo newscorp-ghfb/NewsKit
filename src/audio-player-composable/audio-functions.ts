@@ -56,8 +56,10 @@ export const useAudioFunctions = ({
           ),
           media_segment: getMediaSegment(duration, currentTimeRef.current),
           media_offset: formatTrackTime(currentTimeRef.current),
+          media_volume: audioRef.current?.volume,
+          media_playback_rate: audioRef.current?.playbackRate,
         };
-  }, [duration, live, currentTimeRef]);
+  }, [live, duration, currentTimeRef, audioRef]);
 
   const getTrackingInformation = useCallback(
     (
@@ -127,8 +129,14 @@ export const useAudioFunctions = ({
       ifPlayer(player => {
         player.playbackRate = speed;
       });
+
+      const trackingInformation = getTrackingInformation(
+        'audio-player-playback-speed',
+        EventTrigger.Change,
+      );
+      fireEvent(trackingInformation);
     },
-    [ifPlayer, setPlaybackSpeed],
+    [ifPlayer, setPlaybackSpeed, getTrackingInformation, fireEvent],
   );
 
   const onClickBackward = useCallback(
@@ -252,8 +260,14 @@ export const useAudioFunctions = ({
   const onVolumeChange = useCallback(
     ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
       updateAudioVolume((target as HTMLAudioElement).volume);
+
+      const trackingInformation = getTrackingInformation(
+        'audio-player-volume',
+        EventTrigger.Change,
+      );
+      fireEvent(trackingInformation);
     },
-    [updateAudioVolume],
+    [updateAudioVolume, getTrackingInformation, fireEvent],
   );
 
   const onChangeSlider = useCallback(
@@ -279,7 +293,7 @@ export const useAudioFunctions = ({
 
   const onEnded = useCallback(() => {
     const trackingInformation = getTrackingInformation(
-      'audio-complete',
+      'audio-player-complete',
       EventTrigger.End,
     );
     fireEvent(trackingInformation);
