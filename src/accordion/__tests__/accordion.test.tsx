@@ -322,12 +322,11 @@ describe('Accordion', () => {
 
   test('fire tracking event', async () => {
     const mockFireEvent = jest.fn();
-    const eventContext = {
-      event: 'other event data',
-    };
     const props = {
       eventOriginator: 'accordion-item',
-      eventContext,
+      eventContext: {
+        event: 'other event data',
+      },
       ...defaultProps,
     };
     const headerButton = await renderWithTheme((() => (

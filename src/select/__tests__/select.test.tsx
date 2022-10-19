@@ -11,7 +11,7 @@ import {
 } from '../../test/test-utils';
 import {AssistiveText} from '../../assistive-text';
 import {Label} from '../../label';
-import {createTheme} from '../..';
+import {createTheme, EventTrigger, InstrumentationProvider} from '../..';
 import {IconFilledSearch} from '../../icons';
 import {countries} from './phone-countries';
 
@@ -478,6 +478,49 @@ describe('Select', () => {
     expect(getAllByRole('option').length).not.toBe(countries.length);
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('fire tracking event ', async () => {
+    const mockFireEvent = jest.fn();
+
+    const props = {
+      eventOriginator: 'select-with-trigger',
+      eventContext: {
+        event: 'other event data',
+      },
+      children: [
+        <SelectOption key="1" defaultSelected value="option 1">
+          option 1
+        </SelectOption>,
+        <SelectOption key="2" value="option 2">
+          option 2
+        </SelectOption>,
+      ],
+    };
+    const {getByTestId, getAllByRole} = renderWithTheme(() => (
+      <InstrumentationProvider fireEvent={mockFireEvent}>
+        <Select {...props} />
+      </InstrumentationProvider>
+    ));
+
+    // open select
+    await waitFor(() => {
+      fireEvent.click(getByTestId('select-button'));
+    });
+
+    // select 2nd option
+    await waitFor(() => {
+      fireEvent.click(getAllByRole('option')[1]);
+    });
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'select-with-trigger',
+      trigger: EventTrigger.Change,
+      context: {
+        event: 'other event data',
+        value: 'option 2',
+      },
+    });
   });
 
   describe('in Modal', () => {
