@@ -1406,27 +1406,6 @@ describe('Audio Player Composable', () => {
       });
     });
 
-    // TODO: do we need this one, seems the same as the first from the suite above
-    test('should raise event when the track has ended', () => {
-      const fireEventSpy = jest.fn();
-      const {getByTestId} = renderWithImplementation(
-        AudioPlayerComposable,
-        recordedAudioProps,
-        fireEventSpy,
-      );
-
-      const expectedObject = {
-        ...recordedTrackingOutputObject,
-        originator: 'audio-player-complete',
-        trigger: 'end',
-      };
-
-      const player = getByTestId('audio-element');
-      fireEvent.ended(player);
-
-      expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
-    });
-
     test('raise event when audio player autoplay', () => {
       const fireEventSpy = jest.fn();
       const {getByTestId} = renderWithImplementation(
@@ -1436,22 +1415,20 @@ describe('Audio Player Composable', () => {
       );
 
       const expectedObject = {
-        // ...recordedTrackingOutputObject,
-        // originator: 'audio-player-audio',
-        // trigger: 'start',
-
-        // TODO: Why this is triggering this event
-        media_volume: undefined,
-        context: {},
-        originator: 'button',
-        trigger: 'click',
+        context: {
+          ...recordedTrackingOutputObject.context,
+          media_volume: 0,
+        },
+        originator: 'audio-player-audio',
+        trigger: 'start',
       };
 
       const play = getByTestId('audio-player-play-pause-button');
       fireEvent.canPlay(getByTestId('audio-element'));
       fireEvent.click(play);
-      expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
       fireEvent.click(play);
+
+      expect(fireEventSpy).toHaveBeenNthCalledWith(4, expectedObject);
     });
 
     test('should raise event while the audio is being played', () => {
