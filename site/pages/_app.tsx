@@ -132,7 +132,7 @@ export default class MyApp extends App<Props, State> {
     return (
       <>
         <HeadNextSeo
-          description="NewsKit design system - components and guidelines to 
+          description="NewsKit design system - components and guidelines to
           help increase the speed of creation and innovation in digital teams."
           image={{
             url: 'social/landing.png',
@@ -145,6 +145,8 @@ export default class MyApp extends App<Props, State> {
           layer={{zIndex: 1000}}
           instrumentation={createEventInstrumentation(handlers, {
             ...pageProps,
+            pageOriginator: path.split('/').filter(Boolean).at(-1),
+            pageType: path.split('/').filter(Boolean).at(0),
           })}
         >
           <ThemeMode.Provider value={themeMode}>

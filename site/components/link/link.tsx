@@ -7,12 +7,18 @@ export const Link: React.FC<LinkProps> = ({
   href,
   children,
   type = 'inline',
+  eventContext = String(children),
+  eventOriginator,
   ...rest
 }) => (
   <>
     {type === 'standalone' && (
       <LinkNext href={href} passHref>
-        <LinkStandalone href={href} {...rest}>
+        <LinkStandalone
+          href={href}
+          eventContext={{value: eventContext}}
+          {...rest}
+        >
           {children}
         </LinkStandalone>
       </LinkNext>
@@ -20,7 +26,7 @@ export const Link: React.FC<LinkProps> = ({
 
     {type === 'inline' && (
       <LinkNext href={href} passHref>
-        <LinkInline href={href} {...rest}>
+        <LinkInline href={href} eventContext={{value: eventContext}} {...rest}>
           {children}
         </LinkInline>
       </LinkNext>
