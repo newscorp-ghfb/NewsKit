@@ -114,18 +114,6 @@ const StyledContainer = styled.div`
   overflow: scroll;
 `;
 
-const StyledScrollChild = styled.div`
-  height: 250px;
-  width: 350px;
-  ${() =>
-    isApplitoolsTest
-      ? {}
-      : {
-          paddingTop: '180px',
-          paddingLeft: '140px',
-        }}
-`;
-
 const DEFAULT_CONTENT =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum justo id rutrum consectetur. Cras ultrices diam id dapibus viverra.';
 
@@ -191,14 +179,12 @@ const BoundedPopoverWithOverflow = ({
           : `${(fallbackBehaviour || []).join(', ')}`}
       </StorybookSubHeading>
       <StyledContainer ref={boundaryRef}>
-        <StyledScrollChild>
-          <PopoverWithBtn
-            fallbackBehaviour={fallbackBehaviour}
-            content="Popover content"
-            placement="top"
-            boundary={boundaryRef.current || undefined}
-          />
-        </StyledScrollChild>
+        <PopoverWithBtn
+          fallbackBehaviour={fallbackBehaviour}
+          content="Popover content"
+          placement="top"
+          boundary={boundaryRef.current || undefined}
+        />
       </StyledContainer>
     </>
   );
@@ -377,15 +363,20 @@ export const StoryPopoverStyleOverrides = () => (
 );
 StoryPopoverStyleOverrides.storyName = 'popover-style-overrides';
 
-export const StoryPopoverBehaviours = () => (
-  <StyledPage>
-    <GridLayout columns={{xs: 'repeat(1, minmax(0, 1fr))'}} rowGap="20px">
-      <BoundedPopoverWithOverflow fallbackBehaviour={['flip']} />
-      <BoundedPopoverWithOverflow fallbackBehaviour={['shift']} />
-      <BoundedPopoverWithOverflow fallbackBehaviour={['flip', 'shift']} />
-    </GridLayout>
-  </StyledPage>
-);
+// Flip and shift only work in the visual tests when the viewport is used as the
+// boundary. Show both in one scenario with no padding so both flip and shift kick in.
+export const StoryPopoverBehaviours = () =>
+  isApplitoolsTest ? (
+    <BoundedPopoverWithOverflow fallbackBehaviour={['flip', 'shift']} />
+  ) : (
+    <StyledPage>
+      <GridLayout columns={{xs: 'repeat(1, minmax(0, 1fr))'}} rowGap="20px">
+        <BoundedPopoverWithOverflow fallbackBehaviour={['flip']} />
+        <BoundedPopoverWithOverflow fallbackBehaviour={['shift']} />
+        <BoundedPopoverWithOverflow fallbackBehaviour={['flip', 'shift']} />
+      </GridLayout>
+    </StyledPage>
+  );
 StoryPopoverBehaviours.storyName = 'popover-behaviours';
 
 export default {
