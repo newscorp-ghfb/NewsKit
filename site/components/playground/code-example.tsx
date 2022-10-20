@@ -11,7 +11,6 @@ const newskitVersion = 'unstable'; // packageJson.version;
 const index = `
 import React from "react";
 import { createRoot } from 'react-dom/client';
-import ReactDOM from "react-dom";
 
 import { NewsKitProvider, newskitLightTheme } from "newskit";
 
@@ -27,7 +26,6 @@ root.render(
   <NewsKitProvider theme={newskitLightTheme}>
     <App />
   </ NewsKitProvider>,
-  container
 );
 `;
 
@@ -42,20 +40,17 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
   source,
   error,
 }) => {
-  const dynamicKeyValues = Object.keys(peerDependencies).map(k => k.toString());
+  const dynamicKeys = Object.keys(peerDependencies).map(k => k.toString());
 
-  const dynamicValueDependancies = Object.values(peerDependencies).map(v =>
+  const dynamicValues = Object.values(peerDependencies).map(v =>
     v.split(' ').slice(-1).toString(),
   );
 
-  const results = Object.fromEntries(
-    dynamicKeyValues.map((_, i) => [
-      dynamicKeyValues[i],
-      dynamicValueDependancies[i],
-    ]),
+  const peerDependenciesObject = Object.fromEntries(
+    dynamicKeys.map((_, i) => [dynamicKeys[i], dynamicValues[i]]),
   );
 
-  results.newskit = newskitVersion;
+  peerDependenciesObject.newskit = newskitVersion;
 
   return (
     <LegacyBlock
@@ -84,7 +79,7 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
         examplePath="/"
         example={source}
         name={componentName}
-        dependencies={results}
+        dependencies={peerDependenciesObject}
         providedFiles={{'index.js': {content: index}}}
         template="create-react-app"
       >

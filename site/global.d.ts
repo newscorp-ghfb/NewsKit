@@ -5,7 +5,7 @@ declare global {
 }
 
 declare module '@mdx-js/react' {
-  import * as React from 'react'
+  import * as React from 'react';
   type ComponentType =
     | 'a'
     | 'blockquote'
@@ -31,10 +31,10 @@ declare module '@mdx-js/react' {
     | 'td'
     | 'thematicBreak'
     | 'tr'
-    | 'ul'
+    | 'ul';
   export type Components = {
-    [key in ComponentType]?: React.ComponentType<{children: React.ReactNode}>
-  }
+    [key in ComponentType]?: React.ComponentType<{children: React.ReactNode}>;
+  };
   export interface MDXProviderProps {
     children: React.ReactNode | ((props: {themeMode: string}) => ReactNode);
     components: Components;
@@ -50,7 +50,7 @@ declare module 'react-codesandboxer' {
     examplePath: string;
     example: string;
     name: string;
-    dependencies: any;
+    dependencies: object;
     providedFiles: Record<string, unknown>;
     template: string;
   };
