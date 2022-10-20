@@ -1,5 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ReleaseNotes renders code snippets correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-block-start: 32px;
+}
+
+.emotion-1 {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-2 {
+  background-color: rgba(27, 31, 35, 0.05);
+  color: #6A6A6A;
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: 0.2em 0.4em;
+  font-family: monospace;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h3>
+        Emotion packages as peer dependencies\\r\\nStarting from version 6, newskit does not include 
+        <code
+          class="emotion-2"
+        >
+          @emotion/styled
+        </code>
+         & 
+        <code
+          class="emotion-2"
+        >
+          @emotion/react
+        </code>
+         libraries, which means you need to install these separately:\\r\\n
+        <code
+          class="emotion-2"
+        >
+          \\r\\n// npm\\r\\nnpm install newskit@6.0.0 @emotion/react @emotion/styled\\r\\n// or yarn\\r\\nyarn add newskit@6.0.0 @emotion/react @emotion/styled\\r\\n
+        </code>
+        \\r\\n---\\r\\n
+      </h3>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`ReleaseNotes renders correctly 1`] = `
 <DocumentFragment>
   .emotion-0 {

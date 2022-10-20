@@ -357,6 +357,15 @@ describe('Audio Player Composable', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  it('should render with native audio attributes', () => {
+    const props = {
+      ...recordedAudioProps,
+      id: 'epic-music',
+    };
+    const {asFragment} = renderWithTheme(AudioPlayerComposable, props);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it('should render correctly when in autoplay', () => {
     const {asFragment} = renderWithTheme(
       AudioPlayerComposable,
