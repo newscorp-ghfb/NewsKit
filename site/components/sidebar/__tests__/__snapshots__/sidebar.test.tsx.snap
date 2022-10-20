@@ -3764,8 +3764,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 0 1px 0 0;
-  margin-top: 48px;
-  height: calc(100vh - 48px);
+  margin-block-start: 48px;
 }
 
 @media screen and (max-width: 479px) {
@@ -3923,12 +3922,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    display: none;
   }
 }
 
@@ -4551,8 +4544,326 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 24px;
 }
 
-.emotion-637 {
-  margin-block: 24px;
+.emotion-638 {
+  display: grid;
+  grid-template-columns: 1fr 44px;
+}
+
+.emotion-639 {
+  display: block;
+  color: #2E3F54;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+  padding-block-start: 8px;
+}
+
+.emotion-639 svg {
+  fill: #2E3F54;
+}
+
+.emotion-639::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-639::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-640 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-641 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  block-size: 24px;
+  inline-size: 44px;
+  margin-right: 12px;
+}
+
+.emotion-641 * {
+  box-sizing: border-box;
+}
+
+.emotion-642 {
+  position: absolute;
+  top: 50%;
+  left: calc((16px / 2) + 4px);
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -moz-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -ms-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+}
+
+.emotion-642:disabled {
+  opacity: 0;
+}
+
+.emotion-642:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-642:valid:hover:not(:disabled) {
+  background-color: #00601A;
+  opacity: 0.2;
+}
+
+.emotion-642:valid:hover:active:not(:disabled) {
+  background-color: #00601A;
+  opacity: 0.4;
+}
+
+.emotion-642:invalid:hover:not(:disabled) {
+  background-color: #A90000;
+  opacity: 0.2;
+}
+
+.emotion-642:invalid:hover:active:not(:disabled) {
+  background-color: #A90000;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-642 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-642 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-643 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #85939C;
+  border-radius: 20rem;
+  padding-inline: 4px;
+}
+
+.emotion-643:checked:not(:disabled) {
+  background-color: #3358CC;
+}
+
+.emotion-643:disabled {
+  background-color: #DEE2E5;
+}
+
+.emotion-643:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-643:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-643:checked:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-643:checked:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-643:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-643:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-644 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.emotion-645 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+}
+
+.emotion-645 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-645:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-645 svg {
+  height: 100%;
+  width: 100%;
+  max-width: 16px;
+  max-height: 24px;
+}
+
+.emotion-646 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: end;
+  justify-content: end;
+}
+
+.emotion-646 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-646:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-646 svg {
+  height: 100%;
+  width: 100%;
+  max-width: 16px;
+  max-height: 24px;
+}
+
+.emotion-647 {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  padding-inline: 4px;
+  padding-block: 4px;
+  position: absolute;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+}
+
+.emotion-647 svg {
+  fill: #09111C;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-647 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-647 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+.emotion-648 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-649 {
+  color: #2E3F54;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-649:disabled {
+  color: #C0C7CC;
 }
 
 <div
@@ -4579,7 +4890,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
             aria-hidden="true"
             aria-label="drawer menu on the left"
             aria-modal="true"
-            class="emotion-0"
+            class="nk-drawer-exit-done emotion-0"
             data-testid="sidebar"
             role="dialog"
           >
@@ -7874,9 +8185,63 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     </svg>
                   </div>
                 </a>
+              </div>
+              <div
+                class="emotion-631"
+              >
                 <div
-                  class="emotion-637"
-                />
+                  class="emotion-638"
+                >
+                  <label
+                    class="emotion-639"
+                    for="dark-theme-switch"
+                  >
+                    Dark theme
+                  </label>
+                  <label
+                    class="emotion-640"
+                  >
+                    <div
+                      class="emotion-641"
+                      role="presentation"
+                    >
+                      <div
+                        class="emotion-642"
+                        data-testid="checkbox-feedback"
+                      />
+                      <div
+                        class="emotion-643"
+                      >
+                        <div
+                          class="emotion-644"
+                        >
+                          <div
+                            class="emotion-645"
+                          />
+                          <div
+                            class="emotion-646"
+                          />
+                          <div
+                            class="emotion-647"
+                          />
+                        </div>
+                        <input
+                          class="emotion-648"
+                          data-testid="checkbox-input"
+                          id="dark-theme-switch"
+                          role="switch"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="emotion-649"
+                    >
+                       
+                    </span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -11659,8 +12024,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 0 1px 0 0;
-  margin-top: 48px;
-  height: calc(100vh - 48px);
+  margin-block-start: 48px;
 }
 
 @media screen and (max-width: 479px) {
@@ -11818,12 +12182,6 @@ exports[`Sidebar renders correctly when open 1`] = `
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    display: none;
   }
 }
 
@@ -12446,8 +12804,326 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 24px;
 }
 
-.emotion-637 {
-  margin-block: 24px;
+.emotion-638 {
+  display: grid;
+  grid-template-columns: 1fr 44px;
+}
+
+.emotion-639 {
+  display: block;
+  color: #2E3F54;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+  padding-block-start: 8px;
+}
+
+.emotion-639 svg {
+  fill: #2E3F54;
+}
+
+.emotion-639::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-639::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-640 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-641 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  block-size: 24px;
+  inline-size: 44px;
+  margin-right: 12px;
+}
+
+.emotion-641 * {
+  box-sizing: border-box;
+}
+
+.emotion-642 {
+  position: absolute;
+  top: 50%;
+  left: calc((16px / 2) + 4px);
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -moz-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -ms-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+}
+
+.emotion-642:disabled {
+  opacity: 0;
+}
+
+.emotion-642:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-642:valid:hover:not(:disabled) {
+  background-color: #00601A;
+  opacity: 0.2;
+}
+
+.emotion-642:valid:hover:active:not(:disabled) {
+  background-color: #00601A;
+  opacity: 0.4;
+}
+
+.emotion-642:invalid:hover:not(:disabled) {
+  background-color: #A90000;
+  opacity: 0.2;
+}
+
+.emotion-642:invalid:hover:active:not(:disabled) {
+  background-color: #A90000;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-642 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-642 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-643 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #85939C;
+  border-radius: 20rem;
+  padding-inline: 4px;
+}
+
+.emotion-643:checked:not(:disabled) {
+  background-color: #3358CC;
+}
+
+.emotion-643:disabled {
+  background-color: #DEE2E5;
+}
+
+.emotion-643:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-643:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-643:checked:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-643:checked:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-643:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-643:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-644 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.emotion-645 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+}
+
+.emotion-645 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-645:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-645 svg {
+  height: 100%;
+  width: 100%;
+  max-width: 16px;
+  max-height: 24px;
+}
+
+.emotion-646 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: end;
+  justify-content: end;
+}
+
+.emotion-646 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-646:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-646 svg {
+  height: 100%;
+  width: 100%;
+  max-width: 16px;
+  max-height: 24px;
+}
+
+.emotion-647 {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  padding-inline: 4px;
+  padding-block: 4px;
+  position: absolute;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+}
+
+.emotion-647 svg {
+  fill: #09111C;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-647 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-647 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+.emotion-648 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-649 {
+  color: #2E3F54;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-649:disabled {
+  color: #C0C7CC;
 }
 
 <div
@@ -12476,7 +13152,7 @@ exports[`Sidebar renders correctly when open 1`] = `
             aria-hidden="false"
             aria-label="drawer menu on the left"
             aria-modal="true"
-            class="emotion-0 nk-drawer-appear nk-drawer-appear-active"
+            class="nk-drawer-enter-active emotion-0 nk-drawer-appear-active"
             data-testid="sidebar"
             role="dialog"
           >
@@ -15657,9 +16333,62 @@ exports[`Sidebar renders correctly when open 1`] = `
                     </svg>
                   </div>
                 </a>
+              </div>
+              <div
+                class="emotion-631"
+              >
                 <div
-                  class="emotion-637"
-                />
+                  class="emotion-638"
+                >
+                  <label
+                    class="emotion-639"
+                    for="dark-theme-switch"
+                  >
+                    Dark theme
+                  </label>
+                  <label
+                    class="emotion-640"
+                  >
+                    <div
+                      class="emotion-641"
+                      role="presentation"
+                    >
+                      <div
+                        class="emotion-642"
+                        data-testid="checkbox-feedback"
+                      />
+                      <div
+                        class="emotion-643"
+                      >
+                        <div
+                          class="emotion-644"
+                        >
+                          <div
+                            class="emotion-645"
+                          />
+                          <div
+                            class="emotion-646"
+                          />
+                          <div
+                            class="emotion-647"
+                          />
+                        </div>
+                        <input
+                          class="emotion-648"
+                          data-testid="checkbox-input"
+                          id="dark-theme-switch"
+                          role="switch"
+                          type="checkbox"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="emotion-649"
+                    >
+                       
+                    </span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
