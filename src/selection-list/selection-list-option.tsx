@@ -52,7 +52,6 @@ export const SelectionListOption = React.forwardRef<
 
     const onClick = composeEventHandlers([
       onClickProp,
-
       () =>
         fireEvent({
           originator: eventOriginator,

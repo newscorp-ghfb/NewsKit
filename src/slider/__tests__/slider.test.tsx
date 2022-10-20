@@ -168,15 +168,6 @@ describe('slider', () => {
           },
         };
 
-        // renderWithTheme(
-        //   () => (
-        //     <InstrumentationProvider fireEvent={mockFireEvent}>
-        //       <Slider {...initialProps} {...props} />
-        //     </InstrumentationProvider>
-        //   ),
-        //   theme,
-        // );
-
         renderWithImplementation(
           Slider,
           {...initialProps, ...props},
