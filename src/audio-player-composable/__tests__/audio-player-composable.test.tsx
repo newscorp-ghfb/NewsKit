@@ -1439,7 +1439,8 @@ describe('Audio Player Composable', () => {
         // ...recordedTrackingOutputObject,
         // originator: 'audio-player-audio',
         // trigger: 'start',
-        // TODO: this test is not good
+
+        // TODO: Why this is triggering this event
         media_volume: undefined,
         context: {},
         originator: 'button',
@@ -1449,9 +1450,8 @@ describe('Audio Player Composable', () => {
       const play = getByTestId('audio-player-play-pause-button');
       fireEvent.canPlay(getByTestId('audio-element'));
       fireEvent.click(play);
-      fireEvent.click(play);
-
       expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
+      fireEvent.click(play);
     });
 
     test('should raise event while the audio is being played', () => {

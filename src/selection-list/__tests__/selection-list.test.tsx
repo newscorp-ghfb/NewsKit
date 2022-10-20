@@ -2,9 +2,10 @@ import {fireEvent, waitFor} from '@testing-library/react';
 import React from 'react';
 import {act} from 'react-dom/test-utils';
 import {IconFilledAdd} from '../../icons';
-import {EventTrigger, InstrumentationProvider} from '../../instrumentation';
+import {EventTrigger} from '../../instrumentation';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {SelectionList, SelectionListOption} from '../index';
@@ -134,18 +135,22 @@ describe('SelectionList', () => {
 
     test('fire tracking event ', async () => {
       const mockFireEvent = jest.fn();
-      const props = {
+      const itemProps = {
         eventOriginator: 'select-with-trigger',
         eventContext: {
           event: 'other event data',
         },
       };
 
-      const {getAllByRole} = renderWithTheme(() => (
-        <InstrumentationProvider fireEvent={mockFireEvent}>
-          <SelectionList>{defaultSelectionListOptions(props)}</SelectionList>
-        </InstrumentationProvider>
-      ));
+      const props = {
+        children: defaultSelectionListOptions(itemProps),
+      };
+
+      const {getAllByRole} = renderWithImplementation(
+        SelectionList,
+        props,
+        mockFireEvent,
+      );
 
       // select 2nd option
       await waitFor(() => {

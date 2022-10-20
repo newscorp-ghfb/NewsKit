@@ -8,10 +8,11 @@ import {
   renderWithTheme,
   renderWithThemeInBody,
   renderToFragmentWithTheme,
+  renderWithImplementation,
 } from '../../test/test-utils';
 import {AssistiveText} from '../../assistive-text';
 import {Label} from '../../label';
-import {createTheme, EventTrigger, InstrumentationProvider} from '../..';
+import {createTheme, EventTrigger} from '../..';
 import {IconFilledSearch} from '../../icons';
 import {countries} from './phone-countries';
 
@@ -497,11 +498,12 @@ describe('Select', () => {
         </SelectOption>,
       ],
     };
-    const {getByTestId, getAllByRole} = renderWithTheme(() => (
-      <InstrumentationProvider fireEvent={mockFireEvent}>
-        <Select {...props} />
-      </InstrumentationProvider>
-    ));
+
+    const {getByTestId, getAllByRole} = renderWithImplementation(
+      Select,
+      props,
+      mockFireEvent,
+    );
 
     // open select
     await waitFor(() => {

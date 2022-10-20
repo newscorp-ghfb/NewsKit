@@ -2,6 +2,7 @@ import React from 'react';
 import {Slider} from '../slider';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {SliderProps} from '../types';
@@ -10,7 +11,6 @@ import {StyledThumbValue} from '../styled';
 import {IconOutlinedImage} from '../../icons';
 import stylePresets from '../style-presets';
 import componentDefaults from '../defaults';
-import {InstrumentationProvider} from '../../instrumentation';
 
 let mockRange: jest.Mock;
 jest.mock('react-range', () => {
@@ -168,12 +168,20 @@ describe('slider', () => {
           },
         };
 
-        renderWithTheme(
-          () => (
-            <InstrumentationProvider fireEvent={mockFireEvent}>
-              <Slider {...initialProps} {...props} />
-            </InstrumentationProvider>
-          ),
+        // renderWithTheme(
+        //   () => (
+        //     <InstrumentationProvider fireEvent={mockFireEvent}>
+        //       <Slider {...initialProps} {...props} />
+        //     </InstrumentationProvider>
+        //   ),
+        //   theme,
+        // );
+
+        renderWithImplementation(
+          Slider,
+          {...initialProps, ...props},
+          mockFireEvent,
+          {},
           theme,
         );
 

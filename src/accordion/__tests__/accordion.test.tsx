@@ -6,9 +6,10 @@ import {
   IconFilledCancel,
   IconFilledStarOutline,
 } from '../../icons';
-import {EventTrigger, InstrumentationProvider} from '../../instrumentation';
+import {EventTrigger} from '../../instrumentation';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {TextBlock} from '../../text-block';
@@ -329,11 +330,13 @@ describe('Accordion', () => {
       },
       ...defaultProps,
     };
-    const headerButton = await renderWithTheme((() => (
-      <InstrumentationProvider fireEvent={mockFireEvent}>
-        <Accordion {...props} />
-      </InstrumentationProvider>
-    )) as React.FC).getByTestId('accordion-control');
+
+    const {getByTestId} = renderWithImplementation(
+      Accordion,
+      props,
+      mockFireEvent,
+    );
+    const headerButton = await getByTestId('accordion-control');
 
     fireEvent.click(headerButton);
 
