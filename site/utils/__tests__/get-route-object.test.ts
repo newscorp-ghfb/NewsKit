@@ -20,20 +20,23 @@ jest.mock('../../routes', () => {
     page: true,
     id: '/group2/page1/a',
   };
-  return [
-    mockGroup1,
-    {
-      title: 'Group2',
-      id: '/group2',
-      subNav: [
-        {
-          title: 'Group2Page1',
-          id: '/group2/page1',
-          subNav: [mockGroup2Page1A],
-        },
-      ],
-    },
-  ];
+
+  return {
+    routes: [
+      mockGroup1,
+      {
+        title: 'Group2',
+        id: '/group2',
+        subNav: [
+          {
+            title: 'Group2Page1',
+            id: '/group2/page1',
+            subNav: [mockGroup2Page1A],
+          },
+        ],
+      },
+    ],
+  };
 });
 
 describe('get-route-object', () => {
