@@ -1108,7 +1108,6 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run: yarn ci
       - nx/set-shas
 
       - run: npx nx workspace-lint
