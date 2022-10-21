@@ -1,6 +1,6 @@
 import {useRouter} from 'next/router';
 import {RouteObject} from './get-route-object';
-import routes from '../routes';
+import {routes} from '../routes';
 
 let initialRoute: RouteObject | undefined;
 let subNavRoute: RouteObject | undefined;

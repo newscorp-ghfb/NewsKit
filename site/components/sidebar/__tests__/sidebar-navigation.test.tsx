@@ -10,57 +10,59 @@ const scrollIntoViewMock = jest.fn();
 Element.prototype.scrollIntoView = scrollIntoViewMock;
 
 jest.mock('next/link', () => ({children}: any) => children);
-jest.mock('../../../routes', () => [
-  {
-    title: 'Group 1',
-    id: '/group1',
-    subNav: [
-      {
-        title: 'Group 1 Page 1',
-        page: true,
-        id: '/group1/page1',
-      },
-    ],
-  },
-  {
-    title: 'Group 2',
-    id: '/group2',
-    subNav: [
-      {
-        title: 'Group 2 Page 1',
-        id: '/group2/page1',
-        subNav: [
-          {
-            title: 'Group 2 Page 1 a',
-            page: true,
-            id: '/group2/page1/a',
-          },
-          {
-            title: 'Group 2 Page 1 b',
-            page: true,
-            id: '/group2/page1/b',
-          },
-        ],
-      },
-      {
-        title: 'Group 2 Page 2',
-        id: '/group2/page2',
-        subNav: [
-          {
-            title: 'Group 2 Page 2 a',
-            page: true,
-            id: '/group2/page2/a',
-          },
-          {
-            title: 'Group 2 Page 2 b',
-            page: true,
-            id: '/group2/page2/b',
-          },
-        ],
-      },
-    ],
-  },
-]);
+jest.mock('../../../routes', () => ({
+  routes: [
+    {
+      title: 'Group 1',
+      id: '/group1',
+      subNav: [
+        {
+          title: 'Group 1 Page 1',
+          page: true,
+          id: '/group1/page1',
+        },
+      ],
+    },
+    {
+      title: 'Group 2',
+      id: '/group2',
+      subNav: [
+        {
+          title: 'Group 2 Page 1',
+          id: '/group2/page1',
+          subNav: [
+            {
+              title: 'Group 2 Page 1 a',
+              page: true,
+              id: '/group2/page1/a',
+            },
+            {
+              title: 'Group 2 Page 1 b',
+              page: true,
+              id: '/group2/page1/b',
+            },
+          ],
+        },
+        {
+          title: 'Group 2 Page 2',
+          id: '/group2/page2',
+          subNav: [
+            {
+              title: 'Group 2 Page 2 a',
+              page: true,
+              id: '/group2/page2/a',
+            },
+            {
+              title: 'Group 2 Page 2 b',
+              page: true,
+              id: '/group2/page2/b',
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}));
 
 describe('Sidebar navigation', () => {
   test('should match snapshot with no active link', () => {

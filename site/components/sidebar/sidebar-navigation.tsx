@@ -8,7 +8,7 @@ import {
 } from 'newskit';
 import LinkNext from 'next/link';
 import {useRouter} from 'next/router';
-import routes from '../../routes';
+import {routes} from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
 import {MenuMobileCollapsible} from '../menu-collapsible/menu-collapsible';
 import {PageLinkProps, SiteMenuItemProps, SubNavProps} from './types';
