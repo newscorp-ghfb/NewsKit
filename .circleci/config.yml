@@ -1105,11 +1105,9 @@ jobs:
     docker:
       - image: cimg/node:lts-browsers
     steps:
+      - checkout
       - attach_workspace:
           at: ~/project
-      # TODO checkout needed if I am attaching workspace? 
-      - checkout
-      # 
       - run: yarn ci
       - nx/set-shas
 
