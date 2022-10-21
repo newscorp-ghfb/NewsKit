@@ -1165,9 +1165,9 @@ workflows:
         value: << pipeline.git.branch >>
     jobs:
       - install_deps
-      - test_nx_script
+      - test_nx_script:
           # TODO might be needed if CIRCLE_API_TOKEN is neeced to be made available with ur user token.
-          # context: ncu-product-platforms-context
+          context: ncu-product-platforms-context
           requires:
             - install_deps
       - install_cypress
