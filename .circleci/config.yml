@@ -4,6 +4,7 @@ orbs:
   slack: circleci/slack@4.10.1
   aws-cli: circleci/aws-cli@2.0.0
   github-cli: circleci/github-cli@1.0.4
+  nx: nrwl/nx@1.5.1
 
 slack_notify: &slack_notify
   event: 'fail'
@@ -1100,6 +1101,25 @@ jobs:
     steps:
       - run: echo "Merge checker"
 
+  test_nx_script:
+    docker:
+      - image: cimg/node:lts-browsers
+    steps:
+      - attach_workspace:
+          at: ~/project
+      # TODO checkout needed if I am attaching workspace? 
+      - checkout
+      # 
+      - run: yarn ci
+      - nx/set-shas
+
+      - run: npx nx workspace-lint
+      - run: npx nx format:check
+      - run: npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=lint --parallel=3
+      - run: npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=test --parallel=3 --ci --code-coverage
+      - run: npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=build --parallel=3
+
+
 # ========== FILTERS START    ==========
 
 only_on_trigger_release_tag: &only_on_trigger_release_tag
@@ -1145,6 +1165,11 @@ workflows:
         value: << pipeline.git.branch >>
     jobs:
       - install_deps
+      - test_nx_script
+          # TODO might be needed if CIRCLE_API_TOKEN is neeced to be made available with ur user token.
+          # context: ncu-product-platforms-context
+          requires:
+            - install_deps
       - install_cypress
       - build_icons:
           requires:

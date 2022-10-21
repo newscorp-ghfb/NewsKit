@@ -1,0 +1,16 @@
+{
+  "npmScope": "newskit-repo",
+  "workspaceLayout": {
+    "libsDir": "lib"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": []
+      }
+    }
+  },
+  "targetDefaults": {},
+  "defaultBase": "main"
+}
