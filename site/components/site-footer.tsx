@@ -79,7 +79,6 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
                   target="_blank"
                   external
                   overrides={linkOverrides}
-                  eventContext={{value: 'Careers'}}
                 >
                   Careers
                 </Link>
@@ -90,7 +89,6 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
                   target="_blank"
                   external
                   overrides={linkOverrides}
-                  eventContext={{value: 'Blog'}}
                 >
                   Blog
                 </Link>
@@ -109,7 +107,6 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
                 <Link
                   href="/help/terms-and-conditions"
                   overrides={linkOverrides}
-                  eventContext={{value: 'Terms & conditions'}}
                 >
                   Terms & conditions
                 </Link>
