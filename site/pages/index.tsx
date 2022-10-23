@@ -1,7 +1,6 @@
 import {GridLayout, TextBlock} from 'newskit';
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
-import {HomepageContentProps} from '../utils/google-sheet/types';
 import {Link} from '../components/link';
 import {Release, ReleasesPageProps} from '../utils/release-notes/types';
 import {
@@ -17,6 +16,7 @@ import {IconFilledLaunch} from '../../src/icons';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
 import {getSheet} from '../utils/google-sheet';
+import {ContentProps, getValueFromCMS} from '../utils/get-value';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -30,33 +30,13 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
-const defaultContent = {
-  LatestBlogTitle: 'Latest Blog',
-  latestBlogDescription:
-    "How an audio player component tells the story of NewsKit Design System's changing strategy",
-  LatestBlogDescription: 'Read on Medium',
-  latestBlogLink:
-    'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
-  andMoreTitle: 'And More:',
-  andMoreLink:
-    'Support for [environment variables](https://nextjs.org/docs/basic-features/environment-variables "Environment variables"), [preview mode](https://nextjs.org/docs/advanced-features/preview-mode "Preview mode"), [custom head tags](https://nextjs.org/docs/api-reference/next/head "Custom head tags"), [automatic polyfills](https://nextjs.org/docs/basic-features/supported-browsers-features#polyfills "Automatic polyfills") and more.',
-};
-
 const Index = ({
   releases,
   content,
   ...layoutProps
-}: LayoutProps & ReleasesPageProps & HomepageContentProps) => {
+}: LayoutProps & ReleasesPageProps & ContentProps) => {
   const {themeMode, toggleTheme} = layoutProps;
-  const {
-    LatestBlogTitle,
-    LatestBlogDescription,
-    LatestBlogLinkText,
-    LatestBlogLink,
-    AndMoreTitle,
-    AndMoreLink,
-  } = content;
-
+  console.log(content);
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
       <GridLayout
@@ -75,8 +55,12 @@ const Index = ({
           }}
         >
           <FeatureCard
-            title={LatestBlogTitle}
-            description={LatestBlogDescription}
+            title={getValueFromCMS(content, 'LatestBlogTitle', 'Latest Blog')}
+            description={getValueFromCMS(
+              content,
+              'LatestBlogDescription',
+              "How an audio player component tells the story of NewsKit Design System's changing strategy",
+            )}
             stylePrefix="worldDesignSystemsWeekCard"
             layout="horizontal"
             overrides={{
@@ -84,8 +68,16 @@ const Index = ({
               description: {typographyPreset: 'editorialSubheadline010'},
             }}
             buttonIcon={<IconFilledLaunch />}
-            buttonLabel={LatestBlogLinkText}
-            buttonHref={LatestBlogLink}
+            buttonLabel={getValueFromCMS(
+              content,
+              'LatestBlogLinkText',
+              'Read on Medium',
+            )}
+            buttonHref={getValueFromCMS(
+              content,
+              'LatestBlogLink',
+              'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
+            )}
             buttonOverrides={{
               paddingInline: 'space000',
               typographyPreset: 'utilityButton020',
@@ -97,7 +89,7 @@ const Index = ({
             stylePreset="gitHubMarkDownText"
             marginBlockStart="space050"
           >
-            {AndMoreTitle}
+            {getValueFromCMS(content, 'AndMoreTitle', 'And More:')}
             <ReactMarkdown
               components={{
                 a: ({href, children}) => (
@@ -110,7 +102,11 @@ const Index = ({
                 ),
               }}
             >
-              {AndMoreLink}
+              {getValueFromCMS(
+                content,
+                'AndMoreLink',
+                'Support for [environment variables](https://nextjs.org/docs/basic-features/environment-variables "Environment variables"), [preview mode](https://nextjs.org/docs/advanced-features/preview-mode "Preview mode"), [custom head tags](https://nextjs.org/docs/api-reference/next/head "Custom head tags"), [automatic polyfills](https://nextjs.org/docs/basic-features/supported-browsers-features#polyfills "Automatic polyfills") and more.',
+              )}
             </ReactMarkdown>
           </TextBlock>
         </GridLayout>
@@ -174,7 +170,7 @@ export async function getStaticProps() {
 
   let content;
   if (data === undefined || data === null || data.length === 0) {
-    content = defaultContent;
+    content = {};
   } else {
     content = Object.fromEntries(data);
   }

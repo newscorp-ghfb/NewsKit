@@ -1,6 +1,6 @@
 import {google} from 'googleapis';
 
-// The sheet name
+// The range of googlesheet
 const RANGE = 'Homepage';
 // Define the required scopes. In our case we only need read access.
 const SCOPE = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
