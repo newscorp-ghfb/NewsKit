@@ -36,7 +36,7 @@ export default class MyDocument extends Document {
           </style>
           {helmet.script.toComponent()}
           <HTMLMeta />
-          {isSiteEnvProduction && (
+          {/* {isSiteEnvProduction && (
             <Consent
               sourcePointConfigUnified={{
                 accountId: 259,
@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
               }}
               reactHelmet={Helmet}
             />
-          )}
+          )} */}
         </Head>
         <body>
           <Global
@@ -246,14 +246,14 @@ export default class MyDocument extends Document {
               }
             `}
           />
-          {isSiteEnvProduction && (
-            <Tealium
-              accountId="newsinternational"
-              profileId="thetimes.newskit"
-              env={isSiteEnvProduction ? 'prod' : 'dev'}
-              reactHelmet={Helmet}
-            />
-          )}
+
+          <Tealium
+            accountId="newsinternational"
+            profileId="thetimes.newskit"
+            env={isSiteEnvProduction ? 'prod' : 'dev'}
+            reactHelmet={Helmet}
+          />
+
           <Main />
           <NextScript />
         </body>

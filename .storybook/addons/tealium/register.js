@@ -81,10 +81,10 @@ const Tool = () => {
           {''}
         </ConsentSettingsLink>
         <Tealium {...CONFIG.tealium} reactHelmet={Helmet} />
-        <Consent
+        {/* <Consent
           sourcePointConfigUnified={CONFIG.consent}
           reactHelmet={Helmet}
-        />
+        /> */}
         <Tooltip content="Privacy Manager" asLabel placement="left">
           <span>
             <IconButton
