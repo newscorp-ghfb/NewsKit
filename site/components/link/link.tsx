@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import LinkNext from 'next/link';
 import {LinkStandalone, LinkInline} from 'newskit';
 import {LinkProps} from './types';
@@ -6,6 +6,8 @@ import {
   childIsString,
   deepMap,
 } from '../../../src/utils/react-children-utilities';
+
+let linkLabel: React.ReactNode | string;
 
 export const Link: React.FC<LinkProps> = ({
   href,
@@ -15,15 +17,16 @@ export const Link: React.FC<LinkProps> = ({
   eventOriginator,
   ...rest
 }) => {
-  // This is traversing the children of the Link component
-  // to find the string label which is used for tracking
-  let linkLabel;
-  deepMap(children, child => {
-    if (childIsString(child)) {
-      linkLabel = child;
-    }
-    return child;
-  });
+  useEffect(() => {
+    // This is traversing the children of the Link component
+    // to find the string label which is used for tracking
+    deepMap(children, child => {
+      if (childIsString(child)) {
+        linkLabel = child;
+      }
+      return child;
+    });
+  }, [children]);
 
   return (
     <>
