@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {FlagProps, BaseFlagProps, BaseFlagOverrides} from './types';
-
-import {StyledGridLayout} from './styled';
+import {Stack} from '../stack';
+import {StyledBaseFlag} from './oldStyled';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {filterOutFalsyProperties} from '../utils/filter-object';
@@ -14,40 +14,24 @@ import {withOwnTheme} from '../utils/with-own-theme';
 export const BaseFlag = React.forwardRef<
   HTMLDivElement,
   BaseFlagProps<BaseFlagOverrides>
->(
-  (
-    {
-      children,
-      overrides,
-      loading,
-      disabled,
-      as,
-      justifyContent = 'center',
-      alignContent = 'center',
-      alignItems = 'center',
-      justifyItems = 'center',
-      ...props
-    },
-    ref,
-  ) => {
-    const theme = useTheme();
+>(({children, overrides, loading, disabled, as, ...props}, ref) => {
+  const theme = useTheme();
 
-    return (
-      <StyledGridLayout
-        {...props}
-        $loading={loading}
-        $disabled={disabled} // Used to avoid passing disabled HTML attribute to an anchor link
-        disabled={as !== 'a' && disabled}
-        overrides={overrides}
-        ref={ref}
-        as={as}
-        justifyContent={justifyContent}
-        alignContent={alignContent}
-        alignItems={alignItems}
-        justifyItems={justifyItems}
-        columnGap={getToken({theme, overrides}, '', '', 'spaceInline')}
-        columns={`repeat(${React.Children.toArray(children).length}, auto)`}
-        inline
+  return (
+    <StyledBaseFlag
+      {...props}
+      $loading={loading}
+      $disabled={disabled} // Used to avoid passing disabled HTML attribute to an anchor link
+      disabled={as !== 'a' && disabled}
+      overrides={overrides}
+      ref={ref}
+      as={as}
+    >
+      <Stack
+        spaceInline={getToken({theme, overrides}, '', '', 'spaceInline')}
+        flow="horizontal-center"
+        stackDistribution="center"
+        as="span"
       >
         {React.Children.map(children, child =>
           ['string', 'number'].includes(typeof child) ? (
@@ -61,10 +45,10 @@ export const BaseFlag = React.forwardRef<
             child
           ),
         )}
-      </StyledGridLayout>
-    );
-  },
-);
+      </Stack>
+    </StyledBaseFlag>
+  );
+});
 
 const ThemelessFlag = React.forwardRef<HTMLDivElement, FlagProps>(
   ({overrides = {}, ...props}, ref) => {
@@ -86,4 +70,4 @@ const ThemelessFlag = React.forwardRef<HTMLDivElement, FlagProps>(
   },
 );
 
-export const Flag = withOwnTheme(ThemelessFlag)({defaults, stylePresets});
+export const OldFlag = withOwnTheme(ThemelessFlag)({defaults, stylePresets});

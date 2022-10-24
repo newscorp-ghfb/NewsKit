@@ -21,11 +21,43 @@ export interface BaseFlagOverrides extends LogicalProps {
   iconSize?: MQ<string>;
 }
 
+export type AlignItemsProps =
+  | 'stretch'
+  | 'center'
+  | 'flex-start'
+  | 'flex-end'
+  | 'baseline'
+  | 'initial'
+  | 'inherit';
+export type JustifyContentProps =
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'space-between'
+  | 'space-around'
+  | 'space-evenly'
+  | 'initial'
+  | 'inherit';
+export type AlignContentProps =
+  | 'stretch'
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'space-between'
+  | 'space-around'
+  | 'space-evenly'
+  | 'initial'
+  | 'inherit';
+
 export interface BaseFlagProps<TOverrides> {
   disabled?: boolean;
   loading?: boolean;
   overrides?: TOverrides;
   size?: FlagSize;
+  alignContent?: MQ<string>;
+  justifyContent?: MQ<string>;
+  alignItems?: MQ<string>;
+  justifyItems?: MQ<string>;
   children?: React.ReactNode;
   as?: keyof JSX.IntrinsicElements;
 }

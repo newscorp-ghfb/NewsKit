@@ -59,6 +59,7 @@ const wrapChild = (
     $wrap: wrap,
     ...extractLogicalPropsFromOverrides(child.props),
   };
+
   const hasSpace = hasSpacing(spaceStack, spaceInline);
 
   const renderAs = getAsProp(as, list);
@@ -101,7 +102,6 @@ const wrapChild = (
     );
   }
 
-  // If child is anything else
   return list || hasSpace ? (
     <ChildContainer {...renderAs} {...childProps}>
       {child}
