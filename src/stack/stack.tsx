@@ -52,6 +52,13 @@ const wrapChild = (
 ) => {
   if (!child) return null;
 
+  const logiclessChildProps: StyledChildProps = {
+    spaceStack,
+    spaceInline,
+    flow,
+    $wrap: wrap,
+  };
+
   const childProps: StyledChildProps = {
     spaceStack,
     spaceInline,
@@ -103,7 +110,7 @@ const wrapChild = (
 
   // If child is anything else
   return list || hasSpace ? (
-    <ChildContainer {...renderAs} {...childProps}>
+    <ChildContainer {...renderAs} {...logiclessChildProps}>
       {child}
     </ChildContainer>
   ) : (
