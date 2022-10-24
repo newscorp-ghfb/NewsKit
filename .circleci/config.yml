@@ -612,7 +612,7 @@ jobs:
           <<: *applitools_defaults
       - run:
           name: Run Applitools Storybook Component Tests
-          # Allow the step to pass even if tests fail by appending || true. The Applitools GitHub check is required, so
+          #  Allow the step to pass even if tests fail by appending || true. The Applitools GitHub check is required, so
           # merging will still be blocked until test failures are resolved. But the test job will not need to be re-run.
           command: make comps_visual_test || true
       - slack/notify:
