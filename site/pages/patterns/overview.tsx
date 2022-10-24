@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid, ThemeProvider} from 'newskit';
-import routes from '../../routes';
+import {routes} from '../../routes';
 import Layout, {LayoutProps} from '../../components/layout';
 import {Hero} from '../../components/illustrations/patterns/hero';
 import {Item} from '../../components/sidebar/types';

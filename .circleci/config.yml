@@ -783,9 +783,11 @@ jobs:
           name: Assume role and build docker images
           command: |
             if [ << parameters.docker_version >> = release ]; then
-              export DOCKER_TAG=$(node -p "require('./package.json').version")
+              export DOCKER_TAG=$(node -p "require('./package.json').version")-release
+            elif [ << parameters.docker_version >> = prod ]; then
+              export DOCKER_TAG=$(node -p "require('./package.json').version")-prod-$CIRCLE_SHA1
             else
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-$CIRCLE_SHA1
+              export DOCKER_TAG=$(node -p "require('./package.json').version")-dev-$CIRCLE_SHA1
             fi
             export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
             export AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
@@ -968,7 +970,7 @@ jobs:
             # Temp downgrading React. Needed for avoiding Hydration error with React v18 https://github.com/vercel/next.js/discussions/35773
             yarn add react@17.0.1
             yarn add react-dom@17.0.1
-            yarn add @emotion/react 
+            yarn add @emotion/react
             yarn add @emotion/styled
             yarn add -D cypress@9.1.0;
       - run:
@@ -1427,6 +1429,7 @@ workflows:
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
+          docker_version: dev
           requires:
             - build_storybook
             - lint
@@ -1461,6 +1464,7 @@ workflows:
       - build_push_docker_ecr:
           name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
+          docker_version: prod
           requires:
             - build_docs_prod_link
 
