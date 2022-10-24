@@ -856,8 +856,9 @@ jobs:
       flux_repo_name:
         type: string
         default: 'ncu-flux-newskit-site'
-      is_production_deployment:
-        type: boolean
+      deployment_type:
+        type: string
+        default: dev
     executor: flux-deploy
     steps:
       - setup_remote_docker:
@@ -867,11 +868,12 @@ jobs:
           name: Push config to flux repo
           command: |
             apk add --update npm
-            if [ << parameters.is_production_deployment >> = true ];
-            then
-              export DOCKER_TAG=$(node -p "require('./package.json').version")
+            if [ << parameters.deployment_type >> = release ]; then
+              export DOCKER_TAG=$(node -p "require('./package.json').version")-release
+            elif [ << parameters.deployment_type >> = prod ]; then
+              export DOCKER_TAG=$(node -p "require('./package.json').version")-prod-$CIRCLE_SHA1
             else
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-$CIRCLE_SHA1
+              export DOCKER_TAG=$(node -p "require('./package.json').version")-dev-$CIRCLE_SHA1
             fi
             config_values=eks/values/product-platforms-values-<< parameters.environment >>.yaml
             out_dir=product-platforms-<< parameters.environment >>
@@ -1441,7 +1443,7 @@ workflows:
           name: eks_flux_deploy_dev
           context: ncu-newskit-site-dev
           environment: dev
-          is_production_deployment: false
+          deployment_type: dev
           requires:
             - build_push_docker_ecr_dev
       - eks_kubectl_deploy:
@@ -1471,7 +1473,7 @@ workflows:
       - eks_flux_deploy:
           name: eks_flux_deploy_staging
           context: ncu-newskit-site-stage
-          is_production_deployment: true
+          deployment_type: prod
           environment: staging
           requires:
             - build_push_docker_ecr_prod
@@ -1483,10 +1485,10 @@ workflows:
             - eks_flux_deploy_staging
 
       - eks_flux_deploy:
-          name: eks_flux_deploy_dev_to_prod
+          name: eks_flux_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
-          is_production_deployment: true
+          deployment_type: prod
           requires:
             - eks_kubectl_deploy_staging
       - eks_kubectl_deploy:
@@ -1494,7 +1496,7 @@ workflows:
           context: ncu-newskit-site-prod
           environment: prod
           requires:
-            - eks_flux_deploy_dev_to_prod
+            - eks_flux_deploy_prod
       # end
 
   main_codemod:
@@ -1662,7 +1664,7 @@ workflows:
           <<: *only_on_version_tag
           name: eks_flux_deploy_staging
           context: ncu-newskit-site-stage
-          is_production_deployment: true
+          deployment_type: release
           environment: staging
           requires:
             - publish_npm
@@ -1679,7 +1681,7 @@ workflows:
           name: eks_flux_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
-          is_production_deployment: true
+          deployment_type: release
           requires:
             - eks_kubectl_deploy_staging
       - eks_kubectl_deploy:
