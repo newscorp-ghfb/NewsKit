@@ -12,7 +12,7 @@ Object.entries(routes).forEach(route => {
     it(`should pass visual regression test with dark theme on ${pageName}`, () => {
       cy.eyesOpen();
       cy.mockConsentAndVisit(path);
-      cy.get('[data-testid="theme-switch-button"]').click();
+      cy.get('[data-testid="theme-switch-button"]').click({force: true});
       cy.eyesCheckWindow(`${pageName} page`);
       cy.eyesClose();
     });

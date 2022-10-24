@@ -18,7 +18,9 @@ Object.entries(routes).forEach(route => {
     it(`should pass visual regression test on ${pageName}`, () => {
       cy.eyesOpen();
       cy.mockConsentAndVisit(path);
-      if (!['spacing', 'welcome', 'overview'].includes(pageName)) {
+      if (
+        !['spacing', 'welcome', 'overview', 'audioPlayer'].includes(pageName)
+      ) {
         cy.get('[data-testid="sample-code"]').first().scrollIntoView({
           easing: 'linear',
         });
