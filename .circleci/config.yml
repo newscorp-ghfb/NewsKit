@@ -1453,16 +1453,11 @@ workflows:
           requires:
             - eks_flux_deploy_dev
 
-      - approve_publish_docs_&_storybook:
-          context: ncu-product-platforms-context
-          type: approval
-          requires:
-            - eks_kubectl_deploy_dev
       - build_docs:
           name: build_docs_prod_link
           context: ncu-newskit-site-prod
           requires:
-            - approve_publish_docs_&_storybook
+            - eks_kubectl_deploy_dev
       - build_push_docker_ecr:
           name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
