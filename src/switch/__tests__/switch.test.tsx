@@ -2,6 +2,7 @@ import React from 'react';
 import {fireEvent} from '@testing-library/react';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {Switch, SwitchProps} from '..';
@@ -14,6 +15,7 @@ import {
   IconFilledLightMode,
 } from '../../icons';
 import {BaseSwitchIconProps} from '../../base-switch/types';
+import {EventTrigger} from '../../instrumentation';
 
 describe('Switch', () => {
   states.forEach(([id, props]) => {
@@ -209,5 +211,31 @@ describe('Switch', () => {
     expect(feedback).toBeNull();
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('fire tracking event', () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      label: 'label',
+      defaultChecked: false,
+      eventOriginator: 'switch-item',
+      eventContext: {
+        event: 'other event data',
+      },
+    };
+
+    const {getByRole} = renderWithImplementation(Switch, props, mockFireEvent);
+    const checkbox = getByRole('switch') as HTMLInputElement;
+
+    fireEvent.click(checkbox);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'switch-item',
+      trigger: EventTrigger.Change,
+      context: {
+        checked: true,
+        event: 'other event data',
+      },
+    });
   });
 });
