@@ -83,7 +83,7 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
       if (searchInput) {
         const handleInput: EventListener = event => {
           const newStartScreen = document.querySelector<HTMLDivElement>(
-            '.DocSearch-NewStartScreen',
+            '.DocSearch-Modal .DocSearch-NewStartScreen',
           );
           if (newStartScreen) {
             const {value} = event.target as HTMLInputElement;
@@ -336,7 +336,7 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
             '.DocSearch-Dropdown-Container': {
               order: 1,
             },
-            '.DocSearch-NewStartScreen': {
+            '.DocSearch-Modal .DocSearch-NewStartScreen': {
               order: 2,
             },
           },
