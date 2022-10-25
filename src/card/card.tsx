@@ -24,6 +24,7 @@ import {withOwnTheme} from '../utils/with-own-theme';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
+import {EventData, EventTrigger, useInstrumentation} from '../instrumentation';
 
 // This key is needed to for the card headline (and to the link when it is wrapped)
 // to avoid missing key prop warning from react.
@@ -76,10 +77,30 @@ const getCardHeadlineOverrides = (
   };
 };
 
+const CardLink = ({
+  eventOriginator = 'card-link',
+  eventContext = {},
+  ...props
+}) => {
+  const {fireEvent} = useInstrumentation();
+  const onClick = () => {
+    fireEvent({
+      originator: eventOriginator,
+      trigger: EventTrigger.Click,
+      context: {
+        href: props.href,
+        ...eventContext,
+      },
+    });
+  };
+  return <StyledCardLink {...props} onClick={onClick} />;
+};
+
 const findAndDecorateCardHeadline = (
   children: React.ReactNode,
   theme: Theme,
   href?: string | BaseLinkProps,
+  eventData?: EventData,
 ) => {
   let hasHeadline = false;
   const decorateCardHeadline = (child: React.ReactNode) => {
@@ -115,9 +136,9 @@ const findAndDecorateCardHeadline = (
 
     // if href is set - wrap card headline with styles within a link
     return (
-      <StyledCardLink {...linkPropsWithHref} key={cardHeadlineKey}>
+      <CardLink {...linkPropsWithHref} {...eventData} key={cardHeadlineKey}>
         {CardHeadline}
-      </StyledCardLink>
+      </CardLink>
     );
   };
 
@@ -128,10 +149,12 @@ const findAndDecorateCardHeadline = (
 const TeaserDecorator = ({
   children,
   href,
+  eventOriginator,
+  eventContext,
 }: {
   children: React.ReactNode;
   href?: string | BaseLinkProps;
-}) => {
+} & EventData) => {
   const theme = useTheme() as Theme;
 
   // if hasHeadline = true - style card headline and wrap it within a link when href prop is set.
@@ -139,6 +162,7 @@ const TeaserDecorator = ({
     children,
     theme,
     href,
+    {eventContext, eventOriginator},
   );
 
   if (hasHeadline) {
@@ -159,7 +183,13 @@ const TeaserDecorator = ({
     href,
   );
 
-  return <StyledCardLink {...linkProps} />;
+  return (
+    <CardLink
+      {...linkProps}
+      eventContext={eventContext}
+      eventOriginator={eventOriginator}
+    />
+  );
 };
 
 const ThemelessCard = React.forwardRef<HTMLDivElement, CardProps>(
@@ -172,6 +202,8 @@ const ThemelessCard = React.forwardRef<HTMLDivElement, CardProps>(
       actions,
       children,
       overrides = {},
+      eventContext = {},
+      eventOriginator = 'card-link',
       ...restProps
     },
     ref,
@@ -208,7 +240,13 @@ const ThemelessCard = React.forwardRef<HTMLDivElement, CardProps>(
               layout={layout}
               overrides={overrides}
             >
-              <TeaserDecorator href={href}>{children}</TeaserDecorator>
+              <TeaserDecorator
+                href={href}
+                eventContext={eventContext}
+                eventOriginator={eventOriginator}
+              >
+                {children}
+              </TeaserDecorator>
             </StyledCardContainerTeaser>
           )}
           {actions && (
