@@ -1,12 +1,12 @@
 import React from 'react';
 import CodeSandboxer from 'react-codesandboxer';
 import {Button} from 'newskit';
-import {peerDependencies, version} from '../../../package.json';
+import packageInfo from '../../../package.json';
 import {Code} from '../code';
 import {LegacyBlock} from '../legacy-block';
 import {ErrorMessageContainer} from './error-boundary';
 
-const newskitVersion = version; // packageJson.version;
+const {peerDependencies, version: newskitVersion} = packageInfo;
 
 const index = `
 import React from "react";
