@@ -1,0 +1,30 @@
+### .github/workflows/dependabot.yml
+### As of 2300 UTC on 11 March, this workflow has secrets and a read-write token
+
+version: 2
+updates:
+# Enable version updates for Actions
+  - package-ecosystem: "github-actions"
+    # Look for `.github/workflows` in the `root` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "weekly"
+      
+name: Dependabot Workflow
+on:
+  pull_request_target
+
+permissions:
+  pull-requests: write
+
+jobs: 
+  do-stuff: 
+    if: "${{ github.actor == 'dependabot[bot]' }}"
+    runs-on: ubuntu-latest
+    steps: 
+      - 
+        uses: actions/checkout
+        with: 
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          ref: "${{ github.event.pull_request.head.sha }}"
