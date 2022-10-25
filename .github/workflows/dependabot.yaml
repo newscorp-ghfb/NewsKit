@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - 
-        uses: actions/checkout
+        uses: actions/checkout@v2
         with: 
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           ref: "${{ github.event.pull_request.head.sha }}"
