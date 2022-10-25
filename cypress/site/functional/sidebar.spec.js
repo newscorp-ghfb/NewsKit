@@ -1,13 +1,13 @@
 // /<reference types="Cypress" />
 
-import siteRoutes from '../../../site/routes';
+import {routes} from '../../../site/routes';
 
 describe('Documentation Site - sidebar component', () => {
   before(() => {
     cy.mockConsentAndVisit('/');
   });
 
-  siteRoutes.forEach(route => {
+  routes.forEach(route => {
     it(`should contain ${route.title} section routes`, () => {
       if (route.title === 'Guides') {
         cy.visit('/getting-started/code/engineering-quickstart');

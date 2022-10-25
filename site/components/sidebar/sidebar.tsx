@@ -1,62 +1,78 @@
 import * as React from 'react';
-import {Block, Visible} from 'newskit';
+import {Block, Drawer, useBreakpointKey, Visible} from 'newskit';
 import {SidebarNav} from './sidebar-navigation';
-import {GitHubLaunch} from '../menu-collapsible/menu-collapsible';
-import {StyledSidebarDesktop, StyledDrawer} from './styled';
+import {
+  DarkModeToggle,
+  GitHubLaunch,
+} from '../menu-collapsible/menu-collapsible';
+import {StyledSidebarDesktop} from './styled';
 
 interface SidebarProps {
   sidebarOpen: boolean;
   handleSidebarClick: () => void;
   hideSidebar?: boolean;
+  themeMode: string;
+  toggleTheme: () => void;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({
   sidebarOpen,
   handleSidebarClick,
   hideSidebar,
-}) => (
-  <>
-    <Visible xs sm md>
-      <StyledDrawer
-        data-testid="sidebar"
-        aria-label="drawer menu on the left"
-        open={sidebarOpen}
-        onDismiss={handleSidebarClick}
-        placement="left"
-        closePosition="none"
-        hideOverlay
-        overrides={{
-          content: {
-            spaceInset: 'spaceInset000',
-          },
-          panel: {
-            stylePreset: 'sidebar',
+  themeMode,
+  toggleTheme,
+}) => {
+  const bp = useBreakpointKey();
 
-            minSize: '100%',
-          },
-        }}
-      >
-        <SidebarNav />
-        <Block marginInline="space060" marginBlock="space050">
-          <GitHubLaunch />
-          <Block marginBlock="space050" />
-        </Block>
-      </StyledDrawer>
-    </Visible>
-    <Visible lg xl>
-      {!hideSidebar && (
-        <StyledSidebarDesktop
-          open={sidebarOpen}
+  return (
+    <>
+      <Visible xs sm md>
+        <Drawer
           data-testid="sidebar"
-          role="complementary"
+          aria-label="drawer menu on the left"
+          // We are auto closing the <Drawer/> if the breakpoint is larger
+          // than "md" because we can't rely fully on the <Visible/> component
+          // because of the nature of how the <Layer/> component within the
+          // <Drawer/> works.
+          open={sidebarOpen && bp !== 'lg' && bp !== 'xl'}
+          onDismiss={handleSidebarClick}
+          placement="left"
+          closePosition="none"
+          hideOverlay
+          overrides={{
+            content: {
+              spaceInset: 'spaceInset000',
+            },
+            panel: {
+              stylePreset: 'sidebar',
+              marginBlockStart: 'space080',
+              minSize: '100%',
+            },
+          }}
         >
-          <Block spaceInset="space010" />
-
           <SidebarNav />
-        </StyledSidebarDesktop>
-      )}
-    </Visible>
-  </>
-);
+          <Block marginInline="space060" marginBlock="space050">
+            <GitHubLaunch />
+          </Block>
+          <Block marginInline="space060" marginBlock="space050">
+            <DarkModeToggle themeMode={themeMode} toggleTheme={toggleTheme} />
+          </Block>
+        </Drawer>
+      </Visible>
+      <Visible lg xl>
+        {!hideSidebar && (
+          <StyledSidebarDesktop
+            open={sidebarOpen}
+            data-testid="sidebar"
+            role="complementary"
+          >
+            <Block spaceInset="space010" />
 
+            <SidebarNav />
+          </StyledSidebarDesktop>
+        )}
+      </Visible>
+    </>
+  );
+};
 export default Sidebar;

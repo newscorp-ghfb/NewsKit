@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid} from 'newskit';
-import routes from '../../routes';
+import {routes} from '../../routes';
 import Layout, {LayoutProps} from '../../components/layout';
 import {Item} from '../../components/sidebar/types';
 import {HeaderIndex} from '../../components/header-index/index';

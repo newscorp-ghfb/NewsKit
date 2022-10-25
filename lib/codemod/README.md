@@ -40,9 +40,9 @@ Imports and transform `newskit` icons to `emotion-icons`;
 ```
 
 ```sh
-npx @newskit/codemod emotion-icons [path]
+npx @newskit/codemod v6.0.0/emotion-icons [path]
 // example
-npx @newskit/codemod emotion-icons 'components/**/*.+(ts|tsx|js|jsx)' 
+npx @newskit/codemod v6.0.0/emotion-icons 'components/**/*.+(ts|tsx|js|jsx)' 
 ```
 
 #### `remove-redundant-marker-ul`
