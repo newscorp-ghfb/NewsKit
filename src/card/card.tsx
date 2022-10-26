@@ -78,7 +78,9 @@ const getCardHeadlineOverrides = (
 };
 
 const CardLink = ({
+  /* istanbul ignore next */
   eventOriginator = 'card-link',
+  /* istanbul ignore next */
   eventContext = {},
   ...props
 }) => {
