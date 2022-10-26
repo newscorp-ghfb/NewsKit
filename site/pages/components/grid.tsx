@@ -1,5 +1,6 @@
 import React from 'react';
-import {Block} from 'newskit';
+import {Block, InlineMessage, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {LayoutProps} from '../../components/layout';
 import {MetaStatus} from '../../components/meta/types';
@@ -8,97 +9,135 @@ import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {ContentText} from '../../components/text-section/content-text';
 
-const commonOverridesRows = [
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
+
+const commonPropsRows = [
   {
-    attribute: 'xsMargin',
-    type: 'String',
+    name: 'children',
+    type: 'Cell',
+    default: undefined,
+    description: `The cell components must be used as children of the grid. Using anything other than the cell components will break the grid functionality.`,
+    required: true,
+  },
+  {
+    name: 'xsMargin',
+    type: 'string',
     default: 'space040',
     description: `An override for the grid margin spacing at the xs and upwards breakpoint.`,
+    required: undefined,
   },
   {
-    attribute: 'smMargin',
-    type: 'String',
+    name: 'smMargin',
+    type: 'string',
     default: 'space040',
     description: `An override for the grid margin spacing at the sm and upwards breakpoint.`,
+    required: undefined,
   },
   {
-    attribute: 'mdMargin',
-    type: 'String',
+    name: 'mdMargin',
+    type: 'string',
     default: 'space040',
     description: `An override for the grid margin spacing at the md and upwards breakpoint.`,
+    required: undefined,
   },
   {
-    attribute: 'lgMargin',
-    type: 'String',
+    name: 'lgMargin',
+    type: 'string',
     default: 'space050',
     description: `An override for the grid margin spacing at the lg and upwards breakpoint.`,
+    required: undefined,
   },
   {
-    attribute: 'xlMargin',
-    type: 'String',
+    name: 'xlMargin',
+    type: 'string',
     default: 'space050',
     description: `An override for the grid margin spacing at the xl breakpoint.`,
+    required: undefined,
   },
   {
-    attribute: 'xsColumnGutter',
-    type: 'String',
+    name: 'xsColumnGutter',
+    type: 'string',
     default: 'space040',
-    description: ` An override for the column gutter spacing at the xs and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    description: `An override for the column gutter spacing at the xs and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    required: undefined,
   },
   {
-    attribute: 'smColumnGutter',
-    type: 'String',
+    name: 'smColumnGutter',
+    type: 'string',
     default: 'space040',
     description: `An override for the column gutter spacing at the sm and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    required: undefined,
   },
   {
-    attribute: 'mdColumnGutter',
-    type: 'String',
+    name: 'mdColumnGutter',
+    type: 'string',
     default: 'space040',
     description: `An override for the column gutter spacing at the md and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    required: undefined,
   },
   {
-    attribute: 'lgColumnGutter',
-    type: 'String',
+    name: 'lgColumnGutter',
+    type: 'string',
     default: 'space050',
     description: `An override for the column gutter spacing at the lg and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    required: undefined,
   },
   {
-    attribute: 'xlColumnGutter',
-    type: 'String',
+    name: 'xlColumnGutter',
+    type: 'string',
     default: 'space050',
     description: `An override for the column gutter spacing at the xl breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    required: undefined,
   },
   {
-    attribute: 'xsRowGutter',
-    type: 'String',
+    name: 'xsRowGutter',
+    type: 'string',
     default: 'space040',
     description: `An override for the row gutter spacing at the xs and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    required: undefined,
   },
   {
-    attribute: 'smRowGutter',
-    type: 'String',
+    name: 'smRowGutter',
+    type: 'string',
     default: 'space040',
     description: `An override for the row gutter spacing at the sm and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    required: undefined,
   },
   {
-    element: '',
-    attribute: 'mdRowGutter',
-    type: 'String',
+    name: 'mdRowGutter',
+    type: 'string',
     default: 'space040',
     description: `An override for the row gutter spacing at the md and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    required: undefined,
   },
   {
-    attribute: 'lgRowGutter',
-    type: 'String',
+    name: 'lgRowGutter',
+    type: 'string',
     default: 'space050',
     description: `An override for the row gutter spacing at the lg and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    required: undefined,
   },
   {
-    attribute: 'xlRowGutter',
-    type: 'String',
+    name: 'xlRowGutter',
+    type: 'string',
     default: 'space050',
-    description: `An override for the row gutter spacing at the xl breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    description: `An override for the row gutter spacing at the xl  breakpoint. This applies to all direct children cells, but not the cells in further nested grids.`,
+    required: undefined,
+  },
+  {
+    name: 'maxWidth',
+    type: 'string',
+    default: '1920px',
+    description: `The maximum width of the Grid container component. The Grid will not grow bigger than 1920px wide.`,
+    required: undefined,
   },
 ];
 
@@ -356,23 +395,14 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
           title: 'Grid',
           summary:
             'The grid has a range of props that can be used to define an appropriate experience for different use cases.',
-          propsRows: [
-            {
-              name: 'children',
-              type: 'Cell',
-              default: undefined,
-              description: `The cell components must be used as children of the grid. Using anything other than the cell components will break the grid functionality.`,
-              required: true,
-            },
-          ],
-          overridesRows: commonOverridesRows,
+          propsRows: commonPropsRows,
         },
         {
           title: 'Cell',
           summary: `The cell has a range of props that can be used to define an appropriate experience for different use cases.`,
           propsRows: [
             {
-              name: 'Root',
+              name: 'Children',
               type: 'React.ReactNode',
               default: '',
               description:
@@ -380,18 +410,313 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
               required: true,
             },
             {
-              name: 'xs span',
-              type: [
-                'xsHidden',
-                'smHidden',
-                'mdHidden',
-                'lgHidden',
-                'xlHidden',
+              name: 'xs',
+              type: 'number | ‘full-width’',
+              default: '1',
+              description: (
+                <>
+                  The amount of columns for cell to span at the xs and upwards
+                  breakpoint. If set to &apos;full-width&apos; the cell will
+                  span all 12 columns and breakout across the margin of the
+                  grid. It will still be confined by the grid &apos;s max-width.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'sm',
+              type: 'number | ‘full-width’',
+              default: '1',
+              description: (
+                <>
+                  The amount of columns for cell to span at the sm and upwards
+                  breakpoint. If set to &apos;full-width&apos; the cell will
+                  span all 12 columns and breakout across the margin of the
+                  grid. It will still be confined by the grid &apos;s max-width.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'md',
+              type: 'number | ‘full-width’',
+              default: '1',
+              description: (
+                <>
+                  The amount of columns for cell to span at the md and upwards
+                  breakpoint. If set to &apos;full-width&apos; the cell will
+                  span all 12 columns and breakout across the margin of the
+                  grid. It will still be confined by the grid &apos;s max-width.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'lg',
+              type: 'number | ‘full-width’',
+              default: '1',
+              description: (
+                <>
+                  The amount of columns for cell to span at the lg and upwards
+                  breakpoint. If set to &apos;full-width&apos; the cell will
+                  span all 12 columns and breakout across the margin of the
+                  grid. It will still be confined by the grid &apos;s max-width.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'xl',
+              type: 'number | ‘full-width’',
+              default: '1',
+              description: (
+                <>
+                  The amount of columns for cell to span at the xl and upwards
+                  breakpoint. If set to &apos;full-width&apos; the cell will
+                  span all 12 columns and breakout across the margin of the
+                  grid. It will still be confined by the grid &apos;s max-width.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'xsHidden',
+              type: 'boolean',
+              default: 'false',
+              description: (
+                <>
+                  If true, the Cell will be hidden at the xs breakpoint. Unlike
+                  other breakpoint props this has no effect on other
+                  breakpoints.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'smHidden',
+              type: 'boolean',
+              default: 'false',
+              description: (
+                <>
+                  If true, the Cell will be hidden at the sm breakpoint. Unlike
+                  other breakpoint props this has no effect on other
+                  breakpoints.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'mdHidden',
+              type: 'boolean',
+              default: 'false',
+              description: (
+                <>
+                  If true, the Cell will be hidden at the md breakpoint. Unlike
+                  other breakpoint props this has no effect on other
+                  breakpoints.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'lgHidden',
+              type: 'boolean',
+              default: 'false',
+              description: (
+                <>
+                  If true, the Cell will be hidden at the lg breakpoint. Unlike
+                  other breakpoint props this has no effect on other
+                  breakpoints.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'xlHidden',
+              type: 'boolean',
+              default: 'false',
+              description: (
+                <>
+                  If true, the Cell will be hidden at the xl breakpoint. Unlike
+                  other breakpoint props this has no effect on other
+                  breakpoints.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'xsOrder',
+              type: 'number',
+              description: (
+                <>
+                  If set, this is the flex order number than will be applied at
+                  the xs and upwards breakpoint.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'smOrder',
+              type: 'number',
+              description: (
+                <>
+                  If set, this is the flex order number than will be applied at
+                  the sm and upwards breakpoint.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'mdOrder',
+              type: 'number',
+              description: (
+                <>
+                  If set, this is the flex order number than will be applied at
+                  the md and upwards breakpoint.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'lgOrder',
+              type: 'number',
+              description: (
+                <>
+                  If set, this is the flex order number than will be applied at
+                  the lg and upwards breakpoint.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'xlOrder',
+              type: 'number',
+              description: (
+                <>
+                  If set, this is the flex order number than will be applied at
+                  the xl and upwards breakpoint.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'xsOffset',
+              type: 'number',
+              description: (
+                <>
+                  If set, specifies the amount of columns the cell will be
+                  offset by at the xs and larger breakpoints.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'smOffset',
+              type: 'number',
+              description: (
+                <>
+                  If set, specifies the amount of columns the cell will be
+                  offset by at the sm and larger breakpoints.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'mdOffset',
+              type: 'number',
+              description: (
+                <>
+                  If set, specifies the amount of columns the cell will be
+                  offset by at the md and larger breakpoints.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'lgOffset',
+              type: 'number',
+              description: (
+                <>
+                  If set, specifies the amount of columns the cell will be
+                  offset by at the lg and larger breakpoints.
+                </>
+              ),
+              required: undefined,
+            },
+            {
+              name: 'xlOffset',
+              type: 'number',
+              description: (
+                <>
+                  If set, specifies the amount of columns the cell will be
+                  offset by at the xl breakpoints.
+                </>
+              ),
+              required: undefined,
+            },
+          ],
+          propsFooter: (
+            <>
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="columns info"
+                overrides={{marginBlockStart: 'space050'}}
+              >
+                The number of columns are set globally at the theme level.
+              </InlineMessage>
+            </>
+          ),
+        },
+        {
+          title: 'Grid component defaults',
+          summary: 'The grid has a range of predefined defaults.',
+          overridesRows: [
+            {
+              attribute: 'grid.containerMargin',
+              type: 'MQ<String>',
+              default: [
+                'xs = space04',
+                'sm = space040',
+                'md = space040',
+                'lg = space050',
+                'xl = space050',
               ],
-              default: '',
               description:
-                'The children of a column are rendered in that column, any supported React node is allowed.',
-              required: true,
+                'An override for the grid margin spacing at a specific breakpoint and upwards. and upwards breakpoint.',
+            },
+            {
+              attribute: 'grid.columnGutters',
+              type: 'String',
+              default: [
+                'xs = space04',
+                'sm = space040',
+                'md = space040',
+                'lg = space050',
+                'xl = space050',
+              ],
+              description:
+                'An override for the column gutter spacing at a specific breakpoint and upwards. This applies to all direct children cells, but not the cells in further nested grids.',
+            },
+            {
+              attribute: 'grid.rowGutters',
+              type: 'String',
+              default: [
+                'xs = space04',
+                'sm = space040',
+                'md = space040',
+                'lg = space050',
+                'xl = space050',
+              ],
+              description:
+                'An override for the row gutter spacing at a specific breakpoint and upwards.. This applies to all direct children cells, but not the cells in further nested grids.',
+            },
+            {
+              attribute: 'grid.columns',
+              type: 'number',
+              default: '12',
+              description:
+                'The total columns available to use. Each Cell by default takes up 1 column. If there are more Cells in a Grid than columns, or the Cell components inside a Grid span a total greater than 12, they will wrap.',
             },
           ],
         },
