@@ -4,6 +4,7 @@ import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 import {Override} from '../utils/overrides';
 import {ModalProps} from '../modal';
+import {EventData} from '../instrumentation';
 
 export type ButtonSelectSize = 'small' | 'medium' | 'large';
 
@@ -48,7 +49,7 @@ export type SelectPropsOverrides = {
   modal?: Override<ModalProps>;
 };
 
-export interface SelectProps extends CommonInputProps {
+export interface SelectProps extends CommonInputProps, EventData {
   loading?: boolean;
   children: Array<React.ReactElement<SelectOptionProps>>;
   validationIcon?: React.ReactNode;

@@ -1,6 +1,8 @@
 import React from 'react';
 import {IconFilledCheck} from '../icons';
+import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {useTheme} from '../theme';
+import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {getToken} from '../utils/get-token';
 import {StyledSelectionListOption} from './styled';
 import {SelectionListOptionProps} from './types';
@@ -10,7 +12,16 @@ export const SelectionListOption = React.forwardRef<
   SelectionListOptionProps
 >(
   (
-    {children, selected, selectedIcon, overrides = {}, ...restProps},
+    {
+      children,
+      selected,
+      selectedIcon,
+      overrides = {},
+      eventContext = {},
+      eventOriginator = 'selection-list-option',
+      onClick: onClickProp,
+      ...restProps
+    },
     forwardRef,
   ) => {
     const theme = useTheme();
@@ -37,6 +48,20 @@ export const SelectionListOption = React.forwardRef<
       );
     };
 
+    const {fireEvent} = useInstrumentation();
+
+    const onClick = composeEventHandlers([
+      onClickProp,
+      () =>
+        fireEvent({
+          originator: eventOriginator,
+          trigger: EventTrigger.Click,
+          context: {
+            ...eventContext,
+          },
+        }),
+    ]);
+
     return (
       <StyledSelectionListOption
         ref={forwardRef}
@@ -45,6 +70,7 @@ export const SelectionListOption = React.forwardRef<
         selected={selected}
         overrides={overrides}
         tabIndex={selected ? 0 : -1}
+        onClick={onClick}
         {...restProps}
       >
         {children}
