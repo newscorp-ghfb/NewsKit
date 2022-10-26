@@ -640,7 +640,8 @@ export default [
             title: 'Link',
             page: true,
             id: '/components/link',
-            description: 'Allows user to jump to a new location when clicked.',
+            description:
+              'Links allow users to navigate to a new location or to additional information.',
             illustration: 'components/url-illustration',
           },
           {
