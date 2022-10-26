@@ -1,9 +1,11 @@
-import {fireEvent} from '@testing-library/react';
+import {fireEvent, waitFor} from '@testing-library/react';
 import React from 'react';
 import {act} from 'react-dom/test-utils';
 import {IconFilledAdd} from '../../icons';
+import {EventTrigger} from '../../instrumentation';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {SelectionList, SelectionListOption} from '../index';
@@ -11,7 +13,9 @@ import {SelectionListOptionProps, SelectionListProps} from '../types';
 
 const ITEMS = ['Option 1', 'Option 2', 'Option 3'];
 
-const defaultSelectionListOptions = (props?: SelectionListOptionProps) =>
+const defaultSelectionListOptions = (
+  props?: Omit<SelectionListOptionProps, 'children'>,
+) =>
   ITEMS.map(item => (
     <SelectionListOption {...props} key={item}>
       {item}
@@ -127,6 +131,39 @@ describe('SelectionList', () => {
       };
       const fragment = renderToFragmentWithTheme(SelectionList, props);
       expect(fragment).toMatchSnapshot();
+    });
+
+    test('fire tracking event ', async () => {
+      const mockFireEvent = jest.fn();
+      const itemProps = {
+        eventOriginator: 'select-with-trigger',
+        eventContext: {
+          event: 'other event data',
+        },
+      };
+
+      const props = {
+        children: defaultSelectionListOptions(itemProps),
+      };
+
+      const {getAllByRole} = renderWithImplementation(
+        SelectionList,
+        props,
+        mockFireEvent,
+      );
+
+      // select 2nd option
+      await waitFor(() => {
+        fireEvent.click(getAllByRole('menuitemradio')[1]);
+      });
+
+      expect(mockFireEvent).toHaveBeenCalledWith({
+        originator: 'select-with-trigger',
+        trigger: EventTrigger.Click,
+        context: {
+          event: 'other event data',
+        },
+      });
     });
   });
 
