@@ -19,7 +19,7 @@ const infoIcon = (
   />
 );
 
-const commonPropsRows = [
+const gridPropsRows = [
   {
     name: 'children',
     type: 'Cell',
@@ -480,14 +480,14 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
           title: 'Grid',
           summary:
             'The grid has a range of props that can be used to define an appropriate experience for different use cases.',
-          propsRows: commonPropsRows,
+          propsRows: gridPropsRows,
         },
         {
           title: 'Cell',
           summary: `The cell has a range of props that can be used to define an appropriate experience for different use cases.`,
           propsRows: [
             {
-              name: 'Children',
+              name: 'children',
               type: 'React.ReactNode',
               default: '',
               description:
