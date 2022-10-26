@@ -2,6 +2,7 @@ import React from 'react';
 import {Slider} from '../slider';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {SliderProps} from '../types';
@@ -46,7 +47,7 @@ describe('slider', () => {
           "max": 100,
           "min": 0,
           "onChange": [Function],
-          "onFinalChange": undefined,
+          "onFinalChange": [Function],
           "renderThumb": [Function],
           "renderTrack": [Function],
           "step": 1,
@@ -135,7 +136,7 @@ describe('slider', () => {
       let onChange: jest.Mock;
       let onFinalChange: jest.Mock;
       let rangeProps: any;
-
+      const mockFireEvent = jest.fn();
       const sliderTheme = compileTheme(
         createTheme({
           overrides: {
@@ -154,17 +155,24 @@ describe('slider', () => {
         onChange = jest.fn();
         onFinalChange = jest.fn();
 
-        renderWithTheme(
-          Slider,
-          {
-            values: [25],
-            min: 10,
-            max: 30,
-            step: 2.5,
-            onChange,
-            onFinalChange,
-            ...props,
+        const initialProps = {
+          values: [25],
+          min: 10,
+          max: 30,
+          step: 2.5,
+          onChange,
+          onFinalChange,
+          eventOriginator: 'slider-test',
+          eventContext: {
+            id: 'slider-test',
           },
+        };
+
+        renderWithImplementation(
+          Slider,
+          {...initialProps, ...props},
+          mockFireEvent,
+          {},
           theme,
         );
 
@@ -181,6 +189,15 @@ describe('slider', () => {
       test('onFinalChange should call the passed onFinalChange function', () => {
         rangeProps.onFinalChange([14, 44]);
         expect(onFinalChange).toHaveBeenCalledWith([14, 44]);
+      });
+
+      test('fires tracking event onFinalChange', async () => {
+        rangeProps.onFinalChange([14, 44]);
+        expect(mockFireEvent).toHaveBeenCalledWith({
+          context: {values: [14, 44], id: 'slider-test'},
+          originator: 'slider-test',
+          trigger: 'change',
+        });
       });
 
       describe('renderThumb', () => {

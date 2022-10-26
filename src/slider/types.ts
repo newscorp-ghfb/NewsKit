@@ -2,6 +2,7 @@ import {Range} from 'react-range';
 import {MQ} from '../utils/style';
 import {LogicalProps} from '../utils/logical-properties';
 import {TransitionToken} from '../theme';
+import {EventData} from '../instrumentation';
 
 export type RenderTrackFunction = Range['props']['renderTrack'];
 type RenderThumbFunction = Range['props']['renderThumb'];
@@ -74,7 +75,7 @@ interface CommonSliderProps
   onKeyDown?: (e: React.KeyboardEvent<HTMLElement>) => void;
 }
 
-export interface SliderProps extends CommonSliderProps {
+export interface SliderProps extends CommonSliderProps, EventData {
   onChange: (values: number[]) => void;
 }
 
