@@ -970,8 +970,8 @@ jobs:
             yalc add newskit
             yarn add start-server-and-test
             # Temp downgrading React. Needed for avoiding Hydration error with React v18 https://github.com/vercel/next.js/discussions/35773
-            yarn add react@17.0.1
-            yarn add react-dom@17.0.1
+            yarn add react@18.2
+            yarn add react-dom@18.2
             yarn add @emotion/react
             yarn add @emotion/styled
             yarn add -D cypress@9.1.0;
