@@ -11,8 +11,9 @@ Object.entries(routes).forEach(route => {
   describe(`${pageName} page`, () => {
     it(`should pass visual regression test with dark theme on ${pageName}`, () => {
       cy.eyesOpen();
+      localStorage.setItem('newskit-docs-theme', 'dark');
       cy.mockConsentAndVisit(path);
-      cy.get('[data-testid="theme-switch-button"]').click({force: true});
+      cy.get(`[title="Enable light mode"]`).should('exist'); // this will fail if dark theme is not selected
       cy.eyesCheckWindow(`${pageName} page`);
       cy.eyesClose();
     });
