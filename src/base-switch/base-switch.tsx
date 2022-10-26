@@ -37,6 +37,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
       type,
       hideFeedback,
       eventContext = {},
+      /* istanbul ignore next */
       eventOriginator = '',
       ...restProps
     },
