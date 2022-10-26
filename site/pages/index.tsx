@@ -15,8 +15,12 @@ import Layout, {LayoutProps} from '../components/layout';
 import {IconFilledLaunch} from '../../src/icons';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
-import {getSheet} from '../utils/google-sheet';
-import {ContentProps, getValueFromCMS} from '../utils/get-value';
+import {
+  formatSheetData,
+  getSheets,
+  getValueFromCMS,
+} from '../utils/google-sheet';
+import {ContentProps} from '../utils/google-sheet/types';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -35,8 +39,8 @@ const Index = ({
   content,
   ...layoutProps
 }: LayoutProps & ReleasesPageProps & ContentProps) => {
-  const {themeMode, toggleTheme} = layoutProps;
   console.log(content);
+  const {themeMode, toggleTheme} = layoutProps;
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
       <GridLayout
@@ -166,13 +170,8 @@ export default Index;
 // component as props.
 export async function getStaticProps() {
   const releases: Release[] = await fetchGitHubReleases(4);
-  const data = await getSheet();
+  const data = await getSheets('Homepage');
+  const content = formatSheetData(data);
 
-  let content;
-  if (data === undefined || data === null || data.length === 0) {
-    content = {};
-  } else {
-    content = Object.fromEntries(data);
-  }
   return {props: {releases, content}};
 }
