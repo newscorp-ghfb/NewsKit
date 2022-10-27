@@ -2610,6 +2610,30 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-15"
                           data-testid="buttonLink"
+                          href="/components/link"
+                        >
+                          <span
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-12"
+                            >
+                              <span
+                                class="emotion-18"
+                              >
+                                Link
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item emotion-14"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-15"
+                          data-testid="buttonLink"
                           href="/components/menu"
                         >
                           <span
@@ -3222,30 +3246,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                 class="emotion-18"
                               >
                                 Aspect Ratio
-                              </span>
-                            </span>
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-14"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-15"
-                          data-testid="buttonLink"
-                          href="/components/link"
-                        >
-                          <span
-                            class="emotion-11"
-                          >
-                            <span
-                              class="emotion-12"
-                            >
-                              <span
-                                class="emotion-18"
-                              >
-                                Link
                               </span>
                             </span>
                           </span>
@@ -6970,6 +6970,31 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                 aria-current="false"
                                 class="emotion-13"
                                 data-testid="buttonLink"
+                                href="/components/link"
+                                tabindex="-1"
+                              >
+                                <span
+                                  class="emotion-9"
+                                >
+                                  <span
+                                    class="emotion-10"
+                                  >
+                                    <span
+                                      class="emotion-16"
+                                    >
+                                      Link
+                                    </span>
+                                  </span>
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="nk-menu-item emotion-12"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-13"
+                                data-testid="buttonLink"
                                 href="/components/menu"
                                 tabindex="-1"
                               >
@@ -7605,31 +7630,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                       class="emotion-16"
                                     >
                                       Aspect Ratio
-                                    </span>
-                                  </span>
-                                </span>
-                              </a>
-                            </li>
-                            <li
-                              class="nk-menu-item emotion-12"
-                            >
-                              <a
-                                aria-current="false"
-                                class="emotion-13"
-                                data-testid="buttonLink"
-                                href="/components/link"
-                                tabindex="-1"
-                              >
-                                <span
-                                  class="emotion-9"
-                                >
-                                  <span
-                                    class="emotion-10"
-                                  >
-                                    <span
-                                      class="emotion-16"
-                                    >
-                                      Link
                                     </span>
                                   </span>
                                 </span>
@@ -10858,6 +10858,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-15"
                           data-testid="buttonLink"
+                          href="/components/link"
+                        >
+                          <span
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-12"
+                            >
+                              <span
+                                class="emotion-18"
+                              >
+                                Link
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item emotion-14"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-15"
+                          data-testid="buttonLink"
                           href="/components/menu"
                         >
                           <span
@@ -11470,30 +11494,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                                 class="emotion-18"
                               >
                                 Aspect Ratio
-                              </span>
-                            </span>
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-14"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-15"
-                          data-testid="buttonLink"
-                          href="/components/link"
-                        >
-                          <span
-                            class="emotion-11"
-                          >
-                            <span
-                              class="emotion-12"
-                            >
-                              <span
-                                class="emotion-18"
-                              >
-                                Link
                               </span>
                             </span>
                           </span>
@@ -15148,6 +15148,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                                 aria-current="false"
                                 class="emotion-13"
                                 data-testid="buttonLink"
+                                href="/components/link"
+                              >
+                                <span
+                                  class="emotion-9"
+                                >
+                                  <span
+                                    class="emotion-10"
+                                  >
+                                    <span
+                                      class="emotion-16"
+                                    >
+                                      Link
+                                    </span>
+                                  </span>
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="nk-menu-item emotion-12"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-13"
+                                data-testid="buttonLink"
                                 href="/components/menu"
                               >
                                 <span
@@ -15760,30 +15784,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                                       class="emotion-16"
                                     >
                                       Aspect Ratio
-                                    </span>
-                                  </span>
-                                </span>
-                              </a>
-                            </li>
-                            <li
-                              class="nk-menu-item emotion-12"
-                            >
-                              <a
-                                aria-current="false"
-                                class="emotion-13"
-                                data-testid="buttonLink"
-                                href="/components/link"
-                              >
-                                <span
-                                  class="emotion-9"
-                                >
-                                  <span
-                                    class="emotion-10"
-                                  >
-                                    <span
-                                      class="emotion-16"
-                                    >
-                                      Link
                                     </span>
                                   </span>
                                 </span>
