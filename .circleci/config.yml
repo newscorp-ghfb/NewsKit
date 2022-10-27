@@ -571,8 +571,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
+      # TODO not needed anymore if we use the when condition
       - run_only_on_folder_change:
-          folder: ./terraform/<< parameters.package >>
+          folder: ./lib/infrastructure/terraform/<< parameters.package >>
       - aws_assume_role_file
       - when:
           condition: << parameters.tf_env >>
@@ -1254,6 +1255,27 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_pr
             - test_broken_links_docs_pr
+      - build_docs:
+          name: build_docs_pr
+          context: ncu-newskit-site-pr
+          requires:
+            - build_icons
+      - push_s3:
+          name: deploy_to_s3
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr
+            - build_storybook
+      - post_pr_env_url_to_github_pr:
+          name: pr_enviroment_link
+          context: ncu-product-platforms-context
+          requires:
+            - deploy_to_s3
+
+  pull_request_infrastructure:
+    when:
+      equal: [main, << pipeline.git.branch >>]
+    jobs:
       - init_aws:
           context: ncu-product-platforms-context
       - deploy_terraform:
@@ -1273,23 +1295,25 @@ workflows:
           environment: pr
           requires:
             - init_aws
-      - build_docs:
-          name: build_docs_pr
-          context: ncu-newskit-site-pr
-          requires:
-            - build_icons
-      - push_s3:
-          name: deploy_to_s3
+
+  main_infrastructure:
+    jobs:
+      - init_aws:
           context: ncu-product-platforms-context
-          requires:
-            - deploy_terraform_s3_pr
-            - build_docs_pr
-            - build_storybook
-      - post_pr_env_url_to_github_pr:
-          name: pr_enviroment_link
+      - deploy_terraform:
+          name: deploy_terraform_dns_dev
+          package: dns
           context: ncu-product-platforms-context
+          environment: dev
           requires:
-            - deploy_to_s3
+            - init_aws
+      - deploy_terraform:
+          name: deploy_terraform_ecr_dev
+          package: ecr
+          context: ncu-product-platforms-context
+          tf_env: false
+          requires:
+            - init_aws
 
   pull_request_codemod:
     when:
@@ -1335,22 +1359,6 @@ workflows:
     when:
       equal: [main, << pipeline.git.branch >>]
     jobs:
-      - init_aws:
-          context: ncu-product-platforms-context
-      - deploy_terraform:
-          name: deploy_terraform_dns_dev
-          package: dns
-          context: ncu-product-platforms-context
-          environment: dev
-          requires:
-            - init_aws
-      - deploy_terraform:
-          name: deploy_terraform_ecr_dev
-          package: ecr
-          context: ncu-product-platforms-context
-          tf_env: false
-          requires:
-            - init_aws
       - install_deps:
           context: ncu-product-platforms-context
       - install_cypress:
@@ -1545,7 +1553,7 @@ workflows:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           version: $(echo << pipeline.git.tag >> | cut -f2 -d "v")
-
+      # TODO can this be moved to the main workflows? ini_aws and deploy_terraform for stagin
       - init_aws:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
@@ -1557,6 +1565,7 @@ workflows:
           environment: staging
           requires:
             - init_aws
+      # 
 
       - install_deps:
           <<: *only_on_version_tag
