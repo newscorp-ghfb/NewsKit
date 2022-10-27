@@ -1114,7 +1114,7 @@ jobs:
       - run: yarn nx print-affected --base=main --head=HEAD --select=projects
       - run: 
           command: | 
-            var = yarn nx print-affected --base=main --head=HEAD --select=projects
+            var=yarn nx print-affected --base=main --head=HEAD --select=projects
             $(if [[ "$var" == *"infrastructure"* ]]; then 
               echo "It's there!" 
             fi)
