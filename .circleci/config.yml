@@ -1140,6 +1140,15 @@ only_on_version_tag_codemod: &only_on_version_tag_codemod
 
 # ========== FILTERS END        ==========
 
+print_affected:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run: $(echo nx print-affected --base=main --head=HEAD --select=projects)]
+      - run: $(if [[ nx print-affected --base=main --head=HEAD --select=projects == **infrastructure** ]]; then echo "It's there!" fi
+
 workflows:
   pull_request:
     when:
@@ -1273,8 +1282,7 @@ workflows:
             - deploy_to_s3
 
   pull_request_infrastructure:
-    when:
-      equal: [main, << pipeline.git.branch >>]
+    when: true
     jobs:
       - init_aws:
           context: ncu-product-platforms-context
@@ -1296,24 +1304,24 @@ workflows:
           requires:
             - init_aws
 
-  main_infrastructure:
-    jobs:
-      - init_aws:
-          context: ncu-product-platforms-context
-      - deploy_terraform:
-          name: deploy_terraform_dns_dev
-          package: dns
-          context: ncu-product-platforms-context
-          environment: dev
-          requires:
-            - init_aws
-      - deploy_terraform:
-          name: deploy_terraform_ecr_dev
-          package: ecr
-          context: ncu-product-platforms-context
-          tf_env: false
-          requires:
-            - init_aws
+  # main_infrastructure:
+    # jobs:
+    #   - init_aws:
+    #       context: ncu-product-platforms-context
+    #   - deploy_terraform:
+    #       name: deploy_terraform_dns_dev
+    #       package: dns
+    #       context: ncu-product-platforms-context
+    #       environment: dev
+    #       requires:
+    #         - init_aws
+    #   - deploy_terraform:
+    #       name: deploy_terraform_ecr_dev
+    #       package: ecr
+    #       context: ncu-product-platforms-context
+    #       tf_env: false
+    #       requires:
+    #         - init_aws
 
   pull_request_codemod:
     when:
