@@ -4,6 +4,7 @@ orbs:
   slack: circleci/slack@4.10.1
   aws-cli: circleci/aws-cli@2.0.0
   github-cli: circleci/github-cli@1.0.4
+  nx: nrwl/nx@1.5.1
 
 slack_notify: &slack_notify
   event: 'fail'
@@ -1105,12 +1106,13 @@ jobs:
       - run: echo "Merge checker"
 
   print_affected:
-    executor: node
+    docker:
+      - image: cimg/node:lts-browsers
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run: $(echo nx print-affected --base=main --head=HEAD --select=projects)]
+      - run: $(echo yarn nx print-affected --base=main --head=HEAD --select=projects)]
       - run: $(if [[ nx print-affected --base=main --head=HEAD --select=projects == **infrastructure** ]]; then echo "It's there!" fi
 
 # ========== FILTERS START    ==========
