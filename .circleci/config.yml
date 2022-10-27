@@ -1114,9 +1114,10 @@ jobs:
       - run: yarn nx print-affected --base=main --head=HEAD --select=projects
       - run: 
           command: | 
-            $(if [[ yarn nx print-affected --base=main --head=HEAD --select=projects == **infrastructure** ]]; then echo "It's there!" 
+            var = yarn nx print-affected --base=main --head=HEAD --select=projects
+            $(if [[ "$var" == *"infrastructure"* ]]; then 
+              echo "It's there!" 
             fi)
-
 
 # ========== FILTERS START    ==========
 
