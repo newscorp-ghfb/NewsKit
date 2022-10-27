@@ -608,6 +608,13 @@ export const routes = [
             illustration: 'components/accordion/hero',
           },
           {
+            title: 'Link',
+            page: true,
+            id: '/components/link',
+            description: 'Allows user to jump to a new location when clicked.',
+            illustration: 'components/url-illustration',
+          },
+          {
             title: 'Menu',
             page: true,
             id: '/components/menu',
@@ -802,8 +809,8 @@ export const routes = [
       },
       {
         title: 'Deprecated',
-        description: 'Deprecated components.',
-        id: '/components/deprecated',
+        id: '/deprecated',
+        description: 'These components are no longer supported.',
         subNav: [
           {
             title: 'Aspect Ratio',
@@ -811,13 +818,6 @@ export const routes = [
             id: '/components/aspect-ratio',
             description: 'The aspect ratio of an image.',
             illustration: 'components/aspect-ratio-illustration',
-          },
-          {
-            title: 'Link',
-            page: true,
-            id: '/components/link',
-            description: 'Allows user to jump to a new location when clicked.',
-            illustration: 'components/url-illustration',
           },
           {
             title: 'Share Bar',
