@@ -22,10 +22,7 @@ export const BaseFlag = React.forwardRef<
       loading,
       disabled,
       as,
-      justifyContent = 'center',
-      alignContent = 'center',
-      alignItems = 'center',
-      justifyItems = 'center',
+
       ...props
     },
     ref,
@@ -41,10 +38,10 @@ export const BaseFlag = React.forwardRef<
         overrides={overrides}
         ref={ref}
         as={as}
-        justifyContent={justifyContent}
-        alignContent={alignContent}
-        alignItems={alignItems}
-        justifyItems={justifyItems}
+        justifyContent="center"
+        alignContent="center"
+        alignItems="center"
+        justifyItems="center"
         columnGap={getToken({theme, overrides}, '', '', 'spaceInline')}
         columns={`repeat(${React.Children.toArray(children).length}, auto)`}
         inline
