@@ -258,6 +258,89 @@ const Spacing = (layoutProps: LayoutProps) => (
           showSeparator
         />
       </ContentSection>
+      <ContentSection sectionName="logicalProps">
+        <ContentPrimary
+          id="logicalProps"
+          toc="Logical props"
+          headline="Logical props"
+          description={
+            <>
+              We have added the following properties to our components to make
+              it easier for users to set the spacing they desire. .
+              <br />
+              You can use space tokens with 12 different CSS properties to
+              logically apply space to a side, or combination of sides.
+              <br />
+              Logical props can define either padding or margins, depending on
+              the element&apos;s writing mode, directionality, or text
+              orientation. orientation. For example, if the reading direction is
+              right to left (instead of left to right) the paddingInlineStart
+              would be on instead of the left.
+            </>
+          }
+        >
+          <MediaList
+            cardsLayout={{
+              xs: 'vertical',
+              sm: 'vertical',
+              md: 'horizontal',
+              lg: 'horizontal',
+              xl: 'horizontal',
+            }}
+            layout="1-span"
+            cards={[
+              {
+                title: 'paddingInlineStart',
+                description: `Applies space to the start position (left) of an element.`,
+                media: getIllustrationComponent(
+                  'theme/spacing/padding-inline-start',
+                ),
+              },
+              {
+                title: 'paddingInlineEnd',
+                description: `
+                Applies space to the end (right) position of an element.
+                `,
+                media: getIllustrationComponent(
+                  'theme/spacing/padding-inline-end',
+                ),
+              },
+              {
+                title: 'paddingInline',
+                description: `
+                Applies space to both the start (left) and end (right) positions of an element.
+                `,
+                media: getIllustrationComponent('theme/spacing/padding-inline'),
+              },
+              {
+                title: 'paddingBlockStart',
+                description: `
+                Applies space to the start position (top) of an element.
+                `,
+                media: getIllustrationComponent(
+                  'theme/spacing/padding-block-start',
+                ),
+              },
+              {
+                title: 'paddingBlockEnd',
+                description: `
+                Applies space to the end position (bottom) of an element.
+                `,
+                media: getIllustrationComponent(
+                  'theme/spacing/padding-block-end',
+                ),
+              },
+              {
+                title: 'paddingBlock',
+                description: `
+                Applies space to both the start (top) and end (bottom) positions of an element.
+                `,
+                media: getIllustrationComponent('theme/spacing/padding-block'),
+              },
+            ]}
+          />
+        </ContentPrimary>
+      </ContentSection>
 
       <ContentSection sectionName="spaceinset">
         <ContentPrimary
