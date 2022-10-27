@@ -1,4 +1,4 @@
-import React, {useEffect, useContext} from 'react';
+import React, {useContext, useEffect, useRef} from 'react';
 import {useFormContext} from 'react-hook-form';
 import {FormValidationContext} from './context';
 import {FieldsHadErrorObject, FormInputState} from './types';
@@ -16,6 +16,7 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
 
   const {errors, isSubmitSuccessful} = formState || {};
   const {ref: inputRef, onBlur, onChange} = register(name!, rules);
+  const refObject = useRef<HTMLInputElement | null>(null);
 
   const hadError = name ? fieldsHadError[name]?.hadError : undefined;
 
@@ -75,11 +76,20 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
     }
   };
 
+  // See https://react-hook-form.com/faqs#Howtosharerefusage
+  const updateRef = (instance: HTMLInputElement) => {
+    if (inputRef) {
+      inputRef(instance);
+    }
+    refObject.current = instance;
+  };
+
   return children({
     onBlur: eventHandlerOnBlur,
     onChange: eventHandlerOnChange,
     state,
-    ref: inputRef,
+    ref: updateRef,
     error: errorText as string | undefined,
+    refObject,
   });
 };

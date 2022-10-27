@@ -1,4 +1,5 @@
 import React from 'react';
+import {EventData} from '../instrumentation';
 import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
@@ -11,7 +12,8 @@ export interface SelectionListProps
 }
 
 export interface SelectionListOptionProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    EventData {
   children: React.ReactNode;
   selected?: boolean;
   selectedIcon?: React.ReactNode;

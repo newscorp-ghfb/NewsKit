@@ -1,4 +1,4 @@
-import React, {useCallback, useLayoutEffect, useRef, useState} from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import composeRefs from '@seznam/compose-react-refs';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {
@@ -135,7 +135,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
 
     const [switchPadding, setSwitchPadding] = useState('');
     const switchRef = useRef<HTMLDivElement>(null);
-    useLayoutEffect(() => {
+    useEffect(() => {
       setSwitchPadding(getComputedStyle(switchRef.current!).paddingInline);
     }, []);
 

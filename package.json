@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "6.2.2",
+  "version": "6.3.0",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -69,7 +69,7 @@
     "storybook": "start-storybook -c .storybook -p 6006 "
   },
   "devDependencies": {
-    "@applitools/eyes-cypress": "^3.25.6",
+    "@applitools/eyes-cypress": "3.27.5",
     "@applitools/eyes-storybook": "^3.29.3",
     "@babel/core": "^7.13.15",
     "@babel/parser": "^7.14.6",

@@ -21,6 +21,8 @@ import {
   omitLogicalPropsFromOverrides,
   extractLogicalPropsFromOverrides,
 } from '../utils/logical-properties';
+import {composeEventHandlers} from '../utils/compose-event-handlers';
+import {EventTrigger, useInstrumentation} from '../instrumentation';
 
 const labelFlowMap = [
   // horizontal
@@ -43,7 +45,7 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
       max,
       step = 1,
       onChange,
-      onFinalChange,
+      onFinalChange: onFinalChangeProp,
       onKeyDown,
       disabled,
       values,
@@ -61,6 +63,8 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
       renderTrack,
       renderThumb,
       tabIndex,
+      eventContext = {},
+      eventOriginator = 'slider',
       ...rest
     },
     ref,
@@ -175,6 +179,20 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
         {renderLabel(maxLabel)}
       </StyledSliderLabel>
     );
+
+    const {fireEvent} = useInstrumentation();
+    const onFinalChange = composeEventHandlers([
+      onFinalChangeProp,
+      (eventValues: number[]) =>
+        fireEvent({
+          originator: eventOriginator,
+          trigger: EventTrigger.Change,
+          context: {
+            values: eventValues,
+            ...eventContext,
+          },
+        }),
+    ]);
 
     const slider = (
       <Range

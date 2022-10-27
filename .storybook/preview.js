@@ -11,6 +11,10 @@ import {
 } from '../src';
 import {getThemeObject} from '../src/test/theme-select-object';
 import {StoryDocsHeader, Stories} from '../src/test/storybook-comps';
+import {
+  instrumentationHandlers,
+  createEventInstrumentation,
+} from '../src/instrumentation';
 
 const unlimitedScenarios = [
   'grid',
@@ -24,6 +28,7 @@ const unlimitedScenarios = [
   'popover',
   'audio-player-composable',
   'text-area',
+  'useIntersection',
 ];
 
 const BackgroundColor = styled.div`
@@ -127,9 +132,12 @@ export const decorators = [
     );
   },
   (Story, context) => {
+    const handlers = [instrumentationHandlers.createConsoleHandler()];
+
     return (
       <NewsKitProvider
         theme={getThemeObject(context?.globals?.backgrounds?.value)}
+        instrumentation={createEventInstrumentation(handlers, {})}
       >
         <Background>
           <Story />

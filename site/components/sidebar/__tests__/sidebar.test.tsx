@@ -14,6 +14,8 @@ describe('Sidebar', () => {
         {
           sidebarOpen: true,
           handleSidebarClick: () => {},
+          themeMode: 'light',
+          toggleTheme: () => {},
         },
         docsThemeLight,
       );
@@ -26,6 +28,8 @@ describe('Sidebar', () => {
         {
           sidebarOpen: false,
           handleSidebarClick: () => {},
+          themeMode: 'light',
+          toggleTheme: () => {},
         },
         docsThemeLight,
       );
