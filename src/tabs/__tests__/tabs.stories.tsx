@@ -13,6 +13,11 @@ import {Button} from '../../button';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
+// todo: remove this fix for flaky tests (PPDSC-2520)
+const ignoreRegions = [
+  {selector: '[data-testid="tab-bar"] [data-testid="scroll-container"]'},
+];
+
 const LoremIpsumText = [
   `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -291,6 +296,9 @@ export const StoryTabsDistributionStart = () => (
   </>
 );
 StoryTabsDistributionStart.storyName = 'tabs-distribution-start';
+StoryTabsDistributionStart.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryControlledTabs = () => {
   const [selectedIndex, setSelected] = React.useState(0);
@@ -327,6 +335,9 @@ export const StoryControlledTabs = () => {
   );
 };
 StoryControlledTabs.storyName = 'tabs-controlled';
+StoryControlledTabs.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsDistributionGrow = () => (
   <>
@@ -361,6 +372,9 @@ export const StoryTabsDistributionGrow = () => (
   </>
 );
 StoryTabsDistributionGrow.storyName = 'tabs-distribution-grow';
+StoryTabsDistributionGrow.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsDistributionEqual = () => (
   <>
@@ -395,6 +409,9 @@ export const StoryTabsDistributionEqual = () => (
   </>
 );
 StoryTabsDistributionEqual.storyName = 'tabs-distribution-equal';
+StoryTabsDistributionEqual.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsWithScroll = () => (
   <>
@@ -443,6 +460,9 @@ export const StoryTabsWithScroll = () => (
   </>
 );
 StoryTabsWithScroll.storyName = 'tabs-with-scroll';
+StoryTabsWithScroll.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsHorizontal = () => (
   <>
@@ -491,6 +511,9 @@ export const StoryTabsHorizontal = () => (
   </>
 );
 StoryTabsHorizontal.storyName = 'tabs-horizontal';
+StoryTabsHorizontal.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsHorizontalIconLabel = () => (
   <>
@@ -522,6 +545,9 @@ export const StoryTabsHorizontalIconLabel = () => (
   </>
 );
 StoryTabsHorizontalIconLabel.storyName = 'tabs-horizontal-icon-label';
+StoryTabsHorizontalIconLabel.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsVerticalIconLabel = () => (
   <>
@@ -559,6 +585,9 @@ export const StoryTabsVerticalIconLabel = () => (
   </>
 );
 StoryTabsVerticalIconLabel.storyName = 'tabs-vertical-icon-label';
+StoryTabsVerticalIconLabel.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsHorizontalIconAndLabel = () => (
   <>
@@ -592,6 +621,9 @@ export const StoryTabsHorizontalIconAndLabel = () => (
   </>
 );
 StoryTabsHorizontalIconAndLabel.storyName = 'tabs-horizontal-icon-and-label';
+StoryTabsHorizontalIconAndLabel.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsVerticalIconAndLabel = () => (
   <>
@@ -625,6 +657,9 @@ export const StoryTabsVerticalIconAndLabel = () => (
   </>
 );
 StoryTabsVerticalIconAndLabel.storyName = 'tabs-vertical-icon-and-label';
+StoryTabsVerticalIconAndLabel.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsVertical = () => (
   <>
@@ -668,6 +703,9 @@ export const StoryTabsVertical = () => (
   </>
 );
 StoryTabsVertical.storyName = 'tabs-vertical';
+StoryTabsVertical.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsVerticalVariantsLabelOrIcon = () => (
   <>
@@ -700,6 +738,9 @@ export const StoryTabsVerticalVariantsLabelOrIcon = () => (
 );
 StoryTabsVerticalVariantsLabelOrIcon.storyName =
   'tabs-vertical-variants-label-or-icon';
+StoryTabsVerticalVariantsLabelOrIcon.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsVerticalVariantsIconPlacement = () => (
   <>
@@ -746,6 +787,9 @@ export const StoryTabsVerticalVariantsIconPlacement = () => (
 );
 StoryTabsVerticalVariantsIconPlacement.storyName =
   'tabs-vertical-variants-icon-placement';
+StoryTabsVerticalVariantsIconPlacement.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsHorizontalIndicatorPositionVariants = () => (
   <>
@@ -792,6 +836,9 @@ export const StoryTabsHorizontalIndicatorPositionVariants = () => (
 );
 StoryTabsHorizontalIndicatorPositionVariants.storyName =
   'tabs-horizontal-indicator-position-variants';
+StoryTabsHorizontalIndicatorPositionVariants.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsVerticalIndicatorPositionVariants = () => (
   <>
@@ -838,6 +885,9 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
 );
 StoryTabsVerticalIndicatorPositionVariants.storyName =
   'tabs-vertical-indicator-position-variants';
+StoryTabsVerticalIndicatorPositionVariants.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsContent = () => (
   <>
@@ -869,6 +919,9 @@ export const StoryTabsContent = () => (
   </>
 );
 StoryTabsContent.storyName = 'tabs-content';
+StoryTabsContent.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsWithDisabledTab = () => (
   <>
@@ -900,6 +953,9 @@ export const StoryTabsWithDisabledTab = () => (
   </>
 );
 StoryTabsWithDisabledTab.storyName = 'tabs-with-disabled-tab';
+StoryTabsWithDisabledTab.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsWithFixedTabIndicatorSize = () => (
   <>
@@ -935,6 +991,9 @@ export const StoryTabsWithFixedTabIndicatorSize = () => (
 );
 StoryTabsWithFixedTabIndicatorSize.storyName =
   'tabs-with-fixed-tab-indicator-size';
+StoryTabsWithFixedTabIndicatorSize.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsWithFixedTabIndicatorPercentageSize = () => (
   <>
@@ -969,6 +1028,9 @@ export const StoryTabsWithFixedTabIndicatorPercentageSize = () => (
 );
 StoryTabsWithFixedTabIndicatorPercentageSize.storyName =
   'tabs-with-fixed-tab-indicator-percentage-size';
+StoryTabsWithFixedTabIndicatorPercentageSize.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsWithFixedTabIndicatorPixelSize = () => (
   <>
@@ -1006,6 +1068,9 @@ export const StoryTabsWithFixedTabIndicatorPixelSize = () => (
 );
 StoryTabsWithFixedTabIndicatorPixelSize.storyName =
   'tabs-with-fixed-tab-indicator-pixel-size';
+StoryTabsWithFixedTabIndicatorPixelSize.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
   <>
@@ -1070,6 +1135,9 @@ export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
 );
 StoryTabsWithCustomTabBarTrackAndIndicatorWeight.storyName =
   'tabs-with-custom-tab-bar-track-and-indicator-weight';
+StoryTabsWithCustomTabBarTrackAndIndicatorWeight.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
   <>
@@ -1181,6 +1249,9 @@ export const StoryTabsWithPresetsOverrides = () => (
   </>
 );
 StoryTabsWithPresetsOverrides.storyName = 'tabs-with-presets-overrides';
+StoryTabsWithPresetsOverrides.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsWithPresetsOverridesShadows = () => {
   const CustomScroll = styled.div`
@@ -1244,6 +1315,9 @@ export const StoryTabsWithPresetsOverridesShadows = () => {
   );
 };
 StoryTabsWithPresetsOverridesShadows.storyName = 'tabs-with-presets-shadows';
+StoryTabsWithPresetsOverridesShadows.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsWithPresetsOverridesOnIndividualTab = () => (
   <>
@@ -1266,6 +1340,9 @@ export const StoryTabsWithPresetsOverridesOnIndividualTab = () => (
 );
 StoryTabsWithPresetsOverridesOnIndividualTab.storyName =
   'tabs-with-presets-overrides-on-individual-tab';
+StoryTabsWithPresetsOverridesOnIndividualTab.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsWithAlign = () => (
   <>
@@ -1323,6 +1400,9 @@ export const StoryTabsWithAlign = () => (
   </>
 );
 StoryTabsWithAlign.storyName = 'tabs-with-align';
+StoryTabsWithAlign.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsWithOverflowAndScroll = () => (
   <MainContainer>
@@ -1431,6 +1511,7 @@ export const StoryTabsWithScrollOverrides = () => {
   );
 };
 StoryTabsWithScrollOverrides.storyName = 'tabs-with-scroll-overrides';
+StoryTabsWithScrollOverrides.parameters = {eyes: {include: false}};
 
 // const transitionTheme = createTheme({
 //   name: 'my-custom-tab-theme',
@@ -1590,6 +1671,7 @@ export const StoryTabsTransitions = () => (
   </>
 );
 StoryTabsTransitions.storyName = 'tabs-transitions';
+StoryTabsTransitions.parameters = {eyes: {include: false}};
 
 export const StoryTagLogicalProps = () => (
   <>
@@ -1649,6 +1731,9 @@ export const StoryTagLogicalProps = () => (
   </>
 );
 StoryTagLogicalProps.storyName = 'tabs-logical-props';
+StoryTagLogicalProps.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export const StoryTabsOutlineOverride = () => (
   <>
@@ -1728,6 +1813,9 @@ export const StoryTabsOutlineOverride = () => (
   </>
 );
 StoryTabsOutlineOverride.storyName = 'tabs-outline-overrides';
+StoryTabsOutlineOverride.parameters = {
+  eyes: {ignoreRegions},
+};
 
 export default {
   title: 'Components/tabs',
