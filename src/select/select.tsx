@@ -11,6 +11,7 @@ import {checkBreakpointProp} from '../utils/check-breakpoint-prop';
 import {useBreakpointKey} from '../utils/hooks/use-media-query';
 import {useVirtualizedList} from './use-virtualized-list';
 import {Layer} from '../layer';
+import {EventTrigger, useInstrumentation} from '../instrumentation';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -29,6 +30,8 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       children,
       useModal = {},
       virtualized = 50,
+      eventContext = {},
+      eventOriginator = 'select',
       ...restProps
     } = props;
 
@@ -73,6 +76,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       }
     }, [defaultSelectedItem, onChange, programmaticallySelectedItem]);
 
+    const {fireEvent} = useInstrumentation();
     const onInputChange = React.useCallback<
       (
         changes: UseSelectStateChange<React.ReactElement<SelectOptionProps>>,
@@ -83,6 +87,15 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         /* istanbul ignore next */
         if (localInputRef.current) {
           localInputRef.current.value = event.selectedItem!.props.value;
+
+          fireEvent({
+            originator: eventOriginator,
+            trigger: EventTrigger.Change,
+            context: {
+              value: localInputRef.current.value,
+              ...eventContext,
+            },
+          });
         }
         /* istanbul ignore next */
         if (onChange && localInputRef.current) {
@@ -92,7 +105,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           } as ChangeEvent<HTMLInputElement>);
         }
       },
-      [onChange],
+      [onChange, fireEvent, eventOriginator, eventContext],
     );
 
     const [highlightedIndex, setHighlightedIndex] = React.useState<
