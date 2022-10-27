@@ -6,7 +6,7 @@ import {
   RenderOptions,
   RenderResult,
 } from '@testing-library/react';
-import {newskitLightTheme, UncompiledTheme} from '../theme';
+import {newskitLightTheme, UncompiledTheme, Theme} from '../theme';
 import {InstrumentationEvent} from '../instrumentation';
 import {NewsKitProvider} from '../newskit-provider';
 import {RenderToFragmentFactory, RenderWithThemeFactory} from './types';
@@ -21,11 +21,15 @@ export const renderWithImplementation: <T extends {}>(
   props?: T,
   fireEvent?: (event: InstrumentationEvent) => void,
   options?: Omit<RenderOptions, 'wrapper'>,
-) => RenderResult = (Component, props, fireEvent = () => {}, options) =>
+  theme?: UncompiledTheme | Theme,
+) => RenderResult = (Component, props, fireEvent = () => {}, options, theme) =>
   renderer(<Component {...props!} />, {
     ...options,
     wrapper: ({children}) => (
-      <NewsKitProvider theme={newskitLightTheme} instrumentation={{fireEvent}}>
+      <NewsKitProvider
+        theme={theme || newskitLightTheme}
+        instrumentation={{fireEvent}}
+      >
         {children}
       </NewsKitProvider>
     ),
