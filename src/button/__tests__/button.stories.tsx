@@ -1,15 +1,13 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {Button} from '..';
-import {OldButton} from '../oldButton';
-import {TextBlock} from '../../text-block';
 import {
   getTypographyPresetFromTheme,
   getColorCssFromTheme,
   styled,
 } from '../../utils/style';
 import {ButtonOverrides, ButtonSize} from '../types';
-import {IconFilledEmail, IconFilledKeyboardArrowDown} from '../../icons';
+import {IconFilledEmail} from '../../icons';
 import {Stack} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
@@ -696,37 +694,6 @@ export const StoryButtonWithOutlineOverride = () => (
   </>
 );
 StoryButtonWithOutlineOverride.storyName = 'button-with-outline-overrides';
-
-export const StoryButtonExtraScenarios = () => (
-  <>
-    <StorybookSubHeading>Button with custom outline</StorybookSubHeading>
-    <StorybookSubHeading>Custom Width</StorybookSubHeading>
-    <Container>
-      <Button overrides={{width: '176px'}}>
-        <TextBlock
-          typographyPreset="utilityBody020"
-          paddingInlineEnd="space030"
-        >
-          Select option
-        </TextBlock>
-        <IconFilledKeyboardArrowDown />
-      </Button>{' '}
-      New
-      <br />
-      <OldButton overrides={{width: '176px'}}>
-        <TextBlock
-          typographyPreset="utilityBody020"
-          paddingInlineEnd="space030"
-        >
-          Select option
-        </TextBlock>
-        <IconFilledKeyboardArrowDown />
-      </OldButton>{' '}
-      Old
-    </Container>
-  </>
-);
-StoryButtonExtraScenarios.storyName = 'button-with-extra-scenarios';
 
 export default {
   title: 'Components/button',
