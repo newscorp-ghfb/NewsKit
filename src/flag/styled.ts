@@ -1,11 +1,6 @@
 import {GridLayout} from '../grid-layout';
 import {logicalProps} from '../utils/logical-properties';
-import {
-  styled,
-  getStylePreset,
-  getResponsiveSpace,
-  getResponsiveSize,
-} from '../utils/style';
+import {styled, getStylePreset, getResponsiveSize} from '../utils/style';
 
 import {BaseFlagProps, BaseFlagOverrides} from './types';
 
@@ -39,7 +34,6 @@ export const StyledGridLayout = styled(GridLayout)<
       'minWidth',
     )(props)};
 
-  ${getResponsiveSpace('padding', '', '', 'spaceInset')};
   ${({size}) => logicalProps(`flag.${size}`)};
 
   svg {

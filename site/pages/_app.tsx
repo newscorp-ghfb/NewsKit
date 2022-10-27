@@ -92,6 +92,10 @@ export default class MyApp extends App<Props, State> {
   setTheme = (themeMode: string) => {
     const presetTheme = this.getThemeStyle();
 
+    const style = document.createElement('style');
+    style.innerHTML = `* { transition: all 0.1s ease !important}`;
+    document.head.appendChild(style);
+
     if (presetTheme !== themeMode) {
       this.setThemeStyle(themeMode);
     }
@@ -108,6 +112,7 @@ export default class MyApp extends App<Props, State> {
       theme,
     });
     document.body.style.backgroundColor = theme.colors.interfaceBackground;
+    // document.head.removeChild(style);
   };
 
   toggleTheme() {
