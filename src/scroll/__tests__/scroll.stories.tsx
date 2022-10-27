@@ -237,7 +237,7 @@ export const StoryScrollSnap = () => (
   </MainContainer>
 );
 StoryScrollSnap.storyName = 'scroll-snap';
-StoryScrollSnap.parameters = {eyes: {include: false}};
+StoryScrollSnap.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 export const StoryScrollBar = () => (
   <MainContainer>
