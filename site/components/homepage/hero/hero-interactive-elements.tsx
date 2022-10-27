@@ -1,7 +1,6 @@
 import {DarkMode, KeyboardArrowDown, AddCircle} from '@emotion-icons/material';
 import {LightMode} from '@emotion-icons/material-outlined';
 import {
-  styled,
   Block,
   Button,
   Checkbox,
@@ -28,10 +27,6 @@ export const IconFilledLightMode = toNewsKitIcon(LightMode);
 export const IconFilledKeyboardArrowDown = toNewsKitIcon(KeyboardArrowDown);
 export const IconFilledAddCircle = toNewsKitIcon(AddCircle);
 
-const ProblemButton = styled(Button)`
-  justify-content: space-between;
-`;
-
 const HeroInteractiveElements = ({
   themeMode,
   toggleTheme,
@@ -41,7 +36,7 @@ const HeroInteractiveElements = ({
   return (
     <HeroInteractiveContainer>
       <InteractiveElementContainer top={65} left={34}>
-        <ProblemButton
+        <Button
           overrides={{
             width: '176px',
             stylePreset: 'heroInteractiveSelectButton',
@@ -50,12 +45,12 @@ const HeroInteractiveElements = ({
         >
           <TextBlock
             typographyPreset="utilityBody020"
-            paddingInlineEnd="space030"
+            paddingInlineEnd="space050"
           >
             Select option
           </TextBlock>
           <IconFilledKeyboardArrowDown />
-        </ProblemButton>
+        </Button>
         <Block stylePreset="heroInteractiveSelectPanel">
           <SelectionList overrides={{paddingBlock: 'space020'}}>
             {['News', 'Radio', 'TV'].map(item => (
