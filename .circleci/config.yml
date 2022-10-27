@@ -1104,6 +1104,15 @@ jobs:
     steps:
       - run: echo "Merge checker"
 
+  print_affected:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run: $(echo nx print-affected --base=main --head=HEAD --select=projects)]
+      - run: $(if [[ nx print-affected --base=main --head=HEAD --select=projects == **infrastructure** ]]; then echo "It's there!" fi
+
 # ========== FILTERS START    ==========
 
 only_on_trigger_release_tag: &only_on_trigger_release_tag
@@ -1139,15 +1148,6 @@ only_on_version_tag_codemod: &only_on_version_tag_codemod
       ignore: /.*/
 
 # ========== FILTERS END        ==========
-
-print_affected:
-    executor: node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run: $(echo nx print-affected --base=main --head=HEAD --select=projects)]
-      - run: $(if [[ nx print-affected --base=main --head=HEAD --select=projects == **infrastructure** ]]; then echo "It's there!" fi
 
 workflows:
   pull_request:
@@ -1303,6 +1303,7 @@ workflows:
           environment: pr
           requires:
             - init_aws
+      - print_affected
 
   # main_infrastructure:
     # jobs:
