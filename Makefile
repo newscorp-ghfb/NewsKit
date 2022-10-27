@@ -15,6 +15,16 @@ BASE_URI = ${SITE_BASE_URL}${BASE_PATH}/
 install:
 	yarn install --frozen-lockfile
 
+download_headless_chrome:
+	sudo apt-get update && sudo apt-get install --download-only -yq gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libgbm-dev libappindicator1 libnss3 lsb-release xdg-utils wget
+	mkdir -p vendor/apt
+	sudo cp -R /var/cache/apt vendor/
+	sudo chown -R ${USER}:${USER} vendor/apt
+	sudo chmod -R 755 vendor/apt
+
+install_headless_chrome:
+	sudo dpkg -i vendor/apt/archives/*.deb
+
 # When changing the version, make sure it matches the one used in the `test_newskit_in_nextjs_app` CircleCI's job.
 install_cypress:
 	yarn add -D cypress@9.1.0;
