@@ -171,7 +171,6 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -522,7 +521,6 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -807,7 +805,6 @@ exports[`Popover close button should show left-aligned 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1117,7 +1114,6 @@ exports[`Popover close button should show right-aligned 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1427,7 +1423,6 @@ exports[`Popover content applies logical prop overrides 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1779,7 +1774,6 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2096,7 +2090,6 @@ exports[`Popover content applies typography preset overrides 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2447,7 +2440,6 @@ exports[`Popover header applies logical prop overrides 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2805,7 +2797,6 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3144,7 +3135,6 @@ exports[`Popover header applies typography preset overrides 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3480,7 +3470,6 @@ exports[`Popover offset should be applied with pointer and px distance override 
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3809,7 +3798,6 @@ exports[`Popover offset should be applied with pointer and token distance overri
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4138,7 +4126,6 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4467,7 +4454,6 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4796,7 +4782,6 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5106,7 +5091,6 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5435,7 +5419,6 @@ exports[`Popover pointer padding should be applied with token distance override 
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5764,7 +5747,6 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6093,7 +6075,6 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6422,7 +6403,6 @@ exports[`Popover should render correct styles: default 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6743,7 +6723,6 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -7053,7 +7032,6 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -7382,7 +7360,6 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -7711,7 +7688,6 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -8040,7 +8016,6 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

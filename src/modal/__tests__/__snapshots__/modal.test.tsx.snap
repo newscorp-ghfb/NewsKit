@@ -384,7 +384,6 @@ exports[`Modal renders default 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -948,7 +947,6 @@ exports[`Modal renders inline 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1470,7 +1468,6 @@ exports[`Modal renders modal with overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2052,7 +2049,6 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2640,7 +2636,6 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3178,7 +3173,6 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3743,7 +3737,6 @@ exports[`Modal renders with different closePosition 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4313,7 +4306,6 @@ exports[`Modal renders with logical padding props 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5267,7 +5259,6 @@ exports[`Modal renders without header 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6108,7 +6099,6 @@ exports[`Modal renders without overlay 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6653,7 +6643,6 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

@@ -74,7 +74,6 @@ exports[`Search renders correctly 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -273,7 +272,6 @@ exports[`Search renders correctly 1`] = `
   border-radius: 24px;
   color: #2E3F54;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

@@ -222,7 +222,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -325,7 +324,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -458,7 +456,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   border-radius: 50%;
   color: #ABABAB;
   margin: 0;
-  position: relative;
   opacity: 0;
   pointer-events: none;
 }
@@ -658,7 +655,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1596,7 +1592,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -1711,7 +1706,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   border-radius: 50%;
   color: #ABABAB;
   margin: 0;
-  position: relative;
 }
 
 .emotion-15 svg {
@@ -1802,7 +1796,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   border-radius: 50%;
   color: #ABABAB;
   margin: 0;
-  position: relative;
   opacity: 0;
   pointer-events: none;
 }
@@ -1977,7 +1970,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2873,7 +2865,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -2976,7 +2967,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3109,7 +3099,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   border-radius: 50%;
   color: #ABABAB;
   margin: 0;
-  position: relative;
 }
 
 .emotion-19 svg {
@@ -3200,7 +3189,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   border-radius: 50%;
   color: #ABABAB;
   margin: 0;
-  position: relative;
   opacity: 0;
   pointer-events: none;
 }
@@ -4029,7 +4017,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -4251,7 +4238,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4555,7 +4541,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4917,7 +4902,6 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -5033,7 +5017,6 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5184,7 +5167,6 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -5483,7 +5465,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5619,7 +5600,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5752,7 +5732,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5958,7 +5937,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -7030,7 +7008,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -7133,7 +7110,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -7266,7 +7242,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   border-radius: 50%;
   color: #ABABAB;
   margin: 0;
-  position: relative;
 }
 
 .emotion-19 svg {
@@ -7357,7 +7332,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   border-radius: 50%;
   color: #ABABAB;
   margin: 0;
-  position: relative;
   opacity: 0;
   pointer-events: none;
 }
@@ -7532,7 +7506,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -8470,7 +8443,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -8573,7 +8545,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -8706,7 +8677,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   border-radius: 50%;
   color: #ABABAB;
   margin: 0;
-  position: relative;
 }
 
 .emotion-19 svg {
@@ -8797,7 +8767,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   border-radius: 50%;
   color: #ABABAB;
   margin: 0;
-  position: relative;
   opacity: 0;
   pointer-events: none;
 }
@@ -8972,7 +8941,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -9912,7 +9880,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -10015,7 +9982,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -10148,7 +10114,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   border-radius: 50%;
   color: #ABABAB;
   margin: 0;
-  position: relative;
 }
 
 .emotion-19 svg {
@@ -10239,7 +10204,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   border-radius: 50%;
   color: #ABABAB;
   margin: 0;
-  position: relative;
   opacity: 0;
   pointer-events: none;
 }
@@ -10414,7 +10378,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -11354,7 +11317,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   border-style: solid;
   border-color: #243c46;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -11465,7 +11427,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   appearance: none;
   background-color: transparent;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -11564,7 +11525,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   appearance: none;
   background-color: transparent;
   margin: 0;
-  position: relative;
 }
 
 .emotion-19 svg {
@@ -11653,7 +11613,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   appearance: none;
   background-color: transparent;
   margin: 0;
-  position: relative;
   opacity: 0;
   pointer-events: none;
 }
@@ -11826,7 +11785,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   appearance: none;
   background-color: transparent;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

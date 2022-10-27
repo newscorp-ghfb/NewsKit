@@ -1055,7 +1055,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1465,7 +1464,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1870,7 +1868,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2275,7 +2272,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2734,7 +2730,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3139,7 +3134,6 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3544,7 +3538,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

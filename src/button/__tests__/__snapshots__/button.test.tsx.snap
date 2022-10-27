@@ -38,7 +38,6 @@ exports[`Button Loading Button renders Large Button 1`] = `
   border-radius: 8px;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -152,7 +151,6 @@ exports[`Button Loading Button renders Small Button 1`] = `
   border-radius: 8px;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -266,7 +264,6 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -404,7 +401,6 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -540,7 +536,6 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -678,7 +673,6 @@ exports[`Button Loading Button renders a button with percentage for width and he
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -814,7 +808,6 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -952,7 +945,6 @@ exports[`Button Loading Button renders a button with token set for width and hei
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1088,7 +1080,6 @@ exports[`Button renders Large Button 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1224,7 +1215,6 @@ exports[`Button renders Small Button 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1360,7 +1350,6 @@ exports[`Button renders button link when href passed 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1496,7 +1485,6 @@ exports[`Button renders button link with disabled link 1`] = `
   border-radius: 8px;
   color: #ABABAB;
   margin: 0;
-  position: relative;
 }
 
 .emotion-0 svg {
@@ -1601,7 +1589,6 @@ exports[`Button renders fixed-width Button 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1738,7 +1725,6 @@ exports[`Button renders full-width Button 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1874,7 +1860,6 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2051,7 +2036,6 @@ exports[`Button renders with different spaceInset preset 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2190,7 +2174,6 @@ exports[`Button renders with different style preset 1`] = `
   border-radius: 8px;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2328,7 +2311,6 @@ exports[`Button renders with different typography preset 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2464,7 +2446,6 @@ exports[`Button renders with fallback formatting 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2604,7 +2585,6 @@ exports[`Button renders with logical props overrides 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
   margin-block: 30px;
   padding-block: 30px;

@@ -169,7 +169,6 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -544,7 +543,6 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -971,7 +969,6 @@ exports[`Form renders with error and with submit validation and revalidation mod
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1506,7 +1503,6 @@ exports[`Form renders with error on blur 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1928,7 +1924,6 @@ exports[`Form renders with error on submit 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2463,7 +2458,6 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3264,7 +3258,6 @@ exports[`Form renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3614,7 +3607,6 @@ exports[`Form renders with onBlur validation 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -8901,7 +8893,6 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -9809,7 +9800,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

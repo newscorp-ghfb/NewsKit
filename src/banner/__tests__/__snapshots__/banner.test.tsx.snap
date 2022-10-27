@@ -2731,7 +2731,6 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3145,7 +3144,6 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3560,7 +3558,6 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3963,7 +3960,6 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4947,7 +4943,6 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5078,7 +5073,6 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5514,7 +5508,6 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5636,7 +5629,6 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6027,7 +6019,6 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6448,7 +6439,6 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6893,7 +6883,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -7347,7 +7336,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

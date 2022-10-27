@@ -187,7 +187,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -493,7 +492,6 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

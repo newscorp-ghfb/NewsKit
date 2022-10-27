@@ -67,7 +67,6 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -317,7 +316,6 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -565,7 +563,6 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -815,7 +812,6 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -1063,7 +1059,6 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1313,7 +1308,6 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1561,7 +1555,6 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -1811,7 +1804,6 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -2059,7 +2051,6 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -2309,7 +2300,6 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -2557,7 +2547,6 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -2807,7 +2796,6 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -3071,7 +3059,6 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -3404,7 +3391,6 @@ exports[`Menu renders horizontally with menu group 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -3663,7 +3649,6 @@ exports[`Menu renders horizontally with menu items 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -3925,7 +3910,6 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -4257,7 +4241,6 @@ exports[`Menu renders vertically with menu group 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -4520,7 +4503,6 @@ exports[`Menu renders vertically with menu items 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -4768,7 +4750,6 @@ exports[`Menu renders with default props 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -5017,7 +4998,6 @@ exports[`Menu renders with logical prop overrides 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -5539,7 +5519,6 @@ exports[`MenuGroup renders with overrides 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -5855,7 +5834,6 @@ exports[`MenuGroup renders with title as a component 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -6197,7 +6175,6 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -6510,7 +6487,6 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -6776,7 +6752,6 @@ exports[`MenuItem renders in large size 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -6978,7 +6953,6 @@ exports[`MenuItem renders in medium size 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -7180,7 +7154,6 @@ exports[`MenuItem renders in small size 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -7382,7 +7355,6 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -7585,7 +7557,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   background-color: transparent;
   border-style: solid;
@@ -7847,7 +7818,6 @@ exports[`MenuItem renders with default props 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -8049,7 +8019,6 @@ exports[`MenuItem renders with icon 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -8292,7 +8261,6 @@ exports[`MenuItem renders with overrides 1`] = `
   border-width: 0px 8px 0px 0px;
   color: red;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;

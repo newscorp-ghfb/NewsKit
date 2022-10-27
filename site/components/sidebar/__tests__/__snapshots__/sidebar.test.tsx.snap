@@ -219,7 +219,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -373,7 +372,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   padding-inline: 64px;
   -webkit-box-pack: start;
@@ -480,7 +478,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   margin-block-end: 12px;
   padding-inline: 64px;
@@ -3187,7 +3184,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3341,7 +3337,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   padding-inline: 64px;
   -webkit-box-pack: start;
@@ -3448,7 +3443,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   margin-block-end: 12px;
   padding-inline: 64px;
@@ -6299,7 +6293,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6453,7 +6446,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   padding-inline: 64px;
   -webkit-box-pack: start;
@@ -6560,7 +6552,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   margin-block-end: 12px;
   padding-inline: 64px;
@@ -9270,7 +9261,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -9424,7 +9414,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   padding-inline: 64px;
   -webkit-box-pack: start;
@@ -9531,7 +9520,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   margin-block-end: 12px;
   padding-inline: 64px;

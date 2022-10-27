@@ -40,7 +40,6 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -236,7 +235,6 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -921,7 +919,6 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1206,7 +1203,6 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2258,7 +2254,6 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2837,7 +2832,6 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3253,7 +3247,6 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3715,7 +3708,6 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4177,7 +4169,6 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4639,7 +4630,6 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5101,7 +5091,6 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5563,7 +5552,6 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5749,7 +5737,6 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6095,7 +6082,6 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6263,7 +6249,6 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -6577,7 +6562,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6712,7 +6696,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6851,7 +6834,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -7585,7 +7567,6 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -7769,7 +7750,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -7885,7 +7865,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -8036,7 +8015,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -8320,7 +8298,6 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -8654,7 +8631,6 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -8756,7 +8732,6 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -8895,7 +8870,6 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -9549,7 +9523,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -9651,7 +9624,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -9790,7 +9762,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

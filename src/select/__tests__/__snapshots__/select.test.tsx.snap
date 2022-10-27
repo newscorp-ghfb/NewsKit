@@ -699,7 +699,6 @@ exports[`Select in Modal render Select 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2372,7 +2371,6 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

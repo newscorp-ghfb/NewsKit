@@ -370,7 +370,6 @@ exports[`Card renders actions section with given component 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -737,7 +736,6 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1104,7 +1102,6 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2770,7 +2767,6 @@ exports[`Card renders with card items 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4757,7 +4753,6 @@ exports[`Card with href renders correctly with actions 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6572,7 +6567,6 @@ exports[`CardInset renders with card items 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

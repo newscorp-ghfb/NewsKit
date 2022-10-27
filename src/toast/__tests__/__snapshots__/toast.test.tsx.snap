@@ -1225,7 +1225,6 @@ exports[`Toast Component renders with actions 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2348,7 +2347,6 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

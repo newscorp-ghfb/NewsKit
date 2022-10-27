@@ -40,7 +40,6 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

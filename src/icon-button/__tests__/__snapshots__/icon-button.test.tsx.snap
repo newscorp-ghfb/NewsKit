@@ -40,7 +40,6 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: progress;
 }
 
@@ -157,7 +156,6 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -308,7 +306,6 @@ exports[`IconButton renders Large Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -460,7 +457,6 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -612,7 +608,6 @@ exports[`IconButton renders Small Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -764,7 +759,6 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -920,7 +914,6 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
   margin-block: 30px;
   padding-inline: 20px;
@@ -1077,7 +1070,6 @@ exports[`IconButton renders with different style preset 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

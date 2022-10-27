@@ -58,7 +58,6 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
   margin: 50px 20px 30px 20px;
 }
@@ -179,7 +178,6 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
   margin-right: 20px;
 }
@@ -277,7 +275,6 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -909,7 +906,6 @@ Object {
   border-radius: 8px;
   color: #C0C7CC;
   margin: 0;
-  position: relative;
   margin: 50px 20px 30px 20px;
 }
 
@@ -997,7 +993,6 @@ Object {
   border-radius: 8px;
   color: #C0C7CC;
   margin: 0;
-  position: relative;
   margin-right: 20px;
 }
 
@@ -1062,7 +1057,6 @@ Object {
   border-radius: 8px;
   color: #C0C7CC;
   margin: 0;
-  position: relative;
 }
 
 .emotion-7 svg {
@@ -1241,7 +1235,6 @@ Object {
   border-radius: 8px;
   color: #C0C7CC;
   margin: 0;
-  position: relative;
   margin: 50px 20px 30px 20px;
 }
 
@@ -1329,7 +1322,6 @@ Object {
   border-radius: 8px;
   color: #C0C7CC;
   margin: 0;
-  position: relative;
   margin-right: 20px;
 }
 
@@ -1394,7 +1386,6 @@ Object {
   border-radius: 8px;
   color: #C0C7CC;
   margin: 0;
-  position: relative;
 }
 
 .emotion-7 svg {
@@ -1624,7 +1615,6 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
   margin: 50px 20px 30px 20px;
 }
@@ -1745,7 +1735,6 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
   margin-right: 20px;
 }
@@ -1843,7 +1832,6 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

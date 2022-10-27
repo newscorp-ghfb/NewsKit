@@ -301,7 +301,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -806,7 +805,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1283,7 +1281,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2462,7 +2459,6 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4377,7 +4373,6 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

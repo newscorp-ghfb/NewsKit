@@ -87,7 +87,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -515,7 +514,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -943,7 +941,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1370,7 +1367,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1798,7 +1794,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2226,7 +2221,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2654,7 +2648,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3082,7 +3075,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3510,7 +3502,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

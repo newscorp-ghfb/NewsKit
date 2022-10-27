@@ -1313,7 +1313,6 @@ exports[`Media List renders with feature cardscards 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

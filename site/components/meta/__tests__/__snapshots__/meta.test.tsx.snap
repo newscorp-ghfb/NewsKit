@@ -371,7 +371,6 @@ exports[`Meta renders with mandatory props 1`] = `
   border-radius: 24px;
   color: #2E3F54;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1362,7 +1361,6 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   border-radius: 24px;
   color: #2E3F54;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2559,7 +2557,6 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   border-radius: 24px;
   color: #2E3F54;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

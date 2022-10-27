@@ -156,7 +156,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -310,7 +309,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   padding-inline: 64px;
   -webkit-text-decoration: none;
@@ -464,7 +462,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   padding-inline: 64px;
   -webkit-box-pack: start;
@@ -850,7 +847,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-padding-start: 32px;
   padding-inline-start: 32px;
@@ -1116,7 +1112,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1270,7 +1265,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   padding-inline: 64px;
   -webkit-box-pack: start;
@@ -1854,7 +1848,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2008,7 +2001,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   padding-inline: 64px;
   -webkit-box-pack: start;
@@ -2460,7 +2452,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   border-style: solid;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   -webkit-padding-start: 32px;
   padding-inline-start: 32px;

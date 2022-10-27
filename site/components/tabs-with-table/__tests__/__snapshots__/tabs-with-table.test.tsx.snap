@@ -424,7 +424,6 @@ exports[`TabsWithTable renders with default data 1`] = `
   background-color: transparent;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
   border-radius: borderRadiusSharp;
   background-color: transparent;
@@ -525,7 +524,6 @@ exports[`TabsWithTable renders with default data 1`] = `
   background-color: transparent;
   color: #5A6A79;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 

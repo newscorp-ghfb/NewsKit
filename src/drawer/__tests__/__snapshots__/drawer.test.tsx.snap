@@ -349,7 +349,6 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -874,7 +873,6 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1398,7 +1396,6 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1920,7 +1917,6 @@ exports[`Drawer render inline-drawer 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2344,7 +2340,6 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -2859,7 +2854,6 @@ exports[`Drawer renders default 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3342,7 +3336,6 @@ exports[`Drawer renders drawer with overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -3847,7 +3840,6 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4396,7 +4388,6 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -4895,7 +4886,6 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5421,7 +5411,6 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -5950,7 +5939,6 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -6479,7 +6467,6 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -7008,7 +6995,6 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -7884,7 +7870,6 @@ exports[`Drawer renders without header 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -8653,7 +8638,6 @@ exports[`Drawer renders without overlay 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -9159,7 +9143,6 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
@@ -9575,7 +9558,6 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   border-radius: 50%;
   color: #3B3B3B;
   margin: 0;
-  position: relative;
   cursor: pointer;
 }
 
