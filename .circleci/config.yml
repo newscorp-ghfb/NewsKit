@@ -1110,10 +1110,9 @@ jobs:
       - image: cimg/node:lts-browsers
     steps:
       - checkout
-      - attach_workspace:
-          at: ~/project
-      - run: $(echo yarn nx print-affected --base=main --head=HEAD --select=projects)]
-      - run: $(if [[ nx print-affected --base=main --head=HEAD --select=projects == **infrastructure** ]]; then echo "It's there!" fi
+      - run: yarn install
+      - run: $(echo npx nx print-affected --base=main --head=HEAD --select=projects)]
+      - run: $(if [[ npx nx print-affected --base=main --head=HEAD --select=projects == **infrastructure** ]]; then echo "It's there!" fi
 
 # ========== FILTERS START    ==========
 
