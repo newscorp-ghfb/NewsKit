@@ -802,8 +802,8 @@ export const routes = [
       },
       {
         title: 'Deprecated',
-        description: 'Components that interact with a third-party service.',
-        id: '/components/third-party',
+        description: 'Deprecated components.',
+        id: '/components/deprecated',
         subNav: [
           {
             title: 'Aspect Ratio',
