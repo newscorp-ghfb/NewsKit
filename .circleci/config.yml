@@ -1117,9 +1117,11 @@ jobs:
             var= yarn nx print-affected --base=main --head=HEAD --select=projects
             echo "$var"
   
-            if [[ $var == *"infrastructure"* ]]; then 
-              echo "It's there!" 
-            fi
+            case "infrastructure" in 
+              *$var*)
+                echo "ehy"
+                ;;
+            esac
 
 # ========== FILTERS START    ==========
 
