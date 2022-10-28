@@ -510,7 +510,7 @@ export const routes = [
             page: true,
             id: '/components/grid',
             description:
-              'Used together to construct a visual grid for responsive page layout.',
+              'The grid and cell are used together to construct a visual grid for responsive page layout.',
             illustration: 'components/grid-cell-illustration',
           },
           {
