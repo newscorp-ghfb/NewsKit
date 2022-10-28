@@ -337,6 +337,56 @@ const Spacing = (layoutProps: LayoutProps) => (
                 `,
                 media: getIllustrationComponent('theme/spacing/padding-block'),
               },
+              {
+                title: 'marginInlineStart',
+                description: `
+                Applies space to the start position (left) of an element.
+                `,
+                media: getIllustrationComponent(
+                  'theme/spacing/margin-inline-start',
+                ),
+              },
+              {
+                title: 'marginInlineEnd',
+                description: `
+                Applies space to the end (right) position of an element.
+                `,
+                media: getIllustrationComponent(
+                  'theme/spacing/margin-inline-end',
+                ),
+              },
+              {
+                title: 'marginInline',
+                description: `
+                Applies space to both the start (left) and end (right) positions of an element.
+                `,
+                media: getIllustrationComponent('theme/spacing/margin-inline'),
+              },
+              {
+                title: 'marginBlockStart',
+                description: `
+                Applies space to the start position (top) of an element.
+                `,
+                media: getIllustrationComponent(
+                  'theme/spacing/margin-block-start',
+                ),
+              },
+              {
+                title: 'marginBlockEnd',
+                description: `
+                Applies space to the end position (bottom) of an element.
+                `,
+                media: getIllustrationComponent(
+                  'theme/spacing/margin-block-end',
+                ),
+              },
+              {
+                title: 'marginBlock',
+                description: `
+                Applies space to both the start (top) and end (bottom) positions of an element.
+                `,
+                media: getIllustrationComponent('theme/spacing/margin-block'),
+              },
             ]}
           />
         </ContentPrimary>
