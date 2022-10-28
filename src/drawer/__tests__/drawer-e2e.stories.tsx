@@ -100,4 +100,4 @@ export const StoryDreawerE2Etest = () =>
     );
   });
 StoryDreawerE2Etest.storyName = 'drawer-e2e-test';
-StoryDreawerE2Etest.parameters = {eyes: {include: false}};
+StoryDreawerE2Etest.parameters = {eyes: {include: false}, percy: {skip: true}};
