@@ -891,4 +891,4 @@ StoryStackWithArgs.argTypes = {
 // @ts-ignore
 StoryStackWithArgs.storyName = 'stack-with-args';
 // @ts-ignore
-StoryStackWithArgs.parameters = {eyes: {include: false}};
+StoryStackWithArgs.parameters = {eyes: {include: false}, percy: {skip: true}};
