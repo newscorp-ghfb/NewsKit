@@ -172,7 +172,7 @@ export const StoryDefault = () =>
     );
   });
 StoryDefault.storyName = 'default';
-StoryDefault.parameters = {eyes: {include: false}};
+StoryDefault.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 export const StoryInline = () =>
   React.createElement(() => {
@@ -264,7 +264,7 @@ export const StoryInline = () =>
     );
   });
 StoryInline.storyName = 'inline';
-StoryInline.parameters = {eyes: {include: false}};
+StoryInline.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 // MENU + DRAWER EXAMPLE
 const Header = styled.div<{fixed: boolean}>`
@@ -406,7 +406,7 @@ export const StoryMenuAndInline = () =>
     );
   });
 StoryMenuAndInline.storyName = 'menu+inline';
-StoryMenuAndInline.parameters = {eyes: {include: false}};
+StoryMenuAndInline.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 export const StoryWithAriaAttributes = () =>
   React.createElement(() => {
@@ -430,7 +430,10 @@ export const StoryWithAriaAttributes = () =>
     );
   });
 StoryWithAriaAttributes.storyName = 'with aria attributes';
-StoryWithAriaAttributes.parameters = {eyes: {include: false}};
+StoryWithAriaAttributes.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryWithRestoreFocusAndCustomAutofocus = () =>
   React.createElement(() => {
@@ -477,7 +480,10 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
   });
 StoryWithRestoreFocusAndCustomAutofocus.storyName =
   'with restore focus and custom autofocus';
-StoryWithRestoreFocusAndCustomAutofocus.parameters = {eyes: {include: false}};
+StoryWithRestoreFocusAndCustomAutofocus.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryWithHiddenOverlay = () =>
   React.createElement(() => {
@@ -504,7 +510,10 @@ export const StoryWithHiddenOverlay = () =>
     );
   });
 StoryWithHiddenOverlay.storyName = 'hidden overlay';
-StoryWithHiddenOverlay.parameters = {eyes: {include: false}};
+StoryWithHiddenOverlay.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryWithDisabledFocusTrap = () =>
   React.createElement(() => {
@@ -532,7 +541,10 @@ export const StoryWithDisabledFocusTrap = () =>
     );
   });
 StoryWithDisabledFocusTrap.storyName = 'disabled focus trap';
-StoryWithDisabledFocusTrap.parameters = {eyes: {include: false}};
+StoryWithDisabledFocusTrap.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryModelessDrawer = () =>
   React.createElement(() => {
@@ -562,7 +574,7 @@ export const StoryModelessDrawer = () =>
     );
   });
 StoryModelessDrawer.storyName = 'modelss';
-StoryModelessDrawer.parameters = {eyes: {include: false}};
+StoryModelessDrawer.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 export const StoryModelessWithRestoreFocusAndCustomAutofocus = () =>
   React.createElement(() => {
@@ -612,6 +624,7 @@ StoryModelessWithRestoreFocusAndCustomAutofocus.storyName =
   'modeless with restore focus and custom autofocus';
 StoryModelessWithRestoreFocusAndCustomAutofocus.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };
 
 export const StoryOptionalHeaderClose = () =>
@@ -663,7 +676,10 @@ export const StoryOptionalHeaderClose = () =>
     );
   });
 StoryOptionalHeaderClose.storyName = 'optional header & close';
-StoryOptionalHeaderClose.parameters = {eyes: {include: false}};
+StoryOptionalHeaderClose.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryDreawerTest = () =>
   React.createElement(() => {
@@ -703,7 +719,7 @@ export const StoryDreawerTest = () =>
     );
   });
 StoryDreawerTest.storyName = 'drawer-transitions-mq';
-StoryDreawerTest.parameters = {eyes: {include: false}};
+StoryDreawerTest.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 export const StoryDrawerLogicalPaddingOnPanel = () =>
   React.createElement(() => {
@@ -778,7 +794,10 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
     );
   });
 StoryDrawerLogicalPaddingOnPanel.storyName = 'logical padding on panel';
-StoryDrawerLogicalPaddingOnPanel.parameters = {eyes: {include: false}};
+StoryDrawerLogicalPaddingOnPanel.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryInlineDrawerLogicalPropsOnPanel = () =>
   React.createElement(() => {
@@ -832,7 +851,10 @@ export const StoryInlineDrawerLogicalPropsOnPanel = () =>
   });
 StoryInlineDrawerLogicalPropsOnPanel.storyName =
   'inline drawer with logical padding & margin';
-StoryInlineDrawerLogicalPropsOnPanel.parameters = {eyes: {include: false}};
+StoryInlineDrawerLogicalPropsOnPanel.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export default {
   title: 'Components/drawer',

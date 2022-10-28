@@ -21,6 +21,7 @@ import {getTransitionClassName} from '../utils/get-transition-class-name';
 import {getTransitionDuration} from '../utils';
 import {useTheme} from '../theme';
 import {getRefScrollHeight} from './utils';
+import {EventTrigger, useInstrumentation} from '../instrumentation';
 
 // Based on https://www.w3schools.com/howto/howto_js_accordion.asp
 const MaxHeightTransitionPanel = ({
@@ -84,6 +85,8 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
       overrides,
       onClick: onClickProp,
       onChange: onChangeProp = () => null,
+      eventContext = {},
+      eventOriginator = 'accordion',
       ...props
     },
     ref,
@@ -100,9 +103,19 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
       },
     );
 
+    const {fireEvent} = useInstrumentation();
+
     const onClick = composeEventHandlers([
       onClickProp,
       () => onChangeProp(!expanded),
+      () =>
+        fireEvent({
+          originator: eventOriginator,
+          trigger: EventTrigger.Click,
+          context: {
+            ...eventContext,
+          },
+        }),
     ]);
 
     const theme = useTheme();
