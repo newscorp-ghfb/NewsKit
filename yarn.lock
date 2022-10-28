@@ -2440,9 +2440,9 @@
   dependencies:
     "@floating-ui/core" "^0.7.0"
 
-"@floating-ui/react-dom-interactions@^0.6.0":
+"@floating-ui/react-dom-interactions@0.6.0":
   version "0.6.0"
-  resolved "https://registry.npmjs.org/@floating-ui/react-dom-interactions/-/react-dom-interactions-0.6.0.tgz"
+  resolved "https://registry.yarnpkg.com/@floating-ui/react-dom-interactions/-/react-dom-interactions-0.6.0.tgz#a328b4d349b4d706e45c3a6a7dce592f9cf4bd27"
   integrity sha512-8XzQuQStUNztHvg+Rj6MdUjBsOKIb6Oe0eIs1w9LfssOT0ZEPPHVsCZgLiWoyDaotF6pirLGAXkOfQxPM7VBRQ==
   dependencies:
     "@floating-ui/react-dom" "^0.7.0"
