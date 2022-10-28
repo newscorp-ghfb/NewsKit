@@ -7,6 +7,10 @@ export interface BaseFlagOverrides extends LogicalProps {
   typographyPreset?: MQ<string>;
   stylePreset?: MQ<string>;
   transitionPreset?: TransitionToken | TransitionToken[];
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
+   */
+  spaceInset?: MQ<string>;
   spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
   width?: MQ<string>;
   height?: MQ<string>;

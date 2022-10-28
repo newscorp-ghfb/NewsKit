@@ -28,7 +28,6 @@ export type GridLayoutProps = {
   alignContent?: MQ<string>;
   justifyItems?: MQ<string>;
   alignItems?: MQ<string>;
-
   areas?: MQ<string>;
   inline?: MQ<boolean>;
   children?: React.ReactNode | GridLayoutRenderProps;
