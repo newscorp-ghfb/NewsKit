@@ -92,3 +92,14 @@ delete_trigger_release_tag:
 	git checkout main
 	git push origin --delete trigger-release@${VERSION}
 
+# has_infrastructure_changed:
+# 	var= yarn nx print-affected --base=main --head=HEAD --select=projects
+# 	echo "$var"
+
+# 	case "infrastructure" in 
+# 		*$var*)
+# 			echo "Infrastructure has changed"
+# 			exit 0
+# 			;;
+# 	esac
+
