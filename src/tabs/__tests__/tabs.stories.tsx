@@ -1202,6 +1202,7 @@ StoryTabsWithCustomTabBarIndicatorAnimation.storyName =
   'tabs-with-custom-tab-bar-indicator-animation';
 StoryTabsWithCustomTabBarIndicatorAnimation.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };
 
 export const StoryTabsWithPresetsOverrides = () => (
@@ -1437,7 +1438,10 @@ export const StoryTabsWithOverflowAndScroll = () => (
   </MainContainer>
 );
 StoryTabsWithOverflowAndScroll.storyName = 'tabs-with-overflow-and-scroll';
-StoryTabsWithOverflowAndScroll.parameters = {eyes: {include: false}};
+StoryTabsWithOverflowAndScroll.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryTabsWithScrollOverrides = () => {
   const CustomScroll = styled.div`

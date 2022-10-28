@@ -15,6 +15,16 @@ BASE_URI = ${SITE_BASE_URL}${BASE_PATH}/
 install:
 	yarn install --frozen-lockfile
 
+download_headless_chrome:
+	sudo apt-get update && sudo apt-get install --download-only -yq gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libgbm-dev libappindicator1 libnss3 lsb-release xdg-utils wget
+	mkdir -p vendor/apt
+	sudo cp -R /var/cache/apt vendor/
+	sudo chown -R ${USER}:${USER} vendor/apt
+	sudo chmod -R 755 vendor/apt
+
+install_headless_chrome:
+	sudo dpkg -i vendor/apt/archives/*.deb
+
 # When changing the version, make sure it matches the one used in the `test_newskit_in_nextjs_app` CircleCI's job.
 install_cypress:
 	yarn add -D cypress@9.1.0;
@@ -49,6 +59,12 @@ check_broken_links_docs:
 comps_visual_test:
 	yarn test:visual:comps:ci
 
+comps_visual_test_percy:
+	yarn test:visual:comps:ci:percy
+
+skip_comps_visual_test_percy:
+	yarn test:visual:comps:ci:percy:skip
+
 e2e_test_comps:
 	yarn e2e:comps:ci;
 
@@ -60,6 +76,12 @@ e2e_test_docs:
 
 e2e_visual_test_docs:
 	yarn e2e:visual:docs:ci;
+
+e2e_visual_test_docs_percy:
+	yarn e2e:visual:docs:ci:percy;
+
+skip_e2e_visual_test_docs_percy:
+	yarn e2e:visual:docs:ci:percy:skip;
 
 publish_npm_dev:
 	cd dist; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable;

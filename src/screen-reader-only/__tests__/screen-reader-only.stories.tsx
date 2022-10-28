@@ -16,7 +16,10 @@ export const StoryScreenReaderOnly = () => (
   </>
 );
 StoryScreenReaderOnly.storyName = 'ScreenReaderOnly';
-StoryScreenReaderOnly.parameters = {eyes: {include: false}};
+StoryScreenReaderOnly.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export default {
   title: 'Utilities/ScreenReaderOnly',
