@@ -1115,8 +1115,11 @@ jobs:
       - run: 
           command: | 
             var= yarn nx print-affected --base=main --head=HEAD --select=projects
-            echo $var
-            if [[ "$var" == *"infrastructure"* ]]; then 
+            echo "$var"
+            if [[ 1 == 1]]; then
+              echo "test"
+            fi
+            if [[ $var == *"infrastructure"* ]]; then 
               echo "It's there!" 
             fi
 
@@ -1289,7 +1292,7 @@ workflows:
             - deploy_to_s3
 
   pull_request_infrastructure:
-    when: true
+    when: $(echo "hey")
     jobs:
       - init_aws:
           context: ncu-product-platforms-context
