@@ -370,14 +370,6 @@ export const routes = [
             illustration: 'components/select/select-illustration',
           },
           {
-            title: 'Share Bar',
-            page: true,
-            id: '/components/share-bar',
-            description:
-              'Used anywhere a user would like to easily share something with social media.',
-            illustration: 'components/share-bar/share-bar-illustration',
-          },
-          {
             title: 'Slider',
             page: true,
             id: '/components/slider',
@@ -400,13 +392,6 @@ export const routes = [
             description:
               'Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.',
             illustration: 'components/text-field/hero',
-          },
-          {
-            title: 'Text Input',
-            page: true,
-            id: '/components/text-input',
-            description: 'Lets users enter and edit text.',
-            illustration: 'components/text-input-illustration',
           },
           {
             title: 'Text Area',
@@ -481,13 +466,6 @@ export const routes = [
           'Components that help to define the fundamental spacial structure of a feature or page.',
         id: '/components/layout',
         subNav: [
-          {
-            title: 'Aspect Ratio',
-            page: true,
-            id: '/components/aspect-ratio',
-            description: 'The aspect ratio of an image.',
-            illustration: 'components/aspect-ratio-illustration',
-          },
           {
             title: 'Block',
             page: true,
@@ -612,13 +590,6 @@ export const routes = [
             id: '/components/image',
             description: 'An element of media.',
             illustration: 'components/image-illustration',
-          },
-          {
-            title: 'Volume Control',
-            page: true,
-            id: '/components/volume-control',
-            description: 'Allows user to mute, increase or lower audio volume.',
-            illustration: 'components/volume-control-illustration',
           },
         ],
       },
@@ -833,6 +804,42 @@ export const routes = [
             id: '/components/utils/hooks',
             description:
               'A collection of hooks that NewsKit provides to make it easier to build responsive interfaces with our predefined breakpoints.',
+          },
+        ],
+      },
+      {
+        title: 'Deprecated',
+        id: '/deprecated',
+        description: 'These components are no longer supported.',
+        subNav: [
+          {
+            title: 'Aspect Ratio',
+            page: true,
+            id: '/components/aspect-ratio',
+            description: 'The aspect ratio of an image.',
+            illustration: 'components/aspect-ratio-illustration',
+          },
+          {
+            title: 'Share Bar',
+            page: true,
+            id: '/components/share-bar',
+            description:
+              'Used anywhere a user would like to easily share something with social media.',
+            illustration: 'components/share-bar/share-bar-illustration',
+          },
+          {
+            title: 'Text Input',
+            page: true,
+            id: '/components/text-input',
+            description: 'Lets users enter and edit text.',
+            illustration: 'components/text-input-illustration',
+          },
+          {
+            title: 'Volume Control',
+            page: true,
+            id: '/components/volume-control',
+            description: 'Allows user to mute, increase or lower audio volume.',
+            illustration: 'components/volume-control-illustration',
           },
         ],
       },
