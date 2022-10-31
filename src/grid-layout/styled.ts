@@ -28,6 +28,9 @@ const mapTemplate = (theme: Theme, templateString?: string) =>
     .join(' ');
 
 export const StyledGridLayout = styled.div<GridLayoutProps>`
+  margin: 0;
+  padding: 0;
+
   ${handleResponsiveProp({inline: GRID_DEFAULT_PROPS.inline}, ({inline}) => ({
     display: inline ? 'inline-grid' : 'grid',
   }))}
