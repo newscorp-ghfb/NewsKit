@@ -79,7 +79,7 @@ const Spacing = (layoutProps: LayoutProps) => (
         </ContentPrimary>
 
         <ContentPrimary
-          headline="Space Tokens"
+          headline="Space tokens"
           description={
             <>
               Space tokens define the space throughout the system, such as the
