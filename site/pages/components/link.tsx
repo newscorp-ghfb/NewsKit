@@ -13,13 +13,6 @@ import {IconFilledCircle} from '../../components/icons';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
-const unorderedListOverrides = {
-  spaceStack: 'space040',
-  content: {
-    typographyPreset: 'editorialParagraph030',
-  },
-};
-
 const infoIcon = (
   <IconFilledInfo
     overrides={{
@@ -55,7 +48,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the link component, its variations, and configuration options.',
+        'This demo allows you to preview the inline and standalone links, its thier variations, and configuration options.',
       playground: {
         componentName: 'link',
         component: state => <Link href={' '} {...state} />,
@@ -270,18 +263,27 @@ const LinkComponent = (layoutProps: LayoutProps) => (
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
+            overrides={{
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
+              marginBlockStart: 'space050',
+              marginBlockEnd: 'space090',
+            }}
           >
             <>
               Avoid opening links in a new tab or window, as it can be
-              disorienting for users and
-              <LinkInline
+              disorienting for users and can{' '}
+              <Link
+                overrides={{
+                  marginBlockEnd: 'space050',
+                }}
                 target="_blank"
                 href="https://www.w3.org/TR/WCAG20-TECHS/G200.html"
               >
-                can cause problems for users who are unable to visually perceive
+                cause problems for users who are unable to visually perceive
                 that the new tab has opened.
-              </LinkInline>
+              </Link>
             </>
             <>
               If there is a need for a link to open in a new tab, include the
@@ -311,7 +313,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
       },
       aria: {
         title: 'WAI-ARIA',
-        introduction: (
+        description: (
           <>
             By default, there is no aria-label set in the link component. The
             text inside the anchor will be read by the screen reader, so it is
