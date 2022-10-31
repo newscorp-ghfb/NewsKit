@@ -6,8 +6,10 @@ import {
   IconFilledCancel,
   IconFilledStarOutline,
 } from '../../icons';
+import {EventTrigger} from '../../instrumentation';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {TextBlock} from '../../text-block';
@@ -317,6 +319,34 @@ describe('Accordion', () => {
     });
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('fire tracking event', async () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      eventOriginator: 'accordion-item',
+      eventContext: {
+        event: 'other event data',
+      },
+      ...defaultProps,
+    };
+
+    const {getByTestId} = renderWithImplementation(
+      Accordion,
+      props,
+      mockFireEvent,
+    );
+    const headerButton = await getByTestId('accordion-control');
+
+    fireEvent.click(headerButton);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'accordion-item',
+      trigger: EventTrigger.Click,
+      context: {
+        event: 'other event data',
+      },
+    });
   });
 });
 

@@ -45,7 +45,7 @@ const HeroInteractiveElements = ({
         >
           <TextBlock
             typographyPreset="utilityBody020"
-            paddingInlineEnd="space030"
+            paddingInlineEnd="space050"
           >
             Select option
           </TextBlock>
