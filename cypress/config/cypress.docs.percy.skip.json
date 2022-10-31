@@ -1,0 +1,4 @@
+{
+  "baseUrl": null,
+  "integrationFolder": "cypress/site/percy-skip"
+}

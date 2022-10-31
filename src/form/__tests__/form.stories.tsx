@@ -338,7 +338,10 @@ export const StoryFormWithPhoneInput = () => {
   );
 };
 StoryFormWithPhoneInput.storyName = 'form-with-phone-input';
-StoryFormWithPhoneInput.parameters = {eyes: {include: false}};
+StoryFormWithPhoneInput.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryFormWithCustomStyles = () => {
   const StyledForm = styled(Form)`

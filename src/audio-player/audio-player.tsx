@@ -33,6 +33,10 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
+/**
+ * @deprecated AudioPlayer is deprecated and will be removed in the next major release.
+ */
+
 const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
   const {
     onNextTrack,

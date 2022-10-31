@@ -11,7 +11,10 @@ import {
 import {StackChild, StackChildProps} from '../stack-child';
 import {hasMatchingDisplayNameWith, as as asUtil} from '../utils/component';
 import {MQ} from '../utils/style/types';
-import {extractLogicalPropsFromOverrides} from '../utils/logical-properties';
+import {
+  extractLogicalPropsFromOverrides,
+  omitLogicalPropsFromOverrides,
+} from '../utils/logical-properties';
 
 const getAsProp = (as: StackProps['as'], list: StackProps['list']) =>
   !list && as ? asUtil(as) : null;
@@ -59,6 +62,7 @@ const wrapChild = (
     $wrap: wrap,
     ...extractLogicalPropsFromOverrides(child.props),
   };
+
   const hasSpace = hasSpacing(spaceStack, spaceInline);
 
   const renderAs = getAsProp(as, list);
@@ -103,7 +107,10 @@ const wrapChild = (
 
   // If child is anything else
   return list || hasSpace ? (
-    <ChildContainer {...renderAs} {...childProps}>
+    <ChildContainer
+      {...renderAs}
+      {...omitLogicalPropsFromOverrides(childProps)}
+    >
       {child}
     </ChildContainer>
   ) : (

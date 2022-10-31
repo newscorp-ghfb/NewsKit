@@ -1,4 +1,4 @@
-export default [
+export const routes = [
   {
     title: 'About',
     id: '/about',
@@ -370,14 +370,6 @@ export default [
             illustration: 'components/select/select-illustration',
           },
           {
-            title: 'Share Bar',
-            page: true,
-            id: '/components/share-bar',
-            description:
-              'Used anywhere a user would like to easily share something with social media.',
-            illustration: 'components/share-bar/share-bar-illustration',
-          },
-          {
             title: 'Slider',
             page: true,
             id: '/components/slider',
@@ -400,13 +392,6 @@ export default [
             description:
               'Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.',
             illustration: 'components/text-field/hero',
-          },
-          {
-            title: 'Text Input',
-            page: true,
-            id: '/components/text-input',
-            description: 'Lets users enter and edit text.',
-            illustration: 'components/text-input-illustration',
           },
           {
             title: 'Text Area',
@@ -482,13 +467,6 @@ export default [
         id: '/components/layout',
         subNav: [
           {
-            title: 'Aspect Ratio',
-            page: true,
-            id: '/components/aspect-ratio',
-            description: 'The aspect ratio of an image.',
-            illustration: 'components/aspect-ratio-illustration',
-          },
-          {
             title: 'Block',
             page: true,
             id: '/components/block',
@@ -532,7 +510,7 @@ export default [
             page: true,
             id: '/components/grid',
             description:
-              'Used together to construct a visual grid for responsive page layout.',
+              'The grid and cell are used together to construct a visual grid for responsive page layout.',
             illustration: 'components/grid-cell-illustration',
           },
           {
@@ -612,13 +590,6 @@ export default [
             id: '/components/image',
             description: 'An element of media.',
             illustration: 'components/image-illustration',
-          },
-          {
-            title: 'Volume Control',
-            page: true,
-            id: '/components/volume-control',
-            description: 'Allows user to mute, increase or lower audio volume.',
-            illustration: 'components/volume-control-illustration',
           },
         ],
       },
@@ -797,36 +768,79 @@ export default [
       {
         title: 'Utilities',
         id: '/utils',
+        description:
+          'Utilities that allow for modification of a single trait, typically a single CSS property.',
         subNav: [
           {
             title: 'Emotion',
             page: true,
             id: '/components/utils/emotion',
+            description:
+              'Commonly used Emotion functions/types/components to help with building custom components.',
           },
           {
             title: 'customToNewsKitIcon',
             page: true,
             id: '/components/utils/custom-to-newskit-icon',
+            description:
+              'A helper function that can be used to turn any user defined SVG into a NewsKit icon.',
           },
           {
-            title: 'getCssFromTheme',
+            title: 'Get CSS from theme utils',
             page: true,
             id: '/components/utils/get-css-from-theme',
+            description:
+              'A group of functions used to retrieve token values from theme or component props.',
           },
           {
-            title: 'getFromTheme',
-            page: true,
-            id: '/components/utils/get-from-theme',
-          },
-          {
-            title: 'getComponentDefaults',
+            title: 'Component defaults utils',
             page: true,
             id: '/components/utils/get-defaults',
+            description:
+              'A group of functions used to retrieve values from the component defaults or overrides objects.',
           },
           {
             title: 'Hooks',
             page: true,
             id: '/components/utils/hooks',
+            description:
+              'A collection of hooks that NewsKit provides to make it easier to build responsive interfaces with our predefined breakpoints.',
+          },
+        ],
+      },
+      {
+        title: 'Deprecated',
+        id: '/deprecated',
+        description: 'These components are no longer supported.',
+        subNav: [
+          {
+            title: 'Aspect Ratio',
+            page: true,
+            id: '/components/aspect-ratio',
+            description: 'The aspect ratio of an image.',
+            illustration: 'components/aspect-ratio-illustration',
+          },
+          {
+            title: 'Share Bar',
+            page: true,
+            id: '/components/share-bar',
+            description:
+              'Used anywhere a user would like to easily share something with social media.',
+            illustration: 'components/share-bar/share-bar-illustration',
+          },
+          {
+            title: 'Text Input',
+            page: true,
+            id: '/components/text-input',
+            description: 'Lets users enter and edit text.',
+            illustration: 'components/text-input-illustration',
+          },
+          {
+            title: 'Volume Control',
+            page: true,
+            id: '/components/volume-control',
+            description: 'Allows user to mute, increase or lower audio volume.',
+            illustration: 'components/volume-control-illustration',
           },
         ],
       },

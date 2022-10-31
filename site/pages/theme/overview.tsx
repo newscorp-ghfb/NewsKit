@@ -9,7 +9,7 @@ import Layout, {LayoutProps} from '../../components/layout';
 import {MediaItem, MediaList} from '../../components/media-list';
 import {HeaderIndex} from '../../components/header-index';
 import {ComponentPageCell} from '../../components/layout-cells';
-import routes from '../../routes';
+import {routes} from '../../routes';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {Item} from '../../components/sidebar/types';
 import {HeadNextSeo} from '../../components/head-next-seo';
@@ -49,7 +49,7 @@ const themePresetsRouteListCards = getCardList(themePresetsRouteList);
 const themeThemingRouteListCards = getCardList(themeThemingRouteList);
 
 const Overview = (layoutProps: LayoutProps) => {
-  const pageDescription = `NewsKit offers a robust and flexible theming system, 
+  const pageDescription = `NewsKit offers a robust and flexible theming system,
                           enabling brands to retain a unique identity while building consistent, accessible products.`;
   return (
     <Layout {...layoutProps} newPage>

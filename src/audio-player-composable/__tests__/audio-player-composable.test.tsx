@@ -207,11 +207,13 @@ const recordedTrackingOutputObject = {
   context: {
     media_player: `newskit-audio-player-${version}`,
     media_duration: '00:00',
+    media_playback_rate: 1,
     media_type: 'audio',
     // TODO media_milestone should be "2" once implemented the control
     media_milestone: 'NaN',
     media_offset: '00:00',
     media_segment: 'MockMediaSegment',
+    media_volume: 0.2,
   },
 };
 
@@ -1272,7 +1274,7 @@ describe('Audio Player Composable', () => {
 
       const expectedObject = {
         ...recordedTrackingOutputObject,
-        originator: 'audio-complete',
+        originator: 'audio-player-complete',
         trigger: 'end',
       };
 
@@ -1404,26 +1406,6 @@ describe('Audio Player Composable', () => {
       });
     });
 
-    test('should raise event when the track has ended', () => {
-      const fireEventSpy = jest.fn();
-      const {getByTestId} = renderWithImplementation(
-        AudioPlayerComposable,
-        recordedAudioProps,
-        fireEventSpy,
-      );
-
-      const expectedObject = {
-        ...recordedTrackingOutputObject,
-        originator: 'audio-complete',
-        trigger: 'end',
-      };
-
-      const player = getByTestId('audio-element');
-      fireEvent.ended(player);
-
-      expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
-    });
-
     test('raise event when audio player autoplay', () => {
       const fireEventSpy = jest.fn();
       const {getByTestId} = renderWithImplementation(
@@ -1433,7 +1415,10 @@ describe('Audio Player Composable', () => {
       );
 
       const expectedObject = {
-        ...recordedTrackingOutputObject,
+        context: {
+          ...recordedTrackingOutputObject.context,
+          media_volume: 0,
+        },
         originator: 'audio-player-audio',
         trigger: 'start',
       };
@@ -1443,7 +1428,7 @@ describe('Audio Player Composable', () => {
       fireEvent.click(play);
       fireEvent.click(play);
 
-      expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
+      expect(fireEventSpy).toHaveBeenNthCalledWith(4, expectedObject);
     });
 
     test('should raise event while the audio is being played', () => {
@@ -1471,9 +1456,11 @@ describe('Audio Player Composable', () => {
           media_duration: '01:00',
           media_milestone: '0',
           media_offset: '00:00',
+          media_playback_rate: 1,
           media_player: 'newskit-audio-player-0.10.0',
           media_segment: 'MockMediaSegment',
           media_type: 'audio',
+          media_volume: 0.2,
         },
       };
       expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);

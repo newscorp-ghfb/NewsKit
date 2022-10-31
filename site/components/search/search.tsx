@@ -27,6 +27,11 @@ const SearchIconContainer = styled(Visible)`
   ${getSpacingCssFromTheme('marginBottom', 'space010')};
 `;
 
+// small fix for not being able to locate stylesheet for next screen at run time.
+const HiddenDiv = styled.div`
+  display: none;
+`;
+
 export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
   const searchButtonRef = React.useRef(null);
   const [isOpen, setIsOpen] = React.useState(false);
@@ -55,7 +60,9 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
   useEffect(() => {
     const addStartScreen = () => {
       const dropDown = document.querySelector('.DocSearch-Dropdown');
-      const isExisting = document.querySelector('.DocSearch-NewStartScreen');
+      const isExisting = document.querySelector(
+        '.DocSearch-Modal .DocSearch-NewStartScreen',
+      );
       if (dropDown && !isExisting) {
         dropDown.insertAdjacentHTML(
           'beforeend',
@@ -76,7 +83,7 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
       if (searchInput) {
         const handleInput: EventListener = event => {
           const newStartScreen = document.querySelector<HTMLDivElement>(
-            '.DocSearch-NewStartScreen',
+            '.DocSearch-Modal .DocSearch-NewStartScreen',
           );
           if (newStartScreen) {
             const {value} = event.target as HTMLInputElement;
@@ -101,6 +108,9 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
 
   return (
     <>
+      <HiddenDiv>
+        <NewStartScreen />
+      </HiddenDiv>
       <SearchIconContainer xs sm md>
         {sidebarOpen ? undefined : (
           <IconButton
@@ -326,7 +336,7 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
             '.DocSearch-Dropdown-Container': {
               order: 1,
             },
-            '.DocSearch-NewStartScreen': {
+            '.DocSearch-Modal .DocSearch-NewStartScreen': {
               order: 2,
             },
           },

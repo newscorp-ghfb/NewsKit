@@ -597,6 +597,7 @@ StoryAccordionGroupTransitionOverrides.storyName =
   'accordion-group-transition-overrides';
 StoryAccordionGroupTransitionOverrides.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };
 
 export default {

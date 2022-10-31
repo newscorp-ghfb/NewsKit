@@ -6,7 +6,7 @@ export const capitalize = (s: string) =>
 
 export const extractAreas = (areaString: string) =>
   areaString
-    .replace(/\n/g, '')
+    .replace(/\n/g, ' ')
     .replace(/"/g, '')
     .replace(/  +/g, ' ')
     .trim()
