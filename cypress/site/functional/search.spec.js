@@ -31,19 +31,24 @@ describe('Documentation Site - search component', () => {
   describe('NewStartScreen', () => {
     it('should hide when the user inputs a search term and display when the search term is deleted', () => {
       cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).click();
-      cy.get('.DocSearch-NewStartScreen').and('be.visible');
+      cy.get('.DocSearch-Modal .DocSearch-NewStartScreen').and('be.visible');
       cy.get('#docsearch-input').type('Search term');
-      cy.get('.DocSearch-NewStartScreen').should('not.be.visible');
+      cy.get('.DocSearch-Modal .DocSearch-NewStartScreen').should(
+        'not.be.visible',
+      );
       cy.get('#docsearch-input').clear();
-      cy.get('.DocSearch-NewStartScreen').and('be.visible');
+      cy.get('.DocSearch-Modal .DocSearch-NewStartScreen').and('be.visible');
     });
 
     it('should show when the modal is closed and reopens and should not be duplicated', () => {
       cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).click();
-      cy.get('.DocSearch-NewStartScreen').and('be.visible');
+      cy.get('.DocSearch-Modal .DocSearch-NewStartScreen').and('be.visible');
       cy.get('#docsearch-input').type('{esc}');
       cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).click();
-      cy.get('.DocSearch-NewStartScreen').should('have.length', 1);
+      cy.get('.DocSearch-Modal .DocSearch-NewStartScreen').should(
+        'have.length',
+        1,
+      );
     });
   });
 });

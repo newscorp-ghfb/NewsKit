@@ -258,6 +258,9 @@ StoryAudioPlayer.parameters = {
   eyes: {
     waitBeforeCapture: '#storyAudioPlayerReady',
   },
+  percy: {
+    waitForSelector: '#storyAudioPlayerReady',
+  },
 };
 
 export const StoryAudioPlayerLogicalOverrides = () => {
@@ -286,6 +289,9 @@ StoryAudioPlayerLogicalOverrides.storyName = 'audio-player-logical-overrides';
 StoryAudioPlayerLogicalOverrides.parameters = {
   eyes: {
     waitBeforeCapture: '#storyAudioPlayerLogicalOverridesReady',
+  },
+  percy: {
+    waitForSelector: '#storyAudioPlayerLogicalOverridesReady',
   },
 };
 
@@ -355,6 +361,9 @@ StoryAudioPlayerWithControls.parameters = {
   eyes: {
     waitBeforeCapture: '#storyAudioPlayerWithControlsReady',
   },
+  percy: {
+    waitForSelector: '#storyAudioPlayerWithControlsReady',
+  },
 };
 
 export const StoryAudioPlayerWithHiddenControls = () => {
@@ -418,6 +427,9 @@ StoryAudioPlayerWithHiddenControls.storyName =
 StoryAudioPlayerWithHiddenControls.parameters = {
   eyes: {
     waitBeforeCapture: '#storyAudioPlayerWithHiddenControlsReady',
+  },
+  percy: {
+    waitForSelector: '#storyAudioPlayerWithHiddenControlsReady',
   },
 };
 
