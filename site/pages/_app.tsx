@@ -122,6 +122,7 @@ export default class MyApp extends App<Props, State> {
   render() {
     const {Component, pageProps, path} = this.props;
     const {theme, themeMode} = this.state as State;
+    const pathTokens = path.split('/').filter(Boolean);
 
     const handlers = [
       instrumentationHandlers.createConsoleHandler(),
@@ -145,8 +146,8 @@ export default class MyApp extends App<Props, State> {
           layer={{zIndex: 1000}}
           instrumentation={createEventInstrumentation(handlers, {
             ...pageProps,
-            pageOriginator: path.split('/').filter(Boolean).at(-1),
-            pageType: path.split('/').filter(Boolean).at(0),
+            pageOriginator: pathTokens[pathTokens.length - 1],
+            pageType: pathTokens[0],
           })}
         >
           <ThemeMode.Provider value={themeMode}>
