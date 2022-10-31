@@ -25,8 +25,12 @@ const componentsSubNav: any[] | undefined = routes.find(
   r => r.title === 'Components',
 )?.subNav;
 const componentCategories =
-  componentsSubNav?.slice(1).filter(e => e.id !== '/utils') || [];
+  componentsSubNav
+    ?.slice(1)
+    .filter(e => e.id !== '/utils' && e.id !== '/deprecated') || [];
+
 const utilities = componentsSubNav?.find(e => e.id === '/utils');
+const deprecated = componentsSubNav?.find(e => e.id === '/deprecated');
 
 const OverviewComponent = (layoutProps: LayoutProps) => {
   const breakpoint = useBreakpointKey();
@@ -148,6 +152,36 @@ const OverviewComponent = (layoutProps: LayoutProps) => {
             </Block>
           </ComponentPageCell>
         </Cell>
+        <ComponentPageCell>
+          <Separator />
+        </ComponentPageCell>
+        <React.Fragment key={deprecated.title}>
+          <Cell xs={12}>
+            <SectionIntroduction
+              subHeadingSpaceStack="space080"
+              title={deprecated.title}
+              cellProps={{lg: 8}}
+            >
+              {deprecated.description}
+            </SectionIntroduction>
+          </Cell>
+          <ComponentPageCell>
+            <MediaList
+              cards={deprecated?.subNav?.map((comp: any) => ({
+                media: comp.illustration
+                  ? getIllustrationComponent(comp.illustration)
+                  : {
+                      src: comp.media,
+                      alt: '',
+                    },
+                title: comp.title,
+                href: comp.id,
+                description: comp.description,
+              }))}
+              gridProps={{xsRowGutter: 'space050'}}
+            />
+          </ComponentPageCell>
+        </React.Fragment>
       </Grid>
 
       <Block spaceStack="space070" />

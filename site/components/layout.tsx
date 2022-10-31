@@ -8,6 +8,7 @@ import {
   getSpacingCssFromTheme,
   getColorCssFromTheme,
   ThemeProvider,
+  InstrumentationProvider,
 } from 'newskit';
 
 import {docsThemeDark, docsThemeLight} from '../theme/doc-theme';
@@ -199,31 +200,34 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
             {/* This is a hack to fix stalling builds from NextJS trying to optimise the page, it won't render anything */}
             <Playground componentName={false} />
 
-            <BodyWrapper>
-              {newPage ? (
-                <ThemeProvider
-                  theme={themeMode === 'light' ? docsThemeLight : docsThemeDark}
-                >
-                  {typeof children === 'function'
-                    ? children({themeMode})
-                    : children}
-                </ThemeProvider>
-              ) : (
-                <Grid>
-                  <Cell xs={12} lg={10} lgOffset={1}>
-                    <WrapperWithPadding>
-                      {this.renderNavigation()}
-                      <MDXProvider
-                        components={this.updatePropsForMarkdownElements()}
-                      >
-                        {children}
-                      </MDXProvider>
-                    </WrapperWithPadding>
-                  </Cell>
-                </Grid>
-              )}
-            </BodyWrapper>
-
+            <InstrumentationProvider context={{area: 'main content'}}>
+              <BodyWrapper>
+                {newPage ? (
+                  <ThemeProvider
+                    theme={
+                      themeMode === 'light' ? docsThemeLight : docsThemeDark
+                    }
+                  >
+                    {typeof children === 'function'
+                      ? children({themeMode})
+                      : children}
+                  </ThemeProvider>
+                ) : (
+                  <Grid>
+                    <Cell xs={12} lg={10} lgOffset={1}>
+                      <WrapperWithPadding>
+                        {this.renderNavigation()}
+                        <MDXProvider
+                          components={this.updatePropsForMarkdownElements()}
+                        >
+                          {children}
+                        </MDXProvider>
+                      </WrapperWithPadding>
+                    </Cell>
+                  </Grid>
+                )}
+              </BodyWrapper>
+            </InstrumentationProvider>
             {path === '/index' ? (
               <SiteFooter
                 cellProps={{
