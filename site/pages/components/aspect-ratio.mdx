@@ -6,7 +6,8 @@ import {AspectRatio, getAspectRatioStyles} from 'newskit';
 
 export default Layout;
 
-# (deprecated) Aspect Ratio
+# Aspect Ratio
+
 For more information on how to apply aspect ratio to image, please refer to the <a href="/components/image">Image component</a>.
 
 ## Overview
@@ -17,31 +18,36 @@ Regardless of its child's dimensions, the component will maintain the specified 
 ## Props
 
 <LegacyBlock marginTop="sizing040">
-<Prop name="aspectRatio" type="string">
-    This is a string interpolation of the aspect ratio of the children by `width:height`. e.g. `2:3` for 2 by 3 ratio.
+  <Prop name="aspectRatio" type="string">
+    This is a string interpolation of the aspect ratio of the children by
+    `width:height`. e.g. `2:3` for 2 by 3 ratio.
   </Prop>
   <Prop name="height" type="string" default="auto">
     Used in combination with `width` to calculate the aspect ratio for the
-    children. Generally supply the height px value if known, if not supply vertical
-    aspect ratio. Both width and aspectRatio should be supplied in a
-    consistent manner.
-    This prop accepts any unit for the height in css, but if one is not provided then it assigns `px` as its default unit.
+    children. Generally supply the height px value if known, if not supply
+    vertical aspect ratio. Both width and aspectRatio should be supplied in a
+    consistent manner. This prop accepts any unit for the height in css, but if
+    one is not provided then it assigns `px` as its default unit.
   </Prop>
   <Prop name="maxHeight" type="string">
-    Used in combination with `height` to set the maximum height of the children despite the height set by the aspect ratio.
-    This is to prevent the aspect ratio being distorted if the dimensions of the children are dynamic and changes after its initial render.
-    This prop accepts any unit for the maxheight in css, but if one is not provided then it assigns `px` as its default unit.
+    Used in combination with `height` to set the maximum height of the children
+    despite the height set by the aspect ratio. This is to prevent the aspect
+    ratio being distorted if the dimensions of the children are dynamic and
+    changes after its initial render. This prop accepts any unit for the
+    maxheight in css, but if one is not provided then it assigns `px` as its
+    default unit.
   </Prop>
   <Prop name="width" type="string" default="100%">
-    Used in combination with `height` to calculate the aspect ratio for
-    the children. Generally supply the width px value if known, if not supply
-    horizontal aspect ratio. Both width and aspectRatio should be supplied
-    in a consistent manner.
-    This prop accepts any unit for the maxwidth in css, but if one is not provided then it assigns `px` as its default unit.
+    Used in combination with `height` to calculate the aspect ratio for the
+    children. Generally supply the width px value if known, if not supply
+    horizontal aspect ratio. Both width and aspectRatio should be supplied in a
+    consistent manner. This prop accepts any unit for the maxwidth in css, but
+    if one is not provided then it assigns `px` as its default unit.
   </Prop>
   <Prop name="maxWidth" type="string">
-    Used in combination with `width` to set the maximum width of the children. Same as `maxHeight`.
-    This prop accepts any unit for the width in css, but if one is not provided then it assigns `px` as its default unit.
+    Used in combination with `width` to set the maximum width of the children.
+    Same as `maxHeight`. This prop accepts any unit for the width in css, but if
+    one is not provided then it assigns `px` as its default unit.
   </Prop>
 </LegacyBlock>
 
@@ -52,24 +58,23 @@ Within the bounds of 600px by 600px the aspect ratio should work correctly, but 
 
 <Playground
   componentName="AspectRatio"
-  component={
-    ({maxWidth, maxHeight, aspectRatio, children, ...props}) => {
-      const {width, height} = getAspectRatioStyles({
-        width: maxWidth, 
-        height: maxHeight, 
-        aspectRatio
-      });
-      return (
-        <LegacyBlock width="600px" height="280px">
-          <LegacyBlock maxWidth={width} maxHeight={height} margin="auto">
-            <AspectRatio {...props} maxHeight={height} maxWidth={width}>
-              <LegacyBlock width="98%" height="98%" border="dashed red">
-                {children}
-              </LegacyBlock>
-            </AspectRatio>
-          </LegacyBlock>
+  component={({maxWidth, maxHeight, aspectRatio, children, ...props}) => {
+    const {width, height} = getAspectRatioStyles({
+      width: maxWidth,
+      height: maxHeight,
+      aspectRatio,
+    });
+    return (
+      <LegacyBlock width="600px" height="280px">
+        <LegacyBlock maxWidth={width} maxHeight={height} margin="auto">
+          <AspectRatio {...props} maxHeight={height} maxWidth={width}>
+            <LegacyBlock width="98%" height="98%" border="dashed red">
+              {children}
+            </LegacyBlock>
+          </AspectRatio>
         </LegacyBlock>
-      );
+      </LegacyBlock>
+    );
   }}
   knobs={[
     {

@@ -1,5 +1,6 @@
 import {DividerOverrides} from '../divider';
 import {BaseFlagOverrides, BaseFlagProps} from '../flag';
+import {EventData} from '../instrumentation';
 import {MQ} from '../utils';
 import {LogicalProps} from '../utils/logical-properties';
 
@@ -34,7 +35,8 @@ export interface MenuGroupProps extends React.AriaAttributes {
 type MenuItemOverrides = Omit<BaseFlagOverrides, 'width' | 'height'>;
 export interface MenuItemProps
   extends Omit<BaseFlagProps<MenuItemOverrides>, 'loading'>,
-    React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    EventData {
   children: Exclude<React.ReactNode, 'undefined'>;
   href: string;
   selected?: boolean;
