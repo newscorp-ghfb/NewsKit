@@ -9,8 +9,16 @@ import {MetaStatus} from '../../components/meta/types';
 import {UsageKind} from '../../components/usage-card';
 import {LinkInline} from '../../../src/link';
 import {Link} from '../../components/link';
+import {IconFilledCircle} from '../../components/icons';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
+
+const unorderedListOverrides = {
+  spaceStack: 'space040',
+  content: {
+    typographyPreset: 'editorialParagraph030',
+  },
+};
 
 const infoIcon = (
   <IconFilledInfo
@@ -49,18 +57,13 @@ const LinkComponent = (layoutProps: LayoutProps) => (
       introduction:
         'This demo allows you to preview the link component, its variations, and configuration options.',
       playground: {
-        componentName: ['LinkInline', 'LinkStandalone'],
-        component: state => <LinkInline href={' '} {...state} />,
+        componentName: 'link',
+        component: state => <Link href={' '} {...state} />,
         knobs: [
           {
             name: 'content',
             propName: 'children',
-            options: [
-              {
-                label: 'Default',
-                value: 'Some Link',
-              },
-            ],
+            value: 'Some Link',
           },
           {
             name: 'href',
@@ -89,17 +92,15 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               {
                 label: 'Unset',
                 value: undefined,
-                isDefault: true,
+                isdefault: true,
               },
               {
                 label: 'true',
-                isDefault: true,
-                value: undefined,
+                value: true,
               },
               {
                 label: 'false',
-                isDefault: false,
-                value: undefined,
+                value: false,
               },
             ],
           },
@@ -266,17 +267,26 @@ const LinkComponent = (layoutProps: LayoutProps) => (
           The link has the following accessibility considerations:
           <br />
           <br />
-          <UnorderedList>
-            Avoid opening links in a new tab or window, as it can be
-            disorienting for users and{' '}
-            <LinkInline href="https://www.w3.org/TR/WCAG20-TECHS/G200.html">
-              can cause problems for users who are unable to visually perceive
-              that the new tab has opened.
-            </LinkInline>
-          </UnorderedList>
-          <UnorderedList>
-            If there is a need for a link to open in a new tab, include the
-            words &#39;opens in new tab&#39; within the link text.
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={unorderedListOverrides}
+          >
+            <>
+              Avoid opening links in a new tab or window, as it can be
+              disorienting for users and
+              <LinkInline
+                target="_blank"
+                href="https://www.w3.org/TR/WCAG20-TECHS/G200.html"
+              >
+                can cause problems for users who are unable to visually perceive
+                that the new tab has opened.
+              </LinkInline>
+            </>
+            <>
+              If there is a need for a link to open in a new tab, include the
+              words &#39;opens in new tab&#39; within the link text.
+            </>
           </UnorderedList>
         </>
       ),
@@ -406,61 +416,55 @@ const LinkComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'stylePreset',
+              attribute: 'inlineLink.stylePreset',
               type: 'MQ<string>',
-              default: ['linkInline', 'linkStandalone'],
+              default: 'linkInline',
               description:
-                'If provided, overrides the stylePresets of the link.',
+                'If provided, overrides the stylePresets of the inlineLink.',
             },
             {
-              attribute: 'typographyPreset',
+              attribute: 'inlineLink.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityLabel020',
               description:
-                'If provided, overrides the typographyPreset of the link.',
+                'If provided, overrides the typographyPreset of the inlineLink.',
             },
             {
-              attribute: 'transitionPreset',
+              attribute: 'inlineLink.transitionPreset',
               type: 'MQ<string>',
               default: ['fontColorChange', 'iconColorChange'],
               description:
-                'If provided, overrides the transitionPresets of the link.',
+                'If provided, overrides the transitionPresets of the inlineLink.',
             },
             {
-              attribute: 'spaceInline',
+              attribute: 'inlineLink.spaceInline',
               type: 'MQ<string>',
               default: 'space010',
-              description: (
-                <>
-                  If provided overrides the gap between each element in the
-                  link.
-                  <br />
-                  e.g. icon and text.
-                </>
-              ),
+              description:
+                'If provided overrides the gap between each element in the inlineLink. e.g. icon and text.',
             },
             {
-              attribute: 'leadingIcon',
+              attribute: 'inlineLink.leadingIcon.size',
               type: 'MQ<string>',
               default: 'iconSize020',
               description:
-                'If provided, overrides the size of the leading icon.',
+                'If provided, overrides the size of the inlineLink leading icon.',
             },
             {
-              attribute: 'trailingIcon',
+              attribute: 'inlineLink.trailingIcon.size',
               type: 'MQ<string>',
               default: 'iconSize020',
               description:
-                'If provided, overrides the size of the trailing icon.',
+                'If provided, overrides the size of the inlineLink trailing icon.',
             },
             {
-              attribute: 'externalIcon',
+              attribute: 'inlineLink.externalIcon.size',
               type: 'MQ<string>',
               default: 'iconSize010',
               description: (
                 <>
                   If provided, overrides the size of the external icon, that
-                  appears after (trailing) the label.
+                  appears after (trailing) the label of the inlineLink..
                   <br />
                   <br />
                   Note - it is also possible to set the icon size by passing it
@@ -471,76 +475,85 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'marginInline',
+              attribute: 'inlineLink.logicalProps',
               type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical inline start and end margin of the container. This space token can also be used on breakpoints.',
+              description: (
+                <>
+                  Logical props can define either padding or margins, depending
+                  on the element &#39;s writing mode, directionality, or text
+                  orientation.,
+                </>
+              ),
             },
             {
-              attribute: 'marginInlineStart',
+              attribute: 'standaloneLink.stylePreset',
               type: 'MQ<string>',
+              default: 'linkInline',
               description:
-                'It can take one space token to specify the logical inline start margin of the container. This space token can also be used on breakpoints.',
+                'If provided, overrides the stylePresets of the standaloneLink.',
             },
             {
-              attribute: 'marginInlineEnd',
+              attribute: 'standaloneLink.typographyPreset',
               type: 'MQ<string>',
+              default: 'utilityLabel020',
               description:
-                'It can take one space token to specify the logical inline end margin of the container. This space token can also be used on breakpoints.',
+                'If provided, overrides the typographyPreset of the standaloneLink.',
             },
             {
-              attribute: 'marginBlock',
+              attribute: 'standaloneLink.transitionPreset',
               type: 'MQ<string>',
+              default: ['fontColorChange', 'iconColorChange'],
               description:
-                'It can take one space token to specify the logical block start and end margin of the container. This space token can also be used on breakpoints.',
+                'If provided, overrides the transitionPresets of the standaloneLink.',
             },
             {
-              attribute: 'marginBlockStart',
+              attribute: 'standaloneLink.spaceInline',
               type: 'MQ<string>',
+              default: 'space010',
               description:
-                'It can take one space token to specify the logical block start margin of the container. This space token can also be used on breakpoints.',
+                'If provided overrides the gap between each element in the standaloneLink. e.g. icon and text.',
             },
             {
-              attribute: 'marginBlockEnd',
+              attribute: 'standaloneLink.leadingIcon.size',
               type: 'MQ<string>',
+              default: 'iconSize020',
               description:
-                'It can take one space token to specify the logical block end margin of the container. This space token can also be used on breakpoints.',
+                'If provided, overrides the size of the standaloneLink leading icon.',
             },
             {
-              attribute: 'paddingInline',
+              attribute: 'standaloneLink.trailing.size',
               type: 'MQ<string>',
+              default: 'iconSize020',
               description:
-                'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
+                'If provided, overrides the size of the standaloneLink trailing icon.',
             },
             {
-              attribute: 'paddingInlineStart',
+              attribute: 'standaloneLink.externalIcon.size',
               type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical inline start padding of the container. This space token can also be used on breakpoints.',
+              default: 'iconSize010',
+              description: (
+                <>
+                  If provided, overrides the size of the external icon, that
+                  appears after (trailing) the label of the standaloneLink.
+                  <br />
+                  <br />
+                  Note - it is also possible to set the icon size by passing it
+                  directly as a <InlineCode>size</InlineCode> prop to the icon.
+                  However, by doing this you will override the{' '}
+                  <InlineCode>iconSize</InlineCode> passed from overrides.
+                </>
+              ),
             },
             {
-              attribute: 'paddingInlineEnd',
+              attribute: 'standaloneLink.logicalProps',
               type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical inline end padding of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'paddingBlock',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'paddingBlockStart',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical block start padding of the container. This space token can also be used on breakpoints.',
-            },
-            {
-              attribute: 'paddingBlockEnd',
-              type: 'MQ<string>',
-              description:
-                'It can take one space token to specify the logical block end padding of the container. This space token can also be used on breakpoints.',
+              description: (
+                <>
+                  Logical props can define either padding or margins, depending
+                  on the element &#39;s writing mode, directionality, or text
+                  orientation.
+                </>
+              ),
             },
           ],
           propsFooter: (
@@ -548,7 +561,25 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="link info"
+                aria-label="props link info"
+                overrides={{
+                  marginBlockStart: 'space030',
+                }}
+              >
+                Any prop valid on an{' '}
+                <LinkInline href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">
+                  anchor HTML element
+                </LinkInline>{' '}
+                ,is also valid on the link component.
+              </InlineMessage>
+            </>
+          ),
+          overridesFooter: (
+            <>
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="ovverides link info"
                 overrides={{
                   marginBlockStart: 'space030',
                 }}
