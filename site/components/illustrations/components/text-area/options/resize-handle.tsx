@@ -33,7 +33,7 @@ export const ResizeHandle: React.FC = () => {
           height="1280.58"
           rx="78.8353"
           stroke="#BBC3C9"
-          stroke-width="12.8975"
+          strokeWidth="12.8975"
         />
         <Path
           fillRule="evenodd"

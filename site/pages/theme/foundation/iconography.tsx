@@ -61,7 +61,10 @@ const Iconography = (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Illustration path="theme/iconography/overview" />
+          <Illustration
+            viewBox="0 0 1490 600"
+            path="theme/iconography/overview"
+          />
         </ContentPrimary>
       </ContentSection>
 
@@ -80,7 +83,12 @@ const Iconography = (layoutProps: LayoutProps) => (
                 title: 'Overlay',
                 description:
                   'Icons have two variations; ‘Filled’ and ‘Outlined’. There will be certain instances when a ‘Filled’ and ‘Outlined’ instance of the same icon look the same. This is because some visual characteristics don’t lend themselves to one or the other style.',
-                media: getIllustrationComponent('theme/iconography/appearance'),
+                media: getIllustrationComponent(
+                  'theme/iconography/appearance',
+                  {
+                    viewBox: '0 0 1344 759',
+                  },
+                ),
               },
               {
                 title: 'Colour',
@@ -92,7 +100,9 @@ const Iconography = (layoutProps: LayoutProps) => (
                     </Link>
                   </>
                 ),
-                media: getIllustrationComponent('theme/iconography/colours'),
+                media: getIllustrationComponent('theme/iconography/colours', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 title: 'Size',
@@ -104,7 +114,9 @@ const Iconography = (layoutProps: LayoutProps) => (
                     </Link>
                   </>
                 ),
-                media: getIllustrationComponent('theme/iconography/size'),
+                media: getIllustrationComponent('theme/iconography/size', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 title: 'Structure',
@@ -126,7 +138,9 @@ const Iconography = (layoutProps: LayoutProps) => (
                     the trim area.
                   </>
                 ),
-                media: getIllustrationComponent('theme/iconography/structure'),
+                media: getIllustrationComponent('theme/iconography/structure', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
             ]}
           />
@@ -233,37 +247,49 @@ const Iconography = (layoutProps: LayoutProps) => (
                   </>
                 ),
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-01'),
+                media: getIllustrationComponent('theme/iconography/do-01', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description:
                   'To avoid distorting an icon, position icons ‘on pixel’ so they appear clear and not pixelated or blurred.',
                 kind: UsageKind.DONT,
-                media: getIllustrationComponent('theme/iconography/dont-01'),
+                media: getIllustrationComponent('theme/iconography/dont-01', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description:
                   'Icons should be used purposefully to reduce cognitive load and provide greater context.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-02'),
+                media: getIllustrationComponent('theme/iconography/do-02', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description:
                   'Avoid using Icons as the sole way of communicating if there is the space to accompany with a label or supporting text.',
                 kind: UsageKind.DONT,
-                media: getIllustrationComponent('theme/iconography/dont-02'),
+                media: getIllustrationComponent('theme/iconography/dont-02', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description:
                   'When used next to text, icons should be vertically centre-aligned.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-03'),
+                media: getIllustrationComponent('theme/iconography/do-03', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description:
                   'Avoid using icon sizes that are noticeably larger or smaller than the text they are paired with, as this can lead to the interface feeling unbalanced.',
                 kind: UsageKind.DONT,
-                media: getIllustrationComponent('theme/iconography/dont-03'),
+                media: getIllustrationComponent('theme/iconography/dont-03', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description: (
@@ -278,13 +304,17 @@ const Iconography = (layoutProps: LayoutProps) => (
                   </>
                 ),
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-04'),
+                media: getIllustrationComponent('theme/iconography/do-04', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description:
                   'Try to give icons a name that adequately describes what it represents.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-05'),
+                media: getIllustrationComponent('theme/iconography/do-05', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
             ]}
           />

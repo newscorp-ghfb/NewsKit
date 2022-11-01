@@ -5,7 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const LabelOverflowWrap: React.FC = () => {
-  const mask0 = getSSRId();
   const clip0 = getSSRId();
 
   return (
@@ -187,29 +186,10 @@ export const LabelOverflowWrap: React.FC = () => {
         rx="74.3347"
         fill="illustrationHighlight010"
       />
-      <mask
-        id={mask0}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="196"
-        y="282"
-        width="113"
-        height="113"
-      >
-        <Path
-          d="M238.395 357.919L218.883 338.407L212.379 344.911L238.395 370.927L294.144 315.178L287.64 308.674L238.395 357.919Z"
-          fill="#0A0A0A"
-        />
-      </mask>
-      <g mask={`url(#${mask0})`}>
-        <Rect
-          x="196.583"
-          y="282.657"
-          width="111.499"
-          height="111.499"
-          fill="interface010"
-        />
-      </g>
+      <Path
+        d="M238.395 357.919L218.883 338.406L212.379 344.91L238.395 370.927L294.145 315.177L287.64 308.673L238.395 357.919Z"
+        fill="interface010"
+      />
       <g clipPath={`url(#${clip0})`}>
         <Rect
           width="111.499"

@@ -490,9 +490,9 @@ export const Do01: React.FC = () => {
         height="233"
         rx="88"
         stroke="#577FFB"
-        stroke-width="6"
-        stroke-linecap="round"
-        stroke-dasharray="10 20"
+        strokeWidth="6"
+        strokeLinecap="round"
+        strokeDasharray="10 20"
       />
       <defs>
         <clipPath id={clip0}>

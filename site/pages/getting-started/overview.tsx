@@ -5,10 +5,12 @@ import Layout, {LayoutProps} from '../../components/layout';
 import {Item} from '../../components/sidebar/types';
 import {HeaderIndex} from '../../components/header-index/index';
 import {HeadNextSeo} from '../../components/head-next-seo';
-import {HeaderImage} from '../../components/illustrations/guides/overview/header-image';
 import {MediaItem, MediaList} from '../../components/media-list';
 import {ComponentPageCell} from '../../components/layout-cells';
-import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {
+  getIllustrationComponent,
+  Illustration,
+} from '../../components/illustrations/illustration-loader';
 import {
   ContentSection,
   ContentPrimary,
@@ -35,6 +37,10 @@ const getCardList = (routeList: Item[]) =>
 
 const designRouteListCards = getCardList(designRouteList);
 const codeRouteListCards = getCardList(codeRouteList);
+
+const HeaderImage = () => (
+  <Illustration path="guides/overview/header-image" viewBox="0 0 1572 997" />
+);
 
 const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>

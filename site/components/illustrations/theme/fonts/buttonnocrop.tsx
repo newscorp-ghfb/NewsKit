@@ -490,9 +490,9 @@ export const ButtonNoCrop: React.FC = () => {
         height="295"
         rx="88"
         stroke="#7264EF"
-        stroke-width="4"
-        stroke-linecap="round"
-        stroke-dasharray="10 20"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeDasharray="10 20"
       />
       <defs>
         <clipPath id={clip0}>

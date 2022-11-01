@@ -5,7 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const Dont2: React.FC = () => {
-  const mask0 = getSSRId();
   const clip0 = getSSRId();
   const clip1 = getSSRId();
   const filter0 = getSSRId();
@@ -43,29 +42,10 @@ export const Dont2: React.FC = () => {
           rx="57.5"
           fill="illustrationHighlight010"
         />
-        <mask
-          id={mask0}
-          mask-type="alpha"
-          maskUnits="userSpaceOnUse"
-          x="380"
-          y="204"
-          width="87"
-          height="87"
-        >
-          <Path
-            d="M412.799 262.595L397.705 247.502L392.674 252.533L412.799 272.657L455.922 229.533L450.891 224.502L412.799 262.595Z"
-            fill="#0A0A0A"
-          />
-        </mask>
-        <g mask={`url(#${mask0})`}>
-          <Rect
-            x="380.456"
-            y="204.378"
-            width="86.2473"
-            height="86.2473"
-            fill="interface010"
-          />
-        </g>
+        <Path
+          d="M412.799 262.595L397.705 247.502L392.674 252.533L412.799 272.657L455.922 229.533L450.891 224.502L412.799 262.595Z"
+          fill="interface010"
+        />
         <g clipPath={`url(#${clip1})`}>
           <Rect
             width="86.2473"

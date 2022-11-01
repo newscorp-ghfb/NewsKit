@@ -75,7 +75,7 @@ const Spacing = (layoutProps: LayoutProps) => (
           headline="Overview"
           description="Space is distance between elements on a screen often refered to as the whitespace. Good use of whitespace helps to de-clutter and group content to provide a visual hierarchy so that users can focus on the important elements and digest content with reduced cognitive load."
         >
-          <Illustration path="theme/spacing/overview" />
+          <Illustration viewBox="0 0 1490 600" path="theme/spacing/overview" />
         </ContentPrimary>
 
         <ContentPrimary

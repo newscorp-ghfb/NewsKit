@@ -5,7 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const Base: React.FC = () => {
-  const mask0 = getSSRId();
   const clip0 = getSSRId();
 
   return (
@@ -33,29 +32,10 @@ export const Base: React.FC = () => {
           fill="interface010"
         />
       </g>
-      <mask
-        id={mask0}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="567"
-        y="317"
-        width="205"
-        height="204"
-      >
-        <Path
-          d="M729.487 371.489L717.502 359.504L669.988 407.017L622.475 359.504L610.49 371.489L658.004 419.002L610.49 466.516L622.475 478.5L669.988 430.987L717.502 478.5L729.487 466.516L681.973 419.002L729.487 371.489Z"
-          fill="#0A0A0A"
-        />
-      </mask>
-      <g mask={`url(#${mask0})`}>
-        <Rect
-          x="567.991"
-          y="317.006"
-          width="203.994"
-          height="203.994"
-          fill="interface010"
-        />
-      </g>
+      <Path
+        d="M729.486 371.489L717.502 359.504L669.988 407.017L622.475 359.504L610.49 371.489L658.004 419.002L610.49 466.516L622.475 478.5L669.988 430.987L717.502 478.5L729.486 466.516L681.973 419.002L729.486 371.489Z"
+        fill="interface010"
+      />
       <Path
         d="M868.359 455.381H900.021V467.786H853V374.068H868.359V455.381Z"
         fill="illustrationHighlight010"

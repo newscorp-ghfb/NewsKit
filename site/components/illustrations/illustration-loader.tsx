@@ -1,23 +1,26 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
-import {PlaceholderIllustration} from './components/placeholder-illustration';
+import {pathToID} from './utils';
 
-const cache: Record<string, React.ComponentType> = {};
+export const getIllustrationComponent = (
+  path: string,
+  props?: React.SVGProps<SVGSVGElement>,
+) => {
+  const id = pathToID(path);
 
-export const getIllustrationComponent = (path: string) => {
-  if (cache[path]) {
-    return cache[path];
-  }
-  const Component = dynamic(() => import(`./${path}`), {
-    ssr: false,
-    loading: () => <PlaceholderIllustration />,
-  });
-  Component.displayName = 'IllustrationLoaderComponent';
-  cache[path] = Component;
+  const Component = () => (
+    <svg viewBox="0 0 1490 838" {...props}>
+      <use href={`/static/illustrations/${path}.svg#${id}`} />
+    </svg>
+  );
+
   return Component;
 };
 
-export const Illustration: React.FC<{path: string}> = ({path}) => {
-  const Component = getIllustrationComponent(path);
+type IllustrationProps = {
+  path: string;
+} & React.SVGProps<SVGSVGElement>;
+
+export const Illustration: React.FC<IllustrationProps> = ({path, ...props}) => {
+  const Component = getIllustrationComponent(path, props);
   return <Component />;
 };

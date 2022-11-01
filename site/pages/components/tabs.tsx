@@ -735,6 +735,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       ],
       media: getIllustrationComponent(
         'components/tabs/anatomy-tabs-illustration',
+        {viewBox: '0 0 1600 900'},
       ),
     }}
     options={{
@@ -845,6 +846,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
 
           media: getIllustrationComponent(
             'components/tabs/tabs-options-distribution-illustration',
+            {viewBox: '0 0 1498 1381'},
           ),
         },
         {
@@ -881,6 +883,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
 
           media: getIllustrationComponent(
             'components/tabs/tabs-options-alignment-illustration',
+            {viewBox: '0 0 1491 1349'},
           ),
         },
       ],

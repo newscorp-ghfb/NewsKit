@@ -79,7 +79,10 @@ const GridLayoutStepByStep = (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Illustration path="guides/grid-layout-guide/steps/first-layout" />
+          <Illustration
+            viewBox="0 0 1345 759"
+            path="guides/grid-layout-guide/steps/first-layout"
+          />
         </ContentPrimary>
         <ContentSecondary
           description="Following best practices, we’re going to start with a mobile design and gradually move upward to larger screens."
@@ -132,7 +135,10 @@ export const Card = () => <p>Nothing here yet</p>;
           </Code>
         </ContentPrimary>
         <ContentSecondary description="When describing layouts we can split our UI element into areas. Looking at our design, we could have the following areas:">
-          <Illustration path="guides/grid-layout-guide/steps/grid-layout" />
+          <Illustration
+            viewBox="0 0 1345 759"
+            path="guides/grid-layout-guide/steps/grid-layout"
+          />
         </ContentSecondary>
         <ContentSecondary
           description={
@@ -308,7 +314,10 @@ export Card = ({imageUrl, headline, short, url}) => (
           showSeparator
         >
           <Block spaceStack="space070">
-            <Illustration path="guides/grid-layout-guide/steps/responsive-props" />
+            <Illustration
+              viewBox="0 0 1345 759"
+              path="guides/grid-layout-guide/steps/responsive-props"
+            />
           </Block>
           <Code>
             {`// src/components/card.tsx
@@ -325,9 +334,9 @@ const desktopAreas = \`
 \`;
 
 export const Card = ({imageUrl, headline, short, url}) => (
-	<GridLayout 
-		areas={{xs: mobileAreas, md: desktopAreas}} 
-		rowGap="space030" 
+	<GridLayout
+		areas={{xs: mobileAreas, md: desktopAreas}}
+		rowGap="space030"
 		columnGap="space030">
 	{
 		(Areas) => (

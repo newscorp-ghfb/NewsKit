@@ -5,7 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const ClickableArea: React.FC = () => {
-  const mask0 = getSSRId();
   const clip0 = getSSRId();
   const filter0 = getSSRId();
 
@@ -78,29 +77,10 @@ export const ClickableArea: React.FC = () => {
           fill="interface010"
         />
       </g>
-      <mask
-        id={mask0}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="553"
-        y="323"
-        width="182"
-        height="181"
-      >
-        <Path
-          d="M697.082 371.405L686.463 360.787L644.365 402.885L602.266 360.787L591.648 371.405L633.746 413.504L591.648 455.602L602.266 466.221L644.365 424.122L686.463 466.221L697.082 455.602L654.983 413.504L697.082 371.405Z"
-          fill="#0A0A0A"
-        />
-      </mask>
-      <g mask={`url(#${mask0})`}>
-        <Rect
-          x="553.992"
-          y="323.131"
-          width="180.744"
-          height="180.744"
-          fill="interface010"
-        />
-      </g>
+      <Path
+        d="M697.082 371.405L686.463 360.787L644.365 402.885L602.266 360.787L591.647 371.405L633.746 413.504L591.647 455.602L602.266 466.221L644.365 424.122L686.463 466.221L697.082 455.602L654.983 413.504L697.082 371.405Z"
+        fill="interface010"
+      />
       <g filter={`url(#${filter0})`}>
         <Path
           fillRule="evenodd"

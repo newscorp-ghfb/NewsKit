@@ -286,7 +286,7 @@ const ImageWrapper = styled.div`
 
 const getImage = (url: string) => (
   <ImageWrapper>
-    <Illustration path={url} />
+    <Illustration viewBox="0 0 1000 1001" path={url} />
   </ImageWrapper>
 );
 
@@ -629,7 +629,10 @@ const StylePresets = (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Illustration path="theme/style-presets/overview" />
+          <Illustration
+            viewBox="0 0 4911 2888"
+            path="theme/style-presets/overview"
+          />
         </ContentPrimary>
       </ContentSection>
 

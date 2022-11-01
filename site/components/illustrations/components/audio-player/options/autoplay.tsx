@@ -5,7 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const Autoplay: React.FC = () => {
-  const mask0 = getSSRId();
   const clip0 = getSSRId();
   const clip1 = getSSRId();
   const clip2 = getSSRId();
@@ -28,38 +27,23 @@ export const Autoplay: React.FC = () => {
             transform="translate(263 196.162)"
             fill="interfaceBackground"
           />
-          <Path
-            d="M411.609 419.076C411.609 337.001 478.143 270.467 560.218 270.467V270.467C642.292 270.467 708.827 337.001 708.827 419.076V419.076C708.827 501.15 642.292 567.685 560.218 567.685V567.685C478.143 567.685 411.609 501.15 411.609 419.076V419.076Z"
+          <Rect
+            x="411.609"
+            y="270.467"
+            width="297.218"
+            height="297.218"
+            rx="148.609"
             fill="illustrationPalette040"
           />
-          <mask
-            id={mask0}
-            mask-type="alpha"
-            maskUnits="userSpaceOnUse"
-            x="485"
-            y="344"
-            width="150"
-            height="150"
-          >
-            <Path
-              d="M535.449 375.729V462.417L603.561 419.073L535.449 375.729Z"
-              fill="#0A0A0A"
-            />
-          </mask>
-          <g mask={`url(#${mask0})`}>
-            <Rect
-              x="485.913"
-              y="344.771"
-              width="148.609"
-              height="148.609"
-              fill="inkInverse"
-            />
-          </g>
+          <Path
+            d="M535.45 375.729V462.417L603.562 419.073L535.45 375.729Z"
+            fill="interfaceBackground"
+          />
           <g clipPath={`url(#${clip1})`}>
             <Rect
               x="1006.04"
-              y="381.923"
-              width="2541.71"
+              y="381.77"
+              width="2541.6"
               height="74.3045"
               fill="illustrationInterface020"
             />
@@ -67,8 +51,8 @@ export const Autoplay: React.FC = () => {
           <g clipPath={`url(#${clip2})`}>
             <Rect
               x="1006.04"
-              y="381.923"
-              width="1270.95"
+              y="381.77"
+              width="1270.96"
               height="74.3045"
               fill="illustrationInterface020"
             />
@@ -111,12 +95,12 @@ export const Autoplay: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_1985_65801"
+            result="effect1_dropShadow_2539_121170"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_1985_65801"
+            in2="effect1_dropShadow_2539_121170"
             result="shape"
           />
         </filter>
@@ -124,14 +108,22 @@ export const Autoplay: React.FC = () => {
           <Rect width="1490" height="838" fill="white" />
         </clipPath>
         <clipPath id={clip1}>
-          <Path
-            d="M1006.04 419.075C1006.04 398.556 1022.68 381.923 1043.2 381.923H3510.61C3531.12 381.923 3547.76 398.556 3547.76 419.075V419.075C3547.76 439.594 3531.12 456.227 3510.61 456.227H1043.2C1022.68 456.227 1006.04 439.594 1006.04 419.075V419.075Z"
+          <Rect
+            x="1006.04"
+            y="381.924"
+            width="2541.6"
+            height="74.3045"
+            rx="37.1522"
             fill="white"
           />
         </clipPath>
         <clipPath id={clip2}>
-          <Path
-            d="M1006.04 419.075C1006.04 398.556 1022.68 381.923 1043.2 381.923H2239.85C2260.37 381.923 2277 398.556 2277 419.075V419.075C2277 439.594 2260.37 456.227 2239.85 456.227H1043.2C1022.68 456.227 1006.04 439.594 1006.04 419.075V419.075Z"
+          <Rect
+            x="1006.04"
+            y="381.924"
+            width="1270.96"
+            height="74.3045"
+            rx="37.1522"
             fill="white"
           />
         </clipPath>

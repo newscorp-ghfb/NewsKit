@@ -86,8 +86,8 @@ const Introduction = (
   <Layout {...props} path={`${path}-new`}>
     <HeadNextSeo
       title="About"
-      description="NewsKit provides components, guidelines and standards to enable digital product 
-      teams to create high-quality, consistent products quickly. NewsKit is built on modular design 
+      description="NewsKit provides components, guidelines and standards to enable digital product
+      teams to create high-quality, consistent products quickly. NewsKit is built on modular design
       principles and backed by best practice guidance for design and development."
       image={{
         url: 'social/about.png',
@@ -102,6 +102,7 @@ const Introduction = (
         introduction="NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. NewsKit is built on modular design principles and backed by best practice guidance for design and development."
         hero={{
           illustration: 'about/introduction-hero-stepping-stones-illustration',
+          illustrationProps: {viewBox: '0 0 1344 759'},
         }}
       />
     </PageIntroductionContainer>

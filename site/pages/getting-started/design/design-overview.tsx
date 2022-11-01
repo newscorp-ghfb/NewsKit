@@ -25,7 +25,10 @@ const featureCardOverrides = {
 const PRINCIPLE_CARDS = [
   {
     media: () => (
-      <Illustration path="guides/design-overview/design-made-easy" />
+      <Illustration
+        viewBox="0 0 1345 759"
+        path="guides/design-overview/design-made-easy"
+      />
     ),
     title: 'Ease of use',
     description:
@@ -35,7 +38,10 @@ const PRINCIPLE_CARDS = [
   },
   {
     media: () => (
-      <Illustration path="guides/design-overview/complete-flexibility" />
+      <Illustration
+        viewBox="0 0 1345 759"
+        path="guides/design-overview/complete-flexibility"
+      />
     ),
     title: 'Complete flexibility',
     description: (
@@ -126,6 +132,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/theme-library',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
               {
@@ -145,6 +152,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/web-components-library',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
               {
@@ -169,6 +177,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/icon-library',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
               {
@@ -190,6 +199,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/utilities-library',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
             ]}
@@ -205,7 +215,10 @@ const DesignOverview = (layoutProps: LayoutProps) => (
           by linking your Figma libraries like this:"
           showSeparator
         >
-          <Illustration path="guides/design-overview/example-architecture" />
+          <Illustration
+            viewBox="0 0 5692 3674"
+            path="guides/design-overview/example-architecture"
+          />
         </ContentPrimary>
       </ContentSection>
       <ContentSection sectionName="plugins">
@@ -238,6 +251,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/theme-swapper-plugin',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
               {
@@ -257,6 +271,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/text-crop-plugin',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
               {
@@ -277,6 +292,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/theme-exporter-plugin',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
             ]}
@@ -288,7 +304,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
           id="templates"
           toc="Templates"
           headline="Project template files"
-          description="Kickstart your design process, and develop a consistent workflow, with NewsKit's 
+          description="Kickstart your design process, and develop a consistent workflow, with NewsKit's
           template Figma files:"
           showSeparator
         >
@@ -314,6 +330,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/ux-template',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
               {
@@ -334,6 +351,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/ui-template',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
             ]}
@@ -345,7 +363,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
           id="guidance"
           toc="Guidance"
           headline="Guidance"
-          description="Get the best out of NewsKit with comprehensive, easy-to-follow documentation 
+          description="Get the best out of NewsKit with comprehensive, easy-to-follow documentation
           and guidelines, including:"
           showSeparator
         >
@@ -371,6 +389,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/components-guidance',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
               {
@@ -391,6 +410,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/patterns',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
               {
@@ -398,6 +418,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 description: 'Guidance for designing inclusive experiences.',
                 media: getIllustrationComponent(
                   'guides/design-overview/accessibility-guidance',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
               {
@@ -418,6 +439,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/handoff-guidance',
+                  {viewBox: '0 0 1344 759'},
                 ),
               },
             ]}

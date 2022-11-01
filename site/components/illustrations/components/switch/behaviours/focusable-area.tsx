@@ -5,7 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const FocusableArea: React.FC = () => {
-  const mask0 = getSSRId();
   const clip0 = getSSRId();
 
   return (
@@ -34,29 +33,10 @@ export const FocusableArea: React.FC = () => {
             fill="interface010"
           />
         </g>
-        <mask
-          id={mask0}
-          mask-type="alpha"
-          maskUnits="userSpaceOnUse"
-          x="567"
-          y="317"
-          width="205"
-          height="205"
-        >
-          <Path
-            d="M729.487 371.49L717.502 359.506L669.988 407.019L622.475 359.506L610.49 371.49L658.004 419.004L610.49 466.518L622.475 478.502L669.988 430.989L717.502 478.502L729.487 466.518L681.973 419.004L729.487 371.49Z"
-            fill="#0A0A0A"
-          />
-        </mask>
-        <g mask={`url(#${mask0})`}>
-          <Rect
-            x="567.991"
-            y="317.007"
-            width="203.994"
-            height="203.994"
-            fill="interface010"
-          />
-        </g>
+        <Path
+          d="M729.486 371.491L717.502 359.506L669.988 407.02L622.475 359.506L610.49 371.491L658.004 419.004L610.49 466.518L622.475 478.502L669.988 430.989L717.502 478.502L729.486 466.518L681.973 419.004L729.486 371.491Z"
+          fill="interface010"
+        />
       </g>
       <Rect
         x="288"
@@ -65,8 +45,8 @@ export const FocusableArea: React.FC = () => {
         height="287.992"
         rx="143.996"
         stroke="#577FFB"
-        stroke-width="16"
-        stroke-dasharray="23 23"
+        strokeWidth="16"
+        strokeDasharray="23 23"
       />
       <g opacity="0.2">
         <Path

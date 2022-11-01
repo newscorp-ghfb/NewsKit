@@ -365,7 +365,7 @@ const Colours = (layoutProps: LayoutProps) => (
           headline="Contextual colours"
           description="Contextual colours are selected from the palette colours and have specific functions or purposes applied. There are three categories of contextual colours: Ink, Interface and Interactive colours."
         >
-          <Illustration path="theme/colours/overview" />
+          <Illustration viewBox="0 0 1490 600" path="theme/colours/overview" />
         </ContentPrimary>
 
         <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
