@@ -47,6 +47,8 @@ export const useCalculatePosition = () => {
   const [position, setPosition] = useState({
     direction: 'top',
     size: 0,
+    min: 0,
+    max: 0,
   });
   const theme = useTheme();
 
@@ -98,6 +100,8 @@ export const useCalculatePosition = () => {
       setPosition({
         direction,
         size,
+        min: defaultTop,
+        max: introImgTop,
       });
       return true;
     };

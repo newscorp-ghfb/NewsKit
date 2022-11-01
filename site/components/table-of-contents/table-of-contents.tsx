@@ -3,21 +3,22 @@ import {Stack} from 'newskit';
 import {StyledTableOfContents, StyledContentsNavItem} from './styled';
 import {ContentsNavItemProps} from './types';
 import {contentsObserver} from './contents-observer';
-import {useCalculatePosition} from './use-calculate-position';
+// import {useCalculatePosition} from './use-calculate-position';
 
 export const TableOfContents: React.FC = () => {
   const [activeItem, setActiveItem] = useState<number>();
   const [contentsInfo, setContentsInfo] = useState<
-    {id: string; title: string}[]
+    {id: string; title: string; element: HTMLElement}[]
   >();
 
   const getContentInfo = () => {
-    const data: {id: string; title: string}[] = [];
+    const data: {id: string; title: string; element: HTMLElement}[] = [];
 
     document.querySelectorAll('[data-toc-indexed]').forEach(element => {
       const title = element.getAttribute('data-toc-indexed');
       if (title) {
-        data.push({id: element.id, title});
+        /* @ts-ignore next-line */
+        data.push({id: element.id, title, element});
       }
     });
     setContentsInfo(data);
@@ -30,7 +31,7 @@ export const TableOfContents: React.FC = () => {
     setActiveItem(activeElement);
   };
 
-  const {direction, size} = useCalculatePosition();
+  // const {direction, size, min, max} = useCalculatePosition();
 
   useEffect(() => {
     if (!contentsInfo) {
@@ -56,13 +57,18 @@ export const TableOfContents: React.FC = () => {
       itemKey={itemKey}
       isSelected={(activeItem || 0) === itemKey}
       data-selected={(activeItem || 0) === itemKey}
+      onClick={e => {
+        e.preventDefault();
+        contentsInfo &&
+          contentsInfo[itemKey].element.scrollIntoView({behavior: 'smooth'});
+      }}
     >
       {children}
     </StyledContentsNavItem>
   );
 
   return (
-    <StyledTableOfContents style={{[direction]: size}} id="toc-navigation">
+    <StyledTableOfContents id="toc-navigation">
       <Stack flow="vertical-left">
         {contentsInfo &&
           contentsInfo.map((info, index) => (
