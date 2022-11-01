@@ -12,6 +12,11 @@ Welcome.parameters = {
       hidden: true,
     },
   },
+  eyes: {
+    ignoreRegions: [
+      {selector: 'img[src="https://badge.fury.io/js/newskit.svg"]'},
+    ],
+  },
 };
 
 export default {
