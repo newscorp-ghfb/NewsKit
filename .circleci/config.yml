@@ -1038,7 +1038,7 @@ jobs:
             cd dist
             yalc publish
             cd ..
-            npx create-next-app@latest newskit-integration-test
+            npx create-next-app newskit-integration-test --no-eslint --js
       - run:
           name: Prepare the NextJs app
           command: |
@@ -1046,7 +1046,6 @@ jobs:
 
             cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
             cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
-            cp ./scripts/templates-integration-test/tsconfig.eslint.json ./newskit-integration-test/
             mkdir -p ./newskit-integration-test/cypress/integration
             cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
 
