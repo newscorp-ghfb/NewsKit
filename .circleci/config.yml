@@ -1031,23 +1031,22 @@ jobs:
       - run:
           name: Install yalc and create-next-app
           command: |
-            yarn global add yalc && yarn add create-next-app@latest
+            yarn global add yalc
       - run:
           name: Yalc publish and run create-nextjs-app
           command: |
             cd dist
             yalc publish
             cd ..
-            npx create-next-app@latest newskit-integration-test
+            yarn create next-app newskit-integration-test
       - run:
           name: Prepare the NextJs app
           command: |
             echo "Adding nedded files into the NextJs app"
 
-            cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.tsx
+            cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
             cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
-            cp ./scripts/templates-integration-test/.eslintrc.txt ./newskit-integration-test/.eslintrc.js
-            cp ./scripts/templates-integration-test/tsconfig.eslint.json ./newskit-integration-test/tsconfig.eslint.json
+            cp ./scripts/templates-integration-test/next.config.js ./newskit-integration-test/
             mkdir -p ./newskit-integration-test/cypress/integration
             cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
 
