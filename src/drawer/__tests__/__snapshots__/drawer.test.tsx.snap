@@ -312,6 +312,8 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -328,6 +330,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -337,7 +340,6 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -348,7 +350,6 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -836,6 +837,8 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -852,6 +855,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -861,7 +865,6 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -872,7 +875,6 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1359,6 +1361,8 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1375,6 +1379,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -1384,7 +1389,6 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1395,7 +1399,6 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1880,6 +1883,8 @@ exports[`Drawer render inline-drawer 1`] = `
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1896,6 +1901,7 @@ exports[`Drawer render inline-drawer 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -1905,7 +1911,6 @@ exports[`Drawer render inline-drawer 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1916,7 +1921,6 @@ exports[`Drawer render inline-drawer 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2303,6 +2307,8 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2319,6 +2325,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -2328,7 +2335,6 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2339,7 +2345,6 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2817,6 +2822,8 @@ exports[`Drawer renders default 1`] = `
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2833,6 +2840,7 @@ exports[`Drawer renders default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -2842,7 +2850,6 @@ exports[`Drawer renders default 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2853,7 +2860,6 @@ exports[`Drawer renders default 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3297,6 +3303,8 @@ exports[`Drawer renders drawer with overrides 1`] = `
 }
 
 .emotion-6 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3313,6 +3321,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -3322,7 +3331,6 @@ exports[`Drawer renders drawer with overrides 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3335,7 +3343,6 @@ exports[`Drawer renders drawer with overrides 1`] = `
   border-color: #97D0D6;
   background-color: transparent;
   border-radius: 50%;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3803,6 +3810,8 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3819,6 +3828,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -3828,7 +3838,6 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3839,7 +3848,6 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4351,6 +4359,8 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-6 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4367,6 +4377,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -4376,7 +4387,6 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4387,7 +4397,6 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4849,6 +4858,8 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4865,6 +4876,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -4874,7 +4886,6 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4885,7 +4896,6 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5374,6 +5384,8 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5390,6 +5402,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -5399,7 +5412,6 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5410,7 +5422,6 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5902,6 +5913,8 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5918,6 +5931,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -5927,7 +5941,6 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5938,7 +5951,6 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6430,6 +6442,8 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6446,6 +6460,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -6455,7 +6470,6 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6466,7 +6480,6 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6958,6 +6971,8 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6974,6 +6989,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -6983,7 +6999,6 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6994,7 +7009,6 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -7833,6 +7847,8 @@ exports[`Drawer renders without header 1`] = `
 }
 
 .emotion-6 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7849,6 +7865,7 @@ exports[`Drawer renders without header 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -7858,7 +7875,6 @@ exports[`Drawer renders without header 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7869,7 +7885,6 @@ exports[`Drawer renders without header 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -8601,6 +8616,8 @@ exports[`Drawer renders without overlay 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8617,6 +8634,7 @@ exports[`Drawer renders without overlay 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -8626,7 +8644,6 @@ exports[`Drawer renders without overlay 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8637,7 +8654,6 @@ exports[`Drawer renders without overlay 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -9106,6 +9122,8 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9122,6 +9140,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -9131,7 +9150,6 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9142,7 +9160,6 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -9521,6 +9538,8 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 .emotion-4 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9537,6 +9556,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -9546,7 +9566,6 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9557,7 +9576,6 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 

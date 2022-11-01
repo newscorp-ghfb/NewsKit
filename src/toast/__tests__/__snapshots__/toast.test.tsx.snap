@@ -1190,6 +1190,8 @@ exports[`Toast Component renders with actions 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1206,6 +1208,7 @@ exports[`Toast Component renders with actions 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
   box-sizing: border-box;
@@ -1213,7 +1216,6 @@ exports[`Toast Component renders with actions 1`] = `
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1224,7 +1226,6 @@ exports[`Toast Component renders with actions 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2312,6 +2313,8 @@ exports[`Toast Component renders with overrides and all props 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2328,6 +2331,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
   box-sizing: border-box;
@@ -2335,7 +2339,6 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2346,7 +2349,6 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 

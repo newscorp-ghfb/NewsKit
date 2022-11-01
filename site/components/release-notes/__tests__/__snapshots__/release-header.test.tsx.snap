@@ -189,6 +189,8 @@ exports[`ReleaseHeader renders correctly 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -205,12 +207,12 @@ exports[`ReleaseHeader renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;

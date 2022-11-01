@@ -3,6 +3,8 @@
 exports[`Flag renders a flag with a custom stylePreset 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -19,12 +21,12 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -85,6 +87,8 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
 exports[`Flag renders a flag with a custom typographyPreset 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -101,12 +105,12 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -167,6 +171,8 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
 exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -183,12 +189,12 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -295,6 +301,8 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
 exports[`Flag renders a flag with an icon and custom spacing between elements 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -311,12 +319,12 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -423,6 +431,8 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
 exports[`Flag renders a flag with custom presets when children is number 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -439,12 +449,12 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -505,6 +515,8 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
 exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -521,6 +533,7 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 100px;
   min-height: 100px;
   box-sizing: border-box;
@@ -528,7 +541,6 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
   text-decoration: none;
   min-height: 100px;
   min-width: 100px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -589,6 +601,8 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
 exports[`Flag renders a flag with fixed for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -605,6 +619,7 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   width: 100px;
   height: 100px;
   min-height: 32px;
@@ -612,7 +627,6 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: auto;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -673,6 +687,8 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
 exports[`Flag renders a flag with no paddings 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -689,12 +705,12 @@ exports[`Flag renders a flag with no paddings 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -755,6 +771,8 @@ exports[`Flag renders a flag with no paddings 1`] = `
 exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -771,6 +789,7 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 100%;
   min-height: 100%;
   box-sizing: border-box;
@@ -778,7 +797,6 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
   text-decoration: none;
   min-height: 100%;
   min-width: 100%;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -839,6 +857,8 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
 exports[`Flag renders a flag with percentage for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -855,6 +875,7 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   width: 100%;
   height: 100%;
   min-height: 32px;
@@ -862,7 +883,6 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: auto;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -923,6 +943,8 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
 exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -939,6 +961,7 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 160px;
   min-height: 160px;
   box-sizing: border-box;
@@ -946,7 +969,6 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
   text-decoration: none;
   min-height: 160px;
   min-width: 160px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1007,6 +1029,8 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
 exports[`Flag renders a flag with token set for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1023,6 +1047,7 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   width: 160px;
   height: 160px;
   min-height: 32px;
@@ -1030,7 +1055,6 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: auto;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1091,6 +1115,8 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
 exports[`Flag renders a minimal flag with an icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1107,12 +1133,12 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1219,6 +1245,8 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 exports[`Flag renders a solid flag with an icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1235,12 +1263,12 @@ exports[`Flag renders a solid flag with an icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1347,6 +1375,8 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 exports[`Flag renders large Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1363,12 +1393,12 @@ exports[`Flag renders large Flag 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 40px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1429,6 +1459,8 @@ exports[`Flag renders large Flag 1`] = `
 exports[`Flag renders medium Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1445,12 +1477,12 @@ exports[`Flag renders medium Flag 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1511,6 +1543,8 @@ exports[`Flag renders medium Flag 1`] = `
 exports[`Flag renders small Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1527,12 +1561,12 @@ exports[`Flag renders small Flag 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
   min-height: 24px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1593,6 +1627,8 @@ exports[`Flag renders small Flag 1`] = `
 exports[`Flag renders with default stylePreset if supplied with invalid value 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1609,12 +1645,12 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1675,6 +1711,8 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
 exports[`Flag renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1691,12 +1729,12 @@ exports[`Flag renders with default styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1757,6 +1795,8 @@ exports[`Flag renders with default styles 1`] = `
 exports[`Flag renders with logical props overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1773,6 +1813,7 @@ exports[`Flag renders with logical props overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   margin-block: 30px;
   padding-block: 30px;
@@ -1780,9 +1821,6 @@ exports[`Flag renders with logical props overrides 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
-  margin-block: 30px;
-  padding-block: 30px;
   cursor: default;
   overflow: hidden;
   border: none;

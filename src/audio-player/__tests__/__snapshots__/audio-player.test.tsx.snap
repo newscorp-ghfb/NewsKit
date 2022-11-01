@@ -185,6 +185,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -201,6 +203,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -210,7 +213,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -221,7 +223,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -287,6 +288,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-13 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -303,6 +306,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -312,7 +316,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -323,7 +326,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -419,6 +421,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-19 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -435,6 +439,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -444,7 +449,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -455,7 +459,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #ABABAB;
-  margin: 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -618,6 +621,8 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-30 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -634,6 +639,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -643,7 +649,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -654,7 +659,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1555,6 +1559,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1571,6 +1577,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -1580,7 +1587,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1591,7 +1597,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -1669,6 +1674,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1685,6 +1692,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -1694,7 +1702,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -1705,7 +1712,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #ABABAB;
-  margin: 0;
 }
 
 .emotion-15 svg {
@@ -1759,6 +1765,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 }
 
 .emotion-19 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1775,6 +1783,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -1784,7 +1793,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -1795,7 +1803,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #ABABAB;
-  margin: 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -1933,6 +1940,8 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 }
 
 .emotion-26 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1949,6 +1958,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -1958,7 +1968,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1969,7 +1978,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2828,6 +2836,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2844,6 +2854,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -2853,7 +2864,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2864,7 +2874,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -2930,6 +2939,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-13 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2946,6 +2957,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -2955,7 +2967,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2966,7 +2977,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3062,6 +3072,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-19 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3078,6 +3090,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -3087,7 +3100,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -3098,7 +3110,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #ABABAB;
-  margin: 0;
 }
 
 .emotion-19 svg {
@@ -3152,6 +3163,8 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-23 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3168,6 +3181,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -3177,7 +3191,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -3188,7 +3201,6 @@ exports[`Audio Player hides volume control as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #ABABAB;
-  margin: 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -3980,6 +3992,8 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3996,6 +4010,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -4005,7 +4020,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4016,7 +4030,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -4201,6 +4214,8 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-20 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4217,6 +4232,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -4226,7 +4242,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4237,7 +4252,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4504,6 +4518,8 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-34 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4520,6 +4536,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -4529,7 +4546,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4540,7 +4556,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4865,6 +4880,8 @@ exports[`Audio Player live player renders as expected 1`] = `
 
 exports[`Audio Player play button loading state is phasing as expected 1`] = `
 .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4881,6 +4898,7 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -4890,7 +4908,6 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4901,7 +4918,6 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -4980,6 +4996,8 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
 
 exports[`Audio Player play button loading state is phasing as expected 2`] = `
 .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4996,6 +5014,7 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -5005,7 +5024,6 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5016,7 +5034,6 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
   background-color: #3358CC;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5130,6 +5147,8 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
 
 exports[`Audio Player play button loading state is phasing as expected 3`] = `
 .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5146,6 +5165,7 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -5155,7 +5175,6 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5166,7 +5185,6 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -5428,6 +5446,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5444,6 +5464,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -5453,7 +5474,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5464,7 +5484,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5563,6 +5582,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5579,6 +5600,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -5588,7 +5610,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5599,7 +5620,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5695,6 +5715,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-20 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5711,6 +5733,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -5720,7 +5743,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5731,7 +5753,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5900,6 +5921,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-31 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5916,6 +5939,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -5925,7 +5949,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5936,7 +5959,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6971,6 +6993,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6987,6 +7011,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -6996,7 +7021,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7007,7 +7031,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -7073,6 +7096,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-13 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7089,6 +7114,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -7098,7 +7124,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7109,7 +7134,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -7205,6 +7229,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-19 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7221,6 +7247,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -7230,7 +7257,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -7241,7 +7267,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #ABABAB;
-  margin: 0;
 }
 
 .emotion-19 svg {
@@ -7295,6 +7320,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-23 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7311,6 +7338,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -7320,7 +7348,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -7331,7 +7358,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #ABABAB;
-  margin: 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -7469,6 +7495,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-30 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7485,6 +7513,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -7494,7 +7523,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7505,7 +7533,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -8406,6 +8433,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8422,6 +8451,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -8431,7 +8461,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8442,7 +8471,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -8508,6 +8536,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-13 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8524,6 +8554,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -8533,7 +8564,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8544,7 +8574,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -8640,6 +8669,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-19 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8656,6 +8687,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -8665,7 +8697,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -8676,7 +8707,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #ABABAB;
-  margin: 0;
 }
 
 .emotion-19 svg {
@@ -8730,6 +8760,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-23 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8746,6 +8778,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -8755,7 +8788,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -8766,7 +8798,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #ABABAB;
-  margin: 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -8904,6 +8935,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-30 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8920,6 +8953,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -8929,7 +8963,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8940,7 +8973,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -9843,6 +9875,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9859,6 +9893,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -9868,7 +9903,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9879,7 +9913,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -9945,6 +9978,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-13 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9961,6 +9996,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -9970,7 +10006,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9981,7 +10016,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -10077,6 +10111,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-19 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -10093,6 +10129,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -10102,7 +10139,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -10113,7 +10149,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   background-color: transparent;
   border-radius: 50%;
   color: #ABABAB;
-  margin: 0;
 }
 
 .emotion-19 svg {
@@ -10167,6 +10202,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-23 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -10183,6 +10220,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -10192,7 +10230,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -10203,7 +10240,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   background-color: transparent;
   border-radius: 50%;
   color: #ABABAB;
-  margin: 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -10341,6 +10377,8 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-30 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -10357,6 +10395,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -10366,7 +10405,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -10377,7 +10415,6 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -11278,6 +11315,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -11294,6 +11333,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -11303,7 +11343,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -11316,7 +11355,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   border-width: 2px;
   border-style: solid;
   border-color: #243c46;
-  margin: 0;
   cursor: progress;
 }
 
@@ -11392,6 +11430,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 }
 
 .emotion-13 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -11408,6 +11448,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -11417,7 +11458,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -11426,7 +11466,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -11490,6 +11529,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 }
 
 .emotion-19 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -11506,6 +11547,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -11515,7 +11557,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -11524,7 +11565,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  margin: 0;
 }
 
 .emotion-19 svg {
@@ -11578,6 +11618,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 }
 
 .emotion-23 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -11594,6 +11636,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -11603,7 +11646,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -11612,7 +11654,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  margin: 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -11750,6 +11791,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 }
 
 .emotion-30 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -11766,6 +11809,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -11775,7 +11819,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -11784,7 +11827,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  margin: 0;
   cursor: pointer;
 }
 

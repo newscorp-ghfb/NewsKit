@@ -97,6 +97,8 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -113,6 +115,7 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -121,7 +124,6 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -131,7 +133,6 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -254,6 +255,8 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -270,6 +273,7 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -278,7 +282,6 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -288,7 +291,6 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -672,6 +674,8 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -688,6 +692,7 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -696,7 +701,6 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -706,7 +710,6 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -829,6 +832,8 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -845,6 +850,7 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -853,7 +859,6 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -863,7 +868,6 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1230,6 +1234,8 @@ exports[`Tabs clears focus onMouseDown 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1246,6 +1252,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -1254,7 +1261,6 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1264,7 +1270,6 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -1387,6 +1392,8 @@ exports[`Tabs clears focus onMouseDown 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1403,6 +1410,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -1411,7 +1419,6 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1421,7 +1428,6 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1786,6 +1792,8 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1802,6 +1810,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -1810,7 +1819,6 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1820,7 +1828,6 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -1943,6 +1950,8 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1959,6 +1968,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -1967,7 +1977,6 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1977,7 +1986,6 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2345,6 +2353,8 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2361,6 +2371,7 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -2370,7 +2381,6 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2380,7 +2390,6 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -2508,6 +2517,8 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2524,6 +2535,7 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -2533,7 +2545,6 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2543,7 +2554,6 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -2915,6 +2925,8 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2931,6 +2943,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -2939,7 +2952,6 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2949,7 +2961,6 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -3072,6 +3083,8 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3088,6 +3101,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -3096,7 +3110,6 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3106,7 +3119,6 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3476,6 +3488,8 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3492,6 +3506,7 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -3501,7 +3516,6 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3511,7 +3525,6 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -3639,6 +3652,8 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3655,6 +3670,7 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -3664,7 +3680,6 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3674,7 +3689,6 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -4046,6 +4060,8 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4062,6 +4078,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -4070,7 +4087,6 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4080,7 +4096,6 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -4203,6 +4218,8 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4219,6 +4236,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -4227,7 +4245,6 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4237,7 +4254,6 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4607,6 +4623,8 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4623,6 +4641,7 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -4632,7 +4651,6 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4642,7 +4660,6 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -4770,6 +4787,8 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4786,6 +4805,7 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -4795,7 +4815,6 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4805,7 +4824,6 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -5177,6 +5195,8 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5193,6 +5213,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -5201,7 +5222,6 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5211,7 +5231,6 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -5334,6 +5353,8 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5350,6 +5371,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -5358,7 +5380,6 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -5368,7 +5389,6 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   appearance: none;
   background-color: #E2E2E2;
   color: #ABABAB;
-  margin: 0;
 }
 
 .emotion-11 svg {
@@ -5685,6 +5705,8 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5701,6 +5723,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -5709,7 +5732,6 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5719,7 +5741,6 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -5842,6 +5863,8 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5858,6 +5881,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -5866,7 +5890,6 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5876,7 +5899,6 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6246,6 +6268,8 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6262,6 +6286,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -6271,7 +6296,6 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6281,7 +6305,6 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -6409,6 +6432,8 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6425,6 +6450,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -6434,7 +6460,6 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6444,7 +6469,6 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -6816,6 +6840,8 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6832,6 +6858,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -6840,7 +6867,6 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6850,7 +6876,6 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -6973,6 +6998,8 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6989,6 +7016,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -6997,7 +7025,6 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7007,7 +7034,6 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -7377,6 +7403,8 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7393,6 +7421,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -7402,7 +7431,6 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7412,7 +7440,6 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -7529,6 +7556,8 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7545,6 +7574,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -7554,7 +7584,6 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7564,7 +7593,6 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -7947,6 +7975,8 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7963,6 +7993,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -7971,7 +8002,6 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7981,7 +8011,6 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -8093,6 +8122,8 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
 }
 
 .emotion-15 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8109,6 +8140,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -8117,7 +8149,6 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8127,7 +8158,6 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -8508,6 +8538,8 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8524,6 +8556,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -8533,7 +8566,6 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8543,7 +8575,6 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -8656,6 +8687,8 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8672,6 +8705,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -8681,7 +8715,6 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8691,7 +8724,6 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -9078,6 +9110,8 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9094,6 +9128,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -9102,7 +9137,6 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9112,7 +9146,6 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -9220,6 +9253,8 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9236,6 +9271,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -9244,7 +9280,6 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9254,7 +9289,6 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -9636,6 +9670,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9652,6 +9688,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -9660,7 +9697,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9670,7 +9706,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -9793,6 +9828,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9809,6 +9846,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -9817,7 +9855,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9827,7 +9864,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -10197,6 +10233,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -10213,6 +10251,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -10222,7 +10261,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -10232,7 +10270,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -10360,6 +10397,8 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -10376,6 +10415,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -10385,7 +10425,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -10395,7 +10434,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -10770,6 +10808,8 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -10786,6 +10826,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -10795,7 +10836,6 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -10805,7 +10845,6 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -10953,6 +10992,8 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 }
 
 .emotion-13 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -10969,6 +11010,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -10978,7 +11020,6 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -10988,7 +11029,6 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -11378,6 +11418,8 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -11394,6 +11436,7 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -11402,7 +11445,6 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -11412,7 +11454,6 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -11742,6 +11783,8 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -11758,6 +11801,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -11766,7 +11810,6 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -11776,7 +11819,6 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -11924,6 +11966,8 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -11940,6 +11984,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -11948,7 +11993,6 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -11958,7 +12002,6 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -12388,6 +12431,8 @@ exports[`Tabs renders with default styles 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -12404,6 +12449,7 @@ exports[`Tabs renders with default styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -12412,7 +12458,6 @@ exports[`Tabs renders with default styles 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -12422,7 +12467,6 @@ exports[`Tabs renders with default styles 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -12545,6 +12589,8 @@ exports[`Tabs renders with default styles 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -12561,6 +12607,7 @@ exports[`Tabs renders with default styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -12569,7 +12616,6 @@ exports[`Tabs renders with default styles 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -12579,7 +12625,6 @@ exports[`Tabs renders with default styles 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -12946,6 +12991,8 @@ exports[`Tabs renders with default styles and divider 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -12962,6 +13009,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -12970,7 +13018,6 @@ exports[`Tabs renders with default styles and divider 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -12980,7 +13027,6 @@ exports[`Tabs renders with default styles and divider 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -13124,6 +13170,8 @@ exports[`Tabs renders with default styles and divider 1`] = `
 }
 
 .emotion-13 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -13140,6 +13188,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -13148,7 +13197,6 @@ exports[`Tabs renders with default styles and divider 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -13158,7 +13206,6 @@ exports[`Tabs renders with default styles and divider 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -13543,6 +13590,8 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -13559,6 +13608,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -13567,7 +13617,6 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -13577,7 +13626,6 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -13725,6 +13773,8 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -13741,6 +13791,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -13749,7 +13800,6 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -13759,7 +13809,6 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -14189,6 +14238,8 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -14205,6 +14256,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -14213,7 +14265,6 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -14223,7 +14274,6 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -14371,6 +14421,8 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -14387,6 +14439,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -14395,7 +14448,6 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -14405,7 +14457,6 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -14835,6 +14886,8 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -14851,6 +14904,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -14859,7 +14913,6 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -14869,7 +14922,6 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -15017,6 +15069,8 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -15033,6 +15087,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -15041,7 +15096,6 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -15051,7 +15105,6 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -15481,6 +15534,8 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -15497,6 +15552,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 64px;
@@ -15505,7 +15561,6 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -15515,7 +15570,6 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -15663,6 +15717,8 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -15679,6 +15735,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 64px;
@@ -15687,7 +15744,6 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -15697,7 +15753,6 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -16127,6 +16182,8 @@ exports[`Tabs renders with icons for tabs 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -16143,6 +16200,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 64px;
@@ -16151,7 +16209,6 @@ exports[`Tabs renders with icons for tabs 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -16161,7 +16218,6 @@ exports[`Tabs renders with icons for tabs 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -16286,6 +16342,8 @@ exports[`Tabs renders with icons for tabs 1`] = `
 }
 
 .emotion-12 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -16302,6 +16360,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 64px;
@@ -16310,7 +16369,6 @@ exports[`Tabs renders with icons for tabs 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -16320,7 +16378,6 @@ exports[`Tabs renders with icons for tabs 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -16723,6 +16780,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -16739,6 +16798,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -16748,7 +16808,6 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -16758,7 +16817,6 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -16911,6 +16969,8 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -16927,6 +16987,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -16936,7 +16997,6 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -16946,7 +17006,6 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -17384,6 +17443,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -17400,6 +17461,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -17409,7 +17471,6 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -17419,7 +17480,6 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -17572,6 +17632,8 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -17588,6 +17650,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -17597,7 +17660,6 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -17607,7 +17669,6 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -18042,6 +18103,8 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -18058,6 +18121,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -18066,7 +18130,6 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -18076,7 +18139,6 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -18199,6 +18261,8 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -18215,6 +18279,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -18223,7 +18288,6 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -18233,7 +18297,6 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -18601,6 +18664,8 @@ exports[`Tabs renders with overrides 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -18617,6 +18682,7 @@ exports[`Tabs renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 64px;
@@ -18625,7 +18691,6 @@ exports[`Tabs renders with overrides 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -18635,7 +18700,6 @@ exports[`Tabs renders with overrides 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -18783,6 +18847,8 @@ exports[`Tabs renders with overrides 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -18799,6 +18865,7 @@ exports[`Tabs renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 64px;
@@ -18807,7 +18874,6 @@ exports[`Tabs renders with overrides 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -18817,7 +18883,6 @@ exports[`Tabs renders with overrides 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -19271,6 +19336,8 @@ exports[`Tabs renders with overrides on Tab 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -19287,6 +19354,7 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 64px;
@@ -19295,7 +19363,6 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -19303,7 +19370,6 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  margin: 0;
   cursor: pointer;
   border-style: solid;
   border-color: green;
@@ -19381,6 +19447,8 @@ exports[`Tabs renders with overrides on Tab 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -19397,6 +19465,7 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 64px;
@@ -19405,7 +19474,6 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -19415,7 +19483,6 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -19746,6 +19813,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -19762,6 +19831,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -19771,7 +19841,6 @@ exports[`Tabs renders with overrides vertical 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -19781,7 +19850,6 @@ exports[`Tabs renders with overrides vertical 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -19934,6 +20002,8 @@ exports[`Tabs renders with overrides vertical 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -19950,6 +20020,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -19959,7 +20030,6 @@ exports[`Tabs renders with overrides vertical 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -19969,7 +20039,6 @@ exports[`Tabs renders with overrides vertical 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -20428,6 +20497,8 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -20444,6 +20515,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -20452,7 +20524,6 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -20462,7 +20533,6 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -20570,6 +20640,8 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -20586,6 +20658,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -20594,7 +20667,6 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -20604,7 +20676,6 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -20986,6 +21057,8 @@ exports[`Tabs renders with selectedIndex 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -21002,6 +21075,7 @@ exports[`Tabs renders with selectedIndex 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -21010,7 +21084,6 @@ exports[`Tabs renders with selectedIndex 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -21020,7 +21093,6 @@ exports[`Tabs renders with selectedIndex 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -21132,6 +21204,8 @@ exports[`Tabs renders with selectedIndex 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -21148,6 +21222,7 @@ exports[`Tabs renders with selectedIndex 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -21156,7 +21231,6 @@ exports[`Tabs renders with selectedIndex 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -21166,7 +21240,6 @@ exports[`Tabs renders with selectedIndex 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -21544,6 +21617,8 @@ exports[`Tabs renders with sizing 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -21560,6 +21635,7 @@ exports[`Tabs renders with sizing 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 64px;
@@ -21568,7 +21644,6 @@ exports[`Tabs renders with sizing 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -21578,7 +21653,6 @@ exports[`Tabs renders with sizing 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -21701,6 +21775,8 @@ exports[`Tabs renders with sizing 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -21717,6 +21793,7 @@ exports[`Tabs renders with sizing 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 64px;
@@ -21725,7 +21802,6 @@ exports[`Tabs renders with sizing 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -21735,7 +21811,6 @@ exports[`Tabs renders with sizing 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -22102,6 +22177,8 @@ exports[`Tabs sets active on click 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -22118,6 +22195,7 @@ exports[`Tabs sets active on click 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -22126,7 +22204,6 @@ exports[`Tabs sets active on click 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -22136,7 +22213,6 @@ exports[`Tabs sets active on click 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -22259,6 +22335,8 @@ exports[`Tabs sets active on click 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -22275,6 +22353,7 @@ exports[`Tabs sets active on click 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -22283,7 +22362,6 @@ exports[`Tabs sets active on click 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -22293,7 +22371,6 @@ exports[`Tabs sets active on click 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -22660,6 +22737,8 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -22676,6 +22755,7 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -22684,7 +22764,6 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -22694,7 +22773,6 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -22817,6 +22895,8 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -22833,6 +22913,7 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -22841,7 +22922,6 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -22851,7 +22931,6 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -23218,6 +23297,8 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -23234,6 +23315,7 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -23242,7 +23324,6 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -23252,7 +23333,6 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -23364,6 +23444,8 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
 }
 
 .emotion-15 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -23380,6 +23462,7 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -23388,7 +23471,6 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -23398,7 +23480,6 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -23776,6 +23857,8 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -23792,6 +23875,7 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -23800,7 +23884,6 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -23810,7 +23893,6 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -23922,6 +24004,8 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
 }
 
 .emotion-15 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -23938,6 +24022,7 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -23946,7 +24031,6 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -23956,7 +24040,6 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -24309,6 +24392,8 @@ exports[`Tabs with custom scroll component 1`] = `
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -24325,6 +24410,7 @@ exports[`Tabs with custom scroll component 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -24333,7 +24419,6 @@ exports[`Tabs with custom scroll component 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -24343,7 +24428,6 @@ exports[`Tabs with custom scroll component 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -24491,6 +24575,8 @@ exports[`Tabs with custom scroll component 1`] = `
 }
 
 .emotion-12 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -24507,6 +24593,7 @@ exports[`Tabs with custom scroll component 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -24515,7 +24602,6 @@ exports[`Tabs with custom scroll component 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -24525,7 +24611,6 @@ exports[`Tabs with custom scroll component 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -24959,6 +25044,8 @@ exports[`Tabs with custom scroll props 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -24975,6 +25062,7 @@ exports[`Tabs with custom scroll props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -24983,7 +25071,6 @@ exports[`Tabs with custom scroll props 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -24993,7 +25080,6 @@ exports[`Tabs with custom scroll props 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -25141,6 +25227,8 @@ exports[`Tabs with custom scroll props 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -25157,6 +25245,7 @@ exports[`Tabs with custom scroll props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -25165,7 +25254,6 @@ exports[`Tabs with custom scroll props 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -25175,7 +25263,6 @@ exports[`Tabs with custom scroll props 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -25605,6 +25692,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -25621,6 +25710,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -25629,7 +25719,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -25639,7 +25728,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -25787,6 +25875,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -25803,6 +25893,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -25811,7 +25902,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -25821,7 +25911,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -26249,6 +26338,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -26265,6 +26356,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -26273,7 +26365,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -26283,7 +26374,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -26431,6 +26521,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -26447,6 +26539,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -26455,7 +26548,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -26465,7 +26557,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -26895,6 +26986,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -26911,6 +27004,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -26919,7 +27013,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -26929,7 +27022,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -27077,6 +27169,8 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -27093,6 +27187,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -27101,7 +27196,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -27111,7 +27205,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -27544,6 +27637,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -27560,6 +27655,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -27569,7 +27665,6 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -27579,7 +27674,6 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -27732,6 +27826,8 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -27748,6 +27844,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -27757,7 +27854,6 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -27767,7 +27863,6 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -28203,6 +28298,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -28219,6 +28316,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -28228,7 +28326,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -28238,7 +28335,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -28391,6 +28487,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -28407,6 +28505,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -28416,7 +28515,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -28426,7 +28524,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -28864,6 +28961,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -28880,6 +28979,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -28889,7 +28989,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -28899,7 +28998,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -29052,6 +29150,8 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -29068,6 +29168,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -29077,7 +29178,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -29087,7 +29187,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -29526,6 +29625,8 @@ exports[`with logical props overrides 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -29542,6 +29643,7 @@ exports[`with logical props overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -29550,7 +29652,6 @@ exports[`with logical props overrides 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -29560,7 +29661,6 @@ exports[`with logical props overrides 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -29708,6 +29808,8 @@ exports[`with logical props overrides 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -29724,6 +29826,7 @@ exports[`with logical props overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -29732,7 +29835,6 @@ exports[`with logical props overrides 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -29742,7 +29844,6 @@ exports[`with logical props overrides 1`] = `
   appearance: none;
   background-color: transparent;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 

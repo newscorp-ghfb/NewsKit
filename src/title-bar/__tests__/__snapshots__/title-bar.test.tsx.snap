@@ -152,6 +152,8 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -168,6 +170,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -175,7 +178,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -186,7 +188,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -457,6 +458,8 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -473,6 +476,7 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -480,7 +484,6 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -491,7 +494,6 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 

@@ -900,6 +900,8 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-1 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -916,6 +918,7 @@ exports[`Search renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -925,7 +928,6 @@ exports[`Search renders correctly 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -936,7 +938,6 @@ exports[`Search renders correctly 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1096,6 +1097,8 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-1 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1112,6 +1115,7 @@ exports[`Search renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 130px;
   height: 40px;
   min-height: 32px;
@@ -1120,7 +1124,6 @@ exports[`Search renders correctly 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: 130px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1134,7 +1137,6 @@ exports[`Search renders correctly 1`] = `
   border-width: 1px;
   border-radius: 24px;
   color: #2E3F54;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1243,6 +1245,8 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-4 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1259,12 +1263,12 @@ exports[`Search renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
   min-height: 24px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;

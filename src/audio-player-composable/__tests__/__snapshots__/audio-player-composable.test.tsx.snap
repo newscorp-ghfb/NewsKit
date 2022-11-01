@@ -3,6 +3,8 @@
 exports[`Audio Player Composable Playback Speed should close modal on X click 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -19,6 +21,7 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -28,7 +31,6 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -39,7 +41,6 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -198,6 +199,8 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
 exports[`Audio Player Composable Playback Speed should render correctly in modal 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -214,6 +217,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -223,7 +227,6 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -234,7 +237,6 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -882,6 +884,8 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 }
 
 .emotion-16 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -898,6 +902,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -907,7 +912,6 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -918,7 +922,6 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1166,6 +1169,8 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 exports[`Audio Player Composable Playback Speed should render correctly in popover 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1182,6 +1187,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -1191,7 +1197,6 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1202,7 +1207,6 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2220,6 +2224,8 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 exports[`Audio Player Composable Playback Speed should render correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2236,6 +2242,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -2245,7 +2252,6 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2253,7 +2259,6 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2778,6 +2783,8 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 exports[`Audio Player Composable VolumeControl renders horizontal expanded by default 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -2795,6 +2802,8 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2811,6 +2820,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -2820,7 +2830,6 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2831,7 +2840,6 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3193,6 +3201,8 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
 exports[`Audio Player Composable VolumeControl renders horizontally with layout prop is horizontal 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -3210,6 +3220,8 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3226,6 +3238,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -3235,7 +3248,6 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3246,7 +3258,6 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3654,6 +3665,8 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 exports[`Audio Player Composable VolumeControl should hover on volume control: with hover 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -3671,6 +3684,8 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3687,6 +3702,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -3696,7 +3712,6 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3707,7 +3722,6 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4115,6 +4129,8 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 exports[`Audio Player Composable VolumeControl should hover on volume control: without hover 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -4132,6 +4148,8 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4148,6 +4166,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -4157,7 +4176,6 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4168,7 +4186,6 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4576,6 +4593,8 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volume control: with blur 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -4593,6 +4612,8 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4609,6 +4630,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -4618,7 +4640,6 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4629,7 +4650,6 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5037,6 +5057,8 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volume control: with focus 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -5054,6 +5076,8 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5070,6 +5094,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -5079,7 +5104,6 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5090,7 +5114,6 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5498,6 +5521,8 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 exports[`Audio Player Composable VolumeControl should render correctly with collapsed and initialVolume 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "muteButton";
@@ -5515,6 +5540,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5531,6 +5558,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -5540,7 +5568,6 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5551,7 +5578,6 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5682,6 +5708,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
 exports[`Audio Player Composable VolumeControl should render correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -5700,6 +5728,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5716,6 +5746,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -5725,7 +5756,6 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5736,7 +5766,6 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6028,6 +6057,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 exports[`Audio Player Composable VolumeControl should render correctly with vertical prop 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "muteButton";
@@ -6045,6 +6076,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6061,6 +6094,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -6070,7 +6104,6 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6081,7 +6114,6 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6212,6 +6244,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6228,6 +6262,7 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -6237,7 +6272,6 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6248,7 +6282,6 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -6525,6 +6558,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6541,6 +6576,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -6550,7 +6586,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6561,7 +6596,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   background-color: #3358CC;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6661,6 +6695,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6677,6 +6713,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -6684,7 +6721,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6695,7 +6731,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6780,6 +6815,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -6797,6 +6834,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-13 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6813,6 +6852,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -6822,7 +6862,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6833,7 +6872,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -7530,6 +7568,8 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7546,6 +7586,7 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -7555,7 +7596,6 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7566,7 +7606,6 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -7713,6 +7752,8 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
 
 exports[`Audio Player Composable should phasing playPause button loading state as expected 1`] = `
 .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7729,6 +7770,7 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -7738,7 +7780,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7749,7 +7790,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -7828,6 +7868,8 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 
 exports[`Audio Player Composable should phasing playPause button loading state as expected 2`] = `
 .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7844,6 +7886,7 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -7853,7 +7896,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7864,7 +7906,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   background-color: #3358CC;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -7978,6 +8019,8 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 
 exports[`Audio Player Composable should phasing playPause button loading state as expected 3`] = `
 .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7994,6 +8037,7 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -8003,7 +8047,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8014,7 +8057,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -8261,6 +8303,8 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8277,6 +8321,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -8286,7 +8331,6 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8297,7 +8341,6 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -8594,6 +8637,8 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8610,6 +8655,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -8619,7 +8665,6 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8630,7 +8675,6 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -8697,6 +8741,8 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8713,6 +8759,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -8720,7 +8767,6 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8731,7 +8777,6 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -8816,6 +8861,8 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -8833,6 +8880,8 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-12 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8849,6 +8898,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -8858,7 +8908,6 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8869,7 +8918,6 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -9486,6 +9534,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9502,6 +9552,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -9511,7 +9562,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9522,7 +9572,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -9589,6 +9638,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9605,6 +9656,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -9612,7 +9664,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9623,7 +9674,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -9708,6 +9758,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "muteButton slider";
@@ -9725,6 +9777,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-12 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9741,6 +9795,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -9750,7 +9805,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9761,7 +9815,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 

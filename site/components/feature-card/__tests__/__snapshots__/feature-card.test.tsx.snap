@@ -269,6 +269,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -285,6 +287,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
   box-sizing: border-box;
@@ -292,7 +295,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -300,7 +302,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -773,6 +774,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -789,6 +792,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
   box-sizing: border-box;
@@ -796,7 +800,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -804,7 +807,6 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1249,6 +1251,8 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1265,6 +1269,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
   box-sizing: border-box;
@@ -1272,7 +1277,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1280,7 +1284,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2427,6 +2430,8 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2443,6 +2448,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
   box-sizing: border-box;
@@ -2450,7 +2456,6 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2458,7 +2463,6 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4341,6 +4345,8 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4357,6 +4363,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
   box-sizing: border-box;
@@ -4364,7 +4371,6 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4372,7 +4378,6 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  margin: 0;
   cursor: pointer;
 }
 

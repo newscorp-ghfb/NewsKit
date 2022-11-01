@@ -134,6 +134,8 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -150,6 +152,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -157,7 +160,6 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -168,7 +170,6 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -508,6 +509,8 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
 }
 
 .emotion-19 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -524,6 +527,7 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -531,7 +535,6 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -542,7 +545,6 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -934,6 +936,8 @@ exports[`Form renders with error and with submit validation and revalidation mod
 }
 
 .emotion-21 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -950,6 +954,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -957,7 +962,6 @@ exports[`Form renders with error and with submit validation and revalidation mod
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -968,7 +972,6 @@ exports[`Form renders with error and with submit validation and revalidation mod
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1468,6 +1471,8 @@ exports[`Form renders with error on blur 1`] = `
 }
 
 .emotion-18 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1484,6 +1489,7 @@ exports[`Form renders with error on blur 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -1491,7 +1497,6 @@ exports[`Form renders with error on blur 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1502,7 +1507,6 @@ exports[`Form renders with error on blur 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1889,6 +1893,8 @@ exports[`Form renders with error on submit 1`] = `
 }
 
 .emotion-21 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1905,6 +1911,7 @@ exports[`Form renders with error on submit 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -1912,7 +1919,6 @@ exports[`Form renders with error on submit 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1923,7 +1929,6 @@ exports[`Form renders with error on submit 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2423,6 +2428,8 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 }
 
 .emotion-18 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2439,6 +2446,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -2446,7 +2454,6 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2457,7 +2464,6 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3223,6 +3229,8 @@ exports[`Form renders with nested inputs 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3239,6 +3247,7 @@ exports[`Form renders with nested inputs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -3246,7 +3255,6 @@ exports[`Form renders with nested inputs 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3257,7 +3265,6 @@ exports[`Form renders with nested inputs 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3572,6 +3579,8 @@ exports[`Form renders with onBlur validation 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3588,6 +3597,7 @@ exports[`Form renders with onBlur validation 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -3595,7 +3605,6 @@ exports[`Form renders with onBlur validation 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3606,7 +3615,6 @@ exports[`Form renders with onBlur validation 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -8858,6 +8866,8 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 }
 
 .emotion-20 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -8874,6 +8884,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -8881,7 +8892,6 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8892,7 +8902,6 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -9765,6 +9774,8 @@ exports[`FormInput renders with nested inputs 1`] = `
     </p>
   </div>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -9781,6 +9792,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -9788,7 +9800,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9799,7 +9810,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 

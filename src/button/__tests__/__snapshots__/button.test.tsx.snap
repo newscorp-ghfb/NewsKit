@@ -3,6 +3,8 @@
 exports[`Button Loading Button renders Large Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -19,6 +21,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px 24px;
   min-width: 120px;
   min-height: 64px;
   box-sizing: border-box;
@@ -26,7 +29,6 @@ exports[`Button Loading Button renders Large Button 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: 120px;
-  padding: 16px 24px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -37,7 +39,6 @@ exports[`Button Loading Button renders Large Button 1`] = `
   background-color: #D5E0FC;
   border-radius: 8px;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -116,6 +117,8 @@ exports[`Button Loading Button renders Large Button 1`] = `
 exports[`Button Loading Button renders Small Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -132,6 +135,7 @@ exports[`Button Loading Button renders Small Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
   box-sizing: border-box;
@@ -139,7 +143,6 @@ exports[`Button Loading Button renders Small Button 1`] = `
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -150,7 +153,6 @@ exports[`Button Loading Button renders Small Button 1`] = `
   background-color: #D5E0FC;
   border-radius: 8px;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -229,6 +231,8 @@ exports[`Button Loading Button renders Small Button 1`] = `
 exports[`Button Loading Button renders a button with fixed for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -245,6 +249,7 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 100px;
   min-height: 100px;
   box-sizing: border-box;
@@ -252,7 +257,6 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   text-decoration: none;
   min-height: 100px;
   min-width: 100px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -263,7 +267,6 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -364,6 +367,8 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
 exports[`Button Loading Button renders a button with fixed for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -380,6 +385,7 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100px;
   min-width: 80px;
   height: 100px;
@@ -389,7 +395,6 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -400,7 +405,6 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -501,6 +505,8 @@ exports[`Button Loading Button renders a button with fixed for width and height 
 exports[`Button Loading Button renders a button with percentage for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -517,6 +523,7 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 100%;
   min-height: 100%;
   box-sizing: border-box;
@@ -524,7 +531,6 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   text-decoration: none;
   min-height: 100%;
   min-width: 100%;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -535,7 +541,6 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -636,6 +641,8 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
 exports[`Button Loading Button renders a button with percentage for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -652,6 +659,7 @@ exports[`Button Loading Button renders a button with percentage for width and he
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
@@ -661,7 +669,6 @@ exports[`Button Loading Button renders a button with percentage for width and he
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -672,7 +679,6 @@ exports[`Button Loading Button renders a button with percentage for width and he
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -773,6 +779,8 @@ exports[`Button Loading Button renders a button with percentage for width and he
 exports[`Button Loading Button renders a button with token set for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -789,6 +797,7 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 160px;
   min-height: 160px;
   box-sizing: border-box;
@@ -796,7 +805,6 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   text-decoration: none;
   min-height: 160px;
   min-width: 160px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -807,7 +815,6 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -908,6 +915,8 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
 exports[`Button Loading Button renders a button with token set for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -924,6 +933,7 @@ exports[`Button Loading Button renders a button with token set for width and hei
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 160px;
   min-width: 80px;
   height: 160px;
@@ -933,7 +943,6 @@ exports[`Button Loading Button renders a button with token set for width and hei
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -944,7 +953,6 @@ exports[`Button Loading Button renders a button with token set for width and hei
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1045,6 +1053,8 @@ exports[`Button Loading Button renders a button with token set for width and hei
 exports[`Button renders Large Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1061,6 +1071,7 @@ exports[`Button renders Large Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px 24px;
   min-width: 120px;
   min-height: 64px;
   box-sizing: border-box;
@@ -1068,7 +1079,6 @@ exports[`Button renders Large Button 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: 120px;
-  padding: 16px 24px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1079,7 +1089,6 @@ exports[`Button renders Large Button 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1180,6 +1189,8 @@ exports[`Button renders Large Button 1`] = `
 exports[`Button renders Small Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1196,6 +1207,7 @@ exports[`Button renders Small Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
   box-sizing: border-box;
@@ -1203,7 +1215,6 @@ exports[`Button renders Small Button 1`] = `
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1214,7 +1225,6 @@ exports[`Button renders Small Button 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1315,6 +1325,8 @@ exports[`Button renders Small Button 1`] = `
 exports[`Button renders button link when href passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1331,6 +1343,7 @@ exports[`Button renders button link when href passed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -1338,7 +1351,6 @@ exports[`Button renders button link when href passed 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1349,7 +1361,6 @@ exports[`Button renders button link when href passed 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1450,6 +1461,8 @@ exports[`Button renders button link when href passed 1`] = `
 exports[`Button renders button link with disabled link 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1466,6 +1479,7 @@ exports[`Button renders button link with disabled link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -1473,7 +1487,6 @@ exports[`Button renders button link with disabled link 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -1484,7 +1497,6 @@ exports[`Button renders button link with disabled link 1`] = `
   background-color: #E2E2E2;
   border-radius: 8px;
   color: #ABABAB;
-  margin: 0;
 }
 
 .emotion-0 svg {
@@ -1553,6 +1565,8 @@ exports[`Button renders button link with disabled link 1`] = `
 exports[`Button renders fixed-width Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1569,6 +1583,7 @@ exports[`Button renders fixed-width Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px 24px;
   width: 160px;
   min-width: 120px;
   min-height: 64px;
@@ -1577,7 +1592,6 @@ exports[`Button renders fixed-width Button 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 16px 24px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1588,7 +1602,6 @@ exports[`Button renders fixed-width Button 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1689,6 +1702,8 @@ exports[`Button renders fixed-width Button 1`] = `
 exports[`Button renders full-width Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1705,6 +1720,7 @@ exports[`Button renders full-width Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px 24px;
   width: 100%;
   min-width: 120px;
   min-height: 64px;
@@ -1713,7 +1729,6 @@ exports[`Button renders full-width Button 1`] = `
   text-decoration: none;
   min-height: 64px;
   min-width: auto;
-  padding: 16px 24px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1724,7 +1739,6 @@ exports[`Button renders full-width Button 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1825,6 +1839,8 @@ exports[`Button renders full-width Button 1`] = `
 exports[`Button renders text and icon button with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1841,6 +1857,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -1848,7 +1865,6 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1859,7 +1875,6 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2001,6 +2016,8 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 exports[`Button renders with different spaceInset preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2017,6 +2034,7 @@ exports[`Button renders with different spaceInset preset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -2024,7 +2042,6 @@ exports[`Button renders with different spaceInset preset 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2035,7 +2052,6 @@ exports[`Button renders with different spaceInset preset 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2136,6 +2152,8 @@ exports[`Button renders with different spaceInset preset 1`] = `
 exports[`Button renders with different style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2152,6 +2170,7 @@ exports[`Button renders with different style preset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -2159,7 +2178,6 @@ exports[`Button renders with different style preset 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2173,7 +2191,6 @@ exports[`Button renders with different style preset 1`] = `
   border-width: 1px;
   border-radius: 8px;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2276,6 +2293,8 @@ exports[`Button renders with different style preset 1`] = `
 exports[`Button renders with different typography preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2292,6 +2311,7 @@ exports[`Button renders with different typography preset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -2299,7 +2319,6 @@ exports[`Button renders with different typography preset 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2310,7 +2329,6 @@ exports[`Button renders with different typography preset 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2411,6 +2429,8 @@ exports[`Button renders with different typography preset 1`] = `
 exports[`Button renders with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2427,6 +2447,7 @@ exports[`Button renders with fallback formatting 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -2434,7 +2455,6 @@ exports[`Button renders with fallback formatting 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2445,7 +2465,6 @@ exports[`Button renders with fallback formatting 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2546,6 +2565,8 @@ exports[`Button renders with fallback formatting 1`] = `
 exports[`Button renders with logical props overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2562,6 +2583,7 @@ exports[`Button renders with logical props overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   margin-block: 30px;
@@ -2571,9 +2593,6 @@ exports[`Button renders with logical props overrides 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
-  margin-block: 30px;
-  padding-block: 30px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2584,10 +2603,7 @@ exports[`Button renders with logical props overrides 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
-  margin-block: 30px;
-  padding-block: 30px;
 }
 
 .emotion-0 svg {

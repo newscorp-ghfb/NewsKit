@@ -1020,6 +1020,8 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-12 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1036,6 +1038,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -1043,7 +1046,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1054,7 +1056,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1429,6 +1430,8 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-12 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1445,6 +1448,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -1452,7 +1456,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1463,7 +1466,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1833,6 +1835,8 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-12 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1849,6 +1853,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -1856,7 +1861,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1867,7 +1871,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2237,6 +2240,8 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 .emotion-12 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2253,6 +2258,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -2260,7 +2266,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2271,7 +2276,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2695,6 +2699,8 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 .emotion-12 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2711,6 +2717,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -2718,7 +2725,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2729,7 +2735,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3099,6 +3104,8 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 }
 
 .emotion-12 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3115,6 +3122,7 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -3122,7 +3130,6 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3133,7 +3140,6 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3503,6 +3509,8 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 .emotion-12 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3519,6 +3527,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -3526,7 +3535,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3537,7 +3545,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 

@@ -662,6 +662,8 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -678,6 +680,7 @@ exports[`Select in Modal render Select 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -687,7 +690,6 @@ exports[`Select in Modal render Select 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -698,7 +700,6 @@ exports[`Select in Modal render Select 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2334,6 +2335,8 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2350,6 +2353,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -2359,7 +2363,6 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2370,7 +2373,6 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 

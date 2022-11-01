@@ -29,6 +29,8 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -45,6 +47,7 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 120px;
   min-height: 48px;
@@ -53,7 +56,6 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -66,7 +68,6 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -278,6 +279,8 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -294,6 +297,7 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 120px;
   min-height: 48px;
@@ -302,7 +306,6 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -315,7 +318,6 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -525,6 +527,8 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -541,6 +545,7 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -549,7 +554,6 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -562,7 +566,6 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -774,6 +777,8 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -790,6 +795,7 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -798,7 +804,6 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -811,7 +816,6 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -1021,6 +1025,8 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1037,6 +1043,7 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -1045,7 +1052,6 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1058,7 +1064,6 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1270,6 +1275,8 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1286,6 +1293,7 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -1294,7 +1302,6 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1307,7 +1314,6 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1517,6 +1523,8 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1533,6 +1541,7 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -1541,7 +1550,6 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1554,7 +1562,6 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -1766,6 +1773,8 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1782,6 +1791,7 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -1790,7 +1800,6 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1803,7 +1812,6 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -2013,6 +2021,8 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2029,6 +2039,7 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -2037,7 +2048,6 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2050,7 +2060,6 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -2262,6 +2271,8 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2278,6 +2289,7 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -2286,7 +2298,6 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2299,7 +2310,6 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -2509,6 +2519,8 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2525,6 +2537,7 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 64px;
   min-height: 48px;
@@ -2533,7 +2546,6 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2546,7 +2558,6 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -2758,6 +2769,8 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2774,6 +2787,7 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 64px;
   min-height: 48px;
@@ -2782,7 +2796,6 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2795,7 +2808,6 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -3021,6 +3033,8 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
 }
 
 .emotion-3 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3037,6 +3051,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -3045,7 +3060,6 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3058,7 +3072,6 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -3353,6 +3366,8 @@ exports[`Menu renders horizontally with menu group 1`] = `
 }
 
 .emotion-3 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3369,6 +3384,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -3377,7 +3393,6 @@ exports[`Menu renders horizontally with menu group 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3390,7 +3405,6 @@ exports[`Menu renders horizontally with menu group 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -3611,6 +3625,8 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3627,6 +3643,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -3635,7 +3652,6 @@ exports[`Menu renders horizontally with menu items 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3648,7 +3664,6 @@ exports[`Menu renders horizontally with menu items 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -3872,6 +3887,8 @@ exports[`Menu renders vertically with menu dividers 1`] = `
 }
 
 .emotion-3 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3888,6 +3905,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -3896,7 +3914,6 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3909,7 +3926,6 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -4203,6 +4219,8 @@ exports[`Menu renders vertically with menu group 1`] = `
 }
 
 .emotion-3 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4219,6 +4237,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -4227,7 +4246,6 @@ exports[`Menu renders vertically with menu group 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4240,7 +4258,6 @@ exports[`Menu renders vertically with menu group 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -4465,6 +4482,8 @@ exports[`Menu renders vertically with menu items 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4481,6 +4500,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -4489,7 +4509,6 @@ exports[`Menu renders vertically with menu items 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4502,7 +4521,6 @@ exports[`Menu renders vertically with menu items 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -4712,6 +4730,8 @@ exports[`Menu renders with default props 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4728,6 +4748,7 @@ exports[`Menu renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -4736,7 +4757,6 @@ exports[`Menu renders with default props 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4749,7 +4769,6 @@ exports[`Menu renders with default props 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -4960,6 +4979,8 @@ exports[`Menu renders with logical prop overrides 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4976,6 +4997,7 @@ exports[`Menu renders with logical prop overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -4984,7 +5006,6 @@ exports[`Menu renders with logical prop overrides 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4997,7 +5018,6 @@ exports[`Menu renders with logical prop overrides 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -5481,6 +5501,8 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5497,6 +5519,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -5505,7 +5528,6 @@ exports[`MenuGroup renders with overrides 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5518,7 +5540,6 @@ exports[`MenuGroup renders with overrides 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -5796,6 +5817,8 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5812,6 +5835,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -5820,7 +5844,6 @@ exports[`MenuGroup renders with title as a component 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5833,7 +5856,6 @@ exports[`MenuGroup renders with title as a component 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -6137,6 +6159,8 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6153,6 +6177,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -6161,7 +6186,6 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6174,7 +6198,6 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -6449,6 +6472,8 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-5 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6465,6 +6490,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -6473,7 +6499,6 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6486,7 +6511,6 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -6714,6 +6738,8 @@ exports[`MenuItem renders in large size 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6730,6 +6756,7 @@ exports[`MenuItem renders in large size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -6738,7 +6765,6 @@ exports[`MenuItem renders in large size 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6751,7 +6777,6 @@ exports[`MenuItem renders in large size 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -6915,6 +6940,8 @@ exports[`MenuItem renders in medium size 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6931,6 +6958,7 @@ exports[`MenuItem renders in medium size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -6939,7 +6967,6 @@ exports[`MenuItem renders in medium size 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6952,7 +6979,6 @@ exports[`MenuItem renders in medium size 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -7116,6 +7142,8 @@ exports[`MenuItem renders in small size 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7132,6 +7160,7 @@ exports[`MenuItem renders in small size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -7140,7 +7169,6 @@ exports[`MenuItem renders in small size 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7153,7 +7181,6 @@ exports[`MenuItem renders in small size 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -7317,6 +7344,8 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7333,6 +7362,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -7341,7 +7371,6 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7354,7 +7383,6 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -7519,6 +7547,8 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7535,6 +7565,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -7543,7 +7574,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7556,7 +7586,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   border-style: solid;
@@ -7780,6 +7809,8 @@ exports[`MenuItem renders with default props 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7796,6 +7827,7 @@ exports[`MenuItem renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -7804,7 +7836,6 @@ exports[`MenuItem renders with default props 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7817,7 +7848,6 @@ exports[`MenuItem renders with default props 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -7981,6 +8011,8 @@ exports[`MenuItem renders with icon 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -7997,6 +8029,7 @@ exports[`MenuItem renders with icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
@@ -8005,7 +8038,6 @@ exports[`MenuItem renders with icon 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: auto;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8018,7 +8050,6 @@ exports[`MenuItem renders with icon 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -8223,6 +8254,8 @@ exports[`MenuItem renders with overrides 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 12px;
   column-gap: 12px;
@@ -8239,6 +8272,7 @@ exports[`MenuItem renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 100%;
   min-width: 10px;
   min-height: 11px;
@@ -8247,7 +8281,6 @@ exports[`MenuItem renders with overrides 1`] = `
   text-decoration: none;
   min-height: 11px;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8260,7 +8293,6 @@ exports[`MenuItem renders with overrides 1`] = `
   border-color: darkpink;
   border-width: 0px 8px 0px 0px;
   color: red;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;

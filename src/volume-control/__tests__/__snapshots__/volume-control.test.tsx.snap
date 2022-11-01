@@ -50,6 +50,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -66,6 +68,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -75,7 +78,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -86,7 +88,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -477,6 +478,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -493,6 +496,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -502,7 +506,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -513,7 +516,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -904,6 +906,8 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -920,6 +924,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -929,7 +934,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -940,7 +944,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1330,6 +1333,8 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1346,6 +1351,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -1355,7 +1361,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1366,7 +1371,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1757,6 +1761,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1773,6 +1779,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -1782,7 +1789,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1793,7 +1799,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2184,6 +2189,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2200,6 +2207,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -2209,7 +2217,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2220,7 +2227,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2611,6 +2617,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2627,6 +2635,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -2636,7 +2645,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2647,7 +2655,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3038,6 +3045,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3054,6 +3063,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -3063,7 +3073,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3074,7 +3083,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3465,6 +3473,8 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-2 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3481,6 +3491,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -3490,7 +3501,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3501,7 +3511,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 

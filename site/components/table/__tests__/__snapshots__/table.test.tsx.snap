@@ -77,6 +77,8 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -93,6 +95,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
   width: 24px;
   height: 24px;
   min-height: 32px;
@@ -100,7 +103,6 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: auto;
-  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -609,6 +611,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -625,6 +629,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
   width: 24px;
   height: 24px;
   min-height: 32px;
@@ -632,7 +637,6 @@ exports[`Table renders number values automatically if undefined 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: auto;
-  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1034,6 +1038,8 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1050,12 +1056,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
   min-height: 24px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1299,6 +1305,8 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1315,12 +1323,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
   min-height: 24px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;

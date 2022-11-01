@@ -3,6 +3,8 @@
 exports[`IconButton renders Icon Button in loading State 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -19,6 +21,7 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -28,7 +31,6 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -39,7 +41,6 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   background-color: #D5E0FC;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -119,6 +120,8 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
 exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -135,6 +138,7 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -144,7 +148,6 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -155,7 +158,6 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -269,6 +271,8 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 exports[`IconButton renders Large Icon Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -285,6 +289,7 @@ exports[`IconButton renders Large Icon Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
@@ -294,7 +299,6 @@ exports[`IconButton renders Large Icon Button 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -305,7 +309,6 @@ exports[`IconButton renders Large Icon Button 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -420,6 +423,8 @@ exports[`IconButton renders Large Icon Button 1`] = `
 exports[`IconButton renders Medium Icon Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -436,6 +441,7 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -445,7 +451,6 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -456,7 +461,6 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -571,6 +575,8 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 exports[`IconButton renders Small Icon Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -587,6 +593,7 @@ exports[`IconButton renders Small Icon Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -596,7 +603,6 @@ exports[`IconButton renders Small Icon Button 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -607,7 +613,6 @@ exports[`IconButton renders Small Icon Button 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -722,6 +727,8 @@ exports[`IconButton renders Small Icon Button 1`] = `
 exports[`IconButton renders icon button link when href passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -738,6 +745,7 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -747,7 +755,6 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -758,7 +765,6 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -873,6 +879,8 @@ exports[`IconButton renders icon button link when href passed 1`] = `
 exports[`IconButton renders icon button with logical prop overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -889,6 +897,7 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -900,9 +909,6 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
-  margin-block: 30px;
-  padding-inline: 20px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -913,10 +919,7 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
-  margin-block: 30px;
-  padding-inline: 20px;
 }
 
 .emotion-0 svg {
@@ -1030,6 +1033,8 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
 exports[`IconButton renders with different style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1046,6 +1051,7 @@ exports[`IconButton renders with different style preset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
@@ -1055,7 +1061,6 @@ exports[`IconButton renders with different style preset 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1069,7 +1074,6 @@ exports[`IconButton renders with different style preset 1`] = `
   border-width: 1px;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 

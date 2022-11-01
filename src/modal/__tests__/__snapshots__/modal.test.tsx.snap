@@ -347,6 +347,8 @@ exports[`Modal renders default 1`] = `
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -363,6 +365,7 @@ exports[`Modal renders default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -372,7 +375,6 @@ exports[`Modal renders default 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -383,7 +385,6 @@ exports[`Modal renders default 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -910,6 +911,8 @@ exports[`Modal renders inline 1`] = `
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -926,6 +929,7 @@ exports[`Modal renders inline 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -935,7 +939,6 @@ exports[`Modal renders inline 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -946,7 +949,6 @@ exports[`Modal renders inline 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1429,6 +1431,8 @@ exports[`Modal renders modal with overrides 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1445,6 +1449,7 @@ exports[`Modal renders modal with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -1454,7 +1459,6 @@ exports[`Modal renders modal with overrides 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1467,7 +1471,6 @@ exports[`Modal renders modal with overrides 1`] = `
   border-color: #97D0D6;
   background-color: transparent;
   border-radius: 50%;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2012,6 +2015,8 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2028,6 +2033,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -2037,7 +2043,6 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2048,7 +2053,6 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2599,6 +2603,8 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2615,6 +2621,7 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -2624,7 +2631,6 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2635,7 +2641,6 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3136,6 +3141,8 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-6 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3152,6 +3159,7 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -3161,7 +3169,6 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3172,7 +3179,6 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3700,6 +3706,8 @@ exports[`Modal renders with different closePosition 1`] = `
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -3716,6 +3724,7 @@ exports[`Modal renders with different closePosition 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -3725,7 +3734,6 @@ exports[`Modal renders with different closePosition 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3736,7 +3744,6 @@ exports[`Modal renders with different closePosition 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4269,6 +4276,8 @@ exports[`Modal renders with logical padding props 1`] = `
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4285,6 +4294,7 @@ exports[`Modal renders with logical padding props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -4294,7 +4304,6 @@ exports[`Modal renders with logical padding props 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4305,7 +4314,6 @@ exports[`Modal renders with logical padding props 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5222,6 +5230,8 @@ exports[`Modal renders without header 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -5238,6 +5248,7 @@ exports[`Modal renders without header 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -5247,7 +5258,6 @@ exports[`Modal renders without header 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5258,7 +5268,6 @@ exports[`Modal renders without header 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6062,6 +6071,8 @@ exports[`Modal renders without overlay 1`] = `
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6078,6 +6089,7 @@ exports[`Modal renders without overlay 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -6087,7 +6099,6 @@ exports[`Modal renders without overlay 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6098,7 +6109,6 @@ exports[`Modal renders without overlay 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6606,6 +6616,8 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
 }
 
 .emotion-6 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6622,6 +6634,7 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
@@ -6631,7 +6644,6 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   text-decoration: none;
   min-height: auto;
   min-width: auto;
-  padding: 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6642,7 +6654,6 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 

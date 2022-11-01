@@ -226,6 +226,8 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -242,12 +244,12 @@ exports[`Card renders actions section with given component 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -335,6 +337,8 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -351,6 +355,7 @@ exports[`Card renders actions section with given component 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -358,7 +363,6 @@ exports[`Card renders actions section with given component 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -369,7 +373,6 @@ exports[`Card renders actions section with given component 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -592,6 +595,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -608,12 +613,12 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -701,6 +706,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -717,6 +724,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -724,7 +732,6 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -735,7 +742,6 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -958,6 +964,8 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-7 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -974,12 +982,12 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1067,6 +1075,8 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1083,6 +1093,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -1090,7 +1101,6 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1101,7 +1111,6 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2623,6 +2632,8 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -2639,12 +2650,12 @@ exports[`Card renders with card items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2732,6 +2743,8 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-13 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2748,6 +2761,7 @@ exports[`Card renders with card items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -2755,7 +2769,6 @@ exports[`Card renders with card items 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2766,7 +2779,6 @@ exports[`Card renders with card items 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4609,6 +4621,8 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-8 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -4625,12 +4639,12 @@ exports[`Card with href renders correctly with actions 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4718,6 +4732,8 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -4734,6 +4750,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -4741,7 +4758,6 @@ exports[`Card with href renders correctly with actions 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4752,7 +4768,6 @@ exports[`Card with href renders correctly with actions 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6423,6 +6438,8 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -6439,12 +6456,12 @@ exports[`CardInset renders with card items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6532,6 +6549,8 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-13 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -6548,6 +6567,7 @@ exports[`CardInset renders with card items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -6555,7 +6575,6 @@ exports[`CardInset renders with card items 1`] = `
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6566,7 +6585,6 @@ exports[`CardInset renders with card items 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 

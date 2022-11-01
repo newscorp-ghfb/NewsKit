@@ -144,6 +144,8 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -160,12 +162,12 @@ exports[`Meta renders with mandatory props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
   min-height: 24px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -332,6 +334,8 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-24 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -348,6 +352,7 @@ exports[`Meta renders with mandatory props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   width: 100%;
   min-width: 176px;
   min-height: 44px;
@@ -356,7 +361,6 @@ exports[`Meta renders with mandatory props 1`] = `
   text-decoration: none;
   min-height: 44px;
   min-width: auto;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -370,7 +374,6 @@ exports[`Meta renders with mandatory props 1`] = `
   border-width: 1px;
   border-radius: 24px;
   color: #2E3F54;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1134,6 +1137,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -1150,12 +1155,12 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
   min-height: 24px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1322,6 +1327,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-24 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -1338,6 +1345,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   width: 100%;
   min-width: 176px;
   min-height: 44px;
@@ -1346,7 +1354,6 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   text-decoration: none;
   min-height: 44px;
   min-width: auto;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1360,7 +1367,6 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   border-width: 1px;
   border-radius: 24px;
   color: #2E3F54;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2205,6 +2211,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-9 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -2221,12 +2229,12 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
   min-height: 24px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2518,6 +2526,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-30 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
@@ -2534,6 +2544,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
   width: 100%;
   min-width: 176px;
   min-height: 44px;
@@ -2542,7 +2553,6 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   text-decoration: none;
   min-height: 44px;
   min-width: auto;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2556,7 +2566,6 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   border-width: 1px;
   border-radius: 24px;
   color: #2E3F54;
-  margin: 0;
   cursor: pointer;
 }
 

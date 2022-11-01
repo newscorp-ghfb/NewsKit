@@ -172,6 +172,8 @@ exports[`Icons IconFilledAAA icon renders as expected 1`] = `
 exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -188,6 +190,7 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
   width: 32px;
   height: 32px;
   min-height: 32px;
@@ -195,7 +198,6 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: auto;
-  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -380,6 +382,8 @@ exports[`Icons IconFilledCircle icon renders as expected 1`] = `
 exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   -webkit-column-gap: 4px;
   column-gap: 4px;
@@ -396,6 +400,7 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
   width: 32px;
   height: 32px;
   min-height: 32px;
@@ -403,7 +408,6 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: auto;
-  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
