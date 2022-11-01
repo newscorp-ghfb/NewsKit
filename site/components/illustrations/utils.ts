@@ -1,10 +1,8 @@
 import {SVGAttributes} from 'react';
 import {Theme} from '../../../src/theme';
 
-export const toCSSVar = (
-  theme: Theme,
-  props: SVGAttributes<SVGPathElement>,
-) => {
+// @ts-ignore
+export const toCSSVar = (theme: Theme, props) => {
   const inlineStyle = {} as SVGAttributes<SVGPathElement>;
   const newProps = {...props};
 
