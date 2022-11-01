@@ -7,8 +7,10 @@ import {TemplateProps} from './types';
 import {HeadNextSeo} from '../components/head-next-seo';
 
 const WrapperWithPadding = styled.div`
+  /*
   padding-top: ${getSizingFromTheme('sizing090')};
   padding-bottom: ${getSizingFromTheme('sizing090')};
+  */
 `;
 
 export const PageTemplate: React.FC<TemplateProps> = ({

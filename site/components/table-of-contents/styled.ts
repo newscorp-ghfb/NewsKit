@@ -11,6 +11,7 @@ export const StyledTableOfContents = styled(Block)`
   position: fixed;
   transition: 0.2s top, bottom ease-in;
   will-change: top, bottom;
+  ${getSizingCssFromTheme('top', 'sizing120')}
 `;
 
 export const StyledContentsNavItem = styled(Link)<{

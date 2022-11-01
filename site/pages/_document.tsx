@@ -19,6 +19,7 @@ export default class MyDocument extends Document {
     const isSiteEnvProduction = process.env.SITE_ENV === 'production';
 
     const helmet = Helmet.rewind();
+
     return (
       <Html lang="en">
         <Head>
@@ -58,11 +59,6 @@ export default class MyDocument extends Document {
                     outline: 7px solid red;
                     outline-offset: 7px;
               }`}
-
-              html {
-                scroll-behavior: smooth;
-                scroll-padding-top: 90px;
-              }
               @font-face {
                 font-family: 'DM Sans';
                 src: url('static/fonts/dmsans-regular-webfont.woff2')
@@ -243,6 +239,10 @@ export default class MyDocument extends Document {
                 font-style: normal;
                 font-weight: 500;
                 font-display: swap;
+              }
+
+              html {
+                scroll-padding-top: 160px;
               }
             `}
           />

@@ -18,7 +18,9 @@ export const IntroductionSection: React.FC<IntroductionSectionProps> = ({
   meta,
 }) => (
   <Cell xs={12}>
+    {/* Extra spacing from the top, could be removed if html global can add MQ sizing */}
     <Block spaceStack={{xs: 'space000', md: 'space030', lg: 'space070'}} />
+
     <StyledSection id="introduction" data-toc-indexed="Introduction">
       <Grid xsMargin="space000" xsRowGutter="space000">
         <PageIntroduction {...pageIntroduction} />
