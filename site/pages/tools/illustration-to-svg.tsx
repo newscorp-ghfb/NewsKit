@@ -56,6 +56,7 @@ if (typeof window === 'undefined' && RUN) {
       const Component = getComponent(importedComponent);
 
       if (!Component) {
+        // eslint-disable-next-line no-console
         console.log(`no default for:${importPaths[indx]}`);
       }
 
@@ -104,7 +105,9 @@ if (typeof window === 'undefined' && RUN) {
       fs.writeFileSync(fullPath, svgContent, {flag: 'w'});
     });
 
+    // eslint-disable-next-line no-console
     console.log('Total files with mask', maskCounter);
+    // eslint-disable-next-line no-console
     console.log(listOfPaths);
     // fs.writeFileSync('./list.txt', listOfPaths.join('\n'), {flag: 'w'});
   })();
