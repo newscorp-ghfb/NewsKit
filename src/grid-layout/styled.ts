@@ -1,6 +1,11 @@
 import {Theme} from '../theme';
 import {logicalProps} from '../utils/logical-properties';
-import {getResponsiveSize, handleResponsiveProp, styled} from '../utils/style';
+import {
+  getResponsiveSize,
+  getStylePreset,
+  handleResponsiveProp,
+  styled,
+} from '../utils/style';
 import {GridLayoutProps} from './types';
 
 const GRID_DEFAULT_PROPS = {
@@ -14,6 +19,9 @@ const GRID_DEFAULT_PROPS = {
   alignItems: undefined,
   areas: undefined,
   inline: false,
+  autoFlow: undefined,
+  autoRows: undefined,
+  autoColumns: undefined,
 };
 
 const mapTemplate = (theme: Theme, templateString?: string) =>
@@ -60,6 +68,27 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
   }))};
 
   ${handleResponsiveProp(
+    {autoFlow: GRID_DEFAULT_PROPS.autoFlow},
+    ({autoFlow}, {theme}) => ({
+      gridAutoFlow: mapTemplate(theme, autoFlow),
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {autoRows: GRID_DEFAULT_PROPS.autoRows},
+    ({autoRows}, {theme}) => ({
+      gridAutoRows: mapTemplate(theme, autoRows),
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {autoColumns: GRID_DEFAULT_PROPS.autoColumns},
+    ({autoColumns}, {theme}) => ({
+      gridAutoColumns: mapTemplate(theme, autoColumns),
+    }),
+  )}
+
+  ${handleResponsiveProp(
     {justifyContent: GRID_DEFAULT_PROPS.justifyContent},
     ({justifyContent}) => ({
       justifyContent,
@@ -86,6 +115,7 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
       alignItems,
     }),
   )}
+
   
   ${getResponsiveSize('width', 'gridLayout', '', 'width')};
   ${getResponsiveSize('minWidth', 'gridLayout', '', 'minWidth')};
@@ -93,5 +123,6 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
   ${getResponsiveSize('height', 'gridLayout', '', 'height')};
   ${getResponsiveSize('minHeight', 'gridLayout', '', 'minHeight')};
   ${getResponsiveSize('maxHeight', 'gridLayout', '', 'maxHeight')};
+  ${getStylePreset('')};
   ${logicalProps('gridLayout')}
 `;

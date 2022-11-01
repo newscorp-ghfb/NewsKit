@@ -222,6 +222,71 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
             ],
           },
           {
+            name: 'autoFlow',
+            propName: 'autoFlow',
+            options: [
+              {
+                label: 'row',
+                value: 'row',
+                isDefault: true,
+              },
+              {
+                label: 'column',
+                value: 'column',
+              },
+              {
+                label: 'dense',
+                value: 'dense',
+              },
+            ],
+          },
+          {
+            name: 'autoColumns',
+            propName: 'autoColumns',
+            options: [
+              {
+                label: 'none',
+                value: '',
+                isDefault: true,
+              },
+              {
+                label: 'auto',
+                value: 'auto',
+              },
+              {
+                label: '100px',
+                value: '100px',
+              },
+              {
+                label: 'minmax(100px, auto)',
+                value: 'minmax(100px, auto)',
+              },
+            ],
+          },
+          {
+            name: 'autoRows',
+            propName: 'autoRows',
+            options: [
+              {
+                label: 'none',
+                value: '',
+                isDefault: true,
+              },
+              {
+                label: 'auto',
+                value: 'auto',
+              },
+              {
+                label: '10%',
+                value: '10%',
+              },
+              {
+                label: 'minmax(20px, auto)',
+                value: 'minmax(20px, auto)',
+              },
+            ],
+          },
+          {
             name: 'rowGap',
             propName: 'rowGap',
             options: [
@@ -459,6 +524,60 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
               required: null,
             },
             {
+              name: 'autoFlow',
+              type: 'MQ<string>',
+              description: (
+                <>
+                  Controls how the auto-placement algorithm works, specifying
+                  exactly how auto-placed items get flowed into the grid, using
+                  the <InlineCode>grid-auto-flow</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
+              required: null,
+            },
+            {
+              name: 'autoRows',
+              type: 'MQ<string>',
+              description: (
+                <>
+                  Specifies the size of an implicitly-created grid row track or
+                  pattern of tracks, using the{' '}
+                  <InlineCode>grid-auto-rows</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
+              required: null,
+            },
+            {
+              name: 'autoColumns',
+              type: 'MQ<string>',
+              description: (
+                <>
+                  Specifies the size of an implicitly-created grid column track
+                  or pattern of tracks, using the{' '}
+                  <InlineCode>grid-auto-columns</InlineCode>{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns"
+                    target="_blank"
+                  >
+                    css property.
+                  </Link>
+                </>
+              ),
+              required: null,
+            },
+            {
               name: 'justifyContent',
               type: 'MQ<string>',
               description: (
@@ -607,6 +726,13 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
               default: '',
               description:
                 'If provided, this overrides the maxHeight of the Grid.',
+            },
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              default: '',
+              description:
+                'If provided, this overrides the stylePreset of the Grid.',
             },
           ],
         },

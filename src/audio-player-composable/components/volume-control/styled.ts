@@ -1,7 +1,6 @@
 import {GridLayout} from '../../../grid-layout';
 import {
   getResponsiveSize,
-  getStylePreset,
   styled,
   getResponsiveSpace,
 } from '../../../utils/style';
@@ -52,7 +51,6 @@ export const StyledVolumeSliderPopupContainer = styled.div<
 export const StyledGridLayout = styled(GridLayout)<
   Pick<AudioPlayerVolumeControlProps, 'overrides'>
 >`
-  ${getStylePreset(`audioPlayerVolumeControl`, '')};
   ${getResponsiveSpace(
     'columnGap',
     `audioPlayerVolumeControl.spaceBetween`,
