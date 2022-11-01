@@ -30,7 +30,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Actions & Inputs',
-      name: 'Share Bar (deprecated)',
+      name: 'Share Bar',
       hero: {
         illustration: 'components/share-bar/share-bar-illustration',
       },

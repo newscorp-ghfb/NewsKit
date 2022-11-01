@@ -25,7 +25,13 @@ Object.entries(routes).forEach(route => {
           easing: 'linear',
         });
       }
-      cy.eyesCheckWindow(`${pageName} page`);
+      cy.eyesCheckWindow({
+        tag: `${pageName} page`,
+        ignore: {
+          selector:
+            'a[href^="https://github.com/newscorp-ghfb/newskit/releases/tag/"]',
+        },
+      });
       cy.eyesClose();
     });
   });

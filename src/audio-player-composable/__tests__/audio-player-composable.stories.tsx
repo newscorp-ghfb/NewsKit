@@ -563,6 +563,9 @@ StoryAudioPlayer.parameters = {
   eyes: {
     waitBeforeCapture: '#storyAudioPlayerReady',
   },
+  percy: {
+    waitForSelector: '#storyAudioPlayerReady',
+  },
 };
 
 export const StoryAudioSubComponents = () => {
@@ -694,6 +697,7 @@ export const StoryAudioSubComponents = () => {
 StoryAudioSubComponents.storyName = 'audio-player-sub-components';
 StoryAudioSubComponents.parameters = {
   eyes: {waitBeforeCapture: '#storyAudioSubComponentsReady'},
+  percy: {waitForSelector: '#storyAudioSubComponentsReady'},
 };
 
 export const StoryAudioPlayerWithInitialProps = () => {
@@ -762,6 +766,7 @@ export const StoryAudioPlayerWithInitialProps = () => {
 StoryAudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
 StoryAudioPlayerWithInitialProps.parameters = {
   eyes: {waitBeforeCapture: '#storyAudioPlayerWithInitialPropsReady'},
+  percy: {waitForSelector: '#storyAudioPlayerWithInitialPropsReady'},
 };
 export const StoryAudioPlayerOverrides = () => {
   const breakpointKey = useBreakpointKey();
@@ -1088,6 +1093,7 @@ export const StoryAudioPlayerOverrides = () => {
 StoryAudioPlayerOverrides.storyName = 'audio-player-overrides';
 StoryAudioPlayerOverrides.parameters = {
   eyes: {waitBeforeCapture: '#storyAudioPlayerOverridesReady'},
+  percy: {waitForSelector: '#storyAudioPlayerOverridesReady'},
 };
 
 export const StoryAudioPlayerAutoplay = () => (
@@ -1097,7 +1103,10 @@ export const StoryAudioPlayerAutoplay = () => (
   </StyledPage>
 );
 StoryAudioPlayerAutoplay.storyName = 'audio-player-play-autoplay';
-StoryAudioPlayerAutoplay.parameters = {eyes: {include: false}};
+StoryAudioPlayerAutoplay.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryAudioPlayerPlaybackSpeedTriggerButton = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(2);
@@ -1141,6 +1150,9 @@ StoryAudioPlayerPlaybackSpeedTriggerButton.storyName =
 StoryAudioPlayerPlaybackSpeedTriggerButton.parameters = {
   eyes: {
     waitBeforeCapture: '#storyAudioPlayerPlaybackSpeedTriggerButtonReady',
+  },
+  percy: {
+    waitForSelector: '#storyAudioPlayerPlaybackSpeedTriggerButtonReady',
   },
 };
 
@@ -1342,7 +1354,10 @@ export const StoryAudioPlayerKeyboard = () => (
   </StyledPage>
 );
 StoryAudioPlayerKeyboard.storyName = 'audio-player-keyboard-shortcuts';
-StoryAudioPlayerKeyboard.parameters = {eyes: {include: false}};
+StoryAudioPlayerKeyboard.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryAudioPlayerVolumeControlLayout = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
@@ -1394,6 +1409,7 @@ StoryAudioPlayerVolumeControlLayout.storyName =
   'audio-player-volume-control-layout';
 StoryAudioPlayerVolumeControlLayout.parameters = {
   eyes: {waitBeforeCapture: '#storyAudioPlayerVolumeControlLayoutReady'},
+  percy: {waitForSelector: '#storyAudioPlayerVolumeControlLayoutReady'},
 };
 
 export const StoryAudioPlayerLoadingState = () => (
