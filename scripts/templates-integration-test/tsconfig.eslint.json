@@ -1,3 +1,3 @@
 {
-  "include": ["", ".eslintrc.js"]
+  "include": ["/pages", ".eslintrc.js"]
 }

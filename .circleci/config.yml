@@ -1038,13 +1038,13 @@ jobs:
             cd dist
             yalc publish
             cd ..
-            npx create-next-app newskit-integration-test --no-eslint --js
+            npx create-next-app@latest newskit-integration-test
       - run:
           name: Prepare the NextJs app
           command: |
             echo "Adding nedded files into the NextJs app"
 
-            cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
+            cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.tsx
             cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
             cp ./scripts/templates-integration-test/.eslintrc.txt ./newskit-integration-test/.eslintrc.js
             cp ./scripts/templates-integration-test/tsconfig.eslint.json ./newskit-integration-test/tsconfig.eslint.json
