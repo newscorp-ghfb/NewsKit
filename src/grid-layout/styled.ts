@@ -76,15 +76,15 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
 
   ${handleResponsiveProp(
     {autoRows: GRID_DEFAULT_PROPS.autoRows},
-    ({autoRows}) => ({
-      gridAutoRows: autoRows,
+    ({autoRows}, {theme}) => ({
+      gridAutoRows: mapTemplate(theme, autoRows),
     }),
   )}
 
   ${handleResponsiveProp(
     {autoColumns: GRID_DEFAULT_PROPS.autoColumns},
-    ({autoColumns}) => ({
-      gridAutoColumns: autoColumns,
+    ({autoColumns}, {theme}) => ({
+      gridAutoColumns: mapTemplate(theme, autoColumns),
     }),
   )}
 

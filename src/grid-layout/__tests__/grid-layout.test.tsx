@@ -216,7 +216,7 @@ describe('GridLayout', () => {
   test('renders a grid with autoRows', () => {
     const props: GridLayoutProps = {
       areas: 'a a',
-      autoRows: '100px',
+      autoRows: 'sizing100',
       columnGap: '20px',
       rowGap: '20px',
       children: defaultChildren,
@@ -229,7 +229,7 @@ describe('GridLayout', () => {
   test('renders a grid with autoColumns', () => {
     const props: GridLayoutProps = {
       areas: 'a a',
-      autoColumns: '100px',
+      autoColumns: 'sizing100',
       columnGap: '20px',
       rowGap: '20px',
       children: defaultChildren,
