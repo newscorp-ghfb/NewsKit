@@ -134,24 +134,34 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -162,7 +172,6 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -224,36 +233,6 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -263,7 +242,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -271,14 +250,14 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -322,36 +301,28 @@ exports[`Popover close button applies logical prop overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -514,24 +485,34 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 }
 
 .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -542,7 +523,6 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   background-color: #820000;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -572,36 +552,6 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -611,7 +561,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -619,7 +569,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -662,30 +612,22 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-7"
+            <svg
+              aria-hidden="true"
+              class="emotion-7 emotion-8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-8"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-9 emotion-10"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -828,24 +770,34 @@ exports[`Popover close button should show left-aligned 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -856,7 +808,6 @@ exports[`Popover close button should show left-aligned 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -918,36 +869,6 @@ exports[`Popover close button should show left-aligned 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -957,7 +878,7 @@ exports[`Popover close button should show left-aligned 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -965,7 +886,7 @@ exports[`Popover close button should show left-aligned 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1001,30 +922,22 @@ exports[`Popover close button should show left-aligned 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -1167,24 +1080,34 @@ exports[`Popover close button should show right-aligned 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1195,7 +1118,6 @@ exports[`Popover close button should show right-aligned 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1257,36 +1179,6 @@ exports[`Popover close button should show right-aligned 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1296,7 +1188,7 @@ exports[`Popover close button should show right-aligned 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1304,7 +1196,7 @@ exports[`Popover close button should show right-aligned 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1340,30 +1232,22 @@ exports[`Popover close button should show right-aligned 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -1506,24 +1390,34 @@ exports[`Popover content applies logical prop overrides 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1534,7 +1428,6 @@ exports[`Popover content applies logical prop overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1596,36 +1489,6 @@ exports[`Popover content applies logical prop overrides 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1635,7 +1498,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1643,14 +1506,14 @@ exports[`Popover content applies logical prop overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -1694,36 +1557,28 @@ exports[`Popover content applies logical prop overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -1887,24 +1742,34 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 }
 
 .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1915,7 +1780,6 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1977,36 +1841,6 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2016,7 +1850,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2024,7 +1858,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2067,30 +1901,22 @@ exports[`Popover content applies stylePreset overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-7"
+            <svg
+              aria-hidden="true"
+              class="emotion-7 emotion-8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-8"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-9 emotion-10"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -2233,24 +2059,34 @@ exports[`Popover content applies typography preset overrides 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2261,7 +2097,6 @@ exports[`Popover content applies typography preset overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2323,36 +2158,6 @@ exports[`Popover content applies typography preset overrides 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2362,7 +2167,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2370,14 +2175,14 @@ exports[`Popover content applies typography preset overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -2421,36 +2226,28 @@ exports[`Popover content applies typography preset overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -2613,24 +2410,34 @@ exports[`Popover header applies logical prop overrides 1`] = `
 }
 
 .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2641,7 +2448,6 @@ exports[`Popover header applies logical prop overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2703,36 +2509,6 @@ exports[`Popover header applies logical prop overrides 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2742,7 +2518,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2750,14 +2526,14 @@ exports[`Popover header applies logical prop overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-11 {
+.emotion-9 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -2808,36 +2584,28 @@ exports[`Popover header applies logical prop overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-7"
+            <svg
+              aria-hidden="true"
+              class="emotion-7 emotion-8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-8"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-9 emotion-10"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-11"
+      class="emotion-9"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -3000,24 +2768,34 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 }
 
 .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3028,7 +2806,6 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3090,36 +2867,6 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3129,7 +2876,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3137,7 +2884,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3180,30 +2927,22 @@ exports[`Popover header applies stylePreset overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-7"
+            <svg
+              aria-hidden="true"
+              class="emotion-7 emotion-8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-8"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-9 emotion-10"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -3368,24 +3107,34 @@ exports[`Popover header applies typography preset overrides 1`] = `
 }
 
 .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3396,7 +3145,6 @@ exports[`Popover header applies typography preset overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3458,36 +3206,6 @@ exports[`Popover header applies typography preset overrides 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3497,7 +3215,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3505,14 +3223,14 @@ exports[`Popover header applies typography preset overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-11 {
+.emotion-9 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -3563,36 +3281,28 @@ exports[`Popover header applies typography preset overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-7"
+            <svg
+              aria-hidden="true"
+              class="emotion-7 emotion-8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-8"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-9 emotion-10"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-11"
+      class="emotion-9"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -3733,24 +3443,34 @@ exports[`Popover offset should be applied with pointer and px distance override 
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3761,7 +3481,6 @@ exports[`Popover offset should be applied with pointer and px distance override 
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3823,36 +3542,6 @@ exports[`Popover offset should be applied with pointer and px distance override 
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3862,7 +3551,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3870,14 +3559,14 @@ exports[`Popover offset should be applied with pointer and px distance override 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -3921,36 +3610,28 @@ exports[`Popover offset should be applied with pointer and px distance override 
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -4091,24 +3772,34 @@ exports[`Popover offset should be applied with pointer and token distance overri
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4119,7 +3810,6 @@ exports[`Popover offset should be applied with pointer and token distance overri
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4181,36 +3871,6 @@ exports[`Popover offset should be applied with pointer and token distance overri
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4220,7 +3880,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4228,14 +3888,14 @@ exports[`Popover offset should be applied with pointer and token distance overri
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -4279,36 +3939,28 @@ exports[`Popover offset should be applied with pointer and token distance overri
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -4449,24 +4101,34 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4477,7 +4139,6 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4539,36 +4200,6 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4578,7 +4209,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4586,14 +4217,14 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -4637,36 +4268,28 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -4807,24 +4430,34 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4835,7 +4468,6 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4897,36 +4529,6 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4936,7 +4538,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4944,14 +4546,14 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -4995,36 +4597,28 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -5165,24 +4759,34 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5193,7 +4797,6 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5255,36 +4858,6 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -5294,7 +4867,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5302,7 +4875,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5338,30 +4911,22 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -5504,24 +5069,34 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5532,7 +5107,6 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5594,36 +5168,6 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -5633,7 +5177,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5641,14 +5185,14 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -5692,36 +5236,28 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -5862,24 +5398,34 @@ exports[`Popover pointer padding should be applied with token distance override 
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5890,7 +5436,6 @@ exports[`Popover pointer padding should be applied with token distance override 
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5952,36 +5497,6 @@ exports[`Popover pointer padding should be applied with token distance override 
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -5991,7 +5506,7 @@ exports[`Popover pointer padding should be applied with token distance override 
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5999,14 +5514,14 @@ exports[`Popover pointer padding should be applied with token distance override 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -6050,36 +5565,28 @@ exports[`Popover pointer padding should be applied with token distance override 
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -6220,24 +5727,34 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6248,7 +5765,6 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6310,36 +5826,6 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -6349,7 +5835,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6357,14 +5843,14 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -6408,36 +5894,28 @@ exports[`Popover pointer padding should not be applied with invalid token distan
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -6578,24 +6056,34 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6606,7 +6094,6 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6668,36 +6155,6 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -6707,7 +6164,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6715,14 +6172,14 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -6766,36 +6223,28 @@ exports[`Popover pointer padding should not be applied with non-px distance over
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -6936,24 +6385,34 @@ exports[`Popover should render correct styles: default 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6964,7 +6423,6 @@ exports[`Popover should render correct styles: default 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -7026,36 +6484,6 @@ exports[`Popover should render correct styles: default 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -7065,7 +6493,7 @@ exports[`Popover should render correct styles: default 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7073,7 +6501,7 @@ exports[`Popover should render correct styles: default 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7109,30 +6537,22 @@ exports[`Popover should render correct styles: default 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -7286,24 +6706,34 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7314,7 +6744,6 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -7376,36 +6805,6 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -7415,7 +6814,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7423,7 +6822,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7459,30 +6858,22 @@ exports[`Popover should render correct styles: with overrides 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -7625,24 +7016,34 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7653,7 +7054,6 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -7715,36 +7115,6 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -7754,7 +7124,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7762,14 +7132,14 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -7813,36 +7183,28 @@ exports[`Popover should render correct styles: with pointer 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -7983,24 +7345,34 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8011,7 +7383,6 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -8073,36 +7444,6 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -8112,7 +7453,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8120,14 +7461,14 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -8171,36 +7512,28 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -8341,24 +7674,34 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8369,7 +7712,6 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -8431,36 +7773,6 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -8470,7 +7782,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8478,14 +7790,14 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -8529,36 +7841,28 @@ exports[`Popover should render correct styles: with pointer stylePreset override
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
@@ -8699,24 +8003,34 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8727,7 +8041,6 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3B3B3B;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -8789,36 +8102,6 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -8828,7 +8111,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8836,14 +8119,14 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-6 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-8 {
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -8887,36 +8170,28 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
             data-testid="close-button"
             type="button"
           >
-            <span
-              class="emotion-6"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span
-                class="emotion-7"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </span>
-            </span>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="emotion-10"
+      class="emotion-8"
       id="floating-MOCK-ID-pointer"
     />
   </div>
