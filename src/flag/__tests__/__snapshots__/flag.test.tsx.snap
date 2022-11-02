@@ -3,23 +3,30 @@
 exports[`Flag renders a flag with a custom stylePreset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -42,36 +49,6 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -82,13 +59,13 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -101,15 +78,7 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -118,23 +87,30 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
 exports[`Flag renders a flag with a custom typographyPreset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -157,36 +133,6 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -197,13 +143,13 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -216,15 +162,7 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -233,23 +171,30 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
 exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -272,36 +217,6 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -311,7 +226,7 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -319,19 +234,19 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3.emotion-3 {
+.emotion-1.emotion-1 {
   width: 16px;
   height: 16px;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -342,13 +257,13 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
   display: inline-block;
 }
 
-.emotion-6::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -358,38 +273,26 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-6"
-        >
-          Text
-        </span>
-      </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
+    <span
+      class="emotion-3"
+    >
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -398,23 +301,30 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
 exports[`Flag renders a flag with an icon and custom spacing between elements 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -437,36 +347,6 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -476,7 +356,7 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -484,19 +364,19 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3.emotion-3 {
+.emotion-1.emotion-1 {
   width: 16px;
   height: 16px;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -507,13 +387,13 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
   display: inline-block;
 }
 
-.emotion-6::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -523,38 +403,26 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
     class="emotion-0"
     data-testid="flag"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-6"
-        >
-          Text
-        </span>
-      </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
+    <span
+      class="emotion-3"
+    >
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -563,23 +431,30 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
 exports[`Flag renders a flag with custom presets when children is number 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -602,36 +477,6 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -642,13 +487,13 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -661,15 +506,7 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          1
-        </span>
-      </span>
+      1
     </span>
   </div>
 </DocumentFragment>
@@ -678,24 +515,32 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
 exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-width: 100px;
+  min-height: 100px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 100px;
   min-width: 100px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -718,36 +563,6 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -758,13 +573,13 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -777,15 +592,7 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -794,24 +601,32 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
 exports[`Flag renders a flag with fixed for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  padding: 8px 12px;
   width: 100px;
   height: 100px;
-  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -834,36 +649,6 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -874,13 +659,13 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -893,15 +678,7 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -910,23 +687,30 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
 exports[`Flag renders a flag with no paddings 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -949,36 +733,6 @@ exports[`Flag renders a flag with no paddings 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -989,13 +743,13 @@ exports[`Flag renders a flag with no paddings 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1008,15 +762,7 @@ exports[`Flag renders a flag with no paddings 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -1025,24 +771,32 @@ exports[`Flag renders a flag with no paddings 1`] = `
 exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 100%;
   min-width: 100%;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1065,36 +819,6 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1105,13 +829,13 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1124,15 +848,7 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -1141,24 +857,32 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
 exports[`Flag renders a flag with percentage for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  padding: 8px 12px;
   width: 100%;
   height: 100%;
-  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1181,36 +905,6 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1221,13 +915,13 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1240,15 +934,7 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -1257,24 +943,32 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
 exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-width: 160px;
+  min-height: 160px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 160px;
   min-width: 160px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1297,36 +991,6 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1337,13 +1001,13 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1356,15 +1020,7 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -1373,24 +1029,32 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
 exports[`Flag renders a flag with token set for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  padding: 8px 12px;
   width: 160px;
   height: 160px;
-  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1413,36 +1077,6 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1453,13 +1087,13 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1472,15 +1106,7 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -1489,23 +1115,30 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
 exports[`Flag renders a minimal flag with an icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1528,36 +1161,6 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1567,7 +1170,7 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1575,19 +1178,19 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3.emotion-3 {
+.emotion-1.emotion-1 {
   width: 16px;
   height: 16px;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1598,13 +1201,13 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
   display: inline-block;
 }
 
-.emotion-6::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1614,38 +1217,26 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-6"
-        >
-          Text
-        </span>
-      </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
+    <span
+      class="emotion-3"
+    >
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -1654,23 +1245,30 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 exports[`Flag renders a solid flag with an icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1693,36 +1291,6 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1732,7 +1300,7 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1740,19 +1308,19 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-1 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3.emotion-3 {
+.emotion-1.emotion-1 {
   width: 16px;
   height: 16px;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1763,13 +1331,13 @@ exports[`Flag renders a solid flag with an icon 1`] = `
   display: inline-block;
 }
 
-.emotion-6::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1779,38 +1347,26 @@ exports[`Flag renders a solid flag with an icon 1`] = `
     class="emotion-0"
     data-testid="flag"
   >
-    <span
-      class="emotion-1"
+    <svg
+      aria-hidden="true"
+      class="emotion-1 emotion-2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-6"
-        >
-          Text
-        </span>
-      </span>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
+    <span
+      class="emotion-3"
+    >
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -1819,23 +1375,30 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 exports[`Flag renders large Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-height: 40px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1858,36 +1421,6 @@ exports[`Flag renders large Flag 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -1898,13 +1431,13 @@ exports[`Flag renders large Flag 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1917,15 +1450,7 @@ exports[`Flag renders large Flag 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -1934,23 +1459,30 @@ exports[`Flag renders large Flag 1`] = `
 exports[`Flag renders medium Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1973,36 +1505,6 @@ exports[`Flag renders medium Flag 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2013,13 +1515,13 @@ exports[`Flag renders medium Flag 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2032,15 +1534,7 @@ exports[`Flag renders medium Flag 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -2049,23 +1543,30 @@ exports[`Flag renders medium Flag 1`] = `
 exports[`Flag renders small Flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
+  min-height: 24px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2088,36 +1589,6 @@ exports[`Flag renders small Flag 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -2128,13 +1599,13 @@ exports[`Flag renders small Flag 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2147,15 +1618,7 @@ exports[`Flag renders small Flag 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -2164,23 +1627,30 @@ exports[`Flag renders small Flag 1`] = `
 exports[`Flag renders with default stylePreset if supplied with invalid value 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2203,36 +1673,6 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2243,13 +1683,13 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2262,15 +1702,7 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -2279,23 +1711,30 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
 exports[`Flag renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2318,36 +1757,6 @@ exports[`Flag renders with default styles 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2358,13 +1767,13 @@ exports[`Flag renders with default styles 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2377,15 +1786,7 @@ exports[`Flag renders with default styles 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
@@ -2394,25 +1795,32 @@ exports[`Flag renders with default styles 1`] = `
 exports[`Flag renders with logical props overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-height: 32px;
+  margin-block: 30px;
+  padding-block: 30px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 8px 12px;
-  margin-block: 30px;
-  padding-block: 30px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2435,36 +1843,6 @@ exports[`Flag renders with logical props overrides 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2475,13 +1853,13 @@ exports[`Flag renders with logical props overrides 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2494,15 +1872,7 @@ exports[`Flag renders with logical props overrides 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Text
-        </span>
-      </span>
+      Text
     </span>
   </div>
 </DocumentFragment>
