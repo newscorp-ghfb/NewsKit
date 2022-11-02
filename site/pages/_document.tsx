@@ -2,9 +2,10 @@
 
 import * as React from 'react';
 import Document, {Head, Main, NextScript, Html} from 'next/document';
-import {Global, css, Consent, Tealium} from 'newskit';
+import {Global, css, Consent, Tealium, Breakpoints} from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
+import {breakpoints, sizing} from '../../src/theme/foundations';
 
 // Is added so relative paths work when we are on a sub dir e.g. s-3.com/ppdsc-123-foo/
 const baseHref =
@@ -20,6 +21,9 @@ export default class MyDocument extends Document {
 
     const helmet = Helmet.rewind();
 
+    const mq = (bp: keyof Breakpoints) =>
+      `@media (min-width: ${breakpoints[bp]}px)`;
+
     return (
       <Html lang="en">
         <Head>
@@ -33,8 +37,34 @@ export default class MyDocument extends Document {
             body {
               margin: 0;
             }
+
+
+            html {
+              scroll-padding-top: calc(var(--heading-size) + var(--page-offset))
+            }
+
+            ${mq('xs')} {
+              html {
+                --heading-size: ${sizing.sizing080};
+                --page-offset: ${sizing.sizing080};
+              }
+            }
+            ${mq('md')} {
+              html {
+                --heading-size: ${sizing.sizing080};
+                --page-offset: ${sizing.sizing090};
+              }
+            }
+            ${mq('lg')} {
+              html {
+                --heading-size: ${sizing.sizing100};
+                --page-offset: ${sizing.sizing100};
+              }
+            }
+
             `}
           </style>
+
           {helmet.script.toComponent()}
           <HTMLMeta />
           {isSiteEnvProduction && (
@@ -239,10 +269,6 @@ export default class MyDocument extends Document {
                 font-style: normal;
                 font-weight: 500;
                 font-display: swap;
-              }
-
-              html {
-                scroll-padding-top: 160px;
               }
             `}
           />
