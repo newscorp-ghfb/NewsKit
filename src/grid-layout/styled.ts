@@ -1,6 +1,11 @@
 import {Theme} from '../theme';
 import {logicalProps} from '../utils/logical-properties';
-import {getResponsiveSize, handleResponsiveProp, styled} from '../utils/style';
+import {
+  getResponsiveSize,
+  getResponsiveSpace,
+  handleResponsiveProp,
+  styled,
+} from '../utils/style';
 import {GridLayoutProps} from './types';
 
 const GRID_DEFAULT_PROPS = {
@@ -23,6 +28,9 @@ const mapTemplate = (theme: Theme, templateString?: string) =>
     .join(' ');
 
 export const StyledGridLayout = styled.div<GridLayoutProps>`
+  margin: 0;
+  padding: 0;
+
   ${handleResponsiveProp({inline: GRID_DEFAULT_PROPS.inline}, ({inline}) => ({
     display: inline ? 'inline-grid' : 'grid',
   }))}
@@ -86,7 +94,11 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
       alignItems,
     }),
   )}
-  
+
+
+
+  ${/* LOGICAL_PROPS_TO_DO: spaceInset to be removed. */ ''}
+  ${getResponsiveSpace('padding', '', '', 'spaceInset')};
   ${getResponsiveSize('width', 'gridLayout', '', 'width')};
   ${getResponsiveSize('minWidth', 'gridLayout', '', 'minWidth')};
   ${getResponsiveSize('maxWidth', 'gridLayout', '', 'maxWidth')};

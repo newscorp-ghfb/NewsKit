@@ -34,6 +34,10 @@ export type GridLayoutProps = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   as?: React.ElementType<any>;
   overrides?: {
+    /**
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
+     */
+    spaceInset?: MQ<string>;
     width?: MQ<string>;
     minWidth?: MQ<string>;
     maxWidth?: MQ<string>;

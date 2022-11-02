@@ -144,23 +144,30 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-9 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
+  min-height: 24px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -184,40 +191,10 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-11 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-12 {
   padding: 4px;
 }
 
-.emotion-13 {
+.emotion-11 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -227,19 +204,19 @@ exports[`Meta renders with mandatory props 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-13::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-13::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-14 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -250,12 +227,12 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-15 {
+  .emotion-13 {
     margin-right: 32px;
   }
 }
 
-.emotion-16 {
+.emotion-14 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -266,7 +243,7 @@ exports[`Meta renders with mandatory props 1`] = `
   height: 100%;
 }
 
-.emotion-18 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -287,7 +264,7 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-bottom: calc(-24px/2);
 }
 
-.emotion-19 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -296,7 +273,7 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-bottom: calc(24px/2);
 }
 
-.emotion-23 {
+.emotion-21 {
   margin: 0;
   color: #3358CC;
   font-family: "Poppins",sans-serif;
@@ -307,23 +284,23 @@ exports[`Meta renders with mandatory props 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-23 svg {
+.emotion-21 svg {
   fill: #3358CC;
 }
 
-.emotion-23::before {
+.emotion-21::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-23::after {
+.emotion-21::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-24 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -344,7 +321,7 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-right: calc(-16px/2);
 }
 
-.emotion-25 {
+.emotion-23 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -356,25 +333,34 @@ exports[`Meta renders with mandatory props 1`] = `
   align-self: stretch;
 }
 
-.emotion-26 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-24 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  width: 100%;
+  min-width: 176px;
+  min-height: 44px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 44px;
-  width: 100%;
-  padding: 8px 12px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -388,39 +374,38 @@ exports[`Meta renders with mandatory props 1`] = `
   border-width: 1px;
   border-radius: 24px;
   color: #2E3F54;
-  margin: 0;
   cursor: pointer;
 }
 
-.emotion-26 svg {
+.emotion-24 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-26 svg {
+.emotion-24 svg {
   fill: #2E3F54;
 }
 
-.emotion-26:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   background-color: #F0F1F3;
   border-color: #15263E;
 }
 
-.emotion-26:active:not(:disabled) {
+.emotion-24:active:not(:disabled) {
   background-color: #DEE2E5;
   border-color: #09111C;
 }
 
-.emotion-26:disabled {
+.emotion-24:disabled {
   border-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-26:disabled svg {
+.emotion-24:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-26:focus-visible:not(:disabled) {
+.emotion-24:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -429,14 +414,14 @@ exports[`Meta renders with mandatory props 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-26:focus-visible:not(:disabled) {
+    .emotion-24:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-26 {
+  .emotion-24 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -444,51 +429,21 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-26 {
+  .emotion-24 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-27 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-28 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-29 {
+.emotion-25 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-29 {
+  .emotion-25 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -496,14 +451,14 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-29 {
+  .emotion-25 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-31 {
+.emotion-26 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -514,19 +469,19 @@ exports[`Meta renders with mandatory props 1`] = `
   display: inline-block;
 }
 
-.emotion-31::before {
+.emotion-26::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-31::after {
+.emotion-26::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-32 {
+.emotion-27 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -535,11 +490,11 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-right: calc(16px/2);
 }
 
-.emotion-33 {
+.emotion-28 {
   margin-bottom: 24px;
 }
 
-.emotion-34 {
+.emotion-29 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -550,36 +505,36 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-35 {
+  .emotion-30 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-35 {
+  .emotion-30 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-35 {
+  .emotion-30 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-35 {
+  .emotion-30 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-35 {
+  .emotion-30 {
     display: none;
   }
 }
 
-.emotion-37 {
+.emotion-32 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -591,7 +546,7 @@ exports[`Meta renders with mandatory props 1`] = `
   align-self: stretch;
 }
 
-.emotion-38 {
+.emotion-33 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -601,7 +556,7 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-38 {
+  .emotion-33 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 50%;
@@ -612,17 +567,17 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-38 {
+  .emotion-33 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-52 {
+.emotion-45 {
   margin-right: 32px;
 }
 
-.emotion-53 {
+.emotion-46 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -643,19 +598,19 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-53:before,
-.emotion-53:after {
+.emotion-46:before,
+.emotion-46:after {
   content: '';
   display: block;
 }
 
-.emotion-61 {
+.emotion-54 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-62 {
+.emotion-55 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -673,36 +628,36 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-62 {
+  .emotion-55 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-62 {
+  .emotion-55 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-62 {
+  .emotion-55 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-62 {
+  .emotion-55 {
     margin: -24px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-62 {
+  .emotion-55 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-63 {
+.emotion-56 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -712,7 +667,7 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-63 {
+  .emotion-56 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -723,7 +678,7 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-63 {
+  .emotion-56 {
     padding: 0 12px;
     margin-top: 24px;
   }
@@ -764,46 +719,38 @@ exports[`Meta renders with mandatory props 1`] = `
                 class="emotion-9"
                 data-testid="flag"
               >
-                <span
+                <div
                   class="emotion-10"
                 >
-                  <span
+                  <p
                     class="emotion-11"
                   >
-                    <div
-                      class="emotion-12"
-                    >
-                      <p
-                        class="emotion-13"
-                      >
-                        Supported
-                      </p>
-                    </div>
-                  </span>
-                </span>
+                    Supported
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-14"
+            class="emotion-12"
           >
             <div
-              class="emotion-15"
+              class="emotion-13"
             />
             <hr
               aria-hidden="true"
-              class="emotion-16"
+              class="emotion-14"
               data-testid="divider"
             />
             <div
-              class="emotion-15"
+              class="emotion-13"
             />
           </div>
           <div
-            class="emotion-18"
+            class="emotion-16"
           >
             <div
-              class="emotion-19"
+              class="emotion-17"
             >
               <section
                 class="emotion-6"
@@ -816,10 +763,10 @@ exports[`Meta renders with mandatory props 1`] = `
               </section>
             </div>
             <div
-              class="emotion-19"
+              class="emotion-17"
             >
               <p
-                class="emotion-23"
+                class="emotion-21"
               >
                 v0.1
               </p>
@@ -827,73 +774,61 @@ exports[`Meta renders with mandatory props 1`] = `
           </div>
         </div>
         <div
-          class="emotion-24"
+          class="emotion-22"
         >
           <div
-            class="emotion-25"
+            class="emotion-23"
           >
             <a
-              class="emotion-26"
+              class="emotion-24"
               data-testid="buttonLink"
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
-              <span
-                class="emotion-27"
+              <svg
+                aria-hidden="true"
+                class="emotion-25"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <span
-                  class="emotion-28"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-29"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="emotion-28"
-                >
-                  <span
-                    class="emotion-31"
-                  >
-                    View code
-                  </span>
-                </span>
+                <path
+                  d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <span
+                class="emotion-26"
+              >
+                View code
               </span>
             </a>
           </div>
           <div
-            class="emotion-32"
+            class="emotion-27"
           />
         </div>
       </div>
       <div
-        class="emotion-33"
+        class="emotion-28"
       />
       <hr
         aria-hidden="true"
-        class="emotion-34"
+        class="emotion-29"
         data-testid="divider"
       />
     </div>
     <div
-      class="emotion-35"
+      class="emotion-30"
     >
       <div
-        class="emotion-18"
+        class="emotion-16"
       >
         <div
-          class="emotion-37"
+          class="emotion-32"
         >
           <div
-            class="emotion-38"
+            class="emotion-33"
           >
             <div
               class="emotion-4"
@@ -918,49 +853,41 @@ exports[`Meta renders with mandatory props 1`] = `
                   class="emotion-9"
                   data-testid="flag"
                 >
-                  <span
+                  <div
                     class="emotion-10"
                   >
-                    <span
+                    <p
                       class="emotion-11"
                     >
-                      <div
-                        class="emotion-12"
-                      >
-                        <p
-                          class="emotion-13"
-                        >
-                          Supported
-                        </p>
-                      </div>
-                    </span>
-                  </span>
+                      Supported
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-38"
+            class="emotion-33"
           >
             <div
               class="emotion-3"
             >
               <hr
                 aria-hidden="true"
-                class="emotion-16"
+                class="emotion-14"
                 data-testid="divider"
               />
               <div
-                class="emotion-52"
+                class="emotion-45"
               />
               <div
-                class="emotion-53"
+                class="emotion-46"
               />
               <div
-                class="emotion-18"
+                class="emotion-16"
               >
                 <div
-                  class="emotion-19"
+                  class="emotion-17"
                 >
                   <section
                     class="emotion-6"
@@ -973,10 +900,10 @@ exports[`Meta renders with mandatory props 1`] = `
                   </section>
                 </div>
                 <div
-                  class="emotion-19"
+                  class="emotion-17"
                 >
                   <p
-                    class="emotion-23"
+                    class="emotion-21"
                   >
                     v0.1
                   </p>
@@ -986,71 +913,59 @@ exports[`Meta renders with mandatory props 1`] = `
           </div>
         </div>
         <div
-          class="emotion-37"
+          class="emotion-32"
         >
           <div
-            class="emotion-61"
+            class="emotion-54"
           >
             <div
-              class="emotion-62"
+              class="emotion-55"
             >
               <div
-                class="emotion-63"
+                class="emotion-56"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-34"
+                  class="emotion-29"
                   data-testid="divider"
                 />
                 <div
-                  class="emotion-33"
+                  class="emotion-28"
                 />
                 <a
-                  class="emotion-26"
+                  class="emotion-24"
                   data-testid="buttonLink"
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
-                  <span
-                    class="emotion-27"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-25"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <span
-                      class="emotion-28"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-29"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                          fill-rule="nonzero"
-                        />
-                      </svg>
-                    </span>
-                    <span
-                      class="emotion-28"
-                    >
-                      <span
-                        class="emotion-31"
-                      >
-                        View code
-                      </span>
-                    </span>
+                    <path
+                      d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                  <span
+                    class="emotion-26"
+                  >
+                    View code
                   </span>
                 </a>
               </div>
               <div
-                class="emotion-63"
+                class="emotion-56"
               >
                 <div
-                  class="emotion-33"
+                  class="emotion-28"
                 />
                 <hr
                   aria-hidden="true"
-                  class="emotion-34"
+                  class="emotion-29"
                   data-testid="divider"
                 />
               </div>
@@ -1222,23 +1137,30 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-9 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
+  min-height: 24px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1262,40 +1184,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-11 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-12 {
   padding: 4px;
 }
 
-.emotion-13 {
+.emotion-11 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -1305,19 +1197,19 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-13::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-13::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-14 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1328,12 +1220,12 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-15 {
+  .emotion-13 {
     margin-right: 32px;
   }
 }
 
-.emotion-16 {
+.emotion-14 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -1344,7 +1236,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   height: 100%;
 }
 
-.emotion-18 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1365,7 +1257,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(-24px/2);
 }
 
-.emotion-19 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1374,7 +1266,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(24px/2);
 }
 
-.emotion-23 {
+.emotion-21 {
   margin: 0;
   color: #3358CC;
   font-family: "Poppins",sans-serif;
@@ -1385,23 +1277,23 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-23 svg {
+.emotion-21 svg {
   fill: #3358CC;
 }
 
-.emotion-23::before {
+.emotion-21::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-23::after {
+.emotion-21::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-24 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1422,7 +1314,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(-16px/2);
 }
 
-.emotion-25 {
+.emotion-23 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1434,25 +1326,34 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   align-self: stretch;
 }
 
-.emotion-26 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-24 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  width: 100%;
+  min-width: 176px;
+  min-height: 44px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 44px;
-  width: 100%;
-  padding: 8px 12px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1466,39 +1367,38 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   border-width: 1px;
   border-radius: 24px;
   color: #2E3F54;
-  margin: 0;
   cursor: pointer;
 }
 
-.emotion-26 svg {
+.emotion-24 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-26 svg {
+.emotion-24 svg {
   fill: #2E3F54;
 }
 
-.emotion-26:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   background-color: #F0F1F3;
   border-color: #15263E;
 }
 
-.emotion-26:active:not(:disabled) {
+.emotion-24:active:not(:disabled) {
   background-color: #DEE2E5;
   border-color: #09111C;
 }
 
-.emotion-26:disabled {
+.emotion-24:disabled {
   border-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-26:disabled svg {
+.emotion-24:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-26:focus-visible:not(:disabled) {
+.emotion-24:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -1507,14 +1407,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-26:focus-visible:not(:disabled) {
+    .emotion-24:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-26 {
+  .emotion-24 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1522,51 +1422,21 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-26 {
+  .emotion-24 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-27 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-28 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-29 {
+.emotion-25 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-29 {
+  .emotion-25 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1574,14 +1444,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-29 {
+  .emotion-25 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-31 {
+.emotion-26 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -1592,19 +1462,19 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: inline-block;
 }
 
-.emotion-31::before {
+.emotion-26::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-31::after {
+.emotion-26::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-32 {
+.emotion-27 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1613,11 +1483,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(16px/2);
 }
 
-.emotion-39 {
+.emotion-31 {
   margin-bottom: 24px;
 }
 
-.emotion-40 {
+.emotion-32 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -1628,36 +1498,36 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-41 {
+  .emotion-33 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-41 {
+  .emotion-33 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-41 {
+  .emotion-33 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-41 {
+  .emotion-33 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-41 {
+  .emotion-33 {
     display: none;
   }
 }
 
-.emotion-43 {
+.emotion-35 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1669,7 +1539,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   align-self: stretch;
 }
 
-.emotion-44 {
+.emotion-36 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -1679,7 +1549,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-44 {
+  .emotion-36 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 50%;
@@ -1690,17 +1560,17 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-44 {
+  .emotion-36 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-58 {
+.emotion-48 {
   margin-right: 32px;
 }
 
-.emotion-59 {
+.emotion-49 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1721,19 +1591,19 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-59:before,
-.emotion-59:after {
+.emotion-49:before,
+.emotion-49:after {
   content: '';
   display: block;
 }
 
-.emotion-67 {
+.emotion-57 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-68 {
+.emotion-58 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -1751,36 +1621,36 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-68 {
+  .emotion-58 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-68 {
+  .emotion-58 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-68 {
+  .emotion-58 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-68 {
+  .emotion-58 {
     margin: -24px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-68 {
+  .emotion-58 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-69 {
+.emotion-59 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -1790,7 +1660,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-69 {
+  .emotion-59 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -1801,7 +1671,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-69 {
+  .emotion-59 {
     padding: 0 12px;
     margin-top: 24px;
   }
@@ -1842,46 +1712,38 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 class="emotion-9"
                 data-testid="flag"
               >
-                <span
+                <div
                   class="emotion-10"
                 >
-                  <span
+                  <p
                     class="emotion-11"
                   >
-                    <div
-                      class="emotion-12"
-                    >
-                      <p
-                        class="emotion-13"
-                      >
-                        Supported
-                      </p>
-                    </div>
-                  </span>
-                </span>
+                    Supported
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-14"
+            class="emotion-12"
           >
             <div
-              class="emotion-15"
+              class="emotion-13"
             />
             <hr
               aria-hidden="true"
-              class="emotion-16"
+              class="emotion-14"
               data-testid="divider"
             />
             <div
-              class="emotion-15"
+              class="emotion-13"
             />
           </div>
           <div
-            class="emotion-18"
+            class="emotion-16"
           >
             <div
-              class="emotion-19"
+              class="emotion-17"
             >
               <section
                 class="emotion-6"
@@ -1894,10 +1756,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
               </section>
             </div>
             <div
-              class="emotion-19"
+              class="emotion-17"
             >
               <p
-                class="emotion-23"
+                class="emotion-21"
               >
                 v0.1
               </p>
@@ -1905,26 +1767,214 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
           </div>
         </div>
         <div
-          class="emotion-24"
+          class="emotion-22"
         >
           <div
-            class="emotion-25"
+            class="emotion-23"
           >
             <a
-              class="emotion-26"
+              class="emotion-24"
               data-testid="buttonLink"
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
-              <span
-                class="emotion-27"
+              <svg
+                aria-hidden="true"
+                class="emotion-25"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <span
-                  class="emotion-28"
+                <path
+                  d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <span
+                class="emotion-26"
+              >
+                View code
+              </span>
+            </a>
+          </div>
+          <div
+            class="emotion-27"
+          >
+            <a
+              class="emotion-24"
+              data-testid="buttonLink"
+              href="https://github.com/newscorp-ghfb/newskit"
+              target="_blank"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-25"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.3333 12C12.3333 11.0275 12.7196 10.0949 13.4073 9.40729C14.0949 8.71965 15.0275 8.33334 16 8.33334C16.9724 8.33334 17.9051 8.71965 18.5927 9.40729C19.2803 10.0949 19.6666 11.0275 19.6666 12C19.6666 12.9725 19.2803 13.9051 18.5927 14.5927C17.9051 15.2804 16.9724 15.6667 16 15.6667C15.0275 15.6667 14.0949 15.2804 13.4073 14.5927C12.7196 13.9051 12.3333 12.9725 12.3333 12V12Z"
+                  fill="#1ABCFE"
+                />
+                <path
+                  d="M5 19.3333C5 18.3609 5.38631 17.4282 6.07394 16.7406C6.76158 16.053 7.69421 15.6667 8.66667 15.6667H12.3333V19.3333C12.3333 20.3058 11.947 21.2384 11.2594 21.926C10.5718 22.6137 9.63913 23 8.66667 23C7.69421 23 6.76158 22.6137 6.07394 21.926C5.38631 21.2384 5 20.3058 5 19.3333V19.3333Z"
+                  fill="#0ACF83"
+                />
+                <path
+                  d="M12.3333 1V8.33333H16C16.9724 8.33333 17.9051 7.94703 18.5927 7.25939C19.2803 6.57176 19.6666 5.63913 19.6666 4.66667C19.6666 3.69421 19.2803 2.76158 18.5927 2.07394C17.9051 1.38631 16.9724 1 16 1L12.3333 1Z"
+                  fill="#FF7262"
+                />
+                <path
+                  d="M5 4.66667C5 5.63913 5.38631 6.57176 6.07394 7.25939C6.76158 7.94703 7.69421 8.33333 8.66667 8.33333H12.3333V1H8.66667C7.69421 1 6.76158 1.38631 6.07394 2.07394C5.38631 2.76158 5 3.69421 5 4.66667V4.66667Z"
+                  fill="#F24E1E"
+                />
+                <path
+                  d="M5 12C5 12.9725 5.38631 13.9051 6.07394 14.5927C6.76158 15.2804 7.69421 15.6667 8.66667 15.6667H12.3333V8.33334H8.66667C7.69421 8.33334 6.76158 8.71965 6.07394 9.40729C5.38631 10.0949 5 11.0275 5 12V12Z"
+                  fill="#A259FF"
+                />
+              </svg>
+              <span
+                class="emotion-26"
+              >
+                View Design
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-31"
+      />
+      <hr
+        aria-hidden="true"
+        class="emotion-32"
+        data-testid="divider"
+      />
+    </div>
+    <div
+      class="emotion-33"
+    >
+      <div
+        class="emotion-16"
+      >
+        <div
+          class="emotion-35"
+        >
+          <div
+            class="emotion-36"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <section
+                  class="emotion-6"
+                >
+                  <h1
+                    class="nk-headline-heading emotion-7"
+                  >
+                    Status
+                  </h1>
+                </section>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-9"
+                  data-testid="flag"
+                >
+                  <div
+                    class="emotion-10"
+                  >
+                    <p
+                      class="emotion-11"
+                    >
+                      Supported
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-36"
+          >
+            <div
+              class="emotion-3"
+            >
+              <hr
+                aria-hidden="true"
+                class="emotion-14"
+                data-testid="divider"
+              />
+              <div
+                class="emotion-48"
+              />
+              <div
+                class="emotion-49"
+              />
+              <div
+                class="emotion-16"
+              >
+                <div
+                  class="emotion-17"
+                >
+                  <section
+                    class="emotion-6"
+                  >
+                    <h1
+                      class="nk-headline-heading emotion-7"
+                    >
+                      Introduced
+                    </h1>
+                  </section>
+                </div>
+                <div
+                  class="emotion-17"
+                >
+                  <p
+                    class="emotion-21"
+                  >
+                    v0.1
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-35"
+        >
+          <div
+            class="emotion-57"
+          >
+            <div
+              class="emotion-58"
+            >
+              <div
+                class="emotion-59"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="emotion-32"
+                  data-testid="divider"
+                />
+                <div
+                  class="emotion-31"
+                />
+                <a
+                  class="emotion-24"
+                  data-testid="buttonLink"
+                  href="https://github.com/newscorp-ghfb/newskit"
+                  target="_blank"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-29"
+                    class="emotion-25"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1934,37 +1984,25 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       fill-rule="nonzero"
                     />
                   </svg>
-                </span>
-                <span
-                  class="emotion-28"
-                >
                   <span
-                    class="emotion-31"
+                    class="emotion-26"
                   >
                     View code
                   </span>
-                </span>
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-32"
-          >
-            <a
-              class="emotion-26"
-              data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/newskit"
-              target="_blank"
-            >
-              <span
-                class="emotion-27"
+                </a>
+              </div>
+              <div
+                class="emotion-59"
               >
-                <span
-                  class="emotion-28"
+                <a
+                  class="emotion-24"
+                  data-testid="buttonLink"
+                  href="https://github.com/newscorp-ghfb/newskit"
+                  target="_blank"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-29"
+                    class="emotion-25"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1990,250 +2028,18 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       fill="#A259FF"
                     />
                   </svg>
-                </span>
-                <span
-                  class="emotion-28"
-                >
                   <span
-                    class="emotion-31"
+                    class="emotion-26"
                   >
                     View Design
                   </span>
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="emotion-39"
-      />
-      <hr
-        aria-hidden="true"
-        class="emotion-40"
-        data-testid="divider"
-      />
-    </div>
-    <div
-      class="emotion-41"
-    >
-      <div
-        class="emotion-18"
-      >
-        <div
-          class="emotion-43"
-        >
-          <div
-            class="emotion-44"
-          >
-            <div
-              class="emotion-4"
-            >
-              <div
-                class="emotion-5"
-              >
-                <section
-                  class="emotion-6"
-                >
-                  <h1
-                    class="nk-headline-heading emotion-7"
-                  >
-                    Status
-                  </h1>
-                </section>
-              </div>
-              <div
-                class="emotion-5"
-              >
-                <div
-                  class="emotion-9"
-                  data-testid="flag"
-                >
-                  <span
-                    class="emotion-10"
-                  >
-                    <span
-                      class="emotion-11"
-                    >
-                      <div
-                        class="emotion-12"
-                      >
-                        <p
-                          class="emotion-13"
-                        >
-                          Supported
-                        </p>
-                      </div>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-44"
-          >
-            <div
-              class="emotion-3"
-            >
-              <hr
-                aria-hidden="true"
-                class="emotion-16"
-                data-testid="divider"
-              />
-              <div
-                class="emotion-58"
-              />
-              <div
-                class="emotion-59"
-              />
-              <div
-                class="emotion-18"
-              >
-                <div
-                  class="emotion-19"
-                >
-                  <section
-                    class="emotion-6"
-                  >
-                    <h1
-                      class="nk-headline-heading emotion-7"
-                    >
-                      Introduced
-                    </h1>
-                  </section>
-                </div>
-                <div
-                  class="emotion-19"
-                >
-                  <p
-                    class="emotion-23"
-                  >
-                    v0.1
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-43"
-        >
-          <div
-            class="emotion-67"
-          >
-            <div
-              class="emotion-68"
-            >
-              <div
-                class="emotion-69"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="emotion-40"
-                  data-testid="divider"
-                />
-                <div
-                  class="emotion-39"
-                />
-                <a
-                  class="emotion-26"
-                  data-testid="buttonLink"
-                  href="https://github.com/newscorp-ghfb/newskit"
-                  target="_blank"
-                >
-                  <span
-                    class="emotion-27"
-                  >
-                    <span
-                      class="emotion-28"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-29"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                          fill-rule="nonzero"
-                        />
-                      </svg>
-                    </span>
-                    <span
-                      class="emotion-28"
-                    >
-                      <span
-                        class="emotion-31"
-                      >
-                        View code
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-              <div
-                class="emotion-69"
-              >
-                <a
-                  class="emotion-26"
-                  data-testid="buttonLink"
-                  href="https://github.com/newscorp-ghfb/newskit"
-                  target="_blank"
-                >
-                  <span
-                    class="emotion-27"
-                  >
-                    <span
-                      class="emotion-28"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-29"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.3333 12C12.3333 11.0275 12.7196 10.0949 13.4073 9.40729C14.0949 8.71965 15.0275 8.33334 16 8.33334C16.9724 8.33334 17.9051 8.71965 18.5927 9.40729C19.2803 10.0949 19.6666 11.0275 19.6666 12C19.6666 12.9725 19.2803 13.9051 18.5927 14.5927C17.9051 15.2804 16.9724 15.6667 16 15.6667C15.0275 15.6667 14.0949 15.2804 13.4073 14.5927C12.7196 13.9051 12.3333 12.9725 12.3333 12V12Z"
-                          fill="#1ABCFE"
-                        />
-                        <path
-                          d="M5 19.3333C5 18.3609 5.38631 17.4282 6.07394 16.7406C6.76158 16.053 7.69421 15.6667 8.66667 15.6667H12.3333V19.3333C12.3333 20.3058 11.947 21.2384 11.2594 21.926C10.5718 22.6137 9.63913 23 8.66667 23C7.69421 23 6.76158 22.6137 6.07394 21.926C5.38631 21.2384 5 20.3058 5 19.3333V19.3333Z"
-                          fill="#0ACF83"
-                        />
-                        <path
-                          d="M12.3333 1V8.33333H16C16.9724 8.33333 17.9051 7.94703 18.5927 7.25939C19.2803 6.57176 19.6666 5.63913 19.6666 4.66667C19.6666 3.69421 19.2803 2.76158 18.5927 2.07394C17.9051 1.38631 16.9724 1 16 1L12.3333 1Z"
-                          fill="#FF7262"
-                        />
-                        <path
-                          d="M5 4.66667C5 5.63913 5.38631 6.57176 6.07394 7.25939C6.76158 7.94703 7.69421 8.33333 8.66667 8.33333H12.3333V1H8.66667C7.69421 1 6.76158 1.38631 6.07394 2.07394C5.38631 2.76158 5 3.69421 5 4.66667V4.66667Z"
-                          fill="#F24E1E"
-                        />
-                        <path
-                          d="M5 12C5 12.9725 5.38631 13.9051 6.07394 14.5927C6.76158 15.2804 7.69421 15.6667 8.66667 15.6667H12.3333V8.33334H8.66667C7.69421 8.33334 6.76158 8.71965 6.07394 9.40729C5.38631 10.0949 5 11.0275 5 12V12Z"
-                          fill="#A259FF"
-                        />
-                      </svg>
-                    </span>
-                    <span
-                      class="emotion-28"
-                    >
-                      <span
-                        class="emotion-31"
-                      >
-                        View Design
-                      </span>
-                    </span>
-                  </span>
                 </a>
                 <div
-                  class="emotion-39"
+                  class="emotion-31"
                 />
                 <hr
                   aria-hidden="true"
-                  class="emotion-40"
+                  class="emotion-32"
                   data-testid="divider"
                 />
               </div>
@@ -2405,23 +2211,30 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-9 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
+  min-height: 24px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2445,40 +2258,10 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-11 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-12 {
   padding: 4px;
 }
 
-.emotion-13 {
+.emotion-11 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -2488,19 +2271,19 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-13::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-13::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-14 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2511,12 +2294,12 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-15 {
+  .emotion-13 {
     margin-right: 32px;
   }
 }
 
-.emotion-16 {
+.emotion-14 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -2527,7 +2310,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   height: 100%;
 }
 
-.emotion-18 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2548,7 +2331,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-bottom: calc(-24px/2);
 }
 
-.emotion-19 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2557,7 +2340,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-bottom: calc(24px/2);
 }
 
-.emotion-23 {
+.emotion-21 {
   display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -2565,7 +2348,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-23 {
+  .emotion-21 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -2573,58 +2356,58 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-23 {
+  .emotion-21 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-23 svg {
+.emotion-21 svg {
   fill: #3358CC;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-21:hover:not(:disabled) {
   color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-23:hover:not(:disabled) svg {
+.emotion-21:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-21:active:not(:disabled) {
   color: #14328D;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-23:active:not(:disabled) svg {
+.emotion-21:active:not(:disabled) svg {
   fill: #14328D;
 }
 
-.emotion-23:visited:not(:disabled) {
+.emotion-21:visited:not(:disabled) {
   color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-23:visited:not(:disabled) svg {
+.emotion-21:visited:not(:disabled) svg {
   fill: #6454E3;
 }
 
-.emotion-23:visited:hover:not(:disabled) {
+.emotion-21:visited:hover:not(:disabled) {
   color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-23:visited:hover:not(:disabled) svg {
+.emotion-21:visited:hover:not(:disabled) svg {
   fill: #6454E3;
 }
 
-.emotion-23:focus-visible:not(:disabled) {
+.emotion-21:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2633,13 +2416,13 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-23:focus-visible:not(:disabled) {
+    .emotion-21:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-24 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2660,7 +2443,16 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-26 {
+.emotion-23 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-24 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -2670,7 +2462,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   display: block;
 }
 
-.emotion-28 {
+.emotion-26 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2680,7 +2472,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-28 {
+  .emotion-26 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2688,19 +2480,19 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-28 {
+  .emotion-26 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-28.emotion-28 {
+.emotion-26.emotion-26 {
   width: 16px;
   height: 16px;
 }
 
-.emotion-30 {
+.emotion-28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2721,7 +2513,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-right: calc(-16px/2);
 }
 
-.emotion-31 {
+.emotion-29 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2733,25 +2525,34 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   align-self: stretch;
 }
 
-.emotion-32 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-30 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  width: 100%;
+  min-width: 176px;
+  min-height: 44px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 44px;
-  width: 100%;
-  padding: 8px 12px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2765,39 +2566,38 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   border-width: 1px;
   border-radius: 24px;
   color: #2E3F54;
-  margin: 0;
   cursor: pointer;
 }
 
-.emotion-32 svg {
+.emotion-30 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-32 svg {
+.emotion-30 svg {
   fill: #2E3F54;
 }
 
-.emotion-32:hover:not(:disabled) {
+.emotion-30:hover:not(:disabled) {
   background-color: #F0F1F3;
   border-color: #15263E;
 }
 
-.emotion-32:active:not(:disabled) {
+.emotion-30:active:not(:disabled) {
   background-color: #DEE2E5;
   border-color: #09111C;
 }
 
-.emotion-32:disabled {
+.emotion-30:disabled {
   border-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-32:disabled svg {
+.emotion-30:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-32:focus-visible:not(:disabled) {
+.emotion-30:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2806,14 +2606,14 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-32:focus-visible:not(:disabled) {
+    .emotion-30:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-32 {
+  .emotion-30 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2821,51 +2621,21 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-32 {
+  .emotion-30 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-33 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-34 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-35 {
+.emotion-31 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-35 {
+  .emotion-31 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2873,14 +2643,14 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-35 {
+  .emotion-31 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-37 {
+.emotion-32 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -2891,19 +2661,19 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   display: inline-block;
 }
 
-.emotion-37::before {
+.emotion-32::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-37::after {
+.emotion-32::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-38 {
+.emotion-33 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2912,11 +2682,11 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-right: calc(16px/2);
 }
 
-.emotion-39 {
+.emotion-34 {
   margin-bottom: 24px;
 }
 
-.emotion-40 {
+.emotion-35 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -2927,36 +2697,36 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen {
-  .emotion-41 {
+  .emotion-36 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-41 {
+  .emotion-36 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-41 {
+  .emotion-36 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-41 {
+  .emotion-36 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-41 {
+  .emotion-36 {
     display: none;
   }
 }
 
-.emotion-43 {
+.emotion-38 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2968,7 +2738,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   align-self: stretch;
 }
 
-.emotion-44 {
+.emotion-39 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -2978,7 +2748,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen {
-  .emotion-44 {
+  .emotion-39 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 50%;
@@ -2989,17 +2759,17 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-44 {
+  .emotion-39 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-58 {
+.emotion-51 {
   margin-right: 32px;
 }
 
-.emotion-59 {
+.emotion-52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3020,19 +2790,19 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-59:before,
-.emotion-59:after {
+.emotion-52:before,
+.emotion-52:after {
   content: '';
   display: block;
 }
 
-.emotion-73 {
+.emotion-66 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-74 {
+.emotion-67 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -3050,36 +2820,36 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen {
-  .emotion-74 {
+  .emotion-67 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-74 {
+  .emotion-67 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-74 {
+  .emotion-67 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-74 {
+  .emotion-67 {
     margin: -24px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-74 {
+  .emotion-67 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-75 {
+.emotion-68 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -3089,7 +2859,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen {
-  .emotion-75 {
+  .emotion-68 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -3100,7 +2870,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-75 {
+  .emotion-68 {
     padding: 0 12px;
     margin-top: 24px;
   }
@@ -3141,46 +2911,38 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                 class="emotion-9"
                 data-testid="flag"
               >
-                <span
+                <div
                   class="emotion-10"
                 >
-                  <span
+                  <p
                     class="emotion-11"
                   >
-                    <div
-                      class="emotion-12"
-                    >
-                      <p
-                        class="emotion-13"
-                      >
-                        Supported
-                      </p>
-                    </div>
-                  </span>
-                </span>
+                    Supported
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-14"
+            class="emotion-12"
           >
             <div
-              class="emotion-15"
+              class="emotion-13"
             />
             <hr
               aria-hidden="true"
-              class="emotion-16"
+              class="emotion-14"
               data-testid="divider"
             />
             <div
-              class="emotion-15"
+              class="emotion-13"
             />
           </div>
           <div
-            class="emotion-18"
+            class="emotion-16"
           >
             <div
-              class="emotion-19"
+              class="emotion-17"
             >
               <section
                 class="emotion-6"
@@ -3193,30 +2955,30 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
               </section>
             </div>
             <div
-              class="emotion-19"
+              class="emotion-17"
             >
               <a
-                class="emotion-23"
+                class="emotion-21"
                 href="https://github.com/newscorp-ghfb/newskit/releases/tag/v5.0.1"
                 target="_blank"
               >
                 <span
-                  class="emotion-24"
+                  class="emotion-22"
                 >
                   <span
-                    class="emotion-11"
+                    class="emotion-23"
                   >
                     <span
-                      class="emotion-26"
+                      class="emotion-24"
                     >
                       v5.0.1
                     </span>
                   </span>
                   <span
-                    class="emotion-11"
+                    class="emotion-23"
                   >
                     <svg
-                      class="emotion-28 emotion-29"
+                      class="emotion-26 emotion-27"
                       fill="currentColor"
                       focusable="false"
                       role="img"
@@ -3241,73 +3003,61 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
           </div>
         </div>
         <div
-          class="emotion-30"
+          class="emotion-28"
         >
           <div
-            class="emotion-31"
+            class="emotion-29"
           >
             <a
-              class="emotion-32"
+              class="emotion-30"
               data-testid="buttonLink"
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
-              <span
-                class="emotion-33"
+              <svg
+                aria-hidden="true"
+                class="emotion-31"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <span
-                  class="emotion-34"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-35"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="emotion-34"
-                >
-                  <span
-                    class="emotion-37"
-                  >
-                    View code
-                  </span>
-                </span>
+                <path
+                  d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <span
+                class="emotion-32"
+              >
+                View code
               </span>
             </a>
           </div>
           <div
-            class="emotion-38"
+            class="emotion-33"
           />
         </div>
       </div>
       <div
-        class="emotion-39"
+        class="emotion-34"
       />
       <hr
         aria-hidden="true"
-        class="emotion-40"
+        class="emotion-35"
         data-testid="divider"
       />
     </div>
     <div
-      class="emotion-41"
+      class="emotion-36"
     >
       <div
-        class="emotion-18"
+        class="emotion-16"
       >
         <div
-          class="emotion-43"
+          class="emotion-38"
         >
           <div
-            class="emotion-44"
+            class="emotion-39"
           >
             <div
               class="emotion-4"
@@ -3332,49 +3082,41 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                   class="emotion-9"
                   data-testid="flag"
                 >
-                  <span
+                  <div
                     class="emotion-10"
                   >
-                    <span
+                    <p
                       class="emotion-11"
                     >
-                      <div
-                        class="emotion-12"
-                      >
-                        <p
-                          class="emotion-13"
-                        >
-                          Supported
-                        </p>
-                      </div>
-                    </span>
-                  </span>
+                      Supported
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-44"
+            class="emotion-39"
           >
             <div
               class="emotion-3"
             >
               <hr
                 aria-hidden="true"
-                class="emotion-16"
+                class="emotion-14"
                 data-testid="divider"
               />
               <div
-                class="emotion-58"
+                class="emotion-51"
               />
               <div
-                class="emotion-59"
+                class="emotion-52"
               />
               <div
-                class="emotion-18"
+                class="emotion-16"
               >
                 <div
-                  class="emotion-19"
+                  class="emotion-17"
                 >
                   <section
                     class="emotion-6"
@@ -3387,30 +3129,30 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
                   </section>
                 </div>
                 <div
-                  class="emotion-19"
+                  class="emotion-17"
                 >
                   <a
-                    class="emotion-23"
+                    class="emotion-21"
                     href="https://github.com/newscorp-ghfb/newskit/releases/tag/v5.0.1"
                     target="_blank"
                   >
                     <span
-                      class="emotion-24"
+                      class="emotion-22"
                     >
                       <span
-                        class="emotion-11"
+                        class="emotion-23"
                       >
                         <span
-                          class="emotion-26"
+                          class="emotion-24"
                         >
                           v5.0.1
                         </span>
                       </span>
                       <span
-                        class="emotion-11"
+                        class="emotion-23"
                       >
                         <svg
-                          class="emotion-28 emotion-29"
+                          class="emotion-26 emotion-27"
                           fill="currentColor"
                           focusable="false"
                           role="img"
@@ -3437,71 +3179,59 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
           </div>
         </div>
         <div
-          class="emotion-43"
+          class="emotion-38"
         >
           <div
-            class="emotion-73"
+            class="emotion-66"
           >
             <div
-              class="emotion-74"
+              class="emotion-67"
             >
               <div
-                class="emotion-75"
+                class="emotion-68"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-40"
+                  class="emotion-35"
                   data-testid="divider"
                 />
                 <div
-                  class="emotion-39"
+                  class="emotion-34"
                 />
                 <a
-                  class="emotion-32"
+                  class="emotion-30"
                   data-testid="buttonLink"
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
-                  <span
-                    class="emotion-33"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-31"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <span
-                      class="emotion-34"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-35"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                          fill-rule="nonzero"
-                        />
-                      </svg>
-                    </span>
-                    <span
-                      class="emotion-34"
-                    >
-                      <span
-                        class="emotion-37"
-                      >
-                        View code
-                      </span>
-                    </span>
+                    <path
+                      d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                  <span
+                    class="emotion-32"
+                  >
+                    View code
                   </span>
                 </a>
               </div>
               <div
-                class="emotion-75"
+                class="emotion-68"
               >
                 <div
-                  class="emotion-39"
+                  class="emotion-34"
                 />
                 <hr
                   aria-hidden="true"
-                  class="emotion-40"
+                  class="emotion-35"
                   data-testid="divider"
                 />
               </div>
