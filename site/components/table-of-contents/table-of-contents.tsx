@@ -3,7 +3,6 @@ import {Stack} from 'newskit';
 import {StyledTableOfContents, StyledContentsNavItem} from './styled';
 import {ContentsNavItemProps} from './types';
 import {contentsObserver} from './contents-observer';
-// import {useCalculatePosition} from './use-calculate-position';
 
 export const TableOfContents: React.FC = () => {
   const [activeItem, setActiveItem] = useState<number>();
@@ -31,8 +30,6 @@ export const TableOfContents: React.FC = () => {
     setActiveItem(activeElement);
   };
 
-  // const {direction, size, min, max} = useCalculatePosition();
-
   useEffect(() => {
     if (!contentsInfo) {
       getContentInfo();
@@ -42,6 +39,16 @@ export const TableOfContents: React.FC = () => {
     }
     return undefined;
   }, [contentsInfo]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const handleToCClick = (
+    event: React.MouseEvent<HTMLElement>,
+    key: number,
+  ) => {
+    if (contentsInfo !== undefined) {
+      event.preventDefault();
+      contentsInfo[key].element.scrollIntoView({behavior: 'smooth'});
+    }
+  };
 
   const ContentsNavItem: React.FC<ContentsNavItemProps> = ({
     children,
@@ -57,16 +64,14 @@ export const TableOfContents: React.FC = () => {
       itemKey={itemKey}
       isSelected={(activeItem || 0) === itemKey}
       data-selected={(activeItem || 0) === itemKey}
-      onClick={e => {
-        e.preventDefault();
-        contentsInfo &&
-          contentsInfo[itemKey].element.scrollIntoView({behavior: 'smooth'});
+      onClick={(event: React.MouseEvent<HTMLElement>) => {
+        handleToCClick(event, itemKey);
       }}
     >
       {children}
     </StyledContentsNavItem>
   );
-
+  /* eslint-enable  @typescript-eslint/no-unused-expressions */
   return (
     <StyledTableOfContents id="toc-navigation">
       <Stack flow="vertical-left">
