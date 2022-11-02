@@ -9,7 +9,7 @@ export const getIllustrationComponent = (
 
   const Component = () => (
     <svg viewBox="0 0 1490 838" {...props}>
-      <use href={`/static/illustrations/${path}.svg#${id}`} />
+      <use href={`static/illustrations/${path}.svg#${id}`} />
     </svg>
   );
 

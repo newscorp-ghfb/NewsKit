@@ -13,7 +13,7 @@ exports[`Step renders with props 1`] = `
       viewBox="0 0 1345 759"
     >
       <use
-        href="/static/illustrations/guides/design-quickstart/step1/hero.svg#guides-design-quickstart-step1-hero"
+        href="static/illustrations/guides/design-quickstart/step1/hero.svg#guides-design-quickstart-step1-hero"
       />
     </svg>
   </div>
