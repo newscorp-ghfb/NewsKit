@@ -48,7 +48,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the inline and standalone links, its thier variations, and configuration options.',
+        'This demo allows you to preview the inline and standalone links, their variations, and configuration options.',
       playground: {
         componentName: 'link',
         component: state => <Link href={' '} {...state} />,
@@ -56,7 +56,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
           {
             name: 'content',
             propName: 'children',
-            value: 'Some Link',
+            value: 'Link',
           },
           {
             name: 'href',
@@ -172,8 +172,8 @@ const LinkComponent = (layoutProps: LayoutProps) => (
                   marginBlockStart: 'space030',
                 }}
               >
-                If the //external// prop is enabled, it automatically checks if
-                the passed href is external or internal to the website where the
+                If the external prop is enabled, it automatically checks if the
+                passed href is external or internal to the website where the
                 link is used. If the href is external, an icon indicating this
                 will be rendered after (trailing) the label.
               </InlineMessage>
@@ -272,18 +272,15 @@ const LinkComponent = (layoutProps: LayoutProps) => (
             }}
           >
             <>
-              Avoid opening links in a new tab or window, as it can be
-              disorienting for users and can{' '}
               <Link
-                overrides={{
-                  marginBlockEnd: 'space050',
-                }}
                 target="_blank"
                 href="https://www.w3.org/TR/WCAG20-TECHS/G200.html"
               >
-                cause problems for users who are unable to visually perceive
-                that the new tab has opened.
+                Avoid opening links in a new tab or window
               </Link>
+              , as it can be disorienting for users and can cause problems for
+              users who are unable to visually perceive that the new tab has
+              opened.
             </>
             <>
               If there is a need for a link to open in a new tab, include the
