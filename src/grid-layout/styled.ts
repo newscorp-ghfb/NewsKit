@@ -69,22 +69,22 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
 
   ${handleResponsiveProp(
     {autoFlow: GRID_DEFAULT_PROPS.autoFlow},
-    ({autoFlow}, {theme}) => ({
-      gridAutoFlow: mapTemplate(theme, autoFlow),
+    ({autoFlow}) => ({
+      gridAutoFlow: autoFlow,
     }),
   )}
 
   ${handleResponsiveProp(
     {autoRows: GRID_DEFAULT_PROPS.autoRows},
-    ({autoRows}, {theme}) => ({
-      gridAutoRows: mapTemplate(theme, autoRows),
+    ({autoRows}) => ({
+      gridAutoRows: autoRows,
     }),
   )}
 
   ${handleResponsiveProp(
     {autoColumns: GRID_DEFAULT_PROPS.autoColumns},
-    ({autoColumns}, {theme}) => ({
-      gridAutoColumns: mapTemplate(theme, autoColumns),
+    ({autoColumns}) => ({
+      gridAutoColumns: autoColumns,
     }),
   )}
 
