@@ -71,7 +71,7 @@ export const TableOfContents: React.FC = () => {
       {children}
     </StyledContentsNavItem>
   );
-  /* eslint-enable  @typescript-eslint/no-unused-expressions */
+
   return (
     <StyledTableOfContents id="toc-navigation">
       <Stack flow="vertical-left">
