@@ -1,7 +1,6 @@
 import React from 'react';
 import {GridLayout, GridLayoutItem} from '..';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {compileTheme, createTheme} from '../../theme';
 import {GridLayoutProps} from '../types';
 
 const defaultChildren = [
@@ -236,37 +235,6 @@ describe('GridLayout', () => {
     };
 
     const fragment = renderToFragmentWithTheme(GridLayout, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders GridLayout with stylePreset overrides', () => {
-    const myCustomTheme = compileTheme(
-      createTheme({
-        name: 'grid-layout-theme',
-        overrides: {
-          stylePresets: {
-            gridLayoutCustom: {
-              base: {
-                backgroundColor: 'pink',
-                color: 'red',
-              },
-            },
-          },
-        },
-      }),
-    );
-    const props: GridLayoutProps = {
-      overrides: {
-        stylePreset: 'gridLayoutCustom',
-      },
-      children: defaultChildren,
-    };
-
-    const fragment = renderToFragmentWithTheme(
-      GridLayout,
-      props,
-      myCustomTheme,
-    );
     expect(fragment).toMatchSnapshot();
   });
 

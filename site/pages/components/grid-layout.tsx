@@ -727,13 +727,6 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, this overrides the maxHeight of the Grid.',
             },
-            {
-              attribute: 'stylePreset',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'If provided, this overrides the stylePreset of the Grid.',
-            },
           ],
         },
         {

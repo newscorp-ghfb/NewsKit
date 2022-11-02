@@ -1,5 +1,4 @@
 import * as React from 'react';
-import {Story as StoryType} from '@storybook/react';
 import {styled} from '../../../utils';
 import {Block} from '../../../block';
 import {Divider} from '../../../divider';
@@ -7,27 +6,11 @@ import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {GridCard, GridTeaser} from './grid-card';
 import {GridBox} from './common';
 import {Grid, Cell} from '../../../grid';
-import {ThemeProvider, CreateThemeArgs} from '../../../theme';
 import {Label} from '../../..';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../../test/storybook-comps';
-import {createCustomThemeWithBaseThemeSwitch} from '../../../test/theme-select-object';
-
-const gridLayoutCustomThemeObject: CreateThemeArgs = {
-  name: 'grid-layout-custom-theme',
-  overrides: {
-    stylePresets: {
-      myGridLayout: {
-        base: {
-          backgroundColor: '{{colors.interfaceInformative020}}',
-          color: '{{colors.inkContrast}}',
-        },
-      },
-    },
-  },
-};
 
 const BigRedBlock = styled(Block)`
   width: 200px;
@@ -379,17 +362,6 @@ export const StoryWithOverrides = () => (
         <BigRedBlock />
       </GridLayoutItem>
     </GridLayout>
-    <StorybookSubHeading>stylePreset</StorybookSubHeading>
-    <GridLayout
-      columns="1fr 1fr 1fr 1fr"
-      columnGap="20px"
-      overrides={{stylePreset: 'myGridLayout'}}
-    >
-      <GridBox>A</GridBox>
-      <GridBox>B</GridBox>
-      <GridBox>C</GridBox>
-      <GridBox>D</GridBox>
-    </GridLayout>
   </>
 );
 
@@ -593,16 +565,4 @@ StoryGridComparison.storyName = 'grid-comparison';
 export default {
   title: 'Components/grid-layout',
   component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(
-          context?.globals?.backgrounds?.value,
-          gridLayoutCustomThemeObject,
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
 };
