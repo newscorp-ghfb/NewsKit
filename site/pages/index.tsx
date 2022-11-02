@@ -1,5 +1,8 @@
 import {GridLayout} from 'newskit';
 import * as React from 'react';
+import path from 'path';
+import fs from 'fs';
+
 import {Release, ReleasesPageProps} from '../utils/release-notes/types';
 import {
   Explore,
@@ -26,8 +29,17 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
-const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
+export const config = {
+  unstable_runtimeJS: false,
+};
+
+const Index = ({
+  releases,
+  staticScripts,
+  ...layoutProps
+}: LayoutProps & ReleasesPageProps & {staticScripts: string[]}) => {
   const {themeMode, toggleTheme} = layoutProps;
+
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
       <GridLayout
@@ -109,15 +121,32 @@ const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
           <SupportedBrands />
         </GridLayout>
       </GridLayout>
+      {staticScripts.map(fileName => (
+        <script src={`/_next/static/chunks/${fileName}`} />
+      ))}
     </Layout>
   );
 };
 
 export default Index;
 
+const getIslandScripts = (): string[] => {
+  const neededScripts = ['webpack', 'framework', 'main', 'island'];
+  const scriptDir = path.join(process.cwd(), 'site/.next/static/chunks');
+  const files = fs.readdirSync(scriptDir);
+  const scripts = files.filter(file =>
+    neededScripts.some(s => file.startsWith(s)),
+  );
+
+  return scripts; // .sort((a, b) =>  )
+};
+
 // This function is called at build time and the response is passed to the page
 // component as props.
 export async function getStaticProps() {
   const releases: Release[] = await fetchGitHubReleases(4);
-  return {props: {releases}};
+
+  const staticScripts = getIslandScripts().reverse();
+
+  return {props: {releases, staticScripts}};
 }

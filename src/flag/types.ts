@@ -8,6 +8,7 @@ export interface BaseFlagOverrides extends LogicalProps {
   stylePreset?: MQ<string>;
   transitionPreset?: TransitionToken | TransitionToken[];
   spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
+  spaceInset?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
   width?: MQ<string>;
   height?: MQ<string>;
   minWidth?: MQ<string>;
