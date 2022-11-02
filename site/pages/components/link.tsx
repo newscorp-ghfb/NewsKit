@@ -272,10 +272,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
             }}
           >
             <>
-              <Link
-                target="_blank"
-                href="https://www.w3.org/TR/WCAG20-TECHS/G200.html"
-              >
+              <Link href="https://www.w3.org/TR/WCAG20-TECHS/G200.html">
                 Avoid opening links in a new tab or window
               </Link>
               , as it can be disorienting for users and can cause problems for
@@ -333,7 +330,10 @@ const LinkComponent = (layoutProps: LayoutProps) => (
       },
       infoNoticeAria: (
         <>
-          <Link href="https://webaim.org/techniques/hypertext/link_text#underlining">
+          <Link
+            href="https://webaim.org/techniques/hypertext/link_text#underlining"
+            target="_blank"
+          >
             WCAG 2.0
           </Link>{' '}
           has additional requirements for body text links that are not
@@ -566,7 +566,10 @@ const LinkComponent = (layoutProps: LayoutProps) => (
                 }}
               >
                 Any prop valid on an{' '}
-                <LinkInline href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">
+                <LinkInline
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+                  target="_blank"
+                >
                   anchor HTML element
                 </LinkInline>{' '}
                 ,is also valid on the link component.
