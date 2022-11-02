@@ -28,6 +28,17 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -332,6 +343,13 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   margin-bottom: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -632,6 +650,17 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -938,6 +967,13 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   margin-bottom: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -1238,6 +1274,17 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -1544,6 +1591,13 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   margin-bottom: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -1844,6 +1898,17 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -2150,6 +2215,13 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   margin-bottom: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -2450,6 +2522,17 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -2756,6 +2839,13 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   margin-bottom: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -3056,6 +3146,17 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -3360,6 +3461,13 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-bottom: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-2 {
@@ -3678,6 +3786,17 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-2>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-3 {
@@ -4067,6 +4186,17 @@ exports[`Menu renders horizontally with menu group 1`] = `
   margin-right: 8px;
 }
 
+.emotion-2>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -4378,6 +4508,17 @@ exports[`Menu renders horizontally with menu items 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -4694,6 +4835,13 @@ exports[`Menu renders vertically with menu dividers 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 8px;
+}
+
+.emotion-2>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-3 {
@@ -5082,6 +5230,13 @@ exports[`Menu renders vertically with menu group 1`] = `
   margin-bottom: 8px;
 }
 
+.emotion-2>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -5399,6 +5554,13 @@ exports[`Menu renders vertically with menu items 1`] = `
   margin-bottom: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -5699,6 +5861,17 @@ exports[`Menu renders with default props 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -6002,6 +6175,17 @@ exports[`Menu renders with logical prop overrides 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -6580,6 +6764,13 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-bottom: 8px;
 }
 
+.emotion-4>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-5 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -6948,6 +7139,13 @@ exports[`MenuGroup renders with title as a component 1`] = `
 .emotion-7 {
   box-sizing: border-box;
   margin-bottom: 8px;
+}
+
+.emotion-7>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-8 {
@@ -7346,6 +7544,13 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-bottom: 8px;
 }
 
+.emotion-4>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-5 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -7713,6 +7918,13 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   margin-bottom: 8px;
 }
 
+.emotion-4>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-5 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -8033,6 +8245,17 @@ exports[`MenuItem renders in large size 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -8263,6 +8486,17 @@ exports[`MenuItem renders in medium size 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -8497,6 +8731,17 @@ exports[`MenuItem renders in small size 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -8727,6 +8972,17 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -8960,6 +9216,17 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -9258,6 +9525,17 @@ exports[`MenuItem renders with default props 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -9488,6 +9766,17 @@ exports[`MenuItem renders with icon 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {
@@ -9765,6 +10054,17 @@ exports[`MenuItem renders with overrides 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-2 {

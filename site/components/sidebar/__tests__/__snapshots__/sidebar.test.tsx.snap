@@ -352,6 +352,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-14>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-15 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -4211,6 +4218,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-12 {
   box-sizing: border-box;
   margin-bottom: 0;
+}
+
+.emotion-12>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-13 {
@@ -8596,6 +8610,13 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-14>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-15 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -12458,6 +12479,13 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-12 {
   box-sizing: border-box;
   margin-bottom: 0;
+}
+
+.emotion-12>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-13 {

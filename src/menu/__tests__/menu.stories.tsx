@@ -7,10 +7,12 @@ import {
 } from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {IconFilledAddCircleOutline, IconFilledClose} from '../../icons';
-import {Menu, MenuItem, MenuGroup, MenuDivider} from '..';
+import {Menu, MenuItem, MenuSub, MenuGroup, MenuDivider} from '..';
 import {styled, getColorCssFromTheme} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {Popover} from '../../popover';
+import {useMediaQueryObject} from '../../utils/hooks';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
@@ -1295,6 +1297,198 @@ export const StoryMenuItemsOutlineOverrides = () => (
   </>
 );
 StoryMenuItemsOutlineOverrides.storyName = 'menu items outline overrides';
+
+const MenuWrapper = styled.div`
+  .menu {
+    width: 240px;
+  }
+
+  /* .menu > ul > li > ul,
+  .menu > ul > li > ul > li > ul {
+    display: none;
+  }
+
+  .menu > ul > li:hover > ul,
+  .menu > ul > li:hover > ul > li:hover > ul {
+    display: block;
+  }
+  .menu-horizontal > ul > li:hover > ul,
+  .menu-horizontal > ul > li:hover > ul > li:hover > ul {
+    display: flex;
+  }
+
+  .menu-horizontal {
+    display: relative;
+    width: 800px;
+  }
+
+  .menu-horizontal h2 {
+    cursor: pointer;
+    min-height: 48px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+  }
+
+  .menu-horizontal > ul > li > ul,
+  .menu-horizontal > ul > li > ul > li > ul {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border: 1px solid gray;
+  } */
+`;
+
+export const StoryMenuMultiple = () => (
+  <MenuWrapper>
+    <Menu aria-label="Menu" vertical className="menu">
+      <MenuItem href={href}>Item 1</MenuItem>
+      <MenuItem href={href}>Item 2</MenuItem>
+      <MenuItem href={href}>Item 3</MenuItem>
+      <MenuSub title="Sub 1">
+        <MenuItem href={href}>Item G1 1</MenuItem>
+        <MenuItem href={href}>Item G1 2</MenuItem>
+        <MenuItem href={href}>Item G1 3</MenuItem>
+
+        <MenuSub title="Sub 1.1">
+          <MenuItem href={href}>Item G1.1 1</MenuItem>
+          <MenuItem href={href}>Item G1.1 2</MenuItem>
+          <MenuItem href={href}>Item G1.1 3</MenuItem>
+        </MenuSub>
+      </MenuSub>
+      <MenuSub title="Sub 2">
+        <MenuItem href={href}>Item G2 1</MenuItem>
+        <MenuItem href={href}>Item G2 2</MenuItem>
+        <MenuItem href={href}>Item G2 3</MenuItem>
+      </MenuSub>
+    </Menu>
+
+    <Menu aria-label="Menu" className="menu menu-horizontal">
+      <MenuItem href={href}>Item 1</MenuItem>
+      <MenuItem href={href}>Item 2</MenuItem>
+      <MenuItem href={href}>Item 3</MenuItem>
+
+      <MenuSub title="Sub 1">
+        <MenuItem href={href}>Item G1 1</MenuItem>
+        <MenuItem href={href}>Item G1 2</MenuItem>
+        <MenuItem href={href}>Item G1 3</MenuItem>
+
+        <MenuSub title="Sub 1.1">
+          <MenuItem href={href}>Item G1.1 1</MenuItem>
+          <MenuItem href={href}>Item G1.1 2</MenuItem>
+          <MenuItem href={href}>Item G1.1 3</MenuItem>
+        </MenuSub>
+      </MenuSub>
+
+      <MenuSub title="Sub 2">
+        <MenuItem href={href}>Item G2 1</MenuItem>
+        <MenuItem href={href}>Item G2 2</MenuItem>
+        <MenuItem href={href}>Item G2 3</MenuItem>
+      </MenuSub>
+    </Menu>
+  </MenuWrapper>
+);
+
+const splitMenuItems = (arr: MenuElement[], n: number) => {
+  const visible = [...arr].splice(0, n);
+  const invisible = [...arr].splice(n);
+  return {visible, invisible};
+};
+
+type MenuElement = {
+  title: string;
+  items?: MenuElement[];
+};
+
+const createMenu = (items: MenuElement[]) =>
+  items.map(({title, items: subItems}) => {
+    if (subItems) {
+      return <MenuSub title={title}>{createMenu(subItems)}</MenuSub>;
+    }
+
+    return <MenuItem href="/">{title}</MenuItem>;
+  });
+
+const createMoreMenu = (items: MenuElement[]) =>
+  items.map(({title, items: subItems}) => {
+    if (subItems) {
+      return <MenuGroup title={title}>{createMoreMenu(subItems)}</MenuGroup>;
+    }
+
+    return <MenuItem href="/">{title}</MenuItem>;
+  });
+
+const items: MenuElement[] = [
+  {title: 'Item 1'},
+  {title: 'Item 2'},
+  {title: 'Item 3'},
+  {
+    title: 'Item 4',
+    items: [{title: 'Item 4.1'}, {title: 'Item 4.2'}, {title: 'Item 4.3'}],
+  },
+  {
+    title: 'Item 5',
+    items: [{title: 'Item 5.1'}, {title: 'Item 5.2'}, {title: 'Item 5.3'}],
+  },
+];
+
+const MenuMore = ({children}: {children: React.ReactNode}) => (
+  <MenuSub title="More">{children}</MenuSub>
+);
+
+export const StoryMenuMultipleAuto = () => {
+  // mouse-over or click
+  // click on icon
+
+  const splitNumber = useMediaQueryObject({
+    xs: 2,
+    sm: 3,
+    md: 4,
+    lg: 5,
+    xl: 5,
+  });
+
+  const {visible, invisible} = splitMenuItems(items, splitNumber || 1000);
+
+  return (
+    <MenuWrapper>
+      <Menu aria-label="Menu">
+        {createMenu(visible)}
+        {invisible.length > 0 && (
+          <MenuMore>{createMoreMenu(invisible)}</MenuMore>
+        )}
+      </Menu>
+
+      <hr />
+    </MenuWrapper>
+  );
+};
+
+export const StoryMenuMultiplePopOver = () => {
+  const popOverContent = (
+    <ul>
+      <MenuItem href={href}>Item G1.1 1</MenuItem>
+      <MenuItem href={href}>Item G1.1 2</MenuItem>
+      <MenuItem href={href}>Item G1.1 3</MenuItem>
+    </ul>
+  );
+
+  return (
+    <>
+      <h2>Popover example</h2>
+      <p>Semanticly not correct, also the content is hidden from the DOM</p>
+      <Menu aria-label="Menu" className="menu menu-horizontal">
+        <MenuItem href={href}>Item 1</MenuItem>
+        <MenuItem href={href}>Item 2</MenuItem>
+        <MenuItem href={href}>Item 3</MenuItem>
+        <Popover content={popOverContent} closePosition="none">
+          <MenuItem href="/">Item 4</MenuItem>
+        </Popover>
+      </Menu>
+    </>
+  );
+};
 
 export default {
   title: 'Components/menu',

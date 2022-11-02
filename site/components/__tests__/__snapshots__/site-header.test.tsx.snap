@@ -1018,6 +1018,17 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-right: 8px;
 }
 
+.emotion-152>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .emotion-153 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -4125,6 +4136,17 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-right: 8px;
 }
 
+.emotion-152>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .emotion-153 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -7230,6 +7252,17 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-152 {
   box-sizing: border-box;
   margin-right: 8px;
+}
+
+.emotion-152>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-153 {
