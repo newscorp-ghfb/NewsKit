@@ -1038,7 +1038,7 @@ jobs:
             cd dist
             yalc publish
             cd ..
-            npx create next-app newskit-integration-test
+            yarn create next-app newskit-integration-test
       - run:
           name: Prepare the NextJs app
           command: |
