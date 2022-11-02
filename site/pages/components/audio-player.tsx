@@ -177,7 +177,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
               The following example shows the full audio player layout option
               that can be assembled using the various available subcomponents.{' '}
               <Link
-                href="https://storybook.newskit.co.uk/?path=/story/newskit-light-audio-player-composable--audio-player"
+                href="https://storybook.newskit.co.uk/?path=/docs/components-audio-player-composable--story-audio-player"
                 target="_blank"
               >
                 View examples in Storybook.
@@ -195,7 +195,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
               Use an inline audio player for simple inline playback e.g. within
               an article.{' '}
               <Link
-                href="https://storybook.newskit.co.uk/?path=/story/newskit-light-audio-player-composable--audio-player"
+                href="https://storybook.newskit.co.uk/?path=/docs/components-audio-player-composable--story-audio-player"
                 target="_blank"
               >
                 View examples in Storybook.
@@ -215,7 +215,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
               <Link href="/components/card/">card</Link>, to give context to the
               track or show being played.{' '}
               <Link
-                href="https://storybook.newskit.co.uk/?path=/story/newskit-light-audio-player-composable--audio-player"
+                href="https://storybook.newskit.co.uk/?path=/docs/components-audio-player-composable--story-audio-player"
                 target="_blank"
               >
                 View examples in Storybook.
@@ -231,7 +231,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
         <>
           Code examples can be viewed in{' '}
           <Link
-            href="https://storybook.newskit.co.uk/?path=/story/newskit-light-audio-player-composable--audio-player"
+            href="https://storybook.newskit.co.uk/?path=/docs/components-audio-player-composable--story-audio-player"
             target="_blank"
           >
             Storybook
