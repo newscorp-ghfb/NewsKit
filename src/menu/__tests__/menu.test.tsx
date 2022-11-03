@@ -1,11 +1,13 @@
 import React from 'react';
+import {fireEvent} from '@testing-library/react';
 import {Menu, MenuDivider, MenuGroup, MenuItem} from '..';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {IconFilledAddCircleOutline} from '../../icons';
-import {compileTheme, createTheme} from '../..';
+import {compileTheme, createTheme, EventTrigger} from '../..';
 import {MenuItemProps, MenuItemAlign, MenuItemSize} from '../types';
 
 const MenuItemSizeArray = ['small', 'medium', 'large'];
@@ -165,6 +167,34 @@ describe('MenuItem', () => {
       myCustomTheme,
     );
     expect(fragment).toMatchSnapshot();
+  });
+  test('fire tracking event', async () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      children: menuItemContent,
+      href: 'https://menuitem.test',
+      key: '1',
+      eventOriginator: 'menu-item',
+      eventContext: {
+        event: 'event data',
+      },
+    };
+    const {getByTestId} = renderWithImplementation(
+      MenuWithItem,
+      props,
+      mockFireEvent,
+    );
+    const menuItemButton = getByTestId('buttonLink');
+    fireEvent.click(menuItemButton);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'menu-item',
+      trigger: EventTrigger.Click,
+      context: {
+        href: 'https://menuitem.test',
+        event: 'event data',
+      },
+    });
   });
 });
 

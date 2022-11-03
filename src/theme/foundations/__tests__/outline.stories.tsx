@@ -217,4 +217,5 @@ export const StoryOutlineDefault = () => (
 StoryOutlineDefault.storyName = 'outline';
 StoryOutlineDefault.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };

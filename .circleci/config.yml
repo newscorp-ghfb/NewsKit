@@ -314,6 +314,22 @@ commands:
       - slack/notify:
           <<: *slack_notify
 
+  run_test_visual_docs_percy:
+    description: 'Run the Percy tests for docs visual changes'
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Set percy/newskit-docsite token
+          command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
+      - run:
+          name: Run Percy Docs Site Visual Tests
+          # Allow this to fail (|| true) for the POC
+          command: make e2e_visual_test_docs_percy || true
+      - store_artifacts:
+          path: cypress/screenshots
+
 jobs:
   can_i_merge_checker:
     executor: node
@@ -321,6 +337,18 @@ jobs:
       - run:
           name: 'Check to make sure all tests have run before merging.'
           command: echo 'passed'
+
+  download_headless_chrome:
+    executor: node-large
+    steps:
+      - checkout
+      - run:
+          name: Download headless Chrome dependencies
+          command: make download_headless_chrome
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - vendor/apt/*
 
   install_deps:
     executor: node-large
@@ -605,8 +633,7 @@ jobs:
           at: ~/project
       - run:
           name: Install Headless Chrome dependencies
-          command: >
-            sudo apt-get update && sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libgbm-dev libappindicator1 libnss3 lsb-release xdg-utils wget
+          command: make install_headless_chrome
       - run:
           name: 'Setup Applitools environment variables'
           <<: *applitools_defaults
@@ -618,6 +645,23 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
+  test_visual_comps_percy:
+    executor: node-large
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Install Headless Chrome dependencies
+          command: make install_headless_chrome
+      - run:
+          name: Set percy/newskit-comps token
+          command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
+      - run:
+          name: Run Percy Storybook Component Tests
+          # Allow this to fail (|| true) for the POC
+          command: make comps_visual_test_percy || true
+
   skip_applitools_check:
     executor: node
     steps:
@@ -625,6 +669,36 @@ jobs:
           name: 'Pass the required GitHub / Applitools check'
           command: |
             curl --request POST --header "Content-Type: application/json" --data "{\"serverId\":\"github\",\"commitSha\":\"$CIRCLE_SHA1\"}" "https://eyesapi.applitools.com/api/externals/github/servers/github/commit/$CIRCLE_SHA1/complete?apiKey=$APPLITOOLS_API_KEY"
+
+  skip_percy_comps_check:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Install Headless Chrome dependencies
+          command: make install_headless_chrome
+      - run:
+          name: Set percy/newskit-comps token
+          command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
+      - run:
+          name: 'Skip the required Percy check for the newskit-comps project'
+          command: yarn test:visual:comps:ci:percy:skip
+
+  skip_percy_docsite_check:
+    <<: *cypress_defaults
+    executor: cypress
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Set percy/newskit-docsite token
+          command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
+      - run:
+          name: 'Skip the required Percy check for the newskit-docsite project'
+          command: yarn e2e:visual:docs:ci:percy:skip
 
   test_visual_docs:
     <<: *cypress_defaults
@@ -637,6 +711,18 @@ jobs:
     executor: cypress
     steps:
       - run_test_visual_changes
+
+  test_visual_docs_percy:
+    <<: *cypress_defaults
+    executor: cypress
+    steps:
+      - run_test_visual_docs_percy
+
+  test_visual_docs_percy_2:
+    <<: *cypress_defaults
+    executor: cypress
+    steps:
+      - run_test_visual_docs_percy
 
   test_e2e_comps:
     <<: *cypress_defaults
@@ -945,14 +1031,14 @@ jobs:
       - run:
           name: Install yalc and create-next-app
           command: |
-            yarn global add yalc && yarn add create-next-app@latest
+            yarn global add yalc
       - run:
           name: Yalc publish and run create-nextjs-app
           command: |
             cd dist
             yalc publish
             cd ..
-            npx create-next-app@latest newskit-integration-test
+            yarn create next-app newskit-integration-test
       - run:
           name: Prepare the NextJs app
           command: |
@@ -960,6 +1046,7 @@ jobs:
 
             cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
             cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
+            cp ./scripts/templates-integration-test/next.config.js ./newskit-integration-test/
             mkdir -p ./newskit-integration-test/cypress/integration
             cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
 
@@ -1149,6 +1236,7 @@ workflows:
     jobs:
       - install_deps
       - install_cypress
+      - download_headless_chrome
       - build_icons:
           requires:
             - install_deps
@@ -1197,14 +1285,17 @@ workflows:
           type: approval
           requires:
             - build_storybook
+            - install_cypress
       - docs_and_comps_visual_changes:
           type: approval
           requires:
             - build_storybook
+            - install_cypress
       - docs_visual_changes:
           type: approval
           requires:
             - build_storybook
+            - install_cypress
 
       # Jobs for realising unstable NPM version
       - approve_publish_npm_pr:
@@ -1228,10 +1319,25 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - no_visual_changes
+      - skip_percy_comps_check:
+          context: ncu-product-platforms-context
+          requires:
+            - no_visual_changes
+            - download_headless_chrome
+      - skip_percy_docsite_check:
+          context: ncu-product-platforms-context
+          requires:
+            - no_visual_changes
       - test_visual_comps:
           context: ncu-product-platforms-context
           requires:
             - docs_and_comps_visual_changes
+            - download_headless_chrome
+      - test_visual_comps_percy:
+          context: ncu-product-platforms-context
+          requires:
+            - docs_and_comps_visual_changes
+            - download_headless_chrome
       - test_visual_docs:
           context: ncu-product-platforms-context
           requires:
@@ -1239,6 +1345,18 @@ workflows:
             - install_cypress
             - test_visual_comps
       - test_visual_docs_2:
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+            - docs_visual_changes
+      - test_visual_docs_percy:
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+            - test_visual_comps_percy
+      - test_visual_docs_percy_2:
           context: ncu-product-platforms-context
           requires:
             - build_docs_pr_with_no_base_url

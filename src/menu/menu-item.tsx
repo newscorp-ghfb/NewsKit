@@ -8,7 +8,17 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 import {get} from '../utils/get';
 
 export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
-  ({overrides, children, selected, ...rest}, ref) => {
+  (
+    {
+      overrides,
+      children,
+      selected,
+      eventContext = {},
+      eventOriginator = 'menu-item',
+      ...rest
+    },
+    ref,
+  ) => {
     const {vertical, size, align, overrides: menuOverrides} = useMenuContext();
 
     const theme = useTheme();
@@ -36,6 +46,8 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
         <StyledButton
           {...buttonProps}
           align={align}
+          eventContext={{href: rest.href, ...eventContext}}
+          eventOriginator={eventOriginator}
           overrides={{
             ...menuItemOverrides,
             // width 100% should not be overwritten

@@ -23,24 +23,32 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -51,7 +59,6 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
   margin: 50px 20px 30px 20px;
 }
@@ -114,36 +121,6 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -154,37 +131,45 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-5 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -195,38 +180,37 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   background-color: #007B22;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
   margin-right: 20px;
 }
 
-.emotion-8 svg {
+.emotion-5 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-5 svg {
   fill: #FFFFFF;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-5:hover:not(:disabled) {
   background-color: #00601A;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-5:active:not(:disabled) {
   background-color: #004914;
 }
 
-.emotion-8:disabled {
+.emotion-5:disabled {
   background-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-8:disabled svg {
+.emotion-5:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-8:focus-visible:not(:disabled) {
+.emotion-5:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -235,14 +219,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-8:focus-visible:not(:disabled) {
+    .emotion-5:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-5 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -250,32 +234,40 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-5 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -286,37 +278,36 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   background-color: #007B22;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
-.emotion-12 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-12 svg {
+.emotion-7 svg {
   fill: #FFFFFF;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #00601A;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #004914;
 }
 
-.emotion-12:disabled {
+.emotion-7:disabled {
   background-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-12:disabled svg {
+.emotion-7:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-7:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -325,14 +316,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-7:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-7 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -340,27 +331,27 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-7 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-16 {
+.emotion-9 {
   max-width: 80vw;
 }
 
-.emotion-16 svg {
+.emotion-9 svg {
   max-width: 80vw;
   max-height: 80vh;
 }
 
-.emotion-17 {
+.emotion-10 {
   margin-bottom: 20px;
 }
 
-.emotion-18 {
+.emotion-11 {
   margin: 0;
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
@@ -370,7 +361,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   letter-spacing: 0;
 }
 
-.emotion-18 svg {
+.emotion-11 svg {
   fill: #2E3F54;
 }
 
@@ -418,24 +409,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              SWITCH THEME: 
-            </span>
-          </span>
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              LIGHT
-            </span>
-          </span>
+          SWITCH THEME: 
+        </span>
+        <span
+          class="emotion-3"
+        >
+          LIGHT
         </span>
       </button>
       <select
@@ -451,52 +430,36 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
         </option>
       </select>
       <button
-        class="emotion-8"
+        class="emotion-5"
         data-testid="single-svg-button"
         type="button"
       >
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              Download single SVG
-            </span>
-          </span>
+          Download single SVG
         </span>
       </button>
       <button
-        class="emotion-12"
+        class="emotion-7"
         data-testid="button"
         type="button"
       >
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              DOWNLOAD ALL SVGs
-            </span>
-          </span>
+          DOWNLOAD ALL SVGs
         </span>
       </button>
     </div>
     <div
-      class="emotion-16"
+      class="emotion-9"
     >
       <div
-        class="emotion-17"
+        class="emotion-10"
       >
         <p
-          class="emotion-18"
+          class="emotion-11"
         >
           SvgName
         </p>
@@ -911,24 +874,32 @@ Object {
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -939,7 +910,6 @@ Object {
   background-color: #DEE2E5;
   border-radius: 8px;
   color: #C0C7CC;
-  margin: 0;
   margin: 50px 20px 30px 20px;
 }
 
@@ -969,36 +939,6 @@ Object {
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1009,37 +949,45 @@ Object {
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-5 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -1050,21 +998,20 @@ Object {
   background-color: #DEE2E5;
   border-radius: 8px;
   color: #C0C7CC;
-  margin: 0;
   margin-right: 20px;
 }
 
-.emotion-8 svg {
+.emotion-5 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-5 svg {
   fill: #C0C7CC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-5 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1072,32 +1019,40 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-5 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -1108,20 +1063,19 @@ Object {
   background-color: #DEE2E5;
   border-radius: 8px;
   color: #C0C7CC;
-  margin: 0;
 }
 
-.emotion-12 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-12 svg {
+.emotion-7 svg {
   fill: #C0C7CC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-7 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1129,7 +1083,7 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-7 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1184,24 +1138,12 @@ Object {
             <span
               class="emotion-3"
             >
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
-                >
-                  SWITCH THEME: 
-                </span>
-              </span>
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
-                >
-                  LIGHT
-                </span>
-              </span>
+              SWITCH THEME: 
+            </span>
+            <span
+              class="emotion-3"
+            >
+              LIGHT
             </span>
           </button>
           <select
@@ -1213,7 +1155,7 @@ Object {
             </option>
           </select>
           <button
-            class="emotion-8"
+            class="emotion-5"
             data-testid="single-svg-button"
             disabled=""
             type="button"
@@ -1221,19 +1163,11 @@ Object {
             <span
               class="emotion-3"
             >
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
-                >
-                  Download single SVG
-                </span>
-              </span>
+              Download single SVG
             </span>
           </button>
           <button
-            class="emotion-12"
+            class="emotion-7"
             data-testid="button"
             disabled=""
             type="button"
@@ -1241,15 +1175,7 @@ Object {
             <span
               class="emotion-3"
             >
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
-                >
-                  DOWNLOAD ALL SVGs
-                </span>
-              </span>
+              DOWNLOAD ALL SVGs
             </span>
           </button>
         </div>
@@ -1280,24 +1206,32 @@ Object {
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -1308,7 +1242,6 @@ Object {
   background-color: #DEE2E5;
   border-radius: 8px;
   color: #C0C7CC;
-  margin: 0;
   margin: 50px 20px 30px 20px;
 }
 
@@ -1338,36 +1271,6 @@ Object {
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1378,37 +1281,45 @@ Object {
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-5 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -1419,21 +1330,20 @@ Object {
   background-color: #DEE2E5;
   border-radius: 8px;
   color: #C0C7CC;
-  margin: 0;
   margin-right: 20px;
 }
 
-.emotion-8 svg {
+.emotion-5 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-5 svg {
   fill: #C0C7CC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-5 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1441,32 +1351,40 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-5 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -1477,20 +1395,19 @@ Object {
   background-color: #DEE2E5;
   border-radius: 8px;
   color: #C0C7CC;
-  margin: 0;
 }
 
-.emotion-12 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-12 svg {
+.emotion-7 svg {
   fill: #C0C7CC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-7 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1498,7 +1415,7 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-7 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1552,24 +1469,12 @@ Object {
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                SWITCH THEME: 
-              </span>
-            </span>
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                LIGHT
-              </span>
-            </span>
+            SWITCH THEME: 
+          </span>
+          <span
+            class="emotion-3"
+          >
+            LIGHT
           </span>
         </button>
         <select
@@ -1581,7 +1486,7 @@ Object {
           </option>
         </select>
         <button
-          class="emotion-8"
+          class="emotion-5"
           data-testid="single-svg-button"
           disabled=""
           type="button"
@@ -1589,19 +1494,11 @@ Object {
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Download single SVG
-              </span>
-            </span>
+            Download single SVG
           </span>
         </button>
         <button
-          class="emotion-12"
+          class="emotion-7"
           data-testid="button"
           disabled=""
           type="button"
@@ -1609,15 +1506,7 @@ Object {
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                DOWNLOAD ALL SVGs
-              </span>
-            </span>
+            DOWNLOAD ALL SVGs
           </span>
         </button>
       </div>
@@ -1700,24 +1589,32 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1728,7 +1625,6 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
   margin: 50px 20px 30px 20px;
 }
@@ -1791,36 +1687,6 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1831,37 +1697,45 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-5 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1872,38 +1746,37 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   background-color: #007B22;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
   margin-right: 20px;
 }
 
-.emotion-8 svg {
+.emotion-5 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-5 svg {
   fill: #FFFFFF;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-5:hover:not(:disabled) {
   background-color: #00601A;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-5:active:not(:disabled) {
   background-color: #004914;
 }
 
-.emotion-8:disabled {
+.emotion-5:disabled {
   background-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-8:disabled svg {
+.emotion-5:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-8:focus-visible:not(:disabled) {
+.emotion-5:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -1912,14 +1785,14 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-8:focus-visible:not(:disabled) {
+    .emotion-5:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-5 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1927,32 +1800,40 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-5 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1963,37 +1844,36 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   background-color: #007B22;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
-.emotion-12 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-12 svg {
+.emotion-7 svg {
   fill: #FFFFFF;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #00601A;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #004914;
 }
 
-.emotion-12:disabled {
+.emotion-7:disabled {
   background-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-12:disabled svg {
+.emotion-7:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-7:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2002,14 +1882,14 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-7:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-7 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2017,27 +1897,27 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-7 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-16 {
+.emotion-9 {
   max-width: 80vw;
 }
 
-.emotion-16 svg {
+.emotion-9 svg {
   max-width: 80vw;
   max-height: 80vh;
 }
 
-.emotion-17 {
+.emotion-10 {
   margin-bottom: 20px;
 }
 
-.emotion-18 {
+.emotion-11 {
   margin: 0;
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
@@ -2047,7 +1927,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   letter-spacing: 0;
 }
 
-.emotion-18 svg {
+.emotion-11 svg {
   fill: #2E3F54;
 }
 
@@ -2095,24 +1975,12 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              SWITCH THEME: 
-            </span>
-          </span>
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              LIGHT
-            </span>
-          </span>
+          SWITCH THEME: 
+        </span>
+        <span
+          class="emotion-3"
+        >
+          LIGHT
         </span>
       </button>
       <select
@@ -2128,52 +1996,36 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
         </option>
       </select>
       <button
-        class="emotion-8"
+        class="emotion-5"
         data-testid="single-svg-button"
         type="button"
       >
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              Download single SVG
-            </span>
-          </span>
+          Download single SVG
         </span>
       </button>
       <button
-        class="emotion-12"
+        class="emotion-7"
         data-testid="button"
         type="button"
       >
         <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            <span
-              class="emotion-5"
-            >
-              DOWNLOAD ALL SVGs
-            </span>
-          </span>
+          DOWNLOAD ALL SVGs
         </span>
       </button>
     </div>
     <div
-      class="emotion-16"
+      class="emotion-9"
     >
       <div
-        class="emotion-17"
+        class="emotion-10"
       >
         <p
-          class="emotion-18"
+          class="emotion-11"
         >
           SvgName
         </p>
