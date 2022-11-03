@@ -178,7 +178,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       ),
     }}
     options={{
-      introduction: 'The menu has options for different use cases',
+      introduction: 'The menu has options for different use cases:',
       cards: [
         {
           title: 'Orientation',
