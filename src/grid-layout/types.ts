@@ -30,6 +30,9 @@ export type GridLayoutProps = {
   alignItems?: MQ<string>;
   areas?: MQ<string>;
   inline?: MQ<boolean>;
+  autoColumns?: MQ<string>;
+  autoRows?: MQ<string>;
+  autoFlow?: MQ<string>;
   children?: React.ReactNode | GridLayoutRenderProps;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   as?: React.ElementType<any>;
