@@ -29,7 +29,7 @@ const CSS_PROPS = [
         CSS
       </Link>
     ),
-    description: 'The background image of an element.',
+    description: 'The background image of an element',
   },
   {
     token: 'backgroundRepeat',
