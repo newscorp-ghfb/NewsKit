@@ -199,7 +199,46 @@ describe('GridLayout', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders GridLayout with logical overrides', async () => {
+  test('renders a grid with autoFlow', () => {
+    const props: GridLayoutProps = {
+      columns: 'repeat(3, 60px)',
+      columnGap: '20px',
+      rowGap: '20px',
+      autoFlow: 'column',
+      children: defaultChildren,
+    };
+
+    const fragment = renderToFragmentWithTheme(GridLayout, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a grid with autoRows', () => {
+    const props: GridLayoutProps = {
+      areas: 'a a',
+      autoRows: 'sizing100',
+      columnGap: '20px',
+      rowGap: '20px',
+      children: defaultChildren,
+    };
+
+    const fragment = renderToFragmentWithTheme(GridLayout, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a grid with autoColumns', () => {
+    const props: GridLayoutProps = {
+      areas: 'a a',
+      autoColumns: 'sizing100',
+      columnGap: '20px',
+      rowGap: '20px',
+      children: defaultChildren,
+    };
+
+    const fragment = renderToFragmentWithTheme(GridLayout, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders GridLayout with logical overrides', () => {
     const props: GridLayoutProps = {
       overrides: {
         paddingInline: '30px',
@@ -208,7 +247,7 @@ describe('GridLayout', () => {
       children: defaultChildren,
     };
 
-    const fragment = renderToFragmentWithTheme(GridLayout, props) as any;
+    const fragment = renderToFragmentWithTheme(GridLayout, props);
     expect(fragment).toMatchSnapshot();
   });
 });

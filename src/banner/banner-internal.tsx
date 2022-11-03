@@ -137,6 +137,7 @@ export const BannerInternal = React.forwardRef<
                         }}
                         onClick={onClose}
                         data-testid="banner-close-button"
+                        eventOriginator="banner-close"
                       >
                         {closeButtonLabel}
                       </Button>
@@ -160,6 +161,7 @@ export const BannerInternal = React.forwardRef<
                       size="small"
                       overrides={closeButtonStyles}
                       onClick={onClose}
+                      eventOriginator="banner-close"
                     >
                       <IconFilledClose />
                     </IconButton>

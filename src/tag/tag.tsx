@@ -9,6 +9,7 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {getTransitionPreset} from '../utils/style/transition-preset';
+import {EventTrigger, useInstrumentation} from '../instrumentation';
 
 const StyledFlag = styled(BaseFlag)`
   ${({href, disabled}: TagProps) => href && !disabled && {cursor: 'pointer'}}
@@ -16,9 +17,21 @@ const StyledFlag = styled(BaseFlag)`
 `;
 
 const ThemelessTag = React.forwardRef<HTMLDivElement, TagProps>(
-  ({overrides = {}, disabled, href, ...props}, ref) => {
+  (
+    {
+      overrides = {},
+      disabled,
+      href,
+      eventContext,
+      eventOriginator = 'tag',
+      ...props
+    },
+    ref,
+  ) => {
     const theme = useTheme();
     const {size = 'medium'} = props;
+
+    const {fireEvent} = useInstrumentation();
 
     return (
       <StyledFlag
@@ -31,6 +44,21 @@ const ThemelessTag = React.forwardRef<HTMLDivElement, TagProps>(
         overrides={{
           ...theme.componentDefaults.tag[size],
           ...filterOutFalsyProperties(overrides),
+        }}
+        onClick={(
+          ...args: [event: React.MouseEvent<HTMLAnchorElement, MouseEvent>]
+        ) => {
+          fireEvent({
+            originator: eventOriginator,
+            trigger: EventTrigger.Click,
+            context: {
+              href,
+              ...eventContext,
+            },
+          });
+          if (props.onClick) {
+            props.onClick(...args);
+          }
         }}
       />
     );
