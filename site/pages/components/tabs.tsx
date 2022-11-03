@@ -12,6 +12,8 @@ import {
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
 
+type NewType = any;
+
 const TabsComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
@@ -875,7 +877,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                 it’s <Mono>Center</Mono>.
               </InlineMessage>
             </>
-          ) as media,
+          ) as NewType,
           media: getIllustrationComponent(
             'components/tabs/tabs-options-alignment-illustration',
           ),
@@ -930,7 +932,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
               Disabled tab items maintain layout consistency and communicate
               that a tab item may become available if another condition is met.
             </>
-          ) as media,
+          ),
           media: getIllustrationComponent(
             'components/tabs/tabs-states-disabled-illustration',
           ),

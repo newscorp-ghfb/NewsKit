@@ -196,7 +196,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               Add a title to a menu item group to categorise its menu items.
               Only available when the menu is in a vertical orientation.
             </>
-          ) as any,
+          ),
           media: getIllustrationComponent(
             'components/menu/menu-options-title-illustration',
           ),
@@ -278,7 +278,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
                 </>
               </UnorderedList>
             </>
-          ) as media,
+          ) as any,
           media: getIllustrationComponent(
             'components/menu/menu-options-styles-illustration',
           ),
