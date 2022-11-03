@@ -34,17 +34,16 @@ const Container = styled.div<Pick<LayoutProps, 'hideSidebar'>>`
   width: 100%;
   display: flex;
   flex-direction: column;
-  ${getSpacingCssFromTheme('paddingTop', 'space050')};
+  ${getSpacingCssFromTheme('paddingTop', {xs: 'space050', lg: 'space100'})};
   ${getMediaQueryFromTheme('lg')} {
     padding-left: ${({hideSidebar}) => !hideSidebar && '276px'};
-    ${getSpacingCssFromTheme('paddingTop', 'space100')};
   }
 `;
 
 const BodyWrapper = styled.main`
   flex: 1 0 auto;
   ${getColorCssFromTheme('backgroundColor', 'interfaceBackground')};
-  ${getSpacingCssFromTheme('paddingTop', 'var(--page-offset)')};
+  ${getSpacingCssFromTheme('paddingTop', {xs: 'space060', lg: 'space030'})};
   overflow: hidden;
 `;
 
