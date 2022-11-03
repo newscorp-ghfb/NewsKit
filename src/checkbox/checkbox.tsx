@@ -17,11 +17,12 @@ const DefaultCheckboxIcon = ({checked, overrides}: CheckboxIconProps) =>
   ) : null;
 
 const ThemelessCheckbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
-  (props, inputRef) => (
+  ({eventOriginator = 'checkbox', ...props}, inputRef) => (
     <BaseSwitch
       path="checkbox"
       ref={inputRef}
       type="checkbox"
+      eventOriginator={eventOriginator}
       {...props}
       defaultSwitchSelectorComponent={DefaultCheckboxIcon}
     />

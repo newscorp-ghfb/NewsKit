@@ -12,12 +12,13 @@ import {
   StorybookSubHeading,
 } from '../../../test/storybook-comps';
 
-export default {
-  title: 'Components/grid-layout',
-  component: () => 'None',
-};
+const BigRedBlock = styled(Block)`
+  width: 200px;
+  height: 200px;
+  background: red;
+`;
 
-export const ResponsiveExample = () => (
+export const StoryResponsiveExample = () => (
   <>
     <StorybookSubHeading>Responsive grid with mixed sizing</StorybookSubHeading>
     <GridLayout
@@ -161,8 +162,9 @@ export const ResponsiveExample = () => (
     </GridLayout>
   </>
 );
+StoryResponsiveExample.storyName = 'responsive';
 
-export const MinMaxRepeat = () => {
+export const StoryMinMaxRepeat = () => {
   const boxes = Array.from(Array(20)).map((_, i) => <GridBox>{i} box</GridBox>);
   return (
     <>
@@ -177,8 +179,9 @@ export const MinMaxRepeat = () => {
     </>
   );
 };
+StoryMinMaxRepeat.storyName = 'minmax-repeat';
 
-export const ItemOrder = () => {
+export const StoryItemOrder = () => {
   const [order, setOrder] = React.useState<number>(1);
   return (
     <>
@@ -217,14 +220,128 @@ export const ItemOrder = () => {
     </>
   );
 };
+StoryItemOrder.storyName = 'item-order';
 
-const BigRedBlock = styled(Block)`
-  width: 200px;
-  height: 200px;
-  background: red;
-`;
+export const StoryAutoFlow = () => (
+  <>
+    <StorybookHeading>autoFlow: row</StorybookHeading>
+    <GridLayout
+      columnGap="20px"
+      columns="repeat(5, 60px)"
+      rows="30px 30px"
+      autoFlow="row"
+    >
+      <GridLayoutItem column="1" row="1 / 3">
+        <GridBox>A</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>B</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>C</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>D</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem column="5" row="1 / 3">
+        <GridBox>E</GridBox>
+      </GridLayoutItem>
+    </GridLayout>
+    <br />
+    <br />
+    <br />
+    <StorybookHeading>autoFlow: column</StorybookHeading>
+    <GridLayout
+      columnGap="20px"
+      columns="repeat(5, 60px)"
+      rows="30px 30px"
+      autoFlow="column"
+    >
+      <GridLayoutItem column="1" row="1 / 3">
+        <GridBox>A</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>B</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>C</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>D</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem column="5" row="1 / 3">
+        <GridBox>E</GridBox>
+      </GridLayoutItem>
+    </GridLayout>
+    <br />
+    <br />
+    <br />
+    <StorybookHeading>autoFlow: dense</StorybookHeading>
+    <GridLayout
+      columnGap="20px"
+      columns="repeat(3, 100px)"
+      rows="repeat(3, 1fr)"
+      autoFlow="dense"
+    >
+      <GridLayoutItem>
+        <GridBox>A</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>B</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>C</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem column="2 / span 2">
+        <GridBox>D</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>E</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>F</GridBox>
+      </GridLayoutItem>
+    </GridLayout>
+  </>
+);
 
-export const WithOverrides = () => (
+StoryAutoFlow.storyName = 'auto-flow';
+
+export const StoryAutoRowsAndColumns = () => (
+  <>
+    <StorybookSubHeading>autoColumns</StorybookSubHeading>
+    <GridLayout columnGap="10px" rowGap="10px" areas="a a" autoColumns="200px">
+      <GridLayoutItem>
+        <GridBox>A</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>B</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>C</GridBox>
+      </GridLayoutItem>
+    </GridLayout>
+    <br />
+    <br />
+    <br />
+    <StorybookSubHeading>autoRows</StorybookSubHeading>
+    <GridLayout columnGap="10px" rowGap="10px" areas="a a" autoRows="100px">
+      <GridLayoutItem>
+        <GridBox>A</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>B</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <GridBox>C</GridBox>
+      </GridLayoutItem>
+    </GridLayout>
+  </>
+);
+
+StoryAutoRowsAndColumns.storyName = 'auto-rows-columns';
+
+export const StoryWithOverrides = () => (
   <>
     <StorybookHeading>With overrides</StorybookHeading>
     <StorybookSubHeading>Unconstrained width</StorybookSubHeading>
@@ -248,7 +365,9 @@ export const WithOverrides = () => (
   </>
 );
 
-export const WithLogicalPropsOverrides = () => (
+StoryWithOverrides.storyName = 'with-overrides';
+
+export const StoryWithLogicalPropsOverrides = () => (
   <>
     <StorybookHeading>With logical props overrides</StorybookHeading>
     <StorybookSubHeading>logical padding</StorybookSubHeading>
@@ -291,7 +410,9 @@ export const WithLogicalPropsOverrides = () => (
   </>
 );
 
-export const CardWithGrid = () => (
+StoryWithLogicalPropsOverrides.storyName = 'with-logical-props';
+
+export const StoryCardWithGrid = () => (
   <>
     <StorybookHeading>Card with grid</StorybookHeading>
     <GridCard
@@ -310,6 +431,7 @@ export const CardWithGrid = () => (
     />
   </>
 );
+StoryCardWithGrid.storyName = 'card-with-grid';
 
 export * from './the-times';
 export * from './the-sun';
@@ -345,7 +467,7 @@ const Container = styled.div`
   width: 1000px;
 `;
 
-export const GridComparison = () => (
+export const StoryGridComparison = () => (
   <Container>
     <StorybookHeading>Legend</StorybookHeading>
     <GridLayout columns="auto auto">
@@ -438,3 +560,9 @@ export const GridComparison = () => (
     ))}
   </Container>
 );
+StoryGridComparison.storyName = 'grid-comparison';
+
+export default {
+  title: 'Components/grid-layout',
+  component: () => 'None',
+};
