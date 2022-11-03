@@ -5,14 +5,7 @@ export const IconFilledStorybook = customToNewsKitIcon(
   'IconFilledStorybook',
   props => (
     <Svg {...props} viewBox="0 0 17 17">
-      <mask
-        id="mask0_1041_73877"
-        maskUnits="userSpaceOnUse"
-        x="0"
-        y="0"
-        width="17"
-        height="17"
-      >
+      <mask maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="17">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
