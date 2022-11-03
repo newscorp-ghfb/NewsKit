@@ -16,4 +16,5 @@ export interface MetaProps {
   introducedLink?: boolean;
   codeUrl: string;
   figmaUrl?: string;
+  storybookId?: string;
 }
