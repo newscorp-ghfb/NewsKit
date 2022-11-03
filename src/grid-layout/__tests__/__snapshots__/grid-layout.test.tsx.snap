@@ -469,6 +469,126 @@ exports[`GridLayout renders GridLayout with overrides 1`] = `
 </DocumentFragment>
 `;
 
+exports[`GridLayout renders a grid with autoColumns 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  grid-template-areas: "a a";
+  grid-auto-columns: 80px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders a grid with autoFlow 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 60px);
+  grid-auto-flow: column;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders a grid with autoRows 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  grid-template-areas: "a a";
+  grid-auto-rows: 80px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`GridLayout renders a grid with rowGap and columnGap 1`] = `
 <DocumentFragment>
   .emotion-0 {
