@@ -146,6 +146,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.19.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/form',
+      storybookId: 'components-form--story-form-with-submit-validation',
     }}
     interactiveDemo={{
       introduction:

@@ -36,14 +36,14 @@ const presets = [
   'Negative',
 ];
 
-export const StoryDefault = () => (
+export const StoryFlagDefault = () => (
   <StorybookPage>
     <StorybookCase>
       <Flag>Flag</Flag>
     </StorybookCase>
   </StorybookPage>
 );
-StoryDefault.storyName = 'Default';
+StoryFlagDefault.storyName = 'Default';
 
 export const StoryIntents = () => {
   const bp = useBreakpointKey();

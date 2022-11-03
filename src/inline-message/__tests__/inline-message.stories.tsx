@@ -37,7 +37,7 @@ const icon = (
   />
 );
 
-export const StoryDefault = () => (
+export const StoryInlineMessageDefault = () => (
   <>
     <StorybookHeading>Inline message</StorybookHeading>
     <StorybookSubHeading>default</StorybookSubHeading>
@@ -77,7 +77,7 @@ export const StoryDefault = () => (
     </InlineMessage>
   </>
 );
-StoryDefault.storyName = 'inline-message-default';
+StoryInlineMessageDefault.storyName = 'inline-message-default';
 
 export const StoryOverrides = () => (
   <>
