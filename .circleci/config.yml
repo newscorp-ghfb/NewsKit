@@ -1730,6 +1730,7 @@ workflows:
           context: ncu-newskit-site-prod
           requires:
             - build_icons
+            - delete_trigger_release_tag
       - test_broken_links_docs:
           <<: *only_on_version_tag
           name: test_broken_links_docs_prod
