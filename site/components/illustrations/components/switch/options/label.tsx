@@ -6,8 +6,6 @@ import {Rect} from '../../../rect';
 
 export const Label: React.FC = () => {
   const clip0 = getSSRId();
-  const clip1 = getSSRId();
-  const clip2 = getSSRId();
 
   return (
     <Svg
@@ -31,14 +29,14 @@ export const Label: React.FC = () => {
           d="M496.886 283.149L473.984 260.247L466.351 267.881L496.886 298.417L562.319 232.983L554.685 225.35L496.886 283.149Z"
           fill="interface010"
         />
-        <g clipPath={`url(#${clip1})`}>
-          <Rect
-            width="130.867"
-            height="130.867"
-            transform="translate(600.494 194.816)"
-            fill="interface010"
-          />
-        </g>
+        <Rect
+          x="600.494"
+          y="194.816"
+          width="130.867"
+          height="130.867"
+          rx="65.4333"
+          fill="interface010"
+        />
         <Path
           d="M810.044 287.144H832.791V296.049H799.01V228.776H810.044V287.144Z"
           fill="illustrationHighlight010"
@@ -71,14 +69,14 @@ export const Label: React.FC = () => {
           d="M806.877 600.149L783.975 577.247L776.341 584.881L806.877 615.417L872.31 549.983L864.676 542.35L806.877 600.149Z"
           fill="interface010"
         />
-        <g clipPath={`url(#${clip2})`}>
-          <Rect
-            width="130.867"
-            height="130.867"
-            transform="translate(910.485 511.816)"
-            fill="interface010"
-          />
-        </g>
+        <Rect
+          x="910.485"
+          y="511.816"
+          width="130.867"
+          height="130.867"
+          rx="65.4333"
+          fill="interface010"
+        />
         <Path
           d="M454.035 604.144H476.782V613.049H443V545.776H454.035V604.144Z"
           fill="illustrationHighlight010"
@@ -103,26 +101,6 @@ export const Label: React.FC = () => {
       <defs>
         <clipPath id={clip0}>
           <Rect width="1490" height="838" fill="white" />
-        </clipPath>
-        <clipPath id={clip1}>
-          <Rect
-            x="600.494"
-            y="194.816"
-            width="130.867"
-            height="130.867"
-            rx="65.4333"
-            fill="white"
-          />
-        </clipPath>
-        <clipPath id={clip2}>
-          <Rect
-            x="910.485"
-            y="511.816"
-            width="130.867"
-            height="130.867"
-            rx="65.4333"
-            fill="white"
-          />
         </clipPath>
       </defs>
     </Svg>

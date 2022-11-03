@@ -11,6 +11,7 @@ import {
   ContentPrimary,
   ContentSecondary,
 } from '../../components/content-structure';
+import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
 const principleCardoverrides = {
   title: {
@@ -28,10 +29,9 @@ const PageIntroductionContainer = styled.div`
 
 const cards = [
   {
-    media: {
-      src: 'static/about-principles-01.svg',
-      alt: '',
-    },
+    media: getIllustrationComponent('about/principles-01', {
+      viewBox: '0 0 1344 759',
+    }),
     stylePrefix: 'principleCard',
     label: 'User focused',
     title:
@@ -41,10 +41,9 @@ const cards = [
     overrides: principleCardoverrides,
   },
   {
-    media: {
-      src: 'static/about-principles-02.svg',
-      alt: '',
-    },
+    media: getIllustrationComponent('about/principles-02', {
+      viewBox: '0 0 1344 759',
+    }),
     stylePrefix: 'principleCard',
     label: 'Inclusive',
     title:
@@ -54,10 +53,9 @@ const cards = [
     overrides: principleCardoverrides,
   },
   {
-    media: {
-      src: 'static/about-principles-03.svg',
-      alt: '',
-    },
+    media: getIllustrationComponent('about/principles-03', {
+      viewBox: '0 0 1344 759',
+    }),
     stylePrefix: 'principleCard',
     label: 'Essential',
     title:
@@ -67,10 +65,9 @@ const cards = [
     overrides: principleCardoverrides,
   },
   {
-    media: {
-      src: 'static/about-principles-04.svg',
-      alt: '',
-    },
+    media: getIllustrationComponent('about/principles-04', {
+      viewBox: '0 0 1344 759',
+    }),
     stylePrefix: 'principleCard',
     label: 'Collaborative',
     title: 'Great ideas come from everywhere',

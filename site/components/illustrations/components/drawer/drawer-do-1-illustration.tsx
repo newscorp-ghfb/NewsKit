@@ -11,7 +11,7 @@ export const DrawersDo1Illustration: React.FC = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <Rect width="1490" height="838" fill="illustrationBackground020" />
+    <Rect width="1490" height="838" fill="illustrationBackground010" />
     <Path
       d="M257 136.259C257 126.729 264.725 119.004 274.255 119.004H1215.74C1225.27 119.004 1233 126.729 1233 136.259V700.289C1233 709.818 1225.27 717.544 1215.74 717.544H274.255C264.725 717.544 257 709.818 257 700.289V136.259Z"
       fill="illustrationInterface020"

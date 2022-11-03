@@ -37,12 +37,13 @@ export const CheckedDisabled: React.FC = () => {
           d="M697 640.89L552 575.656L586.295 729.656L628.2 668.831L697 640.89Z"
           fill="black"
         />
-        <Path
-          d="M699.079 646.01L711.046 641.15L699.267 635.851L554.267 570.617L544.209 566.092L546.606 576.857L580.901 730.857L583.656 743.227L590.845 732.791L631.812 673.328L699.079 646.01Z"
-          stroke="white"
-          strokeWidth="11.0518"
-        />
       </g>
+      <Path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M725.092 641.41L635.424 677.825L581.016 756.798L536.417 556.527L725.092 641.41ZM628.2 668.831L697 640.89L552 575.656L586.295 729.656L628.2 668.831Z"
+        fill="white"
+      />
       <g filter={`url(#${filter1})`}>
         <Path
           fillRule="evenodd"
@@ -60,10 +61,10 @@ export const CheckedDisabled: React.FC = () => {
       <defs>
         <filter
           id={filter0}
-          x="503.262"
-          y="534.424"
-          width="254.985"
-          height="266.58"
+          x="518.845"
+          y="553.553"
+          width="211.311"
+          height="220.311"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >

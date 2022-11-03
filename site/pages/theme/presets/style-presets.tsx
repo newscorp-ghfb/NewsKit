@@ -286,7 +286,7 @@ const ImageWrapper = styled.div`
 
 const getImage = (url: string) => (
   <ImageWrapper>
-    <Illustration viewBox="0 0 1000 1001" path={url} />
+    <Illustration viewBox="0 0 1000 1000" path={url} />
   </ImageWrapper>
 );
 

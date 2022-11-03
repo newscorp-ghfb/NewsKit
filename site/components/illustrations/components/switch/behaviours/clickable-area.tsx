@@ -5,7 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const ClickableArea: React.FC = () => {
-  const clip0 = getSSRId();
   const filter0 = getSSRId();
 
   return (
@@ -69,14 +68,14 @@ export const ClickableArea: React.FC = () => {
         rx="120.5"
         fill="illustrationAnatomySubtle"
       />
-      <g clipPath={`url(#${clip0})`}>
-        <Rect
-          width="180.744"
-          height="180.744"
-          transform="translate(343.124 323.131)"
-          fill="interface010"
-        />
-      </g>
+      <Rect
+        x="343.124"
+        y="323.131"
+        width="180.744"
+        height="180.744"
+        rx="90.3722"
+        fill="interface010"
+      />
       <Path
         d="M697.082 371.405L686.463 360.787L644.365 402.885L602.266 360.787L591.647 371.405L633.746 413.504L591.647 455.602L602.266 466.221L644.365 424.122L686.463 466.221L697.082 455.602L654.983 413.504L697.082 371.405Z"
         fill="interface010"
@@ -170,16 +169,6 @@ export const ClickableArea: React.FC = () => {
             result="shape"
           />
         </filter>
-        <clipPath id={clip0}>
-          <Rect
-            x="343.124"
-            y="323.131"
-            width="180.744"
-            height="180.744"
-            rx="90.3722"
-            fill="white"
-          />
-        </clipPath>
       </defs>
     </Svg>
   );

@@ -5,7 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const FocusHover: React.FC = () => {
-  const clip0 = getSSRId();
   const filter0 = getSSRId();
 
   return (
@@ -18,7 +17,7 @@ export const FocusHover: React.FC = () => {
     >
       <Path d="M0 0H1490V838H0V0Z" fill="illustrationBackground020" />
       <Path
-        d="M238 418.81C238 311.772 324.772 225 431.81 225V225C538.849 225 625.621 311.772 625.621 418.81V418.81C625.621 525.849 538.849 612.621 431.81 612.621V612.621C324.772 612.621 238 525.849 238 418.81V418.81Z"
+        d="M238 418.81C238 311.772 324.772 225 431.81 225C538.849 225 625.621 311.772 625.621 418.81C625.621 525.849 538.849 612.621 431.81 612.621C324.772 612.621 238 525.849 238 418.81Z"
         fill="illustrationInterface020"
       />
       <Rect
@@ -29,14 +28,14 @@ export const FocusHover: React.FC = () => {
         rx="136"
         fill="illustrationAnatomySubtle"
       />
-      <g clipPath={`url(#${clip0})`}>
-        <Rect
-          width="203.994"
-          height="203.994"
-          transform="translate(329.999 317.007)"
-          fill="interface010"
-        />
-      </g>
+      <Rect
+        x="329.999"
+        y="317.007"
+        width="203.994"
+        height="203.994"
+        rx="101.997"
+        fill="interface010"
+      />
       <Path
         d="M729.486 371.49L717.502 359.506L669.988 407.019L622.475 359.506L610.49 371.49L658.004 419.004L610.49 466.518L622.475 478.502L669.988 430.989L717.502 478.502L729.486 466.518L681.973 419.004L729.486 371.49Z"
         fill="interface010"
@@ -48,8 +47,8 @@ export const FocusHover: React.FC = () => {
         height="287.992"
         rx="143.996"
         stroke="#577FFB"
-        strokeWidth="16"
-        strokeDasharray="23 23"
+        stroke-width="16"
+        stroke-dasharray="23 23"
       />
       <g filter={`url(#${filter0})`}>
         <Path
@@ -120,16 +119,6 @@ export const FocusHover: React.FC = () => {
             result="shape"
           />
         </filter>
-        <clipPath id={clip0}>
-          <Rect
-            x="329.999"
-            y="317.007"
-            width="203.994"
-            height="203.994"
-            rx="101.997"
-            fill="white"
-          />
-        </clipPath>
       </defs>
     </Svg>
   );

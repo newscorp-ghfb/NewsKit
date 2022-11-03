@@ -18,7 +18,7 @@ export const ProgressIndicatorIllustration: React.FC = () => (
       width="773"
       height="118"
       rx="59"
-      fill="illustrationShadow010"
+      fill="illustrationBorder010"
     />
     <Path
       d="M683.116 370L417 370C389.938 370 368 391.938 368 419C368 446.062 389.938 468 417 468H696.536C701.412 436.162 697.557 402.621 683.565 371.006C683.416 370.67 683.266 370.335 683.116 370Z"

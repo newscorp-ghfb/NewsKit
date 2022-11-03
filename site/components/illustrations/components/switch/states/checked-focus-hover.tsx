@@ -5,7 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const CheckedFocusHover: React.FC = () => {
-  const clip0 = getSSRId();
   const filter0 = getSSRId();
 
   return (
@@ -24,7 +23,7 @@ export const CheckedFocusHover: React.FC = () => {
       <Rect
         x="296"
         y="283"
-        width="509.993"
+        width="509.984"
         height="272"
         rx="136"
         fill="illustrationHighlight010"
@@ -33,14 +32,14 @@ export const CheckedFocusHover: React.FC = () => {
         d="M406.497 454.699L370.798 419L358.898 430.899L406.497 478.498L508.494 376.501L496.594 364.602L406.497 454.699Z"
         fill="interface010"
       />
-      <g clipPath={`url(#${clip0})`}>
-        <Rect
-          width="203.994"
-          height="203.994"
-          transform="translate(568 317.007)"
-          fill="interface010"
-        />
-      </g>
+      <Rect
+        x="567.991"
+        y="317.007"
+        width="203.994"
+        height="203.994"
+        rx="101.997"
+        fill="interface010"
+      />
       <Rect
         x="288"
         y="275"
@@ -48,8 +47,8 @@ export const CheckedFocusHover: React.FC = () => {
         height="287.992"
         rx="143.996"
         stroke="#577FFB"
-        strokeWidth="16"
-        strokeDasharray="23 23"
+        stroke-width="16"
+        stroke-dasharray="23 23"
       />
       <g filter={`url(#${filter0})`}>
         <Path
@@ -120,16 +119,6 @@ export const CheckedFocusHover: React.FC = () => {
             result="shape"
           />
         </filter>
-        <clipPath id={clip0}>
-          <Rect
-            x="568"
-            y="317.007"
-            width="203.994"
-            height="203.994"
-            rx="101.997"
-            fill="white"
-          />
-        </clipPath>
       </defs>
     </Svg>
   );

@@ -6,7 +6,6 @@ import {Rect} from '../../../rect';
 
 export const Hover: React.FC = () => {
   const clip0 = getSSRId();
-  const clip1 = getSSRId();
   const filter0 = getSSRId();
 
   return (
@@ -20,7 +19,7 @@ export const Hover: React.FC = () => {
       <g clipPath={`url(#${clip0})`}>
         <Path d="M0 0H1490V838H0V0Z" fill="illustrationBackground020" />
         <Path
-          d="M238 418.81C238 311.772 324.772 225 431.81 225V225C538.849 225 625.621 311.772 625.621 418.81V418.81C625.621 525.849 538.849 612.621 431.81 612.621V612.621C324.772 612.621 238 525.849 238 418.81V418.81Z"
+          d="M238 418.81C238 311.772 324.772 225 431.81 225C538.849 225 625.621 311.772 625.621 418.81C625.621 525.849 538.849 612.621 431.81 612.621C324.772 612.621 238 525.849 238 418.81Z"
           fill="illustrationInterface020"
         />
         <Rect
@@ -31,14 +30,14 @@ export const Hover: React.FC = () => {
           rx="136"
           fill="illustrationAnatomySubtle"
         />
-        <g clipPath={`url(#${clip1})`}>
-          <Rect
-            width="203.994"
-            height="203.994"
-            transform="translate(329.999 317.006)"
-            fill="interface010"
-          />
-        </g>
+        <Rect
+          x="329.999"
+          y="317.006"
+          width="203.994"
+          height="203.994"
+          rx="101.997"
+          fill="interface010"
+        />
         <Path
           d="M729.486 371.489L717.502 359.504L669.988 407.017L622.475 359.504L610.49 371.489L658.004 419.002L610.49 466.516L622.475 478.5L669.988 430.987L717.502 478.5L729.486 466.516L681.973 419.002L729.486 371.489Z"
           fill="interface010"
@@ -115,16 +114,6 @@ export const Hover: React.FC = () => {
         </filter>
         <clipPath id={clip0}>
           <Rect width="1490" height="838" fill="white" />
-        </clipPath>
-        <clipPath id={clip1}>
-          <Rect
-            x="329.999"
-            y="317.006"
-            width="203.994"
-            height="203.994"
-            rx="101.997"
-            fill="white"
-          />
         </clipPath>
       </defs>
     </Svg>

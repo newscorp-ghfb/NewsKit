@@ -5,7 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const Feedback: React.FC = () => {
-  const clip0 = getSSRId();
   const filter0 = getSSRId();
 
   return (
@@ -76,14 +75,14 @@ export const Feedback: React.FC = () => {
         d="M339.715 451.393L307.823 419.501L297.192 430.131L339.715 472.655L430.837 381.533L420.206 370.902L339.715 451.393Z"
         fill="interface010"
       />
-      <g clipPath={`url(#${clip0})`}>
-        <Rect
-          width="182.243"
-          height="182.243"
-          transform="translate(483.999 328.381)"
-          fill="interface010"
-        />
-      </g>
+      <Rect
+        x="483.999"
+        y="328.381"
+        width="182.243"
+        height="182.243"
+        rx="91.1217"
+        fill="interface010"
+      />
       <Path
         d="M577.05 373.609C551.89 373.609 531.489 394.011 531.489 419.17C531.489 444.33 551.89 464.731 577.05 464.731C602.21 464.731 622.611 444.33 622.611 419.17C622.611 416.842 622.408 414.513 622.105 412.285C617.143 419.221 609.044 423.726 599.83 423.726C584.745 423.726 572.494 411.476 572.494 396.39C572.494 387.227 576.999 379.077 583.935 374.116C581.707 373.812 579.379 373.609 577.05 373.609Z"
         fill="illustrationHighlight010"
@@ -137,16 +136,6 @@ export const Feedback: React.FC = () => {
             result="shape"
           />
         </filter>
-        <clipPath id={clip0}>
-          <Rect
-            x="483.999"
-            y="328.381"
-            width="182.243"
-            height="182.243"
-            rx="91.1217"
-            fill="white"
-          />
-        </clipPath>
       </defs>
     </Svg>
   );

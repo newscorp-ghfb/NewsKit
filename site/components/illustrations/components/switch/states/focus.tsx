@@ -6,7 +6,6 @@ import {Rect} from '../../../rect';
 
 export const Focus: React.FC = () => {
   const clip0 = getSSRId();
-  const clip1 = getSSRId();
 
   return (
     <Svg
@@ -26,14 +25,14 @@ export const Focus: React.FC = () => {
           rx="136"
           fill="illustrationAnatomySubtle"
         />
-        <g clipPath={`url(#${clip1})`}>
-          <Rect
-            width="203.994"
-            height="203.994"
-            transform="translate(329.999 317.006)"
-            fill="interface010"
-          />
-        </g>
+        <Rect
+          x="329.999"
+          y="317.006"
+          width="203.994"
+          height="203.994"
+          rx="101.997"
+          fill="interface010"
+        />
         <Path
           d="M729.486 371.489L717.502 359.504L669.988 407.017L622.475 359.504L610.49 371.489L658.004 419.002L610.49 466.516L622.475 478.5L669.988 430.987L717.502 478.5L729.486 466.516L681.973 419.002L729.486 371.489Z"
           fill="interface010"
@@ -45,8 +44,8 @@ export const Focus: React.FC = () => {
           height="287.992"
           rx="143.996"
           stroke="#577FFB"
-          strokeWidth="16"
-          strokeDasharray="23 23"
+          stroke-width="16"
+          stroke-dasharray="23 23"
         />
         <Path
           d="M868.359 455.381H900.021V467.786H853V374.068H868.359V455.381Z"
@@ -72,16 +71,6 @@ export const Focus: React.FC = () => {
       <defs>
         <clipPath id={clip0}>
           <Rect width="1490" height="838" fill="white" />
-        </clipPath>
-        <clipPath id={clip1}>
-          <Rect
-            x="329.999"
-            y="317.006"
-            width="203.994"
-            height="203.994"
-            rx="101.997"
-            fill="white"
-          />
         </clipPath>
       </defs>
     </Svg>
