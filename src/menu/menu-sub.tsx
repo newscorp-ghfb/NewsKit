@@ -1,31 +1,15 @@
 import React from 'react';
 import {useMenuContext} from './context';
 import {MenuSubIconProps, MenuSubProps} from './types';
-import {StyledButton, StyledMenuItem} from './styled';
+import {StyledButton, StyledMenuItem, StyledUl} from './styled';
 
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {get} from '../utils/get';
-import {styled} from '../utils';
 import {useControlled} from '../utils/hooks';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {IconFilledExpandLess, IconFilledExpandMore} from '../icons';
 import {getComponentOverrides} from '../utils/overrides';
-
-const StyledUl = styled.ul<{expanded?: boolean; vertical?: boolean}>`
-  display: ${({expanded}) => (expanded ? 'flex' : 'none')} !important;
-  flex-direction: ${({vertical}) => (vertical ? 'column' : 'row')};
-  border: 1px solid red;
-
-  ${({vertical}) =>
-    vertical
-      ? {}
-      : {
-          position: 'absolute',
-          left: '0',
-          width: '100%',
-        }};
-`;
 
 const DefaultIcon = ({expanded, overrides}: MenuSubIconProps) =>
   expanded ? (
@@ -54,9 +38,6 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
       expanded: expandedProp,
       defaultExpanded,
       onClick,
-      onChange,
-      onMouseEnter,
-      onMouseLeave,
       ...rest
     },
     ref,
@@ -78,14 +59,6 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
       setIsExpanded(!isExpanded);
     }, [isExpanded, setIsExpanded]);
 
-    const handleMouseEnter = React.useCallback(() => {
-      // setIsExpanded(true);
-    }, [setIsExpanded]);
-
-    const handleOpenMouseLeave = React.useCallback(() => {
-      // setIsExpanded(false);
-    }, [setIsExpanded]);
-
     const {vertical, size, align, overrides: menuOverrides} = useMenuContext();
 
     const theme = useTheme();
@@ -105,15 +78,10 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
 
     return (
       <StyledMenuItem
-        className="nk-menu-item"
+        className="nk-sub-menu"
         vertical={vertical}
         overrides={menuOverrides}
         ref={ref}
-        onMouseEnter={composeEventHandlers([handleMouseEnter, onMouseEnter])}
-        onMouseLeave={composeEventHandlers([
-          handleOpenMouseLeave,
-          onMouseLeave,
-        ])}
       >
         {/*
         @ts-ignore */}
@@ -122,9 +90,6 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
           align={align}
           overrides={{
             ...menuItemOverrides,
-            // width 100% should not be overwritten
-            // move to StyledButton once PPDSC-1449 is resolved
-            width: '100%',
           }}
           aria-current={selected && 'page'}
           onClick={composeEventHandlers([handleClick, onClick])}

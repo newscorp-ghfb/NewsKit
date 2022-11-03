@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import {TextAlignProperty} from 'csstype';
-import {Button} from '../button';
+import {Button, ButtonLinkProps} from '../button';
 import {getStylePreset, getResponsiveSpace, styled} from '../utils/style';
-import {MenuGroupProps, MenuItemAlign, MenuProps} from './types';
+import {MenuGroupProps, MenuItemAlign, MenuProps, MenuSubProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
 
 export const StyledMenu = styled.nav<MenuProps>`
@@ -45,15 +45,6 @@ export const StyledMenuGroup = styled.li<
       '',
       'spaceInline',
     )}
-
-  > ul {
-    box-sizing: border-box;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    ${({vertical}) => !vertical && 'display: flex;'}
-  }
 `;
 
 export const StyledMenuGroupTitle = styled.div<
@@ -88,15 +79,6 @@ export const StyledMenuItem = styled.li<
       '',
       'spaceInline',
     )}
-
-  > ul {
-    box-sizing: border-box;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    ${({vertical}) => !vertical && 'display: flex;'}
-  }
 `;
 
 const menuItemFlexAlign = {
@@ -111,10 +93,12 @@ const menuItemTextAlign = {
   end: 'right',
 };
 
-export const StyledButton = styled(Button)<{
-  align?: MenuItemAlign | undefined;
-  selected?: boolean;
-}>`
+export const StyledButton = styled(Button)<
+  Omit<ButtonLinkProps, 'href'> & {
+    align?: MenuItemAlign | undefined;
+    selected?: boolean;
+  }
+>`
   ${({selected}) =>
     selected && getStylePreset('menuItem', '', {isSelected: selected})}
 
@@ -123,6 +107,7 @@ export const StyledButton = styled(Button)<{
       justifyContent: menuItemFlexAlign[align],
       textAlign: menuItemTextAlign[align] as TextAlignProperty,
     }}
+   width: 100%;
 `;
 
 export const StyledMenuDivider = styled.li<
@@ -149,4 +134,24 @@ export const StyledMenuDivider = styled.li<
         'spaceInline',
       )}
   }
+`;
+
+export const StyledUl = styled.ul<
+  Pick<MenuProps, 'vertical'> & Pick<MenuSubProps, 'expanded'>
+>`
+  display: ${({expanded}) => (expanded ? 'flex' : 'none')} !important;
+  flex-direction: ${({vertical}) => (vertical ? 'column' : 'row')};
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  ${({vertical}) =>
+    vertical
+      ? {}
+      : {
+          position: 'absolute',
+          left: '0',
+          width: '100%',
+        }};
 `;

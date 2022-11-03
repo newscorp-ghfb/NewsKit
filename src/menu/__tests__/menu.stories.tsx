@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
@@ -11,7 +11,6 @@ import {Menu, MenuItem, MenuSub, MenuGroup, MenuDivider} from '..';
 import {styled, getColorCssFromTheme} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
-import {Popover} from '../../popover';
 import {useMediaQueryObject} from '../../utils/hooks';
 
 // eslint-disable-next-line no-script-url
@@ -1298,55 +1297,61 @@ export const StoryMenuItemsOutlineOverrides = () => (
 );
 StoryMenuItemsOutlineOverrides.storyName = 'menu items outline overrides';
 
-const MenuWrapper = styled.div`
-  .menu {
-    width: 240px;
-  }
+export const StorySubMenuHorizontal = () => {
+  const [subMenu1Expanded, setSubMenu1Expanded] = useState(false);
+  const [subMenu11Expanded, setSubMenu11Expanded] = useState(false);
+  const [subMenu2Expanded, setSubMenu2Expanded] = useState(false);
+  return (
+    <>
+      <StorybookSubHeading>Sub menu - horizontal</StorybookSubHeading>
+      <Menu aria-label="Menu">
+        <MenuItem href={href}>Menu item 1</MenuItem>
+        <MenuItem href={href}>Menu item 2</MenuItem>
+        <MenuItem href={href}>Menu item 3</MenuItem>
 
-  /* .menu > ul > li > ul,
-  .menu > ul > li > ul > li > ul {
-    display: none;
-  }
+        <MenuSub
+          title="Sub menu 1"
+          expanded={subMenu1Expanded}
+          onClick={() => setSubMenu1Expanded(!subMenu1Expanded)}
+        >
+          <MenuItem href={href}>Sub menu item 1</MenuItem>
+          <MenuItem href={href}>Sub menu item 2</MenuItem>
+          <MenuItem href={href}>Sub menu item 3</MenuItem>
 
-  .menu > ul > li:hover > ul,
-  .menu > ul > li:hover > ul > li:hover > ul {
-    display: block;
-  }
-  .menu-horizontal > ul > li:hover > ul,
-  .menu-horizontal > ul > li:hover > ul > li:hover > ul {
-    display: flex;
-  }
+          <MenuSub
+            title="Sub menu 1.1"
+            expanded={subMenu11Expanded}
+            onClick={() => setSubMenu11Expanded(!subMenu11Expanded)}
+          >
+            <MenuItem href={href}>Sub menu item 1.1.1</MenuItem>
+            <MenuItem href={href}>Sub menu item 1.1.2</MenuItem>
+            <MenuItem href={href}>Sub menu item 1.1.3</MenuItem>
+          </MenuSub>
+        </MenuSub>
 
-  .menu-horizontal {
-    display: relative;
-    width: 800px;
-  }
+        <MenuSub
+          title="Sub menu 2"
+          expanded={subMenu2Expanded}
+          onClick={() => setSubMenu2Expanded(!subMenu2Expanded)}
+        >
+          <MenuItem href={href}>Sub menu item 1</MenuItem>
+          <MenuItem href={href}>Sub menu item 2</MenuItem>
+          <MenuItem href={href}>Sub menu item 3</MenuItem>
+        </MenuSub>
+      </Menu>
+    </>
+  );
+};
+StorySubMenuHorizontal.storyName = 'sub-menu-horizontal';
 
-  .menu-horizontal h2 {
-    cursor: pointer;
-    min-height: 48px;
-    padding: 12px 16px;
-    box-sizing: border-box;
-    display: grid;
-    place-items: center;
-  }
-
-  .menu-horizontal > ul > li > ul,
-  .menu-horizontal > ul > li > ul > li > ul {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    border: 1px solid gray;
-  } */
-`;
-
-export const StoryMenuMultiple = () => (
-  <MenuWrapper>
+export const StorySubMenuVertical = () => (
+  <>
+    <StorybookSubHeading>Sub menu - vertical</StorybookSubHeading>
     <Menu aria-label="Menu" vertical className="menu">
-      <MenuItem href={href}>Item 1</MenuItem>
-      <MenuItem href={href}>Item 2</MenuItem>
-      <MenuItem href={href}>Item 3</MenuItem>
-      <MenuSub title="Sub 1">
+      <MenuItem href={href}>Menu item 1</MenuItem>
+      <MenuItem href={href}>Menu item 2</MenuItem>
+      <MenuItem href={href}>Menu item 3</MenuItem>
+      <MenuSub title="Sub menu">
         <MenuItem href={href}>Item G1 1</MenuItem>
         <MenuItem href={href}>Item G1 2</MenuItem>
         <MenuItem href={href}>Item G1 3</MenuItem>
@@ -1357,38 +1362,10 @@ export const StoryMenuMultiple = () => (
           <MenuItem href={href}>Item G1.1 3</MenuItem>
         </MenuSub>
       </MenuSub>
-      <MenuSub title="Sub 2">
-        <MenuItem href={href}>Item G2 1</MenuItem>
-        <MenuItem href={href}>Item G2 2</MenuItem>
-        <MenuItem href={href}>Item G2 3</MenuItem>
-      </MenuSub>
     </Menu>
-
-    <Menu aria-label="Menu" className="menu menu-horizontal">
-      <MenuItem href={href}>Item 1</MenuItem>
-      <MenuItem href={href}>Item 2</MenuItem>
-      <MenuItem href={href}>Item 3</MenuItem>
-
-      <MenuSub title="Sub 1">
-        <MenuItem href={href}>Item G1 1</MenuItem>
-        <MenuItem href={href}>Item G1 2</MenuItem>
-        <MenuItem href={href}>Item G1 3</MenuItem>
-
-        <MenuSub title="Sub 1.1">
-          <MenuItem href={href}>Item G1.1 1</MenuItem>
-          <MenuItem href={href}>Item G1.1 2</MenuItem>
-          <MenuItem href={href}>Item G1.1 3</MenuItem>
-        </MenuSub>
-      </MenuSub>
-
-      <MenuSub title="Sub 2">
-        <MenuItem href={href}>Item G2 1</MenuItem>
-        <MenuItem href={href}>Item G2 2</MenuItem>
-        <MenuItem href={href}>Item G2 3</MenuItem>
-      </MenuSub>
-    </Menu>
-  </MenuWrapper>
+  </>
 );
+StorySubMenuVertical.storyName = 'sub-menu-vertical';
 
 const splitMenuItems = (arr: MenuElement[], n: number) => {
   const visible = [...arr].splice(0, n);
@@ -1438,9 +1415,6 @@ const MenuMore = ({children}: {children: React.ReactNode}) => (
 );
 
 export const StoryMenuMultipleAuto = () => {
-  // mouse-over or click
-  // click on icon
-
   const splitNumber = useMediaQueryObject({
     xs: 2,
     sm: 3,
@@ -1452,43 +1426,13 @@ export const StoryMenuMultipleAuto = () => {
   const {visible, invisible} = splitMenuItems(items, splitNumber || 1000);
 
   return (
-    <MenuWrapper>
-      <Menu aria-label="Menu">
-        {createMenu(visible)}
-        {invisible.length > 0 && (
-          <MenuMore>{createMoreMenu(invisible)}</MenuMore>
-        )}
-      </Menu>
-
-      <hr />
-    </MenuWrapper>
+    <Menu aria-label="Menu">
+      {createMenu(visible)}
+      {invisible.length > 0 && <MenuMore>{createMoreMenu(invisible)}</MenuMore>}
+    </Menu>
   );
 };
-
-export const StoryMenuMultiplePopOver = () => {
-  const popOverContent = (
-    <ul>
-      <MenuItem href={href}>Item G1.1 1</MenuItem>
-      <MenuItem href={href}>Item G1.1 2</MenuItem>
-      <MenuItem href={href}>Item G1.1 3</MenuItem>
-    </ul>
-  );
-
-  return (
-    <>
-      <h2>Popover example</h2>
-      <p>Semanticly not correct, also the content is hidden from the DOM</p>
-      <Menu aria-label="Menu" className="menu menu-horizontal">
-        <MenuItem href={href}>Item 1</MenuItem>
-        <MenuItem href={href}>Item 2</MenuItem>
-        <MenuItem href={href}>Item 3</MenuItem>
-        <Popover content={popOverContent} closePosition="none">
-          <MenuItem href="/">Item 4</MenuItem>
-        </Popover>
-      </Menu>
-    </>
-  );
-};
+StoryMenuMultipleAuto.storyName = 'sub-menu-auto';
 
 export default {
   title: 'Components/menu',

@@ -51,7 +51,7 @@ export const MenuGroup = React.forwardRef<HTMLLIElement, MenuGroupProps>(
     const {aria, rest} = splitAriaProps(restProps);
     const titleID = useReactKeys(1)[0];
 
-    const shouldRenderTitle = Boolean(title);
+    const shouldRenderTitle = vertical && Boolean(title);
 
     return (
       <StyledMenuGroup
