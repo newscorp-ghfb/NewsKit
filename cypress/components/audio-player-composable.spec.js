@@ -127,7 +127,7 @@ describe('audio player composable', () => {
     isPaused();
   });
 
-  it.skip('move track using slider', () => {
+  it('move track using slider', () => {
     // move to middle
     cy.get('@audioSliderTrack').click('center');
     checkTime(Math.ceil(TEST_DATA.durationInSeconds / 2));
@@ -141,7 +141,7 @@ describe('audio player composable', () => {
     checkTime(4 * 60);
   });
 
-  it.skip('pause when end', () => {
+  it('pause when end', () => {
     // start playing
     cy.get('@togglePlay').click();
     // move to the end
@@ -210,7 +210,7 @@ describe('audio player composable', () => {
     isPaused();
   });
 
-  it.skip('keyboard: move track using 0, Start and End key', () => {
+  it('keyboard: move track using 0, Start and End key', () => {
     cy.get('@togglePlay').focus();
     triggerKeyEvent('@togglePlay', {key: 'End'});
     checkTime(TEST_DATA.durationInSeconds);
