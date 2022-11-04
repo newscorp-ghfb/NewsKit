@@ -122,7 +122,7 @@ const Index = ({
         </GridLayout>
       </GridLayout>
       {staticScripts.map(fileName => (
-        <script src={`/_next/static/chunks/${fileName}`} />
+        <script src={`_next/static/chunks/${fileName}`} />
       ))}
     </Layout>
   );
