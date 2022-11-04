@@ -107,6 +107,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
                       handleCloseButtonClick();
                     }
                   }}
+                  eventOriginator="popover-close"
                   data-testid="close-button"
                   aria-label="close"
                   overrides={closeButtonOverrides}

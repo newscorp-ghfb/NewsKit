@@ -153,6 +153,9 @@ const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
                   data-testid={`scroll-arrow-${vertical ? 'bottom' : 'right'}`}
                   onClick={() => scrollContainer(stepDistance)}
                   size={iconSize}
+                  eventOriginator={`scroll-button-${
+                    vertical ? 'bottom' : 'right'
+                  }`}
                 >
                   <IconFilledChevronRight />
                 </IconButton>
@@ -173,6 +176,7 @@ const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
                   data-testid={`scroll-arrow-${vertical ? 'top' : 'left'}`}
                   onClick={() => scrollContainer(-stepDistance)}
                   size={iconSize}
+                  eventOriginator={`scroll-button-${vertical ? 'top' : 'left'}`}
                 >
                   <IconFilledChevronLeft />
                 </IconButton>
