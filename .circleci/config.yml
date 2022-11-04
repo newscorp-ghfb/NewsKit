@@ -1027,14 +1027,14 @@ jobs:
       - run:
           name: Install yalc and create-next-app
           command: |
-            yarn global add yalc && yarn add create-next-app@latest
+            yarn global add yalc
       - run:
           name: Yalc publish and run create-nextjs-app
           command: |
             cd dist
             yalc publish
             cd ..
-            npx create-next-app@latest newskit-integration-test
+            yarn create next-app newskit-integration-test
       - run:
           name: Prepare the NextJs app
           command: |
@@ -1042,6 +1042,7 @@ jobs:
 
             cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
             cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
+            cp ./scripts/templates-integration-test/next.config.js ./newskit-integration-test/
             mkdir -p ./newskit-integration-test/cypress/integration
             cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
 
@@ -1724,6 +1725,7 @@ workflows:
           context: ncu-newskit-site-prod
           requires:
             - build_icons
+            - delete_trigger_release_tag
       - test_broken_links_docs:
           <<: *only_on_version_tag
           name: test_broken_links_docs_prod

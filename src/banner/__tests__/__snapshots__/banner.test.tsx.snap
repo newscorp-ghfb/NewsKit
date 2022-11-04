@@ -2696,24 +2696,32 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-10 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2724,7 +2732,6 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2786,36 +2793,6 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2826,13 +2803,13 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   display: inline-block;
 }
 
-.emotion-13::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-13::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2882,15 +2859,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   <span
                     class="emotion-11"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        CTA Button
-                      </span>
-                    </span>
+                    CTA Button
                   </span>
                 </button>
               </div>
@@ -2905,15 +2874,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   <span
                     class="emotion-11"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        CTA Button
-                      </span>
-                    </span>
+                    CTA Button
                   </span>
                 </button>
               </div>
@@ -3149,24 +3110,32 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-10 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3177,7 +3146,6 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3239,36 +3207,6 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3279,13 +3217,13 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   display: inline-block;
 }
 
-.emotion-13::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-13::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3335,15 +3273,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   <span
                     class="emotion-11"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        CTA Button
-                      </span>
-                    </span>
+                    CTA Button
                   </span>
                 </button>
               </div>
@@ -3358,15 +3288,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
                   <span
                     class="emotion-11"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        CTA Button
-                      </span>
-                    </span>
+                    CTA Button
                   </span>
                 </button>
               </div>
@@ -3603,24 +3525,32 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 }
 
 .emotion-10 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3631,7 +3561,6 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3693,36 +3622,6 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 }
 
 .emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3733,13 +3632,13 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   display: inline-block;
 }
 
-.emotion-13::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-13::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3789,15 +3688,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
                   <span
                     class="emotion-11"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        CTA Button
-                      </span>
-                    </span>
+                    CTA Button
                   </span>
                 </button>
               </div>
@@ -4037,24 +3928,32 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 }
 
 .emotion-10 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4065,7 +3964,6 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -4127,36 +4025,6 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 }
 
 .emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -4167,13 +4035,13 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   display: inline-block;
 }
 
-.emotion-13::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-13::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -4223,15 +4091,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
                   <span
                     class="emotion-11"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        CTA Button
-                      </span>
-                    </span>
+                    CTA Button
                   </span>
                 </button>
               </div>
@@ -5052,24 +4912,32 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-10 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5080,7 +4948,6 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5142,36 +5009,6 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -5182,19 +5019,19 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   display: inline-block;
 }
 
-.emotion-13::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-13::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-14 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5203,25 +5040,35 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   margin-right: calc(16px/2);
 }
 
-.emotion-15 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-13 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
+  width: 32px;
+  min-width: 64px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 32px;
-  height: 32px;
-  padding: 8px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5232,37 +5079,36 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   background-color: transparent;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
-.emotion-15 svg {
+.emotion-13 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-15 svg {
+.emotion-13 svg {
   fill: #FFFFFF;
 }
 
-.emotion-15:hover:not(:disabled) {
+.emotion-13:hover:not(:disabled) {
   background-color: rgba(255,255,255,0.1);
 }
 
-.emotion-15:active:not(:disabled) {
+.emotion-13:active:not(:disabled) {
   background-color: rgba(255,255,255,0.2);
 }
 
-.emotion-15:disabled {
+.emotion-13:disabled {
   background-color: transparent;
   color: #ABABAB;
 }
 
-.emotion-15:disabled svg {
+.emotion-13:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-15:focus-visible:not(:disabled) {
+.emotion-13:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -5271,14 +5117,14 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus-visible:not(:disabled) {
+    .emotion-13:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-15 {
+  .emotion-13 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5286,14 +5132,14 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-15 {
+  .emotion-13 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-18 {
+.emotion-14 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -5303,7 +5149,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-18 {
+  .emotion-14 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5311,7 +5157,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-18 {
+  .emotion-14 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5362,51 +5208,35 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
                   <span
                     class="emotion-11"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        CTA Button
-                      </span>
-                    </span>
+                    CTA Button
                   </span>
                 </button>
               </div>
               <div
-                class="emotion-14"
+                class="emotion-12"
               >
                 <button
                   aria-label="Close"
-                  class="emotion-15"
+                  class="emotion-13"
                   data-testid="banner-close-button"
                   type="button"
                 >
-                  <span
-                    class="emotion-11"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-14 emotion-15"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-18 emotion-19"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                        />
-                      </svg>
-                    </span>
-                  </span>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -5645,24 +5475,33 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-10 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5676,7 +5515,6 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   border-width: 1px;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -5740,36 +5578,6 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -5780,37 +5588,45 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   display: inline-block;
 }
 
-.emotion-13::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-13::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-15 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-13 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5821,37 +5637,36 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
-.emotion-15 svg {
+.emotion-13 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-15 svg {
+.emotion-13 svg {
   fill: #FFFFFF;
 }
 
-.emotion-15:hover:not(:disabled) {
+.emotion-13:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-15:active:not(:disabled) {
+.emotion-13:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-15:disabled {
+.emotion-13:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-15:disabled svg {
+.emotion-13:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-15:focus-visible:not(:disabled) {
+.emotion-13:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -5860,14 +5675,14 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus-visible:not(:disabled) {
+    .emotion-13:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-15 {
+  .emotion-13 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5875,7 +5690,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-15 {
+  .emotion-13 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5926,15 +5741,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
                   <span
                     class="emotion-11"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        Close
-                      </span>
-                    </span>
+                    Close
                   </span>
                 </button>
               </div>
@@ -5942,22 +5749,14 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
                 class="emotion-9"
               >
                 <button
-                  class="emotion-15"
+                  class="emotion-13"
                   data-testid="button"
                   type="button"
                 >
                   <span
                     class="emotion-11"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        CTA Button
-                      </span>
-                    </span>
+                    CTA Button
                   </span>
                 </button>
               </div>
@@ -6191,24 +5990,34 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 }
 
 .emotion-10 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
+  width: 32px;
+  min-width: 64px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 32px;
-  height: 32px;
-  padding: 8px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6219,7 +6028,6 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6281,36 +6089,6 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 }
 
 .emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-13 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -6320,7 +6098,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-13 {
+  .emotion-11 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6328,7 +6106,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-13 {
+  .emotion-11 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6377,30 +6155,22 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
                   data-testid="banner-close-button"
                   type="button"
                 >
-                  <span
-                    class="emotion-11"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-11 emotion-12"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-13 emotion-14"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                        />
-                      </svg>
-                    </span>
-                  </span>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -6639,24 +6409,33 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 }
 
 .emotion-10 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6670,7 +6449,6 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   border-width: 1px;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -6734,36 +6512,6 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 }
 
 .emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -6774,13 +6522,13 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   display: inline-block;
 }
 
-.emotion-13::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-13::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -6830,15 +6578,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
                   <span
                     class="emotion-11"
                   >
-                    <span
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        Close
-                      </span>
-                    </span>
+                    Close
                   </span>
                 </button>
               </div>
@@ -7118,24 +6858,32 @@ exports[`renders grid and cell overrides on banner 1`] = `
 }
 
 .emotion-11 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7146,7 +6894,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -7208,36 +6955,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
 }
 
 .emotion-12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-14 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -7248,13 +6965,13 @@ exports[`renders grid and cell overrides on banner 1`] = `
   display: inline-block;
 }
 
-.emotion-14::before {
+.emotion-12::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-14::after {
+.emotion-12::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -7307,15 +7024,7 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     <span
                       class="emotion-12"
                     >
-                      <span
-                        class="emotion-13"
-                      >
-                        <span
-                          class="emotion-14"
-                        >
-                          CTA Button
-                        </span>
-                      </span>
+                      CTA Button
                     </span>
                   </button>
                 </div>
@@ -7330,15 +7039,7 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     <span
                       class="emotion-12"
                     >
-                      <span
-                        class="emotion-13"
-                      >
-                        <span
-                          class="emotion-14"
-                        >
-                          CTA Button
-                        </span>
-                      </span>
+                      CTA Button
                     </span>
                   </button>
                 </div>
@@ -7611,24 +7312,32 @@ exports[`renders grid and cell overrides on banner 1`] = `
 }
 
 .emotion-11 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7639,7 +7348,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -7701,36 +7409,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
 }
 
 .emotion-12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-14 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -7741,13 +7419,13 @@ exports[`renders grid and cell overrides on banner 1`] = `
   display: inline-block;
 }
 
-.emotion-14::before {
+.emotion-12::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-14::after {
+.emotion-12::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -7800,15 +7478,7 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     <span
                       class="emotion-12"
                     >
-                      <span
-                        class="emotion-13"
-                      >
-                        <span
-                          class="emotion-14"
-                        >
-                          CTA Button
-                        </span>
-                      </span>
+                      CTA Button
                     </span>
                   </button>
                 </div>
@@ -7823,15 +7493,7 @@ exports[`renders grid and cell overrides on banner 1`] = `
                     <span
                       class="emotion-12"
                     >
-                      <span
-                        class="emotion-13"
-                      >
-                        <span
-                          class="emotion-14"
-                        >
-                          CTA Button
-                        </span>
-                      </span>
+                      CTA Button
                     </span>
                   </button>
                 </div>
