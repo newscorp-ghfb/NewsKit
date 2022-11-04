@@ -51,7 +51,7 @@ const CTABtn = ({
     overrides={{stylePreset: 'buttonSolidInverse', width: '100%', ...overrides}}
     {...restProps}
   >
-    {children || 'CTA Button'}
+    {children || 'CTA button'}
   </Button>
 );
 
@@ -71,11 +71,11 @@ const StoryBanner: React.FC<BannerProps> = ({children, ...restProps}) => {
         () => (
           <>
             <Visible xs sm>
-              <CTABtn onClick={action}>CTA Button</CTABtn>
+              <CTABtn onClick={action}>CTA button</CTABtn>
             </Visible>
             <Visible md lg xl>
               <CTABtn size="small" onClick={action}>
-                CTA Button
+                CTA button
               </CTABtn>
             </Visible>
           </>
@@ -154,13 +154,13 @@ export const StoryVariations = () => (
         aria-label="Banner without title and close button, two CTA buttons"
         actions={[
           () => (
-            <CTABtn onClick={() => console.log('CTA Button 1')}>
-              CTA Button 1
+            <CTABtn onClick={() => console.log('CTA button 1')}>
+              CTA button 1
             </CTABtn>
           ),
           () => (
-            <CTABtn onClick={() => console.log('CTA Button 2')}>
-              CTA Button 2
+            <CTABtn onClick={() => console.log('CTA button 2')}>
+              CTA button 2
             </CTABtn>
           ),
         ]}
