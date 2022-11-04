@@ -137,8 +137,7 @@ const getIslandScripts = (): string[] => {
   const scripts = files.filter(file =>
     neededScripts.some(s => file.startsWith(s)),
   );
-
-  return scripts; // .sort((a, b) =>  )
+  return scripts;
 };
 
 // This function is called at build time and the response is passed to the page
