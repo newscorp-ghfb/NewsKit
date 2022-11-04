@@ -8,4 +8,6 @@ module.exports = {
   ],
   concurrency: 50,
   properties: [{name: 'suite', value: 'docs'}],
+  // don't fail the pipeline job if there are visual test failures
+  failCypressOnDiff: false,
 };
