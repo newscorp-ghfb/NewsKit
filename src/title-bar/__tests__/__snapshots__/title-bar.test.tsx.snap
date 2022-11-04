@@ -152,24 +152,32 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -180,7 +188,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -242,36 +249,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -282,13 +259,13 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   display: inline-block;
 }
 
-.emotion-8::before {
+.emotion-6::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-8::after {
+.emotion-6::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -321,15 +298,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
         <span
           class="emotion-6"
         >
-          <span
-            class="emotion-7"
-          >
-            <span
-              class="emotion-8"
-            >
-              Default button
-            </span>
-          </span>
+          Default button
         </span>
       </button>
     </div>
@@ -489,24 +458,32 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
 }
 
 .emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -517,7 +494,6 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -579,36 +555,6 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -619,13 +565,13 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   display: inline-block;
 }
 
-.emotion-8::before {
+.emotion-6::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-8::after {
+.emotion-6::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -658,15 +604,7 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
         <span
           class="emotion-6"
         >
-          <span
-            class="emotion-7"
-          >
-            <span
-              class="emotion-8"
-            >
-              Default button
-            </span>
-          </span>
+          Default button
         </span>
       </button>
     </div>

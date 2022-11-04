@@ -3,6 +3,8 @@
 exports[`Content Primary renders with children only 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -71,6 +73,8 @@ exports[`Content Primary renders with children only 1`] = `
 exports[`Content Primary renders with description and children 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -285,6 +289,8 @@ exports[`Content Primary renders with description and children 1`] = `
 exports[`Content Primary renders with description only 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -456,6 +462,8 @@ exports[`Content Primary renders with description only 1`] = `
 exports[`Content Primary renders with headline and children 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -672,6 +680,8 @@ exports[`Content Primary renders with headline and children 1`] = `
 exports[`Content Primary renders with headline and description 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -991,6 +1001,8 @@ exports[`Content Primary renders with headline and description 1`] = `
 exports[`Content Primary renders with headline only 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -1164,6 +1176,8 @@ exports[`Content Primary renders with headline only 1`] = `
 exports[`Content Primary renders with headline, description and content 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -1526,6 +1540,8 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 exports[`Content Secondary renders with children only 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -1594,6 +1610,8 @@ exports[`Content Secondary renders with children only 1`] = `
 exports[`Content Secondary renders with description and children 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -1808,6 +1826,8 @@ exports[`Content Secondary renders with description and children 1`] = `
 exports[`Content Secondary renders with description only 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -1979,6 +1999,8 @@ exports[`Content Secondary renders with description only 1`] = `
 exports[`Content Secondary renders with headline and children 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -2193,6 +2215,8 @@ exports[`Content Secondary renders with headline and children 1`] = `
 exports[`Content Secondary renders with headline and description 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -2510,6 +2534,8 @@ exports[`Content Secondary renders with headline and description 1`] = `
 exports[`Content Secondary renders with headline only 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -2681,6 +2707,8 @@ exports[`Content Secondary renders with headline only 1`] = `
 exports[`Content Secondary renders with headline, description and content 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -3061,6 +3089,8 @@ exports[`Content Section renders without section name 1`] = `
 exports[`Content Tertiary renders with children only 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -3129,6 +3159,8 @@ exports[`Content Tertiary renders with children only 1`] = `
 exports[`Content Tertiary renders with description and children 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -3343,6 +3375,8 @@ exports[`Content Tertiary renders with description and children 1`] = `
 exports[`Content Tertiary renders with description only 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -3514,6 +3548,8 @@ exports[`Content Tertiary renders with description only 1`] = `
 exports[`Content Tertiary renders with headline and children 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -3728,6 +3764,8 @@ exports[`Content Tertiary renders with headline and children 1`] = `
 exports[`Content Tertiary renders with headline and description 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -4045,6 +4083,8 @@ exports[`Content Tertiary renders with headline and description 1`] = `
 exports[`Content Tertiary renders with headline only 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -4216,6 +4256,8 @@ exports[`Content Tertiary renders with headline only 1`] = `
 exports[`Content Tertiary renders with headline, description and content 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }

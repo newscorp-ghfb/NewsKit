@@ -60,13 +60,14 @@ const SwitchTrackContents = (props: BaseSwitchIconProps) => {
 };
 
 const ThemelessSwitch = React.forwardRef<HTMLInputElement, SwitchProps>(
-  ({overrides, ...rest}, inputRef) => (
+  ({overrides = {}, eventOriginator = 'switch', ...rest}, inputRef) => (
     <BaseSwitch
       path="switch"
       ref={inputRef}
       type="checkbox"
       role="switch"
-      overrides={overrides || {}}
+      overrides={overrides}
+      eventOriginator={eventOriginator}
       {...rest}
       defaultSwitchSelectorComponent={SwitchTrackContents}
     />

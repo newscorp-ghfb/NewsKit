@@ -28,36 +28,34 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 120px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -70,13 +68,13 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -155,36 +153,6 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -195,13 +163,13 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -226,15 +194,7 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -249,15 +209,7 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -272,15 +224,7 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -295,15 +239,7 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -343,32 +279,34 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 120px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -381,13 +319,13 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -467,36 +405,6 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -507,13 +415,13 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -538,15 +446,7 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -561,15 +461,7 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -584,15 +476,7 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -607,15 +491,7 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -652,36 +528,34 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -694,13 +568,13 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -779,36 +653,6 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -819,13 +663,13 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -850,15 +694,7 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -873,15 +709,7 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -896,15 +724,7 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -919,15 +739,7 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -967,32 +779,34 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1005,13 +819,13 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -1091,36 +905,6 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1131,13 +915,13 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1162,15 +946,7 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1185,15 +961,7 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1208,15 +976,7 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1231,15 +991,7 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1276,36 +1028,34 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1318,13 +1068,13 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -1403,36 +1153,6 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1443,13 +1163,13 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1474,15 +1194,7 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1497,15 +1209,7 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1520,15 +1224,7 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1543,15 +1239,7 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1591,32 +1279,34 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   margin-bottom: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1629,13 +1319,13 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -1715,36 +1405,6 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1755,13 +1415,13 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1786,15 +1446,7 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1809,15 +1461,7 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1832,15 +1476,7 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1855,15 +1491,7 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -1900,36 +1528,34 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1942,13 +1568,13 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
   text-align: right;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -2027,36 +1653,6 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2067,13 +1663,13 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2098,15 +1694,7 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2121,15 +1709,7 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2144,15 +1724,7 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2167,15 +1739,7 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2215,32 +1779,34 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   margin-bottom: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2253,13 +1819,13 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
   text-align: right;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -2339,36 +1905,6 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2379,13 +1915,13 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2410,15 +1946,7 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2433,15 +1961,7 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2456,15 +1976,7 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2479,15 +1991,7 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2524,36 +2028,34 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2566,13 +2068,13 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -2651,36 +2153,6 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2691,13 +2163,13 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2722,15 +2194,7 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2745,15 +2209,7 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2768,15 +2224,7 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2791,15 +2239,7 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -2839,32 +2279,34 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   margin-bottom: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2877,13 +2319,13 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -2963,36 +2405,6 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3003,13 +2415,13 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3034,15 +2446,7 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3057,15 +2461,7 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3080,15 +2476,7 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3103,15 +2491,7 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3148,36 +2528,34 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 64px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3190,13 +2568,13 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -3275,36 +2653,6 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -3315,13 +2663,13 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3346,15 +2694,7 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3369,15 +2709,7 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3392,15 +2724,7 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3415,15 +2739,7 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3463,32 +2779,34 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 64px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3501,13 +2819,13 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -3587,36 +2905,6 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -3627,13 +2915,13 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3658,15 +2946,7 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3681,15 +2961,7 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3704,15 +2976,7 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3727,15 +2991,7 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -3772,52 +3028,39 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .emotion-2 {
   box-sizing: border-box;
   margin-right: 8px;
 }
 
-.emotion-2>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-3 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3830,13 +3073,13 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-3 svg {
@@ -3915,36 +3158,6 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
 }
 
 .emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-6 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3955,31 +3168,31 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   display: inline-block;
 }
 
-.emotion-6::before {
+.emotion-4::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-4::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-7 {
+.emotion-5 {
   box-sizing: border-box;
 }
 
-.nk-menu-group+.emotion-7 {
+.nk-menu-group+.emotion-5 {
   margin-right: 24px;
 }
 
-.nk-menu-item+.emotion-7 {
+.nk-menu-item+.emotion-5 {
   margin-right: 8px;
 }
 
-.emotion-8 {
+.emotion-6 {
   border-style: solid;
   border-color: #C6C6C6;
   border-width: 1px;
@@ -4013,26 +3226,18 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
           <li
             aria-hidden="true"
-            class="emotion-7"
+            class="emotion-5"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="emotion-8"
+              class="emotion-6"
               data-testid="divider"
             />
           </li>
@@ -4047,15 +3252,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -4064,12 +3261,12 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
       </li>
       <li
         aria-hidden="true"
-        class="emotion-7"
+        class="emotion-5"
         role="separator"
       >
         <hr
           aria-hidden="true"
-          class="emotion-8"
+          class="emotion-6"
           data-testid="divider"
         />
       </li>
@@ -4088,26 +3285,18 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
           <li
             aria-hidden="true"
-            class="emotion-7"
+            class="emotion-5"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="emotion-8"
+              class="emotion-6"
               data-testid="divider"
             />
           </li>
@@ -4122,15 +3311,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -4170,52 +3351,39 @@ exports[`Menu renders horizontally with menu group 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .emotion-2 {
   box-sizing: border-box;
   margin-right: 8px;
 }
 
-.emotion-2>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-3 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4228,13 +3396,13 @@ exports[`Menu renders horizontally with menu group 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-3 svg {
@@ -4313,36 +3481,6 @@ exports[`Menu renders horizontally with menu group 1`] = `
 }
 
 .emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-6 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -4353,13 +3491,13 @@ exports[`Menu renders horizontally with menu group 1`] = `
   display: inline-block;
 }
 
-.emotion-6::before {
+.emotion-4::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-4::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -4388,15 +3526,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -4411,15 +3541,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -4440,15 +3562,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -4463,15 +3577,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -4510,36 +3616,34 @@ exports[`Menu renders horizontally with menu items 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4552,13 +3656,13 @@ exports[`Menu renders horizontally with menu items 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -4637,36 +3741,6 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -4677,13 +3751,13 @@ exports[`Menu renders horizontally with menu items 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -4708,15 +3782,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -4731,15 +3797,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -4754,15 +3812,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -4777,15 +3827,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -4825,44 +3867,39 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 8px;
 }
 
-.emotion-2>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-3 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4875,13 +3912,13 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-3 svg {
@@ -4961,36 +3998,6 @@ exports[`Menu renders vertically with menu dividers 1`] = `
 }
 
 .emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-6 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -5001,31 +4008,31 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   display: inline-block;
 }
 
-.emotion-6::before {
+.emotion-4::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-4::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-7 {
+.emotion-5 {
   box-sizing: border-box;
 }
 
-.nk-menu-group+.emotion-7 {
+.nk-menu-group+.emotion-5 {
   margin-bottom: 24px;
 }
 
-.nk-menu-item+.emotion-7 {
+.nk-menu-item+.emotion-5 {
   margin-bottom: 8px;
 }
 
-.emotion-8 {
+.emotion-6 {
   border-style: solid;
   border-color: #C6C6C6;
   border-width: 1px;
@@ -5058,26 +4065,18 @@ exports[`Menu renders vertically with menu dividers 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
           <li
             aria-hidden="true"
-            class="emotion-7"
+            class="emotion-5"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="emotion-8"
+              class="emotion-6"
               data-testid="divider"
             />
           </li>
@@ -5092,15 +4091,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -5109,12 +4100,12 @@ exports[`Menu renders vertically with menu dividers 1`] = `
       </li>
       <li
         aria-hidden="true"
-        class="emotion-7"
+        class="emotion-5"
         role="separator"
       >
         <hr
           aria-hidden="true"
-          class="emotion-8"
+          class="emotion-6"
           data-testid="divider"
         />
       </li>
@@ -5133,26 +4124,18 @@ exports[`Menu renders vertically with menu dividers 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
           <li
             aria-hidden="true"
-            class="emotion-7"
+            class="emotion-5"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="emotion-8"
+              class="emotion-6"
               data-testid="divider"
             />
           </li>
@@ -5167,15 +4150,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -5218,44 +4193,39 @@ exports[`Menu renders vertically with menu group 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 8px;
 }
 
-.emotion-2>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-3 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5268,13 +4238,13 @@ exports[`Menu renders vertically with menu group 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-3 svg {
@@ -5354,36 +4324,6 @@ exports[`Menu renders vertically with menu group 1`] = `
 }
 
 .emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-6 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -5394,13 +4334,13 @@ exports[`Menu renders vertically with menu group 1`] = `
   display: inline-block;
 }
 
-.emotion-6::before {
+.emotion-4::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-4::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -5429,15 +4369,7 @@ exports[`Menu renders vertically with menu group 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -5452,15 +4384,7 @@ exports[`Menu renders vertically with menu group 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -5481,15 +4405,7 @@ exports[`Menu renders vertically with menu group 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -5504,15 +4420,7 @@ exports[`Menu renders vertically with menu group 1`] = `
               <span
                 class="emotion-4"
               >
-                <span
-                  class="emotion-5"
-                >
-                  <span
-                    class="emotion-6"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -5554,32 +4462,34 @@ exports[`Menu renders vertically with menu items 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5592,13 +4502,13 @@ exports[`Menu renders vertically with menu items 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -5678,36 +4588,6 @@ exports[`Menu renders vertically with menu items 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -5718,13 +4598,13 @@ exports[`Menu renders vertically with menu items 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -5749,15 +4629,7 @@ exports[`Menu renders vertically with menu items 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -5772,15 +4644,7 @@ exports[`Menu renders vertically with menu items 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -5795,15 +4659,7 @@ exports[`Menu renders vertically with menu items 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -5818,15 +4674,7 @@ exports[`Menu renders vertically with menu items 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -5863,36 +4711,34 @@ exports[`Menu renders with default props 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -5905,13 +4751,13 @@ exports[`Menu renders with default props 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -5990,36 +4836,6 @@ exports[`Menu renders with default props 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -6030,13 +4846,13 @@ exports[`Menu renders with default props 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -6061,15 +4877,7 @@ exports[`Menu renders with default props 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -6084,15 +4892,7 @@ exports[`Menu renders with default props 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -6107,15 +4907,7 @@ exports[`Menu renders with default props 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -6130,15 +4922,7 @@ exports[`Menu renders with default props 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -6177,36 +4961,34 @@ exports[`Menu renders with logical prop overrides 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6219,13 +5001,13 @@ exports[`Menu renders with logical prop overrides 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -6304,36 +5086,6 @@ exports[`Menu renders with logical prop overrides 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -6344,13 +5096,13 @@ exports[`Menu renders with logical prop overrides 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -6375,15 +5127,7 @@ exports[`Menu renders with logical prop overrides 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -6398,15 +5142,7 @@ exports[`Menu renders with logical prop overrides 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -6421,15 +5157,7 @@ exports[`Menu renders with logical prop overrides 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -6444,15 +5172,7 @@ exports[`Menu renders with logical prop overrides 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -6718,13 +5438,6 @@ exports[`MenuGroup renders with overrides 1`] = `
   background-color: #d8335c;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 32px;
@@ -6764,32 +5477,34 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-4>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-5 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6802,13 +5517,13 @@ exports[`MenuGroup renders with overrides 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-5 svg {
@@ -6888,36 +5603,6 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -6928,13 +5613,13 @@ exports[`MenuGroup renders with overrides 1`] = `
   display: inline-block;
 }
 
-.emotion-8::before {
+.emotion-6::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-8::after {
+.emotion-6::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -6975,15 +5660,7 @@ exports[`MenuGroup renders with overrides 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -6998,15 +5675,7 @@ exports[`MenuGroup renders with overrides 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -7021,15 +5690,7 @@ exports[`MenuGroup renders with overrides 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -7044,15 +5705,7 @@ exports[`MenuGroup renders with overrides 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -7092,13 +5745,6 @@ exports[`MenuGroup renders with title as a component 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   margin-bottom: 24px;
-}
-
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .emotion-2 {
@@ -7141,32 +5787,34 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-7>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-8 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7179,13 +5827,13 @@ exports[`MenuGroup renders with title as a component 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-8 svg {
@@ -7265,36 +5913,6 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-11 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -7305,13 +5923,13 @@ exports[`MenuGroup renders with title as a component 1`] = `
   display: inline-block;
 }
 
-.emotion-11::before {
+.emotion-9::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-11::after {
+.emotion-9::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -7381,15 +5999,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -7404,15 +6014,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -7427,15 +6029,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -7450,15 +6044,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
               <span
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -7500,13 +6086,6 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 24px;
@@ -7544,32 +6123,34 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-4>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-5 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7582,13 +6163,13 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-5 svg {
@@ -7668,36 +6249,6 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -7708,13 +6259,13 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   display: inline-block;
 }
 
-.emotion-8::before {
+.emotion-6::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-8::after {
+.emotion-6::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -7755,15 +6306,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -7778,15 +6321,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -7801,15 +6336,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -7824,15 +6351,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -7874,13 +6393,6 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 24px;
@@ -7918,32 +6430,34 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-4>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-5 {
   margin: 0;
   padding: 0;
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7956,13 +6470,13 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 
 .emotion-5 svg {
@@ -8042,36 +6556,6 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -8082,13 +6566,13 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   display: inline-block;
 }
 
-.emotion-8::before {
+.emotion-6::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-8::after {
+.emotion-6::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -8129,15 +6613,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -8152,15 +6628,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -8175,15 +6643,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -8198,15 +6658,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
               <span
                 class="emotion-6"
               >
-                <span
-                  class="emotion-7"
-                >
-                  <span
-                    class="emotion-8"
-                  >
-                    Menu item
-                  </span>
-                </span>
+                Menu item
               </span>
             </a>
           </li>
@@ -8245,36 +6697,34 @@ exports[`MenuItem renders in large size 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8287,13 +6737,13 @@ exports[`MenuItem renders in large size 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -8372,36 +6822,6 @@ exports[`MenuItem renders in large size 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -8412,13 +6832,13 @@ exports[`MenuItem renders in large size 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -8443,15 +6863,7 @@ exports[`MenuItem renders in large size 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -8488,36 +6900,34 @@ exports[`MenuItem renders in medium size 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8530,13 +6940,13 @@ exports[`MenuItem renders in medium size 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -8615,36 +7025,6 @@ exports[`MenuItem renders in medium size 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -8655,13 +7035,13 @@ exports[`MenuItem renders in medium size 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -8686,15 +7066,7 @@ exports[`MenuItem renders in medium size 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -8731,36 +7103,34 @@ exports[`MenuItem renders in small size 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -8773,13 +7143,13 @@ exports[`MenuItem renders in small size 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -8858,36 +7228,6 @@ exports[`MenuItem renders in small size 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -8898,13 +7238,13 @@ exports[`MenuItem renders in small size 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -8929,15 +7269,7 @@ exports[`MenuItem renders in small size 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -8974,36 +7306,34 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9016,13 +7346,13 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -9101,36 +7431,6 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -9141,13 +7441,13 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -9173,15 +7473,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -9218,36 +7510,34 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9260,7 +7550,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   background-color: transparent;
   border-style: solid;
@@ -9272,6 +7561,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -9363,36 +7653,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -9402,7 +7662,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9410,14 +7670,14 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-8 {
+.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -9428,13 +7688,13 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   display: inline-block;
 }
 
-.emotion-8::before {
+.emotion-5::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-8::after {
+.emotion-5::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -9457,38 +7717,26 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <span
-            class="emotion-3"
+          <svg
+            aria-hidden="true"
+            class="emotion-3 emotion-4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <span
-              class="emotion-4"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-5 emotion-6"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-                />
-              </svg>
-            </span>
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-8"
-              >
-                Menu item
-              </span>
-            </span>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            />
+          </svg>
+          <span
+            class="emotion-5"
+          >
+            Menu item
           </span>
         </a>
       </li>
@@ -9525,36 +7773,34 @@ exports[`MenuItem renders with default props 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9567,13 +7813,13 @@ exports[`MenuItem renders with default props 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -9652,36 +7898,6 @@ exports[`MenuItem renders with default props 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -9692,13 +7908,13 @@ exports[`MenuItem renders with default props 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -9723,15 +7939,7 @@ exports[`MenuItem renders with default props 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
@@ -9768,36 +7976,34 @@ exports[`MenuItem renders with icon 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9810,13 +8016,13 @@ exports[`MenuItem renders with icon 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #6A6A6A;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -9895,36 +8101,6 @@ exports[`MenuItem renders with icon 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -9934,7 +8110,7 @@ exports[`MenuItem renders with icon 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9942,14 +8118,14 @@ exports[`MenuItem renders with icon 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-8 {
+.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -9960,13 +8136,13 @@ exports[`MenuItem renders with icon 1`] = `
   display: inline-block;
 }
 
-.emotion-8::before {
+.emotion-5::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-8::after {
+.emotion-5::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -9988,38 +8164,26 @@ exports[`MenuItem renders with icon 1`] = `
           data-testid="buttonLink"
           href="http://"
         >
-          <span
-            class="emotion-3"
+          <svg
+            aria-hidden="true"
+            class="emotion-3 emotion-4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <span
-              class="emotion-4"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-5 emotion-6"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-                />
-              </svg>
-            </span>
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-8"
-              >
-                Menu item
-              </span>
-            </span>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            />
+          </svg>
+          <span
+            class="emotion-5"
+          >
+            Menu item
           </span>
         </a>
       </li>
@@ -10056,36 +8220,34 @@ exports[`MenuItem renders with overrides 1`] = `
   margin-right: 8px;
 }
 
-.emotion-1>ul {
-  box-sizing: border-box;
-  list-style-type: none;
+.emotion-2 {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-grid;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+  width: 100%;
+  min-width: 10px;
+  min-height: 11px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 11px;
-  width: 100%;
-  padding: 12px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -10098,13 +8260,13 @@ exports[`MenuItem renders with overrides 1`] = `
   border-color: darkpink;
   border-width: 0px 8px 0px 0px;
   color: red;
-  margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .emotion-2 svg {
@@ -10133,36 +8295,6 @@ exports[`MenuItem renders with overrides 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-12px/2);
-  margin-right: calc(-12px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(12px/2);
-  margin-right: calc(12px/2);
-}
-
-.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -10173,13 +8305,13 @@ exports[`MenuItem renders with overrides 1`] = `
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -10204,15 +8336,7 @@ exports[`MenuItem renders with overrides 1`] = `
           <span
             class="emotion-3"
           >
-            <span
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </span>
+            Menu item
           </span>
         </a>
       </li>
