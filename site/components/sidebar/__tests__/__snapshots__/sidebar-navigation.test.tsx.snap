@@ -290,7 +290,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -298,7 +297,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -443,7 +442,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -451,7 +449,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -826,7 +824,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   -webkit-padding-start: 32px;
@@ -835,7 +832,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1247,7 +1244,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -1255,7 +1251,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1986,7 +1982,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -1994,7 +1989,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2435,7 +2430,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   -webkit-padding-start: 32px;
@@ -2444,7 +2438,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;

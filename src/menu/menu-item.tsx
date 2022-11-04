@@ -50,9 +50,6 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
           eventOriginator={eventOriginator}
           overrides={{
             ...menuItemOverrides,
-            // width 100% should not be overwritten
-            // move to StyledButton once PPDSC-1449 is resolved
-            width: '100%',
           }}
           aria-current={selected && 'page'}
         >

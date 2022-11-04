@@ -353,7 +353,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -361,7 +360,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -457,7 +456,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
@@ -466,7 +464,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3314,7 +3312,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -3322,7 +3319,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3418,7 +3415,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
@@ -3427,7 +3423,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6801,7 +6797,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -6809,7 +6804,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -6905,7 +6900,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
@@ -6914,7 +6908,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9765,7 +9759,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -9773,7 +9766,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -9869,7 +9862,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
@@ -9878,7 +9870,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  min-width: auto;
+  min-width: 64px;
   cursor: default;
   overflow: hidden;
   border: none;
