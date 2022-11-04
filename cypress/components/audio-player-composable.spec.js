@@ -59,7 +59,7 @@ const checkTime = expectedValue => {
 };
 
 const TEST_DATA = {
-  durationInSeconds: 1802,
+  durationInSeconds: 1799,
 };
 
 /*
