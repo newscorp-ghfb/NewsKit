@@ -5,6 +5,7 @@ import HeroGrid from '../../illustrations/landing-page/hero-grid';
 import {HeroProps} from './types';
 import {HeroContainer} from './styled';
 import HeroInteractiveElements from './hero-interactive-elements';
+import {Island} from '../../island/island';
 
 const DESIGN_BUTTON_PROPS = {
   href: '/getting-started/design/design-overview',
@@ -109,10 +110,12 @@ export const Hero = ({
         </GridLayoutItem>
         <GridLayoutItem>
           <Visible xl lg>
-            <HeroInteractiveElements
-              themeMode={themeMode}
-              toggleTheme={toggleTheme}
-            />
+            <Island clientOnly>
+              <HeroInteractiveElements
+                themeMode={themeMode}
+                toggleTheme={toggleTheme}
+              />
+            </Island>
             <HeroGrid />
           </Visible>
         </GridLayoutItem>

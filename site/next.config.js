@@ -40,7 +40,15 @@ module.exports = withMDX({
       ]),
     ];
 
-    return config;
+    return {
+      ...config,
+      entry() {
+        return config.entry().then(entry => ({
+          ...entry,
+          islands: './components/island/initHydration.ts',
+        }));
+      },
+    };
   },
   pageExtensions: ['js', 'jsx', 'mdx', 'tsx', 'ts'],
   trailingSlash: true, // added for static export https://stackoverflow.com/a/66573096/641979
