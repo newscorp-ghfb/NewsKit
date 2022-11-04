@@ -69,12 +69,12 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -320,12 +320,12 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -569,12 +569,12 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -820,12 +820,12 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -1069,12 +1069,12 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -1320,12 +1320,12 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -1569,12 +1569,12 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
   text-align: right;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -1820,12 +1820,12 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
   text-align: right;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -2069,12 +2069,12 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -2320,12 +2320,12 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -2569,12 +2569,12 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -2820,12 +2820,12 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -3028,6 +3028,17 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   margin-right: 8px;
@@ -3074,12 +3085,12 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-3 svg {
@@ -3351,6 +3362,17 @@ exports[`Menu renders horizontally with menu group 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   margin-right: 8px;
@@ -3397,12 +3419,12 @@ exports[`Menu renders horizontally with menu group 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-3 svg {
@@ -3657,12 +3679,12 @@ exports[`Menu renders horizontally with menu items 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -3867,6 +3889,13 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   margin-bottom: 24px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 8px;
@@ -3913,12 +3942,12 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-3 svg {
@@ -4193,6 +4222,13 @@ exports[`Menu renders vertically with menu group 1`] = `
   margin-bottom: 24px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 8px;
@@ -4239,12 +4275,12 @@ exports[`Menu renders vertically with menu group 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-3 svg {
@@ -4503,12 +4539,12 @@ exports[`Menu renders vertically with menu items 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -4752,12 +4788,12 @@ exports[`Menu renders with default props 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -5002,12 +5038,12 @@ exports[`Menu renders with logical prop overrides 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -5438,6 +5474,13 @@ exports[`MenuGroup renders with overrides 1`] = `
   background-color: #d8335c;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 32px;
@@ -5518,12 +5561,12 @@ exports[`MenuGroup renders with overrides 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-5 svg {
@@ -5747,6 +5790,13 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-bottom: 24px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 24px;
@@ -5828,12 +5878,12 @@ exports[`MenuGroup renders with title as a component 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-8 svg {
@@ -6086,6 +6136,13 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-bottom: 24px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 24px;
@@ -6164,12 +6221,12 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-5 svg {
@@ -6393,6 +6450,13 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   margin-bottom: 24px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 24px;
@@ -6471,12 +6535,12 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   border-width: 0 2px 0 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-5 svg {
@@ -6738,12 +6802,12 @@ exports[`MenuItem renders in large size 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -6941,12 +7005,12 @@ exports[`MenuItem renders in medium size 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -7144,12 +7208,12 @@ exports[`MenuItem renders in small size 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -7347,12 +7411,12 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -7551,6 +7615,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   background-color: transparent;
   border-style: solid;
   border-color: #3358CC;
@@ -7561,7 +7626,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -7814,12 +7878,12 @@ exports[`MenuItem renders with default props 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -8017,12 +8081,12 @@ exports[`MenuItem renders with icon 1`] = `
   border-width: 0 0 2px 0;
   color: #6A6A6A;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {
@@ -8261,12 +8325,12 @@ exports[`MenuItem renders with overrides 1`] = `
   border-width: 0px 8px 0px 0px;
   color: red;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 .emotion-2 svg {

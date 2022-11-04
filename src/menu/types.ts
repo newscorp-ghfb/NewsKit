@@ -7,7 +7,7 @@ import {LogicalProps} from '../utils/logical-properties';
 import {Override} from '../utils/overrides';
 
 export type MenuItemSize = 'small' | 'medium' | 'large';
-export type MenuItemAlign = 'start' | 'end' | 'center';
+export type MenuItemAlign = 'start' | 'end' | 'center' | 'spaceBetween';
 
 export interface MenuProps extends React.HTMLAttributes<HTMLElement> {
   children: Exclude<React.ReactNode, 'undefined'>;
@@ -57,7 +57,8 @@ export type MenuSubProps = Omit<
   defaultExpanded?: boolean;
   overrides?: {
     indicatorIcon?: Override<MenuSubIconProps>;
-  } & MenuItemProps['overrides'];
+  } & MenuItemProps['overrides'] &
+    LogicalProps;
 };
 
 export interface MenuDividerProps {

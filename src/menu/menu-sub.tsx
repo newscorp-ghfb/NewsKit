@@ -78,7 +78,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
 
     return (
       <StyledMenuItem
-        className="nk-sub-menu"
+        className="nk-menu-item"
         vertical={vertical}
         overrides={menuOverrides}
         ref={ref}
@@ -96,10 +96,13 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
           aria-expanded={isExpanded}
         >
           {title}
-
           <IndicatorIcon {...(indicatorIconProps as MenuSubIconProps)} />
         </StyledButton>
-        <StyledUl expanded={isExpanded} vertical={vertical}>
+        <StyledUl
+          expanded={isExpanded}
+          vertical={vertical}
+          overrides={overrides}
+        >
           {children}
         </StyledUl>
       </StyledMenuItem>

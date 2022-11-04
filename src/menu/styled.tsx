@@ -1,6 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import {TextAlignProperty} from 'csstype';
-import {Button, ButtonLinkProps} from '../button';
+import {Button} from '../button';
 import {getStylePreset, getResponsiveSpace, styled} from '../utils/style';
 import {MenuGroupProps, MenuItemAlign, MenuProps, MenuSubProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
@@ -45,6 +43,15 @@ export const StyledMenuGroup = styled.li<
       '',
       'spaceInline',
     )}
+
+  > ul {
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    ${({vertical}) => !vertical && 'display: flex;'}
+  }
 `;
 
 export const StyledMenuGroupTitle = styled.div<
@@ -85,6 +92,7 @@ const menuItemFlexAlign = {
   start: 'flex-start',
   center: 'center',
   end: 'flex-end',
+  spaceBetween: 'space-between',
 };
 
 const menuItemTextAlign = {
@@ -93,21 +101,24 @@ const menuItemTextAlign = {
   end: 'right',
 };
 
-export const StyledButton = styled(Button)<
-  Omit<ButtonLinkProps, 'href'> & {
-    align?: MenuItemAlign | undefined;
-    selected?: boolean;
-  }
->`
+const getTextAlign = (align: MenuItemAlign) =>
+  align === 'spaceBetween' ? menuItemTextAlign.start : menuItemTextAlign[align];
+
+export const StyledButton = styled(Button)<{
+  align?: MenuItemAlign | undefined;
+  selected?: boolean;
+}>`
+  width: 100%;
   ${({selected}) =>
     selected && getStylePreset('menuItem', '', {isSelected: selected})}
 
   ${({align}) =>
-    align && {
+    align &&
+    menuItemFlexAlign[align] && {
       justifyContent: menuItemFlexAlign[align],
-      textAlign: menuItemTextAlign[align] as TextAlignProperty,
     }}
-   width: 100%;
+  
+  text-align: ${({align}) => align && getTextAlign(align)}
 `;
 
 export const StyledMenuDivider = styled.li<
@@ -137,7 +148,7 @@ export const StyledMenuDivider = styled.li<
 `;
 
 export const StyledUl = styled.ul<
-  Pick<MenuProps, 'vertical'> & Pick<MenuSubProps, 'expanded'>
+  Pick<MenuProps, 'vertical'> & Pick<MenuSubProps, 'expanded' | 'overrides'>
 >`
   display: ${({expanded}) => (expanded ? 'flex' : 'none')} !important;
   flex-direction: ${({vertical}) => (vertical ? 'column' : 'row')};
@@ -145,6 +156,7 @@ export const StyledUl = styled.ul<
   list-style-type: none;
   margin: 0;
   padding: 0;
+  ${logicalProps()}
 
   ${({vertical}) =>
     vertical

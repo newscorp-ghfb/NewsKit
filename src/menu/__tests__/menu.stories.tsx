@@ -6,12 +6,16 @@ import {
   StorybookSpan,
 } from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {IconFilledAddCircleOutline, IconFilledClose} from '../../icons';
+import {
+  IconFilledAddCircleOutline,
+  IconFilledClose,
+  IconFilledInfo,
+} from '../../icons';
 import {Menu, MenuItem, MenuSub, MenuGroup, MenuDivider} from '..';
-import {styled, getColorCssFromTheme} from '../../utils';
+import {styled, getColorCssFromTheme, useMediaQueryObject} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
-import {useMediaQueryObject} from '../../utils/hooks';
+import {InlineMessage} from '../../inline-message';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
@@ -197,6 +201,18 @@ const menuCustomThemeObject: CreateThemeArgs = {
           outlineStyle: 'dotted',
           outlineWidth: '5px',
           outlineOffset: '5px',
+        },
+      },
+      menuSubBackground: {
+        base: {
+          backgroundColor: '{{colors.interfaceBrand010}}',
+        },
+      },
+      menuSubText: {
+        base: {
+          backgroundColor: '{{colors.interfaceBrand010}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
         },
       },
     },
@@ -1298,45 +1314,62 @@ export const StoryMenuItemsOutlineOverrides = () => (
 StoryMenuItemsOutlineOverrides.storyName = 'menu items outline overrides';
 
 export const StorySubMenuHorizontal = () => {
-  const [subMenu1Expanded, setSubMenu1Expanded] = useState(false);
-  const [subMenu11Expanded, setSubMenu11Expanded] = useState(false);
-  const [subMenu2Expanded, setSubMenu2Expanded] = useState(false);
+  const [guidesExpanded, setGuidesExpanded] = useState(false);
+  const [codeExpanded, setDesignExpanded] = useState(false);
+
   return (
     <>
       <StorybookSubHeading>Sub menu - horizontal</StorybookSubHeading>
-      <Menu aria-label="Menu">
-        <MenuItem href={href}>Menu item 1</MenuItem>
-        <MenuItem href={href}>Menu item 2</MenuItem>
-        <MenuItem href={href}>Menu item 3</MenuItem>
-
+      <Menu aria-label={`Menu ${getSSRId()}`}>
         <MenuSub
-          title="Sub menu 1"
-          expanded={subMenu1Expanded}
-          onClick={() => setSubMenu1Expanded(!subMenu1Expanded)}
+          title="Guides"
+          id="/getting-started"
+          expanded={guidesExpanded}
+          onClick={() => {
+            setGuidesExpanded(!guidesExpanded);
+          }}
+          overrides={{paddingInlineStart: '8px'}}
         >
-          <MenuItem href={href}>Sub menu item 1</MenuItem>
-          <MenuItem href={href}>Sub menu item 2</MenuItem>
-          <MenuItem href={href}>Sub menu item 3</MenuItem>
-
+          <MenuItem href="#" id="/getting-started/overview">
+            Getting started
+          </MenuItem>
+          <MenuItem href="#" id="/getting-started/design/design-overview">
+            Design Overview
+          </MenuItem>
           <MenuSub
-            title="Sub menu 1.1"
-            expanded={subMenu11Expanded}
-            onClick={() => setSubMenu11Expanded(!subMenu11Expanded)}
+            title="Code"
+            id="/getting-started/code"
+            expanded={codeExpanded}
+            onClick={() => setDesignExpanded(!codeExpanded)}
+            overrides={{
+              paddingInlineStart: '8px',
+            }}
           >
-            <MenuItem href={href}>Sub menu item 1.1.1</MenuItem>
-            <MenuItem href={href}>Sub menu item 1.1.2</MenuItem>
-            <MenuItem href={href}>Sub menu item 1.1.3</MenuItem>
+            <MenuItem href="#" id="/getting-started/code/engineering-overview">
+              Engineering Overview
+            </MenuItem>
           </MenuSub>
         </MenuSub>
 
-        <MenuSub
-          title="Sub menu 2"
-          expanded={subMenu2Expanded}
-          onClick={() => setSubMenu2Expanded(!subMenu2Expanded)}
-        >
-          <MenuItem href={href}>Sub menu item 1</MenuItem>
-          <MenuItem href={href}>Sub menu item 2</MenuItem>
-          <MenuItem href={href}>Sub menu item 3</MenuItem>
+        <MenuSub title="Theme" id="/theme" expanded={false}>
+          <MenuItem href="#" id="/theme/overview">
+            Overview
+          </MenuItem>
+          <MenuSub
+            title="Foundations"
+            id="/theme/foundation"
+            expanded={false}
+            overrides={{
+              paddingInlineStart: '8px',
+            }}
+          >
+            <MenuItem href="#" id="/theme/foundation/borders">
+              Borders
+            </MenuItem>
+            <MenuItem href="#" id="/theme/foundation/breakpoints">
+              Breakpoints
+            </MenuItem>
+          </MenuSub>
         </MenuSub>
       </Menu>
     </>
@@ -1344,27 +1377,75 @@ export const StorySubMenuHorizontal = () => {
 };
 StorySubMenuHorizontal.storyName = 'sub-menu-horizontal';
 
-export const StorySubMenuVertical = () => (
-  <>
-    <StorybookSubHeading>Sub menu - vertical</StorybookSubHeading>
-    <Menu aria-label="Menu" vertical className="menu">
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuItem href={href}>Menu item 2</MenuItem>
-      <MenuItem href={href}>Menu item 3</MenuItem>
-      <MenuSub title="Sub menu">
-        <MenuItem href={href}>Item G1 1</MenuItem>
-        <MenuItem href={href}>Item G1 2</MenuItem>
-        <MenuItem href={href}>Item G1 3</MenuItem>
+export const StorySubMenuVertical = () => {
+  const VerticalContainer = styled.div`
+    width: 300px;
+  `;
+  const [guidesExpanded, setGuidesExpanded] = useState(false);
+  const [codeExpanded, setCodeExpanded] = useState(false);
+  const [themeExpanded, setThemeExpanded] = useState(false);
+  const [foundationsExpanded, setFoundationsExpanded] = useState(false);
 
-        <MenuSub title="Sub 1.1">
-          <MenuItem href={href}>Item G1.1 1</MenuItem>
-          <MenuItem href={href}>Item G1.1 2</MenuItem>
-          <MenuItem href={href}>Item G1.1 3</MenuItem>
-        </MenuSub>
-      </MenuSub>
-    </Menu>
-  </>
-);
+  return (
+    <>
+      <StorybookSubHeading>Sub menu - vertical</StorybookSubHeading>
+      <VerticalContainer>
+        <Menu aria-label={`Menu ${getSSRId()}`} vertical align="spaceBetween">
+          <MenuSub
+            title="Guides"
+            id="/getting-started"
+            expanded={guidesExpanded}
+            onClick={() => setGuidesExpanded(!guidesExpanded)}
+          >
+            <MenuItem href="#" id="/getting-started/overview">
+              Getting started
+            </MenuItem>
+            <MenuItem href="#" id="/getting-started/design/design-overview">
+              Design overview
+            </MenuItem>
+            <MenuSub
+              title="Code"
+              id="/getting-started/code"
+              expanded={codeExpanded}
+              onClick={() => setCodeExpanded(!codeExpanded)}
+            >
+              <MenuItem
+                href="#"
+                id="/getting-started/code/engineering-overview"
+              >
+                Engineering overview
+              </MenuItem>
+            </MenuSub>
+          </MenuSub>
+
+          <MenuSub
+            title="Theme"
+            id="/theme"
+            expanded={themeExpanded}
+            onClick={() => setThemeExpanded(!themeExpanded)}
+          >
+            <MenuItem href="#" id="/theme/overview">
+              Overview
+            </MenuItem>
+            <MenuSub
+              title="Foundations"
+              id="/theme/foundation"
+              expanded={foundationsExpanded}
+              onClick={() => setFoundationsExpanded(!foundationsExpanded)}
+            >
+              <MenuItem href="#" id="/theme/foundation/borders">
+                Borders
+              </MenuItem>
+              <MenuItem href="#" id="/theme/foundation/breakpoints">
+                Breakpoints
+              </MenuItem>
+            </MenuSub>
+          </MenuSub>
+        </Menu>
+      </VerticalContainer>
+    </>
+  );
+};
 StorySubMenuVertical.storyName = 'sub-menu-vertical';
 
 const splitMenuItems = (arr: MenuElement[], n: number) => {
@@ -1381,38 +1462,57 @@ type MenuElement = {
 const createMenu = (items: MenuElement[]) =>
   items.map(({title, items: subItems}) => {
     if (subItems) {
-      return <MenuSub title={title}>{createMenu(subItems)}</MenuSub>;
+      return (
+        <MenuSub title={title} overrides={{paddingInlineStart: '16px'}}>
+          {createMenu(subItems)}
+        </MenuSub>
+      );
     }
 
     return <MenuItem href="/">{title}</MenuItem>;
   });
-
 const createMoreMenu = (items: MenuElement[]) =>
   items.map(({title, items: subItems}) => {
     if (subItems) {
-      return <MenuGroup title={title}>{createMoreMenu(subItems)}</MenuGroup>;
+      return (
+        <MenuSub
+          title={title}
+          data-testid="more-sub-menu"
+          overrides={{paddingInlineStart: '16px'}}
+        >
+          {createMoreMenu(subItems)}
+        </MenuSub>
+      );
     }
 
     return <MenuItem href="/">{title}</MenuItem>;
   });
 
+const MenuMore = ({children}: {children: React.ReactNode}) => (
+  <MenuSub title="More" overrides={{paddingInlineStart: '16px'}}>
+    {children}
+  </MenuSub>
+);
+
 const items: MenuElement[] = [
-  {title: 'Item 1'},
-  {title: 'Item 2'},
-  {title: 'Item 3'},
+  {title: 'About'},
   {
-    title: 'Item 4',
-    items: [{title: 'Item 4.1'}, {title: 'Item 4.2'}, {title: 'Item 4.3'}],
+    title: 'Guides',
   },
   {
-    title: 'Item 5',
-    items: [{title: 'Item 5.1'}, {title: 'Item 5.2'}, {title: 'Item 5.3'}],
+    title: 'Theme',
+  },
+  {
+    title: 'Components',
+    items: [
+      {title: 'Overview'},
+      {
+        title: 'Actions & Inputs',
+        items: [{title: 'Button'}, {title: 'Checkbox'}, {title: 'Form'}],
+      },
+    ],
   },
 ];
-
-const MenuMore = ({children}: {children: React.ReactNode}) => (
-  <MenuSub title="More">{children}</MenuSub>
-);
 
 export const StoryMenuMultipleAuto = () => {
   const splitNumber = useMediaQueryObject({
@@ -1426,10 +1526,26 @@ export const StoryMenuMultipleAuto = () => {
   const {visible, invisible} = splitMenuItems(items, splitNumber || 1000);
 
   return (
-    <Menu aria-label="Menu">
-      {createMenu(visible)}
-      {invisible.length > 0 && <MenuMore>{createMoreMenu(invisible)}</MenuMore>}
-    </Menu>
+    <>
+      <InlineMessage
+        icon={
+          <IconFilledInfo
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        overrides={{marginBlockEnd: 'space050'}}
+      >
+        Resize the browser window to see the menu items overflow.
+      </InlineMessage>
+      <Menu aria-label={`Menu ${getSSRId()}`}>
+        {createMenu(visible)}
+        {invisible.length > 0 && (
+          <MenuMore>{createMoreMenu(invisible)}</MenuMore>
+        )}
+      </Menu>
+    </>
   );
 };
 StoryMenuMultipleAuto.storyName = 'sub-menu-auto';

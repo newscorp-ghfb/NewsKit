@@ -1037,6 +1037,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-width: 4px;
   border-style: solid;
   cursor: pointer;
+  width: 100%;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1048,7 +1049,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 @media screen and (min-width: 1440px) {
@@ -1171,12 +1171,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-width: 4px;
   border-style: solid;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 @media screen and (min-width: 1440px) {
@@ -4093,6 +4093,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-width: 4px;
   border-style: solid;
   cursor: pointer;
+  width: 100%;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4104,7 +4105,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 @media screen and (min-width: 1440px) {
@@ -4227,12 +4227,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-width: 4px;
   border-style: solid;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 @media screen and (min-width: 1440px) {
@@ -7149,12 +7149,12 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   border-width: 4px;
   border-style: solid;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
 }
 
 @media screen and (min-width: 1440px) {

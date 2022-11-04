@@ -376,12 +376,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-13 svg {
@@ -481,12 +481,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-34 svg {
@@ -522,6 +522,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-36 {
   box-sizing: border-box;
   margin-bottom: 24px;
+}
+
+.emotion-36>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-37 {
@@ -3330,12 +3337,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-11 svg {
@@ -3435,12 +3442,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-32 svg {
@@ -3476,6 +3483,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-34 {
   box-sizing: border-box;
   margin-bottom: 24px;
+}
+
+.emotion-34>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-35 {
@@ -6810,12 +6824,12 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-13 svg {
@@ -6915,12 +6929,12 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-34 svg {
@@ -6956,6 +6970,13 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-36 {
   box-sizing: border-box;
   margin-bottom: 24px;
+}
+
+.emotion-36>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-37 {
@@ -9767,12 +9788,12 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-11 svg {
@@ -9872,12 +9893,12 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-32 svg {
@@ -9913,6 +9934,13 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-34 {
   box-sizing: border-box;
   margin-bottom: 24px;
+}
+
+.emotion-34>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-35 {

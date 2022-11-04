@@ -313,6 +313,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-color: transparent transparent transparent #3358CC;
@@ -324,7 +325,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-9 svg {
@@ -383,6 +383,13 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 .emotion-17 {
   box-sizing: border-box;
   margin-bottom: 24px;
+}
+
+.emotion-17>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-18 {
@@ -459,12 +466,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-21 svg {
@@ -843,12 +850,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-3 svg {
@@ -1263,12 +1270,12 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-9 svg {
@@ -1327,6 +1334,13 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 .emotion-17 {
   box-sizing: border-box;
   margin-bottom: 24px;
+}
+
+.emotion-17>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-18 {
@@ -1995,12 +2009,12 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-9 svg {
@@ -2059,6 +2073,13 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 .emotion-17 {
   box-sizing: border-box;
   margin-bottom: 24px;
+}
+
+.emotion-17>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .emotion-18 {
@@ -2438,12 +2459,12 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   border-style: solid;
   color: #5A6A79;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 100%;
 }
 
 .emotion-3 svg {
