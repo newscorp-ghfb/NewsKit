@@ -1,5 +1,6 @@
 import React from 'react';
 import {NewsKitIconProps} from '../icons';
+import {EventData} from '../instrumentation';
 import {TransitionToken} from '../theme/presets/types';
 import {LogicalProps} from '../utils/logical-properties';
 import {Override} from '../utils/overrides';
@@ -53,9 +54,10 @@ export type BaseSwitchLabelPosition = 'start' | 'end';
 
 export interface BaseSwitchProps
   extends Omit<
-    React.InputHTMLAttributes<HTMLInputElement>,
-    'size' | 'disabled'
-  > {
+      React.InputHTMLAttributes<HTMLInputElement>,
+      'size' | 'disabled'
+    >,
+    EventData {
   overrides?: BaseSwitchOverrides & LogicalProps;
   size?: BaseSwitchSize;
   state?: BaseSwitchState;
