@@ -12,7 +12,7 @@ import {Table, TableRow} from '../../../components/table';
 import {Link} from '../../../components/link';
 
 const opacity000Token =
-  'Applied to the background of the feedback element applied to the multiple interactive elements, such as the Checkbox, or Radio Button on hover.';
+  'Hover states on interactive elements (e.g. checkbox, radio button)';
 const creativeUseCase = ' Creative use case';
 const opacityRows = getTokenType(newskitLightTheme.overlays, 'opacity').map(
   ({tokenName, tokenValue}) => ({
@@ -28,7 +28,7 @@ const Opacity = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Opacity',
       description:
-        'Opacity is used to create translucent interface elements. These can be combined into different visual effects using the Block component.',
+        'Opacity creates translucent interface elements. You can combine them into different visual effects using the block component.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -38,7 +38,7 @@ const Opacity = (layoutProps: LayoutProps) => (
         illustration: 'theme/opacity/hero',
       },
       introduction:
-        'Opacity is used to create translucent interface elements. These can be combined into different visual effects using the Block component.',
+        'Opacity creates translucent interface elements. You can combine them into different visual effects using the block component.',
     }}
   >
     <ComponentPageCell>
@@ -47,8 +47,7 @@ const Opacity = (layoutProps: LayoutProps) => (
           id="overview"
           toc="Overview"
           headline="Overview"
-          description="Opacity foundations consist of a scale of styles that can make interface elements appear more translucent. In some cases, a component will have an opacity applied
-to a background."
+          description="Opacity foundations consist of a scale of styles that make interface elements more translucent. In some cases, a component will have an opacity applied to a background."
           showSeparator
         />
       </ContentSection>
@@ -56,11 +55,11 @@ to a background."
         <ContentPrimary
           id="Opacity"
           toc="Opacity"
-          headline="Opacity"
+          headline="How to use opacity"
           description={
             <>
-              Opacity is used in a UI to make interface elements more or less
-              translucent that can be applied to a{' '}
+              Opacity makes UI interface elements more or less translucent. You
+              can apply these elements to a{' '}
               <Link href="/components/block">Block.</Link>
               <br />
             </>

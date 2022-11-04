@@ -82,11 +82,11 @@ const Breakpoints = (layoutProps: LayoutProps) => (
           headline="Overview"
           description={
             <>
-              There are five breakpoints available and the breakpoint range,
-              margins and gutters can be customised.
+              Choose from five different breakpoints. You can customise the
+              breakpoint range, margins and gutters.
               <br />
               <br />
-              The default values are outlined below:
+              The default values are:
             </>
           }
         >
@@ -100,7 +100,7 @@ const Breakpoints = (layoutProps: LayoutProps) => (
           />
         </ContentSecondary>
 
-        <ContentSecondary description="Default breakpoints can be overriden in the theme.">
+        <ContentSecondary description="You can override default breakpoints in the theme:">
           <Code>
             {`import {createTheme} from 'newskit'; 
 
@@ -119,7 +119,7 @@ const theme = createTheme({
           </Code>
         </ContentSecondary>
 
-        <ContentSecondary description="All breakpoints are fluid until the maximum grid width of 1920px (default), at this point the grid becomes fixed.">
+        <ContentSecondary description="All breakpoints are fluid until the maximum grid width of 1920px (default). At this point, the grid becomes fixed.">
           <MediaList
             cardsLayout={{
               xs: 'vertical',
@@ -133,18 +133,14 @@ const theme = createTheme({
               {
                 title: 'Fluid',
                 description: `
-                Fluid layouts are calculated to their relative size, and
-                stretch as the viewport is resized. For example, if you set
-                the width of your layout to 100% width, each column will only
-                be calculated to its relative size., and will stretch as the
-                browser is resized.
-                `,
+                Fluid layouts are calculated to their relative size, and stretch as the screen (viewport) is resized. For example, if you set layout width to 100%, each column will only be calculated to its relative size, and will stretch as the browser is resized.
+                  `,
                 media: getIllustrationComponent('theme/breakpoints/fluid'),
               },
               {
                 title: 'Fixed',
                 description: `
-                Fixed layouts do not respond to the size of the screen (viewport) but remain at a fixed width at a specific numerical value e.g. 1920px.
+                Fixed layouts don’t respond to the size of the viewport but remain at a fixed width at a specific numerical value (e.g. 1920px).
                 `,
                 media: getIllustrationComponent('theme/breakpoints/fixed'),
               },
@@ -155,7 +151,7 @@ const theme = createTheme({
         <ContentSecondary
           description={
             <>
-              Max-width defaults can be overidden in the{' '}
+              You can override max-width defaults in the{' '}
               <Link
                 href="/components/grid/"
                 overrides={{typographyPreset: 'editorialParagraph030'}}
@@ -172,8 +168,8 @@ const theme = createTheme({
         <ContentPrimary
           id="usage"
           toc="Using breakpoints"
-          headline="Using breakpoints"
-          description="NewsKit enables the appearance and behaviour of UI elements to change at different breakpoints."
+          headline="How to use breakpoints"
+          description="You can change the appearance and behaviour of UI elements at different breakpoints."
         >
           <Illustration path="theme/breakpoints/usage" />
         </ContentPrimary>
@@ -181,14 +177,13 @@ const theme = createTheme({
         <ContentSecondary
           description={
             <>
-              In the codebase, changing the appearance and behaviour of UI
-              elements can be achieved by utilising the{' '}
+              In the codebase, use the{' '}
               <Link href="/theme/theming/component-defaults/">
                 component defaults and overrides system
               </Link>{' '}
               to override design tokens at specific breakpoints. For example,
-              setting different typography presets at different breakpoints, can
-              make the text larger on bigger devices than on smaller devices.
+              set different typography presets at different breakpoints to make
+              text bigger on larger devices than on smaller devices.
               <br />
               <br />
               Properties that support this are specified in the Props sections
@@ -197,9 +192,9 @@ const theme = createTheme({
               <InlineCode>{`MQ<string>`}</InlineCode>.
               <br />
               <br />
-              This is done by passing a single string token to be used across
-              all breakpoints, or an object for a combination of multiple
-              breakpoints - comprising of breakpoint keys and token values.
+              This works by passing either a single string token to be used
+              across all breakpoints, or an object for a combination of multiple
+              breakpoints - consisting of breakpoint keys and token values.
             </>
           }
         />
@@ -207,7 +202,7 @@ const theme = createTheme({
         <ContentSecondary
           showSeparator
           headline="Code example"
-          description="This example below shows different typography presets being used at different breakpoint."
+          description="Here’s an example of different typography presets at different breakpoints:"
         >
           <Code>{`
   typographyPreset: {

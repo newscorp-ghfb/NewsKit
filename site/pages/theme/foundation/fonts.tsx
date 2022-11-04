@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  InlineMessage,
-  newskitLightTheme,
-  toNewsKitIcon,
-  UnorderedList,
-} from 'newskit';
+import {InlineMessage, newskitLightTheme, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {
   ContentSection,
@@ -26,7 +21,6 @@ import {
 } from '../../../components/illustrations/illustration-loader';
 import {Table} from '../../../components/table';
 import {getTokenType} from '../../../utils/get-token-type';
-import {IconFilledCircle} from '../../../../src/icons';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -61,7 +55,7 @@ const additionalFontPropertiesRows = [
       </Link>
     ),
     description:
-      'text-align sets the horizontal position of text inside of a block',
+      'text-align sets the horizontal position of text inside a block',
   },
   {
     property: 'textDecoration',
@@ -74,7 +68,7 @@ const additionalFontPropertiesRows = [
       </Link>
     ),
     description:
-      'text-decoration sets the visual appearance of decorative lines on text',
+      'text-decoration sets the visual appearance of decorative lines on text (e.g. underline, overline and line-through)',
   },
   {
     property: 'textOverflow',
@@ -100,7 +94,7 @@ const additionalFontPropertiesRows = [
       </Link>
     ),
     description:
-      'text-transform specifies how elements of text are capitalised. e.g. uppercase, lowercase',
+      'text-transform specifies how text elements are capitalised (e.g. uppercase, lowercase)',
   },
   {
     property: 'whiteSpace',
@@ -113,7 +107,7 @@ const additionalFontPropertiesRows = [
       </Link>
     ),
     description:
-      'white-space sets how white space is collapsed and whether line are able to wrap at soft-wrap opportunities',
+      'white-space sets how whitespace is collapsed and whether lines are able to wrap at soft-wrap opportunities',
   },
   {
     property: 'wordBreak',
@@ -126,7 +120,7 @@ const additionalFontPropertiesRows = [
       </Link>
     ),
     description:
-      'word-break sets whether line breaks appear when the text would otherwise overflow the containing box ',
+      'word-break sets whether line breaks appear when the text would otherwise overflow the containing box',
   },
 ];
 
@@ -151,9 +145,9 @@ const {title, description} = featureCardOverrides;
 const EXAMPLE_CARDS = [
   {
     media: () => <Illustration path="theme/fonts/buttonnocrop" />,
-    title: 'Button - before Text-crop',
+    title: 'Button before text crop',
     description:
-      'Without the ability to crop text, the button text would be misaligned when changing font family or font size.',
+      'Without the ability to crop text, the button text becomes misaligned when you change font family or font size.',
     overrides: {
       title,
       description,
@@ -161,9 +155,9 @@ const EXAMPLE_CARDS = [
   },
   {
     media: () => <Illustration path="theme/fonts/buttoncropped" />,
-    title: 'Button - after Text-crop',
+    title: 'Button after text crop',
     description:
-      'With text-cropping applied the button label is consistently positioned correctly when changing the font family or font size.',
+      'With text cropping applied, the button label is always positioned correctly when you change font family or font size.',
     overrides: {
       title,
       description,
@@ -171,7 +165,7 @@ const EXAMPLE_CARDS = [
   },
   {
     media: () => <Illustration path="theme/fonts/cardnocrop" />,
-    title: 'Card - before Text-crop',
+    title: 'Card before text crop',
     description:
       'Without the ability to crop text, the layout of the card is unnecessarily elongated due to the misaligned spacing around the text blocks.',
     overrides: {
@@ -181,7 +175,7 @@ const EXAMPLE_CARDS = [
   },
   {
     media: () => <Illustration path="theme/fonts/cardcropped" />,
-    title: 'Card - after Text-crop',
+    title: 'Card after text crop',
     description:
       ' With text cropping applied, the spacing in the card is aligned correctly to the text blocks and the overall size of the card is exactly as defined.',
     overrides: {
@@ -205,7 +199,7 @@ const Fonts = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'theme/fonts/hero',
       },
-      introduction: `Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.`,
+      introduction: `Fonts establish styles for content such as headlines and paragraphs, as well as more functional styles for items such as labels, tags and messaging.`,
     }}
   >
     <ComponentPageCell>
@@ -216,18 +210,23 @@ const Fonts = (layoutProps: LayoutProps) => (
           headline="Overview"
           description={
             <>
-              The NewsKit design system allows brands to define bespoke
-              typography. Key characteristics such as font-family, font-weight,
-              letter-spacing, line-height and font style are applied in a
-              systematic way when creating a theme in Figma and{' '}
+              You can use custom typography with NewsKit.
+              <br />
+              <br />
+              When you{' '}
               <Link href="/theme/theming/creating-a-theme/">
                 creating a theme in code
-              </Link>
-              . A combination of the key characteristics are grouped to form{' '}
+              </Link>{' '}
+              or Figma, characteristics such as font family, font weight, letter
+              spacing, line height and font style are applied in a systematic
+              way.
+              <br />
+              <br />
+              You can group font characteristics as{' '}
               <Link href="/theme/presets/typography-presets">
                 typography presets
               </Link>{' '}
-              that are applied to text interface elements.
+              that can be applied to text interface elements.
             </>
           }
           showSeparator
@@ -247,13 +246,13 @@ const Fonts = (layoutProps: LayoutProps) => (
           headline="Font family"
           description={
             <>
-              Font family defines a set of characters of the same design. These
-              characters include letters, numbers, punctuation marks, and
-              symbols in various weights. Font families are mapped to design
-              tokens. Font family can be applied to any text element using the{' '}
+              A font family is a set of fonts with a shared design. For example,
+              the Arial font family contains Arial, Arial Bold, Arial Bold
+              Italic and Arial Italic. Font families are mapped to design
+              tokens. You can apply a font family to any text element using the{' '}
               <InlineCode>fontFamily</InlineCode> attribute on a{' '}
               <Link href="/theme/presets/typography-presets">
-                Typography Preset.
+                typography preset.
               </Link>
             </>
           }
@@ -271,8 +270,8 @@ const Fonts = (layoutProps: LayoutProps) => (
             role="region"
             aria-label="fallback font"
           >
-            It is also important to consider a fallback font (web safe font)
-            when defining a font family.{' '}
+            Consider a web safe fallback font when defining a font family. Learn
+            more about web safe fonts.{' '}
             <Link
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
               target="_blank"
@@ -286,12 +285,12 @@ const Fonts = (layoutProps: LayoutProps) => (
           headline="Font size"
           description={
             <>
-              Font size defines how large the characters are displayed. Font
-              sizes are mapped to a scale of design tokens. Font size can be
-              applied to any text element using the{' '}
-              <InlineCode>fontSize</InlineCode> attribute on a{' '}
+              Font size is how large the characters are displayed on screen.
+              It’s mapped to a scale of design tokens. You can apply font size
+              to any text element using the <InlineCode>fontSize</InlineCode>{' '}
+              attribute on a{' '}
               <Link href="/theme/presets/typography-presets">
-                Typography Preset.
+                typography preset.
               </Link>
             </>
           }
@@ -306,12 +305,12 @@ const Fonts = (layoutProps: LayoutProps) => (
           headline="Font weight"
           description={
             <>
-              Font weight defines the thickness of the character stroke. Font
-              weights are mapped to a scale of design tokens. Font weight can be
-              applied to any text element using the{' '}
-              <InlineCode>fontWeight</InlineCode> attribute on a{' '}
+              Font weight is the thickness of the character stroke. It’s mapped
+              to a scale of design tokens. You can apply font weight to any text
+              element using the <InlineCode>fontWeight</InlineCode> attribute on
+              a{' '}
               <Link href="/theme/presets/typography-presets">
-                Typography Preset.
+                typography preset.
               </Link>
             </>
           }
@@ -326,12 +325,12 @@ const Fonts = (layoutProps: LayoutProps) => (
           headline="Font line-height"
           description={
             <>
-              Font line-height defines the vertical space between lines of text
-              and are mapped to a scale of design tokens. Font line-height can
-              be applied to any text element using the{' '}
+              Font line height is the vertical space between lines of text. It’s
+              mapped to a scale of design tokens. You can apply font line height
+              to any text element using the{' '}
               <InlineCode>fontLineHeight</InlineCode> attribute on a{' '}
               <Link href="/theme/presets/typography-presets">
-                Typography Preset.
+                yypography preset.
               </Link>
             </>
           }
@@ -346,8 +345,8 @@ const Fonts = (layoutProps: LayoutProps) => (
           description={
             <>
               To make sure your font styles round up or down to the nearest 4px
-              value you need to use <InlineCode>getLineHeight</InlineCode> to
-              acheive this, otherwise your fonts will not be aligned.
+              value, use <InlineCode>getLineHeight</InlineCode>. Your fonts will
+              not be aligned otherwise.
             </>
           }
         >
@@ -374,12 +373,12 @@ const Fonts = (layoutProps: LayoutProps) => (
           headline="Font letter-spacing"
           description={
             <>
-              Font letter-spacing defines the horizontal space between each
-              character and are mapped to a scale of design tokens. Font
-              letter-spacing can be applied to any text element using the{' '}
+              Font letter spacing is the horizontal space between characters.
+              It’s mapped to a scale of design tokens. You can apply font letter
+              spacing to any text element using the{' '}
               <InlineCode>fontLetterSpacing</InlineCode> attribute on a{' '}
               <Link href="/theme/presets/typography-presets">
-                Typography Preset.
+                typography preset.
               </Link>
             </>
           }
@@ -394,11 +393,11 @@ const Fonts = (layoutProps: LayoutProps) => (
           headline="Additional font properties"
           description={
             <>
-              The following properties can be applied to typography. These can
-              be defined as part of the{' '}
-              <Link href="/theme/presets/style-presets/">Style Presets.</Link>{' '}
-              Having these properties on Style Presets promotes greater reuse of
-              tokens.
+              You can apply the following properties to typography. They can be
+              defined as part of the{' '}
+              <Link href="/theme/presets/style-presets/">style presets.</Link>{' '}
+              Using these properties in style presets promotes consistency
+              through reuse of tokens.
             </>
           }
         >
@@ -414,38 +413,19 @@ const Fonts = (layoutProps: LayoutProps) => (
 
         <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage
-            title="Font smooth"
+            title="Font smoothing"
             overrides={{stylePreset: 'inlineMessageInformative'}}
             icon={icon}
             role="region"
             aria-label="typography"
           >
-            To ensure typography in components are rendered smooth and crisp
-            (rounded to nearest pixel as opposed to the subpixel), apply{' '}
-            <InlineCode>-webkit-font-smoothing: antialiased</InlineCode>.
-            Emotion’s global style component can be used to set this as a
-            default across your website.
+            To ensure typography in components is rendered smooth and crisp
+            (rounded to the nearest pixel instead of subpixel), apply{' '}
+            <InlineCode>-webkit-font-smoothing: antialiased</InlineCode>. Set
+            this as a default across your product using Emotion’s global style
+            component.
           </InlineMessage>
         </ContentSecondary>
-      </ContentSection>
-
-      <ContentSection sectionName="accessibility">
-        <ContentPrimary
-          id="accessibilityconsiderations"
-          toc="Accessibility"
-          headline="Accessibility Considerations"
-          description={
-            <>
-              For accessibility considerations related to typography, please
-              refer to the{' '}
-              <Link href="/theme/presets/typography-presets">
-                Typography Presets
-              </Link>
-              .
-            </>
-          }
-          showSeparator
-        />
       </ContentSection>
 
       <ContentSection sectionName="text crop">
@@ -453,34 +433,27 @@ const Fonts = (layoutProps: LayoutProps) => (
           id="textcrop"
           toc="Text crop"
           headline="Text crop"
-          description="To reduce ‘pixel-pushing' and to keep consistent and predictable spacing across multiple font families, text-cropping is applied to remove additional space (leading) around text. This utility also helps to maintain a 4px baseline; keeping interfaces ‘pixel-perfect’. "
+          description="To reduce ‘pixel pushing', and to keep consistent and predictable spacing across multiple font families, use text cropping to remove additional space (leading) around text. This also helps maintain a 4px baseline, keeping interfaces ‘pixel perfect’."
         />
 
         <ContentSecondary
-          headline="The benefits of text cropping"
+          headline="Benefits"
           description={
             <>
-              Text cropping (sometimes referred to as leading trim) is an
-              important aspect when creating accurate layouts, allowing for a
-              true representation of spacing and alignment when using{' '}
-              <Link href="/components/text-block/">text blocks</Link>.
+              Text cropping (sometimes referred to as leading trim) gives you a
+              true representation of spacing and alignment when using text
+              blocks.
             </>
           }
         />
 
         <ContentSecondary
-          headline="Text crop methods"
-          description={
-            <>
-              Text-cropping works by cropping the bounding box of the text block
-              component. The are several methods to crop both &apos;top&apos;
-              and &apos;bottom&apos;, by default NewsKit uses a paring of
-              &apos;Cap Height&apos; for the &apos;Top&apos; and
-              &apos;Baseline&apos; for &apos;Bottom&apos;. This is achieved by
-              configuring negative margins.
-            </>
-          }
-        >
+          headline="Methods"
+          description="
+              Text cropping works by cropping the bounding box of the text block component. There are several methods to crop both 'top' and 'bottom'; by default, NewsKit uses a pairing of 'cap height' for the 'top' and 'baseline' for 'bottom'. This is done by configuring negative margins."
+        />
+
+        <ContentTertiary>
           <MediaList
             layout="1-span"
             cardsLayout="horizontal"
@@ -488,76 +461,35 @@ const Fonts = (layoutProps: LayoutProps) => (
               {
                 title: 'Cap height',
                 description:
-                  'This crops to the top of an uppercase letter in the typeface. An example would be the top of an uppercase T.',
+                  'Crop to the top of an uppercase letter in the typeface (e.g. the top of an uppercase T).',
                 media: getIllustrationComponent('theme/fonts/cap-height'),
               },
               {
                 title: 'Baseline',
                 description:
-                  'This crops to the baseline of all the lowercase letters in the typeface',
+                  'Crop to the baseline of all lowercase letters in the typeface.',
                 media: getIllustrationComponent('theme/fonts/baseline'),
               },
             ]}
           />
-        </ContentSecondary>
+        </ContentTertiary>
 
         <ContentSecondary
-          headline="Configuring Text-cropping"
-          description="Text-cropping can be configured in both the code base and Figma."
+          headline="Configure"
+          description="You can configure text cropping in both the codebase and Figma."
         />
 
         <ContentTertiary
           headline="Code"
           description={
             <>
-              Text cropping is set up using font metrics, which allows for the
-              easy generation of the code needed and takes into account the
-              various nuances of each font used.
-              <br />
-              <br />
-              You can generate the code needed using{' '}
+              Text cropping uses font metrics. This takes into account the
+              nuances of each font and lets you easily generate the code needed
+              using{' '}
               <Link href="https://seek-oss.github.io/capsize/" target="_blank">
                 Capsize
               </Link>{' '}
-              following the easy steps outlined on their website.
-              <br />
-              <br />
-              <br />
-              <UnorderedList
-                markerAlign="start"
-                listItemMarker={IconFilledCircle}
-                overrides={{
-                  spaceStack: 'space060',
-                  paddingInline: 'space030',
-                  content: {
-                    typographyPreset: 'editorialParagraph030',
-                  },
-                }}
-              >
-                <>
-                  Choose your font from Google Fonts, system, url or upload your
-                  own unique font.
-                </>
-                <>
-                  Edit and adjust the crop positions so that the letter H is
-                  defining the cap height measurement. This is set by default
-                  when you add your font, but you can fine tune this further if
-                  needed.
-                </>
-                <>
-                  Find the section where the crop data is displayed and then
-                  copy this into your theme file for the font family you are
-                  defining the text cropping data for.
-                </>
-              </UnorderedList>
-              <br />
-              When generating the font metrics for text cropping, we recommend
-              that you only need to generate these for the 400 weight of your
-              chosen font as this caters for most scenarios and weights. However
-              you can provide different cropping data for other weights if you
-              wanted these to be different, but the cropping data for the 400
-              weight would always be used as a fallback if no additional data is
-              provided.
+              .
             </>
           }
         >
@@ -568,70 +500,65 @@ const Fonts = (layoutProps: LayoutProps) => (
           headline="Design"
           description={
             <>
-              When using a{' '}
-              <Link href="/components/text-block/">Text Block</Link> in Figma,
-              Text-crop is applied using the Text-crop plugin to crop the
-              selected text-block or all text-block components on the page.
-              Learn more about{' '}
+              Use the text crop plugin in Figma to crop a selected text block or
+              all text block components on a page.{' '}
               <Link
                 href="https://www.figma.com/community/plugin/951930713294228024/Text-Crop"
                 target="_blank"
               >
-                Text-crop
-              </Link>{' '}
-              Figma plugin.
+                Learn more.
+              </Link>
             </>
           }
         />
 
         <ContentSecondary
-          headline="Applying Text-crop"
-          description="Text-cropping can be configured in both the code base and Figma."
+          headline="Apply"
+          description="You can configure text cropping in both the codebase and Figma."
         />
 
         <ContentTertiary
           headline="Code"
           description={
             <>
-              When using a{' '}
-              <Link href="/components/text-block/">Text Block</Link> component
-              in code, Text-crop is applied by default and can be removed by
-              supplying a <InlineCode>noCrop</InlineCode>
+              When using a text block component{' '}
+              <Link href="/components/text-block/">text block</Link> c in code,
+              text crop is applied by default. You can remove it with a{' '}
+              <InlineCode>noCrop</InlineCode>.
             </>
           }
         >
           <Code>{`
-  import React from 'react';
-  import { TextBlock } from 'newskit';
+            import React from 'react';
+            import { TextBlock } from 'newskit';
 
-  export default () => (
-    <TextBlock noCrop>TextBlock Content</TextBlock>
-  );
-  `}</Code>
+            export default () => (
+            <TextBlock noCrop>TextBlock Content</TextBlock>
+            );
+          `}</Code>
         </ContentTertiary>
 
-        <ContentTertiary
-          headline="Design"
-          description={
-            <>
-              When using a{' '}
-              <Link href="/components/text-block/">Text Block</Link> in Figma,
-              Text-crop is applied using the Text-crop plugin to crop the
-              selected text-block or all text-block components on the page.
-              Learn more about{' '}
-              <Link href="/components/text-block/">Text-crop</Link> Figma
-              plugin.
-            </>
-          }
-        />
-
-        <ContentSecondary
-          headline="Examples"
-          description="Below are some examples of using Text-crop:"
-          showSeparator
-        >
+        <ContentSecondary headline="Examples" showSeparator>
           <MediaList layout="2-span" cardType="base" cards={EXAMPLE_CARDS} />
         </ContentSecondary>
+      </ContentSection>
+
+      <ContentSection sectionName="accessibility">
+        <ContentPrimary
+          id="accessibilityconsiderations"
+          toc="Accessibility"
+          headline="Accessibility Considerations"
+          description={
+            <>
+              For typography accessibility considerations, see{' '}
+              <Link href="/theme/presets/typography-presets">
+                typography presets
+              </Link>
+              .
+            </>
+          }
+          showSeparator
+        />
       </ContentSection>
     </ComponentPageCell>
   </FoundationPageTemplate>
