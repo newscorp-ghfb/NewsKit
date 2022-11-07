@@ -33,7 +33,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
       type: 'Navigation',
       name: 'Link',
       hero: {
-        illustration: 'components/url-illustration',
+        illustration: 'components/link/hero',
       },
       introduction:
         'Links allow users to navigate to a new location or to additional information.',
@@ -344,15 +344,15 @@ const LinkComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       components: [
         {
-          title: 'Link',
+          title: 'LinkInline',
           summary:
-            'The link has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The LinkInline has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
             {
               name: 'children',
               type: 'string',
               description:
-                'The content of the link is passed as the child of the component.',
+                'The content of the LinkInline is passed as the child of the component.',
               required: true,
             },
             {
@@ -360,9 +360,9 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               type: 'string',
               description: (
                 <>
-                  If provided, the undefined tag component turns into an anchor
+                  If provided, the undefined link component turns into an anchor
                   element. The provided URL or fragment identifier will be
-                  loaded when the link is clicked.
+                  loaded when the LinkInline is clicked.
                   <br />
                   <br />
                   Note - a link requires a href property to be passed in.
@@ -371,99 +371,73 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               required: true,
             },
             {
-              name: 'size',
-              type: ['small', 'medium', 'large'],
-              default: 'medium',
-              description: 'Defines the size of the link.',
-            },
-            {
-              name: 'visited',
-              type: 'boolean',
-              default: 'false',
-              description:
-                'If true, renders the undefined link in a visited state.',
-            },
-            {
               name: 'eventContext',
               type: 'object',
-              description:
-                "Allows users to add extra event data to a link's click events.",
+              description: (
+                <>
+                  Allows users to add extra event data to a LinkInline&#39;s
+                  click events.
+                </>
+              ),
             },
             {
               name: 'eventOriginator',
               type: 'string',
               default: 'link',
-              description:
-                "Allows users to add event originator custom name e.g. 'newskit-link'.",
+              description: (
+                <>
+                  Allows users to add event originator custom name e.g.
+                  &apos;newskit-inline-link&apos;.
+                </>
+              ),
             },
             {
               name: 'external',
               type: 'boolean',
               description: (
                 <>
-                  If true, renders the &#39;external&#39; icon next to the link
-                  body content.
+                  If true, renders the &apos;external&apos; icon next to the
+                  LinkInline body content.
                   <br />
                   <br />
-                  Note - when a link renders, it automatically checks if the
-                  passed href is external or internal to the website where the
-                  link is used. If the href is external, an icon indicating this
-                  will be rendered after (trailing) the label.
+                  Note - when a LinkInline renders, it automatically checks if
+                  the passed href is external or internal to the website where
+                  the link is used. If the href is external, an icon indicating
+                  this will be rendered after (trailing) the label
                 </>
               ),
             },
           ],
           overridesRows: [
             {
-              attribute: 'inlineLink.stylePreset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'linkInline',
               description:
-                'If provided, overrides the stylePresets of the inlineLink.',
+                'If provided, overrides the stylePresets of the LinkInline.',
             },
             {
-              attribute: 'inlineLink.typographyPreset',
-              type: 'MQ<string>',
-              default: 'utilityLabel020',
-              description:
-                'If provided, overrides the typographyPreset of the inlineLink.',
-            },
-            {
-              attribute: 'inlineLink.transitionPreset',
+              attribute: 'transitionPreset',
               type: 'MQ<string>',
               default: ['fontColorChange', 'iconColorChange'],
               description:
-                'If provided, overrides the transitionPresets of the inlineLink.',
+                'If provided, overrides the transitionPresets of the LinkInline.',
             },
             {
-              attribute: 'inlineLink.spaceInline',
+              attribute: 'spaceInline',
               type: 'MQ<string>',
               default: 'space010',
               description:
-                'If provided overrides the gap between each element in the inlineLink. e.g. icon and text.',
+                'If provided overrides the gap between each element in the LinkInline. e.g. icon and text.',
             },
             {
-              attribute: 'inlineLink.leadingIcon.size',
-              type: 'MQ<string>',
-              default: 'iconSize020',
-              description:
-                'If provided, overrides the size of the inlineLink leading icon.',
-            },
-            {
-              attribute: 'inlineLink.trailingIcon.size',
-              type: 'MQ<string>',
-              default: 'iconSize020',
-              description:
-                'If provided, overrides the size of the inlineLink trailing icon.',
-            },
-            {
-              attribute: 'inlineLink.externalIcon.size',
+              attribute: 'externalIcon.size',
               type: 'MQ<string>',
               default: 'iconSize010',
               description: (
                 <>
                   If provided, overrides the size of the external icon, that
-                  appears after (trailing) the label of the inlineLink..
+                  appears after (trailing) the label of the LinkInline.
                   <br />
                   <br />
                   Note - it is also possible to set the icon size by passing it
@@ -474,7 +448,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'inlineLink.logicalProps',
+              attribute: 'logicalProps',
               type: 'MQ<string>',
               description: (
                 <>
@@ -484,77 +458,9 @@ const LinkComponent = (layoutProps: LayoutProps) => (
                 </>
               ),
             },
-            {
-              attribute: 'standaloneLink.stylePreset',
-              type: 'MQ<string>',
-              default: 'linkInline',
-              description:
-                'If provided, overrides the stylePresets of the standaloneLink.',
-            },
-            {
-              attribute: 'standaloneLink.typographyPreset',
-              type: 'MQ<string>',
-              default: 'utilityLabel020',
-              description:
-                'If provided, overrides the typographyPreset of the standaloneLink.',
-            },
-            {
-              attribute: 'standaloneLink.transitionPreset',
-              type: 'MQ<string>',
-              default: ['fontColorChange', 'iconColorChange'],
-              description:
-                'If provided, overrides the transitionPresets of the standaloneLink.',
-            },
-            {
-              attribute: 'standaloneLink.spaceInline',
-              type: 'MQ<string>',
-              default: 'space010',
-              description:
-                'If provided overrides the gap between each element in the standaloneLink. e.g. icon and text.',
-            },
-            {
-              attribute: 'standaloneLink.leadingIcon.size',
-              type: 'MQ<string>',
-              default: 'iconSize020',
-              description:
-                'If provided, overrides the size of the standaloneLink leading icon.',
-            },
-            {
-              attribute: 'standaloneLink.trailing.size',
-              type: 'MQ<string>',
-              default: 'iconSize020',
-              description:
-                'If provided, overrides the size of the standaloneLink trailing icon.',
-            },
-            {
-              attribute: 'standaloneLink.externalIcon.size',
-              type: 'MQ<string>',
-              default: 'iconSize010',
-              description: (
-                <>
-                  If provided, overrides the size of the external icon, that
-                  appears after (trailing) the label of the standaloneLink.
-                  <br />
-                  <br />
-                  Note - it is also possible to set the icon size by passing it
-                  directly as a <InlineCode>size</InlineCode> prop to the icon.
-                  However, by doing this you will override the{' '}
-                  <InlineCode>iconSize</InlineCode> passed from overrides.
-                </>
-              ),
-            },
-            {
-              attribute: 'standaloneLink.logicalProps',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Logical props can define either padding or margins, depending
-                  on the element &#39;s writing mode, directionality, or text
-                  orientation.
-                </>
-              ),
-            },
           ],
+          overridesSummary:
+            'The LinkInline has a range of predefined elements and attributes that can be overridden to define its appearance.',
           propsFooter: (
             <>
               <InlineMessage
@@ -588,6 +494,175 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               >
                 linkStandalone is a seperately exported component, which does
                 not include the underline by default.
+              </InlineMessage>
+            </>
+          ),
+        },
+        {
+          title: 'LinkStandalone',
+          summary:
+            'The LinkStandalone has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'children',
+              type: 'string',
+              description:
+                'The content of the LinkStandalone is passed as the child of the component.',
+              required: true,
+            },
+            {
+              name: 'href',
+              type: 'string',
+              description: (
+                <>
+                  If provided, the undefined link component turns into an anchor
+                  element. The provided URL or fragment identifier will be
+                  loaded when the link is clicked.
+                  <br />
+                  <br />
+                  Note - a link requires a href property to be passed in.
+                </>
+              ),
+            },
+            {
+              name: 'noCrop',
+              type: 'boolean',
+              description:
+                'If true, the cropping applied to the LinkStandalone is removed.',
+              default: 'false',
+            },
+            {
+              name: 'eventContext',
+              type: 'object',
+              description: (
+                <>
+                  Allows users to add extra event data to a LinkStandalone&#39;s
+                  click events.
+                </>
+              ),
+            },
+            {
+              name: 'eventOriginator',
+              type: 'string',
+              description: (
+                <>
+                  Allows users to add event originator custom name e.g.
+                  &#39;newskit-standalone-link&#39;.
+                </>
+              ),
+              default: 'link',
+            },
+            {
+              name: 'external',
+              type: 'boolean',
+              description: (
+                <>
+                  If true, renders the &apos;external&apos; icon next to the
+                  LinkStandalone body content.
+                  <br />
+                  <br />
+                  Note - when a LinkStandalone renders, it automatically checks
+                  if the passed href is external or internal to the website
+                  where the link is used. If the href is external, an icon
+                  indicating this will be rendered after (trailing) the label.
+                </>
+              ),
+            },
+          ],
+          propsFooter: (
+            <>
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="props link info"
+                overrides={{
+                  marginBlockStart: 'space030',
+                }}
+              >
+                Any prop valid on an{' '}
+                <LinkInline
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+                  target="_blank"
+                >
+                  anchor HTML element
+                </LinkInline>{' '}
+                ,is also valid on the link component.
+              </InlineMessage>
+            </>
+          ),
+          overridesRows: [
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              default: 'linkInline',
+              description:
+                'If provided, overrides the stylePresets of the LinkStandalone.',
+            },
+            {
+              attribute: 'typographyPreset',
+              type: 'MQ<string>',
+              default: 'utilityLabel020',
+              description:
+                'If provided, overrides the typographyPreset of the LinkStandalone.',
+            },
+            {
+              attribute: 'transitionPreset',
+              type: 'MQ<string>',
+              default: ['fontColorChange', 'iconColorChange'],
+              description:
+                'If provided, overrides the transitionPresets of the LinkStandalone.',
+            },
+            {
+              attribute: 'spaceInline',
+              type: 'MQ<string>',
+              default: 'space010',
+              description:
+                'If provided overrides the gap between each element in the LinkStandalone. e.g. icon and text.',
+            },
+            {
+              attribute: 'externalIcon.size',
+              type: 'MQ<string>',
+              default: 'iconSize010',
+              description: (
+                <>
+                  If provided, overrides the size of the external icon, that
+                  appears after (trailing) the label of the LinkStandalone.
+                  <br />
+                  <br />
+                  Note - it is also possible to set the icon size by passing it
+                  directly as a size prop to the icon. However, by doing this
+                  you will override the <InlineCode>iconSize</InlineCode> passed
+                  from overrides.
+                </>
+              ),
+            },
+            {
+              attribute: 'logicalProps',
+              type: 'MQ<string>',
+              default: 'space010',
+              description: (
+                <>
+                  Logical props can define either padding or margins, depending
+                  on the element&apos;s writing mode, directionality, or text
+                  orientation.
+                </>
+              ),
+            },
+          ],
+          overridesSummary:
+            'The LinkStandalone has a range of predefined elements and attributes that can be overridden to define its appearance.',
+          overridesFooter: (
+            <>
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="overrides info"
+                overrides={{
+                  marginBlockStart: 'space030',
+                }}
+              >
+                LinkStandalone is a seperately exported component, which does
+                not include an underline by default.
               </InlineMessage>
             </>
           ),
