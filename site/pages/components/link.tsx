@@ -477,23 +477,8 @@ const LinkComponent = (layoutProps: LayoutProps) => (
                   target="_blank"
                 >
                   anchor HTML element
-                </LinkInline>{' '}
-                ,is also valid on the link component.
-              </InlineMessage>
-            </>
-          ),
-          overridesFooter: (
-            <>
-              <InlineMessage
-                icon={infoIcon}
-                role="region"
-                aria-label="ovverides link info"
-                overrides={{
-                  marginBlockStart: 'space030',
-                }}
-              >
-                linkStandalone is a seperately exported component, which does
-                not include the underline by default.
+                </LinkInline>
+                , is also valid on the LinkInline component.
               </InlineMessage>
             </>
           ),
@@ -523,6 +508,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
                   Note - a link requires a href property to be passed in.
                 </>
               ),
+              required: true,
             },
             {
               name: 'noCrop',
@@ -585,8 +571,8 @@ const LinkComponent = (layoutProps: LayoutProps) => (
                   target="_blank"
                 >
                   anchor HTML element
-                </LinkInline>{' '}
-                ,is also valid on the link component.
+                </LinkInline>
+                , is also valid on the LinkStandalone component.
               </InlineMessage>
             </>
           ),
