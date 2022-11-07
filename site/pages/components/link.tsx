@@ -10,6 +10,8 @@ import {UsageKind} from '../../components/usage-card';
 import {LinkInline} from '../../../src/link';
 import {Link} from '../../components/link';
 import {IconFilledCircle} from '../../components/icons';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {OverridesRowsProps} from '../../components/component-api';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -447,17 +449,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
                 </>
               ),
             },
-            {
-              attribute: 'logicalProps',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Logical props can define either padding or margins, depending
-                  on the element &#39;s writing mode, directionality, or text
-                  orientation.,
-                </>
-              ),
-            },
+            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
           overridesSummary:
             'The LinkInline has a range of predefined elements and attributes that can be overridden to define its appearance.',
