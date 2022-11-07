@@ -60,12 +60,6 @@ const commonPropsRows = () => [
 
 const commonOverridesRows = [
   {
-    attribute: 'button.size',
-    type: 'small | medium | large',
-    default: 'medium',
-    description: `If provided, this overrides the size of the button.`,
-  },
-  {
     attribute: 'width',
     type: 'MQ<string>',
     description: `If provided, sets a fixed width for the button. Can be a sizing token from the theme, or any CSS length value (e.g. 100% for a full width element)`,
@@ -89,13 +83,13 @@ const commonOverridesRows = [
       'If provided, sets a maximum height for the button. Can be a sizing token from the theme, or any CSS length value',
   },
   {
-    attribute: 'button.stylePreset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: 'buttonSolidPrimary',
     description: 'If provided, overrides the stylePreset of the button',
   },
   {
-    attribute: 'button.typographyPreset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: [
       'small = utilityBody020',
@@ -105,13 +99,13 @@ const commonOverridesRows = [
     description: 'If provided, overrides the typographyPreset of the button',
   },
   {
-    attribute: 'button.transitionPreset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: ['backgroundColorChange', 'borderColorChange'],
     description: 'If provided, overrides the transitionPreset of the button',
   },
   {
-    attribute: 'button.spaceInset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: [
       'small = spaceInsetSquish020',
@@ -121,14 +115,14 @@ const commonOverridesRows = [
     description: 'If provided, overrides the inset space of the button',
   },
   {
-    attribute: 'button.spaceInline',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: ['small = space020', 'medium = space020', 'large = space020'],
     description:
       'If provided, overrides the space between multiple children in the underlying stack',
   },
   {
-    attribute: 'button.icon.size',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: [
       'small = iconSize010',
@@ -145,7 +139,7 @@ const commonOverridesRows = [
     ),
   },
   {
-    attribute: 'loadingIndicator.stylePreset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: 'indeterminateProgressIndicatorPrimary',
     description:
