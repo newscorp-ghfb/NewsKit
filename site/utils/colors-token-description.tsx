@@ -12,6 +12,7 @@ export const INK_DESCRIPTION = {
     <>
       Text and icons for success messages
       <br />
+      <br />
       Feedback notifications (valid) (e.g. assistive text in a{' '}
       <Link href="/components/text-field/">text field</Link>
     </>
@@ -19,6 +20,7 @@ export const INK_DESCRIPTION = {
   inkNegative: (
     <>
       Text and icons for error messages
+      <br />
       <br />
       Feedback notifications (invalid) (e.g. assistive text in a{' '}
       <Link href="/components/text-field/">text field</Link>)
@@ -52,11 +54,13 @@ export const INTERFACE_DESCRIPTION = {
       Background (high contrast in a light theme, and low contrast in a dark
       theme) for informative messages
       <br />
+      <br />
       Feedback notifications (e.g.{' '}
       <Link href="/components/banner/">banner</Link>,{' '}
       <Link href="/components/flag/">flag</Link>,{' '}
       <Link href="/components/inline-message/">inline message</Link>
       )
+      <br />
       <br />
       <Link href="/components/toast/">Toast</Link> component backgrounds
     </>
@@ -77,10 +81,12 @@ export const INTERFACE_DESCRIPTION = {
       Background (high contrast in a light theme, and low contrast in a dark
       theme) for notice or warning messages
       <br />
+      <br />
       Feedback notifications (e.g.{' '}
       <Link href="/components/banner/">banner</Link>,{' '}
       <Link href="/components/flag/">flag</Link>
       )
+      <br />
       <br />
       <Link href="/components/toast/">Toast</Link> backgrounds
     </>
@@ -90,6 +96,7 @@ export const INTERFACE_DESCRIPTION = {
       Background (low contrast in a light theme, and high contrast in a dark
       theme) for notice or warning messages
       <br />
+      <br />
       Feedback notifications
     </>
   ),
@@ -98,11 +105,13 @@ export const INTERFACE_DESCRIPTION = {
       Background (high contrast in a light theme, and low contrast in a dark
       theme) for error messages
       <br />
+      <br />
       Feedback notifications (e.g.{' '}
       <Link href="/components/banner/">banner</Link>,{' '}
       <Link href="/components/flag/">flag</Link>,{' '}
       <Link href="/components/inline-message/">inline message</Link>
       )
+      <br />
       <br />
       <Link href="/components/toast/">Toast</Link> component backgrounds
     </>
@@ -111,6 +120,7 @@ export const INTERFACE_DESCRIPTION = {
     <>
       Background (low contrast in a light theme, and high contrast in a dark
       theme) for error messages
+      <br />
       <br />
       Feedback notifications (e.g.{' '}
       <Link href="/components/inline-message/">inline message</Link> component
@@ -129,6 +139,7 @@ export const INTERFACE_DESCRIPTION = {
       <Link href="/components/inline-message/">inline message</Link>
       )
       <br />
+      <br />
       <Link href="/components/toast/">Toast</Link> component backgrounds
     </>
   ),
@@ -136,6 +147,7 @@ export const INTERFACE_DESCRIPTION = {
     <>
       Background (low contrast in a light theme, and high contrast in a dark
       theme) for success messages
+      <br />
       <br />
       Feedback notifications
     </>
@@ -153,6 +165,7 @@ export const INTERFACE_DESCRIPTION = {
       <Link href="/components/inline-message/">inline message</Link>
       )
       <br />
+      <br />
       <Link href="/components/toast/">Toast</Link> component backgrounds
     </>
   ),
@@ -160,6 +173,7 @@ export const INTERFACE_DESCRIPTION = {
     <>
       Background (low contrast in a light theme, and high contrast in a dark
       theme) for neutral messages
+      <br />
       <br />
       Feedback notifications
     </>

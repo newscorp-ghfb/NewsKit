@@ -215,7 +215,7 @@ const Fonts = (layoutProps: LayoutProps) => (
               <br />
               When you{' '}
               <Link href="/theme/theming/creating-a-theme/">
-                creating a theme in code
+                create a theme in code
               </Link>{' '}
               or Figma, characteristics such as font family, font weight, letter
               spacing, line height and font style are applied in a systematic
@@ -330,7 +330,7 @@ const Fonts = (layoutProps: LayoutProps) => (
               to any text element using the{' '}
               <InlineCode>fontLineHeight</InlineCode> attribute on a{' '}
               <Link href="/theme/presets/typography-presets">
-                yypography preset.
+                typography preset.
               </Link>
             </>
           }
@@ -500,14 +500,15 @@ const Fonts = (layoutProps: LayoutProps) => (
           headline="Design"
           description={
             <>
-              Use the text crop plugin in Figma to crop a selected text block or
-              all text block components on a page.{' '}
+              Use the{' '}
               <Link
                 href="https://www.figma.com/community/plugin/951930713294228024/Text-Crop"
                 target="_blank"
               >
-                Learn more.
-              </Link>
+                text crop plugin
+              </Link>{' '}
+              in Figma to crop a selected text block or all text block
+              components on a page.
             </>
           }
         />
@@ -522,7 +523,7 @@ const Fonts = (layoutProps: LayoutProps) => (
           description={
             <>
               When using a text block component{' '}
-              <Link href="/components/text-block/">text block</Link> c in code,
+              <Link href="/components/text-block/">text block</Link> in code,
               text crop is applied by default. You can remove it with a{' '}
               <InlineCode>noCrop</InlineCode>.
             </>

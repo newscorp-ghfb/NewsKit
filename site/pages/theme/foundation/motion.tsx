@@ -122,12 +122,10 @@ const Motion = (layoutProps: LayoutProps) => (
               You can use motion foundations in animations and transitions.
               <br />
               <br />
-              <Link
-                href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/3446341702"
-                target="_blank"
-              >
-                Learn more about how motion foundations are applied to
-                animations and transitions via transition presets.
+              Learn more about how motion foundations are applied to animations
+              and transitions via{' '}
+              <Link href="/theme/presets/transition-presets" target="_blank">
+                transition presets.
               </Link>
             </>
           }
@@ -169,7 +167,7 @@ const Motion = (layoutProps: LayoutProps) => (
             <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration">
               animation-duration
             </Link>{' '}
-            css property.
+            CSS property.
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
@@ -207,7 +205,7 @@ const Motion = (layoutProps: LayoutProps) => (
             You should use the{' '}
             <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function">
               animation-timing-function
-            </Link>
+            </Link>{' '}
             CSS property.
           </InlineMessage>
         </ContentSecondary>

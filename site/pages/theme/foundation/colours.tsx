@@ -302,18 +302,24 @@ const Colours = (layoutProps: LayoutProps) => (
           id="palettecolours"
           toc="Palette colours"
           headline="Palette colours"
-          description="Palette colours represent your brand’s colours.
-
-          They’re linked to contextual colour tokens, which apply specific meaning (context).
-          
-          Consider whether a palette colour is best applied directly to an interface or as a contextual colour.
-          "
+          description={
+            <>
+              Palette colours represent your brand’s colours.
+              <br />
+              <br />
+              They’re linked to contextual colour tokens, which apply specific
+              meaning (context).
+              <br />
+              <br />
+              Consider whether a palette colour is best applied directly to an
+              interface or as a contextual colour.
+            </>
+          }
         />
 
         <ContentSecondary
-          headline="Understanding the swatches"
-          description="Utilise the swatches below to determine the accessibility of the
-        palette colour in contrast to the background colour of this page"
+          headline="Swatches"
+          description="Use the swatches below to determine the accessibility of the palette colour in contrast to the background colour of this page:"
           childrenColSpan={ContentColSpan.TEXT}
         >
           {CUSTOM_ICONS.map(({icon, label}) => (
@@ -376,7 +382,7 @@ const Colours = (layoutProps: LayoutProps) => (
             <>
               Colour can be applied to a UI element using the color, iconColor
               borderColor, placeholderColor and background attribute on a{' '}
-              <Link href="/theme/presets/style-presets/">Style Preset.</Link>
+              <Link href="/theme/presets/style-presets/">style preset.</Link>
             </>
           }
         />
@@ -407,9 +413,12 @@ backgroundColor: '{{colors.interactiveVisited010}}';`}
             <>
               Choose your contextual colours carefully so important UI elements
               like text and icons are legible without compromising your
-              aesthetic. Avoid yellow and orange for notices or warnings.
-              Pairing these colours with white text does not allow for
-              sufficient contrast. Aim for contrast ratios that meet{' '}
+              aesthetic.
+              <br />
+              <br />
+              Avoid yellow and orange for notices or warnings. Pairing these
+              colours with white text does not allow for sufficient contrast.
+              Aim for contrast ratios that meet{' '}
               <Link
                 target="_blank"
                 href="https://www.w3.org/TR/WCAG20-TECHS/G18.html"

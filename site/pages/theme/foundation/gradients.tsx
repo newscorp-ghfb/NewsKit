@@ -106,7 +106,6 @@ const Gradients = (layoutProps: LayoutProps) => (
             listItemMarker={IconFilledCircle}
             overrides={{
               spaceStack: 'space040',
-              paddingInline: 'space010',
               content: {
                 typographyPreset: {
                   xs: 'editorialParagraph020',
@@ -129,7 +128,6 @@ const Gradients = (layoutProps: LayoutProps) => (
             listItemMarker={IconFilledCircle}
             overrides={{
               spaceStack: 'space040',
-              paddingInline: 'space010',
               content: {
                 typographyPreset: {
                   xs: 'editorialParagraph020',

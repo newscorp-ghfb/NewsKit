@@ -80,7 +80,7 @@ const Iconography = (layoutProps: LayoutProps) => (
                   <>
                     Apply colour to icons using{' '}
                     <Link href="/theme/foundation/colours#css-w5wzt1">
-                      Ink colour tokens.
+                      ink colour tokens.
                     </Link>
                   </>
                 ),
@@ -218,7 +218,7 @@ const Iconography = (layoutProps: LayoutProps) => (
                   <>
                     Avoid using icons as your only way of communicating, if
                     there’s space to include a label or supporting text.
-                    Alternatively, use a tooltip
+                    Alternatively, use a{' '}
                     <Link href="/components/tooltip">tooltip</Link> to provide
                     additional context on hover.
                   </>
@@ -242,7 +242,7 @@ const Iconography = (layoutProps: LayoutProps) => (
                   <>
                     Use a 3:1 minimum colour contrast ratio between icon and
                     background colours. Learn more about W3 web accessibility
-                    colour standards at
+                    colour standards at{' '}
                     <Link target="_blank" href="https://www.w3.org/TR/WCAG21/">
                       WCAG
                     </Link>
@@ -254,7 +254,7 @@ const Iconography = (layoutProps: LayoutProps) => (
               },
               {
                 description:
-                  'Try to give icons a name that adequately describes what it represents.',
+                  'Use names that describe what the icon represents. Keep them simple and logical.',
                 kind: UsageKind.DO,
                 media: getIllustrationComponent('theme/iconography/do-05'),
               },

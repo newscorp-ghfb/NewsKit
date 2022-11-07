@@ -83,6 +83,7 @@ const DesignTokens = (layoutProps: LayoutProps) => (
               values for colour or pixel values for spacing.
             </>
           }
+          showSeparator
         />
 
         <ContentPrimary
@@ -164,13 +165,10 @@ const DesignTokens = (layoutProps: LayoutProps) => (
           headline="Presets"
           description={
             <>
-              When constructing components, you can group design tokens into
-              presets. This creates a simple way to customise particular aspects
-              of a component.{' '}
-              <Link href="/theme/presets/style-presets">
-                Read more about Presets
-              </Link>
-              .
+              When constructing components, you can group design tokens into{' '}
+              <Link href="/theme/presets/style-presets">presets</Link>. This
+              creates a simple way to customise particular aspects of a
+              component.
             </>
           }
           showSeparator

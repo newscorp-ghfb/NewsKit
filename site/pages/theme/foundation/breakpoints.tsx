@@ -80,15 +80,7 @@ const Breakpoints = (layoutProps: LayoutProps) => (
           id="overview"
           toc="Overview"
           headline="Overview"
-          description={
-            <>
-              Choose from five different breakpoints. You can customise the
-              breakpoint range, margins and gutters.
-              <br />
-              <br />
-              The default values are:
-            </>
-          }
+          description="Choose from five different breakpoints. You can customise the breakpoint range, margins and gutters. The default values are:"
         >
           <Illustration path="theme/breakpoints/overview" />
         </ContentPrimary>
@@ -179,7 +171,7 @@ const theme = createTheme({
             <>
               In the codebase, use the{' '}
               <Link href="/theme/theming/component-defaults/">
-                component defaults and overrides system
+                component overrides and defaults system
               </Link>{' '}
               to override design tokens at specific breakpoints. For example,
               set different typography presets at different breakpoints to make

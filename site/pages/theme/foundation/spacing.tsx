@@ -126,7 +126,7 @@ const Spacing = (layoutProps: LayoutProps) => (
               You can override and apply space inset to components using{' '}
               <Link href="/theme/theming/component-defaults/">
                 component defaults
-              </Link>{' '}
+              </Link>
               .
               <br />
               <br />

@@ -60,7 +60,7 @@ const Opacity = (layoutProps: LayoutProps) => (
             <>
               Opacity makes UI interface elements more or less translucent. You
               can apply these elements to a{' '}
-              <Link href="/components/block">Block.</Link>
+              <Link href="/components/block">block.</Link>
               <br />
             </>
           }

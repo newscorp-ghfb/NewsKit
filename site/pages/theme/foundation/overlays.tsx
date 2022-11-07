@@ -88,8 +88,7 @@ const DO_AND_DONT = [
       <>
         Overlay contrasts should be distinct and clear. You can use them to
         obscure page content and emphasise an element for greater legibility
-        (e.g.
-        <Link href="/components/modal">Modal</Link>).
+        (e.g. <Link href="/components/modal">modal</Link>).
       </>
     ),
 
