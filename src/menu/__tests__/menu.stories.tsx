@@ -1550,6 +1550,47 @@ export const StoryMenuMultipleAuto = () => {
 };
 StoryMenuMultipleAuto.storyName = 'sub-menu-auto';
 
+export const StoryMenuSubOverrides = () => {
+  const [expanded, setExpanded] = useState(false);
+  const menuItemOverrides = {
+    stylePreset: 'menuItemCustom',
+  };
+  return (
+    <>
+      <StorybookHeading>Menu sub with overrides</StorybookHeading>
+      <Menu size="medium" aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem
+          href={href}
+          overrides={{...menuItemOverrides, minHeight: '56px'}}
+        >
+          Menu item 1
+        </MenuItem>
+        <MenuItem
+          href={href}
+          overrides={{...menuItemOverrides, minHeight: '56px'}}
+        >
+          Menu item 2
+        </MenuItem>
+        <MenuSub
+          title="Menu item 3"
+          expanded={expanded}
+          onClick={() => {
+            setExpanded(!expanded);
+          }}
+          overrides={{
+            ...menuItemOverrides,
+            paddingInlineStart: '16px',
+          }}
+        >
+          <MenuItem href={href}>Menu item 3.1</MenuItem>
+          <MenuItem href={href}>Menu item 3.2</MenuItem>
+        </MenuSub>
+      </Menu>
+    </>
+  );
+};
+StoryMenuSubOverrides.storyName = 'menu sub - overrides';
+
 export default {
   title: 'Components/menu',
   component: () => 'None',

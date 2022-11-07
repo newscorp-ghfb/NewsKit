@@ -52,7 +52,6 @@ export type MenuSubProps = Omit<
   'title' | 'overrides' | 'href'
 > & {
   title?: React.ReactNode;
-  onChange?: (event: boolean) => void;
   expanded?: boolean;
   defaultExpanded?: boolean;
   overrides?: {

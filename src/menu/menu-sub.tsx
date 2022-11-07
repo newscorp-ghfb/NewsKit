@@ -88,12 +88,13 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
         <StyledButton
           {...buttonProps}
           align={align}
-          overrides={{
-            ...menuItemOverrides,
-          }}
           aria-current={selected && 'page'}
           onClick={composeEventHandlers([handleClick, onClick])}
           aria-expanded={isExpanded}
+          data-testid="menu-sub-button"
+          overrides={{
+            ...menuItemOverrides,
+          }}
         >
           {title}
           <IndicatorIcon {...(indicatorIconProps as MenuSubIconProps)} />
