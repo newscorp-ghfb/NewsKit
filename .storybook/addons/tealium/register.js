@@ -5,7 +5,6 @@ import Helmet from 'react-helmet';
 import {IconButton, Icons} from '@storybook/components';
 
 import {
-  Consent,
   Tealium,
   ConsentSettingsLink,
   newskitLightTheme,
@@ -55,11 +54,6 @@ const CONFIG = {
     profileId: 'thetimes.storybook',
     env: isProduction ? 'prod' : 'dev',
   },
-  consent: {
-    accountId: 259,
-    propertyHref: 'https://newskit.co.uk',
-    gdpr: {},
-  },
 };
 
 const Tool = () => {
@@ -81,10 +75,6 @@ const Tool = () => {
           {''}
         </ConsentSettingsLink>
         <Tealium {...CONFIG.tealium} reactHelmet={Helmet} />
-        {/* <Consent
-          sourcePointConfigUnified={CONFIG.consent}
-          reactHelmet={Helmet}
-        /> */}
         <Tooltip content="Privacy Manager" asLabel placement="left">
           <span>
             <IconButton
