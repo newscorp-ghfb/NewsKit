@@ -304,15 +304,29 @@ commands:
           <<: *applitools_defaults
       - run:
           name: Run Applitools Docs Site Visual Tests
-          # Allow the step to pass even if tests fail by appending || true. The Applitools GitHub check is required, so
-          # merging will still be blocked until test failures are resolved. But the test job will not need to be re-run.
-          command: make e2e_visual_test_docs || true
+          command: make e2e_visual_test_docs
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
           path: cypress/videos
       - slack/notify:
           <<: *slack_notify
+
+  run_test_visual_docs_percy:
+    description: 'Run the Percy tests for docs visual changes'
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Set percy/newskit-docsite token
+          command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
+      - run:
+          name: Run Percy Docs Site Visual Tests
+          # Allow this to fail (|| true) for the POC
+          command: make e2e_visual_test_docs_percy || true
+      - store_artifacts:
+          path: cypress/screenshots
 
 jobs:
   can_i_merge_checker:
@@ -321,6 +335,18 @@ jobs:
       - run:
           name: 'Check to make sure all tests have run before merging.'
           command: echo 'passed'
+
+  download_headless_chrome:
+    executor: node-large
+    steps:
+      - checkout
+      - run:
+          name: Download headless Chrome dependencies
+          command: make download_headless_chrome
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - vendor/apt/*
 
   install_deps:
     executor: node-large
@@ -605,18 +631,32 @@ jobs:
           at: ~/project
       - run:
           name: Install Headless Chrome dependencies
-          command: >
-            sudo apt-get update && sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libgbm-dev libappindicator1 libnss3 lsb-release xdg-utils wget
+          command: make install_headless_chrome
       - run:
           name: 'Setup Applitools environment variables'
           <<: *applitools_defaults
       - run:
           name: Run Applitools Storybook Component Tests
-          # Allow the step to pass even if tests fail by appending || true. The Applitools GitHub check is required, so
-          # merging will still be blocked until test failures are resolved. But the test job will not need to be re-run.
-          command: make comps_visual_test || true
+          command: make comps_visual_test
       - slack/notify:
           <<: *slack_notify
+
+  test_visual_comps_percy:
+    executor: node-large
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Install Headless Chrome dependencies
+          command: make install_headless_chrome
+      - run:
+          name: Set percy/newskit-comps token
+          command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
+      - run:
+          name: Run Percy Storybook Component Tests
+          # Allow this to fail (|| true) for the POC
+          command: make comps_visual_test_percy || true
 
   skip_applitools_check:
     executor: node
@@ -625,6 +665,36 @@ jobs:
           name: 'Pass the required GitHub / Applitools check'
           command: |
             curl --request POST --header "Content-Type: application/json" --data "{\"serverId\":\"github\",\"commitSha\":\"$CIRCLE_SHA1\"}" "https://eyesapi.applitools.com/api/externals/github/servers/github/commit/$CIRCLE_SHA1/complete?apiKey=$APPLITOOLS_API_KEY"
+
+  skip_percy_comps_check:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Install Headless Chrome dependencies
+          command: make install_headless_chrome
+      - run:
+          name: Set percy/newskit-comps token
+          command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
+      - run:
+          name: 'Skip the required Percy check for the newskit-comps project'
+          command: yarn test:visual:comps:ci:percy:skip
+
+  skip_percy_docsite_check:
+    <<: *cypress_defaults
+    executor: cypress
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Set percy/newskit-docsite token
+          command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
+      - run:
+          name: 'Skip the required Percy check for the newskit-docsite project'
+          command: yarn e2e:visual:docs:ci:percy:skip
 
   test_visual_docs:
     <<: *cypress_defaults
@@ -637,6 +707,18 @@ jobs:
     executor: cypress
     steps:
       - run_test_visual_changes
+
+  test_visual_docs_percy:
+    <<: *cypress_defaults
+    executor: cypress
+    steps:
+      - run_test_visual_docs_percy
+
+  test_visual_docs_percy_2:
+    <<: *cypress_defaults
+    executor: cypress
+    steps:
+      - run_test_visual_docs_percy
 
   test_e2e_comps:
     <<: *cypress_defaults
@@ -856,8 +938,9 @@ jobs:
       flux_repo_name:
         type: string
         default: 'ncu-flux-newskit-site'
-      is_production_deployment:
-        type: boolean
+      deployment_type:
+        type: string
+        default: dev
     executor: flux-deploy
     steps:
       - setup_remote_docker:
@@ -867,11 +950,12 @@ jobs:
           name: Push config to flux repo
           command: |
             apk add --update npm
-            if [ << parameters.is_production_deployment >> = true ];
-            then
-              export DOCKER_TAG=$(node -p "require('./package.json').version")
+            if [ << parameters.deployment_type >> = release ]; then
+              export DOCKER_TAG=$(node -p "require('./package.json').version")-release
+            elif [ << parameters.deployment_type >> = prod ]; then
+              export DOCKER_TAG=$(node -p "require('./package.json').version")-prod-$CIRCLE_SHA1
             else
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-$CIRCLE_SHA1
+              export DOCKER_TAG=$(node -p "require('./package.json').version")-dev-$CIRCLE_SHA1
             fi
             config_values=eks/values/product-platforms-values-<< parameters.environment >>.yaml
             out_dir=product-platforms-<< parameters.environment >>
@@ -943,14 +1027,14 @@ jobs:
       - run:
           name: Install yalc and create-next-app
           command: |
-            yarn global add yalc && yarn add create-next-app@latest
+            yarn global add yalc
       - run:
           name: Yalc publish and run create-nextjs-app
           command: |
             cd dist
             yalc publish
             cd ..
-            npx create-next-app@latest newskit-integration-test
+            yarn create next-app newskit-integration-test
       - run:
           name: Prepare the NextJs app
           command: |
@@ -958,6 +1042,7 @@ jobs:
 
             cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
             cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
+            cp ./scripts/templates-integration-test/next.config.js ./newskit-integration-test/
             mkdir -p ./newskit-integration-test/cypress/integration
             cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
 
@@ -967,12 +1052,11 @@ jobs:
             cd newskit-integration-test
             yalc add newskit
             yarn add start-server-and-test
-            # Temp downgrading React. Needed for avoiding Hydration error with React v18 https://github.com/vercel/next.js/discussions/35773
-            yarn add react@17.0.1
-            yarn add react-dom@17.0.1
+            yarn add react@18.2
+            yarn add react-dom@18.2
             yarn add @emotion/react
             yarn add @emotion/styled
-            yarn add -D cypress@9.1.0;
+            yarn add -D cypress@9.1.0
       - run:
           name: Serve and test app with Cypress
           command: |
@@ -1148,6 +1232,7 @@ workflows:
     jobs:
       - install_deps
       - install_cypress
+      - download_headless_chrome
       - build_icons:
           requires:
             - install_deps
@@ -1196,14 +1281,17 @@ workflows:
           type: approval
           requires:
             - build_storybook
+            - install_cypress
       - docs_and_comps_visual_changes:
           type: approval
           requires:
             - build_storybook
+            - install_cypress
       - docs_visual_changes:
           type: approval
           requires:
             - build_storybook
+            - install_cypress
 
       # Jobs for realising unstable NPM version
       - approve_publish_npm_pr:
@@ -1227,10 +1315,25 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - no_visual_changes
+      - skip_percy_comps_check:
+          context: ncu-product-platforms-context
+          requires:
+            - no_visual_changes
+            - download_headless_chrome
+      - skip_percy_docsite_check:
+          context: ncu-product-platforms-context
+          requires:
+            - no_visual_changes
       - test_visual_comps:
           context: ncu-product-platforms-context
           requires:
             - docs_and_comps_visual_changes
+            - download_headless_chrome
+      - test_visual_comps_percy:
+          context: ncu-product-platforms-context
+          requires:
+            - docs_and_comps_visual_changes
+            - download_headless_chrome
       - test_visual_docs:
           context: ncu-product-platforms-context
           requires:
@@ -1238,6 +1341,18 @@ workflows:
             - install_cypress
             - test_visual_comps
       - test_visual_docs_2:
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+            - docs_visual_changes
+      - test_visual_docs_percy:
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+            - test_visual_comps_percy
+      - test_visual_docs_percy_2:
           context: ncu-product-platforms-context
           requires:
             - build_docs_pr_with_no_base_url
@@ -1441,7 +1556,7 @@ workflows:
           name: eks_flux_deploy_dev
           context: ncu-newskit-site-dev
           environment: dev
-          is_production_deployment: false
+          deployment_type: dev
           requires:
             - build_push_docker_ecr_dev
       - eks_kubectl_deploy:
@@ -1451,16 +1566,11 @@ workflows:
           requires:
             - eks_flux_deploy_dev
 
-      - approve_publish_docs_&_storybook:
-          context: ncu-product-platforms-context
-          type: approval
-          requires:
-            - eks_kubectl_deploy_dev
       - build_docs:
           name: build_docs_prod_link
           context: ncu-newskit-site-prod
           requires:
-            - approve_publish_docs_&_storybook
+            - eks_kubectl_deploy_dev
       - build_push_docker_ecr:
           name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
@@ -1471,7 +1581,7 @@ workflows:
       - eks_flux_deploy:
           name: eks_flux_deploy_staging
           context: ncu-newskit-site-stage
-          is_production_deployment: true
+          deployment_type: prod
           environment: staging
           requires:
             - build_push_docker_ecr_prod
@@ -1483,10 +1593,10 @@ workflows:
             - eks_flux_deploy_staging
 
       - eks_flux_deploy:
-          name: eks_flux_deploy_dev_to_prod
+          name: eks_flux_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
-          is_production_deployment: true
+          deployment_type: prod
           requires:
             - eks_kubectl_deploy_staging
       - eks_kubectl_deploy:
@@ -1494,7 +1604,7 @@ workflows:
           context: ncu-newskit-site-prod
           environment: prod
           requires:
-            - eks_flux_deploy_dev_to_prod
+            - eks_flux_deploy_prod
       # end
 
   main_codemod:
@@ -1615,6 +1725,7 @@ workflows:
           context: ncu-newskit-site-prod
           requires:
             - build_icons
+            - delete_trigger_release_tag
       - test_broken_links_docs:
           <<: *only_on_version_tag
           name: test_broken_links_docs_prod
@@ -1662,7 +1773,7 @@ workflows:
           <<: *only_on_version_tag
           name: eks_flux_deploy_staging
           context: ncu-newskit-site-stage
-          is_production_deployment: true
+          deployment_type: release
           environment: staging
           requires:
             - publish_npm
@@ -1679,7 +1790,7 @@ workflows:
           name: eks_flux_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
-          is_production_deployment: true
+          deployment_type: release
           requires:
             - eks_kubectl_deploy_staging
       - eks_kubectl_deploy:

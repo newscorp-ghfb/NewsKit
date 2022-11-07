@@ -3,6 +3,8 @@
 exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   row-gap: 16px;
   grid-template-columns: max-content;

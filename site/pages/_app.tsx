@@ -122,6 +122,7 @@ export default class MyApp extends App<Props, State> {
   render() {
     const {Component, pageProps, path} = this.props;
     const {theme, themeMode} = this.state as State;
+    const pathTokens = path.split('/').filter(Boolean);
 
     const handlers = [
       instrumentationHandlers.createConsoleHandler(),
@@ -132,7 +133,7 @@ export default class MyApp extends App<Props, State> {
     return (
       <>
         <HeadNextSeo
-          description="NewsKit design system - components and guidelines to 
+          description="NewsKit design system - components and guidelines to
           help increase the speed of creation and innovation in digital teams."
           image={{
             url: 'social/landing.png',
@@ -145,6 +146,8 @@ export default class MyApp extends App<Props, State> {
           layer={{zIndex: 1000}}
           instrumentation={createEventInstrumentation(handlers, {
             ...pageProps,
+            pageOriginator: pathTokens[pathTokens.length - 1],
+            pageType: pathTokens[0],
           })}
         >
           <ThemeMode.Provider value={themeMode}>

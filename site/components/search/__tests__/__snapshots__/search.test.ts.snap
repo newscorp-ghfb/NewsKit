@@ -3,6 +3,869 @@
 exports[`Search renders correctly 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: none;
+}
+
+.emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -16px 4px 0 4px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -16px 4px 0 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -16px 4px 0 4px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -24px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -24px 0px 0 0px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-4 {
+  margin: 0;
+  color: #09111C;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-block-start: 4px;
+  margin-block-end: 24px;
+}
+
+.emotion-4 svg {
+  fill: #09111C;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-20px/2);
+  margin-bottom: calc(-20px/2);
+  margin-block-start: 4px;
+  margin-block-end: 48px;
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(20px/2);
+  margin-bottom: calc(20px/2);
+}
+
+.emotion-7 {
+  display: inline-block;
+  color: #3358CC;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-7 svg {
+  fill: #3358CC;
+}
+
+.emotion-7:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-7:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-7:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-7:active:not(:disabled) svg {
+  fill: #14328D;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-10 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-10::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-10::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-12 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E3F54;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-12 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-12 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-12.emotion-12 {
+  width: 16px;
+  height: 16px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="DocSearch-NewStartScreen"
+    >
+      <div
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-3"
+          >
+            <p
+              class="emotion-4"
+            >
+              Getting started
+            </p>
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/getting-started/design/design-overview/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Design overview
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/getting-started/code/engineering-overview/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Engineering overview
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/getting-started/code/instrumentation/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Instrumentation setup
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-3"
+          >
+            <p
+              class="emotion-4"
+            >
+              Popular searches
+            </p>
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/components/overview/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Components
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/theme/overview/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Theme
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/components/button/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Button
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-3"
+          >
+            <p
+              class="emotion-4"
+            >
+              Presets
+            </p>
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/theme/presets/style-presets/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Style presets
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/theme/presets/transition-presets/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Transition presets
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/theme/presets/typography-presets/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Typography presets
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-3"
+          >
+            <p
+              class="emotion-4"
+            >
+              Foundations
+            </p>
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/theme/foundation/design-tokens/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Design tokens
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/theme/foundation/colours/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Colours
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <a
+                  class="emotion-7"
+                  href="/theme/foundation/fonts/"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    <span
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Fonts
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-9"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-12 emotion-13"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
   margin-bottom: 4px;
 }
 
@@ -37,24 +900,34 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-1 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px;
+  width: 32px;
+  min-width: 64px;
+  height: 32px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 32px;
-  height: 32px;
-  padding: 8px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -65,7 +938,6 @@ exports[`Search renders correctly 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -127,36 +999,6 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-4 {
   color: #09111C;
   fill: #09111C;
   vertical-align: unset;
@@ -164,7 +1006,7 @@ exports[`Search renders correctly 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -172,14 +1014,14 @@ exports[`Search renders correctly 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4.emotion-4 {
+.emotion-2.emotion-2 {
   width: 24px;
   height: 24px;
   color: #09111C;
@@ -187,7 +1029,7 @@ exports[`Search renders correctly 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4.emotion-4 {
+  .emotion-2.emotion-2 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -195,7 +1037,7 @@ exports[`Search renders correctly 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4.emotion-4 {
+  .emotion-2.emotion-2 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -211,25 +1053,17 @@ exports[`Search renders correctly 1`] = `
       data-testid="search-icon-button"
       type="button"
     >
-      <span
+      <svg
+        aria-hidden="true"
         class="emotion-2"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <span
-          class="emotion-3"
-        >
-          <svg
-            aria-hidden="true"
-            class="emotion-4"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-            />
-          </svg>
-        </span>
-      </span>
+        <path
+          d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+        />
+      </svg>
     </button>
   </div>
   @media screen {
@@ -263,24 +1097,33 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-1 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(3, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  padding: 8px 12px;
   min-width: 130px;
   height: 40px;
-  padding: 8px 12px;
+  min-height: 32px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: auto;
+  min-width: 130px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -294,7 +1137,6 @@ exports[`Search renders correctly 1`] = `
   border-width: 1px;
   border-radius: 24px;
   color: #2E3F54;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -358,43 +1200,13 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-4 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -402,14 +1214,14 @@ exports[`Search renders correctly 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-6 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -420,36 +1232,43 @@ exports[`Search renders correctly 1`] = `
   display: inline-block;
 }
 
-.emotion-6::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 4px 8px;
+  min-height: 24px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
-  padding: 4px 8px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -462,50 +1281,20 @@ exports[`Search renders correctly 1`] = `
   color: #5A6A79;
 }
 
-.emotion-8 svg {
+.emotion-4 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-8 svg {
+.emotion-4 svg {
   fill: #FFFFFF;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #F0F1F3;
 }
 
-.emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-11 {
+.emotion-5 {
   margin: 0;
   font-family: 'DM Mono',courier;
   font-size: 14px;
@@ -515,7 +1304,7 @@ exports[`Search renders correctly 1`] = `
   display: inline-block;
 }
 
-.emotion-11::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -523,7 +1312,7 @@ exports[`Search renders correctly 1`] = `
   margin-bottom: -0.4267857142857143em;
 }
 
-.emotion-11::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -539,54 +1328,30 @@ exports[`Search renders correctly 1`] = `
       data-testid="search-button"
       type="button"
     >
-      <span
+      <svg
+        aria-hidden="true"
         class="emotion-2"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+        />
+      </svg>
+      <span
+        class="emotion-3"
+      >
+        Search
+      </span>
+      <span
+        class="emotion-4"
+        data-testid="flag"
       >
         <span
-          class="emotion-3"
+          class="emotion-5"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
-            />
-          </svg>
-        </span>
-        <span
-          class="emotion-3"
-        >
-          <span
-            class="emotion-6"
-          >
-            Search
-          </span>
-        </span>
-        <span
-          class="emotion-3"
-        >
-          <span
-            class="emotion-8"
-            data-testid="flag"
-          >
-            <span
-              class="emotion-9"
-            >
-              <span
-                class="emotion-10"
-              >
-                <span
-                  class="emotion-11"
-                >
-                  ⌘K
-                </span>
-              </span>
-            </span>
-          </span>
+          ⌘K
         </span>
       </span>
     </button>

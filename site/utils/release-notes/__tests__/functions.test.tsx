@@ -50,12 +50,30 @@ describe('addChangeLevelToReleases', () => {
       {tag_name: 'v1.0.1'},
       {tag_name: 'v1.0.0'},
       {tag_name: 'v2.0.0'},
+      {tag_name: 'v2.2.0'},
       {tag_name: 'v1.1.0'},
     ] as Release[];
     expect(addChangeLevelToReleases(releases)).toEqual([
-      {tag_name: 'v2.0.0', change_level: 'major'},
-      {tag_name: 'v1.1.0', change_level: 'minor'},
-      {tag_name: 'v1.0.1', change_level: 'patch'},
+      {
+        tag_name: 'v2.2.0',
+        published_at: undefined,
+        change_level: 'minor',
+      },
+      {
+        tag_name: 'v2.0.0',
+        published_at: undefined,
+        change_level: 'major',
+      },
+      {
+        tag_name: 'v1.1.0',
+        published_at: undefined,
+        change_level: 'minor',
+      },
+      {
+        tag_name: 'v1.0.1',
+        published_at: undefined,
+        change_level: 'patch',
+      },
     ]);
   });
 });

@@ -18,12 +18,20 @@ Object.entries(routes).forEach(route => {
     it(`should pass visual regression test on ${pageName}`, () => {
       cy.eyesOpen();
       cy.mockConsentAndVisit(path);
-      if (!['spacing', 'welcome', 'overview'].includes(pageName)) {
+      if (
+        !['spacing', 'welcome', 'overview', 'audioPlayer'].includes(pageName)
+      ) {
         cy.get('[data-testid="sample-code"]').first().scrollIntoView({
           easing: 'linear',
         });
       }
-      cy.eyesCheckWindow(`${pageName} page`);
+      cy.eyesCheckWindow({
+        tag: `${pageName} page`,
+        ignore: {
+          selector:
+            'a[href^="https://github.com/newscorp-ghfb/newskit/releases/tag/"]',
+        },
+      });
       cy.eyesClose();
     });
   });
