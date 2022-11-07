@@ -35,7 +35,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
       type: 'Navigation',
       name: 'Link',
       hero: {
-        illustration: 'components/url-illustration',
+        illustration: 'components/link/hero',
       },
       introduction:
         'Links allow users to navigate to a new location or to additional information.',
