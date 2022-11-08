@@ -10,7 +10,11 @@ import {UsageKind} from '../../components/usage-card';
 import {LinkInline} from '../../../src/link';
 import {Link} from '../../components/link';
 import {IconFilledCircle} from '../../components/icons';
-import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {
+  commonLogicalProps,
+  logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
@@ -602,18 +606,8 @@ const LinkComponent = (layoutProps: LayoutProps) => (
                 </>
               ),
             },
-            {
-              attribute: 'logicalProps',
-              type: 'MQ<string>',
-              default: 'space010',
-              description: (
-                <>
-                  Logical props can define either padding or margins, depending
-                  on the element&apos;s writing mode, directionality, or text
-                  orientation.
-                </>
-              ),
-            },
+            ...logicalMarginOverrideProps,
+            ...logicalPaddingOverrideProps,
           ],
           overridesSummary:
             'The LinkStandalone has a range of predefined elements and attributes that can be overridden to define its appearance.',
