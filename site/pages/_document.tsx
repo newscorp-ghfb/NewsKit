@@ -28,43 +28,6 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <Base />
-          <style>
-            {`
-            *, ::after, ::before {
-              box-sizing: border-box;
-            }
-
-            body {
-              margin: 0;
-            }
-
-
-            html {
-              scroll-padding-top: calc(var(--heading-size) + var(--page-offset))
-            }
-
-            ${mq('xs')} {
-              html {
-                --heading-size: ${sizing.sizing080};
-                --page-offset: ${sizing.sizing080};
-              }
-            }
-            ${mq('md')} {
-              html {
-                --heading-size: ${sizing.sizing080};
-                --page-offset: ${sizing.sizing090};
-              }
-            }
-            ${mq('lg')} {
-              html {
-                --heading-size: ${sizing.sizing100};
-                --page-offset: ${sizing.sizing100};
-              }
-            }
-
-            `}
-          </style>
-
           {helmet.script.toComponent()}
           <HTMLMeta />
           {isSiteEnvProduction && (
@@ -89,6 +52,40 @@ export default class MyDocument extends Document {
                     outline: 7px solid red;
                     outline-offset: 7px;
               }`}
+
+              *, ::after, ::before {
+                box-sizing: border-box;
+              }
+
+              body {
+                margin: 0;
+              }
+
+              html {
+                scroll-padding-top: calc(
+                  var(--heading-size) + var(--page-offset)
+                );
+              }
+
+              ${mq('xs')} {
+                html {
+                  --heading-size: ${sizing.sizing080};
+                  --page-offset: ${sizing.sizing080};
+                }
+              }
+              ${mq('md')} {
+                html {
+                  --heading-size: ${sizing.sizing080};
+                  --page-offset: ${sizing.sizing090};
+                }
+              }
+              ${mq('lg')} {
+                html {
+                  --heading-size: ${sizing.sizing100};
+                  --page-offset: ${sizing.sizing100};
+                }
+              }
+
               @font-face {
                 font-family: 'DM Sans';
                 src: url('static/fonts/dmsans-regular-webfont.woff2')
