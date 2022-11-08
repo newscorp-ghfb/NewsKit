@@ -46,7 +46,7 @@ export const addChangeLevelToReleases: (
           // Compare against the previous release in the array or the oldest
           // release removed above.
           change_level: diff(
-            (prev[0] || ascending[0]).tag_name,
+            (prev[prev.length - 1] || ascending[0]).tag_name,
             next.tag_name,
           )!, // Only null if the version is the same (never).
         },

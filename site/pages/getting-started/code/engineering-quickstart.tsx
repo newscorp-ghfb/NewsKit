@@ -19,15 +19,13 @@ const whatNextCards = [
   {
     media: getIllustrationComponent('theme/creating-a-theme/hero'),
     title: 'Creating a theme',
-    description:
-      'Themes represent the brand’s identity, controlling the appearance of all NewsKit components.',
+    description: 'Theme NewsKit components to match your brand.',
     href: '/theme/theming/creating-a-theme/',
   },
   {
     media: getIllustrationComponent('theme/using-a-theme/hero'),
     title: 'Using a theme',
-    description:
-      'To render NewsKit components you must have a theme available for them to utilise.',
+    description: 'Render NewsKit components using an available theme.',
     href: '/theme/theming/using-a-theme/',
   },
 ];
@@ -36,8 +34,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
       title: 'Engineering quickstart',
-      description:
-        'This page describes how to get started building a web application with NewsKit.',
+      description: 'Start building digital products with NewsKit.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -46,7 +43,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'guides/engineering-quickstart/hero',
       },
-      introduction: `This page describes how to get started building a web application with NewsKit.`,
+      introduction: `Start building digital products with NewsKit.`,
     }}
     featureCard={{
       title: 'Need help?',
@@ -55,12 +52,12 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
     }}
   >
     <ComponentPageCell>
-      <ContentSection sectionName="prerequisites">
+      <ContentSection sectionName="Requirements">
         <ContentPrimary
-          id="prerequisites"
-          toc="Prerequisites"
-          headline="Prerequisites"
-          description="To start using NewsKit components in your projects you will need the following:"
+          id="Requirements"
+          toc="Requirements"
+          headline="Requirements"
+          description="To use NewsKit components in your project, you’ll need:"
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
@@ -79,7 +76,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
               <Link href="https://nodejs.org/en/download/" target="_blank">
                 Node.js
               </Link>{' '}
-              with a minimum of node v14 installed.
+              v14 or newer.
             </>
             <>
               A project to install NewsKit into. If you need to create a new one
@@ -104,11 +101,11 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
 
         <ContentSecondary childrenColSpan={ContentColSpan.TEXT} showSeparator>
           <InlineMessage>
-            It’s recommended to use{' '}
+            We recommend{' '}
             <Link href="https://www.typescriptlang.org/" target="_blank">
               typescript
             </Link>
-            , but NewsKit will work with vanilla javascript too.
+            , but NewsKit works with vanilla javascript too.
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
@@ -120,7 +117,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
           headline="Install the package"
           description={
             <>
-              You can install NewsKit package using a package manager like{' '}
+              Install the NewsKit package using a package manager like{' '}
               <Link
                 href="https://docs.npmjs.com/cli/v8/commands/npm"
                 target="_blank"
@@ -154,23 +151,23 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
         </ContentPrimary>
       </ContentSection>
 
-      <ContentSection sectionName="setting up an app">
+      <ContentSection sectionName="set up an app">
         <ContentPrimary
-          id="settingupanapp"
-          toc="Setting up an app"
-          headline="Setting up an app"
+          id="setupanapp"
+          toc="Set up an app"
+          headline="Set up an app"
           description={
             <>
-              NewsKit components can be used like any typical{' '}
+              NewsKit components can be used like any{' '}
               <Link
                 href="https://reactjs.org/docs/components-and-props.html"
                 target="_blank"
               >
-                react components
+                React components
               </Link>
-              . One thing to bear in mind is that they will need to be
-              descendants of a <InlineCode>NewsKitProvider</InlineCode> which
-              provides a single wrapper to configure your application. It adds a{' '}
+              . They need to be descendants of a{' '}
+              <InlineCode>NewsKitProvider</InlineCode> which provides a single
+              wrapper to configure your application. It adds a{' '}
               <Link href="/theme/theming/using-a-theme/">ThemeProvider</Link>,{' '}
               <Link href="/components/utils/hooks/#usemediaqueryobject">
                 MediaQueryProvider
@@ -183,10 +180,9 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
               instrumentation and stacking context in the application.
               <br />
               <br />
-              The following example shows the &quot;Hello World!&quot; example
-              of using a NewsKit{' '}
-              <Link href="/components/tag/">Tag component</Link> with the
-              NewsKitProvider.
+              Here&apos;s the &quot;Hello World!&quot; example of using a
+              NewsKit <Link href="/components/tag/">Tag component</Link> with
+              the NewsKitProvider.
             </>
           }
           showSeparator
@@ -220,7 +216,7 @@ export default class App extends React.Component {
           id="whatsnext"
           toc="What’s next?"
           headline="What’s next?"
-          description="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
+          description=""
           showSeparator
         >
           <MediaList

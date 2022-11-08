@@ -59,7 +59,7 @@ const checkTime = expectedValue => {
 };
 
 const TEST_DATA = {
-  durationInSeconds: 1799,
+  durationInSeconds: 898,
 };
 
 /*
@@ -138,7 +138,7 @@ describe('audio player composable', () => {
 
     // move to 4th minute
     cy.get('@audioSliderTrack').click(129, 4);
-    checkTime(4 * 60);
+    checkTime(2 * 60);
   });
 
   it('pause when end', () => {

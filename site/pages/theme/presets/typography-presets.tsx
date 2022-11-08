@@ -109,14 +109,14 @@ const typographyPresetsTable = [
         columnHeader: COLUMN_HEADER,
         rows: editorialRows,
         description:
-          'These styles are used in more expressive scenarios where they may be more aligned to a brand style, these are used in components like the title bar and card.',
+          'Use these styles in more expressive scenarios where you want to align more closely with your brand style, such as title bars and cards.',
       },
       {
         header: 'Utility',
         columnHeader: COLUMN_HEADER,
         rows: utilityRows,
         description:
-          'These styles are used in more functional scenarios where a clear message needs to be communicated, these are used in components like the buttons, tabs, inline messages, and banners.',
+          'Use these styles in more functional scenarios where a clear message needs to be communicated (e.g. buttons, tabs, inline messages and banners).',
       },
     ],
   },
@@ -147,12 +147,13 @@ const TypographyPresets = (layoutProps: LayoutProps) => (
           headline="Overview"
           description={
             <>
-              Typography Presets define properties such as font-family,
+              Typography presets define properties such as font-family,
               font-weight and line-height, in one design token. In combination
               with{' '}
-              <Link href="/theme/presets/style-presets">Style Presets</Link>,
-              Sizing, and <Link href="/theme/foundation/spacing/">Spacing</Link>{' '}
-              they provide the visual attributes of a component.
+              <Link href="/theme/presets/style-presets">style presets</Link>,
+              <Link href="/theme/foundation/sizing/">sizing</Link>, and{' '}
+              <Link href="/theme/foundation/spacing/">spacing</Link> they
+              provide the visual attributes of a component.
             </>
           }
           showSeparator
@@ -163,33 +164,25 @@ const TypographyPresets = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="default-typography-presets"
           toc="Default typography presets"
-          headline="Default Typography Presets"
-          description={
-            <>
-              Typography Presets define properties such as font-family,
-              font-weight and line-height, in one design token. In combination
-              with{' '}
-              <Link href="/theme/presets/style-presets">Style Presets</Link>,
-              Sizing, and <Link href="/theme/foundation/spacing/">Spacing</Link>{' '}
-              they provide the visual attributes of a component.
-            </>
-          }
+          headline="Default typography presets"
         />
         <TabsWithTable showSeparator components={typographyPresetsTable} />
       </ContentSection>
       <ContentSection sectionName="apply-typography-presets">
         <ContentPrimary
           id="apply-typography-presets"
-          toc="Apply Typography Presets"
-          headline="Apply Typography Presets"
+          toc="Apply typography presets"
+          headline="Apply typography presets"
           description={
             <>
-              Typography Presets can be applied to NewsKit components in a
-              number of ways, learn more about{' '}
+              You can apply typography presets to components in several ways.
+              Learn more about{' '}
               <Link href="/theme/theming/using-a-theme/">using a theme</Link> to
               better understand the trade-offs associated with each approach.
-              For more advanced use cases, Style Presets can be accessed from
-              the theme by calling{' '}
+              <br />
+              <br />
+              For more advanced use cases, access style presets from the theme
+              by calling{' '}
               <Link href="/components/utils/get-defaults">
                 getTypographyPreset
               </Link>{' '}
@@ -200,32 +193,32 @@ const TypographyPresets = (layoutProps: LayoutProps) => (
         />
 
         <ContentSecondary
-          headline="Adding custom Typography Presets to the theme"
+          headline="Add custom typography presets to the theme"
           description={
             <>
-              Custom Typography Presets can be added to the theme. See the{' '}
+              You can add custom typography presets to the theme. See the{' '}
               <Link href="/theme/theming/creating-a-theme/">
-                Creating a theme
+                creating a theme
               </Link>{' '}
-              guide for more details.
+              guide for more.
             </>
           }
           childrenColSpan={ContentColSpan.TEXT}
         >
           <InlineMessage icon={infoIcon}>
-            Thoroughly consider adding additional Typography Presets due to the
+            Thoroughly consider adding additional typography presets due to the
             impact on the theming feature when using multiple themes.
           </InlineMessage>
         </ContentSecondary>
 
         <ContentSecondary
-          headline="Extending Typography Presets"
+          headline="Extend typography presets"
           description={
             <>
-              If additional CSS attributes are required on an existing
-              Typography Preset, for ad hoc usage, pass a{' '}
-              <Link href="/components/text-block/">Text Block</Link> to the
-              styled function.
+              If you need additional CSS attributes on an existing typography
+              preset for ad hoc usage, pass a{' '}
+              <Link href="/components/text-block/">text block</Link> to the
+              styled function:
             </>
           }
           showSeparator
@@ -247,11 +240,10 @@ font-style:italic;
           id="text-crop"
           toc="Text-crop"
           headline="Text-crop"
-          description="To keep consistent and predictable space from design to code, we use a
-        text-cropping utility that removes additional space (leading) around a
-        text block. This allows us to maintain our 4px baseline and keep
-        designs pixel-perfect. Refer to the Text Crop documentation for more
-        detailed information."
+          description="To keep consistent and predictable spacing from design to code, 
+          we use a text cropping utility to remove additional space (leading) around 
+          text blocks. This lets you maintain a 4px baseline and keeps designs pixel 
+          perfect. See the text crop documentation for more."
           showSeparator
         />
       </ContentSection>
@@ -259,11 +251,10 @@ font-style:italic;
       <ContentSection sectionName="accessibility-considerations">
         <ContentPrimary
           id="accessibility-considerations"
-          toc="Accessibility Considerations"
-          headline="Accessibility Considerations"
-          description="Legibility is core to the NewsKit typographic system. By following the
-        guidelines below, we ensure consistency and readability across all
-        typographic variations."
+          toc="Accessibility"
+          headline="Accessibility"
+          description="Legibility is crucial in typography. Here’s how to keep things consistent and readable:
+          "
         >
           <MediaList
             cardsLayout={{
@@ -279,17 +270,16 @@ font-style:italic;
                 title: 'Font size',
                 description: (
                   <>
-                    While there is no official minimum font size for the web, it
-                    is generally agreed upon that 16px for body text is a good
+                    While there’s no official minimum font size for the web,
+                    it’s generally agreed that 16px for body text is a good
                     starting point.
                     <br />
                     <br />
-                    Of course, some text will be smaller for elements such as
-                    labels and headers will be larger.
+                    Of course, text will be smaller for elements such as labels
+                    and larger for headers.
                     <br />
                     <br />
-                    To ensure that text is legible, NewsKit recommended that the
-                    smallest font-size applied to text is no less 12px for web.
+                    We recommend not going smaller than 12px.
                   </>
                 ),
                 media: getIllustrationComponent('theme/typography/font-size'),
@@ -298,17 +288,17 @@ font-style:italic;
                 title: 'Line Height',
                 description: (
                   <>
-                    Providing an adequate amount of space between lines is
-                    critical to the legibility of text. As per W3C accessibility
-                    guidelines line spacing should be at least space-and-a-half
-                    within paragraphs, and paragraph spacing is at least 1.5
-                    times larger than the line spacing.
+                    Adequate space between lines is critical to text legibility.
+                    W3C accessibility guidelines say line spacing should be at
+                    least space-and-a-half within paragraphs, and paragraph
+                    spacing should be at least 1.5 times larger than line
+                    spacing.
                     <br />
                     <br />
-                    Using relative line-heights, NewsKit ensures consistent
-                    spacing of all headings and body-text sizes. Heading and
-                    Headline styles are set to a default of 1.125-times the font
-                    size and body text set at 1.5-times the font size.
+                    NewsKit uses relative line heights to ensure consistent
+                    spacing for all headings and body text sizes. Heading and
+                    headline styles are set to a default of 1.125x the font size
+                    and body text set at 1.5x the font size.
                   </>
                 ),
                 media: getIllustrationComponent('theme/typography/line-height'),
@@ -317,16 +307,15 @@ font-style:italic;
                 title: 'Line length',
                 description: (
                   <>
-                    Line-length, also known as a measure, is the number of
-                    characters contained in a line of text. Line-length should
-                    fall between 50 and 80 characters wide, including spaces, to
-                    ensure readability.
+                    Line length (also known as a measure) is the number of
+                    characters in a line of text. For readability, keep between
+                    50 and 80 characters, including spaces.
                     <br />
                     <br />
                     Lines narrower than 50 characters require the eye to jump to
                     the next line too frequently, breaking the reader’s rhythm.
                     Lines wider than 80 characters make it difficult to continue
-                    to the correct line in a large body of the text.
+                    to the correct line in a large body of text.
                   </>
                 ),
                 media: getIllustrationComponent('theme/typography/line-length'),

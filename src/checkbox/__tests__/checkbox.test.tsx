@@ -2,10 +2,12 @@ import React from 'react';
 import {fireEvent} from '@testing-library/react';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {Checkbox} from '..';
 import {states, sizes} from './helpers';
+import {EventTrigger} from '../../instrumentation';
 
 jest.mock('../../utils/focus-visible', () => ({
   isFocusVisible: jest
@@ -209,5 +211,34 @@ describe('Checkbox', () => {
       />
     ));
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('fire tracking event', () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      defaultChecked: false,
+      eventOriginator: 'checkbox-item',
+      eventContext: {
+        event: 'other event data',
+      },
+    };
+
+    const {getByRole} = renderWithImplementation(
+      Checkbox,
+      props,
+      mockFireEvent,
+    );
+    const checkbox = getByRole('checkbox') as HTMLInputElement;
+
+    fireEvent.click(checkbox);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'checkbox-item',
+      trigger: EventTrigger.Change,
+      context: {
+        checked: true,
+        event: 'other event data',
+      },
+    });
   });
 });

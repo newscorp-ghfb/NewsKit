@@ -1,11 +1,14 @@
 import React from 'react';
+import {fireEvent} from '@testing-library/react';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {Tag, TagProps} from '..';
 import {IconFilledEmail} from '../../icons';
 import {FlagSize} from '../../flag/types';
+import {EventTrigger} from '../../instrumentation';
 
 const renderTagWithText = (props: TagProps) => <Tag {...props}>Text</Tag>;
 const renderTagWithTextAndIcon = (props: TagProps) => (
@@ -212,5 +215,32 @@ describe('Tag', () => {
     };
     const fragment = renderToFragmentWithTheme(renderTagWithTextAndIcon, props);
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('fire tracking event', async () => {
+    const mockFireEvent = jest.fn();
+    const mockOnClick = jest.fn();
+    const props = {
+      children: 'label',
+      onClick: mockOnClick,
+      eventOriginator: 'tag-item',
+      eventContext: {
+        event: 'other event data',
+      },
+    };
+
+    const {getByTestId} = renderWithImplementation(Tag, props, mockFireEvent);
+    const tag = await getByTestId('tag');
+
+    fireEvent.click(tag);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'tag-item',
+      trigger: EventTrigger.Click,
+      context: {
+        event: 'other event data',
+      },
+    });
+    expect(mockOnClick).toHaveBeenCalled();
   });
 });
