@@ -2,57 +2,47 @@ import * as React from 'react';
 import styled from '@emotion/styled';
 import {ThemeProvider} from '@emotion/react';
 import {Divider, DividerProps} from '..';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
 import {StackChild} from '../../stack-child';
-import {IconFilledFacebook, IconFilledWhatsApp} from '../../icons';
-import {getSizingCssFromTheme} from '../../utils/style';
+import {getSizingCssFromTheme, getColorCssFromTheme} from '../../utils/style';
 import {compileTheme, createTheme} from '../../theme';
 
-const Box = styled.div`
+const Box = styled.div<{isMarginRight?: boolean; transparent?: boolean}>`
   display: inline-block;
-  box-sizing: border-box;
-  width: 24px;
-  height: 24px;
-  margin: 12px;
-  padding-left: 11px;
-  border: 1px solid lime;
-`;
-
-const BlockWithBorder = styled(Block)`
-  display: inline-block;
-  border: 1px solid salmon;
+  width: 48px;
+  ${getSizingCssFromTheme('height', 'sizing100')};
+  ${({isMarginRight}) =>
+    isMarginRight ? ' margin-right:10px' : ' margin-right:0px'};
+  ${({transparent}) =>
+    transparent
+      ? getColorCssFromTheme('backgroundColor', 'transparent')
+      : getColorCssFromTheme('backgroundColor', 'blue010')};
 `;
 
 const BlockForDivider = styled(Block)<Pick<DividerProps, 'vertical'>>`
-  ${({vertical}) =>
-    vertical
-      ? getSizingCssFromTheme('height', 'iconSize050')
-      : getSizingCssFromTheme('width', 'iconSize040')};
-  border: 1px solid salmon;
+  ${getSizingCssFromTheme('height', 'sizing080')};
+  ${getColorCssFromTheme('backgroundColor', 'blue010')};
+  ${getColorCssFromTheme('color', 'blue010')};
+  width: 100%;
 `;
 
-const IconContainer = styled(Block)`
-  ${getSizingCssFromTheme('width', 'iconSize040')};
-  ${getSizingCssFromTheme('height', 'iconSize040')};
-`;
-
-const IconContainerInline = styled(Block)`
+const ContainerInline = styled(Block)`
   display: inline-block;
+  ${getSizingCssFromTheme('height', 'sizing100')};
 `;
 
 const StackForHorizontalDivider = styled(Stack)`
   width: 50px;
 `;
 
-const InlineDividerContainer = styled(Block)`
-  display: inline-block;
-  ${getSizingCssFromTheme('height', 'iconSize040')};
-`;
+const dividerCols = {
+  md: 'auto',
+};
+const verticalCols = {
+  md: '1fr 1fr',
+};
 
 const myCustomTheme = compileTheme(
   createTheme({
@@ -62,7 +52,7 @@ const myCustomTheme = compileTheme(
         customDivider: {
           base: {
             borderStyle: 'solid',
-            borderColor: '{{colors.interface060}}',
+            borderColor: '{{colors.amber060}}',
             borderWidth: '{{borders.borderWidth030}}',
           },
         },
@@ -71,159 +61,139 @@ const myCustomTheme = compileTheme(
   }),
 );
 
-export default {
-  title: 'Components/divider',
-  component: () => 'None',
-};
+export const StoryDefault = () => (
+  <StorybookPage columns={{md: 'auto'}}>
+    <StorybookCase>
+      <Divider />
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryDefault.storyName = 'Default';
 
 export const StoryHorizontal = () => (
-  <>
-    <StorybookHeading>Divider - Horizontal</StorybookHeading>
-    <StorybookSubHeading>default</StorybookSubHeading>
-    <Divider />
-    <br />
-    <StorybookSubHeading>in vertical block</StorybookSubHeading>
-    <BlockForDivider>
-      <IconContainer spaceStack="space020">
-        <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-      </IconContainer>
-      <Block spaceStack="space020">
+  <StorybookPage columns={dividerCols}>
+    <StorybookCase title="Default">
+      <Divider />
+    </StorybookCase>
+    <StorybookCase title="In vertical block">
+      <BlockForDivider />
+      <Block paddingBlock="space010" />
+      <Divider />
+      <Block paddingBlock="space010" />
+      <BlockForDivider />
+    </StorybookCase>
+
+    <StorybookCase title="In vertical stack without spacing">
+      <Stack stackDistribution="center" flow="vertical-center">
+        <BlockForDivider />
         <Divider />
-      </Block>
-      <IconContainer>
-        <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
-      </IconContainer>
-    </BlockForDivider>
-    <br />
-    <StorybookSubHeading>in vertical stack without spacing</StorybookSubHeading>
-    <BlockWithBorder>
+        <BlockForDivider />
+      </Stack>
+    </StorybookCase>
+    <StorybookCase title="In vertical stack with spacing">
       <StackForHorizontalDivider
         stackDistribution="center"
         flow="vertical-center"
+        spaceInline="space030"
       >
-        <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-        <Divider />
-        <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
-      </StackForHorizontalDivider>
-    </BlockWithBorder>
-    <br />
-    <StorybookSubHeading>
-      Divider - Horizontal in vertical stack with spacing
-    </StorybookSubHeading>
-    <BlockWithBorder>
-      <StackForHorizontalDivider
-        spaceInline="space040"
-        stackDistribution="center"
-        flow="vertical-center"
-      >
-        <IconFilledFacebook overrides={{size: 'iconSize040'}} />
+        <BlockForDivider>Block 1</BlockForDivider>
+
         <StackChild alignSelf="stretch">
           <Divider />
         </StackChild>
-        <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
+        <BlockForDivider>Block 2</BlockForDivider>
       </StackForHorizontalDivider>
-    </BlockWithBorder>
-  </>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryHorizontal.storyName = 'horizontal';
+StoryHorizontal.storyName = 'Horizontal';
 
 export const StoryVertical = () => (
-  <>
-    <StorybookHeading>Divider - Vertical</StorybookHeading>
-    <StorybookSubHeading>default</StorybookSubHeading>
-    <Box>
-      <Divider vertical />
-    </Box>
-    <br />
-    <StorybookSubHeading>in horizontal Inline Block</StorybookSubHeading>
-    <Block>
-      <IconContainerInline spaceInline="space020">
-        <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-      </IconContainerInline>
-      <InlineDividerContainer spaceInline="space020">
+  <StorybookPage columns={verticalCols}>
+    <StorybookCase title="Default">
+      <Box transparent>
         <Divider vertical />
-      </InlineDividerContainer>
-      <IconContainerInline>
-        <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
-      </IconContainerInline>
-    </Block>
-    <br />
-    <StorybookSubHeading>
-      in horizontal Stack without spacing
-    </StorybookSubHeading>
-    <BlockWithBorder>
-      <Stack flow="horizontal-center" stackDistribution="center">
-        <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-        <StackChild alignSelf="stretch">
-          <Divider vertical />
-        </StackChild>
-        <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
+      </Box>
+    </StorybookCase>
+    <StorybookCase title="In horizontal block">
+      <Box isMarginRight />
+      <ContainerInline spaceInline="space020">
+        <Divider vertical />
+      </ContainerInline>
+      <Box />
+    </StorybookCase>
+    <StorybookCase title="In horizontal Stack without spacing">
+      <Stack flow="horizontal-center" stackDistribution="flex-start">
+        <Box />
+        <Divider vertical />
+        <Box />
       </Stack>
-    </BlockWithBorder>
-    <br />
-    <StorybookSubHeading>in horizontal Stack with spacing</StorybookSubHeading>
-    <BlockWithBorder>
+    </StorybookCase>
+
+    <StorybookCase title="In horizontal Stack with spacing">
       <Stack
         flow="horizontal-center"
-        stackDistribution="center"
-        spaceInline="space030"
+        stackDistribution="flex-start"
+        spaceInline="space020"
       >
-        <IconFilledFacebook overrides={{size: 'iconSize040'}} />
+        <Box />
         <StackChild alignSelf="stretch">
           <Divider vertical />
         </StackChild>
-        <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
+        <Box />
       </Stack>
-    </BlockWithBorder>
-    <br />
-    <StorybookSubHeading>with overrides</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTheme}>
-      <Box>
-        <Divider vertical overrides={{stylePreset: 'customDivider'}} />
-      </Box>
-    </ThemeProvider>
-  </>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryVertical.storyName = 'vertical';
+StoryVertical.storyName = 'Vertical';
 
 export const StoryResponsive = () => (
-  <>
-    <StorybookHeading>Divider - Responsive</StorybookHeading>
-    <StorybookSubHeading>
-      xs: default | sm: vertical | md: horizontal | xs: vertical
-    </StorybookSubHeading>
-    <div style={{height: 50}}>
-      <Divider vertical={{sm: true, md: false, xl: true}} />
-    </div>
-  </>
+  <StorybookPage>
+    <StorybookCase title="Horizontal XS - Vertical MD - Vertical XL">
+      <div style={{height: 50}}>
+        <Divider vertical={{xs: false, sm: true, md: false, xl: true}} />
+      </div>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryResponsive.storyName = 'responsive';
+StoryResponsive.storyName = 'Breakpoint';
 
 export const StoryLogicalPropsOverrides = () => (
-  <>
-    <StorybookHeading>Divider - Logical Props</StorybookHeading>
-    <StorybookSubHeading>Logical padding</StorybookSubHeading>
-    <BlockForDivider vertical>
-      <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-      <Divider vertical overrides={{paddingInline: 'space030'}} />
-      <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
-    </BlockForDivider>
-    <BlockForDivider>
-      <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-      <Divider overrides={{paddingBlock: 'space030'}} />
-      <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
-    </BlockForDivider>
-    <StorybookSubHeading>Logical margin</StorybookSubHeading>
-    <BlockForDivider vertical>
-      <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-      <Divider vertical overrides={{marginInline: 'space030'}} />
-      <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
-    </BlockForDivider>
-    <BlockForDivider>
-      <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-      <Divider overrides={{marginBlock: 'space030'}} />
-      <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
-    </BlockForDivider>
-  </>
+  <StorybookPage columns={dividerCols}>
+    <StorybookCase title="Padding overrides">
+      <BlockForDivider paddingInline="space030" />
+      <Divider
+        overrides={{paddingBlock: 'space030', paddingInline: 'space030'}}
+      />
+      <BlockForDivider paddingInline="space030" />
+    </StorybookCase>
+    <StorybookCase title="Margin overrides">
+      <BlockForDivider marginInline="space030" />
+      <Divider
+        overrides={{marginBlock: 'space030', marginInline: 'space030'}}
+      />
+      <BlockForDivider marginInline="space030" />
+    </StorybookCase>
+    <StorybookCase title="Styling">
+      <ThemeProvider theme={myCustomTheme}>
+        <Box transparent>
+          <Divider vertical overrides={{stylePreset: 'customDivider'}} />
+        </Box>
+      </ThemeProvider>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryLogicalPropsOverrides.storyName = 'logical-props-overrides';
+StoryLogicalPropsOverrides.storyName = 'Overrides';
+
+export default {
+  title: 'Components/Divider',
+  component: Divider,
+  parameters: {
+    nkDocs: {
+      title: 'Divider',
+      url: 'https://newskit.co.uk/components/divider',
+      description:
+        'A divider is used to provide visual separation of different content. Dividers can be applied vertically or horizontally.',
+    },
+  },
+};

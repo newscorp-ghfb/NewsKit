@@ -106,6 +106,7 @@ export const BaseDialogView = React.forwardRef<
                 onClick={handleCloseButtonClick}
                 overrides={closeButtonOverrides}
                 size="medium"
+                eventOriginator={`${path}-close`}
               >
                 <IconFilledClose />
               </IconButton>

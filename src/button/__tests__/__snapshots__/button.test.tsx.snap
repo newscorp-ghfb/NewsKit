@@ -3,24 +3,32 @@
 exports[`Button Loading Button renders Large Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px 24px;
+  min-width: 120px;
+  min-height: 64px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
   min-width: 120px;
-  padding: 16px 24px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -31,7 +39,6 @@ exports[`Button Loading Button renders Large Button 1`] = `
   background-color: #D5E0FC;
   border-radius: 8px;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -61,42 +68,12 @@ exports[`Button Loading Button renders Large Button 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   width: 32px;
   height: 32px;
   stroke: #3358CC;
 }
 
-.emotion-3 circle {
+.emotion-1 circle {
   r: calc(50% - 2px);
   fill: transparent;
   stroke-width: 2px;
@@ -121,26 +98,18 @@ exports[`Button Loading Button renders Large Button 1`] = `
     data-testid="button"
     type="button"
   >
-    <span
+    <svg
+      aria-hidden="true"
       class="emotion-1"
+      fill="currentColor"
+      viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3"
-          fill="currentColor"
-          viewBox="0 0 64 64"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="50%"
-            cy="50%"
-          />
-        </svg>
-      </span>
-    </span>
+      <circle
+        cx="50%"
+        cy="50%"
+      />
+    </svg>
   </button>
 </DocumentFragment>
 `;
@@ -148,24 +117,32 @@ exports[`Button Loading Button renders Large Button 1`] = `
 exports[`Button Loading Button renders Small Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-width: 64px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -176,7 +153,6 @@ exports[`Button Loading Button renders Small Button 1`] = `
   background-color: #D5E0FC;
   border-radius: 8px;
   color: #3358CC;
-  margin: 0;
   cursor: progress;
 }
 
@@ -206,42 +182,12 @@ exports[`Button Loading Button renders Small Button 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   width: 16px;
   height: 16px;
   stroke: #3358CC;
 }
 
-.emotion-3 circle {
+.emotion-1 circle {
   r: calc(50% - 2px);
   fill: transparent;
   stroke-width: 2px;
@@ -266,26 +212,18 @@ exports[`Button Loading Button renders Small Button 1`] = `
     data-testid="button"
     type="button"
   >
-    <span
+    <svg
+      aria-hidden="true"
       class="emotion-1"
+      fill="currentColor"
+      viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-3"
-          fill="currentColor"
-          viewBox="0 0 64 64"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="50%"
-            cy="50%"
-          />
-        </svg>
-      </span>
-    </span>
+      <circle
+        cx="50%"
+        cy="50%"
+      />
+    </svg>
   </button>
 </DocumentFragment>
 `;
@@ -293,24 +231,32 @@ exports[`Button Loading Button renders Small Button 1`] = `
 exports[`Button Loading Button renders a button with fixed for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 100px;
+  min-height: 100px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 100px;
   min-width: 100px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -321,7 +267,6 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -383,36 +328,6 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -423,13 +338,13 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -443,15 +358,7 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -460,24 +367,34 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
 exports[`Button Loading Button renders a button with fixed for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100px;
+  min-width: 80px;
+  height: 100px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100px;
-  height: 100px;
-  padding: 12px 16px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -488,7 +405,6 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -550,36 +466,6 @@ exports[`Button Loading Button renders a button with fixed for width and height 
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -590,13 +476,13 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -610,15 +496,7 @@ exports[`Button Loading Button renders a button with fixed for width and height 
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -627,24 +505,32 @@ exports[`Button Loading Button renders a button with fixed for width and height 
 exports[`Button Loading Button renders a button with percentage for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 100%;
   min-width: 100%;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -655,7 +541,6 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -717,36 +602,6 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -757,13 +612,13 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -777,15 +632,7 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -794,24 +641,34 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
 exports[`Button Loading Button renders a button with percentage for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 100%;
+  min-width: 80px;
+  height: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
-  padding: 12px 16px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -822,7 +679,6 @@ exports[`Button Loading Button renders a button with percentage for width and he
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -884,36 +740,6 @@ exports[`Button Loading Button renders a button with percentage for width and he
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -924,13 +750,13 @@ exports[`Button Loading Button renders a button with percentage for width and he
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -944,15 +770,7 @@ exports[`Button Loading Button renders a button with percentage for width and he
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -961,24 +779,32 @@ exports[`Button Loading Button renders a button with percentage for width and he
 exports[`Button Loading Button renders a button with token set for minWidth and minHeight 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 160px;
+  min-height: 160px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 160px;
   min-width: 160px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -989,7 +815,6 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1051,36 +876,6 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1091,13 +886,13 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1111,15 +906,7 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -1128,24 +915,34 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
 exports[`Button Loading Button renders a button with token set for width and height 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  width: 160px;
+  min-width: 80px;
+  height: 160px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 160px;
-  height: 160px;
-  padding: 12px 16px;
+  min-height: auto;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1156,7 +953,6 @@ exports[`Button Loading Button renders a button with token set for width and hei
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1218,36 +1014,6 @@ exports[`Button Loading Button renders a button with token set for width and hei
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1258,13 +1024,13 @@ exports[`Button Loading Button renders a button with token set for width and hei
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1278,15 +1044,7 @@ exports[`Button Loading Button renders a button with token set for width and hei
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -1295,24 +1053,32 @@ exports[`Button Loading Button renders a button with token set for width and hei
 exports[`Button renders Large Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px 24px;
+  min-width: 120px;
+  min-height: 64px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
   min-width: 120px;
-  padding: 16px 24px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1323,7 +1089,6 @@ exports[`Button renders Large Button 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1385,36 +1150,6 @@ exports[`Button renders Large Button 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -1425,13 +1160,13 @@ exports[`Button renders Large Button 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1445,15 +1180,7 @@ exports[`Button renders Large Button 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -1462,24 +1189,32 @@ exports[`Button renders Large Button 1`] = `
 exports[`Button renders Small Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-width: 64px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1490,7 +1225,6 @@ exports[`Button renders Small Button 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1552,36 +1286,6 @@ exports[`Button renders Small Button 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -1592,13 +1296,13 @@ exports[`Button renders Small Button 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1612,15 +1316,7 @@ exports[`Button renders Small Button 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -1629,24 +1325,32 @@ exports[`Button renders Small Button 1`] = `
 exports[`Button renders button link when href passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1657,7 +1361,6 @@ exports[`Button renders button link when href passed 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1719,36 +1422,6 @@ exports[`Button renders button link when href passed 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1759,13 +1432,13 @@ exports[`Button renders button link when href passed 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1779,15 +1452,7 @@ exports[`Button renders button link when href passed 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          test button click
-        </span>
-      </span>
+      test button click
     </span>
   </a>
 </DocumentFragment>
@@ -1796,24 +1461,32 @@ exports[`Button renders button link when href passed 1`] = `
 exports[`Button renders button link with disabled link 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: not-allowed;
   overflow: hidden;
   border: none;
@@ -1824,7 +1497,6 @@ exports[`Button renders button link with disabled link 1`] = `
   background-color: #E2E2E2;
   border-radius: 8px;
   color: #ABABAB;
-  margin: 0;
 }
 
 .emotion-0 svg {
@@ -1853,36 +1525,6 @@ exports[`Button renders button link with disabled link 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1893,13 +1535,13 @@ exports[`Button renders button link with disabled link 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1914,15 +1556,7 @@ exports[`Button renders button link with disabled link 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          test button click
-        </span>
-      </span>
+      test button click
     </span>
   </a>
 </DocumentFragment>
@@ -1931,24 +1565,33 @@ exports[`Button renders button link with disabled link 1`] = `
 exports[`Button renders fixed-width Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px 24px;
+  width: 160px;
+  min-width: 120px;
+  min-height: 64px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 160px;
-  padding: 16px 24px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1959,7 +1602,6 @@ exports[`Button renders fixed-width Button 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2021,36 +1663,6 @@ exports[`Button renders fixed-width Button 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -2061,13 +1673,13 @@ exports[`Button renders fixed-width Button 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2081,15 +1693,7 @@ exports[`Button renders fixed-width Button 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -2098,24 +1702,33 @@ exports[`Button renders fixed-width Button 1`] = `
 exports[`Button renders full-width Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px 24px;
+  width: 100%;
+  min-width: 120px;
+  min-height: 64px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 64px;
-  width: 100%;
-  padding: 16px 24px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2126,7 +1739,6 @@ exports[`Button renders full-width Button 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2188,36 +1800,6 @@ exports[`Button renders full-width Button 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -2228,13 +1810,13 @@ exports[`Button renders full-width Button 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2248,15 +1830,7 @@ exports[`Button renders full-width Button 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -2265,24 +1839,32 @@ exports[`Button renders full-width Button 1`] = `
 exports[`Button renders text and icon button with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2293,7 +1875,6 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2355,36 +1936,6 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2395,19 +1946,19 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-5 {
+.emotion-2 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2417,7 +1968,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2425,7 +1976,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2440,36 +1991,24 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
-      <span
-        class="emotion-2"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-5 emotion-6"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
-      </span>
+      click this!
     </span>
+    <svg
+      aria-hidden="true"
+      class="emotion-2 emotion-3"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
   </button>
 </DocumentFragment>
 `;
@@ -2477,24 +2016,32 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 exports[`Button renders with different spaceInset preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2505,7 +2052,6 @@ exports[`Button renders with different spaceInset preset 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2567,36 +2113,6 @@ exports[`Button renders with different spaceInset preset 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2607,13 +2123,13 @@ exports[`Button renders with different spaceInset preset 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2627,15 +2143,7 @@ exports[`Button renders with different spaceInset preset 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -2644,24 +2152,32 @@ exports[`Button renders with different spaceInset preset 1`] = `
 exports[`Button renders with different style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2675,7 +2191,6 @@ exports[`Button renders with different style preset 1`] = `
   border-width: 1px;
   border-radius: 8px;
   color: #3358CC;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2739,36 +2254,6 @@ exports[`Button renders with different style preset 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2779,13 +2264,13 @@ exports[`Button renders with different style preset 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2799,15 +2284,7 @@ exports[`Button renders with different style preset 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -2816,24 +2293,32 @@ exports[`Button renders with different style preset 1`] = `
 exports[`Button renders with different typography preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2844,7 +2329,6 @@ exports[`Button renders with different typography preset 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2906,36 +2390,6 @@ exports[`Button renders with different typography preset 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -2946,13 +2400,13 @@ exports[`Button renders with different typography preset 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2966,15 +2420,7 @@ exports[`Button renders with different typography preset 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -2983,24 +2429,32 @@ exports[`Button renders with different typography preset 1`] = `
 exports[`Button renders with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3011,7 +2465,6 @@ exports[`Button renders with fallback formatting 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -3073,36 +2526,6 @@ exports[`Button renders with fallback formatting 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3113,13 +2536,13 @@ exports[`Button renders with fallback formatting 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3133,15 +2556,7 @@ exports[`Button renders with fallback formatting 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>
@@ -3150,26 +2565,34 @@ exports[`Button renders with fallback formatting 1`] = `
 exports[`Button renders with logical props overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  margin-block: 30px;
+  padding-block: 30px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
   min-width: 80px;
-  padding: 12px 16px;
-  margin-block: 30px;
-  padding-block: 30px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -3180,10 +2603,7 @@ exports[`Button renders with logical props overrides 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
-  margin-block: 30px;
-  padding-block: 30px;
 }
 
 .emotion-0 svg {
@@ -3244,36 +2664,6 @@ exports[`Button renders with logical props overrides 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3284,13 +2674,13 @@ exports[`Button renders with logical props overrides 1`] = `
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3304,15 +2694,7 @@ exports[`Button renders with logical props overrides 1`] = `
     <span
       class="emotion-1"
     >
-      <span
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          click this!
-        </span>
-      </span>
+      click this!
     </span>
   </button>
 </DocumentFragment>

@@ -1,4 +1,4 @@
-export default [
+export const routes = [
   {
     title: 'About',
     id: '/about',
@@ -49,7 +49,7 @@ export default [
             page: true,
             id: '/getting-started/design/design-overview',
             description:
-              'Everything you need to know about using NewsKit to design digital products.',
+              'Everything you need to know about designing digital products with NewsKit.',
             illustration: 'guides/design-overview/hero',
             cardTitle: 'Design Overview',
           },
@@ -64,18 +64,18 @@ export default [
             page: true,
             id: '/getting-started/code/engineering-overview',
             description:
-              'Everything you need to know about using NewsKit’s library of React web components.',
+              'Everything you need to know about NewsKit’s library of React web components.',
             illustration: 'guides/engineering-overview/hero',
-            cardTitle: 'Engineering Overview',
+            cardTitle: 'Engineering overview',
           },
           {
             title: 'Quickstart',
             page: true,
             id: '/getting-started/code/engineering-quickstart',
             description:
-              'Guides on how to get started building a web application with NewsKit.',
+              'Guides to start building web applications with NewsKit.',
             illustration: 'guides/engineering-quickstart/hero',
-            cardTitle: 'Engineering Quickstart Guide',
+            cardTitle: 'Engineering quickstart',
           },
           {
             title: 'Grid Layout step-by-step',
@@ -370,14 +370,6 @@ export default [
             illustration: 'components/select/select-illustration',
           },
           {
-            title: 'Share Bar',
-            page: true,
-            id: '/components/share-bar',
-            description:
-              'Used anywhere a user would like to easily share something with social media.',
-            illustration: 'components/share-bar/share-bar-illustration',
-          },
-          {
             title: 'Slider',
             page: true,
             id: '/components/slider',
@@ -400,13 +392,6 @@ export default [
             description:
               'Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.',
             illustration: 'components/text-field/hero',
-          },
-          {
-            title: 'Text Input',
-            page: true,
-            id: '/components/text-input',
-            description: 'Lets users enter and edit text.',
-            illustration: 'components/text-input-illustration',
           },
           {
             title: 'Text Area',
@@ -482,13 +467,6 @@ export default [
         id: '/components/layout',
         subNav: [
           {
-            title: 'Aspect Ratio',
-            page: true,
-            id: '/components/aspect-ratio',
-            description: 'The aspect ratio of an image.',
-            illustration: 'components/aspect-ratio-illustration',
-          },
-          {
             title: 'Block',
             page: true,
             id: '/components/block',
@@ -532,7 +510,7 @@ export default [
             page: true,
             id: '/components/grid',
             description:
-              'Used together to construct a visual grid for responsive page layout.',
+              'The grid and cell are used together to construct a visual grid for responsive page layout.',
             illustration: 'components/grid-cell-illustration',
           },
           {
@@ -613,13 +591,6 @@ export default [
             description: 'An element of media.',
             illustration: 'components/image-illustration',
           },
-          {
-            title: 'Volume Control',
-            page: true,
-            id: '/components/volume-control',
-            description: 'Allows user to mute, increase or lower audio volume.',
-            illustration: 'components/volume-control-illustration',
-          },
         ],
       },
       {
@@ -672,7 +643,7 @@ export default [
             page: true,
             id: '/components/tag',
             description:
-              'Used as a way of classifying content, typically using keywords. When clicked it will take a user to content of the same category.',
+              'Tags are used to classify content, typically using keywords.',
             illustration: 'components/tag-illustration',
           },
           {
@@ -796,36 +767,79 @@ export default [
       {
         title: 'Utilities',
         id: '/utils',
+        description:
+          'Utilities that allow for modification of a single trait, typically a single CSS property.',
         subNav: [
           {
             title: 'Emotion',
             page: true,
             id: '/components/utils/emotion',
+            description:
+              'Commonly used Emotion functions/types/components to help with building custom components.',
           },
           {
             title: 'customToNewsKitIcon',
             page: true,
             id: '/components/utils/custom-to-newskit-icon',
+            description:
+              'A helper function that can be used to turn any user defined SVG into a NewsKit icon.',
           },
           {
-            title: 'getCssFromTheme',
+            title: 'Get CSS from theme utils',
             page: true,
             id: '/components/utils/get-css-from-theme',
+            description:
+              'A group of functions used to retrieve token values from theme or component props.',
           },
           {
-            title: 'getFromTheme',
-            page: true,
-            id: '/components/utils/get-from-theme',
-          },
-          {
-            title: 'getComponentDefaults',
+            title: 'Component defaults utils',
             page: true,
             id: '/components/utils/get-defaults',
+            description:
+              'A group of functions used to retrieve values from the component defaults or overrides objects.',
           },
           {
             title: 'Hooks',
             page: true,
             id: '/components/utils/hooks',
+            description:
+              'A collection of hooks that NewsKit provides to make it easier to build responsive interfaces with our predefined breakpoints.',
+          },
+        ],
+      },
+      {
+        title: 'Deprecated',
+        id: '/deprecated',
+        description: 'These components are no longer supported.',
+        subNav: [
+          {
+            title: 'Aspect Ratio',
+            page: true,
+            id: '/components/aspect-ratio',
+            description: 'The aspect ratio of an image.',
+            illustration: 'components/aspect-ratio-illustration',
+          },
+          {
+            title: 'Share Bar',
+            page: true,
+            id: '/components/share-bar',
+            description:
+              'Used anywhere a user would like to easily share something with social media.',
+            illustration: 'components/share-bar/share-bar-illustration',
+          },
+          {
+            title: 'Text Input',
+            page: true,
+            id: '/components/text-input',
+            description: 'Lets users enter and edit text.',
+            illustration: 'components/text-input-illustration',
+          },
+          {
+            title: 'Volume Control',
+            page: true,
+            id: '/components/volume-control',
+            description: 'Allows user to mute, increase or lower audio volume.',
+            illustration: 'components/volume-control-illustration',
           },
         ],
       },

@@ -1190,24 +1190,32 @@ exports[`Toast Component renders with actions 1`] = `
 }
 
 .emotion-7 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-width: 64px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1218,7 +1226,6 @@ exports[`Toast Component renders with actions 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -1280,36 +1287,6 @@ exports[`Toast Component renders with actions 1`] = `
 }
 
 .emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-10 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -1320,13 +1297,13 @@ exports[`Toast Component renders with actions 1`] = `
   display: inline-block;
 }
 
-.emotion-10::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1371,15 +1348,7 @@ exports[`Toast Component renders with actions 1`] = `
         <span
           class="emotion-8"
         >
-          <span
-            class="emotion-9"
-          >
-            <span
-              class="emotion-10"
-            >
-              undo
-            </span>
-          </span>
+          undo
         </span>
       </button>
     </div>
@@ -2344,24 +2313,32 @@ exports[`Toast Component renders with overrides and all props 1`] = `
 }
 
 .emotion-11 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 8px 12px;
+  min-width: 64px;
+  min-height: 32px;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
   min-width: 64px;
-  padding: 8px 12px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2372,7 +2349,6 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   background-color: #3358CC;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -2434,36 +2410,6 @@ exports[`Toast Component renders with overrides and all props 1`] = `
 }
 
 .emotion-12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-14 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -2474,13 +2420,13 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   display: inline-block;
 }
 
-.emotion-14::before {
+.emotion-12::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-14::after {
+.emotion-12::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2551,15 +2497,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
         <span
           class="emotion-12"
         >
-          <span
-            class="emotion-13"
-          >
-            <span
-              class="emotion-14"
-            >
-              undo
-            </span>
-          </span>
+          undo
         </span>
       </button>
     </div>

@@ -1,18 +1,18 @@
 import React from 'react';
 import CodeSandboxer from 'react-codesandboxer';
 import {Button} from 'newskit';
+import packageInfo from '../../../package.json';
 import {Code} from '../code';
 import {LegacyBlock} from '../legacy-block';
 import {ErrorMessageContainer} from './error-boundary';
 
-// TODO: reinstate proper version when stable.
-const newskitVersion = 'unstable'; // packageJson.version;
+const {peerDependencies, version: newskitVersion} = packageInfo;
 
 const index = `
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
 
-import { ThemeProvider, newskitLightTheme } from "newskit";
+import { NewsKitProvider, newskitLightTheme } from "newskit";
 
 import Example from "./example";
 
@@ -20,12 +20,12 @@ function App() {
   return <Example />;
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <ThemeProvider theme={newskitLightTheme}>
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
+  <NewsKitProvider theme={newskitLightTheme}>
     <App />
-  </ThemeProvider>,
-  rootElement
+  </ NewsKitProvider>,
 );
 `;
 
@@ -39,51 +39,61 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
   componentName,
   source,
   error,
-}) => (
-  <LegacyBlock
-    display="flex"
-    flexDirection="column"
-    alignItems="space-between"
-    justify-content="center"
-    height="100%"
-    width="100%"
-    justifyContent="space-between"
-    font="utilityCode030"
-  >
-    {source && (
-      <LegacyBlock
-        overflow="scrollX"
-        padding="sizing050"
-        paddingTop="sizing040"
-      >
-        {error && (
-          <ErrorMessageContainer>Source code invalid!</ErrorMessageContainer>
-        )}
-        <Code>{source}</Code>
-      </LegacyBlock>
-    )}
-    <CodeSandboxer
-      examplePath="/"
-      example={source}
-      name={componentName}
-      dependencies={{
-        newskit: newskitVersion,
-        react: '16.8.6',
-        'react-dom': '16.8.6',
-      }}
-      providedFiles={{'index.js': {content: index}}}
-      template="create-react-app"
+}) => {
+  const dynamicKeys = Object.keys(peerDependencies).map(k => k.toString());
+
+  const dynamicValues = Object.values(peerDependencies).map(v =>
+    v.split(' ').slice(-1).toString(),
+  );
+
+  const peerDependenciesObject = Object.fromEntries(
+    dynamicKeys.map((_, i) => [dynamicKeys[i], dynamicValues[i]]),
+  );
+
+  peerDependenciesObject.newskit = newskitVersion;
+
+  return (
+    <LegacyBlock
+      display="flex"
+      flexDirection="column"
+      alignItems="space-between"
+      justify-content="center"
+      height="100%"
+      width="100%"
+      justifyContent="space-between"
+      font="utilityCode030"
     >
-      {() => (
-        <LegacyBlock alignSelf="flex-end" padding="sizing060">
-          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <a>
-            <Button size="medium" data-testid="code-sandbox">
-              Edit on CodeSandbox
-            </Button>
-          </a>
+      {source && (
+        <LegacyBlock
+          overflow="scrollX"
+          padding="sizing050"
+          paddingTop="sizing040"
+        >
+          {error && (
+            <ErrorMessageContainer>Source code invalid!</ErrorMessageContainer>
+          )}
+          <Code>{source}</Code>
         </LegacyBlock>
       )}
-    </CodeSandboxer>
-  </LegacyBlock>
-);
+      <CodeSandboxer
+        examplePath="/"
+        example={source}
+        name={componentName}
+        dependencies={peerDependenciesObject}
+        providedFiles={{'index.js': {content: index}}}
+        template="create-react-app"
+      >
+        {() => (
+          <LegacyBlock alignSelf="flex-end" padding="sizing060">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a>
+              <Button size="medium" data-testid="code-sandbox">
+                Edit on CodeSandbox
+              </Button>
+            </a>
+          </LegacyBlock>
+        )}
+      </CodeSandboxer>
+    </LegacyBlock>
+  );
+};

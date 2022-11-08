@@ -1,4 +1,4 @@
-import React, {useCallback, useLayoutEffect, useRef, useState} from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import composeRefs from '@seznam/compose-react-refs';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {
@@ -16,6 +16,7 @@ import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {isFocusVisible} from '../utils/focus-visible';
 import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
+import {EventTrigger, useInstrumentation} from '../instrumentation';
 
 export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
   (
@@ -35,6 +36,9 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
       defaultSwitchSelectorComponent: defaultSwitchComponent,
       type,
       hideFeedback,
+      eventContext = {},
+      /* istanbul ignore next */
+      eventOriginator = '',
       ...restProps
     },
     inputRef,
@@ -44,6 +48,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
     const [isInputFocusVisible, setIsInputFocusVisible] = React.useState(false);
     const [isInputActive, setIsInputActive] = React.useState(false);
     const [isLabelHovered, setIsLabelHovered] = React.useState(false);
+    const {fireEvent} = useInstrumentation();
 
     const [checked, setCheckedState] = useControlled({
       controlledValue: checkedProp,
@@ -64,8 +69,17 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
     >(
       event => {
         setCheckedState(event.target.checked);
+
+        fireEvent({
+          originator: eventOriginator,
+          trigger: EventTrigger.Change,
+          context: {
+            checked: event.target.checked,
+            ...eventContext,
+          },
+        });
       },
-      [setCheckedState],
+      [eventContext, eventOriginator, fireEvent, setCheckedState],
     );
 
     const onInputFocus = useCallback(
@@ -135,7 +149,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
 
     const [switchPadding, setSwitchPadding] = useState('');
     const switchRef = useRef<HTMLDivElement>(null);
-    useLayoutEffect(() => {
+    useEffect(() => {
       setSwitchPadding(getComputedStyle(switchRef.current!).paddingInline);
     }, []);
 

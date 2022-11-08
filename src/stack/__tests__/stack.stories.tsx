@@ -805,6 +805,18 @@ export const StoryStackWithLogicalProps = () => (
 );
 StoryStackWithLogicalProps.storyName = 'stack-with-logical-props';
 
+export const StoryStackWithLogicalPropChild = () => (
+  <MainContainer>
+    <StorybookHeading>Stack logical props on child element</StorybookHeading>
+    <Container>
+      <Stack>
+        <TextBlock paddingInlineStart="space050">Example 1</TextBlock>
+      </Stack>
+    </Container>
+  </MainContainer>
+);
+StoryStackWithLogicalPropChild.storyName = 'stack-with-logical-props-on-child';
+
 // @ts-ignore
 const StoryStackTemplate = ({wrap, ...args}) => (
   <Stack {...args} wrap={wrap}>
@@ -879,4 +891,4 @@ StoryStackWithArgs.argTypes = {
 // @ts-ignore
 StoryStackWithArgs.storyName = 'stack-with-args';
 // @ts-ignore
-StoryStackWithArgs.parameters = {eyes: {include: false}};
+StoryStackWithArgs.parameters = {eyes: {include: false}, percy: {skip: true}};

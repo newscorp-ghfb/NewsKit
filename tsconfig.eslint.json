@@ -10,6 +10,7 @@
     "jest.config.js",
     ".eslintrc.js",
     "applitools.components.config.js",
+    "percy.config.js",
     "applitools.config.js",
     "commitlint.config.js",
     "webpack.e2e.config.js"

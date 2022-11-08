@@ -14,6 +14,7 @@ import {
   IconButton,
   toNewsKitIcon,
   Button,
+  InstrumentationProvider,
 } from 'newskit';
 import {Menu as FilledMenu} from '@emotion-icons/material/Menu';
 import {Close as FilledClose} from '@emotion-icons/material/Close';
@@ -21,7 +22,7 @@ import LinkNext from 'next/link';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
-import routes from '../routes';
+import {routes} from '../routes';
 import {Link} from './link';
 import {Search} from './search';
 import {IconFilledGitHub} from './icons';
@@ -127,6 +128,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
               key={id}
               href={id}
               size="small"
+              eventContext={{value: title}}
               selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
               overrides={{
                 stylePreset: 'linkTopNavigation',
@@ -184,9 +186,11 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                 </Areas.Logo>
 
                 <Areas.Menu justifySelf="start">
-                  <Menu aria-label="main-navigation">
-                    {renderNavItems(navItems, path)}
-                  </Menu>
+                  <InstrumentationProvider context={{area: 'main navigation'}}>
+                    <Menu aria-label="main-navigation">
+                      {renderNavItems(navItems, path)}
+                    </Menu>
+                  </InstrumentationProvider>
                 </Areas.Menu>
                 <Areas.Search>
                   <Search />

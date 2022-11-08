@@ -3,6 +3,7 @@ import {fireEvent} from '@testing-library/react';
 import {Card} from '..';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {Image} from '../../image';
@@ -17,6 +18,7 @@ import {Headline} from '../../headline';
 import {HeadlineOverrides} from '../../headline/types';
 import {BaseLinkProps} from '../../link';
 import {isHorizontal, isReverse} from '../utils';
+import {EventTrigger} from '../../instrumentation';
 
 const placeholder = '/placeholder-3x2.png';
 const href = 'https://newskit.co.uk/';
@@ -503,6 +505,30 @@ describe('CardInset', () => {
       myCustomCardTheme,
     );
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('fire tracking event', async () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      media: customMediaComponent,
+      children: cardBody,
+      href: '/page.html',
+      eventOriginator: 'card-link-item',
+      eventContext: {
+        event: 'other event data',
+      },
+    };
+    const {container} = renderWithImplementation(Card, props, mockFireEvent);
+    const element = await container.querySelector('.nk-card-link')!;
+    fireEvent.click(element);
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'card-link-item',
+      trigger: EventTrigger.Click,
+      context: {
+        href: '/page.html',
+        event: 'other event data',
+      },
+    });
   });
 });
 
