@@ -144,7 +144,7 @@ CharacterCountMaxLength.storyName = 'Max length';
 export const CharacterCountExceedMaxLength = () => {
   const ref = useRef<HTMLTextAreaElement>(null);
   const [textareavalue, setValue] = useState('');
-  const maxLength = 5;
+  const maxLength = 200;
   function validationLimit() {
     return textareavalue.length > maxLength ? 'invalid' : 'valid';
   }
