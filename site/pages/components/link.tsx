@@ -445,7 +445,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="props link info"
+                aria-label="LinkInline info"
                 overrides={{
                   marginBlockStart: 'space030',
                 }}
@@ -539,7 +539,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="props link info"
+                aria-label="LinkStandalone info"
                 overrides={{
                   marginBlockStart: 'space030',
                 }}
