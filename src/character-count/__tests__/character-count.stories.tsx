@@ -143,10 +143,10 @@ CharacterCountMaxLength.storyName = 'Max length';
 
 export const CharacterCountExceedMaxLength = () => {
   const ref = useRef<HTMLTextAreaElement>(null);
-  const [Newvalue, setValue] = useState('');
+  const [textareavalue, setValue] = useState('');
   const maxLength = 5;
   function validationLimit() {
-    return Newvalue.length > maxLength ? 'invalid' : 'valid';
+    return textareavalue.length > maxLength ? 'invalid' : 'valid';
   }
   return (
     <StorybookPage>
@@ -158,7 +158,7 @@ export const CharacterCountExceedMaxLength = () => {
           ref={ref}
           maxLength={maxLength}
           state={validationLimit()}
-          value={Newvalue}
+          value={textareavalue}
           onChange={({target: {value}}) => setValue(value)}
         />
         <CharacterCount inputRef={ref} state={validationLimit()} />
