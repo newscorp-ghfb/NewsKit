@@ -1323,50 +1323,59 @@ export const StorySubMenuHorizontal = () => {
       <Menu aria-label={`Menu ${getSSRId()}`}>
         <MenuSub
           title="Guides"
-          id="/getting-started"
+          id={`/getting-started${getSSRId()}`}
           expanded={guidesExpanded}
           onClick={() => {
             setGuidesExpanded(!guidesExpanded);
           }}
           overrides={{paddingInlineStart: '8px'}}
         >
-          <MenuItem href="#" id="/getting-started/overview">
+          <MenuItem href="#" id={`/getting-started/overview${getSSRId()}`}>
             Getting started
           </MenuItem>
-          <MenuItem href="#" id="/getting-started/design/design-overview">
+          <MenuItem
+            href="#"
+            id={`/getting-started/design-overview${getSSRId()}`}
+          >
             Design Overview
           </MenuItem>
           <MenuSub
             title="Code"
-            id="/getting-started/code"
+            id={`/getting-started/code${getSSRId()}`}
             expanded={codeExpanded}
             onClick={() => setDesignExpanded(!codeExpanded)}
             overrides={{
               paddingInlineStart: '8px',
             }}
           >
-            <MenuItem href="#" id="/getting-started/code/engineering-overview">
+            <MenuItem
+              href="#"
+              id={`/getting-started/code/engineering-overview${getSSRId()}`}
+            >
               Engineering Overview
             </MenuItem>
           </MenuSub>
         </MenuSub>
 
-        <MenuSub title="Theme" id="/theme" expanded={false}>
-          <MenuItem href="#" id="/theme/overview">
+        <MenuSub title="Theme" id={`/theme${getSSRId()}`} expanded={false}>
+          <MenuItem href="#" id={`/theme/overview${getSSRId()}`}>
             Overview
           </MenuItem>
           <MenuSub
             title="Foundations"
-            id="/theme/foundation"
+            id={`/theme/foundation${getSSRId()}`}
             expanded={false}
             overrides={{
               paddingInlineStart: '8px',
             }}
           >
-            <MenuItem href="#" id="/theme/foundation/borders">
+            <MenuItem href="#" id={`/theme/foundation/borders${getSSRId()}`}>
               Borders
             </MenuItem>
-            <MenuItem href="#" id="/theme/foundation/breakpoints">
+            <MenuItem
+              href="#"
+              id={`/theme/foundation/breakpoints${getSSRId()}`}
+            >
               Breakpoints
             </MenuItem>
           </MenuSub>
@@ -1393,25 +1402,28 @@ export const StorySubMenuVertical = () => {
         <Menu aria-label={`Menu ${getSSRId()}`} vertical align="spaceBetween">
           <MenuSub
             title="Guides"
-            id="/getting-started"
+            id={`/getting-started${getSSRId()}`}
             expanded={guidesExpanded}
             onClick={() => setGuidesExpanded(!guidesExpanded)}
           >
-            <MenuItem href="#" id="/getting-started/overview">
+            <MenuItem href="#" id={`/getting-started/overview${getSSRId()}`}>
               Getting started
             </MenuItem>
-            <MenuItem href="#" id="/getting-started/design/design-overview">
+            <MenuItem
+              href="#"
+              id={`/getting-started/design-overview${getSSRId()}`}
+            >
               Design overview
             </MenuItem>
             <MenuSub
               title="Code"
-              id="/getting-started/code"
+              id={`/getting-started/code${getSSRId()}`}
               expanded={codeExpanded}
               onClick={() => setCodeExpanded(!codeExpanded)}
             >
               <MenuItem
                 href="#"
-                id="/getting-started/code/engineering-overview"
+                id={`/getting-started/code/engineering-overview${getSSRId()}`}
               >
                 Engineering overview
               </MenuItem>
@@ -1420,23 +1432,26 @@ export const StorySubMenuVertical = () => {
 
           <MenuSub
             title="Theme"
-            id="/theme"
+            id={`/theme${getSSRId()}`}
             expanded={themeExpanded}
             onClick={() => setThemeExpanded(!themeExpanded)}
           >
-            <MenuItem href="#" id="/theme/overview">
+            <MenuItem href="#" id={`/theme/overview${getSSRId()}`}>
               Overview
             </MenuItem>
             <MenuSub
               title="Foundations"
-              id="/theme/foundation"
+              id={`/theme/foundation${getSSRId()}`}
               expanded={foundationsExpanded}
               onClick={() => setFoundationsExpanded(!foundationsExpanded)}
             >
-              <MenuItem href="#" id="/theme/foundation/borders">
+              <MenuItem href="#" id={`/theme/foundation/borders${getSSRId()}`}>
                 Borders
               </MenuItem>
-              <MenuItem href="#" id="/theme/foundation/breakpoints">
+              <MenuItem
+                href="#"
+                id={`/theme/foundation/breakpoints${getSSRId()}`}
+              >
                 Breakpoints
               </MenuItem>
             </MenuSub>
