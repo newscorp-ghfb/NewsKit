@@ -2,8 +2,8 @@ import React from 'react';
 import {getTokenType} from '../../../utils/get-token-type';
 import {
   ContentPrimary,
+  ContentSecondary,
   ContentSection,
-  ContentTertiary,
 } from '../../../components/content-structure';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
 import {LayoutProps} from '../../../components/layout';
@@ -100,7 +100,7 @@ const Gradients = (layoutProps: LayoutProps) => (
           }
         />
 
-        <ContentTertiary headline="Base">
+        <ContentSecondary headline="Base">
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
@@ -120,9 +120,9 @@ const Gradients = (layoutProps: LayoutProps) => (
               background
             </>
           </UnorderedList>
-        </ContentTertiary>
+        </ContentSecondary>
 
-        <ContentTertiary headline="Inverse">
+        <ContentSecondary headline="Inverse">
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
@@ -142,7 +142,7 @@ const Gradients = (layoutProps: LayoutProps) => (
               background in a light theme
             </>
           </UnorderedList>
-        </ContentTertiary>
+        </ContentSecondary>
       </ContentSection>
 
       <TabsWithTable components={gradientsTable} showSeparator />
