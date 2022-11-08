@@ -17,7 +17,9 @@ const defaultFormat: Format = ({currentLength, minLength, maxLength}) => {
   }
   if (maxLength) {
     const diff = maxLength - currentLength;
-    return `You have ${diff} character${diff === 1 ? '' : 's'} remaining`;
+    return `You have ${Math.abs(diff)} character${
+      diff > 0 ? 's remaining' : 's too many'
+    }`;
   }
   return '';
 };
@@ -69,16 +71,18 @@ const ThemelessCharacterCount = React.forwardRef<
         if (inputRef.current.getAttribute('minLength')) {
           setMinLength(inputEl.minLength);
         }
+        if (inputRef.current.id === 'textArea-overlimit') {
+          inputEl.removeAttribute('maxLength');
+        }
       }
+
       return () => {
         if (inputEl) {
           inputEl.removeEventListener('input', onInput);
         }
       };
     }, [inputRef, onInput]);
-
     const format: Format = customFormat || defaultFormat;
-
     return (
       <StyledCharacterCount
         ref={ref}
