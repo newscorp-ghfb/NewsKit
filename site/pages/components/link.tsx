@@ -258,6 +258,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               },
               marginBlockStart: 'space050',
               marginBlockEnd: 'space090',
+              spaceStack: 'space060',
             }}
           >
             <>
