@@ -105,21 +105,16 @@ const LinkComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The link contains one required element and two optional elements.',
+        'The link contains one required element and one optional element.',
       rows: [
         {
           name: 'Link content',
           description: 'The text attributed to the link that provides context',
         },
         {
-          name: 'Trailing icon',
-          description: 'Icon that can be positioned after (trailing) the link',
-          component: ['Icon'],
-          optional: true,
-        },
-        {
-          name: 'Leading icon',
-          description: 'Icon that can be positioned before (leading) the link',
+          name: 'External',
+          description:
+            'Icon that is positioned after (trailing) the link if a link is external',
           component: ['Icon'],
           optional: true,
         },
@@ -130,14 +125,6 @@ const LinkComponent = (layoutProps: LayoutProps) => (
       introduction:
         'The link has options that can be used to provide an appropriate experience for different use cases.',
       cards: [
-        {
-          title: 'Size',
-          description:
-            'There are three sizes of link: small, medium, and large. The link content, and leading and trailing icons change size.',
-          media: getIllustrationComponent(
-            'components/link/options/options-size',
-          ),
-        },
         {
           title: 'Inline and standalone links',
           description: (
