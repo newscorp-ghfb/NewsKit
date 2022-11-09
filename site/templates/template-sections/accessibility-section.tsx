@@ -144,7 +144,7 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
                   'Attribute',
                   'Value',
                   'Description',
-                  'User Supplied',
+                  'User supplied',
                 ]}
                 {...aria}
               />

@@ -24,7 +24,7 @@ export const columnMap: Record<string, ColumnMapObject> = {
   Optional: {...small, cellType: 'icon'},
   Required: {...small, cellType: 'icon'},
   Status: {...small, cellType: 'icon'},
-  'User Supplied': {...small, cellType: 'checkIcon'},
+  'User supplied': {...small, cellType: 'checkIcon'},
   Command: {...medium, cellType: 'keyboardFlag', noWrap: true},
   Component: {...medium, cellType: 'componentLink', noWrap: true},
   Value: {...medium, cellType: 'flag'},
