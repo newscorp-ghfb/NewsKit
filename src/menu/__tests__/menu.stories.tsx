@@ -1824,7 +1824,7 @@ export const StoryMenuFullDemo = () => {
   const expandedRoutes = makeExpanded(expandedId, treeMenu);
 
   const setExpanded = React.useCallback(
-    id => {
+    (id: string) => {
       if (expandedId === id) {
         setExpandedId('');
       } else {
