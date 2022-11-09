@@ -1324,7 +1324,7 @@ export const StorySubMenuHorizontal = () => {
         >
           <MenuItem
             href={href}
-            id="horizontal-design-overview"
+            id="horizontal-getting-started"
             overrides={{stylePreset: 'menuItemVertical'}}
           >
             Getting started
