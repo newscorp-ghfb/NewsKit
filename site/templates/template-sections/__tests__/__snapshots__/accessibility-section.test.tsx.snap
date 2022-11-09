@@ -500,7 +500,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
     "Attribute",
     "Value",
     "Description",
-    "User Supplied"
+    "User supplied"
   ],
   "rows": [
     {
