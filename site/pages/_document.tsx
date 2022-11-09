@@ -8,8 +8,8 @@ import {
   Consent,
   Tealium,
   compileTheme,
-  getMediaQueryFromTheme,
   newskitLightTheme,
+  getSizingCssFromTheme,
 } from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
@@ -29,7 +29,6 @@ export default class MyDocument extends Document {
     const helmet = Helmet.rewind();
 
     const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
-    const {sizing} = compiledNewskitLightTheme;
 
     return (
       <Html lang="en">
@@ -74,31 +73,17 @@ export default class MyDocument extends Document {
                 );
               }
 
-              ${getMediaQueryFromTheme('xs')({
-                theme: compiledNewskitLightTheme,
-              })} {
-                html {
-                  --heading-size: ${sizing.sizing080};
-                  --page-offset: ${sizing.sizing080};
-                }
-              }
-
-              ${getMediaQueryFromTheme('md')({
-                theme: compiledNewskitLightTheme,
-              })} {
-                html {
-                  --heading-size: ${sizing.sizing080};
-                  --page-offset: ${sizing.sizing090};
-                }
-              }
-
-              ${getMediaQueryFromTheme('lg')({
-                theme: compiledNewskitLightTheme,
-              })} {
-                html {
-                  --heading-size: ${sizing.sizing100};
-                  --page-offset: ${sizing.sizing100};
-                }
+              html {
+                ${getSizingCssFromTheme('--heading-size', {
+                  xs: 'sizing080',
+                  md: 'sizing080',
+                  lg: 'sizing100',
+                })({theme: compiledNewskitLightTheme})};
+                ${getSizingCssFromTheme('--page-offset', {
+                  xs: 'sizing080',
+                  md: 'sizing090',
+                  lg: 'sizing100',
+                })({theme: compiledNewskitLightTheme})};
               }
 
               @font-face {
