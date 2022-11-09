@@ -2,10 +2,7 @@ import {createContext, useContext} from 'react';
 import {BreadcrumbsProps} from './types';
 
 export const BreadcrumbsContext = createContext<
-  Pick<
-    BreadcrumbsProps,
-    'size' | 'separator' | 'showTrailingSeparator' | 'overrides'
-  >
+  Pick<BreadcrumbsProps, 'size' | 'showTrailingSeparator' | 'overrides'>
 >({});
 
 export const BreadcrumbsContextProvider = BreadcrumbsContext.Provider;

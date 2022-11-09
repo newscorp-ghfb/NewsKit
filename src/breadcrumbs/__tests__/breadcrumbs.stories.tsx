@@ -4,18 +4,30 @@ import {BreadcrumbItem} from '../breadcrumb-item';
 import {StorybookPage} from '../../test/storybook-comps';
 import {IconFilledAccountBalance} from '../../icons';
 
-// const arrowIcon = (
-//   <IconFilledAccountBalance
-//     overrides={{
-//       size: 'iconSize010',
-//       stylePreset: 'inkContrast',
-//     }}
-//   />
-// );
-
 export const StoryDefault = () => (
   <StorybookPage>
-    <Breadcrumbs size="small" separator={IconFilledAccountBalance}>
+    <Breadcrumbs>
+      <BreadcrumbItem href="www.google.com">hello</BreadcrumbItem>
+      <BreadcrumbItem href="www.google.com">bye</BreadcrumbItem>
+      <BreadcrumbItem href="www.google.com">hello</BreadcrumbItem>
+      <BreadcrumbItem href="www.google.com">bye</BreadcrumbItem>
+    </Breadcrumbs>
+    <Breadcrumbs
+      size="small"
+      overrides={{
+        separator: props => (
+          <IconFilledAccountBalance
+            {...props}
+            overrides={{
+              size: 'iconSize020',
+              stylePreset: 'inkSubtle',
+            }}
+          />
+        ),
+      }}
+    >
+      <BreadcrumbItem href="www.google.com">hello</BreadcrumbItem>
+      <BreadcrumbItem href="www.google.com">bye</BreadcrumbItem>
       <BreadcrumbItem href="www.google.com">hello</BreadcrumbItem>
       <BreadcrumbItem href="www.google.com">bye</BreadcrumbItem>
     </Breadcrumbs>
