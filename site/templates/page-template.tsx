@@ -7,16 +7,18 @@ import {TemplateProps} from './types';
 import {HeadNextSeo} from '../components/head-next-seo';
 
 const WrapperWithPadding = styled.div`
-  ${getSpacingCssFromTheme('--container-block-spacing', {
+  ${getSpacingCssFromTheme('--main-el-container-block-spacing', {
     xs: 'space050',
     lg: 'space100',
   })};
-  ${getSpacingCssFromTheme('--main-block-spacing', {
+
+  ${getSpacingCssFromTheme('--main-el-block-spacing', {
     xs: 'space060',
     lg: 'space030',
   })};
+
   --parent-spacing: calc(
-    var(--main-block-spacing) + var(--container-block-spacing)
+    var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
   );
 
   ${getSpacingCssFromTheme('--header-size', {
@@ -24,13 +26,13 @@ const WrapperWithPadding = styled.div`
     lg: 'space100',
   })};
 
-  ${getSpacingCssFromTheme('--article-padding', {
+  ${getSpacingCssFromTheme('--page-content-padding', {
     xs: 'space080',
     md: 'space090',
     lg: 'space100',
   })};
 
-  padding-top: calc(var(--article-padding) + var(--header-size));
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
 
   ${getSpacingCssFromTheme('padding-bottom', {
     xs: 'space080',

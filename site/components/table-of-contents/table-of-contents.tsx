@@ -7,16 +7,15 @@ import {contentsObserver} from './contents-observer';
 export const TableOfContents: React.FC = () => {
   const [activeItem, setActiveItem] = useState<number>();
   const [contentsInfo, setContentsInfo] = useState<
-    {id: string; title: string; element: HTMLElement}[]
+    {id: string; title: string; element: Element}[]
   >();
 
   const getContentInfo = () => {
-    const data: {id: string; title: string; element: HTMLElement}[] = [];
+    const data: {id: string; title: string; element: Element}[] = [];
 
     document.querySelectorAll('[data-toc-indexed]').forEach(element => {
       const title = element.getAttribute('data-toc-indexed');
       if (title) {
-        /* @ts-ignore next-line */
         data.push({id: element.id, title, element});
       }
     });
@@ -40,13 +39,13 @@ export const TableOfContents: React.FC = () => {
     return undefined;
   }, [contentsInfo]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const handleToCClick = (
+  const handleTOCClick = (
     event: React.MouseEvent<HTMLElement>,
-    key: number,
+    itemKey: number,
   ) => {
     if (contentsInfo !== undefined) {
       event.preventDefault();
-      contentsInfo[key].element.scrollIntoView({behavior: 'smooth'});
+      contentsInfo[itemKey].element.scrollIntoView({behavior: 'smooth'});
     }
   };
 
@@ -65,7 +64,7 @@ export const TableOfContents: React.FC = () => {
       isSelected={(activeItem || 0) === itemKey}
       data-selected={(activeItem || 0) === itemKey}
       onClick={(event: React.MouseEvent<HTMLElement>) => {
-        handleToCClick(event, itemKey);
+        handleTOCClick(event, itemKey);
       }}
     >
       {children}

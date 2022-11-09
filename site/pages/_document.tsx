@@ -2,10 +2,17 @@
 
 import * as React from 'react';
 import Document, {Head, Main, NextScript, Html} from 'next/document';
-import {Global, css, Consent, Tealium, Breakpoints} from 'newskit';
+import {
+  Global,
+  css,
+  Consent,
+  Tealium,
+  compileTheme,
+  getMediaQueryFromTheme,
+  newskitLightTheme,
+} from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
-import {breakpoints, sizing} from '../../src/theme/foundations';
 
 // Is added so relative paths work when we are on a sub dir e.g. s-3.com/ppdsc-123-foo/
 const baseHref =
@@ -21,8 +28,8 @@ export default class MyDocument extends Document {
 
     const helmet = Helmet.rewind();
 
-    const mq = (bp: keyof Breakpoints) =>
-      `@media (min-width: ${breakpoints[bp]}px)`;
+    const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
+    const {sizing} = compiledNewskitLightTheme;
 
     return (
       <Html lang="en">
@@ -67,19 +74,27 @@ export default class MyDocument extends Document {
                 );
               }
 
-              ${mq('xs')} {
+              ${getMediaQueryFromTheme('xs')({
+                theme: compiledNewskitLightTheme,
+              })} {
                 html {
                   --heading-size: ${sizing.sizing080};
                   --page-offset: ${sizing.sizing080};
                 }
               }
-              ${mq('md')} {
+
+              ${getMediaQueryFromTheme('md')({
+                theme: compiledNewskitLightTheme,
+              })} {
                 html {
                   --heading-size: ${sizing.sizing080};
                   --page-offset: ${sizing.sizing090};
                 }
               }
-              ${mq('lg')} {
+
+              ${getMediaQueryFromTheme('lg')({
+                theme: compiledNewskitLightTheme,
+              })} {
                 html {
                   --heading-size: ${sizing.sizing100};
                   --page-offset: ${sizing.sizing100};
