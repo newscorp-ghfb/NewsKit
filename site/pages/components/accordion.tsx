@@ -42,7 +42,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The Accordion contains three required elements and no optional elements.',
+        'The accordion component contains three required elements and no optional elements.',
       rows: [
         {
           name: 'Header',
@@ -67,13 +67,12 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       media: getIllustrationComponent('components/accordion/anatomy'),
     }}
     options={{
-      introduction:
-        'The Accordion has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The accordion has options for different use cases:',
       cards: [
         {
           title: 'Single accordion or accordion group',
           description:
-            'The Accordion can be used as a single instance, or in a group of accordions stacked vertically.',
+            'Use the accordion as a single instance, or in a group of accordions stacked vertically.',
           media: getIllustrationComponent(
             'components/accordion/options/singlegroup',
           ),
@@ -81,44 +80,43 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Heading level',
           description:
-            'The Accordion title is wrapped in a heading tag. The tag is <h3> by default but can be altered to fit the information architecture of the page.',
+            'The accordion title is wrapped in a heading tag (<h3> by default). Alter it to fit the information architecture of the page.',
           media: getIllustrationComponent(
             'components/accordion/options/heading',
           ),
         },
         {
           title: 'Icon',
-          description:
-            'The indicator icon is a chevron by default but can be changed to another icon.',
+          description: 'Change the indicator icon from the default chevron.',
           media: getIllustrationComponent('components/accordion/options/icon'),
         },
       ],
     }}
     states={{
-      introduction: 'The Accordion has the following states:',
+      introduction: 'The accordion has the following states:',
       cards: [
         {
           title: 'Base',
           description:
-            'The Accordion has a base state. This is the base style of the Accordion before it has been interacted with by a user.',
+            'The default style before the user interacts with the accordion.',
           media: getIllustrationComponent('components/accordion/states/base'),
         },
         {
           title: 'Focus',
           description:
-            'The Accordion has a visual focus state when in focus. The focus state outlines the heading container.',
+            'The accordion has a visual focus state when in focus. The focus state outlines the heading container.',
           media: getIllustrationComponent('components/accordion/states/focus'),
         },
         {
           title: 'Hover',
           description:
-            'The Accordion has a hover state. The style of the header and the cursor changes to visually communicate that the Accordion is an interactive element.',
+            'The header and cursor change style to let the user know the accordion is interactive.',
           media: getIllustrationComponent('components/accordion/states/hover'),
         },
         {
           title: 'Disabled',
           description:
-            'The Accordion has a disabled state. The Accordion in a disabled state is not available to the user in that scenario. When the user’s cursor hovers over an Accordion in a disabled state, the cursor shows as not allowed.',
+            'Communicates that an accordion exists, but isn’t available in that scenario. When the user hovers over a checkbox in a disabled state, the cursor shows as ‘not allowed’.',
           media: getIllustrationComponent(
             'components/accordion/states/disabled',
           ),
@@ -126,8 +124,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction:
-        'The following guidance describes how an Accordion behaves.',
+      introduction: 'Here’s how the accordion behaves:',
       cards: [
         {
           title: 'Collapsed/expanded',
@@ -166,8 +163,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Expand all',
-          description:
-            'The Accordion displays all panels in a group expanded on load.',
+          description: 'All panels in a group are expanded on load.',
           media: getIllustrationComponent(
             'components/accordion/behaviours/allexpandedonload',
           ),
@@ -175,7 +171,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Expand single',
           description:
-            'Only one single panel can be expanded. When an Accordion panel is expanded, the open panel is collapsed. ',
+            'Only one panel can be expanded at a time. When the user expands another accordion panel, the current panel collapses.',
           media: getIllustrationComponent(
             'components/accordion/behaviours/singleexpanded',
           ),
@@ -183,27 +179,26 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the Accordion component.',
+      introduction: 'Here’s how and when to use the accordion:',
       cards: [
         {
-          description: 'Use an Accordion to provide supporting information.',
+          description: 'Use accordions to provide supporting information.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/accordion/usage/do01'),
         },
         {
-          description: 'Conceal important information in an Accordion.',
+          description: 'Avoid concealing crucial information in an accordion.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/accordion/usage/dont01'),
         },
         {
           description:
-            'Write short, meaningful headings that allow users to understand what is inside the panel. Group together related topics.',
+            'Give accordions short, meaningful headings that tell users what’s inside the panel. Group together related topics.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/accordion/usage/do02'),
         },
         {
-          description: 'Nest accordions within themselves.',
+          description: 'Avoid nesting accordions within themselves.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/accordion/usage/dont02'),
         },
@@ -212,7 +207,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
     accessibility={{
       introduction: (
         <>
-          The Accordion has the following accessibility considerations:
+          The accordion has the following accessibility considerations:
           <br />
           <br />
           <UnorderedList
@@ -222,14 +217,14 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
           >
             <>
               Accordions must be discoverable and readable with a mouse, other
-              pointer devices, keyboard, screen reader, zoom tools, and any
-              other assistive technology.
+              pointer devices, keyboard, screen reader, zoom tools and any other
+              assistive technology.
             </>
             <>
-              Exercise care in choosing how Accordions are used and the content
-              they contain. Hiding content in Accordions can make it more
-              difficult for a user to scan the page and increases their
-              cognitive load.
+              Exercise care in choosing how accordions are used and the content
+              they contain. Hiding content in accordions can make it more
+              difficult for a user to scan the page and increases cognitive
+              load.
             </>
           </UnorderedList>
         </>
@@ -240,31 +235,31 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
           {
             order: 1,
             element: 'Header',
-            role: 'Focuses to the header.',
+            role: 'Focusses to the header',
           },
           {
             order: 2,
             element: 'Panel',
             role:
-              'If the panel is expanded, focuses to first interactive element in the panel, then each subsequent element.',
+              'If the panel is expanded, focusses to the first interactive element in the panel, then each subsequent element',
           },
         ],
       },
       interaction: {
-        title: 'Keyboard Interactions',
+        title: 'Keyboard interactions',
         tableRows: [
           {
             command: ['Space or Rtn'],
             description:
-              'Expand or collapse a section. If the implementation allows only one panel to be expanded at a time, and there is a panel expanded, the expanded panel will collapse.',
+              'Expand or collapse a panel. If the implementation allows only one panel to be expanded at a time, and there’s already a panel expanded, the expanded panel collapses',
           },
           {
             command: ['Tab'],
-            description: 'Moves focus to the next focusable element',
+            description: 'Moves focus to the next focussable element',
           },
           {
             command: ['Shift', 'Tab'],
-            description: 'Moves focus to the previous focusable element',
+            description: 'Moves focus to the previous focussable element',
           },
         ],
       },
@@ -277,8 +272,8 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
             value: 'boolean',
             description: (
               <>
-                Set to true when the Accordion panel is expanded, otherwise set
-                to false.
+                Set to ‘true’ when the accordion panel is expanded, otherwise
+                set to ‘false’
               </>
             ),
           },
@@ -309,7 +304,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
                 collapses the region.
                 <br />
                 <br />
-                region elements are required to have an accessible name to be
+                Region elements are required to have an accessible name to be
                 identified as a landmark.
               </>
             ),
@@ -326,11 +321,11 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
           overrides={unorderedListOverrides}
         >
           <>
-            Ensure all text, icons, and images are visible in the Accordion so
+            Ensure all text, icons and images are visible in the accordion so
             that information can be crawled and indexed.
           </>
           <>
-            The Accordion component and its content are rendered to the DOM, but
+            The accordion component and its content are rendered to the DOM, but
             only visible to the user when the panel is open.
           </>
         </UnorderedList>
@@ -341,73 +336,73 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Accordion',
           propsSummary:
-            'The Accordion has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The accordion has a range of props for different use cases, and a range of predefined elements and attributes that can be overridden to define its appearance.',
           overridesSummary:
-            'The Accordion has a range of predefined elements and attributes that can be overridden to define its appearance.',
+            'The accordion has a range of props for different use cases, and a range of predefined elements and attributes that can be overridden to define its appearance.',
           propsRows: [
             {
               name: 'children',
               type: "Exclude<React.ReactNode, 'undefined'>",
-              description: `Displays supplied content in the open Accordion panel.`,
+              description: `Displays supplied content in the open accordion panel`,
               required: undefined,
             },
             {
               name: 'expanded',
               type: 'boolean',
               default: 'false',
-              description: `Determines if the panel is expanded or collapsed. If true, the panel is open.`,
+              description: `Determines if the panel is expanded or collapsed. If ‘true’, the panel is open`,
               required: undefined,
             },
             {
               name: 'disabled',
               type: 'boolean',
               default: 'false',
-              description: `If true, renders the Accordion in a disabled state.`,
+              description: `If ‘true’, renders the accordion in a disabled state`,
               required: undefined,
             },
             {
               name: 'header',
               type: "Exclude<React.ReactNode, 'undefined'>",
-              description: `Displays the content of the header.`,
+              description: `Displays the content of the header`,
               required: undefined,
             },
             {
               name: 'headerAs',
               type: "'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';",
               default: 'h3',
-              description: `Change the underlying HTML element on the header.`,
+              description: `Change the underlying HTML element on the header`,
               required: undefined,
             },
 
             {
               name: 'label',
               type: 'string',
-              description: `Additional label on the accordion.`,
+              description: `Additional label on the accordion`,
               required: undefined,
             },
             {
               name: 'ariaControls',
               type: 'string',
-              description: `HTML aria-controls attribute.`,
+              description: `HTML aria-controls attribute`,
               required: undefined,
             },
             {
               name: 'id',
               type: 'string',
-              description: `HTML id attribute.`,
+              description: `HTML id attribute`,
               required: undefined,
             },
             {
               name: 'expanded',
               type: 'boolean',
               default: 'false',
-              description: `Determines if the accordion is expanded or collapsed.`,
+              description: `Determines if the accordion is expanded or collapsed`,
               required: undefined,
             },
             {
               name: 'onChange',
               type: '(expanded: boolean) => void',
-              description: `Emit event when accordion changes its state, expanded/collapsed.`,
+              description: `Emit event when accordion changes its state (expanded/collapsed)`,
               required: undefined,
             },
           ],
@@ -417,19 +412,19 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'backgroundColorChange',
               description:
-                'If provided, overrides the transitionPreset of the Accordion header.',
+                'If provided, overrides the transitionPreset of the accordion header',
             },
             {
               attribute: 'accordion.header.minWidth',
               type: 'MQ<string>',
               description:
-                'If provided, this overrides the minWidth property of the Accordion panel.',
+                'If provided, overrides the minWidth property of the accordion panel',
             },
             {
               attribute: 'accordion.header.minHeight',
               type: 'MQ<string>',
               description:
-                'If provided, this overrides the minHeight property of the Accordion panel.',
+                'If provided, overrides the minHeight property of the accordion panel',
             },
 
             {
@@ -437,47 +432,47 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'accordionHeader',
               description:
-                'If provided, overrides the stylePreset of the Accordion header.',
+                'If provided, overrides the stylePreset of the accordion header',
             },
             {
               attribute: 'accordion.header.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityButton030',
               description:
-                'If provided, overrides the typographyPreset of the Accordion header.',
+                'If provided, overrides the typographyPreset of the accordion header',
             },
             {
               attribute: 'accordion.header.spaceInline',
               type: 'MQ<string>',
               default: 'space020',
               description:
-                'If provided, overrides the inline space of the Accordion header.',
+                'If provided, overrides the inline space of the accordion header',
             },
             {
               attribute: 'accordion.header.indicatorIcon',
               type: 'Override<AccordionIconProps>',
-              description: 'If provided, overrides icon.',
+              description: 'If provided, overrides the icon',
             },
             {
               attribute: 'accordion.header.indicatorIcon.stylePreset',
               type: 'MQ<string>',
               default: 'iconDefault',
               description:
-                'If provided, overrides the stylePreset of the indicator icon.',
+                'If provided, overrides the stylePreset of the indicator icon',
             },
             {
               attribute: 'accordion.header.indicatorIcon.size',
               type: 'MQ<string>',
               default: 'iconSize020',
               description:
-                'If provided, overrides the size of the indicator icon.',
+                'If provided, overrides the size of the indicator icon',
             },
             {
               attribute: 'accordion.header.label.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityButton030',
               description:
-                'If provided, overrides the typographyPreset of the indicator label.',
+                'If provided, overrides the typographyPreset of the indicator label',
             },
 
             {
@@ -485,7 +480,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'accordionPanel',
               description:
-                'If provided, overrides the stylePreset of the Accordion panel.',
+                'If provided, overrides the stylePreset of the accordion panel',
             },
             {
               attribute: 'accordion.panel.paddingBlock',
@@ -502,9 +497,9 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'Accordion Group',
+          title: 'Accordion group',
           summary:
-            'The Accordion Group has a range of props that can be used to define an appropriate experience for different use cases. Use this component to group Accordions together.',
+            'The accordion group has a range of props that can be used to define an appropriate experience for different use cases. Use this component to group accordions together.',
           propsRows: [
             {
               name: 'children',
@@ -515,23 +510,23 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
             {
               name: 'defaultExpanded',
               type: "number | number[] | 'all'",
-              description: `Defines the index of the initially expanded Accordion items (uncontrolled).`,
+              description: `Defines the index of the initially expanded accordion items (uncontrolled)`,
             },
             {
               name: 'expanded',
               type: "number | number[] | 'all'",
-              description: `Defines the index of the expanded Accordion items, when changing this value AccordionGroup state is updated (controlled).`,
+              description: `Defines the index of the expanded accordion items. When changing this value, AccordionGroup state is updated (controlled)`,
             },
             {
               name: 'expandSingle',
               type: 'boolean',
               default: 'false',
-              description: `Determines whether one or multiple items can be expanded at the same time. When true only one single accordion can be expanded.`,
+              description: `Determines whether the user can expand one or multiple items at the same time. When ‘true’, only one single accordion can be expanded`,
             },
             {
               name: 'onChange',
               type: '(expanded: number[]) => void',
-              description: `Callback fired when expanded Accordions change.`,
+              description: `Callback fired when expanded accordions change`,
             },
           ],
         },
