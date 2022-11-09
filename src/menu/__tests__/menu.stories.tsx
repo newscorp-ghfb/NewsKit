@@ -1301,7 +1301,7 @@ export const StoryMenuItemsOutlineOverrides = () => (
 StoryMenuItemsOutlineOverrides.storyName = 'menu items outline overrides';
 
 const HorizontalContainer = styled.div`
-  height: 200px;
+  min-height: 200px;
 `;
 export const StorySubMenuHorizontal = () => {
   const [guidesExpanded, setGuidesExpanded] = useState(false);
@@ -1490,7 +1490,7 @@ const createMenu = (items: MenuElement[]) =>
       );
     }
 
-    return <MenuItem href="/">{title}</MenuItem>;
+    return <MenuItem href={href}>{title}</MenuItem>;
   });
 const createMoreMenu = (items: MenuElement[]) =>
   items.map(({title, items: subItems}) => {
@@ -1757,7 +1757,10 @@ type MenuNestedElement = {
   parent?: MenuNestedElement;
 };
 
-const createNestedMenu = (menuItems: MenuNestedElement[], fn: (id) => void) =>
+const createNestedMenu = (
+  menuItems: MenuNestedElement[],
+  fn: (id: string) => void,
+) =>
   menuItems.map(({subNav, title, expanded, id}) => {
     if (subNav) {
       return (
@@ -1766,13 +1769,14 @@ const createNestedMenu = (menuItems: MenuNestedElement[], fn: (id) => void) =>
           expanded={expanded}
           onClick={() => fn(id)}
           title={title}
+          overrides={{paddingInlineStart: '16px'}}
         >
           {createNestedMenu(subNav, fn)}
         </MenuSub>
       );
     }
     return (
-      <MenuItem key={id} href={id}>
+      <MenuItem key={id} href={href}>
         {title}
       </MenuItem>
     );
@@ -1831,9 +1835,9 @@ export const StoryMenuFullDemo = () => {
   );
 
   return (
-    <>
+    <HorizontalContainer>
       <Menu>{createNestedMenu(expandedRoutes, setExpanded)}</Menu>
-    </>
+    </HorizontalContainer>
   );
 };
 StoryMenuFullDemo.storyName = 'sub-menu-full-demo';
