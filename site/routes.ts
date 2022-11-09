@@ -720,7 +720,8 @@ export const routes = [
             title: 'Unordered List',
             page: true,
             id: '/components/unordered-list',
-            description: 'Typically is a bulleted list of items.',
+            description:
+              'Unordered lists make blocks of related text easier to read, structuring information of equal value into manageable bulleted items.',
             illustration: 'components/unordered-list-illustration',
           },
         ],
