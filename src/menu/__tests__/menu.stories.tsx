@@ -203,18 +203,6 @@ const menuCustomThemeObject: CreateThemeArgs = {
           outlineOffset: '5px',
         },
       },
-      menuSubBackground: {
-        base: {
-          backgroundColor: '{{colors.interfaceBrand010}}',
-        },
-      },
-      menuSubText: {
-        base: {
-          backgroundColor: '{{colors.interfaceBrand010}}',
-          color: '{{colors.inkInverse}}',
-          iconColor: '{{colors.inkInverse}}',
-        },
-      },
     },
   },
 };
@@ -356,56 +344,54 @@ export const StoryMenuItemsSizes = () => (
 );
 StoryMenuItemsSizes.storyName = 'menu items - sizes';
 
-export const StoryMenuItemsAlignment = () => {
-  const Flex = styled.div`
-    display: flex;
+const Flex = styled.div`
+  display: flex;
 
-    & > div {
-      width: 500px;
-      border: 1px dashed lightgrey;
-    }
-  `;
-  return (
-    <>
-      <StorybookHeading>Menu items with different alignment</StorybookHeading>
-      <Flex>
-        <div>
-          <StorybookSubHeading>Left</StorybookSubHeading>
-          <Menu vertical align="start" aria-label={`Menu ${getSSRId()}`}>
-            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
-          </Menu>
-        </div>
-        <div>
-          <StorybookSubHeading>Center</StorybookSubHeading>
-          <Menu vertical align="center" aria-label={`Menu ${getSSRId()}`}>
-            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
-          </Menu>
-        </div>
-        <div>
-          <StorybookSubHeading>Right</StorybookSubHeading>
-          <Menu vertical align="end" aria-label={`Menu ${getSSRId()}`}>
-            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
-          </Menu>
-        </div>
-      </Flex>
-    </>
-  );
-};
+  & > div {
+    width: 500px;
+    border: 1px dashed lightgrey;
+  }
+`;
+export const StoryMenuItemsAlignment = () => (
+  <>
+    <StorybookHeading>Menu items with different alignment</StorybookHeading>
+    <Flex>
+      <div>
+        <StorybookSubHeading>Left</StorybookSubHeading>
+        <Menu vertical align="start" aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
+        </Menu>
+      </div>
+      <div>
+        <StorybookSubHeading>Center</StorybookSubHeading>
+        <Menu vertical align="center" aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
+        </Menu>
+      </div>
+      <div>
+        <StorybookSubHeading>Right</StorybookSubHeading>
+        <Menu vertical align="end" aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
+          <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
+        </Menu>
+      </div>
+    </Flex>
+  </>
+);
 StoryMenuItemsAlignment.storyName = 'menu items - alignment';
 
 export const StoryMenuItemsHorizontalAlignment = () => {
@@ -1313,83 +1299,111 @@ export const StoryMenuItemsOutlineOverrides = () => (
 );
 StoryMenuItemsOutlineOverrides.storyName = 'menu items outline overrides';
 
+const HorizontalContainer = styled.div`
+  height: 200px;
+`;
 export const StorySubMenuHorizontal = () => {
   const [guidesExpanded, setGuidesExpanded] = useState(false);
   const [codeExpanded, setDesignExpanded] = useState(false);
 
   return (
-    <>
+    <HorizontalContainer>
       <StorybookSubHeading>Sub menu - horizontal</StorybookSubHeading>
-      <Menu aria-label={`Menu ${getSSRId()}`}>
+      <Menu aria-label="menu-horizontal">
         <MenuSub
           title="Guides"
-          id={`/getting-started${getSSRId()}`}
+          id="horizontal-guides"
           expanded={guidesExpanded}
           onClick={() => {
             setGuidesExpanded(!guidesExpanded);
           }}
-          overrides={{paddingInlineStart: '8px'}}
+          overrides={{
+            paddingInlineStart: '8px',
+            stylePreset: 'menuItemVertical',
+          }}
         >
-          <MenuItem href="#" id={`/getting-started/overview${getSSRId()}`}>
+          <MenuItem
+            href={href}
+            id="horizontal-design-overview"
+            overrides={{stylePreset: 'menuItemVertical'}}
+          >
             Getting started
           </MenuItem>
           <MenuItem
-            href="#"
-            id={`/getting-started/design-overview${getSSRId()}`}
+            href={href}
+            id="horizontal-design-overview"
+            overrides={{stylePreset: 'menuItemVertical'}}
           >
             Design Overview
           </MenuItem>
           <MenuSub
             title="Code"
-            id={`/getting-started/code${getSSRId()}`}
+            id="horizontal-code"
             expanded={codeExpanded}
             onClick={() => setDesignExpanded(!codeExpanded)}
             overrides={{
               paddingInlineStart: '8px',
+              stylePreset: 'menuItemVertical',
             }}
           >
             <MenuItem
-              href="#"
-              id={`/getting-started/code/engineering-overview${getSSRId()}`}
+              href={href}
+              id="horizontal-engineering-overview"
+              overrides={{stylePreset: 'menuItemVertical'}}
             >
               Engineering Overview
             </MenuItem>
           </MenuSub>
         </MenuSub>
 
-        <MenuSub title="Theme" id={`/theme${getSSRId()}`} expanded={false}>
-          <MenuItem href="#" id={`/theme/overview${getSSRId()}`}>
+        <MenuSub
+          title="Theme"
+          id="horizontal-theme"
+          expanded={false}
+          overrides={{stylePreset: 'menuItemVertical'}}
+        >
+          <MenuItem
+            href={href}
+            id="horizontal-overview"
+            overrides={{stylePreset: 'menuItemVertical'}}
+          >
             Overview
           </MenuItem>
           <MenuSub
             title="Foundations"
-            id={`/theme/foundation${getSSRId()}`}
+            id="horizontal-foundations"
             expanded={false}
             overrides={{
               paddingInlineStart: '8px',
+              stylePreset: 'menuItemVertical',
             }}
           >
-            <MenuItem href="#" id={`/theme/foundation/borders${getSSRId()}`}>
+            <MenuItem
+              href={href}
+              id="horizontal-borders"
+              overrides={{stylePreset: 'menuItemVertical'}}
+            >
               Borders
             </MenuItem>
             <MenuItem
-              href="#"
-              id={`/theme/foundation/breakpoints${getSSRId()}`}
+              href={href}
+              id="horizontal-breakpoints"
+              overrides={{stylePreset: 'menuItemVertical'}}
             >
               Breakpoints
             </MenuItem>
           </MenuSub>
         </MenuSub>
       </Menu>
-    </>
+    </HorizontalContainer>
   );
 };
 StorySubMenuHorizontal.storyName = 'sub-menu-horizontal';
 
+const VerticalContainer = styled.div`
+  width: 300px;
+`;
 export const StorySubMenuVertical = () => {
-  const VerticalContainer = styled.div`
-    width: 300px;
-  `;
   const [guidesExpanded, setGuidesExpanded] = useState(false);
   const [codeExpanded, setCodeExpanded] = useState(false);
   const [themeExpanded, setThemeExpanded] = useState(false);
@@ -1399,32 +1413,26 @@ export const StorySubMenuVertical = () => {
     <>
       <StorybookSubHeading>Sub menu - vertical</StorybookSubHeading>
       <VerticalContainer>
-        <Menu aria-label={`Menu ${getSSRId()}`} vertical align="spaceBetween">
+        <Menu aria-label="menu-vertical" vertical align="spaceBetween">
           <MenuSub
             title="Guides"
-            id={`/getting-started${getSSRId()}`}
+            id="vertical-guides"
             expanded={guidesExpanded}
             onClick={() => setGuidesExpanded(!guidesExpanded)}
           >
-            <MenuItem href="#" id={`/getting-started/overview${getSSRId()}`}>
+            <MenuItem href={href} id="vertical-getting-started">
               Getting started
             </MenuItem>
-            <MenuItem
-              href="#"
-              id={`/getting-started/design-overview${getSSRId()}`}
-            >
+            <MenuItem href={href} id="vertical-design-overview">
               Design overview
             </MenuItem>
             <MenuSub
               title="Code"
-              id={`/getting-started/code${getSSRId()}`}
+              id="vertical-code"
               expanded={codeExpanded}
               onClick={() => setCodeExpanded(!codeExpanded)}
             >
-              <MenuItem
-                href="#"
-                id={`/getting-started/code/engineering-overview${getSSRId()}`}
-              >
+              <MenuItem href={href} id="vertical-engineering-overview">
                 Engineering overview
               </MenuItem>
             </MenuSub>
@@ -1432,26 +1440,23 @@ export const StorySubMenuVertical = () => {
 
           <MenuSub
             title="Theme"
-            id={`/theme${getSSRId()}`}
+            id="vertical-theme"
             expanded={themeExpanded}
             onClick={() => setThemeExpanded(!themeExpanded)}
           >
-            <MenuItem href="#" id={`/theme/overview${getSSRId()}`}>
+            <MenuItem href={href} id="vertical-overview">
               Overview
             </MenuItem>
             <MenuSub
               title="Foundations"
-              id={`/theme/foundation${getSSRId()}`}
+              id="vertical-foundations"
               expanded={foundationsExpanded}
               onClick={() => setFoundationsExpanded(!foundationsExpanded)}
             >
-              <MenuItem href="#" id={`/theme/foundation/borders${getSSRId()}`}>
+              <MenuItem href={href} id="vertical-borders">
                 Borders
               </MenuItem>
-              <MenuItem
-                href="#"
-                id={`/theme/foundation/breakpoints${getSSRId()}`}
-              >
+              <MenuItem href={href} id="vertical-breakpoints">
                 Breakpoints
               </MenuItem>
             </MenuSub>
@@ -1541,7 +1546,7 @@ export const StoryMenuMultipleAuto = () => {
   const {visible, invisible} = splitMenuItems(items, splitNumber || 1000);
 
   return (
-    <>
+    <HorizontalContainer>
       <InlineMessage
         icon={
           <IconFilledInfo
@@ -1554,13 +1559,13 @@ export const StoryMenuMultipleAuto = () => {
       >
         Resize the browser window to see the menu items overflow.
       </InlineMessage>
-      <Menu aria-label={`Menu ${getSSRId()}`}>
+      <Menu aria-label="menu-multiple-auto">
         {createMenu(visible)}
         {invisible.length > 0 && (
           <MenuMore>{createMoreMenu(invisible)}</MenuMore>
         )}
       </Menu>
-    </>
+    </HorizontalContainer>
   );
 };
 StoryMenuMultipleAuto.storyName = 'sub-menu-auto';
@@ -1571,9 +1576,9 @@ export const StoryMenuSubOverrides = () => {
     stylePreset: 'menuItemCustom',
   };
   return (
-    <>
+    <HorizontalContainer>
       <StorybookHeading>Menu sub with overrides</StorybookHeading>
-      <Menu size="medium" aria-label={`Menu ${getSSRId()}`}>
+      <Menu size="medium" aria-label="menu-sub-overrides">
         <MenuItem
           href={href}
           overrides={{...menuItemOverrides, minHeight: '56px'}}
@@ -1601,10 +1606,10 @@ export const StoryMenuSubOverrides = () => {
           <MenuItem href={href}>Menu item 3.2</MenuItem>
         </MenuSub>
       </Menu>
-    </>
+    </HorizontalContainer>
   );
 };
-StoryMenuSubOverrides.storyName = 'menu sub - overrides';
+StoryMenuSubOverrides.storyName = 'sub-menu-overrides';
 
 export default {
   title: 'Components/menu',
