@@ -55,15 +55,15 @@ const overlayTable = [
     title: 'Tint',
     summary: (
       <>
-        Tints make colors in a UI more or less intense by aiding legibility
-        contrast between the foreground and background elements.
+        Tints make colours in a UI more or less intense. You can make text
+        easier to read by increasing the contrast between foreground and
+        background elements.
         <br />
         <br />
-        &apos;Base&apos; tint tokens are used to darken a background or element.
+        &apos;Base&apos; tint tokens darken a background or element.
         <br />
         <br />
-        &apos;Inverse&apos; tint tokens are used to lighten a background or
-        element.
+        &apos;Inverse&apos; tint tokens lighten a background or element.
       </>
     ),
 
@@ -86,9 +86,9 @@ const DO_AND_DONT = [
   {
     description: (
       <>
-        Overlay contrasts should be distinct and clear. They can be used to
-        obscure page content and emphasise an element for greater legibility,
-        I.e. the <Link href="/components/modal">Modal.</Link>
+        Overlay contrasts should be distinct and clear. You can use them to
+        obscure page content and emphasise an element for greater legibility
+        (e.g. <Link href="/components/modal">modal</Link>).
       </>
     ),
 
@@ -97,7 +97,7 @@ const DO_AND_DONT = [
   },
   {
     description:
-      'Ensure overlays used do not obscure the legibility of important UI elements like text and icons, and contrasts are distinct and clear.',
+      'Overlays shouldn’t obscure the legibility of important UI elements, like text and icons.',
     kind: UsageKind.DONT,
     media: getIllustrationComponent('theme/overlays/dont'),
   },
@@ -108,7 +108,7 @@ const Overlays = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Overlays',
       description:
-        'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the background contrast when a component is layered above the interface, e.g. a Modal',
+        'Overlays style UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing background contrast when a component is layered above the interface (e.g. modal).',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -118,7 +118,7 @@ const Overlays = (layoutProps: LayoutProps) => (
         illustration: 'theme/overlays/hero',
       },
       introduction:
-        'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the background contrast when a component is layered above the interface, e.g. a Modal.',
+        'Overlays style UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing background contrast when a component is layered above the interface (e.g. modal).',
     }}
   >
     <ComponentPageCell>
@@ -127,9 +127,7 @@ const Overlays = (layoutProps: LayoutProps) => (
           id="overview"
           toc="Overview"
           headline="Overview"
-          description="Overlay foundations consist of tints in both ‘base’ styles
-          (these are dark when used in a light theme) and ‘inverse’
-          styles (these are light when used in a dark theme)."
+          description="Overlay foundations consist of tints in ‘base’ (these are dark when used in a light theme) and ‘inverse’ (light when used in a dark theme) styles."
           showSeparator
         />
 
@@ -139,7 +137,7 @@ const Overlays = (layoutProps: LayoutProps) => (
           <ContentPrimary
             toc="Usage"
             id="usage"
-            headline="Usage"
+            headline="How to use overlays"
             description="The following guidance describes how and when to appropriately use overlays."
             showSeparator
           >
