@@ -20,134 +20,109 @@ const infoIcon = (
   />
 );
 
-const commonPropsRows = (type?: string) => [
+const commonPropsRows = () => [
   {
     name: 'children',
     type: 'string',
-    description: (
-      <>
-        The content of the ${type} Button is passed as the child of the
-        component.
-        {!type && (
-          <InlineMessage
-            icon={infoIcon}
-            role="region"
-            aria-label="Children type"
-            title="Note"
-            overrides={{
-              marginBlockStart: 'space030',
-            }}
-          >
-            Only if the children type supplied is a string or number it will be
-            rendered inside a Text Block.
-          </InlineMessage>
-        )}
-      </>
-    ),
+    description: `Passes the content of the button as the child of the component. If the children type is a string or number, it’ll be rendered inside a text block`,
     required: true,
   },
   {
     name: 'size',
     type: ['small', 'medium', 'large'],
     default: 'medium',
-    description: `Defines the size of the ${type} Button.`,
+    description: `Defines the button’s size`,
   },
   {
     name: 'state',
     type: ['valid', 'invalid', 'disabled'],
-    description: `If true, renders the ${type} Button in a valid, invalid, or disabled state.`,
+    description: `If true, renders the button in a valid, invalid or disabled state`,
   },
   {
     name: 'loading',
     type: 'boolean',
     default: 'false',
-    description: `If true, this will render the loading state of the ${type} Button.`,
+    description: `If true, renders the button’s loading state`,
   },
   {
     name: 'eventOriginator',
     type: 'string',
     default: 'button',
     description:
-      "Allows users to add event originator custom name eg. 'play-button'.",
+      "Allows users to add event originator custom name (e.g. 'play-button')",
   },
   {
     name: 'href',
     type: 'string',
-    description: `If provided, the ${type} Button component turns into an anchor element.`,
+    description: `If provided, turns the button into an anchor element`,
   },
 ];
 
 const commonOverridesRows = [
   {
-    attribute: 'button.size',
-    type: 'small | medium | large',
-    default: 'medium',
-    description: `If provided, this overrides the size of the Button.`,
-  },
-  {
     attribute: 'width',
     type: 'MQ<string>',
-    description: `If provided, this sets a fixed width to the Button. This can be a sizing token from the theme, or any CSS length value, e.g. 100% for a full-width element.`,
+    description: `If provided, sets a fixed width for the button. Can be a sizing token from the theme, or any CSS length value (e.g. 100% for a full width element)`,
   },
   {
     attribute: 'height',
     type: 'MQ<string>',
-    description: `If provided, this sets a fixed height to the Button. This can be a sizing token from the theme, or any CSS length value.`,
+    description: `If provided, sets a fixed height to the button. Can be a sizing token from the theme, or any CSS length value`,
   },
   {
     attribute: 'minWidth',
     type: 'MQ<string>',
     default: ['small = sizing090', 'medium = sizing100', 'large = sizing110'],
-    description: `If provided, this sets a minimum width to the Button. This can be a sizing token from the theme, or any CSS length value.`,
+    description: `If provided, sets a minimum width for the button. Can be a sizing token from the theme, or any CSS length value`,
   },
   {
     attribute: 'minHeight',
     type: 'MQ<string>',
     default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
     description:
-      'If provided, this sets a maximum height to the Button. This can be a sizing token from the theme, or any CSS length value.',
+      'If provided, sets a maximum height for the button. Can be a sizing token from the theme, or any CSS length value',
   },
   {
-    attribute: 'button.stylePreset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: 'buttonSolidPrimary',
-    description: 'If provided, overrides the stylePreset of the Button.',
+    description: 'If provided, overrides the stylePreset of the button',
   },
   {
-    attribute: 'button.typographyPreset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: [
       'small = utilityBody020',
       'medium = utilityBody020',
       'large = utilityBody030',
     ],
-    description: 'If provided, overrides the typographyPreset of the Button.',
+    description: 'If provided, overrides the typographyPreset of the button',
   },
   {
-    attribute: 'button.transitionPreset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: ['backgroundColorChange', 'borderColorChange'],
-    description: 'If provided, overrides the transitionPreset of the Button.',
+    description: 'If provided, overrides the transitionPreset of the button',
   },
   {
-    attribute: 'button.spaceInset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: [
       'small = spaceInsetSquish020',
       'medium = spaceInsetSquish030',
       'large = spaceInsetSquish040',
     ],
-    description: 'If provided, this overrides the inset space of the Button.',
+    description: 'If provided, overrides the inset space of the button',
   },
   {
-    attribute: 'button.spaceInline',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: ['small = space020', 'medium = space020', 'large = space020'],
     description:
-      'If provided, overrides the space between multiple children in the underlying Stack.',
+      'If provided, overrides the space between multiple children in the underlying stack',
   },
   {
-    attribute: 'button.icon.size',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: [
       'small = iconSize010',
@@ -156,21 +131,19 @@ const commonOverridesRows = [
     ],
     description: (
       <>
-        If provided, this overrides the size of any icons applied to the Button.
-        <br />
-        <br />
-        Note: You can also set the icon size by passing it directly as a size
-        prop to the icon, but by doing this you will override the iconSize
-        passed from overrides.
+        If provided, overrides the size of any icons applied to the button. You
+        can also set the icon size by passing it directly as a size prop to the
+        icon, but by doing this you’ll override the iconSize passed from
+        overrides
       </>
     ),
   },
   {
-    attribute: 'loadingIndicator.stylePreset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: 'indeterminateProgressIndicatorPrimary',
     description:
-      'If provided, this overrides the style preset applied to the underlying indeterminate progress indicator icon. The loading indicator icon is shown only when the loading prop is set to true.',
+      'If provided, overrides the style preset applied to the underlying indeterminate progress indicator icon. The loading indicator icon is shown only when the loading prop is set to ‘true’',
   },
   ...(commonLogicalProps() as OverridesRowsProps[]),
 ];
@@ -179,8 +152,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Button',
-      description:
-        'Buttons allow users to make choices, take actions, and help guide around an interface with a single tap.',
+      description: 'Buttons let users make choices and take action.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -189,7 +161,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/button/hero',
       },
-      introduction: `Buttons allow users to make choices, take actions, and help guide around an interface with a single tap.`,
+      introduction: `Buttons let users make choices and take action.`,
     }}
     componentDefaultsKey="textField"
     meta={{
@@ -207,18 +179,18 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Button',
           summary:
-            'The Button contains two required elements and one optional element.',
+            'The button component contains two required elements and one optional element.',
           media: getIllustrationComponent('components/button/anatomy-button'),
           rows: [
             {
               name: 'Container',
-              description: 'The Button container, HTML Button element',
+              description: 'HTML button element',
               optional: undefined,
             },
             {
               name: 'Icon',
               description:
-                'Icon that can be positioned either before (leading) or after (trailing) the Label',
+                'Can be positioned either before (leading) or after (trailing) the label',
               component: 'Icon',
               optional: true,
             },
@@ -226,12 +198,11 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
               name: 'Label',
               description: (
                 <>
-                  The Label is the text attributed to the Button that provides
-                  context
+                  Text attributed to the button to provide context
                   <br />
                   <br />
-                  Note - only if the children type supplied is a string or
-                  number it will be rendered inside a Text Block
+                  Note - If the children type is a string or number, it will be
+                  rendered inside a text block
                 </>
               ),
               component: 'Text Block',
@@ -242,23 +213,22 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Icon Button',
           summary:
-            'The Icon Button contains one required element and one optional element.',
+            'The icon button contains one required element and one optional element.',
           media: getIllustrationComponent('components/button/anatomy-icon'),
           rows: [
             {
               name: 'Container',
-              description: 'The Icon Button container, HTML Button element',
+              description: 'HTML button element',
               optional: undefined,
             },
             {
               name: 'Icon',
               description: (
                 <>
-                  Icon that positioned the centre of the container.
+                  Positioned in the centre of the container
                   <br />
                   <br />
-                  If you are using an Icon Button an icon should always be
-                  supplied.
+                  Note - If using an icon button, always supply an icon
                 </>
               ),
               component: 'Icon',
@@ -270,14 +240,13 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
       rows: [],
     }}
     options={{
-      introduction:
-        'The Button has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The button has options for different use cases.',
       cards: [
         {
           title: 'Appearance',
           description: (
             <>
-              By default, there are three styles of Button; solid, outlined, and
+              There are three button styles by default: solid, outlined and
               minimal.
               <InlineMessage
                 icon={infoIcon}
@@ -288,7 +257,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
                   marginBlockStart: 'space030',
                 }}
               >
-                Inverse Buttons are intended for use on darker backgrounds.
+                Use inverse buttons on darker backgrounds.
               </InlineMessage>
             </>
           ),
@@ -299,25 +268,21 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Intent',
           description:
-            'The Button has four different intents: primary, secondary, positive, and negative. Each intent is used to communicate a specific semantic tone of the Button to the user.',
+            'The button has four intents: primary, secondary, positive and negative. Each communicates a specific tone to the user.',
           media: getIllustrationComponent('components/button/options/intent'),
         },
         {
           title: 'Size',
-          description:
-            'There are three sizes of Button: small, medium (default), and large.',
+          description: 'The button comes in small, medium (default) and large.',
           media: getIllustrationComponent('components/button/options/size'),
         },
         {
           title: 'Border radius and width',
           description: (
             <>
-              The Border Radius and Border Width applied to the Button can be
-              overridden and applied to the theme. <br />
-              <br />
-              <Link href="/theme/foundation/borders/">
-                For more information, refer to the Borders foundations.
-              </Link>
+              Override the button’s{' '}
+              <Link href="/theme/foundation/borders/">border</Link> radius and
+              border width, and apply them to the theme.
             </>
           ),
           media: getIllustrationComponent(
@@ -327,7 +292,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Icons (leading & trailing)',
           description:
-            'Icons can be displayed in a Button and can be positioned either before (leading) or after (trailing) the Label in the Button.',
+            'Add an icon to a button either before (leading) or after (trailing) the label.',
           media: getIllustrationComponent(
             'components/button/options/icons-leading-trailing',
           ),
@@ -335,23 +300,21 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Label',
           description:
-            'Labels can be displayed in a Button. A Label can give more context to what the intended action the Button indicates.',
+            'Add a label to a button to give users more context about what the button does.',
           media: getIllustrationComponent('components/button/options/label'),
         },
         {
           title: 'Icon Button',
           description:
-            'The Icon Button component has the same options, behaviours, and properties as the Button component, but with a single icon positioned in the centre of the container.',
+            'The icon button has the same options, behaviours and properties as the button, but with a single icon in the centre of the container.',
           media: getIllustrationComponent('components/button/options/icons'),
         },
         {
           title: 'Button as a link',
           description: (
             <>
-              Buttons have the ability to render as{' '}
-              <Link href="/components/link/">Links.</Link> In this case, the
-              styling of the link looks like a Button but with the behaviour of
-              a link.
+              Render buttons as <Link href="/components/link/">links.</Link> The
+              link is styled like a button but behaves like a link.
             </>
           ),
           media: getIllustrationComponent(
@@ -367,43 +330,51 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Base',
           description:
-            'The Button has a base state. This is the base style of the Button before it has been interacted with by a user.',
+            'The default style before the user interacts with the button.',
           media: getIllustrationComponent('components/button/states/base'),
         },
         {
           title: 'Hover',
           description:
-            'The Button has a hover state. The style of the Button changes to visually communicate and provide feedback to the user that the Button is an interactive element.',
+            'The button changes style to let the user know it’s interactive.',
           media: getIllustrationComponent('components/button/states/hover'),
         },
         {
           title: 'Focus',
           description:
-            'The Button in a focus state communicates that a user has highlighted a Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted a button (e.g. via keyboard or voice).',
           media: getIllustrationComponent('components/button/states/focus'),
         },
         {
           title: 'Active',
           description:
-            'The Button has an active state. The style of the Button changes to visually communicate and provide feedback to the user that the Button has been interacted with.',
+            'The button changes style to let the user know they’ve interacted with it.',
           media: getIllustrationComponent('components/button/states/active'),
         },
         {
           title: 'Disabled',
-          description:
-            "The Button in a disabled state communicates that a Button exists, but is not available to the user in that scenario. When the user's cursor hovers over a Button in a disabled state, the cursor shows as not allowed. Disabled Buttons are often used to maintain layout consistency and communicate that a Button may become available if another condition has been met.",
+          description: (
+            <>
+              Communicates that a button exists, but isn’t available in that
+              scenario. When the user hovers over a button in a disabled state,
+              the cursor shows as ‘not allowed.
+              <br />
+              <br />
+              Disabled buttons maintain layout consistency and communicate that
+              a button may become available if another condition is met.
+            </>
+          ),
           media: getIllustrationComponent('components/button/states/disabled'),
         },
         {
           title: 'Loading',
           description: (
             <>
-              The Button in a loading state communicates that an action will
-              become available when loading is complete, or that an action is
-              being completed.
+              Communicates that an action will become available when loading is
+              complete, or that an action is being completed.
               <br />
               <br />
-              The background colour of the Button changes, and a loading
+              The background colour of the button changes and a loading
               indicator is displayed.
             </>
           ),
@@ -412,20 +383,20 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction: 'The following guidance describes how a Button behaves.',
+      introduction: 'Here’s how the button behaves:',
       cards: [
         {
           title: 'Fixed and full width',
           description: (
             <>
-              Buttons can be displayed in two ways, but consideration should be
-              made to how they will respond and react to containers around them;
+              Buttons can be either fixed width or full width. Consider how
+              they’ll respond and react to containers around them:
               <br />
               <br />
-              Fixed width - size dependant on content (Label, Icons)
+              Fixed width - size dependant on content (e.g. label or icon)
               <br />
               <br />
-              Full width - size responsive to the container it is applied to.
+              Full width - size responsive to container
               <InlineMessage
                 icon={infoIcon}
                 role="region"
@@ -435,9 +406,9 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
                   marginBlockStart: 'space050',
                 }}
               >
-                Full width Buttons are intended for use on smaller screen sizes
-                or in other components (such as{' '}
-                <Link href="/components/card/">Cards</Link>), where the width is
+                Use full width buttons on smaller screen sizes, or in components
+                ({'e.g. '}
+                <Link href="/components/card/">cards</Link>), where the width is
                 restricted.
               </InlineMessage>
             </>
@@ -449,7 +420,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Transition',
           description:
-            'When the Button is hovered over, or active, the backgroundColor, and/or borderColor transitions.',
+            'When the user hovers over a button, or a button is active, the backgroundColor and/or borderColor transitions.',
           media: getIllustrationComponent(
             'components/button/behaviours/transition',
           ),
@@ -457,7 +428,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Clickable area',
           description:
-            'The Button has a minimum clickable area (also known as hit area, or touch target area). The size of the clickable area changes according to the size of the Button.',
+            'Buttons have a minimum clickable area (also known as hit area or touch target area). The size of the clickable area changes according to the size of the button.',
           media: getIllustrationComponent(
             'components/button/behaviours/clickable-area',
           ),
@@ -465,53 +436,41 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the Button component.',
+      introduction: 'Here’s how and when to use the button:',
       cards: [
         {
           description:
-            'When Buttons are to be placed inline, they should maintain at least an 8px gap between the two (or more) Buttons.',
+            'When placing two or more buttons inline, keep at least an 8px gap between them.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/button/usage/do1'),
         },
         {
           description:
-            'Avoid using full-width Buttons in wide containers. They are generally appropriate for small devices or contained components.',
+            'Full-width buttons are generally appropriate for small devices or contained components.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/button/usage/dont1'),
         },
         {
           description:
-            'Buttons can be displayed in two ways (fixed or full width), but consideration should be made to how they will respond and react to containers around them.',
+            'When deciding between a fixed or full width button, consider how it will respond and react to the containers around it.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/button/usage/do2'),
         },
         {
           description:
-            'Avoid placing multiple buttons relating to action too far apart, ensure that they are placed next to each other so that associated actions are relative, and reduce cognitive load.',
+            'Place related buttons next to each other so associated actions are relative, and to reduce cognitive load.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/button/usage/dont2'),
         },
         {
-          description: (
-            <>
-              The <Link href="/components/tooltip/">Tooltip</Link> can be
-              applied to the Icon Button in order to provide additional context
-              relating to the intended action or destination for users.
-            </>
-          ),
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/button/usage/do3'),
-        },
-        {
           description:
-            'Avoid stacking Buttons when there is enough space to place side by side.',
+            'Avoid stacking buttons when there’s enough space to place them side by side.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/button/usage/dont4'),
         },
         {
           description:
-            'Avoid placing more than one primary (high emphasis) Button on a screen to help guide the user to the primary action.',
+            'Avoid having more than one primary (high emphasis) button on a screen to help guide the user to the primary action.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/button/usage/dont3'),
         },
@@ -519,14 +478,14 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
     }}
     accessibility={{
       introduction:
-        'The Button has the following accessibility considerations:',
+        'The button has the following accessibility considerations:',
       focusOrder: {
         title: 'Focus order',
         tableRows: [
           {
             order: 1,
             element: 'Button container',
-            role: 'Focusses to the Button container',
+            role: 'Focusses to the button container',
           },
         ],
       },
@@ -535,7 +494,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         tableRows: [
           {
             command: ['_Space', '_Enter'],
-            description: 'Activates the Button.',
+            description: 'Activates the button.',
           },
         ],
       },
@@ -547,7 +506,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
             attribute: 'ariaLabel',
             value: 'string',
             description:
-              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the Button.',
+              'Define a string that labels the action to be performed when the user interacts with the button',
             userSupplied: true,
           },
           {
@@ -555,7 +514,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-required',
             value: 'object',
             description:
-              'This attribute informs the user that an element is required. When set to true, screen readers notify users that the element is required.',
+              'Informs the user that an element is required. When set to ‘true’, screen readers notify users that the element is required',
             userSupplied: true,
           },
           {
@@ -563,14 +522,14 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-required',
             value: 'object',
             description:
-              'This attribute informs the user when there is an error. By default it’s set to false. Screen readers will alert users when the element is set to any value other than false.',
+              'Informs the user when there’s an error. Set to ‘false’ by default. Screen readers will alert users when the element is set to any value other than ‘false‘',
             userSupplied: true,
           },
         ],
       },
       infoNoticeAria: (
         <>
-          The Button supports native{' '}
+          The button supports native{' '}
           <Link
             href="https://www.w3.org/TR/html-aria/#docconformance"
             target="_blank"
@@ -590,23 +549,22 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
     }}
     seo={{
       title: 'SEO',
-      introduction: 'Ensure icons have Alt Text applied.',
+      introduction: 'Ensure icons have alt text applied.',
     }}
     componentAPI={{
-      introduction:
-        'The Button has a range of props that can be used to define an appropriate experience for different use cases.',
       components: [
         {
           title: 'Button',
-          summary:
-            'The Button has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsSummary: `The button has a range of props that can be used to define an appropriate experience for different use cases.`,
+          overridesSummary: `The button has a range of props that can be used to define an appropriate experience for different use cases.`,
           propsRows: commonPropsRows(),
           overridesRows: commonOverridesRows,
         },
         {
           title: 'Icon Button',
-          summary: `The Icon Button has a range of props that can be used to define an appropriate experience for different use cases.`,
-          propsRows: commonPropsRows('Icon'),
+          propsSummary: `The icon button has a range of props that can be used to define an appropriate experience for different use cases.`,
+          overridesSummary: `The icon button has a range of props that can be used to define an appropriate experience for different use cases.`,
+          propsRows: commonPropsRows(),
           overridesRows: commonOverridesRows,
         },
       ],
