@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import React, {useState} from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {
@@ -1610,6 +1611,232 @@ export const StoryMenuSubOverrides = () => {
   );
 };
 StoryMenuSubOverrides.storyName = 'sub-menu-overrides';
+
+const routes = [
+  {
+    title: 'About',
+    id: '/about',
+    subNav: [
+      {
+        title: 'Introduction',
+        id: '/about/introduction',
+      },
+      {
+        title: 'Release notes',
+        id: '/about/release-notes',
+      },
+      {
+        title: 'Roadmap',
+        id: '/about/roadmap',
+      },
+      {
+        title: 'Contribute',
+        id: '/about/contribute',
+      },
+      {
+        title: 'Contact us',
+        id: '/about/contact-us',
+      },
+    ],
+  },
+  {
+    title: 'Guides',
+    id: '/getting-started',
+    subNav: [
+      {
+        title: 'Getting started',
+        id: '/getting-started/overview',
+      },
+      {
+        title: 'Design',
+        id: '/getting-started/design',
+      },
+      {
+        title: 'Code',
+        id: '/getting-started/code',
+        subNav: [
+          {
+            title: 'Overview',
+            id: '/getting-started/code/engineering-overview',
+          },
+          {
+            title: 'Quickstart',
+            id: '/getting-started/code/engineering-quickstart',
+          },
+          {
+            title: 'Form step-by-step',
+            id: '/getting-started/code/form-step-by-step',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Theme',
+    id: '/theme',
+    subNav: [
+      {
+        title: 'Overview',
+        id: '/theme/overview',
+      },
+      {
+        title: 'Foundations',
+        id: '/theme/foundation',
+        subNav: [
+          {
+            title: 'Borders',
+            id: '/theme/foundation/borders',
+          },
+          {
+            title: 'Breakpoints',
+            id: '/theme/foundation/breakpoints',
+          },
+          {
+            title: 'Colours',
+            id: '/theme/foundation/colours',
+          },
+          {
+            title: 'Design tokens',
+            id: '/theme/foundation/design-tokens',
+          },
+          {
+            title: 'Fonts',
+            id: '/theme/foundation/fonts',
+          },
+        ],
+      },
+      {
+        title: 'Presets',
+        id: '/theme/presets',
+        subNav: [
+          {
+            title: 'Style Presets',
+            id: '/theme/presets/style-presets',
+          },
+          {
+            title: 'Transition Presets',
+            id: '/theme/presets/transition-presets',
+          },
+          {
+            title: 'Typography Presets',
+            id: '/theme/presets/typography-presets',
+          },
+        ],
+      },
+      {
+        title: 'Creating and using themes',
+        id: '/theme/theming',
+        subNav: [
+          {
+            title: 'Overview',
+            id: '/theme/theming/overview',
+          },
+          {
+            title: 'Creating a theme in code',
+            id: '/theme/theming/creating-a-theme',
+          },
+          {
+            title: 'Using a theme in code',
+            id: '/theme/theming/using-a-theme',
+          },
+          {
+            title: 'Component defaults',
+            id: '/theme/theming/component-defaults',
+          },
+        ],
+      },
+    ],
+  },
+];
+
+type MenuNestedElement = {
+  id: string;
+  title: string;
+  subNav?: MenuNestedElement[];
+  expanded?: boolean;
+  parent?: MenuNestedElement;
+};
+
+const createNestedMenu = (menuItems: MenuNestedElement[], fn: (id) => void) =>
+  menuItems.map(({subNav, title, expanded, id}) => {
+    if (subNav) {
+      return (
+        <MenuSub
+          key={id}
+          expanded={expanded}
+          onClick={() => fn(id)}
+          title={title}
+        >
+          {createNestedMenu(subNav, fn)}
+        </MenuSub>
+      );
+    }
+    return (
+      <MenuItem key={id} href={id}>
+        {title}
+      </MenuItem>
+    );
+  });
+
+const expandMyParent = (menuItem: MenuNestedElement) => {
+  if (menuItem) {
+    menuItem.expanded = true;
+    if (menuItem.parent) expandMyParent(menuItem.parent);
+  }
+};
+
+const makeExpanded = (expandedId: string, menuItems: MenuNestedElement[]) =>
+  menuItems.map(menuItem => {
+    menuItem.expanded = expandedId === menuItem.id;
+    menuItem.subNav = menuItem.subNav
+      ? makeExpanded(expandedId, menuItem.subNav)
+      : undefined;
+
+    if (menuItem.expanded && menuItem.parent) {
+      expandMyParent(menuItem.parent);
+    }
+
+    return menuItem;
+  });
+
+const makeTree = (
+  menuItems: MenuNestedElement[],
+  parent: MenuNestedElement | null,
+) => {
+  menuItems.forEach(menuItem => {
+    // @ts-ignore
+    menuItem.parent = parent;
+    if (menuItem.subNav) {
+      makeTree(menuItem.subNav, menuItem);
+    }
+  });
+  return menuItems;
+};
+
+const treeMenu = makeTree(routes, null);
+
+export const StoryMenuFullDemo = () => {
+  const [expandedId, setExpandedId] = React.useState('');
+  const expandedRoutes = makeExpanded(expandedId, treeMenu);
+
+  const setExpanded = React.useCallback(
+    id => {
+      if (expandedId === id) {
+        setExpandedId('');
+      } else {
+        setExpandedId(id);
+      }
+    },
+    [expandedId, setExpandedId],
+  );
+
+  return (
+    <>
+      <Menu>{createNestedMenu(expandedRoutes, setExpanded)}</Menu>
+    </>
+  );
+};
+StoryMenuFullDemo.storyName = 'sub-menu-full-demo';
 
 export default {
   title: 'Components/menu',
