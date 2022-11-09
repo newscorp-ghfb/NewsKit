@@ -130,8 +130,6 @@ export default class MyApp extends App<Props, State> {
       instrumentationHandlers.createTealiumTrackHandler(),
     ];
 
-    console.log({pageProps});
-
     return (
       <>
         <HeadNextSeo
