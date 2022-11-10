@@ -18,8 +18,8 @@ const defaultFormat: Format = ({currentLength, minLength, maxLength}) => {
   if (maxLength) {
     const diff = maxLength - currentLength;
     return `You have ${Math.abs(diff)} character${
-      diff > 0 ? 's remaining' : 's too many'
-    }`;
+      diff === 1 || diff === -1 ? '' : 's'
+    } ${diff > 0 ? 'remaining' : 'too many'}`;
   }
   return '';
 };
