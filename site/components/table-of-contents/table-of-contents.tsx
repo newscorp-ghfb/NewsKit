@@ -1,5 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import {Stack} from 'newskit';
+import {
+  EventTrigger,
+  InstrumentationProvider,
+  Stack,
+  useInstrumentation,
+} from 'newskit';
 import {StyledTableOfContents, StyledContentsNavItem} from './styled';
 import {ContentsNavItemProps} from './types';
 import {contentsObserver} from './contents-observer';
@@ -10,6 +15,8 @@ export const TableOfContents: React.FC = () => {
   const [contentsInfo, setContentsInfo] = useState<
     {id: string; title: string}[]
   >();
+
+  const {fireEvent} = useInstrumentation();
 
   const getContentInfo = () => {
     const data: {id: string; title: string}[] = [];
@@ -27,7 +34,25 @@ export const TableOfContents: React.FC = () => {
     const activeElement =
       contentsInfo && contentsInfo.findIndex(info => info.id === id);
 
-    setActiveItem(activeElement);
+    if (activeElement !== activeItem) {
+      setActiveItem(activeElement);
+
+      const section =
+        activeElement &&
+        contentsInfo[activeElement] &&
+        contentsInfo[activeElement].id;
+
+      if (section) {
+        const data = {
+          originator: 'page-scroll',
+          trigger: EventTrigger.Scroll,
+          context: {
+            section,
+          },
+        };
+        fireEvent(data);
+      }
+    }
   };
 
   const {direction, size} = useCalculatePosition();
@@ -40,7 +65,7 @@ export const TableOfContents: React.FC = () => {
       return contentsObserver(setNewActiveElement, contentsInfo);
     }
     return undefined;
-  }, [contentsInfo]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [contentsInfo, activeItem]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const ContentsNavItem: React.FC<ContentsNavItemProps> = ({
     children,
@@ -62,15 +87,21 @@ export const TableOfContents: React.FC = () => {
   );
 
   return (
-    <StyledTableOfContents style={{[direction]: size}} id="toc-navigation">
-      <Stack flow="vertical-left">
-        {contentsInfo &&
-          contentsInfo.map((info, index) => (
-            <ContentsNavItem key={info.id} itemKey={index} href={`#${info.id}`}>
-              {info.title}
-            </ContentsNavItem>
-          ))}
-      </Stack>
-    </StyledTableOfContents>
+    <InstrumentationProvider context={{area: 'toc-navigation'}}>
+      <StyledTableOfContents style={{[direction]: size}} id="toc-navigation">
+        <Stack flow="vertical-left">
+          {contentsInfo &&
+            contentsInfo.map((info, index) => (
+              <ContentsNavItem
+                key={info.id}
+                itemKey={index}
+                href={`#${info.id}`}
+              >
+                {info.title}
+              </ContentsNavItem>
+            ))}
+        </Stack>
+      </StyledTableOfContents>
+    </InstrumentationProvider>
   );
 };
