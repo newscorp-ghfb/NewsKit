@@ -25,7 +25,7 @@ const StyledDiv = styled.div`
   border: 1px red dotted;
 `;
 
-export const FieldsetSimpleExample = () => (
+export const StoryFieldsetDefault = () => (
   <>
     <StorybookHeading>Fieldset default</StorybookHeading>
     <Fieldset legend="Legend">
@@ -34,7 +34,7 @@ export const FieldsetSimpleExample = () => (
     </Fieldset>
   </>
 );
-FieldsetSimpleExample.storyName = 'fieldset-simple-example';
+StoryFieldsetDefault.storyName = 'fieldset-default';
 
 export const LegendSizing = () => (
   <>

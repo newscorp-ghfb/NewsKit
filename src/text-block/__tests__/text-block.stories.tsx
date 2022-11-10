@@ -40,13 +40,13 @@ const StyledDiv = styled.div`
   border: 1px purple dotted;
 `;
 
-export const StoryDefault = () => (
+export const StoryTextBlockDefault = () => (
   <>
     <StorybookHeading>TextBlock default</StorybookHeading>
     <TextBlock stylePreset="inkContrast">{bodyString}</TextBlock>
   </>
 );
-StoryDefault.storyName = 'default';
+StoryTextBlockDefault.storyName = 'default';
 
 export const StoryAsDifferentHtmlTag = () => (
   <>
