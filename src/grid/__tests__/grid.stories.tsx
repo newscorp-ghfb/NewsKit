@@ -19,7 +19,7 @@ export default {
   component: () => 'None',
 };
 
-export const StoryGrid = () => (
+export const StoryGridDefault = () => (
   <>
     <BorderedBox>
       <Grid>
@@ -329,4 +329,4 @@ export const StoryGrid = () => (
     </BorderedBox>
   </>
 );
-StoryGrid.storyName = 'grid';
+StoryGridDefault.storyName = 'grid';

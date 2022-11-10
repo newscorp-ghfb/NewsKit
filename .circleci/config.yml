@@ -1277,6 +1277,7 @@ workflows:
           requires:
             - build_docs_pr_with_no_base_url
             - install_cypress
+            - build_storybook
       - no_visual_changes:
           type: approval
           requires:
