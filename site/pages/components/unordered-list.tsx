@@ -14,6 +14,7 @@ import {UsageKind} from '../../components/usage-card';
 import {IconFilledCircle} from '../../components/icons';
 import {Link} from '../../components/link';
 import {InlineCode} from '../../components/markdown-elements';
+import {IconFilledFacebook, IconFilledTwitter} from '../../../src/icons';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -210,33 +211,30 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the unordered list component, its variations, and configuration options.',
       playground: {
         componentName: 'Unorderedist',
-        // component: state => {
-        //   const {...restProps} = state as UnorderedListProps;
-        //   return (
-        //     <UnorderedList
-        //     {...restProps}
-        //     >
-        //     </UnorderedList>
-        //   );
-        // },
-        component: (props: UnorderedListProps) => (
-          <UnorderedList
-            {...props}
-            //  markerAlign="start"
-            //  listItemMarker={IconFilledCircle}
-            //  overrides={{
-            //  content: {
-            //    typographyPreset: 'editorialParagraph020',
-            //  },
-            //   spaceStack: 'space070',
-            // }}
-          />
-        ),
+        component: (props: UnorderedListProps) => <UnorderedList {...props} />,
         knobs: [
           {
             name: 'List Data',
             propName: 'children',
             value: ['Prince Harry', 'Meghan Markle', 'Royal Family'],
+          },
+          {
+            name: 'List Item Marker',
+            propName: 'listItemMarker',
+            options: [
+              {
+                label: 'Unset',
+                value: undefined,
+              },
+              {
+                label: 'twitter',
+                value: IconFilledTwitter,
+              },
+              {
+                label: 'facebook',
+                value: IconFilledFacebook,
+              },
+            ],
           },
           {
             name: 'Marker Align',
@@ -359,7 +357,8 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
               },
             ],
           },
-        ],
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ] as any,
       },
     }}
     anatomy={{
