@@ -1519,6 +1519,7 @@ workflows:
           requires:
             - build_docs_dev
             - install_cypress
+            - build_storybook
       - test_newskit_in_nextjs_app:
           context: ncu-product-platforms-context
           requires:
