@@ -1,11 +1,14 @@
 import React from 'react';
+import {fireEvent} from '@testing-library/react';
 import {
   renderToFragmentWithTheme,
+  renderWithImplementation,
   renderWithTheme,
 } from '../../test/test-utils';
 import {RadioButton, RadioGroup, RadioGroupProps} from '..';
 import {createTheme} from '../../theme';
 import {GridLayout} from '../../grid-layout';
+import {EventTrigger} from '../../instrumentation';
 
 const RadioButtonGroupTest = (props: RadioGroupProps) => (
   <RadioGroup name="size" {...props}>
@@ -94,5 +97,34 @@ describe('RadioButton', () => {
 
     const fragment = renderToFragmentWithTheme(TestGroup, {}, myCustomTheme);
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('fire tracking event', () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      defaultChecked: false,
+      eventOriginator: 'radio-button-item',
+      eventContext: {
+        event: 'other event data',
+      },
+    };
+
+    const {getByRole} = renderWithImplementation(
+      RadioButton,
+      props,
+      mockFireEvent,
+    );
+    const radio = getByRole('radio') as HTMLInputElement;
+
+    fireEvent.click(radio);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'radio-button-item',
+      trigger: EventTrigger.Change,
+      context: {
+        checked: true,
+        event: 'other event data',
+      },
+    });
   });
 });

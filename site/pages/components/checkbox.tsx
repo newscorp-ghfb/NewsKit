@@ -27,12 +27,12 @@ const commonPropsRows = (type?: string) => [
     name: 'size',
     type: ['small', 'medium', 'large'],
     default: 'medium',
-    description: `Defines the size of the ${type} Checkbox.`,
+    description: `Defines the size of the ${type} checkbox.`,
   },
   {
     name: 'state',
     type: ['valid', 'invalid', 'disabled'],
-    description: `If true, renders the ${type} Checkbox in a valid, invalid, or disabled state. It can be submitted within a form.`,
+    description: `If true, renders the ${type} checkbox in a valid, invalid, or disabled state. Can be submitted within a form.`,
   },
   {
     name: 'labelPosition',
@@ -43,7 +43,7 @@ const commonPropsRows = (type?: string) => [
   {
     name: 'labelAttributes',
     type: 'React.LabelHTMLAttributes<HTMLLabelElement>',
-    description: `Used to pass HTML attributes to the Label.`,
+    description: `Passes HTML attributes to the label`,
   },
 ];
 
@@ -52,21 +52,20 @@ const commonOverridesRows = [
     attribute: 'input.size',
     type: 'checkboxSize',
     default: ['Small = sizing050', 'Medium = sizing060', 'Large =sizing070'],
-    description: 'If provided, this overrides the size of the Checkbox input.',
+    description: 'If provided, overrides the size of the checkbox input',
   },
   {
     attribute: 'input.stylePreset',
     type: 'MQ<string>',
     default: 'inputField',
-    description:
-      'If provided, overrides the stylePreset of the Checkbox input.',
+    description: 'If provided, overrides the stylePreset of the checkbox input',
   },
   {
     attribute: 'input.transitionPreset',
     type: 'MQ<string>',
     default: 'backgroundColorChange, borderColorChange',
     description:
-      'If provided, overrides the transitionPreset of the Checkbox input.',
+      'If provided, overrides the transitionPreset of the checkbox input',
   },
   {
     attribute: 'input.spaceInline',
@@ -77,53 +76,52 @@ const commonOverridesRows = [
       'Large = spaceInline040',
     ],
     description:
-      'If provided, this overrides the inline space between the Checkbox input and Label.',
+      'If provided, overrides the inline space between the checkbox input and label',
   },
   {
     attribute: 'spaceStack(deprecated)',
     type: 'MQ<string>',
     default: '',
     description:
-      'This property is deprecated. Use marginBlockEnd instead. If provided, this overrides the stack space applied to the Checkbox.',
+      'This property is deprecated. Use marginBlockEnd instead. If provided, overrides the stack space applied to the checkbox',
   },
   {
     attribute: 'icon',
     type: 'MQ<string>',
     default: 'check',
-    description: 'If provided, overrides the Checkbox icon.',
+    description: 'If provided, overrides the checkbox icon',
   },
   {
     attribute: 'icon.size',
     type: 'MQ<string>',
     default: 'iconSize020',
-    description: 'If provided, overrides the size of the Checkbox icon.',
+    description: 'If provided, overrides the size of the checkbox icon',
   },
   {
     attribute: 'icon.stylePreset',
     type: 'MQ<string>',
     default: 'inkInverse',
-    description: 'If provided, overrides the stylePreset of the Checkbox icon.',
+    description: 'If provided, overrides the stylePreset of the checkbox icon',
   },
   {
     attribute: 'feedback.size',
     type: 'feedbackSize',
     default: ['Small = sizing070', 'Medium = sizing080', 'Large = sizing090'],
-    description:
-      'If provided, this overrides the size of the feedback element.',
+    description: 'If provided, this overrides the size of the feedback element',
   },
   {
     attribute: 'feedback.stylePreset',
     type: 'feedbackSize',
     default: '',
     description:
-      'If provided, this overrides the stylePreset of the feedback element.',
+      'If provided, this overrides the stylePreset of the feedback element',
   },
   {
     attribute: 'feedback.transitionPreset',
     type: 'MQ<string>',
     default: 'fade',
     description:
-      'If provided, overrides the transitionPreset of the feedback element.',
+      'If provided, overrides the transitionPreset of the feedback element',
   },
   {
     attribute: 'label.typographyPreset',
@@ -134,13 +132,13 @@ const commonOverridesRows = [
       'Large = utilityBody030',
     ],
     description:
-      'If provided, this overrides the typographyPreset of the Label.',
+      'If provided, this overrides the typographyPreset of the Label',
   },
   {
     attribute: 'label.stylePreset',
     type: 'MQ<string>',
     default: 'inkBase',
-    description: 'If provided, this overrides the stylePreset of the Label.',
+    description: 'If provided, this overrides the stylePreset of the Label',
   },
   ...(commonLogicalProps() as OverridesRowsProps[]),
 ];
@@ -150,7 +148,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Checkbox',
       description:
-        'Checkboxes are selection controls that allow users to select one or multiple items from a group of options. They typically appear in forms.',
+        'Checkboxes let users select one or multiple items from a group of options. They typically appear in forms.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -160,7 +158,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         illustration: 'components/checkbox/hero',
       },
       introduction:
-        'Checkboxes are selection controls that allow users to select one or multiple items from a group of options. They typically appear in forms.',
+        'Checkboxes let users select one or multiple items from a group of options. They typically appear in forms.',
     }}
     componentDefaultsKey="checkbox"
     meta={{
@@ -173,10 +171,10 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The Checkbox contains one required element and three optional elements.',
+        'The checkbox component contains one required element and three optional elements.',
       rows: [
         {
-          name: 'Checkbox Input',
+          name: 'Checkbox input',
           description:
             'Selection control (input) that can be selected or unselected, and pushed into different states',
           component: ['Block'],
@@ -184,7 +182,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Icon',
-          description: 'Icon that appears within the Checkbox input',
+          description: 'Appears within the checkbox input',
           component: ['Block'],
           optional: true,
         },
@@ -197,42 +195,32 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Label',
-          description:
-            'The Label is the text attributed to the Checkbox that provides context',
-          component: ['Text Block'],
+          description: 'Text attributed to the checkbox for context',
+          component: ['Text lock'],
           optional: true,
         },
       ],
       media: getIllustrationComponent('components/checkbox/anatomy'),
     }}
     options={{
-      introduction:
-        'The Checkbox has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The checkbox has options for different use cases:',
       cards: [
         {
           title: 'Size',
-          description: (
-            <>
-              There are three sizes of Checkbox input and the feedback element;
-              small, medium (default), and large.
-              <br />
-              <br />
-              The icon that appears within the Checkbox input remains the same
-              size at all three sizes but can be overridden.
-            </>
-          ),
+          description:
+            'The checkbox input and feedback element both come in small, medium (default) and Large.',
           media: getIllustrationComponent('components/checkbox/options/size'),
         },
         {
           title: 'Icon',
           description:
-            'The icon that appears within the Checkbox input can be overridden for the different Checkbox states.',
+            'Override the icon within the checkbox input for different checkbox states.',
           media: getIllustrationComponent('components/checkbox/options/icon'),
         },
         {
           title: 'Feedback',
           description:
-            'The feedback element is non-interactive and appears in the background behind the Checkbox input for visual feedback on hover.',
+            'The feedback element is non-interactive and appears in the background behind the checkbox input on hover.',
           media: getIllustrationComponent(
             'components/checkbox/options/feedback',
           ),
@@ -241,16 +229,14 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           title: 'Label',
           description: (
             <>
-              The Checkbox has a label that appears to the right (end) of a
-              Checkbox.
+              Add a label to the right (end) of the checkbox to provide context.
               <InlineMessage
                 overrides={{marginBlockStart: 'space030'}}
                 icon={infoIcon}
                 role="region"
                 aria-label="checkbox label position"
               >
-                In the case of needing a label on the left (start) of a
-                Checkbox, this can be set via the{' '}
+                You can add a label on the left (start) of a checkbox using the{' '}
                 <InlineCode>labelPosition</InlineCode> prop.
               </InlineMessage>
             </>
@@ -261,21 +247,11 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           title: 'Fieldset',
           description: (
             <>
-              Selection controls (inputs), such as the FormInput,{' '}
-              <Link href="/components/radio-button/">Radio Button</Link>, and
-              Checkbox, can be grouped together with other selection controls,
-              Labels, and Assistive Text together in a Fieldset. The Fieldset
-              has a caption that gives a title attributed to the elements that
-              appear in the Fieldset, called a Legend.
-              <br />
-              <br />
-              The Fieldset can also support other selection controls (inputs)
-              such as the{' '}
-              <Link href="/components/radio-button/">FormInput</Link>, FormInput
-              Switch, and FormInput TextField.
-              <br />
-              <br />
-              For more information, please refer to the Fieldset component.
+              Group together selection controls (e.g. for input, radio button
+              and checkbox) in a{' '}
+              <Link href="/components/fieldset/">fieldset</Link> , along with
+              labels and assistive text. Add a title to the grouped elements
+              using the legend.
             </>
           ),
           media: getIllustrationComponent(
@@ -291,25 +267,25 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Base',
           description:
-            'The Checkbox has a base (default) state. This is the base style of the Checkbox before it has been interacted with by a user.',
+            'The default style before the user interacts with the checkbox.',
           media: getIllustrationComponent('components/checkbox/states/base'),
         },
         {
           title: 'Hover',
           description:
-            'The Checkbox has a hover state. The style of the Checkbox changes to visually communicate and provide feedback to the user that the Checkbox is an interactive element. The style of the label remains the same. The label can also be interacted with (hovered) to check the Checkbox.',
+            'The checkbox changes style to let the user know it’s interactive. The style of the label remains the same. Users can interact with (hover) the label to check the checkbox.',
           media: getIllustrationComponent('components/checkbox/states/hover'),
         },
         {
           title: 'Focus',
           description:
-            'The Checkbox in a focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted a checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent('components/checkbox/states/focus'),
         },
         {
           title: 'Focus Hover',
           description:
-            'The Checkbox in a focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted and hovered over a checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/states/focus-hover',
           ),
@@ -317,13 +293,13 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked',
           description:
-            'The Checkbox has a checked state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked. The style of the label remains the same.',
+            'The checkbox input changes style to let the user know the checkbox is checked. The style of the label remains the same.',
           media: getIllustrationComponent('components/checkbox/states/checked'),
         },
         {
           title: 'Checked Hover',
           description:
-            'The Checkbox has a checked hover state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked and hovered over. The style of the label remains the same.',
+            'The checkbox input changes style to let the user know the checkbox is checked and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/checkbox/states/checked-hover',
           ),
@@ -331,7 +307,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Focus',
           description:
-            'The Checkbox in a checked focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted a checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/states/checked-focus',
           ),
@@ -339,29 +315,20 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Focus Hover',
           description:
-            'The Checkbox in a checked focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted and hovered over a checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/states/checked-focus-hover',
           ),
         },
         {
           title: 'Invalid',
-          description: (
-            <>
-              The Checkbox in an invalid state changes style when the Checkbox
-              selection doesn’t conform to a specific format eg. attempting to
-              proceed without selecting a required Checkbox in a{' '}
-              <Link href="/components/form/">Form</Link>. The Form component is
-              used to apply validation behaviour. The style of the label remains
-              the same.
-            </>
-          ),
+          description: `The checkbox changes style when checkbox selection doesn’t conform to a specific format (e.g. attempting to proceed without selecting a required checkbox in a form). Use the form component to validate behaviour. The style of the label remains the same.`,
           media: getIllustrationComponent('components/checkbox/states/invalid'),
         },
         {
           title: 'Invalid Focus',
           description:
-            'The Checkbox in an invalid focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted an invalid checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/states/invalid-focus',
           ),
@@ -369,7 +336,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Invalid Hover',
           description:
-            'The Checkbox has an invalid hover state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox is in an invalid state and hovered over. The style of the label remains the same.',
+            'The checkbox input changes style to let the user know the checkbox is in an invalid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/checkbox/states/invalid-hover',
           ),
@@ -377,7 +344,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Invalid Focus Hover',
           description:
-            'The Checkbox in an invalid focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted and hovered over an invalid checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/states/invalid-focus-hover',
           ),
@@ -385,7 +352,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Invalid',
           description:
-            'The Checkbox has a checked invalid state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked and is in an invalid state. The style of the label remains the same.',
+            'The checkbox input changes style to let the user know the checkbox is checked and in an invalid state. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/checkbox/states/checked-invalid',
           ),
@@ -393,7 +360,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Invalid Focus',
           description:
-            'The Checkbox in a checked invalid focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted an invalid checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/states/checked-invalid-focus',
           ),
@@ -401,7 +368,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Invalid Hover',
           description:
-            'The Checkbox has a checked invalid hover state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked and is in an invalid state, and hovered over. The style of the label remains the same.',
+            'The checkbox input changes style to let the user know the checkbox is checked, in an invalid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/checkbox/states/checked-invalid-hover',
           ),
@@ -409,28 +376,21 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Invalid Focus Hover',
           description:
-            'The Checkbox in a checked invalid focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted and hovered over an invalid checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/states/checked-invalid-focus-hover',
           ),
         },
         {
           title: 'Valid',
-          description: (
-            <>
-              The Checkbox in an valid state changes style when the Checkbox
-              selection conforms to a specific format eg.updating preferences in
-              a <Link href="/components/form/">Form</Link>. The Form component
-              is used to apply validation behaviour.The style of the label
-              remains the same.
-            </>
-          ),
+          description:
+            'The checkbox changes style when checkbox selection criteria are met (e.g. updating preferences in a form). Use the form component to validate behaviour. The style of the label remains the same.',
           media: getIllustrationComponent('components/checkbox/states/valid'),
         },
         {
           title: 'Valid Focus',
           description:
-            'The Checkbox in a valid focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted a valid checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/states/valid-focus',
           ),
@@ -438,7 +398,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Valid Hover',
           description:
-            'The Checkbox has a valid hover state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox is in a valid state and hovered over. The style of the label remains the same.',
+            'The checkbox input changes style to let the user know the checkbox is in a valid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/checkbox/states/valid-hover',
           ),
@@ -446,7 +406,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Valid Focus Hover',
           description:
-            'The Checkbox in a valid focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted and hovered over a valid checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/states/valid-focus-hover',
           ),
@@ -454,7 +414,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Valid',
           description:
-            'The Checkbox has a checked valid state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked and is in a valid state. The style of the label remains the same.',
+            'The checkbox input changes style to let the user know the checkbox is checked and in a valid state. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/checkbox/states/checked-valid',
           ),
@@ -462,7 +422,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Valid Focus',
           description:
-            'The Checkbox in a checked valid focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted a valid checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/states/checked-valid-focus',
           ),
@@ -470,7 +430,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Valid Hover',
           description:
-            'The Checkbox has a checked valid hover state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked and is in a valid state, and hovered over. The style of the label remains the same.',
+            'The checkbox input changes style to let the user know the checkbox is checked, in a valid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/checkbox/states/checked-valid-hover',
           ),
@@ -478,7 +438,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Valid Focus Hover',
           description:
-            'The Checkbox in a checked valid focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted and hovered over a valid checkbox (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/states/checked-valid-focus-hover',
           ),
@@ -487,16 +447,15 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           title: 'Disabled',
           description: (
             <>
-              The Checkbox in a disabled state communicates that a Checkbox
-              exists, but is not available to the user in that scenario. When
-              the user&apos;s cursor hovers over a Checkbox in a disabled state,
-              the cursor shows as not allowed.
+              Communicates that a checkbox exists, but isn’t available in that
+              scenario. When the user hovers over a checkbox in a disabled
+              state, the cursor shows as ‘not allowed’.
               <br />
               <br />
-              Disabled Checkboxes are often used to maintain layout consistency
-              and communicate that a Checkbox may become available if another
-              condition has been met. The style of the label (colour) also
-              changes to indicate that the Checkbox is disabled.
+              Disabled checkboxes maintain layout consistency and communicate
+              that a checkbox may become available if another condition is met.
+              The style of the label (colour) changes to indicate that the
+              checkbox is disabled.
             </>
           ),
           media: getIllustrationComponent(
@@ -507,17 +466,15 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           title: 'Checked Disabled',
           description: (
             <>
-              The Checkbox in a checked disabled state communicates that a
-              Checkbox exists, but is not available to the user in that
-              scenario. When the user&apos;s cursor hovers over a Checkbox in a
-              checked disabled state, the cursor shows as not allowed.
+              Communicates that a checkbox exists, but isn’t available in that
+              scenario. When the user hovers over a checkbox in a checked
+              disabled state, the cursor shows as ‘not allowed’.
               <br />
               <br />
-              Disabled checked Checkboxes are often used to maintain layout
-              consistency and communicate that a Checkbox may become available
-              if another condition has been met. The style of the label (colour)
-              also changes to indicate that the Checkbox is checked and
-              disabled.
+              Disabled checked checkboxes maintain layout consistency and
+              communicate that a checkbox may become available if another
+              condition is met. The style of the label (colour) changes to
+              indicate that the checkbox is checked and disabled.
             </>
           ),
           media: getIllustrationComponent(
@@ -526,7 +483,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         },
       ],
       notice:
-        'The Feedback element becomes visible (configurable) on state change, eg hover.',
+        'The feedback element becomes visible (configurable) on state change (e.g. hover).',
     }}
     behaviors={{
       introduction:
@@ -535,7 +492,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked vs unchecked',
           description:
-            'Checkboxes can be checked or unchecked. A Checkbox in a checked state is indicated with an icon that appears in the centre of the checkbox.',
+            'Checkboxes can be checked or unchecked. An icon appears in the centre of the checkbox to indicate the checked state.',
           media: getIllustrationComponent(
             'components/checkbox/behaviours/checked-vs-unchecked',
           ),
@@ -552,9 +509,9 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           title: 'Transition',
           description: (
             <>
-              When the Checkbox is checked, the ‘check’ icon fades up in the
-              centre of the Checkbox, and the{' '}
-              <InlineCode>backgroundColor</InlineCode>, and{' '}
+              When the checkbox is checked, the ‘check’ icon fades up in the
+              centre of the checkbox and{' '}
+              <InlineCode>backgroundColor</InlineCode> and{' '}
               <InlineCode>borderColor</InlineCode> transition simultaneously.
             </>
           ),
@@ -565,15 +522,15 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Clickable area',
           description:
-            'The Checkbox feedback element indicates the minimum clickable area for the Checkbox input (also known as hit area, or touch target area). The size of the clickable area changes according to the size of the Checkbox. The associated Label is also clickable next to the Checkbox.',
+            'The checkbox feedback element indicates the minimum clickable area for the checkbox input (also known as hit area or touch target area). The size of the clickable area changes according to the size of the checkbox. The associated label is also clickable.',
           media: getIllustrationComponent(
             'components/checkbox/behaviours/clickable-area',
           ),
         },
         {
-          title: 'Focusable area',
+          title: 'Focussable area',
           description:
-            'Both the Checkbox input and Label are interactive, and a user can hover over either, but only the Checkbox input itself is focusable by using an input method such as a keyboard or voice.',
+            'The checkbox input and label are both interactive, and a user can hover over either, but only the checkbox input is focussable (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/checkbox/behaviours/focusable-area',
           ),
@@ -582,15 +539,9 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           title: 'Validation',
           description: (
             <>
-              The Checkbox validation rules can be defined for onSubmit or
-              onBlur, for both the initial validation and re-validation using
-              the Form.
+              Use the form to choose whether the checkbox validates on submit or
+              on blur, for both the initial validation and re-validation.
               <br />
-              <br />
-              <Link href="/components/form/">
-                For more information, please refer to the Form component
-              </Link>
-              .
               <InlineMessage
                 overrides={{marginBlockStart: 'space050'}}
                 icon={infoIcon}
@@ -598,7 +549,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
                 aria-label="formInput checkbox validation"
                 title="Note"
               >
-                Validation only works if the FormInput Checkbox uses the Form
+                Validation only works if the form input checkbox uses the form
                 component.
               </InlineMessage>
             </>
@@ -610,7 +561,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Autofocus',
           description:
-            'The Checkbox can be set to be auto-focused on page load (when mounted).',
+            'You can auto-focus on the checkbox on page load (when mounted).',
           media: getIllustrationComponent(
             'components/checkbox/behaviours/autofocus',
           ),
@@ -618,7 +569,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Default checked',
           description:
-            'The Checkbox initial state can be set to be checked or unchecked by default (controlled or uncontrolled).',
+            'The checkbox’s initial state can be set to checked or unchecked by default (controlled or uncontrolled).',
           media: getIllustrationComponent(
             'components/checkbox/behaviours/default-checked',
           ),
@@ -626,70 +577,35 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the Checkbox component.',
+      introduction: 'Here’s how and when to use the checkbox:',
       cards: [
         {
           description:
-            'Group Checkboxes along with other selection controls, Labels, and Assistive Text together with the Fieldset component and the Legend that gives a title attributed to the elements that appear in the Fieldset.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/checkbox/usage/do-1'),
-        },
-        {
-          description: (
-            <>
-              When medium or large Checkboxes are too visually prominent, small
-              checkboxes can work well on information dense screens/pages.
-              <br />
-              <br />
-              For example, smaller checkboxes may let users see more options in
-              a form at a glance.
-            </>
-          ),
+            'When medium or large checkboxes are too visually prominent, use small checkboxes instead (e.g. in a form, to show more options at a glance).',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-2'),
         },
         {
-          description: (
-            <>
-              Checkboxes should be used to help users select multiple options
-              from a list or to check or uncheck a single option. Unlike{' '}
-              <Link href="/components/radio-button/">Radios</Link>, users can
-              select multiple options from a list of Checkboxes.
-            </>
-          ),
+          description:
+            'Use checkboxes either for selecting multiple options from a list, or to check or uncheck a single option. If users can only select a single option, use the radio button instead.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-3'),
         },
         {
-          description: (
-            <>
-              Avoid using the Checkbox component if users can only choose one
-              option from a selection. In this case, use the{' '}
-              <Link href="/components/radio-button/">
-                Radio Button component
-              </Link>
-              .
-            </>
-          ),
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/checkbox/usage/dont-1'),
-        },
-        {
           description:
-            'Checkboxes should always have a Label associated to give users context of what the Checkbox represents.',
+            'Checkboxes should have an associated label to give users context.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-4'),
         },
         {
           description:
-            'Avoid placing Labels to the left (start) of Checkboxes when there are multiple Checkboxes grouped together to avoid layout misalignment. Instead place Labels to the right (end) so that when used together in forms, Checkbox inputs align vertically, which makes them easier to find, especially for users of screen magnifiers.',
+            'When grouping multiple checkboxes, put the label on the right (end) so that, when used together in forms, checkbox inputs align vertically. This makes them easier to find, especially for users of screen magnifiers.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/checkbox/usage/dont-2'),
         },
         {
           description:
-            'Checkboxes should be displayed vertically, stacked for consistent alignment and positioning across different breakpoints.',
+            'Checkboxes should be displayed vertically, and stacked for consistent alignment, positioning and legibility across different breakpoints.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-5'),
         },
@@ -701,25 +617,25 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'If needed Assistive Text should be used to hint at the action the user is being asked to do, for example, ‘Select all that apply’.',
+            'Assistive text, if needed, should hint at the required user action (e.g. ‘select all that apply’).',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-6'),
         },
         {
           description:
-            'Avoid default checked options where possible as this makes it more likely that users will not realise they’ve missed a question, or submit the wrong answer when not intended.',
+            'Avoid default checked options as they make it more likely that users won’t realise they’ve missed a question, or submit an unintended answer.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/checkbox/usage/dont-4'),
         },
         {
           description:
-            'Swap Assistive Text with error text if the Checkbox is invalid. Once the Checkbox is valid then the assistive is then shown again.',
+            'If the checkbox is invalid, swap assistive text with error text. Once the checkbox is valid, show the assistive text again.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-7'),
         },
         {
           description:
-            'Write error text that communicates a solution. Error text should be written in no more than a few clear, concise and complete sentences.',
+            'Error text should be clear, concise and written in complete sentences - and it should tell the user how to resolve the issue.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-8'),
         },
@@ -731,16 +647,14 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           The Checkbox has the following accessibility considerations:
           <Block spaceStack="space100" />
           <ContentText title="Grouping Checkboxes">
-            It is recommended to{' '}
-            <Link
-              target="_blank"
-              href="https://www.w3.org/TR/wai-aria-1.2/#group"
-            >
-              group
-            </Link>{' '}
-            Checkboxes and other related elements such as Labels and Assistive
-            Text together using the Fieldset component, with a title attributed
-            to the elements that appear in the Fieldset, called a Legend.
+            Group checkboxes and related elements (e.g. labels and assistive
+            text) together using the fieldset component with a title attributed
+            to the elements called a legend.
+            <br />
+            <br />A fieldset groups related form controls, making them easier to
+            understand. It can also allow users to focus on smaller and more
+            manageable chunks, rather than trying to grasp the entire form at
+            once.
           </ContentText>
         </>
       ),
@@ -759,11 +673,11 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         tableRows: [
           {
             command: ['Tab'],
-            description: 'Moves focus to the Checkbox input',
+            description: 'Moves focus to the checkbox input',
           },
           {
             command: ['Space'],
-            description: 'Checks & unchecks the Checkbox ',
+            description: 'Checks and unchecks the checkbox ',
           },
         ],
       },
@@ -776,7 +690,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             attribute: 'ariaLabel',
             value: 'string',
             description:
-              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the Checkbox',
+              'Defines a string that labels the action that will be performed when the user interacts with the checkbox',
             userSupplied: true,
           },
           {
@@ -784,7 +698,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-required',
             value: 'object',
             description:
-              'This attribute informs the user that an element is required. When set to true, screen readers notify users that the element is required.',
+              'Informs the user that an input is required. When set to ‘true’, screen readers notify users that the element is required',
             userSupplied: true,
           },
           {
@@ -792,7 +706,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-invalid',
             value: 'object',
             description:
-              'This attribute informs the user when there is an error. By default it’s set to false. Screen readers will alert users when the element is set to any value other than false.',
+              'Informs the user when there’s an error. Set to ‘false’ by default. Screen readers alert users when the element is set to any value other than ‘false’',
             userSupplied: true,
           },
         ],
@@ -808,25 +722,26 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             aria-label="api introduction"
             overrides={{marginBlockStart: 'space080'}}
           >
-            There are two components exported from the package, one for use
-            within the{' '}
-            <Link href="/components/form/">NewsKit Form component</Link>, and
-            one for use as a controlled component.
+            This package exports two components: a form input checkbox for use
+            within the <Link href="/components/form/">form</Link> component, and
+            a checkbox for use as a controlled component (e.g. where you have a
+            custom validation mechanism). Both have a range of props to define
+            the experience in different use cases.
           </InlineMessage>
         </>
       ),
       components: [
         {
-          title: 'FormInput Checkbox',
+          title: 'Form input checkbox',
           summary: (
             <>
-              The FormInput Checkbox has a range of props that can be used to
-              define an appropriate experience for different use cases.Use this
-              component within the{' '}
-              <Link href="/components/form/">NewsKit Form component.</Link>
+              The form input checkbox has a range of props that can be used to
+              define an appropriate experience for different use cases. Use this
+              component within the <Link href="/components/form/">form</Link>{' '}
+              component.
             </>
           ),
-          propsRows: commonPropsRows('FormInput'),
+          propsRows: commonPropsRows('form input'),
           overridesRows: commonOverridesRows,
           propsFooter: (
             <>
@@ -838,18 +753,9 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               >
                 The <InlineCode>name</InlineCode> &{' '}
                 <InlineCode>rules</InlineCode> props are set on the form input
-                level. If you want to add validation rules or set the name of
-                this component, please refer to the{' '}
-                <Link href="/components/form/">Form</Link> component
-              </InlineMessage>
-              <Block spaceStack="space050" />
-              <InlineMessage
-                role="region"
-                aria-label="engineer validation"
-                title="Note"
-              >
-                Engineer to check the validation related props at the time of
-                implementation.
+                level. To add validation rules, or set the name of this
+                component, see the <Link href="/components/form/">form</Link>{' '}
+                page
               </InlineMessage>
             </>
           ),
@@ -865,7 +771,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               type: 'string',
               description: (
                 <>
-                  If provided, defines name of the input element, used when
+                  If provided, define the name of the input element. Use when
                   submitting an{' '}
                   <Link
                     target="_blank"

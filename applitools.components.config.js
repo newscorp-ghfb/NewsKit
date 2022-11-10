@@ -13,4 +13,6 @@ module.exports = {
   // Don't close the batch when the suite finishes so that the doc site tests
   // that run after will be added to the same batch.
   dontCloseBatches: true,
+  // don't fail the pipeline job if there are visual test failures
+  exitcode: false,
 };
