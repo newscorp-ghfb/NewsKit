@@ -12,14 +12,14 @@ export const BreadcrumbItem = React.forwardRef<
       children,
       selected,
       href,
-      // overrides,
+      overrides,
       eventContext = {},
       eventOriginator = 'breadcrumb-item',
       ...rest
     },
     ref,
   ) => {
-    const {size, overrides} = useBreadCrumbsContext();
+    const {size} = useBreadCrumbsContext();
     const buttonProps = {
       ...rest,
       selected,

@@ -1,7 +1,7 @@
 import React from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {BreadcrumbsContextProvider} from './context';
-import {StyledList, StyledOrderdList} from './styled';
+import {StyledIconContainer, StyledOrderdList} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
@@ -58,25 +58,29 @@ const ThemelessBreadcrumbs = React.forwardRef<
     const [BreadcrumbsIcon, BreadcrumbsIconProps] = getComponentOverrides(
       overrides?.separator,
       DefaultIcon,
-      {},
+      {
+        overrides: {
+          size: iconToken,
+        },
+      },
     );
     const breadcrumbChildren = React.Children.toArray(
       children,
     ) as React.ReactElement<BreadcrumbItemProps>[];
     return (
-      <BreadcrumbsContextProvider
-        value={{size, overrides, showTrailingSeparator}}
-      >
-        <StyledOrderdList ref={ref} {...rest}>
+      <BreadcrumbsContextProvider value={{size, showTrailingSeparator}}>
+        <StyledOrderdList ref={ref} {...rest} overrides={overrides}>
           {!showTrailingSeparator &&
             breadcrumbChildren.reduce(
               (acc: React.ReactElement[], listItem, index, array) => {
                 acc.push(listItem);
                 if (children && index < array.length - 1) {
                   acc.push(
-                    <BreadcrumbsIcon
-                      {...(BreadcrumbsIconProps as BreadcrumbsProps)}
-                    />,
+                    <StyledIconContainer>
+                      <BreadcrumbsIcon
+                        {...(BreadcrumbsIconProps as BreadcrumbsProps)}
+                      />
+                    </StyledIconContainer>,
                   );
                 }
 
@@ -88,12 +92,12 @@ const ThemelessBreadcrumbs = React.forwardRef<
           {showTrailingSeparator &&
             React.Children.map(children, child => (
               <>
-                <StyledList>
-                  {child}
+                {child}
+                <StyledIconContainer>
                   <BreadcrumbsIcon
                     {...(BreadcrumbsIconProps as BreadcrumbsProps)}
                   />
-                </StyledList>
+                </StyledIconContainer>
               </>
             ))}
         </StyledOrderdList>
