@@ -44,7 +44,7 @@ const PRINCIPLE_CARDS = [
     title: 'Accessible',
     description: (
       <>
-        NewsKit components folllow{' '}
+        NewsKit components follow{' '}
         <Link
           overrides={{stylePreset: 'inkWhiteContrast'}}
           href="https://www.w3.org/WAI/standards-guidelines/wcag/"

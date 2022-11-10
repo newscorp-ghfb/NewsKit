@@ -22,7 +22,7 @@ const Iconography = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Iconography',
       description:
-        'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
+        'Icons provide additional context and visual cues, and reinforce interactions.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -42,21 +42,13 @@ const Iconography = (layoutProps: LayoutProps) => (
           headline="Overview"
           description={
             <>
-              NewsKit icons need to support multiple themes, so icons in the
-              library aim to strike a balance between form and function. They
-              represent actions and as simply and as accurately as possible for
-              better understanding for users. We leverage commonly established
-              icon usage, naming conventions and platform considerations where
-              possible for ease of comprehension for users.
+              NewsKit icons follow common icon usage, naming conventions and
+              platform considerations where possible.
               <br />
               <br />
-              Icons in the library feed into the Icon component, which a host of
-              other more complex components in the system uses.
-              <br />
-              <br />
-              <Link href="/components/icons">
-                Learn more about the Icon component
-              </Link>
+              Icons in the library feed into the{' '}
+              <Link href="/components/icons">icon component</Link>, which a host
+              of other more complex components in the system use.
             </>
           }
           showSeparator
@@ -73,7 +65,7 @@ const Iconography = (layoutProps: LayoutProps) => (
           id="characteristics"
           toc="Characteristics"
           headline="Characteristics"
-          description="Icons have the following defining characteristics."
+          description="Icons have the following characteristics:"
         >
           <MediaList
             layout="1-span"
@@ -82,7 +74,7 @@ const Iconography = (layoutProps: LayoutProps) => (
               {
                 title: 'Overlay',
                 description:
-                  'Icons have two variations; ‘Filled’ and ‘Outlined’. There will be certain instances when a ‘Filled’ and ‘Outlined’ instance of the same icon look the same. This is because some visual characteristics don’t lend themselves to one or the other style.',
+                  'Most icons are available in filled and outlined variants. Occasionally, only one style is available for aesthetic reasons.',
                 media: getIllustrationComponent(
                   'theme/iconography/appearance',
                   {
@@ -94,9 +86,9 @@ const Iconography = (layoutProps: LayoutProps) => (
                 title: 'Colour',
                 description: (
                   <>
-                    Colour can be applied to icons using{' '}
+                    Apply colour to icons using{' '}
                     <Link href="/theme/foundation/colours#css-w5wzt1">
-                      Ink colour tokens.
+                      ink colour tokens.
                     </Link>
                   </>
                 ),
@@ -108,7 +100,7 @@ const Iconography = (layoutProps: LayoutProps) => (
                 title: 'Size',
                 description: (
                   <>
-                    Icons can be sized using{' '}
+                    Set the size of icons using{' '}
                     <Link href="/theme/foundation/spacing/#css-2ka130">
                       icon size tokens.
                     </Link>
@@ -122,20 +114,20 @@ const Iconography = (layoutProps: LayoutProps) => (
                 title: 'Structure',
                 description: (
                   <>
-                    Icons in the library are created using a{' '}
+                    Icons in the library use a{' '}
                     <Link
-                      target="_blank"
                       href="https://www.figma.com/proto/44FDCMcOPHd5m29NKTESm7/Component-Documentation-Sheets?page-id=123%3A57177&amp;node-id=123%3A57178&amp;viewport=910%2C801%2C0.11311577260494232&amp;scaling=min-zoom&amp;hide-ui=1"
+                      target="_blank"
                     >
                       24px x 24px
                     </Link>{' '}
-                    frame, with a 2px clear space around the outer edges (shown
-                    in teal on the diagram).
+                    frame. They have a 2px clear space around the outer edges
+                    (shown in the outer frame on the diagram).
                     <br />
                     <br />
-                    The space inside the teal frame is known as the ‘Live area’.
-                    The complete composition, including clear space, is known as
-                    the trim area.
+                    The space inside the outer frame is known as the ‘live
+                    area’. The complete composition, including clear space, is
+                    known as the ‘trim area’.
                   </>
                 ),
                 media: getIllustrationComponent('theme/iconography/structure', {
@@ -149,7 +141,7 @@ const Iconography = (layoutProps: LayoutProps) => (
         <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage
             role="region"
-            title="We support the full library of default Icons available in NewsKit."
+            title="Override default icons"
             aria-label="Characteristics"
           >
             Designers -{' '}
@@ -157,13 +149,12 @@ const Iconography = (layoutProps: LayoutProps) => (
               target="_blank"
               href="https://www.figma.com/proto/44FDCMcOPHd5m29NKTESm7/Component-Documentation-Sheets?page-id=123%3A57177&amp;node-id=123%3A57178&amp;viewport=909%2C801%2C0.11311577260494232&amp;scaling=scale-down-width&amp;hide-ui=1"
             >
-              learn more about how to override default icons in the design icon
-              library.
+              learn how to override default icons in the design icon library
             </Link>
             <br />
             Engineers -{' '}
             <Link href="/components/icons">
-              learn more about how to override default icons in the theme.
+              learn how to override default icons in the theme
             </Link>
           </InlineMessage>
         </ContentSecondary>
@@ -176,15 +167,13 @@ const Iconography = (layoutProps: LayoutProps) => (
           headline="Library"
           description={
             <>
-              The NewsKit icon library is sourced from the{' '}
+              NewsKit’s icons come from{' '}
               <Link
                 target="_blank"
                 href="https://material.io/design/iconography/system-icons.html#design-principles"
               >
                 Google Material icon library.
               </Link>{' '}
-              NewsKit provides both <b>Filled</b> and <b>Outlined</b> sets,
-              which are the basis for the NewsKit default icon library.
             </>
           }
         />
@@ -192,7 +181,7 @@ const Iconography = (layoutProps: LayoutProps) => (
         <ContentSecondary
           description={
             <>
-              Icons have the following naming convention:
+              Icons follow a naming convention:
               <br />
               <br />
               <b>
@@ -200,34 +189,19 @@ const Iconography = (layoutProps: LayoutProps) => (
               </b>
               <br />
               <br />
-              For example - <b>IconFilledSearch</b> or <b>IconOutlinedHome.</b>
+              For example, <b>IconFilledSearch</b> or <b>IconOutlinedHome.</b>
             </>
           }
           showSeparator
           childrenColSpan={ContentColSpan.TEXT}
-        >
-          <InlineMessage
-            role="region"
-            title="We support the full library of default Icons available in NewsKit."
-            aria-label="Library"
-          >
-            <Link
-              target="_blank"
-              href="https://material.io/design/iconography/system-icons.html#design-principles"
-            >
-              View the Google Material icon library for the full library of
-              icons available.
-            </Link>
-          </InlineMessage>
-        </ContentSecondary>
+        />
       </ContentSection>
 
       <ContentSection sectionName="usage">
         <ContentPrimary
           toc="Usage"
           id="usage"
-          headline="Usage"
-          description="The following guidance describes how and when to appropriately use iconography."
+          headline="How to use icons"
           showSeparator
         >
           <MediaList
@@ -236,16 +210,8 @@ const Iconography = (layoutProps: LayoutProps) => (
             layout="2-span"
             cards={[
               {
-                description: (
-                  <>
-                    Icon content should only be contained within the 20px live
-                    area.
-                    <br />
-                    <br />
-                    The 2px border of padding around the live area should be
-                    kept clear.
-                  </>
-                ),
+                description:
+                  'Place icons within the 20px live area. Keep the 2px border of padding around the live area clear.',
                 kind: UsageKind.DO,
                 media: getIllustrationComponent('theme/iconography/do-01', {
                   viewBox: '0 0 1344 759',
@@ -253,7 +219,7 @@ const Iconography = (layoutProps: LayoutProps) => (
               },
               {
                 description:
-                  'To avoid distorting an icon, position icons ‘on pixel’ so they appear clear and not pixelated or blurred.',
+                  'Position icons ‘on pixel’ so they’re clear and not pixelated, blurred or distorted.',
                 kind: UsageKind.DONT,
                 media: getIllustrationComponent('theme/iconography/dont-01', {
                   viewBox: '0 0 1344 759',
@@ -261,23 +227,29 @@ const Iconography = (layoutProps: LayoutProps) => (
               },
               {
                 description:
-                  'Icons should be used purposefully to reduce cognitive load and provide greater context.',
+                  'Use icons to reduce cognitive load and provide context.',
                 kind: UsageKind.DO,
                 media: getIllustrationComponent('theme/iconography/do-02', {
                   viewBox: '0 0 1344 759',
                 }),
               },
               {
-                description:
-                  'Avoid using Icons as the sole way of communicating if there is the space to accompany with a label or supporting text.',
+                description: (
+                  <>
+                    Avoid using icons as your only way of communicating, if
+                    there’s space to include a label or supporting text.
+                    Alternatively, use a{' '}
+                    <Link href="/components/tooltip">tooltip</Link> to provide
+                    additional context on hover.
+                  </>
+                ),
                 kind: UsageKind.DONT,
                 media: getIllustrationComponent('theme/iconography/dont-02', {
                   viewBox: '0 0 1344 759',
                 }),
               },
               {
-                description:
-                  'When used next to text, icons should be vertically centre-aligned.',
+                description: 'Vertically centre-align icons when next to text.',
                 kind: UsageKind.DO,
                 media: getIllustrationComponent('theme/iconography/do-03', {
                   viewBox: '0 0 1344 759',
@@ -285,7 +257,7 @@ const Iconography = (layoutProps: LayoutProps) => (
               },
               {
                 description:
-                  'Avoid using icon sizes that are noticeably larger or smaller than the text they are paired with, as this can lead to the interface feeling unbalanced.',
+                  'Don’t use icons that are noticeably larger or smaller than the text they’re paired with, or the interface may feel unbalanced.',
                 kind: UsageKind.DONT,
                 media: getIllustrationComponent('theme/iconography/dont-03', {
                   viewBox: '0 0 1344 759',
@@ -294,13 +266,13 @@ const Iconography = (layoutProps: LayoutProps) => (
               {
                 description: (
                   <>
-                    Icons should have a 3:1 minimum colour contrast ratio for
-                    sufficient contrast between icon color and its background.
-                    <br />
-                    <br />
+                    Use a 3:1 minimum colour contrast ratio between icon and
+                    background colours. Learn more about W3 web accessibility
+                    colour standards at{' '}
                     <Link target="_blank" href="https://www.w3.org/TR/WCAG21/">
-                      View W3 web accessibility colour standards
+                      WCAG
                     </Link>
+                    .
                   </>
                 ),
                 kind: UsageKind.DO,
@@ -310,7 +282,7 @@ const Iconography = (layoutProps: LayoutProps) => (
               },
               {
                 description:
-                  'Try to give icons a name that adequately describes what it represents.',
+                  'Use names that describe what the icon represents. Keep them simple and logical.',
                 kind: UsageKind.DO,
                 media: getIllustrationComponent('theme/iconography/do-05', {
                   viewBox: '0 0 1344 759',

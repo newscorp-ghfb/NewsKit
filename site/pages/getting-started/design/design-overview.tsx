@@ -30,7 +30,7 @@ const PRINCIPLE_CARDS = [
         path="guides/design-overview/design-made-easy"
       />
     ),
-    title: 'Ease of use',
+    title: 'Easy',
     description:
       'NewsKit makes it simple to design beautiful, responsive, accessible experiences that align to the components in code - so you can concentrate on your users.',
     stylePrefix: 'featureCard',
@@ -43,7 +43,7 @@ const PRINCIPLE_CARDS = [
         path="guides/design-overview/complete-flexibility"
       />
     ),
-    title: 'Complete flexibility',
+    title: 'Flexible',
     description: (
       <>
         NewsKit is fully customisable, with a powerful{' '}

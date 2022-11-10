@@ -302,6 +302,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/select',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/NK-Web-Components?node-id=4603%3A124656',
+      storybookId: 'components-select--story-select-size',
     }}
     anatomy={{
       introduction:

@@ -28,6 +28,7 @@ const ThemelessRadioButton = React.forwardRef<
       onChange: onChangeProp,
       /* istanbul ignore next */
       checked: checkedProp = false,
+      eventOriginator = 'radio-button',
       ...props
     },
     inputRef,
@@ -58,6 +59,7 @@ const ThemelessRadioButton = React.forwardRef<
         name={name}
         onChange={onChange}
         checked={checked}
+        eventOriginator={eventOriginator}
         {...props}
         defaultSwitchSelectorComponent={DefaultIcon}
       />

@@ -43,7 +43,7 @@ const Sizing = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Sizing',
       description:
-        'Standardised sizing provides increased visual consistency in an interface.',
+        'Standardised sizing increases visual consistency in an interface.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -52,7 +52,7 @@ const Sizing = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/hero-sizing-illustration',
       },
-      introduction: `Standardised sizing provides increased visual consistency in an interface.`,
+      introduction: `Standardised sizing increases visual consistency in an interface.`,
     }}
   >
     <ComponentPageCell>
@@ -61,17 +61,14 @@ const Sizing = (layoutProps: LayoutProps) => (
           id="overview"
           toc="Overview"
           headline="Overview"
-          description="NewsKit uses a simple, standard sizing scale. The size of every UI element and the space between elements is defined by a 4px rule (or pt/rem)."
+          description="NewsKit uses a simple, standard sizing scale. The size of every UI element, and the space between elements, is defined by a 4px rule (or pt/rem)."
         >
           <Illustration viewBox="0 0 1490 600" path="theme/sizing/overview" />
         </ContentPrimary>
 
         <ContentSecondary
           description={
-            <>
-              All UI elements align to a 4px square baseline grid. This is to
-              provide:
-            </>
+            <>All UI elements align to a 4px square baseline grid to:</>
           }
           showSeparator
           childrenColSpan={ContentColSpan.TEXT}
@@ -92,19 +89,15 @@ const Sizing = (layoutProps: LayoutProps) => (
             }}
           >
             {[
-              'Increased visual consistency',
-              'Increased efficiency: fewer design choices, less code',
-              `
-              Easier communication and reduced back and forth between design and
-              engineering as the intent is clear and results are more
-              predictable.
-            `,
-              'Visual rhythm',
+              'Increase visual consistency',
+              'Increase efficiency (fewer design choices = less code)',
+              `Make communication easier and reduce back and forth between design and engineering as the intent is clear and results are more predictable`,
+              'Create a visual rhythm',
             ]}
           </UnorderedList>
           <InlineMessage icon={infoIcon} aria-label="Distribution">
-            Text that is centered within a component e.g. a button, does not
-            need to sit on the grid as it is evenly distributed.
+            If text is centred within a component (e.g. button) it’s already
+            evenly distributed and doesn’t need to sit on the grid.
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
@@ -114,13 +107,7 @@ const Sizing = (layoutProps: LayoutProps) => (
           id="why-4-px"
           toc="Why 4px?"
           headline="Why 4px?"
-          description={
-            <>
-              A 4px rule provides a good balance of choice to a designer but,
-              crucially, 4 is also divisible and this has some significant
-              benefits:
-            </>
-          }
+          description={<>In addition to the above:</>}
           showSeparator
         >
           <UnorderedList
@@ -139,13 +126,8 @@ const Sizing = (layoutProps: LayoutProps) => (
             }}
           >
             {[
-              `Most popular screen sizes are divisible by 4, so grid columns fit
-              the screen perfectly more often than not.`,
-              `Increasingly, platforms are allowing users to set their preferred
-              ‘density’ to accommodate specific user needs. This may be
-              increasing or decreasing font sizes or white space in and between
-              page elements. A 4px scale allows us to scale consistently and
-              continue to maintain the grid.`,
+              `Most popular screen sizes are divisible by four, so grid columns fit the screen in the majority of use cases.`,
+              `Many platforms allow users to set their preferred ‘density’, increasing or decreasing font size or whitespace in and between page elements. A 4px rule lets you scale consistently while maintaining the grid.`,
             ]}
           </UnorderedList>
           <Illustration path="theme/sizing/why-4-px" />
@@ -159,16 +141,14 @@ const Sizing = (layoutProps: LayoutProps) => (
           headline="Touch target areas"
           description={
             <>
-              To ensure that there is always a sufficient area for users to
-              click or tap on interactive elements, there are a variety of
-              component sizes eg. small, medium, and large buttons, text input,
-              etc.
+              To ensure there’s always a sufficient area for users to click or
+              tap on interactive elements, NewsKit has a variety of component
+              sizes (e.g. small, medium and large buttons and text inputs).
               <br />
               <br />
               On mobile breakpoints and devices, all interactive elements should
-              have a touch target area of more than 44px². This ensures that it
-              will meet the minimum standard for iOS and Android, whilst
-              improving the user experience.
+              have a touch target area no less than 44px². This is the minimum
+              standard for iOS and Android.
             </>
           }
         >
@@ -178,9 +158,8 @@ const Sizing = (layoutProps: LayoutProps) => (
         <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage icon={infoIcon} aria-label="Touch Target Areas">
             In most cases when there are multiple interactive elements in close
-            proximity to one another, it is recommended to make sure touch
-            target areas are separated by enough clear space (16px), to ensure
-            balanced information density and usability.
+            proximity, make sure touch target areas are separated by enough
+            clear space (16px) to balance information density and usability.
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
@@ -190,7 +169,7 @@ const Sizing = (layoutProps: LayoutProps) => (
           id="sizing-tokens"
           toc="Sizing tokens"
           headline="Sizing tokens"
-          description="Sizing tokens are used to specify sizes throughout the system, such as icons, space, and minimum or maximum widths or heights. Sizing tokens are also used to define space tokens. Available sizes are outlined below:"
+          description="Sizing tokens specify sizes throughout NewsKit, such as for icons, space and minimum or maximum widths or heights. Sizing tokens also define space tokens. The available sizes are:"
           showSeparator
         >
           <Table columns={['Size box', 'Token', 'Value']} rows={sizingRows} />
@@ -204,13 +183,15 @@ const Sizing = (layoutProps: LayoutProps) => (
           headline="Code Usage"
           description={
             <>
-              The{' '}
+              You can override and apply sizing to components. See the{' '}
               <Link href="/theme/theming/component-defaults/">
-                Component Defaults
+                component defaults
               </Link>{' '}
-              page details the different ways in which you can override and
-              apply sizing to NewsKit components. For more advanced use cases,
-              these values can be accessed from the theme by calling either:{' '}
+              page for details.
+              <br />
+              <br />
+              For more advanced use cases, you can access these values from the
+              theme by calling{' '}
               <Link href="/components/utils/get-defaults/">
                 getResponsiveSize
               </Link>

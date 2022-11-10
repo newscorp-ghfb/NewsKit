@@ -46,14 +46,14 @@ const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     <HeadNextSeo
       title="Guides overview"
-      description="Use the guides below to help you get the most out of using NewsKit."
+      description="Get the most out of NewsKit with easy-to-follow guides."
       image={{
         url: 'social/guides.png',
         alt: 'Guides overview',
       }}
     />
     <HeaderIndex title="Guides" media={HeaderImage}>
-      Use the guides below to help you get the most out of using NewsKit.
+      Get the most out of NewsKit with easy-to-follow guides.
     </HeaderIndex>
     <Grid>
       <ComponentPageCell>

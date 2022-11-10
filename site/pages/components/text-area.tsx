@@ -160,6 +160,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
         'https://github.com/newscorp-ghfb/newskit/blob/main/src/text-area/text-area.tsx',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components',
+      storybookId: 'components-text-area--text-area-sizes',
     }}
     interactiveDemo={{
       introduction:

@@ -131,7 +131,7 @@ const tagCustomThemeObject: CreateThemeArgs = {
   },
 };
 
-export const StoryTag = () => (
+export const StoryTagDefault = () => (
   <>
     <StorybookHeading>Tag</StorybookHeading>
     <StorybookSubHeading>Enabled/Disbaled</StorybookSubHeading>
@@ -203,7 +203,7 @@ export const StoryTag = () => (
     </Container>
   </>
 );
-StoryTag.storyName = 'tag';
+StoryTagDefault.storyName = 'tag';
 
 export const StoryInverseTag = () => (
   <>

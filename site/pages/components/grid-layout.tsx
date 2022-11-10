@@ -117,6 +117,7 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/grid-layout',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=9893%3A158142',
+      storybookId: 'components-grid-layout--story-responsive-example',
     }}
     interactiveDemo={{
       introduction:
