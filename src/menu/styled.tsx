@@ -150,7 +150,7 @@ export const StyledMenuDivider = styled.li<
 export const StyledUl = styled.ul<
   Pick<MenuProps, 'vertical'> & Pick<MenuSubProps, 'expanded' | 'overrides'>
 >`
-  display: ${({expanded}) => (expanded ? 'flex' : 'none')} !important;
+  display: ${({expanded}) => (expanded ? 'flex' : 'none')};
   flex-direction: ${({vertical}) => (vertical ? 'column' : 'row')};
   box-sizing: border-box;
   list-style-type: none;

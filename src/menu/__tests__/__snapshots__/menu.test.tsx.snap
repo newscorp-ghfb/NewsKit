@@ -9055,10 +9055,10 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
 }
 
 .emotion-5 {
-  display: -webkit-box!important;
-  display: -webkit-flex!important;
-  display: -ms-flexbox!important;
-  display: flex!important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -9380,10 +9380,10 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
 }
 
 .emotion-5 {
-  display: -webkit-box!important;
-  display: -webkit-flex!important;
-  display: -ms-flexbox!important;
-  display: flex!important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -9709,10 +9709,10 @@ exports[`MenuSub renders expanded when vertical 1`] = `
 }
 
 .emotion-5 {
-  display: -webkit-box!important;
-  display: -webkit-flex!important;
-  display: -ms-flexbox!important;
-  display: flex!important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -10049,7 +10049,7 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
 }
 
 .emotion-5 {
-  display: none!important;
+  display: none;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -10494,7 +10494,7 @@ exports[`MenuSub renders with default props 1`] = `
 }
 
 .emotion-5 {
-  display: none!important;
+  display: none;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -10735,7 +10735,7 @@ exports[`MenuSub renders with logical props overrides 1`] = `
 }
 
 .emotion-5 {
-  display: none!important;
+  display: none;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -11133,7 +11133,7 @@ exports[`MenuSub renders with overrides 1`] = `
 }
 
 .emotion-5 {
-  display: none!important;
+  display: none;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -11600,7 +11600,7 @@ exports[`MenuSub renders with title 1`] = `
 }
 
 .emotion-6 {
-  display: none!important;
+  display: none;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
