@@ -2,6 +2,7 @@ import React from 'react';
 import {getTokenType} from '../../../utils/get-token-type';
 import {
   ContentPrimary,
+  ContentSecondary,
   ContentSection,
 } from '../../../components/content-structure';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
@@ -10,6 +11,8 @@ import {ComponentPageCell} from '../../../components/layout-cells';
 import {TableRow} from '../../../components/table';
 import {newskitLightTheme} from '../../../../src/theme';
 import {TabsWithTable} from '../../../components/tabs-with-table';
+import {UnorderedList} from '../../../../src/unordered-list';
+import {IconFilledCircle} from '../../../../src/icons';
 
 const themeGradientRows = (tokenTypes: string[]) => {
   const tokens = getTokenType(newskitLightTheme.overlays, '');
@@ -42,17 +45,6 @@ const COLUMN_HEADER = ['Gradient', 'Token', 'Value'];
 
 const gradientsTable = [
   {
-    title: 'Gradients',
-    summary: (
-      <>
-        &apos;Base&apos; gradient tokens are used to fade elements into the
-        interface background. <br />
-        &apos;Inverse&apos; gradient tokens are used to fade elements into a
-        dark background in a light theme.
-        <br />
-      </>
-    ),
-
     tabs: [
       {
         header: 'Base',
@@ -94,7 +86,7 @@ const Gradients = (layoutProps: LayoutProps) => (
         illustration: 'theme/gradients/hero',
       },
       introduction:
-        'Gradients are used to create the illusion of content fading into an interface or image.',
+        'Gradients, also known as colour transitions, are often used to provide realism, increase colour contrast, or to create the illusion of content fading into an interface or image.',
     }}
   >
     <ComponentPageCell>
@@ -103,12 +95,56 @@ const Gradients = (layoutProps: LayoutProps) => (
           id="Overview"
           toc="Overview"
           headline="Overview"
-          description={`Gradient foundations consist of both ‘base’ styles
-(these are dark when used in a light theme and inverse)
-styles (these are light when used in a dark theme)`}
-          showSeparator
+          description={
+            <>Gradient foundations consist of ‘base’ and ‘inverse’ styles.</>
+          }
         />
+
+        <ContentSecondary headline="Base">
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={{
+              spaceStack: 'space040',
+              content: {
+                typographyPreset: {
+                  xs: 'editorialParagraph020',
+                  md: 'editorialParagraph030',
+                },
+              },
+            }}
+          >
+            <>Dark when used in a light theme</>
+            <>
+              &apos;Base&apos; gradient tokens fade elements into the interface
+              background
+            </>
+          </UnorderedList>
+        </ContentSecondary>
+
+        <ContentSecondary headline="Inverse">
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={{
+              spaceStack: 'space040',
+              content: {
+                typographyPreset: {
+                  xs: 'editorialParagraph020',
+                  md: 'editorialParagraph030',
+                },
+              },
+            }}
+          >
+            <>Light when used in a dark theme </>
+            <>
+              &apos;Inverse&apos; gradient tokens fade elements into a dark
+              background in a light theme
+            </>
+          </UnorderedList>
+        </ContentSecondary>
       </ContentSection>
+
       <TabsWithTable components={gradientsTable} showSeparator />
       <ContentSection sectionName="a11y">
         <ContentPrimary
