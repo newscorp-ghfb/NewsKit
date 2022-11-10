@@ -117,7 +117,7 @@ const Page: React.FC<{
             'Attribute',
             'Value',
             'Description',
-            'User Supplied',
+            'User supplied',
           ]}
           rows={[
             {

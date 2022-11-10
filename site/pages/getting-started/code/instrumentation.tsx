@@ -60,8 +60,7 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
       title: 'Instrumentation setup',
-      description:
-        'This page describes how to setup instrumentation on NewsKit components',
+      description: 'Set up instrumentation on NewsKit components.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -70,7 +69,7 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'guides/instrumentation-setup-hero',
       },
-      introduction: `This page describes how to setup instrumentation on NewsKit components`,
+      introduction: `Set up instrumentation on NewsKit components.`,
     }}
     featureCard={{
       title: 'Need help?',
@@ -84,40 +83,60 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
           id="overview"
           toc="Overview"
           headline="Overview"
+          showSeparator
+          childrenColSpan={ContentColSpan.TEXT}
           description={
             <>
               NewsKit components are built to emit events &quot;out of the
               box&quot; via the provided NewsKit event instrumentation system.
-              This system requires a small amount of setup in your project to
-              allow the emitted events to reach your desired tag manager. Events
-              fired via the provided instrumentation system can be forwarded to
-              as many &quot;handlers&quot; as desired. NewsKit provides two
-              handlers; a console handler that outputs the fired events to the
-              browser console, and a Tealium handler that forwards the event
-              onto the Tealium tag manager (Tealium must be present on the page
-              for this handler to work). You can also create your own handlers,
-              for example, if you require forwarding events to a different tag
-              manager.
+              This requires a small amount of setup in your project so emitted
+              events can reach your desired tag manager.
               <br />
               <br />
-              As well as the above handlers, NewsKit also provides a middleware
-              composition system to allow for operations on events before they
-              reach a handler. For example, if you wanted to filter events to
-              forward only a specific set to a tag manager, perform some event
-              data transformations, or batch the events reaching a handler.
+              Events fired via the provided instrumentation system can be
+              forwarded to as many handlers as desired. NewsKit provides two
+              handlers:
+              <br />
+              <UnorderedList
+                markerAlign="start"
+                overrides={{
+                  spaceStack: 'space050',
+                  marginBlockStart: 'space050',
+                  marker: {
+                    spaceInline: 'space020',
+                  },
+                  content: contentOverrides,
+                }}
+              >
+                <>
+                  A console handler that outputs the fired events to the browser
+                  console
+                </>
+                <>
+                  A Tealium handler that forwards the event onto the Tealium tag
+                  manager (Tealium must be present on the page for this handler
+                  to work)
+                </>
+              </UnorderedList>
+              The handlers are exported under{' '}
+              <InlineCode>instrumentationHandlers</InlineCode>. You can also
+              create your own handlers (e.g. if you need to forward events to a
+              different tag manager).
+              <InlineMessage
+                role="region"
+                aria-label="Github"
+                overrides={{marginBlockStart: 'space070'}}
+              >
+                For more information, users with the relevant access can read
+                the internal RFC which lead to this implementation. This can be
+                found on{' '}
+                <Link href="https://github.com/newsuk/nuk-rfcs" target="_blank">
+                  Github.
+                </Link>
+              </InlineMessage>
             </>
           }
-          showSeparator
-          childrenColSpan={ContentColSpan.TEXT}
-        >
-          <InlineMessage role="region" aria-label="Github">
-            For more information, users with the relevant access can read the
-            internal RFC which lead to this implementation. This can be found on{' '}
-            <Link href="https://github.com/newsuk/nuk-rfcs" target="_blank">
-              Github.
-            </Link>
-          </InlineMessage>
-        </ContentPrimary>
+        />
       </ContentSection>
 
       <ContentSection sectionName="setup">
@@ -127,11 +146,13 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
           headline="Setup"
           description={
             <>
-              The event instrumentation system is part of NewsKit, so the same
-              regular install you have for other components is sufficient. The
-              first step is to create the event instrumentation by calling the
-              function; <InlineCode>createEventInstrumentation</InlineCode>.
-              This function takes two arguments;
+              The event instrumentation system is part of NewsKit, so the
+              install you have for other components works here, too.
+              <br />
+              <br />
+              Create the event instrumentation by calling the function{' '}
+              <InlineCode>createEventInstrumentation</InlineCode>. This takes
+              two arguments:
             </>
           }
           childrenColSpan={ContentColSpan.TEXT}
@@ -154,17 +175,17 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
               ), but you can also pass your own custom handlers.
             </>
             <>
-              an event context object; this is an optional, but recommended,
+              An event context object; this is an optional, but recommended,
               object of contextual data relevant to the page the events are
-              being fired from. It might contain for example the page URL and a
-              user identifier.
+              being fired from. It might contain, for example, the page URL and
+              a user identifier.
             </>
           </UnorderedList>
           <P overrides={contentOverrides}>
             This function will return an object containing the context passed to
             it and the <InlineCode>fireEvent</InlineCode> function. This is the
-            function that is used internally by the NewsKit components to fire
-            events to your handlers.
+            function used internally by NewsKit components to fire events to
+            your handlers.
           </P>
         </ContentPrimary>
 
@@ -179,18 +200,21 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
               to set the components theme, NewsKit provides a React context
               component called <InlineCode>InstrumentationProvider</InlineCode>{' '}
               to wrap the React DOM of your project and provide the required
-              event instrumentation down to NewsKit components. The props
-              required for this component match the object output from the{' '}
-              <InlineCode>createEventInstrumentation</InlineCode> function and
-              as a result, the object can simply be destructured into the props
+              event instrumentation down to NewsKit components.
+              <br />
+              <br />
+              The props required for this component match the object output from
+              the <InlineCode>createEventInstrumentation</InlineCode> function.
+              As a result, the object can simply be destructured into the props
               of the provider.
             </>
           }
         >
           <InlineMessage overrides={{marginBlockEnd: 'space080'}}>
             Keep in mind that <InlineCode>NewsKitProvider</InlineCode> already
-            contains <InlineCode>InstrumentationProvider</InlineCode> so use it
-            only when want to create a new context for part of your application.
+            contains <InlineCode>InstrumentationProvider</InlineCode> so only
+            use it when you want to create a new context for part of your
+            application.
           </InlineMessage>
           <Code>
             {`import {
@@ -219,7 +243,7 @@ const MyPage = (
 );`}
           </Code>
         </ContentSecondary>
-        <ContentSecondary description="In this example, the Link component, and any other NewsKit instrumentation enabled components would emit events to the browser's console. This could look something like this:">
+        <ContentSecondary description="In this example, the link component, and any other NewsKit instrumentation enabled components, emit events to the browser's console. This could look something like this:">
           <Code>
             {`{
   "originator": "link",
@@ -232,7 +256,7 @@ const MyPage = (
         </ContentSecondary>
 
         <ContentSecondary
-          description="InstrumentationProvider components can be nested if you wish to extend the context object to add extra data. See the relevant section below for more information and examples."
+          description="InstrumentationProvider components can be nested if you wish to extend the context object to add extra data. See below for more information and examples."
           childrenColSpan={ContentColSpan.TEXT}
         />
 
@@ -240,20 +264,22 @@ const MyPage = (
           headline="Middleware"
           description={
             <>
-              NewsKit also contains a middleware composition system to allow for
+              NewsKit contains a middleware composition system to allow for
               operations on events before they reach a handler. For example, if
-              you wanted to filter events to forward only a specific set to a
-              tag manager, perform some event data transformations, or batch the
-              events reaching a handler. Instrumentation middleware functions
-              have the same signature as handlers; they take in an array of
-              events and must return an array of events. The returned array can
-              be a different length or even empty if necessary, though it is
-              recommended that middleware functions are pure and do not mutate
-              the array or events.
+              you want to filter events to forward only a specific set to a tag
+              manager, perform some event data transformations or batch the
+              events reaching a handler.
               <br />
               <br />
-              In the example below, filter middleware is used to pass only
-              specific events to specific handlers.
+              Instrumentation middleware functions have the same signature as
+              handlers. They take in an array of events and must return an array
+              of events. The returned array can be a different length - or even
+              empty, if necessary - though it&apos;s recommended that middleware
+              functions are pure and do not mutate the array or events.
+              <br />
+              <br />
+              The example below uses filter middleware to pass only specific
+              events to specific handlers:
             </>
           }
         >
@@ -295,7 +321,7 @@ const instrumentation = createEventInstrumentation(handlers, {
 
         <ContentSecondary
           headline="Custom Event Firing"
-          description="You should not need to add any instrumentation event firing to NewsKit components as this is already provided, but there may be a case where you have pre-existing custom components and wish to utilise the single NewsKit event instrumentation. This can be done easily in two ways;"
+          description="You shouldn't need to add instrumentation event firing to NewsKit components, as this is already provided. But there may be a case where you have pre-existing custom components and wish to use the single NewsKit event instrumentation. You can do this in two ways:"
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
@@ -309,25 +335,30 @@ const instrumentation = createEventInstrumentation(handlers, {
             }}
           >
             <>
-              using the NewsKit HOC <InlineCode>withInstrumentation</InlineCode>
-              . This will wrap the component argument in the instrumentation
-              context and a <InlineCode>fireEvent</InlineCode> prop will be
-              passed to the component.
+              Use the NewsKit HOC <InlineCode>withInstrumentation</InlineCode>.
+              This wraps the component argument in the instrumentation context
+              and passes a <InlineCode>fireEvent</InlineCode> prop to the
+              component.
             </>
             <>
-              using the NewsKit React hook{' '}
-              <InlineCode>useInstrumentation</InlineCode>. This will return an
+              Use the NewsKit React hook{' '}
+              <InlineCode>useInstrumentation</InlineCode>. This returns an
               object containing the <InlineCode>fireEvent</InlineCode> function.
             </>
           </UnorderedList>
           <P overrides={contentOverrides}>
-            You can then call this function with your custom instrumentation
-            event as necessary, so long as it meets event requirements. Event
-            objects must contain an event <InlineCode>originator</InlineCode>{' '}
-            (the name of the component firing the event) and an event
+            You can call this function with your custom instrumentation event as
+            necessary, so long as it meets event requirements.
+            <br />
+            <br />
+            Event objects must contain an event{' '}
+            <InlineCode>originator</InlineCode> (the name of the component
+            firing the event) and an event
             <InlineCode>trigger</InlineCode> from the{' '}
             <InlineCode>EventTrigger</InlineCode> enum listed below (this can be
             used as a JS object or the direct string values in non-TS projects).
+            <br />
+            <br />
             Events can also contain a <InlineCode>context</InlineCode> object,
             which can be any JSON-serializable structure.
           </P>
@@ -369,15 +400,16 @@ export const MySpecialCustomButton: React.FC<
               It is possible to build up and extend the context of an event by
               nesting instances of the{' '}
               <InlineCode>InstrumentationProvider</InlineCode>. Each provider
-              can take a context object which will be shallow merged onto the
+              can take a context object which will be shallow-merged onto the
               parent when an event is fired.
               <br />
               <br />
               This can be useful to build up event information that is specific
-              to a particular component instance, without that component needing
-              to know anything outside its own scope. For example, a button can
-              fire a click event, but the layers of context can provide the
-              information on what the button is for and where it is on the page.
+              to a particular component instance - without that component
+              needing to know anything outside its own scope. For example, a
+              button can fire a click event, but the layers of context can
+              provide the information on what the button is for and where it is
+              on the page.
             </>
           }
         >
@@ -450,11 +482,13 @@ const App = () => (
               In this example, we have a root{' '}
               <InlineCode>NewsKitProvider</InlineCode> providing the page URL.
               Inside the <InlineCode>Rail</InlineCode> component, we have{' '}
-              <InlineCode>InstrumentationProvider</InlineCode>; this provides
+              <InlineCode>InstrumentationProvider</InlineCode> - this provides
               any child events with rail specifics, like the rail name. The{' '}
-              <InlineCode>RailItem</InlineCode> then contains a button that
-              fires a click event. The resulting click event would look like
-              this:
+              <InlineCode>RailItem</InlineCode> contains a button that fires a
+              click event.
+              <br />
+              <br />
+              This is the resulting click event:
             </>
           }
         >
@@ -476,12 +510,13 @@ const App = () => (
               It is important to remember that in the example above, the{' '}
               <InlineCode>fireEvent</InlineCode> function is scoped to the
               context of the parent provider (the one which wraps the{' '}
-              <InlineCode>RailItem</InlineCode>). This means if we wanted to add
-              more context to the event inside the{' '}
-              <InlineCode>RailItem</InlineCode>, in the example above, doing the
-              following would NOT work as expected. The{' '}
-              <InlineCode>railItemId</InlineCode> we are adding to the context
-              would NOT appear on the event context.
+              <InlineCode>RailItem</InlineCode>).
+              <br />
+              <br />
+              This means if we wanted to add more context to the event inside
+              the <InlineCode>RailItem</InlineCode>, doing the following would
+              NOT work as expected. The <InlineCode>railItemId</InlineCode> we
+              are adding to the context would NOT appear in the event context.
             </>
           }
         >
@@ -538,11 +573,14 @@ return (
         <ContentSecondary
           description={
             <>
-              Instead, we can add context to the event directly (or we must put
+              Instead, you can add context to the event directly (or we must put
               the button into a separate component and get the{' '}
               <InlineCode>fireEvent</InlineCode>
-              function at that scope level). Passing context information via the
-              fireEvent function is the simpler of the two options:
+              function at that scope level).
+              <br />
+              <br />
+              Passing context information via the{' '}
+              <InlineCode>fireEvent</InlineCode> function is the simpler option:
             </>
           }
           showSeparator
