@@ -1,7 +1,7 @@
 import React from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {BreadcrumbsContextProvider} from './context';
-import {StyledOrderdList} from './styled';
+import {StyledList, StyledOrderdList} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {BreadcrumbsProps} from './types';
@@ -54,22 +54,38 @@ const ThemelessBreadcrumbs = React.forwardRef<
       DefaultIcon,
       {},
     );
+    // const isLastItem = (currentIndex: number, length: number) =>
+    //   currentIndex === length - 1;
+    // map over children
+    // remove the last icon
+    // const test = children?.slice(-1)[0];
+
+    // const MyTest = (lastItem: boolean, achildren: React.ReactNode) => (
+    //   <StyledList>
+    //     {achildren}
+    //     {!lastItem && (
+    //       <BreadcrumbsIcon {...(BreadcrumbsIconProps as BreadcrumbsProps)} />
+    //     )}
+    //   </StyledList>
+    // );
 
     return (
       <BreadcrumbsContextProvider
         value={{size, overrides, showTrailingSeparator}}
       >
         <StyledOrderdList ref={ref} {...rest}>
-          {React.Children.map(children, child => (
-            <>
-              <li>
-                {child}{' '}
-                <BreadcrumbsIcon
-                  {...(BreadcrumbsIconProps as BreadcrumbsProps)}
-                />
-              </li>
-            </>
-          ))}
+          {showTrailingSeparator &&
+            React.Children.map(children, child => (
+              <>
+                <StyledList>
+                  {child}
+                  <BreadcrumbsIcon
+                    {...(BreadcrumbsIconProps as BreadcrumbsProps)}
+                  />
+                </StyledList>
+              </>
+            ))}
+          {!showTrailingSeparator && 'hello'}
         </StyledOrderdList>
       </BreadcrumbsContextProvider>
     );
