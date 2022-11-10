@@ -199,7 +199,7 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="unorderedlist"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v0.2.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/unordered-list',
