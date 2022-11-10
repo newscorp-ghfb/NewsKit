@@ -150,7 +150,7 @@ export const CharacterCountExceedMaxLength = () => {
   }
   return (
     <StorybookPage>
-      <StorybookCase title="MaxLength Over Limit">
+      <StorybookCase title="Text area">
         <Label htmlFor="textArea-overlimit">Label</Label>
         <TextArea
           placeholder="Placeholder"
@@ -166,7 +166,8 @@ export const CharacterCountExceedMaxLength = () => {
     </StorybookPage>
   );
 };
-CharacterCountExceedMaxLength.storyName = 'MaxLength Over Limit';
+
+CharacterCountExceedMaxLength.storyName = 'MaxLength over limit';
 
 export const CharacterCountMinLength = () => {
   const textArea = useRef<HTMLTextAreaElement>(null);
@@ -225,7 +226,6 @@ export const CharacterCountMinAndMaxLength = () => {
         />
         <CharacterCount inputRef={textField} />
       </StorybookCase>
-      <StorybookCase title="default" />
     </StorybookPage>
   );
 };
