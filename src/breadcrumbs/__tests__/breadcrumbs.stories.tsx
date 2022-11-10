@@ -4,13 +4,18 @@ import {BreadcrumbItem} from '../breadcrumb-item';
 import {StorybookPage} from '../../test/storybook-comps';
 import {IconFilledAccountBalance} from '../../icons';
 
+// eslint-disable-next-line no-script-url
+const href = 'javascript:;';
+
 export const StoryDefault = () => (
   <StorybookPage>
-    <Breadcrumbs>
-      <BreadcrumbItem href="www.google.com">hello</BreadcrumbItem>
-      <BreadcrumbItem href="www.google.com">bye</BreadcrumbItem>
-      <BreadcrumbItem href="www.google.com">hello</BreadcrumbItem>
-      <BreadcrumbItem href="www.google.com">bye</BreadcrumbItem>
+    <Breadcrumbs size="small">
+      <BreadcrumbItem selected href={href}>
+        hello
+      </BreadcrumbItem>
+      <BreadcrumbItem href={href}>bye</BreadcrumbItem>
+      <BreadcrumbItem href={href}>hello</BreadcrumbItem>
+      <BreadcrumbItem href={href}>bye</BreadcrumbItem>
     </Breadcrumbs>
     <Breadcrumbs
       size="small"
@@ -26,10 +31,10 @@ export const StoryDefault = () => (
         ),
       }}
     >
-      <BreadcrumbItem href="www.google.com">hello</BreadcrumbItem>
-      <BreadcrumbItem href="www.google.com">bye</BreadcrumbItem>
-      <BreadcrumbItem href="www.google.com">hello</BreadcrumbItem>
-      <BreadcrumbItem href="www.google.com">bye</BreadcrumbItem>
+      <BreadcrumbItem href={href}>hello</BreadcrumbItem>
+      <BreadcrumbItem href={href}>bye</BreadcrumbItem>
+      <BreadcrumbItem href={href}>hello</BreadcrumbItem>
+      <BreadcrumbItem href={href}>bye</BreadcrumbItem>
     </Breadcrumbs>
   </StorybookPage>
 );
