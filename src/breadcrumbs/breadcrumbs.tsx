@@ -32,17 +32,22 @@ const ThemelessBreadcrumbs = React.forwardRef<
       `${size}`,
       'stylePreset',
     );
+    const iconSpaceToken = getToken(
+      {theme, overrides},
+      `breadcrumbSeparator.${size}`,
+      `${size}`,
+      'paddingInline',
+    );
     const DefaultIcon = () => (
       <IconFilledChevronRight
         overrides={{
           size: iconToken,
           stylePreset: iconStylePresetToken,
+          paddingInline: iconSpaceToken,
           ...overrides,
         }}
       />
     );
-
-    console.log(iconStylePresetToken, 'hello');
 
     const [BreadcrumbsIcon, BreadcrumbsIconProps] = getComponentOverrides(
       overrides?.separator,

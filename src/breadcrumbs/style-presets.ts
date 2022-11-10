@@ -8,12 +8,10 @@ export default {
     },
     hover: {
       color: '{{colors.interactiveLink020}}',
-      iconColor: '{{colors.inkSubtle}}',
       backgroundColor: '{{colors.transparent}}',
     },
     selected: {
       color: '{{colors.inkBase}',
-      iconColor: '{{colors.inkBrand010}}',
       backgroundColor: '{{colors.transparent}}',
     },
     active: {
@@ -22,6 +20,6 @@ export default {
     },
   },
   breadcrumbSeparator: {
-    base: {iconColor: '{{colors.inkSubtle}}'},
+    base: {color: '{{colors.inkSubtle}}'},
   },
 } as Record<string, StylePreset>;
