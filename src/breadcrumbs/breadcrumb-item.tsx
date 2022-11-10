@@ -1,6 +1,6 @@
 import React from 'react';
 import {useBreadCrumbsContext} from './context';
-import {StyledButton} from './styled';
+import {StyledButton, StyledList} from './styled';
 import {BreadcrumbItemProps} from './types';
 
 export const BreadcrumbItem = React.forwardRef<
@@ -26,17 +26,19 @@ export const BreadcrumbItem = React.forwardRef<
       size,
     };
     return (
-      <StyledButton
-        {...buttonProps}
-        href={href}
-        eventContext={eventContext}
-        eventOriginator={eventOriginator}
-        overrides={overrides}
-        aria-current={selected}
-        ref={ref}
-      >
-        {children}
-      </StyledButton>
+      <StyledList>
+        <StyledButton
+          {...buttonProps}
+          href={href}
+          eventContext={eventContext}
+          eventOriginator={eventOriginator}
+          overrides={overrides}
+          aria-current={selected}
+          ref={ref}
+        >
+          {children}
+        </StyledButton>
+      </StyledList>
     );
   },
 );
