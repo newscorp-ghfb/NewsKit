@@ -43,6 +43,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
       introduced: 'v0.20.1',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
+      storybookId: 'deprecated-share-bar--story-horizontal',
     }}
     interactiveDemo={{
       introduction:

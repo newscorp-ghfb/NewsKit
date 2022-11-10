@@ -61,14 +61,14 @@ const myCustomTheme = compileTheme(
   }),
 );
 
-export const StoryDefault = () => (
+export const StoryDividerDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase>
       <Divider />
     </StorybookCase>
   </StorybookPage>
 );
-StoryDefault.storyName = 'Default';
+StoryDividerDefault.storyName = 'Default';
 
 export const StoryHorizontal = () => (
   <StorybookPage columns={dividerCols}>

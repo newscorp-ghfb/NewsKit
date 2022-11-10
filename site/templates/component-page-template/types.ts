@@ -18,9 +18,10 @@ import {
   OnwardJourneySectionProps,
   CommonSectionProps,
 } from '../template-sections';
+import {MetaProps} from '../../components/meta';
 
 export interface ComponentPageTemplateProps
-  extends Omit<TemplateProps, 'featureCard' | 'children'> {
+  extends Omit<TemplateProps, 'featureCard' | 'children' | 'meta'> {
   layoutProps: LayoutProps;
   componentDefaultsKey: string;
   interactiveDemo?: InteractiveDemoSectionProps;
@@ -40,4 +41,5 @@ export interface ComponentPageTemplateProps
   featureCard?: Partial<OnwardJourneySectionProps>;
   children?: React.ReactNode;
   commonSection?: CommonSectionProps;
+  meta: MetaProps;
 }
