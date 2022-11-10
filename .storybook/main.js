@@ -69,4 +69,7 @@ module.exports = {
     reactDocgen: false, // added to negate https://github.com/styleguidist/react-docgen-typescript/issues/356
   },
   staticDirs: ['../fonts', '../static', 'private-fonts'],
+  // we need the stories.json file to be generated so that we can check that all
+  // Storybook urls in the doc site build are valid
+  features: {buildStoriesJson: true,}
 };

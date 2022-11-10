@@ -31,6 +31,11 @@ const defaultFeatureCard: OnwardJourneySectionProps = {
   href: '/about/contact-us/',
 };
 
+const deriveStorybookId = (componentName: string): string => {
+  const kebab = componentName.replaceAll(' ', '-').toLowerCase();
+  return `components-${kebab}--story-${kebab}-default`;
+};
+
 export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   layoutProps,
   interactiveDemo,
@@ -50,6 +55,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   featureCard,
   headTags,
   commonSection,
+  meta: {storybookId, ...restMeta},
   ...rest
 }: ComponentPageTemplateProps) => (
   <Layout {...layoutProps} newPage>
@@ -67,6 +73,10 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
           ...featureCard,
         } as OnwardJourneySectionProps
       }
+      meta={{
+        ...restMeta,
+        storybookId: storybookId || deriveStorybookId(headTags.title),
+      }}
     >
       {interactiveDemo && <InteractiveDemoSection {...interactiveDemo} />}
       {anatomy && <AnatomySection {...anatomy} />}

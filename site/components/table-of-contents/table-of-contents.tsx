@@ -63,6 +63,7 @@ export const TableOfContents: React.FC = () => {
     return undefined;
   }, [contentsInfo, activeItem]); // eslint-disable-line react-hooks/exhaustive-deps
 
+
   const handleTOCClick = (
     event: React.MouseEvent<HTMLElement>,
     itemKey: number,
@@ -72,6 +73,7 @@ export const TableOfContents: React.FC = () => {
       contentsInfo[itemKey].element.scrollIntoView({behavior: 'smooth'});
     }
   };
+
 
   const ContentsNavItem: React.FC<ContentsNavItemProps> = ({
     children,

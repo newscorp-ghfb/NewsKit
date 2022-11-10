@@ -168,6 +168,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.2.0',
       introducedLink: false,
+      storybookId: 'components-button--story-button-size',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/develop/src/button',
       figmaUrl:

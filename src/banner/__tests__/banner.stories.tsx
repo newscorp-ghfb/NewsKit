@@ -99,14 +99,14 @@ const StoryBanner: React.FC<BannerProps> = ({children, ...restProps}) => {
   );
 };
 
-export const StoryDefault = () => (
+export const StoryBannerDefault = () => (
   <StorybookPage columns={BANNER_GRID_COLS}>
     <StorybookCase>
       <StoryBanner aria-label="Banner default">{DEFAULT_CHILD}</StoryBanner>
     </StorybookCase>
   </StorybookPage>
 );
-StoryDefault.storyName = 'Default';
+StoryBannerDefault.storyName = 'Default';
 
 export const StoryIntents = () => (
   <StorybookPage columns={BANNER_GRID_COLS}>
