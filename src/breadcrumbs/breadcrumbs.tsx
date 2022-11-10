@@ -4,7 +4,7 @@ import {BreadcrumbsContextProvider} from './context';
 import {StyledList, StyledOrderdList} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
-import {BreadcrumbsProps} from './types';
+import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
 import {IconFilledChevronRight} from '../icons';
 import {getComponentOverrides} from '../utils/overrides';
 import {getToken} from '../utils/get-token';
@@ -15,7 +15,13 @@ const ThemelessBreadcrumbs = React.forwardRef<
   BreadcrumbsProps
 >(
   (
-    {children, showTrailingSeparator, overrides, size = 'medium', ...rest},
+    {
+      children,
+      showTrailingSeparator = false,
+      overrides,
+      size = 'medium',
+      ...rest
+    },
     ref,
   ) => {
     const theme = useTheme();
@@ -54,26 +60,31 @@ const ThemelessBreadcrumbs = React.forwardRef<
       DefaultIcon,
       {},
     );
-    // const isLastItem = (currentIndex: number, length: number) =>
-    //   currentIndex === length - 1;
-    // map over children
-    // remove the last icon
-    // const test = children?.slice(-1)[0];
-
-    // const MyTest = (lastItem: boolean, achildren: React.ReactNode) => (
-    //   <StyledList>
-    //     {achildren}
-    //     {!lastItem && (
-    //       <BreadcrumbsIcon {...(BreadcrumbsIconProps as BreadcrumbsProps)} />
-    //     )}
-    //   </StyledList>
-    // );
-
+    const breadcrumbChildren = React.Children.toArray(
+      children,
+    ) as React.ReactElement<BreadcrumbItemProps>[];
     return (
       <BreadcrumbsContextProvider
         value={{size, overrides, showTrailingSeparator}}
       >
         <StyledOrderdList ref={ref} {...rest}>
+          {!showTrailingSeparator &&
+            breadcrumbChildren.reduce(
+              (acc: React.ReactElement[], listItem, index, array) => {
+                acc.push(listItem);
+                if (children && index < array.length - 1) {
+                  acc.push(
+                    <BreadcrumbsIcon
+                      {...(BreadcrumbsIconProps as BreadcrumbsProps)}
+                    />,
+                  );
+                }
+
+                return acc;
+              },
+              [],
+            )}
+
           {showTrailingSeparator &&
             React.Children.map(children, child => (
               <>
@@ -85,7 +96,6 @@ const ThemelessBreadcrumbs = React.forwardRef<
                 </StyledList>
               </>
             ))}
-          {!showTrailingSeparator && 'hello'}
         </StyledOrderdList>
       </BreadcrumbsContextProvider>
     );
