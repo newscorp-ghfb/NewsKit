@@ -5,11 +5,10 @@ import {logicalProps} from '../utils/logical-properties';
 
 export const StyledMenu = styled.nav<MenuProps>`
   box-sizing: border-box;
-
   ${({vertical}) => (vertical ? 'height: 100%;' : 'width: 100%;')}
-
   > ul {
     box-sizing: border-box;
+    position: relative;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -78,7 +77,6 @@ export const StyledMenuItem = styled.li<
   Pick<MenuProps, 'vertical'> & Pick<MenuProps, 'overrides'>
 >`
   box-sizing: border-box;
-
   ${({vertical}) =>
     getResponsiveSpace(
       vertical ? 'marginBottom' : 'marginRight',
@@ -119,6 +117,13 @@ export const StyledButton = styled(Button)<{
     }}
   
   text-align: ${({align}) => align && getTextAlign(align)}
+`;
+
+export const StyledMenuSubButton = styled(StyledButton)<{
+  selected?: boolean;
+}>`
+  ${({selected}) =>
+    selected && getStylePreset('menuSub', '', {isSelected: selected})}
 `;
 
 export const StyledMenuDivider = styled.li<

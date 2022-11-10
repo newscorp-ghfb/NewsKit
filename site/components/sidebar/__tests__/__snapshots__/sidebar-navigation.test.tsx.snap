@@ -39,6 +39,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 .emotion-1>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -782,6 +783,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 .emotion-1>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -993,6 +995,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 
 .emotion-1>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1651,6 +1654,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 
 .emotion-1>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1731,6 +1735,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 
 .emotion-1>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -2388,6 +2393,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 
 .emotion-1>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;

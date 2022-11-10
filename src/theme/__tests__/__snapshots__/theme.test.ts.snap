@@ -2090,6 +2090,22 @@ Object {
       "transitionPreset": "backgroundColorChange",
     },
   },
+  "menuSub": Object {
+    "horizontal": Object {
+      "minHeight": "sizing080",
+      "spaceInline": "space020",
+      "spaceInset": "spaceInsetSquish030",
+      "stylePreset": "menuSubHorizontal",
+      "transitionPreset": "backgroundColorChange",
+    },
+    "vertical": Object {
+      "minHeight": "sizing080",
+      "spaceInline": "space020",
+      "spaceInset": "spaceInsetSquish030",
+      "stylePreset": "menuSubVertical",
+      "transitionPreset": "backgroundColorChange",
+    },
+  },
   "modal": Object {
     "closeButton": Object {
       "spaceInset": "spaceInset020",
@@ -5062,6 +5078,89 @@ Object {
     },
   },
   "menuItemVertical": Object {
+    "active": Object {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}",
+    },
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}",
+      "color": "{{colors.inkSubtle}}",
+      "iconColor": "{{colors.inkSubtle}}",
+    },
+    "disabled": Object {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+    },
+    "hover": Object {
+      "backgroundColor": "{{colors.interactivePrimary010}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}",
+    },
+    "selected": Object {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}",
+    },
+    "selected:hover": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}",
+    },
+  },
+  "menuSubHorizontal": Object {
+    "active": Object {
+      "borderColor": "{{colors.interactivePrimary040}}",
+      "color": "{{colors.inkContrast}}",
+      "iconColor": "{{colors.inkContrast}}",
+    },
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}",
+      "color": "{{colors.inkSubtle}}",
+      "iconColor": "{{colors.inkSubtle}}",
+    },
+    "disabled": Object {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+    },
+    "hover": Object {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
+    },
+    "selected": Object {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkContrast}}",
+      "iconColor": "{{colors.inkContrast}}",
+    },
+    "selected:hover": Object {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkContrast}}",
+      "iconColor": "{{colors.inkContrast}}",
+    },
+  },
+  "menuSubVertical": Object {
     "active": Object {
       "backgroundColor": "{{colors.interactivePrimary020}}",
       "color": "{{colors.inkBrand010}}",

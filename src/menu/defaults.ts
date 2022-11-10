@@ -27,4 +27,20 @@ export default {
       spaceInset: 'spaceInsetSquish030',
     },
   },
+  menuSub: {
+    horizontal: {
+      minHeight: 'sizing080',
+      stylePreset: 'menuSubHorizontal',
+      transitionPreset: 'backgroundColorChange',
+      spaceInline: 'space020',
+      spaceInset: 'spaceInsetSquish030',
+    },
+    vertical: {
+      minHeight: 'sizing080',
+      stylePreset: 'menuSubVertical',
+      transitionPreset: 'backgroundColorChange',
+      spaceInline: 'space020',
+      spaceInset: 'spaceInsetSquish030',
+    },
+  },
 };

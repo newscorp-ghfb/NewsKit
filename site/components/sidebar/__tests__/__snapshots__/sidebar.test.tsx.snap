@@ -102,6 +102,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-5>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -3061,6 +3062,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-3>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -6546,6 +6548,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-5>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -9508,6 +9511,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-3>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;

@@ -1273,6 +1273,28 @@ export const StoryMenuLogicalProps = () => (
       <MenuItem href={href}>Menu item 5</MenuItem>
       <MenuItem href={href}>Menu item 6</MenuItem>
     </Menu>
+    <StorybookHeading>MenuSub with logical props</StorybookHeading>
+    <Menu
+      size="medium"
+      aria-label="overrides-on-menu-sub"
+      overrides={{
+        paddingInline: '30px',
+        marginBlock: '30px',
+      }}
+    >
+      <MenuItem href={href}>Menu item 1</MenuItem>
+      <MenuItem href={href}>Menu item 2</MenuItem>
+      <MenuSub
+        title="Menu item 3"
+        expanded
+        overrides={{
+          paddingInlineStart: '16px',
+        }}
+      >
+        <MenuItem href={href}>Menu item 3.1</MenuItem>
+        <MenuItem href={href}>Menu item 3.2</MenuItem>
+      </MenuSub>
+    </Menu>
   </>
 );
 StoryMenuLogicalProps.storyName = 'menu - logical props';
@@ -1298,7 +1320,7 @@ export const StoryMenuItemsOutlineOverrides = () => (
     <br />
   </>
 );
-StoryMenuItemsOutlineOverrides.storyName = 'menu items outline overrides';
+StoryMenuItemsOutlineOverrides.storyName = 'menu items - outline overrides';
 
 const HorizontalContainer = styled.div`
   min-height: 200px;
@@ -1318,23 +1340,11 @@ export const StorySubMenuHorizontal = () => {
           onClick={() => {
             setGuidesExpanded(!guidesExpanded);
           }}
-          overrides={{
-            paddingInlineStart: '8px',
-            stylePreset: 'menuItemVertical',
-          }}
         >
-          <MenuItem
-            href={href}
-            id="horizontal-getting-started"
-            overrides={{stylePreset: 'menuItemVertical'}}
-          >
+          <MenuItem href={href} id="horizontal-getting-started">
             Getting started
           </MenuItem>
-          <MenuItem
-            href={href}
-            id="horizontal-design-overview"
-            overrides={{stylePreset: 'menuItemVertical'}}
-          >
+          <MenuItem href={href} id="horizontal-design-overview">
             Design Overview
           </MenuItem>
           <MenuSub
@@ -1342,56 +1352,9 @@ export const StorySubMenuHorizontal = () => {
             id="horizontal-code"
             expanded={codeExpanded}
             onClick={() => setDesignExpanded(!codeExpanded)}
-            overrides={{
-              paddingInlineStart: '8px',
-              stylePreset: 'menuItemVertical',
-            }}
           >
-            <MenuItem
-              href={href}
-              id="horizontal-engineering-overview"
-              overrides={{stylePreset: 'menuItemVertical'}}
-            >
+            <MenuItem href={href} id="horizontal-engineering-overview">
               Engineering Overview
-            </MenuItem>
-          </MenuSub>
-        </MenuSub>
-
-        <MenuSub
-          title="Theme"
-          id="horizontal-theme"
-          expanded={false}
-          overrides={{stylePreset: 'menuItemVertical'}}
-        >
-          <MenuItem
-            href={href}
-            id="horizontal-overview"
-            overrides={{stylePreset: 'menuItemVertical'}}
-          >
-            Overview
-          </MenuItem>
-          <MenuSub
-            title="Foundations"
-            id="horizontal-foundations"
-            expanded={false}
-            overrides={{
-              paddingInlineStart: '8px',
-              stylePreset: 'menuItemVertical',
-            }}
-          >
-            <MenuItem
-              href={href}
-              id="horizontal-borders"
-              overrides={{stylePreset: 'menuItemVertical'}}
-            >
-              Borders
-            </MenuItem>
-            <MenuItem
-              href={href}
-              id="horizontal-breakpoints"
-              overrides={{stylePreset: 'menuItemVertical'}}
-            >
-              Breakpoints
             </MenuItem>
           </MenuSub>
         </MenuSub>
@@ -1483,11 +1446,7 @@ type MenuElement = {
 const createMenu = (items: MenuElement[]) =>
   items.map(({title, items: subItems}) => {
     if (subItems) {
-      return (
-        <MenuSub title={title} overrides={{paddingInlineStart: '16px'}}>
-          {createMenu(subItems)}
-        </MenuSub>
-      );
+      return <MenuSub title={title}>{createMenu(subItems)}</MenuSub>;
     }
 
     return <MenuItem href={href}>{title}</MenuItem>;
@@ -1496,11 +1455,7 @@ const createMoreMenu = (items: MenuElement[]) =>
   items.map(({title, items: subItems}) => {
     if (subItems) {
       return (
-        <MenuSub
-          title={title}
-          data-testid="more-sub-menu"
-          overrides={{paddingInlineStart: '16px'}}
-        >
+        <MenuSub title={title} data-testid="more-sub-menu">
           {createMoreMenu(subItems)}
         </MenuSub>
       );
@@ -1510,9 +1465,7 @@ const createMoreMenu = (items: MenuElement[]) =>
   });
 
 const MenuMore = ({children}: {children: React.ReactNode}) => (
-  <MenuSub title="More" overrides={{paddingInlineStart: '16px'}}>
-    {children}
-  </MenuSub>
+  <MenuSub title="More">{children}</MenuSub>
 );
 
 const items: MenuElement[] = [
@@ -1600,7 +1553,6 @@ export const StoryMenuSubOverrides = () => {
           }}
           overrides={{
             ...menuItemOverrides,
-            paddingInlineStart: '16px',
           }}
         >
           <MenuItem href={href}>Menu item 3.1</MenuItem>
@@ -1769,7 +1721,6 @@ const createNestedMenu = (
           expanded={expanded}
           onClick={() => fn(id)}
           title={title}
-          overrides={{paddingInlineStart: '16px'}}
         >
           {createNestedMenu(subNav, fn)}
         </MenuSub>

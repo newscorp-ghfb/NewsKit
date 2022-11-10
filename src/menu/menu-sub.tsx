@@ -1,8 +1,7 @@
 import React from 'react';
 import {useMenuContext} from './context';
 import {MenuSubIconProps, MenuSubProps} from './types';
-import {StyledButton, StyledMenuItem, StyledUl} from './styled';
-
+import {StyledMenuSubButton, StyledMenuItem, StyledUl} from './styled';
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {get} from '../utils/get';
@@ -85,7 +84,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
       >
         {/*
         @ts-ignore */}
-        <StyledButton
+        <StyledMenuSubButton
           {...buttonProps}
           align={align}
           aria-current={selected && 'page'}
@@ -98,7 +97,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
         >
           {title}
           <IndicatorIcon {...(indicatorIconProps as MenuSubIconProps)} />
-        </StyledButton>
+        </StyledMenuSubButton>
         <StyledUl
           expanded={isExpanded}
           vertical={vertical}

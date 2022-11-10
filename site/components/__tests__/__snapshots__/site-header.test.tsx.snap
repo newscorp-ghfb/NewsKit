@@ -976,6 +976,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-141>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -4030,6 +4031,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-141>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -7084,6 +7086,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-141>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
