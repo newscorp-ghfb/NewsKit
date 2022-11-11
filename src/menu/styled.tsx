@@ -119,13 +119,6 @@ export const StyledButton = styled(Button)<{
   text-align: ${({align}) => align && getTextAlign(align)}
 `;
 
-export const StyledMenuSubButton = styled(StyledButton)<{
-  selected?: boolean;
-}>`
-  ${({selected}) =>
-    selected && getStylePreset('menuSub', '', {isSelected: selected})}
-`;
-
 export const StyledMenuDivider = styled.li<
   Pick<MenuProps, 'vertical'> & Pick<MenuProps, 'overrides'>
 >`

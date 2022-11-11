@@ -1336,6 +1336,7 @@ export const StorySubMenuHorizontal = () => {
         <MenuSub
           title="Guides"
           id="horizontal-guides"
+          selected={guidesExpanded}
           expanded={guidesExpanded}
           onClick={() => {
             setGuidesExpanded(!guidesExpanded);
@@ -1351,6 +1352,7 @@ export const StorySubMenuHorizontal = () => {
             title="Code"
             id="horizontal-code"
             expanded={codeExpanded}
+            selected={codeExpanded}
             onClick={() => setDesignExpanded(!codeExpanded)}
           >
             <MenuItem href={href} id="horizontal-engineering-overview">
@@ -1706,6 +1708,7 @@ type MenuNestedElement = {
   title: string;
   subNav?: MenuNestedElement[];
   expanded?: boolean;
+  selected?: boolean;
   parent?: MenuNestedElement;
 };
 
@@ -1713,12 +1716,13 @@ const createNestedMenu = (
   menuItems: MenuNestedElement[],
   fn: (id: string) => void,
 ) =>
-  menuItems.map(({subNav, title, expanded, id}) => {
+  menuItems.map(({subNav, title, expanded, id, selected}) => {
     if (subNav) {
       return (
         <MenuSub
           key={id}
           expanded={expanded}
+          selected={selected}
           onClick={() => fn(id)}
           title={title}
         >
@@ -1732,10 +1736,10 @@ const createNestedMenu = (
       </MenuItem>
     );
   });
-
 const expandMyParent = (menuItem: MenuNestedElement) => {
   if (menuItem) {
     menuItem.expanded = true;
+    menuItem.selected = menuItem.expanded;
     if (menuItem.parent) expandMyParent(menuItem.parent);
   }
 };
@@ -1743,6 +1747,7 @@ const expandMyParent = (menuItem: MenuNestedElement) => {
 const makeExpanded = (expandedId: string, menuItems: MenuNestedElement[]) =>
   menuItems.map(menuItem => {
     menuItem.expanded = expandedId === menuItem.id;
+    menuItem.selected = menuItem.expanded;
     menuItem.subNav = menuItem.subNav
       ? makeExpanded(expandedId, menuItem.subNav)
       : undefined;
