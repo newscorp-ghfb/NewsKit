@@ -76,7 +76,20 @@ const Shadows = (layoutProps: LayoutProps) => (
           id="overview"
           toc="Overview"
           headline="Overview"
-          description="The NewsKit design system offers a series of depths of shadows. They improve the overall aesthetics, add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy. This helps users discover and interact with UI elements. These have been mapped to commonly used components to ensure they work together in harmony."
+          description={
+            <>
+              Choose from a range of shadow depths.
+              <br />
+              <br />
+              Shadows can improve overall aesthetic, add depth and realism to
+              the user’s visual experience and improve the visual hierarchy.
+              This helps users discover and interact with UI elements.
+              <br />
+              <br />
+              Shadow options are mapped to common components to ensure they work
+              together.
+            </>
+          }
         >
           <Table
             columns={['Shadow', 'Token', 'Example usage']}
@@ -87,9 +100,8 @@ const Shadows = (layoutProps: LayoutProps) => (
         <ContentSecondary
           description={
             <>
-              Shadows can be applied to a UI element using the boxShadow
-              attribute on a{' '}
-              <Link href="/theme/presets/style-presets/">Style Preset.</Link>
+              Apply shadows to a UI element using the boxShadow attribute on a{' '}
+              <Link href="/theme/presets/style-presets/">style preset.</Link>
             </>
           }
           showSeparator

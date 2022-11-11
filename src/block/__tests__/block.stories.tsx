@@ -81,14 +81,14 @@ const Text = ({
   </TextBlock>
 );
 
-export const StoryDefault = () => (
+export const StoryBlockDefault = () => (
   <StorybookPage columns={blockGridCols}>
     <Block stylePreset="blockDefault">
       <Text>Default block</Text>
     </Block>
   </StorybookPage>
 );
-StoryDefault.storyName = 'Default';
+StoryBlockDefault.storyName = 'Default';
 
 export const StoryBreakpoint = () => (
   <StorybookPage columns={blockGridCols}>
