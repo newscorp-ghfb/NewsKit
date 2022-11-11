@@ -9,3 +9,5 @@ module.exports = {
     [SKIP_GITHUB_CHECK ? 'include' : 'exclude']: ['skip-percy-tests'],
   },
 };
+
+// random comment
