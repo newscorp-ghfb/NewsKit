@@ -3,8 +3,83 @@
 exports[`Component Page Template renders the Accessibility section when prop accessibility is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -72,8 +147,83 @@ exports[`Component Page Template renders the Accessibility section when prop acc
 exports[`Component Page Template renders the Anatomy section when prop anatomy is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -141,8 +291,83 @@ exports[`Component Page Template renders the Anatomy section when prop anatomy i
 exports[`Component Page Template renders the Behaviors section when prop behaviors is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -210,8 +435,83 @@ exports[`Component Page Template renders the Behaviors section when prop behavio
 exports[`Component Page Template renders the CodeExamplesSection section when prop example is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -274,8 +574,83 @@ exports[`Component Page Template renders the CodeExamplesSection section when pr
 exports[`Component Page Template renders the Compliance section when prop compliance is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -343,8 +718,83 @@ exports[`Component Page Template renders the Compliance section when prop compli
 exports[`Component Page Template renders the Component API section when prop componentAPI is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -412,8 +862,83 @@ exports[`Component Page Template renders the Component API section when prop com
 exports[`Component Page Template renders the Interactive Demo section when prop interactiveDemo is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -481,8 +1006,83 @@ exports[`Component Page Template renders the Interactive Demo section when prop 
 exports[`Component Page Template renders the Options section when prop options is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -550,8 +1150,83 @@ exports[`Component Page Template renders the Options section when prop options i
 exports[`Component Page Template renders the Related section when prop related is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -619,8 +1294,83 @@ exports[`Component Page Template renders the Related section when prop related i
 exports[`Component Page Template renders the SEO section when prop seo is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -688,8 +1438,83 @@ exports[`Component Page Template renders the SEO section when prop seo is passed
 exports[`Component Page Template renders the States section when prop states is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -757,8 +1582,83 @@ exports[`Component Page Template renders the States section when prop states is 
 exports[`Component Page Template renders the Usage section when prop usage is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -826,8 +1726,83 @@ exports[`Component Page Template renders the Usage section when prop usage is pa
 exports[`Component Page Template renders with mandatory props only 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
