@@ -35,6 +35,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       introduced: 'v0.20.1',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
+      storybookId: 'components-tabs--story-tabs-distribution-start',
     }}
     usage={{
       introduction: 'Here’s how and when to use tabs:',

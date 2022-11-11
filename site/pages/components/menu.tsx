@@ -50,6 +50,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v3.3.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/menu',
+      storybookId: 'components-menu--story-menu-items-horizontal',
     }}
     interactiveDemo={{
       introduction:
