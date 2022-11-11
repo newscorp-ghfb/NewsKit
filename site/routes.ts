@@ -610,7 +610,7 @@ export const routes = [
           {
             title: 'Link',
             page: true,
-            id: '/components/link',
+            id: 'site/pages/components/link.tsx',
             description:
               'Links allow users to navigate to a new location or to additional information.',
             illustration: 'components/url-illustration',

@@ -137,7 +137,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               standalone.
               <br />
               <br />
-              The inline link doesn’t have any text cropping applied. It is
+              The inline link doesn&apos;t have any text cropping applied. It is
               recommended to crop the whole paragraph, where the inline link
               appears.
               <br />
