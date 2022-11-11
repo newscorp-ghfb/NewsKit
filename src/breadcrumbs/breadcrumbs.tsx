@@ -9,7 +9,11 @@ import {IconFilledChevronRight} from '../icons';
 import {getComponentOverrides} from '../utils/overrides';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
+import {filterOutFalsyProperties} from '../utils/filter-object';
 
+const DefaultIcon = overrides => (
+  <IconFilledChevronRight overrides={overrides} />
+);
 const ThemelessBreadcrumbs = React.forwardRef<
   HTMLOListElement,
   BreadcrumbsProps
@@ -25,6 +29,11 @@ const ThemelessBreadcrumbs = React.forwardRef<
     ref,
   ) => {
     const theme = useTheme();
+    const separatorOverrides: BreadcrumbsProps = {
+      ...theme.componentDefaults.breadcrumbSeparator,
+      ...filterOutFalsyProperties(overrides?.separator),
+    };
+
     const iconToken = getToken(
       {theme, overrides},
       `breadcrumbSeparator.${size}`,
@@ -44,24 +53,20 @@ const ThemelessBreadcrumbs = React.forwardRef<
       `${size}`,
       'paddingInline',
     );
-    const DefaultIcon = () => (
-      <IconFilledChevronRight
-        overrides={{
-          size: iconToken,
-          stylePreset: iconStylePresetToken,
-          paddingInline: iconSpaceToken,
-          ...overrides,
-        }}
-      />
-    );
 
     const [BreadcrumbsIcon, BreadcrumbsIconProps] = getComponentOverrides(
       overrides?.separator,
       DefaultIcon,
       {
-        overrides: {
-          size: iconToken,
-        },
+        // this is where i set the defaults for the icon
+
+        size: iconToken,
+        paddingInline: iconSpaceToken,
+        stylePreset: iconStylePresetToken,
+        ...separatorOverrides,
+        //   ...overrides,
+
+        // },
       },
     );
     const breadcrumbChildren = React.Children.toArray(

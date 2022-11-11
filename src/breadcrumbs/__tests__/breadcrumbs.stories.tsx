@@ -9,7 +9,24 @@ const href = 'javascript:;';
 
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <Breadcrumbs showTrailingSeparator size="small">
+    <Breadcrumbs>
+      <BreadcrumbItem selected href={href}>
+        Breadcrumb item
+      </BreadcrumbItem>
+      <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+      <BreadcrumbItem href={href}>Breadcrumb item </BreadcrumbItem>
+    </Breadcrumbs>
+    <Breadcrumbs
+      showTrailingSeparator
+      size="small"
+      overrides={{
+        separator: {
+          paddingInline: 'space030',
+          stylePreset: 'inkSubtle',
+          size: 'iconSize040',
+        },
+      }}
+    >
       <BreadcrumbItem selected href={href}>
         Breadcrumb item
       </BreadcrumbItem>
@@ -18,10 +35,26 @@ export const StoryDefault = () => (
     </Breadcrumbs>
     <Breadcrumbs
       overrides={{
-        separator: props => <IconFilledAccountBalance {...props} />,
+        separator: props => (
+          <IconFilledAccountBalance
+            {...props}
+            overrides={{
+              size: 'iconSize030',
+              stylePreset: 'inkSubtle',
+              paddingInline: 'space080',
+            }}
+          />
+        ),
       }}
     >
-      <BreadcrumbItem href={href}>hello</BreadcrumbItem>
+      <BreadcrumbItem
+        href={href}
+        overrides={{
+          stylePreset: 'inkNegative',
+        }}
+      >
+        hello
+      </BreadcrumbItem>
       <BreadcrumbItem href={href}>bye</BreadcrumbItem>
       <BreadcrumbItem href={href}>hello</BreadcrumbItem>
       <BreadcrumbItem href={href}>bye</BreadcrumbItem>
