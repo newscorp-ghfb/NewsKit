@@ -4,9 +4,7 @@ exports[`TableOfContent should render with no errors 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: fixed;
-  -webkit-transition: 0.2s top,bottom ease-in;
-  transition: 0.2s top,bottom ease-in;
-  will-change: top,bottom;
+  top: calc(var(--heading-size) + var(--page-offset));
 }
 
 .emotion-1 {
@@ -142,7 +140,6 @@ exports[`TableOfContent should render with no errors 1`] = `
 <div
     class="emotion-0"
     id="toc-navigation"
-    style="bottom: 832px;"
   >
     <div
       class="emotion-1"

@@ -107,7 +107,7 @@ const useActiveState = (
 
   return [isActive, open, close, toggle];
 };
-export const StoryDefault = () =>
+export const StoryDrawerDefault = () =>
   React.createElement(() => {
     const [isActive, setIsActive] = React.useState(false);
     const [placement, setPlacement] = React.useState('left');
@@ -171,8 +171,8 @@ export const StoryDefault = () =>
       </div>
     );
   });
-StoryDefault.storyName = 'default';
-StoryDefault.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryDrawerDefault.storyName = 'default';
+StoryDrawerDefault.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 export const StoryInline = () =>
   React.createElement(() => {

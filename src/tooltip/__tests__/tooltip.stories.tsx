@@ -45,7 +45,7 @@ const myCustomTheme = createTheme({
   },
 });
 
-export const StoryTooltip = () => (
+export const StoryTooltipDefault = () => (
   <Container>
     <StorybookSubHeading>Tooltip with icon button</StorybookSubHeading>
     <Tooltip
@@ -150,8 +150,8 @@ export const StoryTooltip = () => (
     </StyledDiv>
   </Container>
 );
-StoryTooltip.storyName = 'tooltip';
-StoryTooltip.parameters = {
+StoryTooltipDefault.storyName = 'tooltip';
+StoryTooltipDefault.parameters = {
   eyes: {include: false},
   percy: {skip: true},
 };
