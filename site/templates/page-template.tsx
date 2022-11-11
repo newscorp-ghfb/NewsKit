@@ -43,15 +43,6 @@ const WrapperWithPadding = styled.div`
   margin-top: calc(-1 * (var(--parent-spacing)));
 `;
 
-console.log(
-  'HELLO ITS ME',
-  `${getSpacingCssFromTheme('paddingBottom', {
-    xs: 'space080',
-    md: 'space090',
-    lg: 'space100',
-  })}`,
-);
-
 export const PageTemplate: React.FC<TemplateProps> = ({
   children,
   headTags,
