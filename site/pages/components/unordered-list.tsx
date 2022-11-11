@@ -14,7 +14,7 @@ import {UsageKind} from '../../components/usage-card';
 import {IconFilledCircle} from '../../components/icons';
 import {Link} from '../../components/link';
 import {InlineCode} from '../../components/markdown-elements';
-import {IconFilledFacebook, IconFilledTwitter} from '../../../src/icons';
+import {IconFilledFacebook, IconFilledStarOutline} from '../../../src/icons';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -203,6 +203,7 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
       introduced: 'v0.2.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/unordered-list',
+      storybookId: 'components-unordered-list--story-unordered-list-default',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2058%3A880',
     }}
@@ -227,8 +228,8 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
                 value: undefined,
               },
               {
-                label: 'twitter',
-                value: IconFilledTwitter,
+                label: 'star',
+                value: IconFilledStarOutline,
               },
               {
                 label: 'facebook',
@@ -464,12 +465,13 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
               themselves are operable e.g. with links.
             </>
             <>
+              Using unordered lists purely as a means of indenting text is
+              discouraged. Refer to{' '}
               <Link
                 href="https://www.w3.org/TR/html4/struct/lists.html#h-10.2"
                 target="_blank"
               >
-                Using unordered lists purely as a means of indenting text is
-                discouraged.
+                Lists in HTML documents 10.2 in WCAG 2.1
               </Link>{' '}
               This is a stylistic issue and indenting of text can be achieved
               using the{' '}
