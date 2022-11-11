@@ -5,11 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const VolumeControl: React.FC = () => {
-  const clip0 = getSSRId();
-  const clip1 = getSSRId();
-  const clip2 = getSSRId();
-  const clip3 = getSSRId();
-  const clip4 = getSSRId();
   const filter0 = getSSRId();
 
   return (
@@ -36,41 +31,37 @@ export const VolumeControl: React.FC = () => {
         fill="illustrationInterface010"
       />
       <g filter={`url(#${filter0})`}>
-        <g clipPath={`url(#${clip0})`}>
-          <Rect
-            x="1027.66"
-            y="107"
-            width="138.495"
-            height="445.782"
-            rx="34.6238"
-            fill="illustrationInterface010"
-          />
-        </g>
+        <Rect
+          x="1027.66"
+          y="107"
+          width="138.495"
+          height="445.782"
+          rx="34.6238"
+          fill="illustrationInterface010"
+        />
         <Path
           d="M1096.91 570.093L1079.6 552.781H1114.22L1096.91 570.093Z"
           fill="illustrationInterface010"
         />
       </g>
-      <g clipPath={`url(#${clip1})`}>
-        <Rect
-          x="1088.25"
-          y="492.191"
-          width="329"
-          height="17"
-          transform="rotate(-90 1088.25 492.191)"
-          fill="illustrationInterface020"
-        />
-      </g>
-      <g clipPath={`url(#${clip2})`}>
-        <Rect
-          x="1088.25"
-          y="492.191"
-          width="164"
-          height="17"
-          transform="rotate(-90 1088.25 492.191)"
-          fill="illustrationHighlight010"
-        />
-      </g>
+      <Rect
+        x="1088.25"
+        y="492.191"
+        width="329"
+        height="17"
+        rx="8.5"
+        transform="rotate(-90 1088.25 492.191)"
+        fill="illustrationInterface020"
+      />
+      <Rect
+        x="1088.25"
+        y="492.191"
+        width="164"
+        height="17"
+        rx="8.5"
+        transform="rotate(-90 1088.25 492.191)"
+        fill="illustrationHighlight010"
+      />
       <Path
         d="M1128 325C1128 343.225 1113.23 358 1095 358C1076.77 358 1062 343.225 1062 325C1062 306.775 1076.77 292 1095 292C1113.23 292 1128 306.775 1128 325Z"
         fill="illustrationHighlight010"
@@ -95,24 +86,22 @@ export const VolumeControl: React.FC = () => {
         d="M372.407 427.049V409.964H383.797L398.034 395.727V441.286L383.797 427.049H372.407ZM403.729 407.03C407.944 409.137 410.848 413.466 410.848 418.506C410.848 423.546 407.944 427.874 403.729 429.952V407.03Z"
         fill="illustrationInterface010"
       />
-      <g clipPath={`url(#${clip3})`}>
-        <Rect
-          x="511.934"
-          y="409.967"
-          width="320"
-          height="17"
-          fill="illustrationInterface020"
-        />
-      </g>
-      <g clipPath={`url(#${clip4})`}>
-        <Rect
-          x="511.934"
-          y="409.967"
-          width="160"
-          height="17"
-          fill="illustrationHighlight010"
-        />
-      </g>
+      <Rect
+        x="511.934"
+        y="409.967"
+        width="320"
+        height="17"
+        rx="8.5"
+        fill="illustrationInterface020"
+      />
+      <Rect
+        x="511.934"
+        y="409.967"
+        width="160"
+        height="17"
+        rx="8.5"
+        fill="illustrationHighlight010"
+      />
       <Path
         d="M706 419C706 436.673 691.673 451 674 451C656.327 451 642 436.673 642 419C642 401.327 656.327 387 674 387C691.673 387 706 401.327 706 419Z"
         fill="illustrationHighlight010"
@@ -158,58 +147,6 @@ export const VolumeControl: React.FC = () => {
             result="shape"
           />
         </filter>
-        <clipPath id={clip0}>
-          <Rect
-            x="1027.66"
-            y="107"
-            width="138.495"
-            height="445.782"
-            rx="34.6238"
-            fill="white"
-          />
-        </clipPath>
-        <clipPath id={clip1}>
-          <Rect
-            x="1088.25"
-            y="492.191"
-            width="328.926"
-            height="17.3119"
-            rx="8.65596"
-            transform="rotate(-90 1088.25 492.191)"
-            fill="white"
-          />
-        </clipPath>
-        <clipPath id={clip2}>
-          <Rect
-            x="1088.25"
-            y="492.191"
-            width="164.463"
-            height="17.3119"
-            rx="8.65596"
-            transform="rotate(-90 1088.25 492.191)"
-            fill="white"
-          />
-        </clipPath>
-        <clipPath id={clip3}>
-          <Rect
-            x="511.934"
-            y="409.967"
-            width="320.341"
-            height="17.0849"
-            rx="8.54244"
-            fill="white"
-          />
-        </clipPath>
-        <clipPath id={clip4}>
-          <Rect
-            x="511.934"
-            y="409.967"
-            width="160.171"
-            height="17.0849"
-            rx="8.54244"
-            fill="white"
-          />
-        </clipPath>
       </defs>
     </Svg>
   );

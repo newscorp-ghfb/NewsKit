@@ -22,10 +22,6 @@ export const MuteButton: React.FC = () => {
           d="M378 349.3C378 343.059 381.778 338 386.437 338H504.562C509.222 338 513 343.059 513 349.3V439.7C513 445.941 509.222 451 504.562 451H386.437C381.778 451 378 445.941 378 439.7V349.3Z"
           fill="#E7E7E7"
         />
-        <Path
-          d="M378 349.3C378 343.059 381.778 338 386.437 338H504.562C509.222 338 513 343.059 513 349.3V439.7C513 445.941 509.222 451 504.562 451H386.437C381.778 451 378 445.941 378 439.7V349.3Z"
-          fill="url(#paint0_linear_2539_79799)"
-        />
         <Rect
           x="763.667"
           y="268"
@@ -71,7 +67,7 @@ export const MuteButton: React.FC = () => {
           height="109"
           rx="6"
           stroke="#85939C"
-          strokeWidth="4"
+          stroke-width="4"
         />
       </g>
       <defs>
@@ -109,17 +105,6 @@ export const MuteButton: React.FC = () => {
             result="shape"
           />
         </filter>
-        <linearGradient
-          id="paint0_linear_2539_79799"
-          x1="445.5"
-          y1="338"
-          x2="445.5"
-          y2="451"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="white" stopOpacity="0" />
-          <stop offset="1" stopColor="white" />
-        </linearGradient>
         <clipPath id={clip0}>
           <Rect width="1490" height="838" fill="white" />
         </clipPath>

@@ -6,7 +6,6 @@ import {Rect} from '../../../rect';
 
 export const PlaybackSpeedControl: React.FC = () => {
   const clip0 = getSSRId();
-  const clip1 = getSSRId();
   const filter0 = getSSRId();
 
   return (
@@ -26,15 +25,14 @@ export const PlaybackSpeedControl: React.FC = () => {
             transform="translate(-3147 196.195)"
             fill="interfaceBackground"
           />
-          <g clipPath={`url(#${clip1})`}>
-            <Rect
-              x="-1551.37"
-              y="381.396"
-              width="2052.71"
-              height="74.1019"
-              fill="illustrationInterface020"
-            />
-          </g>
+          <Rect
+            x="-1551.37"
+            y="381.396"
+            width="2052.71"
+            height="74.1019"
+            rx="37.051"
+            fill="illustrationInterface020"
+          />
           <Rect
             x="798.389"
             y="270.297"
@@ -88,16 +86,6 @@ export const PlaybackSpeedControl: React.FC = () => {
         </filter>
         <clipPath id={clip0}>
           <Rect width="1490" height="838" fill="white" />
-        </clipPath>
-        <clipPath id={clip1}>
-          <Rect
-            x="-1551.37"
-            y="381.45"
-            width="2052.71"
-            height="74.1019"
-            rx="37.051"
-            fill="white"
-          />
         </clipPath>
       </defs>
     </Svg>

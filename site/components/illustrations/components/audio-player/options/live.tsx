@@ -5,8 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const Live: React.FC = () => {
-  const clip0 = getSSRId();
-  const clip1 = getSSRId();
   const filter0 = getSSRId();
 
   return (
@@ -43,24 +41,22 @@ export const Live: React.FC = () => {
           d="M316.831 436.793V426.21H323.887L332.706 417.391V445.613L323.887 436.793H316.831ZM336.234 424.393C338.845 425.698 340.644 428.379 340.644 431.501C340.644 434.623 338.845 437.304 336.234 438.592V424.393Z"
           fill="illustrationPalette040"
         />
-        <g clipPath={`url(#${clip0})`}>
-          <Rect
-            x="403.262"
-            y="426.209"
-            width="198"
-            height="11"
-            fill="illustrationInterface020"
-          />
-        </g>
-        <g clipPath={`url(#${clip1})`}>
-          <Rect
-            x="403.262"
-            y="426.209"
-            width="99"
-            height="11"
-            fill="illustrationPalette040"
-          />
-        </g>
+        <Rect
+          x="403.262"
+          y="426.209"
+          width="198"
+          height="11"
+          rx="5.5"
+          fill="illustrationInterface020"
+        />
+        <Rect
+          x="403.262"
+          y="426.209"
+          width="99"
+          height="11"
+          rx="5.5"
+          fill="illustrationPalette040"
+        />
         <Path
           d="M525 432C525 443.598 515.598 453 504 453C492.402 453 483 443.598 483 432C483 420.402 492.402 411 504 411C515.598 411 525 420.402 525 432Z"
           fill="illustrationPalette040"
@@ -117,26 +113,6 @@ export const Live: React.FC = () => {
             result="shape"
           />
         </filter>
-        <clipPath id={clip0}>
-          <Rect
-            x="403.262"
-            y="426.209"
-            width="198.438"
-            height="10.5833"
-            rx="5.29167"
-            fill="white"
-          />
-        </clipPath>
-        <clipPath id={clip1}>
-          <Rect
-            x="403.262"
-            y="426.209"
-            width="99.2188"
-            height="10.5833"
-            rx="5.29167"
-            fill="white"
-          />
-        </clipPath>
       </defs>
     </Svg>
   );

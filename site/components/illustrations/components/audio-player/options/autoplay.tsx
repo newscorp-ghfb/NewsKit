@@ -6,8 +6,6 @@ import {Rect} from '../../../rect';
 
 export const Autoplay: React.FC = () => {
   const clip0 = getSSRId();
-  const clip1 = getSSRId();
-  const clip2 = getSSRId();
   const filter0 = getSSRId();
 
   return (
@@ -39,24 +37,22 @@ export const Autoplay: React.FC = () => {
             d="M535.45 375.729V462.417L603.562 419.073L535.45 375.729Z"
             fill="interfaceBackground"
           />
-          <g clipPath={`url(#${clip1})`}>
-            <Rect
-              x="1006.04"
-              y="381.77"
-              width="2541.6"
-              height="74.3045"
-              fill="illustrationInterface020"
-            />
-          </g>
-          <g clipPath={`url(#${clip2})`}>
-            <Rect
-              x="1006.04"
-              y="381.77"
-              width="1270.96"
-              height="74.3045"
-              fill="illustrationInterface020"
-            />
-          </g>
+          <Rect
+            x="1006.04"
+            y="381.77"
+            width="2541.6"
+            height="74.3045"
+            rx="37.1522"
+            fill="illustrationInterface020"
+          />
+          <Rect
+            x="1006.04"
+            y="381.77"
+            width="1270.96"
+            height="74.3045"
+            rx="37.1522"
+            fill="illustrationInterface020"
+          />
         </g>
         <Path
           fillRule="evenodd"
@@ -106,26 +102,6 @@ export const Autoplay: React.FC = () => {
         </filter>
         <clipPath id={clip0}>
           <Rect width="1490" height="838" fill="white" />
-        </clipPath>
-        <clipPath id={clip1}>
-          <Rect
-            x="1006.04"
-            y="381.924"
-            width="2541.6"
-            height="74.3045"
-            rx="37.1522"
-            fill="white"
-          />
-        </clipPath>
-        <clipPath id={clip2}>
-          <Rect
-            x="1006.04"
-            y="381.924"
-            width="1270.96"
-            height="74.3045"
-            rx="37.1522"
-            fill="white"
-          />
         </clipPath>
       </defs>
     </Svg>
