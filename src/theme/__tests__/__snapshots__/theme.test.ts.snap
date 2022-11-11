@@ -2090,22 +2090,6 @@ Object {
       "transitionPreset": "backgroundColorChange",
     },
   },
-  "menuSub": Object {
-    "horizontal": Object {
-      "minHeight": "sizing080",
-      "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish030",
-      "stylePreset": "menuSubHorizontal",
-      "transitionPreset": "backgroundColorChange",
-    },
-    "vertical": Object {
-      "minHeight": "sizing080",
-      "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish030",
-      "stylePreset": "menuSubVertical",
-      "transitionPreset": "backgroundColorChange",
-    },
-  },
   "modal": Object {
     "closeButton": Object {
       "spaceInset": "spaceInset020",
