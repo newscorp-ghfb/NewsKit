@@ -1,17 +1,17 @@
 import React from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {BreadcrumbsContextProvider} from './context';
-import {StyledIconContainer, StyledOrderdList} from './styled';
+import {StyledIconContainer, StyledList, StyledOrderdList} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
 import {IconFilledChevronRight} from '../icons';
-import {getComponentOverrides} from '../utils/overrides';
+import {getComponentOverrides, Override} from '../utils/overrides';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 
-const DefaultIcon = overrides => (
+const DefaultIcon = (overrides: BreadcrumbsProps) => (
   <IconFilledChevronRight overrides={overrides} />
 );
 const ThemelessBreadcrumbs = React.forwardRef<
@@ -29,7 +29,7 @@ const ThemelessBreadcrumbs = React.forwardRef<
     ref,
   ) => {
     const theme = useTheme();
-    const separatorOverrides: BreadcrumbsProps = {
+    const separatorOverrides = {
       ...theme.componentDefaults.breadcrumbSeparator,
       ...filterOutFalsyProperties(overrides?.separator),
     };
@@ -55,56 +55,55 @@ const ThemelessBreadcrumbs = React.forwardRef<
     );
 
     const [BreadcrumbsIcon, BreadcrumbsIconProps] = getComponentOverrides(
-      overrides?.separator,
+      overrides?.separator as Override<BreadcrumbsProps>,
       DefaultIcon,
       {
-        // this is where i set the defaults for the icon
-
         size: iconToken,
         paddingInline: iconSpaceToken,
         stylePreset: iconStylePresetToken,
         ...separatorOverrides,
-        //   ...overrides,
-
-        // },
       },
     );
+
     const breadcrumbChildren = React.Children.toArray(
       children,
     ) as React.ReactElement<BreadcrumbItemProps>[];
+
     return (
       <BreadcrumbsContextProvider value={{size, showTrailingSeparator}}>
         <StyledOrderdList ref={ref} {...rest} overrides={overrides}>
-          {!showTrailingSeparator &&
-            breadcrumbChildren.reduce(
-              (acc: React.ReactElement[], listItem, index, array) => {
-                acc.push(listItem);
-                if (children && index < array.length - 1) {
-                  acc.push(
+          {showTrailingSeparator
+            ? React.Children.map(children, child => (
+                <>
+                  <StyledList>{child}</StyledList>
+                  <StyledList>
                     <StyledIconContainer>
                       <BreadcrumbsIcon
                         {...(BreadcrumbsIconProps as BreadcrumbsProps)}
                       />
-                    </StyledIconContainer>,
-                  );
-                }
-
-                return acc;
-              },
-              [],
-            )}
-
-          {showTrailingSeparator &&
-            React.Children.map(children, child => (
-              <>
-                {child}
-                <StyledIconContainer>
-                  <BreadcrumbsIcon
-                    {...(BreadcrumbsIconProps as BreadcrumbsProps)}
-                  />
-                </StyledIconContainer>
-              </>
-            ))}
+                    </StyledIconContainer>
+                  </StyledList>
+                </>
+              ))
+            : breadcrumbChildren.reduce(
+                (acc: React.ReactElement[], listItem, index, array) => {
+                  acc.push(<StyledList>{listItem}</StyledList>);
+                  if (children && index < array.length - 1) {
+                    acc.push(
+                      <StyledList>
+                        <StyledIconContainer>
+                          <BreadcrumbsIcon
+                            {...(BreadcrumbsIconProps as BreadcrumbsProps)}
+                          />
+                        </StyledIconContainer>
+                      </StyledList>,
+                    );
+                  }
+                  // breadcrumb > breadcrumb
+                  return acc;
+                },
+                [],
+              )}
         </StyledOrderdList>
       </BreadcrumbsContextProvider>
     );
