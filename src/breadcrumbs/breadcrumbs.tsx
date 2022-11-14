@@ -1,7 +1,12 @@
 import React from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {BreadcrumbsContextProvider} from './context';
-import {StyledIconContainer, StyledList, StyledOrderdList} from './styled';
+import {
+  StyledIconContainer,
+  StyledList,
+  StyledNav,
+  StyledOrderdList,
+} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
@@ -71,40 +76,41 @@ const ThemelessBreadcrumbs = React.forwardRef<
 
     return (
       <BreadcrumbsContextProvider value={{size, showTrailingSeparator}}>
-        <StyledOrderdList ref={ref} {...rest} overrides={overrides}>
-          {showTrailingSeparator
-            ? React.Children.map(children, child => (
-                <>
-                  <StyledList>{child}</StyledList>
-                  <StyledList>
-                    <StyledIconContainer>
-                      <BreadcrumbsIcon
-                        {...(BreadcrumbsIconProps as BreadcrumbsProps)}
-                      />
-                    </StyledIconContainer>
-                  </StyledList>
-                </>
-              ))
-            : breadcrumbChildren.reduce(
-                (acc: React.ReactElement[], listItem, index, array) => {
-                  acc.push(<StyledList>{listItem}</StyledList>);
-                  if (children && index < array.length - 1) {
-                    acc.push(
-                      <StyledList>
-                        <StyledIconContainer>
-                          <BreadcrumbsIcon
-                            {...(BreadcrumbsIconProps as BreadcrumbsProps)}
-                          />
-                        </StyledIconContainer>
-                      </StyledList>,
-                    );
-                  }
-                  // breadcrumb > breadcrumb
-                  return acc;
-                },
-                [],
-              )}
-        </StyledOrderdList>
+        <StyledNav aria-label="Breadcrumb component">
+          <StyledOrderdList ref={ref} {...rest} overrides={overrides}>
+            {showTrailingSeparator
+              ? React.Children.map(children, child => (
+                  <>
+                    <StyledList>{child}</StyledList>
+                    <StyledList aria-hidden="true">
+                      <StyledIconContainer>
+                        <BreadcrumbsIcon
+                          {...(BreadcrumbsIconProps as BreadcrumbsProps)}
+                        />
+                      </StyledIconContainer>
+                    </StyledList>
+                  </>
+                ))
+              : breadcrumbChildren.reduce(
+                  (acc: React.ReactElement[], listItem, index, array) => {
+                    acc.push(<StyledList>{listItem}</StyledList>);
+                    if (children && index < array.length - 1) {
+                      acc.push(
+                        <StyledList aria-hidden="true">
+                          <StyledIconContainer>
+                            <BreadcrumbsIcon
+                              {...(BreadcrumbsIconProps as BreadcrumbsProps)}
+                            />
+                          </StyledIconContainer>
+                        </StyledList>,
+                      );
+                    }
+                    return acc;
+                  },
+                  [],
+                )}
+          </StyledOrderdList>
+        </StyledNav>
       </BreadcrumbsContextProvider>
     );
   },
