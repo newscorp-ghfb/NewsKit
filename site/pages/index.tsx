@@ -1,7 +1,5 @@
-import {GridLayout, TextBlock} from 'newskit';
 import * as React from 'react';
-import ReactMarkdown from 'react-markdown';
-import {Link} from '../components/link';
+import {GridLayout} from 'newskit';
 import {Release, ReleasesPageProps} from '../utils/release-notes/types';
 import {
   Explore,
@@ -15,8 +13,11 @@ import Layout, {LayoutProps} from '../components/layout';
 import {IconFilledLaunch} from '../../src/icons';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
-import {getSheet} from '../utils/google-sheet';
-import {ContentProps, getValueFromCMS} from '../utils/get-value';
+import {formatSheetData, getSheet} from '../utils/google-sheet';
+import {
+  ContentProps,
+  getValueFromCMS,
+} from '../utils/google-sheet/utils/get-value-from-cms';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -36,7 +37,6 @@ const Index = ({
   ...layoutProps
 }: LayoutProps & ReleasesPageProps & ContentProps) => {
   const {themeMode, toggleTheme} = layoutProps;
-  console.log(content);
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
       <GridLayout
@@ -83,32 +83,6 @@ const Index = ({
               typographyPreset: 'utilityButton020',
             }}
           />
-          <TextBlock
-            as="div"
-            typographyPreset="editorialParagraph030"
-            stylePreset="gitHubMarkDownText"
-            marginBlockStart="space050"
-          >
-            {getValueFromCMS(content, 'AndMoreTitle', 'And More:')}
-            <ReactMarkdown
-              components={{
-                a: ({href, children}) => (
-                  <Link
-                    overrides={{typographyPreset: 'editorialParagraph030'}}
-                    href={href!}
-                  >
-                    {children}
-                  </Link>
-                ),
-              }}
-            >
-              {getValueFromCMS(
-                content,
-                'AndMoreLink',
-                'Support for [environment variables](https://nextjs.org/docs/basic-features/environment-variables "Environment variables"), [preview mode](https://nextjs.org/docs/advanced-features/preview-mode "Preview mode"), [custom head tags](https://nextjs.org/docs/api-reference/next/head "Custom head tags"), [automatic polyfills](https://nextjs.org/docs/basic-features/supported-browsers-features#polyfills "Automatic polyfills") and more.',
-              )}
-            </ReactMarkdown>
-          </TextBlock>
         </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
           <Explore />
@@ -168,11 +142,6 @@ export async function getStaticProps() {
   const releases: Release[] = await fetchGitHubReleases(4);
   const data = await getSheet();
 
-  let content;
-  if (data === undefined || data === null || data.length === 0) {
-    content = {};
-  } else {
-    content = Object.fromEntries(data);
-  }
+  const content = formatSheetData(data);
   return {props: {releases, content}};
 }

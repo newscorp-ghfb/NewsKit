@@ -8,11 +8,12 @@ export interface ContentProps {
 
 export const getValueFromCMS = (
   obj: CMSDataProps,
-  key: keyof CMSDataProps,
+  key: string,
   fallback: string,
 ) => {
-  if (obj[key]) {
-    return obj[key];
+  const newKey = key.toLowerCase();
+  if (obj[newKey]) {
+    return obj[newKey];
   }
   return fallback;
 };
