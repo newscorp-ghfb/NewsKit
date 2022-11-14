@@ -53,7 +53,7 @@ export default {
   disabledRules: ['tabindex'], // Because of scenario 'open on page load'
 };
 
-export const StoryDefault = () =>
+export const StoryModalDefault = () =>
   React.createElement(() => {
     const [isActive, open, close] = useActiveState();
 
@@ -85,8 +85,8 @@ export const StoryDefault = () =>
       </div>
     );
   });
-StoryDefault.storyName = 'default';
-StoryDefault.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryModalDefault.storyName = 'default';
+StoryModalDefault.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 export const StoryOpenOnPageLoad = () =>
   React.createElement(() => {

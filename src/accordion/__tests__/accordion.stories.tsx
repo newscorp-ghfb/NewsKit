@@ -152,7 +152,7 @@ const scriptHooks = {
     'Array.from(document.querySelectorAll(\'.nk-accordion-enter-done\')).forEach(elt => elt.style.maxHeight="unset")',
 };
 
-export const StoryAccordion = () => {
+export const StoryAccordionDefault = () => {
   const [expanded, toggleExpanded] = React.useState(false);
   return (
     <>
@@ -234,8 +234,8 @@ export const StoryAccordion = () => {
     </>
   );
 };
-StoryAccordion.storyName = 'accordion';
-StoryAccordion.parameters = {eyes: {scriptHooks}};
+StoryAccordionDefault.storyName = 'accordion';
+StoryAccordionDefault.parameters = {eyes: {scriptHooks}};
 
 export const StoryAccordionOverrides = () => (
   <>

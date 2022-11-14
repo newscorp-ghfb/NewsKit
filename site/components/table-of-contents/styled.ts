@@ -9,8 +9,7 @@ import {Link} from '../link';
 
 export const StyledTableOfContents = styled(Block)`
   position: fixed;
-  transition: 0.2s top, bottom ease-in;
-  will-change: top, bottom;
+  top: calc(var(--heading-size) + var(--page-offset));
 `;
 
 export const StyledContentsNavItem = styled(Link)<{
