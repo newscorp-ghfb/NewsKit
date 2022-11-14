@@ -212,13 +212,29 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the unordered list component, its variations, and configuration options.',
       playground: {
         componentName: 'Unorderedist',
-        component: (props: UnorderedListProps) => <UnorderedList {...props} />,
+        component: (props: UnorderedListProps) => (
+          <UnorderedList {...props}>
+            <>
+              NewsKit provides components, guidelines and standards to enable
+              digital product teams to create high-quality, consistent products
+              quickly. NewsKit is built on modular design principles and backed
+              by best practice guidance for design and development.
+            </>
+            <>
+              NewsKit provides components, guidelines and standards to enable
+              digital product teams to create high-quality, consistent products
+              quickly. NewsKit is built on modular design principles and backed
+              by best practice guidance for design and development.
+            </>
+            <>
+              NewsKit provides components, guidelines and standards to enable
+              digital product teams to create high-quality, consistent products
+              quickly. NewsKit is built on modular design principles and backed
+              by best practice guidance for design and development.
+            </>
+          </UnorderedList>
+        ),
         knobs: [
-          {
-            name: 'List Data',
-            propName: 'children',
-            value: ['Prince Harry', 'Meghan Markle', 'Royal Family'],
-          },
           {
             name: 'List Item Marker',
             propName: 'listItemMarker',
