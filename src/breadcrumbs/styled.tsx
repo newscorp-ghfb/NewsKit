@@ -11,6 +11,7 @@ export const StyledOrderdList = styled.ol<BreadcrumbsProps>`
   margin: 0;
   display: inline-flex;
   align-items: center;
+  ${getStylePreset('')};
   ${logicalProps()}
 `;
 

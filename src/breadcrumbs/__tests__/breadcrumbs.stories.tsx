@@ -1,17 +1,40 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Breadcrumbs} from '../breadcrumbs';
 import {BreadcrumbItem} from '../breadcrumb-item';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {IconFilledAccountBalance, IconFilledAddCircle} from '../../icons';
+import {CreateThemeArgs, ThemeProvider} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
 
 const blockGridCols = '1fr 1fr 1fr auto';
+const blockCustomThemeObject: CreateThemeArgs = {
+  name: 'block-custom-theme',
+  overrides: {
+    stylePresets: {
+      blockDefault: {
+        base: {
+          backgroundColor: '{{colors.amber020}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interfaceBrand010}}',
+        },
+      },
+    },
+  },
+};
 
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <Breadcrumbs showTrailingSeparator>
+    <Breadcrumbs
+      showTrailingSeparator
+      overrides={{
+        stylePreset: 'blockDefault',
+      }}
+    >
       <BreadcrumbItem selected href={href}>
         Breadcrumb item
       </BreadcrumbItem>
@@ -171,4 +194,16 @@ export default {
         'A divider is used to provide visual separation of different content. Dividers can be applied vertically or horizontally.',
     },
   },
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          blockCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
