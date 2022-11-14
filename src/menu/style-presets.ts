@@ -39,7 +39,6 @@ export default {
     },
     'focus-visible': defaultFocusVisible,
   },
-
   menuItemHorizontal: {
     base: {
       backgroundColor: '{{colors.transparent}}',
@@ -76,7 +75,6 @@ export default {
     },
     'focus-visible': defaultFocusVisible,
   },
-
   menuItemHorizontalInverse: {
     base: {
       backgroundColor: '{{colors.transparent}}',

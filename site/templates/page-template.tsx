@@ -1,5 +1,5 @@
 import React from 'react';
-import {Cell, Grid, getSizingFromTheme, styled} from 'newskit';
+import {Cell, Grid, getSpacingCssFromTheme, styled} from 'newskit';
 
 import {TableOfContents} from '../components/table-of-contents';
 import {IntroductionSection, OnwardJourneySection} from './template-sections';
@@ -7,8 +7,40 @@ import {TemplateProps} from './types';
 import {HeadNextSeo} from '../components/head-next-seo';
 
 const WrapperWithPadding = styled.div`
-  padding-top: ${getSizingFromTheme('sizing090')};
-  padding-bottom: ${getSizingFromTheme('sizing090')};
+  ${getSpacingCssFromTheme('--main-el-container-block-spacing', {
+    xs: 'space050',
+    lg: 'space100',
+  })};
+
+  ${getSpacingCssFromTheme('--main-el-block-spacing', {
+    xs: 'space060',
+    lg: 'space030',
+  })};
+
+  --parent-spacing: calc(
+    var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+  );
+
+  ${getSpacingCssFromTheme('--header-size', {
+    xs: 'space080',
+    lg: 'space100',
+  })};
+
+  ${getSpacingCssFromTheme('--page-content-padding', {
+    xs: 'space080',
+    md: 'space090',
+    lg: 'space100',
+  })};
+
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+
+  ${getSpacingCssFromTheme('paddingBottom', {
+    xs: 'space080',
+    md: 'space090',
+    lg: 'space100',
+  })};
+
+  margin-top: calc(-1 * (var(--parent-spacing)));
 `;
 
 export const PageTemplate: React.FC<TemplateProps> = ({
