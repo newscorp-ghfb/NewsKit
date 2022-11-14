@@ -1,6 +1,7 @@
 import React from 'react';
 import {Grid, Cell, InlineMessage, Block, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
+import {ReactElement} from 'react-markdown';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
 import {ContentText} from '../../components/text-section/content-text';
@@ -19,7 +20,7 @@ const infoIcon = (
 
 interface A11ySubSection<RowType> {
   title: string;
-  description?: string;
+  description?: string | ReactElement;
   tableRows?: RowType[];
 }
 
