@@ -17,6 +17,10 @@ Welcome.parameters = {
       {selector: 'img[src="https://badge.fury.io/js/newskit.svg"]'},
     ],
   },
+  percy: {
+    percyCss:
+      'img[src="https://badge.fury.io/js/newskit.svg"] { display: none; }',
+  },
 };
 
 export default {
