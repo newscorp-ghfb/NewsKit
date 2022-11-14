@@ -14,7 +14,7 @@ import {UsageKind} from '../../components/usage-card';
 import {IconFilledCircle} from '../../components/icons';
 import {Link} from '../../components/link';
 import {InlineCode} from '../../components/markdown-elements';
-import {IconFilledFacebook, IconFilledStarOutline} from '../../../src/icons';
+import {IconFilledStarOutline} from '../../../src/icons';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -230,10 +230,6 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
               {
                 label: 'star',
                 value: IconFilledStarOutline,
-              },
-              {
-                label: 'facebook',
-                value: IconFilledFacebook,
               },
             ],
           },
