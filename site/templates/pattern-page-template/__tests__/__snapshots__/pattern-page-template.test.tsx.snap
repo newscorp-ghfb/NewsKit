@@ -357,8 +357,83 @@ exports[`Foundation Page Template renders with feature card 1`] = `
 }
 
 .emotion-1 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-1 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-1 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-1 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
@@ -761,8 +836,83 @@ exports[`Foundation Page Template renders with mandatory props only 1`] = `
 }
 
 .emotion-1 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  --parent-spacing: calc(
+      var(--main-el-block-spacing) + var(--main-el-container-block-spacing)
+    );
+  padding-top: calc(var(--page-content-padding) + var(--header-size));
+  margin-top: calc(-1 * (var(--parent-spacing)));
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-1 {
+    --main-el-container-block-spacing: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    --main-el-container-block-spacing: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-1 {
+    --main-el-block-spacing: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    --main-el-block-spacing: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-1 {
+    --header-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    --header-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    --page-content-padding: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    --page-content-padding: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    --page-content-padding: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    padding-bottom: 80px;
+  }
 }
 
 <div
