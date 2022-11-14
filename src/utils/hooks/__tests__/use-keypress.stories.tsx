@@ -120,6 +120,7 @@ export const StoryUseKeyPress = () => {
 StoryUseKeyPress.storyName = 'useKeypress';
 StoryUseKeyPress.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };
 
 export default {
