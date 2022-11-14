@@ -3,26 +3,23 @@ import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
 import {Button} from '../button';
 
+export const StyledNav = styled.nav``;
+
 export const StyledOrderdList = styled.ol<BreadcrumbsProps>`
-  box-sizing: border-box;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
   display: inline-flex;
   align-items: center;
   ${logicalProps()}
 `;
 
-export const StyledList = styled.li`
-  display: inline;
-`;
+export const StyledList = styled.li``;
 
-export const StyledIconContainer = styled.div`
-  //not sure about this
-  margin-bottom: -4px;
-`;
+export const StyledIconContainer = styled.div``;
 
 export const StyledButton = styled(Button)<BreadcrumbItemProps>`
   ${({size, selected}) =>
     getStylePreset(`breadcrumbItem.${size}`, '', {isSelected: selected})};
-
-  // overrides padding on the button link which was creating to much gap between button and separator
-  padding: 2px;
+  padding: 0px;
 `;
