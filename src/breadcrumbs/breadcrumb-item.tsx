@@ -20,10 +20,11 @@ export const BreadcrumbItem = React.forwardRef<
     ref,
   ) => {
     const {size} = useBreadCrumbsContext();
+
     const buttonProps = {
       ...rest,
-      selected,
       size,
+      selected,
     };
     return (
       <StyledButton

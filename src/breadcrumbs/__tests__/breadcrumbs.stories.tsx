@@ -9,16 +9,15 @@ const href = 'javascript:;';
 
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <Breadcrumbs>
+    <Breadcrumbs showTrailingSeparator>
       <BreadcrumbItem selected href={href}>
         Breadcrumb item
       </BreadcrumbItem>
       <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
-      <BreadcrumbItem href={href}>Breadcrumb item </BreadcrumbItem>
+      <BreadcrumbItem href={href}>Breadcrumb itemx </BreadcrumbItem>
     </Breadcrumbs>
     <Breadcrumbs
-      showTrailingSeparator
-      size="small"
+      size="large"
       overrides={{
         separator: {
           paddingInline: 'space030',
@@ -40,7 +39,7 @@ export const StoryDefault = () => (
             {...props}
             overrides={{
               size: 'iconSize030',
-              stylePreset: 'inkSubtle',
+              stylePreset: 'inkNegative',
               paddingInline: 'space080',
             }}
           />
@@ -65,7 +64,7 @@ StoryDefault.storyName = 'Default';
 
 export const StoryVariations = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <Breadcrumbs>
+    <Breadcrumbs showTrailingSeparator>
       <BreadcrumbItem selected href={href}>
         Breadcrumb item
       </BreadcrumbItem>
