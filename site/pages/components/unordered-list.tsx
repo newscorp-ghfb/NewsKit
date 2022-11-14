@@ -212,32 +212,13 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the unordered list component, its variations, and configuration options.',
       playground: {
         componentName: 'Unorderedist',
-        component: (props: UnorderedListProps) => (
-          <UnorderedList {...props}>
-            <>
-              NewsKit provides components, guidelines and standards to enable
-              digital product teams to create high-quality, consistent products
-              quickly. NewsKit is built on modular design principles and backed
-              by best practice guidance for design and development.
-            </>
-            <>
-              Lorem Ipsum has been the standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to
-              make a type specimen book. It has survived not only five
-              centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged.
-            </>
-            <>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which do look even slightly
-              believable.If you are going to use a passage of Lorem Ipsum, you
-              need to be sure there is anything embarrassing hidden in the
-              middle of text.
-            </>
-          </UnorderedList>
-        ),
+        component: (props: UnorderedListProps) => <UnorderedList {...props} />,
         knobs: [
+          {
+            name: 'List Data',
+            propName: 'children',
+            value: ['Prince Harry', 'Meghan Markle', 'Royal Family'],
+          },
           {
             name: 'List Item Marker',
             propName: 'listItemMarker',
