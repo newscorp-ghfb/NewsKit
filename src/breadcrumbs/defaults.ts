@@ -3,7 +3,6 @@ export default {
     small: {
       typographyPreset: 'utilityButton010',
       stylePreset: 'breadcrumbItem',
-      size: 'iconSize020',
     },
     medium: {
       typographyPreset: 'utilityButton020',

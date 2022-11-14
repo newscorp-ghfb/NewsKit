@@ -20,7 +20,9 @@ export const StyledIconContainer = styled.div`
 `;
 
 export const StyledButton = styled(Button)<BreadcrumbItemProps>`
-  ${({size}) => getStylePreset(`breadcrumbItem.${size}`, '')};
+  ${({size, selected}) =>
+    getStylePreset(`breadcrumbItem.${size}`, '', {isSelected: selected})};
+
   // overrides padding on the button link which was creating to much gap between button and separator
   padding: 2px;
 `;

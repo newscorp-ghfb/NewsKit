@@ -11,8 +11,12 @@ export default {
       backgroundColor: '{{colors.transparent}}',
     },
     selected: {
-      color: '{{colors.inkBase}',
+      color: '{{colors.inkBase}}',
       backgroundColor: '{{colors.transparent}}',
+    },
+    'selected:hover': {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkBase}}',
     },
     active: {
       color: '{{colors.interactiveLink030}}',
