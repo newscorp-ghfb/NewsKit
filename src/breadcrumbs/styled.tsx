@@ -7,17 +7,18 @@ export const StyledNav = styled.nav<BreadcrumbsProps>``;
 
 export const StyledOrderdList = styled.ol<BreadcrumbsProps>`
   list-style: none;
-  padding-left: 0;
-  margin: 0;
   display: inline-flex;
-  align-items: center;
   ${getStylePreset('')};
   ${logicalProps()}
+  margin: 0;
+  padding: 0px;
 `;
 
-export const StyledList = styled.li``;
-
-export const StyledIconContainer = styled.div``;
+export const StyledList = styled.li`
+  display: flex;
+  justify-content: center;
+  align-self: center;
+`;
 
 export const StyledButton = styled(Button)<BreadcrumbItemProps>`
   ${({size, selected}) =>

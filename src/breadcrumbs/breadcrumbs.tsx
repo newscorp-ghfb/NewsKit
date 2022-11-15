@@ -1,11 +1,6 @@
 import React from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {
-  StyledIconContainer,
-  StyledList,
-  StyledNav,
-  StyledOrderdList,
-} from './styled';
+import {StyledList, StyledNav, StyledOrderdList} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
@@ -74,47 +69,43 @@ const ThemelessBreadcrumbs = React.forwardRef<
     ) as React.ReactElement<BreadcrumbItemProps>[];
 
     return (
-      <>
-        <StyledNav
-          aria-label="Breadcrumb component"
-          size={size}
-          showTrailingSeparator={showTrailingSeparator}
-        >
-          <StyledOrderdList ref={ref} {...rest} overrides={overrides}>
-            {showTrailingSeparator
-              ? React.Children.map(children, child => (
-                  <>
-                    <StyledList key={3}>{child}</StyledList>
-                    <StyledList key={4} aria-hidden="true">
-                      <StyledIconContainer>
+      <StyledNav
+        aria-label="Breadcrumb component"
+        size={size}
+        showTrailingSeparator={showTrailingSeparator}
+      >
+        <StyledOrderdList ref={ref} {...rest} overrides={overrides}>
+          {showTrailingSeparator
+            ? React.Children.map(children, child => (
+                <>
+                  <StyledList key={3}>{child}</StyledList>
+
+                  <StyledList key={4} aria-hidden="true">
+                    <BreadcrumbsIcon
+                      {...(BreadcrumbsIconProps as BreadcrumbsProps)}
+                    />
+                  </StyledList>
+                </>
+              ))
+            : breadcrumbChildren.reduce(
+                (acc: React.ReactElement[], listItem, index, array) => {
+                  acc.push(<StyledList key={2}>{listItem}</StyledList>);
+                  if (children && index < array.length - 1) {
+                    acc.push(
+                      <StyledList aria-hidden="true" key={1}>
                         <BreadcrumbsIcon
                           {...(BreadcrumbsIconProps as BreadcrumbsProps)}
                         />
-                      </StyledIconContainer>
-                    </StyledList>
-                  </>
-                ))
-              : breadcrumbChildren.reduce(
-                  (acc: React.ReactElement[], listItem, index, array) => {
-                    acc.push(<StyledList key={2}>{listItem}</StyledList>);
-                    if (children && index < array.length - 1) {
-                      acc.push(
-                        <StyledList aria-hidden="true" key={1}>
-                          <StyledIconContainer>
-                            <BreadcrumbsIcon
-                              {...(BreadcrumbsIconProps as BreadcrumbsProps)}
-                            />
-                          </StyledIconContainer>
-                        </StyledList>,
-                      );
-                    }
-                    return acc;
-                  },
-                  [],
-                )}
-          </StyledOrderdList>
-        </StyledNav>
-      </>
+                      </StyledList>,
+                    );
+                  }
+                  return acc;
+                },
+                [],
+              )}
+        </StyledOrderdList>
+        {/* </StyledGridLayout> */}
+      </StyledNav>
     );
   },
 );
