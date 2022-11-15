@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid} from 'newskit';
-import routes from '../../routes';
+import {routes} from '../../routes';
 import Layout, {LayoutProps} from '../../components/layout';
 import {Item} from '../../components/sidebar/types';
 import {HeaderIndex} from '../../components/header-index/index';
@@ -40,14 +40,14 @@ const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     <HeadNextSeo
       title="Guides overview"
-      description="Use the guides below to help you get the most out of using NewsKit."
+      description="Get the most out of NewsKit with easy-to-follow guides."
       image={{
         url: 'social/guides.png',
         alt: 'Guides overview',
       }}
     />
     <HeaderIndex title="Guides" media={HeaderImage}>
-      Use the guides below to help you get the most out of using NewsKit.
+      Get the most out of NewsKit with easy-to-follow guides.
     </HeaderIndex>
     <Grid>
       <ComponentPageCell>

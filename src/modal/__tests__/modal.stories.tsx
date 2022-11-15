@@ -53,7 +53,7 @@ export default {
   disabledRules: ['tabindex'], // Because of scenario 'open on page load'
 };
 
-export const StoryDefault = () =>
+export const StoryModalDefault = () =>
   React.createElement(() => {
     const [isActive, open, close] = useActiveState();
 
@@ -85,8 +85,8 @@ export const StoryDefault = () =>
       </div>
     );
   });
-StoryDefault.storyName = 'default';
-StoryDefault.parameters = {eyes: {include: false}};
+StoryModalDefault.storyName = 'default';
+StoryModalDefault.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 export const StoryOpenOnPageLoad = () =>
   React.createElement(() => {
@@ -127,7 +127,7 @@ export const StoryOpenOnPageLoad = () =>
     );
   });
 StoryOpenOnPageLoad.storyName = 'open on page load';
-StoryOpenOnPageLoad.parameters = {eyes: {include: false}};
+StoryOpenOnPageLoad.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 const items = [
   'Neptunium',
@@ -179,7 +179,10 @@ export const StoryWithAriaAttributes = () =>
     );
   });
 StoryWithAriaAttributes.storyName = 'with aria attributes';
-StoryWithAriaAttributes.parameters = {eyes: {include: false}};
+StoryWithAriaAttributes.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryWithCustomAutofocus = () =>
   React.createElement(() => {
@@ -221,7 +224,10 @@ export const StoryWithCustomAutofocus = () =>
     );
   });
 StoryWithCustomAutofocus.storyName = 'with custom autofocus';
-StoryWithCustomAutofocus.parameters = {eyes: {include: false}};
+StoryWithCustomAutofocus.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryWithCustomRestoreFocus = () =>
   React.createElement(() => {
@@ -264,7 +270,10 @@ export const StoryWithCustomRestoreFocus = () =>
     );
   });
 StoryWithCustomRestoreFocus.storyName = 'with custom restore focus';
-StoryWithCustomRestoreFocus.parameters = {eyes: {include: false}};
+StoryWithCustomRestoreFocus.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryWithHiddenOverlay = () =>
   React.createElement(() => {
@@ -299,7 +308,10 @@ export const StoryWithHiddenOverlay = () =>
     );
   });
 StoryWithHiddenOverlay.storyName = 'hidden overlay';
-StoryWithHiddenOverlay.parameters = {eyes: {include: false}};
+StoryWithHiddenOverlay.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryWithDisabledFocusTrap = () =>
   React.createElement(() => {
@@ -334,7 +346,10 @@ export const StoryWithDisabledFocusTrap = () =>
     );
   });
 StoryWithDisabledFocusTrap.storyName = 'disabled focus trap';
-StoryWithDisabledFocusTrap.parameters = {eyes: {include: false}};
+StoryWithDisabledFocusTrap.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryModelessModal = () =>
   React.createElement(() => {
@@ -370,7 +385,7 @@ export const StoryModelessModal = () =>
     );
   });
 StoryModelessModal.storyName = 'modelss';
-StoryModelessModal.parameters = {eyes: {include: false}};
+StoryModelessModal.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 const ModalWrapper = styled.div`
   margin: 20px 0 20px 350px;
@@ -427,7 +442,10 @@ export const StoryModelessInlineModal = () =>
     );
   });
 StoryModelessInlineModal.storyName = 'modelss-inline';
-StoryModelessInlineModal.parameters = {eyes: {include: false}};
+StoryModelessInlineModal.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryOptionalHeaderClose = () =>
   React.createElement(() => {
@@ -470,7 +488,10 @@ export const StoryOptionalHeaderClose = () =>
     );
   });
 StoryOptionalHeaderClose.storyName = 'optional header & close';
-StoryOptionalHeaderClose.parameters = {eyes: {include: false}};
+StoryOptionalHeaderClose.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 export const StoryLogicalProps = () =>
   React.createElement(() => {
@@ -555,4 +576,4 @@ export const StoryNestedModals = () =>
     );
   });
 StoryNestedModals.storyName = 'nested-modals';
-StoryNestedModals.parameters = {eyes: {include: false}};
+StoryNestedModals.parameters = {eyes: {include: false}, percy: {skip: true}};

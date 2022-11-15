@@ -1,8 +1,14 @@
 import React, {useEffect, useRef} from 'react';
-import {Block, Menu, MenuDivider, MenuItem} from 'newskit';
+import {
+  Block,
+  InstrumentationProvider,
+  Menu,
+  MenuDivider,
+  MenuItem,
+} from 'newskit';
 import LinkNext from 'next/link';
 import {useRouter} from 'next/router';
-import routes from '../../routes';
+import {routes} from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
 import {MenuMobileCollapsible} from '../menu-collapsible/menu-collapsible';
 import {PageLinkProps, SiteMenuItemProps, SubNavProps} from './types';
@@ -28,6 +34,7 @@ const MenuTitleLinks: React.FC<PageLinkProps> = ({
         href={href}
         data-testid={page}
         selected={active}
+        eventContext={{value: children}}
         overrides={{
           stylePreset: 'sideBarNavigation',
           typographyPreset: 'utilityButton020',
@@ -92,18 +99,20 @@ const MenuDesktop = ({path}: {path: string}) => {
     currentRoute && routes.filter(({id}) => id === currentRoute[0]);
 
   return (
-    <Menu
-      aria-label="menu-sidebar"
-      vertical
-      size="small"
-      align="start"
-      overrides={{spaceInline: 'space000'}}
-    >
-      {currentSection &&
-        currentSection.map(({subNav, id}) => (
-          <SiteMenuItem menuItemList={subNav} key={id} />
-        ))}
-    </Menu>
+    <InstrumentationProvider context={{area: 'side navigation'}}>
+      <Menu
+        aria-label="menu-sidebar"
+        vertical
+        size="small"
+        align="start"
+        overrides={{spaceInline: 'space000'}}
+      >
+        {currentSection &&
+          currentSection.map(({subNav, id}) => (
+            <SiteMenuItem menuItemList={subNav} key={id} />
+          ))}
+      </Menu>
+    </InstrumentationProvider>
   );
 };
 

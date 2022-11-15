@@ -30,7 +30,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Actions & Inputs',
-      name: 'Share Bar (deprecated)',
+      name: 'Share Bar',
       hero: {
         illustration: 'components/share-bar/share-bar-illustration',
       },
@@ -43,6 +43,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
       introduced: 'v0.20.1',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
+      storybookId: 'deprecated-share-bar--story-horizontal',
     }}
     interactiveDemo={{
       introduction:

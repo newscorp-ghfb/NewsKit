@@ -1,9 +1,9 @@
 // / <reference types="Cypress" />
 
-import siteRoutes from '../../../site/routes';
+import {routes} from '../../../site/routes';
 import {flatRoutes} from '../../support/commands';
 
-const pages = flatRoutes(siteRoutes, 'id');
+const pages = flatRoutes(routes, 'id');
 
 describe('Page accessibility', () => {
   pages.forEach(path => {

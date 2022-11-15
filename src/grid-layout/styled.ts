@@ -1,6 +1,11 @@
 import {Theme} from '../theme';
 import {logicalProps} from '../utils/logical-properties';
-import {getResponsiveSize, handleResponsiveProp, styled} from '../utils/style';
+import {
+  getResponsiveSize,
+  getResponsiveSpace,
+  handleResponsiveProp,
+  styled,
+} from '../utils/style';
 import {GridLayoutProps} from './types';
 
 const GRID_DEFAULT_PROPS = {
@@ -14,6 +19,9 @@ const GRID_DEFAULT_PROPS = {
   alignItems: undefined,
   areas: undefined,
   inline: false,
+  autoFlow: undefined,
+  autoRows: undefined,
+  autoColumns: undefined,
 };
 
 const mapTemplate = (theme: Theme, templateString?: string) =>
@@ -23,6 +31,9 @@ const mapTemplate = (theme: Theme, templateString?: string) =>
     .join(' ');
 
 export const StyledGridLayout = styled.div<GridLayoutProps>`
+  margin: 0;
+  padding: 0;
+
   ${handleResponsiveProp({inline: GRID_DEFAULT_PROPS.inline}, ({inline}) => ({
     display: inline ? 'inline-grid' : 'grid',
   }))}
@@ -60,6 +71,27 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
   }))};
 
   ${handleResponsiveProp(
+    {autoFlow: GRID_DEFAULT_PROPS.autoFlow},
+    ({autoFlow}) => ({
+      gridAutoFlow: autoFlow,
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {autoRows: GRID_DEFAULT_PROPS.autoRows},
+    ({autoRows}, {theme}) => ({
+      gridAutoRows: mapTemplate(theme, autoRows),
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {autoColumns: GRID_DEFAULT_PROPS.autoColumns},
+    ({autoColumns}, {theme}) => ({
+      gridAutoColumns: mapTemplate(theme, autoColumns),
+    }),
+  )}
+
+  ${handleResponsiveProp(
     {justifyContent: GRID_DEFAULT_PROPS.justifyContent},
     ({justifyContent}) => ({
       justifyContent,
@@ -86,7 +118,10 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
       alignItems,
     }),
   )}
-  
+
+
+  ${/* LOGICAL_PROPS_TO_DO: spaceInset to be removed. */ ''}
+  ${getResponsiveSpace('padding', '', '', 'spaceInset')};
   ${getResponsiveSize('width', 'gridLayout', '', 'width')};
   ${getResponsiveSize('minWidth', 'gridLayout', '', 'minWidth')};
   ${getResponsiveSize('maxWidth', 'gridLayout', '', 'maxWidth')};

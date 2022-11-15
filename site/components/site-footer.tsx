@@ -10,6 +10,7 @@ import {
   TextBlock,
   CellProps,
   Divider,
+  InstrumentationProvider,
 } from 'newskit';
 import {Link} from './link';
 
@@ -70,42 +71,48 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
     <Footer>
       <Grid xsRowGutter="space060" mdRowGutter="space000">
         <Cell {...cellProps}>
-          <FooterMenu>
-            <FooterLink>
-              <Link
-                href="https://www.newscareers.co.uk/"
-                target="_blank"
-                external
-                overrides={linkOverrides}
-              >
-                Careers
-              </Link>
-            </FooterLink>
-            <FooterLink>
-              <Link
-                href="https://medium.com/newskit-design-system"
-                target="_blank"
-                external
-                overrides={linkOverrides}
-              >
-                Blog
-              </Link>
-            </FooterLink>
-            <FooterLink>
-              <ConsentSettingsLink
-                privacyManagerId="407619"
-                gdpr
-                overrides={linkOverrides}
-              >
-                Privacy policy
-              </ConsentSettingsLink>
-            </FooterLink>
-            <FooterLink>
-              <Link href="/help/terms-and-conditions" overrides={linkOverrides}>
-                Terms & conditions
-              </Link>
-            </FooterLink>
-          </FooterMenu>
+          <InstrumentationProvider context={{area: 'footer navigation'}}>
+            <FooterMenu>
+              <FooterLink>
+                <Link
+                  href="https://www.newscareers.co.uk/"
+                  target="_blank"
+                  external
+                  overrides={linkOverrides}
+                >
+                  Careers
+                </Link>
+              </FooterLink>
+              <FooterLink>
+                <Link
+                  href="https://medium.com/newskit-design-system"
+                  target="_blank"
+                  external
+                  overrides={linkOverrides}
+                >
+                  Blog
+                </Link>
+              </FooterLink>
+              <FooterLink>
+                <ConsentSettingsLink
+                  privacyManagerId="407619"
+                  gdpr
+                  overrides={linkOverrides}
+                  eventContext={{value: 'Privacy policy'}}
+                >
+                  Privacy policy
+                </ConsentSettingsLink>
+              </FooterLink>
+              <FooterLink>
+                <Link
+                  href="/help/terms-and-conditions"
+                  overrides={linkOverrides}
+                >
+                  Terms & conditions
+                </Link>
+              </FooterLink>
+            </FooterMenu>
+          </InstrumentationProvider>
         </Cell>
 
         <Cell {...cellProps}>

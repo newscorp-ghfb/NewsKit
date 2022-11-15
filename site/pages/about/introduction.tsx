@@ -34,10 +34,9 @@ const cards = [
     },
     stylePrefix: 'principleCard',
     label: 'User focused',
-    title:
-      'We design for people. Whether the product teams using our components or the customers using the end products',
+    title: 'We design for people',
     description:
-      'We establish insights into our user needs through qualitative and quantitative data; we continually test our components and the overall design system and seek feedback to ensure it meets these needs.',
+      'Everything revolves around our customers. Everything we do should make their lives a little easier - and sometimes a lot.',
     overrides: principleCardoverrides,
   },
   {
@@ -47,10 +46,9 @@ const cards = [
     },
     stylePrefix: 'principleCard',
     label: 'Inclusive',
-    title:
-      'We’re inclusive first to ensure our solutions meet the needs of as many users as possible',
+    title: 'We’re inclusive first',
     description:
-      'Every design decision has the potential to include or exclude users. The components are accessible to WCAG 2.1 AA standards. We strive for clarity around everything we do, simplifying the complex. We use simple language, avoid acronyms and offer more detail when required. Our users should always be able to understand and act with confidence.',
+      'Every design decision has the potential to include or exclude. We aim to make everything - from words to images to fonts - simple, clear and accessible for everyone.',
     overrides: principleCardoverrides,
   },
   {
@@ -60,22 +58,9 @@ const cards = [
     },
     stylePrefix: 'principleCard',
     label: 'Essential',
-    title:
-      'Every component serves a user’s need that is shared by multiple services or products',
+    title: 'We’re open (and open source)',
     description:
-      "We never build something 'just in case'. Every design decision and component has a clear purpose and contributes to a larger goal; it shouldn't be there if it doesn't.",
-    overrides: principleCardoverrides,
-  },
-  {
-    media: {
-      src: 'static/about-principles-04.svg',
-      alt: '',
-    },
-    stylePrefix: 'principleCard',
-    label: 'Collaborative',
-    title: 'Great ideas come from everywhere',
-    description:
-      'Everyone is encouraged to contribute. We share everything we are doing at every step: designs, code, ideas, successes or failures. We encourage and seek feedback, suggestions and contributions. We all take responsibility for the output of the team and reject ownership.',
+      'We share everything. We love feedback and contributions. And we look for great ideas everywhere.',
     overrides: principleCardoverrides,
   },
 ];
@@ -99,7 +84,7 @@ const Introduction = (
       <PageIntroduction
         type="About"
         name="Introduction"
-        introduction="NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. NewsKit is built on modular design principles and backed by best practice guidance for design and development."
+        introduction="NewsKit makes building digital products quicker and simpler for everyone."
         hero={{
           illustration: 'about/introduction-hero-stepping-stones-illustration',
         }}
@@ -108,67 +93,46 @@ const Introduction = (
 
     <ComponentPageCell>
       <ContentSection sectionName="benefits">
-        <ContentPrimary
-          headline="Benefits"
-          description="Design systems have become the gold standard for product development. Some benefits include:"
+        <ContentPrimary headline="Benefits" />
+
+        <ContentSecondary
+          headline="Speed"
+          description="Get to market faster. NewsKit takes care of the research, design and development so you can focus on your users."
         />
 
         <ContentSecondary
-          headline="Speed to market"
-          description="Upfront research, design and development allows teams to build new
-        features or products quickly and with confidence. Rapid creation
-        translates to the increased pace of innovation."
+          headline="Community"
+          description="Be part of something bigger. When you join NewsKit’s open source community, problems only need solving once - then everyone benefits."
         />
 
         <ContentSecondary
-          headline="Shared knowledge"
-          description="NewsKit is built through collaboration and is available to all.
-        Feedback from a diverse range of consumers produces a more robust,
-        considered and flexible product. In addition, NewsKit allows teams
-        to benefit from the research and experience of other teams and solve
-        problems once."
-        />
-
-        <ContentSecondary
-          headline="Best Practice"
+          headline="Accessibility"
           description={
             <>
-              All NewsKit components support keyboard navigation, screen readers
-              and touch screens, conforming to{' '}
+              Build products for everyone. NewsKit meets Build products for
+              everyone. NewsKit meets{' '}
               <Link href="https://www.w3.org/TR/WCAG21/" target="_blank">
-                W3C&apos;s WCAG 2.1 guidelines
+                WCAG
               </Link>{' '}
-              for accessibility. In addition, the components take in SEO
-              considerations where relevant and are rigorously tested. Finally,
-              detailed guidance documentation ensures clarity.
+              and WAI-ARIA standards, and supports keyboard navigation, screen
+              readers and touchscreens.
             </>
           }
         />
 
         <ContentSecondary
           headline="Sustainability"
-          description="NewsKit allows teams to do more with less; components are maintained
-        centrally, enabling teams to achieve incremental upgrades and manage
-        their digital product needs as they grow."
+          description="Do more with less. NewsKit lets you upgrade bit by bit and manage your needs - and costs - as you grow."
         />
 
         <ContentSecondary
-          headline="Flexibility"
-          description="The powerful theming system allows styling to be tailored to the
-        needs of any brand. Themes can be applied globally or per component,
-        enabling visual differences between sections, sub-brands or
-        unlocking user preferences like dark mode or page density settings.
-        In addition, all components are designed to ensure they can be
-        applied to multiple use cases."
+          headline="Customisation"
+          description="Stand out from the crowd. NewsKit’s powerful theming system lets you tailor the look and feel of components to your unique brand or sub-brand."
         />
 
         <ContentSecondary
-          headline="Consistency"
-          description="NewsKit establishes a common language between designer and engineer
-        and applies a systematic approach to all aspects of the interface.
-        Infinitely reusable components and clear guidance around design and
-        engineering best practices enable teams to build consistency across
-        products and teams."
+          headline="Cohesion"
+          description="Get your teams talking. NewsKit establishes a common language between designer and engineer, so everyone’s on the same page."
           showSeparator
         />
       </ContentSection>

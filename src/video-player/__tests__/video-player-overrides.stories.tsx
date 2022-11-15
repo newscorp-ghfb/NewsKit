@@ -121,8 +121,12 @@ export const StoryVideoPlayerPlayButtonOverrides = () => (
 );
 StoryVideoPlayerPlayButtonOverrides.storyName = 'play-button-overrides';
 StoryVideoPlayerPlayButtonOverrides.parameters = {
+  // todo: remove arbitrary wait
   eyes: {
     waitBeforeCapture: 5000,
+  },
+  percy: {
+    waitForTimeout: 5000,
   },
 };
 
@@ -163,6 +167,7 @@ export const StoryVideoPlayerSeekBarOverrides = () => (
 StoryVideoPlayerSeekBarOverrides.storyName = 'seek-bar-overrides';
 StoryVideoPlayerSeekBarOverrides.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };
 
 export const StoryVideoPlayerControlBarOverrides = () => (
@@ -213,6 +218,7 @@ export const StoryVideoPlayerControlBarOverrides = () => (
 StoryVideoPlayerControlBarOverrides.storyName = 'control-bar-overrides';
 StoryVideoPlayerControlBarOverrides.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };
 
 export const StoryVideoPlayerDockTextOverrides = () => (
@@ -249,8 +255,12 @@ export const StoryVideoPlayerDockTextOverrides = () => (
 );
 StoryVideoPlayerDockTextOverrides.storyName = 'doc-text-overrides';
 StoryVideoPlayerPlayButtonOverrides.parameters = {
+  // todo: remove arbitrary wait
   eyes: {
     waitBeforeCapture: 5000,
+  },
+  percy: {
+    waitForTimeout: 5000,
   },
 };
 
@@ -285,6 +295,7 @@ StoryVideoPlayerMiniCardOverlayOverrides.storyName =
   'minicard-overlay-overrides';
 StoryVideoPlayerMiniCardOverlayOverrides.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };
 
 export const StoryVideoPlayerLogicalPropsOverrides = () => (
@@ -307,4 +318,5 @@ export const StoryVideoPlayerLogicalPropsOverrides = () => (
 StoryVideoPlayerLogicalPropsOverrides.storyName = 'logical-props-overlay';
 StoryVideoPlayerLogicalPropsOverrides.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };

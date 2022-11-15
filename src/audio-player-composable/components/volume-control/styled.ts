@@ -1,8 +1,8 @@
 import {GridLayout} from '../../../grid-layout';
 import {
   getResponsiveSize,
-  getStylePreset,
   styled,
+  getStylePreset,
   getResponsiveSpace,
 } from '../../../utils/style';
 import {AudioPlayerVolumeControlProps} from './types';

@@ -3,10 +3,13 @@ import {
   Divider,
   GridLayout,
   IconButton,
+  InstrumentationProvider,
+  Label,
   Menu,
   MenuGroup,
   MenuItem,
   P,
+  Switch,
   TextBlock,
   toNewsKitIcon,
 } from 'newskit';
@@ -24,6 +27,31 @@ export const GitHubLaunch: React.FC = () => (
       <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
     </GridLayout>
   </StyledAnchor>
+);
+
+export const DarkModeToggle: React.FC<{
+  themeMode: string;
+  toggleTheme: () => void;
+}> = ({themeMode, toggleTheme}) => (
+  <GridLayout columns="1fr 44px">
+    <Label
+      overrides={{
+        typographyPreset: 'utilityLabel030',
+        stylePreset: 'inkBase',
+        paddingBlockStart: 'space020',
+      }}
+      htmlFor="dark-theme-switch"
+    >
+      Dark theme
+    </Label>
+    <Switch
+      id="dark-theme-switch"
+      checked={themeMode === 'dark'}
+      onChange={toggleTheme}
+      size="small"
+      label=" "
+    />
+  </GridLayout>
 );
 
 type NavProps = {
@@ -62,6 +90,7 @@ export const MenuMobileCollapsible = ({
                 <MenuItem
                   href={id}
                   selected={path.includes(id)}
+                  eventContext={{value: title}}
                   overrides={{
                     minHeight: '40px',
                     stylePreset: 'sideBarNavigation',
@@ -102,76 +131,78 @@ export const MenuMobileCollapsible = ({
     </>
   );
   return (
-    <Menu
-      aria-label="sidebar-secondary-navigation"
-      vertical
-      size="small"
-      align="start"
-      overrides={{spaceInline: 'space000'}}
-    >
-      {menu.map(({title, subNav}, index) => (
-        <MenuCollapsible
-          className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
-          key={title}
-        >
-          <TextBlock
-            as="h3"
-            marginInline="space060"
-            marginBlock="space010"
-            typographyPreset="utilityHeading020"
-            onClick={() =>
-              openPanelIds.includes(index)
-                ? setOpenPanelIds([])
-                : setOpenPanelIds([index])
-            }
+    <InstrumentationProvider context={{area: 'mobile navigation'}}>
+      <Menu
+        aria-label="sidebar-secondary-navigation"
+        vertical
+        size="small"
+        align="start"
+        overrides={{spaceInline: 'space000'}}
+      >
+        {menu.map(({title, subNav}, index) => (
+          <MenuCollapsible
+            className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
+            key={title}
           >
-            <GridLayout columns="1fr auto" columnGap="20px">
-              {title}
-              {openPanelIds.includes(index) ? (
-                <IconButton
-                  aria-label={`Show sub-menu for ${title}`}
-                  aria-expanded={
-                    openPanelIds.includes(index) ? 'true' : 'false'
-                  }
-                  overrides={{
-                    stylePreset: 'iconButtonMinimalPrimary',
-                  }}
-                >
-                  <IconExpandLess
+            <TextBlock
+              as="h3"
+              marginInline="space060"
+              marginBlock="space010"
+              typographyPreset="utilityHeading020"
+              onClick={() =>
+                openPanelIds.includes(index)
+                  ? setOpenPanelIds([])
+                  : setOpenPanelIds([index])
+              }
+            >
+              <GridLayout columns="1fr auto" columnGap="20px">
+                {title}
+                {openPanelIds.includes(index) ? (
+                  <IconButton
+                    aria-label={`Show sub-menu for ${title}`}
+                    aria-expanded={
+                      openPanelIds.includes(index) ? 'true' : 'false'
+                    }
                     overrides={{
-                      size: 'iconSize020',
-                      stylePreset: 'inkContrast',
+                      stylePreset: 'iconButtonMinimalPrimary',
                     }}
-                  />
-                </IconButton>
-              ) : (
-                <IconButton
-                  aria-label={`Hide sub-menu for ${title}`}
-                  aria-expanded={
-                    openPanelIds.includes(index) ? 'true' : 'false'
-                  }
-                  overrides={{
-                    stylePreset: 'iconButtonMinimalPrimary',
-                  }}
-                >
-                  <IconExpandMore
+                  >
+                    <IconExpandLess
+                      overrides={{
+                        size: 'iconSize020',
+                        stylePreset: 'inkContrast',
+                      }}
+                    />
+                  </IconButton>
+                ) : (
+                  <IconButton
+                    aria-label={`Hide sub-menu for ${title}`}
+                    aria-expanded={
+                      openPanelIds.includes(index) ? 'true' : 'false'
+                    }
                     overrides={{
-                      size: 'iconSize020',
-                      stylePreset: 'inkContrast',
+                      stylePreset: 'iconButtonMinimalPrimary',
                     }}
-                  />
-                </IconButton>
-              )}
-            </GridLayout>
-          </TextBlock>
+                  >
+                    <IconExpandMore
+                      overrides={{
+                        size: 'iconSize020',
+                        stylePreset: 'inkContrast',
+                      }}
+                    />
+                  </IconButton>
+                )}
+              </GridLayout>
+            </TextBlock>
 
-          {subNav && createMenuItem(subNav)}
-        </MenuCollapsible>
-      ))}
+            {subNav && createMenuItem(subNav)}
+          </MenuCollapsible>
+        ))}
 
-      <MobileNavigationDivider>
-        <Divider />
-      </MobileNavigationDivider>
-    </Menu>
+        <MobileNavigationDivider>
+          <Divider />
+        </MobileNavigationDivider>
+      </Menu>
+    </InstrumentationProvider>
   );
 };

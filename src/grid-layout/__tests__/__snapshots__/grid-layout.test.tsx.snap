@@ -3,6 +3,8 @@
 exports[`GridLayout renders GridLayout 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -37,6 +39,8 @@ exports[`GridLayout renders GridLayout 1`] = `
 exports[`GridLayout renders GridLayout with areas 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-areas: "A A" "B C" "D E";
 }
@@ -96,6 +100,8 @@ exports[`GridLayout renders GridLayout with areas 1`] = `
 exports[`GridLayout renders GridLayout with areas without quotes around areas 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-areas: "A A" "B C" "D E";
 }
@@ -165,6 +171,8 @@ exports[`GridLayout renders GridLayout with areas without quotes around areas 1`
 exports[`GridLayout renders GridLayout with colum/row prop 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(10, 1fr);
@@ -200,6 +208,8 @@ exports[`GridLayout renders GridLayout with colum/row prop 1`] = `
 exports[`GridLayout renders GridLayout with different areas for different breakpoints 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
 }
 
@@ -270,6 +280,8 @@ exports[`GridLayout renders GridLayout with different areas for different breakp
 exports[`GridLayout renders GridLayout with logical overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   margin-inline: 30px;
   padding-inline: 30px;
@@ -305,6 +317,8 @@ exports[`GridLayout renders GridLayout with logical overrides 1`] = `
 exports[`GridLayout renders GridLayout with mixed values in columns and rows 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
 }
 
@@ -422,8 +436,130 @@ exports[`GridLayout renders GridLayout with mixed values in columns and rows 1`]
 exports[`GridLayout renders GridLayout with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   width: 100px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders a grid with autoColumns 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  grid-template-areas: "a a";
+  grid-auto-columns: 80px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders a grid with autoFlow 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 60px);
+  grid-auto-flow: column;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders a grid with autoRows 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  grid-template-areas: "a a";
+  grid-auto-rows: 80px;
 }
 
 <div
@@ -456,6 +592,8 @@ exports[`GridLayout renders GridLayout with overrides 1`] = `
 exports[`GridLayout renders a grid with rowGap and columnGap 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   row-gap: 20px;
   -webkit-column-gap: 20px;
@@ -493,6 +631,8 @@ exports[`GridLayout renders a grid with rowGap and columnGap 1`] = `
 exports[`GridLayout renders a grid with rowGap and columnGap as tokens 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: grid;
   row-gap: 8px;
   -webkit-column-gap: 8px;
@@ -530,6 +670,8 @@ exports[`GridLayout renders a grid with rowGap and columnGap as tokens 1`] = `
 exports[`GridLayout renders inline GridLayout 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 0;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
 }
