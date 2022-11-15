@@ -1,4 +1,4 @@
-import {renderWithTheme} from 'newskit/test/test-utils';
+import {renderWithTheme} from '../../../utils/test-utils';
 import ReleaseNotes from '../release-notes';
 import '@testing-library/jest-dom';
 

@@ -122,7 +122,7 @@ exports[`ReleaseHeader renders correctly 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #3B3B3B;
+  fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -150,7 +150,7 @@ exports[`ReleaseHeader renders correctly 1`] = `
 
 .emotion-8 {
   margin: 0;
-  color: #6A6A6A;
+  color: #5A6A79;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -163,7 +163,7 @@ exports[`ReleaseHeader renders correctly 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #6A6A6A;
+  fill: #5A6A79;
 }
 
 .emotion-8::before {
@@ -207,7 +207,7 @@ exports[`ReleaseHeader renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
+  padding: 4px 8px;
   min-height: 32px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
@@ -220,6 +220,12 @@ exports[`ReleaseHeader renders correctly 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
+  border-radius: 20rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #F0F1F3;
+  color: #09111C;
+  background-color: #DEE2E5;
 }
 
 .emotion-11 svg {
