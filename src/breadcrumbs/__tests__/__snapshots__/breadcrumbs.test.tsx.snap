@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs renders with default props 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
+  cursor: pointer;
+  color: #3358CC;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-3:disabled {
+  background-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: transparent;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3B3B3B;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  background-color: transparent;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<nav
+    aria-label="Breadcrumb component"
+    class="emotion-0"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-0"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;

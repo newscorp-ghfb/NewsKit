@@ -1,6 +1,5 @@
 import React from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {BreadcrumbsContextProvider} from './context';
 import {
   StyledIconContainer,
   StyledList,
@@ -75,14 +74,18 @@ const ThemelessBreadcrumbs = React.forwardRef<
     ) as React.ReactElement<BreadcrumbItemProps>[];
 
     return (
-      <BreadcrumbsContextProvider value={{size, showTrailingSeparator}}>
-        <StyledNav aria-label="Breadcrumb component">
+      <>
+        <StyledNav
+          aria-label="Breadcrumb component"
+          size={size}
+          showTrailingSeparator={showTrailingSeparator}
+        >
           <StyledOrderdList ref={ref} {...rest} overrides={overrides}>
             {showTrailingSeparator
               ? React.Children.map(children, child => (
                   <>
-                    <StyledList>{child}</StyledList>
-                    <StyledList aria-hidden="true">
+                    <StyledList key={3}>{child}</StyledList>
+                    <StyledList key={4} aria-hidden="true">
                       <StyledIconContainer>
                         <BreadcrumbsIcon
                           {...(BreadcrumbsIconProps as BreadcrumbsProps)}
@@ -93,10 +96,10 @@ const ThemelessBreadcrumbs = React.forwardRef<
                 ))
               : breadcrumbChildren.reduce(
                   (acc: React.ReactElement[], listItem, index, array) => {
-                    acc.push(<StyledList>{listItem}</StyledList>);
+                    acc.push(<StyledList key={2}>{listItem}</StyledList>);
                     if (children && index < array.length - 1) {
                       acc.push(
-                        <StyledList aria-hidden="true">
+                        <StyledList aria-hidden="true" key={1}>
                           <StyledIconContainer>
                             <BreadcrumbsIcon
                               {...(BreadcrumbsIconProps as BreadcrumbsProps)}
@@ -111,7 +114,7 @@ const ThemelessBreadcrumbs = React.forwardRef<
                 )}
           </StyledOrderdList>
         </StyledNav>
-      </BreadcrumbsContextProvider>
+      </>
     );
   },
 );
