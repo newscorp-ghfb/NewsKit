@@ -212,26 +212,51 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the unordered list component, its variations, and configuration options.',
       playground: {
         componentName: 'Unorderedist',
-        component: (props: UnorderedListProps) => (
-          <UnorderedList {...props}>
-            <>
-              NewsKit provides components, guidelines and standards to enable
-              digital product teams to create high-quality, consistent products
-              quickly. NewsKit is built on modular design principles and backed
-              by best practice guidance for design and development.
-            </>
-            <>
-              Unordered list items are not numbered, so use them in instances
-              where ordering is not a factor. Where items are required to appear
-              in numerical order use an ordered list.
-            </>
-            <>
-              Use unordered lists to break up blocks of related content into
-              manageable bulleted items to make the information easier for users
-              to read.
-            </>
-          </UnorderedList>
-        ),
+        // component: (props: UnorderedListProps) => (
+        //   <UnorderedList {...props}>
+        //     <p>
+        //       NewsKit provides components, guidelines and standards to enable
+        //       digital product teams to create high-quality, consistent products
+        //       quickly. NewsKit is built on modular design principles and backed
+        //       by best practice guidance for design and development.
+        //     </p>
+        //     <p>
+        //       Unordered list items are not numbered, so use them in instances
+        //       where ordering is not a factor. Where items are required to appear
+        //       in numerical order use an ordered list.
+        //     </p>
+        //     <p>
+        //       Use unordered lists to break up blocks of related content into
+        //       manageable bulleted items to make the information easier for users
+        //       to read.
+        //     </p>
+        //   </UnorderedList>
+        // ),
+        component: state => {
+          const {...props} = state as UnorderedListProps;
+          return (
+            <UnorderedList {...props}>
+              <>
+                NewsKit provides components, guidelines and standards to enable
+                digital product teams to create high-quality, consistent
+                products quickly. NewsKit is built on modular design principles
+                and backed by best practice guidance for design and development.
+              </>
+              <>
+                NewsKit provides components, guidelines and standards to enable
+                digital product teams to create high-quality, consistent
+                products quickly. NewsKit is built on modular design principles
+                and backed by best practice guidance for design and development.
+              </>
+              <>
+                NewsKit provides components, guidelines and standards to enable
+                digital product teams to create high-quality, consistent
+                products quickly. NewsKit is built on modular design principles
+                and backed by best practice guidance for design and development.
+              </>
+            </UnorderedList>
+          );
+        },
         knobs: [
           // {
           //   name: 'List Data',
