@@ -3,7 +3,7 @@ import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
 import {Button} from '../button';
 
-export const StyledNav = styled.nav``;
+export const StyledNav = styled.nav<BreadcrumbsProps>``;
 
 export const StyledOrderdList = styled.ol<BreadcrumbsProps>`
   list-style: none;

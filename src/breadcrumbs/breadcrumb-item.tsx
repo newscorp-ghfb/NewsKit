@@ -1,11 +1,10 @@
 import React from 'react';
-import {useBreadCrumbsContext} from './context';
 import {StyledButton} from './styled';
-import {BreadcrumbItemProps} from './types';
+import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
 
 export const BreadcrumbItem = React.forwardRef<
   HTMLButtonElement,
-  BreadcrumbItemProps
+  BreadcrumbItemProps & BreadcrumbsProps
 >(
   (
     {
@@ -13,18 +12,17 @@ export const BreadcrumbItem = React.forwardRef<
       selected,
       href,
       overrides,
+      size = 'medium',
       eventContext = {},
       eventOriginator = 'breadcrumb-item',
       ...rest
     },
     ref,
   ) => {
-    const {size} = useBreadCrumbsContext();
-
     const buttonProps = {
       ...rest,
-      size,
       selected,
+      size,
     };
     return (
       <StyledButton
