@@ -3,5 +3,5 @@ export {BreadcrumbItem} from './breadcrumb-item';
 export type {
   BreadcrumbsProps,
   BreadcrumbItemProps,
-  BreadcrumbItemSize,
+  BreadcrumbSize,
 } from './types';

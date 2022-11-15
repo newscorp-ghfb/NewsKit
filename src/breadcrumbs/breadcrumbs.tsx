@@ -79,9 +79,9 @@ const ThemelessBreadcrumbs = React.forwardRef<
           {showTrailingSeparator
             ? React.Children.map(children, child => (
                 <>
-                  <StyledList key={3}>{child}</StyledList>
+                  <StyledList>{child}</StyledList>
 
-                  <StyledList key={4} aria-hidden="true">
+                  <StyledList aria-hidden="true">
                     <BreadcrumbsIcon
                       {...(BreadcrumbsIconProps as BreadcrumbsProps)}
                     />
@@ -90,10 +90,10 @@ const ThemelessBreadcrumbs = React.forwardRef<
               ))
             : breadcrumbChildren.reduce(
                 (acc: React.ReactElement[], listItem, index, array) => {
-                  acc.push(<StyledList key={2}>{listItem}</StyledList>);
+                  acc.push(<StyledList key={1}>{listItem}</StyledList>);
                   if (children && index < array.length - 1) {
                     acc.push(
-                      <StyledList aria-hidden="true" key={1}>
+                      <StyledList aria-hidden="true">
                         <BreadcrumbsIcon
                           {...(BreadcrumbsIconProps as BreadcrumbsProps)}
                         />

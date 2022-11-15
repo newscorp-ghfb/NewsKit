@@ -4,11 +4,11 @@ import {NewsKitIconProps} from '../icons';
 import {Override} from '../utils/overrides';
 import {EventData} from '../instrumentation';
 
-export type BreadcrumbItemSize = 'small' | 'medium' | 'large';
+export type BreadcrumbSize = 'small' | 'medium' | 'large';
 
 export interface BreadcrumbsProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
-  size?: BreadcrumbItemSize;
+  size?: BreadcrumbSize;
   showTrailingSeparator?: boolean;
   overrides?: {
     stylePreset?: MQ<string>;

@@ -1,19 +1,161 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Breadcrumbs renders with default props 1`] = `
+exports[`Breadcrumbs renders in large size 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
-  padding-left: 0;
-  margin: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<nav
+    aria-label="Breadcrumb component"
+    class="emotion-0"
+  >
+    <ol
+      class="emotion-1"
+      href="http://"
+    >
+      <li
+        class="emotion-2"
+      >
+        Breadcrumb Item
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders in medium size 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<nav
+    aria-label="Breadcrumb component"
+    class="emotion-0"
+  >
+    <ol
+      class="emotion-1"
+      href="http://"
+    >
+      <li
+        class="emotion-2"
+      >
+        Breadcrumb Item
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders in small size 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<nav
+    aria-label="Breadcrumb component"
+    class="emotion-0"
+  >
+    <ol
+      class="emotion-1"
+      href="http://"
+    >
+      <li
+        class="emotion-2"
+      >
+        Breadcrumb Item
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders with default props 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .emotion-3 {
@@ -50,12 +192,9 @@ exports[`Breadcrumbs renders with default props 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
+  color: #3358CC;
   cursor: pointer;
   color: #3358CC;
-  background-color: transparent;
   padding: 0px;
 }
 
@@ -64,40 +203,16 @@ exports[`Breadcrumbs renders with default props 1`] = `
   height: 24px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
 }
 
-.emotion-3:hover:not(:disabled) {
-  background-color: #254CAC;
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-3:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-3:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-3:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
+  color: #14328D;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -118,17 +233,14 @@ exports[`Breadcrumbs renders with default props 1`] = `
 
 .emotion-3:hover:not(:disabled) {
   color: #254CAC;
-  background-color: transparent;
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  background-color: transparent;
   color: #3B3B3B;
 }
 
 .emotion-3:active:not(:disabled) {
   color: #14328D;
-  background-color: transparent;
 }
 
 .emotion-4 {
@@ -162,7 +274,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
       class="emotion-1"
     >
       <li
-        class="emotion-0"
+        class="emotion-2"
       >
         <a
           class="emotion-3"
