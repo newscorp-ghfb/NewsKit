@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {GridLayout} from 'newskit';
-import {Release, ReleasesPageProps} from '../utils/release-notes/types';
+import {ReleasesPageProps} from '../utils/release-notes/types';
 import {
   Explore,
   Hero,
@@ -136,8 +136,10 @@ export default Index;
 // This function is called at build time and the response is passed to the page
 // component as props.
 export async function getStaticProps() {
-  const releases: Release[] = await fetchGitHubReleases(4);
-  const data = await getSheets('Homepage');
+  const [releases, data] = await Promise.all([
+    fetchGitHubReleases(4),
+    getSheets('Homepage'),
+  ]);
 
   const content = formatSheetData(data);
   return {props: {releases, content}};
