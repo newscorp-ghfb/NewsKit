@@ -4,6 +4,7 @@ import {
   toNewsKitIcon,
   UnorderedList,
   UnorderedListProps,
+  styled,
 } from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {LayoutProps} from '../../components/layout';
@@ -25,6 +26,14 @@ const infoIcon = (
     }}
   />
 );
+
+const PlaygroundContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+`;
 
 const commonPropsRows = [
   {
@@ -212,57 +221,37 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the unordered list component, its variations, and configuration options.',
       playground: {
         componentName: 'Unorderedist',
-        // component: (props: UnorderedListProps) => (
-        //   <UnorderedList {...props}>
-        //     <p>
-        //       NewsKit provides components, guidelines and standards to enable
-        //       digital product teams to create high-quality, consistent products
-        //       quickly. NewsKit is built on modular design principles and backed
-        //       by best practice guidance for design and development.
-        //     </p>
-        //     <p>
-        //       Unordered list items are not numbered, so use them in instances
-        //       where ordering is not a factor. Where items are required to appear
-        //       in numerical order use an ordered list.
-        //     </p>
-        //     <p>
-        //       Use unordered lists to break up blocks of related content into
-        //       manageable bulleted items to make the information easier for users
-        //       to read.
-        //     </p>
-        //   </UnorderedList>
-        // ),
         component: state => {
           const {...props} = state as UnorderedListProps;
           return (
-            <UnorderedList {...props}>
-              <>
-                NewsKit provides components, guidelines and standards to enable
-                digital product teams to create high-quality, consistent
-                products quickly. NewsKit is built on modular design principles
-                and backed by best practice guidance for design and development.
-              </>
-              <>
-                NewsKit provides components, guidelines and standards to enable
-                digital product teams to create high-quality, consistent
-                products quickly. NewsKit is built on modular design principles
-                and backed by best practice guidance for design and development.
-              </>
-              <>
-                NewsKit provides components, guidelines and standards to enable
-                digital product teams to create high-quality, consistent
-                products quickly. NewsKit is built on modular design principles
-                and backed by best practice guidance for design and development.
-              </>
-            </UnorderedList>
+            <PlaygroundContainer>
+              <UnorderedList {...props}>
+                <>
+                  NewsKit provides components, guidelines and standards to
+                  enable digital product teams to create high-quality,
+                  consistent products quickly. NewsKit is built on modular
+                  design principles and backed by best practice guidance for
+                  design and development.
+                </>
+                <>
+                  NewsKit provides components, guidelines and standards to
+                  enable digital product teams to create high-quality,
+                  consistent products quickly. NewsKit is built on modular
+                  design principles and backed by best practice guidance for
+                  design and development.
+                </>
+                <>
+                  NewsKit provides components, guidelines and standards to
+                  enable digital product teams to create high-quality,
+                  consistent products quickly. NewsKit is built on modular
+                  design principles and backed by best practice guidance for
+                  design and development.
+                </>
+              </UnorderedList>
+            </PlaygroundContainer>
           );
         },
         knobs: [
-          // {
-          //   name: 'List Data',
-          //   propName: 'children',
-          //   value: ['Prince Harry', 'Meghan Markle', 'Royal Family'],
-          // },
           {
             name: 'List Item Marker',
             propName: 'listItemMarker',
