@@ -212,13 +212,32 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the unordered list component, its variations, and configuration options.',
       playground: {
         componentName: 'Unorderedist',
-        component: (props: UnorderedListProps) => <UnorderedList {...props} />,
+        component: (props: UnorderedListProps) => (
+          <UnorderedList {...props}>
+            <>
+              NewsKit provides components, guidelines and standards to enable
+              digital product teams to create high-quality, consistent products
+              quickly. NewsKit is built on modular design principles and backed
+              by best practice guidance for design and development.
+            </>
+            <>
+              Unordered list items are not numbered, so use them in instances
+              where ordering is not a factor. Where items are required to appear
+              in numerical order use an ordered list.
+            </>
+            <>
+              Use unordered lists to break up blocks of related content into
+              manageable bulleted items to make the information easier for users
+              to read.
+            </>
+          </UnorderedList>
+        ),
         knobs: [
-          {
-            name: 'List Data',
-            propName: 'children',
-            value: ['Prince Harry', 'Meghan Markle', 'Royal Family'],
-          },
+          // {
+          //   name: 'List Data',
+          //   propName: 'children',
+          //   value: ['Prince Harry', 'Meghan Markle', 'Royal Family'],
+          // },
           {
             name: 'List Item Marker',
             propName: 'listItemMarker',
