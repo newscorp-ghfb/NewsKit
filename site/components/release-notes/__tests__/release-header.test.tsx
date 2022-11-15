@@ -1,4 +1,4 @@
-import {renderWithTheme} from '../../../utils/test-utils';
+import {renderWithTheme} from 'newskit/test/test-utils';
 import ReleaseHeader from '../release-header';
 
 describe('ReleaseHeader', () => {

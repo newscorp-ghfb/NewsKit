@@ -41,4 +41,3 @@ junit.xml
 /src/icons/outlined/material
 cypress/config/a11y-components.json
 lib/codemod/.eslintcache
-/site/.env.local
