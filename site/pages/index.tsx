@@ -13,11 +13,8 @@ import Layout, {LayoutProps} from '../components/layout';
 import {IconFilledLaunch} from '../../src/icons';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
-import {formatSheetData, getSheet} from '../utils/google-sheet';
-import {
-  ContentProps,
-  getValueFromCMS,
-} from '../utils/google-sheet/utils/get-value-from-cms';
+import {ContentProps, getSheets} from '../utils/google-sheet';
+import {formatSheetData, getValueFromCMS} from '../utils/google-sheet/utils';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -55,10 +52,10 @@ const Index = ({
           }}
         >
           <FeatureCard
-            title={getValueFromCMS(content, 'LatestBlogTitle', 'Latest Blog')}
+            title={getValueFromCMS(content, 'HeroCardTitle', 'Latest Blog')}
             description={getValueFromCMS(
               content,
-              'LatestBlogDescription',
+              'HeroCardDescription',
               "How an audio player component tells the story of NewsKit Design System's changing strategy",
             )}
             stylePrefix="worldDesignSystemsWeekCard"
@@ -70,12 +67,12 @@ const Index = ({
             buttonIcon={<IconFilledLaunch />}
             buttonLabel={getValueFromCMS(
               content,
-              'LatestBlogLinkText',
+              'HeroCardLinkText',
               'Read on Medium',
             )}
             buttonHref={getValueFromCMS(
               content,
-              'LatestBlogLink',
+              'HeroCardLink',
               'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
             )}
             buttonOverrides={{
@@ -140,7 +137,7 @@ export default Index;
 // component as props.
 export async function getStaticProps() {
   const releases: Release[] = await fetchGitHubReleases(4);
-  const data = await getSheet();
+  const data = await getSheets('Homepage');
 
   const content = formatSheetData(data);
   return {props: {releases, content}};
