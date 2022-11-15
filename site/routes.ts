@@ -4,29 +4,59 @@ export const routes = [
     id: '/about',
     subNav: [
       {
-        title: 'Introduction',
+        title: 'Overview',
         page: true,
-        id: '/about/introduction',
+        id: '/about/overview',
+        indexPage: true,
+        description:
+          'NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. ',
       },
       {
-        title: 'Release notes',
-        page: true,
-        id: '/about/release-notes',
-      },
-      {
-        title: 'Roadmap',
-        page: true,
-        id: '/about/roadmap',
-      },
-      {
-        title: 'Contribute',
-        page: true,
-        id: '/about/contribute',
-      },
-      {
-        title: 'Contact us',
-        page: true,
-        id: '/about/contact-us',
+        title: 'About',
+        id: '/about/overview',
+        subNav: [
+          {
+            title: 'Introduction',
+            page: true,
+            id: '/about/introduction',
+            description:
+              'NewsKit makes building digital products quicker and simpler for everyone.',
+            illustration:
+              'about/introduction-hero-stepping-stones-illustration',
+          },
+          {
+            title: 'Release notes',
+            page: true,
+            id: '/about/release-notes',
+            description:
+              'Announcements about the latest and previous releases of NewsKit.',
+            illustration: 'about/release-notes-hero-illustration',
+          },
+          {
+            title: 'Roadmap',
+            page: true,
+            id: '/about/roadmap',
+            description:
+              'NewsKit’s Design System team is busy building and planning to help you build better products faster.',
+            illustration: 'components/hero-roadmap-illustration',
+          },
+          {
+            title: 'Contribute',
+            page: true,
+            id: '/about/contribute',
+            description:
+              'There are a lot of ways to contribute to the NewsKit community and Design System; from submitting a proposal to designing a new feature for other users to benefit from.',
+            illustration: 'about/hero-contribute-illustration',
+          },
+          {
+            title: 'Contact us',
+            page: true,
+            id: '/about/contact-us',
+            description:
+              'Have a question about our design system? The NewsKit team is here to help you.',
+            illustration: 'about/contact-us-hero-illustration',
+          },
+        ],
       },
     ],
   },

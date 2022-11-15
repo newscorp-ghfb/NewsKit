@@ -32,6 +32,8 @@ const componentCategories =
 const utilities = componentsSubNav?.find(e => e.id === '/utils');
 const deprecated = componentsSubNav?.find(e => e.id === '/deprecated');
 
+const pageDescription = `Components are key building blocks of the NewsKit design system.`;
+
 const OverviewComponent = (layoutProps: LayoutProps) => {
   const breakpoint = useBreakpointKey();
 
@@ -39,14 +41,14 @@ const OverviewComponent = (layoutProps: LayoutProps) => {
     <Layout {...layoutProps} newPage>
       <HeadNextSeo
         title="Components overview"
-        description="Components are key building blocks of the NewsKit design system."
+        description={pageDescription}
         image={{
           url: 'social/components.png',
           alt: 'Components overview',
         }}
       />
       <HeaderIndex title="Components" media={HeaderImage}>
-        Components are key building blocks of the NewsKit design system.
+        {pageDescription}
       </HeaderIndex>
       <Grid lgMargin="sizing000" xsRowGutter="sizing000">
         {componentCategories.map(
