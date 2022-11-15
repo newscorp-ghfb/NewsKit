@@ -1,87 +1,24 @@
 import React from 'react';
-import {Story as StoryType} from '@storybook/react';
 import {Breadcrumbs} from '../breadcrumbs';
 import {BreadcrumbItem} from '../breadcrumb-item';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
-import {IconFilledAccountBalance, IconFilledAddCircle} from '../../icons';
-import {CreateThemeArgs, ThemeProvider} from '../../theme';
-import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {IconFilledAdd, IconFilledAddCircle} from '../../icons';
+// import {ThemeProvider} from '../../theme';
+// import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
 
 const blockGridCols = '1fr 1fr 1fr auto';
-const blockCustomThemeObject: CreateThemeArgs = {
-  name: 'block-custom-theme',
-  overrides: {
-    stylePresets: {
-      blockDefault: {
-        base: {
-          backgroundColor: '{{colors.amber020}}',
-          borderWidth: '{{borders.borderWidth010}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.interfaceBrand010}}',
-        },
-      },
-    },
-  },
-};
 
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <Breadcrumbs
-      showTrailingSeparator
-      overrides={{
-        stylePreset: 'blockDefault',
-      }}
-    >
-      <BreadcrumbItem selected href={href}>
-        Breadcrumb item
-      </BreadcrumbItem>
-      <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
-      <BreadcrumbItem href={href}>Breadcrumb itemx </BreadcrumbItem>
-    </Breadcrumbs>
-    <Breadcrumbs
-      size="large"
-      overrides={{
-        separator: {
-          paddingInline: 'space030',
-          stylePreset: 'inkSubtle',
-          // size: 'iconSize040',
-        },
-      }}
-    >
+    <Breadcrumbs>
       <BreadcrumbItem selected href={href}>
         Breadcrumb item
       </BreadcrumbItem>
       <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
       <BreadcrumbItem href={href}>Breadcrumb item </BreadcrumbItem>
-    </Breadcrumbs>
-    <Breadcrumbs
-      overrides={{
-        separator: props => (
-          <IconFilledAccountBalance
-            {...props}
-            overrides={{
-              size: 'iconSize030',
-              stylePreset: 'inkNegative',
-              paddingInline: 'space080',
-            }}
-          />
-        ),
-      }}
-    >
-      <BreadcrumbItem
-        href={href}
-        overrides={{
-          stylePreset: 'inkNegative',
-        }}
-      >
-        hello
-      </BreadcrumbItem>
-      <BreadcrumbItem href={href}>bye</BreadcrumbItem>
-      <BreadcrumbItem href={href}>hello</BreadcrumbItem>
-      <BreadcrumbItem href={href}>bye</BreadcrumbItem>
     </Breadcrumbs>
   </StorybookPage>
 );
@@ -150,17 +87,16 @@ StoryStates.storyName = 'States';
 
 export const StoryVariations = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <Breadcrumbs showTrailingSeparator>
-      <BreadcrumbItem selected href={href}>
-        Breadcrumb item
-      </BreadcrumbItem>
-      <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
-      <BreadcrumbItem href={href}>
-        <IconFilledAddCircle overrides={{stylePreset: 'inkSubtle'}} />
-        Breadcrumb item
-      </BreadcrumbItem>
-    </Breadcrumbs>
-    {/* <Breadcrumbs
+    <StorybookCase title="Leading icon">
+      <Breadcrumbs>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem selected href={href}>
+          <IconFilledAddCircle />
+          Breadcrumb item
+        </BreadcrumbItem>
+      </Breadcrumbs>
+      {/* <Breadcrumbs
         size="small"
         overrides={{
           separator: props => (
@@ -179,9 +115,136 @@ export const StoryVariations = () => (
         <BreadcrumbItem href={href}>hello</BreadcrumbItem>
         <BreadcrumbItem href={href}>bye</BreadcrumbItem>
       </Breadcrumbs> */}
+    </StorybookCase>
+    <StorybookCase title="Trailing icon">
+      <Breadcrumbs>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem selected href={href}>
+          Breadcrumb item
+          <IconFilledAddCircle />
+        </BreadcrumbItem>
+      </Breadcrumbs>
+    </StorybookCase>
+    <StorybookCase title="Both">
+      <Breadcrumbs>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem selected href={href}>
+          <IconFilledAddCircle />
+          Breadcrumb item
+          <IconFilledAddCircle />
+        </BreadcrumbItem>
+      </Breadcrumbs>
+    </StorybookCase>
+    <StorybookCase title="'Home' icon for the first breadcrumb item">
+      <Breadcrumbs>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem selected href={href}>
+          Breadcrumb item
+        </BreadcrumbItem>
+      </Breadcrumbs>
+    </StorybookCase>
+    <StorybookCase title=" showTrailingSeparator">
+      <Breadcrumbs showTrailingSeparator>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem selected href={href}>
+          Breadcrumb item
+        </BreadcrumbItem>
+      </Breadcrumbs>
+    </StorybookCase>
   </StorybookPage>
 );
 StoryVariations.storyName = 'Variations';
+
+export const StoryLogicalProps = () => (
+  <StorybookPage columns={{md: 'auto'}}>
+    <StorybookCase title="Logical props- padding">
+      <Breadcrumbs showTrailingSeparator overrides={{paddingBlock: 'space050'}}>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+      </Breadcrumbs>
+    </StorybookCase>
+    <StorybookCase title="Logical props- margin">
+      <Breadcrumbs showTrailingSeparator overrides={{marginBlock: 'space050'}}>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem selected href={href}>
+          Breadcrumb item
+        </BreadcrumbItem>
+      </Breadcrumbs>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLogicalProps.storyName = 'Logical props';
+
+export const StoryOverrides = () => (
+  <StorybookPage columns={{md: 'auto'}}>
+    <StorybookCase title="Custome colour">
+      <Breadcrumbs>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem
+          overrides={{
+            stylePreset: 'inkNegative',
+          }}
+          href={href}
+        >
+          Breadcrumb item
+        </BreadcrumbItem>
+      </Breadcrumbs>
+    </StorybookCase>
+    <StorybookCase title="Custom style">
+      <Breadcrumbs showTrailingSeparator>
+        <BreadcrumbItem
+          href={href}
+          overrides={{typographyPreset: 'editorialParagraph020'}}
+        >
+          Breadcrumb item
+        </BreadcrumbItem>
+        <BreadcrumbItem
+          href={href}
+          overrides={{typographyPreset: 'editorialParagraph020'}}
+        >
+          Breadcrumb item
+        </BreadcrumbItem>
+        <BreadcrumbItem
+          selected
+          href={href}
+          overrides={{typographyPreset: 'editorialParagraph020'}}
+        >
+          Breadcrumb item
+        </BreadcrumbItem>
+      </Breadcrumbs>
+    </StorybookCase>
+    <StorybookCase title="Custom separators">
+      <Breadcrumbs
+        showTrailingSeparator
+        overrides={{
+          separator: props => (
+            <IconFilledAdd
+              {...props}
+              overrides={{
+                size: 'iconSize020',
+                paddingInline: 'space020',
+              }}
+            />
+          ),
+        }}
+      >
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem selected href={href}>
+          Breadcrumb item
+        </BreadcrumbItem>
+      </Breadcrumbs>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryOverrides.storyName = 'Overrides';
 
 export default {
   title: 'Components/Breadcrumbs',
@@ -194,16 +257,15 @@ export default {
         'A divider is used to provide visual separation of different content. Dividers can be applied vertically or horizontally.',
     },
   },
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(
-          context?.globals?.backgrounds?.value,
-          blockCustomThemeObject,
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
+  // decorators: [
+  //   (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+  //     <ThemeProvider
+  //       theme={createCustomThemeWithBaseThemeSwitch(
+  //         context?.globals?.backgrounds?.value,
+  //       )}
+  //     >
+  //       <Story />
+  //     </ThemeProvider>
+  //   ),
+  // ],
 };
