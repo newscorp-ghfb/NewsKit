@@ -13,7 +13,7 @@ export const routes = [
       },
       {
         title: 'About',
-        id: '/about/overview',
+        id: '/about/index',
         subNav: [
           {
             title: 'Introduction',
