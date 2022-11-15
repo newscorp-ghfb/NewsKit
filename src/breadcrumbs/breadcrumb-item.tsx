@@ -1,6 +1,8 @@
 import React from 'react';
 import {StyledButton} from './styled';
+import {filterOutFalsyProperties} from '../utils/filter-object';
 import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
+import {useTheme} from '../theme';
 
 export const BreadcrumbItem = React.forwardRef<
   HTMLButtonElement,
@@ -24,13 +26,19 @@ export const BreadcrumbItem = React.forwardRef<
       selected,
       size,
     };
+    const theme = useTheme();
+
+    const buttonSettings: typeof overrides = {
+      ...theme.componentDefaults.breadcrumbItem[size],
+      ...filterOutFalsyProperties(overrides),
+    };
     return (
       <StyledButton
         {...buttonProps}
         href={href}
         eventContext={eventContext}
         eventOriginator={eventOriginator}
-        overrides={overrides}
+        overrides={buttonSettings}
         aria-current={selected}
         ref={ref}
       >
