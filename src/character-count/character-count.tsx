@@ -71,9 +71,6 @@ const ThemelessCharacterCount = React.forwardRef<
         if (inputRef.current.getAttribute('minLength')) {
           setMinLength(inputEl.minLength);
         }
-        if (inputRef.current.id === 'textArea-overlimit') {
-          inputEl.removeAttribute('maxLength');
-        }
       }
 
       return () => {

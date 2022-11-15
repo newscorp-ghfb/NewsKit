@@ -154,14 +154,16 @@ export const CharacterCountExceedMaxLength = () => {
         <Label htmlFor="textArea-overlimit">Label</Label>
         <TextArea
           placeholder="Placeholder"
-          id="textArea-overlimit"
           ref={ref}
-          maxLength={maxLength}
           state={validationLimit()}
           value={textareavalue}
           onChange={({target: {value}}) => setValue(value)}
         />
-        <CharacterCount inputRef={ref} state={validationLimit()} />
+        <CharacterCount
+          inputRef={ref}
+          maxLength={maxLength}
+          state={validationLimit()}
+        />
       </StorybookCase>
     </StorybookPage>
   );
