@@ -27,7 +27,9 @@ const getAboutCardList = (routeList: Item[]) =>
     .map(({title, description, id, illustration}) => ({
       media: illustration?.endsWith('.svg')
         ? {src: illustration, alt: ''}
-        : getIllustrationComponent(illustration as string),
+        : getIllustrationComponent(illustration as string, {
+            viewBox: '0 0 1344 759',
+          }),
 
       title,
       href: id,
