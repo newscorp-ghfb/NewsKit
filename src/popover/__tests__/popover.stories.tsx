@@ -11,9 +11,7 @@ import {GridLayout} from '../../grid-layout';
 import {createTheme, ThemeProvider} from '../../theme';
 import {PopoverProps} from '../types';
 import {LinkStandalone} from '../../link';
-
-// Open all Popovers by default when running in visual testing software.
-const isVisualTest = process.env.STORYBOOK_IS_VISUAL_TEST === 'true';
+import {isVisualTest} from '../../test/test-utils';
 
 const getPlacementStyling = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
