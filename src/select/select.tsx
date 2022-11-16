@@ -76,13 +76,14 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     //       localInputRef.current.value = programmaticallySelectedItem
     //         ? programmaticallySelectedItem.props.value
     //         : defaultSelectedItem!.props.value;
-    //       // if (onChange && !programmaticallySelectedItem) {
-    //       //   console.log('i am 1');
-    //       //   onChange({
-    //       //     type: 'change',
-    //       //     target: localInputRef.current,
-    //       //   } as ChangeEvent<HTMLInputElement>);
-    //       // }
+
+    //       if (onChange && !programmaticallySelectedItem) {
+    //         console.log('i am 1');
+    //         onChange({
+    //           type: 'change',
+    //           target: localInputRef.current,
+    //         } as ChangeEvent<HTMLInputElement>);
+    //       }
     //     }
     //   }
     // }, [defaultSelectedItem, onChange, programmaticallySelectedItem]);
