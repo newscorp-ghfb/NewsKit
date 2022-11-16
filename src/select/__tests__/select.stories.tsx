@@ -1002,25 +1002,6 @@ export const StorySelectControlled = () => {
           Make Fermium selected value
         </Button>
       </Block>
-
-      <Block>
-        <Label htmlFor="uncontrolled">UnControlled</Label>
-        <Select
-          aria-describedby="id-controlled-at"
-          id="uncontrolled"
-          size="medium"
-          onChange={e => {
-            console.log('Uncontrolled', e.target.value);
-          }}
-        >
-          <SelectOption key="sel 1" value="select 1">
-            select 1
-          </SelectOption>
-          <SelectOption key="sel 2" value="select 2">
-            select 2
-          </SelectOption>
-        </Select>
-      </Block>
     </Container>
   );
 };

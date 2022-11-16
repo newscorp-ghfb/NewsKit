@@ -64,30 +64,6 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       ? get(programmaticallySelectedItem, 'props.value')
       : get(defaultSelectedItem, 'props.value');
 
-    // Seems we are calling onChage 2 times
-    // Every time defaultSelected or selected is changes
-    // and one more time in onInputChange function.
-    // this one is also called on every render, I think is useless
-
-    // useEffect(() => {
-    //   if (programmaticallySelectedItem || defaultSelectedItem) {
-    //     // istanbul ignore else
-    //     if (localInputRef.current) {
-    //       localInputRef.current.value = programmaticallySelectedItem
-    //         ? programmaticallySelectedItem.props.value
-    //         : defaultSelectedItem!.props.value;
-
-    //       if (onChange && !programmaticallySelectedItem) {
-    //         console.log('i am 1');
-    //         onChange({
-    //           type: 'change',
-    //           target: localInputRef.current,
-    //         } as ChangeEvent<HTMLInputElement>);
-    //       }
-    //     }
-    //   }
-    // }, [defaultSelectedItem, onChange, programmaticallySelectedItem]);
-
     const {fireEvent} = useInstrumentation();
     const onInputChange = React.useCallback<
       (
