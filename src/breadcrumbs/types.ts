@@ -1,7 +1,6 @@
 import {MQ} from '../utils';
 import {LogicalProps} from '../utils/logical-properties';
-import {NewsKitIconProps} from '../icons';
-import {Override} from '../utils/overrides';
+
 import {EventData} from '../instrumentation';
 
 export type BreadcrumbSize = 'small' | 'medium' | 'large';
@@ -12,7 +11,7 @@ export interface BreadcrumbsProps extends React.AriaAttributes {
   showTrailingSeparator?: boolean;
   overrides?: {
     stylePreset?: MQ<string>;
-    separator?: Override<NewsKitIconProps>;
+    separator?: React.ComponentType;
   } & LogicalProps;
 }
 
