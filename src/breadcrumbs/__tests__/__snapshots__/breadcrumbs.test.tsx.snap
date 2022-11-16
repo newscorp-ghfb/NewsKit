@@ -266,6 +266,54 @@ exports[`Breadcrumbs renders with default props 1`] = `
   display: block;
 }
 
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+  padding-inline: 8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
+  color: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 <nav
     aria-label="Breadcrumb component"
     class="emotion-0"
@@ -287,6 +335,126 @@ exports[`Breadcrumbs renders with default props 1`] = `
             Breadcrumb Item
           </span>
         </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders with logical prop overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-block: 20px;
+  padding-inline: 30px;
+}
+
+.emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<nav
+    aria-label="Breadcrumb component"
+    class="emotion-0"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        Breadcrumb Item
       </li>
     </ol>
   </nav>

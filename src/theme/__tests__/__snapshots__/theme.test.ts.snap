@@ -1519,6 +1519,37 @@ Object {
       "stylePreset": "bannerInformative",
     },
   },
+  "breadcrumbItem": Object {
+    "large": Object {
+      "stylePreset": "breadcrumbItem",
+      "typographyPreset": "utilityButton030",
+    },
+    "medium": Object {
+      "stylePreset": "breadcrumbItem",
+      "typographyPreset": "utilityButton020",
+    },
+    "small": Object {
+      "stylePreset": "breadcrumbItem",
+      "typographyPreset": "utilityButton010",
+    },
+  },
+  "breadcrumbSeparator": Object {
+    "large": Object {
+      "iconSize": "iconSize030",
+      "paddingInline": "space020",
+      "stylePreset": "breadcrumbSeparator",
+    },
+    "medium": Object {
+      "iconSize": "iconSize020",
+      "paddingInline": "space020",
+      "stylePreset": "breadcrumbSeparator",
+    },
+    "small": Object {
+      "iconSize": "iconSize010",
+      "paddingInline": "space020",
+      "stylePreset": "breadcrumbSeparator",
+    },
+  },
   "button": Object {
     "large": Object {
       "iconSize": "iconSize030",
@@ -3248,6 +3279,28 @@ Object {
     "base": Object {
       "backgroundColor": "{{colors.interfaceNotice010}}",
       "iconColor": "{{colors.inkInverse}}",
+    },
+  },
+  "breadcrumbItem": Object {
+    "active": Object {
+      "color": "{{colors.interactiveLink030}}",
+    },
+    "base": Object {
+      "color": "{{colors.interactiveLink010}}",
+    },
+    "hover": Object {
+      "color": "{{colors.interactiveLink020}}",
+    },
+    "selected": Object {
+      "color": "{{colors.inkBase}}",
+    },
+    "selected:hover": Object {
+      "color": "{{colors.inkBase}}",
+    },
+  },
+  "breadcrumbSeparator": Object {
+    "base": Object {
+      "color": "{{colors.inkSubtle}}",
     },
   },
   "buttonMinimalInverse": Object {

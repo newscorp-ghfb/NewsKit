@@ -9,6 +9,7 @@ import {getComponentOverrides, Override} from '../utils/overrides';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
+import {getSSRId} from '../utils';
 
 const DefaultIcon = (overrides: BreadcrumbsProps) => (
   <IconFilledChevronRight overrides={overrides} />
@@ -90,10 +91,12 @@ const ThemelessBreadcrumbs = React.forwardRef<
               ))
             : breadcrumbChildren.reduce(
                 (acc: React.ReactElement[], listItem, index, array) => {
-                  acc.push(<StyledList key={1}>{listItem}</StyledList>);
+                  acc.push(
+                    <StyledList key={getSSRId()}>{listItem}</StyledList>,
+                  );
                   if (children && index < array.length - 1) {
                     acc.push(
-                      <StyledList aria-hidden="true">
+                      <StyledList key={getSSRId()} aria-hidden="true">
                         <BreadcrumbsIcon
                           {...(BreadcrumbsIconProps as BreadcrumbsProps)}
                         />
