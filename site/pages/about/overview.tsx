@@ -58,7 +58,7 @@ const Overview = (layoutProps: LayoutProps) => (
     <Grid lgMargin="sizing000" xsRowGutter="sizing000">
       <ComponentPageCell>
         <ContentSection>
-          <ContentPrimary description=" ">
+          <ContentPrimary headline="About" description=" ">
             <MediaList
               cards={aboutIndexRouteListCards}
               gridProps={{xsRowGutter: 'space050'}}
