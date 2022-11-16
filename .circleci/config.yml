@@ -517,7 +517,7 @@ jobs:
           <<: *slack_notify
 
   test_unit_docs:
-    executor: node-large
+    executor: node-xlarge
     steps:
       - checkout
       - attach_workspace:
