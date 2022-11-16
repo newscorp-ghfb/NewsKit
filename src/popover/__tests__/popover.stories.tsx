@@ -12,8 +12,8 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {PopoverProps} from '../types';
 import {LinkStandalone} from '../../link';
 
-// Open all Popovers by default when running in Applitools.
-const isApplitoolsTest = process.env.STORYBOOK_IS_VISUAL_TEST === 'true';
+// Open all Popovers by default when running in visual testing software.
+const isVisualTest = process.env.STORYBOOK_IS_VISUAL_TEST === 'true';
 
 const getPlacementStyling = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
@@ -32,7 +32,18 @@ const getPlacementStyling = (placement: Placement) => {
     justifyContent = 'start';
     alignItems = alignment;
   }
-  return {display: 'flex', alignItems, justifyContent};
+
+  // the 'flex-' prefix is required on Safari for start and end values
+  return Object.entries({
+    alignItems,
+    justifyContent,
+  }).reduce(
+    (prev, [k, v]) => ({
+      ...prev,
+      [k]: ['start', 'end'].includes(v) ? `flex-${v}` : v,
+    }),
+    {},
+  );
 };
 
 const placements: Placement[] = [
@@ -112,6 +123,8 @@ const StyledContainer = styled.div`
   width: 360px;
   padding: 5px;
   overflow: scroll;
+  display: flex;
+  display: -webkit-flex;
 `;
 
 const DEFAULT_CONTENT =
@@ -121,7 +134,7 @@ const PopoverWithBtn = (
   props: Partial<Omit<PopoverProps, 'children' | 'open'>>,
 ) => (
   <Popover
-    open={isApplitoolsTest || undefined}
+    open={isVisualTest || undefined}
     header="Popover Title"
     content={DEFAULT_CONTENT}
     overrides={{maxWidth: '300px'}}
@@ -307,6 +320,9 @@ export const StoryPopoverDefault = () => (
   </StyledPage>
 );
 StoryPopoverDefault.storyName = 'popover-default';
+StoryPopoverDefault.parameters = {
+  percy: {enableJavaScript: true},
+};
 
 export const StoryPopoverPlacements = () => (
   <StyledPage>
@@ -326,6 +342,9 @@ export const StoryPopoverPlacements = () => (
   </StyledPage>
 );
 StoryPopoverPlacements.storyName = 'popover-placements';
+StoryPopoverPlacements.parameters = {
+  percy: {enableJavaScript: true},
+};
 
 export const StoryPopoverStyleOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
@@ -362,11 +381,14 @@ export const StoryPopoverStyleOverrides = () => (
   </ThemeProvider>
 );
 StoryPopoverStyleOverrides.storyName = 'popover-style-overrides';
+StoryPopoverStyleOverrides.parameters = {
+  percy: {enableJavaScript: true},
+};
 
 // Flip and shift only work in the visual tests when the viewport is used as the
 // boundary. Show both in one scenario with no padding so both flip and shift kick in.
 export const StoryPopoverBehaviours = () =>
-  isApplitoolsTest ? (
+  isVisualTest ? (
     <BoundedPopoverWithOverflow fallbackBehaviour={['flip', 'shift']} />
   ) : (
     <StyledPage>
@@ -378,6 +400,9 @@ export const StoryPopoverBehaviours = () =>
     </StyledPage>
   );
 StoryPopoverBehaviours.storyName = 'popover-behaviours';
+StoryPopoverBehaviours.parameters = {
+  percy: {enableJavaScript: true},
+};
 
 export default {
   title: 'Components/popover',
