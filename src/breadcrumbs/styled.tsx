@@ -25,5 +25,6 @@ export const StyledList = styled.li`
 export const StyledButton = styled(Button)<BreadcrumbItemProps>`
   ${({size, selected}) =>
     getStylePreset(`breadcrumbItem.${size}`, '', {isSelected: selected})};
+  cursor: ${({selected}) => (selected ? 'none' : 'pointer')};
   padding: 0px;
 `;

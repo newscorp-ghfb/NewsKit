@@ -2,7 +2,12 @@ import React from 'react';
 import {Breadcrumbs} from '../breadcrumbs';
 import {BreadcrumbItem} from '../breadcrumb-item';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
-import {IconFilledAdd, IconFilledAddCircle} from '../../icons';
+import {
+  IconFilledAddCircle,
+  IconOutlinedTrendingFlat,
+  IconFilledHome,
+} from '../../icons';
+
 // import {ThemeProvider} from '../../theme';
 // import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
@@ -14,11 +19,11 @@ const blockGridCols = '1fr 1fr 1fr auto';
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <Breadcrumbs>
-      <BreadcrumbItem selected href={href}>
-        Breadcrumb item
-      </BreadcrumbItem>
       <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
-      <BreadcrumbItem href={href}>Breadcrumb item </BreadcrumbItem>
+      <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+      <BreadcrumbItem selected href={href}>
+        Breadcrumb item{' '}
+      </BreadcrumbItem>
     </Breadcrumbs>
   </StorybookPage>
 );
@@ -138,8 +143,18 @@ export const StoryVariations = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="'Home' icon for the first breadcrumb item">
-      <Breadcrumbs>
-        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+      <Breadcrumbs
+        overrides={{
+          paddingInline: 'space000',
+        }}
+      >
+        <BreadcrumbItem href={href} overrides={{paddingInlineEnd: 'space050'}}>
+          <IconFilledHome
+            overrides={{
+              stylePreset: 'iconButtonMinimalPrimary',
+            }}
+          />
+        </BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
           Breadcrumb item
@@ -162,14 +177,16 @@ StoryVariations.storyName = 'Variations';
 export const StoryLogicalProps = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Logical props- padding">
-      <Breadcrumbs showTrailingSeparator overrides={{paddingBlock: 'space050'}}>
+      <Breadcrumbs overrides={{paddingBlock: 'space050'}}>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
-        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem selected href={href}>
+          Breadcrumb item
+        </BreadcrumbItem>
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Logical props- margin">
-      <Breadcrumbs showTrailingSeparator overrides={{marginBlock: 'space050'}}>
+      <Breadcrumbs overrides={{marginBlock: 'space050'}}>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
@@ -189,7 +206,7 @@ export const StoryOverrides = () => (
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem
           overrides={{
-            stylePreset: 'inkNegative',
+            stylePreset: 'interfaceInformative010',
           }}
           href={href}
         >
@@ -198,7 +215,7 @@ export const StoryOverrides = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Custom style">
-      <Breadcrumbs showTrailingSeparator>
+      <Breadcrumbs>
         <BreadcrumbItem
           href={href}
           overrides={{typographyPreset: 'editorialParagraph020'}}
@@ -222,14 +239,14 @@ export const StoryOverrides = () => (
     </StorybookCase>
     <StorybookCase title="Custom separators">
       <Breadcrumbs
-        showTrailingSeparator
         overrides={{
           separator: props => (
-            <IconFilledAdd
+            <IconOutlinedTrendingFlat
               {...props}
               overrides={{
                 size: 'iconSize020',
                 paddingInline: 'space020',
+                stylePreset: 'breadcrumbSeparator',
               }}
             />
           ),
@@ -252,9 +269,9 @@ export default {
   parameters: {
     nkDocs: {
       title: 'Breadcrumbs',
-      url: 'https://newskit.co.uk/components/divider',
+      // url: 'https://newskit.co.uk/components/breadcrumbs',
       description:
-        'A divider is used to provide visual separation of different content. Dividers can be applied vertically or horizontally.',
+        'Breadcrumbs are used for secondary navigation providing a breadcrumb trail, to help users to understand the path the user took, or where they are located and move between pages within a website’s or application’s hierarchy.',
     },
   },
   // decorators: [
