@@ -5,8 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const ScrollStepDistance: React.FC = () => {
-  const mask0 = getSSRId();
-  const mask1 = getSSRId();
   const filter0 = getSSRId();
   const filter1 = getSSRId();
 
@@ -29,38 +27,18 @@ export const ScrollStepDistance: React.FC = () => {
           fill="illustrationInterface010"
         />
       </g>
-      <mask
-        id={mask0}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="224"
-        y="114"
-        width="414"
-        height="611"
-      >
-        <Rect
-          x="224.13"
-          y="114.191"
-          width="412.915"
-          height="609.886"
-          rx="12.6726"
-          fill="illustrationInterface010"
-        />
-      </mask>
-      <g mask={`url(#${mask0})`}>
-        <Path
-          d="M240 64.1914H621V314.191H240V64.1914Z"
-          fill="interactiveNegative010"
-        />
-        <Path
-          d="M240 334.191H621V583.191H240V334.191Z"
-          fill="interactivePrimary010"
-        />
-        <Path
-          d="M240 604.191H621V853.191H240V604.191Z"
-          fill="interactivePositive010"
-        />
-      </g>
+      <Path
+        d="M240 64.1914H621V314.191H240V64.1914Z"
+        fill="interactiveNegative010"
+      />
+      <Path
+        d="M240 334.191H621V583.191H240V334.191Z"
+        fill="interactivePrimary010"
+      />
+      <Path
+        d="M621 724.077H240V604.191H621V724.077Z"
+        fill="interactivePositive010"
+      />
       <g filter={`url(#${filter1})`}>
         <Rect
           x="852"
@@ -71,38 +49,18 @@ export const ScrollStepDistance: React.FC = () => {
           fill="illustrationInterface010"
         />
       </g>
-      <mask
-        id={mask1}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="852"
-        y="114"
-        width="414"
-        height="611"
-      >
-        <Rect
-          x="852.13"
-          y="114.191"
-          width="412.915"
-          height="609.886"
-          rx="12.6726"
-          fill="illustrationInterface010"
-        />
-      </mask>
-      <g mask={`url(#${mask1})`}>
-        <Path
-          d="M868 -82.8086H1249V167.191H868V-82.8086Z"
-          fill="interactiveNegative010"
-        />
-        <Path
-          d="M868 187.191H1249V436.191H868V187.191Z"
-          fill="interactivePrimary010"
-        />
-        <Path
-          d="M868 457.191H1249V706.191H868V457.191Z"
-          fill="interactivePositive010"
-        />
-      </g>
+      <Path
+        d="M1249 114.191V167.191H868V114.191H1249Z"
+        fill="interactiveNegative010"
+      />
+      <Path
+        d="M868 187.191H1249V436.191H868V187.191Z"
+        fill="interactivePrimary010"
+      />
+      <Path
+        d="M868 457.191H1249V706.191H868V457.191Z"
+        fill="interactivePositive010"
+      />
       <Path
         d="M1259 615C1255.69 615 1253 612.147 1253 608.627V228.373C1253 224.853 1255.69 222 1259 222V222C1262.31 222 1265 224.853 1265 228.373V608.627C1265 612.147 1262.31 615 1259 615V615Z"
         fill="illustrationPalette020"
@@ -145,12 +103,12 @@ export const ScrollStepDistance: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2180_77767"
+            result="effect1_dropShadow_2657_78670"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2180_77767"
+            in2="effect1_dropShadow_2657_78670"
             result="shape"
           />
         </filter>
@@ -179,12 +137,12 @@ export const ScrollStepDistance: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2180_77767"
+            result="effect1_dropShadow_2657_78670"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2180_77767"
+            in2="effect1_dropShadow_2657_78670"
             result="shape"
           />
         </filter>

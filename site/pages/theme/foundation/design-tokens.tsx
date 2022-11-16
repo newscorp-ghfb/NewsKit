@@ -91,7 +91,10 @@ const DesignTokens = (layoutProps: LayoutProps) => (
           toc="Literal vs contextual tokens"
           headline="Literal vs contextual tokens"
         >
-          <Illustration path="theme/design-tokens/design-tokens" />
+          <Illustration
+            viewBox="0 0 4911 2192"
+            path="theme/design-tokens/design-tokens"
+          />
         </ContentPrimary>
 
         <ContentSecondary

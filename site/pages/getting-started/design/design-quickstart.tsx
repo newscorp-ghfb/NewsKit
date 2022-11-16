@@ -146,7 +146,10 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               form.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step1/access-to-figma-log-in" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step1/access-to-figma-log-in"
+              />
             </ImageWrapper>
             <TextWrapper>
               4. Enter a work email address in the form e.g.
@@ -173,7 +176,10 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               browser window will open.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step1/access-to-figma-browser-launch" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step1/access-to-figma-browser-launch"
+              />
             </ImageWrapper>
             <TextWrapper>
               9. In the newly opened browser window, press “Open the desktop
@@ -181,7 +187,10 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               Figma to open links of this type in the associated app”
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step1/access-to-figma-open-in-app" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step1/access-to-figma-open-in-app"
+              />
             </ImageWrapper>
             <TextWrapper>
               10. You will now be taken to the Figma desktop app - enjoy!
@@ -244,7 +253,10 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               button(s) to get access to a team workspace.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step2/joining-a-workspace-request" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step2/joining-a-workspace-request"
+              />
             </ImageWrapper>
             <TextWrapper>
               3. Once you have access to a team(s), you will see the structure
@@ -370,7 +382,10 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               icon (labeled “New project” on hover) to add a new project.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-01" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step4/starting-a-figma-project-new-project-01"
+              />
             </ImageWrapper>
             <TextWrapper>
               2. Give your new project a clear and distinctive name
@@ -387,7 +402,10 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               press the “+” icon (New file) to add a new project.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-02" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step4/starting-a-figma-project-new-project-02"
+              />
             </ImageWrapper>
             <TextWrapper>
               5. You will see options to add a design file, FigJam file, or to
@@ -398,7 +416,10 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               new file will open in a tab.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-03" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step4/starting-a-figma-project-new-project-03"
+              />
             </ImageWrapper>
           </GridLayout>
         </ContentPrimary>
@@ -436,7 +457,10 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               file name.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-01" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-01"
+              />
             </ImageWrapper>
             <TextWrapper>
               2. At the bottom of the screen, a notification telling you that
@@ -444,7 +468,10 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               duplicated project template file will open in a new tab.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-02" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-02"
+              />
             </ImageWrapper>
             <TextWrapper>
               3. Select “Move to project…” from the dropdown of options next to
@@ -453,7 +480,10 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               the file to.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-03" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-03"
+              />
             </ImageWrapper>
           </GridLayout>
         </ContentTertiary>
@@ -482,14 +512,20 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               panel.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-01" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-01"
+              />
             </ImageWrapper>
             <TextWrapper>
               2. Press the “book” icon (labeled “Team library” on hover), to
               bring up a list of libraries in a modal dialog.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-02" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-02"
+              />
             </ImageWrapper>
             <TextWrapper>
               3. In the list, you will see the available libraries available to
@@ -525,7 +561,10 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               left-hand side.
             </TextWrapper>
             <ImageWrapper>
-              <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-03" />
+              <Illustration
+                viewBox="0 0 1345 759"
+                path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-03"
+              />
             </ImageWrapper>
           </GridLayout>
         </ContentPrimary>

@@ -138,7 +138,7 @@ export const TabsOptionsDividersIllustration: React.FC = () => {
         d="M951.37 708.763C952.01 707.509 952.917 706.536 954.09 705.843C955.29 705.149 956.744 704.803 958.45 704.803V708.563H957.49C953.41 708.563 951.37 710.776 951.37 715.203V727.123H947.73V705.203H951.37V708.763Z"
         fill="illustrationHighlight010"
       />
-      <Path d="M892 445L892 676" stroke="#577FFB" stroke-width="2" />
+      <Path d="M892 445L892 676" stroke="#577FFB" strokeWidth="2" />
       <Circle cx="892" cy="440" r="6" fill="blue040" />
       <defs>
         <filter

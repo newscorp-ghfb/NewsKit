@@ -19,7 +19,7 @@ export const Structure: React.FC = () => (
       r="213"
       fill="illustrationPalette010"
       stroke="#5E44E4"
-      stroke-width="2"
+      strokeWidth="2"
     />
     <Rect
       opacity="0.3"
@@ -28,7 +28,7 @@ export const Structure: React.FC = () => (
       width="426"
       height="426"
       stroke="#41A0AA"
-      stroke-width="2"
+      strokeWidth="2"
     />
     <Rect
       opacity="0.3"
@@ -37,7 +37,7 @@ export const Structure: React.FC = () => (
       width="480"
       height="480"
       stroke="#EBF8F9"
-      stroke-width="52"
+      strokeWidth="52"
     />
     <Rect
       opacity="0.3"
@@ -46,7 +46,7 @@ export const Structure: React.FC = () => (
       width="534"
       height="534"
       stroke="#41A0AA"
-      stroke-width="2"
+      strokeWidth="2"
     />
     <Rect
       opacity="0.5"
@@ -56,7 +56,7 @@ export const Structure: React.FC = () => (
       height="342"
       fill="illustrationPalette010"
       stroke="#5E44E4"
-      stroke-width="2"
+      strokeWidth="2"
     />
     <Rect
       opacity="0.5"
@@ -66,7 +66,7 @@ export const Structure: React.FC = () => (
       height="250"
       fill="illustrationPalette010"
       stroke="#5E44E4"
-      stroke-width="2"
+      strokeWidth="2"
     />
     <Rect
       opacity="0.5"
@@ -76,7 +76,7 @@ export const Structure: React.FC = () => (
       height="426"
       fill="illustrationPalette010"
       stroke="#5E44E4"
-      stroke-width="2"
+      strokeWidth="2"
     />
   </Svg>
 );

@@ -35,7 +35,10 @@ const Contribute = (
         type="About"
         name="Contribute"
         introduction="There are a lot of ways to contribute to the NewsKit community and Design System; from submitting a proposal to designing a new feature for other users to benefit from."
-        hero={{illustration: 'about/hero-contribute-illustration'}}
+        hero={{
+          illustration: 'about/hero-contribute-illustration',
+          illustrationProps: {viewBox: '0 0 1345 759'},
+        }}
         showSeparator
       />
     </PageIntroductionContainer>

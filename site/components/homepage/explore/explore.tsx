@@ -1,29 +1,40 @@
 import * as React from 'react';
 import {Headline, TextBlock, GridLayout, Card} from 'newskit';
 import {ContentPrimary} from '../../content-structure';
-import {
-  ExploreComponents,
-  ExploreFoundations,
-  ExplorePatterns,
-} from '../../illustrations/landing-page';
+import {Illustration} from '../../illustrations/illustration-loader';
 
 const cardsContent = [
   {
-    media: <ExploreFoundations />,
+    media: (
+      <Illustration
+        viewBox="0 0 1344 759"
+        path="landing-page/explore-foundations"
+      />
+    ),
     title: 'Theme',
     href: '/theme/overview',
     description:
       'These standardised styles define the look and feel of UI components, e.g. colours, fonts, shadows and sizing.',
   },
   {
-    media: <ExploreComponents />,
+    media: (
+      <Illustration
+        viewBox="0 0 1344 759"
+        path="landing-page/explore-components"
+      />
+    ),
     title: 'Components',
     href: '/components/overview',
     description:
       'NewsKit’s flexible UI components are built to best practices to ensure usability, performance and accessibility.',
   },
   {
-    media: <ExplorePatterns />,
+    media: (
+      <Illustration
+        viewBox="0 0 1344 759"
+        path="landing-page/explore-patterns"
+      />
+    ),
     title: 'Patterns',
     href: '/patterns/overview',
     description:

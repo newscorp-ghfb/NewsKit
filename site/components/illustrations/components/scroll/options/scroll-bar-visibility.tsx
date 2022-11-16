@@ -5,8 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const ScrollBarVisibility: React.FC = () => {
-  const mask0 = getSSRId();
-  const mask1 = getSSRId();
   const filter0 = getSSRId();
   const filter1 = getSSRId();
 
@@ -29,38 +27,18 @@ export const ScrollBarVisibility: React.FC = () => {
           fill="illustrationInterface010"
         />
       </g>
-      <mask
-        id={mask0}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="224"
-        y="114"
-        width="414"
-        height="611"
-      >
-        <Rect
-          x="224.13"
-          y="114.192"
-          width="412.915"
-          height="609.886"
-          rx="12.6726"
-          fill="illustrationInterface010"
-        />
-      </mask>
-      <g mask={`url(#${mask0})`}>
-        <Path
-          d="M240 134.192H621V384.192H240V134.192Z"
-          fill="interactiveNegative010"
-        />
-        <Path
-          d="M240 404.192H621V653.192H240V404.192Z"
-          fill="interactivePrimary010"
-        />
-        <Path
-          d="M240 674.192H621V923.192H240V674.192Z"
-          fill="interactivePositive010"
-        />
-      </g>
+      <Path
+        d="M240 134.192H621V384.192H240V134.192Z"
+        fill="interactiveNegative010"
+      />
+      <Path
+        d="M240 404.192H621V653.192H240V404.192Z"
+        fill="interactivePrimary010"
+      />
+      <Path
+        d="M621 724.078H240V674.192H621V724.078Z"
+        fill="interactivePositive010"
+      />
       <g filter={`url(#${filter1})`}>
         <Rect
           x="853"
@@ -71,28 +49,11 @@ export const ScrollBarVisibility: React.FC = () => {
           fill="illustrationInterface010"
         />
       </g>
-      <mask
-        id={mask1}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="853"
-        y="114"
-        width="414"
-        height="611"
-      >
-        <Rect
-          x="853.13"
-          y="114.192"
-          width="412.915"
-          height="609.886"
-          rx="12.6726"
-          fill="illustrationInterface010"
-        />
-      </mask>
-      <g mask={`url(#${mask1})`}>
-        <Path d="M875 136H1150V734H875V136Z" fill="interactiveNegative010" />
-        <Path d="M1172 139H1447V724H1172V139Z" fill="interactivePrimary010" />
-      </g>
+      <Path d="M875 136H1150V734H875V136Z" fill="interactiveNegative010" />
+      <Path
+        d="M1266.05 139V711.405C1266.05 717.927 1261.12 723.298 1254.78 724H1172V139H1266.05Z"
+        fill="interactivePrimary010"
+      />
       <Path
         d="M875 718C875 714.686 877.686 712 881 712H1239C1242.31 712 1245 714.686 1245 718V718C1245 721.314 1242.31 724 1239 724H881C877.686 724 875 721.314 875 718V718Z"
         fill="illustrationPalette020"
@@ -135,12 +96,12 @@ export const ScrollBarVisibility: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2180_77746"
+            result="effect1_dropShadow_2657_78649"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2180_77746"
+            in2="effect1_dropShadow_2657_78649"
             result="shape"
           />
         </filter>
@@ -169,12 +130,12 @@ export const ScrollBarVisibility: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2180_77746"
+            result="effect1_dropShadow_2657_78649"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2180_77746"
+            in2="effect1_dropShadow_2657_78649"
             result="shape"
           />
         </filter>
