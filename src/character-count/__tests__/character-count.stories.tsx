@@ -169,7 +169,7 @@ export const CharacterCountExceedMaxLength = () => {
   );
 };
 
-CharacterCountExceedMaxLength.storyName = 'MaxLength over limit';
+CharacterCountExceedMaxLength.storyName = 'Max length over limit';
 
 export const CharacterCountMinLength = () => {
   const textArea = useRef<HTMLTextAreaElement>(null);
