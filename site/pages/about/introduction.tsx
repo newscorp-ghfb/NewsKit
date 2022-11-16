@@ -11,6 +11,7 @@ import {
   ContentPrimary,
   ContentSecondary,
 } from '../../components/content-structure';
+import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
 const principleCardoverrides = {
   title: {
@@ -28,10 +29,9 @@ const PageIntroductionContainer = styled.div`
 
 const cards = [
   {
-    media: {
-      src: 'static/about-principles-01.svg',
-      alt: '',
-    },
+    media: getIllustrationComponent('about/principles-01', {
+      viewBox: '0 0 1344 759',
+    }),
     stylePrefix: 'principleCard',
     label: 'User focused',
     title: 'We design for people',
@@ -40,10 +40,9 @@ const cards = [
     overrides: principleCardoverrides,
   },
   {
-    media: {
-      src: 'static/about-principles-02.svg',
-      alt: '',
-    },
+    media: getIllustrationComponent('about/principles-02', {
+      viewBox: '0 0 1344 759',
+    }),
     stylePrefix: 'principleCard',
     label: 'Inclusive',
     title: 'We’re inclusive first',
@@ -52,10 +51,9 @@ const cards = [
     overrides: principleCardoverrides,
   },
   {
-    media: {
-      src: 'static/about-principles-03.svg',
-      alt: '',
-    },
+    media: getIllustrationComponent('about/principles-03', {
+      viewBox: '0 0 1344 759',
+    }),
     stylePrefix: 'principleCard',
     label: 'Essential',
     title: 'We’re open (and open source)',
@@ -71,8 +69,8 @@ const Introduction = (
   <Layout {...props} path={`${path}-new`}>
     <HeadNextSeo
       title="About"
-      description="NewsKit provides components, guidelines and standards to enable digital product 
-      teams to create high-quality, consistent products quickly. NewsKit is built on modular design 
+      description="NewsKit provides components, guidelines and standards to enable digital product
+      teams to create high-quality, consistent products quickly. NewsKit is built on modular design
       principles and backed by best practice guidance for design and development."
       image={{
         url: 'social/about.png',
@@ -87,6 +85,7 @@ const Introduction = (
         introduction="NewsKit makes building digital products quicker and simpler for everyone."
         hero={{
           illustration: 'about/introduction-hero-stepping-stones-illustration',
+          illustrationProps: {viewBox: '0 0 1344 759'},
         }}
       />
     </PageIntroductionContainer>

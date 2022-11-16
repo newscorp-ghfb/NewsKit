@@ -714,7 +714,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         {
           description: 'Where possible, define a default option.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/select/usage/do-2'),
+          media: getIllustrationComponent('components/select/usage/do-3'),
         },
         {
           description:

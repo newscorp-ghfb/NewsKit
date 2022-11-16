@@ -33,7 +33,7 @@ const Foundations: React.FC = () => {
         transform="rotate(14.76 1096.74 433.813)"
         fill="#7264EF"
         stroke="#DEE2E5"
-        stroke-width="1.21631"
+        strokeWidth="1.21631"
       />
       <Circle
         cx="929.974"
@@ -42,7 +42,7 @@ const Foundations: React.FC = () => {
         transform="rotate(14.76 929.974 475.432)"
         fill="#9B87FC"
         stroke="#DEE2E5"
-        stroke-width="1.21631"
+        strokeWidth="1.21631"
       />
       <Circle
         cx="762.761"
@@ -51,7 +51,7 @@ const Foundations: React.FC = () => {
         transform="rotate(14.76 762.761 518.735)"
         fill="#BBAEFF"
         stroke="#DEE2E5"
-        stroke-width="1.21631"
+        strokeWidth="1.21631"
       />
       <g filter={`url(#${filter1})`}>
         <Path
@@ -66,7 +66,7 @@ const Foundations: React.FC = () => {
         transform="rotate(-0.258284 1049.21 308.526)"
         fill="#65BBC4"
         stroke="#DEE2E5"
-        stroke-width="1.21631"
+        strokeWidth="1.21631"
       />
       <Circle
         cx="898.926"
@@ -75,7 +75,7 @@ const Foundations: React.FC = () => {
         transform="rotate(-0.258284 898.926 391.938)"
         fill="#81D2DA"
         stroke="#DEE2E5"
-        stroke-width="1.21631"
+        strokeWidth="1.21631"
       />
       <Circle
         cx="748.646"
@@ -84,7 +84,7 @@ const Foundations: React.FC = () => {
         transform="rotate(-0.258284 748.646 477.092)"
         fill="#A8E0E6"
         stroke="#DEE2E5"
-        stroke-width="1.21631"
+        strokeWidth="1.21631"
       />
       <g filter={`url(#${filter2})`}>
         <Path
@@ -109,7 +109,7 @@ const Foundations: React.FC = () => {
         transform="rotate(-13.8065 975.013 213.91)"
         fill="#577FFB"
         stroke="#DEE2E5"
-        stroke-width="1.21631"
+        strokeWidth="1.21631"
       />
       <Circle
         cx="848.448"
@@ -118,7 +118,7 @@ const Foundations: React.FC = () => {
         transform="rotate(-13.8065 848.448 330.208)"
         fill="#87A4FC"
         stroke="#DEE2E5"
-        stroke-width="1.21631"
+        strokeWidth="1.21631"
       />
       <Circle
         cx="722.299"
@@ -127,7 +127,7 @@ const Foundations: React.FC = () => {
         transform="rotate(-13.8065 722.299 448.197)"
         fill="#AEBFFF"
         stroke="#DEE2E5"
-        stroke-width="1.21631"
+        strokeWidth="1.21631"
       />
       <defs>
         <filter

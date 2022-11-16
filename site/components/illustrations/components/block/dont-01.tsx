@@ -71,8 +71,8 @@ export const Dont01: React.FC = () => (
       height="431"
       rx="22.5789"
       stroke="#577FFB"
-      stroke-width="7.58358"
-      stroke-dasharray="16.93 16.93"
+      strokeWidth="7.58358"
+      strokeDasharray="16.93 16.93"
     />
   </Svg>
 );

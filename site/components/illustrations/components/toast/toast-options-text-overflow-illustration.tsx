@@ -50,10 +50,10 @@ export const ToastOptionsTextOverflowIllustration: React.FC = () => {
             height="201"
             rx="16"
             stroke="illustrationHighlight010"
-            stroke-width="8"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-dasharray="9 22"
+            strokeWidth="8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeDasharray="9 22"
           />
           <Rect
             x="283.809"

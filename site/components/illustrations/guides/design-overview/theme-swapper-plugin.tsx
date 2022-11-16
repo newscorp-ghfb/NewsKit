@@ -71,7 +71,7 @@ export const ThemeSwapperPlugin: React.FC = () => {
         r="35.8508"
         fill="illustrationPalette020"
         stroke="#AEBFFF"
-        stroke-width="0.895302"
+        strokeWidth="0.895302"
       />
       <Rect
         x="975.322"
@@ -81,7 +81,7 @@ export const ThemeSwapperPlugin: React.FC = () => {
         rx="4.08965"
         fill="illustrationPalette020"
         stroke="#AEBFFF"
-        stroke-width="0.895302"
+        strokeWidth="0.895302"
       />
       <Rect
         x="903.572"
@@ -92,7 +92,7 @@ export const ThemeSwapperPlugin: React.FC = () => {
         transform="rotate(-45 903.572 228.621)"
         fill="illustrationPalette020"
         stroke="#AEBFFF"
-        stroke-width="0.895302"
+        strokeWidth="0.895302"
       />
       <Rect
         x="-0.633074"
@@ -102,7 +102,7 @@ export const ThemeSwapperPlugin: React.FC = () => {
         transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1052.82 232.85)"
         fill="illustrationPalette020"
         stroke="#AEBFFF"
-        stroke-width="0.895302"
+        strokeWidth="0.895302"
       />
       <Rect
         x="1048.59"
@@ -113,7 +113,7 @@ export const ThemeSwapperPlugin: React.FC = () => {
         transform="rotate(135 1048.59 355.284)"
         fill="illustrationPalette020"
         stroke="#AEBFFF"
-        stroke-width="0.895302"
+        strokeWidth="0.895302"
       />
       <Rect
         x="1041.99"
@@ -124,7 +124,7 @@ export const ThemeSwapperPlugin: React.FC = () => {
         transform="rotate(-90 1041.99 294.39)"
         fill="illustrationPalette020"
         stroke="#AEBFFF"
-        stroke-width="0.895302"
+        strokeWidth="0.895302"
       />
       <Path
         d="M554.098 99.4295C554.098 92.0126 560.11 86 567.527 86H794.934C802.351 86 808.363 92.0126 808.363 99.4295V242.081C808.363 249.498 802.351 255.51 794.934 255.51H567.527C560.11 255.51 554.098 249.498 554.098 242.081V99.4295Z"

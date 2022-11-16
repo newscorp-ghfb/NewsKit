@@ -332,7 +332,7 @@ export const Anatomy: React.FC = () => {
           height="290.682"
           rx="7.38339"
           stroke="#AEBFFF"
-          stroke-width="0.686639"
+          strokeWidth="0.686639"
         />
       </g>
       <Rect
