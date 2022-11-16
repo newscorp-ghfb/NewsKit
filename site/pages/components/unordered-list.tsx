@@ -91,7 +91,7 @@ const commonOverridesRows = [
       'If provided, this overrides the space between the unordered list marker and the content.',
   },
   {
-    attribute: 'size',
+    attribute: 'marker.size',
     type: 'string',
     default: 'iconSize005',
     description: (
@@ -346,13 +346,24 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
                 isDefault: true,
               },
               {
-                label: 'buttonSolidPrimary',
+                label: 'inkPositive',
                 value: {
                   content: {
-                    stylePreset: 'buttonSolidPrimary',
+                    stylePreset: 'inkPositive',
                   },
                   marker: {
-                    stylePreset: 'buttonSolidPrimary',
+                    stylePreset: 'inkPositive',
+                  },
+                },
+              },
+              {
+                label: 'inkNegative',
+                value: {
+                  content: {
+                    stylePreset: 'inkNegative',
+                  },
+                  marker: {
+                    stylePreset: 'inkNegative',
                   },
                 },
               },
