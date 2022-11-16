@@ -24,8 +24,8 @@ export const Hero: React.FC = () => {
         width="1003"
         height="588"
         stroke="#AEBFFF"
-        stroke-width="8"
-        stroke-dasharray="54 54"
+        strokeWidth="8"
+        strokeDasharray="54 54"
       />
       <g filter={`url(#${filter0})`}>
         <Rect

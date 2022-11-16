@@ -64,7 +64,11 @@ files
       .replace('</svg', '</Svg')
       .replace(/color-interpolation-filters/g, 'colorInterpolationFilters')
       .replace(/flood-opacity/g, 'floodOpacity')
-      .replace(/"mix-blend-mode:multiply"/g, "{{mixBlendMode: 'multiply'}}");
+      .replace(/"mix-blend-mode:multiply"/g, "{{mixBlendMode: 'multiply'}}")
+      .replace(
+        /"mix-blend-mode:color-burn"/g,
+        "{{mixBlendMode: 'color-burn'}}",
+      );
 
     const filename2 = filename
       .replace('components-', '')

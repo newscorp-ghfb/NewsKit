@@ -1,83 +1,50 @@
 import React from 'react';
 import {getSSRId} from 'newskit';
 import {Svg} from '../svg';
+import {Path} from '../path';
 import {Rect} from '../rect';
-import {Circle} from '../circle';
-import {Ellipse} from '../ellipse';
 
 export const HeroShadowsIllustration: React.FC = () => {
-  const mask0 = getSSRId();
+  const clip0 = getSSRId();
+
   return (
     <Svg
-      width="1344"
-      height="759"
-      viewBox="0 0 1344 759"
+      width="1490"
+      height="838"
+      viewBox="0 0 1490 838"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <Rect width="1344" height="759" fill="illustrationBackground020" />
-      <Ellipse
-        cx="673.654"
-        cy="588.5"
-        rx="124.5"
-        ry="9.5"
-        fill="illustrationSubtle010"
-      />
-      <Circle
-        cx="672.499"
-        cy="367.5"
-        r="217.5"
-        transform="rotate(-30 672.499 367.5)"
-        fill="Palette040"
-      />
-      <mask
-        id={mask0}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="454"
-        y="149"
-        width="437"
-        height="437"
-      >
-        <Circle
-          cx="672.499"
-          cy="367.5"
-          r="217.5"
-          transform="rotate(-30 672.499 367.5)"
-          fill="illustrationInterface040"
+      <g clipPath={`url(#${clip0})`}>
+        <Rect width="1490" height="838" fill="illustrationBackground020" />
+        <Path
+          d="M870.762 640.11C870.762 645.357 815.021 649.61 746.262 649.61C677.502 649.61 621.762 645.357 621.762 640.11C621.762 634.864 677.502 630.61 746.262 630.61C815.021 630.61 870.762 634.864 870.762 640.11Z"
+          fill="illustrationShadow010"
         />
-      </mask>
-      <g mask={`url(#${mask0})`}>
-        <Circle
-          cx="672.499"
-          cy="367.5"
-          r="217.5"
-          transform="rotate(-30 672.499 367.5)"
-          fill="illustrationPalette060"
+        <Path
+          d="M853.861 607.471C957.889 547.41 993.532 414.389 933.471 310.361C873.41 206.332 740.389 170.689 636.361 230.75C532.332 290.811 496.689 423.832 556.75 527.861C616.811 631.889 749.832 667.532 853.861 607.471Z"
+          fill="#6454E3"
         />
-        <Circle
-          cx="752.111"
-          cy="309.111"
-          r="217.5"
-          transform="rotate(-30 752.111 309.111)"
-          fill="illustrationPalette040"
+        <Path
+          d="M659.548 219.124C759.407 176.253 877.791 213.92 933.471 310.361C980.869 392.456 968.665 492.607 910.284 560.708C810.425 603.579 692.041 565.911 636.361 469.471C588.963 387.376 601.168 287.224 659.548 219.124Z"
+          fill="#8883F6"
         />
-        <Circle
-          cx="812.077"
-          cy="278.077"
-          r="165.5"
-          transform="rotate(-30 812.077 278.077)"
-          fill="illustrationPalette030"
+        <Path
+          d="M953.905 480.03C969.937 425.053 964.365 363.871 933.471 310.361C898.962 250.589 840.366 213.394 777.024 203.956C717.561 254.757 700.847 342.266 741.361 412.438C784.495 487.149 877.085 515.506 953.905 480.03Z"
+          fill="#A3A3FB"
         />
-        <Circle
-          cx="828.984"
-          cy="264.984"
-          r="75.3894"
-          transform="rotate(-30 828.984 264.984)"
-          fill="illustrationPalette020"
+        <Path
+          d="M956.617 368.161C951.838 348.358 944.174 328.899 933.471 310.361C918.448 284.339 898.859 262.597 876.301 245.56C872.075 247.071 867.925 248.981 863.9 251.305C827.841 272.123 815.487 318.231 836.305 354.289C857.123 390.347 903.231 402.702 939.289 381.883C945.875 378.081 951.67 373.435 956.617 368.161Z"
+          fill="#C0C2FC"
         />
       </g>
+      <defs>
+        <clipPath id={clip0}>
+          <Rect width="1490" height="838" fill="white" />
+        </clipPath>
+      </defs>
     </Svg>
   );
 };
+
 export default HeroShadowsIllustration;

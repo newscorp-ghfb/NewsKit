@@ -36,10 +36,10 @@ export const BlockVerticalIllustration: React.FC = () => {
           height="230"
           rx="12"
           stroke="#2B4AAB"
-          stroke-width="6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-dasharray="16 16"
+          strokeWidth="6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeDasharray="16 16"
         />
         <Path
           d="M969.648 301.324C969.648 338.506 939.506 368.648 902.324 368.648C865.142 368.648 835 338.506 835 301.324C835 264.142 865.142 234 902.324 234C939.506 234 969.648 264.142 969.648 301.324Z"
@@ -57,10 +57,10 @@ export const BlockVerticalIllustration: React.FC = () => {
           height="230"
           rx="12"
           stroke="#2B4AAB"
-          stroke-width="6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-dasharray="16 16"
+          strokeWidth="6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeDasharray="16 16"
         />
         <Path
           d="M720 398L720 204L732 204L732 398L720 398Z"
@@ -74,10 +74,10 @@ export const BlockVerticalIllustration: React.FC = () => {
           height="230"
           rx="12"
           stroke="#2B4AAB"
-          stroke-width="6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-dasharray="16 16"
+          strokeWidth="6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeDasharray="16 16"
         />
       </g>
       <defs>

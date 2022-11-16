@@ -111,7 +111,7 @@ export const Size: React.FC = () => (
       height="91.39"
       rx="7.195"
       stroke="#BBC3C9"
-      stroke-width="1.61"
+      strokeWidth="1.61"
     />
     <Path
       fillRule="evenodd"
@@ -228,7 +228,7 @@ export const Size: React.FC = () => (
       height="106.39"
       rx="11.195"
       stroke="#BBC3C9"
-      stroke-width="1.61"
+      strokeWidth="1.61"
     />
     <Path
       d="M1105.72 593.584H1122.01V598.524H1099.65V551.998H1105.72V593.584Z"
@@ -335,7 +335,7 @@ export const Size: React.FC = () => (
       height="136.39"
       rx="15.195"
       stroke="#BBC3C9"
-      stroke-width="1.61"
+      strokeWidth="1.61"
     />
     <Path
       d="M135.58 379.483L140.564 365.959H142.284L147.249 379.483H145.529L144.293 376.005H138.536L137.28 379.483H135.58ZM139.019 374.691H143.81L141.414 368.007L139.019 374.691Z"

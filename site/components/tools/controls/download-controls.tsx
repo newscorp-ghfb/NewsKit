@@ -91,6 +91,7 @@ export const DownloadControls = ({
       .replace(/color-interpolation-filters/g, 'colorInterpolationFilters')
       .replace(/flood-opacity/g, 'floodOpacity')
       .replace(/"mix-blend-mode:multiply"/g, "{{mixBlendMode: 'multiply'}}")
+      .replace(/"mix-blend-mode:color-burn"/g, "{{mixBlendMode: 'color-burn'}}")
       .replaceAll(`style="mask-type:alpha"`, `mask-type="alpha"`)
       .replaceAll(`fill-rule`, `fillRule`)
       .replaceAll(`clip-rule`, `clipRule`);

@@ -5,8 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const CheckedHover: React.FC = () => {
-  const mask0 = getSSRId();
-  const clip0 = getSSRId();
   const filter0 = getSSRId();
 
   return (
@@ -25,42 +23,23 @@ export const CheckedHover: React.FC = () => {
       <Rect
         x="296"
         y="283"
-        width="509.993"
+        width="509.984"
         height="272"
         rx="136"
         fill="illustrationHighlight010"
       />
-      <mask
-        id={mask0}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="329"
-        y="317"
-        width="205"
-        height="204"
-      >
-        <Path
-          d="M406.497 454.7L370.798 419.001L358.898 430.9L406.497 478.499L508.494 376.502L496.594 364.603L406.497 454.7Z"
-          fill="#0A0A0A"
-        />
-      </mask>
-      <g mask={`url(#${mask0})`}>
-        <Rect
-          x="329.999"
-          y="317.007"
-          width="203.994"
-          height="203.994"
-          fill="interface010"
-        />
-      </g>
-      <g clipPath={`url(#${clip0})`}>
-        <Rect
-          width="203.994"
-          height="203.994"
-          transform="translate(568 317.007)"
-          fill="interface010"
-        />
-      </g>
+      <Path
+        d="M406.497 454.699L370.798 419L358.898 430.899L406.497 478.498L508.494 376.501L496.594 364.602L406.497 454.699Z"
+        fill="interface010"
+      />
+      <Rect
+        x="567.991"
+        y="317.007"
+        width="203.994"
+        height="203.994"
+        rx="101.997"
+        fill="interface010"
+      />
       <g filter={`url(#${filter0})`}>
         <Path
           fillRule="evenodd"
@@ -130,16 +109,6 @@ export const CheckedHover: React.FC = () => {
             result="shape"
           />
         </filter>
-        <clipPath id={clip0}>
-          <Rect
-            x="568"
-            y="317.007"
-            width="203.994"
-            height="203.994"
-            rx="101.997"
-            fill="white"
-          />
-        </clipPath>
       </defs>
     </Svg>
   );

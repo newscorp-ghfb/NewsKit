@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {GridLayoutItem, TextBlock, GridLayout, Visible, Button} from 'newskit';
 import LinkNext from 'next/link';
-import HeroGrid from '../../illustrations/landing-page/hero-grid';
+import {Illustration} from '../../illustrations/illustration-loader';
 import {HeroProps} from './types';
 import {HeroContainer} from './styled';
 import HeroInteractiveElements from './hero-interactive-elements';
@@ -113,7 +113,7 @@ export const Hero = ({
               themeMode={themeMode}
               toggleTheme={toggleTheme}
             />
-            <HeroGrid />
+            <Illustration viewBox="0 0 686 670" path="landing-page/hero-grid" />
           </Visible>
         </GridLayoutItem>
       </GridLayout>
