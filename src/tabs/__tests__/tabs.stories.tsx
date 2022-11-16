@@ -1515,7 +1515,10 @@ export const StoryTabsWithScrollOverrides = () => {
   );
 };
 StoryTabsWithScrollOverrides.storyName = 'tabs-with-scroll-overrides';
-StoryTabsWithScrollOverrides.parameters = {eyes: {include: false}};
+StoryTabsWithScrollOverrides.parameters = {
+  eyes: {include: false},
+  percy: {skip: true},
+};
 
 // const transitionTheme = createTheme({
 //   name: 'my-custom-tab-theme',
@@ -1675,7 +1678,7 @@ export const StoryTabsTransitions = () => (
   </>
 );
 StoryTabsTransitions.storyName = 'tabs-transitions';
-StoryTabsTransitions.parameters = {eyes: {include: false}};
+StoryTabsTransitions.parameters = {eyes: {include: false}, percy: {skip: true}};
 
 export const StoryTagLogicalProps = () => (
   <>
