@@ -7,6 +7,7 @@ import {
   IconOutlinedTrendingFlat,
   IconFilledHome,
 } from '../../icons';
+import {TextBlock} from '../../text-block';
 
 // import {ThemeProvider} from '../../theme';
 // import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
@@ -101,25 +102,6 @@ export const StoryVariations = () => (
           Breadcrumb item
         </BreadcrumbItem>
       </Breadcrumbs>
-      {/* <Breadcrumbs
-        size="small"
-        overrides={{
-          separator: props => (
-            <IconFilledAccountBalance
-              {...props}
-              overrides={{
-                size: 'iconSize020',
-                stylePreset: 'inkSubtle',
-              }}
-            />
-          ),
-        }}
-      >
-        <BreadcrumbItem href={href}>hello</BreadcrumbItem>
-        <BreadcrumbItem href={href}>bye</BreadcrumbItem>
-        <BreadcrumbItem href={href}>hello</BreadcrumbItem>
-        <BreadcrumbItem href={href}>bye</BreadcrumbItem>
-      </Breadcrumbs> */}
     </StorybookCase>
     <StorybookCase title="Trailing icon">
       <Breadcrumbs>
@@ -197,10 +179,10 @@ export const StoryLogicalProps = () => (
   </StorybookPage>
 );
 StoryLogicalProps.storyName = 'Logical props';
-
+const textBlock = '/';
 export const StoryOverrides = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="Custome colour">
+    <StorybookCase title="Custom colour">
       <Breadcrumbs>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
@@ -249,6 +231,23 @@ export const StoryOverrides = () => (
                 stylePreset: 'breadcrumbSeparator',
               }}
             />
+          ),
+        }}
+      >
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem selected href={href}>
+          Breadcrumb item
+        </BreadcrumbItem>
+      </Breadcrumbs>
+    </StorybookCase>
+    <StorybookCase title="Custom separators with TextBlock">
+      <Breadcrumbs
+        overrides={{
+          separator: () => (
+            <TextBlock paddingInline="space020" stylePreset="inkSubtle">
+              {textBlock}
+            </TextBlock>
           ),
         }}
       >
