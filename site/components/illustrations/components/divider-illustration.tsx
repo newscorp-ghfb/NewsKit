@@ -28,9 +28,9 @@ export const DividerIllustration: React.FC = () => (
     <Path
       d="M375 413H1115"
       stroke="#BBC3C9"
-      stroke-width="8"
-      stroke-linecap="round"
-      stroke-dasharray="4 20"
+      strokeWidth="8"
+      strokeLinecap="round"
+      strokeDasharray="4 20"
     />
     <Path
       d="M544.501 379.5C544.771 268.998 634.657 179.5 745.5 179.5C856.343 179.5 946.229 268.998 946.499 379.5L544.501 379.5Z"

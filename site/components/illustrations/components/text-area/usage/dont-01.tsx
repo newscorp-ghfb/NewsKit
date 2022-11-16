@@ -67,7 +67,7 @@ export const Dont01: React.FC = () => (
       height="356.191"
       rx="20.0957"
       stroke="#2B4AAB"
-      stroke-width="7.80859"
+      strokeWidth="7.80859"
     />
     <Rect
       width="3.12344"

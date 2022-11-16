@@ -40,7 +40,7 @@ export const InlineMessageDont3Illustration: React.FC = () => {
             rx="7.42363"
             fill="illustrationPalette020"
             stroke="#AEBFFF"
-            stroke-width="1.5728"
+            strokeWidth="1.5728"
           />
           <Rect
             x="410.662"
@@ -50,7 +50,7 @@ export const InlineMessageDont3Illustration: React.FC = () => {
             rx="7.42363"
             fill="illustrationPalette020"
             stroke="#AEBFFF"
-            stroke-width="1.5728"
+            strokeWidth="1.5728"
           />
           <Rect
             x="410.662"
@@ -60,13 +60,13 @@ export const InlineMessageDont3Illustration: React.FC = () => {
             rx="7.42363"
             fill="illustrationPalette020"
             stroke="#AEBFFF"
-            stroke-width="1.5728"
+            strokeWidth="1.5728"
           />
           <Path
             d="M367.598 350.028C367.598 370.892 350.693 387.805 329.841 387.805C308.988 387.805 292.083 370.892 292.083 350.028C292.083 329.164 308.988 312.252 329.841 312.252C350.693 312.252 367.598 329.164 367.598 350.028Z"
             fill="illustrationPalette020"
             stroke="#AEBFFF"
-            stroke-width="2.44715"
+            strokeWidth="2.44715"
           />
         </g>
         <g filter={`url(#${filter1})`}>

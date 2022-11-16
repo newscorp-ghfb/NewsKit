@@ -52,7 +52,7 @@ const Index = ({
           }}
         >
           <FeatureCard
-            title={getValueFromCMS(content, 'HeroCardTitle', 'Latest Blog')}
+            title={getValueFromCMS(content, 'HeroCardTitle', 'Latest blog')}
             description={getValueFromCMS(
               content,
               'HeroCardDescription',

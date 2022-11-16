@@ -45,7 +45,9 @@ const DO_AND_DONT = [
   {
     description: `Motion shouldn’t distract or block the user from what they’re doing.`,
     kind: UsageKind.DONT,
-    media: getIllustrationComponent('theme/motion/dont-01'),
+    media: getIllustrationComponent('theme/motion/dont-01', {
+      viewBox: '0 0 1491 839',
+    }),
   },
   {
     description: `Avoid motion that’s too fast for the user to follow.`,
