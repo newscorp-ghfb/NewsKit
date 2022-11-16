@@ -1,11 +1,11 @@
 import React from 'react';
-import {ThemeProvider} from 'newskit';
 import Layout from '../../components/layout';
 import {PatternPageTemplateProps} from './types';
 import {PageTemplate} from '../page-template';
 import {patternsThemeDark, patternsThemeLight} from '../../theme/doc-theme';
 import {OnwardJourneySectionProps} from '../template-sections';
 import {useGetFeatureCard} from '../../utils/get-feature-card';
+import {ThemeProviderSite} from '../../components/theme-provider-site';
 
 const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
   buttonLabel: 'Read more',
@@ -25,7 +25,7 @@ export const PatternPageTemplate: React.FC<PatternPageTemplateProps> = ({
     <Layout {...layoutProps} newPage>
       {({themeMode}) => (
         <>
-          <ThemeProvider
+          <ThemeProviderSite
             theme={
               themeMode === 'light' ? patternsThemeLight : patternsThemeDark
             }
@@ -48,7 +48,7 @@ export const PatternPageTemplate: React.FC<PatternPageTemplateProps> = ({
             >
               {children}
             </PageTemplate>
-          </ThemeProvider>
+          </ThemeProviderSite>
         </>
       )}
     </Layout>

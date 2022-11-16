@@ -28,7 +28,7 @@ export const DrawerAnatomyIllustration: React.FC = () => (
         height="576.562"
         rx="14.0509"
         stroke="#AEBFFF"
-        stroke-width="0.906508"
+        strokeWidth="0.906508"
       />
     </g>
     <Rect

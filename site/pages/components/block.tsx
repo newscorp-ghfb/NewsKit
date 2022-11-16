@@ -29,7 +29,7 @@ const BlockComponent = (layoutProps: LayoutProps) => (
       type: 'Components',
       name: 'Block',
       hero: {
-        illustration: 'components/block/hero',
+        illustration: 'components/block-illustration',
       },
       introduction:
         'The Block is a simple container component that style and space can be applied to. This is the equivalent to a frame in Figma.',
@@ -142,7 +142,9 @@ const BlockComponent = (layoutProps: LayoutProps) => (
           description: 'The HTML element.',
         },
       ],
-      media: getIllustrationComponent('components/block/anatomy'),
+      media: getIllustrationComponent('components/block/anatomy', {
+        viewBox: '0 0 1600 901',
+      }),
     }}
     options={{
       introduction:

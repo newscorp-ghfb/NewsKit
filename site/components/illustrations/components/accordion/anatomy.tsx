@@ -119,14 +119,14 @@ export const Anatomy: React.FC = () => (
     <Path
       d="M473 286L451 286C439.954 286 431 294.954 431 306L431 356C431 367.046 439.954 376 451 376L473 376"
       stroke="#577FFB"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <Path
       d="M431 331H383"
       stroke="#577FFB"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <Path
       fillRule="evenodd"

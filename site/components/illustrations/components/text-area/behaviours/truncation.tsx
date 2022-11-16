@@ -47,7 +47,7 @@ export const Truncation: React.FC = () => (
       height="360.37"
       rx="22.1852"
       stroke="#BBC3C9"
-      stroke-width="3.62953"
+      strokeWidth="3.62953"
     />
     <Path
       fillRule="evenodd"

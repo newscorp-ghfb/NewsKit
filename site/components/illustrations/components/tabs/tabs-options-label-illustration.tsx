@@ -73,7 +73,7 @@ export const TabsOptionsLabelIllustration: React.FC = () => {
         d="M796.863 629.4V659H793.223V629.4H796.863Z"
         fill="illustrationHighlight010"
       />
-      <Path d="M747 423L747 595" stroke="#577FFB" stroke-width="4" />
+      <Path d="M747 423L747 595" stroke="#577FFB" strokeWidth="4" />
       <Circle
         cx="747"
         cy="418"

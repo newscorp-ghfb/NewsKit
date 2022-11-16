@@ -33,7 +33,7 @@ export const Dont02: React.FC = () => {
           height="226"
           rx="113"
           stroke="#F4F4F4"
-          stroke-width="4"
+          strokeWidth="4"
         />
       </g>
       <g filter={`url(#${filter1})`}>
@@ -52,7 +52,7 @@ export const Dont02: React.FC = () => {
           height="226"
           rx="113"
           stroke="#F4F4F4"
-          stroke-width="4"
+          strokeWidth="4"
         />
       </g>
       <g filter={`url(#${filter2})`}>
@@ -71,7 +71,7 @@ export const Dont02: React.FC = () => {
           height="226"
           rx="113"
           stroke="#F4F4F4"
-          stroke-width="4"
+          strokeWidth="4"
         />
       </g>
       <Path

@@ -1,71 +1,41 @@
-import {getSSRId} from 'newskit';
 import React from 'react';
+import {Svg} from '../svg';
 import {Path} from '../path';
 import {Rect} from '../rect';
-import {Svg} from '../svg';
 
-export const VolumeControlIllustration: React.FC = () => {
-  const mask0 = getSSRId();
+export const VolumeControlIllustration: React.FC = () => (
+  <Svg
+    width="1490"
+    height="838"
+    viewBox="0 0 1490 838"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <Rect width="1490" height="838" fill="illustrationBackground020" />
+    <Rect x="358" y="412" width="773" height="16" rx="8" fill="interface050" />
+    <Rect
+      x="358"
+      y="412"
+      width="451"
+      height="16"
+      rx="8"
+      fill="illustrationPalette060"
+    />
+    <Rect
+      x="744"
+      y="329"
+      width="181"
+      height="181"
+      rx="90.5"
+      fill="illustrationPalette050"
+    />
+    <Path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M843.833 390.364V381.266C861.544 385.285 874.749 401.097 874.749 420C874.749 438.903 861.544 454.715 843.833 458.734V449.636C856.597 445.837 865.916 434.001 865.916 420C865.916 405.999 856.597 394.162 843.833 390.364ZM795.25 406.751V433.251H812.917L835 455.334V384.667L812.917 406.751H795.25ZM854.874 419.999C854.874 412.182 850.369 405.468 843.833 402.2V437.754C850.369 434.53 854.874 427.817 854.874 419.999Z"
+      fill="white"
+    />
+  </Svg>
+);
 
-  return (
-    <Svg
-      width="1344"
-      height="759"
-      viewBox="0 0 1344 759"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <Rect width="1344" height="759" fill="illustrationBackground020" />
-      <Rect
-        x="286"
-        y="380"
-        width="773"
-        height="16"
-        rx="8"
-        fill="interface040"
-      />
-      <Rect
-        x="286"
-        y="380"
-        width="451"
-        height="16"
-        rx="8"
-        fill="illustrationPalette060"
-      />
-      <Rect
-        x="672"
-        y="297"
-        width="181"
-        height="181"
-        rx="90.5"
-        fill="illustrationPalette050"
-      />
-      <mask
-        id={mask0}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="710"
-        y="335"
-        width="106"
-        height="106"
-      >
-        <Path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M771.833 358.364V349.266C789.544 353.285 802.749 369.096 802.749 388C802.749 406.903 789.544 422.715 771.833 426.734V417.636C784.597 413.837 793.916 402.001 793.916 388C793.916 373.999 784.597 362.162 771.833 358.364ZM723.25 374.749V401.249H740.917L763 423.332V352.665L740.917 374.749H723.25ZM782.874 388.001C782.874 380.183 778.369 373.47 771.833 370.202V405.756C778.369 402.532 782.874 395.818 782.874 388.001Z"
-          fill="#0A0A0A"
-        />
-      </mask>
-      <g mask={`url(#${mask0})`}>
-        <Rect
-          x="710"
-          y="335"
-          width="106"
-          height="106"
-          fill="illustrationPalette010"
-        />
-      </g>
-    </Svg>
-  );
-};
 export default VolumeControlIllustration;
