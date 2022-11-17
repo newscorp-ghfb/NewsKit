@@ -31,7 +31,7 @@ export const Do02: React.FC = () => {
           height="227"
           rx="113.5"
           stroke="#F4F4F4"
-          stroke-width="4"
+          strokeWidth="4"
         />
       </g>
       <Path

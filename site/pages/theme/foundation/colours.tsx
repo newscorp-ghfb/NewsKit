@@ -372,7 +372,7 @@ const Colours = (layoutProps: LayoutProps) => (
           headline="Contextual colours"
           description="Select contextual colours from the palette colours and apply specific functions or purposes. There are three categories of contextual colours: ink, interface and interactive."
         >
-          <Illustration path="theme/colours/overview" />
+          <Illustration viewBox="0 0 1490 600" path="theme/colours/overview" />
         </ContentPrimary>
 
         <TabsWithTable components={coloursTable} showSeparator />

@@ -3,27 +3,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "newskit/theme/foundations/colors": [
-        "../src/theme/foundations/colors"
-      ],
-      "newskit/test/test-utils": [
-        "../src/test/test-utils.tsx"
-      ],
-      "newskit/utils/component": [
-        "../src/utils/component"
-      ],
-      "newskit*": [
-        "../src"
-      ],
-      "@components/page-title": [
-        "./components/page-title.tsx"
-      ]
+      "newskit/theme/foundations/colors": ["../src/theme/foundations/colors"],
+      "newskit/test/test-utils": ["../src/test/test-utils.tsx"],
+      "newskit/utils/component": ["../src/utils/component"],
+      "newskit*": ["../src"],
+      "@components/page-title": ["./components/page-title.tsx"]
     },
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "plugins": [
       {
         "name": "typescript-styled-plugin"
@@ -37,14 +23,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "exclude": [
-    "node_modules",
-    "public/static/examples",
-    "src"
-  ],
-  "include": [
-    "*.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "exclude": ["node_modules", "public/static/examples", "src"],
+  "include": ["*.ts", "**/*.ts", "**/*.tsx"]
 }

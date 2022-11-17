@@ -611,7 +611,8 @@ export const routes = [
             title: 'Link',
             page: true,
             id: '/components/link',
-            description: 'Allows user to jump to a new location when clicked.',
+            description:
+              'Links allow users to navigate to a new location or to additional information.',
             illustration: 'components/url-illustration',
           },
           {
@@ -720,7 +721,8 @@ export const routes = [
             title: 'Unordered List',
             page: true,
             id: '/components/unordered-list',
-            description: 'Typically is a bulleted list of items.',
+            description:
+              'Unordered lists make blocks of related text easier to read, structuring information of equal value into manageable bulleted items.',
             illustration: 'components/unordered-list-illustration',
           },
         ],

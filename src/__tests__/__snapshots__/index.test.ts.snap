@@ -89,6 +89,7 @@ Array [
   "MenuDivider",
   "MenuGroup",
   "MenuItem",
+  "MenuSub",
   "Modal",
   "NewsKitProvider",
   "OrderedList",

@@ -1,6 +1,6 @@
 import React from 'react';
 import {fireEvent} from '@testing-library/react';
-import {Menu, MenuDivider, MenuGroup, MenuItem} from '..';
+import {Menu, MenuDivider, MenuGroup, MenuItem, MenuSub} from '..';
 import {
   renderToFragmentWithTheme,
   renderWithImplementation,
@@ -8,10 +8,15 @@ import {
 } from '../../test/test-utils';
 import {IconFilledAddCircleOutline} from '../../icons';
 import {compileTheme, createTheme, EventTrigger} from '../..';
-import {MenuItemProps, MenuItemAlign, MenuItemSize} from '../types';
+import {
+  MenuItemProps,
+  MenuItemAlign,
+  MenuItemSize,
+  MenuSubProps,
+} from '../types';
 
 const MenuItemSizeArray = ['small', 'medium', 'large'];
-const MenuItemAlignKeys = ['start', 'end', 'center'];
+const MenuItemAlignKeys = ['start', 'end', 'center', 'spaceBetween'];
 
 const href = 'http://';
 
@@ -75,6 +80,12 @@ const menuGroupsAndDividers = [
 const MenuWithItem = (props: MenuItemProps) => (
   <Menu>
     <MenuItem key="1" {...props} />
+  </Menu>
+);
+
+const MenuWithMenuSub = ({children, ...props}: MenuSubProps) => (
+  <Menu>
+    <MenuSub {...props}>{children}</MenuSub>
   </Menu>
 );
 
@@ -454,4 +465,126 @@ describe('Menu alignment', () => {
       expect(fragment).toMatchSnapshot();
     },
   );
+});
+
+describe('MenuSub', () => {
+  it('renders with default props', () => {
+    const fragment = renderToFragmentWithTheme(MenuWithMenuSub);
+    expect(fragment).toMatchSnapshot();
+  });
+  it('renders with title', () => {
+    const props = {
+      children: menuItems,
+      title: 'Menu sub',
+    };
+    const fragment = renderToFragmentWithTheme(MenuWithMenuSub, props);
+    expect(fragment).toMatchSnapshot();
+  });
+  it('renders expanded when horizontal', () => {
+    const props = {
+      children: menuItems,
+      expanded: true,
+    };
+    const fragment = renderToFragmentWithTheme(MenuWithMenuSub, props);
+    expect(fragment).toMatchSnapshot();
+  });
+  it('renders expanded when vertical', () => {
+    const props = {
+      children: menuItems,
+      expanded: true,
+    };
+    const fragment = renderToFragmentWithTheme(
+      () => (
+        <Menu vertical>
+          <MenuSub {...props}>{props.children}</MenuSub>
+        </Menu>
+      ),
+      props,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+  it('render defaultExpanded when uncontrolled', () => {
+    const props = {
+      children: menuItems,
+      defaultExpanded: true,
+    };
+    const fragment = renderToFragmentWithTheme(MenuWithMenuSub, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('should invoke onClick when clicked', () => {
+    const mockOnClick = jest.fn();
+    const props = {
+      children: menuItems,
+      onClick: mockOnClick,
+    };
+    const {getByTestId} = renderWithTheme(MenuWithMenuSub, props);
+
+    const menuSubButton = getByTestId('menu-sub-button');
+
+    fireEvent.click(menuSubButton);
+    expect(mockOnClick).toHaveBeenCalled();
+  });
+  it('renders selected menu sub with aria attributes', () => {
+    const props = {
+      children: menuItems,
+      selected: true,
+    };
+    const fragment = renderToFragmentWithTheme(MenuWithMenuSub, props);
+    expect(fragment).toMatchSnapshot();
+  });
+  it('renders with logical props overrides', () => {
+    const props = {
+      children: menuItems,
+      overrides: {
+        paddingInline: 'space020',
+        paddingBlock: 'space040',
+        marginBlock: 'space060',
+        marginInline: 'space080',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(MenuWithMenuSub, props);
+    expect(fragment).toMatchSnapshot();
+  });
+  it('renders with overrides', () => {
+    const myCustomTheme = compileTheme(
+      createTheme({
+        name: 'menu-sub-theme',
+        overrides: {
+          stylePresets: {
+            menuSubCustom: {
+              base: {
+                backgroundColor: 'pink',
+                borderStyle: 'solid',
+                borderColor: 'darkpink',
+                borderWidth: '0px 8px 0px 0px',
+                color: 'red',
+                iconColor: 'grey',
+              },
+            },
+          },
+        },
+      }),
+    );
+    const props = {
+      children: menuItems,
+      href,
+      key: '1',
+      overrides: {
+        stylePreset: 'menuSubCustom',
+        typographyPreset: 'utilityButton030',
+        minWidth: '10px',
+        minHeight: '11px',
+        spaceInline: 'space030',
+        spaceInset: 'space030',
+        iconSize: 'iconSize030',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(
+      MenuWithMenuSub,
+      props,
+      myCustomTheme,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
 });

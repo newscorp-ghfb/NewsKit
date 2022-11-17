@@ -19,6 +19,10 @@ const Container = styled.div`
   ${getSizingCssFromTheme('marginBottom', 'sizing080')}
 `;
 
+const StepIllustration = ({path}: {path: string}) => (
+  <Illustration path={path} viewBox="0 0 1345 759" />
+);
+
 const FormStepByStep = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
@@ -83,7 +87,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           hideBottomSpacing
         >
           <Container>
-            <Illustration path="guides/form-guide/steps/step-01" />
+            <StepIllustration path="guides/form-guide/steps/step-01" />
           </Container>
         </ContentPrimary>
         <ContentSecondary
@@ -135,7 +139,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           hideBottomSpacing
         >
           <Container>
-            <Illustration path="guides/form-guide/steps/step-02" />
+            <StepIllustration path="guides/form-guide/steps/step-02" />
           </Container>
         </ContentSecondary>
         <ContentSecondary
@@ -245,7 +249,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           }
         >
           <Container>
-            <Illustration path="guides/form-guide/steps/step-03" />
+            <StepIllustration path="guides/form-guide/steps/step-03" />
           </Container>
           <Code>
             {`<Form onSubmit={onSubmit}>
@@ -284,7 +288,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           }
         >
           <Container>
-            <Illustration path="guides/form-guide/steps/step-04" />
+            <StepIllustration path="guides/form-guide/steps/step-04" />
           </Container>
           <Container>
             <Code>
@@ -299,12 +303,12 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
             <FormInputCheckbox label="I accept the terms" value="tc" />
             <FormInputAssistiveText validationIcon />
         </FormInput>
-    </Fieldset>  
+    </Fieldset>
     <Button type="submit">Submit</Button>
 </Form>`}
             </Code>
           </Container>
-          <Illustration path="guides/form-guide/steps/step-05" />
+          <StepIllustration path="guides/form-guide/steps/step-05" />
         </ContentSecondary>
         <ContentSecondary
           headline="FormInputRadioButton component"
@@ -340,7 +344,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           showSeparator
         >
           <Container>
-            <Illustration path="guides/form-guide/steps/step-06" />
+            <StepIllustration path="guides/form-guide/steps/step-06" />
           </Container>
           <Container>
             <Code>
@@ -365,7 +369,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
  </Form>`}
             </Code>
           </Container>
-          <Illustration path="guides/form-guide/steps/step-07" />
+          <StepIllustration path="guides/form-guide/steps/step-07" />
         </ContentSecondary>
       </ContentSection>
 
@@ -391,7 +395,7 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           hideBottomSpacing
         >
           <Container>
-            <Illustration path="guides/form-guide/steps/step-08" />
+            <StepIllustration path="guides/form-guide/steps/step-08" />
           </Container>
           <Container>
             <Code>
@@ -465,14 +469,14 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
           hideBottomSpacing
         >
           <Container>
-            <Illustration path="guides/form-guide/steps/step-09" />
+            <StepIllustration path="guides/form-guide/steps/step-09" />
           </Container>
         </ContentSecondary>
         <ContentSecondary
           description="Now that everything has been entered correctly you can see that every component is valid and the user can proceed."
           showSeparator
         >
-          <Illustration path="guides/form-guide/steps/step-10" />
+          <StepIllustration path="guides/form-guide/steps/step-10" />
         </ContentSecondary>
       </ContentSection>
     </ComponentPageCell>

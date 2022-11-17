@@ -52,7 +52,7 @@ export const Checkbox: React.FC = () => {
             rx="10.9177"
             fill="illustrationInterface010"
             stroke="#41A0AA"
-            stroke-width="6"
+            strokeWidth="6"
           />
           <Rect
             x="430"
@@ -70,7 +70,7 @@ export const Checkbox: React.FC = () => {
             rx="10.9177"
             fill="illustrationInterface010"
             stroke="#41A0AA"
-            stroke-width="6"
+            strokeWidth="6"
           />
           <Rect
             x="562"

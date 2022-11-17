@@ -976,6 +976,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-141>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1015,14 +1016,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 80px;
   min-height: 80px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 80px;
-  min-width: auto;
+  min-width: 80px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1037,6 +1037,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-width: 4px;
   border-style: solid;
   cursor: pointer;
+  width: 100%;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1148,14 +1149,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 80px;
   min-height: 80px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 80px;
-  min-width: auto;
+  min-width: 80px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1170,6 +1170,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-width: 4px;
   border-style: solid;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -4030,6 +4031,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-141>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -4069,14 +4071,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 80px;
   min-height: 80px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 80px;
-  min-width: auto;
+  min-width: 80px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4091,6 +4092,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-width: 4px;
   border-style: solid;
   cursor: pointer;
+  width: 100%;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4202,14 +4204,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 80px;
   min-height: 80px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 80px;
-  min-width: auto;
+  min-width: 80px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -4224,6 +4225,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-width: 4px;
   border-style: solid;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -7084,6 +7086,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-141>ul {
   box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -7123,14 +7126,13 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
-  width: 100%;
   min-width: 80px;
   min-height: 80px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 80px;
-  min-width: auto;
+  min-width: 80px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -7145,6 +7147,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   border-width: 4px;
   border-style: solid;
   cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;

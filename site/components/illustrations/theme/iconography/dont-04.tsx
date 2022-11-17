@@ -25,7 +25,7 @@ export const Dont04: React.FC = () => (
       rx="21.6595"
       fill="white"
       stroke="#DEDEDE"
-      stroke-width="1.88344"
+      strokeWidth="1.88344"
     />
     <Circle
       cx="247.773"
