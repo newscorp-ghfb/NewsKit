@@ -198,7 +198,7 @@ export const StoryVariations = () => (
         </BreadcrumbItem>
       </Breadcrumbs>
     </StorybookCase>
-    <StorybookCase title=" showTrailingSeparator">
+    <StorybookCase title="showTrailingSeparator">
       <Breadcrumbs showTrailingSeparator>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
