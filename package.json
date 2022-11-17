@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "6.4.0",
+  "version": "6.5.0",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -225,9 +225,9 @@
     "dompurify": "^2.3.1",
     "downshift": "^6.1.7",
     "file-saver": "^2.0.5",
-    "googleapis": "^109.0.1",
     "glob": "^8.0.3",
     "globby": "^13.1.2",
+    "googleapis": "^109.0.1",
     "jszip": "^3.7.1",
     "next-seo": "^4.28.1",
     "react-focus-lock": "^2.5.0",
