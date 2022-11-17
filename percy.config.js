@@ -6,6 +6,6 @@ module.exports = {
     widths: [375, 1280],
   },
   storybook: {
-    [SKIP_GITHUB_CHECK ? 'include' : 'exclude']: ['skip-percy-tests'],
+    ...(SKIP_GITHUB_CHECK ? {include: 'skip-percy-tests'} : {}),
   },
 };
