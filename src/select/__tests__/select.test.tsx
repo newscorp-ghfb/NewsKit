@@ -171,21 +171,23 @@ describe('Select', () => {
       placeholder: 'This is some text',
       onChange,
       children: [
-        <SelectOption key="1" defaultSelected value="option 1">
+        <SelectOption key="1" value="option 1">
           option 1
         </SelectOption>,
-        <SelectOption key="2" value="option 2">
+        <SelectOption key="2" selected value="option 2">
           option 2
         </SelectOption>,
       ],
     };
 
-    const {getByTestId} = renderWithTheme(Select, props);
+    const {getByTestId, getAllByRole} = renderWithTheme(Select, props);
 
     await waitFor(() => {
-      fireEvent.change(getByTestId('select-button'), {
-        target: {value: 'test'},
-      });
+      fireEvent.click(getByTestId('select-button'));
+    });
+
+    await waitFor(() => {
+      fireEvent.click(getAllByRole('option')[0]);
     });
 
     expect(onChange).toHaveBeenCalledTimes(1);

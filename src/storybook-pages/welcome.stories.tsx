@@ -3,6 +3,8 @@ import {Story as StoryType} from '@storybook/react';
 import {newskitLightTheme, ThemeProvider} from '../theme';
 import {Welcome as WelcomeComponent} from './welcome';
 
+const BADGE = 'a[href="https://badge.fury.io/js/newskit"]';
+
 export const Welcome = () => <WelcomeComponent />;
 Welcome.parameters = {
   viewMode: 'story',
@@ -13,9 +15,10 @@ Welcome.parameters = {
     },
   },
   eyes: {
-    ignoreRegions: [
-      {selector: 'img[src="https://badge.fury.io/js/newskit.svg"]'},
-    ],
+    ignoreRegions: [{selector: BADGE}],
+  },
+  percy: {
+    percyCSS: `${BADGE} { display: none; }`,
   },
 };
 

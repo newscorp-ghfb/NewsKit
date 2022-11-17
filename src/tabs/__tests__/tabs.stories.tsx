@@ -298,6 +298,9 @@ export const StoryTabsDistributionStart = () => (
 StoryTabsDistributionStart.storyName = 'tabs-distribution-start';
 StoryTabsDistributionStart.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryControlledTabs = () => {
@@ -337,6 +340,9 @@ export const StoryControlledTabs = () => {
 StoryControlledTabs.storyName = 'tabs-controlled';
 StoryControlledTabs.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsDistributionGrow = () => (
@@ -374,6 +380,9 @@ export const StoryTabsDistributionGrow = () => (
 StoryTabsDistributionGrow.storyName = 'tabs-distribution-grow';
 StoryTabsDistributionGrow.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsDistributionEqual = () => (
@@ -411,6 +420,9 @@ export const StoryTabsDistributionEqual = () => (
 StoryTabsDistributionEqual.storyName = 'tabs-distribution-equal';
 StoryTabsDistributionEqual.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsWithScroll = () => (
@@ -462,6 +474,9 @@ export const StoryTabsWithScroll = () => (
 StoryTabsWithScroll.storyName = 'tabs-with-scroll';
 StoryTabsWithScroll.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsHorizontal = () => (
@@ -513,6 +528,9 @@ export const StoryTabsHorizontal = () => (
 StoryTabsHorizontal.storyName = 'tabs-horizontal';
 StoryTabsHorizontal.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsHorizontalIconLabel = () => (
@@ -547,6 +565,9 @@ export const StoryTabsHorizontalIconLabel = () => (
 StoryTabsHorizontalIconLabel.storyName = 'tabs-horizontal-icon-label';
 StoryTabsHorizontalIconLabel.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsVerticalIconLabel = () => (
@@ -587,6 +608,9 @@ export const StoryTabsVerticalIconLabel = () => (
 StoryTabsVerticalIconLabel.storyName = 'tabs-vertical-icon-label';
 StoryTabsVerticalIconLabel.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsHorizontalIconAndLabel = () => (
@@ -623,6 +647,9 @@ export const StoryTabsHorizontalIconAndLabel = () => (
 StoryTabsHorizontalIconAndLabel.storyName = 'tabs-horizontal-icon-and-label';
 StoryTabsHorizontalIconAndLabel.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsVerticalIconAndLabel = () => (
@@ -659,6 +686,9 @@ export const StoryTabsVerticalIconAndLabel = () => (
 StoryTabsVerticalIconAndLabel.storyName = 'tabs-vertical-icon-and-label';
 StoryTabsVerticalIconAndLabel.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsVertical = () => (
@@ -705,6 +735,9 @@ export const StoryTabsVertical = () => (
 StoryTabsVertical.storyName = 'tabs-vertical';
 StoryTabsVertical.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsVerticalVariantsLabelOrIcon = () => (
@@ -740,6 +773,9 @@ StoryTabsVerticalVariantsLabelOrIcon.storyName =
   'tabs-vertical-variants-label-or-icon';
 StoryTabsVerticalVariantsLabelOrIcon.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsVerticalVariantsIconPlacement = () => (
@@ -789,6 +825,9 @@ StoryTabsVerticalVariantsIconPlacement.storyName =
   'tabs-vertical-variants-icon-placement';
 StoryTabsVerticalVariantsIconPlacement.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsHorizontalIndicatorPositionVariants = () => (
@@ -838,6 +877,9 @@ StoryTabsHorizontalIndicatorPositionVariants.storyName =
   'tabs-horizontal-indicator-position-variants';
 StoryTabsHorizontalIndicatorPositionVariants.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsVerticalIndicatorPositionVariants = () => (
@@ -887,6 +929,9 @@ StoryTabsVerticalIndicatorPositionVariants.storyName =
   'tabs-vertical-indicator-position-variants';
 StoryTabsVerticalIndicatorPositionVariants.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsContent = () => (
@@ -921,6 +966,9 @@ export const StoryTabsContent = () => (
 StoryTabsContent.storyName = 'tabs-content';
 StoryTabsContent.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsWithDisabledTab = () => (
@@ -955,6 +1003,9 @@ export const StoryTabsWithDisabledTab = () => (
 StoryTabsWithDisabledTab.storyName = 'tabs-with-disabled-tab';
 StoryTabsWithDisabledTab.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsWithFixedTabIndicatorSize = () => (
@@ -993,6 +1044,9 @@ StoryTabsWithFixedTabIndicatorSize.storyName =
   'tabs-with-fixed-tab-indicator-size';
 StoryTabsWithFixedTabIndicatorSize.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsWithFixedTabIndicatorPercentageSize = () => (
@@ -1030,6 +1084,9 @@ StoryTabsWithFixedTabIndicatorPercentageSize.storyName =
   'tabs-with-fixed-tab-indicator-percentage-size';
 StoryTabsWithFixedTabIndicatorPercentageSize.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsWithFixedTabIndicatorPixelSize = () => (
@@ -1070,6 +1127,9 @@ StoryTabsWithFixedTabIndicatorPixelSize.storyName =
   'tabs-with-fixed-tab-indicator-pixel-size';
 StoryTabsWithFixedTabIndicatorPixelSize.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
@@ -1137,6 +1197,9 @@ StoryTabsWithCustomTabBarTrackAndIndicatorWeight.storyName =
   'tabs-with-custom-tab-bar-track-and-indicator-weight';
 StoryTabsWithCustomTabBarTrackAndIndicatorWeight.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
@@ -1252,6 +1315,9 @@ export const StoryTabsWithPresetsOverrides = () => (
 StoryTabsWithPresetsOverrides.storyName = 'tabs-with-presets-overrides';
 StoryTabsWithPresetsOverrides.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsWithPresetsOverridesShadows = () => {
@@ -1318,6 +1384,9 @@ export const StoryTabsWithPresetsOverridesShadows = () => {
 StoryTabsWithPresetsOverridesShadows.storyName = 'tabs-with-presets-shadows';
 StoryTabsWithPresetsOverridesShadows.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsWithPresetsOverridesOnIndividualTab = () => (
@@ -1343,6 +1412,9 @@ StoryTabsWithPresetsOverridesOnIndividualTab.storyName =
   'tabs-with-presets-overrides-on-individual-tab';
 StoryTabsWithPresetsOverridesOnIndividualTab.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsWithAlign = () => (
@@ -1403,6 +1475,9 @@ export const StoryTabsWithAlign = () => (
 StoryTabsWithAlign.storyName = 'tabs-with-align';
 StoryTabsWithAlign.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsWithOverflowAndScroll = () => (
@@ -1740,6 +1815,9 @@ export const StoryTagLogicalProps = () => (
 StoryTagLogicalProps.storyName = 'tabs-logical-props';
 StoryTagLogicalProps.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StoryTabsOutlineOverride = () => (
@@ -1822,6 +1900,9 @@ export const StoryTabsOutlineOverride = () => (
 StoryTabsOutlineOverride.storyName = 'tabs-outline-overrides';
 StoryTabsOutlineOverride.parameters = {
   eyes: {ignoreRegions},
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export default {
