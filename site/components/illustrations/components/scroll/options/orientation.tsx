@@ -5,8 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const Orientation: React.FC = () => {
-  const mask0 = getSSRId();
-  const mask1 = getSSRId();
   const filter0 = getSSRId();
   const filter1 = getSSRId();
 
@@ -29,38 +27,18 @@ export const Orientation: React.FC = () => {
           fill="illustrationInterface010"
         />
       </g>
-      <mask
-        id={mask0}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="203"
-        y="112"
-        width="414"
-        height="611"
-      >
-        <Rect
-          x="203.13"
-          y="112.768"
-          width="412.915"
-          height="609.886"
-          rx="12.6726"
-          fill="illustrationInterface010"
-        />
-      </mask>
-      <g mask={`url(#${mask0})`}>
-        <Path
-          d="M219 132.768H600V382.768H219V132.768Z"
-          fill="interactiveNegative010"
-        />
-        <Path
-          d="M219 402.768H600V651.768H219V402.768Z"
-          fill="interactivePrimary010"
-        />
-        <Path
-          d="M219 672.768H600V921.768H219V672.768Z"
-          fill="interactivePositive010"
-        />
-      </g>
+      <Path
+        d="M219 132.768H600V382.768H219V132.768Z"
+        fill="interactiveNegative010"
+      />
+      <Path
+        d="M219 402.768H600V651.768H219V402.768Z"
+        fill="interactivePrimary010"
+      />
+      <Path
+        d="M600 722.653H219V672.768H600V722.653Z"
+        fill="interactivePositive010"
+      />
       <g filter={`url(#${filter1})`}>
         <Rect
           x="816"
@@ -71,34 +49,14 @@ export const Orientation: React.FC = () => {
           fill="illustrationInterface010"
         />
       </g>
-      <mask
-        id={mask1}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="816"
-        y="112"
-        width="414"
-        height="611"
-      >
-        <Rect
-          x="816.13"
-          y="112.768"
-          width="412.915"
-          height="609.886"
-          rx="12.6726"
-          fill="illustrationInterface010"
-        />
-      </mask>
-      <g mask={`url(#${mask1})`}>
-        <Path
-          d="M838 134.576H1113V701.576H838V134.576Z"
-          fill="interactiveNegative010"
-        />
-        <Path
-          d="M1135 137.576H1410V704.576H1135V137.576Z"
-          fill="interactivePrimary010"
-        />
-      </g>
+      <Path
+        d="M838 134.576H1113V701.576H838V134.576Z"
+        fill="interactiveNegative010"
+      />
+      <Path
+        d="M1229.05 137.576V704.576H1135V137.576H1229.05Z"
+        fill="interactivePrimary010"
+      />
       <Path
         d="M1278 426C1278 453.062 1256.06 475 1229 475C1201.94 475 1180 453.062 1180 426C1180 398.938 1201.94 377 1229 377C1256.06 377 1278 398.938 1278 426Z"
         fill="interfaceBrand030"
@@ -157,12 +115,12 @@ export const Orientation: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2180_77723"
+            result="effect1_dropShadow_2657_78602"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2180_77723"
+            in2="effect1_dropShadow_2657_78602"
             result="shape"
           />
         </filter>
@@ -191,12 +149,12 @@ export const Orientation: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2180_77723"
+            result="effect1_dropShadow_2657_78602"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2180_77723"
+            in2="effect1_dropShadow_2657_78602"
             result="shape"
           />
         </filter>

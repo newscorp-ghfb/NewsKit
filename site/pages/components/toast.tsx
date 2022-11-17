@@ -188,6 +188,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
       ],
       media: getIllustrationComponent(
         'components/toast/toast-anatomy-illustration',
+        {viewBox: '0 0 1600 900'},
       ),
     }}
     options={{

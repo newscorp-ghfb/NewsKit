@@ -35,11 +35,16 @@ const {title, description} = featureCardoverrides;
 
 const PRINCIPLE_CARDS = [
   {
-    media: () => <Illustration path="guides/engineering-overview/accessible" />,
+    media: () => (
+      <Illustration
+        viewBox="0 0 1345 759"
+        path="guides/engineering-overview/accessible"
+      />
+    ),
     title: 'Accessible',
     description: (
       <>
-        NewsKit components folllow{' '}
+        NewsKit components follow{' '}
         <Link
           overrides={{stylePreset: 'inkWhiteContrast'}}
           href="https://www.w3.org/WAI/standards-guidelines/wcag/"
@@ -74,7 +79,12 @@ const PRINCIPLE_CARDS = [
     },
   },
   {
-    media: () => <Illustration path="guides/engineering-overview/adaptive" />,
+    media: () => (
+      <Illustration
+        viewBox="0 0 1345 759"
+        path="guides/engineering-overview/adaptive"
+      />
+    ),
     title: 'Adaptive',
     description: (
       <>
@@ -96,7 +106,12 @@ const PRINCIPLE_CARDS = [
     },
   },
   {
-    media: () => <Illustration path="guides/engineering-overview/productive" />,
+    media: () => (
+      <Illustration
+        viewBox="0 0 1345 759"
+        path="guides/engineering-overview/productive"
+      />
+    ),
     title: 'Productive',
     description:
       'Carefully crafted components ensure that teams using NewsKit can rapidly iterate on product requirements through re-use of common functionality. This promotes both consistency and common language across product development teams.',
@@ -207,6 +222,7 @@ const EngineeringOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/engineering-overview/react-web-components',
+                  {viewBox: '0 0 1345 759'},
                 ),
               },
               {
@@ -222,6 +238,7 @@ const EngineeringOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/engineering-overview/advanced-theming-system',
+                  {viewBox: '0 0 1345 759'},
                 ),
               },
               {
@@ -237,6 +254,7 @@ const EngineeringOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/engineering-overview/utility-functions',
+                  {viewBox: '0 0 1345 759'},
                 ),
               },
               {
@@ -256,6 +274,7 @@ const EngineeringOverview = (layoutProps: LayoutProps) => (
                 ),
                 media: getIllustrationComponent(
                   'guides/design-overview/handoff-guidance',
+                  {viewBox: '0 0 1345 759'},
                 ),
               },
             ]}
@@ -294,7 +313,10 @@ const EngineeringOverview = (layoutProps: LayoutProps) => (
           description="Below is an example of a recommended architecture when using the NewsKit design system:"
           showSeparator
         >
-          <Illustration path="guides/engineering-overview/example-architecture-engineering" />
+          <Illustration
+            viewBox="0 0 5692 3674"
+            path="guides/engineering-overview/example-architecture-engineering"
+          />
         </ContentPrimary>
       </ContentSection>
 

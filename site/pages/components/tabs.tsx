@@ -17,7 +17,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Tabs',
       description:
-        'Tabs allow users to alternate between views within the same context.',
+        'Tabs let users switch between views within the same context.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -27,7 +27,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         illustration: 'components/tabs-illustration',
       },
       introduction:
-        'Tabs allow users to alternate between views within the same context.',
+        'Tabs let users switch between views within the same context.',
     }}
     componentDefaultsKey="tabs"
     meta={{
@@ -35,14 +35,14 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       introduced: 'v0.20.1',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
+      storybookId: 'components-tabs--story-tabs-distribution-start',
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use a Tab component.',
+      introduction: 'Here’s how and when to use tabs:',
       cards: [
         {
           description:
-            'Use tabs to alternate between views within the same context.',
+            'Use tabs to let users alternate between views within the same context.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/tabs/tabs-do-01-illustration',
@@ -50,7 +50,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'Avoid using Tabs to navigate to different pages and anchoring to different sections on a page. A Navigation component is a more appropriate component for this purpose.',
+            'Avoid using tabs to navigate to different pages and anchoring to different sections on a page. Use a navigation component (e.g. link) instead.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/tabs/tabs-dont-01-illustration',
@@ -58,7 +58,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'Use Tabs when users have two or more content views to choose from.',
+            'Use tabs when users have two or more content views to choose from.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/tabs/tabs-do-02-illustration',
@@ -66,7 +66,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'Avoid using Tabs when there are more than five or more content views to choose from. Consider using an alternative component such as a Selector to reduce the users cognitive load.',
+            'Avoid using tabs when there are more than five or more content views to choose from. Consider an alternative component (e.g. select) to reduce the user’s cognitive load.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/tabs/tabs-dont-02-illustration',
@@ -74,7 +74,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'All Tab items should be consistent in size e.g. small, medium or large Tab item. This is to ensure Tab items have equal importance. ',
+            'All tab items should be the same size (e.g. small, medium or large). This helps ensure they have equal importance.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/tabs/tabs-do-03-illustration',
@@ -82,7 +82,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'Don’t mix Tab items that include an icon or don’t include an icon. This is to ensure Tab items have equal importance.',
+            'Avoid mixing tab items that include an icon with those that don’t include an icon. This helps ensure they have equal importance.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/tabs/tabs-dont-03-illustration',
@@ -98,39 +98,39 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'Tab labels shouldnt be truncated. Keep it short, clear, and fully visible.',
+            'Avoid nesting tabs as this can cause usability issues. Consider an alternative component (e.g. accordion) or rethink the page structure.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-dont-04-illustration',
-          ),
-        },
-        {
-          description:
-            'Tabs should be in close proximity to the content it’s changing.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-do-05-illustration',
-          ),
-        },
-        {
-          description:
-            'Avoid nesting Tabs to prevent usability issues. Consider using an alternative component such as an Accordion or rethink the page structure.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-dont-05-illustration',
-          ),
-        },
-        {
-          description:
-            'The Tab shouldn’t fall out of view of the content. If the content is too large to display with the Tabs in the same viewport, then ensure the Tabs become fixed (sticky).',
-          kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/tabs/tabs-do-06-illustration',
           ),
         },
         {
           description:
-            'Tabs in the vertical orientation should be used when horizontal space is less generous and when the list of sections is greater than can be presented to the user in a horizontal format.',
+            'Tab labels should be written in sentence case to help with scannability and legibility.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent(
+            'components/tabs/tabs-dont-04-illustration',
+          ),
+        },
+        {
+          description:
+            'Tabs should be in close proximity to the content they’re changing.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent(
+            'components/tabs/tabs-dont-05-illustration',
+          ),
+        },
+        {
+          description:
+            'The tab should remain in view of the content. If the content is too large to display with the tabs in the same viewport, make the tabs fixed (sticky).',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent(
+            'components/tabs/tabs-do-07-illustration',
+          ),
+        },
+        {
+          description:
+            'Use tabs in the vertical orientation when horizontal space is less generous and when the list of sections is greater than can be presented to the user in a horizontal format (i.e. more than five).',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/tabs/tabs-do-07-illustration',
@@ -139,42 +139,41 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     componentAPI={{
-      introduction: `Tabs have a range of props that can be used to define an appropriate experience for different use cases.`,
+      introduction: `Tabs have a range of props for different use cases, and a range of predefined elements and attributes that can be overridden to define their appearance.`,
       components: [
         {
           title: 'Tabs',
-          summary: `Tabs have a range of props that can be used to define an appropriate experience for different use cases.`,
           propsRows: [
             {
               name: 'children',
               type: 'React.ReactNode',
               required: true,
-              description: `An array of Tab components.`,
+              description: `An array of tab components`,
             },
             {
               name: 'vertical',
               type: 'boolean',
               default: 'false',
-              description: 'If true, changes the orientation to vertical.',
+              description: 'If ‘true’, changes the orientation to vertical',
             },
             {
               name: 'distribution',
               type: ' start | grow | equal',
               default: 'start',
-              description: 'Defines the distribution of the Tabs.',
+              description: 'Defines the distribution of the tabs',
             },
             {
               name: 'align',
               type: ' start | end | center',
               default: 'start',
-              description: 'Defines the alignment of the Tabs.',
+              description: 'Defines the alignment of the tabs',
             },
             {
               name: 'divider',
               type: 'boolean',
               default: 'false',
               description:
-                'If true, renders a divider component between Tab items in a Tab list.',
+                'If ‘true’, renders a divider component between tab items in a tab list',
             },
             {
               name: 'initialSelectedIndex',
@@ -187,13 +186,13 @@ const TabsComponent = (layoutProps: LayoutProps) => (
               name: 'selectedIndex',
               type: 'number',
               description:
-                'Defines the index of the selected Tab item, when changing this value tabs state is updated (controlled).',
+                'Defines the index of the selected tab item. When changing this value, tab item state is updated (controlled)',
             },
             {
               name: 'onChange',
               type: '(selectedIndex:number):void',
               default: '',
-              description: 'Callback fired when selected tab changes.',
+              description: 'Callback fired when the selected tab changes',
             },
           ],
           overridesRows: [
@@ -202,20 +201,20 @@ const TabsComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'space020',
               description:
-                'If provided, this overrides the space between the Tabs and the Tab Panel.',
+                'If provided, this overrides the space between the tabs and the tab panel.',
             },
             {
               attribute: 'tab.spaceInline',
               type: 'MQ<string>',
               default: '',
               description:
-                'If provided, this overrides the space between each Tab and divider',
+                'If provided, overrides the space between each tab and divider',
             },
             {
               attribute: 'selectionIndicator.track.stylePreset',
               type: 'MQ<string>',
               default: 'tabBarTrack',
-              description: `If provided, this overrides the selection indicator track styling.`,
+              description: `If provided, overrides the selection indicator track styling`,
             },
 
             {
@@ -223,53 +222,52 @@ const TabsComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'borderWidth020',
               description:
-                'If provided with a sizing token, will override the fixed weight (height if horizontal, width if vertical) of the election indicator track.',
+                'If provided with a sizing token, overrides the fixed weight (height if horizontal, width if vertical) of the selection indicator track',
             },
             {
               attribute: 'selectionIndicator.indicator.stylePreset',
               type: 'MQ<string>',
               default: 'tabsBarIndicator',
-              description: 'If provided, this overrides the indicator styling.',
+              description: 'If provided, overrides the indicator styling',
             },
             {
               attribute: 'selectionIndicator.indicator.size',
               type: 'string',
               default: '',
               description:
-                'If provided with a sizing token or any CSS length value e.g. 75%, will override the indicator size.',
+                'If provided with a sizing token or any CSS length value (e.g. 75%), overrides the indicator size',
             },
             {
               attribute: 'selectionIndicator.indicator.weight',
               type: 'string',
               default: 'borderWidth020',
               description:
-                'If provided with a sizing token, will override the fixed weight (height if horizontal, width if vertical) of the indicator.',
+                'If provided with a sizing token, overrides the fixed weight (height if horizontal, width if vertical) of the indicator',
             },
             {
               attribute: 'selectionIndicator.indicator.motionDuration',
               type: 'string',
               default: 'motionDuration030',
               description:
-                'If provided with a motion duration token, this overrides the transition duration upon hover and active of the indicator.',
+                'If provided with a motion duration token, overrides the transition duration upon hover and active of the indicator',
             },
             {
               attribute: 'selectionIndicator.indicator.motionTiming',
               type: 'string',
               default: 'motionTimingEaseInAndOut',
               description:
-                'If provided with a motion timing token, this overrides the transition timing upon hover and active of the indicator.',
+                'If provided with a motion timing token, overrides the transition timing upon hover and active of the indicator',
             },
             {
               attribute: 'divider',
               type: 'DividerOverrides',
-              default: '',
               description: (
                 <>
-                  If provided, this overrides the divider styling,{' '}
+                  If provided, overrides the divider styling.{' '}
                   <Link target="_blank" href="/components/divider">
-                    see divider component
+                    See divider
                   </Link>{' '}
-                  for full documentation.
+                  for full documentation
                 </>
               ),
             },
@@ -279,11 +277,11 @@ const TabsComponent = (layoutProps: LayoutProps) => (
               default: '',
               description: (
                 <>
-                  If provided, this overrides the scroll styling,{' '}
+                  If provided, overrides the scroll styling.{' '}
                   <Link type="inline" target="_blank" href="/components/scroll">
-                    see scroll component
+                    See scroll
                   </Link>{' '}
-                  for full documentation.
+                  for full documentation
                 </>
               ),
             },
@@ -302,43 +300,43 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Tab',
           summary:
-            'A Tab has a range of props that can be used to define an appropriate experience for different use cases.',
+            'A tab has a range of props for different use cases, and a range of predefined elements and attributes that can be overridden to define its appearance.',
           propsRows: [
             {
               name: 'children',
               type: 'React.ReactNode',
               required: true,
-              description: 'Content rendered inside the Tab Panel.',
+              description: 'Content rendered inside the tab panel',
             },
             {
               name: 'label',
               type: 'React.ReactNode',
-              description: 'Label of the Tab item.',
+              description: 'Label of the tab item',
             },
             {
               name: 'ariaLabel',
               type: 'string',
               default: 'label',
-              description: 'Defines the aria-label attribute of the Tab item.',
+              description: 'Defines the aria-label attribute of the tab item',
             },
             {
               name: 'disabled',
               type: 'boolean',
               default: 'false',
-              description: 'If true, renders a Tab in a disabled state.',
+              description: 'If ‘true’, renders a tab in a disabled state',
             },
             {
               name: 'autoFocus',
               type: 'boolean',
               default: 'false',
               description:
-                'If true, this Tab will be auto-focussed. Only one item on the page can be auto-focussed.',
+                'If ‘true’, this tab will be auto-focussed. Only one item on the page can be auto-focussed',
             },
             {
               name: 'dataTestId',
               type: 'string',
               default: 'tab',
-              description: 'Defines the data-testid attribute of the Tab item.',
+              description: 'Defines the data-testid attribute of the tab item',
             },
           ],
           overridesRows: [
@@ -346,20 +344,20 @@ const TabsComponent = (layoutProps: LayoutProps) => (
               attribute: 'height',
               type: 'MQ<string>',
               description:
-                'If provided with a sizing token, will override the the height of the Tab.',
+                'If provided with a sizing token, overrides the height of the tab',
             },
             {
               attribute: 'minHeight',
               type: 'MQ<string>',
               default: ['Small = sizing060', 'Medium = sizing080'],
               description:
-                'If provided with a sizing token, will override  the minHeight of the Tab.',
+                'If provided with a sizing token, overrides the minHeight of the tab',
             },
             {
               attribute: 'width',
               type: 'MQ<string>',
               description:
-                'If provided with a sizing token, will override the minWidth of the Tab. ',
+                'If provided with a sizing token, overrides the minWidth of the tab',
             },
             {
               attribute: 'iconSize',
@@ -370,13 +368,13 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                 'Large = iconSize030',
               ],
               description:
-                'If provided with a sizing token, will override the minWidth of the Tab. ',
+                'If provided with a sizing token, overrides the minWidth of the tab',
             },
             {
               attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'tab',
-              description: 'If provided, this overrides the Tab styling.  ',
+              description: 'If provided, overrides the tab styling',
             },
             {
               attribute: 'transitionPreset',
@@ -388,7 +386,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                 'iconColorChange',
               ],
               description:
-                'If provided, this overrides the transition preset applied to the Button.',
+                'If provided, overrides the transition preset applied to the tab',
             },
             {
               attribute: 'typographyPreset',
@@ -399,7 +397,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                 'Large = utilityButton030',
               ],
               description:
-                'If provided, this overrides the selection indicator typography of the text label in the Tab.',
+                'If provided, overrides the selection indicator typography of the text label in the tab',
             },
             {
               attribute: 'spaceInset',
@@ -411,26 +409,26 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                 'Large = spaceInsetSquish030',
               ],
               description:
-                'If provided, this overrides the inset space within the Tab.',
+                'If provided, overrides the inset space within the tab',
             },
             {
               attribute: 'spaceInline',
               type: 'MQ<string>',
               default: 'space020',
               description:
-                'If provided, this overrides the space between the icon and the label in the Tab.',
+                'If provided, overrides the space between the icon and the label in the tab',
             },
             {
               attribute: 'maxWidth',
               type: 'MQ<string>',
               description:
-                'If provided, this sets a maximum height to the Tab. This can be a sizing token from the theme, or any CSS length value.',
+                'If provided, sets a maximum height to the tab. This can be a sizing token from the theme, or any CSS length value',
             },
             {
               attribute: 'minWidth',
               type: 'MQ<string>',
               description:
-                'If provided, this sets a maximum width to the Tab. This can be a sizing token from the theme, or any CSS length value.',
+                'If provided, sets a maximum width to the tab. This can be a sizing token from the theme, or any CSS length value',
             },
           ],
         },
@@ -438,7 +436,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Tabs component, its variations, and configuration options.',
+        'This demo lets you preview the tabs component, its variations and configuration options.',
       playground: {
         componentName: 'Tabs',
         component: state => (
@@ -700,17 +698,17 @@ const TabsComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'Tabs contain three required elements and one optional element.',
+        'Tabs contain four required elements and one optional element.',
       rows: [
         {
           name: 'Tab',
-          description: 'Includes a label, icon',
+          description: 'Includes a label and an icon',
           component: ['Text Block', 'Icon'],
           optional: undefined,
         },
         {
           name: 'Tabs',
-          description: 'Includes a list of Tabs',
+          description: 'Includes a list of tabs',
           component: 'Tabs',
           optional: undefined,
         },
@@ -722,29 +720,29 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Divider',
-          description: 'Dividers between each Tab',
+          description: 'Dividers between each tab',
           component: 'Divider',
           optional: true,
         },
         {
           name: 'Tab Panel',
-          description: 'Contains the elements of the Tab content',
+          description: 'Contains the elements of the tab content',
           component: 'Block',
           optional: undefined,
         },
       ],
       media: getIllustrationComponent(
         'components/tabs/anatomy-tabs-illustration',
+        {viewBox: '0 0 1600 900'},
       ),
     }}
     options={{
-      introduction:
-        'Tabs have options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'Tabs have options for different use cases:',
       cards: [
         {
           title: 'Size',
           description:
-            'There are three sizes of the Tabs; small, medium, and large. Tab label, icon, and the tab container change size. Tabs match the same height as three button sizes, to align when used together.',
+            'Tabs come in small, medium and large. Tab labels, icons and the tab container change size. Tabs match the heights of the three button sizes, so they align when used together.',
           media: getIllustrationComponent(
             'components/tabs/tabs-options-size-illustration',
           ),
@@ -752,7 +750,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Icons (leading & trailing)',
           description:
-            'Icons can be displayed in Tab items and can be positioned either before (leading) or after (trailing) the label in the Tab.',
+            'Add an icon to a tab item. Icons can be positioned either before (leading) or after (trailing) the tab label.',
           media: getIllustrationComponent(
             'components/tabs/tabs-options-icons-illustration',
           ),
@@ -760,46 +758,46 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Label',
           description:
-            'Labels can be displayed in Tab items. A label can give more context to what content will be displayed when a Tab is selected. ',
+            'Add labels to tab items. A label can give more context to the content that will be displayed when the user selects a tab.',
           media: getIllustrationComponent(
             'components/tabs/tabs-options-label-illustration',
           ),
         },
         {
           title: 'Orientation',
-          description: 'Tabs can be displayed horizontally or vertically. ',
+          description: 'Display tabs horizontally or vertically.',
           media: getIllustrationComponent(
             'components/tabs/tabs-options-orientation-illustration',
           ),
         },
         {
-          title: 'Indicator Position',
+          title: 'Indicator position',
           description:
-            'The Tabs indicator position can be displayed on the bottom of the Tab for the horizontal orientation and left or right of the Tab for the vertical orientation.',
+            'Display the tabs indicator on the bottom of the tab for the horizontal orientation and left or right of the tab for the vertical orientation.',
           media: getIllustrationComponent(
             'components/tabs/tabs-options-indicator-position-illustration',
           ),
         },
         {
-          title: 'Indicator Size',
+          title: 'Indicator size',
           description:
-            'The size of a Tab indicator can be defined appropriately to give more or less affordance, using either: full-width of the tab, fixed-width/fixed-height (based on orientation) or a percentage of the Tab height/width (based on orientation).',
+            'Change the size of the tab indicator to give more or less prominence, using either: full-width of the tab, fixed-width/fixed-height (based on orientation) or a percentage of the tab height/width (based on orientation).',
           media: getIllustrationComponent(
             'components/tabs/tabs-options-indicator-size-illustration',
           ),
         },
         {
-          title: 'Indicator Weight',
+          title: 'Indicator weight',
           description:
-            'The weight of a Tab indicator can be customised appropriately to give more or less affordance.',
+            'Customise the weight of the tab indicator to give more or less affordance.',
           media: getIllustrationComponent(
             'components/tabs/tabs-options-indicator-weight-illustration',
           ),
         },
         {
-          title: 'Track Weight',
+          title: 'Track weight',
           description:
-            'The weight of a Tab track can be customised appropriately to give more or less affordance.',
+            'Customise the weight of the tab track to give more or less affordance.',
           media: getIllustrationComponent(
             'components/tabs/tabs-options-track-weight-illustration',
           ),
@@ -807,7 +805,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Dividers',
           description:
-            'Dividers can be displayed in Tabs in between Tab items. Dividers in Tabs match the same width/height (depending on orientation) of the Tab items.',
+            'Add dividers between tab items. Dividers match the width or height (depending on orientation) of the tab items.',
           media: getIllustrationComponent(
             'components/tabs/tabs-options-dividers-illustration',
           ),
@@ -825,19 +823,19 @@ const TabsComponent = (layoutProps: LayoutProps) => (
               }}
             >
               <>
-                <Mono>start</Mono>&nbsp; Aligns the Tab items to the left of the
+                <Mono>Start</Mono>&nbsp; Aligns the tab items to the left of the
                 content area for horizontal orientation (default) and to the top
-                for vertical orientation. The width of the Tab Group is defined
+                for vertical orientation. The width of the tab group is defined
                 by the width of its children.
               </>
               <>
-                <Mono>grow</Mono> Spreads all Tab items across the content area,
-                filling the entire available width or height depending on the
-                orientation. The width of each Tab item is defined by it’s
+                <Mono>Grow</Mono> Spreads all tab items across the content area,
+                filling the entire available width or height, depending on the
+                orientation. The width of each tab item is defined by its
                 content.
               </>
               <>
-                <Mono>equal</Mono> Spaces each tab across the content area
+                <Mono>Equal</Mono> Spaces each tab item across the content area
                 equally, regardless of the width or height of its children.
               </>
             </UnorderedList> // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -845,6 +843,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
 
           media: getIllustrationComponent(
             'components/tabs/tabs-options-distribution-illustration',
+            {viewBox: '0 0 1498 1381'},
           ),
         },
         {
@@ -862,37 +861,39 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                 }}
               >
                 <>
-                  <Mono>start</Mono>&nbsp;Aligns the Tab item label and icons to
+                  <Mono>Start</Mono>&nbsp;Aligns the tab item label and icons to
                   the left.
                 </>
                 <>
-                  <Mono>center</Mono> Centers the Tab item label and icons.
+                  <Mono>Center</Mono> Centres the tab item label and icons.
                 </>
                 <>
-                  <Mono>end</Mono> Aligns the Tab item label and icons to the
+                  <Mono>End</Mono> Aligns the tab item label and icons to the
                   right.
                 </>
               </UnorderedList>
-              NOTE - The default alignment depends on the orientation. When Tabs
-              are vertical it’s <Mono>Start</Mono> and when Tabs are horizontal
-              it’s <Mono>Center</Mono>.
-            </> // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          ) as any,
-
+              <InlineMessage role="region" aria-label="note">
+                The default alignment depends on the orientation. When tabs are
+                vertical it’s <Mono>Start</Mono> and when tabs are horizontal
+                it’s <Mono>Center</Mono>.
+              </InlineMessage>
+            </>
+          ),
           media: getIllustrationComponent(
             'components/tabs/tabs-options-alignment-illustration',
+            {viewBox: '0 0 1491 1349'},
           ),
         },
       ],
     }}
     states={{
       introduction:
-        'Tab items have states including, base, hover, active, disabled, and focus. They can be displayed with both, base or selected. By default, Tabs have one Tab item in a selected state.',
+        'Tabs have the following states. By default, tabs have one tab item in a selected state.',
       cards: [
         {
           title: 'Base',
           description:
-            'Tab items have a base state. This is the base style of the Tab item before it has been interacted with by a user.',
+            'The default style before the user interacts with the tab item.',
           media: getIllustrationComponent(
             'components/tabs/tabs-states-base-illustration',
           ),
@@ -900,7 +901,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Hover',
           description:
-            'Tab items have a hover state. The style of the Tab item changes to visually communicate and provide feedback to the user that the Tab item is an interactive element.',
+            'The tab item changes style to let the user know it’s interactive.',
           media: getIllustrationComponent(
             'components/tabs/tabs-states-hover-illustration',
           ),
@@ -908,7 +909,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Active',
           description:
-            'Tab items have an active state. The style of the Tab item changes to visually communicate and provide feedback to the user that the Tab item has been interacted with.',
+            'The tab item changes style to let the user know they’ve interacted with it.',
           media: getIllustrationComponent(
             'components/tabs/tabs-states-active-illustration',
           ),
@@ -916,15 +917,24 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Selected',
           description:
-            'Tab items have a selected state. The style of the Tab item changes to visually communicate and provide feedback to the user that the Tab item has been selected.',
+            'The tab item changes style to let the user know they’ve selected it.',
           media: getIllustrationComponent(
             'components/tabs/tabs-states-selected-illustration',
           ),
         },
         {
           title: 'Disabled',
-          description:
-            'Tab items in a disabled state communicate that a Tab item exists, but is not available to the user in that scenario. When the user’s cursor hovers over a Tab item in a disabled state, the cursor shows as not-allowed. Disabled tab items are often used to maintain layout consistency and communicate that a Tab item may become available if another condition has been met.',
+          description: (
+            <>
+              Communicates that a tab item exists, but isn’t available in that
+              scenario. When the user hovers over a tab item in a disabled
+              state, the cursor shows as ‘not allowed’.
+              <br />
+              <br />
+              Disabled tab items maintain layout consistency and communicate
+              that a tab item may become available if another condition is met.
+            </>
+          ),
           media: getIllustrationComponent(
             'components/tabs/tabs-states-disabled-illustration',
           ),
@@ -932,7 +942,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Focus',
           description:
-            'Tab items in a focus state communicate that a user has highlighted a Tab item, using an input method such as a keyboard or voice.',
+            'Communicates that a tab item exists, but isn’t available in that scenario. When the user hovers over a tab item in a disabled state, the cursor shows as ‘not allowed’.',
           media: getIllustrationComponent(
             'components/tabs/tabs-states-focus-illustration',
           ),
@@ -940,12 +950,12 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction: 'The following guidance describes how Tabs behave.',
+      introduction: 'Here’s how tabs behave:',
       cards: [
         {
           title: 'Animation',
           description:
-            'When the user selects a Tab item, the indicator slides along the track of the Tabs to the newly selected Tab item. At the time of selection, the Tabs content changes immediately.',
+            'When the user selects a tab item, the indicator slides along the track of the tabs to the newly selected tab item. At the time of selection, the tabs content changes immediately.',
           media: getIllustrationComponent(
             'components/tabs/tabs-behaviours-animation-illustration',
           ),
@@ -953,23 +963,23 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Selected',
           description:
-            'Only one tab item can be selected at any given time. This property changes an individual tab item’s selected state.',
+            'The user can only select one tab item at a time. This property changes an individual tab item’s selected state.',
           media: getIllustrationComponent(
             'components/tabs/tabs-behaviours-selected-illustration',
           ),
         },
         {
-          title: 'Tabs Overflow',
+          title: 'Tabs overflow',
           description:
-            'When there are too many Tabs to fit horizontally across the viewport, a Scroll component is applied. On a desktop, the controls (buttons) are rendered on the scroll.',
+            'When there are too many tabs to fit horizontally across the viewport, a scroll component is applied. On desktop, the controls (buttons) are rendered on the scroll.',
           media: getIllustrationComponent(
             'components/tabs/tabs-behaviours-tab-overflow-illustration',
           ),
         },
         {
-          title: 'Label Overflow Wrap',
+          title: 'Label overflow wrap',
           description:
-            'When the label in a Tab item is too long for the available horizontal space, it wraps to form another line.',
+            'When the label in a tab item is too long for the available horizontal space, it wraps to form another line.',
           media: getIllustrationComponent(
             'components/tabs/tabs-behaviours-label-wrap-illustration',
           ),
@@ -992,55 +1002,55 @@ const TabsComponent = (layoutProps: LayoutProps) => (
           {
             order: 1,
             element: 'tab',
-            role: 'Focusses to the first Tab Item in a Tab list.',
+            role: 'Focusses to the first tab item in a tab list.',
           },
           {
             order: 2,
             element: 'tabPanel',
-            role: 'Focusses to the Tab Panel.',
+            role: 'Focusses to the tab panel.',
           },
         ],
       },
       interaction: {
-        title: 'Keyboard Interactions',
+        title: 'Keyboard interactions',
         tableRows: [
           {
             command: ['Tab'],
             description:
-              'When focus is outside of the Tab list it moves focus to the active Tab. If focus is on the active Tab it moves focus to the next element in the keyboard focus Tabs associated Tab panel.',
+              'When focus is outside the tab list, moves focus to the active tab. If focus is on the active tab, moves focus to the next element in the keyboard focus tabs associated tab panel',
           },
           {
             command: ['Rtn'],
             description:
-              'Activates the Tab if it was not activated automatically on focus.',
+              'Activates the tab if it wasn’t activated automatically on focus',
           },
           {
             command: ['Left'],
             description:
-              'Focuses and activates the previous Tab in the tab list when the Tabs orientation is horizontal. If the current tab is the first tab in the tab list it activates the last tab.',
+              'Focusses and activates the previous tab in the tab list when the orientation of the tabs is horizontal. If the current tab is the first tab in the tab list it activates the last tab',
           },
           {
             command: ['Right'],
             description:
-              'Focuses and activates the next Tab in the Tab list when the Tabs orientation is horizontal. If the current tab is the last tab in the tab list it activates the first tab.',
+              'Focusses and activates the next tab in the tab list when the orientation of the tabs is horizontal. If the current tab is the last tab in the tab list it activates the first tab',
           },
           {
             command: ['Up'],
             description:
-              'Focuses and activates the previous Tab in the tab list when the Tabs orientation is vertical. If the current tab is the first tab in the tab list it activates the last tab.',
+              'Focusses and activates the previous tab in the tab list when the orientation of the tabs is vertical. If the current tab is the first tab in the tab list it activates the last tab',
           },
           {
             command: ['Down'],
             description:
-              'Focuses and activates the next Tab in the Tab list when the Tabs orientation is vertical. If the current tab is the last tab in the tab list it activates the first tab.',
+              'Focusses and activates the next tab in the tab list when the orientation of the tabs is vertical. If the current tab is the last tab in the tab list it activates the first tab',
           },
           {
             command: ['Home'],
-            description: 'Focuses activates the first Tab in the Tab list.',
+            description: 'Focusses and activates the first tab in the tab list',
           },
           {
             command: ['End'],
-            description: 'Focuses activates the last Tab in the Tab list.',
+            description: 'Focusses and activates the last tab in the tab list',
           },
         ],
       },
@@ -1052,15 +1062,14 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             attribute: 'arialabel',
             value: '',
             description:
-              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with a Tab Item in a Tabs. Example: ariaLabel="view component overrides”',
+              'Defines a string that labels the action that will be performed when the user interacts with a tab item (e.g. ariaLabel="view component overrides”)',
             userSupplied: true,
           },
           {
             element: 'tab',
             attribute: 'aria-selected',
             value: '“true” or “false”',
-            description:
-              'Aria-selected is used to indicate the currently selected tab',
+            description: 'Indicates the currently selected tab',
           },
           {
             element: 'tab',
@@ -1073,7 +1082,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             element: 'tab',
             attribute: 'aria-hidden',
             value: '“true”',
-            description: 'Hides the Tab Bar Indicator from screenreaders.',
+            description: 'Hides the tab bar indicator from screen readers',
           },
           {
             element: 'tab',
@@ -1087,7 +1096,7 @@ const TabsComponent = (layoutProps: LayoutProps) => (
             attribute: 'role',
             value: '“tabpanel”',
             description:
-              'ARIA Tab role indicates an interactive element inside a Tab Group that, when activated, displays its associated Tab Panel',
+              'Indicates an interactive element inside a tab group that, when activated, displays its associated tab panel',
           },
           {
             element: 'tab',
@@ -1098,11 +1107,11 @@ const TabsComponent = (layoutProps: LayoutProps) => (
         ],
       },
       infoNoticeAria:
-        ' By default, ariaLabel will match the Tab text label. Where a Tab item text label is not visible on the screen I.E. if there is only an icon in a Tab item, a string should be parsed to the title prop on the icon.',
+        'By default, aria-label will match the tab text label. Where a tab item text label is not visible on the screen (i.e. if there’s only an icon in a tab item) a string should be passed to the title prop on the icon.',
     }}
     seo={{
-      title: 'SEO Considerations',
-      introduction: 'Ensure icons have Alt Text applied.',
+      title: 'SEO considerations',
+      introduction: 'Ensure icons have alt text applied.',
     }}
     related={{
       related: ['Accordion', 'Link', 'Menu', 'Tag'],

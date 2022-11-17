@@ -1,5 +1,5 @@
 import React from 'react';
-import {newskitLightTheme} from 'newskit';
+import {newskitLightTheme, InlineMessage} from 'newskit';
 import {Table, TableRow} from '../../../components/table';
 import {getTokenType} from '../../../utils/get-token-type';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
@@ -55,7 +55,7 @@ const Spacing = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Spacing',
       description:
-        'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
+        'Space helps to guide the user and provide a pleasant and consistent experience within products.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -64,7 +64,7 @@ const Spacing = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'theme/spacing/hero',
       },
-      introduction: `Space helps to guide the user and provide a pleasant and consistent experience when using a product.`,
+      introduction: `Space helps to guide the user and provide a pleasant and consistent experience within products.`,
     }}
   >
     <ComponentPageCell>
@@ -73,21 +73,32 @@ const Spacing = (layoutProps: LayoutProps) => (
           id="overview"
           toc="Overview"
           headline="Overview"
-          description="Space is distance between elements on a screen often refered to as the whitespace. Good use of whitespace helps to de-clutter and group content to provide a visual hierarchy so that users can focus on the important elements and digest content with reduced cognitive load."
+          description={
+            <>
+              Space is the distance between elements on a screen. It’s often
+              referred to as whitespace.
+              <br />
+              <br />
+              Good use of whitespace can de-clutter and group content to provide
+              a visual hierarchy. This helps users focus on what matters and
+              reduces cognitive load.
+            </>
+          }
         >
-          <Illustration path="theme/spacing/overview" />
+          <Illustration viewBox="0 0 1490 600" path="theme/spacing/overview" />
         </ContentPrimary>
 
         <ContentPrimary
           headline="Space tokens"
           description={
             <>
-              Space tokens define the space throughout the system, such as the
-              distance between an icon and the label in a button. Space tokens
-              are used to control margin and padding within components.
+              Space tokens define spacing throughout NewsKit, such as the
+              distance between an icon and the label in a button. The space
+              tokens define three categories to control margin and padding for
+              specific use cases: spaceInset, spaceInline and spaceStack.
               <br />
               <br />
-              Available space design tokens are outlined below:
+              Here are the available space tokens:
             </>
           }
         >
@@ -95,19 +106,32 @@ const Spacing = (layoutProps: LayoutProps) => (
             columns={['Token', 'Value', 'Description']}
             rows={spaceTable}
           />
+          <InlineMessage
+            role="region"
+            title="Be specific"
+            aria-label="Be specific"
+            overrides={{marginBlockStart: 'space060'}}
+          >
+            Avoid using generic spacing tokens whenever possible in favour of
+            more specific options such as space inset, space inline and space
+            stack. Only use the generic variables when these don’t meet your
+            needs.
+          </InlineMessage>
         </ContentPrimary>
 
         <ContentSecondary
           headline="Code usage"
           description={
             <>
-              The{' '}
+              You can override and apply space inset to components using{' '}
               <Link href="/theme/theming/component-defaults/">
                 component defaults
-              </Link>{' '}
-              page details the different ways in which you can override and
-              apply space inset to NewsKit components. For more advanced use
-              cases, these values can be accessed from the theme by calling{' '}
+              </Link>
+              .
+              <br />
+              <br />
+              For more advanced use cases, you can access these values from the
+              theme by calling{' '}
               <Link href="/components/utils/get-defaults/">
                 getResponsiveSpacing
               </Link>
@@ -277,14 +301,12 @@ const Spacing = (layoutProps: LayoutProps) => (
           headline="Text crop"
           description={
             <>
-              To keep consistent and predictable spacing from design to code, we
+              To keep spacing consistent and predictable from design to code, we
               use a{' '}
-              <Link href="/theme/theming/creating-a-theme/">
-                text-crop utility{' '}
-              </Link>
-              that removes additional space (leading) around a text block. This
-              allows us to maintain our 4px baseline and keep designs
-              pixel-perfect.{' '}
+              <Link href="/theme/theming/creating-a-theme/">text-crop </Link>
+              utility that removes additional space (leading) around a text
+              block. This lets us maintain a 4px baseline and keep designs pixel
+              perfect.{' '}
             </>
           }
           showSeparator

@@ -45,7 +45,7 @@ const PROPERTIES = [
     ),
     example: <Mono>motionDuration000</Mono>,
     description:
-      'Specifies how many milliseconds delay for the transition effect to start',
+      'Specifies how many milliseconds before the transition effect starts',
   },
   {
     tokenName: 'transitionDuration',
@@ -53,8 +53,7 @@ const PROPERTIES = [
       <Link href="/theme/foundation/motion/#duration">motionDuration</Link>
     ),
     example: <Mono>motionDuration020</Mono>,
-    description:
-      'Specifies how many milliseconds a transition effect takes to complete',
+    description: 'Specifies how many milliseconds a transition effect lasts',
   },
   {
     tokenName: 'transitionTimingFunction',
@@ -73,7 +72,7 @@ const ImageWrapper = styled.div`
 
 const getImage = (url: string) => (
   <ImageWrapper>
-    <Illustration path={url} />
+    <Illustration viewBox="0 0 1000 1000" path={url} />
   </ImageWrapper>
 );
 
@@ -84,9 +83,9 @@ const PRESETS = [
     ),
     token: 'backgroundColorChange',
     description:
-      'Transition background colour from the initial state to the final state.',
+      'Transition background colour from the initial state to the final state',
     implementation:
-      'Can be applied to components when interacting eg. on hover, or triggered on page load.',
+      'Apply to components when interacting (e.g. on hover) or trigger on page load',
   },
   {
     example: getImage(
@@ -94,9 +93,9 @@ const PRESETS = [
     ),
     token: 'borderColorChange',
     description:
-      'Transition border colour from the initial state to the final state.',
+      'Transition border colour from the initial state to the final state',
     implementation:
-      'Can be applied to components when interacting eg. on hover, or triggered on page load.',
+      'Apply to components when interacting (e.g. on hover) or trigger on page load',
   },
   {
     example: getImage(
@@ -104,9 +103,9 @@ const PRESETS = [
     ),
     token: 'fontColorChange',
     description:
-      'Transition font colour from the initial state to the final state.',
+      'Transition font colour from the initial state to the final state',
     implementation:
-      'Can be applied to components when interacting eg. on hover, or triggered on page load.',
+      'Apply to components when interacting (e.g. on hover) or trigger on page load',
   },
   {
     example: getImage(
@@ -114,11 +113,11 @@ const PRESETS = [
     ),
     token: 'iconColorChange',
     description:
-      'Transition icon colour from the initial state to the final state.',
+      'Transition icon colour from the initial state to the final state',
     implementation: (
       <>
-        Can be applied to icons via the svg fill property{' '}
-        <InlineCode>getCssSvgFillObject</InlineCode>.
+        Apply to icons via the svg fill property{' '}
+        <InlineCode>getCssSvgFillObject</InlineCode>
       </>
     ),
   },
@@ -127,9 +126,9 @@ const PRESETS = [
       'theme/transition-presets/predefined-transition-presets/fade',
     ),
     token: 'fade',
-    description: 'Fade from transparent to opaque.',
+    description: 'Fade from transparent to opaque',
     implementation:
-      'Can be applied to components when interacting eg. on hover, triggered on page load, or applied to components when entering (mount), or exiting (unmount).',
+      'Apply to components when interacting (e.g. on hover), trigger on page load or apply to components when entering (mount) or exiting (unmount)',
   },
   {
     example: getImage(
@@ -139,32 +138,32 @@ const PRESETS = [
     description: (
       <>
         Slide in from the left to right, and back from right to left (back to
-        its original starting position).
+        original starting position)
         <br />
         <br />
-        When applied to a element or component like the Drawer,{' '}
-        <InlineCode>slideLeft</InlineCode> causes the Drawer panel to slide in
+        When applied to an element or component like the drawer,{' '}
+        <InlineCode>slideLeft</InlineCode> causes the drawer panel to slide in
         from off the left edge of the screen to the right, and back again off
-        the left edge of the screen.
+        the left edge of the screen
       </>
     ),
     implementation: (
       <>
         The transition <InlineCode>base</InlineCode> state keeps the element
         positioned to the left (translateX(-100%)) until the transition is
-        activated.
+        activated
         <br />
         <br />
         The <InlineCode>enterActive</InlineCode> state changes the transform
-        value to translateX(0) and moves the element to the right.
+        value to translateX(0) and moves the element to the right
         <br />
         <br />
         The <InlineCode>exitActive</InlineCode> state brings it back to its
-        original starting position on the left (translateX(-100%)).
+        original starting position on the left (translateX(-100%))
         <br />
         <br />
-        Can be applied to components and triggered on page load, or when
-        entering (mount), or exiting (unmount).
+        Apply to components and trigger on page load, or when entering (mount)
+        or exiting (unmount)
       </>
     ),
   },
@@ -176,32 +175,32 @@ const PRESETS = [
     description: (
       <>
         Slide in from the right to left, and back from left to right (back to
-        its original starting position).
+        original starting position)
         <br />
         <br />
-        When applied to a element or component like the Drawer,{' '}
-        <InlineCode>slideRight</InlineCode> causes the Drawer panel to slide in
+        When applied to an element or component like the drawer,{' '}
+        <InlineCode>slideRight</InlineCode> causes the drawer panel to slide in
         from off the right edge of the screen to the left, and back again off
-        the right edge of the screen.
+        the right edge of the screen
       </>
     ),
     implementation: (
       <>
         The transition <InlineCode>base</InlineCode> state keeps the element
         positioned to the right (translateX(100%)) until the transition is
-        activated.
+        activated
         <br />
         <br />
         The <InlineCode>enterActive</InlineCode> state changes the transform
-        value to translateX(0) and moves the element to the left.
+        value to translateX(0) and moves the element to the left
         <br />
         <br />
         The <InlineCode>exitActive</InlineCode> state brings it back to its
-        original starting position on the right (translateX(100%)).
+        original starting position on the right (translateX(100%))
         <br />
         <br />
-        Can be applied to components and triggered on page load, or when
-        entering (mount), or exiting (unmount).
+        Apply to components and trigger on page load, or when entering (mount)
+        or exiting (unmount)
       </>
     ),
   },
@@ -213,32 +212,32 @@ const PRESETS = [
     description: (
       <>
         Slide in from the top to bottom, and back from bottom to top (back to
-        its original starting position).
+        original starting position)
         <br />
         <br />
-        When applied to a element or component like the Drawer,{' '}
-        <InlineCode>slideTop</InlineCode> causes the Drawer panel to slide in
+        When applied to an element or component like the drawer,{' '}
+        <InlineCode>slideTop</InlineCode> causes the drawer panel to slide in
         from off the top edge of the screen to the bottom, and back again off
-        the top edge of the screen.
+        the top edge of the screen
       </>
     ),
     implementation: (
       <>
         The transition <InlineCode>base</InlineCode> state keeps the element
         positioned to the top (translateY(-100%)) until the transition is
-        activated.
+        activated
         <br />
         <br />
         The <InlineCode>enterActive</InlineCode> state changes the transform
-        value to translateY(0) and moves the element to the bottom.
+        value to translateY(0) and moves the element to the bottom
         <br />
         <br />
         The <InlineCode>exitActive</InlineCode> state brings it back to its
-        original starting position on the top (translateY(-100%)).
+        original starting position on the top (translateY(-100%))
         <br />
         <br />
-        Can be applied to components and triggered on page load, or when
-        entering (mount), or exiting (unmount).
+        Apply to components and trigger on page load, or when entering (mount),
+        or exiting (unmount)
       </>
     ),
   },
@@ -250,13 +249,13 @@ const PRESETS = [
     description: (
       <>
         Slide in from the bottom to top, and back from top to bottom (back to
-        its original starting position).
+        original starting position)
         <br />
         <br />
-        When applied to a element or component like the Drawer,{' '}
-        <InlineCode>slideBottom</InlineCode> causes the Drawer panel to slide in
+        When applied to an element or component like the drawer,{' '}
+        <InlineCode>slideBottom</InlineCode> causes the drawer panel to slide in
         from off the bottom edge of the screen to the top, and back again off
-        the bottom edge of the screen.
+        the bottom edge of the screen
         <br />
         <br />
       </>
@@ -265,19 +264,19 @@ const PRESETS = [
       <>
         The transition <InlineCode>base</InlineCode> state keeps the element
         positioned to the bottom (translateY(100%)) until the transition is
-        activated.
+        activated
         <br />
         <br />
         The <InlineCode>enterActive</InlineCode> state changes the transform
-        value to translateY(0) and moves the element to the top.
+        value to translateY(0) and moves the element to the top
         <br />
         <br />
         The <InlineCode>exitActive</InlineCode> state brings it back to its
-        original starting position on the bottom (translateY(100%)).
+        original starting position on the bottom (translateY(100%))
         <br />
         <br />
-        Can be applied to components and triggered on page load, or when
-        entering (mount), or exiting (unmount).
+        Apply to components and trigger on page load, or when entering (mount)
+        or exiting (unmount)
       </>
     ),
   },
@@ -287,9 +286,9 @@ const PRESETS = [
     ),
     token: 'moveUp',
     description:
-      'Moves upwards (translate) from the start point of the child element.',
+      'Move upwards (translate) from the start point of the child element',
     implementation:
-      'Can be applied to components and triggered on page load, or when entering (mount), or exiting (unmount).',
+      'Apply to components and trigger on page load, or when entering (mount) or exiting (unmount)',
   },
   {
     example: getImage(
@@ -297,32 +296,31 @@ const PRESETS = [
     ),
     token: 'grow',
     description:
-      'Expands outwards (scales) from the center of the child element.',
+      'Expand outwards (scales) from the centre of the child element',
     implementation:
-      'Can be applied to components and triggered on page load, or when entering (mount), or exiting (unmount).',
+      'Apply to components and trigger on page load, or when entering (mount) or exiting (unmount)',
   },
   {
     example: getImage(
       'theme/transition-presets/predefined-transition-presets/shiftabsolute',
     ),
     token: 'shiftAbsolute',
-    description: 'Transition inset from the initial state to the final state.',
+    description: 'Transition inset from the initial state to the final state',
     implementation:
-      'Can be applied to components to achieve movement when interacting eg. applied to the Switch thumb on click/tap.',
+      'Apply to components to add movement upon user interaction (e.g. the switch thumb on click/tap)',
   },
   {
     example: getImage(
       'theme/transition-presets/predefined-transition-presets/opacitychange',
     ),
     token: 'opacityChange',
-    description:
-      'Transition opacity from the initial state to the final state.',
+    description: 'Transition opacity from the initial state to the final state',
     implementation: (
       <>
-        Can be applied to components to achieve an opacity change eg. applied to
-        the feedback element that appears on hover for components like the{' '}
-        <Link href="/components/checkbox/">Checkbox</Link>, or{' '}
-        <Link href="/components/radio-button/">Radio Button.</Link>
+        Apply to components to change their opacity upon user interaction (e.g.
+        the feedback element that appears on hover for components like{' '}
+        <Link href="/components/checkbox/">checkbox</Link>, or{' '}
+        <Link href="/components/radio-button/">radio button</Link>
       </>
     ),
   },
@@ -331,18 +329,18 @@ const PRESETS = [
       'theme/transition-presets/predefined-transition-presets/widthchange',
     ),
     token: 'widthChange',
-    description: 'Transition width from the initial state to the final state.',
+    description: 'Transition width from the initial state to the final state',
     implementation:
-      'Can be applied to components to achieve a width change when interacting eg. applied to the expandable horizontal volume control audio player subcomponent on hover or focus.',
+      'Can be applied to components to achieve a width change when interacting eg. applied to the expandable horizontal volume control audio player subcomponent on hover or focus',
   },
   {
     example: getImage(
       'theme/transition-presets/predefined-transition-presets/maxheightchange',
     ),
     token: 'maxHeightChange',
-    description: 'Expands height (max-height) of the child element.',
+    description: 'Expands height (max-height) of the child element',
     implementation:
-      'Can be applied to components when interacting eg. on click.',
+      'Can be applied to components when interacting eg. on click',
   },
 ];
 
@@ -354,7 +352,7 @@ const USER_INTERACTION = [
     name: 'base',
     type: 'TransitionPresetStyles',
     description:
-      'Defines the CSS property, duration, delay and transition timing for the transition of the element.',
+      'Defines the CSS property, duration, delay and timing for the transition of the element',
   },
 ];
 
@@ -366,7 +364,7 @@ const ENTER_EXIT_COMPONENT = [
     name: 'base',
     type: 'TransitionPresetStyles',
     description:
-      'Defines the initial style prior to starting the enter transition if a component is rendered (in the DOM) but is visibly hidden off the screen, until an action is triggered.',
+      'Defines the initial style before the enter transition starts, if a component is rendered (in the DOM) but is visibly hidden off-screen until an action is triggered',
   },
   {
     example: getImage(
@@ -374,8 +372,7 @@ const ENTER_EXIT_COMPONENT = [
     ),
     name: 'enter',
     type: 'TransitionPresetStyles',
-    description:
-      'Defines the initial style prior to starting the enter transition.',
+    description: 'Defines the initial style before the enter transition starts',
   },
   {
     example: getImage(
@@ -385,11 +382,11 @@ const ENTER_EXIT_COMPONENT = [
     type: 'TransitionPresetStyles',
     description: (
       <>
-        Defines the enter transition including CSS property that is
-        transitioned, the duration, the delay and the timing function.
+        Defines the enter transition, including the CSS property that’s
+        transitioned, duration, delay and timing function
         <br />
         <br />
-        Defines the final values of the enter transition.
+        Defines the final values of the enter transition
       </>
     ),
   },
@@ -400,7 +397,7 @@ const ENTER_EXIT_COMPONENT = [
     name: 'enterDone',
     type: 'TransitionPresetStyles',
     description:
-      'Defines the final style after the enter transition has completed.',
+      'Defines the final style after the enter transition has completed',
   },
   {
     example: getImage(
@@ -408,7 +405,7 @@ const ENTER_EXIT_COMPONENT = [
     ),
     name: 'exit',
     type: 'TransitionPresetStyles',
-    description: 'Defines the style prior to starting the exit transition.',
+    description: 'Defines the style before the exit transition starts',
   },
   {
     example: getImage(
@@ -418,11 +415,11 @@ const ENTER_EXIT_COMPONENT = [
     type: 'TransitionPresetStyles',
     description: (
       <>
-        Defines the exit transition including CSS property that is transitioned,
-        the duration, the delay and the timing function.
+        Defines the exit transition, including the CSS property that’s
+        transitioned, duration, delay and timing function
         <br />
         <br />
-        Defines the final values of the exit transition.
+        Defines the final values of the exit transition
       </>
     ),
   },
@@ -433,7 +430,7 @@ const ENTER_EXIT_COMPONENT = [
     name: 'exitDone',
     type: 'TransitionPresetStyles',
     description:
-      'Defines the final style after the exit transition has completed. This is the state that persists after the transition.',
+      'Defines the final style after the exit transition has completed. This is the state that persists after the transition',
   },
 ];
 
@@ -461,14 +458,14 @@ const infoIcon = (
 const TransitionPresets = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Transition Presets',
+      title: 'Transition presets',
       description:
         'A collection of motion attributes combined into a preset to define reusable motion transition from one state to another.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Presets',
-      name: 'Transition Presets',
+      name: 'Transition presets',
       hero: {
         illustration: 'theme/transition-presets/hero',
       },
@@ -481,10 +478,13 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
           id="overview"
           toc="Overview"
           headline="Overview"
-          description="Transition Presets define attributes such as the visual style, size, or position of an element across multiple states over time. Transition Presets can be reused through the system on multiple elements."
+          description="Transition presets define attributes such as the visual style, size or position of an element across multiple states over time. You can reuse transition presets on multiple elements throughout the system."
           showSeparator
         >
-          <Illustration path="theme/transition-presets/overview" />
+          <Illustration
+            viewBox="0 0 4911 2888"
+            path="theme/transition-presets/overview"
+          />
         </ContentPrimary>
       </ContentSection>
 
@@ -492,8 +492,8 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="properties"
           toc="Properties"
-          headline="Transition Preset properties"
-          description="Transition Presets use a combination of the following Transition Preset properties:"
+          headline="Transition preset properties"
+          description="Transition presets use a combination of properties:"
           showSeparator
         >
           <Table
@@ -512,8 +512,8 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="predefined-transition-presets"
           toc="Available Transition Presets"
-          headline="Predefined Transition Presets"
-          description="Below is a collection of Transition Presets that come out of the box with NewsKit that can be applied to elements:"
+          headline="Predefined transition presets"
+          description="Here’s a collection of out-of-the-box transition presets you can apply to elements:"
         >
           <Table
             columns={['Example', 'Token', 'Description', 'Implementation']}
@@ -527,9 +527,9 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
             role="region"
             aria-label="transition presets"
           >
-            You can also add your own Transition Presets. See the{' '}
+            You can add your own transition presets. See the{' '}
             <Link href="/theme/theming/creating-a-theme/">
-              Creating a theme
+              creating a theme
             </Link>{' '}
             guide for more details.
           </InlineMessage>
@@ -540,25 +540,28 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="states"
           toc="States"
-          headline="Transition Preset States"
+          headline="Transition preset states"
           description={
             <>
-              States are used to define the{' '}
+              States define the{' '}
               <Link
                 href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions"
                 target="_blank"
               >
                 CSS property
               </Link>
-              , duration, delay and transition timing, and the initial and final
-              styling of an element.
+              , duration, delay and transition timing, as well as the initial
+              and final styling of an element.
             </>
           }
         >
-          <Illustration path="theme/transition-presets/transition-preset-states/overview" />
+          <Illustration
+            viewBox="0 0 4911 1894"
+            path="theme/transition-presets/transition-preset-states/overview"
+          />
         </ContentPrimary>
         <ContentSecondary
-          description="There are two distinct approaches to defining transitions based on the following:"
+          description="There are two ways to define transitions:"
           childrenColSpan={ContentColSpan.TEXT}
         />
 
@@ -566,11 +569,10 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
           headline="1. States for transitions triggered upon user interaction"
           description={
             <>
-              Transition presents applied to elements upon user interaction e.g.
-              changing the background colour of a{' '}
-              <Link href="/components/button/">Button</Link> on hover. The
-              following states are used for transitions triggered upon user
-              interaction:
+              You can apply these transition presets to elements upon user
+              interaction (e.g. changing the background colour of a{' '}
+              <Link href="/components/button/">button</Link> on hover). The
+              following states are used:
             </>
           }
         >
@@ -581,14 +583,14 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
         </ContentSecondary>
 
         <ContentSecondary
-          headline="2. States for transitions triggered upon enter and exit of a component"
+          headline="2. States for transitions triggered upon entry and exit of a component"
           description={
             <>
-              Transition presets applied to mount and unmount components e.g.{' '}
-              <Link href="/components/modal/">Modal</Link> on-screen appearing
-              and disappearing. The following states are used for transitions
-              triggered upon enter (mount) and exit (unmount) of a component.
-              The states represent class names applied to an element:
+              You can apply these transition presets upon entry (mount) and exit
+              (unmount) of a component (e.g. a{' '}
+              <Link href="/components/modal/">modal</Link> appearing and
+              disappearing). The following states are used and represent class
+              names applied to an element:
             </>
           }
           showSeparator
@@ -603,17 +605,20 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="apply transition presets">
         <ContentPrimary
           id="apply-transition-presets"
-          toc="Apply Transition Presets"
-          headline="Apply Transition Presets"
+          toc="Apply transition presets"
+          headline="Apply transition presets"
           description={
             <>
-              The{' '}
+              See the{' '}
               <Link href="/theme/theming/component-defaults/">
-                Component Defaults
+                component defaults page
               </Link>{' '}
-              page details the different ways in which you can override and
-              apply Transition Presets to NewsKit components. For more advanced
-              use cases, these values can be accessed from the theme by calling{' '}
+              for the different ways to override and apply transition presets to
+              NewsKit components.
+              <br />
+              <br />
+              For more advanced use cases, access these values from the theme by
+              calling{' '}
               <Link href="/theme/theming/using-a-theme/">
                 getTransitionPreset
               </Link>{' '}
@@ -622,18 +627,17 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
               <Link href="/theme/theming/using-a-theme/">
                 getTransitionPresetFromTheme
               </Link>{' '}
-              (a function used to retrieve token values from theme or component
-              props).
+              (used to retrieve token values from theme or component props).
             </>
           }
         />
 
         <ContentSecondary
-          headline="Transition presets triggered upon user interaction"
+          headline="Trigger transition presets upon user interaction"
           description={
             <>
-              1. This example demonstrates a Transition Preset{' '}
-              <InlineCode>backgroundColorChange</InlineCode>.
+              1. Here’s the <InlineCode>backgroundColorChange</InlineCode>{' '}
+              transition preset.
             </>
           }
         >
@@ -652,8 +656,8 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
           description={
             <>
               2. When combined with the following{' '}
-              <InlineCode>stylePreset</InlineCode> the background colour will
-              transition between states.
+              <InlineCode>stylePreset</InlineCode>, the background colour
+              transitions between states.
             </>
           }
         >
@@ -672,9 +676,8 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
         <ContentSecondary
           description={
             <>
-              3. This example demonstrates applying{' '}
-              <InlineCode>backgroundColorChange</InlineCode> Transition preset
-              to a simple box element.
+              3. <InlineCode>backgroundColorChange</InlineCode> applied to a
+              simple box element.
             </>
           }
         >
@@ -693,12 +696,12 @@ $\{getTransitionPresetFromTheme('backgroundColorChange')}
         </ContentSecondary>
 
         <ContentSecondary
-          headline="Combining Transition Presets applied to background and border colours"
+          headline="Apply combined transition presets to background and border colours"
           description={
             <>
-              1. This example demonstrates two Transition Presets,{' '}
+              1. Here are two transition presets:{' '}
               <InlineCode>backgroundColorChange</InlineCode> and{' '}
-              <InlineCode>borderColorChange</InlineCode>
+              <InlineCode>borderColorChange</InlineCode>.
             </>
           }
         >
@@ -725,8 +728,8 @@ transitionPresets.borderColorChange = {
           description={
             <>
               2. When combined with the following{' '}
-              <InlineCode>stylePreset</InlineCode> the background and border
-              colours will transition between states with different durations.
+              <InlineCode>stylePreset</InlineCode>, the background and border
+              colours transition between states with different durations.
             </>
           }
         >
@@ -749,10 +752,9 @@ transitionPresets.borderColorChange = {
         <ContentSecondary
           description={
             <>
-              3. This example demonstrates applying{' '}
-              <InlineCode>backgroundColorChange</InlineCode> and{' '}
-              <InlineCode>borderColorChange</InlineCode> Transition preset to a
-              simple Box component.
+              3. <InlineCode>backgroundColorChange</InlineCode> and{' '}
+              <InlineCode>borderColorChange</InlineCode> applied to a simple box
+              component.
             </>
           }
         >
@@ -775,23 +777,24 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
             icon={infoIcon}
             role="region"
             aria-label="single instance"
-            title="Note"
+            title="Apply to all instances"
           >
-            These example only applies to a single instance. Use{' '}
+            These examples only apply to a single instance of a component. To
+            apply to all instances, use{' '}
             <Link href="/theme/theming/component-defaults/">
-              Component Defaults
-            </Link>{' '}
-            if you want to apply to all instances of a component.
+              component defaults
+            </Link>
+            .
           </InlineMessage>
         </ContentSecondary>
 
         <ContentSecondary
-          headline="Transition Preset triggered upon mount/unmount"
+          headline="Trigger transition presets upon mount/unmount"
           description={
             <>
-              1. This example demonstrates a Transition Preset,{' '}
-              <InlineCode>slideLeft</InlineCode>. This Transition Preset is used
-              to slide an element in from the left edge of the screen.
+              1. Here’s the <InlineCode>slideLeft</InlineCode> transition
+              preset, used to slide an element in from the left edge of the
+              screen.
             </>
           }
         >
@@ -830,9 +833,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
 
         <ContentSecondary
           description={
-            <>
-              2. Applying the transition preset to the Drawer in the defaults.
-            </>
+            <>2. Apply the transition preset to the drawer in the defaults.</>
           }
         >
           <Code>
@@ -863,17 +864,16 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         <ContentPrimary
           id="extending-overriding-transition-presets"
           toc="Overriding & combining"
-          headline="Extending or overriding Transition Presets"
-          description="Transition Presets can be overridden or combined to achieve different combinations."
+          headline="Extend or override transition presets"
+          description="You can override or combine transition presets to achieve different combinations."
         />
 
         <ContentSecondary
           headline="Code example"
           description={
             <>
-              The example below demonstrates overriding a transition preset
-              applied in the defaults of the{' '}
-              <Link href="/components/drawer/">Drawer</Link> component.
+              Here’s how to override a transition preset applied in the defaults
+              of the <Link href="/components/drawer/">drawer</Link> component:
             </>
           }
         >
@@ -896,17 +896,16 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         <ContentSecondary
           description={
             <>
-              The example below demonstrates extending two predefined Transition
-              presets - <InlineCode>fade</InlineCode> and{' '}
-              <InlineCode>moveUp</InlineCode> applied to a Modal component. The
-              Duration value and Timing function of both Transition Presets are
-              overridden and delay is added to the
-              <InlineCode>fade</InlineCode> Transition Preset when the component
+              Here’s how to extend two predefined transition presets -{' '}
+              <InlineCode>fade</InlineCode> and <InlineCode>moveUp</InlineCode>{' '}
+              applied to a modal component. The duration and timing functions of
+              both presets are overridden and delay is added to the{' '}
+              <InlineCode>fade</InlineCode> transition preset when the component
               appears on the screen.
               <br />
               <br />
-              For both Transition Presets, the Duration and Timing functions are
-              updated from the enter to the exit state of the transition.
+              For both transition presets, the duration and timing functions are
+              updated from the enter to the exit state of the transition:
             </>
           }
           showSeparator
@@ -956,13 +955,13 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
       <ContentSection sectionName="adding custom transition presets to the theme">
         <ContentPrimary
           id="adding-custom-transition-presets-to-the-theme"
-          toc="Custom Transition Presets"
-          headline="Adding custom Transition Presets to the theme"
+          toc="Custom transition presets"
+          headline="Add custom transition presets to the theme"
           description={
             <>
-              Custom Transition Presets can be added to the theme. See the{' '}
+              See the{' '}
               <Link href="/theme/theming/creating-a-theme/">
-                Creating a theme
+                creating a theme
               </Link>{' '}
               guide for more details.
             </>
@@ -973,8 +972,8 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
 
       <ContentSection sectionName="communicating transition presets in figma">
         <ContentPrimary
-          headline="Communicating Transition Presets in Figma"
-          description="The inability to communicate motion in static layouts has been a long-standing problem in the design world. In the absence of this information, it is often up to the developer to interpret how to implement it."
+          headline="Communicate transition presets in Figma"
+          description="The difficulty in communicating motion in static layouts is a long-standing problem in the design world. It’s often left to developers to figure something out."
         >
           <MediaList
             layout="1-span"
@@ -982,9 +981,10 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
             cards={[
               {
                 description:
-                  'To alleviate this problem with page-level transitions we recommend designers refer to the documentation provided in Figma.',
+                  'To alleviate this problem with page-level transitions, designers should refer to the documentation provided in Figma.',
                 media: getIllustrationComponent(
                   'theme/transition-presets/transition-presets-in-figma',
+                  {viewBox: '0 0 1345 759'},
                 ),
               },
             ]}
@@ -993,13 +993,12 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         <ContentSecondary
           description={
             <>
-              For additional guidance on how to communicate a design to the
-              product team for engineers to build, refer to the{' '}
+              For help communicating designs to engineers, see the{' '}
               <Link
                 href="https://www.figma.com/proto/kXCrh9MHKAJ878KE2dQOz8/Handoff-Guides---for-engineers-%26-designers?page-id=1%3A544&node-id=275%3A21221&viewport=350%2C48%2C0.13&scaling=min-zoom&starting-point-node-id=275%3A21221&show-proto-sidebar=1&hide-ui=1"
                 target="_blank"
               >
-                NewsKit Handoff guidance.
+                handoff guidance.
               </Link>
             </>
           }
@@ -1009,28 +1008,26 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
 
       <ContentSection sectionName="accessibility considerations">
         <ContentPrimary
-          id="accessibility-considerations"
-          toc="Accessibility considerations"
-          headline="Accessibility considerations"
+          id="accessibility"
+          toc="Accessibility"
+          headline="Accessibility"
           description={
             <>
-              Considering users that may have a{' '}
+              Users who experience{' '}
               <Link
                 href="https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html"
                 target="_blank"
               >
-                sensitivity to motion
+                motion sensitivity
               </Link>{' '}
-              (perceived movement on the screen), is core to the NewsKit motion
-              system. By following the guidelines below, we ensure that any
-              users who experience sensitivity to motion have the option to view
-              a more basic experience that reduces motion where possible.
+              have the option of a more basic experience that reduces motion
+              where possible.
             </>
           }
         />
 
         <ContentSecondary
-          headline="Reduced Motion for motion sensitivities"
+          headline="Reduce motion for motion sensitivities"
           description={
             <>
               The{' '}
@@ -1042,21 +1039,22 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
               </Link>{' '}
               CSS media feature detects if the user has requested that their
               operating system or browser minimises the amount of non-essential
-              motion displayed to the user. To ensure experiences are inclusive
-              it is recommended to implement the{' '}
-              <InlineCode>prefers-reduced-motion</InlineCode> feature to
-              elements that have motion. By default, we support this feature for
-              components in the NewsKit Design System that have motion applied
-              to them eg. the <Link href="/components/drawer/">Drawer</Link>, &{' '}
-              <Link href="/components/modal/">Modal</Link> components.
+              motion displayed.
+              <br />
+              <br />
+              We also recommend using the{' '}
+              <InlineCode>prefers-reduced-motion</InlineCode> feature on
+              elements with motion. By default, we support this feature for
+              components that have motion applied (e.g.{' '}
+              <Link href="/components/drawer/">drawer</Link>, and{' '}
+              <Link href="/components/modal/">modal</Link>).
               <br />
               <br />
               <Link
                 href="https://caniuse.com/prefers-reduced-motion"
                 target="_blank"
               >
-                To see which browsers support this feature, please refer to this
-                link
+                Check which browsers support reduced motion
               </Link>
               .
             </>
@@ -1065,7 +1063,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
 
         <ContentSecondary
           headline="Code example"
-          description="To implement this feature manually by using CSS:"
+          description="Here’s how to implement this feature using CSS:"
           showSeparator
         >
           <Code>

@@ -77,6 +77,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           ),
           media: getIllustrationComponent(
             'components/divider/stack-illustration',
+            {viewBox: '0 0 1490 600'},
           ),
           codeUrl: 'examples/divider/divider-vertical-in-stack.tsx',
         },
@@ -97,6 +98,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
               ),
               media: getIllustrationComponent(
                 'components/divider/block-horizontal-illustration',
+                {viewBox: '0 0 1490 600'},
               ),
               codeUrl: 'examples/divider/divider-horizontal-in-block.tsx',
             },
@@ -112,6 +114,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
               ),
               media: getIllustrationComponent(
                 'components/divider/block-vertical-illustration',
+                {viewBox: '0 0 1490 600'},
               ),
               codeUrl: 'examples/divider/divider-vertical-in-block.tsx',
             },

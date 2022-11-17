@@ -1,24 +1,19 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {Banner, BannerProps} from '..';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {styled} from '../../utils/style';
-import {
-  IconFilledInfo,
-  IconFilledWarning,
-  IconFilledError,
-  IconFilledFacebook,
-  IconFilledInstagram,
-} from '../../icons';
+import {getColorCssFromTheme, styled} from '../../utils/style';
+import {IconFilledInfo, IconFilledWarning, IconFilledError} from '../../icons';
 import {Button, ButtonOrButtonLinkProps} from '../../button';
 import {LinkInline} from '../../link';
-import {Cell, Grid, Visible} from '../../grid';
+import {Visible} from '../../grid';
 import {GridLayout, GridLayoutItem, TextBlock} from '../..';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+
+const BANNER_GRID_COLS = '1fr';
+const DEFAULT_TITLE = 'Banner title';
+const DEFAULT_CHILD = 'A short line describing the banner information.';
 
 const bannerCustomThemeObject: CreateThemeArgs = {
   name: 'banner-custom-theme',
@@ -26,46 +21,13 @@ const bannerCustomThemeObject: CreateThemeArgs = {
     stylePresets: {
       bannerContainerSolidCustom: {
         base: {
-          backgroundColor: '{{colors.interfaceSkeleton020}}',
+          backgroundColor: '{{colors.interfaceInformative010}}',
           iconColor: '{{colors.inkInverse}}',
-        },
-      },
-      bannerMessageCustom: {
-        base: {
-          color: '{{colors.inkContrast}}',
         },
       },
       bannerActionsCustom: {
         base: {
-          color: '{{colors.inkContrast}}',
-          backgroundColor: '{{colors.white}}',
           borderRadius: '{{borders.borderRadiusSharp}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.neutral050}}',
-        },
-      },
-      bannerCloseCustomHorizontal: {
-        base: {
-          color: '{{colors.inkContrast}}',
-          iconColor: '{{colors.inkContrast}}',
-          backgroundColor: '{{colors.transparent}}',
-          borderRadius: '{{borders.borderRadiusSharp}}',
-          borderColor: '{{colors.transparent}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.neutral050}}',
-        },
-      },
-      bannerCloseCustomVertical: {
-        base: {
-          color: '{{colors.inkContrast}}',
-          iconColor: '{{colors.inkContrast}}',
-          backgroundColor: '{{colors.transparent}}',
-          borderRadius: '{{borders.borderRadiusSharp}}',
-          borderStyle: 'solid',
-          borderWidth: '1px',
-          borderColor: '{{colors.inkContrast}}',
         },
         hover: {
           backgroundColor: '{{colors.neutral050}}',
@@ -75,17 +37,11 @@ const bannerCustomThemeObject: CreateThemeArgs = {
   },
 };
 
-const BannerWrapper = styled.div`
-  margin-bottom: 24px;
+const MarginOverridesWrapper = styled.div`
+  border: 1px dashed;
+  ${getColorCssFromTheme('borderColor', 'red060')}
 `;
 
-const StyledFullWidthVisible = styled(Visible)`
-  width: 100%;
-`;
-
-const StyledDiv = styled.div`
-  border: 1px red dotted;
-`;
 const CTABtn = ({
   children,
   overrides,
@@ -95,498 +51,341 @@ const CTABtn = ({
     overrides={{stylePreset: 'buttonSolidInverse', width: '100%', ...overrides}}
     {...restProps}
   >
-    {children || 'CTA Button'}
+    {children || 'CTA button'}
   </Button>
 );
 
-const BannerWithState: React.FC<BannerProps> = ({children, ...restProps}) => {
-  const [isActive, setIsActive] = React.useState(true);
-
-  const close = () => setIsActive(false);
+const StoryBanner: React.FC<BannerProps> = ({children, ...restProps}) => {
+  const close = () => {
+    // eslint-disable-next-line no-console
+    console.log('Closed');
+  };
   const action = () => {
     // eslint-disable-next-line no-console
-    console.log('CTA Called!');
+    console.log('CTA Called');
   };
+
   return (
-    <>
-      {isActive && (
-        <>
-          <Banner
-            actions={[
-              () => (
-                <>
-                  <StyledFullWidthVisible xs sm>
-                    <CTABtn
-                      onClick={() => {
-                        action();
-                      }}
-                    >
-                      CTA button
-                    </CTABtn>
-                  </StyledFullWidthVisible>
-                  <StyledFullWidthVisible md lg xl>
-                    <CTABtn
-                      size="small"
-                      onClick={() => {
-                        action();
-                      }}
-                    >
-                      CTA button
-                    </CTABtn>
-                  </StyledFullWidthVisible>
-                </>
-              ),
-            ]}
-            aria-label="Banner Info"
-            icon={
-              <IconFilledInfo
-                overrides={{
-                  size: 'iconSize020',
-                  stylePreset: 'inkInverse',
-                }}
-              />
-            }
-            onClose={close}
-            title="Some banner title"
-            {...restProps}
-          >
-            {children ||
-              `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
-          </Banner>
-        </>
-      )}
-    </>
+    <Banner
+      actions={[
+        () => (
+          <>
+            <Visible xs sm>
+              <CTABtn onClick={action}>CTA button</CTABtn>
+            </Visible>
+            <Visible md lg xl>
+              <CTABtn size="small" onClick={action}>
+                CTA button
+              </CTABtn>
+            </Visible>
+          </>
+        ),
+      ]}
+      aria-label="Banner Info"
+      icon={
+        <IconFilledInfo
+          overrides={{
+            size: 'iconSize020',
+            stylePreset: 'inkInverse',
+          }}
+        />
+      }
+      onClose={close}
+      title={DEFAULT_TITLE}
+      {...restProps}
+    >
+      {children || DEFAULT_CHILD}
+    </Banner>
   );
 };
 
-const BannerIntentNotice: React.FC<BannerProps> = ({
-  children,
-  ...restProps
-}) => (
-  <BannerWithState
-    icon={<IconFilledWarning overrides={{size: 'iconSize020'}} />}
-    overrides={{
-      stylePreset: 'bannerNotice',
-    }}
-    {...restProps}
-  >
-    {children}
-  </BannerWithState>
-);
-
-const BannerIntentNegative: React.FC<BannerProps> = ({
-  children,
-  ...restProps
-}) => (
-  <BannerWithState
-    icon={
-      <IconFilledError
-        overrides={{
-          size: 'iconSize020',
-        }}
-      />
-    }
-    overrides={{
-      stylePreset: 'bannerNegative',
-    }}
-    {...restProps}
-  >
-    {children}
-  </BannerWithState>
-);
-
-const bannerLink = (
-  <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
-    with link
-  </LinkInline>
-);
-
 export const StoryBannerDefault = () => (
-  <>
-    <StorybookHeading>Banner</StorybookHeading>
-    <StorybookSubHeading>default (Informative intent)</StorybookSubHeading>
-    <BannerWrapper>
-      <BannerWithState aria-label="Banner default">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </BannerWithState>
-    </BannerWrapper>
-    <StorybookSubHeading>
-      with bigger content and two CTA buttons
-    </StorybookSubHeading>
-    <BannerWrapper>
-      <BannerWithState
-        aria-label="Banner with bigger content"
-        actions={[() => <CTABtn />, () => <CTABtn>CTA Button 2</CTABtn>]}
+  <StorybookPage columns={BANNER_GRID_COLS}>
+    <StorybookCase>
+      <StoryBanner aria-label="Banner default">{DEFAULT_CHILD}</StoryBanner>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryBannerDefault.storyName = 'Default';
+
+export const StoryIntents = () => (
+  <StorybookPage columns={BANNER_GRID_COLS}>
+    <StorybookCase title="Notice">
+      <StoryBanner
+        aria-label="Banner notice"
+        icon={<IconFilledWarning overrides={{size: 'iconSize020'}} />}
+        overrides={{stylePreset: 'bannerNotice'}}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation.
-      </BannerWithState>
-    </BannerWrapper>
-  </>
+        {DEFAULT_CHILD}
+      </StoryBanner>
+    </StorybookCase>
+    <StorybookCase title="Negative">
+      <StoryBanner
+        aria-label="Banner negative"
+        icon={<IconFilledError overrides={{size: 'iconSize020'}} />}
+        overrides={{stylePreset: 'bannerNegative'}}
+      >
+        {DEFAULT_CHILD}
+      </StoryBanner>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryBannerDefault.storyName = 'banner-default';
+StoryIntents.storyName = 'Intents';
 
-export const StoryBannerIntents = () => (
-  <>
-    <StorybookHeading>Banner Intent</StorybookHeading>
-    <StorybookSubHeading>Notice</StorybookSubHeading>
-    <BannerWrapper>
-      <BannerIntentNotice aria-label="Notice">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </BannerIntentNotice>
-    </BannerWrapper>
-    <StorybookSubHeading>Negative</StorybookSubHeading>
-    <BannerWrapper>
-      <BannerIntentNegative aria-label="Error">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </BannerIntentNegative>
-    </BannerWrapper>
-  </>
-);
-StoryBannerIntents.storyName = 'banner-intents';
-
-export const StoryBannerVariations = () => (
-  <>
-    <StorybookHeading>Banner variations</StorybookHeading>
-    <StorybookSubHeading>
-      with link and without icon and actions
-    </StorybookSubHeading>
-    <BannerWrapper>
-      <BannerWithState
+export const StoryVariations = () => (
+  <StorybookPage columns={BANNER_GRID_COLS}>
+    <StorybookCase title="With a link, without icon and actions">
+      <StoryBanner
         icon={undefined}
         actions={[]}
         aria-label="Banner with link and without icon and actions"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt {bannerLink} ut labore et dolore magna aliqua.
-      </BannerWithState>
-    </BannerWrapper>
-    <StorybookSubHeading>without title and close button</StorybookSubHeading>
-    <BannerWrapper>
-      <BannerWithState
+        A short line describing the banner information{' '}
+        <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+          with a link
+        </LinkInline>
+        .
+      </StoryBanner>
+    </StorybookCase>
+    <StorybookCase title="Without title and close button, two CTA buttons">
+      <StoryBanner
         title={undefined}
         onClose={undefined}
-        aria-label="Banner without title and close button"
+        aria-label="Banner without title and close button, two CTA buttons"
+        actions={[
+          () => (
+            <CTABtn onClick={() => console.log('CTA button 1')}>
+              CTA button 1
+            </CTABtn>
+          ),
+          () => (
+            <CTABtn onClick={() => console.log('CTA button 2')}>
+              CTA button 2
+            </CTABtn>
+          ),
+        ]}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt {bannerLink} ut labore et dolore magna aliqua.
-      </BannerWithState>
-    </BannerWrapper>
-    <StorybookSubHeading>with title as icon</StorybookSubHeading>
-    <BannerWrapper>
-      <BannerWithState
-        title={
-          <>
-            <IconFilledFacebook overrides={{size: 'iconSize020'}} />
-            <IconFilledInstagram overrides={{size: 'iconSize020'}} />
-          </>
-        }
+        A longer line or two describing the banner information. A longer line or
+        two describing the banner information. A longer line or two describing
+        the banner information.
+      </StoryBanner>
+    </StorybookCase>
+    <StorybookCase title="Title as icon">
+      <StoryBanner
+        title={<IconFilledInfo overrides={{size: 'iconSize020'}} />}
+        icon={undefined}
         onClose={undefined}
-        aria-label="Banner with icon in title"
+        aria-label="Banner with title as icon"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt {bannerLink} ut labore et dolore magna aliqua.
-      </BannerWithState>
-    </BannerWrapper>
-    <StorybookSubHeading>with title as image</StorybookSubHeading>
-    <BannerWrapper>
-      <BannerWithState
+        {DEFAULT_CHILD}
+      </StoryBanner>
+    </StorybookCase>
+    <StorybookCase title="Title as image">
+      <StoryBanner
         title={
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             src="/placeholder-1x1.png"
             alt="Example"
-            width="800px"
+            width="400%"
             height="50px"
           />
         }
+        icon={undefined}
         onClose={undefined}
-        aria-label="Banner with image in title"
+        aria-label="Banner title as image"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt {bannerLink} ut labore et dolore magna aliqua.
-      </BannerWithState>
-    </BannerWrapper>
-  </>
+        {DEFAULT_CHILD}
+      </StoryBanner>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryBannerVariations.storyName = 'banner-variations';
+StoryVariations.storyName = 'Variations';
 
-export const StoryBannerWithOverrides = () => (
-  <>
-    <StorybookHeading>Banner</StorybookHeading>
-    <StorybookSubHeading>with overrides</StorybookSubHeading>
-    <BannerWrapper>
-      <BannerWithState
-        aria-label="Banner with overrides"
-        icon={
-          <IconFilledError
-            overrides={{
-              size: 'iconSize020',
-              stylePreset: 'inkContrast',
-            }}
-          />
-        }
-        actions={[
-          () => <CTABtn overrides={{stylePreset: 'bannerActionsCustom'}} />,
-        ]}
-        layout={{
-          xs: 'vertical',
-          sm: 'horizontal',
-          md: 'vertical',
-        }}
+export const StoryGridLayoutAlignment = () => (
+  <StorybookPage columns={BANNER_GRID_COLS}>
+    <StorybookCase title="Align to GridLayout component">
+      <GridLayout>
+        <GridLayoutItem>
+          <TextBlock stylePreset="inkBase" typographyPreset="utilityBody010">
+            Content above the banner
+          </TextBlock>
+        </GridLayoutItem>
+      </GridLayout>
+
+      <Banner
+        title={DEFAULT_TITLE}
+        aria-label="Banner align to GridLayout component"
+        overrides={{paddingInline: 'space000', marginBlock: 'space020'}}
+      >
+        {DEFAULT_CHILD}
+      </Banner>
+
+      <GridLayout>
+        <GridLayoutItem>
+          <TextBlock stylePreset="inkBase" typographyPreset="utilityBody010">
+            Content below the banner
+          </TextBlock>
+        </GridLayoutItem>
+      </GridLayout>
+    </StorybookCase>
+    <StorybookCase title="Align to GridLayout with offset and logical props overrides">
+      <GridLayout columns="repeat(12, 1fr)" columnGap="space040">
+        <GridLayoutItem column="3 / span 8">
+          <TextBlock stylePreset="inkBase" typographyPreset="utilityBody010">
+            Content above the banner
+          </TextBlock>
+        </GridLayoutItem>
+      </GridLayout>
+
+      <Banner
+        title={DEFAULT_TITLE}
+        aria-label="Banner align to GridLayout component and offset"
         overrides={{
-          stylePreset: 'bannerContainerSolidCustom',
-          spaceInset: 'spaceInset060',
-          minHeight: 'sizing100',
-          grid: {
-            props: {
-              xsMargin: 'space030',
-              mdMargin: 'space040',
-              lgMargin: 'space050',
-            },
-          },
-          cell: {
-            props: {
-              xs: 12,
-              md: 10,
-              mdOffset: 1,
-            },
-          },
-          icon: {
-            spaceInline: 'space060',
-          },
-          content: {
-            spaceInline: 'space050',
-            title: {
-              stylePreset: 'inkContrast',
-              typographyPreset: 'utilityHeading030',
-              spaceStack: 'space050',
-            },
-            message: {
-              stylePreset: 'inkContrast',
-              typographyPreset: 'utilityBody030',
-            },
-          },
-          actions: {
-            closeButton: {
-              stylePreset: {
-                xs: 'bannerCloseCustomVertical',
-                sm: 'bannerCloseCustomHorizontal',
-                md: 'bannerCloseCustomVertical',
-              },
-            },
-          },
+          grid: {props: {xsMargin: 'space000'}},
+          cell: {props: {xs: 8, xsOffset: 2}},
+          paddingInline: 'space000',
+          marginBlock: 'space020',
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </BannerWithState>
-    </BannerWrapper>
-    <StorybookSubHeading>
-      with spaceInset overrides on each breakpoint
-    </StorybookSubHeading>
+        {DEFAULT_CHILD}
+      </Banner>
 
-    <Banner
-      title="Banner title"
-      aria-label="Banner with breakpoint overrides"
-      overrides={{
-        spaceInset: {
-          xs: 'space050 space045 space045 space050',
-          md: 'space040 space070 space070 space050',
-          lg: 'space040',
-        },
-      }}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing eli
-    </Banner>
-  </>
-);
-StoryBannerWithOverrides.storyName = 'banner-with-overrides';
-
-export const StoryBannerWithGridAlignment = () => (
-  <>
-    <StorybookSubHeading>Align to Grid component</StorybookSubHeading>
-    <Grid>
-      <Cell xs="full-width">
-        <TextBlock stylePreset="inkContrast">
-          Content above the banner
-        </TextBlock>
-      </Cell>
-    </Grid>
-    <Banner
-      title="Banner title"
-      aria-label="Banner with content above"
-      overrides={{
-        spaceInset: 'space045 space000 space045 space000',
-      }}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing eli
-    </Banner>
-    <Grid>
-      <Cell xs="full-width">
-        <TextBlock stylePreset="inkContrast">
-          Content below the banner
-        </TextBlock>
-      </Cell>
-    </Grid>
-    <StorybookSubHeading>
-      align to grid with offset & with spaceInset overrides
-    </StorybookSubHeading>
-    <Grid>
-      <Cell xs={8} xsOffset={2}>
-        <TextBlock stylePreset="inkContrast">
-          Content above the banner
-        </TextBlock>
-      </Cell>
-    </Grid>
-    <Banner
-      title="Banner title"
-      aria-label="Banner with content below"
-      overrides={{
-        cell: {props: {xs: 8, xsOffset: 2}},
-        spaceInset: 'space045 space000 space045 space000',
-      }}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing eli
-    </Banner>
-    <Grid>
-      <Cell xs={8} xsOffset={2}>
-        <TextBlock stylePreset="inkContrast">
-          Content below the banner
-        </TextBlock>
-      </Cell>
-    </Grid>
-  </>
+      <GridLayout columns="repeat(12, 1fr)" columnGap="space040">
+        <GridLayoutItem column="3 / span 8">
+          <TextBlock stylePreset="inkBase" typographyPreset="utilityBody010">
+            Content below the banner
+          </TextBlock>
+        </GridLayoutItem>
+      </GridLayout>
+    </StorybookCase>
+  </StorybookPage>
 );
 
-StoryBannerWithGridAlignment.storyName = 'banner-with-grid-alignment';
+StoryGridLayoutAlignment.storyName = 'Grid Layout alignment';
 
-export const StoryBannerWithGridLayoutAlignment = () => (
-  <>
-    <StorybookSubHeading>Align to GridLayout component</StorybookSubHeading>
-    <GridLayout>
-      <GridLayoutItem>
-        <TextBlock stylePreset="inkContrast">
-          Content above the banner
-        </TextBlock>
-      </GridLayoutItem>
-    </GridLayout>
-    <Banner
-      title="Banner align to GridLayout component"
-      aria-label="Banner align to GridLayout component"
-      overrides={{
-        spaceInset: 'space045 space000 space045 space000',
-      }}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing eli
-    </Banner>
-    <GridLayout>
-      <GridLayoutItem>
-        <TextBlock stylePreset="inkContrast">
-          Content below the banner
-        </TextBlock>
-      </GridLayoutItem>
-    </GridLayout>
-    <StorybookSubHeading>
-      align to grid with offset & with spaceInset overrides
-    </StorybookSubHeading>
-    <GridLayout columns="repeat(12, 1fr)" columnGap="space040">
-      <GridLayoutItem column="3 / span 8">
-        <TextBlock stylePreset="inkContrast">
-          Content above the banner
-        </TextBlock>
-      </GridLayoutItem>
-    </GridLayout>
-    <Banner
-      title="Banner align to GridLayout component and offset"
-      aria-label="Banner align to GridLayout component and offset"
-      overrides={{
-        grid: {props: {xsMargin: 'space000'}},
-        cell: {props: {xs: 8, xsOffset: 2}},
-        spaceInset: 'space045 space000 space045 space000',
-      }}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing eli
-    </Banner>
-    <GridLayout columns="repeat(12, 1fr)" columnGap="space040">
-      <GridLayoutItem column="3 / span 8">
-        <TextBlock stylePreset="inkContrast">
-          Content below the banner
-        </TextBlock>
-      </GridLayoutItem>
-    </GridLayout>
-  </>
-);
-
-StoryBannerWithGridLayoutAlignment.storyName =
-  'banner-with-grid-layout-alignment';
-
-export const StoryBannerWithLogicalOverrides = () => (
-  <>
-    <StorybookHeading>Banner</StorybookHeading>
-    <StorybookSubHeading>with logical padding overrides</StorybookSubHeading>
-    <BannerWrapper>
-      <BannerWithState
+export const StoryLogicalProps = () => (
+  <StorybookPage columns={BANNER_GRID_COLS}>
+    <StorybookCase title="Logical padding overrides">
+      <StoryBanner
         aria-label="Banner with logical padding overrides"
         overrides={{
-          paddingBlock: 'spaceInset060',
-          paddingInline: 'spaceInset060',
+          paddingBlock: 'space060',
+          paddingInline: 'space060',
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </BannerWithState>
-    </BannerWrapper>
-    <StorybookSubHeading>
-      with logical padding overrides on each breakpoint
-    </StorybookSubHeading>
-    <Banner
-      title="Banner title"
-      aria-label="Banner with breakpoint and logical padding overrides"
-      overrides={{
-        paddingBlock: {
-          xs: 'space050',
-          lg: 'space040',
-        },
-        paddingInline: {
-          xs: 'space045',
-          md: 'space070',
-          lg: 'space040',
-        },
-        paddingBlockStart: {
-          md: 'space040',
-          lg: 'space030',
-        },
-        paddingBlockEnd: {
-          md: 'space050',
-          lg: 'space030',
-        },
-      }}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing eli
-    </Banner>
-    <StorybookSubHeading>with logical margin overrides</StorybookSubHeading>
-    <StyledDiv>
-      <BannerWithState
-        aria-label="Banner with logical margin overrides"
+        {DEFAULT_CHILD}
+      </StoryBanner>
+    </StorybookCase>
+    <StorybookCase title="Logical padding overrides on each breakpoint">
+      <Banner
+        aria-label="Banner with logical padding overrides on each breakpoint"
+        title={DEFAULT_TITLE}
         overrides={{
-          marginBlock: 'space050',
-          marginInline: 'space050',
+          paddingBlock: {
+            xs: 'space050',
+            lg: 'space040',
+          },
+          paddingInline: {
+            xs: 'space045',
+            md: 'space070',
+            lg: 'space010',
+          },
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </BannerWithState>
-    </StyledDiv>
-  </>
+        {DEFAULT_CHILD}
+      </Banner>
+    </StorybookCase>
+    <StorybookCase title="Logical margin overrides">
+      <MarginOverridesWrapper>
+        <StoryBanner
+          aria-label="Banner with logical margin overrides"
+          overrides={{
+            marginBlock: 'space020',
+            marginInline: 'space020',
+          }}
+        >
+          {DEFAULT_CHILD}
+        </StoryBanner>
+      </MarginOverridesWrapper>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryBannerWithLogicalOverrides.storyName = 'banner-with-logical-overrides';
+StoryLogicalProps.storyName = 'Logical props';
+
+export const StoryOverrides = () => (
+  <StorybookPage columns={BANNER_GRID_COLS}>
+    <StorybookCase title="Overrides">
+      <div style={{maxWidth: 400}}>
+        <StoryBanner
+          aria-label="Banner with overrides"
+          icon={<IconFilledInfo overrides={{size: 'iconSize020'}} />}
+          actions={[() => <CTABtn />]}
+          layout={{
+            xs: 'vertical',
+            sm: 'horizontal',
+            md: 'vertical',
+          }}
+          overrides={{
+            stylePreset: 'bannerContainerSolidCustom',
+            paddingBlock: 'space060',
+            paddingInline: {xs: 'space050', md: 'space000'},
+            minHeight: 'sizing100',
+            grid: {
+              props: {
+                xsMargin: 'space000',
+                mdMargin: 'space000',
+                lgMargin: 'space000',
+              },
+            },
+            cell: {
+              props: {
+                xs: 12,
+                md: 10,
+                mdOffset: 1,
+              },
+            },
+            icon: {
+              paddingBlock: 'space060',
+            },
+            content: {
+              paddingBlock: 'space050',
+              title: {
+                stylePreset: 'inkInverse',
+                typographyPreset: 'utilityHeading030',
+                spaceStack: 'space050',
+              },
+              message: {
+                stylePreset: 'inkInverse',
+                typographyPreset: 'utilityBody030',
+              },
+            },
+            actions: {
+              closeButton: {
+                stylePreset: 'buttonOutlinedInverse',
+              },
+            },
+          }}
+        >
+          {DEFAULT_CHILD}
+        </StoryBanner>
+      </div>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryOverrides.storyName = 'Overrides';
 
 export default {
-  title: 'Components/banner',
-  component: () => 'None',
-  disabledRules: [],
+  title: 'Components/Banner',
+  component: Banner,
+  parameters: {
+    nkDocs: {
+      title: 'Banner',
+      url: 'https://newskit.co.uk/components/banner',
+      description:
+        'A Banner communicates essential information without blocking an experience. They are positioned at the top of the screen, so they are noticeable. They require user action to disappear.',
+    },
+  },
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider

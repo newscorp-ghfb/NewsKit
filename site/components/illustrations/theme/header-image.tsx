@@ -34,7 +34,7 @@ export const HeaderImage: React.FC = () => {
           transform="rotate(14.76 1196.92 584.285)"
           fill="#7264EF"
           stroke="#E4E4E4"
-          stroke-width="1.5724"
+          strokeWidth="1.5724"
         />
         <Circle
           cx="920.831"
@@ -43,7 +43,7 @@ export const HeaderImage: React.FC = () => {
           transform="rotate(14.76 920.831 653.186)"
           fill="#9B87FC"
           stroke="#E4E4E4"
-          stroke-width="1.5724"
+          strokeWidth="1.5724"
         />
         <Circle
           cx="644.01"
@@ -52,7 +52,7 @@ export const HeaderImage: React.FC = () => {
           transform="rotate(14.76 644.01 724.875)"
           fill="#BBAEFF"
           stroke="#E4E4E4"
-          stroke-width="1.5724"
+          strokeWidth="1.5724"
         />
         <g filter={`url(#${filter1})`}>
           <Path
@@ -67,7 +67,7 @@ export const HeaderImage: React.FC = () => {
           transform="rotate(-0.258284 1118.23 376.873)"
           fill="#65BBC4"
           stroke="#E4E4E4"
-          stroke-width="1.5724"
+          strokeWidth="1.5724"
         />
         <Circle
           cx="869.431"
@@ -76,7 +76,7 @@ export const HeaderImage: React.FC = () => {
           transform="rotate(-0.258284 869.431 514.961)"
           fill="#81D2DA"
           stroke="#E4E4E4"
-          stroke-width="1.5724"
+          strokeWidth="1.5724"
         />
         <Circle
           cx="620.643"
@@ -85,7 +85,7 @@ export const HeaderImage: React.FC = () => {
           transform="rotate(-0.258284 620.643 655.933)"
           fill="#A8E0E6"
           stroke="#E4E4E4"
-          stroke-width="1.5724"
+          strokeWidth="1.5724"
         />
         <g filter={`url(#${filter2})`}>
           <Path
@@ -110,7 +110,7 @@ export const HeaderImage: React.FC = () => {
           transform="rotate(-13.8065 995.394 220.237)"
           fill="#577FFB"
           stroke="#E4E4E4"
-          stroke-width="1.5724"
+          strokeWidth="1.5724"
         />
         <Circle
           cx="785.866"
@@ -119,7 +119,7 @@ export const HeaderImage: React.FC = () => {
           transform="rotate(-13.8065 785.866 412.767)"
           fill="#87A4FC"
           stroke="#E4E4E4"
-          stroke-width="1.5724"
+          strokeWidth="1.5724"
         />
         <Circle
           cx="577.024"
@@ -128,7 +128,7 @@ export const HeaderImage: React.FC = () => {
           transform="rotate(-13.8065 577.024 608.098)"
           fill="#AEBFFF"
           stroke="#E4E4E4"
-          stroke-width="1.5724"
+          strokeWidth="1.5724"
         />
       </g>
       <defs>

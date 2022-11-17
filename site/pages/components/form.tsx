@@ -133,8 +133,8 @@ const FormComponent = (layoutProps: LayoutProps) => (
       },
       introduction: (
         <>
-          The form component allows users to enter and edit information into a
-          UI using form controls; based on{' '}
+          Forms let users enter and edit information using form controls. Based
+          on{' '}
           <Link href="https://react-hook-form.com/" target="_blank">
             React Hook Form.
           </Link>
@@ -146,10 +146,11 @@ const FormComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.19.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/form',
+      storybookId: 'components-form--story-form-with-submit-validation',
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Block component, its variations, and configuration options.',
+        'This demo lets you preview the form component, its variations and configuration options.',
       playground: {
         componentName: 'Form',
         component: state => {
@@ -222,23 +223,23 @@ const FormComponent = (layoutProps: LayoutProps) => (
           rows: [
             {
               name: 'Form provider',
-              description: 'Responsible for validating the context of a form',
+              description: 'Validates the context of a form',
               component: ['React Hook Form', 'Form HTML element'],
               optional: undefined,
             },
             {
               name: 'Form input',
               description:
-                'FormInput components require passing in an object of rules to validate the Form component',
+                'Needs to be passed in an object of rules to validate the form',
               component: 'React component',
               optional: undefined,
             },
           ],
         },
         {
-          title: 'FormInput components',
+          title: 'Form input components',
           summary:
-            'These are the following FormInput components available for use with the form:',
+            'These are the form input components available for use with the form:',
           media: getIllustrationComponent(
             'components/form/anatomy/anatomy-forminput-components',
           ),
@@ -252,19 +253,19 @@ const FormComponent = (layoutProps: LayoutProps) => (
             {
               name: 'FormInputAssistiveText',
               description: 'Based on the assistive text component',
-              component: 'Text Block',
+              component: 'Text block',
               optional: true,
             },
             {
               name: 'FormInputTextArea',
               description: 'Based on the text area component',
-              component: 'Text Area',
+              component: 'Text area',
               optional: true,
             },
             {
               name: 'FormInputTextField',
               description: 'Based on the text field component',
-              component: 'Text Field',
+              component: 'Text field',
               optional: true,
             },
             {
@@ -282,7 +283,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
             {
               name: 'FormInputRadio Button',
               description: 'Based on the radio button component',
-              component: 'Radio Button',
+              component: 'Radio button',
               optional: true,
             },
           ],
@@ -292,7 +293,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
     }}
     options={{
       introduction:
-        'FormInput components have options that can be used to provide an appropriate experience for different use cases.',
+        'Form input components have options for different use cases:',
       cards: [
         {
           title: 'FormInputLabel',
@@ -311,8 +312,8 @@ const FormComponent = (layoutProps: LayoutProps) => (
                   marginBlockStart: 'space050',
                 }}
               >
-                Labels should remain readable by screen readers by setting the
-                aria-label attribute to the label text&lsquo;s value.
+                Ensure screen readers can read labels by setting the aria-label
+                attribute to the label text’s value.
               </InlineMessage>
             </>
           ),
@@ -347,9 +348,11 @@ const FormComponent = (layoutProps: LayoutProps) => (
             <>
               When wrapped inside the <InlineCode>FormInput</InlineCode> the
               state can be passed down to the{' '}
-              <InlineCode>FormInputTextArea</InlineCode> component, depending on
-              if validation is a success or error state. Text Area
-              documentation.
+              <InlineCode>FormInputTextField</InlineCode> component, depending
+              on if validation is a success or error state.{' '}
+              <Link href="/components/text-area/#component-api">
+                Text area documentation.
+              </Link>
             </>
           ),
           media: getIllustrationComponent('components/form/options/text-area'),
@@ -363,7 +366,7 @@ const FormComponent = (layoutProps: LayoutProps) => (
               <InlineCode>FormInputTextField</InlineCode> component, depending
               on if validation is a success or error state.{' '}
               <Link href="/components/text-field/#component-api">
-                Text Field documentation.
+                Text field documentation.
               </Link>
             </>
           ),
@@ -421,11 +424,13 @@ const FormComponent = (layoutProps: LayoutProps) => (
           title: 'Fieldset',
           description: (
             <>
-              Selection controls (inputs), such as the FormInputradioButton, and
-              FormInputCheckbox, can be grouped together with other selection
-              controls, labels, and assistive text together in a fieldset. The
-              fieldset has a caption that gives a title attributed to the
-              elements that appear in the fieldset, called a legend.{' '}
+              Selection controls (inputs), such as the{' '}
+              <InlineCode>FormInputRadioButton</InlineCode>, and
+              <InlineCode>FormInputCheckbox</InlineCode>, can be grouped
+              together with other selection controls, labels and assistive text
+              together in a fieldset. The fieldset has a caption that gives a
+              title attributed to the elements that appear in the fieldset,
+              called a legend.{' '}
               <Link href="/components/fieldset/">Fieldset documentation.</Link>
             </>
           ),
@@ -438,9 +443,9 @@ const FormComponent = (layoutProps: LayoutProps) => (
       title: 'Form structure',
       introduction: (
         <>
-          The below diagram outlines how FormInput components can be used inside
-          a <Link href="/components/fieldset/">fieldset</Link>, which can then
-          be used to create a full form:
+          This diagram shows how to use form input components inside a{' '}
+          <Link href="/components/fieldset/">fieldset</Link>, which you can then
+          use to create a full form:
         </>
       ),
       media: getIllustrationComponent('components/form/form-structure'),
@@ -448,27 +453,24 @@ const FormComponent = (layoutProps: LayoutProps) => (
     behaviors={{
       introduction: (
         <>
-          The following guidance describes how the FormInput components, and the
-          form behave.
+          Here’s how the form input components behave:
           <br />
           <br />
-          <ContentText title="FormInput validation" titleAs="span">
-            FormInput validation rules can be defined for onSubmit or onBlur,
-            for both the initial validation and re-validation using the form.
-            <br />
-            <br />
-            For more information about validation rules, refer to{' '}
+          <ContentText title="Form input validation" titleAs="span">
+            Define FormInput validation rules for onSubmit or onBlur, for both
+            the initial validation and re-validation using the form. Learn more
+            about validation rules with{' '}
             <Link
               href="https://react-hook-form.com/get-started/#Applyvalidation"
               target="_blank"
             >
-              React Hook Form, apply validation.
+              React Hook Form.
             </Link>
             <br />
             <br />
-            Each FormInput component (ie FormInputTextField) needs to be
-            individually wrapped in the form component in order for validation
-            to work eg:
+            For validation to work, you need to individually wrap each form
+            input component (e.g. FormInputTextField) in the form component. For
+            example:
           </ContentText>
           <CodeBlock>
             {`<Form onSubmit={onSubmit}>
@@ -497,16 +499,15 @@ const FormComponent = (layoutProps: LayoutProps) => (
           <br />
           <br />
           <ContentText title="Form yup schema" titleAs="span">
-            The form component supports schema validation. To use an external
-            validation library, for example, <InlineCode>Yup</InlineCode>, you
-            can pass <InlineCode>yupResolver(schema)</InlineCode>
-            to the resolver prop. For more information about schema validation
-            with React Hook Form, refer to{' '}
+            The form supports schema validation with external validation
+            libraries. To use <InlineCode>Yup</InlineCode>, for example, pass{' '}
+            <InlineCode>yupResolver(schema)</InlineCode>
+            to the resolver prop. Learn more about schema validation with{' '}
             <Link
               href="https://react-hook-form.com/get-started/#SchemaValidation"
               target="_blank"
             >
-              React Hook Form, schema validation.
+              React Hook Form.
             </Link>
           </ContentText>
           <CodeBlock>
@@ -539,15 +540,15 @@ const schema = yup.object().shape({
       ),
       cards: [
         {
-          title: 'Assistive Text Min-Height',
+          title: 'Assistive text minimum height',
           description:
-            'A minimum height can be applied to the assistive text container. This is used to prevent the layout shift in the page when the assistive text shows and hides.',
+            'Apply a minimum height to the assistive text container to stop the layout of the page shifting when the assistive text shows and hides.',
           media: getIllustrationComponent(
             'components/form/behaviours/assistive-text-min-height',
           ),
         },
         {
-          title: 'Assistive Text overflow wrap',
+          title: 'Assistive text overflow wrap',
           description:
             'When the assistive text is too long for the available horizontal space, it wraps to form another line.',
           media: getIllustrationComponent(
@@ -559,41 +560,37 @@ const schema = yup.object().shape({
     usage={{
       introduction: (
         <>
-          The following guidance describes how and when to appropriately use the
-          form component.
+          Here’s how and when to use the form:
           <br />
           <br />
-          <Link href="/patterns/forms/overview/">
-            For best practices to follow when creating a form, please refer to
-            the Forms patterns guidance.
-          </Link>
+          For best practices to follow when creating a form, see the{' '}
+          <Link href="/patterns/forms/overview/">forms patterns guidance.</Link>
         </>
       ),
       cards: [
         {
           description:
-            'Clear and simple forms help prevent confusion for users, and incorrect data submitted.',
+            'Clear, simple forms help prevent users from getting confused and submitting wrong information.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-1'),
         },
         {
           description:
-            'Avoid unnecessarily long forms. Question each FormInput and eliminate unnecessary inputs by asking whether you could obtain the information in another way, or at a later, more convenient time for users.',
+            'Ask yourself if each form input is necessary or whether you can get the information in another way, or at a more convenient time.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/form/usage/dont-1'),
         },
         {
           description:
-            'Ensure each FormInput component that needs validation is wrapped in a form.',
+            'Ensure each form input component that needs validation is wrapped in a form.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-2'),
         },
         {
           description: (
             <>
-              Avoid prematurely validating a FormInput e.g.avoid setting{' '}
-              <Link href="/components/text-field/">text fields</Link> to invalid
-              before the user has finished typing.
+              Avoid prematurely validating a form input (e.g. avoid setting text
+              fields to invalid before the user has finished typing).
             </>
           ),
           kind: UsageKind.DONT,
@@ -601,49 +598,48 @@ const schema = yup.object().shape({
         },
         {
           description:
-            'Where possible, use onBlur validation (when the user clicks out of a FormInput, it is validated). This way is an improved user experience and guides the user through the form completion.',
+            'Where possible, validate using onBlur (i.e. when the user clicks out of a FormInput, it’s validated). Validating as the user goes along, rather than when they submit the whole form, improves the user experience and helps users complete forms.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-3'),
         },
         {
           description:
-            'Write error text that communicates a solution. Error text should be written in no more than a few clear, concise and complete sentences.',
+            'Error text should be clear, concise and written in complete sentences - and it should tell the user how to resolve the issue.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-4'),
         },
         {
           description:
-            'Labels and assistive text should be in sentence case. This helps with scannability and legibility.',
+            'Write labels and assistive text in sentence case to help with scannability and legibility.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-5'),
         },
         {
-          description:
-            "Labels shouldn't be truncated or wrap over two or more lines. Keep it short, clear, and fully visible.",
+          description: 'Keep labels short, clear and fully visible.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/form/usage/dont-3'),
         },
         {
           description:
-            'Labels and assistive text should be in close proximity to FormInput components to provide context for users.',
+            'Labels and assistive text should be in close proximity to their form input components to provide context for users.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-6'),
         },
         {
           description:
-            'Assistive text is the preferred way to communicate information relating to instructions on completing an input or requirements.',
+            'Assistive text is the best way to communicate information relating to instructions on completing an input or requirements.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-7'),
         },
         {
           description:
-            'Swap assistive text with error text, or character count as required. Once the input is valid then the assistive text or character count is then shown again.',
+            'Swap assistive text with error text or character count as required. Once the input is valid, show the assistive text or character count again.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-8'),
         },
         {
           description:
-            "FormInput components don't need to be direct children of the form component and can be nested inside other elements.",
+            "Form input components don't need to be direct children of the form component and can be nested inside other elements.",
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-9'),
         },
@@ -681,14 +677,14 @@ const schema = yup.object().shape({
             attribute: 'aria-required',
             value: 'true, undefined',
             description:
-              'This attribute informs the user that a FormInput component is required. When set to true, screen readers notify users of FormInputs that are required.',
+              'Informs the user that a form input component is required. When set to true, screen readers notify users of FormInputs that are required',
           },
           {
             element: 'invalid',
             attribute: 'aria-invalid',
-            value: "'true', 'false'",
+            value: 'true, false',
             description:
-              'This attribute informs the user when there is an error. By default it’s set to false. Values include true, spelling, and grammar. Screen readers will alert users when the FormInput component is set to any value other than false.',
+              'Informs the user when there’s an error. Set to false by default. Values include true, spelling, and grammar. Screen readers will alert users when the form input component is set to any value other than false',
           },
         ],
       },
@@ -698,13 +694,22 @@ const schema = yup.object().shape({
         {
           title: 'Form',
           summary:
-            'The Form component has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The form has a range of props to define the experience in different use cases.',
           propsRows: [
             {
               name: 'children',
               type: `Exclude<React.ReactNode, 'undefined'>`,
-              description:
-                'The Form requires to have at least a FormInput with a validation object and rules to validate each field. FormInput components should also be provided and wrapped inside FormInput such as FormInputTextfield,  FormInputRadioButton etc.',
+              description: (
+                <>
+                  The form requires at least a{' '}
+                  <InlineCode>FormInput</InlineCode> with a validation object
+                  and rules to validate each field. Provide{' '}
+                  <InlineCode>FormInput</InlineCode> components and wrap them
+                  inside a <InlineCode>FormInput</InlineCode> (e.g.{' '}
+                  <InlineCode>FormInputTextField</InlineCode>,{' '}
+                  <InlineCode>FormInputRadioButton</InlineCode>)
+                </>
+              ),
               required: true,
             },
             {
@@ -712,7 +717,7 @@ const schema = yup.object().shape({
               type: 'SubmitHandler',
               description: (
                 <>
-                  Function called when the Form is submitted without validation
+                  Function called when the form is submitted without validation
                   errors. The data parameter consists of an object where the
                   input field names are associated with the input values.
                   <br />
@@ -721,16 +726,17 @@ const schema = yup.object().shape({
                     href="https://react-hook-form.com/ts#SubmitHandler"
                     target="_blank"
                   >
-                    For more information refer to the React Hook Form’s
-                    documentation.
+                    Learn more about form validation at React Hook Form
                   </Link>
-                  When submitting the Form by clicking on a{' '}
-                  <Link href="/components/button/">Button</Link>, is suggested
-                  to keep the whole logic in the{' '}
-                  <InlineCode>onSubmit</InlineCode> event, rather than split it
-                  in both an <InlineCode>onClick</InlineCode> and{' '}
-                  <InlineCode>onSubmit</InlineCode> event, for avoiding issues
-                  at runtime.
+                  <br />
+                  <br />
+                  If users submit the form by clicking a{' '}
+                  <Link href="/components/button/">Button</Link>, you should
+                  keep the whole logic in the <InlineCode>onSubmit</InlineCode>{' '}
+                  event, rather than splitting it into both an{' '}
+                  <InlineCode>onClick</InlineCode> and{' '}
+                  <InlineCode>onSubmit</InlineCode> event, in order to avoid
+                  issues at runtime.
                 </>
               ),
               required: undefined,
@@ -742,8 +748,8 @@ const schema = yup.object().shape({
               description: (
                 <>
                   Allows you to configure when input fields are validated.
-                  Currently <InlineCode>onSubmit</InlineCode> and{' '}
-                  <InlineCode>onBlur</InlineCode> are supported.
+                  Currently supports <InlineCode>onSubmit</InlineCode> and{' '}
+                  <InlineCode>onBlur</InlineCode>.
                 </>
               ),
               required: undefined,
@@ -754,9 +760,9 @@ const schema = yup.object().shape({
               default: 'onBlur',
               description: (
                 <>
-                  Allows you to configure when input fields getting revalidated.
-                  Currently <InlineCode>onSubmit</InlineCode> and{' '}
-                  <InlineCode>onBlur</InlineCode> are supported.
+                  Allows you to configure when input fields are revalidated.
+                  Currently supports <InlineCode>onSubmit</InlineCode> and{' '}
+                  <InlineCode>onBlur</InlineCode>.
                 </>
               ),
               required: undefined,
@@ -767,7 +773,7 @@ const schema = yup.object().shape({
               description: (
                 <>
                   The defaultValue for an input is used as the initial value
-                  when a component is first rendered, before a user interacts
+                  when a component is first rendered, before the user interacts
                   with it. The <InlineCode>defaultValues</InlineCode> object
                   uses the form element names as keys.
                 </>
@@ -778,58 +784,91 @@ const schema = yup.object().shape({
               name: 'resolver',
               type: 'Resolver<Record<string, string>, object>',
               description:
-                'The resolver will validate your input data against the schema and return with either errors or a valid result.',
+                'Validates your input data against the schema and return with either errors or a valid result.',
               required: undefined,
             },
             ...commonLogicalRows(),
           ],
         },
         {
-          title: 'FormInput',
-          summary: `The FormInput component has a range of props that can be used to define an appropriate experience for different use cases.`,
+          title: 'Form input',
+          summary: `The form input has a range of props to define the experience in different use cases.`,
           propsRows: [
             {
               name: 'name',
               type: 'string',
               description:
-                'If provided, defines name of the input element, used when submitting an HTML form.',
+                'If provided, defines the name of the input element. Use when submitting an HTML form',
             },
             {
               name: 'size',
               type: `'small' | 'medium' | 'large'`,
               default: 'medium',
-              description:
-                'If provided, defines the size of the FormInput component.',
+              description: (
+                <>
+                  If provided, defines the size of the{' '}
+                  <InlineCode>FormInput</InlineCode> component
+                </>
+              ),
             },
             {
               name: 'rules',
               type: 'Record< string,string | object>',
               description:
-                'Validation object with the rules required to validate your form.',
+                'Validation object with the rules required to validate your form',
             },
             {
               name: 'children',
               type: 'Type JSX.Element  | JSX.Element []',
-              description:
-                'FormInput requires children to be wrapped between them. These children will be part of the FormInput components such a FormInputTextfield,  FormInputRadioButton etc.',
+              description: (
+                <>
+                  <InlineCode>FormInput</InlineCode> requires children to be
+                  wrapped between them. These children will be part of the
+                  <InlineCode>FormInput</InlineCode> components (e.g.{' '}
+                  <InlineCode>FormInputTextField</InlineCode>,{' '}
+                  <InlineCode>FormInputRadioButton</InlineCode>)
+                </>
+              ),
             },
             {
               name: 'id',
               type: 'string',
-              description:
-                'If provided, the id can be used to reference this element, for example from an aria-describedby attribute.',
+              description: (
+                <>
+                  If provided, the id can be used to reference this element
+                  (e.g. from an
+                  <InlineCode>aria-describedby</InlineCode> attribute)
+                </>
+              ),
             },
             {
               name: 'state',
               type: 'Type =  ‘disabled’ | ‘valid’ | ‘invalid’',
-              description:
-                'The state prop is optional and can be passed to FormInput to force everything wrapped inside FormInput into a certain state such as ‘disabled’ | ‘valid’ | ‘invalid’. If nothing is provided the state sets itself depending on the FormInput rules and whether the users input is invalid or not.',
+              description: (
+                <>
+                  The state prop is optional and can be passed to{' '}
+                  <InlineCode>FormInput</InlineCode> to force everything wrapped
+                  inside <InlineCode>FormInput</InlineCode> into a certain state
+                  such as <InlineCode>‘disabled’</InlineCode>{' '}
+                  <InlineCode>‘valid’</InlineCode>{' '}
+                  <InlineCode>‘invalid’</InlineCode> If nothing is provided, the
+                  state sets itself depending on the{' '}
+                  <InlineCode>FormInput</InlineCode> rules and whether the
+                  user’s input is invalid or not
+                </>
+              ),
             },
           ],
         },
         {
-          title: 'FormInputAssistiveText',
-          summary: `The FormInputAssistiveText component has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the Form component.`,
+          title: 'Form input assistive text',
+          summary: (
+            <>
+              The <InlineCode>FormInputAssistiveText</InlineCode> component has
+              a range of props to define the experience in different use cases.
+              Use within the form component.`,
+            </>
+          ),
           propsRows: [
             {
               name: 'size',
@@ -847,25 +886,23 @@ const schema = yup.object().shape({
               name: 'children',
               type: 'React.ReactNode',
               description:
-                'The Form requires to have at least a Text Field and a submit Button.',
+                'The form requires at least a text field and a submit button',
             },
             {
               name: 'startEnhancer',
               type: 'React.ReactNode',
-              description:
-                'An Icon can be added to the start of the Assistive Text',
+              description: 'Adds an icon to the start of the assistive text',
             },
             {
               name: 'endEnhancer',
               type: 'React.ReactNode',
-              description:
-                'An Icon can be added to the end of the Assistive Text',
+              description: 'Adds an icon to the end of the assistive text',
             },
             {
               name: 'validationIcon',
               type: 'MQ<boolean>',
               description:
-                'If true, adds a validation icon next to the assistive text label.',
+                'If true, adds a validation icon next to the assistive text label',
             },
             ...commonLogicalRows(),
           ],
@@ -874,15 +911,25 @@ const schema = yup.object().shape({
               attribute: 'assistiveText.minHeight',
               type: 'MQ<string>',
               default: 'space030',
-              description:
-                'If provided, this overrides the minHeight of the FormInputAssistiveText.',
+              description: (
+                <>
+                  If provided, this overrides the{' '}
+                  <InlineCode>minHeight</InlineCode> of the{' '}
+                  <InlineCode>FormInputAssistiveText</InlineCode>
+                </>
+              ),
             },
             {
               attribute: 'assistiveText.stylePreset',
               type: 'MQ<string>',
               default: 'assistiveText',
-              description:
-                'If provided, overrides the stylePreset of the FormInputAssistiveText.',
+              description: (
+                <>
+                  If provided, this overrides the{' '}
+                  <InlineCode>stylePreset</InlineCode> of the{' '}
+                  <InlineCode>FormInputAssistiveText</InlineCode>
+                </>
+              ),
             },
             {
               attribute: 'assistiveText.typographyPreset',
@@ -892,8 +939,13 @@ const schema = yup.object().shape({
                 'Medium = utilityBody020',
                 'Large = utilityBody030',
               ],
-              description:
-                'If provided, overrides the stylePreset of the FormInputAssistiveText.',
+              description: (
+                <>
+                  If provided, this overrides the{' '}
+                  <InlineCode>stylePreset</InlineCode> of the{' '}
+                  <InlineCode>FormInputAssistiveText</InlineCode>
+                </>
+              ),
             },
             {
               attribute: 'assistiveText.startEnhancer.iconSize',
@@ -951,27 +1003,33 @@ const schema = yup.object().shape({
                   marginBlockStart: 'space070',
                 }}
               >
-                Props and overrides for the Assistive Text component are the
-                same as the FormInputAssistiveText component, as listed above.
+                Props and overrides for the assistive text component are the
+                same as the form input assistive text component, as listed
+                above.
               </InlineMessage>
             </>
           ),
         },
         {
-          title: 'FormInputLabel',
-          summary:
-            'The FormInputLabel component has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the Form component.',
+          title: 'Form input label',
+          summary: (
+            <>
+              The <InlineCode>FormInputLabel</InlineCode> has a range of props
+              to define the experience in different use cases. Use within the
+              form.
+            </>
+          ),
           propsRows: [
             {
               name: 'size',
               type: `'small' | 'medium' | 'large'`,
               default: 'medium',
-              description: 'Defines the size of the label.',
+              description: 'Defines the size of the label',
             },
             {
               name: 'state',
               type: 'Type = ‘disabled’ | ‘valid’ | ‘invalid’',
-              description: 'If provided you can force state onto the Label',
+              description: 'If provided, forces state onto the label',
             },
             {
               name: 'children',
@@ -986,8 +1044,13 @@ const schema = yup.object().shape({
               attribute: 'label.stylePreset',
               type: 'MQ<string>',
               default: 'label',
-              description:
-                'If provided, overrides the stylePreset of the FormInputLabel.',
+              description: (
+                <>
+                  If provided, overrides the{' '}
+                  <InlineCode>stylePreset</InlineCode> of the{' '}
+                  <InlineCode>FormInputLabel</InlineCode>
+                </>
+              ),
             },
             {
               attribute: 'label.typographyPreset',
@@ -997,22 +1060,35 @@ const schema = yup.object().shape({
                 'Medium = utilityLabel020',
                 'Large = utilityLabel030',
               ],
-              description:
-                'If provided, overrides the typographyPreset of the FormInputLabel.',
+              description: (
+                <>
+                  If provided, overrides the{' '}
+                  <InlineCode>typographyPreset</InlineCode> of the{' '}
+                  <InlineCode>FormInputLabel</InlineCode>
+                </>
+              ),
             },
             {
               attribute: 'label.spaceInline',
               type: 'MQ<string>',
               default: 'space010',
-              description:
-                'If provided, this overrides the inline space of the FormInputLabel.',
+              description: (
+                <>
+                  If provided, overrides the inline space of the{' '}
+                  <InlineCode>FormInputLabel</InlineCode>
+                </>
+              ),
             },
             {
               attribute: 'label.spaceStack',
               type: 'MQ<string>',
               default: 'space040',
-              description:
-                'If provided, this overrides the stack space applied to the FormInputLabel.',
+              description: (
+                <>
+                  If provided, overrides the stack space applied to the{' '}
+                  <InlineCode>FormInputLabel</InlineCode>
+                </>
+              ),
             },
           ],
           propsFooter: (
@@ -1020,25 +1096,18 @@ const schema = yup.object().shape({
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="FormInputLabel Props and overrides"
+                aria-label="FormInput component"
                 title="Note"
                 overrides={{
                   marginBlockStart: 'space070',
                   marginBlockEnd: 'space050',
                 }}
               >
-                Props and overrides for the Label component are the same as the
-                FormInputLabel component, as listed above.
-              </InlineMessage>
-              <InlineMessage
-                icon={infoIcon}
-                role="region"
-                aria-label="FormInput component"
-                title="Note"
-              >
                 <>
-                  Please refer to the following FormInput component pages for
-                  details of props & overrides:
+                  Props and overrides for the label component are the same as
+                  the <InlineCode />
+                  FormInputLabel component, as listed above. For details of
+                  props and overrides:
                   <UnorderedList
                     markerAlign="start"
                     overrides={{

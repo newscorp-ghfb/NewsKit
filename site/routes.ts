@@ -49,7 +49,7 @@ export const routes = [
             page: true,
             id: '/getting-started/design/design-overview',
             description:
-              'Everything you need to know about using NewsKit to design digital products.',
+              'Everything you need to know about designing digital products with NewsKit.',
             illustration: 'guides/design-overview/hero',
             cardTitle: 'Design Overview',
           },
@@ -64,18 +64,18 @@ export const routes = [
             page: true,
             id: '/getting-started/code/engineering-overview',
             description:
-              'Everything you need to know about using NewsKit’s library of React web components.',
+              'Everything you need to know about NewsKit’s library of React web components.',
             illustration: 'guides/engineering-overview/hero',
-            cardTitle: 'Engineering Overview',
+            cardTitle: 'Engineering overview',
           },
           {
             title: 'Quickstart',
             page: true,
             id: '/getting-started/code/engineering-quickstart',
             description:
-              'Guides on how to get started building a web application with NewsKit.',
+              'Guides to start building web applications with NewsKit.',
             illustration: 'guides/engineering-quickstart/hero',
-            cardTitle: 'Engineering Quickstart Guide',
+            cardTitle: 'Engineering quickstart',
           },
           {
             title: 'Grid Layout step-by-step',
@@ -611,7 +611,8 @@ export const routes = [
             title: 'Link',
             page: true,
             id: '/components/link',
-            description: 'Allows user to jump to a new location when clicked.',
+            description:
+              'Links allow users to navigate to a new location or to additional information.',
             illustration: 'components/url-illustration',
           },
           {

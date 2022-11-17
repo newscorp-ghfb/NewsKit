@@ -34,10 +34,9 @@ const Container = styled.div<Pick<LayoutProps, 'hideSidebar'>>`
   width: 100%;
   display: flex;
   flex-direction: column;
-  ${getSpacingCssFromTheme('paddingTop', 'space050')};
+  ${getSpacingCssFromTheme('paddingTop', {xs: 'space050', lg: 'space100'})};
   ${getMediaQueryFromTheme('lg')} {
     padding-left: ${({hideSidebar}) => !hideSidebar && '276px'};
-    ${getSpacingCssFromTheme('paddingTop', 'space100')};
   }
 `;
 

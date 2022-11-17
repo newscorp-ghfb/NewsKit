@@ -517,7 +517,7 @@ jobs:
           <<: *slack_notify
 
   test_unit_docs:
-    executor: node-large
+    executor: node-xlarge
     steps:
       - checkout
       - attach_workspace:
@@ -1277,6 +1277,7 @@ workflows:
           requires:
             - build_docs_pr_with_no_base_url
             - install_cypress
+            - build_storybook
       - no_visual_changes:
           type: approval
           requires:
@@ -1518,6 +1519,7 @@ workflows:
           requires:
             - build_docs_dev
             - install_cypress
+            - build_storybook
       - test_newskit_in_nextjs_app:
           context: ncu-product-platforms-context
           requires:

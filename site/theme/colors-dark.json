@@ -70,7 +70,7 @@
     "illustrationSubtle010": "{{colors.blue080}}",
     "illustrationShadow010": "{{colors.blackTint060}}",
     "illustrationGradient010": "linear-gradient(0deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1) 100%)",
-    "illustrationGradient020": "linear-gradient(0deg, rgba(22,39,64,0.00) 0%, rgba(22,39,64,1) 100%",
+    "illustrationGradient020": "linear-gradient(0deg, rgba(22,39,64,0.00) 0%, rgba(22,39,64,1) 100%)",
     "illustrationBackground010": "{{colors.darkBlue095}}",
     "illustrationBackground020": "{{colors.darkBlue095}}",
     "illustrationBorder010": "{{colors.blue070}}",

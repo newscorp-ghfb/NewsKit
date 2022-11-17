@@ -35,7 +35,7 @@ const infoIcon = (
 const StructuredListComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'StructuredList',
+      title: 'Structured List',
       description: '',
     }}
     layoutProps={layoutProps}

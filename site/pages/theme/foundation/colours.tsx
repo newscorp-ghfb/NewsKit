@@ -51,16 +51,16 @@ const CUSTOM_ICONS = [
   {
     icon: IconFilledAAA,
     label:
-      'Normal sized text on this colour will have Contrast ratio of 4.5:1 or over',
+      'Regular sized text on this colour will have a contrast ratio of 4.5:1 or over',
   },
   {
     icon: IconFilledAA,
     label:
-      'Normal sized text on this colour will have Contrast ratio of 3:1 or over',
+      'Regular sized text on this colour will have a contrast ratio of 3:1 or over',
   },
   {
     icon: IconFilledError,
-    label: 'Normal sized text on this colour will be inaccessible',
+    label: 'Regular sized text on this colour will be inaccessible',
   },
 ];
 
@@ -70,7 +70,7 @@ const coloursTable = [
   {
     title: 'Ink',
     summary:
-      'Ink colours are applied to typography and iconography. There are several variations available, each associated with a specific purpose within the design system.',
+      'Apply ink colours to typography and iconography. There are several variations, each with a specific purpose:',
     tabs: [
       {
         header: 'Common',
@@ -83,7 +83,7 @@ const coloursTable = [
           'inkInverse',
         ]),
         description:
-          '‘Common’ Ink tokens are used to style most generic text and icons within a design such as headlines, subheadlines & body text.',
+          'Use ‘common’ ink tokens to style most generic text and icons, including headlines, subheadlines and body text.',
       },
       {
         header: 'Status',
@@ -95,7 +95,7 @@ const coloursTable = [
           'inkInformative',
         ]),
         description:
-          '‘Status‘ Ink tokens are only used when providing user feedback. This can include error & success messages, feedback notifications etc.',
+          'Use ‘status‘ ink tokens to provide user feedback, including error and success messages and feedback notifications.',
       },
       {
         header: 'Brand',
@@ -104,15 +104,14 @@ const coloursTable = [
           'inkBrand010',
           'inkBrand020',
         ]),
-        description:
-          '‘Brand‘ Ink tokens are used where brand expression is required.',
+        description: 'Use ‘brand‘ ink tokens to express your brand.',
       },
     ],
   },
   {
     title: 'Interface',
     summary:
-      'Interface colours are applied to fills and borders on often static background UI elements including page backgrounds and dividers.',
+      'Apply interface colours to fills and borders on often-static background UI elements, including page backgrounds and dividers.',
     tabs: [
       {
         header: 'Common',
@@ -127,7 +126,7 @@ const coloursTable = [
           'interface060',
         ]),
         description:
-          '‘Common’ interface tokens are used to style most structural, often static, component layers within a design such as card & page backgrounds.',
+          'Use ‘common’ interface tokens to style most structural, often static, component layers within a design, including card and page backgrounds.',
       },
       {
         header: 'Status',
@@ -147,7 +146,7 @@ const coloursTable = [
           'interfaceNeutral020',
         ]),
         description:
-          '‘Status‘ interface tokens are used for background layers when providing user feedback. This can include error & success components such as banners and toasts.',
+          'Use ‘status‘ interface tokens for background layers when providing user feedback, including error and success components such as banners and toasts.',
       },
       {
         header: 'Brand',
@@ -264,7 +263,7 @@ const Colours = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Colours',
       description:
-        'Colour is key to expressing brand and identity but it also plays an important role in conveying meaning to a user. ',
+        'Colours help express brand identity and convey meaning to users.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -273,7 +272,7 @@ const Colours = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'theme/colours/hero',
       },
-      introduction: `Colour is key to expressing brand and identity but it also plays an important role in conveying meaning to a user. `,
+      introduction: `Colours help express brand identity and convey meaning to users.`,
     }}
   >
     <ComponentPageCell>
@@ -284,16 +283,14 @@ const Colours = (layoutProps: LayoutProps) => (
           headline="Overview"
           description={
             <>
-              The NewsKit design system enables brands to utilise bespoke colour
-              palettes appropriately and systematically while encouraging
+              NewsKit lets you use bespoke colour palettes while encouraging
               accessibility.
               <br />
               <br />
-              Colours are applied to NewsKit components through well-defined
-              rules at both the theme and component level. These rules help to
-              establish a visual tone, indicate interaction and communicate
-              meaning. Importantly, it also allows our brands to maintain their
-              own unique identities.
+              The design system applies colours through well-defined rules at
+              both the theme and component level. These rules help establish a
+              visual tone, indicate interaction and communicate meaning - while
+              maintaining your brand identity.
             </>
           }
           showSeparator
@@ -305,13 +302,24 @@ const Colours = (layoutProps: LayoutProps) => (
           id="palettecolours"
           toc="Palette colours"
           headline="Palette colours"
-          description="Palette colours represent all of a brand’s colours. They are linked to contextual colour tokens where specific meaning (context) is applied. As such, careful consideration should be given if choosing to apply a palette colour directly applied to an interface rather than a contextual colour."
+          description={
+            <>
+              Palette colours represent your brand’s colours.
+              <br />
+              <br />
+              They’re linked to contextual colour tokens, which apply specific
+              meaning (context).
+              <br />
+              <br />
+              Consider whether a palette colour is best applied directly to an
+              interface or as a contextual colour.
+            </>
+          }
         />
 
         <ContentSecondary
-          headline="Understanding the swatches"
-          description="Utilise the swatches below to determine the accessibility of the
-        palette colour in contrast to the background colour of this page"
+          headline="Swatches"
+          description="Use the swatches below to determine the accessibility of the palette colour in contrast to the background colour of this page:"
           childrenColSpan={ContentColSpan.TEXT}
         >
           {CUSTOM_ICONS.map(({icon, label}) => (
@@ -337,8 +345,7 @@ const Colours = (layoutProps: LayoutProps) => (
 
         <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage role="region" title="" aria-label="Palettecolours">
-            Normal and large size text is defined by the WCAG AA standards as
-            the the following: <br />
+            The WCAG AA standards define normal and large text sizes as: <br />
             <br />
             <b>Normal sized text</b>
             <br />
@@ -363,19 +370,10 @@ const Colours = (layoutProps: LayoutProps) => (
           id="contextualcolours"
           toc="Contextual colours"
           headline="Contextual colours"
-          description="Contextual colours are selected from the palette colours and have specific functions or purposes applied. There are three categories of contextual colours: Ink, Interface and Interactive colours."
+          description="Select contextual colours from the palette colours and apply specific functions or purposes. There are three categories of contextual colours: ink, interface and interactive."
         >
-          <Illustration path="theme/colours/overview" />
+          <Illustration viewBox="0 0 1490 600" path="theme/colours/overview" />
         </ContentPrimary>
-
-        <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
-          <Link
-            overrides={{typographyPreset: 'editorialParagraph030'}}
-            href="/components/icons"
-          >
-            Learn more about the Icon component
-          </Link>
-        </ContentSecondary>
 
         <TabsWithTable components={coloursTable} showSeparator />
 
@@ -384,7 +382,7 @@ const Colours = (layoutProps: LayoutProps) => (
             <>
               Colour can be applied to a UI element using the color, iconColor
               borderColor, placeholderColor and background attribute on a{' '}
-              <Link href="/theme/presets/style-presets/">Style Preset.</Link>
+              <Link href="/theme/presets/style-presets/">style preset.</Link>
             </>
           }
         />
@@ -410,21 +408,22 @@ backgroundColor: '{{colors.interactiveVisited010}}';`}
         <ContentPrimary
           id="a11y"
           toc="Accessibility"
-          headline="Accessibility considerations"
+          headline="Accessibility"
           description={
             <>
-              Carefully consider what colours to assign to the NewsKit
-              contextual colours to ensure important UI elements like text and
-              icons are legible without compromising the aesthetic. Avoid using
-              yellow or orange colours to convey a notice or warning intent
-              because these colours paired with white text do not allow for
-              sufficient colour contrast. Aim for contrast ratios that adhere to
-              the{' '}
+              Choose your contextual colours carefully so important UI elements
+              like text and icons are legible without compromising your
+              aesthetic.
+              <br />
+              <br />
+              Avoid yellow and orange for notices or warnings. Pairing these
+              colours with white text does not allow for sufficient contrast.
+              Aim for contrast ratios that meet{' '}
               <Link
                 target="_blank"
                 href="https://www.w3.org/TR/WCAG20-TECHS/G18.html"
               >
-                WCAG AA standards:
+                WCAG AA standards.
               </Link>
             </>
           }
@@ -432,41 +431,32 @@ backgroundColor: '{{colors.interactiveVisited010}}';`}
 
         <ContentSecondary
           headline="Contrast for text and images of text"
-          description="Standard text and images of text must have a minimum of 4.5:1
-        contrast between the text colour and the background, except for the
-        following:"
+          description="Standard text and images of text must have a minimum contrast of 4.5:1 between text colour and background, except for:"
         />
 
         <ContentTertiary
           headline="Large text"
-          description="Large-scale text and images of large-scale text must have a minimum
-        of 3:1 contrast between the text colour and the background."
+          description="Large-scale text, and images of large-scale text, must have a minimum contrast of 3:1 between text colour and background."
         />
 
         <ContentTertiary
           headline="Link text"
-          description="Underline link text within the body text (inline link). Otherwise,
-        in addition to the above, link text must have at least a 3:1
-        contrast between the link text colour and the surrounding non-link
-        text colour."
+          description="Link text must have a minimum contrast of 3:1 between link text colour and the surrounding non-link text colour. Link text within body text (inline link) should be underlined."
         />
 
         <ContentTertiary
           headline="Incidental text"
-          description="Text or images of text that are part of an inactive component, pure
-        decoration, or part of a picture containing significant other visual
-        content do not have any contrast requirements."
+          description="Text, and images of text, that are part of an inactive component, purely decorative or part of a picture containing significant other visual content don’t have contrast requirements."
         />
 
         <ContentTertiary
           headline="Logotypes"
-          description="Text that is part of a logo does not have any contrast requirements."
+          description="Text that’s part of a logo doesn’t have contrast requirements."
         />
 
         <ContentSecondary
           headline="Contrast for non-text elements"
-          description=" User interface components and graphical objects must have at least a
-        3:1 contrast between against adjacent colours."
+          description="User interface components and graphical objects must have a minimum contrast of 3:1 against adjacent colours."
           showSeparator
         />
       </ContentSection>

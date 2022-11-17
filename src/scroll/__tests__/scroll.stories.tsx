@@ -94,7 +94,7 @@ export default {
   component: () => 'None',
 };
 
-export const StoryDefault = () => (
+export const StoryScrollDefault = () => (
   <MainContainer>
     <StorybookSubHeading>Scroll horizontal</StorybookSubHeading>
     <Container>
@@ -124,7 +124,7 @@ export const StoryDefault = () => (
     </Container>
   </MainContainer>
 );
-StoryDefault.storyName = 'default';
+StoryScrollDefault.storyName = 'default';
 
 export const StoryScrollControls = () => (
   <MainContainer>

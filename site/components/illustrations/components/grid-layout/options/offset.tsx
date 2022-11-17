@@ -26,8 +26,8 @@ export const Offset: React.FC = () => (
       height="623"
       rx="17.5"
       stroke="#577FFB"
-      stroke-width="5"
-      stroke-dasharray="10 10"
+      strokeWidth="5"
+      strokeDasharray="10 10"
     />
     <Rect
       x="337"
