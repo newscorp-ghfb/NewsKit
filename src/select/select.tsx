@@ -12,6 +12,7 @@ import {useBreakpointKey} from '../utils/hooks/use-media-query';
 import {useVirtualizedList} from './use-virtualized-list';
 import {Layer} from '../layer';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
+import {get} from '../utils/get';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -59,22 +60,9 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       option => option.props.defaultSelected,
     );
 
-    useEffect(() => {
-      if (programmaticallySelectedItem || defaultSelectedItem) {
-        // istanbul ignore else
-        if (localInputRef.current) {
-          localInputRef.current.value = programmaticallySelectedItem
-            ? programmaticallySelectedItem.props.value
-            : defaultSelectedItem!.props.value;
-          if (onChange) {
-            onChange({
-              type: 'change',
-              target: localInputRef.current,
-            } as ChangeEvent<HTMLInputElement>);
-          }
-        }
-      }
-    }, [defaultSelectedItem, onChange, programmaticallySelectedItem]);
+    const buttonValue = programmaticallySelectedItem
+      ? get(programmaticallySelectedItem, 'props.value')
+      : get(defaultSelectedItem, 'props.value');
 
     const {fireEvent} = useInstrumentation();
     const onInputChange = React.useCallback<
@@ -252,6 +240,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           itemToString={itemToString}
           ref={composeRefs(localInputRef, downshiftButtonPropsRef, inputRef)}
           selectRef={selectRef}
+          value={buttonValue}
           {...downshiftButtonPropsExceptRef}
           {...restProps}
         />
