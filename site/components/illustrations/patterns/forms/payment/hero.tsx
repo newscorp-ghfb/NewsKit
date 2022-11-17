@@ -5,8 +5,8 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const Hero: React.FC = () => {
+  const clip0 = getSSRId();
   const filter0 = getSSRId();
-  const filter1 = getSSRId();
 
   return (
     <Svg
@@ -16,8 +16,8 @@ export const Hero: React.FC = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <Rect width="1490" height="838" fill="illustrationBackground020" />
-      <g filter={`url(#${filter0})`}>
+      <g clipPath={`url(#${clip0})`}>
+        <Rect width="1490" height="838" fill="illustrationBackground020" />
         <Rect
           x="550.945"
           y="207"
@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
           d="M550.945 229.697C550.945 217.162 561.107 207 573.642 207H1025.3C1037.84 207 1048 217.162 1048 229.697V286.438H550.945V229.697Z"
           fill="illustrationInterface060"
         />
-        <g filter={`url(#${filter1})`}>
+        <g filter={`url(#${filter0})`}>
           <Rect
             x="442"
             y="347.719"
@@ -85,40 +85,6 @@ export const Hero: React.FC = () => {
         <filter
           id={filter0}
           x="423.843"
-          y="197.921"
-          width="642.315"
-          height="458.471"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dy="9.07865" />
-          <feGaussianBlur stdDeviation="9.07865" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0.08 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_1437_29361"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_1437_29361"
-            result="shape"
-          />
-        </filter>
-        <filter
-          id={filter1}
-          x="423.843"
           y="338.64"
           width="533.369"
           height="317.753"
@@ -150,6 +116,9 @@ export const Hero: React.FC = () => {
             result="shape"
           />
         </filter>
+        <clipPath id={clip0}>
+          <Rect width="1490" height="838" fill="white" />
+        </clipPath>
       </defs>
     </Svg>
   );

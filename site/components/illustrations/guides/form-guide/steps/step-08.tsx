@@ -66,7 +66,7 @@ export const Step08: React.FC = () => {
           height="54.7744"
           rx="8.24373"
           stroke="#85939C"
-          stroke-width="1.03679"
+          strokeWidth="1.03679"
         />
         <Rect
           x="527.265"
@@ -153,7 +153,7 @@ export const Step08: React.FC = () => {
         height="51.9632"
         rx="8.24373"
         stroke="#85939C"
-        stroke-width="1.03679"
+        strokeWidth="1.03679"
       />
       <defs>
         <filter

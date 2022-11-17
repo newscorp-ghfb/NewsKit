@@ -84,7 +84,7 @@ export const DesignTokens: React.FC = () => (
       rx="34.0741"
       fill="white"
       stroke="#BBC3C9"
-      stroke-width="3"
+      strokeWidth="3"
     />
     <Ellipse
       cx="1563.45"
@@ -115,7 +115,7 @@ export const DesignTokens: React.FC = () => (
       rx="34.0741"
       fill="white"
       stroke="#BBC3C9"
-      stroke-width="3"
+      strokeWidth="3"
     />
     <Ellipse
       cx="2849.05"

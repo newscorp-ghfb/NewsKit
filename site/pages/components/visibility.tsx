@@ -41,6 +41,7 @@ const cards = [
   {
     media: getIllustrationComponent(
       'components/visibility/visible-illustration',
+      {viewBox: '0 0 1490 839'},
     ),
     title: 'Visible',
     description:
@@ -54,6 +55,7 @@ const cards = [
   {
     media: getIllustrationComponent(
       'components/visibility/hidden-illustration',
+      {viewBox: '0 0 1490 839'},
     ),
     title: 'Hidden',
     description:
@@ -67,6 +69,7 @@ const cards = [
   {
     media: getIllustrationComponent(
       'components/visibility/screenreaderonly-illustration',
+      {viewBox: '0 0 1490 839'},
     ),
     title: 'ScreenReaderOnly',
     description:
@@ -144,6 +147,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/visibility/visibility-do-01-illustration',
+            {viewBox: '0 0 1490 839'},
           ),
         },
         {
@@ -152,6 +156,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/visibility/visibility-dont-01-illustration',
+            {viewBox: '0 0 1490 839'},
           ),
         },
       ]}

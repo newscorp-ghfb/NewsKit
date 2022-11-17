@@ -82,7 +82,10 @@ const Breakpoints = (layoutProps: LayoutProps) => (
           headline="Overview"
           description="Choose from five different breakpoints. You can customise the breakpoint range, margins and gutters. The default values are:"
         >
-          <Illustration path="theme/breakpoints/overview" />
+          <Illustration
+            viewBox="0 0 1490 600"
+            path="theme/breakpoints/overview"
+          />
         </ContentPrimary>
 
         <ContentSecondary>
@@ -94,19 +97,19 @@ const Breakpoints = (layoutProps: LayoutProps) => (
 
         <ContentSecondary description="You can override default breakpoints in the theme:">
           <Code>
-            {`import {createTheme} from 'newskit'; 
+            {`import {createTheme} from 'newskit';
 
-const theme = createTheme({ 
-  name: 'theme-with-custom-breakpoints', 
-  overrides: { 
-      breakpoints: { 
-          xs: 0, // 0-359 
-          sm: 360, 
-          md: 540, 
-          lg: 720, 
-          xl: 1080, 
-      } 
-  }, 
+const theme = createTheme({
+  name: 'theme-with-custom-breakpoints',
+  overrides: {
+      breakpoints: {
+          xs: 0, // 0-359
+          sm: 360,
+          md: 540,
+          lg: 720,
+          xl: 1080,
+      }
+  },
 });`}
           </Code>
         </ContentSecondary>

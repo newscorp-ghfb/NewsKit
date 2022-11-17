@@ -5,9 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const ScrollSnapAlignment: React.FC = () => {
-  const mask0 = getSSRId();
-  const mask1 = getSSRId();
-  const mask2 = getSSRId();
   const filter0 = getSSRId();
   const filter1 = getSSRId();
   const filter2 = getSSRId();
@@ -32,35 +29,14 @@ export const ScrollSnapAlignment: React.FC = () => {
           fill="illustrationInterface010"
         />
       </g>
-      <mask
-        id={mask0}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="74"
-        y="225"
-        width="396"
-        height="388"
-      >
-        <Rect
-          x="74.1233"
-          y="612.324"
-          width="387.204"
-          height="395.751"
-          rx="11.8835"
-          transform="rotate(-90 74.1233 612.324)"
-          fill="illustrationInterface010"
-        />
-      </mask>
-      <g mask={`url(#${mask0})`}>
-        <Path
-          d="M103 596.998L103 239.998H367V596.998H103Z"
-          fill="interactivePrimary010"
-        />
-        <Path
-          d="M387 596.998L387 239.998H650V596.998H387Z"
-          fill="interactivePrimary010"
-        />
-      </g>
+      <Path
+        d="M103 596.999L103 239.999H367V596.999H103Z"
+        fill="interactivePrimary010"
+      />
+      <Path
+        d="M469.874 239.998V596.998H387V239.998H469.874Z"
+        fill="interactivePrimary010"
+      />
       <g filter={`url(#${filter1})`}>
         <Rect
           x="547"
@@ -72,39 +48,15 @@ export const ScrollSnapAlignment: React.FC = () => {
           fill="illustrationInterface010"
         />
       </g>
-      <mask
-        id={mask1}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="547"
-        y="225"
-        width="396"
-        height="387"
-      >
-        <Rect
-          x="547.125"
-          y="611.877"
-          width="386.757"
-          height="395.751"
-          rx="11.8835"
-          transform="rotate(-90 547.125 611.877)"
-          fill="illustrationInterface010"
-        />
-      </mask>
-      <g mask={`url(#${mask1})`}>
-        <Path
-          d="M408 597.998V240.998H598V597.998H408Z"
-          fill="interactivePrimary010"
-        />
-        <Path
-          d="M618 597.998V240.998H882V597.998H618Z"
-          fill="interactivePrimary010"
-        />
-        <Path
-          d="M902 597.998V240.998H1166V597.998H902Z"
-          fill="interactivePrimary010"
-        />
-      </g>
+      <Path
+        d="M547.125 241V598H598V241H547.125Z"
+        fill="interactivePrimary010"
+      />
+      <Path
+        d="M942.876 241V598H902V241H942.876Z"
+        fill="interactivePrimary010"
+      />
+      <Path d="M618 598V241H882V598H618Z" fill="interactivePrimary010" />
       <g filter={`url(#${filter2})`}>
         <Rect
           x="1020"
@@ -116,35 +68,14 @@ export const ScrollSnapAlignment: React.FC = () => {
           fill="illustrationInterface010"
         />
       </g>
-      <mask
-        id={mask2}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="1020"
-        y="225"
-        width="396"
-        height="388"
-      >
-        <Rect
-          x="1020.12"
-          y="612.324"
-          width="387.204"
-          height="395.751"
-          rx="11.8835"
-          transform="rotate(-90 1020.12 612.324)"
-          fill="illustrationInterface010"
-        />
-      </mask>
-      <g mask={`url(#${mask2})`}>
-        <Path
-          d="M919 596.999V239.999H1100.38V596.999H919Z"
-          fill="interactivePrimary010"
-        />
-        <Path
-          d="M1123 596.999V239.999H1387V596.999H1123Z"
-          fill="interactivePrimary010"
-        />
-      </g>
+      <Path
+        d="M1020.12 239.999H1100.38V596.999H1020.12L1020.12 239.999Z"
+        fill="interactivePrimary010"
+      />
+      <Path
+        d="M1123 596.999V239.999H1387V596.999H1123Z"
+        fill="interactivePrimary010"
+      />
       <Path
         d="M586 592C586 588.686 588.301 586 591.141 586H897.859C900.698 586 903 588.686 903 592V592C903 595.314 900.698 598 897.859 598H591.141C588.301 598 586 595.314 586 592V592Z"
         fill="illustrationPalette020"
@@ -195,12 +126,12 @@ export const ScrollSnapAlignment: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2180_78110"
+            result="effect1_dropShadow_2657_78695"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2180_78110"
+            in2="effect1_dropShadow_2657_78695"
             result="shape"
           />
         </filter>
@@ -229,12 +160,12 @@ export const ScrollSnapAlignment: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2180_78110"
+            result="effect1_dropShadow_2657_78695"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2180_78110"
+            in2="effect1_dropShadow_2657_78695"
             result="shape"
           />
         </filter>
@@ -263,12 +194,12 @@ export const ScrollSnapAlignment: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_2180_78110"
+            result="effect1_dropShadow_2657_78695"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_2180_78110"
+            in2="effect1_dropShadow_2657_78695"
             result="shape"
           />
         </filter>

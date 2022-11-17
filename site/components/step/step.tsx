@@ -13,7 +13,7 @@ export const Step = ({media, stepText, timerText}: StepProps) => (
   <>
     {media && (
       <Block spaceStack="space060">
-        <Illustration path={media} />
+        <Illustration viewBox="0 0 1345 759" path={media} />
       </Block>
     )}
     <Stack

@@ -46,6 +46,7 @@ export const StoryUseBreakpointKey = () => {
 StoryUseBreakpointKey.storyName = 'useBreakpointKey';
 StoryUseBreakpointKey.parameters = {
   eyes: {include: false},
+  percy: {skip: true},
 };
 export default {
   title: 'Utilities/useBreakpointKey',

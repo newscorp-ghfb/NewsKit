@@ -85,7 +85,7 @@ const Spacing = (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Illustration path="theme/spacing/overview" />
+          <Illustration viewBox="0 0 1490 600" path="theme/spacing/overview" />
         </ContentPrimary>
 
         <ContentPrimary

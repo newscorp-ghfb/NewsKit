@@ -18,7 +18,6 @@ export const IntroductionSection: React.FC<IntroductionSectionProps> = ({
   meta,
 }) => (
   <Cell xs={12}>
-    <Block spaceStack={{xs: 'space000', md: 'space030', lg: 'space070'}} />
     <StyledSection id="introduction" data-toc-indexed="Introduction">
       <Grid xsMargin="space000" xsRowGutter="space000">
         <PageIntroduction {...pageIntroduction} />

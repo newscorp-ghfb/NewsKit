@@ -2,7 +2,15 @@
 
 import * as React from 'react';
 import Document, {Head, Main, NextScript, Html} from 'next/document';
-import {Global, css, Consent, Tealium} from 'newskit';
+import {
+  Global,
+  css,
+  Consent,
+  Tealium,
+  compileTheme,
+  newskitLightTheme,
+  getSizingCssFromTheme,
+} from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
 
@@ -19,21 +27,13 @@ export default class MyDocument extends Document {
     const isSiteEnvProduction = process.env.SITE_ENV === 'production';
 
     const helmet = Helmet.rewind();
+
+    const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
+
     return (
       <Html lang="en">
         <Head>
           <Base />
-          <style>
-            {`
-            *, ::after, ::before {
-              box-sizing: border-box;
-            }
-
-            body {
-              margin: 0;
-            }
-            `}
-          </style>
           {helmet.script.toComponent()}
           <HTMLMeta />
           {isSiteEnvProduction && (
@@ -59,10 +59,33 @@ export default class MyDocument extends Document {
                     outline-offset: 7px;
               }`}
 
-              html {
-                scroll-behavior: smooth;
-                scroll-padding-top: 90px;
+              *, ::after, ::before {
+                box-sizing: border-box;
               }
+
+              body {
+                margin: 0;
+              }
+
+              html {
+                scroll-padding-top: calc(
+                  var(--heading-size) + var(--page-offset)
+                );
+              }
+
+              html {
+                ${getSizingCssFromTheme('--heading-size', {
+                  xs: 'sizing080',
+                  md: 'sizing080',
+                  lg: 'sizing100',
+                })({theme: compiledNewskitLightTheme})};
+                ${getSizingCssFromTheme('--page-offset', {
+                  xs: 'sizing080',
+                  md: 'sizing090',
+                  lg: 'sizing100',
+                })({theme: compiledNewskitLightTheme})};
+              }
+
               @font-face {
                 font-family: 'DM Sans';
                 src: url('static/fonts/dmsans-regular-webfont.woff2')

@@ -1,60 +1,71 @@
 import React from 'react';
+import {Svg} from '../svg';
 import {Path} from '../path';
 import {Rect} from '../rect';
-import {Svg} from '../svg';
 
 export const TabsIllustration: React.FC = () => (
   <Svg
-    width="1344"
-    height="759"
-    viewBox="0 0 1344 759"
+    width="1490"
+    height="838"
+    viewBox="0 0 1490 838"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <Rect width="1344" height="759" fill="illustrationBackground020" />
+    <Rect width="1490" height="838" fill="illustrationBackground020" />
     <Rect
       width="197.143"
       height="175.238"
       rx="17.5238"
-      transform="matrix(-1 0 0 1 1063 297)"
+      transform="matrix(-1 0 0 1 1136 336)"
       fill="illustrationPalette060"
     />
     <Rect
-      width="197.143"
-      height="175.238"
-      rx="17.5238"
-      transform="matrix(-1 0 0 1 910.657 297)"
+      x="-1.09524"
+      y="1.09524"
+      width="194.952"
+      height="173.048"
+      rx="16.4286"
+      transform="matrix(-1 0 0 1 981.466 336)"
       fill="illustrationPalette050"
+      stroke="#446BE4"
+      stroke-width="2.19048"
     />
     <Rect
-      width="197.143"
-      height="175.238"
-      rx="17.5238"
-      transform="matrix(-1 0 0 1 478.143 297)"
+      x="-1.09524"
+      y="1.09524"
+      width="194.952"
+      height="173.048"
+      rx="16.4286"
+      transform="matrix(-1 0 0 1 548.953 336)"
       fill="illustrationPalette050"
+      stroke="#446BE4"
+      stroke-width="2.19048"
     />
     <Path
-      d="M743 296.524C743 286.846 735.154 279 725.476 279H462.524C452.846 279 445 286.846 445 296.524V472H743V296.524Z"
+      d="M814.905 335.524C814.905 326.451 807.549 319.095 798.476 319.095H535.524C526.451 319.095 519.095 326.451 519.095 335.524V509.905H814.905V335.524Z"
       fill="illustrationPalette040"
+      stroke="#577FFB"
+      stroke-width="2.19048"
     />
     <Path
-      d="M743.192 463.476H445.287V472.238C445.287 477.077 449.21 481 454.049 481H734.43C739.269 481 743.192 477.077 743.192 472.238V463.476Z"
+      d="M816.192 502.477H518.287V511.238C518.287 516.078 522.21 520 527.049 520H807.43C812.269 520 816.192 516.078 816.192 511.238V502.477Z"
       fill="illustrationPalette020"
     />
     <Rect
       width="194"
       height="18"
       rx="9"
-      transform="matrix(-1 0 0 1 691 337)"
+      transform="matrix(-1 0 0 1 764 376)"
       fill="illustrationPalette010"
     />
     <Rect
       width="98"
       height="18"
       rx="9"
-      transform="matrix(-1 0 0 1 643 385)"
+      transform="matrix(-1 0 0 1 716 424)"
       fill="illustrationPalette010"
     />
   </Svg>
 );
+
 export default TabsIllustration;
