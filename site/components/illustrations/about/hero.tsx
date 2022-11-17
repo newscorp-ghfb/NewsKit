@@ -12,7 +12,7 @@ export const Hero: React.FC = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <Rect width="1572" height="997" fill="illustrationInterface010" />
+    <Rect width="1572" height="997" fill="interfaceBackground" />
     <Path
       fillRule="evenodd"
       clipRule="evenodd"
