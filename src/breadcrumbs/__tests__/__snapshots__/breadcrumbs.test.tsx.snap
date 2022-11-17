@@ -178,13 +178,14 @@ exports[`Breadcrumbs renders with default props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 12px 16px;
+  width: auto;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  min-width: 80px;
+  min-width: auto;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -195,6 +196,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
   color: #3358CC;
   cursor: pointer;
   color: #3358CC;
+  cursor: pointer;
   padding: 0px;
 }
 
@@ -414,6 +416,54 @@ exports[`Breadcrumbs renders with default props 1`] = `
 `;
 
 exports[`Breadcrumbs renders with logical prop overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-block: 20px;
+  padding-inline: 30px;
+}
+
+.emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<nav
+    aria-label="Breadcrumb component"
+    class="emotion-0"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        Breadcrumb Item
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders with separator icon overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin-block: 20px;
