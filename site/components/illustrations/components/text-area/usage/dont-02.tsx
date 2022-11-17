@@ -27,7 +27,7 @@ export const Dont02: React.FC = () => (
       height="407.974"
       rx="24.8029"
       stroke="#BBC3C9"
-      stroke-width="4.83"
+      strokeWidth="4.83"
     />
     <Path
       fillRule="evenodd"

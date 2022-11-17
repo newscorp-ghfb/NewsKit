@@ -53,7 +53,10 @@ const Iconography = (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Illustration path="theme/iconography/overview" />
+          <Illustration
+            viewBox="0 0 1490 600"
+            path="theme/iconography/overview"
+          />
         </ContentPrimary>
       </ContentSection>
 
@@ -72,7 +75,12 @@ const Iconography = (layoutProps: LayoutProps) => (
                 title: 'Overlay',
                 description:
                   'Most icons are available in filled and outlined variants. Occasionally, only one style is available for aesthetic reasons.',
-                media: getIllustrationComponent('theme/iconography/appearance'),
+                media: getIllustrationComponent(
+                  'theme/iconography/appearance',
+                  {
+                    viewBox: '0 0 1344 759',
+                  },
+                ),
               },
               {
                 title: 'Colour',
@@ -84,7 +92,9 @@ const Iconography = (layoutProps: LayoutProps) => (
                     </Link>
                   </>
                 ),
-                media: getIllustrationComponent('theme/iconography/colours'),
+                media: getIllustrationComponent('theme/iconography/colours', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 title: 'Size',
@@ -96,7 +106,9 @@ const Iconography = (layoutProps: LayoutProps) => (
                     </Link>
                   </>
                 ),
-                media: getIllustrationComponent('theme/iconography/size'),
+                media: getIllustrationComponent('theme/iconography/size', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 title: 'Structure',
@@ -118,7 +130,9 @@ const Iconography = (layoutProps: LayoutProps) => (
                     known as the ‘trim area’.
                   </>
                 ),
-                media: getIllustrationComponent('theme/iconography/structure'),
+                media: getIllustrationComponent('theme/iconography/structure', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
             ]}
           />
@@ -199,19 +213,25 @@ const Iconography = (layoutProps: LayoutProps) => (
                 description:
                   'Place icons within the 20px live area. Keep the 2px border of padding around the live area clear.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-01'),
+                media: getIllustrationComponent('theme/iconography/do-01', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description:
                   'Position icons ‘on pixel’ so they’re clear and not pixelated, blurred or distorted.',
                 kind: UsageKind.DONT,
-                media: getIllustrationComponent('theme/iconography/dont-01'),
+                media: getIllustrationComponent('theme/iconography/dont-01', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description:
                   'Use icons to reduce cognitive load and provide context.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-02'),
+                media: getIllustrationComponent('theme/iconography/do-02', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description: (
@@ -224,18 +244,24 @@ const Iconography = (layoutProps: LayoutProps) => (
                   </>
                 ),
                 kind: UsageKind.DONT,
-                media: getIllustrationComponent('theme/iconography/dont-02'),
+                media: getIllustrationComponent('theme/iconography/dont-02', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description: 'Vertically centre-align icons when next to text.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-03'),
+                media: getIllustrationComponent('theme/iconography/do-03', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description:
                   'Don’t use icons that are noticeably larger or smaller than the text they’re paired with, or the interface may feel unbalanced.',
                 kind: UsageKind.DONT,
-                media: getIllustrationComponent('theme/iconography/dont-03'),
+                media: getIllustrationComponent('theme/iconography/dont-03', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description: (
@@ -250,13 +276,17 @@ const Iconography = (layoutProps: LayoutProps) => (
                   </>
                 ),
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-04'),
+                media: getIllustrationComponent('theme/iconography/do-04', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
               {
                 description:
                   'Use names that describe what the icon represents. Keep them simple and logical.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-05'),
+                media: getIllustrationComponent('theme/iconography/do-05', {
+                  viewBox: '0 0 1344 759',
+                }),
               },
             ]}
           />

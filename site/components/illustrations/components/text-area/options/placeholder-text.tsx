@@ -71,7 +71,7 @@ export const PlaceholderText: React.FC = () => (
       height="323.861"
       rx="21.9303"
       stroke="#BBC3C9"
-      stroke-width="4.13939"
+      strokeWidth="4.13939"
     />
     <Path
       fillRule="evenodd"

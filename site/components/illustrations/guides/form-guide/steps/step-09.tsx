@@ -5,7 +5,6 @@ import {Path} from '../../../path';
 import {Rect} from '../../../rect';
 
 export const Step09: React.FC = () => {
-  const mask0 = getSSRId();
   const filter0 = getSSRId();
 
   return (
@@ -67,7 +66,7 @@ export const Step09: React.FC = () => {
           height="51.8112"
           rx="6.76213"
           stroke="#FE8888"
-          stroke-width="4"
+          strokeWidth="4"
         />
       </g>
       <Path
@@ -144,23 +143,10 @@ export const Step09: React.FC = () => {
         d="M532.25 592.666L524.258 584.5L521.536 587.261L532.25 598.209L555.25 574.709L552.548 571.947L532.25 592.666Z"
         fill="white"
       />
-      <mask
-        id={mask0}
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="784"
-        y="176"
-        width="32"
-        height="32"
-      >
-        <Path
-          d="M800 178.667C792.64 178.667 786.667 184.64 786.667 192C786.667 199.36 792.64 205.334 800 205.334C807.36 205.334 813.333 199.36 813.333 192C813.333 184.64 807.36 178.667 800 178.667ZM801.333 198.667H798.667V196H801.333V198.667ZM801.333 193.334H798.667V185.334H801.333V193.334Z"
-          fill="#0A0A0A"
-        />
-      </mask>
-      <g mask={`url(#${mask0})`}>
-        <Rect x="784" y="176" width="32" height="32" fill="red040" />
-      </g>
+      <Path
+        d="M800 178.667C792.64 178.667 786.667 184.64 786.667 192C786.667 199.36 792.64 205.334 800 205.334C807.36 205.334 813.333 199.36 813.333 192C813.333 184.64 807.36 178.667 800 178.667ZM801.333 198.667H798.667V196H801.333V198.667ZM801.333 193.334H798.667V185.334H801.333V193.334Z"
+        fill="red040"
+      />
       <defs>
         <filter
           id={filter0}

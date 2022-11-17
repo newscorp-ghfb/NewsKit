@@ -206,7 +206,7 @@ export const Do3: React.FC = () => (
       rx="57.5568"
       fill="interface010"
       stroke="#577FFB"
-      stroke-width="8.8859"
+      strokeWidth="8.8859"
     />
     <Rect
       x="837.756"
@@ -231,7 +231,7 @@ export const Do3: React.FC = () => (
       height="115.114"
       rx="57.5568"
       stroke="#BBC3C9"
-      stroke-width="8.8859"
+      strokeWidth="8.8859"
     />
     <Rect
       x="842.443"
@@ -240,7 +240,7 @@ export const Do3: React.FC = () => (
       height="115.114"
       rx="57.5568"
       stroke="#BBC3C9"
-      stroke-width="8.8859"
+      strokeWidth="8.8859"
     />
     <Rect
       x="864.656"

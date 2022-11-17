@@ -176,6 +176,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       ],
       media: getIllustrationComponent(
         'components/menu/menu-anatomy-illustration',
+        {viewBox: '0 0 1600 900'},
       ),
     }}
     options={{
