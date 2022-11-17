@@ -108,7 +108,7 @@ export const StoryStates = () => (
     <StorybookCase title="Base">
       <Breadcrumbs showTrailingSeparator>
         <BreadcrumbItem
-          overrides={{stylePreset: ' breadcrumbDefault'}}
+          overrides={{stylePreset: 'breadcrumbDefault'}}
           href={href}
         >
           Breadcrumb item
