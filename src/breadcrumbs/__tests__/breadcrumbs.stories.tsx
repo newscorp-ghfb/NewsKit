@@ -8,7 +8,6 @@ import {
   IconFilledHome,
 } from '../../icons';
 import {TextBlock} from '../../text-block';
-import {IconButton} from '../../icon-button';
 
 // import {ThemeProvider} from '../../theme';
 // import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
@@ -127,19 +126,13 @@ export const StoryVariations = () => (
     </StorybookCase>
     <StorybookCase title="'Home' icon for the first breadcrumb item">
       <Breadcrumbs>
-        {/* <BreadcrumbItem href={href}> */}
-        <IconButton
-          size="medium"
-          overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
-        >
+        <BreadcrumbItem href={href}>
           <IconFilledHome
-
-          // overrides={{
-          //   stylePreset: 'iconButtonMinimalPrimary',
-          // }}
+            overrides={{
+              stylePreset: 'iconButtonMinimalPrimary',
+            }}
           />
-        </IconButton>
-        {/* </BreadcrumbItem> */}
+        </BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
           Breadcrumb item
