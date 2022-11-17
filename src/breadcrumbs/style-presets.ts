@@ -7,6 +7,7 @@ export default {
     },
     hover: {
       color: '{{colors.interactiveLink020}}',
+      textDecoration: 'underline',
     },
     selected: {
       color: '{{colors.inkBase}}',
@@ -16,6 +17,7 @@ export default {
     },
     active: {
       color: '{{colors.interactiveLink030}}',
+      textDecoration: 'underline',
     },
   },
   breadcrumbSeparator: {

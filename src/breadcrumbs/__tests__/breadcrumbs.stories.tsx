@@ -1,4 +1,5 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Breadcrumbs} from '../breadcrumbs';
 import {BreadcrumbItem} from '../breadcrumb-item';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
@@ -8,6 +9,8 @@ import {
   IconFilledHome,
 } from '../../icons';
 import {TextBlock} from '../../text-block';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {CreateThemeArgs, ThemeProvider} from '../../theme';
 
 // import {ThemeProvider} from '../../theme';
 // import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
@@ -16,6 +19,43 @@ import {TextBlock} from '../../text-block';
 const href = 'javascript:;';
 
 const blockGridCols = '1fr 1fr 1fr auto';
+
+const breadcrumbItemCustomThemeObject: CreateThemeArgs = {
+  name: 'breadcrumb-custom-theme',
+  overrides: {
+    stylePresets: {
+      breadcrumbDefault: {
+        base: {
+          color: '{{colors.interactiveLink010}}',
+        },
+      },
+      breadcrumbSelected: {
+        // base: {
+        //   color: '{{colors.interactiveLink010}}',
+        // },
+        selected: {
+          color: '{{colors.inkBase}}',
+        },
+      },
+      breadcrumbHover: {
+        base: {
+          color: '{{colors.interactiveLink020}}',
+          textDecoration: 'underline',
+        },
+        // hover: {
+        //   color: '{{colors.interactiveLink020}}',
+        //   textDecoration: 'underline',
+        // },
+      },
+      breadcrumbActive: {
+        base: {
+          color: '{{colors.interactiveLink030}}',
+          textDecoration: 'underline',
+        },
+      },
+    },
+  },
+};
 
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
@@ -67,24 +107,43 @@ export const StoryStates = () => (
   <StorybookPage columns={blockGridCols} columnGap="8px">
     <StorybookCase title="Base">
       <Breadcrumbs showTrailingSeparator>
-        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem
+          overrides={{stylePreset: ' breadcrumbDefault'}}
+          href={href}
+        >
+          Breadcrumb item
+        </BreadcrumbItem>
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Selected">
       <Breadcrumbs>
-        <BreadcrumbItem selected href={href}>
+        <BreadcrumbItem
+          overrides={{stylePreset: 'breadcrumbSelected'}}
+          selected
+          href={href}
+        >
           Breadcrumb item
         </BreadcrumbItem>
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Hover">
       <Breadcrumbs showTrailingSeparator>
-        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem
+          overrides={{stylePreset: 'breadcrumbHover'}}
+          href={href}
+        >
+          Breadcrumb item
+        </BreadcrumbItem>
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Active">
       <Breadcrumbs showTrailingSeparator>
-        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
+        <BreadcrumbItem
+          href={href}
+          overrides={{stylePreset: 'breadcrumbActive'}}
+        >
+          Breadcrumb item
+        </BreadcrumbItem>
       </Breadcrumbs>
     </StorybookCase>
   </StorybookPage>
@@ -269,15 +328,16 @@ export default {
         'Breadcrumbs are used for secondary navigation providing a breadcrumb trail, to help users to understand the path the user took, or where they are located and move between pages within a website’s or application’s hierarchy.',
     },
   },
-  // decorators: [
-  //   (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-  //     <ThemeProvider
-  //       theme={createCustomThemeWithBaseThemeSwitch(
-  //         context?.globals?.backgrounds?.value,
-  //       )}
-  //     >
-  //       <Story />
-  //     </ThemeProvider>
-  //   ),
-  // ],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          breadcrumbItemCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };

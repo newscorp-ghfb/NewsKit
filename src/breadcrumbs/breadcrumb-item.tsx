@@ -38,7 +38,7 @@ export const BreadcrumbItem = React.forwardRef<
         href={href}
         eventContext={eventContext}
         eventOriginator={eventOriginator}
-        overrides={buttonSettings}
+        overrides={{...buttonSettings, width: 'auto'}}
         aria-current={selected && 'page'}
         ref={ref}
       >
