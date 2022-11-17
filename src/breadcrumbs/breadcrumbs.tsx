@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {cloneElement} from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {StyledList, StyledNav, StyledOrderdList} from './styled';
 import defaults from './defaults';
@@ -80,9 +80,15 @@ const ThemelessBreadcrumbs = React.forwardRef<
           {showTrailingSeparator
             ? React.Children.map(children, child => (
                 <>
-                  <StyledList>{child}</StyledList>
-
-                  <StyledList aria-hidden="true">
+                  <StyledList>
+                    {cloneElement(
+                      child as React.ReactElement<BreadcrumbsProps>,
+                      {
+                        size,
+                      },
+                    )}
+                  </StyledList>
+                  <StyledList>
                     <BreadcrumbsIcon
                       {...(BreadcrumbsIconProps as BreadcrumbsProps)}
                     />
@@ -92,7 +98,14 @@ const ThemelessBreadcrumbs = React.forwardRef<
             : breadcrumbChildren.reduce(
                 (acc: React.ReactElement[], listItem, index, array) => {
                   acc.push(
-                    <StyledList key={getSSRId()}>{listItem}</StyledList>,
+                    <StyledList key={getSSRId()}>
+                      {cloneElement(
+                        listItem as React.ReactElement<BreadcrumbsProps>,
+                        {
+                          size,
+                        },
+                      )}
+                    </StyledList>,
                   );
                   if (children && index < array.length - 1) {
                     acc.push(
