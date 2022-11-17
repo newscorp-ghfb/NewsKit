@@ -148,3 +148,5 @@ export const generateString = (length: number): string =>
   Array.from(Array(length).keys())
     .map(() => '*')
     .join('');
+
+export const isVisualTest = process.env.STORYBOOK_IS_VISUAL_TEST === 'true';

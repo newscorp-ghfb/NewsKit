@@ -434,6 +434,9 @@ export const StoryTooltipOverrides = () => (
   </>
 );
 StoryTooltipOverrides.storyName = 'tooltip-overrides';
+StoryTooltipOverrides.parameters = {
+  percy: {enableJavaScript: true},
+};
 
 export const StoryTooltipPlacementsVisualTest = () => (
   <>
@@ -619,6 +622,9 @@ export const StoryTooltipPlacementsVisualTest = () => (
   </>
 );
 StoryTooltipPlacementsVisualTest.storyName = 'tooltip-placements-visual-test';
+StoryTooltipPlacementsVisualTest.parameters = {
+  percy: {enableJavaScript: true},
+};
 
 export const StoryTooltipNoPointer = () => (
   <>
@@ -657,3 +663,6 @@ export const StoryTooltipNoPointer = () => (
   </>
 );
 StoryTooltipNoPointer.storyName = 'tooltip-no-pointer';
+StoryTooltipNoPointer.parameters = {
+  percy: {enableJavaScript: true},
+};
