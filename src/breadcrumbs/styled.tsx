@@ -1,4 +1,4 @@
-import {styled, getStylePreset} from '../utils/style';
+import {styled, getStylePreset, getTypographyPreset} from '../utils/style';
 import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
 import {Button} from '../button';
@@ -16,15 +16,18 @@ export const StyledOrderdList = styled.ol<BreadcrumbsProps>`
   padding: 0px;
 `;
 
-export const StyledList = styled.li`
+export const StyledList = styled.li<BreadcrumbsProps>`
   display: flex;
   justify-content: center;
   align-self: center;
+  ${({size}) => getTypographyPreset(`breadcrumbItem.${size}`, '')}
 `;
 
 export const StyledButton = styled(Button)<BreadcrumbItemProps>`
   ${({size, selected}) =>
     getStylePreset(`breadcrumbItem.${size}`, '', {isSelected: selected})};
-  cursor: ${({selected}) => (selected ? 'none' : 'pointer')};
+
+  ${({size}) => getTypographyPreset(`breadcrumbItem.${size}`, '')}
+  cursor: ${({selected}) => (selected ? 'text' : 'pointer')};
   padding: 0px;
 `;
