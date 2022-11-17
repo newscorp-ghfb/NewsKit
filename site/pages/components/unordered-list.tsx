@@ -211,7 +211,7 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
       introduction:
         'This demo allows you to preview the unordered list component, its variations, and configuration options.',
       playground: {
-        componentName: 'Unorderedist',
+        componentName: 'UnorderedList',
         component: (props: UnorderedListProps) => <UnorderedList {...props} />,
         knobs: [
           {
