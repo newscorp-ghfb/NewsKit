@@ -11,7 +11,7 @@ describe('Documentation Site - header-navigation component', () => {
       cy.get('[data-testid="logo-container"]').should('exist');
     });
     it('should highlight active section', () => {
-      cy.mockConsentAndVisit('/about/why-use-newskit');
+      cy.mockConsentAndVisit('/about/contact-us');
       cy.get(indicatorID).should('have.attr', 'aria-current');
     });
   });
@@ -20,7 +20,7 @@ describe('Documentation Site - header-navigation component', () => {
     before(() => cy.viewport('iphone-5'));
 
     it('should contain burger menu when on mobile', () => {
-      cy.mockConsentAndVisit('/about/why-use-newskit');
+      cy.mockConsentAndVisit('/about/contact-us');
       cy.get(sidebarTestID).should('exist').and('not.be.visible');
       cy.get(hamburgerIconTestID).first().click();
       cy.get(sidebarTestID).should('be.visible');
