@@ -3284,12 +3284,14 @@ Object {
   "breadcrumbItem": Object {
     "active": Object {
       "color": "{{colors.interactiveLink030}}",
+      "textDecoration": "underline",
     },
     "base": Object {
       "color": "{{colors.interactiveLink010}}",
     },
     "hover": Object {
       "color": "{{colors.interactiveLink020}}",
+      "textDecoration": "underline",
     },
     "selected": Object {
       "color": "{{colors.inkBase}}",

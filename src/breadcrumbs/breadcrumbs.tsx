@@ -1,4 +1,4 @@
-import React, {cloneElement} from 'react';
+import React from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {StyledList, StyledNav, StyledOrderdList} from './styled';
 import defaults from './defaults';
@@ -9,7 +9,6 @@ import {getComponentOverrides, Override} from '../utils/overrides';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
-import {getSSRId} from '../utils';
 
 const DefaultIcon = (overrides: BreadcrumbsProps) => (
   <IconFilledChevronRight overrides={overrides} />
@@ -71,6 +70,7 @@ const ThemelessBreadcrumbs = React.forwardRef<
 
     return (
       <StyledNav
+        data-testid="breadcrumb-container"
         aria-label="Breadcrumb component"
         size={size}
         showTrailingSeparator={showTrailingSeparator}
@@ -81,7 +81,7 @@ const ThemelessBreadcrumbs = React.forwardRef<
             ? React.Children.map(children, child => (
                 <>
                   <StyledList>
-                    {cloneElement(
+                    {React.cloneElement(
                       child as React.ReactElement<BreadcrumbsProps>,
                       {
                         size,
@@ -98,8 +98,8 @@ const ThemelessBreadcrumbs = React.forwardRef<
             : breadcrumbChildren.reduce(
                 (acc: React.ReactElement[], listItem, index, array) => {
                   acc.push(
-                    <StyledList key={getSSRId()}>
-                      {cloneElement(
+                    <StyledList key={listItem.key}>
+                      {React.cloneElement(
                         listItem as React.ReactElement<BreadcrumbsProps>,
                         {
                           size,
@@ -109,7 +109,8 @@ const ThemelessBreadcrumbs = React.forwardRef<
                   );
                   if (children && index < array.length - 1) {
                     acc.push(
-                      <StyledList key={getSSRId()} aria-hidden="true">
+                      // eslint-disable-next-line react/no-array-index-key
+                      <StyledList key={index} aria-hidden="true">
                         <BreadcrumbsIcon
                           {...(BreadcrumbsIconProps as BreadcrumbsProps)}
                         />

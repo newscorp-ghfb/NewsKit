@@ -4,6 +4,7 @@ import {LogicalProps} from '../utils/logical-properties';
 import {EventData} from '../instrumentation';
 import {Override} from '../utils/overrides';
 import {NewsKitIconProps} from '../icons';
+import {ButtonProps} from '../button/types';
 
 export type BreadcrumbSize = 'small' | 'medium' | 'large';
 
@@ -23,10 +24,11 @@ export interface BreadcrumbsProps extends React.AriaAttributes {
   } & LogicalProps;
 }
 
-export interface BreadcrumbItemProps extends React.AriaAttributes, EventData {
+export interface BreadcrumbItemProps extends ButtonProps, EventData {
   children: Exclude<React.ReactNode, 'undefined'>;
   selected?: boolean;
   href: string;
+  // onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
