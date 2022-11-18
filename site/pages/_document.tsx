@@ -5,7 +5,6 @@ import Document, {Head, Main, NextScript, Html} from 'next/document';
 import {
   Global,
   css,
-  // Consent,
   Tealium,
   compileTheme,
   newskitLightTheme,
@@ -259,12 +258,14 @@ export default class MyDocument extends Document {
             `}
           />
 
-          <Tealium
-            accountId="newsinternational"
-            profileId="thetimes.newskit"
-            env={isSiteEnvProduction ? 'prod' : 'dev'}
-            reactHelmet={Helmet}
-          />
+          {isSiteEnvProduction && (
+            <Tealium
+              accountId="newsinternational"
+              profileId="thetimes.newskit"
+              env={isSiteEnvProduction ? 'prod' : 'dev'}
+              reactHelmet={Helmet}
+            />
+          )}
 
           <Main />
           <NextScript />
