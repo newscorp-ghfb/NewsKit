@@ -31,7 +31,7 @@ export const routes = [
         title: 'Roadmap',
         page: true,
         id: '/about/roadmap',
-        description: 'What’s in progress and what’s coming up next',
+        description: 'What’s in progress and what’s coming up next.',
         illustration: 'components/hero-roadmap-illustration',
       },
       {
