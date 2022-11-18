@@ -48,7 +48,10 @@ const ReleaseNotesPage = ({
           name: 'Release notes',
           introduction:
             'Announcements about the latest and previous releases of NewsKit.',
-          hero: {illustration: 'about/release-notes-hero-illustration'},
+          hero: {
+            illustration: 'about/release-notes-hero-illustration',
+            illustrationProps: {viewBox: '0 0 1344 759'},
+          },
         }}
         featureCard={{
           title: 'Need help?',

@@ -59,7 +59,7 @@ export const Focus: React.FC = () => (
       height="214"
       rx="26.43"
       stroke="#577FFB"
-      stroke-width="8"
+      strokeWidth="8"
     />
   </Svg>
 );

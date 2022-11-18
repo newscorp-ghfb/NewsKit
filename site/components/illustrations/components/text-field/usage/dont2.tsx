@@ -36,7 +36,7 @@ export const Dont2: React.FC = () => {
           height="177.493"
           rx="21.5575"
           stroke="#BBC3C9"
-          stroke-width="5.01337"
+          strokeWidth="5.01337"
         />
       </g>
       <defs>

@@ -129,8 +129,8 @@ export const AnatomyForm: React.FC = () => (
       width="456"
       height="650"
       stroke="#577FFB"
-      stroke-width="3"
-      stroke-dasharray="32 32"
+      strokeWidth="3"
+      strokeDasharray="32 32"
     />
     <Path
       d="M604.5 510.645L596.855 503L594.252 505.585L604.5 515.833L626.5 493.833L623.915 491.248L604.5 510.645Z"

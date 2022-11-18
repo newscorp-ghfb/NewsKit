@@ -209,6 +209,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
       ],
       media: getIllustrationComponent(
         'components/banner/banner-anatomy-illustration',
+        {viewBox: '0 0 1600 900'},
       ),
     }}
     options={{

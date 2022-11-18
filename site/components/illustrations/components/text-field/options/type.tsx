@@ -83,7 +83,7 @@ export const Type: React.FC = () => (
       height="178.02"
       rx="22"
       stroke="#BBC3C9"
-      stroke-width="4"
+      strokeWidth="4"
     />
   </Svg>
 );
