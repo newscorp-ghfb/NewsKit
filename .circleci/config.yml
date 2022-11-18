@@ -1741,6 +1741,7 @@ workflows:
           requires:
             - build_docs_prod
             - install_cypress
+            - build_storybook
       - build_push_docker_ecr:
           <<: *only_on_version_tag
           name: build_push_docker_ecr_release
