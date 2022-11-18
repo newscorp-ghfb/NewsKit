@@ -7,7 +7,10 @@ import {
 import {BreadcrumbItemProps, BreadcrumbSize} from '../types';
 import {Breadcrumbs} from '../breadcrumbs';
 import {BreadcrumbItem} from '../breadcrumb-item';
-import {IconOutlinedTrendingFlat} from '../../icons';
+import {
+  IconFilledAddCircleOutline,
+  IconOutlinedTrendingFlat,
+} from '../../icons';
 import {TextBlock} from '../../text-block';
 import {EventTrigger} from '../../instrumentation';
 
@@ -17,10 +20,10 @@ const href = 'http://';
 
 const BreadcrumbWithItem = (props: BreadcrumbItemProps) => (
   <Breadcrumbs>
-    <BreadcrumbItem key="1" {...props} />
+    <BreadcrumbItem size="medium" key="1" {...props} />
   </Breadcrumbs>
 );
-const BreadcrumbItemSizeArray = ['small', 'medium', 'large'];
+// const BreadcrumbItemSizeArray = ['small', 'medium', 'large'];
 const breadcrumbsWithItem = [
   <BreadcrumbItem key="1" href={href}>
     {breadcrumbItemContent}
@@ -104,24 +107,24 @@ describe('Breadcrumbs', () => {
 describe('BreadcrumbItem', () => {
   it('renders with default props', () => {
     const props = {
-      size: 'medium',
+      size: 'medium' as BreadcrumbSize,
       children: breadcrumbItemContent,
       href,
     } as BreadcrumbItemProps;
     const fragment = renderToFragmentWithTheme(BreadcrumbWithItem, props);
     expect(fragment).toMatchSnapshot();
   });
-  test.each(BreadcrumbItemSizeArray)('renders in %s size', currentSize => {
-    const props = {
-      children: breadcrumbItemContent,
-      href,
-    };
-    const fragment = renderToFragmentWithTheme(BreadcrumbWithItem, {
-      ...props,
-      size: currentSize as 'small' | 'medium' | 'large',
-    });
-    expect(fragment).toMatchSnapshot();
-  });
+  // test.each(BreadcrumbItemSizeArray)('renders in default size', currentSize => {
+  //   const props = {
+  //     children: breadcrumbItemContent,
+  //     href,
+  //   };
+  //   const fragment = renderToFragmentWithTheme(BreadcrumbWithItem, {
+  //     ...props,
+  //     size: currentSize as 'medium',
+  //   });
+  //   expect(fragment).toMatchSnapshot();
+  // });
   test('fire tracking event', async () => {
     const mockFireEvent = jest.fn();
     const props = {
@@ -148,5 +151,14 @@ describe('BreadcrumbItem', () => {
         event: 'event data',
       },
     });
+  });
+  it('renders selected menu item with aria attributes', () => {
+    const props = {
+      children: [<IconFilledAddCircleOutline key="i" />],
+      href,
+      selected: true,
+    };
+    const fragment = renderToFragmentWithTheme(BreadcrumbWithItem, props);
+    expect(fragment).toMatchSnapshot();
   });
 });
