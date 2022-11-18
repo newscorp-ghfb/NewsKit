@@ -277,9 +277,8 @@ export const StoryOverrides = () => (
     <StorybookCase title="Custom separators">
       <Breadcrumbs
         overrides={{
-          separator: props => (
+          separator: () => (
             <IconOutlinedTrendingFlat
-              {...props}
               overrides={{
                 size: 'iconSize020',
                 paddingInline: 'space020',
