@@ -1,9 +1,8 @@
 import React from 'react';
-import {InlineMessage, getSizingCssFromTheme, styled} from 'newskit';
+import {InlineMessage} from 'newskit';
+import {AboutPageTemplate} from '../../templates/about-page-template';
 import {ComponentPageCell} from '../../components/layout-cells';
-import Layout, {LayoutProps} from '../../components/layout';
-import {PageIntroduction} from '../../components/page-introduction';
-import {HeadNextSeo} from '../../components/head-next-seo';
+import {LayoutProps} from '../../components/layout';
 import {Link} from '../../components/link';
 import {
   ContentSection,
@@ -11,35 +10,28 @@ import {
   ContentColSpan,
 } from '../../components/content-structure';
 
-const PageIntroductionContainer = styled.div`
-  ${getSizingCssFromTheme('marginTop', 'sizing100')};
-  ${getSizingCssFromTheme('marginBottom', 'sizing090')}
-`;
+const pageName = 'Contact us';
+const pageDescription =
+  'Have a question about our design system? The NewsKit team is here to help you.';
 
-const ContactUs = ({path, ...props}: LayoutProps) => (
-  <Layout {...props} path={`${path}-new`}>
-    <HeadNextSeo
-      title="Contact us"
-      description="Have a question about our design system?
-        The NewsKit team is here to help you."
-      image={{
-        url: 'social/about.png',
-        alt: 'Contact us',
-      }}
-    />
-
-    <PageIntroductionContainer>
-      <PageIntroduction
-        type="About"
-        name="Contact us"
-        introduction="Have a question about our design system? The NewsKit team is here to help."
-        hero={{
-          illustration: 'about/contact-us-hero-illustration',
-          illustrationProps: {viewBox: '0 0 1345 759'},
-        }}
-      />
-    </PageIntroductionContainer>
-
+const ContactUs = (layoutProps: LayoutProps) => (
+  <AboutPageTemplate
+    headTags={{
+      title: pageName,
+      description: pageDescription,
+    }}
+    layoutProps={layoutProps}
+    pageIntroduction={{
+      type: 'About',
+      name: pageName,
+      introduction: pageDescription,
+      hero: {
+        illustration: 'about/contact-us-hero-illustration',
+        illustrationProps: {viewBox: '0 0 1345 759'},
+      },
+      showSeparator: true,
+    }}
+  >
     <ComponentPageCell>
       <ContentSection sectionName="slack channel">
         <ContentPrimary
@@ -88,7 +80,7 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
         />
       </ContentSection>
     </ComponentPageCell>
-  </Layout>
+  </AboutPageTemplate>
 );
 
 export default ContactUs;

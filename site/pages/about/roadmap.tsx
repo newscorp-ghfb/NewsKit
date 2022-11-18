@@ -1,8 +1,7 @@
 import React from 'react';
-import {InlineMessage, getSizingCssFromTheme, styled} from 'newskit';
-import {HeadNextSeo} from '../../components/head-next-seo';
-import Layout, {LayoutProps} from '../../components/layout';
-import {PageIntroduction} from '../../components/page-introduction';
+import {InlineMessage} from 'newskit';
+import {AboutPageTemplate} from '../../templates/about-page-template';
+import {LayoutProps} from '../../components/layout';
 import {Link} from '../../components/link';
 import {
   ContentSection,
@@ -12,34 +11,25 @@ import {
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 
-const PageIntroductionContainer = styled.div`
-  ${getSizingCssFromTheme('marginTop', 'sizing100')};
-  ${getSizingCssFromTheme('marginBottom', 'sizing090')}
-`;
+const pageName = 'Roadmap';
+const pageDescription =
+  'NewsKit’s Design System team is busy building and planning to help you build better products faster.';
 
-const Roadmap = (
-  {path, ...props}: LayoutProps, //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
-) => (
-  <Layout {...props} path={`${path}-new`}>
-    <HeadNextSeo
-      title="Roadmap"
-      description="NewsKit’s Design System team is busy building and planning to help you build better products faster."
-      image={{
-        url: 'social/about.png',
-        alt: 'Roadmap',
-      }}
-    />
-
-    <PageIntroductionContainer>
-      <PageIntroduction
-        type="About"
-        name="Roadmap"
-        introduction="NewsKit’s Design System team is busy building and planning to help you
-        build better products faster."
-        hero={{illustration: 'components/hero-roadmap-illustration'}}
-      />
-    </PageIntroductionContainer>
-
+const Roadmap = (layoutProps: LayoutProps) => (
+  <AboutPageTemplate
+    headTags={{
+      title: pageName,
+      description: pageDescription,
+    }}
+    layoutProps={layoutProps}
+    pageIntroduction={{
+      type: 'About',
+      name: pageName,
+      introduction: pageDescription,
+      hero: {illustration: 'components/hero-roadmap-illustration'},
+      showSeparator: true,
+    }}
+  >
     <ComponentPageCell>
       <ContentSection sectionName="roadmap">
         <ContentPrimary
@@ -69,7 +59,7 @@ const Roadmap = (
         </ContentSecondary>
       </ContentSection>
     </ComponentPageCell>
-  </Layout>
+  </AboutPageTemplate>
 );
 
 export default Roadmap;

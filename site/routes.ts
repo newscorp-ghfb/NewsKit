@@ -4,9 +4,9 @@ export const routes = [
     id: '/about',
     subNav: [
       {
-        title: 'Introduction',
+        title: 'Why use NewsKit?',
         page: true,
-        id: '/about/introduction',
+        id: '/about/why-use-newskit',
       },
       {
         title: 'Release notes',

@@ -658,12 +658,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
                       aria-current="false"
                       class="emotion-13"
                       data-testid="buttonLink"
-                      href="/about/introduction"
+                      href="/about/why-use-newskit"
                     >
                       <span
                         class="emotion-14"
                       >
-                        Introduction
+                        Why use NewsKit?
                       </span>
                     </a>
                   </li>
@@ -4051,13 +4051,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                             aria-current="false"
                             class="emotion-11"
                             data-testid="buttonLink"
-                            href="/about/introduction"
+                            href="/about/why-use-newskit"
                             tabindex="-1"
                           >
                             <span
                               class="emotion-12"
                             >
-                              Introduction
+                              Why use NewsKit?
                             </span>
                           </a>
                         </li>
@@ -7108,12 +7108,12 @@ exports[`Sidebar renders correctly when open 1`] = `
                       aria-current="false"
                       class="emotion-13"
                       data-testid="buttonLink"
-                      href="/about/introduction"
+                      href="/about/why-use-newskit"
                     >
                       <span
                         class="emotion-14"
                       >
-                        Introduction
+                        Why use NewsKit?
                       </span>
                     </a>
                   </li>
@@ -10501,12 +10501,12 @@ exports[`Sidebar renders correctly when open 1`] = `
                             aria-current="false"
                             class="emotion-11"
                             data-testid="buttonLink"
-                            href="/about/introduction"
+                            href="/about/why-use-newskit"
                           >
                             <span
                               class="emotion-12"
                             >
-                              Introduction
+                              Why use NewsKit?
                             </span>
                           </a>
                         </li>
