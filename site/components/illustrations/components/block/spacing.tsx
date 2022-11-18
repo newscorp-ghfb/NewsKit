@@ -26,9 +26,9 @@ export const Spacing: React.FC = () => (
       height="399"
       rx="17.8641"
       stroke="#577FFB"
-      stroke-width="8"
-      stroke-linecap="round"
-      stroke-dasharray="16 16"
+      strokeWidth="8"
+      strokeLinecap="round"
+      strokeDasharray="16 16"
     />
     <Rect
       opacity="0.6"

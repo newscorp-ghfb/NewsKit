@@ -59,7 +59,7 @@ export const ReadOnly: React.FC = () => (
       height="180.197"
       rx="21.5485"
       stroke="#E4E4E4"
-      stroke-width="4.90307"
+      strokeWidth="4.90307"
     />
   </Svg>
 );

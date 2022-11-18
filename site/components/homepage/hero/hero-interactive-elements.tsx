@@ -16,7 +16,7 @@ import {
 import React, {useState} from 'react';
 import {HeroInteractiveContainer, InteractiveElementContainer} from './styled';
 import {HeroInteractiveElementsProps} from './types';
-import HeroGridLogo from '../../illustrations/landing-page/hero-grid-logo';
+import {Illustration} from '../../illustrations/illustration-loader';
 import {
   SelectionList,
   SelectionListOption,
@@ -210,7 +210,11 @@ const HeroInteractiveElements = ({
       </InteractiveElementContainer>
       {/* This element should be the last as it is absolute positioned over the rest of the elements */}
       <InteractiveElementContainer top={210} left={175}>
-        <HeroGridLogo />
+        <Illustration
+          width="60%"
+          viewBox="0 0 179 118"
+          path="landing-page/hero-grid-logo"
+        />
       </InteractiveElementContainer>
     </HeroInteractiveContainer>
   );

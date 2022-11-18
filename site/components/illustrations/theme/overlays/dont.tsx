@@ -108,43 +108,183 @@ export const Dont: React.FC = () => {
           fill="illustrationInterface030"
         />
         <Rect
-          width="169.577"
-          height="401"
-          transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 728 451.581)"
-          fill="url(#paint0_linear_969_138444)"
+          opacity="0.9"
+          width="170"
+          height="10"
+          transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 412 452)"
+          fill="illustrationInterface010"
         />
         <Rect
-          x="761"
-          y="452.111"
-          width="169.577"
-          height="401"
-          transform="rotate(-90 761 452.111)"
-          fill="url(#paint1_linear_969_138444)"
+          opacity="0.95"
+          x="365"
+          y="452"
+          width="170"
+          height="37"
+          transform="rotate(-90 365 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.85"
+          width="170"
+          height="10"
+          transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 422 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.8"
+          width="170"
+          height="10"
+          transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 432 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.75"
+          width="170"
+          height="10"
+          transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 442 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.7"
+          width="170"
+          height="10"
+          transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 452 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.65"
+          width="170"
+          height="10"
+          transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 462 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.6"
+          width="170"
+          height="10"
+          transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 472 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.3"
+          width="170"
+          height="10"
+          transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 482 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.2"
+          width="170"
+          height="10"
+          transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 492 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.1"
+          width="170"
+          height="10"
+          transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 502 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.9"
+          x="1083"
+          y="452"
+          width="170"
+          height="10"
+          transform="rotate(-90 1083 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.95"
+          width="170"
+          height="37"
+          transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 1130 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.85"
+          x="1073"
+          y="452"
+          width="170"
+          height="10"
+          transform="rotate(-90 1073 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.8"
+          x="1063"
+          y="452"
+          width="170"
+          height="10"
+          transform="rotate(-90 1063 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.75"
+          x="1053"
+          y="452"
+          width="170"
+          height="10"
+          transform="rotate(-90 1053 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.7"
+          x="1043"
+          y="452"
+          width="170"
+          height="10"
+          transform="rotate(-90 1043 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.65"
+          x="1033"
+          y="452"
+          width="170"
+          height="10"
+          transform="rotate(-90 1033 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.6"
+          x="1023"
+          y="452"
+          width="170"
+          height="10"
+          transform="rotate(-90 1023 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.3"
+          x="1013"
+          y="452"
+          width="170"
+          height="10"
+          transform="rotate(-90 1013 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.2"
+          x="1003"
+          y="452"
+          width="170"
+          height="10"
+          transform="rotate(-90 1003 452)"
+          fill="illustrationInterface010"
+        />
+        <Rect
+          opacity="0.1"
+          x="993"
+          y="452"
+          width="170"
+          height="10"
+          transform="rotate(-90 993 452)"
+          fill="illustrationInterface010"
         />
       </g>
       <defs>
-        <linearGradient
-          id="paint0_linear_969_138444"
-          x1="84.7884"
-          y1="0"
-          x2="84.7884"
-          y2="401"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="white" stopOpacity="0" />
-          <stop offset="0.816419" stopColor="white" stopOpacity="0.9" />
-        </linearGradient>
-        <linearGradient
-          id="paint1_linear_969_138444"
-          x1="845.788"
-          y1="452.111"
-          x2="845.788"
-          y2="853.111"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="white" stopOpacity="0" />
-          <stop offset="0.816419" stopColor="white" stopOpacity="0.9" />
-        </linearGradient>
         <clipPath id={clip0}>
           <Rect width="1490" height="838" fill="white" />
         </clipPath>

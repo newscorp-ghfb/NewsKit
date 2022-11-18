@@ -45,7 +45,7 @@ export const Considerations: React.FC = () => {
               rx="42"
               fill="illustrationInterface010"
               stroke="#41A0AA"
-              stroke-width="6"
+              strokeWidth="6"
             />
             <Rect
               x="433"
@@ -54,7 +54,7 @@ export const Considerations: React.FC = () => {
               height="84"
               rx="42"
               stroke="#41A0AA"
-              stroke-width="6"
+              strokeWidth="6"
             />
             <Rect
               x="448"
@@ -72,7 +72,7 @@ export const Considerations: React.FC = () => {
               rx="42"
               fill="illustrationInterface010"
               stroke="#41A0AA"
-              stroke-width="6"
+              strokeWidth="6"
             />
             <Rect
               x="561"

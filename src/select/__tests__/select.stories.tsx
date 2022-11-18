@@ -972,7 +972,7 @@ export const SelectVirtualization = () => {
 };
 
 export const StorySelectControlled = () => {
-  const [selectedValue, setSelectedValue] = React.useState('');
+  const [selectedValue, setSelectedValue] = React.useState('Fermium');
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedValue(e.target.value);
   };

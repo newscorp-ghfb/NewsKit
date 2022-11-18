@@ -271,6 +271,11 @@ export const StorySlider1And2Thumbs = () => (
   </>
 );
 StorySlider1And2Thumbs.storyName = 'slider-1-and-2-thumbs';
+StorySlider1And2Thumbs.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
 
 export const StorySliderWithTextLabels = () => (
   <>
@@ -317,6 +322,11 @@ export const StorySliderWithTextLabels = () => (
   </>
 );
 StorySliderWithTextLabels.storyName = 'slider-with-text-labels';
+StorySliderWithTextLabels.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
 
 export const StorySliderWithCustomLabels = () => (
   <>
@@ -360,6 +370,11 @@ export const StorySliderWithCustomLabels = () => (
   </>
 );
 StorySliderWithCustomLabels.storyName = 'slider-with-custom-labels';
+StorySliderWithCustomLabels.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
 
 export const StorySliderWithCustomStylePreset = () => (
   <>
@@ -406,6 +421,11 @@ export const StorySliderWithCustomStylePreset = () => (
   </>
 );
 StorySliderWithCustomStylePreset.storyName = 'slider-with-custom-style-preset';
+StorySliderWithCustomStylePreset.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
 
 export const StorySliderWithCustomRenders = () => (
   <>
@@ -456,6 +476,11 @@ export const StorySliderWithCustomRenders = () => (
   </>
 );
 StorySliderWithCustomRenders.storyName = 'slider-with-custom-renders';
+StorySliderWithCustomRenders.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
 
 export const StorySliderRendersVertical = () => (
   <>
@@ -514,6 +539,11 @@ export const StorySliderRendersVertical = () => (
   </>
 );
 StorySliderRendersVertical.storyName = 'slider-renders-vertical';
+StorySliderRendersVertical.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
 
 export const StorySliderWithLabelsBeforeAndAfter = () => (
   <>
@@ -561,6 +591,11 @@ export const StorySliderWithLabelsBeforeAndAfter = () => (
 );
 StorySliderWithLabelsBeforeAndAfter.storyName =
   'slider-with-labels-before-and-after';
+StorySliderWithLabelsBeforeAndAfter.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
 
 export const StorySliderLogicalProps = () => (
   <>
@@ -585,6 +620,11 @@ export const StorySliderLogicalProps = () => (
   </>
 );
 StorySliderLogicalProps.storyName = 'slider-logical-props';
+StorySliderLogicalProps.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
 
 export const StorySliderWithOutlineOverride = () => (
   <>
@@ -658,3 +698,8 @@ export const StorySliderWithOutlineOverride = () => (
   </>
 );
 StorySliderWithOutlineOverride.storyName = 'slider-with-custom-outline';
+StorySliderWithOutlineOverride.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};

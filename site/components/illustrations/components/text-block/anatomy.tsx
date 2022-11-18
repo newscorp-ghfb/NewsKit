@@ -19,7 +19,7 @@ export const Anatomy: React.FC = () => (
       height="141"
       fill="illustrationInterface020"
       stroke="#577FFB"
-      stroke-width="2"
+      strokeWidth="2"
     />
     <Path
       d="M428.187 372.964V346.749H444.411V349.333H431.335V358.471H443.287V361.017H431.335V370.38H444.411V372.964H428.187Z"

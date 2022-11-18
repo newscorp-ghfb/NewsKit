@@ -28,7 +28,7 @@ export const Anatomy: React.FC = () => (
       d="M494 331C494 326.582 497.582 323 502 323L1077 323.002C1081.42 323.002 1085 326.583 1085 331.002V578C1085 582.418 1081.42 586 1077 586H502C497.582 586 494 582.418 494 578L494 331Z"
       fill="illustrationInterface020"
       stroke="#AEBFFF"
-      stroke-width="1.5"
+      strokeWidth="1.5"
     />
     <Path
       d="M540.59 372.707V396.234H536.73V372.707H540.59Z"

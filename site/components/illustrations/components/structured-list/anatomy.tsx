@@ -17,7 +17,7 @@ export const Anatomy: React.FC = () => (
       d="M1118.92 250.329H391.078C385.842 250.329 381.596 254.575 381.596 259.812V601.22C381.596 606.457 385.842 610.702 391.078 610.702H725.503H1118.92C1124.16 610.702 1128.4 606.457 1128.4 601.22V259.812C1128.4 254.575 1124.16 250.329 1118.92 250.329Z"
       fill="illustrationInterface020"
       stroke="#2B4AAB"
-      stroke-width="1.34109"
+      strokeWidth="1.34109"
     />
     <Path
       fillRule="evenodd"
@@ -168,14 +168,14 @@ export const Anatomy: React.FC = () => (
     <Path
       d="M382.267 232.235V210.235C382.267 199.189 393.709 190.235 407.823 190.235L755.5 190.235V150.5"
       stroke="#577FFB"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <Path
       d="M728 190.235L1102.18 190.235C1116.29 190.235 1127.73 199.189 1127.73 210.235V232.235"
       stroke="#577FFB"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <Circle cx="755" cy="131" r="22" fill="#577FFB" />
     <Path
@@ -203,14 +203,14 @@ export const Anatomy: React.FC = () => (
     <Path
       d="M353.25 252L353.25 341"
       stroke="#577FFB"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <Path
       d="M353.25 296.75L248.5 296.5"
       stroke="#577FFB"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <Circle cx="533.624" cy="713" r="22" fill="#577FFB" />
     <Path
@@ -220,14 +220,14 @@ export const Anatomy: React.FC = () => (
     <Path
       d="M415.874 640.328L653 640.328"
       stroke="#577FFB"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <Path
       d="M533.624 640.327V703.75"
       stroke="#577FFB"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
   </Svg>
 );
