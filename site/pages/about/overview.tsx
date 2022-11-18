@@ -18,8 +18,6 @@ import {
 
 const aboutRouteList: Item[] =
   routes.filter(route => route.title === 'About')[0].subNav || [];
-const aboutRouteSubList: Item[] =
-  aboutRouteList.filter(route => route.title === 'About')[0].subNav || [];
 
 const getAboutCardList = (routeList: Item[]) =>
   routeList
@@ -36,7 +34,7 @@ const getAboutCardList = (routeList: Item[]) =>
       description,
     })) as MediaItem[];
 
-const aboutIndexRouteListCards = getAboutCardList(aboutRouteSubList);
+const aboutIndexRouteListCards = getAboutCardList(aboutRouteList);
 
 const HeaderImage = () => (
   <Illustration path="about/hero" viewBox="0 0 1572 997" />
@@ -60,7 +58,7 @@ const Overview = (layoutProps: LayoutProps) => (
     <Grid lgMargin="sizing000" xsRowGutter="sizing000">
       <ComponentPageCell>
         <ContentSection>
-          <ContentPrimary headline="About" description=" ">
+          <ContentPrimary headline=" ">
             <MediaList
               cards={aboutIndexRouteListCards}
               gridProps={{xsRowGutter: 'space050'}}
