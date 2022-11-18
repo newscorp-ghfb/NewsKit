@@ -14,6 +14,7 @@ export const BreadcrumbItem = React.forwardRef<
       selected,
       href,
       overrides,
+      /* istanbul ignore next */
       size = 'medium',
       eventContext = {},
       eventOriginator = 'breadcrumb-item',

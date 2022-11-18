@@ -13,6 +13,7 @@ import {
 } from '../../icons';
 import {TextBlock} from '../../text-block';
 import {EventTrigger} from '../../instrumentation';
+import {compileTheme, createTheme} from '../../theme';
 
 const breadcrumbItemContent = 'Breadcrumb Item';
 const textBlock = '/';
@@ -159,6 +160,43 @@ describe('BreadcrumbItem', () => {
       selected: true,
     };
     const fragment = renderToFragmentWithTheme(BreadcrumbWithItem, props);
+    expect(fragment).toMatchSnapshot();
+  });
+  it('renders with overrides', () => {
+    const myCustomTheme = compileTheme(
+      createTheme({
+        name: 'menu-item-theme',
+        overrides: {
+          stylePresets: {
+            breadcrumbItemCustom: {
+              base: {
+                backgroundColor: 'pink',
+                color: 'red',
+              },
+            },
+          },
+        },
+      }),
+    );
+    const props = {
+      children: breadcrumbItemContent,
+      href,
+      key: '1',
+      overrides: {
+        stylePreset: ' breadcrumbItemCustom',
+        typographyPreset: 'utilityButton030',
+        minWidth: '10px',
+        minHeight: '11px',
+        spaceInline: 'space030',
+        spaceInset: 'space030',
+        iconSize: 'iconSize030',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(
+      BreadcrumbWithItem,
+      props,
+      myCustomTheme,
+    );
     expect(fragment).toMatchSnapshot();
   });
 });
