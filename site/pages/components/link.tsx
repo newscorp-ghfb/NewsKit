@@ -104,6 +104,25 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               },
             ],
           },
+          {
+            name: 'textOnly',
+            propName: 'textOnly',
+            options: [
+              {
+                label: 'Unset',
+                value: undefined,
+                isdefault: true,
+              },
+              {
+                label: 'true',
+                value: true,
+              },
+              {
+                label: 'false',
+                value: false,
+              },
+            ],
+          },
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ] as any,
       },
@@ -402,6 +421,20 @@ const LinkComponent = (layoutProps: LayoutProps) => (
                 </>
               ),
             },
+            {
+              name: 'textOnly',
+              type: 'boolean',
+              description: (
+                <>
+                  Allows the link to break into multiple lines.
+                  <br />
+                  <br />
+                  Note - when this is true custom icons can&apos;t be passed as
+                  children to the LinkInline component. Custom icons can still
+                  be added before or after the LinkInline component.
+                </>
+              ),
+            },
           ],
           overridesRows: [
             {
@@ -536,6 +569,20 @@ const LinkComponent = (layoutProps: LayoutProps) => (
                   if the passed href is external or internal to the website
                   where the link is used. If the href is external, an icon
                   indicating this will be rendered after (trailing) the label.
+                </>
+              ),
+            },
+            {
+              name: 'textOnly',
+              type: 'boolean',
+              description: (
+                <>
+                  Allows the link to break into multiple lines.
+                  <br />
+                  <br />
+                  Note - when this is true custom icons can&apos;t be passed as
+                  children to the LinkStandalone component. Custom icons can
+                  still be added before or after the LinkInline component.
                 </>
               ),
             },
