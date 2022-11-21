@@ -582,7 +582,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
                   <br />
                   Note - when this is true custom icons can&apos;t be passed as
                   children to the LinkStandalone component. Custom icons can
-                  still be added before or after the LinkInline component.
+                  still be added before or after the LinkStandalone component.
                 </>
               ),
             },
