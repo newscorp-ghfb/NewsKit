@@ -698,7 +698,8 @@ export const routes = [
             title: 'Ordered List',
             page: true,
             id: '/components/ordered-list',
-            description: 'Typically is a numbered list of items.',
+            description:
+              'Ordered lists make blocks of text easier to read, structuring sequential information into manageable, numbered items.',
             illustration: 'components/ordered-list-illustration',
           },
           {
