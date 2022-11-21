@@ -41,10 +41,10 @@ export const StackIllustration: React.FC = () => {
           height="230"
           rx="12"
           stroke="#2B4AAB"
-          stroke-width="6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-dasharray="16 16"
+          strokeWidth="6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeDasharray="16 16"
         />
       </g>
       <defs>

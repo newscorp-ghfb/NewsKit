@@ -72,7 +72,7 @@ const ImageWrapper = styled.div`
 
 const getImage = (url: string) => (
   <ImageWrapper>
-    <Illustration path={url} />
+    <Illustration viewBox="0 0 1000 1000" path={url} />
   </ImageWrapper>
 );
 
@@ -481,7 +481,10 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
           description="Transition presets define attributes such as the visual style, size or position of an element across multiple states over time. You can reuse transition presets on multiple elements throughout the system."
           showSeparator
         >
-          <Illustration path="theme/transition-presets/overview" />
+          <Illustration
+            viewBox="0 0 4911 2888"
+            path="theme/transition-presets/overview"
+          />
         </ContentPrimary>
       </ContentSection>
 
@@ -552,7 +555,10 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Illustration path="theme/transition-presets/transition-preset-states/overview" />
+          <Illustration
+            viewBox="0 0 4911 1894"
+            path="theme/transition-presets/transition-preset-states/overview"
+          />
         </ContentPrimary>
         <ContentSecondary
           description="There are two ways to define transitions:"
@@ -978,6 +984,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
                   'To alleviate this problem with page-level transitions, designers should refer to the documentation provided in Figma.',
                 media: getIllustrationComponent(
                   'theme/transition-presets/transition-presets-in-figma',
+                  {viewBox: '0 0 1345 759'},
                 ),
               },
             ]}

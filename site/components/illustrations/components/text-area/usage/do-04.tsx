@@ -36,7 +36,7 @@ export const Do04: React.FC = () => (
         height="315.987"
         rx="21.5575"
         stroke="#BBC3C9"
-        stroke-width="5.01337"
+        strokeWidth="5.01337"
       />
     </g>
     <g opacity="0.2">

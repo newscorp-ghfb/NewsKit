@@ -188,6 +188,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
       ],
       media: getIllustrationComponent(
         'components/drawer/drawer-anatomy-illustration',
+        {viewBox: '0 0 1600 900'},
       ),
     }}
     options={{

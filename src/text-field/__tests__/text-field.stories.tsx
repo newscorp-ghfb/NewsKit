@@ -241,6 +241,12 @@ export const TextFieldBasics = () => (
     </Grid>
   </>
 );
+TextFieldBasics.parameters = {
+  percy: {
+    waitForSelector: 'input:focus',
+  },
+};
+
 export const TextFieldWithOverrides = () => (
   <>
     <StorybookHeading>Text With Overrides</StorybookHeading>

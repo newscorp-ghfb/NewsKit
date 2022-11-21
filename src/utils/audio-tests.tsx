@@ -4,8 +4,7 @@ import * as React from 'react';
 import {ComponentType, useEffect, useState} from 'react';
 import {AudioPlayerComposableProps} from '../audio-player-composable/types';
 import {AudioPlayerProps} from '../audio-player';
-
-const isVisualTest = process.env.STORYBOOK_IS_VISUAL_TEST === 'true';
+import {isVisualTest} from '../test/test-utils';
 
 type Props = AudioPlayerProps | AudioPlayerComposableProps;
 type Component =

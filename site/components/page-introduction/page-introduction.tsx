@@ -64,7 +64,12 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
         {heroIsImage(hero) ? (
           <Image loadingAspectRatio="16:9" alt="" {...hero} />
         ) : (
-          hero && <Illustration path={hero.illustration} />
+          hero && (
+            <Illustration
+              path={hero.illustration}
+              {...hero.illustrationProps}
+            />
+          )
         )}
       </Block>
       {showSeparator && <Separator />}

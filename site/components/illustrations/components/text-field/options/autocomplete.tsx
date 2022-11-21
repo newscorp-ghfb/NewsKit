@@ -73,7 +73,7 @@ export const Autocomplete: React.FC = () => (
       height="181.409"
       rx="20.0957"
       stroke="#2B4AAB"
-      stroke-width="7.80859"
+      strokeWidth="7.80859"
     />
   </Svg>
 );

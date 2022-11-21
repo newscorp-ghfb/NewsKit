@@ -77,7 +77,7 @@ export const TextField: React.FC = () => (
       height="179.77"
       rx="32.1252"
       stroke="#577FFB"
-      stroke-width="3.40385"
+      strokeWidth="3.40385"
     />
   </Svg>
 );

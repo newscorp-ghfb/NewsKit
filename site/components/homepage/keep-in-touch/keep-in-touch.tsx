@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Card, GridLayout, Headline, LinkStandalone, TextBlock} from 'newskit';
+import {Illustration} from '../../illustrations/illustration-loader';
 import {IconFilledLaunch} from '../../../../src/icons';
-import {Github, Storybook, Medium} from '../../illustrations/landing-page';
 import {ContentPrimary} from '../../content-structure';
 
 const keepInTouchContent = [
@@ -9,19 +9,25 @@ const keepInTouchContent = [
     title: 'GitHub',
     url: 'https://github.com/newscorp-ghfb/newskit',
     description: 'Contribute, request features and report bugs.',
-    icon: () => <Github />,
+    icon: () => (
+      <Illustration viewBox="0 0 1490 547" path="landing-page/github" />
+    ),
   },
   {
     title: 'Storybook',
     url: 'https://storybook.newskit.co.uk/',
     description: 'Take a look at our UI components.',
-    icon: () => <Storybook />,
+    icon: () => (
+      <Illustration viewBox="0 0 1493 547" path="landing-page/storybook" />
+    ),
   },
   {
     title: 'Blog',
     url: 'https://medium.com/newskit-design-system',
     description: 'Hear what our team’s been up to.',
-    icon: () => <Medium />,
+    icon: () => (
+      <Illustration viewBox="0 0 1490 547" path="landing-page/medium" />
+    ),
   },
 ];
 

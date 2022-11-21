@@ -48,8 +48,8 @@ export const Tutorials: React.FC = () => (
       height="664"
       rx="17.5"
       stroke="#577FFB"
-      stroke-width="5"
-      stroke-dasharray="10 10"
+      strokeWidth="5"
+      strokeDasharray="10 10"
     />
     <Rect
       x="670"
