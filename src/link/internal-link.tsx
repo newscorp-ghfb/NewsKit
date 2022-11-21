@@ -13,6 +13,7 @@ import {logicalProps} from '../utils/logical-properties';
 import {getTransitionPreset} from '../utils/style/transition-preset';
 
 const StyledLink = styled.a<InternalLinkProps>`
+  display: ${({textOnly}) => (textOnly ? 'inline' : 'inline-block')};
   ${getTransitionPreset(`link`, '')};
   ${getStylePreset('link', '')}
   ${logicalProps('link')}

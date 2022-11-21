@@ -164,6 +164,7 @@ export const StoryLink = () => (
     <StorybookHeading>Link inline</StorybookHeading>
     <LinkInline href="/">Inline link</LinkInline>
     <br />
+    <br />
     <LinkInline
       href="/"
       overrides={{
@@ -174,11 +175,13 @@ export const StoryLink = () => (
       Inline link with style and type overrides
     </LinkInline>
     <br />
+    <br />
     <LinkInline href="/">
       <IconFilledEmail overrides={{size: 'iconSize010'}} />
       Inline link with leading and trailing icons
       <IconFilledEmail overrides={{size: 'iconSize010'}} />
     </LinkInline>
+    <br />
     <br />
     <LinkInline
       href="/"
@@ -191,7 +194,9 @@ export const StoryLink = () => (
       <IconFilledEmail overrides={{size: 'iconSize010'}} />
     </LinkInline>
     <br />
+    <br />
     <LinkInline href="mailto:###">Inline mail link</LinkInline>
+    <br />
     <br />
     <LinkInline href="tel:###">Inline telephone link</LinkInline>
 
@@ -203,6 +208,7 @@ export const StoryLink = () => (
     >
       External link with external icon
     </LinkInline>
+    <br />
     <br />
     <LinkInline
       href="http://newskit.staging-news.co.uk/"
@@ -216,6 +222,7 @@ export const StoryLink = () => (
       External link with custom size for external icon
     </LinkInline>
     <br />
+    <br />
     <LinkInline
       href="http://newskit.staging-news.co.uk/"
       external={false}
@@ -228,9 +235,11 @@ export const StoryLink = () => (
     <StorybookHeading>Link standalone</StorybookHeading>
     <LinkStandalone href="/">Standalone link</LinkStandalone>
     <br />
+    <br />
     <LinkStandalone href="https://google.com">
       Standalone link external
     </LinkStandalone>
+    <br />
     <br />
     <LinkStandalone
       href="https://google.com"
@@ -251,7 +260,6 @@ export const StoryLink = () => (
       </LinkInline>{' '}
       and this and that.
     </TextBlock>
-
     <br />
     <TextBlock>
       This is a great article about this and this and this and that and this and{' '}

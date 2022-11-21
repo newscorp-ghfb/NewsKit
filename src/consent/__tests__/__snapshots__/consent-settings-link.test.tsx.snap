@@ -3,6 +3,7 @@
 exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -127,6 +128,7 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -251,6 +253,7 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 exports[`ConsentSettingsLink with no children renders link with default text 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
