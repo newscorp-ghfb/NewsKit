@@ -104,7 +104,6 @@ exports[`Link does not render the external icon even if the href is external 1`]
 
 .emotion-2 {
   margin: 0;
-  display: inline-block;
   display: block;
 }
 
@@ -229,7 +228,6 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
 
 .emotion-2 {
   margin: 0;
-  display: inline-block;
   display: block;
 }
 
@@ -354,7 +352,6 @@ exports[`Link renders as expected in default state 1`] = `
 
 .emotion-2 {
   margin: 0;
-  display: inline-block;
   display: block;
 }
 
@@ -371,6 +368,98 @@ exports[`Link renders as expected in default state 1`] = `
         test link test
       </span>
     </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link renders as expected in textOnly state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #3358CC;
+}
+
+.emotion-0:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:active:not(:disabled) svg {
+  fill: #14328D;
+}
+
+.emotion-0:visited:not(:disabled) {
+  color: #6454E3;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:not(:disabled) svg {
+  fill: #6454E3;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #6454E3;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #6454E3;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+<a
+    class="emotion-0"
+    href="#"
+  >
+    test link test
   </a>
 </DocumentFragment>
 `;
@@ -490,7 +579,6 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 
 .emotion-3 {
   margin: 0;
-  display: inline-block;
   display: block;
 }
 
@@ -672,7 +760,6 @@ exports[`Link renders the external icon if the href is external 1`] = `
 
 .emotion-2 {
   margin: 0;
-  display: inline-block;
   display: block;
 }
 
@@ -799,7 +886,6 @@ exports[`Link renders with logical props overrides 1`] = `
 
 .emotion-2 {
   margin: 0;
-  display: inline-block;
   display: block;
 }
 
@@ -873,23 +959,9 @@ exports[`Link renders with overrides 1`] = `
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
-}
-
-.emotion-2::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-2::after {
-  content: '';
-  margin-top: -0.4em;
   display: block;
 }
 
