@@ -72,22 +72,22 @@ export const RowColumnGap: React.FC = () => (
     <Path
       d="M625 179V155C625 143.954 616.046 135 605 135H597C585.954 135 577 143.954 577 155V179"
       stroke="#577FFB"
-      stroke-width="3"
+      strokeWidth="3"
     />
     <Path
       d="M317 439L293 439C281.954 439 273 447.954 273 459L273 467C273 478.046 281.954 487 293 487L317 487"
       stroke="#577FFB"
-      stroke-width="3"
+      strokeWidth="3"
     />
     <Path
       d="M889 135V111C889 99.9543 880.046 91 869 91H620C608.954 91 600 99.9543 600 111V135"
       stroke="#577FFB"
-      stroke-width="3"
+      strokeWidth="3"
     />
     <Path
       d="M913 179V155C913 143.954 904.046 135 893 135H885C873.954 135 865 143.954 865 155V179"
       stroke="#577FFB"
-      stroke-width="3"
+      strokeWidth="3"
     />
   </Svg>
 );

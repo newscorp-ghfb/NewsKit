@@ -1,6 +1,6 @@
-import {GridLayout} from 'newskit';
 import * as React from 'react';
-import {Release, ReleasesPageProps} from '../utils/release-notes/types';
+import {GridLayout} from 'newskit';
+import {ReleasesPageProps} from '../utils/release-notes/types';
 import {
   Explore,
   Hero,
@@ -13,6 +13,8 @@ import Layout, {LayoutProps} from '../components/layout';
 import {IconFilledLaunch} from '../../src/icons';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
+import {ContentProps, getSheets} from '../utils/google-sheet';
+import {formatSheetData, getValueFromCMS} from '../utils/google-sheet/utils';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -26,7 +28,11 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
-const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
+const Index = ({
+  releases,
+  content,
+  ...layoutProps
+}: LayoutProps & ReleasesPageProps & ContentProps) => {
   const {themeMode, toggleTheme} = layoutProps;
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
@@ -46,8 +52,12 @@ const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
           }}
         >
           <FeatureCard
-            title="Latest blog"
-            description="How an audio player component tells the story of NewsKit Design System's changing strategy"
+            title={getValueFromCMS(content, 'HeroCardTitle', 'Latest blog')}
+            description={getValueFromCMS(
+              content,
+              'HeroCardDescription',
+              "How an audio player component tells the story of NewsKit Design System's changing strategy",
+            )}
             stylePrefix="worldDesignSystemsWeekCard"
             layout="horizontal"
             overrides={{
@@ -55,8 +65,16 @@ const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
               description: {typographyPreset: 'editorialSubheadline010'},
             }}
             buttonIcon={<IconFilledLaunch />}
-            buttonLabel="Read on Medium"
-            buttonHref="https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67"
+            buttonLabel={getValueFromCMS(
+              content,
+              'HeroCardLinkText',
+              'Read on Medium',
+            )}
+            buttonHref={getValueFromCMS(
+              content,
+              'HeroCardLink',
+              'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
+            )}
             buttonOverrides={{
               paddingInline: 'space000',
               typographyPreset: 'utilityButton020',
@@ -118,6 +136,11 @@ export default Index;
 // This function is called at build time and the response is passed to the page
 // component as props.
 export async function getStaticProps() {
-  const releases: Release[] = await fetchGitHubReleases(4);
-  return {props: {releases}};
+  const [releases, data] = await Promise.all([
+    fetchGitHubReleases(4),
+    getSheets('Homepage'),
+  ]);
+
+  const content = formatSheetData(data);
+  return {props: {releases, content}};
 }

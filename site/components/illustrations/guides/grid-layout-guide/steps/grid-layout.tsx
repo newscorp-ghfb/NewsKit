@@ -81,8 +81,8 @@ export const GridLayout: React.FC = () => {
         height="278"
         rx="17.5"
         stroke="#577FFB"
-        stroke-width="5"
-        stroke-dasharray="10 10"
+        strokeWidth="5"
+        strokeDasharray="10 10"
       />
       <Rect
         x="2.5"
@@ -92,8 +92,8 @@ export const GridLayout: React.FC = () => {
         rx="17.5"
         transform="matrix(1 0 0 -1 454 588)"
         stroke="#577FFB"
-        stroke-width="5"
-        stroke-dasharray="10 10"
+        strokeWidth="5"
+        strokeDasharray="10 10"
       />
       <Rect
         x="456.5"
@@ -102,8 +102,8 @@ export const GridLayout: React.FC = () => {
         height="104"
         rx="17.5"
         stroke="#577FFB"
-        stroke-width="5"
-        stroke-dasharray="10 10"
+        strokeWidth="5"
+        strokeDasharray="10 10"
       />
       <Path
         d="M922.48 90.1601C921.691 90.1601 921.029 89.9148 920.496 89.4241C919.984 88.9121 919.728 88.2828 919.728 87.5361C919.728 86.7894 919.984 86.1708 920.496 85.6801C921.029 85.1681 921.691 84.9121 922.48 84.9121C923.269 84.9121 923.92 85.1681 924.432 85.6801C924.965 86.1708 925.232 86.7894 925.232 87.5361C925.232 88.2828 924.965 88.9121 924.432 89.4241C923.92 89.9148 923.269 90.1601 922.48 90.1601ZM924.688 92.2721V110H920.208V92.2721H924.688Z"

@@ -2,11 +2,9 @@ import React from 'react';
 import {getSSRId} from 'newskit';
 import {Svg} from '../../svg';
 import {Path} from '../../path';
+import {Rect} from '../../rect';
 
 export const Hero: React.FC = () => {
-  const mask0 = getSSRId();
-  const mask1 = getSSRId();
-  const mask2 = getSSRId();
   const filter0 = getSSRId();
   const filter1 = getSSRId();
   const filter2 = getSSRId();
@@ -20,29 +18,45 @@ export const Hero: React.FC = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <Path d="M0 0H1490V838H0V0Z" fill="illustrationBackground020" />
-      <Path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M386 145.833V121H411.643V129H394V145.833H386ZM514.214 121H462.929V129H514.214V121ZM565.5 121V129H616.786V121H565.5ZM668.071 121V129H719.357V121H668.071ZM770.643 121V129H821.929V121H770.643ZM873.214 121V129H924.5V121H873.214ZM975.786 121V129H1027.07V121H975.786ZM1078.36 121V129H1096V145.833H1104V121H1078.36ZM1104 195.5H1096V245.167H1104V195.5ZM1104 294.833H1096V344.5H1104V294.833ZM1104 394.167H1096V443.833H1104V394.167ZM1104 493.5H1096V543.167H1104V493.5ZM1104 592.833H1096V642.5H1104V592.833ZM1104 692.167H1096V709H1078.36V717H1104V692.167ZM1027.07 717V709H975.786V717H1027.07ZM924.5 717V709H873.214V717H924.5ZM821.929 717V709H770.643V717H821.929ZM719.357 717V709H668.071V717H719.357ZM616.786 717V709H565.5V717H616.786ZM514.214 717V709H462.929V717H514.214ZM411.643 717V709H394V692.167H386V717H411.643ZM386 642.5H394V592.833H386V642.5ZM386 543.167H394V493.5H386V543.167ZM386 443.833H394V394.167H386V443.833ZM386 344.5H394V294.833H386V344.5ZM386 245.167H394V195.5H386V245.167Z"
-        fill="illustrationPalette020"
+      <Rect width="1490" height="838" fill="illustrationBackground020" />
+      <Rect
+        x="390"
+        y="125"
+        width="710"
+        height="588"
+        stroke="#AEBFFF"
+        strokeWidth="8"
+        strokeDasharray="54 54"
       />
       <g filter={`url(#${filter0})`}>
-        <Path
-          d="M461 223C461 205.327 475.327 191 493 191H997C1014.67 191 1029 205.327 1029 223C1029 240.673 1014.67 255 997 255H493C475.327 255 461 240.673 461 223Z"
+        <Rect
+          x="461"
+          y="191"
+          width="568"
+          height="64"
+          rx="32"
           fill="illustrationPalette040"
         />
       </g>
-      <Path
-        d="M803 355.142C803 347.872 797.106 341.978 789.836 341.978H553.325C546.055 341.978 540.161 347.872 540.161 355.142C540.161 362.412 546.055 368.305 553.325 368.305H789.836C797.106 368.305 803 362.412 803 355.142Z"
+      <Rect
+        width="262.839"
+        height="26.3274"
+        rx="13.1637"
+        transform="matrix(-1 0 0 1 803 341.978)"
         fill="illustrationPalette020"
       />
-      <Path
-        d="M931 481.793C931 474.523 925.106 468.629 917.836 468.629H553.325C546.055 468.629 540.161 474.523 540.161 481.793C540.161 489.063 546.055 494.956 553.325 494.956H917.836C925.106 494.956 931 489.063 931 481.793Z"
+      <Rect
+        width="390.839"
+        height="26.3274"
+        rx="13.1637"
+        transform="matrix(-1 0 0 1 931 468.629)"
         fill="illustrationPalette020"
       />
-      <Path
-        d="M755 609.441C755 602.17 749.106 596.277 741.836 596.277H553.325C546.055 596.277 540.161 602.17 540.161 609.441C540.161 616.711 546.055 622.604 553.325 622.604H741.836C749.106 622.604 755 616.711 755 609.441Z"
+      <Rect
+        width="214.839"
+        height="26.3274"
+        rx="13.1637"
+        transform="matrix(-1 0 0 1 755 596.277)"
         fill="illustrationPalette020"
       />
       <Path
@@ -52,26 +66,10 @@ export const Hero: React.FC = () => {
         fill="illustrationPalette020"
       />
       <g filter={`url(#${filter1})`}>
-        <mask
-          id={mask0}
-          mask-type="alpha"
-          maskUnits="userSpaceOnUse"
-          x="472"
-          y="340"
-          width="30"
-          height="30"
-        >
-          <Path
-            d="M472.822 355.142C472.822 347.242 479.226 340.838 487.125 340.838C495.025 340.838 501.429 347.242 501.429 355.142C501.429 363.042 495.025 369.446 487.125 369.446C479.226 369.446 472.822 363.042 472.822 355.142Z"
-            fill="white"
-          />
-        </mask>
-        <g mask={`url(#${mask0})`}>
-          <Path
-            d="M479.965 333.766C468.151 336.931 461.133 349.053 464.292 360.841C467.45 372.629 479.588 379.618 491.403 376.452C503.218 373.287 510.235 361.164 507.077 349.377C503.918 337.589 491.78 330.6 479.965 333.766Z"
-            fill="illustrationPalette020"
-          />
-        </g>
+        <Path
+          d="M472.821 355.142C472.821 347.242 479.225 340.838 487.125 340.838V340.838C495.025 340.838 501.429 347.242 501.429 355.142V355.142C501.429 363.042 495.025 369.446 487.125 369.446V369.446C479.225 369.446 472.821 363.042 472.821 355.142V355.142Z"
+          fill="illustrationPalette020"
+        />
       </g>
       <Path
         fillRule="evenodd"
@@ -80,26 +78,10 @@ export const Hero: React.FC = () => {
         fill="illustrationPalette020"
       />
       <g filter={`url(#${filter2})`}>
-        <mask
-          id={mask1}
-          mask-type="alpha"
-          maskUnits="userSpaceOnUse"
-          x="472"
-          y="467"
-          width="30"
-          height="30"
-        >
-          <Path
-            d="M472.822 481.793C472.822 473.893 479.226 467.489 487.125 467.489C495.025 467.489 501.429 473.893 501.429 481.793C501.429 489.693 495.025 496.097 487.125 496.097C479.226 496.097 472.822 489.693 472.822 481.793Z"
-            fill="white"
-          />
-        </mask>
-        <g mask={`url(#${mask1})`}>
-          <Path
-            d="M479.965 460.416C468.151 463.582 461.133 475.704 464.292 487.492C467.45 499.28 479.588 506.269 491.403 503.103C503.218 499.937 510.235 487.815 507.077 476.028C503.918 464.24 491.78 457.251 479.965 460.416Z"
-            fill="illustrationPalette020"
-          />
-        </g>
+        <Path
+          d="M472.821 481.793C472.821 473.893 479.225 467.489 487.125 467.489V467.489C495.025 467.489 501.429 473.893 501.429 481.793V481.793C501.429 489.693 495.025 496.097 487.125 496.097V496.097C479.225 496.097 472.821 489.693 472.821 481.793V481.793Z"
+          fill="illustrationPalette020"
+        />
       </g>
       <Path
         fillRule="evenodd"
@@ -108,26 +90,10 @@ export const Hero: React.FC = () => {
         fill="illustrationPalette020"
       />
       <g filter={`url(#${filter3})`}>
-        <mask
-          id={mask2}
-          mask-type="alpha"
-          maskUnits="userSpaceOnUse"
-          x="472"
-          y="595"
-          width="30"
-          height="29"
-        >
-          <Path
-            d="M472.822 609.44C472.822 601.541 479.226 595.137 487.125 595.137C495.025 595.137 501.429 601.541 501.429 609.44C501.429 617.34 495.025 623.744 487.125 623.744C479.226 623.744 472.822 617.34 472.822 609.44Z"
-            fill="white"
-          />
-        </mask>
-        <g mask={`url(#${mask2})`}>
-          <Path
-            d="M479.965 588.064C468.151 591.23 461.133 603.352 464.292 615.139C467.45 626.927 479.588 633.916 491.403 630.751C503.218 627.585 510.235 615.463 507.077 603.675C503.918 591.888 491.78 584.898 479.965 588.064Z"
-            fill="illustrationPalette020"
-          />
-        </g>
+        <Path
+          d="M472.821 609.44C472.821 601.541 479.225 595.137 487.125 595.137V595.137C495.025 595.137 501.429 601.541 501.429 609.44V609.44C501.429 617.34 495.025 623.744 487.125 623.744V623.744C479.225 623.744 472.821 617.34 472.821 609.44V609.44Z"
+          fill="illustrationPalette020"
+        />
       </g>
       <defs>
         <filter
@@ -155,12 +121,12 @@ export const Hero: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_1201_311053"
+            result="effect1_dropShadow_2549_80193"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_1201_311053"
+            in2="effect1_dropShadow_2549_80193"
             result="shape"
           />
         </filter>
@@ -189,12 +155,12 @@ export const Hero: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_1201_311053"
+            result="effect1_dropShadow_2549_80193"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_1201_311053"
+            in2="effect1_dropShadow_2549_80193"
             result="shape"
           />
         </filter>
@@ -223,12 +189,12 @@ export const Hero: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_1201_311053"
+            result="effect1_dropShadow_2549_80193"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_1201_311053"
+            in2="effect1_dropShadow_2549_80193"
             result="shape"
           />
         </filter>
@@ -257,12 +223,12 @@ export const Hero: React.FC = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_1201_311053"
+            result="effect1_dropShadow_2549_80193"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_1201_311053"
+            in2="effect1_dropShadow_2549_80193"
             result="shape"
           />
         </filter>

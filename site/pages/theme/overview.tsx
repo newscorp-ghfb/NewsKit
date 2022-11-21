@@ -1,22 +1,29 @@
 import React from 'react';
-import {Grid, ThemeProvider} from 'newskit';
+import {Grid} from 'newskit';
 import {
   ContentPrimary,
   ContentSection,
 } from '../../components/content-structure';
-import {HeaderImage} from '../../components/illustrations/theme/header-image';
 import Layout, {LayoutProps} from '../../components/layout';
 import {MediaItem, MediaList} from '../../components/media-list';
 import {HeaderIndex} from '../../components/header-index';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {routes} from '../../routes';
-import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {
+  getIllustrationComponent,
+  Illustration,
+} from '../../components/illustrations/illustration-loader';
 import {Item} from '../../components/sidebar/types';
 import {HeadNextSeo} from '../../components/head-next-seo';
 import {
   foundationsThemeLight,
   foundationsThemeDark,
 } from '../../theme/doc-theme';
+import {ThemeProviderSite} from '../../components/theme-provider-site';
+
+const HeaderImage = () => (
+  <Illustration path="theme/header-image" viewBox="0 0 1572 997" />
+);
 
 const themeRouteList: Item[] =
   routes.filter(route => route.title === 'Theme')[0].subNav || [];
@@ -54,7 +61,7 @@ const Overview = (layoutProps: LayoutProps) => {
   return (
     <Layout {...layoutProps} newPage>
       {({themeMode}) => (
-        <ThemeProvider
+        <ThemeProviderSite
           theme={
             themeMode === 'light' ? foundationsThemeLight : foundationsThemeDark
           }
@@ -111,7 +118,7 @@ const Overview = (layoutProps: LayoutProps) => {
               </ContentSection>
             </ComponentPageCell>
           </Grid>
-        </ThemeProvider>
+        </ThemeProviderSite>
       )}
     </Layout>
   );

@@ -33,7 +33,10 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
         type="About"
         name="Contact us"
         introduction="Have a question about our design system? The NewsKit team is here to help."
-        hero={{illustration: 'about/contact-us-hero-illustration'}}
+        hero={{
+          illustration: 'about/contact-us-hero-illustration',
+          illustrationProps: {viewBox: '0 0 1345 759'},
+        }}
       />
     </PageIntroductionContainer>
 

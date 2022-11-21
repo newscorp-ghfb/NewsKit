@@ -1,17 +1,8 @@
 import {useTheme} from 'newskit';
 import React, {SVGAttributes} from 'react';
+import {toCSSVar} from './utils';
 
-export const Circle: React.FC<SVGAttributes<SVGCircleElement>> = ({
-  fill,
-  stroke,
-  ...props
-}) => {
+export const Circle: React.FC<SVGAttributes<SVGCircleElement>> = props => {
   const theme = useTheme();
-  return (
-    <circle
-      {...props}
-      fill={fill ? theme.colors[fill] || fill : undefined}
-      stroke={stroke ? theme.colors[stroke] || stroke : undefined}
-    />
-  );
+  return <circle {...toCSSVar(theme, props)} />;
 };
