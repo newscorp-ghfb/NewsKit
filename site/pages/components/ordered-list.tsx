@@ -124,7 +124,72 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
             <>Royal Family</>
           </OrderedList>
         ),
-        knobs: [],
+        knobs: [
+          {
+            name: 'Overrides',
+            propName: 'overrides',
+            options: [
+              {
+                label: 'Default',
+                value: {
+                  content: {
+                    typographyPreset: 'editorialParagraph010',
+                  },
+                },
+                isDefault: true,
+              },
+              {
+                label: 'utilityButton020',
+                value: {
+                  content: {
+                    typographyPreset: 'utilityButton020',
+                  },
+                },
+              },
+            ],
+          },
+          {
+            name: 'Style Preset Overrides',
+            propName: 'overrides',
+            options: [
+              {
+                label: 'Default',
+                value: {
+                  content: {
+                    stylePreset: 'inkBase',
+                  },
+                  marker: {
+                    stylePreset: 'inkBase',
+                  },
+                },
+                isDefault: true,
+              },
+              {
+                label: 'inkPositive',
+                value: {
+                  content: {
+                    stylePreset: 'inkPositive',
+                  },
+                  marker: {
+                    stylePreset: 'inkPositive',
+                  },
+                },
+              },
+              {
+                label: 'inkNegative',
+                value: {
+                  content: {
+                    stylePreset: 'inkNegative',
+                  },
+                  marker: {
+                    stylePreset: 'inkNegative',
+                  },
+                },
+              },
+            ],
+          },
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ] as any,
       },
     }}
     anatomy={{
