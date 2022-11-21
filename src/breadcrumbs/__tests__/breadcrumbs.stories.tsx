@@ -56,7 +56,7 @@ const breadcrumbItemCustomThemeObject: CreateThemeArgs = {
 
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <Breadcrumbs>
+    <Breadcrumbs aria-label="default">
       <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
       <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
       <BreadcrumbItem selected href={href}>
@@ -79,7 +79,7 @@ export const StorySize = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase aria-label="medium" title="Medium">
-      <Breadcrumbs>
+      <Breadcrumbs aria-label="medium">
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
@@ -102,8 +102,8 @@ StorySize.storyName = 'Size';
 
 export const StoryStates = () => (
   <StorybookPage columns={blockGridCols} columnGap="8px">
-    <StorybookCase aria-label="breadcrumbs-default" title="Base">
-      <Breadcrumbs showTrailingSeparator>
+    <StorybookCase title="Base">
+      <Breadcrumbs aria-label="breadcrumbs-default" showTrailingSeparator>
         <BreadcrumbItem
           overrides={{stylePreset: 'breadcrumbDefault'}}
           href={href}
@@ -170,7 +170,7 @@ export const StoryVariations = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Both">
-      <Breadcrumbs aria-label="both icon">
+      <Breadcrumbs aria-label="both icons">
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
@@ -181,8 +181,8 @@ export const StoryVariations = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="'Home' icon for the first breadcrumb item">
-      <Breadcrumbs>
-        <BreadcrumbItem aria-label="with home icon" href={href}>
+      <Breadcrumbs aria-label="with home icon">
+        <BreadcrumbItem href={href}>
           <IconFilledHome
             overrides={{
               stylePreset: 'iconButtonMinimalPrimary',
