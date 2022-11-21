@@ -298,7 +298,6 @@ exports[`CharacterCount displays no message if no max or min specified 1`] = `
   padding: 0.5px 0px;
   min-height: 12px;
   margin-block-end: 8px;
-  padding-inline: 8px;
 }
 
 .emotion-0::before {
@@ -456,7 +455,6 @@ exports[`CharacterCount displays state passed 1`] = `
   padding: 0.5px 0px;
   min-height: 12px;
   margin-block-end: 8px;
-  padding-inline: 8px;
 }
 
 .emotion-0::before {
@@ -616,7 +614,6 @@ exports[`CharacterCount with maxLength displays starting number of characters re
   padding: 0.5px 0px;
   min-height: 12px;
   margin-block-end: 8px;
-  padding-inline: 8px;
 }
 
 .emotion-0::before {
@@ -776,7 +773,6 @@ exports[`CharacterCount with minLength displays starting number of characters re
   padding: 0.5px 0px;
   min-height: 12px;
   margin-block-end: 8px;
-  padding-inline: 8px;
 }
 
 .emotion-0::before {
