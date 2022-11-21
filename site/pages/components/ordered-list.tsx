@@ -117,15 +117,14 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the ordered list component, its variations, and configuration options.',
       playground: {
         componentName: 'OrderedList',
-        component: state => <OrderedList {...state} />,
-        knobs: [
-          {
-            name: 'List Data',
-            propName: 'children',
-            value: ['Prince Harry', 'Meghan Markle', 'Royal Family'],
-          },
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ] as any,
+        component: state => (
+          <OrderedList {...state}>
+            <>Prince Harry</>
+            <>Meghan Markle</>
+            <>Royal Family</>
+          </OrderedList>
+        ),
+        knobs: [],
       },
     }}
     anatomy={{
