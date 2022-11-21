@@ -148,7 +148,7 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
                     typographyPreset: 'utilityButton020',
                   },
                   counter: {
-                    typographyPreset: 'editorialParagraph020',
+                    typographyPreset: 'utilityButton020',
                   },
                 },
               },
