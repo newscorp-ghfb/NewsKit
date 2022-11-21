@@ -328,6 +328,23 @@ commands:
       - store_artifacts:
           path: cypress/screenshots
 
+  run_test_visual_comps_percy:
+    description: 'Run the Percy tests for comps visual changes'
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Install Headless Chrome dependencies
+          command: make install_headless_chrome
+      - run:
+          name: Set percy/newskit-comps token
+          command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
+      - run:
+          name: Run Percy Storybook Component Tests
+          # Allow this to fail (|| true) for the POC
+          command: make comps_visual_test_percy || true
+
 jobs:
   can_i_merge_checker:
     executor: node
@@ -644,19 +661,38 @@ jobs:
   test_visual_comps_percy:
     executor: node-large
     steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
+      - run_test_visual_comps_percy
+
+  update_percy_comps_baselines:
+    executor: node-large
+    steps:
       - run:
-          name: Install Headless Chrome dependencies
-          command: make install_headless_chrome
+          name: 'Check if updates required'
+          command: |
+            {
+                node scripts/check-baseline-updates.js $CIRCLE_SHA1 "comps" &&
+                echo "No baseline updates required; finishing job." &&
+                circleci-agent step halt
+            } || {
+                echo "Baseline updates required; continuing job."
+            }
+      - run_test_visual_comps_percy
+
+  update_percy_docsite_baselines:
+    <<: *cypress_defaults
+    executor: cypress
+    steps:
       - run:
-          name: Set percy/newskit-comps token
-          command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
-      - run:
-          name: Run Percy Storybook Component Tests
-          # Allow this to fail (|| true) for the POC
-          command: make comps_visual_test_percy || true
+          name: 'Check if updates required'
+          command: |
+            {
+                node scripts/check-baseline-updates.js $CIRCLE_SHA1 "docsite" &&
+                echo "No baseline updates required; finishing job." &&
+                circleci-agent step halt
+            } || {
+                echo "Baseline updates required; continuing job."
+            }
+      - run_test_visual_docs_percy
 
   skip_applitools_check:
     executor: node
@@ -1524,6 +1560,17 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_components
+
+      # Jobs for updating Percy baselines after PRs are merged
+      - update_percy_comps_baselines:
+          context: ncu-product-platforms-context
+          requires:
+            - download_headless_chrome
+      - update_percy_docsite_baselines:
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_dev
+            - install_cypress
 
       # Jobs for deploying unstable NewsKit version
       - approve_publish_npm_dev:
