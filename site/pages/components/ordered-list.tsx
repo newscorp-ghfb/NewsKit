@@ -135,6 +135,9 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
                   content: {
                     typographyPreset: 'editorialParagraph010',
                   },
+                  counter: {
+                    typographyPreset: 'editorialParagraph010',
+                  },
                 },
                 isDefault: true,
               },
@@ -143,6 +146,9 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
                 value: {
                   content: {
                     typographyPreset: 'utilityButton020',
+                  },
+                  counter: {
+                    typographyPreset: 'editorialParagraph020',
                   },
                 },
               },
@@ -158,7 +164,7 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
                   content: {
                     stylePreset: 'inkBase',
                   },
-                  marker: {
+                  counter: {
                     stylePreset: 'inkBase',
                   },
                 },
@@ -170,7 +176,7 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
                   content: {
                     stylePreset: 'inkPositive',
                   },
-                  marker: {
+                  counter: {
                     stylePreset: 'inkPositive',
                   },
                 },
@@ -181,7 +187,7 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
                   content: {
                     stylePreset: 'inkNegative',
                   },
-                  marker: {
+                  counter: {
                     stylePreset: 'inkNegative',
                   },
                 },
