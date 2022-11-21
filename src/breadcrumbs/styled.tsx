@@ -11,7 +11,6 @@ export const StyledNav = styled.nav<BreadcrumbsProps>`
 export const StyledOrderdList = styled.ol<BreadcrumbsProps>`
   list-style: none;
   display: inline-flex;
-
   margin: 0;
   padding: 0px;
 `;
@@ -20,7 +19,6 @@ export const StyledList = styled.li<BreadcrumbsProps>`
   display: flex;
   justify-content: center;
   align-self: center;
-  ${({size}) => getTypographyPreset(`breadcrumbItem.${size}`, '')}
 `;
 
 export const StyledButton = styled(Button)<BreadcrumbItemProps>`
