@@ -1578,7 +1578,6 @@ exports[`Toast Component renders with content as string and link 1`] = `
 }
 
 .emotion-4 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;

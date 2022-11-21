@@ -764,7 +764,6 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 }
 
 .emotion-5 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;

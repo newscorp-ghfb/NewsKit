@@ -151,7 +151,6 @@ exports[`UnorderedList renders different types of children 1`] = `
 }
 
 .emotion-19 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;

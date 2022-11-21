@@ -3,7 +3,6 @@
 exports[`Link does not render the external icon even if the href is external 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -129,7 +128,6 @@ exports[`Link does not render the external icon even if the href is external 1`]
 exports[`Link does not render the external icon if the href is internal 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -255,7 +253,6 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
 exports[`Link renders as expected in default state 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -381,7 +378,6 @@ exports[`Link renders as expected in default state 1`] = `
 exports[`Link renders the external icon even if the href is internal 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -575,7 +571,6 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 exports[`Link renders the external icon if the href is external 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -701,7 +696,6 @@ exports[`Link renders the external icon if the href is external 1`] = `
 exports[`Link renders with logical props overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -829,7 +823,6 @@ exports[`Link renders with logical props overrides 1`] = `
 exports[`Link renders with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   color: #D60000;
 }
 
@@ -920,7 +913,6 @@ exports[`Link renders with overrides 1`] = `
 exports[`LinkStandalone renders as expected in default state 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1044,7 +1036,6 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
 exports[`LinkStandalone renders with logical props overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;

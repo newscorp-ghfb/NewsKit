@@ -753,7 +753,6 @@ exports[`Banner renders with content as string and link 1`] = `
 }
 
 .emotion-9 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1128,7 +1127,6 @@ exports[`Banner renders with content as string and link 1`] = `
 }
 
 .emotion-9 {
-  display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
