@@ -8,6 +8,7 @@ import React, {
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
 import {debounce} from 'debounce';
+import {getOverflowAncestors} from '@floating-ui/react-dom-interactions';
 import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
 import {SelectButton} from './select-button';
@@ -20,7 +21,6 @@ import {useVirtualizedList} from './use-virtualized-list';
 import {Layer} from '../layer';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {get} from '../utils/get';
-import {getNearestOverflowAncestor} from './utils';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -230,9 +230,12 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     }, [isOpen, panelRef]);
 
     const onOverflowScroll = useCallback(
+      /* istanbul ignore next */
       debounce(() => {
-        if (selectRef.current)
+        /* istanbul ignore next */
+        if (selectRef.current) {
           setSelectRect(selectRef.current.getBoundingClientRect());
+        }
       }, 8),
       [setSelectRect, selectRef],
     );
@@ -240,12 +243,18 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     const parentOverflowNode = useRef<HTMLElement>();
     useEffect(() => {
       if (localInputRef.current && isOpen) {
-        parentOverflowNode.current = getNearestOverflowAncestor(
-          localInputRef.current,
-        );
-        parentOverflowNode.current.addEventListener('scroll', onOverflowScroll);
+        const [nearest] = getOverflowAncestors(localInputRef.current);
+        /* istanbul ignore if */
+        if (nearest instanceof window.HTMLElement) {
+          parentOverflowNode.current = nearest;
+          parentOverflowNode.current.addEventListener(
+            'scroll',
+            onOverflowScroll,
+          );
+        }
       }
       return () => {
+        /* istanbul ignore if */
         if (parentOverflowNode.current) {
           parentOverflowNode.current.removeEventListener(
             'scroll',
