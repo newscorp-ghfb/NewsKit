@@ -3130,8 +3130,8 @@ exports[`Select renders Select with overrides 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -3151,6 +3151,7 @@ exports[`Select renders Select with overrides 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -3538,8 +3539,8 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -3559,6 +3560,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -4093,8 +4095,8 @@ exports[`Select renders disabled select 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -4114,6 +4116,7 @@ exports[`Select renders disabled select 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -4406,8 +4409,8 @@ exports[`Select renders large Select 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -4427,6 +4430,7 @@ exports[`Select renders large Select 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -4698,8 +4702,8 @@ exports[`Select renders loading select 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -4719,6 +4723,7 @@ exports[`Select renders loading select 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -5011,8 +5016,8 @@ exports[`Select renders medium Select 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -5032,6 +5037,7 @@ exports[`Select renders medium Select 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -5358,8 +5364,8 @@ exports[`Select renders select with a pre selected option 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -5379,6 +5385,7 @@ exports[`Select renders select with a pre selected option 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -5705,8 +5712,8 @@ exports[`Select renders select with a selected option 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -5726,6 +5733,7 @@ exports[`Select renders select with a selected option 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -6076,8 +6084,8 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6097,6 +6105,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -6425,8 +6434,8 @@ exports[`Select renders select with non-string options 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6446,6 +6455,7 @@ exports[`Select renders select with non-string options 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -6738,8 +6748,8 @@ exports[`Select renders small Select 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6759,6 +6769,7 @@ exports[`Select renders small Select 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -7051,8 +7062,8 @@ exports[`Select should render custom placeholder 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -7072,6 +7083,7 @@ exports[`Select should render custom placeholder 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       />
     </div>
@@ -7376,8 +7388,8 @@ exports[`Select virtualize long list 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: block;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -7484,6 +7496,7 @@ exports[`Select virtualize long list 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
+        style="transform: translate3d(0px, 0px, 0);"
         tabindex="-1"
       >
         <div

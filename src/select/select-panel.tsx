@@ -161,6 +161,13 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
           ref={panelRef}
           overrides={overrides?.panel}
           {...restProps}
+          style={{
+            // inline styles are faster since emotion does not have to create a new css class
+            // and apply it to the element on every scroll change
+            transform: `translate3d(${left}px, ${
+              (top || 0) + (height || 0)
+            }px, 0)`,
+          }}
         >
           {optionsAsChildren}
         </StyledSelectPanel>
