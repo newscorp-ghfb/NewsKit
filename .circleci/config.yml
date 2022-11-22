@@ -1564,11 +1564,11 @@ workflows:
             - build_components
 
       # Jobs for updating Percy baselines after PRs are merged
-      - update_percy_comps_baselines:
+      - conditionally_run_percy_comps_tests:
           context: ncu-product-platforms-context
           requires:
             - download_headless_chrome
-      - update_percy_docsite_baselines:
+      - conditionally_run_percy_docsite_tests:
           context: ncu-product-platforms-context
           requires:
             - build_docs_dev
