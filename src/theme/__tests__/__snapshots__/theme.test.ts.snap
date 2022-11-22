@@ -1684,21 +1684,18 @@ Object {
     "large": Object {
       "marginBlockEnd": "space020",
       "minHeight": "sizing030",
-      "paddingInline": "space020",
       "stylePreset": "characterCount",
       "typographyPreset": "utilityBody030",
     },
     "medium": Object {
       "marginBlockEnd": "space020",
       "minHeight": "sizing030",
-      "paddingInline": "space020",
       "stylePreset": "characterCount",
       "typographyPreset": "utilityBody020",
     },
     "small": Object {
       "marginBlockEnd": "space020",
       "minHeight": "sizing030",
-      "paddingInline": "space020",
       "stylePreset": "characterCount",
       "typographyPreset": "utilityBody010",
     },
