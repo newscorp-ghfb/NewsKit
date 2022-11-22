@@ -521,7 +521,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/menu/d0-01'),
+          media: getIllustrationComponent('components/menu/do-01'),
         },
       ],
     }}
