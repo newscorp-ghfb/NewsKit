@@ -527,6 +527,12 @@ describe('Select', () => {
     });
   });
 
+  // test('open and scroll', () => {
+  // open select
+  // scroll down
+  // select panel needs to move
+  // });
+
   describe('in Modal', () => {
     afterEach(() => {
       cleanup();
