@@ -663,7 +663,8 @@ jobs:
     steps:
       - run_test_visual_comps_percy
 
-  update_percy_comps_baselines:
+  conditionally_run_percy_comps_tests:
+    # if there are any visual diffs we need to run the Percy comps tests to update the baselines
     executor: node-large
     steps:
       - run:
@@ -678,7 +679,8 @@ jobs:
             }
       - run_test_visual_comps_percy
 
-  update_percy_docsite_baselines:
+  conditionally_run_percy_docsite_tests:
+    # if there are any visual diffs we need to run the Percy docsite tests to update the baselines
     <<: *cypress_defaults
     executor: cypress
     steps:
