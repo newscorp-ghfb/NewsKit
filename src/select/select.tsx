@@ -229,8 +229,8 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       }
     }, [isOpen, panelRef]);
 
+    /* istanbul ignore next */
     const onOverflowScroll = useCallback(
-      /* istanbul ignore next */
       debounce(() => {
         /* istanbul ignore next */
         if (selectRef.current) {
