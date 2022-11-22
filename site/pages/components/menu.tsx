@@ -216,7 +216,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             {
               name: 'Sub menu Item',
               description: 'Label of the sub menu item',
-              component: ['Text Block', 'Block', 'Link'],
+              component: ['Text Block', 'Icon', 'Block', 'Link'],
             },
             {
               name: 'Indicator icon',
@@ -225,7 +225,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               optional: true,
             },
           ],
-          media: getIllustrationComponent('components/menu/anatomy-02', {
+          media: getIllustrationComponent('components/menu/anatomy', {
             viewBox: '0 0 1600 900',
           }),
         },
@@ -515,7 +515,6 @@ const MenuComponent = (layoutProps: LayoutProps) => (
                 href="https://www.w3.org/WAI/tutorials/menus/flyout/"
                 target="_blank"
               >
-                {' '}
                 WAI-ARIA standards.
               </Link>
             </>
