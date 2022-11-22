@@ -225,6 +225,52 @@ describe('CharacterCount', () => {
         `You have 1 character remaining`,
       );
     });
+
+    test('uses singular when only one character too many', async () => {
+      const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {
+        children: ref => (
+          <>
+            <TextArea ref={ref} data-testid="text-area" />
+            <CharacterCount
+              inputRef={ref}
+              maxLength={MAX_LENGTH}
+              data-testid="character-count"
+            />
+          </>
+        ),
+      });
+      const characterCount = getByTestId('character-count');
+      const textArea = getByTestId('text-area');
+      await act(async () => {
+        await userEvent.type(textArea, generateString(MAX_LENGTH + 1));
+      });
+      expect(characterCount.textContent).toEqual(
+        `You have 1 character too many`,
+      );
+    });
+
+    test('updates number of characters too many', async () => {
+      const {getByTestId} = renderWithImplementation(InputWithCharacterCount, {
+        children: ref => (
+          <>
+            <TextArea ref={ref} data-testid="text-area" />
+            <CharacterCount
+              inputRef={ref}
+              maxLength={MAX_LENGTH}
+              data-testid="character-count"
+            />
+          </>
+        ),
+      });
+      const characterCount = getByTestId('character-count');
+      const textArea = getByTestId('text-area');
+      await act(async () => {
+        await userEvent.type(textArea, generateString(MAX_LENGTH + MSG.length));
+      });
+      expect(characterCount.textContent).toEqual(
+        `You have ${MSG.length + MAX_LENGTH - MAX_LENGTH} characters too many`,
+      );
+    });
   });
 
   describe('with minLength', () => {

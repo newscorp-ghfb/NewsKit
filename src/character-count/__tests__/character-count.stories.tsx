@@ -1,6 +1,5 @@
 import * as React from 'react';
-import {useRef} from 'react';
-
+import {useRef, useState} from 'react';
 import {CharacterCount, CharacterCountProps} from '..';
 import {
   Form,
@@ -142,6 +141,36 @@ export const CharacterCountMaxLength = () => {
 };
 CharacterCountMaxLength.storyName = 'Max length';
 
+export const CharacterCountExceedMaxLength = () => {
+  const ref = useRef<HTMLTextAreaElement>(null);
+  const [textareavalue, setValue] = useState('');
+  const maxLength = 200;
+  function validationLimit() {
+    return textareavalue.length > maxLength ? 'invalid' : 'valid';
+  }
+  return (
+    <StorybookPage>
+      <StorybookCase title="Text area">
+        <Label htmlFor="textArea-overlimit">Label</Label>
+        <TextArea
+          placeholder="Placeholder"
+          ref={ref}
+          state={validationLimit()}
+          value={textareavalue}
+          onChange={({target: {value}}) => setValue(value)}
+        />
+        <CharacterCount
+          inputRef={ref}
+          maxLength={maxLength}
+          state={validationLimit()}
+        />
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+
+CharacterCountExceedMaxLength.storyName = 'Max length over limit';
+
 export const CharacterCountMinLength = () => {
   const textArea = useRef<HTMLTextAreaElement>(null);
   const textField = useRef<HTMLInputElement>(null);
@@ -199,7 +228,6 @@ export const CharacterCountMinAndMaxLength = () => {
         />
         <CharacterCount inputRef={textField} />
       </StorybookCase>
-      <StorybookCase title="default" />
     </StorybookPage>
   );
 };
