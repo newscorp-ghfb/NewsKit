@@ -1,6 +1,7 @@
 import React from 'react';
 import {InlineMessage, toNewsKitIcon, UnorderedList} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
+import {InlineCode} from '../../components/markdown-elements';
 import {UsageKind} from '../../components/usage-card';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {LayoutProps} from '../../components/layout';
@@ -62,21 +63,21 @@ const commonOverridesRows = [
       'If provided, this overrides the typography preset applied to the ordered list content.',
   },
   {
-    attribute: 'unorderedList.counter.stylePreset',
+    attribute: 'orderedList.counter.stylePreset',
     type: 'MQ<string>',
     default: 'inkBase',
     description:
       'If provided, this overrides the style preset applied to the unordered list counter.',
   },
   {
-    attribute: 'unorderedList.counter.typographyPreset',
+    attribute: 'orderedList.counter.typographyPreset',
     type: 'MQ<string>',
     default: 'editorialParagraph010',
     description:
       'If provided, this overrides the typography preset applied to the unordered list counter.',
   },
   {
-    attribute: 'unorderedList.counter.minWidth',
+    attribute: 'orderedList.counter.minWidth',
     type: 'MQ<string>',
     default: 'sizing050',
     description:
@@ -194,13 +195,31 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
               },
             ],
           },
+          {
+            name: 'Margin Preset Overrides',
+            propName: 'overrides',
+            options: [
+              {
+                label: 'space010',
+                value: {
+                  spaceInline: 'space010',
+                },
+                isDefault: true,
+              },
+              {
+                label: 'space020',
+                value: {
+                  spaceInline: 'space030',
+                },
+              },
+            ],
+          },
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ] as any,
       },
     }}
     anatomy={{
-      introduction:
-        'The ordered list contains two required elements and no optional elements.',
+      introduction: 'The ordered list contains two required elements.',
       media: getIllustrationComponent('components/ordered-list/anatomy-01'),
       rows: [
         {
@@ -212,7 +231,6 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
           name: 'Counter',
           description: 'The counter applied to the content of the ordered list',
           component: 'CSS',
-          optional: true,
         },
       ],
     }}
@@ -237,7 +255,7 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
       cards: [
         {
           description:
-            'The following guidance describes how and when to appropriately use the ordered list component.',
+            'Ordered list items are numbered, so use them in instances where items need to appear in numerical order.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/ordered-list/usage/do-01',
@@ -270,7 +288,7 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
             }}
           >
             <>
-              The ol element is for{' '}
+              The <InlineCode>ol</InlineCode> element is for{' '}
               <Link
                 href="https://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H48"
                 target="_blank"
@@ -329,14 +347,14 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
                   marginBlockStart: 'space030',
                 }}
               >
-                Any prop valid on an{' '}
+                Any prop valid on a{' '}
                 <Link
                   href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"
                   target="_blank"
                 >
                   ol The ordered list element
-                </Link>
-                , is also valid on the ordered list component.
+                </Link>{' '}
+                is also valid on the ordered list component.
               </InlineMessage>
             </>
           ),
