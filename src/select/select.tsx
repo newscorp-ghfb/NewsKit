@@ -1,6 +1,13 @@
-import React, {ChangeEvent, useEffect, useRef, useState} from 'react';
+import React, {
+  ChangeEvent,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
+import {debounce} from 'debounce';
 import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
 import {SelectButton} from './select-button';
@@ -13,6 +20,7 @@ import {useVirtualizedList} from './use-virtualized-list';
 import {Layer} from '../layer';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {get} from '../utils/get';
+import {getNearestOverflowAncestor} from './utils';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -186,13 +194,14 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       ...downshiftMenuPropsExceptRef
     } = getMenuProps();
 
-    const [{width, top, height, left}, setSelectRect] = useState({
+    const [{width, height, top, left}, setSelectRect] = useState({
       width: 0,
       top: 0,
       height: 0,
       left: 0,
     });
 
+    // THIS CAN BE COMBINED WITH OTHER ONE FOR SCROLLING
     useEffect(() => {
       if (isOpen && selectRef.current) {
         // getting width, height, left, top of the select
@@ -219,6 +228,32 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         setTimeout(callback, 0);
       }
     }, [isOpen, panelRef]);
+
+    const onOverflowScroll = useCallback(
+      debounce(() => {
+        if (selectRef.current)
+          setSelectRect(selectRef.current.getBoundingClientRect());
+      }, 8),
+      [setSelectRect, selectRef],
+    );
+
+    const parentOverflowNode = useRef<HTMLElement>();
+    useEffect(() => {
+      if (localInputRef.current && isOpen) {
+        parentOverflowNode.current = getNearestOverflowAncestor(
+          localInputRef.current,
+        );
+        parentOverflowNode.current.addEventListener('scroll', onOverflowScroll);
+      }
+      return () => {
+        if (parentOverflowNode.current) {
+          parentOverflowNode.current.removeEventListener(
+            'scroll',
+            onOverflowScroll,
+          );
+        }
+      };
+    }, [isOpen, onOverflowScroll]);
 
     return (
       <>

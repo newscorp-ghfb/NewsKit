@@ -1141,6 +1141,36 @@ export const StoryOutlineOverride = () => (
 );
 StoryOutlineOverride.storyName = 'Select Outline override';
 
+export const StorySelectWithOverflowScroll = () => (
+  <div style={{height: '100vh', width: '100vw', overflow: 'hidden'}}>
+    <div
+      style={{
+        height: '100vh',
+        // padding: "50vh 0",
+        position: 'relative',
+        overflow: 'auto',
+        border: '3px solid blue',
+      }}
+    >
+      <div
+        style={{
+          // height: "200vh",
+          padding: '75vh 0',
+          position: 'relative',
+          border: '3px solid red',
+        }}
+      >
+        <Select>
+          <SelectOption value="A"> Pikachu </SelectOption>
+          <SelectOption value="B"> Charmander </SelectOption>
+          <SelectOption value="C"> Pikachu </SelectOption>
+          <SelectOption value="D"> Pikachu </SelectOption>
+        </Select>
+      </div>
+    </div>
+  </div>
+);
+
 export default {
   title: 'Components/select',
   component: () => 'None',
