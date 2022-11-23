@@ -4,29 +4,50 @@ export const routes = [
     id: '/about',
     subNav: [
       {
+        title: 'Overview',
+        page: true,
+        id: '/about/overview',
+        indexPage: true,
+        description:
+          'NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. ',
+      },
+      {
         title: 'Why use NewsKit?',
         page: true,
         id: '/about/why-use-newskit',
+        description: 'NewsKit can improve your process and products.',
+        illustration: 'about/why-use-newskit-hero-illustration',
       },
       {
         title: 'Release notes',
         page: true,
         id: '/about/release-notes',
+        description:
+          'Announcements about the latest and previous releases of NewsKit.',
+        illustration: 'about/release-notes-hero-illustration',
       },
       {
         title: 'Roadmap',
         page: true,
         id: '/about/roadmap',
+        description: 'What’s in progress and what’s coming up next.',
+        illustration: 'components/hero-roadmap-illustration',
       },
       {
         title: 'Contribute',
         page: true,
         id: '/about/contribute',
+        description:
+          'There are a lot of ways to contribute to the NewsKit community and Design System.',
+        illustration: 'about/hero-contribute-illustration',
       },
       {
         title: 'Contact us',
         page: true,
         id: '/about/contact-us',
+        description:
+          'Have a question about the design system? The NewsKit team is here to help you.',
+        illustration: 'about/contact-us-hero-illustration',
       },
     ],
   },

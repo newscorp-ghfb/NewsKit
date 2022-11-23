@@ -26,7 +26,10 @@ const Roadmap = (layoutProps: LayoutProps) => (
       type: 'About',
       name: pageName,
       introduction: pageDescription,
-      hero: {illustration: 'components/hero-roadmap-illustration'},
+      hero: {
+        illustration: 'components/hero-roadmap-illustration',
+        illustrationProps: {viewBox: '0 0 1344 759'},
+      },
       showSeparator: true,
     }}
   >
