@@ -312,12 +312,16 @@ commands:
       - slack/notify:
           <<: *slack_notify
 
-  run_test_visual_docs_percy:
-    description: 'Run the Percy tests for docs visual changes'
+  checkout_and_attach_workspace:
+    description: 'Checkout the code and project files'
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
+
+  run_test_visual_docs_percy:
+    description: 'Run the Percy tests for docs visual changes'
+    steps:
       - run:
           name: Set percy/newskit-docsite token
           command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
@@ -331,9 +335,6 @@ commands:
   run_test_visual_comps_percy:
     description: 'Run the Percy tests for comps visual changes'
     steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
       - run:
           name: Install Headless Chrome dependencies
           command: make install_headless_chrome
@@ -661,12 +662,14 @@ jobs:
   test_visual_comps_percy:
     executor: node-large
     steps:
+      - checkout_and_attach_workspace
       - run_test_visual_comps_percy
 
   conditionally_run_percy_comps_tests:
     # if there are any visual diffs we need to run the Percy comps tests to update the baselines
     executor: node-large
     steps:
+      - checkout_and_attach_workspace
       - run:
           name: 'Check if updates required'
           command: |
@@ -684,6 +687,7 @@ jobs:
     <<: *cypress_defaults
     executor: cypress
     steps:
+      - checkout_and_attach_workspace
       - run:
           name: 'Check if updates required'
           command: |
@@ -750,12 +754,14 @@ jobs:
     <<: *cypress_defaults
     executor: cypress
     steps:
+      - checkout_and_attach_workspace
       - run_test_visual_docs_percy
 
   test_visual_docs_percy_2:
     <<: *cypress_defaults
     executor: cypress
     steps:
+      - checkout_and_attach_workspace
       - run_test_visual_docs_percy
 
   test_e2e_comps:
