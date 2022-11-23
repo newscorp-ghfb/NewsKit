@@ -181,7 +181,7 @@ export const StoryVariations = () => (
     <StorybookCase title="'Home' icon for the first breadcrumb item">
       <Breadcrumbs aria-label="home icon">
         <BreadcrumbItem href={href}>
-        <IconButton
+          <IconButton
             size="medium"
             overrides={{
               stylePreset: 'iconButtonMinimalPrimary',
@@ -243,10 +243,11 @@ const textBlock = '/';
 export const StoryOverrides = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Custom colour">
-      <Breadcrumbs aria-label="custome colour">
+      <Breadcrumbs aria-label="custom colour">
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem
+          selected
           overrides={{
             stylePreset: 'interfaceInformative010',
           }}
@@ -257,7 +258,7 @@ export const StoryOverrides = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Custom style">
-      <Breadcrumbs aria-label="custome style">
+      <Breadcrumbs aria-label="custom style">
         <BreadcrumbItem
           href={href}
           overrides={{typographyPreset: 'editorialParagraph020'}}
