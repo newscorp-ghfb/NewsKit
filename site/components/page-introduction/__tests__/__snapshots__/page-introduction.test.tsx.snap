@@ -487,6 +487,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
         <img
           alt="button-hero"
           class="emotion-4"
+          data-testid="loaded-image"
           src="static/button-hero.svg"
         />
       </picture>

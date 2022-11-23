@@ -350,6 +350,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
             <img
               alt=""
               class="emotion-6"
+              data-testid="loaded-image"
               src="test"
             />
           </picture>
