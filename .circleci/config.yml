@@ -1506,6 +1506,8 @@ workflows:
             - init_aws
       - install_deps:
           context: ncu-product-platforms-context
+      - download_headless_chrome:
+          context: ncu-product-platforms-context
       - install_cypress:
           context: ncu-product-platforms-context
       - build_icons:
