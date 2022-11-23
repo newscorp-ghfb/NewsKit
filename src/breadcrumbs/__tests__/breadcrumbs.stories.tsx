@@ -11,7 +11,7 @@ import {
 import {TextBlock} from '../../text-block';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {CreateThemeArgs, ThemeProvider} from '../../theme';
-import {IconButton} from '../../icon-button';
+// import {IconButton} from '../../icon-button';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';

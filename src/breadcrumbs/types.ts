@@ -28,7 +28,6 @@ export interface BreadcrumbItemProps extends ButtonProps, EventData {
   children: Exclude<React.ReactNode, 'undefined'>;
   selected?: boolean;
   href: string;
-  // onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
