@@ -11,6 +11,7 @@ import {
 import {TextBlock} from '../../text-block';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {CreateThemeArgs, ThemeProvider} from '../../theme';
+import {IconButton} from '../../icon-button';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
@@ -37,7 +38,7 @@ const breadcrumbItemCustomThemeObject: CreateThemeArgs = {
       breadcrumbHover: {
         base: {
           color: '{{colors.interactiveLink020}}',
-          textDecoration: 'underline',
+          // textDecoration: 'underline',
         },
         // hover: {
         //   color: '{{colors.interactiveLink020}}',
@@ -47,7 +48,7 @@ const breadcrumbItemCustomThemeObject: CreateThemeArgs = {
       breadcrumbActive: {
         base: {
           color: '{{colors.interactiveLink030}}',
-          textDecoration: 'underline',
+          // textDecoration: 'underline',
         },
       },
     },
@@ -56,7 +57,7 @@ const breadcrumbItemCustomThemeObject: CreateThemeArgs = {
 
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <Breadcrumbs aria-label="default">
+    <Breadcrumbs ariaLabel="default">
       <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
       <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
       <BreadcrumbItem selected href={href}>
@@ -70,7 +71,7 @@ StoryDefault.storyName = 'Default';
 export const StorySize = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Small">
-      <Breadcrumbs aria-label="small" size="small">
+      <Breadcrumbs ariaLabel="small" size="small">
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
@@ -78,8 +79,8 @@ export const StorySize = () => (
         </BreadcrumbItem>
       </Breadcrumbs>
     </StorybookCase>
-    <StorybookCase aria-label="medium" title="Medium">
-      <Breadcrumbs aria-label="medium">
+    <StorybookCase title="Medium">
+      <Breadcrumbs ariaLabel="medium">
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
@@ -88,7 +89,7 @@ export const StorySize = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Large">
-      <Breadcrumbs aria-label="large" size="large">
+      <Breadcrumbs ariaLabel="large-2" size="large">
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
@@ -103,7 +104,7 @@ StorySize.storyName = 'Size';
 export const StoryStates = () => (
   <StorybookPage columns={blockGridCols} columnGap="8px">
     <StorybookCase title="Base">
-      <Breadcrumbs aria-label="breadcrumbs-default" showTrailingSeparator>
+      <Breadcrumbs ariaLabel="breadcrumbs-default" showTrailingSeparator>
         <BreadcrumbItem
           overrides={{stylePreset: 'breadcrumbDefault'}}
           href={href}
@@ -113,7 +114,7 @@ export const StoryStates = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Selected">
-      <Breadcrumbs aria-label="breadcrumbs-selected">
+      <Breadcrumbs ariaLabel="breadcrumbs-selected">
         <BreadcrumbItem
           overrides={{stylePreset: 'breadcrumbSelected'}}
           selected
@@ -124,7 +125,7 @@ export const StoryStates = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Hover">
-      <Breadcrumbs aria-label="breadcrumbs-hover" showTrailingSeparator>
+      <Breadcrumbs ariaLabel="breadcrumbs-hover" showTrailingSeparator>
         <BreadcrumbItem
           overrides={{stylePreset: 'breadcrumbHover'}}
           href={href}
@@ -134,7 +135,7 @@ export const StoryStates = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Active">
-      <Breadcrumbs aria-label="breadcrumbs-active" showTrailingSeparator>
+      <Breadcrumbs ariaLabel="breadcrumbs-active" showTrailingSeparator>
         <BreadcrumbItem
           href={href}
           overrides={{stylePreset: 'breadcrumbActive'}}
@@ -150,7 +151,7 @@ StoryStates.storyName = 'States';
 export const StoryVariations = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Leading icon">
-      <Breadcrumbs aria-label="leading icon">
+      <Breadcrumbs ariaLabel="leading icon">
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
@@ -160,7 +161,7 @@ export const StoryVariations = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Trailing icon">
-      <Breadcrumbs aria-label="trailing icon">
+      <Breadcrumbs ariaLabel="trailing icon">
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
@@ -170,7 +171,7 @@ export const StoryVariations = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Both">
-      <Breadcrumbs aria-label="both icons">
+      <Breadcrumbs ariaLabel="both icons">
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
@@ -181,13 +182,22 @@ export const StoryVariations = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="'Home' icon for the first breadcrumb item">
-      <Breadcrumbs aria-label="with home icon">
+      <Breadcrumbs ariaLabel="with home icon">
         <BreadcrumbItem href={href}>
           <IconFilledHome
             overrides={{
               stylePreset: 'iconButtonMinimalPrimary',
             }}
           />
+          {/* <IconButton
+            size="medium"
+            overrides={{
+              stylePreset: 'iconButtonMinimalPrimary',
+            }}
+            aria-label="home-icon"
+          >
+            <IconFilledHome />
+          </IconButton> */}
         </BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
@@ -196,7 +206,7 @@ export const StoryVariations = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="showTrailingSeparator">
-      <Breadcrumbs aria-label="showTrailingSeparator" showTrailingSeparator>
+      <Breadcrumbs ariaLabel="showTrailingSeparator" showTrailingSeparator>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
@@ -212,7 +222,7 @@ export const StoryLogicalProps = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Logical props- padding">
       <Breadcrumbs
-        aria-label="with padding"
+        ariaLabel="with padding"
         overrides={{paddingBlock: 'space050'}}
       >
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
@@ -224,7 +234,7 @@ export const StoryLogicalProps = () => (
     </StorybookCase>
     <StorybookCase title="Logical props- margin">
       <Breadcrumbs
-        aria-label="with margin"
+        ariaLabel="with margin"
         overrides={{marginBlock: 'space050'}}
       >
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
@@ -241,7 +251,7 @@ const textBlock = '/';
 export const StoryOverrides = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Custom colour">
-      <Breadcrumbs aria-label="with custom colour">
+      <Breadcrumbs ariaLabel="with custom colour">
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem
@@ -255,7 +265,7 @@ export const StoryOverrides = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Custom style">
-      <Breadcrumbs aria-label="with custom style">
+      <Breadcrumbs ariaLabel="with custom style">
         <BreadcrumbItem
           href={href}
           overrides={{typographyPreset: 'editorialParagraph020'}}
@@ -279,7 +289,7 @@ export const StoryOverrides = () => (
     </StorybookCase>
     <StorybookCase title="Custom separators">
       <Breadcrumbs
-        aria-label="with custom separator"
+        ariaLabel="with custom separator"
         overrides={{
           separator: () => (
             <IconOutlinedTrendingFlat
@@ -301,7 +311,7 @@ export const StoryOverrides = () => (
     </StorybookCase>
     <StorybookCase title="Custom separators with TextBlock">
       <Breadcrumbs
-        aria-label="with textBlock"
+        ariaLabel="with textBlock"
         overrides={{
           separator: () => (
             <TextBlock paddingInline="space020" stylePreset="inkSubtle">
@@ -328,8 +338,7 @@ export default {
     nkDocs: {
       title: 'Breadcrumbs',
       // url: 'https://newskit.co.uk/components/breadcrumbs',
-      description:
-        'Breadcrumbs are used for secondary navigation providing a breadcrumb trail, to help users to understand the path the user took, or where they are located and move between pages within a website’s or application’s hierarchy.',
+      description: 'Breadcrumbs are used for secondary navigation.',
     },
   },
   decorators: [
