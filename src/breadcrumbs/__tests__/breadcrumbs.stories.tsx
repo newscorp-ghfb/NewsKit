@@ -27,6 +27,11 @@ const breadcrumbItemCustomThemeObject: CreateThemeArgs = {
           color: '{{colors.interactiveLink010}}',
         },
       },
+      breadcrumbInformative: {
+        base: {
+          color: '{{colors.interfaceInformative010}}',
+        },
+      },
       breadcrumbSelected: {
         selected: {
           color: '{{colors.inkBase}}',
@@ -253,7 +258,7 @@ export const StoryOverrides = () => (
         <BreadcrumbItem
           selected
           overrides={{
-            stylePreset: 'interfaceInformative010',
+            stylePreset: 'breadcrumbInformative',
           }}
           href={href}
         >
