@@ -22,6 +22,7 @@ const ThemelessBreadcrumbs = React.forwardRef<
       children,
       showTrailingSeparator = false,
       overrides,
+
       size = 'medium',
       ...rest
     },
@@ -71,12 +72,12 @@ const ThemelessBreadcrumbs = React.forwardRef<
     return (
       <StyledNav
         data-testid="breadcrumb-container"
-        aria-label="Breadcrumb component"
         ref={ref}
         showTrailingSeparator={showTrailingSeparator}
         overrides={overrides}
+        {...rest}
       >
-        <StyledOrderdList size={size} {...rest}>
+        <StyledOrderdList size={size}>
           {showTrailingSeparator
             ? React.Children.map(children, child => (
                 <>
