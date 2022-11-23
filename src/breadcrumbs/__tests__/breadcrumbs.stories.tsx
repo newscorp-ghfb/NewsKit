@@ -181,15 +181,19 @@ export const StoryVariations = () => (
     <StorybookCase title="'Home' icon for the first breadcrumb item">
       <Breadcrumbs aria-label="home icon">
         <BreadcrumbItem href={href}>
-          <IconButton
+          {/* <IconButton
             size="medium"
             overrides={{
               stylePreset: 'iconButtonMinimalPrimary',
             }}
             aria-label="home-icon"
-          >
-            <IconFilledHome />
-          </IconButton>
+          > */}
+          <IconFilledHome
+            overrides={{
+              stylePreset: 'iconButtonMinimalPrimary',
+            }}
+          />
+          {/* </IconButton> */}
         </BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
