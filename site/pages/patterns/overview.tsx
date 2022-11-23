@@ -39,6 +39,8 @@ const getPatternsCardList = (routeList: Item[]) =>
 
 const patternsIndexRouteListCards = getPatternsCardList(patternsFormRouteList);
 
+const pageDescription = `Design patterns provide a framework for solving a particular user problem in a consistent, considered way.`;
+
 const HeaderImage = () => (
   <Illustration path="patterns/hero" viewBox="0 0 1572 997" />
 );
@@ -50,16 +52,15 @@ const Overview = (layoutProps: LayoutProps) => (
         theme={themeMode === 'light' ? patternsThemeLight : patternsThemeDark}
       >
         <HeadNextSeo
-          title="Overview"
-          description="Design patterns provide a framework for solving a particular user problem in a consistent, considered way."
+          title="Patterns overview"
+          description={pageDescription}
           image={{
             url: 'social/patterns.png',
-            alt: 'Overview',
+            alt: 'Patterns overview',
           }}
         />
         <HeaderIndex title="Patterns" media={HeaderImage}>
-          Design patterns provide a framework for solving a particular user
-          problem in a consistent, considered way.
+          {pageDescription}
         </HeaderIndex>
 
         <Grid lgMargin="sizing000" xsRowGutter="sizing000">
