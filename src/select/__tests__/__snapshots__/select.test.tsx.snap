@@ -562,6 +562,8 @@ exports[`Select in Modal render Select 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  bottom: 0;
+  left: 0;
 }
 
 .emotion-6 {
@@ -1492,6 +1494,8 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  bottom: 0;
+  left: 0;
 }
 
 .emotion-7 {
@@ -2235,6 +2239,8 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  bottom: 0;
+  left: 0;
 }
 
 .emotion-6 {
@@ -7374,6 +7380,8 @@ exports[`Select virtualize long list 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  bottom: 0;
+  left: 0;
 }
 
 .emotion-1 {
