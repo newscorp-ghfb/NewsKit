@@ -36,7 +36,10 @@ const Roadmap = (
         name="Roadmap"
         introduction="NewsKit’s Design System team is busy building and planning to help you
         build better products faster."
-        hero={{illustration: 'components/hero-roadmap-illustration'}}
+        hero={{
+          illustration: 'components/hero-roadmap-illustration',
+          illustrationProps: {viewBox: '0 0 1344 759'},
+        }}
       />
     </PageIntroductionContainer>
 
