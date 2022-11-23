@@ -33,3 +33,7 @@ export const pathToID = (path: string) => {
   }
   return '';
 };
+
+export const isSafari =
+  typeof window !== 'undefined' &&
+  /^((?!chrome|android).)*safari/i.test(window.navigator.userAgent);
