@@ -4,6 +4,11 @@ import {styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {IconFilledError} from '../../icons';
 
+// shared Percy config params to ensure image has loaded before snapshot taken
+const parameters = {
+  percy: {waitForSelector: '[data-testid="loaded-image"]'},
+};
+
 const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
@@ -32,6 +37,7 @@ export const StoryFixedHeightAndWidthInPx = () => (
   </Container>
 );
 StoryFixedHeightAndWidthInPx.storyName = 'fixed height and width in px';
+StoryFixedHeightAndWidthInPx.parameters = {...parameters};
 
 export const StoryFixedHeightAndWidthIn = () => (
   <ContainerWithHeight>
@@ -45,6 +51,7 @@ export const StoryFixedHeightAndWidthIn = () => (
   </ContainerWithHeight>
 );
 StoryFixedHeightAndWidthIn.storyName = 'fixed height and width in %';
+StoryFixedHeightAndWidthIn.parameters = {...parameters};
 
 export const StoryFixedWidthAndAspectRatio = () => (
   <Container>
@@ -59,6 +66,7 @@ export const StoryFixedWidthAndAspectRatio = () => (
   </Container>
 );
 StoryFixedWidthAndAspectRatio.storyName = 'fixed-width-and-aspect-ratio';
+StoryFixedWidthAndAspectRatio.parameters = {...parameters};
 
 export const StoryFixedHeighthAndAspectRatio = () => (
   <Container>
@@ -73,6 +81,7 @@ export const StoryFixedHeighthAndAspectRatio = () => (
   </Container>
 );
 StoryFixedHeighthAndAspectRatio.storyName = 'fixed-height-and-aspect-ratio';
+StoryFixedHeighthAndAspectRatio.parameters = {...parameters};
 
 export const StorySharpBorderRadius = () => (
   <Container>
@@ -86,6 +95,7 @@ export const StorySharpBorderRadius = () => (
   </Container>
 );
 StorySharpBorderRadius.storyName = 'sharp-border-radius';
+StorySharpBorderRadius.parameters = {...parameters};
 
 export const StoryRoundedBorderRadius = () => (
   <Container>
@@ -101,6 +111,7 @@ export const StoryRoundedBorderRadius = () => (
   </Container>
 );
 StoryRoundedBorderRadius.storyName = 'rounded-border-radius';
+StoryRoundedBorderRadius.parameters = {...parameters};
 
 export const StoryRoundedBorderRadiusWithMq = () => (
   <Container>
@@ -119,6 +130,7 @@ export const StoryRoundedBorderRadiusWithMq = () => (
   </Container>
 );
 StoryRoundedBorderRadiusWithMq.storyName = 'rounded-border-radius-with-mq';
+StoryRoundedBorderRadiusWithMq.parameters = {...parameters};
 
 export const StoryCircleBorderRadius = () => (
   <Container>
@@ -134,6 +146,7 @@ export const StoryCircleBorderRadius = () => (
   </Container>
 );
 StoryCircleBorderRadius.storyName = 'circle-border-radius';
+StoryCircleBorderRadius.parameters = {...parameters};
 
 export const StoryValidImg = () => (
   <Container>
@@ -146,6 +159,7 @@ export const StoryValidImg = () => (
   </Container>
 );
 StoryValidImg.storyName = 'valid-img';
+StoryValidImg.parameters = {...parameters};
 
 export const StoryInvalidImg = () => (
   <Container>
@@ -158,6 +172,7 @@ export const StoryInvalidImg = () => (
   </Container>
 );
 StoryInvalidImg.storyName = 'invalid-img';
+StoryInvalidImg.parameters = {...parameters};
 
 export const StoryInvalidImgWithPlaceholderIcon = () => (
   <Container>
@@ -174,6 +189,7 @@ export const StoryInvalidImgWithPlaceholderIcon = () => (
 );
 StoryInvalidImgWithPlaceholderIcon.storyName =
   'invalid-img-with-placeholder-icon';
+StoryInvalidImgWithPlaceholderIcon.parameters = {...parameters};
 
 export const StoryInvalidImgWithCustomPlaceholderIconDefaultSize = () => (
   <Container>
@@ -194,6 +210,9 @@ export const StoryInvalidImgWithCustomPlaceholderIconDefaultSize = () => (
 );
 StoryInvalidImgWithCustomPlaceholderIconDefaultSize.storyName =
   'invalid-img-with-custom-placeholder-icon-default-size';
+StoryInvalidImgWithCustomPlaceholderIconDefaultSize.parameters = {
+  ...parameters,
+};
 
 export const StoryInvalidImgWithCustomPlaceholderIconOverrideSize = () => (
   <Container>
@@ -216,6 +235,9 @@ export const StoryInvalidImgWithCustomPlaceholderIconOverrideSize = () => (
 );
 StoryInvalidImgWithCustomPlaceholderIconOverrideSize.storyName =
   'invalid-img-with-custom-placeholder-icon-override-size';
+StoryInvalidImgWithCustomPlaceholderIconOverrideSize.parameters = {
+  ...parameters,
+};
 
 export const StoryLazyLoading = () => {
   const getImages = (num: number) => {
@@ -258,6 +280,7 @@ export const StoryImageWithSources = () => {
   );
 };
 StoryImageWithSources.storyName = 'image-with-sources-using-mq';
+StoryImageWithSources.parameters = {...parameters};
 
 export const StoryImageWithSourcesNoXS = () => {
   const sources = [
@@ -273,6 +296,7 @@ export const StoryImageWithSourcesNoXS = () => {
   );
 };
 StoryImageWithSourcesNoXS.storyName = 'image-with-sources-using-mq-no-xs';
+StoryImageWithSourcesNoXS.parameters = {...parameters};
 
 export const StoryImageWithSourcesAndMedia = () => {
   // Source order matters
@@ -301,6 +325,7 @@ export const StoryImageWithSourcesAndMedia = () => {
 };
 StoryImageWithSourcesAndMedia.storyName =
   'image-with-sources-using-media-query';
+StoryImageWithSourcesAndMedia.parameters = {...parameters};
 
 export const StoryImageWithLogicalProps = () => (
   <>
@@ -322,3 +347,4 @@ export const StoryImageWithLogicalProps = () => (
 );
 
 StoryImageWithLogicalProps.storyName = 'image-with-logical-props';
+StoryImageWithLogicalProps.parameters = {...parameters};

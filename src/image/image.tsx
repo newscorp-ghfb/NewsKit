@@ -117,6 +117,7 @@ const ImageComponent = React.forwardRef<HTMLImageElement, ImageProps>(
           loadingAspectRatio={loadingAspectRatio}
           ref={composeRefs(imageRef, ref)}
           src={currentSrc}
+          data-testid="loaded-image"
         />
       </StyledPicture>
     );
