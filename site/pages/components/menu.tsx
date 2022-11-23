@@ -64,6 +64,8 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       introduced: 'v3.3.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/menu',
       storybookId: 'components-menu--story-menu-items-horizontal',
+      figmaUrl:
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2984%3A966&t=eurTjmEaa1UxGH2d-0',
     }}
     interactiveDemo={{
       introduction:
@@ -175,13 +177,13 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             },
             {
               name: 'Title',
-              description: 'Title of the menu item group.',
+              description: 'Title of the menu item group',
               component: ['Text Block', 'Icon'],
               optional: true,
             },
             {
               name: 'Menu item',
-              description: 'Includes a label and an icon.',
+              description: 'Includes a label and an icon',
               component: ['Text Block', 'Icon', 'Block', 'Link'],
               optional: undefined,
             },
@@ -425,7 +427,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Transitions',
           description:
-            'When the user hovers over a menu item, the style transitions from one state to another.hen the user hovers over a Menu item, the style transitions from one state to another.',
+            'When the user hovers over a menu item, the style transitions from one state to another',
           media: getIllustrationComponent(
             'components/menu/menu-behaviours-transitions-illustration',
           ),
@@ -528,7 +530,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       introduction: (
         <>
           The menu implements the latest{' '}
-          <Link href="https://www.w3.org/WAI/tutorials/menus/">
+          <Link href="https://www.w3.org/WAI/tutorials/menus/" target="_blank">
             WAI-ARIA Menu specifications.
           </Link>
           <br />
