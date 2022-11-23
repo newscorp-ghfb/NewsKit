@@ -24,6 +24,7 @@ export interface InternalLinkProps extends BaseLinkProps {
   external?: boolean;
   overrides?: LinkOverrides;
   noCrop?: boolean;
+  textOnly?: boolean;
 }
 
 export interface LinkProps extends Omit<InternalLinkProps, 'noCrop'> {}
