@@ -64,6 +64,8 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
   color: #3358CC;
   cursor: pointer;
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -86,6 +88,8 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -112,6 +116,8 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
 
 .emotion-3:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-4 {
@@ -140,7 +146,6 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
 }
 
 <nav
-    aria-label="Breadcrumb component"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -265,6 +270,8 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -297,6 +304,8 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -329,7 +338,6 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 }
 
 <nav
-    aria-label="Breadcrumb component"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -472,7 +480,6 @@ exports[`BreadcrumbItem renders with overrides 1`] = `
 }
 
 <nav
-    aria-label="Breadcrumb component"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -585,6 +592,8 @@ exports[`Breadcrumbs renders in large size 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -617,6 +626,8 @@ exports[`Breadcrumbs renders in large size 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -697,13 +708,12 @@ exports[`Breadcrumbs renders in large size 1`] = `
 }
 
 <nav
-    aria-label="Breadcrumb component"
     class="emotion-0"
     data-testid="breadcrumb-container"
+    href="http://"
   >
     <ol
       class="emotion-1"
-      href="http://"
     >
       <li
         class="emotion-2"
@@ -883,6 +893,8 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -915,6 +927,8 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -995,13 +1009,12 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 }
 
 <nav
-    aria-label="Breadcrumb component"
     class="emotion-0"
     data-testid="breadcrumb-container"
+    href="http://"
   >
     <ol
       class="emotion-1"
-      href="http://"
     >
       <li
         class="emotion-2"
@@ -1181,6 +1194,8 @@ exports[`Breadcrumbs renders in small size 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1213,6 +1228,8 @@ exports[`Breadcrumbs renders in small size 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1293,13 +1310,12 @@ exports[`Breadcrumbs renders in small size 1`] = `
 }
 
 <nav
-    aria-label="Breadcrumb component"
     class="emotion-0"
     data-testid="breadcrumb-container"
+    href="http://"
   >
     <ol
       class="emotion-1"
-      href="http://"
     >
       <li
         class="emotion-2"
@@ -1479,6 +1495,8 @@ exports[`Breadcrumbs renders with default props 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1511,6 +1529,8 @@ exports[`Breadcrumbs renders with default props 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1591,7 +1611,6 @@ exports[`Breadcrumbs renders with default props 1`] = `
 }
 
 <nav
-    aria-label="Breadcrumb component"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -1781,6 +1800,8 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1813,6 +1834,8 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1893,7 +1916,6 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 }
 
 <nav
-    aria-label="Breadcrumb component"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -2078,6 +2100,8 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2110,6 +2134,8 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2190,7 +2216,6 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 }
 
 <nav
-    aria-label="Breadcrumb component"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -2375,6 +2400,8 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2407,6 +2434,8 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2443,7 +2472,6 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 }
 
 <nav
-    aria-label="Breadcrumb component"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -2606,6 +2634,8 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2638,6 +2668,8 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 
 .emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2718,7 +2750,6 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 }
 
 <nav
-    aria-label="Breadcrumb component"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
