@@ -674,7 +674,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                       aria-current="false"
                       class="emotion-13"
                       data-testid="buttonLink"
-                      href="/about/introduction"
+                      href="/about/why-use-newskit"
                     >
                       <span
                         class="emotion-14"
@@ -4084,7 +4084,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                             aria-current="false"
                             class="emotion-11"
                             data-testid="buttonLink"
-                            href="/about/introduction"
+                            href="/about/why-use-newskit"
                             tabindex="-1"
                           >
                             <span
@@ -6460,7 +6460,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     <span
                       class="emotion-426"
                     >
-
+                       
                     </span>
                   </label>
                 </div>
@@ -7157,7 +7157,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                       aria-current="false"
                       class="emotion-13"
                       data-testid="buttonLink"
-                      href="/about/introduction"
+                      href="/about/why-use-newskit"
                     >
                       <span
                         class="emotion-14"
@@ -10566,7 +10566,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                             aria-current="false"
                             class="emotion-11"
                             data-testid="buttonLink"
-                            href="/about/introduction"
+                            href="/about/why-use-newskit"
                           >
                             <span
                               class="emotion-12"
@@ -12829,7 +12829,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     <span
                       class="emotion-426"
                     >
-
+                       
                     </span>
                   </label>
                 </div>
