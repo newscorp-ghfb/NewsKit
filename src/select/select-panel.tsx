@@ -20,6 +20,7 @@ import {IconFilledCheck} from '../icons';
 import {Modal, ModalProps} from '../modal';
 import {getComponentOverrides, Override} from '../utils/overrides';
 import {getModalOverrides} from './utils';
+import {styled} from '../utils';
 
 interface SelectPanelProps {
   isOpen: boolean;
@@ -39,6 +40,11 @@ interface SelectPanelProps {
 }
 
 const DefaultModal = Modal;
+
+const StyledScreenReaderOnly = styled(ScreenReaderOnly)`
+  bottom: 0;
+  left: 0;
+`;
 
 export const StyledOptionWithPrivateProps = React.forwardRef<
   HTMLDivElement,
@@ -107,9 +113,9 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
     const optionsAsChildren = isOpen && children;
 
     const screenReaderOnlyMessage = isOpen && (
-      <ScreenReaderOnly id={listDescriptionId}>
+      <StyledScreenReaderOnly id={listDescriptionId}>
         Press down arrow key to navigate to the first item
-      </ScreenReaderOnly>
+      </StyledScreenReaderOnly>
     );
 
     if (renderInModal && !isOpen) {
@@ -164,9 +170,12 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
           style={{
             // inline styles are faster since emotion does not have to create a new css class
             // and apply it to the element on every scroll change
-            transform: `translate3d(${left}px, ${
-              (top || 0) + (height || 0)
-            }px, 0)`,
+            transform: `translate3d(${Number.parseInt(
+              // @ts-ignore
+              left,
+              10,
+              // @ts-ignore
+            )}px, ${Number.parseInt((top || 0) + (height || 0), 10)}px, 0)`,
           }}
         >
           {optionsAsChildren}
