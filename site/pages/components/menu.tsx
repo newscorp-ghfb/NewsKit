@@ -427,7 +427,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Transitions',
           description:
-            'When the user hovers over a menu item, the style transitions from one state to another',
+            'When the user hovers over a menu item, the style transitions from one state to another.',
           media: getIllustrationComponent(
             'components/menu/menu-behaviours-transitions-illustration',
           ),
