@@ -1,6 +1,6 @@
 const pages = [
   '/',
-  '/about/introduction',
+  '/about/why-use-newskit',
   '/theme/foundation/borders',
   '/components/button',
   '/components/modal',
