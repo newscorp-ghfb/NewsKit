@@ -1356,6 +1356,17 @@ workflows:
             - approve_publish_npm_pr
       # End jobs for releasing unstable NPM version
 
+      # Jobs for updating Percy baselines after PRs are merged
+      - conditionally_run_percy_comps_tests:
+          context: ncu-product-platforms-context
+          requires:
+            - download_headless_chrome
+      - conditionally_run_percy_docsite_tests:
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+
       - skip_applitools_check:
           context: ncu-product-platforms-context
           requires:
