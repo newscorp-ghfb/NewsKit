@@ -91,7 +91,10 @@ const ThemelessBreadcrumbs = React.forwardRef<
               </StyledListItem>,
               ...(index < arr.length - 1 || showTrailingSeparator
                 ? [
-                    <StyledListItem key={`${next.key}-separator`}>
+                    <StyledListItem
+                      key={`${next.key}-separator`}
+                      aria-hidden="true"
+                    >
                       <BreadcrumbsIcon
                         {...(BreadcrumbsIconProps as BreadcrumbsProps)}
                       />
