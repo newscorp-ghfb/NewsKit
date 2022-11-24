@@ -12,12 +12,11 @@ export const routes = [
           'NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. ',
       },
       {
-        title: 'Introduction',
+        title: 'Why use NewsKit?',
         page: true,
-        id: '/about/introduction',
-        description:
-          'NewsKit makes building digital products quicker and simpler for everyone.',
-        illustration: 'about/introduction-hero-stepping-stones-illustration',
+        id: '/about/why-use-newskit',
+        description: 'NewsKit can improve your process and products.',
+        illustration: 'about/why-use-newskit-hero-illustration',
       },
       {
         title: 'Release notes',
