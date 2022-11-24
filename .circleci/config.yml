@@ -665,7 +665,7 @@ jobs:
       - checkout_and_attach_workspace
       - run_test_visual_comps_percy
 
-  conditionally_run_percy_comps_tests:
+  comps_tests_conditional_run_to_update_baselines:
     # if there are any visual diffs we need to run the Percy comps tests to update the baselines
     executor: node-large
     steps:
@@ -682,7 +682,7 @@ jobs:
             }
       - run_test_visual_comps_percy
 
-  conditionally_run_percy_docsite_tests:
+  docsite_tests_conditional_run_to_update_baselines:
     # if there are any visual diffs we need to run the Percy docsite tests to update the baselines
     <<: *cypress_defaults
     executor: cypress
@@ -1572,11 +1572,11 @@ workflows:
             - build_components
 
       # Jobs for updating Percy baselines after PRs are merged
-      - conditionally_run_percy_comps_tests:
+      - comps_tests_conditional_run_to_update_baselines:
           context: ncu-product-platforms-context
           requires:
             - download_headless_chrome
-      - conditionally_run_percy_docsite_tests:
+      - docsite_tests_conditional_run_to_update_baselines:
           context: ncu-product-platforms-context
           requires:
             - build_docs_dev
