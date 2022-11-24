@@ -6,7 +6,8 @@ import {IconFilledError} from '../../icons';
 
 // shared Percy config params to ensure image has loaded before snapshot taken
 const parameters = {
-  percy: {waitForSelector: '[data-testid="loaded-image"]'},
+  // the img is the first child of the picture when loaded, otherwise second
+  percy: {waitForSelector: 'picture img:nth-child(1)'},
 };
 
 const Container = styled.div`

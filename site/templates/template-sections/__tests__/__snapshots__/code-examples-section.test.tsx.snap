@@ -645,7 +645,6 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                 />
                 <img
                   class="emotion-21"
-                  data-testid="loaded-image"
                   src="media 1 src"
                 />
               </picture>
@@ -709,7 +708,6 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                 />
                 <img
                   class="emotion-21"
-                  data-testid="loaded-image"
                   src="media 2 src"
                 />
               </picture>
@@ -776,7 +774,6 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                 />
                 <img
                   class="emotion-21"
-                  data-testid="loaded-image"
                   src="media 3 src"
                 />
               </picture>

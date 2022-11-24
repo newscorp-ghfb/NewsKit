@@ -399,7 +399,6 @@ exports[`Media List renders with custom layout 1`] = `
                 <img
                   alt="Card Media"
                   class="emotion-8"
-                  data-testid="loaded-image"
                   src="static/placeholder-16x9.png"
                 />
               </picture>
@@ -833,7 +832,6 @@ exports[`Media List renders with default layout 1`] = `
                 <img
                   alt="Card Media"
                   class="emotion-8"
-                  data-testid="loaded-image"
                   src="static/placeholder-16x9.png"
                 />
               </picture>

@@ -1709,7 +1709,6 @@ exports[`Card renders media section if the media data is provided 1`] = `
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-3x2.png"
         />
       </picture>
@@ -1887,7 +1886,6 @@ exports[`Card renders media section with a custom component 1`] = `
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
@@ -2065,7 +2063,6 @@ exports[`Card renders media section with a custom component using overrides 1`] 
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
@@ -2243,7 +2240,6 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
         <img
           alt="Card media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-3x2.png"
         />
       </picture>
@@ -2422,7 +2418,6 @@ exports[`Card renders media section with overrides 1`] = `
         <img
           alt="Card media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-3x2.png"
         />
       </picture>
@@ -2859,7 +2854,6 @@ exports[`Card renders with card items 1`] = `
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
@@ -3067,7 +3061,6 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
@@ -3291,7 +3284,6 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
@@ -3478,7 +3470,6 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
@@ -3671,7 +3662,6 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
@@ -3864,7 +3854,6 @@ exports[`Card with horizontal layout renders correctly 1`] = `
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
@@ -4057,7 +4046,6 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
@@ -4250,7 +4238,6 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
@@ -4443,7 +4430,6 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
@@ -5110,7 +5096,6 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-3x2.png"
         />
       </picture>
@@ -6675,7 +6660,6 @@ exports[`CardInset renders with card items 1`] = `
         <img
           alt="Card Media"
           class="emotion-4"
-          data-testid="loaded-image"
           src="/placeholder-16x9.png"
         />
       </picture>
