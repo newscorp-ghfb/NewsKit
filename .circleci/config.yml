@@ -416,7 +416,6 @@ jobs:
   build_icons:
     executor: node
     steps:
-      - checkout
       - attach_workspace:
           at: ~/project
       - run:
@@ -501,7 +500,6 @@ jobs:
   build_test_e2e:
     executor: node-xlarge
     steps:
-      - checkout
       - attach_workspace:
           at: ~/project
       - run:
