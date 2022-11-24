@@ -42,42 +42,42 @@ const commonPropsRows = [
 ];
 const commonOverridesRows = [
   {
-    attribute: 'orderedList.spaceInline',
+    attribute: 'spaceInline',
     type: 'MQ<string>',
     default: 'space040',
     description:
       'If provided, this overrides the space between the ordered list counter and the content.',
   },
   {
-    attribute: 'orderedList.content.stylePreset',
+    attribute: 'content.stylePreset',
     type: 'MQ<string>',
     default: 'inkBase',
     description:
       'If provided, this overrides the style preset applied to the ordered list content.',
   },
   {
-    attribute: 'orderedList.content.typographyPreset',
+    attribute: 'content.typographyPreset',
     type: 'MQ<string>',
     default: 'editorialParagraph010',
     description:
       'If provided, this overrides the typography preset applied to the ordered list content.',
   },
   {
-    attribute: 'orderedList.counter.stylePreset',
+    attribute: 'counter.stylePreset',
     type: 'MQ<string>',
     default: 'inkBase',
     description:
       'If provided, this overrides the style preset applied to the unordered list counter.',
   },
   {
-    attribute: 'orderedList.counter.typographyPreset',
+    attribute: 'counter.typographyPreset',
     type: 'MQ<string>',
     default: 'editorialParagraph010',
     description:
       'If provided, this overrides the typography preset applied to the unordered list counter.',
   },
   {
-    attribute: 'orderedList.counter.minWidth',
+    attribute: 'counter.minWidth',
     type: 'MQ<string>',
     default: 'sizing050',
     description:
