@@ -113,6 +113,7 @@ exports[`Select in Modal render Select 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -562,8 +563,7 @@ exports[`Select in Modal render Select 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  bottom: 0;
-  left: 0;
+  margin: -1px;
 }
 
 .emotion-6 {
@@ -1024,6 +1024,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -1494,8 +1495,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  bottom: 0;
-  left: 0;
+  margin: -1px;
 }
 
 .emotion-7 {
@@ -1800,6 +1800,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -2239,8 +2240,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  bottom: 0;
-  left: 0;
+  margin: -1px;
 }
 
 .emotion-6 {
@@ -2702,6 +2702,7 @@ exports[`Select renders Select with logical props 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -2930,6 +2931,7 @@ exports[`Select renders Select with overrides 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -3307,6 +3309,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-3 {
@@ -3687,6 +3690,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -3926,6 +3930,7 @@ exports[`Select renders disabled select 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -4243,6 +4248,7 @@ exports[`Select renders large Select 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -4557,6 +4563,7 @@ exports[`Select renders loading select 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -4850,6 +4857,7 @@ exports[`Select renders medium Select 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -5164,6 +5172,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -5512,6 +5521,7 @@ exports[`Select renders select with a selected option 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -5905,6 +5915,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-5 {
@@ -6232,6 +6243,7 @@ exports[`Select renders select with non-string options 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -6582,6 +6594,7 @@ exports[`Select renders small Select 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -6896,6 +6909,7 @@ exports[`Select should render custom placeholder 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -7210,6 +7224,7 @@ exports[`Select virtualize long list 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -7380,8 +7395,7 @@ exports[`Select virtualize long list 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  bottom: 0;
-  left: 0;
+  margin: -1px;
 }
 
 .emotion-1 {

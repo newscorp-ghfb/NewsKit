@@ -20,7 +20,6 @@ import {IconFilledCheck} from '../icons';
 import {Modal, ModalProps} from '../modal';
 import {getComponentOverrides, Override} from '../utils/overrides';
 import {getModalOverrides} from './utils';
-import {styled} from '../utils';
 
 interface SelectPanelProps {
   isOpen: boolean;
@@ -40,11 +39,6 @@ interface SelectPanelProps {
 }
 
 const DefaultModal = Modal;
-
-const StyledScreenReaderOnly = styled(ScreenReaderOnly)`
-  bottom: 0;
-  left: 0;
-`;
 
 export const StyledOptionWithPrivateProps = React.forwardRef<
   HTMLDivElement,
@@ -113,9 +107,9 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
     const optionsAsChildren = isOpen && children;
 
     const screenReaderOnlyMessage = isOpen && (
-      <StyledScreenReaderOnly id={listDescriptionId}>
+      <ScreenReaderOnly id={listDescriptionId}>
         Press down arrow key to navigate to the first item
-      </StyledScreenReaderOnly>
+      </ScreenReaderOnly>
     );
 
     if (renderInModal && !isOpen) {
