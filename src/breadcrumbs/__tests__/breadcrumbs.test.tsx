@@ -24,7 +24,7 @@ const BreadcrumbWithItem = (props: BreadcrumbItemProps) => (
     <BreadcrumbItem size="medium" key="1" {...props} />
   </Breadcrumbs>
 );
-// const BreadcrumbItemSizeArray = ['small', 'medium', 'large'];
+
 const breadcrumbsWithItem = [
   <BreadcrumbItem key="1" href={href}>
     {breadcrumbItemContent}

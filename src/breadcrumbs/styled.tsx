@@ -15,7 +15,7 @@ export const StyledOrderdList = styled.ol<BreadcrumbsProps>`
   padding: 0px;
 `;
 
-export const StyledList = styled.li<BreadcrumbsProps>`
+export const StyledListItem = styled.li<BreadcrumbsProps>`
   display: flex;
   justify-content: center;
   align-self: center;

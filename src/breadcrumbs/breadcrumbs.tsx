@@ -1,6 +1,6 @@
 import React from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {StyledList, StyledNav, StyledOrderdList} from './styled';
+import {StyledListItem, StyledNav, StyledOrderdList} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
@@ -78,50 +78,29 @@ const ThemelessBreadcrumbs = React.forwardRef<
         {...rest}
       >
         <StyledOrderdList size={size}>
-          {showTrailingSeparator
-            ? React.Children.map(children, child => (
-                <>
-                  <StyledList>
-                    {React.cloneElement(
-                      child as React.ReactElement<BreadcrumbsProps>,
-                      {
-                        size,
-                      },
-                    )}
-                  </StyledList>
-                  <StyledList>
-                    <BreadcrumbsIcon
-                      {...(BreadcrumbsIconProps as BreadcrumbsProps)}
-                    />
-                  </StyledList>
-                </>
-              ))
-            : breadcrumbChildren.reduce(
-                (acc: React.ReactElement[], listItem, index, array) => {
-                  acc.push(
-                    <StyledList key={listItem.key}>
-                      {React.cloneElement(
-                        listItem as React.ReactElement<BreadcrumbsProps>,
-                        {
-                          size,
-                        },
-                      )}
-                    </StyledList>,
-                  );
-                  if (children && index < array.length - 1) {
-                    acc.push(
-                      // eslint-disable-next-line react/no-array-index-key
-                      <StyledList key={index} aria-hidden="true">
-                        <BreadcrumbsIcon
-                          {...(BreadcrumbsIconProps as BreadcrumbsProps)}
-                        />
-                      </StyledList>,
-                    );
-                  }
-                  return acc;
-                },
-                [],
-              )}
+          {breadcrumbChildren.reduce(
+            (prev, next, index, arr) => [
+              ...prev,
+              <StyledListItem key={next.key}>
+                {React.cloneElement(
+                  next as React.ReactElement<BreadcrumbsProps>,
+                  {
+                    size,
+                  },
+                )}
+              </StyledListItem>,
+              ...(index < arr.length - 1 || showTrailingSeparator
+                ? [
+                    <StyledListItem key={`${next.key}-separator`}>
+                      <BreadcrumbsIcon
+                        {...(BreadcrumbsIconProps as BreadcrumbsProps)}
+                      />
+                    </StyledListItem>,
+                  ]
+                : []),
+            ],
+            [] as React.ReactElement<BreadcrumbsProps>[],
+          )}
         </StyledOrderdList>
       </StyledNav>
     );
