@@ -1521,34 +1521,35 @@ Object {
   },
   "breadcrumbItem": Object {
     "large": Object {
+      "paddingInline": "space000",
       "stylePreset": "breadcrumbItem",
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
+      "paddingInline": "space000",
       "stylePreset": "breadcrumbItem",
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
+      "paddingInline": "space000",
       "stylePreset": "breadcrumbItem",
       "typographyPreset": "utilityButton010",
     },
   },
-  "breadcrumbSeparator": Object {
-    "large": Object {
-      "iconSize": "iconSize030",
-      "paddingInline": "space020",
-      "stylePreset": "breadcrumbSeparator",
+  "breadcrumbs": Object {
+    "paddingInline": "space020",
+    "separator": Object {
+      "large": Object {
+        "iconSize": "iconSize030",
+      },
+      "medium": Object {
+        "iconSize": "iconSize020",
+      },
+      "small": Object {
+        "iconSize": "iconSize010",
+      },
     },
-    "medium": Object {
-      "iconSize": "iconSize020",
-      "paddingInline": "space020",
-      "stylePreset": "breadcrumbSeparator",
-    },
-    "small": Object {
-      "iconSize": "iconSize010",
-      "paddingInline": "space020",
-      "stylePreset": "breadcrumbSeparator",
-    },
+    "stylePreset": "breadcrumbSeparator",
   },
   "button": Object {
     "large": Object {

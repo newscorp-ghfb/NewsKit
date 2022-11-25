@@ -49,6 +49,7 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
   width: auto;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -66,13 +67,7 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
   color: #3B3B3B;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
   cursor: text;
-  padding: 0px;
 }
 
 .emotion-3 svg {
@@ -233,6 +228,7 @@ exports[`BreadcrumbItem renders with default props 1`] = `
   width: auto;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -248,13 +244,7 @@ exports[`BreadcrumbItem renders with default props 1`] = `
   color: #3358CC;
   cursor: pointer;
   color: #3358CC;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
   cursor: pointer;
-  padding: 0px;
 }
 
 .emotion-3 svg {
@@ -413,6 +403,7 @@ exports[`BreadcrumbItem renders with overrides 1`] = `
   width: auto;
   min-width: 10px;
   min-height: 11px;
+  padding-inline: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -426,13 +417,7 @@ exports[`BreadcrumbItem renders with overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   cursor: pointer;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
   cursor: pointer;
-  padding: 0px;
 }
 
 .emotion-3 svg {
@@ -555,6 +540,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
   width: auto;
   min-width: 120px;
   min-height: 64px;
+  padding-inline: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -570,13 +556,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
   color: #3358CC;
   cursor: pointer;
   color: #3358CC;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
   cursor: pointer;
-  padding: 0px;
 }
 
 .emotion-3 svg {
@@ -731,6 +711,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -766,6 +747,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -854,6 +836,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
   width: auto;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -869,13 +852,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
   color: #3358CC;
   cursor: pointer;
   color: #3358CC;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
   cursor: pointer;
-  padding: 0px;
 }
 
 .emotion-3 svg {
@@ -1030,6 +1007,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -1065,6 +1043,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -1153,6 +1132,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
   width: auto;
   min-width: 64px;
   min-height: 32px;
+  padding-inline: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1168,13 +1148,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
   color: #3358CC;
   cursor: pointer;
   color: #3358CC;
-  font-family: "Poppins",sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
   cursor: pointer;
-  padding: 0px;
 }
 
 .emotion-3 svg {
@@ -1329,6 +1303,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -1364,6 +1339,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -1452,6 +1428,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
   width: auto;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1467,13 +1444,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
   color: #3358CC;
   cursor: pointer;
   color: #3358CC;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
   cursor: pointer;
-  padding: 0px;
 }
 
 .emotion-3 svg {
@@ -1627,6 +1598,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -1662,6 +1634,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -1755,6 +1728,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
   width: auto;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1770,13 +1744,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
   color: #3358CC;
   cursor: pointer;
   color: #3358CC;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
   cursor: pointer;
-  padding: 0px;
 }
 
 .emotion-3 svg {
@@ -1866,7 +1834,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  padding-inline: 30px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1930,6 +1898,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -1965,6 +1934,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -2053,6 +2023,7 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
   width: auto;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2068,13 +2039,7 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
   color: #3358CC;
   cursor: pointer;
   color: #3358CC;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
   cursor: pointer;
-  padding: 0px;
 }
 
 .emotion-3 svg {
@@ -2228,6 +2193,7 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -2263,6 +2229,7 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -2351,6 +2318,7 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
   width: auto;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2366,13 +2334,7 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
   color: #3358CC;
   cursor: pointer;
   color: #3358CC;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
   cursor: pointer;
-  padding: 0px;
 }
 
 .emotion-3 svg {
@@ -2482,6 +2444,7 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <p
@@ -2506,6 +2469,7 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <p
@@ -2583,6 +2547,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
   width: auto;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2598,13 +2563,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
   color: #3358CC;
   cursor: pointer;
   color: #3358CC;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
   cursor: pointer;
-  padding: 0px;
 }
 
 .emotion-3 svg {
@@ -2758,6 +2717,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -2793,6 +2753,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg
@@ -2828,6 +2789,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
         class="emotion-2"
       >
         <svg

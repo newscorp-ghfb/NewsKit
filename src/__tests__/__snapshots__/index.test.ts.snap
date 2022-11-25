@@ -21,6 +21,8 @@ Array [
   "AudioPlayerVolumeControl",
   "Banner",
   "Block",
+  "BreadcrumbItem",
+  "Breadcrumbs",
   "Button",
   "ButtonsContainer",
   "Byline",
