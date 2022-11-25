@@ -2,31 +2,27 @@ import React, {useEffect, useState} from 'react';
 import {isNotSafari, isSafari, pathToID} from './utils';
 
 /**
- * Only for Safari. It reads the svg file as raw string and returns the problematic <defs> .. </defs> part as additional svg which solves the problem. If the browser is not Safari then all of this is skipped.
+ * Only for Safari. It reads the svg file as raw string and returns it as an inline SVG.
  */
-const getSafariSVGFilters = (
+const getSafariSVG = (
   sanitize: (source: string) => string,
   path: string,
+  props?: React.SVGProps<SVGSVGElement>,
 ) => {
   const rawSVG = sanitize(
     // eslint-disable-next-line import/no-dynamic-require, global-require
     require(`../../public/static/illustrations/${path}.svg`).default,
   );
 
-  const defsStart = '<defs>';
-  const defsEnd = '</defs>';
-  const startIndex = rawSVG.indexOf(defsStart);
-  const endIndex = rawSVG.indexOf(defsEnd);
-  const result = rawSVG.substring(startIndex, endIndex + defsEnd.length);
-
-  return startIndex > -1 ? (
+  return (
     <svg
-      width="0"
-      height="0"
+      viewBox="0 0 1490 838"
+      width="100%"
+      {...props}
       // eslint-disable-next-line react/no-danger
-      dangerouslySetInnerHTML={{__html: result}}
+      dangerouslySetInnerHTML={{__html: rawSVG}}
     />
-  ) : null;
+  );
 };
 
 export const getIllustrationComponent = (
@@ -35,42 +31,34 @@ export const getIllustrationComponent = (
 ) => {
   const id = pathToID(path);
 
-  const renderInlineSVG = () => (
-    <svg viewBox="0 0 1490 838" width="100%" {...props}>
-      <use href={`static/illustrations/${path}.svg#${id}`} />
-    </svg>
-  );
-
   const Component = () => {
-    const [safariSVGFilters, setSafariSVGFilters] = useState<
-      JSX.Element | undefined | null
-    >(undefined);
+    const [safariSVG, setSafariSVG] = useState<JSX.Element | null>(null);
 
     useEffect(() => {
-      if (isSafari && safariSVGFilters === undefined) {
+      if (isSafari && safariSVG === null) {
         // Dynamically importing 'isomorphic-dompurify' only for Safari to avoid bloating the bundle size for other browsers.
         const importSanitizer = async () => {
           const dompurify = await (await import('isomorphic-dompurify'))
             .default;
-          const value = getSafariSVGFilters(dompurify.sanitize, path);
-          setSafariSVGFilters(value);
+          const svg = getSafariSVG(dompurify.sanitize, path, props);
+          setSafariSVG(svg);
         };
         importSanitizer();
       }
-    }, [safariSVGFilters]);
+    }, [safariSVG]);
 
-    // If the browser is Safari and there are filters, we render an svg with filters, otherwise we render a clean svg.
-    const safariSVG = (
-      <>
-        {isSafari && safariSVGFilters}
-        {renderInlineSVG()}
-      </>
-    );
+    // If the browser is Safari we render an inline svg.
+    const renderSafariSVG = isSafari ? safariSVG : null;
 
-    // If the browser is not Safari we will render a clean svg without checking for filters. There is an explicit isNotSafari call because of the server side nature of the component we have to handle a race condition where the window object is not loaded yet.
-    const nonSafariSVG = isNotSafari ? renderInlineSVG() : null;
+    // If the browser is not Safari we will render an load an external SVG using <use> tag.
+    // There is an explicit isNotSafari call because of the server side nature of the component we have to handle a race condition where the window object is not loaded yet.
+    const nonSafariSVG = isNotSafari ? (
+      <svg viewBox="0 0 1490 838" width="100%" {...props}>
+        <use href={`static/illustrations/${path}.svg#${id}`} />
+      </svg>
+    ) : null;
 
-    return safariSVGFilters !== undefined ? safariSVG : nonSafariSVG;
+    return safariSVG === null ? nonSafariSVG : renderSafariSVG;
   };
 
   return Component;
