@@ -30,7 +30,7 @@ describe('SiteHeader', () => {
   test('has first item highlighted (About) if we are on a section within /about', () => {
     const fragment = renderToFragmentWithTheme(SiteHeader, {
       ...siteHeaderProps,
-      path: '/about/introduction',
+      path: '/about/why-use-newskit',
     });
     expect(fragment).toMatchSnapshot();
   });

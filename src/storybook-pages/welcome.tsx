@@ -18,7 +18,7 @@ const links = [
       'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components',
   },
   {label: 'Changelog', url: 'https://newskit.co.uk/about/release-notes/'},
-  {label: 'About', url: 'https://newskit.co.uk/about/introduction/'},
+  {label: 'About', url: 'https://newskit.co.uk/about/overview/'},
   {
     label: 'Report an issue',
     url: 'https://github.com/newscorp-ghfb/newskit/issues/new/choose',
