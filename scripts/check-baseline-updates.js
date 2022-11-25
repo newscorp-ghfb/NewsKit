@@ -2,8 +2,12 @@
 const https = require('https');
 
 const GITHUB_URL = 'https://api.github.com';
-const PERCY_URL = 'https://percy.io/api/v1';
+const PERCY_URL = 'https://percy.io';
 const GITHUB_HEADERS = {'User-Agent': 'required by GitHub'};
+
+function log(value) {
+  process.stdout.write(`${value}\n`);
+}
 
 function apiCall(url, options) {
   return new Promise((resolve, reject) => {
@@ -21,13 +25,24 @@ function apiCall(url, options) {
   });
 }
 
+function percyApiCall(path, project) {
+  const token = process.env[`PERCY_${project.toUpperCase()}_TOKEN`];
+  if (!token) {
+    log(`no Percy token found for project ${project}`);
+    throw Error();
+  }
+  return apiCall(`${PERCY_URL}${path}`, {
+    headers: {Authorization: `Token ${token}`},
+  });
+}
+
 async function getPRForCommit(mergeCommitSha) {
-  process.stdout.write(`looking for PR for merge commit ${mergeCommitSha}`);
+  log(`looking for PR for merge commit ${mergeCommitSha}`);
   const url = `${GITHUB_URL}/search/issues?q=${mergeCommitSha}`;
   const query = await apiCall(url, {headers: GITHUB_HEADERS});
   const {items} = query;
   if (!items.length) {
-    process.stdout.write(`no PR found for commit ${mergeCommitSha}`);
+    log(`no PR found for commit ${mergeCommitSha}`);
     throw Error();
   }
   const prUrl = items[0].pull_request.url;
@@ -36,29 +51,20 @@ async function getPRForCommit(mergeCommitSha) {
 }
 
 async function getPercyBuildForBranch(branchName, project) {
-  process.stdout.write(
-    `looking for Percy ${project} build for branch ${branchName}`,
-  );
-  const token = process.env[`PERCY_${project.toUpperCase()}_TOKEN`];
-  if (!token) {
-    process.stdout.write(`no Percy token found for project ${project}`);
-    throw Error();
-  }
-  const builds = await apiCall(`${PERCY_URL}/builds`, {
-    headers: {Authorization: `Token ${token}`},
-  });
+  log(`looking for Percy ${project} build for branch ${branchName}`);
+  const builds = await percyApiCall('/api/v1/builds', project);
   for (let i = 0; i <= builds.data.length; i++) {
     const build = builds.data[i];
     if (build.attributes.branch === branchName) {
       return build;
     }
   }
-  process.stdout.write(`no Percy build found for branch ${branchName}`);
+  log(`no Percy build found for branch ${branchName}`);
   throw Error();
 }
 
 async function checkIfBaselineUpdatesRequired(mergeCommitSha, project) {
-  process.stdout.write(
+  log(
     `checking if ${project} baselines need to be updated after commit ${mergeCommitSha}`,
   );
   const pr = await getPRForCommit(mergeCommitSha);
@@ -68,13 +74,27 @@ async function checkIfBaselineUpdatesRequired(mergeCommitSha, project) {
   const reviewState = build.attributes['review-state'];
   const nbDiffs = build.attributes['total-comparisons-diff'];
 
-  process.stdout.write(
-    `build is in state ${reviewState} with ${nbDiffs} diffs`,
-  );
+  log(`build is in state ${reviewState} with ${nbDiffs} diffs`);
   if (reviewState !== 'approved' || !nbDiffs) {
-    process.stdout.write(`no diffs requiring updates`);
+    log(`no diffs requiring updates`);
     throw Error();
   }
+
+  const snapshots = await percyApiCall(
+    build.relationships.snapshots.links.related,
+    project,
+  );
+
+  const updated = snapshots.data
+    .filter(
+      ({attributes}) => attributes['review-state-reason'] === 'user_approved',
+    )
+    .map(({id, attributes: {name}}) => ({id, name}));
+
+  log(`${updated.length} baselines need updating:`);
+  updated.forEach(({id, name}) => {
+    log(`-- ${id}: ${name}`);
+  });
 }
 
 // this script fails if updates are required
