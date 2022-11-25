@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
-import {Button, getColorCssFromTheme, styled, Theme} from 'newskit';
-import {themeList, ThemeNames} from '../colors-theme-list';
+import {getColorCssFromTheme, Theme, Switch, toNewsKitIcon} from 'newskit';
+import {DarkMode, LightMode} from '@emotion-icons/material';
 import {ThemeControlsProps} from './types';
+
+export const IconFilledDarkMode = toNewsKitIcon(DarkMode);
+export const IconFilledLightMode = toNewsKitIcon(LightMode);
 
 export const ThemeControls = ({
   hexesObj,
   getThemeFromList,
   setIds,
-  svgCodeGroup,
   setSvgCodeGroup,
   currentThemeName,
   baseSvgCodeGroup,
-  setCurrentThemeName,
 }: ThemeControlsProps) => {
   const [isLightTheme, setIsLightTheme] = useState<boolean>(true);
 
@@ -58,50 +59,19 @@ export const ThemeControls = ({
 
     return setIsLightTheme(!isLightTheme);
   };
-
-  const handleThemeSelection = (
-    event: React.ChangeEvent<HTMLSelectElement>,
-  ) => {
-    const newSelectedThemeName = event.target.value as ThemeNames;
-    const newSelectedTheme = getThemeFromList(newSelectedThemeName, 'light');
-
-    switchThemeColors(newSelectedTheme);
-    setIsLightTheme(true);
-    // Used later for other features such as the SwitchThemeButton
-    setCurrentThemeName(newSelectedThemeName);
-  };
-
-  const SwitchThemeButton = () => {
-    const StyledSwitchThemeButton = styled(Button)`
-      margin: 50px 20px 30px 20px;
-    `;
-    return (
-      <StyledSwitchThemeButton
-        disabled={!svgCodeGroup}
-        onClick={handleSwitchThemeButtonClick}
-      >
-        SWITCH THEME: {isLightTheme ? 'LIGHT' : 'DARK'}
-      </StyledSwitchThemeButton>
-    );
-  };
-
-  return (
-    <>
-      <select
-        data-testid="select-theme-element"
-        onChange={handleThemeSelection}
-        disabled={!svgCodeGroup}
-        style={{height: '26px', fontSize: '16px'}}
-        value={currentThemeName}
-      >
-        {themeList.map(theme => (
-          <option key={theme.name} value={theme.name}>
-            {theme.name}
-          </option>
-        ))}
-      </select>
-
-      <SwitchThemeButton />
-    </>
+  const SwitchThemeButton = () => (
+    <Switch
+      checked={isLightTheme}
+      onClick={handleSwitchThemeButtonClick}
+      size="medium"
+      overrides={{
+        onIcon: IconFilledLightMode,
+        offIcon: IconFilledDarkMode,
+      }}
+      label="Toggle Theme"
+      tabIndex={-1}
+    />
   );
+
+  return <SwitchThemeButton />;
 };

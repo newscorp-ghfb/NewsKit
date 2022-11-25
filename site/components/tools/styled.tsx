@@ -1,29 +1,34 @@
-import {Button, styled} from 'newskit';
+import {Button, styled, GridLayout, getColorCssFromTheme} from 'newskit';
 
 export const StyledSingleSVGDownloadButton = styled(Button)`
   margin-right: 20px;
 `;
 
-export const StyledSvgGroupContainer = styled.div`
-  max-width: 80vw;
+export const StyledSvgGroupContainer = styled(GridLayout)``;
+
+export const StyledSvgPreviewerContainer = styled(GridLayout)`
+  /*
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  */
+`;
+
+export const StyledButtonsContainer = styled(GridLayout)`
+  position: fixed;
+  top: var(--headerSize);
+  margin-top: -12px;
+  ${getColorCssFromTheme('background', 'interface020')}
+  ${getColorCssFromTheme('borderBottomColor', 'interface040')}
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  z-index: 1000;
+`;
+
+export const StyledSingleSvgWrapper = styled.div`
+  padding: 0 10vw;
   svg {
     max-width: 80vw;
     max-height: 80vh;
   }
-`;
-
-export const StyledSvgPreviewerContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
-`;
-
-export const StyledButtonsContainer = styled.div`
-  position: fixed;
-  top: 50px;
-`;
-
-export const StyledSingleSvgWrapper = styled.div`
-  margin-bottom: 20px;
 `;

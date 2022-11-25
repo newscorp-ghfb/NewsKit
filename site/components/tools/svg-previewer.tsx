@@ -1,11 +1,17 @@
 import React, {useEffect, useState} from 'react';
-import {getColorCssFromTheme, getSSRId, P} from 'newskit';
+import {
+  getColorCssFromTheme,
+  getSSRId,
+  Scroll,
+  P,
+  ScrollSnapAlignment,
+  GridLayout,
+} from 'newskit';
 import dompurify from 'dompurify';
 import {themeList, ThemeNames} from './colors-theme-list';
 import {
   StyledButtonsContainer,
   StyledSingleSvgWrapper,
-  StyledSvgGroupContainer,
   StyledSvgPreviewerContainer,
 } from './styled';
 import {DownloadControls} from './controls/download-controls';
@@ -155,7 +161,17 @@ export const SvgPreviewer: React.FC = () => {
 
   return (
     <StyledSvgPreviewerContainer>
-      <StyledButtonsContainer>
+      <StyledButtonsContainer
+        rows={{xs: 'sizing080'}}
+        alignItems="center"
+        justifyContent="sapce-between"
+        columns="40% 60%"
+        overrides={{
+          paddingInline: '10%',
+          paddingBlock: '8px',
+          minWidth: '100%',
+        }}
+      >
         <ThemeControls
           setSvgCodeGroup={setSvgCodeGroup}
           hexesObj={hexesObj}
@@ -166,24 +182,45 @@ export const SvgPreviewer: React.FC = () => {
           currentThemeName={currentThemeName}
           setCurrentThemeName={setCurrentThemeName}
         />
-
-        <DownloadControls
-          hexesObj={hexesObj}
-          baseSvgCodeGroup={baseSvgCodeGroup}
-          svgCodeGroup={svgCodeGroup}
-        />
+        <GridLayout
+          columns="1fr 1fr 1fr"
+          alignItems="baseline"
+          rows={{xs: 'sizing080'}}
+        >
+          <DownloadControls
+            hexesObj={hexesObj}
+            baseSvgCodeGroup={baseSvgCodeGroup}
+            svgCodeGroup={svgCodeGroup}
+          />
+        </GridLayout>
       </StyledButtonsContainer>
 
       {svgCodeGroup && baseSvgCodeGroup && (
-        <StyledSvgGroupContainer>
-          {svgCodeGroup.map((svgCode, index) => (
-            <StyledSingleSvgWrapper key={baseSvgCodeGroup[index].name}>
-              <P>{baseSvgCodeGroup[index].name}</P>
-              {/* eslint-disable-next-line react/no-danger */}
-              <div dangerouslySetInnerHTML={{__html: sanitizer(svgCode)}} />
-            </StyledSingleSvgWrapper>
-          ))}
-        </StyledSvgGroupContainer>
+        <Scroll
+          id="scroll"
+          snapAlign="center"
+          controls="static"
+          stepDistance={window.innerWidth}
+        >
+          <GridLayout
+            autoRows="1fr"
+            autoFlow="column dense"
+            overrides={{
+              marginBlock: '10vh',
+              maxHeight: '80vh',
+            }}
+          >
+            {svgCodeGroup.map((svgCode, index) => (
+              <ScrollSnapAlignment key={getSSRId()}>
+                <StyledSingleSvgWrapper key={baseSvgCodeGroup[index].name}>
+                  <P>{baseSvgCodeGroup[index].name}</P>
+                  {/* eslint-disable-next-line react/no-danger */}
+                  <div dangerouslySetInnerHTML={{__html: sanitizer(svgCode)}} />
+                </StyledSingleSvgWrapper>
+              </ScrollSnapAlignment>
+            ))}
+          </GridLayout>
+        </Scroll>
       )}
     </StyledSvgPreviewerContainer>
   );
