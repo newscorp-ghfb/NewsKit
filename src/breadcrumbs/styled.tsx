@@ -1,4 +1,4 @@
-import {styled, getStylePreset, getTypographyPreset} from '../utils/style';
+import {styled, getStylePreset} from '../utils/style';
 import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
 import {Button} from '../button';
@@ -25,7 +25,6 @@ export const StyledButton = styled(Button)<BreadcrumbItemProps>`
   ${({size, selected}) =>
     getStylePreset(`breadcrumbItem.${size}`, '', {isSelected: selected})};
 
-  ${({size}) => getTypographyPreset(`breadcrumbItem.${size}`, '')}
   cursor: ${({selected}) => (selected ? 'text' : 'pointer')};
   padding: 0px;
 `;

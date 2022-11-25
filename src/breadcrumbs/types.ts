@@ -27,7 +27,7 @@ export interface BreadcrumbsProps extends React.AriaAttributes {
 export interface BreadcrumbItemProps extends ButtonProps, EventData {
   children: Exclude<React.ReactNode, 'undefined'>;
   selected?: boolean;
-  href: string;
+  href?: string;
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;

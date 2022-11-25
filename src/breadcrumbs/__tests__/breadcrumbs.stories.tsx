@@ -11,8 +11,6 @@ import {
 import {TextBlock} from '../../text-block';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {CreateThemeArgs, ThemeProvider} from '../../theme';
-import {IconButton} from '../../icon-button';
-// import {IconButton} from '../../icon-button';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
@@ -187,19 +185,11 @@ export const StoryVariations = () => (
     <StorybookCase title="'Home' icon for the first breadcrumb item">
       <Breadcrumbs aria-label="home icon">
         <BreadcrumbItem href={href}>
-          <IconButton
-            size="medium"
+          <IconFilledHome
             overrides={{
               stylePreset: 'iconButtonMinimalPrimary',
             }}
-            aria-label="home-icon"
-          >
-            <IconFilledHome
-              overrides={{
-                stylePreset: 'iconButtonMinimalPrimary',
-              }}
-            />
-          </IconButton>
+          />
         </BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>
