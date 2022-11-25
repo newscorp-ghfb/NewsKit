@@ -34,6 +34,10 @@ export const pathToID = (path: string) => {
   return '';
 };
 
+const safariUACheck = /^((?!chrome|android).)*safari/i;
+const isWindowLoaded = typeof window !== 'undefined';
+
 export const isSafari =
-  typeof window !== 'undefined' &&
-  /^((?!chrome|android).)*safari/i.test(window.navigator.userAgent);
+  isWindowLoaded && safariUACheck.test(window.navigator.userAgent);
+export const isNotSafari =
+  isWindowLoaded && !safariUACheck.test(window.navigator.userAgent);
