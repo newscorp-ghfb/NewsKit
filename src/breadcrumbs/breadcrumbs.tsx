@@ -8,7 +8,6 @@ import {IconFilledChevronRight} from '../icons';
 import {getComponentOverrides, Override} from '../utils/overrides';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
-import {filterOutFalsyProperties} from '../utils/filter-object';
 
 const DefaultIcon = (overrides: BreadcrumbsProps) => (
   <IconFilledChevronRight overrides={overrides} />
@@ -29,10 +28,6 @@ const ThemelessBreadcrumbs = React.forwardRef<
     ref,
   ) => {
     const theme = useTheme();
-    const separatorOverrides = {
-      ...theme.componentDefaults.breadcrumbSeparator,
-      ...filterOutFalsyProperties(overrides?.separator),
-    };
 
     const iconToken = getToken(
       {theme, overrides},
@@ -61,7 +56,6 @@ const ThemelessBreadcrumbs = React.forwardRef<
         size: iconToken,
         paddingInline: iconSpaceToken,
         stylePreset: iconStylePresetToken,
-        ...separatorOverrides,
       },
     );
 
