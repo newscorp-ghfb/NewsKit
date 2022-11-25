@@ -1,12 +1,12 @@
 import React from 'react';
 import {StyledButton} from './styled';
 import {filterOutFalsyProperties} from '../utils/filter-object';
-import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
+import {BreadcrumbItemProps} from './types';
 import {useTheme} from '../theme';
 
 export const BreadcrumbItem = React.forwardRef<
   HTMLButtonElement,
-  BreadcrumbItemProps & BreadcrumbsProps
+  BreadcrumbItemProps
 >(
   (
     {

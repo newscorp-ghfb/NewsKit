@@ -13,21 +13,19 @@ export default {
       stylePreset: 'breadcrumbItem',
     },
   },
-  breadcrumbSeparator: {
-    small: {
-      stylePreset: 'breadcrumbSeparator',
-      iconSize: 'iconSize010',
-      paddingInline: 'space020',
-    },
-    medium: {
-      stylePreset: 'breadcrumbSeparator',
-      iconSize: 'iconSize020',
-      paddingInline: 'space020',
-    },
-    large: {
-      stylePreset: 'breadcrumbSeparator',
-      iconSize: 'iconSize030',
-      paddingInline: 'space020',
+  breadcrumbs: {
+    stylePreset: 'breadcrumbSeparator',
+    paddingInline: 'space020',
+    separator: {
+      small: {
+        iconSize: 'iconSize010',
+      },
+      medium: {
+        iconSize: 'iconSize020',
+      },
+      large: {
+        iconSize: 'iconSize030',
+      },
     },
   },
 };

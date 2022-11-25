@@ -36,21 +36,21 @@ const ThemelessBreadcrumbs = React.forwardRef<
 
     const iconToken = getToken(
       {theme, overrides},
-      `breadcrumbSeparator.${size}`,
+      `breadcrumbs.separator.${size}`,
       `${size}`,
       'iconSize',
     );
 
     const iconStylePresetToken = getToken(
       {theme, overrides},
-      `breadcrumbSeparator.${size}`,
-      `${size}`,
+      `breadcrumbs.stylePreset`,
+      ``,
       'stylePreset',
     );
     const iconSpaceToken = getToken(
       {theme, overrides},
-      `breadcrumbSeparator.${size}`,
-      `${size}`,
+      `breadcrumbs.paddingInline`,
+      ``,
       'paddingInline',
     );
 
