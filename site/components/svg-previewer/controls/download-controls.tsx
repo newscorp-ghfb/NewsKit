@@ -71,14 +71,6 @@ export const DownloadControls = ({
     return figmaSvgCopy;
   };
 
-  const toReactComponent = (figmaSvg: string) => {
-    let figmaSvgCopy = figmaSvg;
-
-    figmaSvgCopy = replaceFigmaIdWithVariable(figmaSvgCopy);
-
-    return figmaSvgCopy;
-  };
-
   const buildAndDownloadSingleSvgFile = () => {
     const selectElementValue = selectSvgEl.current?.value;
     const selectedSvg = selectElementValue
@@ -87,7 +79,9 @@ export const DownloadControls = ({
 
     if (selectedSvg !== undefined && baseSvgCodeGroup) {
       let svgCode: string;
-      svgCode = toReactComponent(baseSvgCodeGroup[selectedSvg].figmaSvg);
+      svgCode = replaceFigmaIdWithVariable(
+        baseSvgCodeGroup[selectedSvg].figmaSvg,
+      );
       svgCode = replaceColorHashWithToken(svgCode);
 
       const svgFileName = buildSvgFileName(baseSvgCodeGroup[selectedSvg].name);
