@@ -48,6 +48,7 @@ const StoryWrapper = styled.div`
 const Container = styled.div`
   max-width: 1024px;
   max-height: 768px;
+  overflow: hidden;
 `;
 
 const Background = ({children}) => (

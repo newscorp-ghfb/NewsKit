@@ -1146,7 +1146,6 @@ export const StorySelectWithOverflowScroll = () => (
     <div
       style={{
         height: '90vh',
-        // padding: "50vh 0",
         position: 'relative',
         overflow: 'auto',
         border: '3px solid blue',
@@ -1155,7 +1154,6 @@ export const StorySelectWithOverflowScroll = () => (
     >
       <div
         style={{
-          // height: "200vh",
           padding: '75vh 0',
           position: 'relative',
           border: '3px solid red',
