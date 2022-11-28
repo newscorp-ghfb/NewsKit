@@ -17,17 +17,25 @@ export default {
     },
   },
   breadcrumbs: {
-    stylePreset: 'breadcrumbSeparator',
-    paddingInline: 'space020',
-    separator: {
-      small: {
+    small: {
+      separator: {
         iconSize: 'iconSize010',
+        stylePreset: 'breadcrumbSeparator',
+        paddingInline: 'space020',
       },
-      medium: {
+    },
+    medium: {
+      separator: {
         iconSize: 'iconSize020',
+        stylePreset: 'breadcrumbSeparator',
+        paddingInline: 'space020',
       },
-      large: {
+    },
+    large: {
+      separator: {
         iconSize: 'iconSize030',
+        stylePreset: 'breadcrumbSeparator',
+        paddingInline: 'space020',
       },
     },
   },

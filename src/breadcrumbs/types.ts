@@ -8,19 +8,13 @@ import {ButtonProps} from '../button/types';
 
 export type BreadcrumbSize = 'small' | 'medium' | 'large';
 
-interface SeparatorProps {
-  separator?: {
-    paddingInline: LogicalProps;
-  } & Override<NewsKitIconProps>;
-}
-
 export interface BreadcrumbsProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
   size?: BreadcrumbSize;
   showTrailingSeparator?: boolean;
   overrides?: {
     stylePreset?: MQ<string>;
-    separator?: SeparatorProps;
+    separator?: Override<NewsKitIconProps>;
   } & LogicalProps;
 }
 
