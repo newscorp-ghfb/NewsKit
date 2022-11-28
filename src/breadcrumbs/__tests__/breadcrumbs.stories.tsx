@@ -184,7 +184,7 @@ export const StoryVariations = () => (
     </StorybookCase>
     <StorybookCase title="'Home' icon for the first breadcrumb item">
       <Breadcrumbs aria-label="home icon">
-        <BreadcrumbItem href={href}>
+        <BreadcrumbItem>
           <IconFilledHome
             overrides={{
               stylePreset: 'iconButtonMinimalPrimary',
