@@ -1701,6 +1701,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
+  margin-block: 20px;
   padding-inline: 30px;
 }
 
