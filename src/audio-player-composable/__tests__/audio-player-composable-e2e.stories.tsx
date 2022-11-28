@@ -99,4 +99,4 @@ export const AudioPlayerE2E = () => {
   );
 };
 AudioPlayerE2E.storyName = 'audio-player-e2e';
-AudioPlayerE2E.parameters = {percy: {skip: true}, eyes: {include: false}};
+AudioPlayerE2E.parameters = {percy: {skip: true}};
