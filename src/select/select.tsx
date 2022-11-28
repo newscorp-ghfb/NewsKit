@@ -194,14 +194,13 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       ...downshiftMenuPropsExceptRef
     } = getMenuProps();
 
-    const [{width, height, top, left}, setSelectRect] = useState({
+    const [{width, top, height, left}, setSelectRect] = useState({
       width: 0,
       top: 0,
       height: 0,
       left: 0,
     });
 
-    // THIS CAN BE COMBINED WITH OTHER ONE FOR SCROLLING
     useEffect(() => {
       if (isOpen && selectRef.current) {
         // getting width, height, left, top of the select
@@ -241,6 +240,11 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     );
 
     const parentOverflowNode = useRef<HTMLElement>();
+
+    // In some cases the parent scroll element is not body/html in that case we need to
+    // adjust the position of the panel according to that parent.
+    // We use getOverflowAncestors from get nearest scollable parent and attach scroll event listener
+    // so that we know when it moves and we re-take the panel position on evert scroll move.
     useEffect(() => {
       if (localInputRef.current && isOpen) {
         const [nearest] = getOverflowAncestors(localInputRef.current);
