@@ -231,7 +231,6 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     /* istanbul ignore next */
     const onOverflowScroll = useCallback(
       debounce(() => {
-        /* istanbul ignore next */
         if (selectRef.current) {
           setSelectRect(selectRef.current.getBoundingClientRect());
         }
@@ -248,7 +247,6 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     useEffect(() => {
       if (localInputRef.current && isOpen) {
         const [nearest] = getOverflowAncestors(localInputRef.current);
-        /* istanbul ignore if */
         if (nearest instanceof window.HTMLElement) {
           parentOverflowNode.current = nearest;
           parentOverflowNode.current.addEventListener(
@@ -258,7 +256,6 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         }
       }
       return () => {
-        /* istanbul ignore if */
         if (parentOverflowNode.current) {
           parentOverflowNode.current.removeEventListener(
             'scroll',
