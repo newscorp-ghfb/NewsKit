@@ -54,7 +54,8 @@ export const getIllustrationComponent = (
     const nonSafariSVG = (
       <svg
         viewBox="0 0 1490 838"
-        width={isNotSafari ? '100%' : '0%'}
+        width="100%"
+        opacity={isNotSafari ? 1 : 0}
         {...props}
       >
         <use href={`static/illustrations/${path}.svg#${id}`} />
