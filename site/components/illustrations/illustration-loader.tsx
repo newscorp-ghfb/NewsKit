@@ -51,12 +51,15 @@ export const getIllustrationComponent = (
     const renderSafariSVG = isSafari ? safariSVG : null;
 
     // If the browser is not Safari we will render an load an external SVG using <use> tag.
-    // There is an explicit isNotSafari call because of the server side nature of the component we have to handle a race condition where the window object is not loaded yet.
-    const nonSafariSVG = isNotSafari ? (
-      <svg viewBox="0 0 1490 838" width="100%" {...props}>
+    const nonSafariSVG = (
+      <svg
+        viewBox="0 0 1490 838"
+        width={isNotSafari ? '100%' : '0%'}
+        {...props}
+      >
         <use href={`static/illustrations/${path}.svg#${id}`} />
       </svg>
-    ) : null;
+    );
 
     return safariSVG === null ? nonSafariSVG : renderSafariSVG;
   };
