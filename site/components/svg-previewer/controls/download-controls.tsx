@@ -127,13 +127,11 @@ export const DownloadControls = ({
           disabled={!svgCodeGroup}
           value={selectedIndexSvg}
           onChange={e => setSelectedIndexSvg(e.target.value)}
-          size="medium"
-          overrides={{button: {width: '200px'}}}
         >
           {baseSvgCodeGroup &&
             baseSvgCodeGroup.map((svg, index) => (
               <SelectOption key={svg.name} value={`${index}`}>
-                {svg.name.toLowerCase().replaceAll(' ', '-')}.svg
+                {svg.name.replace(' ', '')} .svg
               </SelectOption>
             ))}
         </Select>
