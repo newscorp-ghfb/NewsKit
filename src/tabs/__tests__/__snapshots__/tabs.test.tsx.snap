@@ -132,7 +132,7 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -144,58 +144,16 @@ exports[`Tabs changes focus on tab to tab-panel  1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -709,7 +667,7 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -721,58 +679,16 @@ exports[`Tabs changes focus on tab-panel to tab  1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1269,7 +1185,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -1281,58 +1197,16 @@ exports[`Tabs clears focus onMouseDown 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1827,7 +1701,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -1839,58 +1713,16 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2389,7 +2221,7 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -2406,58 +2238,16 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2960,7 +2750,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -2972,58 +2762,16 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3524,7 +3272,7 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -3541,58 +3289,16 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4095,7 +3801,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -4107,58 +3813,16 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4659,7 +4323,7 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -4676,58 +4340,16 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5230,7 +4852,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -5242,58 +4864,16 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5740,7 +5320,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -5752,58 +5332,16 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -6304,7 +5842,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -6321,58 +5859,16 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -6875,7 +6371,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -6887,58 +6383,16 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -7592,7 +7046,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -7609,58 +7063,16 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
 }
 
 .emotion-15 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-15:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-15:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-15:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-15:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-15:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-15:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-15:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8157,7 +7569,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -8169,58 +7581,16 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
 }
 
 .emotion-15 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-15:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-15:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-15:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-15:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-15:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-15:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-15:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8723,7 +8093,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -8740,58 +8110,16 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
 }
 
 .emotion-11 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-11:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-11:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-11:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-11:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-11:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-11:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-11:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -9288,7 +8616,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -9300,58 +8628,16 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
 }
 
 .emotion-11 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-11:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-11:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-11:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-11:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-11:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-11:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-11:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -9705,7 +8991,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -9717,58 +9003,16 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -10269,7 +9513,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -10286,58 +9530,16 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -10844,7 +10046,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -10861,58 +10063,16 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -11453,7 +10613,7 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -11465,58 +10625,16 @@ exports[`Tabs renders with additional HTML attributes 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -11818,7 +10936,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -11830,58 +10948,16 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -12466,7 +11542,7 @@ exports[`Tabs renders with default styles 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -12478,58 +11554,16 @@ exports[`Tabs renders with default styles 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -13026,7 +12060,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -13038,58 +12072,16 @@ exports[`Tabs renders with default styles and divider 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -13625,7 +12617,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -13637,58 +12629,16 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -14273,7 +13223,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -14285,58 +13235,16 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -14921,7 +13829,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -14933,58 +13841,16 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -15569,7 +14435,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -15581,58 +14447,16 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -16217,7 +15041,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -16229,58 +15053,16 @@ exports[`Tabs renders with icons for tabs 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -16816,7 +15598,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -16833,58 +15615,16 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -17479,7 +16219,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -17496,58 +16236,16 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -18138,7 +16836,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -18150,58 +16848,16 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -18699,7 +17355,7 @@ exports[`Tabs renders with overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -18711,58 +17367,16 @@ exports[`Tabs renders with overrides 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -19370,6 +17984,8 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
+  border-style: solid;
+  border-color: green;
   cursor: pointer;
   border-style: solid;
   border-color: green;
@@ -19849,7 +18465,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -19866,58 +18482,16 @@ exports[`Tabs renders with overrides vertical 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -20675,7 +19249,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -20687,58 +19261,16 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-11:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-11:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-11:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-11:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-11:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-11:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-11:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -21239,7 +19771,7 @@ exports[`Tabs renders with selectedIndex 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -21251,58 +19783,16 @@ exports[`Tabs renders with selectedIndex 1`] = `
 }
 
 .emotion-15 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-15:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-15:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-15:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-15:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-15:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-15:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-15:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -21652,7 +20142,7 @@ exports[`Tabs renders with sizing 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -21664,58 +20154,16 @@ exports[`Tabs renders with sizing 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -22212,7 +20660,7 @@ exports[`Tabs sets active on click 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -22224,58 +20672,16 @@ exports[`Tabs sets active on click 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -22772,7 +21178,7 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -22784,58 +21190,16 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -23479,7 +21843,7 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -23491,58 +21855,16 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
 }
 
 .emotion-15 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-15:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-15:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-15:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-15:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-15:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-15:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-15:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -24039,7 +22361,7 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -24051,58 +22373,16 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
 }
 
 .emotion-15 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-15:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-15:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-15:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-15:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-15:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-15:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-15:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-15:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -24427,7 +22707,7 @@ exports[`Tabs with custom scroll component 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -24439,58 +22719,16 @@ exports[`Tabs with custom scroll component 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-5:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-5:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-5:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-5:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-5:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-5:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-5:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-5:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -25079,7 +23317,7 @@ exports[`Tabs with custom scroll props 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -25091,58 +23329,16 @@ exports[`Tabs with custom scroll props 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -25727,7 +23923,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -25739,58 +23935,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -26373,7 +24527,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -26385,58 +24539,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -27021,7 +25133,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -27033,58 +25145,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -27673,7 +25743,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -27690,58 +25760,16 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -28334,7 +26362,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -28351,58 +26379,16 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -28997,7 +26983,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -29014,58 +27000,16 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -29660,7 +27604,7 @@ exports[`with logical props overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3358CC;
   cursor: pointer;
   background-color: transparent;
   color: #3358CC;
@@ -29672,58 +27616,16 @@ exports[`with logical props overrides 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3B3B3B;
+  fill: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: transparent;
   color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: -2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

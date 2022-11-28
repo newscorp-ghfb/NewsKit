@@ -8112,16 +8112,11 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #6A6A6A;
-  cursor: pointer;
-  width: 100%;
-  background-color: transparent;
-  border-style: solid;
   border-color: #3358CC;
   border-width: 0 0 2px 0;
   color: #3B3B3B;
+  cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -8135,7 +8130,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -8145,47 +8140,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 
 .emotion-2:hover:not(:disabled) svg {
   fill: #3B3B3B;
-}
-
-.emotion-2:active:not(:disabled) {
-  border-color: #254CAC;
-  color: #111111;
-}
-
-.emotion-2:active:not(:disabled) svg {
-  fill: #111111;
-}
-
-.emotion-2:selected:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
-}
-
-.emotion-2:disabled {
-  color: #ABABAB;
-}
-
-.emotion-2:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-2:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-2:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8202,19 +8156,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
-}
-
-.emotion-2 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-2:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
 }
 
 .emotion-3 {
@@ -9954,16 +9895,11 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #6A6A6A;
-  cursor: pointer;
-  width: 100%;
-  background-color: transparent;
-  border-style: solid;
   border-color: #3358CC;
   border-width: 0 0 2px 0;
   color: #3B3B3B;
+  cursor: pointer;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -9977,7 +9913,7 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #3B3B3B;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -9987,47 +9923,6 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
 
 .emotion-2:hover:not(:disabled) svg {
   fill: #3B3B3B;
-}
-
-.emotion-2:active:not(:disabled) {
-  border-color: #254CAC;
-  color: #111111;
-}
-
-.emotion-2:active:not(:disabled) svg {
-  fill: #111111;
-}
-
-.emotion-2:selected:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-2:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
-}
-
-.emotion-2:disabled {
-  color: #ABABAB;
-}
-
-.emotion-2:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-2:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-2:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -10044,19 +9939,6 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
-}
-
-.emotion-2 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-2:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-2:hover:not(:disabled) svg {
-  fill: #3B3B3B;
 }
 
 .emotion-3 {

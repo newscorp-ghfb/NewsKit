@@ -107,15 +107,13 @@ export const StyledButton = styled(Button)<{
   selected?: boolean;
 }>`
   width: 100%;
-  ${({selected}) =>
-    selected && getStylePreset('menuItem', '', {isSelected: selected})}
 
   ${({align}) =>
     align &&
     menuItemFlexAlign[align] && {
       justifyContent: menuItemFlexAlign[align],
     }}
-  
+
   text-align: ${({align}) => align && getTextAlign(align)}
 `;
 
