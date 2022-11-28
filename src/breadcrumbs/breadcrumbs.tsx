@@ -6,7 +6,7 @@ import stylePresets from './style-presets';
 import {BreadcrumbItemProps, BreadcrumbsProps} from './types';
 import {IconFilledChevronRight} from '../icons';
 import {getComponentOverrides, Override} from '../utils/overrides';
-import {getToken} from '../utils/get-token';
+import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme';
 
 const DefaultIcon = (overrides: BreadcrumbsProps) => (
@@ -21,7 +21,6 @@ const ThemelessBreadcrumbs = React.forwardRef<
       children,
       showTrailingSeparator = false,
       overrides,
-
       size = 'medium',
       ...rest
     },
@@ -29,39 +28,48 @@ const ThemelessBreadcrumbs = React.forwardRef<
   ) => {
     const theme = useTheme();
 
-    const iconToken = getToken(
-      {theme, overrides},
-      `breadcrumbs.separator.${size}`,
-      `${size}`,
-      'iconSize',
-    );
-
-    const iconStylePresetToken = getToken(
-      {theme, overrides},
-      `breadcrumbs.stylePreset`,
-      ``,
-      'stylePreset',
-    );
-    const iconSpaceToken = getToken(
-      {theme, overrides},
-      `breadcrumbs.paddingInline`,
-      ``,
-      'paddingInline',
-    );
-
     const [BreadcrumbsIcon, BreadcrumbsIconProps] = getComponentOverrides(
       overrides?.separator as Override<BreadcrumbsProps>,
       DefaultIcon,
       {
-        size: iconToken,
-        paddingInline: iconSpaceToken,
-        stylePreset: iconStylePresetToken,
+        size: theme.componentDefaults.breadcrumbs[size].separator.iconSize,
+        ...theme.componentDefaults.breadcrumbs[size].separator,
+        ...filterOutFalsyProperties(overrides),
       },
     );
+
+    const getBreadcrumbSeparator = (
+      index: number,
+      arr: React.ReactElement<
+        BreadcrumbItemProps,
+        string | React.JSXElementConstructor<unknown>
+      >[],
+    ) => index < arr.length - 1 || showTrailingSeparator;
 
     const breadcrumbChildren = React.Children.toArray(
       children,
     ) as React.ReactElement<BreadcrumbItemProps>[];
+
+    const BreadcrumbElement = breadcrumbChildren.reduce(
+      (prevBreadcrumbItem, next, index, arr) => [
+        ...prevBreadcrumbItem,
+        <StyledListItem key={next.key}>
+          {React.cloneElement(next as React.ReactElement<BreadcrumbsProps>, {
+            size,
+          })}
+        </StyledListItem>,
+        ...(getBreadcrumbSeparator(index, arr)
+          ? [
+              <StyledListItem key={`${next.key}-separator`} aria-hidden="true">
+                <BreadcrumbsIcon
+                  {...(BreadcrumbsIconProps as BreadcrumbsProps)}
+                />
+              </StyledListItem>,
+            ]
+          : []),
+      ],
+      [] as React.ReactElement<BreadcrumbsProps>[],
+    );
 
     return (
       <StyledNav
@@ -71,34 +79,7 @@ const ThemelessBreadcrumbs = React.forwardRef<
         overrides={overrides}
         {...rest}
       >
-        <StyledOrderdList size={size}>
-          {breadcrumbChildren.reduce(
-            (prev, next, index, arr) => [
-              ...prev,
-              <StyledListItem key={next.key}>
-                {React.cloneElement(
-                  next as React.ReactElement<BreadcrumbsProps>,
-                  {
-                    size,
-                  },
-                )}
-              </StyledListItem>,
-              ...(index < arr.length - 1 || showTrailingSeparator
-                ? [
-                    <StyledListItem
-                      key={`${next.key}-separator`}
-                      aria-hidden="true"
-                    >
-                      <BreadcrumbsIcon
-                        {...(BreadcrumbsIconProps as BreadcrumbsProps)}
-                      />
-                    </StyledListItem>,
-                  ]
-                : []),
-            ],
-            [] as React.ReactElement<BreadcrumbsProps>[],
-          )}
-        </StyledOrderdList>
+        <StyledOrderdList size={size}>{BreadcrumbElement}</StyledOrderdList>
       </StyledNav>
     );
   },
