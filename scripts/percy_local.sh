@@ -18,6 +18,7 @@ read -p "Enter the API key for the 'newskit-$1' project (you can find this in th
 
 # set to the user's API key
 export PERCY_TOKEN=$apiKey
+export PERCY_BRANCH="local run by ${USERNAME}"
 
 if [[ "$1" == "comps" ]]; then
   echo "Running component tests..."
