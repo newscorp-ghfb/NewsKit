@@ -62,10 +62,11 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
+  color: #3358CC;
+  cursor: pointer;
   color: #3B3B3B;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
   cursor: text;
 }
 
@@ -75,9 +76,21 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
   color: #3B3B3B;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -94,6 +107,12 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-4 {
@@ -224,6 +243,7 @@ exports[`BreadcrumbItem renders with default props 1`] = `
   appearance: none;
   color: #3358CC;
   cursor: pointer;
+  color: #3358CC;
   cursor: pointer;
 }
 
@@ -264,6 +284,24 @@ exports[`BreadcrumbItem renders with default props 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 {
@@ -517,6 +555,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
   appearance: none;
   color: #3358CC;
   cursor: pointer;
+  color: #3358CC;
   cursor: pointer;
 }
 
@@ -557,6 +596,24 @@ exports[`Breadcrumbs renders in large size 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 {
@@ -794,6 +851,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
   appearance: none;
   color: #3358CC;
   cursor: pointer;
+  color: #3358CC;
   cursor: pointer;
 }
 
@@ -834,6 +892,24 @@ exports[`Breadcrumbs renders in medium size 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 {
@@ -1071,6 +1147,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
   appearance: none;
   color: #3358CC;
   cursor: pointer;
+  color: #3358CC;
   cursor: pointer;
 }
 
@@ -1111,6 +1188,24 @@ exports[`Breadcrumbs renders in small size 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 {
@@ -1348,6 +1443,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
   appearance: none;
   color: #3358CC;
   cursor: pointer;
+  color: #3358CC;
   cursor: pointer;
 }
 
@@ -1388,6 +1484,24 @@ exports[`Breadcrumbs renders with default props 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 {
@@ -1629,6 +1743,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
   appearance: none;
   color: #3358CC;
   cursor: pointer;
+  color: #3358CC;
   cursor: pointer;
 }
 
@@ -1669,6 +1784,24 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 {
@@ -1906,6 +2039,7 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
   appearance: none;
   color: #3358CC;
   cursor: pointer;
+  color: #3358CC;
   cursor: pointer;
 }
 
@@ -1946,6 +2080,24 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 {
@@ -2182,6 +2334,7 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
   appearance: none;
   color: #3358CC;
   cursor: pointer;
+  color: #3358CC;
   cursor: pointer;
 }
 
@@ -2222,6 +2375,24 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 {
@@ -2392,6 +2563,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
   appearance: none;
   color: #3358CC;
   cursor: pointer;
+  color: #3358CC;
   cursor: pointer;
 }
 
@@ -2432,6 +2604,24 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 {
