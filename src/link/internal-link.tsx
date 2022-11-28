@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import {styled, getStylePreset} from '../utils/style';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {InternalLinkProps} from './types';
@@ -13,7 +13,7 @@ import {logicalProps} from '../utils/logical-properties';
 import {getTransitionPreset} from '../utils/style/transition-preset';
 
 const StyledLink = styled.a<InternalLinkProps>`
-  display: inline-block;
+  display: ${({textOnly}) => (textOnly ? 'inline' : 'inline-block')};
   ${getTransitionPreset(`link`, '')};
   ${getStylePreset('link', '')}
   ${logicalProps('link')}
@@ -32,6 +32,7 @@ export const InternalLink = React.forwardRef<
     noCrop,
     href,
     external,
+    textOnly,
     children,
     overrides,
     eventContext,
@@ -64,6 +65,17 @@ export const InternalLink = React.forwardRef<
   const willRenderExternalIcon =
     external === undefined ? hasMounted && isLinkExternal(href) : external;
 
+  const renderExternalIcon = useMemo(
+    () =>
+      willRenderExternalIcon && (
+        <IconFilledLaunch
+          title="External link"
+          overrides={{size: externalIconSize}}
+        />
+      ),
+    [externalIconSize, willRenderExternalIcon],
+  );
+
   return (
     <StyledLink
       ref={ref}
@@ -82,36 +94,38 @@ export const InternalLink = React.forwardRef<
         }
       }}
     >
-      <Stack
-        flow="horizontal-center"
-        spaceInline={
-          willRenderExternalIcon || React.Children.count(children) !== 1
-            ? spaceInBetween
-            : null
-        }
-        as="span"
-      >
-        {React.Children.map(children, child =>
-          typeof child === 'string' ? (
-            <StyledTextBlock
-              noCrop={noCrop}
-              as="span"
-              typographyPreset={typographyPreset}
-            >
-              {child}
-            </StyledTextBlock>
-          ) : (
-            child
-          ),
-        )}
+      {textOnly ? (
+        <>
+          {children}
+          {renderExternalIcon}
+        </>
+      ) : (
+        <Stack
+          flow="horizontal-center"
+          spaceInline={
+            willRenderExternalIcon || React.Children.count(children) !== 1
+              ? spaceInBetween
+              : null
+          }
+          as="span"
+        >
+          {React.Children.map(children, child =>
+            typeof child === 'string' ? (
+              <StyledTextBlock
+                noCrop={noCrop}
+                as="span"
+                typographyPreset={typographyPreset}
+              >
+                {child}
+              </StyledTextBlock>
+            ) : (
+              child
+            ),
+          )}
 
-        {willRenderExternalIcon && (
-          <IconFilledLaunch
-            title="External link"
-            overrides={{size: externalIconSize}}
-          />
-        )}
-      </Stack>
+          {renderExternalIcon}
+        </Stack>
+      )}
     </StyledLink>
   );
 });

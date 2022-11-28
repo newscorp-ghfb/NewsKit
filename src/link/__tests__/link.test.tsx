@@ -4,7 +4,7 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {Link, LinkStandalone} from '..';
+import {LinkInline, LinkStandalone} from '..';
 import {EventTrigger, InstrumentationProvider} from '../../instrumentation';
 import {createTheme} from '../../theme';
 
@@ -34,16 +34,25 @@ const myCustomTheme = createTheme({
 
 describe('Link', () => {
   test('renders as expected in default state', () => {
-    const fragment = renderToFragmentWithTheme(Link, {
+    const fragment = renderToFragmentWithTheme(LinkInline, {
       href: '#',
       children: 'test link test',
     });
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders as expected in textOnly state', () => {
+    const fragment = renderToFragmentWithTheme(LinkInline, {
+      href: '#',
+      children: 'test link test',
+      textOnly: true,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders with overrides', () => {
     const fragment = renderToFragmentWithTheme(
-      Link,
+      LinkInline,
       {
         href: '#',
         children: 'test link test',
@@ -59,7 +68,7 @@ describe('Link', () => {
 
   test('renders with logical props overrides', () => {
     const fragment = renderToFragmentWithTheme(
-      Link,
+      LinkInline,
       {
         href: '#',
         children: 'test link test',
@@ -74,7 +83,7 @@ describe('Link', () => {
   });
 
   test('renders the external icon even if the href is internal', () => {
-    const fragment = renderToFragmentWithTheme(Link, {
+    const fragment = renderToFragmentWithTheme(LinkInline, {
       href: '/relative',
       children: 'test link text',
       external: true,
@@ -83,7 +92,7 @@ describe('Link', () => {
   });
 
   test('does not render the external icon even if the href is external', () => {
-    const fragment = renderToFragmentWithTheme(Link, {
+    const fragment = renderToFragmentWithTheme(LinkInline, {
       href: 'www.google.it',
       children: 'test link text',
       external: false,
@@ -92,7 +101,7 @@ describe('Link', () => {
   });
 
   test('renders the external icon if the href is external', () => {
-    const fragment = renderToFragmentWithTheme(Link, {
+    const fragment = renderToFragmentWithTheme(LinkInline, {
       href: 'www.google.it',
       children: 'test link text',
     });
@@ -100,7 +109,7 @@ describe('Link', () => {
   });
 
   test('does not render the external icon if the href is internal', () => {
-    const fragment = renderToFragmentWithTheme(Link, {
+    const fragment = renderToFragmentWithTheme(LinkInline, {
       href: 'relative',
       children: 'test link text',
     });
@@ -114,9 +123,9 @@ describe('Link', () => {
     };
     const link = await renderWithTheme((() => (
       <InstrumentationProvider fireEvent={mockFireEvent}>
-        <Link href="#the-href.com" eventContext={eventContext}>
+        <LinkInline href="#the-href.com" eventContext={eventContext}>
           test link text
-        </Link>
+        </LinkInline>
         ;
       </InstrumentationProvider>
     )) as React.FC).findByText('test link text');
@@ -140,13 +149,13 @@ describe('Link', () => {
     };
     const link = await renderWithTheme((() => (
       <InstrumentationProvider fireEvent={mockFireEvent}>
-        <Link
+        <LinkInline
           href="#the-href.com"
           eventContext={eventContext}
           eventOriginator="custom-originator"
         >
           test link text
-        </Link>
+        </LinkInline>
         ;
       </InstrumentationProvider>
     )) as React.FC).findByText('test link text');
