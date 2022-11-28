@@ -165,23 +165,29 @@ export const SvgPreviewer: React.FC = () => {
         rows={{xs: 'sizing080'}}
         alignItems="center"
         justifyContent="sapce-between"
-        columns="40% 60%"
+        columns="1fr 1fr"
         overrides={{
           paddingInline: '10%',
           paddingBlock: '8px',
           minWidth: '100%',
         }}
       >
-        <ThemeControls
-          setSvgCodeGroup={setSvgCodeGroup}
-          hexesObj={hexesObj}
-          baseSvgCodeGroup={baseSvgCodeGroup}
-          svgCodeGroup={svgCodeGroup}
-          getThemeFromList={getThemeFromList}
-          setIds={setIds}
-          currentThemeName={currentThemeName}
-          setCurrentThemeName={setCurrentThemeName}
-        />
+        <GridLayout
+          columns="1fr 1fr"
+          alignItems="center"
+          rows={{xs: 'sizing080'}}
+        >
+          <ThemeControls
+            setSvgCodeGroup={setSvgCodeGroup}
+            hexesObj={hexesObj}
+            baseSvgCodeGroup={baseSvgCodeGroup}
+            svgCodeGroup={svgCodeGroup}
+            getThemeFromList={getThemeFromList}
+            setIds={setIds}
+            currentThemeName={currentThemeName}
+            setCurrentThemeName={setCurrentThemeName}
+          />
+        </GridLayout>
         <GridLayout
           columns="1fr 1fr 1fr"
           alignItems="baseline"
