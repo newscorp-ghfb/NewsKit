@@ -7,7 +7,6 @@ export const StyledGridLayout = styled(GridLayout)<
   Omit<BaseFlagProps<BaseFlagOverrides>, 'loading'> & {
     $loading?: BaseFlagProps<BaseFlagOverrides>['loading'];
     $disabled?: BaseFlagProps<BaseFlagOverrides>['disabled'];
-    $selected?: BaseFlagProps<BaseFlagOverrides>['selected'];
   }
 >`
   box-sizing: border-box;
@@ -47,10 +46,9 @@ export const StyledGridLayout = styled(GridLayout)<
   appearance: none;
   // End of button related styles
 
-  ${({$disabled, $loading, $selected}) =>
+  ${({$disabled, $loading}) =>
     getStylePreset('', '', {
       isDisabled: $disabled,
       isLoading: $loading,
-      isSelected: $selected,
     })}
 `;

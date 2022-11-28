@@ -11,7 +11,6 @@ import {
 import {TextBlock} from '../../text-block';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {CreateThemeArgs, ThemeProvider} from '../../theme';
-import {IconButton} from '../../icon-button';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
@@ -25,6 +24,7 @@ const breadcrumbItemCustomThemeObject: CreateThemeArgs = {
       breadcrumbDefault: {
         base: {
           color: '{{colors.interactiveLink010}}',
+          backgroundColor: '{{colors.transparent}}',
         },
       },
       breadcrumbInformative: {
@@ -185,15 +185,15 @@ export const StoryVariations = () => (
     </StorybookCase>
     <StorybookCase title="'Home' icon for the first breadcrumb item">
       <Breadcrumbs aria-label="home icon">
-        <BreadcrumbItem href={href}>
-          <IconButton
-            size="medium"
+        <BreadcrumbItem
+          aria-label="just home icon"
+          overrides={{stylePreset: 'breadcrumbDefault'}}
+        >
+          <IconFilledHome
             overrides={{
-              stylePreset: 'iconButtonMinimalPrimary',
+              stylePreset: 'breadcrumbDefault',
             }}
-          >
-            <IconFilledHome />
-          </IconButton>
+          />
         </BreadcrumbItem>
         <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
         <BreadcrumbItem selected href={href}>

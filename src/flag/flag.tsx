@@ -22,7 +22,6 @@ export const BaseFlag = React.forwardRef<
       loading,
       disabled,
       as,
-      selected,
 
       ...props
     },
@@ -36,7 +35,6 @@ export const BaseFlag = React.forwardRef<
         $loading={loading}
         $disabled={disabled} // Used to avoid passing disabled HTML attribute to an anchor link
         disabled={as !== 'a' && disabled}
-        $selected={selected}
         overrides={overrides}
         ref={ref}
         as={as}

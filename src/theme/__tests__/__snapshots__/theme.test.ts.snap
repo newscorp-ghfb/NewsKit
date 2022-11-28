@@ -1537,19 +1537,27 @@ Object {
     },
   },
   "breadcrumbs": Object {
-    "paddingInline": "space020",
-    "separator": Object {
-      "large": Object {
+    "large": Object {
+      "separator": Object {
         "iconSize": "iconSize030",
-      },
-      "medium": Object {
-        "iconSize": "iconSize020",
-      },
-      "small": Object {
-        "iconSize": "iconSize010",
+        "paddingInline": "space020",
+        "stylePreset": "breadcrumbSeparator",
       },
     },
-    "stylePreset": "breadcrumbSeparator",
+    "medium": Object {
+      "separator": Object {
+        "iconSize": "iconSize020",
+        "paddingInline": "space020",
+        "stylePreset": "breadcrumbSeparator",
+      },
+    },
+    "small": Object {
+      "separator": Object {
+        "iconSize": "iconSize010",
+        "paddingInline": "space020",
+        "stylePreset": "breadcrumbSeparator",
+      },
+    },
   },
   "button": Object {
     "large": Object {
