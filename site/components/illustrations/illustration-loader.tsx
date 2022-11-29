@@ -4,18 +4,18 @@ import {isNotSafari, isSafari, pathToID} from './utils';
 /**
  * Only for Safari. It reads the svg file as raw string and returns it as an inline SVG.
  */
-const getSafariSVG = (
+const getSafariSVG = async (
   sanitize: (source: string) => string,
   path: string,
   props?: React.SVGProps<SVGSVGElement>,
 ) => {
   const rawSVG = sanitize(
     // `!!raw-loader!` would apply the raw-loader only for this usage
-    // eslint-disable-next-line import/no-dynamic-require, global-require
-    require(`!!raw-loader!../../public/static/illustrations/${path}.svg`)
-      .default,
-  );
 
+    await (
+      await import(`!!raw-loader!../../public/static/illustrations/${path}.svg`)
+    ).default,
+  );
   return (
     <svg
       viewBox="0 0 1490 838"
@@ -49,7 +49,7 @@ export const getIllustrationComponent = (
         const importSanitizer = async () => {
           const dompurify = await (await import('isomorphic-dompurify'))
             .default;
-          const svg = getSafariSVG(dompurify.sanitize, path, props);
+          const svg = await getSafariSVG(dompurify.sanitize, path, props);
           setSafariSVG(svg);
         };
         importSanitizer();
