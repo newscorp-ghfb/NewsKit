@@ -1539,22 +1539,22 @@ Object {
   "breadcrumbs": Object {
     "large": Object {
       "separator": Object {
-        "iconSize": "iconSize030",
         "paddingInline": "space020",
+        "size": "iconSize030",
         "stylePreset": "breadcrumbSeparator",
       },
     },
     "medium": Object {
       "separator": Object {
-        "iconSize": "iconSize020",
         "paddingInline": "space020",
+        "size": "iconSize020",
         "stylePreset": "breadcrumbSeparator",
       },
     },
     "small": Object {
       "separator": Object {
-        "iconSize": "iconSize010",
         "paddingInline": "space020",
+        "size": "iconSize010",
         "stylePreset": "breadcrumbSeparator",
       },
     },
