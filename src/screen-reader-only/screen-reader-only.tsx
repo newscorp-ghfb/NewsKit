@@ -14,6 +14,7 @@ const ScreenReader = styled.span`
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 `;
 
 export interface Props {

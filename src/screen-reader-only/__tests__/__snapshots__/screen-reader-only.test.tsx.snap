@@ -12,6 +12,7 @@ exports[`Screen reader only renders with description 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span

@@ -12,6 +12,7 @@ exports[`SelectionList render should render SelectionList with a selected option
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -267,6 +268,7 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -398,6 +400,7 @@ exports[`SelectionList render should render SelectionList with non-string option
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -655,6 +658,7 @@ exports[`SelectionList render should render SelectionList with updated icon 1`] 
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -784,6 +788,7 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -1043,6 +1048,7 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -1298,6 +1304,7 @@ exports[`SelectionList render should render default SelectionList 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
