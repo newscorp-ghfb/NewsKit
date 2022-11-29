@@ -339,7 +339,6 @@ export const StoryFormWithPhoneInput = () => {
 };
 StoryFormWithPhoneInput.storyName = 'form-with-phone-input';
 StoryFormWithPhoneInput.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 

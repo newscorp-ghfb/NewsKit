@@ -58,7 +58,6 @@ export const StoryUseResizeObserver = () => {
 };
 StoryUseResizeObserver.storyName = 'useResizeObserver';
 StoryUseResizeObserver.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 

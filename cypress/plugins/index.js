@@ -46,5 +46,3 @@ module.exports = on => {
     },
   });
 };
-
-require('@applitools/eyes-cypress')(module);

@@ -73,31 +73,6 @@ cypress_defaults: &cypress_defaults
   environment:
     CYPRESS_CACHE_FOLDER: '~/project/.cache/Cypress'
 
-# ========== APPLITOOLS ENVIRONMENT VARIABLES START ==========
-
-# Common config values for component and doc site tests is set in env variables:
-
-# - showLogs: Whether or not you want to see logs of the Eyes-Storybook plugin.
-# - batchId: This must be set to the current commit sha for the GitHub integration to work.
-# - apiKey: This should be the Team API key (execute only permission).
-# - batchName: This can be any value (add as much info as possible to make it easy to find batches).
-
-# Config specific to each suite is set in the .config.js files.
-
-# IMPORTANT:
-# Make sure the `Automated batch closing` feature of the Applitools / GitHub integration is
-# disabled. This is controlled in the Applitools UI. If this setting is not removed, tests from
-# a single suite will be randomly split into different batches.
-
-applitools_defaults: &applitools_defaults
-  command: |
-    echo "export APPLITOOLS_SHOW_LOGS=true" >> $BASH_ENV
-    echo "export APPLITOOLS_BATCH_ID=${CIRCLE_SHA1}" >> $BASH_ENV
-    echo "export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}" >> $BASH_ENV
-    echo "export APPLITOOLS_BATCH_NAME=\"${CIRCLE_BRANCH}:${CIRCLE_SHA1:0:7} (${CIRCLE_PULL_REQUEST}, ${CIRCLE_BUILD_URL})\"" >> $BASH_ENV
-
-# ========== APPLITOOLS ENVIRONMENT VARIABLES END ==========
-
 executors:
   # A basic image with just raw Alpine on it that you can run commands on
   base:
@@ -292,25 +267,6 @@ commands:
               echo "Skipping as there are no changes to << parameters.folder >>"
               circleci-agent step halt
             fi
-
-  run_test_visual_changes:
-    description: 'Run the Applitool tests for docs visual changes'
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: 'Setup Applitools environment variables'
-          <<: *applitools_defaults
-      - run:
-          name: Run Applitools Docs Site Visual Tests
-          command: make e2e_visual_test_docs
-      - store_artifacts:
-          path: cypress/screenshots
-      - store_artifacts:
-          path: cypress/videos
-      - slack/notify:
-          <<: *slack_notify
 
   checkout_and_attach_workspace:
     description: 'Checkout the code and project files'
@@ -641,24 +597,6 @@ jobs:
             - terraform_apply:
                 package: << parameters.package >>
 
-  test_visual_comps:
-    executor: node-large
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Install Headless Chrome dependencies
-          command: make install_headless_chrome
-      - run:
-          name: 'Setup Applitools environment variables'
-          <<: *applitools_defaults
-      - run:
-          name: Run Applitools Storybook Component Tests
-          command: make comps_visual_test
-      - slack/notify:
-          <<: *slack_notify
-
   test_visual_comps_percy:
     executor: node-large
     steps:
@@ -700,14 +638,6 @@ jobs:
             }
       - run_test_visual_docs_percy
 
-  skip_applitools_check:
-    executor: node
-    steps:
-      - run:
-          name: 'Pass the required GitHub / Applitools check'
-          command: |
-            curl --request POST --header "Content-Type: application/json" --data "{\"serverId\":\"github\",\"commitSha\":\"$CIRCLE_SHA1\"}" "https://eyesapi.applitools.com/api/externals/github/servers/github/commit/$CIRCLE_SHA1/complete?apiKey=$APPLITOOLS_API_KEY"
-
   skip_percy_comps_check:
     executor: node
     steps:
@@ -737,18 +667,6 @@ jobs:
       - run:
           name: 'Skip the required Percy check for the newskit-docsite project'
           command: yarn e2e:visual:docs:ci:percy:skip
-
-  test_visual_docs:
-    <<: *cypress_defaults
-    executor: cypress
-    steps:
-      - run_test_visual_changes
-
-  test_visual_docs_2:
-    <<: *cypress_defaults
-    executor: cypress
-    steps:
-      - run_test_visual_changes
 
   test_visual_docs_percy:
     <<: *cypress_defaults
@@ -1356,10 +1274,6 @@ workflows:
             - approve_publish_npm_pr
       # End jobs for releasing unstable NPM version
 
-      - skip_applitools_check:
-          context: ncu-product-platforms-context
-          requires:
-            - no_visual_changes
       - skip_percy_comps_check:
           context: ncu-product-platforms-context
           requires:
@@ -1369,28 +1283,11 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - no_visual_changes
-      - test_visual_comps:
-          context: ncu-product-platforms-context
-          requires:
-            - docs_and_comps_visual_changes
-            - download_headless_chrome
       - test_visual_comps_percy:
           context: ncu-product-platforms-context
           requires:
             - docs_and_comps_visual_changes
             - download_headless_chrome
-      - test_visual_docs:
-          context: ncu-product-platforms-context
-          requires:
-            - build_docs_pr_with_no_base_url
-            - install_cypress
-            - test_visual_comps
-      - test_visual_docs_2:
-          context: ncu-product-platforms-context
-          requires:
-            - build_docs_pr_with_no_base_url
-            - install_cypress
-            - docs_visual_changes
       - test_visual_docs_percy:
           context: ncu-product-platforms-context
           requires:
