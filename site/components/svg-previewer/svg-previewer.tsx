@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {
   getColorCssFromTheme,
-  getSSRId,
   Scroll,
   P,
   ScrollSnapAlignment,
@@ -32,22 +31,22 @@ export const SvgPreviewer: React.FC = () => {
   // Hexes obj sent by figma, used for switch theme logic.
   const [hexesObj, setHexesObj] = useState<Object>({});
 
-  const setIds = (figmaSvg: string) => {
-    const regexList = [/mask\d{1,}/g, /filter\d{1,}/g, /clip\d{1,}/g];
-    let figmaSvgCopy = figmaSvg;
+  // const setIds = (figmaSvg: string) => {
+  //   const regexList = [/mask\d{1,}/g, /filter\d{1,}/g, /clip\d{1,}/g];
+  //   let figmaSvgCopy = figmaSvg;
 
-    regexList.forEach(regex => {
-      const matchList = figmaSvgCopy.match(regex);
+  //   regexList.forEach(regex => {
+  //     const matchList = figmaSvgCopy.match(regex);
 
-      matchList?.forEach(match => {
-        figmaSvgCopy = figmaSvgCopy.replace(
-          new RegExp(match, 'g'),
-          `${getSSRId()}`,
-        );
-      });
-    });
-    return figmaSvgCopy;
-  };
+  //     matchList?.forEach(match => {
+  //       figmaSvgCopy = figmaSvgCopy.replace(
+  //         new RegExp(match, 'g'),
+  //         `${getSSRId()}`,
+  //       );
+  //     });
+  //   });
+  //   return figmaSvgCopy;
+  // };
 
   const testSvgCodeIsString = (data: Array<{code: string; name: string}>) => {
     data.forEach(svg => {
@@ -55,31 +54,31 @@ export const SvgPreviewer: React.FC = () => {
     });
   };
 
-  // This function simplify the IDs set by figma for clips, filters and masks.
-  // It makes simpler the SVG manipulation especially when building the react component.
-  // ** To be removed if Figma brings back short IDs (E.G: clip0 than clip0_12:1464). **
-  const svgIdsShortener = (figmaSvg: string) => {
-    let figmaSvgCopy = figmaSvg;
-    const regexList = [
-      /mask\d+_\d+_\d+/g,
-      /filter\d+_d_\d+_\d+/g,
-      /clip\d+_\d+_\d+/g,
-    ];
+  // // This function simplify the IDs set by figma for clips, filters and masks.
+  // // It makes simpler the SVG manipulation especially when building the react component.
+  // // ** To be removed if Figma brings back short IDs (E.G: clip0 than clip0_12:1464). **
+  // const svgIdsShortener = (figmaSvg: string) => {
+  //   let figmaSvgCopy = figmaSvg;
+  //   const regexList = [
+  //     /mask\d+_\d+_\d+/g,
+  //     /filter\d+_d_\d+_\d+/g,
+  //     /clip\d+_\d+_\d+/g,
+  //   ];
 
-    regexList.forEach(regex => {
-      const matchList = figmaSvg.match(regex);
+  //   regexList.forEach(regex => {
+  //     const matchList = figmaSvg.match(regex);
 
-      matchList?.forEach(match => {
-        const firstUnderscoreIndex = match.indexOf('_');
+  //     matchList?.forEach(match => {
+  //       const firstUnderscoreIndex = match.indexOf('_');
 
-        figmaSvgCopy = figmaSvgCopy.replace(
-          new RegExp(match, 'g'),
-          match.substring(0, firstUnderscoreIndex),
-        );
-      });
-    });
-    return figmaSvgCopy;
-  };
+  //       figmaSvgCopy = figmaSvgCopy.replace(
+  //         new RegExp(match, 'g'),
+  //         match.substring(0, firstUnderscoreIndex),
+  //       );
+  //     });
+  //   });
+  //   return figmaSvgCopy;
+  // };
 
   const getThemeFromList = (
     themeName: ThemeNames,
@@ -111,11 +110,11 @@ export const SvgPreviewer: React.FC = () => {
       // @ts-ignore
       const content = event.data.pluginMessage.data.svgdata.map(svg => {
         let figmaSvg: string = svg.code;
-        figmaSvg = svgIdsShortener(figmaSvg);
+        // figmaSvg = svgIdsShortener(figmaSvg);
         baseFigmaSvg.push({figmaSvg, name: svg.name});
 
         // Setting ids for "mask", "filter", and "clip" attributes
-        figmaSvg = setIds(figmaSvg);
+        // figmaSvg = setIds(figmaSvg);
 
         // ** REPLACING RANDOM FIGMA COLORS
         Object.entries(event.data.pluginMessage.data.hexes).forEach(hex => {
@@ -179,7 +178,6 @@ export const SvgPreviewer: React.FC = () => {
             baseSvgCodeGroup={baseSvgCodeGroup}
             svgCodeGroup={svgCodeGroup}
             getThemeFromList={getThemeFromList}
-            setIds={setIds}
             currentThemeName={currentThemeName}
             setCurrentThemeName={setCurrentThemeName}
           />
