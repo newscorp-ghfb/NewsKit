@@ -1576,6 +1576,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - download_headless_chrome
+            - build_storybook
       - docsite_tests_conditional_run_to_update_baselines:
           context: ncu-product-platforms-context
           requires:
