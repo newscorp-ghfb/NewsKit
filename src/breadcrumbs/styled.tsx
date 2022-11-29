@@ -8,7 +8,7 @@ export const StyledNav = styled.nav<BreadcrumbsProps>`
   ${getStylePreset('')};
 `;
 
-export const StyledOrderdList = styled.ol<BreadcrumbsProps>`
+export const StyledOrderedList = styled.ol<BreadcrumbsProps>`
   list-style: none;
   display: inline-flex;
   margin: 0;

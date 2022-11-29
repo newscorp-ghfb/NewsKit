@@ -19,21 +19,21 @@ export default {
   breadcrumbs: {
     small: {
       separator: {
-        iconSize: 'iconSize010',
+        size: 'iconSize010',
         stylePreset: 'breadcrumbSeparator',
         paddingInline: 'space020',
       },
     },
     medium: {
       separator: {
-        iconSize: 'iconSize020',
+        size: 'iconSize020',
         stylePreset: 'breadcrumbSeparator',
         paddingInline: 'space020',
       },
     },
     large: {
       separator: {
-        iconSize: 'iconSize030',
+        size: 'iconSize030',
         stylePreset: 'breadcrumbSeparator',
         paddingInline: 'space020',
       },
