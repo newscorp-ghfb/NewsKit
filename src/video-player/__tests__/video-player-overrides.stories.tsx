@@ -10,6 +10,8 @@ import {
   PLAYLISTS_VIDEO_PLAYER_CONFIG,
 } from './config';
 
+const waitForSelector = 'div.vjs-poster:not(.vjs-hidden)';
+
 const myCustomTheme = compileTheme(
   createTheme({
     name: 'video-player-theme',
@@ -120,12 +122,7 @@ export const StoryVideoPlayerPlayButtonOverrides = () => (
   </ThemeProvider>
 );
 StoryVideoPlayerPlayButtonOverrides.storyName = 'play-button-overrides';
-StoryVideoPlayerPlayButtonOverrides.parameters = {
-  // todo: remove arbitrary wait
-  percy: {
-    waitForTimeout: 5000,
-  },
-};
+StoryVideoPlayerPlayButtonOverrides.parameters = {percy: {waitForSelector}};
 
 export const StoryVideoPlayerSeekBarOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
@@ -249,12 +246,7 @@ export const StoryVideoPlayerDockTextOverrides = () => (
   </ThemeProvider>
 );
 StoryVideoPlayerDockTextOverrides.storyName = 'doc-text-overrides';
-StoryVideoPlayerPlayButtonOverrides.parameters = {
-  // todo: remove arbitrary wait
-  percy: {
-    waitForTimeout: 5000,
-  },
-};
+StoryVideoPlayerDockTextOverrides.parameters = {percy: {waitForSelector}};
 
 export const StoryVideoPlayerMiniCardOverlayOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
