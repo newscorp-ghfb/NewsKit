@@ -12,7 +12,7 @@ import {
 } from '../../test/test-utils';
 import {AssistiveText} from '../../assistive-text';
 import {Label} from '../../label';
-import {createTheme, EventTrigger} from '../..';
+import {createTheme, EventTrigger, styled} from '../..';
 import {IconFilledSearch} from '../../icons';
 import {countries} from './phone-countries';
 
@@ -525,6 +525,47 @@ describe('Select', () => {
         value: 'option 2',
       },
     });
+  });
+
+  test('open and scroll', async () => {
+    const Body = styled.div`
+      height: 500px;
+      overflow: scroll;
+    `;
+    const Scroller = styled.div`
+      height: 2000px;
+      padding-top: 400px;
+    `;
+
+    const props = {
+      children: (
+        <Scroller id="scroller">
+          <Select>
+            <SelectOption key="1" value="option 1">
+              option 1
+            </SelectOption>
+            <SelectOption key="2" value="option 2">
+              option 2
+            </SelectOption>
+          </Select>
+        </Scroller>
+      ),
+    };
+
+    const {getByTestId, container, asFragment} = renderWithTheme(Body, props);
+
+    // open select
+    await waitFor(() => {
+      fireEvent.click(getByTestId('select-button'));
+    });
+
+    const scrollContainer = container.querySelector('#scroller')?.parentNode;
+
+    // scroll container
+    // @ts-ignore
+    fireEvent.scroll(scrollContainer, {target: {scrollY: 100}});
+
+    expect(asFragment()).toMatchSnapshot();
   });
 
   describe('in Modal', () => {
