@@ -264,7 +264,7 @@ export const StoryLazyLoading = () => {
   return <div>{getImages(30)}</div>;
 };
 StoryLazyLoading.storyName = 'lazy-loading';
-StoryLazyLoading.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryLazyLoading.parameters = {percy: {skip: true}};
 
 export const StoryImageWithSources = () => {
   const sources = [
