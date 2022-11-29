@@ -35,7 +35,7 @@ export const getIllustrationComponent = (
     const [safariSVG, setSafariSVG] = useState<JSX.Element | null>(null);
 
     useEffect(() => {
-      if (isSafari && safariSVG === null) {
+      if (isSafari) {
         // Dynamically importing 'isomorphic-dompurify' only for Safari to avoid bloating the bundle size for other browsers.
         const importSanitizer = async () => {
           const dompurify = await (await import('isomorphic-dompurify'))
@@ -45,12 +45,8 @@ export const getIllustrationComponent = (
         };
         importSanitizer();
       }
-    }, [safariSVG]);
+    }, []);
 
-    // If the browser is Safari we render an inline svg.
-    const renderSafariSVG = isSafari ? safariSVG : null;
-
-    // If the browser is not Safari we will render an load an external SVG using <use> tag.
     const nonSafariSVG = (
       <svg
         viewBox="0 0 1490 838"
@@ -62,7 +58,7 @@ export const getIllustrationComponent = (
       </svg>
     );
 
-    return safariSVG === null ? nonSafariSVG : renderSafariSVG;
+    return safariSVG || nonSafariSVG;
   };
 
   return Component;
