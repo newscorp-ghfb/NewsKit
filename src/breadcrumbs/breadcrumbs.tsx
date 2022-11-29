@@ -9,8 +9,8 @@ import {getComponentOverrides, Override} from '../utils/overrides';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme';
 
-const DefaultIcon = (overrides: BreadcrumbsProps, props: NewsKitIconProps) => (
-  <IconFilledChevronRight overrides={overrides} {...props} />
+const DefaultIcon = (props: NewsKitIconProps) => (
+  <IconFilledChevronRight {...props} />
 );
 const ThemelessBreadcrumbs = React.forwardRef<
   HTMLOListElement,
@@ -29,11 +29,13 @@ const ThemelessBreadcrumbs = React.forwardRef<
     const theme = useTheme();
 
     const [BreadcrumbsIcon, breadcrumbsIconProps] = getComponentOverrides(
-      overrides?.separator as Override<BreadcrumbsProps>,
+      overrides?.separator as Override<NewsKitIconProps>,
       DefaultIcon,
       {
-        ...theme.componentDefaults.breadcrumbs[size].separator,
-        ...filterOutFalsyProperties(overrides),
+        overrides: {
+          ...theme.componentDefaults.breadcrumbs[size].separator,
+          ...filterOutFalsyProperties(overrides?.separator),
+        },
       },
     );
 
@@ -66,7 +68,7 @@ const ThemelessBreadcrumbs = React.forwardRef<
           breadcrumbElements.push(
             <StyledListItem key={`${element.key}-separator`} aria-hidden="true">
               <BreadcrumbsIcon
-                {...(breadcrumbsIconProps as BreadcrumbItemProps)}
+                {...(breadcrumbsIconProps as NewsKitIconProps)}
               />
             </StyledListItem>,
           );

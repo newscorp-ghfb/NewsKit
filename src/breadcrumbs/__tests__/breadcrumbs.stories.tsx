@@ -262,7 +262,14 @@ export const StoryOverrides = () => (
       </Breadcrumbs>
     </StorybookCase>
     <StorybookCase title="Custom style">
-      <Breadcrumbs aria-label="custom style">
+      <Breadcrumbs
+        aria-label="custom style"
+        overrides={{
+          separator: {
+            stylePreset: 'breadcrumbInformative',
+          },
+        }}
+      >
         <BreadcrumbItem
           href={href}
           overrides={{typographyPreset: 'editorialParagraph020'}}
