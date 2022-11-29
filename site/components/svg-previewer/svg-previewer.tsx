@@ -9,11 +9,7 @@ import {
 } from 'newskit';
 import dompurify from 'dompurify';
 import {themeList, ThemeNames} from './colors-theme-list';
-import {
-  StyledButtonsContainer,
-  StyledSingleSvgWrapper,
-  StyledSvgPreviewerContainer,
-} from './styled';
+import {StyledButtonsContainer, StyledSingleSvgWrapper} from './styled';
 import {DownloadControls} from './controls/download-controls';
 import {ThemeControls} from './controls/theme-controls';
 
@@ -160,7 +156,7 @@ export const SvgPreviewer: React.FC = () => {
   }, [onmessage]);
 
   return (
-    <StyledSvgPreviewerContainer>
+    <GridLayout>
       <StyledButtonsContainer
         rows={{xs: 'sizing080'}}
         alignItems="center"
@@ -217,8 +213,8 @@ export const SvgPreviewer: React.FC = () => {
             }}
           >
             {svgCodeGroup.map((svgCode, index) => (
-              <ScrollSnapAlignment key={getSSRId()}>
-                <StyledSingleSvgWrapper key={baseSvgCodeGroup[index].name}>
+              <ScrollSnapAlignment key={baseSvgCodeGroup[index].name}>
+                <StyledSingleSvgWrapper>
                   <P>{baseSvgCodeGroup[index].name}</P>
                   {/* eslint-disable-next-line react/no-danger */}
                   <div dangerouslySetInnerHTML={{__html: sanitizer(svgCode)}} />
@@ -228,6 +224,6 @@ export const SvgPreviewer: React.FC = () => {
           </GridLayout>
         </Scroll>
       )}
-    </StyledSvgPreviewerContainer>
+    </GridLayout>
   );
 };

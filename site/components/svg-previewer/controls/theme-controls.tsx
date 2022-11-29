@@ -89,7 +89,7 @@ export const ThemeControls = ({
         /* @ts-ignore nexline */
         onChange={handleThemeSelection}
         disabled={!svgCodeGroup}
-        overrides={{button: {maxWidth: '196px'}}}
+        overrides={{button: {maxWidth: '196px', marginBlock: '0px'}}}
         value={currentThemeName}
       >
         {themeList.map(theme => (

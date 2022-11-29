@@ -6,14 +6,6 @@ export const StyledSingleSVGDownloadButton = styled(Button)`
 
 export const StyledSvgGroupContainer = styled(GridLayout)``;
 
-export const StyledSvgPreviewerContainer = styled(GridLayout)`
-  /*
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  */
-`;
-
 export const StyledButtonsContainer = styled(GridLayout)`
   position: fixed;
   top: var(--headerSize);
