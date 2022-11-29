@@ -70,7 +70,6 @@ export const StoryUseControlled = () => {
 };
 StoryUseControlled.storyName = 'useControlled';
 StoryUseControlled.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 

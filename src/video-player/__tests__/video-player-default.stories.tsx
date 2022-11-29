@@ -51,9 +51,6 @@ export const StoryDefaultVideoPlayer = () => {
 StoryDefaultVideoPlayer.storyName = 'video-default';
 StoryDefaultVideoPlayer.parameters = {
   // todo: remove arbitrary wait
-  eyes: {
-    waitBeforeCapture: 5000,
-  },
   percy: {
     waitForTimeout: 5000,
   },
@@ -88,9 +85,6 @@ export const StoryPlaylistsVideoPlayer = () => {
 StoryPlaylistsVideoPlayer.storyName = 'playlist-video-default';
 StoryPlaylistsVideoPlayer.parameters = {
   // todo: remove arbitrary wait
-  eyes: {
-    waitBeforeCapture: 5000,
-  },
   percy: {
     waitForTimeout: 5000,
   },
@@ -128,9 +122,6 @@ export const StoryCardWithVideo = () => (
 StoryCardWithVideo.storyName = 'video-in-card';
 StoryCardWithVideo.parameters = {
   // todo: remove arbitrary wait
-  eyes: {
-    waitBeforeCapture: 5000,
-  },
   percy: {
     waitForTimeout: 5000,
   },

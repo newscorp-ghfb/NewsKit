@@ -1572,8 +1572,8 @@ const routes = [
     id: '/about',
     subNav: [
       {
-        title: 'Introduction',
-        id: '/about/introduction',
+        title: 'Why use NewsKit',
+        id: '/about/why-use-newskit',
       },
       {
         title: 'Release notes',

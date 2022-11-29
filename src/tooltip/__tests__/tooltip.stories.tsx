@@ -152,7 +152,6 @@ export const StoryTooltipDefault = () => (
 );
 StoryTooltipDefault.storyName = 'tooltip';
 StoryTooltipDefault.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -341,7 +340,6 @@ export const StoryTooltipPlacements = () => (
 );
 StoryTooltipPlacements.storyName = 'tooltip-placements';
 StoryTooltipPlacements.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -367,7 +365,6 @@ export const StoryTooltipTriggers = () => (
 );
 StoryTooltipTriggers.storyName = 'tooltip-triggers';
 StoryTooltipTriggers.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -391,7 +388,6 @@ export const StoryTooltipControlled = () => {
 };
 StoryTooltipControlled.storyName = 'tooltip-controlled';
 StoryTooltipControlled.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 

@@ -1029,6 +1029,10 @@ export const StoryZindexTest = () => (
   </>
 );
 StoryZindexTest.storyName = 'Select zIndex test';
+StoryZindexTest.paramters = {
+  // enable JS for the tabs used in this story
+  percy: {enableJavaScript: true},
+};
 
 export const StoryOutlineOverride = () => (
   <>
