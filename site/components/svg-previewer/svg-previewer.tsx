@@ -31,54 +31,11 @@ export const SvgPreviewer: React.FC = () => {
   // Hexes obj sent by figma, used for switch theme logic.
   const [hexesObj, setHexesObj] = useState<Object>({});
 
-  // const setIds = (figmaSvg: string) => {
-  //   const regexList = [/mask\d{1,}/g, /filter\d{1,}/g, /clip\d{1,}/g];
-  //   let figmaSvgCopy = figmaSvg;
-
-  //   regexList.forEach(regex => {
-  //     const matchList = figmaSvgCopy.match(regex);
-
-  //     matchList?.forEach(match => {
-  //       figmaSvgCopy = figmaSvgCopy.replace(
-  //         new RegExp(match, 'g'),
-  //         `${getSSRId()}`,
-  //       );
-  //     });
-  //   });
-  //   return figmaSvgCopy;
-  // };
-
   const testSvgCodeIsString = (data: Array<{code: string; name: string}>) => {
     data.forEach(svg => {
       if (typeof svg.code !== 'string') throw new Error();
     });
   };
-
-  // // This function simplify the IDs set by figma for clips, filters and masks.
-  // // It makes simpler the SVG manipulation especially when building the react component.
-  // // ** To be removed if Figma brings back short IDs (E.G: clip0 than clip0_12:1464). **
-  // const svgIdsShortener = (figmaSvg: string) => {
-  //   let figmaSvgCopy = figmaSvg;
-  //   const regexList = [
-  //     /mask\d+_\d+_\d+/g,
-  //     /filter\d+_d_\d+_\d+/g,
-  //     /clip\d+_\d+_\d+/g,
-  //   ];
-
-  //   regexList.forEach(regex => {
-  //     const matchList = figmaSvg.match(regex);
-
-  //     matchList?.forEach(match => {
-  //       const firstUnderscoreIndex = match.indexOf('_');
-
-  //       figmaSvgCopy = figmaSvgCopy.replace(
-  //         new RegExp(match, 'g'),
-  //         match.substring(0, firstUnderscoreIndex),
-  //       );
-  //     });
-  //   });
-  //   return figmaSvgCopy;
-  // };
 
   const getThemeFromList = (
     themeName: ThemeNames,
