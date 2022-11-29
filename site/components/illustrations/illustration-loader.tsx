@@ -10,8 +10,10 @@ const getSafariSVG = (
   props?: React.SVGProps<SVGSVGElement>,
 ) => {
   const rawSVG = sanitize(
+    // `!!raw-loader!` would apply the raw-loader only for this usage
     // eslint-disable-next-line import/no-dynamic-require, global-require
-    require(`../../public/static/illustrations/${path}.svg`).default,
+    require(`!!raw-loader!../../public/static/illustrations/${path}.svg`)
+      .default,
   );
 
   return (
