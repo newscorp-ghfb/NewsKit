@@ -41,6 +41,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       virtualized = 50,
       eventContext = {},
       eventOriginator = 'select',
+      onOpen,
       ...restProps
     } = props;
 
@@ -265,6 +266,12 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       };
     }, [isOpen, onOverflowScroll]);
 
+    useEffect(() => {
+      if (onOpen) {
+        onOpen(isOpen);
+      }
+    }, [isOpen, onOpen]);
+
     return (
       <>
         <SelectButton
@@ -286,6 +293,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           ref={composeRefs(localInputRef, downshiftButtonPropsRef, inputRef)}
           selectRef={selectRef}
           value={buttonValue}
+          isOpen={isOpen}
           {...downshiftButtonPropsExceptRef}
           {...restProps}
         />

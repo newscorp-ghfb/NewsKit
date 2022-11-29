@@ -116,6 +116,23 @@ const commonOverridesRows = [
       'If provided, this overrides the stylePreset of the Select input container loading indicator.',
   },
   {
+    attribute: 'button.indicatorIcon',
+    type: 'Override<SelectButtonIcon>',
+    description: 'If provided, overrides the icon',
+  },
+  {
+    attribute: 'button.indicatorIcon.stylePreset',
+    type: 'MQ<string>',
+    default: 'iconDefault',
+    description: 'If provided, overrides the stylePreset of the indicator icon',
+  },
+  {
+    attribute: 'button.indicatorIcon.size',
+    type: 'MQ<string>',
+    default: 'iconSize020',
+    description: 'If provided, overrides the size of the indicator icon',
+  },
+  {
     attribute: 'button.startEnhancer.iconSize',
     type: 'MQ<string>',
     default: 'iconSize020',

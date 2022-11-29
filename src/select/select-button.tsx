@@ -2,6 +2,7 @@ import React, {FocusEventHandler} from 'react';
 
 import {
   ButtonSelectSize,
+  SelectButtonIcon,
   SelectButtonOverrides,
   SelectOptionProps,
 } from './types';
@@ -25,6 +26,12 @@ import {
   omitLogicalMarginPropsFromOverrides,
   omitLogicalPaddingPropsFromOverrides,
 } from '../utils/logical-properties';
+import {getComponentOverrides} from '../utils/overrides';
+import {get} from '../utils/get';
+
+const DefaultIcon = ({isOpen, ...props}: SelectButtonIcon) => (
+  <IconFilledKeyboardArrowDown {...props} />
+);
 
 interface SelectButtonProps {
   size: ButtonSelectSize;
@@ -43,7 +50,7 @@ interface SelectButtonProps {
   onSelectButtonFocus: FocusEventHandler<HTMLButtonElement>;
   openMenu: Function;
   itemToString: Function;
-
+  isOpen: boolean;
   selectRef: React.RefObject<HTMLDivElement>;
 }
 
@@ -68,7 +75,7 @@ export const SelectButton = React.forwardRef<
     onSelectButtonFocus,
     openMenu,
     itemToString,
-
+    isOpen,
     selectRef,
 
     ...restProps
@@ -119,6 +126,25 @@ export const SelectButton = React.forwardRef<
   const enhancersOverrides = omitLogicalPaddingPropsFromOverrides(overrides);
   const inputOverrides = omitLogicalMarginPropsFromOverrides(overrides);
 
+  const indicatorIconDefaults = get(
+    theme,
+    `componentDefaults.select.${size}.button.indicatorIcon`,
+  );
+  const indicatorIconDefaultProps = {
+    isOpen,
+    overrides: {
+      ...indicatorIconDefaults,
+      size: iconSize,
+      ...overrides?.indicatorIcon,
+    },
+  };
+
+  const [IndicatorIcon, indicatorIconProps] = getComponentOverrides(
+    overrides?.indicatorIcon,
+    DefaultIcon,
+    indicatorIconDefaultProps,
+  );
+
   return (
     <WithEnhancers
       componentDefaultsPath={`select.${size}.button`}
@@ -159,7 +185,10 @@ export const SelectButton = React.forwardRef<
                 }}
               >
                 <StyledIconBox>
-                  <IconFilledKeyboardArrowDown overrides={{size: iconSize}} />
+                  <IndicatorIcon
+                    {...(indicatorIconProps as SelectButtonIcon)}
+                  />
+                  {/* <IconFilledKeyboardArrowDown overrides={{size: iconSize}} /> */}
                 </StyledIconBox>
               </StyledDropdownIconButton>
             )}
