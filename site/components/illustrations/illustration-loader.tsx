@@ -33,6 +33,13 @@ export const getIllustrationComponent = (
 
   const Component = () => {
     const [safariSVG, setSafariSVG] = useState<JSX.Element | null>(null);
+    const [opacity, setOpacity] = useState(0);
+
+    useEffect(() => {
+      if (isNotSafari) {
+        setOpacity(1);
+      }
+    }, []);
 
     useEffect(() => {
       if (isSafari) {
@@ -48,12 +55,7 @@ export const getIllustrationComponent = (
     }, []);
 
     const nonSafariSVG = (
-      <svg
-        viewBox="0 0 1490 838"
-        width="100%"
-        opacity={isNotSafari ? 1 : 0}
-        {...props}
-      >
+      <svg viewBox="0 0 1490 838" width="100%" opacity={opacity} {...props}>
         <use href={`static/illustrations/${path}.svg#${id}`} />
       </svg>
     );
